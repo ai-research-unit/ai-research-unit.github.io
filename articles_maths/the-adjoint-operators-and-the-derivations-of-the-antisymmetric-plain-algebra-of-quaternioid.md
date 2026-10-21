@@ -202,5 +202,5 @@ same structure has $\mathfrak{sl}(2,\mathbb{C})$ and $\mathbb{C}^{\times}\times\
 - *Introduction to the Antisymmetric Plain Algebra*, for the bracket, its table and the Jacobi identity.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the centre, the derived algebra and the structure constants.
 - *The Killing Form of the Antisymmetric Plain Algebra*, below this article in this category, for the form and the Casimir element.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, below this article in this category, for the annihilator that is the kernel of the adjoint.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, below this article in this category, for the annihilator that is the kernel of the adjoint.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, below this article in this category, for the block whose adjoint is not a derivation.

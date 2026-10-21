@@ -4,7 +4,7 @@
 
 The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space, the general plain sesquilinear product read as a multiplication, the operation of *Introduction to the General Plain Sesqualgebra*. This article studies the algebraic norm that the block carries and the invertibility that it does not.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the form is
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the form is
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr),
@@ -20,7 +20,7 @@ the general plain sesquilinear algebraic norm, **real and positive definite** of
 
 The invertibility is where the article records an **absence**. The block has a **right unit** $e_t$ and no left unit, so it has no two-sided unit and no group of units in the ordinary sense; the one-sided inverse equations are stated, and their solvability is decided by a different quadratic form, which is **not** the algebraic norm of the block and is not studied here. Its algebraic norm is definite and does not decide invertibility: $\langle\tilde Q\rangle_{*}=0$ exactly at $\tilde Q=0$.
 
-**Boundaries.** The product, its class and its placement among the twelve structures are *Introduction to the General Plain Sesqualgebra*; the relative definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the four general products with their one-sided units are *Comparison Between the Four General Products*; the one-sided inverse equations and the common zero-divisor set are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The matrix model that carries the block-square is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears; the Euclidean norm is the algebraic norm of the block and not a length.
+**Boundaries.** The product, its class and its placement among the twelve structures are *Introduction to the General Plain Sesqualgebra*; the relative definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the four general products with their one-sided units are *Comparison Between the Four General Products*; the one-sided inverse equations and the common zero-divisor set are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The matrix model that carries the block-square is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears; the Euclidean norm is the algebraic norm of the block and not a length.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=\sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon=(1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde Q}=\sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\sum_\mu\varepsilon_\mu\overline{Q_\mu}e_\mu$. Juxtaposition is the **plain** product $\tilde Q_1\tilde Q_2$ and $\star$ the block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The **algebraic norm of the block** is the diagonal of the scalar-part form,
 
@@ -34,7 +34,7 @@ with the form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overlin
 
 ## The Relative Notions
 
-The word *unit*, the word *inverse* and the word *group of units* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
+The word *unit*, the word *inverse* and the word *group of units* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
 
 **Definition (recalled).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q=\tilde Q$ for every $\tilde Q$, a **right unit** when $\tilde Q\star e=\tilde Q$ for every $\tilde Q$, and a **two-sided unit** when it is both. When a two-sided unit $e$ exists, an element $\tilde Q$ is **invertible of $\star$** when there is a $\tilde Q_1$ with $\tilde Q\star\tilde Q_1=\tilde Q_1\star\tilde Q=e$, the element $\tilde Q_1$ being the **inverse of $\tilde Q$**, and the invertible elements form the **group of units of $\star$**. When no two-sided unit exists, the two-sided inverse is not defined.
 
@@ -64,7 +64,7 @@ Consequently $e_t$ is a **right unit** of $\star$, it is **not** a left unit, an
 
 **The block carries no two-sided invertibility; its one-sided inverse equations are solved on a set decided by a quadratic form that is not the algebraic norm of the block, so the algebraic norm does not decide the one-sided question.**
 
-The one-sided equations are those of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*, and in the block they read
+The one-sided equations are those of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*, and in the block they read
 
 $$
 \tilde Q\star\tilde Q_1=e_t\qquad\text{(the right-inverse equation)},\qquad \tilde Q_1\star\tilde Q=e_t\qquad\text{(the left-inverse equation)},
@@ -88,7 +88,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
-the general plain sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The equation names the product: the algebraic norm is relative to the product, and the other three rows carry different quadratic maps on the same space.
+the general plain sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The equation names the product: the algebraic norm is relative to the product, and the other three rows carry different quadratic maps on the same space.
 
 **Theorem (the square and the algebraic norm).** For every $\tilde Q$ the square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian and its scalar part is the algebraic norm,
 
@@ -212,12 +212,12 @@ real, positive definite of signature $(8,0)$, the general plain sesquilinear alg
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ and the table of the four forms.
 - *Introduction to the General Plain Sesqualgebra* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the product, the right unit and the involution in the second slot.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the one-sided unit table of the four products.
 - *Norm and Invertibility in the Biquaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the one-sided inverse equations and the common zero-divisor set.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the one-sided inverse equations and the common zero-divisor set.
 - *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the matrix model $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$ in which the block-square is positive semidefinite.
 - *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternioid-sesqualgebra.md`), for the image of the block-square and the cone it generates in the Hermitian subspace.

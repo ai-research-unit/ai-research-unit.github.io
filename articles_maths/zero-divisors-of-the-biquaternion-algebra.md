@@ -14,14 +14,14 @@ two families, and to describe their structure.
 **The results.** A nonzero biquaternion is a zero divisor of the plain product exactly when its central square vanishes, $\tilde{Q}\tilde{Q}^{\natural} = 0$; the elements therefore fall into the three classes invertible, zero and zero divisor. The zero divisors split into two disjoint families: the **pure** ones, exactly the nonzero nilpotents with $\tilde{Q}^2 = 0$ and $Q_x^2 + Q_y^2 + Q_z^2 = 0$, forming a cone of real dimension $4$; and the **non-pure** ones, exactly the complex multiples of the nontrivial idempotents, with $\tilde{Q}^2 = 2 Q_t \tilde{Q}$ and $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0$, forming the rest of the cone. The zero-divisor set is a complex cone of complex dimension $3$ and real dimension $6$.
 
 A divisor is relative to a product. The definition is stated once for a general product in
-*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and read on the products of the space;
+*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and read on the products of the space;
 the unqualified "zero divisor" means "zero divisor of the general plain bilinear product", the
 multiplication of the biquaternion algebra, and every other product is named. The four general
-products and their common zero-divisor set are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+products and their common zero-divisor set are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 Every claim is proved or stated as a definition, no physics is invoked and no examples are given.
 The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, its four conjugations and
-its remarkable subspaces are assumed from *The Biquaternioid as a Vector Space over $\mathbb{C}$* and
+its remarkable subspaces are assumed from *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and
 *Introduction to the Remarkable Subspaces*, and the invertibility criterion from *Norm and
 Invertibility in the Biquaternion Algebra*. The idempotents that the non-pure family produces are
 *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the nilpotents of the
@@ -50,8 +50,8 @@ here as a length.
 ## Definition
 
 The word names a product, so the definition is stated for a general product and then read on the
-products of this space; it is stated once and for all in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. Let $\star$ be a product on $\mathbb{B}$ — any of the twelve products of
-*The 12 Products of the Biquaternioid Complex Space*, that is one of the four general products or
+products of this space; it is stated once and for all in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Let $\star$ be a product on $\mathbb{B}$ — any of the twelve products of
+*The 12 Products of the Biquaternion Complex Space*, that is one of the four general products or
 one of their symmetric or antisymmetric parts.
 
 **Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde{Q}_1\in\mathbb{B}$. The
@@ -71,7 +71,7 @@ $\tilde Q_2\tilde Q_1 = 0$, the classical pair; on $\tilde Q_1^{\natural}\tilde 
 $\tilde Q_1^{\natural}\tilde Q_2 = 0$ and $\tilde Q_2^{\natural}\tilde Q_1 = 0$; and the outer product has
 every nonzero element as a zero divisor, since $\tilde Q\wedge\tilde Q = 0$. The four general
 products, four different equations, happen to select the one cone $\mathcal{C}\setminus\{0\}$
-described here, a coincidence of this algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+described here, a coincidence of this algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 Throughout the rest of this article, unqualified, the product is the general plain bilinear
 product.
 
@@ -81,7 +81,7 @@ product.
 
 The criterion is a statement of the plain product, and it is labelled as such. The criterion for
 the other three general products, and the reason the three have no criterion of the ring-theoretic
-form, are in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+form, are in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 **Theorem (the criterion for the general plain bilinear product).** For the plain product, a
 nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product
@@ -444,9 +444,9 @@ Biquaternion Algebra*.
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the product-relative definition of the zero divisor and the dictionary of the classes against the four general products.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the product-relative definition of the zero divisor and the dictionary of the classes against the four general products.
 - *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`) and *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the two families of the zero-divisor set, the non-pure and the pure, and for the Peirce factorisation $\tilde{Q} = 2 Q_t\,uw$ of the non-pure family.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the same set read against the four general products and the annihilators.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the same set read against the four general products and the annihilators.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.
 - William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," *Proceedings of the Royal Irish Academy* **5** (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^a = 1 + a(j + hk)$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the classification of the zero divisors.

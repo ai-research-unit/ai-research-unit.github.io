@@ -10,11 +10,11 @@ as the **form that the block carries**: it identifies it, computes its Gram matr
 realification and its signature, its invariance under the product and the failure of that invariance, its
 restriction to the remarkable subspaces, and its relation to the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ of the algebra.
 
-The form $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternioid Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; its diagonal is the norm of *Norm and Invertibility in the General Quaternionic Algebra*, and on the remarkable subspaces its restrictions and their signatures are
+The form $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; its diagonal is the norm of *Norm and Invertibility in the General Quaternionic Algebra*, and on the remarkable subspaces its restrictions and their signatures are
 *Remarkable Subspaces under the General Quaternionic Algebra*, whose table is quoted here and
 not recomputed. The article therefore owns the reading of the form **as the form of the product** — the Gram
 data, the invariance question and the coincidence with $\langle\cdot,\cdot\rangle_{*}$ — and cites the norm article and the remarkable-subspace
-article for the form itself. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the invariance
+article for the form itself. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the invariance
 question for a symmetric product is *Jordan Algebras*; the matrix reading of the same form is
 *Introduction to the Symmetric Quaternionic Algebra*.
 
@@ -210,7 +210,7 @@ For $\tilde Q_1=e_t$, $\tilde Q_2=ie_t$ one has $\langle\cdot,\cdot\rangle_{\nat
 
 **Remark (the collapse with the other central operation on the real part).** The coincidence is the form-level
 statement that $\mathrm{SQA}=\mathrm{SPS}$ on the real part, which is one of the two collapses of the twelve
-to ten recorded in *The 12 Products of the Biquaternioid Complex Space*. The symmetric part
+to ten recorded in *The 12 Products of the Biquaternion Complex Space*. The symmetric part
 of the plain sesquilinear product has the coefficient $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$,
 which is $\langle\cdot,\cdot\rangle_{\natural}$ precisely when the coefficients are real; over $\mathbb{C}$ the two operations differ, and
 $\langle\cdot,\cdot\rangle_{\natural}$ is the $\mathbb{C}$-bilinear conjugate of $\langle\cdot,\cdot\rangle_{*}$ in the second slot. The block accordingly reads the form
@@ -248,7 +248,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the quaternion form among the four pairings
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the quaternion form among the four pairings
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form beside the other three coefficients
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, the polarisation and the Hermitian form
 - *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restriction Gram matrices and the signatures

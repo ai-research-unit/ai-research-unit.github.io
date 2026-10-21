@@ -48,7 +48,7 @@ In particular $\mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}}$ and 
 
 **Theorem (the maximal positive definite subspaces).** Over $\mathbb{C}$ the maximal positive definite subspaces are the lines $\mathbb{C}(e_t+\tilde Q)$ with $\tilde Q\in\mathbb{V}_{\mathbb{B}}$ and $\|\tilde Q\|_E<1$, and over $\mathbb{R}$ they are the real planes of the same form. The map $\tilde Q\mapsto\mathbb{C}(e_t+\tilde Q)$ is a bijection onto the set of maximal positive definite subspaces, so that set is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$.
 
-**Proof.** $\langle e_t+\tilde Q,e_t+\tilde Q\rangle_{\natural*}=1-\|\tilde Q\|_E^{2}$ by the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$, so the line is positive definite exactly for $\|\tilde Q\|_E<1$ and is maximal by the dimension bound; conversely a maximal positive definite line has a vector with $\tilde{Q}_0\neq0$, since it meets $\mathbb{V}_{\mathbb{B}}$ only at $0$, and can be scaled to the form $e_t+\tilde Q$. The classification of the fundamental symmetries in *The Fundamental Symmetry of the Biquaternioid Algebra* is the same parametrisation read on the operators.
+**Proof.** $\langle e_t+\tilde Q,e_t+\tilde Q\rangle_{\natural*}=1-\|\tilde Q\|_E^{2}$ by the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$, so the line is positive definite exactly for $\|\tilde Q\|_E<1$ and is maximal by the dimension bound; conversely a maximal positive definite line has a vector with $\tilde{Q}_0\neq0$, since it meets $\mathbb{V}_{\mathbb{B}}$ only at $0$, and can be scaled to the form $e_t+\tilde Q$. The classification of the fundamental symmetries in *The Fundamental Symmetry of the Biquaternion Algebra* is the same parametrisation read on the operators.
 
 ## The Fundamental Decomposition
 
@@ -129,7 +129,7 @@ The Krein-orthogonal complement satisfies $\dim\mathbb{W}+\dim\mathbb{W}^{\perp_
 
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the Gram matrices and the inertia
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the totally isotropic subspaces
-- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the family of fundamental symmetries
-- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-self-adjoint idempotents inside the cone
+- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the family of fundamental symmetries
+- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the $J$-self-adjoint idempotents inside the cone
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the global structure of the maximal definite subspaces
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for orthogonality, the classification of subspaces and the fundamental decompositions of a Krein space

@@ -15,10 +15,10 @@ The article owns no theorem. Every classification, bijection and count is stated
 | The classification of the roots of $+1$: the two central roots, the purely imaginary family and the non-trivial family | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The halving map, the pair map and the spectral resolution of a root | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The idempotents, orthogonality, completeness, primitivity and the Peirce decomposition | [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| The sectors $\mathbb{M}_\pm$, the Hermitian conjugation and the trace | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) |
+| The sectors $\mathbb{M}_\pm$, the Hermitian conjugation and the trace | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
 | The restrictions of the forms to the remarkable subspaces | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
 | The roots of $-1$ and their relation to the roots of $+1$ | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
-| The root sets and idempotent sets of the twelve structures | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
+| The root sets and idempotent sets of the twelve structures | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The roots of a general element and the failure of the square-root formula off the cone | [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
 
 ## One Equation, Two Objects
@@ -115,7 +115,7 @@ One sign statement belongs here. The central $i$ is anti-Hermitian, $i^{*}=-i$, 
 
 ## The Same Equation Across the Twelve Structures
 
-The equation is relative to the product, so the twelve structures carry twelve root sets. The comparison belongs to *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and to the Derived article *Roots Across the Twelve Structures*; four rows carry the reading.
+The equation is relative to the product, so the twelve structures carry twelve root sets. The comparison belongs to *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and to the Derived article *Roots Across the Twelve Structures*; four rows carry the reading.
 
 | structure | roots of $+1$ | idempotents | reading |
 | --- | --- | --- | --- |
@@ -170,7 +170,7 @@ The Hermitian roots are read as the involutive observables, the Hermitian idempo
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification, the halving map and the pair map.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the other central value and the nilpotent cone.
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for orthogonality, primitivity and the ideals an idempotent generates.
-- [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), for the sectors, the conjugations and the trace.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), for the sectors, the conjugations and the trace.
 - *The Informational Sector: States, Observables and Probability*, for the sector, the Bloch ball and the Born pairing.
 - *The Roots of a General Element: Mass, Frames and the Mass Shell*, for the general value and the failure of the square-root formula off the cone.
 - *The Local Complex Structure and the Speed of Light*, for the physical reading of the roots of $-1$.

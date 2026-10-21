@@ -1,8 +1,8 @@
-# __Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra__
+# __Indefinite Positivity and the Krein Cone of the Biquaternion Algebra__
 
 ## Introduction
 
-The dagger is a **positive involution** of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, the forward null cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the **vectors** there is the set of elements of non-negative Krein square,
+The dagger is a **positive involution** of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, the forward null cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the **vectors** there is the set of elements of non-negative Krein square,
 
 $$
 P_{K}=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\},
@@ -10,9 +10,9 @@ $$
 
 a cone whose boundary is the Krein null set; on the **operators** there is the $J$-positive cone of the general theory, $\{T=T^{\dagger}:\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$, of which the fundamental symmetry $J$ is a member. The first contains the Hermitian cone of the dagger as its future nappe on the Hermitian subspace; the second is the image of the Hilbert positive cone under $J$, a cone of a different kind, which contains $J$ itself and not the identity.
 
-The general theory is *Krein Algebras*, *J-Self-Adjoint and J-Unitary Operators* and *Self-Adjoint Elements and the Positive Cone*; the symmetry is *The Fundamental Symmetry of the Biquaternioid Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the $J$-operators are *J-Self-Adjoint and J-Unitary Operators*; and the definite cone, the Cartan involution and the polar decomposition that this article reads indefinitely are *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*.
+The general theory is *Krein Algebras*, *J-Self-Adjoint and J-Unitary Operators* and *Self-Adjoint Elements and the Positive Cone*; the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the $J$-operators are *J-Self-Adjoint and J-Unitary Operators*; and the definite cone, the Cartan involution and the polar decomposition that this article reads indefinitely are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
-**Conventions.** As throughout: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_\mu Q_\mu^{*}Q'_\mu$, $J={}^{\natural}$, and the orthogonal decomposition is the fundamental one, $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$, of *The Fundamental Symmetry of the Biquaternioid Algebra*.
+**Conventions.** As throughout: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_\mu Q_\mu^{*}Q'_\mu$, $J={}^{\natural}$, and the orthogonal decomposition is the fundamental one, $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$, of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
 ## The Krein Cone of the Algebra
 
@@ -50,7 +50,7 @@ P_{K}\cap\mathbb{M}_{+}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\
 P=\{\tilde{Q}^{*}\tilde{Q}:\tilde{Q}\in\mathbb{B}\}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0,\ \mathrm{Sc}(\tilde{H})\geq0\}.
 $$
 
-**Proof.** On $\mathbb{M}_{+}$ the Krein square is $\langle\cdot\rangle$; an element of the Hermitian subspace is of the form $\tilde{H}=q_te_t+\sum_\mu iq'_\mu\vec e_\mu$ with $q_t,q'_\mu$ real, so $\langle\tilde{H},\tilde{H}\rangle_{\natural}=q_t^{2}-\sum_k q'^{2}_k$ and the inequality $N\geq0$ defines the two nappes $q_t\geq|\vec q'|$ and $q_t\leq-|\vec q'|$; the Hermitian cone consists of the positive semidefinite Hermitian elements, which are precisely the ones with the additional sign $\mathrm{Sc}(\tilde{H})=q_t\geq0$, and they form one nappe. This is the Hermitian-cone computation of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, §*The Cone, the Interval Form and the Isotropic Cone*, read on the general quaternionic sesquilinear form.
+**Proof.** On $\mathbb{M}_{+}$ the Krein square is $\langle\cdot\rangle$; an element of the Hermitian subspace is of the form $\tilde{H}=q_te_t+\sum_\mu iq'_\mu\vec e_\mu$ with $q_t,q'_\mu$ real, so $\langle\tilde{H},\tilde{H}\rangle_{\natural}=q_t^{2}-\sum_k q'^{2}_k$ and the inequality $N\geq0$ defines the two nappes $q_t\geq|\vec q'|$ and $q_t\leq-|\vec q'|$; the Hermitian cone consists of the positive semidefinite Hermitian elements, which are precisely the ones with the additional sign $\mathrm{Sc}(\tilde{H})=q_t\geq0$, and they form one nappe. This is the Hermitian-cone computation of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Cone, the Interval Form and the Isotropic Cone*, read on the general quaternionic sesquilinear form.
 
 **Corollary (the Hermitian cone is inside the Krein cone).** $P\subseteq P_{K}$, and the Krein cone is the union of $P$, its negative $-P$ and the Krein null set inside $\mathbb{M}_{+}$.
 
@@ -78,7 +78,7 @@ the image of the definite positive cone under the fundamental symmetry. In parti
 
 **Proposition ($J$ is $J$-positive and not definite-positive).** $J\in\mathcal{P}_{J}$, since $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}\geq0$. The spectrum of $J$ is the pair $\{+1,-1\}$ with multiplicities $(2,6)$, so $J$ is not positive for the general plain sesquilinear form.
 
-**Proof.** The first is the positivity of the fundamental symmetry; the spectrum is the theorem of *The Fundamental Symmetry of the Biquaternioid Algebra*.
+**Proof.** The first is the positivity of the fundamental symmetry; the spectrum is the theorem of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
 **Theorem ($J$-projections and the extreme rays).** An idempotent $P$ is $J$-self-adjoint, $P^{\dagger}=P$, if and only if it is the Krein-orthogonal projection onto its range along the Krein-orthogonal complement of that range; equivalently, if and only if $\ker P=(\mathrm{ran}\,P)^{\perp_{K}}$, and the range is then non-degenerate. The definite-orthogonal projections commuting with $J$ — among them the spectral projections $\pi_{1,2}=\tfrac12(\mathrm{id}\pm J)$ of $J$ — are the special case in which the range is definite and definite-orthogonal to its complement; $\pi_x$ is the Krein-orthogonal projection onto the centre and is $J$-positive, while $\pi_y$ is the Krein-orthogonal projection onto the vector subspace and is $J$-negative. The extreme rays of $\mathcal{P}_{J}$ are the rank-one $J$-projections $J\,|\tilde{Q}\rangle\langle\tilde{Q}|$ with $\|\tilde{Q}\|_E=1$.
 
@@ -134,10 +134,10 @@ The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{
 ## Further Reading
 
 - *Krein Algebras* (`articles_maths/krein-algebras.md`) and *Self-Adjoint Elements and the Positive Cone* (`articles_maths/self-adjoint-elements-and-the-positive-cone.md`), for the general indefinite cone and order
-- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for $J$ and the two orders
+- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for $J$ and the two orders
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form and its null set
 - *J-Self-Adjoint and J-Unitary Operators* (`articles_maths/j-self-adjoint-and-j-unitary-operators.md`), for the $J$-positive cone and the $J$-projections
 - *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the group $\mathrm{U}(1,3)$
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for $\mathfrak{u}(1,3)$, the Jordan part and the symmetric space
-- *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternioid-algebra-with-hermitian-adjoint.md`), for the definite cone and the Cartan involution used here
+- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the definite cone and the Cartan involution used here
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), and Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite cone and the Cartan involution

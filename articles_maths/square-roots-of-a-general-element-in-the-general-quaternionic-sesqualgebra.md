@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **square root** of an element $a$ in a product $\star$ is an element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = a$, the definition being *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* §6; the roots of a central value are the special case $a = \lambda e_t$ and are treated in *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, whose central-value theorem gives them, and in *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* for the value $0$. This article solves the general problem for the **general quaternionic sesquilinear product**
+The **square root** of an element $a$ in a product $\star$ is an element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = a$, the definition being *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §6; the roots of a central value are the special case $a = \lambda e_t$ and are treated in *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, whose central-value theorem gives them, and in *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* for the value $0$. This article solves the general problem for the **general quaternionic sesquilinear product**
 
 $$
 \tilde\Xi \star \tilde Q = \tilde\Xi^{\natural}\tilde Q^{*}
@@ -120,10 +120,10 @@ The element $\tilde Q_1$ is a square if and only if $Q_{1t}$ is real, $\vec R$ i
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the square root of an element and the root of a central value.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square root of an element and the root of a central value.
 - *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md`), for the central case, the family $c(\vec u_{\mathrm n}+it)$ and the reduction identity used here.
 - *Square Roots of a General Element in the Biquaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.md`), for the plain problem and its quadratic, against which this criterion is set.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family and the element $e_t+i\vec e_x$.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein form.
-- *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the four-way comparison of the root sets.
+- *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the four-way comparison of the root sets.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the notation and the article format.

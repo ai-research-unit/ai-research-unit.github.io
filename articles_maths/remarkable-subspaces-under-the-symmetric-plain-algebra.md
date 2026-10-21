@@ -64,7 +64,7 @@ the first of which leaves the vector subspace and the second of which stays in i
 
 ### Units, Idempotents and Isotropic Elements
 
-A vector element $\vec Q$ has $N(\vec Q)=(\vec Q,\vec Q)$, so the **units** of the vector subspace are the elements with $(\vec Q,\vec Q)\neq0$; **every non-zero element of the subspace is a zero divisor of the block**, since the product of two pure elements is the scalar $-(\vec Q_1,\vec Q_2)$, which vanishes for the orthogonal $\vec Q_2$, and the isotropic elements are those with $(\vec Q,\vec Q)=0$ (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The **idempotents** are the solutions of $\vec Q\bullet\vec Q=\vec Q$, that is $-\bigl(\vec Q,\vec Q\bigr)e_t=\vec Q$, and since the left side is central and the right side is a vector part, both must vanish: $\vec Q=0$. So the vector subspace contains no non-zero idempotent. The **isotropic** elements are the isotropic cone of the vector subspace, $\{(\vec Q,\vec Q)=0\}$, and it is non-empty: for instance $\vec e_x+i\vec e_x$ has $(\vec e_x+i\vec e_x,\vec e_x+i\vec e_x)=1+i^2=0$.
+A vector element $\vec Q$ has $N(\vec Q)=(\vec Q,\vec Q)$, so the **units** of the vector subspace are the elements with $(\vec Q,\vec Q)\neq0$; **every non-zero element of the subspace is a zero divisor of the block**, since the product of two pure elements is the scalar $-(\vec Q_1,\vec Q_2)$, which vanishes for the orthogonal $\vec Q_2$, and the isotropic elements are those with $(\vec Q,\vec Q)=0$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The **idempotents** are the solutions of $\vec Q\bullet\vec Q=\vec Q$, that is $-\bigl(\vec Q,\vec Q\bigr)e_t=\vec Q$, and since the left side is central and the right side is a vector part, both must vanish: $\vec Q=0$. So the vector subspace contains no non-zero idempotent. The **isotropic** elements are the isotropic cone of the vector subspace, $\{(\vec Q,\vec Q)=0\}$, and it is non-empty: for instance $\vec e_x+i\vec e_x$ has $(\vec e_x+i\vec e_x,\vec e_x+i\vec e_x)=1+i^2=0$.
 
 **Remark (the isotropic elements of the vector subspace are of square zero).** On the vector subspace the generic norm is the dot form itself, $N(\vec Q)=(\vec Q,\vec Q)$, so an isotropic vector is exactly a vector of square zero: $\vec Q\bullet\vec Q=-(\vec Q,\vec Q)e_t=0$. **On the vector subspace the isotropic elements and the elements of square zero are the same set**, and both are the isotropic cone of the dot form; on the block as a whole the two sets differ, as *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* records.
 
@@ -124,7 +124,7 @@ $$
 (\tilde Q_1\bullet\tilde Q_2)^{*}=\tfrac12\bigl((\tilde Q_1\tilde Q_2)^{*}+(\tilde Q_2\tilde Q_1)^{*}\bigr)=\tfrac12\bigl(\tilde Q_2\tilde Q_1+\tilde Q_1\tilde Q_2\bigr)=\tilde Q_1\bullet\tilde Q_2,
 $$
 
-and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Products of the Biquaternioid Complex Space*.
+and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Products of the Biquaternion Complex Space*.
 
 ### Units, Idempotents and Isotropic Elements
 
@@ -196,5 +196,5 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 - *Remarkable Subspaces and the Four Forms*, for the same remarkable subspaces under the general plain bilinear form, and *Remarkable Subspaces and the Four General Products*, for the readings of the four general products.
 - *Norm and Invertibility in the General Quaternionic Algebra*, for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.
-- *The 12 Products of the Biquaternioid Complex Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
+- *The 12 Products of the Biquaternion Complex Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the isotropic cone of the block and the elements of square zero.

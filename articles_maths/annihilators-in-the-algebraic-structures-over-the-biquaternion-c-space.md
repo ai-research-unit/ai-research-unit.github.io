@@ -1,10 +1,10 @@
-# __Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space__
+# __Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space__
 
 ## Introduction
 
 **The annihilator of an element in a product is the set of partners that the element kills.** It is defined by an equation that names a product, so the twelve products of the biquaternion space define twelve sets, and each of the twelve is computed below, solved in coordinates and written out with the vectors that generate it. **The two one-sided annihilators are equal in ten of the twelve structures, and they differ in exactly two, the plain product and the general quaternionic sesquilinear product, and there only for an element of vanishing norm.**
 
-**Scope and owners.** The cone and the zero-divisor sets are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The general vocabulary is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. Each computation is owned by its own article, named at the end of its subsection and listed in §*Further Reading*.
+**Scope and owners.** The cone and the zero-divisor sets are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The general vocabulary is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Each computation is owned by its own article, named at the end of its subsection and listed in §*Further Reading*.
 
 ## The Annihilator of an Element
 
@@ -23,7 +23,7 @@ and the **two-sided annihilator** is their intersection. Each is the kernel of o
 - A **complex plane** is a two-dimensional complex subspace, written $\mathbb{C}\{u,v\}$ with its two generators displayed; a **complex line** is written $\mathbb{C}u$. A plane is checked by multiplying its two generators into the product and finding zero.
 - The **centre** is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{B})=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$.
 
-**Four algebraic norms, and the one that decides.** The twelve products carry four **algebraic norms** and no more (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the four is carried by two products, and the four antisymmetrisations carry none. They are
+**Four algebraic norms, and the one that decides.** The twelve products carry four **algebraic norms** and no more (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the four is carried by two products, and the four antisymmetrisations carry none. They are
 $$
 \langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},\qquad \langle\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2},\qquad \langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2},
 $$
@@ -31,13 +31,13 @@ carried by the pairs $(\mathrm{GPA},\mathrm{SPA})$, $(\mathrm{GPS},\mathrm{SPS})
 
 In the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of the space $\mathbb{B}$, with $i$ the unit of the complex coefficients, write $\tilde Q=Q_te_t+\vec Q$, and likewise $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ and $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, where $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; then $\tilde Q^{\natural}=Q_te_t-\vec Q$ and $\tilde Q^{*}=\overline{Q_t}e_t-\overline{\vec Q}$. The **dot product** is $(\vec Q,\vec Q_1)=\sum_{\mu\in\{x,y,z\}}Q_\mu Q_{1\mu}$, the **cross product** is $\vec Q\times\vec Q_1$, and $(\vec Q,\vec Q)$ is read the same way.
 
-The two-sided annihilator lies in the zero-divisor set together with $0$, because a partner that kills every element kills one; the two sets differ wherever a zero divisor is not a killer, and that gap is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+The two-sided annihilator lies in the zero-divisor set together with $0$, because a partner that kills every element kills one; the two sets differ wherever a zero divisor is not a killer, and that gap is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**The annihilator and the zero divisors.** **Whatever nonzero biquaternion $\tilde Q$ is taken, every nonzero element of its annihilator is a zero divisor of the same product, and for the four general products the whole annihilator lies inside the cone.** The two notions are one condition read twice: $\tilde Q$ is a **left zero divisor** of $\star$ exactly when its left annihilator is not $\{0\}$, and a **right zero divisor** exactly when its right annihilator is not $\{0\}$ (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The annihilator is therefore the zero-divisor condition with its witnesses displayed: when $\tilde Q\neq0$ kills $\tilde Q_1\neq0$, the element $\tilde Q_1$ is a right zero divisor of $\star$ with witness $\tilde Q$, so every nonzero element of the left annihilator is a right zero divisor, $A_\star(\tilde Q)\setminus\{0\}\subseteq Z_\star$, and likewise $B_\star(\tilde Q)\setminus\{0\}$ consists of left zero divisors. **On the four general products the annihilator lies on the cone.** There the zero-divisor set is the punctured cone, $Z_\star=\mathcal{C}\setminus\{0\}$ (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*), and with the apex added the whole annihilator is inside the cone, $A_\star(\tilde Q)\subseteq\mathcal{C}$ and $B_\star(\tilde Q)\subseteq\mathcal{C}$ at every $\tilde Q\neq0$; the two planes of a zero divisor, the line of the plain algebra and the plane of the natural product, are totally isotropic subspaces of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$. **The order of the two sentences matters.** The containment $A_\star(\tilde Q)\subseteq\mathcal{C}$ presupposes a cone, and the cone is the zero-divisor set of the four general products alone. In the eight derived structures the zero-divisor set is strictly larger than the cone, the whole punctured space $\mathbb{B}\setminus\{0\}$ in $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$ and the enlarged set $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ in $\mathrm{SPA}$ and $\mathrm{SQS}$ (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*); the annihilator is still inside the zero-divisor set of its structure, but it leaves the cone: in $\mathrm{SPA}$ at the pure element $\vec e_z$ the annihilator is the plane $\{Q_{1t}=0,\ Q_{1z}=0\}$, which contains the unit $\vec e_x$ of norm $\langle\cdot\rangle_{\natural}=1$. **The origin is the one element to read with care.** The annihilator of $\tilde Q=0$ is $\{0\}$ or all of $\mathbb{B}$, the zero of $\mathbb{B}$ is never a zero divisor, and the sentence "the annihilator of $\tilde Q$ consists of zero divisors" therefore holds for the four general products at $\tilde Q\neq0$; at $\tilde Q=0$ the whole space is its own annihilator and the origin within it is the one exemption.
+**The annihilator and the zero divisors.** **Whatever nonzero biquaternion $\tilde Q$ is taken, every nonzero element of its annihilator is a zero divisor of the same product, and for the four general products the whole annihilator lies inside the cone.** The two notions are one condition read twice: $\tilde Q$ is a **left zero divisor** of $\star$ exactly when its left annihilator is not $\{0\}$, and a **right zero divisor** exactly when its right annihilator is not $\{0\}$ (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The annihilator is therefore the zero-divisor condition with its witnesses displayed: when $\tilde Q\neq0$ kills $\tilde Q_1\neq0$, the element $\tilde Q_1$ is a right zero divisor of $\star$ with witness $\tilde Q$, so every nonzero element of the left annihilator is a right zero divisor, $A_\star(\tilde Q)\setminus\{0\}\subseteq Z_\star$, and likewise $B_\star(\tilde Q)\setminus\{0\}$ consists of left zero divisors. **On the four general products the annihilator lies on the cone.** There the zero-divisor set is the punctured cone, $Z_\star=\mathcal{C}\setminus\{0\}$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*), and with the apex added the whole annihilator is inside the cone, $A_\star(\tilde Q)\subseteq\mathcal{C}$ and $B_\star(\tilde Q)\subseteq\mathcal{C}$ at every $\tilde Q\neq0$; the two planes of a zero divisor, the line of the plain algebra and the plane of the natural product, are totally isotropic subspaces of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$. **The order of the two sentences matters.** The containment $A_\star(\tilde Q)\subseteq\mathcal{C}$ presupposes a cone, and the cone is the zero-divisor set of the four general products alone. In the eight derived structures the zero-divisor set is strictly larger than the cone, the whole punctured space $\mathbb{B}\setminus\{0\}$ in $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$ and the enlarged set $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ in $\mathrm{SPA}$ and $\mathrm{SQS}$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*); the annihilator is still inside the zero-divisor set of its structure, but it leaves the cone: in $\mathrm{SPA}$ at the pure element $\vec e_z$ the annihilator is the plane $\{Q_{1t}=0,\ Q_{1z}=0\}$, which contains the unit $\vec e_x$ of norm $\langle\cdot\rangle_{\natural}=1$. **The origin is the one element to read with care.** The annihilator of $\tilde Q=0$ is $\{0\}$ or all of $\mathbb{B}$, the zero of $\mathbb{B}$ is never a zero divisor, and the sentence "the annihilator of $\tilde Q$ consists of zero divisors" therefore holds for the four general products at $\tilde Q\neq0$; at $\tilde Q=0$ the whole space is its own annihilator and the origin within it is the one exemption.
 
 ## The Twelve Structures and their Annihilators
 
-The four general products split into the twelve structures through the class-preserving exchange (*The 12 Products of the Biquaternioid Complex Space*). Each structure is read below with its product written out, the criterion in coordinates, and the annihilator with its generators displayed. The twelve are in the order of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+The four general products split into the twelve structures through the class-preserving exchange (*The 12 Products of the Biquaternion Complex Space*). Each structure is read below with its product written out, the criterion in coordinates, and the annihilator with its generators displayed. The twelve are in the order of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\mathrm{GPA}$, the general plain algebra
 
@@ -128,7 +128,7 @@ A_\bullet(\vec e_x)=\mathbb{C}\{\vec e_y,\vec e_z\},\qquad A_\bullet(e_t+i\vec e
 $$
 The pure plane $Q_t=0$ is a second family beside the cone, and it is why the block has more zero divisors than the plain algebra.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the operator, its rank and the two families.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the operator, its rank and the two families.
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra
 
@@ -149,7 +149,7 @@ A_\star(e_t)=\{\tilde Q_1:Q_{1t}=0\}=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}.
 $$
 The form $\langle\cdot,\cdot\rangle_{*}$ is definite, so no nonzero element is isotropic and the annihilator is never larger than a hyperplane. This is the Hermitian twin of the symmetric quaternionic algebra: the same hyperplane of the same dimension, cut by the other form.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the hyperplane.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the hyperplane.
 
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra
 
@@ -170,7 +170,7 @@ A_\star(e_t)=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\},\qquad \vec e_x+i\vec e_y\
 $$
 The element $\vec e_x+i\vec e_y$ is isotropic, $(\vec Q,\vec Q)=1-1=0$, and an isotropic element lies in its own annihilator; an element that is not isotropic does not. This product gives the largest annihilator a nonzero element can have without killing the whole space.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the hyperplane and the isotropic locus.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the hyperplane and the isotropic locus.
 
 ### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra
 
@@ -187,7 +187,7 @@ A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x-i\vec e_y,\ \vec e_z\},\qquad A
 $$
 At a pure element the scalar part of $\tilde Q_1$ vanishes and its vector part runs over the line conjugate-orthogonal to $\vec Q$, so the annihilator is always a plane of dimension two, whether or not the pure element is a zero divisor; at a non-pure element of the cone the whole of $\tilde Q_1$ is pinned to the line of $\tilde Q^{*}$, and off the cone only $\tilde Q_1=0$ is killed. The block separates the two families of its zero-divisor set by the size of the annihilator, a plane at a pure element against a line at a non-pure one.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the two families.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the two families.
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
@@ -205,7 +205,7 @@ A_\wedge(\vec e_x)=A_\wedge(e_t+2\vec e_x)=\mathbb{C}\{e_t,\vec e_x\}.
 $$
 The block is alternating, so every element lies in its own annihilator and every nonzero element is a zero divisor; a central element kills everything and every other element kills only a plane. It is the one structure of the twelve whose annihilator is the whole space at a nonzero element.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the rank and the plane.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the rank and the plane.
 
 ### $\mathrm{APS}$, the antisymmetric plain sesqualgebra
 
@@ -223,7 +223,7 @@ A_\diamond(e_t+2\vec e_x+3\vec e_y+4\vec e_z)=\mathbb{C}\{e_t+2\vec e_x+3\vec e_
 $$
 At an element of nonzero norm $\langle\cdot\rangle_{\natural}$ the equations $\tilde Q\tilde Q_2=\lambda e_t$ have the single solution line $\mathbb{C}\tilde Q^{-1}$, whose star is the line $\mathbb{C}\overline{\tilde Q}$ of the conjugate element; at an element of the cone they have the plane displayed, and that plane is the star-image of the plain annihilator, $A_\diamond(\tilde Q)=\{\tilde Q_2^{*}:\tilde Q\tilde Q_2=0\}=A_{\text{plain}}(\tilde Q)^{*}$. The block reads the invertibility of the plain product and not its own zero divisors, because it has none. Its product is conjugate-alternating, $\tilde Q\diamond\tilde Q+\overline{\tilde Q\diamond\tilde Q}=0$, so the element lies in its own annihilator exactly when $\tilde Q\diamond\tilde Q$ vanishes, which happens at every element with real coefficients and fails at some elements with complex coefficients, for instance at $\tilde Q=\vec e_x+i\vec e_y$.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the theorem and the two cases.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the theorem and the two cases.
 
 ### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
 
@@ -241,7 +241,7 @@ A_\diamond(e_t)=\mathbb{C}\{e_t\},\qquad A_\diamond(\vec e_x+i\vec e_y)=\mathbb{
 $$
 The element $e_t$ has norm $\langle\cdot\rangle_{\natural}=1$ and its annihilator is the centre, of dimension one; the element $\vec e_x+i\vec e_y$ has norm $\langle\cdot\rangle_{\natural}=0$ and its annihilator is a plane, of dimension two.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the rank table and the plane.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the rank table and the plane.
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra
 
@@ -255,7 +255,7 @@ A_\diamond(\vec e_x+i\vec e_y)=\mathbb{C}\{e_t,\ \vec e_x-i\vec e_y\},\qquad A_\
 $$
 The operator depends on the vector part alone and only through its conjugate, so an element of the centre has the zero operator and kills everything, and a non-central element has rank two and kills exactly the centre together with the conjugate line of its vector part.
 
-*Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* owns the plane and the rank.
+*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* owns the plane and the rank.
 
 ## Results
 
@@ -343,18 +343,18 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 
 ## Further Reading
 
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the cone, the twelve zero-divisor sets and the one-sided inverse equations.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the annihilator stated once for a general product.
-- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve names and their three-letter codes.
-- *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the twelve products and their class-preserving exchange.
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$, the two products that carry each, and the norm $\langle\cdot\rangle_{\natural}$ that decides the annihilators.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the cone, the twelve zero-divisor sets and the one-sided inverse equations.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the annihilator stated once for a general product.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve names and their three-letter codes.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve products and their class-preserving exchange.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$, the two products that carry each, and the norm $\langle\cdot\rangle_{\natural}$ that decides the annihilators.
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the kernels of the multiplications read in the matrix model.
 - *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), for the reading in the three companion structures of the quaternion space, where the elements that annihilate every partner are tabulated.
 
 The owners of the twelve subsections, grouped by the article that carries them, are:
 
 - *Annihilators of the Biquaternion Algebra* (`articles_maths/annihilators-of-the-biquaternion-algebra.md`), for $\mathrm{GPA}$.
-- *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$.
+- *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), for $\mathrm{GQA}$.
 - *Annihilators of the General Plain Sesqualgebra* (`articles_maths/annihilators-of-the-general-plain-sesqualgebra.md`), for $\mathrm{GPS}$.
 - *Annihilators of the General Quaternionic Sesqualgebra* (`articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.md`), for $\mathrm{GQS}$.

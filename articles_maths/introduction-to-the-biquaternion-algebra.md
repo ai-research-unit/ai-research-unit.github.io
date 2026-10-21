@@ -8,11 +8,11 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} ,
 $$
 
-the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. It is the object the Biquaternions category is built on, and this article is its opening: it fixes the element, the basis and the multiplication of $\mathbb{B}$, records the four conjugations the complex scalars make available, and reads off the algebra the multiplication defines.
+the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. It is the object the Biquaternions category is built on, and this article is its opening: it fixes the element, the basis and the multiplication of $\mathbb{B}$, records the four conjugations the complex scalars make available, and reads off the algebra the multiplication defines. It opens the group *The Algebra and Its Vector Spaces*, and it is the article the other two assume.
 
 The construction is short and the consequences long. The multiplication $\tilde Q_1 \tilde Q_2$ is $\mathbb{C}$-bilinear, associative and unital, so the complex vector space $\mathbb{B}$ becomes an associative unital $\mathbb{C}$-algebra; a bilinear map is determined by its values on a basis, so the sixteen products of the basis elements carry the whole multiplication, and the table is the quaternion table with the central imaginary admitted only as a coefficient. Once the algebra is in place its scalar structure, its centre, its generators, its presentation by relations, its conjugations and its matrix model are read off in turn. The algebra is central and simple of complex dimension four, hence isomorphic to the matrix algebra $M_2(\mathbb{C})$, and it is not a division algebra: the element $e_t + i\vec e_x$ is a zero divisor.
 
-**Boundaries.** The multiplication is the **general plain bilinear product**; it is not developed here. The four general products the same space carries, with their forms and their algebraic norms, are *The Products, Their Forms and Their Algebraic Norms*, and the general plain bilinear product is developed one product among four in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. The elements, the basis and the conjugation formulas are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; the conjugations as a group, its Cayley table and the place of the anti-Hermitian conjugation are *The Group of Involutions*. The invertibility criterion and the group of units are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the Biquaternion Algebra*; the simplicity and the two-sided ideals read here as cited are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the modules are *Modules over the Biquaternion Algebra*; the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the real reading is *The Realification and the Effect of the Change of Scalars*. The general theory is *Algebras: A General Introduction*, *Associative Algebras*, *Unital Algebras*, *Tensor Products of Algebras*, *Quotients of the Tensor Algebra* and *Opposite Algebras and Anti-Isomorphisms*.
+**Boundaries.** The multiplication is the **general plain bilinear product**; it is not developed here. The four general products the same space carries are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the four forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and the four algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. The elements, the basis and the conjugation formulas are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; the conjugations as a group, its Cayley table and the place of the anti-Hermitian conjugation are *The Group of Involutions*. The invertibility criterion and the group of units are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the Biquaternion Algebra*; the simplicity and the two-sided ideals read here as cited are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the modules are *Modules over the Biquaternion Algebra*; the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the real reading is *The Realification and the Effect of the Change of Scalars*. The general theory is *Algebras: A General Introduction*, *Associative Algebras*, *Unital Algebras*, *Tensor Products of Algebras*, *Quotients of the Tensor Algebra* and *Opposite Algebras and Anti-Isomorphisms*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_t, \vec e_x, \vec e_y, \vec e_z$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_t e_t + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_k \vec e_k$ the **vector part**, and a coefficient splits as $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$. The sign vector of the natural conjugation is $\varepsilon = (1, -1, -1, -1)$, and $(\vec Q_1, \vec Q_2) = \sum_{k=1}^{3} Q_{1k} Q_{2k}$ is the complex bilinear dot product of the vector parts.
 
@@ -54,7 +54,7 @@ $$
 \tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu = Q_t e_t + \vec Q , \qquad Q_\mu = q_\mu + i q'_\mu \in \mathbb{C} ,
 $$
 
-the **$\mathbb{C}$ scalar part** $Q_t e_t$ and the **$\mathbb{C}$ vector part** $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
+the **$\mathbb{C}$ scalar part** $Q_t e_t$ and the **$\mathbb{C}$ vector part** $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*.
 
 ### The Scalar–Vector Split and the Two Products of Vector Parts
 
@@ -78,7 +78,7 @@ $$
 (\tilde Q_1, \tilde Q_2) \longmapsto \tilde Q_1 \tilde Q_2 = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} Q_{1\mu} Q_{2\nu} \, e_\mu e_\nu ,
 $$
 
-the general plain bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. On the four coordinates it reads
+the general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t, \dots, \vec e_z$: **the rule is a map into $\mathbb{B}$ and is well defined**. On the four coordinates it reads
 
 $$
 \tilde Q_1 \tilde Q_2 = (Q_{1,0} Q_{2t} - Q_{1,1} Q_{2x} - Q_{1,2} Q_{2y} - Q_{1,3} Q_{2z})
@@ -95,7 +95,7 @@ $$
 \tilde Q_1 \tilde Q_2 = \bigl(Q_{1,0} Q_{2t} - (\vec Q_1, \vec Q_2)\bigr) + Q_{1,0} \vec Q_2 + Q_{2t} \vec Q_1 + \vec Q_1 \times \vec Q_2 ,
 $$
 
-the display being the one of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde Q_1 \tilde Q_2) = \sum_{\mu\in\{t,x,y,z\}} \varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon = (1, -1, -1, -1)$.
+the display being the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde Q_1 \tilde Q_2) = \sum_{\mu\in\{t,x,y,z\}} \varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon = (1, -1, -1, -1)$.
 
 ### The Multiplication Table
 
@@ -375,7 +375,7 @@ A unital subalgebra contains the identity $e_t$ and hence every $\mathbb{C}$-mul
 
 ## Summary
 
-The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_t, \vec e_x, \vec e_y, \vec e_z$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. The general plain bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear, associative and unital; it is determined by the sixteen products of the four basis elements.
+The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_t, \vec e_x, \vec e_y, \vec e_z$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear, associative and unital; it is determined by the sixteen products of the four basis elements.
 
 $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
@@ -429,9 +429,10 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the structure map into the centre and the tensor product of algebras.
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
-- *The Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-products-their-forms-and-their-algebraic-norms.md`), for the four general products the space carries, their forms and their algebraic norms.
-- *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
-- *The Biquaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the element, the basis, the three coordinate systems and the conjugation formulas.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four scalar parts of the four general products, their Gram matrices and their isometry groups.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the four diagonals of the four forms and the separation of the algebraic and the topological sense of the norm.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
+- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the element, the basis, the three coordinate systems and the conjugation formulas.
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations, their Cayley table and their orbits.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the reduced norm, the invertibility criterion and the zero-divisor cone.
 - *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.

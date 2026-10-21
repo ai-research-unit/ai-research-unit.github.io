@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*), and the fourth of them,
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation $\tilde Q^{*} = \overline{Q_t} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $\vec Q = \sum_k Q_k \vec e_k$ is the vector part.
+is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation $\tilde Q^{*} = \overline{Q_t} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $\vec Q = \sum_k Q_k \vec e_k$ is the vector part.
 
 The subject of this article is the pair of **one-sided actions of the unit candidate** $e_t$, and the fact that they are not the identity but the two conjugations of the algebra:
 
@@ -19,7 +19,7 @@ $$
 
 Both hold for every $\tilde Q$, and both are then read on the remarkable subspaces. Their consequence is the group's defining negative statement: the multiplication has **no unit on either side**. There is no element $\tilde E$ with $\tilde E \star \tilde Q = \tilde Q$ for all $\tilde Q$, and none with $\tilde Q \star \tilde E = \tilde Q$ for all $\tilde Q$. The third product of the four has a right unit and no left one, the second has a left unit and no right one, and the first has a unit; the fourth has neither, and this is what separates its structure theory from the other three.
 
-The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; it uses the two scalar rules of the category, which are *Sesqualgebras* §*The Definition*; it uses the derived-operation test with its two conditions, which is *Sesqualgebras* §*The Standard Example* as applied to $\mathbb{B}$ in *Introduction to the General Quaternionic Sesqualgebra* §*The Product Is Not the Derived Operation*; and it uses the reading of the two conjugations on the remarkable subspaces, which is *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. It does not treat the general operators of the multiplication, which are the later article of this group *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*, nor the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*.
+The article owns the two actions and the absence of a unit. It reads the actions off the rule, which is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; it uses the two scalar rules of the category, which are *Sesqualgebras* §*The Definition*; it uses the derived-operation test with its two conditions, which is *Sesqualgebras* §*The Standard Example* as applied to $\mathbb{B}$ in *Introduction to the General Quaternionic Sesqualgebra* §*The Product Is Not the Derived Operation*; and it uses the reading of the two conjugations on the remarkable subspaces, which is *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. It does not treat the general operators of the multiplication, which are the later article of this group *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*, nor the ternary product, which is *The Ternary Product and the Failure of the Jordan Triple Identity*.
 
 ## The Two Actions of the Unit
 

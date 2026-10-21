@@ -146,7 +146,7 @@ splitting, when it exists, is carried by an idempotent, a family, or not at all.
 
 The criterion of the block is the projector classification of §*The Projector Classification*: the only projectors are the zero operator and the projection onto the vector subspace, the latter at the unit $e_t$, and the splitting of §*The Splitting Realised by One Element* is carried by the multiplication of that one element.
 
-**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde Q_1=\vec Q_1$ for every $\tilde Q_1$; the element is $\tilde E=e_t$, uniquely.
+**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde Q_1=\vec Q_1$ for every $\tilde Q_1$; the element is $\tilde E=e_t$, uniquely.
 
 *Proof.* The block's entry is the governing identity. For the other eleven, group them by the action of the unit. In GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector subspace; in SQA it acts as the projection onto the centre; in APA and AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_t$ is conjugate-linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection onto the vector subspace; a conjugate-linear $L$ with $L^{2}=L$ is linear and conjugate-linear at once, hence zero, so in the six the only projector is the zero operator. For the element $\tilde E$, the equation at $\tilde Q_1=e_t$ reads $\tilde E\star e_t=0$; in GPA, SPA and GPS this forces $\tilde E=0$, in GQA, GQS and SQS it forces $\tilde E^{\natural}=0$, and in SQA and SPS it forces $E_te_t=0$, none compatible with the value $\vec Q_1$ at a pure $\tilde Q_1$; in APA and AQS the value at $e_t$ vanishes identically and the pure values are the cross products $\vec E\times\vec Q_1$ and $\vec E\times\overline{\vec Q_1}$, which lie in the orthogonal plane of $\vec E$; and in APS the value at $e_t$, which is $\vec E$, forces $\tilde E=E_te_t$, after which the values at $\vec e_x$ and at $i\vec e_x$ force the contradictory $E_t=-1$ and $E_t=1$. Inside the block the element is unique: at $\tilde Q_1=e_t$ the equation gives $-\vec E=0$, so $\vec E=0$, and at a pure $\tilde Q_1$ it gives $E_t\tilde Q_1=\tilde Q_1$, so $E_t=1$.
 
@@ -225,7 +225,7 @@ no Peirce calculus.
 | $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}$ | the projector equation; its solutions are $0$ and $e_t$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, the image of $L_{e_t}$ and of the block, a left ideal |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, the kernel of $L_{e_t}$ |
-| GPA … AQS | the twelve structures, coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* |
+| GPA … AQS | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 
@@ -235,4 +235,4 @@ no Peirce calculus.
 - *Introduction to the Antisymmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its image, the one-sided action of the unit and the absence of a unit
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the operators $L_{\tilde Q_4}$, their matrices, their ranks and the elements for which the rank drops
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the form whose radical is the image of the projection
-- *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the twelve operations and their two alternating rows
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve operations and their two alternating rows

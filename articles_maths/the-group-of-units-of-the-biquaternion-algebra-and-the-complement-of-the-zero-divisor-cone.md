@@ -27,14 +27,14 @@ other of the twelve structures.**
 after *The Specificities of the Biquaternion Algebra*. It states the invertibility criterion of the
 plain product that *Norm and Invertibility in the Biquaternion Algebra* declines to read from the
 product's own algebraic norm, and it cites *Zero Divisors in the Algebraic Structures over the
-Biquaternioid $\mathbb{C}$ Space* for the one-sided inverse equations read across the four general
+Biquaternion $\mathbb{C}$ Space* for the one-sided inverse equations read across the four general
 products. The topology of the group — the polar decomposition, the retractions onto the compact
 subgroups, the homotopy groups and the universal cover — is proved in *The Biquaternion Unit Group
 as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*; the ambient topology of
 the cone is *The Topology of the Zero-Divisor Cone*; the distribution of the units over the
 remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The
 Algebraic Norm on the Remarkable Subspaces*; the invertibility of the symmetrised product is *Norm
-and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. None of those is reproved here.
+and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$
 with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$; a general element is $\tilde
@@ -49,7 +49,7 @@ $$
 $$
 
 the scalar of the central square $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. It is one of the four
-algebraic norms of the space (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*), and
+algebraic norms of the space (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*), and
 the whole article turns on its not being the algebraic norm of the plain product: $\langle\cdot\rangle$ is the
 diagonal of the plain bilinear form, $\langle\cdot,\cdot\rangle_{\natural}$ is the general quaternionic one, and the two are different
 forms with different vanishing sets. The generic norm $\mathrm{Norm}$ of *Conventions in
@@ -68,7 +68,7 @@ $$
 is the **zero-divisor cone**. It is a complex cone with apex at the origin, of complex dimension
 three and real dimension six, and the zero-divisor set of the four general products is the punctured
 cone $\mathcal{C}\setminus\{0\}$ (*Zero Divisors of the Biquaternion Algebra*; *Zero Divisors in
-the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*).
+the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 **Theorem (the invertibility criterion of the plain product).** An element $\tilde Q$ of
 $\mathbb{B}$ is invertible in the plain product exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse is
@@ -462,7 +462,7 @@ element at all.
   distribution of the invertible elements over the remarkable subspaces.
 - *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the criterion of the plain
   product, the two families of the cone and the three-way classification.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`),
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`),
   for the cone as the zero-divisor set of the four general products and the one-sided inverse
   equations.
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the group
@@ -476,8 +476,8 @@ element at all.
   of the symmetrised product.
 - *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the left alternativity
   that the associativity of the plain product supplies and the isolation of the block.
-- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
   structures, their units and their images.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the unit, the
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the unit, the
   inverse, the zero divisor and the annihilator stated once for a general product.
 

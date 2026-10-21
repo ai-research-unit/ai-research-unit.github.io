@@ -25,8 +25,8 @@ The operation and its table are *Introduction to the Antisymmetric Plain Algebra
 Lie structure, the form and the operators are *The Lie Algebra of the Antisymmetric Plain Algebra*,
 *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations
 of the Antisymmetric Plain Algebra*, and the element theory is *Zero Divisors of the Antisymmetric
-Plain Algebra*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and
-*Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, all below this article
+Plain Algebra*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and
+*Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, all below this article
 in this category. The law vocabulary is *Definitions for the Study of
 the Algebraic Structures* and the law table *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
@@ -132,7 +132,7 @@ $$
 
 The nonzero nilpotents are the punctured space, and the class coincides with the zero-divisor set and
 with the root set of $0$ (*Square Roots of Zero and the Nilpotents of the Antisymmetric Plain
-Algebra* and *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, both below this article in this
+Algebra* and *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, both below this article in this
 category).
 
 *Proof.* The square vanishes identically, so every element is square-zero; the index of nilpotency is
@@ -202,5 +202,5 @@ the Jacobi identity is the whole of the difference between them.
 - *Introduction to the Antisymmetric Plain Algebra*, for the operation, its table and the absence of a unit.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the Lie structure.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the derivations.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, all below this article in this category, for the element classes folded here.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, all below this article in this category, for the element classes folded here.
 - *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, for the law vocabulary and the law table.

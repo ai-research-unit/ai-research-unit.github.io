@@ -426,6 +426,6 @@ The two products of the series are the product of two boosts, which is a boost t
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the six subspaces one by one, their bases, their dimensions, their elements and their ideals.
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the four coordinate blocks, the intersections, the lattice of the fixed spaces and the action of the conjugations on the subspaces.
 - *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces.md`), for the three eigenspace decompositions the conjugations cut out.
-- *The Biquaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the algebra, the four conjugations and the norm.
+- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, the four conjugations and the norm.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the symbols, the root convention and the unitary convention.

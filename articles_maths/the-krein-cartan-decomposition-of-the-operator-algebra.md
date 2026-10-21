@@ -8,7 +8,7 @@ The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebr
 
 ## The Three Adjoints of the Operator Algebra
 
-**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* define three adjoints,
+**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* define three adjoints,
 
 $$
 \langle M\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_1,M^{\mathsf T}\tilde{Q}_2\rangle,
@@ -137,7 +137,7 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 **Proof.** The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it invariant under the adjoint action. For $\mathfrak{u}(n,m)$ the trace form is proportional to the Killing form, whose signature is $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; this is the same statement as the Cartan decomposition of the previous section.
 
-**Theorem (the Jordan cone).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* as its cone of squares.
+**Theorem (the Jordan cone).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* as its cone of squares.
 
 **Proof.** The anticommutator of two $J$-self-adjoint operators is $J$-self-adjoint, as shown above, and the Jordan axiom follows from associativity of the product in $\mathfrak{g}$. The cone statement is the definition of $\mathcal{P}_{J}$.
 
@@ -174,9 +174,9 @@ The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the three pairings, their isometry groups and their signatures
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the three pairings, their isometry groups and their signatures
 - *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for $\mathrm{U}(1,3)$, its maximal compact part and the boosts
 - *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the Krein adjoint of the algebra's families
-- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone inside the Jordan part
+- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the $J$-positive cone inside the Jordan part
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the complex hyperbolic space as the space of positive lines
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for Cartan involutions, Cartan decompositions and symmetric spaces of non-compact type

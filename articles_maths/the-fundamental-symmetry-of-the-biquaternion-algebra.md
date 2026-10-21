@@ -1,4 +1,4 @@
-# __The Fundamental Symmetry of the Biquaternioid Algebra__
+# __The Fundamental Symmetry of the Biquaternion Algebra__
 
 ## Introduction
 
@@ -10,7 +10,7 @@ $$
 
 with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.
 
-The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
+The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
 
 **Conventions.** As in the companion articles: $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$, $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^{2}$, $\|\tilde{Q}_1\|_E=(\sum_\mu|Q_{1,\mu}|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural*}\tilde{Q}_2)$, with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q}_1)_\mu=\varepsilon_\mu Q_{1,\mu}$, the dagger acts on the coefficients by $Q_{1,\mu}^{*}=\varepsilon_\mu\bar Q_{1,\mu}$, and the form is the four terms $\bar Q_tQ_{2t}-\bar Q_xQ_{2x}-\bar Q_yQ_{2y}-\bar Q_zQ_{2z}$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}_1^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q}_1)$ (*The Matrix Element Representation and the Biquaternion Dynamics*).
 

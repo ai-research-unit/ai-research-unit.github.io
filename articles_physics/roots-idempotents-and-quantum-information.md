@@ -21,7 +21,7 @@ The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composit
 | The roots of $+1$, the halving map and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | Orthogonality, completeness, primitivity and the Peirce decomposition | [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The positive cone, the order interval and its extreme points | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
-| The plain form and the Hilbert–Schmidt form (proportional by $1/2$) | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
+| The plain form and the Hilbert–Schmidt form (proportional by $1/2$) | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 | The unitary group and the matrix-unitary condition | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
 | The tensor product and the isomorphism $M_m\otimes M_n\cong M_{mn}$ | [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html) |
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The square of an element for the sesquilinear multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, and it is a Hermitian element whose scalar part is the sum of the modulus squares of the four coordinates,
+The square of an element for the sesquilinear multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, and it is a Hermitian element whose scalar part is the sum of the modulus squares of the four coordinates,
 
 $$
 \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu\overline{Q_\mu}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} .

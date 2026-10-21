@@ -28,7 +28,7 @@ and $\mathcal{Z}$ is the **zero-divisor cone**. The group of units is its comple
 
 The two descriptions agree with the null set of the algebraic norm.
 
-**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; *Zero Divisors of the Biquaternion Algebra*).
+**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; *Zero Divisors of the Biquaternion Algebra*).
 
 **Proposition (elementary properties).** With the Euclidean topology of the ambient space:
 
@@ -193,7 +193,7 @@ The three-dimensional spaces above are the pure real slices. The Lorentzian slic
 
 ## Summary
 
-- The **singular set** $\mathcal{N}=\mathcal{Z}\cup\{0\}$ of the algebra is the set of non-units together with the origin; it coincides with the null set of the algebraic norm, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. It is closed, of empty interior, a real algebraic cone with apex $0$ and real dimension $6$; the group of units is its open and dense complement.
+- The **singular set** $\mathcal{N}=\mathcal{Z}\cup\{0\}$ of the algebra is the set of non-units together with the origin; it coincides with the null set of the algebraic norm, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. It is closed, of empty interior, a real algebraic cone with apex $0$ and real dimension $6$; the group of units is its open and dense complement.
 - The cone is **smooth away from its apex**: the algebraic norm is irreducible with gradient vanishing only at the origin, so $0$ is the only singular point and the punctured cone $\mathcal{Z}$ is a smooth complex $3$-manifold.
 - The cone is **contractible**, contracted to the apex by $\tilde Q\mapsto(1-s)\tilde Q$; the ambient contractibility of $\mathbb{B}$ is a separate statement, owned by *The Euclidean Topology of the Biquaternion Algebra*.
 - The **link** $L=\mathcal{N}\cap S^7_E$ is a closed connected real $5$-manifold, an $S^1$-bundle over the projectivised cone $S^2\times S^2$; it is simply connected with $\pi_2(L)\cong\mathbb{Z}$, and it is not $S^5$, so the apex is genuinely singular.

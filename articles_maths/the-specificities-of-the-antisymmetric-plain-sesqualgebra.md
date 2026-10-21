@@ -18,7 +18,7 @@ R^{\diamond}_{e_t}\tilde Q_1=\tilde Q_1\diamond e_t=\operatorname{Vect}\tilde Q_
 L^{\diamond}_{e_t}\tilde Q_1=e_t\diamond\tilde Q_1=-\overline{\operatorname{Vect}\tilde Q_1},
 $$
 
-so the right multiplication by $e_t$ is the **projection onto the vector subspace** along the centre. The block is the **only** one of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* in which some element multiplies on the right as that projection, and the element is necessarily $e_t$. Equivalently, the block is the only one in which the canonical splitting
+so the right multiplication by $e_t$ is the **projection onto the vector subspace** along the centre. The block is the **only** one of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* in which some element multiplies on the right as that projection, and the element is necessarily $e_t$. Equivalently, the block is the only one in which the canonical splitting
 
 $$
 \mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}
@@ -28,7 +28,7 @@ is realised by the multiplication on the right by a single element, the element 
 
 ## Placement
 
-The article is the closing entry of the block, after the introduction, the vector part of the square and the Jacobi failure, the remarkable subspaces, the sesquilinear pairing, the adjoint operators and the two matrix models. It uses the operation and its image of *Introduction to the Antisymmetric Plain Sesqualgebra*, the operator layer of *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*, the $2\times2$ model of *Introduction to the Symmetric Plain Sesqualgebra*, the classification of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and the products of *The 12 Products of the Biquaternioid Complex Space*. It reads back, as consequences of one identity, the element theory of the five Common Theory articles of the block: *Norm and Invertibility in the Antisymmetric Plain Sesqualgebra*, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*, *Idempotents of the Antisymmetric Plain Sesqualgebra* and *Nilpotents of the Antisymmetric Plain Sesqualgebra*.
+The article is the closing entry of the block, after the introduction, the vector part of the square and the Jacobi failure, the remarkable subspaces, the sesquilinear pairing, the adjoint operators and the two matrix models. It uses the operation and its image of *Introduction to the Antisymmetric Plain Sesqualgebra*, the operator layer of *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*, the $2\times2$ model of *Introduction to the Symmetric Plain Sesqualgebra*, the classification of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and the products of *The 12 Products of the Biquaternion Complex Space*. It reads back, as consequences of one identity, the element theory of the five Common Theory articles of the block: *Norm and Invertibility in the Antisymmetric Plain Sesqualgebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*, *Idempotents of the Antisymmetric Plain Sesqualgebra* and *Nilpotents of the Antisymmetric Plain Sesqualgebra*.
 
 ## Conventions
 
@@ -40,7 +40,7 @@ L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2,
 R^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_2\star\tilde Q_1,
 $$
 
-and the superscript is dropped for the product in force. The **projection onto the vector subspace** is $P_{\operatorname{Vect}}$, the map $\tilde Q_1\mapsto\operatorname{Vect}\tilde Q_1$ removing the scalar part, and the **projection onto the centre** is $P_{\mathbb{C}_{\mathbb{B}}}$, the map $\tilde Q_1\mapsto\operatorname{Sc}(\tilde Q_1)e_t$ keeping it. The centre is $\mathbb{C}_{\mathbb{B}}$, the vector subspace is $\operatorname{Vect}(\mathbb{B})$, and the two meet at the origin. The **twelve** are $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+and the superscript is dropped for the product in force. The **projection onto the vector subspace** is $P_{\operatorname{Vect}}$, the map $\tilde Q_1\mapsto\operatorname{Vect}\tilde Q_1$ removing the scalar part, and the **projection onto the centre** is $P_{\mathbb{C}_{\mathbb{B}}}$, the map $\tilde Q_1\mapsto\operatorname{Sc}(\tilde Q_1)e_t$ keeping it. The centre is $\mathbb{C}_{\mathbb{B}}$, the vector subspace is $\operatorname{Vect}(\mathbb{B})$, and the two meet at the origin. The **twelve** are $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Governing Identity
 
@@ -110,7 +110,7 @@ The criterion is therefore an **operator criterion**: the splitting is realised 
 
 The criterion is tested on each of the twelve structures by computing the right multiplication by the ambient unit.
 
-**Theorem (the block is the only one).** Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, $\mathrm{APS}$ is the only one for which $R^{\star}_{e_t}=P_{\operatorname{Vect}}$; and it is the only one in which any element has right multiplication equal to $P_{\operatorname{Vect}}$.
+**Theorem (the block is the only one).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, $\mathrm{APS}$ is the only one for which $R^{\star}_{e_t}=P_{\operatorname{Vect}}$; and it is the only one in which any element has right multiplication equal to $P_{\operatorname{Vect}}$.
 
 *Proof.* The table computes $R^{\star}_{e_t}$ family by family. For the second statement: if $R^{\star}_{\tilde Q_1}=P_{\operatorname{Vect}}$ then the operator is a projector, and the projector classification of §*The Projector Classification* leaves the two elements $0$ and $e_t$, of which only $e_t$ gives $P_{\operatorname{Vect}}$.
 
@@ -148,7 +148,7 @@ The identity $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$, with the projector cl
 - **One idempotent.** The idempotent equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ is solved by the parity, not by the projection: an idempotent is a pure vector, and the diagonal of a pure vector is $-\vec p\times\overline{\vec p}$, purely imaginary, so the equation has the origin alone for its solution (*Idempotents of the Antisymmetric Plain Sesqualgebra*). The projection explains why the element calculus has no other ingredient to offer here: the projector $R^{\diamond}_{e_t}$ is not the multiplication of an idempotent.
 - **No root of $-1$ or $+1$.** Every value is a pure vector, being the image of the projection; the diagonal is a value, so it has zero scalar part, while $\pm e_t$ is central with scalar part $\pm1$ (*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*).
 - **Thin nilpotents.** The diagonal is $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, the Hermitian square read through the projection, and it vanishes on the cone over the real unit sphere; the index of the block is two (*Nilpotents of the Antisymmetric Plain Sesqualgebra*).
-- **Every nonzero element a zero divisor.** The equation $\tilde Q_1\diamond\tilde Q_2=0$ asks for $\tilde Q_1\tilde Q_2^{*}\in\mathbb{C}_{\mathbb{B}}$, and the projection makes the central membership attainable from every nonzero $\tilde Q_1$ (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*).
+- **Every nonzero element a zero divisor.** The equation $\tilde Q_1\diamond\tilde Q_2=0$ asks for $\tilde Q_1\tilde Q_2^{*}\in\mathbb{C}_{\mathbb{B}}$, and the projection makes the central membership attainable from every nonzero $\tilde Q_1$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 ## The Boundary of the Criterion
 
@@ -170,7 +170,7 @@ R^{\diamond}_{e_t}=P_{\operatorname{Vect}},
 \tilde Q_1\diamond e_t=\operatorname{Vect}\tilde Q_1,
 $$
 
-the right multiplication by the ambient unit is the projection onto the vector subspace along the centre, while the left multiplication is its conjugate. Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* the block is the only one that realises the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ on the right by a single element, and no other structure has any element whose right multiplication is $P_{\operatorname{Vect}}$; $\mathrm{AQA}$ realises the splitting on the left and is the twin.
+the right multiplication by the ambient unit is the projection onto the vector subspace along the centre, while the left multiplication is its conjugate. Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* the block is the only one that realises the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ on the right by a single element, and no other structure has any element whose right multiplication is $P_{\operatorname{Vect}}$; $\mathrm{AQA}$ realises the splitting on the left and is the twin.
 
 The identity is equivalent to the projector classification of the block: a right multiplication is a projector exactly for the elements $0$ and $e_t$, the second being the projection onto the vector subspace and the first the zero operator. The companion law, conjugate-alternation, isolates the block together with $\mathrm{AQS}$, and the projection criterion separates the pair. Each Common Theory article of the block — the absence of the unit and the inverse, the unique idempotent, the absent roots of $\pm1$, the thin nilpotents and the full zero-divisor set — is a consequence of the one identity.
 
@@ -189,7 +189,7 @@ The identity is equivalent to the projector classification of the block: a right
 
 ## Further Reading
 
-- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve structures and their laws, units and images.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and their laws, units and images.
 - *Introduction to the Antisymmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.md`), for the product, its image and its two one-sided actions.
 - *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-adjoint-operators-and-the-sandwich-of-the-antisymmetric-plain-sesqualgebra.md`), for the left and right multiplications of the block.
 - *Introduction to the Symmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra.md`), for the model in which the projector classification is proved.

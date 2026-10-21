@@ -9,7 +9,7 @@ $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2 , \qquad \tilde Q_1^{\natural} = Q_{1t} - \vec Q_1 ,
 $$
 
-the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra*. The preceding articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
+the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra*. The preceding articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
 
 $$
 \mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z ,
@@ -137,7 +137,7 @@ $$
 
 the definite inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = \vec e_x$ its two sides in the Jordan identity are $e_t$ and $0$, which is the failure computed for the whole algebra in *The Symmetrised Quaternionic Product and the Hermitian Subspace* and recorded for the subspace in *Remarkable Subspaces and the Four General Products*.
 
-**Not a Lie algebra.** The antisymmetrisation $[h,g]_{\star} = \bar hg-\bar gh$ stays inside the subspace, but it fails the Jacobi identity; at the triple $(e_t,\vec e_x,\vec e_y)$ the cyclic sum of the three brackets is a nonzero multiple of $\vec e_z$ (*Remarkable Subspaces and the Four General Products*, and *The 12 Products of the Biquaternioid Complex Space* for the whole algebra).
+**Not a Lie algebra.** The antisymmetrisation $[h,g]_{\star} = \bar hg-\bar gh$ stays inside the subspace, but it fails the Jacobi identity; at the triple $(e_t,\vec e_x,\vec e_y)$ the cyclic sum of the three brackets is a nonzero multiple of $\vec e_z$ (*Remarkable Subspaces and the Four General Products*, and *The 12 Products of the Biquaternion Complex Space* for the whole algebra).
 
 **What it is.** The restricted product is the isotope of the quaternion division algebra by its conjugation: closed, with a left unit and no right one, non-associative, with the classical positive element theory of the division algebra, and with the opposite quaternion algebra as the monoid of its left multiplications. It is the classical picture of the batch, and the article that follows reads the same product in the matrix model.
 

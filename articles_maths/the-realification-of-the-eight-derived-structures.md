@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The eight derived structures are the symmetric and the antisymmetric halves of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*: the symmetric plain, symmetric quaternionic, antisymmetric plain and antisymmetric quaternionic algebra and sesqualgebra. Each is an algebraic structure on the same complex space $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and each carries its own product, its own forms and its own operators.
+The eight derived structures are the symmetric and the antisymmetric halves of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*: the symmetric plain, symmetric quaternionic, antisymmetric plain and antisymmetric quaternionic algebra and sesqualgebra. Each is an algebraic structure on the same complex space $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and each carries its own product, its own forms and its own operators.
 
 The construction of the realification is not repeated here: the realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure and the table of the four effects of the change of scalars are *The Realification and the Effect of the Change of Scalars*. What this article collects, one structure to a section, is what is specific to each of the eight: the real reading of its product, the kind of its second slot over $\mathbb{R}$, the realified form it carries with its signature, and its real operators. The three general structures, whose products are not symmetrised, are the subject of *The Realification of the General Plain Sesqualgebra*, *The Realification of the General Quaternionic Algebra* and *The Realification of the General Quaternionic Sesqualgebra*.
 
@@ -12,7 +12,7 @@ Every structure below is read over $\mathbb{R}$ on the eight-dimensional real sp
 
 ### The Realified Form
 
-The product carries the general plain bilinear $\langle\cdot,\cdot\rangle$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*:
+The product carries the general plain bilinear $\langle\cdot,\cdot\rangle$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*:
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)
 $$
@@ -38,7 +38,7 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 
 ### The Realified Form
 
-The product carries the general plain sesquilinear, the Hermitian $\langle\cdot,\cdot\rangle_{*}$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*:
+The product carries the general plain sesquilinear, the Hermitian $\langle\cdot,\cdot\rangle_{*}$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*:
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}).
 $$
@@ -86,13 +86,13 @@ $$
 $$
 the extra coset conjugate-linear: the complex automorphisms are the elements of $G_H$ fixing $e_t$ (*The Multiplication Operators of the Symmetric Plain Sesqualgebra*), and the passage to $\mathbb{R}$ adds the Galois twist of $\mathbb{C}/\mathbb{R}$.
 
-**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{SQA}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*:
+**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{SQA}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
 $$
 \tilde Q_1\star\tilde Q_2=\mathrm{SQA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
 $$
 because on the real quaternions the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ agrees with the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ and the vector part of the quaternionic product is antisymmetric, hence killed by the symmetrisation. Over $\mathbb{C}$ the two structures are distinct on the whole space; the real reading makes them meet on a real form, and the coincidence is a statement of the real reading and not of the products.
 
-**The trivial null set against the punctured zero-divisor set.** The realified form is positive definite, so the block's **null set** — the isotropic set of $\langle\cdot,\cdot\rangle_{*}$ — is the origin alone, and the block has no isotropic line and no hyperbolic plane (*The Realification of the Four Forms*). The **zero-divisor set** of the ring is the complement of the origin, every nonzero element being a zero divisor because the form is non-degenerate and its orthogonal hyperplanes are nonzero (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The two sets are the two extremes of $\mathbb{R}^8$, one point and its complement, and they are **disjoint**: the diagonal of $\langle\cdot,\cdot\rangle_{*}$ is definite. Over an indefinite sibling the realified form has signature $(4,4)$ and a null set of real dimension seven, a genuine cone instead of a point; the definiteness of the Hermitian diagonal is what reduces the null set to the origin.
+**The trivial null set against the punctured zero-divisor set.** The realified form is positive definite, so the block's **null set** — the isotropic set of $\langle\cdot,\cdot\rangle_{*}$ — is the origin alone, and the block has no isotropic line and no hyperbolic plane (*The Realification of the Four Forms*). The **zero-divisor set** of the ring is the complement of the origin, every nonzero element being a zero divisor because the form is non-degenerate and its orthogonal hyperplanes are nonzero (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The two sets are the two extremes of $\mathbb{R}^8$, one point and its complement, and they are **disjoint**: the diagonal of $\langle\cdot,\cdot\rangle_{*}$ is definite. Over an indefinite sibling the realified form has signature $(4,4)$ and a null set of real dimension seven, a genuine cone instead of a point; the definiteness of the Hermitian diagonal is what reduces the null set to the origin.
 
 ### Instance: the Symmetric Plain Sesqualgebra
 
@@ -112,7 +112,7 @@ $$
 $$
 which is the statement of the two opposite blocks of the Gram matrix; the verification is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, §*The Realification and the Signature*. The restriction to the quaternion subspace is positive definite, of signature $(4,0)$, the restriction to the anti-quaternion subspace is negative definite, of signature $(0,4)$, and the two Hermitian subspaces carry the two real null cones (*Remarkable Subspaces under the Symmetric Quaternionic Algebra*).
 
-The isotropic set $\{N=0\}$ has complex dimension three and real dimension six, and its nonzero elements are exactly the square-zero elements of the block and the zero-divisor set that the four general products share. That set is strictly smaller than the zero-divisor set of the block itself, which is everything but the origin, so the isotropic cone, the square-zero elements and the block's zero divisors are three different sets and are kept apart (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). A fourth set is distinguished from all three: the null cone of the realified form, the real hypersurface $\{\operatorname{Re}N=0\}$ of dimension seven, which contains the complex isotropic cone and is the zero set of the real form and not the square-zero set of the block (*The Realification of the Four Forms*, §*The Realified Null Cones*).
+The isotropic set $\{N=0\}$ has complex dimension three and real dimension six, and its nonzero elements are exactly the square-zero elements of the block and the zero-divisor set that the four general products share. That set is strictly smaller than the zero-divisor set of the block itself, which is everything but the origin, so the isotropic cone, the square-zero elements and the block's zero divisors are three different sets and are kept apart (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). A fourth set is distinguished from all three: the null cone of the realified form, the real hypersurface $\{\operatorname{Re}N=0\}$ of dimension seven, which contains the complex isotropic cone and is the zero set of the real form and not the square-zero set of the block (*The Realification of the Four Forms*, §*The Realified Null Cones*).
 
 ### The Real Operators
 
@@ -233,7 +233,7 @@ so the group of $\mathbb{R}$-algebra automorphisms of the block contains the Kle
 
 ### The Forms the Block Carries over $\mathbb{R}$
 
-The form of an operation is its **scalar part** (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*), and the antisymmetrisation kills the scalar part of the general product of its family, so this product carries the **zero form** — a vanishing scalar part is counted as no form rather than as a fifth — and there is nothing for the realification of a form to act on. The two invariant symmetric forms the block does carry, read in *Norm and Invertibility in the Antisymmetric Plain Algebra*, do realify, and their realifications are the content of this section:
+The form of an operation is its **scalar part** (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*), and the antisymmetrisation kills the scalar part of the general product of its family, so this product carries the **zero form** — a vanishing scalar part is counted as no form rather than as a fifth — and there is nothing for the realification of a form to act on. The two invariant symmetric forms the block does carry, read in *Norm and Invertibility in the Antisymmetric Plain Algebra*, do realify, and their realifications are the content of this section:
 $$
 \langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=-2\,\vec Q_6\cdot\vec Q_3,
 \qquad
@@ -338,7 +338,7 @@ the shape that commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\\mathrm{I}&0\end{p
 
 ### The Realified Form
 
-The scalar part of this product vanishes: it is the antisymmetrisation of the general product of its family, and the antisymmetrisation kills the scalar part, so the product carries **no degree-two form**, as the third column of the table of *The 12 Products of the Biquaternioid Complex Space* records. The realification therefore has no form to realify, and the four realified signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ of *The Realification of the Four Forms* do not include this product. What the real reading adds is the shape of the product itself: conjugate-alternating and vector valued over $\mathbb{R}$ exactly as over $\mathbb{C}$, with the Hermitian square $\tilde Q\circ\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$ as its diagonal. The structural theory of that shape, the quadric of the square-zero elements and the two Jacobi failures, is *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
+The scalar part of this product vanishes: it is the antisymmetrisation of the general product of its family, and the antisymmetrisation kills the scalar part, so the product carries **no degree-two form**, as the third column of the table of *The 12 Products of the Biquaternion Complex Space* records. The realification therefore has no form to realify, and the four realified signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ of *The Realification of the Four Forms* do not include this product. What the real reading adds is the shape of the product itself: conjugate-alternating and vector valued over $\mathbb{R}$ exactly as over $\mathbb{C}$, with the Hermitian square $\tilde Q\circ\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$ as its diagonal. The structural theory of that shape, the quadric of the square-zero elements and the two Jacobi failures, is *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 
 ### The Real Operators
 
@@ -352,7 +352,7 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 
 ### The Forms the Block Carries over $\mathbb{R}$
 
-The form of an operation is its scalar part (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*), and the scalar part of the value is zero here, every value of the block being a pure vector; the table of *The 12 Products of the Biquaternioid Complex Space* carries the entry $[0]$ in the scalar-part column of its row. The product therefore carries the **zero form**, counted as no form rather than as a fifth, and there is nothing for the realification of a form to act on; the coefficient form of the block, the bilinear form that would read that scalar part, is the zero form (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Trace Form Vanishes*).
+The form of an operation is its scalar part (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*), and the scalar part of the value is zero here, every value of the block being a pure vector; the table of *The 12 Products of the Biquaternion Complex Space* carries the entry $[0]$ in the scalar-part column of its row. The product therefore carries the **zero form**, counted as no form rather than as a fifth, and there is nothing for the realification of a form to act on; the coefficient form of the block, the bilinear form that would read that scalar part, is the zero form (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Trace Form Vanishes*).
 
 The block does carry two two-argument objects of its own, and they are read off the invariance condition and the operators in *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*: the invariant form
 $$
@@ -427,7 +427,7 @@ It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and comp
 
 ### The Realified Form
 
-The block carries no degree-two form of its own. Its scalar part vanishes — it is the antisymmetrisation of the general product of its family, and the antisymmetrisation kills the scalar part — so the third column of the table of *The 12 Products of the Biquaternioid Complex Space* gives it the zero form, and the four realified signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ of *The Realification of the Four Forms* do not include it. What does realify is the **pairing** of its values with the Krein form of its row. The form
+The block carries no degree-two form of its own. Its scalar part vanishes — it is the antisymmetrisation of the general product of its family, and the antisymmetrisation kills the scalar part — so the third column of the table of *The 12 Products of the Biquaternion Complex Space* gives it the zero form, and the four realified signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ of *The Realification of the Four Forms* do not include it. What does realify is the **pairing** of its values with the Krein form of its row. The form
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),\qquad\varepsilon=(1,-1,-1,-1),
 $$
@@ -439,7 +439,7 @@ on $\mathbb{R}^8$, preserved by the complex structure,
 $$
 K_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+K_{\mathbb{R}}(\tilde Q_1,\tilde Q_2).
 $$
-The sign is the rule of the Hermitian kind: a Hermitian form doubles its inertia to $(2p,2q)$ and is preserved by $J$. The contrast is with the bilinear kind: the two $\mathbb{C}$-bilinear forms of the corpus, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, realify to the split signature $(4,4)$ and are **reversed** by $J$, and the other Hermitian form $\langle\cdot,\cdot\rangle_{*}$ realifies to $(8,0)$.
+The sign is the rule of the Hermitian kind: a Hermitian form doubles its inertia to $(2p,2q)$ and is preserved by $J$. The contrast is with the bilinear kind: the two $\mathbb{C}$-bilinear forms of the corpus, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, realify to the split signature $(4,4)$ and are **reversed** by $J$, and the other Hermitian form $\langle\cdot,\cdot\rangle_{*}$ realifies to $(8,0)$.
 
 **Theorem (the pairing realifies).** The block is $\langle\cdot,\cdot\rangle_{\natural*}$-orthogonal to its own second argument,
 $$
@@ -471,7 +471,7 @@ $$
 $$
 the ordinary cross product of the real vector parts. The coincidence holds because the conjugation of a real vector is the identity, and it disappears as soon as one argument leaves $\mathbb{H}_{\mathbb{B}}$ for a direction in $i\mathbb{R}^{3}$.
 
-**The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *The 12 Products of the Biquaternioid Complex Space* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\mathrm{AQS},\mathrm{APA})$ and the pair $(\mathrm{SQA},\mathrm{SPS})$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
+**The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *The 12 Products of the Biquaternion Complex Space* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\mathrm{AQS},\mathrm{APA})$ and the pair $(\mathrm{SQA},\mathrm{SPS})$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
 
 **Proposition (the closure criterion).** A real subspace $W$ of $\mathbb{R}^8$ is a subalgebra of the block exactly when $\tilde Q_1\diamond\tilde Q_2\in W$ for all $\tilde Q_1,\tilde Q_2\in W$. Every value of the block lies in the vector subspace, so the condition reads
 $$
@@ -515,7 +515,7 @@ $$
 $$
 and its image is the complex plane of the values orthogonal to the vector part in the complex bilinear dot, $(\vec W,\tilde Q_1)=0$, the equation $\tilde Q_1\diamond\tilde Q_5=\tilde W$ being solvable exactly there; for a central element both multiplications vanish.
 
-*Proof.* The class and the two shapes are the theorem of §*The Second Slot and the Centre*; the vanishing of the trace of a conjugate-linear map is the opposite diagonal blocks. The rank, the kernel and the image are computed in *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* and in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, on the $64$ basis pairs; the vanishing of the trace of $R$ is the trace of a $\mathbb{C}$-linear map, twice the real part of its complex trace, and the complex trace is zero because $\vec e_\mu\mapsto \vec e_\mu\times\overline{\vec Q_1}$ has the two skew blocks of the cross product alone.
+*Proof.* The class and the two shapes are the theorem of §*The Second Slot and the Centre*; the vanishing of the trace of a conjugate-linear map is the opposite diagonal blocks. The rank, the kernel and the image are computed in *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* and in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, on the $64$ basis pairs; the vanishing of the trace of $R$ is the trace of a $\mathbb{C}$-linear map, twice the real part of its complex trace, and the complex trace is zero because $\vec e_\mu\mapsto \vec e_\mu\times\overline{\vec Q_1}$ has the two skew blocks of the cross product alone.
 
 **Theorem (the operator trace form in the two readings).** For all $\tilde Q_1,\tilde Q_2$,
 $$
@@ -568,8 +568,8 @@ Each of the eight derived structures is the same product on the same elements re
 ## Further Reading
 
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, the realification of a vector space, of a linear map and of a form, and the table of the four effects.
-- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve structures and the columns of the table of the twelve, of which the eight derived structures are eight rows.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms whose realifications are read one structure to a section above.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the columns of the table of the twelve, of which the eight derived structures are eight rows.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms whose realifications are read one structure to a section above.
 
 ### Instance: the Symmetric Quaternionic Sesqualgebra
 

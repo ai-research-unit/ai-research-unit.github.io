@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
+Of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\tilde\Xi\in\mathbb{B}$ with
 
@@ -30,7 +30,7 @@ $$
 
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_+$ and $\tilde\Pi_-$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde Q$.
 
-The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*.
+The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*.
 
 ## The Roots of One
 
@@ -208,7 +208,7 @@ and a unit is not a zero divisor. The single element common to the roots of $+1$
 
 **Every idempotent of $\mathbb{B}$ is trivial, $0$ or $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; a root carries the two idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)$, a complete orthogonal pair whose difference is the root; the halving map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents; and the non-trivial idempotents form a four-real-parameter family.**
 
-The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, read here in the general plain bilinear product.
+The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
 
 ### The Definition
 
@@ -226,7 +226,7 @@ $$
 \mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi),\qquad \mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B},
 $$
 
-and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal. The general statements, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal. The general statements, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### The Two Idempotents of a Root
 
@@ -420,14 +420,14 @@ The inverse of the halving map is $\tilde\Xi=2\tilde\Pi-e_t$, and the root is th
 Substituting the classification of the roots of $+1$ into the halving map gives the families of idempotents.
 
 - For the trivial root $\tilde\Xi=\pm e_t$: $\tilde\Pi=\tfrac12(e_t\pm e_t)$ is $e_t$ or $0$. These are the **trivial idempotents**.
-- For the purely imaginary root $\tilde\Xi=\pm i\vec u$: $\tilde\Pi=\tfrac12 e_t\pm\tfrac12 i\vec u$. Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_t$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the spectral idempotents of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is self-adjoint, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
+- For the purely imaginary root $\tilde\Xi=\pm i\vec u$: $\tilde\Pi=\tfrac12 e_t\pm\tfrac12 i\vec u$. Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_t$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the spectral idempotents of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is self-adjoint, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 - For the non-trivial root $\tilde\Xi=\vec\xi+i\vec\xi'$, with $\vec\xi\neq0$ and the two real conditions of §*The Non-Trivial Roots*: $\tilde\Pi=\tfrac12 e_t+\tfrac12(\vec\xi+i\vec\xi')$. Its vector part $\tfrac12(\vec\xi+i\vec\xi')$ carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 The idempotents inherit the size of the root set. Since the halving map is a bijection and the trivial roots are isolated, the Hermitian idempotents form a two-real-parameter family and the remaining (non-trivial) idempotents form a four-real-parameter family. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Non-Pure Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Zero Divisors of the Biquaternion Algebra*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being a unit.
 
 ### Idempotents and Their Projectors
 
-**Every idempotent is the member attached to $+1$ of the pair of a root, and its complement the member attached to $-1$; a Hermitian idempotent is self-adjoint for the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and it lies in $\mathbb{M}_+$.**
+**Every idempotent is the member attached to $+1$ of the pair of a root, and its complement the member attached to $-1$; a Hermitian idempotent is self-adjoint for the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and it lies in $\mathbb{M}_+$.**
 
 Every idempotent is the member attached to $+1$ of the pair of a root: for $\tilde\Pi$ idempotent the element $\tilde\Xi=2\tilde\Pi-e_t$ is a root of $+1$, and $\tilde\Pi_+(\tilde\Xi)=\tilde\Pi$ while $\tilde\Pi_-(\tilde\Xi)=e_t-\tilde\Pi$. The **complement** $e_t-\tilde\Pi$ is therefore the member attached to $-1$ of the same pair, an idempotent orthogonal to $\tilde\Pi$ by §*The Arithmetic of the Pair of Idempotents*, and the direct sum decomposition of the underlying $\mathbb{C}$-module,
 
@@ -437,7 +437,7 @@ $$
 
 is the one read there at a single root. This is the algebraic content of the statement that idempotents correspond to projectors under multiplication: multiplication by the idempotent is the projector, its complement gives the complementary projector, and the algebra splits into the image of one and the image of the other.
 
-A **Hermitian idempotent**, $\tilde\Pi^{*}=\tilde\Pi$, is **self-adjoint** with respect to the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which this article names and does not use; it is the kind occurring in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*}=\overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the members of the second family of §*The Families of Idempotents*, and they lie in $\mathbb{M}_+$.
+A **Hermitian idempotent**, $\tilde\Pi^{*}=\tilde\Pi$, is **self-adjoint** with respect to the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which this article names and does not use; it is the kind occurring in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*}=\overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the members of the second family of §*The Families of Idempotents*, and they lie in $\mathbb{M}_+$.
 
 ### Idempotents and the Non-Pure Zero Divisors
 
@@ -459,7 +459,7 @@ The derivation, from the square relation $\tilde Q^2=2Q_t\tilde Q$ that the non-
 
 ## Summary
 
-The general plain bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the Biquaternion Algebra*. The square roots of $+1$ in that product are, by the vector–scalar split and the product formula $\tilde\Xi^2=(\Xi_t^2-(\vec\Xi,\vec\Xi))e_t+2\Xi_t\vec\Xi$:
+The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the Biquaternion Algebra*. The square roots of $+1$ in that product are, by the vector–scalar split and the product formula $\tilde\Xi^2=(\Xi_t^2-(\vec\Xi,\vec\Xi))e_t+2\Xi_t\vec\Xi$:
 
 1. **Trivial roots:** $\tilde\Xi=\pm e_t$.
 2. **Purely imaginary roots:** $\tilde\Xi=\pm i\vec u$, where $\vec u$ is a unit real vector with $\vec u^2=-e_t$, a two-real-parameter family.
@@ -489,7 +489,7 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition.
 - *Square Roots of a General Element in the Biquaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.md`), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $+1$ here are one case.
 - *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the roots of $0$ and the nilpotents, the second central value.
 - *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the two families of the zero-divisor set, of which the non-trivial idempotents are the non-pure one.

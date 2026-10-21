@@ -76,34 +76,29 @@ This category is not a prerequisite of any other, and no other category is a pre
 
 ## The Mathematical Corpus about Biquaternions
 
-The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and ten entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that the physics has not yet read.
+The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and five entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that the physics has not yet read.
 
-The category reads a second corpus as well. The *Biquaternioid Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-three further entries, the derived structures of the biquaternioid complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternioid Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and forty-three entries, and they are the full mathematical source of the category.
-
-### Generalities
-
-- [The Biquaternioid as a Vector Space over $\mathbb{R}$](../articles_maths/the-biquaternioid-vector-space-over-r.html)
-- [The Biquaternioid as a Vector Space over $\mathbb{C}$](../articles_maths/the-biquaternioid-vector-space-over-c.html)
-- [The Four General Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html)
-- [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html)
-- [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html)
-- [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html)
-- [Remarkable Subspaces and the Four General Products](../articles_maths/remarkable-subspaces-and-the-four-general-products.html)
-- [The 12 Products of the Biquaternioid Complex Space](../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html)
-- [The 12 Multiplication Tables of the Biquaternioid Complex Space](../articles_maths/the-12-multiplication-tables-of-the-biquaternioid-complex-space.html)
-- [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html)
-- [Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.html)
-- [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html)
-- [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html)
-- [The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.html)
-- [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html)
+The category reads a second corpus as well. The *Biquaternioid Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-six further entries, the derived structures of the biquaternioid complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternioid Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and forty-two entries, and they are the full mathematical source of the category.
 
 ### Algebra
 
-#### Introduction to the Biquaternion Algebra
+#### The Algebra and Its Vector Spaces
 
 - [Introduction to the Biquaternion Algebra](../articles_maths/introduction-to-the-biquaternion-algebra.html)
-- [The Products, Their Forms and Their Algebraic Norms](../articles_maths/the-products-their-forms-and-their-algebraic-norms.html)
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](../articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html)
+
+#### The Products
+
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html)
+- [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html)
+- [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html)
+- [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html)
+- [The 12 Products of the Biquaternion Complex Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html)
+
+#### The Forms and Their Algebraic Norms
+
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html)
+- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html)
 
 #### Properties of the Biquaternion Algebra over $\mathbb{C}$
 
@@ -126,6 +121,9 @@ The category reads a second corpus as well. The *Biquaternioid Algebraic Structu
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html)
 - [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html)
 - [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html)
+- [Remarkable Subspaces and the Four General Products](../articles_maths/remarkable-subspaces-and-the-four-general-products.html)
+- [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html)
+- [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html)
 
 #### Biquaternions Standard Element Representations
 
@@ -160,11 +158,11 @@ The category reads a second corpus as well. The *Biquaternioid Algebraic Structu
 
 #### The Krein Form
 
-- [The Fundamental Symmetry of the Biquaternioid Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.html)
+- [The Fundamental Symmetry of the Biquaternion Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html)
 - [The Krein Gram Matrix and the Restrictions of the Form](../articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html)
 - [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html)
 - [Krein Orthogonality and the Fundamental Decomposition](../articles_maths/krein-orthogonality-and-the-fundamental-decomposition.html)
-- [Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.html)
+- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html)
 
 ### Topology
 
@@ -254,7 +252,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 - Each article will link one or several articles of the Mathematical menu, state their results, then give labelled physical interpretations with their boundaries.
 - The category owns no theorem; the proof stays in the mathematics article.
 - One result may carry several interpretations, and the interpretation names the sector, the regime and the question.
-- The index lists the one hundred and ten entries of the *Biquaternions* category, grouped as the Mathematical menu groups them.
+- The index lists the one hundred and five entries of the *Biquaternions* category, grouped as the Mathematical menu groups them.
 
 ## Summary of Notation
 

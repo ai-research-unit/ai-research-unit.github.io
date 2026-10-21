@@ -4,7 +4,7 @@
 
 This article studies the algebraic norm that the symmetric plain algebra, the biquaternion space under the Jordan product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*, carries, and the invertibility of its elements.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. The symmetrisation keeps the scalar part of a product, so the block carries the algebraic norm of the general plain bilinear product, the general plain bilinear algebraic norm
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. The symmetrisation keeps the scalar part of a product, so the block carries the algebraic norm of the general plain bilinear product, the general plain bilinear algebraic norm
 
 $$
 \langle\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde Q\bullet\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
@@ -16,7 +16,7 @@ The invertibility is where the article records an **absence**. The block is comm
 
 **The results.** The block carries one algebraic norm, the diagonal of its scalar-part form, $\langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$, complex-valued and indefinite, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set. It is **not multiplicative**, the pair $(\vec e_x,\vec e_y)$ separating the two sides. It does **not** decide invertibility: the unit $e_t+\vec e_x$ has $\langle\cdot\rangle=0$ and the zero divisor $e_t+i\vec e_x$ has $\langle\cdot\rangle=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient; the invertibility the block does have is that of the Jordan theory, carried by a different quadratic form. Each section below states its result first and then proves it.
 
-**Boundaries.** The algebraic norm of the general plain bilinear product is *Norm and Invertibility in the Biquaternion Algebra*, and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; none of the four is read here beyond $\langle\cdot\rangle$. The product, its unit and its non-associativity are *Introduction to the Symmetric Plain Algebra*; the trace form the algebraic norm polarises is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic identity are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; the zero divisors are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
+**Boundaries.** The algebraic norm of the general plain bilinear product is *Norm and Invertibility in the Biquaternion Algebra*, and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the four is read here beyond $\langle\cdot\rangle$. The product, its unit and its non-associativity are *Introduction to the Symmetric Plain Algebra*; the trace form the algebraic norm polarises is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic identity are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; the zero divisors are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; the two elements of a product are $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$.
 
@@ -36,7 +36,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(\tilde Q_1\bullet\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\bigr)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
-which is the general plain bilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The symmetrisation does not change the scalar part, so the block carries the algebraic norm of the general plain bilinear product; the form and its diagonal are of the same letter.
+which is the general plain bilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The symmetrisation does not change the scalar part, so the block carries the algebraic norm of the general plain bilinear product; the form and its diagonal are of the same letter.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -44,7 +44,7 @@ which is the general plain bilinear form of *The 4 Forms over the Biquaternioid 
 - $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda\tilde Q\rangle=\lambda^{2}\langle\tilde Q\rangle$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $\langle\tilde Q_1+\tilde Q_2\rangle-\langle\tilde Q_1\rangle-\langle\tilde Q_2\rangle=2\langle\tilde Q_1,\tilde Q_2\rangle$.
 - $\langle\cdot\rangle$ is **not positive definite** and **not definite**.
 - Its Gram matrix on the basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $\langle\cdot\rangle$ is non-degenerate of signature $(4,4)$ on $\mathbb{B}\cong\mathbb{R}^{8}$.
-- Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and not the zero-divisor set of the block.
+- Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and not the zero-divisor set of the block.
 
 ## The Algebraic Norm Is Not Multiplicative
 
@@ -84,7 +84,7 @@ $$
 
 **Remark (the two witnesses).** The element $e_t+\vec e_x$ is invertible with vanishing algebraic norm, so the algebraic norm is not necessary for invertibility; the element $e_t+i\vec e_x$ is non-invertible with non-vanishing algebraic norm, so it is not sufficient either. The vanishing set of $\langle\cdot\rangle$ is the complex cone and the zero-divisor set is the cone of a different quadratic form; the two cones meet but neither contains the other.
 
-**Remark (what replaces the criterion).** The block is not left without an invertibility theory: it is commutative and unital, the Jordan inverse is defined by its two equations, and the zero divisors are characterised in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. That theory is **not** read from the algebraic norm of the block, which is the one algebraic norm the block carries; the criterion it uses is carried by a different quadratic form and belongs to the article that owns that form.
+**Remark (what replaces the criterion).** The block is not left without an invertibility theory: it is commutative and unital, the Jordan inverse is defined by its two equations, and the zero divisors are characterised in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. That theory is **not** read from the algebraic norm of the block, which is the one algebraic norm the block carries; the criterion it uses is carried by a different quadratic form and belongs to the article that owns that form.
 
 ## Summary
 
@@ -113,11 +113,11 @@ The block is commutative and unital, with the unit $e_t$, and it is not associat
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the general plain bilinear form $\langle\cdot,\cdot\rangle$ and the table of the four forms.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form $\langle\cdot,\cdot\rangle$ and the table of the four forms.
 - *Introduction to the Symmetric Plain Algebra* (`articles_maths/introduction-to-the-symmetric-plain-algebra.md`), for the product, its unit, its commutativity and its non-associativity.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra* (`articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.md`), for the form the algebraic norm polarises.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* (`articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.md`), for the invertibility the block does have, carried by a different quadratic form.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Unit and the Inverse*, for the relative definitions of the unit and the inverse.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the zero divisors, which the algebraic norm of the block does not detect.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Unit and the Inverse*, for the relative definitions of the unit and the inverse.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the zero divisors, which the algebraic norm of the block does not detect.
 - *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), for the restriction of $\langle\cdot\rangle$ to the remarkable subspaces with its signature.

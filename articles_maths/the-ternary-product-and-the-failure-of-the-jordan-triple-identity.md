@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*), and the fourth of them,
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its two actions of the unit and its associator are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$, ${}^{*}$ is the star conjugation $\tilde Q_1^{*} = \overline{Q_{1t}} - \overline{\vec Q_1}$, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its two actions of the unit and its associator are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q_1^{\natural} = Q_{1t} - \vec Q_1$, ${}^{*}$ is the star conjugation $\tilde Q_1^{*} = \overline{Q_{1t}} - \overline{\vec Q_1}$, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the **ternary product** attached to the multiplication and the failure of the **Jordan triple identity** for it. The binary multiplication has no unit (*The Two One-Sided Actions and the Absence of a Unit*) and is not associative (*The Associator of the General Quaternionic Sesquilinear Product*), and the ternary product is the natural replacement: it is the three-slot operation
 

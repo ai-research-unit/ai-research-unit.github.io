@@ -161,7 +161,7 @@ The general theory of *Algebraic J\*-Algebras* attaches the Jordan triple identi
 
 ### The Failure for the Fourth Product
 
-**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde Q_1,\tilde Q_2,\tilde Q_5,\tilde S,\tilde W)=(e_t,\vec e_x,e_t,\vec e_y,e_t)$ the left-hand side is $\vec e_z$ and the right-hand side is $-3\vec e_z$.
+**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde Q_1,\tilde Q_2,\tilde Q_5,\tilde S,\tilde W)=(e_t,\vec e_x,e_t,\vec e_y,e_t)$ the left-hand side is $\vec e_z$ and the right-hand side is $-3\vec e_z$.
 
 **Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot.
 

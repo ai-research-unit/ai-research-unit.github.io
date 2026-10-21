@@ -10,7 +10,7 @@ $$
 
 the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
-The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
+The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$; the general plain bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and $\tau$ denotes it read as the trace form of the block. The multiplication operator of the block is $L^{\bullet}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\bullet\tilde Q_2$, and $L_{\tilde Q_1},R_{\tilde Q_1}$ are the left and right operators of the plain product, still with the halved product and the unhalved ones distinguished as in *The Multiplication Operators of the Symmetric Plain Algebra*.
 
@@ -39,7 +39,7 @@ $$
 \operatorname{diag}(1,-1,-1,-1),
 $$
 
-the coefficient matrix $D$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, of complex rank four.
+the coefficient matrix $D$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, of complex rank four.
 
 *Proof.* $\tau(e_\mu,e_\nu)=\mathrm{Sc}(e_\mu\bullet e_\nu)$; on the basis table of *Introduction to the Symmetric Plain Algebra* the values are $\varepsilon_\mu\delta_{\mu\nu}=(1,-1,-1,-1)$ on the diagonal and $0$ off it. The matrix is invertible, so the form is non-degenerate.
 
@@ -209,7 +209,7 @@ The trace form of the symmetric plain algebra is $\tau(\tilde Q_1,\tilde Q_2)=\m
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, for the associativity of the plain form and its operator theory.
 - *Two-Sided Operators on the Biquaternion Algebra*, for the left and right operators whose half-sum is the multiplication operator of the block.
 - *Remarkable Subspaces and the Four Forms*, for the restrictions of the form to the remarkable subspaces.

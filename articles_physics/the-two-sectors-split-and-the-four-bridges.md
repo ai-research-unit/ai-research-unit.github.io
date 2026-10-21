@@ -19,10 +19,10 @@ The article is a catalogue in the genre of the subspace and obstruction catalogu
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The sectors as the eigenspaces of Hermitian conjugation, their bases and dimensions | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) |
+| The sectors as the eigenspaces of Hermitian conjugation, their bases and dimensions | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
 | The four conjugations as a Klein four-group, their commutativity and their fixed spaces | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
 | The norm, its multiplicativity and the identity $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ | [Norm and Invertibility in the General Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.html) |
-| The four general products and their behaviour on the sectors | [The Four General Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html), [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html) |
+| The four general products and their behaviour on the sectors | [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html), [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html) |
 | The sandwich by a Hermitian rotor and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html), [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 
 ## The Split
@@ -230,10 +230,10 @@ The algebra splits into the material and the informational sectors, the eigenspa
 
 ## Further Reading
 
-- [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), for the sectors, the conjugations and the trace.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), for the sectors, the conjugations and the trace.
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group and its fixed spaces.
 - [Norm and Invertibility in the General Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm identity and its multiplicativity.
-- [The Four General Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html) and [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html), for the products and their sector behaviour.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html) and [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html), for the products and their sector behaviour.
 - [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) and [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the sandwich and the rotors.
 - *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the interval and the Lorentz action read at length.
 - *The Informational Sector: States, Observables and Probability*, for the state space and the Born pairing.

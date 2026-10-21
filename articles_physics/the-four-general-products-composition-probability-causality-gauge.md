@@ -12,12 +12,12 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four products, their coordinate formulas and their scalar–vector forms | [The Four General Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html) |
+| The four products, their coordinate formulas and their scalar–vector forms | [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html) |
 | The property table, the two slots, the units, associativity and the scalar square | [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html) |
 | The identities linking the four products and the left multiplications | [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html) |
-| The twelve products and the symmetric and antisymmetric halves | [The 12 Products of the Biquaternioid Complex Space](../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html), [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The four forms, their Gram matrices, their signatures and their isometry groups | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) |
-| The four algebraic norms, multiplicativity, definiteness and the zero divisors | [The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.html) |
+| The twelve products and the symmetric and antisymmetric halves | [The 12 Products of the Biquaternion Complex Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html), [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The four forms, their Gram matrices, their signatures and their isometry groups | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
+| The four algebraic norms, multiplicativity, definiteness and the zero divisors | [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html) |
 | The restrictions of the forms to the two sectors and the remarkable subspaces | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
 | Invertibility, the zero-divisor cone and the unit group | [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html) |
 | The realification and its effect on the twelve products and the four forms | [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html) |
@@ -248,11 +248,11 @@ The physical identification of the material sector with spacetime and of the inf
 
 ## Further Reading
 
-- [The Four General Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html), for the four definitions and their scalar–vector forms.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html), for the four definitions and their scalar–vector forms.
 - [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html), for the property table, the two slots, the units, the scalar square and the failure of associativity.
-- [The 12 Products of the Biquaternioid Complex Space](../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html), for the symmetric and antisymmetric halves and the Jordan and Lie structures.
-- [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) and [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the four forms and their restrictions.
-- [The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.html) and [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for multiplicativity, definiteness, invertibility and the zero-divisor cone.
+- [The 12 Products of the Biquaternion Complex Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html), for the symmetric and antisymmetric halves and the Jordan and Lie structures.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) and [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the four forms and their restrictions.
+- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html) and [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for multiplicativity, definiteness, invertibility and the zero-divisor cone.
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html), for the ten-to-twelve distinction.
 - *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the two sectors and the two jobs that live there.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the corresponding entry of this category.

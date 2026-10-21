@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde Q_1 = \tilde Q_1\star\tilde E = \tilde Q_1$ for every $\tilde Q_1$, an **inverse** of $\tilde Q_1$ is an element $\tilde Q_2$ with $\tilde Q_1\star\tilde Q_2 = \tilde Q_2\star\tilde Q_1 = \tilde E$, and $\tilde Q_1$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. This article fixes the product to the **general quaternionic sesquilinear product**
+A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde Q_1 = \tilde Q_1\star\tilde E = \tilde Q_1$ for every $\tilde Q_1$, an **inverse** of $\tilde Q_1$ is an element $\tilde Q_2$ with $\tilde Q_1\star\tilde Q_2 = \tilde Q_2\star\tilde Q_1 = \tilde E$, and $\tilde Q_1$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. This article fixes the product to the **general quaternionic sesquilinear product**
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}
@@ -16,9 +16,9 @@ $$
 \langle\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2},
 $$
 
-the general quaternionic sesquilinear algebraic norm of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*, real, **indefinite**, of signature $(2,6)$, and **not** multiplicative. The article states the absence of the inverse, defines $\langle\cdot\rangle_{\natural*}$, proves the failure of multiplicativity, and records the **absence of a criterion**: $\langle\cdot\rangle_{\natural*}$ does not decide invertibility, and the block has no invertibility of its own to decide.
+the general quaternionic sesquilinear algebraic norm of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, real, **indefinite**, of signature $(2,6)$, and **not** multiplicative. The article states the absence of the inverse, defines $\langle\cdot\rangle_{\natural*}$, proves the failure of multiplicativity, and records the **absence of a criterion**: $\langle\cdot\rangle_{\natural*}$ does not decide invertibility, and the block has no invertibility of its own to decide.
 
-**Boundaries.** The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; none of the other three is read here. The absence of the unit and the two one-sided families are *The Two One-Sided Actions and the Absence of a Unit*; the form $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its restrictions are *The Krein Gram Matrix and the Restrictions of the Form*; the element classes of the block, read without a unit, are *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* and *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
+**Boundaries.** The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the other three is read here. The absence of the unit and the two one-sided families are *The Two One-Sided Actions and the Absence of a Unit*; the form $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its restrictions are *The Krein Gram Matrix and the Restrictions of the Form*; the element classes of the block, read without a unit, are *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* and *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q = Q_te_t+\vec Q$. The conjugations are $\tilde Q^{\natural} = Q_t-\vec Q$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The product is $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. The sign vector is $\varepsilon = (1,-1,-1,-1)$.
 
@@ -44,7 +44,7 @@ so the left action of $e_t$ is the star and the right action is the natural conj
 
 **Corollary (the absence and the element classes).** The concepts of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*, *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* and the roots of a central value of the block are read **without** a unit: an idempotent is an element equal to its square and not a projection onto the unit, a nilpotent is an element of vanishing square and not a multiple of a unit, and a root of $\lambda$ is an element of square $\lambda e_t$ and not the product of a unit with a root of $\lambda$ in the plain algebra.
 
-**Proof.** Each definition names only the product and $e_t$, and none of them names a unit; the corollary is the reading of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* with the theorem above.
+**Proof.** Each definition names only the product and $e_t$, and none of them names a unit; the corollary is the reading of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* with the theorem above.
 
 ## The Algebraic Norm of the Block
 
@@ -62,7 +62,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
-the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Krein Gram Matrix and the Restrictions of the Form*.
+the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Krein Gram Matrix and the Restrictions of the Form*.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -132,9 +132,9 @@ real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the unit, the inverse and the invertible element relative to a product.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the unit, the inverse and the invertible element relative to a product.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the proof of the absence and the two one-sided families of the block.
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its signatures.
 

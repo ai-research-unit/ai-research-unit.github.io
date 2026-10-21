@@ -42,7 +42,7 @@ of signature $(2,6)$.
 
 **Proof.** $\langle e_{\nu},e_{\mu}\rangle_{\natural*}=\sum_{\lambda}\varepsilon_{\lambda}\overline{(e_{\mu})_{\lambda}}(e_{\nu})_{\lambda}=\varepsilon_{\mu}\delta_{\mu\nu}$: the units are orthogonal and each has its own sign. The determinant is $\varepsilon_0\varepsilon_1\varepsilon_2\varepsilon_3=-1$. In the real basis the coefficient $i$ contributes $|i|^{2}=1$ to every entry, so the Gram matrix repeats the block $E$ on the two coefficient blocks, whence the signature $(2+0,\,6)$ by counting the signs.
 
-**Remark (the three Gram matrices).** The three pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and it is the fundamental symmetry of the next article written in the coefficient basis.
+**Remark (the three Gram matrices).** The three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and it is the fundamental symmetry of the next article written in the coefficient basis.
 
 ## The Krein Form in the Matrix Representation
 
@@ -83,7 +83,7 @@ so that each pairing is a Hilbert–Schmidt pairing of $\mathsf{M}_2(\tilde Q_1)
 
 **Theorem (Sylvester).** Every basis can be replaced by an orthonormal one, and the numbers $n$ of $+1$ and $m$ of $-1$ are invariants of the form: over $\mathbb{C}$, $(n,m)=(1,3)$; over $\mathbb{R}$, $(n,m)=(2,6)$. The coefficient basis is already orthonormal with $n$ entries $+1$ and $m$ entries $-1$, and the maximal positive definite subspaces are the lines $\mathbb{C}(e_t+\tilde W)$ with $\|\tilde W\|_E<1$ over $\mathbb{C}$ and the real planes $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde W,i(e_t+\tilde W)\}$ of the same form over $\mathbb{R}$, of dimensions $n$.
 
-**Proof.** Diagonalising by congruence and then scaling each basis vector to have square $\pm1$ gives an orthonormal basis, and inertia is invariant by Sylvester's law (*Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia*). For the maximality, a positive definite subspace meets the maximal negative definite subspace $\mathbb{V}_{\mathbb{B}}$ only at $0$, so its complex dimension is at most the codimension $1$ of $\mathbb{V}_{\mathbb{B}}$; the centre $\mathbb{C}e_t$ achieves the bound, and every line $\mathbb{C}(e_t+\tilde W)$ with $\|\tilde W\|_E<1$ is another maximal positive definite subspace (*The Fundamental Symmetry of the Biquaternioid Algebra*). Over $\mathbb{R}$ the maximal positive definite subspaces are the real planes $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde W,i(e_t+\tilde W)\}$ with $\|\tilde W\|_E<1$, of which $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the member $\tilde W=0$.
+**Proof.** Diagonalising by congruence and then scaling each basis vector to have square $\pm1$ gives an orthonormal basis, and inertia is invariant by Sylvester's law (*Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia*). For the maximality, a positive definite subspace meets the maximal negative definite subspace $\mathbb{V}_{\mathbb{B}}$ only at $0$, so its complex dimension is at most the codimension $1$ of $\mathbb{V}_{\mathbb{B}}$; the centre $\mathbb{C}e_t$ achieves the bound, and every line $\mathbb{C}(e_t+\tilde W)$ with $\|\tilde W\|_E<1$ is another maximal positive definite subspace (*The Fundamental Symmetry of the Biquaternion Algebra*). Over $\mathbb{R}$ the maximal positive definite subspaces are the real planes $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde W,i(e_t+\tilde W)\}$ with $\|\tilde W\|_E<1$, of which $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the member $\tilde W=0$.
 
 ## The Restrictions to the Remarkable Subspaces
 
@@ -152,7 +152,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J\tilde Q_2\rangle_{*},
 $$
 
-the bridge identity of *The Fundamental Symmetry of the Biquaternioid Algebra*.
+the bridge identity of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
 **Proof.** The tensor product $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{B}}$ and the complexification statement are the theorem; $J$ multiplies the coefficient of $e_\mu$ by $\varepsilon_\mu$, hence is diagonal in the real basis and reads as the sign matrix on the diagonal; the bridge is the identity of the fundamental-symmetry article.
 
@@ -225,12 +225,12 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
 - *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the adjugated trace identities used here
 - *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), for the restriction of the norm to the same remarkable subspaces
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the definitions and dimensions of the remarkable subspaces
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the definitions and the coordinate blocks of the remarkable subspaces
 - *Remarkable Subspaces under the General Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the restrictions as subspaces, their null cones and their automorphism groups
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the positive definite general plain sesquilinear form
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the positive definite general plain sesquilinear form
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`) and *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the two companion articles of this layer
 - *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), for Sylvester's law, congruence and the discriminant

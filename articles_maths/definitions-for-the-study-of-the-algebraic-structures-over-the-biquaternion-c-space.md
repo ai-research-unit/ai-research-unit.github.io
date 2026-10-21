@@ -1,8 +1,8 @@
-# __Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space__
+# __Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space__
 
 ## Introduction
 
-This article collects, in one place, the definitions of the classes of elements and of the derived operations with which the twelve algebraic structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* are studied. It is a definitions article: each notion is stated for a general product, and its statement is then read on the products of the space. It follows the article that names the twelve structures and precedes the articles that study them, so that each of the twelve cites one owner for its vocabulary rather than restating it.
+This article collects, in one place, the definitions of the classes of elements and of the derived operations with which the twelve algebraic structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are studied. It is a definitions article: each notion is stated for a general product, and its statement is then read on the products of the space. It is a generality of the category *Biquaternioid Algebraic Structures*, follows the article that names the twelve structures and precedes the articles that study them. Each of the twelve thus cites one owner for its vocabulary rather than restating it.
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
@@ -12,9 +12,9 @@ $$
 $$
 The **generic product** is written $\star$; the **general plain bilinear product**, the multiplication of the algebra, is written $\tilde Q\tilde Q_2$. Unqualified, a class is taken in the general plain bilinear product, and where another product is meant it is named. The twelve products are the four general products and their symmetric and antisymmetric parts.
 
-- The elements, the basis and the four conjugations are *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
-- The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *The 12 Products of the Biquaternioid Complex Space*.
-- The twelve structures and their three-letter names are *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- The elements, the basis and the four conjugations are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*.
+- The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*.
+- The twelve structures and their three-letter names are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 - The general algebra vocabulary — the unit, the inverse, the Peirce decomposition — is *Unital Algebras*, and the corpus-wide readings of the words are *Conventions in Mathematics*.
 
 This article defines. It states the relativity of the definitions as the principle it is, and it proves the one structural fact the definitions turn on, the transport of §*Transport Along an Isomorphism*; every specialization is cited to the article that owns it.
@@ -35,7 +35,7 @@ $$
 $$
 where each of $\sigma,\varsigma$ is the identity or the complex conjugation. The product is **$\mathbb{C}$-bilinear** when both are the identity, and **sesquilinear** when the second slot carries the conjugation; the first slot carries one too or not according to the family. Of the four general products only the plain bilinear is $\mathbb{C}$-bilinear, the plain sesquilinear carries the conjugation in the second slot, the quaternionic bilinear in the first, and the quaternionic sesquilinear in both.
 
-**Definition (the laws of a product).** A product $\star$ is **associative** when $(x\star y)\star z=x\star(y\star z)$ for all $x,y,z$; **commutative** when $x\star y=y\star x$; **alternating** when $x\star x=0$ for every $x$, which for a bilinear product is equivalent to anticommutativity, $x\star y=-y\star x$. It satisfies the **Jacobi identity** when $x\star(y\star z)+y\star(z\star x)+z\star(x\star y)=0$, and the **Jordan identity** when $(x\star x)\star(y\star x)=\bigl((x\star x)\star y\bigr)\star x$. The laws decide which classical structure the product defines, and the reading of the twelve one by one is *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+**Definition (the laws of a product).** A product $\star$ is **associative** when $(x\star y)\star z=x\star(y\star z)$ for all $x,y,z$; **commutative** when $x\star y=y\star x$; **alternating** when $x\star x=0$ for every $x$, which for a bilinear product is equivalent to anticommutativity, $x\star y=-y\star x$. It satisfies the **Jacobi identity** when $x\star(y\star z)+y\star(z\star x)+z\star(x\star y)=0$, and the **Jordan identity** when $(x\star x)\star(y\star x)=\bigl((x\star x)\star y\bigr)\star x$. The laws decide which classical structure the product defines, and the reading of the twelve one by one is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### The Relativity of the Definitions
 
@@ -78,7 +78,7 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 | $\tilde Q^{\natural}\tilde Q_2$ | $e_t$ | none | none |
 | $\tilde Q^{\natural}\tilde Q_2^{*}$ | none | none | none |
 
-The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
+The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
 
 The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde Q$ invertible exactly when the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Quaternionic Algebra*.
 
@@ -102,7 +102,7 @@ Written on the four general products, the definition of a left zero divisor is o
 $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$
-a fact about the algebra and not a property of the definitions, proved in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Four General Products Coincide*. **The word is *coincide*, not *independent*:** the four products are four definitions, and their agreement is a theorem. The criterion $C(\tilde Q)=0$ for the plain product, the two families and their structure are *Zero Divisors of the Biquaternion Algebra*; the annihilators of one zero divisor, which do depend on the product, are in the same article of the four products and in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+a fact about the algebra and not a property of the definitions, proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*. **The word is *coincide*, not *independent*:** the four products are four definitions, and their agreement is a theorem. The criterion $C(\tilde Q)=0$ for the plain product, the two families and their structure are *Zero Divisors of the Biquaternion Algebra*; the annihilators of one zero divisor, which do depend on the product, are in the same article of the four products and in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ---
 
@@ -143,7 +143,7 @@ The square-zero sets of the four general products differ, and the difference is 
 | $\tilde Q^{\natural}\tilde Q_2$ | the whole zero-divisor cone $\mathcal{C}$ |
 | $\tilde Q^{\natural}\tilde Q_2^{*}$ | the solutions of $\overline{\tilde Q}\tilde Q=0$ |
 
-The table is verified on the squares and is the table of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
+The table is verified on the squares and is the table of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
 
 ---
 
@@ -177,7 +177,7 @@ $$
 $$
 is the **associator**, and the **ternary product** is the trilinear operation $x\star y\star z$ read with the same bracketing. The product is associative exactly when the associator vanishes identically, so the associator is the obstruction to associativity and, through it, to the unambiguous power of §6.
 
-**Definition (the two identities).** The **Jacobi identity** and the **Jordan identity** of §1 are the statements that single out the two classical non-associative structures among the twelve; the two, their witnesses and the failure of the other six parts are *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Two That Are Lie and Jordan Products*, and *Jordan Algebras*.
+**Definition (the two identities).** The **Jacobi identity** and the **Jordan identity** of §1 are the statements that single out the two classical non-associative structures among the twelve; the two, their witnesses and the failure of the other six parts are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Two That Are Lie and Jordan Products*, and *Jordan Algebras*.
 
 **Definition (left and right multiplication).** For $a\in\mathbb{B}$,
 $$
@@ -191,11 +191,11 @@ They are the two one-sided multiplications of §3, their kernels are the two ann
 
 ## 8. The Form-Theoretic Classes
 
-The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and the norms *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*.
+The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and the norms *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*.
 
 **Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*Introduction to the Biquaternion Algebra*).
 
-**Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
+**Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
 
 **Definition (adjoint, Hermitian, normal).** Let $\langle\cdot,\cdot\rangle$ be a form with an involution ${}^{*}$. The **adjoint of $a$** is the element $a^{\dagger}$ with $\langle a\star x,y\rangle=\langle x,a^{\dagger}\star y\rangle$; an element is **Hermitian** when $a^{\dagger}=a$, **anti-Hermitian** when $a^{\dagger}=-a$, and **normal** when $a\star a^{\dagger}=a^{\dagger}\star a$. The four adjoints of the two algebras and the two sesqualgebras are worked in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the trace form is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the invariant form of the antisymmetric product is *The Killing Form of the Antisymmetric Plain Algebra*.
 
@@ -214,7 +214,7 @@ The four general products are four definitions to a class, and the table says wh
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |
 
-The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and it is the exception that proves the rule of §*The Relativity of the Definitions*: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
+The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and it is the exception that proves the rule of §*The Relativity of the Definitions*: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
 
 ---
 
@@ -242,8 +242,8 @@ A definition of the element theory names a product. This article states, once an
 
 ## Further Reading
 
-- *The 12 Products of the Biquaternioid Complex Space* and *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.
+- *The 12 Products of the Biquaternion Complex Space* and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.
 - *Zero Divisors of the Biquaternion Algebra*, *Idempotents of the General Plain Algebra* and *Nilpotents of the General Plain Algebra*, for the three element classes of the plain product.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the two readings of §5 and §9 that the four products decide.
-- *Unital Algebras* and *Conventions in Mathematics*, for the general algebra vocabulary and the corpus-wide readings of the words, and *The Biquaternioid as a Vector Space over $\mathbb{C}$* for the elements and the conjugations.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the two readings of §5 and §9 that the four products decide.
+- *Unital Algebras* and *Conventions in Mathematics*, for the general algebra vocabulary and the corpus-wide readings of the words, and *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* for the elements and the conjugations.

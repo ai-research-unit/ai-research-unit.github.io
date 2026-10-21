@@ -4,18 +4,18 @@
 
 A root of a central value in one of the twelve structures is an element whose square in that product is the value, $\tilde\Xi\star\tilde\Xi=\lambda e_t$. The root problem asks which elements realise a given value. It is the inverse of the square map, and the square map is the band's way of producing a number from an operation: the plain square produces a polar scale and a direction, the central square produces the interval, the Hermitian square produces a probability weight, and the fourth square produces the indefinite gauge value.
 
-The twelve structures answer the root problem in four existence classes, and the answers are the physical content of the bands. This article reads the values $-1$, $0$ and $+1$, then a general central value, then the comparison across the twelve. It owns no theorem. The mathematics is *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, with the named values in the two companion mathematics articles; the physical interpretations are gathered from the three physics companions *Roots, Idempotents and Observables*, *The Zero-Divisor Cone and the Massless Spectrum* and *The Roots of a General Element: Mass, Frames and the Mass Shell*.
+The twelve structures answer the root problem in four existence classes, and the answers are the physical content of the bands. This article reads the values $-1$, $0$ and $+1$, then a general central value, then the comparison across the twelve. It owns no theorem. The mathematics is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, with the named values in the two companion mathematics articles; the physical interpretations are gathered from the three physics companions *Roots, Idempotents and Observables*, *The Zero-Divisor Cone and the Massless Spectrum* and *The Roots of a General Element: Mass, Frames and the Mass Shell*.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The root equation, the four general products and the existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The roots of $0$ and the nilpotents | [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The twelve products and their squares | [The 12 Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html) |
-| The twelve structures and their products | [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The four general products and the change of scalars | [The Four General Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html) |
+| The root equation, the four general products and the existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The roots of $0$ and the nilpotents | [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The twelve products and their squares | [The 12 Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html) |
+| The twelve structures and their products | [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The four general products and the change of scalars | [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html) |
 
 ## The Root Equation and the Two Squares
 
@@ -152,7 +152,7 @@ The root problem asks which elements square to a central value in each of the tw
 
 ## Further Reading
 
-- [Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.html), for the existence classes and the root sets.
-- [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html), for the halving map.
-- [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html), for the nilpotent cone.
+- [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the existence classes and the root sets.
+- [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the halving map.
+- [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the nilpotent cone.
 - *Zero Divisors Across the Twelve Structures* and *Annihilators Across the Twelve Structures*, the two companions of this block.

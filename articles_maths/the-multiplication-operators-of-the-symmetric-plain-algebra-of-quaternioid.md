@@ -54,9 +54,9 @@ $$
 
 **Theorem (injectivity).** The map $\tilde p\mapsto L^{\bullet}_{\tilde p}$ is injective: $L^{\bullet}_{\tilde p}=0$ if and only if $\tilde p=0$.
 
-*Proof.* If $L^{\bullet}_{\tilde p}=0$ then $\tilde p\bullet\tilde q=0$ for every $\tilde q$, so $\tilde p$ is annihilated with everything; but a nonzero element annihilates only the plane of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* when it is pure and nothing when it is non-pure, so $\tilde p=0$.
+*Proof.* If $L^{\bullet}_{\tilde p}=0$ then $\tilde p\bullet\tilde q=0$ for every $\tilde q$, so $\tilde p$ is annihilated with everything; but a nonzero element annihilates only the plane of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* when it is pure and nothing when it is non-pure, so $\tilde p=0$.
 
-**Corollary.** The kernel of $L^{\bullet}_{\tilde p}$ is $\{0\}$ for a non-pure $\tilde p$ and the two-dimensional plane of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* for a nonzero pure $\tilde p$; the operator is singular exactly at the zero divisors, with $\det L^{\bullet}_{\tilde p}=p_0^2\langle\tilde p\rangle_{\natural}$.
+**Corollary.** The kernel of $L^{\bullet}_{\tilde p}$ is $\{0\}$ for a non-pure $\tilde p$ and the two-dimensional plane of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* for a nonzero pure $\tilde p$; the operator is singular exactly at the zero divisors, with $\det L^{\bullet}_{\tilde p}=p_0^2\langle\tilde p\rangle_{\natural}$.
 
 ## The Jordan Relation
 
@@ -143,7 +143,7 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde p}\tilde q=\t
 ## Further Reading
 
 - *Introduction to the Symmetric Plain Algebra*, for the product.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the kernel and the determinant of the operator.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the kernel and the determinant of the operator.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the invariance and the skewness.
 - *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, for the plain operators against which the fullness is read.
 - *Jordan Algebras*, for the operator form of the Jordan identity and the derivations of a Jordan algebra.

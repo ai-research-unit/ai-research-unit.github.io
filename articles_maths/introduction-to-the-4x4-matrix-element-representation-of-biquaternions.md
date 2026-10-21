@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its four-vector coordinates are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *The Four-Vector Element Representation of Biquaternions*.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its four-vector coordinates are those of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and *The Four-Vector Element Representation of Biquaternions*.
 
 Two $4\times4$ matrices carry the multiplication of $\mathbb{B}$ in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$. The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix whose $\mu$-th column is the coordinate column of the product $\tilde Q e_\mu$; the **right regular matrix** $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix whose $\mu$-th column is the coordinate column of the product $e_\mu \tilde Q$. Both are complex $4\times4$ matrices, both carry a letter, and neither is the default: the shorter notation $\mathsf{M}_4$ stands for the left one $\mathsf{M}_4^{L}$, and the letter $L$ is kept here so that the two stand on the same footing.
 

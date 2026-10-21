@@ -338,7 +338,7 @@ $$
 N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}\in\mathbb{C} , \qquad E^{2} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}\in\mathbb{R} .
 $$
 
-The first is the biquaternion norm of §*The Scale*; the second is the Hermitian form whose square root is the Euclidean norm $\lVert\tilde{Q}\rVert_{E}$. The two are two of the four forms of the algebra (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). The first is complex and central, the second is a sum of non-negative terms and is therefore real and non-negative. They are tied by
+The first is the biquaternion norm of §*The Scale*; the second is the Hermitian form whose square root is the Euclidean norm $\lVert\tilde{Q}\rVert_{E}$. The two are two of the four forms of the algebra (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*). The first is complex and central, the second is a sum of non-negative terms and is therefore real and non-negative. They are tied by
 
 $$
 E^{2}\ \ge\ \lvert N\rvert ,
@@ -673,10 +673,10 @@ with $r = \sqrt{\lvert\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert} > 0$, 
 
 ## Further Reading
 
-- *The Biquaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the algebra, the four conjugations and the remarkable subspaces.
+- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, the four conjugations and the remarkable subspaces.
 - *The Element and Operator Representations* (`articles_physics/the-element-and-operator-representations.md`), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the determinant, and the matrix polar decomposition that §*The Procedure in Practice* performs.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the two forms that the procedure reads off the element, the complex bilinear norm $\langle\cdot\rangle_{\natural}$ and the Hermitian form, and for the Euclidean norm $\lVert\cdot\rVert_{E}$.
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the definiteness of the algebraic norm of $\langle\cdot\rangle_{*}$ and the multiplicativity of $\langle\cdot\rangle_{\natural}$, on which the inequality $E^{2}\ge\lvert N\rvert$ and the identity $\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2}=E^{4}-\lvert N\rvert^{2}$ rest.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the two forms that the procedure reads off the element, the complex bilinear norm $\langle\cdot\rangle_{\natural}$ and the Hermitian form, and for the Euclidean norm $\lVert\cdot\rVert_{E}$.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definiteness of the algebraic norm of $\langle\cdot\rangle_{*}$ and the multiplicativity of $\langle\cdot\rangle_{\natural}$, on which the inequality $E^{2}\ge\lvert N\rvert$ and the identity $\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2}=E^{4}-\lvert N\rvert^{2}$ rest.
 - *The Polar Element Representation and Remarkable Subspaces* (`articles_maths/the-polar-element-representation-and-remarkable-subspaces.md`), for the four exponents read against the four coordinate blocks and the six remarkable subspaces, the incidence of the exponents with the subspaces, and the polar data each subspace carries.
 - *Split-Biquaternion Polar Element Representation* (`articles_maths/split-biquaternion-polar-element-representation.md`), for the semisimple analogue, whose modulus is split complex and whose rotor is six-dimensional.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), for the two-factor case that this decomposition restricts to on the real quaternions.

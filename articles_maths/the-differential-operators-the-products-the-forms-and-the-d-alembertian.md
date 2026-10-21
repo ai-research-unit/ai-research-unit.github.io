@@ -7,9 +7,9 @@ article walks that section in its own order: the subscripts, the prime, the two 
 products read on the gradient, each with its product, its symmetric and antisymmetric parts, its form and its norm. Nothing is
 proved here. Every statement restates the convention or an article that owns it, and every owner is cited where it is used.
 
-The four general products are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, among the twelve operations of
-*The 12 Products of the Biquaternioid $\mathbb{C}$ Space*; their four scalar parts are *The 4 Forms over the Biquaternioid
-$\mathbb{C}$ Space*; the four norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; and the gradient, its
+The four general products are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, among the twelve operations of
+*The 12 Products of the Biquaternion $\mathbb{C}$ Space*; their four scalar parts are *The 4 Forms over the Biquaternion
+$\mathbb{C}$ Space*; the four norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; and the gradient, its
 conjugate and the d'Alembertian are developed at length in *Biquaternion Analysis*, §*The Differential Operators*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
@@ -93,7 +93,7 @@ $$
 
 ### The Plain Bilinear Product, Its Form and Its Norm
 
-**The product.** The general plain bilinear product is one of the four of *The 12 Products of the Biquaternioid $\mathbb{C}$
+**The product.** The general plain bilinear product is one of the four of *The 12 Products of the Biquaternion $\mathbb{C}$
 Space*. On the gradient, with an element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, it is read with
 $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that
 the three spatial units carry the field back onto the scalar unit,
@@ -120,7 +120,7 @@ $$
 
 a pure vector, so the plain form carries the whole scalar content of the product. Throughout these four subsections the pair
 $(\nabla,\vec X)$ is read as the divergence $\nabla\cdot\vec X$ and $X\nabla$ as the gradient $\nabla X$, the derivative acting on
-the coefficient it multiplies, and the coordinate formulas substituted are those of *The 12 Products of the Biquaternioid
+the coefficient it multiplies, and the coordinate formulas substituted are those of *The 12 Products of the Biquaternion
 $\mathbb{C}$ Space*.
 
 **The form.** The **plain form** is the scalar part of the product read in two arguments,
@@ -141,7 +141,7 @@ the cross terms cancelling. **On the material sector** it is $-\frac{\partial^2}
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
-**The product.** The general quaternionic bilinear product is the second of the four of *The 12 Products of the Biquaternioid
+**The product.** The general quaternionic bilinear product is the second of the four of *The 12 Products of the Biquaternion
 $\mathbb{C}$ Space*; on the gradient it is $\tilde\nabla^{\natural}\tilde Q_{\mathrm f}$, the conjugate derivative, read with the same rules,
 the three spatial units now carrying the field back onto the scalar unit with the opposite sign,
 
@@ -183,7 +183,7 @@ $$
 $$
 
 **This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, an operator on the whole algebra, one and
-the same before any sector is named (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*). The coordinates $Q_\mu$
+the same before any sector is named (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*). The coordinates $Q_\mu$
 are those of the algebra and are complex in general; the operator is $\partial^2/\partial Q_t^2+\Delta_Q$ whatever the sector, and
 it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde Q_{\mathrm f}=\sum_\mu(\Box Q_{\mathrm{f}\mu})e_\mu$. It is the identity above, and not the relation $Q_t=iq'_t$, that fixes it, and **no article of the corpus defines a second d'Alembertian**; no
 mass-term sign is left to a local convention.
@@ -202,7 +202,7 @@ same way.
 
 ### The Hermitian Product, Its Form and Its Norm
 
-**The product.** The general plain sesquilinear product is the third of the four of *The 12 Products of the Biquaternioid
+**The product.** The general plain sesquilinear product is the third of the four of *The 12 Products of the Biquaternion
 $\mathbb{C}$ Space*; it is the plain product applied to the **conjugated** field
 $\tilde Q_{\mathrm f}^{*}=\bar Q_{\mathrm{f}t}e_t-\overline{\vec Q_{\mathrm f}}$, so that on the gradient it is $\tilde\nabla\tilde Q_{\mathrm f}^{*}$, conjugate-linear in the
 field while the first slot stays $\mathbb{C}$-linear,
@@ -256,7 +256,7 @@ $\Box|_{\mathbb{M}_-}=\Delta-\partial^2/\partial (q'_t)^2$.
 
 ### The Krein Product, Its Form and Its Norm
 
-**The product.** The general quaternionic sesquilinear product is the fourth of the four of *The 12 Products of the Biquaternioid
+**The product.** The general quaternionic sesquilinear product is the fourth of the four of *The 12 Products of the Biquaternion
 $\mathbb{C}$ Space*; it is the conjugate derivative applied to the conjugated field, $\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}$, the
 companion of the quaternionic bilinear product in the second slot,
 
@@ -375,11 +375,11 @@ A contraction is a form and never an index, the metric being the sign vector ins
 conventions this article re-states
 - *Biquaternion Analysis* (`articles_maths/biquaternion-analysis.md`), for the gradient, its conjugate and the d'Alembertian at
 length
-- *The 12 Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`),
+- *The 12 Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`),
 for the twelve operations and the four general products
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*
-(`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms and their signatures
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*
-(`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the four norms as the diagonals of the forms
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms and their signatures
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the four norms as the diagonals of the forms
 - *Remarkable Subspaces and the Analysis* (`articles_maths/remarkable-subspaces-and-the-analysis.md`), for the operator of the
 norm read on each remarkable subspace

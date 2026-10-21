@@ -9,7 +9,7 @@ $$
 A_\star(\tilde q_1)=\{\tilde q_2:\tilde q_1\star\tilde q_2=0\},\qquad
 B_\star(\tilde q_1)=\{\tilde q_2:\tilde q_2\star\tilde q_1=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace and its computation is
 one of linear algebra.

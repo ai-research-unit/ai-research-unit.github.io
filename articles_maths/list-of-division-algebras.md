@@ -29,7 +29,7 @@ A **division algebra** over a field $k$ is a $k$-algebra with identity in which 
 | $\mathbb{H}$ | dimension $4$; the only non-commutative real division algebra; a division ring but not a field | *Quaternion Algebra* |
 | Frobenius' theorem | the complete list $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ of real division algebras | *Division Algebras* |
 | Non-example: the split biquaternions $\mathbb{H}_{\mathbb{D}}$ | have zero divisors: they are $\mathbb{H}\oplus\mathbb{H}$, so not a division algebra, and they have no nonzero nilpotents | *Split-Biquaternion Algebra* |
-| Non-example: the biquaternions $\mathbb{B}$ | have zero divisors: $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
+| Non-example: the biquaternions $\mathbb{B}$ | have zero divisors: $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra | *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* |
 
 ## The Finite Division Rings: Wedderburn's Little Theorem
 
@@ -72,7 +72,7 @@ Over a general field the finite-dimensional division algebras are the division-a
 | Central division algebra over a local field | the unique one of each index, determined by its Hasse invariant | *Class Field Theory* (Part I) |
 | Division algebra of index $n$ | $\dim_F D = n^2$; split by a field extension of degree $n$ | *Central Simple Algebras and the Brauer Group* |
 | Non-example: a quaternion algebra with $a$ a norm | is isomorphic to $M_2(F)$, so it is not a division algebra | *Central Simple Algebras and the Brauer Group* |
-| Non-example: $\mathbb{B}$ as a central division algebra over $\mathbb{R}$ | fails: its centre is $\mathbb{C}$ and it is not central over $\mathbb{R}$ | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
+| Non-example: $\mathbb{B}$ as a central division algebra over $\mathbb{R}$ | fails: its centre is $\mathbb{C}$ and it is not central over $\mathbb{R}$ | *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* |
 
 ## The Four Theorems Compared
 

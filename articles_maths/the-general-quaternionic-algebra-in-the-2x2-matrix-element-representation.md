@@ -107,7 +107,7 @@ so the form is the polarisation of the norm, and it is the determinant read as a
 $$
 J^{\mathsf T}\,D\,J=\mathrm{I}_4,\qquad D=\operatorname{diag}(1,-1,-1,-1),
 $$
-and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport of the four pairings is the dictionary of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
+and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport of the four pairings is the dictionary of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 ## Worked Examples
 
@@ -208,6 +208,6 @@ The $2\times2$ realization turns the natural conjugation into the adjugate and t
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the further reading of the isomorphism
 - *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the quaternionic product on the algebra
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form on the algebra
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form on the algebra
 - *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-algebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restriction theory of the form

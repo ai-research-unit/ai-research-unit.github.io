@@ -8,7 +8,7 @@ The construction has one name in the corpus, **realification**: keep the element
 
 Two sibling articles state the theory and are cited and not repeated. This article owns what is left and what is general: the realification of a vector space, of a linear map, of a form and of an operator, the four effects the passage has on a structure, and the reading of the twelve algebraic structures under those effects. Its last section reads the four things specific to the biquaternion instance: the odd real subalgebras, the Galois-twisted automorphisms, the trace form and the real models.
 
-**Boundary.** The products are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *The 12 Products of the Biquaternioid Complex Space*; the forms are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the realified forms, their Gram matrices and their signatures are **The Realification of the Four Forms**, quoted here in the general case and not re-derived; The real reading of the ring itself, with its multiplication table and its admissible bases, is **The Realification and the Effect of the Change of Scalars**, the entry of the General Plain Algebra block over $\mathbb{R}$. The general theory of restriction and extension of scalars and of real forms is *Change of Rings*, *Extension of Scalars* and *Real Forms and the Descent of an Algebra*.
+**Boundary.** The products are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *The 12 Products of the Biquaternion Complex Space*; the forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the realified forms, their Gram matrices and their signatures are **The Realification of the Four Forms**, quoted here in the general case and not re-derived; The real reading of the ring itself, with its multiplication table and its admissible bases, is **The Realification and the Effect of the Change of Scalars**, the entry of the General Plain Algebra block over $\mathbb{R}$. The general theory of restriction and extension of scalars and of real forms is *Change of Rings*, *Extension of Scalars* and *Real Forms and the Descent of an Algebra*.
 
 ## The Realification of a Vector Space
 
@@ -116,7 +116,7 @@ for the two sesquilinear forms.
 
 *Proof.* For a $\mathbb{C}$-bilinear form, $\Phi(iP,iQ)=i^2\Phi(P,Q)=-\Phi(P,Q)$, and taking real parts gives the first display. For a Hermitian form, $\Phi(iP,iQ)=i\bar i\,\Phi(P,Q)=\Phi(P,Q)$, and the second follows. The sign is the same statement as the block shapes of the two Gram matrices: the bilinear realification has the two blocks $\mathrm{D}$ and $-\mathrm{D}$ while the Hermitian one repeats its block.
 
-**Remark (the two rules and the four signatures).** The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two **bilinear** forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two **Hermitian** forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
+**Remark (the two rules and the four signatures).** The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two **bilinear** forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two **Hermitian** forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Four Effects on a Structure
 
@@ -148,7 +148,7 @@ The effect of the passage on the objects the corpus builds is then read off obje
 
 ## The Effect on the Twelve Algebraic Structures
 
-**Theorem (the twelve over $\mathbb{R}$).** The twelve products of *The 12 Products of the Biquaternioid Complex Space* are defined by the four general products on the complex space. Read over $\mathbb{R}$,
+**Theorem (the twelve over $\mathbb{R}$).** The twelve products of *The 12 Products of the Biquaternion Complex Space* are defined by the four general products on the complex space. Read over $\mathbb{R}$,
 
 1. all twelve are $\mathbb{R}$-bilinear, so all twelve are algebras in the broad sense over $\mathbb{R}$;
 2. the six of the $A$ family are $\mathbb{C}_{\mathbb{B}}$-linear in the second slot, and the six of the $S$ family are $\mathbb{C}_{\mathbb{B}}$-conjugate-linear in it;
@@ -170,7 +170,7 @@ The effect of the passage on the objects the corpus builds is then read off obje
 
 *Proof.* The criteria of §*The Realification of a Linear Map* apply to the second slot, with $V=W=\mathbb{B}$ and with $\mathbb{C}_{\mathbb{B}}$ in place of $\mathbb{C}$. The last clause is the dictionary.
 
-**Remark (the trap of the real part).** A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_te_t+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of *The 12 Products of the Biquaternioid Complex Space*, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.
+**Remark (the trap of the real part).** A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_te_t+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of *The 12 Products of the Biquaternion Complex Space*, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.
 
 ## What Is Specific to the Biquaternion Instance
 
@@ -231,5 +231,5 @@ Four things are specific to the biquaternion instance and are collected at the e
 ## Further Reading
 
 - **The Realification of the Eight Derived Structures** (`articles_maths/the-realification-of-the-eight-derived-structures.md`), for the general case applied to the four forms of the corpus, the four Gram matrices, the four signatures, the restrictions to the remarkable subspaces and the realified null cones.
-- *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`) and *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve products, their table and their two-slot construction, on which §*The Effect on the Twelve Algebraic Structures* rests.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`) and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve products, their table and their two-slot construction, on which §*The Effect on the Twelve Algebraic Structures* rests.
 - *Change of Rings* (`articles_maths/change-of-rings.md`), *Extension of Scalars* (`articles_maths/extension-of-scalars.md`) and *Real Forms and the Descent of an Algebra* (`articles_maths/real-forms-and-the-descent-of-an-algebra.md`), for the general theory of the restriction and the extension of scalars and of the real forms.

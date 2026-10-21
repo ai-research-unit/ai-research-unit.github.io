@@ -21,7 +21,7 @@ The reading has three parts, and the article keeps them apart. The first is the 
 | The module theory: the simple module, the regular module and its two summands | [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 | The column ideals of a matrix ring and their one-idempotent-one-nilpotent bases | [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
 | The canonical Hermitian form and the positivity of the sesquilinear pairing | [The Canonical Hermitian Form on the Regular Module of the Biquaternioid Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternioid-algebra.html) |
-| The four forms, the algebra's own bilinear form and the sectors | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) |
+| The four forms, the algebra's own bilinear form and the sectors | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
 | The coefficient conjugation and the real structure of the algebra | [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html) |
 | The roots of $+1$ and the non-Hermitian idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 

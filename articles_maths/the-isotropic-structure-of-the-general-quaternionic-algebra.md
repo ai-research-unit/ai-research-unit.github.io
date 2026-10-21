@@ -105,7 +105,7 @@ The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$,
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form
 - *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the classification of the isotropic elements
 - *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
 - *The Realification of the Eight Derived Structures* (`articles_maths/the-realification-of-the-eight-derived-structures.md`), for the realified null cones of the four forms and the comparison of the cones

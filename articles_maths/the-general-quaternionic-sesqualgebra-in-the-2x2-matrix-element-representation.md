@@ -242,6 +242,6 @@ The $2\times2$ realization keeps the two conjugations apart, the natural conjuga
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the further reading of the isomorphism
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form on the algebra
-- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the fundamental symmetry $J={}^{\natural}$
+- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the fundamental symmetry $J={}^{\natural}$
 - *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the restriction theory of the form

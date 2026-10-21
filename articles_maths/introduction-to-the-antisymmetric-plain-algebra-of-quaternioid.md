@@ -25,8 +25,8 @@ and the star coincides with the natural sign and gives nothing new.
 The article owns the operation as a multiplication: the rule, the class, the laws, the sixteen
 products of the basis, the image, the absence of a unit and the reconstruction of the plain product
 from its two halves. The element theory of the block is the companion articles of the same section,
-all below this article in this category — *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
-*Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero
+all below this article in this category — *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+*Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero
 and the Nilpotents of the Antisymmetric Plain Algebra* and *The
 Specificities of the Antisymmetric Plain Algebra*; the Lie theory is
 *The Lie Algebra of the Antisymmetric Plain Algebra*, *The Killing Form of the Antisymmetric Plain
@@ -224,4 +224,4 @@ only the symmetric half, so the block carries no square of its own. Among the co
 - *Introduction to the Symmetric Plain Algebra*, for the symmetric half of the same product.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the structure of the Lie algebra.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the operators.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.

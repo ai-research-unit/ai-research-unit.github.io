@@ -4,7 +4,7 @@
 
 A zero divisor is a nonzero element that annihilates a nonzero partner. It is an operation that cannot be inverted, and the set of such operations is the wall of the reversible region. The twelve products of the biquaternion complex space give twelve zero-divisor sets. They are not twelve unrelated sets: the cone of the quaternion norm lies in all twelve, and the differences between the sets are the differences between the products off that common core.
 
-This article reads the twelve sets, compares them, and gives the physical content of each. It owns no theorem. The mathematics is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and the physical interpretations are gathered from the structure drafts of this category. The companion articles of the block are *Annihilators Across the Twelve Structures* and *Roots Across the Twelve Structures*.
+This article reads the twelve sets, compares them, and gives the physical content of each. It owns no theorem. The mathematics is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the physical interpretations are gathered from the structure drafts of this category. The companion articles of the block are *Annihilators Across the Twelve Structures* and *Roots Across the Twelve Structures*.
 
 The result that organizes the comparison is a coincidence and a contrast. The four general products have **one** zero-divisor set, because the four products read the same norm; their root sets, by contrast, are four different sets. Degeneracy is universal across the bands, while factorisation is band-specific.
 
@@ -12,12 +12,12 @@ The result that organizes the comparison is a coincidence and a contrast. The fo
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The twelve products and their multiplication tables | [The 12 Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html) |
-| The twelve structures, their values, units and inverse equations | [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The zero-divisor cone, the units and the twelve sets | [Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
+| The twelve products and their multiplication tables | [The 12 Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html) |
+| The twelve structures, their values, units and inverse equations | [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The zero-divisor cone, the units and the twelve sets | [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The norm, its vanishing and the inverse formula | [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html) |
 | The two one-sided actions and the absence of a unit | [The Two One-Sided Actions and the Absence of a Unit](../articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.html) |
-| The square-zero sets and the nilpotents | [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
+| The square-zero sets and the nilpotents | [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 
 ## The Zero-Divisor Set
 
@@ -132,7 +132,7 @@ The four general products share one zero-divisor set, the punctured cone $\mathc
 
 ## Further Reading
 
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve sets and the proofs.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve sets and the proofs.
 - *Norm and Invertibility in the Biquaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the unit group and the inverse formula.
 - *Annihilators Across the Twelve Structures* (`articles_physics/annihilators-across-the-twelve-structures.md`) and *Roots Across the Twelve Structures* (`articles_physics/roots-across-the-twelve-structures.md`), the two companions of this block.
 - *The Eight Derived Structures: Symmetric and Antisymmetric* (`articles_physics/the-eight-derived-structures-symmetric-and-antisymmetric.md`), for the products compared here.

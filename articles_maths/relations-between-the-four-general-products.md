@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The four general products of the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ are defined independently in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, each on the coordinates of the two elements of a pair, and each with its scalar–vector form:
+The four general products of the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ are defined independently in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, each on the coordinates of the two elements of a pair, and each with its scalar–vector form:
 
 $$
 \tilde Q_1\tilde Q_2 , \qquad \tilde Q_1\tilde Q_2^{*} , \qquad \tilde Q_1^{\natural}\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2^{*} .
 $$
 
-This article collects the identities that link the four. They are not four unrelated rules: the first factor is read plain in the first two and through ${}^{\natural}$ in the last two, the second factor plain in the first and the third and through ${}^{*}$ in the second and the fourth, the two choices being made independently. Every link below is a consequence of that single distinction, read on the coordinates: the four scalar parts are related to one another by the two identities that split a factor into its scalar and its vector part; the four vector parts obey the same pair of identities; the left multiplications of the four are the general plain bilinear ones read through the two conjugations, and that reading decides which of them form a monoid. Finally, on the real quaternion subspace, where the complex conjugation is the identity and the star is the natural sign, the four scalar parts collapse onto two, the two sesquilinear ones becoming the two bilinear ones.
+This article collects the identities that link the four. They are not four unrelated rules: the first factor is read plain in the first two and through ${}^{\natural}$ in the last two, the second factor plain in the first and the third and through ${}^{*}$ in the second and the fourth, the two choices being made independently. Every link below is a consequence of that single distinction, read on the coordinates: the four scalar parts are related to one another by the two identities that split a factor into its scalar and its vector part; the four vector parts obey the same pair of identities; the left multiplications of the four are the general plain bilinear ones read through the two conjugations, and that reading decides which of them form a monoid. Finally, on the real quaternion subspace, where the complex conjugation is the identity and the star is the natural sign, the four scalar parts collapse onto two, the two sesquilinear ones becoming the two bilinear ones. It is the second article of the group *The Four General Products* and carries the identities that link the four rules.
 
-Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternioid Complex Space*.
+Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternion Complex Space*.
 
-The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the conjugations from *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde Q_1=Q_{1,0}+\vec Q_1$ and $\tilde Q_2=Q_{2t}+\vec Q_2$ separate the complex scalar part from the complex vector part, $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ and $\vec Q_1\times\vec Q_2$ are the complex bilinear dot and cross products, and $\overline{\vec Q_2}$ is the coefficientwise conjugate of the vector part.
+The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the conjugations from *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and *The Group of Involutions*. Throughout, $\tilde Q_1=Q_{1,0}+\vec Q_1$ and $\tilde Q_2=Q_{2t}+\vec Q_2$ separate the complex scalar part from the complex vector part, $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ and $\vec Q_1\times\vec Q_2$ are the complex bilinear dot and cross products, and $\overline{\vec Q_2}$ is the coefficientwise conjugate of the vector part.
 
 ## The Two Choices, and the Four General Products
 
@@ -167,7 +167,7 @@ $$
 \mathrm{Vec}(\tilde Q_1^{\natural}\tilde Q_2^{*})=-2Q_{1,0}\overline{\vec Q_2}-\mathrm{Vec}(\tilde Q_1\tilde Q_2^{*}) .
 $$
 
-The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $Q_{1,0}\vec Q_2$; the second, that the vector part of the sesquilinear pair reflects in $-Q_{1,0}\overline{\vec Q_2}$. In full, the four vector parts of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
+The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $Q_{1,0}\vec Q_2$; the second, that the vector part of the sesquilinear pair reflects in $-Q_{1,0}\overline{\vec Q_2}$. In full, the four vector parts of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
 
 | product | vector part | cross term |
 |---|---|---|
@@ -232,7 +232,7 @@ and the fourth restricts to the first. The four scalar parts therefore come in t
 
 ## Summary
 
-The four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* are read on one and the same pair $(\tilde Q_1,\tilde Q_2)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde Q}_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read on one and the same pair $(\tilde Q_1,\tilde Q_2)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde Q}_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
 The two conjugations in the slots separate the scalar part of a factor from its vector part,
 
@@ -251,7 +251,7 @@ The left multiplications of the four are the general plain bilinear ones read th
 
 | symbol | meaning |
 |---|---|
-| $\tilde Q_1\tilde Q_2, \tilde Q_1\tilde Q_2^{*}, \tilde Q_1^{\natural}\tilde Q_2, \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products, defined in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* |
+| $\tilde Q_1\tilde Q_2, \tilde Q_1\tilde Q_2^{*}, \tilde Q_1^{\natural}\tilde Q_2, \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products, defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* |
 | $\vec Q_1$ | the vector part of $\tilde Q_1$, $Q_{1,1}\vec e_x+Q_{1,2}\vec e_y+Q_{1,3}\vec e_z$, read as an element where it multiplies |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the signs of the first and of the fourth scalar parts |
 | $L_{\tilde Q_1}$, $R_{\tilde Q_1}$ | the left and right multiplications of the general plain bilinear product by $\tilde Q_1$ |
@@ -260,6 +260,6 @@ The left multiplications of the four are the general plain bilinear ones read th
 
 ## Further Reading
 
-- *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four definitions and their scalar–vector forms.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four definitions and their scalar–vector forms.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table of the four.
 - *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the left and right multiplications as operators.

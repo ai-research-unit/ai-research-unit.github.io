@@ -23,11 +23,11 @@ The article is a reader. The mathematics is owned by *The Krein Form as a Produc
 | The Gram matrix and the restrictions to the subspaces | [The Krein Gram Matrix and the Restrictions of the Form](../articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html) |
 | The isometry group, the boosts and the $J$-contractions | [The Krein Isometry Group and Its $J$-Contractions](../articles_maths/the-krein-isometry-group-and-its-j-contractions.html) |
 | The level sets and the two hyperbolic models | [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html) |
-| The Krein cone, the operator cone and the indefinite positivity | [Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.html) |
+| The Krein cone, the operator cone and the indefinite positivity | [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html) |
 | The null set, the doubly-null lines and the totally isotropic subspaces | [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html) |
 | The fundamental decomposition and the Krein-orthogonal projections | [Krein Orthogonality and the Fundamental Decomposition](../articles_maths/krein-orthogonality-and-the-fundamental-decomposition.html) |
 | The Cartan decomposition and the symmetric space | [The Krein Cartan Decomposition of the Operator Algebra](../articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.html) |
-| The fundamental symmetry $J={}^{\natural}$ | [The Fundamental Symmetry of the Biquaternioid Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.html) |
+| The fundamental symmetry $J={}^{\natural}$ | [The Fundamental Symmetry of the Biquaternion Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html) |
 
 ## The Form and Its Gram Matrix
 
@@ -290,7 +290,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - [The Krein Gram Matrix and the Restrictions of the Form](../articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the Gram matrix and the six restrictions.
 - [The Krein Isometry Group and Its $J$-Contractions](../articles_maths/the-krein-isometry-group-and-its-j-contractions.html), for the group, the boosts and the contractions.
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the ball and the two hyperbolic models.
-- [Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.html), for the cone and the operator cone.
+- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the cone and the operator cone.
 - [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the null set and the doubly-null lines.
 - *The Four Forms and the Four Algebraic Norms*, for the place of the Krein form among the four forms.
 - *The Operators: One-Sided, Two-Sided, Sandwich*, for the one-sided and two-sided operators of the form.

@@ -64,7 +64,7 @@ $$
 
 with $\tilde{Q}_2=(\tilde{Q}_3^{*}\tilde{Q}_3)^{1/2}$; the map $\tilde{Q}_3\mapsto(\tilde{U},\tilde{Q}_2)$ is a homeomorphism of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})\times\{\text{Hermitian positive definite}\}$.
 
-**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ a unit, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|_E^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde{U}=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde{U}^{*}\tilde{U}=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
+**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ a unit, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|_E^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde{U}=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde{U}^{*}\tilde{U}=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
 
 **Theorem (strong deformation retraction).** For $t\in[0,1]$ put $\tilde{Q}_{2,t}=(1-t)\tilde{Q}_2+t e_t$ and $\tilde{H}(t,\tilde{Q}_3)=\tilde{U}\tilde{Q}_{2,t}$. Then $\tilde{H}$ is a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$:
 
@@ -168,8 +168,8 @@ The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e
 
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the bilinear-side treatment of the group of units
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the ambient Euclidean structure the retractions use
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form that defines the unitary slice
-- *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternioid-algebra-with-hermitian-adjoint.md`), for the Hermitian cone and the positive square root
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form that defines the unitary slice
+- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the Hermitian cone and the positive square root
 - *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the subgroups and the real forms
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd edition (Springer, 2015), for the standard facts about $\mathrm{U}(2)$, $SU(2)$ and their quotients
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the double covers of the rotation groups

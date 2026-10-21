@@ -10,7 +10,7 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The algebra, its basis, its eight real coordinates and the complex structure $J:\tilde Q\mapsto i\tilde Q$ | [The Biquaternioid as a Vector Space over $\mathbb{R}$](../articles_maths/the-biquaternioid-vector-space-over-r.html), [The Biquaternioid as a Vector Space over $\mathbb{C}$](../articles_maths/the-biquaternioid-vector-space-over-c.html) |
+| The algebra, its basis, its eight real coordinates and the complex structure $J:\tilde Q\mapsto i\tilde Q$ | [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](../articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html) |
 | The involutions, the Klein four-group and the orbits of an element | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
 | The six subspaces, their bases and their defining conditions | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
 | The three decompositions of the algebra | [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) |
@@ -311,7 +311,7 @@ The article interprets the linear structure, the involutions and the real forms.
 
 ## Further Reading
 
-- [The Biquaternioid as a Vector Space over $\mathbb{R}$](../articles_maths/the-biquaternioid-vector-space-over-r.html) and [The Biquaternioid as a Vector Space over $\mathbb{C}$](../articles_maths/the-biquaternioid-vector-space-over-c.html), for the space, its basis and its complex structure.
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](../articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the space, its basis and its complex structure.
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group, its subgroups and its orbits.
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one.
 - [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html), for the three decompositions, the coordinate blocks and the intersection table.

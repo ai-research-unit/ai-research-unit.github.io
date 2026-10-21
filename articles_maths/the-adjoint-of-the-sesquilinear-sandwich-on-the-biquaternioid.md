@@ -9,7 +9,7 @@ $$
 \varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}=\tfrac12\,\mathrm{tr}\bigl(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}\bigr)
 $$
 
-of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde Q,\tilde Q_3}^{\dagger}$ characterised by
+of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde Q,\tilde Q_3}^{\dagger}$ characterised by
 
 $$
 \varphi\bigl(S_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,S_{\tilde Q,\tilde Q_3}^{\dagger}\tilde Q_2\bigr)} .
@@ -31,7 +31,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 
 ### The Form
 
-**Recall.** The Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* is
+**Recall.** The Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* is
 
 $$
 \varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}} ,

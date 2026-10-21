@@ -4,7 +4,7 @@
 
 Every one of the four general products of the biquaternion complex space splits into a symmetric and an antisymmetric part. The four general products give four parents, and the four splits give the **eight derived structures**: the symmetric and antisymmetric plain algebra and sesqualgebra, the symmetric and antisymmetric quaternionic algebra and sesqualgebra. The eight are not a formal decoration of the parents. Each is a product in its own right, with its own values, its own form, its own law and its own physical job: commutativity, positivity, coupling and metric on the symmetric side; rotation, phase, obstruction and polarisation on the antisymmetric side.
 
-This article reads the eight one by one, then the two identities that decide which of them are a Jordan or a Lie product, then the reconstruction of each parent from its two halves, and finally the twelve structures side by side. It owns no theorem. The mathematics is *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *The Realification of the Eight Derived Structures*; the physical interpretations are gathered from the eleven structure drafts of this category. The general plain algebra is read in *The Four General Products: Composition, Probability, Causality, Gauge*, and this article only quotes it as a parent.
+This article reads the eight one by one, then the two identities that decide which of them are a Jordan or a Lie product, then the reconstruction of each parent from its two halves, and finally the twelve structures side by side. It owns no theorem. The mathematics is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Realification of the Eight Derived Structures*; the physical interpretations are gathered from the eleven structure drafts of this category. The general plain algebra is read in *The Four General Products: Composition, Probability, Causality, Gauge*, and this article only quotes it as a parent.
 
 The four words of the symmetric half and the four words of the antisymmetric half are the thread of the article. A splitting is not a classification by itself, but here it is: the symmetric half keeps the scalar part of the parent and loses the direction, the antisymmetric half keeps the direction and loses the scalar part, and the physical difference between measuring and generating is that loss.
 
@@ -12,12 +12,12 @@ The four words of the symmetric half and the four words of the antisymmetric hal
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The twelve products, their multiplication tables and their values | [The 12 Products of the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html) |
-| The twelve structures, their products, values, units and identities | [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html) |
-| The Jordan and Jacobi identities, the two that hold and the six witnesses of failure | [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html) |
+| The twelve products, their multiplication tables and their values | [The 12 Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html) |
+| The twelve structures, their products, values, units and identities | [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
+| The Jordan and Jacobi identities, the two that hold and the six witnesses of failure | [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The realification, the real dimension, the real operators and the signatures | [The Realification of the Eight Derived Structures](../articles_maths/the-realification-of-the-eight-derived-structures.html) |
-| The four forms and their signatures | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) |
-| The four algebraic norms and their definiteness and multiplicativity | [The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.html) |
+| The four forms and their signatures | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
+| The four algebraic norms and their definiteness and multiplicativity | [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html) |
 
 ## The Eight and Their Parents
 
@@ -284,10 +284,10 @@ The four general products split into eight derived structures, and the split is 
 
 ## Further Reading
 
-- [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html), for the twelve products, the identities and the witnesses.
+- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve products, the identities and the witnesses.
 - [The Realification of the Eight Derived Structures](../articles_maths/the-realification-of-the-eight-derived-structures.html), for the real dimension, the real operators and the signatures.
-- *The 12 Products of the Biquaternioid Complex Space*, for the multiplication tables and the coordinates of the twelve.
-- [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), for the four forms and their Gram matrices.
+- *The 12 Products of the Biquaternion Complex Space*, for the multiplication tables and the coordinates of the twelve.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), for the four forms and their Gram matrices.
 - *The Four General Products: Composition, Probability, Causality, Gauge*, for the four parents.
 - *The Four Forms and the Four Algebraic Norms*, for the forms read physically.
 - *Zero Divisors Across the Twelve Structures*, *Annihilators Across the Twelve Structures* and *Roots Across the Twelve Structures*, the three companions of this block.

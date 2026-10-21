@@ -59,7 +59,7 @@ $$
 
 the right multiplication by $\tilde{Q}_1\tilde{Q}_1^{*}$. The two right factors of the family differ by the right multiplication by the Hermitian element $\tilde{Q}_1\tilde{Q}_1^{*}$, and that element is the image of the identity under the sandwich, $\Theta_{\tilde{Q}_1}(e_t)$.
 
-*Proof.* Let $\tilde A=\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}_1}(\tilde Q)=\theta(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{-1}$, so that $\tilde Q$ is recovered by acting with the inverse. Then $\Phi^{\theta,{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\theta(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{*}=\tilde A\,\tilde{Q}_1\tilde{Q}_1^{*}=R_{\tilde{Q}_1\tilde{Q}_1^{*}}(\tilde A)$, using $\tilde{Q}_1^{-1}\tilde{Q}_1=e_t$. On the slice the defect is trivial because $\tilde{Q}_1\tilde{Q}_1^{*}=e_t$; off it, it is the positive semidefinite element of the cone of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*.
+*Proof.* Let $\tilde A=\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}_1}(\tilde Q)=\theta(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{-1}$, so that $\tilde Q$ is recovered by acting with the inverse. Then $\Phi^{\theta,{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\theta(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{*}=\tilde A\,\tilde{Q}_1\tilde{Q}_1^{*}=R_{\tilde{Q}_1\tilde{Q}_1^{*}}(\tilde A)$, using $\tilde{Q}_1^{-1}\tilde{Q}_1=e_t$. On the slice the defect is trivial because $\tilde{Q}_1\tilde{Q}_1^{*}=e_t$; off it, it is the positive semidefinite element of the cone of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
 **Theorem (the vertical defect).** For every $\rho$ and every invertible $\tilde{Q}_1$,
 

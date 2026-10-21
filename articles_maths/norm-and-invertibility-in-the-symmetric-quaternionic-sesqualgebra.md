@@ -7,13 +7,13 @@ $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q
 *Introduction to the Symmetric Quaternionic Sesqualgebra*, carries in the place of a unit,
 an inverse and a norm. The answer is negative on the two first counts and precise on the third: the block has
 no unit, so it has no inverse and no group of units; the replacing object is the **regularity** of
-*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and the algebraic norm is the **Krein form** $\langle\cdot,\cdot\rangle_{\natural*}$,
+*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the algebraic norm is the **Krein form** $\langle\cdot,\cdot\rangle_{\natural*}$,
 which does not detect the zero divisors.
 
 A norm and an inverse name a product, and the product is part of the definition: the unit and the inverse are
-stated once for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
+stated once for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Unit and the Inverse*, and the algebraic norm of a product is the diagonal of its scalar-part form,
-the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the form is
+the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the form is
 $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ and
 its diagonal is
 
@@ -33,7 +33,7 @@ and the **absence of a criterion**: $\langle\cdot\rangle_{\natural*}$ does not d
 
 **Boundaries.** The product, its class and its two one-sided actions are *Introduction to the Symmetric
 Quaternionic Sesqualgebra of Biquaternions* and *The Two One-Sided Actions and the Absence of a Unit*; the
-zero divisors and the regular elements are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the
+zero divisors and the regular elements are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the
 operators are *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ and its
 isotropy are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Isotropic
 Structure of the General Quaternionic Sesqualgebra*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a
@@ -62,7 +62,7 @@ when there is a unit $\tilde E$ of $\star$ and an element $\tilde Q^{-1}$ with
 $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$; the invertible elements form the **group
 of units** of $\star$.
 
-This is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*. Unqualified,
+This is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*. Unqualified,
 the product is the block.
 
 ## The Absence of a Unit and of an Inverse
@@ -111,7 +111,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}},
 $$
 
-the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, also
+the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, also
 called the **Krein form** of the block. The two arities of the letter are one object: with two arguments the
 form, with one argument its diagonal.
 
@@ -174,7 +174,7 @@ and the rank is zero at the origin.
 *Proof.* The kernel of $L^{\star}_{\tilde Q}$ is the annihilator
 $A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\}$, of real dimension zero, two and four according to
 whether $\tilde Q$ is regular, a non-pure zero divisor or a pure zero divisor
-(*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*), and of dimension eight at the origin; the rank
+(*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*), and of dimension eight at the origin; the rank
 is eight minus the dimension of the kernel. The origin is neither regular nor a zero divisor, so it is the
 one kernel outside the two families, and $L^{\star}_{\tilde Q}$ is conjugate-linear because the second slot
 of the block is conjugate-linear.
@@ -265,11 +265,11 @@ central square, not by $\langle\cdot\rangle_{\natural*}$.
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ and the table of the four forms.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the two actions of $e_t$ and the proof that no element is a unit.
 - *Norm and Invertibility in the Biquaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{\natural*}$ of this article.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the criterion of the zero divisors and the regular elements.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the criterion of the zero divisors and the regular elements.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the operators whose kernels give the ranks.
 - *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form that is the scalar part of the square.

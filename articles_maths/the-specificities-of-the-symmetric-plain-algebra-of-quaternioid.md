@@ -158,7 +158,7 @@ The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jord
 
 - *Introduction to the Symmetric Plain Algebra*, for the product, the unit and the Jordan identity.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the norm, the trace and the inverse.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the zero divisors that are not nilpotents.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the zero divisors that are not nilpotents.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, below this article in this category, for the square and the inverse in full.
 - *Jordan Algebras*, for the special Jordan algebras, the formal reality and the classification of the formally real ones.
 - *The 6 Products of the Quaternioid Real Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, for the companion products and their laws.

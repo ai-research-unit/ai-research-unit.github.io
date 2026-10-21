@@ -8,11 +8,11 @@ $$
 \tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1),
 $$
 
-the multiplication of *Introduction to the Symmetric Plain Algebra*. It makes the complex space a commutative unital Jordan algebra, and of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* it is the only one that is a Jordan product. What is specific to the block is the structure a Jordan product carries and an arbitrary commutative product does not: a square that is the plain square, a multiplication operator that is the symmetric half of the two plain multiplications, a quadratic identity of degree two with a generic trace, a generic norm and an inverse, a quadratic representation, and a Peirce theory at the idempotents. Each is an explicit computation on the four coordinates, and each is developed below in the block's own terms.
+the multiplication of *Introduction to the Symmetric Plain Algebra*. It makes the complex space a commutative unital Jordan algebra, and of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* it is the only one that is a Jordan product. What is specific to the block is the structure a Jordan product carries and an arbitrary commutative product does not: a square that is the plain square, a multiplication operator that is the symmetric half of the two plain multiplications, a quadratic identity of degree two with a generic trace, a generic norm and an inverse, a quadratic representation, and a Peirce theory at the idempotents. Each is an explicit computation on the four coordinates, and each is developed below in the block's own terms.
 
 The block is exact in the opposite sense as well. The Jordan law is weaker than associativity, so the block does not inherit the parent's operator calculus: no non-trivial idempotent gives a projector, a square-zero element gives an operator of index three rather than a square-zero operator, the Peirce decomposition is cubic rather than quadratic, and the invertible elements form no group. Those absences are stated with the theorems they accompany, and §*The Isolation among the Twelve* names the one law from which the theorems and the absences both follow.
 
-**Placement.** The article closes the *Specific Theory* section of the block, after *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, whose element theory it reads as a consequence of the law, and after the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, its operators are *The Multiplication Operators of the Symmetric Plain Algebra*, and the plain product it symmetrises is *Introduction to the Biquaternion Algebra*.
+**Placement.** The article closes the *Specific Theory* section of the block, after *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, whose element theory it reads as a consequence of the law, and after the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, its operators are *The Multiplication Operators of the Symmetric Plain Algebra*, and the plain product it symmetrises is *Introduction to the Biquaternion Algebra*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ with $\vec Q_2=\sum_{k=1}^{3}Q_{2,k}\vec e_k$ and $Q_{2,\mu}\in\mathbb{C}$, and $(\vec Q_2,\vec Q_2)=\sum_kQ_{2,k}^2$. The plain product is juxtaposition $\tilde Q_1\tilde Q_2$; the product of the block is $\bullet$, the symmetrisation above, and $\tilde Q_1^{\bullet2}=\tilde Q_1\bullet\tilde Q_1$. The natural conjugation is $\tilde Q_2^{\natural}=Q_{2t}e_t-\vec Q_2$, and the biquaternion norm is $\langle\tilde Q_2\rangle_{\natural}=\tilde Q_2\tilde Q_2^{\natural}=\sum_\mu Q_{2,\mu}^2$. The **left multiplication** of the block is $L^{\bullet}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\bullet\tilde Q_2$, and $L_{\tilde Q_1},R_{\tilde Q_1}$ without a mark are the plain left and right multiplications. An **idempotent** is an element equal to its square, a **projector** an idempotent operator.
 
@@ -92,7 +92,7 @@ $$
 
 **Proposition (a square-zero element gives an operator of index three).** For a pure isotropic $\tilde\Upsilon$, that is $Q_t=0$ and $(\vec Q,\vec Q)=0$, the operator $L^{\bullet}_{\tilde\Upsilon}$ satisfies $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, with image not contained in the kernel; the witness is $\tilde\Upsilon=\vec e_x+i\vec e_y$.
 
-*Proof.* *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*: the elements of square zero are exactly the pure isotropic vectors, and their left multiplication has the stated index, the image $\mathrm{span}\{e_t,\tilde\Upsilon\}$ not lying in the kernel.
+*Proof.* *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*: the elements of square zero are exactly the pure isotropic vectors, and their left multiplication has the stated index, the image $\mathrm{span}\{e_t,\tilde\Upsilon\}$ not lying in the kernel.
 
 So the block has neither of the two operator constructions of the parent: an idempotent produces no projector and a square-zero element produces no flag. Both failures are the failure of left alternativity, and neither is repaired by any choice of element.
 
@@ -106,7 +106,7 @@ $$
 
 They are read off the quadratic identity at integral trace, $(T,N)=(0,0)$, $(2,1)$ and $(1,0)$, so that the non-trivial idempotents are exactly the isotropic ones.
 
-*Proof.* The square of the block is the plain square, so the equation is $\tilde\Pi^2=\tilde\Pi$, classified in *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the quadratic identity of §*The Degree-Two Structure* is then evaluated at the three traces.
+*Proof.* The square of the block is the plain square, so the equation is $\tilde\Pi^2=\tilde\Pi$, classified in *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the quadratic identity of §*The Degree-Two Structure* is then evaluated at the three traces.
 
 **Corollary (the cubic Peirce identity).** For every idempotent $\tilde\Pi$,
 
@@ -116,7 +116,7 @@ $$
 
 equivalently $2L^{\bullet}_{\tilde\Pi}{}^{3}-3L^{\bullet}_{\tilde\Pi}{}^{2}+L^{\bullet}_{\tilde\Pi}=0$; the eigenvalues of $L^{\bullet}_{\tilde\Pi}$ lie in $\{0,\tfrac12,1\}$.
 
-*Proof.* *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, verified at the witness $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$, whose operator has the eigenvalues $0$, $\tfrac12$ and $1$.
+*Proof.* *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, verified at the witness $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$, whose operator has the eigenvalues $0$, $\tfrac12$ and $1$.
 
 **Corollary (the Jordan Peirce decomposition).** For a non-trivial idempotent,
 
@@ -127,7 +127,7 @@ $$
 
 with $\mathbb{B}_1=\mathbb{C}\tilde\Pi$ of dimension one, $\mathbb{B}_0=\mathbb{C}(e_t-\tilde\Pi)$ of dimension one and $\dim\mathbb{B}_{1/2}=2$. At $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ the three dimensions are $1,2,1$.
 
-*Proof.* *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the dimensions are the multiplicities computed there.
+*Proof.* *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the dimensions are the multiplicities computed there.
 
 This is the Peirce theory of the block, and it is **cubic**: the decomposition is into one middle space, not into a pair of off-diagonal corners. There are no corner subalgebras, the complementary idempotent $e_t-\tilde\Pi$ contributes the line $\mathbb{B}_0$ and not a second central piece, and the middle space is a single two-dimensional space carrying no product of its own. The quadratic Peirce calculus is the parent's, and it is not available here.
 
@@ -180,13 +180,13 @@ Three things the parent product has are absent, and the absences belong to the b
 
 - **No projector calculus.** A non-trivial idempotent does not give a projector (§*The Multiplication Operator*), so there is no image–kernel splitting of the type $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B}$ and no ideal generated by an idempotent. The unit gives the identity operator and the origin the zero operator, and those are the only projectors produced by idempotents.
 - **No associative Peirce calculus.** The Peirce theory is the cubic one of §*The Idempotents and the Cubic Peirce Theory*: one middle space, no corners, no matrix units, and no module theory over the algebra. The element theory of the block — the generic trace and norm, the inverse, the quadratic representation — is the substitute, and it is a different subject.
-- **No group of units.** The invertible elements are not closed under $\bullet$: the pair $\vec e_x,\vec e_y$ is invertible, $\langle \vec e_x\rangle_{\natural}=\langle \vec e_y\rangle_{\natural}=1$, with product $\vec e_x\bullet \vec e_y=0$. The block also has its own zero-divisor set, strictly larger than the algebra's isotropic cone, and it is **not** the complement of the invertible elements: $\vec e_x$ is a zero divisor, $\vec e_x\bullet \vec e_y=0$, and yet is invertible. The criterion $\det L^{\bullet}_{\tilde Q}=Q_t^2\langle\tilde Q\rangle_{\natural}=0$ is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and it separates the two notions.
+- **No group of units.** The invertible elements are not closed under $\bullet$: the pair $\vec e_x,\vec e_y$ is invertible, $\langle \vec e_x\rangle_{\natural}=\langle \vec e_y\rangle_{\natural}=1$, with product $\vec e_x\bullet \vec e_y=0$. The block also has its own zero-divisor set, strictly larger than the algebra's isotropic cone, and it is **not** the complement of the invertible elements: $\vec e_x$ is a zero divisor, $\vec e_x\bullet \vec e_y=0$, and yet is invertible. The criterion $\det L^{\bullet}_{\tilde Q}=Q_t^2\langle\tilde Q\rangle_{\natural}=0$ is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and it separates the two notions.
 
 ## The Isolation among the Twelve
 
 One law separates the block from the other eleven structures, and it is stated here to close the article, not to enumerate them. The block is **commutative** and satisfies the **Jordan identity**, equivalently the operator identity of §*The Multiplication Operator*; a commutative product with the Jordan identity is a **Jordan product**, and the block is the only Jordan product of the twelve.
 
-**Theorem.** Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the symmetric plain product is the only one that is commutative and satisfies the Jordan identity.
+**Theorem.** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric plain product is the only one that is commutative and satisfies the Jordan identity.
 
 *Proof.* The twelve are generated from the plain product by twisting a slot with a conjugation or by (anti)symmetrising, and each of the three operations destroys at least one clause of the criterion. The four general products are non-commutative, the four antisymmetric parts are non-commutative, the symmetric quaternionic product is commutative but fails the identity, and the two symmetric sesquilinear products are only conjugate-commutative and fail the identity. The block is commutative by construction and satisfies the identity by Jordan-admissibility, so it alone meets both clauses.
 
@@ -226,7 +226,7 @@ The symmetric plain product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\til
 | $T(\tilde Q)=2Q_t$, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the generic trace and the generic norm |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the Jordan inverse, the algebra inverse |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic cone, the origin and the zero-divisor cone |
-| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* |
+| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 
@@ -235,4 +235,4 @@ The symmetric plain product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\til
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* (`articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.md`), for the element theory the law delivers.
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.md`), for the operators, the derivations and the structure algebra.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the Jordan-admissibility of an associative algebra.
-- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve operations and the isolation table.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve operations and the isolation table.

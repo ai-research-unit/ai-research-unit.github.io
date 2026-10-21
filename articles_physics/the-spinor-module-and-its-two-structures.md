@@ -22,8 +22,9 @@ The article's thesis is that the two structures are **not two views of one objec
 | The module theory: the simple module, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ | [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 | The column ideal of a matrix ring: one idempotent and $n-1$ nilpotents | [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
 | The canonical Hermitian form on the regular module, its positivity and its Gram matrix | [The Canonical Hermitian Form on the Regular Module of the Biquaternioid Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternioid-algebra.html) |
-| The four forms of the twelve products, their Gram matrices and their signatures | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) |
-| The forms and the algebraic norms of the products, and their restrictions | [The Products, Their Forms and Their Algebraic Norms](../articles_maths/the-products-their-forms-and-their-algebraic-norms.html) |
+| The four forms of the twelve products, their Gram matrices and their signatures | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
+| The forms of the products, their Gram matrices and their isometry groups | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
+| The algebraic norms of the products | [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html) |
 | The embedding of the algebra in $\operatorname{End}_{\mathbb{C}}(S)$ | [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 
 ## The Carrier and Its Forced Basis

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$, the anti-involution whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian subspace $\mathbb{M}_-$ (*The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces*). Every element $\tilde{Q}$ of the algebra defines a **two-sided operator**, the sandwich
+Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$, the anti-involution whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian subspace $\mathbb{M}_-$ (*The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, *Introduction to the Remarkable Subspaces*). Every element $\tilde{Q}$ of the algebra defines a **two-sided operator**, the sandwich
 
 $$
 \Theta_{\tilde Q_1}\colon \mathbb{B}\longrightarrow\mathbb{B},\qquad \Theta_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1\,\tilde Q_2\,\tilde Q_1^{*},
@@ -12,7 +12,7 @@ which is the dagger sandwich $\mathrm{H}_{\tilde Q_1}$ of the corpus. This artic
 
 The result that organises the article is that **the operator is quadratic in the parameter, while the adjoint is linear in it**. Composition reads $\Theta_{\tilde Q_1\tilde Q_2}=\Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2}$ on the nose, but $\Theta_{A\tilde Q_1}=\lvert A\rvert^{2}\Theta_{\tilde Q_1}$ for a central $A$: the map $\tilde Q_1\mapsto\Theta_{\tilde Q_1}$ is multiplicative and not additive, and it is blind to the central phase. Two consequences are worked out. The Hermitian and the anti-Hermitian elements **give the same operators**, because $\Theta_{-\tilde Q_1}=\Theta_{\tilde Q_1}$ and $\Theta_{i\tilde Q_1}=\Theta_{\tilde Q_1}$; and a two-sided operator is **never skew-adjoint** unless it vanishes, because the sandwich cannot change the sign of the quadratic form it carries. Both contrast with the one-sided case of the companion article, where the parameter enters linearly and the two sectors give skew and self-adjoint operators respectively.
 
-The article is pure algebra. The algebra, the dagger and the remarkable subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; the operator read in coordinates or on the spinor module is *The Four-Vector Operator Representation of Biquaternions* and *The Twisted Spinor Operator Representation of Biquaternions*, and the sandwich in the regular basis is *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
+The article is pure algebra. The algebra, the dagger and the remarkable subspaces are *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; the operator read in coordinates or on the spinor module is *The Four-Vector Operator Representation of Biquaternions* and *The Twisted Spinor Operator Representation of Biquaternions*, and the sandwich in the regular basis is *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
 
 ## The Scalar Form and the Definite Structure of the Algebra
 
@@ -22,7 +22,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q_2^{*}\tilde Q_1\bigr).
 $$
 
-In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of *The Biquaternioid as a Vector Space over $\mathbb{C}$*, with $\tilde Q_1=\sum_{\mu}Q_{1,\mu}e_{\mu}$ and $\tilde Q_2=\sum_{\mu}Q_{2,\mu}e_{\mu}$,
+In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, with $\tilde Q_1=\sum_{\mu}Q_{1,\mu}e_{\mu}$ and $\tilde Q_2=\sum_{\mu}Q_{2,\mu}e_{\mu}$,
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} Q_{2,\mu}^{*}Q_{1,\mu},
@@ -40,7 +40,7 @@ and, as a function of the pair $(\tilde Q_1,\tilde Q_2)$, the form is $\mathbb{C
 
 *Proof.* The first identity is the involution property of the dagger, the second is the display above, and the two linearities are the definitions.
 
-**Remark (two forms, two roles).** The form $\langle\cdot,\cdot\rangle_{*}$ is the **positive definite** form of the algebra, of signature $(4,0)$ over $\mathbb{C}$; the quaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}Q_{\mu}^{2}$ of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* is a **complex quadratic** form, indefinite and isotropic on the null cone. The operator theory of this article is built on the first, and the two must not be interchanged. In particular the Gram matrix of $\langle\cdot,\cdot\rangle_{*}$ in the basis is the identity, $\langle e_{\nu},e_{\mu}\rangle_{*}=\delta_{\mu\nu}$, so the basis is orthonormal and the two coordinate blocks $\{e_t\}$ and $\{\vec e_x,\vec e_y,\vec e_z\}$ are orthogonal. There is no such orthogonality for $\langle\cdot,\cdot\rangle_{\natural}$.
+**Remark (two forms, two roles).** The form $\langle\cdot,\cdot\rangle_{*}$ is the **positive definite** form of the algebra, of signature $(4,0)$ over $\mathbb{C}$; the quaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}Q_{\mu}^{2}$ of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* is a **complex quadratic** form, indefinite and isotropic on the null cone. The operator theory of this article is built on the first, and the two must not be interchanged. In particular the Gram matrix of $\langle\cdot,\cdot\rangle_{*}$ in the basis is the identity, $\langle e_{\nu},e_{\mu}\rangle_{*}=\delta_{\mu\nu}$, so the basis is orthonormal and the two coordinate blocks $\{e_t\}$ and $\{\vec e_x,\vec e_y,\vec e_z\}$ are orthogonal. There is no such orthogonality for $\langle\cdot,\cdot\rangle_{\natural}$.
 
 ## The Operator of an Element
 
@@ -255,8 +255,8 @@ The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the
 ## Further Reading
 
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the Hermitian adjoint side by side with the other three adjoints and for the reading of the suffix of the family as the name of the adjoint
-- *The Biquaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
-- *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternioid-algebra-with-hermitian-adjoint.md`), for the quaternion norm, the invertibility criterion and the group of units, to be kept apart from the positive definite form of this article.
+- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
+- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the quaternion norm, the invertibility criterion and the group of units, to be kept apart from the positive definite form of this article.
 - *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), the companion article, where the parameter enters linearly and the sectors give skew and self-adjoint operators.
 - *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the same operator in coordinates, the forms, positivity and the slice.
 - *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra* (`articles_maths/the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra.md`), for the same construction with the Krein adjoint $Q^{\dagger}=JQ^{*}J$ instead of $Q^{*}$, where the sandwich is an automorphism for every $J$-unitary parameter.

@@ -42,7 +42,7 @@ $$
 
 *Proof.* $\tau(e_t,e_t)=\mathrm{Sc}(e_t)=1$ and $\tau(\vec e_\mu,\vec e_\mu)=\mathrm{Sc}(\vec e_\mu\bullet \vec e_\mu)=\mathrm{Sc}(-e_t)=-1$ for $\mu=1,2,3$; the mixed terms vanish because $\vec e_\mu\bullet \vec e_\nu$ is pure for $\mu\neq\nu$.
 
-**Remark (the trace form is not the norm).** The trace form is indefinite and has the isotropic cone $q_t^2=|\vec q|^2$; the norm $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$ is positive definite and vanishes only at the origin. **The two forms of the block must not be confused**: the norm polarises to the quaternion form (signature $(4,0)$) and the quadratic trace polarises to the trace form (signature $(1,3)$), as *Norm and Invertibility in the Symmetric Plain Algebra* records. In particular the isotropic cone of the trace form is **not** the zero-divisor set, which is the pure set $q_t=0$ of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+**Remark (the trace form is not the norm).** The trace form is indefinite and has the isotropic cone $q_t^2=|\vec q|^2$; the norm $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$ is positive definite and vanishes only at the origin. **The two forms of the block must not be confused**: the norm polarises to the quaternion form (signature $(4,0)$) and the quadratic trace polarises to the trace form (signature $(1,3)$), as *Norm and Invertibility in the Symmetric Plain Algebra* records. In particular the isotropic cone of the trace form is **not** the zero-divisor set, which is the pure set $q_t=0$ of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### The Radical
 
@@ -105,7 +105,7 @@ The trace form of the block is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q
 
 - *Introduction to the Symmetric Plain Algebra*, for the product.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the norm, the quaternion form and the contrast with the trace form.
-- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the isotropic cone of the trace form against the zero-divisor set.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the isotropic cone of the trace form against the zero-divisor set.
 - *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category, for the operators and the derivations that are self-adjoint and skew.
 - *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, for the plain and quaternionic forms.
 - *Jordan Algebras*, for the trace form of a Jordan algebra and its invariance.

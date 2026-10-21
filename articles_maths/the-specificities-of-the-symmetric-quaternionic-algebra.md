@@ -42,7 +42,7 @@ $$
 
 **Proof.** If $\circ$ satisfies the scalar law, its value is central, so it reads $\beta(\tilde Q_1,\tilde Q_2)e_t$ with $\beta$ the scalar coefficient; the bilinearity of the product gives the bilinearity of $\beta$, and its commutativity gives the symmetry. Conversely a product of the displayed shape has central values by construction and is commutative because $\beta$ is symmetric.
 
-**Theorem (the block is the only structure with the scalar law).** The symmetric quaternionic product satisfies the scalar law, with $\beta=N$; and among the twelve operations of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* it is the only one that does.
+**Theorem (the block is the only structure with the scalar law).** The symmetric quaternionic product satisfies the scalar law, with $\beta=N$; and among the twelve operations of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* it is the only one that does.
 
 **Proof.** The product is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ with $\langle\cdot,\cdot\rangle_{\natural}$ symmetric, bilinear and central-valued by *Introduction to the Symmetric Quaternionic Algebra*, so the law holds; the uniqueness is §*The Isolation among the Twelve*, where each other operation is exhibited with a witness of the failure of clause 1 or of clause 2.
 
@@ -146,7 +146,7 @@ since $\vec e_x\bullet e_t=\langle \vec e_x,e_t\rangle_{\natural}e_t=0$ while $\
 
 The family of specificities articles states, for each block, one law that the block has and the other eleven do not, proves it, and reads the block's theory from it. The law of this block is the **scalar law** of §*The Exclusive Law of the Block*: commutative with central values, equivalently $\tilde Q_1\circ\tilde Q_2=\beta(\tilde Q_1,\tilde Q_2)e_t$ for a symmetric bilinear form $\beta$.
 
-**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the symmetric quaternionic product is the only one that satisfies the scalar law.
+**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric quaternionic product is the only one that satisfies the scalar law.
 
 *Proof.* The twelve are generated from the four general products by symmetrising or antisymmetrising. The four general products are non-commutative, so they fail the first clause; the four antisymmetrisations are non-commutative as well. Among the four symmetrisations, the symmetric plain product is commutative and not central-valued, the vector part of the plain product surviving the symmetrisation; the symmetric plain sesquilinear product is central-valued and not commutative, its conjugation conjugating a scalar; and the symmetric quaternionic sesquilinear product fails both. The symmetric quaternionic product is commutative and central-valued by the governing formula, and it alone meets both clauses.
 

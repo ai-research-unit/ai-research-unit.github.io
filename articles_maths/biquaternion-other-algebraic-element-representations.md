@@ -12,7 +12,7 @@ The word *representation* is used here in the sense of a concrete realization of
 
 The treatment is algebraic and self-contained. The Clifford identification is established here; the change of scalars that exhibits it as a real reading of the algebra is *The Realification and the Effect of the Change of Scalars*, and the inner automorphisms are placed here from *Biquaternion Automorphisms and Derivations*. The array structure is treated nowhere else.
 
-Throughout, the conventions are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Introduction to the Biquaternion Algebra*: the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the central scalar imaginary $i$ with $i^2=-1$, and
+Throughout, the conventions are those of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and *Introduction to the Biquaternion Algebra*: the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the central scalar imaginary $i$ with $i^2=-1$, and
 
 $$
 \tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu,\qquad Q_\mu=q_\mu+iq'_\mu\in\mathbb{C},\quad q_\mu,q'_\mu\in\mathbb{R}.

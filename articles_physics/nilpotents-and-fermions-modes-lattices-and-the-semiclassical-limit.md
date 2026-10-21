@@ -26,7 +26,7 @@ One caution governs the whole article. The nilpotent is **not** the physical nul
 | The norm, its multiplicativity and the inverse | [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html) |
 | The Peirce decomposition and the orthogonal idempotents | [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The $2\times2$ matrix model and the trace-free singular matrices | [Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
-| The root sets across the twelve products | [Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.html) |
+| The root sets across the twelve products | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 
 ## The Algebraic Object
 

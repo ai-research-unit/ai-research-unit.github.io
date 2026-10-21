@@ -25,6 +25,9 @@ The Unit Group, the Cone and the Orders (Topology), Derivatives, Fields and Tran
 
 
 
+1. Modulus–unit polar decomposition 
+2. Rational-chart polar decomposition 
+3. Exponential polar decomposition  
 
 
 
@@ -7928,3 +7931,361 @@ but they are not operations on the finite-dimensional Bloch ball.
 
 
 
+
+
+
+
+
+
+
+
+
+BLOCK 1 — LIE ALGEBRAS: THE CAYLEY TRANSFORM AS A LIE ALGEBRA → LIE GROUP MAP
+================================================================================
+
+For a matrix Lie group G with Lie algebra g, the exponential map
+exp: g → G is the standard bridge from algebra to group. The Cayley
+transform is an alternative, purely rational bridge:
+
+    C(X) = (I - X)^(-1) (I + X),
+
+defined for those X in g such that I - X is invertible (i.e. 1 is not
+an eigenvalue of X).
+
+Why it lands in the group
+-------------------------
+Suppose G preserves a bilinear form η, so X in g satisfies
+
+    X^T η + η X = 0    <=>    X^T η = - η X.
+
+Then C(X)^T η C(X) = η, so C(X) in G. The proof is purely algebraic:
+
+    C(X)^T η C(X)
+      = (I+X)^T (I-X)^(-T) η (I-X)^(-1) (I+X).
+
+Using (I-X)^(-T) = (I-X^T)^(-1) and X^T = -η X η^(-1), one gets
+
+    I + X^T = η (I - X) η^(-1),
+    I - X^T = η (I + X) η^(-1).
+
+Substituting, and using that (I+X)^(-1) and (I-X)^(-1) commute
+(both are polynomials in X),
+
+    C(X)^T η C(X)
+      = η (I-X)(I+X)^(-1)(I-X)^(-1)(I+X)
+      = η (I - X^2)(I - X^2)^(-1)
+      = η.
+
+So the Cayley transform is a rational parametrization of the group,
+exactly analogous to the quaternion formula u = (1+t)/(1-t).
+
+Compact vs. non-compact cases
+-----------------------------
+- Compact case (SU(2), SO(3)): X is skew-Hermitian/skew-symmetric,
+  eigenvalues are purely imaginary, so 1 is never an eigenvalue. The
+  Cayley transform is defined on all of g. Its image is G minus the
+  "antipodal" elements (SO(3) minus rotations by π; SU(2) minus -I).
+
+- Non-compact case (Lorentz group): X can have real eigenvalues
+  (boosts), so I - X can be singular. The Cayley transform is defined
+  only on a subset of g, and its image covers only part of G.
+
+Relation to the exponential
+---------------------------
+For a single generator X with X^2 = -θ^2 P (P a projection),
+
+    C(X) = exp(2 arctan(θ) X̂),
+
+but this identity uses transcendental functions. The point of the
+Cayley transform is that C(X) itself is rational: no limits, no series,
+no arctan. It works in the hyperbolic (real eigenvalues) and complex
+cases as well as the compact case.
+
+
+
+
+
+
+
+
+
+
+
+
+
+BLOCK 2 — THE LORENTZ GROUP O(1,3)
+================================================================================
+
+Lie algebra
+-----------
+The Lorentz group preserves the Minkowski metric
+
+    η = diag(-1, 1, 1, 1)      (up to convention).
+
+Its Lie algebra is
+
+    so(1,3) = { X : X^T η + η X = 0 }.
+
+It decomposes into:
+  - Rotations J_i (compact part, generating SO(3)),
+  - Boosts   K_i (non-compact part),
+
+with commutation relations
+
+    [J_i, J_j] = ε_ijk J_k,
+    [J_i, K_j] = ε_ijk K_k,
+    [K_i, K_j] = -ε_ijk J_k.
+
+Cayley transform of a Lorentz Lie algebra element
+-------------------------------------------------
+For X in so(1,3) with I - X invertible,
+
+    Λ = C(X) = (I - X)^(-1) (I + X)
+
+is a Lorentz transformation:
+
+    Λ^T η Λ = η.
+
+This is the direct analogue of the quaternion formula
+u = (1+t)/(1-t). The proof is exactly the algebraic computation of
+Block 1, using X^T η = -η X.
+
+What the Cayley transform covers
+--------------------------------
+- Rotations: eigenvalues of X are 0, ±iθ. Since 1 is never an
+  eigenvalue, the Cayley transform is defined for all rotation
+  generators. Its image covers rotations by angle < π; it misses
+  rotations by π (which would need an "infinite" Lie algebra element).
+
+- Boosts: a boost generator has eigenvalues 0, ±β with β real. The
+  Cayley transform is defined only when β ≠ 1 (finite rapidity,
+  speed < c). It misses the light-like limit β = 1.
+
+- Mixed transformations: defined whenever 1 is not in spec(X); the
+  image is the subset of the Lorentz group reachable by finite Lie
+  algebra elements without hitting a singular point.
+
+So the Cayley transform gives a rational chart on the Lorentz group,
+not a global parametrization — the non-compact analogue of the
+quaternion Cayley chart missing u = -1.
+
+
+
+
+
+
+
+
+
+
+
+
+BLOCK 3 — THE SPECIFIC FORMULA  C(F̃) = (I - q̃ F̃/2m)^(-1) (I + q̃ F̃/2m)
+================================================================================
+
+Where it comes from
+-------------------
+This formula appears when one wants to construct a Lorentz
+transformation directly from an electromagnetic field.
+
+  - F̃ is (proportional to) the dual electromagnetic field tensor,
+        F̃^{μν} = (1/2) ε^{μνρσ} F_{ρσ}.
+  - q is the charge, m the mass of the particle.
+  - The combination q̃ F̃ / 2m is a dimensionless element of so(1,3)
+    (after identifying the field tensor with a Lie algebra element via
+    the isomorphism so(1,3) ≅ Λ^2 R^4).
+
+The Cayley transform then produces a Lorentz transformation Λ
+associated with the field:
+
+    Λ = (I - q̃ F̃ / 2m)^(-1) (I + q̃ F̃ / 2m).
+
+Since q̃ F̃ / 2m satisfies the Lorentz Lie algebra condition, the
+algebraic proof of Block 1 applies verbatim: Λ^T η Λ = η.
+
+Physics applications
+--------------------
+- Relativistic particle dynamics: constructing the Lorentz
+  transformation relating the particle's rest frame to the lab frame
+  in the presence of an electromagnetic field.
+
+- Field-induced Lorentz transformations: in some formulations of
+  classical electrodynamics and quantum mechanics, the exponential
+  (or Cayley transform) of the field tensor generates the Lorentz
+  transformation experienced by a charged particle.
+
+- Rational parametrization of Lorentz transformations: avoiding
+  transcendental functions (the exponential map on the Lorentz group
+  involves sinh, cosh, etc.) in favor of rational expressions, useful
+  for algebraic and computational purposes.
+
+The key point: F̃ is a Lie algebra element (a 4×4 matrix satisfying
+the Lorentz condition), and the Cayley transform maps it to a Lorentz
+transformation, exactly as in the general theory of Block 1.
+
+Why this matters practically
+----------------------------
+  Feature                | Exponential map         | Cayley transform
+  -----------------------+-------------------------+------------------
+  Transcendental funcs   | yes (sin, cos, sinh...) | no (rational)
+  Computational cost     | series / trig eval      | matrix inv + mult
+  Covers entire group?   | yes (connected comp.)   | no (misses points)
+  Preserves constraint?  | yes                     | yes
+  Algebraic/polynomial?  | no                      | yes
+
+So the Cayley transform is useful when you want:
+  1. Rational/algebraic parametrizations (polynomial system solving
+     in computer vision, robotics, algebraic geometry).
+  2. Constraint-preserving numerical updates (automatic stay on the
+     group manifold, no renormalization).
+  3. To avoid transcendental functions (symbolic computation,
+     algebraic geometry, certain numerical schemes).
+  4. A Lie algebra → Lie group map that is purely algebraic — the
+     same reason the quaternion formula u = (1+t)/(1-t) is useful.
+
+The price: the Cayley transform is only a local/chart-wise
+parametrization. It misses elements "too far" from the identity
+(antipodal points in the compact case, the light-like limit in the
+Lorentz case). The exponential map covers the entire connected
+component but needs transcendental functions.
+
+
+
+
+
+
+
+
+
+
+TECHNICAL NOTE — H: TWO REGULAR REPRESENTATIONS, SIX MATRIX-LEVEL CONSTRUCTIONS
+================================================================================
+
+Setting
+-------
+H = R·1 ⊕ R·i ⊕ R·j ⊕ R·k,   i² = j² = k² = ijk = −1.
+Basis B = (1, i, j, k).  For q ∈ H and x ∈ H define
+
+    L(q)(x) = q x,          R(q)(x) = x q.
+
+Both are R-linear endomorphisms of H ≅ R⁴, hence 4×4 real matrices:
+
+    L, R : H → M₄(R).
+
+Basic facts
+-----------
+(L1) L is an injective R-algebra homomorphism:
+         L(qp) = L(q) L(p),        L(1) = I₄.
+(L2) R is an injective R-algebra anti-homomorphism:
+         R(qp) = R(p) R(q),        R(1) = I₄.
+     Equivalently, q ↦ R(q)ᵀ = R(q̄) is an injective homomorphism
+     (transpose reverses order; R(q)ᵀ = R(q̄)).
+(L3) L(q)ᵀ = L(q̄),   R(q)ᵀ = R(q̄).     Transposition = conjugation.
+(L4) Mutual commutants:   R(H) = L(H)′,   L(H) = R(H)′.
+(L5) L(H) ∩ R(H) = R·I₄  (scalars only).
+(L6) |u| = 1  ⇒  L(u), R(u) ∈ SO(4).
+
+Why L(H) ≠ R(H)
+---------------
+H is non-commutative: there exist q, p with qp ≠ pq. Then
+
+    L(q)L(p) = L(qp) ≠ L(pq) = L(p)L(q),
+
+while
+
+    R(q)R(p) = R(pq) ≠ R(qp) = R(p)R(q).
+
+So L(H) and R(H) are distinct 4-dimensional subalgebras of M₄(R).
+They are exchanged by transposition (L3): L(H)ᵀ = L(H̄) = L(H) as a
+set, but the isomorphism L(H) ≅ H is a homomorphism while the
+isomorphism R(H) ≅ H is an anti-homomorphism.  Geometrically L(S³)
+and R(S³) are the two S³ factors in
+
+    SO(4) ≅ (S³_L × S³_R) / {±(1,1)},
+
+the left-isoclinic and right-isoclinic rotations respectively.
+
+The three polar factorizations of q
+-----------------------------------
+(F1) Modulus–unit:        q = |q| u,             |u| = 1.
+(F2) Rational (Cayley):   q = |q| (1+t)/(1−t),   t ∈ Im H.
+(F3) Exponential:         q = |q| e^{nθ}
+                            = |q| (cos θ + n sin θ),
+                          n ∈ Im H, |n| = 1.
+
+Each (Fk) is a statement about the element q alone; it does not
+depend on any representation.
+
+The six matrix-level constructions
+----------------------------------
+Apply L and R to each factorization.  Write S = |q|.
+
+(F1-L)  L(q) = S · L(u),     L(u) ∈ SO(4) left-isoclinic.
+(F1-R)  R(q) = S · R(u),     R(u) ∈ SO(4) right-isoclinic.
+        Polar decomposition of the 4×4 matrix into scalar ×
+        orthogonal, once on each isoclinic factor.
+
+(F2-L)  L(q) = S · (I₄ + L(t)) (I₄ − L(t))⁻¹,
+        L(t) ∈ so(4) left-isoclinic skew; Cayley transform on the
+        left-isoclinic factor.
+(F2-R)  R(q) = S · (I₄ + R(t)) (I₄ − R(t))⁻¹,
+        R(t) ∈ so(4) right-isoclinic skew; Cayley transform on the
+        right-isoclinic factor.
+        Chart on SO(4); each misses the antipodal point −I₄.
+
+(F3-L)  L(q) = S · e^{θ L(n)} = S (cos θ I₄ + sin θ L(n)),
+        one-parameter subgroup of left-isoclinic SO(4);
+        Lie algebra element θ L(n) ∈ so(4).
+(F3-R)  R(q) = S · e^{θ R(n)} = S (cos θ I₄ + sin θ R(n)),
+        one-parameter subgroup of right-isoclinic SO(4);
+        Lie algebra element θ R(n) ∈ so(4).
+
+Count:  2 representation maps (L, R)  ×  3 polar factorizations
+        = 6 matrix-level constructions.
+
+What the pair (L, R) adds
+-------------------------
+- (F1) together:  q = |q| u maps to the pair (L(u), R(u)) ∈ S³_L × S³_R,
+  and SO(4) ≅ (S³_L × S³_R)/{±(1,1)}.  The polar factorization selects
+  the diagonal S³ = {(L(u), R(u)) : u ∈ S³} ⊂ S³_L × S³_R.  Left and
+  right isoclinic rotations are the two halves; the quaternionic polar
+  factorization is the diagonal.
+- (F2) together:  two Cayley charts, one on each isoclinic factor;
+  each misses −I₄, and the two charts are exchanged by transposition.
+- (F3) together:  two one-parameter subgroups, one in each isoclinic
+  factor; the quaternionic exponential e^{nθ} is the diagonal
+  combination (L(e^{nθ}), R(e^{nθ})).
+
+Other representations as further lenses
+---------------------------------------
+L and R are not the only representations.  For example the Pauli
+representation ρ : H → M₂(C),
+
+    ρ(1) = I₂,   ρ(i) = iσ₁,   ρ(j) = iσ₂,   ρ(k) = iσ₃   (up to convention),
+
+is an injective C-algebra homomorphism with ρ(H) = M₂(C), and
+|u| = 1 ⇒ ρ(u) ∈ SU(2).  Under ρ the same three factorizations become
+
+    ρ(q) = |q| ρ(u),                    ρ(u) ∈ SU(2),
+    ρ(q) = |q| (I₂ + ρ(t)) (I₂ − ρ(t))⁻¹,   ρ(t) Hermitian traceless,
+    ρ(q) = |q| e^{θ ρ(n)},              ρ(n) Hermitian traceless, |n| = 1,
+
+i.e. the polar decomposition, the Cayley chart, and the exponential of
+2×2 complex matrices — the standard SU(2)/qubit pictures.  Direct sums,
+tensor products, and induced representations give further lenses; each
+realizes the same three factorizations in a different matrix group
+(SO(4), SU(2), U(n), …) with its own Cayley and exponential
+construction.
+
+Invariant vs. realization
+-------------------------
+- The polar factorization q = |q| u (and its Cayley and exponential
+  refinements) is representation-independent: it is a statement in H.
+- A representation ρ transports it to ρ(q) = |q| ρ(u), etc.; the
+  factorization is preserved, the group and the matrix construction
+  change.
+- Hence: two regular representation maps L, R give six matrix-level
+  constructions; infinitely many other representations give infinitely
+  many further realizations of the same three factorizations, each
+  revealing different geometry (isoclinic rotations, spinors, spectral
+  phases, …).
