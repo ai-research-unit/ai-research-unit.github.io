@@ -73,7 +73,7 @@ $$
 $$
 the set of elements the multiplication by $\breve Q_{1}$ kills. The result is a <strong>dichotomy</strong>: the annihilator of a <strong>unit</strong> is $\{0\}$, and the annihilator of a <strong>zero divisor</strong> is a whole idempotent line,
 $$
-\operatorname{Ann}(Q_{++}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{--}\Pi_-)=\mathbb{C}\Pi_+\qquad(Q_{++},Q_{--}\neq0),
+\operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+\qquad(Q_{+},Q_{-}\neq0),
 $$
 the <strong>other</strong> line, of real dimension two. The annihilator of $0$ is the whole algebra. Because the algebra is commutative, the left and the right annihilators coincide, and the annihilator of an element is a two-sided ideal; the two maximal ideals $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are the annihilators of each other.</p>
 <p>The article also reads the <strong>two-sided annihilator of the structure</strong>, the set of elements that annihilate the algebra, and records that it is $\{0\}$ because the algebra is unital. The two results are different: the annihilators of the elements are the two lines, and the annihilator of the algebra is trivial.</p>
@@ -95,11 +95,11 @@ is the <strong>annihilator</strong> of $\breve Q_{1}$. Since the multiplication 
 <p><em>Proof.</em> If $\breve Q_{1}\breve Q_{2}=0$ then multiplying by $\breve Q_{1}^{-1}$ gives $\breve Q_{2}=\breve Q_{1}^{-1}(\breve Q_{1}\breve Q_{2})=0$, and the inverse exists by <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>. So no nonzero element is annihilated by a unit.</p>
 <h3 id="the-annihilator-of-a-zero-divisor">The Annihilator of a Zero Divisor</h3>
 <p><strong>The annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two.</strong></p>
-<p><strong>Theorem (the annihilator of a line).</strong> For $Q_{++},Q_{--}\in\mathbb{C}^{\times}$,
+<p><strong>Theorem (the annihilator of a line).</strong> For $Q_{+},Q_{-}\in\mathbb{C}^{\times}$,
 $$
-\operatorname{Ann}(Q_{++}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{--}\Pi_-)=\mathbb{C}\Pi_+.
+\operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+.
 $$</p>
-<p><em>Proof.</em> Write $\breve Q_{2}=Q_{2+}+jQ_{2-}$ and read it in the idempotent coordinates $\breve Q_{2}=Q_{2++}\Pi_++Q_{2--}\Pi_-$, with $Q_{2++}=Q_{2+}+Q_{2-}$ and $Q_{2--}=Q_{2+}-Q_{2-}$. Then $(Q_{++}\Pi_+)\breve Q_{2}=Q_{++}Q_{2++}\Pi_+$, because $\Pi_+^{2}=\Pi_+$ and $\Pi_+\Pi_-=0$ (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>), and this is zero iff $Q_{2++}=0$, since $Q_{++}\neq0$ and a complex number has no zero divisors. The condition $Q_{2++}=0$ is $\breve Q_{2}=Q_{2+}-Q_{2+}j=Q_{2+}(1-j)=Q_{2--}\Pi_-$ with $Q_{2--}=2Q_{2+}\in\mathbb{C}$, that is $\breve Q_{2}\in\mathbb{C}\Pi_-$. The same computation on the other line.</p>
+<p><em>Proof.</em> Write $\breve Q_{2}=Q_{2\blacktriangle}+jQ_{2\blacktriangledown}$ and read it in the idempotent coordinates $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$, with $Q_{2+}=Q_{2\blacktriangle}+Q_{2\blacktriangledown}$ and $Q_{2-}=Q_{2\blacktriangle}-Q_{2\blacktriangledown}$. Then $(Q_{+}\Pi_+)\breve Q_{2}=Q_{+}Q_{2+}\Pi_+$, because $\Pi_+^{2}=\Pi_+$ and $\Pi_+\Pi_-=0$ (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>), and this is zero iff $Q_{2+}=0$, since $Q_{+}\neq0$ and a complex number has no zero divisors. The condition $Q_{2+}=0$ is $\breve Q_{2}=Q_{2\blacktriangle}-Q_{2\blacktriangle}j=Q_{2\blacktriangle}(1-j)=Q_{2-}\Pi_-$ with $Q_{2-}=2Q_{2\blacktriangle}\in\mathbb{C}$, that is $\breve Q_{2}\in\mathbb{C}\Pi_-$. The same computation on the other line.</p>
 <p><strong>Corollary (the two lines annihilate each other).</strong> The two maximal ideals are the annihilators of each other,
 $$
 \operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+,
@@ -109,7 +109,7 @@ and each is a complex line of real dimension two.</p>
 <h3 id="the-annihilators-of-zero-and-of-the-subsets">The Annihilators of Zero and of the Subsets</h3>
 <p><strong>The annihilator of $0$ is the whole algebra, and the annihilator of the set of all zero divisors is $\{0\}$.</strong></p>
 <p><strong>Theorem.</strong> $\operatorname{Ann}(0)=\mathbb{B}_{\mathrm{r}}$, and $\operatorname{Ann}(\mathcal{N}\cup\{0\})=\{0\}$, where $\mathcal{N}$ is the null cone.</p>
-<p><em>Proof.</em> $0\cdot \breve Q_{2}=0$ for every $\breve Q_{2}$, so the annihilator of $0$ is the whole algebra. If $\breve Q_{2}$ annihilates every zero divisor, then in particular $\breve Q_{2}\Pi_+=0$ and $\breve Q_{2}\Pi_-=0$; expanding $\breve Q_{2}=Q_{2++}\Pi_++Q_{2--}\Pi_-$ gives $Q_{2++}=Q_{2--}=0$, so $\breve Q_{2}=0$.</p>
+<p><em>Proof.</em> $0\cdot \breve Q_{2}=0$ for every $\breve Q_{2}$, so the annihilator of $0$ is the whole algebra. If $\breve Q_{2}$ annihilates every zero divisor, then in particular $\breve Q_{2}\Pi_+=0$ and $\breve Q_{2}\Pi_-=0$; expanding $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$ gives $Q_{2+}=Q_{2-}=0$, so $\breve Q_{2}=0$.</p>
 <h2 id="the-two-sided-annihilator-of-the-structure">The Two-Sided Annihilator of the Structure</h2>
 <p><strong>The two-sided annihilator of the algebra is $\{0\}$, because the algebra is unital.</strong></p>
 <p><strong>Definition.</strong> The <strong>two-sided annihilator of the structure</strong> is
@@ -136,12 +136,12 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$Q_{++}\Pi_+$, $Q_{++}\neq0$</td>
+<td>$Q_{+}\Pi_+$, $Q_{+}\neq0$</td>
 <td>$\mathbb{C}\Pi_-$</td>
 <td>$2$</td>
 </tr>
 <tr>
-<td>$Q_{--}\Pi_-$, $Q_{--}\neq0$</td>
+<td>$Q_{-}\Pi_-$, $Q_{-}\neq0$</td>
 <td>$\mathbb{C}\Pi_+$</td>
 <td>$2$</td>
 </tr>
@@ -154,12 +154,12 @@ $$</p>
 </table></div>
 <p><strong>Theorem (the four ideals).</strong> The set $\{\operatorname{Ann}(\breve Q):\breve Q\in\mathbb{B}_{\mathrm{r}}\}$ is $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}_{\mathrm{r}}\}$, which is the set of all ideals of the algebra, and it is <strong>ordered by inclusion</strong> as the two chains $\{0\}\subset\mathbb{C}\Pi_+\subset\mathbb{B}_{\mathrm{r}}$ and $\{0\}\subset\mathbb{C}\Pi_-\subset\mathbb{B}_{\mathrm{r}}$, which share their two ends.</p>
 <p><em>Proof.</em> The table is read from the three theorems above. The ideals of the algebra are the four displayed (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>, §<em>The Maximal Ideals</em>). The two lines are incomparable and both contain $\{0\}$ and are contained in $\mathbb{B}_{\mathrm{r}}$.</p>
-<p><strong>Corollary (the annihilator of the annihilator).</strong> $\operatorname{Ann}(\operatorname{Ann}(\breve Q))=\breve Q$ in the sense of ideals: the double annihilator of a unit is $\mathbb{B}_{\mathrm{r}}$, that of $Q_{++}\Pi_+$ is $\mathbb{C}\Pi_+$, that of $Q_{--}\Pi_-$ is $\mathbb{C}\Pi_-$, and that of $0$ is $\{0\}$.</p>
+<p><strong>Corollary (the annihilator of the annihilator).</strong> $\operatorname{Ann}(\operatorname{Ann}(\breve Q))=\breve Q$ in the sense of ideals: the double annihilator of a unit is $\mathbb{B}_{\mathrm{r}}$, that of $Q_{+}\Pi_+$ is $\mathbb{C}\Pi_+$, that of $Q_{-}\Pi_-$ is $\mathbb{C}\Pi_-$, and that of $0$ is $\{0\}$.</p>
 <p><em>Proof.</em> $\operatorname{Ann}(\mathbb{B}_{\mathrm{r}})=\{0\}$ and $\operatorname{Ann}(\{0\})=\mathbb{B}_{\mathrm{r}}$ by the definition; and $\operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+$ and $\operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-$ are the corollary above. Reading the table twice reproduces the two lines.</p>
 <h2 id="summary">Summary</h2>
 <p>The annihilator of an element is $\operatorname{Ann}(\breve Q_{1})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\}$; the multiplication is commutative, so the left and the right annihilators coincide and the annihilator of an element is a two-sided ideal. The annihilator of a <strong>unit</strong> is $\{0\}$; the annihilator of a nonzero element of one <strong>idempotent line</strong> is the <strong>other</strong> line,
 $$
-\operatorname{Ann}(Q_{++}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{--}\Pi_-)=\mathbb{C}\Pi_+\qquad(Q_{++},Q_{--}\neq0),
+\operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+\qquad(Q_{+},Q_{-}\neq0),
 $$
 a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the set of all zero divisors is $\{0\}$. The two maximal ideals $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are the annihilators of each other.</p>
 <p>The <strong>two-sided annihilator of the structure</strong> is trivial,
@@ -181,11 +181,11 @@ because the algebra is unital; and the three readings of the phrase — the anni
 <td>the annihilator of an element, the left and the right coinciding</td>
 </tr>
 <tr>
-<td>$\operatorname{Ann}(Q_{++}\Pi_+)=\mathbb{C}\Pi_-$</td>
+<td>$\operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-$</td>
 <td>the annihilator of a nonzero element of the first line</td>
 </tr>
 <tr>
-<td>$\operatorname{Ann}(Q_{--}\Pi_-)=\mathbb{C}\Pi_+$</td>
+<td>$\operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+$</td>
 <td>the annihilator of a nonzero element of the second line</td>
 </tr>
 <tr>

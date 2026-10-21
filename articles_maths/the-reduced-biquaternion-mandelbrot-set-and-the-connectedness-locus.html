@@ -67,14 +67,14 @@
       <div class="article-body">
         <h1 id="the-reduced-biquaternion-mandelbrot-set-and-the-connectedness-locus"><strong>The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents, and with the quadratic family $F_{C}(\breve Q)=\breve Q^{2}+C$ whose filled Julia set, in the idempotent coordinates $C=c_{1}\Pi_++c_{2}\Pi_-$, is the product</p>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ in the two central idempotents, and with the quadratic family $F_{C}(\breve Q)=\breve Q^{2}+C$ whose filled Julia set, in the idempotent coordinates $C=c_{1}\Pi_++c_{2}\Pi_-$, is the product</p>
 <p>$$
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}.
 $$</p>
 <p>The <strong>connectedness locus</strong> of the family is the set of parameters whose filled Julia set is connected; in the complex quadratic family this locus is the Mandelbrot set. The article identifies the connectedness locus of the reduced biquaternion family, reads the escape-time algorithm and its exactness, describes the role of the zero divisors in the singular parameters and the singular slices, and compares the situation with the non-commutative companion.</p>
 <p>The result is that the connectedness locus is the product of the Mandelbrot set with itself, that the escape-time algorithm is exact and decomposes into the two complex algorithms, and that there is no obstruction to the theory. The reduced biquaternion Mandelbrot set is therefore the square of the complex Mandelbrot set, a set in the two-dimensional complex parameter space; its complex line slices are degenerate, its real slices are intersections of the Mandelbrot set with translates of itself, and the bifurcation locus is the union of the two products of a boundary with the whole. The zero divisors enter through the critical set, which is the zero-divisor cone, and through the parameters whose critical orbit meets it.</p>
 <p>The article owns the connectedness locus, the bifurcation locus, the escape-time algorithm and its exactness, the singular parameters and the singular slices. The fractal and its product structure are <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>; the global decomposition is <em>The Idempotent Decomposition and the Split Fractal</em>; the slices are <em>The Slices of the Reduced Biquaternion Julia Sets</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the topological norm that measures the escape is <em>Topology and Metric for Each of the Operations</em>. The companion is <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>, where the escape criterion meets an obstruction.</p>
-<p><strong>Conventions.</strong> The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}=\{c:K_{c}\text{ connected}\}$; the reduced biquaternion family is parametrised by $C=c_{1}\Pi_++c_{2}\Pi_-$; the topological norm is $K(\breve Q)=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$.</p>
+<p><strong>Conventions.</strong> The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}=\{c:K_{c}\text{ connected}\}$; the reduced biquaternion family is parametrised by $C=c_{1}\Pi_++c_{2}\Pi_-$; the topological norm is $K(\breve Q)=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$.</p>
 <h2 id="the-mandelbrot-set-of-the-complex-family">The Mandelbrot Set of the Complex Family</h2>
 <p><strong>Proposition (the complex locus).</strong> For the complex quadratic family the connectedness locus is the Mandelbrot set</p>
 <p>$$
@@ -105,12 +105,12 @@ $$</p>
 <p><strong>Corollary (the stratified picture).</strong> The parameter space splits into the four regions according to the membership of the two coordinates in the interior, the boundary and the exterior of $\mathcal{M}$; the dynamics is hyperbolic in the region where both coordinates lie in the union of the complements of the boundary, and the bifurcation locus is the union of the two products of a boundary with the whole.</p>
 <p><strong>Proof.</strong> The classification of the complex parameter as attracting, indifferent or escaping is the classical one, and the product classification is the pair of the two.</p>
 <h2 id="the-escape-time-algorithm">The Escape-Time Algorithm</h2>
-<p><strong>Theorem (the algorithm is exact and decomposes).</strong> The orbit of $\breve Q=(Q_{++},Q_{--})$ under $F_{C}$ is bounded exactly when both coordinate orbits are bounded, and the numerical criterion is applied to each coordinate separately: with the standard escape radius $R$ of the complex family, if $|Q_{++}|>R$ or $|Q_{--}|>R$ after an iterate then the orbit escapes, and the membership of $C$ in the connectedness locus is decided coordinatewise.</p>
+<p><strong>Theorem (the algorithm is exact and decomposes).</strong> The orbit of $\breve Q=(Q_{+},Q_{-})$ under $F_{C}$ is bounded exactly when both coordinate orbits are bounded, and the numerical criterion is applied to each coordinate separately: with the standard escape radius $R$ of the complex family, if $|Q_{+}|>R$ or $|Q_{-}|>R$ after an iterate then the orbit escapes, and the membership of $C$ in the connectedness locus is decided coordinatewise.</p>
 <p><strong>Proof.</strong> The orbit is the pair of the coordinate orbits, and the norm $\langle\cdot\rangle_{\natural*}$ is unbounded exactly when one coordinate modulus is unbounded; the complex escape criterion $|\zeta|>R$ with $R$ the standard radius of the quadratic family is applied to each coordinate.</p>
 <p><strong>Corollary (the computational picture).</strong> The two-dimensional complex pictures of the reduced biquaternion locus are drawn from the two complex pictures of the Mandelbrot set; the algorithm does not need the algebra at all, only the two complex memberships, and the escape time of an element is the smaller of the escape times of its two coordinates.</p>
 <p><strong>Proof.</strong> The membership in the locus is the conjunction of the two memberships, and the escape time of an element is by definition the first iterate at which one coordinate exceeds the radius, which is the smaller of the two coordinate escape times.</p>
 <h2 id="the-zero-divisors-and-the-singular-parameters">The Zero Divisors and the Singular Parameters</h2>
-<p><strong>Proposition (the critical set and the singular slices).</strong> The derivative of $F_{C}$ is the multiplication by $2\breve Q$, singular exactly on the zero-divisor cone $\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$ and vanishing only at the origin; the singular slices of the fractal are</p>
+<p><strong>Proposition (the critical set and the singular slices).</strong> The derivative of $F_{C}$ is the multiplication by $2\breve Q$, singular exactly on the zero-divisor cone $\mathscr{Z}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$ and vanishing only at the origin; the singular slices of the fractal are</p>
 <p>$$
 \mathcal{K}_{C}\cap\mathscr{Z}=\bigl(\{0\}\cap K_{c_{1}}\bigr)\times K_{c_{2}}\;\cup\;K_{c_{1}}\times\bigl(\{0\}\cap K_{c_{2}}\bigr),
 $$</p>
@@ -159,7 +159,7 @@ $$</p>
 <td>the boundary of the locus</td>
 </tr>
 <tr>
-<td>$\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$</td>
+<td>$\mathscr{Z}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$</td>
 <td>the critical set, the zero-divisor cone</td>
 </tr>
 <tr>

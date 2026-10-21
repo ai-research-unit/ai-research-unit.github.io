@@ -129,8 +129,8 @@ $$</p>
 <p>$$
 \exp(\mathbb{C}) = \mathbb{C}^\times, \qquad \mathbb{C}^\times = \{\exp(Q) : Q \in \mathbb{C}\}.
 $$</p>
-<p><strong>Proof.</strong> Every nonzero complex number has a polar form $Q = r\exp(i\theta)$ with $r = |Q| > 0$ and $\theta \in \mathbb{R}$, so with $L = \ln r + i\theta$ one has $\exp(L) = \exp(\ln r)\exp(i\theta) = r\exp(i\theta) = Q$.</p>
-<p>The element $L$ is a <strong>complex logarithm</strong> of $Q$. The construction is unique up to the kernel of $\exp$.</p>
+<p><strong>Proof.</strong> Every nonzero complex number has a polar form $Q = r\exp(i\theta)$ with $r = |Q| > 0$ and $\theta \in \mathbb{R}$, so with $Q_{\log} = \ln r + i\theta$ one has $\exp(Q_{\log}) = \exp(\ln r)\exp(i\theta) = r\exp(i\theta) = Q$.</p>
+<p>The element $Q_{\log}$ is a <strong>complex logarithm</strong> of $Q$. The construction is unique up to the kernel of $\exp$.</p>
 <p><strong>Theorem (kernel).</strong> For $Q \in \mathbb{C}$ one has $\exp(Q) = 1$ if and only if $Q \in 2\pi i\,\mathbb{Z}$.</p>
 <p><strong>Proof.</strong> Write $Q = q+i q'$; then $\exp(Q) = \exp(q)\exp(i q') = 1$ forces $\exp(q) = 1$, hence $q = 0$, and $\exp(i q') = 1$, hence $q' \in 2\pi\mathbb{Z}$. Thus $Q = 2\pi i k$ for some integer $k$.</p>
 <p>The kernel is therefore the discrete infinite cyclic subgroup</p>
@@ -149,7 +149,7 @@ $$</p>
 <p>$$
 Q = \underbrace{\exp(\ln r)}_{r \in \mathbb{R}_{>0}} \underbrace{\exp(i\theta)}_{u \in \mathrm{U}(1)},
 $$</p>
-<p>the product of a positive real scale, obtained from the real part of $L$, and a phase, obtained from the imaginary part. The splitting is the polar decomposition written in exponential coordinates, and it is exact, not a local statement, because the exponential is a homomorphism.</p>
+<p>the product of a positive real scale, obtained from the real part of $Q_{\log}$, and a phase, obtained from the imaginary part. The splitting is the polar decomposition written in exponential coordinates, and it is exact, not a local statement, because the exponential is a homomorphism.</p>
 <p><strong>The exponential is not one-to-one.</strong> It restricts to a bijection on the strip $|\operatorname{Im} Q| \le \pi$ with the identification $\operatorname{Im} Q = \pm\pi$, and to a bijection on a real line $\mathbb{R} 1$ of scales; the many-to-one character is entirely the kernel $2\pi i \mathbb{Z}$ along the imaginary axis.</p>
 <h2 id="one-parameter-subgroups-and-the-circle-group">One-Parameter Subgroups and the Circle Group</h2>
 <p><strong>Definition.</strong> A <strong>one-parameter subgroup</strong> of a Lie group $G$ is a continuous homomorphism $\gamma : \mathbb{R} \to G$, the group $\mathbb{R}$ being additive. For a real algebra it is written $\gamma(t) = \exp(tX)$ for a fixed $X$ in the Lie algebra.</p>
