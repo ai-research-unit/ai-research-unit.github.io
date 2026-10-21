@@ -127,9 +127,9 @@ The Krein-orthogonal complement satisfies $\dim\mathbb{W}+\dim\mathbb{W}^{\perp_
 
 ## Further Reading
 
-- *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the Gram matrices and the inertia
-- *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the totally isotropic subspaces
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the family of fundamental symmetries
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the $J$-self-adjoint idempotents inside the cone
-- *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the global structure of the maximal definite subspaces
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the Gram matrices and the inertia
+- [The Isotropic Structure of the General Quaternionic Sesqualgebra](the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the totally isotropic subspaces
+- [The Fundamental Symmetry of the Biquaternion Algebra](the-fundamental-symmetry-of-the-biquaternion-algebra.html), for the family of fundamental symmetries
+- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-self-adjoint idempotents inside the cone
+- [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the global structure of the maximal definite subspaces
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for orthogonality, the classification of subspaces and the fundamental decompositions of a Krein space

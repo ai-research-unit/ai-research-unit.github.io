@@ -314,12 +314,12 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 
 ## Further Reading
 
-- *Introduction to the Biquaternion Universe*, for the algebra and the two sectors.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors and the rotor conjugation on $\mathbb{M}_-$.
-- *The Informational Sector: States, Observables and Probability*, for the boost biquaternion as an element of $\mathbb{M}_+$.
-- *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, four-momentum, and four-force.
-- *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, the square-root relation, and the polar decomposition.
-- *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Wigner angle, its axis, and its leading approximation.
-- *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the discrete composition and the recorded direction gap in the parent.
-- *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the one-sided action of the rotors that carries the spin.
-- *Exercise: The Non-Relativistic Limit and the Pauli Equation*, for the spin–orbit coupling and the Thomas factor of $\tfrac12$.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the two sectors.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the rotor conjugation on $\mathbb{M}_-$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boost biquaternion as an element of $\mathbb{M}_+$.
+- [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and four-force.
+- [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the square-root relation, and the polar decomposition.
+- [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Wigner angle, its axis, and its leading approximation.
+- [Exercise: Boosting a Four-Velocity and Rapidity Composition](exercise-boosting-a-four-velocity-and-rapidity-composition.html), for the discrete composition and the recorded direction gap in the parent.
+- [The Spinor Representation of the Lorentz Group in Biquaternionic Form](the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html), for the one-sided action of the rotors that carries the spin.
+- [Exercise: The Non-Relativistic Limit and the Pauli Equation](exercise-the-non-relativistic-limit-and-the-pauli-equation.html), for the spin–orbit coupling and the Thomas factor of $\tfrac12$.

@@ -225,12 +225,12 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
-- *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the adjugated trace identities used here
-- *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), for the restriction of the norm to the same remarkable subspaces
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the definitions and dimensions of the remarkable subspaces
-- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the definitions and the coordinate blocks of the remarkable subspaces
-- *Remarkable Subspaces under the General Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the restrictions as subspaces, their null cones and their automorphism groups
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the positive definite general plain sesquilinear form
-- *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`) and *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the two companion articles of this layer
-- *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), for Sylvester's law, congruence and the discriminant
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
+- [The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the adjugated trace identities used here
+- [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the restriction of the norm to the same remarkable subspaces
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definitions and dimensions of the remarkable subspaces
+- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the definitions and the coordinate blocks of the remarkable subspaces
+- [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restrictions as subspaces, their null cones and their automorphism groups
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the positive definite general plain sesquilinear form
+- [Krein Orthogonality and the Fundamental Decomposition](krein-orthogonality-and-the-fundamental-decomposition.html) and [The Isotropic Structure of the General Quaternionic Sesqualgebra](the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the two companion articles of this layer
+- [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), for Sylvester's law, congruence and the discriminant

@@ -381,14 +381,14 @@ and each nontrivial idempotent has central square $1$, so that it is a unit of t
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value and the idempotent, stated once for a general product.
-- *Square Roots of a General Element in the Quaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-quaternion-algebra.md`), for the plain reading of the three values, against which the roots of one are compared.
-- *Square Roots of a General Element in the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-sesqualgebra.md`), for the general square-root problem of which the central value is the special case.
-- *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the roots of $0$, the square-zero family $c(\vec u\pm i)$.
-- *Square Roots of One and the Idempotents of the Quaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.md`), for the idempotents of the algebra and the Hermitian family.
-- *Zero Divisors of the General Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.md`), for the zero-divisor cone and the criterion used on the roots of one and on the idempotents of the other products.
-- *Norm and Invertibility in the General Quaternionic Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.md`), for the plain criterion of invertibility $C\neq0$.
-- *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the absence of a unit that makes the halving map fail.
-- *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein scalar part.
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the four idempotent sets in one row.
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the notation and the article format.
+- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the root of a central value and the idempotent, stated once for a general product.
+- [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), for the plain reading of the three values, against which the roots of one are compared.
+- [Square Roots of a General Element in the General Quaternionic Sesqualgebra](square-roots-of-a-general-element-in-the-general-quaternionic-sesqualgebra.html), for the general square-root problem of which the central value is the special case.
+- [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html), for the roots of $0$, the square-zero family $c(\vec u\pm i)$.
+- [Square Roots of One and the Idempotents of the Quaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html), for the idempotents of the algebra and the Hermitian family.
+- [Zero Divisors of the General Quaternionic Sesqualgebra](zero-divisors-of-the-general-quaternionic-sesqualgebra.html), for the zero-divisor cone and the criterion used on the roots of one and on the idempotents of the other products.
+- [Norm and Invertibility in the General Quaternionic Sesqualgebra](norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.html), for the plain criterion of invertibility $C\neq0$.
+- [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the absence of a unit that makes the halving map fail.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein scalar part.
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the four idempotent sets in one row.
+- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.

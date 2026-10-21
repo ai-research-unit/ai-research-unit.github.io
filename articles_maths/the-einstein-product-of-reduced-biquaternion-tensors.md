@@ -119,9 +119,9 @@ The **Einstein product** of an order-$m+n$ tensor and an order-$n+s$ tensor is t
 
 ## Further Reading
 
-- *Reduced Biquaternion Tensors as a Vector Space*, above this article, for the tensor, the slices, the coefficient tensors and the Frobenius norm.
-- *Least Squares and Total Least Squares over the Reduced Biquaternions* (`articles_maths/least-squares-and-total-least-squares-over-the-reduced-biquaternions.md`), for the componentwise invertibility of a matrix over the algebra.
-- *The t-Product of Reduced Biquaternion Tensors*, below this article, for the other product on the third-order tensors.
+- [Reduced Biquaternion Tensors as a Vector Space](reduced-biquaternion-tensors-as-a-vector-space.html), above this article, for the tensor, the slices, the coefficient tensors and the Frobenius norm.
+- [Least Squares and Total Least Squares over the Reduced Biquaternions](least-squares-and-total-least-squares-over-the-reduced-biquaternions.html), for the componentwise invertibility of a matrix over the algebra.
+- [The t-Product of Reduced Biquaternion Tensors](the-t-product-of-reduced-biquaternion-tensors.html), below this article, for the other product on the third-order tensors.
 - Ting-Ting Liu and Shao-Wen Yu, "Some Properties of Reduced Biquaternion Tensors", *Symmetry* 16 (2024), 1260, for the real and complex representations, the one-sided inverse theorem, the eigenvalues and the Gershgorin theorem of the source.
 - Tamara G. Kolda and Brett W. Bader, "Tensor Decompositions and Applications", *SIAM Review* 51 (2009), 455–500, for the matricisation, the n-mode products and the tensor decompositions of the real case.
 - Y. C. Wang and Y. M. Wei, "Generalized eigenvalue for even order tensors via Einstein product and its applications in multilinear control systems", *Computational and Applied Mathematics* 41 (2022), 419, for the Einstein product eigenvalue problem of the real case.

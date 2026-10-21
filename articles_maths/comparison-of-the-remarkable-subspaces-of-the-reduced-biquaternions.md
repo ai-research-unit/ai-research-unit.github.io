@@ -110,9 +110,9 @@ The eight remarkable subspaces of the reduced biquaternion algebra are the six c
 
 ## Further Reading
 
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), for the defining equations, bases and norms.
-- *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), for the block decomposition, the halvings and the idempotent decomposition.
-- *The Two Involutions and the Group of Involutions of the Reduced Biquaternions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the fixed and anti-fixed spaces.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the two minimal ideals and the Peirce decomposition.
-- *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotents and the two lines.
-- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the non-commutative companion.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the defining equations, bases and norms.
+- [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the block decomposition, the halvings and the idempotent decomposition.
+- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the fixed and anti-fixed spaces.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two minimal ideals and the Peirce decomposition.
+- [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents and the two lines.
+- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the non-commutative companion.

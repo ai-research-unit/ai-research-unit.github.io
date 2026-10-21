@@ -185,13 +185,13 @@ The convention of *The Elements and their Coefficients* fixes the case and the t
 
 An **idempotent** of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$, and a **projector** is an idempotent operator, $p^2 = p$, that is an idempotent of the morphism space, not an element of the algebra; the two are different objects, and an idempotent element corresponds to a projector when its multiplication operator is idempotent. An idempotent fixed by the star, $\tilde\Pi^{*} = \tilde\Pi$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{M}_+$, the Hermitian subspace, are the **pure states**.
 
-**The case rule splits the glyph, as it does for the elements.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (*Split-Quaternion Idempotents and Projections*) and $\Pi_{1,2}$ in $\mathbb{D}$ (*Split-Complex Idempotents and Projections*), while the reduced biquaternion layer $\mathbb{B}_{\mathrm{r}}$ writes the pair with the signs, $\Pi_\pm$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$; the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of *Split-Biquaternion Idempotents and Projections*, and the layer fixes the glyph.
+**The case rule splits the glyph, as it does for the elements.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (*Split-Quaternion Idempotents and Projections*), while the split-complex layer $\mathbb{D}$ (*Split-Complex Idempotents and Projections*) and the reduced biquaternion layer $\mathbb{B}_{\mathrm{r}}$ write the complete pair with the signs, $\Pi_\pm$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$; the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of *Split-Biquaternion Idempotents and Projections*, and the layer fixes the glyph.
 
 The involution here is the star on the elements, as *The Conjugations* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
 
 **The coordinates carry the letter of the idempotent**: in $\mathbb{B}$ the idempotent is $\tilde\Pi = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.
 
-**It is allowed to add subscripts when several idempotents are used.** **The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde\Xi)$. When a pair is **complete**, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element. The reduced biquaternion layer writes its complete pair with the signs throughout, $\Pi_\pm$; its Peirce indices are the same signs, $\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\}$ with $\sigma,\tau\in\{+,-\}$. The coordinates of the element in that pair are the **idempotent coordinates**, written with the doubled sign, $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so that $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$; the doubling keeps them distinct from the basis coordinates $Q_+$ and $Q_-$ of $1$ and $j$.
+**It is allowed to add subscripts when several idempotents are used.** **The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde\Xi)$. When a pair is **complete**, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element. The split-complex and reduced biquaternion layers write their complete pair with the signs throughout, $\Pi_\pm$. The Peirce indices of the reduced biquaternion layer are the same signs, $\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\}$ with $\sigma,\tau\in\{+,-\}$. The coordinates of the element in that pair are the **idempotent coordinates**, written with the doubled sign, $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so that $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$; the doubling keeps them distinct from the basis coordinates $Q_+$ and $Q_-$ of $1$ and $j$.
 
 A non-zero idempotent $\tilde\Pi$ generates the **minimal left ideal** $\mathbb{B}\tilde\Pi$; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Idempotents of the General Plain Algebra* and its companions.
 
@@ -200,7 +200,7 @@ The idempotent glyph is therefore **split by the case rule**, and the split is t
 | Symbol | Role |
 |---|---|
 | $\Pi$ | An idempotent of the complex, split-complex or dual layer, where no tilde is written |
-| $\Pi_\pm$ | An idempotent of the reduced biquaternion layer, where no tilde is written |
+| $\Pi_\pm$ | A complete sign pair of idempotents of the split-complex or reduced biquaternion layer, where no tilde is written |
 | $\tilde\pi$ | An idempotent of the quaternion or split-quaternion layer |
 | $\tilde\Pi$ | An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates |
 
@@ -343,7 +343,7 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*The 12 Products of the Biquaternion $\mathbb{C}$ Space*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
+whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*The 12 Products of the Biquaternion $\mathbb{C}$ Space*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
 
 The products themselves — their coordinates, their laws, their units and their images — are *The 12 Products of the Biquaternion Complex Space*, and the grid of the four general products is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
 
@@ -705,6 +705,72 @@ The forms a subscript takes are these.
 | an upright word | $\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$ |
 | a grouped expression | $Q_{n+1}$ |
 
+The decorations that may stand in the subscript slot are these: all 451 distinct glyphs of the KaTeX 0.16.9 symbol table, one entry per glyph, with a single command written where several commands draw the same glyph. An entry that takes an argument is shown on $n$, and an entry that is text is written inside \text.
+
+**Binary operators.** ${}_{\pm}$, ${}_{\times}$, ${}_{\div}$, ${}_{\dagger}$, ${}_{\ddagger}$, ${}_{\mp}$, ${}_{\dotplus}$, ${}_{\setminus}$, ${}_{\ast}$, ${}_{\circ}$,
+${}_{\bullet}$, ${}_{\land}$, ${}_{\lor}$, ${}_{\cap}$, ${}_{\cup}$, ${}_{\wr}$, ${}_{\uplus}$, ${}_{\sqcap}$, ${}_{\sqcup}$, ${}_{\oplus}$,
+${}_{\ominus}$, ${}_{\otimes}$, ${}_{\oslash}$, ${}_{\odot}$, ${}_{\circledcirc}$, ${}_{\circledast}$, ${}_{\circleddash}$, ${}_{\boxplus}$, ${}_{\boxminus}$, ${}_{\boxtimes}$,
+${}_{\boxdot}$, ${}_{\intercal}$, ${}_{\veebar}$, ${}_{\barwedge}$, ${}_{\diamond}$, ${}_{\cdot}$, ${}_{\star}$, ${}_{\divideontimes}$, ${}_{\ltimes}$, ${}_{\rtimes}$,
+${}_{\leftthreetimes}$, ${}_{\rightthreetimes}$, ${}_{\curlyvee}$, ${}_{\curlywedge}$, ${}_{\Cap}$, ${}_{\Cup}$, ${}_{\lessdot}$, ${}_{\gtrdot}$, ${}_{\triangleright}$, ${}_{\bigtriangledown}$,
+${}_{\triangleleft}$, ${}_{\bigcirc}$, ${}_{\amalg}$, ${}_{\doublebarwedge}$
+
+**Relations.** ${}_{\lt}$, ${}_{\gt}$, ${}_{\in}$, ${}_{\ni}$, ${}_{\backepsilon}$, ${}_{\propto}$, ${}_{\mid}$, ${}_{\nmid}$, ${}_{\parallel}$, ${}_{\nparallel}$,
+${}_{\therefore}$, ${}_{\because}$, ${}_{\sim}$, ${}_{\backsim}$, ${}_{\nsim}$, ${}_{\eqsim}$, ${}_{\simeq}$, ${}_{\cong}$, ${}_{\ncong}$, ${}_{\approx}$,
+${}_{\approxeq}$, ${}_{\asymp}$, ${}_{\Bumpeq}$, ${}_{\bumpeq}$, ${}_{\doteq}$, ${}_{\Doteq}$, ${}_{\fallingdotseq}$, ${}_{\risingdotseq}$, ${}_{\eqcirc}$, ${}_{\circeq}$,
+${}_{\triangleq}$, ${}_{\equiv}$, ${}_{\le}$, ${}_{\ge}$, ${}_{\leqq}$, ${}_{\geqq}$, ${}_{\lneqq}$, ${}_{\gneqq}$, ${}_{\ll}$, ${}_{\gg}$,
+${}_{\between}$, ${}_{\nless}$, ${}_{\ngtr}$, ${}_{\nleq}$, ${}_{\ngeq}$, ${}_{\lesssim}$, ${}_{\gtrsim}$, ${}_{\lessgtr}$, ${}_{\gtrless}$, ${}_{\prec}$,
+${}_{\succ}$, ${}_{\preccurlyeq}$, ${}_{\succcurlyeq}$, ${}_{\precsim}$, ${}_{\succsim}$, ${}_{\nprec}$, ${}_{\nsucc}$, ${}_{\subset}$, ${}_{\supset}$, ${}_{\subseteq}$,
+${}_{\supseteq}$, ${}_{\nsubseteq}$, ${}_{\nsupseteq}$, ${}_{\subsetneq}$, ${}_{\supsetneq}$, ${}_{\sqsubset}$, ${}_{\sqsupset}$, ${}_{\sqsubseteq}$, ${}_{\sqsupseteq}$, ${}_{\vdash}$,
+${}_{\dashv}$, ${}_{\perp}$, ${}_{\vDash}$, ${}_{\Vdash}$, ${}_{\Vvdash}$, ${}_{\nvdash}$, ${}_{\nvDash}$, ${}_{\nVdash}$, ${}_{\nVDash}$, ${}_{\vartriangleleft}$,
+${}_{\vartriangleright}$, ${}_{\trianglelefteq}$, ${}_{\trianglerighteq}$, ${}_{\origof}$, ${}_{\imageof}$, ${}_{\multimap}$, ${}_{\Join}$, ${}_{\backsimeq}$, ${}_{\Subset}$, ${}_{\Supset}$,
+${}_{\pitchfork}$, ${}_{\lll}$, ${}_{\ggg}$, ${}_{\lesseqgtr}$, ${}_{\gtreqless}$, ${}_{\curlyeqprec}$, ${}_{\curlyeqsucc}$, ${}_{\npreceq}$, ${}_{\nsucceq}$, ${}_{\lnsim}$,
+${}_{\gnsim}$, ${}_{\precnsim}$, ${}_{\succnsim}$, ${}_{\ntriangleleft}$, ${}_{\ntriangleright}$, ${}_{\ntrianglelefteq}$, ${}_{\ntrianglerighteq}$, ${}_{\frown}$, ${}_{\smile}$, ${}_{\vartriangle}$,
+${}_{\blacktriangleright}$, ${}_{\blacktriangleleft}$, ${}_{\leqslant}$, ${}_{\geqslant}$, ${}_{\lessapprox}$, ${}_{\gtrapprox}$, ${}_{\lneq}$, ${}_{\gneq}$, ${}_{\lnapprox}$, ${}_{\gnapprox}$,
+${}_{\lesseqqgtr}$, ${}_{\gtreqqless}$, ${}_{\eqslantless}$, ${}_{\eqslantgtr}$, ${}_{\preceq}$, ${}_{\succeq}$, ${}_{\precneqq}$, ${}_{\succneqq}$, ${}_{\precapprox}$, ${}_{\succapprox}$,
+${}_{\precnapprox}$, ${}_{\succnapprox}$, ${}_{\subseteqq}$, ${}_{\supseteqq}$, ${}_{\subsetneqq}$, ${}_{\supsetneqq}$, ${}_{\nshortmid}$, ${}_{\nshortparallel}$, ${}_{\lvertneqq}$, ${}_{\gvertneqq}$,
+${}_{\ngeqq}$, ${}_{\ngeqslant}$, ${}_{\nleqslant}$, ${}_{\nleqq}$, ${}_{\nsubseteqq}$, ${}_{\varsubsetneqq}$, ${}_{\nsupseteqq}$, ${}_{\varsupsetneqq}$, ${}_{\varsubsetneq}$, ${}_{\varsupsetneq}$,
+${}_{\not}$
+
+**Arrows.** ${}_{\gets}$, ${}_{\uparrow}$, ${}_{\to}$, ${}_{\downarrow}$, ${}_{\leftrightarrow}$, ${}_{\updownarrow}$, ${}_{\nwarrow}$, ${}_{\nearrow}$, ${}_{\searrow}$, ${}_{\swarrow}$,
+${}_{\nleftarrow}$, ${}_{\nrightarrow}$, ${}_{\twoheadleftarrow}$, ${}_{\twoheadrightarrow}$, ${}_{\leftarrowtail}$, ${}_{\rightarrowtail}$, ${}_{\mapsto}$, ${}_{\hookleftarrow}$, ${}_{\hookrightarrow}$, ${}_{\looparrowleft}$,
+${}_{\looparrowright}$, ${}_{\leftrightsquigarrow}$, ${}_{\nleftrightarrow}$, ${}_{\Lsh}$, ${}_{\Rsh}$, ${}_{\curvearrowleft}$, ${}_{\curvearrowright}$, ${}_{\circlearrowleft}$, ${}_{\circlearrowright}$, ${}_{\leftharpoonup}$,
+${}_{\leftharpoondown}$, ${}_{\restriction}$, ${}_{\upharpoonleft}$, ${}_{\rightharpoonup}$, ${}_{\rightharpoondown}$, ${}_{\downharpoonright}$, ${}_{\downharpoonleft}$, ${}_{\rightleftarrows}$, ${}_{\leftrightarrows}$, ${}_{\leftleftarrows}$,
+${}_{\upuparrows}$, ${}_{\rightrightarrows}$, ${}_{\downdownarrows}$, ${}_{\leftrightharpoons}$, ${}_{\rightleftharpoons}$, ${}_{\nLeftarrow}$, ${}_{\nLeftrightarrow}$, ${}_{\nRightarrow}$, ${}_{\Leftarrow}$, ${}_{\Uparrow}$,
+${}_{\Rightarrow}$, ${}_{\Downarrow}$, ${}_{\Leftrightarrow}$, ${}_{\Updownarrow}$, ${}_{\Lleftarrow}$, ${}_{\Rrightarrow}$, ${}_{\leadsto}$, ${}_{\dashleftarrow}$, ${}_{\dashrightarrow}$, ${}_{\longleftarrow}$,
+${}_{\longrightarrow}$, ${}_{\longleftrightarrow}$, ${}_{\Longleftarrow}$, ${}_{\Longrightarrow}$, ${}_{\Longleftrightarrow}$, ${}_{\longmapsto}$
+
+**Large operators.** ${}_{\prod}$, ${}_{\coprod}$, ${}_{\sum}$, ${}_{\int}$, ${}_{\iint}$, ${}_{\iiint}$, ${}_{\oint}$, ${}_{\oiint}$, ${}_{\oiiint}$, ${}_{\bigwedge}$,
+${}_{\bigvee}$, ${}_{\bigcap}$, ${}_{\bigcup}$, ${}_{\bigodot}$, ${}_{\bigoplus}$, ${}_{\bigotimes}$, ${}_{\biguplus}$, ${}_{\bigsqcup}$
+
+**Symbols.** ${}_{\text{\textdollar}}$, ${}_{\text{\textasciicircum}}$, ${}_{\text{\textbar}}$, ${}_{\text{\textasciitilde}}$, ${}_{\pounds}$, ${}_{\yen}$, ${}_{\neg}$, ${}_{\circledR}$, ${}_{\degree}$, ${}_{\wp}$,
+${}_{\mho}$, ${}_{\Game}$, ${}_{\forall}$, ${}_{\complement}$, ${}_{\partial}$, ${}_{\exists}$, ${}_{\nexists}$, ${}_{\emptyset}$, ${}_{\nabla}$, ${}_{\surd}$,
+${}_{\infty}$, ${}_{\angle}$, ${}_{\measuredangle}$, ${}_{\sphericalangle}$, ${}_{\top}$, ${}_{\varvdots}$, ${}_{\circledS}$, ${}_{\diagup}$, ${}_{\diagdown}$, ${}_{\blacksquare}$,
+${}_{\Box}$, ${}_{\blacktriangle}$, ${}_{\blacktriangledown}$, ${}_{\Diamond}$, ${}_{\bigstar}$, ${}_{\spadesuit}$, ${}_{\heartsuit}$, ${}_{\diamondsuit}$, ${}_{\clubsuit}$, ${}_{\flat}$,
+${}_{\natural}$, ${}_{\sharp}$, ${}_{\checkmark}$, ${}_{\maltese}$, ${}_{\blacklozenge}$
+
+**Letters.** ${}_{\text{\AE}}$, ${}_{\text{\O}}$, ${}_{\text{\ss}}$, ${}_{\text{\ae}}$, ${}_{\eth}$, ${}_{\text{\o}}$, ${}_{\text{\i}}$, ${}_{\text{\OE}}$, ${}_{\text{\oe}}$, ${}_{\text{\j}}$,
+${}_{\Gamma}$, ${}_{\Delta}$, ${}_{\Theta}$, ${}_{\Lambda}$, ${}_{\Xi}$, ${}_{\Pi}$, ${}_{\Sigma}$, ${}_{\Upsilon}$, ${}_{\Phi}$, ${}_{\Psi}$,
+${}_{\Omega}$, ${}_{\alpha}$, ${}_{\beta}$, ${}_{\gamma}$, ${}_{\delta}$, ${}_{\varepsilon}$, ${}_{\zeta}$, ${}_{\eta}$, ${}_{\theta}$, ${}_{\iota}$,
+${}_{\kappa}$, ${}_{\lambda}$, ${}_{\mu}$, ${}_{\nu}$, ${}_{\xi}$, ${}_{\omicron}$, ${}_{\pi}$, ${}_{\rho}$, ${}_{\varsigma}$, ${}_{\sigma}$,
+${}_{\tau}$, ${}_{\upsilon}$, ${}_{\varphi}$, ${}_{\chi}$, ${}_{\psi}$, ${}_{\omega}$, ${}_{\vartheta}$, ${}_{\phi}$, ${}_{\varpi}$, ${}_{\digamma}$,
+${}_{\varkappa}$, ${}_{\varrho}$, ${}_{\epsilon}$, ${}_{\hbar}$, ${}_{\Im}$, ${}_{\ell}$, ${}_{\Re}$, ${}_{\Finv}$, ${}_{\aleph}$, ${}_{\beth}$,
+${}_{\gimel}$, ${}_{\daleth}$, ${}_{\imath}$, ${}_{\jmath}$
+
+**Delimiters.** ${}_{\lparen}$, ${}_{\rparen}$, ${}_{\lceil}$, ${}_{\rceil}$, ${}_{\lfloor}$, ${}_{\rfloor}$, ${}_{\lmoustache}$, ${}_{\rmoustache}$, ${}_{\ulcorner}$, ${}_{\urcorner}$,
+${}_{\llcorner}$, ${}_{\lrcorner}$, ${}_{\langle}$, ${}_{\rangle}$, ${}_{\lgroup}$, ${}_{\rgroup}$
+
+**Ellipses.** ${}_{\ldots}$, ${}_{\cdots}$, ${}_{\ddots}$
+
+**Punctuation.** ${}_{\#}$, ${}_{\%}$, ${}_{\&}$, ${}_{\ldotp}$, ${}_{\lbrack}$, ${}_{\backslash}$, ${}_{\rbrack}$, ${}_{\_}$, ${}_{\{}$, ${}_{\}}$,
+${}_{\S}$, ${}_{\P}$, ${}_{\text{\textendash}}$, ${}_{\text{\textemdash}}$, ${}_{\text{\textquoteleft}}$, ${}_{\text{\textquoteright}}$, ${}_{\text{\textquotedblleft}}$, ${}_{\text{\textquotedblright}}$, ${}_{\prime}$, ${}_{\backprime}$
+
+**Accents.** ${}_{\ddot{n}}$, ${}_{\c{n}}$, ${}_{\^{n}}$, ${}_{\v{n}}$, ${}_{\={n}}$, ${}_{\'{n}}$, ${}_{\`{n}}$, ${}_{\u{n}}$, ${}_{\.{n}}$, ${}_{\r{n}}$,
+${}_{\~{n}}$, ${}_{\H{n}}$, ${}_{\vec{n}}$
+
+**Spacing.** The command ${}_{\ }$ draws no mark; it sets a space.
+
+Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{ret}}$; a text string, ${}_{\text{word}}$; a nested index, ${}_{i_1}$; and the compound ${}_{\natural*}$ that the biquaternion articles use.
+
 ## The Superscripts
 
 Two superscript tokens run beside the marks of the elements and the marks of the conjugations, on the glyphs of elements and algebras, and neither is to be read for the other:
@@ -830,7 +896,7 @@ The conventions below are those used throughout the corpus.
 | $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four **symmetric products** of §*The Twelve Products and Their Names*; the circle $\circ$ is reserved for the composition of maps |
 | $\wedge$ | The antisymmetrised product, $x \wedge y = \tfrac{1}{2}(xy - yx)$, and, with the same subscripts, the four **antisymmetric products** of §*The Twelve Products and Their Names*. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use |
 | $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | The four conjugations of an algebra with an involution, and the adjoint of an operator; §*The Conjugations* and §*The Operators* fix their meanings |
-| $\tilde\Pi$, $\tilde\pi$, $\Pi$, $\Pi_\pm$ | An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$, the reduced biquaternion one writing the sign pair $\Pi_\pm$ (§*The Idempotent Convention*) |
+| $\tilde\Pi$, $\tilde\pi$, $\Pi$, $\Pi_\pm$ | An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$, the split-complex and reduced biquaternion ones writing the sign pair $\Pi_\pm$ (§*The Idempotent Convention*) |
 | $\tilde\Xi$, $\tilde\xi$, $\Xi$ | A root of $1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (§*The Root Convention*) |
 | $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
 | $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer |

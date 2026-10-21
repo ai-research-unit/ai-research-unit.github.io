@@ -152,10 +152,10 @@ The invariant bilinear forms of the block, the $\beta$ with $\beta(\tilde Q_1\di
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its table and its image
-- *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`), for the cyclic sum whose multiples are the failure of the operator trace form
-- *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the matrix of the operator, its trace and the derivation of the operator trace form
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form $\langle\cdot\rangle_{\natural}$ and the forms of the parent algebra
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the forms of the associative algebra $\mathbb{B}$
-- *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the invariant form that the adjacent Lie case carries and this block does not
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the scalar and vector lines of the remarkable subspaces
+- [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its table and its image
+- [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html), for the cyclic sum whose multiples are the failure of the operator trace form
+- [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html), for the matrix of the operator, its trace and the derivation of the operator trace form
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the quaternion form $\langle\cdot\rangle_{\natural}$ and the forms of the parent algebra
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the forms of the associative algebra $\mathbb{B}$
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant form that the adjacent Lie case carries and this block does not
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the scalar and vector lines of the remarkable subspaces

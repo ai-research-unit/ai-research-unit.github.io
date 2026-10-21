@@ -118,7 +118,7 @@ in the coordinates of the framework, $Q_t=ict'$ and $Q_k=q_k$, so that $\partial
 
 Show that $T^0{}_0 = -W$, $T^0{}_\nu = \frac{1}{c}S_\nu$, $T^\nu{}_0 = -\frac{1}{c}S_\nu$, and $T^\nu{}_\mu = -\sigma_{\nu\mu}$, where
 $$
-\sigma_{\nu\mu} = \epsilon\,E_\nuE_\mu + \mu\,H_\nuH_\mu - W\,\delta_{\nu\mu}
+\sigma_{\nu\mu} = \epsilon\,E_\nu E_\mu + \mu\,H_\nu H_\mu - W\,\delta_{\nu\mu}
 $$
 is the Maxwell stress tensor. Then show that $T^{\mu\nu} = \eta^{\nu\alpha}T^\mu{}_\alpha$, with $\eta = \mathrm{diag}(-1,1,1,1)$, is symmetric.
 
@@ -131,11 +131,11 @@ $$
 \tilde F \vec e_\nu\tilde F^{*} = -F^{*}_\nu\,\vec F + \vec F\left(\vec e_\nu\times\tilde F^{*}\right)
 = \underbrace{-\vec F\cdot\left(\vec e_\nu\times\tilde F^{*}\right)}_{\text{scalar}} \;+\; \underbrace{\left[-F^{*}_\nu\vec F + \vec F\times\left(\vec e_\nu\times\tilde F^{*}\right)\right]}_{\text{vector}} .
 $$
-For the scalar part, $\vec F\cdot(\vec e_\nu\times\tilde F^{*}) = \epsilon_{\nu\lambda\rho}F_\rhoF^\dagger_\lambda = -\epsilon_{\nu\lambda\rho}F_\rhoF^*_\lambda$. Writing $\epsilon_{\nu\lambda\rho}F_\rhoF^*_\lambda = i\,\epsilon_{\nu\lambda\rho}\mathrm{Im}(F_\rhoF^*_\lambda)$ (the symmetric part is annihilated by $\epsilon_{\nu\lambda\rho}$), and using $\mathrm{Im}(F_\rhoF^*_\lambda) = \sqrt{\epsilon\mu}\,(H_\rhoE_\lambda - E_\rhoH_\lambda) = -\sqrt{\epsilon\mu}\,\epsilon_{\rho\lambda\mu}S_\mu$ together with $\epsilon_{\nu\lambda\rho}\epsilon_{\rho\lambda\mu} = -2\delta_{\nu\mu}$, the scalar part is $+\frac{2i}{c}S_\nu$. For the vector part, use the identity $\vec F\times(\vec e_\nu\times\tilde F^{*}) = \vec e_\nu(\vec F\cdot\tilde F^{*}) - \tilde F^{*}(\vec F\cdot \vec e_\nu) = -2W\vec e_\nu - F_\nu\tilde F^{*}$, so its $\vec e_\lambda$ component is
+For the scalar part, $\vec F\cdot(\vec e_\nu\times\tilde F^{*}) = \epsilon_{\nu\lambda\rho}F_\rho F^\dagger_\lambda = -\epsilon_{\nu\lambda\rho}F_\rho F^*_\lambda$. Writing $\epsilon_{\nu\lambda\rho}F_\rho F^*_\lambda = i\,\epsilon_{\nu\lambda\rho}\mathrm{Im}(F_\rho F^*_\lambda)$ (the symmetric part is annihilated by $\epsilon_{\nu\lambda\rho}$), and using $\mathrm{Im}(F_\rho F^*_\lambda) = \sqrt{\epsilon\mu}\,(H_\rho E_\lambda - E_\rho H_\lambda) = -\sqrt{\epsilon\mu}\,\epsilon_{\rho\lambda\mu}S_\mu$ together with $\epsilon_{\nu\lambda\rho}\epsilon_{\rho\lambda\mu} = -2\delta_{\nu\mu}$, the scalar part is $+\frac{2i}{c}S_\nu$. For the vector part, use the identity $\vec F\times(\vec e_\nu\times\tilde F^{*}) = \vec e_\nu(\vec F\cdot\tilde F^{*}) - \tilde F^{*}(\vec F\cdot \vec e_\nu) = -2W\vec e_\nu - F_\nu\tilde F^{*}$, so its $\vec e_\lambda$ component is
 $$
--F^{*}_\nuF_\lambda - 2W\delta_{\nu\lambda} - F_\nuF^\dagger_\lambda = 2\,\mathrm{Re}\!\left(F_\nuF^*_\lambda\right) - 2W\delta_{\nu\lambda} = 2\left(\epsilon E_\nuE_\lambda + \mu H_\nuH_\lambda - W\delta_{\nu\lambda}\right) = 2\sigma_{\nu\lambda},
+-F^{*}_\nu F_\lambda - 2W\delta_{\nu\lambda} - F_\nu F^\dagger_\lambda = 2\,\mathrm{Re}\!\left(F_\nu F^*_\lambda\right) - 2W\delta_{\nu\lambda} = 2\left(\epsilon E_\nu E_\lambda + \mu H_\nu H_\lambda - W\delta_{\nu\lambda}\right) = 2\sigma_{\nu\lambda},
 $$
-using $F^{*} = -F^*$ and $\mathrm{Re}(F_\nuF^*_\lambda) = \epsilon E_\nuE_\lambda + \mu H_\nuH_\lambda$. Hence
+using $F^{*} = -F^*$ and $\mathrm{Re}(F_\nu F^*_\lambda) = \epsilon E_\nu E_\lambda + \mu H_\nu H_\lambda$. Hence
 $$
 \boxed{\;\tilde F \vec e_\nu\tilde F^{*} = \frac{2i}{c}S_\nu\,e_t + 2\sigma_{\nu\lambda}\,\vec e_\lambda .\;}
 $$
@@ -175,7 +175,7 @@ T^\mu{}_\mu = -W - \sigma_{\mu\mu}.
 $$
 The trace of the Maxwell stress is
 $$
-\sigma_{\mu\mu} = \epsilon\,E_\muE_\mu + \mu\,H_\muH_\mu - 3W = \left(\epsilon\vec E^2 + \mu\vec H^2\right) - 3W = 2W - 3W = -W,
+\sigma_{\mu\mu} = \epsilon\,E_\mu E_\mu + \mu\,H_\mu H_\mu - 3W = \left(\epsilon\vec E^2 + \mu\vec H^2\right) - 3W = 2W - 3W = -W,
 $$
 using $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$. Hence
 $$
@@ -227,7 +227,7 @@ F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \\ \vec E & -[\vec B]_\times \end{pma
 F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \\ -\vec B & -[\vec E]_\times \end{pmatrix},
 $$
 
-with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F^{tk} = -S_\mu$ and $T_F^{kt} = S_\mu$, and the spatial block is the Maxwell stress $\sigma_{\nu\mu} = E_\nuE_\mu + B_\nuB_\mu - W\delta_{\nu\mu}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor $T^\mu{}_\nu$, so it is not symmetric, and the asymmetry is precisely the information about which index is up. Multiplying by the operator column $(-\partial/\partial t',\nabla)^{\mathsf T}$ gives the balance of this problem, $-\partial/\partial Q_\mu T^{\mu\nu}$ equalling the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
+with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F^{tk} = -S_\mu$ and $T_F^{kt} = S_\mu$, and the spatial block is the Maxwell stress $\sigma_{\nu\mu} = E_\nu E_\mu + B_\nu B_\mu - W\delta_{\nu\mu}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor $T^\mu{}_\nu$, so it is not symmetric, and the asymmetry is precisely the information about which index is up. Multiplying by the operator column $(-\partial/\partial t',\nabla)^{\mathsf T}$ gives the balance of this problem, $-\partial/\partial Q_\mu T^{\mu\nu}$ equalling the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
 
 $$
 cF(\vec A)\,\overline{cF(\vec C)} = \overline{cF(\vec C)}\,cF(\vec A) \qquad \text{for all vectors } \vec A, \vec C,
@@ -300,7 +300,7 @@ with $\mathcal{E}_\mu \in \{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ the basis of the 
 $$
 T^0{}_0 = -W, \qquad T^0{}_\nu = \frac{1}{c}S_\nu, \qquad T^\nu{}_0 = -\frac{1}{c}S_\nu, \qquad T^\nu{}_\mu = -\sigma_{\nu\mu},
 $$
-with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nuE_\mu + \mu H_\nuH_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Contracting the second slot with the metric gives the symmetric standard tensor, $T^{tt} = W$, $T^{tj} = T^{jt} = \frac{1}{c}S_j$, $T^{\nu\mu} = -\sigma_{\nu\mu}$.
+with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nu E_\mu + \mu H_\nu H_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Contracting the second slot with the metric gives the symmetric standard tensor, $T^{tt} = W$, $T^{tj} = T^{jt} = \frac{1}{c}S_j$, $T^{\nu\mu} = -\sigma_{\nu\mu}$.
 
 The tensor is traceless, $T^\mu{}_\mu = -W - \sigma_{\mu\mu} = 0$, and it is conserved: $\partial_\mu T^{\mu t} = -\frac{1}{c}\vec E\cdot\vec J$ and $\partial_\mu T^{\mu k} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\partial_\mu T^{\mu\nu} = -f^\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T^{\mu\nu}\propto k^\mu k^\nu$.
 
@@ -322,7 +322,7 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S = \vec E\times\vec H$ | Poynting vector (energy flux) |
-| $\sigma_{\nu\mu} = \epsilon E_\nuE_\mu + \mu H_\nuH_\mu - W\delta_{\nu\mu}$ | Maxwell stress tensor |
+| $\sigma_{\nu\mu} = \epsilon E_\nu E_\mu + \mu H_\nu H_\mu - W\delta_{\nu\mu}$ | Maxwell stress tensor |
 | $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (energy–momentum four-vector) |
 | $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ | Electromagnetic energy–momentum tensor (mixed) |
 | $\partial_\mu T^{\mu\nu}=\sum_\mu\partial_{Q_\mu}T^{\mu\nu}=0$ | Conservation of the energy–momentum tensor |
@@ -345,4 +345,4 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for a biquaternionic treatment of the field and its energy–momentum.
 - D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), §3, for the energy–momentum tensor as the matrix bilinear $\frac12 cF\,\overline{cF}$, the four-force density as a matrix divergence, and the commutation $cF(\vec A)\overline{cF(\vec C)} = \overline{cF(\vec C)}cF(\vec A)$ that the matrix proof rests on; cited for the third derivation of the balance in the remark of Problem 4.
 - E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the biquaternion tensor calculus in which the mechanical stress–energy density is $T^{\nu\mu} = \tilde V^\nu G^\mu$, the Lagrangian density is given as the trace of the tensor, and the conservation law is written as the general force equation $\partial/\partial Q_\nu T^{\nu\mu} + \partial^\mu L = 0$; cited in further problem 9.
-- The companion articles of this series: *Maxwell's Equations in the Biquaternionic Formulation*, *The Field-Strength Biquaternion and Its Invariants*, and *Electromagnetism in Media: The Local Complex Structure at Work*.
+- The companion articles of this series: [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html), [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html), and *Electromagnetism in Media: The Local Complex Structure at Work*.

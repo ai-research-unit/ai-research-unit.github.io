@@ -125,10 +125,10 @@ Under the product of the symmetric plain sesqualgebra every value is central, an
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra.md`), for the product and its central image.
-- *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* (`articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.md`), for the restriction of the form to the remarkable subspaces.
-- *Remarkable Subspaces under the General Plain Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md`), the sibling article whose pattern this one follows.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the subspaces and their definitions.
-- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the relations between them.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the forms restricted to the remarkable real subspaces.
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the closure of the remarkable subspaces under the four general products of the space.
+- [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product and its central image.
+- [The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra](the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.html), for the restriction of the form to the remarkable subspaces.
+- [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), the sibling article whose pattern this one follows.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces and their definitions.
+- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between them.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the forms restricted to the remarkable real subspaces.
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the closure of the remarkable subspaces under the four general products of the space.

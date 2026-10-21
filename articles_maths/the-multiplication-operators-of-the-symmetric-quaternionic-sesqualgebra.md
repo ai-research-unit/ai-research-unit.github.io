@@ -220,10 +220,10 @@ The operators of the block are $L^{\star}_{\tilde Q_4}(\tilde Q_1)=\tilde Q_4\st
 
 ## Further Reading
 
-- *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product* (`articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.md`), for the operators of the unsplit product.
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the operators with the conjugate transpose and the group preserving the form.
-- *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ and the adjoint relation in the form setting.
-- *Introduction to the Symmetric Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the product and its parity.
-- *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.md`), for the remarkable subspaces and the vector subspace carrying the four-dimensional image.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $\langle\cdot\rangle_{\natural}$ entering the rank table.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the comparison of the operators of the twelve operations.
+- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the operators of the unsplit product.
+- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operators with the conjugate transpose and the group preserving the form.
+- [The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra](the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ and the adjoint relation in the form setting.
+- [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its parity.
+- [Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra](remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.html), for the remarkable subspaces and the vector subspace carrying the four-dimensional image.
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm $\langle\cdot\rangle_{\natural}$ entering the rank table.
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the comparison of the operators of the twelve operations.

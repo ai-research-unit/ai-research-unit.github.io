@@ -92,5 +92,5 @@ The quaternion algebra has two remarkable real subspaces. The scalar line $\math
 
 ## Further Reading
 
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element, the basis and the product.
-- *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), below this article in this category, for the scalar–vector, the axis and the twist decompositions.
+- [Quaternion Algebra](quaternion-algebra.html), for the element, the basis and the product.
+- [Decompositions Along the Remarkable Subspaces of the Quaternions](decompositions-along-the-remarkable-subspaces-of-the-quaternions.html), below this article in this category, for the scalar–vector, the axis and the twist decompositions.

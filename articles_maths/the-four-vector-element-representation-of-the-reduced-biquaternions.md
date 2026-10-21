@@ -181,9 +181,9 @@ The reduced biquaternion element is a real quadruple $\breve Q=(q_+,q'_+,q_-,q'_
 
 ## Further Reading
 
-- *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$* (`articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.md`), for the two scalar systems and the two coordinate readings.
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), for the multiplication table in the abstract.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the conjugations and their fixed spaces.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the four products and the norms.
-- *Introduction to the Remarkable Subspaces of the Reduced Biquaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), for the coordinate planes.
-- *The Four-Vector Element Representation of Biquaternions* (`articles_maths/the-four-vector-element-representation-of-biquaternions.md`), for the non-commutative companion, where the row and the column differ.
+- [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), for the two scalar systems and the two coordinate readings.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), for the multiplication table in the abstract.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the conjugations and their fixed spaces.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products and the norms.
+- [Introduction to the Remarkable Subspaces of the Reduced Biquaternions](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the coordinate planes.
+- [The Four-Vector Element Representation of Biquaternions](the-four-vector-element-representation-of-biquaternions.html), for the non-commutative companion, where the row and the column differ.

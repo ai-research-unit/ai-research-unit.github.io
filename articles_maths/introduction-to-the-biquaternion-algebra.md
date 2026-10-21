@@ -429,13 +429,13 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for algebras over a commutative ring, the structure map into the centre and the tensor product of algebras.
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four scalar parts of the four general products, their Gram matrices and their isometry groups.
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the four diagonals of the four forms and the separation of the algebraic and the topological sense of the norm.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
-- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the element, the basis, the three coordinate systems and the conjugation formulas.
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations, their Cayley table and their orbits.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the reduced norm, the invertibility criterion and the zero-divisor cone.
-- *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the subspaces the conjugations single out.
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix model in full.
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the real quaternions $\mathbb{H}$, their basis, their multiplication and their conjugation, of which $\mathbb{B}$ is the complexification.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four scalar parts of the four general products, their Gram matrices and their isometry groups.
+- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the four diagonals of the four forms and the separation of the algebraic and the topological sense of the norm.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the product, its coordinate rule and its scalar–vector form.
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the element, the basis, the three coordinate systems and the conjugation formulas.
+- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the reduced norm, the invertibility criterion and the zero-divisor cone.
+- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model in full.
+- [Quaternion Algebra](quaternion-algebra.html), for the real quaternions $\mathbb{H}$, their basis, their multiplication and their conjugation, of which $\mathbb{B}$ is the complexification.

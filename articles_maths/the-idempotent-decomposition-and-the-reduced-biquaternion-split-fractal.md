@@ -137,9 +137,9 @@ The idempotent decomposition of the reduced biquaternion algebra is a direct sum
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the idempotents and the coordinates.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the decomposition of the algebra into the idempotent lines.
-- *The Reduced Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.md`), above this article, for the quadratic family and its product fractal.
-- *The Slices of the Reduced Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.md`), below this article, for the slices computed from the product.
-- *The Reduced Biquaternion Iterated Function Systems* (`articles_maths/the-reduced-biquaternion-iterated-function-systems.md`), below this article, for the contractions and the dimension of the attractors.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-split-fractal.md`), for the companion in which the idempotents are not central, the decomposition is only local and the coupling term is nonzero.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the coordinates.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the decomposition of the algebra into the idempotent lines.
+- [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the quadratic family and its product fractal.
+- [The Slices of the Reduced Biquaternion Julia Sets](the-slices-of-the-reduced-biquaternion-julia-sets.html), below this article, for the slices computed from the product.
+- [The Reduced Biquaternion Iterated Function Systems](the-reduced-biquaternion-iterated-function-systems.html), below this article, for the contractions and the dimension of the attractors.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the companion in which the idempotents are not central, the decomposition is only local and the coupling term is nonzero.

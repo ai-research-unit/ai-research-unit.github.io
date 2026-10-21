@@ -275,5 +275,5 @@ The three pairings are regroupings, not new decompositions. They add no informat
 - [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html), for the amplitude–phase split and the matrix polar decomposition.
 - [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html), for the sector action and the cross-term signs.
 - [The Polar Element Representation and Remarkable Subspaces](../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html), for the preservation table.
-- *The Element and Operator Representations*, for the pictures in which the polar factors act.
-- *The Operators: One-Sided, Two-Sided, Sandwich*, for the one-sided and two-sided operators of the word.
+- [The Element and Operator Representations](the-element-and-operator-representations.html), for the pictures in which the polar factors act.
+- [The Operators: One-Sided, Two-Sided, Sandwich](the-operators-one-sided-two-sided-sandwich.html), for the one-sided and two-sided operators of the word.

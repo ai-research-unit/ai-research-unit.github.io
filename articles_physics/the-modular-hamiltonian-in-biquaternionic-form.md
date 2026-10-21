@@ -408,17 +408,17 @@ The one structural question the finite-dimensional model cannot settle is locali
 
 ## Further Reading
 
-- Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
-- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde{K}_{\mathrm{mod}}$.
-- Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state, the thermal operator, and $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$.
-- Companion article *The Unruh Effect in Biquaternionic Form*, for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the zero-divisor cone.
-- Companion article *The Conformal Group in Biquaternionic Form*, for the boundary that the special conformal generators are not elements of $\mathbb{B}$.
-- Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the boost generators $K_k=i\vec e_k$ whose $k=1$ case is the wedge modular Hamiltonian.
-- Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the subspaces its generators lie in.
-- Companion article *Curved Spacetime and the Biquaternion Framework*, for the two-sided rotor action that the boost requires.
-- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single fermionic mode and the parity $(-1)^F$.
-- Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
+- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
+- Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde{K}_{\mathrm{mod}}$.
+- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$.
+- Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
+- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
+- Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, the four-vectors, and the zero-divisor cone.
+- Companion article [The Conformal Group in Biquaternionic Form](the-conformal-group-in-biquaternionic-form.html), for the boundary that the special conformal generators are not elements of $\mathbb{B}$.
+- Companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the boost generators $K_k=i\vec e_k$ whose $k=1$ case is the wedge modular Hamiltonian.
+- Companion article [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor and the subspaces its generators lie in.
+- Companion article [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the two-sided rotor action that the boost requires.
+- Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode and the parity $(-1)^F$.
+- Companion article [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and its two sectors.
 
 

@@ -283,11 +283,11 @@ either is a zero divisor.
 
 ## Further Reading
 
-- *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the quaternion norm, its multiplicativity, the invertibility criterion and the division property.
-- *Square Roots of One and the Idempotents of the Quaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.md`) and *Square Roots of Zero and the Nilpotents of the Quaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.md`), below this article in this category, for the two classes that the complexified zero-divisor families become over $\mathbb{R}$.
-- *Annihilators of the Quaternion Algebra* (`articles_maths/annihilators-of-the-quaternion-algebra.md`), below this article in this category, for the annihilator of an element, the two multiplication operators and their rank.
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the complexified counterpart, for the punctured cone, its two families and the criterion in the complex coefficients.
-- *The Specificities of the Quaternion Algebra* (`articles_maths/the-specificities-of-the-quaternion-algebra.md`), below this article in this category, for the folding of the empty classes.
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the quaternion norm, its multiplicativity, the invertibility criterion and the division property.
+- [Square Roots of One and the Idempotents of the Quaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html) and [Square Roots of Zero and the Nilpotents of the Quaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.html), below this article in this category, for the two classes that the complexified zero-divisor families become over $\mathbb{R}$.
+- [Annihilators of the Quaternion Algebra](annihilators-of-the-quaternion-algebra.html), below this article in this category, for the annihilator of an element, the two multiplication operators and their rank.
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), the complexified counterpart, for the punctured cone, its two families and the criterion in the complex coefficients.
+- [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), below this article in this category, for the folding of the empty classes.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the quaternion product and its norm.
 - Leonard Dickson, *Algebras and Their Arithmetics* (University of Chicago Press, 1923), for the division property and the structure of the quaternion algebra.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for zero divisors, regular elements and the structure theory of finite-dimensional algebras.

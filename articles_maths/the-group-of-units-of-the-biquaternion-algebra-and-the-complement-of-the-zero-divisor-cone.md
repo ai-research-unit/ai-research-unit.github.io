@@ -457,27 +457,27 @@ element at all.
 
 ## Further Reading
 
-- *Norm and Invertibility in the Biquaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the algebraic norm
+- [Norm and Invertibility in the Biquaternion Algebra](norm-and-invertibility-in-the-biquaternion-algebra.html), for the algebraic norm
   of the plain product, its non-multiplicativity and the absence of a criterion, and for the
   distribution of the invertible elements over the remarkable subspaces.
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the criterion of the plain
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the criterion of the plain
   product, the two families of the cone and the three-way classification.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`),
+- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html),
   for the cone as the zero-divisor set of the four general products and the one-sided inverse
   equations.
-- *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the group
+- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the group
   $\mathbb{B}^\times\cong GL_2(\mathbb{C})$, the norm-one group $\mathbb{B}^\times_1\cong
   SL_2(\mathbb{C})$, the determinant sequence, the covering and the homotopy type.
-- *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the polar decomposition,
+- [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar decomposition,
   the retractions onto the compact subgroups and the homotopy groups.
-- *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the cone as the boundary of the
+- [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the cone as the boundary of the
   group of units.
-- *Norm and Invertibility in the Symmetric Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-algebra.md`), for the invertibility
+- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the invertibility
   of the symmetrised product.
-- *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the left alternativity
+- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the left alternativity
   that the associativity of the plain product supplies and the isolation of the block.
-- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
+- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve
   structures, their units and their images.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the unit, the
+- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the unit, the
   inverse, the zero divisor and the annihilator stated once for a general product.
 

@@ -182,8 +182,7 @@ four-dimensional regular algebra as image.
 
 ## Further Reading
 
-- *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, for the model and its basis matrices.
-- *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, for the plain product on the same model.
-- *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, for the two commuting regular copies and the two-sided operators.
-- *The Lie Algebra of the Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Algebra*, both below this article in this category, for the structure and the form read here on the model.
-- *Introduction to the Symmetric Plain Algebra*, above this article in this category, for the companion model.
+- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions](introduction-to-the-4x4-matrix-element-representation-of-quaternions.html), for the model and its basis matrices, and for the plain product on the same model.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the two commuting regular copies and the two-sided operators.
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html) and [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), both below this article in this category, for the structure and the form read here on the model.
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), above this article in this category, for the companion model.

@@ -182,10 +182,10 @@ The **fundamental symmetry** of the general quaternionic sesquilinear form is th
 
 ## Further Reading
 
-- *The Fundamental Symmetry* (`articles_maths/the-fundamental-symmetry.md`), for the general theory and the angular operator
-- *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form whose symmetry this is
-- *J-Self-Adjoint and J-Unitary Operators* (`articles_maths/j-self-adjoint-and-j-unitary-operators.md`), for the operators the symmetry defines
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`) and *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the involutions and their fixed spaces
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the two eigenspaces, the centre and the vector subspace, as algebras
-- *Krein Spaces* (`articles_maths/krein-spaces.md`), *Pontryagin Spaces* (`articles_maths/pontryagin-spaces.md`) and *Indefinite Inner Product Spaces* (`articles_maths/indefinite-inner-product-spaces.md`), for the general theory of the fundamental symmetry and the two indices
+- [The Fundamental Symmetry](the-fundamental-symmetry.html), for the general theory and the angular operator
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form whose symmetry this is
+- [J-Self-Adjoint and J-Unitary Operators](j-self-adjoint-and-j-unitary-operators.html), for the operators the symmetry defines
+- [The Group of Involutions](the-group-of-involutions.html) and [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the involutions and their fixed spaces
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the two eigenspaces, the centre and the vector subspace, as algebras
+- [Krein Spaces](krein-spaces.html), [Pontryagin Spaces](pontryagin-spaces.html) and [Indefinite Inner Product Spaces](indefinite-inner-product-spaces.html), for the general theory of the fundamental symmetry and the two indices
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental symmetry and the parametrisation of the fundamental decompositions

@@ -49,7 +49,7 @@ and the star acts on them with the eigenvalue $\varepsilon_{3}=\varepsilon_{1}\v
 
 **Corollary (the block decomposition is the finest).** The block decomposition is the common refinement of the three halvings: each halving groups the four blocks two by two, and the three halvings are the three pairings
 $$
-\{++\,,\,{-+}\}\ \text{and}\ \{+-,\,--\},\qquad \{++\,,\,+-\}\ \text{and}\ \{-,+,\,--\},\qquad \{++\,,\,--\}\ \text{and}\ \{+-,-\+\}
+\{++\,,\,{-+}\}\ \text{and}\ \{+-,\,--\},\qquad \{++\,,\,+-\}\ \text{and}\ \{-,+,\,--\},\qquad \{++\,,\,--\}\ \text{and}\ \{+,-+\}
 $$
 for the natural sign, the bar and the star respectively.
 
@@ -173,9 +173,9 @@ The reduced biquaternion space decomposes in three ways along its remarkable sub
 
 ## Further Reading
 
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), for the spaces and their characters.
-- *The Two Involutions and the Group of Involutions of the Reduced Biquaternions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the involutions, their commutativity and their fixed spaces.
-- *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotents and the two lines.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the Peirce decomposition and the $\mathbb{Z}_{2}$-grading.
-- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), for the spaces at a glance and their closure.
-- *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces.md`), for the non-commutative companion.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the spaces and their characters.
+- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the involutions, their commutativity and their fixed spaces.
+- [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents and the two lines.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the Peirce decomposition and the $\mathbb{Z}_{2}$-grading.
+- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the spaces at a glance and their closure.
+- [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the non-commutative companion.

@@ -199,8 +199,8 @@ same structure has $\mathfrak{sl}(2,\mathbb{C})$ and $\mathbb{C}^{\times}\times\
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra*, for the bracket, its table and the Jacobi identity.
-- *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the centre, the derived algebra and the structure constants.
-- *The Killing Form of the Antisymmetric Plain Algebra*, below this article in this category, for the form and the Casimir element.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, below this article in this category, for the annihilator that is the kernel of the adjoint.
-- *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, below this article in this category, for the block whose adjoint is not a derivation.
+- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra-of-quaternioid.html), for the bracket, its table and the Jacobi identity.
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the centre, the derived algebra and the structure constants.
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the form and the Casimir element.
+- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), below this article in this category, for the annihilator that is the kernel of the adjoint.
+- [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html), below this article in this category, for the block whose adjoint is not a derivation.

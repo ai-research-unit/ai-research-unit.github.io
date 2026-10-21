@@ -119,7 +119,7 @@ and every one of them has central square $C(\tilde\Pi) = 1$; so the nontrivial i
 
 **Proof.** The parametrization is *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, where the idempotent equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ is reduced to the equation on $\vec u$; the central square of $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ is $\tfrac14+\sum_ku_k^2 = \tfrac14+\tfrac34 = 1$. The block has no unit by *The Two One-Sided Actions and the Absence of a Unit*, so the invertibility of the idempotents is the invertibility of the plain algebra.
 
-The corollary is the second specificity: the **nontrivial** idempotents of the block are the only nontrivial idempotents among the four general products that are units of the plain algebra, the trivial idempotent $e_t$ being a unit for all four. The nontrivial idempotents of the plain product and of the general plain sesquilinear product have vanishing central square and are zero divisors, and the natural product has no nontrivial idempotent at all, so the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ is alone in the unit locus. The block pays for its idempotents with its operator theory, and the comparison is the one of *Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+The corollary is the second specificity: the **nontrivial** idempotents of the block are the only nontrivial idempotents among the four general products that are units of the plain algebra, the trivial idempotent $e_t$ being a unit for all four. The nontrivial idempotents of the plain product and of the general plain sesquilinear product have vanishing central square and are zero divisors, and the natural product has no nontrivial idempotent at all, so the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ is alone in the unit locus. The block pays for its idempotents with its operator theory, and the comparison is the one of *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Ternary Product and the Jordan Triple Identity
 
@@ -172,15 +172,15 @@ The consequences are the specificities of the block. The product is linear in th
 
 ## Further Reading
 
-- *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the left-alternativity criterion and the parity obstruction, the twin of the present article.
-- *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the isotope criterion of the natural product.
-- *Introduction to the General Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the product, its table, the first-slot reading of the scalar form and the failure of the ternary identity.
-- *Introduction to the Symmetric Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the symmetrisation $\mathrm{SQS}$, which shares the two actions of $e_t$ and fails the star identity, and for the sibling $\mathrm{SPS}$.
-- *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md`), for the adapted exchange that constructs the eight derived parts.
-- *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the two actions of $e_t$ and the absence of a unit.
-- *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product* (`articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.md`), for the left and right multiplications and the sandwich.
-- *The Associator of the General Quaternionic Sesquilinear Product* (`articles_maths/the-associator-of-the-quaternionic-sesquilinear-product.md`), for the associator and the failure of the associativity laws.
-- *The Ternary Product and the Failure of the Jordan Triple Identity* (`articles_maths/the-ternary-product-and-the-failure-of-the-jordan-triple-identity.md`), for the ternary product and the quintuple witness.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the definition of the four products and the two slot involutions.
-- *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the square and the Krein form.
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the notation and the article format.
+- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the left-alternativity criterion and the parity obstruction, the twin of the present article.
+- [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the isotope criterion of the natural product.
+- [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product, its table, the first-slot reading of the scalar form and the failure of the ternary identity.
+- [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the symmetrisation $\mathrm{SQS}$, which shares the two actions of $e_t$ and fails the star identity, and for the sibling $\mathrm{SPS}$.
+- [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the adapted exchange that constructs the eight derived parts.
+- [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the two actions of $e_t$ and the absence of a unit.
+- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the left and right multiplications and the sandwich.
+- [The Associator of the General Quaternionic Sesquilinear Product](the-associator-of-the-quaternionic-sesquilinear-product.html), for the associator and the failure of the associativity laws.
+- [The Ternary Product and the Failure of the Jordan Triple Identity](the-ternary-product-and-the-failure-of-the-jordan-triple-identity.html), for the ternary product and the quintuple witness.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the definition of the four products and the two slot involutions.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the square and the Krein form.
+- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.

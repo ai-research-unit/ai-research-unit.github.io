@@ -266,13 +266,13 @@ The idempotents are the trivial elements $0$ and $e_t$ and nothing else, the equ
 
 ## Further Reading
 
-- *Introduction to the Quaternion Algebra* (`articles_maths/introduction-to-the-quaternion-algebra.md`), for the product, the unit and the square.
-- *Unital Algebras* (`articles_maths/unital-algebras.md`), §*Idempotents and the Peirce Decomposition*, for the orthogonal, complete and primitive families and the four Peirce spaces of an associative unital algebra.
-- *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the division property on which the classification rests.
-- *Zero Divisors of the Quaternion Algebra* (`articles_maths/zero-divisors-of-the-quaternion-algebra.md`), for the empty zero-divisor set and the two families of the complexified block.
-- *Square Roots of Zero and the Nilpotents of the Quaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.md`), for the roots of $0$, the square-zero class and the off-diagonal Peirce units.
-- *Square Roots of a General Element in the Quaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-quaternion-algebra.md`), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $+e_t$ here are one case.
-- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), the complexified counterpart, for the idempotent family, the bijection with the roots of one and the minimal left ideals.
+- [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html), for the product, the unit and the square.
+- [Unital Algebras](unital-algebras.html), §*Idempotents and the Peirce Decomposition*, for the orthogonal, complete and primitive families and the four Peirce spaces of an associative unital algebra.
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the division property on which the classification rests.
+- [Zero Divisors of the Quaternion Algebra](zero-divisors-of-the-quaternion-algebra.html), for the empty zero-divisor set and the two families of the complexified block.
+- [Square Roots of Zero and the Nilpotents of the Quaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.html), for the roots of $0$, the square-zero class and the off-diagonal Peirce units.
+- [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $+e_t$ here are one case.
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), the complexified counterpart, for the idempotent family, the bijection with the roots of one and the minimal left ideals.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the imaginary units and the roots of $-1$.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the square of a quaternion and its classes of element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the structure of a Clifford algebra and its idempotents.

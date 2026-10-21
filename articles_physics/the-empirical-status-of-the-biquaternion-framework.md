@@ -272,24 +272,24 @@ The main result is therefore negative, and meant to be: the framework currently 
 
 ## Further Reading
 
-- *Introduction to the Biquaternion Universe*, for the framework hypothesis and its list of open questions.
-- *Why Complexify Spacetime?*, for the motivation of the complex structure and its explicit disclaimer of empirical predictions.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the identification of the four-vector sector and its signature.
-- *The Informational Sector: States, Observables and Probability*, for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
-- *Quantum Physics in Biquaternionic Form*, for the exact reproduction of the single-qubit formalism.
-- *Relativistic Mechanics in Biquaternionic Form*, for the transcription of the ten mechanical formulas.
-- *The Electron in Biquaternionic Form*, for the tree-level $g=2$ and the absence of the anomaly.
-- *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, for the quoted spectrum and the missing derivation.
-- *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for a standard result reproduced and explicitly not modified.
-- *The Unruh Effect in Biquaternionic Form*, for a reformulation with no discriminator.
-- *Gravitational Waves in Biquaternionic Form*, for the explicit statement that no deviation is predicted.
-- *Canonical Quantization of the Biquaternion Maxwell Field*, for what the algebra does and does not supply in quantization.
-- *Chiral Fermions in the Biquaternion Framework*, for the framework's vector-like abelian sector and its absent prediction.
-- *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, for the external programme that reads the dual field strength $-i\tilde F$ as an electro-gravimagnetic field and claims solenoidal-electric, electromass and cogravity effects; recorded there, attributed, and not endorsed here.
-- *Electromagnetism in Media — The Local Complex Structure at Work*, for the local complex structure as an interpretation of the standard medium parameter $c$.
-- *The Renormalization Group in Biquaternionic Form*, for the explicit statement that the scale and the couplings are inputs the algebra does not fix.
-- *The CPT Theorem in Biquaternionic Form*, for a standard theorem transcribed rather than established.
-- *Entangled Subsystems in the Biquaternion Framework*, for the reproduced correlation function and the standard Tsirelson bound.
-- *A Brief History of Biquaternions in Physics*, for the distinction between an algebra containing a structure and a physics using it.
-- *Curved Spacetime and the Biquaternion Framework*, section *The Arena Alternative: Algebra Valued Coordinates*, for the Clifford-valued-coordinate arena in which the scale of the external programme recorded under *An External Programme That Supplies a Scale* is natural.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the framework hypothesis and its list of open questions.
+- [Why Complexify Spacetime?](why-complexify-spacetime.html), for the motivation of the complex structure and its explicit disclaimer of empirical predictions.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the identification of the four-vector sector and its signature.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
+- [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the exact reproduction of the single-qubit formalism.
+- [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the transcription of the ten mechanical formulas.
+- [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html), for the tree-level $g=2$ and the absence of the anomaly.
+- [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html), for the quoted spectrum and the missing derivation.
+- [The Vacuum State and the Casimir Effect in Biquaternionic Form](the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html), for a standard result reproduced and explicitly not modified.
+- [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for a reformulation with no discriminator.
+- [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the explicit statement that no deviation is predicted.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), for what the algebra does and does not supply in quantization.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the framework's vector-like abelian sector and its absent prediction.
+- [The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis](the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html), for the external programme that reads the dual field strength $-i\tilde F$ as an electro-gravimagnetic field and claims solenoidal-electric, electromass and cogravity effects; recorded there, attributed, and not endorsed here.
+- [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), for the local complex structure as an interpretation of the standard medium parameter $c$.
+- [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the explicit statement that the scale and the couplings are inputs the algebra does not fix.
+- [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for a standard theorem transcribed rather than established.
+- [Entangled Subsystems in the Biquaternion Framework](entangled-subsystems-in-the-biquaternion-framework.html), for the reproduced correlation function and the standard Tsirelson bound.
+- [A Brief History of Biquaternions in Physics](a-brief-history-of-biquaternions-in-physics.html), for the distinction between an algebra containing a structure and a physics using it.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), section *The Arena Alternative: Algebra Valued Coordinates*, for the Clifford-valued-coordinate arena in which the scale of the external programme recorded under *An External Programme That Supplies a Scale* is natural.
 - A. Waser, "Biquaternion Relativity — Gravitation as an Effect of Spatial Varying Speed of Light" (self-issued, issued 1 January 2011, 8 pp.), for the external programme recorded under *An External Programme That Varies the Speed of Light*: the varying-$c$ hypothesis, the profile fitted to Newton's law, the Schwarzschild line element obtained from its first-order truncation, the screened static field of a point charge, and the claim of free transverse gravitation waves. A self-issued preprint with no journal, DOI or arXiv identifier; cited for the construction and its own claims, with its curvature and its screening sizes recomputed here.

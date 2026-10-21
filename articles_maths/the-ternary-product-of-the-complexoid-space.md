@@ -141,10 +141,10 @@ On the commutative base the triple system is flat, $\{A,B,\{C,D,E\}\} = \{\{A,B,
 
 ## Further Reading
 
-- *The Sesquilinear Product of the Complexoid Space* (`articles_maths/the-sesquilinear-product-of-the-complexoid-space.md`), for the sesquilinear product, its associator and its first reading of the ternary product.
-- *The Associator and the Ternary Product of the Quaternionic Product* (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product-of-quaternioid.md`), for the non-commutative analogue, where the associator defect does not vanish.
-- *Introduction to the General Plain Sesqualgebra* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesqualgebra as a general structure and its ternarisation.
-- *Jordan Triples with an Involution* (`articles_maths/jordan-triples-with-an-involution.md`) and *Algebraic J\*-Algebras*, for the axioms of a $J^{*}$-algebra, the Jordan triple identity and the rank-one example.
-- *Jordan Algebras of Sesqualgebras* (`articles_maths/jordan-algebras-of-sesqualgebras.md`) and *Hermitian Squares and the Algebraic Positive Cone*, for the Jordan layer and the positive cone attached to the involution.
-- *Banach Sesqualgebras* (`articles_maths/banach-sesqualgebras.md`) and *Fréchet and Locally Convex Sesqualgebras*, for the norm conditions that make the algebraic $J^{*}$-algebra a topological one.
-- *The Hermitian Form and the Positivity of the Complexoid Algebra* (`articles_maths/the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.md`) and *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, for the Hermitian form and the two algebraic norms of the base.
+- [The Sesquilinear Product of the Complexoid Space](the-sesquilinear-product-of-the-complexoid-space.html), for the sesquilinear product, its associator and its first reading of the ternary product.
+- [The Associator and the Ternary Product of the Quaternionic Product](the-associator-and-the-ternary-product-of-the-quaternionic-product-of-quaternioid.html), for the non-commutative analogue, where the associator defect does not vanish.
+- [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the sesqualgebra as a general structure and its ternarisation.
+- [Jordan Triples with an Involution](jordan-triples-with-an-involution.html) and *Algebraic J\*-Algebras*, for the axioms of a $J^{*}$-algebra, the Jordan triple identity and the rank-one example.
+- [Jordan Algebras of Sesqualgebras](jordan-algebras-of-sesqualgebras.html) and [Hermitian Squares and the Algebraic Positive Cone](hermitian-squares-and-the-algebraic-positive-cone.html), for the Jordan layer and the positive cone attached to the involution.
+- [Banach Sesqualgebras](banach-sesqualgebras.html) and [Fréchet and Locally Convex Sesqualgebras](frechet-and-locally-convex-sesqualgebras.html), for the norm conditions that make the algebraic $J^{*}$-algebra a topological one.
+- [The Hermitian Form and the Positivity of the Complexoid Algebra](the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.html) and [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), for the Hermitian form and the two algebraic norms of the base.

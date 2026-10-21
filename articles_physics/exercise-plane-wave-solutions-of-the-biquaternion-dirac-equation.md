@@ -356,4 +356,4 @@ Two items needed in this exercise are not displayed in the parent article: the c
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the spin sums, the chiral and Dirac representations, and the Lorentz generators.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the two representations, the spinor normalisation, and the completeness relations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford algebra and the spinor representations.
-- The parent article of this exercise: *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, and its companion *The Dirac Equation in Biquaternionic Form*.
+- The parent article of this exercise: *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, and its companion [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html).

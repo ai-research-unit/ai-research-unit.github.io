@@ -176,11 +176,11 @@ The left and the right multiplications $L_{\tilde Q_3}(\tilde{Q}_1)=\tilde Q_3\t
 
 ## Further Reading
 
-- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, the four conjugations and the remarkable subspaces.
-- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), the companion article, with the composition and the type theorems for the product of the two one-sided families.
-- *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the left and the right regular representations in matrix form.
-- *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/one-sided-operators-on-a-hermitian-algebra-with-hermitian-adjoint.md`), for the general one-sided theory, the double centraliser and the images as ideals.
-- *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.md`), for the module axiom $(\tilde Q_3\cdot s,t)=(s,\tilde Q_3^{*}\cdot t)$ used in the last section.
-- *The Adjoint of the One-Sided Action with Hermitian Adjoint* (`articles_maths/the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.md`), for the $*$-structure on the operator algebra and the reason a Dirac operator is formally self-adjoint.
-- *Mixed Inner Conjugation and Hermitian Adjoint* (`articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.md`), for the operators with two independent one-sided parameters.
-- *Unitary Equivalence and Congruence of Operators with Hermitian Adjoint* (`articles_maths/unitary-equivalence-and-congruence-of-operators-with-hermitian-adjoint.md`), for the equivalence relations of the operator families.
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, the four conjugations and the remarkable subspaces.
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), the companion article, with the composition and the type theorems for the product of the two one-sided families.
+- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), for the left and the right regular representations in matrix form.
+- [One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint](one-sided-operators-on-a-hermitian-algebra-with-hermitian-adjoint.html), for the general one-sided theory, the double centraliser and the images as ideals.
+- [Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint](hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html), for the module axiom $(\tilde Q_3\cdot s,t)=(s,\tilde Q_3^{*}\cdot t)$ used in the last section.
+- [The Adjoint of the One-Sided Action with Hermitian Adjoint](the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html), for the $*$-structure on the operator algebra and the reason a Dirac operator is formally self-adjoint.
+- [Mixed Inner Conjugation and Hermitian Adjoint](mixed-inner-conjugation-and-hermitian-adjoint.html), for the operators with two independent one-sided parameters.
+- [Unitary Equivalence and Congruence of Operators with Hermitian Adjoint](unitary-equivalence-and-congruence-of-operators-with-hermitian-adjoint.html), for the equivalence relations of the operator families.

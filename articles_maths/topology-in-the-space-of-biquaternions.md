@@ -100,7 +100,7 @@ The space of biquaternions is a real vector space of dimension eight. It carries
 
 ## Further Reading
 
-- *Normed and Banach Spaces* (`articles_maths/normed-and-banach-spaces.md`), the norm, the equivalence of norms and the uniqueness of the topology in finite dimension; *Comparison of Norms and Invertibility* (`articles_maths/comparison-of-norms-and-invertibility.md`).
-- *Metric, Uniform and Complete Spaces* (`articles_maths/metric-uniform-and-complete-spaces.md`), the metric, the completeness and the compactness properties of §3; *Banach and Hilbert Spaces* (`articles_maths/banach-and-hilbert-spaces.md`).
-- *Topological Algebras and Banach Algebras* (`articles_maths/topological-algebras-and-banach-algebras.md`), the continuity of the product and the openness of the group of units.
-- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), the realization $\mathsf{M}_2$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.
+- [Normed and Banach Spaces](normed-and-banach-spaces.html), the norm, the equivalence of norms and the uniqueness of the topology in finite dimension; [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html).
+- [Metric, Uniform and Complete Spaces](metric-uniform-and-complete-spaces.html), the metric, the completeness and the compactness properties of §3; [Banach and Hilbert Spaces](banach-and-hilbert-spaces.html).
+- [Topological Algebras and Banach Algebras](topological-algebras-and-banach-algebras.html), the continuity of the product and the openness of the group of units.
+- [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), the realization $\mathsf{M}_2$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.

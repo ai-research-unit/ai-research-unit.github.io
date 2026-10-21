@@ -209,9 +209,9 @@ The trace form of the symmetric plain algebra is $\tau(\tilde Q_1,\tilde Q_2)=\m
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
-- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, for the associativity of the plain form and its operator theory.
-- *Two-Sided Operators on the Biquaternion Algebra*, for the left and right operators whose half-sum is the multiplication operator of the block.
-- *Remarkable Subspaces and the Four Forms*, for the restrictions of the form to the remarkable subspaces.
-- *The Realification and the Effect of the Change of Scalars*, for the realified signature $(4,4)$.
-- *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the generic trace, the generic norm and the quadratic identity.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
+- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associativity of the plain form and its operator theory.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the left and right operators whose half-sum is the multiplication operator of the block.
+- [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the restrictions of the form to the remarkable subspaces.
+- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), for the realified signature $(4,4)$.
+- [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the generic trace, the generic norm and the quadratic identity.

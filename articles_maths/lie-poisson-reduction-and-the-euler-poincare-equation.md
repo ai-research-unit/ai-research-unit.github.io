@@ -190,7 +190,7 @@ The variational route to the same equation is the **Euler–Poincaré equation**
 - Alexandre Kirillov, *Lectures on the Orbit Method* (American Mathematical Society, 2004), for the coadjoint orbits, the Kirillov–Kostant–Souriau form and the invariants of the coadjoint representation.
 - John E. Marsden, Tudor S. Ratiu and Juan-Pablo Ortega, *Hamiltonian Reduction by Stages* (Springer, 2007), for the semidirect-product reduction and the heavy top in the reduction framework.
 - Darryl D. Holm, Jerrold E. Marsden and Tudor S. Ratiu, "The Euler–Poincaré equations and semidirect products with applications to continuum theories", *Advances in Mathematics* **137** (1998), for the Euler–Poincaré equation with a semidirect product and its applications.
-- *Poisson Geometry* (`articles_maths/poisson-geometry.md`), companion article, for the Lie–Poisson bracket, its linearity, its symplectic leaves and its Casimirs.
-- *Symplectic Geometry* (`articles_maths/symplectic-geometry.md`), companion article, for the momentum map, the Marsden–Weinstein quotient and the coadjoint orbits.
-- *Lie Groups* (`articles_maths/lie-groups.md`), companion article, for the adjoint and coadjoint representations, the structure constants and the diffeomorphism group as a Lie group.
-- *Lagrangian and Hamiltonian Systems* (`articles_maths/lagrangian-and-hamiltonian-systems.md`), companion article, for the Euler top and the canonical structure that the reduction destroys.
+- [Poisson Geometry](poisson-geometry.html), companion article, for the Lie–Poisson bracket, its linearity, its symplectic leaves and its Casimirs.
+- [Symplectic Geometry](symplectic-geometry.html), companion article, for the momentum map, the Marsden–Weinstein quotient and the coadjoint orbits.
+- [Lie Groups](lie-groups.html), companion article, for the adjoint and coadjoint representations, the structure constants and the diffeomorphism group as a Lie group.
+- [Lagrangian and Hamiltonian Systems](lagrangian-and-hamiltonian-systems.html), companion article, for the Euler top and the canonical structure that the reduction destroys.

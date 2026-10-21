@@ -137,10 +137,9 @@ $$
 The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}(1 + \vec u_y \cdot \vec u_x)$; the other terms $i\vec u_x$, $i\vec u_y$, and $\vec u_y \times \vec u_x$ are vector terms with vanishing coefficient of $e_t$. Therefore
 
 $$
-2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right),
-
-whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})=2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})$.
+2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
 $$
+whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})=2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})$.
 
 Since both $\vec u_x$ and $\vec u_y$ lie in the $xz$-plane, the scalar product is $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, and the second factor is
 
@@ -252,5 +251,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard formulation of successive measurements.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the Stern–Gerlach experiment and successive measurements.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Bloch sphere and the composition of qubit measurements.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, and *Exercise: Spin Precession in a Magnetic Field*.
+- The companion articles of this series: [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), [Exercise: Measuring Spin Along an Arbitrary Direction](exercise-measuring-spin-along-an-arbitrary-direction.html), and [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html).
 

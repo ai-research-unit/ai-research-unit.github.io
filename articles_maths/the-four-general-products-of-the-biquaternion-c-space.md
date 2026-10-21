@@ -174,8 +174,8 @@ Two exchanges act on the four general products. The **exchange by a conjugation*
 
 ## Further Reading
 
-- *The Four General Products and Operators* (`articles_maths/the-four-general-products-and-operators.md`), for what the four rules decide (the four pairings and their adjoints) and what they do not decide (an operator), read on one element through the four insertions
+- [The Four General Products and Operators](the-four-general-products-and-operators.html), for what the four rules decide (the four pairings and their adjoints) and what they do not decide (an operator), read on one element through the four insertions
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original product of the units whose coordinate rule the general plain bilinear product extends.
-- *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four.
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table of the four.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the symmetric and the antisymmetric part of each of the four general products.
+- [Relations Between the Four General Products](relations-between-the-four-general-products.html), for the identities that link the four.
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the property table of the four.
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the symmetric and the antisymmetric part of each of the four general products.

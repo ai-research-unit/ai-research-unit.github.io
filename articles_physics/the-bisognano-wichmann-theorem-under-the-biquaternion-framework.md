@@ -289,17 +289,17 @@ The framework does **not** make the geometric boost an inner automorphism of the
 
 ## Further Reading
 
-- Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the Tomita operator, the polar decomposition $S=J\Delta^{1/2}$, the modular flow, and the inner/type classification.
-- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $K=-\log\rho$.
-- Companion article *The Unruh Effect in Biquaternionic Form*, for the Rindler wedge, the boost rotor, the two-point function, and the Unruh temperature.
-- Companion article *The CPT Theorem in Biquaternionic Form*, for the PCT operator and the anti-unitarity that conjugates the scalar imaginary.
-- Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and its action on $\mathbb{M}_-$.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the zero-divisor cone.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the trace formula, and the modular Hamiltonian's home.
-- Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state and $K=\beta H+(\log Z)e_t$.
-- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the field-algebra setting the wedge requires.
-- Companion article *Curved Spacetime and the Biquaternion Framework*, for the Killing-horizon analogue and the Hawking case.
-- Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
+- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the Tomita operator, the polar decomposition $S=J\Delta^{1/2}$, the modular flow, and the inner/type classification.
+- Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $K=-\log\rho$.
+- Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the Rindler wedge, the boost rotor, the two-point function, and the Unruh temperature.
+- Companion article [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for the PCT operator and the anti-unitarity that conjugates the scalar imaginary.
+- Companion article [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor and its action on $\mathbb{M}_-$.
+- Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, the four-vectors, and the zero-divisor cone.
+- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian sector, the trace formula, and the modular Hamiltonian's home.
+- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state and $K=\beta H+(\log Z)e_t$.
+- Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the field-algebra setting the wedge requires.
+- Companion article [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the Killing-horizon analogue and the Hawking case.
+- Companion article [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and its two sectors.
 - J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," *Journal of Mathematical Physics* **16** (1975) 985–1007, and "On the duality condition for quantum fields," **17** (1976) 303–321, for the theorem and its origin.
 - H.-J. Borchers, "The CPT-theorem in two-dimensional theories of local observables," *Communications in Mathematical Physics* **143** (1992) 315–332, for the modular conjugation as the PCT-type reflection.
 - P. D. Hislop and R. Longo, "Modular structure of the local algebras associated with the free massless scalar field theory," *Communications in Mathematical Physics* **84** (1982) 71–85, for the conformal generalisations beyond the wedge.

@@ -202,8 +202,8 @@ $\mathfrak{su}(2)$.
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra*, for the bracket and the basis table.
-- *The Specificities of the Antisymmetric Plain Algebra*, below this article in this category, for the Jacobi identity and the isolation of the block.
-- *The Killing Form of the Antisymmetric Plain Algebra*, below this article in this category, for the invariant form, the radical and the Casimir element.
-- *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, below this article in this category, for the adjoint representation, its kernel and its image.
-- *Structure of Lie Algebras*, for the general theory of ideals, the radical and the semisimple algebras.
+- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra-of-quaternioid.html), for the bracket and the basis table.
+- [The Specificities of the Antisymmetric Plain Algebra](the-specificities-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the Jacobi identity and the isolation of the block.
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the invariant form, the radical and the Casimir element.
+- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the adjoint representation, its kernel and its image.
+- [Structure of Lie Algebras](structure-of-lie-algebras.html), for the general theory of ideals, the radical and the semisimple algebras.

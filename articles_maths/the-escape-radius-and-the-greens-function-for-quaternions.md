@@ -122,5 +122,5 @@ The escape radius of the quaternion quadratic family is $R(c)=1+|c|$, certified 
 
 - Lennart Carleson and Theodore W. Gamelin, *Complex Dynamics* (Springer, 1993). The Green's function, the Böttcher coordinate and the conjugacy for the complex quadratic family.
 - John Milnor, *Dynamics in One Complex Variable*, 3rd ed. (Princeton, 2006). The potential and the escape-rate theory, cited to *The Escape Radius and the Green's Function*.
-- Thomas Ransford, *Potential Theory in the Complex Plane* (Cambridge, 1995). Subharmonic functions and the mean-value property, cited to *Potential Theory*.
+- Thomas Ransford, *Potential Theory in the Complex Plane* (Cambridge, 1995). Subharmonic functions and the mean-value property, cited to [Potential Theory](potential-theory.html).
 - Robert P. Munafo, "Quaternion Julia and Mandelbrot sets" and the associated computational literature. The escape-time algorithm in four dimensions.

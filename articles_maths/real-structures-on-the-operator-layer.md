@@ -153,4 +153,4 @@ so the fixed derivations are the derivations of $X$. The conjugation is an **aut
 - Jean-Pierre Serre, *Galois Cohomology* (Springer, 1997), for the descent of the algebras and the modules along a Galois extension.
 - Alexander Grothendieck and Jean Dieudonné, *Éléments de géométrie algébrique IV* (Publications Mathématiques de l'IHÉS 32, 1967), for the descent of the algebras and the effective descent of the modules.
 - Armand Borel, Pierre-Paul Grivel, Bernhard Kaup and others, *Algebraic D-Modules* (Perspectives in Mathematics 2, Academic Press, 1987), for the sheaf of the differential operators, its filtration and its modules.
-- Marshall Hall, *The Theory of Groups* (Macmillan, 1959), for the operator layer of a group and the two operations of the written *Involutions on the Operator Layer*, used here for the comparison of the conjugation with the adjoint.
+- Marshall Hall, *The Theory of Groups* (Macmillan, 1959), for the operator layer of a group and the two operations of the written [Involutions on the Operator Layer](involutions-on-the-operator-layer.html), used here for the comparison of the conjugation with the adjoint.

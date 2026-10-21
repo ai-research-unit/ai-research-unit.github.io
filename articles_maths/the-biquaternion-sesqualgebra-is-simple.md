@@ -1,5 +1,5 @@
 
-# __The Biquaternioid Sesqualgebra Is Simple__
+# __The Biquaternion Sesqualgebra Is Simple__
 
 ## Introduction
 
@@ -11,7 +11,7 @@ $$
 
 This article proves the statement in full. The proof is a single computation: a two-sided ideal of the multiplication is a two-sided ideal of the algebra, because in a unital derived model the involution drags the conjugate of an element into every ideal it lies in; and the algebra $\mathbb{B}$ is a full matrix algebra over $\mathbb{C}$, which has no proper two-sided ideal. So one nonzero element of a two-sided ideal generates a nonzero two-sided ideal of the algebra, which is the whole algebra, and the ideal contains the unit.
 
-The article is the third of the structural batch: the element theory is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
+The article is the third of the structural batch: the element theory is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
 
 The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, and the multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
 

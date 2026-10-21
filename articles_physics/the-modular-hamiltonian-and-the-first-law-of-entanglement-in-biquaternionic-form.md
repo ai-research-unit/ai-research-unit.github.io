@@ -270,8 +270,8 @@ The mechanism is that the modular energy is linear in the state while the relati
 - R. M. Wald, "Black hole entropy is the Noether charge," *Physical Review D* **48** (1993) R3427, for the first law in its geometric form.
 - M. Van Raamsdonk, "Building up spacetime with quantum entanglement," *General Relativity and Gravitation* **42** (2010) 2323–2329, for the entanglement-equals-geometry interpretation.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the Kubo–Mori–Bogoliubov metric and the second-order expansion of relative entropy.
-- Companion article *Relative Entropy and the Biquaternion Framework*, for the closed-form relative entropy and its second-order term.
-- Companion article *Thermal Time and the Modular Flow in the Biquaternion Framework*, for the modular Hamiltonian as the generator of the flow.
-- Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular operator and conjugation.
-- Companion article *Strong Subadditivity in the Biquaternion Framework*, for the reduced states and partial traces of the tensor powers.
-- Companion article *The Bisognano–Wichmann Theorem under the Biquaternion Framework*, for the geometric modular Hamiltonian of a wedge.
+- Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the closed-form relative entropy and its second-order term.
+- Companion article [Thermal Time and the Modular Flow in the Biquaternion Framework](thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html), for the modular Hamiltonian as the generator of the flow.
+- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular operator and conjugation.
+- Companion article [Strong Subadditivity in the Biquaternion Framework](strong-subadditivity-in-the-biquaternion-framework.html), for the reduced states and partial traces of the tensor powers.
+- Companion article [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the geometric modular Hamiltonian of a wedge.

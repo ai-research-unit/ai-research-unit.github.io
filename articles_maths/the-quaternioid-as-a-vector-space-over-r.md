@@ -81,6 +81,6 @@ The quaternion algebra is a four-dimensional real vector space on the basis $e_t
 
 ## Further Reading
 
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element, the basis and the multiplication table read as an algebra.
-- *The Quaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-quaternioid-as-a-vector-space-over-c.md`), below this article in this category, for the next rung and for the two distinct senses in which $\mathbb{H}$ is read over $\mathbb{C}$.
-- *Introduction to the Quaternion Algebra* (`articles_maths/introduction-to-the-quaternion-algebra.md`), below this article in this category, for the same set read through the product.
+- [Quaternion Algebra](quaternion-algebra.html), for the element, the basis and the multiplication table read as an algebra.
+- [The Quaternioid as a Vector Space over $\mathbb{C}$](the-quaternioid-as-a-vector-space-over-c.html), below this article in this category, for the next rung and for the two distinct senses in which $\mathbb{H}$ is read over $\mathbb{C}$.
+- [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html), below this article in this category, for the same set read through the product.

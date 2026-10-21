@@ -142,9 +142,9 @@ The dimension theory of the reduced biquaternion quadratic fractal is the sum of
 
 ## Further Reading
 
-- *The Reduced Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.md`), above this article, for the product fractal, the critical cone and the singular slices.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.md`), above this article, for the global decomposition behind the product formula.
-- *The Slices of the Reduced Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.md`), above this article, for the slices whose dimension is computed here.
-- *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus* (`articles_maths/the-reduced-biquaternion-mandelbrot-set-and-the-connectedness-locus.md`), above this article, for the parameter regions of the cases.
-- *The Reduced Biquaternion Iterated Function Systems* (`articles_maths/the-reduced-biquaternion-iterated-function-systems.md`), above this article, for the similarity dimension of self-similar systems.
-- *The Hausdorff Dimension of the Biquaternion Julia Sets* (`articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.md`), for the companion in which the exact dimension is known only in part.
+- [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the product fractal, the critical cone and the singular slices.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html), above this article, for the global decomposition behind the product formula.
+- [The Slices of the Reduced Biquaternion Julia Sets](the-slices-of-the-reduced-biquaternion-julia-sets.html), above this article, for the slices whose dimension is computed here.
+- [The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus](the-reduced-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), above this article, for the parameter regions of the cases.
+- [The Reduced Biquaternion Iterated Function Systems](the-reduced-biquaternion-iterated-function-systems.html), above this article, for the similarity dimension of self-similar systems.
+- [The Hausdorff Dimension of the Biquaternion Julia Sets](the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the companion in which the exact dimension is known only in part.

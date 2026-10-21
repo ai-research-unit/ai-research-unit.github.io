@@ -78,7 +78,7 @@ This category is not a prerequisite of any other, and no other category is a pre
 
 The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and five entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that the physics has not yet read.
 
-The category reads a second corpus as well. The *Biquaternioid Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-six further entries, the derived structures of the biquaternioid complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternioid Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and forty-two entries, and they are the full mathematical source of the category.
+The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-six further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and forty-two entries, and they are the full mathematical source of the category.
 
 ### Algebra
 
@@ -240,7 +240,7 @@ The category reads a second corpus as well. The *Biquaternioid Algebraic Structu
 
 ## What the Index Is For
 
-The list has five blocks. The *Generalities* block fixes the vocabulary: the vector space, the four general products, the twelve products, the forms, the norms and the twelve algebraic structures. The four blocks of the study are the four places a physical interpretation can land. Algebra gives the objects and the operations: the element, the product, the form, the involution and the subspace. Topology gives the causal structure: the cone, its link and its projectivisation. Analysis gives the fields and their evolution: the regular functions, the operators and the propagators. Geometry gives the frames and their orbits: the rotations, the Lorentz group, the unitary and the Krein groups.
+The list has four blocks. The *Algebra* block fixes the vocabulary and the objects: the vector space, the four general products and their twelve readings, the forms, the norms, the involutions, the subspaces, the two sectors, the ideals and the representations. The three remaining blocks of the study are the three places a physical interpretation can land beyond the algebra. Topology gives the causal structure: the cone, its link and its projectivisation. Analysis gives the fields and their evolution: the regular functions, the operators and the propagators. Geometry gives the frames and their orbits: the rotations, the Lorentz group, the unitary and the Krein groups.
 
 The grouping also tells the reader what kind of interpretation to expect. A general entry fixes a definition. An algebraic entry is read as an object or an operation. A topological entry is read as a locus or a boundary. An analytic entry is read as a field or a propagator. A geometric entry is read as a transformation or an orbit.
 
@@ -272,6 +272,6 @@ The index is not a publication plan. It is the map of the sources, and the categ
 ## Further Reading
 
 - The Mathematical menu, *Biquaternions* category, which is the source of every link of this article.
-- *Conventions in the Biquaternion Universe*, for the notation every article of the category assumes.
-- *Introduction to the Biquaternion Universe*, for the algebra and the two sectors.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the two sector articles of this category.
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the notation every article of the category assumes.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the two sectors.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sector articles of this category.

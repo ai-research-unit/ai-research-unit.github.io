@@ -371,15 +371,13 @@ A contraction is a form and never an index, the metric being the sign vector ins
 
 ## Further Reading
 
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*Conventions for Derivation*, for the
+- [Conventions in Mathematics](conventions-in-mathematics.html), §*Conventions for Derivation*, for the
 conventions this article re-states
-- *Biquaternion Analysis* (`articles_maths/biquaternion-analysis.md`), for the gradient, its conjugate and the d'Alembertian at
+- [Biquaternion Analysis](biquaternion-analysis.html), for the gradient, its conjugate and the d'Alembertian at
 length
-- *The 12 Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`),
+- [The 12 Products of the Biquaternion $\mathbb{C}$ Space](the-12-products-of-the-biquaternion-complex-space.html),
 for the twelve operations and the four general products
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
-(`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms and their signatures
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*
-(`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the four norms as the diagonals of the forms
-- *Remarkable Subspaces and the Analysis* (`articles_maths/remarkable-subspaces-and-the-analysis.md`), for the operator of the
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four forms and their signatures
+- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the four norms as the diagonals of the forms
+- [Remarkable Subspaces and the Analysis](remarkable-subspaces-and-the-analysis.html), for the operator of the
 norm read on each remarkable subspace

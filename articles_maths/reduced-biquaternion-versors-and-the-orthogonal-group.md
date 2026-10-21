@@ -116,9 +116,9 @@ The general quaternionic bilinear form of the reduced biquaternion algebra, $\la
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the idempotents and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article, for the four forms, their Gram matrices and the reduced norm.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), above this article, for the bar, the natural sign, the star and the flat that realise the reflections.
-- *The Multiplication Operators of the Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the operators $L_{P}$ and $R_{P}$ and their norms.
-- *Reduced Biquaternion Rotations and Lorentz Transformations* (`articles_maths/reduced-biquaternion-rotations-and-lorentz-transformations.md`), above this article, for the multiplicative action on the space and the isometry groups of the four forms.
-- *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the companion in which the algebra is the even part of the Clifford algebra of Lorentzian space.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the four forms, their Gram matrices and the reduced norm.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the bar, the natural sign, the star and the flat that realise the reflections.
+- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the operators $L_{P}$ and $R_{P}$ and their norms.
+- [Reduced Biquaternion Rotations and Lorentz Transformations](reduced-biquaternion-rotations-and-lorentz-transformations.html), above this article, for the multiplicative action on the space and the isometry groups of the four forms.
+- [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the companion in which the algebra is the even part of the Clifford algebra of Lorentzian space.

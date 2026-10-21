@@ -158,10 +158,10 @@ The reduced biquaternion algebra is commutative, associative and unital, and it 
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), for the multiplication and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
-- *Introduction to the Algebra of the Reduced Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the algebra read as an algebra.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotent coordinates and the minimal ideals.
-- *The Group of Units of the Algebra of the Reduced Biquaternions* (`articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the unit group and its complement.
-- *Operators on the Reduced Biquaternions* (`articles_maths/operators-on-the-reduced-biquaternions.md`), for the multiplication operators of the four products.
-- *Introduction to Biquaternion Element Representations* (`articles_maths/introduction-to-biquaternion-element-representations.md`), for the non-commutative companion and the one simple module of dimension two.
-- *Split-Biquaternion Element Representation Theory* (`articles_maths/split-biquaternion-element-representation-theory.md`), for the non-commutative semisimple companion with its two four-dimensional simple modules.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), for the multiplication and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the algebra read as an algebra.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotent coordinates and the minimal ideals.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group and its complement.
+- [Operators on the Reduced Biquaternions](operators-on-the-reduced-biquaternions.html), for the multiplication operators of the four products.
+- [Introduction to Biquaternion Element Representations](introduction-to-biquaternion-element-representations.html), for the non-commutative companion and the one simple module of dimension two.
+- [Split-Biquaternion Element Representation Theory](split-biquaternion-element-representation-theory.html), for the non-commutative semisimple companion with its two four-dimensional simple modules.

@@ -104,12 +104,12 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 
 ## Further Reading
 
-- *The Spinor-Helicity Formalism and Biquaternions* — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.
-- *The Hopf Fibration and the Biquaternion Gauge Bundle* — the unit spinors over the sphere, the Hopf map and its winding numbers.
-- *The Fubini–Study Geometry and the Biquaternion Norm* — the metric of the projective line and the transition probability of the pure states.
-- *The Null Four-Momentum: What the Cone Derives and What It Does Not* — the massless shell as the zero-divisor cone and the limits of the derivation.
-- *Conventions in the Biquaternion Universe* — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.
-- *Twistor Theory and Biquaternions* — the projective null cone, the Segre quadric and the comparison with twistor space.
-- *The Null Quadric and Its Projective Geometry* (mathematics) — the Segre embedding, the quadric $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings and the automorphism group.
-- *The Topology of the Zero-Divisor Cone* (mathematics) — the link of the cone as an $S^1$-bundle over the projectivised cone $S^2\times S^2$.
-- *Biquaternion Rotations and Lorentz Transformations* — the Lorentz action on the lightlike directions and the null cone.
+- [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html) — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.
+- [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html) — the unit spinors over the sphere, the Hopf map and its winding numbers.
+- [The Fubini–Study Geometry and the Biquaternion Norm](the-fubini-study-geometry-and-the-biquaternion-norm.html) — the metric of the projective line and the transition probability of the pure states.
+- [The Null Four-Momentum: What the Cone Derives and What It Does Not](the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html) — the massless shell as the zero-divisor cone and the limits of the derivation.
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.
+- [Twistor Theory and Biquaternions](twistor-theory-and-biquaternions.html) — the projective null cone, the Segre quadric and the comparison with twistor space.
+- [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html) (mathematics) — the Segre embedding, the quadric $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings and the automorphism group.
+- [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) (mathematics) — the link of the cone as an $S^1$-bundle over the projectivised cone $S^2\times S^2$.
+- [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) — the Lorentz action on the lightlike directions and the null cone.

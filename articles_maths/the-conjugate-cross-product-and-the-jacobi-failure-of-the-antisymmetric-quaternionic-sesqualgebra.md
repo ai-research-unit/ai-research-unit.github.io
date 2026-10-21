@@ -134,10 +134,10 @@ The block is the conjugate cross product $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Quaternionic Sesqualgebra*, for the block, its class and its diagonal.
-- *The 12 Products of the Biquaternion Complex Space*, for the three Jacobi failures and their witnesses.
-- *Lie Algebras of Sesqualgebras*, for the obstruction behind the two sesquilinear failures.
-- *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the class-preserving exchange.
-- *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, for the square whose conjugate half-difference is the block.
-- *Introduction to the Antisymmetric Plain Algebra*, for the cross product on the real part.
-- *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*, for the form of the block.
+- [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block, its class and its diagonal.
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the three Jacobi failures and their witnesses.
+- [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html), for the obstruction behind the two sesquilinear failures.
+- [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the class-preserving exchange.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the square whose conjugate half-difference is the block.
+- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the cross product on the real part.
+- [The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the form of the block.

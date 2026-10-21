@@ -113,4 +113,4 @@ The Euler product operator $E$ sends a tuple of local functions $(f_p)_p$, almos
 - Henryk Iwaniec and Emmanuel Kowalski, *Analytic Number Theory* (American Mathematical Society, 2004), for the Euler product of a general $L$-function.
 - Paul Garrett, *Basic Structures of Function Field Arithmetic* (Springer, 1996), for the restricted product of local algebras and the adelic Euler product.
 - Gérald Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory* (American Mathematical Society, 2015), for the growth hypotheses on multiplicative functions.
-- John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions* (thesis, Princeton, 1950; reprinted in *Algebraic Number Theory*), for the local-global factorization of $L$-functions.
+- John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions* (thesis, Princeton, 1950; reprinted in [Algebraic Number Theory](algebraic-number-theory.html)), for the local-global factorization of $L$-functions.

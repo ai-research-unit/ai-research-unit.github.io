@@ -116,8 +116,8 @@ There is no single escape radius for a biquaternion parameter, because a non-zer
 
 ## Further Reading
 
-- *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the family and the central-parameter reduction.
-- *The Biquaternion Mandelbrot Set and the Connectedness Locus* (`articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.md`), for the collapse of the square and the conditional radius.
-- *The Escape Radius and the Green's Function* (`articles_maths/the-escape-radius-and-the-greens-function.md`), for the classical object and its normalization.
-- *The Pluripotential Theory of the Biquaternion Dynamics* (`articles_maths/the-pluripotential-theory-of-the-biquaternion-dynamics.md`), for the several-variable theory and the equilibrium measure.
-- *Several Complex Variables* (`articles_maths/several-complex-variables.md`), for the plurisubharmonic tools and the several-variable theory the general case would need.
+- [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family and the central-parameter reduction.
+- [The Biquaternion Mandelbrot Set and the Connectedness Locus](the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the collapse of the square and the conditional radius.
+- [The Escape Radius and the Green's Function](the-escape-radius-and-the-greens-function.html), for the classical object and its normalization.
+- [The Pluripotential Theory of the Biquaternion Dynamics](the-pluripotential-theory-of-the-biquaternion-dynamics.html), for the several-variable theory and the equilibrium measure.
+- [Several Complex Variables](several-complex-variables.html), for the plurisubharmonic tools and the several-variable theory the general case would need.

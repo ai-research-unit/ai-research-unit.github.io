@@ -337,4 +337,4 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the original formulation of completely positive maps.
 - M.-D. Choi, "Completely positive linear maps on complex matrices," *Linear Algebra and its Applications* **10** (1975) 285–290, for the complete-positivity criterion used in Problem 3.
 - M. B. Ruskai, S. Szarek, and E. Werner, "An analysis of completely-positive trace-preserving maps on $2\times2$ matrices," *Linear Algebra and its Applications* **347** (2002) 159–187, for the affine Bloch-ball picture of qubit channels.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and the earlier exercises of this series.
+- The companion articles of this series: [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), and the earlier exercises of this series.

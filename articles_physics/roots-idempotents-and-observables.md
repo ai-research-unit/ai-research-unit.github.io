@@ -115,7 +115,7 @@ One sign statement belongs here. The central $i$ is anti-Hermitian, $i^{*}=-i$, 
 
 ## The Same Equation Across the Twelve Structures
 
-The equation is relative to the product, so the twelve structures carry twelve root sets. The comparison belongs to *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and to the Derived article *Roots Across the Twelve Structures*; four rows carry the reading.
+The equation is relative to the product, so the twelve structures carry twelve root sets. The comparison belongs to *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and to *The Physical Interpretation of the 12 Products*; four rows carry the reading.
 
 | structure | roots of $+1$ | idempotents | reading |
 | --- | --- | --- | --- |
@@ -144,7 +144,7 @@ The pattern is the one the article has used. **The composition band carries the 
 - **No preferred direction and no preferred state.** The family is the whole sphere, and no algebraic fact selects a point of it. A preferred axis would be an added structure.
 - **No dynamics and no collapse.** The root and its pair are a kinematic identification. Nothing here says how a state evolves or how one outcome is selected.
 - **Not every involution is an algebraic root.** The real structure $\flat=-{}^{*}$ is an antilinear involution whose eigenspaces are the two sectors; being antilinear it is not an element of the algebra, so it is a superselection structure and not a root of $+1$.
-- **The cross-structure table is a summary.** The classification of the twelve root sets is owned by the mathematics article and by *Roots Across the Twelve Structures*; only the rows needed for the reading are quoted.
+- **The cross-structure table is a summary.** The classification of the twelve root sets is owned by the mathematics article and by *The Physical Interpretation of the 12 Products*; only the rows needed for the reading are quoted.
 
 ## Summary
 
@@ -171,10 +171,10 @@ The Hermitian roots are read as the involutive observables, the Hermitian idempo
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the other central value and the nilpotent cone.
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for orthogonality, primitivity and the ideals an idempotent generates.
 - [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), for the sectors, the conjugations and the trace.
-- *The Informational Sector: States, Observables and Probability*, for the sector, the Bloch ball and the Born pairing.
-- *The Roots of a General Element: Mass, Frames and the Mass Shell*, for the general value and the failure of the square-root formula off the cone.
-- *The Local Complex Structure and the Speed of Light*, for the physical reading of the roots of $-1$.
-- *The S-Matrix in Biquaternionic Form*, for the unitary root $\tilde S\tilde S^{*}=e_t$ of a single mode.
-- *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for $R(2\pi)=-e_t$ and the double cover.
-- *Von Neumann Entropy and the Biquaternion Norm* and *Fisher Information and the Biquaternion Norm*, for the zero-entropy and perfectly resolvable readings of the idempotent.
-- [Roots Across the Twelve Structures](roots-across-the-twelve-structures.html), for the full comparison of the twelve root sets.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the sector, the Bloch ball and the Born pairing.
+- [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the general value and the failure of the square-root formula off the cone.
+- [The Local Complex Structure and the Speed of Light](the-local-complex-structure-and-the-speed-of-light.html), for the physical reading of the roots of $-1$.
+- [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the unitary root $\tilde S\tilde S^{*}=e_t$ of a single mode.
+- [The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form](the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html), for $R(2\pi)=-e_t$ and the double cover.
+- [Von Neumann Entropy and the Biquaternion Norm](von-neumann-entropy-and-the-biquaternion-norm.html) and [Fisher Information and the Biquaternion Norm](fisher-information-and-the-biquaternion-norm.html), for the zero-entropy and perfectly resolvable readings of the idempotent.
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the full comparison of the twelve root sets.

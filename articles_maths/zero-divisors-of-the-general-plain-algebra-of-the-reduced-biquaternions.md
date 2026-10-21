@@ -155,9 +155,9 @@ and it is connected, the punctured complex planes being connected.
 
 ## Further Reading
 
-- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article in this category, for the criterion $\langle \breve Q\rangle_{\natural}\neq0$ and the group of units.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article, for the reduced norm, its multiplicativity and the complex quadrics of the four forms.
-- *Introduction to the Algebra of the Reduced Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the maximal ideals and the absence of division.
-- *Annihilators of the Algebra of the Reduced Biquaternions* (`articles_maths/annihilators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the annihilator of an element and the two-sided annihilator of the structure.
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the non-commutative counterpart, for the same object over an algebra with more families.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the definition of a zero divisor used here.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article in this category, for the criterion $\langle \breve Q\rangle_{\natural}\neq0$ and the group of units.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the reduced norm, its multiplicativity and the complex quadrics of the four forms.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the maximal ideals and the absence of division.
+- [Annihilators of the Algebra of the Reduced Biquaternions](annihilators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the annihilator of an element and the two-sided annihilator of the structure.
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), the non-commutative counterpart, for the same object over an algebra with more families.
+- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the definition of a zero divisor used here.

@@ -168,4 +168,4 @@ The **codifferential** $d^{*}$ is the formal adjoint of the exterior derivative 
 - Frank W. Warner, *Foundations of Differentiable Manifolds and Lie Groups*, Graduate Texts in Mathematics 94 (Springer, 1983), for the Hodge theorem, the Hodge decomposition and the Weitzenböck formula.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Hodge Laplacian, the Bochner technique and the Lichnerowicz formula.
 - Shoshichi Kobayashi and Katsumi Nomizu, *Foundations of Differential Geometry*, Vol. I (Wiley, 1963), for the Laplacian on forms, the Weitzenböck identity and the Bochner vanishing theorems.
-- Phillip A. Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the Hodge decomposition on complex manifolds and the Hodge–Riemann relations, developed further in *Hermitian Metrics and the Hodge Theory*.
+- Phillip A. Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the Hodge decomposition on complex manifolds and the Hodge–Riemann relations, developed further in [Hermitian Metrics and the Hodge Theory](hermitian-metrics-and-the-hodge-theory.html).

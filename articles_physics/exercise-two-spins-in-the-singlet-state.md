@@ -266,5 +266,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - J. S. Bell, "On the Einstein–Podolsky–Rosen paradox," *Physics* **1** (1964) 195–200, for the Bell inequalities and the singlet correlations.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of entanglement and Bell states.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the singlet state.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, and *Exercise: Successive Measurements of Spin*.
+- The companion articles of this series: [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), [Exercise: Measuring Spin Along an Arbitrary Direction](exercise-measuring-spin-along-an-arbitrary-direction.html), [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html), and [Exercise: Successive Measurements of Spin](exercise-successive-measurements-of-spin.html).
 

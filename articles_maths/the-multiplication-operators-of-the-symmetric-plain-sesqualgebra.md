@@ -186,11 +186,11 @@ The multiplication operators of the block are $L^{\star}_{\tilde Q_3}\tilde{Q}_2
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra.md`), for the product and its central image.
-- *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* (`articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.md`), for the form $H$ and the rank-one structure of the product.
-- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the general one-sided theory, the composition laws and the adjoints of the linear multiplications.
-- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the two-sided operators of the general product.
-- *Mixed Inner Conjugation on the General Plain Sesqualgebra* (`articles_maths/mixed-inner-conjugation-on-the-general-plain-sesqualgebra.md`), for the operators with two independent one-sided parameters.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form $H$ and its non-degeneracy.
-- *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.md`), the sibling with the Jordan identity on the operators.
-- *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), the bilinear central sibling with linear traces.
+- [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product and its central image.
+- [The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra](the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.html), for the form $H$ and the rank-one structure of the product.
+- [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the general one-sided theory, the composition laws and the adjoints of the linear multiplications.
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the two-sided operators of the general product.
+- [Mixed Inner Conjugation on the General Plain Sesqualgebra](mixed-inner-conjugation-on-the-general-plain-sesqualgebra.html), for the operators with two independent one-sided parameters.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the form $H$ and its non-degeneracy.
+- [The Multiplication Operators of the Symmetric Plain Algebra](the-multiplication-operators-of-the-symmetric-plain-algebra.html), the sibling with the Jordan identity on the operators.
+- [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), the bilinear central sibling with linear traces.

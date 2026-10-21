@@ -144,10 +144,10 @@ The general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the isotopes of a multiplication and the left and right multiplications of a non-associative algebra.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the idempotents, the Peirce decomposition and the left ideals of the associative model $M_2(\mathbb{C})$ to which the operators of the product reduce.
-- *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion that selects the plain product and the table of the twelve structures.
-- *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md`), for the idempotents $0$ and $e_t$ and the displacement of the plain idempotents into the projectors of this article.
-- *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the cone, the two families and the annihilators.
-- *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the nilpotent cone and the index two.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm and the one-sided equations.
-- *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the monoid of the left multiplications and the failure of the right family.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the definition of $\star$ and of the three companion products.
+- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the criterion that selects the plain product and the table of the twelve structures.
+- [Square Roots of One and the Idempotents of the General Quaternionic Algebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html), for the idempotents $0$ and $e_t$ and the displacement of the plain idempotents into the projectors of this article.
+- [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the cone, the two families and the annihilators.
+- [Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.html), for the nilpotent cone and the index two.
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm and the one-sided equations.
+- [The Left Multiplications of the Quaternionic Product and the Opposite Monoid](the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html), for the monoid of the left multiplications and the failure of the right family.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the definition of $\star$ and of the three companion products.

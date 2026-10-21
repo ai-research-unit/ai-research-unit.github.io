@@ -124,13 +124,13 @@ named as a gap and not proposed as a formula.
 
 ## Further Reading
 
-- *Biquaternion Orders and Finite Groups of Units*, for the orders, the finite unit groups and the infinite
+- [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite
   unit group of the complex order.
-- *The Matsubara Thermal Formalism in Biquaternionic Form*, for the thermal circle, the Matsubara frequencies and the
+- [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the thermal circle, the Matsubara frequencies and the
   partition function.
-- *The KMS Condition and the Biquaternion Framework* and *Thermal Time and the Modular Flow in the
+- [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) and *Thermal Time and the Modular Flow in the
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
-- *Conventions in the Biquaternion Universe*, for the central phase that
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the central phase that
   the thermal circle realises.
-- *The Eight Derived Structures: Symmetric and Antisymmetric*, for the discrete charge from the compact
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the discrete charge from the compact
   group.

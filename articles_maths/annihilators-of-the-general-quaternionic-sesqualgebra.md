@@ -166,9 +166,9 @@ meeting of the two involution signs is exactly what makes the two sides two agai
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
-- *Introduction to the General Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the operation and its table.
-- *Zero Divisors of the General Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.md`), above this article in this category, for the criterion and the two families.
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the parent, for the cone $C(\tilde Q_1)=0$.
-- *Annihilators of the General Plain Sesqualgebra* (`articles_maths/annihilators-of-the-general-plain-sesqualgebra.md`), the sibling whose single star identifies the two sides.
-- *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), the sibling whose single natural conjugation identifies the two sides.
+- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
+- [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the operation and its table.
+- [Zero Divisors of the General Quaternionic Sesqualgebra](zero-divisors-of-the-general-quaternionic-sesqualgebra.html), above this article in this category, for the criterion and the two families.
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), the parent, for the cone $C(\tilde Q_1)=0$.
+- [Annihilators of the General Plain Sesqualgebra](annihilators-of-the-general-plain-sesqualgebra.html), the sibling whose single star identifies the two sides.
+- [Annihilators of the General Quaternionic Algebra](annihilators-of-the-general-quaternionic-algebra.html), the sibling whose single natural conjugation identifies the two sides.

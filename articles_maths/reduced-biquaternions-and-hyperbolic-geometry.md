@@ -143,10 +143,10 @@ The indefinite form of the reduced biquaternion algebra, $\langle\cdot,\cdot\ran
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the basis, the relations and the idempotent coordinates.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article, for the indefinite form and its Gram matrix.
-- *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry-for-the-reduced-biquaternions.md`), above this article, for the doubly ruled quadric that is the boundary of the cone.
-- *The Unitary Group of the Reduced Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-reduced-biquaternion-algebra.md`), above this article, for the split unitary group $\{p\bar q=1\}$.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), above this article, for the reflections of the hyperbolic line.
-- *Hyperbolic Geometry* (`articles_maths/hyperbolic-geometry.md`), for the general theory of hyperbolic spaces, geodesics and boundaries, cited and not restated.
-- *Split-Biquaternions and Hyperbolic Geometry* (`articles_maths/split-biquaternions-and-hyperbolic-geometry.md`), for the companion in which the hyperbolic three-space is carried by the anti-Hermitian subspace.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the basis, the relations and the idempotent coordinates.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the indefinite form and its Gram matrix.
+- [The Null Quadric and Its Projective Geometry](the-null-quadric-and-its-projective-geometry-for-the-reduced-biquaternions.html), above this article, for the doubly ruled quadric that is the boundary of the cone.
+- [The Unitary Group of the Reduced Biquaternion Algebra](the-unitary-group-of-the-reduced-biquaternion-algebra.html), above this article, for the split unitary group $\{p\bar q=1\}$.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the reflections of the hyperbolic line.
+- [Hyperbolic Geometry](hyperbolic-geometry.html), for the general theory of hyperbolic spaces, geodesics and boundaries, cited and not restated.
+- [Split-Biquaternions and Hyperbolic Geometry](split-biquaternions-and-hyperbolic-geometry.html), for the companion in which the hyperbolic three-space is carried by the anti-Hermitian subspace.

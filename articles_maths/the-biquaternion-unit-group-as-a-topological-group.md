@@ -107,7 +107,7 @@ $$
 **Proposition (the covering by the centre and the determinant-one group).** The multiplication map
 
 $$
-\mathbb{C}^\times e_t\times\mathbb{B}^\times_1\longrightarrow\mathbb{B}^\times,\qquad (Ze_t,\tilde Q)\longmapstoZe_t\tilde Q,
+\mathbb{C}^\times e_t\times\mathbb{B}^\times_1\longrightarrow\mathbb{B}^\times,\qquad (Ze_t,\tilde Q)\longmapsto Ze_t\tilde Q,
 $$
 
 is surjective and two-to-one, with kernel $\{\pm e_t\}$ acting by $(Ze_t,\tilde Q)\mapsto(-Ze_t,-\tilde Q)$. It is the missing splitting of the determinant sequence made explicit, and in the matrix picture it reads $GL_2(\mathbb{C})\cong\bigl(\mathbb{C}^\times\times SL_2(\mathbb{C})\bigr)/\{\pm I\}$.
@@ -158,9 +158,9 @@ The group of units $\mathbb{B}^\times$ is the complement of the singular cone in
 
 ## Further Reading
 
-- *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the polar decomposition, the retractions, the homotopy groups and the universal cover
-- *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the Euclidean sphere and the contractibility of the ambient space
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the invertibility criterion, the inverse formula and the distribution of the units
-- *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the zero divisors and their cone as the topological boundary of the group of units
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix model and the determinant
+- [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar decomposition, the retractions, the homotopy groups and the universal cover
+- [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the Euclidean sphere and the contractibility of the ambient space
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the invertibility criterion, the inverse formula and the distribution of the units
+- [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the zero divisors and their cone as the topological boundary of the group of units
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model and the determinant
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).

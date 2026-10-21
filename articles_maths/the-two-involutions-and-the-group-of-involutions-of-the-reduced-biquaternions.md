@@ -187,10 +187,10 @@ and their fixed spaces — $\mathbb{R}\{1,j\}$ the real subalgebra, $\mathbb{C}=
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the algebra, the basis and the idempotents.
-- *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$* (`articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.md`), above this article, for the linear and antilinear characters of the four maps.
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*The Conjugations*, for the bar, the natural sign, the star and the flat, the Klein group and the dagger.
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), the biquaternion counterpart, for the same group over the non-commutative algebra, where the natural sign and the star are anti-automorphisms.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), below this article, for the four general products whose slots carry the maps of this article.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), below this article in this category, for the fixed spaces as subspaces.
-- *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the idempotents and their behaviour under the four maps.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the algebra, the basis and the idempotents.
+- [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), above this article, for the linear and antilinear characters of the four maps.
+- [Conventions in Mathematics](conventions-in-mathematics.html), §*The Conjugations*, for the bar, the natural sign, the star and the flat, the Klein group and the dagger.
+- [The Group of Involutions](the-group-of-involutions.html), the biquaternion counterpart, for the same group over the non-commutative algebra, where the natural sign and the star are anti-automorphisms.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products whose slots carry the maps of this article.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), below this article in this category, for the fixed spaces as subspaces.
+- [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the idempotents and their behaviour under the four maps.

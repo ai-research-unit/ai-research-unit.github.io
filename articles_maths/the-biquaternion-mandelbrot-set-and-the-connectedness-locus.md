@@ -162,8 +162,8 @@ The connectedness locus $\mathcal B$ and the critical-orbit locus $\mathcal C$ a
 
 ## Further Reading
 
-- *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the family, the critical set and the central-parameter reduction used here.
-- *The Escape Radius and the Green's Function for the Biquaternions* (`articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.md`), for the conditional radius in full.
-- *The Mandelbrot Set and the Quadratic Family* (`articles_maths/the-mandelbrot-set-and-the-quadratic-family.md`) and *The Real Quadratic Family and Its Bifurcations* (`articles_maths/the-real-quadratic-family-and-its-bifurcations.md`), for the classical loci the slices reproduce.
-- *The Quaternion Mandelbrot Set* (`articles_maths/the-quaternion-mandelbrot-set.md`), for the quaternion slice.
-- *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the set on which the escape test collapses.
+- [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the critical set and the central-parameter reduction used here.
+- [The Escape Radius and the Green's Function for the Biquaternions](the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the conditional radius in full.
+- [The Mandelbrot Set and the Quadratic Family](the-mandelbrot-set-and-the-quadratic-family.html) and [The Real Quadratic Family and Its Bifurcations](the-real-quadratic-family-and-its-bifurcations.html), for the classical loci the slices reproduce.
+- [The Quaternion Mandelbrot Set](the-quaternion-mandelbrot-set.html), for the quaternion slice.
+- [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the set on which the escape test collapses.

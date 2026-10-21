@@ -133,11 +133,11 @@ The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{
 
 ## Further Reading
 
-- *Krein Algebras* (`articles_maths/krein-algebras.md`) and *Self-Adjoint Elements and the Positive Cone* (`articles_maths/self-adjoint-elements-and-the-positive-cone.md`), for the general indefinite cone and order
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for $J$ and the two orders
-- *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form and its null set
-- *J-Self-Adjoint and J-Unitary Operators* (`articles_maths/j-self-adjoint-and-j-unitary-operators.md`), for the $J$-positive cone and the $J$-projections
-- *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the group $\mathrm{U}(1,3)$
-- *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for $\mathfrak{u}(1,3)$, the Jordan part and the symmetric space
-- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the definite cone and the Cartan involution used here
+- [Krein Algebras](krein-algebras.html) and [Self-Adjoint Elements and the Positive Cone](self-adjoint-elements-and-the-positive-cone.html), for the general indefinite cone and order
+- [The Fundamental Symmetry of the Biquaternion Algebra](the-fundamental-symmetry-of-the-biquaternion-algebra.html), for $J$ and the two orders
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form and its null set
+- [J-Self-Adjoint and J-Unitary Operators](j-self-adjoint-and-j-unitary-operators.html), for the $J$-positive cone and the $J$-projections
+- [The Krein Isometry Group and Its J-Contractions](the-krein-isometry-group-and-its-j-contractions.html), for the group $\mathrm{U}(1,3)$
+- [The Krein Cartan Decomposition of the Operator Algebra](the-krein-cartan-decomposition-of-the-operator-algebra.html), for $\mathfrak{u}(1,3)$, the Jordan part and the symmetric space
+- [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the definite cone and the Cartan involution used here
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), and Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite cone and the Cartan involution

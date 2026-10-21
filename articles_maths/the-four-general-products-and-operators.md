@@ -208,13 +208,13 @@ The four general products of the biquaternion algebra are one multiplication wit
 
 ## Further Reading
 
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four rules and the statement that they differ in one point alone
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the table of the four rules side by side
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, their Gram matrices, their signatures and their isometry groups
-- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the four adjoints on explicit operators and the naming rule of the operator families
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
-- *The Signed Sandwich on a Clifford Algebra* (`articles_maths/the-signed-sandwich-on-a-clifford-algebra.md`), for the ordinary sandwich, its minus sign and the repair by the grade involution
-- *Two-Sided Operators with the Signed Product* (`articles_maths/two-sided-operators-with-the-signed-product.md`), for the signed family, its twisted composition law and its coset structure
-- *Two-Sided Operators on the General Quaternionic Algebra* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the parameter insertion in the biquaternion model
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products read on the remarkable real subspaces
-- *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the parity, the determinant and the Lorentz group
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the four rules and the statement that they differ in one point alone
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the table of the four rules side by side
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four forms, their Gram matrices, their signatures and their isometry groups
+- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the four adjoints on explicit operators and the naming rule of the operator families
+- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their group
+- [The Signed Sandwich on a Clifford Algebra](the-signed-sandwich-on-a-clifford-algebra.html), for the ordinary sandwich, its minus sign and the repair by the grade involution
+- [Two-Sided Operators with the Signed Product](two-sided-operators-with-the-signed-product.html), for the signed family, its twisted composition law and its coset structure
+- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the parameter insertion in the biquaternion model
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the four general products read on the remarkable real subspaces
+- [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the parity, the determinant and the Lorentz group

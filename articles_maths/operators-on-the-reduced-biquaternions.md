@@ -156,8 +156,8 @@ Each of the four general products of the reduced biquaternion algebra has a left
 
 ## Further Reading
 
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the four products and the forms.
-- *The Multiplication Operators of the Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the plain operator alone.
-- *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.md`), for the matrices of the element.
-- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the invertibility criterion.
-- *Introduction to Biquaternion Element Representations* (`articles_maths/introduction-to-biquaternion-element-representations.md`), for the non-commutative companion with its one simple module of dimension two.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products and the forms.
+- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the plain operator alone.
+- [Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.html), for the matrices of the element.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility criterion.
+- [Introduction to Biquaternion Element Representations](introduction-to-biquaternion-element-representations.html), for the non-commutative companion with its one simple module of dimension two.

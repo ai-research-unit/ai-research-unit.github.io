@@ -190,7 +190,7 @@ any of the remarkable subspaces, since it has none on the whole algebra.
 
 **Proposition (the coincidence on the real elements).** On two elements with real coefficients,
 drawn from the quaternion subspace, the form $\langle\cdot,\cdot\rangle_{\natural}$ coincides with the Hermitian form of *The 4 Forms
-over the Biquaternioid $\mathbb{C}$ Space*,
+over the Biquaternion $\mathbb{C}$ Space*,
 
 $$
 \tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}} \quad\Longrightarrow\quad
@@ -248,9 +248,9 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the quaternion form among the four pairings
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form beside the other three coefficients
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, the polarisation and the Hermitian form
-- *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restriction Gram matrices and the signatures
-- *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic elements
-- *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ and the groups preserving it
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the quaternion form among the four pairings
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the quaternion form beside the other three coefficients
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm, the polarisation and the Hermitian form
+- [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the restriction Gram matrices and the signatures
+- [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic elements
+- [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), for the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ and the groups preserving it

@@ -17,7 +17,7 @@ The article is the Clifford entry of the split biquaternion system, the higher r
 
 **Conventions.** The Clifford algebra $\mathrm{Cl}(3)$ is generated over $\mathbb{C}$ by $E_1,E_2,E_3$ with
 $$
-E_\mu^2=-1, \qquad E_\muE_\nu=-E_\nuE_\mu \quad (\mu\neq\nu),
+E_\mu^2=-1, \qquad E_\mu E_\nu=-E_\nu E_\mu \quad (\mu\neq\nu),
 $$
 so that $\{E_\mu,E_\nu\}=-2\delta_{\mu\nu}$; the eight monomials $E_1^{\epsilon_1}E_2^{\epsilon_2}E_3^{\epsilon_3}$, $\epsilon_i\in\{0,1\}$, are a $\mathbb{C}$-basis. The scalar imaginary is $i$, central, with $i^2=-1$. The Hermitian adjoint is fixed by
 $$
@@ -31,11 +31,11 @@ so that the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{
 $$
 E_1 := j \vec e_x, \qquad E_2 := j \vec e_y, \qquad E_3 := j \vec e_z
 $$
-satisfy $E_\mu^2=-1$ and $E_\muE_\nu=-E_\nuE_\mu$ for $\mu\neq\nu$. Hence they generate a copy of $\mathrm{Cl}(0,3)$ inside $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H}_{\mathbb{D}}\cong\mathrm{Cl}(0,3)$.
+satisfy $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$ for $\mu\neq\nu$. Hence they generate a copy of $\mathrm{Cl}(0,3)$ inside $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H}_{\mathbb{D}}\cong\mathrm{Cl}(0,3)$.
 
 *Proof.* Since $j$ is central with $j^2=+1$ and the quaternion units anticommute with $\vec e_\mu^2=-1$,
 $$
-E_\mu^2 = j^2\vec e_\mu^2 = -1, \qquad E_\muE_\nu = j^2\vec e_\mu \vec e_\nu = \vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu = -E_\nuE_\mu \quad(\mu\neq\nu).
+E_\mu^2 = j^2\vec e_\mu^2 = -1, \qquad E_\mu E_\nu = j^2\vec e_\mu \vec e_\nu = \vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu = -E_\nu E_\mu \quad(\mu\neq\nu).
 $$
 The eight monomials are independent and span $\mathbb{H}_{\mathbb{D}}$, so the generated algebra is the whole of it. The split biquaternion algebra is therefore the Clifford algebra of a three-dimensional negative definite space.
 
@@ -52,7 +52,7 @@ $$
 
 **Proposition (the adjoint on the generators).** With $E_\mu^{\dagger}=-E_\mu$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{\dagger}=\gamma_\mu$, with $\{\gamma_\mu,\gamma_\nu\}=+2\delta_{\mu\nu}$.
 
-*Proof.* The adjoint of a product reverses the order, so $(E_\muE_\nu)^{\dagger}=E_\nu^{\dagger}E_\mu^{\dagger}=(-E_\nu)(-E_\mu)=-E_\muE_\nu$ for $\mu\neq\nu$, consistent; the rest is immediate.
+*Proof.* The adjoint of a product reverses the order, so $(E_\mu E_\nu)^{\dagger}=E_\nu^{\dagger}E_\mu^{\dagger}=(-E_\nu)(-E_\mu)=-E_\mu E_\nu$ for $\mu\neq\nu$, consistent; the rest is immediate.
 
 ## The Volume Element and the Central Splitting
 
@@ -117,7 +117,7 @@ $$
 $$
 The two summands are the two **pinor representations** of $\mathrm{Cl}(3)$: the two simple modules of $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $\omega$.
 
-*Proof.* Sending every generator to its negative preserves the quadratic relations $E_\mu^2=-1$, $E_\muE_\nu=-E_\nuE_\mu$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ act as the two projections and their distinct images are the two non-isomorphic simple modules.
+*Proof.* Sending every generator to its negative preserves the quadratic relations $E_\mu^2=-1$, $E_\mu E_\nu=-E_\nu E_\mu$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ act as the two projections and their distinct images are the two non-isomorphic simple modules.
 
 ## The Ladder Structure and the Minimal Left Ideal
 
@@ -212,7 +212,7 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 | $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra, ${}\cong\mathrm{Cl}(0,3)\cong\mathbb{H}\oplus\mathbb{H}$ |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, ${}\cong M_2(\mathbb{C})\cong\mathbb{C}\mathrm{l}_2$ |
 | $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ | Complex split biquaternions, ${}\cong\mathrm{Cl}_3(\mathbb{C})$ |
-| $E_1,E_2,E_3=j\vec e_x,j\vec e_y,j\vec e_z$ | Clifford generators, $E_\mu^2=-1$, $E_\muE_\nu=-E_\nuE_\mu$ |
+| $E_1,E_2,E_3=j\vec e_x,j\vec e_y,j\vec e_z$ | Clifford generators, $E_\mu^2=-1$, $E_\mu E_\nu=-E_\nu E_\mu$ |
 | $\gamma_\mu=iE_\mu$ | Hermitian generators, $\gamma_\mu^{\dagger}=\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}$ |
 | $\dagger$ | Hermitian adjoint, $E_\mu^{\dagger}=-E_\mu$, $i^{\dagger}=-i$ |
 | $\omega=E_1E_2E_3=-j$ | Volume element, central, self-adjoint, $\omega^2=1$ |
@@ -232,7 +232,7 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification $\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the volume element of an odd complex Clifford algebra, and the centrality that produces the splitting.
 - H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton, 1989), for the volume element, the chirality grading and the two pinor representations of an odd Clifford algebra.
 - J. H. Conway and D. A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the split biquaternions and their isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$.
-- Companion article *Split-Biquaternion Algebra*, for the algebra being complexified, its conjugations and its idempotents.
-- Companion article *Split-Biquaternion Ideals and Peirce Decomposition*, for the splitting $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
-- Companion article *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* and *Biquaternion Other Algebraic Element Representations*, for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.
-- Companion article *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.
+- Companion article [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the algebra being complexified, its conjugations and its idempotents.
+- Companion article [Split-Biquaternion Ideals and Peirce Decomposition](split-biquaternion-ideals-and-peirce-decomposition.html), for the splitting $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
+- Companion article [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html) and [Biquaternion Other Algebraic Element Representations](biquaternion-other-algebraic-element-representations.html), for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.
+- Companion article [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.

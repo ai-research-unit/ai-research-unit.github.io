@@ -173,8 +173,8 @@ The reduced biquaternions carry three algebraic presentations beside the four-ve
 
 ## Further Reading
 
-- *Introduction to Reduced Biquaternion Element Representations* (`articles_maths/introduction-to-reduced-biquaternion-element-representations.md`), for the representations and the two characters.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotent splitting.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the products and the forms.
-- *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md`), for the diagonal model.
-- *Biquaternion Other Algebraic Element Representations* (`articles_maths/biquaternion-other-algebraic-element-representations.md`), for the non-commutative companion and the Clifford identification there.
+- [Introduction to Reduced Biquaternion Element Representations](introduction-to-reduced-biquaternion-element-representations.html), for the representations and the two characters.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotent splitting.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the products and the forms.
+- [The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions](the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.html), for the diagonal model.
+- [Biquaternion Other Algebraic Element Representations](biquaternion-other-algebraic-element-representations.html), for the non-commutative companion and the Clifford identification there.

@@ -375,15 +375,15 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 
 ## Further Reading
 
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the immediate parent; its abelian connection, its curvature-commutator identity, its gauge-orbit analysis, and the gap this article takes up.
-- *The Gauge Principle in Biquaternionic Form* — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + \tfrac{iϙ}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
-- *The Field-Strength Biquaternion and Its Invariants* — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
-- *Chiral Fermions in the Biquaternion Framework* — the covariant derivative on the spinor module and the charge operator $Ϙ$, the setting for the matter-representation question.
-- *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the coupled Dirac equation and the left/right matter-representation issue.
-- *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which bounds the non-abelian orbit as well.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector's basis, its four-vectors and the imaginary-scalar/real-vector structure on which the Lie-algebra decomposition rests.
-- *The Informational Sector: States, Observables and Probability* — the Hermitian sector, the rotor action $\tilde{Q}\mapsto HXH^\dagger$, and the trace formula distinguished here from the matrix trace.
-- *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
-- *Quaternion Algebra* and *Conventions in the Biquaternion Universe* — the multiplication rule, the conjugations and the centre used throughout.
-- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian connection, its curvature-commutator identity, its gauge-orbit analysis, and the gap this article takes up.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + \tfrac{iϙ}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the charge operator $Ϙ$, the setting for the matter-representation question.
+- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the coupled Dirac equation and the left/right matter-representation issue.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which bounds the non-abelian orbit as well.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector's basis, its four-vectors and the imaginary-scalar/real-vector structure on which the Lie-algebra decomposition rests.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector, the rotor action $\tilde{Q}\mapsto HXH^\dagger$, and the trace formula distinguished here from the matrix trace.
+- [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
+- [Quaternion Algebra](../articles_maths/quaternion-algebra.html) and [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the multiplication rule, the conjugations and the centre used throughout.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.

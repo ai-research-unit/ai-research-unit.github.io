@@ -1,4 +1,4 @@
-# __Real Spinors and Reality Conditions on the Biquaternioid Algebra with Hermitian Adjoint__
+# __Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint__
 
 ## Introduction
 
@@ -147,13 +147,13 @@ The complex spinor module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ of the biqu
 
 ## Further Reading
 
-- *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the module $S$, the Clifford multiplication $c(\gamma_k)=\sigma_k$, the volume element and the complex commutant.
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their order properties, and *Introduction to the Remarkable Subspaces* for their fixed spaces.
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for $\mathsf{M}_2(e_k)=-i\sigma_k$, the four matrix images and the dressed coefficient conjugation.
-- *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the defining module, its uniqueness and the module theory.
-- *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the minimal left ideals and the doubling $S\mapsto\bar S$.
-- *Real Spinors and Reality Conditions with Inner Conjugation* (`articles_maths/real-spinors-and-reality-conditions-with-inner-conjugation.md`), the general theory of the reality types and the eightfold table, of which this article is the three-dimensional instance.
-- *Bott Periodicity and the Classification* (`articles_maths/bott-periodicity-and-the-classification.md`), for the period-eight classification and the sign table.
+- [Biquaternion Spin Geometry](biquaternion-spin-geometry.html), for the module $S$, the Clifford multiplication $c(\gamma_k)=\sigma_k$, the volume element and the complex commutant.
+- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their order properties, and [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) for their fixed spaces.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for $\mathsf{M}_2(e_k)=-i\sigma_k$, the four matrix images and the dressed coefficient conjugation.
+- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the defining module, its uniqueness and the module theory.
+- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the minimal left ideals and the doubling $S\mapsto\bar S$.
+- [Real Spinors and Reality Conditions with Inner Conjugation](real-spinors-and-reality-conditions-with-inner-conjugation.html), the general theory of the reality types and the eightfold table, of which this article is the three-dimensional instance.
+- [Bott Periodicity and the Classification](bott-periodicity-and-the-classification.html), for the period-eight classification and the sign table.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for reality structures, the signature dependence of the type and the low-dimensional spinor modules.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the four conjugations, their fixed spaces and the matrix models of $\mathrm{Cl}_{3,0}$, $\mathrm{Cl}_{2,1}$ and $\mathrm{Cl}_{0,3}$.
 - Michael F. Atiyah, Raoul Bott and Arnold Shapiro, "Clifford modules," *Topology* **3** (1964), supplement 1, 3–38, for the period-eight classification of the reality types.

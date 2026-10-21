@@ -121,9 +121,9 @@ The matrix model of the reduced biquaternion algebra sends an element $\breve Q=
 
 ## Further Reading
 
-- *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.md`), for the construction of the model and the map on the basis.
-- *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md`), for the algebra read in the model.
-- *Reduced Biquaternion Other Algebraic Element Representations* (`articles_maths/reduced-biquaternion-other-algebraic-element-representations.md`), for the other presentations and their relations.
-- *The Multiplication Operators of the Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the operators $L_{\breve Q}$ and $R_{\breve Q}$ and their norms.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the forms, the norms and the Gram matrices.
-- *Biquaternion Objects and Their Matrix Correspondences* (`articles_maths/biquaternion-objects-and-their-matrix-correspondences.md`), for the companion in which the left and the right multiplications differ.
+- [Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.html), for the construction of the model and the map on the basis.
+- [The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions](the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.html), for the algebra read in the model.
+- [Reduced Biquaternion Other Algebraic Element Representations](reduced-biquaternion-other-algebraic-element-representations.html), for the other presentations and their relations.
+- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the operators $L_{\breve Q}$ and $R_{\breve Q}$ and their norms.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the forms, the norms and the Gram matrices.
+- [Biquaternion Objects and Their Matrix Correspondences](biquaternion-objects-and-their-matrix-correspondences.html), for the companion in which the left and the right multiplications differ.

@@ -14,13 +14,13 @@ The treatment is mathematically honest: every claim is either proved or stated a
 A **representation** of $\mathbb{D}$ is a real vector space $V$ together with a bilinear map
 
 $$
-\rho : \mathbb{D} \times V \to V, \qquad \rho(A, v) = A \cdot v,
+\rho : \mathbb{D} \times V \to V, \qquad \rho(Q, v) = Q \cdot v,
 $$
 
 satisfying
 
 $$
-A \cdot (B \cdot v) = (AB) \cdot v, \qquad 1 \cdot v = v.
+Q \cdot (B \cdot v) = (QB) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism
@@ -33,22 +33,22 @@ Since $\mathbb{D}$ is commutative, the image of $\rho$ is a commutative subalgeb
 
 ### The Idempotent Action
 
-The idempotents $\Pi_1$ and $\Pi_2$ act as projection operators. For any representation $V$,
+The idempotents $\Pi_+$ and $\Pi_-$ act as projection operators. For any representation $V$,
 
 $$
-\Pi_1 \cdot (\Pi_1 \cdot v) = \Pi_1^2 \cdot v = \Pi_1 \cdot v,
+\Pi_+ \cdot (\Pi_+ \cdot v) = \Pi_+^2 \cdot v = \Pi_+ \cdot v,
 $$
 
-so $\Pi_1$ is idempotent, and similarly for $\Pi_2$. Moreover,
+so $\Pi_+$ is idempotent, and similarly for $\Pi_-$. Moreover,
 
 $$
-\Pi_1 \cdot (\Pi_2 \cdot v) = (\Pi_1 \Pi_2) \cdot v = 0,
+\Pi_+ \cdot (\Pi_- \cdot v) = (\Pi_+ \Pi_-) \cdot v = 0,
 $$
 
-and symmetrically. So the images of $\Pi_1$ and $\Pi_2$ are complementary subspaces:
+and symmetrically. So the images of $\Pi_+$ and $\Pi_-$ are complementary subspaces:
 
 $$
-V = V_+ \oplus V_-, \qquad V_+ = \Pi_1 \cdot V, \quad V_- = \Pi_2 \cdot V.
+V = V_+ \oplus V_-, \qquad V_+ = \Pi_+ \cdot V, \quad V_- = \Pi_- \cdot V.
 $$
 
 This is the **idempotent decomposition** of the representation. It is the fundamental structural fact about representations of $\mathbb{D}$.
@@ -58,24 +58,24 @@ This is the **idempotent decomposition** of the representation. It is the fundam
 The **regular representation** of $\mathbb{D}$ is $\mathbb{D}$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(A) B = A B, \qquad A, B \in \mathbb{D}.
+\rho_{\mathrm{reg}}(Q) B = Q B, \qquad Q, B \in \mathbb{D}.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{D} \to \operatorname{End}(\mathbb{D})$ given by $\rho_{\mathrm{reg}}(A) = A$. It is the representation of $\mathbb{D}$ on a two-dimensional real vector space.
+This is the representation $\rho_{\mathrm{reg}} : \mathbb{D} \to \operatorname{End}(\mathbb{D})$ given by $\rho_{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{D}$ on a two-dimensional real vector space.
 
 Under the idempotent decomposition,
 
 $$
-\mathbb{D} = \mathbb{D} \Pi_1 \oplus \mathbb{D} \Pi_2,
+\mathbb{D} = \mathbb{D} \Pi_+ \oplus \mathbb{D} \Pi_-,
 $$
 
-where $\mathbb{D} \Pi_1$ and $\mathbb{D} \Pi_2$ are the two ideals of $\mathbb{D}$, each isomorphic to $\mathbb{R}$. The regular representation decomposes as
+where $\mathbb{D} \Pi_+$ and $\mathbb{D} \Pi_-$ are the two ideals of $\mathbb{D}$, each isomorphic to $\mathbb{R}$. The regular representation decomposes as
 
 $$
 \rho_{\mathrm{reg}} = \rho_+ \oplus \rho_-,
 $$
 
-where $\rho_+$ is the representation on $\mathbb{D} \Pi_1 \cong \mathbb{R}$ and $\rho_-$ is the representation on $\mathbb{D} \Pi_2 \cong \mathbb{R}$.
+where $\rho_+$ is the representation on $\mathbb{D} \Pi_+ \cong \mathbb{R}$ and $\rho_-$ is the representation on $\mathbb{D} \Pi_- \cong \mathbb{R}$.
 
 ### The One-Dimensional Representations
 
@@ -84,7 +84,7 @@ The two one-dimensional representations of $\mathbb{D}$ are:
 **The $+$ representation.** On $\mathbb{R}$, defined by
 
 $$
-\rho_+(A) = A_+ = a + a', \qquad A = a + ja'.
+\rho_+(Q) = Q_+ = q + q', \qquad Q = q + jq'.
 $$
 
 This is the representation that sends $j$ to $+1$.
@@ -92,7 +92,7 @@ This is the representation that sends $j$ to $+1$.
 **The $-$ representation.** On $\mathbb{R}$, defined by
 
 $$
-\rho_-(A) = A_- = a - a', \qquad A = a + ja'.
+\rho_-(Q) = Q_- = q - q', \qquad Q = q + jq'.
 $$
 
 This is the representation that sends $j$ to $-1$.
@@ -117,16 +117,16 @@ $$
 V = V_+ \oplus V_-,
 $$
 
-with $V_+ = \Pi_1 \cdot V$ and $V_- = \Pi_2 \cdot V$. On $V_+$, the action of $A = a + ja'$ is
+with $V_+ = \Pi_+ \cdot V$ and $V_- = \Pi_- \cdot V$. On $V_+$, the action of $Q = q + jq'$ is
 
 $$
-A \cdot v = (a + a') v, \qquad v \in V_+,
+Q \cdot v = (q + q') v, \qquad v \in V_+,
 $$
 
-because $A \Pi_1 = (a + a') \Pi_1$. So $V_+$ is a direct sum of copies of $\rho_+$. Similarly, on $V_-$,
+because $Q \Pi_+ = (q + q') \Pi_+$. So $V_+$ is a direct sum of copies of $\rho_+$. Similarly, on $V_-$,
 
 $$
-A \cdot v = (a - a') v, \qquad v \in V_-,
+Q \cdot v = (q - q') v, \qquad v \in V_-,
 $$
 
 so $V_-$ is a direct sum of copies of $\rho_-$.
@@ -187,10 +187,10 @@ $$
 
 ### The Projection Operators
 
-In any representation $V$, the idempotents $\Pi_1$ and $\Pi_2$ act as projection operators:
+In any representation $V$, the idempotents $\Pi_+$ and $\Pi_-$ act as projection operators:
 
 $$
-P_+ = \rho(\Pi_1), \qquad P_- = \rho(\Pi_2).
+P_+ = \rho(\Pi_+), \qquad P_- = \rho(\Pi_-).
 $$
 
 They satisfy
@@ -203,7 +203,7 @@ So $V = V_+ \oplus V_-$ with $V_+ = \operatorname{im} P_+$ and $V_- = \operatorn
 
 ### The Action on Each Component
 
-On $V_+$, the action of $A = a + ja'$ is multiplication by $a + a'$. On $V_-$, the action is multiplication by $a - a'$. So the representation is completely determined by the pair of scalars $(a + a', a - a')$, which is exactly the image of $A$ under the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.
+On $V_+$, the action of $Q = q + jq'$ is multiplication by $q + q'$. On $V_-$, the action is multiplication by $q - q'$. So the representation is completely determined by the pair of scalars $(q + q', q - q')$, which is exactly the image of $Q$ under the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.
 
 This is the representation-theoretic content of the isomorphism: a representation of $\mathbb{D}$ is the same thing as a pair of real vector spaces, one for each idempotent.
 
@@ -221,7 +221,7 @@ So $\mathbb{D}$ is a **semisimple** algebra: every representation is a direct su
 
 ## Comparison with the Complex Case
 
-The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(A) = a \pm a'$ on $\mathbb{R}$.
+The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(Q) = q \pm q'$ on $\mathbb{R}$.
 
 The reason is that $\mathbb{C}$ is a division algebra, so it has exactly one irreducible representation, whereas $\mathbb{D}$ is not a division algebra: its two irreducible representations are the two homomorphisms $\mathbb{D} \to \mathbb{R}$.
 
@@ -232,7 +232,7 @@ The reason is that $\mathbb{C}$ is a division algebra, so it has exactly one irr
 The **dual** (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{R}}(V, \mathbb{R})$ defined by
 
 $$
-(\rho^*(A) f)(v) = f(\rho(A) v), \qquad A \in \mathbb{D}, \; f \in V^*, \; v \in V.
+(\rho^*(Q) f)(v) = f(\rho(Q) v), \qquad Q \in \mathbb{D}, \; f \in V^*, \; v \in V.
 $$
 
 ### Basic Properties
@@ -256,7 +256,7 @@ $$
 satisfies
 
 $$
-\langle \rho^*(A) f, v \rangle = \langle f, \rho(A) v \rangle.
+\langle \rho^*(Q) f, v \rangle = \langle f, \rho(Q) v \rangle.
 $$
 
 This is the definition of the dual representation, written as a pairing.
@@ -268,10 +268,10 @@ This is the definition of the dual representation, written as a pairing.
 The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{R}} W$ defined by
 
 $$
-A \cdot (v \otimes w) = (A \cdot v) \otimes (A \cdot w).
+Q \cdot (v \otimes w) = (Q \cdot v) \otimes (Q \cdot w).
 $$
 
-This is the componentwise (diagonal) action. The alternatives $A \cdot (v \otimes w) = (A \cdot v) \otimes w$ and $A \cdot (v \otimes w) = v \otimes (A \cdot w)$ agree with each other only when $V$ and $W$ have the same character, so neither of them is the definition.
+This is the componentwise (diagonal) action. The alternatives $Q \cdot (v \otimes w) = (Q \cdot v) \otimes w$ and $Q \cdot (v \otimes w) = v \otimes (Q \cdot w)$ agree with each other only when $V$ and $W$ have the same character, so neither of them is the definition.
 
 ### Basic Properties
 
@@ -296,7 +296,7 @@ This is the same multiplication rule as the group $\mathbb{Z}/2$, with $\rho_+$ 
 A **homomorphism** of representations $V$ and $W$ is a linear map $T : V \to W$ such that
 
 $$
-T(A \cdot v) = A \cdot T(v), \qquad A \in \mathbb{D}, \; v \in V.
+T(Q \cdot v) = Q \cdot T(v), \qquad Q \in \mathbb{D}, \; v \in V.
 $$
 
 The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{D}}(V, W)$.
@@ -329,7 +329,7 @@ the direct sum of the matrix rings of sizes $p$ and $q$. This is a semisimple ri
 
 A representation of $\mathbb{D}$ is a real vector space $V$ together with a bilinear action of the algebra on it. The classification theorem states that every finite-dimensional real representation is isomorphic to a direct sum of copies of the two one-dimensional representations $\rho_+$ and $\rho_-$, so the representation theory is completely determined by the algebra itself.
 
-The idempotent decomposition gives the theory its shape. In any representation the idempotents act as projection operators $P_+ = \rho(\Pi_1)$ and $P_- = \rho(\Pi_2)$, with $P_+ + P_-$ the identity and $P_+P_- = 0$, so every representation splits as the direct sum of its two idempotent components. This is the mechanism by which the algebra behaves as $\mathbb{R} \oplus \mathbb{R}$, and it is the essential difference from the complex case.
+The idempotent decomposition gives the theory its shape. In any representation the idempotents act as projection operators $P_+ = \rho(\Pi_+)$ and $P_- = \rho(\Pi_-)$, with $P_+ + P_-$ the identity and $P_+P_- = 0$, so every representation splits as the direct sum of its two idempotent components. This is the mechanism by which the algebra behaves as $\mathbb{R} \oplus \mathbb{R}$, and it is the essential difference from the complex case.
 
 The article also records the representation ring $R(\mathbb{D})$, the indecomposable representations and their relation to the irreducible ones, the dual or contragredient representation on $V^*$, the tensor product with its diagonal action, and the homomorphisms, the linear maps intertwining the two actions. The final comparison with the complex case isolates the difference between an algebra with two idempotents and one that is a field.
 
@@ -338,17 +338,17 @@ The article also records the representation ring $R(\mathbb{D})$, the indecompos
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
-| $A = a + ja'$ | General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$ |
-| $\Pi_1 = (1 + j)/2$ | Positive idempotent |
-| $\Pi_2 = (1 - j)/2$ | Negative idempotent |
+| $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
+| $\Pi_+ = (1 + j)/2$ | Positive idempotent |
+| $\Pi_- = (1 - j)/2$ | Negative idempotent |
 | $\rho : \mathbb{D} \to \operatorname{End}(V)$ | Representation |
 | $\rho_+$ | One-dimensional representation $j \mapsto +1$ |
 | $\rho_-$ | One-dimensional representation $j \mapsto -1$ |
 | $\rho_{\mathrm{reg}}$ | Regular representation |
-| $V_+ = \Pi_1 \cdot V$ | Positive isotypic component |
-| $V_- = \Pi_2 \cdot V$ | Negative isotypic component |
-| $P_+ = \rho(\Pi_1)$ | Projection onto $V_+$ |
-| $P_- = \rho(\Pi_2)$ | Projection onto $V_-$ |
+| $V_+ = \Pi_+ \cdot V$ | Positive isotypic component |
+| $V_- = \Pi_- \cdot V$ | Negative isotypic component |
+| $P_+ = \rho(\Pi_+)$ | Projection onto $V_+$ |
+| $P_- = \rho(\Pi_-)$ | Projection onto $V_-$ |
 | $V^*$ | Dual representation |
 | $V \otimes W$ | Tensor product |
 | $\operatorname{Hom}_{\mathbb{D}}(V, W)$ | Space of homomorphisms |

@@ -149,9 +149,9 @@ Reduced biquaternion analysis works on a domain of the Euclidean space with metr
 
 ## Further Reading
 
-- *The Euclidean Topology of the Reduced Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-reduced-biquaternion-algebra.md`), for the metric and the unit group.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the two coordinate projections.
-- *Topology and Metric for Each of the Operations* (`articles_maths/topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.md`), for the metric of each product.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the products and the norms used throughout.
-- *Introduction to the Algebra of the Reduced Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the algebra and the idempotent splitting.
-- *Biquaternion Analysis* (`articles_maths/biquaternion-analysis.md`), for the non-commutative companion.
+- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the metric and the unit group.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two coordinate projections.
+- [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.html), for the metric of each product.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the products and the norms used throughout.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the algebra and the idempotent splitting.
+- [Biquaternion Analysis](biquaternion-analysis.html), for the non-commutative companion.

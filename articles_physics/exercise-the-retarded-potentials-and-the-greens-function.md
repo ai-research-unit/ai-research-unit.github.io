@@ -341,13 +341,13 @@ with all sources at the retarded time $t' - R/c$; the retarded solution is autom
 
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for Green's functions, the retarded potentials, and the boundary conditions are listed in the Further Reading sections of those articles.
 
-- *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
-- *The Informational Sector: States, Observables and Probability* — the Hermitian subspace and the trace formula.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the direct parent: the potential equation and the normalisation of the four-current.
-- *The Field-Strength Biquaternion and Its Invariants* — the field strength built from the potential by differentiation, and its biquaternion norm.
-- *The Lorentz Transformation as a Biquaternionic Rotation* — the covariance of the four-potential, inherited here unchanged.
-- *Radiation from Accelerated Charges in Biquaternionic Form* — the companion that states (but does not derive) the retarded kernel and convolution and specializes them to a point charge, with the worldline Jacobian of Problem 4(b).
-- *The Feynman Propagator in Biquaternionic Form* — the causal contour prescription and the relation among the Feynman, retarded, and advanced kernels (Problems 2(c) and 3).
-- *Electromagnetism in Media — The Local Complex Structure at Work* — the medium speed $c = 1/\sqrt{\epsilon\mu}$ and the non-dispersive setting assumed throughout; its section *A Chiral Medium: One Quaternionic Equation* is the source of Further Problem 6.
-- *Biquaternion Integration* and *Biquaternion Analysis on Subspaces* — the elliptic Cauchy kernel and the Euclidean counterpart of the retarded kernel, related by the Wick rotation.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian subspace and the trace formula.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the direct parent: the potential equation and the normalisation of the four-current.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the field strength built from the potential by differentiation, and its biquaternion norm.
+- [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the covariance of the four-potential, inherited here unchanged.
+- [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) — the companion that states (but does not derive) the retarded kernel and convolution and specializes them to a point charge, with the worldline Jacobian of Problem 4(b).
+- [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html) — the causal contour prescription and the relation among the Feynman, retarded, and advanced kernels (Problems 2(c) and 3).
+- [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html) — the medium speed $c = 1/\sqrt{\epsilon\mu}$ and the non-dispersive setting assumed throughout; its section *A Chiral Medium: One Quaternionic Equation* is the source of Further Problem 6.
+- [Biquaternion Integration](../articles_maths/biquaternion-integration.html) and *Biquaternion Analysis on Subspaces* — the elliptic Cauchy kernel and the Euclidean counterpart of the retarded kernel, related by the Wick rotation.

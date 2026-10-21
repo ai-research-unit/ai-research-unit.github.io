@@ -177,9 +177,9 @@ The symmetric plain algebra is a commutative unital Jordan algebra of degree two
 
 ## Further Reading
 
-- *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the Common Theory of the block.
-- *Square Roots of One and the Idempotents of the Biquaternion Algebra*, for the classification of the roots of $+1$ and of the idempotents, the projections and the minimal left ideals.
-- *Norm and Invertibility in the General Quaternionic Algebra*, for the biquaternion norm, its multiplicativity and the invertibility criterion.
-- *Zero Divisors of the Biquaternion Algebra*, for the zero divisors and the structure of the isotropic set.
-- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the degree-two reading and the placement of the block.
-- *Introduction to the Symmetric Plain Algebra*, for the matrix model and the isotopy with the symmetrised matrices.
+- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) and [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the Common Theory of the block.
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the roots of $+1$ and of the idempotents, the projections and the minimal left ideals.
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the biquaternion norm, its multiplicativity and the invertibility criterion.
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the zero divisors and the structure of the isotropic set.
+- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the degree-two reading and the placement of the block.
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra.html), for the matrix model and the isotopy with the symmetrised matrices.

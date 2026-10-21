@@ -435,4 +435,4 @@ We have worked the relativistic kinematics of a two-body decay as an application
 - Particle Data Group, *Review of Particle Physics*, for the particle masses used in Problem 5.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra treatment of relativistic rotors and multiparticle kinematics.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original spacetime-algebra formulation of relativistic mechanics.
-- The companion articles of this series: *Relativistic Mechanics in Biquaternionic Form*, *The Lorentz Transformation as a Biquaternionic Rotation*, and *The Relativistic Two-Body Problem in Biquaternionic Form*.
+- The companion articles of this series: [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), and [The Relativistic Two-Body Problem in Biquaternionic Form](the-relativistic-two-body-problem-in-biquaternionic-form.html).

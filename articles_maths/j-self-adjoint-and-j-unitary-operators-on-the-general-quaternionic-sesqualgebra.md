@@ -155,10 +155,10 @@ The **$J$-adjoint** $T^{\dagger}=JT^{*}J$ is the adjoint for the general quatern
 
 ## Further Reading
 
-- *J-Self-Adjoint and J-Unitary Operators* (`articles_maths/j-self-adjoint-and-j-unitary-operators.md`), for the general theory of the indefinite adjoint and the $J$-positive cone
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the symmetry $J={}^{\natural}$ and the bridge identity
-- *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form whose adjoint this is
-- *Two-Sided Operators on the General Plain Sesqualgebra* and *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`, `articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the definite counterparts
-- *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the indefinite unitary group $\mathrm{U}(1,3)$ and its maximal compact part
-- *The Indefinite Spectra of the Operators on the Biquaternion Algebra* (`articles_maths/the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.md`), for the spectral computations
+- [J-Self-Adjoint and J-Unitary Operators](j-self-adjoint-and-j-unitary-operators.html), for the general theory of the indefinite adjoint and the $J$-positive cone
+- [The Fundamental Symmetry of the Biquaternion Algebra](the-fundamental-symmetry-of-the-biquaternion-algebra.html), for the symmetry $J={}^{\natural}$ and the bridge identity
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form whose adjoint this is
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html) and [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the definite counterparts
+- [The Krein Isometry Group and Its J-Contractions](the-krein-isometry-group-and-its-j-contractions.html), for the indefinite unitary group $\mathrm{U}(1,3)$ and its maximal compact part
+- [The Indefinite Spectra of the Operators on the Biquaternion Algebra](the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.html), for the spectral computations
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite adjoint and its normal forms

@@ -154,10 +154,10 @@ The pin group of the general quaternionic bilinear form is $\mathrm{Pin}=\{\tild
 
 ## Further Reading
 
-- *The Pin and Spin Groups of the Biquaternion Algebra* (`articles_maths/the-pin-and-spin-groups-of-the-biquaternion-algebra.md`), the plain sibling, where the shell $N=\pm1$ has no counterpart, the isometry condition is vacuous and the reflections of the plain form lie outside the two-sided family.
-- *Two-Sided Operators on the General Quaternionic Algebra* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the operator and its laws
-- *One-Sided Operators on the General Quaternionic Algebra* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra.md`), for the factors and the multiplicative criterion
-- *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the ambient group and its topology
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form and its orthogonal group
-- *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* (`articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.md`), for the general theory
-- *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* (`articles_maths/versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.md`), for the general versor and sandwich theory that the versor section specialises
+- [The Pin and Spin Groups of the Biquaternion Algebra](the-pin-and-spin-groups-of-the-biquaternion-algebra.html), the plain sibling, where the shell $N=\pm1$ has no counterpart, the isometry condition is vacuous and the reflections of the plain form lie outside the two-sided family.
+- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the operator and its laws
+- [One-Sided Operators on the General Quaternionic Algebra](one-sided-operators-on-the-general-quaternionic-algebra.html), for the factors and the multiplicative criterion
+- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the ambient group and its topology
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the form and its orthogonal group
+- [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the general theory
+- [Versors, Rotors and the Sandwich Action with Signed Inner Conjugation](versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html), for the general versor and sandwich theory that the versor section specialises

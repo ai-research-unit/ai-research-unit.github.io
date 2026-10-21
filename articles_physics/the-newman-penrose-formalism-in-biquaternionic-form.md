@@ -352,13 +352,13 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 
 ## Further Reading
 
-- *Curved Spacetime and the Biquaternion Framework*, for the frame field and the curvature bivector.
-- *Linearized Gravity in Biquaternionic Form*, for the Weyl tensor and the self-dual and anti-self-dual bivectors recorded there as an open problem.
-- *Gravitational Waves in Biquaternionic Form*, for the null wave vector and the component count $10\to6\to2$ that the null tetrad is used to organise.
-- *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the spinor module $S$, the matrix units $\tilde\Pi_1,\tilde\Pi_2,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
-- *The Null Quadric and Its Projective Geometry*, for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.
-- *Zero Divisors of the Biquaternion Algebra*, for the biquaternion-norm criterion and the classification of zero divisors used throughout.
-- *The Spinor-Helicity Formalism and Biquaternions*, for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, its biquaternion norm, and the identification of its null cone with the zero divisors.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame field and the curvature bivector.
+- [Linearized Gravity in Biquaternionic Form](linearized-gravity-in-biquaternionic-form.html), for the Weyl tensor and the self-dual and anti-self-dual bivectors recorded there as an open problem.
+- [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the null wave vector and the component count $10\to6\to2$ that the null tetrad is used to organise.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the spinor module $S$, the matrix units $\tilde\Pi_1,\tilde\Pi_2,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
+- [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html), for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.
+- [Zero Divisors of the Biquaternion Algebra](../articles_maths/zero-divisors-of-the-biquaternion-algebra.html), for the biquaternion-norm criterion and the classification of zero divisors used throughout.
+- [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html), for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, its biquaternion norm, and the identification of its null cone with the zero divisors.
 - *Spinors*, for the two-component spinor conventions.
 

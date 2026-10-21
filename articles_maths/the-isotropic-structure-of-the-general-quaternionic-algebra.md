@@ -105,9 +105,9 @@ The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$,
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the classification of the isotropic elements
-- *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
-- *The Realification of the Eight Derived Structures* (`articles_maths/the-realification-of-the-eight-derived-structures.md`), for the realified null cones of the four forms and the comparison of the cones
-- *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry.md`), for the null quadric and the rulings
-- *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the link of the cone
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the form
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the classification of the isotropic elements
+- [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
+- [The Realification of the Eight Derived Structures](the-realification-of-the-eight-derived-structures.html), for the realified null cones of the four forms and the comparison of the cones
+- [The Null Quadric and Its Projective Geometry](the-null-quadric-and-its-projective-geometry.html), for the null quadric and the rulings
+- [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link of the cone

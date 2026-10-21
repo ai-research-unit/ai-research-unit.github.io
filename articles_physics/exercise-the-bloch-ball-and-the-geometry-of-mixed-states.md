@@ -365,4 +365,4 @@ We have worked six problems on the geometry of the qubit state space, using only
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the operational meaning of distinguishability and the trace distance.
 - Richard Jozsa, "Fidelity for mixed quantum states," *Journal of Modern Optics* **41** (1994) 2315–2323, for the closed-form Uhlmann transition probability of a qubit.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the spin-1/2 formalism and the Bloch vector.
-- The companion article of this series: *The Bloch Ball as the Normalised Slice of the Future Light Cone*, whose state-space results are applied throughout.
+- The companion article of this series: [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), whose state-space results are applied throughout.

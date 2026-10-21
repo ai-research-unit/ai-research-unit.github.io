@@ -179,7 +179,7 @@ $$
 \partial/\partial q_t\,u = \partial/\partial q'_t\,v, \qquad \partial/\partial q'_t\,u = \partial/\partial q_t\,v,
 $$
 
-and the twice differentiable functions that are harmonic in the split complex sense solve the wave equation $\partial^2/\partial q_t^2 f - \partial^2/\partial q'_t^2 f = 0$ rather than the Laplace equation. Embedded in $\mathbb{H}_{\mathbb{D}}$, the centre inherits the restriction of the ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis*, and on the centre that operator is the split complex Cauchy–Riemann operator above. The absence of an elliptic harmonic theory on the centre is the analytic expression of the indefiniteness of its split-biquaternion norm: the restricted form is $q_t^2 - q'^2_0$, of signature $(1,1)$, and its isotropic directions are the two null lines of the zero divisors.
+and the twice differentiable functions that are harmonic in the split complex sense solve the wave equation $\partial^2/\partial q_t^2 f - \partial^2/\partial {q'_t}^2 f = 0$ rather than the Laplace equation. Embedded in $\mathbb{H}_{\mathbb{D}}$, the centre inherits the restriction of the ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis*, and on the centre that operator is the split complex Cauchy–Riemann operator above. The absence of an elliptic harmonic theory on the centre is the analytic expression of the indefiniteness of its split-biquaternion norm: the restricted form is $q_t^2 - q'^2_0$, of signature $(1,1)$, and its isotropic directions are the two null lines of the zero divisors.
 
 ## The Geometry of the Split Complex Subspace
 

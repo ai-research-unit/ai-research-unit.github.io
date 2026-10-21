@@ -137,8 +137,8 @@ Of the twelve structures on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition, the corner subalgebras and the matrix units of a finite-dimensional associative algebra.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for left alternativity and the alternative laws.
-- *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the ideal lattice, the annihilator and the Peirce decomposition.
-- *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the module category and its semisimplicity.
-- *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the bi-module.
-- *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the boundary of the criterion.
-- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the isolation.
+- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the ideal lattice, the annihilator and the Peirce decomposition.
+- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the module category and its semisimplicity.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the bi-module.
+- [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the boundary of the criterion.
+- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve structures and the isolation.

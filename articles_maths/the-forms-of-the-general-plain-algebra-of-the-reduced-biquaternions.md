@@ -163,9 +163,9 @@ The general plain algebra carries four distinguished forms, the scalar parts of 
 
 ## Further Reading
 
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the four products, their forms and their norms together.
-- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the norm of the multiplication.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the vanishing sets of the norms.
-- *The Multiplication Operators of the Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the adjoint rule and the bi-module structure.
-- *The Two Involutions and the Group of Involutions of the Reduced Biquaternions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the natural sign, the star and the bar.
-- *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form* (`articles_maths/the-form-on-the-biquaternion-algebra-as-a-general-plain-sesquilinear-form.md`), for the non-commutative companion of the layer's selection.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products, their forms and their norms together.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the norm of the multiplication.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the vanishing sets of the norms.
+- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the adjoint rule and the bi-module structure.
+- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the natural sign, the star and the bar.
+- [The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form](the-form-on-the-biquaternion-algebra-as-a-general-plain-sesquilinear-form.html), for the non-commutative companion of the layer's selection.

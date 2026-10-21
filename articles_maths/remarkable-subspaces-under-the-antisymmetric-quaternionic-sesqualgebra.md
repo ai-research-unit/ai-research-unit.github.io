@@ -108,9 +108,9 @@ On the remarkable subspaces the block vanishes identically on the centre, has it
 
 ## Further Reading
 
-- *Introduction to the Remarkable Subspaces*, for the remarkable real subspaces and their bases.
-- *Remarkable Subspaces under the General Quaternionic Sesqualgebra*, for the norm reading of the same six.
-- *Introduction to the Antisymmetric Quaternionic Sesqualgebra*, for the block.
-- *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the diagonal and its cone.
-- *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*, for the form of the block on the remarkable subspaces.
-- *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, for the multiplication operators of the block.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases.
+- [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the norm reading of the same six.
+- [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block.
+- [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the diagonal and its cone.
+- [The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the form of the block on the remarkable subspaces.
+- [The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the multiplication operators of the block.

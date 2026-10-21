@@ -236,7 +236,7 @@ The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the
 
 ## Further Reading
 
-- [Roots Across the Twelve Structures](roots-across-the-twelve-structures.html), for the root sets of the twelve products and the existence classes.
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the root sets of the twelve products and the existence classes.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the roots of $+1$ and the idempotents as states.
 - [Roots, Idempotents and Quantum Information](roots-idempotents-and-quantum-information.html), for the idempotent structure of the qubit.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the massless shell.

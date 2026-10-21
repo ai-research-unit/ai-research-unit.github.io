@@ -292,6 +292,6 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the ball and the two hyperbolic models.
 - [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the cone and the operator cone.
 - [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the null set and the doubly-null lines.
-- *The Four Forms and the Four Algebraic Norms*, for the place of the Krein form among the four forms.
-- *The Operators: One-Sided, Two-Sided, Sandwich*, for the one-sided and two-sided operators of the form.
-- *The Polar Representation and Its Three Pairings*, for the factors that the isometries act on.
+- [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the place of the Krein form among the four forms.
+- [The Operators: One-Sided, Two-Sided, Sandwich](the-operators-one-sided-two-sided-sandwich.html), for the one-sided and two-sided operators of the form.
+- [The Polar Representation and Its Three Pairings](the-polar-representation-and-its-three-pairings.html), for the factors that the isometries act on.

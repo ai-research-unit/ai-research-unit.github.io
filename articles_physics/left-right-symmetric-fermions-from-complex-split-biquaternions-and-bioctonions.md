@@ -198,6 +198,6 @@ The left-right symmetric construction of Vaibhav and Singh rests on two exact al
 - S. Dodelson and L. M. Widrow, "Sterile neutrinos as dark matter," *Physical Review Letters* **72** (1994) 17, for the keV sterile-neutrino dark-matter mechanism.
 - L. Boyle, "The standard model, the exceptional Jordan algebra, and triality," arXiv:2006.16265, and M. Dubois-Violette and I. Todorov, "Exceptional quantum geometry and particle physics," *Nuclear Physics B* **938** (2019) 751, for $\mathrm{F}_4$, $\mathrm{E}_6$ and their maximal subgroups, cited by the source.
 - S. L. Adler, *Quantum Theory as an Emergent Phenomenon* (Cambridge, 2004), for trace dynamics, the programme's route from a matrix mechanics to quantum theory.
-- Companion article *Complex Split Biquaternions and the Clifford Algebra Cl(3)*, for the algebraic doubling of the lepton case.
-- Companion article *The Particle Roster of the Complex Octonionic Chain Algebra*, for the undoubled construction, its charges and its three open tests.
-- Companion article *The Seesaw Mechanism and Majorana Mass in Biquaternionic Form*, for the mass mechanism in the framework's own conventions.
+- Companion article [Complex Split Biquaternions and the Clifford Algebra Cl(3)](../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html), for the algebraic doubling of the lepton case.
+- Companion article [The Particle Roster of the Complex Octonionic Chain Algebra](the-particle-roster-of-the-complex-octonionic-chain-algebra.html), for the undoubled construction, its charges and its three open tests.
+- Companion article [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html), for the mass mechanism in the framework's own conventions.

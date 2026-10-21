@@ -270,4 +270,4 @@ A rotation is a unitary rotor, an algebra automorphism, with the angle halved in
 - [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html), for the unit group and the norm-one slice.
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html), for the topology of the group.
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the compact real form and the quotient $U(\mathbb{B})/U(1)\cong SO(3)$.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vector dictionary.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vector dictionary.

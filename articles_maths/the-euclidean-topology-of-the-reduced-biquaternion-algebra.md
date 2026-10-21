@@ -4,7 +4,7 @@
 
 The Euclidean topology of the reduced biquaternion algebra is the topology of the norm $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}$, and this article develops it: the isometry onto $\mathbb{R}^{4}$, the algebra read as a normed algebra, the contractibility, the unit group as a topological group, the Euclidean unit sphere and the topology of the zero-divisor set. The algebra is **commutative**, and the two facts that shape the topology are that the multiplication **has zero divisors** — so the norm is not submultiplicative with constant one, and the unit group is the complement of the zero-divisor set — and that the algebra is **not a division algebra**. The Euclidean topology is the subject; the algebraic norm $\langle\cdot\rangle_{\natural*}$ is only the tool, and the four algebraic norms are distinguished from it throughout.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$. The Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}=\sqrt{q_+^{2}+q'_+^{2}+q_-^{2}+q'_-^{2}}$, from the positive definite form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde.
+**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$. The Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}=\sqrt{q_+^{2}+{q'_+}^{2}+q_-^{2}+{q'_-}^{2}}$, from the positive definite form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde.
 
 **Boundaries.** The topology and the metric are set up in *Topology in the Space of Reduced Biquaternions*; the metric of each product is *Topology and Metric for Each of the Operations*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the unit group and its complement are *The Group of Units of the Algebra of the Reduced Biquaternions*; and the forms are *The Forms of the Algebra of the Reduced Biquaternions*. The biquaternion counterpart is *The Euclidean Topology of the Biquaternion Algebra*.
 
@@ -18,7 +18,7 @@ $$
 $$
 is an isometry of $\mathbb{B}_{\mathrm{r}}$ with the norm $\lVert\cdot\rVert$ onto $\mathbb{R}^{4}$ with its standard Euclidean norm, and it is an isomorphism of real vector spaces.
 
-*Proof.* $\lVert \breve Q\rVert^{2}=q_+^{2}+q'_+^{2}+q_-^{2}+q'_-^{2}$ is the sum of the squares of the four coordinates, which is the square of the standard Euclidean norm of the quadruple; the map is a bijective real-linear map by *The Four-Vector Element Representation of the Reduced Biquaternions*, and it preserves the norm by the display.
+*Proof.* $\lVert \breve Q\rVert^{2}=q_+^{2}+{q'_+}^{2}+q_-^{2}+{q'_-}^{2}$ is the sum of the squares of the four coordinates, which is the square of the standard Euclidean norm of the quadruple; the map is a bijective real-linear map by *The Four-Vector Element Representation of the Reduced Biquaternions*, and it preserves the norm by the display.
 
 **Corollary (the geometry is the standard one).** Every topological property of the space is the corresponding property of $\mathbb{R}^{4}$: the space is complete, separable, locally compact, second-countable, finite-dimensional and non-compact, and its one-point compactification is $S^{4}$.
 
@@ -170,8 +170,8 @@ The Euclidean topology of the reduced biquaternion algebra is the topology of th
 
 ## Further Reading
 
-- *Topology in the Space of Reduced Biquaternions* (`articles_maths/topology-in-the-space-of-reduced-biquaternions.md`), for the norm, the topology and the continuity of the products.
-- *Topology and Metric for Each of the Operations* (`articles_maths/topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.md`), for the metric of each product.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the two lines.
-- *The Group of Units of the Algebra of the Reduced Biquaternions* (`articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the unit group.
-- *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the non-commutative companion and its zero-divisor cone.
+- [Topology in the Space of Reduced Biquaternions](topology-in-the-space-of-reduced-biquaternions.html), for the norm, the topology and the continuity of the products.
+- [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.html), for the metric of each product.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two lines.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group.
+- [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the non-commutative companion and its zero-divisor cone.

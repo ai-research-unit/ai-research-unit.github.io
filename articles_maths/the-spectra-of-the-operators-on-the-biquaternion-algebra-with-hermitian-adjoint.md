@@ -134,11 +134,11 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 
 ## Further Reading
 
-- *The Spectra of Self-Adjoint Operators with Hermitian Adjoint* (`articles_maths/the-spectra-of-self-adjoint-operators-with-hermitian-adjoint.md`), the general spectral theorem of which this is the biquaternion instance.
-- *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the spectra of **elements**: the element-level theory that this article uses and does not repeat.
-- *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general operator-level theory of the adjoint.
-- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`) and *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the definitions, the type criteria and the composition laws.
-- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the solvability and the solution of $\tilde Q_1X+X\tilde D=c$.
-- *Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity statements at the level of maps.
-- *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations and their weights.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable real subspaces
+- [The Spectra of Self-Adjoint Operators with Hermitian Adjoint](the-spectra-of-self-adjoint-operators-with-hermitian-adjoint.html), the general spectral theorem of which this is the biquaternion instance.
+- [Biquaternion Spectral Theory](biquaternion-spectral-theory.html), for the spectra of **elements**: the element-level theory that this article uses and does not repeat.
+- [Self-Adjoint and Skew Operators with Hermitian Adjoint](self-adjoint-and-skew-operators-with-hermitian-adjoint.html), for the general operator-level theory of the adjoint.
+- [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html) and [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the definitions, the type criteria and the composition laws.
+- [The Hermitian Sylvester Equation](the-hermitian-sylvester-equation.html), for the solvability and the solution of $\tilde Q_1X+X\tilde D=c$.
+- [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity statements at the level of maps.
+- [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the derivations and their weights.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces

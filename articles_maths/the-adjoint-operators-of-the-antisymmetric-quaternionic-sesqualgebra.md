@@ -171,9 +171,9 @@ The left multiplication $L_{\tilde Q_3}\tilde Q_2=\vec Q_3\times\overline{\vec R
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Quaternionic Sesqualgebra*, for the block.
-- *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*, for the form the adjoint is taken with respect to.
-- *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the conjugate cross product and its cone.
-- *The Krein Gram Matrix and the Restrictions of the Form*, for the form and the vector subspace.
-- *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the general construction of a part.
-- *Introduction to the Symmetric Quaternionic Sesqualgebra*, for the same operators in the two matrix models.
+- [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block.
+- [The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the form the adjoint is taken with respect to.
+- [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the conjugate cross product and its cone.
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form and the vector subspace.
+- [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the general construction of a part.
+- [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the same operators in the two matrix models.

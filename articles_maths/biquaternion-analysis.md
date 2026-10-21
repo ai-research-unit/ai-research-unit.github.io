@@ -529,7 +529,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 
 ## Further Reading
 
-- *Remarkable Subspaces and the Analysis* (`articles_maths/remarkable-subspaces-and-the-analysis.md`), for the restriction of these operators to the remarkable subspaces, the second-order operator as the operator of the norm, and the ellipticity dichotomy.
+- [Remarkable Subspaces and the Analysis](remarkable-subspaces-and-the-analysis.html), for the restriction of these operators to the remarkable subspaces, the second-order operator as the operator of the norm, and the ellipticity dichotomy.
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.

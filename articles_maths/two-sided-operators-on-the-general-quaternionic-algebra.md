@@ -187,9 +187,9 @@ The **twisted two-sided operator** of the biquaternion algebra is $\Theta_{\tild
 
 ## Further Reading
 
-- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the signed inner conjugation $\tilde Q_6^{\natural}\tilde Q_4\tilde Q_6^{-1}$ against the unsigned $\tilde Q_6\tilde Q_4\tilde Q_6^{-1}$, their difference $-2\vec Q_6\tilde Q_4\tilde Q_6^{-1}$ and the two matrices of the sign
-- *One-Sided Operators on the General Quaternionic Algebra* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra.md`), for the factors
-- *The Pin and Spin Groups of the General Quaternionic Algebra* (`articles_maths/the-pin-and-spin-groups-of-the-general-quaternionic-algebra.md`), for the groups cut out by the norm
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic bilinear form and its Gram matrix
-- *Mixed Inner Conjugation on the General Plain Sesqualgebra* (`articles_maths/mixed-inner-conjugation-on-the-general-plain-sesqualgebra.md`), for the corresponding family over the dagger
-- *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* (`articles_maths/two-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.md`), for the general theory
+- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the signed inner conjugation $\tilde Q_6^{\natural}\tilde Q_4\tilde Q_6^{-1}$ against the unsigned $\tilde Q_6\tilde Q_4\tilde Q_6^{-1}$, their difference $-2\vec Q_6\tilde Q_4\tilde Q_6^{-1}$ and the two matrices of the sign
+- [One-Sided Operators on the General Quaternionic Algebra](one-sided-operators-on-the-general-quaternionic-algebra.html), for the factors
+- [The Pin and Spin Groups of the General Quaternionic Algebra](the-pin-and-spin-groups-of-the-general-quaternionic-algebra.html), for the groups cut out by the norm
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general quaternionic bilinear form and its Gram matrix
+- [Mixed Inner Conjugation on the General Plain Sesqualgebra](mixed-inner-conjugation-on-the-general-plain-sesqualgebra.html), for the corresponding family over the dagger
+- [Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation](two-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html), for the general theory

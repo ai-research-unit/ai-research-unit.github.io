@@ -237,5 +237,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard formulation of spin dynamics.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of Larmor precession.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Bloch sphere and the evolution of qubits.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, and *Exercise: Measuring Spin Along an Arbitrary Direction*.
+- The companion articles of this series: [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), and [Exercise: Measuring Spin Along an Arbitrary Direction](exercise-measuring-spin-along-an-arbitrary-direction.html).
 

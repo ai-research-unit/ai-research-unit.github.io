@@ -205,13 +205,13 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 
 ## Further Reading
 
-- *Introduction to the Biquaternion Universe*, for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local scale factor of the structure.
-- *Why Complexify Spacetime?*, for the $ict'$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
-- *The Informational Sector: States, Observables and Probability*, for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
-- *A Brief History of Biquaternions in Physics*, for the displacement of the $ict'$ convention and its relation to the abandonment of the complex formalism.
-- *Electromagnetism in Media — The Local Complex Structure at Work*, the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
-- *Maxwell's Equations in the Biquaternionic Formulation*, for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.
-- *The Field-Strength Biquaternion and Its Invariants*, for the field-strength normalisation that uses the same scale $c$ and the two medium parameters.
-- *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the Euclidean continuation and the sense in which the imaginary time direction carries thermodynamic content.
-- *Curved Spacetime and the Biquaternion Framework*, for the tetrad and spin-connection extension that the local structure requires beyond a single tangent space.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local scale factor of the structure.
+- [Why Complexify Spacetime?](why-complexify-spacetime.html), for the $ict'$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
+- [A Brief History of Biquaternions in Physics](a-brief-history-of-biquaternions-in-physics.html), for the displacement of the $ict'$ convention and its relation to the abandonment of the complex formalism.
+- [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html), for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html), for the field-strength normalisation that uses the same scale $c$ and the two medium parameters.
+- [Interpretation of the Wick Rotation in the Biquaternion Universe](the-interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the Euclidean continuation and the sense in which the imaginary time direction carries thermodynamic content.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the tetrad and spin-connection extension that the local structure requires beyond a single tangent space.

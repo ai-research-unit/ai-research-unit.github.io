@@ -135,10 +135,10 @@ The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $\mathr
 
 ## Further Reading
 
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the criteria in the algebra's families
-- *J-Normal Operators and the Indefinite Spectral Theorem* (`articles_maths/j-normal-operators-and-the-indefinite-spectral-theorem.md`), for normality and the spectral symmetries
-- *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the Lie algebra $\mathfrak{u}(1,3)$ and the maximal compact subalgebra
-- *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the complex hyperbolic ball on which the group acts
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the $J$-positive cone used in the definition of the contractions
-- *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the Lorentz transformations realised by the boosts
+- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the criteria in the algebra's families
+- [J-Normal Operators and the Indefinite Spectral Theorem](j-normal-operators-and-the-indefinite-spectral-theorem.html), for normality and the spectral symmetries
+- [The Krein Cartan Decomposition of the Operator Algebra](the-krein-cartan-decomposition-of-the-operator-algebra.html), for the Lie algebra $\mathfrak{u}(1,3)$ and the maximal compact subalgebra
+- [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the complex hyperbolic ball on which the group acts
+- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html), for the $J$-positive cone used in the definition of the contractions
+- [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz transformations realised by the boosts
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the unitary group of an indefinite form, its maximal compact part and the contractions

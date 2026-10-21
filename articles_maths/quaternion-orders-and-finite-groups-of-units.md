@@ -101,6 +101,6 @@ The Lipschitz order $\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$ 
 
 ## Further Reading
 
-- *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the norm and the inverse
-- *The Quaternion Unit Group as a Topological Group* (`articles_maths/the-quaternion-unit-group-as-a-topological-group.md`), for the group of units of the algebra and the sphere
-- *Quaternion Rotations and Reflections* (`articles_maths/quaternion-rotations-and-reflections.md`), for the rotation groups of the quotients
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm and the inverse
+- [The Quaternion Unit Group as a Topological Group](the-quaternion-unit-group-as-a-topological-group.html), for the group of units of the algebra and the sphere
+- [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html), for the rotation groups of the quotients

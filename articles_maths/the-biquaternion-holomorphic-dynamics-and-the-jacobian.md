@@ -105,8 +105,8 @@ The biquaternion quadratic map is holomorphic, its derivative at a point is the 
 
 ## Further Reading
 
-- *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the family and the critical set.
-- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), for the operator reading of the derivative.
-- *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the cone and the singular part of the fractal.
-- *The Fatou Components and the Classification of the Dynamics* (`articles_maths/the-fatou-components-and-the-classification-of-the-dynamics.md`), for the one-variable classification the central-parameter theorem reproduces.
-- *Several Complex Variables* (`articles_maths/several-complex-variables.md`), for the several-variable definitions kept apart here.
+- [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family and the critical set.
+- [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), for the operator reading of the derivative.
+- [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone and the singular part of the fractal.
+- [The Fatou Components and the Classification of the Dynamics](the-fatou-components-and-the-classification-of-the-dynamics.html), for the one-variable classification the central-parameter theorem reproduces.
+- [Several Complex Variables](several-complex-variables.html), for the several-variable definitions kept apart here.

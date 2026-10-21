@@ -246,7 +246,7 @@ The frame is the axis of the observable up to sign. The Hermitian roots of $+1$ 
 
 ## The Operators of the Twelve Structures
 
-The twelve structures of the *Biquaternioid Algebraic Structures* category are twelve products on one vector space. Each product attaches its own left and right multiplications, and each form attaches its own adjoint. The operator algebra with a unit exists only for the general plain bilinear product, the associative unital row.
+The twelve structures of the *Biquaternion Algebraic Structures* category are twelve products on one vector space. Each product attaches its own left and right multiplications, and each form attaches its own adjoint. The operator algebra with a unit exists only for the general plain bilinear product, the associative unital row.
 
 | Structure | Product | The operator content |
 | --- | --- | --- |
@@ -331,6 +331,6 @@ The twelve structures are not one calculus. Only the general plain bilinear row 
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the monoid, the enveloping algebra and the two-sided maps.
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the frames.
 - [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html), for the Hermitian corners and the state/observable split.
-- *The Eight Derived Structures: Symmetric and Antisymmetric*, for the crossing table of the twelve structures.
-- *The Complementary Ideal and the Second State Space*, for the corners in full.
-- *The Element and Operator Representations*, for the pictures in which these operators are matrices.
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the crossing table of the twelve structures.
+- [The Complementary Ideal and the Second State Space](the-complementary-ideal-and-the-second-state-space.html), for the corners in full.
+- [The Element and Operator Representations](the-element-and-operator-representations.html), for the pictures in which these operators are matrices.

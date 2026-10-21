@@ -132,9 +132,9 @@ The reduced biquaternion algebra carries four algebraic norms. The definite one,
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the idempotent coordinates and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article, for the four norms, their Gram matrices and their signatures.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the two minimal ideals that are the lines of the degenerate quadric.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the null cone of the reduced norm as the set of zero divisors.
-- *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry.md`), for the non-degenerate case of the biquaternion algebra, where the null quadric is smooth in complex projective three-space.
-- *Split-Biquaternion Null Quadric and Projective Geometry* (`articles_maths/split-biquaternion-null-quadric-and-projective-geometry.md`), for the split-complex companion.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotent coordinates and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the four norms, their Gram matrices and their signatures.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the two minimal ideals that are the lines of the degenerate quadric.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the null cone of the reduced norm as the set of zero divisors.
+- [The Null Quadric and Its Projective Geometry](the-null-quadric-and-its-projective-geometry.html), for the non-degenerate case of the biquaternion algebra, where the null quadric is smooth in complex projective three-space.
+- [Split-Biquaternion Null Quadric and Projective Geometry](split-biquaternion-null-quadric-and-projective-geometry.html), for the split-complex companion.

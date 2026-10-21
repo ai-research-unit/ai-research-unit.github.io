@@ -443,4 +443,4 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 - Richard Courant and David Hilbert, *Methods of Mathematical Physics*, Vol. II (Interscience, 1962), for the characteristic cone of the wave operator.
 - F. G. Friedlander, *The Wave Equation on a Curved Space-Time* (Cambridge, 1975), for the finite speed of propagation and the support of retarded solutions.
 - Stefano Liberati, Sebastiano Sonego and Matt Visser, "Faster-than-c signals, special relativity, and causality," *Annals of Physics* **298** (2002) 167–185, for the relation between superluminal signalling and the failure of the causal order.
-- *Exercise: Boosting a Four-Velocity and Rapidity Composition*, companion article, for *Problem 5: A Varying Rapidity*, the construction behind *The Boundary of the Theorem: a Constant Rapidity*.
+- [Exercise: Boosting a Four-Velocity and Rapidity Composition](exercise-boosting-a-four-velocity-and-rapidity-composition.html), companion article, for *Problem 5: A Varying Rapidity*, the construction behind *The Boundary of the Theorem: a Constant Rapidity*.

@@ -104,13 +104,13 @@ $$
 **Theorem (Green's representation formula).** For $w \in C^2(\overline\Omega)$ and for each $x \in \Omega$, the second Green identity in the form
 
 $$
-w(x) = \int_{\partial\Omega}\Bigl(w(y)\,\frac{\partial\Phi}{\partial\n\partial/\partial y w}(x-y) - \Phi(x-y)\,\frac{\partial w}{\partial\nu}(y)\Bigr)dS(y) + \int_\Omega \Phi(x-y)\,\Delta w(y)\,dy
+w(x) = \int_{\partial\Omega}\Bigl(w(y)\,\frac{\partial\Phi}{\partial\nu}(x-y) - \Phi(x-y)\,\frac{\partial w}{\partial\nu}(y)\Bigr)dS(y) + \int_\Omega \Phi(x-y)\,\Delta w(y)\,dy
 $$
 
 expresses $w$ in terms of its boundary values, its normal derivative and its Laplacian. If $w$ is harmonic and $H(x,y)$ is the **harmonic corrector** solving the Dirichlet problem $\Delta_yH=0$ with $H(x,y) = \Phi(x-y)$ for $y \in \partial\Omega$, then with the **Green's function** $G(x,y) = \Phi(x-y) - H(x,y)$,
 
 $$
-w(x) = -\int_{\partial\Omega}w(y)\,\frac{\partial G}{\partial\n\partial/\partial y w}(x,y)\,dS(y),
+w(x) = -\int_{\partial\Omega}w(y)\,\frac{\partial G}{\partial\nu}(x,y)\,dS(y),
 $$
 
 so a harmonic function is determined by its boundary values alone.

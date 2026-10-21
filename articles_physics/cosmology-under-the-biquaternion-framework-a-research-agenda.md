@@ -254,19 +254,19 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 
 ## Further Reading
 
-- *Introduction to the Biquaternion Universe* — the algebra, the two sectors, the local complex structure, and the sector-coupling open question this agenda inherits.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the material sector, the four-vectors, the bilinear form, and the interval.
-- *The Informational Sector: States, Observables and Probability* — the informational sector, the trace formula, the no-dynamics and no-coupling statements, and the entropy open question.
-- *Curved Spacetime and the Biquaternion Framework* — the frame route, the local-scale route and its metric class, the two-sided covariant derivative, and the informational trace's missing measure; the parent of this agenda.
-- *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* — the dynamics, the central non-linear question, and the settling object; the Friedmann equations belong to this agenda's central item and are not duplicated here.
-- *The Partition Function in Biquaternionic Form* — the framework's thermodynamics, the qubit partition function, and the boundary this agenda finds the cosmological case against.
-- *Quantum Thermodynamics in Biquaternionic Form* and *The KMS Condition and the Biquaternion Framework* — the thermal functionals and the imaginary-time structure behind the rank-two limitation.
-- *Black Hole Thermodynamics in Biquaternionic Form* — the horizon and extended ($\Lambda$/$P$–$V$) thermodynamics, the scaling argument, and the $\Lambda$ correction to the Smarr relation.
-- *Interpretation of the Wick Rotation in the Biquaternion Universe* — the transfer between $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ that underlies the imaginary-time interpretation.
-- *The Local Complex Structure and the Speed of Light* and *Electromagnetism in Media — The Local Complex Structure at Work* — the local $c$ whose cosmological interpretations are examined here.
-- *Exercise: The Electromagnetic Energy–Momentum Tensor* and *The Field-Strength Biquaternion and Its Invariants* — the framework's rank-two constructions, relevant to the source-carrier item.
-- *Noether's Theorem in Biquaternionic Form* — the conservation-law machinery any cosmological source would need.
-- *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the $(1,1)\oplus(0,0)$ and $(\tfrac12,\tfrac12)$ bookkeeping behind the rank-two limitation.
-- *The Conformal Group in Biquaternionic Form* — the conformal structures relevant to a radiation-dominated universe.
-- *The Empirical Status of the Biquaternion Framework* — the standing empirical-equivalence result, under which any biquaternionic cosmology would labour.
-- *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the companion agenda whose three-way classification and fabricated-premise discipline this article follows.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, the local complex structure, and the sector-coupling open question this agenda inherits.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the material sector, the four-vectors, the bilinear form, and the interval.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the informational sector, the trace formula, the no-dynamics and no-coupling statements, and the entropy open question.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the frame route, the local-scale route and its metric class, the two-sided covariant derivative, and the informational trace's missing measure; the parent of this agenda.
+- [The Einstein Field Equations under the Biquaternion Framework — A Research Agenda](the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html) — the dynamics, the central non-linear question, and the settling object; the Friedmann equations belong to this agenda's central item and are not duplicated here.
+- [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) — the framework's thermodynamics, the qubit partition function, and the boundary this agenda finds the cosmological case against.
+- [Quantum Thermodynamics in Biquaternionic Form](quantum-thermodynamics-in-biquaternionic-form.html) and [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) — the thermal functionals and the imaginary-time structure behind the rank-two limitation.
+- [Black Hole Thermodynamics in Biquaternionic Form](black-hole-thermodynamics-in-biquaternionic-form.html) — the horizon and extended ($\Lambda$/$P$–$V$) thermodynamics, the scaling argument, and the $\Lambda$ correction to the Smarr relation.
+- [Interpretation of the Wick Rotation in the Biquaternion Universe](the-interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html) — the transfer between $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ that underlies the imaginary-time interpretation.
+- [The Local Complex Structure and the Speed of Light](the-local-complex-structure-and-the-speed-of-light.html) and [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html) — the local $c$ whose cosmological interpretations are examined here.
+- [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) and [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the framework's rank-two constructions, relevant to the source-carrier item.
+- [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) — the conservation-law machinery any cosmological source would need.
+- [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the $(1,1)\oplus(0,0)$ and $(\tfrac12,\tfrac12)$ bookkeeping behind the rank-two limitation.
+- [The Conformal Group in Biquaternionic Form](the-conformal-group-in-biquaternionic-form.html) — the conformal structures relevant to a radiation-dominated universe.
+- [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) — the standing empirical-equivalence result, under which any biquaternionic cosmology would labour.
+- [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — the companion agenda whose three-way classification and fabricated-premise discipline this article follows.

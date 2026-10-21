@@ -361,6 +361,6 @@ Among the four general products of *The Four General Products of the Biquaternio
 - Harald Hanche-Olsen and Erling Størmer, *Jordan Operator Algebras* (Pitman, 1984), for the Jordan triple identity and the model of an involutive algebra.
 - Richard V. Kadison and John R. Ringrose, *Fundamentals of the Theory of Operator Algebras*, vol. I (Academic Press, 1983), for the adjoint, the Hermitian and the skew-Hermitian elements and the positive cone.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the $\varsigma$-semilinear involutions and the derived operation.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table that decides which of the four general products is a sesquilinear multiplication.
-- *Sesqualgebras* (`articles_maths/sesqualgebras.md`), for the axioms, the collapse theorem and the standard example.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the product, its coordinate rule and its scalar–vector form.
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the property table that decides which of the four general products is a sesquilinear multiplication.
+- [Sesqualgebras](sesqualgebras.html), for the axioms, the collapse theorem and the standard example.

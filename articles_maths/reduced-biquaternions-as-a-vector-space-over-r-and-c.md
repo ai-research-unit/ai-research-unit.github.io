@@ -185,10 +185,10 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the algebra, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), below this article, for the bar, the natural sign, the star and the flat and the group they generate.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), below this article, for the four general products and the clause that decides which slot carries a conjugation.
-- *The Four-Vector Element Representation of the Reduced Biquaternions* (`articles_maths/the-four-vector-element-representation-of-the-reduced-biquaternions.md`), for the real quadruple and the complex pair as element representations.
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
-- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
-- *The Split-Complexoid as a Vector Space over $\mathbb{R}$* (`articles_maths/the-split-complexoid-as-a-vector-space-over-r.md`), for the real companion $\mathbb{D}$ and its self-interpretation over the algebra.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the algebra, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), below this article, for the bar, the natural sign, the star and the flat and the group they generate.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the clause that decides which slot carries a conjugation.
+- [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
+- [Conventions in Mathematics](conventions-in-mathematics.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
+- [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), for the real companion $\mathbb{D}$ and its self-interpretation over the algebra.

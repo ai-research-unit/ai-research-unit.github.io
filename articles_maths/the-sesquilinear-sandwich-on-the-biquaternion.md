@@ -1,5 +1,5 @@
 
-# __The Sesquilinear Sandwich on the Biquaternioid__
+# __The Sesquilinear Sandwich on the Biquaternion__
 
 ## Introduction
 
@@ -9,11 +9,11 @@ $$
 S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\star\tilde Q_1\star\tilde Q_2=(\tilde Q\star\tilde Q_1)\star\tilde Q_2=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*} .
 $$
 
-It is the two-sided operator of the multiplication, the operator analogue of the ordinary two-sided multiplication $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q_2$ of the algebra, and the whole difference between the two is the involution in the middle: $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$, where $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2^{*}$ is the linear two-sided multiplication and ${}^{*}$ is the involution. The sandwich is therefore conjugate-linear, and it is the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right and the left multiplication of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
+It is the two-sided operator of the multiplication, the operator analogue of the ordinary two-sided multiplication $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q_2$ of the algebra, and the whole difference between the two is the involution in the middle: $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$, where $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2^{*}$ is the linear two-sided multiplication and ${}^{*}$ is the involution. The sandwich is therefore conjugate-linear, and it is the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right and the left multiplication of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
 Three properties fix the operator. It is conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second, so it carries one parity from the middle slot and one from the second parameter. The sandwiches are not closed under composition: the composite of two of them is the linear two-sided multiplication $T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}}$, the two conjugations cancelling, so the sandwiches together with the two-sided multiplications form a monoid in which the parity is multiplicative and the sandwiches are the conjugate-linear half. And the sandwich is invertible exactly when both parameters are units, with the explicit inverse $S_{\tilde Q_2^{-1},\tilde Q^{-1}}$.
 
-The article is the sixth of the batch and reads the general article *The Sesquilinear Sandwich Operator*, whose composition table and invertibility criterion are quoted; the two-sided multiplication it uses is the linear operator of the same article, and the two one-sided cases are *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, above in this group. The ternary form of the sandwich is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator of the ternary product is *The Ternary Product as an Operator*; the adjoint of the sandwich is *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, below.
+The article is the sixth of the batch and reads the general article *The Sesquilinear Sandwich Operator*, whose composition table and invertibility criterion are quoted; the two-sided multiplication it uses is the linear operator of the same article, and the two one-sided cases are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, above in this group. The ternary form of the sandwich is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator of the ternary product is *The Ternary Product as an Operator*; the adjoint of the sandwich is *The Adjoint of the Sesquilinear Sandwich on the Biquaternion*, below.
 
 The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$. Writing $T_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2$ for the ordinary two-sided multiplication, the sandwich is $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$. The invertible elements are those with $\langle\tilde Q_2\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$, by *Norm and Invertibility in the General Quaternionic Algebra*, and the rank of an element is the rank of its matrix in the model of *Biquaternion $2\times2$ Matrix Element Representation*.
 
@@ -37,7 +37,7 @@ $$
 
 and it is the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right multiplication by $\tilde Q_2$ and the left multiplication by $\tilde Q$.
 
-**Proof.** $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1^{*})=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the first display. For the second, $R_{\tilde Q_2}L_{\tilde Q}(\tilde Q_1)=R_{\tilde Q_2}(\tilde Q\tilde Q_1^{*})=(\tilde Q\tilde Q_1^{*})\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$; the composite of the two one-sided operators is the mixed composition $R_{\tilde Q_8}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_8}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*, with $\tilde Q_8=\tilde Q_2$ and $\tilde Q_2=\tilde Q$.
+**Proof.** $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1^{*})=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the first display. For the second, $R_{\tilde Q_2}L_{\tilde Q}(\tilde Q_1)=R_{\tilde Q_2}(\tilde Q\tilde Q_1^{*})=(\tilde Q\tilde Q_1^{*})\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$; the composite of the two one-sided operators is the mixed composition $R_{\tilde Q_8}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_8}$ of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Mixed Composites*, with $\tilde Q_8=\tilde Q_2$ and $\tilde Q_2=\tilde Q$.
 
 **Remark.** The second reading is the reason the sandwich is the two-sided completion of the one-sided actions: the left multiplication conjugates the variable and the right multiplication conjugates the parameter, and the two together conjugate both. The associativity of the algebra is what makes the composite well defined, and the failure of the associativity of the multiplication is what makes $S_{\tilde Q,\tilde Q_2}$ different from $S$ with the two parameters interchanged; the two groupings of the triple $(\tilde Q,\tilde Q_1,\tilde Q_2)$ differ by the associator of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
 
@@ -65,7 +65,7 @@ $$
 
 and $S_{e_t,e_t}$ is the involution of the algebra.
 
-**Proof.** $S_{e_t,e_t}(\tilde Q_1)=e_t\tilde Q_1^{*}e_t=\tilde Q_1^{*}$; $S_{\tilde Q,e_t}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}=L_{\tilde Q}(\tilde Q_1)$ by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Definition*; and $S_{e_t,\tilde Q_2}(\tilde Q_1)=\tilde Q_1^{*}\tilde Q_2^{*}$.
+**Proof.** $S_{e_t,e_t}(\tilde Q_1)=e_t\tilde Q_1^{*}e_t=\tilde Q_1^{*}$; $S_{\tilde Q,e_t}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}=L_{\tilde Q}(\tilde Q_1)$ by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Definition*; and $S_{e_t,\tilde Q_2}(\tilde Q_1)=\tilde Q_1^{*}\tilde Q_2^{*}$.
 
 **Remark.** The sandwich with a unit in the second slot is the left multiplication, and with a unit in the first slot it is the composite of the involution with the right multiplication. The two are not the two one-sided multiplications: the right multiplication is $S_{?}$ with a unit in the *first* slot only in the ordinary two-sided notation, and here the involution enters the middle. The asymmetry is the asymmetry of the multiplication, whose unit is a right unit alone.
 
@@ -96,7 +96,7 @@ is a monoid under composition with identity $T_{e_t,e_t}=\mathrm{id}$, in which 
 
 **Proof.** The four identities of the theorem show that the parity of a composite is the product of the parities, and that each composite stays in one of the two families; the identity is $T_{e_t,e_t}$.
 
-**Remark.** The parity is the whole content: the composite of two conjugate-linear maps is linear, so two sandwiches cannot compose to a sandwich, and the residue is an ordinary two-sided multiplication. This is the same phenomenon as for the left and the right multiplications, and it is why the operator theory of a sesqualgebra carries two families rather than one; the sandwich is the two-sided completion of the two one-sided families of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
+**Remark.** The parity is the whole content: the composite of two conjugate-linear maps is linear, so two sandwiches cannot compose to a sandwich, and the residue is an ordinary two-sided multiplication. This is the same phenomenon as for the left and the right multiplications, and it is why the operator theory of a sesqualgebra carries two families rather than one; the sandwich is the two-sided completion of the two one-sided families of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
 ### The Square and the Involution
 
@@ -196,7 +196,7 @@ $$
 
 the sandwich with the two parameters conjugate to each other and the middle variable $\tilde Q_5$.
 
-**Remark.** The quadratic representation is the operator of *The Ternary Product as an Operator*, §*The Quadratic Representation*, read on $\mathbb{B}$; its adjoint, and the adjoint of the sandwich with arbitrary parameters, is *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, below. The two operator families, the one-sided and the two-sided, are the whole of the operator theory that the multiplication carries, and the ternary product is the two-sided family read with one parameter tied.
+**Remark.** The quadratic representation is the operator of *The Ternary Product as an Operator*, §*The Quadratic Representation*, read on $\mathbb{B}$; its adjoint, and the adjoint of the sandwich with arbitrary parameters, is *The Adjoint of the Sesquilinear Sandwich on the Biquaternion*, below. The two operator families, the one-sided and the two-sided, are the whole of the operator theory that the multiplication carries, and the ternary product is the two-sided family read with one parameter tied.
 
 ## The Sandwich as the Two-Sided Action
 

@@ -284,14 +284,14 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 
 ## Further Reading
 
-- *Introduction to the Biquaternion Universe*, for the algebra, the two sectors, and the rotor group $SL(2,\mathbb{C})$.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{M}_-$.
-- *The Informational Sector: States, Observables and Probability*, for the Hermitian subspace and the conjugation action of its elements.
-- *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
-- *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, the unit-norm condition, and the relation $\langle R\rangle_{\natural} = e_t$.
-- *The Poincaré Group and the Biquaternion Frame*, for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.
-- *Quantum Physics in Biquaternionic Form*, for the evolution operator $T(t') = \exp(-iHt'/\hbar)$, the Lie algebra $\mathbb{M}_-$, and the distinction between unitarity and the biquaternion norm.
-- *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators $g_k = -\tfrac12 \vec e_k$ and the half-angle exponential that produces the factor $2$ of the double cover.
-- *Exercise: Spin Precession in a Magnetic Field*, for the Hamiltonian of a spin in a field and the precession it generates.
-- *The Harmonic Oscillator in Biquaternionic Form*, for the phase plane, the squeezing-as-boost correspondence, and the caution that identifying the phase plane with a plane of $\mathbb{M}_-$ is an additional step.
-- *Noether's Theorem in Biquaternionic Form*, for the translation generator, the central phase, and the conserved four-momentum.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra, the two sectors, and the rotor group $SL(2,\mathbb{C})$.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{M}_-$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace and the conjugation action of its elements.
+- [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
+- [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the unit-norm condition, and the relation $\langle R\rangle_{\natural} = e_t$.
+- [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html), for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.
+- [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the evolution operator $T(t') = \exp(-iHt'/\hbar)$, the Lie algebra $\mathbb{M}_-$, and the distinction between unitarity and the biquaternion norm.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the rotation generators $g_k = -\tfrac12 \vec e_k$ and the half-angle exponential that produces the factor $2$ of the double cover.
+- [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html), for the Hamiltonian of a spin in a field and the precession it generates.
+- [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the phase plane, the squeezing-as-boost correspondence, and the caution that identifying the phase plane with a plane of $\mathbb{M}_-$ is an additional step.
+- [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the translation generator, the central phase, and the conserved four-momentum.

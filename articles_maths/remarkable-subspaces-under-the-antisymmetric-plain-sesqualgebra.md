@@ -179,11 +179,11 @@ On the remarkable subspaces the block is read as follows. It is central-free: no
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.md`), for the operation, the basis table and the pure-vector image
-- *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md`), for the quadric cone of the square-zero elements, whose cells the two quaternion subspaces are
-- *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.md`), for the form reading of the same six
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`) and *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces.md`), for the subspaces and their bases
-- *Remarkable Subspaces under the General Plain Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md`), for the pattern of the reading and the indefinite sesquilinear form
-- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`) and *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the readings side by side
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the ten operations of the real part and the coincidences there
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the form and the involution that cut the two halves
+- [Introduction to the Antisymmetric Plain Sesqualgebra](introduction-to-the-antisymmetric-plain-sesqualgebra.html), for the operation, the basis table and the pure-vector image
+- [The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra](the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html), for the quadric cone of the square-zero elements, whose cells the two quaternion subspaces are
+- [The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.html), for the form reading of the same six
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) and [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the subspaces and their bases
+- [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the pattern of the reading and the indefinite sesquilinear form
+- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html) and [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the readings side by side
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the ten operations of the real part and the coincidences there
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the form and the involution that cut the two halves

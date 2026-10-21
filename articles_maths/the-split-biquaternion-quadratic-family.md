@@ -142,8 +142,8 @@ The split-biquaternion quadratic family is, by the centrality of the idempotents
 
 ## Further Reading
 
-- *Split-Biquaternion Algebra* (`articles_maths/split-biquaternion-algebra.md`) and *Split-Biquaternion Idempotents and Projections* (`articles_maths/split-biquaternion-idempotents-and-projections.md`), for the algebra and the central idempotents.
-- *Split-Biquaternion Norm and Invertibility* (`articles_maths/split-biquaternion-norm-and-invertibility.md`) and *Split-Biquaternion Zero Divisors* (`articles_maths/split-biquaternion-zero-divisors.md`), for the norm and the ideals.
-- *The Quaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-quaternion-quadratic-map-and-its-julia-sets.md`), *The Escape Radius and the Green's Function for Quaternions* (`articles_maths/the-escape-radius-and-the-greens-function-for-quaternions.md`) and *The Quaternion Mandelbrot Set* (`articles_maths/the-quaternion-mandelbrot-set.md`), for the quaternion theory read here on two factors.
-- *The Split-Biquaternion Julia Sets* (`articles_maths/the-split-biquaternion-julia-sets.md`), for the fractal structure of the product.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-split-fractal.md`), for the biquaternion contrast in which the splitting is only a slice.
+- [Split-Biquaternion Algebra](split-biquaternion-algebra.html) and [Split-Biquaternion Idempotents and Projections](split-biquaternion-idempotents-and-projections.html), for the algebra and the central idempotents.
+- [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html) and [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the norm and the ideals.
+- [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html), [The Escape Radius and the Green's Function for Quaternions](the-escape-radius-and-the-greens-function-for-quaternions.html) and [The Quaternion Mandelbrot Set](the-quaternion-mandelbrot-set.html), for the quaternion theory read here on two factors.
+- [The Split-Biquaternion Julia Sets](the-split-biquaternion-julia-sets.html), for the fractal structure of the product.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the biquaternion contrast in which the splitting is only a slice.

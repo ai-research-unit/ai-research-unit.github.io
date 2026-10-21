@@ -87,8 +87,8 @@ The Hausdorff dimension of a biquaternion Julia set is known in three situations
 
 ## Further Reading
 
-- *Fractal Geometry* (`articles_maths/fractal-geometry.md`), for the definition of the dimension and the product formula.
-- *The Slices of the Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-biquaternion-julia-sets.md`), for the slices whose dimensions are computed here.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-split-fractal.md`), for the product structure of the idempotent slice.
-- *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the idempotent manifold and the singular part.
-- *The Biquaternion Iterated Function Systems* (`articles_maths/the-biquaternion-iterated-function-systems.md`), for the similarity dimension of a system, which is the constructive counterpart.
+- [Fractal Geometry](fractal-geometry.html), for the definition of the dimension and the product formula.
+- [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the slices whose dimensions are computed here.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the product structure of the idempotent slice.
+- [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the idempotent manifold and the singular part.
+- [The Biquaternion Iterated Function Systems](the-biquaternion-iterated-function-systems.html), for the similarity dimension of a system, which is the constructive counterpart.

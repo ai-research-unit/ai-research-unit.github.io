@@ -211,11 +211,11 @@ The Killing form of the antisymmetric plain algebra is $\kappa(\tilde Q_1,\tilde
 
 ## Further Reading
 
-- *The Lie Algebra of the Antisymmetric Plain Algebra* (`articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md`), for the centre, the derived algebra, the identifications and the enveloping algebra
-- *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the adjoints, their kernels and the derivations
-- *Remarkable Subspaces under the Antisymmetric Plain Algebra* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-plain-algebra.md`), for the same remarkable subspaces read under the bracket instead of the form
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form and its three companions
-- *The Killing Form Operator* (`articles_maths/the-killing-form-operator.md`), for the invariant form of a Lie algebra and its properties
-- *Structure of Lie Algebras* (`articles_maths/structure-of-lie-algebras.md`), for the Cartan criteria, the radical and semisimplicity
-- *The Casimir Operator* (`articles_maths/the-casimir-operator.md`), for the central element of the enveloping algebra and its eigenvalues
-- *Remarkable Subspaces and the Four Forms* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`), for the restriction of the plain form to the remarkable subspaces, compared here with the restriction of $\kappa$
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra.html), for the centre, the derived algebra, the identifications and the enveloping algebra
+- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html), for the adjoints, their kernels and the derivations
+- [Remarkable Subspaces under the Antisymmetric Plain Algebra](remarkable-subspaces-under-the-antisymmetric-plain-algebra.html), for the same remarkable subspaces read under the bracket instead of the form
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general plain bilinear form and its three companions
+- [The Killing Form Operator](the-killing-form-operator.html), for the invariant form of a Lie algebra and its properties
+- [Structure of Lie Algebras](structure-of-lie-algebras.html), for the Cartan criteria, the radical and semisimplicity
+- [The Casimir Operator](the-casimir-operator.html), for the central element of the enveloping algebra and its eigenvalues
+- [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the restriction of the plain form to the remarkable subspaces, compared here with the restriction of $\kappa$

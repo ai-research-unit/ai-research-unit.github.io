@@ -124,9 +124,9 @@ The reduced biquaternion algebra is a Clifford algebra in two senses. It is the 
 
 ## Further Reading
 
-- *Reduced Biquaternion Other Algebraic Element Representations* (`articles_maths/reduced-biquaternion-other-algebraic-element-representations.md`), for the Clifford identification $Cl_{1,0}\otimes Cl_{0,1}$ and the other presentations.
-- *Reduced Biquaternion Versors and the Orthogonal Group* (`articles_maths/reduced-biquaternion-versors-and-the-orthogonal-group.md`), for the even Clifford algebra of the hyperbolic plane and the versor group.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the definite and the indefinite norms.
-- *Reduced Biquaternion Analysis* (`articles_maths/reduced-biquaternion-analysis.md`), for the reduction of the differential calculus to the two complex analyses.
-- *Reduced Biquaternion Regular Functions* (`articles_maths/reduced-biquaternion-regular-functions.md`), for the two Wirtinger derivatives and the reduced Cauchy–Riemann operator.
-- *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the companion in which the algebra is the even part of the Clifford algebra of Lorentzian space and the Dirac operator is elliptic.
+- [Reduced Biquaternion Other Algebraic Element Representations](reduced-biquaternion-other-algebraic-element-representations.html), for the Clifford identification $Cl_{1,0}\otimes Cl_{0,1}$ and the other presentations.
+- [Reduced Biquaternion Versors and the Orthogonal Group](reduced-biquaternion-versors-and-the-orthogonal-group.html), for the even Clifford algebra of the hyperbolic plane and the versor group.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the definite and the indefinite norms.
+- [Reduced Biquaternion Analysis](reduced-biquaternion-analysis.html), for the reduction of the differential calculus to the two complex analyses.
+- [Reduced Biquaternion Regular Functions](reduced-biquaternion-regular-functions.html), for the two Wirtinger derivatives and the reduced Cauchy–Riemann operator.
+- [Biquaternion Spin Geometry](biquaternion-spin-geometry.html), for the companion in which the algebra is the even part of the Clifford algebra of Lorentzian space and the Dirac operator is elliptic.

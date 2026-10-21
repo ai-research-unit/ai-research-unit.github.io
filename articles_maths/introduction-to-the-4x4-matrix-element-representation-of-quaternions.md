@@ -101,7 +101,7 @@ The left multiplication $\tilde q_3\mapsto \tilde q\tilde q_3$, in the basis $e_
 
 ## Further Reading
 
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element and the multiplication table.
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the left and right multiplications $L_{\tilde p}$ and $R_{\tilde q}$.
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-quaternions.md`), for the companion representation, where the determinant is $\langle\tilde q\rangle_{\natural}$.
-- *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-quaternion-algebra-and-the-bi-module-structure.md`), below this article in this category, for the operators and the two-sided structure.
+- [Quaternion Algebra](quaternion-algebra.html), for the element and the multiplication table.
+- [Quaternion Algebra](quaternion-algebra.html), for the left and right multiplications $L_{\tilde p}$ and $R_{\tilde q}$.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions](introduction-to-the-2x2-matrix-element-representation-of-quaternions.html), for the companion representation, where the determinant is $\langle\tilde q\rangle_{\natural}$.
+- [The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-quaternion-algebra-and-the-bi-module-structure.html), below this article in this category, for the operators and the two-sided structure.

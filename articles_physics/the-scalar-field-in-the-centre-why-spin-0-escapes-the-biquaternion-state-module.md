@@ -94,7 +94,7 @@ J_1^2+J_2^2+J_3^2
 =\tfrac{3}{4}e_t .
 $$
 
-Since $\tfrac{3}{4}=j(j+1)$ gives $j=\tfrac{1}{2}$, the state module carries **spin one-half**, as claimed. The value was confirmed by direct computation in the matrix representation, with the left-multiplication operators checked against the quaternion relations $L_\nuL_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}L_\lambda$ and the Casimir evaluated to $\tfrac{3}{4}I_2$ exactly.
+Since $\tfrac{3}{4}=j(j+1)$ gives $j=\tfrac{1}{2}$, the state module carries **spin one-half**, as claimed. The value was confirmed by direct computation in the matrix representation, with the left-multiplication operators checked against the quaternion relations $L_\nu L_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}L_\lambda$ and the Casimir evaluated to $\tfrac{3}{4}I_2$ exactly.
 
 ### The Module Is Not Rotationally Invariant
 

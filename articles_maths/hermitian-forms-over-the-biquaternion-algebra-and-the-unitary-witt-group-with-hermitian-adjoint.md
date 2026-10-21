@@ -1,4 +1,4 @@
-# __Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint__
+# __Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint__
 
 ## Introduction
 
@@ -147,13 +147,13 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 
 ## Further Reading
 
-- *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint* (`articles_maths/hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
-- *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/hermitian-forms-on-a-hermitian-algebra-with-hermitian-adjoint.md`), for the forms of an anti-involution and the canonical Hermitian form.
-- *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the same objects in coordinates: the forms, positivity, the cone and the slice.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the Hermitian elements and the real form.
-- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the congruence as an operator, its invariants and its degenerate cases.
-- *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.md`), for the positive cone in which the signature lives.
-- *The Unitary Slice and the Compact Real Form with Hermitian Adjoint* (`articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.md`), for the automorphism group of the unit form.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, its isotropy and the group of units.
-- *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the automorphism group of the norm and the contrast with the slice.
-- *Mixed Inner Conjugation and Hermitian Adjoint* (`articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.md`), for the four two-sided operators and the signed congruence.
+- [Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint](hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.html), the general theory of which this is the biquaternion instance.
+- [Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint](hermitian-forms-on-a-hermitian-algebra-with-hermitian-adjoint.html), for the forms of an anti-involution and the canonical Hermitian form.
+- [The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint](the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html), for the same objects in coordinates: the forms, positivity, the cone and the slice.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the Hermitian elements and the real form.
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the congruence as an operator, its invariants and its degenerate cases.
+- [Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the positive cone in which the signature lives.
+- [The Unitary Slice and the Compact Real Form with Hermitian Adjoint](the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html), for the automorphism group of the unit form.
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm, its isotropy and the group of units.
+- [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the automorphism group of the norm and the contrast with the slice.
+- [Mixed Inner Conjugation and Hermitian Adjoint](mixed-inner-conjugation-and-hermitian-adjoint.html), for the four two-sided operators and the signed congruence.

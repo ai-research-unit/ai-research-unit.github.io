@@ -256,18 +256,18 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 
 ## Further Reading
 
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, and the open matter-representation question this agenda inherits.
-- *The Gauge Principle in Biquaternionic Form* — the abelian origin of the connection and the reality-condition gap the non-abelian construction takes up.
-- *Chiral Fermions in the Biquaternion Framework* — the module's chirality structure, the vector-like centre, the mass selection rule, the linear chirality-coupling mass term, and the unformulated anomaly.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, and the open matter-representation question this agenda inherits.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection and the reality-condition gap the non-abelian construction takes up.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the module's chirality structure, the vector-like centre, the mass selection rule, the linear chirality-coupling mass term, and the unformulated anomaly.
 
-- *The Renormalization Group in Biquaternionic Form* — the one-loop non-abelian beta function, $C_2(G)=N$, the QCD coefficient and threshold, and the article's own statement that these are transcribed with the group and matter as inputs; the source of the running-coupling item.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the abelian connection whose non-abelian extension is the parent's starting point.
-- *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the spinor module, the linear chiral mass term, and the real-structure origin of chirality.
+- [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) — the one-loop non-abelian beta function, $C_2(G)=N$, the QCD coefficient and threshold, and the article's own statement that these are transcribed with the group and matter as inputs; the source of the running-coupling item.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension is the parent's starting point.
+- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the spinor module, the linear chiral mass term, and the real-structure origin of chirality.
 
-- *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, a prerequisite the confinement item needs.
-- *Modules over the Biquaternion Algebra* and *Lie Algebras: A General Introduction* — the module structure and the compact-subalgebra facts behind the ceiling on the colour group.
-- *Zero Divisors of the Biquaternion Algebra* and *The Null Quadric and Its Projective Geometry* — the null cone and the bivector structure, the objects closest to the confinement and topological-charge items.
-- *The Lorentz Group in Biquaternionic Form — Structure and Representations* — the representation theory on which the adjoint and fundamental bookkeeping rests.
-- *The Spinor-Helicity Formalism and Biquaternions* — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this agenda makes systematic.
-- *The Empirical Status of the Biquaternion Framework* — the standing empirical-equivalence result, the caution under which any biquaternionic QCD would labour.
-- *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* — the companion agenda whose three-way classification and settling-object discipline this article follows.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, a prerequisite the confinement item needs.
+- [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling on the colour group.
+- [Zero Divisors of the Biquaternion Algebra](../articles_maths/zero-divisors-of-the-biquaternion-algebra.html) and [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html) — the null cone and the bivector structure, the objects closest to the confinement and topological-charge items.
+- [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the representation theory on which the adjoint and fundamental bookkeeping rests.
+- [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html) — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this agenda makes systematic.
+- [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) — the standing empirical-equivalence result, the caution under which any biquaternionic QCD would labour.
+- [The Einstein Field Equations under the Biquaternion Framework — A Research Agenda](the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html) — the companion agenda whose three-way classification and settling-object discipline this article follows.

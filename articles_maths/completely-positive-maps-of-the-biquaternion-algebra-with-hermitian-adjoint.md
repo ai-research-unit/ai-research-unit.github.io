@@ -125,11 +125,11 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 
 ## Further Reading
 
-- *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
-- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich as an operator, its positivity and its cone.
-- *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity criteria in terms of the spectrum of the sandwich.
-- *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
-- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.
-- *Bilinear Operators on a Hermitian Module with Hermitian Adjoint* (`articles_maths/bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.md`), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
-- *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.md`), for the module picture of the positive cone.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for $\mathbb{M}_+$ itself and for the Hermitian idempotents.
+- [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), the general theory of which this is the biquaternion instance.
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich as an operator, its positivity and its cone.
+- [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity criteria in terms of the spectrum of the sandwich.
+- [Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the cone and the positive involution.
+- [The Hermitian Sylvester Equation](the-hermitian-sylvester-equation.html), for the fixed-point operator of a completely positive map.
+- [Bilinear Operators on a Hermitian Module with Hermitian Adjoint](bilinear-operators-on-a-hermitian-module-with-hermitian-adjoint.html), for the operators built from two spinors, which are the rank-one elements behind the Kraus sums.
+- [Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint](hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html), for the module picture of the positive cone.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for $\mathbb{M}_+$ itself and for the Hermitian idempotents.

@@ -220,11 +220,11 @@ The antisymmetric plain algebra makes $\mathbb{B}$ a complex Lie algebra $\mathf
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra.md`), for the bracket, its Jacobi identity and the sixteen brackets of the basis
-- *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the invariant form, its radical and the Casimir element
-- *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the adjoints, their kernels, the derivations and the automorphisms of the bracket
-- *The Unitary Lie Algebra* (`articles_maths/the-unitary-lie-algebra.md`), for the skew-Hermitian elements, the unhalved commutator and the group of linear maps preserving their form
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the remarkable subspaces read under the four general products
-- *Lie Algebras: A General Introduction* (`articles_maths/lie-algebras-a-general-introduction.md`), for the axioms, the ideals, the series, the simplicity and the enveloping algebra
-- *Structure of Lie Algebras* (`articles_maths/structure-of-lie-algebras.md`), for the classical algebras, the isomorphism $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$, the radical and the semisimplicity criteria
-- *Associative Algebras* (`articles_maths/associative-algebras.md`) and *The Commutator Operator* (`articles_maths/the-commutator-operator.md`), for the associativity from which the Jacobi identity descends
+- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the bracket, its Jacobi identity and the sixteen brackets of the basis
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant form, its radical and the Casimir element
+- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html), for the adjoints, their kernels, the derivations and the automorphisms of the bracket
+- [The Unitary Lie Algebra](the-unitary-lie-algebra.html), for the skew-Hermitian elements, the unhalved commutator and the group of linear maps preserving their form
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the remarkable subspaces read under the four general products
+- [Lie Algebras: A General Introduction](lie-algebras-a-general-introduction.html), for the axioms, the ideals, the series, the simplicity and the enveloping algebra
+- [Structure of Lie Algebras](structure-of-lie-algebras.html), for the classical algebras, the isomorphism $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$, the radical and the semisimplicity criteria
+- [Associative Algebras](associative-algebras.html) and [The Commutator Operator](the-commutator-operator.html), for the associativity from which the Jacobi identity descends

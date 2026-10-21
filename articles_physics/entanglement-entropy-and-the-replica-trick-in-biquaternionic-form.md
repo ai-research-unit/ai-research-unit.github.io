@@ -263,8 +263,8 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 - E. Witten, "Notes on some entanglement properties of quantum field theory," *Reviews of Modern Physics* **90** (2018) 045003, for the replica geometry, the divergent terms, and the area law.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the moment/entropy relations and the limiting cases.
 - S. Ryu and T. Takayanagi, "Holographic derivation of entanglement entropy from the anti-de Sitter space/conformal field theory correspondence," *Physical Review Letters* **96** (2006) 181602, for the holographic evaluation of the same moments.
-- Companion article *Strong Subadditivity in the Biquaternion Framework*, for the reduced states, the partial trace, and the tensor powers.
-- Companion article *Relative Entropy and the Biquaternion Framework*, for the entropy closed form of a biquaternion state.
-- Companion article *The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form*, for the modular Hamiltonian of a reduced state.
-- Companion article *The Area Law of Entanglement Entropy in Biquaternionic Form*, for what the replica moments give in the field.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the state space and the plain form.
+- Companion article [Strong Subadditivity in the Biquaternion Framework](strong-subadditivity-in-the-biquaternion-framework.html), for the reduced states, the partial trace, and the tensor powers.
+- Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the entropy closed form of a biquaternion state.
+- Companion article [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), for the modular Hamiltonian of a reduced state.
+- Companion article [The Area Law of Entanglement Entropy in Biquaternionic Form](the-area-law-of-entanglement-entropy-in-biquaternionic-form.html), for what the replica moments give in the field.
+- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the plain form.

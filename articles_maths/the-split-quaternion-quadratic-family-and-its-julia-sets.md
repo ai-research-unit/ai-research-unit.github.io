@@ -134,4 +134,4 @@ The split-quaternion quadratic map $f_c(\tilde q)=\tilde q^2+c$ is the pattern o
 - Garret Sobczyk, "The hyperbolic number plane", *The College Mathematics Journal* 26 (1995), 268–280. The split-complex quadratic map and the idempotent decomposition.
 - John W. Milnor, *Dynamics in One Complex Variable*, 3rd ed. (Princeton, 2006). The complex quadratic family that is the timelike slice.
 - Kenneth Falconer, *Fractal Geometry: Mathematical Foundations and Applications*, 3rd ed. (Wiley, 2014). The dimensions, cited to *Fractal Geometry*.
-- Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974). The Lorentz group and $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$, cited to *Split-Quaternion Rotations and the Lorentz Group*.
+- Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974). The Lorentz group and $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$, cited to [Split-Quaternion Rotations and the Lorentz Group](split-quaternion-rotations-and-the-lorentz-group.html).

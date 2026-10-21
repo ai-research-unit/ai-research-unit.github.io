@@ -433,20 +433,20 @@ clearest statement of what the programme assumes.
 - L. A. Alexeyeva, "Ether and photons in biquaternionic presentation", *SSRG International Journal of
   Applied Physics* **7**(1) (2020) 96–101, doi:10.14445/23500301/IJAP-V7I1P114, the paper recorded
   here.
-- *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, for the programme's field
+- [The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis](the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html), for the programme's field
   theory, its postulate $\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}}$, the magnetic-charge–mass hypothesis, its
   Newton-law analogues and its empirical claims.
-- *Harmonic Elementary Particles and the Periodic System of Atoms*, for the same factorisation applied
+- [Harmonic Elementary Particles and the Periodic System of Atoms](harmonic-elementary-particles-and-the-periodic-system-of-atoms.html), for the same factorisation applied
   to the charge–current field, the Helmholtz potentials and the place of a free frequency in the
   programme's interpretations.
 - L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics
   equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7**(1) (2012) 19–39
-  (arXiv:1302.0523), and *Distributions on Surfaces, Layers, and Jump Conditions* in this corpus, for
+  (arXiv:1302.0523), and [Distributions on Surfaces, Layers, and Jump Conditions](../articles_maths/distributions-on-surfaces-layers-and-jump-conditions.html) in this corpus, for
   the biquaternion convolution and the layer rules the paper's light construction uses.
-- *Radiation from Accelerated Charges in Biquaternionic Form* and *The Retarded Potentials and the
+- [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) and *The Retarded Potentials and the
   Green's Function*, for the corpus's retarded solution and its $r^{-1}$ and $r^{-2}$ far-field
   structure, of which the elementary photon is the monochromatic Helmholtz case.
-- *Gravitational Waves in Biquaternionic Form*, for the corpus's own gravitational wave and its two
+- [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the corpus's own gravitational wave and its two
   polarisations, against which the programme's "no pure gravitational waves" is measured.
-- *Maxwell's Equations in the Biquaternionic Formulation*, for the corpus's dual field strength, its energy density
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html), for the corpus's dual field strength, its energy density
   and Poynting vector, and the conventions this article restates before quoting the 2020 paper.

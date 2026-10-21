@@ -167,9 +167,9 @@ The reduced biquaternion $\breve Q=Q_++jQ_-$ is the matrix $\begin{smallmatrix}Q
 
 ## Further Reading
 
-- *Introduction to Reduced Biquaternion Element Representations* (`articles_maths/introduction-to-reduced-biquaternion-element-representations.md`), for the regular representation.
-- *The Four-Vector Element Representation of the Reduced Biquaternions* (`articles_maths/the-four-vector-element-representation-of-the-reduced-biquaternions.md`), for the real quadruple and the real matrix.
-- *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md`), for the diagonal model of the algebra.
-- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the invertibility criterion.
-- *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.md`), for the real change of basis of determinant $\tfrac14$.
-- *Introduction to the $2\times2$ Matrix Element Representation $M_{2}(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the companion whose image is the whole matrix algebra.
+- [Introduction to Reduced Biquaternion Element Representations](introduction-to-reduced-biquaternion-element-representations.html), for the regular representation.
+- [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the real matrix.
+- [The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions](the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.html), for the diagonal model of the algebra.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility criterion.
+- [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the real change of basis of determinant $\tfrac14$.
+- [Introduction to the $2\times2$ Matrix Element Representation $M_{2}(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the companion whose image is the whole matrix algebra.

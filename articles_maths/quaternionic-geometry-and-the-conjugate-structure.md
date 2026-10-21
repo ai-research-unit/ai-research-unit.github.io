@@ -55,7 +55,7 @@ $$
 \Omega = \omega_1\wedge\omega_1+\omega_2\wedge\omega_2+\omega_3\wedge\omega_3 ,
 $$
 
-where $\omega_\mu(X,Y)=g(J_\muX,Y)$ and $J_1,J_2,J_3$ is a local quaternionic triple.
+where $\omega_\mu(X,Y)=g(J_\mu X,Y)$ and $J_1,J_2,J_3$ is a local quaternionic triple.
 
 **Proposition.** The four-form $\Omega$ is well defined independently of the local triple, it is parallel for the Levi-Civita connection, and it is **invariant under the conjugate structure**; the class of the quaternionic Kähler metric is preserved by the conjugation, and the scalar curvature is invariant.
 
@@ -93,7 +93,7 @@ The **conjugation** of the quaternion algebra fixes the scalars and negates the 
 | $\bar V$, $\bar J_\mu=-J_\mu$ | Conjugate quaternionic vector space and structure |
 | $I_{(a,b,c)}=aJ_1+bJ_2+cJ_3$ | Sphere of compatible complex structures |
 | $J\mapsto-J$ on $S^2$ | The antipodal action of the conjugation |
-| $\omega_\mu(X,Y)=g(J_\muX,Y)$ | Fundamental forms of a local triple |
+| $\omega_\mu(X,Y)=g(J_\mu X,Y)$ | Fundamental forms of a local triple |
 | $\Omega=\sum_\mu\omega_\mu\wedge\omega_\mu$ | Fundamental four-form; conjugation-invariant |
 
 ## Further Reading

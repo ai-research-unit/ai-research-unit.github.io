@@ -1,4 +1,4 @@
-# __Hermitian Modules over the Biquaternioid Algebra with Hermitian Adjoint__
+# __Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint__
 
 ## Introduction
 
@@ -207,13 +207,13 @@ The **unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by unitar
 
 ## Further Reading
 
-- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
-- *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
-- *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
-- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
-- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich, the cone and the definite slice viewed as a group of operators.
-- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity of the involution that makes every restriction positive definite.
-- *Biquaternion Spin Geometry* (`articles_maths/biquaternion-spin-geometry.md`), for the spinor module, the chirality, the volume element and the Dirac operator.
-- *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.md`), for the general module axiom, Schur uniqueness and the isotropic ideal.
-- *The Adjoint of the One-Sided Action with Hermitian Adjoint* (`articles_maths/the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.md`), for the $*$-structure on the operator algebra.
-- *Dirac Operators with Hermitian Adjoint* (`articles_maths/dirac-operators-with-hermitian-adjoint.md`), for the formal self-adjointness, the positivity of the square and the finite-dimensional model.
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
+- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
+- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
+- [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich, the cone and the definite slice viewed as a group of operators.
+- [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity of the involution that makes every restriction positive definite.
+- [Biquaternion Spin Geometry](biquaternion-spin-geometry.html), for the spinor module, the chirality, the volume element and the Dirac operator.
+- [Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint](hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html), for the general module axiom, Schur uniqueness and the isotropic ideal.
+- [The Adjoint of the One-Sided Action with Hermitian Adjoint](the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html), for the $*$-structure on the operator algebra.
+- [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the formal self-adjointness, the positivity of the square and the finite-dimensional model.

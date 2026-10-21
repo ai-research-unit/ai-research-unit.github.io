@@ -129,10 +129,10 @@ A square tensor of order $2m$ acts on the tensors of order $m$ by the Einstein p
 
 ## Further Reading
 
-- *The Einstein Product of Reduced Biquaternion Tensors* (`articles_maths/the-einstein-product-of-reduced-biquaternion-tensors.md`), above this article, for the product, the matricisation and the units.
-- *Reduced Biquaternion Spectral Theory* (`articles_maths/reduced-biquaternion-spectral-theory.md`), for the spectrum of an element and the idempotent coordinates.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the bar, the natural sign and the star.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the algebraic norm $\langle\cdot\rangle_{\natural}$.
+- [The Einstein Product of Reduced Biquaternion Tensors](the-einstein-product-of-reduced-biquaternion-tensors.html), above this article, for the product, the matricisation and the units.
+- [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum of an element and the idempotent coordinates.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the bar, the natural sign and the star.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the algebraic norm $\langle\cdot\rangle_{\natural}$.
 - Ting-Ting Liu and Shao-Wen Yu, "Some Properties of Reduced Biquaternion Tensors", *Symmetry* 16 (2024), 1260, for the eigenvalue problem, the Gershgorin theorem and the roots of the source.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd edition (Cambridge University Press, 2013), for the Gershgorin disc theorem and its maximal-entry proof.
 - Y. C. Wang and Y. M. Wei, "Generalized eigenvalue for even order tensors via Einstein product and its applications in multilinear control systems", *Computational and Applied Mathematics* 41 (2022), 419, for the eigenvalue problem of the Einstein product in the real case.

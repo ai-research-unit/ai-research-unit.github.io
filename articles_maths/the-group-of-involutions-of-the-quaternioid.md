@@ -134,7 +134,7 @@ The natural sign is the one distinguished involution of $\mathbb{H}$. Each axis 
 
 ## Further Reading
 
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the multiplication table.
-- *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), below this article in this category, for the fixed and anti-fixed spaces of ${}^{\natural}$.
-- *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), below this article in this category, for the scalar–vector, the axis and the twist decompositions.
-- *Comparison of the Remarkable Subspaces of the Quaternions* (`articles_maths/comparison-of-the-remarkable-subspaces-of-the-quaternions.md`), below this article in this category, for the lattice of the fixed spaces.
+- [Quaternion Algebra](quaternion-algebra.html), for the multiplication table.
+- [Introduction to the Remarkable Subspaces of the Quaternions](introduction-to-the-remarkable-subspaces-of-the-quaternions.html), below this article in this category, for the fixed and anti-fixed spaces of ${}^{\natural}$.
+- [Decompositions Along the Remarkable Subspaces of the Quaternions](decompositions-along-the-remarkable-subspaces-of-the-quaternions.html), below this article in this category, for the scalar–vector, the axis and the twist decompositions.
+- [Comparison of the Remarkable Subspaces of the Quaternions](comparison-of-the-remarkable-subspaces-of-the-quaternions.html), below this article in this category, for the lattice of the fixed spaces.

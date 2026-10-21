@@ -393,16 +393,16 @@ This article has treated the localised finite-energy solutions of the biquaterni
 
 ## Further Reading
 
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the connection, curvature, gauge transformation and invariant density used throughout the non-abelian sections.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the covariant derivative $D_\mu$ and the gauge connection.
-- *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, the invariants $I_1,I_2$ and the biquaternion norm $\langle\tilde{F}\rangle_{\natural}$.
-- *The Skyrme Model and the Topological Baryon in Biquaternionic Form* — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
-- *Interpretation of the Wick Rotation in the Biquaternion Universe* — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
-- *The Euclidean Topology of the Biquaternion Algebra*, *The Biquaternion Unit Group as a Topological Group* and *The Null Quadric and Its Projective Geometry* — the contractibility of $\mathbb{B}$, the unit group and the null cone.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the field equation and the Riemann–Silberstein structure of the abelian sector.
-- *The Gauge Principle in Biquaternionic Form* — the central $\mathrm{U}(1)$ and the local gauge structure.
-- *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar field that supplies no potential.
-- *Exercise: The Electromagnetic Energy–Momentum Tensor* — the rank-two limitation of a single biquaternion.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector in which the $\mathrm{SU}(2)$ factor and the Lorentzian star live.
-- *The Informational Sector: States, Observables and Probability* — the complementary sector.
-- *Curved Spacetime and the Biquaternion Framework* — the gravitational background that the topological charge is independent of.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the connection, curvature, gauge transformation and invariant density used throughout the non-abelian sections.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative $D_\mu$ and the gauge connection.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, the invariants $I_1,I_2$ and the biquaternion norm $\langle\tilde{F}\rangle_{\natural}$.
+- [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
+- [Interpretation of the Wick Rotation in the Biquaternion Universe](the-interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html) — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
+- [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html), [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) and [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html) — the contractibility of $\mathbb{B}$, the unit group and the null cone.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the field equation and the Riemann–Silberstein structure of the abelian sector.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the central $\mathrm{U}(1)$ and the local gauge structure.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar field that supplies no potential.
+- [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) — the rank-two limitation of a single biquaternion.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector in which the $\mathrm{SU}(2)$ factor and the Lorentzian star live.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the complementary sector.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the gravitational background that the topological charge is independent of.

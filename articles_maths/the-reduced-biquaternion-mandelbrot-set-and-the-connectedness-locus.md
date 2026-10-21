@@ -128,9 +128,9 @@ The connectedness locus of the reduced biquaternion quadratic family is the prod
 
 ## Further Reading
 
-- *The Reduced Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.md`), above this article, for the product fractal and the critical set.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.md`), above this article, for the global product structure behind the locus.
-- *The Slices of the Reduced Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.md`), above this article, for the slices of the locus.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the critical cone.
-- *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets* (`articles_maths/the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.md`), below this article, for the dimension as a function of the parameter.
-- *The Biquaternion Mandelbrot Set and the Connectedness Locus* (`articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.md`), for the companion in which the escape criterion meets an obstruction.
+- [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the product fractal and the critical set.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html), above this article, for the global product structure behind the locus.
+- [The Slices of the Reduced Biquaternion Julia Sets](the-slices-of-the-reduced-biquaternion-julia-sets.html), above this article, for the slices of the locus.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the critical cone.
+- [The Hausdorff Dimension of the Reduced Biquaternion Julia Sets](the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.html), below this article, for the dimension as a function of the parameter.
+- [The Biquaternion Mandelbrot Set and the Connectedness Locus](the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the companion in which the escape criterion meets an obstruction.

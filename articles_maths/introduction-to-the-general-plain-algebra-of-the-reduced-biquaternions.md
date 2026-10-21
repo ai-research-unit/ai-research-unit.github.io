@@ -161,9 +161,9 @@ An element is $\breve Q=Q_++jQ_-$ with scalar part $Q_+$ and $j$-part $jQ_-$; it
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the multiplication table, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article, for the four general products and the norms they carry.
-- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the algebraic norm of the multiplication and the criterion of invertibility.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the null cone and its structure.
-- *Introduction to the Biquaternion Algebra* (`articles_maths/introduction-to-the-biquaternion-algebra.md`), the non-commutative counterpart, for the same data of an algebra with a division-adjacent structure absent here.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the definitions of the unit, the inverse and the group of units used in the block.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the multiplication table, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the four general products and the norms they carry.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the algebraic norm of the multiplication and the criterion of invertibility.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the null cone and its structure.
+- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), the non-commutative counterpart, for the same data of an algebra with a division-adjacent structure absent here.
+- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the definitions of the unit, the inverse and the group of units used in the block.

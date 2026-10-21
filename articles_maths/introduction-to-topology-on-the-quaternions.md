@@ -70,5 +70,5 @@ The quaternion algebra is $\mathbb{R}^4$ with its Euclidean topology, the norm $
 
 ## Further Reading
 
-- *Quaternion Topology* (`articles_maths/quaternion-topology.md`), for the space and its structure
-- *The Quaternion Unit Group as a Topological Group* (`articles_maths/the-quaternion-unit-group-as-a-topological-group.md`) and *Quaternion Orders and Finite Groups of Units* (`articles_maths/quaternion-orders-and-finite-groups-of-units.md`), for the units
+- [Quaternion Topology](quaternion-topology.html), for the space and its structure
+- [The Quaternion Unit Group as a Topological Group](the-quaternion-unit-group-as-a-topological-group.html) and [Quaternion Orders and Finite Groups of Units](quaternion-orders-and-finite-groups-of-units.html), for the units

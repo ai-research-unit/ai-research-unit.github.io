@@ -198,11 +198,11 @@ The bracket of the antisymmetric plain algebra is the cross product of the vecto
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra.md`), for the bracket and its sixteen values on the basis
-- *The Lie Algebra of the Antisymmetric Plain Algebra* (`articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md`), for the structural reading of the whole algebra, the centre and the real forms
-- *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the form restricted to the remarkable subspaces and its isotropic elements
-- *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the adjoints and the automorphisms of the bracket
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`) and *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the remarkable subspaces and their relations
-- *Remarkable Subspaces and the Four Forms* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`), for the pattern of the reading under the general plain product
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the comparison of the readings of the remarkable subspaces under the four general products
-- *The Unitary Lie Algebra* (`articles_maths/the-unitary-lie-algebra.md`), for the skew-Hermitian elements and their group
+- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the bracket and its sixteen values on the basis
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra.html), for the structural reading of the whole algebra, the centre and the real forms
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the form restricted to the remarkable subspaces and its isotropic elements
+- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html), for the adjoints and the automorphisms of the bracket
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the remarkable subspaces and their relations
+- [Remarkable Subspaces and the Four Forms](remarkable-subspaces-and-the-four-forms.html), for the pattern of the reading under the general plain product
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the comparison of the readings of the remarkable subspaces under the four general products
+- [The Unitary Lie Algebra](the-unitary-lie-algebra.html), for the skew-Hermitian elements and their group

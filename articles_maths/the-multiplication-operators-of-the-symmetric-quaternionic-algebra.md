@@ -278,10 +278,10 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 
 ## Further Reading
 
-- *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the multiplications and the radical
-- *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form $\langle\cdot\rangle_{\natural}$, its Gram matrix and its non-degeneracy
-- *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`) and *One-Sided Operators on the General Quaternionic Algebra* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra.md`), for the left multiplications of the parent product
-- *Automorphisms and Derivations of Algebras* (`articles_maths/automorphisms-and-derivations-of-algebras.md`), for the general theory of a derivation and its inner part
-- *Introduction to the Symmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the same operators in the realization
-- *Introduction to the Symmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the same operators in the regular model
-- *Remarkable Subspaces under the Symmetric Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra.md`), for the product on the remarkable subspaces
+- [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the multiplications and the radical
+- [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html), for the form $\langle\cdot\rangle_{\natural}$, its Gram matrix and its non-degeneracy
+- [The Left Multiplications of the Quaternionic Product and the Opposite Monoid](the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html) and [One-Sided Operators on the General Quaternionic Algebra](one-sided-operators-on-the-general-quaternionic-algebra.html), for the left multiplications of the parent product
+- [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.html), for the general theory of a derivation and its inner part
+- [Introduction to the Symmetric Quaternionic Algebra](introduction-to-the-symmetric-quaternionic-algebra.html), for the same operators in the realization
+- [Introduction to the Symmetric Quaternionic Algebra](introduction-to-the-symmetric-quaternionic-algebra.html), for the same operators in the regular model
+- [Remarkable Subspaces under the Symmetric Quaternionic Algebra](remarkable-subspaces-under-the-symmetric-quaternionic-algebra.html), for the product on the remarkable subspaces

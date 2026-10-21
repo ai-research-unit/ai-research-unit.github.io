@@ -206,8 +206,8 @@ The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate bl
 
 ## Further Reading
 
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces themselves, one to a section
-- *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces.md`), for the three decompositions and the projection formulas
-- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, its basis, its conjugations and its coordinate systems
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group and the two spaces each defines
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for what the remarkable subspaces give when the product is brought in, which is not part of this article
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces themselves, one to a section
+- [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the three decompositions and the projection formulas
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, its basis, its conjugations and its coordinate systems
+- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations as an abstract group and the two spaces each defines
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for what the remarkable subspaces give when the product is brought in, which is not part of this article

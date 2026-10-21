@@ -218,10 +218,10 @@ only the symmetric half, so the block carries no square of its own. Among the co
 
 ## Further Reading
 
-- *Introduction to the Quaternion Algebra*, for the plain product, its scalar–vector rule and its square.
-- *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the split, its two projections and the admissibility conditions.
-- *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, for the companion products and their names.
-- *Introduction to the Symmetric Plain Algebra*, for the symmetric half of the same product.
-- *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the structure of the Lie algebra.
-- *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the operators.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.
+- [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html), for the plain product, its scalar–vector rule and its square.
+- [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the split, its two projections and the admissibility conditions.
+- *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and [The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](the-algebraic-structures-over-the-quaternioid-r-space.html), for the companion products and their names.
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the symmetric half of the same product.
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the structure of the Lie algebra.
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html) and [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-quaternioid.html), both below this article in this category, for the form and the operators.
+- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) and [The Specificities of the Antisymmetric Plain Algebra](the-specificities-of-the-antisymmetric-plain-algebra-of-quaternioid.html), all below this article in this category, for the element theory.

@@ -100,6 +100,6 @@ The quaternion algebra embeds in $M_2(\mathbb{C})$ by $e_t\mapsto I$, $\vec e_k\
 
 ## Further Reading
 
-- *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element and the multiplication table.
-- *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-quaternions.md`), below this article in this category, for the left regular representation.
-- *The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-quaternion-algebra-in-the-2x2-matrix-element-representation.md`), below this article in this category, for the rank-one elements and the further development.
+- [Quaternion Algebra](quaternion-algebra.html), for the element and the multiplication table.
+- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions](introduction-to-the-4x4-matrix-element-representation-of-quaternions.html), below this article in this category, for the left regular representation.
+- [The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$](the-quaternion-algebra-in-the-2x2-matrix-element-representation.html), below this article in this category, for the rank-one elements and the further development.

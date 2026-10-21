@@ -68,10 +68,10 @@ for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{r}
 
 | form | the level set | shape |
 |---|---|---|
-| $\langle\cdot,\cdot\rangle$ | $\langle \breve Q\rangle=1$, that is $q_+^{2}-q'_+^{2}+q_-^{2}-q'_-^{2}+2i(q_+q'_++q_-q'_-)=1$ | a complex quadric of real dimension two |
+| $\langle\cdot,\cdot\rangle$ | $\langle \breve Q\rangle=1$, that is $q_+^{2}-{q'_+}^{2}+q_-^{2}-{q'_-}^{2}+2i(q_+q'_++q_-q'_-)=1$ | a complex quadric of real dimension two |
 | $\langle\cdot\rangle_{\natural}$ | $\langle \breve Q\rangle_{\natural}=1$, that is $Q_{++}Q_{--}=1$ | a real hyperboloid, the unit set of the invertibility criterion |
-| $\langle\cdot\rangle_{*}$ | $\langle \breve Q\rangle_{*}=1$, that is $q_+^{2}+q'_+^{2}-q_-^{2}-q'_-^{2}=1$ | a one-sheeted hyperboloid of signature $(2,2)$ |
-| $\langle\cdot\rangle_{\natural*}$ | $\langle \breve Q\rangle_{\natural*}=1$, that is $q_+^{2}+q'_+^{2}+q_-^{2}+q'_-^{2}=1$ | the Euclidean sphere $S^{3}$ |
+| $\langle\cdot\rangle_{*}$ | $\langle \breve Q\rangle_{*}=1$, that is $q_+^{2}+{q'_+}^{2}-q_-^{2}-{q'_-}^{2}=1$ | a one-sheeted hyperboloid of signature $(2,2)$ |
+| $\langle\cdot\rangle_{\natural*}$ | $\langle \breve Q\rangle_{\natural*}=1$, that is $q_+^{2}+{q'_+}^{2}+q_-^{2}+{q'_-}^{2}=1$ | the Euclidean sphere $S^{3}$ |
 
 **Theorem (the unit sets).** The level sets are the unit sets of the four products relative to their norms, by the unitary convention; the level set of $\langle\cdot\rangle_{\natural*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\natural}$ is the non-compact hyperboloid of the units, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.
 
@@ -114,8 +114,8 @@ Only $\langle\cdot\rangle_{\natural*}$ gives a metric, the Euclidean one, positi
 
 ## Further Reading
 
-- *Topology in the Space of Reduced Biquaternions* (`articles_maths/topology-in-the-space-of-reduced-biquaternions.md`), for the norm and the topology.
-- *The Euclidean Topology of the Reduced Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-reduced-biquaternion-algebra.md`), for the Euclidean metric and the unit group.
-- *The Forms of the Algebra of the Reduced Biquaternions* (`articles_maths/the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the four forms and their isotropic sets.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the zero-divisor set.
-- *Reduced Biquaternion Analysis* (`articles_maths/reduced-biquaternion-analysis.md`), for the analysis built on the Euclidean metric.
+- [Topology in the Space of Reduced Biquaternions](topology-in-the-space-of-reduced-biquaternions.html), for the norm and the topology.
+- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the Euclidean metric and the unit group.
+- [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the four forms and their isotropic sets.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the zero-divisor set.
+- [Reduced Biquaternion Analysis](reduced-biquaternion-analysis.html), for the analysis built on the Euclidean metric.

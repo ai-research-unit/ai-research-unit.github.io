@@ -465,4 +465,4 @@ The quadratic form, the inner product, the norm and the Euclidean norm are a for
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
-- Companion article *Complex Split Biquaternions and the Clifford Algebra Cl(3)*, for the complexification of this algebra and its splitting into two biquaternion summands.
+- Companion article [Complex Split Biquaternions and the Clifford Algebra Cl(3)](complex-split-biquaternions-and-the-clifford-algebra-cl3.html), for the complexification of this algebra and its splitting into two biquaternion summands.

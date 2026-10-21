@@ -359,8 +359,8 @@ The Feynman–Kac formula identifies the Euclidean path integral with an integra
 - James Glimm and Arthur Jaffe, *Quantum Physics: A Functional Integral Point of View* (Springer, 2nd edition, 1987), for the construction of the interacting measures and the renormalisation of the density.
 - Sergio Albeverio, Raphael Høegh-Krohn and Sonia Mazzucchi, *Mathematical Theory of Feynman Path Integrals* (Springer, 2nd edition, 2008), for the Fresnel integrals, the oscillatory integrals and the analytic continuation.
 - Gerald W. Johnson and Michel L. Lapidus, *The Feynman Integral and Feynman's Operational Calculus* (Oxford University Press, 2000), for the time slicing, the product formula and the operator-theoretic treatment.
-- *Measure Theory and Integration* (`articles_maths/measure-theory-and-integration.md`), companion article, for the construction of measures, the product measures and the Radon–Nikodym theorem.
-- *Brownian Motion and Stochastic Calculus* (`articles_maths/brownian-motion-and-stochastic-calculus.md`), companion article, for the Wiener measure, the Itô integral, the Girsanov theorem and the Feynman–Kac formula.
-- *Stochastic Partial Differential Equations* (`articles_maths/stochastic-partial-differential-equations.md`), companion article, for the Gaussian measures in infinite dimension and the cylindrical Wiener process.
-- *Semigroups and Evolution Equations* (`articles_maths/semigroups-and-evolution-equations.md`), companion article, for the Lie–Trotter product formula and the operator form of the time slicing.
-- *Hypercomplex Integration* (`articles_maths/hypercomplex-integration.md`), companion article, for the integration of algebra-valued functions, which is the measure-theoretic integral of this article with values in an algebra.
+- [Measure Theory and Integration](measure-theory-and-integration.html), companion article, for the construction of measures, the product measures and the Radon–Nikodym theorem.
+- [Brownian Motion and Stochastic Calculus](brownian-motion-and-stochastic-calculus.html), companion article, for the Wiener measure, the Itô integral, the Girsanov theorem and the Feynman–Kac formula.
+- [Stochastic Partial Differential Equations](stochastic-partial-differential-equations.html), companion article, for the Gaussian measures in infinite dimension and the cylindrical Wiener process.
+- [Semigroups and Evolution Equations](semigroups-and-evolution-equations.html), companion article, for the Lie–Trotter product formula and the operator form of the time slicing.
+- [Hypercomplex Integration](hypercomplex-integration.html), companion article, for the integration of algebra-valued functions, which is the measure-theoretic integral of this article with values in an algebra.

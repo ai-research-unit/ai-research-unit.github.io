@@ -51,5 +51,5 @@ The finite subgroups of the unit sphere $S^3$ of the real slice are the cyclic g
 
 ## Further Reading
 
-- *Biquaternion Orders and Finite Groups of Units* (`articles_maths/biquaternion-orders-and-finite-groups-of-units.md`), for the orders, the groups of units and the integral biquaternions
-- *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the rotations of the real slice
+- [Biquaternion Orders and Finite Groups of Units](biquaternion-orders-and-finite-groups-of-units.html), for the orders, the groups of units and the integral biquaternions
+- [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the rotations of the real slice

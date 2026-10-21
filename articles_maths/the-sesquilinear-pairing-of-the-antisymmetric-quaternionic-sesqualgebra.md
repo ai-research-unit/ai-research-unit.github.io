@@ -135,9 +135,9 @@ Read against the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\su
 
 ## Further Reading
 
-- *The Krein Gram Matrix and the Restrictions of the Form*, for the form and the signatures of the restrictions.
-- *Introduction to the Remarkable Subspaces*, for the remarkable subspaces.
-- *The Isotropic Structure of the General Quaternionic Sesqualgebra*, for the null elements and the isotropic lines.
-- *Introduction to the Antisymmetric Quaternionic Sesqualgebra*, for the block.
-- *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the diagonal and its cone.
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form and the signatures of the restrictions.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces.
+- [The Isotropic Structure of the General Quaternionic Sesqualgebra](the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the null elements and the isotropic lines.
+- [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block.
+- [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the diagonal and its cone.
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*, for the reading of the block on the remarkable subspaces.

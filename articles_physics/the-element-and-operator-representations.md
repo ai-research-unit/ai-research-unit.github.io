@@ -6,7 +6,7 @@ One biquaternion can be written in five standard matrix-shaped ways, and the fiv
 
 The physical stake is a distinction that is easy to lose. A state is carried by an element representation, a transformation by an operator representation. A spinor is a two-component column on which the $2\times2$ matrix acts; a four-vector is an element of the material sector on which the sandwich acts. Reading the determinant of the regular matrix as the norm, or the sandwich as a linear map of its parameter, or the doubled regular picture as two particles, are the three standard errors that the distinction prevents.
 
-The article is a reader and owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the physical reading is given with its boundary. It is the entry of the *Generalities* block that fixes the vocabulary the other representation articles use.
+The article is a reader and owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the physical reading is given with its boundary. It is the entry of the *Element and Operator Representations* group that fixes the vocabulary the other representation articles use.
 
 ## The Results It Uses
 
@@ -261,6 +261,6 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the one-sided and two-sided maps, the congruence and the enveloping algebra.
 - [The Four-Vector Operator Representation of Biquaternions](../articles_maths/the-four-vector-operator-representation-of-biquaternions.html), for the sandwich on the material sector and its computations.
 - [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html), for the index of named objects and their images.
-- *The Spinor Module and Its Two Structures*, for the module and Hilbert structures that the $2\times2$ picture carries.
-- *The Complementary Ideal and the Second State Space*, for the second column and the mass coupling.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the two sectors read at length.
+- [The Spinor Module and Its Two Structures](the-spinor-module-and-its-two-structures.html), for the module and Hilbert structures that the $2\times2$ picture carries.
+- [The Complementary Ideal and the Second State Space](the-complementary-ideal-and-the-second-state-space.html), for the second column and the mass coupling.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors read at length.

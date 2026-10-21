@@ -188,14 +188,14 @@ The algebra is the complexification of the split-complex numbers $\mathbb{D}$ an
 
 ## Further Reading
 
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*The Elements and their Coefficients*, for the glyph $\mathbb{B}_{\mathrm{r}}$, the element $\breve Q=Q_++jQ_-$ and the idempotents $\Pi_{\pm}$.
-- *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$* (`articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.md`), below this article in this category, for the two readings of the space and the change of scalars.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), below this article, for the bar, the natural sign, the star and the flat.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), below this article, for the four general products and the forms and norms they carry.
-- *Introduction to the Algebra of the Reduced Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the multiplication read as an algebra.
-- *Split-Complex Algebra* (`articles_maths/split-complex-algebra.md`), for the real companion $\mathbb{D}$, the same algebra over $\mathbb{R}$.
-- *Introduction to the Biquaternion Algebra* (`articles_maths/introduction-to-the-biquaternion-algebra.md`), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
-- *Split-Biquaternion Algebra* (`articles_maths/split-biquaternion-algebra.md`), for the split complex companion $\mathbb{H}_{\mathbb{D}}$.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.
+- [Conventions in Mathematics](conventions-in-mathematics.html), §*The Elements and their Coefficients*, for the glyph $\mathbb{B}_{\mathrm{r}}$, the element $\breve Q=Q_++jQ_-$ and the idempotents $\Pi_{\pm}$.
+- [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), below this article in this category, for the two readings of the space and the change of scalars.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), below this article, for the bar, the natural sign, the star and the flat.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the forms and norms they carry.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the multiplication read as an algebra.
+- [Split-Complex Algebra](split-complex-algebra.html), for the real companion $\mathbb{D}$, the same algebra over $\mathbb{R}$.
+- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
+- [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the split complex companion $\mathbb{H}_{\mathbb{D}}$.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.
 - James Cockle, "On a new imaginary in algebra", *Philosophical Magazine* **34** (1849) 37–47, for the tessarines.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra of the engineering literature.

@@ -1,4 +1,4 @@
-# __The Canonical Hermitian Form on the Regular Module of the Biquaternioid Algebra__
+# __The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra__
 
 ## Introduction
 

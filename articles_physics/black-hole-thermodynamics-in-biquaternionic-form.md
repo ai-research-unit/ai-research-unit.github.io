@@ -484,18 +484,18 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 
 **Companion articles (this series).**
 
-- *Hawking Radiation in Biquaternionic Form*, the parent: the surface gravity, the Hawking temperature, the Euclidean period, and the KMS identification of the horizon flow.
-- *The KMS Condition and the Biquaternion Framework*, for the imaginary-time strip, the intrinsic imaginary time of $\mathbb{M}_-$, and the modular Hamiltonian in $\mathbb{M}_+$.
-- *The Modular Hamiltonian in Biquaternionic Form*, for the modular generator, its spectral form, and the Gibbs structure.
-- *The Bisognano–Wichmann Theorem under the Biquaternion Framework*, for the wedge/horizon identification of the modular flow with the boost.
-- *The Unruh Effect in Biquaternionic Form*, the sibling: the Rindler horizon and the surface gravity as a boost parameter.
-- *Curved Spacetime and the Biquaternion Framework*, for the frame-field route to the metric and why the framework generates no black-hole geometry of its own.
-- *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*, for the status of the dynamics and of an action for the frame.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the sectors, the four-vectors, and the operator algebra.
-- *Noether's Theorem in Biquaternionic Form*, for the conserved four-momentum, angular momentum, and current that become the horizon charges.
-- *Introduction to the Biquaternion Universe*, for the algebra and the notation.
-- *Quantum Thermodynamics in Biquaternionic Form*, for the standard thermodynamic functionals on $\mathbb{M}_+$ and the Gibbs state of a qubit.
-- *The Partition Function in Biquaternionic Form*, for the thermal trace and its imaginary-time formulation.
+- [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html), the parent: the surface gravity, the Hawking temperature, the Euclidean period, and the KMS identification of the horizon flow.
+- [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the imaginary-time strip, the intrinsic imaginary time of $\mathbb{M}_-$, and the modular Hamiltonian in $\mathbb{M}_+$.
+- [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html), for the modular generator, its spectral form, and the Gibbs structure.
+- [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the wedge/horizon identification of the modular flow with the boost.
+- [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), the sibling: the Rindler horizon and the surface gravity as a boost parameter.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame-field route to the metric and why the framework generates no black-hole geometry of its own.
+- [The Einstein Field Equations under the Biquaternion Framework — A Research Agenda](the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html), for the status of the dynamics and of an action for the frame.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the sectors, the four-vectors, and the operator algebra.
+- [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the conserved four-momentum, angular momentum, and current that become the horizon charges.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the notation.
+- [Quantum Thermodynamics in Biquaternionic Form](quantum-thermodynamics-in-biquaternionic-form.html), for the standard thermodynamic functionals on $\mathbb{M}_+$ and the Gibbs state of a qubit.
+- [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the thermal trace and its imaginary-time formulation.
 
 **Standard references.**
 

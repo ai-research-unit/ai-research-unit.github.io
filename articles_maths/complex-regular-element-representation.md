@@ -163,7 +163,7 @@ $$
 
 a positive scalar times an element of $SO(2)$; that is, a similarity of ratio $r$ and angle $\theta$.
 
-The image $M_2(\mathbb{C})$ is the field of conformal matrices, and its group of nonzero elements is the group of orientation-preserving similarities of the plane fixing the origin; it is isomorphic to $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times SO(2)$. The determinant is the square of the ratio and the trace is twice the real part of the complex number, so the polar decomposition $Q = ru$ is the polar decomposition of the conformal matrix into a scalar and a rotation, as developed in *Complex Polar Element Representation* and *Rotations and Reflections in the Complex Plane*.
+The image $M_2(\mathbb{C})$ is the field of conformal matrices, and its group of nonzero elements is the group of orientation-preserving similarities of the plane fixing the origin; it is isomorphic to $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times SO(2)$. The determinant is the square of the ratio and the trace is twice the real part of the complex number, so the polar decomposition $Q = ru$ is the polar decomposition of the conformal matrix into a scalar and a rotation, as developed in *Modulus–Unit Polar Decomposition of Complex Numbers* and *Rotations and Reflections in the Complex Plane*.
 
 ## The Image of the Unit Circle
 

@@ -96,9 +96,9 @@ The symmetric plain sesqualgebra is the only one of the twelve structures that i
 
 ## Further Reading
 
-- *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion of the plain product, the model of the family.
-- *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the sibling criterion $L_{\tilde Q_2}^{2} = Q_{2t}L_{\tilde Q_2}$ and the hyperplane of rank-one projectors onto the centre.
-- *Introduction to the Symmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra.md`), for the product, its class and its placement among the twelve.
-- *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the clause C1, its two reading involutions and its comparison with the siblings.
-- *The Multiplication Operators of the Symmetric Plain Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.md`), for the composition law, the rank, the trace and the adjoint of the operators.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve products among which the criterion is read.
+- [The Specificities of the Biquaternion Algebra](the-specificities-of-the-biquaternion-algebra.html), for the criterion of the plain product, the model of the family.
+- [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), for the sibling criterion $L_{\tilde Q_2}^{2} = Q_{2t}L_{\tilde Q_2}$ and the hyperplane of rank-one projectors onto the centre.
+- [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product, its class and its placement among the twelve.
+- [The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra](the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html), for the clause C1, its two reading involutions and its comparison with the siblings.
+- [The Multiplication Operators of the Symmetric Plain Sesqualgebra](the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.html), for the composition law, the rank, the trace and the adjoint of the operators.
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the twelve products among which the criterion is read.

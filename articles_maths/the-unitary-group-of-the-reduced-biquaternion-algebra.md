@@ -167,9 +167,9 @@ The reduced biquaternion algebra carries two Hermitian forms with respect to its
 
 ## Further Reading
 
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the idempotents and the two complex coordinates.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), above this article, for the star and the natural sign.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article, for the two Hermitian forms and their signatures.
-- *The Group of Units of the Algebra of the Reduced Biquaternions* (`articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), below this article, for the units as the complement of the zero divisors.
-- *Reduced Biquaternion Lie Group and Exponential Structure* (`articles_maths/reduced-biquaternion-lie-group-and-exponential-structure.md`), above this article, for the Lie algebra, the exponential and the norm-one group.
-- *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the companion in which the unitary group is the compact $\mathrm{U}(2)$.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the two complex coordinates.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the star and the natural sign.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the two Hermitian forms and their signatures.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the units as the complement of the zero divisors.
+- [Reduced Biquaternion Lie Group and Exponential Structure](reduced-biquaternion-lie-group-and-exponential-structure.html), above this article, for the Lie algebra, the exponential and the norm-one group.
+- [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the companion in which the unitary group is the compact $\mathrm{U}(2)$.

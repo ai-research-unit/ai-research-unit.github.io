@@ -296,12 +296,12 @@ Both products without the star are multiplications of a bilinear $\mathbb{C}$-al
 
 ## Further Reading
 
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four definitions and their scalar–vector forms.
-- *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four general products and for the left multiplications.
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the natural and the complex conjugation as an anti-automorphism and an automorphism and for the group they generate, which is a group of maps of the algebra and not the group of the readings of a rule.
-- *The Four General Products and Operators* (`articles_maths/the-four-general-products-and-operators.md`), for the convention that writes the four insertions (none), (${}^{\natural}$), (${}^{*}$) and (both), for the four adjoints they decide and for the operator they do not.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four pairings of the readings, their Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ and their signatures.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the symmetric and the antisymmetric part of each of the four general products, and the Jordan and the Lie structure the two parts of the general plain bilinear product carry.
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products on the remarkable subspaces, and for the Jordan and the Lie algebra each of the remarkable subspaces carries and with which product.
-- *Introduction to the General Plain Sesqualgebra* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesquilinear reading of the general plain sesquilinear product and the algebra it defines.
-- *Sesqualgebras* (`articles_maths/sesqualgebras.md`), for the two scalar rules, the collapse theorem and the standard example that the sesquilinear row of the table tests.
+- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](the-four-general-products-of-the-biquaternion-c-space.html), for the four definitions and their scalar–vector forms.
+- [Relations Between the Four General Products](relations-between-the-four-general-products.html), for the identities that link the four general products and for the left multiplications.
+- [The Group of Involutions](the-group-of-involutions.html), for the natural and the complex conjugation as an anti-automorphism and an automorphism and for the group they generate, which is a group of maps of the algebra and not the group of the readings of a rule.
+- [The Four General Products and Operators](the-four-general-products-and-operators.html), for the convention that writes the four insertions (none), (${}^{\natural}$), (${}^{*}$) and (both), for the four adjoints they decide and for the operator they do not.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four pairings of the readings, their Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ and their signatures.
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the symmetric and the antisymmetric part of each of the four general products, and the Jordan and the Lie structure the two parts of the general plain bilinear product carry.
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the four general products on the remarkable subspaces, and for the Jordan and the Lie algebra each of the remarkable subspaces carries and with which product.
+- [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the sesquilinear reading of the general plain sesquilinear product and the algebra it defines.
+- [Sesqualgebras](sesqualgebras.html), for the two scalar rules, the collapse theorem and the standard example that the sesquilinear row of the table tests.

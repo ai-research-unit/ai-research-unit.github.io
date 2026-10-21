@@ -4,7 +4,7 @@
 
 The involutions of the quaternion algebra cut $\mathbb{H}$ into three additive decompositions, and the product adds a fourth, multiplicative one. This article states all four: the scalar–vector decomposition $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$ of dimensions $1+3$, cut by the natural sign; the axis decomposition $\mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp$ of dimensions $2+2$ along a unit imaginary quaternion $\nu$, cut by the inner involution; the twist decomposition $\mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu$ of dimensions $3+1$, its companion on the same axis, cut by the twist ${}^{\natural}\iota_\nu$; and the polar decomposition $\tilde q=|\tilde q|\,u$ of a nonzero quaternion into a positive real modulus and a unit quaternion. It then proves that the list is complete. The element and the basis are those of *Quaternion Algebra*; the two subspaces are *Introduction to the Remarkable Subspaces of the Quaternions*; the involutions that cut them are *Quaternion Involutions and Projections*.
 
-The article is an offer of the group: the scalar–vector decomposition is developed in *Introduction to the Remarkable Subspaces of the Quaternions*, the axis and the twist decompositions in the two articles just named, and the polar element is *Quaternion Polar Element Representation*, below this article in this category.
+The article is an offer of the group: the scalar–vector decomposition is developed in *Introduction to the Remarkable Subspaces of the Quaternions*, the axis and the twist decompositions in the two articles just named, and the polar element is *Modulus–Unit Polar Decomposition of Quaternions*, below this article in this category.
 
 ## The Scalar–Vector Decomposition
 
@@ -68,7 +68,7 @@ is the **modulus** of $\tilde q$, and
 $$
 \tilde q=|\tilde q|\cdot u, \qquad u=\frac{\tilde q}{|\tilde q|}, \qquad \langle u\rangle_{\natural}=\frac{\langle\tilde q\rangle_{\natural}}{|\tilde q|^2}=1.
 $$
-The element $u$ is a **unit quaternion** (a **rotor**), and $\tilde q=|\tilde q|u$ is the **polar decomposition** of $\tilde q$. The decomposition is unique: the modulus is the non-negative root of the norm and the rotor is then forced. It multiplies two factors of different nature — a positive scalar and an element of the unit sphere — and it is not additive. The polar element, its argument and its axis are *Quaternion Polar Element Representation*, below this article in this category; the unit sphere $N=1$ is the group of rotors, whose topology is *The Quaternion Unit Group as a Topological Group*, below this article in this category.
+The element $u$ is a **unit quaternion** (a **rotor**), and $\tilde q=|\tilde q|u$ is the **polar decomposition** of $\tilde q$. The decomposition is unique: the modulus is the non-negative root of the norm and the rotor is then forced. It multiplies two factors of different nature — a positive scalar and an element of the unit sphere — and it is not additive. The polar element is *Modulus–Unit Polar Decomposition of Quaternions*, and its argument and its axis are *Exponential Polar Decomposition of Quaternions*, below this article in this category; the unit sphere $N=1$ is the group of rotors, whose topology is *The Quaternion Unit Group as a Topological Group*, below this article in this category.
 
 On the two remarkable subspaces the polar decomposition specialises. A nonzero scalar is already positive or negative and its rotor is $\pm e_t$; a pure element $\vec q$ has square $\vec q^2=-\langle \vec q\rangle_{\natural}$ and rotor $\vec q/|\vec q|$, an element of the sphere of roots of $-1$ of *Introduction to the Remarkable Subspaces of the Quaternions*.
 
@@ -98,5 +98,5 @@ The quaternion algebra decomposes four ways. Additively by the natural sign into
 
 ## Further Reading
 
-- *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar–vector decomposition and the two subspaces.
-- *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), below this article in this category, for the argument and the axis of the polar element.
+- [Introduction to the Remarkable Subspaces of the Quaternions](introduction-to-the-remarkable-subspaces-of-the-quaternions.html), for the scalar–vector decomposition and the two subspaces.
+- [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), below this article in this category, for the argument and the axis of the polar element.

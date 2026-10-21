@@ -104,5 +104,5 @@ The connectedness locus of the split-quaternion quadratic family is the set of p
 - John W. Milnor, *Dynamics in One Complex Variable*, 3rd ed. (Princeton, 2006). The complex Mandelbrot set and its membership, cited to *The Mandelbrot Set and the Quadratic Family*.
 - Benoît Mandelbrot, *The Fractal Geometry of Nature* (Freeman, 1982). The quadratic family and its parameter space.
 - Garret Sobczyk, "The hyperbolic number plane", *The College Mathematics Journal* 26 (1995), 268–280. The split-complex quadratic family and its connectedness interval.
-- Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974). The Lorentz group and its orbits, cited to *Split-Quaternion Rotations and the Lorentz Group*.
+- Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974). The Lorentz group and its orbits, cited to [Split-Quaternion Rotations and the Lorentz Group](split-quaternion-rotations-and-the-lorentz-group.html).
 - John C. Baez, "The octonions", *Bulletin of the American Mathematical Society* 39 (2002), 145–205. The split-quaternion algebra and the matrix model.

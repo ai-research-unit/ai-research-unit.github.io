@@ -268,12 +268,12 @@ The adjoint of the block is $\operatorname{ad}_{\tilde Q_1}=[\tilde Q_1,\cdot]$,
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra.md`), for the bracket and the cross-product formula
-- *The Lie Algebra of the Antisymmetric Plain Algebra* (`articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md`), for the centre, the derived algebra, the identifications and the enveloping algebra
-- *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the invariant form, the radical and the Casimir element
-- *Remarkable Subspaces under the Antisymmetric Plain Algebra* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-plain-algebra.md`), for the bracket read on the remarkable subspaces
-- *Introduction to the Symmetric Plain Algebra* (`articles_maths/introduction-to-the-symmetric-plain-algebra-of-quaternioid.md`), for the conjugations in the realization
-- *Introduction to the Symmetric Plain Algebra* (`articles_maths/introduction-to-the-symmetric-plain-algebra-of-quaternioid.md`), for the conjugations in the regular model
-- *Derivations of a Lie Algebra* (`articles_maths/derivations-of-a-lie-algebra.md`), for the inner and outer derivations and the derivation algebra as the Lie algebra of the automorphism group
-- *Associative Algebras* (`articles_maths/associative-algebras.md`), for the associativity behind the Leibniz rule
-- *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), for the operators of the multiplication and their trace form
+- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the bracket and the cross-product formula
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra.html), for the centre, the derived algebra, the identifications and the enveloping algebra
+- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant form, the radical and the Casimir element
+- [Remarkable Subspaces under the Antisymmetric Plain Algebra](remarkable-subspaces-under-the-antisymmetric-plain-algebra.html), for the bracket read on the remarkable subspaces
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the conjugations in the realization
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the conjugations in the regular model
+- [Derivations of a Lie Algebra](derivations-of-a-lie-algebra.html), for the inner and outer derivations and the derivation algebra as the Lie algebra of the automorphism group
+- [Associative Algebras](associative-algebras.html), for the associativity behind the Leibniz rule
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operators of the multiplication and their trace form

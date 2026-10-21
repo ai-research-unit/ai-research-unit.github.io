@@ -236,7 +236,7 @@ $$
 \mathrm{Sc}\!\left(\frac{d\tilde{V}}{d\tau}\,\tilde{V}^{\natural}\right) = 0 ,
 $$
 
-which is the biquaternion statement that a four-acceleration is orthogonal to its worldline. The same conjugation makes the orthogonality immediate and fixes $\vec a$ as the acceleration in the instantaneous rest frame: at $\vec\beta = 0$ the spinor is the identity and the relation reads $d\tilde{V}/d\tau = \vec a$. The source prints its own acceleration relation with a minus, $d^2Z/dt'_r^2 = -B\vec aB^+$; the minus is carried by its normalization of the position variable, since the corpus four-velocity and the source's differ by the constant factor $ic$, and the sign above is the one that reduces to the rest-frame acceleration at vanishing velocity.
+which is the biquaternion statement that a four-acceleration is orthogonal to its worldline. The same conjugation makes the orthogonality immediate and fixes $\vec a$ as the acceleration in the instantaneous rest frame: at $\vec\beta = 0$ the spinor is the identity and the relation reads $d\tilde{V}/d\tau = \vec a$. The source prints its own acceleration relation with a minus, $d^2Z/d{t'_r}^2 = -B\vec aB^+$; the minus is carried by its normalization of the position variable, since the corpus four-velocity and the source's differ by the constant factor $ic$, and the sign above is the one that reduces to the rest-frame acceleration at vanishing velocity.
 
 These are the source's formulas, transcribed into the conventions of this article and checked component by component; no statement of the earlier sections changes. The spinor square root introduced here is the same decomposition that underlies Weiss's independent route to the Lorentz–Dirac equation in the radiation-reaction section below.
 
@@ -526,7 +526,7 @@ $$
 \tilde{A} = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\xi}\,B^2,
 $$
 
-and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_t + i\vec u)$ as $iR\,e_t+\vec R = 2i\xi\,B\sigmaB^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = B\vec aB^+$.
+and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_t + i\vec u)$ as $iR\,e_t+\vec R = 2i\xi\,B\sigma B^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = B\vec aB^+$.
 
 The field strength splits into a velocity part and an acceleration part, $\tilde{F} = \tilde{F}_v + \tilde{F}_a$. The velocity field $\tilde{F}_v$ falls as $1/R^2$, has vanishing second invariant and positive first invariant, $I_{1,v} = (\vec u_R\cdot\vec E_v)^2 > 0$, and is of electric type; it is the field of a uniformly moving charge and is not radiation. The acceleration field $\tilde{F}_a$ falls as $1/R$, is transverse, and is **null**:
 

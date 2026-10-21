@@ -235,13 +235,13 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 
 ## Further Reading
 
-- *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder operators, the capacity bound, and the Fock space that the algebra does not contain.
-- *Canonical Quantization of the Biquaternion Dirac Field*, for the field expansion, the mode functions $w^{(r)},v^{(r)}$, and the spinor-module setting.
-- *Canonical Quantization of the Biquaternion Maxwell Field*, for the Gupta–Bleuler mode algebra and the physical-state condition.
-- *The Photon in Biquaternionic Form*, for the identification of the polarization directions with the material sector and the helicity observable in $\mathbb{M}_+$.
-- *The Informational Sector: States, Observables and Probability*, for the idempotents, the trace formula, and the operator-algebra interpretation of the sector.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors, including the four-wavevector that labels a mode function.
-- *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the realization of the module as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ and the matrix units $\vec\Upsilon_x,\vec\Upsilon_y$.
-- *The Ontology of the Quantum State under the Biquaternion Framework*, for the state as an element of $\mathbb{M}_+$ and the limits of that interpretation.
-- *The Partition Function in Biquaternionic Form*, for the thermal state as an element of $\mathbb{M}_+$ and the coherence that the trace discards.
-- *The Harmonic Oscillator in Biquaternionic Form*, for the two-level truncation and the failure of the bosonic canonical relation.
+- [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the one-mode ladder operators, the capacity bound, and the Fock space that the algebra does not contain.
+- [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), for the field expansion, the mode functions $w^{(r)},v^{(r)}$, and the spinor-module setting.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), for the Gupta–Bleuler mode algebra and the physical-state condition.
+- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the identification of the polarization directions with the material sector and the helicity observable in $\mathbb{M}_+$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the idempotents, the trace formula, and the operator-algebra interpretation of the sector.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors, including the four-wavevector that labels a mode function.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the realization of the module as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ and the matrix units $\vec\Upsilon_x,\vec\Upsilon_y$.
+- [The Ontology of the Quantum State under the Biquaternion Framework](the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html), for the state as an element of $\mathbb{M}_+$ and the limits of that interpretation.
+- [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the thermal state as an element of $\mathbb{M}_+$ and the coherence that the trace discards.
+- [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the two-level truncation and the failure of the bosonic canonical relation.

@@ -1,5 +1,5 @@
 
-# __The Squares and the Positive Cone of the Biquaternioid Sesqualgebra__
+# __The Squares and the Positive Cone of the Biquaternion Sesqualgebra__
 
 ## Introduction
 

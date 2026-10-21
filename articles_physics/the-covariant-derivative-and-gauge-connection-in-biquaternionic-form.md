@@ -348,16 +348,16 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 
 ## Further Reading
 
-- *The Gauge Principle in Biquaternionic Form* — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the potential, the field strength, the gauge scalar $S$, and the Maxwell equation.
-- *The Field-Strength Biquaternion and Its Invariants* — the gauge-invariant content of $\tilde{F}$, which this article uses but does not develop.
-- *The Dirac Equation in Biquaternionic Form* — the massless field equation $\tilde{\nabla}\tilde{\Psi} = 0$ and the minimal-coupling question.
-- *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the coupled Dirac equation, the left/right matter-representation question, and the companion that names the covariant-derivative article.
-- *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$ whose covariantization is the gap discussed here.
-- *Chiral Fermions in the Biquaternion Framework* — the covariant derivative on the spinor module and the charge-operator representation.
-- *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which bounds the gauge orbit treated here.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — the sector decomposition, the four-vectors, and the trace formula.
-- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article, and the record of the Lorentz-gauging / Euler–Lagrange ambiguity.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the potential, the field strength, the gauge scalar $S$, and the Maxwell equation.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the gauge-invariant content of $\tilde{F}$, which this article uses but does not develop.
+- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the massless field equation $\tilde{\nabla}\tilde{\Psi} = 0$ and the minimal-coupling question.
+- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the coupled Dirac equation, the left/right matter-representation question, and the companion that names the covariant-derivative article.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$ whose covariantization is the gap discussed here.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the charge-operator representation.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which bounds the gauge orbit treated here.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the sector decomposition, the four-vectors, and the trace formula.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article, and the record of the Lorentz-gauging / Euler–Lagrange ambiguity.
 - J. Fredsted, "Obtaining consistent Lorentz gauging for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external result recorded in *The Gauge Connection and the Gravitational Connection*: the non-commutativity of internal-gauge localization (which this article's abelian construction enjoys) with the Euler–Lagrange variation when the gauge group is the Lorentz group, and the world-index formalism in which they commute again. Cited as an external claim and not adopted.
 - J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction, also recorded in *The Gauge Connection and the Gravitational Connection*, in which one algebra-valued connection carries both the local $\mathrm{U}(1)$ and the Lorentz connection; cited as evidence that the two connections of this section are not forbidden to be one, with no reason to identify them asserted here.
-- *Conventions in the Biquaternion Universe* — the multiplication rule, the conjugations, and the centre.
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the multiplication rule, the conjugations, and the centre.

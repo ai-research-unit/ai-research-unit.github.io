@@ -62,7 +62,7 @@ of Gram matrices $\operatorname{diag}(1,-1,-1,-1)$ and $\mathrm I_4$, hence of s
 
 ## The General and the Higher Structures
 
-**Remark (the $\mathbb{C}$-readings).** The same carrier read over $\mathbb{C}$ is the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the passage from the structures over $\mathbb{R}$ to their $\mathbb{C}$-companions is the complexification, and it is *The Realification and the Effect of the Change of Scalars* and the *Biquaternioid Algebraic Structures* category. This category keeps the $\mathbb{R}$-base.
+**Remark (the $\mathbb{C}$-readings).** The same carrier read over $\mathbb{C}$ is the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the passage from the structures over $\mathbb{R}$ to their $\mathbb{C}$-companions is the complexification, and it is *The Realification and the Effect of the Change of Scalars* and the *Biquaternion Algebraic Structures* category. This category keeps the $\mathbb{R}$-base.
 
 **Remark (the ternary product).** The general quaternionic product is non-associative, and its associator is not confined: the ternary product of the quaternionic product has a non-vanishing associator defect, treated in *The Associator and the Ternary Product of the Quaternionic Product*. This is the non-commutative counterpart of the flat ternary product of the complexoid, and it is why the correction terms of the Jordan triple identity are essential here.
 
@@ -93,9 +93,9 @@ The companion products carry two forms, $\langle\cdot,\cdot\rangle$ of signature
 
 ## Further Reading
 
-- *Introduction to the Quaternion Algebra* (`articles_maths/introduction-to-the-quaternion-algebra.md`), in the *Quaternions* category, for the algebra product, its unit, its norm and its division property.
-- *The 6 Products of the Quaternioid Real Space* (`articles_maths/the-6-products-of-the-quaternioid-real-space.md`) and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternioid-r-space.md`), for the products of the carrier and the laws of the structures.
-- *The 2 Forms over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternioid-r-space.md`) and *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternioid-r-space.md`), for the two forms and the two algebraic norms.
-- *The Associator and the Ternary Product of the Quaternionic Product* (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product-of-quaternioid.md`), for the non-commutative ternary product.
-- *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternioid.md`), *Introduction to the Symmetric Plain Algebra* (`articles_maths/introduction-to-the-symmetric-plain-algebra-of-quaternioid.md`) and *Introduction to the Antisymmetric Plain Algebra*, for the three structures individually.
-- *Algebras: A General Introduction*, *Symmetric Algebras*, *Anti-symmetric Algebras* and *Sesqualgebras*, for the general theory of the algebras the three structures instantiate.
+- [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html), in the *Quaternions* category, for the algebra product, its unit, its norm and its division property.
+- [The 6 Products of the Quaternioid Real Space](the-6-products-of-the-quaternioid-real-space.html) and [The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](the-algebraic-structures-over-the-quaternioid-r-space.html), for the products of the carrier and the laws of the structures.
+- [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html) and [The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space](the-2-algebraic-norms-over-the-quaternioid-r-space.html), for the two forms and the two algebraic norms.
+- [The Associator and the Ternary Product of the Quaternionic Product](the-associator-and-the-ternary-product-of-the-quaternionic-product-of-quaternioid.html), for the non-commutative ternary product.
+- [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra-of-quaternioid.html), [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html) and [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra-of-quaternioid.html), for the three structures individually.
+- [Algebras: A General Introduction](algebras-a-general-introduction.html), *Symmetric Algebras*, *Anti-symmetric Algebras* and [Sesqualgebras](sesqualgebras.html), for the general theory of the algebras the three structures instantiate.

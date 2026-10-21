@@ -3,70 +3,70 @@
 
 ## Introduction
 
-This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Split-Complex Norm and Invertibility* and to *Split-Complex Polar Element Representation*; the examples below use only the algebra.
+This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Split-Complex Norm and Invertibility* and to *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; the examples below use only the algebra.
 
-Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$.
+Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+jq'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-jq'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$.
 
 ## The Two Involutions and Their Fixed Spaces
 
-The algebra carries two involutions: the split-complex conjugation $\bar{A}$, and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. The first computation is that on $\mathbb{D}$ they coincide.
+The algebra carries two involutions: the split-complex conjugation $\bar{Q}$, and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_+ + (q+q')\Pi_-$. The first computation is that on $\mathbb{D}$ they coincide.
 
-**Example.** Take $A = 3+2j$. Then
+**Example.** Take $Q = 3+2j$. Then
 
 $$
-\bar A = 3 - 2j,
+\bar Q = 3 - 2j,
 $$
 
 while
 
 $$
-A = (3-2)\Pi_1 + (3+2)\Pi_2 = 1\cdot\tfrac{1+j}{2} + 5\cdot\tfrac{1-j}{2} = \tfrac{1+5}{2} + \tfrac{1-5}{2}j = 3 - 2j.
+Q = (3-2)\Pi_+ + (3+2)\Pi_- = 1\cdot\tfrac{1+j}{2} + 5\cdot\tfrac{1-j}{2} = \tfrac{1+5}{2} + \tfrac{1-5}{2}j = 3 - 2j.
 $$
 
-So $A = \bar A$ for this element; since the identity is polynomial in $A$, it holds for every $A$. The two involutions are one and the same map.
+So $Q = \bar Q$ for this element; since the identity is polynomial in $Q$, it holds for every $Q$. The two involutions are one and the same map.
 
-**The fixed spaces.** An element is fixed by $\bar{\cdot}$ iff $a-j a' = a+j a'$, i.e. $a'=0$; the fixed space is
-
-$$
-\mathbb{R}_{\mathbb{D}} = \{a : a \in \mathbb{R}\},
-$$
-
-the real line. An element is anti-fixed iff $a=0$; the anti-fixed space is
+**The fixed spaces.** An element is fixed by $\bar{\cdot}$ iff $q-j q' = q+j q'$, i.e. $q'=0$; the fixed space is
 
 $$
-j\mathbb{R}_{\mathbb{D}} = \{j a' : a' \in \mathbb{R}\},
+\mathbb{R}_{\mathbb{D}} = \{q : q \in \mathbb{R}\},
 $$
 
-the split imaginary line. For $A = 3+2j$ the projections are $A_r = \tfrac12(A+\bar A) = 3$ and $j A_i = \tfrac12(A-\bar A) = 2j$, so $A = 3 + 2j$ recovers the coordinates.
+the real line. An element is anti-fixed iff $q=0$; the anti-fixed space is
+
+$$
+j\mathbb{R}_{\mathbb{D}} = \{j q' : q' \in \mathbb{R}\},
+$$
+
+the split imaginary line. For $Q = 3+2j$ the projections are $Q_r = \tfrac12(Q+\bar Q) = 3$ and $j Q_i = \tfrac12(Q-\bar Q) = 2j$, so $Q = 3 + 2j$ recovers the coordinates.
 
 ## The Idempotents and the Two Minimal Ideals
 
-The idempotents are $\Pi_1 = \tfrac12(1+j)$ and $\Pi_2 = \tfrac12(1-j)$, with
+The idempotents are $\Pi_+ = \tfrac12(1+j)$ and $\Pi_- = \tfrac12(1-j)$, with
 
 $$
-\Pi_1^2 = \Pi_1, \qquad \Pi_2^2 = \Pi_2, \qquad \Pi_1\Pi_2 = 0, \qquad \Pi_1 + \Pi_2 = 1.
+\Pi_+^2 = \Pi_+, \qquad \Pi_-^2 = \Pi_-, \qquad \Pi_+\Pi_- = 0, \qquad \Pi_+ + \Pi_- = 1.
 $$
 
-**Example.** Decompose $A = 3+2j$ in the idempotent basis:
+**Example.** Decompose $Q = 3+2j$ in the idempotent basis:
 
 $$
-A_+ = a+a' = 5, \qquad A_- = a-a' = 1, \qquad A = 5\Pi_1 + 1\Pi_2
+Q_+ = q+q' = 5, \qquad Q_- = q-q' = 1, \qquad Q = 5\Pi_+ + 1\Pi_-
 = 5\cdot\tfrac{1+j}{2} + 1\cdot\tfrac{1-j}{2} = 3 + 2j. \checkmark
 $$
 
-The two components $A_\pm = A\Pi_{1,2}$ are
+The two components $Q_\pm = Q\Pi_\pm$ are
 
 $$
-A\Pi_1 = 5\Pi_1 = \tfrac{5}{2}(1+j), \qquad A\Pi_2 = 1\Pi_2 = \tfrac{1}{2}(1-j).
+Q\Pi_+ = 5\Pi_+ = \tfrac{5}{2}(1+j), \qquad Q\Pi_- = 1\Pi_- = \tfrac{1}{2}(1-j).
 $$
 
 The **minimal ideals** are the lines
 
 $$
-\mathbb{R}\Pi_1 = \{(t,t) : t \in \mathbb{R}\}, \qquad \mathbb{R}\Pi_2 = \{(t,-t) : t \in \mathbb{R}\},
+\mathbb{R}\Pi_+ = \{(t,t) : t \in \mathbb{R}\}, \qquad \mathbb{R}\Pi_- = \{(t,-t) : t \in \mathbb{R}\},
 $$
 
-in the coordinates $(a,a')$; their product is zero, and $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2$. The isomorphism with $\mathbb{R}\oplus\mathbb{R}$ is realised numerically by $\varphi(3+2j) = (5, 1)$; the multiplication is componentwise, $\varphi(AB) = (A_+B_+, A_-B_-)$.
+in the coordinates $(q,q')$; their product is zero, and $\mathbb{D} = \mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The isomorphism with $\mathbb{R}\oplus\mathbb{R}$ is realised numerically by $\varphi(3+2j) = (5, 1)$; the multiplication is componentwise, $\varphi(QB) = (Q_+B_+, Q_-B_-)$.
 
 ## Explicit Zero-Divisor Pairs
 
@@ -75,80 +75,80 @@ The zero divisors are the nonzero points of the two null lines; any two elements
 **Example (a pair).** Take
 
 $$
-a = 1+j, \qquad b = 2-2j.
+Q_1 = 1+j, \qquad Q_2 = 2-2j.
 $$
 
 Then
 
 $$
-a b = (1+j)(2-2j) = 2(1+j)(1-j) = 2(1-j^2) = 0,
+Q_1 Q_2 = (1+j)(2-2j) = 2(1+j)(1-j) = 2(1-j^2) = 0,
 $$
 
-with $a \neq 0$ and $b \neq 0$. So $a$ and $b$ are zero divisors; each is a non-zero multiple of an idempotent.
+with $Q_1 \neq 0$ and $Q_2 \neq 0$. So $Q_1$ and $Q_2$ are zero divisors; each is a non-zero multiple of an idempotent.
 
-In the idempotent basis the mechanism is transparent: $a = 1+j = 2\Pi_1$, $b = 2-2j = 4\Pi_2$, and $\Pi_1\Pi_2 = 0$.
+In the idempotent basis the mechanism is transparent: $Q_1 = 1+j = 2\Pi_+$, $Q_2 = 2-2j = 4\Pi_-$, and $\Pi_+\Pi_- = 0$.
 
 **Example (a general pair).** For any $\lambda, \mu \neq 0$,
 
 $$
-(\lambda \Pi_1)(\mu \Pi_2) = \lambda\mu\, \Pi_1\Pi_2 = 0,
+(\lambda \Pi_+)(\mu \Pi_-) = \lambda\mu\, \Pi_+\Pi_- = 0,
 $$
 
-so the whole family of examples is $\{\lambda \Pi_1\}\times\{\mu \Pi_2\}$; and the annihilator of $\lambda \Pi_1$ is the line $\mathbb{R}\Pi_2$, as established in *Split-Complex Zero Divisors*. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is that each factor lies on one of the two null lines.
+so the whole family of examples is $\{\lambda \Pi_+\}\times\{\mu \Pi_-\}$; and the annihilator of $\lambda \Pi_+$ is the line $\mathbb{R}\Pi_-$, as established in *Split-Complex Zero Divisors*. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is that each factor lies on one of the two null lines.
 
 ## Worked Hyperbolic and Parabolic Elements
 
-An element of $\mathbb{D}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $A_+A_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $A_+A_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $A_+A_- = 0$, that is, a zero divisor. The product $A_+A_-$ is the algebraic reading of the quadratic form of *Split-Complex Norm and Invertibility*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
+An element of $\mathbb{D}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Split-Complex Norm and Invertibility*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
 
-**Hyperbolic example.** Let $A = \tfrac54 + \tfrac34 j$. Its coordinates are
-
-$$
-A_+ = a+a' = 2, \qquad A_- = a-a' = \tfrac12, \qquad A_+A_- = 1 > 0,
-$$
-
-so $A$ is a hyperbolic unit, and indeed $A = 2\Pi_1 + \tfrac12\Pi_2$. Its powers are computed in the idempotent basis, where multiplication is componentwise:
+**Hyperbolic example.** Let $Q = \tfrac54 + \tfrac34 j$. Its coordinates are
 
 $$
-A^n = 2^n\Pi_1 + 2^{-n}\Pi_2 = \frac{2^n+2^{-n}}{2} + \frac{2^n-2^{-n}}{2}\,j,
+Q_+ = q+q' = 2, \qquad Q_- = q-q' = \tfrac12, \qquad Q_+Q_- = 1 > 0,
 $$
 
-so the powers stay in the hyperbolic class and satisfy $A^m A^n = A^{m+n}$. For $n=2$,
+so $Q$ is a hyperbolic unit, and indeed $Q = 2\Pi_+ + \tfrac12\Pi_-$. Its powers are computed in the idempotent basis, where multiplication is componentwise:
 
 $$
-A^2 = \tfrac{17}{8} + \tfrac{15}{8}j,
+Q^n = 2^n\Pi_+ + 2^{-n}\Pi_- = \frac{2^n+2^{-n}}{2} + \frac{2^n-2^{-n}}{2}\,j,
 $$
 
-and indeed $A A = (\tfrac54)(\tfrac54) + (\tfrac34)(\tfrac34) + 2\cdot\tfrac54\cdot\tfrac34\,j = \tfrac{34}{16} + \tfrac{30}{16}j$, an ordinary multiplication in the basis $1, j$. $\checkmark$
-
-**Parabolic example.** Let $A = 1+j = 2\Pi_1$, with coordinates $A_+ = 2$, $A_- = 0$, so $A$ is parabolic (a zero divisor). Then
+so the powers stay in the hyperbolic class and satisfy $Q^m Q^n = Q^{m+n}$. For $n=2$,
 
 $$
-A^2 = (1+j)^2 = 1 + 2j + j^2 = 2 + 2j = 2A, \qquad A^n = 2^{n-1}A \quad (n \geq 1),
+Q^2 = \tfrac{17}{8} + \tfrac{15}{8}j,
 $$
 
-which is the same computation in the idempotent basis, $A^n = 2^n\Pi_1 = 2^{n-1}A$. So the powers of a parabolic element stay on its null line. The element has no inverse, because $A_- = 0$; the algebraic unit criterion of *Split-Complex Algebra* fails at it. This is the exact algebraic analogue of the parabolic elements of the hyperbolic group, which lie on the null cone.
+and indeed $Q Q = (\tfrac54)(\tfrac54) + (\tfrac34)(\tfrac34) + 2\cdot\tfrac54\cdot\tfrac34\,j = \tfrac{34}{16} + \tfrac{30}{16}j$, an ordinary multiplication in the basis $1, j$. $\checkmark$
+
+**Parabolic example.** Let $Q = 1+j = 2\Pi_+$, with coordinates $Q_+ = 2$, $Q_- = 0$, so $Q$ is parabolic (a zero divisor). Then
+
+$$
+Q^2 = (1+j)^2 = 1 + 2j + j^2 = 2 + 2j = 2Q, \qquad Q^n = 2^{n-1}Q \quad (n \geq 1),
+$$
+
+which is the same computation in the idempotent basis, $Q^n = 2^n\Pi_+ = 2^{n-1}Q$. So the powers of a parabolic element stay on its null line. The element has no inverse, because $Q_- = 0$; the algebraic unit criterion of *Split-Complex Algebra* fails at it. This is the exact algebraic analogue of the parabolic elements of the hyperbolic group, which lie on the null cone.
 
 ## Summary
 
-This article worked the algebra in explicit numbers. The two involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $A = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_{1,2}$ were exhibited, the decomposition $3+2j = 5\Pi_1 + 1\Pi_2$ computed, and the minimal ideals $\mathbb{R}\Pi_{1,2}$ identified.
+This article worked the algebra in explicit numbers. The two involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $Q = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_\pm$ were exhibited, the decomposition $3+2j = 5\Pi_+ + 1\Pi_-$ computed, and the minimal ideals $\mathbb{R}\Pi_\pm$ identified.
 
-Explicit zero-divisor pairs were given, $a = 1+j = 2\Pi_1$ and $b = 2-2j = 4\Pi_2$ with $a b = 0$, and the general pair $(\lambda \Pi_1)(\mu \Pi_2) = 0$. Finally, the hyperbolic element $A = \tfrac54 + \tfrac34 j$, of coordinates $(2, \tfrac12)$ and powers $A^n = 2^n\Pi_1 + 2^{-n}\Pi_2$, was compared with the parabolic element $1+j$, of coordinates $(2,0)$, with $A^n = 2^{n-1}A$ and no inverse.
+Explicit zero-divisor pairs were given, $Q_1 = 1+j = 2\Pi_+$ and $Q_2 = 2-2j = 4\Pi_-$ with $Q_1Q_2 = 0$, and the general pair $(\lambda \Pi_+)(\mu \Pi_-) = 0$. Finally, the hyperbolic element $Q = \tfrac54 + \tfrac34 j$, of coordinates $(2, \tfrac12)$ and powers $Q^n = 2^n\Pi_+ + 2^{-n}\Pi_-$, was compared with the parabolic element $1+j$, of coordinates $(2,0)$, with $Q^n = 2^{n-1}Q$ and no inverse.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
-| $A = a + j a'$ | General split complex number |
-| $\bar A = a - j a'$ | Split-complex conjugation (unique non-trivial involution) |
-| $A = (a-a')\Pi_1 + (a+a')\Pi_2$ | Idempotent conjugation; equal to $\bar A$ |
+| $Q = q + j q'$ | General split complex number |
+| $\bar Q = q - j q'$ | Split-complex conjugation (unique non-trivial involution) |
+| $Q = (q-q')\Pi_+ + (q+q')\Pi_-$ | Idempotent conjugation; equal to $\bar Q$ |
 | $\mathbb{R}_{\mathbb{D}}, j\mathbb{R}_{\mathbb{D}}$ | Fixed and anti-fixed spaces of the involution |
-| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents |
-| $A_\pm = a\pm a'$ | Idempotent coordinates, $A = A_+\Pi_1 + A_-\Pi_2$ |
-| $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | Minimal ideals / null lines |
-| $A_+A_-$ | Product of the idempotent coordinates; its sign classes the unit |
+| $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
+| $Q_\pm = q\pm q'$ | Idempotent coordinates, $Q = Q_+\Pi_+ + Q_-\Pi_-$ |
+| $\mathbb{R}\Pi_+, \mathbb{R}\Pi_-$ | Minimal ideals / null lines |
+| $Q_+Q_-$ | Product of the idempotent coordinates; its sign classes the unit |
 | $\mathbb{D}^\times$ | Group of units, the elements with both coordinates nonzero |
-| hyperbolic, elliptic, parabolic | Unit with $A_+A_- > 0$, unit with $A_+A_- < 0$, zero divisor with $A_+A_- = 0$ |
+| hyperbolic, elliptic, parabolic | Unit with $Q_+Q_- > 0$, unit with $Q_+Q_- < 0$, zero divisor with $Q_+Q_- = 0$ |
 
 ## Further Reading
 

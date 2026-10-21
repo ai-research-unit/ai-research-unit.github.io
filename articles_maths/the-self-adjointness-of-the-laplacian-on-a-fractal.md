@@ -28,7 +28,7 @@ the closure in the norm $\|u\|_{\mathcal{E}}^2=\mathcal{E}(u)+\|u\|_{L^2(\mu)}^2
 
 **Definition.** The **Dirichlet Laplacian** $\Delta_D$ is associated with the form on $H_0$; the **Neumann Laplacian** $\Delta_N$ is associated with the form on $H$. The boundary data are connected by the **boundary operator** $\Lambda$ and the **normal derivative** $\partial/\partial n$, defined by the Gauss–Green identity
 $$
-\mathcal{E}(u,v)=-\int(\Delta u)\,v\,d\mu+\langle\1\\,u,v|_{\partial}\rangle
+\mathcal{E}(u,v)=-\int(\Delta u)\,v\,d\mu+\langle \partial u/\partial n,\, v|_{\partial}\rangle
 $$
 for $u$ of the appropriate class, with $\partial=V_0$ the boundary and $\langle\,,\rangle$ the pairing of the boundary values.
 

@@ -53,7 +53,7 @@ The trace is the matrix trace on the $\mathrm{SU}(2)$ factor, taken in the defin
 $$
 \mathcal{A}_{2,\mu}=\tilde U\mathcal{A}_\mu \tilde U^{-1}+\frac{i}{\kappa}(\partial/\partial Q_\mu \tilde U)\tilde U^{-1},
 $$
-and the action is unchanged, $S_{\mathrm{YM}}[\mathcal{A}^\tilde U]=S_{\mathrm{YM}}[\mathcal{A}]$. The same holds for the full Yang–Mills action including a matter sector, provided the matter fields transform in the representation the covariant derivative presupposes.
+and the action is unchanged, $S_{\mathrm{YM}}[\mathcal{A}^{\tilde U}]=S_{\mathrm{YM}}[\mathcal{A}]$. The same holds for the full Yang–Mills action including a matter sector, provided the matter fields transform in the representation the covariant derivative presupposes.
 
 ### The Orbit and the Infinite Factor
 
@@ -61,7 +61,7 @@ The integration variable is an $\mathrm{SU}(2)$-valued one-form, and the measure
 $$
 \mathcal{D}\mathcal{A}=\prod_{\mu=0}^{3}\prod_{a=1}^{3}\mathcal{D}\mathcal{A}_\mu^a ,
 $$
-written in components because $\mathrm{SU}(2)$ is real three-dimensional. The gauge transformation is a shift of the connection by $\frac{i}{\kappa}(D_\mu \tilde U)\tilde U^{-1}$ with $(D_\mu \tilde U)=\partial/\partial Q_\mu \tilde U+i\kappa[\mathcal{A}_\mu,\tilde U]$ the covariant derivative of the group-valued function; the orbit through $\mathcal{A}$ is the set of all $\mathcal{A}^\tilde U$. The integrand $\exp(iS_{\mathrm{YM}})$ is constant on the orbit, and the measure is invariant under the shift, so the integral factorizes as in the abelian case,
+written in components because $\mathrm{SU}(2)$ is real three-dimensional. The gauge transformation is a shift of the connection by $\frac{i}{\kappa}(D_\mu \tilde U)\tilde U^{-1}$ with $(D_\mu \tilde U)=\partial/\partial Q_\mu \tilde U+i\kappa[\mathcal{A}_\mu,\tilde U]$ the covariant derivative of the group-valued function; the orbit through $\mathcal{A}$ is the set of all $\mathcal{A}^{\tilde U}$. The integrand $\exp(iS_{\mathrm{YM}})$ is constant on the orbit, and the measure is invariant under the shift, so the integral factorizes as in the abelian case,
 $$
 Z=\int\mathcal{D}\mathcal{A}\,\exp(iS_{\mathrm{YM}}[\mathcal{A}])
 =\mathrm{Vol}(\mathcal{G})\int_{\text{orbits}}\mathcal{D}\mathcal{A}_{\text{rep}}\,\exp(iS_{\mathrm{YM}}[\mathcal{A}]),
@@ -72,13 +72,13 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge trans
 
 ### Inserting Unity
 
-Let $G^a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^\tilde U$ denote the gauge transform of $\mathcal{A}$ by $\tilde U$. The Faddeev–Popov identity is
+Let $G^a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^{\tilde U}$ denote the gauge transform of $\mathcal{A}$ by $\tilde U$. The Faddeev–Popov identity is
 $$
-1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^\tilde U]\right),
+1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right),
 $$
 which defines the determinant $\Delta[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
 $$
-\Delta[\mathcal{A}^\tilde U]=\Delta[\mathcal{A}],
+\Delta[\mathcal{A}^{\tilde U}]=\Delta[\mathcal{A}],
 $$
 because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
 $$
@@ -231,7 +231,7 @@ What the algebra adds here is an interpretation rather than a formula. The covar
 
 The Faddeev–Popov identity presupposes that the gauge condition $G=0$ intersects each orbit exactly once: the insertion of unity is an identity for each orbit, and the argument that the determinant cancels the volume requires the set of solutions to be a single point per orbit. In the abelian theory on a topologically trivial background this holds for the Lorenz gauge, and the determinant is field-independent. In the non-abelian theory it fails, and the failure is structural.
 
-The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^\tilde U]=0$, that is $\partial/\partial Q_\mu\,\mathcal{A}^{\tilde U\mu}=0$, has more than one solution $\tilde U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M^{ab}=-\partial\cdot D^{ab}$ is the Hessian of the gauge-fixing functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo gauge transformations is not covered by a single gauge slice: a continuous global gauge-fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
+The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^{\tilde U}]=0$, that is $\partial/\partial Q_\mu\,\mathcal{A}^{\tilde U\mu}=0$, has more than one solution $\tilde U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M^{ab}=-\partial\cdot D^{ab}$ is the Hessian of the gauge-fixing functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo gauge transformations is not covered by a single gauge slice: a continuous global gauge-fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
 
 Two consequences follow, and both are properties of the non-abelian path integral as such.
 
@@ -250,7 +250,7 @@ In the framework's terms the ambiguity is a statement about the adjoint action, 
 
 ## Summary
 
-The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^\tilde U])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
+The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
 $$
 \Delta[\mathcal{A}]=\det\big(-\partial/\partial Q_\mu D^{\mu\,ab}\big),
 \qquad
@@ -292,7 +292,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |
 | $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_\mu^a$ | Measure on $\mathrm{SU}(2)$-valued configurations |
 | $G^a[\mathcal{A}]=\partial/\partial Q_\mu\,\mathcal{A}^{a\mu}-\omega^a$ | Lorenz gauge-fixing condition |
-| $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^\tilde U])$ | Faddeev–Popov identity |
+| $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ | Faddeev–Popov identity |
 | $M^{ab}=-\partial/\partial Q_\mu D^{\mu\,ab}$ | Faddeev–Popov operator (field-dependent) |
 | $D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ | Covariant derivative in the adjoint representation |
 | $c^a,\bar c_a$ | Faddeev–Popov ghost and antighost, Grassmann-odd |

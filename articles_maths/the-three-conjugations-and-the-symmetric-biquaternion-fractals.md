@@ -106,8 +106,8 @@ The quadratic map is equivariant under three of the four conjugations, and the f
 
 ## Further Reading
 
-- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations, the group they form and their fixed subspaces.
-- *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the equivariance theorem and the central-parameter reduction.
-- *The Slices of the Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-biquaternion-julia-sets.md`), for the central, real and quaternion slices whose symmetries are read here.
-- *The Quaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-quaternion-quadratic-map-and-its-julia-sets.md`), for the quaternion pictures and their classical symmetries.
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces that are the symmetry axes.
+- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, the group they form and their fixed subspaces.
+- [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the equivariance theorem and the central-parameter reduction.
+- [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the central, real and quaternion slices whose symmetries are read here.
+- [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html), for the quaternion pictures and their classical symmetries.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces that are the symmetry axes.

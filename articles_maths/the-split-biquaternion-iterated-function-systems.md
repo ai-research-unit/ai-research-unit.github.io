@@ -94,8 +94,8 @@ The split-biquaternion iterated function systems reduce to quaternion systems on
 
 ## Further Reading
 
-- *The Quaternion Iterated Function Systems* (`articles_maths/the-quaternion-iterated-function-systems.md`), for the two factor theories.
-- *The Split-Biquaternion Quadratic Family* (`articles_maths/the-split-biquaternion-quadratic-family.md`), for the norm identity and the product decomposition used in the operator-norm computation.
-- *The Clifford Decomposition of the Split-Biquaternion Fractals* (`articles_maths/the-clifford-decomposition-of-the-split-biquaternion-fractals.md`), for the parity grading of the generators.
-- *Split-Biquaternion Zero Divisors* (`articles_maths/split-biquaternion-zero-divisors.md`), for the ideals of the zero-divisor generators.
-- *Fractal Geometry* (`articles_maths/fractal-geometry.md`) and *Iterated Function Systems in the Complex Plane* (`articles_maths/iterated-function-systems-in-the-complex-plane.md`), for the attractor theorem, the similarity dimension and the product formula.
+- [The Quaternion Iterated Function Systems](the-quaternion-iterated-function-systems.html), for the two factor theories.
+- [The Split-Biquaternion Quadratic Family](the-split-biquaternion-quadratic-family.html), for the norm identity and the product decomposition used in the operator-norm computation.
+- [The Clifford Decomposition of the Split-Biquaternion Fractals](the-clifford-decomposition-of-the-split-biquaternion-fractals.html), for the parity grading of the generators.
+- [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the ideals of the zero-divisor generators.
+- [Fractal Geometry](fractal-geometry.html) and [Iterated Function Systems in the Complex Plane](iterated-function-systems-in-the-complex-plane.html), for the attractor theorem, the similarity dimension and the product formula.

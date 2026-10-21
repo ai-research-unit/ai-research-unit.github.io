@@ -89,7 +89,7 @@ The group of units of the quaternion algebra is the punctured space $\mathbb{H}^
 
 ## Further Reading
 
-- *Introduction to Topology on the Quaternions* (`articles_maths/introduction-to-topology-on-the-quaternions.md`), for the space and the three objects
-- *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the inverse formula
-- *Quaternion Orders and Finite Groups of Units* (`articles_maths/quaternion-orders-and-finite-groups-of-units.md`), for the discrete subgroups of $S^3$
-- *Quaternion Exponential and Lie Group Structure* (`articles_maths/quaternion-exponential-and-lie-group-structure.md`), for the logarithm and the Lie structure
+- [Introduction to Topology on the Quaternions](introduction-to-topology-on-the-quaternions.html), for the space and the three objects
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the inverse formula
+- [Quaternion Orders and Finite Groups of Units](quaternion-orders-and-finite-groups-of-units.html), for the discrete subgroups of $S^3$
+- [Quaternion Exponential and Lie Group Structure](quaternion-exponential-and-lie-group-structure.html), for the logarithm and the Lie structure

@@ -93,7 +93,7 @@ whose Lie algebra is $\hat{\mathrm{G}}' = L\mathrm{G}\oplus\mathbb{C} c$. The co
 
 **Theorem (the affine Weyl group and the decompositions).** With $I$ an Iwahori subgroup of $\Lambda G$ and $W^{\mathrm{ext}}$ the extended affine Weyl group,
 
-**(a)** (affine Bruhat decomposition) $\Lambda G = \bigsqcup_{w\inW^{\mathrm{ext}} I\,w\,I$, the union being disjoint, and each double coset is an affine space of dimension the length of $w$ in the affine Weyl group;
+**(a)** (affine Bruhat decomposition) $\Lambda G = \bigsqcup_{w\in W^{\mathrm{ext}}} I\,w\,I$, the union being disjoint, and each double coset is an affine space of dimension the length of $w$ in the affine Weyl group;
 
 **(b)** (Birkhoff decomposition) $\Lambda G = \bigsqcup_{w\in W_{\mathrm{aff}}}\,\Lambda^-G\, w\, \Lambda^+G$, and the orbits of $\Lambda^+G$ on the "big cell" are the affine cells indexed by $w$; the corresponding decomposition of the loop algebra is the triangular decomposition of the affine algebra;
 
@@ -140,7 +140,7 @@ the **Atiyah–Pressley form**, which is closed, nondegenerate and invariant und
 **Theorem (Weyl–Kac character formula).** The character of the integrable highest weight module $L(\lambda)$ of the affine algebra $\hat{\mathrm{G}}$ is
 
 $$
-\operatorname{ch}L(\lambda) = \frac{\sum_{w\inW^{\mathrm{ext}}(-1)^{\ell(w)}\,\exp(w(\lambda+\rho)-\rho)}{\prod_{\alpha>0}(1-\exp(-\alpha))^{\mathrm{mult}\,\alpha}} ,
+\operatorname{ch}L(\lambda) = \frac{\sum_{w\in W^{\mathrm{ext}}}(-1)^{\ell(w)}\,\exp(w(\lambda+\rho)-\rho)}{\prod_{\alpha>0}(1-\exp(-\alpha))^{\mathrm{mult}\,\alpha}} ,
 $$
 
 the sum over the extended affine Weyl group and the product over the positive affine roots, with the multiplicities of the imaginary roots accounted for; the formula specialises to the classical Weyl character formula when the level is zero and gives the **Kac–Weyl denominator identity** for the affine algebra. The representations are the algebraic input into the geometric theory: the **geometric Satake equivalence** identifies the tensor category of the representations of the Langlands dual group with the category of the equivariant perverse sheaves on the affine Grassmannian, so that the Schubert cells of the Grassmannian are the geometric counterpart of the weight spaces; the statement is quoted as a pointer to the geometric theory of the affine Grassmannian, which lies beyond this article.
@@ -163,7 +163,7 @@ The theory of this article is algebraic and group-theoretic; the analysis of the
 
 The loop group of a group $G$ is the group of loops $S^1\to G$: in the algebraic setting the polynomial loops $\Lambda G = G(\mathbb{C}[t,t^{-1}])$ and in the smooth setting the Fréchet Lie group $LG = C^\infty(S^1,G)$, with the based loop group $\Omega G$ of the loops with base point fixed. The loop algebra $L\mathrm{G} = \mathrm{G}\otimes\mathbb{C}[t,t^{-1}]$ has the invariant two-cocycle $\omega(x,y) = \operatorname{Res}\langle x',y\rangle dt$, which is unique up to scalar and not a coboundary, and its universal central extension adjoined to the derivation gives the affine Kac–Moody algebra $\hat{\mathrm{G}} = L\mathrm{G}\oplus\mathbb{C} c\oplus\mathbb{C} d$ with the bracket $[x\otimes t^m,y\otimes t^n] = [x,y]\otimes t^{m+n} + m\langle x,y\rangle\delta_{m+n,0}c$. The affine Weyl group $W_{\mathrm{aff}} = W\ltimes\Lambda_{\mathrm{coroot}}$ and the extended affine Weyl group $W^{\mathrm{ext}}$ act on the affine root system and index the decompositions.
 
-The Iwahori subgroup $I$ of $\Lambda G$ gives the affine Bruhat decomposition $\Lambda G = \bigsqcup_{w\inW^{\mathrm{ext}}IwI$, the Birkhoff decomposition $\Lambda G = \bigsqcup\Lambda^-G w\Lambda^+G$ gives the cells of the affine Grassmannian $\mathrm{Gr} = \Lambda G/\Lambda^+G$, an ind-projective variety whose Schubert cells are indexed by the dominant coweights with the closure order the dominance order. The loop group is a Fréchet/ind-variety infinite-dimensional group on which the exponential map is not locally surjective, so the Lie correspondence fails; the based loop group $\Omega G$ is a Kähler manifold with the Atiyah–Pressley form, and the integrable highest weight modules of $\hat{\mathrm{G}}$ have the Weyl–Kac characters. The central extension is the extra structure that distinguishes the loop group from the $p$-adic group of the same root data, and it is the algebraic model of the affine building. The Sobolev completions, the positive energy representations, the Hilbert-space theory and the probabilistic analysis of the loops belong to Part III.
+The Iwahori subgroup $I$ of $\Lambda G$ gives the affine Bruhat decomposition $\Lambda G = \bigsqcup_{w\in W^{\mathrm{ext}}}IwI$, the Birkhoff decomposition $\Lambda G = \bigsqcup\Lambda^-G w\Lambda^+G$ gives the cells of the affine Grassmannian $\mathrm{Gr} = \Lambda G/\Lambda^+G$, an ind-projective variety whose Schubert cells are indexed by the dominant coweights with the closure order the dominance order. The loop group is a Fréchet/ind-variety infinite-dimensional group on which the exponential map is not locally surjective, so the Lie correspondence fails; the based loop group $\Omega G$ is a Kähler manifold with the Atiyah–Pressley form, and the integrable highest weight modules of $\hat{\mathrm{G}}$ have the Weyl–Kac characters. The central extension is the extra structure that distinguishes the loop group from the $p$-adic group of the same root data, and it is the algebraic model of the affine building. The Sobolev completions, the positive energy representations, the Hilbert-space theory and the probabilistic analysis of the loops belong to Part III.
 
 ## Summary of Notation
 
@@ -187,7 +187,7 @@ The Iwahori subgroup $I$ of $\Lambda G$ gives the affine Bruhat decomposition $\
 | $\widehat{\Lambda G}$ | Kac–Moody group: $\mathbb{C}^\times$-central extension of $\Lambda G$ |
 | $\mathrm{Gr} = \Lambda G/\Lambda^+G$ | Affine Grassmannian, an ind-projective variety |
 | $\mathrm{Gr}_\lambda$ | Schubert cell of the dominant coweight $\lambda$ |
-| affine Bruhat decomposition | $\Lambda G = \bigsqcup_{w\inW^{\mathrm{ext}}IwI$ |
+| affine Bruhat decomposition | $\Lambda G = \bigsqcup_{w\in W^{\mathrm{ext}}}IwI$ |
 | Birkhoff decomposition | $\Lambda G = \bigsqcup_{w}\Lambda^-G w\Lambda^+G$ |
 | $E$, $\omega_{\mathrm{AP}}$ | Energy functional; Atiyah–Pressley Kähler form on $\Omega G$ |
 | $\operatorname{ch}L(\lambda)$ | Character of the integrable module; Weyl–Kac formula |

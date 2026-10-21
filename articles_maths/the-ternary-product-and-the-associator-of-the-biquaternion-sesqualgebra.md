@@ -1,5 +1,5 @@
 
-# __The Ternary Product and the Associator of the Biquaternioid Sesqualgebra__
+# __The Ternary Product and the Associator of the Biquaternion Sesqualgebra__
 
 ## Introduction
 
@@ -151,7 +151,7 @@ for all $x,y,u,v,w$, the identity being the defining axiom of an algebraic $J^{*
 
 ### The Operator Interpretation
 
-**Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Q_3\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$ and $\tilde Q_1\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$, the ordinary left and right multiplications by $\tilde Q_1\tilde Q_2^{*}$ and by $\tilde Q_2^{*}\tilde Q_3$; fixing the middle variable gives the conjugate-linear operator $\tilde Q_2\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$, which is the sandwich $S_{\tilde Q_1,\tilde Q_3^{*}}$ of *The Sesquilinear Sandwich on the Biquaternioid*. The **quadratic representation** is the case $\tilde Q_1=\tilde Q_3$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Q_3\mapsto\tilde Q_3\tilde Q_2^{*}\tilde Q_3=\tilde Q_3\star\tilde Q_2\star\tilde Q_3^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* with the two parameters tied to one element.
+**Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Q_3\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$ and $\tilde Q_1\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$, the ordinary left and right multiplications by $\tilde Q_1\tilde Q_2^{*}$ and by $\tilde Q_2^{*}\tilde Q_3$; fixing the middle variable gives the conjugate-linear operator $\tilde Q_2\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$, which is the sandwich $S_{\tilde Q_1,\tilde Q_3^{*}}$ of *The Sesquilinear Sandwich on the Biquaternion*. The **quadratic representation** is the case $\tilde Q_1=\tilde Q_3$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Q_3\mapsto\tilde Q_3\tilde Q_2^{*}\tilde Q_3=\tilde Q_3\star\tilde Q_2\star\tilde Q_3^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternion* with the two parameters tied to one element.
 
 ## The Contrast with the Quaternionic Sibling
 

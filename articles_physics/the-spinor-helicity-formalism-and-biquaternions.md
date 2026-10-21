@@ -317,12 +317,12 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 - Zvi Bern, Lance J. Dixon, and David A. Kosower, "On-shell methods in perturbative QCD," *Annals of Physics* **322** (2007) 1587–1634, for the use of helicity amplitudes in practical calculations.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1: *Two-Spinor Calculus and Relativistic Fields* (Cambridge University Press, 1984), for the two-component spinor calculus and the reality condition on the momentum bispinor.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge University Press, 1995), for the little group of a massless particle and helicity as the weight of its compact subgroup.
-- Companion article *Zero Divisors of the Biquaternion Algebra*, for the criterion $\langle\tilde Q\rangle_{\natural}=0$, the pure and non-pure families, and the rank-one statement.
-- Companion article *The Null Quadric and Its Projective Geometry*, for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\bar\beta}=\phi_\alpha\pi^{\bar\beta}$.
-- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
-- Companion article *Exercise: Chirality and the Weyl Spinors*, for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.
-- Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the $(m,n)$ classification containing $(\tfrac12,0)$ and $(0,\tfrac12)$.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the identification of the null cone of $\mathbb{M}_-$ with the light cone and the role of the $ict'$ convention.
-- Companion article *The Photon in Biquaternionic Form*, for the realized helicity $\pm1$ of the massless vector field and its two-state spectrum.
-- Companion article *The S-Matrix in Biquaternionic Form*, for what the framework does and does not supply at the level of scattering.
-- Companion article *Twistor Theory and Biquaternions*, for the related conformal and null geometry and the distinction between the biquaternion algebra and twistor space.
+- Companion article [Zero Divisors of the Biquaternion Algebra](../articles_maths/zero-divisors-of-the-biquaternion-algebra.html), for the criterion $\langle\tilde Q\rangle_{\natural}=0$, the pure and non-pure families, and the rank-one statement.
+- Companion article [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html), for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\bar\beta}=\phi_\alpha\pi^{\bar\beta}$.
+- Companion article [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
+- Companion article [Exercise: Chirality and the Weyl Spinors](exercise-chirality-and-the-weyl-spinors.html), for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.
+- Companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the $(m,n)$ classification containing $(\tfrac12,0)$ and $(0,\tfrac12)$.
+- Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the identification of the null cone of $\mathbb{M}_-$ with the light cone and the role of the $ict'$ convention.
+- Companion article [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the realized helicity $\pm1$ of the massless vector field and its two-state spectrum.
+- Companion article [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for what the framework does and does not supply at the level of scattering.
+- Companion article [Twistor Theory and Biquaternions](twistor-theory-and-biquaternions.html), for the related conformal and null geometry and the distinction between the biquaternion algebra and twistor space.

@@ -561,16 +561,16 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 
 **Companion articles (this series).**
 
-- *The Unruh Effect in Biquaternionic Form*, the sibling article: the Rindler wedge, the boost, the KMS strip, and the temperature from the surface gravity.
-- *The KMS Condition and the Biquaternion Framework*, the parent: the KMS condition, its imaginary-time strip, and the modular Hamiltonian in $\mathbb{M}_+$.
-- *Curved Spacetime and the Biquaternion Framework*, for the frame-field route to the metric and the obstruction to black-hole exteriors in the local-scale class.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the sectors and their imaginary-time interpretation.
-- *Introduction to the Biquaternion Universe*, for the algebra and the notation.
-- *The Klein–Gordon Equation in Biquaternionic Form*, for the material-sector wave equation whose modes are mixed.
-- *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single-mode occupation and its parity grading.
-- *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the framework's treatment of another quantum-vacuum effect and its observational status.
-- *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost structure used at the horizon.
-- *The Partition Function in Biquaternionic Form*, for the thermal trace and its imaginary-time formulation.
+- [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), the sibling article: the Rindler wedge, the boost, the KMS strip, and the temperature from the surface gravity.
+- [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), the parent: the KMS condition, its imaginary-time strip, and the modular Hamiltonian in $\mathbb{M}_+$.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame-field route to the metric and the obstruction to black-hole exteriors in the local-scale class.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the sectors and their imaginary-time interpretation.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the notation.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the material-sector wave equation whose modes are mixed.
+- [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single-mode occupation and its parity grading.
+- [The Vacuum State and the Casimir Effect in Biquaternionic Form](the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html), for the framework's treatment of another quantum-vacuum effect and its observational status.
+- [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost structure used at the horizon.
+- [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the thermal trace and its imaginary-time formulation.
 
 **Standard references.**
 

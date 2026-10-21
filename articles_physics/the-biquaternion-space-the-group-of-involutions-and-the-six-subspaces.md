@@ -316,5 +316,5 @@ The article interprets the linear structure, the involutions and the real forms.
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one.
 - [Decompositions Along the Remarkable Subspaces](../articles_maths/decompositions-along-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html), for the three decompositions, the coordinate blocks and the intersection table.
 - [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the restrictions of the forms and the area pairing.
-- *Conventions in the Biquaternion Universe*, for the coordinate dictionary and the choice of the material sector.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the two sectors.
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the coordinate dictionary and the choice of the material sector.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors.

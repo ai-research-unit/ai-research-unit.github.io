@@ -129,9 +129,9 @@ The square map of the block is the plain square, $\mathfrak{Q}(\tilde q)=(q_t^2-
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Algebra*, for the product and the square.
-- *Norm and Invertibility in the Symmetric Plain Algebra*, for the norm, the trace and the inverse.
-- *The Specificities of the Symmetric Plain Algebra*, for the same objects read as the block's properties.
-- *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category, for the operator whose square and cube enter the representation.
-- *Jordan Algebras*, for the Peirce decomposition and the cubic identity.
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the product and the square.
+- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the norm, the trace and the inverse.
+- [The Specificities of the Symmetric Plain Algebra](the-specificities-of-the-symmetric-plain-algebra-of-quaternioid.html), for the same objects read as the block's properties.
+- [The Multiplication Operators of the Symmetric Plain Algebra](the-multiplication-operators-of-the-symmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the operator whose square and cube enter the representation.
+- [Jordan Algebras](jordan-algebras.html), for the Peirce decomposition and the cubic identity.
 - *The Two General Products of an Algebra with Involution*, for the degree-two Common Theory specialised here.

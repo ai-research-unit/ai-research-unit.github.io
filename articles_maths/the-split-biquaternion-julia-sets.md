@@ -119,8 +119,8 @@ The split-biquaternion Julia set is the boundary of the product of two quaternio
 
 ## Further Reading
 
-- *The Split-Biquaternion Quadratic Family* (`articles_maths/the-split-biquaternion-quadratic-family.md`), for the reduction, the escape lemma and the connectedness criterion.
-- *The Quaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-quaternion-quadratic-map-and-its-julia-sets.md`) and *The Slices of the Quaternion Julia Sets* (`articles_maths/the-slices-of-the-quaternion-julia-sets.md`), for the two factors.
-- *The Quaternion Mandelbrot Set* (`articles_maths/the-quaternion-mandelbrot-set.md`), for the connectedness interval and the parameter picture of a factor.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-split-fractal.md`), for the biquaternion coupling that the split side lacks.
-- *Fractal Geometry* (`articles_maths/fractal-geometry.md`), for the product formula and the product topology used here.
+- [The Split-Biquaternion Quadratic Family](the-split-biquaternion-quadratic-family.html), for the reduction, the escape lemma and the connectedness criterion.
+- [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html) and [The Slices of the Quaternion Julia Sets](the-slices-of-the-quaternion-julia-sets.html), for the two factors.
+- [The Quaternion Mandelbrot Set](the-quaternion-mandelbrot-set.html), for the connectedness interval and the parameter picture of a factor.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the biquaternion coupling that the split side lacks.
+- [Fractal Geometry](fractal-geometry.html), for the product formula and the product topology used here.

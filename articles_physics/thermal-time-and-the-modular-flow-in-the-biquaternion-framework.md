@@ -262,9 +262,9 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 - J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," *Journal of Mathematical Physics* **16** (1975) 985–1007, for the wedge modular flow as the boost.
 - W. G. Unruh, "Notes on black-hole evaporation," *Physical Review D* **14** (1976) 870–892, for the thermal interpretation of the wedge flow.
 - R. M. Wald, *Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics* (Chicago, 1994), for the modular Hamiltonian and the thermal interpretation in curved backgrounds.
-- Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular operator, conjugation, and flow.
-- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS condition and the thermal correlation functions.
-- Companion article *The Bisognano–Wichmann Theorem under the Biquaternion Framework*, for the wedge modular flow as the boost.
-- Companion article *The Unruh Effect in Biquaternionic Form*, for the thermal interpretation of the boost.
-- Companion article *Relative Entropy and the Biquaternion Framework*, for the logarithm of a biquaternion state.
-- Companion article *The Reeh–Schlieder Theorem under the Biquaternion Framework*, for the module algebra and the type III setting.
+- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular operator, conjugation, and flow.
+- Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition and the thermal correlation functions.
+- Companion article [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the wedge modular flow as the boost.
+- Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the thermal interpretation of the boost.
+- Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the logarithm of a biquaternion state.
+- Companion article [The Reeh–Schlieder Theorem under the Biquaternion Framework](the-reh-schlieder-theorem-under-the-biquaternion-framework.html), for the module algebra and the type III setting.

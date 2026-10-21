@@ -114,4 +114,4 @@ The construction is the Chern–Weil one read with a metric: the invariant polyn
 - Raoul Bott and Loring W. Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for the Chern–Weil homomorphism, the Chern forms and the Chern character.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the first Chern class of a line bundle, the Fubini–Study normalisation and the determinant line bundle.
 - Jean-Pierre Demailly, *Complex Analytic and Differential Geometry* (OpenContent, 2012), for the Chern forms, the Ricci form and the positivity of Hermitian bundles.
-- John W. Milnor and James D. Stasheff, *Characteristic Classes* (Princeton University Press, 1974), for the integrality, the splitting principle and the normalisations, cited for the agreement with *Characteristic Classes*.
+- John W. Milnor and James D. Stasheff, *Characteristic Classes* (Princeton University Press, 1974), for the integrality, the splitting principle and the normalisations, cited for the agreement with [Characteristic Classes](characteristic-classes.html).

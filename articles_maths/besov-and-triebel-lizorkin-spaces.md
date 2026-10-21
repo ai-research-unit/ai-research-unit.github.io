@@ -75,7 +75,7 @@ so the Besov scale brackets the Triebel–Lizorkin scale and the two coincide at
 
 (v) The Schwartz class $\mathcal S$ is dense in $B^{s}_{n,m}$ and in $F^{s}_{n,m}$ when $p,q<\infty$, the dual of $B^{s}_{n,m}$ is $B^{-s}_{p',q'}$ for $1\le p,q<\infty$, and the dual of $F^{s}_{n,m}$ is $F^{-s}_{p',q'}$ for $1<p<\infty$ and $1\le q<\infty$, where $1/p+1/p'=1$ and $1/q+1/q'=1$.
 
-*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{m}_1}\hookrightarrow\ell^{m}_2}$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\xi|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
+*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{m}_1\hookrightarrow\ell^{m}_2$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\xi|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
 
 ## Comparison with the Classical Spaces
 
@@ -130,15 +130,15 @@ The heat-kernel description is the form in which the scale is used for the regul
 
 **Theorem (embeddings).** Let $s,s' \in\mathbb{R}$, $0<p,p',q,q'\le\infty$.
 
-(i) If $s-\frac np=s'-\frac{n}{p'}$ and $p\le p'$, then $B^{s}_{n,m}\hookrightarrow B^{s'}_{n',m}$ and $F^{s}_{n,m}\hookrightarrow F^{s'}_{p',q}$; in particular $B^{s}_{n,m}\hookrightarrow L^{n}'}(\mathbb{R}^n)$ for the exponent $p'$ determined by $s-\frac np=-\frac{n}{p'}$ when $p'>p$ and $q\le\min(p',2)$, since then $B^0_{p',q}\hookrightarrow B^0_{p',\min(p',2)}\hookrightarrow F^0_{p',2}=L^{n}'}$ by (ii) of the elementary properties, whereas at the critical exponent $q=\infty$ the embedding into $L^{n}'}$ fails; and $B^{s}_{n,m}\hookrightarrow\Lambda^{s-n/p}$ when $s>\frac np$.
+(i) If $s-\frac np=s'-\frac{n}{p'}$ and $p\le p'$, then $B^{s}_{n,m}\hookrightarrow B^{s'}_{n',m}$ and $F^{s}_{n,m}\hookrightarrow F^{s'}_{p',q}$; in particular $B^{s}_{n,m}\hookrightarrow L^{p'}(\mathbb{R}^n)$ for the exponent $p'$ determined by $s-\frac np=-\frac{n}{p'}$ when $p'>p$ and $q\le\min(p',2)$, since then $B^0_{p',q}\hookrightarrow B^0_{p',\min(p',2)}\hookrightarrow F^0_{p',2}=L^{p'}$ by (ii) of the elementary properties, whereas at the critical exponent $q=\infty$ the embedding into $L^{p'}$ fails; and $B^{s}_{n,m}\hookrightarrow\Lambda^{s-n/p}$ when $s>\frac np$.
 
 (ii) If $s>\frac np$ then $B^{s}_{n,m}\hookrightarrow L^\infty$ and $F^{s}_{n,m}\hookrightarrow L^\infty$, and the spaces are algebras under pointwise multiplication for $s>\frac np$.
 
 (iii) On a bounded domain with the cone condition the strict inequality $s-\frac np>s'-\frac{n}{p'}$ gives a compact embedding $B^{s}_{n,m}(\Omega)\hookrightarrow B^{s'}_{n',m}(\Omega)$ (Rellich–Kondrachov), and the same holds when $s-\frac np=s'-\frac{n}{p'}$ with $p<p'$; the compactness fails on $\mathbb{R}^n$ itself, where the scaling of a fixed function makes the embedding non-compact. In particular, on a bounded domain $B^{s}_{n,m}\hookrightarrow\hookrightarrow B^{s'}_{n,m}$ for every $s>s'$ and every $q$, the gain $s-s'$ being strictly positive, and $B^{s}_{n,m}\hookrightarrow\hookrightarrow\Lambda^{s-n/p}$ for $s>\frac np$.
 
-*Proof (sketch).* By Bernstein's inequality each block $\varphi_j(D)f$ satisfies $\|\varphi_j(D)f\|_{L^{n}}'}}\le C2^{jn(1/p-1/p')}\|\varphi_j(D)f\|_{L^{n}}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact.
+*Proof (sketch).* By Bernstein's inequality each block $\varphi_j(D)f$ satisfies $\|\varphi_j(D)f\|_{L^{p'}}\le C2^{jn(1/p-1/p')}\|\varphi_j(D)f\|_{L^{n}}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact.
 
-**Corollary (comparison with the Sobolev embeddings).** For $1<p<\infty$ the embedding $W^{k,n}\hookrightarrow L^{n}'}$ with $\frac1{p'}=\frac1p-\frac kn$, and its compact form when $p'<\infty$, are the case $q=2$ of the theorem, by the identification $W^{k,n}=F^k_{p,2}$; the embedding $W^{k,n}\hookrightarrow\Lambda^{k-n/p}$ into the Hölder–Zygmund class of exponent $k-n/p$ is the corresponding statement, in the Zygmund convention when $k-\frac np$ is an integer. These are the Sobolev and Rellich–Kondrachov theorems, recovered here from the scale.
+**Corollary (comparison with the Sobolev embeddings).** For $1<p<\infty$ the embedding $W^{k,n}\hookrightarrow L^{p'}$ with $\frac1{p'}=\frac1p-\frac kn$, and its compact form when $p'<\infty$, are the case $q=2$ of the theorem, by the identification $W^{k,n}=F^k_{p,2}$; the embedding $W^{k,n}\hookrightarrow\Lambda^{k-n/p}$ into the Hölder–Zygmund class of exponent $k-n/p$ is the corresponding statement, in the Zygmund convention when $k-\frac np$ is an integer. These are the Sobolev and Rellich–Kondrachov theorems, recovered here from the scale.
 
 ### Traces and the Boundary
 
@@ -221,12 +221,12 @@ in which $T_fg$ collects the terms in which the frequency of $f$ dominates, $T_g
 **Theorem (product estimates).** Let $s>0$, $1\le p,p_1,p_2,q\le\infty$ with $\frac1p=\frac1{p_1}+\frac1{p_2}$. Then the pointwise product is bounded:
 
 $$
-\|fg\|_{B^{s}_{n,m}}\le C\|f\|_{B^{s}_{n_1,m}}\|g\|_{L^{n}}_2}}+C\|f\|_{L^{n}}_1}}\|g\|_{B^{s}_{n_2,m}},
+\|fg\|_{B^{s}_{n,m}}\le C\|f\|_{B^{s}_{n_1,m}}\|g\|_{L^{n_2}}+C\|f\|_{L^{n_1}}\|g\|_{B^{s}_{n_2,m}},
 $$
 
 and the same inequality holds for the Triebel–Lizorkin scale with $B$ replaced by $F$ throughout; for $s>\frac np$ the product is bounded in the space itself, which is then an algebra.
 
-*Proof (sketch).* The paraproduct is estimated term by term: in $T_fg$ the frequency of the product is that of $f$, so the derivative of order $s$ is carried by $f$ and $g$ enters only through its $L^{n}_2}$ norm; in $R(f,g)$ the frequencies are comparable, so Bernstein's inequality distributes the smoothness; and the mixed norms are estimated by Hölder and Young.
+*Proof (sketch).* The paraproduct is estimated term by term: in $T_fg$ the frequency of the product is that of $f$, so the derivative of order $s$ is carried by $f$ and $g$ enters only through its $L^{n_2}$ norm; in $R(f,g)$ the frequencies are comparable, so Bernstein's inequality distributes the smoothness; and the mixed norms are estimated by Hölder and Young.
 
 The paraproduct is the standard tool of the nonlinear theory: the product estimates in the Besov scale are exactly what the fixed-point arguments for quasilinear and nonlinear equations need, and the borderline cases $s=\frac np$ are handled by the refined estimates of the same decomposition. The applications belong .
 

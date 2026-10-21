@@ -30,6 +30,23 @@ The Unit Group, the Cone and the Orders (Topology), Derivatives, Fields and Tran
 3. Exponential polar decomposition  
 
 
+in C, move Complex Polar Element Representation into a new section : Polar decompositions of complex numbers, and also create a new section in Analysis : Exponential polar decomposition of complex numbers
+
+
+
+
+Operator polar decomposition
+
+polar representation
+
+LOG ???
+
+
+
+
+
+
+
 
 The Spinor Module and Its Two Structures
 

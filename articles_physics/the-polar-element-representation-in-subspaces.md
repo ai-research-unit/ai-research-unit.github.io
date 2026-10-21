@@ -566,8 +566,8 @@ The restrictions together exhaust the ways in which the four factors can depend 
 
 ## Further Reading
 
-- *The Polar Element Representation of Biquaternions* (`articles_physics/the-polar-element-representation-of-biquaternions.md`), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
-- *The Biquaternion Space, the Group of Involutions and the Six Subspaces* (`articles_physics/the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.md`), for the remarkable subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
-- *The Informational Sector: States, Observables and Probability* (`articles_physics/the-informational-sector-states-observables-and-probability.md`), for the boosts and the information interpretation.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* (`articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.md`), for the four-vectors and the light cone.
-- *The Element and Operator Representations* (`articles_physics/the-element-and-operator-representations.md`), for the matrix classes of the remarkable subspaces and $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$.
+- [The Polar Element Representation of Biquaternions](the-polar-element-representation-of-biquaternions.html), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
+- [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), for the remarkable subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boosts and the information interpretation.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the light cone.
+- [The Element and Operator Representations](the-element-and-operator-representations.html), for the matrix classes of the remarkable subspaces and $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$.

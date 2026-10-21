@@ -142,9 +142,9 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde p}\tilde q=\t
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Algebra*, for the product.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the kernel and the determinant of the operator.
-- *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the invariance and the skewness.
-- *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, for the plain operators against which the fullness is read.
-- *Jordan Algebras*, for the operator form of the Jordan identity and the derivations of a Jordan algebra.
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the product.
+- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the kernel and the determinant of the operator.
+- [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternioid.html), for the invariance and the skewness.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the plain operators against which the fullness is read.
+- [Jordan Algebras](jordan-algebras.html), for the operator form of the Jordan identity and the derivations of a Jordan algebra.
 - *The Two General Products of an Algebra with Involution*, for the degree-two Common Theory specialised here.

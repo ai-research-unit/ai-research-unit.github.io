@@ -83,8 +83,8 @@ The pluripotential framework of a polynomial map of $\mathbb{C}^4$ applies to th
 
 ## Further Reading
 
-- *The Escape Radius and the Green's Function for the Biquaternions* (`articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.md`), for the Green's function and the conditional existence used here.
-- *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-split-fractal.md`), for the factoring of the dynamics on the idempotent plane.
-- *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the cone that is the exceptional set of the map.
-- *Several Complex Variables* (`articles_maths/several-complex-variables.md`), for the plurisubharmonic tools and the several-variable dynamics the article adapts.
-- *The Self-Similar Measure and the Invariant Measure* (`articles_maths/the-self-similar-measure-and-the-invariant-measure.md`) and *Multifractal Analysis and the Legendre Transform* (`articles_maths/multifractal-analysis-and-the-legendre-transform.md`), for the measure-theoretic statements of the category.
+- [The Escape Radius and the Green's Function for the Biquaternions](the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the Green's function and the conditional existence used here.
+- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the factoring of the dynamics on the idempotent plane.
+- [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone that is the exceptional set of the map.
+- [Several Complex Variables](several-complex-variables.html), for the plurisubharmonic tools and the several-variable dynamics the article adapts.
+- [The Self-Similar Measure and the Invariant Measure](the-self-similar-measure-and-the-invariant-measure.html) and [Multifractal Analysis and the Legendre Transform](multifractal-analysis-and-the-legendre-transform.html), for the measure-theoretic statements of the category.

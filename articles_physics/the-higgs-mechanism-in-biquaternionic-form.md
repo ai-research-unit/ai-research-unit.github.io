@@ -318,16 +318,16 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 
 ## Further Reading
 
-- *The Gauge Principle in Biquaternionic Form* — the origin of the connection, the complex scalar realization $\tilde{\Phi} = \varphi\,e_t$, the transformation law, and the covariant derivative inherited here.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the covariant derivative as an operator, the gauge orbit, the curvature, and the covariant square used in the gap discussion.
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{M}_-$, its reality gap, and the non-abelian connection whose absence bounds this article.
-- *Chiral Fermions in the Biquaternion Framework* — the mass selection rule $ϙ_L = ϙ_R$, the charge operator, and the naming of this article as the compensating-scalar companion.
-- *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions* — the external interpretation in which the volume element of the complex split biquaternion algebra $\mathrm{Cl}(3)$ plays the chirality-flipping role of the scalar, together with the limits of that interpretation.
-- *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar equation whose gauging and vacuum this article uses.
-- *Noether's Theorem in Biquaternionic Form* — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
-- *The Informational Sector: States, Observables and Probability* — the Hermitian sector and the trace formula.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian potential and field strength that the gauge field mass modifies.
-- *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the left/right matter-representation question that the non-abelian scalar inherits.
-- *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.
-- *Conventions in the Biquaternion Universe* — the multiplication rule, the conjugations, and the centre used throughout.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the complex scalar realization $\tilde{\Phi} = \varphi\,e_t$, the transformation law, and the covariant derivative inherited here.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative as an operator, the gauge orbit, the curvature, and the covariant square used in the gap discussion.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{M}_-$, its reality gap, and the non-abelian connection whose absence bounds this article.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the mass selection rule $ϙ_L = ϙ_R$, the charge operator, and the naming of this article as the compensating-scalar companion.
+- [Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions](left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html) — the external interpretation in which the volume element of the complex split biquaternion algebra $\mathrm{Cl}(3)$ plays the chirality-flipping role of the scalar, together with the limits of that interpretation.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation whose gauging and vacuum this article uses.
+- [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector and the trace formula.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the abelian potential and field strength that the gauge field mass modifies.
+- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the left/right matter-representation question that the non-abelian scalar inherits.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the multiplication rule, the conjugations, and the centre used throughout.

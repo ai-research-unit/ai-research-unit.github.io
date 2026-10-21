@@ -191,10 +191,10 @@ The contour theory follows the same division: on the centre it is the classical 
 
 ## Further Reading
 
-- *Biquaternion Analysis* (`articles_maths/biquaternion-analysis.md`), for the gradient, the d'Alembertian and the operators on a four-dimensional subspace
-- *Biquaternion Integration* (`articles_maths/biquaternion-integration.md`), for the Cauchy integral formula, its consequences and the fundamental solutions on the quaternion subspace
-- *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the signatures of the norm on the remarkable subspaces, which are the types of the second-order operator
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces themselves, one to a section, and for the null elements on which the analysis degenerates
-- *Quaternion Analysis* (`articles_maths/quaternion-analysis.md`), for the real quaternion case of the same operators
+- [Biquaternion Analysis](biquaternion-analysis.html), for the gradient, the d'Alembertian and the operators on a four-dimensional subspace
+- [Biquaternion Integration](biquaternion-integration.html), for the Cauchy integral formula, its consequences and the fundamental solutions on the quaternion subspace
+- [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the signatures of the norm on the remarkable subspaces, which are the types of the second-order operator
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces themselves, one to a section, and for the null elements on which the analysis degenerates
+- [Quaternion Analysis](quaternion-analysis.html), for the real quaternion case of the same operators
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the quaternion-valued analysis of four real variables.
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford setting of the same first- and second-order operators.

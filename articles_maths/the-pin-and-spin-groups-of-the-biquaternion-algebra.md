@@ -234,12 +234,12 @@ The plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde
 
 ## Further Reading
 
-- *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion article, for the isometry criterion $\tilde Q_3\tilde Q_4=\pm e_t$, the swap adjoint, and the two-sided family of the plain form.
-- *One-Sided Operators on the Biquaternion Algebra* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`), for the factors $L_{\tilde Q_4}$ and $R_{\tilde Q_3}$ and the split into the two regular representations.
-- *The Pin and Spin Groups of the General Quaternionic Algebra* (`articles_maths/the-pin-and-spin-groups-of-the-general-quaternionic-algebra.md`), the quaternionic twin, for the shell $\langle\cdot\rangle_{\natural}=\pm1$, the two-to-one cover and the reflections of the vector subspace.
-- *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* (`articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.md`), for the general Clifford group, the reflection $\rho_u(v)=-uvu^{-1}$ and the Cartan–Dieudonné theorem used in the section on the reflections.
-- *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the real form whose orthogonal group the algebra reaches, the odd slot that carries the reflections, and the reason the Pin group is not an object of the algebra.
-- *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the inner automorphisms as the isometric motions and for the outer coset.
-- *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the ambient group, its centre and the quotient by it.
-- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $F^{\approx}$ and the swap law of the one-sided families used throughout.
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the null elements of the examples and their role in the algebra.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), the companion article, for the isometry criterion $\tilde Q_3\tilde Q_4=\pm e_t$, the swap adjoint, and the two-sided family of the plain form.
+- [One-Sided Operators on the Biquaternion Algebra](one-sided-operators-on-the-biquaternion-algebra.html), for the factors $L_{\tilde Q_4}$ and $R_{\tilde Q_3}$ and the split into the two regular representations.
+- [The Pin and Spin Groups of the General Quaternionic Algebra](the-pin-and-spin-groups-of-the-general-quaternionic-algebra.html), the quaternionic twin, for the shell $\langle\cdot\rangle_{\natural}=\pm1$, the two-to-one cover and the reflections of the vector subspace.
+- [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the general Clifford group, the reflection $\rho_u(v)=-uvu^{-1}$ and the Cartan–Dieudonné theorem used in the section on the reflections.
+- [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the real form whose orthogonal group the algebra reaches, the odd slot that carries the reflections, and the reason the Pin group is not an object of the algebra.
+- [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the inner automorphisms as the isometric motions and for the outer coset.
+- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the ambient group, its centre and the quotient by it.
+- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html), for the associate $F^{\approx}$ and the swap law of the one-sided families used throughout.
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the null elements of the examples and their role in the algebra.

@@ -65,6 +65,6 @@ The quaternion algebra read over $\mathbb{C}$ through a chosen complex structure
 
 ## Further Reading
 
-- *The Quaternioid as a Vector Space over $\mathbb{R}$* (`articles_maths/the-quaternioid-as-a-vector-space-over-r.md`), for the real reading this article extends.
-- *The Two General Products and the Reason There Are Only Two* (`articles_maths/the-two-general-products-and-the-reason-there-are-only-two.md`), below this article in this category, for the count of the products that the base changes produce.
-- *The Group of Involutions of the Quaternioid* (`articles_maths/the-group-of-involutions-of-the-quaternioid.md`), below this article in this category, for the subalgebras $\mathbb{C}_\nu$ and the axis lines that carry them.
+- [The Quaternioid as a Vector Space over $\mathbb{R}$](the-quaternioid-as-a-vector-space-over-r.html), for the real reading this article extends.
+- [The Two General Products and the Reason There Are Only Two](the-two-general-products-and-the-reason-there-are-only-two.html), below this article in this category, for the count of the products that the base changes produce.
+- [The Group of Involutions of the Quaternioid](the-group-of-involutions-of-the-quaternioid.html), below this article in this category, for the subalgebras $\mathbb{C}_\nu$ and the axis lines that carry them.

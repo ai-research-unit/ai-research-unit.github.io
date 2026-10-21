@@ -3,19 +3,19 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_{1,2} = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $\langle A\rangle_{\natural} = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
-The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.
+The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - Q)$ of the formula is defined only where $\zeta - Q$ is a unit, and the set where it is not is not the point $Q$ but the two lines through $Q$; no contour that surrounds $Q$ avoids them.
 
-No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial/\partial A, \partial/\partial\bar A$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
+No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
-Notation: $A = a + ja'$ with $a, a' \in \mathbb{R}$, $\bar A = a - ja'$, and $\|A\|_E = \sqrt{a^2 + a'^2}$. The idempotent coordinates are
+Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\|_E = \sqrt{q^2 + q'^2}$. The idempotent coordinates are
 
 $$
-A_+ = a + a', \qquad A_- = a - a', \qquad A = A_+ \Pi_1 + A_- \Pi_2,
+Q_+ = q + q', \qquad Q_- = q - q', \qquad Q = Q_+ \Pi_+ + Q_- \Pi_-,
 $$
 
-and $\langle A\rangle_{\natural} = A_+ A_-$.
+and $\langle Q\rangle_{\natural} = Q_+ Q_-$.
 
 ## The Split-Complex Integral
 
@@ -31,38 +31,38 @@ $$
 
 finite because $\gamma'$ is piecewise continuous on a compact interval.
 
-**Example.** For $A_0 \in \mathbb{D}$ and $r > 0$, the curve
+**Example.** For $Q_0 \in \mathbb{D}$ and $r > 0$, the curve
 
 $$
-\gamma(t) = A_0 + r \exp(jt) = A_0 + r(\cosh t + j \sinh t), \qquad t \in \mathbb{R},
+\gamma(t) = Q_0 + r \exp(jt) = Q_0 + r(\cosh t + j \sinh t), \qquad t \in \mathbb{R},
 $$
 
-is a hyperbola and is not closed, because the split complex exponential is injective and $\cosh$ and $\sinh$ are not periodic. The closed curves along which integrals are taken are the ordinary Euclidean circles $\gamma(t) = A_0 + r(\cos t + j \sin t)$, of length $2\pi r$.
+is a hyperbola and is not closed, because the split complex exponential is injective and $\cosh$ and $\sinh$ are not periodic. The closed curves along which integrals are taken are the ordinary Euclidean circles $\gamma(t) = Q_0 + r(\cos t + j \sin t)$, of length $2\pi r$.
 
 ### Construction from the Riemann Sum
 
-**Definition.** Let $\gamma : [a,b] \to \mathbb{D}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $A_k = \gamma(t_k)$ and form the **Riemann sum**
+**Definition.** Let $\gamma : [a,b] \to \mathbb{D}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the **Riemann sum**
 
 $$
-S = \sum_{k=1}^{n} f(\gamma(\tau_k))\,(A_k - A_{k-1}).
+S = \sum_{k=1}^{n} f(\gamma(\tau_k))\,(Q_k - Q_{k-1}).
 $$
 
 With $\|\Delta\| = \max_k (t_k - t_{k-1})$, the **split complex integral** of $f$ along $\gamma$ is the limit
 
 $$
-\int_\gamma f(A)\,dA = \lim_{\|\Delta\| \to 0} S.
+\int_\gamma f(Q)\,dQ = \lim_{\|\Delta\| \to 0} S.
 $$
 
 **Theorem.** For piecewise $C^1$ $\gamma$ and continuous $f$ the Riemann sums converge, and
 
 $$
-\int_\gamma f(A)\,dA = \int_a^b f(\gamma(t))\,\gamma'(t)\,dt.
+\int_\gamma f(Q)\,dQ = \int_a^b f(\gamma(t))\,\gamma'(t)\,dt.
 $$
 
 **Proof.** The product in $\mathbb{D}$ is bilinear, and $f$ is continuous, so the argument of the complex case applies verbatim: on each smooth piece
 
 $$
-A_k - A_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
+Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
 $$
 
 with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
@@ -74,44 +74,44 @@ The integral exists because $\mathbb{D}$ is a complete normed space under $\| \c
 **Linearity.** For $\alpha, \beta \in \mathbb{D}$,
 
 $$
-\int_\gamma (\alpha f + \beta g)(A)\,dA = \alpha \int_\gamma f(A)\,dA + \beta \int_\gamma g(A)\,dA.
+\int_\gamma (\alpha f + \beta g)(Q)\,dQ = \alpha \int_\gamma f(Q)\,dQ + \beta \int_\gamma g(Q)\,dQ.
 $$
 
-**Reversal.** $\displaystyle\int_{-\gamma} f(A)\,dA = -\int_\gamma f(A)\,dA$.
+**Reversal.** $\displaystyle\int_{-\gamma} f(Q)\,dQ = -\int_\gamma f(Q)\,dQ$.
 
-**Additivity.** $\displaystyle\int_{\gamma_1 + \gamma_2} f(A)\,dA = \int_{\gamma_1} f(A)\,dA + \int_{\gamma_2} f(A)\,dA$.
+**Additivity.** $\displaystyle\int_{\gamma_1 + \gamma_2} f(Q)\,dQ = \int_{\gamma_1} f(Q)\,dQ + \int_{\gamma_2} f(Q)\,dQ$.
 
-**Reparametrisation.** If $\varphi : [c,d] \to [a,b]$ is a piecewise $C^1$ bijection with $\varphi(c) = a$, $\varphi(d) = b$, then $\int_{\gamma \circ \varphi} f\,dA = \int_\gamma f\,dA$; if $\varphi$ reverses the endpoints, the sign changes.
+**Reparametrisation.** If $\varphi : [c,d] \to [a,b]$ is a piecewise $C^1$ bijection with $\varphi(c) = a$, $\varphi(d) = b$, then $\int_{\gamma \circ \varphi} f\,dQ = \int_\gamma f\,dQ$; if $\varphi$ reverses the endpoints, the sign changes.
 
-**Estimation.** If $\|f(A)\|_E \leq m$ on $\gamma^*$, then
-
-$$
-\left\|\int_\gamma f(A)\,dA\right\|_E \leq \sqrt{2}\,m\,L(\gamma).
-$$
-
-**Proof.** The Euclidean norm on $\mathbb{D}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $A = a + ja'$, $B = b + jb'$, one has
+**Estimation.** If $\|f(Q)\|_E \leq m$ on $\gamma^*$, then
 
 $$
-\|AB\|_E^2 = (ab + a'b')^2 + (ab' + a'b)^2 = (a^2 + a'^2)(b^2 + b'^2) + 4aa'bb',
+\left\|\int_\gamma f(Q)\,dQ\right\|_E \leq \sqrt{2}\,m\,L(\gamma).
 $$
 
-and $4aa'bb' \leq 4\lvert aa'\rvert \lvert bb'\rvert \leq (a^2 + a'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|AB\|_E^2 \leq 2\|A\|_E^2\|B\|_E^2$. Equality holds if and only if $\lvert a\rvert = \lvert a'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $aa'bb' > 0$, that is, if and only if $A$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.
+**Proof.** The Euclidean norm on $\mathbb{D}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $Q = q + jq'$, $B = b + jb'$, one has
+
+$$
+\|QB\|_E^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
+$$
+
+and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|_E^2 \leq 2\|Q\|_E^2\|B\|_E^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.
 
 **Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{\natural}$, used below.
 
 ### The Idempotent Decomposition of the Integral
 
-The reason the split complex integral is tractable is that $A \mapsto (A_+, A_-)$ is an algebra isomorphism $\mathbb{D} \to \mathbb{R} \oplus \mathbb{R}$.
+The reason the split complex integral is tractable is that $Q \mapsto (Q_+, Q_-)$ is an algebra isomorphism $\mathbb{D} \to \mathbb{R} \oplus \mathbb{R}$.
 
-**Theorem.** Let $f : \Omega \to \mathbb{D}$ be written in the idempotent basis as $f = f_+ \Pi_1 + f_- \Pi_2$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$. Then
+**Theorem.** Let $f : \Omega \to \mathbb{D}$ be written in the idempotent basis as $f = f_+ \Pi_+ + f_- \Pi_-$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$. Then
 
 $$
-\int_\gamma f(A)\,dA = \Pi_1 \int_{\gamma_+} f_+(A_+)\,dA_+ + \Pi_2 \int_{\gamma_-} f_-(A_-)\,dA_-,
+\int_\gamma f(Q)\,dQ = \Pi_+ \int_{\gamma_+} f_+(Q_+)\,dQ_+ + \Pi_- \int_{\gamma_-} f_-(Q_-)\,dQ_-,
 $$
 
-where $\gamma_\pm(t) = a(\gamma(t)) \pm a'(\gamma(t))$ are the projected paths and each integral on the right is an ordinary real line integral.
+where $\gamma_\pm(t) = q(\gamma(t)) \pm q'(\gamma(t))$ are the projected paths and each integral on the right is an ordinary real line integral.
 
-**Proof.** Since $dA = \Pi_1\,dA_+ + \Pi_2\,dA_-$ and $\Pi_1 \Pi_2 = \Pi_2 \Pi_1 = 0$, $\Pi_{1,2}^2 = \Pi_{1,2}$, the product $f(A)\,dA$ splits as $f_+(A_+)\,\Pi_1\,dA_+ + f_-(A_-)\,\Pi_2\,dA_-$. Integrating the two summands separately gives the stated identity.
+**Proof.** Since $dQ = \Pi_+\,dQ_+ + \Pi_-\,dQ_-$ and $\Pi_+ \Pi_- = \Pi_- \Pi_+ = 0$, $\Pi_\pm^2 = \Pi_\pm$, the product $f(Q)\,dQ$ splits as $f_+(Q_+)\,\Pi_+\,dQ_+ + f_-(Q_-)\,\Pi_-\,dQ_-$. Integrating the two summands separately gives the stated identity.
 
 So a split complex contour integral is exactly a pair of real line integrals, one for each idempotent, and the two are independent of each other. This is the source of both the strength and the weakness of the theory.
 
@@ -122,100 +122,100 @@ So a split complex contour integral is exactly a pair of real line integrals, on
 **Definition.** The **split Wirtinger derivatives** are
 
 $$
-\frac{\partial}{\partial A} = \frac{1}{2}\left(\frac{\partial}{\partial a} + j\,\frac{\partial}{\partial a'}\right), \qquad \frac{\partial}{\partial \bar A} = \frac{1}{2}\left(\frac{\partial}{\partial a} - j\,\frac{\partial}{\partial a'}\right),
+\frac{\partial}{\partial Q} = \frac{1}{2}\left(\frac{\partial}{\partial q} + j\,\frac{\partial}{\partial q'}\right), \qquad \frac{\partial}{\partial \bar Q} = \frac{1}{2}\left(\frac{\partial}{\partial q} - j\,\frac{\partial}{\partial q'}\right),
 $$
 
-and $D = 2\,\partial/\partial\bar A = \partial/\partial a - j\,\partial/\partial a'$ is the **split Cauchy–Riemann operator**.
+and $D = 2\,\partial/\partial\bar Q = \partial/\partial q - j\,\partial/\partial q'$ is the **split Cauchy–Riemann operator**.
 
-**Proposition.** With $\partial_\pm = \partial/\partial A_\pm$,
-
-$$
-\frac{\partial}{\partial A} = \Pi_1\, \partial/\partial A_+ + \Pi_2\, \partial/\partial A_-, \qquad \frac{\partial}{\partial \bar A} = \Pi_2\, \partial/\partial A_+ + \Pi_1\, \partial/\partial A_-.
-$$
-
-**Proof.** Because $A_+ = a + a'$ and $A_- = a - a'$, one has $\partial/\partial a = \partial/\partial A_+ + \partial/\partial A_-$ and $\partial/\partial a' = \partial/\partial A_+ - \partial/\partial A_-$. Substituting,
+**Proposition.** With $\partial_\pm = \partial/\partial Q_\pm$,
 
 $$
-\frac{\partial}{\partial A} = \tfrac12\big((\partial/\partial A_+ + \partial/\partial A_-) + j(\partial/\partial A_+ - \partial/\partial A_-)\big) = \tfrac12\big((1+j)\partial/\partial A_+ + (1-j)\partial/\partial A_-\big) = \Pi_1\partial/\partial A_+ + \Pi_2\partial/\partial A_-,
+\frac{\partial}{\partial Q} = \Pi_+\, \partial/\partial Q_+ + \Pi_-\, \partial/\partial Q_-, \qquad \frac{\partial}{\partial \bar Q} = \Pi_-\, \partial/\partial Q_+ + \Pi_+\, \partial/\partial Q_-.
 $$
 
-and the conjugate is computed the same way with $j$ replaced by $-j$, which interchanges $\Pi_1$ and $\Pi_2$.
-
-**Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial/\partial A = \partial/\partial a + j\,\partial/\partial a'$,
+**Proof.** Because $Q_+ = q + q'$ and $Q_- = q - q'$, one has $\partial/\partial q = \partial/\partial Q_+ + \partial/\partial Q_-$ and $\partial/\partial q' = \partial/\partial Q_+ - \partial/\partial Q_-$. Substituting,
 
 $$
-\bar D D = D \bar D = \Box := \partial^2/\partial a^2 - \partial^2/\partial a'^2 = 4\,\partial^2/\partial A_+\partial A_-.
+\frac{\partial}{\partial Q} = \tfrac12\big((\partial/\partial Q_+ + \partial/\partial Q_-) + j(\partial/\partial Q_+ - \partial/\partial Q_-)\big) = \tfrac12\big((1+j)\partial/\partial Q_+ + (1-j)\partial/\partial Q_-\big) = \Pi_+\partial/\partial Q_+ + \Pi_-\partial/\partial Q_-,
 $$
 
-**Proof.** Expanding, $\bar D D = (\partial/\partial a + j\partial/\partial a')(\partial/\partial a - j\partial/\partial a') = \partial^2/\partial a^2 - j^2 \partial^2/\partial a'^2 = \partial^2/\partial a^2 - \partial^2/\partial a'^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial A_+\partial A_- = \tfrac14(\partial^2/\partial a^2 - \partial^2/\partial a'^2)$.
+and the conjugate is computed the same way with $j$ replaced by $-j$, which interchanges $\Pi_+$ and $\Pi_-$.
 
-So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\xi_1 - j\,\xi_2$, whose norm is $\xi_1^2 - \xi_2^2$, so it is a unit off the two lines $\xi_1 = \pm\xi_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial^2/\partial A_+\partial A_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
+**Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial/\partial Q = \partial/\partial q + j\,\partial/\partial q'$,
+
+$$
+\bar D D = D \bar D = \Box := \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\,\partial^2/\partial Q_+\partial Q_-.
+$$
+
+**Proof.** Expanding, $\bar D D = (\partial/\partial q + j\partial/\partial q')(\partial/\partial q - j\partial/\partial q') = \partial^2/\partial q^2 - j^2 \partial^2/\partial q'^2 = \partial^2/\partial q^2 - \partial^2/\partial q'^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial Q_+\partial Q_- = \tfrac14(\partial^2/\partial q^2 - \partial^2/\partial q'^2)$.
+
+So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\xi_1 - j\,\xi_2$, whose norm is $\xi_1^2 - \xi_2^2$, so it is a unit off the two lines $\xi_1 = \pm\xi_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial^2/\partial Q_+\partial Q_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
 
 ### The Cauchy–Riemann Equations
 
-**Theorem.** For a real differentiable $f : \Omega \to \mathbb{D}$ with $f = f_+ \Pi_1 + f_- \Pi_2$, the following are equivalent.
+**Theorem.** For a real differentiable $f : \Omega \to \mathbb{D}$ with $f = f_+ \Pi_+ + f_- \Pi_-$, the following are equivalent.
 
 1. $f$ is split complex differentiable on $\Omega$.
-2. $\partial/\partial\bar A f = 0$, that is $D f = 0$.
-3. $f_+$ is independent of $A_-$ and $f_-$ is independent of $A_+$.
+2. $\partial/\partial\bar Q f = 0$, that is $D f = 0$.
+3. $f_+$ is independent of $Q_-$ and $f_-$ is independent of $Q_+$.
 
-**Proof.** The equivalence of (1) and (2) is the split Cauchy–Riemann equations of *Split-Complex Analysis*. For (2) and (3), apply the factorised operator: for $f = f_+\Pi_1 + f_-\Pi_2$,
+**Proof.** The equivalence of (1) and (2) is the split Cauchy–Riemann equations of *Split-Complex Analysis*. For (2) and (3), apply the factorised operator: for $f = f_+\Pi_+ + f_-\Pi_-$,
 
 $$
-\partial/\partial\bar A f = (\Pi_2\partial/\partial A_+ + \Pi_1\partial/\partial A_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial/\partial A_+ f_-)\,\Pi_2 + (\partial/\partial A_- f_+)\,\Pi_1,
+\partial/\partial\bar Q f = (\Pi_-\partial/\partial Q_+ + \Pi_+\partial/\partial Q_-)(f_+\Pi_+ + f_-\Pi_-) = (\partial/\partial Q_+ f_-)\,\Pi_- + (\partial/\partial Q_- f_+)\,\Pi_+,
 $$
 
-because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_{1,2}^2 = \Pi_{1,2}$. The two idempotents are independent, so this vanishes if and only if $\partial/\partial A_+ f_- = 0$ and $\partial/\partial A_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.
+because $\Pi_- \Pi_+ = \Pi_+ \Pi_- = 0$ and $\Pi_\pm^2 = \Pi_\pm$. The two idempotents are independent, so this vanishes if and only if $\partial/\partial Q_+ f_- = 0$ and $\partial/\partial Q_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $Q_-$ alone and $f_+$ of $Q_+$ alone.
 
 **Corollary (the derivative in idempotent coordinates).** If $f$ is split complex differentiable, then
 
 $$
-f'(A) = \frac{\partial f}{\partial A} = f_+'(A_+)\,\Pi_1 + f_-'(A_-)\,\Pi_2,
+f'(Q) = \frac{\partial f}{\partial Q} = f_+'(Q_+)\,\Pi_+ + f_-'(Q_-)\,\Pi_-,
 $$
 
 the primes denoting ordinary differentiation of the one-variable functions $f_\pm$.
 
 The theorem says that split complex differentiability is not a restriction on the pair $(f_+, f_-)$ beyond the separation of variables: the two components do not interact at all. This is the precise sense in which the theory is soft, and it is visible at once in the idempotent basis.
 
-**Corollary (real and imaginary parts).** Writing $f(A) = u(a,a') + j\,v(a,a')$ with $u, v$ real, $f$ is split complex differentiable if and only if
+**Corollary (real and imaginary parts).** Writing $f(Q) = u(q,q') + j\,v(q,q')$ with $u, v$ real, $f$ is split complex differentiable if and only if
 
 $$
-\frac{\partial u}{\partial a} = \frac{\partial v}{\partial a'}, \qquad \frac{\partial u}{\partial a'} = \frac{\partial v}{\partial a},
+\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = \frac{\partial v}{\partial q},
 $$
 
 and then $u$ and $v$ each satisfy the wave equation $\Box u = \Box v = 0$.
 
 ## The Cauchy–Goursat Theorem
 
-### Closedness of $f\,dA$
+### Closedness of $f\,dQ$
 
-**Theorem.** Let $f$ be $C^1$ on a domain $\Omega$. Then the differential form $f\,dA$ is closed if and only if $f$ is split complex differentiable on $\Omega$.
+**Theorem.** Let $f$ be $C^1$ on a domain $\Omega$. Then the differential form $f\,dQ$ is closed if and only if $f$ is split complex differentiable on $\Omega$.
 
-**Proof.** In the idempotent coordinates, $f\,dA = f_+ \Pi_1 dA_+ + f_- \Pi_2 dA_-$, and since $\Pi_1$ and $\Pi_2$ are constant,
-
-$$
-d(f\,dA) = (\partial/\partial A_- f_+)\,\Pi_1\, dA_- \wedge dA_+ + (\partial/\partial A_+ f_-)\,\Pi_2\, dA_+ \wedge dA_- = \big[(\partial/\partial A_+ f_-)\,\Pi_2 - (\partial/\partial A_- f_+)\,\Pi_1\big]\, dA_+ \wedge dA_-.
-$$
-
-The two idempotents are independent, so this vanishes if and only if $\partial/\partial A_+ f_- = 0$ and $\partial/\partial A_- f_+ = 0$. Now compute directly in the coordinates $a, a'$: $dA = da + j\,da'$ and
+**Proof.** In the idempotent coordinates, $f\,dQ = f_+ \Pi_+ dQ_+ + f_- \Pi_- dQ_-$, and since $\Pi_+$ and $\Pi_-$ are constant,
 
 $$
-d(f\,dA) = df \wedge dA = (\partial/\partial a f\,da + \partial/\partial a' f\,da')\wedge(da + j\,da') = \big(\partial/\partial a f \, j - \partial/\partial a' f\big)\,da \wedge da'.
+d(f\,dQ) = (\partial/\partial Q_- f_+)\,\Pi_+\, dQ_- \wedge dQ_+ + (\partial/\partial Q_+ f_-)\,\Pi_-\, dQ_+ \wedge dQ_- = \big[(\partial/\partial Q_+ f_-)\,\Pi_- - (\partial/\partial Q_- f_+)\,\Pi_+\big]\, dQ_+ \wedge dQ_-.
 $$
 
-This vanishes if and only if $\partial/\partial a' f = \partial/\partial a f\, j$, which is the split Cauchy–Riemann equation $Df = 0$. The two computations agree because $\partial/\partial A_+ f_- = 0$ and $\partial/\partial A_- f_+ = 0$ is precisely that equation in the idempotent basis.
+The two idempotents are independent, so this vanishes if and only if $\partial/\partial Q_+ f_- = 0$ and $\partial/\partial Q_- f_+ = 0$. Now compute directly in the coordinates $q, q'$: $dQ = dq + j\,dq'$ and
 
-In the complex plane the same computation gives the same conclusion, closedness being equivalent to holomorphy, so on the differentiable side the two theories have the same shape. What differs is what the condition costs. There it is an elliptic system, whose solutions are rigid; here it says only that $f_+$ does not depend on $A_-$ and $f_-$ does not depend on $A_+$, so that the differentiable functions are exactly the pairs of one-variable functions, one for each idempotent, with no interaction between the two components and no exclusion beyond the separation itself.
+$$
+d(f\,dQ) = df \wedge dQ = (\partial/\partial q f\,dq + \partial/\partial q' f\,dq')\wedge(dq + j\,dq') = \big(\partial/\partial q f \, j - \partial/\partial q' f\big)\,dq \wedge dq'.
+$$
+
+This vanishes if and only if $\partial/\partial q' f = \partial/\partial q f\, j$, which is the split Cauchy–Riemann equation $Df = 0$. The two computations agree because $\partial/\partial Q_+ f_- = 0$ and $\partial/\partial Q_- f_+ = 0$ is precisely that equation in the idempotent basis.
+
+In the complex plane the same computation gives the same conclusion, closedness being equivalent to holomorphy, so on the differentiable side the two theories have the same shape. What differs is what the condition costs. There it is an elliptic system, whose solutions are rigid; here it says only that $f_+$ does not depend on $Q_-$ and $f_-$ does not depend on $Q_+$, so that the differentiable functions are exactly the pairs of one-variable functions, one for each idempotent, with no interaction between the two components and no exclusion beyond the separation itself.
 
 ### Primitives and Path Independence
 
-**Theorem (primitive).** Let $f$ be split complex differentiable on a domain $\Omega$. Then $f\,dA$ has a primitive on $\Omega$: there is a split complex differentiable $F$ on $\Omega$ with $F' = f$. The integral of $f$ depends only on the endpoints:
+**Theorem (primitive).** Let $f$ be split complex differentiable on a domain $\Omega$. Then $f\,dQ$ has a primitive on $\Omega$: there is a split complex differentiable $F$ on $\Omega$ with $F' = f$. The integral of $f$ depends only on the endpoints:
 
 $$
-\int_\gamma f(A)\,dA = F(\gamma(b)) - F(\gamma(a)).
+\int_\gamma f(Q)\,dQ = F(\gamma(b)) - F(\gamma(a)).
 $$
 
-**Proof.** On $\Omega$ the components satisfy $f_+ = f_+(A_+)$ and $f_- = f_-(A_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $\Omega$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ A_+ \cdot \Pi_1 + F_- \circ A_- \cdot \Pi_2$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula.
+**Proof.** On $\Omega$ the components satisfy $f_+ = f_+(Q_+)$ and $f_- = f_-(Q_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $\Omega$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ Q_+ \cdot \Pi_+ + F_- \circ Q_- \cdot \Pi_-$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula.
 
 Two facts distinguish this from the complex case. First, the primitive exists on *every* domain, with no simple connectivity hypothesis, because each component is a function of a single real variable and a real antiderivative always exists; in $\mathbb{C}$ the primitive exists only when the closed integrals vanish. Second, the primitive is determined only up to an additive split complex constant, since each one-variable antiderivative is determined up to a constant; the ambiguity does not affect differences.
 
@@ -224,7 +224,7 @@ Two facts distinguish this from the complex case. First, the primitive exists on
 **Theorem (Cauchy–Goursat).** If $f$ is split complex differentiable on a domain $\Omega$ and $\gamma$ is a closed piecewise $C^1$ path in $\Omega$, then
 
 $$
-\oint_\gamma f(A)\,dA = 0.
+\oint_\gamma f(Q)\,dQ = 0.
 $$
 
 **Proof.** By the primitive theorem the integral equals $F(\gamma(b)) - F(\gamma(a))$, and for a closed path $\gamma(b) = \gamma(a)$.
@@ -233,10 +233,10 @@ $$
 
 **Theorem (rectangle criterion).** For a continuous $f : \Omega \to \mathbb{D}$, the following are equivalent.
 
-1. $\oint_{\partial R} f(A)\,dA = 0$ for every axis-parallel rectangle $R \subseteq \Omega$.
-2. $f$ has the separated form $f = f_+(A_+)\Pi_1 + f_-(A_-)\Pi_2$ with $f_\pm$ continuous functions of one variable.
+1. $\oint_{\partial R} f(Q)\,dQ = 0$ for every axis-parallel rectangle $R \subseteq \Omega$.
+2. $f$ has the separated form $f = f_+(Q_+)\Pi_+ + f_-(Q_-)\Pi_-$ with $f_\pm$ continuous functions of one variable.
 
-**Proof.** If (2) holds, $\oint_{\partial R} f\,dA = \Pi_1\oint_{\partial R} f_+(A_+)\,dA_+ + \Pi_2\oint_{\partial R} f_-(A_-)\,dA_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $\Omega$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $\Omega$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(A_+)\Pi_1 + F_-(A_-)\Pi_2$, so $f = F' = F_+'(A_+)\Pi_1 + F_-'(A_-)\Pi_2$ has the separated form.
+**Proof.** If (2) holds, $\oint_{\partial R} f\,dQ = \Pi_+\oint_{\partial R} f_+(Q_+)\,dQ_+ + \Pi_-\oint_{\partial R} f_-(Q_-)\,dQ_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $\Omega$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $\Omega$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(Q_+)\Pi_+ + F_-(Q_-)\Pi_-$, so $f = F' = F_+'(Q_+)\Pi_+ + F_-'(Q_-)\Pi_-$ has the separated form.
 
 **Remark (no regularity upgrade).** In $\mathbb{C}$ the same rectangle hypothesis upgrades a merely continuous $f$ to a holomorphic one, because the primitive of a continuous function is holomorphic and the derivative of a holomorphic function is holomorphic. In $\mathbb{D}$ no such upgrade is available: the components $f_\pm = F_\pm'$ are derivatives of one-variable functions and are continuous by hypothesis, but a continuous function of one real variable need not be differentiable. The hypothesis of the theorem therefore stops at the separated form, one step short of differentiability, and this gap is a further face of the failure of the representation half of the theory. In particular there is no Morera theorem in $\mathbb{D}$ of the classical strength; the rectangle condition characterises the class of continuous separated densities, not the class of split complex differentiable functions.
 
@@ -246,51 +246,51 @@ The Cauchy–Goursat theorem is the vanishing half of the Cauchy theory. The oth
 
 ### The Cauchy Kernel and the Null Cone
 
-**Proposition.** Let $A_0 \in \mathbb{D}$. The element $\zeta - A_0$ is a unit if and only if $\zeta$ lies off the **null cone** through $A_0$, that is, off the union of the two lines $\zeta_+ = A_{0+}$ and $\zeta_- = A_{0-}$. For $\zeta - A_0$ a unit,
+**Proposition.** Let $Q_0 \in \mathbb{D}$. The element $\zeta - Q_0$ is a unit if and only if $\zeta$ lies off the **null cone** through $Q_0$, that is, off the union of the two lines $\zeta_+ = Q_{0+}$ and $\zeta_- = Q_{0-}$. For $\zeta - Q_0$ a unit,
 
 $$
-(\zeta - A_0)^{-1} = \frac{\overline{\zeta - A_0}}{\langle \zeta - A_0\rangle_{\natural}} = \frac{\Pi_1}{\zeta_+ - A_{0+}} + \frac{\Pi_2}{\zeta_- - A_{0-}}.
+(\zeta - Q_0)^{-1} = \frac{\overline{\zeta - Q_0}}{\langle \zeta - Q_0\rangle_{\natural}} = \frac{\Pi_+}{\zeta_+ - Q_{0+}} + \frac{\Pi_-}{\zeta_- - Q_{0-}}.
 $$
 
-**Proof.** The inverse formula $B^{-1} = \bar B / \langle B\rangle_{\natural}$ is valid whenever $\langle B\rangle_{\natural} \neq 0$, and $\langle \zeta - A_0\rangle_{\natural} = (\zeta_+ - A_{0+})(\zeta_- - A_{0-})$, which vanishes exactly on the two stated lines.
+**Proof.** The inverse formula $B^{-1} = \bar B / \langle B\rangle_{\natural}$ is valid whenever $\langle B\rangle_{\natural} \neq 0$, and $\langle \zeta - Q_0\rangle_{\natural} = (\zeta_+ - Q_{0+})(\zeta_- - Q_{0-})$, which vanishes exactly on the two stated lines.
 
 **Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}$: there is no constant $c \in \mathbb{D}$ such that
 
 $$
-f(A_0) = c \oint_\gamma \frac{f(\zeta)}{\zeta - A_0}\,d\zeta
+f(Q_0) = c \oint_\gamma \frac{f(\zeta)}{\zeta - Q_0}\,d\zeta
 $$
 
-holds for every split complex differentiable $f$, every $A_0$ in the domain of $f$ and every closed piecewise $C^1$ path $\gamma$ in that domain. The constant of the classical formula, $1/(2\pi i)$, is not an element of $\mathbb{D}$ at all; but no constant whatever serves, because the kernel $(\zeta - A_0)^{-1}$ is undefined on the null cone through $A_0$, and every closed curve whose winding number about $A_0$ is non-zero meets that cone.
+holds for every split complex differentiable $f$, every $Q_0$ in the domain of $f$ and every closed piecewise $C^1$ path $\gamma$ in that domain. The constant of the classical formula, $1/(2\pi i)$, is not an element of $\mathbb{D}$ at all; but no constant whatever serves, because the kernel $(\zeta - Q_0)^{-1}$ is undefined on the null cone through $Q_0$, and every closed curve whose winding number about $Q_0$ is non-zero meets that cone.
 
-**Proof.** The complement of the two lines $\zeta_+ = A_{0+}$ and $\zeta_- = A_{0-}$ has four connected components, the open sectors determined by the signs of $\zeta_+ - A_{0+}$ and $\zeta_- - A_{0-}$, and each is convex. A closed curve lying in one component lies in a convex set omitting $A_0$, hence is null-homotopic in $\mathbb{D} \setminus \{A_0\}$ and has winding number zero about $A_0$. So a curve of non-zero winding about $A_0$ must leave every component, that is, must meet the cone, where the integrand is not defined.
+**Proof.** The complement of the two lines $\zeta_+ = Q_{0+}$ and $\zeta_- = Q_{0-}$ has four connected components, the open sectors determined by the signs of $\zeta_+ - Q_{0+}$ and $\zeta_- - Q_{0-}$, and each is convex. A closed curve lying in one component lies in a convex set omitting $Q_0$, hence is null-homotopic in $\mathbb{D} \setminus \{Q_0\}$ and has winding number zero about $Q_0$. So a curve of non-zero winding about $Q_0$ must leave every component, that is, must meet the cone, where the integrand is not defined.
 
-This is the precise sense in which the Cauchy theorem of a ring with zero divisors is obstructed: the kernel of the would-be formula is not a function on the punctured neighbourhood of $A_0$, because the punctured neighbourhood is not the set on which $\zeta - A_0$ is invertible. In $\mathbb{C}$ the two sets coincide and the formula holds; in $\mathbb{D}$ the invertible set is the complement of a pair of lines.
+This is the precise sense in which the Cauchy theorem of a ring with zero divisors is obstructed: the kernel of the would-be formula is not a function on the punctured neighbourhood of $Q_0$, because the punctured neighbourhood is not the set on which $\zeta - Q_0$ is invertible. In $\mathbb{C}$ the two sets coincide and the formula holds; in $\mathbb{D}$ the invertible set is the complement of a pair of lines.
 
 ### The Fundamental Solution Is Not Point-Supported
 
-The obstruction has an equivalent analytic form. In $\mathbb{C}$ the locally integrable function $1/(\pi A)$ is the fundamental solution of the Cauchy–Riemann operator, and its singularity is carried by the single point $0$; that is what makes a small circle an adequate contour.
+The obstruction has an equivalent analytic form. In $\mathbb{C}$ the locally integrable function $1/(\pi Q)$ is the fundamental solution of the Cauchy–Riemann operator, and its singularity is carried by the single point $0$; that is what makes a small circle an adequate contour.
 
-**Theorem.** Let $D = \partial/\partial a - j\,\partial/\partial a'$ be the split Cauchy–Riemann operator. A fundamental solution of $D$ is
+**Theorem.** Let $D = \partial/\partial q - j\,\partial/\partial q'$ be the split Cauchy–Riemann operator. A fundamental solution of $D$ is
 
 $$
-E(A) = H(A_-)\,\delta(A_+)\,\Pi_1 + H(A_+)\,\delta(A_-)\,\Pi_2,
+E(Q) = H(Q_-)\,\delta(Q_+)\,\Pi_+ + H(Q_+)\,\delta(Q_-)\,\Pi_-,
 $$
 
 where $H$ is the Heaviside function, $\delta$ is the one-dimensional delta distribution, and a normalisation is fixed by $D E = \delta_0$ in the Lebesgue measure of the plane. The support of $E$ is the union of the two null rays
 
 $$
-\{A : A_+ = 0,\ A_- \geq 0\} \cup \{A : A_- = 0,\ A_+ \geq 0\},
+\{Q : Q_+ = 0,\ Q_- \geq 0\} \cup \{Q : Q_- = 0,\ Q_+ \geq 0\},
 $$
 
 so $E$ is not a locally integrable function: its support, and hence its singular support, is the union of those two rays rather than a single point.
 
-**Proof.** In the idempotent coordinates $D = 2(\Pi_2\partial/\partial A_+ + \Pi_1\partial/\partial A_-)$, so for $E = E_+\Pi_1 + E_-\Pi_2$,
+**Proof.** In the idempotent coordinates $D = 2(\Pi_-\partial/\partial Q_+ + \Pi_+\partial/\partial Q_-)$, so for $E = E_+\Pi_+ + E_-\Pi_-$,
 
 $$
-D E = 2\,(\partial/\partial A_+ E_-)\,\Pi_2 + 2\,(\partial/\partial A_- E_+)\,\Pi_1,
+D E = 2\,(\partial/\partial Q_+ E_-)\,\Pi_- + 2\,(\partial/\partial Q_- E_+)\,\Pi_+,
 $$
 
-the cross terms vanishing as before. Taking $E_+ = H(A_-)\delta(A_+)$ and $E_- = H(A_+)\delta(A_-)$ gives $\partial/\partial A_- E_+ = \delta(A_-)\delta(A_+)$ and $\partial/\partial A_+ E_- = \delta(A_+)\delta(A_-)$; with $\lvert\partial(A_+,A_-)/\partial(a,a')\rvert = 2$, so that $\delta(A_+)\delta(A_-) = \tfrac12\delta_0$, one has $2\,\delta(A_+)\delta(A_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$.
+the cross terms vanishing as before. Taking $E_+ = H(Q_-)\delta(Q_+)$ and $E_- = H(Q_+)\delta(Q_-)$ gives $\partial/\partial Q_- E_+ = \delta(Q_-)\delta(Q_+)$ and $\partial/\partial Q_+ E_- = \delta(Q_+)\delta(Q_-)$; with $\lvert\partial(Q_+,Q_-)/\partial(q,q')\rvert = 2$, so that $\delta(Q_+)\delta(Q_-) = \tfrac12\delta_0$, one has $2\,\delta(Q_+)\delta(Q_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$.
 
 The contrast with $\mathbb{C}$ is the contrast of an elliptic with a hyperbolic operator, and it is the same contrast as that of a field with a ring having zero divisors. In $\mathbb{C}$ the principal symbol never vanishes off the origin, the fundamental solution is a function singular at a point, and the boundary integral of the Cauchy formula is meaningful on any small circle. In $\mathbb{D}$ the principal symbol degenerates on the real characteristics, the fundamental solution is a distribution carried by those characteristics, and a boundary integral can represent an interior value only if the contour is allowed to meet the singular support — which the definition of the integral forbids.
 
@@ -298,11 +298,11 @@ The contrast with $\mathbb{C}$ is the contrast of an elliptic with a hyperbolic 
 
 The following are consequences of the obstruction, and they are recorded here to delimit the theory precisely. None of these failures occurs in $\mathbb{C}$, where each of the listed results holds.
 
-- **No Cauchy integral formula.** No constant $c \in \mathbb{D}$ makes $f(A_0) = c\oint_\gamma f(\zeta)(\zeta - A_0)^{-1}\,d\zeta$ hold for all $f$ and all $A_0$, by the obstruction theorem above.
-- **No Cauchy estimates and no Liouville theorem.** A bounded split complex differentiable function on $\mathbb{D}$ need not be constant: for instance $f(A) = \tanh(A_+) \Pi_1 + \tanh(A_-) \Pi_2$ is split complex differentiable, bounded, and non-constant.
+- **No Cauchy integral formula.** No constant $c \in \mathbb{D}$ makes $f(Q_0) = c\oint_\gamma f(\zeta)(\zeta - Q_0)^{-1}\,d\zeta$ hold for all $f$ and all $Q_0$, by the obstruction theorem above.
+- **No Cauchy estimates and no Liouville theorem.** A bounded split complex differentiable function on $\mathbb{D}$ need not be constant: for instance $f(Q) = \tanh(Q_+) \Pi_+ + \tanh(Q_-) \Pi_-$ is split complex differentiable, bounded, and non-constant.
 - **No mean value property and no maximum principle.** Both would be consequences of the integral formula.
-- **No Laurent expansion at a point.** The negative powers $(A - A_0)^{-n}$ for $n \geq 1$ are undefined on the null cone through $A_0$, so a Laurent series in $(A - A_0)$ does not exist; a power series in non-negative powers does exist wherever the components are real-analytic, by the corresponding one-variable expansions.
-- **No analytic-continuation rigidity.** The identity theorem fails: the function $f(A) = A_+\Pi_1$ is split complex differentiable and vanishes on the whole line $A_+ = 0$, every point of which is an accumulation point of its zero set, yet $f$ is not identically zero.
+- **No Laurent expansion at a point.** The negative powers $(Q - Q_0)^{-n}$ for $n \geq 1$ are undefined on the null cone through $Q_0$, so a Laurent series in $(Q - Q_0)$ does not exist; a power series in non-negative powers does exist wherever the components are real-analytic, by the corresponding one-variable expansions.
+- **No analytic-continuation rigidity.** The identity theorem fails: the function $f(Q) = Q_+\Pi_+$ is split complex differentiable and vanishes on the whole line $Q_+ = 0$, every point of which is an accumulation point of its zero set, yet $f$ is not identically zero.
 
 The common cause of all five is the same: the two idempotent components are independent, so a condition at a point or on a curve constrains only one component, and the other is free.
 
@@ -310,67 +310,67 @@ The common cause of all five is the same: the two idempotent components are inde
 
 ### The Characteristic Lines
 
-**Definition.** The **null directions** of $\mathbb{D}$ are the two directions spanned by $\Pi_1$ and by $\Pi_2$, equivalently the level lines of $A_+$ and of $A_-$. They are the characteristics of the operator $\Box$, and their union through the origin is the zero-divisor cone.
+**Definition.** The **null directions** of $\mathbb{D}$ are the two directions spanned by $\Pi_+$ and by $\Pi_-$, equivalently the level lines of $Q_+$ and of $Q_-$. They are the characteristics of the operator $\Box$, and their union through the origin is the zero-divisor cone.
 
-The behaviour of the integral along a null line is instructive. Let $f$ be split complex differentiable and let $\gamma$ run along a line on which $A_+$ is constant. Then $dA_+ = 0$, so $dA = \Pi_2\,dA_-$ and
+The behaviour of the integral along a null line is instructive. Let $f$ be split complex differentiable and let $\gamma$ run along a line on which $Q_+$ is constant. Then $dQ_+ = 0$, so $dQ = \Pi_-\,dQ_-$ and
 
 $$
-\int_\gamma f(A)\,dA = \Pi_2 \int_{\gamma_-} f_-(A_-)\,dA_-.
+\int_\gamma f(Q)\,dQ = \Pi_- \int_{\gamma_-} f_-(Q_-)\,dQ_-.
 $$
 
-Along such a line the integral sees only the minus idempotent component of $f$; symmetrically, along a line on which $A_-$ is constant it sees only the plus component. A single null line is therefore blind to one of the two components of the integrand, and the two families of null lines probe the two components in opposite ways.
+Along such a line the integral sees only the minus idempotent component of $f$; symmetrically, along a line on which $Q_-$ is constant it sees only the plus component. A single null line is therefore blind to one of the two components of the integrand, and the two families of null lines probe the two components in opposite ways.
 
 **Proposition (characteristic tangency).** If $\gamma$ is tangent to a null direction at $t_0$, then $\gamma'(t_0)$ is a zero divisor.
 
-**Proof.** A null direction is the kernel of $dA_+$ or of $dA_-$; putting $A'(t_0) = p + jq$, tangency to the line $A_+ = \mathrm{const}$ means $p + q = 0$, that is $A'(t_0) = p(1 - j) = 2p\,\Pi_2$, a multiple of the zero divisor $\Pi_2$. The other family gives multiples of $\Pi_1$.
+**Proof.** A null direction is the kernel of $dQ_+$ or of $dQ_-$; putting $Q'(t_0) = p + jr$, tangency to the line $Q_+ = \mathrm{const}$ means $p + r = 0$, that is $Q'(t_0) = p(1 - j) = 2p\,\Pi_-$, a multiple of the zero divisor $\Pi_-$. The other family gives multiples of $\Pi_+$.
 
-So the derivative of a curve is a zero divisor exactly at its tangencies with the characteristics. The difference quotient $(f(A_0 + h) - f(A_0))/h$ is not defined for a null increment $h$, since $h$ is not invertible, so the limit defining the split derivative is taken over the invertible increments; the null directions are exactly the increments excluded from it, and they are the directions in which the argument reducing differentiability to the Cauchy–Riemann equations cannot be run.
+So the derivative of a curve is a zero divisor exactly at its tangencies with the characteristics. The difference quotient $(f(Q_0 + h) - f(Q_0))/h$ is not defined for a null increment $h$, since $h$ is not invertible, so the limit defining the split derivative is taken over the invertible increments; the null directions are exactly the increments excluded from it, and they are the directions in which the argument reducing differentiability to the Cauchy–Riemann equations cannot be run.
 
 ### Path Independence Within a Sector
 
-By the primitive theorem $f\,dA$ is exact on *every* domain, so path independence is a global property of the integrand and needs no hypothesis at all. The null cone therefore does not enter by creating a period; it enters by removing paths from the domain. A domain that omits the cone through $A_0$ falls into the four sectors bounded by the two null lines through $A_0$, and within one sector any two points can still be joined, so the integral between them is again independent of the route taken inside that sector.
+By the primitive theorem $f\,dQ$ is exact on *every* domain, so path independence is a global property of the integrand and needs no hypothesis at all. The null cone therefore does not enter by creating a period; it enters by removing paths from the domain. A domain that omits the cone through $Q_0$ falls into the four sectors bounded by the two null lines through $Q_0$, and within one sector any two points can still be joined, so the integral between them is again independent of the route taken inside that sector.
 
 **Proposition.** Let $f$ be split complex differentiable on a domain $\Omega$, let $P, Q \in \Omega$, and let $\gamma_1, \gamma_2$ be piecewise $C^1$ paths in $\Omega$ from $P$ to $Q$. Then
 
 $$
-\int_{\gamma_1} f(A)\,dA = \int_{\gamma_2} f(A)\,dA,
+\int_{\gamma_1} f(Q)\,dQ = \int_{\gamma_2} f(Q)\,dQ,
 $$
 
-with no hypothesis on $\Omega$ beyond $f$ being defined and differentiable on it. In particular, if $\Omega$ omits the null cone through $A_0$ and $P, Q$ lie in the same component of $\Omega$, the two points may be joined inside that component and the integral between them is independent of the path.
+with no hypothesis on $\Omega$ beyond $f$ being defined and differentiable on it. In particular, if $\Omega$ omits the null cone through $Q_0$ and $P, Q$ lie in the same component of $\Omega$, the two points may be joined inside that component and the integral between them is independent of the path.
 
-**Proof.** By the primitive theorem $f\,dA = dF$ for a globally defined primitive $F$ on $\Omega$, and the integral of an exact form along a path depends only on the endpoints, so both integrals equal $F(Q) - F(P)$.
+**Proof.** By the primitive theorem $f\,dQ = dF$ for a globally defined primitive $F$ on $\Omega$, and the integral of an exact form along a path depends only on the endpoints, so both integrals equal $F(Q) - F(P)$.
 
 Thus path independence does hold within each sector bounded by the null lines; it is the *extension* to paths that would cross a line which fails, and that is the subject of the next subsection.
 
 ### The Failure of Path Independence Across the Null Directions
 
-**Proposition (cut by a null line).** Let $a \in \mathbb{R}$ and let $f$ on $\{A : A_+ \neq a\}$ be given by $f(A) = \Pi_1 (A_+ - a)^{-1}$. Then $f$ is split complex differentiable, $f$ has no singularity at a point, and its singular set is the whole null line $\{A : A_+ = a\}$. There is no path in the domain joining a point with $A_+ > a$ to a point with $A_+ < a$, and the primitive $F = \Pi_1 \log|A_+ - a|$, which is defined on each half-plane, has no continuous extension across the line.
+**Proposition (cut by a null line).** Let $a \in \mathbb{R}$ and let $f$ on $\{Q : Q_+ \neq a\}$ be given by $f(Q) = \Pi_+ (Q_+ - a)^{-1}$. Then $f$ is split complex differentiable, $f$ has no singularity at a point, and its singular set is the whole null line $\{Q : Q_+ = a\}$. There is no path in the domain joining a point with $Q_+ > a$ to a point with $Q_+ < a$, and the primitive $F = \Pi_+ \log|Q_+ - a|$, which is defined on each half-plane, has no continuous extension across the line.
 
-**Proof.** $f$ is of the form $f_+(A_+)\Pi_1$ with $f_+(t) = (t-a)^{-1}$, so it is split complex differentiable by the Cauchy–Riemann theorem, and $f\,dA = \Pi_1\,dA_+/(A_+ - a)$ has the primitive $\Pi_1\log|A_+ - a|$ on each of the two half-planes $A_+ > a$ and $A_+ < a$. The line $A_+ = a$ is exactly the set on which $f$ is undefined, and it separates the two half-planes.
+**Proof.** $f$ is of the form $f_+(Q_+)\Pi_+$ with $f_+(t) = (t-a)^{-1}$, so it is split complex differentiable by the Cauchy–Riemann theorem, and $f\,dQ = \Pi_+\,dQ_+/(Q_+ - a)$ has the primitive $\Pi_+\log|Q_+ - a|$ on each of the two half-planes $Q_+ > a$ and $Q_+ < a$. The line $Q_+ = a$ is exactly the set on which $f$ is undefined, and it separates the two half-planes.
 
-The failure of path independence is therefore not the appearance of a non-zero period, as it is in $\mathbb{C}$, where $\oint A^{-1}dA = 2\pi i$. The split complex form $f\,dA$ is closed and has zero integral over every closed path in each component; indeed no closed path in the domain can leave a single half-plane. What fails is the *extension* of path independence across the null direction: the characteristic is an impenetrable cut, and the fundamental group that controls the complex case is replaced by a purely local, sector-wise statement. In $\mathbb{C}$ the singular set of $(\zeta - A_0)^{-1}$ is a point, whose complement is connected, so a contour can encircle it and produce the residue $2\pi i$; in $\mathbb{D}$ the singular set is a line, whose complement has two components, and no contour can encircle it at all.
+The failure of path independence is therefore not the appearance of a non-zero period, as it is in $\mathbb{C}$, where $\oint Q^{-1}dQ = 2\pi i$. The split complex form $f\,dQ$ is closed and has zero integral over every closed path in each component; indeed no closed path in the domain can leave a single half-plane. What fails is the *extension* of path independence across the null direction: the characteristic is an impenetrable cut, and the fundamental group that controls the complex case is replaced by a purely local, sector-wise statement. In $\mathbb{C}$ the singular set of $(\zeta - Q_0)^{-1}$ is a point, whose complement is connected, so a contour can encircle it and produce the residue $2\pi i$; in $\mathbb{D}$ the singular set is a line, whose complement has two components, and no contour can encircle it at all.
 
-**Remark.** The absence of periods for split complex differentiable forms is a general feature of the idempotent decomposition: each component is integrated over the projection $\gamma_\pm$, which is a closed path in the real line, and a continuous one-variable function integrates to zero over a closed real path. A non-vanishing closed integral therefore requires a density that is not split complex differentiable, as in $\oint_\gamma \bar A\,dA = 2j\,\mathrm{Area}(\gamma)$, where the detecting device is the failure of $\bar A\,dA$ to be closed.
+**Remark.** The absence of periods for split complex differentiable forms is a general feature of the idempotent decomposition: each component is integrated over the projection $\gamma_\pm$, which is a closed path in the real line, and a continuous one-variable function integrates to zero over a closed real path. A non-vanishing closed integral therefore requires a density that is not split complex differentiable, as in $\oint_\gamma \bar Q\,dQ = 2j\,\mathrm{Area}(\gamma)$, where the detecting device is the failure of $\bar Q\,dQ$ to be closed.
 
 ## Residues: What Survives
 
 ### Why the Point Residue Fails
 
-In $\mathbb{C}$ the residue of $f$ at an isolated singularity $A_0$ is defined as the integral over a small positively oriented circle, and its independence of the radius is proved by Cauchy–Goursat applied to the annulus between two circles. In $\mathbb{D}$ the same construction fails at its first step: a small circle about $A_0$ meets the null cone through $A_0$ at four points, where the integrand is not defined, and no contour with non-zero winding about $A_0$ avoids the cone. Consequently there is no point residue defined as a contour integral.
+In $\mathbb{C}$ the residue of $f$ at an isolated singularity $Q_0$ is defined as the integral over a small positively oriented circle, and its independence of the radius is proved by Cauchy–Goursat applied to the annulus between two circles. In $\mathbb{D}$ the same construction fails at its first step: a small circle about $Q_0$ meets the null cone through $Q_0$ at four points, where the integrand is not defined, and no contour with non-zero winding about $Q_0$ avoids the cone. Consequently there is no point residue defined as a contour integral.
 
 ### The Algebraic Residue of a Null-Line Singularity
 
 What does survive is attached to a characteristic rather than to a point, and it is read off algebraically.
 
-**Definition.** Let $a \in \mathbb{R}$ and let $f$ be split complex differentiable on a domain whose complement contains the null line $L : A_+ = a$, with $f = f_+(A_+)\Pi_1 + f_-(A_-)\Pi_2$ on that domain. If $f_+$ has a simple pole at $a$, the **residue** of $f$ at $L$ is
+**Definition.** Let $a \in \mathbb{R}$ and let $f$ be split complex differentiable on a domain whose complement contains the null line $L : Q_+ = a$, with $f = f_+(Q_+)\Pi_+ + f_-(Q_-)\Pi_-$ on that domain. If $f_+$ has a simple pole at $a$, the **residue** of $f$ at $L$ is
 
 $$
-\operatorname{Res}_L f = \Big(\lim_{A_+ \to a}(A_+ - a) f_+(A_+)\Big) \Pi_1.
+\operatorname{Res}_L f = \Big(\lim_{Q_+ \to a}(Q_+ - a) f_+(Q_+)\Big) \Pi_+.
 $$
 
-The residue at the null line $A_- = b$ is defined symmetrically, and for a function with singularities on both lines the full residue datum is the pair.
+The residue at the null line $Q_- = b$ is defined symmetrically, and for a function with singularities on both lines the full residue datum is the pair.
 
-**Example.** For $f(A) = (A - A_0)^{-1}$ on the complement of the null cone through $A_0$, the decomposition $(\zeta - A_0)^{-1} = \Pi_1(\zeta_+ - A_{0+})^{-1} + \Pi_2(\zeta_- - A_{0-})^{-1}$ shows that $f$ has a simple pole along each of the two null lines through $A_0$, and the pair of residues is $(\Pi_1, \Pi_2)$, whose sum is $1$. The number that a contour integral would return in $\mathbb{C}$ survives as the sum of the two line residues, but neither line residue is detected by any contour.
+**Example.** For $f(Q) = (Q - Q_0)^{-1}$ on the complement of the null cone through $Q_0$, the decomposition $(\zeta - Q_0)^{-1} = \Pi_+(\zeta_+ - Q_{0+})^{-1} + \Pi_-(\zeta_- - Q_{0-})^{-1}$ shows that $f$ has a simple pole along each of the two null lines through $Q_0$, and the pair of residues is $(\Pi_+, \Pi_-)$, whose sum is $1$. The number that a contour integral would return in $\mathbb{C}$ survives as the sum of the two line residues, but neither line residue is detected by any contour.
 
 ### The Line Residue as a Boundary Jump
 
@@ -387,7 +387,7 @@ in the sense of distributions on the real line.
 Applied to the component $f_+$ of the previous paragraph, the proposition gives
 
 $$
-f_+(t - i0) - f_+(t + i0) = 2\pi i\, r_+\, \delta(t - a), \qquad r_+ = \operatorname{Res}_L f \text{ in the } \Pi_1 \text{ component},
+f_+(t - i0) - f_+(t + i0) = 2\pi i\, r_+\, \delta(t - a), \qquad r_+ = \operatorname{Res}_L f \text{ in the } \Pi_+ \text{ component},
 $$
 
 so the residue reappears as a measure carried by the null line: it is the density of the jump of the boundary value, exactly as a point residue in $\mathbb{C}$ is the coefficient that makes the primitive acquire a period. The reader will recognise the complexification of the idempotent component as the step already required for the inversion of the split complex Fourier transform.
@@ -401,10 +401,10 @@ The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1
 | Property | Complex | Split complex |
 |---|---|---|
 | Coefficient ring | field, no zero divisors | ring, zero divisors $1 \pm j$ |
-| Cauchy–Riemann operator | $\partial/\partial a + i\partial/\partial a'$, elliptic | $\partial/\partial a - j\partial/\partial a'$, hyperbolic |
+| Cauchy–Riemann operator | $\partial/\partial q + i\partial/\partial q'$, elliptic | $\partial/\partial q - j\partial/\partial q'$, hyperbolic |
 | Second-order operator | Laplacian $\Delta$ | d'Alembertian $\Box$ |
 | Characteristic set | $\{0\}$ | the null cone $N = 0$ |
-| Fundamental solution | a Cauchy kernel $A^{-1}$ up to a constant, singular at a point | supported on the null rays |
+| Fundamental solution | a Cauchy kernel $Q^{-1}$ up to a constant, singular at a point | supported on the null rays |
 | Cauchy–Goursat, closed contour | holds | holds, but is soft |
 | Path independence | on simply connected domains | on every domain, by the primitive |
 | Cauchy integral formula | holds | obstructed |
@@ -414,61 +414,61 @@ The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1
 | Laurent expansion | at an isolated singularity | does not exist |
 | Liouville, mean value, maximum principle | hold | fail |
 
-The complex case is rigid because the kernel $(\zeta - A_0)^{-1}$ is defined on the whole punctured plane and a contour can surround a point. The split case is soft because the same kernel is defined only off two lines, so a contour cannot surround anything, and because the two idempotent components of a differentiable function are independent.
+The complex case is rigid because the kernel $(\zeta - Q_0)^{-1}$ is defined on the whole punctured plane and a contour can surround a point. The split case is soft because the same kernel is defined only off two lines, so a contour cannot surround anything, and because the two idempotent components of a differentiable function are independent.
 
 ## The Relation to Hypercomplex Integration
 
-The general theory of *Hypercomplex Integration* is stated for an **elliptic** hypercomplex system: a finite-dimensional unital associative real algebra $A$ with a Cauchy–Riemann operator
+The general theory of *Hypercomplex Integration* is stated for an **elliptic** hypercomplex system: a finite-dimensional unital associative real algebra $Q$ with a Cauchy–Riemann operator
 
 $$
 D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad B_j B_k + B_k B_j = -2\delta_{jk}, \qquad B_k^2 = -1,
 $$
 
-whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that $A$ contains square roots of $-1$ and that the system is elliptic, and it is exactly what fails for $\mathbb{D}$.
+whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that $Q$ contains square roots of $-1$ and that the system is elliptic, and it is exactly what fails for $\mathbb{D}$.
 
 **Proposition.** There is no element $B \in \mathbb{D}$ with $B^2 = -1$. Hence the split complex system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
 
-**Proof.** Write $B = a + ja'$. Then $B^2 = (a^2 + a'^2) + 2aa'\,j$. The equation $B^2 = -1$ requires $aa' = 0$ and $a^2 + a'^2 = -1$, impossible for real $a, a'$ since $a^2 + a'^2 \geq 0$.
+**Proof.** Write $B = b + jb'$. Then $B^2 = (b^2 + b'^2) + 2bb'\,j$. The equation $B^2 = -1$ requires $bb' = 0$ and $b^2 + b'^2 = -1$, impossible for real $b, b'$ since $b^2 + b'^2 \geq 0$.
 
 The consequences are those of the preceding sections. The general Cauchy–Goursat theorem applies to the split system, because $\mathbb{D}$ is commutative, but it carries no information there, since the vanishing half of the theory is soft. The general residue theory and Cauchy integral formula, by contrast, have no split complex analogue, because their proofs use the point singularity of the fundamental solution. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $0$, for $\mathbb{D}$ it is the null cone, and the cone is the zero-divisor set. The split complex theory is thus the boundary case of the general theory at which ellipticity is lost and with it the representation half of the Cauchy theory, while the vanishing half survives in a form too weak to carry the rest.
 
 ## Summary
 
-The **split complex integral** $\int_\gamma f\,dA = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dA\|_E \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its **idempotent decomposition** $\int_\gamma f\,dA = \Pi_1\int_{\gamma_+} f_+ \,dA_+ + \Pi_2\int_{\gamma_-} f_-\,dA_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.
+The **split complex integral** $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dQ\|_E \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its **idempotent decomposition** $\int_\gamma f\,dQ = \Pi_+\int_{\gamma_+} f_+ \,dQ_+ + \Pi_-\int_{\gamma_-} f_-\,dQ_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.
 
-In the idempotent coordinates the operator factorises as $\partial/\partial\bar A = \Pi_2\partial/\partial A_+ + \Pi_1\partial/\partial A_-$, and **split complex differentiability** is equivalent to $f_+$ depending on $A_+$ alone and $f_-$ on $A_-$ alone. Hence $f\,dA$ is closed exactly when $f$ is differentiable, every differentiable $f$ has a primitive on every domain, the **Cauchy–Goursat theorem** $\oint_\gamma f\,dA = 0$ holds for every closed path, and for continuous densities the rectangle criterion is equivalent to the separated form. The theorem is nevertheless soft, since differentiability excludes nothing, and the rectangle criterion stops one step short of differentiability.
+In the idempotent coordinates the operator factorises as $\partial/\partial\bar Q = \Pi_-\partial/\partial Q_+ + \Pi_+\partial/\partial Q_-$, and **split complex differentiability** is equivalent to $f_+$ depending on $Q_+$ alone and $f_-$ on $Q_-$ alone. Hence $f\,dQ$ is closed exactly when $f$ is differentiable, every differentiable $f$ has a primitive on every domain, the **Cauchy–Goursat theorem** $\oint_\gamma f\,dQ = 0$ holds for every closed path, and for continuous densities the rectangle criterion is equivalent to the separated form. The theorem is nevertheless soft, since differentiability excludes nothing, and the rectangle criterion stops one step short of differentiability.
 
-The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zeta - A_0$ is a unit exactly off the null cone through $A_0$, so the Cauchy kernel is undefined there and no contour of non-zero winding about $A_0$ avoids the cone; the **Cauchy integral formula** therefore does not exist, and with it the Cauchy estimates, the mean value property, the maximum principle, Liouville's theorem and the Laurent expansion all fail. The same obstruction appears analytically as the **fundamental solution** of the split Cauchy–Riemann operator, which is a distribution supported on the null rays rather than a function singular at the origin.
+The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zeta - Q_0$ is a unit exactly off the null cone through $Q_0$, so the Cauchy kernel is undefined there and no contour of non-zero winding about $Q_0$ avoids the cone; the **Cauchy integral formula** therefore does not exist, and with it the Cauchy estimates, the mean value property, the maximum principle, Liouville's theorem and the Laurent expansion all fail. The same obstruction appears analytically as the **fundamental solution** of the split Cauchy–Riemann operator, which is a distribution supported on the null rays rather than a function singular at the origin.
 
-**Integration along the null directions** reproduces only one idempotent component at a time. **Path independence** is global — $f\,dA$ is exact on every domain — so the null lines create no periods to replace the complex winding number; what they do is cut the domain into sectors, so a path that would cross a characteristic is not available inside the domain at all. The residue datum that **survives** is attached to a null line rather than a point: it is the coefficient of the simple pole of an idempotent component, realised distributionally as the Sokhotski–Plemelj jump across the characteristic. Finally, the split complex system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{D}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to its vanishing half.
+**Integration along the null directions** reproduces only one idempotent component at a time. **Path independence** is global — $f\,dQ$ is exact on every domain — so the null lines create no periods to replace the complex winding number; what they do is cut the domain into sectors, so a path that would cross a characteristic is not available inside the domain at all. The residue datum that **survives** is attached to a null line rather than a point: it is the coefficient of the simple pole of an idempotent component, realised distributionally as the Sokhotski–Plemelj jump across the characteristic. Finally, the split complex system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{D}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to its vanishing half.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
-| $A = a + ja'$ | General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$ |
-| $\bar A = a - ja'$ | Split complex conjugate |
-| $\langle A\rangle_{\natural} = A\bar A = a^2 - a'^2$ | Norm, signature $(1,1)$ |
+| $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
+| $\bar Q = q - jq'$ | Split complex conjugate |
+| $\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
 | $\{N = 0\}$ | Null cone, the zero-divisor set |
-| $\|A\|_E = \sqrt{a^2 + a'^2}$ | Euclidean modulus |
-| $\Pi_1 = \tfrac12(1+j), \ \Pi_2 = \tfrac12(1-j)$ | Idempotents, $\Pi_{1,2}^2 = \Pi_{1,2}$, $\Pi_1\Pi_2 = 0$ |
-| $A = A_+\Pi_1 + A_-\Pi_2$, $A_+ = a+a'$, $A_- = a-a'$ | Idempotent decomposition and coordinates |
+| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
+| $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
+| $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |
 | $\gamma : [a,b] \to \mathbb{D}$ | Piecewise $C^1$ path |
-| $\gamma_\pm(t) = A_\pm(\gamma(t))$ | Projections of a path to the two null coordinates |
+| $\gamma_\pm(t) = Q_\pm(\gamma(t))$ | Projections of a path to the two null coordinates |
 | $\gamma^*$, $-\gamma$, $\gamma_1 + \gamma_2$ | Trace, opposite path, concatenation |
 | $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
-| $\int_\gamma f\,dA$ | Split complex integral |
-| $\partial/\partial A = \tfrac12(\partial/\partial a + j\partial/\partial a')$ | Split Wirtinger derivative |
-| $\partial/\partial\bar A = \tfrac12(\partial/\partial a - j\partial/\partial a')$ | Split Wirtinger derivative, conjugate of $\partial/\partial A$ |
-| $\partial_\pm = \partial/\partial A_\pm$ | Null-coordinate derivatives |
-| $D = \partial/\partial a - j\partial/\partial a'$ | Split Cauchy–Riemann operator, $D = 2\partial/\partial\bar A$ |
-| $\bar D = \partial/\partial a + j\partial/\partial a'$ | Conjugate operator |
-| $\Box = \partial^2/\partial a^2 - \partial^2/\partial a'^2 = 4\partial^2/\partial A_+\partial A_-$ | d'Alembertian |
+| $\int_\gamma f\,dQ$ | Split complex integral |
+| $\partial/\partial Q = \tfrac12(\partial/\partial q + j\partial/\partial q')$ | Split Wirtinger derivative |
+| $\partial/\partial\bar Q = \tfrac12(\partial/\partial q - j\partial/\partial q')$ | Split Wirtinger derivative, conjugate of $\partial/\partial Q$ |
+| $\partial_\pm = \partial/\partial Q_\pm$ | Null-coordinate derivatives |
+| $D = \partial/\partial q - j\partial/\partial q'$ | Split Cauchy–Riemann operator, $D = 2\partial/\partial\bar Q$ |
+| $\bar D = \partial/\partial q + j\partial/\partial q'$ | Conjugate operator |
+| $\Box = \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\partial^2/\partial Q_+\partial Q_-$ | d'Alembertian |
 | $\|\Delta\|$ | Mesh of a partition of $[a,b]$, for the Riemann sums |
 | $\omega(\|\Delta\|)$ | Modulus of continuity of $\gamma'$ on a partition of mesh $\|\Delta\|$ |
 | $H$ | Heaviside function, $H(t) = 1$ for $t > 0$ and $0$ for $t < 0$ |
-| $E = H(A_-)\delta(A_+)\Pi_1 + H(A_+)\delta(A_-)\Pi_2$ | Fundamental solution of $D$, supported on the two null rays |
+| $E = H(Q_-)\delta(Q_+)\Pi_+ + H(Q_+)\delta(Q_-)\Pi_-$ | Fundamental solution of $D$, supported on the two null rays |
 | $\operatorname{Res}_L f$ | Residue at a null line $L$, an idempotent coefficient |
 | $\delta$, $\delta_0$ | One-dimensional delta distribution, and the two-dimensional one at the origin |
 

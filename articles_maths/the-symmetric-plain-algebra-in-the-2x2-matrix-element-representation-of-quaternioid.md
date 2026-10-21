@@ -80,7 +80,7 @@ The $2\times2$ matrix element representation $\mathsf{M}_2:\mathbb{H}\hookrighta
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Algebra*, for the product.
-- *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, for the embedding, its multiplicativity and its invariants.
-- *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the trace form.
-- *Norm and Invertibility in the Symmetric Plain Algebra*, for the norm, the inverse and the invertibility criterion.
+- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the product.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions](introduction-to-the-2x2-matrix-element-representation-of-quaternions.html), for the embedding, its multiplicativity and its invariants.
+- [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternioid.html), for the trace form.
+- [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the norm, the inverse and the invertibility criterion.

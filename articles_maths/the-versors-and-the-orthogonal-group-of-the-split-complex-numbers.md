@@ -6,14 +6,14 @@ The **versors** of the split-complex numbers are the units of norm one, the elem
 
 The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, nor the norm $\langle\cdot\rangle_{\natural}$, its polarisation $g$, the invertibility criterion, the group of units or the modulus (*Split-Complex Norm and Invertibility*). The unit hyperbola, its branches and their parametrisation, the exponential, the hyperbolic rotations, the classification of the maps preserving the form and the four components of the group are *Hyperbolic Rotations*, and *Split-Complex Exponential and Lie Group Structure*; they are cited and not restated. The two metrics of the plane are *The Two Metrics of the Split-Complex Numbers*. The general versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $A=a+ja'$ and $C=c+jc'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ja'$. The global reading is bar $=$ the involution $j\mapsto-j$ and Hermitian star $=$ bar (*Conventions in Mathematics*). The form that defines the versors is the indefinite Hermitian form $\langle A,C\rangle_{*}=A\bar C$, with diagonal $\langle A\rangle_{*}=\langle A\rangle_{\natural}=a^{2}-a'^{2}$; the four letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are reserved for the forms, so elements are written $A$ and $C$ (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*). The group of the title is written $O(1,1)$, its determinant-one half $SO(1,1)$ and its identity component $SO^+(1,1)$: this is the article that carries the algebraic naming of the group, the companion metric article being written with the matrix condition alone. The classification of the form-preserving maps, the four components and the non-compactness are *Hyperbolic Rotations*, cited and not re-derived.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $Q=q+jq'$ and $C=c+jc'$ with real $q,q',c,c'$, and conjugation is $\bar Q=q-jq'$. The global reading is bar $=$ the involution $j\mapsto-j$ and Hermitian star $=$ bar (*Conventions in Mathematics*). The form that defines the versors is the indefinite Hermitian form $\langle Q,C\rangle_{*}=Q\bar C$, with diagonal $\langle Q\rangle_{*}=\langle Q\rangle_{\natural}=q^{2}-q'^{2}$; the four letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are reserved for the forms, so elements are written $Q$ and $C$ (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*). The group of the title is written $O(1,1)$, its determinant-one half $SO(1,1)$ and its identity component $SO^+(1,1)$: this is the article that carries the algebraic naming of the group, the companion metric article being written with the matrix condition alone. The classification of the form-preserving maps, the four components and the non-compactness are *Hyperbolic Rotations*, cited and not re-derived.
 
 ## The Versors and Their Group
 
 **Definition.** A **versor** of the split-complex numbers is a unit of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$ of norm one,
 
 $$
-\mathbb{D}^{(1)}=\{u\in\mathbb{D}:\langle u\rangle_{\natural}=u\bar u=1\}=\mathcal{H}=\{u=a+ja':a^{2}-a'^{2}=1\},
+\mathbb{D}^{(1)}=\{u\in\mathbb{D}:\langle u\rangle_{\natural}=u\bar u=1\}=\mathcal{H}=\{u=q+jq':q^{2}-q'^{2}=1\},
 $$
 
 the unit hyperbola of *Hyperbolic Rotations*.
@@ -22,31 +22,31 @@ the unit hyperbola of *Hyperbolic Rotations*.
 
 *Proof.* The norm is multiplicative and real (*Split-Complex Norm and Invertibility*): $\langle uv\rangle_{\natural}=\langle u\rangle_{\natural}\langle v\rangle_{\natural}$. Hence $\langle 1\rangle_{\natural}=1$, and $\langle u\rangle_{\natural}=\langle v\rangle_{\natural}=1$ gives $\langle uv\rangle_{\natural}=1$; further $\langle u^{-1}\rangle_{\natural}=\langle u\rangle_{\natural}^{-1}=1$ for $u\neq0$, and $u^{-1}=\bar u/\langle u\rangle_{\natural}=\bar u$ on the hyperbola. Associativity and commutativity are inherited from the ring.
 
-**Remark (the shell of the indefinite form is a group, and it is a hyperbola).** The versor condition is read on the norm $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{*}$, not on the plain algebraic norm $\langle A\rangle=A^{2}$. On the norm the form is multiplicative and real, so its shell is a group; here the shell is the hyperbola, of two branches and not compact, in contrast with the compact circle that is the shell of the definite norm of the complex case. The group is $\mathbb{D}^{(1)}\cong\mathbb{Z}/2\mathbb{Z}\times\mathbb{R}$, with identity component $\mathcal{H}^+=\{\exp(\phi j):\phi\in\mathbb{R}\}\cong(\mathbb{R},+)$ (*Split-Complex Exponential and Lie Group Structure*, *Hyperbolic Rotations*).
+**Remark (the shell of the indefinite form is a group, and it is a hyperbola).** The versor condition is read on the norm $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{*}$, not on the plain algebraic norm $\langle Q\rangle=Q^{2}$. On the norm the form is multiplicative and real, so its shell is a group; here the shell is the hyperbola, of two branches and not compact, in contrast with the compact circle that is the shell of the definite norm of the complex case. The group is $\mathbb{D}^{(1)}\cong\mathbb{Z}/2\mathbb{Z}\times\mathbb{R}$, with identity component $\mathcal{H}^+=\{\exp(\phi j):\phi\in\mathbb{R}\}\cong(\mathbb{R},+)$ (*Split-Complex Exponential and Lie Group Structure*, *Hyperbolic Rotations*).
 
-**Remark (the shell of the plain form).** The plain algebraic norm $\langle A\rangle=A^{2}$ is $\mathbb{D}$-valued, and its shell $\{A:A^{2}=\pm1\}$ is the four-element set $\{1,-1,j,-j\}$, a group $\{1,-1\}\times\{1,j\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}$, because $A^{2}=(a^{2}+a'^{2})+2aa'j$ forces $a^{2}+a'^{2}=1$ and $aa'=0$. The value $-1$ is not attained, since $a^{2}+a'^{2}\geq0$, so this shell is already the solution set of $A^{2}=1$. It is not the versor group: the versors are the units of norm one for the indefinite form $\langle\cdot,\cdot\rangle_{\natural}$, whereas this four-element shell is exactly the group of $\mathbb{D}$-linear maps preserving the Euclidean metric (*The Two Metrics of the Split-Complex Numbers*).
+**Remark (the shell of the plain form).** The plain algebraic norm $\langle Q\rangle=Q^{2}$ is $\mathbb{D}$-valued, and its shell $\{Q:Q^{2}=\pm1\}$ is the four-element set $\{1,-1,j,-j\}$, a group $\{1,-1\}\times\{1,j\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}$, because $Q^{2}=(q^{2}+q'^{2})+2qq'j$ forces $q^{2}+q'^{2}=1$ and $qq'=0$. The value $-1$ is not attained, since $q^{2}+q'^{2}\geq0$, so this shell is already the solution set of $Q^{2}=1$. It is not the versor group: the versors are the units of norm one for the indefinite form $\langle\cdot,\cdot\rangle_{\natural}$, whereas this four-element shell is exactly the group of $\mathbb{D}$-linear maps preserving the Euclidean metric (*The Two Metrics of the Split-Complex Numbers*).
 
 ## The Group of Linear Maps Preserving the Indefinite Form
 
 **The multiplication action.** For $u\in\mathbb{D}^{(1)}$ let
 
 $$
-R_{u}:\mathbb{D}\to\mathbb{D}, \qquad R_{u}(A)=uA.
+R_{u}:\mathbb{D}\to\mathbb{D}, \qquad R_{u}(Q)=uQ.
 $$
 
 The map $u\mapsto R_{u}$ is an injective homomorphism of groups, because $R_{uv}=R_{u}\circ R_{v}$ and $R_{1}=\mathrm{id}$, and it is injective since $R_{u}(1)=u$ recovers $u$. Each $R_{u}$ preserves the indefinite form,
 
 $$
-g(R_{u}A,R_{u}C)=\langle u\rangle_{\natural}\,g(A,C)=g(A,C),
+g(R_{u}Q,R_{u}C)=\langle u\rangle_{\natural}\,g(Q,C)=g(Q,C),
 $$
 
-since $g(uA,uC)=u\bar u\,g(A,C)$ for the polarisation $g$ of the norm (*Split-Complex Norm and Invertibility*), so every versor acts by a map preserving the form. These are the hyperbolic rotations of the plane, whose parametrisation and identification with $SO(1,1)$ are *Hyperbolic Rotations*.
+since $g(uQ,uC)=u\bar u\,g(Q,C)$ for the polarisation $g$ of the norm (*Split-Complex Norm and Invertibility*), so every versor acts by a map preserving the form. These are the hyperbolic rotations of the plane, whose parametrisation and identification with $SO(1,1)$ are *Hyperbolic Rotations*.
 
 **Proposition (the versors are the group of $\mathbb{D}$-linear maps preserving the form).** The $\mathbb{D}$-linear maps preserving $g$ are exactly the multiplications $R_{u}$ with $\langle u\rangle_{\natural}=1$, and they form the group $SO(1,1)\cong\mathcal{H}=\mathbb{D}^{(1)}$.
 
-*Proof.* A $\mathbb{D}$-linear map of the one-dimensional split-complex module over itself is $A\mapsto uA$ for some $u$, and it preserves $g$ exactly when $\langle u\rangle_{\natural}=1$, since the displayed computation is an equivalence. The identification of this group with $SO(1,1)$, and of its identity component with the one-parameter group of hyperbolic rotations, is the cited one (*Hyperbolic Rotations*).
+*Proof.* A $\mathbb{D}$-linear map of the one-dimensional split-complex module over itself is $Q\mapsto uQ$ for some $u$, and it preserves $g$ exactly when $\langle u\rangle_{\natural}=1$, since the displayed computation is an equivalence. The identification of this group with $SO(1,1)$, and of its identity component with the one-parameter group of hyperbolic rotations, is the cited one (*Hyperbolic Rotations*).
 
-**Remark (the isotropic lines are fixed).** The two null lines of the form, the real spans of the idempotents $\Pi_{1}$ and $\Pi_{2}$, are the isotropic lines of the indefinite form and the zero-divisor lines of the ring (*Split-Complex Zero Divisors*). The action $R_{u}$ fixes each of them: in the idempotent basis a versor $u=\exp(\phi j)$ scales the two lines by the reciprocal positive factors $\exp(\phi)$ and $\exp(-\phi)$, so the rotations preserve the two isotropic directions individually while moving the level hyperbolas, and the reflection cosets interchange the two directions. The computation and the eigenvalues $\exp(\pm\phi)$ are *Hyperbolic Rotations*, and the two lines are the null pair read in *The Two Metrics of the Split-Complex Numbers*.
+**Remark (the isotropic lines are fixed).** The two null lines of the form, the real spans of the idempotents $\Pi_+$ and $\Pi_-$, are the isotropic lines of the indefinite form and the zero-divisor lines of the ring (*Split-Complex Zero Divisors*). The action $R_{u}$ fixes each of them: in the idempotent basis a versor $u=\exp(\phi j)$ scales the two lines by the reciprocal positive factors $\exp(\phi)$ and $\exp(-\phi)$, so the rotations preserve the two isotropic directions individually while moving the level hyperbolas, and the reflection cosets interchange the two directions. The computation and the eigenvalues $\exp(\pm\phi)$ are *Hyperbolic Rotations*, and the two lines are the null pair read in *The Two Metrics of the Split-Complex Numbers*.
 
 **The full orthogonal group.** The $\mathbb{R}$-linear maps preserving $g$ are more numerous: with the matrix $M$ of the map in the real basis $1$, $j$, they are the solutions of the matrix condition
 
@@ -54,9 +54,9 @@ $$
 M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1),
 $$
 
-that is the group $O(1,1)$, of four components. The versors give its proper half $SO(1,1)$, of two components; the other two cosets are formed by the reflections $A\mapsto u\bar A$ with $\langle u\rangle_{\natural}=1$ (*Hyperbolic Rotations*). The group of the title is thus $O(1,1)$, and the versors are its proper half.
+that is the group $O(1,1)$, of four components. The versors give its proper half $SO(1,1)$, of two components; the other two cosets are formed by the reflections $Q\mapsto u\bar Q$ with $\langle u\rangle_{\natural}=1$ (*Hyperbolic Rotations*). The group of the title is thus $O(1,1)$, and the versors are its proper half.
 
-**Remark (the sandwich is vacuous).** In a non-commutative algebra a unit may act on itself by the sandwich $A\mapsto uAu^{-1}$; here $uAu^{-1}=A$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors. The cover below is therefore read on the multiplication, and not on a sandwich.
+**Remark (the sandwich is vacuous).** In a non-commutative algebra a unit may act on itself by the sandwich $Q\mapsto uQu^{-1}$; here $uQu^{-1}=Q$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors. The cover below is therefore read on the multiplication, and not on a sandwich.
 
 ## The Two-to-One Cover of the Hyperbola
 
@@ -89,14 +89,14 @@ The general theory assigns to a quadratic space its versors, its rotors and the 
 **The candidate shells of the indefinite form.** For the indefinite form the candidate pin and spin groups are its shells,
 
 $$
-\mathrm{Pin}_{N}=\{A:\langle A\rangle_{\natural}=\pm1\}, \qquad \mathrm{Spin}_{N}=\{A:\langle A\rangle_{\natural}=1\}=\mathbb{D}^{(1)}.
+\mathrm{Pin}_{N}=\{Q:\langle Q\rangle_{\natural}=\pm1\}, \qquad \mathrm{Spin}_{N}=\{Q:\langle Q\rangle_{\natural}=1\}=\mathbb{D}^{(1)}.
 $$
 
 Because $\langle\cdot\rangle_{\natural}$ is indefinite, both values $\pm1$ are attained, and the two sets are **different**: the norm-one shell is the unit hyperbola, of two branches, and the shell $\{N=\pm1\}$ adds the conjugate hyperbola $\{N=-1\}$, of two more branches. The larger shell is a group, since $\langle\cdot\rangle_{\natural}$ is multiplicative, but it strictly contains the versor group, and its elements of norm $-1$ reverse the form rather than preserve it. This is the contrast with the complex definite case, where the value $-1$ is not attained, the negative shell is empty and the pin and spin groups coincide with the circle.
 
-**What the algebra does not carry.** A single non-isotropic vector is an odd versor, and its action on the plane is a reflection; the odd part of the Clifford algebra is not the even part and is not the split-complex algebra. So the reflections are not versors of $\mathbb{D}$, and the full $\mathrm{Pin}(1,1)$, whose odd half carries them, is not an object of the algebra: only $\mathrm{Spin}(1,1)=\mathbb{D}^{(1)}$ lies in it. The algebra reaches the rotations and not the reflections, and the reflections are recovered from its own conjugation only as the maps $A\mapsto u\bar A$, not as products of vectors. The general statement is that the pin group lives in the Clifford envelope and not in the algebra.
+**What the algebra does not carry.** A single non-isotropic vector is an odd versor, and its action on the plane is a reflection; the odd part of the Clifford algebra is not the even part and is not the split-complex algebra. So the reflections are not versors of $\mathbb{D}$, and the full $\mathrm{Pin}(1,1)$, whose odd half carries them, is not an object of the algebra: only $\mathrm{Spin}(1,1)=\mathbb{D}^{(1)}$ lies in it. The algebra reaches the rotations and not the reflections, and the reflections are recovered from its own conjugation only as the maps $Q\mapsto u\bar Q$, not as products of vectors. The general statement is that the pin group lives in the Clifford envelope and not in the algebra.
 
-**Remark (the plain form gives no versor group of the same kind).** For the plain bilinear form $\langle A,C\rangle=AC$ the quadratic form is $\langle A\rangle=A^{2}$, whose shell $\{A:A^{2}=\pm1\}=\{1,-1,j,-j\}$ is the four-element group of the first section; but that shell is not the versor group, and the realified $\langle\cdot,\cdot\rangle$ is the definite Euclidean form, whose own shell is a circle that is not closed under the multiplication of the algebra. The versors of the split-complex numbers are therefore defined by the indefinite form $\langle\cdot,\cdot\rangle_{\natural}$ alone, and the group they form is the spin group of that form.
+**Remark (the plain form gives no versor group of the same kind).** For the plain bilinear form $\langle Q,C\rangle=QC$ the quadratic form is $\langle Q\rangle=Q^{2}$, whose shell $\{Q:Q^{2}=\pm1\}=\{1,-1,j,-j\}$ is the four-element group of the first section; but that shell is not the versor group, and the realified $\langle\cdot,\cdot\rangle$ is the definite Euclidean form, whose own shell is a circle that is not closed under the multiplication of the algebra. The versors of the split-complex numbers are therefore defined by the indefinite form $\langle\cdot,\cdot\rangle_{\natural}$ alone, and the group they form is the spin group of that form.
 
 ## The Split Rung of the Versor Ladder
 
@@ -114,7 +114,7 @@ The first two rows are the two commutative rungs: the circle of the definite bas
 
 The versors of the split-complex numbers are the units of norm one, the set $\mathbb{D}^{(1)}=\{u:\langle u\rangle_{\natural}=1\}$, which is the unit hyperbola $\mathcal{H}$ with its two branches; they form an abelian group, $\mathbb{D}^{(1)}\cong\mathbb{Z}/2\mathbb{Z}\times\mathbb{R}$, with identity component $\{\exp(\phi j)\}\cong\mathbb{R}$, because the form $\langle\cdot,\cdot\rangle_{\natural}$ is real and multiplicative. The shell of the plain algebraic norm is the four-element group $\{1,-1,j,-j\}$, which is not the versor group; the versors are read on the indefinite form alone.
 
-Multiplication by a versor, $R_{u}(A)=uA$, is a $\mathbb{D}$-linear map preserving the form, and the versors are exactly the group of such maps, identified with $SO(1,1)\cong\mathcal{H}$; the full group of $\mathbb{R}$-linear maps preserving the form is $O(1,1)$, of four components, of which the versors are the proper half and the reflections the other cosets. The sandwich is trivial on the commutative algebra, so the action is by multiplication.
+Multiplication by a versor, $R_{u}(Q)=uQ$, is a $\mathbb{D}$-linear map preserving the form, and the versors are exactly the group of such maps, identified with $SO(1,1)\cong\mathcal{H}$; the full group of $\mathbb{R}$-linear maps preserving the form is $O(1,1)$, of four components, of which the versors are the proper half and the reflections the other cosets. The sandwich is trivial on the commutative algebra, so the action is by multiplication.
 
 The square map $u\mapsto u^{2}$ is a surjective homomorphism of the hyperbola onto its identity component with kernel $\{1,-1\}$, hence a two-to-one cover; under the identification of the identity component with $SO^+(1,1)$ it is the cover $\mathrm{Spin}(1,1)\to SO^+(1,1)$, and the versor carries half the hyperbolic angle of the rotation it names. Read over $\mathbb{R}$, the algebra is the even part of $\mathrm{Cl}(1,1)$, its versors are the rotors $\mathrm{Spin}(1,1)=\mathbb{D}^{(1)}$, and the pin shell $\{N=\pm1\}$ is strictly larger than the spin shell because the value $-1$ is attained. The odd versors carry the reflections and lie outside the algebra, so the full $\mathrm{Pin}(1,1)$ is not an object of the algebra. The split rung of the ladder sits beside the complex base, its circle replaced by a hyperbola and its connected group by a group of two components.
 
@@ -122,29 +122,29 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the hyperbola on
 
 | Symbol | Meaning |
 |---|---|
-| $A=a+ja'$, $C=c+jc'$ | elements of $\mathbb{D}$, with $a,a',c,c'\in\mathbb{R}$ |
-| $\langle A,C\rangle_{*}=A\bar C$ | the indefinite Hermitian form; diagonal $\langle A\rangle_{\natural}=a^{2}-a'^{2}$ |
-| $\langle A,C\rangle=AC$ | the plain bilinear form; diagonal $\langle A\rangle=A^{2}$ |
-| $g(A,C)=ac-a'c'$ | the polarisation of $\langle\cdot,\cdot\rangle_{\natural}$, the indefinite form preserved by the versors |
+| $Q=q+jq'$, $C=c+jc'$ | elements of $\mathbb{D}$, with $q,q',c,c'\in\mathbb{R}$ |
+| $\langle Q,C\rangle_{*}=Q\bar C$ | the indefinite Hermitian form; diagonal $\langle Q\rangle_{\natural}=q^{2}-q'^{2}$ |
+| $\langle Q,C\rangle=QC$ | the plain bilinear form; diagonal $\langle Q\rangle=Q^{2}$ |
+| $g(Q,C)=qc-q'c'$ | the polarisation of $\langle\cdot,\cdot\rangle_{\natural}$, the indefinite form preserved by the versors |
 | $\mathbb{D}^{(1)}=\{u:\langle u\rangle_{\natural}=1\}=\mathcal{H}$ | the versors, the unit hyperbola of two branches |
-| $R_{u}(A)=uA$ | the multiplication action of a versor; preserves $g$ |
+| $R_{u}(Q)=uQ$ | the multiplication action of a versor; preserves $g$ |
 | $SO(1,1)\cong\mathcal{H}$ | the versor group is the group of $\mathbb{D}$-linear form-preserving maps |
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $g$; the group $O(1,1)$, four components |
-| $A\mapsto u\bar A$, $\langle u\rangle_{\natural}=1$ | the reflection cosets of $O(1,1)$ |
+| $Q\mapsto u\bar Q$, $\langle u\rangle_{\natural}=1$ | the reflection cosets of $O(1,1)$ |
 | $\sigma(u)=u^{2}$ | the two-to-one cover $\mathbb{D}^{(1)}\to\mathbb{D}^{(1)}_{0}$; kernel $\{1,-1\}$ |
 | $\mathrm{Spin}(1,1)=\mathbb{D}^{(1)}$ | the spin group of the indefinite plane, the rotors of $\mathrm{Cl}(1,1)$ |
 | $\mathrm{Pin}_{N}$, $\mathrm{Spin}_{N}$ | the shells $\{N=\pm1\}$, $\{N=1\}$ of the indefinite form; the pin shell is strictly larger than the spin shell, which is the versor group |
 | $\mathrm{Pin}(1,1)$ | not an object of the algebra; its odd half carries the reflections |
-| $\{1,-1,j,-j\}$ | the shell of the plain algebraic norm $A^{2}$, not the versor group |
+| $\{1,-1,j,-j\}$ | the shell of the plain algebraic norm $Q^{2}$, not the versor group |
 
 ## Further Reading
 
-- *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.md`), for the indefinite form and the plain form whose shells are compared here.
-- *Split-Complex Norm and Invertibility* (`articles_maths/split-complex-norm-and-invertibility.md`), for the norm, its polarisation, the group of units, the modulus and the Clifford algebra $\mathrm{Cl}(1,1)$.
-- *Split-Complex Exponential and Lie Group Structure* (`articles_maths/split-complex-exponential-and-lie-group-structure.md`), for the exponential, the unit-norm group $\mathbb{D}^{(1)}$, its identity component and the unit group as a Lie group.
-- *Hyperbolic Rotations* (`articles_maths/hyperbolic-rotations.md`), for the unit hyperbola, the identification with $SO(1,1)$, the hyperbolic rotations, the classification of the form-preserving maps, the reflections and the four components of $O(1,1)$.
-- *The Two Metrics of the Split-Complex Numbers* (`articles_maths/the-two-metrics-of-the-split-complex-numbers.md`), for the Euclidean and indefinite metrics, the $\mathbb{D}$-linear preservers of the first and the form-preserving group of the second.
-- *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* (`articles_maths/versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.md`), for the general versor, the rotor and the two-to-one cover.
-- *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* (`articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.md`), for the Clifford group, the pin and spin groups and Cartan–Dieudonné.
+- [The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.html), for the indefinite form and the plain form whose shells are compared here.
+- [Split-Complex Norm and Invertibility](split-complex-norm-and-invertibility.html), for the norm, its polarisation, the group of units, the modulus and the Clifford algebra $\mathrm{Cl}(1,1)$.
+- [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the exponential, the unit-norm group $\mathbb{D}^{(1)}$, its identity component and the unit group as a Lie group.
+- [Hyperbolic Rotations](hyperbolic-rotations.html), for the unit hyperbola, the identification with $SO(1,1)$, the hyperbolic rotations, the classification of the form-preserving maps, the reflections and the four components of $O(1,1)$.
+- [The Two Metrics of the Split-Complex Numbers](the-two-metrics-of-the-split-complex-numbers.html), for the Euclidean and indefinite metrics, the $\mathbb{D}$-linear preservers of the first and the form-preserving group of the second.
+- [Versors, Rotors and the Sandwich Action with Signed Inner Conjugation](versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html), for the general versor, the rotor and the two-to-one cover.
+- [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the Clifford group, the pin and spin groups and Cartan–Dieudonné.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for versors, the spin group and the double cover in the low-dimensional cases, including the indefinite plane.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the classical groups and their covers.

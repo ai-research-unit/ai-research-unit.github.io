@@ -394,4 +394,4 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the Euclidean and real-time integrals side by side.
 - S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic formulation in which a complex structure must be chosen.
 - G. C. Wick, "Properties of Bethe-Salpeter Wave Functions," *Physical Review* **96** (1954) 1124–1134, for the Wick rotation and its analytic continuation.
-- *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* (`articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.md`), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.
+- [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.

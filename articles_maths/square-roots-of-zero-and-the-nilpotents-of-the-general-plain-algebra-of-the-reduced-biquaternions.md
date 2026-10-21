@@ -161,10 +161,10 @@ The two **bilinear** products split in opposite ways — the plain one has no no
 
 ## Further Reading
 
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), above this article in this category, for the four products and their diagonals.
-- *Introduction to the Algebra of the Reduced Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the algebra, its product and its structure as a direct product of two fields.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the null cone and the maximal ideals.
-- *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the idempotents and the projections.
-- *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*The Nilpotents*, for the glyph of the nilpotent of the layer.
-- *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), the non-commutative counterpart, for the two nilpotent families of the larger algebra.
-- *Dual-Numbers Zero Divisors* (`articles_maths/dual-numbers-zero-divisors.md`), for the companion with nonzero square-zero elements, the dual numbers, whose imaginary line is square-zero.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article in this category, for the four products and their diagonals.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the algebra, its product and its structure as a direct product of two fields.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the null cone and the maximal ideals.
+- [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the idempotents and the projections.
+- [Conventions in Mathematics](conventions-in-mathematics.html), §*The Nilpotents*, for the glyph of the nilpotent of the layer.
+- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), the non-commutative counterpart, for the two nilpotent families of the larger algebra.
+- [Dual-Numbers Zero Divisors](dual-numbers-zero-divisors.html), for the companion with nonzero square-zero elements, the dual numbers, whose imaginary line is square-zero.

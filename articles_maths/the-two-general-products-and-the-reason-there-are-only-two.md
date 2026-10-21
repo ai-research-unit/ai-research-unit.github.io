@@ -100,7 +100,7 @@ Each general product splits under the interchange of its slots into a symmetric 
 
 ## Further Reading
 
-- *The Two General Products of the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternioid-r-space.md`), for the two products in coordinates.
-- *The 6 Products of the Quaternioid Real Space* (`articles_maths/the-6-products-of-the-quaternioid-real-space.md`), for the split and the four halves on the coordinates.
-- *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternioid-r-space.md`), for the names and the law table.
-- *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), below this article in this category, for the first of the element theories read across the companion products.
+- [The Two General Products of the Quaternioid $\mathbb{R}$ Space](the-two-general-products-of-the-quaternioid-r-space.html), for the two products in coordinates.
+- [The 6 Products of the Quaternioid Real Space](the-6-products-of-the-quaternioid-real-space.html), for the split and the four halves on the coordinates.
+- [The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](the-algebraic-structures-over-the-quaternioid-r-space.html), for the names and the law table.
+- [Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.html), below this article in this category, for the first of the element theories read across the companion products.

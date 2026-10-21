@@ -415,13 +415,13 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for the Liénard–Wiechert field are listed in the Further Reading section of the parent article.
 
-- *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the null retarded separation sits.
-- *The Informational Sector: States, Observables and Probability* — the Hermitian subspace, the conjugation action, and the trace formula.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the gradient, the field strength, the potential and source, and the retarded solution.
-- *The Field-Strength Biquaternion and Its Invariants* — the biquaternion norm, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
-- *Radiation from Accelerated Charges in Biquaternionic Form* — the direct parent: the Liénard–Wiechert potential, the field split, and the radiated power evaluated here.
-- *The Lorentz Transformation as a Biquaternionic Rotation* — the boost rotor, its direction convention, and the open question on higher-rank tensors used in Problem 5.
-- *Exercise: Boosting a Four-Velocity and Rapidity Composition* — the convention that the rotor with $+\vec v_b$ carries the lab to the moving frame.
-- *Exercise: The Relativistic Kinematics of a Two-Body Decay* — the record of the rotor-direction ambiguity and the physical convention for the boost.
-- *Relativistic Mechanics in Biquaternionic Form* — the four-velocity and four-momentum conventions used in the rotor check.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the null retarded separation sits.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian subspace, the conjugation action, and the trace formula.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the gradient, the field strength, the potential and source, and the retarded solution.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the biquaternion norm, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
+- [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) — the direct parent: the Liénard–Wiechert potential, the field split, and the radiated power evaluated here.
+- [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the boost rotor, its direction convention, and the open question on higher-rank tensors used in Problem 5.
+- [Exercise: Boosting a Four-Velocity and Rapidity Composition](exercise-boosting-a-four-velocity-and-rapidity-composition.html) — the convention that the rotor with $+\vec v_b$ carries the lab to the moving frame.
+- [Exercise: The Relativistic Kinematics of a Two-Body Decay](exercise-the-relativistic-kinematics-of-a-two-body-decay.html) — the record of the rotor-direction ambiguity and the physical convention for the boost.
+- [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html) — the four-velocity and four-momentum conventions used in the rotor check.

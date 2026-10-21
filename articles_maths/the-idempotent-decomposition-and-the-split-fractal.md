@@ -109,8 +109,8 @@ The Peirce decomposition of a biquaternion with respect to a primitive idempoten
 
 ## Further Reading
 
-- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the idempotents, their classification and the standard pair.
-- *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the ideals and the Peirce decomposition used here.
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix model and the identification of the components with the entries.
-- *The Slices of the Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-biquaternion-julia-sets.md`), for the placement of the split fractal among the slices.
-- *The Clifford Decomposition of the Split-Biquaternion Fractals* (`articles_maths/the-clifford-decomposition-of-the-split-biquaternion-fractals.md`), for the central-idempotent contrast.
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents, their classification and the standard pair.
+- [Ideals and Peirce Decomposition of the Biquaternion Algebra](ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the ideals and the Peirce decomposition used here.
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix model and the identification of the components with the entries.
+- [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the placement of the split fractal among the slices.
+- [The Clifford Decomposition of the Split-Biquaternion Fractals](the-clifford-decomposition-of-the-split-biquaternion-fractals.html), for the central-idempotent contrast.

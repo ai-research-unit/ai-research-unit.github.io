@@ -163,7 +163,7 @@ The one-sided operators of the biquaternion algebra are the left and right multi
 
 ## Further Reading
 
-- *Two-Sided Operators on the General Quaternionic Algebra* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the product of the two factors
-- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the dagger layer
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic bilinear form and its Gram matrix
-- *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* (`articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.md`), for the general theory
+- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the product of the two factors
+- [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the dagger layer
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general quaternionic bilinear form and its Gram matrix
+- [One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation](one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.html), for the general theory

@@ -229,7 +229,7 @@ A nilpotent is a nonzero square-zero element of $\mathbb{B}$, necessarily pure w
 ## Further Reading
 
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the distinction between the nilpotent cone and the physical light cone.
-- [Roots Across the Twelve Structures](roots-across-the-twelve-structures.html), for the root sets of $0$ in the twelve products.
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the root sets of $0$ in the twelve products.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the idempotents as states and the roots of $+1$.
 - [Roots, Idempotents and Quantum Information](roots-idempotents-and-quantum-information.html), for the idempotent basis of the qubit and the stabilizer codes.
 - [The Spinor Module and Its Two Structures](the-spinor-module-and-its-two-structures.html), for the module on which the ladder acts.

@@ -346,16 +346,16 @@ The field translation current is the canonical energy–momentum, $\partial/\par
 
 ## Further Reading
 
-- *Relativistic Mechanics in Biquaternionic Form* — the action and the conserved current this article starts from.
-- *The Klein–Gordon Equation in Biquaternionic Form* — the field, its Lagrangian form, and the current the Noether derivation reproduces.
-- *The Poincaré Group and the Biquaternion Frame* — the symmetry group, and the corrected central translation phase.
-- *Exercise: Four-Momentum Conservation in a Collision* — the total four-momentum of an isolated system, and the report of the proper-time four-force defect.
-- *Exercise: The Electromagnetic Energy–Momentum Tensor* — the rank-two translation current and why one biquaternion cannot carry it.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the source conservation and the energy–momentum biquaternion $\tilde{W}$.
-- *The Field-Strength Biquaternion and Its Invariants* — the bivector representation used for the angular momentum.
-- *Angular Momentum and Spin in Biquaternionic Form* — the angular-momentum algebra and the spin operators.
-- *The Gauge Principle in Biquaternionic Form* — the localization of the central phase whose global current is derived here.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the connection forced by localizing the same symmetry.
-- *The Lorentz Transformation as a Biquaternionic Rotation* — the rotor whose conjugation carries the four-momentum between frames.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — the two sectors that house the conserved objects.
-- *Introduction to the Biquaternion Universe* — the algebra, its conjugations, and the local complex structure.
+- [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html) — the action and the conserved current this article starts from.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the field, its Lagrangian form, and the current the Noether derivation reproduces.
+- [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html) — the symmetry group, and the corrected central translation phase.
+- [Exercise: Four-Momentum Conservation in a Collision](exercise-four-momentum-conservation-in-a-collision.html) — the total four-momentum of an isolated system, and the report of the proper-time four-force defect.
+- [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) — the rank-two translation current and why one biquaternion cannot carry it.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the source conservation and the energy–momentum biquaternion $\tilde{W}$.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the bivector representation used for the angular momentum.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the angular-momentum algebra and the spin operators.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the localization of the central phase whose global current is derived here.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the connection forced by localizing the same symmetry.
+- [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the rotor whose conjugation carries the four-momentum between frames.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors that house the conserved objects.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, its conjugations, and the local complex structure.

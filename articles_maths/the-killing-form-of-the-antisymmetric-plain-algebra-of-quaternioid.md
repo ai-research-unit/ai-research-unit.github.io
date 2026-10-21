@@ -182,8 +182,8 @@ quaternionic block has no Killing form.
 
 ## Further Reading
 
-- *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the centre, the derived algebra and the structure constants.
-- *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, below this article in this category, for the adjoint representation and the derivation algebra.
-- *The Specificities of the Antisymmetric Plain Algebra*, below this article in this category, for the isolation of the block and the folded element classes.
-- *Structure of Lie Algebras*, for the Killing form, the radical, the Cartan criterion and the Casimir element.
-- *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, for the plain and the quaternion forms of the space.
+- [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the centre, the derived algebra and the structure constants.
+- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the adjoint representation and the derivation algebra.
+- [The Specificities of the Antisymmetric Plain Algebra](the-specificities-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the isolation of the block and the folded element classes.
+- [Structure of Lie Algebras](structure-of-lie-algebras.html), for the Killing form, the radical, the Cartan criterion and the Casimir element.
+- [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html), for the plain and the quaternion forms of the space.

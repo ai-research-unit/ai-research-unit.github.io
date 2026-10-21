@@ -80,5 +80,5 @@ The quaternion algebra has two remarkable real subspaces, the scalar line and th
 
 ## Further Reading
 
-- *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the definition, basis and role of the two subspaces.
-- *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), for the three additive decompositions and the polar one.
+- [Introduction to the Remarkable Subspaces of the Quaternions](introduction-to-the-remarkable-subspaces-of-the-quaternions.html), for the definition, basis and role of the two subspaces.
+- [Decompositions Along the Remarkable Subspaces of the Quaternions](decompositions-along-the-remarkable-subspaces-of-the-quaternions.html), for the three additive decompositions and the polar one.

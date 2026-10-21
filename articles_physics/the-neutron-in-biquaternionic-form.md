@@ -176,20 +176,20 @@ The neutron's composite character is not reached. The framework has no colour gr
 
 ## Further Reading
 
-- *The Electron in Biquaternionic Form* — the sibling accounting for a fundamental spin-$\tfrac12$ fermion, and the source of the tree-level $g=2$ relation used here to show that a neutral structureless Dirac field has zero magnetic moment.
-- *The Dirac Equation in Biquaternionic Form* — the biquaternion Dirac equation, its mass term, plane-wave solutions, and the mass-shell relation used throughout.
-- *Chiral Fermions in the Biquaternion Framework* — the Dirac module, the projectors, the charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$, the mass selection rule, and the real structure whose interpretation is left open here.
+- [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html) — the sibling accounting for a fundamental spin-$\tfrac12$ fermion, and the source of the tree-level $g=2$ relation used here to show that a neutral structureless Dirac field has zero magnetic moment.
+- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the biquaternion Dirac equation, its mass term, plane-wave solutions, and the mass-shell relation used throughout.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the Dirac module, the projectors, the charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$, the mass selection rule, and the real structure whose interpretation is left open here.
 
-- *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* — the many-particle space (the antisymmetric tensor algebra of the spinor module) and its operators, the construction that lets a three-fermion *state* be written while supplying no binding.
-- *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the established ceiling on the colour group, the absent confinement mechanism, and the three-way classification the composite section inherits.
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the compact gauge algebra inside $\mathbb{M}_-$ and the non-abelian machinery that stops short of colour.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector decomposition, the four-vectors, and the $ict'$ convention.
-- *The Informational Sector: States, Observables and Probability* — the Hermitian sector, the rotor action, and the trace formula.
-- *Introduction to the Biquaternion Universe* — the algebra, the two sectors, the frame constants, and the open many-particle extension on which a composite construction would depend.
-- *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the module's Lorentz action and the spinor representation on which the spin-$\tfrac12$ representation rests.
+- [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html) — the many-particle space (the antisymmetric tensor algebra of the spinor module) and its operators, the construction that lets a three-fermion *state* be written while supplying no binding.
+- [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — the established ceiling on the colour group, the absent confinement mechanism, and the three-way classification the composite section inherits.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact gauge algebra inside $\mathbb{M}_-$ and the non-abelian machinery that stops short of colour.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector decomposition, the four-vectors, and the $ict'$ convention.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector, the rotor action, and the trace formula.
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, the frame constants, and the open many-particle extension on which a composite construction would depend.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the module's Lorentz action and the spinor representation on which the spin-$\tfrac12$ representation rests.
 - *Spin-$\tfrac12$ Quantum Physics in Biquaternionic Form* — the qubit/operator dictionary and the trace formula applied to spin states.
-- *Angular Momentum and Spin in Biquaternionic Form* — the spin observables and their algebra, used here only as the generic spin structure the neutron inherits.
-- *The Spin–Statistics Theorem in Biquaternionic Form* — why the neutron, as a spin-$\tfrac12$ fermion, obeys Fermi–Dirac statistics, another generic rather than neutron-specific consequence.
-- *Canonical Quantization of the Biquaternion Dirac Field* — the equal-time anticommutators, the mode expansion, and the field's quantization, the fermionic setting in which the neutron would have to be a state.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin observables and their algebra, used here only as the generic spin structure the neutron inherits.
+- [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — why the neutron, as a spin-$\tfrac12$ fermion, obeys Fermi–Dirac statistics, another generic rather than neutron-specific consequence.
+- [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html) — the equal-time anticommutators, the mode expansion, and the field's quantization, the fermionic setting in which the neutron would have to be a state.
 - F. Gürsey, "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, and K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the neutron as the second superposition of Lanczos's doubled system and for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ under which it and the proton carry independent phases.
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the relation of the doubled Lanczos system to isospin and for the neutron construction $N=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$.

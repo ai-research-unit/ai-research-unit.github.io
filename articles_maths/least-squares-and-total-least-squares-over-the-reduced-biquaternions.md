@@ -429,14 +429,14 @@ The three approximation problems over the reduced biquaternion algebra — least
 - Sabine Van Huffel and Joos Vandewalle, *The Total Least Squares Problem: Computational Aspects and Analysis* (SIAM, 1991), for the mixed least squares and total least squares problem and its reduced algorithm.
 - Carl Eckart and Gale Young, "The approximation of one matrix by another of lower rank", *Psychometrika* **1** (1936) 211–218, for the best rank-$n$ approximation and its uniqueness under the spectral gap.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd edition (Cambridge University Press, 2013), for the adjoint, the normal equations and the polar decomposition.
-- *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), for the algebra, the idempotents and the coordinates.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the decomposition along the two idempotents.
-- *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the form $\langle\cdot\rangle_{\natural*}$ and the topological norm.
-- *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the bar, the natural sign and the star.
-- *Reduced Biquaternion Other Algebraic Element Representations* (`articles_maths/reduced-biquaternion-other-algebraic-element-representations.md`), for the array representation and the pair $(M^{+},M^{-})$.
-- *Hermitian Solutions of the Pair Matrix Equation over the Reduced Biquaternions* (`articles_maths/hermitian-solutions-of-the-pair-matrix-equation-over-the-reduced-biquaternions.md`), for the pair equation $(AXB,CXD)=(E,F)$ in the source's Hermitian set, the real representation and the signed selection used there, the half-vectorisation, and the least squares, consistency and uniqueness criteria.
-- *Reduced Biquaternion Objects and their Matrix Correspondences* (`articles_maths/reduced-biquaternion-objects-and-their-matrix-correspondences.md`), for the objects of the algebra and their matrix invariants.
-- *Reduced Biquaternion Spectral Theory* (`articles_maths/reduced-biquaternion-spectral-theory.md`), for the spectrum and the singular values of the algebra.
-- *Compact Operators* (`articles_maths/compact-operators.md`), for the singular values and the Schatten classes.
-- *Quaternion Augmented Statistics* (`articles_maths/quaternion-augmented-statistics.md`), for the least squares problem in the non-commutative quaternion statistics.
-- *Biquaternion Objects and Their Matrix Correspondences* (`articles_maths/biquaternion-objects-and-their-matrix-correspondences.md`), for the non-commutative companion of the matrix dictionary.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), for the algebra, the idempotents and the coordinates.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the decomposition along the two idempotents.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the form $\langle\cdot\rangle_{\natural*}$ and the topological norm.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the bar, the natural sign and the star.
+- [Reduced Biquaternion Other Algebraic Element Representations](reduced-biquaternion-other-algebraic-element-representations.html), for the array representation and the pair $(M^{+},M^{-})$.
+- [Hermitian Solutions of the Pair Matrix Equation over the Reduced Biquaternions](hermitian-solutions-of-the-pair-matrix-equation-over-the-reduced-biquaternions.html), for the pair equation $(AXB,CXD)=(E,F)$ in the source's Hermitian set, the real representation and the signed selection used there, the half-vectorisation, and the least squares, consistency and uniqueness criteria.
+- [Reduced Biquaternion Objects and their Matrix Correspondences](reduced-biquaternion-objects-and-their-matrix-correspondences.html), for the objects of the algebra and their matrix invariants.
+- [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum and the singular values of the algebra.
+- [Compact Operators](compact-operators.html), for the singular values and the Schatten classes.
+- [Quaternion Augmented Statistics](quaternion-augmented-statistics.html), for the least squares problem in the non-commutative quaternion statistics.
+- [Biquaternion Objects and Their Matrix Correspondences](biquaternion-objects-and-their-matrix-correspondences.html), for the non-commutative companion of the matrix dictionary.

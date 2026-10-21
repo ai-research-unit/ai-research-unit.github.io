@@ -334,13 +334,13 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 
 ## Further Reading
 
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the immediate parent; its abelian commutator identity $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ and its deferral of the Bianchi identity to this article.
-- *Non-Abelian Gauge Fields in Biquaternionic Form* — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
-- *The Gauge Principle in Biquaternionic Form* — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
-- *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ whose homogeneous part is the Bianchi identity.
-- *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
-- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial Q_\mu\,\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$, distinct from the one-sided gauge connection of this article.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
-- *The Informational Sector: States, Observables and Probability* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
-- *Conventions in the Biquaternion Universe* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the centre used throughout.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ and its deferral of the Bianchi identity to this article.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the abelian field equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ whose homogeneous part is the Bianchi identity.
+- [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial Q_\mu\,\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$, distinct from the one-sided gauge connection of this article.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector and the trace formula distinguished here from the matrix trace.
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) and [Quaternion Algebra](../articles_maths/quaternion-algebra.html) — the multiplication rule, the conjugations, and the centre used throughout.

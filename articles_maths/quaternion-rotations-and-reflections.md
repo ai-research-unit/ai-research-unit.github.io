@@ -351,7 +351,7 @@ Left and right multiplication are the operators of the regular representation, t
 
 **Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor, $\operatorname{Ad}_{\tilde q} = \operatorname{Ad}_u$, while the sandwich carries the scale, $S_{\tilde q} = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \vec q/|\vec q|$ and $\cos\frac{\theta}{2} = q_t/|\tilde q|$.
 
-**Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $\langle\tilde q\rangle_{\natural} = |\tilde q|^2$; the axis-angle identification is the polar form of *Quaternion Polar Element Representation*, where the half-angle is the angle of the unit factor.
+**Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $\langle\tilde q\rangle_{\natural} = |\tilde q|^2$; the axis-angle identification is the polar form of *Exponential Polar Decomposition of Quaternions*, where the half-angle is the angle of the unit factor.
 
 ## Reflections and the Orthogonal Group
 

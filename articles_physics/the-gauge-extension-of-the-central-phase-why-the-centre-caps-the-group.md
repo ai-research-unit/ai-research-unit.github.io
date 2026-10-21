@@ -15,7 +15,7 @@ candidate interpretations. It owns no new theorem. The centre and its triviality
 Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*; the generator is *Conventions in the Biquaternion
 Universe*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
-carries is *The Eight Derived Structures: Symmetric and Antisymmetric*; and the placement of the gauge row among the products is *The Heat Map
+carries is *The Physical Interpretation of the 12 Products*; and the placement of the gauge row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the centre is
@@ -113,7 +113,7 @@ question is being asked.
   Biquaternion Algebra as the Classical Sector*.
 - **Compactness is the discreteness of the charge.** The interpretation is that the charge carried by the central
   phase is discrete because the phase is a circle, which is the same mechanism as the compact group of the
-  gauge ceiling. Owner: *The Eight Derived Structures: Symmetric and Antisymmetric*.
+  gauge ceiling. Owner: *The Physical Interpretation of the 12 Products*.
 - **Non-centrality is non-locality's algebraic price.** The interpretation is that a local gauge symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
   the enlargement is the price it would pay to escape. Owners: *The Gauge Group Ceiling* and *Grand
@@ -143,12 +143,12 @@ does not contain.
 
 ## Further Reading
 
-- *The Centre of the Biquaternion Algebra as the Classical Sector*, for the computation of the centre, its
+- [The Centre of the Biquaternion Algebra as the Classical Sector](the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html), for the computation of the centre, its
   five characterisations and its interpretation as the classical sector.
-- *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the ceiling, the
+- [The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the ceiling, the
   Cartan decomposition and the enlargements that pass it.
-- *Conventions in the Biquaternion Universe*, for the central phase as
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the central phase as
   one generator on remarkable subspaces.
-- *The Eight Derived Structures: Symmetric and Antisymmetric*, for the compact slice and the discrete
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the compact slice and the discrete
   charge.
-- *Grand Unification and the Biquaternion Algebra Ceiling*, for the constructive interpretation of the obstruction.
+- [Grand Unification and the Biquaternion Algebra Ceiling](grand-unification-and-the-biquaternion-algebra-ceiling.html), for the constructive interpretation of the obstruction.

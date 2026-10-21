@@ -142,9 +142,9 @@ The general plain algebra of the reduced biquaternions is the disjoint union of 
 
 ## Further Reading
 
-- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the norm and the criterion.
-- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the zero-divisor set and the two lines.
-- *The Specificities of the Algebra of the Reduced Biquaternions* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the associativity and the central split that make the group.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotent lines as the minimal ideals.
-- *The Multiplication Operators of the Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the invertibility of the operators.
-- *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* (`articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.md`), for the non-abelian companion.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the norm and the criterion.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the zero-divisor set and the two lines.
+- [The Specificities of the Algebra of the Reduced Biquaternions](the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the associativity and the central split that make the group.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotent lines as the minimal ideals.
+- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility of the operators.
+- [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html), for the non-abelian companion.

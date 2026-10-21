@@ -143,13 +143,13 @@ The algebraic norm of the block is the real element $\tilde Q\star\tilde Q=\lang
 
 ## Further Reading
 
-- *Introduction to the Symmetric Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the product and the reconstruction of the general quaternionic sesquilinear product from its two halves.
-- *Introduction to the General Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the unsplit product and its square.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the antisymmetric companion and the table of the twelve operations.
-- *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the one-sided actions of the general quaternionic sesquilinear product.
-- *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ appearing as the scalar part of the algebraic norm.
-- *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), the server that owns the square-zero elements carried by the algebraic norm.
-- *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), the server that owns the idempotents carried by the algebraic norm.
-- *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic elements, of which the square-zero family is a part.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $\langle\cdot\rangle_{\natural}$.
-- *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.md`), for the closure of the remarkable subspaces under the product.
+- [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and the reconstruction of the general quaternionic sesquilinear product from its two halves.
+- [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the unsplit product and its square.
+- [The 12 Products of the Biquaternion Complex Space](the-12-products-of-the-biquaternion-complex-space.html), for the antisymmetric companion and the table of the twelve operations.
+- [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the one-sided actions of the general quaternionic sesquilinear product.
+- [The Krein Gram Matrix and the Restrictions of the Form](the-krein-gram-matrix-and-the-restrictions-of-the-form.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ appearing as the scalar part of the algebraic norm.
+- [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html), the server that owns the square-zero elements carried by the algebraic norm.
+- [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html), the server that owns the idempotents carried by the algebraic norm.
+- [The Isotropic Structure of the General Quaternionic Sesqualgebra](the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the isotropic elements, of which the square-zero family is a part.
+- [Norm and Invertibility in the General Quaternionic Algebra](norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm $\langle\cdot\rangle_{\natural}$.
+- [Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra](remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.html), for the closure of the remarkable subspaces under the product.

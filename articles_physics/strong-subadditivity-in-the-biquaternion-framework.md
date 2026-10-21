@@ -330,8 +330,8 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the convexity and monotonicity theory.
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic setting of the region statement.
 - H. Casini and M. Huerta, "A finite entanglement entropy and the c-theorem," *Physics Letters B* **600** (2004) 142–150, for the entropic monotonicity in two dimensions.
-- Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy, Klein's inequality, and the closed form.
-- Companion article *The GNS Construction in the Biquaternion Framework*, for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
-- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the capacity statement: one fermionic mode and no more.
-- Companion article *The Biquaternion Vacuum as a Minimal Idempotent*, for the minimal idempotents and the pure boundary.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian subspace and the plain form.
+- Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the relative entropy, Klein's inequality, and the closed form.
+- Companion article [The GNS Construction in the Biquaternion Framework](the-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
+- Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the capacity statement: one fermionic mode and no more.
+- Companion article [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the minimal idempotents and the pure boundary.
+- Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace and the plain form.

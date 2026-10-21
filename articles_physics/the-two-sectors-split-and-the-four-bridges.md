@@ -235,7 +235,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 - [Norm and Invertibility in the General Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.html), for the norm identity and its multiplicativity.
 - [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html) and [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html), for the products and their sector behaviour.
 - [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) and [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the sandwich and the rotors.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the interval and the Lorentz action read at length.
-- *The Informational Sector: States, Observables and Probability*, for the state space and the Born pairing.
-- *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, for the negative statement and the real-structure grading.
-- *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*, for the clock interpretation of the central imaginary.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the interval and the Lorentz action read at length.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the Born pairing.
+- [The Material-Informational Split as a Superselection Structure in Biquaternionic Form](the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html), for the negative statement and the real-structure grading.
+- [Each Sector Is the Other's Clock: the Sector Exchange as Relational Time](each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html), for the clock interpretation of the central imaginary.

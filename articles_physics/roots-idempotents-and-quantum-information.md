@@ -221,9 +221,9 @@ The Hermitian idempotents are the pure states and the Hermitian roots of $+1$ ar
 - [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html), for the order interval and its extreme points.
 - [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), for the unitary group and the matrix-unitary condition.
 - [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html), for $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$.
-- *Roots, Idempotents and Observables*, for the state-observable dictionary read at length.
-- *Contextuality and the Kochen–Specker Theorem in Biquaternionic Form*, for the magic square and the value assignments.
-- *Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form*, for the codes and the Knill–Laflamme condition.
-- *Mutually Unbiased Bases and the Biquaternion Algebra*, for the three bases and the reconstruction.
-- *Quantum Teleportation in Biquaternionic Form*, for the protocol and its channel-theoretic interpretation.
-- *The Bell Basis as the Idempotent Basis of B⊗B*, for the Bell idempotents and the partial traces.
+- [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the state-observable dictionary read at length.
+- [Contextuality and the Kochen–Specker Theorem in Biquaternionic Form](contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.html), for the magic square and the value assignments.
+- [Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form](quantum-error-correction-and-the-stabilizer-formalism-in-biquaternionic-form.html), for the codes and the Knill–Laflamme condition.
+- [Mutually Unbiased Bases and the Biquaternion Algebra](mutually-unbiased-bases-and-the-biquaternion-algebra.html), for the three bases and the reconstruction.
+- [Quantum Teleportation in Biquaternionic Form](quantum-teleportation-in-biquaternionic-form.html), for the protocol and its channel-theoretic interpretation.
+- [The Bell Basis as the Idempotent Basis of B⊗B](the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html), for the Bell idempotents and the partial traces.

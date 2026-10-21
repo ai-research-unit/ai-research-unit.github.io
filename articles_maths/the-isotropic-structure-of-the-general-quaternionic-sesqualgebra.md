@@ -126,12 +126,12 @@ The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone o
 
 ## Further Reading
 
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms and their four null sets, and for the null quadric of the general plain bilinear form with its hyperbolic planes
-- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the idempotents $\tilde\Pi_\pm(\tilde\Xi)$ and the minimal left and right ideals they generate
-- *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the same description for the general quaternionic bilinear form
-- *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`), for the complements used here
-- *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the ball whose boundary is the isotropic sphere
-- *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry.md`), for the projective geometry of the form's null cone
-- *Witt's Theorems* (`articles_maths/witts-theorems.md`), for the extension and transitivity theorems for forms
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the four forms and their four null sets, and for the null quadric of the general plain bilinear form with its hyperbolic planes
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents $\tilde\Pi_\pm(\tilde\Xi)$ and the minimal left and right ideals they generate
+- [Remarkable Subspaces and the Four General Products](remarkable-subspaces-and-the-four-general-products.html), for the same description for the general quaternionic bilinear form
+- [Krein Orthogonality and the Fundamental Decomposition](krein-orthogonality-and-the-fundamental-decomposition.html), for the complements used here
+- [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the ball whose boundary is the isotropic sphere
+- [The Null Quadric and Its Projective Geometry](the-null-quadric-and-its-projective-geometry.html), for the projective geometry of the form's null cone
+- [Witt's Theorems](witts-theorems.html), for the extension and transitivity theorems for forms
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for isotropic subspaces, the Witt index and neutrality in a Krein space

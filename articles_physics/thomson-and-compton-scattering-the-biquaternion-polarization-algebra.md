@@ -108,17 +108,17 @@ $$
 $$
 since for pure vectors $\vec\varepsilon^{*} = -\vec\varepsilon$ and $\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}\vec\varepsilon) = -\vec\varepsilon_{\mathrm{out}}\cdot\vec\varepsilon$. The amplitude's polarization dependence is therefore a single Hermitian pairing of two elements of $\mathbb{M}_-$, and the cross-section is its modulus squared, exactly as a quantum-mechanical amplitude is the modulus squared of a matrix element. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar $\varepsilon^{\mathrm{fop}}_{\mathrm{out}}\cdot\varepsilon^{\mathrm{fop}}$. And it is the **square of a projector**: summing over the two outgoing polarizations by the completeness relation gives
 $$
-\sum_{\lambda_{\mathrm{out}}}\bigl|\varepsilon^{\mathrm{fop}}\cdot\varepsilon^{\mathrm{fop}}_{\mathrm{out}}^{(\lambda_{\mathrm{out}})}\bigr|^2
+\sum_{\lambda_{\mathrm{out}}}\bigl|\varepsilon^{\mathrm{fop}}\cdot\varepsilon^{\mathrm{fop}(\lambda_{\mathrm{out}})}_{\mathrm{out}}\bigr|^2
 = 1 - \bigl(\varepsilon^{\mathrm{fop}}\cdot\vec u_{k,\mathrm{out}}\bigr)^2 = \sin^2\Xi ,
 $$
 where $\Xi$ is the angle between the incident polarization and the outgoing propagation direction; this was verified on two hundred random geometries to $10^{-15}$. For an incident beam polarized in the scattering plane, $\Xi$ is the complement of the scattering angle and the sum reproduces the familiar $\cos^2$ behaviour; for an incident beam polarized perpendicular to the plane, $\Xi = \pi/2$ and the sum is one, independent of angle — the classic statement that light scattered in the plane of its polarization vanishes at $90^\circ$.
 
 ### The helicity amplitudes
 
-The two circular amplitudes of the classical process carry the helicity information in the simplest possible form. Writing the amplitude as $\varepsilon^{\mathrm{fop}}_{\mathrm{out}}^*\cdot\varepsilon^{\mathrm{fop}}$ in the circular basis, the two independent elements are the **helicity-conserving** and **helicity-flip** amplitudes
+The two circular amplitudes of the classical process carry the helicity information in the simplest possible form. Writing the amplitude as ${\varepsilon^{\mathrm{fop}}_{\mathrm{out}}}^*\cdot\varepsilon^{\mathrm{fop}}$ in the circular basis, the two independent elements are the **helicity-conserving** and **helicity-flip** amplitudes
 $$
-M_{++} = \varepsilon^{\mathrm{fop}}_{+,\mathrm{out}}^*\cdot\varepsilon^{\mathrm{fop}}_+ , \qquad
-M_{+-} = \varepsilon^{\mathrm{fop}}_{-,\mathrm{out}}^*\cdot\varepsilon^{\mathrm{fop}}_+ ,
+M_{++} = {\varepsilon^{\mathrm{fop}}_{+,\mathrm{out}}}^*\cdot\varepsilon^{\mathrm{fop}}_+ , \qquad
+M_{+-} = {\varepsilon^{\mathrm{fop}}_{-,\mathrm{out}}}^*\cdot\varepsilon^{\mathrm{fop}}_+ ,
 $$
 and they evaluate, up to the phases of the circular basis, to
 $$

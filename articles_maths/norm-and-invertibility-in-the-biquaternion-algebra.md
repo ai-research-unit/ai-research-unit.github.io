@@ -123,10 +123,10 @@ The plain product is associative and unital, with the two-sided unit $e_t$ and a
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments, the four algebraic norms and their separation.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form $\langle\cdot,\cdot\rangle$, the table of the four forms and the complex quadric that is the vanishing set of $\langle\cdot,\cdot\rangle$.
-- *Introduction to the Biquaternion Algebra* (`articles_maths/introduction-to-the-biquaternion-algebra.md`), for the product, its associativity, its unit and its element theory.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the unit table of the four products and the fact that they do not share their units.
-- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the zero divisors, which the algebraic norm of the plain product does not detect.
-- *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), for the restriction of $\langle\cdot\rangle$ to the remarkable subspaces with its signature.
+- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](the-4-algebraic-norms-over-the-biquaternion-c-space.html), for the definition of the algebraic norm as the form at the two equal arguments, the four algebraic norms and their separation.
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the general plain bilinear form $\langle\cdot,\cdot\rangle$, the table of the four forms and the complex quadric that is the vanishing set of $\langle\cdot,\cdot\rangle$.
+- [Introduction to the Biquaternion Algebra](introduction-to-the-biquaternion-algebra.html), for the product, its associativity, its unit and its element theory.
+- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
+- [Comparison Between the Four General Products](comparison-between-the-four-general-products.html), for the unit table of the four products and the fact that they do not share their units.
+- [Zero Divisors of the Biquaternion Algebra](zero-divisors-of-the-biquaternion-algebra.html), for the zero divisors, which the algebraic norm of the plain product does not detect.
+- [Remarkable Subspaces and the Four Algebraic Norms](remarkable-subspaces-and-the-four-algebraic-norms.html), for the restriction of $\langle\cdot\rangle$ to the remarkable subspaces with its signature.

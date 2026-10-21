@@ -185,7 +185,7 @@ The biquaternion algebra carries two commuting involutive anti-automorphisms of 
 
 ## Further Reading
 
-- *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$* (`articles_maths/the-biquaternion-algebra-as-a-vector-space-over-c-and-r.md`), for the algebra, its basis and its four conjugations
-- *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable fixed spaces of the four involutions, one to a section
-- *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the relations between the remarkable fixed spaces and the lattice they form
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the matrix picture in which the extra involution is the coefficient conjugation composed with the conjugate transpose
+- [The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$](the-biquaternion-algebra-as-a-vector-space-over-c-and-r.html), for the algebra, its basis and its four conjugations
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable fixed spaces of the four involutions, one to a section
+- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between the remarkable fixed spaces and the lattice they form
+- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the matrix picture in which the extra involution is the coefficient conjugation composed with the conjugate transpose

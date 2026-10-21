@@ -74,7 +74,7 @@ $$
 
 Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^{\times})\cong\pi_n(\mathrm{U}(\mathbb{B}))$ for all $n$.
 
-**Proof.** The eigenvalues of $\tilde{Q}_{2,t}$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_{2,t}$ is positive definite and $\tilde{U}\tilde{Q}_{2,t}\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{Q}_3$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_2_0=\tilde{Q}_2$, $\tilde{Q}_2_1=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.
+**Proof.** The eigenvalues of $\tilde{Q}_{2,t}$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_{2,t}$ is positive definite and $\tilde{U}\tilde{Q}_{2,t}\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{Q}_3$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_{2,0}=\tilde{Q}_2$, $\tilde{Q}_{2,1}=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.
 
 **Corollary (connectedness).** $\mathbb{B}^{\times}$ is connected, and $\mathrm{U}(\mathbb{B})$ is connected.
 
@@ -166,10 +166,10 @@ The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e
 
 ## Further Reading
 
-- *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the bilinear-side treatment of the group of units
-- *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the ambient Euclidean structure the retractions use
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form that defines the unitary slice
-- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the Hermitian cone and the positive square root
-- *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the subgroups and the real forms
+- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the bilinear-side treatment of the group of units
+- [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the ambient Euclidean structure the retractions use
+- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](the-4-forms-over-the-biquaternion-c-space.html), for the form that defines the unitary slice
+- [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the Hermitian cone and the positive square root
+- [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the subgroups and the real forms
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd edition (Springer, 2015), for the standard facts about $\mathrm{U}(2)$, $SU(2)$ and their quotients
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the double covers of the rotation groups

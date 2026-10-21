@@ -277,9 +277,9 @@ The separating property is recovered where the theorem actually lives: on the in
 - O. Bratteli and D. W. Robinson, *Operator Algebras and Quantum Statistical Mechanics*, Vols. I–II (Springer, 1979, 1981), for cyclic and separating vectors, the GNS construction, and the modular theory.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the modular structure whose hypothesis the theorem supplies.
 - J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," *Journal of Mathematical Physics* **16** (1975) 985–1007, for the wedge modular flow as the boost.
-- Companion article *The GNS Construction in the Biquaternion Framework*, for the radical, the cyclic vector, and the dimension of the GNS space.
-- Companion article *The Biquaternion Vacuum as a Minimal Idempotent*, for the vacuum idempotent, the zero-divisor cone, and the single-mode ladder.
-- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the mode algebra and its capacity.
-- Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular operator, conjugation, and flow.
-- Companion article *The Bisognano–Wichmann Theorem under the Biquaternion Framework*, for the wedge modular flow as the boost.
-- Companion article *The Unruh Effect in Biquaternionic Form*, for the thermal interpretation of the wedge modular flow.
+- Companion article [The GNS Construction in the Biquaternion Framework](the-gns-construction-in-the-biquaternion-framework.html), for the radical, the cyclic vector, and the dimension of the GNS space.
+- Companion article [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the vacuum idempotent, the zero-divisor cone, and the single-mode ladder.
+- Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the mode algebra and its capacity.
+- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular operator, conjugation, and flow.
+- Companion article [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the wedge modular flow as the boost.
+- Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the thermal interpretation of the wedge modular flow.

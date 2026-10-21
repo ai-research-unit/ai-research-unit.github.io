@@ -181,9 +181,9 @@ For an element $\breve Q=Q_++jQ_-$ the left and the right multiplications coinci
 
 ## Further Reading
 
-- *Introduction to the Algebra of the Reduced Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the multiplication and the idempotent coordinates.
-- *The Specificities of the Algebra of the Reduced Biquaternions* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the projector calculus of the operators.
-- *The Forms of the Algebra of the Reduced Biquaternions* (`articles_maths/the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the adjoint rule and the conformal group of $\langle\cdot,\cdot\rangle$.
-- *The Group of Units of the Algebra of the Reduced Biquaternions* (`articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the invertibility criterion on the elements and the operators.
-- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the image and the kernel of the operator.
-- *The Four General Products and Operators* (`articles_maths/the-four-general-products-and-operators.md`), for the non-commutative companion with its full enveloping algebra.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the multiplication and the idempotent coordinates.
+- [The Specificities of the Algebra of the Reduced Biquaternions](the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the projector calculus of the operators.
+- [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the adjoint rule and the conformal group of $\langle\cdot,\cdot\rangle$.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility criterion on the elements and the operators.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the image and the kernel of the operator.
+- [The Four General Products and Operators](the-four-general-products-and-operators.html), for the non-commutative companion with its full enveloping algebra.
