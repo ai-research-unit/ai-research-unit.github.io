@@ -126,11 +126,11 @@ $$</p>
 $$</p>
 <p><strong>Theorem (Green's representation formula).</strong> For $w \in C^2(\overline\Omega)$ and for each $x \in \Omega$, the second Green identity in the form</p>
 <p>$$
-w(x) = \int_{\partial\Omega}\Bigl(w(y)\,\frac{\partial\Phi}{\partial\n\partial/\partial y w}(x-y) - \Phi(x-y)\,\frac{\partial w}{\partial\nu}(y)\Bigr)dS(y) + \int_\Omega \Phi(x-y)\,\Delta w(y)\,dy
+w(x) = \int_{\partial\Omega}\Bigl(w(y)\,\frac{\partial\Phi}{\partial\nu}(x-y) - \Phi(x-y)\,\frac{\partial w}{\partial\nu}(y)\Bigr)dS(y) + \int_\Omega \Phi(x-y)\,\Delta w(y)\,dy
 $$</p>
 <p>expresses $w$ in terms of its boundary values, its normal derivative and its Laplacian. If $w$ is harmonic and $H(x,y)$ is the <strong>harmonic corrector</strong> solving the Dirichlet problem $\Delta_yH=0$ with $H(x,y) = \Phi(x-y)$ for $y \in \partial\Omega$, then with the <strong>Green's function</strong> $G(x,y) = \Phi(x-y) - H(x,y)$,</p>
 <p>$$
-w(x) = -\int_{\partial\Omega}w(y)\,\frac{\partial G}{\partial\n\partial/\partial y w}(x,y)\,dS(y),
+w(x) = -\int_{\partial\Omega}w(y)\,\frac{\partial G}{\partial\nu}(x,y)\,dS(y),
 $$</p>
 <p>so a harmonic function is determined by its boundary values alone.</p>
 <p><em>Proof.</em> The second Green identity applied to $w$ and $\Phi(x-\cdot)$ on $\Omega \setminus B(x,\varepsilon)$, together with the behaviour of $\Phi$ at $x$ as $\varepsilon\to0$, gives the representation formula; the corrector has the same boundary values as $\Phi(x-\cdot)$ and is harmonic, so subtracting it removes the normal-derivative term and gives the Green formula.</p>

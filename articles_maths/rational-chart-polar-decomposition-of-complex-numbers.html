@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rational-Chart Polar Decomposition of Complex Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rational-chart-polar-decomposition-of-complex-numbers"><strong>Rational-Chart Polar Decomposition of Complex Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em> writes every nonzero complex number as</p>
+<p>$$
+Q = r\,u, \qquad r = \lvert Q\rvert > 0, \qquad N(u) = 1,
+$$</p>
+<p>with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $N(u)=1$, not by a number.</p>
+<p>This article names it. For a real number $s$ put</p>
+<p>$$
+u(s) = \frac{1-is}{1+is},
+$$</p>
+<p>and write</p>
+<p>$$
+Q = r\,u(s) = r\,\frac{1-is}{1+is}.
+$$</p>
+<p>Nothing in the decomposition changes. The number $r$ is still the modulus, the element $u = u(s)$ is still the same unit factor, and the pair $(r,u)$ is still unique. The only new object is the real number $s$, which replaces the point of the circle by a coordinate on a line.</p>
+<p>The chart is rational: $u(s)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality. As $\lvert s\rvert$ grows the unit $u(s)$ approaches $-1$ without attaining it, so the one unit factor that is missed is $-1$, the unit factor of every negative real number. The decomposition therefore holds on the plane cut along the negative real axis, and it fails on the cut.</p>
+<p>The plan is as follows. The modulus–unit form is recalled (§<em>The Modulus–Unit Form Recalled</em>), the chart and its inverse are defined (§<em>The Chart</em>, §<em>The Inverse</em>), and the chart is proved a bijection (§<em>The Bijection</em>). The decomposition is then stated and proved (§<em>The Rational-Chart Decomposition</em>), the group law in the coordinate is computed (§<em>The Group Law</em>), the covering of the circle by two charts and the cost of rationality are described (§<em>Covering the Circle and the Price of Locality</em>), and the matrix picture (§<em>The Matrix Picture</em>) and worked examples (§<em>Worked Examples</em>) close the article.</p>
+<p>The symbols are those of <em>Complex Algebra</em> and <em>Complex Norm and Invertibility</em>, and the conventions are those of <em>Conventions in Mathematics</em>. The notation is collected in §<em>Summary of Notation</em>.</p>
+<p>Every numerical value displayed below was recomputed in double precision.</p>
+<h2 id="the-unit-factor-and-its-chart">The Unit Factor and Its Chart</h2>
+<h3 id="the-modulusunit-form-recalled">The Modulus–Unit Form Recalled</h3>
+<p>For a complex number $Q$ the norm is</p>
+<p>$$
+N(Q) = Q\bar{Q} = \lvert Q\rvert^2,
+$$</p>
+<p>which is positive off the origin. The modulus is $r = \sqrt{N(Q)}$, a positive real with no sign choice, and the unit factor is</p>
+<p>$$
+u = \frac{Q}{r}, \qquad N(u) = \frac{N(Q)}{r^2} = 1.
+$$</p>
+<p>The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : N(u)=1\}$. The pair $(r,u)$ is unique: taking norms in $Q = ru$ forces $r = \sqrt{N(Q)}$, and then $u = Q/r$.</p>
+<p>This is where the modulus–unit article stops. The present article adds one object, the real number $s$, and changes nothing else.</p>
+<h3 id="the-chart">The Chart</h3>
+<p><strong>Definition.</strong> For $s \in \mathbb{R}$ the <strong>chart</strong> is</p>
+<p>$$
+u(s) = \frac{1-is}{1+is} = \frac{1-s^2}{1+s^2} - i\,\frac{2s}{1+s^2}.
+$$</p>
+<p>The real and imaginary parts are rational functions of $s$, and their squares sum to one:</p>
+<p>$$
+\left(\frac{1-s^2}{1+s^2}\right)^2 + \left(\frac{2s}{1+s^2}\right)^2
+= \frac{(1-s^2)^2+4s^2}{(1+s^2)^2}
+= \frac{(1+s^2)^2}{(1+s^2)^2} = 1.
+$$</p>
+<p>Every $u(s)$ is therefore a point of the circle. The denominator $1+is$ never vanishes.</p>
+<p>Three values fix the orientation of the chart:</p>
+<p>$$
+u(0) = 1, \qquad u(1) = \frac{1-i}{1+i} = -i, \qquad u(-1) = \frac{1+i}{1-i} = i.
+$$</p>
+<p>The chart almost covers the circle, but not quite. If $u(s) = -1$ then $1-is = -1-is$, hence $1 = -1$, which is impossible; so $-1$ is not attained. As $\lvert s\rvert$ grows without bound,</p>
+<p>$$
+u(s) = \frac{1-s^2-2is}{1+s^2} = -1 - \frac{2is}{1+s^2} + \frac{2}{1+s^2} \longrightarrow -1,
+$$</p>
+<p>so $-1$ is the limit of the chart at both ends of the line.</p>
+<p>Geometrically, the line through $-1$ and $u(s)$ meets the imaginary axis at $-is$, so the chart is the stereographic projection of the circle from $-1$ onto that axis, followed by the identification $-is \leftrightarrow s$.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p><strong>Proposition.</strong> Let $u \in \mathrm{U}(1)$ with $u \neq -1$. Then $u = u(s)$ for the real number</p>
+<p>$$
+s = i\,\frac{u-1}{u+1}.
+$$</p>
+<p><strong>Proof.</strong> Put $s = i(u-1)/(u+1)$. Since $\lvert u\rvert = 1$, one has $\bar u = u^{-1}$, hence</p>
+<p>$$
+\bar s = -i\,\frac{\bar u-1}{\bar u+1} = -i\,\frac{u^{-1}-1}{u^{-1}+1} = -i\,\frac{1-u}{1+u} = i\,\frac{u-1}{u+1} = s,
+$$</p>
+<p>so $s$ is real. Moreover</p>
+<p>$$
+1-is = 1+\frac{u-1}{u+1} = \frac{2u}{u+1}, \qquad 1+is = 1-\frac{u-1}{u+1} = \frac{2}{u+1},
+$$</p>
+<p>so $u(s) = (1-is)/(1+is) = u$.</p>
+<p>For a complex number $Q$ of modulus $r$ the unit factor is $u = Q/r$, and the coordinate is</p>
+<p>$$
+s = i\,\frac{u-1}{u+1} = i\,\frac{Q-r}{Q+r}.
+$$</p>
+<p>The second form is the one used below: it names $s$ by $Q$ alone. Its denominator vanishes exactly at $Q = -r$, the negative real axis, where the chart has no point.</p>
+<h3 id="the-bijection">The Bijection</h3>
+<p><strong>Theorem.</strong> The map $s \mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$.</p>
+<p><strong>Injectivity.</strong> Suppose $u(s_1) = u(s_2)$. Cross-multiplying,</p>
+<p>$$
+(1-is_1)(1+is_2) = (1-is_2)(1+is_1),
+$$</p>
+<p>and expanding both sides gives</p>
+<p>$$
+1+i(s_2-s_1)+s_1s_2 = 1+i(s_1-s_2)+s_1s_2.
+$$</p>
+<p>Hence $i(s_2-s_1) = i(s_1-s_2)$, that is $s_1 = s_2$.</p>
+<p><strong>Surjectivity.</strong> This is the proposition of §<em>The Inverse</em>: for every unit $u \neq -1$, the real number $s = i(u-1)/(u+1)$ satisfies $u(s) = u$.</p>
+<p>The chart is therefore one-to-one, and its image is the circle with the single point $-1$ removed.</p>
+<h2 id="the-rational-chart-decomposition">The Rational-Chart Decomposition</h2>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every complex number $Q$ outside the closed negative real axis has exactly one rational-chart polar decomposition</p>
+<p>$$
+Q = r\,\frac{1-is}{1+is}, \qquad r > 0, \quad s \in \mathbb{R}.
+$$</p>
+<p><strong>Existence.</strong> Let $Q \notin (-\infty,0]$, and put $r = \lvert Q\rvert$ and $u = Q/r$. Then $r > 0$ and $N(u) = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.</p>
+<p><strong>Uniqueness.</strong> Taking norms gives $r = \sqrt{N(Q)}$, and then $u = Q/r$; the chart is injective, so $s$ is determined by $u$.</p>
+<p>The coordinate is $s = i(Q-r)/(Q+r)$ of §<em>The Inverse</em>, and the reconstruction is exact:</p>
+<p>$$
+Q = r\,\frac{1-is}{1+is} = r\,\frac{1-s^2}{1+s^2} - i\,r\,\frac{2s}{1+s^2}.
+$$</p>
+<h3 id="the-domain">The Domain</h3>
+<p>The domain is</p>
+<p>$$
+\mathbb{C}\setminus(-\infty,0] = \{\,Q : Q \neq 0 \ \text{and} \ Q \notin \mathbb{R}_{<0}\,\},
+$$</p>
+<p>the plane cut along the closed negative real axis.</p>
+<p>The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the circle is attained exactly once. In the formula $s = i(Q-r)/(Q+r)$ the two exclusions are visible at once: the denominator vanishes at $Q = -r$, the negative real axis, and numerator and denominator both vanish at $Q = 0$, where $r = 0$ and no decomposition exists.</p>
+<h2 id="the-group-law">The Group Law</h2>
+<p>The product of two unit factors is a unit factor, and the coordinate of the product is a rational function of the two coordinates.</p>
+<p><strong>Proposition.</strong> For $s_1, s_2 \in \mathbb{R}$ with $s_1s_2 \neq 1$,</p>
+<p>$$
+u(s_1)\,u(s_2) = u(s_3), \qquad s_3 = \frac{s_1+s_2}{1-s_1s_2}.
+$$</p>
+<p><strong>Proof.</strong> Multiplying the two fractions,</p>
+<p>$$
+u(s_1)u(s_2) = \frac{(1-is_1)(1-is_2)}{(1+is_1)(1+is_2)}
+= \frac{(1-s_1s_2)-i(s_1+s_2)}{(1-s_1s_2)+i(s_1+s_2)}.
+$$</p>
+<p>Dividing numerator and denominator by $1-s_1s_2$ puts the right-hand side in the form $(1-is_3)/(1+is_3)$ with $s_3 = (s_1+s_2)/(1-s_1s_2)$, which is $u(s_3)$.</p>
+<p>The law has the identity $s = 0$, because $u(0) = 1$, and the inverse $-s$, because</p>
+<p>$$
+u(s)\,u(-s) = \frac{1-is}{1+is}\cdot\frac{1+is}{1-is} = 1.
+$$</p>
+<p>It is associative wherever it is defined, being inherited from the multiplication of the circle.</p>
+<p>When $s_1s_2 = 1$ the formula has a pole. The product is then</p>
+<p>$$
+u(s)\,u(1/s) = \frac{(1-is)(1-i/s)}{(1+is)(1+i/s)} = \frac{-i(s+1/s)}{i(s+1/s)} = -1,
+$$</p>
+<p>the missing point. The product is a perfectly good unit, but its coordinate does not exist: it has escaped to infinity. The chart is therefore a <strong>group chunk</strong>, not a global group. It is a coordinate on the line, and the line must be compactified to see the whole circle.</p>
+<h2 id="covering-the-circle-and-the-price-of-locality">Covering the Circle and the Price of Locality</h2>
+<p>The chart misses $-1$. A second chart, $v(s) = -u(s)$, misses $+1$ and supplies $-1$. On the common domain the two are related by</p>
+<p>$$
+v(s) = -u(s) = u\!\left(-\frac{1}{s}\right), \qquad s \neq 0,
+$$</p>
+<p>so the second chart is the first composed with $s \mapsto -1/s$. The two charts</p>
+<p>$$
+s \longmapsto u(s), \qquad s \longmapsto -u(s)
+$$</p>
+<p>therefore cover the circle, the first missing $-1$ and the second missing $+1$. Topologically the one-point compactification $\mathbb{R}\cup\{\infty\}$ is a circle, and the first chart extends to a homeomorphism onto $\mathrm{U}(1)$ by setting $u(\infty) = -1$.</p>
+<p>The chart has three properties, and they are the terms of an exchange.</p>
+<ul>
+<li><strong>It is rational.</strong> Both $u(s)$ and its inverse are ratios of polynomials. The decomposition is computed by field operations alone, with no transcendental function and no infinite series.</li>
+<li><strong>It is local.</strong> It misses one point of the circle, and therefore one ray of the plane. A second chart, or the point at infinity, is needed to recover the circle.</li>
+<li><strong>It is unbounded.</strong> Near the missing point the coordinate escapes to infinity, and the two sides of the cut carry opposite signs of $s$.</li>
+</ul>
+<p>The modulus–unit form is global and uses a square root. The exponential form, treated in <em>Exponential Polar Decomposition of Complex Numbers</em>, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.</p>
+<h2 id="the-matrix-picture">The Matrix Picture</h2>
+<p>In the real basis $\{1,i\}$ the unit $u(s)$ is the matrix</p>
+<p>$$
+M(s) = \frac{1-s^2}{1+s^2}\,I - \frac{2s}{1+s^2}\,J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I.
+$$</p>
+<p>It is the Cayley transform of the line $\mathbb{R}J$:</p>
+<p>$$
+M(s) = (I-sJ)(I+sJ)^{-1}.
+$$</p>
+<p>Indeed $(I+sJ)(I-sJ) = I-s^2J^2 = (1+s^2)I$, so $(I+sJ)^{-1} = (I-sJ)/(1+s^2)$ and</p>
+<p>$$
+M(s) = \frac{(I-sJ)^2}{1+s^2} = \frac{(1-s^2)I-2sJ}{1+s^2}.
+$$</p>
+<p>The determinant is one and the matrix is orthogonal:</p>
+<p>$$
+\det M(s) = \frac{(1-s^2)^2+4s^2}{(1+s^2)^2} = 1, \qquad M(s)^{\mathsf T}M(s) = I,
+$$</p>
+<p>so $M(s) \in SO(2)$. The decomposition of $Q$ reads, in matrices,</p>
+<p>$$
+M_Q = r\,(I-sJ)(I+sJ)^{-1},
+$$</p>
+<p>a rational expression in $s$ for the conformal matrix. At $s = 0$ the factor is the identity and at infinity it approaches $-I$; the point $-I$ is the missing one.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>The example $Q = 3-4i$ runs the mechanism end to end. Its modulus is $r = 5$, so its unit factor is</p>
+<p>$$
+u = \frac{Q}{r} = 0.6-0.8i.
+$$</p>
+<p>The inverse formula in $u$ gives</p>
+<p>$$
+s = i\,\frac{u-1}{u+1} = i\,\frac{-0.4-0.8i}{1.6-0.8i} = i\,(-0.5i) = \frac{1}{2},
+$$</p>
+<p>and the formula in $Q$ gives the same number. The numerator and the denominator are</p>
+<p>$$
+Q-r = -2-4i, \qquad Q+r = 8-4i,
+$$</p>
+<p>so, multiplying above and below by the conjugate $8+4i$ of the denominator,</p>
+<p>$$
+s = i\,\frac{Q-r}{Q+r} = i\,\frac{-2-4i}{8-4i} = i\,\frac{(-2-4i)(8+4i)}{(8-4i)(8+4i)} = i\,\frac{-40i}{80} = \frac{1}{2}.
+$$</p>
+<p>The reconstruction closes the loop:</p>
+<p>$$
+u\!\left(\tfrac{1}{2}\right) = \frac{1-\tfrac{i}{2}}{1+\tfrac{i}{2}} = \frac{(2-i)^2}{5} = \frac{3-4i}{5} = 0.6-0.8i, \qquad Q = 5(0.6-0.8i) = 3-4i.
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$r = \lvert Q\rvert$</th>
+<th>$s = i(Q-r)/(Q+r)$</th>
+<th>$u$</th>
+<th>reconstruction error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$5i$</td>
+<td>$5$</td>
+<td>$-1$</td>
+<td>$i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-5i$</td>
+<td>$5$</td>
+<td>$1$</td>
+<td>$-i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$1+i$</td>
+<td>$\sqrt{2}$</td>
+<td>$-(\sqrt{2}-1) = -0.4142135623730951$</td>
+<td>$(1+i)/\sqrt{2}$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$3-4i$</td>
+<td>$5$</td>
+<td>$0.5$</td>
+<td>$0.6-0.8i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$3+4i$</td>
+<td>$5$</td>
+<td>$-0.5$</td>
+<td>$0.6+0.8i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-3+4i$</td>
+<td>$5$</td>
+<td>$-2$</td>
+<td>$-0.6+0.8i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-2-i$</td>
+<td>$\sqrt{5} = 2.23606797749979$</td>
+<td>$\sqrt{5}+2 = 4.23606797749979$</td>
+<td>$(-2-i)/\sqrt{5}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-3$</td>
+<td>$3$</td>
+<td>—</td>
+<td>$-1$</td>
+<td>excluded</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table separates four kinds of element. The real positive line, $2$, has $s = 0$ and unit factor $1$. The imaginary axis, $5i$ and $-5i$, has $s = \mp1$ and unit factors $\pm i$. The elements off the axes have coordinates of both signs; the ones with negative real part, $-3+4i$ and $-2-i$, lie outside $[-1,1]$, and $\lvert s\rvert$ grows as the element approaches the negative real axis. The last line is that axis itself: its unit factor is the missing point $-1$, and its coordinate is infinite.</p>
+<p>On the two sides of the cut the chart distinguishes the approaches:</p>
+<p>$$
+u(10^9) \approx -1-2\times10^{-9}i, \qquad u(-10^9) \approx -1+2\times10^{-9}i.
+$$</p>
+<p>The cut corresponds to the single unit factor $-1$, which neither side attains.</p>
+<h2 id="summary">Summary</h2>
+<p>Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = r(1-is)/(1+is)$, with $r = \lvert Q\rvert > 0$ and $s = i(Q-r)/(Q+r) \in \mathbb{R}$. It is the modulus–unit decomposition of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.</p>
+<p>The chart $s \mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$. It is the stereographic projection from $-1$ onto the imaginary axis, read in the coordinate $s$ of the point $-is$. It is rational in both directions, and it sends $0$ to $1$ and $\pm1$ to $\mp i$.</p>
+<p>The group law is $s_1*s_2 = (s_1+s_2)/(1-s_1s_2)$, with identity $0$ and inverse $-s$; it has a pole at $s_1s_2 = 1$, where the product is the missing point $-1$ and the coordinate escapes to infinity. The chart is a group chunk. A second chart, $v(s) = -u(s)$, misses $+1$ and supplies $-1$, and the two cover the circle.</p>
+<p>In the matrix picture the decomposition is $M_Q = r(I-sJ)(I+sJ)^{-1}$, the Cayley transform of the line $sJ$ onto $SO(2)$ minus $-I$. The price of rationality is locality: one point of the circle, and one ray of the plane, are not covered.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>the complex algebra, basis $1$, $i$, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>a complex number outside the closed negative real axis</td>
+</tr>
+<tr>
+<td>$N(Q) = Q\bar{Q} = \lvert Q\rvert^2$</td>
+<td>the norm, positive definite</td>
+</tr>
+<tr>
+<td>$r = \lvert Q\rvert$</td>
+<td>the modulus, a positive real</td>
+</tr>
+<tr>
+<td>$u$</td>
+<td>the unit factor, $N(u) = 1$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>the real chart parameter of the unit factor</td>
+</tr>
+<tr>
+<td>$u(s) = (1-is)/(1+is)$</td>
+<td>the chart, the unit of parameter $s$</td>
+</tr>
+<tr>
+<td>$s = i(Q-r)/(Q+r)$</td>
+<td>the coordinate of $Q$, a real number</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)$</td>
+<td>the unit circle, a compact group</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the complex structure, multiplication by $i$, $J^2 = -I$</td>
+</tr>
+<tr>
+<td>$M(s) = (I-sJ)(I+sJ)^{-1}$</td>
+<td>the matrix of $u(s)$, the Cayley transform on $SO(2)$</td>
+</tr>
+<tr>
+<td>$SO(2)$</td>
+<td>the special orthogonal group of the plane</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tristan Needham, <em>Visual Complex Analysis</em> (Oxford University Press, 1997), for stereographic projection, the Riemann sphere and the Möbius transformations of the circle.</li>
+<li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983), for Möbius transformations, the Cayley transform and the action on the circle.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the Cayley transform of a matrix and its relation to the orthogonal group.</li>
+<li>John B. Conway, <em>Functions of One Complex Variable</em> (Springer, 2nd edition 1978), for Möbius transformations and the extended plane.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

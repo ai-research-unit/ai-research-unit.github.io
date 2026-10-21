@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rational-Chart Polar Decomposition of Split-Complex Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rational-chart-polar-decomposition-of-split-complex-numbers"><strong>Rational-Chart Polar Decomposition of Split-Complex Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> writes every split-complex number of nonzero norm as</p>
+<p>$$
+Q = r\,u, \qquad r = \sqrt{\lvert N(Q)\rvert} > 0, \qquad \lvert N(u)\rvert = 1,
+$$</p>
+<p>with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit set $\{N=1\}\cup\{N=-1\}$, the union of two hyperbolas. It chooses no coordinate on the hyperbola: the unit factor is named by the equation $\lvert N(u)\rvert=1$, not by a number.</p>
+<p>This article names it. For a real number $s$ put</p>
+<p>$$
+u(s) = \frac{1-sj}{1+sj},
+$$</p>
+<p>and write</p>
+<p>$$
+Q = r\,\epsilon\,u(s) = r\,\epsilon\,\frac{1-sj}{1+sj}, \qquad \epsilon\in\{1,\pm j\},
+$$</p>
+<p>with $s\neq\pm1$. The decomposition is the same one; only the name of the unit factor changes. The number $r$ is still the modulus, the product $\epsilon u(s)$ is still the same unit factor, of norm $\operatorname{sign}N(Q)$, and the pair $(r,\epsilon u(s))$ is still unique. The only new object is the real number $s$, which replaces the point of the hyperbola by a coordinate on a line. The factor $\epsilon$ is not new either: it is the component label fixed by the modulus–unit article, and it is needed because the chart is a coordinate on the hyperbola $N=1$ alone.</p>
+<p>The chart is rational: $u(s)$ and its inverse are ratios of polynomials. The price is locality, and it is higher than in the complex case. The parametrisation has two poles, at $s=\pm1$, where the denominator $1-s^2$ vanishes; they are the two null directions, the points at infinity of the hyperbola. As $\lvert s\rvert$ grows, $u(s)$ approaches $-1$ without attaining it, so the one unit factor missed on $N=1$ is $-1$, the unit factor of every negative real number. The timelike decomposition therefore holds on the plane cut along the negative real axis. In the spacelike region the discrete factor $j$ or $-j$ moves the chart to the hyperbola $N=-1$; each fixed sign misses a single ray, $Q=-rj$ for $j$ and $Q=rj$ for $-j$, and the two signs together cover the spacelike region without a cut.</p>
+<p>The plan is as follows. The modulus–unit form and the four components are recalled (§<em>The Modulus–Unit Form Recalled</em>). The chart, its inverse and its bijection property are established (§<em>The Chart</em>, §<em>The Inverse</em>, §<em>The Bijection</em>). The decomposition is stated in the two regimes and its exact domain is described (§<em>The Rational-Chart Decomposition</em>, §<em>The Domain</em>). The group law and its pole are derived (§<em>The Group Law</em>). The second chart, the projective picture and the cost of rationality are given (§<em>Covering the Unit Set and the Price of Locality</em>). The Cayley matrix is computed (§<em>The Matrix Picture</em>), and examples are worked (§<em>Worked Examples</em>).</p>
+<p>The notation is that of <em>Split-Complex Algebra</em>, <em>Split-Complex Norm and Invertibility</em> and <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em>, and it is collected in §<em>Summary of Notation</em>.</p>
+<p>Every numerical value displayed below was recomputed in double precision.</p>
+<h2 id="the-unit-factor-and-its-chart">The Unit Factor and Its Chart</h2>
+<h3 id="the-modulusunit-form-recalled">The Modulus–Unit Form Recalled</h3>
+<p>Let $Q = q+jq'$ with $q,q'\in\mathbb{R}$ and norm $N(Q)=q^2-q'^2$. On the invertible set $N(Q)\neq0$ the modulus and unit factor are</p>
+<p>$$
+r = \sqrt{\lvert N(Q)\rvert} > 0, \qquad u = \frac{Q}{r}, \qquad N(u) = \operatorname{sign}N(Q)\in\{\pm1\}.
+$$</p>
+<p>The pair $(r,u)$ is unique, and the decomposition is $Q=ru$. The modulus is positive in both regimes; the sign of the norm is carried by the unit factor. The null cone $N=0$ is excluded, and the modulus vanishes there.</p>
+<p>The unit set $\{\lvert N\rvert=1\}$ has four components. Every unit can be written as</p>
+<p>$$
+u = \epsilon\exp(\phi j), \qquad \epsilon\in\{\pm1,\pm j\}, \quad \phi\in\mathbb{R},
+$$</p>
+<p>with $\epsilon$ the component label. The four labels and the signs of the coordinates are listed in the following table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>component</th>
+<th>$\epsilon$</th>
+<th>$N(u)$</th>
+<th>$\operatorname{sign}q$</th>
+<th>$\operatorname{sign}q'$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>identity</td>
+<td>$1$</td>
+<td>$+1$</td>
+<td>$+$</td>
+<td>either</td>
+</tr>
+<tr>
+<td>opposite</td>
+<td>$-1$</td>
+<td>$+1$</td>
+<td>$-$</td>
+<td>either</td>
+</tr>
+<tr>
+<td>upper spacelike</td>
+<td>$j$</td>
+<td>$-1$</td>
+<td>either</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>lower spacelike</td>
+<td>$-j$</td>
+<td>$-1$</td>
+<td>either</td>
+<td>$-$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The chart $u(s)$ lies on the hyperbola $N=1$. It covers the two timelike components, with the point $-1$ omitted. The spacelike components are reached by multiplying the positive branch of the chart by $j$ or $-j$, which changes the norm to $-1$. This is why the discrete factor is not optional in the rational decomposition: the chart alone never leaves the timelike hyperbola.</p>
+<h3 id="the-chart">The Chart</h3>
+<p>For real $s\neq\pm1$ define</p>
+<p>$$
+u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}\,j .
+$$</p>
+<p>The element $1+sj$ has norm $1-s^2$, so it is invertible exactly when $s\neq\pm1$; the displayed form has the real denominator $1-s^2$, which vanishes at $s=\pm1$. The norm is constant on the chart:</p>
+<p>$$
+N(u(s)) = \frac{N(1-sj)}{N(1+sj)} = \frac{1-s^2}{1-s^2} = 1.
+$$</p>
+<p>The chart is rational, defined over $\mathbb{Q}$, and it uses no hyperbolic function. Its values at small integers and fractions are as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$s$</th>
+<th>$u(s)$</th>
+<th>$N(u(s))$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1/3$</td>
+<td>$5/4-3j/4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$-1/3$</td>
+<td>$5/4+3j/4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1/2$</td>
+<td>$5/3-4j/3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$-5/3+4j/3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$-2$</td>
+<td>$-5/3-4j/3$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity $u(0)=1$ is the identity of the chart. The chart is not periodic: $u(s)$ is injective on its domain, as proved in §<em>The Bijection</em>. The parameter $s$ is a rational coordinate, not an angle.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p>Let $u=x+yj$ be a unit of norm $1$. The inverse of the chart is</p>
+<p>$$
+s = -\frac{j(u-1)}{u+1} = \frac{j(1-u)}{u+1},
+$$</p>
+<p>defined for $u\neq-1$. Since $N(u)=1$, the conjugate is the inverse, $\bar u=u^{-1}$, and the conjugate of $s$ is</p>
+<p>$$
+\bar s = \frac{j(\bar u-1)}{\bar u+1} = \frac{j(u^{-1}-1)}{u^{-1}+1} = \frac{j(1-u)}{1+u} = s,
+$$</p>
+<p>so $s$ is real. In coordinates the inverse is the single rational expression</p>
+<p>$$
+s = -\frac{y}{1+x}, \qquad u = x+yj, \quad x^2-y^2=1, \quad x\neq-1.
+$$</p>
+<p>Indeed, multiplying $u(s)$ out gives $x=(1+s^2)/(1-s^2)$ and $y=-2s/(1-s^2)$, and then</p>
+<p>$$
+-\frac{y}{1+x} = \frac{2s/(1-s^2)}{1+(1+s^2)/(1-s^2)} = \frac{2s}{2} = s.
+$$</p>
+<p>For a general timelike element $Q$ the inverse reads</p>
+<p>$$
+s = -\frac{q'}{r+q}, \qquad r = \sqrt{q^2-q'^2},
+$$</p>
+<p>because $u=Q/r$ has coordinates $(q/r,q'/r)$. The denominator $r+q$ vanishes exactly when $q=-r$ and $q'=0$, that is on the negative real axis.</p>
+<h3 id="the-bijection">The Bijection</h3>
+<p><strong>Theorem.</strong> The map $u : \mathbb{R}\setminus\{\pm1\}\to\{N=1\}\setminus\{-1\}$ is a bijection.</p>
+<p><strong>Injectivity.</strong> Suppose $u(s_1)=u(s_2)$. Cross multiplication gives</p>
+<p>$$
+(1-s_1j)(1+s_2j) = (1-s_2j)(1+s_1j).
+$$</p>
+<p>Expanding and using $j^2=1$,</p>
+<p>$$
+1-s_1s_2+(s_2-s_1)j = 1-s_1s_2+(s_1-s_2)j,
+$$</p>
+<p>so $s_1=s_2$. The denominators are nonzero because $s_1,s_2\neq\pm1$.</p>
+<p><strong>Surjectivity.</strong> Let $u=x+yj$ with $N(u)=1$ and $u\neq-1$. Set $s=-y/(1+x)$. The computation of §<em>The Inverse</em> gives $u(s)=u$, so every point of $\{N=1\}\setminus\{-1\}$ is attained.</p>
+<p>The image omits exactly $u=-1$: the equation $u(s)=-1$ would give $1-sj = -(1+sj)$, hence $1=-1$. The point $-1$ is the vertex of the negative branch, and it is the one point of the timelike hyperbola that the finite chart does not reach. As $s\to\pm\infty$, $u(s)\to-1$, so the missing point is the image of the point at infinity of the parameter line.</p>
+<p>The two poles $s=\pm1$ are not values of the chart. Their one-sided limits are the two null directions, the points at infinity of the hyperbola:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>limit</th>
+<th>$x$</th>
+<th>$y$</th>
+<th>direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$s\to-1^-$</td>
+<td>$-\infty$</td>
+<td>$-\infty$</td>
+<td>$1+j$</td>
+</tr>
+<tr>
+<td>$s\to-1^+$</td>
+<td>$+\infty$</td>
+<td>$+\infty$</td>
+<td>$1+j$</td>
+</tr>
+<tr>
+<td>$s\to1^-$</td>
+<td>$+\infty$</td>
+<td>$-\infty$</td>
+<td>$1-j$</td>
+</tr>
+<tr>
+<td>$s\to1^+$</td>
+<td>$-\infty$</td>
+<td>$+\infty$</td>
+<td>$1-j$</td>
+</tr>
+<tr>
+<td>$s\to\pm\infty$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three intervals $(-\infty,-1)$, $(-1,1)$ and $(1,\infty)$ map to the three open pieces of the affine hyperbola: the two halves of the negative branch and the positive branch. The negative branch is split at $-1$, which is reached only at infinity. In the complex case the rational chart has one pole, at infinity, and misses $-1$; here the indefinite metric produces two poles, at $\pm1$, and the parameter line has three intervals.</p>
+<h2 id="the-rational-chart-decomposition">The Rational-Chart Decomposition</h2>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every split-complex number $Q$ with $N(Q)\neq0$ and $Q$ not on the negative real axis has a unique decomposition</p>
+<p>$$
+Q = r\,\epsilon\,u(s), \qquad r>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\},
+$$</p>
+<p>with $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The decomposition is defined exactly on $\{N\neq0\}\setminus\mathbb{R}_{<0}$.</p>
+<p><strong>Timelike regime.</strong> Let $N(Q)>0$. Put $r=\sqrt{N(Q)}$ and $u=Q/r$, so $N(u)=1$. If $u\neq-1$, let $s$ be the inverse of §<em>The Inverse</em> and write</p>
+<p>$$
+Q = r\,u(s), \qquad s = -\frac{q'}{r+q} \in \mathbb{R}\setminus\{\pm1\}.
+$$</p>
+<p>The decomposition is unique: $r$ is forced by the modulus, $u$ by $Q/r$, and $s$ by the inverse chart. The condition $u\neq-1$ is exactly $Q\neq-r$, the negative real axis. On that axis the unit factor is $-1$, the missing point, and no finite $s$ exists. As $s\to\pm\infty$ the element $r u(s)$ tends to $-r$, so the cut is the point at infinity of the chart.</p>
+<p>The two timelike components are distinguished by the sign of $q$. For $q>0$ the parameter lies in $(-1,1)$; for $q<0$ it lies in $(-\infty,-1)\cup(1,\infty)$. The chart covers both components, but the negative branch is cut at its vertex.</p>
+<p><strong>Spacelike regime.</strong> Let $N(Q)<0$. Put $r=\sqrt{-N(Q)}$ and choose the discrete factor according to the sign of $q'$:</p>
+<p>$$
+\epsilon = \begin{cases} j, & q'>0,\\ -j, & q'<0. \end{cases}
+$$</p>
+<p>Then $u=\epsilon Q/r$ has norm $1$, and $u\neq-1$. Define $s$ by the inverse chart and write</p>
+<p>$$
+Q = r\,\epsilon\,u(s).
+$$</p>
+<p>The factor $j$ maps the chart to the upper spacelike component and the factor $-j$ to the lower one. Both factors give norm $-1$, because $N(j)=-1$. The parameter $s$ lies in $(-1,1)$ in both cases, since $u$ has positive real part. The spacelike region has no cut: each of its two components is covered by one chart and one discrete factor.</p>
+<p>If one insists on the single factor $j$ for all spacelike elements, the ray $Q=-rj$ is missed: it corresponds to $u=-1$, the point missing from the chart, and it is reached by the factor $-j$ with $u=1$. This is the spacelike analogue of the missing point $-1$ in the timelike regime.</p>
+<p>The two regimes prove the theorem: the timelike case fixes $\epsilon=1$, the spacelike case fixes $\epsilon=\pm j$, and in both the modulus and the chart parameter are unique.</p>
+<h3 id="the-domain">The Domain</h3>
+<p>The domain is</p>
+<p>$$
+\{N\neq0\}\setminus\mathbb{R}_{<0},
+$$</p>
+<p>the invertible set with the negative real axis removed.</p>
+<p>The components and the parameter ranges are collected in the following table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>component</th>
+<th>condition</th>
+<th>$\epsilon$</th>
+<th>range of $s$</th>
+<th>excluded</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timelike future</td>
+<td>$N>0$, $q>0$</td>
+<td>$1$</td>
+<td>$(-1,1)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>timelike past</td>
+<td>$N>0$, $q<0$</td>
+<td>$1$</td>
+<td>$(-\infty,-1)\cup(1,\infty)$</td>
+<td>$Q=-r$</td>
+</tr>
+<tr>
+<td>spacelike upper</td>
+<td>$N<0$, $q'>0$</td>
+<td>$j$</td>
+<td>$(-1,1)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>spacelike lower</td>
+<td>$N<0$, $q'<0$</td>
+<td>$-j$</td>
+<td>$(-1,1)$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The null cone is excluded, and the negative real axis is excluded in the timelike regime. The negative real axis is the only cut of the decomposition. The spacelike rays are not cut because the two signs of $j$ are both available; the timelike hyperbola has only one chart, and its vertex $-1$ is the price of the rational parametrisation.</p>
+<h2 id="the-group-law">The Group Law</h2>
+<p>The chart carries a rational group law. For $s_1,s_2\in\mathbb{R}\setminus\{\pm1\}$ with $1+s_1s_2\neq0$,</p>
+<p>$$
+u(s_1)u(s_2) = \frac{(1-s_1j)(1-s_2j)}{(1+s_1j)(1+s_2j)} = \frac{1+s_1s_2-(s_1+s_2)j}{1+s_1s_2+(s_1+s_2)j} = u(s_3),
+$$</p>
+<p>where</p>
+<p>$$
+s_3 = \frac{s_1+s_2}{1+s_1s_2}.
+$$</p>
+<p>The identity is $s=0$, because $u(0)=1$, and the inverse is $s\mapsto-s$, because $u(s)u(-s)=1$. The law is the hyperbolic addition formula, transported from the exponential coordinate by $s=-\tanh(\phi/2)$ on the identity component.</p>
+<p>The pole occurs when $1+s_1s_2=0$, that is $s_1s_2=-1$. At that parameter value the product is</p>
+<p>$$
+u(s)u(-1/s) = -1,
+$$</p>
+<p>the missing point. The product of two elements of the chart can therefore leave the chart; the group law is a <strong>group chunk</strong>, not a global law on $\mathbb{R}\setminus\{\pm1\}$. In the full group the sign factor multiplies separately,</p>
+<p>$$
+(\epsilon_1,s_1)(\epsilon_2,s_2) = (\epsilon_1\epsilon_2,\ s_1*s_2),
+$$</p>
+<p>whenever $s_1*s_2$ is defined, with $\epsilon_1\epsilon_2$ in the four-element group $\{\pm1,\pm j\}$.</p>
+<p>The following table records the elementary laws and two products.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>expression</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u(0)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$u(s)^{-1}$</td>
+<td>$u(-s)$</td>
+</tr>
+<tr>
+<td>$u(s_1)u(s_2)$</td>
+<td>$u\bigl((s_1+s_2)/(1+s_1s_2)\bigr)$</td>
+</tr>
+<tr>
+<td>$u(1/2)u(1/3)$</td>
+<td>$u(5/7)$</td>
+</tr>
+<tr>
+<td>$u(2)u(3)$</td>
+<td>$u(5/7)$</td>
+</tr>
+<tr>
+<td>$u(2)u(-1/2)$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two products $u(1/2)u(1/3)$ and $u(2)u(3)$ both equal $u(5/7)$; the chart law is not injective in the pair, only in the result. The product $u(2)u(-1/2)$ is the pole: $2\cdot(-1/2)=-1$, and the result is the missing point. In the full group, multiplying by a sign factor moves the product to another component, and the parameter law is unchanged.</p>
+<h2 id="covering-the-unit-set-and-the-price-of-locality">Covering the Unit Set and the Price of Locality</h2>
+<p>The chart $u(s)$ misses $-1$ and has poles at $\pm1$. A second chart</p>
+<p>$$
+v(s) = -u(s), \qquad s\neq\pm1,
+$$</p>
+<p>misses $+1$ and has the same two poles; for $s\neq0$ it equals $u(1/s)$. At $s=0$ it takes the value $-1$, the point missed by $u$. The two charts cover the hyperbola $N=1$:</p>
+<p>$$
+\{N=1\} = u(\mathbb{R}\setminus\{\pm1\}) \cup v(\mathbb{R}\setminus\{\pm1\}).
+$$</p>
+<p>For the negative hyperbola $N=-1$ one multiplies by $j$ and $-j$. The four charts $u$, $v$, $ju$ and $jv$ cover the four components of the unit set.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>chart</th>
+<th>norm</th>
+<th>missing point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u(s)$</td>
+<td>$+1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$v(s)=-u(s)$</td>
+<td>$+1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$ju(s)$</td>
+<td>$-1$</td>
+<td>$-j$</td>
+</tr>
+<tr>
+<td>$jv(s)=-ju(s)$</td>
+<td>$-1$</td>
+<td>$+j$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The projective picture explains the count. The parameter line with its point at infinity is the projective line $\mathbb{P}^1(\mathbb{R})$, a circle. The map $u$ extends to a homeomorphism from $\mathbb{P}^1(\mathbb{R})$ onto the projective conic</p>
+<p>$$
+\mathcal{Q} : X^2-Y^2=Z^2
+$$</p>
+<p>in the projective plane, with $u(\infty)=-1$ and $u(\pm1)$ the two points at infinity of the affine hyperbola. The affine chart $\mathbb{R}\setminus\{\pm1\}$ is $\mathbb{P}^1$ minus the two poles and the point at infinity, and its image is the affine hyperbola minus $-1$. The two poles are the two null directions; the missing point is the vertex of the negative branch.</p>
+<p>In the complex case the projective conic is an ellipse and has no real points at infinity. The rational chart has one pole, at infinity, and misses one point, $-1$. In the split case the conic is a hyperbola, it has two real points at infinity, and the chart has two poles. The extra pole is the geometric difference between the circle and the hyperbola.</p>
+<p>The chart has three properties, and they are the terms of an exchange.</p>
+<ul>
+<li><strong>It is rational.</strong> Both $u(s)$ and its inverse are ratios of polynomials. The decomposition is computed by field operations alone, with no hyperbolic function and no infinite series.</li>
+<li><strong>It is local.</strong> It misses one point of the hyperbola, and therefore one ray of the plane. A second chart, or the point at infinity, is needed to recover the hyperbola.</li>
+<li><strong>It is unbounded.</strong> Near the missing point the coordinate escapes to infinity, and the two sides of the cut carry parameters of opposite sign.</li>
+</ul>
+<p>The modulus–unit form is global and uses a square root. The exponential form, treated in <em>Exponential Polar Decomposition of Split-Complex Numbers</em>, is global with a discrete factor and uses a transcendental function. The present form is the one that stays rational, and locality is its price.</p>
+<p>The complex rational chart is a single chart on the circle, with one pole at infinity and one missing point. The split chart has two poles, at $\pm1$, because the projective conic is a hyperbola with two real points at infinity. It misses one point, $-1$, because the affine chart is one chart on a hyperbola. The decomposition needs the discrete factor $\epsilon$ because the unit set has four components, whereas the complex unit group is connected. The matrix picture departs in the same way: the complex Cayley matrix is orthogonal, a rotation, while the split Cayley matrix is symmetric and not orthogonal, a Lorentz transformation of the indefinite plane. The algebraic unit factor and the Euclidean matrix polar factor therefore differ, and the Euclidean polar decomposition is read separately.</p>
+<h2 id="the-matrix-picture">The Matrix Picture</h2>
+<p>Let</p>
+<p>$$
+K = \begin{pmatrix}0&1\\1&0\end{pmatrix}, \qquad K^2=I,
+$$</p>
+<p>and define the Cayley matrix</p>
+<p>$$
+M(s) = (I-sK)(I+sK)^{-1} = \frac{(1+s^2)I-2sK}{1-s^2} = \begin{pmatrix} x & y\\ y & x\end{pmatrix},
+$$</p>
+<p>with $x=(1+s^2)/(1-s^2)$ and $y=-2s/(1-s^2)$. The matrix is exactly the matrix of multiplication by $u(s)$; its determinant is $N(u(s))=1$. It is symmetric, and it preserves the indefinite form $x^2-y^2$:</p>
+<p>$$
+M(s)^{\mathsf T}\begin{pmatrix}1&0\\0&-1\end{pmatrix}M(s) = \begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$</p>
+<p>The eigenvalues are $(1-s)/(1+s)$ and $(1+s)/(1-s)$. For $\lvert s\rvert<1$ both are positive and $M(s)$ lies in the identity component of $SO(1,1)$; for $\lvert s\rvert>1$ both are negative and $M(s)$ lies in the other component. As $s\to\pm\infty$, $M(s)\to-I$, the missing point of the chart. The image is $SO(1,1)\setminus\{-I\}$.</p>
+<p>The matrix $M(s)$ is <strong>not orthogonal</strong> for $s\neq0$. For $\lvert s\rvert<1$ it is symmetric positive definite, with eigenvalues $(1-s)/(1+s)$ and $(1+s)/(1-s)$; for $\lvert s\rvert>1$ it is symmetric negative definite. In neither case is $M(s)^{\mathsf T}M(s)=I$ except at $s=0$. The algebraic unit factor and the Euclidean matrix polar factor therefore differ. The Euclidean polar decomposition of $M(s)$ is $(M(s),I)$ for $\lvert s\rvert<1$ and $(-M(s),-I)$ for $\lvert s\rvert>1$.</p>
+<p>This is the point at which the complex template must not be copied. In the complex case the Cayley matrix is a rotation, $M(s)\in SO(2)$, and it is orthogonal; the algebraic chart and the matrix polar chart coincide. In the split case the Cayley matrix is a symmetric Lorentz transformation, not an orthogonal one. It preserves the indefinite form, not the Euclidean one, and its Euclidean polar factor is a sign $\pm I$; the negative-norm matrices $K M(s)$ have a reflection instead, as described in <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em>, §<em>The Matrix Polar Decomposition</em>.</p>
+<p>The matrix of a general element is $M_Q=rM(\epsilon)M(s)$, with $M(\epsilon)\in\{I,-I,K,-K\}$. The determinant is $N(Q)=r^2N(\epsilon)$, positive in the timelike regime and negative in the spacelike one. The Cayley chart is thus a rational chart on the algebraic unit factor, not on the orthogonal factor.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-generic-split-complex-number">A Generic Split-Complex Number</h3>
+<p>Take $Q=5+3j$. Then $N(Q)=16$, $r=4$, and $u=1.25+0.75j$. The inverse chart gives</p>
+<p>$$
+s = -\frac{q'}{r+q} = -\frac{3}{4+5} = -\frac13.
+$$</p>
+<p>The reconstruction is</p>
+<p>$$
+4\,u(-1/3) = 4\left(\frac54+\frac34 j\right) = 5+3j.
+$$</p>
+<p>The Cayley matrix is</p>
+<p>$$
+M(-1/3) = \begin{pmatrix}5/4&3/4\\3/4&5/4\end{pmatrix},
+$$</p>
+<p>with eigenvalues $2$ and $1/2$, both positive. The parameter lies in $(-1,1)$, as it must for the positive branch.</p>
+<h3 id="the-spacelike-components">The Spacelike Components</h3>
+<p>Take $Q=1+2j$. Then $N(Q)=-3$, $r=\sqrt3$, and $q'>0$, so $\epsilon=j$. The unit factor is</p>
+<p>$$
+u = \frac{jQ}{r} = \frac{2+j}{\sqrt3} = \frac{2}{\sqrt3}+\frac{1}{\sqrt3}j,
+$$</p>
+<p>The inverse chart applies to $u$, whose coordinates are $(2/\sqrt3,1/\sqrt3)$:</p>
+<p>$$
+s = -\frac{1/\sqrt3}{1+2/\sqrt3} = -\frac{1}{2+\sqrt3} = -2+\sqrt3 = -0.2679491924.
+$$</p>
+<p>The last equality uses $1/(2+\sqrt3)=2-\sqrt3$. The reconstruction is</p>
+<p>$$
+\sqrt3\,j\,u(s) = 1+2j.
+$$</p>
+<p>For $Q=-1-2j$ the factor is $-j$ and the same $u$ and $s$ occur; for $Q=-1+2j$ the factor is $j$ and $s=2-\sqrt3$; for $Q=1-2j$ the factor is $-j$ and $s=2-\sqrt3$. The four spacelike elements $\pm1\pm2j$ are covered by the two signs of $j$ and the two signs of $s$.</p>
+<h3 id="a-table-of-examples">A Table of Examples</h3>
+<p>The following table applies the chart to the four components, to the cut and to the null cone.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$N(Q)$</th>
+<th>$r$</th>
+<th>$\epsilon$</th>
+<th>$u$</th>
+<th>$s$</th>
+<th>reconstruction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$j$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$j$</td>
+</tr>
+<tr>
+<td>$-j$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$-j$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$-j$</td>
+</tr>
+<tr>
+<td>$5+3j$</td>
+<td>$16$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$1.25+0.75j$</td>
+<td>$-1/3$</td>
+<td>$5+3j$</td>
+</tr>
+<tr>
+<td>$1+2j$</td>
+<td>$-3$</td>
+<td>$\sqrt3$</td>
+<td>$j$</td>
+<td>$1.1547+0.5774j$</td>
+<td>$-2+\sqrt3$</td>
+<td>$1+2j$</td>
+</tr>
+<tr>
+<td>$-1-2j$</td>
+<td>$-3$</td>
+<td>$\sqrt3$</td>
+<td>$-j$</td>
+<td>$1.1547+0.5774j$</td>
+<td>$-2+\sqrt3$</td>
+<td>$-1-2j$</td>
+</tr>
+<tr>
+<td>$-1+2j$</td>
+<td>$-3$</td>
+<td>$\sqrt3$</td>
+<td>$j$</td>
+<td>$1.1547-0.5774j$</td>
+<td>$2-\sqrt3$</td>
+<td>$-1+2j$</td>
+</tr>
+<tr>
+<td>$1-2j$</td>
+<td>$-3$</td>
+<td>$\sqrt3$</td>
+<td>$-j$</td>
+<td>$1.1547-0.5774j$</td>
+<td>$2-\sqrt3$</td>
+<td>$1-2j$</td>
+</tr>
+<tr>
+<td>$-2$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>no finite $s$</td>
+<td>cut</td>
+</tr>
+<tr>
+<td>$1+j$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>null</td>
+</tr>
+</tbody>
+</table></div>
+<p>The reconstruction error is at most $9\times10^{-16}$ in double precision for the invertible entries. The entry $-2$ is the cut: its unit factor is $-1$, the point missed by the chart. The entry $1+j$ is null: it has no modulus and no unit factor.</p>
+<h3 id="the-cut-in-the-plane">The Cut in the Plane</h3>
+<p>The negative real axis is the set $Q=-r$, $r>0$. Its unit factor is $-1$, and its parameter is the point at infinity of the chart. In the timelike past component the parameter ranges over $(-\infty,-1)$ on one side of the cut and $(1,\infty)$ on the other; the two ranges meet at $s=\pm\infty$, which is the same missing point. The chart therefore sees the cut as a single point at infinity, not as a line. This is the precise sense in which the rational chart is local: it is a chart on the hyperbola minus one point, and the missing point is the cut.</p>
+<h2 id="summary">Summary</h2>
+<p>The rational chart</p>
+<p>$$
+u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}j, \qquad s\neq\pm1,
+$$</p>
+<p>is a bijection from $\mathbb{R}\setminus\{\pm1\}$ onto $\{N=1\}\setminus\{-1\}$, with inverse $s=-y/(1+x)$ for $u=x+yj$ and $s=-q'/(r+q)$ for a timelike element $Q=q+jq'$. The two poles $s=\pm1$ are the null directions, the points at infinity of the hyperbola; the missing point is $u=-1$, the vertex of the negative branch.</p>
+<p>Every invertible split-complex number off the negative real axis has a unique rational-chart decomposition $Q=r\epsilon u(s)$, with $r>0$, $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The negative real axis is the cut. The spacelike components have no cut because the two signs of $j$ are available. The chart law is $s_1*s_2=(s_1+s_2)/(1+s_1s_2)$, with identity $0$, inverse $-s$ and pole at $s_1s_2=-1$, where the product is $-1$. The second chart $v(s)=-u(s)=u(1/s)$ supplies the missing $-1$; together with the two signs of $j$ it covers the four components of the unit set.</p>
+<p>The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, and preserves the indefinite form; it is not orthogonal in general. Its image is $SO(1,1)\setminus\{-I\}$, and its Euclidean polar factor is a sign $\pm I$. The rational chart is the algebraic chart on the unit factor, not the orthogonal chart of the matrix.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex algebra, $j^2=+1$</td>
+</tr>
+<tr>
+<td>$Q=q+jq'$</td>
+<td>a split-complex number</td>
+</tr>
+<tr>
+<td>$N(Q)=q^2-q'^2$</td>
+<td>the norm</td>
+</tr>
+<tr>
+<td>$r=\sqrt{\lvert N(Q)\rvert}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$u=Q/r$</td>
+<td>the unit factor, $\lvert N(u)\rvert=1$</td>
+</tr>
+<tr>
+<td>$u(s)=(1-sj)/(1+sj)$</td>
+<td>the rational chart on $\{N=1\}$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>the rational parameter, $s\neq\pm1$</td>
+</tr>
+<tr>
+<td>$v(s)=-u(s)=u(1/s)$</td>
+<td>the second chart, missing $+1$</td>
+</tr>
+<tr>
+<td>$\epsilon$</td>
+<td>the component sign, $\epsilon\in\{1,\pm j\}$</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>the hyperbolic angle, $s=-\tanh(\phi/2)$ on the identity component</td>
+</tr>
+<tr>
+<td>$K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>the reflection, $K^2=I$</td>
+</tr>
+<tr>
+<td>$M(s)=(I-sK)(I+sK)^{-1}$</td>
+<td>the Cayley matrix</td>
+</tr>
+<tr>
+<td>$SO(1,1)$</td>
+<td>the determinant-one Lorentz group of the plane, two components</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the rational parametrisation of the hyperbola and its projective completion.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra and its idempotents.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for $SO(1,1)$, its components and its Cayley parametrisation.</li>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em> (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for the hyperbolic line, its points at infinity and the rapidity coordinate.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for indefinite forms, isotropic lines and their projective geometry.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the rational parametrisations of quadrics of arbitrary signature.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

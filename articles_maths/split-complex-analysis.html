@@ -73,31 +73,31 @@
 <h3 id="points-and-distance">Points and Distance</h3>
 <p>A split complex number is written</p>
 <p>$$
-A = a + j a', \qquad a, a' \in \mathbb{R},
+Q = q + j q', \qquad q, q' \in \mathbb{R},
 $$</p>
-<p>where $j^2 = +1$. The real number $a$ is the <strong>real part</strong>, and $a'$ is the <strong>imaginary part</strong>. We write $a = \operatorname{Re} A$ and $a' = \operatorname{Im} A$.</p>
-<p>The <strong>Euclidean modulus</strong> of $A$ is</p>
+<p>where $j^2 = +1$. The real number $q$ is the <strong>real part</strong>, and $q'$ is the <strong>imaginary part</strong>. We write $q = \operatorname{Re} Q$ and $q' = \operatorname{Im} Q$.</p>
+<p>The <strong>Euclidean modulus</strong> of $Q$ is</p>
 <p>$$
-\|A\|_E = \sqrt{a^2 + a'^2},
+\|Q\|_E = \sqrt{q^2 + q'^2},
 $$</p>
-<p>and the <strong>Euclidean distance</strong> between two split complex numbers $A$ and $B$ is</p>
+<p>and the <strong>Euclidean distance</strong> between two split complex numbers $Q$ and $B$ is</p>
 <p>$$
-d(A, B) = \|A - B\|_E.
+d(Q, B) = \|Q - B\|_E.
 $$</p>
 <p>This makes $\mathbb{D}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.</p>
 <p>The <strong>split modulus</strong> is</p>
 <p>$$
-\rho = \sqrt{|a^2 - a'^2|},
+\rho = \sqrt{|q^2 - q'^2|},
 $$</p>
-<p>which is not a norm. It vanishes on the null cone $a = \pm a'$, and it is not subadditive; the quadratic form $a^2-a'^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.</p>
+<p>which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not subadditive; the quadratic form $q^2-q'^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
-<p>The <strong>open ball</strong> of radius $r > 0$ centred at $A_0$ is</p>
+<p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
 <p>$$
-B(A_0, r) = \{A \in \mathbb{D} : \|A - A_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{D} : \|Q - Q_0\|_E < r\}.
 $$</p>
 <p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{D}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{D}$ is <strong>open</strong> if for every $A_0 \in \Omega$ there exists $r > 0$ with $B(A_0, r) \subseteq \Omega$.</p>
+<p>A set $\Omega \subseteq \mathbb{D}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{D}$ is <strong>closed</strong> if its complement $\mathbb{D} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
@@ -109,120 +109,120 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous split-complex-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(A_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{D}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{D}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies \|A_n - L\|_E < \epsilon.
+n \geq N \implies \|Q_n - L\|_E < \epsilon.
 $$</p>
-<p>We write $A_n \to L$ or $\lim_{n \to \infty} A_n = L$.</p>
-<p><strong>Uniqueness.</strong> If $A_n \to L$ and $A_n \to L'$, then $L = L'$.</p>
-<p><strong>Componentwise convergence.</strong> Write $A_n = a_n + j a'_n$ and $L = a + j a'$. Then</p>
+<p>We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $Q_n \to L$ and $Q_n \to L'$, then $L = L'$.</p>
+<p><strong>Componentwise convergence.</strong> Write $Q_n = q_n + j q'_n$ and $L = q + j q'$. Then</p>
 <p>$$
-A_n \to L \iff a_n \to a \text{ and } a'_n \to a'.
+Q_n \to L \iff q_n \to q \text{ and } q'_n \to q'.
 $$</p>
 <p>This is the reason split complex convergence is no harder than real convergence: it is two real convergences in parallel.</p>
 <p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails.</p>
-<p><strong>Algebra of limits.</strong> If $A_n \to L$ and $B_n \to M$, then</p>
+<p><strong>Algebra of limits.</strong> If $Q_n \to L$ and $B_n \to M$, then</p>
 <p>$$
-A_n + B_n \to L + M, \qquad A_n B_n \to L M.
+Q_n + B_n \to L + M, \qquad Q_n B_n \to L M.
 $$</p>
 <p>There is no quotient rule in general, because $\mathbb{D}$ has zero divisors.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(A_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies \|A_m - A_n\|_E < \epsilon.
+m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{D}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{D}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
-<p>Let $f : D \to \mathbb{D}$ with $D \subseteq \mathbb{D}$, and let $A_0$ be a limit point of $D$. We say</p>
+<p>Let $f : D \to \mathbb{D}$ with $D \subseteq \mathbb{D}$, and let $Q_0$ be a limit point of $D$. We say</p>
 <p>$$
-\lim_{A \to A_0} f(A) = L
+\lim_{Q \to Q_0} f(Q) = L
 $$</p>
 <p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-A \in D, \; 0 < \|A - A_0\|_E < \delta \implies \|f(A) - L\|_E < \epsilon.
+Q \in D, \; 0 < \|Q - Q_0\|_E < \delta \implies \|f(Q) - L\|_E < \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
-<p><strong>Sequential criterion.</strong> $\lim_{A \to A_0} f(A) = L$ iff for every sequence $(A_n)$ in $D \setminus \{A_0\}$ with $A_n \to A_0$, we have $f(A_n) \to L$.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
 <p><strong>Algebra of limits.</strong> Sums and products of limits are the limits of the sums and products.</p>
 <h3 id="continuity">Continuity</h3>
-<p>A function $f : D \to \mathbb{D}$ is <strong>continuous at</strong> $A_0 \in D$ if</p>
+<p>A function $f : D \to \mathbb{D}$ is <strong>continuous at</strong> $Q_0 \in D$ if</p>
 <p>$$
-\lim_{A \to A_0} f(A) = f(A_0).
+\lim_{Q \to Q_0} f(Q) = f(Q_0).
 $$</p>
 <p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-A \in D, \; \|A - A_0\|_E < \delta \implies \|f(A) - f(A_0)\|_E < \epsilon.
+Q \in D, \; \|Q - Q_0\|_E < \delta \implies \|f(Q) - f(Q_0)\|_E < \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> Sums and products of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
-<p><strong>Componentwise continuity.</strong> Write $f(A) = u(a, a') + j v(a, a')$. Then $f$ is continuous at $A_0 = a_0 + j a'_0$ iff $u$ and $v$ are continuous at $(a_0, a'_0)$. This reduces split complex continuity to real continuity of two functions of two variables.</p>
+<p><strong>Componentwise continuity.</strong> Write $f(Q) = u(q, q') + j v(q, q')$. Then $f$ is continuous at $Q_0 = q_0 + j q'_0$ iff $u$ and $v$ are continuous at $(q_0, q'_0)$. This reduces split complex continuity to real continuity of two functions of two variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
 <p>A function $f : D \to \mathbb{D}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-A, B \in D, \; \|A - B\|_E < \delta \implies \|f(A) - f(B)\|_E < \epsilon.
+Q, B \in D, \; \|Q - B\|_E < \delta \implies \|f(Q) - f(B)\|_E < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="split-complex-differentiability">Split Complex Differentiability</h2>
 <h3 id="the-derivative">The Derivative</h3>
-<p>Let $f : \Omega \to \mathbb{D}$ with $\Omega$ open, and let $A_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $A_0$ is</p>
+<p>Let $f : \Omega \to \mathbb{D}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $Q_0$ is</p>
 <p>$$
-f'(A_0) = \lim_{h \to 0} \frac{f(A_0 + h) - f(A_0)}{h},
+f'(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
 $$</p>
-<p>provided the limit exists. If it does, $f$ is <strong>split complex differentiable</strong> at $A_0$, or <strong>holomorphic</strong> at $A_0$ in the split sense.</p>
+<p>provided the limit exists. If it does, $f$ is <strong>split complex differentiable</strong> at $Q_0$, or <strong>holomorphic</strong> at $Q_0$ in the split sense.</p>
 <p>The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{D}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
 <p><strong>Theorem.</strong> Split complex differentiability implies continuity. The converse fails.</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
-<p>Write $f(A) = u(a, a') + j v(a, a')$, where $A = a + ja'$ and $u, v : \Omega \to \mathbb{R}$.</p>
-<p><strong>Theorem.</strong> $f$ is split complex differentiable at $A_0 = a_0 + j a'_0$ iff $u$ and $v$ are real differentiable at $(a_0, a'_0)$ and satisfy the <strong>split Cauchy–Riemann equations</strong></p>
+<p>Write $f(Q) = u(q, q') + j v(q, q')$, where $Q = q + jq'$ and $u, v : \Omega \to \mathbb{R}$.</p>
+<p><strong>Theorem.</strong> $f$ is split complex differentiable at $Q_0 = q_0 + j q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the <strong>split Cauchy–Riemann equations</strong></p>
 <p>$$
-\frac{\partial u}{\partial a} = \frac{\partial v}{\partial a'}, \qquad \frac{\partial u}{\partial a'} = \frac{\partial v}{\partial a}.
+\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = \frac{\partial v}{\partial q}.
 $$</p>
 <p><strong>Proof.</strong> Write $h = h_1 + j h_2$. The difference quotient is</p>
 <p>$$
-\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(\partial u/\partial a h_1 + \partial u/\partial a' h_2) + j (\partial v/\partial a h_1 + \partial v/\partial a' h_2)}{h_1 + j h_2} + o(1).
+\frac{f(Q_0 + h) - f(Q_0)}{h} = \frac{(\partial u/\partial q h_1 + \partial u/\partial q' h_2) + j (\partial v/\partial q h_1 + \partial v/\partial q' h_2)}{h_1 + j h_2} + o(1).
 $$</p>
 <p>For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations.</p>
 <p><strong>Corollary.</strong> If $f$ is split complex differentiable, then $u$ and $v$ satisfy the <strong>wave equation</strong>:</p>
 <p>$$
-\frac{\partial^2 u}{\partial a^2} - \frac{\partial^2 u}{\partial a'^2} = 0, \qquad \frac{\partial^2 v}{\partial a^2} - \frac{\partial^2 v}{\partial a'^2} = 0.
+\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'^2} = 0.
 $$</p>
 <p><strong>Proof.</strong> Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials.</p>
 <p>This is the fundamental difference from complex analysis: the real and imaginary parts of a holomorphic function are harmonic in the complex case, and solutions of the wave equation in the split complex case. The change of sign in the Cauchy–Riemann equations changes the Laplacian into the d'Alembertian.</p>
 <h3 id="the-wirtinger-derivatives">The Wirtinger Derivatives</h3>
 <p>Define the <strong>split Wirtinger derivatives</strong></p>
 <p>$$
-\frac{\partial}{\partial A} = \frac{1}{2}\left( \frac{\partial}{\partial a} + j \frac{\partial}{\partial a'} \right), \qquad \frac{\partial}{\partial \bar{A}} = \frac{1}{2}\left( \frac{\partial}{\partial a} - j \frac{\partial}{\partial a'} \right).
+\frac{\partial}{\partial Q} = \frac{1}{2}\left( \frac{\partial}{\partial q} + j \frac{\partial}{\partial q'} \right), \qquad \frac{\partial}{\partial \bar{Q}} = \frac{1}{2}\left( \frac{\partial}{\partial q} - j \frac{\partial}{\partial q'} \right).
 $$</p>
-<p><strong>Theorem.</strong> $f$ is split complex differentiable iff $f$ is real differentiable and $\partial f / \partial \bar{A} = 0$. In that case,</p>
+<p><strong>Theorem.</strong> $f$ is split complex differentiable iff $f$ is real differentiable and $\partial f / \partial \bar{Q} = 0$. In that case,</p>
 <p>$$
-f'(A) = \frac{\partial f}{\partial A}.
+f'(Q) = \frac{\partial f}{\partial Q}.
 $$</p>
-<p>The condition $\partial f / \partial \bar{A} = 0$ is the split Cauchy–Riemann equations in compact form.</p>
+<p>The condition $\partial f / \partial \bar{Q} = 0$ is the split Cauchy–Riemann equations in compact form.</p>
 <h3 id="rules-of-differentiation">Rules of Differentiation</h3>
 <p><strong>Linearity.</strong> $(af + bg)' = a f' + b g'$.</p>
 <p><strong>Product rule.</strong> $(fg)' = f' g + f g'$.</p>
 <p><strong>Quotient rule.</strong> $(f/g)' = (f' g - f g')/g^2$ where $g$ is invertible.</p>
-<p><strong>Chain rule.</strong> $(f \circ g)'(A) = f'(g(A)) g'(A)$.</p>
-<p><strong>Inverse function rule.</strong> If $f$ is split complex differentiable at $A_0$ with $f'(A_0)$ invertible and $f^{-1}$ is defined near $f(A_0)$, then</p>
+<p><strong>Chain rule.</strong> $(f \circ g)'(Q) = f'(g(Q)) g'(Q)$.</p>
+<p><strong>Inverse function rule.</strong> If $f$ is split complex differentiable at $Q_0$ with $f'(Q_0)$ invertible and $f^{-1}$ is defined near $f(Q_0)$, then</p>
 <p>$$
-(f^{-1})'(f(A_0)) = \frac{1}{f'(A_0)}.
+(f^{-1})'(f(Q_0)) = \frac{1}{f'(Q_0)}.
 $$</p>
 <h2 id="the-idempotent-decomposition">The Idempotent Decomposition</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>idempotents</strong> of $\mathbb{D}$ are</p>
 <p>$$
-\Pi_1 = \frac{1 + j}{2}, \qquad \Pi_2 = \frac{1 - j}{2}.
+\Pi_+ = \frac{1 + j}{2}, \qquad \Pi_- = \frac{1 - j}{2}.
 $$</p>
-<p>They satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$, $\Pi_1 \Pi_2 = 0$, and $\Pi_1 + \Pi_2 = 1$.</p>
+<p>They satisfy $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$, $\Pi_+ \Pi_- = 0$, and $\Pi_+ + \Pi_- = 1$.</p>
 <p>Every split complex number decomposes uniquely as</p>
 <p>$$
-A = A_+ \Pi_1 + A_- \Pi_2, \qquad A_+ = a + a', \quad A_- = a - a'.
+Q = Q_+ \Pi_+ + Q_- \Pi_-, \qquad Q_+ = q + q', \quad Q_- = q - q'.
 $$</p>
 <h3 id="differentiability-in-the-idempotent-basis">Differentiability in the Idempotent Basis</h3>
-<p>Write $f(A) = f_+(A) \Pi_1 + f_-(A) \Pi_2$, where $f_+$ and $f_-$ are real-valued functions. Then</p>
+<p>Write $f(Q) = f_+(Q) \Pi_+ + f_-(Q) \Pi_-$, where $f_+$ and $f_-$ are real-valued functions. Then</p>
 <p>$$
-f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } A_+ \text{ and } f_- \text{ is differentiable in } A_-.
+f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } Q_+ \text{ and } f_- \text{ is differentiable in } Q_-.
 $$</p>
 <p><strong>Proof.</strong> In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable.</p>
 <p>This is the <strong>fundamental theorem of split complex analysis</strong>: differentiability in $\mathbb{D}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.</p>
@@ -234,66 +234,66 @@ $$</p>
 <h3 id="contour-integrals">Contour Integrals</h3>
 <p>Let $\gamma : [a, b] \to \mathbb{D}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
 <p>$$
-\int_\gamma f(A) \, dA = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
 $$</p>
 <p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.</p>
 <p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
 <p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
-<p><strong>Estimation.</strong> If $\|f(A)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p><strong>Estimation.</strong> If $\|f(Q)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
 <p>$$
-\left\| \int_\gamma f(A) \, dA \right\|_E \leq \sqrt{2} M L.
+\left\| \int_\gamma f(Q) \, dQ \right\|_E \leq \sqrt{2} M L.
 $$</p>
-<p>The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|A B\|_E \leq \sqrt{2} \|A\|_E \|B\|_E$, and the constant is sharp.</p>
+<p>The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|Q B\|_E \leq \sqrt{2} \|Q\|_E \|B\|_E$, and the constant is sharp.</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
 <p><strong>Theorem (Cauchy–Goursat, split version).</strong> If $f$ is split complex differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
 <p>$$
-\oint_\gamma f(A) \, dA = 0.
+\oint_\gamma f(Q) \, dQ = 0.
 $$</p>
 <p><strong>Proof.</strong> In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour.</p>
 <h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
-<p>There is <strong>no</strong> general Cauchy integral formula in split complex analysis. The reason is that the kernel $1/(B - A)$ has a singularity on the null cone, and the integral around a point depends on the path in a way that cannot be removed by a single formula.</p>
+<p>There is <strong>no</strong> general Cauchy integral formula in split complex analysis. The reason is that the kernel $1/(B - Q)$ has a singularity on the null cone, and the integral around a point depends on the path in a way that cannot be removed by a single formula.</p>
 <p>However, if the function is written in the idempotent basis, each component has its own Cauchy integral formula:</p>
 <p>$$
-f_+(A_+) = \frac{1}{2\pi i} \oint \frac{f_+(\zeta_+)}{\zeta_+ - A_+} \, d\zeta_+,
+f_+(Q_+) = \frac{1}{2\pi i} \oint \frac{f_+(\zeta_+)}{\zeta_+ - Q_+} \, d\zeta_+,
 $$</p>
 <p>and similarly for $f_-$. But these are complex formulas applied to real functions, and they require complexification of the components. They are not split complex formulas.</p>
 <h2 id="power-series">Power Series</h2>
 <h3 id="definition_1">Definition</h3>
-<p>A <strong>power series</strong> centred at $A_0$ is</p>
+<p>A <strong>power series</strong> centred at $Q_0$ is</p>
 <p>$$
-\sum_{n=0}^\infty c_n (A - A_0)^n, \qquad c_n \in \mathbb{D}.
+\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{D}.
 $$</p>
-<p>In the idempotent basis $c_n = c_{n,+} \Pi_1 + c_{n,-} \Pi_2$, and the series is the pair of real power series</p>
+<p>In the idempotent basis $c_n = c_{n,+} \Pi_+ + c_{n,-} \Pi_-$, and the series is the pair of real power series</p>
 <p>$$
-\sum_{n=0}^\infty c_{n,+} (A - A_0)_+^n \Pi_1 + \sum_{n=0}^\infty c_{n,-} (A - A_0)_-^n \Pi_2.
+\sum_{n=0}^\infty c_{n,+} (Q - Q_0)_+^n \Pi_+ + \sum_{n=0}^\infty c_{n,-} (Q - Q_0)_-^n \Pi_-.
 $$</p>
 <p>The <strong>radii of convergence</strong> are the pair of real numbers</p>
 <p>$$
 R_\pm = \frac{1}{\limsup_{n \to \infty} |c_{n,\pm}|^{1/n}},
 $$</p>
 <p>with the conventions $R_\pm = 0$ if the limsup is $\infty$ and $R_\pm = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $|A_+ - A_{0+}| < R_+$ and $|A_- - A_{0-}| < R_-$, and diverges if $|A_+ - A_{0+}| > R_+$ or $|A_- - A_{0-}| > R_-$. Where both inequalities hold it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is split complex differentiable on the region $|A_+ - A_{0+}| < R_+$ and $|A_- - A_{0-}| < R_-$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|Q_+ - Q_{0+}| < R_+$ and $|Q_- - Q_{0-}| < R_-$, and diverges if $|Q_+ - Q_{0+}| > R_+$ or $|Q_- - Q_{0-}| > R_-$. Where both inequalities hold it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is split complex differentiable on the region $|Q_+ - Q_{0+}| < R_+$ and $|Q_- - Q_{0-}| < R_-$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
-\frac{d}{dA} \sum_{n=0}^\infty c_n (A - A_0)^n = \sum_{n=1}^\infty n c_n (A - A_0)^{n-1}.
+\frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
 $$</p>
 <p>The differentiated series has the same radii of convergence.</p>
 <h3 id="taylor-series">Taylor Series</h3>
-<p><strong>Theorem (Taylor, split version).</strong> If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(A_0, r)$, and its components $f_+$ and $f_-$ are real-analytic on that disk, then $f$ has a power series expansion</p>
+<p><strong>Theorem (Taylor, split version).</strong> If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(Q_0, r)$, and its components $f_+$ and $f_-$ are real-analytic on that disk, then $f$ has a power series expansion</p>
 <p>$$
-f(A) = \sum_{n=0}^\infty \frac{f^{(n)}(A_0)}{n!} (A - A_0)^n
+f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$</p>
-<p>valid for $\|A - A_0\|_E < r$.</p>
+<p>valid for $\|Q - Q_0\|_E < r$.</p>
 <p><strong>Proof.</strong> In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine.</p>
 <p><strong>Corollary.</strong> A split complex differentiable function whose components are real-analytic is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Caution.</strong> The identity theorem fails in general, because a split complex differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the two idempotent components are independent, and one can vanish while the other does not.</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be split complex differentiable on a punctured disk $0 < \|A - A_0\|_E < R$.</p>
-<p><strong>Removable singularity.</strong> $A_0$ is removable if $f$ extends to a split complex differentiable function on $\|A - A_0\|_E < R$.</p>
-<p><strong>Pole.</strong> $A_0$ is a pole if $f(A) \to \infty$ in Euclidean modulus as $A \to A_0$.</p>
-<p><strong>Essential singularity.</strong> $A_0$ is an essential singularity if it is neither removable nor a pole.</p>
-<p><strong>Caution.</strong> The classification is empty under this hypothesis. The component $f_+$ is a function of $A_+$ alone, and differentiating $f$ at a point with $A_+ = A_{0+}$ and $A_- \neq A_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $A_{0+}$, and dually for $f_-$. So $f$ extends to $A_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.</p>
+<p>Let $f$ be split complex differentiable on a punctured disk $0 < \|Q - Q_0\|_E < R$.</p>
+<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\|_E < R$.</p>
+<p><strong>Pole.</strong> $Q_0$ is a pole if $f(Q) \to \infty$ in Euclidean modulus as $Q \to Q_0$.</p>
+<p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if it is neither removable nor a pole.</p>
+<p><strong>Caution.</strong> The classification is empty under this hypothesis. The component $f_+$ is a function of $Q_+$ alone, and differentiating $f$ at a point with $Q_+ = Q_{0+}$ and $Q_- \neq Q_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Q_{0+}$, and dually for $f_-$. So $f$ extends to $Q_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.</p>
 <h3 id="residues">Residues</h3>
 <p>There is <strong>no</strong> general residue theory in split complex analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity.</p>
 <p>In the idempotent basis, each component has its own residue, and the two residues are independent. The sum of the two residues is the analogue of the complex residue, but it does not determine the integral in general.</p>
@@ -320,8 +320,8 @@ $$</p>
 </tr>
 <tr>
 <td>Cauchy–Riemann</td>
-<td>$\partial u/\partial a = \partial v/\partial a'$, $\partial u/\partial a' = -\partial v/\partial a$</td>
-<td>$\partial u/\partial a = \partial v/\partial a'$, $\partial u/\partial a' = \partial v/\partial a$</td>
+<td>$\partial u/\partial q = \partial v/\partial q'$, $\partial u/\partial q' = -\partial v/\partial q$</td>
+<td>$\partial u/\partial q = \partial v/\partial q'$, $\partial u/\partial q' = \partial v/\partial q$</td>
 </tr>
 <tr>
 <td>Harmonic equation</td>
@@ -362,8 +362,8 @@ $$</p>
 </table></div>
 <p>The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The split complex case is flexible: differentiability is a weak condition, and the function is determined by two independent real functions.</p>
 <h2 id="summary">Summary</h2>
-<p>Split complex analysis is the study of differentiable functions of a split complex variable $A = a + ja'$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.</p>
-<p>The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $\Pi_{1,2} = (1 \pm j)/2$, which satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$ and $\Pi_1\Pi_2 = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.</p>
+<p>Split complex analysis is the study of differentiable functions of a split complex variable $Q = q + jq'$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.</p>
+<p>The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $\Pi_\pm = (1 \pm j)/2$, which satisfy $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$ and $\Pi_+\Pi_- = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.</p>
 <p>The article develops the subject in that basis: contour integrals along paths, power series, and the classification of the isolated singularities as removable, a pole, or essential. It closes with the comparison with complex analysis and traces every difference to the sign in the multiplication rule, $j^2 = +1$ against $i^2 = -1$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -383,51 +383,51 @@ $$</p>
 <td>Split imaginary unit, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$A = a + ja'$</td>
+<td>$Q = q + jq'$</td>
 <td>General split complex number</td>
 </tr>
 <tr>
-<td>$\bar{A} = a - ja'$</td>
+<td>$\bar{Q} = q - jq'$</td>
 <td>Split complex conjugate</td>
 </tr>
 <tr>
-<td>$\|A\|_E = \sqrt{a^2 + a'^2}$</td>
+<td>$\|Q\|_E = \sqrt{q^2 + q'^2}$</td>
 <td>Euclidean modulus</td>
 </tr>
 <tr>
-<td>$\rho = \sqrt{|a^2 - a'^2|}$</td>
+<td>$\rho = \sqrt{|q^2 - q'^2|}$</td>
 <td>Split modulus</td>
 </tr>
 <tr>
-<td>$B(A_0, r)$</td>
+<td>$B(Q_0, r)$</td>
 <td>Open disk of radius $r$</td>
 </tr>
 <tr>
-<td>$f'(A)$</td>
+<td>$f'(Q)$</td>
 <td>Split complex derivative</td>
 </tr>
 <tr>
-<td>$\partial/\partial A, \partial/\partial \bar{A}$</td>
+<td>$\partial/\partial Q, \partial/\partial \bar{Q}$</td>
 <td>Split Wirtinger derivatives</td>
 </tr>
 <tr>
-<td>$\Pi_1 = (1 + j)/2$</td>
+<td>$\Pi_+ = (1 + j)/2$</td>
 <td>Positive idempotent</td>
 </tr>
 <tr>
-<td>$\Pi_2 = (1 - j)/2$</td>
+<td>$\Pi_- = (1 - j)/2$</td>
 <td>Negative idempotent</td>
 </tr>
 <tr>
-<td>$A = A_+ \Pi_1 + A_- \Pi_2$</td>
+<td>$Q = Q_+ \Pi_+ + Q_- \Pi_-$</td>
 <td>Idempotent decomposition</td>
 </tr>
 <tr>
-<td>$\int_\gamma f(A) \, dA$</td>
+<td>$\int_\gamma f(Q) \, dQ$</td>
 <td>Contour integral</td>
 </tr>
 <tr>
-<td>$\Box = \partial^2/\partial a^2 - \partial^2/\partial a'^2$</td>
+<td>$\Box = \partial^2/\partial q^2 - \partial^2/\partial q'^2$</td>
 <td>d'Alembertian</td>
 </tr>
 </tbody>

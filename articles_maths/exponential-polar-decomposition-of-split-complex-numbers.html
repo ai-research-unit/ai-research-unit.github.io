@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential Polar Decomposition of Split-Complex Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="exponential-polar-decomposition-of-split-complex-numbers"><strong>Exponential Polar Decomposition of Split-Complex Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article develops the <strong>exponential polar decomposition</strong> of a nonzero split-complex number: the writing</p>
+<p>$$
+Q = \epsilon\exp(L), \qquad \epsilon\in\{\pm1,\pm j\}, \qquad L = \ln r+\phi j,
+$$</p>
+<p>with $r=\sqrt{\lvert N(Q)\rvert}>0$ the modulus, $\ln r$ the logarithmic scale and $\phi$ the hyperbolic angle. The exponent is a point of $\mathbb{D}$, not a class modulo a lattice: the exponential of $\mathbb{D}$ has trivial kernel. The decomposition is the modulus–unit decomposition $Q=ru$ of <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> with each factor written exponentially, $r=\exp(\ln r)$ and $u=\epsilon\exp(\phi j)$. Since $\mathbb{D}$ is commutative, the two continuous exponentials amalgamate into the single exponential $\exp(L)$; the finite factor $\epsilon$ names the component.</p>
+<p>The exponential form is the third of the three polar decompositions of $\mathbb{D}$. The first is the modulus–unit form $Q=ru$, with $r=\sqrt{\lvert N(Q)\rvert}$ and $u=Q/r$, developed in <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em>; the second is the rational-chart form of <em>Rational-Chart Polar Decomposition of Split-Complex Numbers</em>; the third is treated here. The three present one factorisation in three ways: the modulus–unit form is coordinate-free, while the rational and exponential forms put a coordinate on the unit factor, the rational one local and the exponential one global on each component, at the price of a finite component label.</p>
+<p>The symbols are those of <em>Split-Complex Algebra</em>, <em>Split-Complex Norm and Invertibility</em> and <em>Conventions in Mathematics</em>, and the exponential and its group law are recalled from <em>Split-Complex Exponential and Lie Group Structure</em>. The article proves that the exponential is injective, that its image is the future cone, and that the discrete factor restores the other three components. The matrix picture is the two-dimensional matrix exponential, and the indefinite conformal reading of the exponential coordinates closes the article.</p>
+<p>The plan is as follows. The exponential and its closed form are recalled (§<em>The Exponential and Its Closed Form</em>), its trichotomy is recorded (§<em>The Three Rows of the Exponential</em>), its image and kernel are computed (§<em>The Image and the Kernel</em>), and the polar word is read as one exponential (§<em>The Polar Word as One Exponential</em>). The logarithm and its fundamental domain are treated (§<em>The Logarithm and the Fundamental Domain</em>), the decomposition is stated and proved (§<em>The Exponential Polar Decomposition</em>), and the matrix picture (§<em>The Matrix Picture</em>) and the comparison (§<em>The Three Polar Decompositions</em>) follow. Examples are computed (§<em>Worked Examples</em>), and the exponential coordinates close the article (§<em>The Exponential Coordinates</em>). Every numerical value below was recomputed in double precision.</p>
+<h2 id="the-exponential-map-and-the-polar-word">The Exponential Map and the Polar Word</h2>
+<h3 id="the-exponential-and-its-closed-form">The Exponential and Its Closed Form</h3>
+<p>For $L=q+jq'$ the exponential is the power series</p>
+<p>$$
+\exp L = \sum_{n=0}^{\infty}\frac{L^n}{n!},
+$$</p>
+<p>which converges absolutely and locally uniformly. Separating even and odd powers, and using $j^{2n}=1$ and $j^{2n+1}=j$, gives the closed form</p>
+<p>$$
+\exp(q+jq') = \exp(q)\left(\sum_{n=0}^{\infty}\frac{(q')^{2n}}{(2n)!}+j\sum_{n=0}^{\infty}\frac{(q')^{2n+1}}{(2n+1)!}\right) = \exp(q)\bigl(\cosh q'+j\sinh q'\bigr).
+$$</p>
+<p>The norm follows:</p>
+<p>$$
+N(\exp L)=\exp(2q)\bigl(\cosh^2 q'-\sinh^2 q'\bigr)=\exp(2q)>0.
+$$</p>
+<p>The exponential never reaches the null cone, never reaches negative norm, and never reaches positive norm with negative real part (§<em>The Image and the Kernel</em>). It is a homomorphism from the additive group of $\mathbb{D}$ to $\mathbb{D}^\times$, because $\mathbb{D}$ is commutative and the binomial theorem reorders the product of the two series:</p>
+<p>$$
+\exp(L_1+L_2)=\exp(L_1)\exp(L_2).
+$$</p>
+<h3 id="the-three-rows-of-the-exponential">The Three Rows of the Exponential</h3>
+<p>The closed form is one row of a trichotomy governed by the square of the exponent direction. For $\nu\in\mathbb{D}$ with $\nu^2\in\{-1,0,+1\}$ and $t\in\mathbb{R}$,</p>
+<p>$$
+\exp(\nu t)=
+\begin{cases}
+\cos t+\nu\sin t, & \nu^2=-1,\\[2pt]
+1, & \nu^2=0,\\[2pt]
+\cosh t+\nu\sinh t, & \nu^2=+1.
+\end{cases}
+$$</p>
+<p>The rows are trigonometric, parabolic and hyperbolic. The parabolic row is degenerate: the only solution of $\nu^2=0$ in $\mathbb{D}$ is $\nu=0$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>equation</th>
+<th>roots in $\mathbb{D}$</th>
+<th>row</th>
+<th>image of $t\mapsto\exp(\nu t)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu^2=-1$</td>
+<td>none</td>
+<td>trigonometric</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>$\nu^2=0$</td>
+<td>$\nu=0$</td>
+<td>parabolic</td>
+<td>$\{1\}$</td>
+</tr>
+<tr>
+<td>$\nu^2=+1$</td>
+<td>$\nu=\pm1,\ \pm j$</td>
+<td>hyperbolic</td>
+<td>$\mathbb{R}_{>0}$ for $\pm1$; the future branch of the unit hyperbola for $\pm j$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The trigonometric row is empty because $\mathbb{D}$ has no square root of $-1$. The hyperbolic row has four roots: $\pm1$ generate the real scale, and $\pm j$ generate the future branch $\exp(tj)=\cosh t+j\sinh t$; the past branch is reached by multiplying by $-1$. This is the exchange of the complex case, where $-1$ has roots $\pm i$ and $+1$ has roots $\pm1$. In the polar word the scale occupies the roots $\pm1$ and the unit factor the roots $\pm j$; the first row is empty and the middle row contributes nothing. The split algebra has no compact generator.</p>
+<h3 id="the-image-and-the-kernel">The Image and the Kernel</h3>
+<p><strong>Kernel.</strong> If $\exp(q+jq')=1$, then $\exp(q)\cosh q'=1$ and $\exp(q)\sinh q'=0$. Hence $\sinh q'=0$, so $q'=0$, and then $\exp(q)=1$, so $q=0$. The kernel is $\{0\}$ and the exponential is injective.</p>
+<p><strong>Image.</strong> The image is the future cone</p>
+<p>$$
+\exp(\mathbb{D})=\{Q:N(Q)>0,\ \operatorname{Re}Q>0\}=\{q>\lvert q'\rvert\}.
+$$</p>
+<p>If $Q=\exp(q+jq')$, then $N(Q)=\exp(2q)>0$ and $\operatorname{Re}Q=\exp(q)\cosh q'>\lvert\exp(q)\sinh q'\rvert$, so $Q$ lies in the set. Conversely, for $Q=x+jy$ with $x>\lvert y\rvert$, put</p>
+<p>$$
+q=\tfrac12\ln(x^2-y^2), \qquad q'=\operatorname{artanh}\frac{y}{x}.
+$$</p>
+<p>Then $q,q'$ are real, and $\exp(q+jq')=x+jy=Q$. The inverse is unique:</p>
+<p>$$
+L=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}, \qquad Q=q+jq',\quad q>\lvert q'\rvert.
+$$</p>
+<p>The exponential is therefore a diffeomorphism of $\mathbb{D}$ onto the identity component $(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$.</p>
+<p>The image is <strong>not</strong> all of $\{N>0\}$: the past cone $\{N>0,\ q<0\}$ is missed. The witness is $-1$, which has norm $1$ and real part $-1$; in $\mathbb{C}$, $-1=\exp(i\pi)$, but here $-1=-\exp(0)$ uses the discrete factor. This is the precise sense in which the exponential is not onto the timelike region.</p>
+<h3 id="the-polar-word-as-one-exponential">The Polar Word as One Exponential</h3>
+<p><strong>Definition.</strong> For $Q\in\mathbb{D}$ with $N(Q)\neq0$, an <strong>exponential polar decomposition</strong> is a writing</p>
+<p>$$
+Q=\epsilon\exp(\ln r)\exp(\phi j), \qquad r>0,\quad \phi\in\mathbb{R},\quad \epsilon\in\{\pm1,\pm j\},
+$$</p>
+<p>in which $\exp(\ln r)$ is the positive scale and $\epsilon\exp(\phi j)$ is the unit factor.</p>
+<p>If $Q=\epsilon\exp(\ln r+\phi j)$, then</p>
+<p>$$
+\exp(\ln r)=r=\sqrt{\lvert N(Q)\rvert}, \qquad \epsilon\exp(\phi j)=\frac{Q}{r},
+$$</p>
+<p>and the two exponents commute, since $\mathbb{R}$ is central:</p>
+<p>$$
+Q=\epsilon\exp(\ln r)\exp(\phi j)=\epsilon\exp(\ln r+\phi j).
+$$</p>
+<p>The word is one exponential and one finite factor, not a product of two independent continuous exponentials. The amalgamation is a property of the commutative algebra; in a noncommutative algebra the exponents need not commute, as the polar word of <em>The Polar Element Representation of Biquaternions</em> shows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor</th>
+<th>formula</th>
+<th>real dimension</th>
+<th>range</th>
+<th>exponent</th>
+<th>parameter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>$\exp(\ln r)$</td>
+<td>$1$</td>
+<td>$(0,\infty)$</td>
+<td>$\ln r$</td>
+<td>$r>0$</td>
+</tr>
+<tr>
+<td>unit factor</td>
+<td>$\epsilon\exp(\phi j)$</td>
+<td>$1$</td>
+<td>four branches</td>
+<td>$\phi j$</td>
+<td>$\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The counts add to two on each component. The scale is non-compact, and the unit factor is non-compact too: its identity component is a line, not a circle. This is where the complex count is reproduced but the compactness is not.</p>
+<h2 id="the-logarithm-and-the-fundamental-domain">The Logarithm and the Fundamental Domain</h2>
+<h3 id="the-logarithm">The Logarithm</h3>
+<p><strong>Definition.</strong> A <strong>logarithm</strong> of $Q\in\mathbb{D}^\times$ is an element $L\in\mathbb{D}$ with $\exp L=Q$.</p>
+<p><strong>Theorem.</strong> An invertible split-complex number has a logarithm if and only if it lies in the future cone $\{N>0,\ \operatorname{Re}Q>0\}$; the logarithm is then unique.</p>
+<p><strong>Proof.</strong> If $Q=\exp L$, the image computation puts $Q$ in the future cone. Conversely, for $Q=q+jq'$ with $q>\lvert q'\rvert$,</p>
+<p>$$
+L=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}
+$$</p>
+<p>satisfies $\exp L=Q$ (§<em>The Image and the Kernel</em>). Uniqueness is injectivity.</p>
+<p>The logarithm exists on one component of four; the other three have none. In $\mathbb{C}$ every nonzero element has a logarithm and only uniqueness fails. On the identity component,</p>
+<p>$$
+\operatorname{Log}Q=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}, \qquad Q=q+jq',\quad q>\lvert q'\rvert,
+$$</p>
+<p>is the unique logarithm: there is no principal branch to choose.</p>
+<h3 id="the-fundamental-domain">The Fundamental Domain</h3>
+<p><strong>Theorem.</strong> The exponential is a bijection $\mathbb{D}\to(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$, with inverse $\operatorname{Log}$.</p>
+<p><strong>Proof.</strong> This is the existence and uniqueness theorem above, read as a statement about the map.</p>
+<p>The whole algebra is the domain; there is no strip. Since the kernel is $\{0\}$, the only fundamental domain is $\mathbb{D}$ itself. The quotient by the image is the component group:</p>
+<p>$$
+\mathbb{D}^\times/\exp(\mathbb{D})\cong\{\pm1,\pm j\}\cong(\mathbb{Z}/2\mathbb{Z})^2, \qquad \mathbb{D}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{D}.
+$$</p>
+<p>In $\mathbb{C}$ the exponential is onto, and $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$ is a cylinder, with a fundamental domain a strip of width $2\pi$. Here $\mathbb{D}^\times\cong(\mathbb{Z}/2)^2\times\mathbb{R}^2$: four planes. The discrete factor is not a period; it is the component label.</p>
+<h3 id="the-logarithms-of-some-elements">The Logarithms of Some Elements</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$N(Q)$</th>
+<th>$\operatorname{Re}Q$</th>
+<th>$\operatorname{Log}Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\ln2$</td>
+</tr>
+<tr>
+<td>$5+3j$</td>
+<td>$16$</td>
+<td>$5$</td>
+<td>$\ln4+j\ln2$</td>
+</tr>
+<tr>
+<td>$4+3j$</td>
+<td>$7$</td>
+<td>$4$</td>
+<td>$\tfrac12\ln7+j\operatorname{artanh}\tfrac34=0.9729550745\,(1+j)$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third line uses $\operatorname{artanh}(3/4)=\tfrac12\ln7$, and reconstructs $4+3j$ up to $9\times10^{-16}$. The last two lines have no logarithm at all. In the complex table $-1$ and $i$ would appear with logarithms $i\pi$ and $i\pi/2$; here neither has one.</p>
+<h2 id="the-exponential-polar-decomposition">The Exponential Polar Decomposition</h2>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every split-complex number $Q$ with $N(Q)\neq0$ has exactly one exponential polar decomposition</p>
+<p>$$
+Q=\epsilon\exp(L), \qquad \epsilon\in\{\pm1,\pm j\},\quad L\in\mathbb{D}.
+$$</p>
+<p><strong>Existence.</strong> Put $r=\sqrt{\lvert N(Q)\rvert}$ and $u=Q/r$, so $\lvert N(u)\rvert=1$. Write $u=x+yj$. Exactly one of the four elements $\epsilon u$ has norm $+1$ and positive real part: for $N(u)=1$ take $\epsilon=1$ if $x>0$ and $\epsilon=-1$ if $x<0$; for $N(u)=-1$ take $\epsilon=j$ if $y>0$ and $\epsilon=-j$ if $y<0$. For that $\epsilon$, $\epsilon u$ has a unique logarithm $L_0$. Then $L=L_0+\ln r$ satisfies $\exp L=r\exp L_0=r\epsilon u=\epsilon Q$.</p>
+<p><strong>Uniqueness.</strong> If $\epsilon\exp L=\epsilon_1\exp L_1$, then $\exp L=\epsilon\epsilon_1\exp L_1$. If $\epsilon\epsilon_1=1$, injectivity gives $L=L_1$ and $\epsilon=\epsilon_1$. If the product is $-1$, the right side has negative real part and the left side positive; if it is $\pm j$, the right side has negative norm and the left side positive. Both are impossible, so the pair is unique.</p>
+<p>The decomposition is defined on $\mathbb{D}^\times$ and never uses the null cone. It does not claim that $\exp$ is onto $\{N>0\}$: the past cone uses $\epsilon=-1$. The four factors are the four components of the unit set.</p>
+<h3 id="the-two-factors">The Two Factors</h3>
+<p>The factors are</p>
+<p>$$
+\exp(\ln r)=r=\sqrt{\lvert N(Q)\rvert}, \qquad \epsilon\exp(\phi j)=\frac{Q}{r},
+$$</p>
+<p>and the exponent is their sum $L=\ln r+\phi j=\operatorname{Log}(\epsilon Q/r)+\ln r$. The logarithm is a right inverse of the exponential on the identity component, and the discrete factor extends this to the other three components. The continuous count is two on each component, the modulus and the angle; the component is a finite label. The group of units is</p>
+<p>$$
+\mathbb{D}^\times\cong\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2.
+$$</p>
+<h3 id="the-group-law-in-exponential-coordinates">The Group Law in Exponential Coordinates</h3>
+<p>The exponential turns multiplication into addition. In the coordinates $(\epsilon,\ln r,\phi)$,</p>
+<p>$$
+(\epsilon_1,\ln r_1,\phi_1)*(\epsilon_2,\ln r_2,\phi_2)=\bigl(\epsilon_1\epsilon_2,\ \ln(r_1r_2),\ \phi_1+\phi_2\bigr).
+$$</p>
+<p>The component, the logarithmic scale and the angle do not mix: $\mathbb{D}^\times$ is the product of the four-element group, a line and a line. In $\mathbb{C}$ the corresponding statement is $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$, with a periodic angle. Here the kernel is trivial, the exponent is a point of $\mathbb{D}$, and there is no period.</p>
+<h3 id="the-decomposition-in-one-table">The Decomposition in One Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>datum</th>
+<th>exponential polar decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>domain</td>
+<td>$N(Q)\neq0$</td>
+</tr>
+<tr>
+<td>exponent</td>
+<td>$L=\ln r+\phi j$, $r=\sqrt{\lvert N(Q)\rvert}$, $\phi\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>$\exp(\ln r)=r=\sqrt{\lvert N(Q)\rvert}$</td>
+</tr>
+<tr>
+<td>unit factor</td>
+<td>$\epsilon\exp(\phi j)=Q/r$</td>
+</tr>
+<tr>
+<td>uniqueness</td>
+<td>$(\epsilon,L)$ unique; no period</td>
+</tr>
+<tr>
+<td>group</td>
+<td>$\mathbb{D}^\times\cong(\mathbb{Z}/2)^2\times\mathbb{D}$</td>
+</tr>
+<tr>
+<td>factor types</td>
+<td>non-compact scale, non-compact unit factor, finite component label</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-matrix-picture">The Matrix Picture</h2>
+<h3 id="the-exponential-of-a-symmetric-matrix">The Exponential of a Symmetric Matrix</h3>
+<p>In the basis $\{1,j\}$, multiplication by $Q=q+jq'$ is $M_Q=qI+q'K$ with $K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ and $K^2=I$. Since $I$ and $K$ commute,</p>
+<p>$$
+\exp(xI+yK)=\exp(x)\bigl(\cosh y\,I+\sinh y\,K\bigr)=\exp(x)\begin{pmatrix}\cosh y&\sinh y\\ \sinh y&\cosh y\end{pmatrix}.
+$$</p>
+<p>The matrix is symmetric, with eigenvalues $\exp(x\pm y)>0$: the matrix exponential of a symmetric matrix is positive definite. Every positive definite matrix in the family has a unique real symmetric logarithm,</p>
+<p>$$
+\log M_Q=\tfrac12\ln N(Q)\,I+\operatorname{artanh}\frac{q'}{q}\,K, \qquad Q=q+jq',\quad q>\lvert q'\rvert.
+$$</p>
+<p>The symmetric matrix exponential therefore maps onto the positive definite matrices of the family, exactly the identity component. The other components are obtained by multiplying by $M_\epsilon\in\{I,-I,K,-K\}$; their matrices are not in that image.</p>
+<p>The unit matrix is not orthogonal in general. The Euclidean polar factor of $M_Q$ is $I$ on the identity component, $-I$ on the opposite component, and a reflection on the spacelike region, as in <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em>, §<em>The Matrix Polar Decomposition</em>. The algebraic unit factor and the orthogonal matrix factor are different objects: the orthogonal factor is only the discrete part $\epsilon$, while the continuous factor $\exp(\phi j)$ is absorbed into the positive factor.</p>
+<h3 id="the-matrix-logarithm">The Matrix Logarithm</h3>
+<p>On the identity component the real symmetric logarithm is unique and is the matrix of $L$. There is no $2\pi i$ ambiguity: the eigenvalues are positive and the logarithm is taken in the symmetric subalgebra. For the other components $M_Q=M_\epsilon\exp(L)$. The Euclidean polar decomposition is $(M_Q,I)$ on the identity component, $(-M_Q,-I)$ on the opposite one, and $(\lvert M_Q\rvert,\text{reflection})$ on the spacelike region.</p>
+<p>In $\mathbb{C}$ the matrix of a unit is a rotation in $SO(2)$ and the matrix exponential is periodic. Here the matrix of a unit of the identity component is symmetric positive definite, its logarithm is real and unique, and the matrix exponential is injective on the symmetric algebra.</p>
+<h3 id="the-derivative-and-the-jacobian">The Derivative and the Jacobian</h3>
+<p>The derivative of the exponential at $L$ is multiplication by $\exp L$:</p>
+<p>$$
+d\exp_L(H)=\exp(L)H,
+$$</p>
+<p>because $\exp(L+tH)=\exp(L)\exp(tH)$ when $\mathbb{D}$ is commutative. It is invertible, with inverse multiplication by $\exp(-L)$, so the exponential is a local diffeomorphism. The Jacobian determinant is</p>
+<p>$$
+\det d\exp_L=N(\exp L)=\exp(2q)=N(Q).
+$$</p>
+<p>The exponential multiplies the indefinite area by $N(Q)$ and is not a Euclidean conformal map.</p>
+<h2 id="the-three-polar-decompositions">The Three Polar Decompositions</h2>
+<h3 id="the-three-forms">The Three Forms</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>decomposition</th>
+<th>formula</th>
+<th>parameters</th>
+<th>domain</th>
+<th>uniqueness</th>
+<th>functions</th>
+<th>group reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modulus–unit</td>
+<td>$Q=ru$</td>
+<td>$r>0$, $\lvert N(u)\rvert=1$</td>
+<td>$N\neq0$</td>
+<td>unique</td>
+<td>square root</td>
+<td>$\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$</td>
+</tr>
+<tr>
+<td>rational-chart</td>
+<td>$Q=r\epsilon\frac{1-sj}{1+sj}$</td>
+<td>$r>0$, $\epsilon\in\{1,\pm j\}$, $s\neq\pm1$</td>
+<td>$N\neq0$ minus the negative real axis</td>
+<td>unique on the chart</td>
+<td>rational</td>
+<td>group chunk, local</td>
+</tr>
+<tr>
+<td>exponential</td>
+<td>$Q=\epsilon\exp(\ln r+\phi j)$</td>
+<td>$r>0$, $\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$</td>
+<td>$N\neq0$</td>
+<td>unique; no period</td>
+<td>exponential and logarithm</td>
+<td>$(\mathbb{Z}/2)^2\times\mathbb{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-modulusunit-form">The Modulus–Unit Form</h3>
+<p>The modulus–unit form $Q=ru$ is unique on $\mathbb{D}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of units.</p>
+<h3 id="the-rational-chart-form">The Rational-Chart Form</h3>
+<p>The rational-chart form writes the unit factor by the Cayley chart</p>
+<p>$$
+u(s)=\frac{1-sj}{1+sj}=\frac{1+s^2}{1-s^2}-j\frac{2s}{1-s^2}, \qquad s\neq\pm1,
+$$</p>
+<p>a bijection from $\mathbb{R}\setminus\{\pm1\}$ onto $\{N=1\}\setminus\{-1\}$; it is rational and misses the negative real axis.</p>
+<h3 id="the-exponential-form">The Exponential Form</h3>
+<p>The exponential form $Q=\epsilon\exp(\ln r+\phi j)$ is global on $\mathbb{D}^\times$, uses the exponential and the logarithm, and has a unique exponent; the price is the finite factor $\epsilon$.</p>
+<h3 id="the-change-of-coordinates">The Change of Coordinates</h3>
+<p>Comparing $u(s)$ with $u=\exp(\phi j)$ gives</p>
+<p>$$
+\frac{1-sj}{1+sj}=\exp\bigl(-2j\operatorname{artanh}s\bigr), \qquad s=-\tanh\frac{\phi}{2},\quad \phi=-2\operatorname{artanh}s.
+$$</p>
+<p>On the identity component this sends $\mathbb{R}$ onto $(-1,1)$. On the past component the rational chart has $\epsilon=1$ and the exponential chart $\epsilon=-1$; the same element satisfies $u(s)=-\exp(\phi j)$, hence $s=-\coth(\phi/2)=1/s_{\text{exp}}$. On the spacelike components the formula $s=-\tanh(\phi/2)$ holds with $s\in(-1,1)$.</p>
+<h3 id="what-the-comparison-says">What the Comparison Says</h3>
+<p>The three forms are three presentations of one factorisation. The modulus–unit form is global and algebraic, with a square root; the rational-chart form is rational and local, missing the negative real axis; the exponential form is global and transcendental, with a finite component label instead of a kernel. The exponential form is the only one in which the group law is addition, and the modulus–unit form the only one that is algebraic and global.</p>
+<p>In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, the angle is periodic, and no discrete factor is needed. Here the image is one component and $\mathbb{D}^\times/\exp(\mathbb{D})\cong(\mathbb{Z}/2)^2$. In a noncommutative algebra the amalgamation into one exponential fails; in the polar word of <em>The Polar Element Representation of Biquaternions</em> the order of the factors carries information.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-generic-split-complex-number">A Generic Split-Complex Number</h3>
+<p>Take $Q=5+3j$. Then $N(Q)=16$, $r=4$, and</p>
+<p>$$
+\phi=\operatorname{artanh}\tfrac35=\ln2=0.6931471805599453, \qquad L=\ln4+j\ln2=1.3862943611198906+0.6931471805599453\,j.
+$$</p>
+<p>The reconstruction is</p>
+<p>$$
+\exp L=4\bigl(\cosh(\ln2)+j\sinh(\ln2)\bigr)=4(1.25+0.75j)=5+3j,
+$$</p>
+<p>with error zero in double precision.</p>
+<h3 id="a-table-of-examples">A Table of Examples</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$N(Q)$</th>
+<th>$\epsilon$</th>
+<th>$L$</th>
+<th>$\exp L$</th>
+<th>$\lvert\epsilon\exp L-Q\rvert$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$\ln2$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-2$</td>
+<td>$4$</td>
+<td>$-1$</td>
+<td>$\ln2$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$-1$</td>
+<td>$j$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-j$</td>
+<td>$-1$</td>
+<td>$-j$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$5+3j$</td>
+<td>$16$</td>
+<td>$1$</td>
+<td>$\ln4+j\ln2$</td>
+<td>$5+3j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-5-3j$</td>
+<td>$16$</td>
+<td>$-1$</td>
+<td>$\ln4+j\ln2$</td>
+<td>$5+3j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$1+2j$</td>
+<td>$-3$</td>
+<td>$j$</td>
+<td>$\tfrac12\ln3+j\operatorname{artanh}\tfrac12$</td>
+<td>$2+j$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$-1-2j$</td>
+<td>$-3$</td>
+<td>$-j$</td>
+<td>$\tfrac12\ln3+j\operatorname{artanh}\tfrac12$</td>
+<td>$2+j$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$-1+2j$</td>
+<td>$-3$</td>
+<td>$j$</td>
+<td>$\tfrac12\ln3-j\operatorname{artanh}\tfrac12$</td>
+<td>$2-j$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$1-2j$</td>
+<td>$-3$</td>
+<td>$-j$</td>
+<td>$\tfrac12\ln3-j\operatorname{artanh}\tfrac12$</td>
+<td>$2-j$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The error is at most $2.3\times10^{-16}$. The table covers the four components; the vertices $\pm j$ have exponent $0$ and are pure discrete factors.</p>
+<h3 id="the-trivial-kernel">The Trivial Kernel</h3>
+<p>The kernel is $\{0\}$:</p>
+<p>$$
+\exp(0)=1, \qquad \exp(2\pi j)=\cosh(2\pi)+j\sinh(2\pi)=267.7467614837482+267.7448940410164\,j\neq1.
+$$</p>
+<p>There is no period and no lattice. The equation $\exp L=1$ has the sole solution $L=0$. The element $-1$ has no logarithm, not infinitely many: the complex non-uniqueness is replaced by a failure of existence on three components.</p>
+<h3 id="the-missed-past-cone">The Missed Past Cone</h3>
+<p>The element $-1$ has norm $1$ but no real logarithm, because its real part is negative; it is reached only as $-\exp(0)$, with $\epsilon=-1$. Every element of the past cone is written $\epsilon\exp(L)$ with $\epsilon=-1$, where $L$ is the logarithm of its opposite. The exponential alone reaches exactly the future cone.</p>
+<h2 id="the-exponential-coordinates">The Exponential Coordinates</h2>
+<h3 id="the-coordinate-lines">The Coordinate Lines</h3>
+<p>On each component the exponential coordinates are</p>
+<p>$$
+Q=\epsilon\exp(q+jq'), \qquad (q,q')\in\mathbb{R}^2,
+$$</p>
+<p>with the coordinate pairs</p>
+<p>$$
+\epsilon=\pm1:\quad (x,y)=\pm\bigl(\exp(q)\cosh q',\ \exp(q)\sinh q'\bigr),
+$$</p>
+<p>$$
+\epsilon=\pm j:\quad (x,y)=\pm\bigl(\exp(q)\sinh q',\ \exp(q)\cosh q'\bigr),
+$$</p>
+<p>a diffeomorphism of $\mathbb{R}^2$ onto the component, with inverse</p>
+<p>$$
+q=\tfrac12\ln\lvert N(Q)\rvert, \qquad q'=\operatorname{artanh}\frac{y'}{x'},
+$$</p>
+<p>where $(x',y')$ are the coordinates of $\epsilon Q$, which lies in the future cone.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinate</th>
+<th>image</th>
+<th>geometry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q=\text{const}$</td>
+<td>$x^2-y^2=N(\epsilon)\exp(2q)$</td>
+<td>a hyperbola branch, the level set of the norm</td>
+</tr>
+<tr>
+<td>$q'=\text{const}$</td>
+<td>the ray $t(\cosh q',\sinh q')$, $t>0$, mapped by $Q=\epsilon\exp(q+jq')$</td>
+<td>a ray from the origin</td>
+</tr>
+</tbody>
+</table></div>
+<p>The grid is hyperbolic polar. The curves of constant $q$ are the hyperbolas of constant norm; the curves of constant $q'$ are the rays of constant rapidity. There is no angular periodicity: $q'$ runs over the whole line.</p>
+<h3 id="the-conformal-factor">The Conformal Factor</h3>
+<p>The Jacobian of $(q,q')\mapsto(x,y)$ is</p>
+<p>$$
+J=\begin{pmatrix}\partial x/\partial q&\partial x/\partial q'\\ \partial y/\partial q&\partial y/\partial q'\end{pmatrix}=\begin{pmatrix}x&y\\ y&x\end{pmatrix},
+\qquad \det J=x^2-y^2=N(Q)=\pm\exp(2q).
+$$</p>
+<p>The signed Jacobian is $N(Q)$, positive on the timelike components and negative on the spacelike ones; its absolute value is $\exp(2q)$. The pullback of the indefinite metric is</p>
+<p>$$
+dx^2-dy^2=N(Q)\bigl(dq^2-dq'^2\bigr),
+$$</p>
+<p>because $dx=x\,dq+y\,dq'$ and $dy=y\,dq+x\,dq'$ cancel their cross terms. The map is conformal for the indefinite metric with factor $N(Q)$: positive on the two timelike components and negative on the two spacelike ones.</p>
+<p>There is no Euclidean conformal claim. The Euclidean pullback is</p>
+<p>$$
+dx^2+dy^2=(x^2+y^2)\bigl(dq^2+dq'^2\bigr)+4xy\,dq\,dq',
+$$</p>
+<p>which is not proportional to $dq^2+dq'^2$ unless $xy=0$.</p>
+<h3 id="the-harmonic-reading">The Harmonic Reading</h3>
+<p>The coordinate $q=\tfrac12\ln\lvert N\rvert$ and the angle $q'$ are linear, hence harmonic for the indefinite Laplacian $\square=\partial_q^2-\partial_{q'}^2$. The pair $(q,q')$ is the global coordinate supplied by the logarithm on the identity component, and the exponential is its inverse. The logarithm is not global because its domain is one component of four; the obstruction is the discrete quotient $(\mathbb{Z}/2)^2$, not a period.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential is $\exp(q+jq')=\exp(q)(\cosh q'+j\sinh q')$, with $N(\exp L)=\exp(2q)>0$. It is injective, its image is the future cone $\{N>0,\ \operatorname{Re}Q>0\}$, and it is not onto $\{N>0\}$: the past cone is missed. The inverse on the future cone is $\operatorname{Log}Q=\tfrac12\ln N(Q)+j\operatorname{artanh}(q'/q)$, and it is unique.</p>
+<p>Every invertible split-complex number has a unique exponential polar decomposition $Q=\epsilon\exp(L)$, with $\epsilon\in\{\pm1,\pm j\}$ and $L=\ln r+\phi j$. The factor $\epsilon$ records the component; the exponent is computed from $\epsilon Q$, which lies in the future cone. The group law is $(\epsilon_1,L_1)(\epsilon_2,L_2)=(\epsilon_1\epsilon_2,L_1+L_2)$, so $\mathbb{D}^\times\cong(\mathbb{Z}/2)^2\times\mathbb{D}$. The kernel is trivial, so there is no periodic ambiguity. The logarithm exists on one component and fails on the other three: this is the exchange of the complex case, where it exists everywhere and fails to be unique.</p>
+<p>In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\,K)$, symmetric positive definite on the identity component, with a unique real symmetric logarithm; the matrix of a unit is not orthogonal in general. The exponential coordinates map each component onto $\mathbb{R}^2$, with Jacobian $N(Q)$ and indefinite conformal factor $N(Q)$: $dx^2-dy^2=N(Q)(dq^2-dq'^2)$. The map is not Euclidean conformal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex algebra, $j^2=+1$</td>
+</tr>
+<tr>
+<td>$Q=q+jq'$</td>
+<td>a split-complex number</td>
+</tr>
+<tr>
+<td>$N(Q)=q^2-q'^2$</td>
+<td>the norm</td>
+</tr>
+<tr>
+<td>$\exp(L)$</td>
+<td>the exponential, $\exp(q)(\cosh q'+j\sinh q')$</td>
+</tr>
+<tr>
+<td>$L=q+jq'$</td>
+<td>an exponent in $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>$\epsilon$</td>
+<td>the component sign, $\epsilon\in\{\pm1,\pm j\}$</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>the hyperbolic angle, $L=\ln r+\phi j$</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}Q$</td>
+<td>the logarithm on the future cone</td>
+</tr>
+<tr>
+<td>$(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$</td>
+<td>the identity component, the future cone</td>
+</tr>
+<tr>
+<td>$K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>the reflection, $K^2=I$</td>
+</tr>
+<tr>
+<td>$M_Q=qI+q'K$</td>
+<td>the matrix of multiplication by $Q$</td>
+</tr>
+<tr>
+<td>$\operatorname{artanh}$</td>
+<td>the inverse hyperbolic tangent, $\lvert\cdot\rvert<1$</td>
+</tr>
+<tr>
+<td>$SO(1,1)$</td>
+<td>the determinant-one Lorentz group of the plane, two components</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the hyperbolic functions and the split-complex exponential.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra, its idempotents and its exponential.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the exponential map, the Lorentz group and its components.</li>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em> (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for the rapidity coordinate and the Lorentzian conformal structure.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for indefinite metrics and conformal structures.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for indefinite forms and their isometry groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

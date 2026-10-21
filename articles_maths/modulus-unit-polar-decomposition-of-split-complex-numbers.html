@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulus–Unit Polar Decomposition of Split-Complex Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modulusunit-polar-decomposition-of-split-complex-numbers"><strong>Modulus–Unit Polar Decomposition of Split-Complex Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the <strong>modulus–unit polar decomposition</strong> of a split-complex number: the writing</p>
+<p>$$
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{D}, \quad \lvert N(u)\rvert = 1,
+$$</p>
+<p>with $r$ the <strong>modulus</strong> and $u$ the <strong>unit factor</strong>. It is the algebraic member of the polar decompositions of $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>.</p>
+<p>The norm of $\mathbb{D}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of units is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.</p>
+<p>The article defines the norm and the two regimes (§<em>The Two Factors</em>), proves existence and uniqueness (§<em>Existence and Uniqueness</em>), describes the group of units and its maximal compact subgroup (§<em>The Group of Units and the Unit Set</em>), records the two axes (§<em>The Two Axes</em>), gives the matrix picture (§<em>The Matrix Picture</em>), computes examples (§<em>Worked Examples</em>) and compares the family (§<em>The Other Algebras</em>).</p>
+<p>The conventions and the symbols are those of <em>Split-Complex Algebra</em>, <em>Split-Complex Norm and Invertibility</em> and <em>Conventions in Mathematics</em>; the notation is collected in §<em>Summary of Notation</em>. The rational and exponential coordinates are the subjects of <em>Rational-Chart Polar Decomposition of Split-Complex Numbers</em> and <em>Exponential Polar Decomposition of Split-Complex Numbers</em>. Every numerical value displayed below was recomputed in double precision.</p>
+<h2 id="the-two-factors">The Two Factors</h2>
+<h3 id="the-norm-and-the-modulus">The Norm and the Modulus</h3>
+<p>Let $Q = q + j q'$ with $q, q' \in \mathbb{R}$. The <strong>norm</strong> is</p>
+<p>$$
+N(Q) = \langle Q\rangle_{\natural} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'^2 .
+$$</p>
+<p>It is a quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra,</p>
+<p>$$
+N(QB) = N(Q)N(B),
+$$</p>
+<p>and indefinite. Its sign partitions the algebra into three regions, which are the three regions of the Lorentzian plane.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>region</th>
+<th>condition</th>
+<th>sign of $N(Q)$</th>
+<th>contains</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timelike</td>
+<td>$\lvert q\rvert > \lvert q'\rvert$</td>
+<td>positive</td>
+<td>the two sectors through $\pm1$</td>
+</tr>
+<tr>
+<td>null</td>
+<td>$\lvert q\rvert = \lvert q'\rvert$</td>
+<td>zero</td>
+<td>the null cone, the zero-divisor set</td>
+</tr>
+<tr>
+<td>spacelike</td>
+<td>$\lvert q\rvert < \lvert q'\rvert$</td>
+<td>negative</td>
+<td>the two sectors through $\pm j$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>null cone</strong> is the pair of lines $q = \pm q'$, equivalently $\mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$ with the idempotents $\Pi_\pm = \tfrac12(1\pm j)$. Away from the origin it is exactly the zero-divisor set: a nonzero element of zero norm has no inverse. The null cone is the boundary of the polar decomposition.</p>
+<p>On the invertible set $N(Q)\neq0$ the <strong>modulus</strong> is</p>
+<p>$$
+r = \sqrt{\lvert N(Q)\rvert} = \sqrt{\lvert q^2-q'^2\rvert} > 0 .
+$$</p>
+<p>It is a positive square root of a non-negative real, with no sign or branch choice. It is multiplicative, because the norm is,</p>
+<p>$$
+r(QB) = r(Q)r(B).
+$$</p>
+<p>In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$, with $Q_\pm = q\pm q'$, the norm is the product $N(Q) = Q_+Q_-$, so the modulus is the geometric mean</p>
+<p>$$
+r = \sqrt{\lvert Q_+Q_-\rvert}.
+$$</p>
+<p>The modulus vanishes on the null cone, so it is not a norm: $r(1+j)=0$ while $1+j\neq0$. It is a multiplicative size on the group of units.</p>
+<h3 id="the-unit-factor-and-the-unit-set">The Unit Factor and the Unit Set</h3>
+<p>The <strong>unit factor</strong> of an invertible element is</p>
+<p>$$
+u = \frac{Q}{r}, \qquad N(u) = \frac{N(Q)}{r^2} = \operatorname{sign}N(Q) \in \{\pm1\}.
+$$</p>
+<p>The <strong>unit set</strong> is therefore</p>
+<p>$$
+\mathbb{D}^{(\pm1)} = \{\,u \in \mathbb{D} : \lvert N(u)\rvert = 1\,\} = \{N = 1\} \sqcup \{N = -1\},
+$$</p>
+<p>the union of the two hyperbolas $q^2-q'^2 = 1$ and $q'^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\phi \in \mathbb{R}$,</p>
+<p>$$
+N(u) = +1: \quad u = \pm\exp(\phi j) = \pm\bigl(\cosh\phi + j\sinh\phi\bigr),
+$$</p>
+<p>$$
+N(u) = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
+$$</p>
+<p>The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase <strong>unit factor</strong> names the unit elements for the norm in view, the split norm $N$. It is not the <strong>group of units</strong> $\mathbb{D}^\times = \{N\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in <em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>.</p>
+<h3 id="the-count-of-the-parameters">The Count of the Parameters</h3>
+<p>The decomposition has two real parameters on each component: the modulus $r>0$ and the branch coordinate $\phi\in\mathbb{R}$. The count matches the complex case, $2=1+1$; the range differs. On the circle the angle is a point of $\mathbb{R}/2\pi\mathbb{Z}$; on a branch the hyperbolic angle is a point of $\mathbb{R}$. The unit factor is one parameter and one discrete label.</p>
+<h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
+<p><strong>Theorem.</strong> Every split-complex number $Q$ with $N(Q)\neq0$ has exactly one modulus–unit polar decomposition.</p>
+<p><strong>Existence.</strong> Put $r = \sqrt{\lvert N(Q)\rvert}$ and $u = Q/r$. Since $N(Q)\neq0$, $r>0$. Since $N(\lambda Q) = \lambda^2N(Q)$ for real $\lambda$, one has $N(u) = N(Q)/r^2 = \operatorname{sign}N(Q)$, so $\lvert N(u)\rvert = 1$. Hence $Q = ru$ with $r>0$ and $\lvert N(u)\rvert = 1$.</p>
+<p><strong>Uniqueness.</strong> Suppose $Q = ru = r_1u_1$ with $r,r_1>0$ and $\lvert N(u)\rvert = \lvert N(u_1)\rvert = 1$. Taking absolute values of the norm gives $r^2 = \lvert N(Q)\rvert = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.</p>
+<p>The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a <strong>regime</strong>, forced by $\operatorname{sign}N(u) = \operatorname{sign}N(Q)$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on $\mathbb{D}^\times = \{N\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.</p>
+<h2 id="the-group-of-units-and-the-unit-set">The Group of Units and the Unit Set</h2>
+<h3 id="the-idempotent-coordinates-and-the-components">The Idempotent Coordinates and the Components</h3>
+<p>The group of units is $\mathbb{D}^\times = \{Q : N(Q)\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and</p>
+<p>$$
+\mathbb{D}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times, \qquad Q \longmapsto (Q_+,Q_-).
+$$</p>
+<p>Each factor $\mathbb{R}^\times$ has two components, so the product has four. The components are indexed by the signs of $Q_+$ and $Q_-$, equivalently by the four quadrants of the $(Q_+,Q_-)$ plane. Each component is an open quadrant in the $(Q_+,Q_-)$ coordinates, hence contractible and diffeomorphic to $\mathbb{R}^2$. The identity component is</p>
+<p>$$
+(\mathbb{D}^\times)_0 = \{Q : Q_+>0,\ Q_->0\} = \{q>\lvert q'\rvert\} = \{N(Q)>0,\ q>0\},
+$$</p>
+<p>the future cone of the indefinite form. It is the image of the exponential, treated in <em>Split-Complex Exponential and Lie Group Structure</em> and in <em>Exponential Polar Decomposition of Split-Complex Numbers</em>.</p>
+<h3 id="the-polar-splitting-of-the-group">The Polar Splitting of the Group</h3>
+<p>Every invertible element can be written in the normal form</p>
+<p>$$
+Q = r\,\epsilon\,\exp(\phi j), \qquad r = \sqrt{\lvert N(Q)\rvert} > 0, \quad \phi \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}.
+$$</p>
+<p>The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(r,\phi)$ is the continuous part, and the triple $(r,\phi,\epsilon)$ is unique. The multiplication law is</p>
+<p>$$
+(r_1,\phi_1,\epsilon_1)(r_2,\phi_2,\epsilon_2) = (r_1r_2,\ \phi_1+\phi_2,\ \epsilon_1\epsilon_2),
+$$</p>
+<p>with $\epsilon_1\epsilon_2$ computed in the four-element group $\{\pm1,\pm j\}$, where $j^2 = 1$. Hence the polar decomposition read as a map is a group isomorphism</p>
+<p>$$
+\mathbb{D}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\phi,\epsilon).
+$$</p>
+<p>Equivalently, the map $(Q_+,Q_-)\mapsto(r,\phi,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $r=\sqrt{\lvert Q_+Q_-\rvert}$ and $\phi=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.</p>
+<h3 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h3>
+<p><strong>Theorem.</strong> The maximal compact subgroup of $\mathbb{D}^\times$ is the four-element group $\{\pm1,\pm j\}$, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.</p>
+<p><strong>Proof.</strong> Let $K\subset\mathbb{D}^\times$ be compact and let $Q = r\epsilon\exp(\phi j)$ be its polar form. The modulus $r : \mathbb{D}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\phi : \mathbb{D}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\phi(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\phi=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.</p>
+<p>The contrast with the complex case is exact. There the group of units is $\mathbb{C}^\times\cong\mathbb{R}_{>0}\times\mathrm{U}(1)$, and the maximal compact subgroup is the circle $\mathrm{U}(1)$, connected and one-dimensional. Here the maximal compact subgroup is discrete of order four. There is no continuous compact factor: every compact subgroup lies in the four-element group.</p>
+<h3 id="the-deformation-retraction">The Deformation Retraction</h3>
+<p>The unit set $\mathbb{D}^{(\pm1)}$ is a subgroup of $\mathbb{D}^\times$, because the product of two elements of norm $\pm1$ has norm $\pm1$, and the inverse of such an element has the same norm. The map</p>
+<p>$$
+H : [0,1]\times\mathbb{D}^\times \longrightarrow \mathbb{D}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{r(Q)}\Bigr)Q,
+$$</p>
+<p>is continuous, fixes every point of $\mathbb{D}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in $\mathbb{D}^{(\pm1)}$ at $t=1$. The group of units therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\phi j)\mapsto \epsilon\exp((1-t)\phi j)$ contracts each branch to its vertex, so $\mathbb{D}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.</p>
+<h2 id="the-two-axes">The Two Axes</h2>
+<h3 id="the-hermitian-and-anti-hermitian-directions">The Hermitian and Anti-Hermitian Directions</h3>
+<p>Conjugation fixes the real axis and negates the split-imaginary axis. An element $\nu$ is <strong>Hermitian</strong> if $\bar\nu = \nu$ and <strong>anti-Hermitian</strong> if $\bar\nu = -\nu$. The Hermitian elements are the real axis $\mathbb{R}$, and the anti-Hermitian elements are $j\mathbb{R}$. On the real axis the norm is $q^2$, positive definite; on the split-imaginary axis it is $-q'^2$, negative definite. Every nonzero element of either axis is invertible. The modulus lies on the positive real axis. The unit set meets the real axis at $\pm1$, where $N=1$, and the split-imaginary axis at $\pm j$, where $N=-1$. Thus $j$ is a unit direction of negative norm.</p>
+<h3 id="the-roots-of-plus-one-zero-and-minus-one">The Roots of Plus One, Zero and Minus One</h3>
+<p>Let $\nu = q + jq'$ and solve $\nu^2 = c$ for $c\in\{-1,0,+1\}$. Since</p>
+<p>$$
+\nu^2 = (q^2+q'^2) + 2qq'\,j,
+$$</p>
+<p>the imaginary part vanishes when $qq' = 0$. The solutions are listed in the following table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>equation</th>
+<th>roots in $\mathbb{D}$</th>
+<th>row of the exponential</th>
+<th>image of $t\mapsto\exp(\nu t)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu^2 = -1$</td>
+<td>none</td>
+<td>trigonometric</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>$\nu^2 = 0$</td>
+<td>$\nu = 0$</td>
+<td>parabolic</td>
+<td>$\{1\}$</td>
+</tr>
+<tr>
+<td>$\nu^2 = +1$</td>
+<td>$\nu = \pm1,\ \pm j$</td>
+<td>hyperbolic</td>
+<td>$\mathbb{R}_{>0}$ for $\pm1$; the future branch of the hyperbola for $\pm j$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The trigonometric row is empty: $\mathbb{D}$ has no square root of $-1$. The parabolic row is degenerate: the only square-zero element is $0$, and $\exp(0)=1$. The hyperbolic row has four roots. The roots $\pm1$ generate the positive real scale $\exp(t)$, and the roots $\pm j$ generate the future branch $\exp(tj)=\cosh t+j\sinh t$ of the unit hyperbola; the past branch is reached by multiplying by $-1$. This is the exact exchange of the complex case, where $-1$ has the two roots $\pm i$ and $+1$ has the two roots $\pm1$; the split algebra moves the circle to the hyperbola and the compact generator to a non-compact one.</p>
+<h3 id="position-and-signature">Position and Signature</h3>
+<p>The two independent dichotomies of the family, position with respect to conjugation and the sign of the square of the direction, place the split unit factor in a slot that no definite algebra occupies.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>Hermitian direction</th>
+<th>anti-Hermitian direction</th>
+<th>unit factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\nu = \pm1$, $\nu^2 = +1$: the scale</td>
+<td>$\nu = \pm i$, $\nu^2 = -1$</td>
+<td>anti-Hermitian, signature $-1$: the circle</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$\nu = \pm1$, $\nu^2 = +1$: the scale</td>
+<td>$\nu = \pm j$, $\nu^2 = +1$</td>
+<td>anti-Hermitian, signature $+1$: the hyperbola</td>
+</tr>
+</tbody>
+</table></div>
+<p>In $\mathbb{D}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every unit group is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.</p>
+<h2 id="the-matrix-picture">The Matrix Picture</h2>
+<h3 id="multiplication-by-j">Multiplication by j</h3>
+<p>In the real basis $\{1,j\}$ a split-complex number is the pair $(q,q')$, and multiplication by $Q = q+jq'$ is the linear map</p>
+<p>$$
+M_Q = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} = q\,I + q'\,K, \qquad K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad K^2 = I .
+$$</p>
+<p>The matrix $K$ is a reflection, and $K^2 = I$ is the matrix form of $j^2 = +1$. The determinant and the trace are</p>
+<p>$$
+\det M_Q = q^2-q'^2 = N(Q), \qquad \operatorname{tr}M_Q = 2q,
+$$</p>
+<p>so the norm is the determinant and the modulus is the square root of the absolute determinant, $r = \sqrt{\lvert\det M_Q\rvert}$.</p>
+<h3 id="the-matrix-of-a-unit">The Matrix of a Unit</h3>
+<p>For a unit $u = x+yj$ the matrix is</p>
+<p>$$
+M_u = x\,I + y\,K = \begin{pmatrix} x & y \\ y & x \end{pmatrix}, \qquad \lvert x^2-y^2\rvert = 1.
+$$</p>
+<p>It is symmetric, and its eigenvalues are $x+y$ and $x-y$. The four cases are as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>sign of $x$</th>
+<th>eigenvalues</th>
+<th>definiteness of $M_u$</th>
+<th>orthogonal?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N=+1$</td>
+<td>$x>0$</td>
+<td>$x\pm y>0$</td>
+<td>positive definite</td>
+<td>no, unless $u=\pm1$</td>
+</tr>
+<tr>
+<td>$N=+1$</td>
+<td>$x<0$</td>
+<td>$x\pm y<0$</td>
+<td>negative definite</td>
+<td>no, unless $u=\pm1$</td>
+</tr>
+<tr>
+<td>$N=-1$</td>
+<td>$x>0$ or $x<0$</td>
+<td>opposite signs</td>
+<td>indefinite</td>
+<td>no, unless $u=\pm j$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix $M_u$ is <strong>not orthogonal</strong> in general. Indeed</p>
+<p>$$
+M_u^{\mathsf T}M_u = M_u^2 = (x^2+y^2)I + 2xyK,
+$$</p>
+<p>which equals $I$ only when $x^2+y^2 = 1$ and $xy = 0$, that is only for $u\in\{\pm1,\pm j\}$. The algebraic unit factor and the orthogonal matrix factor of the Euclidean polar decomposition are different objects. In the complex case the two coincide because $M_u\in SO(2)$; in the split case they do not.</p>
+<p>For a unit of norm $+1$ on the identity component, $x = \cosh\phi$ and $y = \sinh\phi$, so the eigenvalues are $\exp(\phi)$ and $\exp(-\phi)$, both positive. The matrix is symmetric positive definite; it is not orthogonal for the Euclidean metric, but it preserves the indefinite form because $N(uv) = N(u)N(v)$.</p>
+<h3 id="the-matrix-polar-decomposition">The Matrix Polar Decomposition</h3>
+<p>Let $M_Q$ be an invertible matrix in the family, $M_Q = qI + q'K$. The Euclidean polar decomposition is $M_Q = PU$, with $P$ symmetric positive definite and $U$ orthogonal. Since $M_Q$ is symmetric, the factors are read from its eigenvalues $\lambda_1 = q+q'$ and $\lambda_2 = q-q'$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>eigenvalues</th>
+<th>$P$</th>
+<th>$U$</th>
+<th>determinant of $U$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N>0$, $q>0$</td>
+<td>both positive</td>
+<td>$M_Q$</td>
+<td>$I$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$N>0$, $q<0$</td>
+<td>both negative</td>
+<td>$-M_Q$</td>
+<td>$-I$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$N<0$</td>
+<td>opposite signs</td>
+<td>$\lvert M_Q\rvert$</td>
+<td>reflection</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>On the identity component the matrix is already positive definite, and the polar decomposition is $(M_Q,I)$. On the opposite component it is negative definite, and the polar decomposition is $(-M_Q,-I)$. On the spacelike region the eigenvalues have opposite signs, the positive factor is $\lvert M_Q\rvert$, and the orthogonal factor is a reflection with determinant $-1$. This is the precise form of the statement that the matrix polar factor is not the algebraic unit factor. In the complex case the two factors are $rI$ and $M_u\in SO(2)$; here the unit matrix is symmetric, and the orthogonal factor is either a sign or a reflection.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-generic-split-complex-number">A Generic Split-Complex Number</h3>
+<p>Take $Q = 5+3j$. Then $N(Q) = 25-9 = 16>0$, so</p>
+<p>$$
+r = 4, \qquad u = \frac{5+3j}{4} = 1.25+0.75j, \qquad N(u) = 1.5625-0.5625 = 1.
+$$</p>
+<p>The angle is fixed by $\tanh\phi = q'/q = 3/5$, hence</p>
+<p>$$
+\phi = \operatorname{artanh}\frac35 = \ln 2 = 0.6931471805599453,
+$$</p>
+<p>and</p>
+<p>$$
+\exp(\phi j) = \cosh\phi + j\sinh\phi = 1.25+0.75j = u.
+$$</p>
+<p>In the idempotent coordinates $Q_+ = 8$ and $Q_- = 2$, the modulus is the geometric mean $\sqrt{16} = 4$, and the angle is half the logarithm of their ratio, $\tfrac12\ln4 = \ln2$. The reconstruction $4(1.25+0.75j)$ is exact in the data.</p>
+<h3 id="the-spacelike-regime">The Spacelike Regime</h3>
+<p>Take $Q = 1+2j$. Then $N(Q) = 1-4 = -3<0$, so</p>
+<p>$$
+r = \sqrt3 = 1.7320508075688772, \qquad u = \frac{1+2j}{\sqrt3} = 0.5773502691896258 + 1.1547005383792517\,j,
+$$</p>
+<p>and $N(u) = 1/3 - 4/3 = -1$. Here $u = j\exp(\phi j)$ with</p>
+<p>$$
+\phi = \operatorname{arsinh}\frac{1}{\sqrt3} = \operatorname{artanh}\frac{1}{2} = 0.5493061443340549,
+$$</p>
+<p>so that $\sinh\phi = 1/\sqrt3$ and $\cosh\phi = 2/\sqrt3$. The element $Q$ cannot be written with a unit factor of norm $+1$, because the sign of the norm is a regime.</p>
+<h3 id="a-table-of-examples">A Table of Examples</h3>
+<p>The following table applies the decomposition to elements of the four components and to the null cone.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$N(Q)$</th>
+<th>$r$</th>
+<th>$u$</th>
+<th>$N(u)$</th>
+<th>$\epsilon$</th>
+<th>$\phi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$+1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-2$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+<td>$-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$j$</td>
+<td>$-1$</td>
+<td>$j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-j$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$-j$</td>
+<td>$-1$</td>
+<td>$-j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$5+3j$</td>
+<td>$16$</td>
+<td>$4$</td>
+<td>$1.25+0.75j$</td>
+<td>$+1$</td>
+<td>$1$</td>
+<td>$\ln2$</td>
+</tr>
+<tr>
+<td>$1+2j$</td>
+<td>$-3$</td>
+<td>$\sqrt3$</td>
+<td>$0.5774+1.1547j$</td>
+<td>$-1$</td>
+<td>$j$</td>
+<td>$0.5493$</td>
+</tr>
+<tr>
+<td>$1+j$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>no polar form</td>
+</tr>
+<tr>
+<td>$\Pi_+$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>no polar form</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first four lines are the components. The fifth and sixth lines are the two nonzero-angle regimes. The last two lines are null: the modulus vanishes, the unit factor does not exist, and both are zero divisors.</p>
+<h3 id="the-reconstruction-error">The Reconstruction Error</h3>
+<p>The reconstruction reproduces each invertible entry to machine precision, with error below $4\times10^{-16}$; the factorisation is exact in exact arithmetic.</p>
+<h2 id="the-other-algebras">The Other Algebras</h2>
+<p>The modulus–unit decomposition exists in every algebra of the family, with the unit set of the norm in view.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>element</th>
+<th>norm</th>
+<th>modulus</th>
+<th>unit set</th>
+<th>topology of the unit set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$q$</td>
+<td>$q^2$</td>
+<td>$\lvert q\rvert$</td>
+<td>$\{\pm1\}$</td>
+<td>two points</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$Q = q+iq'$</td>
+<td>$q^2+q'^2$, definite</td>
+<td>$\sqrt{N}$</td>
+<td>$\mathrm{U}(1)$</td>
+<td>circle, compact and connected</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$Q = q+jq'$</td>
+<td>$q^2-q'^2$, indefinite</td>
+<td>$\sqrt{\lvert N\rvert}$, $N\neq0$</td>
+<td>$\{N=\pm1\}$</td>
+<td>four branches, non-compact</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\tilde q$</td>
+<td>sum of four squares, definite</td>
+<td>$\sqrt{N}$</td>
+<td>$S^3$</td>
+<td>sphere, compact and connected</td>
+</tr>
+</tbody>
+</table></div>
+<p>The split column is the only one in which the norm is indefinite and the unit set has four components. The complex and quaternion columns are definite and their unit sets are compact and connected, a circle and a three-sphere. The split column has a non-empty null cone, a non-compact unit set, and a maximal compact subgroup of four points.</p>
+<h2 id="summary">Summary</h2>
+<p>Every split-complex number $Q$ with $N(Q)\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert N(Q)\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert N(u)\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}N(u) = \operatorname{sign}N(Q)$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\phi j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\phi\in\mathbb{R}$.</p>
+<p>The group of units splits as</p>
+<p>$$
+\mathbb{D}^\times \cong \mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2,
+$$</p>
+<p>the first factor the modulus, the second the hyperbolic angle, the last the four components. The maximal compact subgroup is $\{\pm1,\pm j\}\cong(\mathbb{Z}/2)^2$, discrete of order four, and it is a deformation retract of the group. There is no continuous compact factor: the complex circle has become four points.</p>
+<p>Both axes are definite: the real axis has positive norm, the split-imaginary axis negative norm. The anti-Hermitian direction $j$ has square $+1$, so the unit factor is hyperbolic; there is no square root of $-1$, no trigonometric unit factor and no compact one-parameter group. The matrix of a unit is symmetric and generally not orthogonal; the matrix polar decomposition is $(M_Q,I)$ on the identity component, $(-M_Q,-I)$ on the opposite component, and $(\lvert M_Q\rvert,\text{reflection})$ on the spacelike region.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex algebra, basis $1$, $j$, $j^2=+1$</td>
+</tr>
+<tr>
+<td>$Q = q+jq'$</td>
+<td>a split-complex number, $q$ and $q'$ real</td>
+</tr>
+<tr>
+<td>$\bar Q = q-jq'$</td>
+<td>the split-complex conjugate</td>
+</tr>
+<tr>
+<td>$N(Q) = \langle Q\rangle_{\natural} = Q\bar Q = q^2-q'^2$</td>
+<td>the norm, indefinite of signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$\Pi_\pm = \tfrac12(1\pm j)$</td>
+<td>the idempotents, $Q = Q_+\Pi_++Q_-\Pi_-$</td>
+</tr>
+<tr>
+<td>$Q_\pm = q\pm q'$</td>
+<td>the idempotent coordinates</td>
+</tr>
+<tr>
+<td>$r = \sqrt{\lvert N(Q)\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$</td>
+<td>the modulus, a positive real</td>
+</tr>
+<tr>
+<td>$u = Q/r$</td>
+<td>the unit factor, $\lvert N(u)\rvert=1$</td>
+</tr>
+<tr>
+<td>$\epsilon$</td>
+<td>the component sign, an element of $\{\pm1,\pm j\}$</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>the hyperbolic angle or rapidity, $\phi\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}^{(\pm1)}$</td>
+<td>the unit set $\{\lvert N\rvert=1\}$, four branches</td>
+</tr>
+<tr>
+<td>$\mathbb{D}^\times = \{N\neq0\}$</td>
+<td>the group of units</td>
+</tr>
+<tr>
+<td>$(\mathbb{D}^\times)_0 = \{q>\lvert q'\rvert\}$</td>
+<td>the identity component, the future cone</td>
+</tr>
+<tr>
+<td>$K = \begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>the reflection matrix of multiplication by $j$, $K^2=I$</td>
+</tr>
+<tr>
+<td>$M_Q = qI+q'K$</td>
+<td>the matrix of multiplication by $Q$, $\det M_Q=N(Q)$</td>
+</tr>
+<tr>
+<td>$M_u = xI+yK$</td>
+<td>the matrix of a unit, symmetric, generally not orthogonal</td>
+</tr>
+<tr>
+<td>$O(1,1)$</td>
+<td>the Lorentz group of the plane, $\det=\pm1$ and form-preserving</td>
+</tr>
+<tr>
+<td>$SO(1,1)$</td>
+<td>the determinant-one subgroup of $O(1,1)$, two components</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the polar form of split-complex numbers and the hyperbola as the unit locus.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra, its idempotents and its zero divisors.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the orthogonal groups, the circle and the Lorentz group of the plane.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for norms of arbitrary signature and the connected components of their isometry groups.</li>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em> (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for hyperbolic geometry, its isometry groups and the parametrisation by rapidity.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for indefinite quadratic forms, their isotropic cones and their level sets.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

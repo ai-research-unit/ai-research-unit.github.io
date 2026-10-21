@@ -73,40 +73,40 @@
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The split complex plane $\mathbb{D}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms</p>
 <p>$$
-\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A)), \qquad \xi \in \mathbb{D},
+\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{D},
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
-\langle \xi, A \rangle = \operatorname{Re}(\bar{\xi} A) = u a - v a', \qquad \xi = u + jv, \quad A = a + ja'.
+\langle \xi, Q \rangle = \operatorname{Re}(\bar{\xi} Q) = u q - v q', \qquad \xi = u + jv, \quad Q = q + jq'.
 $$</p>
 <p>Note the minus sign: it comes from the split complex conjugation $\bar{\xi} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{D}}$ is isomorphic to $\mathbb{D}$ itself, but the pairing is indefinite.</p>
 <p>So at the level of the additive group, split complex harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a Lorentzian pairing instead of a Euclidean one.</p>
 <h3 id="the-split-complex-characters">The Split Complex Characters</h3>
 <p>The <strong>split complex characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{D}$:</p>
 <p>$$
-\chi_\xi(A) = \exp(j \operatorname{Re}(\bar{\xi} A)), \qquad \xi \in \mathbb{D},
+\chi_\xi(Q) = \exp(j \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{D},
 $$</p>
 <p>where the exponential is the split complex exponential. Explicitly,</p>
 <p>$$
-\chi_\xi(A) = \cosh(\operatorname{Re}(\bar{\xi} A)) + j \sinh(\operatorname{Re}(\bar{\xi} A)).
+\chi_\xi(Q) = \cosh(\operatorname{Re}(\bar{\xi} Q)) + j \sinh(\operatorname{Re}(\bar{\xi} Q)).
 $$</p>
-<p>These characters are <strong>unbounded</strong>: as $|\operatorname{Re}(\bar{\xi} A)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.</p>
+<p>These characters are <strong>unbounded</strong>: as $|\operatorname{Re}(\bar{\xi} Q)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.</p>
 <h2 id="the-split-complex-fourier-transform">The Split Complex Fourier Transform</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>split complex Fourier transform</strong> of a function $f : \mathbb{D} \to \mathbb{D}$ is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{D}} f(A) \exp(-j \operatorname{Re}(\bar{\xi} A)) \, dA,
+(\mathcal F f)(\xi) = \int_{\mathbb{D}} f(Q) \exp(-j \operatorname{Re}(\bar{\xi} Q)) \, dQ,
 $$</p>
-<p>where $dA$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.</p>
+<p>where $dQ$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.</p>
 <p><strong>Caution.</strong> The integral converges only for functions $f$ that decay faster than any exponential in both directions. This is the fundamental difference from the complex case.</p>
 <h3 id="the-idempotent-form">The Idempotent Form</h3>
 <p>In the idempotent basis, the split complex Fourier transform decomposes as</p>
 <p>$$
-(\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_1 + \mathcal F f_-(\xi_-) \Pi_2,
+(\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_+ + \mathcal F f_-(\xi_-) \Pi_-,
 $$</p>
 <p>where</p>
 <p>$$
-\mathcal F f_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(A_\pm) \exp(\mp \xi_\pm A_\pm) \, dA_\pm.
+\mathcal F f_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(Q_\pm) \exp(\mp \xi_\pm Q_\pm) \, dQ_\pm.
 $$</p>
 <p>The two integrals are <strong>Laplace transforms</strong>, one for each idempotent component. The first integral converges for $\xi_+ > 0$ and the second for $\xi_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.</p>
 <p>This is the precise sense in which split complex harmonic analysis is the Laplace transform in disguise.</p>
@@ -123,7 +123,7 @@ $$</p>
 <h3 id="relation-to-the-split-complex-fourier-transform">Relation to the Split Complex Fourier Transform</h3>
 <p>The split complex Fourier transform on the positive null direction is the Laplace transform:</p>
 <p>$$
-\mathcal F f_+(\xi_+) = \int_0^\infty f_+(A_+) \exp(-\xi_+ A_+) \, dA_+ = \mathcal{L} f_+(\xi_+).
+\mathcal F f_+(\xi_+) = \int_0^\infty f_+(Q_+) \exp(-\xi_+ Q_+) \, dQ_+ = \mathcal{L} f_+(\xi_+).
 $$</p>
 <p>So the split complex Fourier transform is the pair of Laplace transforms on the two null directions. This is not an analogy; it is an identity.</p>
 <h3 id="inversion">Inversion</h3>
@@ -134,15 +134,15 @@ $$</p>
 <p>which is a contour integral in the complex plane. So the inversion of the split complex Fourier transform requires complexification of the idempotent components. This is the price of working with unbounded characters.</p>
 <h2 id="the-split-complex-fourier-transform-on-a-bounded-interval">The Split Complex Fourier Transform on a Bounded Interval</h2>
 <h3 id="definition_2">Definition</h3>
-<p>On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\xi} A))$ are bounded, and the split complex Fourier transform</p>
+<p>On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\xi} Q))$ are bounded, and the split complex Fourier transform</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{-T}^T f(A) \exp(-j \operatorname{Re}(\bar{\xi} A)) \, dA
+(\mathcal F f)(\xi) = \int_{-T}^T f(Q) \exp(-j \operatorname{Re}(\bar{\xi} Q)) \, dQ
 $$</p>
 <p>converges for $f \in L^1([-T, T])$.</p>
 <h3 id="inversion_1">Inversion</h3>
 <p>On a bounded interval, the inversion formula is</p>
 <p>$$
-f(A) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(j \operatorname{Re}(\bar{\xi} A)) \, d\xi,
+f(Q) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(j \operatorname{Re}(\bar{\xi} Q)) \, d\xi,
 $$</p>
 <p>under suitable conditions. This is the analogue of the Fourier inversion theorem for the split complex case, and it is the setting in which split complex harmonic analysis is useful.</p>
 <h3 id="applications">Applications</h3>
@@ -151,7 +151,7 @@ $$</p>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>convolution</strong> of $f, g : \mathbb{D} \to \mathbb{D}$ is</p>
 <p>$$
-(f * g)(A) = \int_{\mathbb{D}} f(A - B) g(B) \, dB,
+(f * g)(Q) = \int_{\mathbb{D}} f(Q - B) g(B) \, dB,
 $$</p>
 <p>whenever the integral converges. This is the convolution on the additive group $\mathbb{D} \cong \mathbb{R}^2$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
@@ -183,7 +183,7 @@ $$</p>
 <h3 id="the-idempotent-form_2">The Idempotent Form</h3>
 <p>In the idempotent basis,</p>
 <p>$$
-\delta = \delta_+ \Pi_1 + \delta_- \Pi_2,
+\delta = \delta_+ \Pi_+ + \delta_- \Pi_-,
 $$</p>
 <p>where $\delta_+$ and $\delta_-$ are the ordinary real delta distributions on the two null directions.</p>
 <h2 id="the-split-complex-hilbert-transform">The Split Complex Hilbert Transform</h2>
@@ -196,7 +196,7 @@ $$</p>
 <h3 id="the-split-complex-hilbert-transform-on-math60">The Split Complex Hilbert Transform on $\mathbb{D}$</h3>
 <p>For $f : \mathbb{D} \to \mathbb{D}$, the split complex Hilbert transform is defined by</p>
 <p>$$
-Hf(A) = Hf_+(A_+) \Pi_1 + Hf_-(A_-) \Pi_2.
+Hf(Q) = Hf_+(Q_+) \Pi_+ + Hf_-(Q_-) \Pi_-.
 $$</p>
 <p>So the split complex Hilbert transform is the pair of ordinary real Hilbert transforms.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
@@ -213,13 +213,13 @@ $$</p>
 <h3 id="the-split-complex-maximal-function">The Split Complex Maximal Function</h3>
 <p>The <strong>split complex Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{D})$ is</p>
 <p>$$
-Mf(A) = \sup_{r > 0} \frac{1}{|B(A, r)|} \int_{B(A, r)} \|f(B)\|_E \, dB,
+Mf(Q) = \sup_{r > 0} \frac{1}{|B(Q, r)|} \int_{B(Q, r)} \|f(B)\|_E \, dB,
 $$</p>
-<p>where $B(A, r)$ is the Euclidean ball of radius $r$ centred at $A$, and $|B(A, r)|$ is its area.</p>
+<p>where $B(Q, r)$ is the Euclidean ball of radius $r$ centred at $Q$, and $|B(Q, r)|$ is its area.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
 <p><strong>Theorem (Hardy–Littlewood, split version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D})$ and every $\lambda > 0$,</p>
 <p>$$
-|\{A : Mf(A) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$</p>
 <p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{D})$ for $1 < p \leq \infty$.</p>
 <p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
@@ -233,14 +233,14 @@ $$</p>
 <h3 id="singular-integrals">Singular Integrals</h3>
 <p>A <strong>split complex Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{D}) \to L^2(\mathbb{D})$ with a kernel $K : \mathbb{D} \times \mathbb{D} \to \mathbb{D}$ such that</p>
 <p>$$
-Tf(A) = \int_{\mathbb{D}} K(A, B) f(B) \, dB
+Tf(Q) = \int_{\mathbb{D}} K(Q, B) f(B) \, dB
 $$</p>
-<p>for $A \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
+<p>for $Q \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
 <p>$$
-\|K(A, B)\|_E \leq \frac{C}{\|A - B\|_E},
+\|K(Q, B)\|_E \leq \frac{C}{\|Q - B\|_E},
 $$</p>
 <p>$$
-\|K(A, B) - K(A', B)\|_E \leq C \frac{\|A - A'\|_E^\delta}{\|A - B\|_E^{1+\delta}}, \qquad \|A - A'\|_E < \frac{1}{2} \|A - B\|_E,
+\|K(Q, B) - K(Q', B)\|_E \leq C \frac{\|Q - Q'\|_E^\delta}{\|Q - B\|_E^{1+\delta}}, \qquad \|Q - Q'\|_E < \frac{1}{2} \|Q - B\|_E,
 $$</p>
 <p>and the analogous estimate in the second variable, for some $\delta > 0$.</p>
 <p><strong>Theorem (Calderón–Zygmund, split version).</strong> Every split complex Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{D})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
@@ -255,7 +255,7 @@ $$</p>
 $$</p>
 <p>where the power is the split complex power. In the idempotent basis,</p>
 <p>$$
-\mathcal{M} f(s) = \mathcal{M} f_+(s_+) \Pi_1 + \mathcal{M} f_-(s_-) \Pi_2,
+\mathcal{M} f(s) = \mathcal{M} f_+(s_+) \Pi_+ + \mathcal{M} f_-(s_-) \Pi_-,
 $$</p>
 <p>where $\mathcal{M}$ on the right is the ordinary real Mellin transform.</p>
 <h3 id="relation-to-the-split-complex-fourier-transform_1">Relation to the Split Complex Fourier Transform</h3>
@@ -278,7 +278,7 @@ $$</p>
 <h3 id="definition_7">Definition</h3>
 <p>The <strong>split complex Radon transform</strong> of a function $f : \mathbb{D} \to \mathbb{D}$ is</p>
 <p>$$
-Rf(\theta, t) = \int_{L(\theta, t)} f(A) \, ds,
+Rf(\theta, t) = \int_{L(\theta, t)} f(Q) \, ds,
 $$</p>
 <p>where $L(\theta, t)$ is the line with normal direction $(\cosh\theta, \sinh\theta)$ and signed distance $t$ from the origin, and $ds$ is the hyperbolic arc length.</p>
 <h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
@@ -291,7 +291,7 @@ $$</p>
 <h3 id="the-inversion-formula">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> For suitable $f$,</p>
 <p>$$
-f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\xi} A)) \, d\sigma \, d\theta,
+f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\xi} Q)) \, d\sigma \, d\theta,
 $$</p>
 <p>where $\xi = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.</p>
 <h2 id="the-wavelet-transform">The Wavelet Transform</h2>
@@ -314,7 +314,7 @@ $$</p>
 <h3 id="the-split-complex-wavelet-transform">The Split Complex Wavelet Transform</h3>
 <p>In the split complex setting, the wavelet $\psi$ is allowed to be split-complex-valued, and the transform becomes</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}} f(A) \overline{\psi\left( \frac{A - b}{a} \right)} \, dA, \qquad a \in \mathbb{D}^\times, \; b \in \mathbb{D}.
+W_\psi f(Q_2, b) = \frac{1}{\sqrt{|N(Q_2)|}} \int_{\mathbb{D}} f(Q) \overline{\psi\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in \mathbb{D}^\times, \; b \in \mathbb{D}.
 $$</p>
 <p>The split complex wavelet transform is used in hyperbolic signal processing, where it provides both magnitude and hyperbolic phase information.</p>
 <h2 id="summary">Summary</h2>
@@ -338,11 +338,11 @@ $$</p>
 <td>Split imaginary unit, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$A = a + ja'$</td>
-<td>General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$</td>
+<td>$Q = q + jq'$</td>
+<td>General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$</td>
 </tr>
 <tr>
-<td>$\chi_\xi(A) = \exp(j \operatorname{Re}(\bar{\xi} A))$</td>
+<td>$\chi_\xi(Q) = \exp(j \operatorname{Re}(\bar{\xi} Q))$</td>
 <td>Split complex character</td>
 </tr>
 <tr>
@@ -382,11 +382,11 @@ $$</p>
 <td>Split complex wavelet transform</td>
 </tr>
 <tr>
-<td>$\Pi_1 = (1 + j)/2$</td>
+<td>$\Pi_+ = (1 + j)/2$</td>
 <td>Positive idempotent</td>
 </tr>
 <tr>
-<td>$\Pi_2 = (1 - j)/2$</td>
+<td>$\Pi_- = (1 - j)/2$</td>
 <td>Negative idempotent</td>
 </tr>
 </tbody>

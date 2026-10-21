@@ -67,59 +67,59 @@
       <div class="article-body">
         <h1 id="split-complex-two-component-element-representation"><strong>Split-Complex Two-Component Element Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of <strong>two real coefficients</strong>, $A = a + j a' \leftrightarrow (a, a')$. This article presents that <strong>two-component realization</strong> in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after <em>Split-Complex Element Representations</em> and <em>Split-Complex Regular Element Representation</em>.</p>
+<p>The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of <strong>two real coefficients</strong>, $Q = q + j q' \leftrightarrow (q, q')$. This article presents that <strong>two-component realization</strong> in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after <em>Split-Complex Element Representations</em> and <em>Split-Complex Regular Element Representation</em>.</p>
 <p>The word <em>representation</em> is used here in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of <em>Split-Complex Element Representations</em>, and the matrix of the action on this coefficient space is the subject of <em>Split-Complex Regular Element Representation</em>; this article supplies the coordinate space on which that operator is written.</p>
-<p>The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to <em>Split-Complex Regular Element Representation</em>; it does not treat the polar forms, which belong to <em>Split-Complex Polar Element Representation</em>; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the <strong>definite</strong> one and whose product rule differs from the present one in a single sign.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $\langle A\rangle_{\natural} = a^2-a'^2$.</p>
+<p>The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to <em>Split-Complex Regular Element Representation</em>; it does not treat the polar forms, which belong to <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> and its two companion articles; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the <strong>definite</strong> one and whose product rule differs from the present one in a single sign.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{\natural} = q^2-q'^2$.</p>
 <h2 id="the-coefficient-space">The Coefficient Space</h2>
-<p><strong>Definition.</strong> The <strong>two-component vector</strong> of a split-complex number $A = a+j a'$ is the ordered pair</p>
+<p><strong>Definition.</strong> The <strong>two-component vector</strong> of a split-complex number $Q = q+j q'$ is the ordered pair</p>
 <p>$$
-A^\mu = (A^0, A^1), \qquad A^0 = a, \quad A^1 = a'.
+Q^\mu = (Q^0, Q^1), \qquad Q^0 = q, \quad Q^1 = q'.
 $$</p>
-<p>The coefficient of the unit is written $A^0$ and the coefficient of $j$ is written $A^1$; the component $A^0$ is the <strong>real component</strong> and $A^1$ the <strong>imaginary component</strong>. These are the honest names, because they are the coefficients of the real and imaginary parts of $A$ and nothing else.</p>
-<p><strong>Proposition.</strong> The map $A \mapsto A^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.</p>
+<p>The coefficient of the unit is written $Q^0$ and the coefficient of $j$ is written $Q^1$; the component $Q^0$ is the <strong>real component</strong> and $Q^1$ the <strong>imaginary component</strong>. These are the honest names, because they are the coefficients of the real and imaginary parts of $Q$ and nothing else.</p>
+<p><strong>Proposition.</strong> The map $Q \mapsto Q^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.</p>
 <p><strong>Proof.</strong> The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$.</p>
 <p>The coefficient space $\mathbb{R}^2$ <strong>is</strong> the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{D}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of <em>Split-Complex Regular Element Representation</em>, and the dimension of the coefficient space are the same number for the same reason.</p>
 <h3 id="coordinates-in-the-idempotent-basis">Coordinates in the Idempotent Basis</h3>
-<p>The coefficient pair $(a, a')$ in the basis $\{1, j\}$ and the idempotent pair $(A_+, A_-)$ in the basis $\{\Pi_1, \Pi_2\}$ are related by</p>
+<p>The coefficient pair $(q, q')$ in the basis $\{1, j\}$ and the idempotent pair $(Q_+, Q_-)$ in the basis $\{\Pi_+, \Pi_-\}$ are related by</p>
 <p>$$
-A_+ = a+a', \qquad A_- = a-a', \qquad a = \tfrac12(A_+ + A_-), \qquad a' = \tfrac12(A_+ - A_-),
+Q_+ = q+q', \qquad Q_- = q-q', \qquad q = \tfrac12(Q_+ + Q_-), \qquad q' = \tfrac12(Q_+ - Q_-),
 $$</p>
-<p>the change of coordinates of the plane. The pair $(A_+, A_-)$ is the pair of <strong>eigen-coordinates</strong> of the conjugation, since the regular representation is diagonal in that basis, and it is also the pair that makes the multiplication componentwise.</p>
+<p>the change of coordinates of the plane. The pair $(Q_+, Q_-)$ is the pair of <strong>eigen-coordinates</strong> of the conjugation, since the regular representation is diagonal in that basis, and it is also the pair that makes the multiplication componentwise.</p>
 <h2 id="the-column-and-the-row">The Column and the Row</h2>
-<p><strong>Definition.</strong> The <strong>column</strong> of $A$ is the $2\times 1$ matrix</p>
+<p><strong>Definition.</strong> The <strong>column</strong> of $Q$ is the $2\times 1$ matrix</p>
 <p>$$
-A = \begin{pmatrix} a \\ a' \end{pmatrix},
+Q = \begin{pmatrix} q \\ q' \end{pmatrix},
 $$</p>
-<p>the transpose of the two-component vector. The <strong>row</strong> of $A$ is the $1\times 2$ matrix</p>
+<p>the transpose of the two-component vector. The <strong>row</strong> of $Q$ is the $1\times 2$ matrix</p>
 <p>$$
-A^{\mathsf{T}} = \begin{pmatrix} a & a' \end{pmatrix}.
+Q^{\mathsf{T}} = \begin{pmatrix} q & q' \end{pmatrix}.
 $$</p>
-<p>The column is the transcribed form of the same object, and it is convenient because the product of split-complex numbers is bilinear. For a fixed $A$, the map $B \mapsto AB$ sends coordinates linearly to coordinates, so it is an $\mathbb{R}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $2\times2$ matrix acting on the column of $B$:</p>
+<p>The column is the transcribed form of the same object, and it is convenient because the product of split-complex numbers is bilinear. For a fixed $Q$, the map $B \mapsto QB$ sends coordinates linearly to coordinates, so it is an $\mathbb{R}$-linear endomorphism of the coefficient space, and with the column convention it is written as a $2\times2$ matrix acting on the column of $B$:</p>
 <p>$$
-AB \longleftrightarrow \mathsf{M}_2(A)\, B, \qquad \mathsf{M}_2(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}.
+QB \longleftrightarrow \mathsf{M}_2(Q)\, B, \qquad \mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}.
 $$</p>
-<p>The matrix $\mathsf{M}_2(A)$ is constructed and verified in <em>Split-Complex Regular Element Representation</em>; the present article records only that the product rule admits this reading. The <strong>component form</strong> is the same statement written out:</p>
+<p>The matrix $\mathsf{M}_2(Q)$ is constructed and verified in <em>Split-Complex Regular Element Representation</em>; the present article records only that the product rule admits this reading. The <strong>component form</strong> is the same statement written out:</p>
 <p>$$
-AB = (a b + a' b') + (a b' + a' b) j, \qquad B = b+j b',
+QB = (q b + q' b') + (q b' + q' b) j, \qquad B = b+j b',
 $$</p>
-<p>so the two components of the product are the two entries of the matrix product $\mathsf{M}_2(A)B$.</p>
-<p><strong>Remark (the row is the dual).</strong> The row $A^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $A$ by the standard pairing $\langle A^{\mathsf{T}}, B\rangle = a b + a' b'$, and it is <strong>not</strong> a further realization of the algebra. The dual of a left module is a right module, carrying the <em>right</em> action $(\varphi\cdot A)(B) = \varphi(AB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(A)$ is $\mathsf{M}_2(A)$ itself, since the regular matrix is symmetric.</p>
+<p>so the two components of the product are the two entries of the matrix product $\mathsf{M}_2(Q)B$.</p>
+<p><strong>Remark (the row is the dual).</strong> The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is <strong>not</strong> a further realization of the algebra. The dual of a left module is a right module, carrying the <em>right</em> action $(\varphi\cdot Q)(B) = \varphi(QB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.</p>
 <h2 id="multiplication-in-two-component-form">Multiplication in Two-Component Form</h2>
-<p><strong>Proposition (the product in components).</strong> Let $A, B$ have two-component vectors $(a, a')$ and $(b, b')$. Then the two-component vector of the product has components</p>
+<p><strong>Proposition (the product in components).</strong> Let $Q, B$ have two-component vectors $(q, q')$ and $(b, b')$. Then the two-component vector of the product has components</p>
 <p>$$
-(AB)^0 = a b + a' b', \qquad (AB)^1 = a b' + a' b.
+(QB)^0 = q b + q' b', \qquad (QB)^1 = q b' + q' b.
 $$</p>
-<p><strong>Proof.</strong> Expand $AB = (a+j a')(b+j b') = a b + a b' j + a' b j + a' b' j^2$ and use $j^2 = +1$ to collect the terms:</p>
+<p><strong>Proof.</strong> Expand $QB = (q+j q')(b+j b') = q b + q b' j + q' b j + q' b' j^2$ and use $j^2 = +1$ to collect the terms:</p>
 <p>$$
-AB = (a b + a' b') 1 + (a b' + a' b) j,
+QB = (q b + q' b') 1 + (q b' + q' b) j,
 $$</p>
 <p>which is the displayed pair.</p>
-<p><strong>Comparison with the complex case.</strong> For the complex number $A = a+i a'$ with the complex unit $i^2 = -1$, the product with $B = b+i b'$ has components</p>
+<p><strong>Comparison with the complex case.</strong> For the complex number $Q = q+i q'$ with the complex unit $i^2 = -1$, the product with $B = b+i b'$ has components</p>
 <p>$$
-(AB)^0 = a b - a' b', \qquad (AB)^1 = a b' + a' b.
+(QB)^0 = q b - q' b', \qquad (QB)^1 = q b' + q' b.
 $$</p>
-<p>The two product rules differ <strong>only</strong> in the sign of the $a' b'$ term in the first component: the split-complex product adds $a' b'$, the complex product subtracts it. This single sign is the whole difference between the two algebras at the level of components, and it is the reason the split-complex norm is indefinite while the complex one is definite.</p>
+<p>The two product rules differ <strong>only</strong> in the sign of the $q' b'$ term in the first component: the split-complex product adds $q' b'$, the complex product subtracts it. This single sign is the whole difference between the two algebras at the level of components, and it is the reason the split-complex norm is indefinite while the complex one is definite.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -131,13 +131,13 @@ $$</p>
 <tbody>
 <tr>
 <td>complex ($i^2 = -1$)</td>
-<td>$a b - a' b'$</td>
-<td>$a b' + a' b$</td>
+<td>$q b - q' b'$</td>
+<td>$q b' + q' b$</td>
 </tr>
 <tr>
 <td>split-complex ($j^2 = +1$)</td>
-<td>$a b + a' b'$</td>
-<td>$a b' + a' b$</td>
+<td>$q b + q' b'$</td>
+<td>$q b' + q' b$</td>
 </tr>
 </tbody>
 </table></div>
@@ -170,46 +170,46 @@ $$</p>
 </table></div>
 <p>The table is the group table of $\mathbb{Z}/2$ with $j$ playing the non-identity element, and the algebra is the group ring $\mathbb{R}[\mathbb{Z}/2]$.</p>
 <h2 id="the-conjugation-in-coordinates">The Conjugation in Coordinates</h2>
-<p>For $A = a+j a'$ the conjugation is $\bar A = a-j a'$, so in coordinates</p>
+<p>For $Q = q+j q'$ the conjugation is $\bar Q = q-j q'$, so in coordinates</p>
 <p>$$
-\overline{(a, a')} = (a, -a'),
+\overline{(q, q')} = (q, -q'),
 $$</p>
 <p>and in the idempotent coordinates</p>
 <p>$$
-\overline{(A_+, A_-)} = (A_-, A_+),
+\overline{(Q_+, Q_-)} = (Q_-, Q_+),
 $$</p>
-<p>because $\bar A = a-j a' = A_- \Pi_1 + A_+ \Pi_2$. So the conjugation reflects the coefficient plane across the real axis and swaps the two idempotent coordinates. It is $\mathbb{R}$-linear, of order two, and its matrix in the basis $\{1, j\}$ is</p>
+<p>because $\bar Q = q-j q' = Q_- \Pi_+ + Q_+ \Pi_-$. So the conjugation reflects the coefficient plane across the real axis and swaps the two idempotent coordinates. It is $\mathbb{R}$-linear, of order two, and its matrix in the basis $\{1, j\}$ is</p>
 <p>$$
 C = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
 $$</p>
-<p>a diagonal reflection; in the idempotent basis $\{\Pi_1, \Pi_2\}$ its matrix is $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, the swap. In the complex case the matrix is the same $C$; the difference is not in the conjugation but in the product, and it is the product that makes the conjugation a <strong>ring</strong> involution here as there.</p>
+<p>a diagonal reflection; in the idempotent basis $\{\Pi_+, \Pi_-\}$ its matrix is $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, the swap. In the complex case the matrix is the same $C$; the difference is not in the conjugation but in the product, and it is the product that makes the conjugation a <strong>ring</strong> involution here as there.</p>
 <h2 id="the-two-fixed-point-subspaces">The Two Fixed-Point Subspaces</h2>
 <p>The conjugation splits the coefficient space into its fixed and anti-fixed subspaces.</p>
-<p><strong>Fixed subspace.</strong> The condition $(a,-a') = (a,a')$ gives $a' = 0$, so</p>
+<p><strong>Fixed subspace.</strong> The condition $(q,-q') = (q,q')$ gives $q' = 0$, so</p>
 <p>$$
-\mathbb{R}_{\mathbb{D}} = \{(a, 0)\},
+\mathbb{R}_{\mathbb{D}} = \{(q, 0)\},
 $$</p>
 <p>the real axis, of real dimension $1$. It is the set of real components.</p>
-<p><strong>Anti-fixed subspace.</strong> The condition $(a,-a') = (-a,-a')$ gives $a = 0$, so</p>
+<p><strong>Anti-fixed subspace.</strong> The condition $(q,-q') = (-q,-q')$ gives $q = 0$, so</p>
 <p>$$
-j\mathbb{R}_{\mathbb{D}} = \{(0, a')\},
+j\mathbb{R}_{\mathbb{D}} = \{(0, q')\},
 $$</p>
 <p>the split imaginary axis, of real dimension $1$. Its elements are the pure imaginary components.</p>
-<p>So $\mathbb{D} = \mathbb{R}_{\mathbb{D}}\oplus j\mathbb{R}_{\mathbb{D}}$ as a direct sum of coordinate axes, and each coordinate $a, a'$ is the projection onto the corresponding axis:</p>
+<p>So $\mathbb{D} = \mathbb{R}_{\mathbb{D}}\oplus j\mathbb{R}_{\mathbb{D}}$ as a direct sum of coordinate axes, and each coordinate $q, q'$ is the projection onto the corresponding axis:</p>
 <p>$$
-a = \tfrac12(A + \bar A), \qquad a' = \tfrac12 j^{-1}(A - \bar A).
+q = \tfrac12(Q + \bar Q), \qquad q' = \tfrac12 j^{-1}(Q - \bar Q).
 $$</p>
 <p>In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $(t,-t)$, and it is those two lines, rather than the coordinate axes, that carry the multiplicative structure: the coordinate axes carry the definite norm, the diagonals the isotropic one.</p>
 <h2 id="the-norm-with-its-two-signs">The Norm with Its Two Signs</h2>
-<p>The norm of $A = a+j a'$ in coordinates is</p>
+<p>The norm of $Q = q+j q'$ in coordinates is</p>
 <p>$$
-\langle A\rangle_{\natural} = A\bar A = a^2 - a'^2,
+\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2,
 $$</p>
 <p>the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form</p>
 <p>$$
-g(A, B) = a b - a' b', \qquad A = (a,a'), \; B = (b,b'),
+g(Q, B) = q b - q' b', \qquad Q = (q,q'), \; B = (b,b'),
 $$</p>
-<p>with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficient space is a <strong>Lorentzian plane</strong>: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $a = \pm a'$.</p>
+<p>with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficient space is a <strong>Lorentzian plane</strong>: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $q = \pm q'$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -220,18 +220,18 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>spacelike</td>
-<td>$\lvert a\rvert > \lvert a'\rvert$</td>
+<td>timelike</td>
+<td>$\lvert q\rvert > \lvert q'\rvert$</td>
 <td>$+$</td>
 </tr>
 <tr>
 <td>null</td>
-<td>$\lvert a\rvert = \lvert a'\rvert$</td>
+<td>$\lvert q\rvert = \lvert q'\rvert$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>timelike</td>
-<td>$\lvert a\rvert < \lvert a'\rvert$</td>
+<td>spacelike</td>
+<td>$\lvert q\rvert < \lvert q'\rvert$</td>
 <td>$-$</td>
 </tr>
 </tbody>
@@ -239,14 +239,14 @@ $$</p>
 <h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
 <p>Restricted to the two fixed-point subspaces the norm is definite:</p>
 <p>$$
-N\big|_{\mathbb{R}_{\mathbb{D}}}(a) = a^2 \quad (\text{positive definite}), \qquad N\big|_{j\mathbb{R}_{\mathbb{D}}}(a') = -a'^2 \quad (\text{negative definite}),
+N\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad N\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
 $$</p>
-<p>so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in <em>Split-Complex Norm and Invertibility</em>, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $N = A_+A_-$, which vanishes exactly when one coordinate vanishes.</p>
+<p>so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in <em>Split-Complex Norm and Invertibility</em>, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $N = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.</p>
 <p><strong>Comparison with the complex case.</strong> For $\mathbb{C}$ the norm is</p>
 <p>$$
-N_{\mathbb{C}}(A) = A\bar A = a^2 + a'^2,
+N_{\mathbb{C}}(Q) = Q\bar Q = q^2 + q'^2,
 $$</p>
-<p>the <strong>sum</strong> of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $a'^2$ term of $a^2+a'^2$ into $-a'^2$ in the split case, and the definite form becomes the indefinite one.</p>
+<p>the <strong>sum</strong> of the two squares: positive definite, so the complex coefficient plane carries a Euclidean, not a Lorentzian, structure. It is again the single sign of the product rule that produces the difference: the square $i^2 = -1$ turns the $q'^2$ term of $q^2+q'^2$ into $-q'^2$ in the split case, and the definite form becomes the indefinite one.</p>
 <h2 id="the-two-component-opposite-of-the-complex-two-component-element-representation">The Two-Component Opposite of the Complex Two-Component Element Representation</h2>
 <p>The complex field and the split-complex algebra are the two two-dimensional real algebras generated by an element of square $-1$ and $+1$ respectively, and their two-component realizations are parallel in every respect except the sign of the generator's square. The following table is the comparison in full.</p>
 <div class="table-scroll"><table>
@@ -260,18 +260,18 @@ $$</p>
 <tbody>
 <tr>
 <td>coefficient space</td>
-<td>$\mathbb{R}^2$, components $(a,a')$</td>
-<td>$\mathbb{R}^2$, components $(a,a')$</td>
+<td>$\mathbb{R}^2$, components $(q,q')$</td>
+<td>$\mathbb{R}^2$, components $(q,q')$</td>
 </tr>
 <tr>
 <td>product rule</td>
-<td>$(a b-a' b', \, a b'+a' b)$</td>
-<td>$(a b+a' b', \, a b'+a' b)$</td>
+<td>$(q b-q' b', \, q b'+q' b)$</td>
+<td>$(q b+q' b', \, q b'+q' b)$</td>
 </tr>
 <tr>
 <td>conjugation in coordinates</td>
-<td>$(a,-a')$</td>
-<td>$(a,-a')$</td>
+<td>$(q,-q')$</td>
+<td>$(q,-q')$</td>
 </tr>
 <tr>
 <td>fixed / anti-fixed subspaces</td>
@@ -280,13 +280,13 @@ $$</p>
 </tr>
 <tr>
 <td>norm</td>
-<td>$a^2+a'^2$, positive definite</td>
-<td>$a^2-a'^2$, signature $(1,1)$</td>
+<td>$q^2+q'^2$, positive definite</td>
+<td>$q^2-q'^2$, signature $(1,1)$</td>
 </tr>
 <tr>
 <td>isotropic set</td>
 <td>$\{0\}$</td>
-<td>the two lines $a = \pm a'$</td>
+<td>the two lines $q = \pm q'$</td>
 </tr>
 <tr>
 <td>zero divisors</td>
@@ -296,7 +296,7 @@ $$</p>
 <tr>
 <td>idempotents beyond $0,1$</td>
 <td>none</td>
-<td>$\Pi_{1,2}$</td>
+<td>$\Pi_\pm$</td>
 </tr>
 <tr>
 <td>isomorphism</td>
@@ -305,10 +305,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The two realizations share their coefficient space, their column and row, their product's second component, and their conjugation; they differ in the sign of the first component's $a' b'$ term, and that single difference turns a field into a ring with zero divisors and a Euclidean plane into a Lorentzian one. The split-complex algebra is thus the <strong>indefinite two-component</strong> algebra, the systematic opposite of the complex field, and the comparison table is the complete statement of the difference at the level of coordinates.</p>
+<p>The two realizations share their coefficient space, their column and row, their product's second component, and their conjugation; they differ in the sign of the first component's $q' b'$ term, and that single difference turns a field into a ring with zero divisors and a Euclidean plane into a Lorentzian one. The split-complex algebra is thus the <strong>indefinite two-component</strong> algebra, the systematic opposite of the complex field, and the comparison table is the complete statement of the difference at the level of coordinates.</p>
 <h2 id="summary">Summary</h2>
-<p>A split-complex number $A = a+j a'$ is realized as its two-component vector $(a, a')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} a \\ a' \end{pmatrix}$ and dual row $(a, a')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(AB)^0 = a b+a' b'$, $(AB)^1 = a b'+a' b$, differing from the complex product rule in the single sign of the $a' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ of <em>Split-Complex Regular Element Representation</em>.</p>
-<p>The conjugation is the reflection $(a,a') \mapsto (a,-a')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $a^2-a'^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $a = \pm a'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $A_+A_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $a' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.</p>
+<p>A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)^0 = q b+q' b'$, $(QB)^1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of <em>Split-Complex Regular Element Representation</em>.</p>
+<p>The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -323,31 +323,31 @@ $$</p>
 <td>Split complex algebra</td>
 </tr>
 <tr>
-<td>$A = a + j a'$</td>
+<td>$Q = q + j q'$</td>
 <td>General split complex number</td>
 </tr>
 <tr>
-<td>$A^\mu = (A^0, A^1) = (a, a')$</td>
+<td>$Q^\mu = (Q^0, Q^1) = (q, q')$</td>
 <td>Two-component vector</td>
 </tr>
 <tr>
-<td>$A^0 = a$, $A^1 = a'$</td>
+<td>$Q^0 = q$, $Q^1 = q'$</td>
 <td>Real and imaginary components</td>
 </tr>
 <tr>
-<td>$A = \begin{pmatrix} a \\ a' \end{pmatrix}$, $A^{\mathsf{T}} = (a\ \ a')$</td>
+<td>$Q = \begin{pmatrix} q \\ q' \end{pmatrix}$, $Q^{\mathsf{T}} = (q\ \ q')$</td>
 <td>Column and row</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$</td>
+<td>$\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$</td>
 <td>Left multiplication matrix</td>
 </tr>
 <tr>
-<td>$(AB)^0 = a b+a' b'$, $(AB)^1 = a b'+a' b$</td>
+<td>$(QB)^0 = q b+q' b'$, $(QB)^1 = q b'+q' b$</td>
 <td>Component product rule</td>
 </tr>
 <tr>
-<td>$\overline{(a,a')} = (a,-a')$</td>
+<td>$\overline{(q,q')} = (q,-q')$</td>
 <td>Conjugation in coordinates</td>
 </tr>
 <tr>
@@ -355,23 +355,23 @@ $$</p>
 <td>Matrix of the conjugation</td>
 </tr>
 <tr>
-<td>$\mathbb{R}_{\mathbb{D}} = \{(a,0)\}$</td>
+<td>$\mathbb{R}_{\mathbb{D}} = \{(q,0)\}$</td>
 <td>Fixed subspace, real axis</td>
 </tr>
 <tr>
-<td>$j\mathbb{R}_{\mathbb{D}} = \{(0,a')\}$</td>
+<td>$j\mathbb{R}_{\mathbb{D}} = \{(0,q')\}$</td>
 <td>Anti-fixed subspace, split imaginary axis</td>
 </tr>
 <tr>
-<td>$\langle A\rangle_{\natural} = a^2-a'^2$</td>
+<td>$\langle Q\rangle_{\natural} = q^2-q'^2$</td>
 <td>Norm, signature $(1,1)$</td>
 </tr>
 <tr>
-<td>$g(A,B) = a b-a' b'$</td>
+<td>$g(Q,B) = q b-q' b'$</td>
 <td>Polarised form</td>
 </tr>
 <tr>
-<td>$(A_+, A_-) = (a+a', a-a')$</td>
+<td>$(Q_+, Q_-) = (q+q', q-q')$</td>
 <td>Idempotent coordinates</td>
 </tr>
 </tbody>
