@@ -99,7 +99,7 @@ u = \frac{Q}{r} = \frac{Q}{\lvert Q\rvert}.
 $$</p>
 <p>It satisfies $N(u) = N(Q)/r^2 = 1$, so it lies on the <strong>unit circle</strong></p>
 <p>$$
-\mathrm{U}(1) = \{\,u \in \mathbb{C} : N(u) = 1\,\} = \{\,a+ib : a^2+b^2 = 1\,\}.
+\mathrm{U}(1) = \{\,u \in \mathbb{C} : N(u) = 1\,\}.
 $$</p>
 <p>The unit circle is a group under multiplication. If $N(u) = N(v) = 1$ then $N(uv) = 1$, and the inverse of $u$ is its conjugate $\bar{u}$, since $u\bar{u} = N(u) = 1$. It is a closed and bounded subset of $\mathbb{C} \cong \mathbb{R}^2$, hence compact.</p>
 <p>The phrase <strong>unit factor</strong> names the norm-one elements. It is not the <strong>group of units</strong> $\mathbb{C}^\times$, which is the wider set of invertible elements; the two senses of the word <em>unit</em> are kept apart throughout, as in <em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>.</p>
@@ -177,11 +177,11 @@ $$</p>
 \det M_Q = q^2+q'^2 = N(Q), \qquad \operatorname{tr}M_Q = 2q,
 $$</p>
 <p>so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Q}$.</p>
-<p>For a unit $u = a+ib$ the matrix is</p>
+<p>For a unit $u$ the matrix is</p>
 <p>$$
-M_u = a\,I + b\,J = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}, \qquad a^2+b^2 = 1.
+M_u = \operatorname{Re}u\,I + \operatorname{Im}u\,J = \begin{pmatrix} \operatorname{Re}u & -\operatorname{Im}u \\ \operatorname{Im}u & \operatorname{Re}u \end{pmatrix}, \qquad N(u) = 1.
 $$</p>
-<p>It satisfies $M_u^{\mathsf T}M_u = (a^2+b^2)I = I$ and $\det M_u = a^2+b^2 = 1$, so $M_u$ lies in the special orthogonal group</p>
+<p>It satisfies $M_u^{\mathsf T}M_u = N(u)I = I$ and $\det M_u = N(u) = 1$, so $M_u$ lies in the special orthogonal group</p>
 <p>$$
 SO(2) = \{\,M : M^{\mathsf T}M = I,\ \det M = 1\,\}.
 $$</p>
@@ -321,8 +321,8 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
-<td>$A = a+ja'$</td>
-<td>$a^2-a'^2$, indefinite</td>
+<td>$Q = q+jq'$</td>
+<td>$q^2-q'^2$, indefinite</td>
 <td>$\sqrt{\lvert N\rvert}$, $N \neq 0$</td>
 <td>$\{N = \pm1\}$</td>
 <td>four components, non-compact</td>
@@ -376,8 +376,8 @@ $$</p>
 <td>the unit factor, $N(u) = 1$</td>
 </tr>
 <tr>
-<td>$u = a+ib$</td>
-<td>a unit in real coordinates, $a^2+b^2 = 1$</td>
+<td>$u$</td>
+<td>a unit, $N(u) = 1$, with real coordinates $\operatorname{Re}u$ and $\operatorname{Im}u$</td>
 </tr>
 <tr>
 <td>$\mathrm{U}(1) = \{u : N(u)=1\}$</td>

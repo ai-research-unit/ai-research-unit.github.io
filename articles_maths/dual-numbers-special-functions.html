@@ -114,7 +114,30 @@ $$</p>
 <p>The dual exponential is injective on the real part and affine in the infinitesimal part. Its kernel is empty, because $\exp(q) \neq 0$ for all real $q$. So the exponential has no zeros, and it is invertible everywhere.</p>
 <h2 id="the-dual-logarithm">The Dual Logarithm</h2>
 <h3 id="definition_1">Definition</h3>
-<p>The <strong>dual logarithm</strong> is the inverse of the dual exponential. A logarithm of $Q$ is written $Q_{\log}$, and for $Q = q + \varepsilon q'$ with $q > 0$ it is</p>
+<p>The <strong>dual logarithm</strong> is the inverse of the dual exponential. Write $Q = q + \varepsilon q'$ with $q>0$ and $Q_{\log} = q_{\log} + \varepsilon q'_{\log}$. The dual Euler formula turns $\exp(Q_{\log}) = Q$ into</p>
+<p>$$
+\exp(q_{\log}) = q, \qquad \exp(q_{\log})\,q'_{\log} = q'.
+$$</p>
+<p>The first equation has the unique real solution $q_{\log} = \log q$, because the real exponential is a bijection of $\mathbb{R}$ onto $(0,\infty)$. Substituting it into the second gives $q'_{\log} = q'/q$. The two coordinates are therefore</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinate</th>
+<th>real formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q_{\log}=$</td>
+<td>$\ln q$</td>
+</tr>
+<tr>
+<td>$q'_{\log}=$</td>
+<td>$q'/q$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so every dual number with positive real part has exactly one logarithm, and it is</p>
 <p>$$
 Q_{\log} = \log(q) + \frac{q'}{q} \varepsilon.
 $$</p>
@@ -403,6 +426,10 @@ $$</p>
 <tr>
 <td>$\exp(Q), \log Q$</td>
 <td>Dual exponential, logarithm</td>
+</tr>
+<tr>
+<td>$Q_{\log} = q_{\log} + \varepsilon q'_{\log}$</td>
+<td>A logarithm of $Q$, with $q_{\log} = \log q$ and $q'_{\log} = q'/q$</td>
 </tr>
 <tr>
 <td>$\sin Q, \cos Q, \tan Q$</td>

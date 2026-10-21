@@ -141,13 +141,13 @@ $$</p>
 <p>$$
 \exp(\mathbb{D})=\{Q:N(Q)>0,\ \operatorname{Re}Q>0\}=\{q>\lvert q'\rvert\}.
 $$</p>
-<p>If $Q=\exp(q+jq')$, then $N(Q)=\exp(2q)>0$ and $\operatorname{Re}Q=\exp(q)\cosh q'>\lvert\exp(q)\sinh q'\rvert$, so $Q$ lies in the set. Conversely, for $Q=x+jy$ with $x>\lvert y\rvert$, put</p>
+<p>If $Q=\exp(Q_{\log})$ with $Q_{\log}=q_{\log}+jq'_{\log}$, then $N(Q)=\exp(2q_{\log})>0$ and $\operatorname{Re}Q=\exp(q_{\log})\cosh q'_{\log}>\lvert\exp(q_{\log})\sinh q'_{\log}\rvert$, so $Q$ lies in the set. Conversely, for $Q=q+jq'$ with $q>\lvert q'\rvert$, put</p>
 <p>$$
-q=\tfrac12\ln(x^2-y^2), \qquad q'=\operatorname{artanh}\frac{y}{x}.
+q_{\log}=\tfrac12\ln(q^2-q'^2), \qquad q'_{\log}=\operatorname{artanh}\frac{q'}{q}.
 $$</p>
-<p>Then $q,q'$ are real, and $\exp(q+jq')=x+jy=Q$. The inverse is unique:</p>
+<p>Then $q_{\log},q'_{\log}$ are real, and $\exp(q_{\log}+jq'_{\log})=q+jq'=Q$. The inverse is unique:</p>
 <p>$$
-Q_{\log}=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}, \qquad Q=q+jq',\quad q>\lvert q'\rvert.
+Q_{\log}=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}.
 $$</p>
 <p>The exponential is therefore a diffeomorphism of $\mathbb{D}$ onto the identity component $(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$.</p>
 <p>The image is <strong>not</strong> all of $\{N>0\}$: the past cone $\{N>0,\ q<0\}$ is missed. The witness is $-1$, which has norm $1$ and real part $-1$; in $\mathbb{C}$, $-1=\exp(i\pi)$, but here $-1=-\exp(0)$ uses the discrete factor. This is the precise sense in which the exponential is not onto the timelike region.</p>
@@ -617,7 +617,7 @@ $$</p>
 <td>the exponential, $\exp(q)(\cosh q'+j\sinh q')$</td>
 </tr>
 <tr>
-<td>$(\epsilon Q)_{\log}=q+jq'$</td>
+<td>$(\epsilon Q)_{\log}=q_{\log}+jq'_{\log}$</td>
 <td>a logarithm in $\mathbb{D}$</td>
 </tr>
 <tr>
