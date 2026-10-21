@@ -28,10 +28,10 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Exponential and Its Closed Form
 
-For $L = x+iy$ the exponential is the power series
+For $Q = x+iy$ the exponential is the power series
 
 $$
-\exp(L) = \sum_{n=0}^{\infty} \frac{L^n}{n!},
+\exp(Q) = \sum_{n=0}^{\infty} \frac{Q^n}{n!},
 $$
 
 which converges absolutely and locally uniformly. Separating even and odd powers, and using $i^{2n} = (-1)^n$ and $i^{2n+1} = (-1)^n i$, gives the closed form
@@ -51,10 +51,10 @@ The exponential never vanishes. Its real part is a logarithmic scale and its ima
 The exponential is a homomorphism from the additive group of $\mathbb{C}$ to the multiplicative group $\mathbb{C}^\times$:
 
 $$
-\exp(L_1+L_2) = \exp(L_1)\exp(L_2).
+\exp(Q_1+Q_2) = \exp(Q_1)\exp(Q_2).
 $$
 
-**Proof.** The complex numbers commute, so the binomial theorem reorders the product of the two absolutely convergent series into the series of $\exp(L_1+L_2)$. No bracket survives, and the identity is exact.
+**Proof.** The complex numbers commute, so the binomial theorem reorders the product of the two absolutely convergent series into the series of $\exp(Q_1+Q_2)$. No bracket survives, and the identity is exact.
 
 ### The Modulus and the Angle
 
@@ -121,7 +121,7 @@ The split-complex algebra exchanges the two occupied rows. There $-1$ has no roo
 
 ### The Image and the Kernel
 
-**Kernel.** Suppose $\exp L = 1$ with $L = x+iy$. Taking moduli gives $\exp(x) = 1$, hence $x = 0$; then $\cos y+i\sin y = 1$, hence $y\in2\pi\mathbb{Z}$. Therefore
+**Kernel.** Suppose $\exp(x+iy) = 1$. Taking moduli gives $\exp(x) = 1$, hence $x = 0$; then $\cos y+i\sin y = 1$, hence $y\in2\pi\mathbb{Z}$. Therefore
 
 $$
 \ker\exp = 2\pi i\,\mathbb{Z}.
@@ -186,7 +186,7 @@ The counts add to the real dimension two of $\mathbb{C}$. The scale is non-compa
 
 ### The Logarithm
 
-**Definition.** A **logarithm** of $Q\in\mathbb{C}^\times$ is a complex number $L$ with $\exp L = Q$.
+**Definition.** A **logarithm** of $Q\in\mathbb{C}^\times$ is a complex number $Q_{\log}$ with $\exp Q_{\log} = Q$.
 
 **Theorem.** Every nonzero complex number has a logarithm, and the logarithms of $Q$ are exactly
 
@@ -194,7 +194,7 @@ $$
 \operatorname{Log}Q+2\pi i k, \qquad k\in\mathbb{Z}, \qquad \operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q.
 $$
 
-**Proof.** Existence is the image statement of §*The Image and the Kernel*: with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$, the number $\operatorname{Log}Q = \ln r+i\theta$ satisfies $\exp(\operatorname{Log}Q) = Q$. If $\exp L_1 = \exp L_2 = Q$, then $\exp(L_1-L_2) = 1$, so $L_1-L_2\in\ker\exp = 2\pi i\mathbb{Z}$. Hence every logarithm is $\operatorname{Log}Q+2\pi i k$.
+**Proof.** Existence is the image statement of §*The Image and the Kernel*: with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$, the number $\operatorname{Log}Q = \ln r+i\theta$ satisfies $\exp(\operatorname{Log}Q) = Q$. If $\exp Q_{\log} = \exp Q'_{\log} = Q$, then $\exp(Q_{\log}-Q'_{\log}) = 1$, so $Q_{\log}-Q'_{\log}\in\ker\exp = 2\pi i\mathbb{Z}$. Hence every logarithm is $\operatorname{Log}Q+2\pi i k$.
 
 The formula is read in coordinates: the real part is $\ln\lvert Q\rvert = \tfrac12\ln(a^2+b^2)$, the imaginary part is $\operatorname{atan2}(b,a)$. The theorem is the exact analogue of the split-complex statement, with the roles of existence and uniqueness exchanged: there the logarithm exists only on the future cone and is then unique; here it exists everywhere on $\mathbb{C}^\times$ and is never unique.
 
@@ -203,7 +203,7 @@ The formula is read in coordinates: the real part is $\ln\lvert Q\rvert = \tfrac
 **Theorem (principal strip).** The map
 
 $$
-S = \{\,\ln r+i\theta : r>0,\ -\pi<\theta\le\pi\,\} \longrightarrow \mathbb{C}^\times, \qquad L \longmapsto \exp L,
+S = \{\,\ln r+i\theta : r>0,\ -\pi<\theta\le\pi\,\} \longrightarrow \mathbb{C}^\times, \qquad Q_{\log} \longmapsto \exp Q_{\log},
 $$
 
 is a bijection, with inverse $\operatorname{Log}$.
@@ -259,7 +259,7 @@ $$
 The first is the positive scale, the second is the unit factor on the circle. The exponent is their sum:
 
 $$
-L = \ln r+i\theta = \ln\lvert Q\rvert+i\operatorname{Arg}Q = \operatorname{Log}Q.
+Q_{\log} = \ln r+i\theta = \ln\lvert Q\rvert+i\operatorname{Arg}Q = \operatorname{Log}Q.
 $$
 
 The exponential form is therefore the statement that the principal logarithm is a right inverse of the exponential on $\mathbb{C}^\times$, and the decomposition is the graph of the principal logarithm.
@@ -293,10 +293,10 @@ The first coordinate is the logarithmic scale, the second is the angle, and the 
 | domain | $Q\neq0$ |
 | modulus | $r = \lvert Q\rvert = \sqrt{(\operatorname{Re}Q)^2+(\operatorname{Im}Q)^2}$ |
 | angle | $\theta = \operatorname{Arg}Q = \operatorname{atan2}(\operatorname{Im}Q,\operatorname{Re}Q)\in(-\pi,\pi]$ |
-| exponent | $L = \ln r+i\theta = \operatorname{Log}Q$ |
+| exponent | $Q_{\log} = \ln r+i\theta = \operatorname{Log}Q$ |
 | scale | $\exp(\ln r) = \lvert Q\rvert$ |
 | unit factor | $\exp(i\theta) = Q/\lvert Q\rvert$ |
-| uniqueness | $L$ unique in the principal strip; modulo $2\pi i$ in general |
+| uniqueness | $Q_{\log}$ unique in the principal strip; modulo $2\pi i$ in general |
 | group | $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$ |
 | factor types | non-compact scale, compact unit factor |
 
@@ -338,18 +338,18 @@ on the principal branch. Adding $2\pi k J$ gives another logarithm, because $\ex
 
 ### The Derivative and the Jacobian
 
-The derivative of the exponential at $L$ is multiplication by $\exp L$:
+The derivative of the exponential at $Q_{\log}$ is multiplication by $\exp Q_{\log}$:
 
 $$
-d\exp_L(H) = \exp(L)H,
+d\exp_{Q_{\log}}(H) = \exp(Q_{\log})H,
 $$
 
-because $\exp(L+tH) = \exp(L)\exp(tH)$ when $L$ and $H$ commute, as they do in $\mathbb{C}$.
+because $\exp(Q_{\log}+tH) = \exp(Q_{\log})\exp(tH)$ when $Q_{\log}$ and $H$ commute, as they do in $\mathbb{C}$.
 
-The derivative is invertible, with inverse multiplication by $\exp(-L)$, so the exponential is a local diffeomorphism. In the real coordinates $(\ln r,\theta)$ the Jacobian determinant is
+The derivative is invertible, with inverse multiplication by $\exp(-Q_{\log})$, so the exponential is a local diffeomorphism. In the real coordinates $(\ln r,\theta)$ the Jacobian determinant is
 
 $$
-\det d\exp_L = \lvert\exp L\rvert^2 = r^2 = N(Q),
+\det d\exp_{Q_{\log}} = \lvert\exp Q_{\log}\rvert^2 = r^2 = N(Q),
 $$
 
 the squared modulus. The exponential is conformal: it multiplies lengths by $r$ and preserves angles and orientation.
@@ -417,20 +417,20 @@ $$
 and
 
 $$
-L = \ln r+i\theta = 1.6094379124341003+0.9272952180016122\,i.
+Q_{\log} = \ln r+i\theta = 1.6094379124341003+0.9272952180016122\,i.
 $$
 
 The reconstruction is
 
 $$
-\exp L = 3+3.999999999999999\,i,
+\exp Q_{\log} = 3+3.999999999999999\,i,
 $$
 
 with error $8.9\times10^{-16}$ in the Euclidean modulus.
 
 ### A Table of Examples
 
-| $Q$ | $\ln\lvert Q\rvert$ | $\theta = \operatorname{Arg}Q$ | $L = \ln\lvert Q\rvert+i\theta$ | $\lvert\exp L-Q\rvert$ |
+| $Q$ | $\ln\lvert Q\rvert$ | $\theta = \operatorname{Arg}Q$ | $Q_{\log} = \ln\lvert Q\rvert+i\theta$ | $\lvert\exp Q_{\log}-Q\rvert$ |
 |---|---|---|---|---|
 | $3+4i$ | $1.6094379124341003$ | $0.9272952180016122$ | $1.6094379124341003+0.9272952180016122\,i$ | $8.9\times10^{-16}$ |
 | $-1$ | $0$ | $\pi$ | $\pi i$ | $1.2\times10^{-16}$ |
@@ -454,7 +454,7 @@ $$
 \exp(i\pi) = -1+1.2\times10^{-16}\,i, \qquad \exp(-i\pi) = -1-1.2\times10^{-16}\,i,
 $$
 
-and only $i\pi$ lies in the principal strip. The exponential polar decomposition of $-1$ is therefore $L = i\pi$ on the principal branch, and $L = -i\pi$ on the other branch. This is the opposite of the split case, where the kernel is $\{0\}$ and $-1$ has no logarithm at all.
+and only $i\pi$ lies in the principal strip. The exponential polar decomposition of $-1$ is therefore $(-1)_{\log} = i\pi$ on the principal branch, and $(-1)_{\log} = -i\pi$ on the other branch. This is the opposite of the split case, where the kernel is $\{0\}$ and $-1$ has no logarithm at all.
 
 ## The Exponential Coordinates
 
@@ -476,10 +476,10 @@ The strip $-\pi<\theta\le\pi$ is a fundamental domain: its translates by $2\pi i
 
 ### The Conformal Factor
 
-The derivative of the exponential is multiplication by $\exp L$, so the pullback of the Euclidean metric is
+The derivative of the exponential is multiplication by $\exp(Q_{\log})$, so the pullback of the Euclidean metric is
 
 $$
-(\exp^* g)_L = r^2\bigl(d(\ln r)^2+d\theta^2\bigr) = dr^2+r^2\,d\theta^2.
+(\exp^* g)_{Q_{\log}} = r^2\bigl(d(\ln r)^2+d\theta^2\bigr) = dr^2+r^2\,d\theta^2.
 $$
 
 The exponential is conformal with scale factor $r = \lvert Q\rvert$. Its Jacobian determinant is $r^2 = N(Q)$, and the area element is
@@ -508,11 +508,11 @@ $$
 r = \lvert Q\rvert = \sqrt{(\operatorname{Re}Q)^2+(\operatorname{Im}Q)^2}>0, \qquad \theta = \operatorname{Arg}Q = \operatorname{atan2}(\operatorname{Im}Q,\operatorname{Re}Q)\in(-\pi,\pi],
 $$
 
-namely the modulus and the principal angle of $Q$. The exponent is the principal logarithm $L = \ln\lvert Q\rvert+i\operatorname{Arg}Q$, the scale is $\exp(\ln r) = \lvert Q\rvert$, and the unit factor is $\exp(i\theta) = Q/\lvert Q\rvert$. Because $\mathbb{C}$ is commutative the two exponentials amalgamate into one, $Q = \exp(\ln\lvert Q\rvert+i\operatorname{Arg}Q)$.
+namely the modulus and the principal angle of $Q$. The exponent is the principal logarithm $Q_{\log} = \ln\lvert Q\rvert+i\operatorname{Arg}Q$, the scale is $\exp(\ln r) = \lvert Q\rvert$, and the unit factor is $\exp(i\theta) = Q/\lvert Q\rvert$. Because $\mathbb{C}$ is commutative the two exponentials amalgamate into one, $Q = \exp(\ln\lvert Q\rvert+i\operatorname{Arg}Q)$.
 
 The exponential is a surjective homomorphism from $(\mathbb{C},+)$ onto $(\mathbb{C}^\times,\cdot)$ with kernel $2\pi i\mathbb{Z}$. The logarithm is unique modulo that kernel, and the principal strip $-\pi<\theta\le\pi$ is a fundamental domain on which the exponential is a bijection onto $\mathbb{C}^\times$. The quotient is $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$, the product of a line and a circle.
 
-The matrix picture is the exponential of the conformal matrix: $M_Q = \exp(\ln r\,I+\theta J) = rR_\theta$, with the matrix logarithm $\ln r\,I+\theta J$ on the principal branch, the angle defined modulo $2\pi$. The derivative is multiplication by $\exp L$, the Jacobian determinant is $N(Q)$, and the exponential is conformal with scale $\lvert Q\rvert$. The general polar decomposition $B = PU$ of an invertible real matrix specialises to $P = rI$ and $U = R_\theta$.
+The matrix picture is the exponential of the conformal matrix: $M_Q = \exp(\ln r\,I+\theta J) = rR_\theta$, with the matrix logarithm $\ln r\,I+\theta J$ on the principal branch, the angle defined modulo $2\pi$. The derivative is multiplication by $\exp(Q_{\log})$, the Jacobian determinant is $N(Q)$, and the exponential is conformal with scale $\lvert Q\rvert$. The general polar decomposition $B = PU$ of an invertible real matrix specialises to $P = rI$ and $U = R_\theta$.
 
 The exponential form is the third of the three polar decompositions of $\mathbb{C}$. The modulus–unit form is global, unique and algebraic; the rational-chart form is the rational Cayley chart, local and missing the negative real axis; the exponential form is global and transcendental, and it is unique once the principal representative of the angle is chosen, the exponent being unique modulo the kernel. The three are presentations of the same factorisation.
 
@@ -527,9 +527,9 @@ The exponential form is the third of the three polar decompositions of $\mathbb{
 | $\theta$ | the angle, a class in $\mathbb{R}/2\pi\mathbb{Z}$ |
 | $\theta = \operatorname{Arg}Q$ | the principal angle, $\operatorname{atan2}(b,a)\in(-\pi,\pi]$ |
 | $s = -\tan(\theta/2)$ | the rational-chart coordinate of the unit factor |
-| $L = \ln r+i\theta$ | the exponent, a logarithm of $Q$ |
+| $Q_{\log} = \ln r+i\theta$ | the exponent, a logarithm of $Q$ |
 | $\operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q$ | the principal logarithm |
-| $\exp L = \sum_n L^n/n!$ | the exponential, entire and a homomorphism |
+| $\exp : Q_{\log} \mapsto \sum_n Q_{\log}^n/n!$ | the exponential, entire and a homomorphism |
 | $\ker\exp = 2\pi i\mathbb{Z}$ | the kernel of the exponential |
 | $\mathrm{U}(1)$ | the unit circle, the group of unit factors |
 | $J$ | the complex structure, multiplication by $i$, $J^2 = -I$ |

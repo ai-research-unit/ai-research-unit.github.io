@@ -2,9 +2,9 @@
 
 ## Introduction
 
-An **element representation** writes the reduced biquaternion $\breve Q=Q_++jQ_-$ as an object of another kind — a quadruple of real numbers, a pair of complex numbers, a pair of idempotent coordinates, a $2\times2$ matrix, a pair of polar data. This article names the representations of the block and fixes the two structural facts that make the block short. The first is that the algebra is **commutative**, **associative** and **unital**, so its multiplication is the general plain product. The second is that it is **semisimple** and a direct product of two copies of $\mathbb{C}$, so **every representation is a direct sum of copies of the two one-dimensional characters** and no irreducible representation has dimension greater than one. That is the exact opposite of the biquaternion case, where the algebra is simple and carries a single irreducible representation, of complex dimension two.
+An **element representation** writes the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as an object of another kind — a quadruple of real numbers, a pair of complex numbers, a pair of idempotent coordinates, a $2\times2$ matrix, a pair of polar data. This article names the representations of the block and fixes the two structural facts that make the block short. The first is that the algebra is **commutative**, **associative** and **unital**, so its multiplication is the general plain product. The second is that it is **semisimple** and a direct product of two copies of $\mathbb{C}$, so **every representation is a direct sum of copies of the two one-dimensional characters** and no irreducible representation has dimension greater than one. That is the exact opposite of the biquaternion case, where the algebra is simple and carries a single irreducible representation, of complex dimension two.
 
-**Conventions.** $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; a general element is $\breve Q=Q_++jQ_-$ with the two complex coordinates $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$. The idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, the **idempotent coordinates** are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. The multiplication is commutative, it **has zero divisors** — the two idempotent lines — and it is **not a division algebra**. The four general products and the forms $B,N,H,K$ are *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, upper case, with the breve and without a tilde, the reduced algebra having no quaternionic factor.
+**Conventions.** $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; a general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with the two complex coordinates $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$. The idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, the **idempotent coordinates** are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The multiplication is commutative, it **has zero divisors** — the two idempotent lines — and it is **not a division algebra**. The four general products and the forms $B,N,H,K$ are *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, upper case, with the breve and without a tilde, the reduced algebra having no quaternionic factor.
 
 **Boundaries.** The algebra is *Reduced Biquaternion Space* and *Introduction to the Algebra of the Reduced Biquaternions*; the bases and the linear or antilinear characters are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*; the involutions are *The Two Involutions and the Group of Involutions*; the idempotent coordinates and the splitting $\mathbb{C}\oplus\mathbb{C}$ are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, and the matrices already written for the algebra are *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*. The representations of an element are written in the four articles below: *The Four-Vector Element Representation of the Reduced Biquaternions*, *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*, *Reduced Biquaternion Other Algebraic Element Representations* and *Reduced Biquaternions Polar Element Representation*; the operators of the four products are *Operators on the Reduced Biquaternions*. The biquaternion counterpart is *Introduction to Biquaternion Element Representations*.
 
@@ -48,9 +48,9 @@ is a composition series: the submodule $\mathbb{C}\Pi_+$ carries the character $
 
 **The algebra has exactly two simple modules, both of complex dimension one; every module is a direct sum of copies of them, and the regular representation is their sum with multiplicity one.**
 
-**Definition (the two characters).** For $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ set
+**Definition (the two characters).** For $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ set
 $$
-\lambda_+(\breve Q)=Q_{++},\qquad \lambda_-(\breve Q)=Q_{--}.
+\lambda_+(\breve Q)=Q_{+},\qquad \lambda_-(\breve Q)=Q_{-}.
 $$
 Each is a $\mathbb{C}$-algebra homomorphism into the one-dimensional algebra $\mathbb{C}$, $\lambda_{i}(\breve Q_{1}\breve Q_{2})=\lambda_{i}(\breve Q_{1})\lambda_{i}(\breve Q_{2})$ and $\lambda_{i}(1)=1$, because the idempotent coordinates multiply componentwise.
 
@@ -88,20 +88,20 @@ each character with multiplicity one.
 
 | representation | the element read as | article |
 |---|---|---|
-| idempotent coordinates | the pair $(Q_{++},Q_{--})$ of complex numbers, $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ | *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* |
-| four-vector | the real quadruple $(q_+,q'_+,q_-,q'_-)$ and the complex pair $(Q_+,Q_-)$ | *The Four-Vector Element Representation of the Reduced Biquaternions* |
+| idempotent coordinates | the pair $(Q_{+},Q_{-})$ of complex numbers, $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ | *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* |
+| four-vector | the real quadruple $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ and the complex pair $(Q_{\blacktriangle},Q_{\blacktriangledown})$ | *The Four-Vector Element Representation of the Reduced Biquaternions* |
 | matrix | the $2\times2$ matrix of $L_{\breve Q}$, complex or real | *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions* |
 | other algebraic | the Clifford and quotient presentations, the block array | *Reduced Biquaternion Other Algebraic Element Representations* |
-| polar | the two polar complex forms of $Q_{++}$ and of $Q_{--}$ | *Reduced Biquaternions Polar Element Representation* |
+| polar | the two polar complex forms of $Q_{+}$ and of $Q_{-}$ | *Reduced Biquaternions Polar Element Representation* |
 | operator | the multiplication operator $L_{\breve Q}$ and its companions | *Operators on the Reduced Biquaternions* |
 
-**The idempotent coordinates are the universal representation.** Every other reading is the pair $(Q_{++},Q_{--})$ written in another alphabet: the four-vector splits each of $Q_{++}$ and $Q_{--}$ into two reals, the matrix puts them on the diagonal, the other algebraic representations formalise the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$, the polar writes each in polar form, and the operator representation is the regular representation of the same pair. A statement is written in the representation that makes it shortest, and the **two characters $\lambda_+,\lambda_-$ are the two coordinates of the universal one**.
+**The idempotent coordinates are the universal representation.** Every other reading is the pair $(Q_{+},Q_{-})$ written in another alphabet: the four-vector splits each of $Q_{+}$ and $Q_{-}$ into two reals, the matrix puts them on the diagonal, the other algebraic representations formalise the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$, the polar writes each in polar form, and the operator representation is the regular representation of the same pair. A statement is written in the representation that makes it shortest, and the **two characters $\lambda_+,\lambda_-$ are the two coordinates of the universal one**.
 
 ## The Representations of the Unit Group
 
 **The units are $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, an abelian group all of whose irreducible complex representations are one-dimensional.**
 
-**Theorem.** $U=Q_{++}\Pi_++Q_{--}\Pi_-$ is a unit if and only if $\langle U\rangle_{\natural}=Q_{++}Q_{--}\neq0$, that is $Q_{++}\neq0$ and $Q_{--}\neq0$; the unit group is
+**Theorem.** $U=Q_{+}\Pi_++Q_{-}\Pi_-$ is a unit if and only if $\langle U\rangle_{\natural}=Q_{+}Q_{-}\neq0$, that is $Q_{+}\neq0$ and $Q_{-}\neq0$; the unit group is
 $$
 \mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\cong (S^{1}\times S^{1})\times(\mathbb{R}_{>0}\times\mathbb{R}_{>0}),
 $$
@@ -111,11 +111,11 @@ connected and abelian.
 
 **Corollary (the characters).** The irreducible complex representations of the unit group are the one-dimensional characters
 $$
-\chi_{m,n}(U)=Q_{++}^{m}Q_{--}^{n},\qquad (m,n)\in\mathbb{Z}^{2},
+\chi_{m,n}(U)=Q_{+}^{m}Q_{-}^{n},\qquad (m,n)\in\mathbb{Z}^{2},
 $$
 extending the two characters of the algebra; the full group of continuous characters is the larger family
 $$
-U\mapsto Q_{++}^{m}|Q_{++}|^{it}Q_{--}^{n}|Q_{--}|^{is},\qquad (m,n)\in\mathbb{Z}^{2},\ (t,s)\in\mathbb{R}^{2},
+U\mapsto Q_{+}^{m}|Q_{+}|^{it}Q_{-}^{n}|Q_{-}|^{is},\qquad (m,n)\in\mathbb{Z}^{2},\ (t,s)\in\mathbb{R}^{2},
 $$
 with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is **abelian**, so every irreducible representation is one-dimensional; there is no representation of dimension greater than one, against the non-abelian unit group of the biquaternion algebra and its higher-dimensional representations.
 
@@ -143,7 +143,7 @@ The three algebras are the three ways of splitting a quaternionic algebra over $
 
 ## Summary
 
-The reduced biquaternion algebra is commutative, associative and unital, and it is the direct product of two copies of $\mathbb{C}$; its representation theory is therefore the simplest of the corpus. A representation is a module; the regular representation $\breve Q\mapsto L_{\breve Q}$ is faithful with image $\{L_{\breve Q}\}\cong\mathbb{B}_{\mathrm{r}}$; the simple modules are exactly the two characters $\lambda_+(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{++}$ and $\lambda_-(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{--}$, of complex dimension one, and every module is a direct sum of copies of them. The regular representation is $\lambda_+\oplus\lambda_-$, each with multiplicity one, its non-zero submodules are the two idempotent lines, and those two lines are the minimal ideals and the zero divisors. Schur's lemma gives $\operatorname{End}(\lambda_{i})=\mathbb{C}$ and no intertwiner between $\lambda_+$ and $\lambda_-$. The element is written in the six representations of the table, the idempotent coordinates being the universal one and the two characters its two coordinates. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian and connected, with the one-dimensional characters $\chi_{m,n}$ and no higher-dimensional irreducible representation; the multiplication has zero divisors and is not a division algebra. As a module over itself the algebra has composition length two, with the same two simple factors in the readings over $\mathbb{C}$ of rank two and over $\mathbb{R}$ of rank four, and the comparison of the three algebras places it as the commutative member of the semisimple family, against the non-commutative split biquaternions $\mathbb{H}\oplus\mathbb{H}$ and the simple biquaternions $M_{2}(\mathbb{C})$.
+The reduced biquaternion algebra is commutative, associative and unital, and it is the direct product of two copies of $\mathbb{C}$; its representation theory is therefore the simplest of the corpus. A representation is a module; the regular representation $\breve Q\mapsto L_{\breve Q}$ is faithful with image $\{L_{\breve Q}\}\cong\mathbb{B}_{\mathrm{r}}$; the simple modules are exactly the two characters $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$ and $\lambda_-(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{-}$, of complex dimension one, and every module is a direct sum of copies of them. The regular representation is $\lambda_+\oplus\lambda_-$, each with multiplicity one, its non-zero submodules are the two idempotent lines, and those two lines are the minimal ideals and the zero divisors. Schur's lemma gives $\operatorname{End}(\lambda_{i})=\mathbb{C}$ and no intertwiner between $\lambda_+$ and $\lambda_-$. The element is written in the six representations of the table, the idempotent coordinates being the universal one and the two characters its two coordinates. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian and connected, with the one-dimensional characters $\chi_{m,n}$ and no higher-dimensional irreducible representation; the multiplication has zero divisors and is not a division algebra. As a module over itself the algebra has composition length two, with the same two simple factors in the readings over $\mathbb{C}$ of rank two and over $\mathbb{R}$ of rank four, and the comparison of the three algebras places it as the commutative member of the semisimple family, against the non-commutative split biquaternions $\mathbb{H}\oplus\mathbb{H}$ and the simple biquaternions $M_{2}(\mathbb{C})$.
 
 ## Summary of Notation
 
@@ -151,10 +151,10 @@ The reduced biquaternion algebra is commutative, associative and unital, and it 
 |---|---|
 | $\rho$, $V$ | a representation and its module |
 | $L_{\breve Q}$, $\rho_{\mathrm{reg}}$ | left multiplication by $\breve Q$; the regular representation |
-| $\lambda_+,\lambda_-$ | the two characters, $\lambda_+(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{++}$, $\lambda_-=Q_{--}$ |
+| $\lambda_+,\lambda_-$ | the two characters, $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$, $\lambda_-=Q_{-}$ |
 | $\operatorname{Hom}_{\mathbb{B}_{\mathrm{r}}}(V,W)$ | the intertwiners between two modules |
 | $\mathbb{B}_{\mathrm{r}}^{\times}$ | the unit group, $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ |
-| $\chi_{m,n}(U)=Q_{++}^{m}Q_{--}^{n}$ | the holomorphic characters of the unit group |
+| $\chi_{m,n}(U)=Q_{+}^{m}Q_{-}^{n}$ | the holomorphic characters of the unit group |
 
 ## Further Reading
 

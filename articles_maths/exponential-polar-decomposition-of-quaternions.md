@@ -5,7 +5,7 @@
 The modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Quaternions* writes every nonzero quaternion as $\tilde q=r\tilde u_{\mathrm r}$, with $r=\lvert\tilde q\rvert>0$ and $\tilde u_{\mathrm r}$ on the unit sphere. It names the modulus by a square root and the rotor by an equation. The exponential form names both by one exponent: it writes
 
 $$
-\tilde q = \exp(L), \qquad L = \ln r + v, \qquad v\in\operatorname{Im}\mathbb{H},
+\tilde q = \exp(\tilde q_{\log}), \qquad \tilde q_{\log} = \ln r + v, \qquad v\in\operatorname{Im}\mathbb{H},
 $$
 
 with $\ln r$ the real logarithmic scale and $v$ the pure exponent. The unit factor is $\exp(v)$, and for $v\neq0$ it is $\cos\theta+n\sin\theta$ with $\theta=\lvert v\rvert$ and $n=v/\lvert v\rvert$ a unit pure quaternion. The pair $(r,\theta n)$ is the polar data of the quaternion in exponential coordinates.
@@ -68,13 +68,13 @@ $$
 \theta=\arccos\bigl(\operatorname{Sc}\tilde u\bigr)\in[0,\pi],
 $$
 
-and with $n=\operatorname{Vec}\tilde u/\lvert\operatorname{Vec}\tilde u\rvert$ when $\operatorname{Vec}\tilde u\neq0$. Put $L=\ln r+\theta n$. If $\operatorname{Vec}\tilde u\neq0$ then $\sin\theta\neq0$ and
+and with $n=\operatorname{Vec}\tilde u/\lvert\operatorname{Vec}\tilde u\rvert$ when $\operatorname{Vec}\tilde u\neq0$. Put $\tilde q_{\log}=\ln r+\theta n$. If $\operatorname{Vec}\tilde u\neq0$ then $\sin\theta\neq0$ and
 
 $$
-\exp(L)=r\bigl(\cos\theta+n\sin\theta\bigr)=r\tilde u=\tilde q .
+\exp(\tilde q_{\log})=r\bigl(\cos\theta+n\sin\theta\bigr)=r\tilde u=\tilde q .
 $$
 
-If $\operatorname{Vec}\tilde u=0$ then $\tilde u=\pm e_t$. For $\tilde u=e_t$ take $L=\ln r$ and $\theta=0$; for $\tilde u=-e_t$ take $\theta=\pi$ and any unit pure $n$, so that $L=\ln r+\pi n$. In both cases $\exp(L)=\tilde q$. Hence every nonzero quaternion is an exponential.
+If $\operatorname{Vec}\tilde u=0$ then $\tilde u=\pm e_t$. For $\tilde u=e_t$ take $\tilde q_{\log}=\ln r$ and $\theta=0$; for $\tilde u=-e_t$ take $\theta=\pi$ and any unit pure $n$, so that $\tilde q_{\log}=\ln r+\pi n$. In both cases $\exp(\tilde q_{\log})=\tilde q$. Hence every nonzero quaternion is an exponential.
 
 The proof is constructive and gives a logarithm, but not a unique one: the choices at $\tilde u=\pm e_t$ are arbitrary, and the non-uniqueness for the other elements is computed in §*Uniqueness*.
 
@@ -132,7 +132,7 @@ The pair $(r,v)$ is not unique in general, and the exact statement separates thr
 - If $\tilde q=r_0e_t$ with $r_0>0$, then $r=r_0$ and $\theta=0$, and the axis $n$ is arbitrary. The logarithms are $\ln r_0+w$ with $w$ pure and $\lvert w\rvert\in2\pi\mathbb{Z}_{\ge0}$.
 - If $\tilde q=-r_0e_t$ with $r_0>0$, then $r=r_0$ and $\theta=\pi$, and the axis $n$ is arbitrary. The logarithms are $\ln r_0+w$ with $w$ pure and $\lvert w\rvert\in(2k+1)\pi$, $k\ge0$.
 
-**Proof.** Let $L=\ln r+w$ be a logarithm with $w$ pure. Then $\exp(w)=\tilde u=\tilde q/r$. If $\tilde u\neq\pm e_t$, write $\tilde u=\cos\theta+n\sin\theta$ with $\theta\in(0,\pi)$ and $n$ unique. The closed form gives $\cos\lvert w\rvert=\cos\theta$ and $(w/\lvert w\rvert)\sin\lvert w\rvert=n\sin\theta$. Since $\sin\theta\neq0$, the second equation forces $w/\lvert w\rvert=\pm n$ and $\sin\lvert w\rvert=\pm\sin\theta$ with the same sign; in both cases $w=(\theta+2\pi k)n$. The two real cases follow from $\exp(w)=\pm e_t$, which is $\cos\lvert w\rvert=\pm1$ and $\sin\lvert w\rvert=0$, with the direction of $w$ free.
+**Proof.** Let $\tilde q_{\log}=\ln r+w$ be a logarithm with $w$ pure. Then $\exp(w)=\tilde u=\tilde q/r$. If $\tilde u\neq\pm e_t$, write $\tilde u=\cos\theta+n\sin\theta$ with $\theta\in(0,\pi)$ and $n$ unique. The closed form gives $\cos\lvert w\rvert=\cos\theta$ and $(w/\lvert w\rvert)\sin\lvert w\rvert=n\sin\theta$. Since $\sin\theta\neq0$, the second equation forces $w/\lvert w\rvert=\pm n$ and $\sin\lvert w\rvert=\pm\sin\theta$ with the same sign; in both cases $w=(\theta+2\pi k)n$. The two real cases follow from $\exp(w)=\pm e_t$, which is $\cos\lvert w\rvert=\pm1$ and $\sin\lvert w\rvert=0$, with the direction of $w$ free.
 
 The pair $(r,\theta n)$ is therefore unique off the real axis. On the positive real axis the angle is zero and the axis is arbitrary; on the negative real axis the angle is $\pi$ and the axis is arbitrary. The principal representation, with $\lvert v\rvert<\pi$, exists for every element except the negative real axis, and it is unique there.
 
@@ -146,7 +146,7 @@ $$
 
 The first equality is the modulus–unit form; the second holds because $\ln r$ is a real scalar and therefore commutes with $v$. The amalgamation is a statement about two commuting exponents, not about the exponential being a homomorphism. For two general pure exponents the product $\exp(v_1)\exp(v_2)$ is not $\exp(v_1+v_2)$, as §*The Failure of the Homomorphism* shows.
 
-The single exponential is therefore available for every nonzero quaternion, and its exponent is unique in the principal ball $\lvert v\rvert<\pi$. It is not a group coordinate: the map $L\mapsto\exp(L)$ is not a homomorphism.
+The single exponential is therefore available for every nonzero quaternion, and its exponent is unique in the principal ball $\lvert v\rvert<\pi$. It is not a group coordinate: the exponential is not a homomorphism.
 
 ## The Failure of the Homomorphism
 
@@ -161,19 +161,19 @@ $$
 The Baker–Campbell–Hausdorff series begins
 
 $$
-\log\bigl(\exp(L_1)\exp(L_2)\bigr)=L_1+L_2+\tfrac12[L_1,L_2]+\cdots,
+\log\bigl(\exp(\tilde q_1)\exp(\tilde q_2)\bigr)=\tilde q_1+\tilde q_2+\tfrac12[\tilde q_1,\tilde q_2]+\cdots,
 $$
 
-so the exponential is a homomorphism only when the bracket and all higher commutators vanish. A direct counterexample is enough. Take $L_1=\tfrac{\pi}{2}\vec e_x$ and $L_2=\tfrac{\pi}{2}\vec e_y$. Then
+so the exponential is a homomorphism only when the bracket and all higher commutators vanish. A direct counterexample is enough. Take $\tilde q_1=\tfrac{\pi}{2}\vec e_x$ and $\tilde q_2=\tfrac{\pi}{2}\vec e_y$. Then
 
 $$
-\exp(L_1)\exp(L_2)=\vec e_x\vec e_y=\vec e_z,
+\exp(\tilde q_1)\exp(\tilde q_2)=\vec e_x\vec e_y=\vec e_z,
 $$
 
 while
 
 $$
-\exp(L_1+L_2)=\cos\frac{\pi}{\sqrt2}+\frac{\vec e_x+\vec e_y}{\sqrt2}\sin\frac{\pi}{\sqrt2}
+\exp(\tilde q_1+\tilde q_2)=\cos\frac{\pi}{\sqrt2}+\frac{\vec e_x+\vec e_y}{\sqrt2}\sin\frac{\pi}{\sqrt2}
 =-0.605700+0.562640\,(\vec e_x+\vec e_y),
 $$
 
@@ -379,13 +379,13 @@ The complex exponential is a homomorphism with kernel $2\pi i\mathbb{Z}$; the qu
 Take $\tilde q=3e_t+4\vec e_x$. Then $r=5$, $\operatorname{Sc}\tilde u=3/5$, and
 
 $$
-\theta=\arccos\frac{3}{5}=0.927295218, \qquad n=\vec e_x, \qquad L=\ln5+\theta\vec e_x=1.609437912+0.927295218\,\vec e_x .
+\theta=\arccos\frac{3}{5}=0.927295218, \qquad n=\vec e_x, \qquad \tilde q_{\log}=\ln5+\theta\vec e_x=1.609437912+0.927295218\,\vec e_x .
 $$
 
 The reconstruction gives
 
 $$
-\exp(L)=5\left(\cos0.927295218+\vec e_x\sin0.927295218\right)=3e_t+4\vec e_x,
+\exp(\tilde q_{\log})=5\left(\cos0.927295218+\vec e_x\sin0.927295218\right)=3e_t+4\vec e_x,
 $$
 
 with error $4.4\times10^{-16}$.
@@ -406,14 +406,14 @@ $$
 The exponent is
 
 $$
-L=1.700598691+0.515190293\,\vec e_x+0.772785439\,\vec e_y+1.030380585\,\vec e_z,
+\tilde q_{\log}=1.700598691+0.515190293\,\vec e_x+0.772785439\,\vec e_y+1.030380585\,\vec e_z,
 $$
 
-and $\exp(L)$ reproduces $\tilde q$ to $8.9\times10^{-16}$ in each coefficient.
+and $\exp(\tilde q_{\log})$ reproduces $\tilde q$ to $8.9\times10^{-16}$ in each coefficient.
 
 ### A Table of Examples
 
-| $\tilde q$ | $r$ | $\theta$ | $n$ | $L$ |
+| $\tilde q$ | $r$ | $\theta$ | $n$ | $\tilde q_{\log}$ |
 |---|---|---|---|---|
 | $2e_t$ | $2$ | $0$ | arbitrary | $\ln2$ |
 | $-e_t$ | $1$ | $\pi$ | arbitrary | $\pi\vec e_x$ |
@@ -442,7 +442,7 @@ For $\tilde q=\vec e_x$ the principal exponent is $(\pi/2)\vec e_x$. The other l
 
 Every nonzero quaternion is $\exp(\ln r+v)$ with $r=\lvert\tilde q\rvert>0$ and $v$ pure; the unit factor is $\cos\theta+n\sin\theta$ with $\theta=\lvert v\rvert$ and $n$ a unit pure quaternion. The pair $(r,\theta n)$ is unique off the real axis; on the real axis the angle is fixed at $0$ or $\pi$ and the axis is arbitrary. The principal representation has $\lvert v\rvert<\pi$ and covers the quaternion space cut along the closed negative real axis.
 
-The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(L_1+L_2)\neq\exp(L_1)\exp(L_2)$ for non-commuting exponents. The group of units is not $\mathbb{H}/\ker\exp$, and the fibres are lines, not cosets. The amalgamation into one exponential survives because the logarithmic scale is central.
+The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of units is not $\mathbb{H}/\ker\exp$, and the fibres are lines, not cosets. The amalgamation into one exponential survives because the logarithmic scale is central.
 
 The differential of the exponential is invertible exactly off the spheres $\lvert v\rvert=\pi k$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\lvert v\rvert/\lvert v\rvert)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ skew-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special unitary factor.
 
@@ -461,7 +461,7 @@ The differential of the exponential is invertible exactly off the spheres $\lver
 | $[v_1,v_2]=2v_1\times v_2$ | the commutator of pure quaternions |
 | $\mathrm d\exp_{\tilde q}$ | the differential, invertible off $\lvert v\rvert\in\pi\mathbb{Z}_{>0}$ |
 | $\exp(4q_t)(\sin\lvert v\rvert/\lvert v\rvert)^2$ | the Jacobian determinant |
-| $L=\ln r+v$ | the exponent, principal when $\lvert v\rvert<\pi$ |
+| $\tilde q_{\log}=\ln r+v$ | the exponent, principal when $\lvert v\rvert<\pi$ |
 | $N=\iota(n)$ | the skew-Hermitian matrix of the unit axis |
 | $M_{\tilde q}=\exp(\ln r\,I+\theta N)$ | the matrix exponential |
 | $\mathbb{H}\setminus(-\infty,0]$ | the image of the principal coordinates |

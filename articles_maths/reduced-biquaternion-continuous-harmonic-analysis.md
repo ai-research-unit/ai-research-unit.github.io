@@ -4,7 +4,7 @@
 
 This article studies the continuous Fourier transform of a reduced biquaternion-valued function. The transform is defined by an algebra-valued kernel built from a root of minus one; because the idempotents commute with every element and the multiplication is commutative, the transform splits into the pair of the ordinary complex Fourier transforms of the two idempotent coordinates. The article records the kernel, the transform pair, the factorization, the convolution theorem, the relation to the differential operators, the vanishing-norm issue and the relation to the discrete transform. The treatment is purely mathematical.
 
-Throughout the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal is a function $f:\mathbb{R}\to\mathbb{B}_{\mathrm{r}}$, and the exponential is that of *Reduced Biquaternion Elementary Functions*.
+Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal is a function $f:\mathbb{R}\to\mathbb{B}_{\mathrm{r}}$, and the exponential is that of *Reduced Biquaternion Elementary Functions*.
 
 ## The Fourier Kernel
 
@@ -19,7 +19,7 @@ W(t,\omega)=\cos(2\pi\omega t)-\rho\,\sin(2\pi\omega t),
 $$
 and $W(t,\omega)$ is a **unit**, with $\langle W\rangle_{\natural*}=W\bar W=1$ and inverse $W^{-1}=\bar W=\cos(2\pi\omega t)+\rho\sin(2\pi\omega t)$; its multiplicative norm is $\langle W\rangle_{\natural}=1$ when $\rho=\pm ij$ and $\langle W\rangle_{\natural}=e^{-4\pi i\omega t}$ when $\rho=i$.
 
-*Proof.* An element $\rho=Q_{++}\Pi_++Q_{--}\Pi_-$ has $\rho^{2}=Q_{++}^{2}\Pi_++Q_{--}^{2}\Pi_-$, so $\rho^{2}=-1$ exactly when $Q_{++}^{2}=Q_{--}^{2}=-1$; the kernel has the closed form because $\rho^{2}=-1$ makes the exponential series the two trigonometric series; and $W\bar W=K(W)=\cos^{2}+\sin^{2}=1$, because $\rho\bar\rho=1$ and $\rho+\bar\rho=0$ for the two roots, so the inverse is $\bar W$; the multiplicative norm is $\langle W\rangle_{\natural}=W W^{\natural}$, which is $1$ for $\rho=\pm ij$ and $e^{-4\pi i\omega t}$ for $\rho=i$, the natural sign fixing $i$.
+*Proof.* An element $\rho=Q_{+}\Pi_++Q_{-}\Pi_-$ has $\rho^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-$, so $\rho^{2}=-1$ exactly when $Q_{+}^{2}=Q_{-}^{2}=-1$; the kernel has the closed form because $\rho^{2}=-1$ makes the exponential series the two trigonometric series; and $W\bar W=K(W)=\cos^{2}+\sin^{2}=1$, because $\rho\bar\rho=1$ and $\rho+\bar\rho=0$ for the two roots, so the inverse is $\bar W$; the multiplicative norm is $\langle W\rangle_{\natural}=W W^{\natural}$, which is $1$ for $\rho=\pm ij$ and $e^{-4\pi i\omega t}$ for $\rho=i$, the natural sign fixing $i$.
 
 **Corollary (the kernel in the two coordinates).** With $\rho$ having coordinates $(w_{1},w_{2})$, both in $\{i,-i\}$, the kernel is
 $$

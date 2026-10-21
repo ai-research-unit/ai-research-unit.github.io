@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_++jQ_-$, idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ and the four algebraic norms $Q_+^{2}+Q_-^{2}$, $Q_+^{2}-Q_-^{2}$, $|Q_+|^{2}-|Q_-|^{2}$ and $|Q_+|^{2}+|Q_-|^{2}$. The algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is what the second of them carries. It is the tensor product of the two smallest Clifford algebras, $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, and it is the even Clifford algebra of the hyperbolic plane for its bilinear form, $\mathbb{B}_{\mathrm{r}}\cong Cl^{+}(\mathbb{C}^{2})$; and it also carries its own four-dimensional definite norm, whose Clifford algebra has a spinor module and a chirality grading. This article reads the second structure: the Clifford algebra of the algebra with its own norm, its spinor module, the two chiral halves, and the operator the Clifford structure puts on the module.
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and the four algebraic norms $Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$, $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, $|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2}$ and $|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}$. The algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is what the second of them carries. It is the tensor product of the two smallest Clifford algebras, $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, and it is the even Clifford algebra of the hyperbolic plane for its bilinear form, $\mathbb{B}_{\mathrm{r}}\cong Cl^{+}(\mathbb{C}^{2})$; and it also carries its own four-dimensional definite norm, whose Clifford algebra has a spinor module and a chirality grading. This article reads the second structure: the Clifford algebra of the algebra with its own norm, its spinor module, the two chiral halves, and the operator the Clifford structure puts on the module.
 
 The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The result is largely negative and exactly so. The algebra is commutative, so it cannot be the even part of the Clifford algebra of a four-dimensional form: that even part is $\mathbb{H}\oplus\mathbb{H}$, non-commutative. The algebra sits inside it as the complex part $\mathbb{C}\oplus\mathbb{C}$, its unitary torus is the part of the spin group it meets, and the spinor module is the complex four-dimensional module of the complexified Clifford algebra, split into two complex two-dimensional chiral halves. The operator that the structure defines, read in the idempotent coordinates, is the pair of the two complex Cauchy–Riemann operators, which is the analytic face of the same decomposition.
 
 The two Clifford identifications, the tensor product $Cl_{1,0}\otimes Cl_{0,1}$ and the hyperbolic plane, are *Reduced Biquaternion Other Algebraic Element Representations* and *Reduced Biquaternion Versors and the Orthogonal Group*; the forms and the norms are *The Four Products, Their Forms and Their Algebraic Norms*; the two complex analyses of the algebra and their differential operators are *Reduced Biquaternion Analysis*, *Reduced Biquaternion Regular Functions* and *Fueter Theory for Reduced Biquaternions*; the matrix model is *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*; the unitary torus is *The Unitary Group of the Reduced Biquaternion Algebra*. The companion is *Biquaternion Spin Geometry*, where the algebra is the even part of the Clifford algebra of Lorentzian space and the spinor module is the one of physics.
 
-**Conventions.** The norm $\langle \breve Q\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}$ is the definite form on the real four-space, of signature $(4,0)$; the norm $\langle \breve Q\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}$ is the indefinite form of signature $(2,2)$. The Clifford algebra of a real quadratic space $(V,\mathfrak{Q})$ is written $\mathrm{Cl}(V,\mathfrak{Q})$, its even part $\mathrm{Cl}^{+}(V,\mathfrak{Q})$, and the complexification is written with the complex field in place of the real one.
+**Conventions.** The norm $\langle \breve Q\rangle_{\natural*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}$ is the definite form on the real four-space, of signature $(4,0)$; the norm $\langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2}$ is the indefinite form of signature $(2,2)$. The Clifford algebra of a real quadratic space $(V,\mathfrak{Q})$ is written $\mathrm{Cl}(V,\mathfrak{Q})$, its even part $\mathrm{Cl}^{+}(V,\mathfrak{Q})$, and the complexification is written with the complex field in place of the real one.
 
 ## The Two Clifford Structures of the Algebra
 
@@ -40,7 +40,7 @@ $$
 
 **Proof.** A simple module for $M_{2}(\mathbb{H})$ is $\mathbb{H}^{2}$, of real dimension eight, which is the real dimension of the complex module of dimension four; the complexification of $M_{2}(\mathbb{H})$ is $M_{4}(\mathbb{C})$ and the complexification of $\mathbb{H}^{2}$ is $\mathbb{C}^{4}$.
 
-**Remark (the two halves and the two idempotent coordinates).** The algebra's own decomposition is the pair of idempotent coordinates $(Q_{++},Q_{--})$, of complex dimension one each, and it is the shadow of the chiral splitting of the spinor module: the two complex coordinates are the two minimal left ideals of the algebra, and the two chiral halves are the two complex two-dimensional summands of the module. They are not the same vector spaces, the algebra being four-real-dimensional and the module eight-real-dimensional, but they are the same decomposition in the sense that both are the two projections of the direct product structure and both are preserved by everything the algebra does.
+**Remark (the two halves and the two idempotent coordinates).** The algebra's own decomposition is the pair of idempotent coordinates $(Q_{+},Q_{-})$, of complex dimension one each, and it is the shadow of the chiral splitting of the spinor module: the two complex coordinates are the two minimal left ideals of the algebra, and the two chiral halves are the two complex two-dimensional summands of the module. They are not the same vector spaces, the algebra being four-real-dimensional and the module eight-real-dimensional, but they are the same decomposition in the sense that both are the two projections of the direct product structure and both are preserved by everything the algebra does.
 
 ## The Algebra Inside the Even Clifford Algebra
 
@@ -63,16 +63,16 @@ non-commutative; the algebra embeds in it as the complex part $\mathbb{B}_{\math
 **Theorem (the spin group and its intersection with the algebra).** The spin group of the definite form is $\mathrm{Spin}(4)\cong S^{3}\times S^{3}\subset\mathbb{H}\oplus\mathbb{H}=\mathrm{Cl}^{+}_{4,0}$, the group of pairs of unit quaternions; the intersection of this spin group with the algebra is the unitary torus
 
 $$
-\mathrm{Spin}(4)\cap\mathbb{B}_{\mathrm{r}}=\{Q_{++}\Pi_++Q_{--}\Pi_-:|Q_{++}|=|Q_{--}|=1\}\cong\mathbb{T}^{2},
+\mathrm{Spin}(4)\cap\mathbb{B}_{\mathrm{r}}=\{Q_{+}\Pi_++Q_{-}\Pi_-:|Q_{+}|=|Q_{-}|=1\}\cong\mathbb{T}^{2},
 $$
 
 which is the unitary group of the algebra and the maximal compact subgroup of its group of units.
 
 **Proof.** The spin group of a definite form is the group of unit versors in the even Clifford algebra, which for $M_{2}(\mathbb{H})$ is the group of pairs of unit quaternions; an element of the algebra is a pair $(\alpha,\beta)\in\mathbb{C}\oplus\mathbb{C}$ and it is a unit quaternion in each factor exactly when $|\alpha|=|\beta|=1$, which is the definition of the unitary torus; the statement that the torus is the unitary group and the maximal compact subgroup is *The Unitary Group of the Reduced Biquaternion Algebra*.
 
-**Remark (the versors are units).** Every element of the two spin groups above is a unit of the algebra, hence lies outside the zero-divisor cone: an element $Q_{++}\Pi_++Q_{--}\Pi_-$ is invertible exactly when both coordinates are nonzero, the algebra being commutative and having no division, so a versor is never a zero divisor. The versor groups are subgroups of the group of units $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, and the unitary torus is their common compact part.
+**Remark (the versors are units).** Every element of the two spin groups above is a unit of the algebra, hence lies outside the zero-divisor cone: an element $Q_{+}\Pi_++Q_{-}\Pi_-$ is invertible exactly when both coordinates are nonzero, the algebra being commutative and having no division, so a versor is never a zero divisor. The versor groups are subgroups of the group of units $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, and the unitary torus is their common compact part.
 
-**Remark (the versor group of the bilinear form).** The versors of the bilinear form of the algebra, $\{Q_{++}\Pi_++Q_{++}^{-1}\Pi_-\}\cong\mathbb{C}^{\times}$, are the spin group of the hyperbolic plane and not a subgroup of $\mathrm{Spin}(4)$ in the definite sense: they are the spin group $Spin(2,\mathbb{C})$ of the two-dimensional complex form, which is non-compact. The two spin groups therefore meet only in the compact torus, and the two-versor-group picture of *Reduced Biquaternion Versors and the Orthogonal Group* is the same picture.
+**Remark (the versor group of the bilinear form).** The versors of the bilinear form of the algebra, $\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-\}\cong\mathbb{C}^{\times}$, are the spin group of the hyperbolic plane and not a subgroup of $\mathrm{Spin}(4)$ in the definite sense: they are the spin group $Spin(2,\mathbb{C})$ of the two-dimensional complex form, which is non-compact. The two spin groups therefore meet only in the compact torus, and the two-versor-group picture of *Reduced Biquaternion Versors and the Orthogonal Group* is the same picture.
 
 ## The Dirac Operator and the Two-Factor Reduction
 
@@ -84,10 +84,10 @@ $$
 
 the Clifford multiplication by the basis combined with the partial derivatives, an operator on the spinor module.
 
-**Proposition (the two-factor reduction).** In the idempotent coordinates $(Q_{++},Q_{--})$ the four real directions group into the two complex directions, and the Dirac operator acts as the pair of the two complex Cauchy–Riemann operators,
+**Proposition (the two-factor reduction).** In the idempotent coordinates $(Q_{+},Q_{-})$ the four real directions group into the two complex directions, and the Dirac operator acts as the pair of the two complex Cauchy–Riemann operators,
 
 $$
-D=\bigl(\bar\partial_{Q_{++}},\;\bar\partial_{Q_{--}}\bigr),
+D=\bigl(\bar\partial_{Q_{+}},\;\bar\partial_{Q_{-}}\bigr),
 $$
 
 one on each idempotent coordinate; consequently the solutions of $Df=0$ are exactly the pairs of complex holomorphic functions of the two coordinates.
@@ -120,7 +120,7 @@ The reduced biquaternion algebra is a Clifford algebra in two senses. It is the 
 | $\mathbb{C}\oplus\mathbb{C}=\mathbb{B}_{\mathrm{r}}\subset\mathbb{H}\oplus\mathbb{H}$ | the algebra inside the even part |
 | $\mathrm{Spin}(4)\cong S^{3}\times S^{3}$ | the spin group of the definite form |
 | $\mathrm{Spin}(4)\cap\mathbb{B}_{\mathrm{r}}=\mathbb{T}^{2}$ | the unitary torus, the intersection |
-| $D=\sum_{j}e_{j}\partial_{j}=(\bar\partial_{Q_{++}},\bar\partial_{Q_{--}})$ | the Dirac operator and its two-factor reduction |
+| $D=\sum_{j}e_{j}\partial_{j}=(\bar\partial_{Q_{+}},\bar\partial_{Q_{-}})$ | the Dirac operator and its two-factor reduction |
 
 ## Further Reading
 

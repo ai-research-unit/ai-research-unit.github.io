@@ -4,9 +4,9 @@
 
 This article reads the reduced biquaternion space with its two scalar systems. Over the complex numbers it is a **two-dimensional** vector space on the basis $1,j$, and an element is a pair of complex coordinates; over the real numbers it is a **four-dimensional** space on the basis $1,i,j,ij$, and an element is a quadruple of real coordinates. The two readings are the same set, and the passage from one to the other is the **change of scalars**: the complex reading is the real reading together with a distinguished real-linear operator $J$, the multiplication by the central imaginary $i$, of square $-\mathrm{id}$, and the real space is the realification of the complex one.
 
-The article keeps the space and drops the product. Addition, the two scalar actions, the coordinate systems and the linear or antilinear character of the conjugations are what it fixes; the product is *Introduction to the Algebra of the Reduced Biquaternions*, and the four general products and the forms they carry are *The Four Products, Their Forms and Their Algebraic Norms*. The glyphs and the element $\breve Q=Q_++jQ_-$ are those of *Conventions in Mathematics*, §*The Elements and their Coefficients*, and of *Reduced Biquaternion Space*, above this article in this category.
+The article keeps the space and drops the product. Addition, the two scalar actions, the coordinate systems and the linear or antilinear character of the conjugations are what it fixes; the product is *Introduction to the Algebra of the Reduced Biquaternions*, and the four general products and the forms they carry are *The Four Products, Their Forms and Their Algebraic Norms*. The glyphs and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are those of *Conventions in Mathematics*, §*The Elements and their Coefficients*, and of *Reduced Biquaternion Space*, above this article in this category.
 
-**The results.** Over $\mathbb{C}$ the space has dimension two on the basis $1,j$, with the scalar action $\lambda(Q_++jQ_-)=\lambda Q_++j\lambda Q_-$; the two coordinates $Q_+$ and $Q_-$ are the **scalar part** and the **$j$-part**, the coefficients of $1$ and of $j$. Over $\mathbb{R}$ the space has dimension four on the basis $1,i,j,ij$, and the multiplication by $i$ is a real-linear operator $J$ with $J^{2}=-\mathrm{id}$ whose existence is what makes the complex reading possible. The realification multiplies the dimension by two, and the restriction of scalars halves it; the real reading carries two commuting square roots of $-\mathrm{id}$ behaving as diagonalisable-simultaneously operators only through the idempotent basis, and it carries the hyperbolic involution of the multiplication by $j$. Of the four conjugations, the **natural sign** is complex-linear and the **bar**, the **star** and the **flat** are complex-antilinear; this is the clause that separates the first slot of the four products from the second.
+**The results.** Over $\mathbb{C}$ the space has dimension two on the basis $1,j$, with the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$; the two coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ are the **scalar part** and the **$j$-part**, the coefficients of $1$ and of $j$. Over $\mathbb{R}$ the space has dimension four on the basis $1,i,j,ij$, and the multiplication by $i$ is a real-linear operator $J$ with $J^{2}=-\mathrm{id}$ whose existence is what makes the complex reading possible. The realification multiplies the dimension by two, and the restriction of scalars halves it; the real reading carries two commuting square roots of $-\mathrm{id}$ behaving as diagonalisable-simultaneously operators only through the idempotent basis, and it carries the hyperbolic involution of the multiplication by $j$. Of the four conjugations, the **natural sign** is complex-linear and the **bar**, the **star** and the **flat** are complex-antilinear; this is the clause that separates the first slot of the four products from the second.
 
 **Boundaries.** The conjugations, their fixed and anti-fixed spaces and the group they generate are *The Two Involutions and the Group of Involutions*, below this article in this category, and the fixed spaces as subspaces are *Introduction to the Remarkable Subspaces*, below this article in this category. The element representations — the four-vector, the $2\times2$ matrix and the polar forms — are the representation articles of the category. No form appears here; the four forms and their algebraic norms are *The Four Products, Their Forms and Their Algebraic Norms*, below this article. The module readings over the ring $\mathbb{B}_{\mathrm{r}}$ itself are not part of this article.
 
@@ -18,18 +18,18 @@ The article keeps the space and drops the product. Addition, the two scalar acti
 
 **Definition.** The reduced biquaternion space, read over the complex scalars, is the set
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}=\{\breve Q=Q_++jQ_-:Q_+,Q_-\in\mathbb{C}\},
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}=\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
 $$
 with the addition of the algebra and the scalar action
 $$
-\lambda(Q_++jQ_-)=\lambda Q_++j\lambda Q_-,\qquad\lambda\in\mathbb{C}.
+\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown},\qquad\lambda\in\mathbb{C}.
 $$
 
 The space is **two-dimensional** over $\mathbb{C}$: the basis $\{1,j\}$ is complex-linearly independent, and every element is a unique complex combination of its two members. The scalar action is the multiplication by the central imaginary $i$ extended by $\mathbb{C}$-linearity, and it is compatible with the product of the algebra, which is $\mathbb{C}$-bilinear.
 
-**Proposition (the complex coordinates).** Every element has a unique expression $\breve Q=Q_++jQ_-$ with $Q_+,Q_-\in\mathbb{C}$; the pair $(Q_+,Q_-)$ is the **complex coordinate pair**, $Q_+$ is the **$\mathbb{C}$ scalar part** and $jQ_-$ the **$j$-part**; the algebra has no vector part.
+**Proposition (the complex coordinates).** Every element has a unique expression $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the pair $(Q_{\blacktriangle},Q_{\blacktriangledown})$ is the **complex coordinate pair**, $Q_{\blacktriangle}$ is the **$\mathbb{C}$ scalar part** and $jQ_{\blacktriangledown}$ the **$j$-part**; the algebra has no vector part.
 
-*Proof.* Uniqueness is the linear independence of $1$ and $j$ over $\mathbb{C}$: if $Q_++jQ_-=0$ then, applying the natural sign of *The Two Involutions and the Group of Involutions*, $Q_+-jQ_-=0$, and adding the two gives $2Q_+=0$ and subtracting them gives $2jQ_-=0$, so $Q_+=Q_-=0$. Existence is the definition of the space, and the naming of the two coordinates is that of *Conventions in Mathematics*.
+*Proof.* Uniqueness is the linear independence of $1$ and $j$ over $\mathbb{C}$: if $Q_{\blacktriangle}+jQ_{\blacktriangledown}=0$ then, applying the natural sign of *The Two Involutions and the Group of Involutions*, $Q_{\blacktriangle}-jQ_{\blacktriangledown}=0$, and adding the two gives $2Q_{\blacktriangle}=0$ and subtracting them gives $2jQ_{\blacktriangledown}=0$, so $Q_{\blacktriangle}=Q_{\blacktriangledown}=0$. Existence is the definition of the space, and the naming of the two coordinates is that of *Conventions in Mathematics*.
 
 ### The Idempotent Reading
 
@@ -40,11 +40,11 @@ $$
 1=\Pi_++\Pi_-,\qquad j=\Pi_+-\Pi_-,\qquad
 \Pi_+=\tfrac12(1+j),\qquad \Pi_-=\tfrac12(1-j).
 $$
-In the idempotent basis the element $\breve Q=Q_++jQ_-$ is
+In the idempotent basis the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is
 $$
-\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-,\qquad Q_{++}=Q_++Q_-,\qquad Q_{--}=Q_+-Q_-,
+\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-,\qquad Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown},
 $$
-and the pair $(Q_{++},Q_{--})$ is the **idempotent coordinate pair**. Both pairs are complex coordinate systems on the same two-dimensional complex space; they are exchanged by the invertible matrix $\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$, and the choice between them is a choice of basis and not of structure. The two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are complex lines of complex dimension one and real dimension two; they are the components of the direct product $\mathbb{C}\oplus\mathbb{C}$ of *Reduced Biquaternion Space*.
+and the pair $(Q_{+},Q_{-})$ is the **idempotent coordinate pair**. Both pairs are complex coordinate systems on the same two-dimensional complex space; they are exchanged by the invertible matrix $\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$, and the choice between them is a choice of basis and not of structure. The two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are complex lines of complex dimension one and real dimension two; they are the components of the direct product $\mathbb{C}\oplus\mathbb{C}$ of *Reduced Biquaternion Space*.
 
 ## The Real Vector Space
 
@@ -54,17 +54,17 @@ and the pair $(Q_{++},Q_{--})$ is the **idempotent coordinate pair**. Both pairs
 
 **Definition.** The reduced biquaternion space, read over the real scalars, is the set
 $$
-\mathbb{B}_{\mathrm{r}}=\{q_++q'_+i+q_-j+q'_-ij:q_+,q'_+,q_-,q'_-\in\mathbb{R}\},
+\mathbb{B}_{\mathrm{r}}=\{q_{\blacktriangle}+q'_{\blacktriangle}i+q_{\blacktriangledown}j+q'_{\blacktriangledown}ij:q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}\in\mathbb{R}\},
 $$
-with the addition of the algebra and the scalar action $\lambda(Q_++jQ_-)=\lambda Q_++j\lambda Q_-$ for $\lambda\in\mathbb{R}$.
+with the addition of the algebra and the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$ for $\lambda\in\mathbb{R}$.
 
 **Proposition (the real coordinates).** Every element is a unique real combination of $1,i,j,ij$,
 $$
-\breve Q=q_++q'_+i+q_-j+q'_-ij,\qquad q_+,q'_+,q_-,q'_-\in\mathbb{R},
+\breve Q=q_{\blacktriangle}+q'_{\blacktriangle}i+q_{\blacktriangledown}j+q'_{\blacktriangledown}ij,\qquad q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}\in\mathbb{R},
 $$
-and the quadruple $(q_+,q'_+,q_-,q'_-)$ is the **real coordinate quadruple**, which is the four-vector representation of *The Four-Vector Element Representation of the Reduced Biquaternions*.
+and the quadruple $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ is the **real coordinate quadruple**, which is the four-vector representation of *The Four-Vector Element Representation of the Reduced Biquaternions*.
 
-*Proof.* The four elements $1,i,j,ij$ are real-linearly independent, since a real relation among them gives, in the complex coordinates, $Q_+=q_++iq'_+=0$ and $Q_-=q_-+iq'_-=0$, hence the four reals vanish; and they span, because $Q_+$ and $Q_-$ are complex. The dimension is therefore four over $\mathbb{R}$.
+*Proof.* The four elements $1,i,j,ij$ are real-linearly independent, since a real relation among them gives, in the complex coordinates, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}=0$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}=0$, hence the four reals vanish; and they span, because $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ are complex. The dimension is therefore four over $\mathbb{R}$.
 
 ### The Complex Structure
 
@@ -72,7 +72,7 @@ and the quadruple $(q_+,q'_+,q_-,q'_-)$ is the **real coordinate quadruple**, wh
 
 **Definition.** Let $J$ be the multiplication by $i$,
 $$
-J(\breve Q)=i\breve Q=iQ_++ijQ_-.
+J(\breve Q)=i\breve Q=iQ_{\blacktriangle}+ijQ_{\blacktriangledown}.
 $$
 
 **Proposition.** $J$ is $\mathbb{R}$-linear, it is $\mathbb{C}$-linear as well — it is the scalar action of $i$ itself and no new operator over $\mathbb{C}$ — and
@@ -88,7 +88,7 @@ The real space carries a second square root of $-\mathrm{id}$ that is not the sc
 
 **The multiplication by $j$ is a real-linear involution of square $+\mathrm{id}$, and its fixed and anti-fixed spaces are the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$.**
 
-**Proposition.** Let $S$ be the multiplication by $j$, $S(\breve Q)=j\breve Q=jQ_++Q_-$. Then $S$ is $\mathbb{R}$-linear, $S^{2}=+\mathrm{id}$, and $S$ is the multiplication itself by the unit $j$.
+**Proposition.** Let $S$ be the multiplication by $j$, $S(\breve Q)=j\breve Q=jQ_{\blacktriangle}+Q_{\blacktriangledown}$. Then $S$ is $\mathbb{R}$-linear, $S^{2}=+\mathrm{id}$, and $S$ is the multiplication itself by the unit $j$.
 
 *Proof.* $S^{2}(\breve Q)=j(j\breve Q)=j^{2}\breve Q=\breve Q$. The operator is the restriction to the space of the left multiplication of *The Multiplication Operators of the Algebra of the Reduced Biquaternions*, below this article in this category, at the element $j$.
 
@@ -104,9 +104,9 @@ The involution $S$ is **not** a conjugation in the sense of the four marks of th
 $$
 \dim_{\mathbb{R}}\mathbb{B}_{\mathrm{r}}=2\dim_{\mathbb{C}}\mathbb{B}_{\mathrm{r}}=4,
 $$
-and the passage is exactly the reading of the complex basis $\{1,j\}$ on the real basis $\{1,i,j,ij\}$, namely $1=1$ and $j=j$ with the two complex scalar coordinates split into four real ones by $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$.
+and the passage is exactly the reading of the complex basis $\{1,j\}$ on the real basis $\{1,i,j,ij\}$, namely $1=1$ and $j=j$ with the two complex scalar coordinates split into four real ones by $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$.
 
-*Proof.* The real basis is obtained from the complex one by replacing each complex basis element by its real and imaginary parts: $1$ is already real, and $j$ gives $j$ and $ij$. The two complex coordinates $Q_+,Q_-$ give the four real coordinates $(q_+,q'_+,q_-,q'_-)$ of the proposition on the real coordinates. The inverse passage is the insertion of $J$, which reads two real directions as one complex one.
+*Proof.* The real basis is obtained from the complex one by replacing each complex basis element by its real and imaginary parts: $1$ is already real, and $j$ gives $j$ and $ij$. The two complex coordinates $Q_{\blacktriangle},Q_{\blacktriangledown}$ give the four real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ of the proposition on the real coordinates. The inverse passage is the insertion of $J$, which reads two real directions as one complex one.
 
 **Remark (the ring-based readings are not this).** The realification and the complexification are passages between the two **field-based** readings of the same set. The set read as a module over the ring $\mathbb{B}_{\mathrm{r}}$ itself, with the scalar action the multiplication of the algebra, is a different object, and it is not part of this article. The warning is the one of the introduction, and the distinction is the same as in the biquaternion category between the complex vector space and the module over the algebra.
 
@@ -116,9 +116,9 @@ and the passage is exactly the reading of the complex basis $\{1,j\}$ on the rea
 
 | reading | basis | count | scalars | coordinates of $\breve Q$ |
 |---|---|---|---|---|
-| real | $1,i,j,ij$ | $4$ | $\mathbb{R}$ | $(q_+,q'_+,q_-,q'_-)$ |
-| complex | $1,j$ | $2$ | $\mathbb{C}$ | $(Q_+,Q_-)$ |
-| idempotent | $\Pi_+,\Pi_-$ | $2$ | $\mathbb{C}$ | $(Q_{++},Q_{--})$ |
+| real | $1,i,j,ij$ | $4$ | $\mathbb{R}$ | $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ |
+| complex | $1,j$ | $2$ | $\mathbb{C}$ | $(Q_{\blacktriangle},Q_{\blacktriangledown})$ |
+| idempotent | $\Pi_+,\Pi_-$ | $2$ | $\mathbb{C}$ | $(Q_{+},Q_{-})$ |
 
 The first and the third are real- or complex-based readings of the same four real coordinates; the second and the third are two complex bases of the same two-dimensional complex space. The table is the reduced biquaternion instance of the coordinate table of *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, with the quaternionic coordinate system absent because the algebra has no quaternionic factor.
 
@@ -126,7 +126,7 @@ The first and the third are real- or complex-based readings of the same four rea
 
 **Of the four conjugations the natural sign is $\mathbb{C}$-linear and the bar, the star and the flat are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of a product carries a conjugation.**
 
-The conjugations are defined in *The Two Involutions and the Group of Involutions*; here only their action on the scalars is recorded. For $\lambda\in\mathbb{C}$ and $\breve Q=Q_++jQ_-$:
+The conjugations are defined in *The Two Involutions and the Group of Involutions*; here only their action on the scalars is recorded. For $\lambda\in\mathbb{C}$ and $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$:
 $$
 \overline{\lambda \breve Q}=\bar\lambda\,\overline{\breve Q},\qquad
 (\lambda \breve Q)^{\natural}=\lambda\,\breve Q^{\natural},\qquad
@@ -134,7 +134,7 @@ $$
 (\lambda \breve Q)^{\flat}=\bar\lambda\,\breve Q^{\flat}.
 $$
 
-**Proof.** The bar conjugates the two complex coordinates, and the conjugate of a product of complex numbers is the product of the conjugates, so it is antilinear; the natural sign negates the second coordinate and leaves the first, $(\lambda Q_+)-(\lambda Q_-)j=\lambda(Q_+-jQ_-)$, so it is linear; the star is the composite of the bar and the natural sign and is antilinear as the composite of an antilinear and a linear map; and the flat is $-{}^{*}$, which is antilinear as well since $-1$ is real.
+**Proof.** The bar conjugates the two complex coordinates, and the conjugate of a product of complex numbers is the product of the conjugates, so it is antilinear; the natural sign negates the second coordinate and leaves the first, $(\lambda Q_{\blacktriangle})-(\lambda Q_{\blacktriangledown})j=\lambda(Q_{\blacktriangle}-jQ_{\blacktriangledown})$, so it is linear; the star is the composite of the bar and the natural sign and is antilinear as the composite of an antilinear and a linear map; and the flat is $-{}^{*}$, which is antilinear as well since $-1$ is real.
 
 **Corollary (which slot carries which conjugation).** A product whose first slot carries the natural sign and whose second slot carries the star,
 $$
@@ -158,28 +158,28 @@ The six fixed and anti-fixed spaces of the bar, the natural sign and the star ar
 
 ## Summary
 
-Read over the complex scalars the reduced biquaternion space is two-dimensional on the basis $1,j$, with the scalar action $\lambda(Q_++jQ_-)=\lambda Q_++j\lambda Q_-$, and an element is the complex coordinate pair $(Q_+,Q_-)$ whose members are the scalar part $Q_+$ and the $j$-part $jQ_-$. Read over the real scalars it is four-dimensional on the basis $1,i,j,ij$, and an element is the real quadruple $(q_+,q'_+,q_-,q'_-)$. The two readings are the same set: the complex one is the real one together with the complex structure
+Read over the complex scalars the reduced biquaternion space is two-dimensional on the basis $1,j$, with the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$, and an element is the complex coordinate pair $(Q_{\blacktriangle},Q_{\blacktriangledown})$ whose members are the scalar part $Q_{\blacktriangle}$ and the $j$-part $jQ_{\blacktriangledown}$. Read over the real scalars it is four-dimensional on the basis $1,i,j,ij$, and an element is the real quadruple $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$. The two readings are the same set: the complex one is the real one together with the complex structure
 $$
 J(\breve Q)=i\breve Q,\qquad J^{2}=-\mathrm{id},
 $$
 and the passage between them is the realification and the restriction of scalars, which double and halve the dimension. The multiplication by $j$ is a real-linear involution $S$, $S^{2}=+\mathrm{id}$, with the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ as fixed and anti-fixed space; and the multiplication by $ij$ is a second non-scalar square root of $-\mathrm{id}$ commuting with $J$.
 
-A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in which $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ and the space is the direct sum of the two complex idempotent lines. Of the four conjugations the **natural sign** is $\mathbb{C}$-linear and the **bar**, the **star** and the **flat** are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of each of the four general products carries a conjugation. The remarkable subspaces are named and not developed; the scalar line $\mathbb{C}$ plays in this category the role the centre $\mathbb{C}e_t$ plays in the biquaternion category, the algebra being commutative.
+A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in which $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ and the space is the direct sum of the two complex idempotent lines. Of the four conjugations the **natural sign** is $\mathbb{C}$-linear and the **bar**, the **star** and the **flat** are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of each of the four general products carries a conjugation. The remarkable subspaces are named and not developed; the scalar line $\mathbb{C}$ plays in this category the role the centre $\mathbb{C}e_t$ plays in the biquaternion category, the algebra being commutative.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\breve Q=Q_++jQ_-$ | an element in the complex reading, $Q_+,Q_-\in\mathbb{C}$ |
-| $\lambda(Q_++jQ_-)=\lambda Q_++j\lambda Q_-$ | the complex scalar action |
-| $(Q_+,Q_-)$ | the complex coordinate pair |
+| $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | an element in the complex reading, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ |
+| $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$ | the complex scalar action |
+| $(Q_{\blacktriangle},Q_{\blacktriangledown})$ | the complex coordinate pair |
 | $1,i,j,ij$ | the real basis |
-| $(q_+,q'_+,q_-,q'_-)$ | the real coordinate quadruple, $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ |
+| $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ | the real coordinate quadruple, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ |
 | $J$ | the multiplication by $i$, the complex structure, $J^{2}=-\mathrm{id}$ |
 | $S$ | the multiplication by $j$, the hyperbolic involution, $S^{2}=+\mathrm{id}$ |
 | $J_{ij}$ | the multiplication by $ij$, a non-scalar complex structure, $J_{ij}^{2}=-\mathrm{id}$ |
-| $\Pi_{\pm}=\tfrac12(1\pm j)$ | the idempotent basis, with $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ |
-| $(Q_{++},Q_{--})$ | the idempotent coordinate pair |
+| $\Pi_{\pm}=\tfrac12(1\pm j)$ | the idempotent basis, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |
+| $(Q_{+},Q_{-})$ | the idempotent coordinate pair |
 | linear / antilinear | the action of the natural sign against that of the bar, the star and the flat |
 | $\mathbb{C}$ | the scalar line, fixed space of the natural sign |
 

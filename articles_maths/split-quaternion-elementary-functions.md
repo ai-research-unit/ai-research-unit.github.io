@@ -127,10 +127,10 @@ hold when $\tilde q \tilde p = \tilde p\tilde q$ and fail in general; the failur
 
 ## The Logarithm
 
-**Definition.** The **logarithm** is the inverse of the exponential on a domain on which the exponential is injective; on the dense open set where the power series of the matrix logarithm converges it is
+**Definition.** A **logarithm** of $\tilde q$ is written $\tilde q_{\log}$. It is the inverse of the exponential on a domain on which the exponential is injective; on the dense open set where the power series of the matrix logarithm converges it is
 
 $$
-\log \tilde q = \log \sqrt{\langle\tilde q\rangle_{\natural}} + \log\big(\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\big) ,
+\tilde q_{\log} = \log \sqrt{\langle\tilde q\rangle_{\natural}} + \log\big(\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\big) ,
 $$
 
 the second term being an element of $V$ obtained from the logarithm of the traceless part.

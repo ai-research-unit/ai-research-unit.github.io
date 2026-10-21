@@ -2,31 +2,31 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ and element $\breve Q=Q_++jQ_-$. Its star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ acts by $\breve Q^{*}=\bar Q_+-j\bar Q_-$, that is by $(Q_{++},Q_{--})\mapsto(\bar Q_{--},\bar Q_{++})$, and it carries two Hermitian forms: the plain sesquilinear form
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. Its star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ acts by $\breve Q^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$, that is by $(Q_{+},Q_{-})\mapsto(\bar Q_{-},\bar Q_{+})$, and it carries two Hermitian forms: the plain sesquilinear form
 
 $$
-\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{H}}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1+}\bar Q_{2+}-Q_{1-}\bar Q_{2-},
+\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{H}}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}-Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},
 $$
 
-whose quadratic form is $\langle \breve Q\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}$, indefinite of real signature $(2,2)$, and the quaternionic sesquilinear form
+whose quadratic form is $\langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2}$, indefinite of real signature $(2,2)$, and the quaternionic sesquilinear form
 
 $$
-\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{K}}=\mathrm{Sc}(\breve Q_{1}^{\natural}\breve Q_{2}^{*})=Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-},
+\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{K}}=\mathrm{Sc}(\breve Q_{1}^{\natural}\breve Q_{2}^{*})=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}+Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},
 $$
 
-whose quadratic form is $\langle \breve Q\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=\mathrm{Sc}(\breve Q^{\natural}\breve Q^{*})$, positive definite. The **unitary group** of the algebra is the group of units that leave the Hermitian form invariant; because the algebra is a direct product of two complex lines, that group splits into two circles, and everything the article says about it follows from the coordinates.
+whose quadratic form is $\langle \breve Q\rangle_{\natural*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\mathrm{Sc}(\breve Q^{\natural}\breve Q^{*})$, positive definite. The **unitary group** of the algebra is the group of units that leave the Hermitian form invariant; because the algebra is a direct product of two complex lines, that group splits into two circles, and everything the article says about it follows from the coordinates.
 
 The classical unitary condition reads $P^{\natural}P^{*}=1$, and in the idempotent coordinates it is the pair of unit-modulus conditions $|p|=|q|=1$: the unitary group of the definite form is the compact torus $\mathbb{T}^{2}$, the maximal compact subgroup of the group of units. The unitary group of the indefinite form is the complementary graph group $\{p\bar q=1\}\cong\mathbb{C}^{\times}$, non-compact. The two are the compact and the split object of the algebra, they meet in a circle, and the group of units retracts onto both, with different homotopy meaning: onto the torus as the maximal compact subgroup, onto the split group as a projection with non-contractible fibres.
 
 The article owns the two unitary groups, the retraction of the unit group onto the compact one, the retraction of the norm-one group onto its compact part, and the homotopy invariants of all of them. The dagger and the involutions are *The Two Involutions and the Group of Involutions*; the four products and the four norms are *The Four Products, Their Forms and Their Algebraic Norms*; the group of units and its Lie structure are *The Group of Units of the Algebra of the Reduced Biquaternions* and *Reduced Biquaternion Lie Group and Exponential Structure*; the metric and the topology of the space are *Topology and Metric for Each of the Operations* and *The Euclidean Topology of the Reduced Biquaternion Algebra*; the norm-one group of the multiplication is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. The non-commutative companion, where the unitary group is $\mathrm{U}(2)$ and the topology of the unit group follows from it, is *The Unitary Group of the Biquaternion Algebra*.
 
-**Conventions.** A general element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$, and the idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so that $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The group of units is $\mathbb{B}_{\mathrm{r}}^{\times}=\{Q_{++}Q_{--}\neq0\}$, the topological norm is $\langle\cdot\rangle_{\natural*}$, and the reduced norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$ is the algebraic norm, an element of the algebra, not a positive real.
+**Conventions.** A general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The group of units is $\mathbb{B}_{\mathrm{r}}^{\times}=\{Q_{+}Q_{-}\neq0\}$, the topological norm is $\langle\cdot\rangle_{\natural*}$, and the reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ is the algebraic norm, an element of the algebra, not a positive real.
 
 ## The Unitary Group of the Definite Form
 
 **Proposition (the classical condition).** For a unit $P$ the following are equivalent: $P^{\natural}P^{*}=1$; $\langle P \breve Q\rangle_{\natural*}=\langle \breve Q\rangle_{\natural*}$ for every $\breve Q$; and $|p|=|q|=1$ in the idempotent coordinates $P=p\Pi_++q\Pi_-$.
 
-**Proof.** In the idempotent coordinates the star sends $(p,q)$ to $(\bar q,\bar p)$ and the natural sign to $(q,p)$, so $P^{\natural}P^{*}=(|q|^{2},|p|^{2})$ and its scalar part is $\langle P\rangle_{\natural*}=\tfrac12(|p|^{2}+|q|^{2})$; and $\langle P \breve Q\rangle_{\natural*}=\tfrac12\bigl(|p|^{2}|Q_{++}|^{2}+|q|^{2}|Q_{--}|^{2}\bigr)$ because the idempotent coordinates multiply componentwise and $\langle\cdot\rangle_{\natural*}$ reads the two moduli squared. The condition $\langle P \breve Q\rangle_{\natural*}=\langle \breve Q\rangle_{\natural*}$ for all $\breve Q$ forces $|p|=|q|=1$, and under that condition it holds.
+**Proof.** In the idempotent coordinates the star sends $(p,q)$ to $(\bar q,\bar p)$ and the natural sign to $(q,p)$, so $P^{\natural}P^{*}=(|q|^{2},|p|^{2})$ and its scalar part is $\langle P\rangle_{\natural*}=\tfrac12(|p|^{2}+|q|^{2})$; and $\langle P \breve Q\rangle_{\natural*}=\tfrac12\bigl(|p|^{2}|Q_{+}|^{2}+|q|^{2}|Q_{-}|^{2}\bigr)$ because the idempotent coordinates multiply componentwise and $\langle\cdot\rangle_{\natural*}$ reads the two moduli squared. The condition $\langle P \breve Q\rangle_{\natural*}=\langle \breve Q\rangle_{\natural*}$ for all $\breve Q$ forces $|p|=|q|=1$, and under that condition it holds.
 
 **Theorem (the unitary group is a torus).** The unitary group of the definite form,
 
@@ -58,7 +58,7 @@ $$
 
 a non-compact abelian group isomorphic to the multiplicative group of the complex field, homotopy equivalent to a circle.
 
-**Proof.** $\langle P \breve Q\rangle_{*}=\mathrm{Re}\bigl(p\,Q_{++}\cdot\overline{q\,Q_{--}}\bigr)=\mathrm{Re}\bigl(p\bar q\,Q_{++}\bar Q_{--}\bigr)$, and $\langle \breve Q\rangle_{*}=\mathrm{Re}(Q_{++}\bar Q_{--})$, so the condition for all $\breve Q$ is $p\bar q=1$, which forces $q=\bar p^{-1}$; the map to $\mathbb{C}^{\times}$ by the first coordinate is an isomorphism, since the multiplication is $p\bar q=p(\bar p^{-1})^{-1}$.
+**Proof.** $\langle P \breve Q\rangle_{*}=\mathrm{Re}\bigl(p\,Q_{+}\cdot\overline{q\,Q_{-}}\bigr)=\mathrm{Re}\bigl(p\bar q\,Q_{+}\bar Q_{-}\bigr)$, and $\langle \breve Q\rangle_{*}=\mathrm{Re}(Q_{+}\bar Q_{-})$, so the condition for all $\breve Q$ is $p\bar q=1$, which forces $q=\bar p^{-1}$; the map to $\mathbb{C}^{\times}$ by the first coordinate is an isomorphism, since the multiplication is $p\bar q=p(\bar p^{-1})^{-1}$.
 
 **Corollary (the intersection of the two unitary groups).** The two unitary groups meet in the diagonal circle
 
@@ -92,15 +92,15 @@ is a strong deformation retraction of the group of units onto the unitary torus,
 
 ## The Retraction of the Norm-One Group
 
-**Theorem (the compact part of the norm-one group).** The norm-one group of the multiplication is $\{P:\langle P\rangle_{\natural}=1\}=\{Q_{++}\Pi_++Q_{++}^{-1}\Pi_-\}\cong\mathbb{C}^{\times}$; its intersection with the unitary torus is the diagonal circle $\{Q_{++}\Pi_++\bar Q_{++}\Pi_-:|Q_{++}|=1\}\cong S^{1}$, and the modulus map $Q_{++}\mapsto Q_{++}/|Q_{++}|$ is a strong deformation retraction
+**Theorem (the compact part of the norm-one group).** The norm-one group of the multiplication is $\{P:\langle P\rangle_{\natural}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-\}\cong\mathbb{C}^{\times}$; its intersection with the unitary torus is the diagonal circle $\{Q_{+}\Pi_++\bar Q_{+}\Pi_-:|Q_{+}|=1\}\cong S^{1}$, and the modulus map $Q_{+}\mapsto Q_{+}/|Q_{+}|$ is a strong deformation retraction
 
 $$
 \{\langle P\rangle_{\natural}=1\}\longrightarrow \{\langle P\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B}_{\mathrm{r}})\cong S^{1}.
 $$
 
-**Proof.** $\langle P\rangle_{\natural}=Q_{++}Q_{--}=1$ forces $Q_{--}=Q_{++}^{-1}$ and $Q_{++}\neq0$, and putting $|Q_{++}|=1$ gives $Q_{--}=\bar Q_{++}$, which is the diagonal circle; the homotopy sends $Q_{++}$ to $|Q_{++}|^{1-t}Q_{++}/|Q_{++}|$ and $Q_{++}^{-1}$ to $|Q_{++}|^{t}Q_{++}^{-1}$, so the product $Q_{++}Q_{--}$ stays equal to one.
+**Proof.** $\langle P\rangle_{\natural}=Q_{+}Q_{-}=1$ forces $Q_{-}=Q_{+}^{-1}$ and $Q_{+}\neq0$, and putting $|Q_{+}|=1$ gives $Q_{-}=\bar Q_{+}$, which is the diagonal circle; the homotopy sends $Q_{+}$ to $|Q_{+}|^{1-t}Q_{+}/|Q_{+}|$ and $Q_{+}^{-1}$ to $|Q_{+}|^{t}Q_{+}^{-1}$, so the product $Q_{+}Q_{-}$ stays equal to one.
 
-**Corollary (the topology of the norm-one group).** The norm-one group is homotopy equivalent to a circle; its fundamental group is $\mathbb{Z}$, its element $Q_{++}=\exp(x+iy)$ has a logarithm defined modulo $2\pi i\mathbb{Z}$, and the universal covering is
+**Corollary (the topology of the norm-one group).** The norm-one group is homotopy equivalent to a circle; its fundamental group is $\mathbb{Z}$, its element $Q_{+}=\exp(x+iy)$ has a logarithm defined modulo $2\pi i\mathbb{Z}$, and the universal covering is
 
 $$
 \mathbb{C}\longrightarrow\mathbb{C}^{\times}, \qquad x\longmapsto \exp(x),
@@ -140,7 +140,7 @@ one in each idempotent line, based at the unit $1$; they commute, and every loop
 
 ## Worked Examples
 
-**A unitary element and a split element.** The element $\Pi_++i\Pi_-$ has $p=1$ and $q=i$, so it is unitary and its topological norm is $\langle\cdot\rangle_{\natural*}=1$; it is a unit, since $\langle\cdot\rangle_{\natural}=i\neq0$, and it is nevertheless isotropic for the indefinite form, because $Q_+=\tfrac12(1+i)$ and $Q_-=\tfrac12(1-i)$ have equal moduli and $\langle\cdot,\cdot\rangle_{*}=0$. The null set of $\langle\cdot\rangle_{*}$ therefore contains units, and is not the set of zero divisors. The element $2\Pi_++\tfrac12\Pi_-$ has $\langle\cdot\rangle_{\natural}=1$, so it is a non-compact versor, with $\langle\cdot\rangle_{\natural*}=\tfrac12(4+\tfrac14)=\tfrac{17}{8}$, and it lies outside the unitary torus.
+**A unitary element and a split element.** The element $\Pi_++i\Pi_-$ has $p=1$ and $q=i$, so it is unitary and its topological norm is $\langle\cdot\rangle_{\natural*}=1$; it is a unit, since $\langle\cdot\rangle_{\natural}=i\neq0$, and it is nevertheless isotropic for the indefinite form, because $Q_{\blacktriangle}=\tfrac12(1+i)$ and $Q_{\blacktriangledown}=\tfrac12(1-i)$ have equal moduli and $\langle\cdot,\cdot\rangle_{*}=0$. The null set of $\langle\cdot\rangle_{*}$ therefore contains units, and is not the set of zero divisors. The element $2\Pi_++\tfrac12\Pi_-$ has $\langle\cdot\rangle_{\natural}=1$, so it is a non-compact versor, with $\langle\cdot\rangle_{\natural*}=\tfrac12(4+\tfrac14)=\tfrac{17}{8}$, and it lies outside the unitary torus.
 
 **The retraction in coordinates.** The unit $P=(3+4i,\;2i)$ retracts to $(3/5+4i/5,\;i)$, a point of the torus; the deformation path scales the radius of the first coordinate from five to one and the radius of the second from two to one, keeping the arguments.
 
@@ -148,22 +148,22 @@ one in each idempotent line, based at the unit $1$; they commute, and every loop
 
 ## Summary
 
-The reduced biquaternion algebra carries two Hermitian forms with respect to its star. The definite one has quadratic form $\langle\cdot,\cdot\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=\mathrm{Sc}(P^{*}P)$ and unitary group $\mathrm{U}(\mathbb{B}_{\mathrm{r}})=\{P:|p|=|q|=1\}\cong\mathbb{T}^{2}$, the compact abelian torus, which is the maximal compact subgroup and the maximal torus of the group of units and the group of multiplicative isometries of $\langle\cdot\rangle_{\natural*}$; the group of units is $\mathbb{T}^{2}\times\mathbb{R}_{>0}^{2}$ through the polar decomposition. The indefinite one has quadratic form $\langle\cdot,\cdot\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}$ and unitary group $\{p\bar q=1\}\cong\mathbb{C}^{\times}$, a non-compact split group homotopy equivalent to a circle; the two unitary groups meet in the diagonal circle. The modulus map retracts the group of units onto the torus, so the unit group is homotopy equivalent to $\mathbb{T}^{2}$, with $\pi_{1}=\mathbb{Z}^{2}$ generated by the two idempotent circles, no higher homotopy and universal cover $\mathbb{C}^{2}$; the norm-one group $\{N=1\}\cong\mathbb{C}^{\times}$ retracts onto its compact part, the diagonal circle, with $\pi_{1}=\mathbb{Z}$ and universal cover the exponential of $\mathbb{C}$. The split unitary group is not a deformation retract but a complementary subgroup. The compact group is the analogue of the unitary group $\mathrm{U}(2)$ of the biquaternion algebra, with the real dimension lowered from four to two and the fundamental group enlarged from $\mathbb{Z}$ to $\mathbb{Z}^{2}$.
+The reduced biquaternion algebra carries two Hermitian forms with respect to its star. The definite one has quadratic form $\langle\cdot,\cdot\rangle_{\natural*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\mathrm{Sc}(P^{*}P)$ and unitary group $\mathrm{U}(\mathbb{B}_{\mathrm{r}})=\{P:|p|=|q|=1\}\cong\mathbb{T}^{2}$, the compact abelian torus, which is the maximal compact subgroup and the maximal torus of the group of units and the group of multiplicative isometries of $\langle\cdot\rangle_{\natural*}$; the group of units is $\mathbb{T}^{2}\times\mathbb{R}_{>0}^{2}$ through the polar decomposition. The indefinite one has quadratic form $\langle\cdot,\cdot\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2}$ and unitary group $\{p\bar q=1\}\cong\mathbb{C}^{\times}$, a non-compact split group homotopy equivalent to a circle; the two unitary groups meet in the diagonal circle. The modulus map retracts the group of units onto the torus, so the unit group is homotopy equivalent to $\mathbb{T}^{2}$, with $\pi_{1}=\mathbb{Z}^{2}$ generated by the two idempotent circles, no higher homotopy and universal cover $\mathbb{C}^{2}$; the norm-one group $\{N=1\}\cong\mathbb{C}^{\times}$ retracts onto its compact part, the diagonal circle, with $\pi_{1}=\mathbb{Z}$ and universal cover the exponential of $\mathbb{C}$. The split unitary group is not a deformation retract but a complementary subgroup. The compact group is the analogue of the unitary group $\mathrm{U}(2)$ of the biquaternion algebra, with the real dimension lowered from four to two and the fundamental group enlarged from $\mathbb{Z}$ to $\mathbb{Z}^{2}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\breve Q^{*}=\bar{\breve Q}^{\natural}$ | the star, $(Q_{++},Q_{--})\mapsto(\bar Q_{--},\bar Q_{++})$ |
+| $\breve Q^{*}=\bar{\breve Q}^{\natural}$ | the star, $(Q_{+},Q_{-})\mapsto(\bar Q_{-},\bar Q_{+})$ |
 | $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{H}}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})$ | the plain sesquilinear Hermitian form, quadratic form $\langle\cdot,\cdot\rangle_{*}$ |
 | $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{K}}=\mathrm{Sc}(\breve Q_{1}^{\natural}\breve Q_{2}^{*})$ | the quaternionic sesquilinear Hermitian form, quadratic form $\langle\cdot,\cdot\rangle_{\natural*}$ |
-| $\langle \breve Q\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}=\mathrm{Sc}(\breve Q^{\natural}\breve Q^{*})$ | the definite norm, the topological norm |
-| $\langle \breve Q\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$ | the indefinite norm |
+| $\langle \breve Q\rangle_{\natural*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}=\mathrm{Sc}(\breve Q^{\natural}\breve Q^{*})$ | the definite norm, the topological norm |
+| $\langle \breve Q\rangle_{*}=\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}$ | the indefinite norm |
 | $\mathrm{U}(\mathbb{B}_{\mathrm{r}})=\{P^{\natural}P^{*}=1\}$ | the unitary group of the definite form, $\cong\mathbb{T}^{2}$ |
 | $\mathrm{U}(\mathbb{B}_{\mathrm{r}},H)=\{p\bar q=1\}$ | the unitary group of the indefinite form, $\cong\mathbb{C}^{\times}$ |
 | $\mathbb{T}^{2}=\{\lvert p\rvert=\lvert q\rvert=1\}$ | the maximal compact torus of the group of units |
 | $\mathbb{B}_{\mathrm{r}}^{\times}=\mathbb{T}^{2}\times\mathbb{R}_{>0}^{2}$ | the polar decomposition of the group of units |
-| $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$ | the reduced norm, the algebraic norm, distinct from $\langle\cdot\rangle_{\natural*}$ |
+| $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ | the reduced norm, the algebraic norm, distinct from $\langle\cdot\rangle_{\natural*}$ |
 
 ## Further Reading
 

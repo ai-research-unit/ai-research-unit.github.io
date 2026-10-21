@@ -53,7 +53,7 @@ A_{(1)}=A_{1,i}+A_{j,k}=A_0+A_2+i(A_1+A_3),\qquad
 A_{(2)}=A_{1,i}-A_{j,k}=A_0-A_2+i(A_1-A_3).
 $$
 
-The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the **idempotent coordinates** of $A$. They are the components written $X^+$ and $X^-$ in *Least Squares and Total Least Squares over the Reduced Biquaternions*, and they satisfy $\Pi_+\Pi_-=0$, $\Pi_\pm^2=\Pi_\pm$, $\Pi_++\Pi_-=1$. The element convention of *Conventions in Mathematics* writes the idempotent coordinates with the doubled sign, $Q_{++},Q_{--}$; the tensor branch keeps the parentheses $A_{(1)},A_{(2)}$ and the signs $+,-$ for the idempotents $\Pi_\pm$. The two notations name the same two complex tensors, and the parentheses avoid a collision with the entry indices.
+The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the **idempotent coordinates** of $A$. They are the components written $X^+$ and $X^-$ in *Least Squares and Total Least Squares over the Reduced Biquaternions*, and they satisfy $\Pi_+\Pi_-=0$, $\Pi_\pm^2=\Pi_\pm$, $\Pi_++\Pi_-=1$. The element convention of *Conventions in Mathematics* writes the idempotent coordinates with the sign, $Q_{+},Q_{-}$; the tensor branch keeps the parentheses $A_{(1)},A_{(2)}$ and the signs $+,-$ for the idempotents $\Pi_\pm$. The two notations name the same two complex tensors, and the parentheses avoid a collision with the entry indices.
 
 **Proposition (the two complex readings).** The map $A\mapsto(A_{(1)},A_{(2)})$ is a bijection from $\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ onto the pairs of complex tensors of the same shape. Its inverse is
 

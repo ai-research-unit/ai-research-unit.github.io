@@ -107,9 +107,9 @@ $$
 \exp(\mathbb{C}) = \mathbb{C}^\times, \qquad \mathbb{C}^\times = \{\exp(Q) : Q \in \mathbb{C}\}.
 $$
 
-**Proof.** Every nonzero complex number has a polar form $Q = r\exp(i\theta)$ with $r = |Q| > 0$ and $\theta \in \mathbb{R}$, so with $L = \ln r + i\theta$ one has $\exp(L) = \exp(\ln r)\exp(i\theta) = r\exp(i\theta) = Q$.
+**Proof.** Every nonzero complex number has a polar form $Q = r\exp(i\theta)$ with $r = |Q| > 0$ and $\theta \in \mathbb{R}$, so with $Q_{\log} = \ln r + i\theta$ one has $\exp(Q_{\log}) = \exp(\ln r)\exp(i\theta) = r\exp(i\theta) = Q$.
 
-The element $L$ is a **complex logarithm** of $Q$. The construction is unique up to the kernel of $\exp$.
+The element $Q_{\log}$ is a **complex logarithm** of $Q$. The construction is unique up to the kernel of $\exp$.
 
 **Theorem (kernel).** For $Q \in \mathbb{C}$ one has $\exp(Q) = 1$ if and only if $Q \in 2\pi i\,\mathbb{Z}$.
 
@@ -141,7 +141,7 @@ $$
 Q = \underbrace{\exp(\ln r)}_{r \in \mathbb{R}_{>0}} \underbrace{\exp(i\theta)}_{u \in \mathrm{U}(1)},
 $$
 
-the product of a positive real scale, obtained from the real part of $L$, and a phase, obtained from the imaginary part. The splitting is the polar decomposition written in exponential coordinates, and it is exact, not a local statement, because the exponential is a homomorphism.
+the product of a positive real scale, obtained from the real part of $Q_{\log}$, and a phase, obtained from the imaginary part. The splitting is the polar decomposition written in exponential coordinates, and it is exact, not a local statement, because the exponential is a homomorphism.
 
 **The exponential is not one-to-one.** It restricts to a bijection on the strip $|\operatorname{Im} Q| \le \pi$ with the identification $\operatorname{Im} Q = \pm\pi$, and to a bijection on a real line $\mathbb{R} 1$ of scales; the many-to-one character is entirely the kernel $2\pi i \mathbb{Z}$ along the imaginary axis.
 

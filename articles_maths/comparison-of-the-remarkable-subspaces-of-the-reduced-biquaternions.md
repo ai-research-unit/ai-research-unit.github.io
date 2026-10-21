@@ -20,12 +20,12 @@ and the comparison is summarised by three statements. **The subalgebras among th
 
 | space | defining equation | basis | real dim | $\mathbb{C}$-linear | norm $\langle\cdot\rangle$ |
 |---|---|---|---|---|---|
-| $\mathbb{C}$ | $\breve Q^{\natural}=\breve Q$ | $1,\ i$ | $2$ | yes | $Q_+^{2}$, complex |
-| $\mathbb{C}j$ | $\breve Q^{\natural}=-\breve Q$ | $j,\ ij$ | $2$ | yes | $-Q_-^{2}$, complex |
-| $\mathbb{R}\{1,j\}$ | $\bar{\breve Q}=\breve Q$ | $1,\ j$ | $2$ | no | $Q_+^{2}-Q_-^{2}$, split |
-| $\mathbb{R}\{i,ij\}$ | $\bar{\breve Q}=-\breve Q$ | $i,\ ij$ | $2$ | no | $-(Q_+^{2}-Q_-^{2})$, split |
-| $\mathbb{R}\{1,ij\}$ | $\breve Q^{*}=\breve Q$ | $1,\ ij$ | $2$ | no | $Q_+^{2}+Q_-^{2}$, positive definite |
-| $\mathbb{R}\{i,j\}$ | $\breve Q^{*}=-\breve Q$ | $i,\ j$ | $2$ | no | $-(Q_+^{2}+Q_-^{2})$, negative definite |
+| $\mathbb{C}$ | $\breve Q^{\natural}=\breve Q$ | $1,\ i$ | $2$ | yes | $Q_{\blacktriangle}^{2}$, complex |
+| $\mathbb{C}j$ | $\breve Q^{\natural}=-\breve Q$ | $j,\ ij$ | $2$ | yes | $-Q_{\blacktriangledown}^{2}$, complex |
+| $\mathbb{R}\{1,j\}$ | $\bar{\breve Q}=\breve Q$ | $1,\ j$ | $2$ | no | $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, split |
+| $\mathbb{R}\{i,ij\}$ | $\bar{\breve Q}=-\breve Q$ | $i,\ ij$ | $2$ | no | $-(Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2})$, split |
+| $\mathbb{R}\{1,ij\}$ | $\breve Q^{*}=\breve Q$ | $1,\ ij$ | $2$ | no | $Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$, positive definite |
+| $\mathbb{R}\{i,j\}$ | $\breve Q^{*}=-\breve Q$ | $i,\ j$ | $2$ | no | $-(Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2})$, negative definite |
 | $\mathbb{C}\Pi_+$ | $j\breve Q=\breve Q$ | $\Pi_+,\ i\Pi_+$ | $2$ | yes | $0$ |
 | $\mathbb{C}\Pi_-$ | $j\breve Q=-\breve Q$ | $\Pi_-,\ i\Pi_-$ | $2$ | yes | $0$ |
 

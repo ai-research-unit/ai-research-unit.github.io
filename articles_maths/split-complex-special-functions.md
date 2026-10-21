@@ -49,37 +49,160 @@ So the split complex exponential is the pair of ordinary real exponentials, one 
 
 ### The Split Complex Logarithm
 
-The **split complex logarithm** is the inverse of the exponential. It is defined for $Q$ with $Q_+ > 0$ and $Q_- > 0$ by
+A **logarithm** of $Q \in \mathbb{D}$ is a split complex number $Q_{\log}$ with $\exp(Q_{\log}) = Q$. The exponential is injective, because its two idempotent components are ordinary real exponentials (§*The Idempotent Form*), so a logarithm is unique when it exists; the only question is its domain. Throughout this section, $\log$ applied to a positive real number is the ordinary real logarithm.
+
+Write $Q_{\log} = u + jv$ and $Q = q + jq'$. The split Euler formula turns $\exp(Q_{\log}) = Q$ into
 
 $$
-\log Q = \frac{1}{2} \log(Q_+ Q_-) + \frac{j}{2} \log\left(\frac{Q_+}{Q_-}\right).
+\exp(u)\cosh v = q, \qquad \exp(u)\sinh v = q'.
 $$
 
-Equivalently, in the idempotent basis,
+Squaring and subtracting eliminates $v$:
 
 $$
-\log Q = \log(Q_+) \Pi_+ + \log(Q_-) \Pi_-.
+\exp(2u)(\cosh^2 v - \sinh^2 v) = \exp(2u) = q^2 - q'^2 = N(Q).
 $$
 
-The logarithm is defined only on the region where both idempotent components are positive. It is not defined on the null cone, because one of the components vanishes there.
-
-The logarithm is split complex differentiable on its domain, with derivative $1/Q$. It satisfies
+The left side is positive for every real $u$, so a solution requires $N(Q) > 0$. Under that condition $u$ is unique,
 
 $$
-\log(Q B) = \log Q + \log B
+u = \tfrac12 \log N(Q) = \tfrac12 \log(q^2-q'^2).
 $$
 
-whenever both sides are defined.
+The ratio of the two equations then gives $\tanh v = q'/q$. Since $\cosh v > 0$ and $\exp(u) > 0$, the first equation forces $q > 0$; together with $q^2 > q'^2$ this gives $|q'/q| < 1$, so $v = \operatorname{artanh}(q'/q)$ is defined. Hence a logarithm exists exactly when
+
+$$
+q^2 > q'^2 \quad \text{and} \quad q > 0,
+$$
+
+that is, when $Q$ lies in the future cone $q > |q'|$. In that region $v$ is unique,
+
+$$
+v = \operatorname{artanh}\frac{q'}{q} = \frac12 \log\frac{q+q'}{q-q'},
+$$
+
+and the logarithm is
+
+$$
+\log Q = \frac{1}{2} \log(q^2-q'^2) + \frac{j}{2} \log\left(\frac{q+q'}{q-q'}\right).
+$$
+
+In the idempotent basis this is one line. With $Q_\pm = q \pm q'$,
+
+$$
+\log Q = \log(Q_+) \Pi_+ + \log(Q_-) \Pi_-,
+$$
+
+and the real logarithm exists if and only if $Q_+ > 0$ and $Q_- > 0$, which is the same condition $q > |q'|$.
+
+### The Two Compositions
+
+Unlike the complex case, both inverse identities hold exactly, with no remainder.
+
+**Right inverse.** For $Q$ in the future cone and $Q_{\log}$ its logarithm,
+
+$$
+\exp(Q_{\log}) = Q.
+$$
+
+**Proof.** Put $Q_{\log} = u + jv$, so $u = \tfrac12\log(q^2-q'^2)$ and $v = \operatorname{artanh}(q'/q)$. Then $\exp(u) = \sqrt{q^2-q'^2}$ and
+
+$$
+\cosh v = \frac{q}{\sqrt{q^2-q'^2}}, \qquad \sinh v = \frac{q'}{\sqrt{q^2-q'^2}},
+$$
+
+so
+
+$$
+\exp(u)(\cosh v + j\sinh v) = q + jq' = Q.
+$$
+
+In the idempotent basis the same computation reads $\exp(\log Q_\pm) = Q_\pm$ in each component.
+
+**Left inverse.** For every $Q \in \mathbb{D}$ and every logarithm $Q_{\log}$ of $Q$,
+
+$$
+\log(\exp(Q_{\log})) = Q_{\log}.
+$$
+
+**Proof.** Write $Q_{\log} = u+jv$. The idempotent form gives
+
+$$
+\exp(Q_{\log}) = \exp(u+v)\Pi_+ + \exp(u-v)\Pi_-.
+$$
+
+Both components $\exp(u\pm v)$ are positive, so the logarithm is defined, and
+
+$$
+\log(\exp(Q_{\log})) = \log(\exp(u+v))\Pi_+ + \log(\exp(u-v))\Pi_- = (u+v)\Pi_+ + (u-v)\Pi_- = u + jv = Q_{\log}.
+$$
+
+Equivalently, $\exp(\log(\exp(Q_{\log}))) = \exp(Q_{\log})$, and $\exp$ is injective, so $\log(\exp(Q_{\log})) = Q_{\log}$. There is no integer to lose: the kernel of the split complex exponential is $\{0\}$. In group language, $\exp$ is an injective homomorphism from $(\mathbb{D},+)$ to $(\mathbb{D}^\times,\cdot)$, and $\log$ is the inverse isomorphism from the future cone to $\mathbb{D}$.
+
+For instance, $Q = 5+3j$ has $Q_{\log} = \ln 4 + j\ln 2$, and $\exp(Q_{\log}) = 5+3j$. In the other direction, $Q_{\log} = -1+0.3j$ gives $Q = \exp(Q_{\log}) = 0.3845585 + 0.1120268\,j$, whose logarithm is $Q_{\log}$ again.
+
+### The Domain of the Logarithm
+
+The domain is the future cone
+
+$$
+\operatorname{dom}\log = \{Q = q+jq' : q > |q'|\} = \{Q : Q_+ > 0,\ Q_- > 0\},
+$$
+
+which is exactly the image of the exponential. The other three components of $\mathbb{D}^\times$ have no logarithm, and neither does the null cone that separates them.
+
+| region | condition | logarithm |
+|---|---|---|
+| future cone | $q > \lvert q'\rvert$ | exists, unique |
+| past cone | $q < -\lvert q'\rvert$ | none |
+| spacelike wedges | $\lvert q'\rvert > \lvert q\rvert$ | none |
+| null cone | $q = \pm q'$ | none |
+
+The past cone fails because both idempotent components are negative. The spacelike wedges fail because $N(Q) < 0$, while every exponential has positive norm. The null cone fails because one component is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $Q_- \to 0^+$, for instance, $\log Q_- \to -\infty$ and the $j$-component of $\log Q$ tends to $+\infty$.
+
+The product identity follows at once from injectivity:
+
+$$
+\log(QB) = \log Q + \log B
+$$
+
+whenever both sides are defined, because both sides have the same exponential, $QB$, and $\exp$ is injective.
+
+### The Derivative of the Logarithm
+
+The derivative is again forced by the inverse identity.
+
+**Inverse function theorem.** The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $N(\exp(Q_{\log})) = \exp(2\operatorname{Re}Q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative
+
+$$
+(\exp^{-1})'(Q) = \frac{1}{\exp'(Q_{\log})} = \frac{1}{\exp(Q_{\log})} = \frac{1}{Q}.
+$$
+
+The global inverse is $\log$, so $\log' Q = 1/Q$ on the future cone.
+
+**Idempotent check.** Since $\log Q = \log(Q_+)\Pi_+ + \log(Q_-)\Pi_-$ and differentiation is componentwise,
+
+$$
+\log' Q = \frac{1}{Q_+}\Pi_+ + \frac{1}{Q_-}\Pi_- = \frac{1}{Q}.
+$$
+
+The last equality is the idempotent expansion of $1/Q$. Both components are defined and nonzero on the future cone, so no exceptional point occurs inside the domain.
 
 ### Split Complex Powers
 
-For $P \in \mathbb{D}$ and $Q$ in the domain of the logarithm,
+For $P \in \mathbb{D}$ and $Q$ in the future cone,
 
 $$
 Q^{P} = \exp(P \log Q).
 $$
 
-This is single-valued on the domain of the logarithm, unlike the complex case, where the logarithm is multivalued. The reason is that the split complex exponential is injective on its domain, so the logarithm is single-valued.
+This is single-valued, because $\log Q$ is unique. The usual laws hold whenever the arguments stay in the domain:
+
+$$
+Q^{P_1} Q^{P_2} = Q^{P_1+P_2}, \qquad (Q^P)^R = Q^{PR}.
+$$
+
+The first follows because $\exp$ is a homomorphism and the exponents commute. The second follows because $\log(\exp(P\log Q)) = P\log Q$ exactly; the base $Q^P$ is itself an exponential, hence lies in the future cone, so its logarithm exists. This is the sharpest contrast with the complex case, where the same laws hold only modulo the ambiguity of the logarithm.
 
 ## The Hyperbolic Functions
 
@@ -439,7 +562,7 @@ This theorem is the reason split complex special functions are simpler than comp
 
 The split complex special functions are the named functions that arise in split complex analysis, in hyperbolic geometry and in the theory of the wave equation. Each is obtained by carrying the corresponding real or complex definition to the split complex variable by means of the split complex exponential and the algebra operations.
 
-The exponential is defined by its series, and the hyperbolic functions are built from it, the trigonometric functions being replaced by their hyperbolic analogues because $j^2 = +1$. Integral representations then supply the gamma and beta functions, the error function, the Airy function, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $W \mapsto W\exp(W)$.
+The exponential is defined by its series, and the hyperbolic functions are built from it, the trigonometric functions being replaced by their hyperbolic analogues because $j^2 = +1$. The logarithm is a genuine two-sided inverse on the future cone: $\exp(Q_{\log}) = Q$ there, and $\log(\exp(Q_{\log})) = Q_{\log}$ exactly, with no branch and no period. Integral representations then supply the gamma and beta functions, the error function, the Airy function, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $W \mapsto W\exp(W)$.
 
 The section on the idempotent principle states what organises the whole collection: every split complex special function is the pair of ordinary real special functions obtained by evaluating it on the two idempotent components, one for $\Pi_+$ and one for $\Pi_-$, so that each definition is a real definition applied twice.
 
@@ -451,6 +574,7 @@ The section on the idempotent principle states what organises the whole collecti
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\exp(Q), \log Q$ | Split complex exponential, logarithm |
+| $Q_{\log}$ | A logarithm of $Q$ |
 | $\sinh Q, \cosh Q, \tanh Q$ | Split hyperbolic functions |
 | $\Gamma(Q)$ | Split complex gamma function |
 | $B(n, m)$ | Split complex beta function; arguments $n, m$ |

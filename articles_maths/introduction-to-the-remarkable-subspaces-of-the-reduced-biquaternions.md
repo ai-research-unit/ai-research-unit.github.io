@@ -92,7 +92,7 @@ and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an
 
 **Corollary (the norms on the two planes).** On the Hermitian subspace the algebraic norm is $\langle a+bij\rangle_{\natural}=a^{2}+b^{2}>0$ for a nonzero element, so every nonzero Hermitian element is a unit; on the anti-Hermitian subspace the norm is $\langle ai+bj\rangle_{\natural}=-a^{2}-b^{2}<0$. The star plane is the copy $\mathbb{R}\{1,ij\}\cong\mathbb{C}$ of the complex field inside the algebra, the element $ij$ playing the role of the imaginary unit, since $(ij)^{2}=i^{2}j^{2}=(-1)(+1)=-1$.
 
-**Remark (Hermitian is not positive).** The name refers to the star and not to a sign of a form: the general plain sesquilinear form has the value $\langle \breve Q\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}=a^{2}-b^{2}$ on a Hermitian element $\breve Q=a+bij$, which is indefinite in $a,b$. The definite form of the algebra is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$, and the positivity of $\langle\cdot\rangle_{\natural}$ on the Hermitian subspace is the positivity of the diagonal of a bilinear form, not of $\langle\cdot,\cdot\rangle_{*}$. The forms are *The Forms of the Algebra of the Reduced Biquaternions*.
+**Remark (Hermitian is not positive).** The name refers to the star and not to a sign of a form: the general plain sesquilinear form has the value $\langle \breve Q\rangle_{*}=\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}=a^{2}-b^{2}$ on a Hermitian element $\breve Q=a+bij$, which is indefinite in $a,b$. The definite form of the algebra is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$, and the positivity of $\langle\cdot\rangle_{\natural}$ on the Hermitian subspace is the positivity of the diagonal of a bilinear form, not of $\langle\cdot,\cdot\rangle_{*}$. The forms are *The Forms of the Algebra of the Reduced Biquaternions*.
 
 ## The Idempotent Lines
 
@@ -147,12 +147,12 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 
 **On the six coordinate planes the norm is either positive definite, negative definite or split, and on the idempotent lines it vanishes identically.**
 
-**Theorem (the norms).** The algebraic norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ restricted to the spaces is
+**Theorem (the norms).** The algebraic norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ restricted to the spaces is
 
 | space | parametrisation | $N$ | sign |
 |---|---|---|---|
-| $\mathbb{C}$ | $Q_+$ | $Q_+^{2}$ | complex |
-| $\mathbb{C}j$ | $Q_-j$ | $-Q_-^{2}$ | complex |
+| $\mathbb{C}$ | $Q_{\blacktriangle}$ | $Q_{\blacktriangle}^{2}$ | complex |
+| $\mathbb{C}j$ | $Q_{\blacktriangledown}j$ | $-Q_{\blacktriangledown}^{2}$ | complex |
 | $\mathbb{R}\{1,j\}$ | $a+bj$ | $a^{2}-b^{2}$ | split |
 | $\mathbb{R}\{i,ij\}$ | $i(a+bj)$ | $-(a^{2}-b^{2})$ | split |
 | $\mathbb{R}\{1,ij\}$ | $a+bij$ | $a^{2}+b^{2}$ | positive definite |
@@ -161,7 +161,7 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 
 with $a,b\in\mathbb{R}$.
 
-*Proof.* Substitute each parametrisation into $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$: for $\breve Q=a+bj$ the coordinates are $Q_+=a$, $Q_-=b$, so $N=a^{2}-b^{2}$; for $\breve Q=a+bij$ they are $Q_+=a$, $Q_-=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $\breve Q=ai+bj$ they are $Q_+=ai$, $Q_-=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $\breve Q=x\Pi_+$ or $\breve Q=x\Pi_-$ the coordinates have $Q_+\pm Q_-=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
+*Proof.* Substitute each parametrisation into $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$: for $\breve Q=a+bj$ the coordinates are $Q_{\blacktriangle}=a$, $Q_{\blacktriangledown}=b$, so $N=a^{2}-b^{2}$; for $\breve Q=a+bij$ they are $Q_{\blacktriangle}=a$, $Q_{\blacktriangledown}=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $\breve Q=ai+bj$ they are $Q_{\blacktriangle}=ai$, $Q_{\blacktriangledown}=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $\breve Q=x\Pi_+$ or $\breve Q=x\Pi_-$ the coordinates have $Q_{\blacktriangle}\pm Q_{\blacktriangledown}=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
 
 **Corollary (the zero divisors).** The two idempotent lines are exactly the null set of the norm, and their nonzero elements are the zero divisors of *Zero Divisors of the Algebra of the Reduced Biquaternions*; the Hermitian and anti-Hermitian subspaces are the two kinds of element on which the norm has a definite sign, and the real subalgebra and its $i$-multiple are the two split planes.
 
@@ -182,7 +182,7 @@ The remarkable subspaces of the reduced biquaternion algebra are eight planes of
 | $\mathbb{R}\{i,j\}$ | the anti-Hermitian subspace, the anti-fixed space of the star |
 | $\mathbb{C}\Pi_+,\ \mathbb{C}\Pi_-$ | the idempotent lines, the eigenlines of the multiplication by $j$ |
 | $\varepsilon(L)=(\varepsilon_{\bar{}},\varepsilon_{\natural},\varepsilon_{*})$ | the character of a real line |
-| $N=Q_+^{2}-Q_-^{2}$ | the algebraic norm read on each space |
+| $N=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the algebraic norm read on each space |
 
 ## Further Reading
 

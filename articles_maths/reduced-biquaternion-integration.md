@@ -4,7 +4,7 @@
 
 This article develops the integral theory of the reduced biquaternion algebra: the integral of an algebra-valued function on a domain, the integration by parts, the divergence theorem and Green's formulas, the fundamental solution of the reduced Cauchy–Riemann operator, the Cauchy integral formula and its consequences, and the residue theory. It follows *Reduced Biquaternion Regular Functions*, where the operator and its regular functions are studied. Because the algebra is **commutative**, no left-versus-right bookkeeping is needed and the vector identities take their ordinary form, against the two non-commutative members of the family. The treatment is purely mathematical.
 
-Throughout the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}$, the algebra is identified with $\mathbb{R}^{4}$ by the coordinate isometry $(q_+,q'_+,q_-,q'_-)$, and the Lebesgue measure of that identification is written $\mathrm{d}\mu$. A reduced-analytic function is $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ with $G_{1},G_{2}$ holomorphic.
+Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\natural*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$, the algebra is identified with $\mathbb{R}^{4}$ by the coordinate isometry $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$, and the Lebesgue measure of that identification is written $\mathrm{d}\mu$. A reduced-analytic function is $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ with $G_{1},G_{2}$ holomorphic.
 
 ## The Integral of a Reduced-Biquaternion-Valued Function
 
@@ -27,7 +27,7 @@ $$
 $$
 \int_{\Omega}\partial_{\nu}f\,\mathrm{d}\mu=\int_{\partial\Omega}f\,n_{\nu}\,\mathrm{d}S ,
 $$
-the outward normal $n=(n_{q_+},n_{q'_+},n_{q_-},n_{q'_-})$ and $\mathrm{d}S$ the surface measure. Consequently, for $C^{1}$ functions $f,h$,
+the outward normal $n=(n_{q_{\blacktriangle}},n_{q'_{\blacktriangle}},n_{q_{\blacktriangledown}},n_{q'_{\blacktriangledown}})$ and $\mathrm{d}S$ the surface measure. Consequently, for $C^{1}$ functions $f,h$,
 $$
 \int_{\Omega}(\partial_{\nu}f)\,h\,\mathrm{d}\mu=-\int_{\Omega}f\,(\partial_{\nu}h)\,\mathrm{d}\mu+\int_{\partial\Omega}f\,h\,n_{\nu}\,\mathrm{d}S .
 $$
@@ -40,7 +40,7 @@ $$
 
 ## The Divergence Theorem
 
-**Definition.** For a $C^{1}$ field $f$ the **divergence** is $\operatorname{div}f=\partial/\partial q_+f_{q_+}+\partial/\partial q'_+f_{q'_+}+\partial/\partial q_-f_{q_-}+\partial/\partial q'_-f_{q'_-}$ when $f$ is resolved into its four coordinate components, and the **algebra-valued divergence** is
+**Definition.** For a $C^{1}$ field $f$ the **divergence** is $\operatorname{div}f=\partial/\partial q_{\blacktriangle}f_{q_{\blacktriangle}}+\partial/\partial q'_{\blacktriangle}f_{q'_{\blacktriangle}}+\partial/\partial q_{\blacktriangledown}f_{q_{\blacktriangledown}}+\partial/\partial q'_{\blacktriangledown}f_{q'_{\blacktriangledown}}$ when $f$ is resolved into its four coordinate components, and the **algebra-valued divergence** is
 $$
 \operatorname{Div}f=\sum_{\nu=1}^{4}\partial_{\nu}f\,\otimes\,e_{\nu},
 $$
@@ -75,34 +75,34 @@ where $\partial f\cdot\partial h=\sum_{\nu}(\partial_{\nu}f)(\partial_{\nu}h)$ i
 
 **Definition.** The **Cauchy kernel** is
 $$
-G(\breve Q)=\frac{1}{2\pi i}\Bigl(\frac{\Pi_+}{Q_{++}}+\frac{\Pi_-}{Q_{--}}\Bigr).
+G(\breve Q)=\frac{1}{2\pi i}\Bigl(\frac{\Pi_+}{Q_{+}}+\frac{\Pi_-}{Q_{-}}\Bigr).
 $$
-The fundamental solution of $\partial/\partial\bar Q_{++}$ in the $Q_{++}$-plane is $1/(\pi Q_{++})$, and $G$ is $(2i)^{-1}$ times its two-factor lift.
+The fundamental solution of $\partial/\partial\bar Q_{+}$ in the $Q_{+}$-plane is $1/(\pi Q_{+})$, and $G$ is $(2i)^{-1}$ times its two-factor lift.
 
-**Theorem (the distributional identity and its limit).** In the $Q_{++}$-plane, with $Q_{--}$ held as a parameter,
+**Theorem (the distributional identity and its limit).** In the $Q_{+}$-plane, with $Q_{-}$ held as a parameter,
 $$
-\partial/\partial\bar Q_{++}\,\Bigl(\frac{1}{\pi Q_{++}}\Bigr)=\delta ,
+\partial/\partial\bar Q_{+}\,\Bigl(\frac{1}{\pi Q_{+}}\Bigr)=\delta ,
 $$
-the two-dimensional Dirac measure at the origin of that plane, and symmetrically for $Q_{--}$. The kernel $G$ is therefore $(2i)^{-1}$ times a fundamental solution of $\partial/\partial\bar Q_{++}$ **transversally**, on each of the two coordinate planes, and it is locally integrable on the algebra with the singular set $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ removed.
+the two-dimensional Dirac measure at the origin of that plane, and symmetrically for $Q_{-}$. The kernel $G$ is therefore $(2i)^{-1}$ times a fundamental solution of $\partial/\partial\bar Q_{+}$ **transversally**, on each of the two coordinate planes, and it is locally integrable on the algebra with the singular set $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ removed.
 
 **Remark (the honest limits).** A single four-dimensional fundamental solution in the classical sense does not exist, because the singular set $Z$ is a union of two planes of real codimension two, not a point: the delta in the identity above is the two-dimensional delta of one coordinate plane, the normal directions to that plane carrying no singularity. This is the analytic form of the fact that the operator is elliptic at no point, and it is why the integral theory is a **pair** of one-variable theories rather than a four-dimensional one. On the two planes the algebra is not invertible, and the kernel is undefined there.
 
 ## The Cauchy Integral Formula
 
-**Theorem (Cauchy's theorem).** Let $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ be reduced-analytic on a domain, and let $\gamma_{1}$ and $\gamma_{2}$ be closed contours in the $Q_{++}$-plane and the $Q_{--}$-plane, swept out by a curve in the algebra on which $f$ is regular. Then
+**Theorem (Cauchy's theorem).** Let $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ be reduced-analytic on a domain, and let $\gamma_{1}$ and $\gamma_{2}$ be closed contours in the $Q_{+}$-plane and the $Q_{-}$-plane, swept out by a curve in the algebra on which $f$ is regular. Then
 $$
 \oint f\,\mathrm{d}\breve Q=0 ,
 $$
-the differential being $\mathrm{d}\breve Q=\mathrm{d}Q_{++}\,\Pi_++\mathrm{d}Q_{--}\,\Pi_-$ along the curve.
+the differential being $\mathrm{d}\breve Q=\mathrm{d}Q_{+}\,\Pi_++\mathrm{d}Q_{-}\,\Pi_-$ along the curve.
 
-*Proof.* The integral splits in the idempotent coordinates into $\Pi_+\oint_{\gamma_{1}}G_{1}(Q_{++})\mathrm{d}Q_{++}+\Pi_-\oint_{\gamma_{2}}G_{2}(Q_{--})\mathrm{d}Q_{--}$, each a one-variable contour integral of a holomorphic function, which vanishes by the classical Cauchy theorem.
+*Proof.* The integral splits in the idempotent coordinates into $\Pi_+\oint_{\gamma_{1}}G_{1}(Q_{+})\mathrm{d}Q_{+}+\Pi_-\oint_{\gamma_{2}}G_{2}(Q_{-})\mathrm{d}Q_{-}$, each a one-variable contour integral of a holomorphic function, which vanishes by the classical Cauchy theorem.
 
-**Theorem (the Cauchy integral formula).** Let $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ be reduced-analytic on a domain containing the point $\breve Q_{0}$ with coordinates $Q_{0++},Q_{0--}$, and let $\gamma_{1},\gamma_{2}$ be simple closed contours encircling $Q_{0++}$ and $Q_{0--}$ counterclockwise, on which $f$ is regular. Then
+**Theorem (the Cauchy integral formula).** Let $f=G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ be reduced-analytic on a domain containing the point $\breve Q_{0}$ with coordinates $Q_{0+},Q_{0-}$, and let $\gamma_{1},\gamma_{2}$ be simple closed contours encircling $Q_{0+}$ and $Q_{0-}$ counterclockwise, on which $f$ is regular. Then
 $$
-f(\breve Q_{0})=\frac{1}{2\pi i}\Bigl(\Pi_+\oint_{\gamma_{1}}\frac{G_{1}(Q_{++})}{Q_{++}-Q_{0++}}\,\mathrm{d}Q_{++}+\Pi_-\oint_{\gamma_{2}}\frac{G_{2}(Q_{--})}{Q_{--}-Q_{0--}}\,\mathrm{d}Q_{--}\Bigr).
+f(\breve Q_{0})=\frac{1}{2\pi i}\Bigl(\Pi_+\oint_{\gamma_{1}}\frac{G_{1}(Q_{+})}{Q_{+}-Q_{0+}}\,\mathrm{d}Q_{+}+\Pi_-\oint_{\gamma_{2}}\frac{G_{2}(Q_{-})}{Q_{-}-Q_{0-}}\,\mathrm{d}Q_{-}\Bigr).
 $$
 
-*Proof.* In each idempotent component the classical Cauchy integral formula gives $G_{1}(Q_{0++})=(2\pi i)^{-1}\oint G_{1}(Q_{++})/(Q_{++}-Q_{0++})\mathrm{d}Q_{++}$ and the companion for $G_{2}$; multiplying by the idempotents and adding gives the display, and the two contours are independent, one in each complex coordinate plane.
+*Proof.* In each idempotent component the classical Cauchy integral formula gives $G_{1}(Q_{0+})=(2\pi i)^{-1}\oint G_{1}(Q_{+})/(Q_{+}-Q_{0+})\mathrm{d}Q_{+}$ and the companion for $G_{2}$; multiplying by the idempotents and adding gives the display, and the two contours are independent, one in each complex coordinate plane.
 
 **Corollary (the boundary form is cylindrical).** The formula is a pair of one-variable formulas, so the value at $\breve Q_{0}$ is reproduced from the values on the union of the two cylinders over $\gamma_{1}$ and $\gamma_{2}$, not from a single three-dimensional boundary in the algebra. The order of the two integrations is immaterial.
 
@@ -110,11 +110,11 @@ $$
 
 ## Consequences of the Cauchy Integral Formula
 
-**Analyticity.** A reduced-analytic function has the two holomorphic components $G_{1},G_{2}$, so it is real-analytic and all its derivatives are regular; the $n$-th derivative is obtained by differentiating the kernel, $G_{1}^{(n)}(Q_{0++})\Pi_++G_{2}^{(n)}(Q_{0--})\Pi_-$.
+**Analyticity.** A reduced-analytic function has the two holomorphic components $G_{1},G_{2}$, so it is real-analytic and all its derivatives are regular; the $n$-th derivative is obtained by differentiating the kernel, $G_{1}^{(n)}(Q_{0+})\Pi_++G_{2}^{(n)}(Q_{0-})\Pi_-$.
 
 **The mean value property.** Each component satisfies the one-variable mean value property, and since the Euclidean Laplacian is the ordinary one in four real variables, a reduced-analytic function has the mean value property over the Euclidean balls of the algebra.
 
-**Liouville's theorem.** A reduced-analytic function bounded on the whole algebra is constant: $G_{1}$ depends on $Q_{++}$ alone and is bounded as $Q_{++}$ ranges over $\mathbb{C}$, so it is constant by the one-variable Liouville theorem, and $G_{2}$ likewise.
+**Liouville's theorem.** A reduced-analytic function bounded on the whole algebra is constant: $G_{1}$ depends on $Q_{+}$ alone and is bounded as $Q_{+}$ ranges over $\mathbb{C}$, so it is constant by the one-variable Liouville theorem, and $G_{2}$ likewise.
 
 **The maximum principle.** A non-constant reduced-analytic function has no interior maximum of $\lVert f\rVert$ on a connected domain, because each component is harmonic for the ordinary Laplacian.
 
@@ -122,21 +122,21 @@ $$
 
 ## The Residue Theory
 
-**Theorem (the residue theorem).** Let $f$ be meromorphic in each coordinate, regular off the poles, with poles $Q_{p++}$ in the $Q_{++}$-plane and $Q_{q--}$ in the $Q_{--}$-plane. Then for contours encircling the appropriate poles,
+**Theorem (the residue theorem).** Let $f$ be meromorphic in each coordinate, regular off the poles, with poles $Q_{p+}$ in the $Q_{+}$-plane and $Q_{q-}$ in the $Q_{-}$-plane. Then for contours encircling the appropriate poles,
 $$
-\oint f\,\mathrm{d}\breve Q=2\pi i\Bigl(\Pi_+\sum_{p}\operatorname{Res}_{Q_{p++}}G_{1}+\Pi_-\sum_{q}\operatorname{Res}_{Q_{q--}}G_{2}\Bigr),
+\oint f\,\mathrm{d}\breve Q=2\pi i\Bigl(\Pi_+\sum_{p}\operatorname{Res}_{Q_{p+}}G_{1}+\Pi_-\sum_{q}\operatorname{Res}_{Q_{q-}}G_{2}\Bigr),
 $$
 the two sums being the ordinary one-variable residues.
 
 *Proof.* The integral splits as before, and the classical residue theorem applied to each holomorphic component gives the two sums.
 
-**Corollary (the residue at a higher-order pole).** If $G_{1}$ has a pole of order $m$ at $Q_{0++}$ with Laurent expansion $\sum_{r\ge-m}c_{r}(Q_{++}-Q_{0++})^{r}$, the residue is $c_{-1}$, given by $\operatorname{Res}_{Q_{0++}}G_{1}=(m-1)!^{-1}\lim_{Q_{++}\to Q_{0++}}\frac{\mathrm{d}^{m-1}}{\mathrm{d}Q_{++}^{m-1}}\bigl((Q_{++}-Q_{0++})^{m}G_{1}(Q_{++})\bigr)$; the same formula holds in the $Q_{--}$-coordinate. The two contributions are independent and add in the idempotent coordinates.
+**Corollary (the residue at a higher-order pole).** If $G_{1}$ has a pole of order $m$ at $Q_{0+}$ with Laurent expansion $\sum_{r\ge-m}c_{r}(Q_{+}-Q_{0+})^{r}$, the residue is $c_{-1}$, given by $\operatorname{Res}_{Q_{0+}}G_{1}=(m-1)!^{-1}\lim_{Q_{+}\to Q_{0+}}\frac{\mathrm{d}^{m-1}}{\mathrm{d}Q_{+}^{m-1}}\bigl((Q_{+}-Q_{0+})^{m}G_{1}(Q_{+})\bigr)$; the same formula holds in the $Q_{-}$-coordinate. The two contributions are independent and add in the idempotent coordinates.
 
-*Proof.* The residue of a pole of order $m$ is the coefficient of $(Q_{++}-Q_{0++})^{-1}$ in the Laurent expansion, and the displayed formula extracts it by differentiation.
+*Proof.* The residue of a pole of order $m$ is the coefficient of $(Q_{+}-Q_{0+})^{-1}$ in the Laurent expansion, and the displayed formula extracts it by differentiation.
 
 ## The Role of the Zero Divisors
 
-**The kernel is local.** The Cauchy kernel has its singularities on the two lines $Q_{++}=0$ and $Q_{--}=0$, the union $Z$, and the contours of the Cauchy and residue theorems must avoid $Z$; since $Z$ has codimension two, a contour in either coordinate plane can be shrunk around a point without meeting $Z$ unless the point itself lies on the line.
+**The kernel is local.** The Cauchy kernel has its singularities on the two lines $Q_{+}=0$ and $Q_{-}=0$, the union $Z$, and the contours of the Cauchy and residue theorems must avoid $Z$; since $Z$ has codimension two, a contour in either coordinate plane can be shrunk around a point without meeting $Z$ unless the point itself lies on the line.
 
 **The characteristic set is the union of the two cylinders.** The one-variable Cauchy theory requires the derivative to be inverted off the pole; on the algebra the inverse of the operator is available only after the two coordinates are separated, and the failure of the inverse on $Z$ is the failure of the difference quotient there.
 
@@ -144,11 +144,11 @@ the two sums being the ordinary one-variable residues.
 
 ## The Relation to Complex and Quaternionic Analysis
 
-The reduced biquaternion integral theory is the pair of the one-variable complex theories, one in $Q_{++}$ and one in $Q_{--}$: the Cauchy theorem, the Cauchy integral formula, the consequences and the residue theorem all reduce to their classical counterparts in the two coordinates. The commutative multiplication removes the left-versus-right distinction of the split biquaternion and biquaternion cases, where Green's formulas must be stated with both gradients. Against the quaternion and biquaternion cases, where the Cauchy kernel $Q^{\natural}/\lVert Q\rVert_{E}^{4}$ is a genuine fundamental solution of a first-order operator in four real variables, the reduced case has no single four-dimensional fundamental solution, the operator being elliptic nowhere and its singular set being a union of two codimension-two planes; the integral theory therefore remains a two-factor theory, in the same way as the regularity theory. The integral theory of the split biquaternion case, the two quaternion halves, is the exact structural analogue with $\mathbb{H}$ in place of $\mathbb{C}$.
+The reduced biquaternion integral theory is the pair of the one-variable complex theories, one in $Q_{+}$ and one in $Q_{-}$: the Cauchy theorem, the Cauchy integral formula, the consequences and the residue theorem all reduce to their classical counterparts in the two coordinates. The commutative multiplication removes the left-versus-right distinction of the split biquaternion and biquaternion cases, where Green's formulas must be stated with both gradients. Against the quaternion and biquaternion cases, where the Cauchy kernel $Q^{\natural}/\lVert Q\rVert_{E}^{4}$ is a genuine fundamental solution of a first-order operator in four real variables, the reduced case has no single four-dimensional fundamental solution, the operator being elliptic nowhere and its singular set being a union of two codimension-two planes; the integral theory therefore remains a two-factor theory, in the same way as the regularity theory. The integral theory of the split biquaternion case, the two quaternion halves, is the exact structural analogue with $\mathbb{H}$ in place of $\mathbb{C}$.
 
 ## Summary
 
-The integral of a reduced biquaternion-valued function on a domain of $\mathbb{R}^{4}$ is defined coordinatewise with respect to the Lebesgue measure; it is linear and additive and satisfies the fundamental estimate, and it splits in the idempotent coordinates into the pair of complex integrals. Integration by parts, the divergence theorem and Green's formulas hold in their ordinary forms, with no left-versus-right bookkeeping, because the algebra is commutative; for reduced-analytic functions they reduce to the identities for harmonic functions. The Cauchy kernel $G(\breve Q)=(2\pi i)^{-1}(\Pi_+/Q_{++}+\Pi_-/Q_{--})$ is the lift of the one-variable kernel $1/(\pi Q_{++})$ of $\partial/\partial\bar Q_{++}$, and it is a fundamental solution transversally on each coordinate plane; a single four-dimensional fundamental solution does not exist, because the singular set $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ has codimension two and the operator is elliptic nowhere. The Cauchy theorem gives $\oint f\,\mathrm{d}\breve Q=0$ for reduced-analytic $f$, and the Cauchy integral formula reproduces $f(\breve Q_{0})$ from the two one-variable contour integrals over the contours encircling $Q_{0++}$ and $Q_{0--}$; analyticity, the mean value property, Liouville's theorem and the maximum principle follow from the classical theory in each coordinate. The residue theorem reduces to the two one-variable residue theorems, with the poles located on the two coordinate lines. The whole theory is the pair of the complex one-variable theories lifted by the idempotents, against the single non-commutative theory of the biquaternion case and the two quaternion halves of the split biquaternion case.
+The integral of a reduced biquaternion-valued function on a domain of $\mathbb{R}^{4}$ is defined coordinatewise with respect to the Lebesgue measure; it is linear and additive and satisfies the fundamental estimate, and it splits in the idempotent coordinates into the pair of complex integrals. Integration by parts, the divergence theorem and Green's formulas hold in their ordinary forms, with no left-versus-right bookkeeping, because the algebra is commutative; for reduced-analytic functions they reduce to the identities for harmonic functions. The Cauchy kernel $G(\breve Q)=(2\pi i)^{-1}(\Pi_+/Q_{+}+\Pi_-/Q_{-})$ is the lift of the one-variable kernel $1/(\pi Q_{+})$ of $\partial/\partial\bar Q_{+}$, and it is a fundamental solution transversally on each coordinate plane; a single four-dimensional fundamental solution does not exist, because the singular set $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ has codimension two and the operator is elliptic nowhere. The Cauchy theorem gives $\oint f\,\mathrm{d}\breve Q=0$ for reduced-analytic $f$, and the Cauchy integral formula reproduces $f(\breve Q_{0})$ from the two one-variable contour integrals over the contours encircling $Q_{0+}$ and $Q_{0-}$; analyticity, the mean value property, Liouville's theorem and the maximum principle follow from the classical theory in each coordinate. The residue theorem reduces to the two one-variable residue theorems, with the poles located on the two coordinate lines. The whole theory is the pair of the complex one-variable theories lifted by the idempotents, against the single non-commutative theory of the biquaternion case and the two quaternion halves of the split biquaternion case.
 
 ## Summary of Notation
 
@@ -158,11 +158,11 @@ The integral of a reduced biquaternion-valued function on a domain of $\mathbb{R
 | $\lVert f\rVert=\sqrt{K(f)}$ | Euclidean norm of the value |
 | $\operatorname{Div}f=\sum_{\nu}\partial_{\nu}f\otimes e_{\nu}$ | Algebra-valued divergence |
 | $\Delta$ | Euclidean Laplacian in the four real coordinates |
-| $G(\breve Q)=\tfrac{1}{2\pi i}(\Pi_+/Q_{++}+\Pi_-/Q_{--})$ | Cauchy kernel |
-| $1/(\pi Q_{++})$ | One-variable fundamental solution of $\partial/\partial\bar Q_{++}$ |
+| $G(\breve Q)=\tfrac{1}{2\pi i}(\Pi_+/Q_{+}+\Pi_-/Q_{-})$ | Cauchy kernel |
+| $1/(\pi Q_{+})$ | One-variable fundamental solution of $\partial/\partial\bar Q_{+}$ |
 | $\oint f\,\mathrm{d}\breve Q=0$ | Cauchy theorem for reduced-analytic $f$ |
-| $f(\breve Q_{0})=\tfrac{1}{2\pi i}(\Pi_+\oint\frac{G_{1}}{Q_{++}-Q_{0++}}\mathrm{d}Q_{++}+\Pi_-\oint\frac{G_{2}}{Q_{--}-Q_{0--}}\mathrm{d}Q_{--})$ | Cauchy integral formula |
-| $\operatorname{Res}_{Q_{0++}}G_{1}$ | One-variable residue in the $Q_{++}$-coordinate |
+| $f(\breve Q_{0})=\tfrac{1}{2\pi i}(\Pi_+\oint\frac{G_{1}}{Q_{+}-Q_{0+}}\mathrm{d}Q_{+}+\Pi_-\oint\frac{G_{2}}{Q_{-}-Q_{0-}}\mathrm{d}Q_{-})$ | Cauchy integral formula |
+| $\operatorname{Res}_{Q_{0+}}G_{1}$ | One-variable residue in the $Q_{+}$-coordinate |
 | $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | Zero-divisor set |
 
 ## Further Reading

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra carries **two** involutions of the coefficient sector and a group of four maps they generate. The **bar** conjugates the two complex coordinates, $\overline{Q_++jQ_-}=\bar Q_++j\bar Q_-$; the **natural sign** negates the second slot, $(Q_++jQ_-)^{\natural}=Q_+-jQ_-$. Their composite is the **star**, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $(Q_++jQ_-)^{*}=\bar Q_+-j\bar Q_-$; and the negative of the star is the **flat**, ${}^{\flat}=-{}^{*}$. The star and the bar and the natural sign generate the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}$, and the flat stands outside it as the reversal of the star.
+The reduced biquaternion algebra carries **two** involutions of the coefficient sector and a group of four maps they generate. The **bar** conjugates the two complex coordinates, $\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$; the **natural sign** negates the second slot, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{\natural}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$. Their composite is the **star**, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$; and the negative of the star is the **flat**, ${}^{\flat}=-{}^{*}$. The star and the bar and the natural sign generate the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}$, and the flat stands outside it as the reversal of the star.
 
 The two involutions are what make this layer richer than a single-conjugation algebra. The **natural sign** is the **intrinsic conjugate** of the space: it fixes the scalar line $\mathbb{C}$ and negates the $j$-line $\mathbb{C}j$ (*Conventions in Mathematics*, §*The Conjugations*). The **bar** is the coefficient conjugation, and it exists because the coefficients are complex; the split-complex numbers $\mathbb{D}$ have no coefficient conjugation, their coefficients being real, and the complex numbers $\mathbb{C}$ have no natural sign, so the reduced biquaternions are the first layer carrying the two maps independently. The two are independent, they commute, and their composite is a third involution, the star, which is the one the two sesquilinear products use.
 
@@ -20,7 +20,7 @@ This article fixes the four maps, their fixed and anti-fixed spaces and the grou
 
 **Definition.** The **bar** is the map
 $$
-\overline{Q_++jQ_-}=\bar Q_++j\bar Q_-,\qquad \bar Q_+=q_+-iq'_+,\quad \bar Q_-=q_--iq'_-.
+\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown},\qquad \bar Q_{\blacktriangle}=q_{\blacktriangle}-iq'_{\blacktriangle},\quad \bar Q_{\blacktriangledown}=q_{\blacktriangledown}-iq'_{\blacktriangledown}.
 $$
 
 **Proposition.** The bar is an involution, it is $\mathbb{R}$-linear and $\mathbb{C}$-antilinear, it fixes $1$ and $j$ and negates $i$ and $ij$:
@@ -28,7 +28,7 @@ $$
 \bar1=1,\qquad \bar i=-i,\qquad \bar j=j,\qquad \overline{ij}=-ij,\qquad \overline{\bar{\breve Q}}=\breve Q,\qquad \overline{\breve Q_{1}\breve Q_{2}}=\overline{\breve Q_{1}}\,\overline{\breve Q_{2}} .
 $$
 
-*Proof.* Applying the bar twice returns $Q_+$ and $Q_-$, so it is an involution; it is real-linear because the complex conjugation is; it is antilinear because $\overline{\lambda Q_+}=\bar\lambda\bar Q_+$; and on the basis $1=1+0j$, $i=i+0j$, $j=0+1j$, $ij=i\cdot j$ it gives $\bar1=1$, $\bar i=-i$, $\bar j=j$, $\overline{ij}=\bar i\bar j=(-i)j=-ij$. The multiplicativity is the multiplicativity of the complex conjugation on the two coordinates together with the commutativity of the product.
+*Proof.* Applying the bar twice returns $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, so it is an involution; it is real-linear because the complex conjugation is; it is antilinear because $\overline{\lambda Q_{\blacktriangle}}=\bar\lambda\bar Q_{\blacktriangle}$; and on the basis $1=1+0j$, $i=i+0j$, $j=0+1j$, $ij=i\cdot j$ it gives $\bar1=1$, $\bar i=-i$, $\bar j=j$, $\overline{ij}=\bar i\bar j=(-i)j=-ij$. The multiplicativity is the multiplicativity of the complex conjugation on the two coordinates together with the commutativity of the product.
 
 The bar is the involution of the **coefficient sector**. It is the only one of the four maps that has a sense over any complex algebra, and over the split-complex numbers $\mathbb{D}$ the coefficientwise conjugation degenerates to the identity because the coefficients are real.
 
@@ -38,7 +38,7 @@ The bar is the involution of the **coefficient sector**. It is the only one of t
 
 **Definition.** The **natural sign** is the map
 $$
-(Q_++jQ_-)^{\natural}=Q_+-jQ_-.
+(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{\natural}=Q_{\blacktriangle}-jQ_{\blacktriangledown}.
 $$
 
 **Proposition.** The natural sign is an involution, it is $\mathbb{C}$-linear, it fixes $1$ and $i$ and negates $j$ and $ij$:
@@ -46,7 +46,7 @@ $$
 1^{\natural}=1,\qquad i^{\natural}=i,\qquad j^{\natural}=-j,\qquad (ij)^{\natural}=-ij,\qquad (\breve Q^{\natural})^{\natural}=\breve Q,\qquad (\breve Q_{1}\breve Q_{2})^{\natural}=\breve Q_{1}^{\natural}\breve Q_{2}^{\natural}.
 $$
 
-*Proof.* Applying the natural sign twice returns $Q_++jQ_-$, so it is an involution; it is $\mathbb{C}$-linear because $\lambda(Q_++jQ_-)=(\lambda Q_+)+(\lambda Q_-)j$ maps to $(\lambda Q_+)-(\lambda Q_-)j=\lambda(Q_+-jQ_-)$; on the basis, $1^{\natural}=1$, $i^{\natural}=i$ (both have vanishing second coordinate), $j^{\natural}=-j$ and $(ij)^{\natural}=-ij$ (both have vanishing first coordinate). Multiplicativity follows from the commutativity of the product and the sign rule $j^{2}=+1$.
+*Proof.* Applying the natural sign twice returns $Q_{\blacktriangle}+jQ_{\blacktriangledown}$, so it is an involution; it is $\mathbb{C}$-linear because $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=(\lambda Q_{\blacktriangle})+(\lambda Q_{\blacktriangledown})j$ maps to $(\lambda Q_{\blacktriangle})-(\lambda Q_{\blacktriangledown})j=\lambda(Q_{\blacktriangle}-jQ_{\blacktriangledown})$; on the basis, $1^{\natural}=1$, $i^{\natural}=i$ (both have vanishing second coordinate), $j^{\natural}=-j$ and $(ij)^{\natural}=-ij$ (both have vanishing first coordinate). Multiplicativity follows from the commutativity of the product and the sign rule $j^{2}=+1$.
 
 The natural sign is the **intrinsic conjugate** of the algebra in the sense of *Conventions in Mathematics*: it fixes the scalars — its fixed space is the scalar line $\mathbb{C}$ — and negates the vectors — its anti-fixed space is the $j$-line. It is the map that the engineering literature writes on a reduced biquaternion, and it is the analogue of the quaternion conjugation ${}^{\natural}$ of the biquaternion layer, with the second slot in place of the three vector coordinates.
 
@@ -56,11 +56,11 @@ The natural sign is the **intrinsic conjugate** of the algebra in the sense of *
 
 **Definition.** The **star** is the composite ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$,
 $$
-(Q_++jQ_-)^{*}=\bar Q_+-j\bar Q_-,
+(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown},
 $$
 and the **flat** is its negative, ${}^{\flat}=-{}^{*}$,
 $$
-(Q_++jQ_-)^{\flat}=-\bar Q_++j\bar Q_-.
+(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{\flat}=-\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}.
 $$
 
 **Proposition.** The star is an involution and is $\mathbb{C}$-antilinear; it fixes $1$ and $ij$ and negates $i$ and $j$:
@@ -159,7 +159,7 @@ so each is a ring automorphism, the natural sign over $\mathbb{C}$ and the bar a
 
 ## Summary
 
-The reduced biquaternion algebra carries the **bar** $\overline{Q_++jQ_-}=\bar Q_++j\bar Q_-$, the **natural sign** $(Q_++jQ_-)^{\natural}=Q_+-jQ_-$, the **star** ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $(Q_++jQ_-)^{*}=\bar Q_+-j\bar Q_-$, and the **flat** ${}^{\flat}=-{}^{*}$. The bar, the natural sign and the star are involutions of the algebra; they commute pairwise; and they form the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, each non-identity member being the composite of the other two, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $\bar{\cdot}={}^{\natural}\circ{}^{*}$ and ${}^{\natural}={}^{*}\circ\bar{\cdot}$. The flat stands outside the group: it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, it is not multiplicative in the strict sense, $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}$, and it is the anti-Hermitian conjugation.
+The reduced biquaternion algebra carries the **bar** $\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, the **natural sign** $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{\natural}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$, the **star** ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$, and the **flat** ${}^{\flat}=-{}^{*}$. The bar, the natural sign and the star are involutions of the algebra; they commute pairwise; and they form the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, each non-identity member being the composite of the other two, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $\bar{\cdot}={}^{\natural}\circ{}^{*}$ and ${}^{\natural}={}^{*}\circ\bar{\cdot}$. The flat stands outside the group: it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, it is not multiplicative in the strict sense, $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}$, and it is the anti-Hermitian conjugation.
 
 On the real basis the three involutions act by
 $$
@@ -173,10 +173,10 @@ and their fixed spaces — $\mathbb{R}\{1,j\}$ the real subalgebra, $\mathbb{C}=
 
 | Symbol | Meaning |
 |---|---|
-| $\bar{\cdot}$ | the bar, $\overline{Q_++jQ_-}=\bar Q_++j\bar Q_-$, the coefficient conjugation |
-| ${}^{\natural}$ | the natural sign, $(Q_++jQ_-)^{\natural}=Q_+-jQ_-$, the intrinsic conjugate |
-| ${}^{*}$ | the star, $(Q_++jQ_-)^{*}=\bar Q_+-j\bar Q_-$, the composite $\bar{\cdot}\circ{}^{\natural}$ |
-| ${}^{\flat}$ | the flat, ${}^{\flat}=-{}^{*}$, $(Q_++jQ_-)^{\flat}=-\bar Q_++j\bar Q_-$ |
+| $\bar{\cdot}$ | the bar, $\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, the coefficient conjugation |
+| ${}^{\natural}$ | the natural sign, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{\natural}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$, the intrinsic conjugate |
+| ${}^{*}$ | the star, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$, the composite $\bar{\cdot}\circ{}^{\natural}$ |
+| ${}^{\flat}$ | the flat, ${}^{\flat}=-{}^{*}$, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{\flat}=-\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$ |
 | $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}$ | the Klein four-group of the involutions |
 | $\mathbb{R}\{1,j\}$ | fixed space of the bar, the real subalgebra |
 | $\mathbb{C}=\mathbb{R}\{1,i\}$ | fixed space of the natural sign, the scalar line |

@@ -150,9 +150,9 @@ P_{\mathbb{R}\{1,ij\}}\breve Q=2+4ij,\quad P_{\mathbb{R}\{i,j\}}\breve Q=i+3j,
 $$
 while the idempotent decomposition reads
 $$
-Q_{++}=Q_++Q_-=(2+i)+(3+4i)=5+5i,\qquad Q_{--}=Q_+-Q_-=(2+i)-(3+4i)=-1-3i,
+Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}=(2+i)+(3+4i)=5+5i,\qquad Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}=(2+i)-(3+4i)=-1-3i,
 $$
-so $\breve Q=(5+5i)\Pi_++(-1-3i)\Pi_-$. The element is a unit because $Q_{++}$ and $Q_{--}$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.
+so $\breve Q=(5+5i)\Pi_++(-1-3i)\Pi_-$. The element is a unit because $Q_{+}$ and $Q_{-}$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.
 
 ## Summary
 

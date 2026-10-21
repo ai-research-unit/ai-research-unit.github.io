@@ -8,27 +8,27 @@ $$
 X^{2}=\breve Q .
 $$
 
-The method needs no norm and no form. It uses the one structural fact the algebra carries, the **idempotent coordinates**: the multiplication is componentwise in the basis $\Pi_+,\Pi_-$ of the two nontrivial idempotents, so the single equation $X^{2}=\breve Q$ splits into the **two independent complex equations** $p^{2}=Q_{++}$ and $q^{2}=Q_{--}$, where $X=(p,q)$ and $\breve Q=(Q_{++},Q_{--})$ are the pairs of idempotent coordinates. This is the same split that solves the central cases $X^{2}=1$ and $X^{2}=0$ in *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, carried to an arbitrary radicand.
+The method needs no norm and no form. It uses the one structural fact the algebra carries, the **idempotent coordinates**: the multiplication is componentwise in the basis $\Pi_+,\Pi_-$ of the two nontrivial idempotents, so the single equation $X^{2}=\breve Q$ splits into the **two independent complex equations** $p^{2}=Q_{+}$ and $q^{2}=Q_{-}$, where $X=(p,q)$ and $\breve Q=(Q_{+},Q_{-})$ are the pairs of idempotent coordinates. This is the same split that solves the central cases $X^{2}=1$ and $X^{2}=0$ in *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, carried to an arbitrary radicand.
 
 **The results.** Every element of the algebra has a square root, because every complex number does; there is **no rootless element**, in sharp contrast with the biquaternion algebra of *Square Roots of a General Element in the Biquaternion Algebra*, where a whole row of radicands has an empty root set. The count is read from the two idempotent coordinates alone:
 
-- **four roots** when $\breve Q$ lies on neither of the two idempotent lines, that is when $Q_{++}\neq0$ and $Q_{--}\neq0$;
-- **two roots** when $\breve Q$ lies on exactly one of the two lines and is not $0$, that is when exactly one of $Q_{++},Q_{--}$ vanishes;
+- **four roots** when $\breve Q$ lies on neither of the two idempotent lines, that is when $Q_{+}\neq0$ and $Q_{-}\neq0$;
+- **two roots** when $\breve Q$ lies on exactly one of the two lines and is not $0$, that is when exactly one of $Q_{+},Q_{-}$ vanishes;
 - **one root** when $\breve Q=0$.
 
-The four roots are $\pm p\Pi_+\pm q\Pi_-$ with the signs independent, where $p$ and $q$ are fixed square roots of $Q_{++}$ and $Q_{--}$; they are the two opposite pairs $\pm X$ and $\pm X'$, with $X'$ the **conjugate root** $p\Pi_+-q\Pi_-$, and neither pair can be predicted from the other. The three central values of the two companion articles are recovered as the radicands $\breve Q=-1$, $0$ and $+1$.
+The four roots are $\pm p\Pi_+\pm q\Pi_-$ with the signs independent, where $p$ and $q$ are fixed square roots of $Q_{+}$ and $Q_{-}$; they are the two opposite pairs $\pm X$ and $\pm X'$, with $X'$ the **conjugate root** $p\Pi_+-q\Pi_-$, and neither pair can be predicted from the other. The three central values of the two companion articles are recovered as the radicands $\breve Q=-1$, $0$ and $+1$.
 
-**Boundaries.** The algebra and its idempotents are *Reduced Biquaternion Space* and *Introduction to the Algebra of the Reduced Biquaternions*, above this article in this category; the idempotent coordinates are those of *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*. The roots of one and the roots of zero are the companion articles *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, above this article. The zero-divisor set, which is the union of the two idempotent lines, is *Zero Divisors of the Algebra of the Reduced Biquaternions*; the norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ whose vanishing draws that set is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. The square-root problems of the other three general products are the thematic articles of their blocks, and the four products themselves are *The Four Products, Their Forms and Their Algebraic Norms*.
+**Boundaries.** The algebra and its idempotents are *Reduced Biquaternion Space* and *Introduction to the Algebra of the Reduced Biquaternions*, above this article in this category; the idempotent coordinates are those of *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*. The roots of one and the roots of zero are the companion articles *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, above this article. The zero-divisor set, which is the union of the two idempotent lines, is *Zero Divisors of the Algebra of the Reduced Biquaternions*; the norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ whose vanishing draws that set is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. The square-root problems of the other three general products are the thematic articles of their blocks, and the four products themselves are *The Four Products, Their Forms and Their Algebraic Norms*.
 
-Throughout, an element is $\breve Q=Q_++jQ_-$ with $Q_+,Q_-\in\mathbb{C}$, the idempotent coordinates are
+Throughout, an element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, the idempotent coordinates are
 $$
-Q_{++}=Q_++Q_-,\qquad Q_{--}=Q_+-Q_-,\qquad \breve Q=Q_{++}\Pi_++Q_{--}\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j),
+Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown},\qquad \breve Q=Q_{+}\Pi_++Q_{-}\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j),
 $$
 and a root is written $X=p\Pi_++q\Pi_-$ with the same letters. The square is the one of the general plain product $\breve Q_{1}\breve Q_{2}$, the multiplication of the algebra.
 
 ## The Reduction to Two Complex Equations
 
-**In the idempotent coordinates the squaring is componentwise, so the single equation $X^{2}=\breve Q$ is the pair of complex equations $p^{2}=Q_{++}$ and $q^{2}=Q_{--}$.**
+**In the idempotent coordinates the squaring is componentwise, so the single equation $X^{2}=\breve Q$ is the pair of complex equations $p^{2}=Q_{+}$ and $q^{2}=Q_{-}$.**
 
 **Proposition (squaring in idempotent coordinates).** For $X=p\Pi_++q\Pi_-$ one has
 $$
@@ -42,10 +42,10 @@ $$
 
 **Corollary (the reduction).** $X^{2}=\breve Q$ holds if and only if
 $$
-p^{2}=Q_{++}\qquad\text{and}\qquad q^{2}=Q_{--} .
+p^{2}=Q_{+}\qquad\text{and}\qquad q^{2}=Q_{-} .
 $$
 
-*Proof.* The element $\breve Q$ has the unique idempotent coordinates $(Q_{++},Q_{--})$, and by the proposition $X^{2}$ has the coordinates $(p^{2},q^{2})$; two elements are equal exactly when their coordinates are equal. So the single algebra equation is the pair of equations in the field $\mathbb{C}$, and the two are **independent**: neither $p$ nor $q$ is constrained by the other.
+*Proof.* The element $\breve Q$ has the unique idempotent coordinates $(Q_{+},Q_{-})$, and by the proposition $X^{2}$ has the coordinates $(p^{2},q^{2})$; two elements are equal exactly when their coordinates are equal. So the single algebra equation is the pair of equations in the field $\mathbb{C}$, and the two are **independent**: neither $p$ nor $q$ is constrained by the other.
 
 **Remark (why the reduction is complete).** The reduction is not an ansatz: every element of the algebra has a unique expression $p\Pi_++q\Pi_-$, so every candidate root is of the displayed form, and the proposition computes its square. The problem in the four-dimensional real algebra is therefore exactly the problem in the complex field, taken twice, and the count of the roots is the product of the two complex counts. This is the structural reason the reduced biquaternion square-root problem is shorter than the biquaternion one: the biquaternion algebra $\mathbb{B}$ is not a direct product, its squaring couples its scalar part and its vector part, and its root set can be empty.
 
@@ -55,20 +55,20 @@ $$
 
 Because $\mathbb{C}$ is algebraically closed, a complex number $z$ has a square root, and the number of square roots is two when $z\neq0$ and one when $z=0$. Applying this to each coordinate of the reduction gives the following theorem.
 
-**Theorem (the roots).** Let $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$.
+**Theorem (the roots).** Let $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$.
 
-1. If $Q_{++}\neq0$ and $Q_{--}\neq0$, choose square roots $p$ of $Q_{++}$ and $q$ of $Q_{--}$; then the four square roots of $\breve Q$ are
+1. If $Q_{+}\neq0$ and $Q_{-}\neq0$, choose square roots $p$ of $Q_{+}$ and $q$ of $Q_{-}$; then the four square roots of $\breve Q$ are
 $$
 X=\sigma\,p\,\Pi_++\tau\,q\,\Pi_-,\qquad \sigma,\tau\in\{+1,-1\},
 $$
 and there are no others.
-2. If exactly one of $Q_{++},Q_{--}$ is $0$, say $Q_{--}=0$ and $Q_{++}\neq0$, then $\breve Q=Q_{++}\Pi_+$, the second equation forces $q=0$, and the two square roots are
+2. If exactly one of $Q_{+},Q_{-}$ is $0$, say $Q_{-}=0$ and $Q_{+}\neq0$, then $\breve Q=Q_{+}\Pi_+$, the second equation forces $q=0$, and the two square roots are
 $$
-X=\pm p\,\Pi_+,\qquad p^{2}=Q_{++} .
+X=\pm p\,\Pi_+,\qquad p^{2}=Q_{+} .
 $$
-3. If $Q_{++}=Q_{--}=0$, then $\breve Q=0$ and the only square root is $X=0$.
+3. If $Q_{+}=Q_{-}=0$, then $\breve Q=0$ and the only square root is $X=0$.
 
-*Proof.* By the reduction $X=\sigma p\Pi_++\tau q\Pi_-$ is a root exactly when $p^{2}=Q_{++}$ and $q^{2}=Q_{--}$, and $p$ and $q$ are chosen independently. In the field $\mathbb{C}$ the equation $z^{2}=w$ has two solutions for $w\neq0$ (the two opposite square roots) and one for $w=0$. Multiplying the counts and reading $\sigma p$ as the two choices of $p$ gives the three cases. In case 2 the element $X=\sigma p\Pi_+$ has $X^{2}=p^{2}\Pi_+=Q_{++}\Pi_+=\breve Q$, and a root with $q\neq0$ would have $X^{2}$ with a nonzero $\Pi_-$ coordinate; so no such root exists. In case 3, $X^{2}=(p^{2},q^{2})=(0,0)$ forces $p=q=0$.
+*Proof.* By the reduction $X=\sigma p\Pi_++\tau q\Pi_-$ is a root exactly when $p^{2}=Q_{+}$ and $q^{2}=Q_{-}$, and $p$ and $q$ are chosen independently. In the field $\mathbb{C}$ the equation $z^{2}=w$ has two solutions for $w\neq0$ (the two opposite square roots) and one for $w=0$. Multiplying the counts and reading $\sigma p$ as the two choices of $p$ gives the three cases. In case 2 the element $X=\sigma p\Pi_+$ has $X^{2}=p^{2}\Pi_+=Q_{+}\Pi_+=\breve Q$, and a root with $q\neq0$ would have $X^{2}$ with a nonzero $\Pi_-$ coordinate; so no such root exists. In case 3, $X^{2}=(p^{2},q^{2})=(0,0)$ forces $p=q=0$.
 
 **Corollary (roots come in opposite pairs).** If $X$ is a root of $\breve Q$ then so is $-X$, since $(-X)^{2}=X^{2}$. The pair $\pm X$ is the same element only when $X=0$, which happens only in case 3. In case 1 the four roots form **two** opposite pairs, $\pm X$ and $\pm X'$, where
 $$
@@ -76,7 +76,7 @@ X=p\Pi_++q\Pi_-,\qquad X'=p\Pi_+-q\Pi_-,
 $$
 and $X'$ is the **conjugate root**, obtained from $X$ by negating its second idempotent coordinate; the two pairs are distinct because $q\neq0$.
 
-**Corollary (the classification by the idempotent lines).** The condition $Q_{++}=0$ is exactly $\breve Q=Q_{--}\Pi_-$, that is $\breve Q$ on the idempotent line $\mathbb{C}\Pi_-$; the condition $Q_{--}=0$ is exactly $\breve Q=Q_{++}\Pi_+$, that is $\breve Q$ on the line $\mathbb{C}\Pi_+$. So the count of the roots of $\breve Q$ is read from the position of $\breve Q$ with respect to the two lines:
+**Corollary (the classification by the idempotent lines).** The condition $Q_{+}=0$ is exactly $\breve Q=Q_{-}\Pi_-$, that is $\breve Q$ on the idempotent line $\mathbb{C}\Pi_-$; the condition $Q_{-}=0$ is exactly $\breve Q=Q_{+}\Pi_+$, that is $\breve Q$ on the line $\mathbb{C}\Pi_+$. So the count of the roots of $\breve Q$ is read from the position of $\breve Q$ with respect to the two lines:
 
 | position of $\breve Q$ | count of roots |
 |---|---|
@@ -94,27 +94,27 @@ Writing the complex square roots in the real coordinates displays the four-dimen
 $$
 X=\tfrac12(p_{r}+q_{r})+\tfrac12(p_{i}+q_{i})i+\tfrac12(p_{r}-q_{r})j+\tfrac12(p_{i}-q_{i})ij .
 $$
-The element $\breve Q=Q_++jQ_-$ has $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so the two complex equations are
+The element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ has $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so the two complex equations are
 $$
-p^{2}=Q_++Q_-,\qquad q^{2}=Q_+-Q_- .
+p^{2}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad q^{2}=Q_{\blacktriangle}-Q_{\blacktriangledown} .
 $$
-The **first** is solved by $p$ a square root of $Q_++Q_-$ and the **second** by $q$ a square root of $Q_+-Q_-$; the four roots of the generic case are the four ways of pairing the two signs. The two special rows are read as the two equations $Q_++Q_-=0$ and $Q_+-Q_-=0$, which are the two idempotent lines $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$ of the algebra.
+The **first** is solved by $p$ a square root of $Q_{\blacktriangle}+Q_{\blacktriangledown}$ and the **second** by $q$ a square root of $Q_{\blacktriangle}-Q_{\blacktriangledown}$; the four roots of the generic case are the four ways of pairing the two signs. The two special rows are read as the two equations $Q_{\blacktriangle}+Q_{\blacktriangledown}=0$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}=0$, which are the two idempotent lines $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$ of the algebra.
 
-**Remark (the two square roots of the norm).** The product $Q_{++}Q_{--}=(Q_++Q_-)(Q_+-Q_-)=Q_+^{2}-Q_-^{2}=\langle \breve Q\rangle_{\natural}$ is the norm of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, and the two equations display its two factors: the norm of the radicand is the product of the norms of the idempotent coordinates, $\langle \breve Q\rangle_{\natural}=p^{2}q^{2}=(pq)^{2}$, and the two lines are exactly where one factor dies.
+**Remark (the two square roots of the norm).** The product $Q_{+}Q_{-}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\natural}$ is the norm of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, and the two equations display its two factors: the norm of the radicand is the product of the norms of the idempotent coordinates, $\langle \breve Q\rangle_{\natural}=p^{2}q^{2}=(pq)^{2}$, and the two lines are exactly where one factor dies.
 
 ## The Central Values
 
 **The three central values $\breve Q=-1,0,+1$ recover the three sets of the companion articles on the roots of one and of zero.**
 
-**$\breve Q=1$ ($Q_{++}=Q_{--}=1$).** Both coordinates are nonzero, so the row is the four-root one: $p,q\in\{+1,-1\}$ and the roots are
+**$\breve Q=1$ ($Q_{+}=Q_{-}=1$).** Both coordinates are nonzero, so the row is the four-root one: $p,q\in\{+1,-1\}$ and the roots are
 $$
 X=\Pi_++\Pi_-=1,\qquad X=\Pi_+-\Pi_-=j,\qquad X=-\Pi_++\Pi_-=-j,\qquad X=-\Pi_+-\Pi_-=-1,
 $$
 namely the four elements $1,-1,j,-j$ of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*. The two opposite pairs are $\pm 1$ and $\pm j$.
 
-**$\breve Q=0$ ($Q_{++}=Q_{--}=0$).** The third case: the only root is $X=0$, which is the statement of *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions* that the multiplication has no nonzero nilpotent.
+**$\breve Q=0$ ($Q_{+}=Q_{-}=0$).** The third case: the only root is $X=0$, which is the statement of *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions* that the multiplication has no nonzero nilpotent.
 
-**$\breve Q=-1$ ($Q_{++}=Q_{--}=-1$).** Both coordinates are nonzero, so there are four roots, with $p,q\in\{+i,-i\}$:
+**$\breve Q=-1$ ($Q_{+}=Q_{-}=-1$).** Both coordinates are nonzero, so there are four roots, with $p,q\in\{+i,-i\}$:
 $$
 X=\pm i\,\Pi_+\pm i\,\Pi_-,
 $$
@@ -126,13 +126,13 @@ The agreement of the three special cases with the direct computations of the com
 
 The examples are computed from the theorem and verified by squaring.
 
-**A generic element.** For $\breve Q=2+3j$ the idempotent coordinates are $Q_{++}=5$ and $Q_{--}=-1$, both nonzero, so there are four roots. Taking $p=\sqrt5$ and $q=i$,
+**A generic element.** For $\breve Q=2+3j$ the idempotent coordinates are $Q_{+}=5$ and $Q_{-}=-1$, both nonzero, so there are four roots. Taking $p=\sqrt5$ and $q=i$,
 $$
 X=\sqrt5\,\Pi_++i\,\Pi_-=\frac{\sqrt5+i}{2}+\frac{\sqrt5-i}{2}j,
 $$
-and the four roots are $\pm X$ and $\pm X'$ with $X'=\sqrt5\,\Pi_+-i\,\Pi_-$. Squaring gives $X^{2}=5\Pi_++(-1)\Pi_-=2+3j=\breve Q$, since $Q_{++}\Pi_++Q_{--}\Pi_-=\tfrac12(Q_{++}+Q_{--})+\tfrac12(Q_{++}-Q_{--})j=2+3j$.
+and the four roots are $\pm X$ and $\pm X'$ with $X'=\sqrt5\,\Pi_+-i\,\Pi_-$. Squaring gives $X^{2}=5\Pi_++(-1)\Pi_-=2+3j=\breve Q$, since $Q_{+}\Pi_++Q_{-}\Pi_-=\tfrac12(Q_{+}+Q_{-})+\tfrac12(Q_{+}-Q_{-})j=2+3j$.
 
-**An element of one line.** For $\breve Q=\Pi_+$ the coordinates are $Q_{++}=1$, $Q_{--}=0$; the row is the two-root one, and the roots are
+**An element of one line.** For $\breve Q=\Pi_+$ the coordinates are $Q_{+}=1$, $Q_{-}=0$; the row is the two-root one, and the roots are
 $$
 X=\pm\Pi_+,
 $$
@@ -140,7 +140,7 @@ which square to $\Pi_+^{2}=\Pi_+$ and $(-\Pi_+)^{2}=\Pi_+$. The element $\Pi_+$ 
 
 **The origin.** For $\breve Q=0$ the only root is $X=0$; this is case 3 and the statement that the multiplication is reduced.
 
-**A root of $-1$ and a root of $j$ beside it.** The element $\breve Q=-1$ has the four roots $\pm i,\pm ij$. The element $\breve Q=j$ has $Q_{++}=1$, $Q_{--}=-1$, both nonzero, so four roots; with $p=1$ and $q=i$,
+**A root of $-1$ and a root of $j$ beside it.** The element $\breve Q=-1$ has the four roots $\pm i,\pm ij$. The element $\breve Q=j$ has $Q_{+}=1$, $Q_{-}=-1$, both nonzero, so four roots; with $p=1$ and $q=i$,
 $$
 X=\Pi_++i\,\Pi_-=\frac{1+i}{2}+\frac{1-i}{2}j,
 $$
@@ -148,20 +148,20 @@ and squaring gives $\Pi_++(-1)\Pi_-=j$. The four roots of $j$ are $\pm X$ and $\
 
 ## Summary
 
-The square-root problem $X^{2}=\breve Q$ in the multiplication is solved by the idempotent coordinates: with $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ and $X=p\Pi_++q\Pi_-$ the squaring is componentwise, $X^{2}=p^{2}\Pi_++q^{2}\Pi_-$, and the equation is the pair of complex equations $p^{2}=Q_{++}$, $q^{2}=Q_{--}$. Because $\mathbb{C}$ is algebraically closed **every element has a square root**, and the count is read from the position of the radicand: **four** roots when $\breve Q$ lies on neither idempotent line, **two** when it lies on exactly one and is not $0$, and **one** when $\breve Q=0$. In the generic case the roots are $\pm p\Pi_+\pm q\Pi_-$ with the signs independent, forming the two opposite pairs $\pm X$ and $\pm X'$ with $X'=p\Pi_+-q\Pi_-$ the conjugate root. The three central values reproduce the four roots of one of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, the single root of zero of *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, and the four roots of $-1$; the norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ is the product $(Q_++Q_-)(Q_+-Q_-)=(pq)^{2}$ of the two idempotent coordinates, and its vanishing set is the union of the two idempotent lines. No radicand is rootless.
+The square-root problem $X^{2}=\breve Q$ in the multiplication is solved by the idempotent coordinates: with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ and $X=p\Pi_++q\Pi_-$ the squaring is componentwise, $X^{2}=p^{2}\Pi_++q^{2}\Pi_-$, and the equation is the pair of complex equations $p^{2}=Q_{+}$, $q^{2}=Q_{-}$. Because $\mathbb{C}$ is algebraically closed **every element has a square root**, and the count is read from the position of the radicand: **four** roots when $\breve Q$ lies on neither idempotent line, **two** when it lies on exactly one and is not $0$, and **one** when $\breve Q=0$. In the generic case the roots are $\pm p\Pi_+\pm q\Pi_-$ with the signs independent, forming the two opposite pairs $\pm X$ and $\pm X'$ with $X'=p\Pi_+-q\Pi_-$ the conjugate root. The three central values reproduce the four roots of one of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, the single root of zero of *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, and the four roots of $-1$; the norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is the product $(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=(pq)^{2}$ of the two idempotent coordinates, and its vanishing set is the union of the two idempotent lines. No radicand is rootless.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\mathrm{r}}$ | Reduced biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ |
-| $\breve Q=Q_++jQ_-$ | The radicand, $Q_+,Q_-\in\mathbb{C}$ |
+| $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | The radicand, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ |
 | $X=p\Pi_++q\Pi_-$ | A square root, in the idempotent coordinates |
-| $Q_{++}=Q_++Q_-,\ Q_{--}=Q_+-Q_-$ | The idempotent coordinates of $\breve Q$, with $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ |
-| $p,q$ | Square roots of $Q_{++}$ and $Q_{--}$ |
+| $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\ Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | The idempotent coordinates of $\breve Q$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |
+| $p,q$ | Square roots of $Q_{+}$ and $Q_{-}$ |
 | $X'=p\Pi_+-q\Pi_-$ | The conjugate root, the partner of $X$ in the second opposite pair |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | The two nontrivial idempotents |
-| $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=(Q_++Q_-)(Q_+-Q_-)$ | The norm of the multiplication |
+| $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})$ | The norm of the multiplication |
 
 ## Further Reading
 

@@ -5,10 +5,10 @@
 This article develops the **exponential polar decomposition** of a nonzero split-complex number: the writing
 
 $$
-Q = \epsilon\exp(L), \qquad \epsilon\in\{\pm1,\pm j\}, \qquad L = \ln r+\phi j,
+Q = \epsilon\exp\bigl((\epsilon Q)_{\log}\bigr), \qquad \epsilon\in\{\pm1,\pm j\}, \qquad (\epsilon Q)_{\log}=\ln r+\phi j,
 $$
 
-with $r=\sqrt{\lvert N(Q)\rvert}>0$ the modulus, $\ln r$ the logarithmic scale and $\phi$ the hyperbolic angle. The exponent is a point of $\mathbb{D}$, not a class modulo a lattice: the exponential of $\mathbb{D}$ has trivial kernel. The decomposition is the modulus–unit decomposition $Q=ru$ of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* with each factor written exponentially, $r=\exp(\ln r)$ and $u=\epsilon\exp(\phi j)$. Since $\mathbb{D}$ is commutative, the two continuous exponentials amalgamate into the single exponential $\exp(L)$; the finite factor $\epsilon$ names the component.
+with $r=\sqrt{\lvert N(Q)\rvert}>0$ the modulus, $\ln r$ the logarithmic scale and $\phi$ the hyperbolic angle. The exponent is a point of $\mathbb{D}$, not a class modulo a lattice: the exponential of $\mathbb{D}$ has trivial kernel. The decomposition is the modulus–unit decomposition $Q=ru$ of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* with each factor written exponentially, $r=\exp(\ln r)$ and $u=\epsilon\exp(\phi j)$. Since $\mathbb{D}$ is commutative, the two continuous exponentials amalgamate into the single exponential $\exp\bigl((\epsilon Q)_{\log}\bigr)$; the finite factor $\epsilon$ names the component.
 
 The exponential form is the third of the three polar decompositions of $\mathbb{D}$. The first is the modulus–unit form $Q=ru$, with $r=\sqrt{\lvert N(Q)\rvert}$ and $u=Q/r$, developed in *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; the second is the rational-chart form of *Rational-Chart Polar Decomposition of Split-Complex Numbers*; the third is treated here. The three present one factorisation in three ways: the modulus–unit form is coordinate-free, while the rational and exponential forms put a coordinate on the unit factor, the rational one local and the exponential one global on each component, at the price of a finite component label.
 
@@ -20,10 +20,10 @@ The plan is as follows. The exponential and its closed form are recalled (§*The
 
 ### The Exponential and Its Closed Form
 
-For $L=q+jq'$ the exponential is the power series
+For $Q=q+jq'$ the exponential is the power series
 
 $$
-\exp L = \sum_{n=0}^{\infty}\frac{L^n}{n!},
+\exp Q = \sum_{n=0}^{\infty}\frac{Q^n}{n!},
 $$
 
 which converges absolutely and locally uniformly. Separating even and odd powers, and using $j^{2n}=1$ and $j^{2n+1}=j$, gives the closed form
@@ -35,13 +35,13 @@ $$
 The norm follows:
 
 $$
-N(\exp L)=\exp(2q)\bigl(\cosh^2 q'-\sinh^2 q'\bigr)=\exp(2q)>0.
+N(\exp Q)=\exp(2q)\bigl(\cosh^2 q'-\sinh^2 q'\bigr)=\exp(2q)>0.
 $$
 
 The exponential never reaches the null cone, never reaches negative norm, and never reaches positive norm with negative real part (§*The Image and the Kernel*). It is a homomorphism from the additive group of $\mathbb{D}$ to $\mathbb{D}^\times$, because $\mathbb{D}$ is commutative and the binomial theorem reorders the product of the two series:
 
 $$
-\exp(L_1+L_2)=\exp(L_1)\exp(L_2).
+\exp(Q_1+Q_2)=\exp(Q_1)\exp(Q_2).
 $$
 
 ### The Three Rows of the Exponential
@@ -86,7 +86,7 @@ $$
 Then $q,q'$ are real, and $\exp(q+jq')=x+jy=Q$. The inverse is unique:
 
 $$
-L=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}, \qquad Q=q+jq',\quad q>\lvert q'\rvert.
+Q_{\log}=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}, \qquad Q=q+jq',\quad q>\lvert q'\rvert.
 $$
 
 The exponential is therefore a diffeomorphism of $\mathbb{D}$ onto the identity component $(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$.
@@ -128,17 +128,17 @@ The counts add to two on each component. The scale is non-compact, and the unit 
 
 ### The Logarithm
 
-**Definition.** A **logarithm** of $Q\in\mathbb{D}^\times$ is an element $L\in\mathbb{D}$ with $\exp L=Q$.
+**Definition.** A **logarithm** of $Q\in\mathbb{D}^\times$ is an element $Q_{\log}\in\mathbb{D}$ with $\exp Q_{\log}=Q$.
 
 **Theorem.** An invertible split-complex number has a logarithm if and only if it lies in the future cone $\{N>0,\ \operatorname{Re}Q>0\}$; the logarithm is then unique.
 
-**Proof.** If $Q=\exp L$, the image computation puts $Q$ in the future cone. Conversely, for $Q=q+jq'$ with $q>\lvert q'\rvert$,
+**Proof.** If $Q=\exp Q_{\log}$, the image computation puts $Q$ in the future cone. Conversely, for $Q=q+jq'$ with $q>\lvert q'\rvert$,
 
 $$
-L=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}
+Q_{\log}=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}
 $$
 
-satisfies $\exp L=Q$ (§*The Image and the Kernel*). Uniqueness is injectivity.
+satisfies $\exp Q_{\log}=Q$ (§*The Image and the Kernel*). Uniqueness is injectivity.
 
 The logarithm exists on one component of four; the other three have none. In $\mathbb{C}$ every nonzero element has a logarithm and only uniqueness fails. On the identity component,
 
@@ -181,12 +181,12 @@ The third line uses $\operatorname{artanh}(3/4)=\tfrac12\ln7$, and reconstructs 
 **Theorem.** Every split-complex number $Q$ with $N(Q)\neq0$ has exactly one exponential polar decomposition
 
 $$
-Q=\epsilon\exp(L), \qquad \epsilon\in\{\pm1,\pm j\},\quad L\in\mathbb{D}.
+Q=\epsilon\exp\bigl((\epsilon Q)_{\log}\bigr), \qquad \epsilon\in\{\pm1,\pm j\},\quad (\epsilon Q)_{\log}\in\mathbb{D}.
 $$
 
-**Existence.** Put $r=\sqrt{\lvert N(Q)\rvert}$ and $u=Q/r$, so $\lvert N(u)\rvert=1$. Write $u=x+yj$. Exactly one of the four elements $\epsilon u$ has norm $+1$ and positive real part: for $N(u)=1$ take $\epsilon=1$ if $x>0$ and $\epsilon=-1$ if $x<0$; for $N(u)=-1$ take $\epsilon=j$ if $y>0$ and $\epsilon=-j$ if $y<0$. For that $\epsilon$, $\epsilon u$ has a unique logarithm $L_0$. Then $L=L_0+\ln r$ satisfies $\exp L=r\exp L_0=r\epsilon u=\epsilon Q$.
+**Existence.** Put $r=\sqrt{\lvert N(Q)\rvert}$ and $u=Q/r$, so $\lvert N(u)\rvert=1$. Write $u=x+yj$. Exactly one of the four elements $\epsilon u$ has norm $+1$ and positive real part: for $N(u)=1$ take $\epsilon=1$ if $x>0$ and $\epsilon=-1$ if $x<0$; for $N(u)=-1$ take $\epsilon=j$ if $y>0$ and $\epsilon=-j$ if $y<0$. For that $\epsilon$, $\epsilon u$ has a unique logarithm $(\epsilon u)_{\log}$. Then $(\epsilon Q)_{\log}=(\epsilon u)_{\log}+\ln r$ satisfies $\exp((\epsilon Q)_{\log})=r\exp((\epsilon u)_{\log})=r\epsilon u=\epsilon Q$.
 
-**Uniqueness.** If $\epsilon\exp L=\epsilon_1\exp L_1$, then $\exp L=\epsilon\epsilon_1\exp L_1$. If $\epsilon\epsilon_1=1$, injectivity gives $L=L_1$ and $\epsilon=\epsilon_1$. If the product is $-1$, the right side has negative real part and the left side positive; if it is $\pm j$, the right side has negative norm and the left side positive. Both are impossible, so the pair is unique.
+**Uniqueness.** Suppose $Q=\epsilon\exp\bigl((\epsilon Q)_{\log}\bigr)=\epsilon_1\exp\bigl((\epsilon_1Q)_{\log}\bigr)$. Dividing by $\epsilon$, $\exp\bigl((\epsilon Q)_{\log}\bigr)=\epsilon\epsilon_1\exp\bigl((\epsilon_1Q)_{\log}\bigr)$. If $\epsilon\epsilon_1=1$, injectivity gives $(\epsilon Q)_{\log}=(\epsilon_1Q)_{\log}$, hence $\epsilon Q=\epsilon_1Q$ and $\epsilon=\epsilon_1$. If the product is $-1$, the right side has negative real part and the left side positive; if it is $\pm j$, the right side has negative norm and the left side positive. Both are impossible, so the pair is unique.
 
 The decomposition is defined on $\mathbb{D}^\times$ and never uses the null cone. It does not claim that $\exp$ is onto $\{N>0\}$: the past cone uses $\epsilon=-1$. The four factors are the four components of the unit set.
 
@@ -198,7 +198,7 @@ $$
 \exp(\ln r)=r=\sqrt{\lvert N(Q)\rvert}, \qquad \epsilon\exp(\phi j)=\frac{Q}{r},
 $$
 
-and the exponent is their sum $L=\ln r+\phi j=\operatorname{Log}(\epsilon Q/r)+\ln r$. The logarithm is a right inverse of the exponential on the identity component, and the discrete factor extends this to the other three components. The continuous count is two on each component, the modulus and the angle; the component is a finite label. The group of units is
+and the exponent is their sum $(\epsilon Q)_{\log}=\ln r+\phi j=\operatorname{Log}(\epsilon Q/r)+\ln r$. The logarithm is a right inverse of the exponential on the identity component, and the discrete factor extends this to the other three components. The continuous count is two on each component, the modulus and the angle; the component is a finite label. The group of units is
 
 $$
 \mathbb{D}^\times\cong\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2.
@@ -219,10 +219,10 @@ The component, the logarithmic scale and the angle do not mix: $\mathbb{D}^\time
 | datum | exponential polar decomposition |
 |---|---|
 | domain | $N(Q)\neq0$ |
-| exponent | $L=\ln r+\phi j$, $r=\sqrt{\lvert N(Q)\rvert}$, $\phi\in\mathbb{R}$ |
+| exponent | $(\epsilon Q)_{\log}=\ln r+\phi j$, $r=\sqrt{\lvert N(Q)\rvert}$, $\phi\in\mathbb{R}$ |
 | scale | $\exp(\ln r)=r=\sqrt{\lvert N(Q)\rvert}$ |
 | unit factor | $\epsilon\exp(\phi j)=Q/r$ |
-| uniqueness | $(\epsilon,L)$ unique; no period |
+| uniqueness | the pair $(\epsilon,(\epsilon Q)_{\log})$ unique; no period |
 | group | $\mathbb{D}^\times\cong(\mathbb{Z}/2)^2\times\mathbb{D}$ |
 | factor types | non-compact scale, non-compact unit factor, finite component label |
 
@@ -248,22 +248,22 @@ The unit matrix is not orthogonal in general. The Euclidean polar factor of $M_Q
 
 ### The Matrix Logarithm
 
-On the identity component the real symmetric logarithm is unique and is the matrix of $L$. There is no $2\pi i$ ambiguity: the eigenvalues are positive and the logarithm is taken in the symmetric subalgebra. For the other components $M_Q=M_\epsilon\exp(L)$. The Euclidean polar decomposition is $(M_Q,I)$ on the identity component, $(-M_Q,-I)$ on the opposite one, and $(\lvert M_Q\rvert,\text{reflection})$ on the spacelike region.
+On the identity component the real symmetric logarithm is unique and is the matrix of $Q_{\log}$. There is no $2\pi i$ ambiguity: the eigenvalues are positive and the logarithm is taken in the symmetric subalgebra. For the other components $M_Q=M_\epsilon\exp\bigl((\epsilon Q)_{\log}\bigr)$. The Euclidean polar decomposition is $(M_Q,I)$ on the identity component, $(-M_Q,-I)$ on the opposite one, and $(\lvert M_Q\rvert,\text{reflection})$ on the spacelike region.
 
 In $\mathbb{C}$ the matrix of a unit is a rotation in $SO(2)$ and the matrix exponential is periodic. Here the matrix of a unit of the identity component is symmetric positive definite, its logarithm is real and unique, and the matrix exponential is injective on the symmetric algebra.
 
 ### The Derivative and the Jacobian
 
-The derivative of the exponential at $L$ is multiplication by $\exp L$:
+The derivative of the exponential at $(\epsilon Q)_{\log}$ is multiplication by $\exp\bigl((\epsilon Q)_{\log}\bigr)$:
 
 $$
-d\exp_L(H)=\exp(L)H,
+d\exp_{(\epsilon Q)_{\log}}(H)=\exp\bigl((\epsilon Q)_{\log}\bigr)H,
 $$
 
-because $\exp(L+tH)=\exp(L)\exp(tH)$ when $\mathbb{D}$ is commutative. It is invertible, with inverse multiplication by $\exp(-L)$, so the exponential is a local diffeomorphism. The Jacobian determinant is
+because $\exp\bigl((\epsilon Q)_{\log}+tH\bigr)=\exp\bigl((\epsilon Q)_{\log}\bigr)\exp(tH)$ when $\mathbb{D}$ is commutative. It is invertible, with inverse multiplication by $\exp\bigl(-(\epsilon Q)_{\log}\bigr)$, so the exponential is a local diffeomorphism. The Jacobian determinant is
 
 $$
-\det d\exp_L=N(\exp L)=\exp(2q)=N(Q).
+\det d\exp_{(\epsilon Q)_{\log}}=N\bigl(\exp((\epsilon Q)_{\log})\bigr)=r^2=\lvert N(Q)\rvert.
 $$
 
 The exponential multiplies the indefinite area by $N(Q)$ and is not a Euclidean conformal map.
@@ -319,20 +319,20 @@ In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, the angle is period
 Take $Q=5+3j$. Then $N(Q)=16$, $r=4$, and
 
 $$
-\phi=\operatorname{artanh}\tfrac35=\ln2=0.6931471805599453, \qquad L=\ln4+j\ln2=1.3862943611198906+0.6931471805599453\,j.
+\phi=\operatorname{artanh}\tfrac35=\ln2=0.6931471805599453, \qquad (5+3j)_{\log}=\ln4+j\ln2=1.3862943611198906+0.6931471805599453\,j.
 $$
 
 The reconstruction is
 
 $$
-\exp L=4\bigl(\cosh(\ln2)+j\sinh(\ln2)\bigr)=4(1.25+0.75j)=5+3j,
+\exp\bigl((5+3j)_{\log}\bigr)=4\bigl(\cosh(\ln2)+j\sinh(\ln2)\bigr)=4(1.25+0.75j)=5+3j,
 $$
 
 with error zero in double precision.
 
 ### A Table of Examples
 
-| $Q$ | $N(Q)$ | $\epsilon$ | $L$ | $\exp L$ | $\lvert\epsilon\exp L-Q\rvert$ |
+| $Q$ | $N(Q)$ | $\epsilon$ | $(\epsilon Q)_{\log}$ | $\exp\bigl((\epsilon Q)_{\log}\bigr)$ | $\bigl\lvert\epsilon\exp\bigl((\epsilon Q)_{\log}\bigr)-Q\bigr\rvert$ |
 |---|---|---|---|---|---|
 | $2$ | $4$ | $1$ | $\ln2$ | $2$ | $0$ |
 | $-2$ | $4$ | $-1$ | $\ln2$ | $2$ | $0$ |
@@ -355,11 +355,11 @@ $$
 \exp(0)=1, \qquad \exp(2\pi j)=\cosh(2\pi)+j\sinh(2\pi)=267.7467614837482+267.7448940410164\,j\neq1.
 $$
 
-There is no period and no lattice. The equation $\exp L=1$ has the sole solution $L=0$. The element $-1$ has no logarithm, not infinitely many: the complex non-uniqueness is replaced by a failure of existence on three components.
+There is no period and no lattice. The equation $\exp Q_{\log}=1$ has the sole solution $Q_{\log}=0$. The element $-1$ has no logarithm, not infinitely many: the complex non-uniqueness is replaced by a failure of existence on three components.
 
 ### The Missed Past Cone
 
-The element $-1$ has norm $1$ but no real logarithm, because its real part is negative; it is reached only as $-\exp(0)$, with $\epsilon=-1$. Every element of the past cone is written $\epsilon\exp(L)$ with $\epsilon=-1$, where $L$ is the logarithm of its opposite. The exponential alone reaches exactly the future cone.
+The element $-1$ has norm $1$ but no real logarithm, because its real part is negative; it is reached only as $-\exp(0)$, with $\epsilon=-1$. Every element of the past cone is written $\epsilon\exp((-Q)_{\log})$ with $\epsilon=-1$. The exponential alone reaches exactly the future cone.
 
 ## The Exponential Coordinates
 
@@ -427,9 +427,9 @@ The coordinate $q=\tfrac12\ln\lvert N\rvert$ and the angle $q'$ are linear, henc
 
 ## Summary
 
-The exponential is $\exp(q+jq')=\exp(q)(\cosh q'+j\sinh q')$, with $N(\exp L)=\exp(2q)>0$. It is injective, its image is the future cone $\{N>0,\ \operatorname{Re}Q>0\}$, and it is not onto $\{N>0\}$: the past cone is missed. The inverse on the future cone is $\operatorname{Log}Q=\tfrac12\ln N(Q)+j\operatorname{artanh}(q'/q)$, and it is unique.
+The exponential is $\exp(q+jq')=\exp(q)(\cosh q'+j\sinh q')$, with $N(\exp Q)=\exp(2q)>0$. It is injective, its image is the future cone $\{N>0,\ \operatorname{Re}Q>0\}$, and it is not onto $\{N>0\}$: the past cone is missed. The inverse on the future cone is $\operatorname{Log}Q=\tfrac12\ln N(Q)+j\operatorname{artanh}(q'/q)$, and it is unique.
 
-Every invertible split-complex number has a unique exponential polar decomposition $Q=\epsilon\exp(L)$, with $\epsilon\in\{\pm1,\pm j\}$ and $L=\ln r+\phi j$. The factor $\epsilon$ records the component; the exponent is computed from $\epsilon Q$, which lies in the future cone. The group law is $(\epsilon_1,L_1)(\epsilon_2,L_2)=(\epsilon_1\epsilon_2,L_1+L_2)$, so $\mathbb{D}^\times\cong(\mathbb{Z}/2)^2\times\mathbb{D}$. The kernel is trivial, so there is no periodic ambiguity. The logarithm exists on one component and fails on the other three: this is the exchange of the complex case, where it exists everywhere and fails to be unique.
+Every invertible split-complex number has a unique exponential polar decomposition $Q=\epsilon\exp((\epsilon Q)_{\log})$, with $\epsilon\in\{\pm1,\pm j\}$ and $(\epsilon Q)_{\log}=\ln r+\phi j$. The factor $\epsilon$ records the component; the exponent is computed from $\epsilon Q$, which lies in the future cone. The group law is componentwise on the sign and additive on the logarithm, so $\mathbb{D}^\times\cong(\mathbb{Z}/2)^2\times\mathbb{D}$. The kernel is trivial, so there is no periodic ambiguity. The logarithm exists on one component and fails on the other three: this is the exchange of the complex case, where it exists everywhere and fails to be unique.
 
 In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\,K)$, symmetric positive definite on the identity component, with a unique real symmetric logarithm; the matrix of a unit is not orthogonal in general. The exponential coordinates map each component onto $\mathbb{R}^2$, with Jacobian $N(Q)$ and indefinite conformal factor $N(Q)$: $dx^2-dy^2=N(Q)(dq^2-dq'^2)$. The map is not Euclidean conformal.
 
@@ -440,10 +440,10 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 | $\mathbb{D}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $N(Q)=q^2-q'^2$ | the norm |
-| $\exp(L)$ | the exponential, $\exp(q)(\cosh q'+j\sinh q')$ |
-| $L=q+jq'$ | an exponent in $\mathbb{D}$ |
+| $\exp(Q)$ | the exponential, $\exp(q)(\cosh q'+j\sinh q')$ |
+| $(\epsilon Q)_{\log}=q+jq'$ | a logarithm in $\mathbb{D}$ |
 | $\epsilon$ | the component sign, $\epsilon\in\{\pm1,\pm j\}$ |
-| $\phi$ | the hyperbolic angle, $L=\ln r+\phi j$ |
+| $\phi$ | the hyperbolic angle, $(\epsilon Q)_{\log}=\ln r+\phi j$ |
 | $\operatorname{Log}Q$ | the logarithm on the future cone |
 | $(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$ | the identity component, the future cone |
 | $K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ | the reflection, $K^2=I$ |

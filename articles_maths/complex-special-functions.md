@@ -39,19 +39,132 @@ The exponential is $2\pi i$-periodic: $\exp(Q + 2\pi i) = \exp(Q)$.
 
 ### The Complex Logarithm
 
-The **complex logarithm** is the multivalued inverse of the exponential:
+A **logarithm** of $Q \in \mathbb{C}^\times$ is a complex number $Q_{\log}$ with $\exp(Q_{\log}) = Q$. The definition is an equation, not a formula; the formula is what solving the equation gives.
+
+Write $Q_{\log} = u + iv$ and $Q = a + ib \neq 0$. Euler's formula turns $\exp(Q_{\log}) = Q$ into the pair of real equations
 
 $$
-\log Q = \ln|Q| + i \arg Q, \qquad Q \neq 0.
+\exp(u)\cos v = a, \qquad \exp(u)\sin v = b.
 $$
 
-The argument is defined modulo $2\pi$, so the logarithm is defined modulo $2\pi i$. The **principal branch** is
+Squaring and adding eliminates $v$:
+
+$$
+\exp(2u)(\cos^2 v + \sin^2 v) = \exp(2u) = a^2 + b^2 = |Q|^2.
+$$
+
+The function $\exp(2u)$ runs over $(0,\infty)$ exactly once as $u$ runs over $\mathbb{R}$, so this has the unique real solution $u = \ln|Q|$. Substituting it back leaves
+
+$$
+\cos v = \frac{a}{|Q|}, \qquad \sin v = \frac{b}{|Q|},
+$$
+
+which is the definition of the argument: $v = \arg Q$, a real number defined modulo $2\pi$. Hence every $Q \neq 0$ has a logarithm, and its logarithms are exactly
+
+$$
+Q_{\log} = \ln|Q| + i \arg Q = \ln|Q| + i(\operatorname{Arg} Q + 2\pi k), \qquad k \in \mathbb{Z}.
+$$
+
+The two steps are the whole structure: the modulus equation has one solution, the angle equation has infinitely many, and the two are independent. This is why the logarithm exists everywhere on $\mathbb{C}^\times$ and is never unique.
+
+### The Two Compositions
+
+The word "inverse" covers two different identities, and the exponential and the logarithm satisfy them in opposite strengths.
+
+**Right inverse.** For every $Q \neq 0$ and every logarithm $Q_{\log}$ of $Q$,
+
+$$
+\exp(Q_{\log}) = Q.
+$$
+
+**Proof.** Put $Q_{\log} = u + iv$, so $u = \ln|Q|$ and $v = \arg Q$. Then
+
+$$
+\exp(Q_{\log}) = \exp(u)\exp(iv) = |Q|(\cos v + i\sin v) = a + ib = Q,
+$$
+
+by the two equations solved above. No branch is preferred: every choice of $v$ gives the same $Q$, because $\exp$ is $2\pi i$-periodic.
+
+**Left inverse, up to the kernel.** For every $Q \neq 0$ and every logarithm $Q_{\log}$ of $Q$,
+
+$$
+\log(\exp(Q_{\log})) = Q_{\log} + 2\pi i k, \qquad k \in \mathbb{Z},
+$$
+
+where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = u + iv$,
+
+$$
+\operatorname{Log}(\exp(Q_{\log})) = u + iv', \qquad v' \in (-\pi,\pi], \quad v' \equiv v \pmod{2\pi}.
+$$
+
+**Proof.** Since $\exp(Q_{\log}) = Q$, both $\log(\exp(Q_{\log}))$ and $Q_{\log}$ are logarithms of $Q$. If $Q'_{\log}$ is another logarithm of $Q$, then $\exp(Q'_{\log} - Q_{\log}) = 1$, so $Q'_{\log} - Q_{\log} \in 2\pi i\mathbb{Z}$. The principal value is the representative whose imaginary part lies in $(-\pi,\pi]$. Every complex number is a logarithm of its exponential, so the statement covers every possible argument of $\exp$.
+
+The asymmetry is the content of the word "multivalued". The exponential forgets the imaginary part modulo $2\pi$; the logarithm cannot recover what was forgotten. Thus $\exp$ is surjective but not injective, while $\log$ is a right inverse of $\exp$ and only a left inverse modulo $2\pi i$. In group language, $\exp$ is a surjective homomorphism from $(\mathbb{C},+)$ to $(\mathbb{C}^\times,\cdot)$ with kernel $2\pi i\mathbb{Z}$, and a branch of $\log$ picks one representative in each coset $Q_{\log}+2\pi i\mathbb{Z}$. The table records the two identities with a numerical instance of each.
+
+| identity | holds? | example |
+|---|---|---|
+| $\exp(Q_{\log}) = Q$ | always, for $Q \neq 0$ | $Q = 3+4i$, $Q_{\log} = 1.6094379 + 0.9272952\,i$ |
+| $\log(\exp(Q_{\log})) = Q_{\log}$ | only modulo $2\pi i$ | $Q_{\log} = 1+4i$, $\operatorname{Log}(\exp(Q_{\log})) = 1 - 2.2831853\,i$ |
+
+### The Principal Logarithm
+
+Single-valuedness is bought by restricting the target of the exponential. Define the **principal strip**
+
+$$
+S = \{u + iv : u, v \in \mathbb{R},\ -\pi < v \leq \pi\}.
+$$
+
+On $S$ the exponential is injective. If $\exp(Q_{\log}) = \exp(R_L)$ with $Q_{\log}, R_L \in S$, then $Q_{\log} - R_L \in 2\pi i\mathbb{Z}$; the imaginary part of $Q_{\log} - R_L$ lies in $(-2\pi, 2\pi)$, and the only multiple of $2\pi$ in that interval is $0$. Therefore $Q_{\log} = R_L$.
+
+The exponential maps $S$ onto $\mathbb{C}^\times$: for $Q \neq 0$, the number $\ln|Q| + i\operatorname{Arg} Q$ lies in $S$ and exponentiates to $Q$. The restriction is therefore a bijection, and its inverse is the **principal logarithm**
 
 $$
 \operatorname{Log} Q = \ln|Q| + i \operatorname{Arg} Q, \qquad -\pi < \operatorname{Arg} Q \leq \pi.
 $$
 
-It is holomorphic on $\mathbb{C} \setminus (-\infty, 0]$, with derivative $1/Q$. The branch cut along the negative real axis is the price of single-valuedness.
+By construction, $\exp(\operatorname{Log} Q) = Q$ for every $Q \neq 0$, and $\operatorname{Log}(\exp(Q_{\log})) = Q_{\log}$ exactly when $Q_{\log} \in S$.
+
+The inverse is discontinuous on the negative real axis. For $Q = -1$, the formula gives $\operatorname{Log}(-1) = i\pi$, the upper endpoint of the strip. Approaching $-1$ from the upper half-plane gives $\operatorname{Arg} Q \to \pi$ and $\operatorname{Log} Q \to i\pi$; approaching from the lower half-plane gives $\operatorname{Arg} Q \to -\pi$ and $\operatorname{Log} Q \to -i\pi$. The two limits differ by $2\pi i$, so the principal branch cannot be continued continuously across the negative real axis. That ray is the **branch cut**. It is an artefact of the strip, not of the exponential, and any ray from $0$ to $\infty$ can replace it. On the cut itself the principal value is still defined, and $\exp(\operatorname{Log} Q) = Q$ still holds; it is continuity, not the inverse identity, that fails.
+
+### The Derivative of the Logarithm
+
+The inverse is holomorphic, and its derivative is forced by the identity it satisfies.
+
+**Inverse function theorem.** The exponential is holomorphic and $\exp'(Q_{\log}) = \exp(Q_{\log}) \neq 0$ at every point. Hence $\exp$ is locally biholomorphic, and on a neighbourhood of $Q = \exp(Q_{\log})$ the local inverse has derivative
+
+$$
+(\exp^{-1})'(Q) = \frac{1}{\exp'(Q_{\log})} = \frac{1}{\exp(Q_{\log})} = \frac{1}{Q}.
+$$
+
+The principal logarithm is that local inverse, so $\operatorname{Log}' Q = 1/Q$ on $\mathbb{C} \setminus (-\infty, 0]$.
+
+**Chain rule check.** Differentiating $\exp(\operatorname{Log} Q) = Q$ gives
+
+$$
+\exp(\operatorname{Log} Q)\operatorname{Log}' Q = 1,
+$$
+
+hence $\operatorname{Log}' Q = 1/Q$. The same computation applies to any branch of $\log$, and it shows that all branches have the same derivative.
+
+**Cartesian check.** Write $\operatorname{Log} Q = u(a,b) + iv(a,b)$ with $Q = a+ib$ and $r^2 = a^2+b^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,
+
+$$
+u = \tfrac12\ln(a^2+b^2), \qquad v = \arctan\frac{b}{a},
+$$
+
+and therefore
+
+$$
+u_a = \frac{a}{r^2}, \quad u_b = \frac{b}{r^2}, \qquad v_a = -\frac{b}{r^2}, \quad v_b = \frac{a}{r^2}.
+$$
+
+The Cauchy–Riemann equations hold, $u_a = v_b$ and $u_b = -v_a$, and the derivative is
+
+$$
+u_a + i v_a = \frac{a - ib}{a^2+b^2} = \frac{1}{a+ib} = \frac{1}{Q}.
+$$
+
+The three computations agree: $\operatorname{Log}$ is holomorphic exactly where $\operatorname{Arg}$ is differentiable, that is, off the branch cut, and its derivative is $1/Q$.
 
 ### Complex Powers
 
@@ -61,7 +174,13 @@ $$
 Q^a = \exp(a \log Q).
 $$
 
-This is multivalued in general. The principal branch is obtained by using the principal branch of the logarithm.
+Because $\log Q = \operatorname{Log} Q + 2\pi i k$, the values are
+
+$$
+Q^a = \exp(a \operatorname{Log} Q)\exp(2\pi i k a), \qquad k \in \mathbb{Z}.
+$$
+
+The factor $\exp(2\pi i k a)$ equals $1$ for every $k$ exactly when $a \in \mathbb{Z}$. If $a = p/q$ is rational in lowest terms, it takes $q$ distinct values; otherwise the set of values is infinite. The principal branch is obtained by using the principal branch of the logarithm.
 
 ## The Trigonometric and Hyperbolic Functions
 
@@ -667,7 +786,7 @@ The Lambert W function solves equations of the form $a \exp(Q) + b Q + c = 0$. I
 
 ## Summary
 
-The complex special functions are the named functions that recur in complex analysis and in differential equations. The exponential is defined by its series and is entire, and the trigonometric and hyperbolic functions are built from it; the logarithm is its multivalued inverse and is the first function of the article whose domain is more than the plane.
+The complex special functions are the named functions that recur in complex analysis and in differential equations. The exponential is defined by its series and is entire, and the trigonometric and hyperbolic functions are built from it; the logarithm is its multivalued inverse: $\exp(Q_{\log}) = Q$ for every $Q \neq 0$, while $\log(\exp(Q_{\log}))$ recovers $Q_{\log}$ only modulo $2\pi i$.
 
 Integral representations supply the next family: the gamma function as $\Gamma(Q) = \int_0^\infty t^{Q-1}\exp(-t)\,dt$ for $\operatorname{Re} Q > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.
 
@@ -679,6 +798,8 @@ The article closes with the higher transcendental functions: the Airy functions 
 |---|---|
 | $Q = q + i q'$ | Complex variable |
 | $\exp(Q), \log Q$ | Complex exponential, logarithm |
+| $\operatorname{Log} Q$ | Principal branch of the complex logarithm |
+| $Q_{\log}$ | A logarithm of $Q$ |
 | $\sin Q, \cos Q, \tan Q$ | Complex trigonometric functions |
 | $\sinh Q, \cosh Q, \tanh Q$ | Complex hyperbolic functions |
 | $\Gamma(Q)$ | Gamma function |

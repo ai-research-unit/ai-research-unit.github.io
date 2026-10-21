@@ -4,9 +4,9 @@
 
 This article reads the reduced biquaternion space with its **multiplication** and fixes it as an **algebra**: the definition of the product, the data the algebra carries, the axioms it satisfies and the plan of the block of articles that study it. The multiplication is the general plain bilinear product $\breve Q_{1}\breve Q_{2}$ of *The Four Products, Their Forms and Their Algebraic Norms*, read as the product of the algebra and not as one of four products side by side; the other three general products are not associative and are not the product of the algebra.
 
-The general plain algebra is the **associative** case of the reduced biquaternion layer, and it is the case the rest of the category is built on. It is commutative and unital, with the unit $1$; it is **not** a field and **not** a division algebra, because it has the two idempotent lines as zero divisors; and its invertibility is decided by the reduced norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$, which is the algebraic norm of the quaternionic bilinear product and the determinant of the multiplication (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
+The general plain algebra is the **associative** case of the reduced biquaternion layer, and it is the case the rest of the category is built on. It is commutative and unital, with the unit $1$; it is **not** a field and **not** a division algebra, because it has the two idempotent lines as zero divisors; and its invertibility is decided by the reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, which is the algebraic norm of the quaternionic bilinear product and the determinant of the multiplication (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
 
-**The results.** The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of *Reduced Biquaternion Space*. Its unit is $1$, its inverse is $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_+-jQ_-)$ when $\langle \breve Q\rangle_{\natural}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and its multiplication is componentwise in the idempotent coordinates.
+**The results.** The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of *Reduced Biquaternion Space*. Its unit is $1$, its inverse is $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ when $\langle \breve Q\rangle_{\natural}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and its multiplication is componentwise in the idempotent coordinates.
 
 **Boundaries.** The space and its two scalar systems are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, above this article in this category; the involutions are *The Two Involutions and the Group of Involutions*; the four products and their forms and norms are *The Four Products, Their Forms and Their Algebraic Norms*. The algebraic norm of the multiplication and the invertibility criterion are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*; the roots of one and the idempotents are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*; and the roots of zero and the nilpotents are *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*. The element representations, the multiplication operators, the remarkable subspaces, the topology, the analysis, the geometry and the fractals are the later blocks of the category, listed in §*The Plan of the Block*.
 
@@ -18,7 +18,7 @@ The general plain algebra is the **associative** case of the reduced biquaternio
 
 **Definition.** The **general plain algebra of the reduced biquaternions** is the set $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the addition of the space and the **multiplication**
 $$
-(Q_{1+}+jQ_{1-})(Q_{2+}+jQ_{2-})=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j,
+(Q_{1\blacktriangle}+jQ_{1\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j,
 $$
 extended to the whole space by bilinearity. The product is written by juxtaposition, $\breve Q_{1}\breve Q_{2}$.
 
@@ -31,7 +31,7 @@ The definition is the definition of the algebra of *Reduced Biquaternion Space*;
 **The data of the general plain algebra** are:
 
 - the **space**, the real four-dimensional vector space on $1,i,j,ij$, equivalently the complex two-dimensional space on $1,j$;
-- the **product**, the bilinear multiplication $(Q_{1+}+jQ_{1-})(Q_{2+}+jQ_{2-})=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$;
+- the **product**, the bilinear multiplication $(Q_{1\blacktriangle}+jQ_{1\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j$;
 - the **unit**, the element $1$, two-sided and unique;
 - the **scalar system**, the field $\mathbb{R}$ with the compatible complex scalar action of $\mathbb{C}$.
 
@@ -53,22 +53,22 @@ The algebra is therefore an **associative commutative unital $\mathbb{R}$-algebr
 
 ## The Element
 
-**A general element is $\breve Q=Q_++jQ_-$, with a scalar part $Q_+$ and a $j$-part $jQ_-$, and its idempotent coordinates $Q_++Q_-$ and $Q_+-Q_-$ are the pair that carries the product.**
+**A general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with a scalar part $Q_{\blacktriangle}$ and a $j$-part $jQ_{\blacktriangledown}$, and its idempotent coordinates $Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}$ are the pair that carries the product.**
 
-**Definition.** The **$\mathbb{C}$ scalar part** of $\breve Q=Q_++jQ_-$ is $Q_+$, the **$j$-part** is $jQ_-$, and the **idempotent coordinates** are $Q_++Q_-$ and $Q_+-Q_-$,
+**Definition.** The **$\mathbb{C}$ scalar part** of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is $Q_{\blacktriangle}$, the **$j$-part** is $jQ_{\blacktriangledown}$, and the **idempotent coordinates** are $Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}$,
 $$
-\breve Q=(Q_++Q_-)\Pi_++(Q_+-Q_-)\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j).
+\breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j).
 $$
 
 The algebra has no vector part: it has no vector subspace, and the two terms are the coefficients of the scalar unit $1$ and of the hyperbolic unit $j$, both complex.
 
-**Proposition (the multiplication in the idempotent coordinates).** For $\breve Q_{1}=(Q_{1++},Q_{1--})$ and $\breve Q_{2}=(Q_{2++},Q_{2--})$ in the idempotent coordinates $Q_{1++}=Q_{1+}+Q_{1-}$, $Q_{1--}=Q_{1+}-Q_{1-}$ and $Q_{2++}=Q_{2+}+Q_{2-}$, $Q_{2--}=Q_{2+}-Q_{2-}$,
+**Proposition (the multiplication in the idempotent coordinates).** For $\breve Q_{1}=(Q_{1+},Q_{1-})$ and $\breve Q_{2}=(Q_{2+},Q_{2-})$ in the idempotent coordinates $Q_{1+}=Q_{1\blacktriangle}+Q_{1\blacktriangledown}$, $Q_{1-}=Q_{1\blacktriangle}-Q_{1\blacktriangledown}$ and $Q_{2+}=Q_{2\blacktriangle}+Q_{2\blacktriangledown}$, $Q_{2-}=Q_{2\blacktriangle}-Q_{2\blacktriangledown}$,
 $$
-\breve Q_{1}\breve Q_{2}=(Q_{1++}Q_{2++},\;Q_{1--}Q_{2--}),
+\breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+},\;Q_{1-}Q_{2-}),
 $$
 the product being componentwise.
 
-*Proof.* The idempotents are orthogonal, $\Pi_+\Pi_-=0$, and idempotent, $\Pi_\pm^{2}=\Pi_\pm$ (*Reduced Biquaternion Space*); expanding $(Q_{1++}\Pi_++Q_{1--}\Pi_-)(Q_{2++}\Pi_++Q_{2--}\Pi_-)$ kills the crossed terms and gives $Q_{1++}Q_{2++}\Pi_++Q_{1--}Q_{2--}\Pi_-$.
+*Proof.* The idempotents are orthogonal, $\Pi_+\Pi_-=0$, and idempotent, $\Pi_\pm^{2}=\Pi_\pm$ (*Reduced Biquaternion Space*); expanding $(Q_{1+}\Pi_++Q_{1-}\Pi_-)(Q_{2+}\Pi_++Q_{2-}\Pi_-)$ kills the crossed terms and gives $Q_{1+}Q_{2+}\Pi_++Q_{1-}Q_{2-}\Pi_-$.
 
 The proposition is the reason every question about the algebra splits into two questions about the complex numbers, and it is used in every article of the block.
 
@@ -78,19 +78,19 @@ The proposition is the reason every question about the algebra splits into two q
 
 **The product is associative: $\breve Q_{1}(\breve Q_{2}\breve Q_{3})=(\breve Q_{1}\breve Q_{2})\breve Q_{3}$, and a triple of elements has a single product.**
 
-*Proof.* In the idempotent coordinates the product is $(Q_{1++}Q_{2++},Q_{1--}Q_{2--})$, and the complex multiplication is associative in each coordinate, so $((Q_{1++}Q_{2++})Q_{3++},(Q_{1--}Q_{2--})Q_{3--})$ agrees in the two groupings; the associativity of the complex multiplication is the one fact used.
+*Proof.* In the idempotent coordinates the product is $(Q_{1+}Q_{2+},Q_{1-}Q_{2-})$, and the complex multiplication is associative in each coordinate, so $((Q_{1+}Q_{2+})Q_{3+},(Q_{1-}Q_{2-})Q_{3-})$ agrees in the two groupings; the associativity of the complex multiplication is the one fact used.
 
 ### Commutativity
 
 **The product is commutative: $\breve Q_{1}\breve Q_{2}=\breve Q_{2}\breve Q_{1}$, and the algebra is not the quaternion algebra.**
 
-*Proof.* The idempotent coordinates of $\breve Q_{1}\breve Q_{2}$ are $(Q_{1++}Q_{2++},Q_{1--}Q_{2--})$ and those of $\breve Q_{2}\breve Q_{1}$ are $(Q_{2++}Q_{1++},Q_{2--}Q_{1--})$, equal because the complex multiplication is commutative. In the real basis the commutativity is $ji=ij$, which is the third defining relation of *Reduced Biquaternion Space*; the product is therefore not the quaternion product, and the algebra is not $\mathbb{H}$ or $\mathbb{B}$.
+*Proof.* The idempotent coordinates of $\breve Q_{1}\breve Q_{2}$ are $(Q_{1+}Q_{2+},Q_{1-}Q_{2-})$ and those of $\breve Q_{2}\breve Q_{1}$ are $(Q_{2+}Q_{1+},Q_{2-}Q_{1-})$, equal because the complex multiplication is commutative. In the real basis the commutativity is $ji=ij$, which is the third defining relation of *Reduced Biquaternion Space*; the product is therefore not the quaternion product, and the algebra is not $\mathbb{H}$ or $\mathbb{B}$.
 
 ### The Unit and the Inverse
 
-**The unit is $1$, it is two-sided and unique, and an element is invertible exactly when its reduced norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ is nonzero, with the inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_+-jQ_-)$.**
+**The unit is $1$, it is two-sided and unique, and an element is invertible exactly when its reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, with the inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$.**
 
-*Proof.* The unit is $1=1+0j$, and $1\,\breve Q=\breve Q\,1=\breve Q$. Uniqueness: if $e$ is a unit then $e=e1=1$. The criterion $\langle \breve Q\rangle_{\natural}\neq0$ and the inverse are *The Four Products, Their Forms and Their Algebraic Norms*, §*The Multiplicative Norm*, and the full treatment is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article. In the idempotent coordinates the inverse of $(Q_{++},Q_{--})$ is $(Q_{++}^{-1},Q_{--}^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}\neq0$.
+*Proof.* The unit is $1=1+0j$, and $1\,\breve Q=\breve Q\,1=\breve Q$. Uniqueness: if $e$ is a unit then $e=e1=1$. The criterion $\langle \breve Q\rangle_{\natural}\neq0$ and the inverse are *The Four Products, Their Forms and Their Algebraic Norms*, §*The Multiplicative Norm*, and the full treatment is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article. In the idempotent coordinates the inverse of $(Q_{+},Q_{-})$ is $(Q_{+}^{-1},Q_{-}^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}\neq0$.
 
 ### The Absence of Division
 
@@ -104,7 +104,7 @@ The zero divisors, their two families and their geometry are *Zero Divisors of t
 
 **The algebra is the direct product of two copies of $\mathbb{C}$, and its maximal ideals are the two idempotent lines.**
 
-**Theorem (the structure).** The component map $\varphi(\breve Q)=(Q_{++},Q_{--})$ is an isomorphism of $\mathbb{C}$-algebras
+**Theorem (the structure).** The component map $\varphi(\breve Q)=(Q_{+},Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras
 $$
 \mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\oplus\mathbb{C},
 $$
@@ -140,23 +140,23 @@ The table is the plan of the block and not a set of definitions: each row is def
 
 The general plain algebra of the reduced biquaternions is the space $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the multiplication
 $$
-(Q_{1+}+jQ_{1-})(Q_{2+}+jQ_{2-})=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j,
+(Q_{1\blacktriangle}+jQ_{1\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j,
 $$
-the general plain bilinear product read as the product of the algebra. Its data are the space, the product, the unit and the scalar system; it is an associative, commutative, unital $\mathbb{R}$-algebra and $\mathbb{C}$-algebra, with unit $1$ and with the multiplication in the idempotent coordinates componentwise, $\breve Q_{1}\breve Q_{2}=(Q_{1++}Q_{2++},Q_{1--}Q_{2--})$ for $\breve Q_{1}=(Q_{1++},Q_{1--})$ and $\breve Q_{2}=(Q_{2++},Q_{2--})$.
+the general plain bilinear product read as the product of the algebra. Its data are the space, the product, the unit and the scalar system; it is an associative, commutative, unital $\mathbb{R}$-algebra and $\mathbb{C}$-algebra, with unit $1$ and with the multiplication in the idempotent coordinates componentwise, $\breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+},Q_{1-}Q_{2-})$ for $\breve Q_{1}=(Q_{1+},Q_{1-})$ and $\breve Q_{2}=(Q_{2+},Q_{2-})$.
 
-An element is $\breve Q=Q_++jQ_-$ with scalar part $Q_+$ and $j$-part $jQ_-$; its inverse exists exactly when the reduced norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ is nonzero, and it is $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_+-jQ_-)$. The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two copies of $\mathbb{C}$, its maximal ideals are the two idempotent lines, its only idempotents are $0,1,\Pi_+,\Pi_-$, and it **has zero divisors and is not a field and not a division algebra**. The block of the general plain algebra is the thirteen articles of §*The Plan of the Block*, of which this article is the first.
+An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with scalar part $Q_{\blacktriangle}$ and $j$-part $jQ_{\blacktriangledown}$; its inverse exists exactly when the reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, and it is $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$. The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two copies of $\mathbb{C}$, its maximal ideals are the two idempotent lines, its only idempotents are $0,1,\Pi_+,\Pi_-$, and it **has zero divisors and is not a field and not a division algebra**. The block of the general plain algebra is the thirteen articles of §*The Plan of the Block*, of which this article is the first.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\breve Q_{1}\breve Q_{2}$ | the multiplication, the general plain bilinear product |
-| $\breve Q=Q_++jQ_-$ | a general element, $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ |
-| $Q_+$, $jQ_-$ | the scalar part and the $j$-part |
-| $Q_++Q_-$, $Q_+-Q_-$ | the idempotent coordinates of $\breve Q=(Q_++Q_-)\Pi_++(Q_+-Q_-)\Pi_-$ |
+| $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | a general element, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ |
+| $Q_{\blacktriangle}$, $jQ_{\blacktriangledown}$ | the scalar part and the $j$-part |
+| $Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates of $\breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two idempotents |
-| $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ | the reduced norm and the invertibility criterion |
-| $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_+-jQ_-)$ | the inverse |
+| $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm and the invertibility criterion |
+| $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ | the inverse |
 | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | the structure of the algebra as a direct product |
 
 ## Further Reading

@@ -12,7 +12,7 @@ $$
 $$
 The two lists are exchanged by the **halving map** $\breve Q\mapsto\tfrac12(1+\breve Q)$, which sends a root of one to an idempotent and back; the two nontrivial idempotents are complementary and orthogonal, $\Pi_++\Pi_-=1$ and $\Pi_+\Pi_-=0$, and the two projections are $\breve Q\mapsto\Pi_+\breve Q$ and $\breve Q\mapsto\Pi_-\breve Q$, so that the algebra resolves as the sum of the two idempotent lines.
 
-The computation is short because the multiplication is componentwise in the idempotent coordinates: for $\breve Q=(Q_{++},Q_{--})$, with $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, one has $\breve Q^{2}=(Q_{++}^{2},Q_{--}^{2})$, so $\breve Q^{2}=1$ is the pair of complex equations $Q_{++}^{2}=1$, $Q_{--}^{2}=1$ and $\breve Q^{2}=\breve Q$ is the pair $Q_{++}^{2}=Q_{++}$, $Q_{--}^{2}=Q_{--}$. Every list of solutions is therefore a product of two complex lists, and the four figures come from the two solutions $\pm1$ and the two solutions $0,1$ of the complex equations.
+The computation is short because the multiplication is componentwise in the idempotent coordinates: for $\breve Q=(Q_{+},Q_{-})$, with $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, one has $\breve Q^{2}=(Q_{+}^{2},Q_{-}^{2})$, so $\breve Q^{2}=1$ is the pair of complex equations $Q_{+}^{2}=1$, $Q_{-}^{2}=1$ and $\breve Q^{2}=\breve Q$ is the pair $Q_{+}^{2}=Q_{+}$, $Q_{-}^{2}=Q_{-}$. Every list of solutions is therefore a product of two complex lists, and the four figures come from the two solutions $\pm1$ and the two solutions $0,1$ of the complex equations.
 
 **The results.** The roots of one are $1,-1,j,-j$, and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication. The idempotents are $0,1,\Pi_+,\Pi_-$, of which $\Pi_+$ and $\Pi_-$ are the nontrivial ones and are complementary, orthogonal and zero divisors. Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi \breve Q$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{\Pi}^{2}=P_{\Pi}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the two projections are the Peirce projections onto the two lines, and the Peirce decomposition itself is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, below this article in this category. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$.
 
@@ -30,14 +30,14 @@ $$
 $$
 and there are no others.
 
-*Proof.* In the idempotent coordinates $\breve Q=(Q_{++},Q_{--})$ with $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, the product is componentwise, so $\breve Q^{2}=(Q_{++}^{2},Q_{--}^{2})$ (*Introduction to the Algebra of the Reduced Biquaternions*). The equation $\breve Q^{2}=1$ is the pair $Q_{++}^{2}=1$ and $Q_{--}^{2}=1$; a complex number has the two square roots of $1$, namely $\pm1$, so $Q_{++},Q_{--}\in\{1,-1\}$. The four pairs $(Q_{++},Q_{--})$ give, by $Q_+=\tfrac12(Q_{++}+Q_{--})$ and $Q_-=\tfrac12(Q_{++}-Q_{--})$,
+*Proof.* In the idempotent coordinates $\breve Q=(Q_{+},Q_{-})$ with $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, the product is componentwise, so $\breve Q^{2}=(Q_{+}^{2},Q_{-}^{2})$ (*Introduction to the Algebra of the Reduced Biquaternions*). The equation $\breve Q^{2}=1$ is the pair $Q_{+}^{2}=1$ and $Q_{-}^{2}=1$; a complex number has the two square roots of $1$, namely $\pm1$, so $Q_{+},Q_{-}\in\{1,-1\}$. The four pairs $(Q_{+},Q_{-})$ give, by $Q_{\blacktriangle}=\tfrac12(Q_{+}+Q_{-})$ and $Q_{\blacktriangledown}=\tfrac12(Q_{+}-Q_{-})$,
 $$
-(Q_{++},Q_{--})=(1,1)\to \breve Q=1,\quad (1,-1)\to \breve Q=j,\quad (-1,1)\to \breve Q=-j,\quad (-1,-1)\to \breve Q=-1 .
+(Q_{+},Q_{-})=(1,1)\to \breve Q=1,\quad (1,-1)\to \breve Q=j,\quad (-1,1)\to \breve Q=-j,\quad (-1,-1)\to \breve Q=-1 .
 $$
 
 **Corollary (the roots of one in the real basis).** In the real coordinates the roots are $1=(1,0,0,0)$, $-1=(-1,0,0,0)$, $j=(0,0,1,0)$ and $-j=(0,0,-1,0)$; all four lie in the real subalgebra $\mathbb{R}\{1,j\}$.
 
-*Proof.* The four elements are $\pm1$ and $\pm j$, read in the real basis; both $Q_+$ and $Q_-$ are real at each of them.
+*Proof.* The four elements are $\pm1$ and $\pm j$, read in the real basis; both $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ are real at each of them.
 
 **Remark (the roots of $-1$ are different).** The equation $\breve Q^{2}=-1$ has the four solutions $\pm i$ and $\pm ij$, the roots of $-1$ of *Conventions in Mathematics*, §*The Roots*: they are the roots of one multiplied by $i$, and they lie in the translate $i\mathbb{R}\{1,j\}$. The roots of one are not the roots of $-1$, and the distinction is stated here because the two families are both four.
 
@@ -69,7 +69,7 @@ $$
 $$
 and there are no others.
 
-*Proof.* In the idempotent coordinates the equation is the pair $Q_{++}^{2}=Q_{++}$ and $Q_{--}^{2}=Q_{--}$; a complex number satisfies $z^{2}=z$ iff $z=0$ or $z=1$. The four pairs $(Q_{++},Q_{--})$ give, by $Q_+=\tfrac12(Q_{++}+Q_{--})$ and $Q_-=\tfrac12(Q_{++}-Q_{--})$,
+*Proof.* In the idempotent coordinates the equation is the pair $Q_{+}^{2}=Q_{+}$ and $Q_{-}^{2}=Q_{-}$; a complex number satisfies $z^{2}=z$ iff $z=0$ or $z=1$. The four pairs $(Q_{+},Q_{-})$ give, by $Q_{\blacktriangle}=\tfrac12(Q_{+}+Q_{-})$ and $Q_{\blacktriangledown}=\tfrac12(Q_{+}-Q_{-})$,
 $$
 (0,0)\to \breve Q=0,\quad (1,1)\to \breve Q=1,\quad (1,0)\to \breve Q=\Pi_+,\quad (0,1)\to \breve Q=\Pi_-.
 $$
@@ -107,13 +107,13 @@ $$
 
 *Proof.* $P_{\Pi}^{2}(\breve Q)=\Pi(\Pi \breve Q)=\Pi^{2}\breve Q=\Pi \breve Q$; the sum is $(\Pi_++\Pi_-)\breve Q=1\,\breve Q=\breve Q$; and the product is $\Pi_+\Pi_-\breve Q=0$. The identity $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$ is the **resolution of the identity**, and the two projections are the Peirce projections of the algebra.
 
-**Proposition (the explicit projections).** For $\breve Q=Q_++jQ_-$,
+**Proposition (the explicit projections).** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
-P_{\Pi_+}(\breve Q)=(Q_++Q_-)\Pi_+,\qquad P_{\Pi_-}(\breve Q)=(Q_+-Q_-)\Pi_-,
+P_{\Pi_+}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_+,\qquad P_{\Pi_-}(\breve Q)=(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-,
 $$
 so the image of $P_{\Pi_+}$ is the first idempotent line and the image of $P_{\Pi_-}$ the second.
 
-*Proof.* $\Pi_+\breve Q=\Pi_+(Q_++jQ_-)=Q_+\Pi_++Q_-\Pi_+j$; and $\Pi_+j=\tfrac12(1+j)j=\tfrac12(j+1)=\Pi_+$, so $\Pi_+\breve Q=(Q_++Q_-)\Pi_+$. The same for $\Pi_-$, using $\Pi_-j=-\Pi_-$.
+*Proof.* $\Pi_+\breve Q=\Pi_+(Q_{\blacktriangle}+jQ_{\blacktriangledown})=Q_{\blacktriangle}\Pi_++Q_{\blacktriangledown}\Pi_+j$; and $\Pi_+j=\tfrac12(1+j)j=\tfrac12(j+1)=\Pi_+$, so $\Pi_+\breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_+$. The same for $\Pi_-$, using $\Pi_-j=-\Pi_-$.
 
 ### The Resolution of the Identity
 
@@ -125,7 +125,7 @@ $$
 $$
 and every element has the unique decomposition $\breve Q=P_{\Pi_+}(\breve Q)+P_{\Pi_-}(\breve Q)$.
 
-*Proof.* $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$ gives the decomposition, and $P_{\Pi_+}P_{\Pi_-}=0$ gives its uniqueness; the images are the two lines, which meet only at the origin (*Zero Divisors of the Algebra of the Reduced Biquaternions*). The decomposition of a general element reads $\breve Q=(Q_++Q_-)\Pi_++(Q_+-Q_-)\Pi_-$ (*Reduced Biquaternion Space*).
+*Proof.* $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$ gives the decomposition, and $P_{\Pi_+}P_{\Pi_-}=0$ gives its uniqueness; the images are the two lines, which meet only at the origin (*Zero Divisors of the Algebra of the Reduced Biquaternions*). The decomposition of a general element reads $\breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-$ (*Reduced Biquaternion Space*).
 
 **Remark (the Peirce decomposition).** The projections and the lines they carry are the **Peirce** data of the two idempotents; the spaces in the general Peirce decomposition of a pair of idempotents, the four subspaces $\Pi\mathbb{B}\Pi$, $\Pi\mathbb{B}(1-\Pi)$, $(1-\Pi)\mathbb{B}\Pi$ and $(1-\Pi)\mathbb{B}(1-\Pi)$, are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, below this article in this category; here only the two projections and the two lines they carry are read.
 
@@ -172,7 +172,7 @@ $$
 \Pi_+^{2}=\Pi_+,\quad \Pi_-^{2}=\Pi_-,\quad \Pi_+\Pi_-=0,\quad \Pi_++\Pi_-=1 .
 $$
 
-Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi \breve Q$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{\Pi}^{2}=P_{\Pi}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the explicit projections are $P_{\Pi_+}(\breve Q)=(Q_++Q_-)\Pi_+$ and $P_{\Pi_-}(\breve Q)=(Q_+-Q_-)\Pi_-$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$ and $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$. The **halving map** $H(\breve Q)=\tfrac12(1+\breve Q)$ is a bijection from the roots of one onto the idempotents, with inverse $\Pi\mapsto2\Pi-1$, and it sends $-1$ to $0$, $j$ to $\Pi_+$ and $-j$ to $\Pi_-$.
+Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi \breve Q$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{\Pi}^{2}=P_{\Pi}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the explicit projections are $P_{\Pi_+}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_+$ and $P_{\Pi_-}(\breve Q)=(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$ and $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$. The **halving map** $H(\breve Q)=\tfrac12(1+\breve Q)$ is a bijection from the roots of one onto the idempotents, with inverse $\Pi\mapsto2\Pi-1$, and it sends $-1$ to $0$, $j$ to $\Pi_+$ and $-j$ to $\Pi_-$.
 
 ## Summary of Notation
 

@@ -4,7 +4,7 @@
 
 The Euclidean topology of the reduced biquaternion algebra is the topology of the norm $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}$, and this article develops it: the isometry onto $\mathbb{R}^{4}$, the algebra read as a normed algebra, the contractibility, the unit group as a topological group, the Euclidean unit sphere and the topology of the zero-divisor set. The algebra is **commutative**, and the two facts that shape the topology are that the multiplication **has zero divisors** — so the norm is not submultiplicative with constant one, and the unit group is the complement of the zero-divisor set — and that the algebra is **not a division algebra**. The Euclidean topology is the subject; the algebraic norm $\langle\cdot\rangle_{\natural*}$ is only the tool, and the four algebraic norms are distinguished from it throughout.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$. The Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}=\sqrt{q_+^{2}+{q'_+}^{2}+q_-^{2}+{q'_-}^{2}}$, from the positive definite form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde.
+**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$. The Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$, from the positive definite form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde.
 
 **Boundaries.** The topology and the metric are set up in *Topology in the Space of Reduced Biquaternions*; the metric of each product is *Topology and Metric for Each of the Operations*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the unit group and its complement are *The Group of Units of the Algebra of the Reduced Biquaternions*; and the forms are *The Forms of the Algebra of the Reduced Biquaternions*. The biquaternion counterpart is *The Euclidean Topology of the Biquaternion Algebra*.
 
@@ -14,11 +14,11 @@ The Euclidean topology of the reduced biquaternion algebra is the topology of th
 
 **Theorem (the isometry).** The map
 $$
-\breve Q=Q_++jQ_-\mapsto(q_+,q'_+,q_-,q'_-)
+\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}\mapsto(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})
 $$
 is an isometry of $\mathbb{B}_{\mathrm{r}}$ with the norm $\lVert\cdot\rVert$ onto $\mathbb{R}^{4}$ with its standard Euclidean norm, and it is an isomorphism of real vector spaces.
 
-*Proof.* $\lVert \breve Q\rVert^{2}=q_+^{2}+{q'_+}^{2}+q_-^{2}+{q'_-}^{2}$ is the sum of the squares of the four coordinates, which is the square of the standard Euclidean norm of the quadruple; the map is a bijective real-linear map by *The Four-Vector Element Representation of the Reduced Biquaternions*, and it preserves the norm by the display.
+*Proof.* $\lVert \breve Q\rVert^{2}=q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}$ is the sum of the squares of the four coordinates, which is the square of the standard Euclidean norm of the quadruple; the map is a bijective real-linear map by *The Four-Vector Element Representation of the Reduced Biquaternions*, and it preserves the norm by the display.
 
 **Corollary (the geometry is the standard one).** Every topological property of the space is the corresponding property of $\mathbb{R}^{4}$: the space is complete, separable, locally compact, second-countable, finite-dimensional and non-compact, and its one-point compactification is $S^{4}$.
 
@@ -35,11 +35,11 @@ $$
 and the constant $\sqrt2$ is sharp; more precisely
 $$
 \frac{\lVert \breve Q_{1}\breve Q_{2}\rVert^{2}}{\lVert \breve Q_{1}\rVert^{2}\lVert \breve Q_{2}\rVert^{2}}
-=1+\frac{\bigl(\lvert Q_{1++}\rvert^{2}-\lvert Q_{1--}\rvert^{2}\bigr)\bigl(\lvert Q_{2++}\rvert^{2}-\lvert Q_{2--}\rvert^{2}\bigr)}{\bigl(\lvert Q_{1++}\rvert^{2}+\lvert Q_{1--}\rvert^{2}\bigr)\bigl(\lvert Q_{2++}\rvert^{2}+\lvert Q_{2--}\rvert^{2}\bigr)},
+=1+\frac{\bigl(\lvert Q_{1+}\rvert^{2}-\lvert Q_{1-}\rvert^{2}\bigr)\bigl(\lvert Q_{2+}\rvert^{2}-\lvert Q_{2-}\rvert^{2}\bigr)}{\bigl(\lvert Q_{1+}\rvert^{2}+\lvert Q_{1-}\rvert^{2}\bigr)\bigl(\lvert Q_{2+}\rvert^{2}+\lvert Q_{2-}\rvert^{2}\bigr)},
 $$
 a ratio in $[0,2]$.
 
-*Proof.* In the idempotent coordinates $\lVert \breve Q_{1}\rVert^{2}=\tfrac12(\lvert Q_{1++}\rvert^{2}+\lvert Q_{1--}\rvert^{2})$ and $\lVert \breve Q_{1}\breve Q_{2}\rVert^{2}=\tfrac12(\lvert Q_{1++}Q_{2++}\rvert^{2}+\lvert Q_{1--}Q_{2--}\rvert^{2})$. Writing $a=\lvert Q_{1++}\rvert^{2}$, $b=\lvert Q_{1--}\rvert^{2}$, $c=\lvert Q_{2++}\rvert^{2}$, $d=\lvert Q_{2--}\rvert^{2}$, the ratio is
+*Proof.* In the idempotent coordinates $\lVert \breve Q_{1}\rVert^{2}=\tfrac12(\lvert Q_{1+}\rvert^{2}+\lvert Q_{1-}\rvert^{2})$ and $\lVert \breve Q_{1}\breve Q_{2}\rVert^{2}=\tfrac12(\lvert Q_{1+}Q_{2+}\rvert^{2}+\lvert Q_{1-}Q_{2-}\rvert^{2})$. Writing $a=\lvert Q_{1+}\rvert^{2}$, $b=\lvert Q_{1-}\rvert^{2}$, $c=\lvert Q_{2+}\rvert^{2}$, $d=\lvert Q_{2-}\rvert^{2}$, the ratio is
 $$
 \frac{2(ac+bd)}{(a+b)(c+d)}=\frac{ac+bd+ac+bd}{(a+b)(c+d)}=1+\frac{ac+bd-ad-bc}{(a+b)(c+d)}=1+\frac{(a-b)(c-d)}{(a+b)(c+d)},
 $$
@@ -47,7 +47,7 @@ which lies in $[0,2]$ because $\lvert(a-b)/(a+b)\rvert\le1$ and $\lvert(c-d)/(c+
 
 **Corollary (the failure of submultiplicativity and the absence of a lower bound).** The algebra is a normed algebra only up to the constant $\sqrt2$; it is not a Banach algebra in the strict sense. There is no positive constant $c$ with $\lVert \breve Q_{1}\breve Q_{2}\rVert\ge c\lVert \breve Q_{1}\rVert\lVert \breve Q_{2}\rVert$: taking $\breve Q_{1}$ on the first idempotent line and $\breve Q_{2}$ on the second gives $\breve Q_{1}\breve Q_{2}=0$ with $\lVert \breve Q_{1}\rVert\lVert \breve Q_{2}\rVert>0$. The failure is exactly the presence of the zero divisors.
 
-*Proof.* The ratio reaches $2$, so the constant $\sqrt2$ cannot be lowered; the ratio reaches $0$ on the pairs $Q_{1++}Q_{2--}=0$ and $Q_{2++}Q_{1--}=0$, which are the products of the two idempotent lines, the zero divisors of *Zero Divisors of the Algebra of the Reduced Biquaternions*.
+*Proof.* The ratio reaches $2$, so the constant $\sqrt2$ cannot be lowered; the ratio reaches $0$ on the pairs $Q_{1+}Q_{2-}=0$ and $Q_{2+}Q_{1-}=0$, which are the products of the two idempotent lines, the zero divisors of *Zero Divisors of the Algebra of the Reduced Biquaternions*.
 
 **Corollary (the submultiplicativity up to powers).** For every positive integer $n$,
 $$
@@ -74,11 +74,11 @@ $$
 
 **Theorem (the unit group).** The unit group
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\natural}\neq0\}=\{\breve Q:Q_{++}\neq0,\ Q_{--}\neq0\}
+\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\natural}\neq0\}=\{\breve Q:Q_{+}\neq0,\ Q_{-}\neq0\}
 $$
 is open and dense, and it is a topological group: the multiplication and the inversion are continuous.
 
-*Proof.* The unit group is the complement of the closed zero-divisor set, hence open, and the set has empty interior, hence the unit group is dense, by *Topology in the Space of Reduced Biquaternions*. The multiplication is continuous as a product in a topological algebra, and the inversion is continuous because it is given by $\breve Q^{-1}=(Q_+-jQ_-)/\langle \breve Q\rangle_{\natural}$ with $\langle \breve Q\rangle_{\natural}$ a continuous non-vanishing function, hence a continuous map.
+*Proof.* The unit group is the complement of the closed zero-divisor set, hence open, and the set has empty interior, hence the unit group is dense, by *Topology in the Space of Reduced Biquaternions*. The multiplication is continuous as a product in a topological algebra, and the inversion is continuous because it is given by $\breve Q^{-1}=(Q_{\blacktriangle}-jQ_{\blacktriangledown})/\langle \breve Q\rangle_{\natural}$ with $\langle \breve Q\rangle_{\natural}$ a continuous non-vanishing function, hence a continuous map.
 
 **Theorem (the homeomorphism).** The unit group is homeomorphic to
 $$
@@ -86,7 +86,7 @@ $$
 $$
 through the two idempotent coordinates; it is connected, abelian, non-compact, and its fundamental group is $\mathbb{Z}^{2}$.
 
-*Proof.* The map $\breve Q\mapsto(Q_{++},Q_{--})$ is a homeomorphism of the unit group onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, an isomorphism of groups by *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; each $\mathbb{C}^{\times}$ is homeomorphic to $S^{1}\times\mathbb{R}_{>0}$ by modulus and argument, so the group is homeomorphic to the display. It is connected as a product of connected sets, abelian as a product of abelian groups, non-compact because $\mathbb{R}_{>0}$ is not compact, and its fundamental group is $\pi_{1}(S^{1})^{2}=\mathbb{Z}^{2}$, the two positive factors being contractible.
+*Proof.* The map $\breve Q\mapsto(Q_{+},Q_{-})$ is a homeomorphism of the unit group onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, an isomorphism of groups by *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; each $\mathbb{C}^{\times}$ is homeomorphic to $S^{1}\times\mathbb{R}_{>0}$ by modulus and argument, so the group is homeomorphic to the display. It is connected as a product of connected sets, abelian as a product of abelian groups, non-compact because $\mathbb{R}_{>0}$ is not compact, and its fundamental group is $\pi_{1}(S^{1})^{2}=\mathbb{Z}^{2}$, the two positive factors being contractible.
 
 **Corollary (the unit group is not the whole space and not compact).** The unit group is a proper open subset, homotopy equivalent to the two-torus, and its complement, the zero-divisor set, is its boundary. The unit group deformation-retracts onto its torus factor, and no retraction of the space onto the unit group exists, the space being contractible and the unit group not.
 
@@ -108,11 +108,11 @@ a compact three-dimensional manifold without boundary.
 
 **Theorem (the zero divisors on the sphere).** The sphere meets the zero-divisor set in the two circles
 $$
-\{Q_{++}=0,\ \lvert Q_{--}\rvert=\sqrt2\}\qquad\text{and}\qquad\{Q_{--}=0,\ \lvert Q_{++}\rvert=\sqrt2\},
+\{Q_{+}=0,\ \lvert Q_{-}\rvert=\sqrt2\}\qquad\text{and}\qquad\{Q_{-}=0,\ \lvert Q_{+}\rvert=\sqrt2\},
 $$
 which are disjoint; the complement of the two circles in $S^{3}$ is the set of **norm-one units**, homeomorphic to $S^{1}\times S^{1}\times(-1,1)$.
 
-*Proof.* On $\langle\cdot\rangle_{\natural*}=1$, the condition $Q_{++}=0$ gives $\tfrac12\lvert Q_{--}\rvert^{2}=1$, that is $\lvert Q_{--}\rvert=\sqrt2$, a circle because $Q_{--}\in\mathbb{C}$; symmetrically for $Q_{--}=0$; the two circles are disjoint because $Q_{++}=Q_{--}=0$ gives $\breve Q=0\notin S^{3}$. Removing the two circles and reading $(\rho_{1},\rho_{2})$ with $\rho_{1}^{2}+\rho_{2}^{2}=2$ gives the display.
+*Proof.* On $\langle\cdot\rangle_{\natural*}=1$, the condition $Q_{+}=0$ gives $\tfrac12\lvert Q_{-}\rvert^{2}=1$, that is $\lvert Q_{-}\rvert=\sqrt2$, a circle because $Q_{-}\in\mathbb{C}$; symmetrically for $Q_{-}=0$; the two circles are disjoint because $Q_{+}=Q_{-}=0$ gives $\breve Q=0\notin S^{3}$. Removing the two circles and reading $(\rho_{1},\rho_{2})$ with $\rho_{1}^{2}+\rho_{2}^{2}=2$ gives the display.
 
 **Corollary (the contrast with the quaternions).** For the quaternions the unit sphere is the group $Sp(1)$; here the unit sphere is not a group, its norm-one units are the sphere minus two circles, and the group structure lives on the unit group of the previous section. The difference is the zero divisors, absent in the quaternions and present here.
 
@@ -124,17 +124,17 @@ which are disjoint; the complement of the two circles in $S^{3}$ is the set of *
 
 **Theorem (the shape).** The zero-divisor set is
 $$
-\mathcal Z=\{\langle \breve Q\rangle_{\natural}=0\}=\{Q_{++}=0\}\cup\{Q_{--}=0\}=P_-\cup P_+,
+\mathcal Z=\{\langle \breve Q\rangle_{\natural}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}=P_-\cup P_+,
 $$
-where $P_-=\mathbb{C}\Pi_-$ is the plane $\{Q_++Q_-=0\}$ and $P_+=\mathbb{C}\Pi_+$ is the plane $\{Q_+-Q_-=0\}$, each a copy of $\mathbb{C}$, meeting only at the origin.
+where $P_-=\mathbb{C}\Pi_-$ is the plane $\{Q_{\blacktriangle}+Q_{\blacktriangledown}=0\}$ and $P_+=\mathbb{C}\Pi_+$ is the plane $\{Q_{\blacktriangle}-Q_{\blacktriangledown}=0\}$, each a copy of $\mathbb{C}$, meeting only at the origin.
 
-*Proof.* $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}$ and a product of complex numbers vanishes exactly when one factor does; $\{Q_{++}=0\}$ is $\{Q_+=-Q_-\}$, the set of $\breve Q=Q_-(1-j)$ for $Q_-\in\mathbb{C}$, a real two-dimensional subspace; similarly $\{Q_{--}=0\}=\{\breve Q=Q_-(1+j)\}$; their intersection is $\{Q_-(1-j)=Q_-(1+j)\}$, which forces $Q_-=0$.
+*Proof.* $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}$ and a product of complex numbers vanishes exactly when one factor does; $\{Q_{+}=0\}$ is $\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}$, the set of $\breve Q=Q_{\blacktriangledown}(1-j)$ for $Q_{\blacktriangledown}\in\mathbb{C}$, a real two-dimensional subspace; similarly $\{Q_{-}=0\}=\{\breve Q=Q_{\blacktriangledown}(1+j)\}$; their intersection is $\{Q_{\blacktriangledown}(1-j)=Q_{\blacktriangledown}(1+j)\}$, which forces $Q_{\blacktriangledown}=0$.
 
 **Theorem (the topological properties).** The set $\mathcal Z$ is closed, connected, path-connected, of empty interior and of Lebesgue measure zero; it is not compact; it is the boundary of the unit group; and it is not a topological manifold at the origin, where it is a crossing of two planes.
 
-*Proof.* Closed as the vanishing set of the continuous functions $Q_{++},Q_{--}$; connected because the two planes meet at the origin, and path-connected because each point of one plane reaches the origin by a straight line; empty interior and measure zero because each plane is a proper subspace; not compact because a subspace through the origin of positive dimension is unbounded; the boundary because it is the complement and the closure of the unit group, the unit group being dense. At the origin a neighbourhood of $\mathcal Z$ is the union of two planes meeting at that single point, which is not locally Euclidean of a single dimension, so $\mathcal Z$ is not a manifold there.
+*Proof.* Closed as the vanishing set of the continuous functions $Q_{+},Q_{-}$; connected because the two planes meet at the origin, and path-connected because each point of one plane reaches the origin by a straight line; empty interior and measure zero because each plane is a proper subspace; not compact because a subspace through the origin of positive dimension is unbounded; the boundary because it is the complement and the closure of the unit group, the unit group being dense. At the origin a neighbourhood of $\mathcal Z$ is the union of two planes meeting at that single point, which is not locally Euclidean of a single dimension, so $\mathcal Z$ is not a manifold there.
 
-**Corollary (the difference from the companion).** In the biquaternion algebra the zero-divisor set is an irreducible cone of real dimension three; here it is the union of two planes of real dimension two, the factoring $\langle\cdot\rangle_{\natural}=(Q_++Q_-)(Q_+-Q_-)$ being the idempotent splitting read on the norm, as *The Group of Units of the Algebra of the Reduced Biquaternions* records.
+**Corollary (the difference from the companion).** In the biquaternion algebra the zero-divisor set is an irreducible cone of real dimension three; here it is the union of two planes of real dimension two, the factoring $\langle\cdot\rangle_{\natural}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})$ being the idempotent splitting read on the norm, as *The Group of Units of the Algebra of the Reduced Biquaternions* records.
 
 *Proof.* The complex-valued reduced norm of the reduced algebra factors and its zero set splits; the biquaternion reduced norm is an irreducible quadratic, whose zero set does not split, so its zero-divisor set is an irreducible cone.
 
@@ -163,9 +163,9 @@ The Euclidean topology of the reduced biquaternion algebra is the topology of th
 | Symbol | Meaning |
 |---|---|
 | $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\natural*}}$ | the Euclidean norm |
-| $\mathcal Z=P_-\cup P_+$ | the zero-divisor set, the union of the two planes $Q_{++}=0$ and $Q_{--}=0$ |
+| $\mathcal Z=P_-\cup P_+$ | the zero-divisor set, the union of the two planes $Q_{+}=0$ and $Q_{-}=0$ |
 | $S^{3}=\{\langle \breve Q\rangle_{\natural*}=1\}$ | the Euclidean unit sphere |
-| $\{Q_{++}=0,\lvert Q_{--}\rvert=\sqrt2\}\cup\{Q_{--}=0,\lvert Q_{++}\rvert=\sqrt2\}$ | the two circles of zero divisors on the sphere |
+| $\{Q_{+}=0,\lvert Q_{-}\rvert=\sqrt2\}\cup\{Q_{-}=0,\lvert Q_{+}\rvert=\sqrt2\}$ | the two circles of zero divisors on the sphere |
 | $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the unit group, a topological group |
 
 ## Further Reading

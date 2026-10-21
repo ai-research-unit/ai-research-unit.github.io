@@ -4,7 +4,7 @@
 
 Each of the four general products of the reduced biquaternion algebra has a **left multiplication operator**, $L^{\circ}_{\breve Q}:\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$, and the four operators are collected here and compared. Two of them are complex-linear, those of the two bilinear products; two are conjugate-linear, those of the two sesquilinear products. On the complex basis $1,j$ each is a $2\times2$ matrix, and in the idempotent basis each becomes diagonal or off-diagonal of a simple shape, which makes the trace, the determinant, the eigenvalues and the invertibility visible at once. The multiplication of the algebra is **commutative**, so the left and the right multiplication operators of the plain product coincide; the algebra **has zero divisors**, so an operator may be singular at a non-zero element; and it is **not a division algebra**, so no operator calculus makes it one. The plain operator alone, with its matrix, trace, determinant and adjoints, is *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; this article is the collection and the comparison of the four.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, with $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. The four general products are the general plain bilinear $\breve Q_{1}\breve Q_{2}$, the general quaternionic bilinear $\breve Q_{1}^{\natural}\breve Q_{2}$, the general plain sesquilinear $\breve Q_{1}\breve Q_{2}^{*}$ and the general quaternionic sesquilinear $\breve Q_{1}^{\natural}\breve Q_{2}^{*}$, with the forms $B,N,H,K$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde; a product written $\circ$ is generic and its identity is stated at each use.
+**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The four general products are the general plain bilinear $\breve Q_{1}\breve Q_{2}$, the general quaternionic bilinear $\breve Q_{1}^{\natural}\breve Q_{2}$, the general plain sesquilinear $\breve Q_{1}\breve Q_{2}^{*}$ and the general quaternionic sesquilinear $\breve Q_{1}^{\natural}\breve Q_{2}^{*}$, with the forms $B,N,H,K$ of *The Four Products, Their Forms and Their Algebraic Norms*. The element glyph is $\breve Q$, with the breve and without a tilde; a product written $\circ$ is generic and its identity is stated at each use.
 
 **Boundaries.** The four products and their forms are *The Four Products, Their Forms and Their Algebraic Norms*, and the forms are *The Forms of the Algebra of the Reduced Biquaternions*; the plain operator alone is *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the idempotent splitting is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the invertibility criterion is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; and the matrices of the element are *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*. The biquaternion counterpart is *Operators on the Biquaternions*.
 
@@ -18,18 +18,18 @@ with the superscript dropped for the plain product, $L_{\breve Q}(\breve Q_{2})=
 
 ### The Matrices on the Complex Basis
 
-**Theorem (the four matrices).** On the complex basis $1,j$, acting on the column $\binom{Q_{2+}}{Q_{2-}}$ of $\breve Q_{2}=Q_{2+}+jQ_{2-}$, the four left multiplications are
+**Theorem (the four matrices).** On the complex basis $1,j$, acting on the column $\binom{Q_{2\blacktriangle}}{Q_{2\blacktriangledown}}$ of $\breve Q_{2}=Q_{2\blacktriangle}+jQ_{2\blacktriangledown}$, the four left multiplications are
 $$
-L_{\breve Q}=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},\qquad
-L^{\natural}_{\breve Q}=\begin{pmatrix}Q_+&-Q_-\\ -Q_-&Q_+\end{pmatrix},
+L_{\breve Q}=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},\qquad
+L^{\natural}_{\breve Q}=\begin{pmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\ -Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
 $$
 $$
-L^{*}_{\breve Q}=\begin{pmatrix}Q_+&-Q_-\\ Q_-&-Q_+\end{pmatrix}\circ\kappa,\qquad
-L^{\natural*}_{\breve Q}=\begin{pmatrix}Q_+&Q_-\\ -Q_-&-Q_+\end{pmatrix}\circ\kappa ,
+L^{*}_{\breve Q}=\begin{pmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&-Q_{\blacktriangle}\end{pmatrix}\circ\kappa,\qquad
+L^{\natural*}_{\breve Q}=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ -Q_{\blacktriangledown}&-Q_{\blacktriangle}\end{pmatrix}\circ\kappa ,
 $$
-where $\kappa$ is the coefficient conjugation $\kappa\binom{Q_{2+}}{Q_{2-}}=\binom{\bar Q_{2+}}{\bar Q_{2-}}$ and $\breve Q=Q_++jQ_-$.
+where $\kappa$ is the coefficient conjugation $\kappa\binom{Q_{2\blacktriangle}}{Q_{2\blacktriangledown}}=\binom{\bar Q_{2\blacktriangle}}{\bar Q_{2\blacktriangledown}}$ and $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$.
 
-*Proof.* Read the four coordinate tables. The plain product $\breve Q \breve Q_{2}=(Q_+Q_{2+}+Q_-Q_{2-})+(Q_+Q_{2-}+Q_-Q_{2+})j$ has the columns $\binom{Q_+}{Q_-}$ and $\binom{Q_-}{Q_+}$, giving the first matrix. The quaternionic bilinear product $\breve Q^{\natural}\breve Q_{2}=(Q_+Q_{2+}-Q_-Q_{2-})+(Q_+Q_{2-}-Q_-Q_{2+})j$ has the columns $\binom{Q_+}{-Q_-}$ and $\binom{-Q_-}{Q_+}$, giving the second. For the two sesquilinear products, $\breve Q_{2}^{*}=\binom{\bar Q_{2+}}{-\bar Q_{2-}}=\sigma_{3}\kappa\binom{Q_{2+}}{Q_{2-}}$ with $\sigma_{3}=\operatorname{diag}(1,-1)$, so $L^{*}_{\breve Q}=L_{\breve Q}\sigma_{3}\kappa$ and $L^{\natural*}_{\breve Q}=L^{\natural}_{\breve Q}\sigma_{3}\kappa$; multiplying the two bilinear matrices into $\sigma_{3}$ gives the last two displays.
+*Proof.* Read the four coordinate tables. The plain product $\breve Q \breve Q_{2}=(Q_{\blacktriangle}Q_{2\blacktriangle}+Q_{\blacktriangledown}Q_{2\blacktriangledown})+(Q_{\blacktriangle}Q_{2\blacktriangledown}+Q_{\blacktriangledown}Q_{2\blacktriangle})j$ has the columns $\binom{Q_{\blacktriangle}}{Q_{\blacktriangledown}}$ and $\binom{Q_{\blacktriangledown}}{Q_{\blacktriangle}}$, giving the first matrix. The quaternionic bilinear product $\breve Q^{\natural}\breve Q_{2}=(Q_{\blacktriangle}Q_{2\blacktriangle}-Q_{\blacktriangledown}Q_{2\blacktriangledown})+(Q_{\blacktriangle}Q_{2\blacktriangledown}-Q_{\blacktriangledown}Q_{2\blacktriangle})j$ has the columns $\binom{Q_{\blacktriangle}}{-Q_{\blacktriangledown}}$ and $\binom{-Q_{\blacktriangledown}}{Q_{\blacktriangle}}$, giving the second. For the two sesquilinear products, $\breve Q_{2}^{*}=\binom{\bar Q_{2\blacktriangle}}{-\bar Q_{2\blacktriangledown}}=\sigma_{3}\kappa\binom{Q_{2\blacktriangle}}{Q_{2\blacktriangledown}}$ with $\sigma_{3}=\operatorname{diag}(1,-1)$, so $L^{*}_{\breve Q}=L_{\breve Q}\sigma_{3}\kappa$ and $L^{\natural*}_{\breve Q}=L^{\natural}_{\breve Q}\sigma_{3}\kappa$; multiplying the two bilinear matrices into $\sigma_{3}$ gives the last two displays.
 
 **Corollary (linear against conjugate-linear).** The operators $L_{\breve Q}$ and $L^{\natural}_{\breve Q}$ of the bilinear products are **complex-linear**; the operators $L^{*}_{\breve Q}$ and $L^{\natural*}_{\breve Q}$ of the sesquilinear products are **conjugate-linear**, and are real-linear but not complex-linear.
 
@@ -37,34 +37,34 @@ where $\kappa$ is the coefficient conjugation $\kappa\binom{Q_{2+}}{Q_{2-}}=\bin
 
 ### The Matrices on the Idempotent Basis
 
-**Theorem (the idempotent form).** In the idempotent basis, acting on the column $\binom{Q_{2++}}{Q_{2--}}$ of $\breve Q_{2}=Q_{2++}\Pi_++Q_{2--}\Pi_-$, the four operators are
+**Theorem (the idempotent form).** In the idempotent basis, acting on the column $\binom{Q_{2+}}{Q_{2-}}$ of $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$, the four operators are
 $$
-L_{\breve Q}=\operatorname{diag}(Q_{++},Q_{--}),\qquad
-L^{\natural}_{\breve Q}=\operatorname{diag}(Q_{--},Q_{++}),
+L_{\breve Q}=\operatorname{diag}(Q_{+},Q_{-}),\qquad
+L^{\natural}_{\breve Q}=\operatorname{diag}(Q_{-},Q_{+}),
 $$
 $$
-L^{*}_{\breve Q}=\begin{pmatrix}0&Q_{++}\\ Q_{--}&0\end{pmatrix}\circ\kappa,\qquad
-L^{\natural*}_{\breve Q}=\begin{pmatrix}0&Q_{--}\\ Q_{++}&0\end{pmatrix}\circ\kappa .
+L^{*}_{\breve Q}=\begin{pmatrix}0&Q_{+}\\ Q_{-}&0\end{pmatrix}\circ\kappa,\qquad
+L^{\natural*}_{\breve Q}=\begin{pmatrix}0&Q_{-}\\ Q_{+}&0\end{pmatrix}\circ\kappa .
 $$
 
-*Proof.* In the idempotent coordinates the product is componentwise, $\breve Q \breve Q_{2}=Q_{++}\,Q_{2++}\,\Pi_++Q_{--}\,Q_{2--}\,\Pi_-=L_{\breve Q}(Q_{2++},Q_{2--})=(Q_{++}Q_{2++},Q_{--}Q_{2--})$, which is $\operatorname{diag}(Q_{++},Q_{--})$; and $\breve Q^{\natural}=Q_{--}\Pi_++Q_{++}\Pi_-$, so $\breve Q^{\natural}\breve Q_{2}=(Q_{--} Q_{2++})\Pi_++(Q_{++} Q_{2--})\Pi_-$. For the sesquilinear products, $\breve Q_{2}^{*}=\bar Q_{2--}\Pi_++\bar Q_{2++}\Pi_-$ because the star exchanges the two idempotents, so $\breve Q \breve Q_{2}^{*}=Q_{++}\bar Q_{2--}\Pi_++Q_{--}\bar Q_{2++}\Pi_-$ and $\breve Q^{\natural}\breve Q_{2}^{*}=Q_{--}\bar Q_{2--}\Pi_++Q_{++}\bar Q_{2++}\Pi_-$, which are the two off-diagonal displays.
+*Proof.* In the idempotent coordinates the product is componentwise, $\breve Q \breve Q_{2}=Q_{+}\,Q_{2+}\,\Pi_++Q_{-}\,Q_{2-}\,\Pi_-=L_{\breve Q}(Q_{2+},Q_{2-})=(Q_{+}Q_{2+},Q_{-}Q_{2-})$, which is $\operatorname{diag}(Q_{+},Q_{-})$; and $\breve Q^{\natural}=Q_{-}\Pi_++Q_{+}\Pi_-$, so $\breve Q^{\natural}\breve Q_{2}=(Q_{-} Q_{2+})\Pi_++(Q_{+} Q_{2-})\Pi_-$. For the sesquilinear products, $\breve Q_{2}^{*}=\bar Q_{2-}\Pi_++\bar Q_{2+}\Pi_-$ because the star exchanges the two idempotents, so $\breve Q \breve Q_{2}^{*}=Q_{+}\bar Q_{2-}\Pi_++Q_{-}\bar Q_{2+}\Pi_-$ and $\breve Q^{\natural}\breve Q_{2}^{*}=Q_{-}\bar Q_{2-}\Pi_++Q_{+}\bar Q_{2+}\Pi_-$, which are the two off-diagonal displays.
 
-**Corollary (the plain product is diagonal).** The plain operator is diagonal in the idempotent basis, with the two idempotent coordinates on the diagonal; the quaternionic bilinear operator is the same diagonal with the two entries **exchanged**, and the two sesquilinear operators are the two **off-diagonal** matrices with the conjugation. The four operators differ only in the placement of $Q_{++}$ and $Q_{--}$.
+**Corollary (the plain product is diagonal).** The plain operator is diagonal in the idempotent basis, with the two idempotent coordinates on the diagonal; the quaternionic bilinear operator is the same diagonal with the two entries **exchanged**, and the two sesquilinear operators are the two **off-diagonal** matrices with the conjugation. The four operators differ only in the placement of $Q_{+}$ and $Q_{-}$.
 
-*Proof.* Read the four displays: the plain operator has $Q_{++}$ first and $Q_{--}$ second, the quaternionic bilinear operator the reverse, and the two sesquilinear operators have zeros on the diagonal and carry $Q_{++},Q_{--}$ on the two off-diagonal entries.
+*Proof.* Read the four displays: the plain operator has $Q_{+}$ first and $Q_{-}$ second, the quaternionic bilinear operator the reverse, and the two sesquilinear operators have zeros on the diagonal and carry $Q_{+},Q_{-}$ on the two off-diagonal entries.
 
 ## The Right Multiplication Operators
 
 **The right multiplication operators coincide with the left ones for the plain product and differ for the other three.**
 
-**Theorem.** For the plain product the right multiplication $R_{\breve Q}:\breve Q_{2}\mapsto \breve Q_{2}\breve Q$ equals the left one, $R_{\breve Q}=L_{\breve Q}$, because the multiplication is commutative. For the other three products the right operator is $R^{\circ}_{\breve Q}(\breve Q_{2})=\breve Q_{2}\circ \breve Q$, and in the idempotent coordinates it is the left operator with the involution moved from $\breve Q$ in the left slot to $\breve Q_{2}$ in the right slot: writing $\breve Q=(Q_{++},Q_{--})$ and $\breve Q_{2}=(Q_{2++},Q_{2--})$,
+**Theorem.** For the plain product the right multiplication $R_{\breve Q}:\breve Q_{2}\mapsto \breve Q_{2}\breve Q$ equals the left one, $R_{\breve Q}=L_{\breve Q}$, because the multiplication is commutative. For the other three products the right operator is $R^{\circ}_{\breve Q}(\breve Q_{2})=\breve Q_{2}\circ \breve Q$, and in the idempotent coordinates it is the left operator with the involution moved from $\breve Q$ in the left slot to $\breve Q_{2}$ in the right slot: writing $\breve Q=(Q_{+},Q_{-})$ and $\breve Q_{2}=(Q_{2+},Q_{2-})$,
 $$
-R^{\natural}_{\breve Q}=\begin{pmatrix}0&Q_{++}\\ Q_{--}&0\end{pmatrix},\qquad
-R^{*}_{\breve Q}=\operatorname{diag}(\bar Q_{--},\bar Q_{++}),\qquad
-R^{\natural*}_{\breve Q}=\begin{pmatrix}0&\bar Q_{--}\\ \bar Q_{++}&0\end{pmatrix}.
+R^{\natural}_{\breve Q}=\begin{pmatrix}0&Q_{+}\\ Q_{-}&0\end{pmatrix},\qquad
+R^{*}_{\breve Q}=\operatorname{diag}(\bar Q_{-},\bar Q_{+}),\qquad
+R^{\natural*}_{\breve Q}=\begin{pmatrix}0&\bar Q_{-}\\ \bar Q_{+}&0\end{pmatrix}.
 $$
 
-*Proof.* Commutativity gives $\breve Q_{2}\breve Q=\breve Q \breve Q_{2}$, hence $R_{\breve Q}=L_{\breve Q}$. For the other three, evaluate $\breve Q_{2}\circ \breve Q$ in the idempotent coordinates: the natural sign sends $\breve Q_{2}=(Q_{2++},Q_{2--})$ to $(Q_{2--},Q_{2++})$, so $R^{\natural}_{\breve Q}(Q_{2++},Q_{2--})=(Q_{2--},Q_{2++})\cdot(Q_{++},Q_{--})=(Q_{++}Q_{2--},Q_{--}Q_{2++})$; the star sends $\breve Q=(Q_{++},Q_{--})$ to $(\bar Q_{--},\bar Q_{++})$, so $R^{*}_{\breve Q}(Q_{2++},Q_{2--})=(Q_{2++},Q_{2--})\cdot(\bar Q_{--},\bar Q_{++})=(Q_{2++}\bar Q_{--},Q_{2--}\bar Q_{++})$; and combining the two, $R^{\natural*}_{\breve Q}(Q_{2++},Q_{2--})=(Q_{2--}\bar Q_{--},Q_{2++}\bar Q_{++})$. These are the three displays, and they differ from the left operators $L^{\natural}_{\breve Q}=\operatorname{diag}(Q_{--},Q_{++})$, $L^{*}_{\breve Q}=\left(\begin{smallmatrix}0&Q_{++}\\ Q_{--}&0\end{smallmatrix}\right)\circ\kappa$ and $L^{\natural*}_{\breve Q}=\left(\begin{smallmatrix}0&Q_{--}\\ Q_{++}&0\end{smallmatrix}\right)\circ\kappa$.
+*Proof.* Commutativity gives $\breve Q_{2}\breve Q=\breve Q \breve Q_{2}$, hence $R_{\breve Q}=L_{\breve Q}$. For the other three, evaluate $\breve Q_{2}\circ \breve Q$ in the idempotent coordinates: the natural sign sends $\breve Q_{2}=(Q_{2+},Q_{2-})$ to $(Q_{2-},Q_{2+})$, so $R^{\natural}_{\breve Q}(Q_{2+},Q_{2-})=(Q_{2-},Q_{2+})\cdot(Q_{+},Q_{-})=(Q_{+}Q_{2-},Q_{-}Q_{2+})$; the star sends $\breve Q=(Q_{+},Q_{-})$ to $(\bar Q_{-},\bar Q_{+})$, so $R^{*}_{\breve Q}(Q_{2+},Q_{2-})=(Q_{2+},Q_{2-})\cdot(\bar Q_{-},\bar Q_{+})=(Q_{2+}\bar Q_{-},Q_{2-}\bar Q_{+})$; and combining the two, $R^{\natural*}_{\breve Q}(Q_{2+},Q_{2-})=(Q_{2-}\bar Q_{-},Q_{2+}\bar Q_{+})$. These are the three displays, and they differ from the left operators $L^{\natural}_{\breve Q}=\operatorname{diag}(Q_{-},Q_{+})$, $L^{*}_{\breve Q}=\left(\begin{smallmatrix}0&Q_{+}\\ Q_{-}&0\end{smallmatrix}\right)\circ\kappa$ and $L^{\natural*}_{\breve Q}=\left(\begin{smallmatrix}0&Q_{-}\\ Q_{+}&0\end{smallmatrix}\right)\circ\kappa$.
 
 **Corollary (the commutant).** The operators commuting with all the left multiplications of the plain product are the right multiplications, which are the left multiplications themselves; so the commutant of the image is the image, and the operator algebra $\{L_{\breve Q}\}$ is a maximal commutative subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$ of complex dimension two.
 
@@ -72,28 +72,28 @@ $$
 
 ## Trace, Determinant and Eigenvalues
 
-**The two bilinear operators share the trace $2Q_+$, the determinant $N$ and the eigenvalues $Q_{++},Q_{--}$; the two sesquilinear operators are conjugate-linear with real determinant $\lvert N\rvert^{2}$.**
+**The two bilinear operators share the trace $2Q_{\blacktriangle}$, the determinant $N$ and the eigenvalues $Q_{+},Q_{-}$; the two sesquilinear operators are conjugate-linear with real determinant $\lvert N\rvert^{2}$.**
 
-**Theorem (the invariants).** For $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$,
+**Theorem (the invariants).** For $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$,
 $$
-\operatorname{tr}L_{\breve Q}=\operatorname{tr}L^{\natural}_{\breve Q}=Q_{++}+Q_{--}=2Q_+,\qquad
-\det L_{\breve Q}=\det L^{\natural}_{\breve Q}=Q_{++}Q_{--}=\langle \breve Q\rangle_{\natural},
+\operatorname{tr}L_{\breve Q}=\operatorname{tr}L^{\natural}_{\breve Q}=Q_{+}+Q_{-}=2Q_{\blacktriangle},\qquad
+\det L_{\breve Q}=\det L^{\natural}_{\breve Q}=Q_{+}Q_{-}=\langle \breve Q\rangle_{\natural},
 $$
-with eigenvalues $Q_{++}$ and $Q_{--}$. The two sesquilinear operators satisfy
+with eigenvalues $Q_{+}$ and $Q_{-}$. The two sesquilinear operators satisfy
 $$
-(L^{*}_{\breve Q})^{2}=\operatorname{diag}(Q_{++}\bar Q_{--},\ Q_{--}\bar Q_{++}),\qquad
-(L^{\natural*}_{\breve Q})^{2}=\operatorname{diag}(Q_{--}\bar Q_{++},\ Q_{++}\bar Q_{--}),
+(L^{*}_{\breve Q})^{2}=\operatorname{diag}(Q_{+}\bar Q_{-},\ Q_{-}\bar Q_{+}),\qquad
+(L^{\natural*}_{\breve Q})^{2}=\operatorname{diag}(Q_{-}\bar Q_{+},\ Q_{+}\bar Q_{-}),
 $$
 and their real determinants are
 $$
-\det_{\mathbb{R}}L^{*}_{\breve Q}=\det_{\mathbb{R}}L^{\natural*}_{\breve Q}=\lvert Q_{++}Q_{--}\rvert^{2}=\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}.
+\det_{\mathbb{R}}L^{*}_{\breve Q}=\det_{\mathbb{R}}L^{\natural*}_{\breve Q}=\lvert Q_{+}Q_{-}\rvert^{2}=\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}.
 $$
 
-*Proof.* The trace and the determinant of $\operatorname{diag}(Q_{++},Q_{--})$ and of $\operatorname{diag}(Q_{--},Q_{++})$ are $Q_{++}+Q_{--}$ and $Q_{++}Q_{--}$; in the complex basis the plain matrix $\begin{smallmatrix}Q_+&Q_-\\Q_-&Q_+\end{smallmatrix}$ has characteristic polynomial $(Q_+-\lambda)^{2}-Q_-^{2}$, whose roots are $Q_+\pm Q_-=Q_{++},Q_{--}$, and the quaternionic bilinear matrix gives the same. For the sesquilinear operators, applying the operator twice conjugates twice and uses the display of §*The Matrices on the Idempotent Basis*: $(Q_{2++},Q_{2--})\mapsto(Q_{++}\bar Q_{2--},Q_{--}\bar Q_{2++})\mapsto(Q_{++}\overline{Q_{--}\bar Q_{2++}},Q_{--}\overline{Q_{++}\bar Q_{2--}})=(Q_{++}\bar Q_{--}\,Q_{2++},Q_{--}\bar Q_{++}\,Q_{2--})$, and symmetrically for the companion. The real determinant of a real-linear operator given by a complex matrix composed with the conjugation is the squared modulus of the complex determinant, $\lvert\det\begin{smallmatrix}0&Q_{++}\\Q_{--}&0\end{smallmatrix}\rvert^{2}=\lvert Q_{++}Q_{--}\rvert^{2}$.
+*Proof.* The trace and the determinant of $\operatorname{diag}(Q_{+},Q_{-})$ and of $\operatorname{diag}(Q_{-},Q_{+})$ are $Q_{+}+Q_{-}$ and $Q_{+}Q_{-}$; in the complex basis the plain matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ has characteristic polynomial $(Q_{\blacktriangle}-\lambda)^{2}-Q_{\blacktriangledown}^{2}$, whose roots are $Q_{\blacktriangle}\pm Q_{\blacktriangledown}=Q_{+},Q_{-}$, and the quaternionic bilinear matrix gives the same. For the sesquilinear operators, applying the operator twice conjugates twice and uses the display of §*The Matrices on the Idempotent Basis*: $(Q_{2+},Q_{2-})\mapsto(Q_{+}\bar Q_{2-},Q_{-}\bar Q_{2+})\mapsto(Q_{+}\overline{Q_{-}\bar Q_{2+}},Q_{-}\overline{Q_{+}\bar Q_{2-}})=(Q_{+}\bar Q_{-}\,Q_{2+},Q_{-}\bar Q_{+}\,Q_{2-})$, and symmetrically for the companion. The real determinant of a real-linear operator given by a complex matrix composed with the conjugation is the squared modulus of the complex determinant, $\lvert\det\begin{smallmatrix}0&Q_{+}\\Q_{-}&0\end{smallmatrix}\rvert^{2}=\lvert Q_{+}Q_{-}\rvert^{2}$.
 
-**Corollary (the invertibility is the unit criterion).** Each of the four operators is invertible exactly when $Q_{++}\neq0$ and $Q_{--}\neq0$, that is exactly when $\breve Q$ is a unit; and each is singular at a non-zero element exactly when $\breve Q$ is a zero divisor. The operator picture does not remove the zero divisors: the singular non-zero elements are present in all four.
+**Corollary (the invertibility is the unit criterion).** Each of the four operators is invertible exactly when $Q_{+}\neq0$ and $Q_{-}\neq0$, that is exactly when $\breve Q$ is a unit; and each is singular at a non-zero element exactly when $\breve Q$ is a zero divisor. The operator picture does not remove the zero divisors: the singular non-zero elements are present in all four.
 
-*Proof.* The determinant of the two bilinear operators is $Q_{++}Q_{--}$ and the real determinant of the two sesquilinear operators is $\lvert Q_{++}Q_{--}\rvert^{2}$, both non-zero exactly for the units of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
+*Proof.* The determinant of the two bilinear operators is $Q_{+}Q_{-}$ and the real determinant of the two sesquilinear operators is $\lvert Q_{+}Q_{-}\rvert^{2}$, both non-zero exactly for the units of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
 
 ## The Adjoints and the Involutions
 
@@ -108,11 +108,11 @@ $$
 (L_{\breve Q})^{H}=L_{\breve Q^{*}} .
 $$
 
-*Proof.* In the idempotent coordinates, with $\breve Q_{i}=Q_{i++}\Pi_++Q_{i--}\Pi_-$, one has $\langle \breve Q_{1},\breve Q_{2}\rangle_{\natural*}=\tfrac12(Q_{1++}\bar Q_{2++}+Q_{1--}\bar Q_{2--})$ and $H(\breve Q_{1},\breve Q_{2})=\tfrac12(Q_{1++}\bar Q_{2--}+Q_{1--}\bar Q_{2++})$. For $\langle\cdot\rangle_{\natural*}$: $\langle L_{\breve Q}\breve Q_{2},\breve Q_{3}\rangle_{\natural*}=K(\breve Q \breve Q_{2},\breve Q_{3})=\tfrac12(Q_{++}Q_{2++}\bar Q_{3++}+Q_{--}Q_{2--}\bar Q_{3--})$ and $\langle \breve Q_{2},L_{\bar{\breve Q}}\breve Q_{3}\rangle_{\natural*}=\tfrac12(Q_{2++}\overline{\bar Q_{++}Q_{3++}}+Q_{2--}\overline{\bar Q_{--}Q_{3--}})=\tfrac12(Q_{++}Q_{2++}\bar Q_{3++}+Q_{--}Q_{2--}\bar Q_{3--})$, equal. For $H$: $H(\breve Q \breve Q_{2},\breve Q_{3})=\tfrac12(Q_{++}Q_{2++}\bar Q_{3--}+Q_{--}Q_{2--}\bar Q_{3++})$ and $H(\breve Q_{2},\breve Q^{*}\breve Q_{3})$ with $\breve Q^{*}$ of coordinates $(\bar Q_{--},\bar Q_{++})$ gives $\tfrac12(Q_{2++}\overline{\bar Q_{--} Q_{3++}}+Q_{2--}\overline{\bar Q_{++} Q_{3--}})=\tfrac12(Q_{++}Q_{2++}\bar Q_{3--}+Q_{--}Q_{2--}\bar Q_{3++})$, equal. The two adjoint rules are the two rows of the table of the conjugations, the bar for the definite form and the star for the indefinite one.
+*Proof.* In the idempotent coordinates, with $\breve Q_{i}=Q_{i+}\Pi_++Q_{i-}\Pi_-$, one has $\langle \breve Q_{1},\breve Q_{2}\rangle_{\natural*}=\tfrac12(Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-})$ and $H(\breve Q_{1},\breve Q_{2})=\tfrac12(Q_{1+}\bar Q_{2-}+Q_{1-}\bar Q_{2+})$. For $\langle\cdot\rangle_{\natural*}$: $\langle L_{\breve Q}\breve Q_{2},\breve Q_{3}\rangle_{\natural*}=K(\breve Q \breve Q_{2},\breve Q_{3})=\tfrac12(Q_{+}Q_{2+}\bar Q_{3+}+Q_{-}Q_{2-}\bar Q_{3-})$ and $\langle \breve Q_{2},L_{\bar{\breve Q}}\breve Q_{3}\rangle_{\natural*}=\tfrac12(Q_{2+}\overline{\bar Q_{+}Q_{3+}}+Q_{2-}\overline{\bar Q_{-}Q_{3-}})=\tfrac12(Q_{+}Q_{2+}\bar Q_{3+}+Q_{-}Q_{2-}\bar Q_{3-})$, equal. For $H$: $H(\breve Q \breve Q_{2},\breve Q_{3})=\tfrac12(Q_{+}Q_{2+}\bar Q_{3-}+Q_{-}Q_{2-}\bar Q_{3+})$ and $H(\breve Q_{2},\breve Q^{*}\breve Q_{3})$ with $\breve Q^{*}$ of coordinates $(\bar Q_{-},\bar Q_{+})$ gives $\tfrac12(Q_{2+}\overline{\bar Q_{-} Q_{3+}}+Q_{2-}\overline{\bar Q_{+} Q_{3-}})=\tfrac12(Q_{+}Q_{2+}\bar Q_{3-}+Q_{-}Q_{2-}\bar Q_{3+})$, equal. The two adjoint rules are the two rows of the table of the conjugations, the bar for the definite form and the star for the indefinite one.
 
-**Corollary (the involutions act by swapping).** In the idempotent basis the natural sign swaps the two diagonal entries, $L_{\breve Q^{\natural}}=\operatorname{diag}(Q_{--},Q_{++})$, and the star conjugates and swaps them, $L_{\breve Q^{*}}=\operatorname{diag}(\bar Q_{--},\bar Q_{++})$; the two are the transposition and the conjugate-transposition of the diagonal model.
+**Corollary (the involutions act by swapping).** In the idempotent basis the natural sign swaps the two diagonal entries, $L_{\breve Q^{\natural}}=\operatorname{diag}(Q_{-},Q_{+})$, and the star conjugates and swaps them, $L_{\breve Q^{*}}=\operatorname{diag}(\bar Q_{-},\bar Q_{+})$; the two are the transposition and the conjugate-transposition of the diagonal model.
 
-*Proof.* The idempotent coordinate of $\breve Q^{\natural}$ are $(Q_{--},Q_{++})$ and those of $\breve Q^{*}$ are $(\bar Q_{--},\bar Q_{++})$, by *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*; the operator of $\breve Q^{\natural}$ is $\operatorname{diag}(Q_{--},Q_{++})$ and that of $\breve Q^{*}$ is $\operatorname{diag}(\bar Q_{--},\bar Q_{++})$.
+*Proof.* The idempotent coordinate of $\breve Q^{\natural}$ are $(Q_{-},Q_{+})$ and those of $\breve Q^{*}$ are $(\bar Q_{-},\bar Q_{+})$, by *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*; the operator of $\breve Q^{\natural}$ is $\operatorname{diag}(Q_{-},Q_{+})$ and that of $\breve Q^{*}$ is $\operatorname{diag}(\bar Q_{-},\bar Q_{+})$.
 
 ## The Algebra of Operators
 
@@ -120,9 +120,9 @@ $$
 
 *Proof.* The multiplicativity $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}$ and the injectivity are *Introduction to Reduced Biquaternion Element Representations*; because the algebra is commutative every product $L_{\breve Q_{1}}R_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}$ is again a left multiplication, so the image of the enveloping algebra is $\{L_{\breve Q}\}$, of complex dimension two, against the four dimensions of $\operatorname{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})\cong M_{2}(\mathbb{C})$.
 
-**Corollary (the sandwich operators).** Every sandwich operator is a left multiplication, $\Theta_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}\breve Q=L_{\breve Q^{2}}(\breve Q_{2})$, and the sandwich operators carry no information beyond the left multiplications; in the idempotent basis $\Theta_{\breve Q}=\operatorname{diag}(Q_{++}^{2},Q_{--}^{2})$.
+**Corollary (the sandwich operators).** Every sandwich operator is a left multiplication, $\Theta_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}\breve Q=L_{\breve Q^{2}}(\breve Q_{2})$, and the sandwich operators carry no information beyond the left multiplications; in the idempotent basis $\Theta_{\breve Q}=\operatorname{diag}(Q_{+}^{2},Q_{-}^{2})$.
 
-*Proof.* The commutativity gives $\breve Q \breve Q_{2}\breve Q=\breve Q^{2}\breve Q_{2}$, whose operator is $L_{\breve Q^{2}}$ with diagonal form $\operatorname{diag}(Q_{++}^{2},Q_{--}^{2})$.
+*Proof.* The commutativity gives $\breve Q \breve Q_{2}\breve Q=\breve Q^{2}\breve Q_{2}$, whose operator is $L_{\breve Q^{2}}$ with diagonal form $\operatorname{diag}(Q_{+}^{2},Q_{-}^{2})$.
 
 ## Comparison of the Four Products
 
@@ -130,10 +130,10 @@ $$
 
 | product | operator | complex-linear | matrix on $1,j$ | idempotent form | trace | determinant | eigenvalues |
 |---|---|---|---|---|---|---|---|
-| $\breve Q \breve Q_{2}$ | $L_{\breve Q}$ | **yes** | $\begin{smallmatrix}Q_+&Q_-\\Q_-&Q_+\end{smallmatrix}$ | $\operatorname{diag}(Q_{++},Q_{--})$ | $Q_{++}+Q_{--}$ | $Q_{++}Q_{--}$ | $Q_{++},Q_{--}$ |
-| $\breve Q^{\natural}\breve Q_{2}$ | $L^{\natural}_{\breve Q}$ | **yes** | $\begin{smallmatrix}Q_+&-Q_-\\-Q_-&Q_+\end{smallmatrix}$ | $\operatorname{diag}(Q_{--},Q_{++})$ | $Q_{++}+Q_{--}$ | $Q_{++}Q_{--}$ | $Q_{++},Q_{--}$ |
-| $\breve Q \breve Q_{2}^{*}$ | $L^{*}_{\breve Q}$ | no (conjugate) | $\begin{smallmatrix}Q_+&-Q_-\\Q_-&-Q_+\end{smallmatrix}\circ\kappa$ | $\begin{smallmatrix}0&Q_{++}\\Q_{--}&0\end{smallmatrix}\circ\kappa$ | — | $\lvert Q_{++}Q_{--}\rvert^{2}$ (real) | real-linear |
-| $\breve Q^{\natural}\breve Q_{2}^{*}$ | $L^{\natural*}_{\breve Q}$ | no (conjugate) | $\begin{smallmatrix}Q_+&Q_-\\-Q_-&-Q_+\end{smallmatrix}\circ\kappa$ | $\begin{smallmatrix}0&Q_{--}\\Q_{++}&0\end{smallmatrix}\circ\kappa$ | — | $\lvert Q_{++}Q_{--}\rvert^{2}$ (real) | real-linear |
+| $\breve Q \breve Q_{2}$ | $L_{\breve Q}$ | **yes** | $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ | $\operatorname{diag}(Q_{+},Q_{-})$ | $Q_{+}+Q_{-}$ | $Q_{+}Q_{-}$ | $Q_{+},Q_{-}$ |
+| $\breve Q^{\natural}\breve Q_{2}$ | $L^{\natural}_{\breve Q}$ | **yes** | $\begin{smallmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\-Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ | $\operatorname{diag}(Q_{-},Q_{+})$ | $Q_{+}+Q_{-}$ | $Q_{+}Q_{-}$ | $Q_{+},Q_{-}$ |
+| $\breve Q \breve Q_{2}^{*}$ | $L^{*}_{\breve Q}$ | no (conjugate) | $\begin{smallmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\Q_{\blacktriangledown}&-Q_{\blacktriangle}\end{smallmatrix}\circ\kappa$ | $\begin{smallmatrix}0&Q_{+}\\Q_{-}&0\end{smallmatrix}\circ\kappa$ | — | $\lvert Q_{+}Q_{-}\rvert^{2}$ (real) | real-linear |
+| $\breve Q^{\natural}\breve Q_{2}^{*}$ | $L^{\natural*}_{\breve Q}$ | no (conjugate) | $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\-Q_{\blacktriangledown}&-Q_{\blacktriangle}\end{smallmatrix}\circ\kappa$ | $\begin{smallmatrix}0&Q_{-}\\Q_{+}&0\end{smallmatrix}\circ\kappa$ | — | $\lvert Q_{+}Q_{-}\rvert^{2}$ (real) | real-linear |
 
 **Theorem (the two pairs).** The two bilinear operators are complex-linear with the same trace and determinant, differing by the exchange of the two idempotent coordinates; the two sesquilinear operators are conjugate-linear with the same real determinant and differ by the same exchange. All four are invertible exactly for the units, and all four are singular at the zero divisors.
 
@@ -141,7 +141,7 @@ $$
 
 ## Summary
 
-Each of the four general products of the reduced biquaternion algebra has a left multiplication operator, $L_{\breve Q}$, $L^{\natural}_{\breve Q}$, $L^{*}_{\breve Q}$ and $L^{\natural*}_{\breve Q}$, and the four are collected and compared here. On the complex basis $1,j$ they are the matrices $\begin{smallmatrix}Q_+&Q_-\\Q_-&Q_+\end{smallmatrix}$, $\begin{smallmatrix}Q_+&-Q_-\\-Q_-&Q_+\end{smallmatrix}$, $\begin{smallmatrix}Q_+&-Q_-\\Q_-&-Q_+\end{smallmatrix}\circ\kappa$ and $\begin{smallmatrix}Q_+&Q_-\\-Q_-&-Q_+\end{smallmatrix}\circ\kappa$; in the idempotent basis they are $\operatorname{diag}(Q_{++},Q_{--})$, $\operatorname{diag}(Q_{--},Q_{++})$ and the two off-diagonal matrices with the conjugation, differing only in the placement of $Q_{++}$ and $Q_{--}$. The two bilinear operators are complex-linear with trace $Q_{++}+Q_{--}=2Q_+$, determinant $Q_{++}Q_{--}=\langle \breve Q\rangle_{\natural}$ and eigenvalues $Q_{++},Q_{--}$; the two sesquilinear operators are conjugate-linear, with squares $\operatorname{diag}(Q_{++}\bar Q_{--},Q_{--}\bar Q_{++})$ and $\operatorname{diag}(Q_{--}\bar Q_{++},Q_{++}\bar Q_{--})$ and real determinant $\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}$. Every operator is invertible exactly for the **units** and singular at the **zero divisors**, so the operator picture preserves the absence of division. The adjoint of the plain multiplication is $L_{\bar{\breve Q}}$ for the definite form and $L_{\breve Q^{*}}$ for the indefinite one; the operator image $\{L_{\breve Q}\}$ is a maximal commutative subalgebra of complex dimension two, the right multiplications coincide with the left ones for the plain product, and every sandwich operator is a left multiplication.
+Each of the four general products of the reduced biquaternion algebra has a left multiplication operator, $L_{\breve Q}$, $L^{\natural}_{\breve Q}$, $L^{*}_{\breve Q}$ and $L^{\natural*}_{\breve Q}$, and the four are collected and compared here. On the complex basis $1,j$ they are the matrices $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$, $\begin{smallmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\-Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$, $\begin{smallmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\Q_{\blacktriangledown}&-Q_{\blacktriangle}\end{smallmatrix}\circ\kappa$ and $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\-Q_{\blacktriangledown}&-Q_{\blacktriangle}\end{smallmatrix}\circ\kappa$; in the idempotent basis they are $\operatorname{diag}(Q_{+},Q_{-})$, $\operatorname{diag}(Q_{-},Q_{+})$ and the two off-diagonal matrices with the conjugation, differing only in the placement of $Q_{+}$ and $Q_{-}$. The two bilinear operators are complex-linear with trace $Q_{+}+Q_{-}=2Q_{\blacktriangle}$, determinant $Q_{+}Q_{-}=\langle \breve Q\rangle_{\natural}$ and eigenvalues $Q_{+},Q_{-}$; the two sesquilinear operators are conjugate-linear, with squares $\operatorname{diag}(Q_{+}\bar Q_{-},Q_{-}\bar Q_{+})$ and $\operatorname{diag}(Q_{-}\bar Q_{+},Q_{+}\bar Q_{-})$ and real determinant $\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}$. Every operator is invertible exactly for the **units** and singular at the **zero divisors**, so the operator picture preserves the absence of division. The adjoint of the plain multiplication is $L_{\bar{\breve Q}}$ for the definite form and $L_{\breve Q^{*}}$ for the indefinite one; the operator image $\{L_{\breve Q}\}$ is a maximal commutative subalgebra of complex dimension two, the right multiplications coincide with the left ones for the plain product, and every sandwich operator is a left multiplication.
 
 ## Summary of Notation
 
@@ -149,8 +149,8 @@ Each of the four general products of the reduced biquaternion algebra has a left
 |---|---|
 | $L^{\circ}_{\breve Q}$ | the left multiplication $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ for the product $\circ$ |
 | $L_{\breve Q}$ | the plain left multiplication, $\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ |
-| $\kappa$ | the coefficient conjugation $\binom{Q_{2+}}{Q_{2-}}\mapsto\binom{\bar Q_{2+}}{\bar Q_{2-}}$ |
-| $\operatorname{diag}(Q_{++},Q_{--})$, $\operatorname{diag}(Q_{--},Q_{++})$ | the idempotent forms of the two bilinear operators |
+| $\kappa$ | the coefficient conjugation $\binom{Q_{2\blacktriangle}}{Q_{2\blacktriangledown}}\mapsto\binom{\bar Q_{2\blacktriangle}}{\bar Q_{2\blacktriangledown}}$ |
+| $\operatorname{diag}(Q_{+},Q_{-})$, $\operatorname{diag}(Q_{-},Q_{+})$ | the idempotent forms of the two bilinear operators |
 | $(L_{\breve Q})^{K}=L_{\bar{\breve Q}}$ | the adjoint of the plain operator for the definite form |
 | $(L_{\breve Q})^{H}=L_{\breve Q^{*}}$ | the adjoint of the plain operator for the indefinite form |
 

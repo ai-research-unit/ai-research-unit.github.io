@@ -8,7 +8,7 @@ The reason is **left alternativity**, the law $\breve Q_{1}(\breve Q_{1}\breve Q
 
 **Placement.** The article closes the *Specific Theory* section of the general plain algebra, after *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, whose results it reads back as consequences of one identity. It uses the four general products and the four symmetrised and antisymmetrised structures of *The Four Products, Their Forms and Their Algebraic Norms* and the identities of *Relations Between the Four General Products* and *Comparison Between the Four General Products*, all of the shared Algebra of this category.
 
-**Conventions.** $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$, and the two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$. A general element is $\breve Q=Q_++jQ_-$ with $Q_+,Q_-\in\mathbb{C}$, and its **idempotent coordinates** are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, with $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. The **plain product** is written as juxtaposition $\breve Q_{1}\breve Q_{2}$; a product written $\circ$ is a generic one, and its identity is stated at each use. The **left multiplication** of a product $\circ$ by $\breve Q$ is the map $L^{\circ}_{\breve Q}:\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$, and the superscript is dropped for the plain product. The subscript is the element, never the operator: $L_{\breve Q_{1}}L_{\breve Q_{2}}$ is the composite $L_{\breve Q_{1}}\circ L_{\breve Q_{2}}$. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of the criterion below is exactly that correspondence for the plain product.
+**Conventions.** $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$, and the two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$. A general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, and its **idempotent coordinates** are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The **plain product** is written as juxtaposition $\breve Q_{1}\breve Q_{2}$; a product written $\circ$ is a generic one, and its identity is stated at each use. The **left multiplication** of a product $\circ$ by $\breve Q$ is the map $L^{\circ}_{\breve Q}:\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$, and the superscript is dropped for the plain product. The subscript is the element, never the operator: $L_{\breve Q_{1}}L_{\breve Q_{2}}$ is the composite $L_{\breve Q_{1}}\circ L_{\breve Q_{2}}$. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of the criterion below is exactly that correspondence for the plain product.
 
 ## The Criterion
 
@@ -41,11 +41,11 @@ The plain product is associative, commutative, unital with unit $1$, and $\mathb
 $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,\qquad \Pi_+^{2}=\Pi_+,\quad \Pi_-^{2}=\Pi_-,\quad \Pi_+\Pi_-=0,\quad \Pi_++\Pi_-=1,
 $$
-the two idempotents being **central** because the algebra is commutative. The isomorphism is the idempotent coordinate map $\breve Q\mapsto(Q_{++},Q_{--})$, which is an algebra isomorphism $(\mathbb{B}_{\mathrm{r}},\cdot)\to\mathbb{C}\times\mathbb{C}$:
+the two idempotents being **central** because the algebra is commutative. The isomorphism is the idempotent coordinate map $\breve Q\mapsto(Q_{+},Q_{-})$, which is an algebra isomorphism $(\mathbb{B}_{\mathrm{r}},\cdot)\to\mathbb{C}\times\mathbb{C}$:
 $$
-\breve Q_{1}\breve Q_{2}=Q_{1++}Q_{2++}\,\Pi_++Q_{1--}Q_{2--}\,\Pi_-.
+\breve Q_{1}\breve Q_{2}=Q_{1+}Q_{2+}\,\Pi_++Q_{1-}Q_{2-}\,\Pi_-.
 $$
-The scalar line $\mathbb{C}\cdot 1$ is the **diagonal** $\{(Q_{++},Q_{++})\}$, not the centre — the ring centre of a commutative algebra is the whole algebra — and the two idempotent lines are the two coordinate factors.
+The scalar line $\mathbb{C}\cdot 1$ is the **diagonal** $\{(Q_{+},Q_{+})\}$, not the centre — the ring centre of a commutative algebra is the whole algebra — and the two idempotent lines are the two coordinate factors.
 
 ### The Ideals and the Peirce Decomposition
 
@@ -118,7 +118,7 @@ Of the eight structures on $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb
 | $L_{\breve Q}:\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ | the left multiplication of the plain product |
 | $\breve Q_{1}(\breve Q_{1}\breve Q_{2})=(\breve Q_{1}\breve Q_{1})\breve Q_{2}$ | left alternativity, the criterion |
 | $L_{\breve Q}L_{\breve Q}=L_{\breve Q \breve Q}$ | the operator identity, equivalent to the criterion |
-| $Q_{++}=Q_++Q_-,\ Q_{--}=Q_+-Q_-$ | the idempotent coordinates, with $\breve Q_{1}\breve Q_{2}=Q_{1++}Q_{2++}\Pi_++Q_{1--}Q_{2--}\Pi_-$ |
+| $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\ Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates, with $\breve Q_{1}\breve Q_{2}=Q_{1+}Q_{2+}\Pi_++Q_{1-}Q_{2-}\Pi_-$ |
 | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | the central algebra splitting |
 | $\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\}$ | the Peirce spaces, with $\sigma,\tau\in\{+,-\}$ and $\mathbb{B}_{+-}=\mathbb{B}_{-+}=0$ |
 | $\mathrm{ann}(\Pi)$ | the annihilator of an idempotent, the other coordinate line |

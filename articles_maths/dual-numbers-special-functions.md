@@ -80,10 +80,10 @@ The dual exponential is injective on the real part and affine in the infinitesim
 
 ### Definition
 
-The **dual logarithm** is the inverse of the dual exponential. It is defined for $Q = q + \varepsilon q'$ with $q > 0$ by
+The **dual logarithm** is the inverse of the dual exponential. A logarithm of $Q$ is written $Q_{\log}$, and for $Q = q + \varepsilon q'$ with $q > 0$ it is
 
 $$
-\log(Q) = \log(q) + \frac{q'}{q} \varepsilon.
+Q_{\log} = \log(q) + \frac{q'}{q} \varepsilon.
 $$
 
 So the dual logarithm is the ordinary real logarithm applied to the real part, plus the infinitesimal correction $q'/q$.

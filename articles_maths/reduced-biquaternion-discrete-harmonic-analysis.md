@@ -4,7 +4,7 @@
 
 This article studies the discrete Fourier transform of a reduced biquaternion-valued signal. The transform is defined by an algebra-valued kernel built from an algebra element whose square is $-1$; because the idempotents commute with every element and the multiplication is commutative, the transform splits into the pair of the ordinary complex discrete transforms of the two idempotent coordinates. The article records the kernel, the transform pair, the factorization, the convolution theorem, the vanishing-norm issue, and the two-dimensional and higher-dimensional transforms. The treatment is purely mathematical.
 
-Throughout the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal of length $N$ is a map $f:\{0,1,\dots,N-1\}\to\mathbb{B}_{\mathrm{r}}$.
+Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal of length $N$ is a map $f:\{0,1,\dots,N-1\}\to\mathbb{B}_{\mathrm{r}}$.
 
 ## The Fourier Kernel
 
@@ -18,9 +18,9 @@ with $\rho$ a root of minus one and the exponential that of *Reduced Biquaternio
 $$
 \pm i,\qquad \pm ij,
 $$
-that is the elements with coordinates $Q_{++},Q_{--}\in\{i,-i\}$; the kernel with the choice $\rho=i$ is the complex kernel $W_{N}(n,m)=e^{-2\pi i nm/N}$ read in the algebra, and with $\rho=ij$ it is the same with $ij$ in place of $i$. In either case $W_{N}(n,m)=w_{1}^{nm}\Pi_++w_{2}^{nm}\Pi_-$ with $w_{1},w_{2}$ the two $N$-th roots of unity determined by the chosen root; for the choice $\rho=i$ the two idempotent coordinates of the kernel are equal, while for $\rho=ij$ they are conjugate.
+that is the elements with coordinates $Q_{+},Q_{-}\in\{i,-i\}$; the kernel with the choice $\rho=i$ is the complex kernel $W_{N}(n,m)=e^{-2\pi i nm/N}$ read in the algebra, and with $\rho=ij$ it is the same with $ij$ in place of $i$. In either case $W_{N}(n,m)=w_{1}^{nm}\Pi_++w_{2}^{nm}\Pi_-$ with $w_{1},w_{2}$ the two $N$-th roots of unity determined by the chosen root; for the choice $\rho=i$ the two idempotent coordinates of the kernel are equal, while for $\rho=ij$ they are conjugate.
 
-*Proof.* An element $\rho=Q_{++}\Pi_++Q_{--}\Pi_-$ has $\rho^{2}=Q_{++}^{2}\Pi_++Q_{--}^{2}\Pi_-$, so $\rho^{2}=-1$ exactly when $Q_{++}^{2}=Q_{--}^{2}=-1$, that is $Q_{++},Q_{--}=\pm i$, four elements; the exponential $\exp(-2\pi\rho nm/N)$ acts coefficientwise, $e^{-2\pi Q_{++} nm/N}\Pi_++e^{-2\pi Q_{--} nm/N}\Pi_-$, which is the displayed pair, and the choice $\rho=i$ has $Q_{++}=Q_{--}=i$ while $\rho=ij$ has $Q_{++}=i$, $Q_{--}=-i$.
+*Proof.* An element $\rho=Q_{+}\Pi_++Q_{-}\Pi_-$ has $\rho^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-$, so $\rho^{2}=-1$ exactly when $Q_{+}^{2}=Q_{-}^{2}=-1$, that is $Q_{+},Q_{-}=\pm i$, four elements; the exponential $\exp(-2\pi\rho nm/N)$ acts coefficientwise, $e^{-2\pi Q_{+} nm/N}\Pi_++e^{-2\pi Q_{-} nm/N}\Pi_-$, which is the displayed pair, and the choice $\rho=i$ has $Q_{+}=Q_{-}=i$ while $\rho=ij$ has $Q_{+}=i$, $Q_{-}=-i$.
 
 ## The Discrete Transform Pair
 
