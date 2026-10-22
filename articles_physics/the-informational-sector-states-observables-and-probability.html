@@ -280,6 +280,43 @@ $$</p>
 <p>The geometry is the Bloch ball of a qubit. The boundary $\lvert\vec r\rvert=1$ is the two-sphere of pure states; the interior is the mixed states; the centre $\vec r=0$ is the maximally mixed state $\tfrac12e_t$. A state is pure exactly when it is idempotent, and the two notions coincide in the sector and nowhere else. The ball is three-dimensional, as the state space of a two-state system must be: the sector has real dimension four and the normalisation $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ is one real equation.</p>
 <p>Every pure state is a zero divisor, because $N(\tilde{Ϛ})=\tfrac14(1-\lvert\vec r\rvert^2)$ vanishes on the sphere. A mixed state is not. The ball is the intersection of the affine hyperplane $\{\operatorname{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm, so its boundary is a slice of the causal cone. This is the structural link between probability and causality: the same quadratic form that gives the interval gives the positivity of the state.</p>
 <p><strong>The boundary.</strong> The ball is the state space of the frame, not a relativistic state space. A boost carries a state off the state slice, so the single-qubit ball is not invariant under the full Lorentz group. Making the state space itself relativistic is open work, not a result of this article.</p>
+<h3 id="the-operator-defines-the-state">The Operator Defines the State</h3>
+<p>A state is not only an element given in advance; any nonzero operator produces one. The map is</p>
+<p>$$
+\tilde{Ϛ}_{\tilde Q}=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\qquad
+\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})>0 ,
+$$</p>
+<p>and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde H$ are the singular values of $\tilde Q$.</p>
+<p>Three properties fix the map. It is <strong>right-invariant</strong>, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for unitary $\tilde W$, so the right unitary is a gauge fibre. It is <strong>left-covariant</strong>, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left unitary is a change of frame. And it is <strong>stratified</strong> by the rank of the operator:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>singular values</th>
+<th>image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unitary up to scale</td>
+<td>equal</td>
+<td>maximally mixed</td>
+</tr>
+<tr>
+<td>invertible, not unitary up to scale</td>
+<td>distinct</td>
+<td>mixed</td>
+</tr>
+<tr>
+<td>rank one, a zero divisor</td>
+<td>one vanishing</td>
+<td>pure</td>
+</tr>
+</tbody>
+</table></div>
+<p>The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.</p>
+<p><strong>The boundary.</strong> The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in <em>The Cartan Pairing, the Amplitude and the Operator-to-State Map</em>.</p>
 <h3 id="the-spectral-decomposition-is-the-readout">The Spectral Decomposition Is the Readout</h3>
 <p>Every Hermitian element is a real combination of two orthogonal idempotents,</p>
 <p>$$
@@ -630,6 +667,7 @@ $$</p>
 <li><a href="the-born-rule-as-a-trace-formula-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a>, for the derivation of the probability formula and its comparison with the postulate.</li>
 <li><a href="the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a>, for the geometry of the state space.</li>
 <li><a href="quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, for the full correspondence with quantum information.</li>
+<li><a href="the-cartan-pairing-amplitude-and-the-operator-to-state-map.html">The Cartan Pairing, the Amplitude and the Operator-to-State Map</a>, for the operator-to-state map and its purity stratigraphy.</li>
 </ul>
       </div>
     </main>

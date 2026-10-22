@@ -194,6 +194,22 @@ $$</p>
 </ul>
 <p>The pure states are therefore exactly the states on the wall of the algebra. This is the matrix form of the statement of <em>The Unit Group, the Cone and the Orders</em>: the cone meets the positive cone in the cone over the pure states, and its trace-one slice is the Bloch sphere. The determinant is a measure of the distance to that wall, vanishing on it and maximal at the centre.</p>
 <p><strong>The boundary.</strong> The identity $\operatorname{Tr}(\tilde{Ϛ}^{2})=1-2\det$ holds in the trace-one normalisation and for a positive element. For a general element of $\mathbb{B}$ the determinant is the complex norm, and it is not a mixedness; the reading requires the state conditions, not the matrix alone. The linear entropy is one monotone among many, and the determinant supplies no entropy argument beyond it.</p>
+<h3 id="the-singular-values-of-the-amplitude">The Singular Values of the Amplitude</h3>
+<p>For a general element the matrix image has a polar decomposition and two singular values. The amplitude is</p>
+<p>$$
+\mathsf{M}_2(\tilde H)=\sqrt{\mathsf{M}_2(\tilde Q)\,\mathsf{M}_2(\tilde Q)^{\dagger}},
+$$</p>
+<p>so $\tilde H$ is Hermitian positive semidefinite and its eigenvalues $\sigma_1\ge\sigma_2\ge0$ are the singular values of $\tilde Q$. On the amplitude the determinant changes character:</p>
+<p>$$
+N(\tilde H)=\det\mathsf{M}_2(\tilde H)=\sigma_1\sigma_2=\lvert\det\mathsf{M}_2(\tilde Q)\rvert=\lvert N(\tilde Q)\rvert .
+$$</p>
+<p><strong>The norm of an amplitude is real and non-negative</strong>, even when the norm of the element is complex. For a Hermitian element the norm is $N(\tilde H)=h_t^{2}-\lvert\vec h\rvert^{2}$, the determinant of a Hermitian matrix; positivity makes it $\sigma_1\sigma_2$. The element and its amplitude have norms of the same modulus and differ in phase.</p>
+<p>The state inherits the singular values and loses the phase. With $\hat H=\tilde H/\sqrt{\sigma_1^{2}+\sigma_2^{2}}$, the state is $\hat H^{2}$, its eigenvalues are $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$, and its determinant is</p>
+<p>$$
+\det\mathsf{M}_2(\tilde{Ϛ}_Q)=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
+$$</p>
+<p>The two ends are the pure state, $\sigma_2=0$, and the maximally mixed state, $\sigma_1=\sigma_2$. The mixedness of the state is therefore the spread of the singular values, read on the same determinant that the first part of this article reads as a volume.</p>
+<p><strong>The boundary.</strong> The singular values are invariants of the matrix and do not depend on the polar frame, but the amplitude is not the element: for a non-normal element the singular values are not the moduli of its eigenvalues, and the eigen-decomposition of $\tilde Q$ does not give them. Only for a normal element do the two coincide.</p>
 <h2 id="the-spectrum-is-the-doubled-rapidity">The Spectrum Is the Doubled Rapidity</h2>
 <h3 id="the-eigenvalues-of-the-element">The Eigenvalues of the Element</h3>
 <p>The element matrix satisfies its characteristic equation</p>

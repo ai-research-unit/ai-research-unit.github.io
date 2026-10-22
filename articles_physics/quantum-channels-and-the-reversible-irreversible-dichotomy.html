@@ -107,6 +107,16 @@ $$</p>
 $$</p>
 <p>and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a <strong>quantum channel</strong>; its dual is $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*} \tilde{H}\tilde{K}_l$, and the normalization is exactly $\Phi^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The <strong>Kraus rank</strong> is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(\Phi) = \sum_{jk} \tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(\Phi) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.</p>
 <p>The companion article already introduced this form for generalized measurements. The point here is that it describes <em>every</em> physical process, not only measurement.</p>
+<h3 id="the-cartan-factor-of-a-kraus-operator">The Cartan Factor of a Kraus Operator</h3>
+<p>The Kraus representation is a sum, but each term has its own generalized polar decomposition. Write</p>
+<p>$$
+\tilde K_l=\tilde H_{\mathrm{pos},l}\,\tilde U_{\mathrm{p},l},
+\qquad
+\tilde H_{\mathrm{pos},l}=\sqrt{\tilde K_l\tilde K_l^{*}},
+$$</p>
+<p>with $\tilde H_{\mathrm{pos},l}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p},l}$ a partial isometry. The companion article <em>The Polar Decomposition of a Kraus Operator</em> reads the factorization physically: the positive factor is the strength of the outcome, the partial isometry its backaction, and the effect is their conjugated square.</p>
+<p>For a channel with a single Kraus operator, trace preservation is $\tilde K^{*}\tilde K=e_t$. In finite dimension this makes $\tilde K$ invertible, so $\tilde K\tilde K^{*}=e_t$, hence $\tilde H_{\mathrm{pos}}=e_t$ and $\tilde U_{\mathrm{p}}=\tilde K$ is unitary. The reversible case is therefore exactly the case of a trivial positive factor, and the one-term channel is conjugation by a unitary. This is the same statement as §<em>The Reversible Case</em>, read on the operator rather than on the map.</p>
+<p>A single term of a multi-term channel need not be trace preserving. Its $\tilde H_{\mathrm{pos}}$ can be non-trivial, and its $\tilde U_{\mathrm{p}}$ can be a proper partial isometry. The channel's reversibility is not the value of one $\tilde H_{\mathrm{pos}}$; it is the minimal Kraus rank of the sum. The dephasing channel is the witness: one of its Kraus operators is a scalar multiple of the identity, with scalar strength and $\tilde U_{\mathrm{p}}=e_t$, and the channel is irreversible for $p>0$ because there is a second term. The polar factor classifies a term; the Kraus rank classifies the map.</p>
 <h2 id="the-reversible-case-unitary-rotor-conjugation">The Reversible Case: Unitary Rotor Conjugation</h2>
 <h3 id="unitary-elements-and-their-conjugation-action">Unitary Elements and Their Conjugation Action</h3>
 <p>The simplest channel is conjugation by a single <strong>unitary biquaternion</strong>:</p>
@@ -125,7 +135,7 @@ $$</p>
 \qquad \vec u_h = \frac{\vec h}{|\vec h|},
 $$</p>
 <p>the trigonometric form following from $\vec u_h^2 = -e_t$. The elements satisfy $\tilde{U}(t')\tilde{U}(t')^{*} = e_t$ and form a one-parameter group, $\tilde{U}(t'+s) = \tilde{U}(t')\tilde{U}(s)$, because they are functions of the single element $\tilde{H}$ and therefore commute. The state evolves by rotor conjugation $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$, or in differential form $i\hbar\,\tfrac{d}{dt'}\tilde{Ϛ}(t') = [\tilde{H}, \tilde{Ϛ}(t')]$, the von Neumann equation.</p>
-<h3 id="the-generator-lies-in-math117">The Generator Lies in $\mathbb{M}_-$</h3>
+<h3 id="the-generator-lies-in-math130">The Generator Lies in $\mathbb{M}_-$</h3>
 <p>The generator of the group is $-\tfrac{i\tilde{H}}{\hbar} \in \mathbb{M}_-$, since $\tilde{H} \in \mathbb{M}_+$ implies $(-i\tilde{H})^{*} = i\tilde{H}^{*} = i\tilde{H} = -(-i\tilde{H})$. Because $i\mathbb{M}_+ = \mathbb{M}_-$, <em>every</em> element of $\mathbb{M}_-$ is of this form, and the exponential map sends $\mathbb{M}_-$ onto the unitary group. This is the cleanest expression of the complementarity that organizes the subject: <strong>states and observables live in $\mathbb{M}_+$, while the generators of their reversible evolution live in $\mathbb{M}_-$.</strong> The subspace $\mathbb{M}_-$ is the Lie algebra of the unitary group under the commutator, and reversible dynamics is its action on $\mathbb{M}_+$ by inner derivations.</p>
 <p>The fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ mark two extremes. The trace part $h_t e_t$ lies in $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+ = \mathbb{R}e_t$, the centre; it generates the central phase $\exp(-ih_tt'/\hbar)$, which commutes with everything and cancels in the conjugation, affecting only the unobservable global phase. The traceless part $i\vec h$ has $h_t = 0$, and then</p>
 <p>$$
@@ -169,7 +179,7 @@ $$</p>
 - \tfrac{1}{2}\left\{\tilde K_k^{*}\tilde K_k, \tilde{Ϛ}\right\}\right),
 $$</p>
 <p>with $\tilde{H} \in \mathbb{M}_+$ Hermitian, the jump operators $\tilde K_k \in \mathbb{B}$ arbitrary, and $\{A, B\} = AB + BA$. The two terms separate exactly along the reversible/irreversible split. The <strong>Hamiltonian term</strong> is generated by $-i\tilde{H}/\hbar \in \mathbb{M}_-$ and alone would give a reversible group. The <strong>dissipator</strong> involves arbitrary <strong>jump operators</strong> $\tilde K_k \in \mathbb{B}$; each contributes a completely positive term, and the anticommutator keeps the trace equal to one, since $\mathrm{Tr}(\tilde K_k\tilde{Ϛ}\tilde K_k^{*} - \tfrac{1}{2}\{\tilde K_k^{*}\tilde K_k,\tilde{Ϛ}\}) = 0$ by cyclicity. The GKSL theorem states that every semigroup of completely positive, trace-preserving maps with a bounded generator has this form. The reversible part of the generator is an inner derivation by an element of $\mathbb{M}_-$ (equivalently, by a Hamiltonian in $\mathbb{M}_+$); the irreversible part is a sum of completely positive dissipators that are not derivations at all.</p>
-<h2 id="dephasing-in-math188">Dephasing in $\mathbb{M}_+$</h2>
+<h2 id="dephasing-in-math201">Dephasing in $\mathbb{M}_+$</h2>
 <h3 id="definition-and-kraus-form">Definition and Kraus Form</h3>
 <p>Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_2(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the <strong>dephasing channel</strong> along $\vec u$ is</p>
 <p>$$
@@ -307,6 +317,10 @@ $$</p>
 <td>Trace-preservation condition</td>
 </tr>
 <tr>
+<td>$\tilde K_l=\tilde H_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}$, $\tilde H_{\mathrm{pos},l}=\sqrt{\tilde K_l\tilde K_l^{*}}$</td>
+<td>Generalized Cartan factorization of a Kraus operator; $\tilde H_{\mathrm{pos},l}\ge0$, $\tilde U_{\mathrm{p},l}$ a partial isometry</td>
+</tr>
+<tr>
 <td>$\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$</td>
 <td>Dual (Heisenberg-picture) map</td>
 </tr>
@@ -347,6 +361,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the logarithm, its domain and the kernel of the exponential.</li>
+<li><a href="the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a>, for the strength and backaction of a single outcome and the null-cone boundary.</li>
 <li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for quantum operations, the Kraus representation, and the depolarizing and dephasing channels.</li>
 <li>K. Kraus, <em>States, Effects, and Operations</em> (Springer, 1983), for the original formulation of completely positive maps in quantum theory.</li>
 <li>M.-D. Choi, "Completely positive linear maps on complex matrices," <em>Linear Algebra and its Applications</em> <strong>10</strong> (1975) 285–290, for the complete-positivity criterion and the Choi matrix.</li>

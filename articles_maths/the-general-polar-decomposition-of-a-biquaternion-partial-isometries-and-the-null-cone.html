@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-generalized-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone"><strong>The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every biquaternion of non-vanishing norm has the Cartan pairing</p>
+<p>$$
+\tilde Q=\tilde H\tilde U,\qquad \tilde H=\sqrt{\tilde Q\tilde Q^{*}}\ \text{Hermitian positive},\qquad \tilde U=\tilde H^{-1}\tilde Q\ \text{unitary},
+$$</p>
+<p>the two-factor form of the polar word. The pairing stops at the zero-divisor cone: on the cone the norm vanishes, the modulus is zero, and no four-factor word exists. The two-factor form itself need not stop. The unitary factor can be replaced by a <strong>partial isometry</strong> and the positive definite factor by a <strong>positive semidefinite</strong> one, and the equation $\tilde Q=\tilde H\tilde U$ then has a solution for every element, including the zero divisors and the origin.</p>
+<p><strong>The thesis.</strong> Every biquaternion has exactly one generalized Cartan pairing once the two projections of the partial isometry and the range of the positive factor are fixed: the positive factor is the Hermitian square root $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$, the second factor is $\tilde U=\tilde H^{+}\tilde Q$, and the initial and final projections of $\tilde U$ are those of $\tilde Q$. On the complement of the cone the pair is the Cartan pairing. On the cone it degenerates in a precise way: a nonzero null element is a positive scalar times a partial isometry, $\tilde Q=\sigma\tilde U$, the positive factor is the scaled final projection $\tilde H=\sigma\tilde U\tilde U^{*}$, and both projections are rank-one Hermitian idempotents, the pure states of the algebra.</p>
+<p><strong>What the extension buys.</strong> The cone is the singular locus of the algebra: an element is non-invertible exactly when its norm vanishes, so every nonzero singular element is a zero divisor. The generalized pairing is therefore not a remedy for a rare accident; it is the polar decomposition of the whole algebra, and the classical pairing is its restriction to the group of units. The price is a loss of continuity: the positive factor extends continuously to the cone, the partial isometry does not, and the rank drop is exactly the discontinuity.</p>
+<p><strong>What this article is not.</strong> It is not the four-factor word. The scale, the phase, the boost and the rotor are not defined on the cone, and the generalized factors are not a regrouping of factors that do not exist. It is not a new decomposition off the cone: there it coincides with the Cartan pairing. It is not the operator polar decomposition of <a href="the-polar-decomposition-of-an-operator-of-the-form.html">The Polar Decomposition of an Operator of the Form</a>, which is a statement about a Tomita operator on a completion. It is the matrix polar decomposition read in the algebra, with the two projection conditions that make the singular case canonical.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, central $i$ with $i^{2}=-1$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients. The conjugations are $\tilde Q^{\natural}=Q_te_t-\vec Q$, $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$ and $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, the Hermitian norm is $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$, and the cone is $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$. The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, the conjugate transpose written ${}^{\dagger}$ in the matrix section; the range $\operatorname{ran}\tilde Q$, the kernel $\ker\tilde Q$ and the orthogonal projection $P_L$ are those of $\mathsf M_2(\tilde Q)$. The symbols $\Rho$, $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ and the four-factor word are those of <em>Modulus–Unit Polar Decomposition of Biquaternions</em>. No physical claim is made; the physical reading is confined to §<em>Physical Interpretation</em>.</p>
+<h2 id="the-results-used">The Results Used</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>result</th>
+<th>established in</th>
+<th>used here for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the matrix model and the transport of ${}^{*}$ to ${}^{\dagger}$</td>
+<td><em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, §<em>The Representation</em></td>
+<td>the reduction of the theorem to matrices</td>
+</tr>
+<tr>
+<td>the Cartan pairing on $\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td><em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em>, §<em>The Statement</em></td>
+<td>the restriction that the generalized pair extends</td>
+</tr>
+<tr>
+<td>the Hermitian positive cone and the positive square root</td>
+<td><em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>, §<em>The Polar Decomposition</em></td>
+<td>$\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ and its positivity</td>
+</tr>
+<tr>
+<td>the zero-divisor cone</td>
+<td><em>Zero Divisors of the Biquaternion Algebra</em>, §<em>The Zero Divisor Set</em></td>
+<td>the identification of the singular locus with the cone</td>
+</tr>
+<tr>
+<td>the rank-one elements and the matrix rank</td>
+<td><em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, §<em>The Rank-One Elements and the Outer Product</em></td>
+<td>rank one on the cone</td>
+</tr>
+<tr>
+<td>the rank-one Hermitian idempotents</td>
+<td><em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Classification of the Idempotents</em></td>
+<td>the Bloch form $\tfrac12(e_t+i\vec u)$ of the two projections</td>
+</tr>
+<tr>
+<td>the unitary group</td>
+<td><em>The Unitary Group of the Biquaternion Algebra</em>, §<em>The Structure of the Unitary Group</em></td>
+<td>the unitary factor off the cone</td>
+</tr>
+</tbody>
+</table></div>
+<p>The article proves no new matrix theorem. It states the left form of the matrix polar decomposition, reduces the biquaternion statement to it, and computes the consequences of the rank drop. The only algebraic inputs are the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the positivity of $\tilde Q\tilde Q^{*}$, and the classification of the rank-one idempotents.</p>
+<h2 id="the-matrix-theorem">The Matrix Theorem</h2>
+<h3 id="the-right-form-and-the-left-form">The Right Form and the Left Form</h3>
+<p>For a matrix $A\in M_2(\mathbb{C})$, write $A^{\dagger}$ for the conjugate transpose. The <strong>right polar decomposition</strong> is $A=V\lvert A\rvert$ with $\lvert A\rvert=\sqrt{A^{\dagger}A}$ positive semidefinite and $V$ a partial isometry whose kernel is $\ker A$. It is unique. The <strong>left form</strong>, which is the order of the corpus, is the adjoint statement:</p>
+<p>$$
+A=\lvert A^{\dagger}\rvert\,U,\qquad \lvert A^{\dagger}\rvert=\sqrt{AA^{\dagger}},\qquad U=\lvert A^{\dagger}\rvert^{+}A,
+$$</p>
+<p>with ${}^{+}$ the Moore–Penrose inverse. The matrix $U$ is the adjoint of the right factor of $A^{\dagger}$, hence a partial isometry, and its projections are the two projections of $A$:</p>
+<p>$$
+U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}},\qquad UU^{\dagger}=P_{\operatorname{ran}A}.
+$$</p>
+<p>The condition is stated on the two projections, not on the kernel alone. The kernel condition $\ker U=\ker A$ fixes the initial projection; the range condition $\operatorname{ran}U=\operatorname{ran}A$ fixes the final one. Both are needed for uniqueness, as the examples at the end of this section show.</p>
+<h3 id="the-singular-value-form">The Singular Value Form</h3>
+<p>Let $A=\sum_{i=1}^{r}\sigma_i u_i v_i^{\dagger}$ be a singular value decomposition, with $\sigma_i>0$, $r=\operatorname{rank}A$, and orthonormal families $(u_i)$ and $(v_i)$. Then</p>
+<p>$$
+H=\sqrt{AA^{\dagger}}=\sum_{i=1}^{r}\sigma_i\,u_i u_i^{\dagger},\qquad
+U=H^{+}A=\sum_{i=1}^{r}u_i v_i^{\dagger},\qquad
+H^{+}=\sum_{i=1}^{r}\sigma_i^{-1}u_i u_i^{\dagger}.
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>formula</th>
+<th>property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$</td>
+<td>$\sqrt{AA^{\dagger}}=\sum_i\sigma_i u_i u_i^{\dagger}$</td>
+<td>Hermitian, positive semidefinite, $\operatorname{ran}H=\operatorname{ran}A$</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>$H^{+}A=\sum_i u_i v_i^{\dagger}$</td>
+<td>partial isometry, $U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}}$, $UU^{\dagger}=P_{\operatorname{ran}A}$</td>
+</tr>
+<tr>
+<td>$H^{+}$</td>
+<td>$\sum_i\sigma_i^{-1}u_i u_i^{\dagger}$</td>
+<td>Moore–Penrose inverse, the inverse of $H$ on its range</td>
+</tr>
+</tbody>
+</table></div>
+<p>The formulas are the whole theorem. The positive factor is the square root on the range of $A$; the partial isometry is the isometry that carries the singular directions $v_i$ to $u_i$; the pseudoinverse is the inverse of $H$ where $H$ is invertible and zero where it is not.</p>
+<h3 id="uniqueness">Uniqueness</h3>
+<p><strong>Theorem (matrix, left form).</strong> Let $A\in M_2(\mathbb{C})$. There is exactly one pair $(H,U)$ such that $H$ is Hermitian positive semidefinite, $U$ is a partial isometry, $A=HU$, $U^{\dagger}U=P_{\operatorname{ran}A^{\dagger}}$, $UU^{\dagger}=P_{\operatorname{ran}A}$ and $\operatorname{ran}H=\operatorname{ran}A$. It is $H=\sqrt{AA^{\dagger}}$ and $U=H^{+}A$.</p>
+<p><strong>Proof.</strong> The pair displayed above has the properties. For uniqueness, $A=HU$ gives $AA^{\dagger}=HUU^{\dagger}H=HP_{\operatorname{ran}A}H$. Since $\operatorname{ran}H=\operatorname{ran}A$ and $H$ is Hermitian, $P_{\operatorname{ran}A}H=H$, so $AA^{\dagger}=H^{2}$ and $H$ is the positive square root. Then $H^{+}H=P_{\operatorname{ran}H}=P_{\operatorname{ran}A}=UU^{\dagger}$, so $H^{+}A=H^{+}HU=UU^{\dagger}U=U$; the pair is fixed.</p>
+<p>Three conditions do the work. The range condition on $H$ fixes the positive factor: for $A=\operatorname{diag}(1,0)$, the pair $(I_2,\operatorname{diag}(1,0))$ satisfies $A=HU$ with $H$ positive definite, $U$ a partial isometry and both projections of $U$ equal to $P_{\operatorname{ran}A}$, but $H\neq\sqrt{AA^{\dagger}}$. The range projection of $U$ fixes the second factor: for $A=\Pi=\operatorname{diag}(1,0)$, the pair $(\Pi,I_2)$ satisfies $A=HU$ with $H$ positive semidefinite and $U$ unitary, but $UU^{\dagger}=I_2\neq P_{\operatorname{ran}A}$, and the canonical pair is $(\Pi,\Pi)$. The kernel condition alone also excludes the second pair, since $\ker I_2\neq\ker\Pi$; both projections are stated because they are the initial and final spaces of $U$. Fixing only the two kernels is weaker still: for $A=\operatorname{diag}(1,0)$, the pairs $(\operatorname{diag}(1,0),\operatorname{diag}(1,0))$ and $(\operatorname{diag}(\sqrt2,0),U)$, with $Ue_1=(e_1+e_2)/\sqrt2$ and $Ue_2=0$, both have $H$ positive semidefinite, $\operatorname{ran}H=\operatorname{ran}A$, $A=HU$, $U$ a partial isometry and $\ker U=\ker H=\ker A$; only the first has $UU^{\dagger}=P_{\operatorname{ran}A}$.</p>
+<h3 id="the-zero-matrix">The Zero Matrix</h3>
+<p>For $A=0$ the sums are empty, $H=0$, $U=0$, and the two projections are $0$. The pair is unique under the theorem. The zero element is therefore included, and it is the only element whose two projections have rank zero.</p>
+<h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
+<h3 id="the-two-factors">The Two Factors</h3>
+<p>Transport the matrix theorem through $\mathsf M_2$. The Hermitian conjugation ${}^{*}$ becomes ${}^{\dagger}$, the positive square root becomes the Hermitian positive square root in the algebra, and the Moore–Penrose inverse is computed in the matrix model and transported back.</p>
+<p><strong>Theorem (generalized Cartan pairing).</strong> Every $\tilde Q\in\mathbb{B}$ has exactly one pair $(\tilde H,\tilde U)$ with</p>
+<ol>
+<li>$\tilde H$ Hermitian positive semidefinite, $\tilde H=\tilde H^{*}$ and $\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$;</li>
+<li>$\tilde U$ a partial isometry, $\tilde U\tilde U^{*}\tilde U=\tilde U$, with $\tilde U^{*}\tilde U$ the projection onto $\operatorname{ran}\tilde Q^{*}$ and $\tilde U\tilde U^{*}$ the projection onto $\operatorname{ran}\tilde Q$;</li>
+<li>$\tilde Q=\tilde H\tilde U$.</li>
+</ol>
+<p>It is</p>
+<p>$$
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}},\qquad \tilde U=\tilde H^{+}\tilde Q .
+$$</p>
+<p>On $\langle\tilde Q\rangle_{\natural}\neq0$, $\tilde H$ is positive definite, $\tilde U$ is unitary, and the pair is the Cartan pairing.</p>
+<p>The theorem is the matrix theorem with the two projections written in the algebra. The positive factor is the unique Hermitian positive semidefinite square root of $\tilde Q\tilde Q^{*}$; the second factor is the pseudoinverse applied to the element. The equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$ still holds, now with a semidefinite $\tilde H$, and it is the defining equation of the positive factor.</p>
+<h3 id="the-invariants">The Invariants</h3>
+<p>The rank and the two norms are read on the positive factor. Let $\sigma_1\ge\sigma_2$ be the singular values of $\mathsf M_2(\tilde Q)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>on $\tilde Q$</th>
+<th>on $\tilde H$</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rank</td>
+<td>$r$</td>
+<td>$r$</td>
+<td>$\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$</td>
+</tr>
+<tr>
+<td>Hermitian norm</td>
+<td>$\langle\tilde Q\rangle_{*}=\tfrac12\sum_i\sigma_i^{2}$</td>
+<td>$\langle\tilde H\rangle_{*}=\tfrac12\sum_i\sigma_i^{2}$</td>
+<td>$\tilde H$ and $\tilde Q$ have the same singular values</td>
+</tr>
+<tr>
+<td>quaternionic norm</td>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>$\langle\tilde H\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert$</td>
+<td>$\det\tilde H=\lvert\det\tilde Q\rvert$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Hermitian norm is the squared Frobenius norm, halved: $\langle\tilde Q\rangle_{*}=\tfrac12\operatorname{tr}(\mathsf M_2(\tilde Q)^{\dagger}\mathsf M_2(\tilde Q))=\tfrac12\sum_i\sigma_i^{2}$. The quaternionic norm of $\tilde H$ is real and non-negative because $\tilde H$ is Hermitian positive semidefinite, and its modulus is the modulus of the norm of $\tilde Q$. The two statements are different: the Hermitian norm is the half-sum of the squared singular values, the modulus of the quaternionic norm is their product. The generalized $\tilde H$ carries the first in full and the modulus of the second.</p>
+<p><strong>The positive factor is not the quaternionic modulus.</strong> The quaternionic modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ is a central complex scalar; $\tilde H$ is a non-central Hermitian element. For a nonzero null element the modulus is zero and $\tilde H$ is a scaled idempotent, neither zero nor central. The notation $\tilde H$ is reserved for the factor, and $\Rho$ for the modulus.</p>
+<h3 id="the-three-strata">The Three Strata</h3>
+<p>Write $\tilde\Pi_{\mathrm i}=\tilde U^{*}\tilde U$ and $\tilde\Pi_{\mathrm f}=\tilde U\tilde U^{*}$ for the initial and final projections. They are $e_t$ when $\tilde U$ is unitary, rank-one idempotents when $\tilde U$ has rank one, and $0$ when $\tilde U=0$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stratum</th>
+<th>quaternionic norm</th>
+<th>rank</th>
+<th>$\tilde H$</th>
+<th>$\tilde U$</th>
+<th>$\tilde U^{*}\tilde U$</th>
+<th>$\tilde U\tilde U^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>invertible</td>
+<td>$\neq0$</td>
+<td>$2$</td>
+<td>positive definite</td>
+<td>unitary</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+</tr>
+<tr>
+<td>nonzero null</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$\sigma\tilde\Pi_{\mathrm f}$</td>
+<td>$\tilde Q/\sigma$</td>
+<td>$\tilde\Pi_{\mathrm i}$</td>
+<td>$\tilde\Pi_{\mathrm f}$</td>
+</tr>
+<tr>
+<td>zero</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the whole content of the next two sections. The first row is the Cartan pairing. The second is the cone, where the positive factor becomes a scaled projection and the partial isometry becomes the normalized element. The third is the origin.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<h3 id="the-rank-one-case">The Rank-One Case</h3>
+<p>An element is non-invertible exactly when $\langle\tilde Q\rangle_{\natural}=0$, because the quaternionic norm is the determinant of the $2\times2$ image. A nonzero element of the cone therefore has rank one: its matrix has one non-zero singular value and one zero singular value. Write $\sigma=\sigma_1>0$. The singular value form gives</p>
+<p>$$
+\tilde Q=\sigma\,\tilde U,\qquad \tilde H=\sigma\,\tilde U\tilde U^{*},\qquad \tilde U=\frac{\tilde Q}{\sigma},
+$$</p>
+<p>with $\sigma^{2}=2\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert_{\mathrm F}^{2}$. The element is a positive scalar times a partial isometry, and the positive factor is the scalar times the final projection of that partial isometry. The two equations are the rank-one reading of $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ and $\tilde U=\tilde H^{+}\tilde Q$.</p>
+<p><strong>The projections.</strong> For a rank-one partial isometry, the two projections $\tilde\Pi_{\mathrm i}$ and $\tilde\Pi_{\mathrm f}$ are rank-one Hermitian idempotents, and</p>
+<p>$$
+\tilde U=\tilde\Pi_{\mathrm f}\,\tilde U\,\tilde\Pi_{\mathrm i}.
+$$</p>
+<p>Every non-trivial Hermitian idempotent of the algebra is of the Bloch form</p>
+<p>$$
+\tilde\Pi_{\vec u}=\tfrac12\left(e_t+i\vec u\right),\qquad \vec u\ \text{a real unit vector},
+$$</p>
+<p>and $\tilde\Pi_{\vec u}^{2}=\tilde\Pi_{\vec u}$, $\tilde\Pi_{\vec u}^{*}=\tilde\Pi_{\vec u}$, $\langle\tilde\Pi_{\vec u}\rangle_{\natural}=0$, $\langle\tilde\Pi_{\vec u}\rangle_{*}=\tfrac12$. The two projections of $\tilde U$ are therefore two points of the Bloch sphere, and the partial isometry is the isometry that carries the initial line to the final one.</p>
+<p><strong>The positive factor on the cone.</strong> Since $\tilde H=\sigma\tilde\Pi_{\mathrm f}$, the positive factor is a scaled pure state. It is itself on the cone, $\langle\tilde H\rangle_{\natural}=\sigma^{2}\langle\tilde\Pi_{\mathrm f}\rangle_{\natural}=0$, and it is not invertible. Its Hermitian norm is $\langle\tilde H\rangle_{*}=\sigma^{2}/2=\langle\tilde Q\rangle_{*}$, as the invariant table requires.</p>
+<h3 id="the-cone-as-the-singular-locus">The Cone as the Singular Locus</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>rank</th>
+<th>singular?</th>
+<th>on the cone?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>invertible element</td>
+<td>$2$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>nonzero null element</td>
+<td>$1$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>zero element</td>
+<td>$0$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>There is no singular element off the cone. This is the structural reason the generalized pairing is a cone extension and not a separate theory: the matrix polar decomposition degenerates only at rank one or rank zero, and in this algebra those are exactly the singular elements, the nonzero ones being the zero divisors. The cone has real codimension two, and the generalized pair is defined on all of it, including the origin.</p>
+<h3 id="the-element-as-a-normalized-partial-isometry">The Element as a Normalized Partial Isometry</h3>
+<p>The rank-one formulas say that the punctured cone is the set of positive multiples of rank-one partial isometries. Two elements on the same ray have the same $\tilde U$ and rescaled $\tilde H$; the ray is the orbit of the partial isometry under the positive scalars. The normalized element $\tilde Q/\lVert\tilde Q\rVert_{\mathrm F}$ is a partial isometry for every nonzero null element, and the normalization is the generalized polar factor.</p>
+<p>This is the sharpest difference from the invertible case. Off the cone the polar factor is unitary and carries the whole phase; on the cone it has rank one, and the phase has collapsed to an isometry between two lines.</p>
+<h2 id="relation-to-the-cartan-pairing">Relation to the Cartan Pairing</h2>
+<h3 id="the-restriction">The Restriction</h3>
+<p>On the complement of the cone the generalized pair is the Cartan pair. The positive factor is positive definite, the partial isometry is unitary, and the two projections are both $e_t$. The generalized theorem therefore contains the classical one, and the classical one is the restriction to the group of units.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>Cartan pairing</th>
+<th>generalized pairing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>domain</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td>all $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>first factor</td>
+<td>$\tilde H$ positive definite</td>
+<td>$\tilde H$ positive semidefinite</td>
+</tr>
+<tr>
+<td>second factor</td>
+<td>$\tilde U$ unitary</td>
+<td>$\tilde U$ partial isometry</td>
+</tr>
+<tr>
+<td>equation</td>
+<td>$\tilde Q=\tilde H\tilde U$</td>
+<td>$\tilde Q=\tilde H\tilde U$</td>
+</tr>
+<tr>
+<td>projections</td>
+<td>$\tilde U^{*}\tilde U=\tilde U\tilde U^{*}=e_t$</td>
+<td>the projections of $\tilde Q$</td>
+</tr>
+<tr>
+<td>uniqueness</td>
+<td>unique on the domain</td>
+<td>unique with the projections and the range of $\tilde H$</td>
+</tr>
+<tr>
+<td>continuity</td>
+<td>continuous on the domain</td>
+<td>$\tilde H$ continuous, $\tilde U$ not</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first factor is continuous across the cone; the second is not. The product $\tilde H\tilde U$ is continuous because it is $\tilde Q$. The discontinuity is a rank drop of $\tilde U$, not a failure of the product.</p>
+<h3 id="the-discontinuity-at-the-cone">The Discontinuity at the Cone</h3>
+<p>Take the family</p>
+<p>$$
+\tilde Q_{\epsilon}=\frac{1+\epsilon}{2}\,e_t+i\,\frac{1-\epsilon}{2}\,\vec e_z,\qquad \epsilon>0 .
+$$</p>
+<p>Its matrix is $\operatorname{diag}(1,\epsilon)$, positive definite, so $\tilde H_{\epsilon}=\tilde Q_{\epsilon}$ and $\tilde U_{\epsilon}=e_t$. At $\epsilon=0$ the element is</p>
+<p>$$
+\tilde\Pi_{\vec e_z}=\tfrac12\left(e_t+i\vec e_z\right),
+$$</p>
+<p>a Hermitian idempotent on the cone, and the generalized pair is $\tilde H=\tilde U=\tilde\Pi_{\vec e_z}$. The positive factor has the continuous limit $\tilde\Pi_{\vec e_z}$, while the partial isometry has the limit $e_t$ from the family and the value $\tilde\Pi_{\vec e_z}$ at the cone. The factor jumps.</p>
+<p>The pair $(\tilde\Pi_{\vec e_z},e_t)$ still multiplies to the element: $\tilde\Pi_{\vec e_z}e_t=\tilde\Pi_{\vec e_z}$. It is excluded by the two projection conditions, since $e_t e_t^{*}=e_t$ is the projection onto the whole space and not onto the line of $\tilde\Pi_{\vec e_z}$, and $\ker e_t$ is not $\ker\tilde\Pi_{\vec e_z}$. The example shows why the theorem fixes the two projections: the pair fails both, and the canonical pair is the one whose final projection is the line of the element.</p>
+<p><strong>The reading.</strong> The positive factor is the part of the polar data that survives the cone; the partial isometry is the part that records the collapse of the rank. A continuous unitary factor cannot reach a rank-one element and remain unitary; the canonical partial isometry is the unique algebraic limit that keeps the two lines.</p>
+<h3 id="what-the-extension-adds">What the Extension Adds</h3>
+<p>The generalized pairing gives the cone what the four-factor word cannot: a two-factor decomposition. The first factor is a scaled pure state, the second an isometry between two pure states. The four factors of the word are gone; the remaining scalar is the Frobenius length, and the phase is the partial isometry. The extension is therefore a degeneration of the word, not a regrouping of it.</p>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<p>Off the cone the Cartan pairing is read as a positive scale and a unitary phase. On the cone the same two slots carry a state and a transition between states. The reading is not an extra postulate; it is the algebraic content of the two factors, and the physics articles own the identifications.</p>
+<ul>
+<li>$\tilde H=\sigma\tilde\Pi_{\mathrm f}$: the positive factor is a pure state of weight $\sigma$, not a scalar. The cone is the massless boundary, and the positive factor has become the state on it.</li>
+<li>$\tilde U=\tilde Q/\sigma$: the second factor is the isometry from the initial pure state $\tilde\Pi_{\mathrm i}$ to the final pure state $\tilde\Pi_{\mathrm f}$. The unitary phase of the invertible case has collapsed to a transition.</li>
+<li>The discontinuity: a sequence of unitary phases has no unitary limit at the cone. The canonical limit keeps the two lines, not the whole space. The reversible factor loses rank at the boundary, and the lost rank is the lost reversible part.</li>
+</ul>
+<p><em>The Zero-Divisor Cone and the Massless Spectrum</em> and <em>Roots, Idempotents and Observables</em> develop the physical identifications; this article supplies the factorisation and makes no further claim. The one structural statement that is physics-facing is the rank drop.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="the-hermitian-idempotent">The Hermitian Idempotent</h3>
+<p>Take $\tilde\Pi_{\vec e_z}=\tfrac12(e_t+i\vec e_z)$. Its matrix is $\operatorname{diag}(1,0)$, so it is Hermitian, idempotent and rank one. Then</p>
+<p>$$
+\langle\tilde\Pi_{\vec e_z}\rangle_{\natural}=0,\qquad \langle\tilde\Pi_{\vec e_z}\rangle_{*}=\tfrac12,\qquad \tilde H=\tilde U=\tilde\Pi_{\vec e_z}.
+$$</p>
+<p>The equation $\tilde H=\sqrt{\tilde\Pi\tilde\Pi^{*}}$ reads $\tilde\Pi=\sqrt{\tilde\Pi^{2}}=\tilde\Pi$, and $\tilde U=\tilde H^{+}\tilde\Pi=\tilde\Pi^{+}\tilde\Pi=\tilde\Pi$. The element is its own generalized polar factor.</p>
+<h3 id="the-scaled-idempotent">The Scaled Idempotent</h3>
+<p>Take $\tilde Q=e_t+i\vec e_x=2\tilde\Pi_{\vec e_x}$ with $\tilde\Pi_{\vec e_x}=\tfrac12(e_t+i\vec e_x)$. Then</p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}=0,\qquad \langle\tilde Q\rangle_{*}=2,\qquad \sigma=2,\qquad \tilde H=\tilde Q=2\tilde\Pi_{\vec e_x},\qquad \tilde U=\tilde\Pi_{\vec e_x}.
+$$</p>
+<p>The positive factor is the scaled idempotent and the partial isometry is the idempotent itself. The two projections are both $\tilde\Pi_{\vec e_x}$. The element is $2\tilde U$, in agreement with $\tilde Q=\sigma\tilde U$.</p>
+<h3 id="a-non-hermitian-null-element">A Non-Hermitian Null Element</h3>
+<p>Take $\tilde Q=i\vec e_x-\vec e_y$. It has $\langle\tilde Q\rangle_{\natural}=i^{2}+(-1)^{2}=0$ and $\langle\tilde Q\rangle_{*}=2$, so $\sigma=2$. The matrix is</p>
+<p>$$
+\mathsf M_2(\tilde Q)=\begin{pmatrix}0&2\\0&0\end{pmatrix},
+$$</p>
+<p>of rank one. Then</p>
+<p>$$
+\tilde H=e_t+i\vec e_z=2\tilde\Pi_{\vec e_z},\qquad
+\tilde U=\tfrac{i}{2}\vec e_x-\tfrac12\vec e_y=\tfrac12\tilde Q,
+$$</p>
+<p>and the two projections are</p>
+<p>$$
+\tilde U^{*}\tilde U=\tfrac12\left(e_t-i\vec e_z\right)=\tilde\Pi_{-\vec e_z},\qquad
+\tilde U\tilde U^{*}=\tfrac12\left(e_t+i\vec e_z\right)=\tilde\Pi_{\vec e_z}.
+$$</p>
+<p>The partial isometry carries the initial pure state $\tilde\Pi_{-\vec e_z}$ to the final pure state $\tilde\Pi_{\vec e_z}$, and $\tilde Q=2\tilde U$. The example is non-Hermitian: $\tilde U$ is not a projection, only its two projections are. It shows that the rank-one case is not the idempotent case, and that the two Bloch points need not coincide.</p>
+<h3 id="the-generic-element">The Generic Element</h3>
+<p>Take $\tilde Q=(1+i)e_t+\vec e_x+2\vec e_y$, the worked example of <em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em>. Then $\langle\tilde Q\rangle_{\natural}=5+2i$, $\langle\tilde Q\rangle_{*}=7$, and the generalized pair is the Cartan pair,</p>
+<p>$$
+\tilde H=2.488489985\,e_t-0.401850120\,i\,\vec e_x-0.803700241\,i\,\vec e_y,
+$$</p>
+<p>positive definite with $\langle\tilde H\rangle_{\natural}=5.385164807=\lvert5+2i\rvert$, and</p>
+<p>$$
+\tilde U=(0.462100989+0.088992519i)e_t+(0.387479295+0.074621694i)\vec e_x+(0.774958590+0.149243388i)\vec e_y,
+$$</p>
+<p>unitary. The example is the control: off the cone the generalized pair is the Cartan pair, and the invariants of the table hold with $\sigma_1\sigma_2=5.385164807$ and $\sigma_1^{2}+\sigma_2^{2}=14$.</p>
+<h2 id="what-this-does-not-claim">What This Does Not Claim</h2>
+<ul>
+<li>It does not extend the four-factor word. There is no scale, phase, boost or rotor on the cone, and the generalized factors are not a regrouping of them.</li>
+<li>It does not make the partial isometry continuous. The positive factor is continuous; the partial isometry jumps at the rank drop, and no unitary factor can reach a rank-one element.</li>
+<li>It does not replace the Cartan pairing off the cone. There the generalized pair is the Cartan pair.</li>
+<li>It does not identify $\tilde H$ with the quaternionic modulus. $\tilde H$ carries the Hermitian norm and the modulus of the quaternionic norm; the modulus itself is the central $\Rho$.</li>
+<li>It does not prove the matrix polar decomposition. It reads the left form of the matrix theorem in the algebra and computes the cone.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>domain</td>
+<td>every $\tilde Q\in\mathbb{B}$, including $0$</td>
+</tr>
+<tr>
+<td>first factor</td>
+<td>$\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$, Hermitian positive semidefinite, $\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$</td>
+</tr>
+<tr>
+<td>second factor</td>
+<td>$\tilde U=\tilde H^{+}\tilde Q$, partial isometry, $\tilde U^{*}\tilde U=P_{\operatorname{ran}\tilde Q^{*}}$, $\tilde U\tilde U^{*}=P_{\operatorname{ran}\tilde Q}$</td>
+</tr>
+<tr>
+<td>equation</td>
+<td>$\tilde Q=\tilde H\tilde U$, with $\tilde Q\tilde Q^{*}=\tilde H^{2}$</td>
+</tr>
+<tr>
+<td>off the cone</td>
+<td>$\tilde H$ positive definite, $\tilde U$ unitary, the Cartan pairing</td>
+</tr>
+<tr>
+<td>on the punctured cone</td>
+<td>$\tilde Q=\sigma\tilde U$, $\tilde H=\sigma\tilde U\tilde U^{*}$, $\sigma=\lVert\tilde Q\rVert_{\mathrm F}$</td>
+</tr>
+<tr>
+<td>projections on the cone</td>
+<td>two Hermitian idempotents $\tfrac12(e_t+i\vec u)$ on the Bloch sphere</td>
+</tr>
+<tr>
+<td>zero element</td>
+<td>$\tilde H=\tilde U=0$</td>
+</tr>
+<tr>
+<td>invariants</td>
+<td>$\langle\tilde H\rangle_{*}=\langle\tilde Q\rangle_{*}$, $\langle\tilde H\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert$</td>
+</tr>
+<tr>
+<td>uniqueness</td>
+<td>unique with the initial and final projections and the range of $\tilde H$</td>
+</tr>
+<tr>
+<td>continuity</td>
+<td>$\tilde H$ continuous, $\tilde U$ discontinuous at the cone</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generalized Cartan pairing is the polar decomposition of the whole biquaternion algebra. It is the Cartan pairing off the null cone and a rank-one degeneration on it: the positive factor becomes a scaled pure state, the unitary factor becomes a partial isometry between two pure states, and the element becomes a positive scalar times that partial isometry. The two projections and the range of $\tilde H$ are the data that make the singular case unique, and the projections are exactly the data that jump at the cone.</p>
+<h3 id="what-the-reader-should-retain">What the Reader Should Retain</h3>
+<p>The three statements to carry away are: the formulas $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ and $\tilde U=\tilde H^{+}\tilde Q$ hold for every element; on the cone they read $\tilde H=\sigma\tilde\Pi_{\mathrm f}$ and $\tilde U=\tilde Q/\sigma$; and the pair is unique only when the initial and final projections and the range of $\tilde H$ are fixed. The first is the extension, the second is the degeneration, and the third is the price.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=\tilde H\tilde U$</td>
+<td>the generalized Cartan pairing</td>
+</tr>
+<tr>
+<td>$\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$</td>
+<td>Hermitian positive semidefinite factor</td>
+</tr>
+<tr>
+<td>$\tilde U=\tilde H^{+}\tilde Q$</td>
+<td>partial isometry factor</td>
+</tr>
+<tr>
+<td>$\tilde H^{+}$</td>
+<td>Moore–Penrose inverse of $\tilde H$</td>
+</tr>
+<tr>
+<td>$P_L$</td>
+<td>orthogonal projection onto the subspace $L$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$</td>
+<td>rank-one Hermitian idempotent, $\vec u$ a real unit vector</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm i}=\tilde U^{*}\tilde U$, $\tilde\Pi_{\mathrm f}=\tilde U\tilde U^{*}$</td>
+<td>initial and final projections of $\tilde U$</td>
+</tr>
+<tr>
+<td>$\sigma=\lVert\tilde Q\rVert_{\mathrm F}$</td>
+<td>Frobenius length, the non-zero singular value on the cone</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$</td>
+<td>quaternionic norm, the determinant</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>Hermitian norm, half the squared Frobenius norm</td>
+</tr>
+<tr>
+<td>$\sigma_i,u_i,v_i$</td>
+<td>singular values and singular vectors of $\mathsf M_2(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\dagger}$</td>
+<td>Hermitian conjugation in $\mathbb{B}$, conjugate transpose in $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$</td>
+<td>the zero-divisor cone, the singular locus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, for the pairing that this article extends and for the domain $\langle\tilde Q\rangle_{\natural}\neq0$.</li>
+<li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the four factors, the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and the boundary of the word.</li>
+<li><a href="exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a>, for the boundary limits of the word and the idempotents at infinite rapidity.</li>
+<li><a href="the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html">The Quaternion Pairing of the Polar Decomposition of Biquaternions</a> and <a href="the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html">The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</a>, for the two partial pairings whose domains are cut by the cone and the quadric cone.</li>
+<li><a href="introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html">Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</a>, for the isomorphism, the transport of ${}^{*}$ to the matrix adjoint and the rank-one elements.</li>
+<li><a href="positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</a>, for the positive cone and the Hermitian square root.</li>
+<li><a href="zero-divisors-of-the-biquaternion-algebra.html">Zero Divisors of the Biquaternion Algebra</a>, for the cone and its real dimension.</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, for the Hermitian idempotents $\tfrac12(e_t+i\vec u)$ and the Bloch sphere.</li>
+<li><a href="the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the unitary factor off the cone.\n- <a href="the-polar-decomposition-of-an-operator-of-the-form.html">The Polar Decomposition of an Operator of the Form</a>, for the operator polar decomposition that this article is not.</li>
+<li><a href="../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a> and <a href="../articles_physics/roots-idempotents-and-observables.html">Roots, Idempotents and Observables</a>, for the physical interpretation of the cone and the idempotents, which this article does not develop.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the polar decomposition and the singular value decomposition; Adi Ben-Israel and Thomas N. E. Greville, <em>Generalized Inverses: Theory and Applications</em> (Springer, 2003), for the Moore–Penrose inverse and the projection conditions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

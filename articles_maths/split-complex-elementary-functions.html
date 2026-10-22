@@ -69,10 +69,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article defines the elementary functions of a split-complex variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. The hyperbolic pair is the intrinsic family of the algebra, and the circular pair is included for comparison with the complex and reduced biquaternion cases. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.</p>
 <p>The spectral data are those of <em>Eigenvalue Decomposition of a Split-Complex Number</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Units</em>; they are collected in §<em>The Eigenvalue Data</em> and used without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The algebra, its basis and its conjugation are those of <em>Split-Complex Algebra</em>; the norm and the group of units are those of <em>Norm and Invertibility in the General Split-Complex Algebra</em>; the idempotents are those of <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>.</p>
-<p>This article owns the exponential and the logarithm, with their domains, their fibres, their inverses and their derivatives, the power and root functions, and the trigonometric and hyperbolic functions. The higher special functions — the Gamma and Beta functions, the error function, the Airy and Bessel functions, the hypergeometric function and the Lambert $W$ function — are <em>Split-Complex Higher Special Functions</em>, which quotes the Idempotent Principle stated here. <em>Exponential Polar Decomposition of Split-Complex Numbers</em> cites the exponential and the logarithm and does not derive them. The polar decompositions themselves, the Lie group structure and the harmonic analysis are later articles; this one does not treat them.</p>
+<p><strong>Boundaries.</strong> This article owns the exponential and the logarithm, with their domains, their fibres, their inverses and their derivatives, the power and root functions, and the trigonometric and hyperbolic functions. The higher special functions — the Gamma and Beta functions, the error function, the Airy and Bessel functions, the hypergeometric function and the Lambert $W$ function — are <em>Split-Complex Higher Special Functions</em>, which quotes the Idempotent Principle stated here. <em>Exponential Polar Decomposition of Split-Complex Numbers</em> cites the exponential and the logarithm and does not derive them. The polar decompositions themselves, the Lie group structure and the harmonic analysis are later articles; this one does not treat them.</p>
 <p><strong>Placement.</strong> The article is in the Analysis group of the Split-Complex Numbers category, after <em>Split-Complex Analysis</em> and <em>Split-Complex Integration</em>, and before <em>Split-Complex Higher Special Functions</em>, <em>Split-Complex Harmonic Analysis</em> and <em>Split-Complex Exponential and Lie Group Structure</em>.</p>
 <p><strong>Plan.</strong> The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§<em>The Spectral Setting</em>). The exponential and the logarithm follow, with their kernels, images and fibres (§<em>The Exponential</em>, §<em>The Logarithm</em>); the powers and roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions and their inverses follow (§<em>The Trigonometric and Hyperbolic Functions</em>); the relations to the real and complex cases close the theory (§<em>Relations to the Neighbouring Cases</em>). The results are collected in tables in §<em>Summary</em>, including the comparison with the reduced biquaternion and biquaternion cases.</p>
 <p>Every numerical value displayed below was recomputed in double precision.</p>
+<p><strong>Notation.</strong> A split-complex number is written $Q=q+jq'$ with $q,q'\in\mathbb{R}$ and $j^{2}=1$. The conjugate is $\bar Q=q-jq'$ and the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$.</p>
 <h2 id="the-spectral-setting">The Spectral Setting</h2>
 <h3 id="the-eigenvalue-data">The Eigenvalue Data</h3>
 <p>The spectral data are those of <em>Eigenvalue Decomposition of a Split-Complex Number</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Units</em>. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.</p>
@@ -119,6 +120,10 @@
 <tr>
 <td>Polynomial calculus</td>
 <td>$f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ for every polynomial $f$</td>
+</tr>
+<tr>
+<td>Lattice</td>
+<td>trivial, $\ker\exp=\{0\}$: the exponential is injective</td>
 </tr>
 </tbody>
 </table></div>
@@ -208,20 +213,16 @@ $$</p>
 <td>the future cone $F=\{Q:\lambda_+>0,\ \lambda_->0\}=\{Q:q>\lvert q'\rvert\}$</td>
 </tr>
 <tr>
+<td>Periods</td>
+<td>none</td>
+</tr>
+<tr>
 <td>Injective</td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Surjective onto the image</td>
 <td>yes</td>
-</tr>
-<tr>
-<td>Inverse</td>
-<td>the logarithm, defined exactly on $F$</td>
-</tr>
-<tr>
-<td>Period</td>
-<td>none</td>
 </tr>
 </tbody>
 </table></div>
@@ -252,12 +253,12 @@ $$</p>
 <td>$d\exp_Q(H)=\exp(Q)H$</td>
 </tr>
 <tr>
-<td>Injectivity</td>
-<td>injective, with kernel $\{0\}$</td>
+<td>Injective</td>
+<td>yes, with kernel $\{0\}$</td>
 </tr>
 <tr>
-<td>Image</td>
-<td>the future cone $F$</td>
+<td>Periods</td>
+<td>none</td>
 </tr>
 </tbody>
 </table></div>
@@ -306,17 +307,20 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Coordinate</th>
-<th>Formula</th>
+<th>Component</th>
+<th>Name</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$q_{\log}$</td>
+<td>logarithmic scale</td>
 <td>$\tfrac12\ln(\lambda_+\lambda_-)=\tfrac12\ln(q^2-q'^2)$</td>
 </tr>
 <tr>
 <td>$q'_{\log}$</td>
+<td>hyperbolic angle</td>
 <td>$\tfrac12\ln\dfrac{\lambda_+}{\lambda_-}=\operatorname{artanh}\dfrac{q'}{q}=\tfrac12\ln\dfrac{q+q'}{q-q'}$</td>
 </tr>
 </tbody>
@@ -331,9 +335,40 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>region</th>
-<th>condition</th>
-<th>logarithm</th>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domain</td>
+<td>the future cone $F=\{Q:q>\lvert q'\rvert\}=\{\lambda_+>0,\ \lambda_->0\}$</td>
+</tr>
+<tr>
+<td>Fibre over a point</td>
+<td>one point</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>$\ker\exp=\{0\}$</td>
+</tr>
+<tr>
+<td>Principal domain</td>
+<td>$F$, the whole domain, with a single branch</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>exactly on $F$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four regions of the ambient algebra are classified as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Condition</th>
+<th>Logarithm</th>
 </tr>
 </thead>
 <tbody>
@@ -380,20 +415,24 @@ $$</p>
 <tr>
 <th>Identity</th>
 <th>Holds</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$\exp(\log Q)=Q$</td>
 <td>on the future cone $F$</td>
+<td>$Q=5+3j$</td>
 </tr>
 <tr>
 <td>$\log(\exp Q_{\log})=Q_{\log}$</td>
 <td>for every $Q_{\log}\in\mathbb{D}$</td>
+<td>$Q_{\log}=-1+0.3j$</td>
 </tr>
 <tr>
-<td>$\log(QB)=\log Q+\log B$</td>
-<td>on $F$</td>
+<td>$\log(\exp Q_{\log})=Q_{\log}$ modulo the kernel</td>
+<td>always, and there is no kernel to remove</td>
+<td>—</td>
 </tr>
 </tbody>
 </table></div>
@@ -427,7 +466,7 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Regime</th>
+<th>Case</th>
 <th>A logarithm</th>
 <th>Principal logarithm</th>
 <th>Fibre</th>
@@ -435,13 +474,25 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$F=\{q>\lvert q'\rvert\}$</td>
+<td>Future cone, $q>\lvert q'\rvert$</td>
 <td>$\log\lambda_+\Pi_++\log\lambda_-\Pi_-$, unique</td>
 <td>the same</td>
 <td>one point</td>
 </tr>
 <tr>
-<td>complement of $F$</td>
+<td>Past cone, $q<-\lvert q'\rvert$</td>
+<td>none</td>
+<td>none</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>Spacelike wedges, $\lvert q'\rvert>\lvert q\rvert$</td>
+<td>none</td>
+<td>none</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>Null cone, $q=\pm q'$</td>
 <td>none</td>
 <td>none</td>
 <td>empty</td>
@@ -471,16 +522,16 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>Single-valued</td>
+<td>one value for each $P\in\mathbb{R}$, because $\log Q$ is unique</td>
+</tr>
+<tr>
 <td>Product law</td>
 <td>$Q^{P_1}Q^{P_2}=Q^{P_1+P_2}$</td>
 </tr>
 <tr>
 <td>Power of a power</td>
 <td>$(Q^P)^S=Q^{PS}$</td>
-</tr>
-<tr>
-<td>Single-valued</td>
-<td>one value for each $P\in\mathbb{R}$, because $\log Q$ is unique</td>
 </tr>
 <tr>
 <td>Norm</td>
@@ -490,7 +541,16 @@ $$</p>
 </table></div>
 <p>Both laws hold whenever the arguments stay in the future cone. The first follows because $\exp$ is a homomorphism and the exponents commute. The second follows because $\log(\exp(P\log Q))=P\log Q$ exactly; the base $Q^P$ is itself an exponential, hence lies in $F$, so its logarithm exists. This is the sharpest contrast with the complex case, where the same laws hold only modulo the ambiguity of the logarithm.</p>
 <h3 id="the-roots">The Roots</h3>
-<p>For $n\geq1$, a <strong>root</strong> of $Q$ is an element $R$ with $R^n=Q$. In the eigenvalue coordinates the equation is the pair $r_+^n=\lambda_+$ and $r_-^n=\lambda_-$, and the two real equations are independent.</p>
+<p>For $n\geq1$, a <strong>root</strong> of $Q$ is an element $R$ with $R^n=Q$.</p>
+<p><strong>Theorem (the roots).</strong> Let $n\ge1$ and let $Q\in\mathbb{D}$.</p>
+<ol>
+<li>If $n$ is odd, there is exactly one root.</li>
+<li>If $n$ is even and both eigenvalues are positive, there are exactly four roots.</li>
+<li>If $n$ is even, exactly one eigenvalue is zero and the other is positive, there are exactly two roots.</li>
+<li>If $n$ is even and both eigenvalues are zero, there is exactly one root, $R=0$.</li>
+<li>If $n$ is even and at least one eigenvalue is negative, there is none.</li>
+</ol>
+<p><em>Proof.</em> In the eigenvalue coordinates the equation is the pair $r_+^n=\lambda_+$ and $r_-^n=\lambda_-$. A real $n$-th root is unique for odd $n$, two for a positive eigenvalue and even $n$, none for a negative eigenvalue and even $n$, and unique for the eigenvalue $0$. The two equations are independent, so the counts multiply.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -625,7 +685,7 @@ $$</p>
 </tr>
 <tr>
 <td>Period of $\sin,\cos$</td>
-<td>$2\pi\mathbb{Z}\oplus2\pi j\mathbb{Z}$</td>
+<td>$\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)=\{a+jb:a\pm b\in2\pi\mathbb{Z}\}$</td>
 </tr>
 <tr>
 <td>Period of $\sinh,\cosh$</td>
@@ -675,7 +735,13 @@ $$</p>
 \tan Q=\frac{\sin Q}{\cos Q},\qquad
 \cot Q=\frac{\cos Q}{\sin Q},\qquad
 \tanh Q=\frac{\sinh Q}{\cosh Q},\qquad
-\coth Q=\frac{\cosh Q}{\sinh Q}.
+\coth Q=\frac{\cosh Q}{\sinh Q},
+$$</p>
+<p>$$
+\sec Q=\frac{1}{\cos Q},\qquad
+\csc Q=\frac{1}{\sin Q},\qquad
+\operatorname{sech}Q=\frac{1}{\cosh Q},\qquad
+\operatorname{csch}Q=\frac{1}{\sinh Q}.
 $$</p>
 <p>They are defined wherever the denominator is a unit. The eigenvalues of $\cosh Q$ are $\cosh\lambda_\pm\geq1$, so $\cosh Q$ is a unit for every $Q$ and $\tanh$ is defined on all of $\mathbb{D}$. The eigenvalues of $\sin Q$, $\cos Q$ and $\sinh Q$ can vanish on the sets of the table, and there the corresponding quotient is undefined; for $\coth$ this is the null cone. On the intrinsic hyperbolic pair the coefficient forms are</p>
 <p>$$
@@ -738,12 +804,20 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>Regimes</td>
+<td>distinct unit, zero divisor, scalar; the algebra is reduced, so there is no nilpotent regime</td>
+</tr>
+<tr>
 <td>Spectrum</td>
 <td>$\sigma(Q)=\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$</td>
 </tr>
 <tr>
 <td>Eigenprojections</td>
 <td>$\Pi_\pm=\tfrac12(1\pm j)$</td>
+</tr>
+<tr>
+<td>Idempotent Principle</td>
+<td>$\Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-$ for every real power series</td>
 </tr>
 <tr>
 <td>Exponential</td>
@@ -790,12 +864,12 @@ $$</p>
 <td>$\sin^2Q+\cos^2Q=1$, $\cosh^2Q-\sinh^2Q=1$, the addition and double-angle formulas</td>
 </tr>
 <tr>
-<td>Inverse functions</td>
-<td>$\operatorname{arsinh}$, $\operatorname{arcosh}$, $\operatorname{artanh}$, read at $\lambda_\pm$</td>
+<td>Periods</td>
+<td>$\sin,\cos$: $\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$; $\sinh,\cosh$: none</td>
 </tr>
 <tr>
-<td>Idempotent Principle</td>
-<td>$\Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-$ for every real power series</td>
+<td>Inverse functions</td>
+<td>$\operatorname{arsinh}$, $\operatorname{arcosh}$, $\operatorname{artanh}$, read at $\lambda_\pm$</td>
 </tr>
 </tbody>
 </table></div>
@@ -1027,8 +1101,16 @@ $$</p>
 <td>Split circular functions</td>
 </tr>
 <tr>
+<td>$\sec Q, \csc Q$</td>
+<td>Split reciprocal circular functions</td>
+</tr>
+<tr>
 <td>$\sinh Q, \cosh Q, \tanh Q, \coth Q$</td>
 <td>Split hyperbolic functions</td>
+</tr>
+<tr>
+<td>$\operatorname{sech}Q, \operatorname{csch}Q$</td>
+<td>Split reciprocal hyperbolic functions</td>
 </tr>
 <tr>
 <td>$\operatorname{arsinh}Q, \operatorname{arcosh}Q, \operatorname{artanh}Q$</td>
@@ -1041,6 +1123,10 @@ $$</p>
 <tr>
 <td>$Q=\lambda_+\Pi_++\lambda_-\Pi_-$</td>
 <td>Eigenvalue decomposition</td>
+</tr>
+<tr>
+<td>$\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$</td>
+<td>Period lattice of $\sin$ and $\cos$</td>
 </tr>
 </tbody>
 </table></div>

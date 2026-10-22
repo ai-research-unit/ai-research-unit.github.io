@@ -212,6 +212,27 @@ $$</p>
 </table></div>
 <p>The first two rows are lattice cosets. The third is not: a scalar unit has logarithms with a nonzero vector part, whose vector component runs over the complex quadric $(\vec Q_1,\vec Q_1)=(\pi n)^2$. The fibre over a scalar is therefore larger than a translate of the kernel by a lattice, and the coset language must not be used there.</p>
 <p>The eigenvalue formula is the general one. The scalar part of the logarithm is fixed by the norm up to the imaginary part, and the vector part is the complex angle along the axis. The principal branch takes the arguments of $\lambda_\pm$ in $(-\pi,\pi]$; the other branches are the lattice shifts.</p>
+<h2 id="no-continuous-global-logarithm">No Continuous Global Logarithm</h2>
+<p>The exponential is surjective, so every unit has a logarithm. It does not follow that a logarithm can be chosen continuously over the whole group.</p>
+<p>Suppose a continuous $f:\mathbb{B}^{\times}\to\mathbb{B}$ satisfied $\exp f(\tilde Q)=\tilde Q$. Then</p>
+<p>$$
+H(\tilde Q,t)=\exp\bigl((1-t)f(\tilde Q)\bigr),
+\qquad
+t\in[0,1],
+$$</p>
+<p>would contract $\mathbb{B}^{\times}$ to $e_t$: at $t=0$ it is $\tilde Q$ and at $t=1$ it is $e_t$. But $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ is homotopy equivalent to $U(2)$, and $\pi_1(U(2))=\mathbb{Z}\neq0$, so it is not contractible. No such $f$ exists.</p>
+<p>The obstruction is the phase. A loop of units that winds once around the centre cannot be lifted to a loop of logarithms: the logarithm shifts by $2\pi i e_t$ on the loop and does not return. The same happens for the rotor: a full turn shifts the logarithm by $2\pi\vec U$.</p>
+<p><strong>The reading.</strong> A generator is defined on a simply connected patch, and the passage from one patch to another changes it by a kernel element. The kernel is the obstruction made explicit.</p>
+<p><strong>The boundary.</strong> The statement is about continuity, not about existence. Every unit has a logarithm, and a finite set of units has a continuous choice on a neighbourhood of each. What fails is a single continuous choice on the whole group.</p>
+<h2 id="no-canonical-clock">No Canonical Clock</h2>
+<p>A clock is a one-parameter group with a preferred parameter. The algebra supplies the subgroup and no preferred parameter.</p>
+<ul>
+<li>The generator is defined up to the central kernel. If $\tilde L$ generates the process, so does $\tilde L+2\pi i e_t$; the two agree at $t=1$ and give different interpolations, because $\exp(t(\tilde L+2\pi ie_t))=e^{2\pi it}\exp(t\tilde L)$. The kernel is the ambiguity of the interpolation, not of the endpoint.</li>
+<li>The parameter is defined up to a positive rescaling. $\exp(t(c\tilde L))=\exp((ct)\tilde L)$ for $c>0$: the subgroup is the same and the clock is read at a different rate.</li>
+<li>A noncentral kernel element is not a clock ambiguity in general. A shift by $\pi i e_t+\pi\vec U$ changes the endpoint at $t=1$ unless it commutes with $\tilde L$, so it belongs to a different process rather than to a second reading of the same one.</li>
+</ul>
+<p><strong>The reading.</strong> Time is a coordinate on a one-parameter subgroup, and the coordinate is not unique. The algebra gives the subgroup; the clock is a gauge choice. This is the generator-is-a-gauge statement read on the parameter instead of on the element.</p>
+<p><strong>The boundary.</strong> The statement is not that time is illusory or that the algebra supplies no ordering. A one-parameter group has an ordering along its parameter, and the sign of the generator distinguishes the two directions. What is absent is a canonical normalisation of the parameter and a canonical choice among generators.</p>
 <h2 id="the-generator-is-a-gauge">The Generator Is a Gauge</h2>
 <p>A <strong>generator</strong> of a unit $\tilde U$ is an element $\tilde L$ with</p>
 <p>$$
@@ -357,6 +378,8 @@ $$</p>
 <li>The kernel is the set of diagonalisable elements with all eigenvalues in $2\pi i\mathbb{Z}$; for $B\neq0$ it is the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$.</li>
 <li>The kernel is not a subgroup, and the sum of two kernel elements need not lie in the kernel.</li>
 <li>The logarithm exists on the units and nowhere else; its fibre is a lattice coset for a non-scalar unit and a larger set for a scalar unit.</li>
+<li>No continuous logarithm exists on the whole group: a global continuous choice would contract $\mathbb{B}^{\times}$ to the identity, and $GL(2,\mathbb{C})$ is not contractible.</li>
+<li>There is no canonical clock: generators that differ by a central kernel element give the same element at $t=1$ and a different interpolation, and a positive rescaling of the generator is the same subgroup at a different rate.</li>
 <li>A generator of a unit $\tilde U$ is any $\tilde L$ with $\exp\tilde L=\tilde U$; it is defined up to the kernel.</li>
 <li>The gauge is not merely a global phase: the kernel contains the noncentral full rotations $2\pi\vec U$.</li>
 <li>The cone is the boundary of the domain and of the image; the idempotent and nilpotent strata are limits, not values.</li>

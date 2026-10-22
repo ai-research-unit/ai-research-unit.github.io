@@ -192,6 +192,36 @@ and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The 
 <h3 id="the-wall-of-the-state-space">The Wall of the State Space</h3>
 <p><strong>The same cone bounds the pure states.</strong> The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{M}_{+}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $N(\tilde\Pi)=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{M}_{-}$, and on $\mathbb{M}_{+}$ it meets the positive cone in the cone over the pure states; its intersection with the trace-one slice is the Bloch sphere.</p>
 <p><strong>The boundary of the interpretation.</strong> The two interpretations are of one set and not of one physical object. On $\mathbb{M}_{-}$ the cone is the light cone; on $\mathbb{M}_{+}$ its trace-one slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.</p>
+<h3 id="the-pairings-and-the-wall">The Pairings and the Wall</h3>
+<p>The partition into units and cone is the domain of the <strong>word</strong>, not of every polar description. The four-factor word exists exactly when $N\neq0$, so its domain is the group of units. The three pairings have smaller construction domains, and none of them is the wall itself:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pairing</th>
+<th>construction needs</th>
+<th>witness of failure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quaternion</td>
+<td>$N\neq0$ and $\tilde q_r\neq0$</td>
+<td>$i\vec e_x+i\vec e_y$: a unit with $\tilde q_r=0$</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>$N\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$</td>
+<td>$e_t+\vec e_x+i\vec e_y$: a unit with a null vector part</td>
+</tr>
+<tr>
+<td>Cartan</td>
+<td>$N\neq0$; generalized: every element</td>
+<td>$e_t+i\vec e_x$: a zero divisor</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Cartan construction is the widest, and the generalized Cartan form extends it to the cone with a positive factor and a partial isometry. Every element is $\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$ with $\tilde H_{\mathrm{pos}}\ge0$ and $\tilde U_{\mathrm{p}}\tilde U_{\mathrm{p}}^{*}\tilde U_{\mathrm{p}}=\tilde U_{\mathrm{p}}$. The word fails on the cone because the modulus vanishes; the physical image is a lightlike four-vector, which has no rest frame. The amplitude–phase split does not fail there.</p>
+<p><strong>The boundary of the interpretation.</strong> A unit is not "a reversible process" and a zero divisor is not "an irreversible process" without a dynamics; the partition is algebraic. What the domains add is the converse caution: invertibility is necessary for the word and for all three classical pairings, and it is not sufficient for the two smaller ones. A statement about units need not transport to a pairing.</p>
 <h3 id="divisibility">Divisibility</h3>
 <p>The partition has a divisibility form. In the multiplicative monoid, $a$ divides $b$ when $b=ac$ for some $c$. A unit divides every element, because $b=u\,(u^{-1}b)$; conversely an element that divides every element divides $e_t$, hence is a unit. A nonzero element is a zero divisor exactly when it divides $0$ with a nonzero cofactor. The partition therefore reads
 $$
@@ -404,6 +434,7 @@ Interpreted physically, the real orders have finite unit groups because the real
 <li><a href="../articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the link and the contractibility.</li>
 <li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the parity-matched lattice, and <a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a> for the kernel of the exponential.</li>
 <li><a href="../articles_maths/biquaternion-orders-and-finite-groups-of-units.html">Biquaternion Orders and Finite Groups of Units</a>, for the lattices and the finite unit groups.</li>
+<li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, §<em>The Domain</em>, for the three construction domains and the witnesses in one table.</li>
 <li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.</li>
 </ul>
       </div>

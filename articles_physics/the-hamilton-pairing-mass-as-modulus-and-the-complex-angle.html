@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hamilton Pairing: Mass as Modulus and the Complex Angle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hamilton-pairing-mass-as-modulus-and-the-complex-angle"><strong>The Hamilton Pairing: Mass as Modulus and the Complex Angle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hamilton pairing writes an element as a complex scalar times the exponential of a complex angle:</p>
+<p>$$
+\tilde Q=\Rho\,e^{\vec U\Theta}=\Rho\bigl(\cos\Theta+\vec U\sin\Theta\bigr),
+\qquad
+\Rho=\sqrt N,\qquad
+\vec U=\frac{\vec Q}{B},\qquad
+B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}} .
+$$</p>
+<p>It is the only one of the three pairings whose first factor is central, and the only one whose first factor is a scalar. That single fact is what makes it the natural home for an invariant: a central scalar is the one thing that a change of frame cannot touch.</p>
+<p>The thesis is one sentence. <strong>The Hamilton modulus $\Rho$ is the invariant of the element — the mass when the element is a four-momentum and the complex amplitude otherwise — and the second factor is the frame, a Lorentz transformation whose angle $\Theta$ is real for a rotation, imaginary for a boost and complex in general.</strong> Two consequences follow and are the substance of the article. The mass is not the energy: the energy is a component of the four-momentum in a frame, and the modulus is the invariant left when the frame is divided out. And the angle is not a single number with a single convention: the spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the modulus may itself be imaginary, so the pair $(\Theta,\vec U)$ is the invariant object and $\Theta$ alone is not.</p>
+<p>The article is a synthesis. The pairing, its theorem and its domain are owned by <em>The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</em>; the eigenvalue decomposition and the mass shell by <em>Eigenvalue Decomposition of a Biquaternion</em> and <em>The Spectral Reading of a Four-Vector</em>; the branch of the modulus by <em>Modulus–Unit Polar Decomposition of Biquaternions</em>. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.</p>
+<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>, §<em>The Polar Word and the Three Pairings</em>, including its warning on the four objects called a boost. The norm is $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>result</th>
+<th>established in</th>
+<th>used here for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Hamilton pairing, its theorem and its domain</td>
+<td><a href="../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html"><em>The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</em></a>, §<em>The Statement</em>, §<em>The Domain</em></td>
+<td>$\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle</td>
+</tr>
+<tr>
+<td>the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html"><em>Eigenvalue Decomposition of a Biquaternion</em></a>, §<em>The Spectrum and the Characteristic Polynomial</em></td>
+<td>$\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=N$</td>
+</tr>
+<tr>
+<td>the four factors and the branch of the modulus</td>
+<td><a href="../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html"><em>Modulus–Unit Polar Decomposition of Biquaternions</em></a>, §<em>The Four Factors</em></td>
+<td>$\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$</td>
+</tr>
+<tr>
+<td>the four-momentum and the mass shell</td>
+<td><a href="the-spectral-reading-of-a-four-vector.html"><em>The Spectral Reading of a Four-Vector</em></a>, §<em>The Frame Dependence</em></td>
+<td>$\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$</td>
+</tr>
+<tr>
+<td>the four objects called a boost and the factor of two</td>
+<td><a href="conventions-in-the-biquaternion-universe.html"><em>Conventions in the Biquaternion Universe</em></a>, §<em>The Four Objects Called a Boost</em></td>
+<td>the $\psi/2$ versus $\psi$ warning</td>
+</tr>
+<tr>
+<td>multiplicativity of the norm</td>
+<td><a href="../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html"><em>Modulus–Unit Polar Decomposition of Biquaternions</em></a>, §<em>The Biquaternion Norm and the Modulus</em></td>
+<td>the modulus of a product</td>
+</tr>
+<tr>
+<td>the generalized pairing on the null cone</td>
+<td><a href="../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html"><em>The Generalized Polar Decomposition of a Biquaternion</em></a>, §<em>The Null Cone</em></td>
+<td>the massless limit</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-pairing">The Pairing</h2>
+<p>The pairing is the grouping of the scale and the phase against the boost and the rotor:</p>
+<p>$$
+\tilde Q=\Rho\,\exp(\vec U\Theta),
+\qquad
+\Rho=r\,e^{i\alpha},
+\qquad
+\exp(\vec U\Theta)=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
+$$</p>
+<p>The modulus is central and complex. The second factor is a unit-norm element, and the unit-norm subgroup of $\mathbb{B}$ is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$. The exponent is a complex multiple of a root of $-e_t$: the axis $\vec U$ is a unit pure element with $\vec U^{2}=-e_t$, and $\Theta$ is complex.</p>
+<p>The two eigenvalues of the element are the polar form of the spectrum,</p>
+<p>$$
+\lambda_\pm=Q_t\pm iB=\Rho\,e^{\pm i\Theta},
+\qquad
+\lambda_+\lambda_-=\Rho^{2}=N .
+$$</p>
+<p>The product identity is the reason the modulus is an invariant: the two eigenvalues are the two light-cone combinations of the element, and their product is the norm. The sum, $2Q_t$, is the trace and is frame-dependent for a four-momentum; the product is not.</p>
+<p>The representation is a statement about $\tilde Q$, not about $\exp\tilde Q$. The element and its exponential are different objects with different moduli and different angles, and the logarithm, not the exponential, recovers $(\Rho,\Theta)$ from the element. The corpus must keep the two apart, and the distinction is stated in the mathematical article.</p>
+<h2 id="the-central-modulus">The Central Modulus</h2>
+<p>The modulus is</p>
+<p>$$
+\Rho=\sqrt N=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
+$$</p>
+<p>It is central, so it commutes with every element and is unchanged by a change of frame implemented by conjugation. It is the only one of the three first factors with that property. The quaternion factor $r\tilde u_{\mathrm r}$ and the Cartan factor $r\tilde U_{\mathrm b}$ both carry frame data and both change under conjugation; $\Rho$ does not.</p>
+<p>The phase of $\Rho$ carries the causal character when the norm is real.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>norm</th>
+<th>modulus</th>
+<th>phase</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N>0$</td>
+<td>$\Rho=\sqrt N>0$</td>
+<td>$0$</td>
+<td>spacelike element</td>
+</tr>
+<tr>
+<td>$N<0$</td>
+<td>$\Rho=i\sqrt{\lvert N\rvert}$</td>
+<td>$\pi/2$</td>
+<td>timelike element</td>
+</tr>
+<tr>
+<td>$N=0$</td>
+<td>$\Rho=0$</td>
+<td>undefined</td>
+<td>null element</td>
+</tr>
+<tr>
+<td>$N\in\mathbb{C}$ general</td>
+<td>$\Rho=\lvert N\rvert^{1/2}e^{i\arg N/2}$</td>
+<td>$\tfrac12\arg N$</td>
+<td>general element</td>
+</tr>
+</tbody>
+</table></div>
+<p>For a four-momentum the norm is $N=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are</p>
+<p>$$
+\lambda_\pm=i mc\,e^{\pm\psi}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right),
+$$</p>
+<p>the two light-cone combinations, and their product is $-m^{2}c^{2}$. The mass shell is the level set of the modulus, not of the trace.</p>
+<h3 id="mass-or-amplitude">Mass or Amplitude</h3>
+<p>The word "mass" is licensed by the object, not by the algebra.</p>
+<ul>
+<li>For a <strong>four-momentum</strong> $\tilde P=i(E/c)e_t+\vec p$, the modulus is $i mc$ and the invariant is the mass. This is the only case in which the reading is forced by the corpus's identification of $\tilde P$ with the four-momentum.</li>
+<li>For a <strong>general element</strong>, $\Rho$ is the invariant complex amplitude. Calling it a mass is an extra identification, and the article must say so. A field strength, a Jones matrix and a scattering element all have a Hamilton modulus; none of them has a mass unless a dynamics supplies one.</li>
+</ul>
+<p>The distinction is not pedantic. The modulus is multiplicative under composition, while mass is not additive under the addition of four-momenta, and conflating the two produces false conservation statements. The next section makes the point exactly.</p>
+<h2 id="the-complex-angle">The Complex Angle</h2>
+<p>The angle is defined by the two ratios</p>
+<p>$$
+\cos\Theta=\frac{Q_t}{\Rho},\qquad \sin\Theta=\frac{B}{\Rho},
+\qquad B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}} .
+$$</p>
+<p>The pair $(\Theta,\vec U)$ is the invariant data of the second factor; $\Theta$ alone is not, because the sign of the axis flips the sign of the angle and leaves the element unchanged. The angle has three regimes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\Theta$</th>
+<th>second factor</th>
+<th>process</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real</td>
+<td>a rotation</td>
+<td>compact rotation</td>
+<td>$e^{\theta\vec u/2}$</td>
+</tr>
+<tr>
+<td>imaginary</td>
+<td>a boost</td>
+<td>non-compact boost</td>
+<td>$e^{-i\psi\hat p}$</td>
+</tr>
+<tr>
+<td>complex</td>
+<td>a rotation composed with a boost</td>
+<td>general Lorentz element</td>
+<td>aligned or skew word</td>
+</tr>
+</tbody>
+</table></div>
+<p>The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enters $\sin\Theta$, and a real $B$ with an imaginary $\Rho$ gives an imaginary angle. The four-momentum is the standard case: $B=\lvert\vec p\rvert$ is real, $\Rho=i mc$ is imaginary, and $\Theta=-i\psi$ is imaginary, which is the boost.</p>
+<h3 id="the-factor-of-two">The Factor of Two</h3>
+<p>The angle depends on which factor of the word the element carries, and the factor of two is the most common error in the corpus.</p>
+<ul>
+<li>The <strong>spinor word</strong> of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$, whose exponent angle is $\psi/2$. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\psi}{2}$.</li>
+<li>The <strong>four-vector factor</strong> is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\psi\hat p)$, whose exponent angle is $-\psi$. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\psi$, not $-i\psi/2$.</li>
+<li>The <strong>word parameter</strong> of a four-vector element is $\psi_w=2\psi$, because the word stores the boost twice.</li>
+</ul>
+<p>Three statements follow, and each is a check. Do not write $\Theta=i\psi$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\psi/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent angle of the spinor word with the exponent angle of the four-vector word; they differ by a factor of two and a sign.</p>
+<h3 id="the-angle-is-not-the-rapidity">The Angle Is Not the Rapidity</h3>
+<p>The imaginary part of $\Theta$ has magnitude $\psi$, the kinematic rapidity, when the element is a four-momentum. For a general element the imaginary part is not a rapidity: it is the boost part of a complex angle whose real part is a rotation, and on skew axes the two parts do not align on a single axis. The statement "the imaginary part is the rapidity" is a statement about the four-momentum chart, not about the algebra.</p>
+<p>The reality of the angle is also not the reality of the element. A rotation has a real angle and a real quaternion element; a boost has an imaginary angle and an imaginary vector part. The pair $(\Rho,\Theta)$ is the coordinate, and neither member alone classifies the element.</p>
+<h2 id="the-frame-factor">The Frame Factor</h2>
+<p>The second factor is a unit-norm element, and it is the frame. Its action depends on the object it acts on, and the corpus separates the two laws.</p>
+<ul>
+<li>On a <strong>spinor</strong>, the unit factor acts by left multiplication, $\chi\mapsto\tilde U\chi$. This is the linear action and it carries the double cover and the sign of the spinor.</li>
+<li>On a <strong>four-vector</strong>, it acts by congruence, $X\mapsto\tilde U X\tilde U^{*}$. This is the bilinear action, and the four-vector element carries the inverse square of the spinor factor.</li>
+</ul>
+<p>For a four-momentum the frame factor is $\mathcal B=e^{-i\psi\hat p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\psi$ about $-\hat p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.</p>
+<p>The rapidity is fixed by the ratio of the two invariants,</p>
+<p>$$
+\cosh 2\psi=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert N\rvert},
+$$</p>
+<p>for a four-momentum, where the numerator is the Hermitian square. The ratio is $\cosh\psi_w$, not $\cosh\psi$: the factor of two is already present in the Hermitian norm. This is the frame datum that the modulus does not carry. The modulus gives the mass; the ratio gives the rapidity; the phase of the four complex coordinates gives the two axis angles. The count is the same as in the hub: two invariants fix three numbers, and the directions need the phases.</p>
+<h2 id="the-domain-and-the-witnesses">The Domain and the Witnesses</h2>
+<p>The Hamilton pairing needs $N\neq0$ and $B\neq0$. The second condition is not implied by the first, and the witness is</p>
+<p>$$
+\tilde Q=e_t+\vec e_x+i\vec e_y,\qquad N=1,\qquad B^{2}=1+i^{2}=0 .
+$$</p>
+<p>The element is invertible, the word exists, the quaternion factor exists, and the Hamilton factor does not: there is no axis and no angle. The failure has two physical faces.</p>
+<ul>
+<li><strong>The scalar case.</strong> $\vec Q=0$ is the rest frame of a four-momentum. The axis is undefined because there is no boost to point it along; the angle is $0$ or $\pi$ and carries only the sign. The rest frame is the boundary of the chart, not a physical singularity: the element is regular and its mass is $\Rho$.</li>
+<li><strong>The nilpotent case.</strong> $\vec Q\neq0$ with $\vec Q^{2}=0$ is a lightlike vector part. There is no frame in which the vector part is a pure scale, and the axis cannot be normalised. The element may still be invertible, as the witness shows.</li>
+</ul>
+<p>The two cases are different. The scalar four-momentum is the $\psi\to0$ limit of a boost; the nilpotent case is a lightlike vector part, the boundary of the boost chart, and the two have different stabilisers. The algebra distinguishes them by $\vec Q=0$ and $\vec Q^{2}=0$ with $\vec Q\neq0$.</p>
+<p>The third boundary is the null cone, $N=0$, where the modulus vanishes and the pairing does not exist. For a four-momentum this is the massless limit: the element is lightlike, the mass shell collapses to the cone, and the word has no rest frame. The generalized Cartan pairing covers the limit with a rank-one amplitude and a partial isometry, and the massless article owns the boundary value.</p>
+<h2 id="mass-not-energy">Mass, Not Energy</h2>
+<p>The modulus is the invariant and the energy is not. For a four-momentum,</p>
+<p>$$
+E=mc^{2}\cosh\psi,\qquad \lvert\vec p\rvert=mc\sinh\psi,\qquad N=-m^{2}c^{2}.
+$$</p>
+<p>The energy depends on the frame through $\psi$; the modulus does not. The trace $2Q_t=2iE/c$ is the frame-dependent sum of the eigenvalues; the norm is their frame-independent product. A change of frame moves $\psi$ and hence $E$, and leaves $\Rho$ fixed. This is the algebraic content of "mass is invariant, energy is a component".</p>
+<p>The modulus is <strong>multiplicative</strong> under composition. For any two elements,</p>
+<p>$$
+N(\tilde Q\tilde Q')=N(\tilde Q)N(\tilde Q'),
+$$</p>
+<p>so the modulus of a product is the product of the moduli up to the branch. This is a statement about multiplying operators, not about adding four-momenta. Four-momenta compose by addition, $\tilde P_{\mathrm{tot}}=\tilde P_1+\tilde P_2$, and the mass of a sum is not the sum or the product of the masses: it is the modulus of the sum, which depends on the angle between the momenta. The invariant mass of a two-particle system is</p>
+<p>$$
+N(\tilde P_1+\tilde P_2)=N(\tilde P_1)+N(\tilde P_2)+2\langle\tilde P_1,\tilde P_2\rangle_{\natural},
+$$</p>
+<p>and the cross term is what makes the mass of a system differ from the sum of its parts. The multiplicativity of the algebra and the additivity of the four-momentum are different operations. The mass shell is the level set of the norm, a property of one element, not of the sum.</p>
+<p>This is the precise form of the caution. The Hamilton modulus is the invariant of one element. It is not a charge, it is not additive, and it does not compose by the rule that four-momenta compose. The algebra gives multiplicativity; physics gives the addition; the mass shell is the level set of the norm that both must respect.</p>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<p>The Hamilton pairing is the orbit picture in one line: <strong>a particle is a rest value times a Lorentz transformation.</strong> The rest value is the modulus, the transformation is the frame factor, and the product is the element. The reading is sharpest for a four-momentum and weakest for a general element, and the article has stated where each reading is licensed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>Hamilton datum</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>what is the invariant?</td>
+<td>$\Rho$</td>
+<td>the mass of a four-momentum, the amplitude otherwise</td>
+</tr>
+<tr>
+<td>what is the frame?</td>
+<td>$\vec U$, $\Theta$</td>
+<td>the Lorentz transformation that carries the rest value to the element</td>
+</tr>
+<tr>
+<td>what is the rapidity?</td>
+<td>$\lvert\operatorname{Im}\Theta\rvert$ on the four-momentum chart</td>
+<td>the boost parameter $\psi$</td>
+</tr>
+<tr>
+<td>what is the spin?</td>
+<td>the rotation part of $\Theta$</td>
+<td>the compact angle of the frame</td>
+</tr>
+</tbody>
+</table></div>
+<p>The complex angle is the natural home for analytic continuation. A rotation continued to an imaginary angle is a boost; the single formula $\cos\Theta+\vec U\sin\Theta$ covers both, with the trigonometric and hyperbolic cases as the real and imaginary sections. This is not a new dynamics. It is the statement that the two kinds of Lorentz transformation are two sections of one complexified family, and that the algebra does not need two formulas.</p>
+<p>The reading that changes the theory most is the identification of the modulus with the mass. It gives the mass shell an algebraic definition — the level set of the norm — and it makes the invariant mass a property of the element rather than of a frame. The reading that must be guarded most is the same one: for a general element the modulus is an amplitude, and the mass word is an identification that the algebra does not make.</p>
+<h2 id="what-this-does-not-claim">What This Does Not Claim</h2>
+<ul>
+<li>It does not claim that $\Rho$ is a mass for every element. The mass reading is licensed for a four-momentum; for a general element $\Rho$ is a complex amplitude.</li>
+<li>It does not claim that mass is additive. The modulus is multiplicative under operator composition; four-momenta add; the mass of a sum is the modulus of the sum.</li>
+<li>It does not claim that the imaginary part of $\Theta$ is always the rapidity. That reading is specific to the four-momentum chart.</li>
+<li>It does not claim that the angle alone is invariant. The pair $(\Theta,\vec U)$ is the invariant data, and the sign of the axis flips the sign of the angle.</li>
+<li>It does not claim that the Hamilton pairing exists on the whole complement of the cone. It also needs $B\neq0$, and the witness $e_t+\vec e_x+i\vec e_y$ is invertible without a Hamilton factor.</li>
+<li>It does not claim that the rest frame is a singularity. It is the boundary of the chart, and the element is regular there.</li>
+<li>It does not claim that the exponential of the element is the element. The modulus and angle of $\tilde Q$ are not those of $\exp\tilde Q$.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.</li>
+<li>The modulus $\Rho=\sqrt N=r e^{i\alpha}$ is central and complex; it is the only scalar first factor of the three pairings.</li>
+<li>The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.</li>
+<li>For a four-momentum, $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$, and the eigenvalues are $i mc\,e^{\pm\psi}$.</li>
+<li>The energy is $mc^{2}\cosh\psi$ and depends on the frame; the modulus is the invariant and does not.</li>
+<li>The angle is real for a rotation, imaginary for a boost and complex in general; the pair $(\Theta,\vec U)$ is the invariant data.</li>
+<li>The spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the four-momentum angle is $-i\psi$.</li>
+<li>The pairing needs $N\neq0$ and $B\neq0$; the scalar rest frame and the nilpotent lightlike case are different boundaries.</li>
+<li>The modulus is multiplicative under composition; mass is not additive under the addition of four-momenta; the mass of a sum carries a cross term.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\Rho=\sqrt N=r e^{i\alpha}$</td>
+<td>the Hamilton modulus, central and complex</td>
+</tr>
+<tr>
+<td>$r$, $\alpha$</td>
+<td>the scale and the central phase, $\alpha\in(-\pi/2,\pi/2]$</td>
+</tr>
+<tr>
+<td>$\vec U=\vec Q/B$</td>
+<td>the Hamilton axis, a unit pure element, $\vec U^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$</td>
+<td>the vector-part square root (not the boost factor $\mathcal B$)</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues, $\lambda_\pm=\Rho e^{\pm i\Theta}$</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>the kinematic rapidity of a four-momentum</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}(\psi)$</td>
+<td>the frame rotor, exponent angle $\psi/2$</td>
+</tr>
+<tr>
+<td>$\mathcal B=\tilde U_{\mathrm b}^{-2}$</td>
+<td>the four-vector boost factor, exponent angle $-\psi$</td>
+</tr>
+<tr>
+<td>$\tilde P=i(E/c)e_t+\vec p$</td>
+<td>the four-momentum, $\Rho=i mc$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>the Hermitian form</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$</td>
+<td>the trace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html">The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</a>, for the theorem, the domain and the roots of one.</li>
+<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the spectrum, the eigenprojections and the multiplicativity of the norm.</li>
+<li><a href="../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the four-factor word and the branch of the modulus.</li>
+<li><a href="the-three-polar-factors-of-a-biquaternion-frame-mass-and-state.html">The Three Polar Factors of a Biquaternion: Frame, Mass and State</a>, for the comparison with the quaternion and Cartan first factors.</li>
+<li><a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a>, for the mass shell and the eigenvalues of a four-momentum.</li>
+<li><a href="the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a>, for the mass as a modulus and the isospectral family.</li>
+<li><a href="conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>, §<em>The Four Objects Called a Boost</em>, for the rapidity conventions and the factor of two.</li>
+<li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the hub and the action of the factors.</li>
+<li><a href="the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, for the massless limit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

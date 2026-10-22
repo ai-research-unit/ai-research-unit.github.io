@@ -162,6 +162,20 @@ $$</p>
 \tilde{Ϛ}_y = \frac{\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}}{\mathrm{Tr}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})} .
 $$</p>
 <p>The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}) = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, with the trace taken at normalisation, and the resolution of the identity is $\sum_y\tilde{K}_y^{*}\tilde{K}_y = e_t$. The measurement is therefore an <strong>instrument</strong>: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{Ϛ}) = \sum_y\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$.</p>
+<h3 id="the-polar-form-of-an-effect">The Polar Form of an Effect</h3>
+<p>The Kraus form has a polar reading. Write each Kraus operator as</p>
+<p>$$
+\tilde K_y=\tilde H_{\mathrm{pos},y}\tilde U_{\mathrm{p},y},
+\qquad
+\tilde H_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}},
+$$</p>
+<p>with $\tilde H_{\mathrm{pos},y}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p},y}$ a partial isometry. Then</p>
+<p>$$
+\tilde E_y=\tilde K_y^{*}\tilde K_y
+=\tilde U_{\mathrm{p},y}^{*}\tilde H_{\mathrm{pos},y}^{2}\tilde U_{\mathrm{p},y}.
+$$</p>
+<p>The effect is the squared strength conjugated by the backaction. Its eigenvalues are the squares of the singular values of $\tilde K_y$, so the effect sees the strength but not the backaction: $\tilde K_y$ and $\tilde W\tilde K_y$ with $\tilde W$ unitary have the same effect and different polar factors.</p>
+<p>The strata are the strata of the effect body. A <strong>sharp</strong> effect is $\tilde E_y=\tilde\Pi$; then $\tilde K_y=\tilde\Pi$, $\tilde H_{\mathrm{pos},y}=\tilde\Pi$ and $\tilde U_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A <strong>soft rank-one</strong> effect is $\tilde E_y=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde K_y=\sqrt{\lambda}\,\tilde\Pi$, $\tilde H_{\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde U_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A <strong>full-rank</strong> effect is $\tilde E_y>0$; then $\tilde K_y$ is invertible, $\tilde H_{\mathrm{pos},y}$ is positive definite, $\tilde U_{\mathrm{p},y}$ is unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article <em>The Polar Decomposition of a Kraus Operator</em> works the examples and gives the measurement reading.</p>
 <h3 id="naimark-dilation">Naimark dilation</h3>
 <p>Every POVM on the defining module $S$ is the compression of a projective measurement on a larger module. There is an ancillary space $\mathbb{C}^d$, an isometry $V:S\to S\otimes\mathbb{C}^d$, and a PVM $\{\tilde{F}_y\}$ on the larger space such that</p>
 <p>$$
@@ -265,7 +279,7 @@ $$</p>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$C_+ = \{h_te_t+i\vec h: h_t\ge|\vec h|\}$</td>
+<td>$C_+ = \{h_te_t+i\vec h: h_t\ge\lvert\vec h\rvert\}$</td>
 <td>Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$)</td>
 </tr>
 <tr>
@@ -281,7 +295,7 @@ $$</p>
 <td>Effect (operator interval)</td>
 </tr>
 <tr>
-<td>$|\vec a|\le\min(a_t,1-a_t)$</td>
+<td>$\lvert\vec a\rvert\le\min(a_t,1-a_t)$</td>
 <td>Effect condition in coefficients</td>
 </tr>
 <tr>
@@ -299,6 +313,14 @@ $$</p>
 <tr>
 <td>$\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$</td>
 <td>Kraus form of an effect</td>
+</tr>
+<tr>
+<td>$\tilde K_y=\tilde H_{\mathrm{pos},y}\tilde U_{\mathrm{p},y}$, $\tilde H_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}}$</td>
+<td>Polar form of the Kraus operator; $\tilde H_{\mathrm{pos},y}\ge0$, $\tilde U_{\mathrm{p},y}$ a partial isometry</td>
+</tr>
+<tr>
+<td>$\tilde E_y=\tilde U_{\mathrm{p},y}^{*}\tilde H_{\mathrm{pos},y}^{2}\tilde U_{\mathrm{p},y}$</td>
+<td>Effect as the backaction-conjugated squared strength</td>
 </tr>
 <tr>
 <td>$\tilde{Ϛ}_y = \tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}/p_y$</td>
@@ -320,6 +342,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a>, for the strength, the backaction, and the null-cone reading of an effect.</li>
 <li>A. Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for POVMs, effects, and generalized measurements.</li>
 <li>K. Kraus, <em>States, Effects, and Operations</em> (Springer, 1983), for the operator-algebraic formulation of effects and instruments.</li>
 <li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for POVMs, Naimark's dilation, and the post-measurement state.</li>

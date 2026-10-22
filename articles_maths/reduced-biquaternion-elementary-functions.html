@@ -70,9 +70,11 @@
 <p>This article defines the elementary functions of a reduced biquaternion variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.</p>
 <p>The article rests on <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Units</em>: the eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, the central idempotents $\Pi_\pm$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus. They are collected in §<em>The Eigenvalue Data</em> and used here without proof. The algebra and its bar are <em>Introduction to the Algebra of the Reduced Biquaternions</em>; the norm and the unit criterion are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>.</p>
 <p>Every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout.</p>
+<p><strong>Boundaries.</strong> This article owns the exponential and the logarithm, with their domains, their fibres, their inverses and their derivatives, the power and root functions, and the trigonometric and hyperbolic functions. The higher special functions are <em>Reduced Biquaternion Higher Special Functions</em>; <em>Exponential Polar Decomposition of Reduced Biquaternions</em> cites the exponential and the logarithm and does not derive them. The polar decomposition, the Lie group structure and the harmonic analysis are later articles.</p>
 <p><strong>Placement.</strong> The article is in the Analysis group of the Reduced Biquaternion category, after <em>Reduced Biquaternion Analysis</em> and before <em>Reduced Biquaternion Higher Special Functions</em> and <em>Exponential Polar Decomposition of Reduced Biquaternions</em>. The complex member is <em>Complex Special Functions</em>, and the split-complex members are <em>Split-Complex Elementary Functions</em> and <em>Split-Complex Higher Special Functions</em>.</p>
 <p><strong>Plan.</strong> The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§<em>The Spectral Setting</em>). The exponential and the logarithm follow, with their kernels, images and fibres (§<em>The Exponential</em>, §<em>The Logarithm</em>); the powers and roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions and their inverses follow (§<em>The Trigonometric and Hyperbolic Functions</em>); the relations to the complex line and the split-complex plane close the theory (§<em>Relations to the Neighbouring Cases</em>). The results are collected in tables in §<em>Summary</em>, including the comparison with the split-complex and biquaternion cases.</p>
 <p>Every numerical value displayed below was recomputed in double precision.</p>
+<p><strong>Notation.</strong> A reduced biquaternion is written $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ and $j^{2}=1$. The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, and the norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$.</p>
 <h2 id="the-spectral-setting">The Spectral Setting</h2>
 <h3 id="the-eigenvalue-data">The Eigenvalue Data</h3>
 <p>The spectral data are those of <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Units</em>. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.</p>
@@ -119,6 +121,10 @@
 <tr>
 <td>Polynomial calculus</td>
 <td>$f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every polynomial $f$</td>
+</tr>
+<tr>
+<td>Lattice</td>
+<td>$\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$</td>
 </tr>
 </tbody>
 </table></div>
@@ -219,7 +225,7 @@ $$</p>
 <td>the unit group $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$</td>
 </tr>
 <tr>
-<td>Period lattice</td>
+<td>Periods</td>
 <td>the kernel</td>
 </tr>
 <tr>
@@ -227,7 +233,7 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
-<td>Surjective onto the units</td>
+<td>Surjective onto the image</td>
 <td>yes</td>
 </tr>
 </tbody>
@@ -263,12 +269,12 @@ $$</p>
 <td>$d\exp_{\breve Q}(\breve H)=\exp(\breve Q)\,\breve H$</td>
 </tr>
 <tr>
-<td>Periodic</td>
-<td>$\exp(\breve Q+P)=\exp\breve Q$ for every $P\in\ker\exp$</td>
-</tr>
-<tr>
 <td>Injective</td>
 <td>no; the kernel is the period lattice</td>
+</tr>
+<tr>
+<td>Periods</td>
+<td>the kernel $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$</td>
 </tr>
 </tbody>
 </table></div>
@@ -398,7 +404,7 @@ $$</p>
 <td>the units $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$</td>
 </tr>
 <tr>
-<td>Fibre over a unit</td>
+<td>Fibre over a point</td>
 <td>$\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$</td>
 </tr>
 <tr>
@@ -439,6 +445,32 @@ $$
 The exponential maps $D$ bijectively onto the unit group, and $\operatorname{Log}$ is its inverse. The interior maps onto the complement of the two walls, where the principal logarithm is real-analytic.</p>
 <h3 id="the-two-compositions">The Two Compositions</h3>
 <p>The word "inverse" covers two identities, and the exponential and the logarithm satisfy them in opposite strengths.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Identity</th>
+<th>Holds</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp(\operatorname{Log}\breve Q)=\breve Q$</td>
+<td>always, on the units</td>
+<td>$\breve Q=3+4i+j(1-i)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$</td>
+<td>exactly in the principal domain $D$</td>
+<td>$\breve Q_{\log}=i\pi$</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ modulo the kernel</td>
+<td>always</td>
+<td>$\breve Q_{\log}=i\pi(1+j)$ gives $0$</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>Right inverse.</strong> For every unit $\breve Q$,</p>
 <p>$$
 \exp(\operatorname{Log}\breve Q)=\breve Q.
@@ -455,32 +487,6 @@ $$</p>
 <p>for the integers that bring the two phases into the principal diamond.</p>
 <p><strong>Proof.</strong> Both sides are logarithms of $\exp\breve Q_{\log}$, so they differ by an element of $\ker\exp$. The principal value is the representative whose two phases lie in the half-open diamond.</p>
 <p>The asymmetry is the content of the word "multivalued". The exponential forgets two integers, one for each eigenvalue; the principal logarithm chooses one representative. The split-complex exponential forgets none, and the complex exponential forgets one.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Identity</th>
-<th>Holds?</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\exp(\operatorname{Log}\breve Q)=\breve Q$</td>
-<td>always, on the units</td>
-<td>$\breve Q=3+4i+j(1-i)$ above</td>
-</tr>
-<tr>
-<td>$\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$</td>
-<td>exactly in the principal domain $D$</td>
-<td>$\breve Q_{\log}=i\pi$</td>
-</tr>
-<tr>
-<td>$\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ modulo the kernel</td>
-<td>always</td>
-<td>$\breve Q_{\log}=i\pi(1+j)$ gives $0$</td>
-</tr>
-</tbody>
-</table></div>
 <h3 id="the-derivative">The Derivative</h3>
 <p>On the complement of the walls the principal logarithm is differentiable, and its derivative is left multiplication by $\breve Q^{-1}$:</p>
 <p>$$
@@ -502,7 +508,7 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Regime</th>
+<th>Case</th>
 <th>A logarithm</th>
 <th>Principal logarithm</th>
 <th>Fibre</th>
@@ -510,13 +516,19 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>unit group, $\lambda_1\lambda_2\neq0$</td>
-<td>$\log\lambda_1\Pi_++\log\lambda_2\Pi_-$, any branches</td>
-<td>the same with principal $\operatorname{Log}$</td>
+<td>Unit, $\lambda_1\lambda_2\neq0$</td>
+<td>$\mu_1\Pi_++\mu_2\Pi_-$, $\mu_i=\operatorname{Log}\lambda_i+2\pi i k_i$</td>
+<td>the same with principal $\operatorname{Log}\lambda_i$</td>
 <td>coset of $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$</td>
 </tr>
 <tr>
-<td>zero divisors and $0$</td>
+<td>Zero divisor, exactly one eigenvalue $0$</td>
+<td>none</td>
+<td>none</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>Zero, $\lambda_1=\lambda_2=0$</td>
 <td>none</td>
 <td>none</td>
 <td>empty</td>
@@ -573,10 +585,10 @@ where $k_1,k_2$ are the integers of the logarithm chosen for $\breve Q^{s}$.</p>
 <p><strong>Theorem (the roots).</strong> Let $n\ge1$ and let $\breve Q\in\mathbb{B}_{\mathrm{r}}$.</p>
 <ol>
 <li>If $\breve Q$ is a unit, the equation $\breve R^{n}=\breve Q$ has exactly $n^{2}$ solutions: the elements whose eigenvalues are
-$$
-\eta_{1}\lambda_1^{1/n},\qquad \eta_{2}\lambda_2^{1/n},
-$$
-where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity and $\lambda_i^{1/n}$ is one fixed $n$-th root in each eigenvalue.</li>
+   $$
+   \eta_{1}\lambda_1^{1/n},\qquad \eta_{2}\lambda_2^{1/n},
+   $$
+   where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity and $\lambda_i^{1/n}$ is one fixed $n$-th root in each eigenvalue.</li>
 <li>If exactly one eigenvalue of $\breve Q$ is zero, the equation has exactly $n$ solutions.</li>
 <li>If $\breve Q=0$, the equation has the single solution $\breve R=0$.</li>
 </ol>
@@ -691,12 +703,12 @@ $$</p>
 <td>$\sin(\breve Q_1+\breve Q_2)=\sin\breve Q_1\cos\breve Q_2+\cos\breve Q_1\sin\breve Q_2$, $\cos(\breve Q_1+\breve Q_2)=\cos\breve Q_1\cos\breve Q_2-\sin\breve Q_1\sin\breve Q_2$</td>
 </tr>
 <tr>
-<td>Double angle</td>
-<td>$\sin(2\breve Q)=2\sin\breve Q\cos\breve Q$, $\cos(2\breve Q)=\cos^{2}\breve Q-\sin^{2}\breve Q$</td>
+<td>Hyperbolic addition</td>
+<td>$\sinh(\breve Q_1+\breve Q_2)=\sinh\breve Q_1\cosh\breve Q_2+\cosh\breve Q_1\sinh\breve Q_2$, $\cosh(\breve Q_1+\breve Q_2)=\cosh\breve Q_1\cosh\breve Q_2+\sinh\breve Q_1\sinh\breve Q_2$</td>
 </tr>
 <tr>
-<td>Hyperbolic addition</td>
-<td>$\cosh(\breve Q_1+\breve Q_2)=\cosh\breve Q_1\cosh\breve Q_2+\sinh\breve Q_1\sinh\breve Q_2$</td>
+<td>Double angle</td>
+<td>$\sin(2\breve Q)=2\sin\breve Q\cos\breve Q$, $\cos(2\breve Q)=\cos^{2}\breve Q-\sin^{2}\breve Q$, $\sinh(2\breve Q)=2\sinh\breve Q\cosh\breve Q$, $\cosh(2\breve Q)=\cosh^{2}\breve Q+\sinh^{2}\breve Q$</td>
 </tr>
 <tr>
 <td>Rotation</td>
@@ -727,18 +739,39 @@ $$</p>
 <td>both $\lambda_1,\lambda_2\in i\frac{\pi}{2}+i\pi\mathbb{Z}$</td>
 </tr>
 <tr>
+<td>Zero divisors of $\sin$</td>
+<td>$\lambda_1\in\pi\mathbb{Z}$ or $\lambda_2\in\pi\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Zero divisors of $\cos$</td>
+<td>$\lambda_1\in\frac{\pi}{2}+\pi\mathbb{Z}$ or $\lambda_2\in\frac{\pi}{2}+\pi\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Zero divisors of $\sinh$</td>
+<td>$\lambda_1\in i\pi\mathbb{Z}$ or $\lambda_2\in i\pi\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Zero divisors of $\cosh$</td>
+<td>$\lambda_1\in i\frac{\pi}{2}+i\pi\mathbb{Z}$ or $\lambda_2\in i\frac{\pi}{2}+i\pi\mathbb{Z}$</td>
+</tr>
+<tr>
 <td>Boundedness</td>
 <td>all four are unbounded: $\sin$ and $\cos$ since $\sin(it)=i\sinh t$ and $\cos(it)=\cosh t$; $\sinh$ and $\cosh$ on the real split direction</td>
 </tr>
 </tbody>
 </table></div>
-<p>The period lattices are read in the eigenvalues: $\mathcal{P}_{\sin}$ has eigenvalue image $(2\pi\mathbb{Z})^{2}$, and $\mathcal{P}_{\sinh}$ has eigenvalue image $(2\pi i\mathbb{Z})^{2}$. The first is the period lattice of the trigonometric functions, of rank two and index two in $\pi\mathbb{Z}+\pi j\mathbb{Z}$; the second is the kernel of the exponential. A period may act in one eigenvalue alone, which is impossible in the complex case with its single period $2\pi$.</p>
+<p>An equality requires both eigenvalue equations, while a zero divisor requires only one. The period lattices are read in the eigenvalues: $\mathcal{P}_{\sin}$ has eigenvalue image $(2\pi\mathbb{Z})^{2}$, and $\mathcal{P}_{\sinh}$ has eigenvalue image $(2\pi i\mathbb{Z})^{2}$. The first is the period lattice of the trigonometric functions, of rank two and index two in $\pi\mathbb{Z}+\pi j\mathbb{Z}$; the second is the kernel of the exponential. A period may act in one eigenvalue alone, which is impossible in the complex case with its single period $2\pi$.</p>
 <h3 id="the-other-functions">The Other Functions</h3>
 <p>The remaining functions are the quotients</p>
 <p>$$
 \tan\breve Q=\frac{\sin\breve Q}{\cos\breve Q},\qquad \cot\breve Q=\frac{\cos\breve Q}{\sin\breve Q},
 \qquad
-\tanh\breve Q=\frac{\sinh\breve Q}{\cosh\breve Q},\qquad \coth\breve Q=\frac{\cosh\breve Q}{\sinh\breve Q}.
+\tanh\breve Q=\frac{\sinh\breve Q}{\cosh\breve Q},\qquad \coth\breve Q=\frac{\cosh\breve Q}{\sinh\breve Q},
+$$</p>
+<p>$$
+\sec\breve Q=\frac{1}{\cos\breve Q},\qquad \csc\breve Q=\frac{1}{\sin\breve Q},
+\qquad
+\operatorname{sech}\breve Q=\frac{1}{\cosh\breve Q},\qquad \operatorname{csch}\breve Q=\frac{1}{\sinh\breve Q}.
 $$</p>
 <p>They are defined wherever the denominator is a unit. The poles of $\tan$ and $\cot$ are therefore the sets where $\cos\breve Q$ or $\sin\breve Q$ fails to be a unit, that is where one eigenvalue of the denominator vanishes; each such set is the union of two families of complex planes. The same rule applies to the hyperbolic functions.</p>
 <h3 id="the-inverse-functions">The Inverse Functions</h3>
@@ -748,32 +781,39 @@ $$</p>
 <tr>
 <th>Function</th>
 <th>Formula</th>
+<th>Domain</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$\arcsin\breve Q$</td>
 <td>$-i\operatorname{Log}\bigl(i\breve Q+\sqrt{1-\breve Q^{2}}\bigr)$</td>
+<td>where both eigenvalue expressions are defined</td>
 </tr>
 <tr>
 <td>$\arccos\breve Q$</td>
 <td>$-i\operatorname{Log}\bigl(\breve Q+i\sqrt{1-\breve Q^{2}}\bigr)$</td>
+<td>where both eigenvalue expressions are defined</td>
 </tr>
 <tr>
 <td>$\arctan\breve Q$</td>
 <td>$\dfrac{1}{2i}\operatorname{Log}\dfrac{1+i\breve Q}{1-i\breve Q}$</td>
+<td>where $1\pm i\breve Q$ are units</td>
 </tr>
 <tr>
 <td>$\operatorname{arsinh}\breve Q$</td>
 <td>$\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}+1}\bigr)$</td>
+<td>where both eigenvalue expressions are defined</td>
 </tr>
 <tr>
 <td>$\operatorname{arcosh}\breve Q$</td>
 <td>$\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}-1}\bigr)$</td>
+<td>where both eigenvalue expressions are defined</td>
 </tr>
 <tr>
 <td>$\operatorname{artanh}\breve Q$</td>
 <td>$\dfrac12\operatorname{Log}\dfrac{1+\breve Q}{1-\breve Q}$</td>
+<td>where $1\pm\breve Q$ are units</td>
 </tr>
 </tbody>
 </table></div>
@@ -848,12 +888,20 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 </thead>
 <tbody>
 <tr>
+<td>Regimes</td>
+<td>distinct unit, zero divisor, scalar; the algebra is reduced, so there is no nilpotent regime</td>
+</tr>
+<tr>
 <td>Spectrum</td>
 <td>$\sigma(\breve Q)=\{\lambda_1,\lambda_2\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$</td>
 </tr>
 <tr>
 <td>Eigenprojections</td>
 <td>$\Pi_\pm=\tfrac12(1\pm j)$</td>
+</tr>
+<tr>
+<td>Idempotent Principle</td>
+<td>$f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every complex power series</td>
 </tr>
 <tr>
 <td>Exponential</td>
@@ -900,12 +948,12 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 <td>$\sin^2\breve Q+\cos^2\breve Q=1$, $\cosh^2\breve Q-\sinh^2\breve Q=1$, the addition and double-angle formulas</td>
 </tr>
 <tr>
-<td>Inverse functions</td>
-<td>$\arcsin\breve Q$, $\arccos\breve Q$, $\arctan\breve Q$ and the hyperbolic inverses, built from the logarithm and the square root</td>
-</tr>
-<tr>
 <td>Periods</td>
 <td>$\mathcal{P}_{\sin}=\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$; $\mathcal{P}_{\sinh}=\ker\exp$</td>
+</tr>
+<tr>
+<td>Inverse functions</td>
+<td>$\arcsin\breve Q$, $\arccos\breve Q$, $\arctan\breve Q$ and the hyperbolic inverses, built from the logarithm and the square root</td>
 </tr>
 </tbody>
 </table></div>
@@ -925,29 +973,14 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\exp(\breve Q_1+\breve Q_2)$</td>
-<td>$\exp\breve Q_1\exp\breve Q_2$</td>
-<td>all $\breve Q_1,\breve Q_2$, the algebra being commutative</td>
+<td>$\operatorname{Log}\breve Q$</td>
+<td>$\frac{\operatorname{Log}\lambda_1+\operatorname{Log}\lambda_2}{2}+j\frac{\operatorname{Log}\lambda_1-\operatorname{Log}\lambda_2}{2}$</td>
+<td>the units</td>
 </tr>
 <tr>
-<td>$\exp(i\theta)$</td>
-<td>$\cos\theta+i\sin\theta$</td>
-<td>$\theta\in\mathbb{R}$</td>
-</tr>
-<tr>
-<td>$\exp(ij\beta)$</td>
-<td>$\cos\beta+ij\sin\beta$</td>
-<td>$\beta\in\mathbb{R}$</td>
-</tr>
-<tr>
-<td>$\exp(j\phi)$</td>
-<td>$\cosh\phi+j\sinh\phi$</td>
-<td>$\phi\in\mathbb{R}$</td>
-</tr>
-<tr>
-<td>$\cos\breve Q$</td>
-<td>$\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
-<td>all $\breve Q$</td>
+<td>$\breve Q^{s}$</td>
+<td>$\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa\in\ker\exp$</td>
+<td>the units, with a branch choice</td>
 </tr>
 <tr>
 <td>$\sin\breve Q$</td>
@@ -955,8 +988,8 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\cosh\breve Q$</td>
-<td>$\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
+<td>$\cos\breve Q$</td>
+<td>$\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
 <td>all $\breve Q$</td>
 </tr>
 <tr>
@@ -965,29 +998,44 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\operatorname{Log}\breve Q$</td>
-<td>$\frac{\operatorname{Log}(\lambda_1)+\operatorname{Log}(\lambda_2)}{2}+j\frac{\operatorname{Log}(\lambda_1)-\operatorname{Log}(\lambda_2)}{2}$</td>
-<td>the units; analytic off $\lambda_1,\lambda_2\in(-\infty,0)$</td>
+<td>$\cosh\breve Q$</td>
+<td>$\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
+<td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\log\breve Q$</td>
-<td>the same with a branch choice in each eigenvalue</td>
-<td>units, branch choice</td>
+<td>$\tan\breve Q$</td>
+<td>$\sin\breve Q/\cos\breve Q$</td>
+<td>$\cos\breve Q$ a unit</td>
 </tr>
 <tr>
-<td>$\ker\exp$</td>
-<td>$2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$</td>
-<td>the period lattice</td>
+<td>$\cot\breve Q$</td>
+<td>$\cos\breve Q/\sin\breve Q$</td>
+<td>$\sin\breve Q$ a unit</td>
 </tr>
 <tr>
-<td>$\breve Q^{s}$</td>
-<td>$\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa\in\ker\exp$</td>
-<td>units, branch choice</td>
+<td>$\tanh\breve Q$</td>
+<td>$\sinh\breve Q/\cosh\breve Q$</td>
+<td>$\cosh\breve Q$ a unit</td>
 </tr>
 <tr>
-<td>$\breve R$ with $\breve R^{n}=\breve Q$</td>
-<td>$n^{2}$ solutions for a unit, $n$ for a one-eigenvalue zero divisor, $1$ for $0$</td>
-<td>$n\ge1$</td>
+<td>$\coth\breve Q$</td>
+<td>$\cosh\breve Q/\sinh\breve Q$</td>
+<td>$\sinh\breve Q$ a unit</td>
+</tr>
+<tr>
+<td>$\operatorname{arsinh}\breve Q$</td>
+<td>$\operatorname{Log}(\breve Q+\sqrt{\breve Q^{2}+1})$</td>
+<td>where the square root and the logarithm are defined</td>
+</tr>
+<tr>
+<td>$\operatorname{arcosh}\breve Q$</td>
+<td>$\operatorname{Log}(\breve Q+\sqrt{\breve Q^{2}-1})$</td>
+<td>where the square root and the logarithm are defined</td>
+</tr>
+<tr>
+<td>$\operatorname{artanh}\breve Q$</td>
+<td>$\tfrac12\operatorname{Log}\dfrac{1+\breve Q}{1-\breve Q}$</td>
+<td>where $1\pm\breve Q$ are units</td>
 </tr>
 </tbody>
 </table></div>
@@ -1159,6 +1207,10 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 <tr>
 <td>$\sin\breve Q,\ \cos\breve Q,\ \sinh\breve Q,\ \cosh\breve Q$</td>
 <td>trigonometric and hyperbolic functions</td>
+</tr>
+<tr>
+<td>$\sec\breve Q,\ \csc\breve Q,\ \operatorname{sech}\breve Q,\ \operatorname{csch}\breve Q$</td>
+<td>Reciprocal functions</td>
 </tr>
 <tr>
 <td>$\breve Q^{s}$</td>

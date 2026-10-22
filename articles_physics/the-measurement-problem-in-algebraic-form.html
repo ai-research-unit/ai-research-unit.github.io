@@ -122,6 +122,21 @@ $$</p>
 $$</p>
 <p>and the reversible evolution is the unitary case. So the reversible/irreversible dichotomy, which the standard formalism states as a distinction between two postulated dynamics, is here a distinction between two classes of element of one algebra, acting through one operation form.</p>
 <p>This restatement is exact. It is also only a restatement: membership in one class or the other is a property of an element, and an element does not act unless something selects it. The selection of the element is what the algebra does not supply, and that is the subject of the next section.</p>
+<h3 id="the-polar-form-of-the-acting-element">The Polar Form of the Acting Element</h3>
+<p>The acting element $\tilde Q_3$ is the Kraus operator of the outcome, and $\Gamma_{\tilde Q_3}$ is the unnormalized update. Its generalized polar form is</p>
+<p>$$
+\tilde Q_3=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}},
+\qquad
+\tilde H_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
+$$</p>
+<p>with $\tilde H_{\mathrm{pos}}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p}}$ a partial isometry. The update is</p>
+<p>$$
+\Gamma_{\tilde Q_3}(\tilde{Ϛ})
+=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}\tilde{Ϛ}\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}:
+$$</p>
+<p>the unitary factor acts first, then the positive filter.</p>
+<p>The two classes of the preceding section are the two extremes of this family. The unitary case is $\tilde H_{\mathrm{pos}}=e_t$ and $\tilde U_{\mathrm{p}}=\tilde Q_3$, with no filter. The idempotent case is $\tilde Q_3=\tilde\Pi$, hence $\tilde H_{\mathrm{pos}}=\tilde U_{\mathrm{p}}=\tilde\Pi$: the element is on the null cone, the amplitude is rank one, and the outcome is sharp. A general invertible $\tilde Q_3$ has $\tilde H_{\mathrm{pos}}>0$ and $\tilde U_{\mathrm{p}}$ unitary; the outcome is unsharp, the update is a rotation followed by a filter, and the element is neither unitary nor idempotent.</p>
+<p>The two classes are therefore not an exhaustive partition of the acting elements; they are the endpoints and the boundary of one polar family. The reversible/irreversible dichotomy of the maps remains, but the element that acts in a single outcome can be an interior point. The algebraic selection problem is the selection of an element from this family, not a binary choice between two elements. The null cone is the boundary of the sharp case, not a third dynamics. The companion article <em>The Polar Decomposition of a Kraus Operator</em> gives the full classification, the effect formula and the worked examples.</p>
 <h2 id="the-problem-in-algebraic-form">The Problem in Algebraic Form</h2>
 <p>Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_t e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:</p>
 <ol>
@@ -282,6 +297,14 @@ $$</p>
 <td>Conjugation; unitary evolution ($\tilde{Q}_3 = \tilde{U}$) or projective sandwich ($\tilde{Q}_3 = \tilde\Pi_{1,2}$)</td>
 </tr>
 <tr>
+<td>$\tilde Q_3=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$, $\tilde H_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$</td>
+<td>Polar form of the acting element; $\tilde H_{\mathrm{pos}}\ge0$, $\tilde U_{\mathrm{p}}$ a partial isometry</td>
+</tr>
+<tr>
+<td>$\Gamma_{\tilde Q_3}(\tilde{Ϛ})=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}\tilde{Ϛ}\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}$</td>
+<td>Unitary backaction followed by the positive filter</td>
+</tr>
+<tr>
 <td>$\tilde{U}\tilde{U}^{*} = e_t$</td>
 <td>Unitary element (reversible evolution)</td>
 </tr>
@@ -327,6 +350,7 @@ $$</p>
 <ul>
 <li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the Hermitian case and the normality criterion behind the Born pairing.</li>
 <li><a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a>, for the biorthogonal weights that a non-normal observable would need.</li>
+<li><a href="the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a>, for the strength and backaction of the acting element and the null-cone boundary of the sharp case.</li>
 <li>John von Neumann, <em>Mathematical Foundations of Quantum Mechanics</em> (Princeton, 1932), for the projection postulate, the density matrix, and the regress that bears his name.</li>
 <li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the foundational statement of the two evolutions.</li>
 <li>Asher Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for non-selective versus selective measurement, the Bloch-ball geometry, and the measurement problem as a statement about ensembles.</li>

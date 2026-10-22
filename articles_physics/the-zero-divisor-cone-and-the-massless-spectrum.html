@@ -108,6 +108,10 @@
 <td><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a></td>
 </tr>
 <tr>
+<td>The generalized polar decomposition, the partial isometry and the rank-one form</td>
+<td><a href="../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html">The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone</a></td>
+</tr>
+<tr>
 <td>The projective cone, the Segre quadric and the two rulings</td>
 <td><a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a></td>
 </tr>
@@ -231,6 +235,58 @@ $$</p>
 <p>with $\tilde\Pi(-\vec u)$ of square one, Hermitian, trace one and norm zero. The null momentum is therefore on the <strong>non-pure</strong> part of the cone, the part the nilpotents do not reach.</p>
 <p>The nilpotents are pure. They lie in the vector subspace and in neither sector: the informational and the material sectors contain no nilpotent at all, because a Hermitian or anti-Hermitian element of square zero is zero. A root of $0$ is an algebraic lightlike <em>displacement</em> — a direction that annihilates itself — and it is not a four-momentum. The four-momentum is the idempotent multiple above.</p>
 <p>The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\Upsilon^2=0$, and there is no higher index. That rigidity is what makes the nilpotent cone a good algebraic model of a lightlike displacement: the element carries a direction, and one composition with itself is enough to erase it. It is not a model of a lightlike four-momentum, which is not erased by its own composition.</p>
+<h2 id="the-generalized-decomposition-on-the-cone">The Generalized Decomposition on the Cone</h2>
+<p>The four-factor word stops at the cone; the two-factor Cartan pairing does not. For every element there is a unique pair</p>
+<p>$$
+\tilde Q=\tilde H\tilde U,
+\qquad
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}}\ \text{Hermitian positive semidefinite},
+\qquad
+\tilde U=\tilde H^{+}\tilde Q,
+$$</p>
+<p>with $\tilde U$ a partial isometry satisfying $\tilde U^{*}\tilde U=\tilde\Pi_{\mathrm i}$ and $\tilde U\tilde U^{*}=\tilde\Pi_{\mathrm f}$, the projections onto the initial and final subspaces of $\tilde Q$, and $\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$. Off the cone this is the Cartan pairing. On the cone it degenerates in a definite way: a nonzero null element is a positive scalar times a partial isometry,</p>
+<p>$$
+\tilde Q=\sigma\tilde U,
+\qquad
+\sigma=\lVert\tilde Q\rVert_{\mathrm F}>0,
+\qquad
+\tilde H=\sigma\tilde\Pi_{\mathrm f},
+\qquad
+\tilde\Pi_{\mathrm f}=\tilde U\tilde U^{*},
+$$</p>
+<p>and the two projections of $\tilde U$ are rank-one Hermitian idempotents, the pure states of the algebra. The positive factor is a scaled pure state, not a scalar.</p>
+<p>This is the sharpest statement the cone admits. The boundary value of the word depends on the path; the generalized pair does not. The pair is canonical, and it is the limit that keeps the two lines when the unitary factor loses rank. What the cone does not have is a four-factor word, a logarithm and a continuous unitary phase; what it has is the two-factor pairing with a partial isometry.</p>
+<p><strong>The reading.</strong> The positive factor is the state on the cone, and the second factor is the isometry between the initial and final lines. The unitary phase of the invertible case has collapsed to a transition between two pure states. The rank drop is the lost reversible part.</p>
+<p><strong>The boundary.</strong> The pair is canonical only with the two projection conditions and the range condition on $\tilde H$. Without them the decomposition is not unique: $(\tilde\Pi,e_t)$ multiplies to $\tilde\Pi$ and is excluded because $e_t$ has the wrong projections. The generalized pairing is also not the four factors regrouped; the scale, the phase, the boost and the rotor do not exist on the cone.</p>
+<h2 id="the-null-field">The Null Field</h2>
+<p>The field strength is the other physical object on the cone, and it sits on the other stratum from the null momentum.</p>
+<p>The field-strength biquaternion is pure, $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, and its norm is</p>
+<p>$$
+\langle\tilde F\rangle_{\natural}=-\epsilon\left(I_1+2icI_2\right),
+\qquad
+I_1=\vec E^{2}-c^{2}\vec B^{2},
+\qquad
+I_2=\vec E\cdot\vec B.
+$$</p>
+<p>The field is null exactly when $I_1=I_2=0$, that is when $\vec E\perp\vec B$ and $\lvert\vec E\rvert=c\lvert\vec B\rvert$. Because $\tilde F$ is pure, $\tilde F^{2}=-\langle\tilde F\rangle_{\natural}$, so a null field is a <strong>nilpotent</strong>: it lies on the nilpotent stratum, not on the idempotent stratum.</p>
+<p>The generalized pair reads the null field as</p>
+<p>$$
+\tilde F=\sigma\tilde U,
+\qquad
+\sigma=\lVert\tilde F\rVert_{\mathrm F},
+\qquad
+\tilde H=\sigma\tilde\Pi_{\mathrm f},
+\qquad
+\tilde\Pi_{\mathrm f}=\tilde U\tilde U^{*},
+$$</p>
+<p>and the state $\tilde F\tilde F^{*}/2\langle\tilde F,\tilde F\rangle_{*}=\tilde\Pi_{\mathrm f}$ is pure. The field's amplitude is a pure state of weight $\sigma$, and its phase is a partial isometry between two lines.</p>
+<p>The contrast with the massless momentum is the point. A null momentum is an imaginary multiple of a Hermitian idempotent,</p>
+<p>$$
+\tilde P=2i\frac{E}{c}\tilde\Pi(-\vec u),
+$$</p>
+<p>and it lies on the idempotent stratum. A null field is a nilpotent and lies on the nilpotent stratum. The two are on the same cone and are not the same kind of element: the momentum is a real null vector of $\mathbb{M}_-$, the field is a pure isotropic vector of the whole algebra. The cone is the common locus, not a common object.</p>
+<p><strong>The reading.</strong> The null field is the radiative field: the two invariant scalars vanish, the field is rank one, and its state is pure. The reading is the algebraic form of the statement that a null field has no rest frame and no invariant intensity; the energy density is frame-dependent.</p>
+<p><strong>The boundary.</strong> The cone fixes the nullity, not the polarization. The field's direction, its helicity and its intensity are extra data, and the cone does not separate the two helicities of a null field. The identification of the null field with a photon is a separate step, owned by the radiation articles.</p>
 <h2 id="the-cone-is-a-boundary-value-of-the-polar-word">The Cone Is a Boundary Value of the Polar Word</h2>
 <p>The polar decomposition is defined off the cone and has no value on it. It has a boundary value, and the boundary values are exactly the nonzero elements of the cone.</p>
 <p><strong>The boundary-value theorem.</strong> Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\zeta$ a unit complex number and $R>0$, and set</p>
@@ -244,7 +300,7 @@ $$</p>
 <p>a nonzero element of the cone. The limit is a complex multiple of a minimal idempotent when $\vec u_{\mathrm r}$ has a component in the plane spanned by $e_t$ and $\vec u_{\mathrm b}$, and it is a nilpotent exactly when $\vec u_{\mathrm r}$ is orthogonal to both. Every nonzero element of the cone is such a limit for some choice of the data.</p>
 <p>The physical reading is a massive family approaching the massless wall. The scale collapses as $\exp(-\psi/2)$ while the rapidity diverges, so the norm goes to zero at the same rate as the boost grows. The direction of the boost and the rotor decide which stratum is reached. A rotor with a component in that plane gives the idempotent stratum that carries the photon, and a rotor orthogonal to both gives the nilpotent stratum, which is not a four-momentum. The stratum is selected by the rotor, not by the rate, and the rate is the same for both.</p>
 <p>The massless limit of a massive family is the physical instance of the theorem; it is worked out, with the rate and the two strata, in <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a>.</p>
-<p><strong>The boundary.</strong> The theorem is a statement about the closure of the domain, not about a value at the wall. The cone has no polar decomposition and no logarithm. The word exists only as a limit. A limit taken along another path can approach a different point of the cone, so the boundary value depends on the direction of approach as well as on the element.</p>
+<p><strong>The boundary.</strong> The theorem is a statement about the closure of the domain, not about a value at the wall. The cone has no four-factor word and no logarithm; its canonical two-factor pairing is the generalized one above, and the boundary value is a statement about the limit, not about that pair. The word exists only as a limit. A limit taken along another path can approach a different point of the cone, so the boundary value depends on the direction of approach as well as on the element.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <ul>
 <li><strong>The cone is the light cone.</strong> The interpretation is that the zero set of the norm, cut by the material sector, is the null cone of Minkowski space. The mass shells are the level sets of the four-momentum norm, not of the position norm. Boundary: the identification needs the sector cut; on the whole algebra the cone is a complex cone and not a spacetime object.</li>
@@ -266,6 +322,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has three nested zero sets: the roots of $0$, which are the origin and the nilpotent cone; the nilpotents, which are the nonzero pure isotropic elements of index two; and the zero-divisor cone, which is strictly larger and contains the non-pure zero divisors, the complex multiples of the non-trivial idempotents. The cone is the wall of the group of units, closed under composition and the boundary of invertibility.</p>
 <p>Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The <strong>massless spectrum</strong> is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object. The polar word has no value on the cone but has boundary values there: a diverging boost with a collapsing scale reaches an idempotent multiple when the rotor has a component in the plane of $e_t$ and the boost axis, and a nilpotent when the rotor is orthogonal to both.</p>
+<p>The cone also has a canonical two-factor decomposition, which the four-factor word cannot supply. Every element is $\tilde Q=\tilde H\tilde U$ with $\tilde H$ positive semidefinite and $\tilde U$ a partial isometry; on the cone $\tilde Q=\sigma\tilde U$ and $\tilde H=\sigma\tilde\Pi_{\mathrm f}$, a scaled pure state. The boundary value depends on the path; the generalized pair does not. The massless momentum and the null field sit on different strata of the same cone: the momentum is an imaginary multiple of an idempotent, the field is a pure nilpotent.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -286,6 +343,14 @@ $$</p>
 <tr>
 <td>$\tilde\Upsilon$</td>
 <td>a nilpotent, $\tilde\Upsilon^2=0$, $\tilde\Upsilon\neq0$</td>
+</tr>
+<tr>
+<td>$\sigma=\lVert\tilde Q\rVert_{\mathrm F}$</td>
+<td>the Frobenius scale of a nonzero null element</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm i},\tilde\Pi_{\mathrm f}$</td>
+<td>the initial and final projections of the partial isometry</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
@@ -322,6 +387,8 @@ $$</p>
 <li><a href="../articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a> and <a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a>, for the cone as a singular object and its projective rulings.</li>
 <li><a href="the-physical-interpretation-of-the-12-products.html">The Physical Interpretation of the 12 Products</a>, for the zero-divisor sets of the twelve structures and the cone as the shared object of the four general products.</li>
 <li><a href="the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html">The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</a> and <a href="the-spinor-helicity-formalism-and-biquaternions.html">The Spinor-Helicity Formalism and Biquaternions</a>, for the direction, the chirality and the helicity weights.</li>
+<li><a href="../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html">The Generalized Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone</a>, for the canonical two-factor pairing on the cone.</li>
+<li><a href="the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a>, for the null field and the two invariants.</li>
 <li><a href="the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, for the element-level division.</li>
 </ul>
       </div>

@@ -87,8 +87,64 @@ $$</p>
 <p>in general. The four exponents are therefore kept separate, and the decomposition is a product of four exponentials. A single logarithm of $\tilde Q$ still exists — the group of units is $\mathrm{GL}_2(\mathbb{C})$, which is exponential — but it is not the sum of the four exponents; the difference is the Baker–Campbell–Hausdorff correction, computed in §<em>The Exponent and the Logarithm</em>.</p>
 <p>The word is defined on the invertible elements, and its boundary is the null cone, the set where the norm vanishes. The boundary is not a harmless edge: the rapidity diverges there, the scale collapses, and the word has no single limit there, only boundary values along paths. The elements that carry these boundary values are the rank-one elements — the minimal idempotents, the simplest zero divisors, and, in the degenerate case, the nilpotents. The final part of the article reads the polar data at the boundary.</p>
 <p>The boundary has two strata: the nonzero complex multiples of the minimal idempotents, where the scalar part is nonzero, and the nilpotents, where it vanishes. Every minimal idempotent is $\tfrac12(e_t+\vec\Xi)$ with $\vec\Xi$ a pure root of $+1$, and the Hermitian ones, $\tfrac12(e_t+i\vec u)$ with $\vec u$ a real unit vector, form a sphere. The polar word reaches them at infinite rapidity with the scale collapsing; the rotor moves them to the other minimal idempotents, and the relative orientation of the boost and the rotor decides between the two strata. §<em>The Boundary of the Word</em> proves the three statements.</p>
-<p>The article recalls the spectral data and the two analytic facts it uses (§<em>The Spectral Setting</em>), states the four exponentials and their ranges (§<em>The Decomposition</em>), proves existence and uniqueness (§<em>Existence and Uniqueness</em>), separates the Cartan logarithm from the single logarithm and describes the kernel and the fibre (§<em>The Logarithm</em>), reads the group law as the bracket of the two kinds of exponent (§<em>The Group Law</em>), gives the matrix picture (§<em>The Matrix Picture</em>), compares the three polar forms (§<em>The Three Polar Decompositions</em>), and reads the parameters as coordinates on the group of units (§<em>The Exponential Coordinates</em>). It then treats the boundary in one block: the null cone and its two strata, the minimal idempotents, the Hermitian idempotents and the sphere they form, the Peirce decomposition, the boundary limits of the word, the exponential limit and the action on the idempotents (§<em>The Boundary of the Word</em>). Two worked examples illustrate the interior and the boundary (§<em>Worked Examples</em> and §<em>Worked Examples at the Boundary</em>).</p>
+<p><strong>The result.</strong> The decomposition reads as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra</td>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>Domain</td>
+<td>$\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$</td>
+</tr>
+<tr>
+<td>Eigenvalues</td>
+<td>$\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+</tr>
+<tr>
+<td>Decomposition</td>
+<td>$\tilde Q=r\exp(i\alpha)\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td>$r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\psi\ge0$, $\theta\in[0,2\pi]$, unit axes</td>
+</tr>
+<tr>
+<td>Unit factor</td>
+<td>$\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, of norm one; the phase $\zeta=\exp(i\alpha)$ belongs to the modulus $\Rho=r\zeta$</td>
+</tr>
+<tr>
+<td>Exponent</td>
+<td>the formal exponent $\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$, not a logarithm in general; the Cartan pair is $(i\frac{\psi}{2}\vec u_{\mathrm b},\frac{\theta}{2}\vec u_{\mathrm r})$</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>every invertible element has a word</td>
+</tr>
+<tr>
+<td>Uniqueness</td>
+<td>the word is unique; the axes are undefined at $\psi=0$ and $\theta\in\{0,2\pi\}$</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>eigenvalues in $2\pi i\mathbb{Z}$; not a subgroup</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>$\mathbb{B}^{\times}\cong\mathrm{GL}_2(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$, $i^{2}=-1$; a general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients. The quaternion conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$. The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu}Q_\mu^{2}$, and $\tilde Q$ is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf M_2(e_t)=I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$ and $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$. Every numerical value displayed below was recomputed in double precision.</p>
+<p><strong>Boundaries.</strong> The eigenvalue decomposition, the idempotents and the Peirce decomposition are <em>Eigenvalue Decomposition of a Biquaternion</em>; the exponential, the logarithm and the two real directions are <em>Biquaternion Elementary Functions</em>. Both are used here and their results are not restated. The modulus, the unit factor and the theorem of existence and uniqueness are <em>Modulus–Unit Polar Decomposition of Biquaternions</em>; the Hermitian positive and unitary factors are <em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em>; the group of units and the exponential map are <em>Biquaternion Lie Group and Exponential Structure</em>. The quaternion member is <em>Exponential Polar Decomposition of Quaternions</em>, the split-complex member is <em>Exponential Polar Decomposition of Split-Complex Numbers</em>, and the commutative four-dimensional member is <em>Exponential Polar Decomposition of Reduced Biquaternions</em>.</p>
+<p>The plan is as follows. The spectral data and the two analytic facts are recalled (§<em>The Spectral Setting</em>); the definition, the exponent and its components, the factors and the single exponential are given (§<em>The Decomposition</em>); existence and uniqueness are proved (§<em>Existence and Uniqueness</em>); the Cartan logarithm, the single logarithm, the kernel and the fibre are described (§<em>The Logarithm</em>); the group law is read as the bracket of the two kinds of exponent (§<em>The Group Law</em>); the matrix picture is given (§<em>The Matrix Picture</em>); the three polar forms are compared (§<em>The Three Polar Decompositions</em>); and the parameters are read as coordinates on the group of units (§<em>The Exponential Coordinates</em>). It then treats the boundary in one block: the null cone and its two strata, the minimal idempotents, the Hermitian idempotents and the sphere they form, the Peirce decomposition, the boundary limits of the word, the exponential limit and the action on the idempotents (§<em>The Boundary of the Word</em>). Two worked examples illustrate the interior and the boundary (§<em>Worked Examples</em> and §<em>Worked Examples at the Boundary</em>).</p>
 <h2 id="the-spectral-setting">The Spectral Setting</h2>
 <p>The decomposition rests on two results of the category, and neither is proved again here: the eigenvalue decomposition of <em>Eigenvalue Decomposition of a Biquaternion</em> and the exponential and logarithm of <em>Biquaternion Elementary Functions</em>.</p>
 <h3 id="the-eigenvalue-data">The Eigenvalue Data</h3>
@@ -224,8 +280,8 @@ $$</p>
 $$</p>
 <p>with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and unit vectors $\vec u_{\mathrm b},\vec u_{\mathrm r}\in\mathbb{R}^{3}$. The four factors are the <strong>scale</strong>, the <strong>phase</strong>, the <strong>boost</strong> and the <strong>rotor</strong>, in this order. The order matters: the scale and the phase are central and may be moved, but the boost and the rotor do not commute.</p>
 <p>The ranges select one representative of each factor. The phase is half-open because the sign it leaves out is the rotor of angle $2\pi$; the rapidity is non-negative because the axis absorbs the sign; the rotor angle is closed because $\theta=0$ and $\theta=2\pi$ are the two signs of the identity.</p>
-<h3 id="the-exponent-and-its-four-components">The Exponent and Its Four Components</h3>
-<p>The exponent is the sum of the four blocks,</p>
+<h3 id="the-exponent-and-its-components">The Exponent and Its Components</h3>
+<p>The exponent is the sum of four components,</p>
 <p>$$
 \tilde Q_{\log}=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
 $$</p>
@@ -233,7 +289,7 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Block</th>
+<th>Component</th>
 <th>Exponent</th>
 <th>Range</th>
 <th>Factor</th>
@@ -272,7 +328,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The two central blocks $\ln r$ and $i\alpha$ lie in the centre $\mathbb{C}e_t$. The boost block lies in $\mathfrak p$ and the rotor block in $\mathfrak k$, the two summands of $\mathfrak{sl}(2,\mathbb{C})$ introduced in §<em>The Cartan Logarithm</em>. The four blocks do not commute in general, and the exponent is not a logarithm of $\tilde Q$; that is the subject of §<em>The Exponent and the Logarithm</em>.</p>
-<h3 id="the-four-factors">The Four Factors</h3>
+<h3 id="the-factors">The Factors</h3>
 <p>Each factor is defined in <em>Biquaternion Elementary Functions</em>, and the paragraphs below record the closed forms and the parameter ranges used by the polar decomposition. The two central factors commute with everything and may be written on either side of the two non-central ones.</p>
 <p>The scale is the positive real exponential</p>
 <p>$$
@@ -317,6 +373,34 @@ $$</p>
 \theta=2\arccos\bigl(\operatorname{Sc}\tilde u_{\mathrm r}\bigr),
 $$</p>
 <p>and the axis is the normalised vector part.</p>
+<p>The four factors group into the modulus and the unit factor, and the table records the two groups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Formula</th>
+<th>Range</th>
+<th>Exponent</th>
+<th>Parameter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modulus</td>
+<td>$\Rho=r\exp(i\alpha)$</td>
+<td>$\arg\Rho\in(-\frac{\pi}{2},\frac{\pi}{2}]$</td>
+<td>$\ln r+i\alpha$</td>
+<td>$r>0$, $\alpha$ in the branch</td>
+</tr>
+<tr>
+<td>Unit factor</td>
+<td>$\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$SL(2,\mathbb{C})$</td>
+<td>$i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\psi\ge0$, $\theta\in[0,2\pi]$, unit axes</td>
+</tr>
+</tbody>
+</table></div>
 <h3 id="one-exponential">One Exponential</h3>
 <p>The two central factors commute with the two non-central ones and with each other. The boost and the rotor commute exactly when their axes are parallel or antiparallel:</p>
 <p>$$
@@ -569,6 +653,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
+<h3 id="the-matrix-exponential">The Matrix Exponential</h3>
 <p>The matrix model turns the exponential into the matrix exponential, because $\mathsf M_2$ is a $\mathbb{C}$-algebra homomorphism:</p>
 <p>$$
 \mathsf M_2\bigl(\exp\tilde X\bigr)=\exp\bigl(\mathsf M_2(\tilde X)\bigr).
@@ -622,11 +707,17 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<h3 id="the-matrix-logarithm-and-the-derivative">The Matrix Logarithm and the Derivative</h3>
 <p>The exponential is surjective onto $\mathrm{GL}_2(\mathbb{C})$ because every invertible matrix has a logarithm, and it is not injective because the logarithm is multivalued. The determinant gives</p>
 <p>$$
 \det\mathsf M_2\bigl(\exp\tilde X\bigr)=\exp\bigl(\operatorname{tr}\mathsf M_2(\tilde X)\bigr)\neq0,
 $$</p>
 <p>so the image lies in the units, and the trace is the logarithmic scale of the determinant. By <em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em> and §<em>Degenerate Regimes</em>, the eigenvalues of $\mathsf M_2(\tilde Q)$ are $Q_t\pm iB$, and the Jordan type at $B=0$ decides the shape of the fibre: distinct eigenvalues give two integer lattices, one for each eigenvalue; a double eigenvalue with a nontrivial Jordan block gives a discrete family; and a scalar matrix gives a continuous family of conjugates.</p>
+<p>The derivative of the exponential is not left multiplication by the exponential. By <em>Biquaternion Elementary Functions</em>, §<em>Properties</em>,</p>
+<p>$$
+d\exp_{\tilde X}(\tilde H)=\int_0^1\exp(s\tilde X)\,\tilde H\,\exp((1-s)\tilde X)\,ds,
+$$</p>
+<p>and it reduces to $\exp(\tilde X)\tilde H$ when $[\tilde H,\tilde X]=0$. In the commutative algebras the commutator vanishes identically, so the derivative is left multiplication by the exponential; here it is not, because the algebra is noncommutative.</p>
 <h2 id="the-three-polar-decompositions">The Three Polar Decompositions</h2>
 <p>The exponential form is one of three presentations of the same factorisation. The algebraic word $\tilde Q=\Rho\tilde U$ of <em>Modulus–Unit Polar Decomposition of Biquaternions</em> is the coarsest; the Cartan form splits the unit factor into a Hermitian positive factor and a unitary factor; the exponential form writes each factor as an exponential. The three agree on the element and differ in the functions they use and in the group law.</p>
 <h3 id="the-three-forms">The Three Forms</h3>
@@ -1059,7 +1150,7 @@ $$</p>
 <p>The example is the one of the algebraic article, so the four factors agree with the table there. It is also the simplest case in which the two logarithms can be compared: the vector part is null, the matrix has a single eigenvalue and a nontrivial Jordan block, and the logarithm is nevertheless unique once the scalar branch is fixed.</p>
 <h2 id="worked-examples-at-the-boundary">Worked Examples at the Boundary</h2>
 <p>The example takes the axis $\vec e_z$, its two idempotents, the Peirce basis they define, and the two boundary paths.</p>
-<h3 id="the-idempotents-of-the-axis-math651">The Idempotents of the Axis $\vec e_z$</h3>
+<h3 id="the-idempotents-of-the-axis-math682">The Idempotents of the Axis $\vec e_z$</h3>
 <p>Take $\vec u=\vec e_z$. The two idempotents are</p>
 <p>$$
 \tilde\Pi_{+}=\frac12\bigl(e_t+i\vec e_z\bigr),
@@ -1183,12 +1274,24 @@ $$</p>
 <td>the invertible biquaternions, $\langle\tilde Q\rangle_{\natural}\neq0$</td>
 </tr>
 <tr>
+<td>Eigenvalues</td>
+<td>$\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+</tr>
+<tr>
 <td>Decomposition</td>
 <td>$\tilde Q=r\exp(i\alpha)\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$</td>
 </tr>
 <tr>
-<td>Factors</td>
-<td>scale $r>0$; phase $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$; boost $\psi\ge0$; rotor $\theta\in[0,2\pi]$; unit axes</td>
+<td>Parameters</td>
+<td>$r>0$; $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$; $\psi\ge0$; $\theta\in[0,2\pi]$; unit axes</td>
+</tr>
+<tr>
+<td>Unit factor</td>
+<td>$\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, of norm one; the phase $\zeta=\exp(i\alpha)$ belongs to the modulus $\Rho=r\zeta$</td>
+</tr>
+<tr>
+<td>Exponent</td>
+<td>the formal exponent $\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$, not a logarithm unless the axes commute</td>
 </tr>
 <tr>
 <td>Existence</td>
@@ -1197,18 +1300,6 @@ $$</p>
 <tr>
 <td>Uniqueness</td>
 <td>the word is unique; the axes are undefined at $\psi=0$ and $\theta\in\{0,2\pi\}$</td>
-</tr>
-<tr>
-<td>Cartan logarithm</td>
-<td>$(\tilde H,\tilde K)=(i\frac{\psi}{2}\vec u_{\mathrm b},\frac{\theta}{2}\vec u_{\mathrm r})$</td>
-</tr>
-<tr>
-<td>Single logarithm</td>
-<td>$\operatorname{Log}\tilde Q=\ln r+i\alpha+\operatorname{Log}(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$, multivalued</td>
-</tr>
-<tr>
-<td>Formal exponent</td>
-<td>$\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$, not a logarithm unless the axes commute</td>
 </tr>
 <tr>
 <td>Kernel</td>
@@ -1223,12 +1314,24 @@ $$</p>
 <td>Baker–Campbell–Hausdorff, with the brackets of the symmetric pair $(\mathfrak k,\mathfrak p)$</td>
 </tr>
 <tr>
+<td>Group</td>
+<td>$\mathbb{B}^{\times}\cong\mathrm{GL}_2(\mathbb{C})$</td>
+</tr>
+<tr>
 <td>Matrix picture</td>
 <td>$\mathrm{GL}_2(\mathbb{C})=\mathfrak u(2)\oplus\mathfrak H$; the two logarithms</td>
 </tr>
 <tr>
 <td>Coordinates</td>
 <td>$(\ln r,\alpha,\psi,\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})$, eight real dimensions; $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$</td>
+</tr>
+<tr>
+<td>Cartan logarithm</td>
+<td>$(\tilde H,\tilde K)=(i\frac{\psi}{2}\vec u_{\mathrm b},\frac{\theta}{2}\vec u_{\mathrm r})$</td>
+</tr>
+<tr>
+<td>Single logarithm</td>
+<td>$\operatorname{Log}\tilde Q=\ln r+i\alpha+\operatorname{Log}(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$, multivalued</td>
 </tr>
 <tr>
 <td>Boundary</td>
@@ -1250,20 +1353,20 @@ $$</p>
 <td>$\tilde Q=Q_te_t+\vec Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ in the distinct regime</td>
 </tr>
 <tr>
+<td>Eigenvalues</td>
+<td>$\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+</tr>
+<tr>
 <td>Exponent</td>
 <td>$\tilde Q_{\log}=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
-<td>Scale</td>
-<td>$r>0$</td>
-</tr>
-<tr>
-<td>Phase</td>
-<td>$\zeta=\exp(i\alpha)$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$</td>
+<td>Modulus</td>
+<td>$\Rho=r\exp(i\alpha)$, with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$</td>
 </tr>
 <tr>
 <td>Unit factor</td>
-<td>$\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, of norm one</td>
 </tr>
 <tr>
 <td>Decomposition</td>
@@ -1301,6 +1404,14 @@ $$</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a biquaternion, with scalar part $Q_t$ and vector part $\vec Q$</td>
+</tr>
 <tr>
 <td>$\tilde Q=r \exp(i\alpha)\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$</td>
 <td>the exponential polar decomposition</td>
@@ -1409,9 +1520,9 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the algebraic word, the modulus–unit writing, the four factors and the theorem of existence and uniqueness.</li>
-<li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm, the closed forms, the kernel and the two real directions.</li>
 <li><a href="eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the eigenvalues, the eigenprojections, the Peirce decomposition and the parity-matched lattice used above.</li>
+<li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm, the closed forms, the kernel and the two real directions.</li>
+<li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the algebraic word, the modulus–unit writing, the four factors and the theorem of existence and uniqueness.</li>
 <li><a href="biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a>, for the exponential map of the group of units, the failure of surjectivity on the norm-one group and the Baker–Campbell–Hausdorff series.</li>
 <li><a href="exponential-polar-decomposition-of-quaternions.html">Exponential Polar Decomposition of Quaternions</a>, for the quaternion case, where the four factors reduce to two and the exponents amalgamate.</li>
 <li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, for the Hermitian positive and unitary factors and the Cartan decomposition of the exponents.</li>
