@@ -4,9 +4,9 @@
 
 This article reads the reduced biquaternion space with its **multiplication** and fixes it as an **algebra**: the definition of the product, the data the algebra carries, the axioms it satisfies and the plan of the block of articles that study it. The multiplication is the general plain bilinear product $\breve Q_{1}\breve Q_{2}$ of *The Four Products, Their Forms and Their Algebraic Norms*, read as the product of the algebra and not as one of four products side by side; the other three general products are not associative and are not the product of the algebra.
 
-The general plain algebra is the **associative** case of the reduced biquaternion layer, and it is the case the rest of the category is built on. It is commutative and unital, with the unit $1$; it is **not** a field and **not** a division algebra, because it has the two idempotent lines as zero divisors; and its invertibility is decided by the reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, which is the algebraic norm of the quaternionic bilinear product and the determinant of the multiplication (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
+The general plain algebra is the **associative** case of the reduced biquaternion layer, and it is the case the rest of the category is built on. It is commutative and unital, with the unit $1$; it is **not** a field and **not** a division algebra, because it has the two idempotent lines as zero divisors; and its invertibility is decided by the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, which is the algebraic norm of the tessarine bilinear product and the determinant of the multiplication (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
 
-**The results.** The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of *Reduced Biquaternion Space*. Its unit is $1$, its inverse is $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ when $\langle \breve Q\rangle_{\natural}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and its multiplication is componentwise in the idempotent coordinates.
+**The results.** The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of *Reduced Biquaternion Space*. Its unit is $1$, its inverse is $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and its multiplication is componentwise in the idempotent coordinates.
 
 **Boundaries.** The space and its two scalar systems are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, above this article in this category; the involutions are *The Two Involutions and the Group of Involutions*; the four products and their forms and norms are *The Four Products, Their Forms and Their Algebraic Norms*. The algebraic norm of the multiplication and the invertibility criterion are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*; the roots of one and the idempotents are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*; and the roots of zero and the nilpotents are *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*. The element representations, the multiplication operators, the remarkable subspaces, the topology, the analysis, the geometry and the fractals are the later blocks of the category, listed in §*The Plan of the Block*.
 
@@ -22,7 +22,7 @@ $$
 $$
 extended to the whole space by bilinearity. The product is written by juxtaposition, $\breve Q_{1}\breve Q_{2}$.
 
-The definition is the definition of the algebra of *Reduced Biquaternion Space*; the product here is read as **the** product and not as one of the four general products, and the article fixes it as the algebra product. The general plain bilinear product is its coordinate table; the general quaternionic bilinear product, the general plain sesquilinear product and the general quaternionic sesquilinear product are the other three, and none of them is associative (*The Four Products, Their Forms and Their Algebraic Norms*, §*The Comparison of the Four Products*).
+The definition is the definition of the algebra of *Reduced Biquaternion Space*; the product here is read as **the** product and not as one of the four general products, and the article fixes it as the algebra product. The general plain bilinear product is its coordinate table; the general tessarine bilinear product, the general plain sesquilinear product and the general tessarine sesquilinear product are the other three, and none of them is associative (*The Four Products, Their Forms and Their Algebraic Norms*, §*The Comparison of the Four Products*).
 
 ### The Data
 
@@ -88,9 +88,9 @@ The proposition is the reason every question about the algebra splits into two q
 
 ### The Unit and the Inverse
 
-**The unit is $1$, it is two-sided and unique, and an element is invertible exactly when its reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, with the inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$.**
+**The unit is $1$, it is two-sided and unique, and an element is invertible exactly when its reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, with the inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$.**
 
-*Proof.* The unit is $1=1+0j$, and $1\,\breve Q=\breve Q\,1=\breve Q$. Uniqueness: if $e$ is a unit then $e=e1=1$. The criterion $\langle \breve Q\rangle_{\natural}\neq0$ and the inverse are *The Four Products, Their Forms and Their Algebraic Norms*, §*The Multiplicative Norm*, and the full treatment is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article. In the idempotent coordinates the inverse of $(Q_{+},Q_{-})$ is $(Q_{+}^{-1},Q_{-}^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}\neq0$.
+*Proof.* The unit is $1=1+0j$, and $1\,\breve Q=\breve Q\,1=\breve Q$. Uniqueness: if $e$ is a unit then $e=e1=1$. The criterion $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ and the inverse are *The Four Products, Their Forms and Their Algebraic Norms*, §*The Multiplicative Norm*, and the full treatment is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article. In the idempotent coordinates the inverse of $(Q_{+},Q_{-})$ is $(Q_{+}^{-1},Q_{-}^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$.
 
 ### The Absence of Division
 
@@ -98,7 +98,7 @@ The proposition is the reason every question about the algebra splits into two q
 
 *Proof.* The idempotents are orthogonal and nonzero, $\Pi_+\Pi_-=0$, so $\Pi_+$ and $\Pi_-$ are zero divisors (*Reduced Biquaternion Space*); the element $(1,0)$ annihilates $(0,1)$ in the idempotent coordinates, and both are nonzero. An element whose one idempotent coordinate vanishes is a nonzero zero divisor, so the group of units is a proper subset of $\mathbb{B}_{\mathrm{r}}\setminus\{0\}$.
 
-The zero divisors, their two families and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, below this article; their annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*. The **absence of division** is stated here because it bears on every statement of an inverse: an element must be tested against $\langle \breve Q\rangle_{\natural}\neq0$ before it is inverted.
+The zero divisors, their two families and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, below this article; their annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*. The **absence of division** is stated here because it bears on every statement of an inverse: an element must be tested against $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ before it is inverted.
 
 ## The Structure
 
@@ -144,7 +144,7 @@ $$
 $$
 the general plain bilinear product read as the product of the algebra. Its data are the space, the product, the unit and the scalar system; it is an associative, commutative, unital $\mathbb{R}$-algebra and $\mathbb{C}$-algebra, with unit $1$ and with the multiplication in the idempotent coordinates componentwise, $\breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+},Q_{1-}Q_{2-})$ for $\breve Q_{1}=(Q_{1+},Q_{1-})$ and $\breve Q_{2}=(Q_{2+},Q_{2-})$.
 
-An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with scalar part $Q_{\blacktriangle}$ and $j$-part $jQ_{\blacktriangledown}$; its inverse exists exactly when the reduced norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, and it is $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$. The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two copies of $\mathbb{C}$, its maximal ideals are the two idempotent lines, its only idempotents are $0,1,\Pi_+,\Pi_-$, and it **has zero divisors and is not a field and not a division algebra**. The block of the general plain algebra is the thirteen articles of §*The Plan of the Block*, of which this article is the first.
+An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with scalar part $Q_{\blacktriangle}$ and $j$-part $jQ_{\blacktriangledown}$; its inverse exists exactly when the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, and it is $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$. The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two copies of $\mathbb{C}$, its maximal ideals are the two idempotent lines, its only idempotents are $0,1,\Pi_+,\Pi_-$, and it **has zero divisors and is not a field and not a division algebra**. The block of the general plain algebra is the thirteen articles of §*The Plan of the Block*, of which this article is the first.
 
 ## Summary of Notation
 
@@ -155,8 +155,8 @@ An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with scalar 
 | $Q_{\blacktriangle}$, $jQ_{\blacktriangledown}$ | the scalar part and the $j$-part |
 | $Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates of $\breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two idempotents |
-| $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm and the invertibility criterion |
-| $\breve Q^{-1}=\langle \breve Q\rangle_{\natural}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ | the inverse |
+| $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm and the invertibility criterion |
+| $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ | the inverse |
 | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | the structure of the algebra as a direct product |
 
 ## Further Reading

@@ -187,7 +187,7 @@ This is the same decomposition as above, written in terms of the eigenspaces of 
 
 ## Quadratic Forms and Inner Product
 
-The quadratic form of the algebra and the inner product are a **form** and a **distance**, structures of the topology layer, which this layer may name but cannot measure with. They are developed in the companion article *Complex Norm and Invertibility*, which develops the norm $N(Q) = Q\bar{Q}$, its multiplicativity, the Hermitian form, the Euclidean norm and the inner product $\langle Q_1, Q_2\rangle = \bar{Q}_1Q_2$. Nothing is proved with them here, and the absence of that development is itself the layer statement of this article: the algebra carries its multiplication, its single nontrivial involution and its two subspaces, and the form enters at the next layer.
+The quadratic form of the algebra and the inner product are a **form** and a **distance**, structures of the topology layer, which this layer may name but cannot measure with. They are developed in the companion article *Complex Norm and Invertibility*, which develops the norm $\langle Q\rangle_{*} = Q\bar{Q}$, its multiplicativity, the Hermitian form $\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})$, the Euclidean norm and the Hermitian product $\bar{Q}_1Q_2$. Nothing is proved with them here, and the absence of that development is itself the layer statement of this article: the algebra carries its multiplication, its single nontrivial involution and its two subspaces, and the form enters at the next layer.
 
 ## Summary
 
@@ -195,7 +195,7 @@ The complex algebra $\mathbb{C}$ is the real algebra of dimension $2$ with basis
 
 Complex conjugation is the nontrivial $\mathbb{R}$-linear involution; its fixed subspace is the real subspace $\mathbb{R}_{\mathbb{C}}$, on which it acts as the identity, and its anti-fixed subspace is the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, which it negates. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every complex number decomposes uniquely in each of the two ways the article records: as a real part plus an imaginary part, and as the sum of the $+1$ and $-1$ eigencomponents.
 
-The quadratic form of the algebra and the inner product — the norm $N(Q) = Q\bar{Q}$, the Hermitian form and the inner product $\langle Q_1, Q_2\rangle = \bar{Q}_1Q_2$ — are a form and a distance, structures of the topology layer, and they are developed in the companion article *Complex Norm and Invertibility*, not here.
+The quadratic form of the algebra and the inner product — the norm $\langle Q\rangle_{*} = Q\bar{Q}$, the Hermitian form $\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})$ and the Hermitian product $\bar{Q}_1Q_2$ — are a form and a distance, structures of the topology layer, and they are developed in the companion article *Complex Norm and Invertibility*, not here.
 
 ## Summary of Notation
 

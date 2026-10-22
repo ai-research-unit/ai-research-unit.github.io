@@ -4,7 +4,7 @@
 
 The sesquilinear product of the split-complex space is the form $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$ on its regular module. The present article reads that form as a **form**: its two slots, its conjugate symmetry, its Gram matrix and its signature; its **positivity**, which is indefinite, and the **cone** that replaces the positive-definite cone of the complex case; the **modules** over the ring, which decompose as pairs of real spaces through the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, with the classification of the Hermitian forms over them.
 
-The results are the two-dimensional end of the family and they are sharper than in the four-dimensional case. The form $\langle\cdot,\cdot\rangle_{*}$ is conjugate-symmetric, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second, and its realified scalar part is the indefinite form $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$ of signature $(1,1)$. The form is **indefinite**: $\langle 1,1\rangle_{*} = 1$ and $\langle j,j\rangle_{*} = -1$. It therefore defines no positive cone through its Hermitian square, since $Q\bar Q = \langle Q\rangle_{\natural} = q^2-q'^2$ already takes every real value; the cone that survives is the **cone of squares** of the plain product, $\mathcal{C} = \{q_+\ge0, q_-\ge0\} = \{q\ge\lvert q'\rvert\}$, the order cone, closed, convex, pointed, generating and self-dual for $g$, whose boundary meets the null cone in the two positive rays. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality holds. The Hermitian forms on the modules are classified by a real matrix, hence up to isometry by its rank; every nondegenerate form is isometric to the standard one and is **hyperbolic**, the two idempotent halves supplying a Lagrangian, so the Witt group of the ring is trivial.
+The results are the two-dimensional end of the family and they are sharper than in the four-dimensional case. The form $\langle\cdot,\cdot\rangle_{*}$ is conjugate-symmetric, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second, and its realified scalar part is the indefinite form $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$ of signature $(1,1)$. The form is **indefinite**: $\langle 1,1\rangle_{*} = 1$ and $\langle j,j\rangle_{*} = -1$. It therefore defines no positive cone through its Hermitian square, since $Q\bar Q = \langle Q\rangle_{*} = q^2-q'^2$ already takes every real value; the cone that survives is the **cone of squares** of the plain product, $\mathcal{C} = \{q_+\ge0, q_-\ge0\} = \{q\ge\lvert q'\rvert\}$, the order cone, closed, convex, pointed, generating and self-dual for $g$, whose boundary meets the null cone in the two positive rays. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality holds. The Hermitian forms on the modules are classified by a real matrix, hence up to isometry by its rank; every nondegenerate form is isometric to the standard one and is **hyperbolic**, the two idempotent halves supplying a Lagrangian, so the Witt group of the ring is trivial.
 
 **Placement.** The article is the second entry of the split-complex general-plain-sesqualgebra block, after *The Sesquilinear Product of the Split-Complexoid Space*, and it closes the sesquilinear side; the slot reading of the two products and the two pairings with their adjoints are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*, above this article in this category. The product itself, its associator, its one-sided multiplications, its sandwich, its adjoints and its commutator are the first article of the block. The scalar form $g$ and the norm are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space* and *Split-Complex Norm and Invertibility*; the cone of squares, its order and the classes of element are *The Classes of Element of the Split-Complex Algebra*; the null cone and the zero divisors are *Split-Complex Zero Divisors*; and the subspaces with their forms are *Remarkable Subspaces of the Split-Complexoid and the Two Forms*.
 
@@ -39,7 +39,7 @@ $$
 
 **Proof.** The two scalar rules are those of the product, already proved in *The Sesquilinear Product of the Split-Complexoid Space*. For the symmetry, $\langle Q_2,Q_1\rangle_{*} = Q_2\bar Q_1$ and $\overline{\langle Q_1,Q_2\rangle_{*}} = \overline{Q_1\bar Q_2} = \bar Q_1 Q_2$, which is equal to $Q_2\bar Q_1$ by commutativity.
 
-The form is thus Hermitian with respect to the conjugation, in the sense of the ring with involution $(\mathbb{D},\bar\cdot)$. It is not symmetric and not bilinear, and it is not $\mathbb{D}$-bilinear: the second slot is twisted. The scalar product $Q\bar Q = \langle Q\rangle_{\natural}$ of an element with itself is real, as conjugate symmetry forces, and it is the norm.
+The form is thus Hermitian with respect to the conjugation, in the sense of the ring with involution $(\mathbb{D},\bar\cdot)$. It is not symmetric and not bilinear, and it is not $\mathbb{D}$-bilinear: the second slot is twisted. The scalar product $Q\bar Q = \langle Q\rangle_{*}$ of an element with itself is real, as conjugate symmetry forces, and it is the norm.
 
 ### The Gram Matrix and the Signature
 
@@ -64,7 +64,7 @@ $$
 
 **Proof.** $\langle 1,1\rangle_{*} = 1$, $\langle 1,j\rangle_{*} = \bar j = -j$, $\langle j,1\rangle_{*} = j$ and $\langle j,j\rangle_{*} = j\bar j = -j^2 = -1$; the conjugate symmetry of the matrix is the proposition above read coefficientwise. The scalar part of $Q_1\bar Q_2 = (q_1q_2-q'_1q'_2)+(q'_1q_2-q_1q'_2)j$ is $q_1q_2-q'_1q'_2$, whose matrix in the basis $\{1,j\}$ is diagonal with entries $1$ and $-1$.
 
-So the form has **signature $(1,1)$**: one positive and one negative direction over the reals, the positive direction being the real line and the negative one the split imaginary line. The two directions are orthogonal, since $g(1,j) = 0$. The $\mathbb{D}$-valued Gram matrix $G$ is not the right carrier of the nondegeneracy, since its determinant vanishes, $\det G = -1+j^2 = 0$; the nondegeneracy is read on the real matrix of the next section. The form $g$ is the polarisation of the norm, $\langle Q\rangle_{\natural} = g(Q,Q) = Q\bar Q$, and this article's form theory is the case $n = 1$ of the modules of the section below. The full description of the two forms and the two norms and their signatures is *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*. The sign of the square is what decides the definiteness: the complex structure has $J^2=-\mathrm{id}$ and its canonical Hermitian form is definite, while the split structure has $J^2=+\mathrm{id}$ and its canonical Hermitian form is indefinite, of signature $(1,1)$.
+So the form has **signature $(1,1)$**: one positive and one negative direction over the reals, the positive direction being the real line and the negative one the split imaginary line. The two directions are orthogonal, since $g(1,j) = 0$. The $\mathbb{D}$-valued Gram matrix $G$ is not the right carrier of the nondegeneracy, since its determinant vanishes, $\det G = -1+j^2 = 0$; the nondegeneracy is read on the real matrix of the next section. The form $g$ is the polarisation of the norm, $\langle Q\rangle_{*} = g(Q,Q) = Q\bar Q$, and this article's form theory is the case $n = 1$ of the modules of the section below. The full description of the two forms and the two norms and their signatures is *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*. The sign of the square is what decides the definiteness: the complex structure has $J^2=-\mathrm{id}$ and its canonical Hermitian form is definite, while the split structure has $J^2=+\mathrm{id}$ and its canonical Hermitian form is indefinite, of signature $(1,1)$.
 
 ## Positivity and the Cone
 
@@ -72,13 +72,13 @@ So the form has **signature $(1,1)$**: one positive and one negative direction o
 
 **Theorem.** The form $\langle\cdot,\cdot\rangle_{*}$ is **indefinite**: it is neither positive semidefinite nor negative semidefinite, and it has isotropic vectors other than $0$.
 
-**Proof.** $\langle 1,1\rangle_{*} = 1 > 0$ and $\langle j,j\rangle_{*} = -1 < 0$, so the scalar part takes both signs; that already excludes both semidefiniteness. The isotropic set is non-zero since $\langle 1+j,1+j\rangle_{*} = \langle 1+j\rangle_{\natural} = 0$.
+**Proof.** $\langle 1,1\rangle_{*} = 1 > 0$ and $\langle j,j\rangle_{*} = -1 < 0$, so the scalar part takes both signs; that already excludes both semidefiniteness. The isotropic set is non-zero since $\langle 1+j,1+j\rangle_{*} = \langle 1+j\rangle_{*} = 0$.
 
 The indefinite form is the two-dimensional member of the family in which no definite form exists. For the complex field the canonical form $A\bar C$ is already positive definite, and every nonzero element has positive square length; on $\mathbb{D}$ the two sign directions are present in every basis pair $\{1,j\}$, and the isotropic set is a pair of lines rather than the origin alone.
 
 ### The Hermitian Square Gives No Cone
 
-**Proposition.** The Hermitian square of the form, the map $Q \mapsto Q\bar Q = \langle Q\rangle_{\natural}$, has image all of $\mathbb{R}_{\mathbb{D}}$:
+**Proposition.** The Hermitian square of the form, the map $Q \mapsto Q\bar Q = \langle Q\rangle_{*}$, has image all of $\mathbb{R}_{\mathbb{D}}$:
 
 $$
 \{Q\bar Q : Q \in \mathbb{D}\} = \mathbb{R}.
@@ -124,9 +124,9 @@ $$
 
 where $\partial\mathcal{C} = \mathbb{R}_{\ge0}\Pi_1\cup\mathbb{R}_{\ge0}\Pi_2$. The zero divisors are $\mathcal{N}\setminus\{0\}$.
 
-**Proof.** $\langle Q,Q\rangle_{*} = Q\bar Q = \langle Q\rangle_{\natural} = q^2-q'^2$, which vanishes iff $(q-q')(q+q') = 0$, i.e. $Q \in \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$; the identification of the null cone with the zero divisors is *Split-Complex Zero Divisors*. The half-line description is read from the signs of $q_+$ and $q_-$.
+**Proof.** $\langle Q,Q\rangle_{*} = Q\bar Q = \langle Q\rangle_{*} = q^2-q'^2$, which vanishes iff $(q-q')(q+q') = 0$, i.e. $Q \in \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$; the identification of the null cone with the zero divisors is *Split-Complex Zero Divisors*. The half-line description is read from the signs of $q_+$ and $q_-$.
 
-So the isotropic set of $\langle\cdot,\cdot\rangle_{*}$ is the null cone, a cross of two lines of real dimension $1$, and the zero divisors are its nonzero points. The cone $\mathcal{C}$ meets it in the two non-negative rays, which are the boundary of the order cone, and the points of the null cone are exactly the elements across which the sign of $\langle\cdot,\cdot\rangle_{\natural}$ changes. The form $\langle\cdot,\cdot\rangle_{*}$ is indefinite, the real line being its positive direction and the split imaginary line its negative one; the norm $\langle\cdot\rangle_{\natural}$, its sign and the distribution of the invertible elements are *Split-Complex Norm and Invertibility*.
+So the isotropic set of $\langle\cdot,\cdot\rangle_{*}$ is the null cone, a cross of two lines of real dimension $1$, and the zero divisors are its nonzero points. The cone $\mathcal{C}$ meets it in the two non-negative rays, which are the boundary of the order cone, and the points of the null cone are exactly the elements across which the sign of $\langle\cdot,\cdot\rangle_{*}$ changes. The form $\langle\cdot,\cdot\rangle_{*}$ is indefinite, the real line being its positive direction and the split imaginary line its negative one; the norm $\langle\cdot\rangle_{*}$, its sign and the distribution of the invertible elements are *Split-Complex Norm and Invertibility*.
 
 ### The Reversed Cauchy–Schwarz Inequality
 
@@ -138,7 +138,7 @@ $$
 
 with equality if and only if $Q_1$ and $Q_2$ are proportional. On the interior of the cone all three quantities are positive, and the inequality is the reverse of the definite one.
 
-**Proof.** In idempotent coordinates $g(Q_1,Q_2) = \tfrac12(q_{1+}q_{2-} + q_{1-}q_{2+})$ and $g(Q_1,Q_1) = q_{1+}q_{1-} = \langle Q_1\rangle_{\natural}$ and $g(Q_2,Q_2) = q_{2+}q_{2-}$, so
+**Proof.** In idempotent coordinates $g(Q_1,Q_2) = \tfrac12(q_{1+}q_{2-} + q_{1-}q_{2+})$ and $g(Q_1,Q_1) = q_{1+}q_{1-} = \langle Q_1\rangle_{*}$ and $g(Q_2,Q_2) = q_{2+}q_{2-}$, so
 
 $$
 g(Q_1,Q_2)^2 - g(Q_1,Q_1)\,g(Q_2,Q_2)
@@ -202,7 +202,7 @@ So the Witt group of the sesquilinear forms over the split-complex ring is the *
 
 The canonical Hermitian form of the split-complex regular module is $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second, conjugate-symmetric. Its Gram matrix in the basis $\{1,j\}$ is $\left(\begin{smallmatrix}1&-j\\j&-1\end{smallmatrix}\right)$, whose scalar part is diagonal of signature $(1,1)$; the associated symmetric bilinear form is $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$, the polarisation of the norm.
 
-The form is **indefinite**, and its diagonal image $Q\bar Q = \langle Q\rangle_{\natural} = q^2-q'^2$ is all of $\mathbb{R}$, so the sesquilinear side supplies no positive cone: this is the sharp contrast with the complex ray. The cone of the ring is the **cone of squares** of the plain product, $\mathcal{C} = \{q_+\ge0, q_-\ge0\} = \{q\ge\lvert q'\rvert\}$, a symmetric cone — closed, convex, salient, generating and self-dual for $g$ — carrying the order of $\mathbb{D}$; its boundary is the two positive rays of the null cone, and the isotropic cone of $\langle\cdot,\cdot\rangle_{*}$ is that null cone, the zero divisors with the origin. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality $g(Q_1,Q_2)^2 \ge g(Q_1,Q_1)g(Q_2,Q_2)$ holds, with equality exactly for proportional pairs.
+The form is **indefinite**, and its diagonal image $Q\bar Q = \langle Q\rangle_{*} = q^2-q'^2$ is all of $\mathbb{R}$, so the sesquilinear side supplies no positive cone: this is the sharp contrast with the complex ray. The cone of the ring is the **cone of squares** of the plain product, $\mathcal{C} = \{q_+\ge0, q_-\ge0\} = \{q\ge\lvert q'\rvert\}$, a symmetric cone — closed, convex, salient, generating and self-dual for $g$ — carrying the order of $\mathbb{D}$; its boundary is the two positive rays of the null cone, and the isotropic cone of $\langle\cdot,\cdot\rangle_{*}$ is that null cone, the zero divisors with the origin. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality $g(Q_1,Q_2)^2 \ge g(Q_1,Q_1)g(Q_2,Q_2)$ holds, with equality exactly for proportional pairs.
 
 The modules over the ring decompose as pairs of real vector spaces through $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$; the Hermitian forms on $\mathbb{D}^n$ are determined by a real matrix $P$, classified up to isometry by its rank, with a unique nondegenerate form in each rank, isometric to the standard one. Every nondegenerate form is hyperbolic — the two idempotent halves supply the Lagrangian $\mathbb{R}^n\Pi_1$ — so the hyperbolic Witt group of the ring is trivial, against the nontrivial group of the complex case.
 
@@ -215,8 +215,8 @@ The modules over the ring decompose as pairs of real vector spaces through $\mat
 | $\langle Q_2,Q_1\rangle_{*} = \overline{\langle Q_1,Q_2\rangle_{*}}$ | Conjugate symmetry |
 | $g(Q_1,Q_2) = \operatorname{Sc}\langle Q_1,Q_2\rangle_{*} = q_1q_2-q'_1q'_2$ | Scalar form, polarisation of the norm |
 | $\left(\begin{smallmatrix}1&-j\\j&-1\end{smallmatrix}\right)$ | Gram matrix of $\langle\cdot\rangle_{*}$; scalar part of signature $(1,1)$ |
-| $\mathcal{N} = \{Q : \langle Q\rangle_{\natural} = 0\}$ | Isotropic cone of $\langle\cdot,\cdot\rangle_{*}$, the null cone |
-| $\langle Q\rangle_{\natural} = Q\bar Q = q^2-q'^2$ | Hermitian square; its image is all of $\mathbb{R}$ |
+| $\mathcal{N} = \{Q : \langle Q\rangle_{*} = 0\}$ | Isotropic cone of $\langle\cdot,\cdot\rangle_{*}$, the null cone |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | Hermitian square; its image is all of $\mathbb{R}$ |
 | $\mathcal{C} = \{q_+\ge0, q_-\ge0\} = \{q\ge\lvert q'\rvert\}$ | Cone of squares, the order cone, a symmetric cone |
 | $\mathcal{C}^{*} = \mathcal{C}$ | Self-duality with respect to $g$ |
 | $g(Q_1,Q_2)^2 \ge g(Q_1,Q_1)g(Q_2,Q_2)$ on $\mathcal{C}$ | Reversed Cauchy–Schwarz inequality |

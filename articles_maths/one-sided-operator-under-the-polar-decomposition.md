@@ -1,4 +1,4 @@
-# __One-Sided Operator Under the Polar Representation__
+# __One-Sided Operator Under the Polar Decomposition__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-The two-sided operator of the polar representation is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *Two-Sided Operator Under the Polar Representation*. This article reads the one-sided factors: the polar word
+The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *Two-Sided Operator Under the Polar Decomposition*. This article reads the one-sided factors: the polar word
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -68,10 +68,10 @@ On $\mathbb{M}_-$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}
 The **norm** is the complex number
 
 $$
-N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=N(\tilde Q)\,e_t ,
+\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\,e_t ,
 $$
 
-and it is multiplicative, $N(\tilde Q\tilde Q')=N(\tilde Q)N(\tilde Q')$. The polar word is
+and it is multiplicative, $\langle\tilde Q\tilde Q'\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde Q'\rangle_{\natural}$. The polar word is
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
@@ -80,13 +80,13 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{N(\tilde Q)}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg N(\tilde Q)$. The factors satisfy
+with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
-\Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad N(\tilde U_{\mathrm b})=N(\tilde u_{\mathrm r})=1 .
+\Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$
 
-The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$.
+The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
 
 The one-sided operators are $L_{\tilde Q}$ and $R_{\tilde Q}$ above. The **Hermitian sandwich** is
 
@@ -118,7 +118,7 @@ The general algebra of the one-sided operators, without the polar word, is *One-
 
 **Remark (linear versus quadratic).** The map $\tilde Q\mapsto L_{\tilde Q}$ is linear and faithful. The map $\tilde Q\mapsto\Theta_{\tilde Q}$ is quadratic, and on the unit group its kernel is $U(1)$, as the companion article proves. The one-sided operator carries the whole parameter; the two-sided operator carries the parameter up to a central phase. This is the first reason the phase is visible one-sided and invisible two-sided.
 
-**Remark (left translation, not conjugation).** $L_{\tilde Q}$ is a left translation of the algebra. It is an automorphism only for a central parameter. The sandwich is an inner conjugation only when $\tilde Q\tilde Q^{*}=e_t$, where the right factor is the inverse; for a general polar element it is a congruence by $\tilde U_{\mathrm b}$ and a conjugation by $\tilde u_{\mathrm r}$. The two-sided article treats that distinction in full.
+**Remark (left translation, not conjugation).** $L_{\tilde Q}$ is a left translation of the algebra. It is an automorphism only for a central parameter. The sandwich is an inner conjugation only when $\tilde Q\tilde Q^{*}=e_t$, where the right factor is the inverse; for a general invertible element it is a congruence by $\tilde U_{\mathrm b}$ and a conjugation by $\tilde u_{\mathrm r}$. The two-sided article treats that distinction in full.
 
 ### The Factorisation Through the Polar Word
 
@@ -143,7 +143,7 @@ $$
 
 The four factors are collected in the following table. A factor **preserves** a sector when it maps the sector into itself, **exchanges** the two sectors when it maps one onto the other, and **mixes** them when some element of a sector has a nonzero component in both sectors after the multiplication.
 
-| factor | one-sided operator | sector action | factor on $N$ |
+| factor | one-sided operator | sector action | factor on $\langle\tilde Q\rangle_{\natural}$ |
 |---|---|---|---|
 | scale $r$ | $r\,\mathrm{id}$ | preserves both | $r^{2}$ |
 | phase $\exp(i\alpha)$ | $\exp(i\alpha)\,\mathrm{id}$ | preserves at $\alpha\equiv0\pmod{\pi}$, exchanges at $\alpha\equiv\tfrac{\pi}{2}\pmod{\pi}$, mixed otherwise | $\exp(2i\alpha)$ |
@@ -157,21 +157,21 @@ The table is justified factor by factor below; the phase row is the subject of ย
 **Proposition.** For all $\tilde Q,\tilde X$,
 
 $$
-N\bigl(L_{\tilde Q}\tilde X\bigr)=N(\tilde Q)\,N(\tilde X)=\Rho^{2}N(\tilde X),
+\langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\Rho^{2}\langle \tilde X\rangle_{\natural},
 \qquad
-N\bigl(R_{\tilde Q}\tilde X\bigr)=N(\tilde Q)\,N(\tilde X),
+\langle R_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural},
 $$
 
 and the complex determinant and the trace of the left multiplication are
 
 $$
-\det_{\mathbb{C}}L_{\tilde Q}=N(\tilde Q)^{2}=\Rho^{4},\qquad
+\det_{\mathbb{C}}L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}=\Rho^{4},\qquad
 \operatorname{tr}L_{\tilde Q}=4Q_t .
 $$
 
-*Proof.* The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=N(\tilde Q)^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.
+*Proof.* The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=\langle\tilde Q\rangle_{\natural}^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.
 
-**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $N$ by $\Rho^{2}$. On the norm-one slice $N=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form $\mathbb{M}_\pm$.
+**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form $\mathbb{M}_\pm$.
 
 The last clause is the subject of the next section: a complex isometry can exchange the two real forms, and the phase does exactly that.
 
@@ -356,10 +356,10 @@ so $J$ is an isometry between $(\mathbb{M}_-,g)$ and $(\mathbb{M}_+,g)$. In the 
 **Remark (the norm sign).** The complex norm changes sign,
 
 $$
-N(i\tilde X)=i^{2}N(\tilde X)=-N(\tilde X).
+\langle i\tilde X\rangle_{\natural}=i^{2}\langle\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}.
 $$
 
-On $\mathbb{M}_-$ one has $N=-g$, and on $\mathbb{M}_+$ one has $N=+g$. The minus sign in $N(i\tilde X)=-N(\tilde X)$ is therefore the change of the sector convention, not a failure of the isometry: the form $g$ is preserved.
+On $\mathbb{M}_-$ one has $\langle\tilde X\rangle_{\natural}=-g$, and on $\mathbb{M}_+$ one has $\langle\tilde X\rangle_{\natural}=+g$. The minus sign in $\langle i\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}$ is therefore the change of the sector convention, not a failure of the isometry: the form $g$ is preserved.
 
 **Remark (physical interpretation).** In the physical interpretation of the corpus, $\mathbb{M}_-$ is the material sector and $\mathbb{M}_+$ the informational sector. The phase of $\pi/2$ exchanges the two: it turns an anti-Hermitian element into a Hermitian one and back. The exchange is the discrete operation of the algebra that the two-sided sandwich cannot see, because the sandwich multiplies by $i$ on the left and by $-i$ on the right. The full Wick rotation of the physics articles is a different operation: it acts on the time coefficient alone and maps $\mathbb{M}_-$ to the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, not to $\mathbb{M}_+$. The operator $J$ is the sector exchange, not the whole Wick rotation.
 
@@ -403,7 +403,7 @@ and the image of $\mathbb{M}_-$ is the mixed real four-dimensional subspace on w
 
 **Remark (the period).** The operator $L_{P_\alpha}$ has period $2\pi$ in $\alpha$. The sector behaviour has period $\pi$, because $\exp(i(\alpha+\pi))=-\exp(i\alpha)$ multiplies the operator by $-1$ and leaves the eigenvalue $-\exp(-2i\alpha)$ unchanged. The exchange therefore occurs on the two classes $\alpha\equiv\pi/2\pmod{\pi}$, and the preservation on the two classes $\alpha\equiv0\pmod{\pi}$.
 
-**Remark (not a half-angle).** The polar word stores the phase as $\exp(i\alpha)$, with $\alpha=\tfrac12\arg N(\tilde Q)$. The pure phase of $\pi/2$ is therefore $i=\exp(i\pi/2)$, not $\exp(i\pi/4)$. The half-angle $\exp(i\pi/4)$ is the square root of the exchange, not the exchange itself. A half-angle convention would rename the angle of the exchange to $\pi$; it would not change the operator, only the name of its parameter.
+**Remark (not a half-angle).** The polar word stores the phase as $\exp(i\alpha)$, with $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The pure phase of $\pi/2$ is therefore $i=\exp(i\pi/2)$, not $\exp(i\pi/4)$. The half-angle $\exp(i\pi/4)$ is the square root of the exchange, not the exchange itself. A half-angle convention would rename the angle of the exchange to $\pi$; it would not change the operator, only the name of its parameter.
 
 ### The Cancellation in the Two-Sided Operator
 
@@ -474,7 +474,7 @@ $$
 
 The term $i s\,\vec u\times\vec b$ is the whole $\mathbb{M}_+$ part, an imaginary vector. The remaining terms $i(ac-s\,\vec u\cdot\vec b)e_t+c\vec b-s a\,\vec u$ are the $\mathbb{M}_-$ part, an imaginary scalar plus the real vector $c\vec b-s a\,\vec u$. The boost therefore mixes the two sectors in general. For $a=0$ the $\mathbb{M}_-$ part is $c\vec b-i s(\vec u\cdot\vec b)e_t$ and the $\mathbb{M}_+$ part is $i s\,\vec u\times\vec b$, which vanishes only when $\vec b$ is parallel to $\vec u$. For $\vec b=0$ the image is $i a(c\,e_t+i s\,\vec u)=i a c\,e_t-s a\,\vec u$, entirely in $\mathbb{M}_-$: the central imaginary line is mapped into the two-plane spanned by $i e_t$ and $\vec u$.
 
-The boost is of norm one, so $L_{\tilde U_{\mathrm b}}$ preserves the complex norm, $N(L_{\tilde U_{\mathrm b}}\tilde X)=N(\tilde X)$, and is $\mathbb{C}$-orthogonal. It is not a real Lorentz transformation of $\mathbb{M}_-$: it does not preserve the sector, and the only one-sided real Lorentz transformations are $\pm\mathrm{id}$, by the sector criterion.
+The boost is of norm one, so $L_{\tilde U_{\mathrm b}}$ preserves the complex norm, $\langle L_{\tilde U_{\mathrm b}}\tilde X\rangle_{\natural}=\langle \tilde X\rangle_{\natural}$, and is $\mathbb{C}$-orthogonal. It is not a real Lorentz transformation of $\mathbb{M}_-$: it does not preserve the sector, and the only one-sided real Lorentz transformations are $\pm\mathrm{id}$, by the sector criterion.
 
 ### The Rotor
 
@@ -544,7 +544,7 @@ The following table collects the comparison. The rank is the complex rank of the
 | parameter map | linear, faithful | quadratic; kernel $U(1)$ on the units |
 | scale | $r$ | $r^{2}$ |
 | phase | $\exp(i\alpha)$, exchange at $\pi/2$ | $1$ |
-| norm of the image | $\Rho^{2}N(\tilde X)$ | $r^{4}N(\tilde X)$ |
+| norm of the image | $\Rho^{2}\langle \tilde X\rangle_{\natural}$ | $r^{4}\langle \tilde X\rangle_{\natural}$ |
 | complex determinant | $\Rho^{4}$ | $r^{8}$ |
 | image on the units | $\cong GL(2,\mathbb{C})$, real dimension $8$ | $\cong CO^{+}(1,3)$, real dimension $7$ |
 | kernel on the units | trivial | $U(1)$ |
@@ -554,7 +554,7 @@ The following table collects the comparison. The rank is the complex rank of the
 
 ## The Null Cone
 
-On the null cone the polar word does not exist, but both one-sided operators do. Let $\tilde Q\neq0$ with $N(\tilde Q)=0$. In the matrix model $\mathsf M_2(\tilde Q)=uv^{*}$ with $u$ a nonzero column and $v^{*}$ a nonzero row. Then
+On the null cone the polar word does not exist, but both one-sided operators do. Let $\tilde Q\neq0$ with $\langle\tilde Q\rangle_{\natural}=0$. In the matrix model $\mathsf M_2(\tilde Q)=uv^{*}$ with $u$ a nonzero column and $v^{*}$ a nonzero row. Then
 
 $$
 \mathsf M_2(L_{\tilde Q}\tilde X)=\mathsf M_2(\tilde Q)\,\mathsf M_2(\tilde X)=u\,(v^{*}\mathsf M_2(\tilde X)).
@@ -602,7 +602,7 @@ $$
 J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-,\qquad J^{2}=-\mathrm{id},\qquad J^{-1}=L_{-i}.
 $$
 
-In coordinates, $\tilde X=ia\,e_t+\vec b$ is sent to $-a\,e_t+i\vec b$: the time reflection $(a,\vec b)\mapsto(-a,\vec b)$, an improper isometry of the Minkowski form $g=a^{2}-\lvert\vec b\rvert^{2}$. The complex norm changes sign, $N(i\tilde X)=-N(\tilde X)$, because the two sectors carry opposite signs in $N$. For a general phase the block matrix is
+In coordinates, $\tilde X=ia\,e_t+\vec b$ is sent to $-a\,e_t+i\vec b$: the time reflection $(a,\vec b)\mapsto(-a,\vec b)$, an improper isometry of the Minkowski form $g=a^{2}-\lvert\vec b\rvert^{2}$. The complex norm changes sign, $\langle i\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}$, because the two sectors carry opposite signs in $\langle\cdot\rangle_{\natural}$. For a general phase the block matrix is
 
 $$
 \begin{pmatrix}
@@ -631,24 +631,24 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
 | $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian sandwich |
-| $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
-| $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $N$ |
+| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
+| $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
 | $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |
 | $J=L_i=R_i$ | the pure central phase of $\pi/2$, the complex structure |
-| $g$ | the Minkowski form, $N$ on $\mathbb{M}_+$ and $-N$ on $\mathbb{M}_-$ |
+| $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{M}_+$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{M}_-$ |
 | $GL(2,\mathbb{C})$ | the image of the one-sided action on the units |
 | $CO^{+}(1,3)$ | the image of the two-sided action on the units |
 | $U(1)$ | the kernel of the two-sided action, the central unit circle |
 
 ## Further Reading
 
-- [Two-Sided Operator Under the Polar Representation](two-sided-operator-under-the-polar-representation.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
-- [The Polar Element Representation of Biquaternions](the-polar-element-representation-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
-- [The Polar Element Representation and Remarkable Subspaces](the-polar-element-representation-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks.
-- [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html), for the detailed action on the two sectors and the boost matrices.
+- [Two-Sided Operator Under the Polar Decomposition](two-sided-operator-under-the-polar-decomposition.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
+- [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
+- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks.
+- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), ยง*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the infinitesimal split of the rotor and the boost.
 - [One-Sided Operators on the General Quaternionic Algebra](one-sided-operators-on-the-general-quaternionic-algebra.html), for the general left and right multiplications, their adjoints and their normal forms.
 - [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the general two-sided family and the sandwich as its conjugation member.
 - [The Twisted Spinor Operator Representation of Biquaternions](the-twisted-spinor-operator-representation-of-biquaternions.html), for the left multiplication read on the spinor module, where the phase is the twist.

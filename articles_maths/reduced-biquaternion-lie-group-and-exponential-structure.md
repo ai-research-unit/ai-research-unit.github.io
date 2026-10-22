@@ -4,7 +4,7 @@
 
 The reduced biquaternion algebra is a real associative algebra of dimension four, and as such it carries a Lie algebra structure under the commutator, an exponential map into its group of units, and the Lie-group structures attached to the two. This article records the Lie algebra, the exponential with its closed form and its kernel, the group of units, the norm-one group and the maximal compact subgroup, the elliptic and hyperbolic one-parameter subgroups, the polar and exponential parametrisation of an element, and the comparison with the biquaternion and split biquaternion cases. The treatment is purely mathematical; no physical interpretation is used.
 
-Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\natural*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$, and the algebra norm is $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}$. The elementary functions and their closed forms are used from *Reduced Biquaternion Elementary Functions*.
+Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$, and the algebra norm is $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$. The elementary functions and their closed forms are used from *Reduced Biquaternion Elementary Functions*.
 
 ## The Algebra as a Lie Algebra
 
@@ -58,7 +58,7 @@ abelian, of real dimension four, connected but not simply connected, with fundam
 
 ## The Norm-One Group
 
-**Definition.** The **norm-one group** is $\{\breve Q\in\mathbb{B}_{\mathrm{r}}^{\times}:\langle \breve Q\rangle_{\natural}=1\}$, and the **maximal compact subgroup** is $T^{2}=\{\breve Q\in\mathbb{B}_{\mathrm{r}}^{\times}:\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$.
+**Definition.** The **norm-one group** is $\{\breve Q\in\mathbb{B}_{\mathrm{r}}^{\times}:\langle \breve Q\rangle_{\mathrm{ts}}=1\}$, and the **maximal compact subgroup** is $T^{2}=\{\breve Q\in\mathbb{B}_{\mathrm{r}}^{\times}:\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$.
 
 **Theorem (the norm-one group).** The norm-one group is
 $$
@@ -72,7 +72,7 @@ compact of dimension two, and it is the group of units lying in the Euclidean un
 
 *Proof.* The condition $Q_{+}Q_{-}=1$ determines $Q_{-}=Q_{+}^{-1}$ from $Q_{+}$, giving a copy of $\mathbb{C}^{\times}$, which is non-compact of real dimension two; the conditions $\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1$ give the product of the two unit circles, compact of dimension two, and they imply $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})=1$, so $T^{2}\subset S^{3}$.
 
-**Corollary (the norm-one group is not compact, against the quaternion cases).** For the split biquaternion algebra the norm-one group is the compact $S^{3}\times S^{3}\cong\mathrm{Spin}(4)$; for the reduced biquaternion algebra the algebra norm $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}$ is **complex**-valued, so the condition $\langle \breve Q\rangle_{\natural}=1$ fixes only the product of the two coordinates and leaves their common modulus free, and the norm-one group is non-compact. The compact group of the reduced case is instead the maximal compact subgroup $T^{2}$, the Clifford torus inside $S^{3}$.
+**Corollary (the norm-one group is not compact, against the quaternion cases).** For the split biquaternion algebra the norm-one group is the compact $S^{3}\times S^{3}\cong\mathrm{Spin}(4)$; for the reduced biquaternion algebra the algebra norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is **complex**-valued, so the condition $\langle \breve Q\rangle_{\mathrm{ts}}=1$ fixes only the product of the two coordinates and leaves their common modulus free, and the norm-one group is non-compact. The compact group of the reduced case is instead the maximal compact subgroup $T^{2}$, the Clifford torus inside $S^{3}$.
 
 *Proof.* In the split biquaternion case the norm is valued in the split complex algebra and $N=e_t$ forces both quaternion halves to have unit quaternion norm, hence to lie in $S^{3}$; here the complex norm leaves the modulus of $Q_{+}$ free, and the maximum compact subgroup of $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ is the product of the two unit circles.
 
@@ -100,7 +100,7 @@ $$
 $$
 unique under the phase-range convention, and it is a unit exactly when $\rho_{1}\rho_{2}>0$. Every **unit** has the exponential parametrisation $\breve Q=\exp S$ with $S=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-$.
 
-*Proof.* The polar form is that of *Reduced Biquaternions Polar Element Representation*, the scales being the moduli of the two coordinates and the phases their arguments; the exponential parametrisation of a unit is the surjectivity statement above.
+*Proof.* The polar form is that of *Modulus–Unit Polar Decomposition of Reduced Biquaternions*, the scales being the moduli of the two coordinates and the phases their arguments; the exponential parametrisation of a unit is the surjectivity statement above.
 
 **Corollary (the parametrisation of the unit group).** The unit group is parametrised by two positive scales and two phases, $\mathbb{B}_{\mathrm{r}}^{\times}\cong(\mathbb{R}_{>0})^{2}\times(S^{1})^{2}$, and the exponential realises the covering $\mathbb{R}^{4}=(\mathbb{R}\times\mathbb{R})\times(\mathbb{R}\times\mathbb{R})\to$ the unit group, the source being the two log-scales and the two lifted phases.
 
@@ -112,7 +112,7 @@ The biquaternion algebra is simple, its Lie algebra is a real form of $\mathfrak
 
 ## Summary
 
-The reduced biquaternion algebra is an abelian real Lie algebra of dimension four under the commutator, its bracket being identically zero because the multiplication is commutative; its centre is the whole algebra and its derived algebra vanishes. The exponential is $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$, satisfies the group law for all arguments, and is a covering map onto the unit group with kernel the lattice $2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$; it is the universal covering, the algebra being simply connected. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian, connected, of dimension four and fundamental group $\mathbb{Z}^{2}$, isomorphic to $\mathbb{R}^{2}\times T^{2}$. The norm-one group $\{\langle \breve Q\rangle_{\natural}=1\}\cong\mathbb{C}^{\times}$ is non-compact of dimension two, because the algebra norm is complex-valued, and the maximal compact subgroup is the Clifford torus $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ of the Euclidean unit sphere $S^{3}$. The elliptic one-parameter subgroups are generated by the definite directions $\mathbb{R}\{i,ij\}$ and the hyperbolic ones by the indefinite directions $\mathbb{R}\{1,j\}$, with the model subgroups $\exp(i\theta)$ and $\exp(j\phi)$. Every element has the polar form $\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-$ and every unit the exponential parametrisation. Against the non-abelian biquaternion case and the reductive split biquaternion case, the reduced case is the abelian extreme, its unit group toroidal and its compact group the two-torus rather than the product of the two three-spheres.
+The reduced biquaternion algebra is an abelian real Lie algebra of dimension four under the commutator, its bracket being identically zero because the multiplication is commutative; its centre is the whole algebra and its derived algebra vanishes. The exponential is $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$, satisfies the group law for all arguments, and is a covering map onto the unit group with kernel the lattice $2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$; it is the universal covering, the algebra being simply connected. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian, connected, of dimension four and fundamental group $\mathbb{Z}^{2}$, isomorphic to $\mathbb{R}^{2}\times T^{2}$. The norm-one group $\{\langle \breve Q\rangle_{\mathrm{ts}}=1\}\cong\mathbb{C}^{\times}$ is non-compact of dimension two, because the algebra norm is complex-valued, and the maximal compact subgroup is the Clifford torus $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ of the Euclidean unit sphere $S^{3}$. The elliptic one-parameter subgroups are generated by the definite directions $\mathbb{R}\{i,ij\}$ and the hyperbolic ones by the indefinite directions $\mathbb{R}\{1,j\}$, with the model subgroups $\exp(i\theta)$ and $\exp(j\phi)$. Every element has the polar form $\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-$ and every unit the exponential parametrisation. Against the non-abelian biquaternion case and the reductive split biquaternion case, the reduced case is the abelian extreme, its unit group toroidal and its compact group the two-torus rather than the product of the two three-spheres.
 
 ## Summary of Notation
 
@@ -123,7 +123,7 @@ The reduced biquaternion algebra is an abelian real Lie algebra of dimension fou
 | $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$ | Exponential |
 | $\ker\exp=2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$ | Kernel of the exponential |
 | $\mathbb{B}_{\mathrm{r}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | Group of units |
-| $\{\breve Q:\langle \breve Q\rangle_{\natural}=1\}\cong\mathbb{C}^{\times}$ | Norm-one group |
+| $\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}=1\}\cong\mathbb{C}^{\times}$ | Norm-one group |
 | $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ | Maximal compact subgroup |
 | $\exp(i\theta)=\cos\theta+i\sin\theta$ | Elliptic subgroup |
 | $\exp(j\phi)=\cosh\phi+j\sinh\phi$ | Hyperbolic subgroup |

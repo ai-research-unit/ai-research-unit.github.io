@@ -7,7 +7,7 @@ The split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is the two-dimens
 
 The article owns the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{D})$, the derivation space $\operatorname{Der}_{\mathbb{R}}(\mathbb{D})$, the reason the derivation space vanishes, the two-dimensional space of **twisted** (conjugation-)derivations that replaces it, and the comparison with $\mathbb{C}$. It assumes the algebra, the idempotents and the norm of *Split-Complex Algebra*, *Split-Complex Idempotents and Projections* and *Split-Complex Norm and Invertibility*, and it cites the general theory of automorphisms and derivations of an algebra as the companion article *Automorphisms and Derivations of Algebras*. No physics is invoked and no new results are claimed beyond the explicit computations for $\mathbb{D}$.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{\natural} = q^2-q'^2$. The **centre** is written $Z(\mathbb{D})$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, commutative, of real dimension $2$; basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{*} = q^2-q'^2$. The **centre** is written $Z(\mathbb{D})$.
 
 ## Standing Facts: Commutativity, the Centre and Separability
 
@@ -81,7 +81,7 @@ $$
 0 = D(j^2 - 1) = D(j)j + jD(j) = 2j\,D(j),
 $$
 
-using commutativity. Since $2j$ is a unit of $\mathbb{D}$ (its inverse is $\tfrac12 j$, because $\langle 2j\rangle_{\natural} = -4 \neq 0$), it follows that $D(j) = 0$. Hence $D$ vanishes on the basis $\{1, j\}$, so $D = 0$.
+using commutativity. Since $2j$ is a unit of $\mathbb{D}$ (its inverse is $\tfrac12 j$, because $\langle 2j\rangle_{*} = -4 \neq 0$), it follows that $D(j) = 0$. Hence $D$ vanishes on the basis $\{1, j\}$, so $D = 0$.
 
 **Proof (separability).** The algebra is the quotient $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ by a squarefree polynomial. The module of Kähler differentials is
 

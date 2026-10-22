@@ -69,7 +69,7 @@ Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\The
 
 **Theorem.** $\mathbb{B}$ is contractible; hence it is path-connected and simply connected, with $\pi_n(\mathbb{B})=0$ for every $n\geq1$.
 
-**Proof.** The straight-line homotopy $\langle t,\tilde{Q}\rangle_{*}=(1-t)\tilde{Q}$, $t\in[0,1]$, is jointly continuous with $\langle0,\cdot\rangle_{*}=\mathrm{id}$ and $\langle1,\cdot\rangle_{*}\equiv0$, so the identity is homotopic to a constant map.
+**Proof.** The straight-line homotopy $H(t,\tilde{Q})=(1-t)\tilde{Q}$, $t\in[0,1]$, is jointly continuous with $H(0,\cdot)=\mathrm{id}$ and $H(1,\cdot)\equiv0$, so the identity is homotopic to a constant map.
 
 **Corollary (the fixed subspaces).** The centre, the vector subspace, the Hermitian subspace, the anti-Hermitian subspace, the quaternion subspace and the anti-quaternion subspace are each contractible, the homotopy above preserving every linear subspace, so each is a point as far as homotopy is concerned:
 
@@ -128,7 +128,7 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 | $\|\tilde{Q}\|_E=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$ | Euclidean norm |
 | $\iota:\mathbb{B}\to\mathbb{R}^{8}$ | Linear isometry onto $\mathbb{R}^{8}$ |
 | $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$ | Normed-algebra inequality, sharp |
-| $\langle t,\tilde{Q}\rangle_{*}=(1-t)\tilde{Q}$ | Contraction of $\mathbb{B}$ to $0$ |
+| $H(t,\tilde{Q})=(1-t)\tilde{Q}$ | Contraction of $\mathbb{B}$ to $0$ |
 | $S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$ | Euclidean unit sphere; not a group |
 | $S^{7}_{E}\cap\mathcal{N}$ | Compact $5$-manifold; the link of the singular cone |
 | $O(8)$ | Isometry group of the Euclidean structure |

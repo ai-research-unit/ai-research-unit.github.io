@@ -91,7 +91,7 @@ The structure is therefore not the ring but a **sesqualgebra**: a module over an
 | right unit | yes | $Q_1\overline{1}=Q_1$ |
 | alternative, flexible, power-associative | no | the same associator |
 
-The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category; as a form the product is the general plain sesquilinear form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the second algebraic norm $\langle Q_1\rangle_{*}=Q_1\overline{Q_1}=\langle Q_1\rangle_{\natural}=q_1^2-{q'_1}^2$.
+The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category; as a form the product is the general plain sesquilinear form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the second algebraic norm $\langle Q_1\rangle_{*}=Q_1\overline{Q_1}=\langle Q_1\rangle_{\natural*}=q_1^2-{q'_1}^2$.
 
 ## The Two Products on the Idempotent Coordinates
 
@@ -147,7 +147,7 @@ The product $Q_1Q_2$ makes $\mathbb{D}$ a commutative, associative ring with two
 | $Q_1Q_2\leftrightarrow(q_{1+}q_{2+},q_{1-}q_{2-})$ | the ring product in idempotent coordinates |
 | $Q_1\overline{Q_2}\leftrightarrow(q_{1+}q_{2-},q_{1-}q_{2+})$ | the sesquilinear product in idempotent coordinates |
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ | the two products as the two forms |
-| $\langle Q_1\rangle=Q_1^2$, $\langle Q_1\rangle_{*}=\langle Q_1\rangle_{\natural}=Q_1\overline{Q_1}$ | their algebraic norms, the two algebraic norms |
+| $\langle Q_1\rangle=Q_1^2$, $\langle Q_1\rangle_{*}=\langle Q_1\rangle_{\natural*}=Q_1\overline{Q_1}$ | their algebraic norms, the two algebraic norms |
 
 ## Further Reading
 

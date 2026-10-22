@@ -2,357 +2,327 @@
 
 ## Introduction
 
-This article develops the **exponential polar decomposition** of a nonzero complex number: the writing
+This article treats the **exponential polar decomposition** of a nonzero complex number: the writing
 
 $$
-Q = \exp(\ln r + i\theta), \qquad r = \lvert Q\rvert > 0, \quad \theta = \operatorname{Arg}Q \in (-\pi,\pi].
+Q = \exp(Q_{\log}), \qquad Q_{\log} = \ln r + i\theta,
 $$
 
-The two data are read directly from the coordinates $Q = q+iq'$:
+with $r>0$ the modulus, $\theta$ the angle, $\ln r$ the logarithmic scale, and $r\exp(i\theta)$ the product of the scale and the unit factor. The exponential and the logarithm are defined and studied in *Complex Special Functions*, §*The Complex Exponential and Logarithm*; this article does not define them again. It uses only the group law $\exp(Q_{1\log}+Q_{2\log})=\exp(Q_{1\log})\exp(Q_{2\log})$ and the description of the logarithms of $Q$ from that article.
+
+The decomposition is the exponential form of the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers*, which writes every nonzero complex number as
 
 $$
-r = \sqrt{q^2+q'^2}, \qquad \theta = \operatorname{atan2}(q',q),
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad \langle u\rangle_{*} = 1,
 $$
 
-the Euclidean length and the polar angle of the point $(q,q')$. The modulus $r$ is positive and determined; the angle $\theta$ is the unique representative in $(-\pi,\pi]$ of the argument of $Q$, and every other angle of $Q$ is $\theta+2\pi k$. The exponent $\ln r+i\theta$ is the principal logarithm of $Q$. This is the entire content of the decomposition: the rest of the article explains why the exponential reproduces $Q$ from those two numbers, and what changes when the angle is not restricted.
+with $r$ the modulus and $u$ the unit factor. The unit factor is written $u=\exp(i\theta)$, and $r=\sqrt{\langle Q\rangle_{*}}$. The rational-chart form of *Rational-Chart Polar Decomposition of Complex Numbers* is the third presentation. Since $\mathbb{C}$ is commutative, the scale and the unit factor are not two independent exponentials: their product is the single exponential $\exp(Q_{\log})$.
 
-The exponential form is the third of the three polar decompositions of $\mathbb{C}$. The first is the modulus–unit form $Q = ru$ with $r = \lvert Q\rvert$ and $u = Q/\lvert Q\rvert$, developed in *Modulus–Unit Polar Decomposition of Complex Numbers*; the second is the rational-chart form, developed in *Rational-Chart Polar Decomposition of Complex Numbers*; the third is the exponential form treated here. The three are the same factorisation in three presentations: the modulus–unit form is coordinate-free, while the rational and exponential forms put a coordinate on the unit factor, the rational one local and the exponential one global. The comparison is the subject of §*The Three Polar Decompositions*.
+The article states the decomposition and computes its data (§*The Decomposition*), identifies the exponent with the logarithm and separates the principal logarithm from the general one (§*The Logarithm*), proves existence and uniqueness (§*Existence and Uniqueness*), gives examples (§*Worked Examples*), and then treats the matrix picture (§*The Matrix Picture*), the comparison with the two other polar forms (§*The Three Polar Decompositions*) and the exponential coordinates (§*The Exponential Coordinates*).
 
-The symbols are those of *Complex Algebra* and *Complex Norm and Invertibility*, and the conventions are those of *Conventions in Mathematics*; the modulus–unit decomposition is recalled from *Modulus–Unit Polar Decomposition of Complex Numbers*, the rational-chart coordinate from *Rational-Chart Polar Decomposition of Complex Numbers*, and the exponential and its group law from *Complex Exponential and Lie Group Structure*.
+The symbols are those of *Complex Algebra*, *Complex Norm and Invertibility* and *Conventions in Mathematics*. Every numerical value displayed below was recomputed in double precision.
 
-The plan follows the order in which the objects are needed. The exponential and its closed form are recalled, with the modulus and the angle written explicitly (§*The Exponential and Its Closed Form*, §*The Modulus and the Angle*), and the directions it uses are classified (§*The Three Rows of the Exponential*). Its image and kernel are then computed (§*The Image and the Kernel*), and the polar word is read as one exponential (§*The Polar Word as One Exponential*). The logarithm and the principal strip follow (§*The Logarithm and the Principal Strip*), then the decomposition is stated and proved (§*The Exponential Polar Decomposition*), and the matrix picture (§*The Matrix Picture*) and the comparison with the two other forms (§*The Three Polar Decompositions*) follow. Examples are computed (§*Worked Examples*), and the exponential coordinates close the article (§*The Exponential Coordinates*).
+## The Decomposition
 
-Every numerical value displayed below was recomputed in double precision.
+### The Data
 
-## The Exponential Map and the Polar Word
-
-### The Exponential and Its Closed Form
-
-For $Q = q+iq'$ the exponential is the power series
+Let $Q=q+iq'\neq0$. The **modulus** and the **principal angle** are
 
 $$
-\exp(Q) = \sum_{n=0}^{\infty} \frac{Q^n}{n!},
+r=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'^2}>0, \qquad
+\theta=\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi].
 $$
 
-which converges absolutely and locally uniformly. Separating even and odd powers, and using $i^{2n} = (-1)^n$ and $i^{2n+1} = (-1)^n i$, gives the closed form
+Euler's formula, $\exp(i\theta)=\cos\theta+i\sin\theta$, and $r=\exp(\ln r)$ give
 
 $$
-\exp(q+iq') = \exp(q)\left(\sum_{n=0}^{\infty}\frac{(-1)^n (q')^{2n}}{(2n)!} + i\sum_{n=0}^{\infty}\frac{(-1)^n (q')^{2n+1}}{(2n+1)!}\right) = \exp(q)\bigl(\cos q'+i\sin q'\bigr).
+Q=r(\cos\theta+i\sin\theta)=r\exp(i\theta)=\exp(Q_{\log}), \qquad Q_{\log}=\ln r+i\theta.
 $$
 
-The modulus and the argument follow at once:
+The three expressions are the same number. The middle one is the modulus–unit form; the last one is the exponential polar decomposition.
+
+**Definition.** An **exponential polar decomposition** of $Q\neq0$ is a writing
 
 $$
-\lvert\exp(q+iq')\rvert = \exp(q), \qquad \arg\exp(q+iq') = q' \pmod{2\pi}, \qquad \exp(q+iq')\neq0.
+Q=\exp(Q_{\log}), \qquad Q_{\log}=\ln r+i\theta, \quad r>0,\quad \theta\in\mathbb{R},
 $$
 
-The exponential never vanishes. Its real part is a logarithmic scale and its imaginary part is an angle, which is exactly the shape of the decomposition.
+equivalently $Q=\exp(\ln r)\exp(i\theta)$, in which $\exp(\ln r)=r$ is the **scale** and $\exp(i\theta)$ is the **unit factor**. The **exponent** is the logarithm $Q_{\log}$, with coordinates $q_{\log}=\ln r$ and $q'_{\log}=\theta$.
 
-The exponential is a homomorphism from the additive group of $\mathbb{C}$ to the multiplicative group $\mathbb{C}^\times$:
+The angle is defined modulo $2\pi$, because $\exp(i(\theta+2\pi k))=\exp(i\theta)$. The pair $(r,\exp(i\theta))$ is the modulus–unit pair. The exponent $Q_{\log}$ is a logarithm of $Q$ in the sense of §*The Logarithm*.
 
-$$
-\exp(Q_1+Q_2) = \exp(Q_1)\exp(Q_2).
-$$
+### The Two Factors
 
-**Proof.** The complex numbers commute, so the binomial theorem reorders the product of the two absolutely convergent series into the series of $\exp(Q_1+Q_2)$. No bracket survives, and the identity is exact.
-
-### The Modulus and the Angle
-
-**Definition.** Let $Q = q+iq'\neq0$. The **modulus** of $Q$ is
+The factors are read from $Q$ directly:
 
 $$
-r = \lvert Q\rvert = \sqrt{q^2+q'^2} > 0,
+\exp(\ln r)=r=\sqrt{\langle Q\rangle_{*}}, \qquad
+\exp(i\theta)=\frac{Q}{r}=\frac{Q}{\sqrt{\langle Q\rangle_{*}}}.
 $$
 
-and the **principal argument** is the unique $\theta\in(-\pi,\pi]$ with
+The first is positive real; the second has modulus one. They recover the modulus–unit decomposition. The table records the two factors.
+
+| factor | formula | range | logarithm | parameter |
+|---|---|---|---|---|
+| scale | $\exp(\ln r)=r$ | $(0,\infty)$ | $q_{\log}=\ln r$ | $r>0$ |
+| unit factor | $\exp(i\theta)=Q/r$ | $\mathrm{U}(1)$ | $iq'_{\log}=i\theta$ | $\theta\in\mathbb{R}$ modulo $2\pi$ |
+
+The real dimensions are $1$ and $1$, and they add to the real dimension $2$ of $\mathbb{C}$. The scale is non-compact; the unit factor is compact. This is the compact case of the polar decomposition.
+
+### One Exponential
+
+The product of the two factors is one exponential:
 
 $$
-\cos\theta = \frac{q}{r}, \qquad \sin\theta = \frac{q'}{r}.
+Q=\exp(\ln r)\exp(i\theta)=\exp(Q_{\log}).
 $$
 
-In coordinates, $\theta = \operatorname{atan2}(q',q)$: the angle of the vector $(q,q')$ measured from the positive real axis. On each quadrant it is an elementary arctangent:
+The amalgamation uses the group law and the fact that $\ln r$ is real and central in $\mathbb{C}$. It is not a property of a general algebra: in a noncommutative algebra the two exponents need not commute, and the product need not be a single exponential. The polar word of *Modulus–Unit Polar Decomposition of Biquaternions* is the counterexample.
 
-| position of $Q = q+iq'$ | $\operatorname{Arg}Q$ |
-|---|---|
-| $q>0$ | $\arctan(q'/q)$ |
-| $q=0$, $q'>0$ | $\pi/2$ |
-| $q<0$, $q'\ge0$ | $\arctan(q'/q)+\pi$ |
-| $q<0$, $q'<0$ | $\arctan(q'/q)-\pi$ |
-| $q=0$, $q'<0$ | $-\pi/2$ |
-
-At the origin the angle is undefined, so $Q\neq0$ throughout. The angle is defined modulo $2\pi$: the angles of $Q$ are $\theta+2\pi k$ with $k\in\mathbb{Z}$, and $\theta$ is the unique representative in $(-\pi,\pi]$.
-
-With these two numbers the decomposition is an identity, not a construction:
-
-$$
-Q = r\bigl(\cos\theta+i\sin\theta\bigr) = r\exp(i\theta) = \exp(\ln r+i\theta).
-$$
-
-The first equality is the definition of $r$ and $\theta$, the second is the Euler formula, and the third writes $r = \exp(\ln r)$ and adds the two exponents, which commute. For example, $Q = 3+4i$ has $r = \sqrt{9+16} = 5$ and $\theta = \arctan(4/3) = 0.9272952180016122$, hence
-
-$$
-Q = 5\exp(0.9272952180016122\,i) = \exp(1.6094379124341003+0.9272952180016122\,i).
-$$
-
-### The Three Rows of the Exponential
-
-The closed form is one row of a trichotomy governed by the square of the exponent direction. Let $\nu\in\mathbb{C}$ be an element with $\nu^2\in\{-1,0,+1\}$, and let $t\in\mathbb{R}$. Then
-
-$$
-\exp(\nu t) =
-\begin{cases}
-\cos t+\nu\sin t, & \nu^2 = -1,\\[2pt]
-1, & \nu^2 = 0,\\[2pt]
-\cosh t+\nu\sinh t, & \nu^2 = +1,
-\end{cases}
-$$
-
-the three rows being the trigonometric, the parabolic and the hyperbolic.
-
-| equation | roots in $\mathbb{C}$ | row | image of $t\mapsto\exp(\nu t)$ |
-|---|---|---|---|
-| $\nu^2 = -1$ | $\nu = \pm i$ | trigonometric | $\mathrm{U}(1)$ |
-| $\nu^2 = 0$ | $\nu = 0$ | parabolic | $\{1\}$ |
-| $\nu^2 = +1$ | $\nu = \pm1$ | hyperbolic | $\mathbb{R}_{>0}$ |
-
-The roots of $-1$ are $\pm i$, the two points where the unit circle meets the imaginary axis; they generate the unit circle. The roots of $+1$ are $\pm1$, both real; they generate the positive scale. In the polar word the unit factor uses the first row and the scale the third. The middle row contributes nothing, because the algebra has no nilpotent direction: the only solution of $\nu^2 = 0$ is $\nu = 0$.
-
-The split-complex algebra exchanges the two occupied rows. There $-1$ has no root, so the trigonometric row is empty; $+1$ has the four roots $\pm1,\pm j$, so the unit factor is hyperbolic and the scale stays real. The complex algebra is the case in which the unit factor is compact, and this single fact explains most of the differences between the two articles.
-
-### The Image and the Kernel
-
-**Kernel.** Suppose $\exp(q+iq') = 1$. Taking moduli gives $\exp(q) = 1$, hence $q = 0$; then $\cos q'+i\sin q' = 1$, hence $q'\in2\pi\mathbb{Z}$. Therefore
-
-$$
-\ker\exp = 2\pi i\,\mathbb{Z}.
-$$
-
-It is a lattice, not $\{0\}$: the exponential is not injective, and it is periodic with period $2\pi i$. It is also the entire failure of injectivity: the exponential forgets the integer $k$ and nothing else.
-
-**Image.** Let $Q = q+iq'\neq0$, and take $r$ and $\theta$ as in §*The Modulus and the Angle*. Then
-
-$$
-\exp(\ln r+i\theta) = r\exp(i\theta) = Q,
-$$
-
-so every nonzero complex number is an exponential and $\exp(\mathbb{C}) = \mathbb{C}^\times$. The fibre over $Q$ is the coset
-
-$$
-\exp^{-1}(Q) = \operatorname{Log}Q+2\pi i\,\mathbb{Z}, \qquad \operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q.
-$$
-
-The exponential is therefore a surjective homomorphism with kernel $2\pi i\mathbb{Z}$, and the first isomorphism theorem gives
-
-$$
-\mathbb{C}^\times \cong \mathbb{C}/2\pi i\,\mathbb{Z}
-$$
-
-as groups and as real manifolds.
-
-The complex and the split-complex cases fail in opposite ways. Here existence is free and uniqueness fails: every nonzero element is an exponential, and the angle is ambiguous. There existence fails on three of the four components and uniqueness is free: the exponential is injective, and three components have no logarithm at all. In neither algebra is the exponential an isomorphism, but the obstruction sits in the kernel in one case and in the image in the other.
-
-### The Polar Word as One Exponential
-
-**Definition.** Let $Q\in\mathbb{C}$, $Q\neq0$. An **exponential polar decomposition** of $Q$ is a writing
-
-$$
-Q = \exp(\ln r)\exp(i\theta), \qquad r>0, \quad \theta\in\mathbb{R}/2\pi\mathbb{Z},
-$$
-
-in which $\exp(\ln r)$ is the positive scale and $\exp(i\theta)$ is the unit factor.
-
-The two factors are the two exponentials of the polar word. If $Q = \exp(\ln r+i\theta)$, then
-
-$$
-\exp(\ln r) = \lvert Q\rvert, \qquad \exp(i\theta) = \frac{Q}{\lvert Q\rvert},
-$$
-
-because the modulus of $\exp(\ln r+i\theta)$ is $r$ and its argument is $\theta$. The scale is the real exponential, the unit factor is the imaginary exponential, and the two exponents commute, since $\mathbb{R}$ is central in $\mathbb{C}$:
-
-$$
-Q = \exp(\ln r)\exp(i\theta) = \exp(\ln r+i\theta).
-$$
-
-The word is therefore **one exponential**, not a product of two independent exponentials. The amalgamation is a property of the commutative algebra; in a noncommutative algebra the two exponents need not commute and the product need not be a single exponential, as the polar word of *The Polar Element Representation of Biquaternions* shows.
-
-| factor | formula | real dimension | range | exponent | parameter |
-|---|---|---|---|---|---|
-| scale | $\exp(\ln r)$ | $1$ | $(0,\infty)$ | $\ln r$ | $r>0$ |
-| unit factor | $\exp(i\theta)$ | $1$ | $\mathrm{U}(1)$ | $i\theta$ | $\theta\in\mathbb{R}/2\pi\mathbb{Z}$ |
-
-The counts add to the real dimension two of $\mathbb{C}$. The scale is non-compact, the unit factor is compact, and the exponential form separates the two.
-
-## The Logarithm and the Principal Strip
-
-### The Logarithm
-
-**Definition.** A **logarithm** of $Q\in\mathbb{C}^\times$ is a complex number $Q_{\log}$ with $\exp Q_{\log} = Q$.
-
-**Theorem.** Every nonzero complex number has a logarithm, and the logarithms of $Q$ are exactly
-
-$$
-\operatorname{Log}Q+2\pi i k, \qquad k\in\mathbb{Z}, \qquad \operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q.
-$$
-
-**Proof.** Existence is the image statement of §*The Image and the Kernel*: with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$, the number $\operatorname{Log}Q = \ln r+i\theta$ satisfies $\exp(\operatorname{Log}Q) = Q$. If $\exp Q_{\log} = \exp(Q_{\log}+h) = Q$, then $\exp h = 1$, so $h\in\ker\exp = 2\pi i\mathbb{Z}$. Hence every logarithm is $\operatorname{Log}Q+2\pi i k$.
-
-The formula is read in coordinates: the real part is $\ln\lvert Q\rvert = \tfrac12\ln(q^2+q'^2)$, the imaginary part is $\operatorname{atan2}(q',q)$. The theorem is the exact analogue of the split-complex statement, with the roles of existence and uniqueness exchanged: there the logarithm exists only on the future cone and is then unique; here it exists everywhere on $\mathbb{C}^\times$ and is never unique.
-
-### The Principal Strip
-
-**Theorem (principal strip).** The map
-
-$$
-S = \{\,\ln r+i\theta : r>0,\ -\pi<\theta\le\pi\,\} \longrightarrow \mathbb{C}^\times, \qquad Q_{\log} \longmapsto \exp Q_{\log},
-$$
-
-is a bijection, with inverse $\operatorname{Log}$.
-
-**Proof.** Existence is the theorem above, whose angle lies in $(-\pi,\pi]$. For uniqueness, suppose $\exp(\ln r_1+i\theta_1) = \exp(\ln r_2+i\theta_2)$ with both angles in $(-\pi,\pi]$. Taking moduli gives $r_1 = r_2$, hence $\ln r_1 = \ln r_2$. Dividing, $\exp\bigl(i(\theta_1-\theta_2)\bigr) = 1$, so $\theta_1-\theta_2\in2\pi\mathbb{Z}$. The two angles lie in $(-\pi,\pi]$, an interval of length $2\pi$ with one endpoint open and one closed, so their difference lies in $(-2\pi,2\pi)$; the only multiple of $2\pi$ in that interval is $0$. Hence $\theta_1 = \theta_2$.
-
-The strip is a **fundamental domain** for the action of $2\pi i\mathbb{Z}$ on $\mathbb{C}$ by translations, and the exponential identifies the two edges $\theta = -\pi$ and $\theta = \pi$, whose common image is the branch cut. The restriction to the open strip $-\pi<\theta<\pi$ is a diffeomorphism onto the cut plane $\mathbb{C}\setminus(-\infty,0]$. The half-open strip adds the negative real axis at $\theta = \pi$; there the inverse is discontinuous, and the two sides of the cut differ by $2\pi i$.
-
-### The Principal Logarithms of Some Elements
-
-| $Q$ | $\lvert Q\rvert$ | $\operatorname{Arg}Q$ | $\operatorname{Log}Q$ |
-|---|---|---|---|
-| $3+4i$ | $5$ | $0.9272952180016122$ | $1.6094379124341003+0.9272952180016122\,i$ |
-| $-1$ | $1$ | $\pi$ | $\pi i$ |
-| $i$ | $1$ | $\pi/2$ | $\frac{\pi}{2}i$ |
-| $1+i$ | $\sqrt{2}$ | $\pi/4$ | $0.3465735902799727+0.7853981633974483\,i$ |
-| $-1-i$ | $\sqrt{2}$ | $-3\pi/4$ | $0.3465735902799727-2.356194490192345\,i$ |
-
-The fifth line shows the branch convention: the argument of $-1-i$ is $-3\pi/4$, not $5\pi/4$, because the principal argument lies in $(-\pi,\pi]$. In the split-complex table the entries $-1$ and $j$ have no logarithm; here every nonzero entry has one.
-
-## The Exponential Polar Decomposition
+The word **polar** names the two factors, not two independent exponentials. The single exponent $Q_{\log}=\ln r+i\theta$ carries both the scale and the angle.
 
 ### Existence and Uniqueness
 
-**Theorem.** Every nonzero complex number $Q$ has exactly one exponential polar decomposition
+**Theorem.** Every $Q\neq0$ has exactly one exponential polar decomposition with the principal angle,
 
 $$
-Q = \exp(\ln r)\exp(i\theta), \qquad r>0, \quad \theta\in(-\pi,\pi],
+Q=\exp(\ln r)\exp(i\theta), \qquad r>0,\quad \theta\in(-\pi,\pi],
 $$
 
 namely
 
 $$
-r = \lvert Q\rvert = \sqrt{(\operatorname{Re}Q)^2+(\operatorname{Im}Q)^2}, \qquad \theta = \operatorname{Arg}Q = \operatorname{atan2}(\operatorname{Im}Q,\operatorname{Re}Q),
+r=\sqrt{\langle Q\rangle_{*}}, \qquad \theta=\operatorname{Arg}Q,
 $$
 
-the modulus and the principal angle of §*The Modulus and the Angle*.
+and exponent the principal logarithm $Q_{\log}=\operatorname{Log}Q=\ln r+i\theta$.
 
-**Existence.** Take $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$. Then $\exp(\ln r) = \lvert Q\rvert$ and $\exp(i\theta) = Q/\lvert Q\rvert$, so the product is $Q$.
+**Existence.** The data above give $r>0$ and $\theta\in(-\pi,\pi]$, and Euler's formula gives the identity.
 
-**Uniqueness.** Suppose $\exp(\ln r_1)\exp(i\theta_1) = \exp(\ln r_2)\exp(i\theta_2)$ with both angles in $(-\pi,\pi]$. The product is $\exp(\ln r_1+i\theta_1) = \exp(\ln r_2+i\theta_2)$, and the principal-strip theorem gives $\ln r_1 = \ln r_2$ and $\theta_1 = \theta_2$; hence $r_1 = r_2$.
+**Uniqueness.** Suppose $\exp(\ln r_1)\exp(i\theta_1)=\exp(\ln r_2)\exp(i\theta_2)$ with both angles in $(-\pi,\pi]$. Taking moduli gives $r_1=r_2$. Dividing gives $\exp(i(\theta_1-\theta_2))=1$, so $\theta_1-\theta_2\in2\pi\mathbb{Z}$. The difference lies in $(-2\pi,2\pi)$, so it is $0$. Hence $\theta_1=\theta_2$.
 
-The theorem is the modulus–unit theorem with the scale and the unit factor written as exponentials, and it is the principal-strip theorem read as a decomposition. It is unique because the principal argument is unique; without the restriction on $\theta$, the exponent is unique only modulo $2\pi i$.
+Without the restriction on $\theta$ the exponent is not unique: the same pair of factors is written with every logarithm $Q_{\log}+2\pi i k$. The factors are unique; the exponent is unique only modulo the kernel. This distinction is the subject of §*The Logarithm*.
 
-### The Two Factors
+The data of the principal decomposition are collected in one table.
 
-The factors of the decomposition are
-
-$$
-\exp(\ln r) = \lvert Q\rvert, \qquad \exp(i\theta) = \frac{Q}{\lvert Q\rvert}.
-$$
-
-The first is the positive scale, the second is the unit factor on the circle. The exponent is their sum:
-
-$$
-Q_{\log} = \ln r+i\theta = \ln\lvert Q\rvert+i\operatorname{Arg}Q = \operatorname{Log}Q.
-$$
-
-The exponential form is therefore the statement that the principal logarithm is a right inverse of the exponential on $\mathbb{C}^\times$, and the decomposition is the graph of the principal logarithm.
-
-The parameters are two: the modulus $r>0$ and the angle $\theta\in\mathbb{R}/2\pi\mathbb{Z}$. The scale is non-compact, the angle runs on the compact circle, and the product is the group of units:
-
-$$
-\mathbb{C}^\times \cong \mathbb{R}_{>0}\times(\mathbb{R}/2\pi\mathbb{Z}) \cong \mathbb{R}_{>0}\times\mathrm{U}(1).
-$$
-
-### The Group Law in Exponential Coordinates
-
-The exponential turns multiplication into addition:
-
-$$
-\exp\bigl((\ln r_1+i\theta_1)+(\ln r_2+i\theta_2)\bigr) = \exp(\ln r_1+i\theta_1)\exp(\ln r_2+i\theta_2).
-$$
-
-In the coordinates $(\ln r,\theta)$ the group law is
-
-$$
-(\ln r_1,\theta_1)*(\ln r_2,\theta_2) = \bigl(\ln(r_1r_2),\ \theta_1+\theta_2\bmod 2\pi\bigr).
-$$
-
-The first coordinate is the logarithmic scale, the second is the angle, and the two do not mix. The exponential coordinates are the coordinates in which the group $\mathbb{C}^\times$ is the product of a line and a circle.
-
-### The Decomposition in One Table
-
-| datum | exponential polar decomposition |
+| datum | formula |
 |---|---|
-| domain | $Q\neq0$ |
-| modulus | $r = \lvert Q\rvert = \sqrt{(\operatorname{Re}Q)^2+(\operatorname{Im}Q)^2}$ |
-| angle | $\theta = \operatorname{Arg}Q = \operatorname{atan2}(\operatorname{Im}Q,\operatorname{Re}Q)\in(-\pi,\pi]$ |
-| exponent | $Q_{\log} = \ln r+i\theta = \operatorname{Log}Q$ |
-| scale | $\exp(\ln r) = \lvert Q\rvert$ |
-| unit factor | $\exp(i\theta) = Q/\lvert Q\rvert$ |
-| uniqueness | $Q_{\log}$ unique in the principal strip; modulo $2\pi i$ in general |
-| group | $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$ |
-| factor types | non-compact scale, compact unit factor |
+| element | $Q=q+iq'\neq0$ |
+| modulus | $r=\sqrt{q^2+q'^2}$ |
+| angle | $\theta=\operatorname{atan2}(q',q)\in(-\pi,\pi]$ |
+| exponent | $Q_{\log}=\operatorname{Log}Q=\ln r+i\theta$ |
+| scale | $\exp(\ln r)=r$ |
+| unit factor | $\exp(i\theta)=Q/r$ |
+| reconstruction | $Q=\exp(Q_{\log})=r\exp(i\theta)$ |
+
+### The Group Law
+
+Because the exponential is a homomorphism, multiplication adds the exponents. In the coordinates $(q_{\log},q'_{\log})=(\ln r,\theta)$,
+
+$$
+(\ln r_1,\theta_1)*(\ln r_2,\theta_2)
+=\bigl(\ln(r_1r_2),\ \theta_1+\theta_2 \bmod 2\pi\bigr).
+$$
+
+The logarithmic scale and the angle do not mix. The group of units is the product of a line and a circle.
+
+## The Logarithm
+
+### The General Logarithm
+
+**Recall.** From *Complex Special Functions*, §*The Complex Logarithm*, a **logarithm** of $Q\neq0$ is a complex number $Q_{\log}$ with $\exp(Q_{\log})=Q$.
+
+Let $Q_{\log}$ be one logarithm of $Q$. Every other logarithm differs from it by an element of the kernel $\ker\exp=2\pi i\mathbb{Z}$, because the exponential is a homomorphism. Hence the logarithms of $Q$ are exactly
+
+$$
+Q_{\log}+2\pi i k, \qquad k\in\mathbb{Z}.
+$$
+
+Choosing the principal angle gives the family
+
+$$
+Q_{\log}=\ln\sqrt{\langle Q\rangle_{*}}+i\bigl(\operatorname{Arg}Q+2\pi k\bigr),
+\qquad k\in\mathbb{Z}.
+$$
+
+In coordinates,
+
+$$
+Q_{\log}=\tfrac12\ln(q^2+q'^2)+i\bigl(\operatorname{atan2}(q',q)+2\pi k\bigr).
+$$
+
+The two coordinates have different roles.
+
+| coordinate | formula | role |
+|---|---|---|
+| $q_{\log}=\operatorname{Re}Q_{\log}$ | $\tfrac12\ln(q^2+q'^2)$ | logarithmic scale, unique |
+| $q'_{\log}=\operatorname{Im}Q_{\log}$ | $\operatorname{atan2}(q',q)+2\pi k$ | angle, one value for each $k$ |
+
+The real part is unique; it is $\ln r$. The imaginary part is one number for each integer $k$, and the numbers differ by $2\pi$. Hence every $Q\neq0$ has a logarithm, and no logarithm is unique. The ambiguity is exactly the kernel $2\pi i\mathbb{Z}$ of the exponential.
+
+For example, $Q=3+4i$ has $r=5$ and $\theta=\operatorname{atan2}(4,3)=0.9272952180016122$. Its logarithms are
+
+$$
+Q_{\log}=1.6094379124341003+i(0.9272952180016122+2\pi k), \qquad k\in\mathbb{Z}.
+$$
+
+### The Principal Logarithm
+
+Single-valuedness is obtained by restricting the exponent to the **principal strip**
+
+$$
+S=\{\ln r+i\theta:r>0,\ -\pi<\theta\le\pi\}.
+$$
+
+The exponential maps $S$ bijectively onto $\mathbb{C}^\times$, and its inverse is the **principal logarithm**
+
+$$
+\operatorname{Log}Q=\ln\sqrt{\langle Q\rangle_{*}}+i\operatorname{Arg}Q,
+\qquad -\pi<\operatorname{Arg}Q\le\pi.
+$$
+
+This is the exponent of the principal decomposition. The proof of the bijection is in *Complex Special Functions*, §*The Principal Logarithm*; the content here is the reading as a decomposition.
+
+The inverse is discontinuous on the negative real axis, the **branch cut**. On the cut the principal value is still defined and still exponentiates to $Q$; it is continuity, not the identity, that fails. The strip is a fundamental domain for the translations by $2\pi i\mathbb{Z}$.
+
+| $Q$ | $r$ | $\operatorname{Arg}Q$ | $\operatorname{Log}Q$ |
+|---|---|---|---|
+| $3+4i$ | $5$ | $0.9272952180016122$ | $1.6094379124341003+0.9272952180016122\,i$ |
+| $-1$ | $1$ | $\pi$ | $\pi i$ |
+| $i$ | $1$ | $\pi/2$ | $\tfrac{\pi}{2}i$ |
+| $1+i$ | $\sqrt{2}$ | $\pi/4$ | $0.3465735902799727+0.7853981633974483\,i$ |
+| $-1-i$ | $\sqrt{2}$ | $-3\pi/4$ | $0.3465735902799727-2.356194490192345\,i$ |
+
+The fifth line shows the branch convention: the argument of $-1-i$ is $-3\pi/4$, not $5\pi/4$, because the principal argument lies in $(-\pi,\pi]$.
+
+### The Kernel and the Fibre
+
+The fibre of the exponential over $Q\neq0$ is the coset
+
+$$
+\exp^{-1}(Q)=\operatorname{Log}Q+2\pi i\mathbb{Z}.
+$$
+
+The kernel is
+
+$$
+\ker\exp=2\pi i\mathbb{Z},
+$$
+
+and the first isomorphism theorem gives
+
+$$
+\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}
+$$
+
+as groups and as real manifolds. The quotient is a cylinder: one line $\ln r$ and one circle $\theta\bmod2\pi$. The exponential coordinates are global on the quotient; the principal strip is a fundamental domain.
+
+## Worked Examples
+
+### A Generic Complex Number
+
+Take $Q=3+4i$. Then
+
+$$
+r=\sqrt{9+16}=5, \qquad \ln r=1.6094379124341003, \qquad
+\theta=\arctan\frac{4}{3}=0.9272952180016122,
+$$
+
+and
+
+$$
+Q_{\log}=\ln r+i\theta=1.6094379124341003+0.9272952180016122\,i.
+$$
+
+The reconstruction is
+
+$$
+\exp(Q_{\log})=3+3.999999999999999\,i,
+$$
+
+with error $8.9\times10^{-16}$ in the Euclidean modulus.
+
+### A Table of Examples
+
+| $Q$ | $r$ | $\theta=\operatorname{Arg}Q$ | $Q_{\log}$ | $\sqrt{\langle\exp Q_{\log}-Q\rangle_{*}}$ |
+|---|---|---|---|---|
+| $3+4i$ | $5$ | $0.9272952180016122$ | $1.6094379124341003+0.9272952180016122\,i$ | $8.9\times10^{-16}$ |
+| $-1$ | $1$ | $\pi$ | $\pi i$ | $1.2\times10^{-16}$ |
+| $i$ | $1$ | $\pi/2$ | $\tfrac{\pi}{2}i$ | $6.1\times10^{-17}$ |
+| $1+i$ | $\sqrt{2}$ | $\pi/4$ | $0.3465735902799727+0.7853981633974483\,i$ | $2.2\times10^{-16}$ |
+| $-1-i$ | $\sqrt{2}$ | $-3\pi/4$ | $0.3465735902799727-2.356194490192345\,i$ | $2.2\times10^{-16}$ |
+
+The second and fifth lines show the two sides of the branch cut: $-1$ is on the cut with principal angle $\pi$, and $-1-i$ is below it with principal angle $-3\pi/4$.
+
+### The Kernel and the Branch
+
+The kernel is the lattice $2\pi i\mathbb{Z}$:
+
+$$
+\exp(2\pi i)=1-2.4\times10^{-16}\,i, \qquad
+\exp(4\pi i)=1-4.9\times10^{-16}\,i.
+$$
+
+The element $-1$ has the logarithms $i(\pi+2\pi k)$. The two with angle in $[-\pi,\pi]$ are $i\pi$ and $-i\pi$:
+
+$$
+\exp(i\pi)=-1+1.2\times10^{-16}\,i, \qquad
+\exp(-i\pi)=-1-1.2\times10^{-16}\,i,
+$$
+
+and only $i\pi$ lies in the principal strip. The principal logarithm of $-1$ is therefore $\pi i$; the other branch gives $-\pi i$.
 
 ## The Matrix Picture
 
 ### The Exponential of a Conformal Matrix
 
-In the real basis $\{1,i\}$ a complex number is $Q = q+iq'$, and multiplication by $Q$ is the matrix
+In the real basis $\{1,i\}$ a complex number is $Q=q+iq'$, and multiplication by $Q$ is the matrix
 
 $$
-M_Q = qI+q'J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I.
+M_Q=qI+q'J, \qquad
+J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad J^2=-I.
 $$
 
 The matrices $I$ and $J$ commute, so the exponential splits:
 
 $$
-\exp(xI+yJ) = \exp(xI)\exp(yJ) = \exp(x)\bigl(\cos y\,I+\sin y\,J\bigr).
+\exp(xI+yJ)=\exp(xI)\exp(yJ)=\exp(x)\bigl(\cos y\,I+\sin y\,J\bigr).
 $$
 
 The exponential polar decomposition of $M_Q$ is therefore
 
 $$
-M_Q = \exp\bigl(\ln r\,I+\theta J\bigr) = r\bigl(\cos\theta\,I+\sin\theta\,J\bigr) = rR_\theta,
+M_Q=\exp\bigl(\ln r\,I+\theta J\bigr)
+=r\bigl(\cos\theta\,I+\sin\theta\,J\bigr)=rR_\theta,
 $$
 
-with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$. The positive factor is the scalar $rI$, and the orthogonal factor is the rotation $R_\theta\in SO(2)$. This is the polar decomposition of the conformal matrix: the positive definite part is a scalar, because the only symmetric positive definite matrices in the family $aI+bJ$ are the positive scalar multiples of the identity.
+with $r=\sqrt{\langle Q\rangle_{*}}$ and $\theta=\operatorname{Arg}Q$. The positive factor is the scalar $rI$, and the orthogonal factor is the rotation $R_\theta\in SO(2)$. This is the polar decomposition of the conformal matrix: the positive definite part is a scalar, because the only symmetric positive definite matrices in the family $aI+bJ$ are the positive scalar multiples of the identity.
 
-More generally, every invertible real $2\times2$ matrix $B$ has a unique polar decomposition $B = PU$, with $P$ symmetric positive definite and $U$ orthogonal. The factors are $P = (BB^{\mathsf T})^{1/2}$ and $U = P^{-1}B$; the square root exists because $BB^{\mathsf T}$ is symmetric positive definite, and $UU^{\mathsf T} = P^{-1}BB^{\mathsf T}P^{-1} = I$. For $B = M_Q$ the two factors collapse to $P = rI$ and $U = R_\theta$, because $M_Q$ is conformal; the general theorem is the same splitting without the conformal restriction, the positive factor then carrying the two singular values instead of the single scale $r$.
+Every invertible real $2\times2$ matrix $B$ has a unique polar decomposition $B=PU$, with $P$ symmetric positive definite and $U$ orthogonal. The factors are $P=(BB^{\mathsf T})^{1/2}$ and $U=P^{-1}B$. For $B=M_Q$ they collapse to $P=rI$ and $U=R_\theta$, because $M_Q$ is conformal. The general theorem is the same splitting without the conformal restriction; the positive factor then carries the two singular values instead of the single scale $r$.
 
-### The Matrix Logarithm
+### The Matrix Logarithm and the Derivative
 
 The matrix logarithm of $M_Q$ is
 
 $$
-\log M_Q = \ln r\,I+\theta J
+\log M_Q=\ln r\,I+\theta J
 $$
 
-on the principal branch. Adding $2\pi k J$ gives another logarithm, because $\exp(2\pi k J) = I$; for $Q$ non-real the centraliser of $M_Q$ is spanned by $I$ and $J$, so this is the full ambiguity of the angle. The eigenvalues of $M_Q$ are $a\pm ib$, neither zero when $Q\neq0$, and the real logarithm exists; for $Q$ real and negative the principal one is $\ln\lvert Q\rvert\,I+\pi J$. On the two-dimensional subalgebra spanned by $I$ and $J$ the exponential is the map $(x,y)\mapsto\exp(x)R_y$, a local diffeomorphism with Jacobian determinant $\exp(2x)$.
+on the principal branch. Adding $2\pi kJ$ gives another logarithm, because $\exp(2\pi kJ)=I$. For $Q$ non-real the centraliser of $M_Q$ is spanned by $I$ and $J$, so this is the full ambiguity of the angle. The eigenvalues of $M_Q$ are $q\pm iq'$, neither zero when $Q\neq0$, and the real logarithm exists; for $Q$ real and negative the principal one is $\ln\sqrt{\langle Q\rangle_{*}}\,I+\pi J$.
 
-### The Derivative and the Jacobian
-
-The derivative of the exponential at $Q_{\log}$ is multiplication by $\exp Q_{\log}$:
+The exponential is a homomorphism, so its derivative at $Q_{\log}$ is multiplication by $\exp(Q_{\log})$:
 
 $$
-d\exp_{Q_{\log}}(H) = \exp(Q_{\log})H,
+d\exp_{Q_{\log}}=\exp(Q_{\log})\,\mathrm{id}.
 $$
 
-because $\exp(Q_{\log}+tH) = \exp(Q_{\log})\exp(tH)$ when $Q_{\log}$ and $H$ commute, as they do in $\mathbb{C}$.
-
-The derivative is invertible, with inverse multiplication by $\exp(-Q_{\log})$, so the exponential is a local diffeomorphism. In the real coordinates $(\ln r,\theta)$ the Jacobian determinant is
+It is invertible, so the exponential is a local diffeomorphism. In the real coordinates $(\ln r,\theta)=(q_{\log},q'_{\log})$ the Jacobian determinant is
 
 $$
-\det d\exp_{Q_{\log}} = \lvert\exp Q_{\log}\rvert^2 = r^2 = N(Q),
+\det d\exp_{Q_{\log}}=\lvert\exp(Q_{\log})\rvert^2=r^2=\langle Q\rangle_{*}.
 $$
 
-the squared modulus. The exponential is conformal: it multiplies lengths by $r$ and preserves angles and orientation.
+The exponential is conformal: it multiplies lengths by $r$ and preserves angles and orientation.
 
 ## The Three Polar Decompositions
 
@@ -360,159 +330,106 @@ the squared modulus. The exponential is conformal: it multiplies lengths by $r$ 
 
 | decomposition | formula | parameters | domain | uniqueness | functions | group reading |
 |---|---|---|---|---|---|---|
-| modulus–unit | $Q = ru$ | $r>0$, $u\in\mathrm{U}(1)$ | $\mathbb{C}^\times$ | unique | square root | $\mathbb{R}_{>0}\times\mathrm{U}(1)$ |
-| rational-chart | $Q = r\frac{1-is}{1+is}$ | $r>0$, $s\in\mathbb{R}$ | $\mathbb{C}\setminus(-\infty,0]$ | unique on the chart | rational | $\mathbb{R}_{>0}\times\mathbb{R}$, the Cayley coordinate, local |
-| exponential | $Q = \exp(\ln r+i\theta)$ | $r>0$, $\theta\in\mathbb{R}/2\pi\mathbb{Z}$ | $\mathbb{C}^\times$ | exponent modulo $2\pi i$; unique with the principal angle | exponential and logarithm | $\mathbb{C}/2\pi i\mathbb{Z}$ |
+| modulus–unit | $Q=ru$ | $r>0$, $u\in\mathrm{U}(1)$ | $\mathbb{C}^\times$ | unique | square root | $\mathbb{R}_{>0}\times\mathrm{U}(1)$ |
+| rational-chart | $Q=r\dfrac{1-is}{1+is}$ | $r>0$, $s\in\mathbb{R}$ | $\mathbb{C}\setminus(-\infty,0]$ | unique on the chart | rational | $\mathbb{R}_{>0}\times\mathbb{R}$, local |
+| exponential | $Q=\exp(Q_{\log})$ | $r>0$, $\theta\in\mathbb{R}$ modulo $2\pi$ | $\mathbb{C}^\times$ | exponent modulo $2\pi i$; unique with the principal angle | exponential and logarithm | $\mathbb{C}/2\pi i\mathbb{Z}$ |
 
 ### The Modulus–Unit Form
 
-The modulus–unit form is $Q = ru$ with $r = \lvert Q\rvert$ and $u = Q/\lvert Q\rvert$. It is unique on the whole of $\mathbb{C}^\times$, it uses the square root of the norm, and it is the product decomposition of the group of units. It is the form developed in *Modulus–Unit Polar Decomposition of Complex Numbers*.
+The modulus–unit form is $Q=ru$ with $r=\sqrt{\langle Q\rangle_{*}}$ and $u=Q/\sqrt{\langle Q\rangle_{*}}$. It is unique on the whole of $\mathbb{C}^\times$, it uses the square root of the norm, and it is the product decomposition of the group of units. It is the form developed in *Modulus–Unit Polar Decomposition of Complex Numbers*.
 
 ### The Rational-Chart Form
 
-The rational-chart form writes the unit factor by the Cayley chart of the circle, and it is the form developed in *Rational-Chart Polar Decomposition of Complex Numbers*. For $s\in\mathbb{R}$,
+The rational-chart form writes the unit factor by the Cayley chart of the circle. For $s\in\mathbb{R}$,
 
 $$
-u(s) = \frac{1-is}{1+is} = \frac{1-s^2}{1+s^2}-i\frac{2s}{1+s^2},
+u(s)=\frac{1-is}{1+is}=\frac{1-s^2}{1+s^2}-i\frac{2s}{1+s^2},
 $$
 
-and $s\mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$. It is rational, uses no transcendental function, and misses the single point $u = -1$, the unit factor of the negative real axis. The decomposition $Q = r\,u(s)$ is therefore a rational chart, not a global decomposition.
-
-### The Exponential Form
-
-The exponential form is $Q = \exp(\ln r+i\theta)$ with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$ in the principal strip. It is global on $\mathbb{C}^\times$, it uses the exponential and the logarithm, and its exponent is unique only modulo the kernel $2\pi i\mathbb{Z}$; the principal strip restores uniqueness. It is the form that exposes the Lie algebra and the group law.
+and $s\mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$. It is rational, uses no transcendental function, and misses the single point $u=-1$, the unit factor of the negative real axis. The decomposition $Q=r\,u(s)$ is therefore a rational chart, not a global decomposition.
 
 ### The Change of Coordinates
 
-Comparing $u(s) = (1-is)/(1+is)$ with $u = \exp(i\theta)$ and using the half-angle identity gives
+Comparing $u(s)=(1-is)/(1+is)$ with $u=\exp(i\theta)$ and using the half-angle identity gives
 
 $$
-\frac{1-is}{1+is} = \exp\bigl(-2i\arctan s\bigr),
+\frac{1-is}{1+is}=\exp\bigl(-2i\arctan s\bigr),
 $$
 
 so the passage between the rational coordinate and the angle is
 
 $$
-s = -\tan\frac{\theta}{2}, \qquad \theta = -2\arctan s.
+s=-\tan\frac{\theta}{2}, \qquad \theta=-2\arctan s.
 $$
 
-The map $s\mapsto\theta$ sends $\mathbb{R}$ onto $(-\pi,\pi)$, and $s\to\pm\infty$ corresponds to $\theta\to\mp\pi$. The cut $\theta = \pi$ is the negative real axis; its unit factor is $-1$, the single point the rational chart misses, and it is also the point at which the rational coordinate escapes to infinity.
+The map $s\mapsto\theta$ sends $\mathbb{R}$ onto $(-\pi,\pi)$, and $s\to\pm\infty$ corresponds to $\theta\to\mp\pi$. The cut $\theta=\pi$ is the negative real axis; its unit factor is $-1$, the single point the rational chart misses, and it is also the point at which the rational coordinate escapes to infinity.
 
 ### What the Comparison Says
 
-The three forms are three presentations of one factorisation, not three different factorisations of the element; the modulus–unit form is coordinate-free, and the other two put a coordinate on the circle, the rational one local and the exponential one global. The modulus–unit form is the product decomposition, global and algebraic, with a square root. The rational-chart form is the Cayley chart, rational and local, missing the negative real axis. The exponential form is the Lie algebra coordinate, global and transcendental, with the kernel as the only ambiguity of the exponent.
+The three forms are three presentations of one factorisation. The modulus–unit form is coordinate-free; the rational form puts a local rational coordinate on the circle; the exponential form puts a global transcendental coordinate on it. The exponential form is the only one in which the group law is addition. The modulus–unit form is the only one that is algebraic and global. The rational-chart form is the only one that is rational and local.
 
-The exponential form is the only one in which the group law is addition. The modulus–unit form is the only one that is algebraic and global. The rational-chart form is the only one that is rational and local. They are three presentations of the complex member of the eight algebras whose polar decompositions are compared in *Comparison of the Polar Element Representation*; in a noncommutative algebra the exponential of a sum is not the product of the exponentials, the exponents need not commute, and the amalgamation into one exponential fails. In the polar word of *The Polar Element Representation of Biquaternions* the order of the factors carries information.
-
-## Worked Examples
-
-### A Generic Complex Number
-
-Take $Q = 3+4i$. Then
-
-$$
-r = \sqrt{9+16} = 5, \qquad \ln r = 1.6094379124341003, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122,
-$$
-
-and
-
-$$
-Q_{\log} = \ln r+i\theta = 1.6094379124341003+0.9272952180016122\,i.
-$$
-
-The reconstruction is
-
-$$
-\exp Q_{\log} = 3+3.999999999999999\,i,
-$$
-
-with error $8.9\times10^{-16}$ in the Euclidean modulus.
-
-### A Table of Examples
-
-| $Q$ | $\ln\lvert Q\rvert$ | $\theta = \operatorname{Arg}Q$ | $Q_{\log} = \ln\lvert Q\rvert+i\theta$ | $\lvert\exp Q_{\log}-Q\rvert$ |
-|---|---|---|---|---|
-| $3+4i$ | $1.6094379124341003$ | $0.9272952180016122$ | $1.6094379124341003+0.9272952180016122\,i$ | $8.9\times10^{-16}$ |
-| $-1$ | $0$ | $\pi$ | $\pi i$ | $1.2\times10^{-16}$ |
-| $i$ | $0$ | $\pi/2$ | $\frac{\pi}{2}i$ | $6.1\times10^{-17}$ |
-| $1+i$ | $0.3465735902799727$ | $\pi/4$ | $0.3465735902799727+0.7853981633974483\,i$ | $2.2\times10^{-16}$ |
-| $-1-i$ | $0.3465735902799727$ | $-3\pi/4$ | $0.3465735902799727-2.356194490192345\,i$ | $2.2\times10^{-16}$ |
-
-The third line is the pure rotation $i$, with zero logarithmic scale. The second and fifth lines show the two sides of the branch cut: $-1$ is on the cut with principal angle $\pi$, and $-1-i$ is below it with principal angle $-3\pi/4$.
-
-### The Kernel and the Non-Uniqueness
-
-The kernel of the exponential is the lattice $2\pi i\mathbb{Z}$:
-
-$$
-\exp(2\pi i) = 1-2.4\times10^{-16}\,i, \qquad \exp(4\pi i) = 1-4.9\times10^{-16}\,i.
-$$
-
-The error is machine precision. The element $-1$ has the logarithms $i(\pi+2\pi k)$; the two with angle in $[-\pi,\pi]$ are $i\pi$ and $-i\pi$:
-
-$$
-\exp(i\pi) = -1+1.2\times10^{-16}\,i, \qquad \exp(-i\pi) = -1-1.2\times10^{-16}\,i,
-$$
-
-and only $i\pi$ lies in the principal strip. The exponential polar decomposition of $-1$ is therefore $(-1)_{\log} = i\pi$ on the principal branch, and $(-1)_{\log} = -i\pi$ on the other branch. This is the opposite of the split case, where the kernel is $\{0\}$ and $-1$ has no logarithm at all.
+They are three presentations of the complex member of the eight algebras whose polar decompositions are compared in *Comparison of the Polar Decomposition*. In a noncommutative algebra the exponential of a sum is not the product of the exponentials, the exponents need not commute, and the amalgamation into one exponential fails.
 
 ## The Exponential Coordinates
 
 ### The Coordinate Lines
 
-Write $Q = \exp(\ln r+i\theta)$. The vertical lines $\ln r = \ln r_0$ map to the circles
+Write $Q=\exp(Q_{\log})$ with $Q_{\log}=\ln r+i\theta$. The vertical lines $\ln r=\ln r_0$ map to the circles
 
 $$
-\lvert Q\rvert = r_0,
+\sqrt{\langle Q\rangle_{*}}=r_0,
 $$
 
-and the horizontal lines $\theta = \theta_0$ map to the rays
+and the horizontal lines $\theta=\theta_0$ map to the rays
 
 $$
-\arg Q = \theta_0 \pmod{2\pi}.
+\arg Q=\theta_0 \pmod{2\pi}.
 $$
 
-The strip $-\pi<\theta\le\pi$ is a fundamental domain: its translates by $2\pi i$ tile the plane, and the exponential identifies the two edges. The real part $\ln r$ is the logarithmic modulus, the imaginary part $\theta$ is the angle, and the exponential turns the flat strip into the punctured plane.
+The strip $-\pi<\theta\le\pi$ is a fundamental domain: its translates by $2\pi i$ tile the plane, and the exponential identifies the two edges. The real part $q_{\log}=\ln r$ is the logarithmic scale, the imaginary part $q'_{\log}=\theta$ is the angle, and the exponential turns the flat strip into the punctured plane.
 
 ### The Conformal Factor
 
 The derivative of the exponential is multiplication by $\exp(Q_{\log})$, so the pullback of the Euclidean metric is
 
 $$
-(\exp^* g)_{Q_{\log}} = r^2\bigl(d(\ln r)^2+d\theta^2\bigr) = dr^2+r^2\,d\theta^2.
+(\exp^* g)_{Q_{\log}}=r^2\bigl(d(\ln r)^2+d\theta^2\bigr)=dr^2+r^2\,d\theta^2.
 $$
 
-The exponential is conformal with scale factor $r = \lvert Q\rvert$. Its Jacobian determinant is $r^2 = N(Q)$, and the area element is
+The exponential is conformal with scale factor $r=\sqrt{\langle Q\rangle_{*}}$. Its Jacobian determinant is $r^2=\langle Q\rangle_{*}$, and the area element is
 
 $$
-dA = r^2\,d(\ln r)\,d\theta = r\,dr\,d\theta.
+dA=r^2\,d(\ln r)\,d\theta=r\,dr\,d\theta.
 $$
 
 The area of the image of a rectangle $[\ln r_1,\ln r_2]\times[\theta_1,\theta_2]$ with $0\le\theta_2-\theta_1\le2\pi$ is
 
 $$
-\int_{\ln r_1}^{\ln r_2}\int_{\theta_1}^{\theta_2} r^2\,d\theta\,d(\ln r) = \frac{1}{2}\bigl(r_2^2-r_1^2\bigr)(\theta_2-\theta_1),
+\int_{\ln r_1}^{\ln r_2}\int_{\theta_1}^{\theta_2}r^2\,d\theta\,d(\ln r)
+=\frac{1}{2}\bigl(r_2^2-r_1^2\bigr)(\theta_2-\theta_1),
 $$
 
-the area of the annular sector between the radii $r_1$ and $r_2$ and the angle $\theta_2-\theta_1$. The formula is exact; it is the change-of-variables formula for the exponential in polar coordinates.
+the area of the annular sector between the radii $r_1$ and $r_2$ and the angle $\theta_2-\theta_1$.
 
 ### The Harmonic Reading
 
-The real part $\ln r = \ln\lvert Q\rvert$ is harmonic on $\mathbb{C}^\times$, and the imaginary part $\theta = \arg Q$ is harmonic on the cut plane. The complex coordinate $\ln r+i\theta$ is the local holomorphic coordinate supplied by the principal logarithm, and the exponential is its inverse. The logarithm is not global because the angle is not; the obstruction is the kernel $2\pi i\mathbb{Z}$.
+The real part $q_{\log}=\ln r$ is harmonic on $\mathbb{C}^\times$, and the imaginary part $q'_{\log}=\theta$ is harmonic on the cut plane. The complex coordinate $Q_{\log}=\ln r+i\theta$ is the local holomorphic coordinate supplied by the principal logarithm, and the exponential is its inverse. The logarithm is not global because the angle is not; the obstruction is the kernel $2\pi i\mathbb{Z}$.
 
 ## Summary
 
-Every nonzero complex number has exactly one exponential polar decomposition $Q = \exp(\ln r)\exp(i\theta)$ with
+Every nonzero complex number has exactly one exponential polar decomposition with the principal angle,
 
 $$
-r = \lvert Q\rvert = \sqrt{(\operatorname{Re}Q)^2+(\operatorname{Im}Q)^2}>0, \qquad \theta = \operatorname{Arg}Q = \operatorname{atan2}(\operatorname{Im}Q,\operatorname{Re}Q)\in(-\pi,\pi],
+Q=\exp(\ln r)\exp(i\theta), \qquad
+r=\sqrt{\langle Q\rangle_{*}}=\sqrt{q^2+q'^2}>0, \qquad
+\theta=\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi],
 $$
 
-namely the modulus and the principal angle of $Q$. The exponent is the principal logarithm $Q_{\log} = \ln\lvert Q\rvert+i\operatorname{Arg}Q$, the scale is $\exp(\ln r) = \lvert Q\rvert$, and the unit factor is $\exp(i\theta) = Q/\lvert Q\rvert$. Because $\mathbb{C}$ is commutative the two exponentials amalgamate into one, $Q = \exp(\ln\lvert Q\rvert+i\operatorname{Arg}Q)$.
+namely the modulus and the principal angle of $Q$. The exponent is the principal logarithm $Q_{\log}=\operatorname{Log}Q=\ln\sqrt{\langle Q\rangle_{*}}+i\operatorname{Arg}Q$, the scale is $\exp(\ln r)=r$, and the unit factor is $\exp(i\theta)=Q/r$. Because $\mathbb{C}$ is commutative the two exponentials amalgamate into one, $Q=\exp(Q_{\log})$.
 
-The exponential is a surjective homomorphism from $(\mathbb{C},+)$ onto $(\mathbb{C}^\times,\cdot)$ with kernel $2\pi i\mathbb{Z}$. The logarithm is unique modulo that kernel, and the principal strip $-\pi<\theta\le\pi$ is a fundamental domain on which the exponential is a bijection onto $\mathbb{C}^\times$. The quotient is $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$, the product of a line and a circle.
+The general logarithms of $Q$ are $Q_{\log}+2\pi i k$ with $k\in\mathbb{Z}$; the ambiguity is the kernel $2\pi i\mathbb{Z}$. The principal strip $-\pi<\theta\le\pi$ is a fundamental domain on which the exponential is a bijection onto $\mathbb{C}^\times$, and the quotient is $\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}$, the product of a line and a circle.
 
-The matrix picture is the exponential of the conformal matrix: $M_Q = \exp(\ln r\,I+\theta J) = rR_\theta$, with the matrix logarithm $\ln r\,I+\theta J$ on the principal branch, the angle defined modulo $2\pi$. The derivative is multiplication by $\exp(Q_{\log})$, the Jacobian determinant is $N(Q)$, and the exponential is conformal with scale $\lvert Q\rvert$. The general polar decomposition $B = PU$ of an invertible real matrix specialises to $P = rI$ and $U = R_\theta$.
+The matrix picture is the exponential of the conformal matrix: $M_Q=\exp(\ln r\,I+\theta J)=rR_\theta$, with matrix logarithm $\ln r\,I+\theta J$ on the principal branch, the angle defined modulo $2\pi$. The derivative is multiplication by $\exp(Q_{\log})$, the Jacobian determinant is $\langle Q\rangle_{*}$, and the exponential is conformal with scale $\sqrt{\langle Q\rangle_{*}}$.
 
 The exponential form is the third of the three polar decompositions of $\mathbb{C}$. The modulus–unit form is global, unique and algebraic; the rational-chart form is the rational Cayley chart, local and missing the negative real axis; the exponential form is global and transcendental, and it is unique once the principal representative of the angle is chosen, the exponent being unique modulo the kernel. The three are presentations of the same factorisation.
 
@@ -520,20 +437,20 @@ The exponential form is the third of the three polar decompositions of $\mathbb{
 
 | symbol | meaning |
 |---|---|
-| $Q = q+iq'$ | a complex number, $q$ the real part, $q'$ the imaginary part |
-| $N(Q) = Q\bar Q = q^2+q'^2$ | the norm, positive definite |
-| $r = \lvert Q\rvert = \sqrt{N(Q)}$ | the modulus, a positive real |
+| $Q=q+iq'$ | a complex number, $q$ the real part, $q'$ the imaginary part |
+| $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | the norm, positive definite |
+| $r=\sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
 | $\ln r$ | the logarithmic scale |
-| $\theta$ | the angle, a class in $\mathbb{R}/2\pi\mathbb{Z}$ |
-| $\theta = \operatorname{Arg}Q$ | the principal angle, $\operatorname{atan2}(q',q)\in(-\pi,\pi]$ |
-| $s = -\tan(\theta/2)$ | the rational-chart coordinate of the unit factor |
-| $Q_{\log} = \ln r+i\theta$ | the exponent, a logarithm of $Q$ |
-| $\operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q$ | the principal logarithm |
-| $\exp : Q_{\log} \mapsto \sum_n Q_{\log}^n/n!$ | the exponential, entire and a homomorphism |
-| $\ker\exp = 2\pi i\mathbb{Z}$ | the kernel of the exponential |
+| $\theta$ | the angle, defined modulo $2\pi$; $\operatorname{Arg}Q=\operatorname{atan2}(q',q)\in(-\pi,\pi]$ is the principal representative |
+| $q_{\log}=\operatorname{Re}Q_{\log}$, $q'_{\log}=\operatorname{Im}Q_{\log}$ | the logarithmic scale and the angle |
+| $Q_{\log}=\ln r+i\theta$ | the exponent, a logarithm of $Q$; the principal one is $\operatorname{Log}Q$ |
+| $\operatorname{Log}Q=\ln\sqrt{\langle Q\rangle_{*}}+i\operatorname{Arg}Q$ | the principal logarithm |
+| $\exp$ | the exponential, defined in *Complex Special Functions* |
+| $\ker\exp=2\pi i\mathbb{Z}$ | the kernel of the exponential |
 | $\mathrm{U}(1)$ | the unit circle, the group of unit factors |
-| $J$ | the complex structure, multiplication by $i$, $J^2 = -I$ |
-| $M_Q = qI+q'J$ | the conformal matrix of multiplication by $Q$ |
+| $s=-\tan(\theta/2)$ | the rational-chart coordinate of the unit factor |
+| $J$ | the complex structure, multiplication by $i$, $J^2=-I$ |
+| $M_Q=qI+q'J$ | the conformal matrix of multiplication by $Q$ |
 
 ## Further Reading
 

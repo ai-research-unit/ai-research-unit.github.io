@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
 The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - Q)$ of the formula is defined only where $\zeta - Q$ is a unit, and the set where it is not is not the point $Q$ but the two lines through $Q$; no contour that surrounds $Q$ avoids them.
 
@@ -15,7 +15,7 @@ $$
 Q_+ = q + q', \qquad Q_- = q - q', \qquad Q = Q_+ \Pi_+ + Q_- \Pi_-,
 $$
 
-and $\langle Q\rangle_{\natural} = Q_+ Q_-$.
+and $\langle Q\rangle_{*} = Q_+ Q_-$.
 
 ## The Split-Complex Integral
 
@@ -97,7 +97,7 @@ $$
 
 and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|_E^2 \leq 2\|Q\|_E^2\|B\|_E^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.
 
-**Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{\natural}$, used below.
+**Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{*}$, used below.
 
 ### The Idempotent Decomposition of the Integral
 
@@ -249,10 +249,10 @@ The Cauchy–Goursat theorem is the vanishing half of the Cauchy theory. The oth
 **Proposition.** Let $Q_0 \in \mathbb{D}$. The element $\zeta - Q_0$ is a unit if and only if $\zeta$ lies off the **null cone** through $Q_0$, that is, off the union of the two lines $\zeta_+ = Q_{0+}$ and $\zeta_- = Q_{0-}$. For $\zeta - Q_0$ a unit,
 
 $$
-(\zeta - Q_0)^{-1} = \frac{\overline{\zeta - Q_0}}{\langle \zeta - Q_0\rangle_{\natural}} = \frac{\Pi_+}{\zeta_+ - Q_{0+}} + \frac{\Pi_-}{\zeta_- - Q_{0-}}.
+(\zeta - Q_0)^{-1} = \frac{\overline{\zeta - Q_0}}{\langle \zeta - Q_0\rangle_{*}} = \frac{\Pi_+}{\zeta_+ - Q_{0+}} + \frac{\Pi_-}{\zeta_- - Q_{0-}}.
 $$
 
-**Proof.** The inverse formula $B^{-1} = \bar B / \langle B\rangle_{\natural}$ is valid whenever $\langle B\rangle_{\natural} \neq 0$, and $\langle \zeta - Q_0\rangle_{\natural} = (\zeta_+ - Q_{0+})(\zeta_- - Q_{0-})$, which vanishes exactly on the two stated lines.
+**Proof.** The inverse formula $B^{-1} = \bar B / \langle B\rangle_{*}$ is valid whenever $\langle B\rangle_{*} \neq 0$, and $\langle \zeta - Q_0\rangle_{*} = (\zeta_+ - Q_{0+})(\zeta_- - Q_{0-})$, which vanishes exactly on the two stated lines.
 
 **Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}$: there is no constant $c \in \mathbb{D}$ such that
 
@@ -403,7 +403,7 @@ The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1
 | Coefficient ring | field, no zero divisors | ring, zero divisors $1 \pm j$ |
 | Cauchy–Riemann operator | $\partial/\partial q + i\partial/\partial q'$, elliptic | $\partial/\partial q - j\partial/\partial q'$, hyperbolic |
 | Second-order operator | Laplacian $\Delta$ | d'Alembertian $\Box$ |
-| Characteristic set | $\{0\}$ | the null cone $N = 0$ |
+| Characteristic set | $\{0\}$ | the null cone $\langle Q\rangle_{*} = 0$ |
 | Fundamental solution | a Cauchy kernel $Q^{-1}$ up to a constant, singular at a point | supported on the null rays |
 | Cauchy–Goursat, closed contour | holds | holds, but is soft |
 | Path independence | on simply connected domains | on every domain, by the primitive |
@@ -449,8 +449,8 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
-| $\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
-| $\{N = 0\}$ | Null cone, the zero-divisor set |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
+| $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |
 | $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
 | $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |

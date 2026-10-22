@@ -270,9 +270,9 @@ The gap is therefore the propagator's gap, seen from the S-matrix side: the alge
 
 ## The Polar Word and the Moduli of an Amplitude
 
-The one-mode core of this article is already polar: $\tilde S=\exp(i\theta_0)\tilde\Pi_++\exp(i\theta_1)\tilde\Pi_-$ is a scale times a phase on each idempotent, and every matrix-unitary biquaternion is $\exp(i\theta)\tilde u$ with $\tilde u$ a unit real quaternion. Read on the polar element $\tilde Q=r\,\exp(i\alpha)B\tilde u$ of *The Polar Element Representation of Biquaternions*, the four factors carry the four moduli a scattering amplitude is built from: $r$ the magnitude, $\alpha$ the global phase, $B$ the frame velocity and $\tilde u$ the spin rotation, so the polar word is read as the four moduli of an amplitude.
+The one-mode core of this article is already polar: $\tilde S=\exp(i\theta_0)\tilde\Pi_++\exp(i\theta_1)\tilde\Pi_-$ is a scale times a phase on each idempotent, and every matrix-unitary biquaternion is $\exp(i\theta)\tilde u$ with $\tilde u$ a unit real quaternion. Read on the polar word $\tilde Q=r\,\exp(i\alpha)B\tilde u$ of *The Polar Decomposition of Biquaternions*, the four factors carry the four moduli a scattering amplitude is built from: $r$ the magnitude, $\alpha$ the global phase, $B$ the frame velocity and $\tilde u$ the spin rotation, so the polar word is read as the four moduli of an amplitude.
 
-The interpretation is labelled and its boundary is stated. The S-matrix of this article is finite-dimensional and conditional on the one-mode identification, and the identification of the polar factors with physical amplitude moduli is an interpretation and not a theorem: it names the shape the amplitude takes in the framework's word, and it does not compute a cross section. The owner of the polar word is *The Polar Element Representation of Biquaternions*.
+The interpretation is labelled and its boundary is stated. The S-matrix of this article is finite-dimensional and conditional on the one-mode identification, and the identification of the polar factors with physical amplitude moduli is an interpretation and not a theorem: it names the shape the amplitude takes in the framework's word, and it does not compute a cross section. The owner of the polar word is *The Polar Decomposition of Biquaternions*.
 
 ## Open Questions
 

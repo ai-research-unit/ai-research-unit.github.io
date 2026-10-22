@@ -410,7 +410,7 @@ The elementary functions of several split biquaternion variables are largely ope
 | $\tilde{Q}^\alpha$ | Split biquaternion power function |
 | $\tilde q = r \exp(\mu \theta)$ | Quaternion polar form, axis $\mu$, angle $\theta$ |
 | $\mu$ | A unit pure real quaternion (axis), $\mu^2 = -1$ |
-| $r = |\tilde q|$ | Quaternion modulus |
+| $r = \lvert\tilde q\rvert$ | Quaternion modulus |
 | $\tilde\Pi_{1,2}$ | Idempotents producing the hyperbolic functions |
 
 ## Further Reading

@@ -5,9 +5,9 @@
 
 The split-complex algebra $\mathbb{D}$ acting on itself by left multiplication is the **left regular representation**, and writing that action in the basis $\{1, j\}$ gives the **regular matrix** of a split-complex number. This article develops that matrix in full: the Cayley matrix of multiplication by $Q = q+j q'$, its identification with the algebra of $2\times 2$ real matrices of hyperbolic type, its multiplicativity, its determinant as the norm, its diagonalisation by the idempotent basis, and its relation to the hyperbolic rotations of the geometry slot. It is the second of the three Representation articles, after *Split-Complex Element Representations* and before *Split-Complex Two-Component Element Representation*.
 
-The general representation theory is owned by *Split-Complex Element Representations*; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word *representation* is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{qI+q'J\}$, the determinant identity $\det \mathsf{M}_2(Q) = \langle Q\rangle_{\natural}$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to *Split-Complex Element Representations*; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; and it uses, but does not reprove, the idempotent decomposition of *Split-Complex Idempotents and Projections*.
+The general representation theory is owned by *Split-Complex Element Representations*; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word *representation* is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{qI+q'J\}$, the determinant identity $\det \mathsf{M}_2(Q) = \langle Q\rangle_{*}$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to *Split-Complex Element Representations*; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; and it uses, but does not reprove, the idempotent decomposition of *Split-Complex Idempotents and Projections*.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$, with $Q = Q_+\Pi_+ + Q_-\Pi_-$; norm $\langle Q\rangle_{\natural} = q^2-q'^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$, with $Q = Q_+\Pi_+ + Q_-\Pi_-$; norm $\langle Q\rangle_{*} = q^2-q'^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.
 
 ## The Left Regular Representation
 
@@ -144,23 +144,23 @@ which is the table of $\mathbb{Z}/2$ under addition, that is, the group ring $\m
 **Theorem.** For $Q = q+j q'$,
 
 $$
-\det \mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{\natural}, \qquad \operatorname{Tr}\mathsf{M}_2(Q) = 2q = Q_+ + Q_-.
+\det \mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{Tr}\mathsf{M}_2(Q) = 2q = Q_+ + Q_-.
 $$
 
-**Proof.** The determinant of a $2\times2$ matrix with diagonal $q$ and off-diagonal $q'$ is $q^2-q'^2$, which is $\langle Q\rangle_{\natural}$; the trace is $2q$, which is $Q_+ + Q_-$.
+**Proof.** The determinant of a $2\times2$ matrix with diagonal $q$ and off-diagonal $q'$ is $q^2-q'^2$, which is $\langle Q\rangle_{*}$; the trace is $2q$, which is $Q_+ + Q_-$.
 
 **Corollary (multiplicativity of the norm).** Since $\mathsf{M}_2$ is a homomorphism and the determinant is multiplicative,
 
 $$
-\langle QB\rangle_{\natural} = \det \mathsf{M}_2(QB) = \det\bigl(\mathsf{M}_2(Q)\mathsf{M}_2(B)\bigr) = \det \mathsf{M}_2(Q)\det \mathsf{M}_2(B) = \langle Q\rangle_{\natural}\langle B\rangle_{\natural},
+\langle QB\rangle_{*} = \det \mathsf{M}_2(QB) = \det\bigl(\mathsf{M}_2(Q)\mathsf{M}_2(B)\bigr) = \det \mathsf{M}_2(Q)\det \mathsf{M}_2(B) = \langle Q\rangle_{*}\langle B\rangle_{*},
 $$
 
 which is the multiplicativity of the norm, proved here as a special case of the multiplicativity of the determinant.
 
-**Corollary (invertibility).** The matrix $\mathsf{M}_2(Q)$ is invertible iff $\det \mathsf{M}_2(Q) = \langle Q\rangle_{\natural} \neq 0$, so $\mathbb{D}^\times$ corresponds to the invertible matrices in $M_2(\mathbb{D})$, and
+**Corollary (invertibility).** The matrix $\mathsf{M}_2(Q)$ is invertible iff $\det \mathsf{M}_2(Q) = \langle Q\rangle_{*} \neq 0$, so $\mathbb{D}^\times$ corresponds to the invertible matrices in $M_2(\mathbb{D})$, and
 
 $$
-\mathsf{M}_2(Q)^{-1} = \mathsf{M}_2(Q^{-1}) = \frac{1}{\langle Q\rangle_{\natural}}\begin{pmatrix} q & -q' \\ -q' & q \end{pmatrix}.
+\mathsf{M}_2(Q)^{-1} = \mathsf{M}_2(Q^{-1}) = \frac{1}{\langle Q\rangle_{*}}\begin{pmatrix} q & -q' \\ -q' & q \end{pmatrix}.
 $$
 
 **The characteristic polynomial.** A $2\times2$ matrix has characteristic polynomial
@@ -220,10 +220,10 @@ The corresponding abstract statement — that $\Pi_\pm$ are the diagonal matrix 
 
 ## The Unit-Norm Subgroup and the Hyperbolic Rotations
 
-The unit-norm elements are those with $\langle Q\rangle_{\natural} = 1$; in the matrix picture they are the matrices of determinant $1$ in $M_2(\mathbb{D})$,
+The unit-norm elements are those with $\langle Q\rangle_{*} = 1$; in the matrix picture they are the matrices of determinant $1$ in $M_2(\mathbb{D})$,
 
 $$
-SO(1,1) \;\cong\; \mathsf{M}_2(\{Q : \langle Q\rangle_{\natural} = 1\}) = \left\{ \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} : q^2 - q'^2 = 1 \right\},
+SO(1,1) \;\cong\; \mathsf{M}_2(\{Q : \langle Q\rangle_{*} = 1\}) = \left\{ \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} : q^2 - q'^2 = 1 \right\},
 $$
 
 Writing the timelike branch $q > 0$ in the hyperbolic parametrisation $q = \cosh t$, $q' = \sinh t$ gives
@@ -241,9 +241,9 @@ $$
 
 is the multiplicativity of $\mathsf{M}_2$ combined with $\exp(jt)\exp(js) = \exp(j(t+s))$.
 
-**Proposition.** For every $t$, $R_j(t)$ preserves the norm: if $B = b+j b'$, then $\langle R_j(t)B\rangle_{\natural} = \langle B\rangle_{\natural}$.
+**Proposition.** For every $t$, $R_j(t)$ preserves the norm: if $B = b+j b'$, then $\langle R_j(t)B\rangle_{*} = \langle B\rangle_{*}$.
 
-**Proof.** $\det R_j(t) = \cosh^2 t - \sinh^2 t = 1$, and $\langle\cdot\rangle_{\natural}$ is the determinant of the coordinate matrix, so $\langle R_j(t)B\rangle_{\natural} = \det(R_j(t)\mathsf{M}_2(B)) = \det R_j(t)\det \mathsf{M}_2(B) = \langle B\rangle_{\natural}$.
+**Proof.** $\det R_j(t) = \cosh^2 t - \sinh^2 t = 1$, and $\langle\cdot\rangle_{*}$ is the determinant of the coordinate matrix, so $\langle R_j(t)B\rangle_{*} = \det(R_j(t)\mathsf{M}_2(B)) = \det R_j(t)\det \mathsf{M}_2(B) = \langle B\rangle_{*}$.
 
 So the hyperbolic rotations are exactly the identity component $SO^+(1,1)$ of the determinant-one subgroup of the regular matrix algebra, and their action is the linear action on $\mathbb{R}^2$ preserving $q^2-q'^2$. The unit-norm group has a second branch, $q < 0$, related to the first by the central reflection $-1$, and the whole group $\{N=1\}$ has two components; the matrix picture and the group structure are developed in *Split-Complex Exponential and Lie Group Structure* and in *Hyperbolic Rotations*, where $R_j(t)$ is the generator of the hyperbolic one-parameter group.
 
@@ -266,7 +266,7 @@ So $M_2(\mathbb{D})$ is its own centralizer and its own bicommutant, a **maximal
 
 The left regular representation $\mathsf{M}_2$ of $\mathbb{D}$ sends $Q$ to the endomorphism $B \mapsto QB$ of the coefficient space $\mathbb{D}$, with matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ in the basis $\{1, j\}$. The map is an algebra homomorphism and a faithful embedding, so $\mathbb{D}$ is isomorphic to the algebra $\{qI+q'J\}$ of real $2\times2$ matrices with $J^2 = I$, the hyperbolic analogue of the matrix model of $\mathbb{C}$. Because $\mathbb{D}$ is commutative the right regular representation coincides with the left, and the regular matrix is symmetric.
 
-The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(Q) = q^2-q'^2 = \langle Q\rangle_{\natural}$, and the trace is $2q$; multiplicativity of the determinant gives multiplicativity of the norm, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - Q_+)(\lambda - Q_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\mathsf{M}_2(Q) = \operatorname{diag}(q+q', q-q')$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $Q \mapsto Q_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself.
+The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(Q) = q^2-q'^2 = \langle Q\rangle_{*}$, and the trace is $2q$; multiplicativity of the determinant gives multiplicativity of the norm, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - Q_+)(\lambda - Q_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\mathsf{M}_2(Q) = \operatorname{diag}(q+q', q-q')$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $Q \mapsto Q_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself.
 
 ## Summary of Notation
 
@@ -285,7 +285,7 @@ The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(Q) = q^2-q
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
 | $I_1 = \mathbb{R}\Pi_+$, $I_2 = \mathbb{R}\Pi_-$ | The two minimal left ideals |
 | $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$ | Hyperbolic rotation matrix, $\mathsf{M}_2(\exp(jt))$ |
-| $\langle Q\rangle_{\natural} = q^2-q'^2$ | Norm |
+| $\langle Q\rangle_{*} = q^2-q'^2$ | Norm |
 
 ## Further Reading
 

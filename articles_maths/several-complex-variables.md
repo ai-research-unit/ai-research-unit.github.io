@@ -10,10 +10,10 @@ The one-variable theory is from *Complex Analysis*, which constructs holomorphic
 Throughout, $n \geq 2$ unless stated, $Q = (Q_1, \dots, Q_n) \in \mathbb{C}^n$ with $Q_j = q_j + i q'_j$, and a **domain** is a connected open subset of $\mathbb{C}^n$. The **polydisc** of multiradius $r = (r_1, \dots, r_n)$ about $Q_0$ is
 
 $$
-\Delta(Q_0, r) = \{Q : \lvert Q_j - Q_{0,j}\rvert < r_j,\ j = 1, \dots, n\},
+\Delta(Q_0, r) = \{Q : \sqrt{\langle Q_j - Q_{0,j}\rangle_{*}} < r_j,\ j = 1, \dots, n\},
 $$
 
-the unit ball is $B^n = \{Q : \lvert Q_1\rvert^2 + \cdots + \lvert Q_n\rvert^2 < 1\}$, and the **Wirtinger operators** are $\partial/\partial Q_j = \tfrac12(\partial/\partial q_j - i\partial/\partial q'_j)$ and $\partial/\partial \bar Q_j = \tfrac12(\partial/\partial q_j + i\partial/\partial q'_j)$. The **Cauchy–Riemann operator** is $\bar\partial = \sum_j (\partial/\partial \bar Q_j)\,d\bar Q_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^n$ is the sheaf of holomorphic $n$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.
+the unit ball is $B^n = \{Q : \langle Q_1\rangle_{*} + \cdots + \langle Q_n\rangle_{*} < 1\}$, and the **Wirtinger operators** are $\partial/\partial Q_j = \tfrac12(\partial/\partial q_j - i\partial/\partial q'_j)$ and $\partial/\partial \bar Q_j = \tfrac12(\partial/\partial q_j + i\partial/\partial q'_j)$. The **Cauchy–Riemann operator** is $\bar\partial = \sum_j (\partial/\partial \bar Q_j)\,d\bar Q_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^n$ is the sheaf of holomorphic $n$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.
 
 ## Holomorphic Functions of Several Variables
 

@@ -81,12 +81,37 @@ so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde Q_3\in\mathbb{
 **Theorem (the scaling of the norm).** For every unit $\tilde{Q}$ and every $\tilde Q_3$,
 
 $$
-N\bigl(\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\bigr)=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}.
+\langle\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\rangle_{\natural}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}.
 $$
 
 **Proof.** The biquaternion norm is multiplicative and central, $\langle ab\rangle_{\natural}=\langle a\rangle_{\natural}\langle b\rangle_{\natural}$, and $\langle\tilde{Q}^{*}\rangle_{\natural}=\overline{\langle\tilde{Q}\rangle_{\natural}}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $\langle\cdot\rangle_{\natural}$, with complex conjugation, which conjugates it. Hence $\langle\tilde{Q}\tilde Q_3\tilde{Q}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}\overline{\langle\tilde{Q}\rangle_{\natural}}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}$.
 
 On the unit-norm slice, where $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.
+
+In the coordinates of the two halves the boost has an explicit matrix. On $\mathbb{M}_-$, with $\tilde Q_-=ia+\vec b$ and $G_-=\operatorname{diag}(-1,1,1,1)$,
+
+$$
+B_-(\psi,\vec u)=
+\begin{pmatrix}
+\cosh\psi & -\sinh\psi\,\vec u^{\mathsf T}\\
+-\sinh\psi\,\vec u & I_3+(\cosh\psi-1)\vec u\vec u^{\mathsf T}
+\end{pmatrix},
+\qquad B_-^{\mathsf T}G_-B_-=G_-.
+$$
+
+On $\mathbb{M}_+$, with $\tilde Q_+=a+i\vec b$ and $G_+=-G_-$, the same boost is $B_+$, with the opposite signs in the off-diagonal blocks, and
+
+$$
+B_-=D\,B_+\,D=B_+^{-1},\qquad D=G_+ .
+$$
+
+The rotor is the block-diagonal $\operatorname{diag}(1,\mathsf R(\theta,\vec u))$ in both halves. For a general unit the matrix of the action is $r^{2}\Lambda_\pm$, with $\Lambda_\pm=B_\pm\operatorname{diag}(1,\mathsf R)\in SO^{+}(1,3)$; the image of the group of units is the linear conformal group
+
+$$
+CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3),
+$$
+
+of real dimension seven, and not the full conformal group of Lorentzian space, whose translations and special conformal transformations are not sandwiches. The projective null cone, the celestial sphere and the Möbius action are in *Biquaternion Lorentzian and Conformal Geometry*.
 
 **The image of the unit.** Applied to $e_t$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.
 
@@ -124,7 +149,7 @@ The action on the remarkable subspaces is the following. Each entry records whet
 
 The two sectors are preserved for every element; the four subspaces of the scalar–vector and quaternion decompositions are preserved only by the unitary elements, and by them because a real unit quaternion is unitary.
 
-**Theorem (which operators preserve the whole subspace structure).** Let $\tilde{Q}$ be a unit with polar representation $\tilde{Q}=r\exp(i\alpha)B\tilde u$, where $r>0$, $\alpha$ is real, $\langle\cdot\rangle$ is Hermitian positive of unit norm and $\tilde u$ is a unit real quaternion. The following are equivalent:
+**Theorem (which operators preserve the whole subspace structure).** Let $\tilde{Q}$ be a unit with polar decomposition $\tilde{Q}=r\exp(i\alpha)B\tilde u$, where $r>0$, $\alpha$ is real, $\langle\cdot\rangle$ is Hermitian positive of unit norm and $\tilde u$ is a unit real quaternion. The following are equivalent:
 
 1. the sandwich maps each of the remarkable subspaces to itself;
 2. $\langle\cdot\rangle=e_t$;

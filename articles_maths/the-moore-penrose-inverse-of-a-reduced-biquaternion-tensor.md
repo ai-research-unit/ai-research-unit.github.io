@@ -10,7 +10,7 @@ The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion t
 
 ## The Definition
 
-Let $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$. A tensor $X\in\mathbb{B}_{\mathrm r}^{n_2\times n_1\times n_3}$ is a **Moore-Penrose inverse** of $A$ if
+Let $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$. A tensor $X\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_1\times n_3}$ is a **Moore-Penrose inverse** of $A$ if
 
 $$
 A\ast X\ast A=A,\qquad X\ast A\ast X=X,\qquad (A\ast X)^{\mathsf H}=A\ast X,\qquad (X\ast A)^{\mathsf H}=X\ast A.
@@ -18,7 +18,7 @@ $$
 
 These are the four **Penrose equations**, written with the t-product and the conjugate transpose of the branch. The inverse is written $A^\dagger$.
 
-**Theorem (existence and uniqueness).** Every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ has exactly one Moore-Penrose inverse.
+**Theorem (existence and uniqueness).** Every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ has exactly one Moore-Penrose inverse.
 
 *Proof.* Write $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$. The product, the conjugate transpose and the idempotents act coordinatewise, so the four equations are equivalent to the two complex t-product Penrose systems
 
@@ -48,13 +48,13 @@ s^\dagger=s_{(1)}^\dagger\Pi_++s_{(2)}^\dagger\Pi_-,\qquad
 z^\dagger=\begin{cases}1/z,&z\neq0,\\0,&z=0,\end{cases}
 $$
 
-for $s\in\mathbb{B}_{\mathrm r}$ and $z\in\mathbb{C}$. This is the scalar Moore-Penrose inverse with respect to the bar conjugation; it satisfies $ss^\dagger s=s$, $s^\dagger ss^\dagger=s^\dagger$, and $ss^\dagger$ and $s^\dagger s$ are each $0$ or $1$ in each idempotent coordinate. Then
+for $s\in\mathbb{B}_{\mathrm{r}}$ and $z\in\mathbb{C}$. This is the scalar Moore-Penrose inverse with respect to the bar conjugation; it satisfies $ss^\dagger s=s$, $s^\dagger ss^\dagger=s^\dagger$, and $ss^\dagger$ and $s^\dagger s$ are each $0$ or $1$ in each idempotent coordinate. Then
 
 $$
 A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}.
 $$
 
-**Remark (the inversion is in the transform).** The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm r}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. **The reciprocal-or-zero is taken on the transform slices**, as in the display.
+**Remark (the inversion is in the transform).** The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm{r}}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. **The reciprocal-or-zero is taken on the transform slices**, as in the display.
 
 *Proof of the formula.* In the transform, $S$ is f-diagonal, so the four Penrose equations for $S$ and $S^\dagger$ reduce to the scalar equations on each diagonal entry of each slice; hence $S^\dagger$ is the Moore-Penrose inverse of $S$. For unitary $U,V$, the four equations for $A=U\ast S\ast V^{\mathsf H}$ and $X=V\ast S^\dagger\ast U^{\mathsf H}$ follow by cancellation:
 

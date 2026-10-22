@@ -33,7 +33,7 @@ The following table compares the norm of an element as a spectral quantity, the 
 
 | datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
 |---|---|---|---|---|---|---|---|---|
-| norm as a spectral quantity | $\lvert q\rvert$ | $\lvert Q\rvert$ | $\sqrt{\lvert N(Q)\rvert}$ | $\lvert a\rvert$ | $\lvert\tilde q\rvert$, the spectral radius | $\lvert q_t\rvert+\sqrt{\lvert N(\vec v)\rvert}$ | $\lvert \langle\tilde Q\rangle_{\natural}\rvert=\prod_i\lvert\lambda_i\rvert$ | $\max(\lvert\tilde Q_+\rvert,\lvert\tilde Q_-\rvert)$ |
+| norm as a spectral quantity | $\lvert q\rvert$ | $\sqrt{\langle Q\rangle_{*}}$ | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ | $\lvert a\rvert$ | $\lvert\tilde q\rvert$, the spectral radius | $\lvert q_t\rvert+\sqrt{\lvert N(\vec v)\rvert}$ | $\lvert \langle\tilde Q\rangle_{\natural}\rvert=\prod_i\lvert\lambda_i\rvert$ | $\max(\lvert\tilde Q_+\rvert,\lvert\tilde Q_-\rvert)$ |
 | equals the spectral radius | yes | yes | yes | yes | yes for a single quaternion | yes | for normal elements | yes, the operator norm |
 | spectral theorem | — | — | — | — | quaternionic, for normal matrices | — , Peirce replaces it | $\tilde Q=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2$, Hermitian idempotents | pair of quaternion theorems |
 | Hermitian, unitary | — | — | — | — | real S-spectrum, spectrum on $S^3$ | symmetric elements are the scalars | Hermitian real, unitary on the circle | decided in each half |

@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The reduced biquaternion algebra carries four conjugations and a multiplication by $j$, and the subspaces these maps single out are its **remarkable subspaces**. There are eight of them, all of real dimension two: the fixed and the anti-fixed space of each of the three involutions $\bar{\cdot}$, ${}^{\natural}$ and ${}^{*}$ — six spaces — and the two **idempotent lines** $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ selected by the multiplication by $j$. This article names them, gives for each a defining equation, a basis and a dimension, and states the two readings that organise the list: the six involutive spaces are the **coordinate planes** of the real basis $1,i,j,ij$, and the two idempotent lines are the **diagonal planes** cut out by the multiplication by $j$.
+The reduced biquaternion algebra carries four conjugations and a multiplication by $j$, and the subspaces these maps single out are its **remarkable subspaces**. There are eight of them, all of real dimension two: the fixed and the anti-fixed space of each of the three involutions $\bar{\cdot}$, ${}_{\mathrm{ts}}$ and ${}^{*}$ — six spaces — and the two **idempotent lines** $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ selected by the multiplication by $j$. This article names them, gives for each a defining equation, a basis and a dimension, and states the two readings that organise the list: the six involutive spaces are the **coordinate planes** of the real basis $1,i,j,ij$, and the two idempotent lines are the **diagonal planes** cut out by the multiplication by $j$.
 
 **The results.** The six spaces of the involutions are the three pairs given by the involutions of *The Two Involutions and the Group of Involutions of the Reduced Biquaternions*:
 
 | involution | fixed space | anti-fixed space |
 |---|---|---|
 | bar $\bar{\cdot}$ | $\mathbb{R}\{1,j\}$, the real subalgebra | $\mathbb{R}\{i,ij\}$, the imaginary space |
-| natural sign ${}^{\natural}$ | $\mathbb{C}=\mathbb{R}\{1,i\}$, the scalar line | $\mathbb{C}j=\mathbb{R}\{j,ij\}$, the $j$-line |
+| tessarine sign ${}_{\mathrm{ts}}$ | $\mathbb{C}=\mathbb{R}\{1,i\}$, the scalar line | $\mathbb{C}j=\mathbb{R}\{j,ij\}$, the $j$-line |
 | star ${}^{*}$ | $\mathbb{R}\{1,ij\}$, the Hermitian subspace | $\mathbb{R}\{i,j\}$, the anti-Hermitian subspace |
 
-The bar and the natural sign are the two generators, and the star is their composite; each of the three splits the real four-dimensional space into a plane and its complement, and each plane is $\mathbb{C}$-linear or not according to the involution. Because each of the six spaces is the real span of a **pair of the four real basis elements**, the three involutions act on all six; and the four real lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$, $\mathbb{R}ij$ carry the **characters** $(\varepsilon_{\bar{}},\varepsilon_{\natural},\varepsilon_{*})$ of the three involutions, four of the eight possible signs, with $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\natural}$. The two idempotent lines are the eigenlines of the multiplication by $j$ and lie on neither list of coordinates; they are the line of $\Pi_+$ and the line of $\Pi_-$, with $\Pi_{\pm}=\tfrac12(1\pm j)$, and they are the two minimal ideals of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*.
+The bar and the tessarine sign are the two generators, and the star is their composite; each of the three splits the real four-dimensional space into a plane and its complement, and each plane is $\mathbb{C}$-linear or not according to the involution. Because each of the six spaces is the real span of a **pair of the four real basis elements**, the three involutions act on all six; and the four real lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$, $\mathbb{R}ij$ carry the **characters** $(\varepsilon_{\bar{}},\varepsilon_{\mathrm{ts}},\varepsilon_{*})$ of the three involutions, four of the eight possible signs, with $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\mathrm{ts}}$. The two idempotent lines are the eigenlines of the multiplication by $j$ and lie on neither list of coordinates; they are the line of $\Pi_+$ and the line of $\Pi_-$, with $\Pi_{\pm}=\tfrac12(1\pm j)$, and they are the two minimal ideals of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*.
 
 **The character of each space.** The six spaces are the sums of the pairs of real lines, and the fourth *character* relation organises them: a space defined by one involution is the sum of the two lines on which that involution has the same sign, and the **Hermitian** subspace is the one fixed by the star while the **anti-Hermitian** is the one negated. On the Hermitian subspace the algebraic norm is positive, $N=a^{2}+b^{2}$, and on the anti-Hermitian it is negative, $N=-(a^{2}+b^{2})$; on the idempotent lines the norm vanishes, and the lines are the zero divisors.
 
@@ -35,36 +35,36 @@ $$
 
 ### The Six Spaces
 
-**The fixed and the anti-fixed spaces of the bar, the natural sign and the star are the six coordinate planes.**
+**The fixed and the anti-fixed spaces of the bar, the tessarine sign and the star are the six coordinate planes.**
 
 **Theorem (the six spaces).** The involutions split the real space as follows, each space having real dimension two:
 
 | involution | fixed space | anti-fixed space |
 |---|---|---|
 | bar $\bar{\cdot}$ | $\mathbb{R}\{1,j\}$ | $\mathbb{R}\{i,ij\}$ |
-| natural sign ${}^{\natural}$ | $\mathbb{C}=\mathbb{R}\{1,i\}$ | $\mathbb{C}j=\mathbb{R}\{j,ij\}$ |
+| tessarine sign ${}_{\mathrm{ts}}$ | $\mathbb{C}=\mathbb{R}\{1,i\}$ | $\mathbb{C}j=\mathbb{R}\{j,ij\}$ |
 | star ${}^{*}$ | $\mathbb{R}\{1,ij\}$ | $\mathbb{R}\{i,j\}$ |
 
 Each space is the real span of a pair of the four basis elements $1,i,j,ij$.
 
-*Proof.* The action on the basis is $\bar{\cdot}:(1,i,j,ij)\mapsto(1,-i,j,-ij)$, ${}^{\natural}:(1,i,j,ij)\mapsto(1,i,-j,-ij)$ and ${}^{*}:(1,i,j,ij)\mapsto(1,-i,-j,ij)$ (*The Two Involutions and the Group of Involutions of the Reduced Biquaternions*). A basis element is fixed or negated by each involution, so each fixed space is the span of the fixed basis elements and each anti-fixed space the span of the negated ones.
+*Proof.* The action on the basis is $\bar{\cdot}:(1,i,j,ij)\mapsto(1,-i,j,-ij)$, ${}_{\mathrm{ts}}:(1,i,j,ij)\mapsto(1,i,-j,-ij)$ and ${}^{*}:(1,i,j,ij)\mapsto(1,-i,-j,ij)$ (*The Two Involutions and the Group of Involutions of the Reduced Biquaternions*). A basis element is fixed or negated by each involution, so each fixed space is the span of the fixed basis elements and each anti-fixed space the span of the negated ones.
 
 ### The Characters and the Four Lines
 
 **Each real line $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$, $\mathbb{R}ij$ carries a character of the Klein group, and the six coordinate planes are the sums of the lines on which two of the three characters agree.**
 
-**Definition.** For a basis line $L$ the **character** of $L$ is the triple $\varepsilon(L)=(\varepsilon_{\bar{}},\varepsilon_{\natural},\varepsilon_{*})$ with $\sigma$ acting on $L$ by $\varepsilon_{\sigma}\,\mathrm{id}$.
+**Definition.** For a basis line $L$ the **character** of $L$ is the triple $\varepsilon(L)=(\varepsilon_{\bar{}},\varepsilon_{\mathrm{ts}},\varepsilon_{*})$ with $\sigma$ acting on $L$ by $\varepsilon_{\sigma}\,\mathrm{id}$.
 
 **Theorem (the character table).** The four lines have the characters
 
-| line | $\varepsilon_{\bar{}}$ | $\varepsilon_{\natural}$ | $\varepsilon_{*}$ |
+| line | $\varepsilon_{\bar{}}$ | $\varepsilon_{\mathrm{ts}}$ | $\varepsilon_{*}$ |
 |---|---|---|---|
 | $\mathbb{R}$ | $+$ | $+$ | $+$ |
 | $\mathbb{R}i$ | $-$ | $+$ | $-$ |
 | $\mathbb{R}j$ | $+$ | $-$ | $-$ |
 | $\mathbb{R}ij$ | $-$ | $-$ | $+$ |
 
-and they satisfy $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\natural}$ at every line. The six planes of §*The Six Spaces* are the sums of the pairs of lines on which the corresponding involutions have matching signs:
+and they satisfy $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\mathrm{ts}}$ at every line. The six planes of §*The Six Spaces* are the sums of the pairs of lines on which the corresponding involutions have matching signs:
 $$
 \mathbb{R}\{1,j\}=\mathbb{R}\oplus\mathbb{R}j,\quad \mathbb{R}\{i,ij\}=\mathbb{R}i\oplus\mathbb{R}ij,\quad \mathbb{C}=\mathbb{R}\oplus\mathbb{R}i,
 $$
@@ -72,9 +72,9 @@ $$
 \mathbb{C}j=\mathbb{R}j\oplus\mathbb{R}ij,\quad \mathbb{R}\{1,ij\}=\mathbb{R}\oplus\mathbb{R}ij,\quad \mathbb{R}\{i,j\}=\mathbb{R}i\oplus\mathbb{R}j.
 $$
 
-*Proof.* Read the characters from the basis action: $1$ is fixed by all three; $i$ is negated by the bar and the star and fixed by the natural sign; $j$ is negated by the natural sign and the star and fixed by the bar; $ij$ is negated by the bar and the natural sign and fixed by the star. The relation $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\natural}$ is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the identifications of the planes are read from the table.
+*Proof.* Read the characters from the basis action: $1$ is fixed by all three; $i$ is negated by the bar and the star and fixed by the tessarine sign; $j$ is negated by the tessarine sign and the star and fixed by the bar; $ij$ is negated by the bar and the tessarine sign and fixed by the star. The relation $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\mathrm{ts}}$ is ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$, and the identifications of the planes are read from the table.
 
-**Remark (three pairs, one structure).** The six planes are three complementary pairs, one per involution: the pair $\{\mathbb{C},\mathbb{C}j\}$ of the natural sign, the pair $\{\mathbb{R}\{1,j\},\mathbb{R}\{i,ij\}\}$ of the bar, and the pair $\{\mathbb{R}\{1,ij\},\mathbb{R}\{i,j\}\}$ of the star. Each pair sums to the whole real space and meets in $\{0\}$; the pairs are not the same decompositions, and their comparison is *Decompositions Along the Remarkable Subspaces*.
+**Remark (three pairs, one structure).** The six planes are three complementary pairs, one per involution: the pair $\{\mathbb{C},\mathbb{C}j\}$ of the tessarine sign, the pair $\{\mathbb{R}\{1,j\},\mathbb{R}\{i,ij\}\}$ of the bar, and the pair $\{\mathbb{R}\{1,ij\},\mathbb{R}\{i,j\}\}$ of the star. Each pair sums to the whole real space and meets in $\{0\}$; the pairs are not the same decompositions, and their comparison is *Decompositions Along the Remarkable Subspaces*.
 
 ## The Hermitian and Anti-Hermitian Subspaces
 
@@ -90,9 +90,9 @@ and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an
 
 *Proof.* This is the projection statement for the star, with $\tfrac12(\mathrm{id}+{}^{*})$ and $\tfrac12(\mathrm{id}-{}^{*})$; the directness is the vanishing of the intersection of the two planes.
 
-**Corollary (the norms on the two planes).** On the Hermitian subspace the algebraic norm is $\langle a+bij\rangle_{\natural}=a^{2}+b^{2}>0$ for a nonzero element, so every nonzero Hermitian element is a unit; on the anti-Hermitian subspace the norm is $\langle ai+bj\rangle_{\natural}=-a^{2}-b^{2}<0$. The star plane is the copy $\mathbb{R}\{1,ij\}\cong\mathbb{C}$ of the complex field inside the algebra, the element $ij$ playing the role of the imaginary unit, since $(ij)^{2}=i^{2}j^{2}=(-1)(+1)=-1$.
+**Corollary (the norms on the two planes).** On the Hermitian subspace the algebraic norm is $\langle a+bij\rangle_{\mathrm{ts}}=a^{2}+b^{2}>0$ for a nonzero element, so every nonzero Hermitian element is a unit; on the anti-Hermitian subspace the norm is $\langle ai+bj\rangle_{\mathrm{ts}}=-a^{2}-b^{2}<0$. The star plane is the copy $\mathbb{R}\{1,ij\}\cong\mathbb{C}$ of the complex field inside the algebra, the element $ij$ playing the role of the imaginary unit, since $(ij)^{2}=i^{2}j^{2}=(-1)(+1)=-1$.
 
-**Remark (Hermitian is not positive).** The name refers to the star and not to a sign of a form: the general plain sesquilinear form has the value $\langle \breve Q\rangle_{*}=\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}=a^{2}-b^{2}$ on a Hermitian element $\breve Q=a+bij$, which is indefinite in $a,b$. The definite form of the algebra is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$, and the positivity of $\langle\cdot\rangle_{\natural}$ on the Hermitian subspace is the positivity of the diagonal of a bilinear form, not of $\langle\cdot,\cdot\rangle_{*}$. The forms are *The Forms of the Algebra of the Reduced Biquaternions*.
+**Remark (Hermitian is not positive).** The name refers to the star and not to a sign of a form: the general plain sesquilinear form has the value $\langle \breve Q\rangle_{*}=\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}=a^{2}-b^{2}$ on a Hermitian element $\breve Q=a+bij$, which is indefinite in $a,b$. The definite form of the algebra is the general tessarine sesquilinear form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$, and the positivity of $\langle\cdot\rangle_{\mathrm{ts}}$ on the Hermitian subspace is the positivity of the diagonal of a bilinear form, not of $\langle\cdot,\cdot\rangle_{*}$. The forms are *The Forms of the Algebra of the Reduced Biquaternions*.
 
 ## The Idempotent Lines
 
@@ -112,7 +112,7 @@ $$
 $$
 where $\mathbf 1,\mathbf j$ are the coordinate vectors; the lines are spanned by the vectors $\tfrac12(1,0,1,0)$ and $\tfrac12(0,1,0,1)$ for $\mathbb{C}\Pi_+$ and $\tfrac12(1,0,-1,0)$, $\tfrac12(0,1,0,-1)$ for $\mathbb{C}\Pi_-$. They are not the spans of pairs of basis elements, and in the matrix model of *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions* they are the two coordinate lines of the diagonal algebra.
 
-**Remark (the involutions on the idempotent lines).** The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the natural sign and the star exchange them, $\Pi_+^{\natural}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}^{\natural}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.
+**Remark (the involutions on the idempotent lines).** The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the tessarine sign and the star exchange them, $\Pi_{+,\mathrm{ts}}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}_{\mathrm{ts}}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.
 
 ## The Relations between the Spaces
 
@@ -147,9 +147,9 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 
 **On the six coordinate planes the norm is either positive definite, negative definite or split, and on the idempotent lines it vanishes identically.**
 
-**Theorem (the norms).** The algebraic norm $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ restricted to the spaces is
+**Theorem (the norms).** The algebraic norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ restricted to the spaces is
 
-| space | parametrisation | $N$ | sign |
+| space | parametrisation | $\langle \breve Q\rangle_{\mathrm{ts}}$ | sign |
 |---|---|---|---|
 | $\mathbb{C}$ | $Q_{\blacktriangle}$ | $Q_{\blacktriangle}^{2}$ | complex |
 | $\mathbb{C}j$ | $Q_{\blacktriangledown}j$ | $-Q_{\blacktriangledown}^{2}$ | complex |
@@ -161,27 +161,27 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 
 with $a,b\in\mathbb{R}$.
 
-*Proof.* Substitute each parametrisation into $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$: for $\breve Q=a+bj$ the coordinates are $Q_{\blacktriangle}=a$, $Q_{\blacktriangledown}=b$, so $N=a^{2}-b^{2}$; for $\breve Q=a+bij$ they are $Q_{\blacktriangle}=a$, $Q_{\blacktriangledown}=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $\breve Q=ai+bj$ they are $Q_{\blacktriangle}=ai$, $Q_{\blacktriangledown}=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $\breve Q=x\Pi_+$ or $\breve Q=x\Pi_-$ the coordinates have $Q_{\blacktriangle}\pm Q_{\blacktriangledown}=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
+*Proof.* Substitute each parametrisation into $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$: for $\breve Q=a+bj$ the coordinates are $Q_{\blacktriangle}=a$, $Q_{\blacktriangledown}=b$, so $N=a^{2}-b^{2}$; for $\breve Q=a+bij$ they are $Q_{\blacktriangle}=a$, $Q_{\blacktriangledown}=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $\breve Q=ai+bj$ they are $Q_{\blacktriangle}=ai$, $Q_{\blacktriangledown}=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $\breve Q=x\Pi_+$ or $\breve Q=x\Pi_-$ the coordinates have $Q_{\blacktriangle}\pm Q_{\blacktriangledown}=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
 
 **Corollary (the zero divisors).** The two idempotent lines are exactly the null set of the norm, and their nonzero elements are the zero divisors of *Zero Divisors of the Algebra of the Reduced Biquaternions*; the Hermitian and anti-Hermitian subspaces are the two kinds of element on which the norm has a definite sign, and the real subalgebra and its $i$-multiple are the two split planes.
 
 ## Summary
 
-The remarkable subspaces of the reduced biquaternion algebra are eight planes of real dimension two: the fixed and the anti-fixed space of each of the three involutions — the bar giving the real subalgebra $\mathbb{R}\{1,j\}$ and the imaginary space $\mathbb{R}\{i,ij\}$, the natural sign giving the scalar line $\mathbb{C}=\mathbb{R}\{1,i\}$ and the $j$-line $\mathbb{C}j$, the star giving the Hermitian subspace $\mathbb{R}\{1,ij\}$ and the anti-Hermitian subspace $\mathbb{R}\{i,j\}$ — and the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$. The six involutive spaces are the coordinate planes, each spanned by a pair of the four real basis elements, and they are spanned by the four real lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$, $\mathbb{R}ij$, whose characters $(\varepsilon_{\bar{}},\varepsilon_{\natural},\varepsilon_{*})$ are $+++$, $-+-$, $+--$ and $--+$ and satisfy $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\natural}$. The two idempotent lines are the eigenlines of the multiplication by $j$, diagonal planes spanned by $\Pi_+$ and by $\Pi_-$ and exchanged by the natural sign and the star while fixed by the bar. The six coordinate planes form three complementary pairs, one per involution, and any two of them meet in a real line or in $\{0\}$. The norm is positive definite on the Hermitian subspace, negative definite on the anti-Hermitian subspace, split on the real subalgebra and its $i$-multiple, complex on the two complex lines, and identically zero on the two idempotent lines, which are the null set and the zero divisors.
+The remarkable subspaces of the reduced biquaternion algebra are eight planes of real dimension two: the fixed and the anti-fixed space of each of the three involutions — the bar giving the real subalgebra $\mathbb{R}\{1,j\}$ and the imaginary space $\mathbb{R}\{i,ij\}$, the tessarine sign giving the scalar line $\mathbb{C}=\mathbb{R}\{1,i\}$ and the $j$-line $\mathbb{C}j$, the star giving the Hermitian subspace $\mathbb{R}\{1,ij\}$ and the anti-Hermitian subspace $\mathbb{R}\{i,j\}$ — and the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$. The six involutive spaces are the coordinate planes, each spanned by a pair of the four real basis elements, and they are spanned by the four real lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$, $\mathbb{R}ij$, whose characters $(\varepsilon_{\bar{}},\varepsilon_{\mathrm{ts}},\varepsilon_{*})$ are $+++$, $-+-$, $+--$ and $--+$ and satisfy $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\mathrm{ts}}$. The two idempotent lines are the eigenlines of the multiplication by $j$, diagonal planes spanned by $\Pi_+$ and by $\Pi_-$ and exchanged by the tessarine sign and the star while fixed by the bar. The six coordinate planes form three complementary pairs, one per involution, and any two of them meet in a real line or in $\{0\}$. The norm is positive definite on the Hermitian subspace, negative definite on the anti-Hermitian subspace, split on the real subalgebra and its $i$-multiple, complex on the two complex lines, and identically zero on the two idempotent lines, which are the null set and the zero divisors.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\bar{\cdot},\ {}^{\natural},\ {}^{*}$ | the bar, the natural sign and the star, the three involutions |
-| $\mathbb{C}=\mathbb{R}\{1,i\}$ | the scalar line, the fixed space of the natural sign |
-| $\mathbb{C}j=\mathbb{R}\{j,ij\}$ | the $j$-line, the anti-fixed space of the natural sign |
+| $\bar{\cdot},\ {}_{\mathrm{ts}},\ {}^{*}$ | the bar, the tessarine sign and the star, the three involutions |
+| $\mathbb{C}=\mathbb{R}\{1,i\}$ | the scalar line, the fixed space of the tessarine sign |
+| $\mathbb{C}j=\mathbb{R}\{j,ij\}$ | the $j$-line, the anti-fixed space of the tessarine sign |
 | $\mathbb{R}\{1,j\}$ | the real subalgebra, the fixed space of the bar |
 | $\mathbb{R}\{i,ij\}$ | the imaginary space, the anti-fixed space of the bar |
 | $\mathbb{R}\{1,ij\}$ | the Hermitian subspace, the fixed space of the star |
 | $\mathbb{R}\{i,j\}$ | the anti-Hermitian subspace, the anti-fixed space of the star |
 | $\mathbb{C}\Pi_+,\ \mathbb{C}\Pi_-$ | the idempotent lines, the eigenlines of the multiplication by $j$ |
-| $\varepsilon(L)=(\varepsilon_{\bar{}},\varepsilon_{\natural},\varepsilon_{*})$ | the character of a real line |
+| $\varepsilon(L)=(\varepsilon_{\bar{}},\varepsilon_{\mathrm{ts}},\varepsilon_{*})$ | the character of a real line |
 | $N=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the algebraic norm read on each space |
 
 ## Further Reading

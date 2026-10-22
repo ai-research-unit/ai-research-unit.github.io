@@ -9,7 +9,7 @@ The complex case is the model case of hypercomplex integration. Because $\mathbb
 
 No physics is invoked. The complex numbers are the coefficient field, the plane $\mathbb{C}$ is the domain of the functions, and the independent variable is a complex number.
 
-For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$, and modulus $|Q| = \sqrt{q^2+q'^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial/\partial\bar Q = \tfrac12(\partial/\partial q + i \partial/\partial q')$, and a function is holomorphic exactly when $\partial/\partial\bar Q f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $Q_0$ is written $C(Q_0, r)$ and is always positively oriented unless the opposite is stated.
+For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$, and modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2+q'^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial/\partial\bar Q = \tfrac12(\partial/\partial q + i \partial/\partial q')$, and a function is holomorphic exactly when $\partial/\partial\bar Q f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $Q_0$ is written $C(Q_0, r)$ and is always positively oriented unless the opposite is stated.
 
 ## The Complex Integral
 
@@ -128,7 +128,7 @@ $$
 for every closed path that does not pass through the origin. The excluded case $n = -1$ is the fundamental one:
 
 $$
-\oint_{|Q| = r} \frac{dQ}{Q} = \int_0^{2\pi} \frac{ir\exp(it)}{r\exp(it)} \, dt = 2\pi i \neq 0 .
+\oint_{\sqrt{\langle Q\rangle_{*}} = r} \frac{dQ}{Q} = \int_0^{2\pi} \frac{ir\exp(it)}{r\exp(it)} \, dt = 2\pi i \neq 0 .
 $$
 
 So $1/Q$ admits no primitive on $\mathbb{C}^\times$, and the value $2\pi i$ is the source of the entire residue theory.
@@ -155,13 +155,13 @@ $$
 \frac{dh}{dQ} = \oint_\gamma \frac{dQ_1}{(Q_1 - Q)^2}.
 $$
 
-The integrand $(Q_1-Q)^{-2}$ has the primitive $-(Q_1-Q)^{-1}$ in the variable $Q_1$ on $\mathbb{C} \setminus \{Q\}$, so $\frac{dh}{dQ} = 0$ and $h$ is locally constant. Put $\Phi(Q) = \exp h(Q)$; then $\Phi'(Q) = \frac{dh}{dQ} \Phi(Q) = 0$, so $\Phi$ is constant, and as $|Q| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(Q) \to 0$ and $\Phi(Q) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(Q) \in 2\pi i \mathbb{Z}$ for every $Q$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.
+The integrand $(Q_1-Q)^{-2}$ has the primitive $-(Q_1-Q)^{-1}$ in the variable $Q_1$ on $\mathbb{C} \setminus \{Q\}$, so $\frac{dh}{dQ} = 0$ and $h$ is locally constant. Put $\Phi(Q) = \exp h(Q)$; then $\Phi'(Q) = \frac{dh}{dQ} \Phi(Q) = 0$, so $\Phi$ is constant, and as $\sqrt{\langle Q\rangle_{*}} \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(Q) \to 0$ and $\Phi(Q) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(Q) \in 2\pi i \mathbb{Z}$ for every $Q$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.
 
-**Example.** For the positively oriented circle $\gamma(t) = Q_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, Q_0) = 1$ and $\operatorname{Ind}(\gamma, Q) = 0$ for $|Q - Q_0| > r$. For the same circle traversed $m$ times the index is $m$.
+**Example.** For the positively oriented circle $\gamma(t) = Q_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, Q_0) = 1$ and $\operatorname{Ind}(\gamma, Q) = 0$ for $\sqrt{\langle Q - Q_0\rangle_{*}} > r$. For the same circle traversed $m$ times the index is $m$.
 
-**Theorem (homotopy invariance).** Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $\Omega$ and let $H : [0,1] \times [a,b] \to \Omega$ be continuous with $\langle s,\cdot\rangle_{*}$ closed and piecewise $C^1$ for every $s$, $\langle0,\cdot\rangle_{*} = \gamma_0$ and $\langle1,\cdot\rangle_{*} = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, Q_0) = \operatorname{Ind}(\gamma_1, Q_0)$ for every $Q_0 \notin \Omega$.
+**Theorem (homotopy invariance).** Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $\Omega$ and let $H : [0,1] \times [a,b] \to \Omega$ be continuous with $H(s,\cdot)$ closed and piecewise $C^1$ for every $s$, $H(0,\cdot) = \gamma_0$ and $H(1,\cdot) = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, Q_0) = \operatorname{Ind}(\gamma_1, Q_0)$ for every $Q_0 \notin \Omega$.
 
-**Proof.** For a closed path $\gamma$ avoiding $Q_0$ one may write $\gamma(t) - Q_0 = r(t) \exp(i\Theta(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, Q_0)$. Since $Q_0 \notin \Omega$, the map $H - Q_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta^{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - Q_0 = \rho(s,t) \exp(i \Theta^{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta^{\mathrm{lift}}(s, b) - \Theta^{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(\langle s,\cdot\rangle_{*}, Q_0)$.
+**Proof.** For a closed path $\gamma$ avoiding $Q_0$ one may write $\gamma(t) - Q_0 = r(t) \exp(i\Theta(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, Q_0)$. Since $Q_0 \notin \Omega$, the map $H - Q_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta^{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - Q_0 = \rho(s,t) \exp(i \Theta^{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta^{\mathrm{lift}}(s, b) - \Theta^{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s,\cdot), Q_0)$.
 
 The winding number therefore depends only on the homotopy class of the path in $\Omega$, and it is the reason a closed path in a simply connected domain has winding number zero about every point outside the domain.
 
@@ -193,7 +193,7 @@ $$
 f(Q) = f(Q_0) + \frac{df}{dQ}(Q_0)(Q - Q_0) + (Q - Q_0)\eta(Q), \qquad \eta(Q) \to 0 \ \ (Q \to Q_0).
 $$
 
-The constant and the linear term have primitives and therefore integrate to zero over the closed curve $\partial T^{(n)}$, so $\oint_{\partial T^{(n)}} f = \oint_{\partial T^{(n)}} (Q - Q_0)\eta(Q) \, dQ$. For $Q \in T^{(n)}$ one has $|Q - Q_0| \le \operatorname{diam} T^{(n)}$ and $|\eta(Q)| \le \varepsilon_n$ with $\varepsilon_n \to 0$, whence by the estimation property
+The constant and the linear term have primitives and therefore integrate to zero over the closed curve $\partial T^{(n)}$, so $\oint_{\partial T^{(n)}} f = \oint_{\partial T^{(n)}} (Q - Q_0)\eta(Q) \, dQ$. For $Q \in T^{(n)}$ one has $\sqrt{\langle Q - Q_0\rangle_{*}} \le \operatorname{diam} T^{(n)}$ and $|\eta(Q)| \le \varepsilon_n$ with $\varepsilon_n \to 0$, whence by the estimation property
 
 $$
 \left| \oint_{\partial T^{(n)}} f \right| \le \operatorname{diam} T^{(n)} \cdot \varepsilon_n \cdot L(\partial T^{(n)}) = 4^{-n} \, \varepsilon_n \operatorname{diam} T \, L(\partial T).
@@ -249,7 +249,7 @@ $$
 
 This homological form is the sharp statement of the theorem: it is the hypothesis one actually verifies, and it reduces the simply connected case (where every cycle in $\Omega$ is homologous to zero) to a computation of winding numbers. It is proved from the Cauchy–Goursat theorem by exhausting $\Omega$ with compact sets and approximating $f$ by rational functions, a construction due to Runge; the details are standard.
 
-**Example.** On the annulus $\mathcal{A} = \{Q : 1 < |Q| < 2\}$, let $\gamma$ be the outer circle $|Q| = 3/2$ traversed positively together with the inner circle $|Q| = 5/4$ traversed negatively. Every point outside $\mathcal{A}$ has index $0$, so $\gamma$ is homologous to zero in $\mathcal{A}$, and $\oint_\gamma f \, dQ = 0$ for every $f$ holomorphic on $\mathcal{A}$. This is the form of the Cauchy theorem used to prove the residue theorem.
+**Example.** On the annulus $\mathcal{A} = \{Q : 1 < \sqrt{\langle Q\rangle_{*}} < 2\}$, let $\gamma$ be the outer circle $\sqrt{\langle Q\rangle_{*}} = 3/2$ traversed positively together with the inner circle $\sqrt{\langle Q\rangle_{*}} = 5/4$ traversed negatively. Every point outside $\mathcal{A}$ has index $0$, so $\gamma$ is homologous to zero in $\mathcal{A}$, and $\oint_\gamma f \, dQ = 0$ for every $f$ holomorphic on $\mathcal{A}$. This is the form of the Cauchy theorem used to prove the residue theorem.
 
 ## The Cauchy Integral Formula
 
@@ -265,7 +265,7 @@ $$
 g(Q_1) = \begin{cases} \dfrac{f(Q_1) - f(Q)}{Q_1 - Q}, & Q_1 \neq Q, \\[2mm] \frac{df}{dQ}, & Q_1 = Q. \end{cases}
 $$
 
-The function $g$ is holomorphic on $\Omega$: away from $Q$ it is a quotient of holomorphic functions with non-vanishing denominator, and at $Q$ it extends holomorphically with value $\frac{df}{dQ}$, since $f(Q_1) = f(Q) + \frac{df}{dQ}(Q_1 - Q) + o(|Q_1 - Q|)$. Since $g$ is holomorphic on $\Omega$ and $\gamma$ is homologous to zero in $\Omega$, the homological Cauchy theorem gives $\oint_\gamma g(Q_1) \, dQ_1 = 0$, that is,
+The function $g$ is holomorphic on $\Omega$: away from $Q$ it is a quotient of holomorphic functions with non-vanishing denominator, and at $Q$ it extends holomorphically with value $\frac{df}{dQ}$, since $f(Q_1) = f(Q) + \frac{df}{dQ}(Q_1 - Q) + o(\sqrt{\langle Q_1 - Q\rangle_{*}})$. Since $g$ is holomorphic on $\Omega$ and $\gamma$ is homologous to zero in $\Omega$, the homological Cauchy theorem gives $\oint_\gamma g(Q_1) \, dQ_1 = 0$, that is,
 
 $$
 \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 = f(Q) \oint_\gamma \frac{dQ_1}{Q_1 - Q} = f(Q) \cdot 2\pi i \operatorname{Ind}(\gamma, Q).
@@ -277,7 +277,7 @@ $$
 f(Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 .
 $$
 
-For instance, if $f$ is holomorphic on a neighbourhood of the closed disk $\overline{B}(Q_0, r)$ and $|Q - Q_0| < r$, then with $C = C(Q_0, r)$,
+For instance, if $f$ is holomorphic on a neighbourhood of the closed disk $\overline{B}(Q_0, r)$ and $\sqrt{\langle Q - Q_0\rangle_{*}} < r$, then with $C = C(Q_0, r)$,
 
 $$
 f(Q) = \frac{1}{2\pi i} \oint_C \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 .
@@ -299,7 +299,7 @@ $$
 \left| f^{(n)}(Q_0) \right| \le \frac{n! \, m}{r^n} \qquad (n \ge 0).
 $$
 
-**Proof.** Apply the derivative formula on the circle of radius $r$, where $|Q_1 - Q_0| = r$ and the estimation property gives $|f^{(n)}(Q_0)| \le \frac{n!}{2\pi} \cdot \frac{m}{r^{n+1}} \cdot 2\pi r$.
+**Proof.** Apply the derivative formula on the circle of radius $r$, where $\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r$ and the estimation property gives $|f^{(n)}(Q_0)| \le \frac{n!}{2\pi} \cdot \frac{m}{r^{n+1}} \cdot 2\pi r$.
 
 **Theorem (Liouville).** Every bounded holomorphic function $f : \mathbb{C} \to \mathbb{C}$ is constant.
 
@@ -307,7 +307,7 @@ $$
 
 **Corollary (fundamental theorem of algebra).** Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
-**Proof.** If $p$ had no root, then $1/p$ would be holomorphic on all of $\mathbb{C}$ and bounded, since $|p(Q)| \to \infty$ as $|Q| \to \infty$; by Liouville $1/p$ would be constant, hence $p$ constant, a contradiction.
+**Proof.** If $p$ had no root, then $1/p$ would be holomorphic on all of $\mathbb{C}$ and bounded, since $|p(Q)| \to \infty$ as $\sqrt{\langle Q\rangle_{*}} \to \infty$; by Liouville $1/p$ would be constant, hence $p$ constant, a contradiction.
 
 **Theorem (mean value property).** If $f$ is holomorphic on a neighbourhood of $\overline{B}(Q_0, r)$, then
 
@@ -319,13 +319,13 @@ $$
 
 **Theorem (maximum modulus).** If $f$ is holomorphic on a domain $\Omega$ and $|f|$ attains a maximum at a point of $\Omega$, then $f$ is constant on $\Omega$.
 
-**Proof.** Suppose $|f(Q_0)| \ge |f(Q)|$ for all $Q \in \Omega$. The mean value property gives $|f(Q_0)| \le \max_{|Q_1 - Q_0| = r} |f(Q_1)| \le |f(Q_0)|$ for every small $r$, so equality holds throughout each circle and $|f|$ is constant near $Q_0$. A holomorphic function of constant modulus on a disk is constant, and by the identity theorem $f$ is then constant on $\Omega$.
+**Proof.** Suppose $|f(Q_0)| \ge |f(Q)|$ for all $Q \in \Omega$. The mean value property gives $|f(Q_0)| \le \max_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} |f(Q_1)| \le |f(Q_0)|$ for every small $r$, so equality holds throughout each circle and $|f|$ is constant near $Q_0$. A holomorphic function of constant modulus on a disk is constant, and by the identity theorem $f$ is then constant on $\Omega$.
 
 ## The Residue Theorem
 
 ### Residues
 
-**Definition.** Let $Q_0$ be an isolated singularity of $f$ and let $\sum_{n \in \mathbb{Z}} c_n (Q - Q_0)^n$ be the Laurent expansion of $f$ on $0 < |Q - Q_0| < R$. The **residue** of $f$ at $Q_0$ is the coefficient
+**Definition.** Let $Q_0$ be an isolated singularity of $f$ and let $\sum_{n \in \mathbb{Z}} c_n (Q - Q_0)^n$ be the Laurent expansion of $f$ on $0 < \sqrt{\langle Q - Q_0\rangle_{*}} < R$. The **residue** of $f$ at $Q_0$ is the coefficient
 
 $$
 \operatorname{Res}(f, Q_0) = c_{-1}.
@@ -360,7 +360,7 @@ $$
 **Proposition (residue at infinity).** If $f$ is holomorphic outside a bounded set, then for all sufficiently large $R$,
 
 $$
-\operatorname{Res}(f, \infty) = -\frac{1}{2\pi i} \oint_{|Q| = R} f(Q) \, dQ = -\operatorname{Res}\left( \frac{1}{Q_1^2} f\!\left( \frac{1}{Q_1} \right), 0 \right).
+\operatorname{Res}(f, \infty) = -\frac{1}{2\pi i} \oint_{\sqrt{\langle Q\rangle_{*}} = R} f(Q) \, dQ = -\operatorname{Res}\left( \frac{1}{Q_1^2} f\!\left( \frac{1}{Q_1} \right), 0 \right).
 $$
 
 Consequently, if $f$ is meromorphic on the Riemann sphere $\widehat{\mathbb{C}} = \mathbb{C} \cup \{\infty\}$, the sum of all its residues, the residue at infinity included, is zero:
@@ -369,7 +369,7 @@ $$
 \sum_{p \in \widehat{\mathbb{C}}} \operatorname{Res}(f, p) = 0 .
 $$
 
-**Proof.** Put $Q = 1/Q_1$; then $dQ = -Q_1^{-2} dQ_1$ and the positively oriented circle $|Q| = R$ becomes the negatively oriented circle $|Q_1| = 1/R$, so the two residues differ by the sign of the orientation and by the factor $Q_1^{-2}$. Applying the residue theorem to the exterior region bounded by a large circle gives the vanishing of the total sum.
+**Proof.** Put $Q = 1/Q_1$; then $dQ = -Q_1^{-2} dQ_1$ and the positively oriented circle $\sqrt{\langle Q\rangle_{*}} = R$ becomes the negatively oriented circle $\sqrt{\langle Q_1\rangle_{*}} = 1/R$, so the two residues differ by the sign of the orientation and by the factor $Q_1^{-2}$. Applying the residue theorem to the exterior region bounded by a large circle gives the vanishing of the total sum.
 
 **Example.** For $f(Q) = 1/Q$ one has $\operatorname{Res}(f, 0) = 1$ and $\operatorname{Res}(f, \infty) = -1$; the sum is $0$. For $f(Q) = 1/(Q^2+1)$ the residues at $i$ and $-i$ are $\pm \frac{1}{2i}$ and cancel, consistent with the vanishing residue at infinity of a function decaying like $Q^{-2}$.
 
@@ -435,7 +435,7 @@ is the number of zeros of $f_t$ inside $\gamma$ by the argument principle, and i
 
 **Corollary (fundamental theorem of algebra).** A polynomial $p(Q) = a_n Q^n + \cdots + a_0$ of degree $n \ge 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.
 
-**Proof.** On a circle $|Q| = R$ of large radius and $f(Q) = a_n Q^n$, $g(Q) = a_{n-1}Q^{n-1} + \cdots + a_0$, one has $|g| < |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n Q^n$, namely $n$.
+**Proof.** On a circle $\sqrt{\langle Q\rangle_{*}} = R$ of large radius and $f(Q) = a_n Q^n$, $g(Q) = a_{n-1}Q^{n-1} + \cdots + a_0$, one has $|g| < |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n Q^n$, namely $n$.
 
 ### Evaluation of Definite Integrals
 
@@ -445,12 +445,12 @@ $$
 \cos\theta = \frac{Q + Q^{-1}}{2}, \qquad \sin\theta = \frac{Q - Q^{-1}}{2i}, \qquad d\theta = \frac{dQ}{iQ} .
 $$
 
-The integral becomes $\oint_{|Q|=1} R_1(Q) \, dQ$ for a rational $R_1$, and the residue theorem evaluates it.
+The integral becomes $\oint_{\sqrt{\langle Q\rangle_{*}}=1} R_1(Q) \, dQ$ for a rational $R_1$, and the residue theorem evaluates it.
 
 **Example.** For $\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta}$, the substitution gives
 
 $$
-\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \oint_{|Q|=1} \frac{2 \, dQ}{i (Q^2 + 4Q + 1)} .
+\int_0^{2\pi} \frac{d\theta}{2 + \cos\theta} = \oint_{\sqrt{\langle Q\rangle_{*}}=1} \frac{2 \, dQ}{i (Q^2 + 4Q + 1)} .
 $$
 
 The quadratic $Q^2 + 4Q + 1$ has roots $-2 \pm \sqrt3$, of which only $Q_0 = -2 + \sqrt3$ lies inside the unit circle. The integrand has a simple pole there with residue $\frac{2}{i(2Q_0 + 4)} = \frac{1}{i\sqrt3}$, so
@@ -489,7 +489,7 @@ Complex integration gives the cleanest construction of analytic continuation, be
 
 **Sketch.** The continuation along a homotopy is locally constant in the homotopy parameter, because of the uniqueness of continuation on a disk; being constant on a connected parameter interval, it takes the same value at the two ends. Single-valuedness on all of $\Omega$ follows since $\Omega$ is simply connected, so all paths from $Q_0$ are homotopic.
 
-**Example (the logarithm).** On the disk $D_0 = B(1, 1)$ the principal branch $f_0(Q) = \int_1^Q \frac{dQ_1}{Q_1}$ is holomorphic, because the disk omits the origin and $1/Q_1$ has a primitive there. Continuing $f_0$ once around the circle $|Q| = 1$ in the positive direction and back to a point just past the start returns $f_0(Q) + 2\pi i$, since the increment equals $\oint_{|Q|=1} dQ_1/Q_1 = 2\pi i$. The continuation is therefore not single-valued on $\mathbb{C}^\times$, the discrepancy is exactly the winding number times $2\pi i$, and the domain of definition is the Riemann surface of the logarithm: an infinite-sheeted covering of $\mathbb{C}^\times$. The obstruction is measured by the fundamental group $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, whose generator acts on the germ by the **monodromy** $2\pi i$.
+**Example (the logarithm).** On the disk $D_0 = B(1, 1)$ the principal branch $f_0(Q) = \int_1^Q \frac{dQ_1}{Q_1}$ is holomorphic, because the disk omits the origin and $1/Q_1$ has a primitive there. Continuing $f_0$ once around the circle $\sqrt{\langle Q\rangle_{*}} = 1$ in the positive direction and back to a point just past the start returns $f_0(Q) + 2\pi i$, since the increment equals $\oint_{\sqrt{\langle Q\rangle_{*}}=1} dQ_1/Q_1 = 2\pi i$. The continuation is therefore not single-valued on $\mathbb{C}^\times$, the discrepancy is exactly the winding number times $2\pi i$, and the domain of definition is the Riemann surface of the logarithm: an infinite-sheeted covering of $\mathbb{C}^\times$. The obstruction is measured by the fundamental group $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, whose generator acts on the germ by the **monodromy** $2\pi i$.
 
 **Example (the square root).** The function element $f_0(Q) = \exp\bigl(\tfrac12 \int_1^Q \frac{dQ_1}{Q_1}\bigr)$ continues analytically around the origin, and one circuit changes its sign, since the increment $2\pi i$ in the logarithm becomes the factor $\exp(\pi i) = -1$. The monodromy group is $\mathbb{Z}/2\mathbb{Z}$, and on the simply connected slit plane $\mathbb{C} \setminus (-\infty, 0]$ continuation is single-valued and yields the principal square root.
 
@@ -545,7 +545,7 @@ The **residue theorem**, $\frac{1}{2\pi i} \oint_\gamma f \, dQ = \sum_k \operat
 |---|---|
 | $\mathbb{C}$ | Complex plane |
 | $Q = q + i q'$ | General complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
-| $\lvert Q\rvert = \sqrt{q^2 + q'^2}$ | Modulus |
+| $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$ | Modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ about $Q_0$ |
 | $C(Q_0, r)$ | Positively oriented circle of radius $r$ about $Q_0$ |
 | $\gamma : [a, b] \to \mathbb{C}$ | Path; piecewise $C^1$ unless stated |

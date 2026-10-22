@@ -25,7 +25,7 @@ As a subset of $\mathbb{H}\cong\mathbb{R}^4$ it is the unit sphere $S^3$.
 
 **Theorem.** $Sp(1)$ is a group under quaternion multiplication and is the kernel of the quaternion norm homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$, $\tilde q\mapsto|\tilde q|$.
 
-**Proof.** The quaternion norm is multiplicative, $\langle uv\rangle_{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$, because $uv(uv)^{\natural} = uvv^{\natural}u^{\natural} = uN(v)u^{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = u^{\natural}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.
+**Proof.** The quaternion norm is multiplicative, $\langle uv\rangle_{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$, because $uv(uv)^{\natural} = uvv^{\natural}u^{\natural} = u\langle v\rangle_{\natural}u^{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = u^{\natural}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.
 
 For every unit quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ one has $\tilde q^{-1} = \tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group
 
@@ -311,12 +311,12 @@ so that the sandwich and the adjoint action coincide on the unit slice $\langle\
 **Theorem.** The sandwich preserves the quaternion norm up to the square of $\langle\tilde q\rangle_{\natural}$,
 
 $$
-N\bigl(S_{\tilde q}(\vec q)\bigr) = \langle\tilde q\rangle_{\natural}^2N(\vec q),
+\langle S_{\tilde q}(\vec q)\rangle_{\natural} = \langle\tilde q\rangle_{\natural}^2\langle \vec q\rangle_{\natural},
 $$
 
 and it maps the scalar subspace to itself and the vector subspace to itself.
 
-**Proof.** By multiplicativity of the quaternion norm, $\langle\tilde q \vec q\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}^2N(\vec q)$, since $\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$. For a scalar $s$ one has $S_{\tilde q}(s) = \tilde q s\tilde{q}^{\natural} = s\,\tilde q\tilde{q}^{\natural} = sN(\tilde q)$, again a scalar, so the scalar line is preserved; for $\tilde q\neq0$ the sandwich is invertible and preserves the quaternion norm, hence it preserves the orthogonal complement of the scalar line, which is the vector subspace.
+**Proof.** By multiplicativity of the quaternion norm, $\langle\tilde q \vec q\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}^2\langle \vec q\rangle_{\natural}$, since $\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$. For a scalar $s$ one has $S_{\tilde q}(s) = \tilde q s\tilde{q}^{\natural} = s\,\tilde q\tilde{q}^{\natural} = s\langle\tilde q\rangle_{\natural}$, again a scalar, so the scalar line is preserved; for $\tilde q\neq0$ the sandwich is invertible and preserves the quaternion norm up to the scalar $\langle\tilde q\rangle_{\natural}^{2}$, hence it preserves the orthogonal complement of the scalar line, which is the vector subspace.
 
 **Proposition.** For $\tilde q\neq0$ each of the operators $L_{\tilde q}(\vec q) = \tilde q \vec q$, $\rho_{\tilde q}(\vec q) = \vec q\tilde q$, $\operatorname{Ad}_{\tilde q}$ and $S_{\tilde q}$ is invertible, with kernel $0$ and image $\mathbb{H}$; for $\tilde q = 0$ all four are the zero operator.
 

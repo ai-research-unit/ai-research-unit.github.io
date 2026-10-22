@@ -48,18 +48,18 @@ The multiplicativity is used below to prove the invertibility criterion in one l
 
 ### The Norm Is a Genuine Norm
 
-The name "norm" is not a misnomer here. Define the **modulus**
+The name "norm" is not a misnomer here. The **modulus** is the square root of the norm,
 
 $$
-|Q| = \sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2} \geq 0.
+\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2} \geq 0.
 $$
 
-Then $|\cdot|$ satisfies the axioms of a norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$:
+Then $\sqrt{\langle\cdot\rangle_{*}}$ satisfies the axioms of a norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$:
 
-- **Positive definiteness:** $|Q| \geq 0$, and $|Q| = 0$ if and only if $Q = 0$.
-- **Homogeneity:** $|\lambda Q| = |\lambda|\,|Q|$ for every $\lambda \in \mathbb{R}$; more generally $|\lambda Q| = |\lambda|\,|Q|$ for every $\lambda \in \mathbb{C}$, by multiplicativity.
-- **Triangle inequality:** $|Q_1 + Q_2| \leq |Q_1| + |Q_2|$, which is the Cauchy–Schwarz inequality for the Euclidean inner product $(Q_1,Q_2) \mapsto \operatorname{Re}(\bar{Q}_1Q_2)$.
-- **Multiplicativity:** $|Q_1Q_2| = |Q_1|\,|Q_2|$, from the multiplicativity of the norm.
+- **Positive definiteness:** $\sqrt{\langle Q\rangle_{*}} \geq 0$, and $\sqrt{\langle Q\rangle_{*}} = 0$ if and only if $Q = 0$.
+- **Homogeneity:** $\sqrt{\langle \lambda Q\rangle_{*}} = |\lambda|\,\sqrt{\langle Q\rangle_{*}}$ for every $\lambda \in \mathbb{R}$; more generally $\sqrt{\langle \lambda Q\rangle_{*}} = |\lambda|\,\sqrt{\langle Q\rangle_{*}}$ for every $\lambda \in \mathbb{C}$, by multiplicativity.
+- **Triangle inequality:** $\sqrt{\langle Q_1 + Q_2\rangle_{*}} \leq \sqrt{\langle Q_1\rangle_{*}} + \sqrt{\langle Q_2\rangle_{*}}$, which is the Cauchy–Schwarz inequality for the Euclidean inner product $(Q_1,Q_2) \mapsto \operatorname{Re}(\bar{Q}_1Q_2)$.
+- **Multiplicativity:** $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\,\sqrt{\langle Q_2\rangle_{*}}$, from the multiplicativity of the norm.
 
 The value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a complex scalar. The complex norm is the definite base case of the norm series.
 
@@ -90,10 +90,10 @@ It is a real number, non-negative, and vanishes if and only if $Q = 0$. Because 
 The **Euclidean norm** of a complex number is the square root of the Hermitian form,
 
 $$
-\|Q\|_E = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = |Q| .
+\|Q\|_E = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
 $$
 
-It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $|Q_1Q_2| = |Q_1||Q_2|$.
+It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$.
 
 ### Relation Between the Norm and the Hermitian Form
 
@@ -104,13 +104,19 @@ The two forms are related as follows.
 
 That the two coincide is a degeneracy of the commutative two-dimensional case. The information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras.
 
-The **inner product** on $\mathbb{C}$ as a complex vector space is
+The **Hermitian product** on $\mathbb{C}$ as a complex vector space is
 
 $$
-\langle Q_1, Q_2 \rangle = \bar{Q}_1 Q_2 = (q_1 q_2+q'_1 q'_2) + (q_1 q'_2-q'_1 q_2)i, \qquad Q_1 = q_1+i q'_1, \; Q_2 = q_2+i q'_2,
+\bar{Q}_1 Q_2 = (q_1 q_2+q'_1 q'_2) + (q_1 q'_2-q'_1 q_2)i, \qquad Q_1 = q_1+i q'_1, \; Q_2 = q_2+i q'_2,
 $$
 
-linear in the second argument and anti-linear in the first, with $\langle Q_1, Q_1 \rangle = q_1^2+q'^2_1 = \langle Q_1\rangle_{*}$. It is complex-valued in general, and its imaginary part $q_1 q'_2 - q'_1 q_2$ is the oriented area of the parallelogram on $Q_1$ and $Q_2$. It is Hermitian, $\langle Q_1, Q_2\rangle^{*} = \langle Q_2, Q_1\rangle$, and its diagonal is the norm, $\langle Q_1,Q_1\rangle = \langle Q_1\rangle_{*}$: the inner product is the two-variable object of which the norm and the Hermitian form are the diagonal, and it is developed here.
+linear in the second argument and anti-linear in the first. It is complex-valued, and its imaginary part $q_1 q'_2 - q'_1 q_2$ is the oriented area of the parallelogram on $Q_1$ and $Q_2$. Its real part is the Hermitian form of the convention,
+
+$$
+\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})=\operatorname{Re}(\bar Q_1Q_2)=q_1q_2+q'_1q'_2,
+$$
+
+and at equal arguments it gives the norm, $\langle Q_1\rangle_{*} = \bar Q_1Q_1 = q_1^2+q'^2_1$: the Hermitian product is the complex two-variable object of which the form is the real part and the norm the diagonal.
 
 ## Invertibility
 
@@ -202,14 +208,14 @@ The unit group is the base case of the family: below it lies only the non-unit $
 **Theorem.** The map
 
 $$
-\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( |Q|, \; Q/|Q| \bigr),
+\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( \sqrt{\langle Q\rangle_{*}}, \; Q/\sqrt{\langle Q\rangle_{*}} \bigr),
 $$
 
-where $\mathrm{U}(1) = \{ u \in \mathbb{C} : |u| = 1 \}$ is the unit circle, is an isomorphism of topological groups.
+where $\mathrm{U}(1) = \{ u \in \mathbb{C} : \langle u\rangle_{*} = 1 \}$ is the unit circle, is an isomorphism of topological groups.
 
-**Proof.** The map is well defined because $|Q_1| > 0$ for $Q_1 \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \mathrm{U}(1)$ because $|Q_1/|Q_1|| = 1$. It is a group homomorphism: $|Q_1Q_2| = |Q_1||Q_2|$ and $Q_1Q_2/|Q_1Q_2| = (Q_1/|Q_1|)(Q_2/|Q_2|)$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.
+**Proof.** The map is well defined because $\sqrt{\langle Q_1\rangle_{*}} > 0$ for $Q_1 \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \mathrm{U}(1)$ because $\langle Q_1/\sqrt{\langle Q_1\rangle_{*}}\rangle_{*} = 1$. It is a group homomorphism: $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$ and $Q_1Q_2/\sqrt{\langle Q_1Q_2\rangle_{*}} = (Q_1/\sqrt{\langle Q_1\rangle_{*}})(Q_2/\sqrt{\langle Q_2\rangle_{*}})$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.
 
-The two factors are the **scale** $r = |Q| \in \mathbb{R}_{>0}$, a positive real, and the **phase** $u = Q/|Q| \in \mathrm{U}(1)$. The product form is $Q = ru$; here it is recorded as the splitting of the unit group, which is what the norm supplies.
+The two factors are the **scale** $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, a positive real, and the **phase** $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$. The product form is $Q = ru$; here it is recorded as the splitting of the unit group, which is what the norm supplies.
 
 ### The Inverse Map
 
@@ -311,12 +317,12 @@ The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, o
 | $Q = q + i q'$ | a complex number, $q$ its real part, $q'$ its imaginary part |
 | $\bar{Q} = q - i q'$ | complex conjugation, the nontrivial involution |
 | $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, real, positive definite, multiplicative |
-| $\|Q\|_E = \sqrt{\langle Q\rangle_{*}} = |Q|$ | the Euclidean norm and the modulus |
-| $\langle Q_1, Q_2 \rangle = \bar{Q}_1Q_2$ | the complex inner product, $\langle Q_1,Q_1\rangle = \langle Q_1\rangle_{*}$ |
+| $\|Q\|_E = \sqrt{\langle Q\rangle_{*}}$ | the Euclidean norm and the modulus |
+| $\bar{Q}_1Q_2$ | the Hermitian product, whose real part is $\langle Q_1,Q_2\rangle_{*}$ and whose diagonal is $\langle Q_1\rangle_{*}$ |
 | $Q_1 = 3+4i$, $Q_2 = 1-2i$ | the worked pair of the category |
 | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |
-| $\mathrm{U}(1) = \{u : |u| = 1\}$ | the unit circle, the phase factor group |
-| $Q = ru$ | the polar split, $r = |Q| \in \mathbb{R}_{>0}$, $u = Q/|Q| \in \mathrm{U}(1)$ |
+| $\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$ | the unit circle, the phase factor group |
+| $Q = ru$ | the polar split, $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$ |
 | $Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$ | the inverse of a nonzero element |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the real and imaginary subspaces of $\mathbb{C}$ |
 

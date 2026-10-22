@@ -37,6 +37,8 @@ $$
 
 The exponential is $2\pi i$-periodic: $\exp(Q + 2\pi i) = \exp(Q)$.
 
+The modulus used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2+q'^2$.
+
 ### The Complex Logarithm
 
 A **logarithm** of $Q \in \mathbb{C}^\times$ is a complex number $Q_{\log}$ with $\exp(Q_{\log}) = Q$. The definition is an equation, not a formula; the formula is what solving the equation gives.
@@ -54,34 +56,34 @@ $$
 \exp(q_{\log})\cos q'_{\log} = q, \qquad \exp(q_{\log})\sin q'_{\log} = q'.
 $$
 
-Taking moduli in $\exp(Q_{\log})=Q$ gives
+Taking moduli in $\exp(Q_{\log})=Q$ gives $\exp(q_{\log})=\sqrt{\langle Q\rangle_{*}}$, and squaring gives
 
 $$
-\exp(q_{\log}) = |Q|, \qquad \text{so} \qquad q_{\log}=\ln|Q|.
+\exp(2q_{\log}) = \langle Q\rangle_{*}, \qquad \text{so} \qquad q_{\log}=\tfrac12\ln\langle Q\rangle_{*}.
 $$
 
 Dividing by $\exp(q_{\log})$ gives
 
 $$
-\exp(iq'_{\log}) = \frac{Q}{|Q|} = \frac{q}{|Q|}+i\frac{q'}{|Q|},
+\exp(iq'_{\log}) = \frac{Q}{\sqrt{\langle Q\rangle_{*}}} = \frac{q}{\sqrt{\langle Q\rangle_{*}}}+i\frac{q'}{\sqrt{\langle Q\rangle_{*}}},
 $$
 
 so $q'_{\log}$ is an argument of $Q$. The two coordinates of the logarithm are therefore
 
 | coordinate | real formula |
 |---|---|
-| $q_{\log}=$ | $\ln\sqrt{q^2+q'^2}$ |
+| $q_{\log}=$ | $\tfrac12\ln(q^2+q'^2)$ |
 | $q'_{\log}=$ | $\arctan\dfrac{q'}{q}$ if $q>0$<br>$\arctan\dfrac{q'}{q}+\pi\operatorname{sgn}q'$ if $q<0$<br>$\operatorname{sgn}(q')\dfrac{\pi}{2}$ if $q=0$ |
 
 The logarithm is
 
 $$
-Q_{\log} = \ln|Q| + i\arg Q = \ln|Q| + i(\operatorname{Arg} Q + 2\pi k), \qquad k \in \mathbb{Z}.
+Q_{\log} = \ln\sqrt{\langle Q\rangle_{*}} + i\arg Q = \ln\sqrt{\langle Q\rangle_{*}} + i(\operatorname{Arg} Q + 2\pi k), \qquad k \in \mathbb{Z}.
 $$
 
 The first coordinate is unique. The second is one number for each choice of $k$, and the values differ by $2\pi$. Hence every $Q\neq0$ has a logarithm, and no logarithm is unique.
 
-**Example.** Take $Q=3+4i$. Then $\lvert Q\rvert=\sqrt{9+16}=5$, so $q_{\log}=\ln 5=1.6094379$. The angle equations read $\cos q'_{\log}=3/5$ and $\sin q'_{\log}=4/5$, so
+**Example.** Take $Q=3+4i$. Then $\sqrt{\langle Q\rangle_{*}}=\sqrt{9+16}=5$, so $q_{\log}=\ln 5=1.6094379$. The angle equations read $\cos q'_{\log}=3/5$ and $\sin q'_{\log}=4/5$, so
 
 $$
 q'_{\log}=\arg(3+4i)=\arctan\frac{4}{3}=0.9272952\ \text{rad}.
@@ -99,10 +101,10 @@ $$
 \exp(Q_{\log}) = Q.
 $$
 
-**Proof.** Put $q_{\log} = \ln|Q|$ and $q'_{\log} = \arg Q$, so $Q_{\log} = q_{\log}+iq'_{\log}$. Then
+**Proof.** Put $q_{\log} = \ln\sqrt{\langle Q\rangle_{*}}$ and $q'_{\log} = \arg Q$, so $Q_{\log} = q_{\log}+iq'_{\log}$. Then
 
 $$
-\exp(Q_{\log}) = \exp(q_{\log})\bigl(\cos q'_{\log}+i\sin q'_{\log}\bigr) = |Q|\left(\frac{q}{|Q|}+i\frac{q'}{|Q|}\right) = q+iq' = Q,
+\exp(Q_{\log}) = \exp(q_{\log})\bigl(\cos q'_{\log}+i\sin q'_{\log}\bigr) = \sqrt{\langle Q\rangle_{*}}\left(\frac{q}{\sqrt{\langle Q\rangle_{*}}}+i\frac{q'}{\sqrt{\langle Q\rangle_{*}}}\right) = q+iq' = Q,
 $$
 
 by the two equations solved above. No branch is preferred: every choice of $\arg Q$ gives the same $Q$, because $\exp$ is $2\pi i$-periodic.
@@ -113,7 +115,7 @@ $$
 \log(\exp(Q_{\log})) = Q_{\log} + 2\pi i k, \qquad k \in \mathbb{Z},
 $$
 
-where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = \ln r + i\theta$ with $r=\lvert Q\rvert>0$,
+where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = \ln r + i\theta$ with $r=\sqrt{\langle Q\rangle_{*}}>0$,
 
 $$
 \operatorname{Log}(\exp(Q_{\log})) = \ln r + i\operatorname{Arg}(\exp(Q_{\log})), \qquad \operatorname{Arg}(\exp(Q_{\log})) \equiv \theta \pmod{2\pi}.
@@ -138,10 +140,10 @@ $$
 
 On $S$ the exponential is injective. If $\exp W_1 = \exp W_2$ with $W_1, W_2 \in S$, then $W_1 - W_2 \in 2\pi i\mathbb{Z}$; the imaginary part of $W_1 - W_2$ lies in $(-2\pi, 2\pi)$, and the only multiple of $2\pi$ in that interval is $0$. Therefore $W_1 = W_2$.
 
-The exponential maps $S$ onto $\mathbb{C}^\times$: for $Q \neq 0$, the number $\ln|Q| + i\operatorname{Arg} Q$ lies in $S$ and exponentiates to $Q$. The restriction is therefore a bijection, and its inverse is the **principal logarithm**
+The exponential maps $S$ onto $\mathbb{C}^\times$: for $Q \neq 0$, the number $\ln\sqrt{\langle Q\rangle_{*}} + i\operatorname{Arg} Q$ lies in $S$ and exponentiates to $Q$. The restriction is therefore a bijection, and its inverse is the **principal logarithm**
 
 $$
-\operatorname{Log} Q = \ln|Q| + i \operatorname{Arg} Q, \qquad -\pi < \operatorname{Arg} Q \leq \pi.
+\operatorname{Log} Q = \ln\sqrt{\langle Q\rangle_{*}} + i \operatorname{Arg} Q, \qquad -\pi < \operatorname{Arg} Q \leq \pi.
 $$
 
 By construction, $\exp(\operatorname{Log} Q) = Q$ for every $Q \neq 0$, and $\operatorname{Log}(\exp(Q_{\log})) = Q_{\log}$ exactly when $Q_{\log} \in S$.
@@ -364,7 +366,7 @@ It is symmetric: $B(a, b) = B(b, a)$.
 
 ### Stirling's Formula
 
-As $|Q| \to \infty$ with $|\arg Q| < \pi$,
+As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < \pi$,
 
 $$
 \Gamma(Q) \sim \sqrt{2\pi} \, Q^{Q - 1/2} \exp(-Q).
@@ -492,7 +494,7 @@ The integral is along a ray from $Q$ to infinity avoiding the essential singular
 
 ### Asymptotics
 
-As $|Q| \to \infty$ with $|\arg Q| < 3\pi/4$,
+As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < 3\pi/4$,
 
 $$
 \operatorname{erfc}(Q) \sim \frac{\exp(-Q^2)}{\sqrt{\pi} Q}.
@@ -638,7 +640,7 @@ This representation is the source of most asymptotic estimates.
 
 ### Asymptotics
 
-As $|Q| \to \infty$ with $|\arg Q| < \pi$,
+As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < \pi$,
 
 $$
 J_\nu(Q) \sim \sqrt{\frac{2}{\pi Q}} \cos\left(Q - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
@@ -670,13 +672,13 @@ The second solution $\operatorname{Bi}(Q)$ is defined by a similar contour integ
 
 ### Asymptotics
 
-As $|Q| \to \infty$ with $|\arg Q| < \pi$,
+As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg Q| < \pi$,
 
 $$
 \operatorname{Ai}(Q) \sim \frac{1}{2 \sqrt{\pi} Q^{1/4}} \exp(-2 Q^{3/2}/3).
 $$
 
-As $|Q| \to \infty$ with $|\arg(-Q)| < 2\pi/3$,
+As $\sqrt{\langle Q\rangle_{*}} \to \infty$ with $|\arg(-Q)| < 2\pi/3$,
 
 $$
 \operatorname{Ai}(Q) \sim \frac{1}{\sqrt{\pi} (-Q)^{1/4}} \sin\left(\frac{2 (-Q)^{3/2}}{3} + \frac{\pi}{4}\right).
@@ -688,13 +690,13 @@ The Airy functions are the simplest example of functions with a Stokes phenomeno
 
 ### Definition
 
-The **Gauss hypergeometric function** is defined for $|Q| < 1$ by
+The **Gauss hypergeometric function** is defined for $\sqrt{\langle Q\rangle_{*}} < 1$ by
 
 $$
 {}_2F_1(a, b; c; Q) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{Q^n}{n!},
 $$
 
-where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol. The series converges for $|Q| < 1$ and extends analytically to $\mathbb{C} \setminus [1, \infty)$.
+where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol. The series converges for $\sqrt{\langle Q\rangle_{*}} < 1$ and extends analytically to $\mathbb{C} \setminus [1, \infty)$.
 
 It satisfies the hypergeometric differential equation
 
@@ -821,7 +823,7 @@ The article closes with the higher transcendental functions: the Airy functions 
 | $Q = q + i q'$ | Complex variable |
 | $\exp(Q), \log Q$ | Complex exponential, logarithm |
 | $\operatorname{Log} Q$ | Principal branch of the complex logarithm |
-| $Q_{\log} = q_{\log} + iq'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \ln\lvert Q\rvert$ and $q'_{\log} = \arg Q$ |
+| $Q_{\log} = q_{\log} + iq'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \ln\sqrt{\langle Q\rangle_{*}}$ and $q'_{\log} = \arg Q$ |
 | $\sin Q, \cos Q, \tan Q$ | Complex trigonometric functions |
 | $\sinh Q, \cosh Q, \tanh Q$ | Complex hyperbolic functions |
 | $\Gamma(Q)$ | Gamma function |

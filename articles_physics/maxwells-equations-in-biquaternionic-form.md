@@ -636,7 +636,7 @@ This is a structural question, not a settled one. In SI units, $\mu_0$ and $c_0$
 
 ## The Field Bivector and the Field Operator
 
-The corpus separates an **element** — a number — from an **operator** — a number with a slot to be filled. The groups *Focus on the Standard Element Representations* and *Focus on the Polar Element Representation* develop the numbers and the group *Focus on Operator Representations* develops the operators, and the separation is not book-keeping: it decides which objects may be added to one another and which must be applied to an argument.
+The corpus separates an **element** — a number — from an **operator** — a number with a slot to be filled. The groups *Focus on the Standard Element Representations* and *Focus on the Polar Decomposition* develop the numbers and the group *Focus on Operator Representations* develops the operators, and the separation is not book-keeping: it decides which objects may be added to one another and which must be applied to an argument.
 
 The Maxwell equation of this article is written with an **element**. The field strength $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is a bivector, a number, and the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ multiplies numbers. The electromagnetic **field tensor** is the associated **operator**: an object that takes a four-vector argument and returns a number, formed from the bivector and its order reverse. Gsponer and Hurni record its explicit form, in their notation, as
 

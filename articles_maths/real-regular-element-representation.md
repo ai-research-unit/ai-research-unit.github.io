@@ -123,7 +123,7 @@ of all $1\times1$ real matrices.
 
 **Proof.** The map is an injective algebra homomorphism by multiplicativity and faithfulness, and every $1\times1$ matrix is $[q]$ for a unique $q$, so it is surjective; a bijective algebra homomorphism is an isomorphism. The scalar matrices of any real matrix algebra are the matrices $\lambda I$, and for the $1\times1$ algebra $I = [1]$ so the scalars are exactly the images $[q]$.
 
-The image $\mathsf{M}_1(\mathbb{R})$ is the field of real scalars, and its group of nonzero elements is $\mathbb{R}^\times$, the group of invertible scalars. The determinant is the element and the trace is the element, so the polar decomposition $q = |q|\operatorname{sgn}q$ is the decomposition of the scalar matrix into the positive scalar $[|q|]$ and the sign $[\operatorname{sgn}q]$, as developed in *Real Polar Element Representation*.
+The image $\mathsf{M}_1(\mathbb{R})$ is the field of real scalars, and its group of nonzero elements is $\mathbb{R}^\times$, the group of invertible scalars. The determinant is the element and the trace is the element, so the polar decomposition $q = |q|\operatorname{sgn}q$ is the decomposition of the scalar matrix into the positive scalar $[|q|]$ and the sign $[\operatorname{sgn}q]$, as developed in *Real Polar Decomposition*.
 
 ## The Module Structure: Irreducibility
 

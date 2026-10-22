@@ -5,7 +5,7 @@
 
 The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the **anti-Hermitian subspace** $\mathbb{M}_-$, the fixed space of anti-Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that carries it into $\mathbb{M}_+$, the Lie structure it acquires under the commutator, the forms on it, its roots of $-1$, the action of the four involutions and its intersections with the other subspaces. Its complementary partner $\mathbb{M}_+$ is treated in *Split-Biquaternion Hermitian Subspace*; the comparative tables are in *Split-Biquaternion Relations Between Subspaces* and *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.
 
 ## Definition and Basis
 
@@ -116,11 +116,11 @@ of signature $(4,0)$.
 
 **Proof.** Substituting $Q_t = j r_0$ and $Q_k = q_k$ in $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ gives $r_0^2 + \sum_k q_k^2$, because $(j r_0)^2 = j^2 r_0^2 = +r_0^2$.
 
-Here the split-biquaternion norm is definite exactly as on $\mathbb{M}_+$; the difference from the Hermitian subspace appears in the Hermitian form, not the split-biquaternion norm.
+Here the split-biquaternion norm is definite exactly as on $\mathbb{M}_+$; the difference from the Hermitian subspace appears in the Hermitian norm, not the split-biquaternion norm.
 
-### The Hermitian Form and Its Isotropic Cone
+### The Hermitian Norm and Its Isotropic Cone
 
-The Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$, which on $\mathbb{M}_-$ is
+The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$, which on $\mathbb{M}_-$ is
 
 $$
 \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = -r_0^2 + q_x^2 + q_y^2 + q_z^2,
@@ -219,13 +219,13 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian 
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, fixed space of ${}^{\flat}$ |
 | $\mathbb{M}_+$ | Hermitian subspace, fixed space of ${}^{*}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $\langle\tilde{Q}\rangle_{\natural} = r_0^2 + |\vec q|^2$ | Norm on $\mathbb{M}_-$, signature $(4,0)$ |
-| $\sum_\mu (q_\mu^2 - q'^2_\mu)$ | Scalar part of the Hermitian form, signature $(3,1)$ on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}\rangle_{\natural} = r_0^2 + \lvert\vec q\rvert^2$ | Norm on $\mathbb{M}_-$, signature $(4,0)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(3,1)$ on $\mathbb{M}_-$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized product, landing in $\mathbb{M}_+$ |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1 \times \vec q_2$ | Commutator, a pure real quaternion |
 | $j : \mathbb{M}_- \to \mathbb{M}_+$ | Isomorphism by multiplication by $j$ |
 | $S^2$ | The roots of $-1$ in $\mathbb{M}_-$, unit pure real quaternions |
-| $r_0^2 = q_x^2 + q_y^2 + q_z^2$ | Isotropic cone of the Hermitian form |
+| $r_0^2 = q_x^2 + q_y^2 + q_z^2$ | Isotropic cone of the Hermitian norm |
 | $SO(1,3)$ | Lorentz group acting on the anti-Hermitian subspace |
 | $(j\tilde{Q})^{*} = -j\tilde{Q}^{*}$ | Multiplication by $j$ swaps $\mathbb{M}_\pm$ |
 

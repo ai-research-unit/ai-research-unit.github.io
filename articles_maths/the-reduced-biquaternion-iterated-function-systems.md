@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}=Q_{+}\Pi_++Q_{-}\Pi_-$ in the two central idempotents and with the topological norm $\langle \breve Q\rangle_{\natural*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$. An **iterated function system** of the algebra is a finite family of contractions of the algebra, and the article describes the geometry of those systems.
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}=Q_{+}\Pi_++Q_{-}\Pi_-$ in the two central idempotents and with the topological norm $\langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$. An **iterated function system** of the algebra is a finite family of contractions of the algebra, and the article describes the geometry of those systems.
 
 The algebra forces three simplifications and one structural fact. The simplifications: an affine map of the algebra is a pair of complex affine maps, one on each idempotent coordinate, because the two-sided maps $\breve Q\mapsto P\,\breve Q\,Q+R$ act diagonally and their linear parts are the pair of the two products $pq$ and $p'q'$ of the idempotent coordinates; the operator norm of the left multiplication is the larger of the two moduli, $\lVert L_{\breve Q}\rVert=\max(|Q_{+}|,|Q_{-}|)$, so that the contraction and similarity criteria are read from the two complex multipliers; and the square is invertible in the strongest sense, having four inverse branches generically and no element without a square root. The structural fact: a system of generators acts coordinatewise with the honest single index of the algebra, so the attractor is the matched set of the pairs coded by the same sequence of generators, a graph-like subset of the product of the two coordinate attractors, a picture developed in *The Idempotent Decomposition and the Split Fractal*.
 
 The article owns the affine maps of the algebra, the contraction and similarity criteria, the similarity dimension, the existence and the shape of the attractor, the inverse branches of the square and the symmetries of a system. The operator norm and the multiplication operators are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the group of units and the torus are *The Group of Units of the Algebra of the Reduced Biquaternions* and *The Unitary Group of the Reduced Biquaternion Algebra*; the zero-divisor cone that is the branching set of the square is *Zero Divisors of the Algebra of the Reduced Biquaternions*; the attractor structure is *The Idempotent Decomposition and the Split Fractal*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*. The companion is *The Biquaternion Iterated Function Systems*.
 
-**Conventions.** A contraction of the algebra is a map of the algebra Lipschitz of ratio strictly less than one for the topological norm $K$; the **linear part** of an affine map is its derivative; the **branches** of a map are the inverse maps of its local inverses; the attractor of a system $\{f_{1},\dots,f_{m}\}$ is the unique non-empty compact set $\mathcal{K}$ with $\mathcal{K}=\bigcup_{i}f_{i}(\mathcal{K})$.
+**Conventions.** A contraction of the algebra is a map of the algebra Lipschitz of ratio strictly less than one for the topological norm $\langle\cdot\rangle_{\mathrm{ts}*}$; the **linear part** of an affine map is its derivative; the **branches** of a map are the inverse maps of its local inverses; the attractor of a system $\{f_{1},\dots,f_{m}\}$ is the unique non-empty compact set $\mathcal{K}$ with $\mathcal{K}=\bigcup_{i}f_{i}(\mathcal{K})$.
 
 ## Affine Maps of the Algebra
 
@@ -40,9 +40,9 @@ $$
 \lVert L_{\breve Q}\rVert=\max(|Q_{+}|,|Q_{-}|),
 $$
 
-the maximum of the moduli of the two idempotent coordinates; in terms of the topological norm, $\max(|Q_{+}|,|Q_{-}|)^{2}\leq 2K(\breve Q)$, with equality exactly when one of the two moduli vanishes, so that the operator norm is at most $\sqrt{2K(\breve Q)}$ and equals $\sqrt{K(\breve Q)}$ precisely when the two moduli coincide.
+the maximum of the moduli of the two idempotent coordinates; in terms of the topological norm, $\max(|Q_{+}|,|Q_{-}|)^{2}\leq 2\langle\breve Q\rangle_{\mathrm{ts}*}$, with equality exactly when one of the two moduli vanishes, so that the operator norm is at most $\sqrt{2\langle\breve Q\rangle_{\mathrm{ts}*}}$ and equals $\sqrt{\langle\breve Q\rangle_{\mathrm{ts}*}}$ precisely when the two moduli coincide.
 
-**Proof.** The operator is diagonal with the two entries $Q_{+}$ and $Q_{-}$ in the idempotent basis, and the norm of a diagonal operator for the norm $\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})^{1/2}$ is the largest modulus of an entry; the comparison with $\langle\cdot\rangle_{\natural*}$ follows from $\max(|Q_{+}|,|Q_{-}|)^{2}\leq|Q_{+}|^{2}+|Q_{-}|^{2}\leq2\max(|Q_{+}|,|Q_{-}|)^{2}$, with equality in the first inequality exactly when one modulus vanishes and in the second exactly when $|Q_{+}|=|Q_{-}|$.
+**Proof.** The operator is diagonal with the two entries $Q_{+}$ and $Q_{-}$ in the idempotent basis, and the norm of a diagonal operator for the norm $\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})^{1/2}$ is the largest modulus of an entry; the comparison with $\langle\cdot\rangle_{\mathrm{ts}*}$ follows from $\max(|Q_{+}|,|Q_{-}|)^{2}\leq|Q_{+}|^{2}+|Q_{-}|^{2}\leq2\max(|Q_{+}|,|Q_{-}|)^{2}$, with equality in the first inequality exactly when one modulus vanishes and in the second exactly when $|Q_{+}|=|Q_{-}|$.
 
 **Corollary (the contraction criterion).** An affine map with linear part the pair $(\alpha,\beta)$ is a contraction of the algebra exactly when $\max(|\alpha|,|\beta|)<1$; in particular the affine map with linear part the left multiplication by $\breve Q$ is a contraction exactly when both $|Q_{+}|<1$ and $|Q_{-}|<1$, that is exactly when $\breve Q$ lies in the open unit bidisc.
 
@@ -96,9 +96,9 @@ four of them when $w_{1}w_{2}\neq0$, two when exactly one coordinate is zero, an
 
 **Proof.** The conjugation of a contraction by an isometry of the norm is a contraction with the same ratio, and it conjugates the fixed point equation of the attractor; the commutation case follows.
 
-**Corollary (the standard symmetry).** A system is symmetric under the natural sign exactly when its two coordinate systems coincide, because the natural sign exchanges the two idempotent coordinates; hence the systems $\{f_{i}\}$ with $f_{i}=(f_{i}^{+},f_{i}^{+})$ in the coordinates are the symmetric ones, and they are exactly the systems whose attractor is invariant under the exchange.
+**Corollary (the standard symmetry).** A system is symmetric under the tessarine sign exactly when its two coordinate systems coincide, because the tessarine sign exchanges the two idempotent coordinates; hence the systems $\{f_{i}\}$ with $f_{i}=(f_{i}^{+},f_{i}^{+})$ in the coordinates are the symmetric ones, and they are exactly the systems whose attractor is invariant under the exchange.
 
-**Proof.** The natural sign sends the pair $(f_{i}^{+},f_{i}^{-})$ to $(f_{i}^{-},f_{i}^{+})$, so the system is preserved exactly when the two coordinate systems agree; the attractor of a system commuting with an involution is preserved by it.
+**Proof.** The tessarine sign sends the pair $(f_{i}^{+},f_{i}^{-})$ to $(f_{i}^{-},f_{i}^{+})$, so the system is preserved exactly when the two coordinate systems agree; the attractor of a system commuting with an involution is preserved by it.
 
 ## Summary
 
@@ -109,7 +109,7 @@ An affine map of the reduced biquaternion algebra is the pair of two complex aff
 | Symbol | Meaning |
 |---|---|
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}=Q_{+}\Pi_++Q_{-}\Pi_-$ | the element and its coordinates |
-| $\langle \breve Q\rangle_{\natural*}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ | the topological norm of the algebra |
+| $\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ | the topological norm of the algebra |
 | $P\,\breve Q\,Q=(p\,q\,Q_{+})\Pi_++(p'q'Q_{-})\Pi_-$ | the diagonal two-sided multiplication |
 | $\lVert L_{\breve Q}\rVert=\max(\lvert Q_{+}\rvert,\lvert Q_{-}\rvert)$ | the operator norm |
 | $\max(\lvert\alpha\rvert,\lvert\beta\rvert)<1$ | the contraction criterion |

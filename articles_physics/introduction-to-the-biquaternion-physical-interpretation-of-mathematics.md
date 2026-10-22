@@ -133,14 +133,14 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html)
 - [Biquaternion Other Algebraic Element Representations](../articles_maths/biquaternion-other-algebraic-element-representations.html)
 
-#### Biquaternions Polar Element Representation
+#### Biquaternions Polar Decomposition
 
-- [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html)
-- [The Quaternion Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html)
-- [The Hamilton Root Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html)
-- [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html)
-- [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html)
-- [The Polar Element Representation and Remarkable Subspaces](../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html)
+- [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html)
+- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html)
+- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html)
+- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html)
+- [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
+- [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
 #### Operators
 
@@ -153,8 +153,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Operators Representations
 
-- [Two-Sided Operator Under the Polar Representation](../articles_maths/two-sided-operator-under-the-polar-representation.html)
-- [One-Sided Operator Under the Polar Representation](../articles_maths/one-sided-operator-under-the-polar-representation.html)
+- [Two-Sided Operator Under the Polar Decomposition](../articles_maths/two-sided-operator-under-the-polar-decomposition.html)
+- [One-Sided Operator Under the Polar Decomposition](../articles_maths/one-sided-operator-under-the-polar-decomposition.html)
 
 #### The Krein Form
 

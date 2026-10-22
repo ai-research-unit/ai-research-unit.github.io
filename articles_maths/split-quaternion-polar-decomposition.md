@@ -1,9 +1,9 @@
 
-# __Split-Quaternion Polar Element Representation__
+# __Split-Quaternion Polar Decomposition__
 
 ## Introduction
 
-This article is about the polar representation in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, the second of the four algebras whose polar representations this series treats. The result is that an invertible split quaternion is the product of three factors,
+This article is about the polar decomposition in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, the second of the four algebras whose polar decompositions this series treats. The result is that an invertible split quaternion is the product of three factors,
 
 $$
 \tilde q = r\,b\,\tilde u_{\mathrm r},
@@ -17,9 +17,9 @@ namely
 
 The count is three, not the two of the quaternion algebra and not the four of the biquaternion algebra of the companion articles, and each of the three arises from a distinct feature of the algebra.
 
-The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar representation above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.
+The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar decomposition above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.
 
-Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|\langle\tilde q\rangle_{\natural}|$ and the sign of $\langle\tilde q\rangle_{\natural}$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar representation; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the three-class classification of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
+Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|\langle\tilde q\rangle_{\natural}|$ and the sign of $\langle\tilde q\rangle_{\natural}$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar decomposition; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the three-class classification of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
 
 The conventions and the symbols are those of *Split-Quaternion Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
 
@@ -61,7 +61,7 @@ $$
 
 so $1+\vec e_y$ and $1-\vec e_y$ are nonzero zero divisors and $\langle 1\pm \vec e_y\rangle_{\natural} = 1-1 = 0$. The corpus's classification of the nonzero elements by the sign of the split-quaternion norm gives the sharp version: $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural}\neq0$, and the invertible elements split into the two open components $N > 0$ and $N < 0$. In the language of the article on the split-quaternion norm and invertibility, the nonzero elements are timelike ($N>0$), spacelike ($N<0$) or lightlike ($N=0$), and only the lightlike ones fail to be invertible.
 
-The polar representation is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $\tilde q \tilde q^{\tau}$ becomes positive semidefinite instead of positive definite.
+The polar decomposition is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $\tilde q \tilde q^{\tau}$ becomes positive semidefinite instead of positive definite.
 
 ### The Matrix Model
 
@@ -86,7 +86,7 @@ $$
 \det\mathsf{M}_2(\tilde q) = (q_t-q_z)(q_t+q_z) - (q_y-q_x)(q_x+q_y) = q_t^2+q_x^2-q_y^2-q_z^2 = \langle\tilde q\rangle_{\natural}.
 $$
 
-The model is faithful in the strong sense: it is an isomorphism of algebras, so every algebraic statement below could be checked in either picture, and the polar representation is a theorem of the matrices before it is a theorem of the algebra.
+The model is faithful in the strong sense: it is an isomorphism of algebras, so every algebraic statement below could be checked in either picture, and the polar decomposition is a theorem of the matrices before it is a theorem of the algebra.
 
 ### The Transpose Involution
 
@@ -108,7 +108,7 @@ The transpose involution is distinct from the conjugation that defines the split
 
 ### Why the Conjugation That Defines the Split-Quaternion Norm Cannot Serve
 
-A polar representation needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.
+A polar decomposition needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.
 
 The algebra's own quadratic form does not do this job. For any $\tilde q$ one has $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$, a real scalar, and it is negative whenever $\tilde q$ is spacelike: for $\tilde q = \vec e_z$, for instance, $\tilde q\tilde{q}^{\natural} = \langle \vec e_z\rangle_{\natural} = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:
 
@@ -122,7 +122,7 @@ which is the algebra's name for $XX^{T}$ and which is symmetric and positive def
 
 ### The Definition
 
-**Definition.** Let $\tilde q \in \mathbb{H}_{\mathrm{s}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The **polar representation** of $\tilde q$ is the writing
+**Definition.** Let $\tilde q \in \mathbb{H}_{\mathrm{s}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The **polar decomposition** of $\tilde q$ is the writing
 
 $$
 \tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{s}},\quad b^{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{s}},\quad \tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1,
@@ -198,7 +198,7 @@ so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the 
 
 ### Existence and Uniqueness
 
-**Theorem.** Every split quaternion $\tilde q$ with $\langle\tilde q\rangle_{\natural}\neq0$ has exactly one polar representation.
+**Theorem.** Every split quaternion $\tilde q$ with $\langle\tilde q\rangle_{\natural}\neq0$ has exactly one polar decomposition.
 
 *Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q^{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.
 
@@ -334,7 +334,7 @@ which is the reflection with zero angle: the element is rational in the sense th
 
 ### A Lightlike Element
 
-Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q^{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar representation exists, and none of the three factors survives.
+Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q^{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar decomposition exists, and none of the three factors survives.
 
 The failure is characteristic of the null cone and not of a particular element: every lightlike $\tilde q$ has $\det\mathsf{M}_2(\tilde q) = 0$, hence $\tilde q\tilde q^{\tau}$ of rank at most one, hence no positive definite square root.
 
@@ -360,13 +360,13 @@ Three points of the comparison are worth stating explicitly.
 
 ## Summary
 
-Let $\tilde q$ be a split quaternion with $\langle\tilde q\rangle_{\natural}\neq0$. Then $\tilde q$ has exactly one polar representation
+Let $\tilde q$ be a split quaternion with $\langle\tilde q\rangle_{\natural}\neq0$. Then $\tilde q$ has exactly one polar decomposition
 
 $$
 \tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0 ,
 $$
 
-in which $b$ is the unique symmetric positive definite element with $b^{\tau} = b$ and $\langle b\rangle_{\natural} = 1$, and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ is the orthogonal factor, of determinant $\operatorname{sign}\langle\tilde q\rangle_{\natural}$. The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and is the exponential of an element of $\operatorname{span}\{\vec e_y,\vec e_z\}$, with the closed form $\sigma = \operatorname{arccosh}(b_1)(b_2\vec e_y+b_3\vec e_z)/\sqrt{b_2^2+b_3^2}$. The orthogonal factor is a rotation $\cos\theta+\sin\theta\,\vec e_x$ when $\tilde q$ is timelike and a rotation times the reflection $\vec e_y$ when $\tilde q$ is spacelike. On the null cone, where $\langle\tilde q\rangle_{\natural} = 0$, no polar representation exists. Of the four series slots, two are filled here, the scale and the boost, together with a one-parameter rotor; the central phase is absent because the centre is $\mathbb{R}$.
+in which $b$ is the unique symmetric positive definite element with $b^{\tau} = b$ and $\langle b\rangle_{\natural} = 1$, and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ is the orthogonal factor, of determinant $\operatorname{sign}\langle\tilde q\rangle_{\natural}$. The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and is the exponential of an element of $\operatorname{span}\{\vec e_y,\vec e_z\}$, with the closed form $\sigma = \operatorname{arccosh}(b_1)(b_2\vec e_y+b_3\vec e_z)/\sqrt{b_2^2+b_3^2}$. The orthogonal factor is a rotation $\cos\theta+\sin\theta\,\vec e_x$ when $\tilde q$ is timelike and a rotation times the reflection $\vec e_y$ when $\tilde q$ is spacelike. On the null cone, where $\langle\tilde q\rangle_{\natural} = 0$, no polar decomposition exists. Of the four series slots, two are filled here, the scale and the boost, together with a one-parameter rotor; the central phase is absent because the centre is $\mathbb{R}$.
 
 ## Summary of Notation
 

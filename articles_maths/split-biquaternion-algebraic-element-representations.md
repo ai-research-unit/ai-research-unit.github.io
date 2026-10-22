@@ -7,7 +7,7 @@ The basic algebra article defined the split biquaternion algebra $\mathbb{H}_{\m
 
 The word "representation" is used here in the sense of "a concrete realization of the algebra as a collection of computable objects." It is not used in the technical sense of algebra representation theory, in which a representation of an algebra $A$ is a vector space $V$ together with an algebra homomorphism $\rho : A \to \mathrm{End}(V)$. The two uses are related — the module representation below is a representation in both senses — but they are not the same. We use the word in the first sense throughout.
 
-The word "algebraic" is used to contrast with "polar." The representations in this article use only the algebra operations, the split complex unit, and the underlying vector space structure. They do not use the exponential or the roots of $-1$ as a primary tool. The polar representation, which does use the exponential and the roots of $-1$, is treated in the companion article on the split biquaternion polar representation.
+The word "algebraic" is used to contrast with "polar." The representations in this article use only the algebra operations, the split complex unit, and the underlying vector space structure. They do not use the exponential or the roots of $-1$ as a primary tool. The polar decomposition, which does use the exponential and the roots of $-1$, is treated in the companion article on the split biquaternion polar decomposition.
 
 The representations we discuss in this article are:
 
@@ -127,7 +127,7 @@ which is positive definite, of signature $(4, 0)$. The indefinite form of signat
 
 ### Why the Four-Vector Representation Is Useful
 
-The four-vector representation is the bridge between the algebraic split biquaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the real and split parts enter with opposite signs in the Hermitian form, and its scalar part on the anti-Hermitian subspace is expressed as a Lorentzian norm.
+The four-vector representation is the bridge between the algebraic split biquaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the real and split parts enter with opposite signs in the Hermitian norm, whose value on the anti-Hermitian subspace is a Lorentzian norm.
 
 It is also the representation in which the split biquaternion looks least like a split biquaternion. The algebraic structure — the non-commutative product, the two conjugations, the zero divisors — is hidden. This is why the four-vector representation, while useful, is not the fundamental one.
 

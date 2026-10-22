@@ -99,7 +99,7 @@ If $\vec q = 0$, then $q_t^2 = q_t$, so $q_t = 0$ or $q_t = 1$, giving the trivi
 Define $\eta = 2\vec q$. Then $\eta \in V$, and
 
 $$
-\langle \eta\rangle_{\natural} = 4N(\vec q) = -1, \qquad \eta^2 = 4\vec q^2 = -4N(\vec q) = 1,
+\langle \eta\rangle_{\natural} = 4\langle \vec q\rangle_{\natural} = -1, \qquad \eta^2 = 4\vec q^2 = -4\langle \vec q\rangle_{\natural} = 1,
 $$
 
 where the second identity uses $\vec q^2 = -\langle \vec q\rangle_{\natural}$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \vec q = \tfrac{1}{2}(1 + \eta)$.

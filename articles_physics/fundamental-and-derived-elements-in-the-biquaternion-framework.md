@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar representations. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
+The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar decompositions. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
 
 The question is not decorative. Every derivation in the framework inherits the status of its inputs. If an object is silently promoted from derived to fundamental — or quietly derived in one place and posited in another — then the framework's account of *why* it has the structure it has is wrong, even when every formula is right. The purpose of this article is to fix a sorting criterion, state the base to which it applies, and apply the criterion to the framework's objects one at a time.
 
@@ -268,9 +268,9 @@ Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the 
 
 **A gap, flagged.** What the framework does *not* supply is a derivation of the complexification itself from $\mathbb{H}$, or any argument that the quaternion real form $\mathbb{H}_{\mathbb{B}}$ should be preferred to the alternative real form $M_2(\mathbb{R})$ available on the same abstract algebra. The sorting below therefore records the complexification as fundamental, with the real-form choice as its content. Whether that choice is physically motivated or merely conventional is not decidable from the algebra, and is left as an open question rather than smoothed over.
 
-## Derived: The Polar Representations
+## Derived: The Polar Decompositions
 
-The polar representations are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.
+The polar decompositions are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.
 
 **The inputs are already available.** The exponential $\exp(\tilde Q_1)=\sum_{n\ge0}\tilde Q_1^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\tilde{\Xi}^2=-e_t$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.
 
@@ -296,7 +296,7 @@ $$
 
 uses the commutativity of the functions of $\Psi$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.
 
-**No new posit.** The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar representations therefore leave the base unchanged.
+**No new posit.** The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar decompositions therefore leave the base unchanged.
 
 ## The Sorting
 
@@ -320,12 +320,12 @@ The results are collected in one place. The statuses are those of the criterion,
 | The trace $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
 | The trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Derived | Consequence of the trace. |
 | Exponential, roots of $-1$, idempotents, $SL(2,\mathbb{C})$ | Derived | Solving equations with coefficients in the base. |
-| Polar representations | Derived | Constructions from the exponential and the roots of $-1$. |
+| Polar decompositions | Derived | Constructions from the exponential and the roots of $-1$. |
 | "Material"/"informational" naming and the four-vector identification | Interpretation | A separate physical posit; not a theorem of the algebra. |
 
 ## Summary
 
-The framework's objects sort into a small fundamental core and a large derived family. The fundamental core is the quaternion algebra $\mathbb{H}$ with its multiplication, together with the complexification that adjoins a central square root of $-1$. Everything the companion articles call a natural conjugation, a fixed-point subspace, a form, or a polar representation is derived from these two posits, and the article has written out the construction in each case.
+The framework's objects sort into a small fundamental core and a large derived family. The fundamental core is the quaternion algebra $\mathbb{H}$ with its multiplication, together with the complexification that adjoins a central square root of $-1$. Everything the companion articles call a natural conjugation, a fixed-point subspace, a form, or a polar decomposition is derived from these two posits, and the article has written out the construction in each case.
 
 The two sorting questions raised in the Introduction are answered as follows.
 
@@ -359,7 +359,7 @@ The one gap is left visible rather than closed. The complexification — equival
 
 - [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the definitions of $\mathbb{B}$, the four conjugations, and the four fixed-point subspaces whose derivation is sorted here.
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html), for the automorphism group $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})=PGL(2,\mathbb{C})$ and the conjugate-linear coset, which are the source of the non-uniqueness of the real structure used in "The Stipulated Base."
-- [The Polar Element Representation in Subspaces](the-polar-element-representation-in-subspaces.html), for the Hamilton, complex and Cartan representations whose status as derived constructions is settled here.
+- [The Polar Decomposition in Subspaces](the-polar-decomposition-in-subspaces.html), for the Hamilton, complex and Cartan representations whose status as derived constructions is settled here.
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{H}_{\mathbb{B}}$ and $M_2(\mathbb{R})$ and the 4×4 regular image, and [The Twisted Spinor Operator Representation of Biquaternions](../articles_maths/the-twisted-spinor-operator-representation-of-biquaternions.html), for the spinor realization.
 - [Algebras: A General Introduction](../articles_maths/algebras-a-general-introduction.html), for the notions of algebra, centre, simplicity, and base change that the criterion and the base presuppose.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) and [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the physical interpretations that this article records as posits rather than derivations.

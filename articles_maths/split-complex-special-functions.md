@@ -37,6 +37,8 @@ $$
 
 The exponential is **not** periodic. Unlike the complex exponential, which is $2\pi i$-periodic, the split complex exponential is injective on the real axis and has no period.
 
+The norm used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2-q'^2$. The natural sign of this layer is the identity, so the quaternionic bracket collapses into the plain one, $\langle Q_1,Q_2\rangle_{\natural}=\langle Q_1,Q_2\rangle=Q_1Q_2$, and does not give the norm.
+
 ### The Idempotent Form
 
 In the idempotent basis, the exponential decomposes as
@@ -67,13 +69,13 @@ $$
 Squaring and subtracting eliminates $q'_{\log}$:
 
 $$
-\exp(2q_{\log})\bigl(\cosh^2 q'_{\log} - \sinh^2 q'_{\log}\bigr) = \exp(2q_{\log}) = q^2 - q'^2 = N(Q).
+\exp(2q_{\log})\bigl(\cosh^2 q'_{\log} - \sinh^2 q'_{\log}\bigr) = \exp(2q_{\log}) = q^2 - q'^2 = \langle Q\rangle_{*}.
 $$
 
-The left side is positive, so a solution requires $N(Q) > 0$. Under that condition the first equation has the unique solution
+The left side is positive, so a solution requires $\langle Q\rangle_{*} > 0$. Under that condition the first equation has the unique solution
 
 $$
-q_{\log} = \tfrac12\log N(Q).
+q_{\log} = \tfrac12\log \langle Q\rangle_{*}.
 $$
 
 The ratio of the two equations then gives $\tanh q'_{\log} = q'/q$. Since $\cosh q'_{\log} > 0$ and $\exp(q_{\log}) > 0$, the first equation forces $q > 0$; together with $q^2 > q'^2$ this gives $|q'/q| < 1$, so $q'_{\log} = \operatorname{artanh}(q'/q)$ is defined. Hence a logarithm exists exactly when
@@ -103,7 +105,7 @@ $$
 
 and the real logarithm exists if and only if $Q_+ > 0$ and $Q_- > 0$, which is the same condition $q > |q'|$.
 
-**Example.** Take $Q=5+3j$. Then $N(Q)=25-9=16$ and $q_{\log}=\tfrac12\ln16=\ln4=1.3862944$. The ratio is $q'/q=3/5=0.6$, so $q'_{\log}=\operatorname{artanh}0.6=\tfrac12\ln\frac{1.6}{0.4}=\ln 2=0.6931472$. The logarithm is the number $Q_{\log}=1.3862944+0.6931472\,j$, and $4(\cosh\ln2+j\sinh\ln2)=4(1.25+0.75j)=5+3j$.
+**Example.** Take $Q=5+3j$. Then $\langle Q\rangle_{*}=25-9=16$ and $q_{\log}=\tfrac12\ln16=\ln4=1.3862944$. The ratio is $q'/q=3/5=0.6$, so $q'_{\log}=\operatorname{artanh}0.6=\tfrac12\ln\frac{1.6}{0.4}=\ln 2=0.6931472$. The logarithm is the number $Q_{\log}=1.3862944+0.6931472\,j$, and $4(\cosh\ln2+j\sinh\ln2)=4(1.25+0.75j)=5+3j$.
 
 ### The Two Compositions
 
@@ -168,7 +170,7 @@ which is exactly the image of the exponential. The other three components of $\m
 | spacelike wedges | $\lvert q'\rvert > \lvert q\rvert$ | none |
 | null cone | $q = \pm q'$ | none |
 
-The past cone fails because both idempotent components are negative. The spacelike wedges fail because $N(Q) < 0$, while every exponential has positive norm. The null cone fails because one component is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $Q_- \to 0^+$, for instance, $\log Q_- \to -\infty$ and the $j$-component of $\log Q$ tends to $+\infty$.
+The past cone fails because both idempotent components are negative. The spacelike wedges fail because $\langle Q\rangle_{*} < 0$, while every exponential has positive norm. The null cone fails because one component is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $Q_- \to 0^+$, for instance, $\log Q_- \to -\infty$ and the $j$-component of $\log Q$ tends to $+\infty$.
 
 The product identity follows at once from injectivity:
 
@@ -182,7 +184,7 @@ whenever both sides are defined, because both sides have the same exponential, $
 
 The derivative is again forced by the inverse identity.
 
-**Inverse function theorem.** The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $N(\exp(Q_{\log})) = \exp(2q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative
+**Inverse function theorem.** The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $\langle \exp(Q_{\log})\rangle_{*} = \exp(2q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative
 
 $$
 (\exp^{-1})'(Q) = \frac{1}{\exp'(Q_{\log})} = \frac{1}{\exp(Q_{\log})} = \frac{1}{Q}.
@@ -584,7 +586,7 @@ The section on the idempotent principle states what organises the whole collecti
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\exp(Q), \log Q$ | Split complex exponential, logarithm |
-| $Q_{\log} = q_{\log} + jq'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \tfrac12\log N(Q)$ and $q'_{\log} = \operatorname{artanh}(q'/q)$ |
+| $Q_{\log} = q_{\log} + jq'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \tfrac12\log \langle Q\rangle_{*}$ and $q'_{\log} = \operatorname{artanh}(q'/q)$ |
 | $\sinh Q, \cosh Q, \tanh Q$ | Split hyperbolic functions |
 | $\Gamma(Q)$ | Split complex gamma function |
 | $B(n, m)$ | Split complex beta function; arguments $n, m$ |

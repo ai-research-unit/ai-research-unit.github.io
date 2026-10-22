@@ -9,7 +9,7 @@ The word *representation* is used here in the sense of a concrete realization of
 
 The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to *Split-Complex Regular Element Representation*; it does not treat the polar forms, which belong to *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and its two companion articles; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the **definite** one and whose product rule differs from the present one in a single sign.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{\natural} = q^2-q'^2$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{*} = q^2-q'^2$.
 
 ## The Coefficient Space
 
@@ -168,7 +168,7 @@ In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $
 The norm of $Q = q+j q'$ in coordinates is
 
 $$
-\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2,
+\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2,
 $$
 
 the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form
@@ -179,7 +179,7 @@ $$
 
 with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficient space is a **Lorentzian plane**: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $q = \pm q'$.
 
-| region | coordinate condition | sign of $N$ |
+| region | coordinate condition | sign of $\langle Q\rangle_{*}$ |
 |---|---|---|
 | timelike | $\lvert q\rvert > \lvert q'\rvert$ | $+$ |
 | null | $\lvert q\rvert = \lvert q'\rvert$ | $0$ |
@@ -190,10 +190,10 @@ with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficie
 Restricted to the two fixed-point subspaces the norm is definite:
 
 $$
-N\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad N\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
+\langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
 $$
 
-so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Split-Complex Norm and Invertibility*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $N = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.
+so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Split-Complex Norm and Invertibility*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.
 
 **Comparison with the complex case.** For $\mathbb{C}$ the norm is
 
@@ -242,7 +242,7 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
 | $\mathbb{R}_{\mathbb{D}} = \{(q,0)\}$ | Fixed subspace, real axis |
 | $j\mathbb{R}_{\mathbb{D}} = \{(0,q')\}$ | Anti-fixed subspace, split imaginary axis |
-| $\langle Q\rangle_{\natural} = q^2-q'^2$ | Norm, signature $(1,1)$ |
+| $\langle Q\rangle_{*} = q^2-q'^2$ | Norm, signature $(1,1)$ |
 | $g(Q,B) = q b-q' b'$ | Polarised form |
 | $(Q_+, Q_-) = (q+q', q-q')$ | Idempotent coordinates |
 

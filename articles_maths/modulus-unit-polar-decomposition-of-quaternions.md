@@ -8,7 +8,7 @@ $$
 \tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
 $$
 
-with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
+with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Conventions in Mathematics*, §*Symbols*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the sandwich by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
 
 The decomposition is the four-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an invertible element into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite and the unit group is abelian. The quaternion case is the first definite case in which the unit group is non-abelian, and the first in which the unit set is neither finite nor a circle; both changes are visible in the group of units, in the matrix picture and in the absence of a second continuous factor.
 
@@ -37,13 +37,13 @@ $$
 The **modulus** is its positive square root,
 
 $$
-r = \lvert\tilde q\rvert = \sqrt{\langle\tilde q\rangle_{\natural}} .
+r = \sqrt{\langle\tilde q\rangle_{\natural}} .
 $$
 
 The radicand is non-negative and vanishes only at $\tilde q=0$, so on the nonzero quaternions the square root is a strictly positive real number, with no sign choice and no branch choice. The requirement $r>0$ is met automatically, and the modulus is forced by the norm. It is multiplicative and positively homogeneous,
 
 $$
-\lvert\tilde q_1\tilde q_2\rvert = \lvert\tilde q_1\rvert\,\lvert\tilde q_2\rvert, \qquad \lvert\lambda\tilde q\rvert = \lvert\lambda\rvert\,\lvert\tilde q\rvert \quad (\lambda\in\mathbb{R}).
+\sqrt{\langle\tilde q_1\tilde q_2\rangle_{\natural}} = \sqrt{\langle\tilde q_1\rangle_{\natural}}\,\sqrt{\langle\tilde q_2\rangle_{\natural}}, \qquad \sqrt{\langle\lambda\tilde q\rangle_{\natural}} = \lvert\lambda\rvert\,\sqrt{\langle\tilde q\rangle_{\natural}} \quad (\lambda\in\mathbb{R}).
 $$
 
 ### The Unit Factor and the Unit Sphere
@@ -51,7 +51,7 @@ $$
 The **unit factor** is
 
 $$
-\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{\tilde q}{\lvert\tilde q\rvert} .
+\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} .
 $$
 
 It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}/r^2 = 1$, so it lies on the **unit sphere**
@@ -78,9 +78,9 @@ The three is the dimension of the sphere $S^3$, not a triple of scalar parameter
 
 **Theorem.** Every nonzero quaternion has exactly one modulus–unit polar decomposition.
 
-*Existence.* Put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Since $\langle\tilde q\rangle_{\natural}>0$, the number $r$ is a positive real. Since the norm is homogeneous of degree two, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}/r^2=1$. Hence $\tilde q=r\tilde u_{\mathrm r}$ with $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$.
+**Existence.** Put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Since $\langle\tilde q\rangle_{\natural}>0$, the number $r$ is a positive real. Since the norm is homogeneous of degree two, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}/r^2=1$. Hence $\tilde q=r\tilde u_{\mathrm r}$ with $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$.
 
-*Uniqueness.* Suppose $\tilde q=r\tilde u_{\mathrm r}=r'\tilde u_{\mathrm r}'$ with $r,r'>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde u_{\mathrm r}'\rangle_{\natural}=1$. Taking norms gives $r^2=\langle\tilde q\rangle_{\natural}=r'^2$. Both are positive, so $r=r'$. Dividing, $\tilde u_{\mathrm r}=\tilde q/r=\tilde u_{\mathrm r}'$.
+**Uniqueness.** Suppose $\tilde q=r\tilde u_{\mathrm r}=r'\tilde u_{\mathrm r}'$ with $r,r'>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde u_{\mathrm r}'\rangle_{\natural}=1$. Taking norms gives $r^2=\langle\tilde q\rangle_{\natural}=r'^2$. Both are positive, so $r=r'$. Dividing, $\tilde u_{\mathrm r}=\tilde q/r=\tilde u_{\mathrm r}'$.
 
 The pair is unique, with no sign ambiguity and no branch ambiguity. The two quaternions $\tilde q$ and $-\tilde q$ have the same modulus and opposite unit factors; the sign is carried by the unit factor, not by the modulus. This is a statement about the factorisation, not about a coordinate on the sphere: two different charts assign different parameters to the same unit factor.
 
@@ -91,13 +91,13 @@ The pair is unique, with no sign ambiguity and no branch ambiguity. The two quat
 The group of units of $\mathbb{H}$ is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$. The polar decomposition read as a map
 
 $$
-\Phi : \mathbb{H}^{\times} \longrightarrow \mathbb{R}_{>0}\times S^3, \qquad \Phi(\tilde q) = \bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr),
+\Phi : \mathbb{H}^{\times} \longrightarrow \mathbb{R}_{>0}\times S^3, \qquad \Phi(\tilde q) = \bigl(\sqrt{\langle\tilde q\rangle_{\natural}},\ \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr),
 $$
 
 is a group isomorphism. It is bijective, with inverse $(r,\tilde u_{\mathrm r})\mapsto r\tilde u_{\mathrm r}$, and it is a homomorphism, because the modulus is multiplicative and positive and because the scalar modulus is central:
 
 $$
-\Phi(\tilde q_1\tilde q_2) = \bigl(\lvert\tilde q_1\rvert\lvert\tilde q_2\rvert,\ \tilde q_1\tilde q_2/(\lvert\tilde q_1\rvert\lvert\tilde q_2\rvert)\bigr) = \Phi(\tilde q_1)\Phi(\tilde q_2).
+\Phi(\tilde q_1\tilde q_2) = \bigl(\sqrt{\langle\tilde q_1\rangle_{\natural}}\sqrt{\langle\tilde q_2\rangle_{\natural}},\ \tilde q_1\tilde q_2/(\sqrt{\langle\tilde q_1\rangle_{\natural}}\sqrt{\langle\tilde q_2\rangle_{\natural}})\bigr) = \Phi(\tilde q_1)\Phi(\tilde q_2).
 $$
 
 Hence
@@ -112,14 +112,14 @@ the product of the positive scale line and the unit sphere. The product is direc
 
 **Proposition.** The unit sphere $S^3$ is the maximal compact subgroup of $\mathbb{H}^{\times}$.
 
-*Proof.* Let $K\subset\mathbb{H}^{\times}$ be a compact subgroup. The modulus is continuous, so $\lvert K\rvert$ is a compact subgroup of the multiplicative group $\mathbb{R}_{>0}$. A compact subgroup of $\mathbb{R}_{>0}$ is $\{1\}$: if $r>1$ then $r^n\to\infty$, and if $0<r<1$ then $r^n\to0\notin\mathbb{R}_{>0}$, so neither sequence can lie in a compact set. Therefore $\lvert K\rvert=\{1\}$ and $K\subset S^3$. Since $S^3$ is itself compact, it is the maximal compact subgroup.
+**Proof.** Let $K\subset\mathbb{H}^{\times}$ be a compact subgroup. The modulus is continuous, so the image of $K$ under the modulus is a compact subgroup of the multiplicative group $\mathbb{R}_{>0}$. A compact subgroup of $\mathbb{R}_{>0}$ is $\{1\}$: if $r>1$ then $r^n\to\infty$, and if $0<r<1$ then $r^n\to0\notin\mathbb{R}_{>0}$, so neither sequence can lie in a compact set. Therefore the image is $\{1\}$ and $K\subset S^3$. Since $S^3$ is itself compact, it is the maximal compact subgroup.
 
 ### The Deformation Retraction
 
 The map
 
 $$
-H : [0,1]\times\mathbb{H}^{\times} \longrightarrow \mathbb{H}^{\times}, \qquad H(t,\tilde q) = \bigl((1-t)\lvert\tilde q\rvert+t,\ \tilde q/\lvert\tilde q\rvert\bigr),
+H : [0,1]\times\mathbb{H}^{\times} \longrightarrow \mathbb{H}^{\times}, \qquad H(t,\tilde q) = \bigl((1-t)\sqrt{\langle\tilde q\rangle_{\natural}}+t,\ \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr),
 $$
 
 is continuous, fixes $S^3$ at every $t$, is the identity at $t=0$, and lands in $S^3$ at $t=1$. The group of units therefore deformation retracts onto the sphere, and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence. In particular the group of units is connected and simply connected, with $\pi_1(\mathbb{H}^{\times})=0$ and $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$, against $\pi_1(\mathbb{C}^{\times})=\mathbb{Z}$ for the complex case. The fundamental group of the rotation group, $\mathbb{Z}/2$, belongs to the quotient $S^3/\{\pm1\}\cong SO(3)$ and not to the units.
@@ -158,13 +158,31 @@ $$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}, \qquad 4=1+3 .
 $$
 
-The scalar line is a subalgebra. The pure subspace is not: the product of two pure quaternions has a scalar part, $\vec v\vec w=-\vec v\cdot\vec w+\vec v\times\vec w$. The modulus lies on the scalar axis, and the unit sphere meets that axis at $\pm e_t$. Every unit quaternion other than $\pm e_t$ has a nonzero vector part, and it is written $\cos\theta+n\sin\theta$ with $n$ a unit pure quaternion and $\theta\in(0,\pi)$; this is the axis-angle form developed in *Exponential Polar Decomposition of Quaternions*.
+The scalar line is a subalgebra. The pure subspace is not: the product of two pure quaternions has a scalar part, $\vec v\vec w=-\vec v\cdot\vec w+\vec v\times\vec w$. The modulus lies on the scalar axis, and the unit sphere meets that axis at $\pm e_t$. Every unit quaternion other than $\pm e_t$ has a nonzero vector part, and it is written $\cos\theta+\vec n\sin\theta$ with $\vec n$ a unit pure quaternion and $\theta\in(0,\pi)$; this is the axis-angle form developed in *Exponential Polar Decomposition of Quaternions*.
+
+### The Roots of Plus One, Zero and Minus One
+
+Let $\tilde\nu=q_t e_t+\vec v$ with $\vec v$ pure and solve $\tilde\nu^2=c$ for $c\in\{-1,0,+1\}$. Since
+
+$$
+\tilde\nu^2=(q_t^2-\langle\vec v\rangle_{\natural})e_t+2q_t\vec v,
+$$
+
+the vector part vanishes when $q_t=0$ or $\vec v=0$. The solutions are listed in the following table.
+
+| equation | roots in $\mathbb{H}$ | row of the exponential | image of $t\mapsto\exp(\tilde\nu t)$ |
+|---|---|---|---|
+| $\tilde\nu^2=-1$ | $\tilde\nu=\vec n$, a unit pure quaternion: the sphere $S^2$ | trigonometric | the circle $\cos t+\vec n\sin t$ |
+| $\tilde\nu^2=0$ | $\tilde\nu=0$ | parabolic | $\{1\}$ |
+| $\tilde\nu^2=+1$ | $\tilde\nu=\pm1$ | hyperbolic | $\mathbb{R}_{>0}$ for both signs |
+
+The trigonometric row is the whole sphere $S^2$ of unit pure quaternions, not two points: this is the first place where the quaternion case differs from the complex and split-complex cases, where $-1$ has two roots and none respectively. The parabolic row is degenerate, as in the split case: the only square-zero element is $0$, and $\exp(0)=1$. The hyperbolic row has the two central roots $\pm1$, each of which generates the positive scale line. The unit sphere is generated by the roots of $-1$, and the negative real axis is reached from them at $\sqrt{\langle\vec v\rangle_{\natural}}=\pi$.
 
 ### Position and Signature
 
 | subspace | elements | dimension | conjugation | norm | role |
 |---|---|---|---|---|---|
-| scalar $\mathbb{R}_{\mathbb{H}}$ | $q_t e_t$ | $1$ | fixed, Hermitian | $q_t^2\ge0$ | carries the modulus $r=\lvert\tilde q\rvert$ |
+| scalar $\mathbb{R}_{\mathbb{H}}$ | $q_t e_t$ | $1$ | fixed, Hermitian | $q_t^2\ge0$ | carries the modulus $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ |
 | vector $\operatorname{Im}\mathbb{H}$ | $q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ | $3$ | negated, anti-Hermitian | $q_x^2+q_y^2+q_z^2\ge0$ | the axis of the rotor |
 
 Both subspaces are definite, unlike the split-quaternion case, where the pure subspace carries an indefinite form. The modulus is a positive scalar, the rotor is a unit sphere, and the sphere meets the scalar axis only at the two central points.
@@ -262,36 +280,34 @@ The checks are exact in the data: $\langle\tilde u_{\mathrm r}\rangle_{\natural}
 
 ### A Table of Examples
 
-| $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $r$ | $\tilde u_{\mathrm r}=\tilde q/r$ |
-|---|---|---|---|
-| $2e_t$ | $4$ | $2$ | $e_t$ |
-| $-3e_t$ | $9$ | $3$ | $-e_t$ |
-| $\vec e_x$ | $1$ | $1$ | $\vec e_x$ |
-| $3\vec e_x-4\vec e_z$ | $25$ | $5$ | $0.6\vec e_x-0.8\vec e_z$ |
-| $e_t+\vec e_x$ | $2$ | $\sqrt{2}$ | $(e_t+\vec e_x)/\sqrt{2}$ |
-| $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | $30$ | $\sqrt{30}$ | the unit factor above |
+| $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $r$ | $\tilde u_{\mathrm r}=\tilde q/r$ | $\langle\tilde u_{\mathrm r}\rangle_{\natural}$ |
+|---|---|---|---|---|
+| $2e_t$ | $4$ | $2$ | $e_t$ | $1$ |
+| $-3e_t$ | $9$ | $3$ | $-e_t$ | $1$ |
+| $\vec e_x$ | $1$ | $1$ | $\vec e_x$ | $1$ |
+| $3\vec e_x-4\vec e_z$ | $25$ | $5$ | $0.6\vec e_x-0.8\vec e_z$ | $1$ |
+| $e_t+\vec e_x$ | $2$ | $\sqrt{2}$ | $(e_t+\vec e_x)/\sqrt{2}$ | $1$ |
+| $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | $30$ | $\sqrt{30}$ | the unit factor above | $1$ |
 
-The second line shows that the unit factor, not the modulus, carries the sign. A negative real quaternion has positive modulus and unit factor $-e_t$. The third and fourth lines are pure units: their modulus is one and their unit factor is themselves. The fifth line is a rotor of a quarter turn about $\vec e_x$: its square is $\vec e_x$, which is the check of the half-angle rule of the exponential article.
+The second line shows that the unit factor, not the modulus, carries the sign. A negative real quaternion has positive modulus and unit factor $-e_t$. The third line is a pure unit: its modulus is one and its unit factor is itself; the fourth line has modulus five and is not a unit, and its unit factor is $0.6\vec e_x-0.8\vec e_z$. The fifth line has unit factor $(e_t+\vec e_x)/\sqrt{2}$, a rotor of a quarter turn about $\vec e_x$: its square is $\vec e_x$, which is the check of the half-angle rule of the exponential article.
 
 ### The Reconstruction Error
 
-For the six elements of the table the reconstruction $r\tilde u_{\mathrm r}$ reproduces $\tilde q$ exactly in double precision; the largest coefficient error is $4.4\times10^{-16}$, attained on the generic element. The decomposition is exact in exact arithmetic.
+For the six elements of the table the reconstruction $r\tilde u_{\mathrm r}$ reproduces $\tilde q$ to double precision; the largest coefficient error is $4.4\times10^{-16}$, attained on the generic element. The decomposition is exact in exact arithmetic.
 
 ## The Other Algebras
-
-### The Unit Sets of the Family
 
 The modulus–unit decomposition exists in every algebra of the family, with the unit set of the norm in view. The table records the element, the norm, its signature, the modulus and the unit set; the last column records the topology.
 
 | algebra | element | norm | signature | modulus | unit set | topology of the unit set |
 |---|---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $(1,0)$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
-| $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'^2$ | $(2,0)$ | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $Q=q+jq'$ | $q^2-q'^2$ | $(1,1)$ | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | four components, non-compact |
-| $\mathbb{H}$ | $\tilde q$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | $\sqrt{N}$ | $S^3=\mathrm{Sp}(1)$ | sphere, compact, connected, simply connected |
-| $\mathbb{H}_{\mathrm{s}}$ | $\tilde q$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | two components, non-compact |
+| $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'^2$ | $(2,0)$ | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
+| $\mathbb{D}$ | $Q=q+jq'$ | $q^2-q'^2$ | $(1,1)$ | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four components, non-compact |
+| $\mathbb{H}$ | $\tilde q$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | $\sqrt{\langle\tilde q\rangle_{\natural}}$ | $S^3=\mathrm{Sp}(1)$ | sphere, compact, connected, simply connected |
+| $\mathbb{H}_{\mathrm{s}}$ | $\tilde q$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | $\sqrt{\lvert\langle\tilde q\rangle_{\natural}\rvert}$, $\langle\tilde q\rangle_{\natural}\neq0$ | $\{\langle\tilde q\rangle_{\natural}=\pm1\}$ | two components, non-compact |
 
-The quaternion column is the first definite column whose unit set is neither finite nor a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone. The split-quaternion column has signature $(2,2)$; its norm-one set is $\mathrm{SL}_2(\mathbb{R})$, a non-compact three-dimensional group, and its full unit set $\{N=\pm1\}$ has two connected components. Only the real, complex and quaternion columns have a definite norm, and among them the quaternion unit set is the only one that is non-abelian.
+The quaternion column is the first definite column whose unit set is neither finite nor a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone. The split-quaternion column has signature $(2,2)$; its norm-one set is $\mathrm{SL}_2(\mathbb{R})$, a non-compact three-dimensional group, and its full unit set $\{\langle\tilde q\rangle_{\natural}=\pm1\}$ has two connected components. Only the real, complex and quaternion columns have a definite norm, and among them the quaternion unit set is the only one that is non-abelian.
 
 ## Summary
 
@@ -309,7 +325,7 @@ In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}
 | $\tilde q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ | a quaternion, $q_t$ its scalar part, $\vec q$ its vector part |
 | $\tilde q^{\natural}=q_t e_t-\vec q$ | the quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=\sum_\mu q_\mu^2$ | the quaternion norm, positive definite |
-| $r=\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus, a positive real |
+| $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus, a positive real |
 | $\tilde u_{\mathrm r}=\tilde q/r$ | the unit factor, of norm one |
 | $\mathrm{Sp}(1)=S^3=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}$ | the unit sphere, a compact group |
 | $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$ | the group of units |

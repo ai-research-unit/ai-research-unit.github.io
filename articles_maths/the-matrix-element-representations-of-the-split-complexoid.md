@@ -6,7 +6,7 @@ This article reads the split-complex numbers in the **real matrix algebras**: th
 
 The **element reading** of the $2\times2$ matrix, its Cayley form, its multiplicativity, the determinant as the norm, the trace, the characteristic polynomial, the idempotent diagonalisation and the identification of the unit-norm elements with the hyperbolic rotations are *Split-Complex Regular Element Representation*, which owns them; this article states the model and cites that article rather than repeating it. The two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*; the invertibility criterion and the group of units are *Split-Complex Norm and Invertibility*. The degeneracy of the models is *The Specificities of the Split-Complex Algebra*, and the general representation theory is *Split-Complex Element Representations*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$ with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$; the norm is $\langle Q\rangle_{\natural}=Q\bar Q=q^2-q'^2$. In this article $M_2(\mathbb{D})=\{qI+q'J\}$ denotes the image of the $2\times2$ model inside $M_2(\mathbb{R})$, and $M_4(\mathbb{R})$ the ambient algebra of the $4\times4$ model.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$ with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$; the norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. In this article $M_2(\mathbb{D})=\{qI+q'J\}$ denotes the image of the $2\times2$ model inside $M_2(\mathbb{R})$, and $M_4(\mathbb{R})$ the ambient algebra of the $4\times4$ model.
 
 ## The $2\times2$ Model
 
@@ -33,14 +33,14 @@ The matrices of the image are the **real matrices of hyperbolic type**: symmetri
 **The determinant and the trace.** For $Q=q+jq'$,
 
 $$
-\det \mathsf{M}_2(Q) = q^2-q'^2 = \langle Q\rangle_{*}=\langle Q\rangle_{\natural}, \qquad \operatorname{Tr} \mathsf{M}_2(Q) = 2q = q_+ + q_- .
+\det \mathsf{M}_2(Q) = q^2-q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{Tr} \mathsf{M}_2(Q) = 2q = q_+ + q_- .
 $$
 
 The determinant is the **second algebraic norm** $\langle Q\rangle_{*}=Q\bar Q$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the trace is twice the scalar part, the sum of the two eigenvalues. The **first algebraic norm** $\langle Q\rangle=Q^2$ appears not as a determinant or a trace but as the square of the matrix, $\mathsf{M}_2(Q)^2=\mathsf{M}_2(Q^2)$, which is the multiplicativity of $\mathsf{M}_2$ read on the square. The eigenvalues of $\mathsf{M}_2(Q)$ are the idempotent coordinates $q_+=q+q'$ and $q_-=q-q'$, both real, and the characteristic polynomial factors as $(\lambda-q_+)(\lambda-q_-)$.
 
-**Invertibility.** The matrix $\mathsf{M}_2(Q)$ is invertible exactly when $\det\mathsf{M}_2(Q)=\langle Q\rangle_{\natural}\neq0$; the elements of $\mathbb{D}$ therefore correspond to the invertible matrices of hyperbolic type, and $\mathsf{M}_2(Q)^{-1}=\mathsf{M}_2(Q^{-1})=\frac{1}{\langle Q\rangle_{\natural}}\begin{pmatrix}q&-q'\\-q'&q\end{pmatrix}$. The criterion and the group of units are *Split-Complex Norm and Invertibility*.
+**Invertibility.** The matrix $\mathsf{M}_2(Q)$ is invertible exactly when $\det\mathsf{M}_2(Q)=\langle Q\rangle_{*}\neq0$; the elements of $\mathbb{D}$ therefore correspond to the invertible matrices of hyperbolic type, and $\mathsf{M}_2(Q)^{-1}=\mathsf{M}_2(Q^{-1})=\frac{1}{\langle Q\rangle_{*}}\begin{pmatrix}q&-q'\\-q'&q\end{pmatrix}$. The criterion and the group of units are *Split-Complex Norm and Invertibility*.
 
-**The idempotent diagonalisation and the hyperbola.** In the idempotent basis the model is diagonal, $\mathsf{M}_2(Q)\big|_{\{\Pi_1,\Pi_2\}}=\operatorname{diag}(q_+,q_-)$, and the unit-norm elements $\langle Q\rangle_{\natural}=1$ are the matrices of determinant one in $M_2(\mathbb{D})$, the two branches of the hyperbola $q^2-q'^2=1$, the identity component of which is the group of **hyperbolic rotations** $R_j(t)=\begin{pmatrix}\cosh t&\sinh t\\\sinh t&\cosh t\end{pmatrix}$. The diagonalisation, the eigenvalue reading and the identification of the unit-norm group are *Split-Complex Regular Element Representation*, and the matrix group is read as the group of linear maps preserving the form in *The Versors and the Orthogonal Group of the Split-Complex Numbers*.
+**The idempotent diagonalisation and the hyperbola.** In the idempotent basis the model is diagonal, $\mathsf{M}_2(Q)\big|_{\{\Pi_1,\Pi_2\}}=\operatorname{diag}(q_+,q_-)$, and the unit-norm elements $\langle Q\rangle_{*}=1$ are the matrices of determinant one in $M_2(\mathbb{D})$, the two branches of the hyperbola $q^2-q'^2=1$, the identity component of which is the group of **hyperbolic rotations** $R_j(t)=\begin{pmatrix}\cosh t&\sinh t\\\sinh t&\cosh t\end{pmatrix}$. The diagonalisation, the eigenvalue reading and the identification of the unit-norm group are *Split-Complex Regular Element Representation*, and the matrix group is read as the group of linear maps preserving the form in *The Versors and the Orthogonal Group of the Split-Complex Numbers*.
 
 ## The $4\times4$ Model
 
@@ -57,10 +57,10 @@ It is the block-diagonal sum of two copies of the $2\times2$ model.
 **Theorem.** $\mathsf{M}_4$ is an injective algebra homomorphism, and
 
 $$
-\det \mathsf{M}_4(Q) = \langle Q\rangle_{\natural}^2, \qquad \operatorname{Tr} \mathsf{M}_4(Q) = 4q = 2\operatorname{Tr}\mathsf{M}_2(Q).
+\det \mathsf{M}_4(Q) = \langle Q\rangle_{*}^2, \qquad \operatorname{Tr} \mathsf{M}_4(Q) = 4q = 2\operatorname{Tr}\mathsf{M}_2(Q).
 $$
 
-**Proof.** $\mathsf{M}_4$ is built from $\mathsf{M}_2$ blockwise, so multiplicativity and injectivity follow from the $2\times2$ case. The determinant of a block-diagonal matrix is the product of the determinants of its blocks, whence $\det\mathsf{M}_4(Q)=\det\mathsf{M}_2(Q)^2=\langle Q\rangle_{\natural}^2$, and the trace is the sum of the traces of the blocks, $\operatorname{Tr}\mathsf{M}_4(Q)=2\operatorname{Tr}\mathsf{M}_2(Q)=4q$.
+**Proof.** $\mathsf{M}_4$ is built from $\mathsf{M}_2$ blockwise, so multiplicativity and injectivity follow from the $2\times2$ case. The determinant of a block-diagonal matrix is the product of the determinants of its blocks, whence $\det\mathsf{M}_4(Q)=\det\mathsf{M}_2(Q)^2=\langle Q\rangle_{*}^2$, and the trace is the sum of the traces of the blocks, $\operatorname{Tr}\mathsf{M}_4(Q)=2\operatorname{Tr}\mathsf{M}_2(Q)=4q$.
 
 The model is the regular representation of $\mathbb{D}$ on the free module of rank two: it is the direct sum of two copies of the regular module, and its image is the subalgebra
 
@@ -103,9 +103,9 @@ So the two models are **equivalent** as representations of $\mathbb{D}$: each is
 
 ## Summary
 
-The split-complex algebra is realised in the real matrix algebras by two models. The $2\times2$ model sends $Q=q+jq'$ to the hyperbolic matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$, an injective homomorphism onto the commutative subalgebra $M_2(\mathbb{D})=\{qI+q'J\}$ with $J^2=I$; the determinant is the second algebraic norm $\langle Q\rangle_{*}=\langle Q\rangle_{\natural}=q^2-q'^2$, the trace is $2q$, the square of the matrix is the first algebraic norm $Q^2$, the eigenvalues are the idempotent coordinates, and the unit-norm elements are the hyperbolic rotations. The model is the regular representation of $\mathbb{D}$ on itself, and its commutant in $M_2(\mathbb{R})$ is the image itself.
+The split-complex algebra is realised in the real matrix algebras by two models. The $2\times2$ model sends $Q=q+jq'$ to the hyperbolic matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$, an injective homomorphism onto the commutative subalgebra $M_2(\mathbb{D})=\{qI+q'J\}$ with $J^2=I$; the determinant is the second algebraic norm $\langle Q\rangle_{*}=q^2-q'^2$, the trace is $2q$, the square of the matrix is the first algebraic norm $Q^2$, the eigenvalues are the idempotent coordinates, and the unit-norm elements are the hyperbolic rotations. The model is the regular representation of $\mathbb{D}$ on itself, and its commutant in $M_2(\mathbb{R})$ is the image itself.
 
-The $4\times4$ model writes the same element block-diagonally with two copies of the $2\times2$ matrix on the diagonal; it is the regular representation on $\mathbb{D}\oplus\mathbb{D}$, its determinant is $\langle Q\rangle_{\natural}^2$, its trace is $4q$, and its commutant in $M_4(\mathbb{R})$ is the ring $M_2(\mathbb{D})$ of $2\times2$ matrices over $\mathbb{D}$, of real dimension eight. The two models are equivalent, the $4\times4$ being the doubling of the $2\times2$ and adding two dimensions in which no new structure appears; the essential model is the $2\times2$, and the doubling is the matrix expression of the commutativity of $\mathbb{D}$.
+The $4\times4$ model writes the same element block-diagonally with two copies of the $2\times2$ matrix on the diagonal; it is the regular representation on $\mathbb{D}\oplus\mathbb{D}$, its determinant is $\langle Q\rangle_{*}^2$, its trace is $4q$, and its commutant in $M_4(\mathbb{R})$ is the ring $M_2(\mathbb{D})$ of $2\times2$ matrices over $\mathbb{D}$, of real dimension eight. The two models are equivalent, the $4\times4$ being the doubling of the $2\times2$ and adding two dimensions in which no new structure appears; the essential model is the $2\times2$, and the doubling is the matrix expression of the commutativity of $\mathbb{D}$.
 
 ## Summary of Notation
 
@@ -118,7 +118,7 @@ The $4\times4$ model writes the same element block-diagonally with two copies of
 | $\det\mathsf{M}_2(Q)=q^2-q'^2=\langle Q\rangle_{*}$ | the second algebraic norm, the determinant |
 | $\operatorname{Tr}\mathsf{M}_2(Q)=2q$ | the trace, the sum of the eigenvalues |
 | $\mathsf{M}_2(Q)^2=\mathsf{M}_2(Q^2)$ | the first algebraic norm $Q^2$ as the square of the matrix |
-| $\det\mathsf{M}_4(Q)=\langle Q\rangle_{\natural}^2$ | the determinant of the $4\times4$ model |
+| $\det\mathsf{M}_4(Q)=\langle Q\rangle_{*}^2$ | the determinant of the $4\times4$ model |
 | $\operatorname{Tr}\mathsf{M}_4(Q)=4q=2\operatorname{Tr}\mathsf{M}_2(Q)$ | the trace of the $4\times4$ model |
 | $\operatorname{diag}(X,X)$, $X\in M_2(\mathbb{D})$ | the image of the $4\times4$ model |
 | $\cong M_2(\mathbb{D})$ | the commutant of the $4\times4$ image, real dimension $8$ |

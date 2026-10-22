@@ -294,4 +294,4 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the null set and the doubly-null lines.
 - [The Four Forms and the Four Algebraic Norms](the-four-forms-and-the-four-algebraic-norms.html), for the place of the Krein form among the four forms.
 - [The Operators: One-Sided, Two-Sided, Sandwich](the-operators-one-sided-two-sided-sandwich.html), for the one-sided and two-sided operators of the form.
-- [The Polar Representation and Its Three Pairings](the-polar-representation-and-its-three-pairings.html), for the factors that the isometries act on.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the factors that the isometries act on.

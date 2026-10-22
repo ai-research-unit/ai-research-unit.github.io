@@ -144,7 +144,7 @@ $$
 The convolution is the additive convolution. There is also a **multiplicative convolution** on $\mathbb{C}^\times$, defined by
 
 $$
-(f \star g)(Q_1) = \int_{\mathbb{C}^\times} f(Q_1/Q_2) g(Q_2) \frac{dQ_2}{|Q_2|^2},
+(f \star g)(Q_1) = \int_{\mathbb{C}^\times} f(Q_1/Q_2) g(Q_2) \frac{dQ_2}{\langle Q_2\rangle_{*}},
 $$
 
 whose Fourier transform is the Mellin transform.
@@ -156,7 +156,7 @@ whose Fourier transform is the Mellin transform.
 A holomorphic function $F : \mathbb{C} \to \mathbb{C}$ is of **exponential type** if there exist constants $A, B > 0$ such that
 
 $$
-|F(Q)| \leq A \exp(B |Q|), \qquad Q \in \mathbb{C}.
+|F(Q)| \leq A \exp(B \sqrt{\langle Q\rangle_{*}}), \qquad Q \in \mathbb{C}.
 $$
 
 The **indicator function** of $F$ is
@@ -226,7 +226,7 @@ where $\bar{\xi}$ is the complex conjugate of $\xi$. The symbol vanishes on the 
 The **fundamental solution** of the Laplacian on $\mathbb{C}$ is
 
 $$
-\Phi(Q) = \frac{1}{2\pi} \log |Q|.
+\Phi(Q) = \frac{1}{2\pi} \log \sqrt{\langle Q\rangle_{*}}.
 $$
 
 It satisfies
@@ -263,7 +263,7 @@ in the sense of distributions. This is the starting point of the theory of the *
 
 ### The Hardy Spaces
 
-The **Hardy space** $H^p(D)$ on the unit disk $D = \{Q : |Q| < 1\}$ is the set of holomorphic functions $f$ on $D$ with
+The **Hardy space** $H^p(D)$ on the unit disk $D = \{Q : \sqrt{\langle Q\rangle_{*}} < 1\}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
 \|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
@@ -316,7 +316,7 @@ It is the natural setting for the study of holomorphic functions with controlled
 The **Bloch space** $\mathcal{B}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - |Q|^2) |\frac{df}{dQ}| < \infty.
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - \langle Q\rangle_{*}) |\frac{df}{dQ}| < \infty.
 $$
 
 It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.
@@ -464,7 +464,7 @@ The last three sections extend the transform beyond the group setting: the Melli
 | $f \star g$ | Multiplicative (Mellin) convolution |
 | $\bar{\partial} = \partial/\partial \bar{Q}$ | Cauchy–Riemann operator |
 | $\Delta$ | Laplacian |
-| $D = \{Q : |Q| < 1\}$ | Unit disk |
+| $D = \{Q : \sqrt{\langle Q\rangle_{*}} < 1\}$ | Unit disk |
 | $H^p(D)$ | Hardy space |
 | $PW_B$ | Paley–Wiener space |
 | $A^p(D)$ | Bergman space |

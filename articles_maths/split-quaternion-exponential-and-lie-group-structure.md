@@ -109,7 +109,7 @@ Thus the exponential is a local homeomorphism everywhere and fails to be injecti
 
 ## Polar and Exponential Parametrisation
 
-**Theorem (polar form).** Every nonzero split-quaternion has a **polar representation**
+**Theorem (polar form).** Every nonzero split-quaternion has a **polar decomposition**
 
 $$
 \tilde q = \rho\, \tilde u, \qquad \rho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0, \qquad \tilde u = \tilde q/\rho, \qquad \langle \tilde u\rangle_{\natural} = \pm 1 .
@@ -117,7 +117,7 @@ $$
 
 The positive scalar $\rho$ carries the scale, and the unit $\tilde u$ carries the direction; the unit $\tilde u$ is in $\mathrm{U}$ when $\langle\tilde q\rangle_{\natural}>0$ and in the component $\{N=-1\}$ when $\langle\tilde q\rangle_{\natural}<0$.
 
-**Proof.** For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar representation is the multiplicative form of the decomposition of the group of units into its two components.
+**Proof.** For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar decomposition is the multiplicative form of the decomposition of the group of units into its two components.
 
 **Theorem (exponential parametrisation).** Every unit of the identity component $\{N>0\}$ that lies in the image of the exponential is $\exp(q_t + \vec v)$ with $q_t \in \mathbb{R}$ and $\vec v \in V$; the norm-one elements $\mathrm{U}$ that lie in the image are $\exp(\vec v)$ with $\vec v \in V$, and the elliptic and hyperbolic cases are selected by the sign of $\langle \vec v\rangle_{\natural}$: $\langle \vec v\rangle_{\natural} > 0$ gives the compact part and $\langle \vec v\rangle_{\natural} < 0$ the non-compact part.
 
@@ -197,7 +197,7 @@ The exponential has the closed form displayed above, with the sign of $\langle \
 | $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$ | the split-quaternion norm of the exponential | this article |
 | $\exp(\theta \tilde u) = \cos\theta + \sin\theta\,\tilde u$ | the elliptic subgroup ($\tilde u^2 = -1$) | this article |
 | $\exp(\theta \tilde u) = \cosh\theta + \sinh\theta\,\tilde u$ | the hyperbolic subgroup ($\tilde u^2 = +1$ in $V$) | this article |
-| $\rho\tilde u$ | the polar form of a nonzero element | *Split-Quaternion Polar Element Representation* |
+| $\rho\tilde u$ | the polar form of a nonzero element | *Split-Quaternion Polar Decomposition* |
 | $\mathrm{SO}^{+}(2,1)$ | the identity component of the Lorentz group | *Split-Quaternion Rotations and the Lorentz Group* |
 
 ## Further Reading

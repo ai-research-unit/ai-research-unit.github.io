@@ -77,7 +77,7 @@ after division by a square root of its norm every versor lies in $\mathrm{Pin}$,
 
 $$
 \Theta_{\tilde Q_5}(V)\subseteq V,\qquad
-N\bigl(\Theta_{\tilde Q_5}\tilde W\bigr)=\langle\tilde Q_5\rangle_{\natural}^{2}\langle\tilde W\rangle_{\natural}\qquad(\tilde W\in V).
+\langle\Theta_{\tilde Q_5}\tilde W\rangle_{\natural}=\langle\tilde Q_5\rangle_{\natural}^{2}\langle\tilde W\rangle_{\natural}\qquad(\tilde W\in V).
 $$
 
 For $\tilde Q_5$ in the pin group the restriction is therefore an automorphism of the restricted form, of determinant $\langle\tilde Q_5\rangle_{\natural}^{3}$ in the basis $\vec e_x,\vec e_y,\vec e_z$.
@@ -146,7 +146,7 @@ The pin group of the general quaternionic bilinear form is $\mathrm{Pin}=\{\tild
 | $\Theta_{\tilde Q_5}\Theta_{\tilde Q_2}=\Theta_{\tilde Q_5\tilde Q_2}$, kernel $\{\pm e_t\}$ | The two-to-one cover |
 | $\Theta(\mathrm{Spin})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ | The rotation group of the vector subspace |
 | $\tilde{Q}_{4,1}\cdots\tilde{Q}_{4,k}$, $\langle\tilde{Q}_{4,j}\rangle_{\natural}\neq0$ | A versor, and the Lipschitz group it generates |
-| $\langle\tilde Q_5\rangle_{\natural}=\prod_jN(\tilde{Q}_{4,j})$ | The norm multiplies over the factors of a versor |
+| $\langle\tilde Q_5\rangle_{\natural}=\prod_j\langle\tilde Q_{4,j}\rangle_{\natural}$ | The norm multiplies over the factors of a versor |
 | $\Theta_{\tilde Q_5}(V)\subseteq V$, $\langle\Theta_{\tilde Q_5}\tilde W\rangle_{\natural}=\langle\tilde Q_5\rangle_{\natural}^{2}\langle\tilde W\rangle_{\natural}$ | The sandwich of a unit is a similarity of the vector subspace |
 | $\Theta_{\tilde{Q}_4}=\langle\tilde{Q}_4\rangle_{\natural}\tau_{\tilde{Q}_4}$ | The half-turn carried by a vector, of determinant $\langle\tilde{Q}_4\rangle_{\natural}^{3}$ |
 | $\Theta_{\tilde{Q}_4}\vert_V=-\langle\tilde{Q}_4\rangle_{\natural}\rho_{\tilde{Q}_4}$ | The reflection carried by a vector |

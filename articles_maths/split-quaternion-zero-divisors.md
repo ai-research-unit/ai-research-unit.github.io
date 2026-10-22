@@ -59,7 +59,7 @@ $$
 
 each parametrised by the projective line, are the **two families**; the two families are disjoint.
 
-**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $N$, so it has the same properties. The condition $\tilde q_1(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde q_1\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
+**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $\langle\cdot\rangle_{\natural}$, so it has the same properties. The condition $\tilde q_1(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde q_1\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
 
 **Corollary (Each Zero-Divisor Line Lies in One Ideal of Each Family).** Through each zero-divisor line pass exactly two minimal one-sided ideals, one from each family; the zero divisor set is the union of their nonzero elements. Two ideals of opposite families meet in a line, and two distinct ideals of the same family meet only at the origin.
 
@@ -75,9 +75,9 @@ $$
 \tau(\vec e_x) = -\vec e_x, \qquad \tau(\vec e_y) = \vec e_y, \qquad \tau(\vec e_z) = \vec e_z
 $$
 
-extends to an involutive algebra anti-automorphism that preserves $N$ and interchanges the two families: $\tau(\mathcal{K}_L) \in \mathcal{R}$ and $\tau(\mathcal{R}_L) \in \mathcal{K}$ for every zero-divisor line $L$.
+extends to an involutive algebra anti-automorphism that preserves $\langle\cdot\rangle_{\natural}$ and interchanges the two families: $\tau(\mathcal{K}_L) \in \mathcal{R}$ and $\tau(\mathcal{R}_L) \in \mathcal{K}$ for every zero-divisor line $L$.
 
-**Proof.** As for the conjugation the relations are checked on the generators, giving an anti-automorphism with $\tau^2 = \mathrm{id}$; and $\langle\tau(\tilde q)\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 = \langle\tilde q\rangle_{\natural}$ for $\tilde q = q_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, so $\tau$ preserves $N$. An anti-automorphism carries a left ideal to a right ideal and preserves minimality, so it carries a member of $\mathcal{K}$ to a member of $\mathcal{R}$; being an involution, it interchanges the families.
+**Proof.** As for the conjugation the relations are checked on the generators, giving an anti-automorphism with $\tau^2 = \mathrm{id}$; and $\langle\tau(\tilde q)\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 = \langle\tilde q\rangle_{\natural}$ for $\tilde q = q_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, so $\tau$ preserves $\langle\cdot\rangle_{\natural}$. An anti-automorphism carries a left ideal to a right ideal and preserves minimality, so it carries a member of $\mathcal{K}$ to a member of $\mathcal{R}$; being an involution, it interchanges the families.
 
 ## Nonzero Nilpotents
 

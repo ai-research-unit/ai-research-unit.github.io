@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the split-biquaternion norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units.
+This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the four forms and the four norms of the layer — the plain, the quaternionic, the Hermitian and the Krein — to establish the criterion for invertibility, and to describe the group of units. The split-biquaternion norm is the quaternionic norm of the layer, and it is the one that decides invertibility.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
 
@@ -22,6 +22,14 @@ $$
 $$
 
 with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
+
+**The four forms follow the corpus** (*Conventions in Mathematics*): each is
+
+$$
+\langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\mathrm{Sc}\bigl(X_1^{\sigma_1}X_2^{\sigma_2}\bigr),
+$$
+
+with each $\sigma$ the identity, the natural sign ${}^{\natural}$ or the star ${}^{*}$. The plain, the quaternionic, the Hermitian and the Krein form are therefore $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$, and the four norms are their values at equal arguments. The Hermitian form is linear in the first slot and split-antilinear in the second; the geometry articles write it $g$.
 
 ## The Split-Biquaternion Norm
 
@@ -91,29 +99,29 @@ So the split-biquaternion norm of a split biquaternion is the pair of non-negati
 
 ### The Quadratic Form and Its Polarisation
 
-The split-biquaternion norm is the quadratic form of the bilinear pairing obtained by polarisation. For two split biquaternions $\tilde Q_1 = \sum_\mu Q_{1\mu} e_\mu$ and $\tilde Q_2 = \sum_\mu Q_{2\mu} e_\mu$, set
+The split-biquaternion norm is the quadratic form of the quaternionic pairing obtained by polarisation. For two split biquaternions $\tilde Q_1 = \sum_\mu Q_{1\mu} e_\mu$ and $\tilde Q_2 = \sum_\mu Q_{2\mu} e_\mu$, set
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle = \sum_{\mu\in\{t,x,y,z\}} Q_{1\mu} Q_{2\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_{1\mu} Q_{2\mu},
 $$
 
-a split complex number, so that $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle$. The pairing is symmetric, split-complex-bilinear, and its polarisation is the quadratic form
+a split complex number, so that $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. The pairing is symmetric, split-complex-bilinear, and its polarisation is the quadratic form
 
 $$
-\langle\tilde Q_1 + \tilde Q_2\rangle_{\natural} - \langle\tilde Q_1\rangle_{\natural} - \langle\tilde Q_2\rangle_{\natural} = 2 \langle\tilde Q_1,\tilde Q_2\rangle.
+\langle\tilde Q_1 + \tilde Q_2\rangle_{\natural} - \langle\tilde Q_1\rangle_{\natural} - \langle\tilde Q_2\rangle_{\natural} = 2 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}.
 $$
 
-The **quadratic space** so defined is the split complex quadratic space of dimension $4$ whose form is anisotropic: $\langle\tilde{Q},\tilde{Q}\rangle = 0$ forces $\tilde{Q} = 0$, since the real part of $\langle\cdot,\cdot\rangle_{\natural}$ is a sum of squares. This is the same construction as in the biquaternion case, with the split complex algebra in place of the complex field and $j^2 = +1$ in place of $i^2 = -1$.
+In the corpus notation it is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, the quaternionic form of the layer. The **quadratic space** so defined is the split complex quadratic space of dimension $4$ whose form is anisotropic: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$, since the real part of $\langle\tilde{Q}\rangle_{\natural}$ is a sum of squares of the eight real coordinates. This is the same construction as in the biquaternion case, with the split complex algebra in place of the complex field and $j^2 = +1$ in place of $i^2 = -1$.
 
-**Proposition.** The polarisation $\langle\cdot,\cdot\rangle$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
+**Proposition.** The polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle = \tfrac{1}{2}\left(\tilde Q_1 \tilde Q_2^{\natural} + \tilde Q_2 \tilde Q_1^{\natural}\right), \qquad \langle e_\mu, e_\nu\rangle = \delta_{\mu\nu}.
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac{1}{2}\left(\tilde Q_1 \tilde Q_2^{\natural} + \tilde Q_2 \tilde Q_1^{\natural}\right), \qquad \langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}.
 $$
 
-**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle = e_t$ is a unit of $\mathbb{D}$.
+**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle_{\natural} = e_t$ is a unit of $\mathbb{D}$.
 
-**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle$ is the honest $\mathbb{D}$-valued bilinear form and not a trace form.
+**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is the honest $\mathbb{D}$-valued bilinear form and not a trace form.
 
 ### The Real Forms and Their Signatures
 
@@ -123,52 +131,52 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
 $$
 
-**Proposition.** The form $R$ is the Euclidean form, positive definite of signature $(8,0)$; the form $I$ is the polarisation of the pairing of each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The Hermitian scalar form $g(\tilde Q_1, \tilde Q_2) = \mathrm{Sc}(\tilde Q_1 \tilde Q_2^{*})$ is also non-degenerate of signature $(4,4)$.
+**Proposition.** For the quaternionic norm, the form $R$ is the Euclidean form, positive definite of signature $(8,0)$, and the form $I$ pairs each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The real part of the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, written $g$ in the geometry articles, is non-degenerate of signature $(4,4)$; the real part of the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ has the same signature.
 
-**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of signature $(4,4)$. The Hermitian form is non-degenerate of signature $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*.
+**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of signature $(4,4)$. The real part of the Hermitian form is non-degenerate of signature $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*. The Krein norm reduces to the explicit real form $q_t^2-q'^2_t-\sum_k(q_k^2-q'^2_k)$, of the same signature.
 
-The signatures of $\langle\cdot,\cdot\rangle_{\natural}$ restricted to the four distinguished subspaces are:
+For the two split-complex-valued norms the table gives the real part and its signature. The four norms restricted to the four distinguished subspaces are:
 
-| Subspace | Condition | $\langle\cdot\rangle_{\natural}$ restricted | Signature |
-|---|---|---|---|
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_\mu = 0$, $\mu \geq 1$ | $q_t^2 + q'^2_0 + 2jq_0q'_t$ | real part $(2,0)$ |
-| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ | $\sum_\mu q_\mu^2$ | $(4,0)$ |
-| $\mathbb{M}_+$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ | $(1,3)$ |
-| $\mathbb{M}_-$ | $q_t = 0$, $q'_k = 0$ | $-q'^2_0 + \sum_k q_k^2$ | $(3,1)$ |
+| Subspace | Condition | $\langle\cdot\rangle$ | $\langle\cdot\rangle_{\natural}$ | $\langle\cdot\rangle_{*}$ | $\langle\cdot\rangle_{\natural*}$ |
+|---|---|---|---|---|---|
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_x=Q_y=Q_z=0$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 - q'^2_t$ $(1,1)$ | $q_t^2 - q'^2_t$ $(1,1)$ |
+| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ |
+| $\mathbb{M}_+$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ |
+| $\mathbb{M}_-$ | $q_t = 0$, $q'_k = 0$ | $q'^2_t - \sum_k q_k^2$ $(1,3)$ | $q'^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'^2_t - \sum_k q_k^2$ $(0,4)$ |
 
-On the quaternion subspace the split-biquaternion norm is real and positive definite; on the two Hermitian sectors it is real and Lorentzian; on the centre it is split complex, the split complex norm of $\mathbb{D}$.
+On the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, while the Krein form is $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on $\mathbb{M}_-$.
 
-## The Hermitian Form
+## The Hermitian and Krein Forms
 
-### Definition
+### The Hermitian Form
 
-The **Hermitian form** of a split biquaternion $\tilde{Q}$ is
+**The Hermitian form** is the sesquilinear form of the corpus, with the star in the second slot:
 
 $$
-\tilde{Q} \tilde{Q}^{*}, \qquad \text{whose scalar part is } \sum_{\mu\in\{t,x,y,z\}} Q_\mu Q_{\bar{\mu}} = \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu),
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\bar Q_{2\mu}, \qquad \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu Q_\mu\bar Q_\mu=\sum_\mu(q_\mu^2-q'^2_\mu),
 $$
 
-where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate and $Q_{\bar{\mu}} = q_\mu - j q'_\mu$ is the split complex conjugate.
+where $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ is the Hermitian conjugate and $\bar Q_\mu = q_\mu - j q'_\mu$ is the split complex conjugate. The form is linear in the first slot and split-antilinear in the second, and Hermitian, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$. The geometry articles write it $g$.
 
 **Basic properties.**
 
-- $\tilde{Q} \tilde{Q}^{*}$ need not be real: only its **scalar part** is, and that scalar part is the difference between the sum of the squares of the real parts and the sum of the squares of the split parts.
-- The scalar part is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$.
-- The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the scalar part vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
-- It is **not multiplicative**: $\tilde{Q} \tilde{Q}^{*}$ does not satisfy a product formula.
+- The norm $\langle\tilde Q\rangle_{*}$ is real, the difference between the sum of the squares of the real parts and the sum of the squares of the split parts; the full product $\tilde{Q} \tilde{Q}^{*}$ need not be real.
+- The norm is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$.
+- The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the norm vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
+- It is **not multiplicative**: neither $\tilde{Q} \tilde{Q}^{*}$ nor $\langle\tilde Q\rangle_{*}$ satisfies a product formula.
 
 ### The Signature
 
-The scalar part of the Hermitian form is a real quadratic form of signature $(4, 4)$:
+The Hermitian norm $\langle\tilde Q\rangle_{*}$, the scalar part of $\tilde Q\tilde Q^*$, is a real quadratic form of signature $(4, 4)$:
 
 - The positive directions are the four real coefficients $q_t, q_x, q_y, q_z$.
 - The negative directions are the four split coefficients $q'_t, q'_x, q'_y, q'_z$.
 
-So the scalar part of the Hermitian form is the difference of two positive-definite forms, each of rank 4.
+So the Hermitian norm is the difference of two positive-definite forms, each of rank 4.
 
 ### The Zero Set
 
-The scalar part of the Hermitian form vanishes when
+The Hermitian norm vanishes when
 
 $$
 \sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = \sum_{\mu\in\{t,x,y,z\}} q'^2_\mu.
@@ -176,31 +184,56 @@ $$
 
 This is a quadric hypersurface of dimension $7$ in $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with signature $(4, 4)$ instead of $(1, 3)$.
 
-### The Inner Product
+### The Hermitian Pairing
 
-The Hermitian form is polarised by the **inner product**
+The Hermitian form in two slots is
 
 $$
-\langle \tilde Q_1, \tilde Q_2 \rangle = \sum_{\mu\in\{t,x,y,z\}} Q_{1\bar{\mu}} Q_{2\mu},
+\langle \tilde Q_1, \tilde Q_2 \rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} Q_{1\mu}\bar Q_{2\mu},
 $$
 
 which is a split complex number in general:
 
 $$
-\langle \tilde Q_1, \tilde Q_2 \rangle = \sum_{\mu\in\{t,x,y,z\}} (q_{1\mu} q_{2\mu} - q'_{1\mu} q'_{2\mu}) + j \sum_{\mu\in\{t,x,y,z\}} (q_{1\mu} q'_{2\mu} - q'_{1\mu} q_{2\mu}).
+\langle \tilde Q_1, \tilde Q_2 \rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} (q_{1\mu} q_{2\mu} - q'_{1\mu} q'_{2\mu}) + j \sum_{\mu\in\{t,x,y,z\}} (q'_{1\mu} q_{2\mu} - q_{1\mu} q'_{2\mu}).
 $$
 
-Its real part is the real form of signature $(4, 4)$ above, and its split part is the cross-term. The pairing is linear in the second argument and split-antilinear in the first, and it is Hermitian in the sense that $\langle \tilde Q_1, \tilde Q_2 \rangle^* = \langle \tilde Q_2, \tilde Q_1 \rangle$.
+Its real part is the real form of signature $(4, 4)$ above, and its split part is the cross-term. The pairing is linear in the first argument and split-antilinear in the second; the exchange of the two slots conjugates the value,
 
-### Relation Between the Three Forms
+$$
+\langle \tilde Q_2, \tilde Q_1 \rangle_{*} = \overline{\langle \tilde Q_1, \tilde Q_2 \rangle_{*}} .
+$$
 
-The three quadratic objects are related as follows.
+The form used in *Split-Biquaternion Rotations and the Lorentz Group* and in the geometry articles is this one, written $g$.
 
-- **Norm:** $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $\langle\cdot,\cdot\rangle$.
-- **Hermitian form:** $\tilde{Q} \tilde{Q}^{*}$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$, real, indefinite of signature $(4, 4)$, vanishing on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
-- **Inner product:** $\langle \tilde Q_1, \tilde Q_2 \rangle = \sum_\mu Q_{1\bar{\mu}} Q_{2\mu}$, split complex-valued, Hermitian, linear in the second argument.
+### The Krein Form
 
-The three are distinct, and each is useful in a different context. The split-biquaternion norm controls invertibility through the reduced norm below. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure; the Euclidean norm, defined separately, does.
+The fourth form carries the natural sign in the first slot and the star in the second:
+
+$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\bar Q_{2t}-\sum_k Q_{1k}\bar Q_{2k},
+$$
+
+linear in the first slot and split-antilinear in the second, and Hermitian. At equal arguments,
+
+$$
+\langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
+$$
+
+which is real of signature $(4,4)$. It is the natural-sign partner of the Hermitian form: on $\mathbb{M}_+$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{M}_-$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.
+
+### The Four Forms and Their Norms
+
+The four forms are one pattern, $\langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\mathrm{Sc}(X_1^{\sigma_1}X_2^{\sigma_2})$, with each $\sigma$ the identity, ${}^{\natural}$ or ${}^{*}$:
+
+| form | bracket | norm | value of the norm at $\tilde Q$ |
+|---|---|---|---|
+| plain | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $\langle\tilde Q\rangle$ | $Q_t^2-\sum_k Q_k^2$ |
+| quaternionic, the split-biquaternion norm | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | $\langle\tilde Q\rangle_{\natural}$ | $\sum_\mu Q_\mu^2$ |
+| Hermitian | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{*}$ | $\sum_\mu Q_\mu\bar Q_\mu$ |
+| Krein | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{\natural*}$ | $Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ |
+
+The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of signature $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being a unit of $\mathbb{D}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
 
 ## The Euclidean Norm
 
@@ -216,7 +249,7 @@ It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}} \cong \ma
 
 ### Relation to the Split-Biquaternion Norm and the Hermitian Form
 
-The Euclidean norm is not the square root of the Hermitian form, because the Hermitian form is indefinite. It is also not the modulus of the split-biquaternion norm, because the split-biquaternion norm is split complex and its modulus is
+The Euclidean norm is not the square root of the Hermitian norm, because the Hermitian norm is indefinite. It is also not the modulus of the split-biquaternion norm, because the split-biquaternion norm is split complex and its modulus is
 
 $$
 |\langle\tilde{Q}\rangle_{\natural}| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
@@ -224,11 +257,11 @@ $$
 
 which is not the Euclidean norm squared.
 
-The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the split-biquaternion norm that defines the topology of $\mathbb{H}_{\mathbb{D}}$, the convergence of sequences, and the completeness of the algebra as a metric space.
+The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the Euclidean norm that defines the topology of $\mathbb{H}_{\mathbb{D}}$, the convergence of sequences, and the completeness of the algebra as a metric space.
 
 ### Multiplicativity
 
-The Euclidean norm is **not** multiplicative with respect to the split biquaternion product. This is the same situation as in the biquaternion case, where the Euclidean norm is not multiplicative because the Hermitian form is not multiplicative.
+The Euclidean norm is **not** multiplicative with respect to the split biquaternion product. This is the same situation as in the biquaternion case, where the Euclidean norm is not multiplicative because the Hermitian norm is not multiplicative.
 
 The split-biquaternion norm, which is multiplicative, is split complex-valued and anisotropic: it is the idempotent components, not the value of the split-biquaternion norm, that detect the zero divisors. The Euclidean norm, which is positive-definite, is not multiplicative, and it does not detect the zero divisors.
 
@@ -526,9 +559,9 @@ Of the four fixed-point subspaces:
 
 ## Summary
 
-The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $\langle\tilde Q_1,\tilde Q_2\rangle = \sum_\mu Q_{1\mu} Q_{2\mu}$.
+The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is the quaternionic norm of the layer, a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear quaternionic form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_\mu Q_{1\mu} Q_{2\mu}$.
 
-The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde Q_1, \tilde Q_2 \rangle = \sum_\mu Q_{1\bar{\mu}} Q_{2\mu}$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
+The four forms are the plain, the quaternionic, the Hermitian and the Krein, and the four norms are their values at equal arguments. The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu Q_\mu\bar Q_\mu$ is real of signature $(4,4)$, and the Krein norm $\langle\tilde Q\rangle_{\natural*} = Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ is real of the same signature; the plain norm $Q_t^2-\sum_k Q_k^2$ is split complex-valued. Only the quaternionic norm is multiplicative. None of the four defines a Euclidean norm; the Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
 The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
@@ -555,10 +588,14 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\bar{\tilde{Q}}$ | Split complex conjugate |
 | $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $\langle\tilde Q_1,\tilde Q_2\rangle = \sum_\mu Q_{1\mu} Q_{2\mu}$ | Polarisation of the split-biquaternion norm |
-| $\langle \tilde Q_1, \tilde Q_2 \rangle = \sum_\mu Q_{1\bar{\mu}} Q_{2\mu}$ | Hermitian inner product |
-| $\tilde{Q} \tilde{Q}^{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (signature $(4,4)$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm, the quaternionic norm |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_\mu Q_{1\mu} Q_{2\mu}$ | Quaternionic form, its polarisation |
+| $\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain form |
+| $\langle\tilde Q\rangle = Q_t^2 - \sum_k Q_k^2$ | Plain norm |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_\mu Q_{1\mu}\bar Q_{2\mu}$ | Hermitian form, written $g$ in the geometry articles |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(4,4)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\bar Q_{2t} - \sum_k Q_{1k}\bar Q_{2k}$ | Krein form |
+| $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'^2_t - \sum_k(q_k^2 - q'^2_k)$ | Krein norm, signature $(4,4)$ |
 | $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |

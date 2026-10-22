@@ -39,10 +39,14 @@ Operator polar decomposition
 
 polar representation
 
+
+
 LOG ???
 
+P± in that formula are exactly idempotents, and the logarithm formula is an idempotent/spectral decomposition.
 
 
+Wick 2 
 
 
 
@@ -8306,3 +8310,22 @@ Invariant vs. realization
   many further realizations of the same three factorizations, each
   revealing different geometry (isoclinic rotations, spinors, spectral
   phases, …).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

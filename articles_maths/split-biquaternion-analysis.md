@@ -43,7 +43,7 @@ $$
 \|\tilde{Q}_1 + \tilde{Q}_2\|_E \leq \|\tilde{Q}_1\|_E + \|\tilde{Q}_2\|_E, \qquad \|\lambda \tilde{Q}_1\|_E = |\lambda| \|\tilde{Q}_1\|_E, \qquad \lambda \in \mathbb{R}.
 $$
 
-The Euclidean norm is **not** the square root of the split-biquaternion norm or of the Hermitian form. The split-biquaternion norm is split complex-valued and is not positive-definite; the Hermitian form is real but indefinite of signature $(4, 4)$. The Euclidean norm is defined separately, and it is the split-biquaternion norm that gives $\mathbb{H}_{\mathbb{D}}$ its structure as a metric space.
+The Euclidean norm is **not** the square root of the split-biquaternion norm or of the Hermitian norm. The split-biquaternion norm is split complex-valued, so it is not a real norm; the Hermitian norm is real but indefinite of signature $(4, 4)$. The Euclidean norm is defined separately, and it is the Euclidean norm that gives $\mathbb{H}_{\mathbb{D}}$ its structure as a metric space.
 
 ### The Distance
 

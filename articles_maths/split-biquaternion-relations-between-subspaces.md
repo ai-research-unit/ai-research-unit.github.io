@@ -159,7 +159,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the only subal
 
 ### The Topology
 
-The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on the quaternion subspace, on $\mathbb{M}_+$ and on $\mathbb{M}_-$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, is $(2,0)$ on the centre, and is indefinite on the two Hermitian sectors, of signature $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
+The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on the quaternion subspace, on $\mathbb{M}_+$ and on $\mathbb{M}_-$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, restricts to $q_t^2-q'^2_0$ of signature $(1,1)$ on the centre, and is indefinite on the two Hermitian sectors, of signature $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ### The Analysis
 

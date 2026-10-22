@@ -11,7 +11,7 @@ The product is *The t-Product of Reduced Biquaternion Tensors*, the inverse is *
 Fix $n\ge1$ and $n_3\ge1$, and let
 
 $$
-T_n=\mathbb{B}_{\mathrm r}^{n\times n\times n_3}
+T_n=\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}
 $$
 
 with the t-product $\ast$. The identity is the tensor $\mathrm I$ with $I_n$ in its first frontal slice and zeros elsewhere. The algebra is associative and distributive, it is not commutative for $n\ge2$, and it is finite-dimensional over $\mathbb{R}$, of dimension
@@ -20,15 +20,15 @@ $$
 \dim_{\mathbb R}T_n=4n^2n_3.
 $$
 
-It is also a free module of rank $n^2n_3$ over $\mathbb{B}_{\mathrm r}$, and an algebra over $\mathbb{B}_{\mathrm r}$.
+It is also a free module of rank $n^2n_3$ over $\mathbb{B}_{\mathrm{r}}$, and an algebra over $\mathbb{B}_{\mathrm{r}}$.
 
 The Fourier transform along the third mode is an isomorphism of algebras
 
 $$
-T_n\cong\prod_{k=1}^{n_3}M_n(\mathbb{B}_{\mathrm r}),
+T_n\cong\prod_{k=1}^{n_3}M_n(\mathbb{B}_{\mathrm{r}}),
 $$
 
-where the product is coordinatewise. Composing with the isomorphism $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\oplus\mathbb{C}$ gives
+where the product is coordinatewise. Composing with the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ gives
 
 $$
 T_n\cong\prod_{k=1}^{n_3}\bigl(M_n(\mathbb{C})\oplus M_n(\mathbb{C})\bigr).
@@ -36,13 +36,13 @@ $$
 
 **The units.** A tensor $A\in T_n$ is a **unit** if there is $B$ with $A\ast B=B\ast A=\mathrm I$. The inverse is unique, and it is written $A^{-1}$.
 
-**Theorem (the unit criterion).** A tensor $A\in T_n$ is a unit if and only if every transform slice $\widehat A^{(k)}$ is an invertible matrix over $\mathbb{B}_{\mathrm r}$, equivalently if and only if both complex matrices $\widehat A_{(1)}^{(k)}$ and $\widehat A_{(2)}^{(k)}$ are nonsingular for every $k$. In that case
+**Theorem (the unit criterion).** A tensor $A\in T_n$ is a unit if and only if every transform slice $\widehat A^{(k)}$ is an invertible matrix over $\mathbb{B}_{\mathrm{r}}$, equivalently if and only if both complex matrices $\widehat A_{(1)}^{(k)}$ and $\widehat A_{(2)}^{(k)}$ are nonsingular for every $k$. In that case
 
 $$
 \widehat{A^{-1}}^{(k)}=(\widehat A^{(k)})^{-1}.
 $$
 
-*Proof.* The transform is an algebra isomorphism, and it carries $\mathrm I$ to $I_n$ in every slice. Hence $A\ast B=\mathrm I$ if and only if $\widehat A^{(k)}\widehat B^{(k)}=I_n$ for every $k$. A matrix over $\mathbb{B}_{\mathrm r}$ is invertible if and only if both of its complex coordinate matrices are invertible.
+*Proof.* The transform is an algebra isomorphism, and it carries $\mathrm I$ to $I_n$ in every slice. Hence $A\ast B=\mathrm I$ if and only if $\widehat A^{(k)}\widehat B^{(k)}=I_n$ for every $k$. A matrix over $\mathbb{B}_{\mathrm{r}}$ is invertible if and only if both of its complex coordinate matrices are invertible.
 
 **Remark (the spatial slices do not decide).** Invertibility is decided by the transform slices, not by the frontal slices $A^{(k)}$. A tensor can have a singular frontal slice and still be a unit, because the transform mixes the frontal slices; and it can have every frontal slice nonsingular and still fail to be a unit, because one transform slice is singular. **The Fourier transform is the coordinate system in which the algebra is a product of matrix algebras.**
 
@@ -79,7 +79,7 @@ $$
 \operatorname{Ann}_R(A)=\{B\in T_n:B\ast A=0\}.
 $$
 
-Both are submodules of $T_n$ over $\mathbb{B}_{\mathrm r}$, and both contain $0$. The left annihilator is the kernel of the left multiplication $\mathcal L_A$; the right annihilator is the kernel of the right multiplication $\mathcal R_A$.
+Both are submodules of $T_n$ over $\mathbb{B}_{\mathrm{r}}$, and both contain $0$. The left annihilator is the kernel of the left multiplication $\mathcal L_A$; the right annihilator is the kernel of the right multiplication $\mathcal R_A$.
 
 **Theorem (the transform description).** In the transform,
 
@@ -112,7 +112,7 @@ $$
 
 and the same formula holds for $\operatorname{Ann}_R(A)$.
 
-*Proof.* The complex formula is the rank-nullity theorem applied slice by slice. The real formula is the complex formula applied to the two idempotent coordinates; each complex dimension contributes two real dimensions because $\mathbb{B}_{\mathrm r}$ is two-dimensional over $\mathbb{C}$. The right-hand formula follows from the equality of the rank of a matrix and its transpose.
+*Proof.* The complex formula is the rank-nullity theorem applied slice by slice. The real formula is the complex formula applied to the two idempotent coordinates; each complex dimension contributes two real dimensions because $\mathbb{B}_{\mathrm{r}}$ is two-dimensional over $\mathbb{C}$. The right-hand formula follows from the equality of the rank of a matrix and its transpose.
 
 **Remark (the annihilators need not coincide).** The dimensions of $\operatorname{Ann}_L(A)$ and $\operatorname{Ann}_R(A)$ are equal, but the submodules are different in general. Take a tensor whose only nonzero frontal slice is a non-normal matrix $M$ in the first slice. The left annihilator is the set of tensors whose every frontal slice $Y$ satisfies $MY=0$, and the right annihilator is the set whose every frontal slice $Y$ satisfies $YM=0$; the right and left null spaces of $M$ differ, so the annihilators differ. **Equality of dimensions is not equality of submodules.**
 
@@ -123,10 +123,10 @@ and the same formula holds for $\operatorname{Ann}_R(A)$.
 The **t-determinant** of $A\in T_n$ is
 
 $$
-\det\nolimits_{\mathrm t}(A)=\prod_{k=1}^{n_3}\det\bigl(\widehat A^{(k)}\bigr)\in\mathbb{B}_{\mathrm r}.
+\det\nolimits_{\mathrm t}(A)=\prod_{k=1}^{n_3}\det\bigl(\widehat A^{(k)}\bigr)\in\mathbb{B}_{\mathrm{r}}.
 $$
 
-It is the determinant of the block circulant matrix $\operatorname{circ}(A)$ read as an element of $\mathbb{B}_{\mathrm r}$: the Fourier matrix diagonalises the block circulant, and the determinant of a block diagonal matrix is the product of the determinants of its blocks. It is multiplicative,
+It is the determinant of the block circulant matrix $\operatorname{circ}(A)$ read as an element of $\mathbb{B}_{\mathrm{r}}$: the Fourier matrix diagonalises the block circulant, and the determinant of a block diagonal matrix is the product of the determinants of its blocks. It is multiplicative,
 
 $$
 \det\nolimits_{\mathrm t}(A\ast B)=\det\nolimits_{\mathrm t}(A)\det\nolimits_{\mathrm t}(B),
@@ -134,20 +134,20 @@ $$
 
 because $\operatorname{circ}(A\ast B)=\operatorname{circ}(A)\operatorname{circ}(B)$.
 
-**Theorem (the determinant criterion).** A tensor $A\in T_n$ is a unit if and only if $\det_{\mathrm t}(A)$ is a unit of $\mathbb{B}_{\mathrm r}$, that is, if and only if both complex numbers $\det_{t,(1)}(A)$ and $\det_{t,(2)}(A)$ are nonzero.
+**Theorem (the determinant criterion).** A tensor $A\in T_n$ is a unit if and only if $\det_{\mathrm t}(A)$ is a unit of $\mathbb{B}_{\mathrm{r}}$, that is, if and only if both complex numbers $\det_{t,(1)}(A)$ and $\det_{t,(2)}(A)$ are nonzero.
 
-*Proof.* The determinant of a matrix over $\mathbb{B}_{\mathrm r}$ is a unit if and only if the matrix is invertible. The product of the slice determinants is a unit if and only if every slice determinant is a unit, because $\mathbb{B}_{\mathrm r}$ is a product of two fields. Hence the criterion is the unit criterion of the first section.
+*Proof.* The determinant of a matrix over $\mathbb{B}_{\mathrm{r}}$ is a unit if and only if the matrix is invertible. The product of the slice determinants is a unit if and only if every slice determinant is a unit, because $\mathbb{B}_{\mathrm{r}}$ is a product of two fields. Hence the criterion is the unit criterion of the first section.
 
 **The t-algebraic norm.** The algebraic norm of the element $\det_{\mathrm t}(A)$ is
 
 $$
-\langle\det\nolimits_{\mathrm t}(A)\rangle_\natural
+\langle\det\nolimits_{\mathrm t}(A)\rangle_{\mathrm{ts}}
 =\det\nolimits_{t,(1)}(A)\det\nolimits_{t,(2)}(A)\in\mathbb{C}.
 $$
 
 It is nonzero if and only if $A$ is a unit. **This is the scalar that decides invertibility.** It is not a topological norm: it is a polynomial, it is complex-valued, and it vanishes on the zero divisors. The Frobenius norm does not decide invertibility: the all-ones tensor has $\|J\|_{\mathrm F}=n\sqrt{n_3}>0$ and is a zero divisor.
 
-**Remark (the zero divisors are not a single hypersurface).** The t-algebraic norm is a complex polynomial in the real coordinates of $A$, and the units are the complement of its zero set. That zero set is the union of $\det_{t,(1)}=0$ and $\det_{t,(2)}=0$. Each is the zero set of a complex polynomial, hence a real subvariety of codimension two and a complex hypersurface in the complex structure of $T_n$; their union also has real codimension two, not one. The units are the complement of this union and form a dense open subset. This is the tensor analogue of the zero divisors of $\mathbb{B}_{\mathrm r}$, the union of the two complex lines $Q_{(1)}=0$ and $Q_{(2)}=0$, which is the zero set of the complex quadratic form $Q_{(1)}Q_{(2)}$.
+**Remark (the zero divisors are not a single hypersurface).** The t-algebraic norm is a complex polynomial in the real coordinates of $A$, and the units are the complement of its zero set. That zero set is the union of $\det_{t,(1)}=0$ and $\det_{t,(2)}=0$. Each is the zero set of a complex polynomial, hence a real subvariety of codimension two and a complex hypersurface in the complex structure of $T_n$; their union also has real codimension two, not one. The units are the complement of this union and form a dense open subset. This is the tensor analogue of the zero divisors of $\mathbb{B}_{\mathrm{r}}$, the union of the two complex lines $Q_{(1)}=0$ and $Q_{(2)}=0$, which is the zero set of the complex quadratic form $Q_{(1)}Q_{(2)}$.
 
 ## Verification
 
@@ -155,17 +155,17 @@ The unit criterion, the zero-divisor criterion and the determinant were recomput
 
 ## Summary
 
-The square tensors $T_n=\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ form a finite-dimensional algebra under the t-product, isomorphic to $\prod_k M_n(\mathbb{B}_{\mathrm r})$ and to $\prod_k(M_n(\mathbb{C})\oplus M_n(\mathbb{C}))$. A tensor is a unit exactly when every transform slice is invertible in both idempotent coordinates; the nonzero non-units are exactly the left zero divisors and exactly the right zero divisors. A nonzero tensor is a zero divisor exactly when some transform slice is singular in one coordinate. The left and right annihilators are the slicewise right and left null spaces; they have equal dimensions but need not coincide. The t-determinant is the product of the transform-slice determinants, it is multiplicative, and its algebraic norm is the scalar that decides invertibility; the Frobenius norm does not. **The nonzero zero divisors are the nonzero tensors whose t-algebraic norm vanishes; they lie in the union of two real subvarieties of codimension two.**
+The square tensors $T_n=\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ form a finite-dimensional algebra under the t-product, isomorphic to $\prod_k M_n(\mathbb{B}_{\mathrm{r}})$ and to $\prod_k(M_n(\mathbb{C})\oplus M_n(\mathbb{C}))$. A tensor is a unit exactly when every transform slice is invertible in both idempotent coordinates; the nonzero non-units are exactly the left zero divisors and exactly the right zero divisors. A nonzero tensor is a zero divisor exactly when some transform slice is singular in one coordinate. The left and right annihilators are the slicewise right and left null spaces; they have equal dimensions but need not coincide. The t-determinant is the product of the transform-slice determinants, it is multiplicative, and its algebraic norm is the scalar that decides invertibility; the Frobenius norm does not. **The nonzero zero divisors are the nonzero tensors whose t-algebraic norm vanishes; they lie in the union of two real subvarieties of codimension two.**
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $T_n=\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ | The tensor algebra under the t-product |
+| $T_n=\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ | The tensor algebra under the t-product |
 | $\mathrm I$ | The identity tensor, $I_n$ in the first slice |
 | $\operatorname{Ann}_L(A)$, $\operatorname{Ann}_R(A)$ | The left and right annihilators of $A$ |
 | $\det_{\mathrm t}(A)$ | The t-determinant, $\prod_k\det(\widehat A^{(k)})$ |
-| $\langle\det_{\mathrm t}(A)\rangle_\natural$ | The t-algebraic norm, the scalar that decides invertibility |
+| $\langle\det_{\mathrm t}(A)\rangle_{\mathrm{ts}}$ | The t-algebraic norm, the scalar that decides invertibility |
 | $\widehat A^{(k)}$ | The $k$-th transform slice |
 
 ## Further Reading

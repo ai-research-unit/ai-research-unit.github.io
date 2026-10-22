@@ -1,11 +1,11 @@
 
-# __Dual-Numbers Polar Element Representation__
+# __Dual-Numbers Polar Decomposition__
 
 ## Introduction
 
-This article develops the polar representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. The comparison throughout is with the complex polar representation, whose phase factor is the unit circle.
+This article develops the polar decomposition of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. The comparison throughout is with the complex polar decomposition, whose phase factor is the unit circle.
 
-The polar representation of the dual numbers is the **third and last case of the exponential rule** and the **missing link of the polar series**. The rule is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its case of the rule is the parabolic one. The polar series of the family of number systems — complex, split complex, dual — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase.
+The polar decomposition of the dual numbers is the **third and last case of the exponential rule** and the **missing link of the polar series**. The rule is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its case of the rule is the parabolic one. The polar series of the family of number systems — complex, split complex, dual — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the field specialisation $R = k$ is flagged, and the ordered and geometric specialisation is $R = \mathbb{R}$, in which case the algebra is written $\mathbb{D}'$. A general dual number is
 
@@ -25,7 +25,7 @@ $$
 (\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
 $$
 
-of real dimension two. A polar representation writes every element of a group as a product of independent one-parameter factors; for a two-dimensional abelian group the natural count is therefore two factors, and they are a scale and a shear.
+of real dimension two. A polar decomposition writes every element of a group as a product of independent one-parameter factors; for a two-dimensional abelian group the natural count is therefore two factors, and they are a scale and a shear.
 
 | Factor | Dimension | Range | Role |
 |---|---|---|---|
@@ -143,7 +143,7 @@ Suppose $r\,u\,\exp(s\varepsilon) = r'\,u'\,\exp(s'\varepsilon)$ with $r, r' > 0
 
 ### The Domain and the Boundary
 
-The domain of the polar representation is the set of units, $\mathbb{D}' \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
+The domain of the polar decomposition is the set of units, $\mathbb{D}' \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
 
 ## The Algorithm
 
@@ -175,7 +175,7 @@ Take $Q = -4 + \varepsilon$.
 4. $s = 1/(-4) = -\tfrac{1}{4}$.
 5. $Q = 4\cdot(-1)\cdot(1 - \tfrac{1}{4}\varepsilon) = -4 + \varepsilon$.
 
-Take $Q = 3\varepsilon$. Then $q = 0$, no modulus is defined, and the polar representation fails: the element lies on the boundary $\mathrm{M}$ and is a zero divisor.
+Take $Q = 3\varepsilon$. Then $q = 0$, no modulus is defined, and the polar decomposition fails: the element lies on the boundary $\mathrm{M}$ and is a zero divisor.
 
 ## The Factors and Their Meanings
 
@@ -200,7 +200,7 @@ The factor $\exp(s\varepsilon)$ is central because the algebra is commutative, a
 
 ### The Nilpotent Elements
 
-For $Q = \varepsilon q'$ with $q' \neq 0$ the real part vanishes, $r = 0$, and no polar data exist; the polar representation degenerates on the entirety of the punctured maximal ideal. This is the boundary of the domain.
+For $Q = \varepsilon q'$ with $q' \neq 0$ the real part vanishes, $r = 0$, and no polar data exist; the polar decomposition degenerates on the entirety of the punctured maximal ideal. This is the boundary of the domain.
 
 ### The Real Elements
 
@@ -224,9 +224,9 @@ $$
 
 The two transcendental functions $\theta$ and $\psi$ collapse to the rational function $q'/q$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
 
-## The Series of Polar Representations
+## The Series of Polar Decompositions
 
-The polar representations of the number systems of the corpus form a series, of which the dual case is one member.
+The polar decompositions of the number systems of the corpus form a series, of which the dual case is one member.
 
 | Algebra | Norm | Modulus | Phase factor | Kind |
 |---|---|---|---|---|
@@ -238,7 +238,7 @@ The dual row is the missing link between the two two-dimensional cases: it is th
 
 ## Summary
 
-The polar representation of the dual-number algebra is
+The polar decomposition of the dual-number algebra is
 
 $$
 Q = r\,u\,\exp(s\varepsilon), \qquad r = |q| > 0, \quad u = \operatorname{sgn}(q) \in \{\pm 1\}, \quad s = \frac{q'}{q},

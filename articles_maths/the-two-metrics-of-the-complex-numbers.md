@@ -7,7 +7,7 @@ The complex space carries two distinguished forms (*The Two Forms and the Two Al
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the split one is an indefinite quadratic function and is named a metric by the same convention, and the difference is stated where it occurs.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\lvert Q_1\rvert^{2}$ that are their diagonals. The modulus $\lvert Q_1\rvert=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The modulus $\sqrt{\langle Q_1\rangle_{*}}=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
 
 **Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$ with real $q_1,q'_1,q_2,q'_2$, and conjugation is $\bar Q_1=q_1-iq'_1$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complexoid Subspaces*, *Conventions in Mathematics*). The four general forms are written with brackets — $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ the two bilinear, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ the two sesquilinear; on $\mathbb{C}$ the two bilinear forms coincide and the two sesquilinear forms coincide, and the two forms read here are the plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*). Elements are therefore written $Q_1$ and $Q_2$ and never $B$; the worked second element of the category, $1-2i$, is written $Q_2$ here.
 
@@ -22,10 +22,10 @@ $$
 the first the multiplication of the field, symmetric, and the second the derived operation of the algebra, conjugate-symmetric; the two products of the complex space are exactly these, $Q_1Q_2$ and $Q_1\bar Q_2$ (*The Two Products of the Complexoid Space*). Both are $\mathbb{C}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*). Their diagonals are the two algebraic norms,
 
 $$
-B(Q_1,Q_1)=Q_1^{2}, \qquad H(Q_1,Q_1)=Q_1\bar Q_1=\lvert Q_1\rvert^{2},
+B(Q_1,Q_1)=Q_1^{2}, \qquad H(Q_1,Q_1)=Q_1\bar Q_1=\langle Q_1\rangle_{*},
 $$
 
-the first complex and anisotropic and the second real, positive definite and multiplicative. The form $\langle\cdot,\cdot\rangle$ is the two-dimensional case of the general plain bilinear form and $\langle\cdot,\cdot\rangle_{*}$ the case of the general plain sesquilinear form; the two bilinear forms coincide and the two sesquilinear forms coincide, so $B=\langle\cdot,\cdot\rangle_{\natural}$ and $H=\langle\cdot,\cdot\rangle_{\natural*}$, which is the reason the two diagonal norms are written $Q_1^{2}$ and $\lvert Q_1\rvert^{2}$.
+the first complex and anisotropic and the second real, positive definite and multiplicative. The form $\langle\cdot,\cdot\rangle$ is the two-dimensional case of the general plain bilinear form and $\langle\cdot,\cdot\rangle_{*}$ the case of the general plain sesquilinear form; the two bilinear forms coincide and the two sesquilinear forms coincide, so $B=\langle\cdot,\cdot\rangle_{\natural}$ and $H=\langle\cdot,\cdot\rangle_{\natural*}$, which is the reason the two diagonal norms are written $Q_1^{2}$ and $\langle Q_1\rangle_{*}$.
 
 Both forms are complex-valued, and a real function is obtained from each by realification. In the real basis $1$, $i$, with $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$,
 
@@ -43,14 +43,14 @@ of signatures $(1,1)$ and $(2,0)$.
 
 *Proof.* The four values on the basis are $\operatorname{Re}B(1,1)=1$, $\operatorname{Re}B(1,i)=0$, $\operatorname{Re}B(i,i)=-1$ and $\operatorname{Re}H(1,1)=\operatorname{Re}H(i,i)=1$, $\operatorname{Re}H(1,i)=0$. The two matrices are diagonal, and the signs of their diagonals give the signatures.
 
-The realified Hermitian form is the ordinary inner product of the plane, $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$, and its diagonal is the real norm $\lvert Q_1\rvert^{2}$. The realified $\langle\cdot,\cdot\rangle$ is indefinite: it is positive on the real direction $1$ and negative on the imaginary direction $i$. The two realifications are the scalar readings of the two complex forms, and the rules behind them — a symmetric bilinear form realifying to the split signature $(1,1)$ and a Hermitian form doubling its inertia to $(2,0)$ — are those of *The Realification and the Effect of the Change of Scalars*.
+The realified Hermitian form is the ordinary inner product of the plane, $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$, and its diagonal is the real norm $\langle Q_1\rangle_{*}$. The realified $\langle\cdot,\cdot\rangle$ is indefinite: it is positive on the real direction $1$ and negative on the imaginary direction $i$. The two realifications are the scalar readings of the two complex forms, and the rules behind them — a symmetric bilinear form realifying to the split signature $(1,1)$ and a Hermitian form doubling its inertia to $(2,0)$ — are those of *The Realification and the Effect of the Change of Scalars*.
 
 ## The Euclidean Metric
 
 **Definition.** The **Euclidean metric** of the complex space is the quadratic function
 
 $$
-d_{H}^{2}(Q_1,Q_2)=H(Q_1-Q_2,Q_1-Q_2)=\lvert Q_1-Q_2\rvert^{2}=(q_1-q_2)^{2}+(q'_1-q'_2)^{2}.
+d_{H}^{2}(Q_1,Q_2)=H(Q_1-Q_2,Q_1-Q_2)=\langle Q_1-Q_2\rangle_{*}=(q_1-q_2)^{2}+(q'_1-q'_2)^{2}.
 $$
 
 It is the diagonal of the definite form $\langle\cdot,\cdot\rangle_{*}$ read on the difference $Q_1-Q_2$; the modulus $\lvert\cdot\rvert$ and its multiplicativity are *Complex Norm and Invertibility*.
@@ -59,7 +59,7 @@ It is the diagonal of the definite form $\langle\cdot,\cdot\rangle_{*}$ read on 
 
 *Proof.* The expression $(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$ is a sum of two squares of reals, hence non-negative and zero only when both differences vanish, that is when $Q_1=Q_2$. The Gram matrix was computed in the previous section.
 
-**Proposition (it is a genuine distance).** The function $d_{H}(Q_1,Q_2)=\lvert Q_1-Q_2\rvert$ is symmetric, vanishes exactly on the diagonal, and satisfies the triangle inequality. These are the properties of the modulus of *Complex Norm and Invertibility*, read on the difference.
+**Proposition (it is a genuine distance).** The function $d_{H}(Q_1,Q_2)=\sqrt{\langle Q_1-Q_2\rangle_{*}}$ is symmetric, vanishes exactly on the diagonal, and satisfies the triangle inequality. These are the properties of the modulus of *Complex Norm and Invertibility*, read on the difference.
 
 The level sets are the circles: $d_{H}(Q_1,Q_2)=r$ is the circle of radius $r$ about $Q_2$. The form is definite, so there is no null cone beyond the point $Q_1=Q_2$.
 
@@ -185,7 +185,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 | $H(Q_1,Q_2)=Q_1\bar Q_2$ | the Hermitian form, $\langle\cdot,\cdot\rangle_{\natural*}$; Gram matrix $[1]$ over $\mathbb{C}$ |
 | $\operatorname{Re}B(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | the realified bilinear form; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
 | $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$ | the realified Hermitian form; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
-| $d_{H}^{2}(Q_1,Q_2)=\lvert Q_1-Q_2\rvert^{2}$ | Euclidean metric; positive definite; level sets the circles |
+| $d_{H}^{2}(Q_1,Q_2)=\langle Q_1-Q_2\rangle_{*}$ | Euclidean metric; positive definite; level sets the circles |
 | $d_{B}^{2}(Q_1,Q_2)=\operatorname{Re}\bigl((Q_1-Q_2)^{2}\bigr)$ | split metric; indefinite; level sets the hyperbolas |
 | $q_1-q_2=\pm(q'_1-q'_2)$ | the null pair of lines of the split metric |
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}H$; the group $O(2)$ |

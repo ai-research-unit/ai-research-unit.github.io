@@ -18,7 +18,7 @@ and the dynamics of the reduced biquaternion quadratic map is therefore the dyna
 
 The article owns the map, the unique reading of the square, the family, the filled Julia set and the Julia set with their product description, the equivariance under the involutions, the critical set and the central parameter. The algebra and the idempotents are *Reduced Biquaternion Space*; the zero divisors that form the critical set are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the topological norm that measures the escape is *Topology and Metric for Each of the Operations*; the idempotent decomposition and its consequences for the dynamics are *The Idempotent Decomposition and the Split Fractal*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the iterated function systems are *The Reduced Biquaternion Iterated Function Systems*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*. The companion is *The Biquaternion Quadratic Map and Its Julia Sets*, where the non-commutativity makes the square ambiguous and the fractal is not a product.
 
-**Conventions.** The topological norm is $K(\breve Q)=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$, the Euclidean norm of the four-space; the algebraic norm is $\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, an element of the algebra; a set is **bounded** when it is bounded for $K$. The complex quadratic map of a parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$.
+**Conventions.** The topological norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$, the Euclidean norm of the four-space; the algebraic norm is $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, an element of the algebra; a set is **bounded** when it is bounded in that norm. The complex quadratic map of a parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$.
 
 ## The Square and Its Unique Reading
 
@@ -28,9 +28,9 @@ $$
 \breve Q^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-,
 $$
 
-and the reading is unique: the algebra being commutative, there is only one product of $\breve Q$ with itself, and the left, the right, the plain and the natural-sign products all give the same square.
+and the reading is unique: the algebra being commutative, there is only one product of $\breve Q$ with itself, and the left, the right, the plain and the tessarine-sign products all give the same square.
 
-**Proof.** The multiplication is $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$, so $\breve Q^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-$; in a commutative algebra the products $\breve Q \breve Q$, $\breve Q \breve Q^{\natural}$ and $\breve Q^{*}\breve Q$ are related by the involutions and the coefficient conjugation, and $\breve Q \breve Q$ is the square of the algebra. The biquaternion square, by contrast, has several readings because the multiplication is not commutative.
+**Proof.** The multiplication is $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$, so $\breve Q^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-$; in a commutative algebra the products $\breve Q \breve Q$, $\breve Q \breve Q_{\mathrm{ts}}$ and $\breve Q^{*}\breve Q$ are related by the involutions and the coefficient conjugation, and $\breve Q \breve Q$ is the square of the algebra. The biquaternion square, by contrast, has several readings because the multiplication is not commutative.
 
 **Corollary (the derivative and the critical set).** The derivative of the square is the multiplication by $2\breve Q$, an operator that is singular exactly when $\breve Q$ is a zero divisor; the derivative vanishes identically only at $\breve Q=0$. Hence the critical set of the map in the sense of the points where the derivative is not invertible is the zero-divisor cone
 
@@ -80,13 +80,13 @@ the product of the two complex filled Julia sets being read in the idempotent co
 
 **Corollary (the escape criterion).** An element escapes to infinity, that is its orbit is unbounded, exactly when one of its two coordinates escapes for the corresponding complex map; the numerical criterion is the classical one, applied to each coordinate.
 
-**Proof.** The norm $\langle\cdot\rangle_{\natural*}$ is the half-sum of the squared moduli of the coordinates, so it is unbounded exactly when one of the two moduli is unbounded; the complex criterion $|\zeta|>R$ with $R$ the standard escape radius of the quadratic family is applied to each coordinate.
+**Proof.** The norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is the half-sum of the squared moduli of the coordinates, so it is unbounded exactly when one of the two moduli is unbounded; the complex criterion $|\zeta|>R$ with $R$ the standard escape radius of the quadratic family is applied to each coordinate.
 
 **Remark (the direct product survives the dynamics).** The filled Julia set is exactly a product, and not merely contained in one, because the single generator $F_{C}$ acts coordinatewise with the same index on the two coordinates; the product structure of the algebra and the product structure of the fractal are the same product. This is the essential difference from the non-commutative companion, where the filled set is not a product and the coupling terms appear.
 
 ## The Conjugations and the Equivariance
 
-**Proposition (the equivariance).** Let $g$ be one of the involutions $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$. Then
+**Proposition (the equivariance).** Let $g$ be one of the involutions $\bar{\cdot}$, ${}_{\mathrm{ts}}$, ${}^{*}$. Then
 
 $$
 F_{C}\bigl(g(\breve Q)\bigr)=g\bigl(F_{g(C)}(\breve Q)\bigr),
@@ -96,9 +96,9 @@ so $g$ maps the dynamics of $C$ to the dynamics of $g(C)$; in particular $g$ map
 
 **Proof.** Each involution is a real-algebra isomorphism onto its image and an isometry of the topological norm, so it commutes with the squaring and carries the translation by $C$ to the translation by $g(C)$; the statement about the sets follows from the uniqueness of the filled Julia set as the bounded orbit locus.
 
-**Corollary (the symmetry group of a real parameter).** A parameter fixed by all three involutions is central and real, $C=c\cdot1$ with $c\in\mathbb{R}$, and then the dynamics is equivariant under the whole group of involutions; a central complex parameter, $C=c\cdot1$ with $c$ non-real, is fixed by the natural sign and by no other nontrivial involution.
+**Corollary (the symmetry group of a real parameter).** A parameter fixed by all three involutions is central and real, $C=c\cdot1$ with $c\in\mathbb{R}$, and then the dynamics is equivariant under the whole group of involutions; a central complex parameter, $C=c\cdot1$ with $c$ non-real, is fixed by the tessarine sign and by no other nontrivial involution.
 
-**Proof.** The fixed set of the coefficient conjugation is the real-coefficient subspace, the fixed set of the natural sign is the set of elements with $Q_{\blacktriangledown}=0$, and the fixed set of the star is their intersection; the central elements are the ones with $Q_{\blacktriangledown}=0$, and their bar-fixed part is the real central line.
+**Proof.** The fixed set of the coefficient conjugation is the real-coefficient subspace, the fixed set of the tessarine sign is the set of elements with $Q_{\blacktriangledown}=0$, and the fixed set of the star is their intersection; the central elements are the ones with $Q_{\blacktriangledown}=0$, and their bar-fixed part is the real central line.
 
 ## The Critical Set and the Central Parameter
 
@@ -137,7 +137,7 @@ The quadratic map of the reduced biquaternion algebra is $F_{C}(\breve Q)=\breve
 | $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ | the filled Julia set, the product of the two complex filled Julia sets |
 | $\mathcal{J}_{C}=\partial(K_{c_{1}}\times K_{c_{2}})$ | the Julia set |
 | $\mathscr{Z}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$ | the critical set, the zero-divisor cone |
-| $\langle \breve Q\rangle_{\natural*}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ | the topological norm that measures the escape |
+| $\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$ | the topological norm that measures the escape |
 | $F_{C}\circ g=g\circ F_{g(C)}$ | the equivariance under an involution $g$ |
 
 ## Further Reading

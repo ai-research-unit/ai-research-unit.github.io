@@ -27,7 +27,7 @@ The multiplicativity of the quaternion norm is the single feature that distingui
 
 **Proposition.** The map $S^3\times\mathbb{R}_{>0}\to\mathbb{H}\setminus\{0\}$, $(u,r)\mapsto ru$, is a homeomorphism and a diffeomorphism. Consequently $\mathbb{H}\setminus\{0\}$ is diffeomorphic to $S^3\times(0,\infty)$, and $\mathbb{H}$ is the metric cone on $S^3$ completed by its apex.
 
-*Proof.* Uniqueness and bijectivity of $u = \tilde q/|\tilde q|$, $r = |\tilde q|$ are immediate from $\langle ru\rangle_{\natural} = r^2N(u) = r^2$. The map and its inverse $\tilde q\mapsto(\tilde q/|\tilde q|,|\tilde q|)$ are smooth away from the origin.
+*Proof.* Uniqueness and bijectivity of $u = \tilde q/|\tilde q|$, $r = |\tilde q|$ are immediate from $\langle ru\rangle_{\natural} = r^2\langle u\rangle_{\natural} = r^2$. The map and its inverse $\tilde q\mapsto(\tilde q/|\tilde q|,|\tilde q|)$ are smooth away from the origin.
 
 The radial geometry is therefore the geometry of the sphere together with the multiplicative radial coordinate; the sphere is the object on which the quaternion-specific geometry lives, and the remaining sections are concerned with it and with the spaces it fibres over.
 

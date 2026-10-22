@@ -4,7 +4,7 @@
 
 This article studies **regular** reduced biquaternion-valued functions, the solutions of the first-order system defined by the reduced biquaternion Cauchy–Riemann operator. It follows *Reduced Biquaternion Analysis*, where the operator and its conjugate are constructed, and it records the system of equations, the examples, the harmonicity and the factorization of the Laplacian, the role of the zero divisors, and the relations to the biquaternion regular functions and to Clifford analysis. The treatment is purely mathematical, and the operator is only ever called the **Cauchy–Riemann operator**.
 
-Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\natural*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$, and a general function is written $f$ or $\Phi$.
+Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$, and a general function is written $f$ or $\Phi$.
 
 ## The Variable and Its Structure
 
@@ -107,7 +107,7 @@ $$
 $$
 so the regular functions form a commutative algebra over $\mathbb{C}$. They are **not** closed under the bar, which conjugates the coefficients and turns a holomorphic component into an antiholomorphic one.
 
-**The conjugations.** The natural sign $\breve Q\mapsto \breve Q^{\natural}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$ swaps the two coordinates, $Q_{+}\leftrightarrow Q_{-}$, so it maps a reduced-analytic function $G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ to $G_{1}(Q_{-})\Pi_-+G_{2}(Q_{+})\Pi_+$, which is again reduced-analytic; the bar conjugates the coefficients and produces the antiholomorphic twins, and the star does both.
+**The conjugations.** The tessarine sign $\breve Q\mapsto \breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$ swaps the two coordinates, $Q_{+}\leftrightarrow Q_{-}$, so it maps a reduced-analytic function $G_{1}(Q_{+})\Pi_++G_{2}(Q_{-})\Pi_-$ to $G_{1}(Q_{-})\Pi_-+G_{2}(Q_{+})\Pi_+$, which is again reduced-analytic; the bar conjugates the coefficients and produces the antiholomorphic twins, and the star does both.
 
 ## Harmonicity and the Factorization of the Laplacian
 

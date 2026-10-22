@@ -5,7 +5,7 @@
 This article treats the **modulus–unit polar decomposition** of a complex number: the writing
 
 $$
-Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad N(u) = 1,
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad \langle u\rangle_{*} = 1,
 $$
 
 with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is treated as a point of the unit circle, and the circle as a set and as a group.
@@ -25,13 +25,13 @@ Every numerical value displayed below was recomputed in double precision.
 The norm of a complex number is
 
 $$
-N(Q) = Q\bar{Q} = q^2 + q'^2, \qquad Q = q + iq'.
+\langle Q\rangle_{*} = Q\bar{Q} = q^2 + q'^2, \qquad Q = q + iq'.
 $$
 
-It is a sum of two squares, so $N(Q) > 0$ for every $Q \neq 0$ and $N(Q) = 0$ only at $Q = 0$. The **modulus** is
+It is a sum of two squares, so $\langle Q\rangle_{*} > 0$ for every $Q \neq 0$ and $\langle Q\rangle_{*} = 0$ only at $Q = 0$. The **modulus** is
 
 $$
-r = \sqrt{N(Q)} = \lvert Q\rvert.
+r = \sqrt{\langle Q\rangle_{*}}.
 $$
 
 The square root is taken in the positive reals, so it is unique: there is no sign choice, and there is no branch choice, because the radicand is never negative. The requirement $r > 0$ is therefore met automatically off the origin, and the modulus is forced by the norm.
@@ -39,7 +39,7 @@ The square root is taken in the positive reals, so it is unique: there is no sig
 The modulus is multiplicative, because the norm is:
 
 $$
-N(Q_1Q_2) = N(Q_1)N(Q_2), \qquad r(Q_1Q_2) = r(Q_1)r(Q_2),
+\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}, \qquad r(Q_1Q_2) = r(Q_1)r(Q_2),
 $$
 
 and it is homogeneous of degree one for real scalars, $r(\lambda Q) = \lvert\lambda\rvert r(Q)$.
@@ -49,22 +49,22 @@ and it is homogeneous of degree one for real scalars, $r(\lambda Q) = \lvert\lam
 The **unit factor** is
 
 $$
-u = \frac{Q}{r} = \frac{Q}{\lvert Q\rvert}.
+u = \frac{Q}{r} = \frac{Q}{\sqrt{\langle Q\rangle_{*}}}.
 $$
 
-It satisfies $N(u) = N(Q)/r^2 = 1$, so it lies on the **unit circle**
+It satisfies $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = 1$, so it lies on the **unit circle**
 
 $$
-\mathrm{U}(1) = \{\,u \in \mathbb{C} : N(u) = 1\,\}.
+\mathrm{U}(1) = \{\,u \in \mathbb{C} : \langle u\rangle_{*} = 1\,\}.
 $$
 
-The unit circle is a group under multiplication. If $N(u) = N(v) = 1$ then $N(uv) = 1$, and the inverse of $u$ is its conjugate $\bar{u}$, since $u\bar{u} = N(u) = 1$. It is a closed and bounded subset of $\mathbb{C} \cong \mathbb{R}^2$, hence compact.
+The unit circle is a group under multiplication. If $\langle u\rangle_{*} = \langle v\rangle_{*} = 1$ then $\langle uv\rangle_{*} = 1$, and the inverse of $u$ is its conjugate $\bar{u}$, since $u\bar{u} = \langle u\rangle_{*} = 1$. It is a closed and bounded subset of $\mathbb{C} \cong \mathbb{R}^2$, hence compact.
 
 The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb{C}^\times$, which is the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions in Mathematics*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 
-A complex number carries two real parameters. The modulus carries one, the positive real $r$. The unit factor is constrained by the single real equation $N(u) = 1$ on the two parameters of $\mathbb{C}$, so it retains one real degree of freedom. The counts add:
+A complex number carries two real parameters. The modulus carries one, the positive real $r$. The unit factor is constrained by the single real equation $\langle u\rangle_{*} = 1$ on the two parameters of $\mathbb{C}$, so it retains one real degree of freedom. The counts add:
 
 $$
 2 = 1 + 1.
@@ -76,9 +76,9 @@ The additivity is the shape of the polar decomposition in every algebra of the f
 
 **Theorem.** Every nonzero complex number $Q$ has exactly one modulus–unit polar decomposition.
 
-**Existence.** Put $r = \sqrt{N(Q)}$ and $u = Q/r$. Since $N(Q) > 0$, the number $r$ is a positive real. Since $N(\lambda Q) = \lambda^2N(Q)$ for real $\lambda$, one has $N(u) = N(Q)/r^2 = 1$. Hence $Q = ru$ with $r > 0$ and $N(u) = 1$.
+**Existence.** Put $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/r$. Since $\langle Q\rangle_{*} > 0$, the number $r$ is a positive real. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = 1$. Hence $Q = ru$ with $r > 0$ and $\langle u\rangle_{*} = 1$.
 
-**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r, r_1 > 0$ and $N(u) = N(u_1) = 1$. Taking norms gives $r^2 = N(Q) = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
+**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r, r_1 > 0$ and $\langle u\rangle_{*} = \langle u_1\rangle_{*} = 1$. Taking norms gives $r^2 = \langle Q\rangle_{*} = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
 
 The pair $(r,u)$ is unique, with no sign ambiguity and no branch ambiguity. This is a statement about the factorisation, not about a coordinate on the circle: two different charts of $\mathrm{U}(1)$ assign different parameters to the same unit factor.
 
@@ -87,13 +87,13 @@ The pair $(r,u)$ is unique, with no sign ambiguity and no branch ambiguity. This
 The group of units of $\mathbb{C}$ is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$. The polar decomposition read as a map
 
 $$
-\Phi : \mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad \Phi(Q) = \bigl(\lvert Q\rvert,\ Q/\lvert Q\rvert\bigr),
+\Phi : \mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad \Phi(Q) = \bigl(\sqrt{\langle Q\rangle_{*}},\ Q/\sqrt{\langle Q\rangle_{*}}\bigr),
 $$
 
 is a group isomorphism. It is bijective, with inverse $(r,u) \mapsto ru$, and it is a homomorphism, because
 
 $$
-\Phi(Q_1Q_2) = \bigl(\lvert Q_1\rvert\lvert Q_2\rvert,\ Q_1Q_2/(\lvert Q_1\rvert\lvert Q_2\rvert)\bigr) = \Phi(Q_1)\Phi(Q_2).
+\Phi(Q_1Q_2) = \bigl(\sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}},\ Q_1Q_2/(\sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}})\bigr) = \Phi(Q_1)\Phi(Q_2).
 $$
 
 Hence
@@ -109,7 +109,7 @@ the product of the positive scale line and the circle.
 **The retraction.** The map
 
 $$
-H : [0,1] \times \mathbb{C}^\times \longrightarrow \mathbb{C}^\times, \qquad H(t,Q) = \bigl((1-t)\lvert Q\rvert + t,\ Q/\lvert Q\rvert\bigr),
+H : [0,1] \times \mathbb{C}^\times \longrightarrow \mathbb{C}^\times, \qquad H(t,Q) = \bigl((1-t)\sqrt{\langle Q\rangle_{*}} + t,\ Q/\sqrt{\langle Q\rangle_{*}}\bigr),
 $$
 
 is continuous, fixes $\mathrm{U}(1)$ at every $t$, is the identity map at $t = 0$, and lands in $\mathrm{U}(1)$ at $t = 1$. The group of units therefore deformation retracts onto the circle.
@@ -120,7 +120,7 @@ Complex conjugation fixes the real axis and negates the imaginary axis. An eleme
 
 | axis | elements | position | square | role |
 |---|---|---|---|---|
-| real | $q$, $q \in \mathbb{R}$ | Hermitian | $q^2 \ge 0$ | carries the modulus $r = \lvert Q\rvert > 0$ |
+| real | $q$, $q \in \mathbb{R}$ | Hermitian | $q^2 \ge 0$ | carries the modulus $r = \sqrt{\langle Q\rangle_{*}} > 0$ |
 | imaginary | $it$, $t \in \mathbb{R}$ | anti-Hermitian | $-t^2 \le 0$ | the direction of the circle |
 
 The modulus lies on the positive real axis. The unit circle meets the real axis at $\pm1$ and the imaginary axis at $\pm i$.
@@ -129,7 +129,7 @@ The modulus lies on the positive real axis. The unit circle meets the real axis 
 
 **The circle is both compact factor and rotation factor.** The algebra $\mathbb{C}$ is a field, hence commutative, so every element is central. A central factor and a rotation factor cannot be separated in a commutative algebra: the same circle plays both roles. Multiplication by a unit is a rotation of the plane, and $\mathrm{U}(1)$ is the group of those rotations; it is also the compact factor of the polar decomposition. The coincidence is a consequence of commutativity alone.
 
-**No boundary.** If $Q \neq 0$ then $N(Q) > 0$, so $r > 0$ and $u = Q/r$ is defined. There is no nonzero element of vanishing norm, and the only excluded element is the origin.
+**No boundary.** If $Q \neq 0$ then $\langle Q\rangle_{*} > 0$, so $r > 0$ and $u = Q/r$ is defined. There is no nonzero element of vanishing norm, and the only excluded element is the origin.
 
 ## The Matrix Picture
 
@@ -142,7 +142,7 @@ $$
 The determinant and the trace are
 
 $$
-\det M_Q = q^2+q'^2 = N(Q), \qquad \operatorname{tr}M_Q = 2q,
+\det M_Q = q^2+q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
 $$
 
 so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Q}$.
@@ -150,10 +150,10 @@ so the norm is the determinant and the modulus is the square root of the determi
 For a unit $u$ the matrix is
 
 $$
-M_u = \operatorname{Re}u\,I + \operatorname{Im}u\,J = \begin{pmatrix} \operatorname{Re}u & -\operatorname{Im}u \\ \operatorname{Im}u & \operatorname{Re}u \end{pmatrix}, \qquad N(u) = 1.
+M_u = \operatorname{Re}u\,I + \operatorname{Im}u\,J = \begin{pmatrix} \operatorname{Re}u & -\operatorname{Im}u \\ \operatorname{Im}u & \operatorname{Re}u \end{pmatrix}, \qquad \langle u\rangle_{*} = 1.
 $$
 
-It satisfies $M_u^{\mathsf T}M_u = N(u)I = I$ and $\det M_u = N(u) = 1$, so $M_u$ lies in the special orthogonal group
+It satisfies $M_u^{\mathsf T}M_u = \langle u\rangle_{*}I = I$ and $\det M_u = \langle u\rangle_{*} = 1$, so $M_u$ lies in the special orthogonal group
 
 $$
 SO(2) = \{\,M : M^{\mathsf T}M = I,\ \det M = 1\,\}.
@@ -180,18 +180,18 @@ This is the polar decomposition $M_Q = PU$ of an invertible matrix, with orthogo
 Take $Q = 3+4i$. Then
 
 $$
-N(Q) = 9+16 = 25, \qquad r = 5, \qquad u = \frac{3+4i}{5} = 0.6+0.8i.
+\langle Q\rangle_{*} = 9+16 = 25, \qquad r = 5, \qquad u = \frac{3+4i}{5} = 0.6+0.8i.
 $$
 
 The checks are exact in the data:
 
 $$
-N(u) = 0.6^2+0.8^2 = 0.36+0.64 = 1, \qquad r u = 5(0.6+0.8i) = 3+4i.
+\langle u\rangle_{*} = 0.6^2+0.8^2 = 0.36+0.64 = 1, \qquad r u = 5(0.6+0.8i) = 3+4i.
 $$
 
 ### A Table of Examples
 
-| $Q$ | $N(Q)$ | $r$ | $u = Q/r$ | $N(u)$ |
+| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $u = Q/r$ | $\langle u\rangle_{*}$ |
 |---|---|---|---|---|
 | $2$ | $4$ | $2$ | $1$ | $1$ |
 | $-3$ | $9$ | $3$ | $-1$ | $1$ |
@@ -213,15 +213,15 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 | algebra | element | norm | modulus | unit set | topology of the unit set |
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
-| $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert N\rvert}$, $N \neq 0$ | $\{N = \pm1\}$ | four components, non-compact |
+| $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
+| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*} \neq 0$ | $\{\langle Q\rangle_{*} = \pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The complex column is the only one of the four in which the norm is definite and the unit set is a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone; the quaternion column is definite, but its unit set is a three-dimensional sphere rather than a circle.
 
 ## Summary
 
-Every nonzero complex number has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{N(Q)} > 0$ and unit factor $u = Q/r$ on the unit circle. The pair is unique with no sign or branch choice. The modulus is the positive square root of the definite norm; the unit factor is a point of $\mathrm{U}(1) = \{u : N(u)=1\}$, a compact group, and the inverse of a unit is its conjugate.
+Every nonzero complex number has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\langle Q\rangle_{*}} > 0$ and unit factor $u = Q/r$ on the unit circle. The pair is unique with no sign or branch choice. The modulus is the positive square root of the definite norm; the unit factor is a point of $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$, a compact group, and the inverse of a unit is its conjugate.
 
 The group of units splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$, the circle being the maximal compact subgroup and a deformation retract of the whole group. The real axis is Hermitian and carries the modulus; the imaginary axis is anti-Hermitian and is the direction of the circle. The only elements of the circle with square $+1$ are $\pm1$, so the algebra has no continuous factor of square $+1$, and because $\mathbb{C}$ is commutative the circle is at once the compact factor and the rotation factor. The norm is definite, so there is no boundary: the origin is the only excluded element.
 
@@ -234,11 +234,11 @@ In the matrix picture the decomposition is the polar decomposition $M_Q = rM_u$ 
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q = q+iq'$ | a complex number, $q$ its real part, $q'$ its imaginary part |
 | $\bar{Q} = q-iq'$ | the complex conjugate |
-| $N(Q) = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
-| $r = \sqrt{N(Q)} = \lvert Q\rvert$ | the modulus, a positive real |
-| $u = Q/r$ | the unit factor, $N(u) = 1$ |
-| $u$ | a unit, $N(u) = 1$, with real coordinates $\operatorname{Re}u$ and $\operatorname{Im}u$ |
-| $\mathrm{U}(1) = \{u : N(u)=1\}$ | the unit circle, a compact group |
+| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
+| $r = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
+| $u = Q/r$ | the unit factor, $\langle u\rangle_{*} = 1$ |
+| $u$ | a unit, $\langle u\rangle_{*} = 1$, with real coordinates $\operatorname{Re}u$ and $\operatorname{Im}u$ |
+| $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$ | the unit circle, a compact group |
 | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |
 | $\mathbb{C}^\times \cong \mathbb{R}_{>0}\times\mathrm{U}(1)$ | the polar splitting of the group of units |
 | $\nu$ | a direction of the algebra, Hermitian or anti-Hermitian |

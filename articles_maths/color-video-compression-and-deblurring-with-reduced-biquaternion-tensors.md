@@ -60,9 +60,9 @@ $$
 and reconstruct the color channels from $A_{\mathrm C,k}$ by the formulas above. The stored data are
 
 $$
-U_k\in\mathbb{B}_{\mathrm r}^{n_1\times k\times n_3},\qquad
-S_k\in\mathbb{B}_{\mathrm r}^{k\times k\times n_3},\qquad
-V_k\in\mathbb{B}_{\mathrm r}^{n_2\times k\times n_3},
+U_k\in\mathbb{B}_{\mathrm{r}}^{n_1\times k\times n_3},\qquad
+S_k\in\mathbb{B}_{\mathrm{r}}^{k\times k\times n_3},\qquad
+V_k\in\mathbb{B}_{\mathrm{r}}^{n_2\times k\times n_3},
 $$
 
 with $S_k$ f-diagonal, so the number of reduced biquaternion entries is $n_3k(n_1+n_2+1)$. Each entry is four real numbers, so the compressed representation has $4n_3k(n_1+n_2+1)$ real scalars. The original color video has $3n_1n_2n_3$ real scalars, and the encoded tensor has $4n_1n_2n_3$ real scalars, one of which is zero at every pixel.

@@ -29,7 +29,7 @@ and it is a genuine norm: it is positive definite because the real part of $\lan
 
 **Proof.** The equation $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.
 
-The unit sphere of the Euclidean norm is **not** the norm-one group: the norm-one group is cut out by the split complex norm $N = e_t$, not by its real part, and it has dimension $6$ rather than $7$. The two agree only on the quaternion subspace, where the split complex part of $N$ vanishes; this is the first topological distinction between the split biquaternion and the biquaternion case, where the norm-one slice is the complex quadric in $\mathbb{C}^4$.
+The unit sphere of the Euclidean norm is **not** the norm-one group: the norm-one group is cut out by the split complex norm $\langle\tilde{Q}\rangle_{\natural} = e_t$, not by its real part, and it has dimension $6$ rather than $7$. The two agree only on the quaternion subspace, where the split complex part of $\langle\tilde{Q}\rangle_{\natural}$ vanishes; this is the first topological distinction between the split biquaternion and the biquaternion case, where the norm-one slice is the complex quadric in $\mathbb{C}^4$.
 
 ## The Null Cone
 
@@ -85,7 +85,7 @@ The polar decomposition is therefore a homeomorphism from the complement of $Z$ 
 
 ## Comparison with the Biquaternion Case
 
-The two algebras share the ambient topology: both are $\mathbb{R}^8$, both are contractible, and both have a seven-sphere of unit vectors. They differ in every structure attached to the forms. The biquaternion norm one slice is the complex quadric $\{N = 1\} \subset \mathbb{C}^4$, a six-dimensional manifold related to $SL(2,\mathbb{C})$ and non-compact; the split biquaternion norm-one group is the compact $S^3\times S^3 \cong \mathrm{Spin}(4)$. The biquaternion unit group $GL(2,\mathbb{C})$ deformation retracts onto the compact $\mathrm{U}(2) \cong (S^1\times S^3)/\{\pm1\}$, with fundamental group $\mathbb{Z}$ and third homotopy group $\mathbb{Z}$; the split biquaternion unit group is $\mathbb{R}_{>0}^2\times S^3\times S^3$, simply connected, with third homotopy group $\mathbb{Z}^2$. The biquaternion null cone of the complex norm is the null cone of the complexified quadratic form with link $S^1\times S^1$; the split biquaternion null cone of the Hermitian form has link $S^3\times S^3$. The link of the null cone and the norm-one group, the same manifold here, are different objects in the biquaternion case, where the norm-one slice is non-compact and the null cone link is a torus.
+The two algebras share the ambient topology: both are $\mathbb{R}^8$, both are contractible, and both have a seven-sphere of unit vectors. They differ in every structure attached to the forms. The biquaternion norm one slice is the complex quadric $\{\langle\tilde{Q}\rangle_{\natural} = 1\} \subset \mathbb{C}^4$, a six-dimensional manifold related to $SL(2,\mathbb{C})$ and non-compact; the split biquaternion norm-one group is the compact $S^3\times S^3 \cong \mathrm{Spin}(4)$. The biquaternion unit group $GL(2,\mathbb{C})$ deformation retracts onto the compact $\mathrm{U}(2) \cong (S^1\times S^3)/\{\pm1\}$, with fundamental group $\mathbb{Z}$ and third homotopy group $\mathbb{Z}$; the split biquaternion unit group is $\mathbb{R}_{>0}^2\times S^3\times S^3$, simply connected, with third homotopy group $\mathbb{Z}^2$. The biquaternion null cone of the complex norm is the null cone of the complexified quadratic form with link $S^1\times S^1$; the split biquaternion null cone of the Hermitian form has link $S^3\times S^3$. The link of the null cone and the norm-one group, the same manifold here, are different objects in the biquaternion case, where the norm-one slice is non-compact and the null cone link is a torus.
 
 ## Summary
 
@@ -98,7 +98,7 @@ The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is hom
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ | The algebra as a topological space |
 | $\|\tilde{Q}\| = (\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural})^{1/2}$ | Euclidean norm |
 | $S_{\mathbb{E}} = \{\|\tilde{Q}\| = 1\} \cong S^7$ | Euclidean unit sphere |
-| $g(\tilde{Q}) = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian form of signature $(4,4)$ |
+| $g(\tilde{Q}) = \langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, the diagonal of the Hermitian form, signature $(4,4)$ |
 | $C = \{g = 0\}$ | Null cone, dimension $7$ |
 | $L = C\cap S_{\mathbb{E}} \cong S^3\times S^3$ | Link of the null cone |
 | $Z_\pm = \{\tilde{Q}_\pm = 0\}$ | The two four-dimensional zero divisor subspaces |

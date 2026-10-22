@@ -60,7 +60,7 @@ The two signatures are not unrelated. Over $\mathbb{C}$ a non-degenerate symmetr
 
 The algebra carries a natural real bilinear form, built from the Hermitian conjugation alone.
 
-**Definition.** The **Hermitian scalar form** on $\mathbb{H}_{\mathbb{D}}$ is
+**Definition.** The **Hermitian scalar form** on $\mathbb{H}_{\mathbb{D}}$, the corpus's $\langle\cdot,\cdot\rangle_{*}$ written $g$, is
 
 $$
 g(\tilde Q_1, \tilde Q_2) = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{*}\right),
@@ -386,7 +386,7 @@ In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, eac
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*} = {}^{\natural}\,\bar{\cdot},\ {}^{\flat} = -{}^{*}$ | The four conjugations |
 | $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian scalar form, signature $(4,4)$ |
+| $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, signature $(4,4)$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, signatures $(1,3)$, $(3,1)$ |
 | $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
 | $O(n,m)$, $SO(n,m)$, $SO^{+}(n,m)$ | Orthogonal group of a form, its determinant-one part, its identity component |

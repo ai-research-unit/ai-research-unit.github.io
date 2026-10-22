@@ -15,10 +15,10 @@ The following table is the summary; each entry is justified in the sections belo
 |---|---|---|---|---|---|---|
 | $\mathbb{R}$ | $1$ | $\mathbb{R}$ | $\mathbb{R}\setminus\{0\}$ | none | $0,\ \mathbb{R}$ | field, division |
 | $\mathbb{C}$ | $2$ | $\mathbb{C}$ | $\mathbb{C}\setminus\{0\}$ | none | $0,\ \mathbb{C}$ | field, division |
-| $\mathbb{D}$ | $2$ | $\mathbb{D}$ | $N(u) \neq 0$ | yes | $0,\ \mathbb{D}\Pi_{1,2},\ \mathbb{D}$ | semisimple, not simple |
+| $\mathbb{D}$ | $2$ | $\mathbb{D}$ | $\langle u\rangle_{*} \neq 0$ | yes | $0,\ \mathbb{D}\Pi_{1,2},\ \mathbb{D}$ | semisimple, not simple |
 | $\mathbb{D}'$ | $2$ | $\mathbb{D}'$ | $x \neq 0$ | yes | $(\varepsilon^m)$ | local, not semisimple |
 | $\mathbb{H}$ | $4$ | $\mathbb{R}$ | $\mathbb{H}\setminus\{0\}$ | none | $0,\ \mathbb{H}$ | division, simple |
-| $\mathbb{H}_{\mathbb{D}}$ | $8$ | $\mathbb{D}$ | $N(u) \in \mathbb{D}^\times$ | yes | two maximal ideals | semisimple, not simple |
+| $\mathbb{H}_{\mathbb{D}}$ | $8$ | $\mathbb{D}$ | $\langle u\rangle_{\natural} \in \mathbb{D}^\times$ | yes | two maximal ideals | semisimple, not simple |
 | $\mathbb{B}$ | $8$ (over $\mathbb{R}$) | $\mathbb{C}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | $0,\ \mathbb{B}$ | simple, not division |
 | $M_n(k)$, $n \geq 2$ | $n^2$ | $k I_n$ | $\mathrm{GL}_n(k)$ | yes | $0,\ M_n(k)$ | simple, not division |
 | $k[x]$ | $\infty$ | $k[x]$ | $k^\times$ | none | principal | domain, not simple |
@@ -39,7 +39,7 @@ $\mathbb{C} = \mathbb{R}[x]/(x^2+1)$ is two-dimensional over $\mathbb{R}$, commu
 $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is two-dimensional and commutative, with unit $j$, $j^2 = +1$. The element $u = x + jy$ has
 
 $$
-N(u) = u u^* = x^2 - y^2, \qquad u^{-1} = \frac{x - jy}{x^2 - y^2} \ \ (x^2 \neq y^2),
+\langle u\rangle_{*} = u u^* = x^2 - y^2, \qquad u^{-1} = \frac{x - jy}{x^2 - y^2} \ \ (x^2 \neq y^2),
 $$
 
 so the units are the elements off the two lines $x = \pm y$, and the nonzero elements on those lines are zero divisors. The idempotents

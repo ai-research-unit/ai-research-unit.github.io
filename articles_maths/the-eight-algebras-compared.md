@@ -105,7 +105,7 @@ The thirteen subject articles and the source articles that supply their entries,
 | *Comparison of Automorphisms and Derivations* | the automorphism-and-derivation article of each of the eight algebras |
 | *Comparison of Subspaces and Involutions* | $\mathbb{R}$ has no source; *Complexoid Subspaces*; *Split-Complexoid Subspaces*; *Dual-Number Subspaces*; *The Scalar and Vector Subspaces of $\mathbb{H}$*; the split-quaternion subspace series; the biquaternion subspace series; the split-biquaternion subspace series |
 | *Comparison of Element Representations and Matrix Models* | *Real Element Representations* and *Real Regular Element Representation*; the complex, split-complex and dual representation series; the quaternion and split-quaternion representation series; the biquaternion and split-biquaternion representation series |
-| *Comparison of the Polar Element Representation* | the polar-representation article of each of the eight algebras |
+| *Comparison of the Polar Decomposition* | the polar-decomposition article of each of the eight algebras |
 
 The first column names the article; the second names the sources that supply its entries. A source named for an algebra is cited in the tables of that article under that algebra's column; where the first column shows no source, the corresponding column of that article's tables is empty and marked. The subjects are grouped as the menu groups them, by subject family: this overview, then Algebra, Topology, Analysis — carrying the six subjects from analysis to harmonic analysis — Geometry, Subspaces and Representations.
 

@@ -91,7 +91,7 @@ $$
 \Theta_{\tilde Q_6}(\tilde Q_1)\,\Theta_{\tilde Q_6}(\tilde Q_3)=\langle\tilde Q_6\rangle_{\natural}\,\Theta_{\tilde Q_6}(\tilde Q_1\tilde Q_3).
 $$
 
-*Proof.* $\tilde Q_6\tilde Q_1\tilde Q_6^{\natural}\tilde Q_6\tilde Q_3\tilde Q_6^{\natural}=\tilde Q_6\tilde Q_1N(\tilde Q_6)\tilde Q_3\tilde Q_6^{\natural}=\langle\tilde Q_6\rangle_{\natural}\tilde Q_6\tilde Q_1\tilde Q_3\tilde Q_6^{\natural}$, moving the central scalar out. In particular $\Theta_{\tilde Q_6}$ is an algebra automorphism exactly when $\langle\tilde Q_6\rangle_{\natural}=1$, while for $\langle\tilde Q_6\rangle_{\natural}=-1$ the operator is multiplicative up to the sign $-1$, which is the algebraic meaning of the word *signed*; read in the other order the same identity is $\Theta_{\tilde Q_6}(\tilde Q_3)\Theta_{\tilde Q_6}(\tilde Q_1)=\langle\tilde Q_6\rangle_{\natural}\Theta_{\tilde Q_6}(\tilde Q_3\tilde Q_1)$, the statement with the two factors interchanged.
+*Proof.* $\tilde Q_6\tilde Q_1\tilde Q_6^{\natural}\tilde Q_6\tilde Q_3\tilde Q_6^{\natural}=\tilde Q_6\tilde Q_1\langle\tilde Q_6\rangle_{\natural}\tilde Q_3\tilde Q_6^{\natural}=\langle\tilde Q_6\rangle_{\natural}\tilde Q_6\tilde Q_1\tilde Q_3\tilde Q_6^{\natural}$, moving the central scalar out. In particular $\Theta_{\tilde Q_6}$ is an algebra automorphism exactly when $\langle\tilde Q_6\rangle_{\natural}=1$, while for $\langle\tilde Q_6\rangle_{\natural}=-1$ the operator is multiplicative up to the sign $-1$, which is the algebraic meaning of the word *signed*; read in the other order the same identity is $\Theta_{\tilde Q_6}(\tilde Q_3)\Theta_{\tilde Q_6}(\tilde Q_1)=\langle\tilde Q_6\rangle_{\natural}\Theta_{\tilde Q_6}(\tilde Q_3\tilde Q_1)$, the statement with the two factors interchanged.
 
 **Proposition (injectivity up to sign, and the kernel).** For units $\tilde Q_6,\tilde Q_2$, the assignment $\tilde Q_6\mapsto\Theta_{\tilde Q_6}$ is injective up to the sign of the parameter: $\Theta_{\tilde Q_6}=\Theta_{\tilde Q_2}$ if and only if $\tilde Q_2=\tilde Q_6$ or $\tilde Q_2=-\tilde Q_6$. Moreover $\Theta_{\tilde Q_6}=0$ if and only if $\tilde Q_6=0$. On the unit group the kernel of the assignment is therefore $\{\pm e_t\}$, and $\Theta_{\tilde Q_6}$ is invertible exactly when $\tilde Q_6$ is, with inverse $\Theta_{\tilde Q_6^{-1}}$.
 
@@ -135,7 +135,7 @@ so it is multiplicative up to the scalar $\tilde Q_2\tilde Q_6$ – that is $L(\
 **Proposition (the norm of the image and the automorphisms).** For all $\tilde Q_6,\tilde Q_4$,
 
 $$
-N\bigl(\Theta_{\tilde Q_6}(\tilde Q_4)\bigr)=\langle\tilde Q_6\rangle_{\natural}^{2}\langle\tilde Q_4\rangle_{\natural},
+\langle\Theta_{\tilde Q_6}(\tilde Q_4)\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}^{2}\langle\tilde Q_4\rangle_{\natural},
 $$
 
 so that $\Theta_{\tilde Q_6}$ is an automorphism of the general quaternionic bilinear form exactly when $\langle\tilde Q_6\rangle_{\natural}=\pm1$; its determinant is $\det\Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{4}$ in the coefficient basis.

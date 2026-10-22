@@ -44,7 +44,7 @@ $$
 
 so the algebraic norm of $\langle\cdot\rangle$ is the negative square and the algebraic norm of $\langle\cdot\rangle_{*}$ the positive one. The form $\langle\cdot,\cdot\rangle$ is **negative definite** on the subspace, its value $-q'^2_1$ vanishing only at the origin; the form $\langle\cdot,\cdot\rangle_{*}$ is **positive definite**, its value $+q'^2_1$ vanishing only at the origin; each has rank $1$, is non-degenerate, and has the null set $\{0\}$ alone.
 
-The subspace contains no nonzero isotropic element of either form. This is the anisotropy of the two forms met in *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category, where $\langle Q\rangle=Q^{2}$ and $\langle Q\rangle_{*}=|Q|^{2}$ vanish only together with $Q$.
+The subspace contains no nonzero isotropic element of either form. This is the anisotropy of the two forms met in *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, above this article in this category, where $\langle Q\rangle=Q^{2}$ and $\langle Q\rangle_{*}=Q\bar Q$ vanish only together with $Q$.
 
 ## The Table of the Two
 

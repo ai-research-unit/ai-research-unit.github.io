@@ -10,27 +10,27 @@ The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion t
 
 ## The f-Diagonal and Unitary Tensors
 
-A tensor $S\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ is **f-diagonal** if every frontal slice $S^{(k)}$ is a diagonal matrix. It need not be square: the diagonal has $\min(n_1,n_2)$ entries, and the entries off the diagonal are zero in every slice. The **diagonal tubes** are the vectors
+A tensor $S\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ is **f-diagonal** if every frontal slice $S^{(k)}$ is a diagonal matrix. It need not be square: the diagonal has $\min(n_1,n_2)$ entries, and the entries off the diagonal are zero in every slice. The **diagonal tubes** are the vectors
 
 $$
 S(i,i,:)=(S(i,i,1),\dots,S(i,i,n_3)),\qquad 1\le i\le\min(n_1,n_2),
 $$
 
-each an element of $\mathbb{B}_{\mathrm r}^{n_3}$.
+each an element of $\mathbb{B}_{\mathrm{r}}^{n_3}$.
 
-A tensor $U\in\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ is **unitary** if
+A tensor $U\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ is **unitary** if
 
 $$
 U^{\mathsf H}\ast U=U\ast U^{\mathsf H}=\mathrm I.
 $$
 
-The conjugate transpose is the bar-transpose with the reversal of the slices $2,\dots,n_3$ fixed in *The t-Product of Reduced Biquaternion Tensors*. By the transform criterion, $U$ is unitary if and only if every frontal slice $\widehat U^{(k)}$ is a unitary matrix over $\mathbb{B}_{\mathrm r}$, equivalently if and only if both complex matrices $\widehat U_{(1)}^{(k)}$ and $\widehat U_{(2)}^{(k)}$ are unitary for every $k$.
+The conjugate transpose is the bar-transpose with the reversal of the slices $2,\dots,n_3$ fixed in *The t-Product of Reduced Biquaternion Tensors*. By the transform criterion, $U$ is unitary if and only if every frontal slice $\widehat U^{(k)}$ is a unitary matrix over $\mathbb{B}_{\mathrm{r}}$, equivalently if and only if both complex matrices $\widehat U_{(1)}^{(k)}$ and $\widehat U_{(2)}^{(k)}$ are unitary for every $k$.
 
 **Remark (the identity is f-diagonal).** The identity tensor $\mathrm I$ is f-diagonal and unitary: its first frontal slice is $I_n$, its other slices are zero, and its transform is $I_n$ in every slice.
 
 ## The Matrix Decomposition over the Reduced Biquaternions
 
-The t-SVD is built from the matrix SVD over $\mathbb{B}_{\mathrm r}$. For a matrix $M\in\mathbb{B}_{\mathrm r}^{m\times n}$, write $M=M_{(1)}\Pi_++M_{(2)}\Pi_-$ with $M_{(1)},M_{(2)}\in\mathbb{C}^{m\times n}$, and take the complex singular value decompositions
+The t-SVD is built from the matrix SVD over $\mathbb{B}_{\mathrm{r}}$. For a matrix $M\in\mathbb{B}_{\mathrm{r}}^{m\times n}$, write $M=M_{(1)}\Pi_++M_{(2)}\Pi_-$ with $M_{(1)},M_{(2)}\in\mathbb{C}^{m\times n}$, and take the complex singular value decompositions
 
 $$
 M_{(1)}=U_{(1)}\Sigma_{(1)}V_{(1)}^{\mathsf H_{\mathbb C}},\qquad
@@ -51,7 +51,7 @@ $$
 M=U\Sigma V^{\mathsf H},
 $$
 
-the matrices $U$ and $V$ are unitary over $\mathbb{B}_{\mathrm r}$, and $\Sigma$ is diagonal with entries
+the matrices $U$ and $V$ are unitary over $\mathbb{B}_{\mathrm{r}}$, and $\Sigma$ is diagonal with entries
 
 $$
 \sigma_i=\sigma_{i,(1)}\Pi_++\sigma_{i,(2)}\Pi_-,\qquad 1\le i\le\min(m,n),
@@ -65,13 +65,13 @@ where $\sigma_{i,(j)}$ are the nonnegative complex singular values of $M_{(j)}$.
 
 ## The t-SVD
 
-**Theorem (the t-SVD).** For every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ there are unitary tensors $U\in\mathbb{B}_{\mathrm r}^{n_1\times n_1\times n_3}$ and $V\in\mathbb{B}_{\mathrm r}^{n_2\times n_2\times n_3}$ and an f-diagonal tensor $S\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ such that
+**Theorem (the t-SVD).** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ there are unitary tensors $U\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_1\times n_3}$ and $V\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_2\times n_3}$ and an f-diagonal tensor $S\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ such that
 
 $$
 A=U\ast S\ast V^{\mathsf H}.
 $$
 
-*Proof.* Transform $A$ along the third mode. For each $k$, apply the matrix decomposition over $\mathbb{B}_{\mathrm r}$ to $\widehat A^{(k)}$:
+*Proof.* Transform $A$ along the third mode. For each $k$, apply the matrix decomposition over $\mathbb{B}_{\mathrm{r}}$ to $\widehat A^{(k)}$:
 
 $$
 \widehat A^{(k)}=U_kS_kV_k^{\mathsf H},\qquad 1\le k\le n_3,
@@ -102,7 +102,7 @@ The proof is an algorithm. Write the two idempotent coordinates $A_{(1)}$ and $A
 3. Assemble the transform slices $\widehat U^{(k)}=U_{1,k}\Pi_++U_{2,k}\Pi_-$, $\widehat S^{(k)}=S_{1,k}\Pi_++S_{2,k}\Pi_-$, $\widehat V^{(k)}=V_{1,k}\Pi_++V_{2,k}\Pi_-$.
 4. Apply the inverse transform to each of $\widehat U,\widehat S,\widehat V$.
 
-The output is $U\in\mathbb{B}_{\mathrm r}^{n_1\times n_1\times n_3}$, $S\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ and $V\in\mathbb{B}_{\mathrm r}^{n_2\times n_2\times n_3}$, with $A=U\ast S\ast V^{\mathsf H}$. In practice the thin SVDs of the slices are computed and the factors are completed to unitary matrices by orthonormal bases of the orthogonal complements; the added columns carry zero singular values and do not change the product.
+The output is $U\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_1\times n_3}$, $S\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ and $V\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_2\times n_3}$, with $A=U\ast S\ast V^{\mathsf H}$. In practice the thin SVDs of the slices are computed and the factors are completed to unitary matrices by orthonormal bases of the orthogonal complements; the added columns carry zero singular values and do not change the product.
 
 **The cost.** The two forward transforms cost $O(n_1n_2n_3\log n_3)$ and $O(n_1n_2n_3\log n_3)$; the $n_3$ slicewise complex SVDs cost $O(n_3\min(n_1^2n_2,n_1n_2^2))$; the inverse transforms cost $O(n_1^2n_3\log n_3+n_2^2n_3\log n_3)$. The dominant term is
 
@@ -114,7 +114,7 @@ the expression of the source. The algorithm is embarrassingly parallel in the tw
 
 ## The Norm Identity
 
-**Theorem.** For every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$,
+**Theorem.** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,
 
 $$
 \|A\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\|_{\mathrm F},
@@ -152,7 +152,7 @@ The decomposition was recomputed on random tensors of sizes $2\times2\times2$, $
 
 ## Summary
 
-Every reduced biquaternion tensor $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ has a t-SVD $A=U\ast S\ast V^{\mathsf H}$, with $U$ and $V$ unitary and $S$ f-diagonal. The decomposition is computed by transforming along the third mode, taking the matrix SVD over $\mathbb{B}_{\mathrm r}$ of every transform slice, and inverting the transform. The singular values are pairs of complex singular values, one in each idempotent coordinate; they need not be real, they may be zero divisors, and the decomposition is not unique. The Frobenius norm satisfies $\|A\|_{\mathrm F}=n_3^{-1/2}\|\operatorname{diag}(\widehat A)\|_{\mathrm F}$ and equals $\|S\|_{\mathrm F}$, so the norm is concentrated on the diagonal tubes $S(i,i,:)$. **The t-SVD is the matrix SVD applied slice by slice in the Fourier domain, with the two idempotent coordinates taken separately.**
+Every reduced biquaternion tensor $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ has a t-SVD $A=U\ast S\ast V^{\mathsf H}$, with $U$ and $V$ unitary and $S$ f-diagonal. The decomposition is computed by transforming along the third mode, taking the matrix SVD over $\mathbb{B}_{\mathrm{r}}$ of every transform slice, and inverting the transform. The singular values are pairs of complex singular values, one in each idempotent coordinate; they need not be real, they may be zero divisors, and the decomposition is not unique. The Frobenius norm satisfies $\|A\|_{\mathrm F}=n_3^{-1/2}\|\operatorname{diag}(\widehat A)\|_{\mathrm F}$ and equals $\|S\|_{\mathrm F}$, so the norm is concentrated on the diagonal tubes $S(i,i,:)$. **The t-SVD is the matrix SVD applied slice by slice in the Fourier domain, with the two idempotent coordinates taken separately.**
 
 ## Summary of Notation
 
@@ -164,7 +164,7 @@ Every reduced biquaternion tensor $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\tim
 | $U,V$ | Unitary tensors, $U^{\mathsf H}\ast U=U\ast U^{\mathsf H}=\mathrm I$ |
 | $\widehat A$ | The Fourier transform of $A$ along the third mode |
 | $\operatorname{diag}(\widehat A)$ | The block diagonal matrix of the transform slices |
-| $\sigma_i=\sigma_{i,(1)}\Pi_++\sigma_{i,(2)}\Pi_-$ | A singular value of a matrix over $\mathbb{B}_{\mathrm r}$ |
+| $\sigma_i=\sigma_{i,(1)}\Pi_++\sigma_{i,(2)}\Pi_-$ | A singular value of a matrix over $\mathbb{B}_{\mathrm{r}}$ |
 
 ## Further Reading
 

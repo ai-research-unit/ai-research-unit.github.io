@@ -73,7 +73,7 @@ so the pairing at the two equal arguments is twice the determinant of the elemen
 
 ## Worked Examples
 
-**The identity.** Let $\tilde{Q}_1=e_t$. Then $\mathsf{M}_4(e_t)=I_4$ and $\tfrac12\operatorname{Tr}(I_4\cdot I_4^{\mathsf{T}})=2=2N(e_t)$, while $\det\mathsf{M}_4(e_t)=1=\langle e_t\rangle_{\natural}^2$.
+**The identity.** Let $\tilde{Q}_1=e_t$. Then $\mathsf{M}_4(e_t)=I_4$ and $\tfrac12\operatorname{Tr}(I_4\cdot I_4^{\mathsf{T}})=2=2\langle e_t\rangle_{\natural}$, while $\det\mathsf{M}_4(e_t)=1=\langle e_t\rangle_{\natural}^2$.
 
 **A basis element.** Let $\tilde{Q}_1=\vec e_x$. Then $\mathsf{M}_4(\vec e_x)^{\mathsf{T}}=\mathsf{M}_4(\vec e_x^{\natural})=-\mathsf{M}_4(\vec e_x)$, so $\mathsf{M}_4(\vec e_x)^{\mathsf{T}}\mathsf{M}_4(\vec e_x)=-\mathsf{M}_4(\vec e_x)^2=-\mathsf{M}_4(\vec e_x^2)=\mathsf{M}_4(e_t)=I_4$, which is the product theorem at $\tilde{Q}_1=\tilde{Q}_1=\vec e_x$ and matches $\vec e_x\star \vec e_x=\vec e_x^{\natural}\vec e_x=-\vec e_x^2=e_t$ with $\langle \vec e_x\rangle_{\natural}=1$.
 

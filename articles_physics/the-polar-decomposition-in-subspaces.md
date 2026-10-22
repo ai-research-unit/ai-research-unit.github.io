@@ -1,14 +1,14 @@
-# __The Polar Element Representation in Subspaces__
+# __The Polar Decomposition in Subspaces__
 
 ## Introduction
 
-Each of the remarkable subspaces is a physical sector of the framework, and the polar representation behaves differently on each. The polar representation of a biquaternion,
+Each of the remarkable subspaces is a physical sector of the framework, and the polar decomposition behaves differently on each. The polar decomposition of a biquaternion,
 
 $$
 \tilde{Q} = r\,\exp(i\alpha)\,B\,\tilde q , \qquad r\in\mathbb{R}_{>0}, \quad \alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right], \quad B\in\mathbb{M}_+, \quad \tilde q\in\mathrm{Sp}(1) ,
 $$
 
-decomposes a general element of the algebra into a positive scale, a central phase, a Hermitian positive factor and a rotor. The companion article *The Polar Element Representation of Biquaternions* reads the four factors on the Lorentz group and on the four-vector. This article restricts the same representation to the **remarkable subspaces** of *The Biquaternion Space, the Group of Involutions and the Six Subspaces* and records what the restriction does to the four factors.
+decomposes a general element of the algebra into a positive scale, a central phase, a Hermitian positive factor and a rotor. The companion article *The Polar Decomposition of Biquaternions* reads the four factors on the Lorentz group and on the four-vector. This article restricts the same representation to the **remarkable subspaces** of *The Biquaternion Space, the Group of Involutions and the Six Subspaces* and records what the restriction does to the four factors.
 
 The restriction is not a cosmetic exercise, because each subspace is the fixed space of one of the algebra's involutions, and each involution constrains the factors in a different way. Two of the factors are always the modulus of the biquaternion norm, and the biquaternion norm on a subspace takes one of five forms — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — and its argument is what the phase measures. The other two factors are the positive Hermitian square root of $\tilde{Q}\tilde{Q}^{*}$ and the unitary part of $\tilde{Q}/\rho$, and the subspaces are exactly the cases in which one of those two products degenerates. The restrictions therefore say which of the four factors a subspace is able to carry, and the answer is that no subspace carries all four freely:
 
@@ -40,7 +40,7 @@ The restrictions are taken one at a time in the sections that follow, in the ord
 
 ## The Exponentials of the Four Factors
 
-The word restricted in this article is the ordered product of four exponentials. In the physics normalisation of *The Polar Element Representation of Biquaternions*, with the rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$, the boost direction $\vec u_{\mathrm b} \in \mathcal{A}$ (a unit pure real quaternion, $\vec u_{\mathrm b} = \vec v/|\vec v|$), and the rotation angle $\theta \in [0,2\pi]$ about the unit axis $\vec u_{\mathrm r} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$),
+The word restricted in this article is the ordered product of four exponentials. In the physics normalisation of *The Polar Decomposition of Biquaternions*, with the rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$, the boost direction $\vec u_{\mathrm b} \in \mathcal{A}$ (a unit pure real quaternion, $\vec u_{\mathrm b} = \vec v/|\vec v|$), and the rotation angle $\theta \in [0,2\pi]$ about the unit axis $\vec u_{\mathrm r} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$),
 
 $$
 \tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp(-i\psi\vec u_{\mathrm b})\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
@@ -188,7 +188,7 @@ $$
 \tilde q = \frac{z}{\rho} = \begin{cases} +e_t , & \arg z\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right] , \\ -e_t , & \arg z\in\left(\tfrac{\pi}{2},\pi\right]\cup\left(-{\pi},-\tfrac{\pi}{2}\right] ,\end{cases}
 $$
 
-the two lines being $\rho = z$ and $\rho = -z$. The polar representation of a biquaternion in the centre is therefore the polar form of the complex number $z$: the phase is **free**, and it is the argument of the element itself, taken modulo the branch of $\pi$. The two rotors have nothing to act on and reduce to the element $-e_t$ of the kernel of the two-to-one map, and the boundary case $\arg z = -\pi/2$ is the one on which the branch matters: for $\tilde{Q} = -2ie_t$ the phase is pulled from $-\pi/2$ to $+\pi/2$ and the sign is carried by the rotor.
+the two lines being $\rho = z$ and $\rho = -z$. The polar decomposition of a biquaternion in the centre is therefore the polar form of the complex number $z$: the phase is **free**, and it is the argument of the element itself, taken modulo the branch of $\pi$. The two rotors have nothing to act on and reduce to the element $-e_t$ of the kernel of the two-to-one map, and the boundary case $\arg z = -\pi/2$ is the one on which the branch matters: for $\tilde{Q} = -2ie_t$ the phase is pulled from $-\pi/2$ to $+\pi/2$ and the sign is carried by the rotor.
 
 The matrix statement is the same one: $\mathsf{M}_2(\tilde{Q}) = zI$ is a scalar matrix, its positive Hermitian polar factor is $|z|I$, and the unitary polar factor is the number $z/|z|$ read as $\pm I$ after the branch of the square root has absorbed the sign.
 
@@ -531,7 +531,7 @@ The two criteria read as the framework's tests of positivity and of Hermiticity:
 
 ## Summary
 
-Restricted to the remarkable subspaces, the polar representation $\tilde{Q} = r\exp(i\alpha)B\tilde q$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones.
+Restricted to the remarkable subspaces, the polar decomposition $\tilde{Q} = r\exp(i\alpha)B\tilde q$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones.
 
 The phase is half the argument of the biquaternion norm: it is a free coordinate on the centre and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite.
 
@@ -566,7 +566,7 @@ The restrictions together exhaust the ways in which the four factors can depend 
 
 ## Further Reading
 
-- [The Polar Element Representation of Biquaternions](the-polar-element-representation-of-biquaternions.html), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
+- [Modulus–Unit Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), for the remarkable subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boosts and the information interpretation.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the light cone.

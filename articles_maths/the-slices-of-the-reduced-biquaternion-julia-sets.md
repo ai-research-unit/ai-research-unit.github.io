@@ -76,7 +76,7 @@ and the diagonal slice of the Julia set is the corresponding part of the boundar
 
 **Proof.** Along the diagonal $Q_{+}=Q_{-}=\zeta$ and the membership in the product is the conjunction of $\zeta\in K_{c_{1}}$ and $\zeta\in K_{c_{2}}$; for a central parameter the two sets coincide.
 
-**Remark (the diagonal and the exchange symmetry).** The diagonal slice is the fixed set of the exchange of the two idempotent coordinates, which is the natural sign restricted to the coordinate level; it is the slice the algebra reads most directly, and for a central parameter it reproduces the complex fractal itself, so the central reduced biquaternion fractal contains the complex fractal as its diagonal slice.
+**Remark (the diagonal and the exchange symmetry).** The diagonal slice is the fixed set of the exchange of the two idempotent coordinates, which is the tessarine sign restricted to the coordinate level; it is the slice the algebra reads most directly, and for a central parameter it reproduces the complex fractal itself, so the central reduced biquaternion fractal contains the complex fractal as its diagonal slice.
 
 ## The Real Slice
 

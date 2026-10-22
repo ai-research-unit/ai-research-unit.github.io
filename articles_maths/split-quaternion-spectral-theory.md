@@ -31,7 +31,7 @@ $$
 
 where $\sqrt{\cdot}$ denotes either complex square root, the two choices giving the two points of $\sigma(\tilde q)$. In particular $\tilde q$ is singular, i.e. a zero divisor or zero, if and only if $0 \in \sigma(\tilde q)$, if and only if $\langle\tilde q\rangle_{\natural} = 0$.
 
-**Proof.** The characteristic polynomial is $\lambda^2 - 2q_t\lambda + \langle\tilde q\rangle_{\natural}$, with discriminant $4q_t^2-4\langle\tilde q\rangle_{\natural} = -4N(\vec v)$. Its roots are $q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$, and $\langle\tilde q\rangle_{\natural} = 0$ is exactly the vanishing of the constant term, i.e. $0$ a root.
+**Proof.** The characteristic polynomial is $\lambda^2 - 2q_t\lambda + \langle\tilde q\rangle_{\natural}$, with discriminant $4q_t^2-4\langle\tilde q\rangle_{\natural} = -4\langle\vec v\rangle_{\natural}$. Its roots are $q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$, and $\langle\tilde q\rangle_{\natural} = 0$ is exactly the vanishing of the constant term, i.e. $0$ a root.
 
 **The real spectrum.** The spectrum *over $\mathbb{R}$* is $\sigma_{\mathbb{R}}(\tilde q) = \sigma(\tilde q)\cap\mathbb{R}$. Unlike the complex case, this set may be empty: when $\langle \vec v\rangle_{\natural} > 0$ the two eigenvalues are non-real and $\sigma_{\mathbb{R}}(\tilde q) = \emptyset$ even for an invertible $\tilde q$. This is the standard behaviour of a spectrum in a real algebra, and it is the reason the spectrum is taken over $\mathbb{C}$ here.
 

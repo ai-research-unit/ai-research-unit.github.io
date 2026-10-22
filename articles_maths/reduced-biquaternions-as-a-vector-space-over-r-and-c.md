@@ -6,7 +6,7 @@ This article reads the reduced biquaternion space with its two scalar systems. O
 
 The article keeps the space and drops the product. Addition, the two scalar actions, the coordinate systems and the linear or antilinear character of the conjugations are what it fixes; the product is *Introduction to the Algebra of the Reduced Biquaternions*, and the four general products and the forms they carry are *The Four Products, Their Forms and Their Algebraic Norms*. The glyphs and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are those of *Conventions in Mathematics*, §*The Elements and their Coefficients*, and of *Reduced Biquaternion Space*, above this article in this category.
 
-**The results.** Over $\mathbb{C}$ the space has dimension two on the basis $1,j$, with the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$; the two coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ are the **scalar part** and the **$j$-part**, the coefficients of $1$ and of $j$. Over $\mathbb{R}$ the space has dimension four on the basis $1,i,j,ij$, and the multiplication by $i$ is a real-linear operator $J$ with $J^{2}=-\mathrm{id}$ whose existence is what makes the complex reading possible. The realification multiplies the dimension by two, and the restriction of scalars halves it; the real reading carries two commuting square roots of $-\mathrm{id}$ behaving as diagonalisable-simultaneously operators only through the idempotent basis, and it carries the hyperbolic involution of the multiplication by $j$. Of the four conjugations, the **natural sign** is complex-linear and the **bar**, the **star** and the **flat** are complex-antilinear; this is the clause that separates the first slot of the four products from the second.
+**The results.** Over $\mathbb{C}$ the space has dimension two on the basis $1,j$, with the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$; the two coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ are the **scalar part** and the **$j$-part**, the coefficients of $1$ and of $j$. Over $\mathbb{R}$ the space has dimension four on the basis $1,i,j,ij$, and the multiplication by $i$ is a real-linear operator $J$ with $J^{2}=-\mathrm{id}$ whose existence is what makes the complex reading possible. The realification multiplies the dimension by two, and the restriction of scalars halves it; the real reading carries two commuting square roots of $-\mathrm{id}$ behaving as diagonalisable-simultaneously operators only through the idempotent basis, and it carries the hyperbolic involution of the multiplication by $j$. Of the four conjugations, the **tessarine sign** is complex-linear and the **bar**, the **star** and the **flat** are complex-antilinear; this is the clause that separates the first slot of the four products from the second.
 
 **Boundaries.** The conjugations, their fixed and anti-fixed spaces and the group they generate are *The Two Involutions and the Group of Involutions*, below this article in this category, and the fixed spaces as subspaces are *Introduction to the Remarkable Subspaces*, below this article in this category. The element representations — the four-vector, the $2\times2$ matrix and the polar forms — are the representation articles of the category. No form appears here; the four forms and their algebraic norms are *The Four Products, Their Forms and Their Algebraic Norms*, below this article. The module readings over the ring $\mathbb{B}_{\mathrm{r}}$ itself are not part of this article.
 
@@ -29,7 +29,7 @@ The space is **two-dimensional** over $\mathbb{C}$: the basis $\{1,j\}$ is compl
 
 **Proposition (the complex coordinates).** Every element has a unique expression $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the pair $(Q_{\blacktriangle},Q_{\blacktriangledown})$ is the **complex coordinate pair**, $Q_{\blacktriangle}$ is the **$\mathbb{C}$ scalar part** and $jQ_{\blacktriangledown}$ the **$j$-part**; the algebra has no vector part.
 
-*Proof.* Uniqueness is the linear independence of $1$ and $j$ over $\mathbb{C}$: if $Q_{\blacktriangle}+jQ_{\blacktriangledown}=0$ then, applying the natural sign of *The Two Involutions and the Group of Involutions*, $Q_{\blacktriangle}-jQ_{\blacktriangledown}=0$, and adding the two gives $2Q_{\blacktriangle}=0$ and subtracting them gives $2jQ_{\blacktriangledown}=0$, so $Q_{\blacktriangle}=Q_{\blacktriangledown}=0$. Existence is the definition of the space, and the naming of the two coordinates is that of *Conventions in Mathematics*.
+*Proof.* Uniqueness is the linear independence of $1$ and $j$ over $\mathbb{C}$: if $Q_{\blacktriangle}+jQ_{\blacktriangledown}=0$ then, applying the tessarine sign of *The Two Involutions and the Group of Involutions*, $Q_{\blacktriangle}-jQ_{\blacktriangledown}=0$, and adding the two gives $2Q_{\blacktriangle}=0$ and subtracting them gives $2jQ_{\blacktriangledown}=0$, so $Q_{\blacktriangle}=Q_{\blacktriangledown}=0$. Existence is the definition of the space, and the naming of the two coordinates is that of *Conventions in Mathematics*.
 
 ### The Idempotent Reading
 
@@ -92,7 +92,7 @@ The real space carries a second square root of $-\mathrm{id}$ that is not the sc
 
 *Proof.* $S^{2}(\breve Q)=j(j\breve Q)=j^{2}\breve Q=\breve Q$. The operator is the restriction to the space of the left multiplication of *The Multiplication Operators of the Algebra of the Reduced Biquaternions*, below this article in this category, at the element $j$.
 
-The involution $S$ is **not** a conjugation in the sense of the four marks of the next article: it is the multiplication by a unit of the algebra and not an involution of the coefficient ring. The four conjugations — the bar, the natural sign, the star and the flat — are the subject of *The Two Involutions and the Group of Involutions*; here only their linear or antilinear character is used, and it is stated in §*Linear and Antilinear Maps*.
+The involution $S$ is **not** a conjugation in the sense of the four marks of the next article: it is the multiplication by a unit of the algebra and not an involution of the coefficient ring. The four conjugations — the bar, the tessarine sign, the star and the flat — are the subject of *The Two Involutions and the Group of Involutions*; here only their linear or antilinear character is used, and it is stated in §*Linear and Antilinear Maps*.
 
 ### The Realification and the Change of Scalars
 
@@ -124,21 +124,21 @@ The first and the third are real- or complex-based readings of the same four rea
 
 ## Linear and Antilinear Maps
 
-**Of the four conjugations the natural sign is $\mathbb{C}$-linear and the bar, the star and the flat are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of a product carries a conjugation.**
+**Of the four conjugations the tessarine sign is $\mathbb{C}$-linear and the bar, the star and the flat are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of a product carries a conjugation.**
 
 The conjugations are defined in *The Two Involutions and the Group of Involutions*; here only their action on the scalars is recorded. For $\lambda\in\mathbb{C}$ and $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$:
 $$
 \overline{\lambda \breve Q}=\bar\lambda\,\overline{\breve Q},\qquad
-(\lambda \breve Q)^{\natural}=\lambda\,\breve Q^{\natural},\qquad
+(\lambda \breve Q)_{\mathrm{ts}}=\lambda\,\breve Q_{\mathrm{ts}},\qquad
 (\lambda \breve Q)^{*}=\bar\lambda\,\breve Q^{*},\qquad
 (\lambda \breve Q)^{\flat}=\bar\lambda\,\breve Q^{\flat}.
 $$
 
-**Proof.** The bar conjugates the two complex coordinates, and the conjugate of a product of complex numbers is the product of the conjugates, so it is antilinear; the natural sign negates the second coordinate and leaves the first, $(\lambda Q_{\blacktriangle})-(\lambda Q_{\blacktriangledown})j=\lambda(Q_{\blacktriangle}-jQ_{\blacktriangledown})$, so it is linear; the star is the composite of the bar and the natural sign and is antilinear as the composite of an antilinear and a linear map; and the flat is $-{}^{*}$, which is antilinear as well since $-1$ is real.
+**Proof.** The bar conjugates the two complex coordinates, and the conjugate of a product of complex numbers is the product of the conjugates, so it is antilinear; the tessarine sign negates the second coordinate and leaves the first, $(\lambda Q_{\blacktriangle})-(\lambda Q_{\blacktriangledown})j=\lambda(Q_{\blacktriangle}-jQ_{\blacktriangledown})$, so it is linear; the star is the composite of the bar and the tessarine sign and is antilinear as the composite of an antilinear and a linear map; and the flat is $-{}^{*}$, which is antilinear as well since $-1$ is real.
 
-**Corollary (which slot carries which conjugation).** A product whose first slot carries the natural sign and whose second slot carries the star,
+**Corollary (which slot carries which conjugation).** A product whose first slot carries the tessarine sign and whose second slot carries the star,
 $$
-\breve Q_{1}^{\natural}\breve Q_{2}\quad\text{and}\quad \breve Q_{1}^{\natural}\breve Q_{2}^{*},
+\breve Q_{1,\mathrm{ts}}\breve Q_{2}\quad\text{and}\quad \breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*},
 $$
 is $\mathbb{C}$-**linear in the first** variable and, for the star, $\mathbb{C}$-**antilinear in the second**; a product whose first slot carries the identity is $\mathbb{C}$-linear in the first variable. This is the definitional clause of *The Four Products, Their Forms and Their Algebraic Norms*, and it is the reason the two sesquilinear products are the ones carrying the star.
 
@@ -148,10 +148,10 @@ The map $J$ of §*The Complex Structure* is the other side of the same coin: it 
 
 **The conjugations of the next article cut the real space into fixed and anti-fixed spaces, and this article names them only.**
 
-The six fixed and anti-fixed spaces of the bar, the natural sign and the star are the **remarkable subspaces** of the space, and they are defined one to a section in *Introduction to the Remarkable Subspaces*, with the two decompositions they produce in *Decompositions Along the Remarkable Subspaces* and the table of all of them in *Comparison of the Remarkable Subspaces*. Three of them are read from the coordinates already fixed here:
+The six fixed and anti-fixed spaces of the bar, the tessarine sign and the star are the **remarkable subspaces** of the space, and they are defined one to a section in *Introduction to the Remarkable Subspaces*, with the two decompositions they produce in *Decompositions Along the Remarkable Subspaces* and the table of all of them in *Comparison of the Remarkable Subspaces*. Three of them are read from the coordinates already fixed here:
 
-- the fixed space of the **natural sign** is the **scalar line** $\mathbb{C}=\{A:A\in\mathbb{C}\}$, of real dimension two, spanned by $1,i$;
-- the anti-fixed space of the **natural sign** is the **$j$-line**, of real dimension two, spanned by $j,ij$;
+- the fixed space of the **tessarine sign** is the **scalar line** $\mathbb{C}=\{A:A\in\mathbb{C}\}$, of real dimension two, spanned by $1,i$;
+- the anti-fixed space of the **tessarine sign** is the **$j$-line**, of real dimension two, spanned by $j,ij$;
 - the fixed space of the **bar** is the **real subalgebra** $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}_{\mathrm{r}}$.
 
 **Remark (the algebra is commutative, so its ring centre is not a proper subspace).** Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its **ring centre is the whole algebra** and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a *central* subspace, this category reads the **scalar line**, and the difference is taken up in *Comparison of the Remarkable Subspaces*. The warning is stated here because it bears on every later use of the word *central*: in this category *central* names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.
@@ -164,7 +164,7 @@ J(\breve Q)=i\breve Q,\qquad J^{2}=-\mathrm{id},
 $$
 and the passage between them is the realification and the restriction of scalars, which double and halve the dimension. The multiplication by $j$ is a real-linear involution $S$, $S^{2}=+\mathrm{id}$, with the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ as fixed and anti-fixed space; and the multiplication by $ij$ is a second non-scalar square root of $-\mathrm{id}$ commuting with $J$.
 
-A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in which $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ and the space is the direct sum of the two complex idempotent lines. Of the four conjugations the **natural sign** is $\mathbb{C}$-linear and the **bar**, the **star** and the **flat** are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of each of the four general products carries a conjugation. The remarkable subspaces are named and not developed; the scalar line $\mathbb{C}$ plays in this category the role the centre $\mathbb{C}e_t$ plays in the biquaternion category, the algebra being commutative.
+A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in which $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ and the space is the direct sum of the two complex idempotent lines. Of the four conjugations the **tessarine sign** is $\mathbb{C}$-linear and the **bar**, the **star** and the **flat** are $\mathbb{C}$-antilinear, and this is the clause that decides which slot of each of the four general products carries a conjugation. The remarkable subspaces are named and not developed; the scalar line $\mathbb{C}$ plays in this category the role the centre $\mathbb{C}e_t$ plays in the biquaternion category, the algebra being commutative.
 
 ## Summary of Notation
 
@@ -180,13 +180,13 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 | $J_{ij}$ | the multiplication by $ij$, a non-scalar complex structure, $J_{ij}^{2}=-\mathrm{id}$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the idempotent basis, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |
 | $(Q_{+},Q_{-})$ | the idempotent coordinate pair |
-| linear / antilinear | the action of the natural sign against that of the bar, the star and the flat |
-| $\mathbb{C}$ | the scalar line, fixed space of the natural sign |
+| linear / antilinear | the action of the tessarine sign against that of the bar, the star and the flat |
+| $\mathbb{C}$ | the scalar line, fixed space of the tessarine sign |
 
 ## Further Reading
 
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the algebra, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), below this article, for the bar, the natural sign, the star and the flat and the group they generate.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), below this article, for the bar, the tessarine sign, the star and the flat and the group they generate.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the clause that decides which slot carries a conjugation.
 - [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
 - [Conventions in Mathematics](conventions-in-mathematics.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.

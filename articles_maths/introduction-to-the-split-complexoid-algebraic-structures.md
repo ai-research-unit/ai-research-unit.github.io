@@ -47,7 +47,7 @@ $$
 \langle Q_1,Q_2\rangle = Q_1Q_2, \qquad\qquad \langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2 ,
 $$
 
-named the **general plain bilinear form** and the **Hermitian form**; their **algebraic norms** are the values at the two equal arguments, $\langle Q_1\rangle = Q_1^2$ and $\langle Q_1\rangle_{*} = Q_1\bar Q_1 = \langle Q_1\rangle_{\natural}$.
+named the **general plain bilinear form** and the **Hermitian form**; their **algebraic norms** are the values at the two equal arguments, $\langle Q_1\rangle = Q_1^2$ and $\langle Q_1\rangle_{*} = Q_1\bar Q_1 = \langle Q_1\rangle_{\natural*}$.
 
 **Theorem.** $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ have the same Gram matrix $[1]$ in the basis $1$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, $\mathbb{D}$-valued and anisotropic, and $\langle Q_1\rangle_{*} = q_1^2 - q'^2_1$, real and indefinite. **Both are multiplicative**, and **neither is a definite real norm**: the $\mathbb{D}$-valued $\langle\cdot\rangle$ defines no order and the real $\langle\cdot\rangle_{*}$ is indefinite, while what is definite is the realified *form* $\operatorname{Re}B$, of signature $(2,0)$, against the indefinite realification $\operatorname{Re}H$ of signature $(1,1)$.
 
@@ -91,7 +91,7 @@ of real dimension one each; the idempotent basis gives the finer decomposition $
 
 The split-complexoid is the pair $(\mathbb{D},\bar\cdot)$ read over $\mathbb{R}$: the plane $\mathbb{D}_{\mathbb{R}}$ of real dimension two with the product structure $J$. From that pair alone the category reads off every structure the algebra carries beside its ring axioms. The carrier has two products — the ring product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$ — whose scalar parts are two forms, the symmetric $\langle\cdot,\cdot\rangle$ and the conjugate-symmetric $\langle\cdot,\cdot\rangle_{*}$, with the same Gram matrix $[1]$. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, $\mathbb{D}$-valued and anisotropic, and $\langle Q_1\rangle_{*} = q_1^2-q'^2_1$, real and indefinite; both are multiplicative, and neither is definite. The realified signatures are $(2,0)$ for $\langle\cdot,\cdot\rangle$, which is the Euclidean form, and $(1,1)$ for $\langle\cdot,\cdot\rangle_{*}$, and the split sign exchanges them with respect to the complex case.
 
-The sesquilinear product is non-associative and conjugate-commutative, with associator confined to the anti-self-adjoint part of the third slot, and its ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is a $J^{*}$-algebra. The conjugation splits the algebra into the real and the split imaginary axes, and its commutativity removes the Lie slot and collapses the involution lattice to a single edge. Two matrix models realise the algebra over $\mathbb{R}$, of determinants $\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{\natural}^2$. The comparison of the two products reads: they coincide on the real part of the second slot and oppose on the split imaginary part.
+The sesquilinear product is non-associative and conjugate-commutative, with associator confined to the anti-self-adjoint part of the third slot, and its ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is a $J^{*}$-algebra. The conjugation splits the algebra into the real and the split imaginary axes, and its commutativity removes the Lie slot and collapses the involution lattice to a single edge. Two matrix models realise the algebra over $\mathbb{R}$, of determinants $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{*}^2$. The comparison of the two products reads: they coincide on the real part of the second slot and oppose on the split imaginary part.
 
 | Structure | Object | Carrier | What it is |
 |---|---|---|---|
@@ -102,7 +102,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | Two algebraic norms | $\langle Q_1\rangle, \langle Q_1\rangle_{*}$ | $\mathbb{D}$ | $Q_1^2$ anisotropic; $q_1^2-q'^2_1$ indefinite |
 | Ternary product | $\{Q_1,Q_2,Q_3\}$ | $\mathbb{D}$ | $Q_1\bar Q_2Q_3$, a $J^{*}$-algebra |
 | Subspaces | $\mathbb{R}_{\mathbb{D}}, j\mathbb{R}_{\mathbb{D}}$ | $\mathbb{D}_{\mathbb{R}}$ | fixed and anti-fixed lines |
-| Matrix models | $\mathsf M_2, \mathsf M_4$ | $M_2(\mathbb{R}), M_4(\mathbb{R})$ | determinants $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural}^2$ |
+| Matrix models | $\mathsf M_2, \mathsf M_4$ | $M_2(\mathbb{R}), M_4(\mathbb{R})$ | determinants $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{*}^2$ |
 | Realification | $J$ | $\mathbb{D}_{\mathbb{R}}$ | multiplication by $j$, $J^2 = +\operatorname{id}$ |
 
 ## Summary of Notation
@@ -115,7 +115,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | $\Pi_1 = \tfrac12(1+j)$, $\Pi_2 = \tfrac12(1-j)$ | the idempotents, the eigenlines of $J$ |
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the two products |
 | $\langle Q_1,Q_2\rangle = Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$ | the two forms |
-| $\langle Q_1\rangle = Q_1^2$, $\langle Q_1\rangle_{*} = \langle Q_1\rangle_{\natural} = q_1^2-q'^2_1$ | the two algebraic norms |
+| $\langle Q_1\rangle = Q_1^2$, $\langle Q_1\rangle_{*} = \langle Q_1\rangle_{\natural*} = q_1^2-q'^2_1$ | the two algebraic norms |
 | $Q_1\star Q_2 = Q_1\bar Q_2$ | the sesquilinear product of the GPS |
 | $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ | the ternary product, $J^{*}$-algebra |
 | $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ | real and split imaginary axes |

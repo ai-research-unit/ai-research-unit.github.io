@@ -5,7 +5,7 @@
 
 The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the **Hermitian subspace** $\mathbb{M}_+$, the fixed space of Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that gives it a Jordan structure, the forms on it, its idempotents, the action of the four involutions and its intersections with the other subspaces. Its complement $\mathbb{M}_-$ under the Hermitian conjugation is treated in *Split-Biquaternion Anti-Hermitian Subspace*; the comparative tables are in *Split-Biquaternion Relations Between Subspaces* and *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra, and the split complex algebra $\mathbb{D}$ from the article on split complex algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra, and the split complex algebra $\mathbb{D}$ from the article on split complex algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.
 
 ## Definition and Basis
 
@@ -112,9 +112,9 @@ of signature $(4,0)$.
 
 This is the first structural difference from the biquaternion Hermitian subspace, where the split-biquaternion norm is the indefinite form $q_t^2 - \sum_k (q'_k)^2$ of signature $(1,3)$, because the central unit there satisfies $i^2 = -1$. In the split algebra the split-biquaternion norm is definite on the sector, and there is **no isotropic cone of the split-biquaternion norm**.
 
-### The Hermitian Form and Its Isotropic Cone
+### The Hermitian Norm and Its Isotropic Cone
 
-The indefinite form on the sector is the **Hermitian form**, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$. On $\mathbb{M}_+$ this is
+The indefinite form on the sector is the **Hermitian norm** $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$. On $\mathbb{M}_+$ this is
 
 $$
 \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = q_t^2 - \left((q'_x)^2 + (q'_y)^2 + (q'_z)^2\right),
@@ -213,12 +213,12 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 | $\mathbb{M}_+$ | Hermitian subspace, fixed space of ${}^{*}$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, fixed space of ${}^{\flat}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $\langle\tilde{Q}\rangle_{\natural} = q_t^2 + |\vec q|^2$ | Norm on $\mathbb{M}_+$, signature $(4,0)$ |
-| $\sum_\mu (q_\mu^2 - q'^2_\mu)$ | Scalar part of the Hermitian form, signature $(1,3)$ on $\mathbb{M}_+$ |
+| $\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Norm on $\mathbb{M}_+$, signature $(4,0)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized (Jordan) product |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1\times\vec q_2$ | Commutator, an element of $\mathbb{M}_-$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Image in $\mathbb{H} \oplus \mathbb{H}$; $(h,h^{\natural})$ on $\mathbb{M}_+$ |
-| $q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Isotropic cone of the Hermitian form |
+| $q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Isotropic cone of the Hermitian norm |
 | $SO(1,3)$ | Lorentz group acting on the Hermitian subspace |
 
 ## Further Reading

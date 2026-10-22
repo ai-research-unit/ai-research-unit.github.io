@@ -87,7 +87,7 @@ and the inverse is componentwise, $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$.
 
 **Proof.** The element $Q$ is a unit iff $\varphi(Q) = (Q_+,Q_-)$ is a unit of $\mathbb{R}\oplus\mathbb{R}$, and a pair is a unit iff both of its coordinates are nonzero.
 
-The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{D}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $Q_+$ and $Q_-$. The norm, the criterion $\langle Q\rangle_{\natural} \neq 0$ and the components are *Split-Complex Norm and Invertibility*, where the group of units is treated as a Lie group.
+The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{D}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $Q_+$ and $Q_-$. The norm, the criterion $\langle Q\rangle_{*} \neq 0$ and the components are *Split-Complex Norm and Invertibility*, where the group of units is treated as a Lie group.
 
 ## Reduced, Not a Field
 
@@ -138,10 +138,10 @@ $$
 the matrix of multiplication by $Q = q+jq'$ in the basis $\{1,j\}$: the first column is the coordinates of $Q \cdot 1 = Q$ and the second those of $Q \cdot j = q'+jq$. These are the matrices of **hyperbolic type**, symmetric with equal diagonal entries, and their determinant and trace are
 
 $$
-\det\mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
+\det\mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
 $$
 
-the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{\natural}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
+the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{*}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
 
 **Proposition (degeneracy).** The image $\mathsf{M}_2(\mathbb{D})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:
 
@@ -175,7 +175,7 @@ The consequences for the classes of element are that the positively defined clas
 | $\mathbb{R}\Pi_+$, $\mathbb{R}\Pi_-$ | The two idempotent lines, the only nontrivial ideals |
 | $\mathbb{D}^\times = \{Q_+ \neq 0, Q_- \neq 0\}$ | Group of units, $\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 | $\mathcal{N} = \{Q_+Q_- = 0\}$ | Null cone, the set of nonzero non-units |
-| $\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ | Regular matrix of $Q$, of determinant $\langle Q\rangle_{\natural}$ and trace $2q$ |
+| $\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ | Regular matrix of $Q$, of determinant $\langle Q\rangle_{*}$ and trace $2q$ |
 | $\dim_\mathbb{R}\mathbb{D} = 2$ | Dimension of the algebra over its base |
 
 ## Further Reading

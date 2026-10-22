@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
+This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, shows that no positive-definite form on the algebra is multiplicative, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
 
 The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
 
@@ -48,6 +48,36 @@ The multiplicativity of $\langle\cdot\rangle_{\natural}$ has an immediate conseq
 **Proposition.** The set $\{N > 0\}$ and the set $\{N < 0\}$ are each closed under multiplication, and the product of an element of $\{N>0\}$ with an element of $\{N<0\}$ has $N < 0$. The scalar line and the $\vec e_x$-direction have positive norm, while the $\vec e_y$- and $\vec e_z$-directions have negative norm.
 
 **Proof.** If $\langle\tilde q_1\rangle_{\natural}$ and $\langle\tilde q_2\rangle_{\natural}$ are both positive, then $\langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} > 0$, and similarly in the other cases. The signs of the basis elements are $\langle 1\rangle_{\natural} = \langle \vec e_x\rangle_{\natural} = +1$ and $\langle \vec e_y\rangle_{\natural} = \langle \vec e_z\rangle_{\natural} = -1$.
+
+### No Positive-Definite Multiplicative Form
+
+**Theorem.** No positive-definite quadratic form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative.
+
+**Proof.** The elements $1+\vec e_y$ and $1-\vec e_y$ are nonzero, and $(1+\vec e_y)(1-\vec e_y)=1-\vec e_y^2=0$. A multiplicative form $N$ would give $N(1+\vec e_y)N(1-\vec e_y)=N(0)=0$, so one of the two factors would vanish; positive definiteness forbids that on a nonzero element.
+
+**Remark.** The obstruction is the null cone and nothing else. A finite-dimensional real algebra carrying a positive-definite multiplicative quadratic form is a composition algebra, and a composition algebra has no zero divisors; the split-quaternions have a null cone, so no such form exists. The quaternion algebra is the contrast: its norm is positive definite and multiplicative at once, and it has no zero divisor.
+
+**What survives, and where.** The absence is not a topological loss. The Euclidean norm $|\tilde q|$ of *Split-Quaternion Analysis*, §*The Metric Structure*, is positive definite, induces the product topology of $\mathbb{R}^4$, and is submultiplicative up to the constant $\sqrt2$:
+
+$$
+|\tilde q_1\tilde q_2| \leq \sqrt2\,|\tilde q_1|\,|\tilde q_2|,
+$$
+
+with equality at $\tilde q_1=\tilde q_2=1+\vec e_y$. The algebra is therefore a normed algebra up to a constant, multiplication is continuous, inversion is continuous on the units, and the group of units is open. Since all norms on a finite-dimensional space give the same topology, the topology of $\mathbb{H}_{\mathrm{s}}$ is unaffected by the failure. What fails is the metric compatibility: no Riemannian structure on the algebra is multiplicative.
+
+Two consequences follow. First, the multiplicative scale exists only on the units, where $\sqrt{|\langle\tilde q\rangle_{\natural}|}$ is a homomorphism to $\mathbb{R}_{>0}$ and vanishes on the null cone; it is not a norm and is not defined on the whole algebra. Second, the norm-one set is $\mathrm{U}\cong\mathrm{SL}_2(\mathbb{R})$, non-compact with $\pi_1=\mathbb{Z}$, where the quaternion norm-one set is the compact and simply connected $Sp(1)\cong S^3$; the radial decomposition has the non-compact slice $S^1\times\mathbb{R}^2$ and its boundary is the null cone (*Split-Quaternion Topology*).
+
+**The division of labour.** The two norms share the topology and carry different structures:
+
+| Structure | Split-quaternion norm $\langle\tilde q\rangle_{\natural}$ | Euclidean norm $\lvert\tilde q\rvert$ |
+|---|---|---|
+| Definiteness | indefinite, signature $(2,2)$ | positive definite |
+| Compatibility with the product | multiplicative | submultiplicative up to $\sqrt2$ |
+| Vanishing set | the null cone | $\{0\}$ |
+| Unit-level set | $\mathrm{SL}_2(\mathbb{R})$, non-compact, $\pi_1=\mathbb{Z}$ | $S^3$, compact and simply connected |
+| Carries | the invertibility criterion, the sign classes, the modulus | the topology, the metric, completeness |
+
+The split-quaternion norm decides invertibility and the Euclidean norm decides topology. No single form does both on this algebra.
 
 ## Isotropy
 
@@ -233,7 +263,7 @@ The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 
 
 A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.
 
-The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
+No positive-definite form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
 ## Summary of Notation
 
@@ -242,6 +272,7 @@ The classification of the elements is a dichotomy plus the zero element: inverti
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the split-quaternion norm, signature $(2,2)$ | this article |
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | this article |
+| $\lvert\tilde q\rvert$ | the Euclidean norm, submultiplicative up to $\sqrt2$ | *Split-Quaternion Analysis* |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $\langle\tilde q\rangle_{\natural}=0$, and its span | this article |
 | $\mathbb{H}_{\mathrm{s}}^{\times}$ | the group of units $\{N \neq 0\}$ | this article |
 | $\mathrm{U} = \{N = 1\}$ | the unit split-quaternions, $\cong \mathrm{SL}_2(\mathbb{R})$ | this article |

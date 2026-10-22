@@ -237,7 +237,7 @@ The Fueter operator $\bar\partial=\partial/\partial Q_t+\vec e_x\partial/\partia
 |---|---|
 | $\mathbb{H}$ | Real quaternions, basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 | $q=q_t+\vec q$ | Quaternionic variable; $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ |
-| $q^{\natural}$, $N(q)=|q|^2$ | Quaternionic conjugation and norm |
+| $q^{\natural}$, $\langle q\rangle_{\natural}=|q|^2$ | Quaternionic conjugation and norm |
 | $\bar\partial=\partial/\partial Q_t+\sum_{\mu\in\{x,y,z\}}\vec e_\mu\,\partial/\partial Q_\mu$ | Fueter operator |
 | $\partial=\partial/\partial Q_t-\sum_{\mu\in\{x,y,z\}}\vec e_\mu\,\partial/\partial Q_\mu$ | Conjugate; $\bar\partial\partial=\partial\bar\partial=\Delta$ |
 | $\sigma(\xi)$, $\bar\sigma(\xi)$ | Symbol and conjugate symbol of $\bar\partial$ |

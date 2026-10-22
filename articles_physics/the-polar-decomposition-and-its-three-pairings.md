@@ -1,4 +1,4 @@
-# __The Polar Representation and Its Three Pairings__
+# __The Polar Decomposition and Its Three Pairings__
 
 ## Introduction
 
@@ -13,22 +13,22 @@ The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the al
 
 The article reads the word and its three two-factor regroupings. The **quaternion pairing** puts the scale and the rotor on one side and the phase and the boost on the other; the **Hamilton root pairing** puts the scale and the phase on one side and the boost and the rotor on the other; the **Cartan Hermitian pairing** puts the scale and the boost on one side and the phase and the rotor on the other. The three are the three ways of splitting four ordered factors into two groups, and each has a physical reading: a real-quaternion modulus, a complex axis-angle, and an amplitude times a unitary.
 
-The mathematics is owned by *The Polar Element Representation of Biquaternions*, *The Polar Representation and Its Three Pairings*, *The Quaternion Pairing*, *The Hamilton Root Pairing*, *The Cartan Hermitian Pairing* and *The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces*. The physics is the reading given below, with its boundaries stated at the end.
+The mathematics is owned by *The Polar Decomposition of Biquaternions*, *The Polar Decomposition and Its Three Pairings*, *The Quaternion Pairing*, *The Hamilton Root Pairing*, *The Cartan Hermitian Pairing* and *The Action of the Polar Decomposition on the Hermitian and Anti-Hermitian Subspaces*. The physics is the reading given below, with its boundaries stated at the end.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four factors, their ranges, their dimensions and their stable subspaces | [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html) |
-| The theorem, the uniqueness and the domain off the null cone | [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html) |
-| The five-step procedure, the two invariants and the worked examples | [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html) |
-| The quaternion pairing and its domain | [The Quaternion Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html) |
-| The Hamilton root pairing and its domain | [The Hamilton Root Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html) |
-| The Cartan Hermitian pairing and the matrix polar decomposition | [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html) |
-| The action of the four factors on the two sectors | [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html) |
-| The six remarkable subspaces and the factor that preserves each | [The Polar Element Representation and Remarkable Subspaces](../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html) |
-| The two one-sided operators under the polar word | [One-Sided Operator Under the Polar Representation](../articles_maths/one-sided-operator-under-the-polar-representation.html) |
-| The two-sided operator and its kernel | [Two-Sided Operator Under the Polar Representation](../articles_maths/two-sided-operator-under-the-polar-representation.html) |
+| The four factors, their ranges, their dimensions and their stable subspaces | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
+| The theorem, the uniqueness and the domain off the null cone | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
+| The five-step procedure, the two invariants and the worked examples | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
+| The quaternion pairing and its domain | [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html) |
+| The Hamilton root pairing and its domain | [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) |
+| The Cartan Hermitian pairing and the matrix polar decomposition | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
+| The action of the four factors on the two sectors | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
+| The six remarkable subspaces and the factor that preserves each | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
+| The two one-sided operators under the polar word | [One-Sided Operator Under the Polar Decomposition](../articles_maths/one-sided-operator-under-the-polar-decomposition.html) |
+| The two-sided operator and its kernel | [Two-Sided Operator Under the Polar Decomposition](../articles_maths/two-sided-operator-under-the-polar-decomposition.html) |
 
 ## The Four Factors
 
@@ -190,7 +190,7 @@ The factor-of-two has a second face. A one-sided multiplication by a real scale 
 
 ## A Four-Vector Is Bilinear, a Spinor Is Linear
 
-The polar element acts on a four-vector and on a spinor by two different laws. A four-vector transforms by the congruence
+The unit factor acts on a four-vector and on a spinor by two different laws. A four-vector transforms by the congruence
 
 $$
 X\longmapsto \tilde U X\tilde U^{*},
@@ -269,11 +269,11 @@ The three pairings are regroupings, not new decompositions. They add no informat
 
 ## Further Reading
 
-- [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html), for the four factors, the theorem and the uniqueness.
-- [The Quaternion Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html), for the real quaternion modulus and the angle.
-- [The Hamilton Root Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html), for the complex axis-angle.
-- [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html), for the amplitude–phase split and the matrix polar decomposition.
-- [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html), for the sector action and the cross-term signs.
-- [The Polar Element Representation and Remarkable Subspaces](../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html), for the preservation table.
+- [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the theorem and the uniqueness.
+- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the real quaternion modulus and the angle.
+- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex axis-angle.
+- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the amplitude–phase split and the matrix polar decomposition.
+- [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the sector action and the cross-term signs.
+- [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the preservation table.
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the pictures in which the polar factors act.
 - [The Operators: One-Sided, Two-Sided, Sandwich](the-operators-one-sided-two-sided-sandwich.html), for the one-sided and two-sided operators of the word.

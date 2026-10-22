@@ -97,7 +97,7 @@ The proof is the model of the passage from the finite-dimensional to the infinit
 
 (iii) **Additivity.** If $\Omega_1,\Omega_2$ are disjoint open subsets of $\Omega$ with $p \notin(I-T)(\overline\Omega\setminus(\Omega_1\cup\Omega_2))$, then $\deg(I-T,\Omega,p)=\deg(I-T,\Omega_1,p)+\deg(I-T,\Omega_2,p)$.
 
-(iv) **Homotopy invariance.** If $H:[0,1]\times\overline\Omega\to X$ is continuous, $\langle t,\cdot\rangle_{*}$ compact for every $t$, and $p \notin(I-\langle t,\cdot\rangle_{*})(\partial\Omega)$ for every $t$, then $\deg(I-\langle t,\cdot\rangle_{*},\Omega,p)$ is independent of $t$.
+(iv) **Homotopy invariance.** If $H:[0,1]\times\overline\Omega\to X$ is continuous, $H(t,\cdot)$ compact for every $t$, and $p \notin(I-H(t,\cdot))(\partial\Omega)$ for every $t$, then $\deg(I-H(t,\cdot),\Omega,p)$ is independent of $t$.
 
 (v) **Excision.** If $\Omega_0 \subseteq\Omega$ is open and $p \notin(I-T)(\overline\Omega\setminus\Omega_0)$, then $\deg(I-T,\Omega,p)=\deg(I-T,\Omega_0,p)$.
 
@@ -107,9 +107,9 @@ The proof is the model of the passage from the finite-dimensional to the infinit
 
 ### The Continuation Theorem and Schauder's Consequence
 
-**Theorem (Leray–Schauder continuation).** Let $H:[0,1]\times\overline\Omega\to X$ be a compact homotopy with $\langle0,\cdot\rangle_{*}=0$ and with $x \neq H(t,x)$ for all $x \in\partial\Omega$ and $t \in[0,1]$. Then $\langle1,\cdot\rangle_{*}$ has a fixed point in $\Omega$.
+**Theorem (Leray–Schauder continuation).** Let $H:[0,1]\times\overline\Omega\to X$ be a compact homotopy with $H(0,\cdot)=0$ and with $x \neq H(t,x)$ for all $x \in\partial\Omega$ and $t \in[0,1]$. Then $H(1,\cdot)$ has a fixed point in $\Omega$.
 
-*Proof.* By homotopy invariance and normalisation, $\deg(I-\langle1,\cdot\rangle_{*},\Omega,0)=\deg(I,\Omega,0)=1$, and the solvability property gives a fixed point.
+*Proof.* By homotopy invariance and normalisation, $\deg(I-H(1,\cdot),\Omega,0)=\deg(I,\Omega,0)=1$, and the solvability property gives a fixed point.
 
 The theorem is the standard tool for existence in nonlinear problems: one embeds the given equation in a one-parameter family joining it to the trivial equation, proves the a priori bound that keeps the fixed points away from the boundary, and concludes.
 
@@ -171,7 +171,7 @@ $$
 
 (iii) **Additivity.** If $\Omega_1,\Omega_2$ are disjoint open subsets of $\Omega$ and $T$ has no fixed point in $\overline\Omega\setminus(\Omega_1\cup\Omega_2)$, then $i(T,\Omega)=i(T,\Omega_1)+i(T,\Omega_2)$.
 
-(iv) **Homotopy invariance.** If $H:[0,1]\times\overline\Omega\to X$ is a compact homotopy with no fixed point of $\langle t,\cdot\rangle_{*}$ on $\partial\Omega$ for any $t$, then $i(\langle t,\cdot\rangle_{*},\Omega)$ is independent of $t$.
+(iv) **Homotopy invariance.** If $H:[0,1]\times\overline\Omega\to X$ is a compact homotopy with no fixed point of $H(t,\cdot)$ on $\partial\Omega$ for any $t$, then $i(H(t,\cdot),\Omega)$ is independent of $t$.
 
 (v) **Excision.** The index depends only on the values of $T$ on a neighbourhood of the set of its fixed points in $\Omega$.
 
@@ -207,7 +207,7 @@ is continuous and compact on $C[0,1]$ by the Ascoli–Arzelà theorem, and if $\
 
 The analytic fixed point theory solves $x=Tx$ by two devices: completeness together with contractivity, and compactness of the map. The **contraction principle** states that a contraction of a complete metric space has a unique fixed point, with the iterates converging geometrically at the rate $d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}d(x,Tx)$; completeness is essential, and the local, Edelstein and Rakotch forms weaken the hypotheses without abandoning the iteration. The **Schauder projection** replaces a compact set by a finite-dimensional approximant at distance $\epsilon$, and the **Schauder theorem** applies the Brouwer fixed point theorem to the projected maps and passes to the limit, giving a fixed point for every continuous compact self-map of a nonempty closed bounded convex set. From it follow the fixed point theorem for continuous maps of compact convex sets and, with an a priori bound, for maps of unbounded convex sets with bounded image.
 
-The **Leray–Schauder degree** $\deg(I-T,\Omega,p)$ is the integer defined for a bounded open $\Omega$ and a compact $T$ with $p$ outside $(I-T)(\partial\Omega)$ by finite-dimensional approximation, and it satisfies normalisation, solvability, additivity, homotopy invariance and excision; the solution of $x-Tx=p$ in $\Omega$ is guaranteed by a nonzero degree. The **continuation theorem** deduces a fixed point of $\langle1,\cdot\rangle_{*}$ from the absence of fixed points of the homotopy on the boundary and from $\langle0,\cdot\rangle_{*}=0$, and **Schaefer's theorem** gives a fixed point of a compact map whose homotopy fixed-point set is bounded. **Krasnoselskii's theorem** solves $x=Sx+Kx$ for a contraction $S$ and a compact $K$ on a closed bounded convex set by applying Schauder to $(I-S)^{-1}K$, and the boundary conditions of **Rothe** and **Altman** are further criteria for the same conclusion. The **measures of noncompactness** and the **Darbo–Sadovskii theorem** extend the theory to condensing maps, which need not be compact. The **fixed point index** $i(T,\Omega)=\deg(I-T,\Omega,0)$ satisfies the same properties, and the index of an isolated nondegenerate fixed point is computed from $I-T'(x_0)$; sums of local indices give the global index and hence multiplicity statements. The topological degree in finite dimensions, the Brouwer fixed point theorem and the Lefschetz fixed point theorem are the subject of *Degree Theory and the Brouwer Fixed Point Theorem*; the present article is the analytic theory that uses them.
+The **Leray–Schauder degree** $\deg(I-T,\Omega,p)$ is the integer defined for a bounded open $\Omega$ and a compact $T$ with $p$ outside $(I-T)(\partial\Omega)$ by finite-dimensional approximation, and it satisfies normalisation, solvability, additivity, homotopy invariance and excision; the solution of $x-Tx=p$ in $\Omega$ is guaranteed by a nonzero degree. The **continuation theorem** deduces a fixed point of $H(1,\cdot)$ from the absence of fixed points of the homotopy on the boundary and from $H(0,\cdot)=0$, and **Schaefer's theorem** gives a fixed point of a compact map whose homotopy fixed-point set is bounded. **Krasnoselskii's theorem** solves $x=Sx+Kx$ for a contraction $S$ and a compact $K$ on a closed bounded convex set by applying Schauder to $(I-S)^{-1}K$, and the boundary conditions of **Rothe** and **Altman** are further criteria for the same conclusion. The **measures of noncompactness** and the **Darbo–Sadovskii theorem** extend the theory to condensing maps, which need not be compact. The **fixed point index** $i(T,\Omega)=\deg(I-T,\Omega,0)$ satisfies the same properties, and the index of an isolated nondegenerate fixed point is computed from $I-T'(x_0)$; sums of local indices give the global index and hence multiplicity statements. The topological degree in finite dimensions, the Brouwer fixed point theorem and the Lefschetz fixed point theorem are the subject of *Degree Theory and the Brouwer Fixed Point Theorem*; the present article is the analytic theory that uses them.
 
 ## Summary of Notation
 

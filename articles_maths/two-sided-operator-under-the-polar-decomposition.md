@@ -1,4 +1,4 @@
-# __Two-Sided Operator Under the Polar Representation__
+# __Two-Sided Operator Under the Polar Decomposition__
 
 ## Introduction
 
@@ -10,7 +10,7 @@ $$
 
 the two-sided operator whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of units it is that action composed with a dilation.
 
-The polar element representation writes an element of non-vanishing norm as four factors,
+The polar decomposition writes an element of non-vanishing norm as four factors,
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -20,7 +20,7 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator, and what becomes of its exponent?** The answer is a table with one row per factor, and the row that matters is the second. The phase does nothing.
 
-The article is the vector-side companion of *The Twisted Spinor Operator Representation of Biquaternions*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator Under the Polar Representation*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$.
+The article is the vector-side companion of *The Twisted Spinor Operator Representation of Biquaternions*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator Under the Polar Decomposition*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$.
 
 The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Angle Bookkeeping* collects the exponents and states the doubling rule. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Null Cone* records the degenerate case. The article closes with the summary, the notation and the readings.
 
@@ -45,10 +45,10 @@ On $\mathbb{M}_-$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}
 The **norm** of the polar series is the complex number
 
 $$
-N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=N(\tilde Q)\,e_t ,
+\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\,e_t ,
 $$
 
-and the **domain** of the polar word is $N(\tilde Q)\neq0$. The word is
+and the **domain** of the polar word is $\langle\tilde Q\rangle_{\natural}\neq0$. The word is
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
@@ -57,13 +57,13 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{N(\tilde Q)}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg N(\tilde Q)$. The factors satisfy
+with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
-\Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad N(\tilde U_{\mathrm b})=N(\tilde u_{\mathrm r})=1 .
+\Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$
 
-The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$.
+The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
 
 The sandwich is written $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ throughout. It uses the Hermitian conjugate in the right slot and never the inverse; the two coincide only where $\tilde Q$ is unitary.
 
@@ -95,7 +95,7 @@ The preservation of the two sectors is the structural reason the action splits i
 
 ### The Closed Form
 
-**Theorem (the sandwich of the polar word).** Let $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $N(\tilde Q)\neq0$. Then
+**Theorem (the sandwich of the polar word).** Let $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then
 
 $$
 \Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}},
@@ -147,7 +147,7 @@ $$
 On $\mathbb{M}_-$ and on $\mathbb{M}_+$ alike, every coordinate is multiplied by $r^{2}$: $a\mapsto r^{2}a$ and $\vec b\mapsto r^{2}\vec b$. The scale is a dilation of ratio $r^{2}$ of the whole algebra, and the only factor that changes the norm of the argument,
 
 $$
-N\bigl(\Theta_r(\tilde X)\bigr)=r^{4}N(\tilde X).
+\langle\Theta_r(\tilde X)\rangle_{\natural}=r^{4}\langle \tilde X\rangle_{\natural}.
 $$
 
 ### The Exponent
@@ -202,7 +202,7 @@ On the unit circle $|\lambda|=1$ the two sandwiches are equal, so the whole $U(1
 
 **Third, the phase is absent from this action but not from the algebra.** It reappears in three places, and the list is the reason the polar word needs it:
 
-- the norm, $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$;
+- the norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$;
 - the determinant, $\det\mathsf M_2(\tilde Q)=\Rho^{2}=r^{2}\exp(2i\alpha)$;
 - the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\alpha)$, the twist $\chi(\Rho)=\Rho$ of *The Twisted Spinor Operator Representation of Biquaternions*.
 
@@ -229,7 +229,7 @@ $$
 It is Hermitian and of norm one,
 
 $$
-\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad N(\tilde U_{\mathrm b})=1,
+\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=1,
 $$
 
 and its square and inverse are
@@ -317,7 +317,7 @@ $$
 It is a real quaternion, of norm one, and unitary,
 
 $$
-\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad N(\tilde u_{\mathrm r})=1 .
+\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$
 
 Unlike the boost, the rotor is both norm-one and unitary, and its right slot is therefore the inverse.
@@ -413,7 +413,7 @@ acting on $\mathbb{M}_-$ by a dilation of ratio $r^{2}$ composed with a proper o
 
 **(c)** On the modulus-one slice $r=1$, the image is $SO^{+}(1,3)$ and the kernel is $U(1)$.
 
-**(d)** On the norm-one slice $N=1$, the image is $SO^{+}(1,3)$ and the kernel is $\{\pm e_t\}$; the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$.
+**(d)** On the norm-one slice $\langle\tilde Q\rangle_{\natural}=1$, the image is $SO^{+}(1,3)$ and the kernel is $\{\pm e_t\}$; the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$.
 
 *Proof.* (a) If $\Theta_{\tilde Q}=\mathrm{id}$, then $\tilde Q\tilde Q^{*}=e_t$ by evaluating at $e_t$, so $\tilde Q^{*}=\tilde Q^{-1}$ and $\tilde Q\tilde X\tilde Q^{-1}=\tilde X$ for every $\tilde X$. Hence $\tilde Q$ is central, $\tilde Q=\lambda e_t$, and $\lvert\lambda\rvert=1$. Conversely, a central $\lambda e_t$ with $\lvert\lambda\rvert=1$ gives the identity, by the computation of §*The Central Phase*.
 
@@ -425,7 +425,7 @@ $$
 
 (c) At $r=1$ the element is $\exp(i\alpha)U$ with $U\in SL(2,\mathbb{C})$, the pair unique up to $(\alpha,U)\mapsto(\alpha+\pi,-U)$. The kernel is still $U(1)$, and the quotient is $SO^{+}(1,3)$.
 
-(d) At $N=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{M}_-$ is $\{\pm e_t\}$.
+(d) At $\langle\tilde Q\rangle_{\natural}=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{M}_-$ is $\{\pm e_t\}$.
 
 **Corollary (the isometry slice).** The sandwich is an isometry of the Lorentzian norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,
 
@@ -439,7 +439,7 @@ so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type 
 
 ## The Null Cone
 
-On the null cone $N(\tilde Q)=0$ the polar word does not exist, but the sandwich does. If $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The sandwich therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,
+On the null cone $\langle\tilde Q\rangle_{\natural}=0$ the polar word does not exist, but the sandwich does. If $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The sandwich therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,
 
 $$
 \mathsf M_2(\tilde Q)\,X\,\mathsf M_2(\tilde Q)^{*}
@@ -475,8 +475,8 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 | $\natural$, $\bar\cdot$ | the quaternion and coefficient conjugations |
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
 | $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian sandwich |
-| $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm of the polar series |
-| $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $N$ |
+| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm of the polar series |
+| $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
 | $P=\exp(i\alpha)$ | the central phase factor |
 | $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
@@ -487,16 +487,16 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 | $G_\pm$ | the matrices of the norm on the two sectors, $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+$ |
 | $CO^{+}(1,3)$ | the linear conformal Lorentz group, the image of the sandwich |
 | $U(1)$ | the kernel of the sandwich, the central unit circle |
-| $N=1$ | the norm-one slice, $SL(2,\mathbb{C})$ |
+| $\langle\tilde Q\rangle_{\natural}=1$ | the norm-one slice, $SL(2,\mathbb{C})$ |
 
 ## Further Reading
 
-- [One-Sided Operator Under the Polar Representation](one-sided-operator-under-the-polar-representation.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
-- [The Polar Element Representation of Biquaternions](the-polar-element-representation-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
-- [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html), for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
+- [One-Sided Operator Under the Polar Decomposition](one-sided-operator-under-the-polar-decomposition.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
+- [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus, the branch and the domain.
+- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
 - [The Twisted Spinor Operator Representation of Biquaternions](the-twisted-spinor-operator-representation-of-biquaternions.html), for the same word on the spinor module, where the phase is the twist and all four factors are visible.
-- [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html), for the Hermitian positive and unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
-- [The Quaternion Pairing of the Polar Element Representation of Biquaternions](the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html) and [The Hamilton Root Pairing of the Polar Element Representation of Biquaternions](the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html), for the two partial two-factor groupings.
+- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
+- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html) and [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the two partial two-factor groupings.
 - [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), for the eigenvalues $\lambda_i\bar\lambda_j$ of the sandwich and the spectral proof of the phase cancellation.
 - [The Four-Vector Operator Representation of Biquaternions](the-four-vector-operator-representation-of-biquaternions.html), for the sandwich written in the four complex coefficients and its degenerate image on the cone.
 - [Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint](completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the sandwich as a completely positive map and its place among the two-sided operators.

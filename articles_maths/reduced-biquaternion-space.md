@@ -144,7 +144,7 @@ The space stands in a family, and the comparisons are read from *Conventions in 
 - The **biquaternions** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ replace the hyperbolic unit $j$ by three quaternion units, so the space is four-dimensional over $\mathbb{C}$ and **non-commutative**; the reduced biquaternion algebra is the commutative two-parameter system obtained when the three quaternion units collapse to the single hyperbolic unit $j$.
 - The **split-biquaternions** $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ replace the complex coefficients by split-complex ones, so the space is four-dimensional over $\mathbb{D}$; the reduced biquaternion algebra is its commutative companion, with $\mathbb{H}$ replaced by $\mathbb{C}$.
 
-The algebra is associative and commutative throughout; it is **not** the algebra of a division structure, because of the two idempotent lines, and it is **not** the algebra of a quadratic space with a unique conjugation, because it carries two commuting conjugations, the bar and the natural sign (*The Two Involutions and the Group of Involutions*).
+The algebra is associative and commutative throughout; it is **not** the algebra of a division structure, because of the two idempotent lines, and it is **not** the algebra of a quadratic space with a unique conjugation, because it carries two commuting conjugations, the bar and the tessarine sign (*The Two Involutions and the Group of Involutions*).
 
 ### The Names
 
@@ -190,7 +190,7 @@ The algebra is the complexification of the split-complex numbers $\mathbb{D}$ an
 
 - [Conventions in Mathematics](conventions-in-mathematics.html), §*The Elements and their Coefficients*, for the glyph $\mathbb{B}_{\mathrm{r}}$, the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and the idempotents $\Pi_{\pm}$.
 - [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), below this article in this category, for the two readings of the space and the change of scalars.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), below this article, for the bar, the natural sign, the star and the flat.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), below this article, for the bar, the tessarine sign, the star and the flat.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the forms and norms they carry.
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the multiplication read as an algebra.
 - [Split-Complex Algebra](split-complex-algebra.html), for the real companion $\mathbb{D}$, the same algebra over $\mathbb{R}$.

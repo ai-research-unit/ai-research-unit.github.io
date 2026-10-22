@@ -184,15 +184,15 @@ The spectrum of a split biquaternion is governed by its two quaternion halves. T
 | $\tilde{Q} = \tilde{Q}_+\tilde\Pi_1 + \tilde{Q}_-\tilde\Pi_2$ | Idempotent decomposition into the two quaternion halves |
 | $L_{\tilde{Q}}$ | Left multiplication operator, block diagonal in the halves |
 | $p_{\tilde{Q}}(\lambda)$ | Characteristic polynomial of $L_{\tilde{Q}}$ |
-| $\sigma(\tilde{Q})$ | Spectrum over $\mathbb{C}$: the four values $q_t^\pm \pm i|\vec Q_\pm|$ |
+| $\sigma(\tilde{Q})$ | Spectrum over $\mathbb{C}$: the four values $q_t^\pm \pm i\lvert\vec Q_\pm\rvert$ |
 | $\sigma_L, \sigma_R$ | Left and right spectra with quaternion scalars |
 | $[\tilde{Q}_\pm]$ | Conjugacy class $\{v^{-1}\tilde{Q}_\pm v : v \in \mathbb{H}^\times\}$ |
 | $\sigma_S$ | S-spectrum $[\tilde{Q}_+]\cup[\tilde{Q}_-]$ |
 | $T(\tilde{Q}) = (2q_t^+,2q_t^-)$ | Reduced trace, $\mathbb{D}$-valued |
-| $D(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = (|\tilde{Q}_+|^2,|\tilde{Q}_-|^2)$ | Reduced norm (determinant), $\mathbb{D}$-valued |
+| $D(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = (\lvert\tilde{Q}_+\rvert^2,\lvert\tilde{Q}_-\rvert^2)$ | Reduced norm (determinant), $\mathbb{D}$-valued |
 | $E_\lambda$ | Left eigenspace in $\mathbb{H}^2$, stable under right multiplication by $\mathbb{H}$ |
 | $R(\lambda) = (\tilde{Q}-\lambda e_t)^{-1}$ | Resolvent |
-| $\rho(\tilde{Q}) = \max(|\tilde{Q}_+|,|\tilde{Q}_-|)$ | Spectral radius |
+| $\rho(\tilde{Q}) = \max(\lvert\tilde{Q}_+\rvert,\lvert\tilde{Q}_-\rvert)$ | Spectral radius |
 | $\mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor locus, where $0 \in \sigma(\tilde{Q})$ |
 
 ## Further Reading

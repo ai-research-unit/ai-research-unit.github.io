@@ -5,16 +5,16 @@
 
 The **versors** of the complex numbers are the units of the definite algebraic norm, the elements of norm one, and they form the unit circle $\mathrm{U}(1)$. They are at once the group of linear maps preserving the definite form, which is the rotation group of the plane, and the spin group of the definite space, and the square of the algebra's own product is the two-to-one cover that constitutes the spin structure. This article defines the versors, reads the group they form, records the identification with the group of form-preserving maps, establishes the two-to-one cover and the halving of the parameter that goes with it, and locates the group among the pin and spin groups of the algebra and among the versor groups of the ladder.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\lvert Q_1\rvert^{2}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
-**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$ with real $q_1,q'_1,q_2,q'_2$, and conjugation is $\bar Q_1=q_1-iq'_1$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complexoid Subspaces*, *Conventions in Mathematics*). The definite form is the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, with diagonal $\langle Q_1\rangle_{*}=\lvert Q_1\rvert^{2}$; the brackets of the four general forms are reserved for the forms, so elements are written $Q_1$ and $Q_2$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*).
+**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$ with real $q_1,q'_1,q_2,q'_2$, and conjugation is $\bar Q_1=q_1-iq'_1$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complexoid Subspaces*, *Conventions in Mathematics*). The definite form is the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, with diagonal $\langle Q_1\rangle_{*}=Q_1\bar Q_1$; the brackets of the four general forms are reserved for the forms, so elements are written $Q_1$ and $Q_2$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*).
 
 ## The Versors and Their Group
 
 **Definition.** A **versor** of the complex numbers is a unit of the definite algebraic norm,
 
 $$
-\mathrm{U}(1)=\{\,u\in\mathbb{C}:H(u)=\lvert u\rvert^{2}=1\,\},
+\mathrm{U}(1)=\{\,u\in\mathbb{C}:\langle u\rangle_{*}=1\,\},
 $$
 
 the set of elements of norm one.
@@ -127,7 +127,7 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the circle with 
 | Symbol | Meaning |
 |---|---|
 | $Q_1=q_1+iq'_1$, $Q_2=q_2+iq'_2$ | elements of $\mathbb{C}$, with $q_1,q'_1,q_2,q'_2\in\mathbb{R}$ |
-| $H(Q_1,Q_2)=Q_1\bar Q_2$ | the definite Hermitian form; diagonal $\lvert Q_1\rvert^{2}$ |
+| $H(Q_1,Q_2)=Q_1\bar Q_2$ | the definite Hermitian form; diagonal $\langle Q_1\rangle_{*}$ |
 | $B(Q_1,Q_2)=Q_1Q_2$ | the plain bilinear form; diagonal $Q_1^{2}$ |
 | $\mathrm{U}(1)=\{u:\lvert u\rvert^{2}=1\}$ | the versors of the complex numbers, the unit circle |
 | $R_{u}(Q_1)=uQ_1$ | the multiplication action of a versor; preserves $H$ |

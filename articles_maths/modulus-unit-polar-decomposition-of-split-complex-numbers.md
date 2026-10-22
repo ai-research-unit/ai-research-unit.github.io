@@ -5,7 +5,7 @@
 This article treats the **modulus–unit polar decomposition** of a split-complex number: the writing
 
 $$
-Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{D}, \quad \lvert N(u)\rvert = 1,
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{D}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$
 
 with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of *Modulus–Unit Polar Decomposition of Complex Numbers*.
@@ -23,18 +23,18 @@ The conventions and the symbols are those of *Split-Complex Algebra*, *Split-Com
 Let $Q = q + j q'$ with $q, q' \in \mathbb{R}$. The **norm** is
 
 $$
-N(Q) = \langle Q\rangle_{\natural} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'^2 .
+\langle Q\rangle_{*} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'^2 .
 $$
 
 It is a quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra,
 
 $$
-N(QB) = N(Q)N(B),
+\langle QB\rangle_{*} = \langle Q\rangle_{*}\langle B\rangle_{*},
 $$
 
 and indefinite. Its sign partitions the algebra into three regions, which are the three regions of the Lorentzian plane.
 
-| region | condition | sign of $N(Q)$ | contains |
+| region | condition | sign of $\langle Q\rangle_{*}$ | contains |
 |---|---|---|---|
 | timelike | $\lvert q\rvert > \lvert q'\rvert$ | positive | the two sectors through $\pm1$ |
 | null | $\lvert q\rvert = \lvert q'\rvert$ | zero | the null cone, the zero-divisor set |
@@ -42,10 +42,10 @@ and indefinite. Its sign partitions the algebra into three regions, which are th
 
 The **null cone** is the pair of lines $q = \pm q'$, equivalently $\mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$ with the idempotents $\Pi_\pm = \tfrac12(1\pm j)$. Away from the origin it is exactly the zero-divisor set: a nonzero element of zero norm has no inverse. The null cone is the boundary of the polar decomposition.
 
-On the invertible set $N(Q)\neq0$ the **modulus** is
+On the invertible set $\langle Q\rangle_{*}\neq0$ the **modulus** is
 
 $$
-r = \sqrt{\lvert N(Q)\rvert} = \sqrt{\lvert q^2-q'^2\rvert} > 0 .
+r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert q^2-q'^2\rvert} > 0 .
 $$
 
 It is a positive square root of a non-negative real, with no sign or branch choice. It is multiplicative, because the norm is,
@@ -54,7 +54,7 @@ $$
 r(QB) = r(Q)r(B).
 $$
 
-In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$, with $Q_\pm = q\pm q'$, the norm is the product $N(Q) = Q_+Q_-$, so the modulus is the geometric mean
+In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$, with $Q_\pm = q\pm q'$, the norm is the product $\langle Q\rangle_{*} = Q_+Q_-$, so the modulus is the geometric mean
 
 $$
 r = \sqrt{\lvert Q_+Q_-\rvert}.
@@ -67,26 +67,26 @@ The modulus vanishes on the null cone, so it is not a norm: $r(1+j)=0$ while $1+
 The **unit factor** of an invertible element is
 
 $$
-u = \frac{Q}{r}, \qquad N(u) = \frac{N(Q)}{r^2} = \operatorname{sign}N(Q) \in \{\pm1\}.
+u = \frac{Q}{r}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{r^2} = \operatorname{sign}\langle Q\rangle_{*} \in \{\pm1\}.
 $$
 
 The **unit set** is therefore
 
 $$
-\mathbb{D}^{(\pm1)} = \{\,u \in \mathbb{D} : \lvert N(u)\rvert = 1\,\} = \{N = 1\} \sqcup \{N = -1\},
+\mathbb{D}^{(\pm1)} = \{\,u \in \mathbb{D} : \lvert \langle u\rangle_{*}\rvert = 1\,\} = \{\langle u\rangle_{*} = 1\} \sqcup \{\langle u\rangle_{*} = -1\},
 $$
 
 the union of the two hyperbolas $q^2-q'^2 = 1$ and $q'^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\phi \in \mathbb{R}$,
 
 $$
-N(u) = +1: \quad u = \pm\exp(\phi j) = \pm\bigl(\cosh\phi + j\sinh\phi\bigr),
+\langle u\rangle_{*} = +1: \quad u = \pm\exp(\phi j) = \pm\bigl(\cosh\phi + j\sinh\phi\bigr),
 $$
 
 $$
-N(u) = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
+\langle u\rangle_{*} = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
 $$
 
-The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{N\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Conventions in Mathematics*, §*The Unitary Convention*.
+The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Conventions in Mathematics*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 
@@ -94,19 +94,19 @@ The decomposition has two real parameters on each component: the modulus $r>0$ a
 
 ## Existence and Uniqueness
 
-**Theorem.** Every split-complex number $Q$ with $N(Q)\neq0$ has exactly one modulus–unit polar decomposition.
+**Theorem.** Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition.
 
-**Existence.** Put $r = \sqrt{\lvert N(Q)\rvert}$ and $u = Q/r$. Since $N(Q)\neq0$, $r>0$. Since $N(\lambda Q) = \lambda^2N(Q)$ for real $\lambda$, one has $N(u) = N(Q)/r^2 = \operatorname{sign}N(Q)$, so $\lvert N(u)\rvert = 1$. Hence $Q = ru$ with $r>0$ and $\lvert N(u)\rvert = 1$.
+**Existence.** Put $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u = Q/r$. Since $\langle Q\rangle_{*}\neq0$, $r>0$. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = \operatorname{sign}\langle Q\rangle_{*}$, so $\lvert \langle u\rangle_{*}\rvert = 1$. Hence $Q = ru$ with $r>0$ and $\lvert \langle u\rangle_{*}\rvert = 1$.
 
-**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r,r_1>0$ and $\lvert N(u)\rvert = \lvert N(u_1)\rvert = 1$. Taking absolute values of the norm gives $r^2 = \lvert N(Q)\rvert = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
+**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r,r_1>0$ and $\lvert \langle u\rangle_{*}\rvert = \lvert \langle u_1\rangle_{*}\rvert = 1$. Taking absolute values of the norm gives $r^2 = \lvert \langle Q\rangle_{*}\rvert = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
 
-The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a **regime**, forced by $\operatorname{sign}N(u) = \operatorname{sign}N(Q)$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on $\mathbb{D}^\times = \{N\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.
+The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a **regime**, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.
 
 ## The Group of Units and the Unit Set
 
 ### The Idempotent Coordinates and the Components
 
-The group of units is $\mathbb{D}^\times = \{Q : N(Q)\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and
+The group of units is $\mathbb{D}^\times = \{Q : \langle Q\rangle_{*}\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and
 
 $$
 \mathbb{D}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times, \qquad Q \longmapsto (Q_+,Q_-).
@@ -115,7 +115,7 @@ $$
 Each factor $\mathbb{R}^\times$ has two components, so the product has four. The components are indexed by the signs of $Q_+$ and $Q_-$, equivalently by the four quadrants of the $(Q_+,Q_-)$ plane. Each component is an open quadrant in the $(Q_+,Q_-)$ coordinates, hence contractible and diffeomorphic to $\mathbb{R}^2$. The identity component is
 
 $$
-(\mathbb{D}^\times)_0 = \{Q : Q_+>0,\ Q_->0\} = \{q>\lvert q'\rvert\} = \{N(Q)>0,\ q>0\},
+(\mathbb{D}^\times)_0 = \{Q : Q_+>0,\ Q_->0\} = \{q>\lvert q'\rvert\} = \{\langle Q\rangle_{*}>0,\ q>0\},
 $$
 
 the future cone of the indefinite form. It is the image of the exponential, treated in *Split-Complex Exponential and Lie Group Structure* and in *Exponential Polar Decomposition of Split-Complex Numbers*.
@@ -125,7 +125,7 @@ the future cone of the indefinite form. It is the image of the exponential, trea
 Every invertible element can be written in the normal form
 
 $$
-Q = r\,\epsilon\,\exp(\phi j), \qquad r = \sqrt{\lvert N(Q)\rvert} > 0, \quad \phi \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}.
+Q = r\,\epsilon\,\exp(\phi j), \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \phi \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}.
 $$
 
 The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(r,\phi)$ is the continuous part, and the triple $(r,\phi,\epsilon)$ is unique. The multiplication law is
@@ -208,7 +208,7 @@ $$
 The matrix $K$ is a reflection, and $K^2 = I$ is the matrix form of $j^2 = +1$. The determinant and the trace are
 
 $$
-\det M_Q = q^2-q'^2 = N(Q), \qquad \operatorname{tr}M_Q = 2q,
+\det M_Q = q^2-q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
 $$
 
 so the norm is the determinant and the modulus is the square root of the absolute determinant, $r = \sqrt{\lvert\det M_Q\rvert}$.
@@ -225,9 +225,9 @@ It is symmetric, and its eigenvalues are $x+y$ and $x-y$. The four cases are as 
 
 | regime | sign of $x$ | eigenvalues | definiteness of $M_u$ | orthogonal? |
 |---|---|---|---|---|
-| $N=+1$ | $x>0$ | $x\pm y>0$ | positive definite | no, unless $u=\pm1$ |
-| $N=+1$ | $x<0$ | $x\pm y<0$ | negative definite | no, unless $u=\pm1$ |
-| $N=-1$ | $x>0$ or $x<0$ | opposite signs | indefinite | no, unless $u=\pm j$ |
+| $\langle u\rangle_{*}=+1$ | $x>0$ | $x\pm y>0$ | positive definite | no, unless $u=\pm1$ |
+| $\langle u\rangle_{*}=+1$ | $x<0$ | $x\pm y<0$ | negative definite | no, unless $u=\pm1$ |
+| $\langle u\rangle_{*}=-1$ | $x>0$ or $x<0$ | opposite signs | indefinite | no, unless $u=\pm j$ |
 
 The matrix $M_u$ is **not orthogonal** in general. Indeed
 
@@ -237,7 +237,7 @@ $$
 
 which equals $I$ only when $x^2+y^2 = 1$ and $xy = 0$, that is only for $u\in\{\pm1,\pm j\}$. The algebraic unit factor and the orthogonal matrix factor of the Euclidean polar decomposition are different objects. In the complex case the two coincide because $M_u\in SO(2)$; in the split case they do not.
 
-For a unit of norm $+1$ on the identity component, $x = \cosh\phi$ and $y = \sinh\phi$, so the eigenvalues are $\exp(\phi)$ and $\exp(-\phi)$, both positive. The matrix is symmetric positive definite; it is not orthogonal for the Euclidean metric, but it preserves the indefinite form because $N(uv) = N(u)N(v)$.
+For a unit of norm $+1$ on the identity component, $x = \cosh\phi$ and $y = \sinh\phi$, so the eigenvalues are $\exp(\phi)$ and $\exp(-\phi)$, both positive. The matrix is symmetric positive definite; it is not orthogonal for the Euclidean metric, but it preserves the indefinite form because $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*}$.
 
 ### The Matrix Polar Decomposition
 
@@ -245,9 +245,9 @@ Let $M_Q$ be an invertible matrix in the family, $M_Q = qI + q'K$. The Euclidean
 
 | case | eigenvalues | $P$ | $U$ | determinant of $U$ |
 |---|---|---|---|---|
-| $N>0$, $q>0$ | both positive | $M_Q$ | $I$ | $+1$ |
-| $N>0$, $q<0$ | both negative | $-M_Q$ | $-I$ | $+1$ |
-| $N<0$ | opposite signs | $\lvert M_Q\rvert$ | reflection | $-1$ |
+| $\langle Q\rangle_{*}>0$, $q>0$ | both positive | $M_Q$ | $I$ | $+1$ |
+| $\langle Q\rangle_{*}>0$, $q<0$ | both negative | $-M_Q$ | $-I$ | $+1$ |
+| $\langle Q\rangle_{*}<0$ | opposite signs | $\lvert M_Q\rvert$ | reflection | $-1$ |
 
 On the identity component the matrix is already positive definite, and the polar decomposition is $(M_Q,I)$. On the opposite component it is negative definite, and the polar decomposition is $(-M_Q,-I)$. On the spacelike region the eigenvalues have opposite signs, the positive factor is $\lvert M_Q\rvert$, and the orthogonal factor is a reflection with determinant $-1$. This is the precise form of the statement that the matrix polar factor is not the algebraic unit factor. In the complex case the two factors are $rI$ and $M_u\in SO(2)$; here the unit matrix is symmetric, and the orthogonal factor is either a sign or a reflection.
 
@@ -255,10 +255,10 @@ On the identity component the matrix is already positive definite, and the polar
 
 ### A Generic Split-Complex Number
 
-Take $Q = 5+3j$. Then $N(Q) = 25-9 = 16>0$, so
+Take $Q = 5+3j$. Then $\langle Q\rangle_{*} = 25-9 = 16>0$, so
 
 $$
-r = 4, \qquad u = \frac{5+3j}{4} = 1.25+0.75j, \qquad N(u) = 1.5625-0.5625 = 1.
+r = 4, \qquad u = \frac{5+3j}{4} = 1.25+0.75j, \qquad \langle u\rangle_{*} = 1.5625-0.5625 = 1.
 $$
 
 The angle is fixed by $\tanh\phi = q'/q = 3/5$, hence
@@ -277,13 +277,13 @@ In the idempotent coordinates $Q_+ = 8$ and $Q_- = 2$, the modulus is the geomet
 
 ### The Spacelike Regime
 
-Take $Q = 1+2j$. Then $N(Q) = 1-4 = -3<0$, so
+Take $Q = 1+2j$. Then $\langle Q\rangle_{*} = 1-4 = -3<0$, so
 
 $$
 r = \sqrt3 = 1.7320508075688772, \qquad u = \frac{1+2j}{\sqrt3} = 0.5773502691896258 + 1.1547005383792517\,j,
 $$
 
-and $N(u) = 1/3 - 4/3 = -1$. Here $u = j\exp(\phi j)$ with
+and $\langle u\rangle_{*} = 1/3 - 4/3 = -1$. Here $u = j\exp(\phi j)$ with
 
 $$
 \phi = \operatorname{arsinh}\frac{1}{\sqrt3} = \operatorname{artanh}\frac{1}{2} = 0.5493061443340549,
@@ -295,7 +295,7 @@ so that $\sinh\phi = 1/\sqrt3$ and $\cosh\phi = 2/\sqrt3$. The element $Q$ canno
 
 The following table applies the decomposition to elements of the four components and to the null cone.
 
-| $Q$ | $N(Q)$ | $r$ | $u$ | $N(u)$ | $\epsilon$ | $\phi$ |
+| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $u$ | $\langle u\rangle_{*}$ | $\epsilon$ | $\phi$ |
 |---|---|---|---|---|---|---|
 | $2$ | $4$ | $2$ | $1$ | $+1$ | $1$ | $0$ |
 | $-2$ | $4$ | $2$ | $-1$ | $+1$ | $-1$ | $0$ |
@@ -320,14 +320,14 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
 | $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | four branches, non-compact |
+| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four branches, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The split column is the only one in which the norm is indefinite and the unit set has four components. The complex and quaternion columns are definite and their unit sets are compact and connected, a circle and a three-sphere. The split column has a non-empty null cone, a non-compact unit set, and a maximal compact subgroup of four points.
 
 ## Summary
 
-Every split-complex number $Q$ with $N(Q)\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert N(Q)\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert N(u)\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}N(u) = \operatorname{sign}N(Q)$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\phi j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\phi\in\mathbb{R}$.
+Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert \langle u\rangle_{*}\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\phi j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\phi\in\mathbb{R}$.
 
 The group of units splits as
 
@@ -346,18 +346,18 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 | $\mathbb{D}$ | the split-complex algebra, basis $1$, $j$, $j^2=+1$ |
 | $Q = q+jq'$ | a split-complex number, $q$ and $q'$ real |
 | $\bar Q = q-jq'$ | the split-complex conjugate |
-| $N(Q) = \langle Q\rangle_{\natural} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of signature $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of signature $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | the idempotents, $Q = Q_+\Pi_++Q_-\Pi_-$ |
 | $Q_\pm = q\pm q'$ | the idempotent coordinates |
-| $r = \sqrt{\lvert N(Q)\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |
-| $u = Q/r$ | the unit factor, $\lvert N(u)\rvert=1$ |
+| $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |
+| $u = Q/r$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
 | $\epsilon$ | the component sign, an element of $\{\pm1,\pm j\}$ |
 | $\phi$ | the hyperbolic angle or rapidity, $\phi\in\mathbb{R}$ |
-| $\mathbb{D}^{(\pm1)}$ | the unit set $\{\lvert N\rvert=1\}$, four branches |
-| $\mathbb{D}^\times = \{N\neq0\}$ | the group of units |
+| $\mathbb{D}^{(\pm1)}$ | the unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$, four branches |
+| $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$ | the group of units |
 | $(\mathbb{D}^\times)_0 = \{q>\lvert q'\rvert\}$ | the identity component, the future cone |
 | $K = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ | the reflection matrix of multiplication by $j$, $K^2=I$ |
-| $M_Q = qI+q'K$ | the matrix of multiplication by $Q$, $\det M_Q=N(Q)$ |
+| $M_Q = qI+q'K$ | the matrix of multiplication by $Q$, $\det M_Q=\langle Q\rangle_{*}$ |
 | $M_u = xI+yK$ | the matrix of a unit, symmetric, generally not orthogonal |
 | $O(1,1)$ | the Lorentz group of the plane, $\det=\pm1$ and form-preserving |
 | $SO(1,1)$ | the determinant-one subgroup of $O(1,1)$, two components |

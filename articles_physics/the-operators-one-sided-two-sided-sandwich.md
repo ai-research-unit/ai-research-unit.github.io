@@ -173,7 +173,7 @@ $$
 
 The phase is therefore invisible to the operator and visible to the norm, the determinant and the module. The physical reading is that a global phase is not an operation on states; only the relative phase, carried by the vector part, is observable. The polar word keeps the phase because the word is a description of the element and not of the operator; the sandwich keeps the frame and the scale, and loses only the phase.
 
-The scale is half-visible: a one-sided multiplication by a real scale $r$ dilates by $r$, while the sandwich dilates by $r^2$. The factor is the one-slot versus two-slot bookkeeping. It is the same factor of two that appears between the boost factor and the acting rotor in the polar representation.
+The scale is half-visible: a one-sided multiplication by a real scale $r$ dilates by $r$, while the sandwich dilates by $r^2$. The factor is the one-slot versus two-slot bookkeeping. It is the same factor of two that appears between the boost factor and the acting rotor in the polar decomposition.
 
 ## The Mass Coupling
 

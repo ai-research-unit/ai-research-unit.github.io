@@ -6,7 +6,7 @@ The split-complex algebra is one ring and it carries two scalar readings: the re
 
 The general construction is *The Realification and the Effect of the Change of Scalars*, which owns the definitions of the realification of a vector space, of a linear map and of a form, the criteria $TJ=JT$ and $SJ=-JS$, the two realification rules and the four effects; none of that is reproved here, it is read on $\mathbb{D}$. The forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, the article preceding this one, and their reading on the subspaces is *Remarkable Subspaces of the Split-Complexoid and the Two Forms*. The complex prototype, the first rung, is *The Realification and the Effect of the Change of Scalars* of the chapter `## Complex Numbers`.
 
-**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are elements, so $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ name forms and norms only, and the structure is $J$, the multiplication by $j$.
+**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are elements, so $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{*}$ name forms and norms only, and the structure is $J$, the multiplication by $j$.
 
 ## The Two Scalar Interpretations and the Doubling
 
@@ -111,7 +111,7 @@ The general construction distinguishes a statement **about the ring**, which is 
 | a Hermitian form | $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$, rank $1$ | realified signature $(1,1)$ |
 | a subring or an ideal | the two ideals $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ | the same two real lines |
 | the zero divisors, the idempotents | $\Pi_1\Pi_2=0$; $\Pi_1$ and $\Pi_2$ | unchanged (a statement about the ring) |
-| the norm and its sign | $\langle\cdot\rangle_{\natural}=q^2-q'^2$, indefinite | unchanged (a statement about the ring) |
+| the norm and its sign | $\langle\cdot\rangle_{*}=q^2-q'^2$, indefinite | unchanged (a statement about the ring) |
 
 The two rows that matter are the last two. The zero divisors, the idempotents, the ideals and the sign of the norm are statements about the ring: they are formulated with the product and the elements alone, and they have the same truth value in the two readings. The dimension, the scalar-linearity of a map, the two block shapes and the two realified signatures are statements about the scalars: they change, and the change is the doubling of the dimension and the exchange of the two rules. This is the structural content of the passage, and it is the same content the general construction carries, with the split sign in place of the complex one.
 
@@ -137,7 +137,7 @@ The two forms realify by the two general rules, taken in the order opposite to t
 | $\operatorname{End}_{\mathbb{D}}(\mathbb{D})$ | the commuting maps, $T=\lambda\,\mathrm{id}$ |
 | $\operatorname{Ant}_{\mathbb{D}}(\mathbb{D})$ | the anticommuting maps, $S(Q)=\lambda\bar Q$ |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ | the two forms, of realified signatures $(2,0)$ and $(1,1)$ |
-| $\langle Q\rangle_{\natural}=q^2-q'^2$ | the norm, a statement about the ring |
+| $\langle Q\rangle_{*}=q^2-q'^2$ | the norm, a statement about the ring |
 
 ## Further Reading
 

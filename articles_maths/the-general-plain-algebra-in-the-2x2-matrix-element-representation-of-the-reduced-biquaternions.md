@@ -13,12 +13,12 @@ $$
 
 **The results.** In the model the multiplication is the matrix product, the unit is $\mathrm I_{2}$, and every structural object of the algebra is a matrix condition or a matrix invariant:
 
-- the **norm** is the determinant, $\langle \breve Q\rangle_{\natural}=\det\varphi(\breve Q)=Q_{+}Q_{-}$; the **trace** of the element is $\tfrac12\operatorname{Tr}\varphi(\breve Q)=Q_{\blacktriangle}$, and the two eigenvalues of the operator of *The Multiplication Operators of the Algebra of the Reduced Biquaternions* are the two diagonal entries;
+- the **norm** is the determinant, $\langle \breve Q\rangle_{\mathrm{ts}}=\det\varphi(\breve Q)=Q_{+}Q_{-}$; the **trace** of the element is $\tfrac12\operatorname{Tr}\varphi(\breve Q)=Q_{\blacktriangle}$, and the two eigenvalues of the operator of *The Multiplication Operators of the Algebra of the Reduced Biquaternions* are the two diagonal entries;
 - the **units** are the invertible diagonal matrices, and the **zero divisors** are the nonzero singular diagonal matrices, those with exactly one zero entry;
 - the **idempotents** are the four diagonal matrices with entries in $\{0,1\}$, and the two nontrivial ones are the matrix units $E_{11}=\operatorname{diag}(1,0)$ and $E_{22}=\operatorname{diag}(0,1)$;
 - the **two minimal ideals** are the two coordinate lines, the matrices with a single nonzero diagonal entry, and the **Peirce decomposition** is the pair of the two diagonal entries, with the off-diagonal entries identically zero;
-- the **bar** is the conjugate transpose $\dagger$, the **natural sign** is the swap of the two diagonal entries $\operatorname{diag}(Q_{+},Q_{-})\mapsto\operatorname{diag}(Q_{-},Q_{+})$, equivalently the conjugation by $\sigma_{1}$, and the **star** is their composite;
-- the **general quaternionic sesquilinear form** is $\tfrac12$ the Hilbert–Schmidt form on the diagonal matrices, $\langle \breve Q_{1},\breve Q_{2}\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger}\bigr)$, positive definite.
+- the **bar** is the conjugate transpose $\dagger$, the **tessarine sign** is the swap of the two diagonal entries $\operatorname{diag}(Q_{+},Q_{-})\mapsto\operatorname{diag}(Q_{-},Q_{+})$, equivalently the conjugation by $\sigma_{1}$, and the **star** is their composite;
+- the **general tessarine sesquilinear form** is $\tfrac12$ the Hilbert–Schmidt form on the diagonal matrices, $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{Tr}\bigl(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger}\bigr)$, positive definite.
 
 The model is the reduced biquaternion analogue of the matrix realisation $\mathbb{B}\cong M_{2}(\mathbb{C})$ of the biquaternion category, and the difference is the content of the article: the biquaternion algebra is the **whole** of $M_{2}(\mathbb{C})$, the reduced biquaternion algebra is its **diagonal** subalgebra, and the missing off-diagonal entries are the missing matrix units $E_{12},E_{21}$ of the Peirce decomposition.
 
@@ -61,16 +61,16 @@ $$
 
 ### The Multiplication and the Conjugations
 
-**The product is the matrix product, the bar is the conjugate transpose, the natural sign is the swap, and the star is their composite.**
+**The product is the matrix product, the bar is the conjugate transpose, the tessarine sign is the swap, and the star is their composite.**
 
 **Theorem (the conjugations).** Under $\varphi$:
 $$
-\varphi(\overline{\breve Q})=\varphi(\breve Q)^{\dagger},\qquad \varphi(\breve Q^{\natural})=\sigma_{1}\varphi(\breve Q)\sigma_{1}=\operatorname{diag}(Q_{-},Q_{+}),\qquad \varphi(\breve Q^{*})=\operatorname{diag}(\bar Q_{-},\bar Q_{+}).
+\varphi(\overline{\breve Q})=\varphi(\breve Q)^{\dagger},\qquad \varphi(\breve Q_{\mathrm{ts}})=\sigma_{1}\varphi(\breve Q)\sigma_{1}=\operatorname{diag}(Q_{-},Q_{+}),\qquad \varphi(\breve Q^{*})=\operatorname{diag}(\bar Q_{-},\bar Q_{+}).
 $$
 
-*Proof.* The bar conjugates the coefficients, hence each diagonal entry, so it is the conjugate transpose; the natural sign sends $Q_{\blacktriangle}+jQ_{\blacktriangledown}$ to $Q_{\blacktriangle}-jQ_{\blacktriangledown}$ and hence $(Q_{+},Q_{-})$ to $(Q_{-},Q_{+})$, which is the conjugation by $\sigma_{1}$ on a diagonal matrix; the star is the composite of the two, $\operatorname{diag}(\bar Q_{-},\bar Q_{+})$.
+*Proof.* The bar conjugates the coefficients, hence each diagonal entry, so it is the conjugate transpose; the tessarine sign sends $Q_{\blacktriangle}+jQ_{\blacktriangledown}$ to $Q_{\blacktriangle}-jQ_{\blacktriangledown}$ and hence $(Q_{+},Q_{-})$ to $(Q_{-},Q_{+})$, which is the conjugation by $\sigma_{1}$ on a diagonal matrix; the star is the composite of the two, $\operatorname{diag}(\bar Q_{-},\bar Q_{+})$.
 
-**Corollary (the swap and the transposition).** The map $\operatorname{diag}(Q_{+},Q_{-})\mapsto\operatorname{diag}(Q_{-},Q_{+})$ is the **transposition of the two factors** of $\mathcal D_{2}(\mathbb{C})\cong\mathbb{C}\times\mathbb{C}$, equivalently the conjugation by $\sigma_{1}$; it is **not** the ordinary matrix transposition, which acts as the identity on the image because every diagonal matrix is symmetric. The natural sign is therefore an **algebra** symmetry of the image invisible in the individual entries; it is visible only through the swap of the two diagonal positions.
+**Corollary (the swap and the transposition).** The map $\operatorname{diag}(Q_{+},Q_{-})\mapsto\operatorname{diag}(Q_{-},Q_{+})$ is the **transposition of the two factors** of $\mathcal D_{2}(\mathbb{C})\cong\mathbb{C}\times\mathbb{C}$, equivalently the conjugation by $\sigma_{1}$; it is **not** the ordinary matrix transposition, which acts as the identity on the image because every diagonal matrix is symmetric. The tessarine sign is therefore an **algebra** symmetry of the image invisible in the individual entries; it is visible only through the swap of the two diagonal positions.
 
 ### The Norm, the Trace and the Determinant
 
@@ -78,10 +78,10 @@ $$
 
 **Theorem.** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
-\langle \breve Q\rangle_{\natural}=\det\varphi(\breve Q)=Q_{+}Q_{-},\qquad \operatorname{Tr}\varphi(\breve Q)=Q_{+}+Q_{-}=2Q_{\blacktriangle} .
+\langle \breve Q\rangle_{\mathrm{ts}}=\det\varphi(\breve Q)=Q_{+}Q_{-},\qquad \operatorname{Tr}\varphi(\breve Q)=Q_{+}+Q_{-}=2Q_{\blacktriangle} .
 $$
 
-*Proof.* The determinant of a diagonal matrix is the product of the entries, $Q_{+}Q_{-}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\natural}$; the trace is the sum, $Q_{+}+Q_{-}=2Q_{\blacktriangle}$.
+*Proof.* The determinant of a diagonal matrix is the product of the entries, $Q_{+}Q_{-}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}$; the trace is the sum, $Q_{+}+Q_{-}=2Q_{\blacktriangle}$.
 
 **Corollary (the multiplicativity).** $\det\varphi(\breve Q_{1}\breve Q_{2})=\det\varphi(\breve Q_{1})\det\varphi(\breve Q_{2})$ is the multiplicativity of the norm, read as the multiplicativity of the determinant on diagonal matrices; this is the mechanism of the unit group of *The Group of Units of the Algebra of the Reduced Biquaternions*.
 
@@ -123,29 +123,29 @@ the two mixed spaces vanishing. The matrix picture makes the reason visible: the
 
 ## The Forms in the Model
 
-**The general quaternionic sesquilinear form is half the Hilbert–Schmidt form on the diagonal matrices, and the other three forms are its companions read with the transpose and the plain slots.**
+**The general tessarine sesquilinear form is half the Hilbert–Schmidt form on the diagonal matrices, and the other three forms are its companions read with the transpose and the plain slots.**
 
 **Theorem (the four forms).** For $\breve Q_{1}=Q_{1\blacktriangle}+jQ_{1\blacktriangledown}$ and $\breve Q_{2}=Q_{2\blacktriangle}+jQ_{2\blacktriangledown}$ with images $\varphi(\breve Q_{1})=\operatorname{diag}(Q_{1+},Q_{1-})$ and $\varphi(\breve Q_{2})=\operatorname{diag}(Q_{2+},Q_{2-})$,
 $$
-\langle \breve Q_{1},\breve Q_{2}\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger}\bigr)=\tfrac12\bigl(Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-}\bigr),
+\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{Tr}\bigl(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger}\bigr)=\tfrac12\bigl(Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-}\bigr),
 $$
 $$
-\langle \breve Q_{1},\breve Q_{2}\rangle_{*}=\tfrac12\bigl(Q_{1+}\bar Q_{2-}+Q_{1-}\bar Q_{2+}\bigr),\qquad \langle \breve Q_{1},\breve Q_{2}\rangle=\tfrac12\bigl(Q_{1+}Q_{2+}+Q_{1-}Q_{2-}\bigr),\qquad \langle \breve Q_{1},\breve Q_{2}\rangle_{\natural}=\tfrac12\bigl(Q_{1+}Q_{2-}+Q_{1-}Q_{2+}\bigr).
+\langle \breve Q_{1},\breve Q_{2}\rangle_{*}=\tfrac12\bigl(Q_{1+}\bar Q_{2-}+Q_{1-}\bar Q_{2+}\bigr),\qquad \langle \breve Q_{1},\breve Q_{2}\rangle=\tfrac12\bigl(Q_{1+}Q_{2+}+Q_{1-}Q_{2-}\bigr),\qquad \langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\tfrac12\bigl(Q_{1+}Q_{2-}+Q_{1-}Q_{2+}\bigr).
 $$
 
 *Proof.* Substitute $Q_{1\blacktriangle}=\tfrac12(Q_{1+}+Q_{1-})$, $Q_{1\blacktriangledown}=\tfrac12(Q_{1+}-Q_{1-})$, $Q_{2\blacktriangle}=\tfrac12(Q_{2+}+Q_{2-})$, $Q_{2\blacktriangledown}=\tfrac12(Q_{2+}-Q_{2-})$ into the four forms $Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$, $Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown}$, $Q_{1\blacktriangle}\bar Q_{2\blacktriangle}-Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown}$, $Q_{1\blacktriangle}\bar Q_{2\blacktriangle}+Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown}$ of *The Forms of the Algebra of the Reduced Biquaternions*. The Hilbert–Schmidt identity is $\operatorname{Tr}(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger})=\operatorname{Tr}\bigl(\operatorname{diag}(Q_{1+},Q_{1-})\operatorname{diag}(\bar Q_{2+},\bar Q_{2-})\bigr)=Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-}$.
 
-**Corollary (the definiteness and the norms).** $\langle\cdot\rangle_{\natural*}$ is $\tfrac12$ the Hilbert–Schmidt inner product, positive definite, with the norm $\langle \breve Q\rangle_{\natural*}=\tfrac12\bigl(|Q_{+}|^{2}+|Q_{-}|^{2}\bigr)=\tfrac12\lVert\varphi(\breve Q)\rVert_{F}^{2}$, half the squared Frobenius norm of the matrix; $\langle \breve Q\rangle_{*}=\tfrac12\bigl(|Q_{+}|^{2}-|Q_{-}|^{2}\bigr)$ indefinite; and the two bilinear norms are $\langle \breve Q\rangle=\tfrac12(Q_{+}^{2}+Q_{-}^{2})$ and $\langle \breve Q\rangle_{\natural}=\tfrac12(Q_{+}Q_{-}+Q_{-}Q_{+})=Q_{+}Q_{-}=\det\varphi(\breve Q)$, the determinant. So the multiplicativity of $\langle\cdot,\cdot\rangle_{\natural}$ is the multiplicativity of the determinant, and the definiteness of $\langle\cdot,\cdot\rangle_{\natural*}$ is the definiteness of the Hilbert–Schmidt form.
+**Corollary (the definiteness and the norms).** $\langle\cdot\rangle_{\mathrm{ts}*}$ is $\tfrac12$ the Hilbert–Schmidt inner product, positive definite, with the norm $\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\bigl(|Q_{+}|^{2}+|Q_{-}|^{2}\bigr)=\tfrac12\lVert\varphi(\breve Q)\rVert_{F}^{2}$, half the squared Frobenius norm of the matrix; $\langle \breve Q\rangle_{*}=\tfrac12\bigl(|Q_{+}|^{2}-|Q_{-}|^{2}\bigr)$ indefinite; and the two bilinear norms are $\langle \breve Q\rangle=\tfrac12(Q_{+}^{2}+Q_{-}^{2})$ and $\langle \breve Q\rangle_{\mathrm{ts}}=\tfrac12(Q_{+}Q_{-}+Q_{-}Q_{+})=Q_{+}Q_{-}=\det\varphi(\breve Q)$, the determinant. So the multiplicativity of $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$ is the multiplicativity of the determinant, and the definiteness of $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is the definiteness of the Hilbert–Schmidt form.
 
 ## Worked Examples
 
-**A generic element.** For $\breve Q=3+ij$ the image is $\varphi(\breve Q)=\operatorname{diag}(3+i,3-i)$; its determinant is $9-i^{2}=10=\langle \breve Q\rangle_{\natural}$, its trace is $6=2Q_{\blacktriangle}$ with $Q_{\blacktriangle}=3$, and it is a unit. The Frobenius square is $|3+i|^{2}+|3-i|^{2}=20$, so $\langle \breve Q\rangle_{\natural*}=10$.
+**A generic element.** For $\breve Q=3+ij$ the image is $\varphi(\breve Q)=\operatorname{diag}(3+i,3-i)$; its determinant is $9-i^{2}=10=\langle \breve Q\rangle_{\mathrm{ts}}$, its trace is $6=2Q_{\blacktriangle}$ with $Q_{\blacktriangle}=3$, and it is a unit. The Frobenius square is $|3+i|^{2}+|3-i|^{2}=20$, so $\langle \breve Q\rangle_{\mathrm{ts}*}=10$.
 
 **A zero divisor.** For $\breve Q=\Pi_+$ the image is $E_{11}=\operatorname{diag}(1,0)$, with determinant $0$; it is singular, so $\breve Q$ is a zero divisor, and its kernel in the model is the coordinate line $\mathbb{C}E_{22}$, the companion of §*The Kernel and the Invertibility* of *The Multiplication Operators of the Algebra of the Reduced Biquaternions*.
 
 **A root of one.** For $\breve Q=j$ the image is $\sigma_{3}=\operatorname{diag}(1,-1)$, an involution with determinant $-1$; its square is $\mathrm I_{2}$, the model reading of $j^{2}=1$, and its trace is $0$, the model reading of $Q_{\blacktriangle}=0$.
 
-**The conjugations.** For $\breve Q=2+3j$ the image is $\operatorname{diag}(5,-1)$; the bar sends it to $\operatorname{diag}(5,-1)$ (the entries are real), the natural sign to $\operatorname{diag}(-1,5)$, and the star to the same $\operatorname{diag}(-1,5)$. For $\breve Q=2+i+3j$ the image is $\operatorname{diag}(5+i,-1+i)$, whose bar is $\operatorname{diag}(5-i,-1-i)$ and whose natural sign is $\operatorname{diag}(-1+i,5+i)$.
+**The conjugations.** For $\breve Q=2+3j$ the image is $\operatorname{diag}(5,-1)$; the bar sends it to $\operatorname{diag}(5,-1)$ (the entries are real), the tessarine sign to $\operatorname{diag}(-1,5)$, and the star to the same $\operatorname{diag}(-1,5)$. For $\breve Q=2+i+3j$ the image is $\operatorname{diag}(5+i,-1+i)$, whose bar is $\operatorname{diag}(5-i,-1-i)$ and whose tessarine sign is $\operatorname{diag}(-1+i,5+i)$.
 
 ## The Matrices
 
@@ -165,7 +165,7 @@ The table exhibits the two features of the model: the four real basis elements s
 
 ## Summary
 
-The general plain algebra is realised as the algebra of the complex diagonal $2\times2$ matrices by the isomorphism $\varphi(\breve Q)=\operatorname{diag}(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ on $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with the images $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{3}$ and $i\sigma_{3}$ on the basis. In the model the multiplication is the matrix product and the norm is the determinant, $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}=\det\varphi(\breve Q)$, so the units are the invertible diagonal matrices and the zero divisors are the nonzero singular ones; the idempotents are the four diagonal matrices with entries $0,1$, the two nontrivial ones being the matrix units $E_{11}$ and $E_{22}$. The bar is the conjugate transpose, the natural sign is the transposition of the two diagonal entries, equivalently the conjugation by $\sigma_{1}$, and the star is their composite. The two minimal ideals are the two coordinate lines, and the Peirce decomposition is the pair of diagonal entries with vanishing mixed spaces, because the image contains the diagonal matrix units and no off-diagonal one. The general quaternionic sesquilinear form is half the Hilbert–Schmidt form, positive definite, with the norm half the squared Frobenius norm, and the other three forms are its companions. The realisation is the diagonal analogue of the biquaternion realisation $\mathbb{B}\cong M_{2}(\mathbb{C})$: there the algebra is the whole matrix algebra, here it is the diagonal subalgebra, and the difference is the presence or absence of the off-diagonal matrix units.
+The general plain algebra is realised as the algebra of the complex diagonal $2\times2$ matrices by the isomorphism $\varphi(\breve Q)=\operatorname{diag}(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ on $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with the images $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{3}$ and $i\sigma_{3}$ on the basis. In the model the multiplication is the matrix product and the norm is the determinant, $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=\det\varphi(\breve Q)$, so the units are the invertible diagonal matrices and the zero divisors are the nonzero singular ones; the idempotents are the four diagonal matrices with entries $0,1$, the two nontrivial ones being the matrix units $E_{11}$ and $E_{22}$. The bar is the conjugate transpose, the tessarine sign is the transposition of the two diagonal entries, equivalently the conjugation by $\sigma_{1}$, and the star is their composite. The two minimal ideals are the two coordinate lines, and the Peirce decomposition is the pair of diagonal entries with vanishing mixed spaces, because the image contains the diagonal matrix units and no off-diagonal one. The general tessarine sesquilinear form is half the Hilbert–Schmidt form, positive definite, with the norm half the squared Frobenius norm, and the other three forms are its companions. The realisation is the diagonal analogue of the biquaternion realisation $\mathbb{B}\cong M_{2}(\mathbb{C})$: there the algebra is the whole matrix algebra, here it is the diagonal subalgebra, and the difference is the presence or absence of the off-diagonal matrix units.
 
 ## Summary of Notation
 
@@ -175,11 +175,11 @@ The general plain algebra is realised as the algebra of the complex diagonal $2\
 | $\mathcal D_{2}(\mathbb{C})$ | the algebra of the complex diagonal $2\times2$ matrices |
 | $\mathrm I_{2},\ \sigma_{3},\ i\sigma_{3}$ | the images of $1,j,ij$; $i\mathrm I_{2}$ the image of $i$ |
 | $E_{11},E_{22}$ | the diagonal matrix units, the images of $\Pi_+,\Pi_-$ |
-| $\det\varphi(\breve Q)=Q_{+}Q_{-}=\langle \breve Q\rangle_{\natural}$ | the norm as the determinant |
+| $\det\varphi(\breve Q)=Q_{+}Q_{-}=\langle \breve Q\rangle_{\mathrm{ts}}$ | the norm as the determinant |
 | $\operatorname{Tr}\varphi(\breve Q)=2Q_{\blacktriangle}$ | the trace of the element |
 | $\dagger$ | the conjugate transpose, the image of the bar |
-| $\sigma_{1}(\cdot)\sigma_{1}$ | the transposition of the diagonal entries, the image of the natural sign |
-| $\tfrac12\operatorname{Tr}(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger})$ | the Hilbert–Schmidt form, the general quaternionic sesquilinear form |
+| $\sigma_{1}(\cdot)\sigma_{1}$ | the transposition of the diagonal entries, the image of the tessarine sign |
+| $\tfrac12\operatorname{Tr}(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger})$ | the Hilbert–Schmidt form, the general tessarine sesquilinear form |
 
 ## Further Reading
 

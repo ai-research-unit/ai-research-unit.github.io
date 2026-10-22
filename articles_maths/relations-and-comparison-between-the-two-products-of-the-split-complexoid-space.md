@@ -41,7 +41,7 @@ The two rules differ in the second slot: on the ring product both slots keep the
 | the conjugate of the product | $\overline{Q_1Q_2}=\bar Q_1\bar Q_2$ | $\overline{Q_1\overline{Q_2}}=\bar Q_1 Q_2$ |
 | the value on the pair $(j,j)$ | $1$ | $-1$ |
 | the conjugate of that value | $1$ | $-1$ |
-| is the value real, for $Q_1=Q_2$? | $Q_1^2$ real iff $q_1q'_1=0$ | $\langle Q_1\rangle_{\natural}=q_1^2-(q'_1)^2$, always real |
+| is the value real, for $Q_1=Q_2$? | $Q_1^2$ real iff $q_1q'_1=0$ | $\langle Q_1\rangle_{*}=q_1^2-(q'_1)^2$, always real |
 
 ## The Exchange of the Two Slots
 
@@ -113,7 +113,7 @@ Collecting the sections gives the **property table** of the two products.
 | zero divisors | yes, $\Pi_1\Pi_2=0$ | yes, $\Pi_1\overline{\Pi_1}=0$ |
 | commutator $f(Q_1,Q_2)-f(Q_2,Q_1)$ | zero | $2(q'_1q_2-q_1q'_2)j$, non-zero in general |
 | left multiplications closed under composition | yes | no |
-| form and norm it defines | $\langle Q_1,Q_2\rangle=Q_1Q_2$, $\langle Q_1\rangle=Q_1^2$ | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, $\langle Q_1\rangle_{*}=\langle Q_1\rangle_{\natural}=q_1^2-(q'_1)^2$ |
+| form and norm it defines | $\langle Q_1,Q_2\rangle=Q_1Q_2$, $\langle Q_1\rangle=Q_1^2$ | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, $\langle Q_1\rangle_{*}=q_1^2-(q'_1)^2$ |
 
 The row of the forms is the degree-two reading of the two products: the forms and the norms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the failure of closure of the sesquilinear left multiplications under composition is owned by *The Sesquilinear Product of the Split-Complexoid Space*.
 
@@ -192,7 +192,7 @@ The transpose keeps the parameter and the adjoint conjugates it, so the transpos
 
 The two products of the split-complex space determine each other through the bar: $Q_1\overline{Q_2}=\overline{\bar Q_1Q_2}$ and $Q_1Q_2=\overline{\bar Q_1\overline{Q_2}}$. The bar conjugates the ring product term by term, $\overline{Q_1Q_2}=\bar Q_1\bar Q_2$, and conjugates the sesquilinear product with the second slot undone, $\overline{Q_1\bar Q_2}=\bar Q_1Q_2$. The plain exchange of the two slots leaves the ring product unchanged and conjugates the sesquilinear one; the conjugate exchange leaves both unchanged, which is the conjugate-symmetry of the sesquilinear product. The sum and the difference of the two values are $Q_1Q_2+Q_1\bar Q_2=2(\operatorname{Re}Q_2)Q_1$ and $Q_1Q_2-Q_1\bar Q_2=2(\operatorname{Im}Q_2)\,jQ_1$, so the two products agree exactly when the second factor is real or the first is zero.
 
-The comparison table lists the two columns: the ring product is bilinear, symmetric, associative, with a two-sided unit and a definite position in the forms; the sesquilinear product is conjugate-linear in the second slot, conjugate-symmetric, non-associative, with a right unit alone, and it is the second algebraic norm $\langle Q\rangle_{\natural}=Q\bar Q$. The identities that hold for the one and fail for the other are read on the witnesses $Q_1=Q_2=1$, $Q_3=j$ and $Q_1=Q_2=j$, and the only identity common to the two is the multiplicativity of the matrix model. The four tables of the four general products collapse to the two tables of these two. The two products are the two settings of the two-slot construction on a real base: the first slot is empty, the second decides the composition and the symmetry of the form, and what remains of the first slot is the centre. The two pairings carry two adjoints of a linear map, computed here: the transpose keeps the parameter and the adjoint conjugates it, so the ordinary multiplication by $Q$ has transpose itself and adjoint the multiplication by $\bar Q$, and the two agree exactly for real $Q$.
+The comparison table lists the two columns: the ring product is bilinear, symmetric, associative, with a two-sided unit and a definite position in the forms; the sesquilinear product is conjugate-linear in the second slot, conjugate-symmetric, non-associative, with a right unit alone, and it is the second algebraic norm $\langle Q\rangle_{*}=Q\bar Q$. The identities that hold for the one and fail for the other are read on the witnesses $Q_1=Q_2=1$, $Q_3=j$ and $Q_1=Q_2=j$, and the only identity common to the two is the multiplicativity of the matrix model. The four tables of the four general products collapse to the two tables of these two. The two products are the two settings of the two-slot construction on a real base: the first slot is empty, the second decides the composition and the symmetry of the form, and what remains of the first slot is the centre. The two pairings carry two adjoints of a linear map, computed here: the transpose keeps the parameter and the adjoint conjugates it, so the ordinary multiplication by $Q$ has transpose itself and adjoint the multiplication by $\bar Q$, and the two agree exactly for real $Q$.
 
 ## Summary of Notation
 

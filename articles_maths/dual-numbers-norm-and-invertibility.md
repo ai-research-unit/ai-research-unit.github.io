@@ -84,14 +84,14 @@ $$
 **Theorem.** The function
 
 $$
-r(Q) = |q| = \sqrt{|\langle Q\rangle|}
+r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|
 $$
 
 is a continuous multiplicative real size function on the units, normalised on the real scalars, and it is invariant under the parabolic one-parameter subgroup, $r(Q(1 + t\varepsilon)) = r(Q)$ for every $t \in \mathbb{R}$. It is the unique such function with that invariance.
 
-**Proof.** Multiplicativity is $\langle Q_1 Q_2\rangle = \langle Q_1\rangle\langle Q_2\rangle$ together with $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and continuity is the continuity of $q \mapsto |q|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $Q(1 + t\varepsilon) = q + (q' + tq)\varepsilon$ has the same real part $q$, so $r(Q(1 + t\varepsilon)) = |q| = r(Q)$. For uniqueness, by *Shears and Parabolic Rotations* every unit is $q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q^{-1}q'$; the shear invariance gives $r(q + \varepsilon q') = r(q)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.
+**Proof.** Multiplicativity is $\langle Q_1 Q_2\rangle = \langle Q_1\rangle\langle Q_2\rangle$ together with $r = \sqrt{\langle\cdot\rangle_{*}}$, and continuity is the continuity of $q \mapsto |q|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $Q(1 + t\varepsilon) = q + (q' + tq)\varepsilon$ has the same real part $q$, so $r(Q(1 + t\varepsilon)) = |q| = r(Q)$. For uniqueness, by *Shears and Parabolic Rotations* every unit is $q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q^{-1}q'$; the shear invariance gives $r(q + \varepsilon q') = r(q)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.
 
-So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and it is the only scale fixed by the shear, the square root being the square root of a square.
+So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{\langle\cdot\rangle_{*}}$, and it is the only scale fixed by the shear, the square root being the square root of a square.
 
 **Remark (the shear condition is needed).** Invariance under the shear is not automatic, and without it the scale is not unique. For each real $c$, the function
 
@@ -202,7 +202,7 @@ $$
 Q^{-1} = \frac{1}{q} - \frac{q'}{q^2}\,\varepsilon.
 $$
 
-This is the degeneration of the complex formula $Q^{-1} = \bar Q/|Q|^2$: the conjugate is $\bar Q = q - \varepsilon q'$ and the "modulus squared" is $\langle Q\rangle = q^2$, so $\bar Q/\langle Q\rangle = (q - \varepsilon q')/q^2$, which is the inverse above.
+This is the degeneration of the complex formula $Q^{-1} = \bar Q/\langle Q\rangle_{*}$: the conjugate is $\bar Q = q - \varepsilon q'$ and the "modulus squared" is $\langle Q\rangle = q^2$, so $\bar Q/\langle Q\rangle = (q - \varepsilon q')/q^2$, which is the inverse above.
 
 **Corollary.** If $Q$ is invertible then so is $\bar Q$, and $\overline{Q^{-1}} = (\bar Q)^{-1}$.
 
@@ -337,7 +337,7 @@ The three cases form the family of the two-dimensional real algebras: complex, s
 
 ## Summary
 
-The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = |q| = \sqrt{|\langle Q\rangle|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.
+The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.
 
 A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.
 
@@ -356,7 +356,7 @@ A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real par
 | $\mathfrak{Q}(Q) = q^2 + q'^2$ | Euclidean form |
 | $\langle Q_1, Q_2 \rangle = q_1 q_2 + q'_1 q'_2$ | Euclidean inner product |
 | $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean norm |
-| $r(Q) = |q| = \sqrt{|\langle Q\rangle|}$ | Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant |
+| $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$ | Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant |
 | $\rho_c(Q) = |q|\exp(c\,q'/q)$ | The normalised multiplicative size functions; $r = \rho_0$ |
 | $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$ | Maximal ideal, kernel of $\langle\cdot\rangle$ |
 | $R_{\mathbb{D}'}$ | Real submodule |

@@ -84,18 +84,18 @@ $$
 
 **Theorem (the invariants).** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
-\operatorname{tr}\varphi(\breve Q)=2Q_{\blacktriangle},\qquad \det\varphi(\breve Q)=\langle \breve Q\rangle_{\natural}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-},
+\operatorname{tr}\varphi(\breve Q)=2Q_{\blacktriangle},\qquad \det\varphi(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-},
 $$
 and for the real matrix
 $$
-\operatorname{tr}L_{\breve Q}=4q_{\blacktriangle},\qquad \det L_{\breve Q}=\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}=\lvert Q_{+}\rvert^{2}\lvert Q_{-}\rvert^{2}.
+\operatorname{tr}L_{\breve Q}=4q_{\blacktriangle},\qquad \det L_{\breve Q}=\lvert \langle \breve Q\rangle_{\mathrm{ts}}\rvert^{2}=\lvert Q_{+}\rvert^{2}\lvert Q_{-}\rvert^{2}.
 $$
 
 *Proof.* The trace of $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ is $Q_{\blacktriangle}+Q_{\blacktriangle}=2Q_{\blacktriangle}$ and its determinant is $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$; the real matrix has trace $q_{\blacktriangle}+q_{\blacktriangle}+q_{\blacktriangle}+q_{\blacktriangle}=4q_{\blacktriangle}$, which is $\operatorname{tr}\varphi(\breve Q)+\overline{\operatorname{tr}\varphi(\breve Q)}$ read in real coordinates, and determinant $\det(A_+-A_-)\det(A_++A_-)=\lvert Q_{\blacktriangle}-Q_{\blacktriangledown}\rvert^{2}\lvert Q_{\blacktriangle}+Q_{\blacktriangledown}\rvert^{2}=\lvert Q_{-}\rvert^{2}\lvert Q_{+}\rvert^{2}$, by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*.
 
 **Corollary (the criterion in the model).** $\breve Q$ is a **unit** exactly when $\varphi(\breve Q)$ is invertible, that is $Q_{+}\neq0$ and $Q_{-}\neq0$; $\breve Q$ is a **zero divisor** exactly when $\varphi(\breve Q)\neq0$ is singular, that is exactly one of $Q_{+},Q_{-}$ is $0$; and $\breve Q$ is **nilpotent** exactly when $\varphi(\breve Q)$ is nilpotent, that is $Q_{+}=Q_{-}=0$, hence $\breve Q=0$. The multiplication is **not a division algebra**, and the singular non-zero matrices are the images of the zero divisors.
 
-*Proof.* Invertibility of $\varphi(\breve Q)$ is $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}\neq0$, the criterion of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; a diagonal model makes the three cases immediate, and the image of a diagonal matrix is nilpotent only if both entries vanish. The absence of division is the corollary of *The Four Products, Their Forms and Their Algebraic Norms*.
+*Proof.* Invertibility of $\varphi(\breve Q)$ is $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$, the criterion of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; a diagonal model makes the three cases immediate, and the image of a diagonal matrix is nilpotent only if both entries vanish. The absence of division is the corollary of *The Four Products, Their Forms and Their Algebraic Norms*.
 
 ## The Diagonal Model and the Change of Basis
 
@@ -149,11 +149,11 @@ the invertible matrices of the image, conjugate to the invertible diagonal matri
 
 **The matrix form makes the determinant and the trace visible as the norm and the scalar coordinate, and the commutativity visible as symmetry.**
 
-The determinant of the matrix is the reduced norm $\langle\cdot\rangle_{\natural}$, and the multiplicativity of $\langle\cdot\rangle_{\natural}$ is the multiplicativity of the determinant; the trace is twice the scalar complex coordinate $Q_{\blacktriangle}$; the symmetry of the matrix is the commutativity of the algebra; the simultaneous diagonalisability is the semisimplicity; the rank-one singular matrices are the zero divisors; and the image being the commutant of $\sigma_{1}$ — the matrices commuting with $\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}$ — is the statement that the algebra is the centraliser of its own generator $j$. None of these readings requires a metric, and the metrical reading of the determinant and of the norm is *Topology and Metric for Each of the Operations*.
+The determinant of the matrix is the reduced norm $\langle\cdot\rangle_{\mathrm{ts}}$, and the multiplicativity of $\langle\cdot\rangle_{\mathrm{ts}}$ is the multiplicativity of the determinant; the trace is twice the scalar complex coordinate $Q_{\blacktriangle}$; the symmetry of the matrix is the commutativity of the algebra; the simultaneous diagonalisability is the semisimplicity; the rank-one singular matrices are the zero divisors; and the image being the commutant of $\sigma_{1}$ — the matrices commuting with $\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}$ — is the statement that the algebra is the centraliser of its own generator $j$. None of these readings requires a metric, and the metrical reading of the determinant and of the norm is *Topology and Metric for Each of the Operations*.
 
 ## Summary
 
-The reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is the matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ of its own multiplication on the complex basis $1,j$, and the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ on the real basis $1,i,j,ij$. The images of the basis are $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{1}$, $i\sigma_{1}$, and the shape is forced by $\varphi(j)^{2}=\mathrm I_{2}$ and the centrality of $i$. The trace is $2Q_{\blacktriangle}$ and the determinant $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}$ in the complex model, $4q_{\blacktriangle}$ and $\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}$ in the real one. The change of basis $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ of determinant $-2$ diagonalises every matrix of the image to $\operatorname{diag}(Q_{+},Q_{-})$; the induced real change has determinant $4$, the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*. The element is a **unit** exactly when $Q_{+}\neq0$ and $Q_{-}\neq0$, a **zero divisor** exactly when exactly one of them vanishes, and the multiplication is **not a division algebra**. The image is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ and not the whole matrix algebra, which is the difference from the biquaternion companion.
+The reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is the matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ of its own multiplication on the complex basis $1,j$, and the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ on the real basis $1,i,j,ij$. The images of the basis are $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{1}$, $i\sigma_{1}$, and the shape is forced by $\varphi(j)^{2}=\mathrm I_{2}$ and the centrality of $i$. The trace is $2Q_{\blacktriangle}$ and the determinant $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ in the complex model, $4q_{\blacktriangle}$ and $\lvert \langle \breve Q\rangle_{\mathrm{ts}}\rvert^{2}$ in the real one. The change of basis $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ of determinant $-2$ diagonalises every matrix of the image to $\operatorname{diag}(Q_{+},Q_{-})$; the induced real change has determinant $4$, the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*. The element is a **unit** exactly when $Q_{+}\neq0$ and $Q_{-}\neq0$, a **zero divisor** exactly when exactly one of them vanishes, and the multiplication is **not a division algebra**. The image is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ and not the whole matrix algebra, which is the difference from the biquaternion companion.
 
 ## Summary of Notation
 
@@ -163,7 +163,7 @@ The reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ i
 | $L_{\breve Q}$ | the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ of the multiplication |
 | $\sigma_{1}$ | $\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}$, the image of $j$ in the basis $1,j$ |
 | $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ | the change of basis to the idempotent basis, of determinant $-2$ |
-| $\langle \breve Q\rangle_{\natural}=Q_{+}Q_{-}$ | the determinant of $\varphi(\breve Q)$, the reduced norm |
+| $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ | the determinant of $\varphi(\breve Q)$, the reduced norm |
 
 ## Further Reading
 

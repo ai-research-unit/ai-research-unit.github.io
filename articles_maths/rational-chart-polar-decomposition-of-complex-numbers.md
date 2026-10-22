@@ -5,10 +5,10 @@
 The modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers* writes every nonzero complex number as
 
 $$
-Q = r\,u, \qquad r = \lvert Q\rvert > 0, \qquad N(u) = 1,
+Q = r\,u, \qquad r = \sqrt{\langle Q\rangle_{*}} > 0, \qquad \langle u\rangle_{*} = 1,
 $$
 
-with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $N(u)=1$, not by a number.
+with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $\langle u\rangle_{*}=1$, not by a number.
 
 This article names it. For a real number $s$ put
 
@@ -39,16 +39,16 @@ Every numerical value displayed below was recomputed in double precision.
 For a complex number $Q$ the norm is
 
 $$
-N(Q) = Q\bar{Q} = \lvert Q\rvert^2,
+\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2,
 $$
 
-which is positive off the origin. The modulus is $r = \sqrt{N(Q)}$, a positive real with no sign choice, and the unit factor is
+which is positive off the origin. The modulus is $r = \sqrt{\langle Q\rangle_{*}}$, a positive real with no sign choice, and the unit factor is
 
 $$
-u = \frac{Q}{r}, \qquad N(u) = \frac{N(Q)}{r^2} = 1.
+u = \frac{Q}{r}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{r^2} = 1.
 $$
 
-The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : N(u)=1\}$. The pair $(r,u)$ is unique: taking norms in $Q = ru$ forces $r = \sqrt{N(Q)}$, and then $u = Q/r$.
+The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$. The pair $(r,u)$ is unique: taking norms in $Q = ru$ forces $r = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/r$.
 
 This is where the modulus–unit article stops. The present article adds one object, the real number $s$, and changes nothing else.
 
@@ -148,9 +148,9 @@ $$
 Q = r\,\frac{1-is}{1+is}, \qquad r > 0, \quad s \in \mathbb{R}.
 $$
 
-**Existence.** Let $Q \notin (-\infty,0]$, and put $r = \lvert Q\rvert$ and $u = Q/r$. Then $r > 0$ and $N(u) = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.
+**Existence.** Let $Q \notin (-\infty,0]$, and put $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/r$. Then $r > 0$ and $\langle u\rangle_{*} = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.
 
-**Uniqueness.** Taking norms gives $r = \sqrt{N(Q)}$, and then $u = Q/r$; the chart is injective, so $s$ is determined by $u$.
+**Uniqueness.** Taking norms gives $r = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/r$; the chart is injective, so $s$ is determined by $u$.
 
 The coordinate is $s = i(Q-r)/(Q+r)$ of §*The Inverse*, and the reconstruction is exact:
 
@@ -295,7 +295,7 @@ $$
 u\!\left(\tfrac{1}{2}\right) = \frac{1-\tfrac{i}{2}}{1+\tfrac{i}{2}} = \frac{(2-i)^2}{5} = \frac{3-4i}{5} = 0.6-0.8i, \qquad Q = 5(0.6-0.8i) = 3-4i.
 $$
 
-| $Q$ | $r = \lvert Q\rvert$ | $s = i(Q-r)/(Q+r)$ | $u$ | reconstruction error |
+| $Q$ | $r = \sqrt{\langle Q\rangle_{*}}$ | $s = i(Q-r)/(Q+r)$ | $u$ | reconstruction error |
 |---|---|---|---|---|
 | $2$ | $2$ | $0$ | $1$ | $0$ |
 | $5i$ | $5$ | $-1$ | $i$ | $0$ |
@@ -319,7 +319,7 @@ The cut corresponds to the single unit factor $-1$, which neither side attains.
 
 ## Summary
 
-Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = r(1-is)/(1+is)$, with $r = \lvert Q\rvert > 0$ and $s = i(Q-r)/(Q+r) \in \mathbb{R}$. It is the modulus–unit decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers*, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.
+Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = r(1-is)/(1+is)$, with $r = \sqrt{\langle Q\rangle_{*}} > 0$ and $s = i(Q-r)/(Q+r) \in \mathbb{R}$. It is the modulus–unit decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers*, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.
 
 The chart $s \mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$. It is the stereographic projection from $-1$ onto the imaginary axis, read in the coordinate $s$ of the point $-is$. It is rational in both directions, and it sends $0$ to $1$ and $\pm1$ to $\mp i$.
 
@@ -333,9 +333,9 @@ In the matrix picture the decomposition is $M_Q = r(I-sJ)(I+sJ)^{-1}$, the Cayle
 |---|---|
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q$ | a complex number outside the closed negative real axis |
-| $N(Q) = Q\bar{Q} = \lvert Q\rvert^2$ | the norm, positive definite |
-| $r = \lvert Q\rvert$ | the modulus, a positive real |
-| $u$ | the unit factor, $N(u) = 1$ |
+| $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
+| $r = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
+| $u$ | the unit factor, $\langle u\rangle_{*} = 1$ |
 | $s$ | the real chart parameter of the unit factor |
 | $u(s) = (1-is)/(1+is)$ | the chart, the unit of parameter $s$ |
 | $s = i(Q-r)/(Q+r)$ | the coordinate of $Q$, a real number |

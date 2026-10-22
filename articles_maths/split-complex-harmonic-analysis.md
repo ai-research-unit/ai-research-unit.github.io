@@ -418,7 +418,7 @@ The inversion formula reconstructs $f$ from its wavelet transform.
 In the split complex setting, the wavelet $\psi$ is allowed to be split-complex-valued, and the transform becomes
 
 $$
-W_\psi f(Q_2, b) = \frac{1}{\sqrt{|N(Q_2)|}} \int_{\mathbb{D}} f(Q) \overline{\psi\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in \mathbb{D}^\times, \; b \in \mathbb{D}.
+W_\psi f(Q_2, b) = \frac{1}{\sqrt{|\langle Q_2\rangle_{*}|}} \int_{\mathbb{D}} f(Q) \overline{\psi\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in \mathbb{D}^\times, \; b \in \mathbb{D}.
 $$
 
 The split complex wavelet transform is used in hyperbolic signal processing, where it provides both magnitude and hyperbolic phase information.

@@ -22,19 +22,19 @@ where $i^2 = -1$. The real number $q$ is the **real part**, and $q'$ is the **im
 The **modulus** of $Q$ is
 
 $$
-|Q| = \sqrt{q^2 + q'^2},
+\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2},
 $$
 
 and the **distance** between two complex numbers $Q$ and $Q_1$ is
 
 $$
-d(Q, Q_1) = |Q - Q_1|.
+d(Q, Q_1) = \sqrt{\langle Q - Q_1\rangle_{*}}.
 $$
 
 This makes $\mathbb{C}$ a metric space isometric to $\mathbb{R}^2$. The modulus satisfies
 
 $$
-|Q Q_1| = |Q| |Q_1|, \qquad |Q + Q_1| \leq |Q| + |Q_1|, \qquad |\operatorname{Re} Q| \leq |Q|, \qquad |\operatorname{Im} Q| \leq |Q|.
+\sqrt{\langle Q Q_1\rangle_{*}} = \sqrt{\langle Q\rangle_{*}} \sqrt{\langle Q_1\rangle_{*}}, \qquad \sqrt{\langle Q + Q_1\rangle_{*}} \leq \sqrt{\langle Q\rangle_{*}} + \sqrt{\langle Q_1\rangle_{*}}, \qquad |\operatorname{Re} Q| \leq \sqrt{\langle Q\rangle_{*}}, \qquad |\operatorname{Im} Q| \leq \sqrt{\langle Q\rangle_{*}}.
 $$
 
 The last two inequalities are used constantly: they say that convergence of complex numbers is equivalent to convergence of real and imaginary parts.
@@ -44,13 +44,13 @@ The last two inequalities are used constantly: they say that convergence of comp
 The **open ball** of radius $r > 0$ centred at $Q_0$ is
 
 $$
-B(Q_0, r) = \{Q \in \mathbb{C} : |Q - Q_0| < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C} : \sqrt{\langle Q - Q_0\rangle_{*}} < r\}.
 $$
 
 It is an open disk. The **closed ball** is
 
 $$
-\overline{B}(Q_0, r) = \{Q \in \mathbb{C} : |Q - Q_0| \leq r\}.
+\overline{B}(Q_0, r) = \{Q \in \mathbb{C} : \sqrt{\langle Q - Q_0\rangle_{*}} \leq r\}.
 $$
 
 A **neighborhood** of $Q_0$ is any set containing some $B(Q_0, r)$.
@@ -86,7 +86,7 @@ A set $K \subseteq \mathbb{C}$ is **compact** if every open cover of $K$ has a f
 A sequence $(Q_n)$ of complex numbers **converges** to $L \in \mathbb{C}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-n \geq N \implies |Q_n - L| < \epsilon.
+n \geq N \implies \sqrt{\langle Q_n - L\rangle_{*}} < \epsilon.
 $$
 
 We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.
@@ -114,7 +114,7 @@ $$
 A sequence $(Q_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-m, n \geq N \implies |Q_m - Q_n| < \epsilon.
+m, n \geq N \implies \sqrt{\langle Q_m - Q_n\rangle_{*}} < \epsilon.
 $$
 
 **Theorem.** In $\mathbb{C}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}$ as a metric space. It follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.
@@ -130,7 +130,7 @@ $$
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q \in D, \; 0 < |Q - Q_0| < \delta \implies |f(Q) - L| < \epsilon.
+Q \in D, \; 0 < \sqrt{\langle Q - Q_0\rangle_{*}} < \delta \implies |f(Q) - L| < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
@@ -144,7 +144,7 @@ $$
 A function $f : D \to \mathbb{C}$ is **continuous at** $Q_0 \in D$ if $\lim_{Q \to Q_0} f(Q) = f(Q_0)$ when $Q_0$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q \in D, \; |Q - Q_0| < \delta \implies |f(Q) - f(Q_0)| < \epsilon.
+Q \in D, \; \sqrt{\langle Q - Q_0\rangle_{*}} < \delta \implies |f(Q) - f(Q_0)| < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
@@ -162,7 +162,7 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 A function $f : D \to \mathbb{C}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q, Q_1 \in D, \; |Q - Q_1| < \delta \implies |f(Q) - f(Q_1)| < \epsilon.
+Q, Q_1 \in D, \; \sqrt{\langle Q - Q_1\rangle_{*}} < \delta \implies |f(Q) - f(Q_1)| < \epsilon.
 $$
 
 The difference from ordinary continuity is that $\delta$ depends only on $\epsilon$, not on the point.
@@ -251,7 +251,7 @@ A map $f : \Omega \to \mathbb{C}$ is **conformal** at $Q_0$ if it preserves angl
 
 **Theorem.** If $f$ is holomorphic at $Q_0$ with $\frac{df}{dQ}(Q_0) \neq 0$, then $f$ is conformal at $Q_0$, and the local behavior of $f$ near $Q_0$ is multiplication by $\frac{df}{dQ}(Q_0)$, i.e., a rotation by $\arg \frac{df}{dQ}(Q_0)$ and a scaling by $|\frac{df}{dQ}(Q_0)|$.
 
-**Proof.** Write $f(Q) - f(Q_0) = \frac{df}{dQ}(Q_0)(Q - Q_0) + o(|Q - Q_0|)$. The linear term is multiplication by $\frac{df}{dQ}(Q_0)$, which is a rotation and a scaling.
+**Proof.** Write $f(Q) - f(Q_0) = \frac{df}{dQ}(Q_0)(Q - Q_0) + o(\sqrt{\langle Q - Q_0\rangle_{*}})$. The linear term is multiplication by $\frac{df}{dQ}(Q_0)$, which is a rotation and a scaling.
 
 ### Möbius Transformations
 
@@ -314,7 +314,7 @@ is well-defined, holomorphic, and satisfies $F' = f$.
 **Theorem (Cauchy Integral Formula).** Let $f$ be holomorphic on a domain containing the closed disk $\overline{B}(Q_0, r)$. Then for every $Q$ in the open disk,
 
 $$
-f(Q) = \frac{1}{2\pi i} \oint_{|Q_1 - Q_0| = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1.
+f(Q) = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1.
 $$
 
 **Proof.** Apply the Cauchy-Goursat theorem to the function $g(Q_1) = (f(Q_1) - f(Q))/(Q_1 - Q)$ on the punctured disk, then let the radius of the small circle around $Q$ tend to zero.
@@ -322,10 +322,10 @@ $$
 **Corollary (derivatives).** Under the same hypotheses, $f$ is infinitely differentiable, and
 
 $$
-f^{(n)}(Q) = \frac{n!}{2\pi i} \oint_{|Q_1 - Q_0| = r} \frac{f(Q_1)}{(Q_1 - Q)^{n+1}} \, dQ_1.
+f^{(n)}(Q) = \frac{n!}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} \frac{f(Q_1)}{(Q_1 - Q)^{n+1}} \, dQ_1.
 $$
 
-**Corollary (Cauchy estimates).** If $|f| \leq M$ on $|Q_1 - Q_0| = r$, then
+**Corollary (Cauchy estimates).** If $|f| \leq M$ on $\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r$, then
 
 $$
 |f^{(n)}(Q_0)| \leq \frac{n! M}{r^n}.
@@ -339,7 +339,7 @@ $$
 
 **Corollary (Fundamental Theorem of Algebra).** Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
-**Proof.** If $p$ has no root, then $1/p$ is entire and bounded (since $|p(Q)| \to \infty$ as $|Q| \to \infty$), hence constant by Liouville. Contradiction.
+**Proof.** If $p$ has no root, then $1/p$ is entire and bounded (since $|p(Q)| \to \infty$ as $\sqrt{\langle Q\rangle_{*}} \to \infty$), hence constant by Liouville. Contradiction.
 
 ### Morera's Theorem
 
@@ -365,9 +365,9 @@ $$
 
 with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
 
-**Theorem.** The series converges absolutely for $|Q - Q_0| < R$ and diverges for $|Q - Q_0| > R$. On $|Q - Q_0| < R$ it converges uniformly on compact subsets.
+**Theorem.** The series converges absolutely for $\sqrt{\langle Q - Q_0\rangle_{*}} < R$ and diverges for $\sqrt{\langle Q - Q_0\rangle_{*}} > R$. On $\sqrt{\langle Q - Q_0\rangle_{*}} < R$ it converges uniformly on compact subsets.
 
-**Theorem.** A power series is holomorphic on $|Q - Q_0| < R$, and its derivative is obtained by term-by-term differentiation:
+**Theorem.** A power series is holomorphic on $\sqrt{\langle Q - Q_0\rangle_{*}} < R$, and its derivative is obtained by term-by-term differentiation:
 
 $$
 \frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
@@ -383,7 +383,7 @@ $$
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$
 
-valid for $|Q - Q_0| < r$.
+valid for $\sqrt{\langle Q - Q_0\rangle_{*}} < r$.
 
 **Proof.** Use the Cauchy integral formula and expand $1/(Q_1 - Q)$ as a geometric series in $(Q - Q_0)/(Q_1 - Q_0)$.
 
@@ -393,7 +393,7 @@ valid for $|Q - Q_0| < r$.
 
 ### Laurent Series
 
-**Theorem (Laurent).** If $f$ is holomorphic on an annulus $r < |Q - Q_0| < R$, then $f$ has a unique expansion
+**Theorem (Laurent).** If $f$ is holomorphic on an annulus $r < \sqrt{\langle Q - Q_0\rangle_{*}} < R$, then $f$ has a unique expansion
 
 $$
 f(Q) = \sum_{n=-\infty}^\infty c_n (Q - Q_0)^n
@@ -402,7 +402,7 @@ $$
 valid on the annulus, with
 
 $$
-c_n = \frac{1}{2\pi i} \oint_{|Q_1 - Q_0| = \rho} \frac{f(Q_1)}{(Q_1 - Q_0)^{n+1}} \, dQ_1, \qquad r < \rho < R.
+c_n = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = \rho} \frac{f(Q_1)}{(Q_1 - Q_0)^{n+1}} \, dQ_1, \qquad r < \rho < R.
 $$
 
 **Proof.** Apply the Cauchy integral formula on the annulus and expand the kernel in two geometric series, one for the inner boundary and one for the outer boundary.
@@ -411,9 +411,9 @@ $$
 
 ### Classification
 
-Let $f$ be holomorphic on a punctured disk $0 < |Q - Q_0| < R$.
+Let $f$ be holomorphic on a punctured disk $0 < \sqrt{\langle Q - Q_0\rangle_{*}} < R$.
 
-**Removable singularity.** $Q_0$ is removable if $f$ extends to a holomorphic function on $|Q - Q_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.
+**Removable singularity.** $Q_0$ is removable if $f$ extends to a holomorphic function on $\sqrt{\langle Q - Q_0\rangle_{*}} < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.
 
 **Pole.** $Q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.
 
@@ -430,7 +430,7 @@ Let $f$ be holomorphic on a punctured disk $0 < |Q - Q_0| < R$.
 The **residue** of $f$ at an isolated singularity $Q_0$ is the coefficient $c_{-1}$ in the Laurent expansion:
 
 $$
-\operatorname{Res}(f, Q_0) = c_{-1} = \frac{1}{2\pi i} \oint_{|Q - Q_0| = \rho} f(Q) \, dQ.
+\operatorname{Res}(f, Q_0) = c_{-1} = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q - Q_0\rangle_{*}} = \rho} f(Q) \, dQ.
 $$
 
 **Theorem (Residue Theorem).** Let $f$ be holomorphic on a simply connected domain except for isolated singularities $Q_1, \dots, Q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $Q_k$ and winds once around each. Then
@@ -507,7 +507,7 @@ where $\operatorname{ord}(f, Q_k)$ is the order of the zero and $\operatorname{o
 
 ## Summary
 
-Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\lvert Q\rvert = \sqrt{q^2 + q'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.
+Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.
 
 The derivative $\frac{df}{dQ}(Q_0) = \lim_{h \to 0} (f(Q_0 + h) - f(Q_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.
 
@@ -520,8 +520,8 @@ Integration along paths defines the contour integral, and the theorems the deriv
 | $\mathbb{C}$ | Complex plane |
 | $Q = q + i q'$ | General complex number |
 | $\bar{Q} = q - i q'$ | Complex conjugate |
-| $|Q| = \sqrt{q^2 + q'^2}$ | Modulus |
-| $d(Q, Q_1) = |Q - Q_1|$ | Distance |
+| $\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2}$ | Modulus |
+| $d(Q, Q_1) = \sqrt{\langle Q - Q_1\rangle_{*}}$ | Distance |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
 | $\Omega, F, K$ | Open, closed, compact sets |
 | $Q_n \to L$ | Convergence of a sequence |

@@ -10,7 +10,7 @@ The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion t
 
 ## The Tubal Rank
 
-Let $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ have the t-SVD
+Let $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ have the t-SVD
 
 $$
 A=U\ast S\ast V^{\mathsf H},
@@ -24,13 +24,13 @@ $$
 
 The rank counts the nonzero **diagonal tubes**, not the nonzero entries and not the nonzero frontal slices. It is at most $w$. The tensor is zero if and only if its tubal rank is zero.
 
-**Theorem (the rank is the largest rank of the transform slices).** For every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$,
+**Theorem (the rank is the largest rank of the transform slices).** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,
 
 $$
 \operatorname{rank}_{\mathrm t}(A)=\max_{1\le k\le n_3}\operatorname{rank}\bigl(\widehat A^{(k)}\bigr),
 $$
 
-where $\operatorname{rank}(\widehat A^{(k)})$ is the rank of the matrix over $\mathbb{B}_{\mathrm r}$, the larger of the two complex ranks of its idempotent coordinates.
+where $\operatorname{rank}(\widehat A^{(k)})$ is the rank of the matrix over $\mathbb{B}_{\mathrm{r}}$, the larger of the two complex ranks of its idempotent coordinates.
 
 *Proof.* The tube $S(i,i,:)$ is zero if and only if all of its Fourier coefficients are zero. Its $k$-th Fourier coefficient is the $i$-th diagonal entry of the matrix SVD of $\widehat A^{(k)}$, a pair of singular values of the two complex coordinates; take the singular values in each coordinate ordered decreasingly, so that the nonzero values form an initial segment. Hence the largest $i$ for which some coefficient is nonzero is the largest rank among the slices $\widehat A^{(k)}$, and the number of nonzero tubes is that largest index.
 
@@ -62,7 +62,7 @@ plus $O(n_3k(n_1+n_2))$ for the reconstruction. The truncation is performed slic
 
 ## The Best Rank-$k$ Approximation
 
-**Theorem (Eckart-Young for the tubal rank).** For every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ and every $1\le k\le w$,
+**Theorem (Eckart-Young for the tubal rank).** For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ and every $1\le k\le w$,
 
 $$
 \|A-A_k\|_{\mathrm F}

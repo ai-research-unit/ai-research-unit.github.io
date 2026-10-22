@@ -26,7 +26,7 @@ with the two middle ideals minimal and incomparable. The structure is **semisimp
 
 *Proof.* If $\mathcal A$ is commutative and $\mathrm A$ is a left ideal then $\mathrm A\mathcal A=\mathcal A\mathrm A\subseteq\mathrm A$, so $\mathrm A$ is a right ideal and hence two-sided; the converse is the same argument. In particular the three notions define one set of ideals, which is the ideal lattice of the ring.
 
-**Corollary.** Among the general products of the reduced biquaternion space only the general plain product is commutative, so it alone has a single notion of ideal; the other products are non-commutative — the general quaternionic sesquilinear product is only symmetric up to the bar, $\breve Q_{2}^{\natural}\breve Q_{1}^{*}=\overline{\breve Q_{1}^{\natural}\breve Q_{2}^{*}}$, and not commutative — and their left and right ideals need not coincide. This article treats the general plain product, whose ideals are two-sided.
+**Corollary.** Among the general products of the reduced biquaternion space only the general plain product is commutative, so it alone has a single notion of ideal; the other products are non-commutative — the general tessarine sesquilinear product is only symmetric up to the bar, $\breve Q_{2,\mathrm{ts}}\breve Q_{1}^{*}=\overline{\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}}$, and not commutative — and their left and right ideals need not coincide. This article treats the general plain product, whose ideals are two-sided.
 
 ## The Two-Sided Ideals
 

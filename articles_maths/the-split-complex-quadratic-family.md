@@ -16,7 +16,7 @@ The article is the $\mathbb{D}$ instance of the quadratic family. The algebra an
 
 ### The Algebra and the Idempotents
 
-**Definition.** The **split-complex algebra** is $\mathbb{D} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $\langle z\rangle_{\natural} = z\bar z = a^2 - a'^2$, an indefinite form of signature $(1,1)$; and the **idempotents** are
+**Definition.** The **split-complex algebra** is $\mathbb{D} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $\langle z\rangle_{*} = z\bar z = a^2 - a'^2$, an indefinite form of signature $(1,1)$; and the **idempotents** are
 
 $$
 \Pi_+ = \frac{1+j}{2}, \qquad \Pi_- = \frac{1-j}{2}, \qquad \Pi_\pm^2 = \Pi_\pm, \quad \Pi_+\Pi_- = 0, \quad \Pi_+ + \Pi_- = 1 .
@@ -36,9 +36,9 @@ $$
 \varphi : \mathbb{D} \longrightarrow \mathbb{R}^2, \qquad \varphi(z) = (z_+, z_-) = (a+a',\, a-a') ,
 $$
 
-is an isomorphism of real vector spaces and of rings, with the product of $\mathbb{R}^2$ taken componentwise; its inverse is $\varphi^{-1}(u,v) = \frac{u+v}{2} + j\,\frac{u-v}{2}$. The conjugation corresponds to the exchange of the two coordinates, $\varphi(\bar z) = (z_-, z_+)$, and the norm corresponds to the product, $\langle z\rangle_{\natural} = z_+z_-$.
+is an isomorphism of real vector spaces and of rings, with the product of $\mathbb{R}^2$ taken componentwise; its inverse is $\varphi^{-1}(u,v) = \frac{u+v}{2} + j\,\frac{u-v}{2}$. The conjugation corresponds to the exchange of the two coordinates, $\varphi(\bar z) = (z_-, z_+)$, and the norm corresponds to the product, $\langle z\rangle_{*} = z_+z_-$.
 
-**Proof.** The idempotents are the standard projections onto the two coordinates; linearity of $\varphi$ is clear, and multiplicativity is the computation $\varphi(zw) = (z_+w_+, z_-w_-)$, since $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$ and $\Pi_+\Pi_- = 0$. The inverse is verified by $z = z_+\Pi_+ + z_-\Pi_-$, and the conjugation is $\bar z = z_-\Pi_+ + z_+\Pi_-$, the exchange of the two coordinates. Finally $\langle z\rangle_{\natural} = z\bar z = z_+z_-$, by expanding $(z_+\Pi_+ + z_-\Pi_-)(z_-\Pi_+ + z_+\Pi_-)$ and using $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$, $\Pi_+\Pi_- = 0$, $\Pi_++\Pi_- = 1$.
+**Proof.** The idempotents are the standard projections onto the two coordinates; linearity of $\varphi$ is clear, and multiplicativity is the computation $\varphi(zw) = (z_+w_+, z_-w_-)$, since $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$ and $\Pi_+\Pi_- = 0$. The inverse is verified by $z = z_+\Pi_+ + z_-\Pi_-$, and the conjugation is $\bar z = z_-\Pi_+ + z_+\Pi_-$, the exchange of the two coordinates. Finally $\langle z\rangle_{*} = z\bar z = z_+z_-$, by expanding $(z_+\Pi_+ + z_-\Pi_-)(z_-\Pi_+ + z_+\Pi_-)$ and using $\Pi_+^2 = \Pi_+$, $\Pi_-^2 = \Pi_-$, $\Pi_+\Pi_- = 0$, $\Pi_++\Pi_- = 1$.
 
 ### The Quadratic Map on the Pair
 
@@ -58,7 +58,7 @@ and the orbit of $z$ under $f_c$ is bounded if and only if both orbits $g_+^n(z_
 
 **Proof.** Since $\varphi$ is a ring isomorphism, $\varphi(f_c(z)) = \varphi(z)^2 + \varphi(c) = (z_+^2+c_+, z_-^2+c_-)$; iterating gives the displayed formula, and boundedness of a sequence in $\mathbb{R}^2$ is boundedness of both coordinates.
 
-**Corollary (the critical set).** The derivative of $f_c$ is the multiplication by $2z$. As an element of the algebra, $2z$ vanishes only at $z = 0$; as a real-linear map of the plane, the multiplication by $2z$ has determinant $\langle 2z\rangle_{\natural} = 4N(z)$ and is therefore singular exactly on the null cone $\mathcal{N} = \{N = 0\}$, where $2z$ is a zero divisor. So the critical set of $f_c$ as a real dynamical system is the union of the two null lines, and $0$ is its only point at which the derivative vanishes as an algebra element. The orbit of $0$ is the pair $(g_+^n(0), g_-^n(0))$ of the two real critical orbits, and it is this orbit that defines the connectedness locus below.
+**Corollary (the critical set).** The derivative of $f_c$ is the multiplication by $2z$. As an element of the algebra, $2z$ vanishes only at $z = 0$; as a real-linear map of the plane, the multiplication by $2z$ has determinant $\langle 2z\rangle_{*} = 4\langle z\rangle_{*}$ and is therefore singular exactly on the null cone $\mathcal{N} = \{N = 0\}$, where $2z$ is a zero divisor. So the critical set of $f_c$ as a real dynamical system is the union of the two null lines, and $0$ is its only point at which the derivative vanishes as an algebra element. The orbit of $0$ is the pair $(g_+^n(0), g_-^n(0))$ of the two real critical orbits, and it is this orbit that defines the connectedness locus below.
 
 **Remark (the complex case for comparison).** In $\mathbb{C}$ the algebra is a field, the conjugation is the only nontrivial automorphism, and the pair of "conjugate coordinates" is not independent: the map $z^2+c$ is determined by the single complex parameter $c$, and the critical orbit is a single complex orbit. In $\mathbb{D}$ the two coordinates are independent real numbers and the parameter is genuinely two real parameters, so the family is parameterised by $\mathbb{R}^2$ and not by a field.
 
@@ -66,11 +66,11 @@ and the orbit of $z$ under $f_c$ is bounded if and only if both orbits $g_+^n(z_
 
 ### The Norm and the Null Cone
 
-**Definition.** The **null cone** of $\mathbb{D}$ is the zero set of the norm, $\mathcal{N} = \{z : \langle z\rangle_{\natural} = 0\} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the union of the two **null lines** $z_- = 0$ and $z_+ = 0$; its elements other than $0$ are the zero divisors of the algebra.
+**Definition.** The **null cone** of $\mathbb{D}$ is the zero set of the norm, $\mathcal{N} = \{z : \langle z\rangle_{*} = 0\} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the union of the two **null lines** $z_- = 0$ and $z_+ = 0$; its elements other than $0$ are the zero divisors of the algebra.
 
-**Theorem (the failure of the norm as an escape radius).** The norm is indefinite: there are nonzero $z$ with $\langle z\rangle_{\natural} = 0$, and along the null lines the norm vanishes while the orbit of $f_c$ may be unbounded. Hence no condition of the form $\langle z\rangle_{\natural} > R$ detects the escape, and there is no single radius in the norm that plays the role of the escape radius of the complex case.
+**Theorem (the failure of the norm as an escape radius).** The norm is indefinite: there are nonzero $z$ with $\langle z\rangle_{*} = 0$, and along the null lines the norm vanishes while the orbit of $f_c$ may be unbounded. Hence no condition of the form $\langle z\rangle_{*} > R$ detects the escape, and there is no single radius in the norm that plays the role of the escape radius of the complex case.
 
-**Proof.** On the null line $z_+ = 0$ the norm is $\langle z\rangle_{\natural} = z_+z_- = 0$ for every $z$, while the coordinate $z_-$ evolves by $v \mapsto v^2+c_-$ and may diverge. So the norm cannot bound the orbit, and it also cannot detect divergence: the escape is read on the idempotent coordinates, not on the norm.
+**Proof.** On the null line $z_+ = 0$ the norm is $\langle z\rangle_{*} = z_+z_- = 0$ for every $z$, while the coordinate $z_-$ evolves by $v \mapsto v^2+c_-$ and may diverge. So the norm cannot bound the orbit, and it also cannot detect divergence: the escape is read on the idempotent coordinates, not on the norm.
 
 **Definition.** A point $z$ **escapes** under $f_c$ if $|f_c^n(z)| \to \infty$ in the Euclidean metric of the plane, equivalently, by the theorem above, if at least one of the two real orbits $g_+^n(z_+)$ or $g_-^n(z_-)$ escapes to infinity.
 
@@ -123,12 +123,12 @@ and the region is the square with these vertices; the centre is the average of t
 **Theorem (the norm along the critical orbit).** Along the critical orbit the norm is the product of the two real orbits,
 
 $$
-\langle f_c^n(0)\rangle_{\natural} = g_+^n(0)\, g_-^n(0) ,
+\langle f_c^n(0)\rangle_{*} = g_+^n(0)\, g_-^n(0) ,
 $$
 
-so $\langle\cdot\rangle_{\natural}$ vanishes at the $n$-th step exactly when one of the two real orbits passes through $0$. In particular $\langle\cdot\rangle_{\natural}$ is not a Lyapunov function and the vanishing of $\langle\cdot\rangle_{\natural}$ at some step does not decide the boundedness of the orbit.
+so $\langle\cdot\rangle_{*}$ vanishes at the $n$-th step exactly when one of the two real orbits passes through $0$. In particular $\langle\cdot\rangle_{*}$ is not a Lyapunov function and the vanishing of $\langle\cdot\rangle_{*}$ at some step does not decide the boundedness of the orbit.
 
-**Proof.** The norm is multiplicative for the ring isomorphism, $\langle z\rangle_{\natural} = z_+z_-$, and the coordinates of $f_c^n(0)$ are $g_+^n(0)$ and $g_-^n(0)$.
+**Proof.** The norm is multiplicative for the ring isomorphism, $\langle z\rangle_{*} = z_+z_-$, and the coordinates of $f_c^n(0)$ are $g_+^n(0)$ and $g_-^n(0)$.
 
 **Example.** For $c = j$ the critical orbit in the idempotent coordinates is $(g_+^n(0), g_-^n(0)) = (0,1,2,5,\ldots;\ 0,-1,0,-1,\ldots)$, and the norm along it is $(0\cdot0,\ 1\cdot(-1),\ 2\cdot0,\ 5\cdot(-1),\ \ldots) = (0,-1,0,-5,0,-677,\ldots)$, which alternates between $0$ and nonzero values and is bounded in neither sign; the first coordinate escapes while the second cycles.
 
@@ -145,7 +145,7 @@ The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac1
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2=+1$ | Split-complex algebra |
 | $z = a + ja'$ | General element, $a, a'\in\mathbb{R}$ |
 | $\bar z = a-ja'$ | Conjugation |
-| $\langle z\rangle_{\natural} = a^2-a'^2 = z_+z_-$ | Norm, signature $(1,1)$ |
+| $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$ | Norm, signature $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
 | $z_\pm = a\pm a'$ | Idempotent coordinates |
 | $\varphi(z) = (z_+,z_-)$ | Isomorphism $\mathbb{D}\to\mathbb{R}^2$ |

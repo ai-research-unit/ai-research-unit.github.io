@@ -14,7 +14,7 @@ The result is the strongest possible reduction. A self-map of the algebra writte
 
 The article owns the global decomposition, the proof of the reduction, the coupling term and its vanishing, the matched structure of the split fractal, and the effect of the zero divisors on the singular sets. The algebra, the idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the systems of contractions are *The Reduced Biquaternion Iterated Function Systems*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*. The companion is *The Idempotent Decomposition and the Split Fractal*, where the idempotents are not central and the decomposition is only local.
 
-**Conventions.** The element is $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $Q_{+},Q_{-}\in\mathbb{C}$; the topological norm is $\langle \breve Q\rangle_{\natural*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **map of the algebra** is a map written in the coordinates, and a **generator** is one of the maps of a finite system.
+**Conventions.** The element is $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $Q_{+},Q_{-}\in\mathbb{C}$; the topological norm is $\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **map of the algebra** is a map written in the coordinates, and a **generator** is one of the maps of a finite system.
 
 ## The Global Decomposition
 
@@ -48,7 +48,7 @@ $$
 
 where $K^{(j)}$ is the filled set of the one-variable map $F_{j}$ in the bounded sense.
 
-**Proof.** By induction the $n$-th iterate is the pair of the $n$-th iterates; the orbit is bounded for $\langle\cdot\rangle_{\natural*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$ exactly when both coordinate orbits are bounded.
+**Proof.** By induction the $n$-th iterate is the pair of the $n$-th iterates; the orbit is bounded for $\langle\cdot\rangle_{\mathrm{ts}*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$ exactly when both coordinate orbits are bounded.
 
 **Corollary (the quadratic case).** The quadratic map $F_{C}(\breve Q)=\breve Q^{2}+C$ is a map of this form, with $F_{j}(\zeta)=\zeta^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.
 

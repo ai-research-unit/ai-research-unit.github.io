@@ -16,7 +16,7 @@ The remaining realizations are the subjects of their own articles:
 | four-vector | *Split-Quaternion Four-Vector Element Representation* |
 | $2 \times 2$ matrix | *Split-Quaternion Matrix Element Representations* |
 | operator on the algebra | *Split-Quaternion Rotations and the Lorentz Group* |
-| polar | *Split-Quaternion Polar Element Representation* |
+| polar | *Split-Quaternion Polar Decomposition* |
 
 and the technical representation theory is the subject of *Split-Quaternion Element Representations*. Each of those articles owns its realization; this article records only the relations that involve the three studied here.
 

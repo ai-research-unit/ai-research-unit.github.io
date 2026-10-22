@@ -38,7 +38,7 @@ is the **annihilator** of $\breve Q_{1}$. Since the multiplication is commutativ
 
 **The annihilator of a unit is $\{0\}$.**
 
-**Theorem.** If $\langle \breve Q_{1}\rangle_{\natural}\neq0$ then $\operatorname{Ann}(\breve Q_{1})=\{0\}$.
+**Theorem.** If $\langle \breve Q_{1}\rangle_{\mathrm{ts}}\neq0$ then $\operatorname{Ann}(\breve Q_{1})=\{0\}$.
 
 *Proof.* If $\breve Q_{1}\breve Q_{2}=0$ then multiplying by $\breve Q_{1}^{-1}$ gives $\breve Q_{2}=\breve Q_{1}^{-1}(\breve Q_{1}\breve Q_{2})=0$, and the inverse exists by *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. So no nonzero element is annihilated by a unit.
 
@@ -90,7 +90,7 @@ $$
 
 | element $\breve Q$ | $\operatorname{Ann}(\breve Q)$ | real dimension of $\operatorname{Ann}(\breve Q)$ |
 |---|---|---|
-| unit, $\langle \breve Q\rangle_{\natural}\neq0$ | $\{0\}$ | $0$ |
+| unit, $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ | $\{0\}$ | $0$ |
 | $Q_{+}\Pi_+$, $Q_{+}\neq0$ | $\mathbb{C}\Pi_-$ | $2$ |
 | $Q_{-}\Pi_-$, $Q_{-}\neq0$ | $\mathbb{C}\Pi_+$ | $2$ |
 | $0$ | $\mathbb{B}_{\mathrm{r}}$ | $4$ |

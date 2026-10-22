@@ -7,7 +7,7 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is a four-dimensional rea
 
 The article owns the topological statements of the category. It relies on *Split-Quaternion Norm and Invertibility* for the group of units, on *Split-Quaternion Exponential and Lie Group Structure* for the norm-one group and the Lorentz double cover, and on *Split-Quaternion Null Quadric and Projective Geometry* for the ruling of the null quadric. All the invariants below are standard; the signs of the indefinite form and the reality of the algebra are what distinguish the picture from the biquaternion one. No physics is invoked.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ with the coordinates $q_t, q_x, q_y, q_z$; the split-quaternion norm is $N = q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$; the group of units is $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$; the norm-one group is $\mathrm{U} = \{N = 1\} = \mathrm{SL}_2(\mathbb{R})$; the null cone is $\mathcal{N} = \{N = 0\}$; the vector subspace is $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ with $N|_V = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$. The Euclidean norm of $(q_t,q_x,q_y,q_z)$ is $|\tilde q|_E = (q_t^2+q_x^2+q_y^2+q_z^2)^{1/2}$, and $\Sigma^3$ denotes the Euclidean unit sphere.
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ with the coordinates $q_t, q_x, q_y, q_z$; the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$; the group of units is $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$; the norm-one group is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$; the null cone is $\mathcal{N} = \{\langle\tilde q\rangle_{\natural} = 0\}$; the vector subspace is $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\cdot\rangle_{\natural}|_V = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$. The Euclidean norm of $(q_t,q_x,q_y,q_z)$ is $|\tilde q|_E = (q_t^2+q_x^2+q_y^2+q_z^2)^{1/2}$, and $\Sigma^3$ denotes the Euclidean unit sphere.
 
 ## The Underlying Space and Its Contractibility
 
@@ -19,25 +19,25 @@ Consequently every interesting invariant of the article comes from a *deleted* s
 
 ## The Group of Units and Its Components
 
-**Theorem.** The group of units $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$ has exactly two connected components, $\{N > 0\}$ and $\{N < 0\}$. Each component deformation retracts onto its intersection with $\Sigma^3$, and each is homotopy equivalent to a circle:
+**Theorem.** The group of units $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ has exactly two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$. Each component deformation retracts onto its intersection with $\Sigma^3$, and each is homotopy equivalent to a circle:
 
 $$
-\{N > 0\} \simeq SO(2), \qquad \{N < 0\} \simeq SO(2).
+\{\langle\tilde q\rangle_{\natural} > 0\} \simeq SO(2), \qquad \{\langle\tilde q\rangle_{\natural} < 0\} \simeq SO(2).
 $$
 
 Hence $\pi_t(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_x(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}$ on each component, so $\pi_x$ of the group is free abelian of rank two.
 
-**Proof.** The map $\tilde q \mapsto \tilde q/|\tilde q|_E$ retracts $\{N \neq 0\}$ onto the set $\{N = \pm 1\} \cap \Sigma^3$ without changing the sign of $N$, componentwise. The component $\{N>0\}$ retracts onto its maximal compact subgroup $SO(2)$ by the Gram–Schmidt process, and the component $\{N<0\}$ is the coset $\vec e_y\{N>0\}$, homeomorphic to the first. A circle has $\pi_t$ a point and $\pi_x = \mathbb{Z}$.
+**Proof.** The map $\tilde q \mapsto \tilde q/|\tilde q|_E$ retracts $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ onto the set $\{\langle\tilde q\rangle_{\natural} = \pm 1\} \cap \Sigma^3$ without changing the sign of $\langle\tilde q\rangle_{\natural}$, componentwise. The component $\{\langle\tilde q\rangle_{\natural}>0\}$ retracts onto its maximal compact subgroup $SO(2)$ by the Gram–Schmidt process, and the component $\{\langle\tilde q\rangle_{\natural}<0\}$ is the coset $\vec e_y\{\langle\tilde q\rangle_{\natural}>0\}$, homeomorphic to the first. A circle has $\pi_t$ a point and $\pi_x = \mathbb{Z}$.
 
 ## The Norm-One Group
 
-**Theorem.** The norm-one group $\mathrm{U} = \{N = 1\} = \mathrm{SL}_2(\mathbb{R})$ is a connected three-dimensional submanifold of $\mathbb{H}_{\mathrm{s}}$, diffeomorphic to $S^1 \times \mathbb{R}^2$; it deformation retracts onto its maximal compact subgroup $SO(2)$,
+**Theorem.** The norm-one group $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ is a connected three-dimensional submanifold of $\mathbb{H}_{\mathrm{s}}$, diffeomorphic to $S^1 \times \mathbb{R}^2$; it deformation retracts onto its maximal compact subgroup $SO(2)$,
 
 $$
 \mathrm{U} \simeq S^1, \qquad \pi_x(\mathrm{U}) = \mathbb{Z}.
 $$
 
-**Proof.** The set $\mathrm{U}$ is the level set of the regular value $1$ of $\langle\cdot\rangle_{\natural}$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{N=1\} \cap \Sigma^3 = \{q_t^2+q_x^2 = 1, q_y=q_z=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $\mathrm{U} \cong S^1 \times \mathbb{R}^2$.
+**Proof.** The set $\mathrm{U}$ is the level set of the regular value $1$ of $\langle\cdot\rangle_{\natural}$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{\langle\tilde q\rangle_{\natural}=1\} \cap \Sigma^3 = \{q_t^2+q_x^2 = 1, q_y=q_z=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $\mathrm{U} \cong S^1 \times \mathbb{R}^2$.
 
 By *Split-Quaternion Exponential and Lie Group Structure* the group $\mathrm{U}$ double-covers the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group. The double cover is **not** the universal cover: $\pi_x(\mathrm{U}) = \mathbb{Z}$ is infinite, so the universal cover of $\mathrm{SO}^{+}(2,1)$ is an infinite cyclic cover of $\mathrm{U}$ and not $\mathrm{U}$ itself. This is a structural difference from the quaternion case, where the unit sphere is the simply connected three-sphere and its double cover of $SO(3)$ is universal.
 
@@ -73,7 +73,7 @@ $$
 \mathcal{L} = \{\, L_\lambda \,\}, \qquad \mathcal{M} = \{\, M_\mu \,\},
 $$
 
-each parametrised by a projective line and each consisting of totally isotropic planes; the two families are disjoint, their union fills the null cone, and each maximal isotropic plane belongs to exactly one of them. In the projective space $\mathbb{P}^3$ the two families are the two rulings of the smooth quadric surface $\mathcal{Q} = \{N = 0\}$, which is $\cong \mathbb{P}^1 \times \mathbb{P}^1$.
+each parametrised by a projective line and each consisting of totally isotropic planes; the two families are disjoint, their union fills the null cone, and each maximal isotropic plane belongs to exactly one of them. In the projective space $\mathbb{P}^3$ the two families are the two rulings of the smooth quadric surface $\mathcal{Q} = \{\langle\tilde q\rangle_{\natural} = 0\}$, which is $\cong \mathbb{P}^1 \times \mathbb{P}^1$.
 
 **Proof.** The form has signature $(2,2)$, so a maximal isotropic subspace has dimension $2$ and the Witt index is $2$. A concrete maximal isotropic plane is
 
@@ -81,7 +81,7 @@ $$
 L = \operatorname{span}\Bigl\{ \tfrac12(1+\vec e_y),\; \vec e_x + \vec e_z \Bigr\},
 $$
 
-whose generators are null — $N\bigl(\tfrac12(1+\vec e_y)\bigr) = \tfrac14 \langle 1+\vec e_y\rangle_{\natural} = 0$ and $\langle \vec e_x+\vec e_z\rangle_{\natural} = 1 - 1 = 0$ — and mutually $B$-orthogonal, $B\bigl(\tfrac12(1+\vec e_y), \vec e_x+\vec e_z\bigr) = 0$; it is therefore totally isotropic. The isometry group $O(2,2)$ acts transitively on each family, and the two families are exchanged by the reflection $\vec e_y \mapsto -\vec e_y$; each family is the set of images of $L$ under the two connected components of $O(2,2)$, a copy of $\mathrm{SO}^{+}(2,2)/P$ for a maximal parabolic $P$, hence a projective line. The identification of the projectivised cone with $\mathbb{P}^1\times\mathbb{P}^1$ and its two rulings is the standard description of a smooth quadric surface, developed in *Split-Quaternion Null Quadric and Projective Geometry*.
+whose generators are null — $\langle\tfrac12(1+\vec e_y)\rangle_{\natural} = \tfrac14 \langle 1+\vec e_y\rangle_{\natural} = 0$ and $\langle \vec e_x+\vec e_z\rangle_{\natural} = 1 - 1 = 0$ — and mutually $B$-orthogonal, $B\bigl(\tfrac12(1+\vec e_y), \vec e_x+\vec e_z\bigr) = 0$; it is therefore totally isotropic. The isometry group $O(2,2)$ acts transitively on each family, and the two families are exchanged by the reflection $\vec e_y \mapsto -\vec e_y$; each family is the set of images of $L$ under the two connected components of $O(2,2)$, a copy of $\mathrm{SO}^{+}(2,2)/P$ for a maximal parabolic $P$, hence a projective line. The identification of the projectivised cone with $\mathbb{P}^1\times\mathbb{P}^1$ and its two rulings is the standard description of a smooth quadric surface, developed in *Split-Quaternion Null Quadric and Projective Geometry*.
 
 The link of the null cone and the two rulings are the same object seen twice: the two families of lines of the quadric pull back to the two families of circles of the torus $T^2 = S^1 \times S^1$, one circle of each factor for each ruling.
 
@@ -99,27 +99,27 @@ is a homeomorphism, and the second factor is the two-sheeted unit slice of *Spli
 
 **Proof.** The modulus is continuous and vanishes exactly on the null cone, where the normalisation $\tilde q/\rho$ is undefined. Along a path to a nonzero null point the unit part is unbounded because $\rho \to 0$ with $|\tilde q|_E$ bounded below. The identity above shows the polar map is a homeomorphism onto its image, which is the complement of the cone.
 
-The unit slice of the second factor has two connected components, $\{N=1\} \cong S^1\times\mathbb{R}^2$ and $\{N=-1\}$, corresponding to the two components of the group of units; the radial decomposition separates the scale $\rho \in \mathbb{R}_{>0}$ from the direction, itself split into the two component types.
+The unit slice of the second factor has two connected components, $\{\langle\tilde q\rangle_{\natural}=1\} \cong S^1\times\mathbb{R}^2$ and $\{\langle\tilde q\rangle_{\natural}=-1\}$, corresponding to the two components of the group of units; the radial decomposition separates the scale $\rho \in \mathbb{R}_{>0}$ from the direction, itself split into the two component types.
 
 ## Comparison with the Topology of $\mathbb{B}$
 
-The biquaternion article *The Topology of the Zero-Divisor Cone* treats the eight-dimensional algebra $\mathbb{B}$, its Euclidean unit sphere $S^7$, the null cone of the complex quadratic form and the reality conditions on the pure biquaternions. The split-quaternion picture is the four-dimensional real analogue. The algebra is $\mathbb{R}^4$ in place of $\mathbb{R}^8$, with Euclidean sphere $\Sigma^3 = S^3$ in place of $S^7$; the group of units $\{N \neq 0\}$ has **two** components (retracting onto two circles) where the biquaternion unit group is connected; the norm-one group retracts onto the circle $SO(2)$ with infinite cyclic fundamental group, where the biquaternion norm-one group retracts onto the simply connected $SU(2)$; and the link of the null cone is the torus $T^2$, of the same type as the biquaternion link because both come from a quadric of split type, but realised in one real dimension less. The two rulings and the two-component structure of the units are the topological shadow of the indefinite form; nothing biquaternion-specific — no complex structure, no Hermitian reality condition, no $S^7$ — is imported.
+The biquaternion article *The Topology of the Zero-Divisor Cone* treats the eight-dimensional algebra $\mathbb{B}$, its Euclidean unit sphere $S^7$, the null cone of the complex quadratic form and the reality conditions on the pure biquaternions. The split-quaternion picture is the four-dimensional real analogue. The algebra is $\mathbb{R}^4$ in place of $\mathbb{R}^8$, with Euclidean sphere $\Sigma^3 = S^3$ in place of $S^7$; the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ has **two** components (retracting onto two circles) where the biquaternion unit group is connected; the norm-one group retracts onto the circle $SO(2)$ with infinite cyclic fundamental group, where the biquaternion norm-one group retracts onto the simply connected $SU(2)$; and the link of the null cone is the torus $T^2$, of the same type as the biquaternion link because both come from a quadric of split type, but realised in one real dimension less. The two rulings and the two-component structure of the units are the topological shadow of the indefinite form, and its algebraic root is that no positive-definite form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative (*Split-Quaternion Norm and Invertibility*, §*No Positive-Definite Multiplicative Form*), so definiteness and multiplicativity sit in two different forms; nothing biquaternion-specific — no complex structure, no Hermitian reality condition, no $S^7$ — is imported.
 
 ## Summary
 
-The split-quaternion algebra is $\mathbb{R}^4$ and is contractible, so its only interesting topology is that of the level sets of the split-quaternion norm. The group of units $\{N \neq 0\}$ has two components, $\{N>0\}$ and $\{N<0\}$, each homotopy equivalent to a circle; the norm-one group $\mathrm{U} = \mathrm{SL}_2(\mathbb{R})$ is connected, diffeomorphic to $S^1 \times \mathbb{R}^2$ and homotopy equivalent to $S^1$, with $\pi_x = \mathbb{Z}$, so the double cover $\mathrm{U} \to \mathrm{SO}^{+}(2,1)$ is not the universal cover. The null cone $\mathcal{N} = \{q_t^2+q_x^2=q_y^2+q_z^2\}$ is a cone on its link, which is the torus $T^2 = S^1\times S^1$, and its maximal isotropic subspaces are the two families of planes, each parametrised by a circle and each corresponding to one ruling of the smooth projective quadric. The radial decomposition $\tilde q = \rho\tilde u$ is a homeomorphism from the punctured algebra onto $\mathbb{R}_{>0}$ times the two-sheeted unit slice, and its boundary is the null cone, where the modulus vanishes and the unit part escapes to infinity. Compared with the biquaternion topology the dimension drops by four, the group of units splits into two components, the norm-one group acquires infinite cyclic fundamental group, and the Euclidean sphere is $S^3$ in place of $S^7$.
+The split-quaternion algebra is $\mathbb{R}^4$ and is contractible, so its only interesting topology is that of the level sets of the split-quaternion norm. The group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ has two components, $\{\langle\tilde q\rangle_{\natural}>0\}$ and $\{\langle\tilde q\rangle_{\natural}<0\}$, each homotopy equivalent to a circle; the norm-one group $\mathrm{U} = \mathrm{SL}_2(\mathbb{R})$ is connected, diffeomorphic to $S^1 \times \mathbb{R}^2$ and homotopy equivalent to $S^1$, with $\pi_x = \mathbb{Z}$, so the double cover $\mathrm{U} \to \mathrm{SO}^{+}(2,1)$ is not the universal cover. The null cone $\mathcal{N} = \{q_t^2+q_x^2=q_y^2+q_z^2\}$ is a cone on its link, which is the torus $T^2 = S^1\times S^1$, and its maximal isotropic subspaces are the two families of planes, each parametrised by a circle and each corresponding to one ruling of the smooth projective quadric. The radial decomposition $\tilde q = \rho\tilde u$ is a homeomorphism from the punctured algebra onto $\mathbb{R}_{>0}$ times the two-sheeted unit slice, and its boundary is the null cone, where the modulus vanishes and the unit part escapes to infinity. Compared with the biquaternion topology the dimension drops by four, the group of units splits into two components, the norm-one group acquires infinite cyclic fundamental group, and the Euclidean sphere is $S^3$ in place of $S^7$.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ | the split-quaternion algebra, contractible | *Split-Quaternion Algebra* |
-| $N = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$ | the group of units, two components | this article |
-| $\mathrm{U} = \{N = 1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group, $\simeq S^1$ | *Split-Quaternion Exponential and Lie Group Structure* |
-| $\mathcal{N} = \{N=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
+| $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ | the group of units, two components | this article |
+| $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group, $\simeq S^1$ | *Split-Quaternion Exponential and Lie Group Structure* |
+| $\mathcal{N} = \{\langle\tilde q\rangle_{\natural}=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
 | $\mathcal{N} \cap \Sigma^3 = T^2$ | the link of the null cone, a torus | this article |
-| $\Sigma^3$, $|\tilde q|_E$ | the Euclidean unit sphere and norm of $\mathbb{R}^4$ | this article |
+| $\Sigma^3$, $\lvert\tilde q\rvert_E$ | the Euclidean unit sphere and norm of $\mathbb{R}^4$ | this article |
 | $L_{(s:t)}, M_{(u:v)}$ | the two families of maximal isotropic planes | *Split-Quaternion Null Quadric and Projective Geometry* |
 | $\mathcal{Q} \subset \mathbb{P}^3$ | the projective null quadric, $\cong \mathbb{P}^1\times\mathbb{P}^1$ | *Split-Quaternion Null Quadric and Projective Geometry* |
 | $\rho \tilde u$ | the radial decomposition; boundary the null cone | this article |

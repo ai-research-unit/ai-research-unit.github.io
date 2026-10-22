@@ -5,7 +5,7 @@
 
 This article presents the **two-component realization** of the complex algebra: a complex number read off as its pair of real coordinates. It is the smallest realization in the family. The word *representation* is used here in the sense of a concrete realization of the algebra by computable objects and not in the technical sense of an algebra acting on a vector space: the two-component reading supplies the coordinate space, the column and the row, the component form of the product with its rotation matrix on the unit circle, the conjugation in coordinates, the two distinguished subspaces and the norm; the operator so obtained is developed in *Complex Regular Element Representation*.
 
-The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $Q = q + i q'$ with $q,q' \in \mathbb{R}$, involution $\bar Q = q - i q'$, norm $N(Q) = q^2+q'^2$. This article has two real coordinates and no complex coefficient field; the economy is the whole content of the two-dimensional case.
+The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $Q = q + i q'$ with $q,q' \in \mathbb{R}$, involution $\bar Q = q - i q'$, norm $\langle Q\rangle_{*} = q^2+q'^2$. This article has two real coordinates and no complex coefficient field; the economy is the whole content of the two-dimensional case.
 
 ## The Coefficient Space
 
@@ -95,7 +95,7 @@ $$
 \mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta,
 $$
 
-which is the **rotation matrix** of the plane through the angle $\theta$. It is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, and of determinant $1$, and the unit criterion $N(u) = 1$ is exactly the statement $\det R_\theta = 1$. For a general element $Q = q+i q' = r u$ with $r = |Q|$ and $u = Q/|Q|$, the component product is the matrix
+which is the **rotation matrix** of the plane through the angle $\theta$. It is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, and of determinant $1$, and the unit criterion $\langle u\rangle_{*} = 1$ is exactly the statement $\det R_\theta = 1$. For a general element $Q = q+i q' = r u$ with $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/\sqrt{\langle Q\rangle_{*}}$, the component product is the matrix
 
 $$
 \mathsf{M}_2(Q) = rR_\theta,
@@ -143,7 +143,7 @@ The two conditions partition the two real coordinates, so the decomposition $\ma
 **Definition.** The **norm** of a complex number is
 
 $$
-N(Q) = Q\bar Q = (Q^0)^2 + (Q^1)^2 = q^2 + q'^2 \in \mathbb{R}.
+\langle Q\rangle_{*} = Q\bar Q = (Q^0)^2 + (Q^1)^2 = q^2 + q'^2 \in \mathbb{R}.
 $$
 
 In two-component form the norm has **both signs positive**.
@@ -159,28 +159,28 @@ The norm is a positive-definite quadratic form on the coefficient space $\mathbb
 The phrase "the two signs" refers to the two restrictions of the norm to the two distinguished subspaces. On the real subspace, $Q = (q,0)$, the norm restricts to
 
 $$
-N(Q) = q^2,
+\langle Q\rangle_{*} = q^2,
 $$
 
 and on the imaginary subspace, $Q = (0,q')$, it restricts to
 
 $$
-N(Q) = q'^2.
+\langle Q\rangle_{*} = q'^2.
 $$
 
 Both restrictions are **positive definite**, of signature $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two signatures agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
 
 ### The Unit Criterion in Coordinates
 
-**Theorem.** A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $N(Q) \neq 0$, and then
+**Theorem.** A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$, and then
 
 $$
-Q^{-1} = \frac{\bar Q}{N(Q)}, \qquad (Q^{-1})^\mu = \left( \frac{Q^0}{N}, \, -\frac{Q^1}{N} \right), \qquad N = N(Q) = q^2+q'^2 .
+Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})^\mu = \left( \frac{Q^0}{\langle Q\rangle_{*}}, \, -\frac{Q^1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 .
 $$
 
 **Proof.** The criterion and the formula are those of *Complex Norm and Invertibility*; in coordinates the inverse of the pair $(q,q')$ is $(q,-q')/(q^2+q'^2)$.
 
-**Example.** For $Q = (3,4)$ the norm is $N = 9+16 = 25$, so $Q$ is a unit and $Q^{-1} = (3,-4)/25 = (0.12, -0.16)$. The product check $(3,4)(0.12,-0.16) = (0.36+0.64, -0.48+0.48) = (1,0) = 1$ is exact.
+**Example.** For $Q = (3,4)$ the norm is $\langle Q\rangle_{*} = 9+16 = 25$, so $Q$ is a unit and $Q^{-1} = (3,-4)/25 = (0.12, -0.16)$. The product check $(3,4)(0.12,-0.16) = (0.36+0.64, -0.48+0.48) = (1,0) = 1$ is exact.
 
 ## Summary
 
@@ -188,7 +188,7 @@ The two-component realization reads a complex number $Q = q+i q'$ as its pair of
 
 The product in components is $(q q_1-q' q'_1, q q'_1+q' q_1)$, the multiplication table of the basis being symmetric about the diagonal, and there is no antisymmetric term: its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(Q) = rR_\theta$, the scale times the rotation. The conjugation acts by $(q,q') \mapsto (q,-q')$, a reflection of the plane; its fixed subspace is the real axis $Q^1 = 0$ and its anti-fixed subspace the imaginary axis $Q^0 = 0$, each of real dimension one.
 
-The norm is $N(Q) = (Q^0)^2 + (Q^1)^2$, with both signs positive. Its restrictions to the two subspaces are $q^2$ and $q'^2$, both positive definite, so the form is definite. The invertibility criterion is $(q,q') \neq (0,0)$, and the inverse in coordinates is $(q,-q')/(q^2+q'^2)$.
+The norm is $\langle Q\rangle_{*} = (Q^0)^2 + (Q^1)^2$, with both signs positive. Its restrictions to the two subspaces are $q^2$ and $q'^2$, both positive definite, so the form is definite. The invertibility criterion is $(q,q') \neq (0,0)$, and the inverse in coordinates is $(q,-q')/(q^2+q'^2)$.
 
 ## Summary of Notation
 
@@ -204,8 +204,8 @@ The norm is $N(Q) = (Q^0)^2 + (Q^1)^2$, with both signs positive. Its restrictio
 | $R_\theta = \mathsf{M}_2(u)$ | the rotation matrix of a unit $u = \cos\theta + i\sin\theta$ |
 | $\bar Q \leftrightarrow (q,-q')$ | conjugation in coordinates |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | real axis $Q^1=0$ and imaginary axis $Q^0=0$ |
-| $N(Q) = (Q^0)^2+(Q^1)^2 = q^2+q'^2$ | the norm, signature $(2,0)$ |
-| $Q^{-1} = (q,-q')/N$ | the inverse in coordinates |
+| $\langle Q\rangle_{*} = (Q^0)^2+(Q^1)^2 = q^2+q'^2$ | the norm, signature $(2,0)$ |
+| $Q^{-1} = (q,-q')/\langle Q\rangle_{*}$ | the inverse in coordinates |
 
 ## Further Reading
 

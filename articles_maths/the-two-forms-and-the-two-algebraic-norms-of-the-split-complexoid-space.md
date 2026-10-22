@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The two products of *The Two Products of the Split-Complexoid Space* carry two **forms**, and the forms carry two **algebraic norms**. The **general plain bilinear form** is $\langle Q_1,Q_2\rangle=Q_1Q_2$, the product itself read as a form; the **general plain sesquilinear form**, also called the **Hermitian form**, is $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$. Their **algebraic norms** are the two algebraic norms, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2=\langle Q\rangle_{\natural}$. This article reads the two forms and the two norms on the coordinates, gives their Gram matrices and their realified signatures, and isolates the one point that separates the split-complex reading from the complex one: which of the two forms is definite.
+The two products of *The Two Products of the Split-Complexoid Space* carry two **forms**, and the forms carry two **algebraic norms**. The **general plain bilinear form** is $\langle Q_1,Q_2\rangle=Q_1Q_2$, the product itself read as a form; the **general plain sesquilinear form**, also called the **Hermitian form**, is $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$. Their **algebraic norms** are the two algebraic norms, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2$. This article reads the two forms and the two norms on the coordinates, gives their Gram matrices and their realified signatures, and isolates the one point that separates the split-complex reading from the complex one: which of the two forms is definite.
 
-The collapse of the four forms and their algebraic norms to the two of this article is carried here. The norm $\langle\cdot\rangle_{\natural}$, its multiplicativity, the criterion of invertibility, the group of units and the order cone are *Split-Complex Norm and Invertibility*, below this article in this category, and the isotropic cone and the zero divisors are *Split-Complex Zero Divisors*, below this article in this category. The forms read on the distinguished subspaces are *Remarkable Subspaces of the Split-Complexoid and the Two Forms*, below this article in this category.
+The collapse of the four forms and their algebraic norms to the two of this article is carried here. The norm $\langle\cdot\rangle_{*}$, its multiplicativity, the criterion of invertibility, the group of units and the order cone are *Split-Complex Norm and Invertibility*, below this article in this category, and the isotropic cone and the zero divisors are *Split-Complex Zero Divisors*, below this article in this category. The forms read on the distinguished subspaces are *Remarkable Subspaces of the Split-Complexoid and the Two Forms*, below this article in this category.
 
-**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and the Hermitian conjugation is ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are elements, so the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ name forms and norms only.
+**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and the Hermitian conjugation is ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are elements, so the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ name forms and norms only.
 
 ## The Two Forms
 
@@ -72,24 +72,24 @@ The **algebraic norm** of a form is its algebraic norm, the form read at $Q$. Th
 $$
 \langle Q\rangle=Q^2=(q^2+q'^2)+2qq'j,
 \qquad
-\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2=\langle Q\rangle_{\natural}.
+\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2 .
 $$
 
-The algebraic norms of the four forms collapse to the two algebraic norms of this article: the algebraic norms of the first two forms give $Q^2$, and the algebraic norms of the last two give $Q\overline{Q}=\langle Q\rangle_{\natural}$. The count of four becomes the count of two, exactly as the count of four forms becomes the count of two.
+The algebraic norms of the four forms collapse to the two algebraic norms of this article: the algebraic norms of the first two forms give $Q^2$, and the algebraic norms of the last two give $Q\overline{Q}=\langle Q\rangle_{*}$. The count of four becomes the count of two, exactly as the count of four forms becomes the count of two.
 
-Both norms are multiplicative: $\langle Q_1Q_2\rangle=(Q_1Q_2)^2=Q_1^2Q_2^2=\langle Q_1\rangle\langle Q_2\rangle$ and $\langle Q_1Q_2\rangle_{\natural}=\langle Q_1\rangle_{\natural}\langle Q_2\rangle_{\natural}$ (*Split-Complex Norm and Invertibility*, below this article in this category, owns the second). The two norms differ in their value and in their vanishing set, and neither is a definite real form on $\mathbb{D}$.
+Both norms are multiplicative: $\langle Q_1Q_2\rangle=(Q_1Q_2)^2=Q_1^2Q_2^2=\langle Q_1\rangle\langle Q_2\rangle$ and $\langle Q_1Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$ (*Split-Complex Norm and Invertibility*, below this article in this category, owns the second). The two norms differ in their value and in their vanishing set, and neither is a definite real form on $\mathbb{D}$.
 
 **Proposition (value and vanishing set).** $\langle Q\rangle=Q^2$ takes its value in $\mathbb{D}$ and vanishes only at $Q=0$; $\langle Q\rangle_{*}=q^2-q'^2$ takes its value in $\mathbb{R}$, is indefinite of signature $(1,1)$, and vanishes on the two null lines $q=q'$ and $q=-q'$, that is on $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$.
 
 **Proof.** $Q^2=(q+jq')^2=q^2+q'^2+2qq'j=0$ forces $q^2+q'^2=0$ and $qq'=0$, hence $q=q'=0$ over $\mathbb{R}$; so $\langle\cdot,\cdot\rangle$ is **anisotropic**. The value $q^2-q'^2$ is real and changes sign, so the form is indefinite; it vanishes exactly when $q^2=q'^2$, which is $Q\in\mathbb{R}(1+j)\cup\mathbb{R}(1-j)=\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$.
 
-The two norms are therefore of two different kinds. The bilinear norm $\langle\cdot\rangle$ is $\mathbb{D}$-valued and anisotropic, its only zero the origin; it is not a real form and carries no order. The Hermitian norm $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural}$ is real and indefinite, and its isotropic set is not the origin but two lines, on which the zero divisors lie. This is the statement that the null cone of $\mathbb{D}$ is a pair of lines rather than a point, and it is the algebraic reason the ring is not a field.
+The two norms are therefore of two different kinds. The bilinear norm $\langle\cdot\rangle$ is $\mathbb{D}$-valued and anisotropic, its only zero the origin; it is not a real form and carries no order. The Hermitian norm $\langle\cdot\rangle_{*}=q^2-q'^2$ is real and indefinite, and its isotropic set is not the origin but two lines, on which the zero divisors lie. This is the statement that the null cone of $\mathbb{D}$ is a pair of lines rather than a point, and it is the algebraic reason the ring is not a field.
 
 ## The Point That Separates the Split Case from the Complex One
 
 On the complex field the Hermitian norm is $A\overline{A}=\lvert A\rvert^2$, positive definite, with vanishing set the origin alone; it is the square of the Euclidean modulus and it is multiplicative. The complex field is thus a composition algebra for its definite norm, with no zero divisors and division by every non-zero element.
 
-On $\mathbb{D}$ the same construction gives the indefinite norm $\langle\cdot\rangle_{\natural}=q^2-q'^2$, whose vanishing set is the two null lines. **Neither of the two algebraic norms of $\mathbb{D}$ is a definite real norm**: $\langle Q\rangle=Q^2$ is $\mathbb{D}$-valued, so it defines no order and no modulus, and $\langle Q\rangle_{*}=\langle Q\rangle_{\natural}$ is real but indefinite, its null set the two null lines on which the zero divisors lie rather than the origin. The realification of the form $\langle\cdot,\cdot\rangle$ is definite — it is the Euclidean form $q^2+q'^2$ — but that form is the real part of the square and is not multiplicative.
+On $\mathbb{D}$ the same construction gives the indefinite norm $\langle\cdot\rangle_{*}=q^2-q'^2$, whose vanishing set is the two null lines. **Neither of the two algebraic norms of $\mathbb{D}$ is a definite real norm**: $\langle Q\rangle=Q^2$ is $\mathbb{D}$-valued, so it defines no order and no modulus, and $\langle Q\rangle_{*}=q^2-q'^2$ is real but indefinite, its null set the two null lines on which the zero divisors lie rather than the origin. The realification of the form $\langle\cdot,\cdot\rangle$ is definite — it is the Euclidean form $q^2+q'^2$ — but that form is the real part of the square and is not multiplicative.
 
 **Theorem (no definite multiplicative norm).** There is no function $\nu:\mathbb{D}\to\mathbb{R}$ that is a **norm** — definite, $\nu(Q)=0$ if and only if $Q=0$, and absolutely homogeneous, $\nu(\lambda Q)=\lvert\lambda\rvert\nu(Q)$ for $\lambda\in\mathbb{R}$ — and **multiplicative**, $\nu(Q_1Q_2)=\nu(Q_1)\nu(Q_2)$.
 
@@ -101,7 +101,7 @@ So the impossibility is exactly the phenomenon of the zero divisors, and it is w
 
 The two products of the split-complex space carry two forms, the symmetric bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the conjugate-symmetric Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$, both of Gram matrix $[1]$ over the rank-one $\mathbb{D}$-module and separated by symmetry alone. Their realified signatures are $(2,0)$ for $\langle\cdot,\cdot\rangle$ and $(1,1)$ for $\langle\cdot,\cdot\rangle_{*}$; the split sign exchanges them with respect to the complex case, where they are $(1,1)$ and $(2,0)$, because the bilinear form is $J$-invariant here and the Hermitian form is $J$-anti-invariant. The four forms and the four algebraic norms collapse to these two forms and their algebraic norms.
 
-The two algebraic norms are $\langle Q\rangle=Q^2$, $\mathbb{D}$-valued and anisotropic, and $\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2=\langle Q\rangle_{\natural}$, real and indefinite, with isotropic set the two null lines on which the zero divisors lie. Both are multiplicative; neither is a definite real norm. There is no definite multiplicative norm on $\mathbb{D}$: a norm that is definite, absolutely homogeneous and multiplicative would force the zero product $\Pi_1\Pi_2$ of two non-zero elements to have value $\nu(\Pi_1)\nu(\Pi_2)=0$; the impossibility is the zero divisor seen from the side of the form, and it is the point that separates the split-complex algebra from the complex field.
+The two algebraic norms are $\langle Q\rangle=Q^2$, $\mathbb{D}$-valued and anisotropic, and $\langle Q\rangle_{*}=Q\overline{Q}=q^2-q'^2$, real and indefinite, with isotropic set the two null lines on which the zero divisors lie. Both are multiplicative; neither is a definite real norm. There is no definite multiplicative norm on $\mathbb{D}$: a norm that is definite, absolutely homogeneous and multiplicative would force the zero product $\Pi_1\Pi_2$ of two non-zero elements to have value $\nu(\Pi_1)\nu(\Pi_2)=0$; the impossibility is the zero divisor seen from the side of the form, and it is the point that separates the split-complex algebra from the complex field.
 
 ## Summary of Notation
 
@@ -110,11 +110,11 @@ The two algebraic norms are $\langle Q\rangle=Q^2$, $\mathbb{D}$-valued and anis
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | general plain bilinear form, symmetric, Gram matrix $[1]$ |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ | general plain sesquilinear (Hermitian) form |
 | $\langle Q\rangle=Q^2$ | the bilinear algebraic norm, $\mathbb{D}$-valued |
-| $\langle Q\rangle_{*}=\langle Q\rangle_{\natural}=q^2-q'^2$ | the Hermitian algebraic norm, real, indefinite |
+| $\langle Q\rangle_{*}=q^2-q'^2$ | the Hermitian algebraic norm, real, indefinite |
 | $\operatorname{Re}B$ | realification of $\langle\cdot\rangle$, signature $(2,0)$ |
 | $\operatorname{Re}H$ | realification of $\langle\cdot\rangle_{*}$, signature $(1,1)$ |
 | $J$ | multiplication by $j$, $J^2=+\mathrm{id}$ |
-| $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$ | the isotropic set of $\langle\cdot\rangle_{\natural}$, the null lines |
+| $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$ | the isotropic set of $\langle\cdot\rangle_{*}$, the null lines |
 
 ## Further Reading
 

@@ -7,7 +7,7 @@ This article describes the group of rotations and reflections of the plane as it
 
 The treatment is mathematical throughout. A rotation is an element of $SO(2)$ and a reflection is an element of $O(2)$; no physical object is introduced, and no physical interpretation is invoked.
 
-The complex algebra is taken from *Complex Algebra*, with conjugation $\bar Q$, the norm $N(Q) = Q\bar Q$, and the real inner product $\operatorname{Re}(\bar Q Q_1)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = \mathrm{U}(1)$.
+The complex algebra is taken from *Complex Algebra*, with conjugation $\bar Q$, the norm $\langle Q\rangle_{*} = Q\bar Q$, and the real inner product $\operatorname{Re}(\bar Q Q_1)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = \mathrm{U}(1)$.
 
 ## The Unit Circle and Its Group Structure
 
@@ -16,18 +16,18 @@ The complex algebra is taken from *Complex Algebra*, with conjugation $\bar Q$, 
 **Definition.** The **unit circle** of $\mathbb{C}$ is
 
 $$
-\mathrm{U}(1) = \{u \in \mathbb{C} : |u| = 1\} = \{u \in \mathbb{C} : N(u) = 1\},
+\mathrm{U}(1) = \{u \in \mathbb{C} : \langle u\rangle_{*} = 1\},
 $$
 
-where $N(u) = u\bar u = |u|^2$ is the norm.
+where $\langle u\rangle_{*} = u\bar u$ is the norm.
 
 Geometrically $\mathrm{U}(1) = C(0, 1)$ is the circle of radius $1$ about the origin.
 
 ### Group Structure
 
-**Theorem.** $\mathrm{U}(1)$ is an abelian group under multiplication, and it is the kernel of the modulus homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$, $Q \mapsto |Q|$.
+**Theorem.** $\mathrm{U}(1)$ is an abelian group under multiplication, and it is the kernel of the modulus homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$, $Q \mapsto \sqrt{\langle Q\rangle_{*}}$.
 
-**Proof.** If $|u| = |v| = 1$, then $|uv| = |u||v| = 1$ and $|u^{-1}| = |u|^{-1} = 1$, and $u^{-1} = \bar u$; associativity and the identity $1 \in \mathrm{U}(1)$ are inherited from $\mathbb{C}$. Commutativity is inherited from $\mathbb{C}$. The modulus is multiplicative, so it is a homomorphism from $\mathbb{C}^\times$ onto $\mathbb{R}_{>0}$ with kernel exactly $\mathrm{U}(1)$.
+**Proof.** If $\langle u\rangle_{*} = \langle v\rangle_{*} = 1$, then $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*} = 1$ and $\langle u^{-1}\rangle_{*} = \langle u\rangle_{*}^{-1} = 1$, and $u^{-1} = \bar u$; associativity and the identity $1 \in \mathrm{U}(1)$ are inherited from $\mathbb{C}$. Commutativity is inherited from $\mathbb{C}$. The norm is multiplicative, so it is a homomorphism from $\mathbb{C}^\times$ onto $\mathbb{R}_{>0}$ with kernel exactly $\mathrm{U}(1)$.
 
 Since every $u \in \mathrm{U}(1)$ satisfies $\bar u = u^{-1}$, the inversion map of $\mathrm{U}(1)$ is complex conjugation.
 
@@ -36,12 +36,12 @@ Since every $u \in \mathrm{U}(1)$ satisfies $\bar u = u^{-1}$, the inversion map
 **Theorem.** Every non-zero complex number factors uniquely as a strictly positive real number times a unit:
 
 $$
-\mathbb{C}^\times = \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q = |Q| \cdot \frac{Q}{|Q|}, \qquad \left| \frac{Q}{|Q|} \right| = 1.
+\mathbb{C}^\times = \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q = \sqrt{\langle Q\rangle_{*}} \cdot \frac{Q}{\sqrt{\langle Q\rangle_{*}}}, \qquad \frac{Q}{\sqrt{\langle Q\rangle_{*}}} \in \mathrm{U}(1).
 $$
 
-**Proof.** The element $Q/|Q|$ has modulus $1$; conversely, if $Q = \rho u$ with $\rho > 0$ and $|u| = 1$, then $|Q| = \rho$ and $u = Q/|Q|$, so the factorisation is unique.
+**Proof.** The element $Q/\sqrt{\langle Q\rangle_{*}}$ has modulus $1$; conversely, if $Q = \rho u$ with $\rho > 0$ and $|u| = 1$, then $\sqrt{\langle Q\rangle_{*}} = \rho$ and $u = Q/\sqrt{\langle Q\rangle_{*}}$, so the factorisation is unique.
 
-The map $Q \mapsto (|Q|, Q/|Q|)$ is an isomorphism of groups from $\mathbb{C}^\times$ onto the direct product $\mathbb{R}_{>0} \times \mathrm{U}(1)$. It says that a non-zero complex number is a scaling by a positive real number composed with a rotation, which is the first appearance of the two ingredients of a similarity.
+The map $Q \mapsto (\sqrt{\langle Q\rangle_{*}}, Q/\sqrt{\langle Q\rangle_{*}})$ is an isomorphism of groups from $\mathbb{C}^\times$ onto the direct product $\mathbb{R}_{>0} \times \mathrm{U}(1)$. It says that a non-zero complex number is a scaling by a positive real number composed with a rotation, which is the first appearance of the two ingredients of a similarity.
 
 ### Compactness and Connectedness
 
@@ -74,10 +74,10 @@ $$
 **Theorem.** For every $u \in \mathrm{U}(1)$ the map $R_u$ is an $\mathbb{R}$-linear bijection of $\mathbb{C}$ that preserves the modulus and the distance:
 
 $$
-|R_u(Q)| = |Q|, \qquad |R_u(Q) - R_u(Q_1)| = |Q - Q_1|.
+\sqrt{\langle R_u(Q)\rangle_{*}} = \sqrt{\langle Q\rangle_{*}}, \qquad \sqrt{\langle R_u(Q) - R_u(Q_1)\rangle_{*}} = \sqrt{\langle Q - Q_1\rangle_{*}}.
 $$
 
-**Proof.** Linearity: $R_u(Q + Q_1) = u(Q + Q_1) = uQ + uQ_1$ and $R_u(\lambda Q) = u \lambda Q = \lambda u Q$ for real $\lambda$. Bijectivity: $R_u^{-1} = R_{u^{-1}} = R_{\bar u}$. Isometry: $|R_u(Q) - R_u(Q_1)| = |u(Q-Q_1)| = |u|\,|Q-Q_1| = |Q-Q_1|$.
+**Proof.** Linearity: $R_u(Q + Q_1) = u(Q + Q_1) = uQ + uQ_1$ and $R_u(\lambda Q) = u \lambda Q = \lambda u Q$ for real $\lambda$. Bijectivity: $R_u^{-1} = R_{u^{-1}} = R_{\bar u}$. Isometry: $\sqrt{\langle R_u(Q) - R_u(Q_1)\rangle_{*}} = \sqrt{\langle u(Q-Q_1)\rangle_{*}} = |u|\,\sqrt{\langle Q-Q_1\rangle_{*}} = \sqrt{\langle Q-Q_1\rangle_{*}}$.
 
 The map $R_u$ fixes the origin and preserves distances, so it is an **isometry of the plane** fixing the origin.
 
@@ -123,7 +123,7 @@ where $\bar{\cdot}$ is complex conjugation. Consequently no rotation $R_u$ with 
 
 **Proof.** An automorphism $\sigma$ fixes $\mathbb{R}$ and is determined by $\sigma(i)$, which must satisfy $\sigma(i)^2 = \sigma(-1) = -1$, so $\sigma(i) = \pm i$; this is the computation of the Galois group of $\mathbb{C}/\mathbb{R}$, where the group is shown to be $\mathbb{Z}/2\mathbb{Z}$ generated by conjugation. A rotation $R_u$ with $u \neq 1$ does not fix $1$, since $R_u(1) = u$, so it is not an algebra automorphism.
 
-Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $\mathrm{U}(1)$ is a circle: the rotation group cannot be recovered from the multiplication alone. It is recovered only when the norm $N(Q) = Q\bar Q$ — equivalently, the Euclidean metric — is carried along with the algebra. The correct reading is that the isometries of the plane are the action of $\mathrm{U}(1)$ on $\mathbb{C}$ by multiplication, $u \mapsto R_u$, which is faithful; in a commutative algebra multiplication, not conjugation, is the natural action.
+Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $\mathrm{U}(1)$ is a circle: the rotation group cannot be recovered from the multiplication alone. It is recovered only when the norm $\langle Q\rangle_{*} = Q\bar Q$ — equivalently, the Euclidean metric — is carried along with the algebra. The correct reading is that the isometries of the plane are the action of $\mathrm{U}(1)$ on $\mathbb{C}$ by multiplication, $u \mapsto R_u$, which is faithful; in a commutative algebra multiplication, not conjugation, is the natural action.
 
 ## Reflections
 
@@ -137,7 +137,7 @@ $$
 
 **Theorem.** For every $u \in \mathrm{U}(1)$ the map $S_u$ is an $\mathbb{R}$-linear isometry of $\mathbb{C}$ and an involution, and $\det S_u = -1$; it is therefore orientation-reversing.
 
-**Proof.** Linearity over $\mathbb{R}$ is immediate; $|S_u(Q)| = |u|\,|\bar Q| = |Q|$ gives the isometry property, and
+**Proof.** Linearity over $\mathbb{R}$ is immediate; $\sqrt{\langle S_u(Q)\rangle_{*}} = |u|\,\sqrt{\langle\bar Q\rangle_{*}} = \sqrt{\langle Q\rangle_{*}}$ gives the isometry property, and
 
 $$
 S_u(S_u(Q)) = u\overline{u\bar Q} = u\bar u Q = |u|^2 Q = Q,
@@ -236,10 +236,10 @@ that is, if and only if $T = R_u$ or $T = S_u$ for some $u \in \mathrm{U}(1)$.
 **Proof.** Every $\mathbb{R}$-linear map has the form $T(Q) = aQ + b\bar Q$, because $T$ is determined by $T(1) = a + b$ and $T(i) = ai - b$. Then
 
 $$
-|T(Q)|^2 = |a|^2|Q|^2 + |b|^2|Q|^2 + a\bar b Q^2 + \overline{a\bar b Q^2} = (|a|^2 + |b|^2)|Q|^2 + 2\operatorname{Re}(a\bar b Q^2).
+\langle T(Q)\rangle_{*} = |a|^2\langle Q\rangle_{*} + |b|^2\langle Q\rangle_{*} + a\bar b Q^2 + \overline{a\bar b Q^2} = (|a|^2 + |b|^2)\langle Q\rangle_{*} + 2\operatorname{Re}(a\bar b Q^2).
 $$
 
-For $|T(Q)| = |Q|$ for all $Q$ one needs $|a|^2 + |b|^2 = 1$ and $a\bar b = 0$. If $b = 0$ then $|a| = 1$ and $T = R_a$; if $a = 0$ then $|b| = 1$ and $T = S_b$.
+For $\sqrt{\langle T(Q)\rangle_{*}} = \sqrt{\langle Q\rangle_{*}}$ for all $Q$ one needs $|a|^2 + |b|^2 = 1$ and $a\bar b = 0$. If $b = 0$ then $|a| = 1$ and $T = R_a$; if $a = 0$ then $|b| = 1$ and $T = S_b$.
 
 **Corollary.** The group of $\mathbb{R}$-linear isometries of $\mathbb{C}$ fixing the origin is
 
@@ -307,7 +307,7 @@ $$
 
 and the eigenvalues of $R_u$, over $\mathbb{C}$, are $\exp(i\theta)$ and $\exp(-i\theta)$. For a reflection the eigenvalues are $+1$ and $-1$, and $\det S_u = -1$, $\operatorname{tr} S_u = 0$.
 
-**Proof.** The determinant is $N(u) = 1$ and the trace is twice the real part of $u$, as for any multiplication operator on $\mathbb{C}$; the eigenvalues of $R_u$ are the roots of $\lambda^2 - 2\cos\theta\,\lambda + 1 = 0$, namely $\exp(\pm i\theta)$. The reflection was treated in the fixed-line theorem, where its two eigenvalues $+1$ and $-1$ on the fixed and perpendicular lines were exhibited, so its trace is $0$ and its determinant $-1$.
+**Proof.** The determinant is $\langle u\rangle_{*} = 1$ and the trace is twice the real part of $u$, as for any multiplication operator on $\mathbb{C}$; the eigenvalues of $R_u$ are the roots of $\lambda^2 - 2\cos\theta\,\lambda + 1 = 0$, namely $\exp(\pm i\theta)$. The reflection was treated in the fixed-line theorem, where its two eigenvalues $+1$ and $-1$ on the fixed and perpendicular lines were exhibited, so its trace is $0$ and its determinant $-1$.
 
 The trace recovers $\cos\theta$ and hence $\theta$ up to sign: it identifies the pair $\{R_u, R_{u^{-1}}\}$ and cannot distinguish a rotation from its inverse. The angle itself is not a continuous single-valued function on all of $SO(2)$, because $SO(2)$ is a circle and $\theta$ unwraps it; this is exactly the multivaluedness of the argument $\arg u$. Choosing a branch of $\arg$ on a slit circle gives a local angle, and the total change of the angle around the circle is $2\pi$, the winding number of $\theta \mapsto \exp(i\theta)$ about the origin.
 
@@ -317,7 +317,7 @@ Three distinct groups act on the complex plane and they should not be confused.
 
 **The algebra automorphisms.** By the theorem above, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2\mathbb{Z}$, the Galois group of $\mathbb{C}/\mathbb{R}$. It contains no rotation by an angle other than $0$ or $\pi$. So the algebraic structure of the field does not determine the rotation group.
 
-**The linear isometries.** The group of distance-preserving $\mathbb{R}$-linear maps fixing the origin is $O(2) = \mathrm{U}(1) \cup \mathrm{U}(1)\bar{\cdot}$, of which $SO(2) = \mathrm{U}(1)$ is the orientation-preserving half. This group is determined by the algebra *together with* its norm $N(Q) = Q\bar Q$, equivalently the inner product $\operatorname{Re}(\bar Q Q_1)$.
+**The linear isometries.** The group of distance-preserving $\mathbb{R}$-linear maps fixing the origin is $O(2) = \mathrm{U}(1) \cup \mathrm{U}(1)\bar{\cdot}$, of which $SO(2) = \mathrm{U}(1)$ is the orientation-preserving half. This group is determined by the algebra *together with* its norm $\langle Q\rangle_{*} = Q\bar Q$, equivalently the inner product $\operatorname{Re}(\bar Q Q_1)$.
 
 **The similarities.** The group of $\mathbb{C}$-linear bijections of $\mathbb{C}$, that is, the maps $Q \mapsto aQ$ with $a \neq 0$, is $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. Each such map is a rotation followed by a scaling by $|a|$, and it preserves angles but not distances; the rotations are the isometric part.
 
@@ -325,8 +325,8 @@ This is the precise sense in which multiplication is the natural action. In $\ma
 
 | Group | Elements | Structure | Fixes |
 |---|---|---|---|
-| $\mathrm{U}(1) \cong SO(2)$ | $Q \mapsto uQ$, $\lvert u\rvert = 1$ | circle group, connected, abelian | the origin only, when $u \neq 1$ |
-| $\mathrm{U}(1)\bar{\cdot}$ | $Q \mapsto u\bar Q$, $\lvert u\rvert = 1$ | a coset, not a group | each element fixes a line through the origin |
+| $\mathrm{U}(1) \cong SO(2)$ | $Q \mapsto uQ$, $\langle u\rangle_{*} = 1$ | circle group, connected, abelian | the origin only, when $u \neq 1$ |
+| $\mathrm{U}(1)\bar{\cdot}$ | $Q \mapsto u\bar Q$, $\langle u\rangle_{*} = 1$ | a coset, not a group | each element fixes a line through the origin |
 | $O(2)$ | rotations and reflections | $\mathrm{U}(1) \rtimes \mathbb{Z}/2\mathbb{Z}$, two components | the origin |
 | $\mathbb{C}^\times$ | $Q \mapsto aQ$, $a \neq 0$ | $\mathbb{R}_{>0} \times \mathrm{U}(1)$, similarities | the origin |
 | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ | $\mathrm{id}$, $\bar{\cdot}$ | $\mathbb{Z}/2\mathbb{Z}$, the Galois group | $\mathbb{R}$ pointwise |
@@ -349,15 +349,15 @@ $$
 
 in which the translations $\mathbb{C}$ form a normal subgroup and $O(2)$ acts on them by its linear action. The orientation-preserving isometries are those of the first form, and they form the subgroup $\mathbb{C} \rtimes SO(2)$.
 
-**Proof.** The decomposition $T = L + c$ with $c = T(0)$ and $L \in O(2)$ gives the two forms. Conversely each displayed map is an isometry, since $|T(Q) - T(Q_1)| = |u(Q-Q_1)| = |Q-Q_1|$ in the first case and $|u(\bar Q - \bar Q_1)| = |Q-Q_1|$ in the second. The composition law $(L, c)(L', c') = (LL', L c' + c)$ is that of the semidirect product, and the determinant of the linear part gives the orientation.
+**Proof.** The decomposition $T = L + c$ with $c = T(0)$ and $L \in O(2)$ gives the two forms. Conversely each displayed map is an isometry, since $\sqrt{\langle T(Q) - T(Q_1)\rangle_{*}} = \sqrt{\langle u(Q-Q_1)\rangle_{*}} = \sqrt{\langle Q-Q_1\rangle_{*}}$ in the first case and $\sqrt{\langle u(\bar Q - \bar Q_1)\rangle_{*}} = \sqrt{\langle Q-Q_1\rangle_{*}}$ in the second. The composition law $(L, c)(L', c') = (LL', L c' + c)$ is that of the semidirect product, and the determinant of the linear part gives the orientation.
 
 Every orientation-preserving isometry with $u = 1$ is a translation, and with $u \neq 1$ it is a rotation about its unique fixed point; every orientation-reversing isometry is a reflection if it has a fixed point and a glide reflection otherwise. The two-element structure $\mathbb{Z}/2\mathbb{Z}$ of $O(2)/SO(2)$ and the circle $\mathrm{U}(1)$ of rotations are the two ingredients of this classification.
 
 ## Summary
 
-The unit circle $\mathrm{U}(1) = \{u : \lvert u\rvert = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto \exp(i\theta)$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ by the polar decomposition.
+The unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto \exp(i\theta)$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ by the polar decomposition.
 
-Multiplication by a unit, $R_u(Q) = uQ$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = \exp(i\theta)$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $\exp(\pm i\theta)$. The map $u \mapsto R_u$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$. The sandwich $Q \mapsto uQu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(Q) = Q\bar Q$. Multiplication, not conjugation, is the natural action.
+Multiplication by a unit, $R_u(Q) = uQ$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = \exp(i\theta)$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $\exp(\pm i\theta)$. The map $u \mapsto R_u$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$. The sandwich $Q \mapsto uQu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $\langle Q\rangle_{*} = Q\bar Q$. Multiplication, not conjugation, is the natural action.
 
 The reflections are the maps $S_u(Q) = u\bar Q$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = \exp(2i\alpha)$. They form the coset $\mathrm{U}(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 
@@ -370,10 +370,10 @@ The orthogonal group is $O(2) = \mathrm{U}(1) \cup \mathrm{U}(1)\bar{\cdot}$, wi
 | $\mathbb{C}$ | Complex plane |
 | $Q = q + i q'$ | General complex number |
 | $\bar Q = q - i q'$ | Complex conjugate |
-| $\lvert Q\rvert = \sqrt{Q\bar Q}$ | Modulus |
-| $N(Q) = Q\bar Q$ | Norm |
+| $\sqrt{\langle Q\rangle_{*}} = \sqrt{Q\bar Q}$ | Modulus |
+| $\langle Q\rangle_{*} = Q\bar Q$ | Norm |
 | $\operatorname{Re}(\bar Q Q_1)$ | Real inner product |
-| $\mathrm{U}(1) = \{u : \lvert u\rvert = 1\}$ | Unit circle, unit group of $\mathbb{C}$ |
+| $\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$ | Unit circle, unit group of $\mathbb{C}$ |
 | $\exp(i\theta) = \cos\theta + i\sin\theta$ | Exponential of an angle |
 | $R_u(Q) = uQ$ | Rotation by the unit $u$; determinant $1$, trace $2\cos\theta$ for $u = \exp(i\theta)$ |
 | $S_u(Q) = u\bar Q$ | Reflection determined by the unit $u$ |

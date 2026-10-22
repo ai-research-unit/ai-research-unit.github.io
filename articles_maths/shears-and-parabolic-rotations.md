@@ -17,7 +17,7 @@ the elementary shear matrix $\begin{pmatrix}1&0\\s&1\end{pmatrix}$. The family $
 
 No physics is invoked anywhere. The word "rotation" is used throughout in the algebraic sense of a one-parameter subgroup of the group of units acting linearly on the algebra, exactly as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
-Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$; $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$; $\bar Q = q - \varepsilon q'$; $N(Q) = Q\bar Q = q^2$; $q^2 + q'^2$ the Euclidean form; $\mathrm{M} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(q + \varepsilon q') = q$ the augmentation.
+Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$; $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$; $\bar Q = q - \varepsilon q'$; $\langle Q\rangle_{*} = Q\bar Q = q^2$; $q^2 + q'^2$ the Euclidean form; $\mathrm{M} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(q + \varepsilon q') = q$ the augmentation.
 
 ## The Group of Units
 
@@ -71,15 +71,15 @@ The algebra article records that the unit group is an extension of $R^\times$ by
 
 ### The Norm-One Group
 
-The norm $N(Q) = Q\bar Q = q^2$ of *Dual-Numbers Norm and Invertibility* is multiplicative, $N(uv) = N(u)N(v)$, and its radical is $\mathrm{M}$: it vanishes on $\mathrm{M}$ and is nonzero off it. The **norm-one group** is
+The norm $\langle Q\rangle_{*} = Q\bar Q = q^2$ of *Dual-Numbers Norm and Invertibility* is multiplicative, $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*}$, and its radical is $\mathrm{M}$: it vanishes on $\mathrm{M}$ and is nonzero off it. The **norm-one group** is
 
 $$
-H = \{Q \in \mathbb{D}' : N(Q) = 1\}.
+H = \{Q \in \mathbb{D}' : \langle Q\rangle_{*} = 1\}.
 $$
 
 **Proposition.** $H = \{q + \varepsilon q' : q = \pm 1\}$ is the union of the two parallel lines of real part $\pm1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.
 
-**Proof.** $N(q + \varepsilon q') = q^2 = 1$ gives $q = \pm1$ and leaves $q'$ free; the two lines meet the real axis at $1$ and $-1$, and the component through $1$ is the line $q = 1$, which is $1 + \mathrm{M}$.
+**Proof.** $\langle q + \varepsilon q'\rangle_{*} = q^2 = 1$ gives $q = \pm1$ and leaves $q'$ free; the two lines meet the real axis at $1$ and $-1$, and the component through $1$ is the line $q = 1$, which is $1 + \mathrm{M}$.
 
 The three norm-one sets of the three two-dimensional algebras are therefore a circle, a hyperbola and a pair of parallel lines. The degeneration is the visible form of $\varepsilon^2 = 0$: the quadratic form has lost its non-degenerate directions, and its level set is no longer a curve of curvature but a flat pair of lines.
 
@@ -286,9 +286,9 @@ The unit group $(\mathbb{D}')^\times$ is a two-dimensional abelian Lie group, an
 
 The shear is an "orthogonal" transformation of the degenerate norm, in the following sense.
 
-**Proposition.** A linear map $T = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $N(TQ) = N(Q)$ for all $Q$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such a $T$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.
+**Proposition.** A linear map $T = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $\langle TQ\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such a $T$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.
 
-**Proof.** $N(T(q+\varepsilon q')) = (a\,q + b\,q')^2$ must equal $q^2$ for all $q, q'$; comparing coefficients of $q^2$, $q\,q'$ and $q'^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det T = ad = \pm d$, so $T$ is invertible exactly when $d \neq 0$.
+**Proof.** $\langle T(q+\varepsilon q')\rangle_{*} = (a\,q + b\,q')^2$ must equal $q^2$ for all $q, q'$; comparing coefficients of $q^2$, $q\,q'$ and $q'^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det T = ad = \pm d$, so $T$ is invertible exactly when $d \neq 0$.
 
 The group of isometries of the form is therefore $T = \begin{pmatrix} \pm 1 & 0 \\ c & d \end{pmatrix}$ with $d \neq 0$, and its identity component is $\left\{\begin{pmatrix} 1 & 0 \\ c & d \end{pmatrix} : c \in \mathbb{R},\ d > 0\right\}$, of dimension two; the shear group $S(s) = \begin{pmatrix}1&0\\ s&1\end{pmatrix}$ is its unipotent subgroup with $d = 1$.
 
@@ -296,7 +296,7 @@ So the stabiliser of the form is larger than in the non-degenerate cases, becaus
 
 ### The Norm-One Set
 
-The norm-one set $N(Q) = 1$ is the pair of parallel lines $q = \pm1$. The identity component of the group of units, $\{q > 0\}$, meets this set in the single line $q = 1$, which is the shear group $1 + \mathrm{M}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $\mathrm{U}(1)$ to $SO(1,1)_0$ to $G$.
+The norm-one set $\langle Q\rangle_{*} = 1$ is the pair of parallel lines $q = \pm1$. The identity component of the group of units, $\{q > 0\}$, meets this set in the single line $q = 1$, which is the shear group $1 + \mathrm{M}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $\mathrm{U}(1)$ to $SO(1,1)_0$ to $G$.
 
 ### The Contraction from the Elliptic and Hyperbolic Cases
 
@@ -329,7 +329,7 @@ Two consequences make the parabolic case the degenerate end of the trichotomy.
 
 ## Summary
 
-The **group of units** of $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. For commutative $R$ it is the direct product $(\mathbb{D}'_R)^\times \cong R^\times \times (R,+)$ via $q + qs\varepsilon \leftrightarrow (q,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm $N(Q) = q^2$ is degenerate with radical $\mathrm{M}$, and its norm-one set is the pair of parallel lines $q = \pm1$, whose identity component is the shear group $1 + \mathrm{M}$.
+The **group of units** of $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. For commutative $R$ it is the direct product $(\mathbb{D}'_R)^\times \cong R^\times \times (R,+)$ via $q + qs\varepsilon \leftrightarrow (q,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm $\langle Q\rangle_{*} = q^2$ is degenerate with radical $\mathrm{M}$, and its norm-one set is the pair of parallel lines $q = \pm1$, whose identity component is the shear group $1 + \mathrm{M}$.
 
 Multiplication by a unit is a **dilation composed with a shear**: in the basis $(1, \varepsilon)$ the matrix of multiplication by $q + \varepsilon q'$ is $[q + \varepsilon q'] = q(I + (q'/q)E)$ with $E = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ the matrix of multiplication by $\varepsilon$, $E^2 = 0$. The **shear** $S(s) = I + sE$ acts by $q + \varepsilon q' \mapsto q + (q'+s q)\varepsilon$; it fixes $\mathrm{M}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.
 
@@ -344,8 +344,8 @@ The **Lie algebra** of the shear group is the line $\mathrm{G} = \mathbb{R}E = \
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual number algebra, $\varepsilon^2 = 0$ |
 | $\mathbb{D}$ | Split complex algebra, unit $j$, $j^2 = +1$ |
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
-| $N(Q) = Q\bar Q = q^2$ | Degenerate norm, radical $\mathrm{M}$ |
-| $H = \{Q : N(Q) = 1\}$ | Norm-one group, lines $q = \pm1$; $H_0 = 1+\mathrm{M}$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2$ | Degenerate norm, radical $\mathrm{M}$ |
+| $H = \{Q : \langle Q\rangle_{*} = 1\}$ | Norm-one group, lines $q = \pm1$; $H_0 = 1+\mathrm{M}$ |
 | $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, $\mathrm{M}^2 = 0$ |
 | $\pi(q + \varepsilon q') = q$ | Augmentation, kernel $\mathrm{M}$ |
 | $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$ | Group of units |

@@ -70,7 +70,7 @@ $$
 
 **Theorem (the algorithm is exact and decomposes).** The orbit of $\breve Q=(Q_{+},Q_{-})$ under $F_{C}$ is bounded exactly when both coordinate orbits are bounded, and the numerical criterion is applied to each coordinate separately: with the standard escape radius $R$ of the complex family, if $|Q_{+}|>R$ or $|Q_{-}|>R$ after an iterate then the orbit escapes, and the membership of $C$ in the connectedness locus is decided coordinatewise.
 
-**Proof.** The orbit is the pair of the coordinate orbits, and the norm $\langle\cdot\rangle_{\natural*}$ is unbounded exactly when one coordinate modulus is unbounded; the complex escape criterion $|\zeta|>R$ with $R$ the standard radius of the quadratic family is applied to each coordinate.
+**Proof.** The orbit is the pair of the coordinate orbits, and the norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is unbounded exactly when one coordinate modulus is unbounded; the complex escape criterion $|\zeta|>R$ with $R$ the standard radius of the quadratic family is applied to each coordinate.
 
 **Corollary (the computational picture).** The two-dimensional complex pictures of the reduced biquaternion locus are drawn from the two complex pictures of the Mandelbrot set; the algorithm does not need the algebra at all, only the two complex memberships, and the escape time of an element is the smaller of the escape times of its two coordinates.
 

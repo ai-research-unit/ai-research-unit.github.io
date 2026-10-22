@@ -76,11 +76,11 @@ and the convolution splits in the idempotent coordinates into the two ordinary c
 
 **The obstruction is deconvolution, not convolution.** The convolution theorem holds for all signals, but the **inverse filter** $h=f*g$ solved for $g$ requires the division by $(\mathcal F f)(m)$ at each frequency, and $(\mathcal F f)(m)$ may be a zero divisor; the division then fails and the deconvolution is not determined. This is the point where the commutative algebra with zero divisors differs from the field.
 
-**The norm is not multiplicative along the transform.** The Euclidean norm $\langle\cdot\rangle_{\natural*}$ of the product is not the product of the norms, $\langle fh\rangle_{\natural*}\neq K(f)K(h)$, so the energy identity does not hold with the Euclidean norm; what holds is the pair of the classical Parseval identities in the two coordinates, each with the norm of the corresponding complex coordinate.
+**The norm is not multiplicative along the transform.** The Euclidean norm $\langle\cdot\rangle_{\mathrm{ts}*}$ of the product is not the product of the norms, $\langle fh\rangle_{\mathrm{ts}*}\neq K(f)K(h)$, so the energy identity does not hold with the Euclidean norm; what holds is the pair of the classical Parseval identities in the two coordinates, each with the norm of the corresponding complex coordinate.
 
 **The transform of a unit need not be a unit.** Because the transform is a sum with complex scalar coefficients, the transformed samples may be zero divisors even when the original samples are units, so the pointwise invertibility of the transform is not preserved by the transform; the invertibility that is preserved is that of the transform as a linear operator, not of its values.
 
-*Proof.* Division by a zero divisor fails by definition; $\langle fh\rangle_{\natural*}-K(f)K(h)$ is the cross term computed in the discussion of the norm in *Topology and Metric for Each of the Operations*; and a sum of units is generally not a unit, the zero divisors being a union of two lines, so the sum can land on one of them.
+*Proof.* Division by a zero divisor fails by definition; $\langle fh\rangle_{\mathrm{ts}*}-K(f)K(h)$ is the cross term computed in the discussion of the norm in *Topology and Metric for Each of the Operations*; and a sum of units is generally not a unit, the zero divisors being a union of two lines, so the sum can land on one of them.
 
 ## The Two-Dimensional Transform
 

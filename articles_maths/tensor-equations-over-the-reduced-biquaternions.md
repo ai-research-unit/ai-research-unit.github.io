@@ -10,7 +10,7 @@ The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion t
 
 ## The Solvability Criterion
 
-Let $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$, $B\in\mathbb{B}_{\mathrm r}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm r}^{n_2\times n_4\times n_3}$. The equation is
+Let $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$, $B\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_4\times n_3}$. The equation is
 
 $$
 A\ast X=B.
@@ -36,7 +36,7 @@ $$
 X=A^\dagger\ast B+L_A\ast Y,
 $$
 
-where $Y\in\mathbb{B}_{\mathrm r}^{n_2\times n_4\times n_3}$ is arbitrary.
+where $Y\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_4\times n_3}$ is arbitrary.
 
 *Proof.* If $X$ is a solution, then $R_A\ast B=R_A\ast A\ast X=0$ because $R_A\ast A=0$. Conversely, if $R_A\ast B=0$, then $A\ast A^\dagger\ast B=B$, so $X_0=A^\dagger\ast B$ is a solution. For an arbitrary solution $X$,
 
@@ -90,7 +90,7 @@ Assembling the slices and inverting the transform gives the stated form. The nor
 
 ## The Hermitian Solution
 
-Let $A,B\in\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ be square, and suppose that $X$ is required to be Hermitian, $X^{\mathsf H}=X$. The equation is $A\ast X=B$ with $B$ square.
+Let $A,B\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ be square, and suppose that $X$ is required to be Hermitian, $X^{\mathsf H}=X$. The equation is $A\ast X=B$ with $B$ square.
 
 **Theorem (Hermitian solutions).** The equation has a Hermitian solution if and only if
 
@@ -106,7 +106,7 @@ X=A^\dagger\ast B+(A^\dagger\ast B)^{\mathsf H}
 +L_A\ast U\ast L_A,
 $$
 
-where $U\in\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ is an arbitrary Hermitian tensor.
+where $U\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ is an arbitrary Hermitian tensor.
 
 *Proof.* If $X$ is Hermitian and $A\ast X=B$, then $R_A\ast B=R_A\ast A\ast X=0$, and $B^{\mathsf H}=X^{\mathsf H}\ast A^{\mathsf H}=X\ast A^{\mathsf H}$, so
 
@@ -132,7 +132,7 @@ because $X_0\ast A^{\mathsf H}=B^{\mathsf H}$ and $B^{\mathsf H}\ast(A^\dagger)^
 
 ## The Right-Handed Equation
 
-Let $A\in\mathbb{B}_{\mathrm r}^{n_2\times n_4\times n_3}$, $B\in\mathbb{B}_{\mathrm r}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$. The equation is
+Let $A\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_4\times n_3}$, $B\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$. The equation is
 
 $$
 X\ast A=B.
@@ -144,7 +144,7 @@ $$
 X=B\ast A^\dagger+W\ast R_A,
 $$
 
-where $R_A=\mathrm I_{n_2}-A\ast A^\dagger$ and $W\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ is arbitrary. The minimum-norm least-squares solution is $X=B\ast A^\dagger$. The normal equation is
+where $R_A=\mathrm I_{n_2}-A\ast A^\dagger$ and $W\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ is arbitrary. The minimum-norm least-squares solution is $X=B\ast A^\dagger$. The normal equation is
 
 $$
 (X\ast A-B)\ast A^{\mathsf H}=0.

@@ -1,8 +1,8 @@
-# __The Polar Element Representation of Biquaternions__
+# __The Polar Decomposition of Biquaternions__
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the algebra of the Lorentz group, of the four-vector, and of the spinor of the corpus. This article reads the **polar representation** from the physics side: the word
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the algebra of the Lorentz group, of the four-vector, and of the spinor of the corpus. This article reads the **polar decomposition** from the physics side: the word
 
 $$
 \tilde{Q} = r\,\exp(i\alpha)\,\exp\bigl(-i\psi\vec u_{\mathrm b}\bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) ,
@@ -109,13 +109,13 @@ $$
 \det\mathsf{M}_4(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^2 , \qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q}) = 4Q_t .
 $$
 
-The modulus of the polar representation is $\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, so the scale and the phase are the polar form of the determinant,
+The modulus of the polar decomposition is $\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, so the scale and the phase are the polar form of the determinant,
 
 $$
 r = \left|\det\mathsf{M}_2(\tilde{Q})\right|^{1/2} , \qquad \alpha = \tfrac12\arg\det\mathsf{M}_2(\tilde{Q}) ,
 $$
 
-and the scale in particular is the square root of the modulus of the determinant. Every statement about the scale is therefore a statement about the determinant of the matrix representative, and the failure of the representation at $\langle\tilde{Q}\rangle_{\natural} = 0$ is the failure of the matrix representative to be invertible. In the four-vector interpretation, $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone: the polar representation of a biquaternion is available exactly on the nonzero elements off the light cone.
+and the scale in particular is the square root of the modulus of the determinant. Every statement about the scale is therefore a statement about the determinant of the matrix representative, and the failure of the representation at $\langle\tilde{Q}\rangle_{\natural} = 0$ is the failure of the matrix representative to be invertible. In the four-vector interpretation, $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone: the polar decomposition of a biquaternion is available exactly on the nonzero elements off the light cone.
 
 **The condition, and why it is mild.** The representation of $\tilde{Q}$ exists if and only if $\tilde{Q}$ lies outside the light cone,
 
@@ -157,11 +157,11 @@ $$
 \tilde U_{\mathrm L} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{M}_+,\quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1) .
 $$
 
-This is the **Cartan decomposition** of the Lorentz group as the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations* states it: every unit-norm biquaternion is a boost times a spatial rotation, unique when the boost is required to have positive-definite matrix image. The polar representation therefore supplies a proof and a normalisation of the Cartan decomposition at once: the boost is the Hermitian positive square root of $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}$, and the positivity is exactly the condition that removes the sign ambiguity of the Cartan factorisation. On this slice the scale contributes nothing, and the whole of the physical content is in the pair $(\tilde U_{\mathrm b},\tilde u_{\mathrm r})$. The four-vector boost factor of §*The Boost* is $B=(\tilde U_{\mathrm b}^{\natural})^2=\tilde U_{\mathrm b}^{-2}$, the inverse square of this rotor, and not a second name for it.
+This is the **Cartan decomposition** of the Lorentz group as the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations* states it: every unit-norm biquaternion is a boost times a spatial rotation, unique when the boost is required to have positive-definite matrix image. The polar decomposition therefore supplies a proof and a normalisation of the Cartan decomposition at once: the boost is the Hermitian positive square root of $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}$, and the positivity is exactly the condition that removes the sign ambiguity of the Cartan factorisation. On this slice the scale contributes nothing, and the whole of the physical content is in the pair $(\tilde U_{\mathrm b},\tilde u_{\mathrm r})$. The four-vector boost factor of §*The Boost* is $B=(\tilde U_{\mathrm b}^{\natural})^2=\tilde U_{\mathrm b}^{-2}$, the inverse square of this rotor, and not a second name for it.
 
 ### What the Two Extra Factors Mean
 
-For a general element of the algebra, and not only for a Lorentz rotor, the modulus is not the unit and cannot be discarded. The group of units of $\mathbb{B}$ is $GL(2,\mathbb{C})$, whose polar representation carries a positive scale and a unitary phase in addition to the positive Hermitian factor and the unitary factor, and the two extra factors are the two extra real dimensions $1+1$ of the modulus. In the four-vector interpretation they are the two numbers that specify a four-vector rather than a Lorentz transformation: its **length**, the scale, and the **sector** in which it lives, read off the phase.
+For a general element of the algebra, and not only for a Lorentz rotor, the modulus is not the unit and cannot be discarded. The group of units of $\mathbb{B}$ is $GL(2,\mathbb{C})$, whose polar decomposition carries a positive scale and a unitary phase in addition to the positive Hermitian factor and the unitary factor, and the two extra factors are the two extra real dimensions $1+1$ of the modulus. In the four-vector interpretation they are the two numbers that specify a four-vector rather than a Lorentz transformation: its **length**, the scale, and the **sector** in which it lives, read off the phase.
 
 ## The Central Phase
 
@@ -175,7 +175,7 @@ and the phase is thus the object that makes the time component imaginary: it tak
 
 ### The Phase as the Central Circle
 
-The phase factor $\exp(i\alpha)$ is central, so it commutes with every element of the algebra and may be written on either side of the other three factors. The corpus reads this circle as the framework's internal symmetry: it is the central $\mathrm{U}(1)$ of the gauge structure, the phase of the mass term that bosonizes to a shift of the boson field, the weighting of the $\theta$ vacuum, and the circle of the $\mathrm{Spin}^c$ structure of the spinor module. The polar representation adds to those interpretations one statement that is purely algebraic: the phase is determined by the element as half the argument of its determinant, so for a **Lorentz rotor** it vanishes identically, and a nonzero phase is the obstruction to an element of the algebra being a Lorentz transformation.
+The phase factor $\exp(i\alpha)$ is central, so it commutes with every element of the algebra and may be written on either side of the other three factors. The corpus reads this circle as the framework's internal symmetry: it is the central $\mathrm{U}(1)$ of the gauge structure, the phase of the mass term that bosonizes to a shift of the boson field, the weighting of the $\theta$ vacuum, and the circle of the $\mathrm{Spin}^c$ structure of the spinor module. The polar decomposition adds to those interpretations one statement that is purely algebraic: the phase is determined by the element as half the argument of its determinant, so for a **Lorentz rotor** it vanishes identically, and a nonzero phase is the obstruction to an element of the algebra being a Lorentz transformation.
 
 ### The Phase Cannot Be Removed by a Lorentz Transformation
 
@@ -191,7 +191,7 @@ Hence $r$ and $\alpha$ are invariants of the orbit of $\tilde{Q}$ under the Lore
 
 ### The Boost Factor Is a Square
 
-The boost factor of the polar representation of a four-vector is the **square** of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde U_{\mathrm b}$ acts on a four-vector by conjugation, $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$, so the rotor appears twice. With the corpus's convention $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, $\vec u_{\mathrm b} = \vec v/|\vec v|$, the rotor carries the four-position of a particle of velocity $\vec v$ into its rest four-position,
+The boost factor of the polar decomposition of a four-vector is the **square** of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde U_{\mathrm b}$ acts on a four-vector by conjugation, $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$, so the rotor appears twice. With the corpus's convention $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, $\vec u_{\mathrm b} = \vec v/|\vec v|$, the rotor carries the four-position of a particle of velocity $\vec v$ into its rest four-position,
 
 $$
 \tilde U_{\mathrm b}\,\tilde{Q}\,\tilde U_{\mathrm b}^{*} = ic\tau\,e_t ,
@@ -211,7 +211,7 @@ $$
 \tilde U_{\mathrm b}^{\natural} = B^{1/2} ,
 $$
 
-the **unique positive-definite square root** of the boost factor. This is the normalisation that the Cartan decomposition of the corpus describes by requiring the matrix image of the boost to be positive definite, and it is the reason the polar representation has no $\pm$ ambiguity: the two square roots of $B$ are $\tilde U_{\mathrm b}^{\natural}$ and $-\tilde U_{\mathrm b}^{\natural}$, one positive definite and one negative definite, and the representation selects the first.
+the **unique positive-definite square root** of the boost factor. This is the normalisation that the Cartan decomposition of the corpus describes by requiring the matrix image of the boost to be positive definite, and it is the reason the polar decomposition has no $\pm$ ambiguity: the two square roots of $B$ are $\tilde U_{\mathrm b}^{\natural}$ and $-\tilde U_{\mathrm b}^{\natural}$, one positive definite and one negative definite, and the representation selects the first.
 
 ### The Boost Is the Four-Velocity in the Hermitian Normalisation
 
@@ -241,13 +241,13 @@ $$
 
 ## The Rotor
 
-**The rotor is the spatial rotation.** The fourth factor is the unit real quaternion, the element of $\mathrm{Sp}(1) = SU(2)$, the group of unit real quaternions, and it is the spatial rotation of the frame. It is not optional even for a pure boost, because the boosts do not close: the product of two non-collinear boost rotors has a non-hermitian part, and the Cartan decomposition of that product exhibits it as the **Thomas–Wigner rotation**, which is the rotor factor of the polar representation of the product. The algebraic mechanism is the non-commutativity of the boost factor with the rotor, taken up with its numbers in §*The Order of the Factors* below. The composition law, the angle of the Wigner rotation, and the information content of the boost are the subjects of the companion articles *The Lorentz Group in Biquaternionic Form — Structure and Representations*, *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* and *Exercise: The Thomas Precession*.
+**The rotor is the spatial rotation.** The fourth factor is the unit real quaternion, the element of $\mathrm{Sp}(1) = SU(2)$, the group of unit real quaternions, and it is the spatial rotation of the frame. It is not optional even for a pure boost, because the boosts do not close: the product of two non-collinear boost rotors has a non-hermitian part, and the Cartan decomposition of that product exhibits it as the **Thomas–Wigner rotation**, which is the rotor factor of the polar decomposition of the product. The algebraic mechanism is the non-commutativity of the boost factor with the rotor, taken up with its numbers in §*The Order of the Factors* below. The composition law, the angle of the Wigner rotation, and the information content of the boost are the subjects of the companion articles *The Lorentz Group in Biquaternionic Form — Structure and Representations*, *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* and *Exercise: The Thomas Precession*.
 
 The rotor of the representation of a four-vector has a direct kinematic interpretation. A four-position on a world line with velocity $\vec v$ has $B = (\tilde U_{\mathrm b}^{\natural})^2$ and $\tilde u_{\mathrm r} = e_t$ in the frame in which $\vec v$ is the velocity, as the table of §*The Boost* shows: the boost factor is the square of the rotor that carries the rest frame to the lab frame, and the rotor is trivial because a single boost needs no rotation. The rotor becomes nontrivial whenever the element is not a pure boost of a coordinate direction, and it is then the rotation that the residual frame carries.
 
 ### The Rotor and the Thomas–Wigner Rotation
 
-The rotor is the compact factor of the word, and it is what makes the boosts a group only up to a rotation. Two boost rotors of the corpus, of rapidities along different axes, multiply to an element whose Cartan decomposition splits into a boost of the composed rapidity and a rotation: the **Thomas–Wigner rotation**. The rotation is a rotor of the polar representation, and its angle and axis are computable from the two boost data; the worked instance with its numbers is in §*The Order of the Factors* below, where the two orderings of the same pair of boosts are compared. The rotor is also the only compact non-central factor, so it is the factor that carries the topological $\pm e_t$ cover of the corpus (*The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*).
+The rotor is the compact factor of the word, and it is what makes the boosts a group only up to a rotation. Two boost rotors of the corpus, of rapidities along different axes, multiply to an element whose Cartan decomposition splits into a boost of the composed rapidity and a rotation: the **Thomas–Wigner rotation**. The rotation is a rotor of the polar decomposition, and its angle and axis are computable from the two boost data; the worked instance with its numbers is in §*The Order of the Factors* below, where the two orderings of the same pair of boosts are compared. The rotor is also the only compact non-central factor, so it is the factor that carries the topological $\pm e_t$ cover of the corpus (*The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*).
 
 ## Worked Examples
 
@@ -301,7 +301,7 @@ a rotation of $2.161669$ rad about $(1,2,0)/\sqrt5$. The element is a scale, a p
 
 ### A Null Four-Vector
 
-Take $\tilde{Q} = i\,e_t + \vec e_x$, a displacement on the light cone, since $\langle\tilde{Q}\rangle_{\natural} = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and on the four-vector slice the zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
+Take $\tilde{Q} = i\,e_t + \vec e_x$, a displacement on the light cone, since $\langle\tilde{Q}\rangle_{\natural} = -1+1 = 0$. The polar decomposition does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and on the four-vector slice the zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
 
 
 ## The Order of the Factors
@@ -339,7 +339,7 @@ $$
 
 with a complex modulus in place of the corpus's scale and phase. Their trigonometric factor is the rotor $\tilde u_{\mathrm r}$ of this section exactly, and their hyperbolic factor is the boost about the rotor-conjugated axis, $\tilde u_{\mathrm r}^{-1}B\tilde u_{\mathrm r}$, of the same rapidity and the same biquaternion norm; recomputed on their own example the two factors multiply to the corpus word, since $\tilde u_{\mathrm r}\,(\tilde u_{\mathrm r}^{-1}B\tilde u_{\mathrm r}) = B\tilde u_{\mathrm r}$. Their reversed order is therefore not the reversed physical order of this section and must not be read as an identification of $\tilde u_{\mathrm r}B$ with $B\tilde u_{\mathrm r}$: the hyperbolic factor they write is not $B$ but its conjugate, the conjugation being the one already displayed above, which rotates the boost axis and leaves the rapidity alone. The same element is described by the two words, once with the boost in the original frame and once with the boost in the rotated one.
 
-The non-commutativity of $B$ with $\tilde u_{\mathrm r}$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*: with the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar representation of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
+The non-commutativity of $B$ with $\tilde u_{\mathrm r}$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*: with the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar decomposition of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
 
 ## Physical Readings
 
@@ -354,7 +354,7 @@ The four factors are read as the **four moduli of a scattering amplitude**: the 
 
 ## Summary
 
-The polar representation of a biquaternion is $r \exp(i\alpha)B\tilde u_{\mathrm r}$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde U_{\mathrm L} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with the positivity of the boost factor supplying the normalisation.
+The polar decomposition of a biquaternion is $r \exp(i\alpha)B\tilde u_{\mathrm r}$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde U_{\mathrm L} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with the positivity of the boost factor supplying the normalisation.
 
 The modulus is $\sqrt{\det\mathsf{M}_2(\tilde{Q})}$, the scale is its modulus and the phase is half its argument, and both are invariants of the Lorentz orbit, since the determinant is multiplicative and the rotor conjugation multiplies by $\langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = 1$. The boost factor of a four-vector is the square of the physics boost rotor in the rest-to-lab normalisation, $B = (\tilde U_{\mathrm b}^{\natural})^2 = -(i/c)\tilde{V}$, so that rotor is the unique positive-definite square root of the representation's boost; for a four-position on a world line the scale is $c$ times the proper time and the phase is $\pi/2$, the angle that makes the time coordinate imaginary.
 
@@ -379,7 +379,7 @@ The rotor is the Thomas–Wigner rotation when two boosts are composed, and it i
 
 ## Further Reading
 
-- [The Polar Element Representation in Subspaces](the-polar-element-representation-in-subspaces.html), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
+- [The Polar Decomposition in Subspaces](the-polar-decomposition-in-subspaces.html), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the 2×2 and 4×4 matrix images, the determinant $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, the two chiralities and the coefficient space.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Cartan decomposition, the non-closure of the boosts and the Thomas–Wigner rotation.
 - [The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form](the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html), for the $\pm e_t$ kernel and the sign normalisation of the rotor.

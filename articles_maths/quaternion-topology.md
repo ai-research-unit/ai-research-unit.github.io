@@ -27,7 +27,7 @@ is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product 
 
 **Theorem.** The quaternion algebra is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{H}) = 0$ for all $n\geq1$.
 
-*Proof.* The straight-line homotopy $\langle t,\tilde q\rangle_{*} = (1-t)\tilde q$ is continuous, begins at the identity and ends at the constant map $0$, so the identity of $\mathbb{H}$ is null-homotopic; a contractible space has all homotopy groups trivial.
+*Proof.* The straight-line homotopy $H(t,\tilde q) = (1-t)\tilde q$ is continuous, begins at the identity and ends at the constant map $0$, so the identity of $\mathbb{H}$ is null-homotopic; a contractible space has all homotopy groups trivial.
 
 **Corollary.** Every vector subspace of $\mathbb{H}$ is contractible as a topological space in its own right, and in particular the scalar subspace $\mathbb{R}_{\mathbb{H}}\cong\mathbb{R}$ and the vector subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ carry no topology beyond that of Euclidean space.
 
@@ -105,7 +105,7 @@ The quaternion algebra is the Euclidean space $\mathbb{R}^4$ with the product as
 
 The group of units is homeomorphic to $\mathbb{R}_{>0}\times S^3$ and deformation retracts onto $S^3$, so it is homotopy equivalent to the sphere: $\pi_1 = 0$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$. Its adjoint quotient by the centre is the rotation group $SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$, which has $\pi_1\cong\mathbb{Z}/2$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$; the fundamental group $\mathbb{Z}/2$ therefore belongs to the quotient and not to the units.
 
-The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel $\{\pm1\}$, which is the topological content of the sign ambiguity in the unit-quaternion parametrisation of a rotation. For the quaternion division algebra the polar representation is global and has no boundary.
+The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel $\{\pm1\}$, which is the topological content of the sign ambiguity in the unit-quaternion parametrisation of a rotation. For the quaternion division algebra the polar decomposition is global and has no boundary.
 
 ## Summary of Notation
 

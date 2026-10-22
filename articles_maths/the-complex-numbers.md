@@ -103,7 +103,7 @@ $$
 
 so that $\mathbb{R}$ is the fixed field of conjugation, $\operatorname{Im}(Q) \in \mathbb{R}$ for every $Q$, and the map $Q \mapsto \operatorname{Im}(Q)\, i = \tfrac12(Q - \bar Q)$ has image the subspace $i\mathbb{R}$ of purely imaginary elements.
 
-**Remark (the norm as a form).** The norm as a *form and a distance* — its positive definiteness, the modulus $\lvert Q \rvert = \sqrt{\langle Q\rangle_{*}}$, the unit circle and the polar split $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ — is a structure of the topology layer, developed in *Complex Norm and Invertibility* and not here. What the algebra layer uses is the norm and the trace of the quadratic extension, which are elements of $\mathbb{R}$ attached to each $Q$.
+**Remark (the norm as a form).** The norm as a *form and a distance* — its positive definiteness, the modulus $\sqrt{\langle Q\rangle_{*}}$, the unit circle and the polar split $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ — is a structure of the topology layer, developed in *Complex Norm and Invertibility* and not here. What the algebra layer uses is the norm and the trace of the quadratic extension, which are elements of $\mathbb{R}$ attached to each $Q$.
 
 ### Norm and Trace of the Quadratic Extension
 
