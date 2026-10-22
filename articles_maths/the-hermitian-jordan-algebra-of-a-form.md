@@ -96,3 +96,4 @@ On $\mathbb{B}$ with the dagger the self-adjoint operators are the Hermitian for
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras*, American Mathematical Society Colloquium Publications 39 (1968), for the Jordan algebra of the self-adjoint elements of an algebra with an involution and the quadratic representation.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings*, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for the hermitian part of an algebra with an involution.
 - Kevin McCrimmon, *A Taste of Jordan Algebras*, Universitext (Springer, 2004), for the special Jordan algebras and the Jordan identity.
+- The eigenvalue decomposition with respect to the form is [The Eigenvalue Decomposition with respect to a Degree-2 Form](the-eigenvalue-decomposition-with-respect-to-a-degree-2-form.html).

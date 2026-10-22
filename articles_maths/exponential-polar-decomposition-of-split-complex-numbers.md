@@ -23,9 +23,17 @@ $$
 
 with $r$ the modulus and $u$ the unit factor. The unit factor is written $u=\epsilon\exp(\phi j)$, with $\epsilon$ the component sign.
 
-The shape of the formula is forced by the image of the exponential. In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, so every nonzero $Q$ is $\exp(Q_{\log})$. In $\mathbb{D}$ the exponential is injective and its image is the future cone $F=\{Q:q>\lvert q'\rvert\}$ (*Split-Complex Special Functions*, §*The Split Complex Exponential and Logarithm*). A logarithm therefore exists exactly on $F$, and nowhere else. The four elements $\epsilon\in\{\pm1,\pm j\}$ permute the four components of $\mathbb{D}^\times$, and exactly one of the four products $\epsilon Q$ lies in $F$ (§*The Four Components*). The exponent is the logarithm of that product, and the discrete factor $\epsilon$ records the component of $Q$. It is not a period: the exponential has trivial kernel.
+The article assumes the spectral data of *Eigenvalue Decomposition of a Split-Complex Number*: the eigenvalues
 
-The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exponentiated: $\exp(Q_{\log})=\epsilon Q$. It is a logarithm of $Q$ itself exactly when $\epsilon=1$. In coordinates, with $N=\langle Q\rangle_{*}=q^2-q'^2$, the derivation of §*The Data on the Future Cone*, applied to $\epsilon Q$, gives
+$$
+\lambda_\pm=q\pm q'=Q_\pm,
+$$
+
+the eigenprojections $\Pi_\pm=\tfrac12(1\pm j)$, the decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the group isomorphism $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ given by $Q\mapsto(\lambda_+,\lambda_-)$, and the description of the four components by the signs of $(\lambda_+,\lambda_-)$. It also assumes the exponential and the logarithm of *Split-Complex Elementary Functions*: the exponential is injective, its image is the future cone $F$, and the logarithm on $F$ is the two-sided inverse. Those results are quoted here; the article does not derive them again. What the article owns is the decomposition itself, the component sign, its existence and uniqueness, the matrix picture and the exponential coordinates.
+
+The shape of the formula is forced by the image of the exponential. In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, so every nonzero $Q$ is $\exp(Q_{\log})$. In $\mathbb{D}$ the exponential is injective and its image is the future cone $F=\{Q:q>\lvert q'\rvert\}$ (*Split-Complex Elementary Functions*, §*The Exponential*). A logarithm therefore exists exactly on $F$, and nowhere else. The four elements $\epsilon\in\{\pm1,\pm j\}$ permute the four components of $\mathbb{D}^\times$, and exactly one of the four products $\epsilon Q$ lies in $F$ (§*The Four Components*). The exponent is the logarithm of that product, and the discrete factor $\epsilon$ records the component of $Q$. It is not a period: the exponential has trivial kernel.
+
+The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exponentiated: $\exp(Q_{\log})=\epsilon Q$. It is a logarithm of $Q$ itself exactly when $\epsilon=1$. In coordinates, with $N=\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$, the logarithm formula of *Split-Complex Elementary Functions*, §*The Logarithm*, applied to $\epsilon Q$, gives
 
 $$
 q_{\log}=\tfrac12\ln\lvert N\rvert=\ln r, \qquad
@@ -35,9 +43,11 @@ $$
 
 the first branch covering the two timelike components and the second the two spacelike ones. The two coordinates, their formulas and their roles are tabulated in §*The Two Coordinates*.
 
-The article derives the decomposition and the component sign (§*The Decomposition*), treats the logarithm and its domain (§*The Logarithm*), proves existence and uniqueness (§*Existence and Uniqueness*), gives examples (§*Worked Examples*), and then treats the matrix picture (§*The Matrix Picture*), the comparison with the two other polar forms (§*The Three Polar Decompositions*) and the exponential coordinates (§*The Exponential Coordinates*).
+The article derives the decomposition and the component sign (§*The Decomposition*), records the logarithm and its domain (§*The Logarithm*), proves existence and uniqueness (§*Existence and Uniqueness*), gives examples (§*Worked Examples*), and then treats the matrix picture (§*The Matrix Picture*), the comparison with the two other polar forms (§*The Three Polar Decompositions*) and the exponential coordinates (§*The Exponential Coordinates*). The logarithm itself is not derived again: §*The Data on the Future Cone* quotes the formula of *Split-Complex Elementary Functions* and checks the reconstruction.
 
-The symbols are those of *Split-Complex Algebra*, *Split-Complex Norm and Invertibility* and *Conventions in Mathematics*. Every numerical value displayed below was recomputed in double precision.
+**Placement.** The article is in the Analysis group of the Split-Complex Numbers category, after *Split-Complex Elementary Functions*, *Split-Complex Harmonic Analysis* and *Split-Complex Exponential and Lie Group Structure*, and before the Geometry group. It uses the modulus–unit form of *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, the rational chart of *Rational-Chart Polar Decomposition of Split-Complex Numbers*, and the exponential and logarithm of *Split-Complex Elementary Functions*.
+
+The symbols are those of *Conventions in Mathematics*, *Split-Complex Algebra*, *Split-Complex Norm and Invertibility*, *Eigenvalue Decomposition of a Split-Complex Number* and *Split-Complex Elementary Functions*. Every numerical value displayed below was recomputed in double precision.
 
 ## The Decomposition
 
@@ -57,68 +67,56 @@ The subscript is a label, not an operation: $q_{\log}$ is the real coordinate of
 
 ### The Data on the Future Cone
 
-Let $Q=q+jq'$ lie in the future cone $F$: $q>\lvert q'\rvert$, hence $q>0$ and $N=q^2-q'^2>0$. A logarithm of $Q$ is a number $Q_{\log}=x+jy$ with $\exp(Q_{\log})=Q$. The split Euler formula gives the two real equations
-
-$$
-\exp(x)\cosh y=q, \qquad \exp(x)\sinh y=q'.
-$$
-
-Squaring and subtracting eliminates $y$:
-
-$$
-\exp(2x)\bigl(\cosh^2y-\sinh^2y\bigr)=\exp(2x)=q^2-q'^2=N,
-$$
-
-so $x=\tfrac12\ln N$ is forced; it is real because $N>0$. Dividing the second equation by the first gives $\tanh y=q'/q$. Since $q>\lvert q'\rvert$, the ratio $q'/q$ lies in $(-1,1)$, and $y=\operatorname{artanh}(q'/q)$ is the unique solution. Conversely these values satisfy the two equations, because $\cosh(\operatorname{artanh}t)=1/\sqrt{1-t^2}$ and $\sinh(\operatorname{artanh}t)=t/\sqrt{1-t^2}$ with $t=q'/q$. Hence on the future cone
+Let $Q=q+jq'$ lie in the future cone $F$: $q>\lvert q'\rvert$, hence $\lambda_+=q+q'>0$, $\lambda_-=q-q'>0$ and $N=\lambda_+\lambda_->0$. The logarithm of *Split-Complex Elementary Functions*, §*The Logarithm*, gives at once
 
 $$
 Q_{\log}=\tfrac12\ln N+j\operatorname{artanh}\frac{q'}{q},
 \qquad Q=q+jq',\quad q>\lvert q'\rvert,
 $$
 
-and the decomposition is $Q=\exp(Q_{\log})$. Writing
+because the equations $\exp(q_{\log}\pm q'_{\log})=\lambda_\pm$ have the unique solution $q_{\log}=\tfrac12\ln(\lambda_+\lambda_-)$ and $q'_{\log}=\tfrac12\ln(\lambda_+/\lambda_-)$; this is the formula of *Split-Complex Elementary Functions* read on the future cone. Writing
 
 $$
-r=\exp\Bigl(\tfrac12\ln N\Bigr)=\sqrt N>0, \qquad \phi=\operatorname{artanh}\frac{q'}{q}\in\mathbb{R},
+r=\exp\Bigl(\tfrac12\ln N\Bigr)=\sqrt N=\sqrt{\lambda_+\lambda_-}>0,
+\qquad
+\phi=\operatorname{artanh}\frac{q'}{q}=\tfrac12\ln\frac{\lambda_+}{\lambda_-}\in\mathbb{R},
 $$
 
-gives the same number in the two other forms:
+gives the same number in the three forms
 
 $$
 Q=r\bigl(\cosh\phi+j\sinh\phi\bigr)=r\exp(\phi j)=\exp(Q_{\log}).
 $$
 
-The first is the modulus–unit form; the last is the exponential polar decomposition, with component sign $\epsilon=1$.
-
-This computation repeats the logarithm computation of *Split-Complex Special Functions*, §*The Split Complex Logarithm*, read as a decomposition; it does not define the exponential anew.
+The check is one line in the eigenvalue coordinates: $\exp(Q_{\log})$ has eigenvalues $\exp(q_{\log}\pm q'_{\log})=\lambda_\pm$, hence equals $Q$. The first form is the modulus–unit form; the last is the exponential polar decomposition, with component sign $\epsilon=1$.
 
 ### The Four Components
 
-**Lemma.** The four elements $\epsilon\in\{\pm1,\pm j\}$ act on the four components of $\mathbb{D}^\times$ simply transitively: for every $Q\in\mathbb{D}^\times$ there is exactly one $\epsilon$ with $\epsilon Q\in F$, and the four products $\epsilon Q$ lie in the four different components.
-
-**Proof.** Write the idempotent coordinates
+The eigenvalue article gives the group isomorphism
 
 $$
-Q_\pm=q\pm q', \qquad Q=Q_+\Pi_++Q_-\Pi_-, \qquad \Pi_\pm=\tfrac12(1\pm j).
+\mathbb{D}^\times\longrightarrow\mathbb{R}^\times\times\mathbb{R}^\times,
+\qquad
+Q\longmapsto(\lambda_+,\lambda_-),
 $$
 
-Multiplication is componentwise, $(QB)_\pm=Q_\pm B_\pm$, so $Q$ is invertible exactly when $Q_+Q_-=N\neq0$. The map $Q\mapsto(Q_+,Q_-)$ is a group isomorphism from $\mathbb{D}^\times$ onto $\mathbb{R}^\times\times\mathbb{R}^\times$. Each factor $\mathbb{R}^\times$ has two components, the positive and the negative half-line, so the product has $2\times2=4$ components, labelled by the sign pattern
+with componentwise multiplication and inverse (§*Powers, Polynomial Calculus, and the Group of Units*). The four components of $\mathbb{D}^\times$ are therefore the sign patterns
 
 $$
-\bigl(\operatorname{sgn}Q_+,\operatorname{sgn}Q_-\bigr)\in\{+,-\}^2.
+\bigl(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-\bigr)\in\{+,-\}^2.
 $$
 
-The four elements have the four sign patterns:
+The four elements $\epsilon\in\{\pm1,\pm j\}$ have the sign patterns
 
 | $\epsilon$ | $1$ | $-1$ | $j$ | $-j$ |
 |---|---|---|---|---|
 | $(\epsilon_+,\epsilon_-)$ | $(+,+)$ | $(-,-)$ | $(+,-)$ | $(-,+)$ |
 
-For a general $Q$ the product $\epsilon Q$ has sign pattern $(\epsilon_+\operatorname{sgn}Q_+,\ \epsilon_-\operatorname{sgn}Q_-)$, because $(\epsilon Q)_\pm=\epsilon_\pm Q_\pm$. It lies in the future cone exactly when both signs are positive, that is exactly when $\epsilon_\pm=\operatorname{sgn}Q_\pm$. Exactly one of the four rows has that pair of signs. Hence exactly one $\epsilon$ works, and the four products $\epsilon Q$ carry the four sign patterns, so they lie in the four components.
+For general $Q$, the product $\epsilon Q$ has eigenvalues $(\epsilon_+\lambda_+,\epsilon_-\lambda_-)$, so its sign pattern is $(\epsilon_+\operatorname{sgn}\lambda_+,\ \epsilon_-\operatorname{sgn}\lambda_-)$. It lies in the future cone exactly when that pattern is $(+,+)$, which happens for exactly one $\epsilon$, namely $\epsilon_\pm=\operatorname{sgn}\lambda_\pm$. The four products carry the four sign patterns, so they lie in the four components.
 
-The future cone is the $(+,+)$ component: $Q_+>0$ and $Q_->0$ mean $q+q'>0$ and $q-q'>0$, that is $q>\lvert q'\rvert$. The other three components are read the same way:
+The future cone is the $(+,+)$ component: $\lambda_+>0$ and $\lambda_->0$ mean $q>\lvert q'\rvert$. The other three components are read the same way:
 
-| region | condition | $(Q_+,Q_-)$ | component |
+| region | condition | $(\lambda_+,\lambda_-)$ | component |
 |---|---|---|---|
 | future cone | $q>\lvert q'\rvert$ | $(+,+)$ | identity |
 | past cone | $q<-\lvert q'\rvert$ | $(-,-)$ | $(-1)F$ |
@@ -127,19 +125,19 @@ The future cone is the $(+,+)$ component: $Q_+>0$ and $Q_->0$ mean $q+q'>0$ and 
 
 ### The Component Sign
 
-The lemma gives the sign and the data in one table. The last two columns are obtained by applying §*The Data on the Future Cone* to $\epsilon Q$; they are derived after the table, not assumed.
+The component statement gives the sign and the data in one table. The last two columns are obtained by applying §*The Data on the Future Cone* to $\epsilon Q$; they are checked after the table, not assumed.
 
-| region | condition | $(Q_+,Q_-)$ | $\epsilon$ | $\epsilon Q$ | $q_{\log}$ | $q'_{\log}$ |
+| region | condition | $(\lambda_+,\lambda_-)$ | $\epsilon$ | $\epsilon Q$ | $q_{\log}$ | $q'_{\log}$ |
 |---|---|---|---|---|---|---|
 | future cone | $q>\lvert q'\rvert$ | $(+,+)$ | $1$ | $q+jq'$ | $\tfrac12\ln N$ | $\operatorname{artanh}\dfrac{q'}{q}$ |
 | past cone | $q<-\lvert q'\rvert$ | $(-,-)$ | $-1$ | $-q-jq'$ | $\tfrac12\ln N$ | $\operatorname{artanh}\dfrac{q'}{q}$ |
 | right spacelike | $q'>\lvert q\rvert$ | $(+,-)$ | $j$ | $q'+qj$ | $\tfrac12\ln(-N)$ | $\operatorname{artanh}\dfrac{q}{q'}$ |
 | left spacelike | $q'<-\lvert q\rvert$ | $(-,+)$ | $-j$ | $-q'-qj$ | $\tfrac12\ln(-N)$ | $\operatorname{artanh}\dfrac{q}{q'}$ |
 
-The norm of $\epsilon Q$ is the product of its idempotent coordinates,
+The norm of $\epsilon Q$ is the product of its eigenvalues,
 
 $$
-N(\epsilon Q)=(\epsilon_+Q_+)(\epsilon_-Q_-)=N,
+N(\epsilon Q)=(\epsilon_+\lambda_+)(\epsilon_-\lambda_-)=N,
 $$
 
 for $\epsilon=\pm1$, and $N(jQ)=q'^2-q^2=-N$, $N(-jQ)=-N$, for the spacelike rows. In the timelike rows $N>0$, in the spacelike rows $N<0$, so in every row $N(\epsilon Q)=\lvert N\rvert$. The formula of §*The Data on the Future Cone* applied to $\epsilon Q$ therefore gives
@@ -148,7 +146,7 @@ $$
 q_{\log}=\tfrac12\ln N(\epsilon Q)=\tfrac12\ln\lvert N\rvert.
 $$
 
-The angle comes from the ratio of the two coordinates of $\epsilon Q$. For $\epsilon=\pm1$ the coordinates are $(\pm q,\pm q')$, so the ratio is $q'/q$. For $\epsilon=\pm j$ they are $(\pm q',\pm q)$, so the ratio is $q/q'$. The two cases are the two regimes of the table:
+The angle comes from the ratio of the two coefficients of $\epsilon Q$. For $\epsilon=\pm1$ the coefficients are $(\pm q,\pm q')$, so the ratio is $q'/q$. For $\epsilon=\pm j$ they are $(\pm q',\pm q)$, so the ratio is $q/q'$. The two cases are the two regimes of the table:
 
 $$
 q'_{\log}=
@@ -238,16 +236,11 @@ This is the central difference from the complex case. There every nonzero elemen
 
 ### The Inverse on the Future Cone
 
-By *Split-Complex Special Functions*, §*The Split Complex Logarithm*, the exponential is injective and its image is $F$. Both facts are one line from the formula $\exp(x+jy)=\exp(x)(\cosh y+j\sinh y)$.
-
-**Image.** Every exponential lies in $F$: its norm is $N(\exp(x+jy))=\exp(2x)>0$, and its real part is $\exp(x)\cosh y>0$. Conversely every element of $F$ is an exponential by §*The Data on the Future Cone*. Hence $\exp(\mathbb{D})=F$.
-
-**Injectivity.** If $\exp(x_1+jy_1)=\exp(x_2+jy_2)$, then taking norms gives $\exp(2x_1)=\exp(2x_2)$, so $x_1=x_2$. The real and $j$-parts then give $\cosh y_1=\cosh y_2$ and $\sinh y_1=\sinh y_2$, hence $y_1=y_2$.
-
-The inverse on $F$ is the logarithm. It is the element
+*Split-Complex Elementary Functions*, §*The Logarithm*, gives the image and the injectivity: $\exp(\mathbb{D})=F$, and $\exp$ is injective with kernel $\{0\}$. In eigenvalue notation the check is one line: $\exp(x+jy)$ has eigenvalues $\exp(x\pm y)$, both positive, and $\exp(x_1+jy_1)=\exp(x_2+jy_2)$ forces $\exp(x_1\pm y_1)=\exp(x_2\pm y_2)$, hence $x_1=x_2$ and $y_1=y_2$. The inverse on $F$ is the logarithm
 
 $$
-Q_{\log}=\tfrac12\ln\bigl(q^2-q'^2\bigr)+j\operatorname{artanh}\frac{q'}{q},
+Q_{\log}=\tfrac12\ln\bigl(q^2-q'^2\bigr)+j\operatorname{artanh}\frac{q'}{q}
+=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12 j\ln\frac{\lambda_+}{\lambda_-},
 \qquad Q=q+jq',\quad q>\lvert q'\rvert,
 $$
 
@@ -258,7 +251,7 @@ $$
 \log\bigl(\exp(Q_{\log})\bigr)=Q_{\log} \quad (Q_{\log}\in\mathbb{D}).
 $$
 
-There is no branch to choose, no principal value and no period. The kernel is $\{0\}$: if $\exp(Q_{\log})=1$, then $\exp(2q_{\log})=N(1)=1$ gives $q_{\log}=0$, and $\tanh q'_{\log}=0$ gives $q'_{\log}=0$. The exponential is not periodic, and $\exp(2\pi j)=\cosh(2\pi)+j\sinh(2\pi)\neq1$.
+There is no branch to choose, no principal value and no period. The kernel is $\{0\}$ because $\exp(x+y)=\exp(x-y)=1$ force $x=y=0$. The exponential is not periodic, and $\exp(2\pi j)=\cosh(2\pi)+j\sinh(2\pi)\neq1$.
 
 ### The Domain of the Logarithm
 
@@ -271,7 +264,7 @@ The logarithm exists on one component of four and nowhere else.
 | spacelike wedges | $\lvert q'\rvert>\lvert q\rvert$ | none |
 | null cone | $q=\pm q'$ | none |
 
-The past cone and the spacelike wedges fail because they are the other components, while the image of the exponential is $F$; this is the content of §*The Four Components* and of the image statement above. The null cone is not in $\mathbb{D}^\times$: one idempotent coordinate vanishes, the norm vanishes, and the logarithm diverges rather than jumps. As $Q_-\to0^+$, for instance, $q'_{\log}=\tfrac12\ln\frac{q+q'}{q-q'}\to+\infty$. There is no branch cut and no periodicity to quotient out.
+The past cone and the spacelike wedges fail because they are the other components, while the image of the exponential is $F$; this is the content of §*The Four Components* and of the image statement above. The null cone is not in $\mathbb{D}^\times$: one eigenvalue vanishes, the norm vanishes, and the logarithm diverges rather than jumps. As $\lambda_-\to0^+$, for instance, $q'_{\log}=\tfrac12\ln\frac{\lambda_+}{\lambda_-}\to+\infty$. There is no branch cut and no periodicity to quotient out.
 
 ### The Fibre and the Quotient
 
@@ -306,7 +299,7 @@ $$
 Q=r\,\epsilon\exp(\phi j), \qquad r=\sqrt{\lvert N\rvert}.
 $$
 
-The data are unique and are those of §*The Component Sign*:
+The data are those of §*The Component Sign*:
 
 $$
 \epsilon=\operatorname{sgn}q\ (N>0),\quad \epsilon=j\operatorname{sgn}q'\ (N<0), \qquad
@@ -317,6 +310,16 @@ q'_{\log}=
 \operatorname{artanh}(q/q'), & N<0.
 \end{cases}
 $$
+
+Equivalently, on all four components,
+
+$$
+q_{\log}=\tfrac12\ln\lvert\lambda_+\lambda_-\rvert,
+\qquad
+q'_{\log}=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert,
+$$
+
+because the angle of the logarithm of $\epsilon Q$ is $\tfrac12\ln\frac{(\epsilon Q)_+}{(\epsilon Q)_-}$, and the signs of $\epsilon$ cancel in that ratio.
 
 **Existence.** §*The Component Sign* gives $\epsilon$ with $\epsilon Q\in F$. §*The Data on the Future Cone* gives a number $Q_{\log}$ with $\exp(Q_{\log})=\epsilon Q$. Then $Q=\epsilon\exp(Q_{\log})=r\epsilon\exp(\phi j)$.
 
@@ -509,10 +512,11 @@ The coordinates $\ln r$ and $\phi$ are linear, hence harmonic for the indefinite
 
 ## Summary
 
-The split-complex exponential is injective, and its image is the future cone $F=\{N>0,\ q>0\}$. On that cone the logarithm is unique,
+The split-complex exponential is injective, and its image is the future cone $F=\{\lambda_+>0,\ \lambda_->0\}=\{N>0,\ q>0\}$. On that cone the logarithm is unique,
 
 $$
-Q_{\log}=\tfrac12\ln N+j\operatorname{artanh}\frac{q'}{q},
+Q_{\log}=\tfrac12\ln N+j\operatorname{artanh}\frac{q'}{q}
+=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12 j\ln\frac{\lambda_+}{\lambda_-},
 \qquad Q=q+jq',\quad q>\lvert q'\rvert,
 $$
 
@@ -526,9 +530,9 @@ Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j),
 Q_{\log}=q_{\log}+jq'_{\log}, \quad q_{\log}=\ln r=\tfrac12\ln\lvert N\rvert, \quad q'_{\log}=\phi,
 $$
 
-with $r=\sqrt{\lvert N\rvert}>0$, $\phi\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The exponent $Q_{\log}$ is the logarithm of the element $\epsilon Q$ in the future cone, and $\epsilon$ is the component sign that makes $\epsilon Q$ lie there. The scale is $r$, the unit factor is $\epsilon\exp(\phi j)=Q/r$, and the discrete factor $\epsilon$ records the component. The group law is componentwise on $\epsilon$ and additive on the exponent, so $\mathbb{D}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ as groups.
+with $r=\sqrt{\lvert N\rvert}>0$, $\phi\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The exponent $Q_{\log}$ is the logarithm of the element $\epsilon Q$ in the future cone, and $\epsilon$ is the component sign that makes $\epsilon Q$ lie there. In eigenvalue notation $\epsilon$ is the element with the sign pattern of $(\lambda_+,\lambda_-)$, and the unit factor $\epsilon\exp(\phi j)$ has norm of modulus $1$. The group law is componentwise on $\epsilon$ and additive on the exponent, so $\mathbb{D}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ as groups.
 
-The logarithm exists on one component and fails on the other three. The decomposition applies the logarithm to $\epsilon Q$, not to $Q$; this is the exact exchange of the complex case, where the logarithm exists everywhere and fails to be unique.
+The logarithm exists on one component and fails on the other three. The decomposition applies the logarithm to $\epsilon Q$, not to $Q$; this is the exact opposite of the complex case, where the logarithm exists everywhere and fails to be unique.
 
 In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\,K)$, symmetric positive definite on the identity component, with a unique real symmetric logarithm; the Euclidean orthogonal factor is the discrete matrix $M_\epsilon$. The exponential coordinates map each component onto $\mathbb{R}^2$, with signed Jacobian $N(Q)$ and indefinite conformal factor $r^2$. The map is not Euclidean conformal.
 
@@ -538,13 +542,16 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 |---|---|
 | $\mathbb{D}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
-| $N=\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
+| $\lambda_\pm=q\pm q'=Q_\pm$ | the eigenvalues, equal to the idempotent coordinates |
+| $\Pi_\pm=\tfrac12(1\pm j)$ | the eigenprojections |
+| $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ | the eigenvalue decomposition |
+| $N=\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$ | the norm |
 | $r=\sqrt{\lvert N\rvert}$ | the modulus, a positive real |
 | $q_{\log}=\ln r=\tfrac12\ln\lvert N\rvert$ | the logarithmic scale, the real coordinate of the exponent |
 | $q'_{\log}=\phi$ | the hyperbolic angle, or rapidity, the $j$-coordinate of the exponent |
 | $\epsilon\in\{\pm1,\pm j\}$ | the component sign |
 | $Q_{\log}=q_{\log}+jq'_{\log}$ | the exponent of the decomposition: the logarithm of $\epsilon Q$, and of $Q$ itself when $\epsilon=1$ |
-| $\exp$ | the exponential, defined in *Split-Complex Special Functions* |
+| $\exp$ | the exponential, defined in *Split-Complex Elementary Functions* |
 | $\ker\exp=\{0\}$ | the kernel of the exponential |
 | $K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ | the reflection, $K^2=I$ |
 | $M_Q=qI+q'K$ | the matrix of multiplication by $Q$ |

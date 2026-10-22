@@ -58,7 +58,7 @@ Indeed, $f$ is its own interpolation polynomial at the $r$ nodes, because both h
 
 ### The Chinese remainder interpretation
 
-The map $k[x] \to k^r$, $f \mapsto (f(\lambda_1), \dots, f(\lambda_r))$, is the Chinese remainder isomorphism $k[x]/(m_a) \cong k^r$ when $m_a = \prod_i (x-\lambda_i)$. The Lagrange basis $h_i$ is the inverse image of the standard basis vector $(0, \dots, 1, \dots, 0)$; the idempotent $e_i$ is the image of that vector. The eigenprojector formula is therefore the explicit form of the Chinese remainder decomposition, and the algebra $k[a]$ is the image of the interpolation map.
+The map $k[x] \to k^r$, $f \mapsto (f(\lambda_1), \dots, f(\lambda_r))$, factors through the Chinese remainder isomorphism $k[x]/(m_a) \cong k^r$ when $m_a = \prod_i (x-\lambda_i)$. The Lagrange basis $h_i$ is the inverse image of the standard basis vector $(0, \dots, 1, \dots, 0)$; the idempotent $e_i$ is the image of $h_i$ under the evaluation map $f \mapsto f(a)$, and it corresponds to that basis vector under the Chinese remainder isomorphism. The eigenprojector formula is therefore the explicit form of the Chinese remainder decomposition, and the algebra $k[a]$ is the image of the interpolation map.
 
 ## The Eigenprojector Formula
 

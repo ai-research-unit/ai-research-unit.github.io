@@ -117,7 +117,7 @@ The equivalence of 2 and 3 is the definition of a split polynomial with distinct
 
 **From 1 to 2.** Suppose $a = \sum_i \lambda_i e_i$. On the one hand, each $\lambda_i$ is an eigenvalue: $a e_i = \lambda_i e_i$ with $e_i \neq 0$, so $a - \lambda_i$ is a zero divisor and is not invertible, and the criterion of §*The eigenvalue criterion* gives $m_a(\lambda_i) = 0$. On the other hand, the polynomial $\prod_i (x-\lambda_i)$ vanishes at $a$, because on the component $e_j$ it has the factor $x-\lambda_j$. Hence $m_a$ divides $\prod_i (x-\lambda_i)$. Since $m_a$ is divisible by each $x-\lambda_i$ and the $\lambda_i$ are distinct, $m_a$ is divisible by the product, so $m_a$ equals the product up to a unit; both are monic, so $m_a = \prod_i (x-\lambda_i)$.
 
-**From 2 to 4 and 5.** The map $k[x] \to \operatorname{End}_k(A)$, $f \mapsto L_{f(a)}$, is injective: if $L_{f(a)} = 0$, then $f(a) = L_{f(a)}(1_A) = 0$. Hence the minimal polynomial of the operator $L_a$ is $m_a$. An operator on a finite-dimensional space is diagonalisable exactly when its minimal polynomial is split with distinct roots, so $L_a$ is diagonalisable exactly when $m_a$ is. The same argument applies to $R_a$, using $R_{f(a)}(1_A) = f(a)$.
+**From 2 to 4 and 5.** Consider the map $k[x]/(m_a) \to \operatorname{End}_k(A)$, $f \mapsto L_{f(a)}$. It is injective: if $L_{f(a)} = 0$, then $f(a) = L_{f(a)}(1_A) = 0$, so $m_a$ divides $f$ and $f$ is zero in the quotient. Hence the minimal polynomial of the operator $L_a$ is $m_a$. An operator on a finite-dimensional space is diagonalisable exactly when its minimal polynomial is split with distinct roots, so $L_a$ is diagonalisable exactly when $m_a$ is. The same argument applies to $R_a$, using $R_{f(a)}(1_A) = f(a)$.
 
 **From 4 or 5 to 2.** This is the same equivalence read backwards: the minimal polynomial of $L_a$ is $m_a$, so if $L_a$ is diagonalisable then $m_a$ is split with distinct roots. The same for $R_a$.
 
@@ -262,7 +262,7 @@ The decomposition is $C = 0\cdot e_0 + 1\cdot e_1 + (-1)\cdot e_{-1}$. The eigen
 
 ### A Jordan block
 
-For $a = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ the minimal polynomial is $(x-1)^2$, with a repeated root. There is no eigenvalue decomposition: the only idempotent in $k[a]$ is $1$, and the writing $a = 1\cdot 1$ is false. The generalized decomposition is
+For $a = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ the minimal polynomial is $(x-1)^2$, with a repeated root. There is no eigenvalue decomposition: the only idempotents in $k[a]$ are $0$ and $1$, and neither writing $a = 1\cdot 1$ nor $a = 0\cdot 0$ holds. The generalized decomposition is
 
 $$
 a = 1\cdot \varepsilon + n, \qquad \varepsilon = 1, \quad n = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad n^2 = 0,

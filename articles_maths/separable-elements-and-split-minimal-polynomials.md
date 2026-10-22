@@ -111,7 +111,7 @@ of determinant $4 = \Delta(x^3-x)$. The element is separable and split over a fi
 
 ### Separability and semisimplicity
 
-Separability is stronger than the property of having a reduced subalgebra. The algebra $k[a]$ is reduced exactly when $m_a$ is squarefree, that is, when no irreducible factor of $m_a$ is repeated. A separable polynomial is squarefree, so a separable element generates a reduced algebra. The converse fails in characteristic $p$: the polynomial $x^p - t$ is irreducible and squarefree over $\mathbb{F}_p(t)$, so $k[a]$ is a field and is reduced, but the polynomial is inseparable. In the terminology of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, such an element is semisimple but not separable. Over a perfect field the two notions coincide.
+Separability is stronger than the property of having a reduced subalgebra. The algebra $k[a]$ is reduced exactly when $m_a$ is squarefree, that is, when no irreducible factor of $m_a$ is repeated. A separable polynomial is squarefree, so a separable element generates a reduced algebra. The converse fails in characteristic $p$: the polynomial $x^p - t$ is irreducible over $\mathbb{F}_p(t)$, hence squarefree in the sense of having no repeated irreducible factor, so $k[a]$ is a field and is reduced, but it is inseparable: its single root over the algebraic closure has multiplicity $p$. In the terminology of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, such an element is semisimple but not separable. Over a perfect field the two notions coincide.
 
 The distinction is invisible in characteristic zero and over finite fields, and it is the reason the Jordan–Chevalley theorem is stated over a perfect field, or with a separability hypothesis, in the articles that use it.
 

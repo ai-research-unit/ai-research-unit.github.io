@@ -9,16 +9,9 @@ $$
 = r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-| # | factor | name | exponent | root | range | real dimension | action | stable subspaces |
-|---|---|---|---|---|---|---|---|---|
-| 1 | $r$ | scale | — | — | $r \in \mathbb{R}$, $r>0$ | $1$ | $\tilde Q\mapsto r^{2}\tilde Q$ | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ |
-| 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $1$ | $\tilde Q\mapsto \exp(i\alpha)\tilde Q$ | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ |
-| 3 | $\tilde U_{\mathrm b} = \exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi \ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | $\tilde Q\mapsto \tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}$ | $\mathbb{M}_+$, $\mathbb{M}_-$ |
-| 4 | $\tilde u_{\mathrm r} = \exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta \in [0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | $\tilde Q\mapsto \tilde u_{\mathrm r}\tilde Q\tilde u_{\mathrm r}^{-1}$ | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ |
+The four factors, their ranges, their actions on the algebra and their stable subspaces are those of *Modulus–Unit Polar Decomposition of Biquaternions*, §*The Four Factors*, and the exponential form of each is that of *Exponential Polar Decomposition of Biquaternions*, §*The Four Exponentials*.
 
-The action column records the operation by which the factor acts on the algebra. For the scale, the boost and the rotor this is the sandwich by the factor in view, that is the dilation $\tilde Q\mapsto r^{2}\tilde Q$, the congruence $\tilde Q\mapsto\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}$ and the conjugation $\tilde Q\mapsto\tilde u_{\mathrm r}\tilde Q\tilde u_{\mathrm r}^{-1}$. The phase is central and its sandwich is the identity, so its row records multiplication by the scalar, the only action under which it is not in the kernel; this is the one row that departs from the sandwich convention of *The Action of the Polar Decomposition on the Hermitian and Anti-Hermitian Subspaces*, where the phase would list every subspace because it acts trivially. The scale preserves $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. The phase preserves $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ and no other: on a real form the factor $\exp(i\alpha)$ turns a real part into an imaginary one. The boost preserves $\mathbb{M}_+$ and $\mathbb{M}_-$ and no other. The rotor preserves $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$: conjugation by a real unit quaternion is an automorphism of $\mathbb{B}$ commuting with the three conjugations, so it carries each of the six into itself. Parameters are generic; at the identity value of a parameter the factor is $e_t$ and preserves every subspace. Two-sided multiplication by the rotor, $\tilde Q\mapsto\tilde u_{\mathrm r}\tilde Q\tilde u_{\mathrm r}$, is a different action and is not used: under it the rotor preserves only $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, while under conjugation it preserves all six.
-
-This is the polar word of *Modulus–Unit Polar Decomposition of Biquaternions*. It is recalled in full because the pairing below regroups exactly these four factors. The scale $r$ is a positive real and the phase $\exp(i\alpha)$ is central, with $\alpha$ real. The last two factors are the **boost** $\tilde U_{\mathrm b}$ and the **rotor** $\tilde u_{\mathrm r}$, with axes $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ the unit real pure quaternions of the axis sphere $\mathcal{A}$ of the reference article, $\psi\ge0$ the rapidity and $\theta\in[0,2\pi]$ the rotation angle. The boost is Hermitian positive and of unit norm, and the rotor is a unit real quaternion, hence also of unit norm. The four factors are unique. They can be grouped in pairs in exactly three ways, and the three pairings of the series regroup the same four factors. What differs is where the brackets fall, and what each bracketed pair is then recognised to be.
+This is the polar word of *Modulus–Unit Polar Decomposition of Biquaternions*, recalled here only so far as the pairing regroups it. The scale $r$ is a positive real and the phase $\exp(i\alpha)$ is central, with $\alpha\in(-\pi/2,\pi/2]$. The last two factors are the **boost** $\tilde U_{\mathrm b}$ and the **rotor** $\tilde u_{\mathrm r}$, with axes $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ the unit real pure quaternions of the axis sphere $\mathcal{A}$ of the reference article, $\psi\ge0$ the rapidity and $\theta\in[0,2\pi]$ the rotation angle. The boost is Hermitian positive and of unit norm, and the rotor is a unit real quaternion, hence also of unit norm. The four factors are unique. They can be grouped in pairs in exactly three ways, and the three pairings of the series regroup the same four factors. What differs is where the brackets fall, and what each bracketed pair is then recognised to be.
 
 **The Cartan Hermitian pairing** is the grouping that multiplies the scale into the boost and the phase into the rotor:
 
@@ -26,17 +19,17 @@ $$
 \tilde{Q} = \tilde H\,\tilde U , \qquad \tilde H = r\,\tilde U_{\mathrm b} , \qquad \tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r} .
 $$
 
-It takes the first and the third factors of the table, the scale and the boost $\tilde U_{\mathrm b}$, into $\tilde H$, and the second and the fourth, the phase and the rotor $\tilde u_{\mathrm r}$, into $\tilde U$. The two factors are therefore of two different kinds: $\tilde H$ is **Hermitian and positive**, $\tilde U$ is **unitary**. The pairing is the matrix polar decomposition of the biquaternion, read in the algebra, and it is the form of the polar word that the physics articles use for a unit-norm Lorentz rotor. It is called the **Cartan pairing** here because the two exponents of its factors lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra, one Hermitian and one anti-Hermitian; the Hermitian split of the exponents, and not the mere grouping of the factors, is what the name records.
+It takes the first and the third factors of the word, the scale and the boost $\tilde U_{\mathrm b}$, into $\tilde H$, and the second and the fourth, the phase and the rotor $\tilde u_{\mathrm r}$, into $\tilde U$. The two factors are therefore of two different kinds: $\tilde H$ is **Hermitian and positive**, $\tilde U$ is **unitary**. The pairing is the matrix polar decomposition of the biquaternion, read in the algebra, and it is the form of the polar word that the physics articles use for a unit-norm Lorentz rotor. It is called the **Cartan pairing** here because the two exponents of its factors lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra, one Hermitian and one anti-Hermitian; the Hermitian split of the exponents, and not the mere grouping of the factors, is what the name records.
 
 **The approach.** The article establishes four things, in this order. The pairing and the algebra of its two factors are stated, and the equation it solves is computed, $\tilde{Q}\tilde{Q}^{*} = \tilde H^{2}$. The Hermitian positive factor and the unitary factor are described, each on its own, with the scale and the boost in the first and the phase and the rotor in the second. The two exponents are separated into their Hermitian and their anti-Hermitian parts, which is the Cartan decomposition of the algebra and the precise sense in which the pairing is a Hermitian pairing. The existence, the uniqueness and the domain of the pairing follow from the matrix polar decomposition, and the relation to the polar decomposition and to the two partial regroupings closes the account.
 
-**The result, in one sentence.** For every biquaternion with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ the word $\tilde{Q} = \tilde H\,\tilde U$ is unique with $\tilde H$ Hermitian positive and $\tilde U$ unitary; the first factor is the Hermitian positive square root $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$, the second is $\tilde U = \tilde H^{-1}\tilde{Q}$, the two exponents $\ln \tilde H$ and $\ln \tilde U$ lie in the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ respectively, and the pairing is the matrix polar decomposition of $\mathsf{M}_2(\tilde{Q})$.
+**The result, in one sentence.** For every biquaternion with $\langle\tilde Q\rangle_{\natural}\neq0$ the word $\tilde{Q} = \tilde H\,\tilde U$ is unique with $\tilde H$ Hermitian positive and $\tilde U$ unitary; the first factor is the Hermitian positive square root $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$, the second is $\tilde U = \tilde H^{-1}\tilde{Q}$, the two exponents $\ln \tilde H$ and $\ln \tilde U$ lie in the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ respectively, and the pairing is the matrix polar decomposition of $\mathsf{M}_2(\tilde{Q})$.
 
 The other two pairings, *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions* and *The Quaternion Pairing of the Polar Decomposition of Biquaternions*, call a composite object the modulus and are available only where that object can be constructed from a part of the element. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
 
 The article assumes the algebra and the domain of the polar decomposition from the companion article, and takes the four factors as defined there and does not re-derive them. It is not the four-factor decomposition itself, and it is not the operator polar decomposition of *The Polar Decomposition of an Operator of the Form*, a different statement about a Tomita operator on a completion. No physics is invoked; the physical interpretation is recorded where it clarifies the algebra.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = Q_te_t+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; the quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, so that ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and the two operations commute. The norm of the polar series is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, a complex number in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. The Hermitian and the anti-Hermitian subspaces are $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$, and the unitary group of the algebra is $\mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\}$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\exp(i\alpha)$, $\langle\cdot\rangle_{\natural}$ and $\mathbb{M}_\pm$ are those of the companion article, whose Hamilton axis keeps its glyph $\vec\Xi$. The first factor of the pairing is written $\tilde H$ and the unitary factor $\tilde U$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = Q_te_t+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; the quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, so that ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and the two operations commute. The norm of the polar series is $\langle\tilde Q\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, a complex number in general, and the domain of the polar word is $\langle\tilde Q\rangle_{\natural}\neq0$. The Hermitian and the anti-Hermitian subspaces are $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$, and the unitary group of the algebra is $\mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\}$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\exp(i\alpha)$, $\langle\cdot\rangle_{\natural}$ and $\mathbb{M}_\pm$ are those of the companion articles, the Hamilton axis being $\vec U=\vec Q/B$, with $B^2=(\vec Q,\vec Q)$, of *Eigenvalue Decomposition of a Biquaternion*, §*The Pure Root of the Vector Part*. The first factor of the pairing is written $\tilde H$ and the unitary factor $\tilde U$.
 
 ## The Pairing
 
@@ -124,14 +117,14 @@ The first factor of the Cartan pairing is the element $\tilde H = r\tilde U_{\ma
 The first factor is not merely Hermitian: it is **positive**. In the matrix model $\mathsf{M}_2(\tilde H)$ is Hermitian with eigenvalues $r \exp(\pm\psi/2)$, both positive since $r>0$, so $\tilde H$ is positive definite. Its determinant is the norm
 
 $$
-\det\mathsf{M}_2(\tilde H) = \langle \tilde H\rangle_{\natural} = \langle \tilde H,\tilde H\rangle_{\natural} = r^{2}\,\langle\tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = r^{2} > 0 ,
+\det\mathsf{M}_2(\tilde H) = \langle\tilde H\rangle_{\natural} = r^{2}\,\langle\tilde U_{\mathrm b}\rangle_{\natural} = r^{2} > 0 ,
 $$
 
 which is the squared scale and is positive. The scalar part of $\tilde H$ carries the scale, and the traceless part carries the rapidity and the axis of the boost.
 
 ### The Scale and the Boost
 
-The first factor is where the pairing keeps the **scale** and the **boost**. The scale $r$ is the positive modulus, $r = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{1/2}$; the boost $\tilde U_{\mathrm b}$ is the Hermitian positive unit-norm element of the polar word, and it is the only constituent of the pairing that is not compact. The norm of the first factor is the squared scale, and the two statements $\langle \tilde H\rangle_{\natural} = r^{2}$ and $\det\mathsf{M}_2(\tilde H) = r^{2}$ are the same statement in the algebra and in the matrix model.
+The first factor is where the pairing keeps the **scale** and the **boost**. The scale $r$ is the positive modulus, $r = |\langle\tilde Q\rangle_{\natural}|^{1/2}$; the boost $\tilde U_{\mathrm b}$ is the Hermitian positive unit-norm element of the polar word. The first factor, which contains both, is the only factor of the pairing that is not compact. The norm of the first factor is the squared scale, and the two statements $\langle\tilde H\rangle_{\natural} = r^{2}$ and $\det\mathsf{M}_2(\tilde H) = r^{2}$ are the same statement in the algebra and in the matrix model.
 
 ## The Unitary Factor
 
@@ -143,7 +136,7 @@ $$
 \mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\} \cong \mathrm{U}(2) \cong \mathrm{U}(1)\cdot\mathrm{Sp}(1) ,
 $$
 
-a compact group of real dimension four, the product of the central phase circle and the unit sphere of the real quaternions. The second factor of the Cartan pairing is such an element: $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$ is the product of the central phase, of modulus one, and the unit real quaternion, and it satisfies $\tilde U\,\tilde U^{*} = e_t$. Its determinant has modulus one, $|\det\mathsf{M}_2(\tilde U)| = 1$, which is the unitary condition in the matrix model.
+a compact group of real dimension four, the product of the central phase circle and the unit sphere of the real quaternions. The second factor of the Cartan pairing is such an element: $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$ is the product of the central phase, of modulus one, and the unit real quaternion, and it satisfies $\tilde U\,\tilde U^{*} = e_t$. Its determinant has modulus one, $|\det\mathsf{M}_2(\tilde U)| = 1$, as it must for a unitary matrix.
 
 ### The Phase and the Rotor
 
@@ -158,7 +151,7 @@ The pairing is the grouping of the four factors of the polar word into its two f
 | $\tilde H = r\,\tilde U_{\mathrm b}$ | the scale and the boost | Hermitian positive | $1+3 = 4$ |
 | $\tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r}$ | the phase and the rotor | unitary | $1+3 = 4$ |
 
-The two dimensions add to $8 = \dim_{\mathbb{R}}\mathbb{B}$, and each factor carries one compact and one non-compact constituent: the first the non-compact scale and the non-compact boost, the second the compact phase and the compact rotor.
+The two dimensions add to $8 = \dim_{\mathbb{R}}\mathbb{B}$, and each factor carries two constituents of the same type: the first the non-compact scale and the non-compact boost, the second the compact phase and the compact rotor.
 
 ## The Hermitian and the Anti-Hermitian Exponents
 
@@ -212,7 +205,7 @@ The compact summand $\mathfrak{\mathcal K}(2)$ is spanned by the anti-Hermitian 
 
 ### The Theorem
 
-**Theorem (the Cartan pairing).** Let $\tilde{Q}\in\mathbb{B}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. There are a unique $\tilde H\in\mathbb{M}_+$ positive definite and a unique $\tilde U\in \mathrm{U}(\mathbb{B})$ with $\tilde{Q} = \tilde H\,\tilde U$, and they are $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ and $\tilde U = \tilde H^{-1}\tilde{Q}$.
+**Theorem (the Cartan pairing).** Let $\tilde{Q}\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. There are a unique $\tilde H\in\mathbb{M}_+$ positive definite and a unique $\tilde U\in \mathrm{U}(\mathbb{B})$ with $\tilde{Q} = \tilde H\,\tilde U$, and they are $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ and $\tilde U = \tilde H^{-1}\tilde{Q}$.
 
 ### The Uniqueness of the First Factor
 
@@ -223,10 +216,10 @@ The product $\tilde{Q}\tilde{Q}^{*}$ is Hermitian positive, and it is positive d
 The pairing is available on the whole complement of the null cone,
 
 $$
-\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\} ,
+\{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0\} ,
 $$
 
-which is the domain of the polar decomposition itself. The reason is that $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, so the element is invertible exactly when its norm does not vanish, and an invertible element has a unique matrix polar decomposition. The Cartan pairing is the only one of the three pairings of the four factors with this domain; the Hamilton and quaternion pairings fail on additional sets: the Hamilton axis cannot be normalised when the vector part is null, and the quaternion modulus cannot be constructed from $\tilde q_r$ when $\tilde q_r$ is not invertible.
+which is the domain of the polar decomposition itself. The reason is that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, so the element is invertible exactly when its norm does not vanish, and an invertible element has a unique matrix polar decomposition. The Cartan pairing is the only one of the three pairings of the four factors with this domain; the Hamilton and quaternion pairings fail on additional sets: the Hamilton axis cannot be normalised when the vector part is null, and the quaternion modulus cannot be constructed from $\tilde q_r$ when $\tilde q_r$ is not invertible.
 
 ### The Matrix Proof
 
@@ -260,9 +253,11 @@ The three pairings differ in how they group the four factors and in the domain o
 
 | pairing | first factor | second factor | condition on $\tilde{Q}$ |
 |---|---|---|---|
-| Hamilton | $\Rho = r\,\exp(i\alpha)$, complex scalar | $\exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ and the vector part is non-null |
-| quaternion | $\tilde q = r\,\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde\Psi) = \exp(i\alpha)\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ and the real quaternion part is invertible |
-| Cartan | $\tilde H = r\,\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r}$, unitary | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ |
+| Hamilton | $\Rho = r\,\exp(i\alpha)$, complex scalar | $\exp(\vec U\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the vector part is non-null |
+| quaternion | $\tilde q = r\,\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde\Psi) = \exp(i\alpha)\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real quaternion part is invertible |
+| Cartan | $\tilde H = r\,\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r}$, unitary | $\langle\tilde Q\rangle_{\natural}\neq0$ |
+
+The Hamilton row is the eigenvalue data of *Eigenvalue Decomposition of a Biquaternion*, §*The Spectrum and the Characteristic Polynomial*: $\lambda_\pm=\Rho\exp(\pm i\Theta)$ are the eigenvalues, and the row is available exactly when $\Rho$ and $\vec U=\vec Q/B$ are defined, with $B^2=(\vec Q,\vec Q)$.
 
 The Hamilton and quaternion domains are not nested. The Cartan domain contains both; the Hamilton and quaternion domains overlap without containing each other, and the elements that both miss are the nonzero purely imaginary complex scalars, on which $\tilde q_r = 0$ and the vector part is null, $(\vec Q,\vec Q) = 0$. Each such element lies in the Cartan domain, with $\tilde H = |b_0|e_t$ and $\tilde U = \pm ie_t$ for $\tilde{Q} = ib_0e_t$.
 
@@ -302,7 +297,7 @@ The two anti-automorphisms behave in the same way, each with its own conjugation
 
 ### The Unit-Norm Case
 
-For an element of unit norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = e_t$, the scale and the phase are trivial, $r = 1$ and $\exp(i\alpha) = e_t$, and the Cartan pairing reduces to the product of the boost and the rotor,
+For an element of unit norm, $\langle\tilde Q\rangle_{\natural} = e_t$, the scale and the phase are trivial, $r = 1$ and $\exp(i\alpha) = e_t$, and the Cartan pairing reduces to the product of the boost and the rotor,
 
 $$
 \tilde{Q} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{M}_+ , \quad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} , \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1) .
@@ -322,7 +317,7 @@ $$
 \tilde{Q} = |\tilde{Q}|\,\exp(\hat\alpha\theta_t)\,\exp(I\hat\beta\theta_\mathcal H) ,
 $$
 
-with two pure real unit quaternions $\hat\alpha$ and $\hat\beta$ (the hats avoid the phase $\alpha$), a pure imaginary unit biquaternion $I\hat\beta$ (with $I$ an imaginary unit), and two real angles $\theta_t$ and $\theta_\mathcal H$. Translating their letters into those of the corpus, the trigonometric exponential $\exp(\hat\alpha\theta_t)$ is the rotor $\tilde u_{\mathrm r} = \exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$, the hyperbolic exponential $\exp(I\hat\beta\theta_\mathcal H)$ is the boost about the axis rotated by the rotor, and their product is the boost conjugated by the rotor. Three differences are worth recording.
+with two pure real unit quaternions $\hat\alpha$ and $\hat\beta$ (the hats avoid the phase $\alpha$), a pure imaginary unit biquaternion $I\hat\beta$ (with $I$ an imaginary unit), and two real angles $\theta_t$ and $\theta_\mathcal H$. Translating their letters into those of the corpus, the trigonometric exponential $\exp(\hat\alpha\theta_t)$ is the rotor $\tilde u_{\mathrm r} = \exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$, the hyperbolic exponential $\exp(I\hat\beta\theta_\mathcal H)$ is the boost about the axis rotated by the rotor, that is, the boost conjugated by the rotor, and their product is the boost followed by the rotor. Three differences are worth recording.
 
 - **The order is reversed.** The two non-central factors are written angle first in the paper and boost first in the corpus, and the two words are related by a conjugation by the rotor.
 - **The count differs.** Their $2+3+3 = 8$ keeps the complex modulus whole, where the corpus writes $1+1+3+3 = 8$ with the phase split off.
@@ -334,7 +329,7 @@ The mathematics of the pairing is the same in both places; what the corpus adds 
 
 ### The Generic Element
 
-Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the generic element of the companion article. Its polar decomposition, computed there, is
+Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its polar decomposition, computed there, is
 
 $$
 r = 2.320595787 , \quad \alpha = 0.190253189 , \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y , \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
@@ -346,7 +341,7 @@ $$
 \tilde H = r\tilde U_{\mathrm b} = 2.488489985\,e_t - 0.401850120\,i\,\vec e_x - 0.803700241\,i\,\vec e_y ,
 $$
 
-Hermitian positive with $\langle \tilde H\rangle_{\natural} = r^{2} = 5.385164807$, and
+Hermitian positive with $\langle\tilde H\rangle_{\natural} = r^{2} = 5.385164807$, and
 
 $$
 \tilde U = \exp(i\alpha)\tilde u_{\mathrm r} = (0.462100989+0.088992519i)e_t + (0.387479295+0.074621694i)\vec e_x + (0.774958590+0.149243388i)\vec e_y .
@@ -356,7 +351,7 @@ The first factor is Hermitian positive and the second is unitary, and the two ar
 
 ### The Element with a Null Vector Part
 
-Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1$ and $(\vec Q,\vec Q) = 0$, so the Hamilton representation does not exist; the Cartan pairing does, with
+Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ and $(\vec Q,\vec Q) = 0$, so the Hamilton representation does not exist; the Cartan pairing does, with
 
 $$
 r = 1 , \qquad \alpha = 0 , \qquad \tilde H = \tilde U_{\mathrm b} = 1.414213562\,e_t + 0.707106781\,i\,\vec e_y + 0.707106781\,i\,\vec e_z , \qquad \tilde U = \tilde u_{\mathrm r} = 0.707106781\,(e_t+\vec e_x) .
@@ -366,7 +361,7 @@ The first factor is Hermitian positive and the second is unitary, and the elemen
 
 ### The Element with a Vanishing Real Part
 
-Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -2$ and $\tilde q_r = 0$, so the construction of the quaternion pairing from the parts of the element fails; the Cartan pairing does not, and reads
+Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = -2$ and $\tilde q_r = 0$, so the construction of the quaternion pairing from the parts of the element fails; the Cartan pairing does not, and reads
 
 $$
 r = \sqrt{2} , \qquad \alpha = \frac{\pi}{2} , \qquad \tilde U_{\mathrm b} = e_t , \qquad \tilde u_{\mathrm r} = \frac{\vec e_x+\vec e_y}{\sqrt{2}} , \qquad \tilde H = \sqrt{2}\,e_t , \qquad \tilde U = i\,\frac{\vec e_x+\vec e_y}{\sqrt{2}} .
@@ -376,11 +371,11 @@ The first factor is the positive scalar $\sqrt{2}e_t$, Hermitian positive, and t
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -1$, the element is invertible and the polar decomposition is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$. The Cartan pairing reads $i = e_t\cdot i$, with $\tilde H = e_t$ Hermitian positive and $\tilde U = i$ unitary: the central phase of the polar decomposition is absorbed into the unitary factor, which is the grouping that defines the Cartan pairing. The example is the clearest single illustration of the difference between having a pairing and being able to construct the modulus of a partial representation from the parts of the element.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, the element is invertible and the polar decomposition is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$. The Cartan pairing reads $i = e_t\cdot i$, with $\tilde H = e_t$ Hermitian positive and $\tilde U = i$ unitary: the central phase of the polar decomposition is absorbed into the unitary factor, which is the grouping that defines the Cartan pairing. The example is the clearest single illustration of the difference between having a pairing and being able to construct the modulus of a partial representation from the parts of the element.
 
 ## Summary
 
-The polar decomposition of a biquaternion with non-vanishing norm has four factors and three pairings, and the Cartan pairing groups the scale with the boost and the phase with the rotor into the two factors $\tilde{Q} = \tilde H\,\tilde U$, $\tilde H = r\tilde U_{\mathrm b}$ and $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$. The first factor is Hermitian positive, with norm $\langle \tilde H\rangle_{\natural} = r^{2}$ and matrix image the positive definite Hermitian square root of $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^{\dagger}$; the second is unitary, an element of $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ carrying the central phase and the spatial rotation. The pairing solves the single equation $\tilde{Q}\tilde{Q}^{*} = \tilde H^{2}$, whence $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ and $\tilde U = \tilde H^{-1}\tilde{Q}$, and it is unique on the complement of the null cone.
+The polar decomposition of a biquaternion with non-vanishing norm has four factors and three pairings, and the Cartan pairing groups the scale with the boost and the phase with the rotor into the two factors $\tilde{Q} = \tilde H\,\tilde U$, $\tilde H = r\tilde U_{\mathrm b}$ and $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$. The first factor is Hermitian positive, with norm $\langle\tilde H\rangle_{\natural} = r^{2}$ and matrix image the positive definite Hermitian square root of $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^{\dagger}$; the second is unitary, an element of $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ carrying the central phase and the spatial rotation. The pairing solves the single equation $\tilde{Q}\tilde{Q}^{*} = \tilde H^{2}$, whence $\tilde H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ and $\tilde U = \tilde H^{-1}\tilde{Q}$, and it is unique on the complement of the null cone.
 
 The pairing is a Hermitian pairing because the two exponents of its factors lie in the two involutive subspaces: $\ln \tilde H = \ln r\,e_t + i\tfrac{\psi}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln \tilde U = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ is anti-Hermitian, which is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C}) = \mathfrak{\mathcal K}(2)\oplus\mathfrak{p}$ of the algebra as a real Lie algebra. The factors themselves are not the sectors: the Hermitian exponent gives a Hermitian positive factor, the anti-Hermitian exponent gives a unitary factor, and the anti-Hermitian object of the pair is the logarithm of the second factor and not the second factor.
 
@@ -395,9 +390,10 @@ The Cartan pairing is not a partial representation. The Hamilton and quaternion 
 | $\tilde{Q} = \tilde H \tilde U$ | the Cartan pairing, two factors |
 | $\tilde H = r\tilde U_{\mathrm b}$ | the Hermitian positive factor, or first factor |
 | $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$ | the unitary factor, or second factor |
-| $\Rho = r\exp(i\alpha)$, $\vec\Xi$, $\Theta$ | the Hamilton modulus, its axis and its complex angle |
+| $\Rho = r\exp(i\alpha)$, $\vec U$, $\Theta$ | the Hamilton modulus, its axis and its complex angle |
+| $\lambda_\pm = Q_t\pm iB = \Rho\exp(\pm i\Theta)$ | the eigenvalues of $\tilde Q$, the coefficients of its eigenvalue decomposition |
 | $\tilde q = r\tilde u_{\mathrm r}$, $\tilde\Psi$ | the quaternion modulus and the quaternion angle of the quaternion pairing |
-| $\langle \tilde H\rangle_{\natural} = \langle \tilde H,\tilde H\rangle_{\natural} = r^{2}$ | the norm of the first factor, the squared scale |
+| $\langle\tilde H\rangle_{\natural} = r^{2}$ | the norm of the first factor, the squared scale |
 | $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |
 | $(\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2$ | the general plain bilinear square of the vector part |
 | $\tilde q_r$ | the real quaternion part of $\tilde{Q}$, the element with the real parts of the four coefficients |
@@ -412,12 +408,14 @@ The Cartan pairing is not a partial representation. The Hamilton and quaternion 
 
 ## Further Reading
 
-- [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, the exponential trichotomy and the domain.
+- [The Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the exponential trichotomy and the domain.
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) and [The Quaternion Pairing of the Polar Decomposition of Biquaternions](the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
 - [Hermitian and Skew-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and the two sectors.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and the structure of the unitary elements.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone of the Hermitian elements in which the first factor lies.
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the isomorphism $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ and the transport of the conjugation ${}^{*}$ to the matrix adjoint.
+- [Eigenvalue Decomposition of a Biquaternion](eigenvalue-decomposition-of-a-biquaternion.html), for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
+- [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the principal branch that fix the two exponents of the pairing.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the unit-norm case $\tilde U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the boost and the rotation of the physical interpretation.
 - [The Polar Decomposition in Subspaces](../articles_physics/the-polar-decomposition-in-subspaces.html), for the Cartan pairing restricted to the remarkable subspaces of the algebra.

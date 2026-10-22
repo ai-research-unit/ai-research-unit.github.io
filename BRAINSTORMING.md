@@ -1,6 +1,6 @@
 The goal is not to focus only on "usual things" , the goal of the project is to do some theoretical research around the biquaternion theory, that s why both "usual things" and rare and structurally interesting objects are very attractive for that.
 
-
+Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
 
 
 
@@ -8320,10 +8320,89 @@ Invariant vs. realization
 
 
 
+Read the convention and these 3 articles :
+
+Eigenvalue Decomposition of a Split-Complex Number
+
+Eigenvalue Decomposition of a Reduced Biquaternion
+
+Eigenvalue Decomposition of a Biquaternion
+
+
+Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
+
+
+
+Read the convention and these 3 articles :
+
+Split-Complex Elementary Functions
+
+Reduced Biquaternion Elementary Functions
+
+Biquaternion Elementary Functions
+
+Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical. They should rely as much as possible on the results from the Eigenvalue Decomposition of their respective category, without duplicating definition and proofs that are already established in these articles.
 
 
 
 
+
+
+Read the convention and these 3 articles :
+
+Exponential Polar Decomposition of Split-Complex Numbers
+
+Exponential Polar Decomposition of Reduced Biquaternions
+
+Exponential Polar Decomposition of Biquaternions
+
+Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical. They should rely as much as possible on the results from the Eigenvalue Decomposition and the Elementary Functions of their respective category, without duplicating definition and proofs that are already established in these articles.
+
+
+
+
+
+
+
+
+Read the convention and these 3 articles :
+
+The Quaternion Pairing of the Polar Decomposition of Biquaternions
+
+The Hamilton Root Pairing of the Polar Decomposition of Biquaternions
+
+The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
+
+Can you improve the structural and conceptual quality of these 3 articles ? The articles should highlight the results in tables, making the presentation clear and logical. They should rely as much as possible on the results from these articles : Eigenvalue Decomposition of a Biquaternion, Biquaternion Elementary Functions, Exponential Polar Decomposition of Biquaternions, without duplicating definition and proofs that are already established in these articles.
+
+
+
+
+
+Some Maths research have been made :
+
+Eigenvalue Decomposition of a Biquaternion
+
+Biquaternion Elementary Functions
+
+Exponential Polar Decomposition of Biquaternions
+
+The Quaternion Pairing of the Polar Decomposition of Biquaternions
+
+The Hamilton Root Pairing of the Polar Decomposition of Biquaternions
+
+The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
+
+
+
+
+Can you read the conventions, analyze the physics corpus, and modify /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/_reserve/eigenvalues_improvements.md with :
+
+1. the possible physical interpretations of these new articles that could impact the Biquaternion Universe Theory
+
+2. which articles of the category : Physical Interpretation of Mathematics could be created or modified due to these new articles
+
+3. which other physics articles could be created or modified because of these new articles that could impact the Biquaternion Universe Theory
 
 
 

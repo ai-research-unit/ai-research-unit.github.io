@@ -245,3 +245,4 @@ When the scalars do not commute, as over $\mathbb{H}$, the left/right ambiguity 
 - Fuzhen Zhang, "Quaternions and matrices of quaternions", *Linear Algebra and its Applications* **251** (1997) 21–57, for left and right quaternionic eigenvalues.
 - Fabrizio Colombo, Irene Sabadini, and Daniele C. Struppa, *Noncommutative Functional Calculus* (Birkhäuser, Basel, 2011), for the S-spectrum.
 - Vladimir V. Rodman, *Topics in Quaternion Linear Algebra* (Princeton University Press, 2014), for the spectral theory of quaternionic matrices.
+- The Clifford reading of the eigenvalue decomposition is [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html).

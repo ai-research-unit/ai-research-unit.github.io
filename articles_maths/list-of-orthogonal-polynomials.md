@@ -43,7 +43,7 @@ This article lists the orthogonal polynomials the corpus introduces. An orthogon
 |---|---|---|
 | the biquaternion Legendre, Chebyshev and Hermite polynomials $P_n(\tilde Q)$, $T_n(\tilde Q)$, $H_n(\tilde Q)$ | the same recurrences in the biquaternion algebra; they reduce to the complex polynomials in the oscillatory regime and truncate in the nilpotent regime | *Biquaternion Higher Special Functions* |
 | the split-biquaternion orthogonal polynomials | the same recurrences in the split-biquaternion algebra, with the two regimes of that algebra | *Split-Biquaternion Higher Special Functions* |
-| the split-complex Legendre, Chebyshev and Hermite polynomials | the recurrences in the split-complex algebra, with the hyperbolic parametrisation | *Split-Complex Special Functions* |
+| the split-complex Legendre, Chebyshev and Hermite polynomials | the recurrences in the split-complex algebra, with the hyperbolic parametrisation | *Split-Complex Higher Special Functions* |
 
 ## Warnings
 

@@ -272,6 +272,8 @@ are central idempotents with $\Pi_1 + \Pi_2 = 1$ and $\Pi_1\Pi_2 = 0$; the corol
 
 **Remark (in the corpus).** The four-corner decomposition for an algebra that is not commutative, together with the matrix-unit computation of its corners, is carried out for the biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ in *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Decomposition*, and catalogued in *List of Rings by Their Idempotents*, §*The Peirce Decomposition*. The analogue for a Jordan algebra, where the middle space $J_{1/2}(e)$ appears in place of the two off-diagonal corners and the theorem is proved from the cubic identity $2L_e^3 - 3L_e^2 + L_e = 0$, is *Jordan Algebras*, §*The Peirce Decomposition*; the two theories agree on a symmetrised associative algebra only in the diagonal part.
 
+**Remark (the family).** The passage from one idempotent to a finite complete orthogonal family, the relative complement $g-e$ in a corner, and the refinement and coarsening of the decomposition are *Complementary Idempotents and the Peirce Decomposition*. There the four corners are the case $r=2$ of $A=\bigoplus_{i,j}e_iAe_j$, and the central idempotents are characterised as the families with vanishing off-diagonal corners.
+
 ## The Non-Unital Algebras of the Corpus
 
 Each of the following is an algebra of the corpus that has no identity, with the article that establishes it.

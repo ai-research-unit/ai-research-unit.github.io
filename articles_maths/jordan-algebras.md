@@ -327,3 +327,4 @@ A **Jordan algebra** is a commutative $R$-algebra $(J, \bullet)$ satisfying the 
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for a modern exposition of the identities, the Peirce decomposition and the classification.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the place of Jordan algebras among non-associative algebras.
 - Efim Zel'manov, "On prime Jordan algebras", *Algebra i Logika* 18 (1979), for the structure theory over general fields.
+- The eigenvalue decomposition of an element is [The Eigenvalue Decomposition in a Jordan Algebra](the-eigenvalue-decomposition-in-a-jordan-algebra.html).

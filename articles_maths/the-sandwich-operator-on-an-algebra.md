@@ -190,7 +190,7 @@ $$
 \operatorname{End}_k(M_n(k)) = \mathcal{S}(M_n(k)), \qquad \dim_k \mathcal{S}(M_n(k)) = n^4 .
 $$
 
-This is the extreme case: the sandwich space is everything. In the basis of matrix units $E_{ij}$ the sandwich is $T_{E_{ij}, E_{kl}}(E_{pq}) = E_{ij}E_{pq}E_{kl} = \delta_{pi}\delta_{qk} E_{jl}$, an operator of rank one; the $n^4$ sandwiches with $a, b$ ranging over the matrix units are a basis of $\operatorname{End}_k(M_n(k))$.
+This is the extreme case: the sandwich space is everything. In the basis of matrix units $E_{ij}$ the sandwich is $T_{E_{ij}, E_{kl}}(E_{pq}) = E_{ij}E_{pq}E_{kl} = \delta_{jp}\delta_{qk} E_{il}$, an operator of rank one; the $n^4$ sandwiches with $a, b$ ranging over the matrix units are a basis of $\operatorname{End}_k(M_n(k))$.
 
 ### The Quaternion Algebra
 

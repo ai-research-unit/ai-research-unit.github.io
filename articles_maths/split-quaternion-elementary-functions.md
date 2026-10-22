@@ -5,7 +5,7 @@
 
 This article develops the elementary functions of a split-quaternion variable: the exponential, the trigonometric and hyperbolic functions, the logarithm, the power functions and the roots of unity. It records the domains, the periodicity, the identities that hold and the identities that fail, and it compares the situation with the quaternion and split-complex cases.
 
-The split-quaternion algebra, its split-quaternion norm, its conjugation, its idempotents and its split-complex subalgebras are assumed from *Split-Quaternion Algebra*; the units and the three-way classification from *Split-Quaternion Norm and Invertibility*; the roots of $\tilde\xi^2=-1$ from *Split-Quaternion Roots of Minus One*; the null cone and the nilpotents from *Split-Quaternion Zero Divisors*; and the convergence of power series from *Split-Quaternion Analysis*, §*Power Series and Analytic Functions*. The exponential map of a Lie group is that of *The Lie Algebra and the Exponential Map*; the elementary functions of the division-algebra case are those of *Quaternion Special Functions*, and of the two-dimensional hyperbolic case those of *Split-Complex Special Functions*. Nothing physical is invoked.
+The split-quaternion algebra, its split-quaternion norm, its conjugation, its idempotents and its split-complex subalgebras are assumed from *Split-Quaternion Algebra*; the units and the three-way classification from *Split-Quaternion Norm and Invertibility*; the roots of $\tilde\xi^2=-1$ from *Split-Quaternion Roots of Minus One*; the null cone and the nilpotents from *Split-Quaternion Zero Divisors*; and the convergence of power series from *Split-Quaternion Analysis*, §*Power Series and Analytic Functions*. The exponential map of a Lie group is that of *The Lie Algebra and the Exponential Map*; the elementary functions of the division-algebra case are those of *Quaternion Special Functions*, and of the two-dimensional hyperbolic case those of *Split-Complex Elementary Functions*. Nothing physical is invoked.
 
 ## The Exponential
 
@@ -191,7 +191,7 @@ so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_1 - \tilde
 
 **Corollary (The Trap of the Split-Complex Case).** In the split-complex plane the exponential is $\exp(q_t + q_y\vec e_y) = \exp(q_t)(\cosh q_y + \vec e_y\sinh q_y)$ and its image is one component of the positive cone, not the whole of it; the corresponding statement in the split-quaternion algebra is the theorem on the image of the exponential, and neither statement should be read off the other. In particular the sinusoidal and hyperbolic parts of $\exp v$ for $v \in V$ depend on the sign of $\langle v\rangle_{\natural}$, so an identity valid for one sign of the split-quaternion norm is generally false for the other.
 
-**Proof.** The split-complex formula is *Split-Complex Special Functions*, and the general statement is the theorem on the exponential of a vector above.
+**Proof.** The split-complex formula is *Split-Complex Elementary Functions*, and the general statement is the theorem on the exponential of a vector above.
 
 ## Summary of the Identities
 

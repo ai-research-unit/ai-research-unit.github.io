@@ -133,3 +133,4 @@ On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the dagger of *H
 - Winfried Scharlau, *Quadratic and Hermitian Forms* (Springer, 1985), for sesquilinear and Hermitian forms, their radicals and their isometry groups.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings*, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for forms over a ring with an involution and the adjoint involution.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras*, American Mathematical Society Colloquium Publications 39 (1968), for the quadratic and sesquilinear forms attached to an algebra with an involution.
+- The eigenvalue decomposition of a Hermitian element with respect to the form is [The Eigenvalue Decomposition with respect to a Degree-2 Form](the-eigenvalue-decomposition-with-respect-to-a-degree-2-form.html).

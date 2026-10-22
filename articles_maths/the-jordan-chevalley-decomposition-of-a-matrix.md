@@ -1,0 +1,359 @@
+# __The Jordan–Chevalley Decomposition of a Matrix__
+
+## Introduction
+
+Every matrix over a perfect field splits uniquely into a semisimple part and a nilpotent part that commute:
+
+$$
+A=A_s+A_n, \qquad A_sA_n=A_nA_s, \qquad A_s \text{ semisimple}, \qquad A_n \text{ nilpotent}.
+$$
+
+The decomposition is the matrix case of the Jordan–Chevalley decomposition of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, and it is the precise replacement for the eigenvalue decomposition when the eigenvalues are repeated. The eigenvalue decomposition $A=\sum_i\lambda_iP_i$ exists exactly when $A_n=0$; the spectral projections $P_i$ exist in general and give $A_s=\sum_i\lambda_iP_i$ and $A_n=A-A_s$. The matrix case adds three things to the general theory: an explicit algorithm through the primary decomposition and Hermite interpolation, a description of the two parts in a Jordan basis as the diagonal and the strictly upper triangular parts, and the multiplicative version $A=A_sA_u$ for an invertible matrix, with $A_u$ unipotent. The exponential and the logarithm are the natural applications.
+
+The article assumes the eigenvalue and diagonalisation theory of *Eigenvalues and Diagonalisation*, the general decomposition of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, the spectral projections of *The Eigenvalue Decomposition of a Matrix*, the Lagrange–Sylvester formula of *The Lagrange–Sylvester Eigenprojector Formula*, the Jordan form of *Modules over $k[x]$ and the Jordan Form*, and the matrix algebra of *Matrix Algebras*. The self-adjoint and unitary cases, where the decomposition is compatible with an involution, are *The Eigenvalue Decomposition of a Self-Adjoint Element* and *Unitary Elements and Their Algebraic Decompositions*.
+
+Throughout, $k$ is a field, $A\in M_n(k)$, and $V=k^n$. The characteristic polynomial is $c_A(x)=\det(xI-A)$, the minimal polynomial is $m_A(x)$, and the distinct eigenvalues in an algebraic closure are $\lambda_1,\dots,\lambda_r$, with multiplicities $e_i$ in $m_A$ and $m_i$ in $c_A$. A matrix is **semisimple** when $m_A$ has distinct roots, that is when it is diagonalisable over an algebraic closure of $k$; it is **diagonalisable over $k$** when it is similar over $k$ to a diagonal matrix, which is stronger. A matrix is **nilpotent** when $A^m=0$ for some $m$. The Jordan block of size $m$ and eigenvalue $\lambda$ is $J_m(\lambda)=\lambda I_m+N_m$, with $N_m$ the nilpotent shift.
+
+## The Decomposition
+
+### The theorem
+
+**Theorem.** Let $k$ be a perfect field and $A\in M_n(k)$. There are unique matrices $A_s,A_n\in M_n(k)$ with
+
+$$
+A=A_s+A_n, \qquad A_sA_n=A_nA_s, \qquad A_s \text{ semisimple}, \qquad A_n \text{ nilpotent}.
+$$
+
+Both $A_s$ and $A_n$ are polynomials in $A$ with coefficients in $k$.
+
+*Proof.* Let $m_A=\prod_{i=1}^{r}(x-\lambda_i)^{e_i}$ over an algebraic closure, with the $\lambda_i$ distinct. Over the splitting field, the Chinese remainder theorem applied to the coprime factors $(x-\lambda_i)^{e_i}$ gives idempotents $P_i$ with $P_i\equiv1\pmod{(x-\lambda_i)^{e_i}}$ and $P_i\equiv0\pmod{(x-\lambda_j)^{e_j}}$ for $j\neq i$. The idempotents are the spectral projections of *The Eigenvalue Decomposition of a Matrix*. Put
+
+$$
+A_s=\sum_{i=1}^{r}\lambda_iP_i, \qquad A_n=A-A_s .
+$$
+
+On the primary component $V_i=\ker(A-\lambda_iI)^{e_i}$, the projection $P_i$ is the identity and $A=\lambda_iI+N_i$ with $N_i$ nilpotent; hence $A_s=\lambda_iI$ and $A_n=N_i$ there. The matrix $A_s$ is therefore diagonalisable over the algebraic closure, with the distinct eigenvalues $\lambda_i$, so it is semisimple; $A_n$ is nilpotent; and both commute because they are polynomials in $A$. The individual projections $P_i$ may lie only in the splitting field, but the combination $A_s=\sum_i\lambda_iP_i$ and the difference $A_n=A-A_s$ are fixed by the Galois action, because the action permutes the $P_i$ and the $\lambda_i$ together; hence $A_s,A_n\in M_n(k)$, and they are the values at $A$ of the Galois-invariant Hermite interpolation polynomial of §*The polynomial form*, which lies in $k[x]$. For uniqueness, suppose $A=S+N$ is another decomposition. Then $S$ commutes with $A=S+N$, hence with every polynomial in $A$, in particular with the $P_i$. On $V_i$, the matrices $S$ and $A$ commute and $N=A-S$ is nilpotent. The restriction of $N$ to the invariant subspace $V_i$ is nilpotent and commutes with $N_i$, so $N_i-N$ is nilpotent; hence $S=A-N=\lambda_iI+(N_i-N)$ has the single eigenvalue $\lambda_i$ on $V_i$. A semisimple matrix with a single eigenvalue is the scalar matrix, so $S=\lambda_iI$ on $V_i$ and $S=A_s$. Then $N=A-S=A_n$.
+
+**Corollary.** The following are equivalent: $A$ is semisimple; $A_n=0$; $A=A_s$; $m_A$ has distinct roots; $A$ is diagonalisable over an algebraic closure. If in addition $m_A$ splits over $k$ with distinct roots, then $A$ is diagonalisable over $k$ and $A=\sum_i\lambda_iP_i$ is its eigenvalue decomposition.
+
+*Proof.* The first four are the definition and the theorem. The last is the eigenvalue decomposition of *The Eigenvalue Decomposition of an Element*, applied over $k$.
+
+**Remark.** The perfect-field hypothesis is what makes the coefficients of $A_s$ and $A_n$ lie in $k$. Over an imperfect field the decomposition can fail, and the failure is not a failure of the matrix but of the field: the companion matrix of an inseparable polynomial has no semisimple part over the base field. The example is §*The imperfect field*.
+
+### Semisimple versus diagonalisable
+
+The theorem separates two notions that coincide over an algebraically closed field and differ over $\mathbb{R}$.
+
+- A matrix is **semisimple** when its minimal polynomial is squarefree. Over an algebraic closure it is diagonalisable, but over the base field it need not be. The rotation $R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ over $\mathbb{R}$ has $m_R=x^2+1$, which is squarefree, so $R$ is semisimple; it is not diagonalisable over $\mathbb{R}$, because it has no real eigenvector.
+- A matrix is **diagonalisable over $k$** when it is similar over $k$ to a diagonal matrix. This requires the eigenvalues to lie in $k$ and the eigenspaces to span $V$ over $k$. The rotation is diagonalisable over $\mathbb{C}$ but not over $\mathbb{R}$.
+
+The Jordan–Chevalley decomposition is stated for semisimple, not for diagonalisable: it exists over every perfect field, and the semisimple part may have irreducible factors of degree greater than one over $k$. The eigenvalue decomposition is stated for diagonalisable over $k$: it requires the eigenvalues in $k$. The two coincide over an algebraically closed field.
+
+### The polynomial form
+
+The proof gives $A_s$ and $A_n$ as polynomials in $A$. The polynomial for $A_s$ can be written explicitly by Hermite interpolation. Let
+
+$$
+p\in k[x], \qquad \deg p<\deg m_A,
+$$
+
+be the unique polynomial with
+
+$$
+p(\lambda_i)=\lambda_i, \qquad p^{(k)}(\lambda_i)=0 \quad (1\le k<e_i, \ 1\le i\le r).
+$$
+
+**Proposition.** With $p$ as above, $A_s=p(A)$ and $A_n=(x-p)(A)$.
+
+*Proof.* On the primary component $V_i$, the Taylor expansion of $p$ at $\lambda_i$ is
+
+$$
+p(A)=p(\lambda_i)I+\sum_{k\ge1}\frac{p^{(k)}(\lambda_i)}{k!}(A-\lambda_iI)^k=\lambda_iI,
+$$
+
+because the derivatives vanish up to order $e_i-1$ and $(A-\lambda_iI)^{e_i}=0$ on $V_i$. Hence $p(A)=A_s$. The polynomial $x-p$ vanishes at each $\lambda_i$ and has derivative $1$ there, so $(x-p)(A)=A-A_s=A_n$.
+
+**Corollary.** The semisimple part is the value at $A$ of the Hermite interpolation polynomial of the data "value $\lambda_i$, first $e_i-1$ derivatives zero" at each eigenvalue. In the diagonalisable case $e_i=1$ for all $i$, and $p$ is the Lagrange interpolation polynomial of the values $\lambda_i$, that is $p(A)=\sum_i\lambda_iP_i$ with the Lagrange projectors.
+
+**Remark.** The polynomial $p$ has degree less than $\deg m_A$ and coefficients in $k$ when $m_A$ is separable. Over the algebraic closure it is the Hermite interpolation polynomial; over $k$ it is the reduction of that polynomial modulo $m_A$, which is Galois-invariant. The nilpotent part is $q(A)$ with $q=x-p$; the polynomial $q$ has a simple zero at each eigenvalue, and $q(A)$ is nilpotent because on each primary component it is the nilpotent $N_i$.
+
+## The Algorithm
+
+### Computing the decomposition
+
+The decomposition is computed in four steps.
+
+1. Compute the minimal polynomial $m_A$ (or the characteristic polynomial; the primary factors of $m_A$ are what the idempotents use).
+2. Factor $m_A=\prod_i(x-\lambda_i)^{e_i}$ over a splitting field.
+3. Compute the spectral projections $P_i$. For distinct eigenvalues, use the Lagrange formula
+
+$$
+P_i=\prod_{j\neq i}\frac{A-\lambda_jI}{\lambda_i-\lambda_j}.
+$$
+
+For repeated eigenvalues, use the Chinese remainder construction, the contour integral of the resolvent, or the Hermite interpolation of the previous section.
+4. Put $A_s=\sum_i\lambda_iP_i$ and $A_n=A-A_s$.
+
+The algorithm is polynomial in $n$ once the factorization of $m_A$ is known. The expensive step is the factorization; the linear algebra is the computation of the idempotents.
+
+### A three-by-three example
+
+Let
+
+$$
+A=\begin{pmatrix}2&1&0\\0&2&0\\0&0&3\end{pmatrix}.
+$$
+
+The characteristic polynomial is $(x-2)^2(x-3)$ and the minimal polynomial is $(x-2)^2(x-3)$, so the eigenvalues are $2$ and $3$, with $e_2=2$ and $e_3=1$. The spectral projections are
+
+$$
+P_2=E_{11}+E_{22}, \qquad P_3=E_{33},
+$$
+
+because the generalized eigenspace of $2$ is the span of the first two basis vectors and the eigenspace of $3$ is the span of the third. Hence
+
+$$
+A_s=2P_2+3P_3=\begin{pmatrix}2&0&0\\0&2&0\\0&0&3\end{pmatrix}, \qquad
+A_n=A-A_s=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}=E_{12}.
+$$
+
+The nilpotent part is $E_{12}$, of index two; $A_s$ is diagonal; and $A=A_s+A_n$ is the Jordan–Chevalley decomposition. The matrix is not semisimple, because $m_A$ has the repeated root $2$.
+
+### A Jordan block
+
+For the Jordan block $J_m(\lambda)=\lambda I_m+N_m$,
+
+$$
+J_m(\lambda)_s=\lambda I_m, \qquad J_m(\lambda)_n=N_m.
+$$
+
+The semisimple part is the scalar matrix and the nilpotent part is the shift. For $\lambda\neq0$ the multiplicative version is
+
+$$
+J_m(\lambda)=\lambda I_m\cdot\left(I_m+\lambda^{-1}N_m\right),
+$$
+
+with the unipotent factor $I_m+\lambda^{-1}N_m$. The example is the model of every primary block: a semisimple scalar plus a nilpotent shift, with the two commuting.
+
+## The Jordan Form
+
+### The diagonal and the nilpotent parts
+
+Let $A$ be in Jordan form, a direct sum of blocks $J_{m_{i,k}}(\lambda_i)$. In the Jordan basis,
+
+$$
+A_s=\operatorname{diag}(\lambda_1I_{m_1},\dots,\lambda_rI_{m_r}),
+$$
+
+the diagonal part of the matrix, and
+
+$$
+A_n=A-A_s
+$$
+
+is the strictly upper triangular part, the direct sum of the nilpotent shifts $N_{m_{i,k}}$. The Jordan–Chevalley decomposition is therefore the decomposition of a Jordan matrix into its diagonal and its strictly upper triangular parts. The two parts commute because the diagonal part is scalar on each block and the shift is strictly upper triangular.
+
+**Theorem.** In a Jordan basis, $A_s$ is the diagonal part and $A_n$ is the strictly upper triangular part. Conversely, if a basis makes $A_s$ diagonal and $A_n$ strictly upper triangular, then the basis is a triangular basis for $A$; a further change of basis within each eigenspace, preserving the diagonal form of $A_s$, puts $A_n$ in Jordan form.
+
+*Proof.* The first statement is the computation above. For the converse, $A=A_s+A_n$ with $A_s$ diagonal and $A_n$ strictly upper triangular; the eigenvalues of $A$ are the diagonal entries of $A_s$, and $A$ is upper triangular in the basis. The nilpotent part $A_n$ commutes with $A_s$, so it preserves each eigenspace of $A_s$; within an eigenspace, a change of basis does not change the scalar $A_s$, and it puts the nilpotent restriction of $A_n$ in Jordan form. The details are the Jordan form theorem of *Modules over $k[x]$ and the Jordan Form*.
+
+**Remark.** The Jordan–Chevalley decomposition is weaker than the Jordan form. It gives the semisimple part, which carries the eigenvalues, and the nilpotent part, which carries the sizes of the blocks; it does not give the basis that puts the nilpotent part in Jordan form. The block sizes are the Jordan invariants of $A_n$, read from the ranks of the powers of $A_n$, as in *The Eigenvalue Decomposition of a Matrix*, §*The Jordan form*. The semisimple part sees only the eigenvalues; the nilpotent part sees only the sizes.
+
+### The real Jordan form
+
+Over $\mathbb{R}$, the semisimple part is not necessarily diagonal: the complex eigenvalues occur in conjugate pairs, and each pair contributes a $2\times2$ block
+
+$$
+\begin{pmatrix}a&-b\\b&a\end{pmatrix}, \qquad a\pm ib \text{ the pair}.
+$$
+
+The real Jordan form is the direct sum of the real Jordan blocks: a real eigenvalue contributes the usual $J_m(\lambda)$, and a complex pair contributes a block of the form
+
+$$
+\begin{pmatrix}C&I&0&\cdots&0\\0&C&I&\cdots&0\\\vdots&&\ddots&\ddots&\vdots\\0&0&\cdots&C&I\\0&0&\cdots&0&C\end{pmatrix}, \qquad C=\begin{pmatrix}a&-b\\b&a\end{pmatrix},
+$$
+
+with the identity $I_2$ on the superdiagonal. The semisimple part is the block diagonal with the $C$'s on the diagonal, and the nilpotent part is the strictly block-upper part. The real form exists over $\mathbb{R}$ even when the eigenvalues are not real; the complex form is the scalar diagonalisation after extending scalars.
+
+## The Multiplicative Version
+
+### Units and unipotents
+
+A matrix $U$ is **unipotent** when $U=I+N$ with $N$ nilpotent; equivalently, when $U$ is a unit and $U-I$ is nilpotent. The eigenvalues of a unipotent matrix are all $1$.
+
+**Theorem.** Let $A$ be invertible. Then there are unique matrices $A_s,A_u$ with
+
+$$
+A=A_sA_u, \qquad A_sA_u=A_uA_s, \qquad A_s \text{ semisimple}, \qquad A_u \text{ unipotent}.
+$$
+
+They are $A_s$ of the additive decomposition and $A_u=I+A_s^{-1}A_n$.
+
+*Proof.* The additive decomposition gives $A=A_s+A_n=S+N$ with $S$ semisimple and $N$ nilpotent, commuting. Since $A$ is invertible, $S$ is invertible: if $S$ had the eigenvalue $0$, then $A=S+N$ with $N$ nilpotent commuting with $S$ would have the eigenvalue $0$. Put $U=I+S^{-1}N$. The matrix $S^{-1}N$ is nilpotent, because $S^{-1}$ commutes with $N$ and $N$ is nilpotent, so $U$ is unipotent; and
+
+$$
+SU=S(I+S^{-1}N)=S+N=A .
+$$
+
+The factors commute because $S$ commutes with $N$. For uniqueness, if $A=SU$ with $S$ semisimple, $U=I+N$ unipotent, and $SU=US$, then $A=S+SN$ is an additive decomposition with $SN$ nilpotent and commuting with $S$; the uniqueness of the additive decomposition gives $S=A_s$ and $SN=A_n$, hence $U=I+S^{-1}N=A_u$.
+
+**Corollary.** The multiplicative decomposition separates the eigenvalues from the unipotent part: $A_s$ has the eigenvalues $\lambda_i$ of $A$, and $A_u$ has the single eigenvalue $1$ on each primary block.
+
+### The exponential
+
+**Theorem (over $\mathbb{R}$ or $\mathbb{C}$).** For every matrix $A$,
+
+$$
+e^A=e^{A_s}e^{A_n}, \qquad e^{A_s}e^{A_n}=e^{A_n}e^{A_s},
+$$
+
+and this is the multiplicative Jordan–Chevalley decomposition of $e^A$: $e^{A_s}$ is semisimple, $e^{A_n}$ is unipotent, and the two commute.
+
+*Proof.* The two parts commute, so $e^A=e^{A_s+A_n}=e^{A_s}e^{A_n}$. The matrix $A_s$ is diagonalisable over an algebraic closure, so $e^{A_s}$ is diagonalisable over the same field, hence semisimple. The matrix $A_n$ is nilpotent, so $e^{A_n}=I+N'$ with $N'=A_n+\frac12A_n^2+\cdots$ nilpotent; hence $e^{A_n}$ is unipotent. The uniqueness of the multiplicative decomposition gives the identification.
+
+**Corollary.** If $A$ is invertible and has a logarithm $L$ with $e^L=A$, then the Jordan–Chevalley decomposition of $L$ has the semisimple part $\log A_s$ and the nilpotent part $\log A_u$, where $\log A_u$ is the finite series
+
+$$
+\log(I+N)=N-\frac{N^2}{2}+\frac{N^3}{3}-\cdots
+$$
+
+for the nilpotent $N=A_u-I$.
+
+*Proof.* The logarithm of the product of commuting factors is the sum of the logarithms, and the logarithm of a unipotent matrix is the finite series, which is nilpotent. The logarithm of the semisimple $A_s$ is semisimple, and the two commute.
+
+**Remark.** Over $\mathbb{C}$ every invertible matrix has a logarithm, so the corollary applies to every invertible matrix. Over $\mathbb{R}$ the logarithm exists when the matrix has no negative real eigenvalue, and the real logarithm of a real matrix with a complex pair is the real logarithm of the $2\times2$ block. The decomposition reduces the problem to the semisimple part, where the logarithm is the scalar logarithm on each eigenvalue, and the unipotent part, where it is the finite series.
+
+## The Real and Complex Cases
+
+### A semisimple matrix that is not diagonalisable
+
+The rotation
+
+$$
+R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+$$
+
+over $\mathbb{R}$ has $m_R=x^2+1$, which is squarefree, so $R$ is semisimple and $R_s=R$, $R_n=0$. It is not diagonalisable over $\mathbb{R}$: its eigenvalues $\pm i$ are not in $\mathbb{R}$. Over $\mathbb{C}$ it is diagonalisable, with the spectral projections of *The Eigenvalue Decomposition of a Matrix*, §*A rotation over the reals*. The example shows that the Jordan–Chevalley decomposition is not the same as the eigenvalue decomposition: it exists over $\mathbb{R}$, and its semisimple part is the matrix itself, even though no real eigenbasis exists.
+
+### A matrix with a complex pair
+
+The real matrix
+
+$$
+A=\begin{pmatrix}1&-1\\1&1\end{pmatrix}
+$$
+
+has the characteristic polynomial $x^2-2x+2=(x-1)^2+1$, with the eigenvalues $1\pm i$. The minimal polynomial is the same, with distinct roots, so $A$ is semisimple and $A_s=A$, $A_n=0$. Over $\mathbb{C}$ the eigenvalues are distinct and the matrix is diagonalisable; over $\mathbb{R}$ it is not, and its real Jordan form is the single $2\times2$ block $\begin{pmatrix}1&-1\\1&1\end{pmatrix}$. The example is the smallest real matrix that is semisimple without being diagonalisable over $\mathbb{R}$.
+
+### The imperfect field
+
+Let $k=\mathbb{F}_p(t)$ and let $A$ be the companion matrix of $x^p-t$:
+
+$$
+A=\begin{pmatrix}0&0&\cdots&0&t\\1&0&\cdots&0&0\\0&1&\cdots&0&0\\\vdots&&\ddots&&\vdots\\0&0&\cdots&1&0\end{pmatrix}.
+$$
+
+The characteristic and the minimal polynomial are both $x^p-t$, whose derivative is $p x^{p-1}=0$; the polynomial is inseparable and the matrix is not semisimple. Suppose that $A=S+N$ were a Jordan–Chevalley decomposition over $k$. The semisimple part $S$ would have the same characteristic polynomial $x^p-t$ as $A$, hence the same sole eigenvalue $t^{1/p}$ in the splitting field. A semisimple matrix with a single eigenvalue is the scalar matrix, so $S=t^{1/p}I$, whose entries are not in $k$; contradiction. Hence no decomposition exists over $k$. After the extension $K=k(t^{1/p})$, the polynomial becomes $(x-t^{1/p})^p$ and the matrix becomes the single Jordan block $t^{1/p}I+N$; the decomposition over $K$ is $S=t^{1/p}I$, $N=A-S$. The example is the matrix form of the failure over an imperfect field of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, §*The failure over an imperfect field*.
+
+## The Centraliser
+
+### The intersection formula
+
+**Theorem.** Let $A=A_s+A_n$ be the Jordan–Chevalley decomposition. Then
+
+$$
+C(A)=C(A_s)\cap C(A_n).
+$$
+
+*Proof.* The matrices $A_s$ and $A_n$ are polynomials in $A$, so every matrix commuting with $A$ commutes with both; this gives $C(A)\subseteq C(A_s)\cap C(A_n)$. Conversely, if $X$ commutes with $A_s$ and with $A_n$, then $X$ commutes with their sum $A$; this gives the reverse inclusion.
+
+**Corollary.** The centraliser of $A$ is the intersection of the centraliser of its semisimple part and the centraliser of its nilpotent part. In the diagonalisable case $A_n=0$ and $C(A)=C(A_s)$, the block-diagonal algebra of *The Eigenvalue Decomposition of a Matrix*, §*The Peirce decomposition of the matrix algebra*.
+
+### Commuting families
+
+**Theorem.** Let $\mathcal{F}$ be a commuting family of matrices over a perfect field. Then the semisimple parts of the elements of $\mathcal{F}$ commute with one another, the nilpotent parts commute with one another, and the family has a simultaneous Jordan–Chevalley form: there is a basis in which every element is block diagonal, the semisimple parts are diagonal, and on each common eigenspace block the nilpotent parts are simultaneously strictly upper triangular.
+
+*Proof.* The semisimple part $S_A$ of $A\in\mathcal{F}$ is a polynomial in $A$, hence commutes with every element of the family and with every other semisimple part. The semisimple parts are therefore a commuting family of semisimple matrices, and they are simultaneously diagonalisable over an algebraic closure. Choose a common eigenbasis, so that every $S_A$ is diagonal. The nilpotent part $N_A=A-S_A$ commutes with $S_A$, because $A$ and $S_A$ do, so $N_A$ preserves each common eigenspace of the semisimple parts. Hence every $A$ is block diagonal with respect to the common eigenspace decomposition. On a fixed common eigenspace, the $S_A$ are scalars and the $N_A$ are a commuting family of nilpotent endomorphisms; by Engel's theorem, applied to the commutative Lie algebra they span, they are simultaneously strictly upper triangular in a suitable basis of that eigenspace. The basis change inside the eigenspace preserves the scalar form of the semisimple parts. The uniqueness of the Jordan–Chevalley decomposition identifies the parts intrinsically, so the construction does not depend on the choices.
+
+**Remark.** The simultaneous form is the matrix form of the statement that a commutative subalgebra of $M_n(k)$ has a semisimple part and a nilpotent radical, and that its semisimple elements are simultaneously diagonalisable over an algebraic closure. The semisimple parts form a commutative semisimple algebra, and the nilpotent parts form a commutative nilpotent ideal of the algebra generated by the family. The result is used in the structure theory of commutative algebras of matrices and in the theory of the Jordan form of a family.
+
+## Examples
+
+### A nilpotent matrix
+
+For the nilpotent matrix $N=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the only eigenvalue is $0$, the minimal polynomial is $x^2$, and
+
+$$
+N_s=0, \qquad N_n=N.
+$$
+
+The matrix is not semisimple and not invertible; the multiplicative version does not apply. The example is the opposite extreme to the semisimple case: the semisimple part vanishes and the whole matrix is nilpotent.
+
+### An idempotent
+
+For an idempotent $E$, the minimal polynomial divides $x(x-1)$, which is squarefree, so $E$ is semisimple and
+
+$$
+E_s=E, \qquad E_n=0.
+$$
+
+The multiplicative version is $E=E\cdot I$, with the unipotent factor $I$. The example shows that an idempotent is its own semisimple part and that the decomposition is trivial.
+
+### A Jordan block with a nonzero eigenvalue
+
+For $J=J_3(2)=\begin{pmatrix}2&1&0\\0&2&1\\0&0&2\end{pmatrix}$,
+
+$$
+J_s=2I_3, \qquad J_n=\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}.
+$$
+
+The multiplicative version is $J=2I_3\cdot(I_3+\frac12J_n)$, with the unipotent factor $I_3+\frac12J_n$. The logarithm is
+
+$$
+\log J=(\log2)I_3+\log\left(I_3+\frac12J_n\right)
+=(\log2)I_3+\frac12J_n-\frac18J_n^2,
+$$
+
+which is the sum of the semisimple part $(\log2)I_3$ and the nilpotent part $\frac12J_n-\frac18J_n^2$. The example is the model computation for the logarithm of a non-diagonalisable matrix.
+
+### The exponential of a nilpotent matrix
+
+For $N=\begin{pmatrix}0&1\\0&0\end{pmatrix}$,
+
+$$
+e^N=I+N=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+$$
+
+a unipotent matrix. The multiplicative decomposition is $e^N=I\cdot e^N$, with the semisimple part $I$ and the unipotent part $e^N$; the logarithm recovers $N$. The example is the simplest case of the exponential theorem: a nilpotent matrix exponentiates to a unipotent matrix, and the unipotent matrix is the whole multiplicative decomposition.
+
+### The rotation
+
+For the rotation $R$ over $\mathbb{R}$, $R_s=R$ and $R_n=0$; over $\mathbb{C}$ the semisimple part is the diagonal matrix of the eigenvalues and the nilpotent part is zero. The example is the case in which the Jordan–Chevalley decomposition is nontrivial over $\mathbb{R}$ only in the sense that the semisimple part is not diagonal over $\mathbb{R}$; the decomposition itself is $R=R+0$.
+
+## Summary
+
+Every matrix over a perfect field has a unique Jordan–Chevalley decomposition $A=A_s+A_n$, with $A_s$ semisimple, $A_n$ nilpotent, and the two commuting. Both parts are polynomials in $A$: $A_s=p(A)$ with $p$ the Hermite interpolation polynomial of the data "value $\lambda_i$, derivatives zero" at each eigenvalue, and $A_n=(x-p)(A)$. In a Jordan basis $A_s$ is the diagonal part and $A_n$ is the strictly upper triangular part; the decomposition is weaker than the Jordan form because it does not give the block sizes. An invertible matrix has the multiplicative version $A=A_sA_u$ with $A_u=I+A_s^{-1}A_n$ unipotent; the exponential of $A$ has the multiplicative decomposition $e^A=e^{A_s}e^{A_n}$, and, when it exists, the logarithm of an invertible matrix has the additive decomposition $\log A=\log A_s+\log A_u$. Over $\mathbb{R}$, the semisimple part may have complex eigenvalues and is not necessarily diagonalisable over $\mathbb{R}$: the rotation is semisimple but not diagonalisable, and the real Jordan form uses $2\times2$ blocks. Over an imperfect field the decomposition can fail; the companion matrix of $x^p-t$ over $\mathbb{F}_p(t)$ is the example. The centraliser is $C(A)=C(A_s)\cap C(A_n)$, and a commuting family has a simultaneous decomposition. The general theory is *Nilpotent Elements and the Jordan–Chevalley Decomposition*; the spectral projections are *The Eigenvalue Decomposition of a Matrix*; the Jordan form is *Modules over $k[x]$ and the Jordan Form*; and the diagonalisation theory is *Eigenvalues and Diagonalisation*.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $A\in M_n(k)$ | the matrix |
+| $m_A(x)$ | the minimal polynomial |
+| $\lambda_1,\dots,\lambda_r$ | the distinct eigenvalues in an algebraic closure |
+| $e_i$ | the multiplicity of $\lambda_i$ in $m_A$ |
+| $m_i$ | the multiplicity of $\lambda_i$ in $c_A$ |
+| $P_i$ | the spectral projection onto the primary component of $\lambda_i$ |
+| $A_s=\sum_i\lambda_iP_i$ | the semisimple part |
+| $A_n=A-A_s$ | the nilpotent part |
+| $A_u=I+A_s^{-1}A_n$ | the unipotent part of an invertible $A$ |
+| $J_m(\lambda)$ | the Jordan block of size $m$ and eigenvalue $\lambda$ |
+| $N_m$ | the nilpotent shift of size $m$ |
+| $C(A)$ | the centraliser of $A$ |
+
+## Further Reading
+
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the Jordan form, the Jordan–Chevalley decomposition and the matrix exponential.
+- James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the Jordan decomposition in the algebraic-group setting and its functoriality.
+- Nathan Jacobson, *Lie Algebras* (Interscience, 1962), for the abstract Jordan decomposition and the simultaneous decomposition of a commutative family.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Jordan–Chevalley decomposition in a finite-dimensional algebra and the role of the perfect-field hypothesis.

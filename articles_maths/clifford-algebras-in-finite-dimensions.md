@@ -710,3 +710,4 @@ For a general element the same two numbers are the real and imaginary parts of t
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005).
 - A. Acus and A. Dargys, *Square roots of complexified quaternions*, arXiv:2601.08391 (2026).
 
+- The eigenvalue decomposition over a coefficient field is [The Eigenvalue Decomposition in a Clifford Algebra](the-eigenvalue-decomposition-in-a-clifford-algebra.html).

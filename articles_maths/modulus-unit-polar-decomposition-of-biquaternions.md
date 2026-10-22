@@ -18,7 +18,7 @@ It is the algebraic member of the polar decompositions of $\mathbb B$: it uses o
 
 Three differences from the quaternion case shape the whole article. The norm is complex, so the modulus is a complex number fixed only after a branch is chosen, and it splits into a positive scale and a central phase on the unit circle. The unit factor is not compact: it is the norm-one group $SL_2(\mathbb C)$, of real dimension six. And the unit factor splits again, into a Hermitian positive factor, the **boost**, and a unitary factor, the **rotor**; the rotor is the compact part, a unit real quaternion, and the boost carries the three non-compact directions. The quaternion article has one factor beyond the scale because its norm is definite; the biquaternion article has three, because its norm is indefinite and its unit group is not compact.
 
-The plan is as follows. The two factors are defined (§*The Two Factors*), the four factors are described (§*The Four Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and its maximal compact subgroup are described (§*The Group of Units and the Unitary Group*), the two real halves are distinguished (§*The Two Halves*), the matrix picture is given (§*The Matrix Picture*), the algorithm is stated (§*The Algorithm*), one element is computed in full (§*Worked Example*), and the article closes with the summary and the notation.
+The plan is as follows. The two factors are defined (§*The Two Factors*), the four factors are described (§*The Four Factors*), the three pairings are introduced (§*The Three Pairings*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and its maximal compact subgroup are described (§*The Group of Units and the Unitary Group*), the two real halves are distinguished (§*The Two Halves*), the matrix picture is given (§*The Matrix Picture*), the algorithm is stated (§*The Algorithm*), one element is computed in full (§*Worked Example*), and the article closes with the summary and the notation.
 
 The conventions and the symbols are those of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, *Norm and Invertibility in the General Quaternionic Algebra*, *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*. The word is written with the plain product, the only associative product of the twelve of *The 12 Products of the Biquaternion Complex Space*, and the matrix model is $M_2(\mathbb C)$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions*.
 
@@ -66,7 +66,7 @@ $$
 \mathcal H=\{\Rho\in\mathbb C:\operatorname{Re}\Rho>0\}\cup\{it:t>0\},
 $$
 
-and the other root $-\Rho$ lies outside it. On $\mathcal H$ the root is a function of the norm, continuous and unique, and it is the only convention of the decomposition.
+and the other root $-\Rho$ lies outside it. On $\mathcal H$ the root is a function of the norm and is unique; it is continuous away from the negative real axis, where the branch cut lies, and it is the only convention of the decomposition.
 
 The **scale** and the **central phase** are the polar coordinates of the modulus on $\mathcal H$,
 
@@ -80,7 +80,7 @@ $$
 \zeta\in\{\zeta\in\mathbb C:\lvert\zeta\rvert=1,\ \operatorname{Re}\zeta>0\}\cup\{i\}.
 $$
 
-The phase takes the value $1$ on the positive real axis and $i$ on the positive imaginary axis, and it never takes the value $-1$ or $-i$: those are the two ends of the cut.
+The phase takes the value $1$ on the positive real axis and $i$ on the positive imaginary axis, and it never takes the value $-1$ or $-i$: the phase ranges over the open right semicircle together with $i$, and $-i$ is the open end of the cut.
 
 ### The Unit Factor and the Norm-One Group
 
@@ -247,6 +247,81 @@ in which the rotor conjugates the boost and the two factors are interchanged. Th
 
 The word has one residual sign. Replacing $\Rho$ by $-\Rho$ leaves the scale and the boost unchanged and sends $\zeta\mapsto-\zeta$, $\tilde u_{\mathrm r}\mapsto-\tilde u_{\mathrm r}$; the product $\zeta\tilde u_{\mathrm r}$ is unchanged, so the four-factor word is the same element. The branch fixes $\Rho$ and therefore fixes the pair $(\zeta,\tilde u_{\mathrm r})$; without the branch the pair is defined only up to the simultaneous sign, which is the biquaternion analogue of the sign carried by the unit factor in the quaternion case.
 
+## The Three Pairings
+
+The four factors can be bracketed in three ways, and each bracketing is a **pairing**. The pairings regroup the same four factors; they differ in where the brackets fall and in what the bracketed pairs are recognised to be. Two are **partial**: a composite factor has to be built from a part of the element, and the construction can fail. The third is **total**.
+
+### The Quaternion Pairing
+
+The quaternion pairing joins the scale to the rotor and the phase to the boost:
+
+$$
+\tilde Q=\bigl(r\tilde u_{\mathrm r}\bigr)\bigl(\zeta\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr).
+$$
+
+The first factor is the real quaternion $r\tilde u_{\mathrm r}$, which is the modulus–unit form of an ordinary quaternion: a positive scale times a unit real quaternion. The second factor is the central phase times the boost carried into the rotor frame; its coefficients are complex in general. The pairing is partial: its construction from the element divides by the part of $\tilde Q$ whose four coefficients are real, so it is available only where that part is nonzero.
+
+The two factors split the norm. The modulus carries the scale, $\langle\tilde q\rangle_{\natural}=r^{2}$; it is a real quaternion, fixed by complex conjugation. The second factor carries the phase, $\langle\zeta\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\rangle_{\natural}=\zeta^{2}$, of modulus one. The product is the norm of the element, $r^{2}\zeta^{2}=\Rho^{2}$. Since the modulus is invertible, the second factor is also the element divided on the left by it,
+
+$$
+\zeta\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde q^{-1}\tilde Q,
+$$
+
+and complex conjugation acts on it alone,
+
+$$
+\overline{\tilde Q}=\tilde q\,\zeta^{-1}\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{-1}\tilde u_{\mathrm r}.
+$$
+
+### The Hamilton Root Pairing
+
+The Hamilton root pairing joins the scale to the phase and the boost to the rotor:
+
+$$
+\tilde Q=(r\zeta)(\tilde U_{\mathrm b}\tilde u_{\mathrm r}),\qquad r\zeta=\Rho.
+$$
+
+The first factor is the complex modulus $\Rho$. The second is read on the root of $-e_t$ parallel to the vector part. Writing $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $B^2=Q_x^2+Q_y^2+Q_z^2$, the second factor is
+
+$$
+\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\cos\Theta+\vec U\sin\Theta,\qquad
+\vec U=\frac{\vec Q}{B},\qquad
+\cos\Theta=\frac{Q_t}{\Rho},\qquad
+\sin\Theta=\frac{B}{\Rho}.
+$$
+
+The axis $\vec U$ is the root of $-e_t$ parallel to the vector part, $\vec U^{2}=-e_t$, so it is fixed by the vector part up to the sign of $B$. The pairing is partial: the normalisation divides by $B$, so the vector part must be non-null.
+
+The first factor is central, so it commutes with the second, and the second is the unit factor itself, $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q/\Rho$, of norm one. The whole norm is therefore carried by the first factor, $\langle\tilde Q\rangle_{\natural}=\Rho^{2}$. The vector part is the complex multiple of the axis and the scalar part the multiple of the cosine,
+
+$$
+\vec Q=B\vec U,\qquad Q_t=\Rho\cos\Theta,\qquad \vec Q^{2}=-B^{2}e_t,
+$$
+
+so the square of the vector part is a scalar, and $\cos^{2}\Theta+\sin^{2}\Theta=1$ is the norm identity $Q_t^{2}+B^{2}=\langle\tilde Q\rangle_{\natural}$.
+
+### The Cartan Hermitian Pairing
+
+The Cartan Hermitian pairing joins the scale to the boost and the phase to the rotor:
+
+$$
+\tilde Q=\tilde H\,(\zeta\tilde u_{\mathrm r}),\qquad \tilde H=r\tilde U_{\mathrm b}.
+$$
+
+The first factor is Hermitian positive and the second is unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so $\tilde H=(\tilde Q\tilde Q^{*})^{1/2}$ and the second factor is $\tilde H^{-1}\tilde Q$: both are functions of the element alone. It is total on the invertible elements, and it is the algebra form of the matrix polar decomposition.
+
+Each factor carries one part of the norm. The first is Hermitian, $\tilde H^{*}=\tilde H$, and its norm is the positive real $r^{2}$; the second is unitary, $(\zeta\tilde u_{\mathrm r})^{*}=(\zeta\tilde u_{\mathrm r})^{-1}$, and its norm is the unit complex $\zeta^{2}$; the product $r^{2}\zeta^{2}=\Rho^{2}$ is the splitting of the determinant in the matrix model. The first factor determines the scale and the boost without ambiguity, $r=\sqrt{\langle\tilde H\rangle_{\natural}}$ and $\tilde U_{\mathrm b}=\tilde H/r$; the second determines the phase as the principal square root of its norm, $\zeta^{2}=\langle\zeta\tilde u_{\mathrm r}\rangle_{\natural}$, and the rotor is the second factor divided by the phase.
+
+The three pairings are collected in the table.
+
+| pairing | first factor | second factor | available when |
+|---|---|---|---|
+| quaternion | $r\tilde u_{\mathrm r}$ | $\zeta\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the part of $\tilde Q$ with real coefficients is nonzero |
+| Hamilton root | $\Rho=r\zeta$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the vector part is non-null |
+| Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $\zeta\tilde u_{\mathrm r}$ | $\tilde Q$ is invertible |
+
+The quaternion and Hamilton root domains are not nested, and the Cartan domain contains both. Within the Cartan domain, the elements outside both partial domains are the nonzero purely imaginary complex scalars.
+
 ## Existence and Uniqueness
 
 **Theorem.** Every invertible biquaternion has exactly one modulus–unit polar decomposition with modulus in the principal half-plane, and exactly one four-factor word.
@@ -255,7 +330,7 @@ The word has one residual sign. Replacing $\Rho$ by $-\Rho$ leaves the scale and
 
 **Uniqueness.** Suppose $\tilde Q=\Rho\tilde U=\Rho'\tilde U'$ with $\Rho,\Rho'\in\mathcal H$ and $\langle\tilde U\rangle_{\natural}=\langle\tilde U'\rangle_{\natural}=1$. Taking norms gives $\Rho^{2}=\Rho'^{2}$, so $\Rho'=\pm\Rho$; both lie in $\mathcal H$, which contains no pair of opposite points, so $\Rho'=\Rho$. Dividing, $\tilde U'=\tilde U$. The polar decomposition of $\tilde U$ is unique: $\tilde U\tilde U^{*}$ has exactly one Hermitian positive square root, hence $\tilde U_{\mathrm b}$ is unique, and then $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is unique. The four factors follow from $r=\lvert\Rho\rvert$ and $\zeta=\Rho/r$.
 
-**The domain.** The word exists exactly on the invertible elements. On the zero-divisor cone the norm vanishes, the modulus is zero, and no factorisation exists: the product of the four factors has norm $r^{2}\zeta^{2}=r^{2}\zeta^{2}$, of modulus $r^{2}>0$, so it cannot vanish. The cone is the boundary of the domain and the only obstruction; the origin is on it, and the decomposition fails there with the rest.
+**The domain.** The word exists exactly on the invertible elements. On the zero-divisor cone the norm vanishes, the modulus is zero, and no factorisation exists: the product of the four factors has norm $r^{2}\zeta^{2}=\Rho^{2}$, of modulus $r^{2}>0$, so it cannot vanish. The cone is the boundary of the domain and the only obstruction; the origin is on it, and the decomposition fails there with the rest.
 
 The uniqueness is a statement about the factors, not about a coordinate on the boost or on the rotor. Two different charts of $H^{3}$ assign different parameters to the same boost, and two different charts of $S^{3}$ assign different parameters to the same rotor; the factors themselves are fixed.
 
@@ -488,6 +563,8 @@ The modulus is complex because the norm is complex; it is the determinant in the
 
 The group of units is $\mathbb B^{\times}\cong GL_2(\mathbb C)$. The map $\tilde Q\mapsto(\Rho,\tilde U)$ is a bijection onto $\mathcal H\times SL_2(\mathbb C)$ but not a group homomorphism: the phase is multiplicative only up to the sign that the branch forces, and that sign is absorbed by the simultaneous sign of the phase and the rotor. The maximal compact subgroup is $U(2)$, the set of words with unit scale and trivial boost, and it is a deformation retract of the group; its fundamental group is $\mathbb Z$.
 
+The four factors regroup into the three pairings: the quaternion pairing, which joins the scale to the rotor; the Hamilton root pairing, which joins the scale to the phase and reads the rest on a root of $-e_t$; and the Cartan Hermitian pairing, which joins the scale to the boost and the phase to the rotor. The first two are partial, the third is total.
+
 In the matrix picture the four factors group into the positive factor $rM_{\mathrm b}$ and the unitary factor $\zeta M_{\mathrm r}$ of the polar decomposition of $M_2(\tilde Q)$. The algebra sees the finer split; the matrix decomposition does not.
 
 ## Summary of Notation
@@ -496,6 +573,8 @@ In the matrix picture the four factors group into the positive factor $rM_{\math
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central $i$ |
 | $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | a biquaternion, $Q_\mu\in\mathbb C$ |
+| $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $B^2=Q_x^2+Q_y^2+Q_z^2$ | the vector part and the squared vector part |
+| $\vec U=\vec Q/B$, $\Theta$ | the Hamilton axis, the root of $-e_t$ parallel to the vector part, and the complex angle of the Hamilton root pairing |
 | $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$ | the quaternion conjugation |
 | $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$ | the Hermitian conjugation |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}=\tilde Q\tilde Q^{\natural}$ | the biquaternion norm, complex valued, multiplicative |
@@ -508,6 +587,8 @@ In the matrix picture the four factors group into the positive factor $rM_{\math
 | $\mathbb B^{\times}_{1}=\{\langle\tilde U\rangle_{\natural}=1\}\cong SL_2(\mathbb C)$ | the norm-one group, of real dimension six |
 | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$ | the boost, Hermitian positive of determinant one |
 | $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ | the rotor, a unit real quaternion, $SU(2)=S^{3}$ |
+| $\tilde q=r\tilde u_{\mathrm r}$ | the quaternion modulus, a real quaternion, first factor of the quaternion pairing |
+| $\tilde H=r\tilde U_{\mathrm b}$ | the Hermitian positive factor, first factor of the Cartan Hermitian pairing |
 | $\mathbb M_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | the Hermitian and anti-Hermitian subspaces |
 | $\mathbb H_{\mathbb B}$ | the real quaternion subspace, $\mathbb B=\mathbb H_{\mathbb B}\oplus i\mathbb H_{\mathbb B}$ |
 | $\mathbb C_{\mathbb B}=\mathbb C e_t$ | the central scalar line |
@@ -522,5 +603,7 @@ In the matrix picture the four factors group into the positive factor $rM_{\math
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), for the biquaternion algebra, its matrix models and its conjugations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition 2001), for the quaternion unit sphere, the complexification and the unitary groups.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $SU(2)$, $U(2)$ and the Cartan decomposition of $SL_2(\mathbb C)$.
-- [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), the companion that reads the same four factors as exponentials, with the two logarithms, the kernel and the closed forms of the boost and of the rotor.
-- [Idempotents and the Boundary of the Polar Decomposition of Biquaternions](idempotents-and-the-boundary-of-the-polar-decomposition-of-biquaternions.html), the companion that reads the null cone, the minimal idempotents and the boundary limits of the word.
+- [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), the companion that reads the same four factors as exponentials, with the two logarithms, the kernel and the closed forms of the boost and of the rotor, and with the boundary of the word: the null cone, the minimal idempotents and the boundary limits.
+- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), the grouping of the scale with the rotor.
+- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), the grouping of the scale with the phase, read on a root of $-e_t$.
+- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), the grouping of the scale with the boost and the phase with the rotor.
