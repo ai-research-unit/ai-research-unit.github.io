@@ -162,6 +162,8 @@ The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, an
 
 The centrality is not a coincidence of the models treated below. It is a consequence of taking the trace over the module to reach the scalar Green's function: the trace of a module operator is central, and any quantity read from the trace is central with it.
 
+**The pole is not an exceptional point.** A resonance pole is a complex zero of a scalar denominator, not a coalescence of two eigenvalues of one element. An exceptional point is the spectral event in which two eigenvalues meet and the element becomes a Jordan block, with a single eigenprojection and a nilpotent part (*Eigenvalue Decomposition of a Biquaternion*, §*The Nilpotent Regime*). The spectral object here is a pair of scalar poles, one on each sheet, and it is not a Jordan block. The two notions coincide only if a model is tuned to a degeneracy, and no such tuning is made here. The exceptional-point side, with its coalescence, its single eigenprojection and its nilpotent part, is [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html).
+
 ## Eliminating a Coupling Between the Two Slots
 
 ### The reduction
@@ -306,6 +308,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 
 ## Further Reading
 
+- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the nilpotent regime and the spectral contrast with a Jordan block.
 - G. Gamow, "Zur Quantentheorie des Atomkernes," *Zeitschrift für Physik* **51** (1928) 204–212, for the complex energy and the exponential decay law of an unstable state.
 - V. Weisskopf and E. Wigner, "Berechnung der natürlichen Linienbreite auf Grund der Diracschen Lichttheorie," *Zeitschrift für Physik* **63** (1930) 54–73, for the self-energy of an unstable state, the level shift and the width.
 - V. Fock and N. Krylov, "On the uncertainty relation between energy and time," *Journal of Physics (USSR)* **11** (1947) 112–115, for the energy–time structure of a decaying state.

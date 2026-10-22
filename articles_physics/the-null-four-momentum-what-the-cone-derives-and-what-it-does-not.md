@@ -159,6 +159,8 @@ an imaginary multiple of an idempotent of the informational sector. The idempote
 
 This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\vec p|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole interpretation of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the idempotent are two faces of one object. The photon's lightlike momentum and a rank-one pure-state idempotent are the same element read in two sectors.
 
+The spectrum makes the same point. The eigenvalues are $2Q_t=2iE/c$ and $0$. They are distinct, so the element is semisimple and has two eigenprojections; the vanishing eigenvalue is the massless condition $E=c\lvert\vec p\rvert$ read spectrally. A nonzero nilpotent is the opposite case: its two eigenvalues coincide at zero and it has no pair of nonzero eigenprojections. The null momentum is therefore on the idempotent stratum of the cone and not on the nilpotent stratum. The eigenpair of the massive momentum, its two null components and their limits are read in *The Spectral Reading of a Four-Vector*.
+
 ### What this gives and what it does not
 
 What it gives is a genuine structural coincidence: the algebra's non-invertible elements in the material sector are in one-to-one correspondence with the Hermitian idempotents of the informational sector, up to a scale. The cone of the material sector is the scaled image of the idempotent sphere of the informational sector. That is a strong internal linkage between the two sectors, and it is derived.
@@ -229,6 +231,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 
 ## Further Reading
 
+- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the zero-divisor regime and the idempotent stratum.
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover), for the light cone and the null interval.
 - Albert Einstein, "Zur Elektrodynamik bewegter Körper", *Annalen der Physik* **17** (1905) 891–921, for the independence of the speed of light from the state of motion of the emitter.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for isotropic vectors and zero divisors in $\mathbb{C}\otimes\mathbb{H}$ and $M_2(\mathbb{C})$.

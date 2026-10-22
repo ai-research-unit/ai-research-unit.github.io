@@ -94,7 +94,7 @@ $$
 \mathbb{B}^\times = \left\{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} \neq 0\right\},
 $$
 
-and on no larger set. The proof is the polar decomposition $\tilde{Q} = R\exp(\Theta\vec u)$ with $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, which fails precisely when $\langle\tilde{Q}\rangle_{\natural} = 0$.
+and on no larger set. The logarithm is not unique: its fibre is the set of all $L$ with $\exp L=\tilde{Q}$, described in *Biquaternion Elementary Functions*, §*The Domain and the Fibre*; for a positive state the spectral branch is the one that makes the entropy real. The proof is the polar decomposition $\tilde{Q} = R\exp(\Theta\vec u)$ with $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, which fails precisely when $\langle\tilde{Q}\rangle_{\natural} = 0$.
 
 For the state this condition is transparent. A state in the interior of the Bloch ball has
 
@@ -452,6 +452,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 
 ## Further Reading
 
+- [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the logarithm, its domain and the fibre of the exponential.
 - C. E. Shannon, "A mathematical theory of communication," *Bell System Technical Journal* **27** (1948) 379–423, for the entropy of a coarse description and its properties.
 - E. T. Jaynes, "Gibbs vs Boltzmann entropies," *American Journal of Physics* **33** (1965) 391–398, for the fine-grained and coarse-grained entropies of classical statistical mechanics.
 - E. T. Jaynes, "Information theory and statistical mechanics," *Physical Review* **106** (1957) 620–630, for entropy as missing information.

@@ -6,7 +6,7 @@ The split-complex space carries two distinguished forms (*The Two Forms and the 
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the indefinite one is named a metric by the same convention, and the difference is stated where it occurs.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, nor the two algebraic norms $\langle Q\rangle=Q^{2}$ and $\langle Q\rangle_{*}=Q\bar Q$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion, the group of units and the modulus $\rho$ are *Split-Complex Norm and Invertibility*, where the polarisation $g$ of the norm and the Euclidean form $\langle\cdot,\cdot\rangle$ are also defined; the topology is *Split-Complex Topology*. The hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form are *Hyperbolic Rotations*, below this article in this category. The group preserving the form, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category; the null quadric and its projectivity are *Split-Complex Null Quadric and Projective Geometry*, below this article in this category. The realification rule is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, nor the two algebraic norms $\langle Q\rangle=Q^{2}$ and $\langle Q\rangle_{*}=Q\bar Q$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion, the group of units and the modulus $\rho$ are *Norm and Invertibility in the General Split-Complex Algebra*, where the polarisation $g$ of the norm and the Euclidean form $\langle\cdot,\cdot\rangle$ are also defined; the topology is *Split-Complex Topology*. The hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form are *Hyperbolic Rotations*, below this article in this category. The group preserving the form, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category; the null quadric and its projectivity are *Split-Complex Null Quadric and Projective Geometry*, below this article in this category. The realification rule is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
 **The split sign, stated once, because it decides the article.** On $\mathbb{C}$ the structure $J$ satisfies $J^{2}=-\mathrm{id}$, and there the Hermitian form is the definite one and gives the Euclidean metric, while the bilinear form is indefinite and gives the split metric. On $\mathbb{D}$ the structure satisfies $J^{2}=+\mathrm{id}$, and the roles are exchanged: the **bilinear** form $\langle\cdot,\cdot\rangle=QC$ realifies to the definite Euclidean metric, and the **Hermitian** form $\langle\cdot,\cdot\rangle_{*}=Q\bar C$ realifies to the indefinite metric, whose diagonal is the split norm $\langle\cdot\rangle_{*}$ with its zero-divisor cone. The exchange is the two-dimensional instance of the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
@@ -44,7 +44,7 @@ of signatures $(2,0)$ and $(1,1)$.
 
 *Proof.* The four values on the basis are $\operatorname{Re}\langle 1,1\rangle=\operatorname{Re}\langle j,j\rangle=1$ and $\operatorname{Re}\langle 1,j\rangle=0$, the last because $j^{2}=+1$ contributes no scalar part to $1\cdot j$; and $\operatorname{Re}\langle 1,1\rangle_{*}=1$, $\operatorname{Re}\langle j,j\rangle_{*}=-1$, $\operatorname{Re}\langle 1,j\rangle_{*}=0$, because $\langle j,j\rangle_{*}=j\bar j=-1$ and $\langle 1,j\rangle_{*}=1\cdot\bar j=-j$ has scalar part zero. The two matrices are diagonal, and the signs of their diagonals give the signatures.
 
-The realified $\langle\cdot,\cdot\rangle$ is positive definite: it is the ordinary inner product of the plane, $\operatorname{Re}\langle Q,C\rangle=qc+q'c'=\langle Q,C\rangle$ in the notation of *Split-Complex Norm and Invertibility*. The realified $\langle\cdot\rangle_{*}$ is indefinite: it is the polarisation of the norm, $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'=g(Q,C)$, positive on the real direction $1$ and negative on the split imaginary direction $j$.
+The realified $\langle\cdot,\cdot\rangle$ is positive definite: it is the ordinary inner product of the plane, $\operatorname{Re}\langle Q,C\rangle=qc+q'c'=\langle Q,C\rangle$ in the notation of *Norm and Invertibility in the General Split-Complex Algebra*. The realified $\langle\cdot\rangle_{*}$ is indefinite: it is the polarisation of the norm, $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'=g(Q,C)$, positive on the real direction $1$ and negative on the split imaginary direction $j$.
 
 **Remark (the sign of the square of the structure decides the swap).** The realification carries the sign of the square of the structure that doubles the coordinate. When that structure squares to $-\mathrm{id}$, the two real blocks of a symmetric bilinear form carry opposite signs and the realified form is indefinite; this is the complex case, where $J^{2}=-\mathrm{id}$ and $\langle\cdot,\cdot\rangle$ realifies to the signature $(1,1)$. Here $J^{2}=+\mathrm{id}$ and the two blocks carry the same sign, so $\langle\cdot,\cdot\rangle$ realifies to $(2,0)$, and the indefinite realification is instead that of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal $\langle\cdot,\cdot\rangle_{*}$ carries the split sign. **This is the passage on which the present article and its complex counterpart are mirror images: the same two forms realify to the same two signatures, $(1,1)$ and $(2,0)$, but attached to the other form.**
 
@@ -56,13 +56,13 @@ $$
 d_{B}^{2}(Q,C)=\operatorname{Re}\langle Q-C,Q-C\rangle=(q-c)^{2}+(q'-c')^{2}.
 $$
 
-It is the diagonal of the realified bilinear form read on the difference $Q-C$, and it is the square of the Euclidean norm of the difference, $\lVert Q-C\rVert_{E}^{2}$ (*Split-Complex Norm and Invertibility*).
+It is the diagonal of the realified bilinear form read on the difference $Q-C$, and it is the square of the Euclidean norm of the difference, $\lVert Q-C\rVert_{E}^{2}$ (*Norm and Invertibility in the General Split-Complex Algebra*).
 
 **Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $Q=C$. Its Gram matrix is $\mathrm{I}_{2}$ and its signature is $(2,0)$; the only null difference is the zero difference.
 
 *Proof.* The expression $(q-c)^{2}+(q'-c')^{2}$ is a sum of two squares of reals, hence non-negative and zero only when both differences vanish, that is when $Q=C$. The Gram matrix was computed in the previous section.
 
-**Proposition (it is a genuine distance).** The function $d_{B}(Q,C)=\lVert Q-C\rVert_{E}$ is symmetric, vanishes exactly on the diagonal, and satisfies the triangle inequality. These are the properties of the Euclidean norm of the difference (*Split-Complex Norm and Invertibility*), the norm that organises the plane of *Split-Complex Topology*.
+**Proposition (it is a genuine distance).** The function $d_{B}(Q,C)=\lVert Q-C\rVert_{E}$ is symmetric, vanishes exactly on the diagonal, and satisfies the triangle inequality. These are the properties of the Euclidean norm of the difference (*Norm and Invertibility in the General Split-Complex Algebra*), the norm that organises the plane of *Split-Complex Topology*.
 
 The level sets are the circles: $d_{B}(Q,C)=r$ is the Euclidean circle of radius $r$ about $C$. The form is definite, so there is no null cone beyond the point $Q=C$.
 
@@ -76,7 +76,7 @@ $$
 d_{H}^{2}(Q,C)=\operatorname{Re}\langle Q-C,Q-C\rangle_{*}=\langle Q-C\rangle_{*}=(q-c)^{2}-(q'-c')^{2}.
 $$
 
-It is the diagonal of the realified form read on the difference $Q-C$, and it is the norm $\langle\cdot\rangle_{*}$ of the difference (*Split-Complex Norm and Invertibility*).
+It is the diagonal of the realified form read on the difference $Q-C$, and it is the norm $\langle\cdot\rangle_{*}$ of the difference (*Norm and Invertibility in the General Split-Complex Algebra*).
 
 **Proposition (indefiniteness).** The indefinite metric is real and takes both signs. Its Gram matrix is $\operatorname{diag}(1,-1)$ and its signature is $(1,1)$; it is positive on the real direction and negative on the split imaginary one. It is therefore not a distance.
 
@@ -88,7 +88,7 @@ $$
 d_{H}^{2}(Q,C)=0 \iff q-c=\pm(q'-c').
 $$
 
-Through each point $C$ this is a pair of lines, of directions $1+j$ and $1-j$; the two directions are exchanged by conjugation, since $\overline{1+j}=1-j$. The null pair depends only on the difference, as does the metric itself, and through the origin it is the null cone of the norm, that is the zero-divisor set of the ring (*Split-Complex Zero Divisors*).
+Through each point $C$ this is a pair of lines, of directions $1+j$ and $1-j$; the two directions are exchanged by conjugation, since $\overline{1+j}=1-j$. The null pair depends only on the difference, as does the metric itself, and through the origin it is the null cone of the norm, that is the zero-divisor set of the ring (*Zero Divisors of the Split-Complex Algebra*).
 
 **The level sets.** For a constant $\kappa\neq0$ the equation $d_{H}^{2}(Q,C)=\kappa$ is a hyperbola, the level set $\{\langle Q\rangle_{*}=\kappa\}$ translated by $C$; the two families $\kappa>0$ and $\kappa<0$ are exchanged by multiplication by $j$, and neither meets the null pair. The level $\kappa=1$ is the unit hyperbola, its level $\kappa=-1$ the conjugate hyperbola, both of *Hyperbolic Rotations*, below this article in this category. The indefinite metric is thus read by its null pair of lines and its two families of hyperbolas, in contrast with the circles of the Euclidean metric.
 
@@ -196,7 +196,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 
 - [The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
 - [The Realification and the Effect of the Change of Scalars on the Split-Complexoid](the-realification-and-the-effect-of-the-change-of-scalars-on-the-split-complexoid.html), for the realification rules that give the signatures $(2,0)$ and $(1,1)$ and the sign of the structure.
-- [Split-Complex Norm and Invertibility](split-complex-norm-and-invertibility.html), for the norm, its polarisation $g$, the Euclidean form, the modulus and the group of units.
+- [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the norm, its polarisation $g$, the Euclidean form, the modulus and the group of units.
 - [Split-Complex Topology](split-complex-topology.html), for the Euclidean plane, its contractibility and the null cone as a removed pair of lines.
 - [Hyperbolic Rotations](hyperbolic-rotations.html), for the hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form.
 - [The Versors and the Orthogonal Group of the Split-Complex Numbers](the-versors-and-the-orthogonal-group-of-the-split-complex-numbers.html), for the group preserving the indefinite form, its algebraic name and its cover.

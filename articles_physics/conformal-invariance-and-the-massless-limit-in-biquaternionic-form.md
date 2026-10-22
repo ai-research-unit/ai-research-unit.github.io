@@ -183,6 +183,8 @@ G^{(\mu)}_{\mathrm{inv}} = \frac{\mu}{4\pi^2\rho}K_1(\mu\rho)
 $$
 the modified Bessel function reducing to its small-argument form $K_1(z)\sim1/z$. The massive kernel has a length scale $\mu^{-1}$ and the massless one has none, which is the analytic counterpart of the rank drop: as $\mu\to0$ the exponential screening disappears and the kernel becomes the pure conformal two-point function. The limit is not uniform — the massive kernel is supported inside the light cone and the massless one on it — and the non-uniformity is the infrared sensitivity of the massless theory, the same feature that makes the massless propagator's long-distance behaviour the subject of its own article.
 
+**The algebraic boundary value.** The limit has a second description, at the level of the element rather than the kernel. The polar word of a massive momentum has no value on the null cone, but it has a boundary value there: with the scale collapsing at the rate of the diverging rapidity, the word converges to a nonzero rank-one null element, an imaginary multiple of a Hermitian idempotent. That boundary value is the massless momentum, and its stratum is selected by the orientation of the rotor against the boost. The statement, its rate and its path dependence are those of [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html); what this article adds is that the same limit restores the conformal weight, while the algebraic limit is the element-level image of the restoration.
+
 ## The Dilation Ward Identity and the Improved Trace
 
 The local statement of the dilation's breaking is the trace of the stress–energy tensor, and the bridge between the two is the dilation current

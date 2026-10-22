@@ -70,6 +70,16 @@ may look: it is the whole of the algebra's **uniform** symmetry, so it fixes the
 intrinsic group at $\mathrm{U}(1)$ and forbids a second uniform phase, and it does not by itself bound the group,
 which is bounded by the dimension of the anti-Hermitian sector.
 
+**The parity matching.** The central phase has period $2\pi i$, but its shifts are not independent of the module rotations. The kernel of the exponential on the diagonal part is the **parity-matched lattice**
+
+$$
+L=\pi i m\,e_t+\pi n\,\vec U,
+\qquad
+m\equiv n\pmod 2,
+$$
+
+so a shift by $2\pi i$ in the phase and a shift by $2\pi$ in the rotation are each allowed alone, while a half-shift $\pi i$ must be accompanied by a half-turn $\pi\vec U$. The kernel is therefore not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$, and the two factors of $\mathrm{U}(1)\times SU(2)$ are not independent at the level of the exponent. The parity matching is the algebraic reason the central phase cannot be gauged by itself: a gauge shift of the phase alone is a kernel element, but a half-phase is not, and the obstruction is the same one that caps the group at $\mathrm{U}(2)$. The lattice is computed in *Biquaternion Elementary Functions* and read in *The Exponential, the Logarithm and the Generator*.
+
 ## The Two Candidate Readings
 
 Two interpretations of the extension problem are consistent with the algebra, and the article states both and

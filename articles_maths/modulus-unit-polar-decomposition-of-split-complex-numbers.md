@@ -14,7 +14,7 @@ The norm of $\mathbb{D}$ is indefinite of signature $(1,1)$. Three consequences 
 
 The article defines the norm and the two regimes (§*The Two Factors*), proves existence and uniqueness (§*Existence and Uniqueness*), describes the group of units and its maximal compact subgroup (§*The Group of Units and the Unit Set*), records the two axes (§*The Two Axes*), gives the matrix picture (§*The Matrix Picture*), computes examples (§*Worked Examples*) and compares the family (§*The Other Algebras*).
 
-The conventions and the symbols are those of *Split-Complex Algebra*, *Split-Complex Norm and Invertibility* and *Conventions in Mathematics*; the notation is collected in §*Summary of Notation*. The rational and exponential coordinates are the subjects of *Rational-Chart Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. Every numerical value displayed below was recomputed in double precision.
+The conventions and the symbols are those of *Split-Complex Algebra*, *Norm and Invertibility in the General Split-Complex Algebra* and *Conventions in Mathematics*; the notation is collected in §*Summary of Notation*. The rational and exponential coordinates are the subjects of *Rational-Chart Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. Every numerical value displayed below was recomputed in double precision.
 
 ## The Two Factors
 

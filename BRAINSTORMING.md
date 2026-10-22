@@ -8317,6 +8317,43 @@ Invariant vs. realization
 
 
 
+Read the convention and these 3 articles :
+
+Square Roots of One and the Idempotents of the Split-Complex Algebra
+
+Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions
+
+Square Roots of One and the Idempotents of the Biquaternion Algebra
+
+
+Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
+
+
+
+
+
+
+
+Read the convention and these 3 articles :
+
+Ideals and Peirce Decomposition of the Split-Complex Algebra
+
+Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions
+
+Ideals and Peirce Decomposition of the Biquaternion Algebra
+
+
+Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8330,6 +8367,9 @@ Eigenvalue Decomposition of a Biquaternion
 
 
 Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
+
+
+
 
 
 
@@ -8379,7 +8419,9 @@ Can you improve the structural and conceptual quality of these 3 articles ? The 
 
 
 
-Some Maths research have been made :
+
+
+Some Maths research has been made :
 
 Eigenvalue Decomposition of a Biquaternion
 
@@ -8394,15 +8436,21 @@ The Hamilton Root Pairing of the Polar Decomposition of Biquaternions
 The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
 
 
-
-
-Can you read the conventions, analyze the physics corpus, and modify /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/_reserve/eigenvalues_improvements.md with :
+Can you read the physics conventions, analyze the physics corpus, and modify /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/_reserve/eigenvalues_improvements.md with :
 
 1. the possible physical interpretations of these new articles that could impact the Biquaternion Universe Theory
 
 2. which articles of the category : Physical Interpretation of Mathematics could be created or modified due to these new articles
 
 3. which other physics articles could be created or modified because of these new articles that could impact the Biquaternion Universe Theory
+
+
+
+
+
+
+
+
 
 
 

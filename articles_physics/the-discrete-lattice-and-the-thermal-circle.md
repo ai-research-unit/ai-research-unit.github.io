@@ -74,6 +74,20 @@ subgroup of a compact group, the other is the character group of a compact group
 the second is **infinite and periodic**. The corpus has a finite lattice and an infinite lattice, related to
 two compactnesses of different origins, and the article states both rather than conflating them.
 
+## The Lattice of the Logarithm
+
+A third lattice appears in the algebra, and it is neither of the two above. For a unit $\tilde Q=Q_te_t+\vec Q$ with $B\neq0$, write $\vec U=\vec Q/B$ for the pure unit element of the vector part, $\vec U^2=-e_t$, and $B^2=Q_x^2+Q_y^2+Q_z^2$. The logarithm is defined up to the kernel of the exponential on the diagonal part of the element,
+
+$$
+L(\tilde Q)=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb Z,\ m\equiv n\pmod 2\right\}.
+$$
+
+A central shift by $2\pi i k\,e_t$ and a rotation shift by $2\pi\ell\,\vec U$ are both allowed on their own. The half-shifts $\pi i e_t$ and $\pi\vec U$ occur only together, because the two eigenvalue logarithms must be shifted in step. The matching is the parity condition.
+
+This is the **gauge of the logarithm**, not a thermal spectrum. It is a lattice of generators, it depends on the element through the axis $\vec U$, and it is the ambiguity of one logarithm rather than a set of elements of the group. The Matsubara lattice is the character group of the compact thermal circle and is infinite and periodic. The lattice $L(\tilde Q)$ is a rank-two lattice inside the diagonal part and has no thermal reading. Identifying the two would turn a gauge ambiguity into a spectrum, and the parity matching is what blocks it.
+
+**The boundary.** The lattice is the kernel of the exponential on the diagonal part, so it is a statement about one element and one chosen logarithm. It is not a lattice of the algebra, not a lattice of the group, and not a temperature. The compact central phase gives the $2\pi i$ period of the scalar part. The rotation angle gives the $2\pi$ period of the vector part. The parity condition is what keeps the two periods compatible.
+
 ## Where the Two Meet: The Orders at Finite Temperature
 
 The comparison suggests exactly one meeting point, and the article states it as a programme. The orders
@@ -124,6 +138,9 @@ named as a gap and not proposed as a formula.
 
 ## Further Reading
 
+- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the parity-matched lattice and its two cosets.
+- [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
+- [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite
   unit group of the complex order.
 - [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the thermal circle, the Matsubara frequencies and the

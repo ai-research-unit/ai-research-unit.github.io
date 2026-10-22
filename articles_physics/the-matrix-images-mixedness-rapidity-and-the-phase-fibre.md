@@ -16,6 +16,7 @@ The article states these four readings and their boundaries. The representations
 | The regular image $\mathsf{M}_4^{L}(\tilde Q)$, $\det=N^{2}$, $\operatorname{Tr}=4Q_t$, and the block splitting $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$ | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The sandwich operator, its matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, its spectrum $\lambda_i\bar\lambda_j$, its determinant $\lvert N\rvert^{4}$ and its trace $4\lvert Q_t\rvert^{2}$ | [The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html), [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The named objects and their matrix correspondences | [Biquaternion Objects and Their Matrix Correspondences](../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html) |
+| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
 | The positive cone and the pure states as rank-one idempotents | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The principal bundle, the connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 
@@ -122,6 +123,14 @@ $$
 \lambda_\pm=Q_t\pm\sqrt{Q_t^{2}-N}
 =Q_t\pm\sqrt{-\bigl(Q_x^{2}+Q_y^{2}+Q_z^{2}\bigr)} .
 $$
+
+The pair is the eigenvalue map of the element. It is not a homomorphism: the eigenvalues of a product are not a function of the two pairs, because the factors need not commute. Its product is multiplicative,
+
+$$
+\lambda_+\lambda_-=\det\mathsf{M}_2(\tilde Q)=N(\tilde Q),
+$$
+
+and that product is the reason the determinant is the one invariant of the pair. The map is a similarity invariant and not a complete one: a scalar $Q_te_t$ and a non-scalar element with $(\vec Q,\vec Q)=0$ share the pair $\{Q_t,Q_t\}$ and are not similar. The eigenprojections, not the pair, carry the remaining information, and they are the subject of *Eigenvalue Decomposition of a Biquaternion*, §*The Eigenvalue Decomposition*.
 
 The sandwich has the four eigenvalues $\lambda_i\bar\lambda_j$, so the nontrivial pair of the operator is the **square** of the pair of the element. The element stores half of the frame change; the congruence stores the whole of it.
 
@@ -244,6 +253,7 @@ The element-data and map-data distinction is an interpretation of the doubling $
 
 - The $2\times2$ image is the element acting on the spinor data; the $4\times4$ regular image is the element acting on the algebra, and it is the $2\times2$ image taken twice, $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$.
 - The trace doubles, $2Q_t$ to $4Q_t$; the determinant squares, $N$ to $N^2$; the sandwich determinant is $\lvert N\rvert^{4}$. Only the vanishing set is common to the three.
+- The eigenvalues of the element are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; their product is the determinant $N$, and the eigenvalue map is a similarity invariant and not a complete one.
 - The determinant of a trace-one state is $\tfrac14(1-\lvert\vec r\rvert^{2})$, the product of its two eigenvalues; the purity is $1-2\det$ and the linear entropy is $2\det$.
 - The determinant vanishes exactly on the pure states, so the pure states are the zero divisors of the state slice and the mixed states are its units.
 - For a pure boost or rotation, the element matrix stores half the rapidity or half the angle; the sandwich stores the full one, because the congruence acts on the four-vector and the element on the spinor.
@@ -271,6 +281,7 @@ The element-data and map-data distinction is an interpretation of the doubling $
 ## Further Reading
 
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the correspondence table this article extends.
+- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the eigenprojections and the point where the pair stops being a complete invariant.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball, its centre and its boundary.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state conditions and the Born pairing.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the boundary of the state space.

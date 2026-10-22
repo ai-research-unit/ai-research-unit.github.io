@@ -144,7 +144,7 @@ $$
 Q = q, \qquad q \in \mathbb{R}.
 $$
 
-This is the **real subspace** $\mathbb{R}_{\mathbb{D}}$, a copy of the real line embedded in $\mathbb{D}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{D}$ isomorphic to $\mathbb{R}$, and as a ring it is a field. The form it carries is treated in *Split-Complex Norm and Invertibility*.
+This is the **real subspace** $\mathbb{R}_{\mathbb{D}}$, a copy of the real line embedded in $\mathbb{D}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{D}$ isomorphic to $\mathbb{R}$, and as a ring it is a field. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
 
 ### The Split Imaginary Subspace
 
@@ -154,7 +154,7 @@ $$
 Q = j q', \qquad q' \in \mathbb{R}.
 $$
 
-This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j q')^2 = q'^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $q' = 0$. The form it carries is treated in *Split-Complex Norm and Invertibility*.
+This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j q')^2 = q'^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $q' = 0$. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
 
 There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
 
@@ -284,7 +284,7 @@ $$
 
 **Proof.** In the idempotent basis multiplication is componentwise, $QB = Q_+B_+\Pi_+ + Q_-B_-\Pi_-$. If $Q_+ = 0$ then $Q\Pi_+ = Q_-\Pi_-\Pi_+ = 0$ with $\Pi_+ \neq 0$, so $Q$ is a zero divisor, and symmetrically for $Q_- = 0$. If both coordinates are nonzero, the displayed formula gives $Q Q^{-1} = \Pi_+ + \Pi_- = 1$, so $Q$ is a unit, and a unit is never a zero divisor.
 
-So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and the non-units of $\mathbb{D}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Split-Complex Zero Divisors*; the criterion by the norm belongs to *Split-Complex Norm and Invertibility*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
+So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and the non-units of $\mathbb{D}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Zero Divisors of the Split-Complex Algebra*; the criterion by the norm belongs to *Norm and Invertibility in the General Split-Complex Algebra*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
 
 ## Summary
 
@@ -292,7 +292,7 @@ The split complex algebra $\mathbb{D}$ is the two-dimensional real algebra with 
 
 Split complex conjugation sends $q + j q'$ to $q - j q'$; it is the unique non-trivial involution, and the idempotent conjugation coincides with it, so the conjugation group is $\mathbb{Z}/2$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{D}}$ and its anti-fixed points the split imaginary subspace $j\mathbb{R}_{\mathbb{D}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $Q = Q_+\Pi_+ + Q_-\Pi_-$, where $\Pi_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $Q_\pm = q \pm q'$. The two components are independent ring homomorphisms, so $\mathbb{D}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.
 
-The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a non-zero element $Q = Q_+\Pi_+ + Q_-\Pi_-$ is a zero divisor exactly when one of its two coordinates vanishes, while it is a unit with $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$ exactly when both are nonzero. The zero divisors are therefore the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, classified in *Split-Complex Zero Divisors*. The norm, the Hermitian form and the inner product are a form and a distance and belong to *Split-Complex Norm and Invertibility*.
+The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a non-zero element $Q = Q_+\Pi_+ + Q_-\Pi_-$ is a zero divisor exactly when one of its two coordinates vanishes, while it is a unit with $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$ exactly when both are nonzero. The zero divisors are therefore the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, classified in *Zero Divisors of the Split-Complex Algebra*. The norm, the Hermitian form and the inner product are a form and a distance and belong to *Norm and Invertibility in the General Split-Complex Algebra*.
 
 ## Summary of Notation
 

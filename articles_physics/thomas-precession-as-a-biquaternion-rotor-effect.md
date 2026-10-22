@@ -77,7 +77,7 @@ $$
 \tilde{u}\in\mathbb{H}_{\mathbb{B}}\ \text{a rotation}.
 $$
 
-The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\psi_k}{2}$, $s_k=\sinh\tfrac{\psi_k}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts.
+The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\psi_k}{2}$, $s_k=\sinh\tfrac{\psi_k}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
 
 For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\omega$ of $\tilde{u}$ is
 

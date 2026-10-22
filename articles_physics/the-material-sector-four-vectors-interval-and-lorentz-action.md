@@ -17,6 +17,7 @@ The results used are these.
 | The four forms and their restrictions | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html), [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) |
 | The commutator and the Lie algebra | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
 | The sandwich and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
+| The eigenvalue decomposition, the eigenprojections and the degenerate regimes | [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html) |
 
 ## The Results It Uses
 
@@ -170,6 +171,26 @@ The **mass shell** is the level set $N(\tilde P)=-m^2c^2$, that is $E^2/c^2-\lve
 
 **The boundary.** The table is a dictionary, not a derivation. The field equations, the Lorentz force law and the Dirac equation are not results of the algebra; the algebra supplies the carrier space and the invariant. The identification of an algebraic element with a physical four-vector is the interpretive step, and it is the same step as in the standard four-vector formalism.
 
+### The Eigenpair Is the Doppler Pair
+
+The eigenvalue decomposition of the element gives one more reading of the four-momentum. With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are
+
+$$
+\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right).
+$$
+
+The two real numbers $\nu_\pm=\lambda_\pm/i=E/c\pm\lvert\vec p\rvert$ are the two light-cone frequencies of the momentum. Their product is the mass squared,
+
+$$
+\nu_+\nu_-=\frac{E^2}{c^2}-\lvert\vec p\rvert^2=m^2c^2,
+$$
+
+while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=N(\tilde P)$. The mass is therefore read from the product, not from either eigenvalue.
+
+The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of *Eigenvalue Decomposition of a Biquaternion*, §*The Eigenvalue Decomposition*. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.
+
+**The boundary.** The reading needs $B\neq0$, that is, a nonzero spatial momentum. At $\vec p=0$ the two eigenvalues coincide at $iE/c$ and the two-projector writing is not unique. A null momentum has $B=E/c$, so one frequency vanishes; the element stays semisimple and the decomposition survives with a zero eigenvalue. The algebra gives the frequencies, not a particle count and not a numerical mass.
+
 ### The Light Cone Is the Zero-Divisor Cone
 
 The norm-zero set of the sector is exactly its set of zero divisors. A null four-vector has $N(\tilde Q)=0$, so the inverse formula fails and the element has no inverse; equivalently, there is a non-zero element annihilated by it. The **light cone** of Minkowski space is therefore the **zero-divisor cone** of the biquaternion algebra, a structural identity and not an additional assumption.
@@ -256,6 +277,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 - The unit group is the complement of the cone; the inverse is $\tilde Q^{\natural}/N(\tilde Q)$.
 - The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
+- The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.
 - The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{M}_+$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
 - The boost factor is positive definite, so the word $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm L}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
 - The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the spatial rotations.
@@ -284,6 +306,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 - [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the definition and the basis of $\mathbb{M}_-$.
 - [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for the norm, its signature and the inverse formula.
+- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the spectrum, the eigenprojections and the degenerate regimes.
 - [Zero Divisors of the Biquaternion Algebra](../articles_maths/zero-divisors-of-the-biquaternion-algebra.html), for the cone and the zero divisors.
 - [The Group of Units and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html), for the unit group.
 - [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) and [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the four forms and their restrictions.

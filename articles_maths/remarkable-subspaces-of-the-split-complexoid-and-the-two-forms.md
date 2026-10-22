@@ -62,7 +62,7 @@ $$
 \langle \lambda\Pi_i,\mu\Pi_i\rangle_{*}=\lambda\mu\,\Pi_i\overline{\Pi_i}=\lambda\mu\,\Pi_i\Pi_{3-i}=0 ,
 $$
 
-because the conjugate of an idempotent is the complementary one and the two multiply to zero. So each idempotent line is **totally isotropic** for $\langle\cdot,\cdot\rangle_{*}$: the restriction of $\langle\cdot,\cdot\rangle_{*}$ to the line is the zero form, of **rank $0$**, and its null set is the whole line. The line, which is the null cone, the zero divisors together with the origin (*Split-Complex Zero Divisors*, below this article in this category), is exactly the set where the Hermitian norm vanishes, $\langle \lambda\Pi_i\rangle_{*}=0$.
+because the conjugate of an idempotent is the complementary one and the two multiply to zero. So each idempotent line is **totally isotropic** for $\langle\cdot,\cdot\rangle_{*}$: the restriction of $\langle\cdot,\cdot\rangle_{*}$ to the line is the zero form, of **rank $0$**, and its null set is the whole line. The line, which is the null cone, the zero divisors together with the origin (*Zero Divisors of the Split-Complex Algebra*, below this article in this category), is exactly the set where the Hermitian norm vanishes, $\langle \lambda\Pi_i\rangle_{*}=0$.
 
 The bilinear form does not vanish there:
 

@@ -19,6 +19,7 @@ The article owns no theorem. It states the algebraic classification, with its so
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The plain square root problem, the four roots, the degenerate rows and the four-parameter family | [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
+| The four roots in the unit case, the branch count and the root table by regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The root sets of the twelve products and the four existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
 | The roots of $0$ and the nilpotents | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
 | The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
@@ -50,7 +51,9 @@ $$
 4x^2-4Q_tx-(\vec Q,\vec Q)=0 .
 $$
 
-The roots come in opposite pairs $\pm\tilde\Xi$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n=Q_t^2+(\vec Q,\vec Q)\neq0$; **two roots** in the two degenerate rows; **no roots** when $(\vec Q,\vec Q)=0$, $n=0$ and $Q_t=0$. For a complex scalar radicand $\tilde Q=Q_te_t$, the roots are the two scalars $\pm\sqrt{Q_t}e_t$ together with a **four-real-parameter family** of pure $\vec\Xi$ with $(\vec\Xi,\vec\Xi)=-Q_t$.
+The roots come in opposite pairs $\pm\tilde\Xi$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n=Q_t^2+(\vec Q,\vec Q)\neq0$; **two roots** in the two degenerate rows; **no roots** when $(\vec Q,\vec Q)=0$, $n=0$ and $Q_t=0$; and a continuous family for a complex scalar radicand $\tilde Q=Q_te_t$, whose two scalar roots $\pm\sqrt{Q_t}e_t$ are joined by a **four-real-parameter family** of pure $\vec\Xi$ with $(\vec\Xi,\vec\Xi)=-Q_t$.
+
+That count is the unit-case count of *Biquaternion Elementary Functions*, §*The Roots*. The table there reads the same multiplicity by regime. There are four for a unit with $(\vec Q,\vec Q)\neq0$, two when the norm vanishes with $Q_t\neq0$, two in the Jordan row, none for a nonzero nilpotent, and a continuous family on the scalar axis. The four plain roots are the four combinations of the two eigenvalue logarithms, modulo the global sign. The shifts that leave the root fixed remove the rest of the lattice.
 
 The root set of $0$ is the nilpotent cone together with the origin. In the natural band the root set of a nonzero value is a level set, not a cone; in the plain band it is the set of the classification — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec\Xi,\vec\Xi)\neq0$, so its norm does not vanish. A non-trivial idempotent is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
 
@@ -237,6 +240,7 @@ The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the
 ## Further Reading
 
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the root sets of the twelve products and the existence classes.
+- [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the root table by regime and the logarithm the roots come from.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the roots of $+1$ and the idempotents as states.
 - [Roots, Idempotents and Quantum Information](roots-idempotents-and-quantum-information.html), for the idempotent structure of the qubit.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the massless shell.

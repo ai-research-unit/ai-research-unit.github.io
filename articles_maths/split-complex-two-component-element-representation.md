@@ -193,7 +193,7 @@ $$
 \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
 $$
 
-so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Split-Complex Norm and Invertibility*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.
+so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Norm and Invertibility in the General Split-Complex Algebra*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.
 
 **Comparison with the complex case.** For $\mathbb{C}$ the norm is
 

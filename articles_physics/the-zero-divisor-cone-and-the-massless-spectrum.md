@@ -18,6 +18,7 @@ The article owns no theorem. It states the nesting, the invertibility criterion 
 | The four forms, the interval and the signature on the two sectors | [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html) |
 | The restrictions of the forms and the norms to the material sector | [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html) |
 | The cone as a topological object, its link and the punctured cone | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |
+| The polar word, its logarithm and the boundary limits that select the two strata | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
 | The projective cone, the Segre quadric and the two rulings | [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html) |
 | The group of units as the complement of the cone | [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html) |
 
@@ -152,6 +153,30 @@ The nilpotents are pure. They lie in the vector subspace and in neither sector: 
 
 The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\Upsilon^2=0$, and there is no higher index. That rigidity is what makes the nilpotent cone a good algebraic model of a lightlike displacement: the element carries a direction, and one composition with itself is enough to erase it. It is not a model of a lightlike four-momentum, which is not erased by its own composition.
 
+## The Cone Is a Boundary Value of the Polar Word
+
+The polar decomposition is defined off the cone and has no value on it. It has a boundary value, and the boundary values are exactly the nonzero elements of the cone.
+
+**The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\zeta$ a unit complex number and $R>0$, and set
+
+$$
+\tilde Q(\psi)=R\exp\left(-\frac{\psi}{2}\right)\zeta\exp\left(i\frac{\psi}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \psi>0.
+$$
+
+Every $\tilde Q(\psi)$ is a unit, and as $\psi\to\infty$ it converges to
+
+$$
+\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
+$$
+
+a nonzero element of the cone. The limit is a complex multiple of a minimal idempotent when $\vec u_{\mathrm r}$ has a component in the plane spanned by $e_t$ and $\vec u_{\mathrm b}$, and it is a nilpotent exactly when $\vec u_{\mathrm r}$ is orthogonal to both. Every nonzero element of the cone is such a limit for some choice of the data.
+
+The physical reading is a massive family approaching the massless wall. The scale collapses as $\exp(-\psi/2)$ while the rapidity diverges, so the norm goes to zero at the same rate as the boost grows. The direction of the boost and the rotor decide which stratum is reached. A rotor with a component in that plane gives the idempotent stratum that carries the photon, and a rotor orthogonal to both gives the nilpotent stratum, which is not a four-momentum. The stratum is selected by the rotor, not by the rate, and the rate is the same for both.
+
+The massless limit of a massive family is the physical instance of the theorem; it is worked out, with the rate and the two strata, in [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html).
+
+**The boundary.** The theorem is a statement about the closure of the domain, not about a value at the wall. The cone has no polar decomposition and no logarithm. The word exists only as a limit. A limit taken along another path can approach a different point of the cone, so the boundary value depends on the direction of approach as well as on the element.
+
 ## Physical Readings
 
 - **The cone is the light cone.** The interpretation is that the zero set of the norm, cut by the material sector, is the null cone of Minkowski space. The mass shells are the level sets of the four-momentum norm, not of the position norm. Boundary: the identification needs the sector cut; on the whole algebra the cone is a complex cone and not a spacetime object.
@@ -174,7 +199,7 @@ The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\U
 
 The norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has three nested zero sets: the roots of $0$, which are the origin and the nilpotent cone; the nilpotents, which are the nonzero pure isotropic elements of index two; and the zero-divisor cone, which is strictly larger and contains the non-pure zero divisors, the complex multiples of the non-trivial idempotents. The cone is the wall of the group of units, closed under composition and the boundary of invertibility.
 
-Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The **massless spectrum** is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object.
+Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The **massless spectrum** is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object. The polar word has no value on the cone but has boundary values there: a diverging boost with a collapsing scale reaches an idempotent multiple when the rotor has a component in the plane of $e_t$ and the boost axis, and a nilpotent when the rotor is orthogonal to both.
 
 ## Summary of Notation
 
@@ -195,6 +220,7 @@ Cut by the material sector, the cone is the Minkowski null cone, and the level s
 - [Zero Divisors of the Biquaternion Algebra](../articles_maths/zero-divisors-of-the-biquaternion-algebra.html), for the two families and their relation to the idempotents.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the classification, the index and the remarkable subspaces.
 - [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for multiplicativity, the inverse and the group of units.
+- [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the polar word, the boundary-value theorem and the two strata.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) and [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html), for the cone as a singular object and its projective rulings.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the zero-divisor sets of the twelve structures and the cone as the shared object of the four general products.
 - [The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase](the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html) and [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html), for the direction, the chirality and the helicity weights.

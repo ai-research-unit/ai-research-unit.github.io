@@ -22,6 +22,7 @@ The mathematics is owned by *The Polar Decomposition of Biquaternions*, *The Pol
 | The four factors, their ranges, their dimensions and their stable subspaces | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
 | The theorem, the uniqueness and the domain off the null cone | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
 | The five-step procedure, the two invariants and the worked examples | [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html) |
+| The exponential word, the logarithm, the kernel and the boundary limits | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
 | The quaternion pairing and its domain | [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html) |
 | The Hamilton root pairing and its domain | [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) |
 | The Cartan Hermitian pairing and the matrix polar decomposition | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
@@ -60,7 +61,7 @@ $$
 
 and the two axes are fixed by the phases of the four complex coordinates. The pair $(N,E^2)$ fixes the scale, the phase and the rapidity and cannot fix the two directions: a real rotation of the vector part leaves both invariants unchanged and turns the axes.
 
-The count is the same statement. Four complex coordinates carry eight real numbers. The scale, the phase and the rapidity account for three; the two boost-axis angles, the two rotor-axis angles and the rotation angle account for the remaining five. The word is a coordinate system on the eight-dimensional algebra, not a constraint on it.
+The count is the same statement. Four complex coordinates carry eight real numbers. The scale, the phase and the rapidity account for three. The two boost-axis angles, the two rotor-axis angles and the rotation angle account for the remaining five. The word is a parametrization of the eight-dimensional algebra, not a chart and not a constraint on it. It is surjective onto the units, and it is not injective where an axis degenerates, at $\psi=0$ for the boost and at $\theta=0$ for the rotor.
 
 ## The Domain
 
@@ -270,6 +271,7 @@ The three pairings are regroupings, not new decompositions. They add no informat
 ## Further Reading
 
 - [The Polar Decomposition of Biquaternions](../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html), for the four factors, the theorem and the uniqueness.
+- [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the exponential word, the logarithm, the kernel and the boundary limits that select the two strata of the cone.
 - [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the real quaternion modulus and the angle.
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex axis-angle.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the amplitude–phase split and the matrix polar decomposition.

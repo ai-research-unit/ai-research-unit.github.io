@@ -160,6 +160,18 @@ The two combinations $\vec E\pm i\vec B$ therefore separate the helicity $+1$ fr
 
 This is the algebraic content of "the photon has two helicity states and no third": the third would be a self-dual/anti-self-dual-neutral component along $\vec u_k$, which is exactly the longitudinal mode, and it is absent for the massless field because transversality forces the amplitude into the two chiral halves. The statement was checked on two independent directions, $(3,4,0)/5$ and $(1,2,2)/3$, in the same exact arithmetic; on each, $\vec E\propto\varepsilon^{\mathrm{fop}}_+$ gives $\vec E+i\vec B=2\vec E$ and $\vec E-i\vec B=0$, and $\vec E\propto\varepsilon^{\mathrm{fop}}_-$ gives the reverse, never both.
 
+### The Null Translation Is a Gauge Direction
+
+The algebra also contains the exponential of a nilpotent, and it is exact. For a pure nilpotent $\vec\Upsilon$ with $\vec\Upsilon^2=0$,
+
+$$
+\exp(t\vec\Upsilon)=e_t+t\vec\Upsilon,
+$$
+
+a unipotent element. In $SL(2,\mathbb{C})$ these are the null rotations. In the little group of a null direction they are the null translations, the abelian factor that accompanies the helicity $\mathrm{U}(1)$ in $E(2)$. The algebra therefore supplies the one-parameter null translations exactly (*Biquaternion Elementary Functions*, §*The Exponential*).
+
+The distinction from a polarization is the point. A null translation shifts the potential along a pure gauge direction. It does not add a physical state. The two physical polarizations are the $\pm1$ helicity states, and the longitudinal direction is removed by the subsidiary condition. The null translation is the algebraic form of the **motion along the gauge orbit**, not a third transverse state and not a replacement for the gauge-fixing principle. The algebra supplies the translations and not the choice of representative, and the gauge gap stands as stated below.
+
 ## What the Framework Does Not Supply
 
 Two things are conspicuously absent, and both were established by the parent articles rather than by this one.
@@ -263,6 +275,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 
 ## Further Reading
 
+- [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential of a nilpotent and the one-parameter null translations.
 - S. N. Gupta, "Theory of longitudinal photons in quantum electrodynamics," *Proceedings of the Physical Society A* **63** (1950) 681–691, and K. Bleuler, "Eine neue Methode zur Behandlung der longitudinalen und skalaren Photonen," *Helvetica Physica Acta* **23** (1950) 567–586, for the indefinite-metric quantization and the subsidiary condition.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), and C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the canonical quantization of the electromagnetic field and the polarization vectors.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), and S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the Gupta–Bleuler construction, the physical-state condition, and the helicity of the massless vector field.

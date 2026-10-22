@@ -56,7 +56,7 @@ The product $Q_1Q_2$ is the bilinear, commutative, associative operation with un
 | zero divisors | yes | $\Pi_1\Pi_2=0$ with both factors non-zero |
 | a field | no | the zero divisors are not invertible |
 
-The failure of the field condition is the subject of *Split-Complex Zero Divisors*; as a ring, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ is a product of two fields, and its elements are classified in *The Classes of Element of the Split-Complex Algebra*.
+The failure of the field condition is the subject of *Zero Divisors of the Split-Complex Algebra*; as a ring, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ is a product of two fields, and its elements are classified in *The Classes of Element of the Split-Complex Algebra*.
 
 ## The Sesquilinear Product $Q_1\overline{Q_2}$
 

@@ -94,7 +94,7 @@ The thirteen subject articles and the source articles that supply their entries,
 | subject | source articles, by algebra |
 |---|---|
 | *Comparison of the Algebras* | *Real Algebra*; *Complex Algebra*; *Split-Complex Algebra*; *Dual-Numbers Algebra*; *Quaternion Algebra*; *Split-Quaternion Algebra*; *The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*; *Split-Biquaternion Algebra* |
-| *Comparison of Norms and Invertibility* | *Real Norm and Invertibility*; *Complex Norm and Invertibility*; *Split-Complex Norm and Invertibility*; *Dual-Numbers Norm and Invertibility*; *Quaternion Norm and Invertibility*; *Split-Quaternion Norm and Invertibility*; *Norm and Invertibility in the Biquaternion Algebra*; *Split-Biquaternion Norm and Invertibility* |
+| *Comparison of Norms and Invertibility* | *Real Norm and Invertibility*; *Complex Norm and Invertibility*; *Norm and Invertibility in the General Split-Complex Algebra*; *Dual-Numbers Norm and Invertibility*; *Quaternion Norm and Invertibility*; *Split-Quaternion Norm and Invertibility*; *Norm and Invertibility in the Biquaternion Algebra*; *Split-Biquaternion Norm and Invertibility* |
 | *Comparison of Analysis* | the analysis, regular-function and Fueter series of the six systems that have them |
 | *Comparison of Integration* | *Real Integration*; *Complex Integration*; the split-complex, dual, quaternion, split-quaternion, biquaternion and split-biquaternion integration articles |
 | *Comparison of Spectral Theory* | $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}'$ have no source; the quaternion, split-quaternion, biquaternion and split-biquaternion spectral theory articles |

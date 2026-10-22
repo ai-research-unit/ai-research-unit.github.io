@@ -162,7 +162,7 @@ The restricted norm is definite on the two eigenlines and identically zero on th
 | $\mathbb{R}\Pi_1$ | $\langle \lambda \Pi_1\rangle = 0$ | zero | all nonzero elements |
 | $\mathbb{R}\Pi_2$ | $\langle \lambda \Pi_2\rangle = 0$ | zero | all nonzero elements |
 
-The two eigenlines are the definite lines of the form; the two idempotent lines are the isotropic lines. This is the plane-level version of the statement, made in *Split-Complex Zero Divisors*, that the null cone is exactly the union of the two idempotent lines, and of the statement, made in *Split-Complex Norm and Invertibility*, that the null cone meets each eigenspace only at the origin.
+The two eigenlines are the definite lines of the form; the two idempotent lines are the isotropic lines. This is the plane-level version of the statement, made in *Zero Divisors of the Split-Complex Algebra*, that the null cone is exactly the union of the two idempotent lines, and of the statement, made in *Norm and Invertibility in the General Split-Complex Algebra*, that the null cone meets each eigenspace only at the origin.
 
 ## Comparison with the Two Subspaces of $\mathbb{C}$
 

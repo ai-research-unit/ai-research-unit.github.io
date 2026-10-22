@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Split-Complex Norm and Invertibility* and to *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; the examples below use only the algebra.
+This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Norm and Invertibility in the General Split-Complex Algebra* and to *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; the examples below use only the algebra.
 
 Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+jq'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-jq'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$.
 
@@ -94,11 +94,11 @@ $$
 (\lambda \Pi_+)(\mu \Pi_-) = \lambda\mu\, \Pi_+\Pi_- = 0,
 $$
 
-so the whole family of examples is $\{\lambda \Pi_+\}\times\{\mu \Pi_-\}$; and the annihilator of $\lambda \Pi_+$ is the line $\mathbb{R}\Pi_-$, as established in *Split-Complex Zero Divisors*. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is that each factor lies on one of the two null lines.
+so the whole family of examples is $\{\lambda \Pi_+\}\times\{\mu \Pi_-\}$; and the annihilator of $\lambda \Pi_+$ is the line $\mathbb{R}\Pi_-$, as established in *Zero Divisors of the Split-Complex Algebra*. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is that each factor lies on one of the two null lines.
 
 ## Worked Hyperbolic and Parabolic Elements
 
-An element of $\mathbb{D}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Split-Complex Norm and Invertibility*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
+An element of $\mathbb{D}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Norm and Invertibility in the General Split-Complex Algebra*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
 
 **Hyperbolic example.** Let $Q = \tfrac54 + \tfrac34 j$. Its coordinates are
 

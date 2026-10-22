@@ -28,7 +28,7 @@ The chart is rational: $u(s)$ and its inverse are ratios of polynomials. The pri
 
 The plan is as follows. The modulus–unit form and the four components are recalled (§*The Modulus–Unit Form Recalled*). The chart, its inverse and its bijection property are established (§*The Chart*, §*The Inverse*, §*The Bijection*). The decomposition is stated in the two regimes and its exact domain is described (§*The Rational-Chart Decomposition*, §*The Domain*). The group law and its pole are derived (§*The Group Law*). The second chart, the projective picture and the cost of rationality are given (§*Covering the Unit Set and the Price of Locality*). The Cayley matrix is computed (§*The Matrix Picture*), and examples are worked (§*Worked Examples*).
 
-The notation is that of *Split-Complex Algebra*, *Split-Complex Norm and Invertibility* and *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, and it is collected in §*Summary of Notation*.
+The notation is that of *Split-Complex Algebra*, *Norm and Invertibility in the General Split-Complex Algebra* and *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, and it is collected in §*Summary of Notation*.
 
 Every numerical value displayed below was recomputed in double precision.
 

@@ -54,6 +54,8 @@ $$
 
 where $\vec u_h = \vec h/|\vec h|$ is the measurement direction. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
 
+**Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde H\tilde H^{*}=\tilde H^{*}\tilde H$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*Eigenvalue Decomposition of a Biquaternion*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
+
 ### One Operation Form, Two Kinds of Element
 
 The central algebraic observation for the present subject is this. For any $\tilde{Q}_3 \in \mathbb{B}$ define the **conjugation**
@@ -244,6 +246,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 
 ## Further Reading
 
+- [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the Hermitian case and the normality criterion behind the Born pairing.
+- [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the biorthogonal weights that a non-normal observable would need.
 - John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1932), for the projection postulate, the density matrix, and the regress that bears his name.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the foundational statement of the two evolutions.
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for non-selective versus selective measurement, the Bloch-ball geometry, and the measurement problem as a statement about ensembles.

@@ -4,7 +4,7 @@
 
 This article defines the split-complex higher special functions: the Gamma and Beta functions, the error function, the Airy functions, the Bessel functions, the hypergeometric function, and the Lambert $W$ function. Each function is defined once, its basic properties are recorded, and the relations among them are stated.
 
-The article stands on *Split-Complex Elementary Functions*, which owns the exponential, the logarithm, the split-complex powers and the hyperbolic functions, and which states the Idempotent Principle. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of units are those of *Split-Complex Norm and Invertibility*; and the idempotents are those of *Split-Complex Idempotents and Projections*. The spectral data are those of *Eigenvalue Decomposition of a Split-Complex Number*: the eigenvalues
+The article stands on *Split-Complex Elementary Functions*, which owns the exponential, the logarithm, the split-complex powers and the hyperbolic functions, and which states the Idempotent Principle. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of units are those of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The spectral data are those of *Eigenvalue Decomposition of a Split-Complex Number*: the eigenvalues
 
 $$
 \lambda_+=q+q'=Q_+, \qquad \lambda_-=q-q'=Q_-,

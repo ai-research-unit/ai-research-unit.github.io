@@ -43,7 +43,7 @@ $$
 \tilde U_{\mathrm b} = \exp\!\bigl(\psi\,\vec u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
 = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} ,
 $$
-which is Hermitian because $(\tfrac12 i\vec u_{\mathrm b})^2=+\tfrac14 e_t$, so the exponential is the hyperbolic sum written, not a phase. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket.
+which is Hermitian because $(\tfrac12 i\vec u_{\mathrm b})^2=+\tfrac14 e_t$, so the exponential is the hyperbolic sum written, not a phase. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket. The correction is the BCH defect of the four-factor word, computed in *The Exponential Word and Its Boundary*: the formal exponents do not add, and the difference is the rotation.
 
 The Cartan decomposition reflects the same fact at the group level,
 $$
@@ -91,6 +91,8 @@ $$
 \qquad \alpha = 12.9146^\circ , \qquad \vec u_{\mathrm r} = \vec u_z ,
 $$
 a rotation about the axis normal to the plane of the two boost directions, by an angle that grows with both rapidities. The rotation is compact, unitary, and has determinant one: it is the same kind of object as an ordinary spatial rotation, and it is the only part of the composed boost that acts on the spin as a quantum operation.
+
+**The boundary.** The reconstruction is exact and kinematic. It says that a product of two boosts is a boost times a compact factor, and it identifies the factor. It does not say that the factor is a precession in time. Thomas precession is the time integral of that factor along an accelerated path, and it needs the acceleration and the dynamics (*Thomas Precession as a Biquaternion Rotor Effect*). The algebra supplies the decomposition and the angle at each step. The orbit supplies the rate.
 
 ### The cocycle condition
 

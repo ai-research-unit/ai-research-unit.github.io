@@ -202,7 +202,7 @@ $$
 \mathcal{B} = \left\{\, \tfrac{\psi}{2}\,i\vec u : \psi\in\mathbb{R},\ \vec u\in S^2 \,\right\} = i\,\mathbb{R}^3 ,
 $$
 
-the image of the exponential map on the three-dimensional space of pure imaginary vectors, and it is **diffeomorphic to $\mathbb{R}^3$** with coordinates $\vec\beta = \psi\,\vec u$. It is contractible: every loop in $\mathcal{B}$ shrinks to a point, and there is no nontrivial topology to be found.
+the image of the exponential map on the three-dimensional space of pure imaginary vectors, and it is **diffeomorphic to $\mathbb{R}^3$** with coordinates $\vec\beta = \psi\,\vec u$. It is contractible: every loop in $\mathcal{B}$ shrinks to a point, and there is no nontrivial topology to be found. Consequently the homotopy type of the group is that of its compact factor, $SO^{+}(1,3)\simeq SO(3)\times\mathbb{R}^3\simeq SO(3)$ and $SL(2,\mathbb{C})\simeq SU(2)\times\mathbb{R}^3\simeq SU(2)$.
 
 The exponential parametrization is global and injective from $\mathbb{R}^3$ onto the boosts, because for a pure imaginary vector $\vec w = i\psi\vec u$ the exponential is the closed form above, and
 

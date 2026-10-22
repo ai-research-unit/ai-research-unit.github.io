@@ -113,6 +113,16 @@ $$
 
 is a unit **real** quaternion, whose conjugation is an ordinary spatial rotation of the Bloch sphere, the $SU(2)$ subgroup of $\mathrm{U}(2)$.
 
+**The exponential is onto the units.** The statement that the exponential of $\mathbb{M}_-$ is the unitary group is the compact case of a wider statement. The exponential is surjective onto the whole unit group,
+
+$$
+\exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},
+$$
+
+not only onto the unitary slice (*Biquaternion Elementary Functions*, §*The Logarithm*; the algebra is $M_2(\mathbb{C})$, and the isomorphism carries one exponential to the other). Every invertible element therefore has a generator, but the generator is unique only up to the kernel of the exponential, and there exists a logarithm in $\mathbb{M}_-$ exactly when the element is unitary. A boost has a logarithm, and that logarithm is not a Hamiltonian: it lies in $\mathbb{M}_+$. The reversible/irreversible dichotomy is therefore not a dichotomy of generators but of Kraus rank.
+
+The kernel is explicit. For an element with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$, so two generators of the same reversible process differ by a gauge shift and not by a physical parameter. *The Exponential, the Logarithm and the Generator* reads that ambiguity and its limits.
+
 ### Reversibility
 
 The map $\Phi_{\tilde{U}}$ is invertible, with inverse $\Phi_{\tilde{U}}^{-1} = \Phi_{\tilde{U}^{*}} = \Phi_{\tilde{U}(-t')}$, again a unitary channel: unitary evolution is **reversible**.
@@ -314,6 +324,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 
 ## Further Reading
 
+- [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the logarithm, its domain and the kernel of the exponential.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for quantum operations, the Kraus representation, and the depolarizing and dephasing channels.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the original formulation of completely positive maps in quantum theory.
 - M.-D. Choi, "Completely positive linear maps on complex matrices," *Linear Algebra and its Applications* **10** (1975) 285–290, for the complete-positivity criterion and the Choi matrix.
