@@ -54,6 +54,29 @@ the Bloch ball of radius one.
 
 **Interpretation begins only at the next question.** The algebra says which elements are states and how they are related. It does not say that these elements are physical, or what they are physical states *of*. That question is held back until the sector hypothesis, taken up in a later section.
 
+## The State Is the Square of an Amplitude
+
+The state is not only an element of $\mathbb{M}_+$; it is the Hermitian square of another element. Every nonzero biquaternion $\tilde Q$ defines one by
+
+$$
+\tilde{Ϛ}_{\tilde Q}=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\qquad
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}},
+\qquad
+\tilde{Ϛ}_{\tilde Q}=\hat H^{2},
+$$
+
+where $\hat H=\tilde H/\sqrt{2\langle\tilde H,\tilde H\rangle_{*}}$ is the bracket-normalised amplitude. The amplitude $\tilde H$ is Hermitian positive semidefinite; the state is its square. The square root of the state exists and is positive, so the statement is not merely formal: every state has a positive amplitude, namely $\sqrt{\tilde{Ϛ}}$.
+
+This gives the ontology a second layer. If the operator is taken as primitive, the state is derived: it is what remains of the operator after the unitary factor and the overall scale are forgotten. If the state is taken as primitive, the amplitude is derived: it is the positive square root. The algebra permits both directions and decides neither. What it does decide is that the two objects are not the same, and that the passage from the operator to the state loses the phase and the scale.
+
+Two consequences follow.
+
+- **The amplitude is not unique as an operator factor.** The state determines $\hat H$, because the positive square root is unique, but it does not determine the operator: neither the scale of $\tilde H$ nor the unitary factor $\tilde U$ in $\tilde Q=\tilde H\tilde U$ is fixed by the state. The fibre is a positive scale times the unitary group.
+- **The square is not a product of two states.** $\tilde{Ϛ}_Q=\hat H^{2}$ is the square of a positive element, not the product of two copies of the state; the two coincide only when the state is pure.
+
+**The boundary.** The reading "the state is the square of an amplitude" is an algebraic identity, not an ontology. It says that a state can always be presented as a squared positive element, and that an operator presents it that way canonically. It does not say that the amplitude is more real than the state, and it does not supply a dynamics for either. The operator-to-state map is developed in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*.
+
 ## The State and the Observable in One Space
 
 A general observable of the informational sector is an element
@@ -197,7 +220,7 @@ $$
 
 equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=h_t+\vec r\cdot\vec h$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})=h_t+\vec r\cdot\vec h$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
-Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out.
+Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out. It is the Hermitian square of a positive amplitude, $\tilde{Ϛ}_Q=\hat H^{2}$, and the passage from the operator to the state forgets the unitary fibre.
 
 The article's interpretive claim is that the algebra settles the identity, the statistics, the convex structure, and the blindness of the state, and settles nothing about its physical status. State realism, the epistemic interpretation, the relational interpretation, and the structural interpretation are all compatible with the algebra, and the algebra decides none of them; an added structure would be needed to do so, and there is none. The framework's own commitment is the informational-sector hypothesis, under which the state is a physical element of a physical sector — a sectorial realism offered as a hypothesis, not a result. The ontology of the quantum state is therefore the ontology of $\mathbb{M}_+$, and the algebra relocates the question rather than answering it. The selection of an outcome, the preferred basis, the proper/improper distinction, the many-qubit and field-theoretic extensions, and empirical contact remain open.
 
@@ -211,15 +234,15 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar centre |
-| $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, $|\vec r|\leq1$ (Bloch ball) |
+| $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, $\lvert\vec r\rvert\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
 | $\tilde{H} = h_te_t + i\vec h$ | Observable (general Hermitian element) |
 | $\langle\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
-| $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ |
-| $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$ | Deviation from idempotency (mixedness) |
+| $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ |
+| $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(\lvert\vec r\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
 | $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = h_t + \vec r\cdot\vec h$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{H})$ | Born rule; form first, trace at normalisation last |
-| $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{Ϛ}$ |
+| $\lambda_\pm = \tfrac12(1\pm\lvert\vec r\rvert)$ | Eigenvalues of $\tilde{Ϛ}$ |
 | $\vec u, \vec u, \vec u_h, \vec u_r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |
 
@@ -238,3 +261,4 @@ The article's interpretive claim is that the algebra settles the identity, the s
 - [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the operation-form interpretation of evolution and measurement.
 - [The Quantum–Classical Divide in the Biquaternion Framework](the-quantum-classical-divide-in-the-biquaternion-framework.html), for idempotent versus unitary operations.
 - [Quantum Physics: Foundations and Structure](quantum-physics-foundations-and-structure.html), for the standard formulation and the structural checklist.
+- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the state as the Hermitian square of the amplitude.

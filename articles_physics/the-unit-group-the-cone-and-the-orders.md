@@ -70,6 +70,20 @@ and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The 
 
 **The boundary of the interpretation.** The two interpretations are of one set and not of one physical object. On $\mathbb{M}_{-}$ the cone is the light cone; on $\mathbb{M}_{+}$ its trace-one slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.
 
+### The Pairings and the Wall
+
+The partition into units and cone is the domain of the **word**, not of every polar description. The four-factor word exists exactly when $N\neq0$, so its domain is the group of units. The three pairings have smaller construction domains, and none of them is the wall itself:
+
+| pairing | construction needs | witness of failure |
+| --- | --- | --- |
+| quaternion | $N\neq0$ and $\tilde q_r\neq0$ | $i\vec e_x+i\vec e_y$: a unit with $\tilde q_r=0$ |
+| Hamilton | $N\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | $e_t+\vec e_x+i\vec e_y$: a unit with a null vector part |
+| Cartan | $N\neq0$; generalized: every element | $e_t+i\vec e_x$: a zero divisor |
+
+The Cartan construction is the widest, and the generalized Cartan form extends it to the cone with a positive factor and a partial isometry. Every element is $\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$ with $\tilde H_{\mathrm{pos}}\ge0$ and $\tilde U_{\mathrm{p}}\tilde U_{\mathrm{p}}^{*}\tilde U_{\mathrm{p}}=\tilde U_{\mathrm{p}}$. The word fails on the cone because the modulus vanishes; the physical image is a lightlike four-vector, which has no rest frame. The amplitude–phase split does not fail there.
+
+**The boundary of the interpretation.** A unit is not "a reversible process" and a zero divisor is not "an irreversible process" without a dynamics; the partition is algebraic. What the domains add is the converse caution: invertibility is necessary for the word and for all three classical pairings, and it is not sufficient for the two smaller ones. A statement about units need not transport to a pairing.
+
 ### Divisibility
 
 The partition has a divisibility form. In the multiplicative monoid, $a$ divides $b$ when $b=ac$ for some $c$. A unit divides every element, because $b=u\,(u^{-1}b)$; conversely an element that divides every element divides $e_t$, hence is a unit. A nonzero element is a zero divisor exactly when it divides $0$ with a nonzero cofactor. The partition therefore reads
@@ -299,4 +313,5 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the link and the contractibility.
 - [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the parity-matched lattice, and [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) for the kernel of the exponential.
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the lattices and the finite unit groups.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), §*The Domain*, for the three construction domains and the witnesses in one table.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.

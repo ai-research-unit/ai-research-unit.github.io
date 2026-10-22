@@ -72,6 +72,22 @@ and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = 
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
+### The Cartan Factor of a Kraus Operator
+
+The Kraus representation is a sum, but each term has its own generalized polar decomposition. Write
+
+$$
+\tilde K_l=\tilde H_{\mathrm{pos},l}\,\tilde U_{\mathrm{p},l},
+\qquad
+\tilde H_{\mathrm{pos},l}=\sqrt{\tilde K_l\tilde K_l^{*}},
+$$
+
+with $\tilde H_{\mathrm{pos},l}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p},l}$ a partial isometry. The companion article *The Polar Decomposition of a Kraus Operator* reads the factorization physically: the positive factor is the strength of the outcome, the partial isometry its backaction, and the effect is their conjugated square.
+
+For a channel with a single Kraus operator, trace preservation is $\tilde K^{*}\tilde K=e_t$. In finite dimension this makes $\tilde K$ invertible, so $\tilde K\tilde K^{*}=e_t$, hence $\tilde H_{\mathrm{pos}}=e_t$ and $\tilde U_{\mathrm{p}}=\tilde K$ is unitary. The reversible case is therefore exactly the case of a trivial positive factor, and the one-term channel is conjugation by a unitary. This is the same statement as §*The Reversible Case*, read on the operator rather than on the map.
+
+A single term of a multi-term channel need not be trace preserving. Its $\tilde H_{\mathrm{pos}}$ can be non-trivial, and its $\tilde U_{\mathrm{p}}$ can be a proper partial isometry. The channel's reversibility is not the value of one $\tilde H_{\mathrm{pos}}$; it is the minimal Kraus rank of the sum. The dephasing channel is the witness: one of its Kraus operators is a scalar multiple of the identity, with scalar strength and $\tilde U_{\mathrm{p}}=e_t$, and the channel is irreversible for $p>0$ because there is a second term. The polar factor classifies a term; the Kraus rank classifies the map.
+
 ## The Reversible Case: Unitary Rotor Conjugation
 
 ### Unitary Elements and Their Conjugation Action
@@ -312,6 +328,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
+| $\tilde K_l=\tilde H_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}$, $\tilde H_{\mathrm{pos},l}=\sqrt{\tilde K_l\tilde K_l^{*}}$ | Generalized Cartan factorization of a Kraus operator; $\tilde H_{\mathrm{pos},l}\ge0$, $\tilde U_{\mathrm{p},l}$ a partial isometry |
 | $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |
 | $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$ | One-parameter unitary group |
 | $-i\tilde{H}/\hbar \in \mathbb{M}_-$ | Generator of reversible evolution |
@@ -325,6 +342,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 ## Further Reading
 
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the logarithm, its domain and the kernel of the exponential.
+- [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the strength and backaction of a single outcome and the null-cone boundary.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for quantum operations, the Kraus representation, and the depolarizing and dephasing channels.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the original formulation of completely positive maps in quantum theory.
 - M.-D. Choi, "Completely positive linear maps on complex matrices," *Linear Algebra and its Applications* **10** (1975) 285–290, for the complete-positivity criterion and the Choi matrix.

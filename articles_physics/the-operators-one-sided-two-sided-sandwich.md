@@ -159,7 +159,7 @@ $$
 N\bigl(\operatorname{H}_{\tilde Q}(X)\bigr)=N(\tilde Q)\,N(X)\,N(\tilde Q^{*})=|N(\tilde Q)|^{2}N(X).
 $$
 
-The scale is the squared modulus of the norm. On a four-momentum the norm is $-m^{2}c^{2}$, so the scale is $m^{4}c^{4}$; the mass is the modulus of the norm, not the scale. The phrase *the inner automorphism scaled by the norm* is exact on the unitary slice, where the scale is one and the map preserves the product. On the Lorentz slice the norm is one as well, but the map is a congruence: it preserves the interval and not the product.
+The scale is the squared modulus of the norm. In the polar word $\lvert N(\tilde Q)\rvert=r^{2}$, so the conformal factor of the sandwich is $r^{4}=\lvert N(\tilde Q)\rvert^{2}$: the fourth power of the word's scale, and the square of the norm. On a four-momentum the norm is $-m^{2}c^{2}$, so the scale is $m^{4}c^{4}$; the mass is the modulus of the norm, not the scale. The phrase *the inner automorphism scaled by the norm* is exact on the unitary slice, where the scale is one and the map preserves the product. On the Lorentz slice the norm is one as well, but the map is a congruence: it preserves the interval and not the product.
 
 **The boundary.** The identification fails where $\tilde Q^{*}\neq\tilde Q^{-1}$. A Lorentz parameter satisfies the norm-one condition; a boost is not unitary, and it is the counterexample. The sandwich is always a congruence; it is a similarity only on the unitary slice.
 

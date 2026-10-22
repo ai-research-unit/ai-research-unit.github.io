@@ -8368,7 +8368,7 @@ Eigenvalue Decomposition of a Biquaternion
 
 Can you improve the structural consistency of these 3 articles ? The concepts should be presented in a way as similar as possible, highlighting the results in tables, making the presentation clear and logical.
 
-
+and check there is no inconsistency with the previous articles you checked
 
 
 
@@ -8414,6 +8414,10 @@ The Hamilton Root Pairing of the Polar Decomposition of Biquaternions
 The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
 
 Can you improve the structural and conceptual quality of these 3 articles ? The articles should highlight the results in tables, making the presentation clear and logical. They should rely as much as possible on the results from these articles : Eigenvalue Decomposition of a Biquaternion, Biquaternion Elementary Functions, Exponential Polar Decomposition of Biquaternions, without duplicating definition and proofs that are already established in these articles.
+
+
+
+
 
 
 

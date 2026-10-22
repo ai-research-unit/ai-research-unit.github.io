@@ -85,6 +85,29 @@ and the reversible evolution is the unitary case. So the reversible/irreversible
 
 This restatement is exact. It is also only a restatement: membership in one class or the other is a property of an element, and an element does not act unless something selects it. The selection of the element is what the algebra does not supply, and that is the subject of the next section.
 
+### The Polar Form of the Acting Element
+
+The acting element $\tilde Q_3$ is the Kraus operator of the outcome, and $\Gamma_{\tilde Q_3}$ is the unnormalized update. Its generalized polar form is
+
+$$
+\tilde Q_3=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}},
+\qquad
+\tilde H_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
+$$
+
+with $\tilde H_{\mathrm{pos}}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p}}$ a partial isometry. The update is
+
+$$
+\Gamma_{\tilde Q_3}(\tilde{Ϛ})
+=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}\tilde{Ϛ}\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}:
+$$
+
+the unitary factor acts first, then the positive filter.
+
+The two classes of the preceding section are the two extremes of this family. The unitary case is $\tilde H_{\mathrm{pos}}=e_t$ and $\tilde U_{\mathrm{p}}=\tilde Q_3$, with no filter. The idempotent case is $\tilde Q_3=\tilde\Pi$, hence $\tilde H_{\mathrm{pos}}=\tilde U_{\mathrm{p}}=\tilde\Pi$: the element is on the null cone, the amplitude is rank one, and the outcome is sharp. A general invertible $\tilde Q_3$ has $\tilde H_{\mathrm{pos}}>0$ and $\tilde U_{\mathrm{p}}$ unitary; the outcome is unsharp, the update is a rotation followed by a filter, and the element is neither unitary nor idempotent.
+
+The two classes are therefore not an exhaustive partition of the acting elements; they are the endpoints and the boundary of one polar family. The reversible/irreversible dichotomy of the maps remains, but the element that acts in a single outcome can be an interior point. The algebraic selection problem is the selection of an element from this family, not a binary choice between two elements. The null cone is the boundary of the sharp case, not a third dynamics. The companion article *The Polar Decomposition of a Kraus Operator* gives the full classification, the effect formula and the worked examples.
+
 ## The Problem in Algebraic Form
 
 Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_t e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
@@ -233,6 +256,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $p_\pm = \langle\tilde\Pi_{1,2}(\vec u_h),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ})$ | Outcome probabilities (trace at normalisation) |
 | $\vec u_h = \vec h/\|\vec h\|$, $\vec u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}) = \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$ | Conjugation; unitary evolution ($\tilde{Q}_3 = \tilde{U}$) or projective sandwich ($\tilde{Q}_3 = \tilde\Pi_{1,2}$) |
+| $\tilde Q_3=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$, $\tilde H_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$ | Polar form of the acting element; $\tilde H_{\mathrm{pos}}\ge0$, $\tilde U_{\mathrm{p}}$ a partial isometry |
+| $\Gamma_{\tilde Q_3}(\tilde{Ϛ})=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}\tilde{Ϛ}\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}$ | Unitary backaction followed by the positive filter |
 | $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
 | $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} = \tilde\Pi_{1,2}^{*}$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{Ϛ}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Fully dephased state (pointer-diagonal) |
@@ -248,6 +273,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 
 - [Eigenvalue Decomposition of a Biquaternion](../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html), for the Hermitian case and the normality criterion behind the Born pairing.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the biorthogonal weights that a non-normal observable would need.
+- [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the strength and backaction of the acting element and the null-cone boundary of the sharp case.
 - John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1932), for the projection postulate, the density matrix, and the regress that bears his name.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the foundational statement of the two evolutions.
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for non-selective versus selective measurement, the Bloch-ball geometry, and the measurement problem as a statement about ensembles.

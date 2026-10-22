@@ -251,7 +251,7 @@ $$
 
 Both identities were verified in double precision over $300$ random pairs, the first to $9.8\times10^{-13}$ and the second to $2.8\times10^{-13}$. The residual rotor is the Thomas-Wigner rotation of the physics articles, *The Lorentz Group in Biquaternionic Form — Structure and Representations*; the algebra records it as the statement that the boost set is a symmetric space and not a group, and the word records it as the escape into the rotor factor.
 
-The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. With both factors nontrivial, they commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; if one factor is central, the word is already order-free. The bracket is developed in *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Two Exponents of the Word*.
+The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. With both factors nontrivial, they commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; if one factor is central, the word is already order-free. The bracket is developed in *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Two Exponents*.
 
 ## The Vector Subspace Is Rigid
 

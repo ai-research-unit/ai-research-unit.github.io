@@ -169,6 +169,70 @@ $$
 
 The one-term writing is the spectral form of a null momentum, and it is the zero-divisor regime of the eigenvalue decomposition, not the exceptional regime. The massless limit of the pair is a limit of the coefficients, not a failure of the decomposition.
 
+## The Hamilton Mass and the Frame
+
+The Hamilton pairing writes the four-momentum as a central modulus times a unit:
+
+$$
+\tilde P=\Rho\exp(\vec U\Theta),
+\qquad
+\Rho=imc,
+\qquad
+\vec U=\hat p,
+\qquad
+\Theta=-i\psi .
+$$
+
+The expansion checks the identification. With $\vec U^{2}=-e_t$ and $\Theta=-i\psi$,
+
+$$
+\Rho e^{\vec U\Theta}
+=imc\left(\cosh\psi-i\hat p\sinh\psi\right)
+=i\frac{mc^{2}\cosh\psi}{c}+mc\sinh\psi\,\hat p
+=i\frac{E}{c}e_t+\vec p .
+$$
+
+The three slots divide the data. The modulus $\Rho=imc$ is the mass; the angle $\Theta=-i\psi$ is the rapidity; the axis $\vec U=\hat p$ is the direction of motion. The energy is not a slot: it is $mc^{2}\cosh\psi$, the modulus times the frame factor. A boost changes $\psi$ and leaves $\Rho$ fixed.
+
+The modulus is central, and that is the algebraic reason the mass is frame-independent while the energy is not. A change of frame conjugates the second factor and commutes with the first. The spectrum sees the same division: the product $\lambda_+\lambda_-=\Rho^{2}=-m^{2}c^{2}$ is the modulus, and the ratio $\lambda_+/\lambda_-=e^{2\psi}$ is the frame.
+
+**The boundary.** The reading is licensed for the four-momentum chart and the principal branch. For a general element the Hamilton modulus is a complex amplitude, and calling it a mass is an extra identification. The branch matters: on the other branch the same element is written with $-\Rho$ and $\Theta+\pi$, and the mass is read from $\lvert\Rho\rvert$.
+
+## What the Spectrum Does Not Determine
+
+The spectrum is two complex numbers, and a general element is eight real numbers. The spectrum fixes the trace and the norm,
+
+$$
+\lambda_++\lambda_-=2Q_t,
+\qquad
+\lambda_+\lambda_-=Q_t^{2}+B^{2}=N,
+$$
+
+and it fixes nothing else about the direction.
+
+| the spectrum fixes | the spectrum does not fix |
+| --- | --- |
+| the trace $2Q_t$ | the direction $\vec u_p$ |
+| the vector square $B^{2}$ | the two angles of the axis |
+| the norm $N$ | the eigenprojections when $\lambda_+=\lambda_-$ |
+| the causal class through the sign of $N$ when $N$ is real | whether the vector part is real |
+
+The first row of the second column is the physical statement. A rotation leaves the eigenvalues unchanged and rotates the axis; the spectrum is blind to the two angles of the direction. For a four-momentum the spectrum fixes the energy and the magnitude of the momentum and leaves the direction free. The set of momenta with a given spectrum is the two-sphere of directions at fixed $E$ and $\lvert\vec p\rvert$.
+
+The second row is algebraic. The eigenvalues depend on the vector part only through the complex square $(\vec Q,\vec Q)$. Any $\vec Q\in\mathbb{C}^{3}$ with the same square gives the same spectrum, and a complex vector part with the right square is isospectral with a real one. The reality of $\vec Q$ is the material-sector condition, not a spectral condition; the spectrum cannot tell a four-momentum from a complex element with the same trace and the same vector square.
+
+The third row is the degeneracy. When the eigenvalues coincide, the eigenprojections are not determined: at $\vec p=0$ every axis is an eigenaxis, and the two-term writing is not unique. The spectrum is then a single number repeated, and the frame data is entirely absent from it.
+
+The element is the spectrum plus the eigenprojections,
+
+$$
+\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+$$
+
+and the two objects play different roles. The eigenvalues are the coefficients; the idempotents are the frame. A spectral measurement reads the coefficients and leaves the frame.
+
+**The boundary.** "Not determined" is not "not constrained". The spectrum constrains the element to a quadric, and for a four-momentum it constrains the momentum to a sphere. The claim is that the spectrum is insufficient, not that it is uninformative. It is also not a claim about a measurement: a measurement that resolves the eigenprojections as well is a different measurement, and it reads the frame.
+
 ## Physical Readings
 
 - **The eigenpair is the Doppler pair.** The two eigenvalues are the two light-cone frequencies, $mc\,e^{\pm\psi}$, and their ratio is the squared Doppler factor. The reading is the spectral form of the relativistic Doppler effect.
@@ -203,6 +267,8 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 - The terms are not two particles and not two energies; their sum is twice the energy and their difference is twice the momentum.
 - A boost along $\vec p$ rescales the pair reciprocally; the product is invariant. A rotation leaves the pair unchanged and rotates the axis.
 - At rest the pair coalesces and the two-term writing is not unique; at $m=0$ one coefficient vanishes and the writing has one term.
+- The Hamilton reading is $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\psi$ and $\vec U=\hat p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
+- The spectrum fixes the energy and the magnitude of the momentum, not the direction; it is blind to rotations and to the reality of the vector part, and it leaves the eigenprojections free at a degeneracy.
 - The algebra gives the frequencies, not a particle count, a numerical mass, a dynamics or a mass spectrum.
 
 ## Summary of Notation
@@ -229,3 +295,4 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the massless limit and the null stratum.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the pure states that the idempotents represent.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the mass shell read as a level set.
+- [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass as a modulus and the complex angle of the frame.

@@ -14,6 +14,20 @@ $$
 
 where the coefficients $\lambda_+,\lambda_-$ are the eigenvalues and the idempotents $\Pi_\pm$ are the eigenprojections. The eigenvalues are therefore the idempotent coordinates, and their values are displayed with them throughout. The article is the four-dimensional commutative counterpart of *Eigenvalue Decomposition of a Biquaternion* and the complex analogue of *Eigenvalue Decomposition of a Split-Complex Number*. The general definition and the existence and uniqueness theorems are those of *The Eigenvalue Decomposition of an Element*. The reduced biquaternion content is threefold: for a non-scalar element the eigenprojections are the standard idempotents $\Pi_\pm$; they are central and independent of the element; and the Peirce decomposition of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* relative to either of them is the decomposition of the whole algebra.
 
+**The results.** The spectrum of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is $\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$, and in the distinct case $Q_{\blacktriangledown}\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $\breve Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{C}\times\mathbb{C}$, and the unit group is $\mathbb{C}^\times\times\mathbb{C}^\times$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime.
+
+| Question | Answer |
+|---|---|
+| Algebra | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ |
+| Element | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ |
+| Spectrum | $\sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$ |
+| Distinctness | $\lambda_+\neq\lambda_-\iff Q_{\blacktriangledown}\neq0$ |
+| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$, independent of $\breve Q$ |
+| Eigenprojections central? | yes |
+| Eigenvalue decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
+| Peirce decomposition | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, with zero off-diagonal corners |
+| Unit group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
+
 **Placement.** The article is in the Advanced Properties section of the Reduced Biquaternions category, after *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* and before *The Group of Units of the Algebra of the Reduced Biquaternions*. It is the spectral chapter of the sequence that continues with *Reduced Biquaternion Elementary Functions*, where the spectrum becomes the elementary functions, and *Exponential Polar Decomposition of Reduced Biquaternions*, where the functions become the polar word.
 
 **Conventions.** The notation is fixed in *Conventions in Mathematics*: the general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex; the idempotents are $\Pi_\pm=\tfrac12(1\pm j)$; and the idempotent coordinates are $Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The eigenvalues are $\lambda_+=Q_+$ and $\lambda_-=Q_-$, so that $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$. The reduced norm is $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$. The spectrum and the characteristic polynomial are those of *Reduced Biquaternion Spectral Theory*, §*The Spectrum of an Element*, and the spectral projections are those of its §*Eigenspaces and Their Dimensions*; the idempotents are those of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, §*The Idempotents*; the Peirce decomposition is that of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, §*The Peirce Decomposition*; the reduced norm and the invertibility criterion are those of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, §*The Reduced Norm and the Invertibility Criterion*; and the unit group is that of *The Group of Units of the Algebra of the Reduced Biquaternions*, §*The Group and Its Structure*.
@@ -83,7 +97,7 @@ The data of the spectrum are collected in the table.
 
 **The eigenprojections of a non-scalar reduced biquaternion are the two fixed central idempotents $\Pi_\pm$.**
 
-By *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, §*The Two Nontrivial Idempotents*, the two nontrivial idempotents are
+By *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, §*The Standard Idempotents*, the two nontrivial idempotents are
 $$
 \Pi_+=\tfrac12(1+j),\qquad \Pi_-=\tfrac12(1-j),
 $$
@@ -129,29 +143,26 @@ The two idempotents are complementary and orthogonal, $\Pi_++\Pi_-=1$ and $\Pi_+
 
 **Every reduced biquaternion with distinct eigenvalues is the complex linear combination of the two fixed idempotents with its eigenvalues as coefficients.**
 
-The two eigenvalues are
+Summing the two eigenvalue relations,
 
 $$
-\lambda_+=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}
-=(q_{\blacktriangle}+q_{\blacktriangledown})+i(q'_{\blacktriangle}+q'_{\blacktriangledown}),
+\boxed{\ \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-
+=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-\ }.
 $$
 
-$$
-\lambda_-=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}
-=(q_{\blacktriangle}-q_{\blacktriangledown})+i(q'_{\blacktriangle}-q'_{\blacktriangledown}),
-$$
-
-and the decomposition is
+Equivalently, exhibiting the values in the basis $1,j$,
 
 $$
-\boxed{\ \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-\ }.
+\breve Q
+=
+\frac{\lambda_++\lambda_-}{2}
++
+\frac{\lambda_+-\lambda_-}{2}j
+=
+Q_{\blacktriangle}+jQ_{\blacktriangledown}.
 $$
 
-Equivalently, exhibiting the values of the eigenvalues in the basis $1,j$,
-$$
-\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-
-=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-=Q_{\blacktriangle}+jQ_{\blacktriangledown}.
-$$
+So the decomposition writes $\breve Q$ as a complex linear combination of the two primitive idempotents, with the eigenvalues as coefficients.
 
 This is an eigenvalue decomposition in the sense of *The Eigenvalue Decomposition of an Element*, §*The Eigenvalue Decomposition*: the coefficients $\lambda_+,\lambda_-$ are distinct when $Q_{\blacktriangledown}\neq0$, the idempotents $\Pi_\pm$ are nonzero, orthogonal and complete, and they are the eigenprojections.
 
@@ -219,14 +230,14 @@ $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\times\mathbb{C}.
 $$
 
-The four corners are collected in the table.
+The four corners are collected in the table; the last column gives a matrix unit spanning the corner.
 
-| Corner | Definition | Value | Dimension over $\mathbb{C}$ |
-|---|---|---|---|
-| $\mathbb{B}_{++}$ | $\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_+$ | $\mathbb{C}\Pi_+$ | $1$ |
-| $\mathbb{B}_{+-}$ | $\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_-$ | $0$ | $0$ |
-| $\mathbb{B}_{-+}$ | $\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_+$ | $0$ | $0$ |
-| $\mathbb{B}_{--}$ | $\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_-$ | $\mathbb{C}\Pi_-$ | $1$ |
+| Corner | Definition | Value | Dimension over $\mathbb{C}$ | Matrix unit |
+|---|---|---|---|---|
+| $\mathbb{B}_{++}$ | $\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_+$ | $\mathbb{C}\Pi_+$ | $1$ | $E_{11}$ |
+| $\mathbb{B}_{+-}$ | $\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_-$ | $0$ | $0$ | $0$ |
+| $\mathbb{B}_{-+}$ | $\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_+$ | $0$ | $0$ | $0$ |
+| $\mathbb{B}_{--}$ | $\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_-$ | $\mathbb{C}\Pi_-$ | $1$ | $E_{22}$ |
 
 The two lines are the minimal ideals of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, §*The Two-Sided Ideals*, and each is generated by its idempotent, so $\Pi_\pm$ are primitive idempotents.
 
@@ -308,7 +319,13 @@ Q_{\blacktriangle}=\frac{\mu_++\mu_-}{2},
 \quad
 Q_{\blacktriangledown}=\frac{\mu_+-\mu_-}{2}.
 $$
-The map $(\mu_+,\mu_-)\mapsto(Q_{\blacktriangle},Q_{\blacktriangledown})$ is a $\mathbb{C}$-linear isomorphism of $\mathbb{C}^{2}$; the two coordinate systems are the eigenvalue coordinates and the basis coordinates on the same algebra.
+The map $(\mu_+,\mu_-)\mapsto(Q_{\blacktriangle},Q_{\blacktriangledown})$ is a $\mathbb{C}$-linear isomorphism of $\mathbb{C}^{2}$; the two coordinate systems are the eigenvalue coordinates and the basis coordinates on the same algebra. They are compared in the table.
+
+| Coordinate system | Coordinates | Element | Eigenvalues |
+|---|---|---|---|
+| Eigenvalue coordinates | $(\mu_+,\mu_-)$ | $\breve Q_1=\mu_+\Pi_++\mu_-\Pi_-$ | $\mu_+,\mu_-$ |
+| Basis coordinates | $(Q_{\blacktriangle},Q_{\blacktriangledown})$ | $\breve Q_1=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ |
+| Change | $\mu_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$; $Q_{\blacktriangle}=(\mu_++\mu_-)/2$, $Q_{\blacktriangledown}=(\mu_+-\mu_-)/2$ | — | — |
 
 ### The Lattice of Eigenvalue Data
 
@@ -439,7 +456,7 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 | Characteristic polynomial | $p_{\breve Q}(X)=X^2-2Q_{\blacktriangle}X+\langle\breve Q\rangle_{\mathrm{ts}}=(X-\lambda_+)(X-\lambda_-)$ |
 | Distinctness | $\lambda_+\neq\lambda_-\iff Q_{\blacktriangledown}\neq0$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
-| Eigenvalue decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
+| Eigenvalue decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-$ |
 | Peirce decomposition | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ |
 | Polynomial calculus | $f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
 | Group of units | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |

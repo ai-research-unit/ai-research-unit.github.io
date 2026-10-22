@@ -8,11 +8,15 @@ The article rests on *Eigenvalue Decomposition of a Reduced Biquaternion*, §*Th
 
 Every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout.
 
+**Boundaries.** This article owns the exponential and the logarithm, with their domains, their fibres, their inverses and their derivatives, the power and root functions, and the trigonometric and hyperbolic functions. The higher special functions are *Reduced Biquaternion Higher Special Functions*; *Exponential Polar Decomposition of Reduced Biquaternions* cites the exponential and the logarithm and does not derive them. The polar decomposition, the Lie group structure and the harmonic analysis are later articles.
+
 **Placement.** The article is in the Analysis group of the Reduced Biquaternion category, after *Reduced Biquaternion Analysis* and before *Reduced Biquaternion Higher Special Functions* and *Exponential Polar Decomposition of Reduced Biquaternions*. The complex member is *Complex Special Functions*, and the split-complex members are *Split-Complex Elementary Functions* and *Split-Complex Higher Special Functions*.
 
 **Plan.** The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§*The Spectral Setting*). The exponential and the logarithm follow, with their kernels, images and fibres (§*The Exponential*, §*The Logarithm*); the powers and roots follow from the logarithm (§*Powers and Roots*); the trigonometric and hyperbolic functions and their inverses follow (§*The Trigonometric and Hyperbolic Functions*); the relations to the complex line and the split-complex plane close the theory (§*Relations to the Neighbouring Cases*). The results are collected in tables in §*Summary*, including the comparison with the split-complex and biquaternion cases.
 
 Every numerical value displayed below was recomputed in double precision.
+
+**Notation.** A reduced biquaternion is written $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ and $j^{2}=1$. The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, and the norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$.
 
 ## The Spectral Setting
 
@@ -31,6 +35,7 @@ The spectral data are those of *Eigenvalue Decomposition of a Reduced Biquaterni
 | Norm | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\lambda_1\lambda_2$ |
 | Unit criterion | $\breve Q$ is a unit exactly when $\lambda_1\lambda_2\neq0$ |
 | Polynomial calculus | $f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every polynomial $f$ |
+| Lattice | $\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$ |
 
 Multiplication is componentwise in the idempotent basis,
 $$
@@ -126,9 +131,9 @@ In particular $\exp(\breve Q+2\pi i)=\exp\breve Q$ and $\exp(\breve Q+\pi i(1+j)
 |---|---|
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
 | Image | the unit group $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
-| Period lattice | the kernel |
+| Periods | the kernel |
 | Injective | no |
-| Surjective onto the units | yes |
+| Surjective onto the image | yes |
 
 **Example.** For $\breve Q=j\ln2$ the closed form gives
 
@@ -146,8 +151,8 @@ that is $1.25+0.75j$. This is the point of the future hyperbola at boost $\ln2$.
 | Non-vanishing | $\exp\breve Q$ is a unit for every $\breve Q$ |
 | Norm | $\langle\exp\breve Q\rangle_{\mathrm{ts}}=\exp(2Q_{\blacktriangle})=\exp(\lambda_1+\lambda_2)$ |
 | Derivative | $d\exp_{\breve Q}(\breve H)=\exp(\breve Q)\,\breve H$ |
-| Periodic | $\exp(\breve Q+P)=\exp\breve Q$ for every $P\in\ker\exp$ |
 | Injective | no; the kernel is the period lattice |
+| Periods | the kernel $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$ |
 
 ## The Logarithm
 
@@ -272,7 +277,7 @@ The logarithm exists on the whole unit group and is never unique. The general so
 | Quantity | Value |
 |---|---|
 | Domain | the units $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
-| Fibre over a unit | $\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$ |
+| Fibre over a point | $\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$ |
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ |
 | Principal domain | $\lvert\operatorname{Im}\lambda_1\rvert\le\pi$ and $\lvert\operatorname{Im}\lambda_2\rvert\le\pi$, boundary half-open |
 | Existence | always, on the units |
@@ -313,6 +318,12 @@ The exponential maps $D$ bijectively onto the unit group, and $\operatorname{Log
 
 The word "inverse" covers two identities, and the exponential and the logarithm satisfy them in opposite strengths.
 
+| Identity | Holds | Example |
+|---|---|---|
+| $\exp(\operatorname{Log}\breve Q)=\breve Q$ | always, on the units | $\breve Q=3+4i+j(1-i)$ |
+| $\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ | exactly in the principal domain $D$ | $\breve Q_{\log}=i\pi$ |
+| $\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ modulo the kernel | always | $\breve Q_{\log}=i\pi(1+j)$ gives $0$ |
+
 **Right inverse.** For every unit $\breve Q$,
 
 $$
@@ -339,11 +350,6 @@ for the integers that bring the two phases into the principal diamond.
 
 The asymmetry is the content of the word "multivalued". The exponential forgets two integers, one for each eigenvalue; the principal logarithm chooses one representative. The split-complex exponential forgets none, and the complex exponential forgets one.
 
-| Identity | Holds? | Example |
-|---|---|---|
-| $\exp(\operatorname{Log}\breve Q)=\breve Q$ | always, on the units | $\breve Q=3+4i+j(1-i)$ above |
-| $\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ | exactly in the principal domain $D$ | $\breve Q_{\log}=i\pi$ |
-| $\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ modulo the kernel | always | $\breve Q_{\log}=i\pi(1+j)$ gives $0$ |
 
 ### The Derivative
 
@@ -374,10 +380,11 @@ The formula is the exact analogue of $\operatorname{Log}'Q=1/Q$ in $\mathbb{C}$,
 
 ### Summary of the Logarithm
 
-| Regime | A logarithm | Principal logarithm | Fibre |
+| Case | A logarithm | Principal logarithm | Fibre |
 |---|---|---|---|
-| unit group, $\lambda_1\lambda_2\neq0$ | $\log\lambda_1\Pi_++\log\lambda_2\Pi_-$, any branches | the same with principal $\operatorname{Log}$ | coset of $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ |
-| zero divisors and $0$ | none | none | empty |
+| Unit, $\lambda_1\lambda_2\neq0$ | $\mu_1\Pi_++\mu_2\Pi_-$, $\mu_i=\operatorname{Log}\lambda_i+2\pi i k_i$ | the same with principal $\operatorname{Log}\lambda_i$ | coset of $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ |
+| Zero divisor, exactly one eigenvalue $0$ | none | none | empty |
+| Zero, $\lambda_1=\lambda_2=0$ | none | none | empty |
 
 ## Powers and Roots
 
@@ -421,10 +428,10 @@ where $k_1,k_2$ are the integers of the logarithm chosen for $\breve Q^{s}$.
 **Theorem (the roots).** Let $n\ge1$ and let $\breve Q\in\mathbb{B}_{\mathrm{r}}$.
 
 1. If $\breve Q$ is a unit, the equation $\breve R^{n}=\breve Q$ has exactly $n^{2}$ solutions: the elements whose eigenvalues are
-$$
-\eta_{1}\lambda_1^{1/n},\qquad \eta_{2}\lambda_2^{1/n},
-$$
-where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity and $\lambda_i^{1/n}$ is one fixed $n$-th root in each eigenvalue.
+   $$
+   \eta_{1}\lambda_1^{1/n},\qquad \eta_{2}\lambda_2^{1/n},
+   $$
+   where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity and $\lambda_i^{1/n}$ is one fixed $n$-th root in each eigenvalue.
 2. If exactly one eigenvalue of $\breve Q$ is zero, the equation has exactly $n$ solutions.
 3. If $\breve Q=0$, the equation has the single solution $\breve R=0$.
 
@@ -501,8 +508,8 @@ The four functions are pairs of ordinary complex functions at the eigenvalues. T
 |---|---|
 | Pythagorean | $\sin^{2}\breve Q+\cos^{2}\breve Q=1$, $\cosh^{2}\breve Q-\sinh^{2}\breve Q=1$ |
 | Addition | $\sin(\breve Q_1+\breve Q_2)=\sin\breve Q_1\cos\breve Q_2+\cos\breve Q_1\sin\breve Q_2$, $\cos(\breve Q_1+\breve Q_2)=\cos\breve Q_1\cos\breve Q_2-\sin\breve Q_1\sin\breve Q_2$ |
-| Double angle | $\sin(2\breve Q)=2\sin\breve Q\cos\breve Q$, $\cos(2\breve Q)=\cos^{2}\breve Q-\sin^{2}\breve Q$ |
-| Hyperbolic addition | $\cosh(\breve Q_1+\breve Q_2)=\cosh\breve Q_1\cosh\breve Q_2+\sinh\breve Q_1\sinh\breve Q_2$ |
+| Hyperbolic addition | $\sinh(\breve Q_1+\breve Q_2)=\sinh\breve Q_1\cosh\breve Q_2+\cosh\breve Q_1\sinh\breve Q_2$, $\cosh(\breve Q_1+\breve Q_2)=\cosh\breve Q_1\cosh\breve Q_2+\sinh\breve Q_1\sinh\breve Q_2$ |
+| Double angle | $\sin(2\breve Q)=2\sin\breve Q\cos\breve Q$, $\cos(2\breve Q)=\cos^{2}\breve Q-\sin^{2}\breve Q$, $\sinh(2\breve Q)=2\sinh\breve Q\cosh\breve Q$, $\cosh(2\breve Q)=\cosh^{2}\breve Q+\sinh^{2}\breve Q$ |
 | Rotation | $\sin(i\breve Q)=i\sinh\breve Q$, $\cos(i\breve Q)=\cosh\breve Q$, $\sinh(i\breve Q)=i\sin\breve Q$, $\cosh(i\breve Q)=\cos\breve Q$ |
 | Period of $\sin,\cos$ | $\mathcal{P}_{\sin}=\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$ |
 | Period of $\sinh,\cosh$ | $\mathcal{P}_{\sinh}=\pi i\mathbb{Z}(1+j)\oplus\pi i\mathbb{Z}(1-j)=\ker\exp$ |
@@ -510,9 +517,13 @@ The four functions are pairs of ordinary complex functions at the eigenvalues. T
 | Zeros of $\cos$ | both $\lambda_1,\lambda_2\in\frac{\pi}{2}+\pi\mathbb{Z}$ |
 | Zeros of $\sinh$ | both $\lambda_1,\lambda_2\in i\pi\mathbb{Z}$ |
 | Zeros of $\cosh$ | both $\lambda_1,\lambda_2\in i\frac{\pi}{2}+i\pi\mathbb{Z}$ |
+| Zero divisors of $\sin$ | $\lambda_1\in\pi\mathbb{Z}$ or $\lambda_2\in\pi\mathbb{Z}$ |
+| Zero divisors of $\cos$ | $\lambda_1\in\frac{\pi}{2}+\pi\mathbb{Z}$ or $\lambda_2\in\frac{\pi}{2}+\pi\mathbb{Z}$ |
+| Zero divisors of $\sinh$ | $\lambda_1\in i\pi\mathbb{Z}$ or $\lambda_2\in i\pi\mathbb{Z}$ |
+| Zero divisors of $\cosh$ | $\lambda_1\in i\frac{\pi}{2}+i\pi\mathbb{Z}$ or $\lambda_2\in i\frac{\pi}{2}+i\pi\mathbb{Z}$ |
 | Boundedness | all four are unbounded: $\sin$ and $\cos$ since $\sin(it)=i\sinh t$ and $\cos(it)=\cosh t$; $\sinh$ and $\cosh$ on the real split direction |
 
-The period lattices are read in the eigenvalues: $\mathcal{P}_{\sin}$ has eigenvalue image $(2\pi\mathbb{Z})^{2}$, and $\mathcal{P}_{\sinh}$ has eigenvalue image $(2\pi i\mathbb{Z})^{2}$. The first is the period lattice of the trigonometric functions, of rank two and index two in $\pi\mathbb{Z}+\pi j\mathbb{Z}$; the second is the kernel of the exponential. A period may act in one eigenvalue alone, which is impossible in the complex case with its single period $2\pi$.
+An equality requires both eigenvalue equations, while a zero divisor requires only one. The period lattices are read in the eigenvalues: $\mathcal{P}_{\sin}$ has eigenvalue image $(2\pi\mathbb{Z})^{2}$, and $\mathcal{P}_{\sinh}$ has eigenvalue image $(2\pi i\mathbb{Z})^{2}$. The first is the period lattice of the trigonometric functions, of rank two and index two in $\pi\mathbb{Z}+\pi j\mathbb{Z}$; the second is the kernel of the exponential. A period may act in one eigenvalue alone, which is impossible in the complex case with its single period $2\pi$.
 
 ### The Other Functions
 
@@ -521,7 +532,13 @@ The remaining functions are the quotients
 $$
 \tan\breve Q=\frac{\sin\breve Q}{\cos\breve Q},\qquad \cot\breve Q=\frac{\cos\breve Q}{\sin\breve Q},
 \qquad
-\tanh\breve Q=\frac{\sinh\breve Q}{\cosh\breve Q},\qquad \coth\breve Q=\frac{\cosh\breve Q}{\sinh\breve Q}.
+\tanh\breve Q=\frac{\sinh\breve Q}{\cosh\breve Q},\qquad \coth\breve Q=\frac{\cosh\breve Q}{\sinh\breve Q},
+$$
+
+$$
+\sec\breve Q=\frac{1}{\cos\breve Q},\qquad \csc\breve Q=\frac{1}{\sin\breve Q},
+\qquad
+\operatorname{sech}\breve Q=\frac{1}{\cosh\breve Q},\qquad \operatorname{csch}\breve Q=\frac{1}{\sinh\breve Q}.
 $$
 
 They are defined wherever the denominator is a unit. The poles of $\tan$ and $\cot$ are therefore the sets where $\cos\breve Q$ or $\sin\breve Q$ fails to be a unit, that is where one eigenvalue of the denominator vanishes; each such set is the union of two families of complex planes. The same rule applies to the hyperbolic functions.
@@ -530,14 +547,14 @@ They are defined wherever the denominator is a unit. The poles of $\tan$ and $\c
 
 The inverse functions are defined by the same formulas as in the complex case, with the branch choices made independently in the two eigenvalues.
 
-| Function | Formula |
-|---|---|
-| $\arcsin\breve Q$ | $-i\operatorname{Log}\bigl(i\breve Q+\sqrt{1-\breve Q^{2}}\bigr)$ |
-| $\arccos\breve Q$ | $-i\operatorname{Log}\bigl(\breve Q+i\sqrt{1-\breve Q^{2}}\bigr)$ |
-| $\arctan\breve Q$ | $\dfrac{1}{2i}\operatorname{Log}\dfrac{1+i\breve Q}{1-i\breve Q}$ |
-| $\operatorname{arsinh}\breve Q$ | $\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}+1}\bigr)$ |
-| $\operatorname{arcosh}\breve Q$ | $\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}-1}\bigr)$ |
-| $\operatorname{artanh}\breve Q$ | $\dfrac12\operatorname{Log}\dfrac{1+\breve Q}{1-\breve Q}$ |
+| Function | Formula | Domain |
+|---|---|---|
+| $\arcsin\breve Q$ | $-i\operatorname{Log}\bigl(i\breve Q+\sqrt{1-\breve Q^{2}}\bigr)$ | where both eigenvalue expressions are defined |
+| $\arccos\breve Q$ | $-i\operatorname{Log}\bigl(\breve Q+i\sqrt{1-\breve Q^{2}}\bigr)$ | where both eigenvalue expressions are defined |
+| $\arctan\breve Q$ | $\dfrac{1}{2i}\operatorname{Log}\dfrac{1+i\breve Q}{1-i\breve Q}$ | where $1\pm i\breve Q$ are units |
+| $\operatorname{arsinh}\breve Q$ | $\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}+1}\bigr)$ | where both eigenvalue expressions are defined |
+| $\operatorname{arcosh}\breve Q$ | $\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}-1}\bigr)$ | where both eigenvalue expressions are defined |
+| $\operatorname{artanh}\breve Q$ | $\dfrac12\operatorname{Log}\dfrac{1+\breve Q}{1-\breve Q}$ | where $1\pm\breve Q$ are units |
 
 The square roots and logarithms are multivalued, and the formulas are read in the two eigenvalues, where they reduce to the ordinary complex inverse functions. The domain of each is the set of $\breve Q$ for which both eigenvalue expressions are defined; the branch cuts are inherited from the two eigenvalues.
 
@@ -635,8 +652,10 @@ The trigonometric and hyperbolic functions are read at the two eigenvalues. Thei
 
 | Result | Statement |
 |---|---|
+| Regimes | distinct unit, zero divisor, scalar; the algebra is reduced, so there is no nilpotent regime |
 | Spectrum | $\sigma(\breve Q)=\{\lambda_1,\lambda_2\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
+| Idempotent Principle | $f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every complex power series |
 | Exponential | $\exp\breve Q=\exp(\lambda_1)\Pi_++\exp(\lambda_2)\Pi_-=\exp Q_{\blacktriangle}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ |
 | Kernel and image | $\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)\cong\mathbb{Z}^{2}$; $\operatorname{im}\exp=\mathbb{B}_{\mathrm{r}}^{\times}$ |
 | Logarithm | $\operatorname{Log}\breve Q=\frac{\operatorname{Log}\lambda_1+\operatorname{Log}\lambda_2}{2}+j\frac{\operatorname{Log}\lambda_1-\operatorname{Log}\lambda_2}{2}$ on the units |
@@ -648,27 +667,27 @@ The trigonometric and hyperbolic functions are read at the two eigenvalues. Thei
 | Trigonometric functions | $\sin\breve Q=\sin\lambda_1\Pi_++\sin\lambda_2\Pi_-$, $\cos\breve Q=\cos\lambda_1\Pi_++\cos\lambda_2\Pi_-$ |
 | Hyperbolic functions | $\sinh\breve Q=\sinh\lambda_1\Pi_++\sinh\lambda_2\Pi_-$, $\cosh\breve Q=\cosh\lambda_1\Pi_++\cosh\lambda_2\Pi_-$ |
 | Identities | $\sin^2\breve Q+\cos^2\breve Q=1$, $\cosh^2\breve Q-\sinh^2\breve Q=1$, the addition and double-angle formulas |
-| Inverse functions | $\arcsin\breve Q$, $\arccos\breve Q$, $\arctan\breve Q$ and the hyperbolic inverses, built from the logarithm and the square root |
 | Periods | $\mathcal{P}_{\sin}=\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$; $\mathcal{P}_{\sinh}=\ker\exp$ |
+| Inverse functions | $\arcsin\breve Q$, $\arccos\breve Q$, $\arctan\breve Q$ and the hyperbolic inverses, built from the logarithm and the square root |
 
 ### Formulas
 
 | Function | Value | Domain |
 |---|---|---|
 | $\exp\breve Q$ | $\exp(Q_{\blacktriangle})(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ | all $\breve Q$ |
-| $\exp(\breve Q_1+\breve Q_2)$ | $\exp\breve Q_1\exp\breve Q_2$ | all $\breve Q_1,\breve Q_2$, the algebra being commutative |
-| $\exp(i\theta)$ | $\cos\theta+i\sin\theta$ | $\theta\in\mathbb{R}$ |
-| $\exp(ij\beta)$ | $\cos\beta+ij\sin\beta$ | $\beta\in\mathbb{R}$ |
-| $\exp(j\phi)$ | $\cosh\phi+j\sinh\phi$ | $\phi\in\mathbb{R}$ |
-| $\cos\breve Q$ | $\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$ | all $\breve Q$ |
+| $\operatorname{Log}\breve Q$ | $\frac{\operatorname{Log}\lambda_1+\operatorname{Log}\lambda_2}{2}+j\frac{\operatorname{Log}\lambda_1-\operatorname{Log}\lambda_2}{2}$ | the units |
+| $\breve Q^{s}$ | $\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa\in\ker\exp$ | the units, with a branch choice |
 | $\sin\breve Q$ | $\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown}$ | all $\breve Q$ |
-| $\cosh\breve Q$ | $\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$ | all $\breve Q$ |
+| $\cos\breve Q$ | $\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$ | all $\breve Q$ |
 | $\sinh\breve Q$ | $\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$ | all $\breve Q$ |
-| $\operatorname{Log}\breve Q$ | $\frac{\operatorname{Log}(\lambda_1)+\operatorname{Log}(\lambda_2)}{2}+j\frac{\operatorname{Log}(\lambda_1)-\operatorname{Log}(\lambda_2)}{2}$ | the units; analytic off $\lambda_1,\lambda_2\in(-\infty,0)$ |
-| $\log\breve Q$ | the same with a branch choice in each eigenvalue | units, branch choice |
-| $\ker\exp$ | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ | the period lattice |
-| $\breve Q^{s}$ | $\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa\in\ker\exp$ | units, branch choice |
-| $\breve R$ with $\breve R^{n}=\breve Q$ | $n^{2}$ solutions for a unit, $n$ for a one-eigenvalue zero divisor, $1$ for $0$ | $n\ge1$ |
+| $\cosh\breve Q$ | $\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$ | all $\breve Q$ |
+| $\tan\breve Q$ | $\sin\breve Q/\cos\breve Q$ | $\cos\breve Q$ a unit |
+| $\cot\breve Q$ | $\cos\breve Q/\sin\breve Q$ | $\sin\breve Q$ a unit |
+| $\tanh\breve Q$ | $\sinh\breve Q/\cosh\breve Q$ | $\cosh\breve Q$ a unit |
+| $\coth\breve Q$ | $\cosh\breve Q/\sinh\breve Q$ | $\sinh\breve Q$ a unit |
+| $\operatorname{arsinh}\breve Q$ | $\operatorname{Log}(\breve Q+\sqrt{\breve Q^{2}+1})$ | where the square root and the logarithm are defined |
+| $\operatorname{arcosh}\breve Q$ | $\operatorname{Log}(\breve Q+\sqrt{\breve Q^{2}-1})$ | where the square root and the logarithm are defined |
+| $\operatorname{artanh}\breve Q$ | $\tfrac12\operatorname{Log}\dfrac{1+\breve Q}{1-\breve Q}$ | where $1\pm\breve Q$ are units |
 
 ### Comparison with the Neighbouring Cases
 
@@ -711,6 +730,7 @@ The table compares the elementary functions across the three algebras; in the bi
 | $\mathcal{P}_{\sin}$ | $\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$, the period lattice of $\sin$ and $\cos$ |
 | $\mathcal{P}_{\sinh}$ | $\pi i\mathbb{Z}(1+j)\oplus\pi i\mathbb{Z}(1-j)=\ker\exp$, the period lattice of $\sinh$ and $\cosh$ |
 | $\sin\breve Q,\ \cos\breve Q,\ \sinh\breve Q,\ \cosh\breve Q$ | trigonometric and hyperbolic functions |
+| $\sec\breve Q,\ \csc\breve Q,\ \operatorname{sech}\breve Q,\ \operatorname{csch}\breve Q$ | Reciprocal functions |
 | $\breve Q^{s}$ | the power function |
 | $\breve R$ | a root of $\breve R^{n}=\breve Q$ |
 | $\eta_{1},\eta_{2}$ | $n$-th roots of unity of the two eigenvalues |

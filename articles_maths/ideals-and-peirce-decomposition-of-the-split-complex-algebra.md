@@ -4,26 +4,37 @@
 
 This article studies the ideals and the Peirce decomposition of the split-complex algebra $\mathbb{D}$. It follows *Square Roots of One and the Idempotents of the Split-Complex Algebra*, which supplied the two idempotents, and *Zero Divisors of the Split-Complex Algebra*, which supplied the two null lines; the ideals are the two lines, and the Peirce decomposition is the projection onto them.
 
-The algebra is commutative and two-dimensional, and the ideal theory is the simplest nontrivial one of the family: there are exactly four ideals, $\{0\}$, the two minimal ideals $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{D}$; the lattice is the four-element Boolean lattice; the algebra is Artinian, semisimple, reduced and of module length two; and it is **not simple**, because the two minimal ideals are proper. The Peirce decomposition with respect to the standard idempotent $\Pi_{+}$ collapses to the direct sum of the two minimal ideals, the two off-diagonal components vanishing because the idempotents are central and orthogonal.
+The algebra is commutative and two-dimensional, and the ideal theory is the simplest nontrivial one of the family: there are exactly four ideals, $0$, the two minimal ideals $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{D}$; the lattice is the four-element Boolean lattice; the algebra is Artinian, semisimple, reduced and of module length two; and it is **not simple**, because the two minimal ideals are proper. The Peirce decomposition with respect to the standard idempotent $\Pi_{+}$ collapses to the direct sum of the two minimal ideals, the two off-diagonal components vanishing because the idempotents are central and orthogonal.
 
 **The results.** The ideals of $\mathbb{D}$ are exactly
 
 $$
-\{0\},\qquad \mathbb{R}\Pi_{+},\qquad \mathbb{R}\Pi_{-},\qquad \mathbb{D},
+0,\qquad \mathbb{R}\Pi_{+},\qquad \mathbb{R}\Pi_{-},\qquad \mathbb{D},
 $$
 
-the two middle ones being minimal, maximal and isomorphic to $\mathbb{R}$. The algebra is the direct product $\mathbb{D}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-}\cong\mathbb{R}\times\mathbb{R}$, hence semisimple and not simple; it is Artinian and Noetherian, of length two, with zero Jacobson radical, zero nilradical and zero prime radical. For an idempotent $e$ with complement $f=1-e$ the Peirce decomposition is
+the two middle ones being minimal, maximal and isomorphic to $\mathbb{R}$. The algebra is the direct product $\mathbb{D}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-}\cong\mathbb{R}\times\mathbb{R}$, hence semisimple and not simple; it is Artinian and Noetherian, of length two, with zero Jacobson radical, zero nilradical and zero prime radical. For an idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the Peirce decomposition is
 
 $$
-\mathbb{D}=\mathbb{D}_{11}\oplus\mathbb{D}_{12}\oplus\mathbb{D}_{21}\oplus\mathbb{D}_{22},\qquad
-\mathbb{D}_{ij}=e_i\mathbb{D}e_j,
+\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{+-}\oplus\mathbb{D}_{-+}\oplus\mathbb{D}_{--},\qquad
+\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau,
 $$
 
-with $e_1=e$, $e_2=f$; the multiplication table is $\mathbb{D}_{ij}\mathbb{D}_{kl}\subseteq\delta_{jk}\mathbb{D}_{il}$. For $e=\Pi_{+}$ the two off-diagonal components vanish and the decomposition is $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$; the two idempotents are the diagonal matrix units of the decomposition, and the conjugation swaps the two components. The lattice of ideals is Boolean, and the radical is zero.
+with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$; the multiplication table is $\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$. For $\Pi=\Pi_{+}$ the two off-diagonal components vanish and the decomposition is $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$; the two idempotents are the diagonal matrix units of the decomposition, and the conjugation swaps the two components. The lattice of ideals is Boolean, and the radical is zero.
+
+| Question | Answer |
+|---|---|
+| Two-sided ideals | $0,\mathbb{R}\Pi_+,\mathbb{R}\Pi_-,\mathbb{D}$ |
+| Minimal and maximal ideals | $\mathbb{R}\Pi_+,\mathbb{R}\Pi_-$ |
+| Simple? | no |
+| Semisimple? | yes, $J(\mathbb{D})=0$ |
+| Module length | $2$ |
+| Idempotents | $0,1,\Pi_+,\Pi_-$ |
+| Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
+| Ideal lattice | the four-element Boolean lattice |
 
 **Boundaries.** The algebra is *Split-Complex Algebra*; the idempotents and the halving map are *Square Roots of One and the Idempotents of the Split-Complex Algebra*; the zero divisors are *Zero Divisors of the Split-Complex Algebra*; the annihilators are *Annihilators of the Split-Complex Algebra*; the norm, the criterion of invertibility and the group of units are *Norm and Invertibility in the General Split-Complex Algebra*; and the general theory of the Peirce decomposition, with the orthogonal, complete and primitive families, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$, with basis $1,j$, general element $Q=q+jq'$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring. The **standard idempotent** is $e=\Pi_{+}$, with complement $f=\Pi_{-}$.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$, with basis $1,j$, general element $Q=q+jq'$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$.
 
 ## Ideals in an Algebra
 
@@ -35,7 +46,7 @@ $$
 I\text{ is an additive subgroup},\qquad B\in I\Longrightarrow QB\in I\text{ and }BQ\in I.
 $$
 
-Since $\mathbb{D}$ is commutative, the two closure conditions coincide, and every ideal is two-sided; there is no separate theory of left and right ideals. The ideals $\{0\}$ and $\mathbb{D}$ are the **trivial** ideals; an ideal is **proper** when it is neither, **maximal** when it is proper and contained in no larger proper ideal, and **minimal** when it is nonzero and contains no smaller nonzero ideal.
+Since $\mathbb{D}$ is commutative, the two closure conditions coincide, and every ideal is two-sided; there is no separate theory of left and right ideals. The ideals $0$ and $\mathbb{D}$ are the **trivial** ideals; an ideal is **proper** when it is neither, **maximal** when it is proper and contained in no larger proper ideal, and **minimal** when it is nonzero and contains no smaller nonzero ideal.
 
 A **principal** ideal is one generated by a single element, written $(Q)=Q\mathbb{D}=\mathbb{D}Q$. The lattice of all ideals, ordered by inclusion, is $\mathrm{Id}(\mathbb{D})$, with meet $I\cap J$ and join $I+J$.
 
@@ -53,17 +64,24 @@ So an ideal is a subgroup that is a union of coordinate lines: it is determined 
 
 ## The Two-Sided Ideals
 
-**The ideals of $\mathbb{D}$ are exactly the four sets $\{0\}$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$ and $\mathbb{D}$; the two middle ones are minimal, maximal and isomorphic to $\mathbb{R}$, and the algebra is not simple.**
+**The ideals of $\mathbb{D}$ are exactly $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$ and $\mathbb{D}$; the two middle ones are minimal, maximal and isomorphic to $\mathbb{R}$, and the algebra is not simple.**
 
 **Theorem (the ideals).** The ideals of $\mathbb{D}$ are exactly
 
 $$
-\{0\},\qquad \mathbb{R}\Pi_{+}=\mathbb{D}\Pi_{+},\qquad \mathbb{R}\Pi_{-}=\mathbb{D}\Pi_{-},\qquad \mathbb{D}.
+0,\qquad \mathbb{R}\Pi_{+}=\mathbb{D}\Pi_{+},\qquad \mathbb{R}\Pi_{-}=\mathbb{D}\Pi_{-},\qquad \mathbb{D}.
 $$
+
+| Ideal | Generator | Dimension over $\mathbb{R}$ | Minimal | Maximal | Quotient |
+|---|---|---|---|---|---|
+| $0$ | none | $0$ | no | no | $\mathbb{D}$ |
+| $\mathbb{R}\Pi_{+}$ | $\Pi_{+}$ | $1$ | yes | yes | $\mathbb{R}\Pi_{-}\cong\mathbb{R}$ |
+| $\mathbb{R}\Pi_{-}$ | $\Pi_{-}$ | $1$ | yes | yes | $\mathbb{R}\Pi_{+}\cong\mathbb{R}$ |
+| $\mathbb{D}$ | $1$ | $2$ | no | no | $0$ |
 
 **Proof.** Each of the three nontrivial sets is an ideal: $\mathbb{R}\Pi_{+}$ is closed under addition, and $Q(\lambda\Pi_{+})=\lambda Q\Pi_{+}=\lambda Q_{+}\Pi_{+}\in\mathbb{R}\Pi_{+}$ for every $Q$; the same argument gives $\mathbb{R}\Pi_{-}$; and $\mathbb{D}$ is trivially an ideal.
 
-Conversely, let $I\neq\{0\}$ be an ideal and choose $Q\in I$ nonzero. If both idempotent coordinates of $Q$ are nonzero, then $Q$ is a unit by *Norm and Invertibility in the General Split-Complex Algebra*, so $1=Q^{-1}Q\in I$ and $I=\mathbb{D}$. Otherwise one coordinate of $Q$ vanishes, and $Q$ is a nonzero multiple of $\Pi_{+}$ or of $\Pi_{-}$ by the idempotent classification; say $Q=\lambda\Pi_{+}$ with $\lambda\neq0$, so that $\Pi_{+}=\lambda^{-1}Q\in I$. Now take any $B\in I$. If there is such a $B$ with $B_{-}\neq0$, then $B\Pi_{-}=B_{-}\Pi_{-}\in I$, so $\Pi_{-}=B_{-}^{-1}B\Pi_{-}\in I$, and then $1=\Pi_{+}+\Pi_{-}\in I$, giving $I=\mathbb{D}$. If on the other hand every $B\in I$ has $B_{-}=0$, then $I\subseteq\mathbb{R}\Pi_{+}$; since $I\neq0$ and $\Pi_{+}\in I$, we get $I=\mathbb{R}\Pi_{+}$. The case $Q=\lambda\Pi_{-}$ is the same with the roles of $+$ and $-$ exchanged and gives $I=\mathbb{R}\Pi_{-}$ or $I=\mathbb{D}$. So the list is complete.
+Conversely, let $I\neq0$ be an ideal and choose $Q\in I$ nonzero. If both idempotent coordinates of $Q$ are nonzero, then $Q$ is a unit by *Norm and Invertibility in the General Split-Complex Algebra*, so $1=Q^{-1}Q\in I$ and $I=\mathbb{D}$. Otherwise one coordinate of $Q$ vanishes, and $Q$ is a nonzero multiple of $\Pi_{+}$ or of $\Pi_{-}$ by the idempotent classification; say $Q=\lambda\Pi_{+}$ with $\lambda\neq0$, so that $\Pi_{+}=\lambda^{-1}Q\in I$. Now take any $B\in I$. If there is such a $B$ with $B_{-}\neq0$, then $B\Pi_{-}=B_{-}\Pi_{-}\in I$, so $\Pi_{-}=B_{-}^{-1}B\Pi_{-}\in I$, and then $1=\Pi_{+}+\Pi_{-}\in I$, giving $I=\mathbb{D}$. If on the other hand every $B\in I$ has $B_{-}=0$, then $I\subseteq\mathbb{R}\Pi_{+}$; since $I\neq0$ and $\Pi_{+}\in I$, we get $I=\mathbb{R}\Pi_{+}$. The case $Q=\lambda\Pi_{-}$ is the same with the roles of $+$ and $-$ exchanged and gives $I=\mathbb{R}\Pi_{-}$ or $I=\mathbb{D}$. So the list is complete.
 
 **Corollary (failure of simplicity).** $\mathbb{D}$ is **not simple**: it has exactly two nontrivial proper ideals, both minimal and both maximal. The algebra is the direct product of the two fields
 
@@ -84,20 +102,31 @@ $$
 
 **Proof.** A maximal ideal is a proper ideal not contained in a larger proper ideal; the only proper nonzero ideals are the two lines, and neither contains the other. The quotient by one line is the other, by the direct-product decomposition.
 
-## Artinian, Semisimple, Length Two
+## Artinian, Semisimple, and Length Two
 
 **The algebra is Artinian and Noetherian, semisimple, reduced, and of module length two; it is the product of two copies of the field $\mathbb{R}$.**
+
+| Property | Result |
+|---|---|
+| Artinian | yes, the dimension is finite |
+| Noetherian | yes, the dimension is finite |
+| Semisimple | yes, $J(\mathbb{D})=0$ |
+| Simple | no |
+| Length as a module over itself | $2$ |
+| Simple modules | two, $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$ |
+| Radical | $0$ |
+| Reduced | yes, no nonzero nilpotent |
 
 Since $\mathbb{D}$ is finite-dimensional over the field $\mathbb{R}$, it is **Artinian** as a ring: every descending chain of ideals stabilises. It is also **Noetherian** for the same reason.
 
 **Proposition (semisimplicity).** $\mathbb{D}$ is **semisimple** in the sense of having zero Jacobson radical, and it is the product of the two simple algebras $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.
 
-**Proof.** The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and its only maximal ideal is $\{0\}$; and $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition.
+**Proof.** The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and its only maximal ideal is $0$; and $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition.
 
 **Proposition (length).** As a module over itself, $\mathbb{D}$ has **length two**, with composition series
 
 $$
-\{0\}\subset\mathbb{R}\Pi_{+}\subset\mathbb{D},\qquad
+0\subset\mathbb{R}\Pi_{+}\subset\mathbb{D},\qquad
 \mathbb{R}\Pi_{+}\cong\mathbb{R},\qquad
 \mathbb{D}/\mathbb{R}\Pi_{+}\cong\mathbb{R}\Pi_{-}\cong\mathbb{R}.
 $$
@@ -118,6 +147,13 @@ $$
 
 **Proof.** The classification is *Square Roots of One and the Idempotents of the Split-Complex Algebra*, §*The Classification of the Idempotents*. The identities $\Pi_{+}^{2}=\Pi_{+}$, $\Pi_{-}^{2}=\Pi_{-}$, $\Pi_{+}\Pi_{-}=0$ and $\Pi_{+}+\Pi_{-}=1$ are direct computations. Centrality is commutativity. Primitivity follows from $\Pi_{+}\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+}\cong\mathbb{R}$, a field, and the same for $\Pi_{-}$.
 
+| Idempotent | Form | Complement | Central | Primitive | Matrix model |
+|---|---|---|---|---|---|
+| $0$ | $0$ | $1$ | yes | no | $\operatorname{diag}(0,0)$ |
+| $1$ | $1$ | $0$ | yes | no | $\mathrm I_{2}$ |
+| $\Pi_{+}$ | $\tfrac12(1+j)$ | $\Pi_{-}$ | yes | yes | $\operatorname{diag}(1,0)$ |
+| $\Pi_{-}$ | $\tfrac12(1-j)$ | $\Pi_{+}$ | yes | yes | $\operatorname{diag}(0,1)$ |
+
 **Proposition (the matrix units).** In the idempotent basis $\{\Pi_{+},\Pi_{-}\}$ the standard idempotents are the two diagonal matrix units
 
 $$
@@ -135,115 +171,158 @@ Because $\mathbb{D}$ is commutative, the two off-diagonal units $E_{12}$ and $E_
 
 ## The Peirce Decomposition
 
-**For an idempotent $e$ with complement $f=1-e$ the Peirce subspaces $e\mathbb{D}e$, $e\mathbb{D}f$, $f\mathbb{D}e$, $f\mathbb{D}f$ are defined and multiply as matrix units; in the commutative algebra $\mathbb{D}$ the two off-diagonal subspaces coincide as sets, and they vanish for every idempotent of $\mathbb{D}$, so the decomposition is the direct sum of the two diagonal ideals.**
+**For an idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the Peirce spaces $\Pi\mathbb{D}\Pi$, $\Pi\mathbb{D}\Pi'$, $\Pi'\mathbb{D}\Pi$ and $\Pi'\mathbb{D}\Pi'$ are defined and multiply by the matrix-unit rule; in the commutative algebra $\mathbb{D}$ the two off-diagonal spaces coincide as sets and vanish for every idempotent, so the decomposition is the direct sum of the two diagonal ideals.**
 
 ### One Idempotent
 
-Let $e$ be an idempotent of $\mathbb{D}$ and write $f=1-e$ for its complement. Multiplication by $e$ and by $f$ splits the algebra into four additive subgroups,
+Let $\Pi$ be an idempotent of $\mathbb{D}$ and write $\Pi'=1-\Pi$ for its complement. The sign $+$ names $\Pi$ and the sign $-$ names $\Pi'$. Every element expands as
 
 $$
-\mathbb{D}=\mathbb{D}_{11}\oplus\mathbb{D}_{12}\oplus\mathbb{D}_{21}\oplus\mathbb{D}_{22},
+Q=\Pi Q\Pi+\Pi Q\Pi'+\Pi'Q\Pi+\Pi'Q\Pi',
 $$
 
-where
+so the algebra splits into the four **Peirce spaces**
 
 $$
-\mathbb{D}_{11}=e\mathbb{D}e,\qquad \mathbb{D}_{12}=e\mathbb{D}f,\qquad \mathbb{D}_{21}=f\mathbb{D}e,\qquad \mathbb{D}_{22}=f\mathbb{D}f.
+\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{+-}\oplus\mathbb{D}_{-+}\oplus\mathbb{D}_{--},
+\qquad
+\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau,
 $$
 
-This is the **Peirce decomposition** of $\mathbb{D}$ with respect to $e$. It is the refinement of the two-term decomposition $\mathbb{D}=\mathbb{D}e\oplus\mathbb{D}f$: the summand $\mathbb{D}e$ is $\mathbb{D}_{11}\oplus\mathbb{D}_{21}$ and the summand $\mathbb{D}f$ is $\mathbb{D}_{12}\oplus\mathbb{D}_{22}$. The four subspaces form a direct sum in any algebra, the Peirce coordinates recovering the components; in $\mathbb{D}$ the off-diagonal components vanish for the nontrivial idempotent and are zero for $0$ and $1$.
+with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$. This is the **Peirce decomposition** of $\mathbb{D}$ with respect to $\Pi$. It refines the two-term decomposition $\mathbb{D}=\mathbb{D}\Pi\oplus\mathbb{D}\Pi'$: the summand $\mathbb{D}\Pi$ is $\mathbb{D}_{++}\oplus\mathbb{D}_{-+}$ and the summand $\mathbb{D}\Pi'$ is $\mathbb{D}_{+-}\oplus\mathbb{D}_{--}$.
 
-**Proposition (the Peirce multiplication).** For $i,j,k,l\in\{1,2\}$,
+**Proposition (the Peirce multiplication).** For $\sigma,\tau,\mu,\nu\in\{+,-\}$,
 
 $$
-\mathbb{D}_{ij}\mathbb{D}_{kl}\subseteq\delta_{jk}\mathbb{D}_{il}.
+\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}.
 $$
 
-**Proof.** An element of $\mathbb{D}_{ij}$ is $e_i Q e_j$ and an element of $\mathbb{D}_{kl}$ is $e_k B e_l$, with $e_1=e$, $e_2=f$. The product is $e_i Q e_j e_k B e_l$; the middle factor is $e_j e_k=\delta_{jk}e_j$, because the two idempotents are orthogonal and complete. The result is $\delta_{jk}e_i(Qe_jB)e_l\in\delta_{jk}\mathbb{D}_{il}$.
+**Proof.** An element of $\mathbb{D}_{\sigma\tau}$ is $\Pi_\sigma Q\Pi_\tau$ and an element of $\mathbb{D}_{\mu\nu}$ is $\Pi_\mu B\Pi_\nu$. The product is $\Pi_\sigma Q\Pi_\tau\Pi_\mu B\Pi_\nu$; the middle factor is $\Pi_\tau\Pi_\mu=\delta_{\tau\mu}\Pi_\tau$, because the two idempotents are orthogonal and complete. The result is $\delta_{\tau\mu}\Pi_\sigma(Q\Pi_\tau B)\Pi_\nu\in\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$.
 
-**Corollary (the two-term decomposition).** The subspaces $\mathbb{D}e=\mathbb{D}_{11}\oplus\mathbb{D}_{21}$ and $\mathbb{D}f=\mathbb{D}_{12}\oplus\mathbb{D}_{22}$ are ideals of the algebra on the appropriate side; when $e$ is central they are two-sided ideals and $\mathbb{D}=\mathbb{D}e\oplus\mathbb{D}f$ is a direct product decomposition.
+**Corollary (the two-term decomposition).** The subspaces $\mathbb{D}\Pi=\mathbb{D}_{++}\oplus\mathbb{D}_{-+}$ and $\mathbb{D}\Pi'=\mathbb{D}_{+-}\oplus\mathbb{D}_{--}$ are ideals, and $\mathbb{D}=\mathbb{D}\Pi\oplus\mathbb{D}\Pi'$ is a direct product decomposition; in the commutative algebra $\mathbb{D}$ every idempotent is central, so the two ideals are two-sided.
 
 ### A Complete Orthogonal Family
 
-For a finite complete orthogonal family $e_1,\dots,e_n$ of central idempotents, the same construction gives
+For a finite complete orthogonal family $\Pi_1,\dots,\Pi_n$ of central idempotents, the same construction gives
 
 $$
-\mathbb{D}=\bigoplus_{i,j=1}^{n}\mathbb{D}_{ij},\qquad \mathbb{D}_{ij}=e_i\mathbb{D}e_j,
+\mathbb{D}=\bigoplus_{i,j=1}^{n}\Pi_i\mathbb{D}\Pi_j,
+\qquad
+(\Pi_i\mathbb{D}\Pi_j)(\Pi_k\mathbb{D}\Pi_l)\subseteq\delta_{jk}\,\Pi_i\mathbb{D}\Pi_l,
 $$
 
-and the off-diagonal components vanish, because $e_i e_j=0$ for $i\neq j$. The algebra is then the direct sum of the $n$ ideals $\mathbb{D}_{ii}=e_i\mathbb{D}e_i$, and the Peirce decomposition is the direct product decomposition. In $\mathbb{D}$ the only nontrivial complete orthogonal family is $\{\Pi_{+},\Pi_{-}\}$, with $n=2$.
+and the off-diagonal components vanish, because $\Pi_i\Pi_j=0$ for $i\neq j$. The algebra is then the direct sum of the $n$ ideals $\Pi_i\mathbb{D}\Pi_i$, and the Peirce decomposition is the direct product decomposition. In $\mathbb{D}$ the only nontrivial complete orthogonal family is $\{\Pi_{+},\Pi_{-}\}$, with $n=2$.
 
 ### The Split-Complex Case
 
-Take $e=\Pi_{+}$, $f=\Pi_{-}$, the standard idempotent. Then
+**The four Peirce spaces are the two idempotent lines and two zero spaces.**
+
+Take $\Pi=\Pi_+$ and $\Pi'=\Pi_-$, the standard pair. Then
 
 $$
-\Pi_{+}\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+},\qquad
-\Pi_{-}\mathbb{D}\Pi_{-}=\mathbb{R}\Pi_{-},\qquad
-\Pi_{+}\mathbb{D}\Pi_{-}=0,\qquad
-\Pi_{-}\mathbb{D}\Pi_{+}=0.
+\Pi_+\mathbb{D}\Pi_+=\mathbb{R}\Pi_+,\qquad
+\Pi_-\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,\qquad
+\Pi_+\mathbb{D}\Pi_-=0,\qquad
+\Pi_-\mathbb{D}\Pi_+=0.
 $$
 
-The two **off-diagonal** Peirce components vanish, because $\Pi_{+}\Pi_{-}=0$ annihilates every product alternating between the two idempotents, and the decomposition collapses to
+The two **off-diagonal** Peirce spaces vanish, because $\Pi_+\Pi_-=0$ annihilates every product alternating between the two idempotents, and the decomposition collapses to
 
 $$
-\mathbb{D}=\mathbb{D}_{11}\oplus\mathbb{D}_{22}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-},
+\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{--}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-,
 $$
 
-of total dimension $1+1+0+0=2$. With respect to the idempotent $0$ or $1$ the Peirce decomposition is trivial: for $e=1$ the only nonzero component is the whole algebra, and for $e=0$ it is the zero ideal.
+of total dimension $1+1+0+0=2$. The four spaces are collected in the table.
+
+| Corner | Definition | Basis | Dimension over $\mathbb{R}$ | Matrix unit |
+|---|---|---|---|---|
+| $\mathbb{D}_{++}$ | $\Pi_+\mathbb{D}\Pi_+$ | $\Pi_+$ | $1$ | $E_{11}$ |
+| $\mathbb{D}_{+-}$ | $\Pi_+\mathbb{D}\Pi_-$ | none | $0$ | $0$ |
+| $\mathbb{D}_{-+}$ | $\Pi_-\mathbb{D}\Pi_+$ | none | $0$ | $0$ |
+| $\mathbb{D}_{--}$ | $\Pi_-\mathbb{D}\Pi_-$ | $\Pi_-$ | $1$ | $E_{22}$ |
+
+With respect to the idempotent $0$ or $1$ the Peirce decomposition is trivial: for $\Pi=1$ the only nonzero component is the whole algebra, and for $\Pi=0$ it is the zero ideal.
 
 ### From One Idempotent to Its Complement
 
-The idempotent $f=1-e$ gives the same decomposition with the indices exchanged:
+**The decomposition depends on the unordered pair of complementary idempotents, not on which member carries the sign $+$.**
+
+The idempotent $\Pi'=1-\Pi$ gives the same decomposition with the two signs exchanged:
 
 $$
-f\mathbb{D}f=\mathbb{D}_{22},\quad f\mathbb{D}e=\mathbb{D}_{21},\quad e\mathbb{D}f=\mathbb{D}_{12},\quad e\mathbb{D}e=\mathbb{D}_{11}.
+\Pi'\mathbb{D}\Pi'=\mathbb{D}_{--},\quad \Pi'\mathbb{D}\Pi=\mathbb{D}_{-+},\quad \Pi\mathbb{D}\Pi'=\mathbb{D}_{+-},\quad \Pi\mathbb{D}\Pi=\mathbb{D}_{++}.
 $$
 
-So the Peirce decomposition depends on the **unordered** pair $\{e,f\}$ and not on which member is called $e$; the two ordered readings differ by the swap $1\leftrightarrow2$. For the standard pair the two readings are the same up to the exchange of $\Pi_{+}$ and $\Pi_{-}$.
+The two ordered readings differ by the swap $+\leftrightarrow-$. For the standard pair the two readings are the same up to the exchange of $\Pi_+$ and $\Pi_-$.
 
 ### The Peirce Table
 
-The four components multiply as the matrix units of a $2\times2$ algebra:
+**The four Peirce spaces multiply by the matrix-unit rule; here only the two diagonal products survive.**
 
-| $\cdot$ | $\mathbb{D}_{11}$ | $\mathbb{D}_{12}$ | $\mathbb{D}_{21}$ | $\mathbb{D}_{22}$ |
+The entry in row $S$ and column $T$ is the space containing the products of an element of $S$ with an element of $T$:
+
+| $\cdot$ | $\mathbb{D}_{++}$ | $\mathbb{D}_{+-}$ | $\mathbb{D}_{-+}$ | $\mathbb{D}_{--}$ |
 |---|---|---|---|---|
-| $\mathbb{D}_{11}$ | $\mathbb{D}_{11}$ | $\mathbb{D}_{12}$ | $0$ | $0$ |
-| $\mathbb{D}_{12}$ | $0$ | $0$ | $\mathbb{D}_{11}$ | $\mathbb{D}_{12}$ |
-| $\mathbb{D}_{21}$ | $\mathbb{D}_{21}$ | $\mathbb{D}_{22}$ | $0$ | $0$ |
-| $\mathbb{D}_{22}$ | $0$ | $0$ | $\mathbb{D}_{21}$ | $\mathbb{D}_{22}$ |
+| $\mathbb{D}_{++}$ | $\mathbb{D}_{++}$ | $0$ | $0$ | $0$ |
+| $\mathbb{D}_{+-}$ | $0$ | $0$ | $0$ | $0$ |
+| $\mathbb{D}_{-+}$ | $0$ | $0$ | $0$ | $0$ |
+| $\mathbb{D}_{--}$ | $0$ | $0$ | $0$ | $\mathbb{D}_{--}$ |
 
-For the standard idempotent only the two diagonal entries survive: $\mathbb{D}_{11}\mathbb{D}_{11}\subseteq\mathbb{D}_{11}$ and $\mathbb{D}_{22}\mathbb{D}_{22}\subseteq\mathbb{D}_{22}$, all other products zero.
+For the standard pair only the two diagonal entries survive: $\mathbb{D}_{++}\mathbb{D}_{++}\subseteq\mathbb{D}_{++}$ and $\mathbb{D}_{--}\mathbb{D}_{--}\subseteq\mathbb{D}_{--}$, all other products zero. The table is the specialisation of the rule $\delta_{\tau\mu}$ to the vanishing off-diagonal spaces.
 
 ### The Peirce Coordinates
+
+**In the Peirce coordinates an element is a pair of real numbers, and the multiplication is componentwise.**
 
 Every element has the unique Peirce decomposition
 
 $$
-Q=Q_{11}+Q_{12}+Q_{21}+Q_{22},\qquad Q_{ij}=e_iQe_j,
+Q=Q_{++}+Q_{+-}+Q_{-+}+Q_{--},\qquad Q_{\sigma\tau}=\Pi_\sigma Q\Pi_\tau.
 $$
 
-with $e_1=e$, $e_2=f$. The four coordinates are the projections onto the four components, and they satisfy the multiplication rule of the Peirce table. For the standard idempotent,
+The four coordinates are the projections onto the four spaces, and they satisfy the multiplication rule of the Peirce table. For the standard pair,
 
 $$
-Q_{11}=Q_{+}\Pi_{+},\qquad Q_{22}=Q_{-}\Pi_{-},\qquad Q_{12}=Q_{21}=0,
+Q_{++}=Q_{+}\Pi_{+},\qquad Q_{--}=Q_{-}\Pi_{-},\qquad Q_{+-}=Q_{-+}=0,
 $$
 
 so the Peirce coordinates are the idempotent coordinates, and the algebra is diagonal in the Peirce basis.
 
 ### The Decomposition as a Grading
 
-The Peirce decomposition is a direct sum of additive subgroups with the multiplication table of matrix units. When the off-diagonal components vanish, as they do for the standard idempotent, the decomposition is a **direct product decomposition**: the algebra is the product of the two ideals $\mathbb{D}_{11}$ and $\mathbb{D}_{22}$, and there is no nontrivial grading, because every element is homogeneous of degree zero with respect to the two-point index. The failure of a nontrivial grading is the same failure of simplicity: the algebra is a product, not a matrix algebra.
+**The splitting $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ is an algebra decomposition, and it is equivalent to the $\mathbb{Z}_{2}$-grading whose even part is the real line and whose odd part is the split imaginary line.**
+
+**Definition.** A $\mathbb{Z}_{2}$-**grading** of an algebra is a direct sum $\mathcal A=\mathcal A_{0}\oplus\mathcal A_{1}$ of subspaces with $\mathcal A_{\epsilon}\mathcal A_{\delta}\subseteq\mathcal A_{\epsilon+\delta}$ for the sum modulo $2$.
+
+**Theorem.** With
+
+$$
+\mathcal A_{0}=\mathbb{R}\cdot 1,\qquad \mathcal A_{1}=\mathbb{R}\cdot j,
+$$
+
+the algebra is $\mathbb{Z}_{2}$-graded: $1\cdot1=1$, $1\cdot j=j$ and $j\cdot j=1$ put the even part in itself, the even part times the odd part in the odd part, and the odd part times itself in the even part.
+
+**Proof.** The multiplication table of the basis $1,j$ is $1\cdot1=1$, $1\cdot j=j\cdot1=j$, $j\cdot j=1$, which is exactly the grading condition; the two spaces are independent and span $\mathbb{D}$ over $\mathbb{R}$.
+
+The central splitting into the two idempotent lines and the $\mathbb{Z}_{2}$-grading into the scalar and $j$-lines are two presentations of the same algebra decomposition: the idempotent coordinates are the diagonalising coordinates of the grading.
 
 ### The Involutions on the Peirce Spaces
 
-The conjugation $\bar\cdot$ is the only nontrivial involution of $\mathbb{D}$. It swaps the two standard idempotents,
+**The conjugation is the only nontrivial involution of $\mathbb{D}$; it exchanges the two standard idempotents, hence the two diagonal Peirce spaces, and it fixes the two off-diagonal spaces, both zero.**
+
+The conjugation $\bar\cdot$ swaps the two standard idempotents,
 
 $$
 \overline{\Pi_{+}}=\Pi_{-},\qquad \overline{\Pi_{-}}=\Pi_{+},
 $$
 
-so it maps the Peirce component $\mathbb{D}_{11}=\mathbb{R}\Pi_{+}$ to $\mathbb{D}_{22}=\mathbb{R}\Pi_{-}$ and back, and it maps the off-diagonal components to themselves (both zero). The fixed subspace of the conjugation is the real line $\mathbb{R}_{\mathbb{D}}$, and the anti-fixed subspace is the split imaginary line $j\mathbb{R}_{\mathbb{D}}$; the conjugation does not preserve the ordered Peirce decomposition, it swaps its two components.
+so it maps $\mathbb{D}_{++}=\mathbb{R}\Pi_{+}$ to $\mathbb{D}_{--}=\mathbb{R}\Pi_{-}$ and back, and it maps the off-diagonal spaces to themselves. The action is collected in the table.
+
+| Involution | $\Pi_{+}$ | $\Pi_{-}$ | $\mathbb{D}_{++}$ | $\mathbb{D}_{--}$ | $\mathbb{D}_{+-}$ | $\mathbb{D}_{-+}$ |
+|---|---|---|---|---|---|---|
+| bar $\bar{\cdot}$ | $\Pi_{-}$ | $\Pi_{+}$ | $\mathbb{D}_{--}$ | $\mathbb{D}_{++}$ | $0$ | $0$ |
+
+The fixed subspace of the conjugation is the real line $\mathbb{R}_{\mathbb{D}}$, and the anti-fixed subspace is the split imaginary line $j\mathbb{R}_{\mathbb{D}}$; the conjugation does not preserve the ordered Peirce decomposition, it swaps its two components.
 
 **Proposition.** The fixed algebra of the conjugation is $\mathbb{R}_{\mathbb{D}}$, and the anti-fixed subspace is $j\mathbb{R}_{\mathbb{D}}$; the conjugation exchanges the two minimal ideals.
 
@@ -251,7 +330,7 @@ so it maps the Peirce component $\mathbb{D}_{11}=\mathbb{R}\Pi_{+}$ to $\mathbb{
 
 ## The Peirce Coordinates and the Matrix Model
 
-**In the idempotent basis the Peirce decomposition is the diagonal decomposition of the regular matrix model; the two projectors are the diagonal matrix units, and the Peirce coordinates are the two eigenvalues.**
+**In the idempotent basis the Peirce decomposition is the diagonal decomposition of the regular matrix model; the two projectors are the diagonal matrix units, and the scalar coefficients of the Peirce coordinates are the two eigenvalues.**
 
 The regular representation sends $Q$ to the matrix
 
@@ -259,13 +338,13 @@ $$
 \mathsf{M}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$
 
-which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$ (*The Matrix Element Representations of the Split-Complexoid*). The Peirce components are the two eigenspaces:
+which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$, the scalar coefficients of the Peirce coordinates (*The Matrix Element Representations of the Split-Complexoid*). The Peirce components are the two eigenspaces:
 
 $$
-\mathbb{D}_{11}=\mathbb{R}\Pi_{+},\qquad \mathbb{D}_{22}=\mathbb{R}\Pi_{-},
+\mathbb{D}_{++}=\mathbb{R}\Pi_{+},\qquad \mathbb{D}_{--}=\mathbb{R}\Pi_{-}.
 $$
 
-and the Peirce coordinates $Q_{11}$ and $Q_{22}$ are the two eigenvalues. The projectors are
+The projectors are
 
 $$
 P_{+}=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
@@ -300,26 +379,26 @@ The two ideals are the two **minimal ideals** in the sense of the lattice of all
 
 **The four ideals form the four-element Boolean lattice $\mathcal{P}(\{+,-\})$, with meet intersection and join sum.**
 
-The four ideals of $\mathbb{D}$ are $\{0\}$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{D}$, with the inclusions
+The four ideals of $\mathbb{D}$ are $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{D}$, with the inclusions
 
 $$
-\{0\}\subset\mathbb{R}\Pi_{+}\subset\mathbb{D},\qquad
-\{0\}\subset\mathbb{R}\Pi_{-}\subset\mathbb{D},
+0\subset\mathbb{R}\Pi_{+}\subset\mathbb{D},\qquad
+0\subset\mathbb{R}\Pi_{-}\subset\mathbb{D},
 $$
 
-and no inclusion between $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$ (they are independent, and their intersection is $\{0\}$).
+and no inclusion between $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$ (they are independent, and their intersection is $0$).
 
-| meet | value | join | value |
+| Meet | Value | Join | Value |
 |---|---|---|---|
-| $\mathbb{R}\Pi_{+}\cap\mathbb{R}\Pi_{-}$ | $\{0\}$ | $\mathbb{R}\Pi_{+}+\mathbb{R}\Pi_{-}$ | $\mathbb{D}$ |
+| $\mathbb{R}\Pi_{+}\cap\mathbb{R}\Pi_{-}$ | $0$ | $\mathbb{R}\Pi_{+}+\mathbb{R}\Pi_{-}$ | $\mathbb{D}$ |
 | $\mathbb{R}\Pi_{+}\cap\mathbb{D}$ | $\mathbb{R}\Pi_{+}$ | $\mathbb{R}\Pi_{+}+\mathbb{D}$ | $\mathbb{D}$ |
-| $\{0\}\cap I$ | $\{0\}$ | $\{0\}+I$ | $I$ |
+| $0\cap I$ | $0$ | $0+I$ | $I$ |
 
 **Theorem.** The lattice $\mathrm{Id}(\mathbb{D})$ is a **Boolean lattice** with four elements, isomorphic to the power set of a two-point set:
 
 $$
 \mathrm{Id}(\mathbb{D})\cong\mathcal{P}(\{+,-\}),\qquad
-\{0\}\leftrightarrow\varnothing,\quad
+0\leftrightarrow\varnothing,\quad
 \mathbb{R}\Pi_{+}\leftrightarrow\{+\},\quad
 \mathbb{R}\Pi_{-}\leftrightarrow\{-\},\quad
 \mathbb{D}\leftrightarrow\{+,-\}.
@@ -333,9 +412,15 @@ The lattice is finite, distributive and complemented. In $\mathbb{D}$ the left, 
 
 **The Jacobson radical, the nilradical and the prime radical of $\mathbb{D}$ all vanish.**
 
-**Proposition.** The nilradical is $\{0\}$, the Jacobson radical is $\{0\}$, and the prime radical is $\{0\}$.
+**Proposition.** The nilradical is $0$, the Jacobson radical is $0$, and the prime radical is $0$.
 
-**Proof.** The nilradical is the set of nilpotent elements. If $Q^{n}=0$, write $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$; then $Q^{n}=Q_{+}^{n}\Pi_{+}+Q_{-}^{n}\Pi_{-}=0$, so $Q_{+}^{n}=0$ and $Q_{-}^{n}=0$ in $\mathbb{R}$, whence $Q_{+}=Q_{-}=0$ and $Q=0$. Hence the nilradical is $\{0\}$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero. The prime radical of a commutative ring is the intersection of the prime ideals, which is the nilradical, hence zero.
+| Radical | Value |
+|---|---|
+| Jacobson radical | $0$ |
+| Nilradical | $0$ |
+| Prime radical | $0$ |
+
+**Proof.** The nilradical is the set of nilpotent elements. If $Q^{n}=0$, write $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$; then $Q^{n}=Q_{+}^{n}\Pi_{+}+Q_{-}^{n}\Pi_{-}=0$, so $Q_{+}^{n}=0$ and $Q_{-}^{n}=0$ in $\mathbb{R}$, whence $Q_{+}=Q_{-}=0$ and $Q=0$. Hence the nilradical is $0$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero. The prime radical of a commutative ring is the intersection of the prime ideals, which is the nilradical, hence zero.
 
 So $\mathbb{D}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is the opposite of the dual-number algebra $\mathbb{D}'=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{D}$ is much closer in behaviour to a product of fields than to a local ring.
 
@@ -365,24 +450,36 @@ is the eigenspace decomposition. The conjugation exchanges the two minimal ideal
 
 ## Summary
 
-An ideal of the commutative algebra $\mathbb{D}$ is a two-sided ideal, and there are exactly four: $\{0\}$, the two minimal ones $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{D}$. The two minimal ideals are the summands of the direct product $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$, the maximal ideals are the same two, and the lattice of ideals is the four-element Boolean lattice of subsets of $\{+,-\}$. The algebra is Artinian, Noetherian, semisimple and reduced, of module length two, with zero Jacobson radical, zero nilradical and zero prime radical; it is not simple.
+| Statement | Result |
+|---|---|
+| Algebra | $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=1$ |
+| Two-sided ideals | $0,\ \mathbb{R}\Pi_{+},\ \mathbb{R}\Pi_{-},\ \mathbb{D}$ |
+| Simple? | no |
+| Semisimple? | yes, $J(\mathbb{D})=0$ |
+| Length over itself | $2$ |
+| Idempotents | $0,1,\Pi_{+},\Pi_{-}$ |
+| Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$ |
+| Grading | $\mathbb{D}=\mathbb{R}\cdot1\oplus\mathbb{R}\cdot j$ |
+| Jacobson radical | $0$ |
 
-With respect to an idempotent $e$, the Peirce decomposition splits $\mathbb{D}$ into the four blocks $e\mathbb{D}e$, $e\mathbb{D}f$, $f\mathbb{D}e$, $f\mathbb{D}f$, with the multiplication table $\mathbb{D}_{ij}\mathbb{D}_{kl}\subseteq\delta_{jk}\mathbb{D}_{il}$; for the standard idempotent $\Pi_{+}$ the two off-diagonal blocks vanish and the decomposition collapses to $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$. The idempotents $\Pi_{\pm}$ are central, orthogonal, complete and primitive, and they are the diagonal matrix units of the decomposition; the conjugation swaps them and exchanges the two ideals. The Peirce coordinates are the idempotent coordinates and, in the regular matrix model, the two eigenvalues.
+An ideal of the commutative algebra $\mathbb{D}$ is a two-sided ideal, and there are exactly four: $0$, the two minimal ones $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{D}$. The two minimal ideals are the summands of the direct product $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$, the maximal ideals are the same two, and the lattice of ideals is the four-element Boolean lattice of subsets of $\{+,-\}$. The algebra is Artinian, Noetherian, semisimple and reduced, of module length two, with zero Jacobson radical, zero nilradical and zero prime radical; it is not simple.
+
+With respect to an idempotent $\Pi$ and its complement $\Pi'=1-\Pi$, the Peirce decomposition splits $\mathbb{D}$ into the four spaces $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$, with the multiplication table $\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$; for the standard pair $\Pi_+,\Pi_-$ the two off-diagonal spaces vanish and the decomposition collapses to $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$. The idempotents $\Pi_{\pm}$ are central, orthogonal, complete and primitive, and they are the diagonal matrix units of the decomposition; the conjugation swaps them and exchanges the two ideals. The Peirce coordinates are the idempotent coordinates and, in the regular matrix model, the two eigenvalues.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split complex algebra |
-| $Q=q+jq'$ | General split complex number |
+| $\mathbb{D}$ | Split-complex algebra |
+| $Q=q+jq'$ | General split-complex number |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Standard idempotents |
 | $I$, $(Q)=Q\mathbb{D}$ | Ideal, principal ideal |
 | $\mathrm{Id}(\mathbb{D})$ | Lattice of ideals, Boolean of four elements |
 | $\mathbb{R}\Pi_{+},\mathbb{R}\Pi_{-}$ | The two minimal and maximal proper ideals |
-| $\mathbb{D}_{11}=\Pi_{+}\mathbb{D}\Pi_{+}$ | Peirce component, $=\mathbb{R}\Pi_{+}$ |
-| $\mathbb{D}_{22}=\Pi_{-}\mathbb{D}\Pi_{-}$ | Peirce component, $=\mathbb{R}\Pi_{-}$ |
-| $\mathbb{D}_{12},\mathbb{D}_{21}$ | Off-diagonal Peirce components, both $0$ |
-| $f=1-e$ | Complement of an idempotent |
+| $\mathbb{D}_{++}=\Pi_{+}\mathbb{D}\Pi_{+}$ | Peirce space, $=\mathbb{R}\Pi_{+}$ |
+| $\mathbb{D}_{--}=\Pi_{-}\mathbb{D}\Pi_{-}$ | Peirce space, $=\mathbb{R}\Pi_{-}$ |
+| $\mathbb{D}_{+-},\mathbb{D}_{-+}$ | Off-diagonal Peirce spaces, both $0$ |
+| $\Pi'=1-\Pi$ | Complement of an idempotent |
 | $\operatorname{rad}(\mathbb{D})$ | Jacobson radical, $=0$; nilradical and prime radical vanish |
 | $\mathbb{D}^{\bar\cdot}=\mathbb{R}_{\mathbb{D}}$ | Fixed algebra of the conjugation |
 | $\mathbb{D}^{-\bar\cdot}=j\mathbb{R}_{\mathbb{D}}$ | Anti-fixed subspace |

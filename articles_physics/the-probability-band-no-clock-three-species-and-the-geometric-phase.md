@@ -504,3 +504,6 @@ The three grades of coefficient reality are the complex, central and real specie
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the half-solid-angle rule.
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the phase fibre.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the monoid of acting maps and the cone as the wall of reversibility.
+- [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the eigenpair as a Doppler pair and what the spectrum leaves undetermined.
+- [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the isospectral family and the mass as a modulus.
+- [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the compact and non-compact factors and the complex angle.

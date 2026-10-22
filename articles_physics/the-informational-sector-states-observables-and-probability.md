@@ -212,6 +212,30 @@ Every pure state is a zero divisor, because $N(\tilde{Ϛ})=\tfrac14(1-\lvert\vec
 
 **The boundary.** The ball is the state space of the frame, not a relativistic state space. A boost carries a state off the state slice, so the single-qubit ball is not invariant under the full Lorentz group. Making the state space itself relativistic is open work, not a result of this article.
 
+### The Operator Defines the State
+
+A state is not only an element given in advance; any nonzero operator produces one. The map is
+
+$$
+\tilde{Ϛ}_{\tilde Q}=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\qquad
+\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})>0 ,
+$$
+
+and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde H$ are the singular values of $\tilde Q$.
+
+Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for unitary $\tilde W$, so the right unitary is a gauge fibre. It is **left-covariant**, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left unitary is a change of frame. And it is **stratified** by the rank of the operator:
+
+| operator | singular values | image |
+| --- | --- | --- |
+| unitary up to scale | equal | maximally mixed |
+| invertible, not unitary up to scale | distinct | mixed |
+| rank one, a zero divisor | one vanishing | pure |
+
+The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.
+
+**The boundary.** The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*.
+
 ### The Spectral Decomposition Is the Readout
 
 Every Hermitian element is a real combination of two orthogonal idempotents,
@@ -463,3 +487,4 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the derivation of the probability formula and its comparison with the postulate.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the geometry of the state space.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the full correspondence with quantum information.
+- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the operator-to-state map and its purity stratigraphy.

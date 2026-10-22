@@ -8,14 +8,14 @@ $$
 \breve Q=\exp\breve Q_{\log},
 $$
 
-with $\breve Q_{\log}$ the **exponent**, a logarithm of $\breve Q$. The element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, and its two **eigenvalues** are $\lambda_1=Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_2=Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ (*Eigenvalue Decomposition of a Reduced Biquaternion*).
+with $\breve Q_{\log}$ the **exponent**, a logarithm of $\breve Q$. The element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, and its two **eigenvalues** are $\lambda_+=Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_-=Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ (*Eigenvalue Decomposition of a Reduced Biquaternion*).
 
 The structural input is that article: the element is
 $$
-\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-,\qquad
+\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-,\qquad
 \Pi_\pm=\tfrac12(1\pm j),
 $$
-with $\Pi_\pm$ the fixed central idempotents, and the algebra is $\mathbb{C}\times\mathbb{C}$ in the eigenvalue coordinates. The exponential and the logarithm are those of *Reduced Biquaternion Elementary Functions*; the present article reads the eigenvalue decomposition in the real and imaginary parts of $\log\lambda_1$ and $\log\lambda_2$, and it does not re-derive either the spectral calculus or the exponential.
+with $\Pi_\pm$ the fixed central idempotents, and the algebra is $\mathbb{C}\times\mathbb{C}$ in the eigenvalue coordinates. The exponential and the logarithm are those of *Reduced Biquaternion Elementary Functions*; the present article reads the eigenvalue decomposition in the real and imaginary parts of $\log\lambda_+$ and $\log\lambda_-$, and it does not re-derive either the spectral calculus or the exponential.
 
 The exponent is an element of the algebra,
 
@@ -34,7 +34,7 @@ $$
 
 By the spectral calculus, the exponent is
 $$
-\breve Q_{\log}=\log(\lambda_1)\Pi_++\log(\lambda_2)\Pi_-,
+\breve Q_{\log}=\log(\lambda_+)\Pi_++\log(\lambda_-)\Pi_-,
 $$
 with an independent complex logarithm in each eigenvalue; the four real components are the real and imaginary parts of these two logarithms.
 
@@ -53,7 +53,7 @@ The modulus is $\breve r=\exp(\breve r_{\log})=\rho(\cosh\phi+j\sinh\phi)$, an e
 The exponential is the spectral function
 
 $$
-\exp\breve Q_{\log}=\exp(\log\lambda_1)\Pi_++\exp(\log\lambda_2)\Pi_-,
+\exp\breve Q_{\log}=\exp(\log\lambda_+)\Pi_++\exp(\log\lambda_-)\Pi_-,
 $$
 
 and in the basis it is the closed form of *Reduced Biquaternion Elementary Functions*, §*The Exponential*:
@@ -67,13 +67,29 @@ It is a homomorphism from the additive group of the algebra onto the unit group.
 
 The exponential form is the transcendental member of the three polar decompositions. The modulus–unit form is global and algebraic, the rational-chart form is rational and local, and the exponential form is global and transcendental, with the group law equal to addition. The comparison is made in §*The Three Polar Decompositions*.
 
-**Conventions.** The algebra is $\mathbb{B}_{\mathrm{r}}$, with basis $1,i,j,ij$, $i^{2}=-1$, $j^{2}=+1$ and $ij=ji$. The element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the coefficient $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ is the **scalar part** and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ the **split part**. The **eigenvalues** are $\lambda_1=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_2=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$; the symbols $Q_+,Q_-$ read the same two numbers as idempotent coordinates, and $\Pi_\pm=\tfrac12(1\pm j)$ are the central idempotents of the eigenvalue decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$ of *Eigenvalue Decomposition of a Reduced Biquaternion*.
+**The result.** The decomposition reads as follows.
 
-The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_1\lambda_2$, and the squared Euclidean norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$. The **modulus** is $\breve r=\sqrt{\breve Q\bar{\breve Q}}=\rho(\cosh\phi+j\sinh\phi)$ in $P$, with $\rho>0$, $\phi\in\mathbb{R}$ and eigenvalue scales $\rho_+=|\lambda_1|=\rho \exp(\phi)$ and $\rho_-=|\lambda_2|=\rho \exp(-\phi)$. The **unit factor** is $u=\breve r^{-1}\breve Q=\exp(i\alpha)\exp(ij\beta)$ in $T^2$. The **exponent** is $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ with $Q_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=\phi+i\beta$; its scale part is $\breve r_{\log}=\ln\rho+j\phi$ and its angle part is $i\Theta=i\alpha+ij\beta$. The **group of units** is $\mathbb{B}_{\mathrm{r}}^{\times}$.
+| Item | Value |
+|---|---|
+| Algebra | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, with $i^{2}=-1$, $j^{2}=+1$ and $ij=ji$ |
+| Domain | $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_+\lambda_-\neq0\}$ |
+| Eigenvalues | $\lambda_\pm=Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ |
+| Decomposition | $\breve Q=\breve r\,u=\exp(\breve Q_{\log})$ |
+| Parameters | $\rho>0$, $\phi\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^{2}/\Lambda$, with $\Lambda=\langle2\pi(1,0),\pi(1,1)\rangle$ |
+| Unit factor | $u=\exp(i\alpha)\exp(ij\beta)\in T^{2}$ |
+| Exponent | $\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta$ |
+| Existence | every unit has a decomposition |
+| Uniqueness | unique in the principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ |
+| Kernel | $\Lambda=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
+| Group | $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{R}^{2}\times T^{2}$ |
+
+**Conventions.** The algebra is $\mathbb{B}_{\mathrm{r}}$, with basis $1,i,j,ij$, $i^{2}=-1$, $j^{2}=+1$ and $ij=ji$. The element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the coefficient $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ is the **scalar part** and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ the **split part**. The **eigenvalues** are $\lambda_+=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_-=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$; the symbols $Q_+,Q_-$ read the same two numbers as idempotent coordinates, and $\Pi_\pm=\tfrac12(1\pm j)$ are the central idempotents of the eigenvalue decomposition $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ of *Eigenvalue Decomposition of a Reduced Biquaternion*.
+
+The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$, and the squared Euclidean norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$. The **modulus** is $\breve r=\sqrt{\breve Q\bar{\breve Q}}=\rho(\cosh\phi+j\sinh\phi)$ in $P$, with $\rho>0$, $\phi\in\mathbb{R}$ and eigenvalue scales $\rho_+=|\lambda_+|=\rho \exp(\phi)$ and $\rho_-=|\lambda_-|=\rho \exp(-\phi)$. The **unit factor** is $u=\breve r^{-1}\breve Q=\exp(i\alpha)\exp(ij\beta)$ in $T^2$. The **exponent** is $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ with $Q_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=\phi+i\beta$; its scale part is $\breve r_{\log}=\ln\rho+j\phi$ and its angle part is $i\Theta=i\alpha+ij\beta$. The **group of units** is $\mathbb{B}_{\mathrm{r}}^{\times}$.
 
 **Boundaries.** The eigenvalue decomposition, the idempotents and the spectral calculus are *Eigenvalue Decomposition of a Reduced Biquaternion*; the exponential, the logarithm, the kernel and the principal domain are *Reduced Biquaternion Elementary Functions*. Both articles are used here and their results are not restated. The modulus, the torus and the uniqueness of the modulus–unit pair are treated in *Modulus–Unit Polar Decomposition of Reduced Biquaternions*; the rational coordinate on the torus is treated in *Rational-Chart Polar Decomposition of Reduced Biquaternions*; the group of units is treated in *The Group of Units of the Algebra of the Reduced Biquaternions*; the covering and the Lie group structure are treated in *Reduced Biquaternion Lie Group and Exponential Structure*. The complex member is *Exponential Polar Decomposition of Complex Numbers*, the split-complex member is *Exponential Polar Decomposition of Split-Complex Numbers*, and the noncommutative counterpart is *Exponential Polar Decomposition of Biquaternions*.
 
-The plan is as follows. The spectral data and the two analytic facts are recalled (§*The Spectral Setting*); the definition and the exponent are given (§*The Decomposition*); the two factors are read from them (§*The Two Factors*); the single exponential is recorded (§*One Exponential*); existence and uniqueness are proved in the polar coordinates (§*Existence and Uniqueness*); the logarithm, its principal branch and its fibre are read in polar coordinates (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three decompositions are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); and examples are computed (§*Worked Examples*).
+The plan is as follows. The spectral data and the two analytic facts are recalled (§*The Spectral Setting*); the definition, the exponent and its components, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved in the polar coordinates (§*Existence and Uniqueness*); the logarithm, its principal branch and its fibre are read in polar coordinates (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three decompositions are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); and examples are computed (§*Worked Examples*).
 
 Every numerical value displayed below was recomputed in double precision.
 
@@ -86,24 +102,24 @@ The decomposition rests on two results of the category, and neither is proved ag
 | quantity | value |
 |---|---|
 | element | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, $j^{2}=+1$ |
-| eigenvalues | $\lambda_1=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $\lambda_2=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$ |
+| eigenvalues | $\lambda_+=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $\lambda_-=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$ |
 | idempotents | $\Pi_\pm=\tfrac12(1\pm j)$, $\Pi_\pm^{2}=\Pi_\pm$, $\Pi_+\Pi_-=0$ |
-| decomposition | $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$ |
-| reduced norm | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_1\lambda_2$ |
-| units | $\lambda_1\lambda_2\neq0$; the group is $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ |
-| zero divisors | $\lambda_1=0$ or $\lambda_2=0$ |
+| decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
+| reduced norm | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$ |
+| units | $\lambda_+\lambda_-\neq0$; the group is $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ |
+| zero divisors | $\lambda_+=0$ or $\lambda_-=0$ |
 
 In the eigenvalue coordinates the algebra is $\mathbb{C}\times\mathbb{C}$ with componentwise multiplication. These are the statements of *Eigenvalue Decomposition of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial* and §*The Eigenvalue Decomposition*.
 
 ### The Regimes
 
-The algebra has three spectral regimes, separated by the discriminant $(\lambda_1-\lambda_2)^2=4Q_{\blacktriangledown}^2$ of the characteristic polynomial. The table gives what each regime changes for the functions below; the spectral data are those of *Eigenvalue Decomposition of a Reduced Biquaternion*, §*Degenerate Regimes*.
+The algebra has three spectral regimes, separated by the discriminant $(\lambda_+-\lambda_-)^2=4Q_{\blacktriangledown}^2$ of the characteristic polynomial. The table gives what each regime changes for the functions below; the spectral data are those of *Eigenvalue Decomposition of a Reduced Biquaternion*, §*Degenerate Regimes*.
 
 | Regime | Condition | Spectral type | Logarithm |
 |---|---|---|---|
-| Distinct | $\lambda_1\neq\lambda_2$, $\lambda_1\lambda_2\neq0$ | two distinct complex eigenvalues | a complex logarithm in each eigenvalue |
-| Scalar | $\lambda_1=\lambda_2\neq0$ | the central element $\lambda_1$ ($Q_{\blacktriangledown}=0$) | a complex logarithm in each eigenvalue, equal |
-| Zero divisor | $\lambda_1=0$ or $\lambda_2=0$ | rank one, not a unit | none |
+| Distinct | $\lambda_+\neq\lambda_-$, $\lambda_+\lambda_-\neq0$ | two distinct complex eigenvalues | a complex logarithm in each eigenvalue |
+| Scalar | $\lambda_+=\lambda_-\neq0$ | the central element $\lambda_+$ ($Q_{\blacktriangledown}=0$) | a complex logarithm in each eigenvalue, equal |
+| Zero divisor | $\lambda_+=0$ or $\lambda_-=0$ | rank one, not a unit | none |
 
 ### The Exponential and the Logarithm
 
@@ -112,8 +128,8 @@ The algebra has three spectral regimes, separated by the discriminant $(\lambda_
 | Closed form | $\exp(Q_{\log\blacktriangle})(\cosh Q_{\log\blacktriangledown}+j\sinh Q_{\log\blacktriangledown})$, the reduced Euler formula |
 | Image | the unit group $\mathbb{B}_{\mathrm{r}}^{\times}$ |
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
-| Logarithm | exists for every unit, unique modulo the kernel; $\log\lambda_1\,\Pi_++\log\lambda_2\,\Pi_-$ |
-| Principal domain | $\lvert\operatorname{Im}\log\lambda_1\rvert\le\pi$, $\lvert\operatorname{Im}\log\lambda_2\rvert\le\pi$, the diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ |
+| Logarithm | exists for every unit, unique modulo the kernel; $\log\lambda_+\,\Pi_++\log\lambda_-\,\Pi_-$ |
+| Principal domain | $\lvert\operatorname{Im}\log\lambda_+\rvert\le\pi$, $\lvert\operatorname{Im}\log\lambda_-\rvert\le\pi$, the diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ |
 | Fibre | $\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^{2}$ |
 
 These are the statements of *Reduced Biquaternion Elementary Functions*, §*The Exponential*, §*The Logarithm*, §*The Two Compositions* and §*The Principal Logarithm*. The present article reads them in the real and imaginary parts of the two logarithms and organises the result as a polar decomposition.
@@ -130,7 +146,7 @@ $$
 
 in which $\breve Q_{\log}$ is the **exponent**. The exponent is a logarithm of $\breve Q$ in the sense of *Reduced Biquaternion Elementary Functions*, §*The Logarithm*. It is an element of the algebra, not a pair of numbers. In eigenvalue coordinates it is
 $$
-\breve Q_{\log}=\log(\lambda_1)\Pi_++\log(\lambda_2)\Pi_-,
+\breve Q_{\log}=\log(\lambda_+)\Pi_++\log(\lambda_-)\Pi_-,
 $$
 so the exponential polar decomposition is the pair of complex polar decompositions of the two eigenvalues. The exponent is written
 
@@ -144,20 +160,20 @@ $$
 
 The coefficient rule of *Conventions in Mathematics* puts the prime on the imaginary coordinate. The coefficient $Q_{\log\blacktriangle}$ is the **scalar part** of the exponent and $Q_{\log\blacktriangledown}$ its **split part**. The double subscript is a label, not an operation: $q_{\log\blacktriangle}$ is the real part of $Q_{\log\blacktriangle}$, not the logarithm of $Q_{\blacktriangle}$.
 
-### The Exponent and Its Four Components
+### The Exponent and Its Components
 
 The four real components of the exponent are the following.
 
-| component | part | value | role |
-|---|---|---|---|
-| $q_{\log\blacktriangle}$ | scalar | $\ln\rho$ | logarithmic scale |
-| $q'_{\log\blacktriangle}$ | scalar | $\alpha$ | scalar phase |
-| $q_{\log\blacktriangledown}$ | split | $\phi$ | boost |
-| $q'_{\log\blacktriangledown}$ | split | $\beta$ | split phase |
+| Component | Exponent | Range | Factor | Character |
+|---|---|---|---|---|
+| Scale | $q_{\log\blacktriangle}=\ln\rho$ | $\mathbb{R}$ | $\rho$ | real central, non-compact, aperiodic |
+| Scalar phase | $q'_{\log\blacktriangle}=\alpha$ | $\mathbb{R}/2\pi\mathbb{Z}$ | $\exp(i\alpha)$ | central, compact, period $2\pi$ |
+| Boost | $q_{\log\blacktriangledown}=\phi$ | $\mathbb{R}$ | $\cosh\phi+j\sinh\phi$ | split central, non-compact, aperiodic |
+| Split phase | $q'_{\log\blacktriangledown}=\beta$ | $\mathbb{R}/2\pi\mathbb{Z}$ | $\exp(ij\beta)$ | central, compact, period $2\pi$; joint lattice $\Lambda$ |
 
 The two complex coefficients collect them in pairs.
 
-| coefficient | formula | real part | imaginary part |
+| Coefficient | Formula | Real part | Imaginary part |
 |---|---|---|---|
 | $Q_{\log\blacktriangle}$ | $\ln\rho+i\alpha$ | $q_{\log\blacktriangle}=\ln\rho$ | $q'_{\log\blacktriangle}=\alpha$ |
 | $Q_{\log\blacktriangledown}$ | $\phi+i\beta$ | $q_{\log\blacktriangledown}=\phi$ | $q'_{\log\blacktriangledown}=\beta$ |
@@ -193,14 +209,14 @@ $$
 The eigenvalues of the exponent are
 
 $$
-Q_{\log+}=Q_{\log\blacktriangle}+Q_{\log\blacktriangledown}=\ln\rho+\phi+i(\alpha+\beta)=\log(\lambda_1),
+Q_{\log+}=Q_{\log\blacktriangle}+Q_{\log\blacktriangledown}=\ln\rho+\phi+i(\alpha+\beta)=\log(\lambda_+),
 \qquad
-Q_{\log-}=Q_{\log\blacktriangle}-Q_{\log\blacktriangledown}=\ln\rho-\phi+i(\alpha-\beta)=\log(\lambda_2),
+Q_{\log-}=Q_{\log\blacktriangle}-Q_{\log\blacktriangledown}=\ln\rho-\phi+i(\alpha-\beta)=\log(\lambda_-),
 $$
 
 and they are the logarithms of the two eigenvalues of the element.
 
-### The Two Factors
+### The Factors
 
 The modulus is the positive square root of $\breve Q\bar{\breve Q}$ in the cone $P$, and it is exponentiated by the split-complex exponential:
 
@@ -222,21 +238,21 @@ In eigenvalue coordinates the two factors are
 
 $$
 \breve r=\rho_+\Pi_++\rho_-\Pi_-,\qquad
-u=\exp(i\theta_1)\Pi_++\exp(i\theta_2)\Pi_-,
+u=\exp(i\theta_+)\Pi_++\exp(i\theta_-)\Pi_-,
 $$
 
-with $\rho_{1,2}=\lvert\lambda_{1,2}\rvert$ and $\theta_{1,2}=\arg\lambda_{1,2}$, so that
+with $\rho_\pm=\lvert\lambda_\pm\rvert$ and $\theta_\pm=\arg\lambda_\pm$, so that
 $$
-\lambda_1=\rho_+\exp(i\theta_1),\qquad \lambda_2=\rho_-\exp(i\theta_2).
+\lambda_+=\rho_+\exp(i\theta_+),\qquad \lambda_-=\rho_-\exp(i\theta_-).
 $$
 In the basis the unit factor is
 
 $$
-u=\bigl(\cos\theta_1+i\sin\theta_1\bigr)\Pi_++\bigl(\cos\theta_2+i\sin\theta_2\bigr)\Pi_-
+u=\bigl(\cos\theta_++i\sin\theta_+\bigr)\Pi_++\bigl(\cos\theta_-+i\sin\theta_-\bigr)\Pi_-
 =\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr),
 $$
 
-with $\theta_1=\alpha+\beta$ and $\theta_2=\alpha-\beta$.
+with $\theta_+=\alpha+\beta$ and $\theta_-=\alpha-\beta$.
 
 The three Euler formulas of *Reduced Biquaternion Elementary Functions*, §*The Exponential*, are those of the scalar circle $\exp(i\alpha)$, the $ij$-circle $\exp(ij\beta)$ and the hyperbolic boost $\exp(j\phi)$. The first two generate the unit torus; the third, together with the scalar positive ray $\exp(t)$, generates the cone $P$.
 
@@ -249,7 +265,7 @@ $$
 and the unit factor has eigenvalues
 
 $$
-\exp(i\theta_1)=\exp(i(\alpha+\beta)),\qquad \exp(i\theta_2)=\exp(i(\alpha-\beta)).
+\exp(i\theta_+)=\exp(i(\alpha+\beta)),\qquad \exp(i\theta_-)=\exp(i(\alpha-\beta)).
 $$
 
 *Proof.* The eigenvalues of $\breve r=\rho(\cosh\phi+j\sinh\phi)$ are $\rho(\cosh\phi\pm\sinh\phi)=\rho \exp(\pm\phi)$, and the eigenvalues of $\exp(i\alpha)\exp(ij\beta)$ are $\exp(i\alpha)\exp(\pm i\beta)$.
@@ -258,22 +274,22 @@ The four parameters are therefore the two scales and the two phases of the two e
 
 $$
 \rho_{+}=\rho \exp(\phi),\quad \rho_{-}=\rho \exp(-\phi),\qquad
-\theta_{1}=\alpha+\beta,\quad \theta_{2}=\alpha-\beta.
+\theta_+=\alpha+\beta,\quad \theta_-=\alpha-\beta.
 $$
 
 The inverse change is
 
 $$
 \rho=\sqrt{\rho_{+}\rho_{-}},\qquad \phi=\tfrac12\ln\frac{\rho_{+}}{\rho_{-}},\qquad
-\alpha=\tfrac12(\theta_{1}+\theta_{2}),\qquad \beta=\tfrac12(\theta_{1}-\theta_{2}).
+\alpha=\tfrac12(\theta_++\theta_-),\qquad \beta=\tfrac12(\theta_+-\theta_-).
 $$
 
 The two factors, their ranges and their logarithms are recorded in one table.
 
-| factor | formula | range | logarithm | parameters |
+| Factor | Formula | Range | Exponent | Parameter |
 |---|---|---|---|---|
-| modulus | $\breve r=\rho(\cosh\phi+j\sinh\phi)$ | cone $P$ | $\breve r_{\log}=\ln\rho+j\phi$ | $\ln\rho\in\mathbb{R}$, $\phi\in\mathbb{R}$ |
-| unit factor | $u=\exp(i\alpha)\exp(ij\beta)$ | torus $T^{2}$ | $i\Theta=i\alpha+ij\beta$ | $\alpha,\beta$ modulo $\Lambda$ |
+| Modulus | $\breve r=\rho(\cosh\phi+j\sinh\phi)$ | cone $P$ | $\breve r_{\log}=\ln\rho+j\phi$ | $\ln\rho\in\mathbb{R}$, $\phi\in\mathbb{R}$ |
+| Unit factor | $u=\exp(i\alpha)\exp(ij\beta)$ | torus $T^{2}$ | $i\Theta=i\alpha+ij\beta$ | $\alpha,\beta$ modulo $\Lambda$ |
 
 The real dimensions are $2$ and $2$, and they add to the real dimension $4$ of the group of units. The modulus is non-compact, the torus is compact, and the product is the group of units.
 
@@ -317,15 +333,15 @@ $$
 D=\Bigl\{\,\ln\rho+j\phi+i\alpha+ij\beta:\rho>0,\ \phi\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\,\Bigr\}
 $$
 
-onto the unit group $\mathbb{B}_{\mathrm{r}}^{\times}$; the boundary of the diamond is taken half-open, so that each pair of arguments $(\theta_{1},\theta_{2})\in(-\pi,\pi]^{2}$ has exactly one representative. In eigenvalue coordinates the theorem is the pair of principal strips: the exponent is $\log\lambda_1\Pi_++\log\lambda_2\Pi_-$ with $\operatorname{Im}\log\lambda_i\in(-\pi,\pi]$, and $(\theta_1,\theta_2)$ are the two principal arguments.
+onto the unit group $\mathbb{B}_{\mathrm{r}}^{\times}$; the boundary of the diamond is taken half-open, so that each pair of arguments $(\theta_+,\theta_-)\in(-\pi,\pi]^{2}$ has exactly one representative. In eigenvalue coordinates the theorem is the pair of principal strips: the exponent is $\log\lambda_+\Pi_++\log\lambda_-\Pi_-$ with $\operatorname{Im}\log\lambda_\pm\in(-\pi,\pi]$, and $(\theta_+,\theta_-)$ are the two principal arguments.
 
-**Existence.** Let $\breve Q$ be a unit. By the modulus–unit theorem it has a unique decomposition $\breve Q=\breve r u$ with $\breve r\in P$ and $u\bar u=1$. Write $\breve r=\rho(\cosh\phi+j\sinh\phi)$ with $\rho=\sqrt{\rho_{+}\rho_{-}}>0$ and $\phi=\tfrac12\ln(\rho_{+}/\rho_{-})$; this writing is unique. The unit $u$ has eigenvalues $\exp(i\theta_1)$ and $\exp(i\theta_2)$ with $\theta_{1},\theta_{2}\in(-\pi,\pi]$; put $\alpha=(\theta_1+\theta_2)/2$ and $\beta=(\theta_1-\theta_2)/2$. Then $u=\exp(i\alpha)\exp(ij\beta)$ and
+**Existence.** Let $\breve Q$ be a unit. By the modulus–unit theorem it has a unique decomposition $\breve Q=\breve r u$ with $\breve r\in P$ and $u\bar u=1$. Write $\breve r=\rho(\cosh\phi+j\sinh\phi)$ with $\rho=\sqrt{\rho_{+}\rho_{-}}>0$ and $\phi=\tfrac12\ln(\rho_{+}/\rho_{-})$; this writing is unique. The unit $u$ has eigenvalues $\exp(i\theta_+)$ and $\exp(i\theta_-)$ with $\theta_+,\theta_-\in(-\pi,\pi]$; put $\alpha=(\theta_++\theta_-)/2$ and $\beta=(\theta_+-\theta_-)/2$. Then $u=\exp(i\alpha)\exp(ij\beta)$ and
 
 $$
 \breve Q=\exp(\ln\rho+j\phi+i\alpha+ij\beta),
 $$
 
-with $\lvert\alpha\rvert+\lvert\beta\rvert=\max(\lvert\theta_1\rvert,\lvert\theta_2\rvert)\le\pi$.
+with $\lvert\alpha\rvert+\lvert\beta\rvert=\max(\lvert\theta_+\rvert,\lvert\theta_-\rvert)\le\pi$.
 
 **Uniqueness.** Suppose $\exp\breve Q_{1\log}=\exp\breve Q_{2\log}$ with $\breve Q_{1\log},\breve Q_{2\log}\in D$. Then $\breve Q_{1\log}-\breve Q_{2\log}$ lies in the kernel of the exponential, computed in §*The Kernel and the Fibre* as
 
@@ -339,7 +355,7 @@ $$
 (\alpha,\beta)\longmapsto(\alpha+2\pi k+\pi l,\ \beta+\pi l),\qquad k,l\in\mathbb{Z},
 $$
 
-that is by the lattice $\Lambda=\langle2\pi(1,0),\pi(1,1)\rangle$, with $\rho$ and $\phi$ fixed. The diamond is a fundamental domain for $\Lambda$: the linear change $(\theta_1,\theta_2)\mapsto(\alpha,\beta)$ carries the fundamental square $(-\pi,\pi]^{2}$ of $2\pi\mathbb{Z}^{2}$ bijectively onto it. Two points of the diamond therefore differ by an element of the lattice only if they are equal. Hence $\breve Q_{1\log}=\breve Q_{2\log}$.
+that is by the lattice $\Lambda=\langle2\pi(1,0),\pi(1,1)\rangle$, with $\rho$ and $\phi$ fixed. The diamond is a fundamental domain for $\Lambda$: the linear change $(\theta_+,\theta_-)\mapsto(\alpha,\beta)$ carries the fundamental square $(-\pi,\pi]^{2}$ of $2\pi\mathbb{Z}^{2}$ bijectively onto it. Two points of the diamond therefore differ by an element of the lattice only if they are equal. Hence $\breve Q_{1\log}=\breve Q_{2\log}$.
 
 The theorem is the exact analogue of the principal strip of $\mathbb{C}$: there the exponential is a bijection from $\{\ln r+i\theta:r>0,\ -\pi<\theta\le\pi\}$ onto $\mathbb{C}^{\times}$, and the fundamental domain is a strip. Here the fundamental domain is the product of two strips in the two eigenvalues, which is the diamond in the two phases.
 
@@ -347,8 +363,8 @@ The parameters and their ranges are collected in one table.
 
 | Parameter | Range | Unique? |
 |---|---|---|
-| $\ln\rho$ | $\mathbb{R}$ | yes: $\tfrac12\ln\lvert\lambda_1\lambda_2\rvert$ |
-| $\phi$ | $\mathbb{R}$ | yes: $\tfrac12\ln\lvert\lambda_1/\lambda_2\rvert$ |
+| $\ln\rho$ | $\mathbb{R}$ | yes: $\tfrac12\ln\lvert\lambda_+\lambda_-\rvert$ |
+| $\phi$ | $\mathbb{R}$ | yes: $\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$ |
 | $(\alpha,\beta)$ | $\mathbb{R}^{2}/\Lambda$ | no: unique in the principal diamond |
 
 ## The Logarithm
@@ -358,14 +374,14 @@ The parameters and their ranges are collected in one table.
 A **logarithm** of a unit $\breve Q$ is an element $\breve Q_{\log}$ with $\exp\breve Q_{\log}=\breve Q$. In eigenvalue coordinates it is
 
 $$
-\breve Q_{\log}=\log(\lambda_1)\Pi_++\log(\lambda_2)\Pi_-,
+\breve Q_{\log}=\log(\lambda_+)\Pi_++\log(\lambda_-)\Pi_-,
 $$
 
 with an independent complex logarithm of each eigenvalue. In the basis it is the **global formula** of *Reduced Biquaternion Elementary Functions*, §*The Eigenvalue Formula*,
 
 $$
-\breve Q_{\log}=\frac{\log(\lambda_1)+\log(\lambda_2)}{2}
-+j\,\frac{\log(\lambda_1)-\log(\lambda_2)}{2},
+\breve Q_{\log}=\frac{\log(\lambda_+)+\log(\lambda_-)}{2}
++j\,\frac{\log(\lambda_+)-\log(\lambda_-)}{2},
 $$
 
 valid on the whole unit group for any choice of branch in each eigenvalue. A logarithm exists exactly when both eigenvalues are non-zero, that is exactly when $\breve Q$ is a unit. The general solution is
@@ -376,7 +392,7 @@ $$
 
 or, in the phases, the principal logarithm plus the lattice $\Lambda$.
 
-**Example.** Take $\breve Q=3+4i+j(1-i)$, so $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. Then $\lambda_1=Q_{+}=4+3i$ and $\lambda_2=Q_{-}=2+5i$, and the principal complex logarithms are
+**Example.** Take $\breve Q=3+4i+j(1-i)$, so $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. Then $\lambda_+=Q_{+}=4+3i$ and $\lambda_-=Q_{-}=2+5i$, and the principal complex logarithms are
 
 $$
 \operatorname{Log}(4+3i)=1.6094379+0.6435011\,i,\qquad
@@ -393,19 +409,19 @@ Exponentiating it back gives $3+4i+j(1-i)$ up to rounding. In the four parameter
 
 ### The Principal Logarithm
 
-The **principal logarithm** is the formula of §*The General Logarithm* with the principal complex logarithm in each eigenvalue, that is with the argument of each eigenvalue in $(-\pi,\pi]$. In the four components of §*The Exponent and Its Four Components* it is
+The **principal logarithm** is the formula of §*The General Logarithm* with the principal complex logarithm in each eigenvalue, that is with the argument of each eigenvalue in $(-\pi,\pi]$. In the four components of §*The Exponent and Its Components* it is
 
 $$
-q_{\log\blacktriangle}=\tfrac12\ln\lvert\lambda_1\lambda_2\rvert,\quad
-q'_{\log\blacktriangle}=\tfrac12\bigl(\operatorname{Arg}\lambda_1+\operatorname{Arg}\lambda_2\bigr),\quad
-q_{\log\blacktriangledown}=\tfrac12\ln\lvert\lambda_1/\lambda_2\rvert,\quad
-q'_{\log\blacktriangledown}=\tfrac12\bigl(\operatorname{Arg}\lambda_1-\operatorname{Arg}\lambda_2\bigr),
+q_{\log\blacktriangle}=\tfrac12\ln\lvert\lambda_+\lambda_-\rvert,\quad
+q'_{\log\blacktriangle}=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),\quad
+q_{\log\blacktriangledown}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert,\quad
+q'_{\log\blacktriangledown}=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
 $$
 
 with $\operatorname{Arg}$ the principal argument in $(-\pi,\pi]$. The phases satisfy
 
 $$
-\lvert\alpha\rvert+\lvert\beta\rvert=\max\bigl(\lvert\operatorname{Arg}(\lambda_1)\rvert,\lvert\operatorname{Arg}(\lambda_2)\rvert\bigr)\le\pi.
+\lvert\alpha\rvert+\lvert\beta\rvert=\max\bigl(\lvert\operatorname{Arg}(\lambda_+)\rvert,\lvert\operatorname{Arg}(\lambda_-)\rvert\bigr)\le\pi.
 $$
 
 The principal logarithm therefore lies in the principal diamond, and by the theorem of §*Existence and Uniqueness* it is the unique logarithm there. It is defined on the whole unit group.
@@ -413,12 +429,12 @@ The principal logarithm therefore lies in the principal diamond, and by the theo
 The principal logarithm is real-analytic on the complement of the two walls
 
 $$
-W_{+}=\{\,\lambda_1\in(-\infty,0)\,\},\qquad W_{-}=\{\,\lambda_2\in(-\infty,0)\,\},
+W_{+}=\{\,\lambda_+\in(-\infty,0)\,\},\qquad W_{-}=\{\,\lambda_-\in(-\infty,0)\,\},
 $$
 
 each of real dimension three, and it is discontinuous across them. A branch that continued analytically across a wall would have to continue by a period and would not be single-valued. The walls are the exact analogue of the negative real axis of $\mathbb{C}$; there is one wall for each eigenvalue.
 
-The two walls are not the zero divisors. The zero divisors are the two real two-planes $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, on which $\lambda_2=0$ or $\lambda_1=0$; they lie in the closures of the walls. The walls are larger: a unit with $\lambda_1=-1$ and $\lambda_2=-2$ lies on both and has a perfectly good logarithm,
+The two walls are not the zero divisors. The zero divisors are the two real two-planes $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, on which $\lambda_-=0$ or $\lambda_+=0$; they lie in the closures of the walls. The walls are larger: a unit with $\lambda_+=-1$ and $\lambda_-=-2$ lies on both and has a perfectly good logarithm,
 
 $$
 \operatorname{Log}\breve Q=\frac{\ln2}{2}+i\pi-\frac{\ln2}{2}j,
@@ -468,11 +484,11 @@ $$
 In the four parameters the law is
 
 $$
-\rho=\rho_1\rho_2,\qquad \phi=\phi_1+\phi_2,\qquad
+\rho=\rho_+\rho_-,\qquad \phi=\phi_1+\phi_2,\qquad
 (\alpha,\beta)=(\alpha_1+\alpha_2,\ \beta_1+\beta_2)\ \text{modulo}\ \Lambda.
 $$
 
-The scales multiply and add in the logarithm, the boost adds, and the phases add on the torus. In eigenvalue coordinates the law is the pair of complex laws: $\lambda_i(\breve Q_1\breve Q_2)=\lambda_i(\breve Q_1)\lambda_i(\breve Q_2)$ for $i=1,2$, and $\log\lambda_i$ adds. The group of units is therefore
+The scales multiply and add in the logarithm, the boost adds, and the phases add on the torus. In eigenvalue coordinates the law is the pair of complex laws: $\lambda_\pm(\breve Q_1\breve Q_2)=\lambda_\pm(\breve Q_1)\lambda_\pm(\breve Q_2)$, and $\log\lambda_\pm$ adds. The group of units is therefore
 
 $$
 \mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{R}^{2}\times T^{2},
@@ -508,14 +524,14 @@ The change of basis $(z,w)\mapsto(z+w,z-w)$ diagonalises it:
 
 $$
 M_{\breve Q_{\log}}\longmapsto\begin{pmatrix}Q_{\log\blacktriangle}+Q_{\log\blacktriangledown}&0\\0&Q_{\log\blacktriangle}-Q_{\log\blacktriangledown}\end{pmatrix}
-=\begin{pmatrix}\log\lambda_1&0\\0&\log\lambda_2\end{pmatrix}.
+=\begin{pmatrix}\log\lambda_+&0\\0&\log\lambda_-\end{pmatrix}.
 $$
 
 The exponential of the matrix is therefore
 
 $$
 \exp M_{\breve Q_{\log}}=\begin{pmatrix}\exp(Q_{\log\blacktriangle}+Q_{\log\blacktriangledown})&0\\0&\exp(Q_{\log\blacktriangle}-Q_{\log\blacktriangledown})\end{pmatrix}
-=\begin{pmatrix}\lambda_1&0\\0&\lambda_2\end{pmatrix},
+=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 $$
 
 which is $M_{\breve Q}$ in the same basis. In the original basis,
@@ -526,7 +542,7 @@ M_{\breve Q}=\exp M_{\breve Q_{\log}}
 =\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}.
 $$
 
-In the real basis $\{1,i,j,ij\}$ the same identity is the exponential of a $4\times4$ matrix, and its eigenvalues are $\lambda_1,\bar\lambda_1,\lambda_2,\bar\lambda_2$, the two eigenvalues with their conjugates.
+In the real basis $\{1,i,j,ij\}$ the same identity is the exponential of a $4\times4$ matrix, and its eigenvalues are $\lambda_+,\bar\lambda_+,\lambda_-,\bar\lambda_-$, the two eigenvalues with their conjugates.
 
 **Proposition (the derivative).** The derivative of the exponential at $\breve Q_{\log}$ is left multiplication by $\exp\breve Q_{\log}$:
 
@@ -538,7 +554,7 @@ Its determinant is
 
 $$
 \det d\exp_{\breve Q_{\log}}=\lvert Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}\rvert^{2}
-=\lvert\lambda_1\lambda_2\rvert^{2}=\rho_{+}^{2}\rho_{-}^{2}=\rho^{4},
+=\lvert\lambda_+\lambda_-\rvert^{2}=\rho_{+}^{2}\rho_{-}^{2}=\rho^{4},
 $$
 
 and its singular values are $\rho_{+},\rho_{+},\rho_{-},\rho_{-}$.
@@ -549,7 +565,7 @@ The exponential is conformal in each eigenvalue coordinate, and conformal on the
 
 ### The Matrix Logarithm and the Derivative
 
-On the principal domain the matrix $M_{\breve Q_{\log}}$ is a logarithm of $M_{\breve Q}$ obtained by applying the principal scalar logarithm in each eigenvalue: its eigenvalues $\operatorname{Log}(\lambda_i)$ have imaginary parts in $(-\pi,\pi]$, so they are the principal logarithms of the eigenvalues of $M_{\breve Q}$, and the two matrices are simultaneously diagonalised by the same change of basis.
+On the principal domain the matrix $M_{\breve Q_{\log}}$ is a logarithm of $M_{\breve Q}$ obtained by applying the principal scalar logarithm in each eigenvalue: its eigenvalues $\operatorname{Log}(\lambda_\pm)$ have imaginary parts in $(-\pi,\pi]$, so they are the principal logarithms of the eigenvalues of $M_{\breve Q}$, and the two matrices are simultaneously diagonalised by the same change of basis.
 
 The logarithm is differentiable on the complement of the walls, and its derivative is left multiplication by $\breve Q^{-1}$:
 
@@ -560,8 +576,8 @@ $$
 In the eigenvalue coordinates,
 
 $$
-\bigl(d\operatorname{Log}_{\breve Q}\breve H\bigr)_{+}=\frac{H_{+}}{\lambda_1},\qquad
-\bigl(d\operatorname{Log}_{\breve Q}\breve H\bigr)_{-}=\frac{H_{-}}{\lambda_2}.
+\bigl(d\operatorname{Log}_{\breve Q}\breve H\bigr)_{+}=\frac{H_{+}}{\lambda_+},\qquad
+\bigl(d\operatorname{Log}_{\breve Q}\breve H\bigr)_{-}=\frac{H_{-}}{\lambda_-}.
 $$
 
 *Proof.* The exponential is a local biholomorphism with derivative left multiplication by $\exp\breve Q_{\log}=\breve Q$; the inverse function theorem gives the derivative of the inverse as left multiplication by $\breve Q^{-1}$.
@@ -575,7 +591,7 @@ The formula is the exact analogue of $\operatorname{Log}'Q=1/Q$ in $\mathbb{C}$,
 | decomposition | formula | parameters | domain | uniqueness | functions | group reading |
 |---|---|---|---|---|---|---|
 | modulus–unit | $\breve Q=\breve r u$ | $\breve r\in P$, $u\in T^{2}$ | all units | unique | square roots | $P\times T^{2}$ |
-| rational-chart | $\breve Q=\breve r\,u(s_{1},s_{2})$ | $\breve r\in P$, $(s_{1},s_{2})\in\mathbb{R}^{2}$ | units with $\lambda_1,\lambda_2\notin(-\infty,0]$ | unique on the chart | rational | four charts on $T^{2}$ |
+| rational-chart | $\breve Q=\breve r\,u(s_{1},s_{2})$ | $\breve r\in P$, $(s_{1},s_{2})\in\mathbb{R}^{2}$ | units with $\lambda_+,\lambda_-\notin(-\infty,0]$ | unique on the chart | rational | four charts on $T^{2}$ |
 | exponential | $\breve Q=\exp\breve Q_{\log}$ | $\breve Q_{\log}$ modulo $\ker\exp$ | all units | unique in the principal domain | exponential and logarithm | $\mathbb{B}_{\mathrm{r}}/\ker\exp$ |
 
 ### The Modulus–Unit Form
@@ -687,14 +703,14 @@ $$
 dV=d(\operatorname{Re}Q_{\blacktriangle})\,d(\operatorname{Im}Q_{\blacktriangle})\,d(\operatorname{Re}Q_{\blacktriangledown})\,d(\operatorname{Im}Q_{\blacktriangledown}).
 $$
 
-The linear change to the eigenvalues $(\lambda_1,\lambda_2)$ has real determinant $4$, so
+The linear change to the eigenvalues $(\lambda_+,\lambda_-)$ has real determinant $4$, so
 
 $$
-dV=\frac14\,d(\operatorname{Re}\lambda_1)\,d(\operatorname{Im}\lambda_1)\,
-d(\operatorname{Re}\lambda_2)\,d(\operatorname{Im}\lambda_2).
+dV=\frac14\,d(\operatorname{Re}\lambda_+)\,d(\operatorname{Im}\lambda_+)\,
+d(\operatorname{Re}\lambda_-)\,d(\operatorname{Im}\lambda_-).
 $$
 
-In the polar coordinates of the two eigenvalues, with $\rho_{1,2}=\rho \exp(\pm\phi)$ and $\theta_1=\alpha+\beta$, $\theta_2=\alpha-\beta$, the area elements are $\rho_i\,d\rho_i\,d\theta_i$, and the change $(\rho,\phi,\alpha,\beta)\mapsto(\rho_1,\theta_1,\rho_2,\theta_2)$ has determinant $4\rho$. Hence
+In the polar coordinates of the two eigenvalues, with $\rho_\pm=\rho \exp(\pm\phi)$ and $\theta_+=\alpha+\beta$, $\theta_-=\alpha-\beta$, the area elements are $\rho_\pm\,d\rho_\pm\,d\theta_\pm$, and the change $(\rho,\phi,\alpha,\beta)\mapsto(\rho_+,\theta_+,\rho_-,\theta_-)$ has determinant $4\rho$. Hence
 
 $$
 dV=\rho^{3}\,d\rho\,d\phi\,d\alpha\,d\beta
@@ -704,22 +720,22 @@ $$
 The Jacobian determinant of the exponential, from the Cartesian volume in the exponent to the Cartesian volume in the algebra, is $\rho^{4}$, the same in either Cartesian reading. For a box
 
 $$
-[\ln\rho_{1},\ln\rho_{2}]\times[\phi_{1},\phi_{2}]\times[\alpha_{1},\alpha_{2}]\times[\beta_{1},\beta_{2}]
+[\ln\rho_+,\ln\rho_-]\times[\phi_{1},\phi_{2}]\times[\alpha_{1},\alpha_{2}]\times[\beta_{1},\beta_{2}]
 $$
 
 contained in the principal domain, the image has volume
 
 $$
-\frac{\rho_{2}^{4}-\rho_{1}^{4}}{4}\,(\phi_{2}-\phi_{1})(\alpha_{2}-\alpha_{1})(\beta_{2}-\beta_{1}),
+\frac{\rho_-^{4}-\rho_+^{4}}{4}\,(\phi_{2}-\phi_{1})(\alpha_{2}-\alpha_{1})(\beta_{2}-\beta_{1}),
 $$
 
 the integral of $\rho^{3}$ over the box. Outside the principal domain the same integral counts the image with multiplicity. The formula is exact.
 
 ### The Harmonic Reading
 
-The functions $\ln\rho$ and $\phi$ are harmonic in the eigenvalue coordinates, being the real parts of the holomorphic functions $\tfrac12(\operatorname{Log}\lambda_1\pm\operatorname{Log}\lambda_2)$ away from the cuts, and the phases $\alpha,\beta$ are harmonic on the cut plane, that is on the universal cover on which they are single-valued. The complex coordinates $\operatorname{Log}(\lambda_1)$ and $\operatorname{Log}(\lambda_2)$ are the local holomorphic coordinates supplied by the principal logarithm, and the exponential is their inverse.
+The functions $\ln\rho$ and $\phi$ are harmonic in the eigenvalue coordinates, being the real parts of the holomorphic functions $\tfrac12(\operatorname{Log}\lambda_+\pm\operatorname{Log}\lambda_-)$ away from the cuts, and the phases $\alpha,\beta$ are harmonic on the cut plane, that is on the universal cover on which they are single-valued. The complex coordinates $\operatorname{Log}(\lambda_+)$ and $\operatorname{Log}(\lambda_-)$ are the local holomorphic coordinates supplied by the principal logarithm, and the exponential is their inverse.
 
-The algebra carries two commuting complex structures: the left multiplication by $i$ and the left multiplication by $ij$. Both square to $-1$ and commute, and the two eigenvalues diagonalise the second, with eigenvalue $+i$ on $\lambda_1$ and $-i$ on $\lambda_2$. The exponential is holomorphic for both structures, because the closed form $\exp(Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown})=\exp(Q_{\log\blacktriangle})(\cosh Q_{\log\blacktriangledown}+j\sinh Q_{\log\blacktriangledown})$ is entire in $Q_{\log\blacktriangle}$ and in $Q_{\log\blacktriangledown}$. The obstruction to a global logarithm is the lattice, not the complex structure.
+The algebra carries two commuting complex structures: the left multiplication by $i$ and the left multiplication by $ij$. Both square to $-1$ and commute, and the two eigenvalues diagonalise the second, with eigenvalue $+i$ on $\lambda_+$ and $-i$ on $\lambda_-$. The exponential is holomorphic for both structures, because the closed form $\exp(Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown})=\exp(Q_{\log\blacktriangle})(\cosh Q_{\log\blacktriangledown}+j\sinh Q_{\log\blacktriangledown})$ is entire in $Q_{\log\blacktriangle}$ and in $Q_{\log\blacktriangledown}$. The obstruction to a global logarithm is the lattice, not the complex structure.
 
 ## Worked Examples
 
@@ -728,8 +744,8 @@ The algebra carries two commuting complex structures: the left multiplication by
 Take $\breve Q=3+4i+j(1-i)$, with $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. The eigenvalues and their moduli are
 
 $$
-\lambda_1=Q_{+}=4+3i,\quad \rho_{+}=5,\qquad
-\lambda_2=Q_{-}=2+5i,\quad \rho_{-}=\sqrt{29}=5.385164807134504.
+\lambda_+=Q_{+}=4+3i,\quad \rho_{+}=5,\qquad
+\lambda_-=Q_{-}=2+5i,\quad \rho_{-}=\sqrt{29}=5.385164807134504.
 $$
 
 The modulus parameters are
@@ -790,7 +806,7 @@ $$
 
 The errors are at machine precision, computed from the double-precision values before the rounding of the displayed entries. The row $\exp(j\ln2)$ has zero reconstruction error in double precision, because the data are the rounded values $\cosh(\ln2)=1.25$ and $\sinh(\ln2)=0.75$.
 
-The zero divisor $1+j$ has $\lambda_2=0$ and no logarithm, so it is absent from the table. The image of the exponential is exactly the unit group; on a zero divisor one eigenvalue is zero and has no preimage under the complex exponential.
+The zero divisor $1+j$ has $\lambda_-=0$ and no logarithm, so it is absent from the table. The image of the exponential is exactly the unit group; on a zero divisor one eigenvalue is zero and has no preimage under the complex exponential.
 
 ### The Hyperbolic Line and the Phases
 
@@ -846,28 +862,30 @@ and the diamond's area is $2\pi^{2}$, the covolume of $\Lambda$.
 
 | Result | Statement |
 |---|---|
-| Domain | the units $\breve Q\in\mathbb{B}_{\mathrm{r}}^{\times}$, that is $\lambda_1\lambda_2\neq0$ |
+| Domain | the units $\breve Q\in\mathbb{B}_{\mathrm{r}}^{\times}$, that is $\lambda_+\lambda_-\neq0$ |
+| Eigenvalues | $\lambda_\pm=Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ |
 | Decomposition | $\breve Q=\rho(\cosh\phi+j\sinh\phi)\exp(i\alpha)\exp(ij\beta)$ |
-| Scale | $\rho>0$ and $\phi\in\mathbb{R}$ |
-| Phases | $(\alpha,\beta)\in\mathbb{R}^{2}/\Lambda$, $\Lambda=\langle2\pi(1,0),\pi(1,1)\rangle$ |
-| One exponential | $\breve Q=\exp(\ln\rho+j\phi+i\alpha+ij\beta)$ |
+| Parameters | $\rho>0$, $\phi\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^{2}/\Lambda$ |
+| Unit factor | $u=\exp(i\alpha)\exp(ij\beta)\in T^{2}$ |
+| Exponent | $\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta=\log\lambda_+\,\Pi_++\log\lambda_-\,\Pi_-$ |
 | Existence | every unit has a decomposition |
 | Uniqueness | unique in the principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ |
-| Exponent | $\breve Q_{\log}=\log\lambda_1\,\Pi_++\log\lambda_2\,\Pi_-$ |
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
 | Fibre | $\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^{2}$ |
 | Group law | the exponents add, modulo the kernel |
+| Group | $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{R}^{2}\times T^{2}$ |
 | Matrix picture | block matrix in $\{1,j\}$; $\det d\exp=\rho^{4}$ |
 | Coordinates | $(\ln\rho,\phi,\alpha,\beta)$, with volume $\rho^{3}\,d\rho\,d\phi\,d\alpha\,d\beta$ |
-| Eigenvalue form | two independent complex polar decompositions, $\lambda_i=\rho_i\exp(i\theta_i)$ |
+| Eigenvalue form | two independent complex polar decompositions, $\lambda_\pm=\rho_\pm\exp(i\theta_\pm)$ |
 
 ### Formulas
 
 | Quantity | Formula |
 |---|---|
-| Element | $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$ |
+| Element | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
+| Eigenvalues | $\lambda_\pm=Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ |
 | Exponent | $\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta$ |
-| Modulus | $\breve r=\rho(\cosh\phi+j\sinh\phi)$ |
+| Modulus | $\breve r=\rho(\cosh\phi+j\sinh\phi)$, with $\rho>0$, $\phi\in\mathbb{R}$ |
 | Unit factor | $u=\exp(i\alpha)\exp(ij\beta)$ |
 | Decomposition | $\breve Q=\breve r\,u=\exp(\breve Q_{\log})$ |
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
@@ -886,14 +904,14 @@ $$
 \rho>0,\qquad \phi\in\mathbb{R},\qquad \lvert\alpha\rvert+\lvert\beta\rvert\le\pi.
 $$
 
-Equivalently, in the eigenvalue decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$,
+Equivalently, in the eigenvalue decomposition $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$,
 
 $$
-\lambda_1=\rho_+\exp(i\theta_1),\qquad \lambda_2=\rho_-\exp(i\theta_2),\qquad
-\breve Q_{\log}=\log\lambda_1\,\Pi_++\log\lambda_2\,\Pi_-,
+\lambda_+=\rho_+\exp(i\theta_+),\qquad \lambda_-=\rho_-\exp(i\theta_-),\qquad
+\breve Q_{\log}=\log\lambda_+\,\Pi_++\log\lambda_-\,\Pi_-,
 $$
 
-with $\rho_{\pm}=\rho \exp(\pm\phi)$, $\theta_1=\alpha+\beta$ and $\theta_2=\alpha-\beta$.
+with $\rho_{\pm}=\rho \exp(\pm\phi)$, $\theta_+=\alpha+\beta$ and $\theta_-=\alpha-\beta$.
 
 Its four components are $(q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown})=(\ln\rho,\alpha,\phi,\beta)$.
 
@@ -921,19 +939,19 @@ $$
 \cong\mathbb{R}^{4}\big/2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
 $$
 
-The derivative is left multiplication by $\exp\breve Q_{\log}$; its determinant is $\rho_{+}^{2}\rho_{-}^{2}=\lvert\lambda_1\lambda_2\rvert^{2}=\rho^{4}$, and its singular values are $\rho_{+},\rho_{+},\rho_{-},\rho_{-}$. The exponential is conformal in each eigenvalue coordinate and conformal on the whole algebra exactly when $\phi=0$.
+The derivative is left multiplication by $\exp\breve Q_{\log}$; its determinant is $\rho_{+}^{2}\rho_{-}^{2}=\lvert\lambda_+\lambda_-\rvert^{2}=\rho^{4}$, and its singular values are $\rho_{+},\rho_{+},\rho_{-},\rho_{-}$. The exponential is conformal in each eigenvalue coordinate and conformal on the whole algebra exactly when $\phi=0$.
 
-In the eigenvalue coordinates the exponent is the pair $(\log\lambda_1,\log\lambda_2)$, the kernel is $2\pi i(\mathbb{Z}\Pi_{+}\oplus\mathbb{Z}\Pi_{-})$, and the principal domain is the product of the two principal strips. That form is the coordinate description of the decomposition.
+In the eigenvalue coordinates the exponent is the pair $(\log\lambda_+,\log\lambda_-)$, the kernel is $2\pi i(\mathbb{Z}\Pi_{+}\oplus\mathbb{Z}\Pi_{-})$, and the principal domain is the product of the two principal strips. That form is the coordinate description of the decomposition.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
+| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | the unit, with scalar part $Q_{\blacktriangle}$ and split part $Q_{\blacktriangledown}$ |
 | $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ | the two complex coefficients, with their real and imaginary coordinates |
-| $Q_{\pm}=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the eigenvalues $\lambda_1=Q_+$, $\lambda_2=Q_-$, read also as idempotent coordinates |
-| $\lambda_1,\lambda_2$ | the eigenvalues, $\lambda_1=Q_+$, $\lambda_2=Q_-$ |
-| $\Pi_{\pm}=\tfrac12(1\pm j)$ | the central idempotents of $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$ |
+| $\lambda_\pm=Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the eigenvalues, equal to the idempotent coordinates |
+| $\Pi_{\pm}=\tfrac12(1\pm j)$ | the central idempotents of $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 | $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | the exponent |
 | $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ | the scalar part of the exponent |
 | $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\phi+i\beta$ | the split part of the exponent |
@@ -953,17 +971,17 @@ In the eigenvalue coordinates the exponent is the pair $(\log\lambda_1,\log\lamb
 | $\operatorname{Log}\breve Q$ | the principal logarithm |
 | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ | the kernel of the exponential |
 | $\rho_{+}=\rho \exp(\phi)$, $\rho_{-}=\rho \exp(-\phi)$ | the two eigenvalue scales |
-| $\theta_{1}=\alpha+\beta$, $\theta_{2}=\alpha-\beta$ | the two eigenvalue arguments |
+| $\theta_+=\alpha+\beta$, $\theta_-=\alpha-\beta$ | the two eigenvalue arguments |
 | $\det d\exp_{\breve Q_{\log}}=\rho^{4}$ | the Jacobian determinant |
 
 ## Further Reading
 
 - [Eigenvalue Decomposition of a Reduced Biquaternion](eigenvalue-decomposition-of-a-reduced-biquaternion.html), for the eigenvalues, the central idempotents and the spectral calculus used throughout.
+- [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential and the logarithm as functions.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
 - [Rational-Chart Polar Decomposition of Reduced Biquaternions](rational-chart-polar-decomposition-of-reduced-biquaternions.html), for the rational coordinate on the torus.
-- [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential and the logarithm as functions.
 - [Reduced Biquaternion Lie Group and Exponential Structure](reduced-biquaternion-lie-group-and-exponential-structure.html), for the kernel, the covering and the group of units.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the topology of the unit group.
 - [Exponential Polar Decomposition of Complex Numbers](exponential-polar-decomposition-of-complex-numbers.html), for the one-coordinate exponential.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic exponential.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the noncommutative counterpart.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the topology of the unit group.
