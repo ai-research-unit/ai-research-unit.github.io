@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eigenvalue Decomposition of a Hermitian Element — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-eigenvalue-decomposition-of-a-hermitian-element"><strong>The Eigenvalue Decomposition of a Hermitian Element</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Hermitian element</strong> of a sesqualgebra is an element fixed by the involution, $h^{*}=h$. It belongs to two algebras at once: the associative algebra $A$ over the base field $F$, and the <strong>Hermitian Jordan algebra</strong> $J(A)=(H(A),\circ)$ over the fixed field $F_{0}=F^{\varsigma}$, with $x\circ y=\tfrac12(xy+yx)$. The eigenvalue decomposition can be read in either, and the two readings are not the same. In $A$ the eigenvalues lie in $F$ and the involution permutes the eigenprojectors, sending the projector of $\lambda$ to the projector of $\varsigma(\lambda)$; this is the theory of <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em>. In $J(A)$ the scalars are cut down to $F_{0}$, the eigenvalues lie in $F_{0}$, and the eigenprojectors are Hermitian; this is the theory of the present article.</p>
+<p>The bridge between the two readings is the minimal polynomial. A Hermitian element has its minimal polynomial over $F$ with coefficients in $F_{0}$, so the same polynomial is minimal over the fixed field, and the two spectral theories are governed by the same polynomial. The consequence is a dichotomy. If the polynomial splits over $F_{0}$ with distinct roots, the Hermitian element has a spectral resolution over $F_{0}$, with Hermitian idempotents, and the associative resolution is the same one. If the polynomial has a non-fixed root, it has the conjugate root as well, the associative resolution pairs the two projectors, and no resolution over $F_{0}$ exists. The Hermitian spectral resolution is therefore exactly the associative one whose eigenvalues are all fixed.</p>
+<p>The setting is that of <em>Sesqualgebras</em>: $F$ is a field of characteristic not two, $\varsigma$ is an involution of $F$, $F_{0}=F^{\varsigma}$, $A$ is a finite-dimensional unital associative $F$-algebra, and $*$ is a $\varsigma$-semilinear involution of $A$. The Hermitian part, the decomposition $A=H(A)\oplus S(A)$ and the Jordan structure of $H(A)$ are from <em>Hermitian and Skew-Hermitian Elements</em> and <em>The Hermitian Jordan Algebra</em>; the Hermitian idempotents and the Peirce decomposition are <em>Hermitian Idempotents and the Peirce Decomposition</em>; the Jordan spectral theorem is <em>The Eigenvalue Decomposition in a Jordan Algebra</em>; the associative spectral theory is <em>The Eigenvalue Decomposition of an Element</em> and <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em>; and the form-theoretic orthogonality of the spectral idempotents is <em>The Eigenvalue Decomposition with respect to a Degree-2 Form</em>.</p>
+<h2 id="the-hermitian-element-and-its-two-algebras">The Hermitian Element and Its Two Algebras</h2>
+<h3 id="the-fixed-ring-and-the-hermitian-part">The Fixed Ring and the Hermitian Part</h3>
+<p>The involution $*$ is $\varsigma$-semilinear, so for $\lambda\in F$ and $h\in H(A)$,</p>
+<p>$$
+(\lambda h)^{*}=\varsigma(\lambda)h .
+$$</p>
+<p>Hence $H(A)$ is a module over the fixed field $F_{0}$ and not over $F$ in general. When $F_{0}\neq F$ the extension $F/F_{0}$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_{0}\oplus F_{0}t$; the multiplication by $t$ carries $H(A)$ to the skew part $S(A)$ and back. This is the scalar theorem of <em>Hermitian and Skew-Hermitian Elements</em>, §<em>The Scalar Action</em>.</p>
+<p><strong>Definition.</strong> The <strong>Hermitian Jordan algebra</strong> of $A$ is $J(A)=(H(A),\circ)$ with</p>
+<p>$$
+x\circ y=\tfrac12(xy+yx).
+$$</p>
+<p>It is a commutative Jordan algebra over $F_{0}$, special with envelope $A$, and its powers are the ordinary powers, $h^{\circ n}=h^{n}$; this is <em>The Hermitian Jordan Algebra</em>, §<em>The Axioms</em> and §<em>Powers</em>.</p>
+<p><strong>Proposition.</strong> For $h\in H(A)$ the subalgebra $F_{0}[h]$ generated by $h$ in $J(A)$ is commutative and associative, and it is contained in $H(A)$.</p>
+<p><em>Proof.</em> The Jordan algebra $J(A)$ is power-associative, so $F_{0}[h]$ is the span of the powers $h^{n}$ and is associative and commutative. The powers of a Hermitian element are Hermitian, $(h^{n})^{*}=(h^{*})^{n}=h^{n}$, so the span is contained in $H(A)$.</p>
+<h3 id="the-two-minimal-polynomials">The Two Minimal Polynomials</h3>
+<p>Let $m_{h}\in F[x]$ be the minimal polynomial of $h$ as an element of the associative algebra $A$, and let $m_{h,0}\in F_{0}[x]$ be its minimal polynomial as an element of the Jordan algebra $J(A)$ over $F_{0}$; the second is the monic generator of the polynomials over $F_{0}$ that vanish at $h$ in $J(A)$.</p>
+<p><strong>Theorem.</strong> The two polynomials coincide:</p>
+<p>$$
+m_{h,0}=m_{h}.
+$$</p>
+<p>In particular $m_{h}$ has coefficients in $F_{0}$.</p>
+<p><em>Proof.</em> The minimal polynomial $m_{h}$ has coefficients in $F_{0}$ by <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em>, §<em>The minimal polynomial</em>: the polynomial obtained by applying $\varsigma$ to the coefficients is monic of the same degree and vanishes at $h$, so it equals $m_{h}$. Hence $m_{h}$ is a polynomial over $F_{0}$ that vanishes at $h$ in $J(A)$, and $m_{h,0}$ divides it. Conversely, $m_{h,0}(h)=0$ in $J(A)$ is the same equation as in $A$, because the Jordan powers are the ordinary powers; so $m_{h}$ divides $m_{h,0}$. Both are monic, hence they are equal.</p>
+<p><strong>Remark.</strong> The theorem is the algebraic reason why a Hermitian matrix has real eigenvalues: the minimal polynomial of a Hermitian matrix has real coefficients, and a real polynomial of odd degree has a real root, but the full statement is that every root is real, which is the formal-reality argument of the next section. The equality of the two minimal polynomials says that the Jordan spectral theory over $F_{0}$ and the associative spectral theory over $F$ are governed by the same polynomial; the difference is the field over which it is required to split.</p>
+<h3 id="the-two-spectra">The Two Spectra</h3>
+<p><strong>Definition.</strong> The <strong>associative spectrum</strong> of $h$ is the set $\sigma(h)$ of roots of $m_{h}$ in $F$. The <strong>Hermitian spectrum</strong> is the set $\sigma_{0}(h)$ of roots of $m_{h}$ in $F_{0}$.</p>
+<p><strong>Proposition.</strong> $\sigma_{0}(h)=\sigma(h)\cap F_{0}$. The associative spectrum is stable under $\varsigma$: if $\lambda\in\sigma(h)$ then $\varsigma(\lambda)\in\sigma(h)$, with the same multiplicity.</p>
+<p><em>Proof.</em> The first identity is the definition together with the equality of the minimal polynomials. For the second, apply $\varsigma$ to $m_{h}(\lambda)=0$ and use that the coefficients of $m_{h}$ are fixed by $\varsigma$: $m_{h}(\varsigma(\lambda))=0$. The multiplicity statement is the same computation applied to the derivatives, or the fact that $m_{h}$ has coefficients in $F_{0}$ and the Frobenius action on the roots preserves multiplicity in a separable polynomial.</p>
+<p><strong>Remark.</strong> The proposition is the spectral form of the dichotomy. The roots of $m_{h}$ are either fixed by $\varsigma$ or occur in pairs $\{\lambda,\varsigma(\lambda)\}$ with $\lambda\neq\varsigma(\lambda)$; the fixed roots are exactly the Hermitian eigenvalues, the ones that can occur in a resolution over $F_{0}$. A non-fixed pair is invisible to the Jordan algebra over $F_{0}$; it is visible only in the associative algebra over $F$.</p>
+<h2 id="the-hermitian-spectral-resolution">The Hermitian Spectral Resolution</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> A <strong>Hermitian spectral resolution</strong> of $h\in H(A)$ is a writing</p>
+<p>$$
+h=\sum_{i=1}^{r}\lambda_{i}e_{i}
+$$</p>
+<p>with $\lambda_{1},\dots,\lambda_{r}\in F_{0}$ pairwise distinct, $e_{1},\dots,e_{r}$ nonzero <strong>Hermitian idempotents</strong> of $A$,</p>
+<p>$$
+e_{i}^{2}=e_{i}=e_{i}^{*}, \qquad e_{i}e_{j}=\delta_{ij}e_{i}, \qquad \sum_{i=1}^{r}e_{i}=1 .
+$$</p>
+<p>It is the spectral resolution of $h$ in the Jordan algebra $J(A)$ over $F_{0}$, written in the associative notation.</p>
+<h3 id="the-existence-theorem">The Existence Theorem</h3>
+<p><strong>Theorem.</strong> Let $h\in H(A)$. The following are equivalent:</p>
+<ol>
+<li>$h$ has a Hermitian spectral resolution;</li>
+<li>$m_{h}$ splits over $F_{0}$ with distinct roots;</li>
+<li>$m_{h}$ splits over $F$ with distinct roots, and every root is fixed by $\varsigma$.</li>
+</ol>
+<p>When they hold, the eigenvalues are the roots of $m_{h}$, the idempotents are the Lagrange polynomials</p>
+<p>$$
+e_{i}=\prod_{j\neq i}\frac{h-\lambda_{j}}{\lambda_{i}-\lambda_{j}}\in F_{0}[h],
+$$</p>
+<p>and the resolution is unique.</p>
+<p><em>Proof.</em> The Jordan algebra $J(A)$ over $F_{0}$ is finite dimensional and power-associative, and the subalgebra $F_{0}[h]$ is associative and commutative. The spectral theorem of <em>The Eigenvalue Decomposition in a Jordan Algebra</em>, §<em>The Existence Theorem</em>, applied to $h$ in $J(A)$ over $F_{0}$, gives the equivalence of 1 and 2 and the Lagrange formula. The equivalence of 2 and 3 is the proposition on the two spectra: the roots of $m_{h}$ in $F_{0}$ are the fixed roots, and splitting over $F_{0}$ with distinct roots is exactly the statement that $m_{h}$ splits over $F$ with distinct roots, all of them fixed.</p>
+<p><strong>Corollary.</strong> The idempotents of a Hermitian spectral resolution are Hermitian, pairwise orthogonal and sum to the identity. They lie in $F_{0}[h]$, commute with $h$ and with one another, and are the spectral projections of $h$.</p>
+<p><em>Proof.</em> The Lagrange formula has coefficients in $F_{0}$ and is evaluated at $h\in H(A)$; the involution fixes $F_{0}$ and $h$, so it fixes each $e_{i}$. The orthogonality and the resolution of the identity are the Jordan spectral theorem.</p>
+<h3 id="the-involution-acts-trivially">The Involution Acts Trivially</h3>
+<p><strong>Theorem.</strong> Let $h=\sum_{i}\lambda_{i}e_{i}$ be a Hermitian spectral resolution. Applying the involution to the resolution gives the same resolution:</p>
+<p>$$
+h^{*}=\sum_{i}\lambda_{i}e_{i}^{*}=\sum_{i}\lambda_{i}e_{i}=h .
+$$</p>
+<p>The permutation of the eigenprojectors is the identity, and every eigenvalue is fixed by $\varsigma$.</p>
+<p><em>Proof.</em> The eigenvalues lie in $F_{0}$ and the projectors are Hermitian, so each term is fixed. The uniqueness of the resolution then identifies the transformed resolution with the original one.</p>
+<p><strong>Remark.</strong> This is the whole difference from the general self-adjoint theory. In <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em> the involution sends $e_{i}$ to $e_{\pi(i)}$ and $\lambda_{i}$ to $\varsigma(\lambda_{i})$, and the permutation $\pi$ need not be the identity. The Hermitian resolution is the case in which $\pi$ is the identity, equivalently the case in which the resolution descends from $F$ to $F_{0}$. The two theories are not in conflict: the general one is the associative resolution over $F$, the present one is the Jordan resolution over $F_{0}$, and the second exists exactly when the first is already fixed.</p>
+<h3 id="the-comparison-with-the-associative-resolution">The Comparison with the Associative Resolution</h3>
+<p><strong>Theorem.</strong> Let $h\in H(A)$ and suppose that $h$ has an associative eigenvalue decomposition over $F$,</p>
+<p>$$
+h=\sum_{j=1}^{s}\mu_{j}f_{j},
+$$</p>
+<p>with $\mu_{j}\in F$ distinct and $f_{j}$ idempotents of $A$. Then the following are equivalent:</p>
+<ol>
+<li>every $\mu_{j}$ is fixed by $\varsigma$;</li>
+<li>every $f_{j}$ is Hermitian;</li>
+<li>the associative decomposition is a Hermitian spectral resolution of $h$ over $F_{0}$.</li>
+</ol>
+<p>When they fail, the non-fixed eigenvalues occur in conjugate pairs, the involution exchanges the projectors of a pair, and $h$ has no Hermitian spectral resolution.</p>
+<p><em>Proof.</em> The involution acts by $f_{j}^{*}=f_{\pi(j)}$ and $\mu_{\pi(j)}=\varsigma(\mu_{j})$ for an involution $\pi$ of the index set, by <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em>, §<em>The Permutation of the Eigenprojectors</em>. If every $\mu_{j}$ is fixed, then $\mu_{\pi(j)}=\mu_{j}$ and distinctness gives $\pi(j)=j$, so every $f_{j}$ is Hermitian; this proves 1 implies 2. If every $f_{j}$ is Hermitian, then $h=\sum_{j}\mu_{j}f_{j}$ with Hermitian idempotents and $\mu_{j}\in F$; applying the involution gives $\mu_{j}=\varsigma(\mu_{j})$, so 2 implies 1, and the writing is a Hermitian spectral resolution because the $\mu_{j}$ are fixed and the $f_{j}$ are Hermitian. The last clause is the contrapositive: a non-fixed $\mu_{j}$ has $\varsigma(\mu_{j})\neq\mu_{j}$ and the two projectors are exchanged, while a resolution over $F_{0}$ would have all eigenvalues fixed.</p>
+<p><strong>Corollary.</strong> A Hermitian element has a Hermitian spectral resolution if and only if its associative eigenvalue decomposition exists and all its eigenvalues are fixed. In that case the two resolutions coincide, term by term.</p>
+<p><em>Proof.</em> If the Hermitian resolution exists, it is an associative resolution with fixed eigenvalues and Hermitian projectors, and the uniqueness of the associative resolution identifies it with the given one. Conversely, the theorem above applies.</p>
+<p><strong>Remark.</strong> The corollary is the precise sense in which the Hermitian spectral theorem is the fixed part of the associative one. It also shows why the theory is not a repetition: the associative resolution can exist with conjugate pairs, and then there is no Hermitian resolution at all; the two alternatives are exhaustive.</p>
+<h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
+<h3 id="the-spectral-idempotents">The Spectral Idempotents</h3>
+<p>Let $h=\sum_{i=1}^{r}\lambda_{i}e_{i}$ be a Hermitian spectral resolution. The idempotents form a complete family of pairwise orthogonal Hermitian idempotents. The Peirce decomposition of <em>Hermitian Idempotents and the Peirce Decomposition</em> gives</p>
+<p>$$
+A=\bigoplus_{i,j=1}^{r}e_{i}Ae_{j},
+$$</p>
+<p>with the involution exchanging the indices, $(e_{i}Ae_{j})^{*}=e_{j}Ae_{i}$. The diagonal corners $e_{i}Ae_{i}$ are $*$-subalgebras with unit $e_{i}$, and the off-diagonal spaces are exchanged in pairs. The Hermitian part splits as</p>
+<p>$$
+H(A)=\bigoplus_{i=1}^{r}H(e_{i}Ae_{i})\oplus\bigoplus_{i<j}H\bigl(e_{i}Ae_{j}\oplus e_{j}Ae_{i}\bigr).
+$$</p>
+<h3 id="the-jordan-peirce-spaces">The Jordan Peirce Spaces</h3>
+<p>The Jordan Peirce spaces of the family are the Hermitian parts of the corners and of the mixed spaces:</p>
+<p>$$
+\mathrm{J}_{ii}=H(e_{i}Ae_{i}), \qquad
+\mathrm{J}_{ij}=H\bigl(e_{i}Ae_{j}\oplus e_{j}Ae_{i}\bigr) \quad (i\neq j).
+$$</p>
+<p>They are the eigenspaces of the Jordan multiplication $L_{h}$ with eigenvalues $\lambda_{i}$ and $(\lambda_{i}+\lambda_{j})/2$, by <em>The Eigenvalue Decomposition in a Jordan Algebra</em>, §<em>The Multiplication Operator and the Peirce Midpoints</em>. The <strong>diagonal Peirce part</strong></p>
+<p>$$
+D=\bigoplus_{i=1}^{r}\mathrm{J}_{ii}=\bigoplus_{i=1}^{r}H(e_{i}Ae_{i})
+$$</p>
+<p>is the set of Hermitian elements whose mixed Jordan Peirce components vanish. It is a subalgebra of $J(A)$, and it contains the commutative algebra $F_{0}[h]$ generated by $h$; in the matrix cases the two coincide exactly when every eigenspace is one-dimensional. The off-diagonal part $\bigoplus_{i<j}\mathrm{J}_{ij}$ is the set of the components that the resolution separates.</p>
+<h3 id="the-diagonal-part-and-the-associative-centraliser">The Diagonal Part and the Associative Centraliser</h3>
+<p><strong>Proposition.</strong> In the associative algebra $A$, the centraliser of $h$ is the diagonal Peirce part</p>
+<p>$$
+C_{A}(h)=\bigoplus_{i=1}^{r}e_{i}Ae_{i},
+$$</p>
+<p>and it contains $F[h]$. Its Hermitian part is the diagonal part $D$ of $J(A)$.</p>
+<p><em>Proof.</em> An element $y$ commutes with $h$ exactly when it commutes with every spectral idempotent $e_{i}$, because the $e_{i}$ are polynomials in $h$ and, conversely, $h=\sum_{i}\lambda_{i}e_{i}$. The commutant of the complete family $\{e_{i}\}$ is the sum of the diagonal corners: the condition $e_{i}y=ye_{i}$ for every $i$ forces the four blocks $e_{i}ye_{j}$ with $i\neq j$ to vanish and leaves the diagonal blocks free. The inclusion $F[h]\subseteq C_{A}(h)$ is the spectral mapping. Taking Hermitian parts uses $(e_{i}Ae_{i})^{*}=e_{i}Ae_{i}$ and the exchange of the mixed corners, so the Hermitian part of the diagonal corners is $\bigoplus_{i}H(e_{i}Ae_{i})=D$.</p>
+<p><strong>Remark.</strong> The Jordan algebra $J(A)$ is commutative, so it has no nontrivial centraliser of its own; the diagonal part $D$ is the correct Jordan substitute, and it is the set of elements that the resolution leaves diagonal. The associative centraliser $C_{A}(h)$ is an $F$-algebra, and $D$ is its Hermitian part over $F_{0}$. The spectral resolution is the common diagonalisation of the powers of $h$ in $C_{A}(h)$ and in $D$.</p>
+<h2 id="the-formally-real-case">The Formally Real Case</h2>
+<h3 id="the-spectral-theorem">The Spectral Theorem</h3>
+<p><strong>Theorem.</strong> Suppose $F=\mathbb{C}$, $\varsigma$ is the complex conjugation, $F_{0}=\mathbb{R}$, and $J(A)$ is formally real. Then every Hermitian element $h\in H(A)$ has a Hermitian spectral resolution</p>
+<p>$$
+h=\sum_{i=1}^{r}\lambda_{i}e_{i}
+$$</p>
+<p>with $\lambda_{i}\in\mathbb{R}$ and $e_{i}$ Hermitian idempotents. The resolution is unique, and it is the spectral resolution of $h$ in the formally real Jordan algebra $J(A)$.</p>
+<p><em>Proof.</em> By <em>The Eigenvalue Decomposition in a Jordan Algebra</em>, §<em>The Spectral Theorem in a Formally Real Algebra</em>, every element of a finite-dimensional formally real Jordan algebra over $\mathbb{R}$ has a spectral resolution with real eigenvalues and pairwise orthogonal idempotents. The idempotents are Hermitian because they lie in $F_{0}[h]$ and the Lagrange formula has real coefficients. The uniqueness is the uniqueness of the Jordan resolution.</p>
+<p><strong>Corollary.</strong> In the formally real case the positive cone of $J(A)$ is described by the eigenvalues: $h\in J(A)_{+}$ if and only if $\lambda_{i}\geq0$ for every $i$. The trace form $T(x,y)=\tau(x\circ y)=\tau(xy)$ of <em>The Hermitian Jordan Algebra</em>, §<em>The Trace Form</em>, is orthogonal on the spectral idempotents, $T(e_{i},e_{j})=0$ for $i\neq j$; it is positive on each of them when $\tau$ is positive on the nonzero Hermitian idempotents, in particular for the standard trace on $M_{n}(\mathbb{C})$.</p>
+<p><em>Proof.</em> The first clause is the positive-cone corollary of <em>The Eigenvalue Decomposition in a Jordan Algebra</em>. The orthogonality is $\tau(e_{i}e_{j})=0$ for $i\neq j$; the positivity is the hypothesis on $\tau$, applied to $e_{i}^{2}=e_{i}$. No positivity is claimed for an arbitrary trace.</p>
+<p><strong>Remark.</strong> For $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $J(A)$ is the real vector space of Hermitian matrices with the symmetrised product; it is formally real, and the theorem is the classical spectral theorem for Hermitian matrices, with the orthogonal projections onto the eigenspaces as the idempotents. The eigenvalues are real and the projectors are Hermitian. For $A=\mathbb{B}$ with the star involution, $J(A)$ is a formally real Jordan algebra of degree two over $\mathbb{R}$, isomorphic to $H_{2}(\mathbb{C})$, and the theorem is the Hermitian spectral theorem of <em>Biquaternion Spectral Theory</em>; the two eigenvalues are $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ for a Hermitian biquaternion, and the two projectors are the Hermitian pair of the root $\vec\Xi=-i\vec u$ of a real unit vector $\vec u$.</p>
+<h3 id="the-failure-without-formal-reality">The Failure Without Formal Reality</h3>
+<p><strong>Proposition.</strong> Let $A=M_{2}(\mathbb{C})$ with the entrywise conjugation as involution and $J(A)=M_{2}(\mathbb{R})^{+}$. The real rotation matrix</p>
+<p>$$
+R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+$$</p>
+<p>is Hermitian, and it has no Hermitian spectral resolution over $\mathbb{R}$; its associative spectrum over $\mathbb{C}$ is $\{i,-i\}$, with the conjugate pair of non-Hermitian idempotents</p>
+<p>$$
+f_{\pm}=\frac12\left(1\mp iR\right).
+$$</p>
+<p><em>Proof.</em> The matrix $R$ is real, so $R^{*}=R$ for the entrywise conjugation. Its minimal polynomial over $\mathbb{R}$ is $t^{2}+1$, which has no real root; by the existence theorem there is no Hermitian resolution. Over $\mathbb{C}$ the polynomial splits as $(t-i)(t+i)$, and the Lagrange formula gives the two idempotents displayed; they satisfy $f_{\pm}^{2}=f_{\pm}$, $f_{+}f_{-}=0$, $f_{+}+f_{-}=1$, and $R=i f_{+}-i f_{-}$. They are not Hermitian for the entrywise conjugation, since $f_{\pm}^{*}=f_{\mp}$.</p>
+<p><strong>Remark.</strong> The example is the exact boundary. The algebra $M_{2}(\mathbb{R})^{+}$ is not formally real, because $E_{12}$ is a nonzero nilpotent; the rotation matrix is the second failure, a nonreal conjugate pair. Both are excluded by formal reality, and both are visible in the associative algebra over $\mathbb{C}$ but not in the Hermitian algebra over $\mathbb{R}$. The general self-adjoint theory of <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em> is the theory of the pair; the present article is the theory of the fixed part.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-hermitian-matrices">The Hermitian Matrices</h3>
+<p>Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\varsigma$ the complex conjugation. The Hermitian elements are the Hermitian matrices, and $J(A)$ is the formally real Jordan algebra of <em>The Hermitian Jordan Algebra</em>, §<em>The Complex Matrices</em>. A Hermitian matrix $h$ has the spectral resolution $h=\sum_{i}\lambda_{i}P_{i}$ with real eigenvalues and orthogonal projections $P_{i}$; the resolution is the classical spectral theorem. The idempotents are Hermitian, pairwise orthogonal and sum to the identity. The Peirce corners $P_{i}AP_{j}$ are the blocks between the eigenspaces; the diagonal corners are the endomorphism algebras of the eigenspaces, and the off-diagonal corners are the maps between them. The trace form is $\tau(xy)$, real on the Hermitian part.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star involution. The Hermitian elements form the Jordan algebra $J(\mathbb{B})\cong H_{2}(\mathbb{C})$ of degree two over $\mathbb{R}$, with the two Hermitian idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ as a complete orthogonal family. A Hermitian biquaternion $\tilde Q$ is normal and has the two real eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$, with the two Hermitian eigenprojectors of the real root $\vec\Xi=-i\vec u$; this is the spectral theorem of <em>Biquaternion Spectral Theory</em>, §<em>The Spectral Theorem</em>, and the eigenvalue decomposition of <em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Hermitian Case</em>. The pair is the Hermitian pair of the root, and the resolution is the Peirce decomposition relative to it.</p>
+<h3 id="the-complex-field">The Complex Field</h3>
+<p>Let $A=\mathbb{C}$ with the conjugation, $F_{0}=\mathbb{R}$. The Hermitian elements are the real numbers, $J(A)=\mathbb{R}$ with the ordinary product, and the Hermitian spectral resolution of a real number $\lambda$ is the one-term resolution $\lambda=\lambda\cdot1$. The example is the smallest in which the fixed field is a proper subfield of $F$ and the Hermitian part is a proper real form of $A$.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>Let $A=\mathbb{H}$ with the quaternion conjugation over $F=\mathbb{R}$ with the trivial involution. The twist is invisible, $F_{0}=F$, and $J(A)=\mathbb{R}$; the Hermitian elements are the real quaternions and the resolution is again one term. The example marks the boundary at which the sesquilinear layer and the bilinear layer coincide.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian element $h$ of a sesqualgebra has two minimal polynomials in appearance and one in fact: the minimal polynomial over the base field $F$ has coefficients in the fixed field $F_{0}$, so it is also the minimal polynomial over $F_{0}$ in the Hermitian Jordan algebra $J(A)$. The associative spectrum is stable under the involution, and the fixed roots are exactly the Hermitian spectrum.</p>
+<p>A <strong>Hermitian spectral resolution</strong> $h=\sum_{i}\lambda_{i}e_{i}$ has its eigenvalues in $F_{0}$ and its idempotents Hermitian, pairwise orthogonal and summing to the identity. It exists exactly when $m_{h}$ splits over $F_{0}$ with distinct roots, equivalently when $m_{h}$ splits over $F$ with distinct roots and every root is fixed. The idempotents are the Lagrange polynomials in $h$ with coefficients in $F_{0}$, and the resolution is unique. The involution acts trivially on the resolution, so the permutation of the eigenprojectors is the identity; this is the fixed case of the general self-adjoint permutation law.</p>
+<p>The comparison with the associative resolution is a dichotomy. If all the associative eigenvalues are fixed, the associative resolution is already a Hermitian resolution and the two coincide. If some eigenvalue is not fixed, its conjugate is an eigenvalue too, the involution exchanges the two projectors, and no Hermitian resolution exists. In a formally real Hermitian Jordan algebra, in particular for $M_{n}(\mathbb{C})$ with the conjugate transpose and for $\mathbb{B}$ with the star involution, every Hermitian element falls in the first case. In $M_{2}(\mathbb{C})$ with the entrywise conjugation, a real rotation matrix falls in the second: it is Hermitian, its eigenvalues are $\pm i$, and it has no Hermitian resolution over $\mathbb{R}$.</p>
+<p>The Jordan spectral theorem is <em>The Eigenvalue Decomposition in a Jordan Algebra</em>; the Hermitian Jordan algebra is <em>The Hermitian Jordan Algebra</em>; the Hermitian idempotents and the Peirce decomposition are <em>Hermitian Idempotents and the Peirce Decomposition</em>; the general self-adjoint permutation law is <em>The Eigenvalue Decomposition of a Self-Adjoint Element</em>; and the form-theoretic orthogonality of the spectral idempotents is <em>The Eigenvalue Decomposition with respect to a Degree-2 Form</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>a field of characteristic not two</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>an involution of $F$</td>
+</tr>
+<tr>
+<td>$F_{0}=F^{\varsigma}$</td>
+<td>the fixed field of $\varsigma$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a finite-dimensional unital associative $F$-algebra</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>a $\varsigma$-semilinear involution of $A$</td>
+</tr>
+<tr>
+<td>$H(A)$</td>
+<td>the Hermitian elements, $h^{*}=h$</td>
+</tr>
+<tr>
+<td>$S(A)$</td>
+<td>the skew-Hermitian elements, $s^{*}=-s$</td>
+</tr>
+<tr>
+<td>$\circ$</td>
+<td>the symmetrised product $\tfrac12(xy+yx)$ on $H(A)$</td>
+</tr>
+<tr>
+<td>$J(A)=(H(A),\circ)$</td>
+<td>the Hermitian Jordan algebra over $F_{0}$</td>
+</tr>
+<tr>
+<td>$T(x,y)=\tau(xy)$</td>
+<td>the trace form of the Hermitian Jordan algebra</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the associative trace of $A$</td>
+</tr>
+<tr>
+<td>$m_{h}$</td>
+<td>the common minimal polynomial over $F$ and $F_{0}$</td>
+</tr>
+<tr>
+<td>$\sigma(h)$</td>
+<td>the associative spectrum, the roots of $m_{h}$ in $F$</td>
+</tr>
+<tr>
+<td>$\sigma_{0}(h)$</td>
+<td>the Hermitian spectrum, the roots of $m_{h}$ in $F_{0}$</td>
+</tr>
+<tr>
+<td>$h=\sum_{i}\lambda_{i}e_{i}$</td>
+<td>the Hermitian spectral resolution</td>
+</tr>
+<tr>
+<td>$e_{i}$</td>
+<td>Hermitian idempotents, $e_{i}^{2}=e_{i}=e_{i}^{*}$, $e_{i}e_{j}=\delta_{ij}e_{i}$</td>
+</tr>
+<tr>
+<td>$\mathrm{J}_{ii}$, $\mathrm{J}_{ij}$</td>
+<td>the Jordan Peirce spaces of the family</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>the permutation of the associative eigenprojectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions of the first and the second kind and the descent to the fixed field.</li>
+<li>Israel Nathan Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the Hermitian elements and their polynomial calculus.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Hermitian Jordan algebra, its Peirce decomposition and its spectral theory.</li>
+<li>Jacques Faraut and Adam Korányi, <em>Analysis on Symmetric Cones</em> (Oxford University Press, 1994), for the formally real case, the positive cone and the spectral theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the associative eigenvalue decomposition and the Peirce decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

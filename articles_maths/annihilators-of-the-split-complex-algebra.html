@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the Split-Complex Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-split-complex-algebra"><strong>Annihilators of the Split-Complex Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Being a zero divisor of a product is a property of one element alone: it says that <em>some</em> nonzero partner exists that the element kills. The annihilator says <em>which</em> partners those are, and it is the finer object. It is the set of elements killed by a fixed element,</p>
+<p>$$
+A(Q_2)=\{Q_1:Q_2Q_1=0\},\qquad B(Q_2)=\{Q_1:Q_1Q_2=0\},
+$$</p>
+<p>the left and the right annihilator (<em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, §<em>The Zero Divisor and the Annihilator</em>). When the product is carried by a multiplication operator the annihilator is the kernel of that operator, so it is a linear subspace.</p>
+<p>The block of this article is the <strong>general plain multiplication</strong>, the plain product of the split-complex algebra,</p>
+<p>$$
+Q_2Q_1=(q_2q_1+q'_2q'_1)+j(q_2q'_1+q'_2q_1).
+$$</p>
+<p>It is associative, commutative and unital, and the algebra is the product of two copies of $\mathbb{R}$, isomorphic to $\mathbb{R}\times\mathbb{R}$. Its zero divisors are the nonzero elements of the null cone $\mathcal{N}$, and such an element is a rank-one matrix in the regular matrix model (<em>Zero Divisors of the Split-Complex Algebra</em>, above this article in this category). The annihilator is the kernel of the corresponding multiplication: it is $\{0\}$ off the null cone, a real line on the nonzero part of the cone, and the whole algebra at the origin, and because the algebra is commutative the two sides carry the <strong>same</strong> subspace. The article owns that reading, the multiplication operators with their ranks, and the shape of the annihilator on the distinguished subspaces; the zero-divisor set is the cited article's.</p>
+<p><strong>The results.</strong> The annihilator of an element is the set of partners that it kills. For the general plain product the multiplication operator $L_Q$ has trace $2q$ and determinant $Q\bar Q=q^{2}-q'^{2}$; its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin. Both annihilators of an element coincide; they are trivial off the null cone, a real line on the nonzero part of the cone, and the whole algebra at the origin. The two null lines annihilate one another, $\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-}$ and $\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the annihilator of the origin is the whole algebra, and the annihilator of the whole algebra is the origin.</p>
+<h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
+<p><strong>The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and for a nonzero element both are nonzero exactly when the element is a zero divisor of the corresponding side.</strong></p>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{D}$ and let $Q_2\in\mathbb{D}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $Q_2$ in $\star$ are</p>
+<p>$$
+A_\star(Q_2)=\{Q_1:Q_2\star Q_1=0\},\qquad
+B_\star(Q_2)=\{Q_1:Q_1\star Q_2=0\}.
+$$</p>
+<p>They are the kernels of the left and the right multiplication. For $Q_2\neq0$ they are nonzero exactly when $Q_2$ is a zero divisor of the corresponding side; at $Q_2=0$ the annihilator is the whole algebra, although $0$ is not a zero divisor.</p>
+<p>Throughout this article the product is the <strong>general plain multiplication</strong> $\star$, and unqualified, <em>annihilator</em> means the annihilator of $\star$. The two one-sided multiplications are the operators</p>
+<p>$$
+L_{Q_2}Q_1=Q_2Q_1,\qquad R_{Q_2}Q_1=Q_1Q_2,
+$$</p>
+<p>the left and the right multiplication of the plain algebra. The block is the parent of the other products of the space: it is associative and commutative, and its annihilators are the model for the two-sided reading. The block carries an involution, the conjugation, which is an automorphism; because the product is commutative, the involution does not separate the sides, and the two annihilators of an element are equal.</p>
+<p><strong>Proposition (the two sides coincide).</strong> For every $Q_2\in\mathbb{D}$,</p>
+<p>$$
+A(Q_2)=B(Q_2).
+$$</p>
+<p><strong>Proof.</strong> The plain product is commutative, so $Q_2Q_1=Q_1Q_2$ for every $Q_1$, and the two defining equations are the same.</p>
+<p><strong>Proposition (the annihilator is an ideal).</strong> For every $Q_2$, the annihilator $A(Q_2)$ is an ideal of the plain algebra.</p>
+<p><strong>Proof.</strong> If $Q_1,Q_1'\in A(Q_2)$ then $Q_2(Q_1+Q_1')=Q_2Q_1+Q_2Q_1'=0$, so the set is closed under addition. If $Q_1\in A(Q_2)$ and $R\in\mathbb{D}$ then $Q_2(RQ_1)=R(Q_2Q_1)=0$, so it is closed under multiplication by arbitrary elements. It is nonempty because it contains $0$.</p>
+<h2 id="the-multiplication-operators-and-their-ranks">The Multiplication Operators and Their Ranks</h2>
+<p><strong>The left multiplication $L_Q$ is the real-linear operator of matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ in the basis $1,j$; its trace is $2q$, its determinant is $Q\bar Q=q^{2}-q'^{2}$, and its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin.</strong></p>
+<p><strong>Definition.</strong> For $Q\in\mathbb{D}$ the <strong>left multiplication</strong> by $Q$ is the map</p>
+<p>$$
+L_Q:\mathbb{D}\longrightarrow\mathbb{D},\qquad L_Q(B)=QB.
+$$</p>
+<p>Because the algebra is commutative, $L_Q=R_Q$, and the article writes $L_Q$ for both.</p>
+<p><strong>Proposition (the matrix).</strong> In the basis $1,j$ the operator $L_Q$ has the matrix</p>
+<p>$$
+\mathsf{L}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+$$</p>
+<p>with trace $2q$ and determinant $q^{2}-q'^{2}=Q\bar Q$.</p>
+<p><strong>Proof.</strong> $L_Q(1)=Q=q+jq'$ and $L_Q(j)=Qj=q'+jq$; the two columns are the coordinates of these images, $(q,q')$ and $(q',q)$. The trace and the determinant are read from the matrix.</p>
+<p><strong>Proposition (the rank).</strong> The rank of $L_Q$ is</p>
+<p>$$
+\operatorname{rank}L_Q=
+\begin{cases}
+2, & Q\bar Q\neq0,\\
+1, & Q\bar Q=0\text{ and }Q\neq0,\\
+0, & Q=0.
+\end{cases}
+$$</p>
+<p><strong>Proof.</strong> The determinant is $Q\bar Q$, so the rank is $2$ exactly when the determinant is nonzero. When $Q\neq0$ and $Q\bar Q=0$, the matrix is nonzero and singular, so its rank is $1$. At $Q=0$ the matrix is zero.</p>
+<p><strong>Corollary (the kernel is the annihilator).</strong> For every $Q$,</p>
+<p>$$
+\ker L_Q=A(Q)=\{B:QB=0\}.
+$$</p>
+<p>The rank-nullity theorem gives</p>
+<p>$$
+\dim A(Q)=2-\operatorname{rank}L_Q,
+$$</p>
+<p>so the annihilator has dimension $0$ off the null cone, dimension $1$ on the nonzero part of the cone, and dimension $2$ at the origin.</p>
+<p><strong>Remark (the eigenvalues and the eigenlines).</strong> The characteristic polynomial of $\mathsf{L}(Q)$ is</p>
+<p>$$
+\lambda^{2}-2q\lambda+(q^{2}-q'^{2})=(\lambda-Q_{+})(\lambda-Q_{-}),
+$$</p>
+<p>so the eigenvalues are the idempotent coordinates $Q_{+}=q+q'$ and $Q_{-}=q-q'$, with eigenvectors $\Pi_{+}$ and $\Pi_{-}$. The operator is diagonal in the idempotent basis, $L_Q\Pi_{\pm}=Q_{\pm}\Pi_{\pm}$; it is singular exactly when one eigenvalue vanishes, and then its kernel is the eigenline of the vanishing eigenvalue. The matrix is symmetric, so $L_Q$ is self-adjoint for the Euclidean form.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<p><strong>The annihilator of a nonzero element is $\{0\}$ off the null cone and the opposite null line on the cone; the annihilator of the origin is the whole algebra.</strong></p>
+<p><strong>Theorem (the annihilator).</strong> For $Q\in\mathbb{D}$,</p>
+<p>$$
+A(Q)=
+\begin{cases}
+\{0\}, & Q\bar Q\neq0,\\
+\mathbb{R}\Pi_{-}, & Q=\lambda\Pi_{+},\ \lambda\neq0,\\
+\mathbb{R}\Pi_{+}, & Q=\lambda\Pi_{-},\ \lambda\neq0,\\
+\mathbb{D}, & Q=0.
+\end{cases}
+$$</p>
+<p><strong>Proof.</strong> The first case is the invertibility criterion: if $Q$ is a unit then $QB=0$ implies $B=Q^{-1}0=0$. For the second, write $B=B_{+}\Pi_{+}+B_{-}\Pi_{-}$; then $QB=\lambda B_{+}\Pi_{+}$, which vanishes exactly when $B_{+}=0$, that is $B\in\mathbb{R}\Pi_{-}$. The third case is symmetric. The fourth is the definition: $0\cdot B=0$ for every $B$.</p>
+<p><strong>Corollary (the dichotomy).</strong> A nonzero element is a zero divisor exactly when its annihilator is nonzero, and then the annihilator is a line. The annihilator of a zero divisor is never the line that carries the element itself: the two null lines annihilate one another.</p>
+<p><strong>Remark (the origin is not a zero divisor).</strong> The origin has the largest annihilator, the whole algebra, and it is excluded from the zero-divisor set. The annihilator is therefore not a faithful witness of the zero-divisor property at the origin: it is maximal there, while the element is not a divisor. The convention is the one of <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
+<h2 id="the-annihilator-of-an-ideal">The Annihilator of an Ideal</h2>
+<p><strong>The annihilator of an ideal is an ideal, and on the two minimal ideals it exchanges them: $\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-}$, $\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the annihilator of the whole algebra is the origin, and the annihilator of the origin is the whole algebra.</strong></p>
+<p><strong>Definition.</strong> For a subset $S\subseteq\mathbb{D}$ the <strong>annihilator</strong> of $S$ is</p>
+<p>$$
+\operatorname{ann}(S)=\{B:QB=0\text{ for every }Q\in S\}.
+$$</p>
+<p>For an ideal $I$ the annihilator is an ideal, and it is the intersection of the annihilators of the elements of $I$.</p>
+<p><strong>Proposition (the minimal ideals).</strong> The two minimal ideals are the two null lines, and</p>
+<p>$$
+\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-},\qquad
+\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}.
+$$</p>
+<p><strong>Proof.</strong> The annihilator of $\mathbb{R}\Pi_{+}$ is the intersection over $\lambda\neq0$ of $\operatorname{ann}(\lambda\Pi_{+})$, each of which is $\mathbb{R}\Pi_{-}$; the intersection is $\mathbb{R}\Pi_{-}$. The other case is symmetric.</p>
+<p><strong>Proposition (the two extremes).</strong></p>
+<p>$$
+\operatorname{ann}(\mathbb{D})=\{0\},\qquad \operatorname{ann}(\{0\})=\mathbb{D}.
+$$</p>
+<p><strong>Proof.</strong> If $B$ annihilates every element, it annihilates $1$, so $B=0$. Every element annihilates $0$.</p>
+<p><strong>Proposition (the null cone).</strong> $\operatorname{ann}(\mathcal{N})=\{0\}$.</p>
+<p><strong>Proof.</strong> The null cone contains $\Pi_{+}$ and $\Pi_{-}$, so an annihilator of the cone lies in $\mathbb{R}\Pi_{-}\cap\mathbb{R}\Pi_{+}=\{0\}$.</p>
+<p><strong>Corollary (the double annihilator).</strong> On the ideals of $\mathbb{D}$ the annihilator is an involution:</p>
+<p>$$
+\operatorname{ann}(\operatorname{ann}(I))=I
+$$</p>
+<p>for $I=0$, $I=\mathbb{R}\Pi_{+}$, $I=\mathbb{R}\Pi_{-}$ and $I=\mathbb{D}$.</p>
+<p><strong>Proof.</strong> Direct from the two propositions: $\operatorname{ann}(\operatorname{ann}(0))=\operatorname{ann}(\mathbb{D})=0$; $\operatorname{ann}(\operatorname{ann}(\mathbb{R}\Pi_{+}))=\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the other line is symmetric; $\operatorname{ann}(\operatorname{ann}(\mathbb{D}))=\operatorname{ann}(0)=\mathbb{D}$.</p>
+<h2 id="the-annihilator-on-the-distinguished-subspaces">The Annihilator on the Distinguished Subspaces</h2>
+<p><strong>On the two eigenspaces of the conjugation every nonzero element has zero annihilator; on the two idempotent lines every nonzero element has the opposite line as its annihilator; the origin has the whole algebra.</strong></p>
+<p>The distinguished one-dimensional subspaces are the real line $\mathbb{R}_{\mathbb{D}}$, the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, and the two idempotent lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.</p>
+<h3 id="the-real-subspace-math131">The Real Subspace $\mathbb{R}_{\mathbb{D}}$</h3>
+<p>For $Q=q\neq0$ the operator $L_Q$ is multiplication by the nonzero real number $q$, of rank $2$ and kernel $\{0\}$. Every nonzero real number is a unit, and its annihilator is trivial.</p>
+<h3 id="the-split-imaginary-subspace-math137">The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{D}}$</h3>
+<p>For $Q=jq'$ with $q'\neq0$ the operator $L_Q$ is multiplication by $jq'$, of matrix $\begin{pmatrix}0&q'\\q'&0\end{pmatrix}$, of determinant $-q'^{2}\neq0$ and rank $2$. The annihilator is $\{0\}$.</p>
+<h3 id="the-idempotent-lines">The Idempotent Lines</h3>
+<p>For $Q=\lambda\Pi_{+}$ with $\lambda\neq0$ the matrix is $\lambda\begin{pmatrix}1&1\\1&1\end{pmatrix}$, of rank $1$ and kernel $\mathbb{R}(1,-1)=\mathbb{R}\Pi_{-}$. For $Q=\lambda\Pi_{-}$ the matrix is $\lambda\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$, of rank $1$ and kernel $\mathbb{R}(1,1)=\mathbb{R}\Pi_{+}$.</p>
+<h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>$Q$</th>
+<th>rank $L_Q$</th>
+<th>annihilator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{D}}$</td>
+<td>$q\neq0$</td>
+<td>$2$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$j\mathbb{R}_{\mathbb{D}}$</td>
+<td>$jq'\neq0$</td>
+<td>$2$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\Pi_{+}$</td>
+<td>$\lambda\Pi_{+}\neq0$</td>
+<td>$1$</td>
+<td>$\mathbb{R}\Pi_{-}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\Pi_{-}$</td>
+<td>$\lambda\Pi_{-}\neq0$</td>
+<td>$1$</td>
+<td>$\mathbb{R}\Pi_{+}$</td>
+</tr>
+<tr>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\mathbb{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-annihilator-and-the-matrix-model">The Annihilator and the Matrix Model</h2>
+<p><strong>In the regular matrix model the annihilator is the kernel of the matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$; the rank-one matrices of the null cone have a one-dimensional kernel, and the kernel is the opposite null line.</strong></p>
+<p>The regular representation sends $Q$ to the matrix</p>
+<p>$$
+\mathsf{M}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+$$</p>
+<p>an injective homomorphism of the algebra into $M_2(\mathbb{R})$ (<em>The Matrix Element Representations of the Split-Complexoid</em>). The left multiplication $L_Q$ is the same matrix acting on column vectors, and its kernel is the annihilator:</p>
+<p>$$
+\ker\mathsf{M}(Q)=A(Q).
+$$</p>
+<p>Off the null cone the determinant is nonzero and the kernel is $\{0\}$; on the nonzero part of the cone the determinant is zero and the rank is one, so the kernel is a line. The eigenvectors of $\mathsf{M}(Q)$ are $\Pi_{+}$ and $\Pi_{-}$, with eigenvalues $Q_{+}$ and $Q_{-}$; the kernel is the eigenline of the vanishing eigenvalue, which is the opposite null line. The matrix model therefore reads the annihilator as the kernel of a singular $2\times2$ matrix of rank one.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element is the set of partners that it kills. For the plain product the two sides coincide, $A(Q)=B(Q)$, and the annihilator is an ideal and the kernel of the multiplication operator $L_Q$, of matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$, trace $2q$ and determinant $Q\bar Q$. Its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin, so the annihilator is $\{0\}$ off the cone, the opposite null line on the cone, and the whole algebra at the origin:</p>
+<p>$$
+A(Q)=
+\begin{cases}
+\{0\}, & Q\bar Q\neq0,\\
+\mathbb{R}\Pi_{-}, & Q=\lambda\Pi_{+},\ \lambda\neq0,\\
+\mathbb{R}\Pi_{+}, & Q=\lambda\Pi_{-},\ \lambda\neq0,\\
+\mathbb{D}, & Q=0.
+\end{cases}
+$$</p>
+<p>The two null lines annihilate one another, the annihilator of the whole algebra is the origin, the annihilator of the origin is the whole algebra, and the double annihilator restores every ideal. On the two eigenspaces of the conjugation the annihilator is trivial away from the origin; on the two idempotent lines it is the opposite line; the origin has the whole algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$Q=q+jq'$</td>
+<td>General split complex number</td>
+</tr>
+<tr>
+<td>$L_Q(B)=QB$</td>
+<td>Left multiplication by $Q$; equal to the right multiplication</td>
+</tr>
+<tr>
+<td>$\mathsf{L}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$</td>
+<td>Matrix of $L_Q$ in the basis $1,j$</td>
+</tr>
+<tr>
+<td>$A(Q)=\ker L_Q=\{B:QB=0\}$</td>
+<td>Annihilator of $Q$; equal to the right annihilator</td>
+</tr>
+<tr>
+<td>$\operatorname{ann}(S)=\{B:QB=0\ \forall Q\in S\}$</td>
+<td>Annihilator of a set</td>
+</tr>
+<tr>
+<td>$\operatorname{ann}(\mathbb{R}\Pi_{\pm})=\mathbb{R}\Pi_{\mp}$</td>
+<td>The two null lines annihilate one another</td>
+</tr>
+<tr>
+<td>$\operatorname{ann}(\mathbb{D})=\{0\}$, $\operatorname{ann}(\{0\})=\mathbb{D}$</td>
+<td>The two extremes</td>
+</tr>
+<tr>
+<td>$\operatorname{ann}(\operatorname{ann}(I))=I$</td>
+<td>The double annihilator on the ideals</td>
+</tr>
+<tr>
+<td>$Q_{\pm}=q\pm q'$</td>
+<td>Eigenvalues of $L_Q$, with eigenvectors $\Pi_{\pm}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="zero-divisors-of-the-split-complex-algebra.html">Zero Divisors of the Split-Complex Algebra</a>, for the zero-divisor set, its two families and the criterion.</li>
+<li><a href="norm-and-invertibility-in-the-general-split-complex-algebra.html">Norm and Invertibility in the General Split-Complex Algebra</a>, for the invertibility criterion and the group of units.</li>
+<li><a href="ideals-and-peirce-decomposition-of-the-split-complex-algebra.html">Ideals and Peirce Decomposition of the Split-Complex Algebra</a>, for the two minimal ideals and the Peirce decomposition.</li>
+<li><a href="the-matrix-element-representations-of-the-split-complexoid.html">The Matrix Element Representations of the Split-Complexoid</a>, for the regular matrix model and its kernel.</li>
+<li><a href="the-two-products-of-the-split-complexoid-space.html">The Two Products of the Split-Complexoid Space</a>, for the two products and the multiplication operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

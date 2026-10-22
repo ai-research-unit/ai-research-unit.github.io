@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential, the Logarithm and the Generator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-the-logarithm-and-the-generator"><strong>The Exponential, the Logarithm and the Generator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The exponential of a biquaternion is never zero. Its image is exactly the group of units, and the zero-divisor cone is the boundary that it never reaches. The logarithm is the inverse, and it exists on the units and only there. A logarithm of a unit is a <strong>generator</strong>: the element whose one-parameter exponential is the process.</p>
+<p>The three statements belong together. The image says which processes have a generator. The kernel says how many generators a process has. The cone says where the answer stops. This article reads the three, and closes with the question that the reading answers: <strong>which processes have a generator?</strong></p>
+<p>The article owns no theorem. The closed forms of the exponential and the logarithm, the kernel, the principal branch and the fibre are those of <em>Biquaternion Elementary Functions</em>. The boundary behaviour is that of <em>Exponential Polar Decomposition of Biquaternions</em>. The reversible/irreversible dichotomy is that of <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>. The article states the results, links to the proofs, and records the interpretation and its limits.</p>
+<p><strong>Placement.</strong> The article belongs to the Algebra block of the category, in the Element and Operator Representations group, after <em>The Exponential Word and Its Boundary</em> and before <em>The Krein Form and the Indefinite Structure</em>. It is the category article that reads the exponential and the logarithm; the mathematics stays in the Analysis group of the Mathematical menu.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$, and $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The vector part has the complex norm $B=\sqrt{(\vec Q,\vec Q)}$ and, for $B\neq0$, the axis $\vec U=\vec Q/B$ with $\vec U^2=-e_t$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\tilde Q$ is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The closed forms of the exponential, in the oscillatory and nilpotent regimes</td>
+<td><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+</tr>
+<tr>
+<td>The kernel of the exponential and its parity-matched lattice</td>
+<td><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+</tr>
+<tr>
+<td>The logarithm by regime, the principal branch and the fibre</td>
+<td><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+</tr>
+<tr>
+<td>The domain, the principal domain and the cut walls</td>
+<td><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+</tr>
+<tr>
+<td>The exponential word and the boundary of the polar decomposition</td>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The group of units and the complement of the cone</td>
+<td><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-image">The Image</h2>
+<p>The exponential is entire and its values are units,</p>
+<p>$$
+\exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},
+\qquad
+\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)\neq0.
+$$</p>
+<p>It is surjective. Every unit has a logarithm, because $\mathbb{B}\cong\mathsf M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm. The image is therefore exactly the group of units, and the zero-divisor cone is exactly the complement of the image.</p>
+<p>The closed form separates the two regimes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Condition</th>
+<th>$\exp\tilde Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oscillatory</td>
+<td>$B\neq0$</td>
+<td>$\exp(Q_t)\left(\cos B\,e_t+\sin B\,\vec U\right)$</td>
+</tr>
+<tr>
+<td>Nilpotent or scalar</td>
+<td>$B=0$</td>
+<td>$\exp(Q_t)\left(e_t+\vec Q\right)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first row is a scale times a point of the unit sphere in the plane $\{e_t,\vec U\}$. The second row is a scale times a unipotent element. In both rows the value is a unit, and in both rows the value has a logarithm.</p>
+<p>The image is open and the cone is its boundary. That is the precise sense in which the cone is the wall: not a set of values, but the set of limits that the values approach and never attain.</p>
+<h2 id="the-kernel">The Kernel</h2>
+<p>The exponential is not injective. Its kernel is the set of exponents that exponentiate to the identity,</p>
+<p>$$
+\ker\exp=\left\{\tilde L:\exp\tilde L=e_t\right\}.
+$$</p>
+<p>The characterisation is exact: $\tilde L$ lies in the kernel exactly when it is diagonalisable over $\mathbb{C}$ and every eigenvalue lies in $2\pi i\mathbb{Z}$. In the algebra the condition reads as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Exponent</th>
+<th>Exponential</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2\pi i k\,e_t$, $k\in\mathbb{Z}$</td>
+<td>$e_t$</td>
+<td>the central period of the phase</td>
+</tr>
+<tr>
+<td>$2\pi j\,\vec U$, $\vec U^2=-e_t$</td>
+<td>$e_t$</td>
+<td>the period of a pure root of $-1$</td>
+</tr>
+<tr>
+<td>$\pi i\,e_t+\pi\,\vec U$</td>
+<td>$e_t$</td>
+<td>the half-shifts, which must occur together</td>
+</tr>
+<tr>
+<td>$2\pi i k\,e_t+2\pi j\,\vec U$</td>
+<td>$e_t$</td>
+<td>the sum of two commuting periods</td>
+</tr>
+</tbody>
+</table></div>
+<p>For $B\neq0$ the complete kernel on the diagonal part is the <strong>parity-matched lattice</strong></p>
+<p>$$
+L=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\right\}.
+$$</p>
+<p>The scalar and the vector shifts cannot be chosen independently. The rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$ is the sublattice of index two on which both integers are even, and the other coset is $\pi i e_t+\pi\vec U$. The matching is the statement that the two eigenvalue logarithms must be shifted in step.</p>
+<p>The kernel is <strong>not a subgroup</strong>. It is not closed under addition, because the exponential is not a homomorphism. The sum of two kernel elements need not lie in the kernel: $2\pi\vec e_x$ and $2\pi\vec e_y$ both exponentiate to $e_t$, while $2\pi(\vec e_x+\vec e_y)$ does not. The kernel is a union of conjugacy classes, and it meets the cone: $\pi i e_t+\pi\vec e_z$ has norm zero and exponentiate to the identity.</p>
+<h2 id="the-logarithm">The Logarithm</h2>
+<p>A logarithm of a unit $\tilde Q$ is any $\tilde L$ with $\exp\tilde L=\tilde Q$. The principal logarithm is fixed by the eigenvalues, and the full fibre is the principal value plus the kernel, with a qualification for the scalar case.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Principal logarithm</th>
+<th>Ambiguity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B\neq0$</td>
+<td>$\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec U$</td>
+<td>$2\pi i\left(k_+\tilde\Pi_++k_-\tilde\Pi_-\right)$, $k_\pm\in\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$\operatorname{Log}Q_t\,e_t+\dfrac{\vec Q}{Q_t}$</td>
+<td>$2\pi i k\,e_t$, $k\in\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\vec Q=0$</td>
+<td>$\operatorname{Log}Q_t\,e_t$</td>
+<td>scalar logarithms and vector logarithms, not a coset</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are lattice cosets. The third is not: a scalar unit has logarithms with a nonzero vector part, whose vector component runs over the complex quadric $(\vec Q_1,\vec Q_1)=(\pi n)^2$. The fibre over a scalar is therefore larger than a translate of the kernel by a lattice, and the coset language must not be used there.</p>
+<p>The eigenvalue formula is the general one. The scalar part of the logarithm is fixed by the norm up to the imaginary part, and the vector part is the complex angle along the axis. The principal branch takes the arguments of $\lambda_\pm$ in $(-\pi,\pi]$; the other branches are the lattice shifts.</p>
+<h2 id="the-generator-is-a-gauge">The Generator Is a Gauge</h2>
+<p>A <strong>generator</strong> of a unit $\tilde U$ is an element $\tilde L$ with</p>
+<p>$$
+\exp\tilde L=\tilde U.
+$$</p>
+<p>The one-parameter group is $\tilde U(t)=\exp(t\tilde L)$, with $\tilde U(1)=\tilde U$. The generator is the logarithm, and the ambiguity of the logarithm is the ambiguity of the generator.</p>
+<p>The ambiguity has three layers.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Shift</th>
+<th>What it changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>central phase</td>
+<td>$2\pi i k\,e_t$</td>
+<td>nothing observable; the sandwich is blind to it</td>
+</tr>
+<tr>
+<td>full rotation</td>
+<td>$2\pi j\,\vec U$</td>
+<td>nothing; a full turn is the identity</td>
+</tr>
+<tr>
+<td>parity-matched pair</td>
+<td>$\pi i\,e_t+\pi\,\vec U$</td>
+<td>nothing; the two half-shifts cancel</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first layer is the global phase. The second is not central: $\vec U$ does not commute with the algebra, and a shift by $2\pi\vec U$ is a full rotation of the generator, not a global phase. The third couples the two. The kernel is therefore not merely the centre, and the gauge is not merely a $\mathrm{U}(1)$.</p>
+<p>The layer structure is also the reason the quotient language fails. The full kernel is not a subgroup, so the set of generators is not a coset of it. For a non-scalar unit the fibre is a coset of the part of the kernel that lies in the commutative algebra $\mathbb{C}[\tilde Q]$, which is the lattice $L$ and is a subgroup. For a scalar unit the fibre is not a coset of any lattice at all.</p>
+<p>The physical reading is that a generator is a <strong>coordinate on the group</strong>, not an element uniquely attached to the process. Two generators that differ by a kernel element produce the same one-parameter group at $t=1$, and the difference is unobservable in the process. The generator is a gauge choice in the precise sense that the algebra does not select one.</p>
+<h2 id="the-cone-as-the-boundary">The Cone as the Boundary</h2>
+<p>The logarithm is defined on the units and nowhere else. The cone is the boundary of the domain, and it is also the boundary of the image of the exponential.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Point</th>
+<th>In the image of $\exp$?</th>
+<th>Logarithm?</th>
+<th>How it is reached</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interior, $\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td>yes</td>
+<td>yes</td>
+<td>a value</td>
+</tr>
+<tr>
+<td>idempotent stratum, $Q_t\neq0$, $\langle\tilde Q\rangle_{\natural}=0$</td>
+<td>no</td>
+<td>no</td>
+<td>limit with $r\to0$, $\psi\to\infty$</td>
+</tr>
+<tr>
+<td>nilpotent stratum, $Q_t=0$, $\langle\tilde Q\rangle_{\natural}=0$</td>
+<td>no</td>
+<td>no</td>
+<td>rescaled limit of the unipotent line</td>
+</tr>
+</tbody>
+</table></div>
+<p>The idempotent stratum is reached by the polar word with the scale collapsing and the boost diverging at the same rate. The nilpotent stratum is reached by the rescaled unipotent line,</p>
+<p>$$
+\tilde Q=\lim_{t\to\infty}\frac{\exp(tN)-e_t}{t},
+\qquad
+N^2=0.
+$$</p>
+<p>Neither stratum is a value. The cone is the boundary in the strict sense: every point of it is a limit of units, and no point of it is a unit.</p>
+<p>The cone is also the wall of reversibility. A unit is a process that can be run backwards; a zero divisor is not. The exponential sees the difference as the difference between a value and a limit, and the logarithm sees it as the difference between a finite generator and no generator.</p>
+<h2 id="which-processes-have-a-generator">Which Processes Have a Generator?</h2>
+<p>The question has a sharp answer.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Process</th>
+<th>Element</th>
+<th>In the image of $\exp$?</th>
+<th>Generator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reversible, distinct spectrum</td>
+<td>unit, $B\neq0$</td>
+<td>yes</td>
+<td>$\tilde L$ up to the parity lattice</td>
+</tr>
+<tr>
+<td>reversible, Jordan</td>
+<td>unit, $Q_t(e_t+N)$</td>
+<td>yes</td>
+<td>$\tilde L$ up to $2\pi i\mathbb{Z}e_t$</td>
+</tr>
+<tr>
+<td>reversible, scalar</td>
+<td>unit, $Q_te_t$</td>
+<td>yes</td>
+<td>$\tilde L$ plus the vector logarithms</td>
+</tr>
+<tr>
+<td>zero divisor</td>
+<td>$2Q_t\tilde\Pi$ or $N$</td>
+<td>no</td>
+<td>none</td>
+</tr>
+<tr>
+<td>irreversible channel</td>
+<td>completely positive trace-preserving map</td>
+<td>not a single element</td>
+<td>no algebraic generator</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first three rows are the reversible processes. Every unit is $\exp\tilde L$, so every reversible process lies on a one-parameter subgroup and is continuously connected to the identity. The generator exists, and it is unique only up to the kernel.</p>
+<p>The fourth row is the zero divisor. It has no logarithm because it is not a unit, and it has no generator because it is not in the image of the exponential. The cone is the wall: a process on the cone cannot be continuously undone inside the algebra.</p>
+<p>The fifth row is the irreversible channel. An irreversible completely positive trace-preserving map is a sum of conjugations, not a single conjugation, so it is not of the form $\tilde U(\cdot)\tilde U^{-1}$ and it has no single algebraic generator. When such a map has a generator, the generator is a Lindbladian superoperator acting on the state space, not an element of $\mathbb{B}$. That object belongs to <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and it is a different kind of generator: a generator of a semigroup of maps, not the logarithm of one element.</p>
+<p>The algebra therefore answers the question in one direction only. It supplies the generators of the reversible processes, and it says that the irreversible ones have none of the same kind. It does not supply the Lindbladian, the dynamics, or the arrow of time.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>The generator is the logarithm of the process.</strong> A reversible evolution is a unit, and its generator is the element whose exponential it is. The reading is the Hamiltonian when the process is unitary and the boost or rotation exponent when it is a frame change.</li>
+<li><strong>The kernel is the gauge.</strong> A global phase, a full rotation and a parity-matched half-shift produce the same process. The reading is that the generator is a coordinate, and the coordinate is not the process.</li>
+<li><strong>The cone is the wall of reversibility.</strong> A zero divisor cannot be exponentiated back to the identity. The reading is that a process on the cone has no continuous inverse inside the algebra.</li>
+<li><strong>The parity lattice is the phase ambiguity, not a thermal spectrum.</strong> The lattice $L$ is the kernel on the diagonal part, and it is not the Matsubara lattice. The reading is a gauge ambiguity, and the two must not be identified.</li>
+<li><strong>No arrow of time is supplied.</strong> If $\tilde L$ is a generator, so is $-\tilde L$, and it generates the inverse process. The reading is that the algebra gives both directions and no selection between them.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The logarithm is not unique, and the kernel is not a subgroup. The set of generators of a unit is a lattice coset only in the non-scalar case; for a scalar unit it is larger and is not a coset. Any statement that treats the fibre as a coset of a group must be restricted to the non-scalar case.</p>
+<p>The logarithm is a coordinate, not a law. The article says which processes have a generator and how many; it does not say which generator a physical system uses, and it does not supply a dynamics.</p>
+<p>The principal branch is a convention. The cut walls of the principal logarithm are a choice of branch, not a physical boundary; the physical boundary is the cone, which no branch crosses.</p>
+<p>The parity lattice is not thermal. The Matsubara lattice is the character group of the compact thermal circle; $L$ is the kernel of the exponential on the diagonal part of one element. Identifying them would turn a gauge ambiguity into a spectrum, and the parity matching is what blocks the identification.</p>
+<p>No arrow of time, no preferred generator and no thermal reading are supplied. The algebra gives the reversible side and the wall; the rest is a boundary condition.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The exponential is entire, its image is exactly the group of units, and the zero-divisor cone is the complement of the image.</li>
+<li>The closed forms are $\exp(Q_t)(\cos B\,e_t+\sin B\,\vec U)$ for $B\neq0$ and $\exp(Q_t)(e_t+\vec Q)$ for $B=0$.</li>
+<li>The kernel is the set of diagonalisable elements with all eigenvalues in $2\pi i\mathbb{Z}$; for $B\neq0$ it is the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$.</li>
+<li>The kernel is not a subgroup, and the sum of two kernel elements need not lie in the kernel.</li>
+<li>The logarithm exists on the units and nowhere else; its fibre is a lattice coset for a non-scalar unit and a larger set for a scalar unit.</li>
+<li>A generator of a unit $\tilde U$ is any $\tilde L$ with $\exp\tilde L=\tilde U$; it is defined up to the kernel.</li>
+<li>The gauge is not merely a global phase: the kernel contains the noncentral full rotations $2\pi\vec U$.</li>
+<li>The cone is the boundary of the domain and of the image; the idempotent and nilpotent strata are limits, not values.</li>
+<li>Exactly the reversible processes have an algebraic generator; a zero divisor has none, and an irreversible channel has a Lindbladian superoperator rather than an element.</li>
+<li>The algebra supplies no dynamics, no preferred generator and no arrow of time.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a general biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^3$</td>
+</tr>
+<tr>
+<td>$B=\sqrt{(\vec Q,\vec Q)}$</td>
+<td>the complex norm of the vector part</td>
+</tr>
+<tr>
+<td>$\vec U=\vec Q/B$</td>
+<td>the axis, a pure root of $-1$, defined for $B\neq0$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$</td>
+<td>the eigenprojections, $\vec\Xi=-i\vec U$</td>
+</tr>
+<tr>
+<td>$\ker\exp$</td>
+<td>the exponents that exponentiate to $e_t$</td>
+</tr>
+<tr>
+<td>$L=\pi i m\,e_t+\pi n\,\vec U$, $m\equiv n\pmod2$</td>
+<td>the parity-matched lattice</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}\tilde Q$</td>
+<td>the principal logarithm</td>
+</tr>
+<tr>
+<td>$\tilde L$</td>
+<td>a generator, an element with $\exp\tilde L=\tilde U$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}$</td>
+<td>the group of units, the complement of the cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm, the kernel and the fibre.</li>
+<li><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a>, for the word, the defect and the boundary of the decomposition.</li>
+<li><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</a>, for the units and the cone.</li>
+<li><a href="quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible/Irreversible Dichotomy</a>, for the Lindbladian side of the dichotomy.</li>
+<li><a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a>, for the topological reading of the unit group.</li>
+<li><a href="the-discrete-lattice-and-the-thermal-circle.html">The Discrete Lattice and the Thermal Circle</a>, for the distinction between the parity lattice and the Matsubara lattice.</li>
+<li><a href="the-exponential-word-and-its-boundary.html">The Exponential Word and Its Boundary</a>, for the polar word and the two strata of the cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

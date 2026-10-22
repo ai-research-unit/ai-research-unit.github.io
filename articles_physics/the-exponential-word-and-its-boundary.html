@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential Word and Its Boundary — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-word-and-its-boundary"><strong>The Exponential Word and Its Boundary</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every biquaternion off the zero-divisor cone is an ordered product of four exponentials: a positive scale, a central phase, a Hermitian boost and a real quaternion rotor. The product carries eight real parameters, the real dimension of the algebra, and it is a parametrization of the group of units.</p>
+<p>The parametrization fails in two ways, and they are different. The four exponents do not add: the exponential of their sum is not the product, because the boost and the rotor do not commute. And the parametrization does not reach the cone: on the cone the scale collapses and the rapidity diverges, so the word has boundary values rather than a value.</p>
+<p>The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of <em>Exponential Polar Decomposition of Biquaternions</em> and <em>The Polar Decomposition of Biquaternions</em>. The article owns the physical reading and its limits.</p>
+<p><strong>Placement.</strong> The article belongs to the Algebra block of the category, after <em>The Polar Decomposition and Its Three Pairings</em> and before <em>The Exponential, the Logarithm and the Generator</em>. It is the boundary companion of the polar article: that article reads the four factors in the interior, and this one reads what happens at the edge.</p>
+<p><strong>Conventions.</strong> The word is</p>
+<p>$$
+\tilde Q=r\,e^{i\alpha}\,\tilde B\,\tilde u_{\mathrm r},
+\qquad
+\tilde B=\exp\left(i\frac{\psi}{2}\vec u_{\mathrm b}\right),
+\qquad
+\tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
+$$</p>
+<p>with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$. The norm is $\langle\tilde Q\rangle_{\natural}=r^2e^{2i\alpha}$, and the element is a unit exactly when $r\neq0$.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The four factors, their ranges and the uniqueness of the word</td>
+<td><a href="../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html">The Polar Decomposition of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The exponential word, the defect and the single logarithm</td>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The kernel, the fibre and the section of the word map</td>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The two strata of the zero-divisor cone</td>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The minimal idempotents and the pure roots of $+1$</td>
+<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The exponential closed forms and the kernel</td>
+<td><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-word">The Word</h2>
+<p>The four factors and their ranges are collected in one table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Factor</th>
+<th>Name</th>
+<th>Exponent</th>
+<th>Range</th>
+<th>Real dimension</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$r$</td>
+<td>scale</td>
+<td>—</td>
+<td>$r>0$</td>
+<td>$1$</td>
+<td>dilation by $r^2$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$e^{i\alpha}$</td>
+<td>central phase</td>
+<td>$i\alpha$</td>
+<td>$\alpha\in(-\pi/2,\pi/2]$</td>
+<td>$1$</td>
+<td>multiplication by a scalar</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\tilde B=e^{i\psi\vec u_{\mathrm b}/2}$</td>
+<td>boost</td>
+<td>$i\frac{\psi}{2}\vec u_{\mathrm b}$</td>
+<td>$\psi\ge0$</td>
+<td>$3$</td>
+<td>congruence by $\tilde B$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$</td>
+<td>rotor</td>
+<td>$\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\theta\in[0,2\pi]$</td>
+<td>$3$</td>
+<td>conjugation by $\tilde u_{\mathrm r}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The parameters count $1+1+3+3=8$, the real dimension of $\mathbb{B}$. The map from the parameter space to the units is surjective. It is not injective: the boost axis is undefined at $\psi=0$, the rotor axis is undefined at $\theta=0$, and the phase branch identifies the two square roots of the norm. Apart from those degeneracies, the word is unique once the branch is fixed.</p>
+<p>The word is a <strong>section of the word map</strong>, not a section of the exponential. It cuts the fibre of the parameter-to-element map to one point, up to the axis degeneracies. It does not cut the fibre of the exponential: the four exponents sum to the formal exponent, and that sum is not a logarithm.</p>
+<h2 id="the-defect">The Defect</h2>
+<p>The formal exponent is the sum of the four exponents,</p>
+<p>$$
+\tilde Q_{\log}=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+$$</p>
+<p>It is the element that the quaternion case would call the logarithm. Here it is not one:</p>
+<p>$$
+\exp\left(\tilde Q_{\log}\right)\neq\tilde Q
+\qquad\text{unless}\qquad
+[\vec u_{\mathrm b},\vec u_{\mathrm r}]=0
+\quad\text{or}\quad
+\psi\theta=0.
+$$</p>
+<p>The defect is the Baker–Campbell–Hausdorff correction. To first order,</p>
+<p>$$
+\operatorname{Log}\left(\exp\tilde H\exp\tilde K\right)
+=\tilde H+\tilde K+\frac12[\tilde H,\tilde K]+\cdots,
+$$</p>
+<p>and for $\tilde H=i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\tilde K=\frac{\theta}{2}\vec u_{\mathrm r}$ the first correction is</p>
+<p>$$
+\frac12[\tilde H,\tilde K]
+=\frac{i\psi\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
+$$</p>
+<p>which is again a boost. The sum of a boost exponent and a rotor exponent is corrected by another boost, and the true logarithm is not the sum of the four exponents.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Defect</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>axes parallel or antiparallel</td>
+<td>zero</td>
+<td>the exponents commute</td>
+</tr>
+<tr>
+<td>$\psi=0$ or $\theta=0$</td>
+<td>zero</td>
+<td>one factor is the identity</td>
+</tr>
+<tr>
+<td>general axes, $\psi\theta\neq0$</td>
+<td>nonzero</td>
+<td>the commutator is a boost</td>
+</tr>
+</tbody>
+</table></div>
+<p>The defect is not a rounding effect. It is the statement that the word is not a homomorphism: the product of two words is not the word of the product, and the four parameters of a product are not the sums of the four parameters of the factors. The word is a parametrization, and the group law in those parameters carries the correction.</p>
+<h2 id="the-cone">The Cone</h2>
+<p>The word is defined if and only if the element is a unit. On the cone the scale vanishes, the rapidity diverges, and the word has no value. The cone has two strata.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Stratum</th>
+<th>Condition</th>
+<th>Normal form</th>
+<th>Real dimension</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>idempotent</td>
+<td>$Q_t\neq0$</td>
+<td>$\tilde Q=2Q_t\tilde\Pi$, $\tilde\Pi^2=\tilde\Pi$</td>
+<td>$6$</td>
+<td>a complex multiple of a minimal idempotent</td>
+</tr>
+<tr>
+<td>nilpotent</td>
+<td>$Q_t=0$</td>
+<td>$\tilde Q=N$, $N^2=0$</td>
+<td>$4$</td>
+<td>a lightlike displacement</td>
+</tr>
+</tbody>
+</table></div>
+<p>The idempotent stratum is open and dense in the cone; the nilpotent stratum is a closed subvariety of codimension two and lies in its closure. The two are disjoint, and the scalar part distinguishes them pointwise.</p>
+<p>The two strata are the two ways a word can degenerate. The idempotent stratum is the limit of a boost that diverges while the scale collapses; the nilpotent stratum is the limit of a unipotent line after rescaling.</p>
+<h2 id="the-boundary-limits">The Boundary Limits</h2>
+<p>Take a unit complex number $\zeta$, a scale $R>0$, and the family</p>
+<p>$$
+\tilde Q(\psi)=R\,e^{-\psi/2}\,\zeta\,e^{i\psi/2\,\vec u_{\mathrm b}}\,\tilde u_{\mathrm r},
+\qquad
+\psi>0.
+$$</p>
+<p>Every member is a unit, and the limit is</p>
+<p>$$
+\tilde Q(\psi)\longrightarrow
+\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
+\qquad(\psi\to\infty).
+$$</p>
+<p>The limit is a nonzero null element of rank one. Its stratum is decided by the rotor. Write</p>
+<p>$$
+\tilde u_{\mathrm r}=a\,e_t+b\,\vec u_{\mathrm b}+\tilde u_\perp,
+\qquad
+a,b\in\mathbb{R},
+\qquad
+\tilde u_\perp\ \text{orthogonal to}\ \vec u_{\mathrm b}.
+$$</p>
+<p>Then the trace of the limit is $R\zeta(a-ib)$, and</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rotor condition</th>
+<th>Limit</th>
+<th>Stratum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a-ib\neq0$</td>
+<td>a nonzero complex multiple of a minimal idempotent</td>
+<td>idempotent</td>
+</tr>
+<tr>
+<td>$a-ib=0$, that is $a=b=0$</td>
+<td>a nonzero nilpotent</td>
+<td>nilpotent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The second row is the case in which the rotor anticommutes with the boost axis. The first is the case in which it does not. The relative orientation of the boost and the rotor therefore decides which stratum the boundary value lands on, and the rate is the same for both.</p>
+<p>The norm of the family is</p>
+<p>$$
+\langle\tilde Q(\psi)\rangle_{\natural}=R^2e^{-\psi}\zeta^2,
+$$</p>
+<p>so the distance to the cone is exponential in the rapidity. The word approaches the boundary along the exponential coordinate line of the boost, with the scale line compensating. The boost is the non-compact factor that drives the word to the boundary, and the scale is the factor that keeps the element finite.</p>
+<h2 id="the-exponential-limit">The Exponential Limit</h2>
+<p>The idempotents are not values of the exponential, because every exponential is a unit and an idempotent is not. They are limits of values:</p>
+<p>$$
+\tilde\Pi_+=\frac12\left(e_t+i\vec u\right)
+=\lim_{\psi\to\infty}\frac{\exp\left(i\frac{\psi}{2}\vec u\right)}{2\cosh\frac{\psi}{2}}
+=\lim_{\psi\to\infty}e^{-\psi/2}\exp\left(i\frac{\psi}{2}\vec u\right).
+$$</p>
+<p>The idempotent is the direction of an infinite boost, with the scale removed. The nilpotent stratum has its own version. For $N^2=0$,</p>
+<p>$$
+\exp(tN)=e_t+tN
+$$</p>
+<p>for every complex $t$, a unipotent line. The line is invertible for every finite $t$ and tends to infinity with $t$; it never reaches $N$. The rescaled limit does:</p>
+<p>$$
+N=\lim_{t\to\infty}\frac{\exp(tN)-e_t}{t}.
+$$</p>
+<p>The two strata are therefore reached only at infinity: the idempotent by the divergence of the boost, the nilpotent by the rescaled divergence of the unipotent line.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>The word is a parametrization of the units.</strong> The four factors are the scale, the phase, the rapidity and the rotation. The reading is the physical description of an element in eight real numbers, with the boost stored with half its rapidity and acting twice.</li>
+<li><strong>The defect is the non-additivity of generators.</strong> The four exponents do not add because a boost and a rotation do not commute. The reading is that the generator of a product is not the sum of the generators, and the correction is a boost.</li>
+<li>
+<p><strong>The cone is the massless wall.</strong> The scale collapses and the rapidity diverges as the element approaches the null cone. The reading is the absence of a rest frame at the speed of light, and the word's failure is the same failure as the boost parametrisation at $\beta=1$.
+The physical limit that realises the theorem, with the mass and the energy of the massive family, is <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a>.</p>
+</li>
+<li>
+<p><strong>The two strata are two kinds of boundary point.</strong> The idempotent stratum is a complex multiple of a minimal idempotent, the algebraic form of the photon; the nilpotent stratum is a lightlike displacement, not a four-momentum. The reading is the massless spectrum's two boundary behaviours, and they must not be identified.</p>
+</li>
+<li><strong>The stratum is selected by the rotor, not by the rate.</strong> The same divergence reaches an idempotent or a nilpotent according to the relative orientation of the rotor and the boost axis. The reading is that the boundary value depends on the path, not only on the point.</li>
+<li><strong>The rate is not selected by the algebra.</strong> The family can approach the cone at any exponential rate that keeps $re^{\psi/2}$ finite. The reading is that the algebra supplies the boundary values, not the approach.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The word is not a homomorphism. The product of two words is not the word of the product, and the four parameters of a product are not the sums of the four parameters. The defect is the Baker–Campbell–Hausdorff correction, and it is not a rounding effect.</p>
+<p>The boundary value is not a value. The word has no continuous extension to the cone, and the limit depends on the path. A statement about a boundary point is a statement about a family, not about the point alone.</p>
+<p>The word is defined off the cone and nowhere on it. The failure is the absence of a rest frame, not a singularity of the algebra.</p>
+<p>The branch $\alpha\in(-\pi/2,\pi/2]$ is a convention. The other square root of the norm is the same element with the other branch, and the choice is not physical.</p>
+<p>The algebra supplies no rate, no dynamics and no massless particle. It supplies the parametrization, the defect, the two strata and the boundary values. The rate, the path and the identification of a stratum with a physical particle are supplied by the model, not by the algebra.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Every unit is $r e^{i\alpha}\tilde B\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.</li>
+<li>The word is surjective onto the units and not injective at the degenerate axes; it is a section of the word map, not of the exponential.</li>
+<li>The formal exponent is the sum of the four exponents, and its exponential is not the element; the defect is the Baker–Campbell–Hausdorff correction, whose first term is a boost.</li>
+<li>The defect vanishes when the boost and rotor axes commute or when one of the two parameters vanishes.</li>
+<li>The word is defined off the zero-divisor cone; on the cone the scale collapses and the rapidity diverges.</li>
+<li>The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero lightlike displacement.</li>
+<li>The boundary limit of the family $R e^{-\psi/2}\zeta e^{i\psi\vec u_{\mathrm b}/2}\tilde u_{\mathrm r}$ is $\frac{R\zeta}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$; it is an idempotent when the rotor does not anticommute with the boost axis and a nilpotent when it does.</li>
+<li>The rate of approach is exponential and is not selected by the algebra.</li>
+<li>The idempotent is the direction of an infinite boost; the nilpotent is the rescaled limit of the unipotent line.</li>
+<li>The word is a parametrization, not a homomorphism, and the boundary value is not a value.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$</td>
+<td>the positive scale, $r=\lvert N\rvert^{1/2}$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$</td>
+</tr>
+<tr>
+<td>$\tilde B=e^{i\psi\vec u_{\mathrm b}/2}$</td>
+<td>the Hermitian positive boost factor</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$</td>
+<td>the unit real quaternion rotor</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$</td>
+<td>the boost and rotor axes, unit real pure quaternions</td>
+</tr>
+<tr>
+<td>$\psi$, $\theta$</td>
+<td>the stored rapidity and the rotation angle</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\log}$</td>
+<td>the formal exponent, the sum of the four exponents</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tfrac12(e_t+\vec\Xi)$</td>
+<td>a minimal idempotent, $\vec\Xi^2=e_t$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>a nonzero nilpotent, $N^2=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/modulus-unit-polar-decomposition-of-biquaternions.html">The Polar Decomposition of Biquaternions</a>, for the four factors, their ranges and the uniqueness.</li>
+<li><a href="../articles_maths/exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a>, for the defect, the boundary limits and the two strata.</li>
+<li><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential and the kernel.</li>
+<li><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, for the minimal idempotents.</li>
+<li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the physical reading of the four factors in the interior.</li>
+<li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the two strata read physically.</li>
+<li><a href="the-exponential-the-logarithm-and-the-generator.html">The Exponential, the Logarithm and the Generator</a>, for the logarithm side of the same boundary.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

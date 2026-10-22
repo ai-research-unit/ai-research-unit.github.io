@@ -67,107 +67,256 @@
       <div class="article-body">
         <h1 id="the-classes-of-element-of-the-split-complex-algebra"><strong>The Classes of Element of the Split-Complex Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The corpus studies, for each algebraic structure of the twelve, the classes of element singled out by the multiplication: the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the <strong>hub</strong> of those classes for the split-complex algebra $\mathbb{D}$, the two-dimensional member of the family. It names the classes owned by other articles with their pointers, and it owns the three that no other article of the category carries: the <strong>nilpotents</strong>, the <strong>square roots of the three central values</strong>, and the <strong>square roots of a general element</strong>, together with the <strong>square-zero elements</strong> and the <strong>order cone of squares</strong>.</p>
-<p>The results are the two-dimensional end of the family, and the reductions are short because $\mathbb{D}$ is commutative and reduced. The nilpotent class is the smallest possible, the single element $0$: the algebra is reduced, although it is not a field. The three central values split sharply: $+1$ has four square roots, the two scalars $\pm 1$ and the two non-scalars $\pm j$, the value $0$ has the single root $0$, and the value $-1$ has <strong>none</strong>, since a sum of two real squares cannot be negative. The square roots of a general element exist exactly on the forward cone $q \ge \lvert q'\rvert$, the image of the squaring map, whose boundary is the null cone of the zero divisors. Each of these is against the complex field, where $+1$ has two roots, $-1$ has two, and every nonzero element has two roots.</p>
-<p><strong>Placement.</strong> The article is the second entry of the split-complex general-plain-algebra block, after <em>Split-Complex Norm and Invertibility</em> and before <em>Split-Complex Zero Divisors</em>; it opens the classes of element, as the corresponding articles do in the other blocks. The definitions of a nilpotent, of the index of nilpotency and of a square-zero element are the standard ones; the norm, its sign, the criterion of invertibility and the group of units are <em>Split-Complex Norm and Invertibility</em>.</p>
-<p><strong>The classes owned elsewhere.</strong> Three of the six classes are the subject of articles of this category, and this article names them without restating them. The <strong>zero divisors</strong> are <em>Split-Complex Zero Divisors</em>, below this article in this category; their criterion is $Q_+Q_- = 0$, and their set is the null cone $\mathcal{N} = \{q^2 = q'^2\}$ with the origin removed. The <strong>idempotents</strong> are <em>Split-Complex Idempotents and Projections</em>, below this article in this category; there are exactly four, the two trivial ones $0$ and $1$ and the two nontrivial ones $\Pi_\pm = \tfrac12(1\pm j)$. The <strong>ideals and the Peirce decomposition</strong> are <em>Split-Complex Ideals and Peirce Decomposition</em>, below this article in this category. The ring property behind all of the classes is <em>The Specificities of the Split-Complex Algebra</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$, general element $Q = q+jq'$ with $q = \operatorname{Re}Q$ and $q' = \operatorname{Im}Q$, conjugate $\bar Q = q-jq'$, idempotents $\Pi_\pm = \tfrac12(1\pm j)$ and idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ with $Q_\pm = q\pm q'$. The <strong>involution</strong> is the bar $\overline{\cdot}$: the idempotent swap coincides with it; where an article of the category says "the involution" it means $\overline{\cdot}$, and no article of this block uses the word for another map.</p>
-<h2 id="the-nilpotents">The Nilpotents</h2>
-<p><strong>Definition.</strong> An element $Q \in \mathbb{D}$ is <strong>nilpotent</strong> if $Q^n = 0$ for some integer $n \ge 1$; the <strong>index of nilpotency</strong> is the least such $n$. An element is <strong>square-zero</strong> if $Q^2 = 0$. By the corpus convention the definition includes $0$, whose index is $1$; the article speaks of the nonzero nilpotents when it excludes it.</p>
-<p><strong>Theorem.</strong> The only nilpotent of $\mathbb{D}$ is $0$. The algebra is <strong>reduced</strong>.</p>
-<p><strong>Proof.</strong> Write $Q = Q_+\Pi_+ + Q_-\Pi_-$. Since multiplication is componentwise in the idempotent basis, $Q^n = Q_+^n\Pi_+ + Q_-^n\Pi_-$ for every $n \ge 1$. Thus $Q^n = 0$ holds if and only if $Q_+^n = 0$ and $Q_-^n = 0$, and the field $\mathbb{R}$ has no nonzero nilpotent, so $Q_+ = Q_- = 0$ and $Q = 0$.</p>
-<p>So no nonzero nilpotent exists at any index, and in particular the only square-zero element is $0$, as the section below records. The mechanism is visible in the idempotent coordinates: a power raises each coordinate to the same power, and a real number raised to a positive power vanishes only when it is itself zero.</p>
-<p>This is the first place where the split-complex algebra is <em>simpler</em> than the higher-dimensional members of the family: it has no nilpotent cone at all, because $\mathbb{D}$ has only the two central idempotents and no off-diagonal unit, so there is nothing to square to zero. The zero divisors of $\mathbb{D}$, which are $\mathbb{R}^\times\Pi_+\cup\mathbb{R}^\times\Pi_-$, are idempotent and not nilpotent: the primitive zero divisors satisfy $\Pi_\pm^2 = \Pi_\pm$. No element of $\mathbb{D}$ is both idempotent and a nonzero nilpotent, since a nilpotent power that stabilises must vanish.</p>
-<p>The nilpotent class being $\{0\}$ is the statement that $\mathbb{D}$ is reduced, proved in <em>Split-Complex Ideals and Peirce Decomposition</em> as the vanishing of the nilradical, and it is the reason the algebra behaves as a product of two fields rather than as a local ring. The dual-number algebra $\mathbb{R}[\varepsilon]/(\varepsilon^2)$, by contrast, has the nonzero nilpotent $\varepsilon$, and its idempotents are only the trivial ones; the split-complex algebra has the opposite defect, an abundance of idempotents and no nilpotent.</p>
-<h2 id="the-square-roots-of-minus-one-zero-and-plus-one">The Square Roots of Minus One, Zero and Plus One</h2>
-<p>The three central values are the three elements $-1$, $0$ and $+1$ of the real line inside $\mathbb{D}$. The problem is the system $X^2 = \lambda$ for $\lambda$ one of them, and it reduces to the plane because the squaring of a split-complex number acts coordinate by coordinate.</p>
-<p><strong>Reduction.</strong> Write $X = X_+\Pi_+ + X_-\Pi_-$. Then</p>
-<p>$$
-X^2 = X_+^2\Pi_+ + X_-^2\Pi_- ,
-$$</p>
-<p>so for a real $\lambda$ the equation $X^2 = \lambda$ is equivalent to the two real equations</p>
-<p>$$
-X_+^2 = \lambda, \qquad X_-^2 = \lambda .
-$$</p>
-<p>The three cases differ only in which of these two equations is solvable, because a real number has a real square root exactly when it is non-negative, and then two unless it is zero.</p>
-<h3 id="the-roots-of-plus-one">The Roots of Plus One</h3>
-<p><strong>Theorem.</strong> The equation $X^2 = 1$ has exactly four solutions in $\mathbb{D}$:</p>
-<p>$$
-X \in \{1, -1, j, -j\} = \{\pm 1, \pm j\}.
-$$</p>
-<p><strong>Proof.</strong> By the reduction, $X_+^2 = 1$ and $X_-^2 = 1$, so $X_+ = \pm 1$ and $X_- = \pm 1$, four combinations. In the basis $\{1, j\}$ the combinations are $\Pi_++\Pi_- = 1$, $-\Pi_+-\Pi_- = -1$, $\Pi_+-\Pi_- = j$ and $-\Pi_++\Pi_- = -j$.</p>
-<p>Two of the four roots, $\pm 1$, are scalar; the other two, $\pm j$, are <strong>non-scalar</strong>, and $j$ is the <strong>hyperbolic unit</strong>: the generator itself, with $j^2 = +1$. This is the sharpest difference from the complex field, where the equation $X^2 = 1$ has only the two scalar roots $\pm 1$ and the non-scalar unit $i$ of the field is instead a root of $-1$. On $\mathbb{D}$ the non-scalar unit solves the equation that on $\mathbb{C}$ is solved by the scalars alone.</p>
-<p>Note that $\mathbb{D}$ is commutative, so every element of $\mathbb{D}$ is central, and the words "scalar" and "non-scalar" distinguish $\mathbb{R}$ inside $\mathbb{D}$ and not the centre, which is all of $\mathbb{D}$. Here the only distinction available is scalar against non-scalar.</p>
-<h3 id="the-roots-of-zero">The Roots of Zero</h3>
-<p><strong>Theorem.</strong> The equation $X^2 = 0$ has exactly one solution, $X = 0$.</p>
-<p><strong>Proof.</strong> By the reduction, $X_+^2 = 0$ and $X_-^2 = 0$, so $X_+ = X_- = 0$ and $X = 0$.</p>
-<p>So the square-zero elements of the plain product form the single point $\{0\}$, in agreement with the nilpotent theorem, and the root of $0$ is not a whole cone. The square-zero elements of the plain product are one thing; the square-zero elements of the <em>other</em> product carried by the space are another, and the difference is recorded in the section below.</p>
-<h3 id="the-roots-of-minus-one">The Roots of Minus One</h3>
-<p><strong>Theorem.</strong> The equation $X^2 = -1$ has <strong>no</strong> solution in $\mathbb{D}$.</p>
-<p><strong>Proof.</strong> By the reduction, $X_+^2 = -1$ and $X_-^2 = -1$; a square of a real number is non-negative, so neither equation can hold.</p>
-<p>The absence is not accidental and it is total: there is no split-complex number whose square is $-1$, scalar or not. Since $\mathbb{D}$ is commutative the notion of a non-central root does not even arise, and the contrast with $\mathbb{C}$ is at the level of the value, not of the position of the root: $\mathbb{C}$ has the two roots $\pm i$ of $-1$, and $\mathbb{D}$ has none. In idempotent coordinates the reason is a single line: a square $X_+^2\Pi_+ + X_-^2\Pi_-$ has both coordinates non-negative, so its real part is non-negative, and $-1$ has real part $-1$.</p>
-<p>The three sets are therefore entirely different in size, and they are collected in the next table.</p>
-<h3 id="the-three-sets-compared">The Three Sets Compared</h3>
+<p>The corpus studies, for each algebraic structure of the twelve, the classes of element singled out by the multiplication: the units and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the <strong>hub</strong> of those classes for the split-complex algebra $\mathbb{D}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the <strong>order cone of squares</strong>.</p>
+<p><strong>The classes and their articles.</strong> The classes are now developed in the articles of the block, one subject per article:</p>
+<ul>
+<li>the units, the norm and the criterion of invertibility are <em>Norm and Invertibility in the General Split-Complex Algebra</em>;</li>
+<li>the zero divisors, their two families and the null cone are <em>Zero Divisors of the Split-Complex Algebra</em>;</li>
+<li>the annihilators and the multiplication operators are <em>Annihilators of the Split-Complex Algebra</em>;</li>
+<li>the roots of $+1$ and the idempotents are <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>;</li>
+<li>the roots of $0$ and the nilpotents are <em>Square Roots of Zero and the Nilpotents of the Split-Complex Algebra</em>;</li>
+<li>the roots of a general element are <em>Square Roots of a General Element in the Split-Complex Algebra</em>;</li>
+<li>the ideals, the Peirce decomposition and the radical are <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>.</li>
+</ul>
+<p>This article does not restate the proofs of those articles. It records the <strong>relations among the classes</strong>, which no single article owns, and the order cone of squares, which is the image of the square map and the order that the algebra carries.</p>
+<p><strong>The results.</strong> The elements of $\mathbb{D}$ fall into the three disjoint classes: the units, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{+},\Pi_{-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$, with basis $1,j$, general element $Q=q+jq'$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$. The algebraic norm of the plain product is $\langle Q\rangle=Q^{2}$; the algebraic norm of the sesquilinear product is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$. The <strong>null cone</strong> is $\mathcal{N}=\{\langle Q\rangle_{*}=0\}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$, and the <strong>zero-divisor set</strong> is $\mathcal{Z}=\mathcal{N}\setminus\{0\}$.</p>
+<h2 id="the-classes-and-their-articles">The Classes and Their Articles</h2>
+<p><strong>The classes are organised by the equation that defines them and by the article that owns them; the table is the index of the block.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>value $\lambda$</th>
-<th>roots in $\mathbb{R}$</th>
-<th>roots in $\mathbb{C}$</th>
-<th>roots in $\mathbb{D}$</th>
+<th>class</th>
+<th>defining equation or condition</th>
+<th>set in $\mathbb{D}$</th>
+<th>article</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$+1$</td>
-<td>$\pm 1$</td>
-<td>$\pm 1$</td>
-<td>$\pm 1$, $\pm j$ (four)</td>
+<td>units</td>
+<td>$QB=1$ soluble</td>
+<td>$\{Q_{+}Q_{-}\neq0\}$</td>
+<td><em>Norm and Invertibility in the General Split-Complex Algebra</em></td>
 </tr>
 <tr>
-<td>$0$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$0$ (one)</td>
+<td>zero divisors</td>
+<td>$Q\neq0$, $QB=0$ with $B\neq0$</td>
+<td>$\mathbb{R}^{\times}\Pi_{+}\cup\mathbb{R}^{\times}\Pi_{-}$</td>
+<td><em>Zero Divisors of the Split-Complex Algebra</em></td>
 </tr>
 <tr>
-<td>$-1$</td>
-<td>none</td>
-<td>$\pm i$</td>
-<td>none</td>
+<td>annihilators</td>
+<td>$\{B:QB=0\}$</td>
+<td>$\{0\}$ off $\mathcal{N}$, the opposite line on $\mathcal{N}\setminus\{0\}$, and $\mathbb{D}$ at $0$</td>
+<td><em>Annihilators of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>idempotents</td>
+<td>$\Pi^{2}=\Pi$</td>
+<td>$\{0,1,\Pi_{+},\Pi_{-}\}$</td>
+<td><em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>roots of $+1$</td>
+<td>$\Xi^{2}=1$</td>
+<td>$\{1,-1,j,-j\}$</td>
+<td><em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>roots of $0$</td>
+<td>$\Xi^{2}=0$</td>
+<td>$\{0\}$</td>
+<td><em>Square Roots of Zero and the Nilpotents of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>nilpotents</td>
+<td>$\Upsilon\neq0$, $\Upsilon^{n}=0$</td>
+<td>$\varnothing$</td>
+<td><em>Square Roots of Zero and the Nilpotents of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>roots of $-1$</td>
+<td>$\Xi^{2}=-1$</td>
+<td>$\varnothing$</td>
+<td><em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>roots of a general $Q$</td>
+<td>$\Xi^{2}=Q$</td>
+<td>$\varepsilon_{+}\sqrt{Q_{+}}\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\Pi_{-}$ over the real signs; nonempty exactly when $Q_{+},Q_{-}\ge0$</td>
+<td><em>Square Roots of a General Element in the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>ideals</td>
+<td>additive subgroups closed under multiplication</td>
+<td>$0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{D}$</td>
+<td><em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em></td>
 </tr>
 </tbody>
 </table></div>
-<p>The linear algebra of the three rows reads off the sign of the square function on the base field: over $\mathbb{R}$ the values $+1$ and $0$ are reached and $-1$ is not; over $\mathbb{C}$ all three are reached; over $\mathbb{D}$ the reachable set is the same as over $\mathbb{R}$ for these three values, but the <em>number</em> of roots changes, because the two idempotent coordinates double the count whenever both are nonzero. The value $+1$ is the only one of the three with a non-scalar root, and it is the reason the ring has four square roots of its unity. The roots of $+1$ are invertible, of norm $\langle \pm 1\rangle_{*} = 1$ and $\langle \pm j\rangle_{*} = -1$; the root of $0$ is not a unit, and the empty set of roots of $-1$ needs no comment.</p>
-<h2 id="the-square-roots-of-a-general-element">The Square Roots of a General Element</h2>
-<h3 id="the-criterion">The Criterion</h3>
-<p><strong>Theorem.</strong> An element $Q \in \mathbb{D}$ has a square root in $\mathbb{D}$ if and only if both idempotent coordinates are non-negative, $Q_+ \ge 0$ and $Q_- \ge 0$. When it exists, the root is unique if $Q = 0$, two-to-one if exactly one coordinate is zero, and four-to-one if both coordinates are positive.</p>
-<p><strong>Proof.</strong> The equation $X^2 = Q$ is, by the reduction of the section above, the pair $X_+^2 = Q_+$ and $X_-^2 = Q_-$. Each real equation $X_\pm^2 = Q_\pm$ has a real solution exactly when $Q_\pm \ge 0$, and then it has one solution if $Q_\pm = 0$ and two if $Q_\pm > 0$. Multiplying the counts over the two independent coordinates gives the four cases.</p>
-<p>So the elements with a square root are exactly those of the <strong>forward cone</strong></p>
+<h2 id="the-inclusions-and-the-disjointness">The Inclusions and the Disjointness</h2>
+<p><strong>The units, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents meet the zero divisors in the two nontrivial idempotents and meet the units in $1$; the nilpotents are empty; the roots of $+1$ are units; the roots of $0$ are the origin.</strong></p>
+<h3 id="the-partition-by-invertibility">The Partition by Invertibility</h3>
+<p>For $Q\in\mathbb{D}$ exactly one of the following holds:</p>
+<ol>
+<li>$Q$ is a unit: $Q_{+}Q_{-}\neq0$;</li>
+<li>$Q=0$;</li>
+<li>$Q$ is a zero divisor: $Q_{+}Q_{-}=0$ and $Q\neq0$.</li>
+</ol>
+<p><strong>Proof.</strong> This is the three-way classification of <em>Norm and Invertibility in the General Split-Complex Algebra</em>, read in the idempotent coordinates.</p>
+<p>So the units and the zero divisors do not meet, and the origin is neither. The non-units are the origin and the zero divisors; they do not form an ideal, because $\Pi_{+}+\Pi_{-}=1$.</p>
+<h3 id="the-idempotents">The Idempotents</h3>
+<p>The idempotents are $0,1,\Pi_{+},\Pi_{-}$. Their intersections with the three classes are:</p>
+<ul>
+<li>$1$ is a unit;</li>
+<li>$0$ is the zero element;</li>
+<li>$\Pi_{+}$ and $\Pi_{-}$ are zero divisors.</li>
+</ul>
+<p>The two nontrivial idempotents are the <strong>primitive</strong> zero divisors: every zero divisor is a nonzero real multiple of one of them. The origin is an idempotent, because $0^{2}=0$, and it is not a zero divisor, because the definition excludes it.</p>
+<h3 id="the-nilpotents-and-the-square-zero-elements">The Nilpotents and the Square-Zero Elements</h3>
+<p>There are <strong>no nonzero nilpotents</strong>. The square-zero elements are exactly $\{0\}$. Under the corpus convention the nilpotent is a nonzero element, so the nilpotent set is empty and $0$ is a square-zero element but not a nilpotent. The two notions are kept separate in <em>Square Roots of Zero and the Nilpotents of the Split-Complex Algebra</em>.</p>
+<h3 id="the-roots-of-the-central-values">The Roots of the Central Values</h3>
+<p>The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $0$ are the origin; the roots of $-1$ are empty. The three sets are pairwise disjoint, and their cardinalities are $4,1,0$. The roots of $+1$ form the group $(\mathbb{Z}/2\mathbb{Z})^{2}$; the root of $0$ is fixed by the conjugation; the empty set is the whole answer for $-1$.</p>
+<h3 id="the-general-roots">The General Roots</h3>
+<p>The roots of $\Xi^{2}=Q$ exist exactly on the forward cone</p>
 <p>$$
-\mathcal{C} = \{Q : Q_+ \ge 0,\; Q_- \ge 0\} = \{Q = q+jq' : q \ge \lvert q'\rvert\},
+\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\}.
 $$</p>
-<p>the set of elements whose two idempotent coordinates are non-negative, equivalently the set on which the real part dominates the split-imaginary part in absolute value. Off that cone the square root does not exist, and the failure is total: no root, not a real root only. The four roots of a general element of the interior are $\pm X_+^{1/2}\Pi_+ \pm X_-^{1/2}\Pi_-$, with the two signs independent.</p>
-<p>The count is again the opposite of the complex case. In $\mathbb{C}$ every nonzero element has exactly two square roots and $0$ has one, a dichotomy with no exceptional elements; in $\mathbb{D}$ an element has none, one, two or four roots, and the failure set is a cone of positive area. The difference is the idempotent decomposition: the two coordinates of a square are squares of the two coordinates, so solvability is imposed coordinate by coordinate, and the constraint is the conjunction of two inequalities rather than a single non-vanishing.</p>
-<h3 id="the-order-cone-of-squares">The Order Cone of Squares</h3>
-<p>The set of squares of the elements of $\mathbb{D}$, the image of the map $Q \mapsto Q^2$, is the set of elements of the form $X_+^2\Pi_+ + X_-^2\Pi_-$, which is exactly the forward cone $\mathcal{C}$ of the criterion: the criterion says that an element has a square root precisely when it lies in $\mathcal{C}$, and the constructive half of its proof exhibits the root, so the image and $\mathcal{C}$ coincide. The <strong>cone of squares</strong> is therefore $\mathcal{C}$, the same set as the solvability cone.</p>
-<p><strong>Proposition.</strong> The cone $\mathcal{C}$ is a pointed convex cone: it is closed under addition and under multiplication by non-negative reals, it contains $0$, and $\mathcal{C}\cap(-\mathcal{C}) = \{0\}$. It therefore defines a partial order on $\mathbb{D}$ by $Q \preceq C \iff C - Q \in \mathcal{C}$.</p>
-<p><strong>Proof.</strong> The idempotent coordinates of $\lambda Q + \mu C$ are $\lambda Q_\pm + \mu C_\pm$; a non-negative combination of non-negative numbers is non-negative, which gives closure under addition and under non-negative scaling, and $0$ has both coordinates $0$. If $Q$ and $-Q$ both lie in $\mathcal{C}$, then $Q_\pm \ge 0$ and $-Q_\pm \ge 0$, so $Q_\pm = 0$ and $Q = 0$, and the cone is pointed. The order axioms follow from the three closure properties.</p>
-<p>The relation of the cone of squares to the null cone is a boundary relation. The null cone of <em>Split-Complex Zero Divisors</em>, below this article in this category, is the union of the two lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; its non-negative half is the boundary of the cone of squares,</p>
+<p>On the interior of the cone there are four roots; on the boundary minus the origin there are two; at the origin there is one; outside there are none. A root of a unit is a unit, a root of a nonzero zero divisor is a zero divisor, and the root of $0$ is $0$. The classification is <em>Square Roots of a General Element in the Split-Complex Algebra</em>.</p>
+<h3 id="the-two-algebraic-norms-and-the-classes">The Two Algebraic Norms and the Classes</h3>
+<p>The two algebraic norms see different classes, and the difference is the source of the three-way classification.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>norm</th>
+<th>value</th>
+<th>vanishing set</th>
+<th>class it decides</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle Q\rangle=Q^{2}$</td>
+<td>$\mathbb{D}$-valued</td>
+<td>$\{0\}$</td>
+<td>none; it does not decide invertibility</td>
+</tr>
+<tr>
+<td>$\langle Q\rangle_{*}=Q\bar Q$</td>
+<td>real, signature $(1,1)$</td>
+<td>$\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$</td>
+<td>the units (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first norm is anisotropic and sees only the origin; the second is indefinite and sees the null cone. The zero divisors are $\mathcal{N}\setminus\{0\}$, the units are the complement of $\mathcal{N}$, and the origin is the only element that lies on neither side of the dichotomy.</p>
+<h2 id="the-order-cone-of-squares">The Order Cone of Squares</h2>
+<p><strong>The image of the square map is the forward cone $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{Q:q\ge|q'|\}$, a pointed closed convex cone; it defines a partial order on $\mathbb{D}$ compatible with addition and with multiplication by elements of the cone, and a radicand has a square root exactly when it lies in $\mathcal{C}$.</strong></p>
+<h3 id="the-image-of-the-square">The Image of the Square</h3>
+<p>For $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ one has</p>
 <p>$$
-\partial\mathcal{C} = \mathbb{R}_{\ge 0}\Pi_+ \cup \mathbb{R}_{\ge 0}\Pi_- \subset \mathcal{N},
+Q^{2}=Q_{+}^{2}\Pi_{+}+Q_{-}^{2}\Pi_{-}.
 $$</p>
-<p>the two rays of the null cone on which the idempotent coordinates are non-negative, and the zero divisors are that boundary with the origin removed. So the cone of squares and the null cone meet along two rays, and the interior of the cone of squares is the set of elements whose square roots number four.</p>
-<p>This is the algebraic core of the order on $\mathbb{D}$; its reading as a positivity cone, its two components when the sign of the norm is allowed to vary, and the reversed inequality that holds on it are <em>The Hermitian Form and the Cone of the Split-Complexoid Algebra</em>, below this article in this category. The forward cone is the single component of the double cone $q^2 \ge q'^2$ that contains $1$; the other component is $-\mathcal{C}$, and the two are exchanged by negation.</p>
-<h2 id="the-square-zero-elements">The Square-Zero Elements</h2>
-<p><strong>Definition.</strong> An element is <strong>square-zero</strong> with respect to a named product if its square in that product is $0$. For the plain product $QC$ the square of $Q$ is $Q^2$, and the square-zero set is the set of roots of $0$.</p>
-<p><strong>Proposition.</strong> The square-zero elements of the plain product are exactly $\{0\}$.</p>
-<p><strong>Proof.</strong> This is the theorem on the roots of $0$ above, and it agrees with the nilpotent theorem: a square-zero element is a nilpotent of index two, and the only nilpotent of $\mathbb{D}$ is $0$.</p>
-<p>The statement is worth separating from its complex analogue precisely because it is <em>not</em> the end of the matter. In $\mathbb{C}$ the square-zero elements are also only $0$, and it is easy to think that this is all a field can say; but in $\mathbb{D}$ the second product $Q \star C = Q\bar C$ carried by the same space has a different square, $Q \star Q = Q\bar Q = \langle Q\rangle_{*}$, so its square-zero elements are the elements of vanishing norm, that is the whole null cone of zero divisors. The square-zero set of the plain product is a point; the square-zero set of the sesquilinear product is the pair of null lines. The comparison is drawn in <em>Relations and Comparison Between the Two Products of the Split-Complexoid Space</em>, above this article in this category.</p>
+<p>The two coordinates of a square are squares of real numbers, hence non-negative, and every non-negative pair is attained by choosing $Q_{\pm}=\pm\sqrt{\cdot}$. Therefore</p>
+<p>$$
+\operatorname{Im}(\square)=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}.
+$$</p>
+<p>In the basis $1,j$ the inequalities are $q+q'\ge0$ and $q-q'\ge0$, that is</p>
+<p>$$
+q\ge|q'| .
+$$</p>
+<p>The set is the closed cone of angle $90^{\circ}$ between the two null lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, containing the positive real axis. It is the <strong>forward cone</strong> of the split-complex plane.</p>
+<h3 id="the-cone-is-pointed-convex-and-closed">The Cone Is Pointed, Convex and Closed</h3>
+<p><strong>Proposition.</strong> The set $\mathcal{C}$ is a closed convex cone with apex $0$, and it is <strong>pointed</strong>: $\mathcal{C}\cap(-\mathcal{C})=\{0\}$.</p>
+<p><strong>Proof.</strong> It is the image of the closed positive quadrant $\mathbb{R}_{\ge0}^{2}$ under the linear isomorphism $Q\mapsto(Q_{+},Q_{-})$, hence closed and convex; it is invariant under multiplication by non-negative scalars, hence a cone. A point in $\mathcal{C}\cap(-\mathcal{C})$ has both coordinates non-negative and non-positive, hence both zero.</p>
+<p>The cone is <strong>not</strong> the whole plane and <strong>not</strong> a half-plane: it has nonempty interior, the set $q>|q'|$, and two boundary rays, the non-negative halves of the two null lines.</p>
+<h3 id="the-order">The Order</h3>
+<p>The cone defines a partial order on $\mathbb{D}$ by</p>
+<p>$$
+Q\succeq B\iff Q-B\in\mathcal{C}\iff Q_{+}\ge B_{+}\text{ and }Q_{-}\ge B_{-}.
+$$</p>
+<p><strong>Proposition.</strong> The relation $\preceq$ is a partial order, it is compatible with addition, and it is compatible with multiplication by non-negative real scalars. It is also compatible with multiplication by elements of $\mathcal{C}$: if $Q\succeq Q'$ and $B\succeq0$ then $QB\succeq Q'B$.</p>
+<p><strong>Proof.</strong> The order is the componentwise order of $\mathbb{R}^{2}$ transported by the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, so the first two properties are the componentwise order of the plane. For the third, the idempotent coordinates of a product are the products of the coordinates, and the product of two non-negative reals is non-negative.</p>
+<p>The order is not total: $\Pi_{+}$ and $\Pi_{-}$ are incomparable, since their difference $j$ has coordinates $(1,-1)$ and neither $j$ nor $-j$ lies in $\mathcal{C}$.</p>
+<h3 id="the-square-and-the-order">The Square and the Order</h3>
+<p><strong>Proposition.</strong> The square map is monotone on $\mathcal{C}$: if $0\preceq Q\preceq B$ then $Q^{2}\preceq B^{2}$.</p>
+<p><strong>Proof.</strong> In the idempotent coordinates, $0\le Q_{\pm}\le B_{\pm}$ gives $Q_{\pm}^{2}\le B_{\pm}^{2}$.</p>
+<p><strong>Corollary.</strong> A radicand $Q$ has a square root exactly when $Q\succeq0$; the square root is unique in $\mathcal{C}$, namely $\sqrt{Q_{+}}\,\Pi_{+}+\sqrt{Q_{-}}\,\Pi_{-}$, and the four roots of an interior radicand are the independent sign choices in the two idempotent coordinates.</p>
+<p>The order cone is therefore the exact domain of the square-root problem: the forward cone is the image of the square, the set of radicands that have a root, and the order that the algebra carries. The boundary of the cone is the non-negative part of the null cone of the zero divisors, and the interior is the set of units that are squares.</p>
+<h3 id="the-order-and-the-classes">The Order and the Classes</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>region of $\mathbb{D}$</th>
+<th>condition</th>
+<th>class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interior of $\mathcal{C}$</td>
+<td>$q>|q'|$</td>
+<td>units that are squares; four roots</td>
+</tr>
+<tr>
+<td>boundary minus $0$</td>
+<td>$q=|q'|\neq0$</td>
+<td>zero divisors; two roots</td>
+</tr>
+<tr>
+<td>apex</td>
+<td>$q=q'=0$</td>
+<td>the zero element; one root</td>
+</tr>
+<tr>
+<td>complement of $\mathcal{C}$</td>
+<td>$q<|q'|$</td>
+<td>no root; the units off the negative null rays, and the zero divisors on them</td>
+</tr>
+</tbody>
+</table></div>
+<p>The complement contains the <strong>backward cone</strong> $- \mathcal{C}=\{q\le-|q'|\}$ away from the apex, whose interior points are units with no square root and whose boundary, the two negative null rays, are zero divisors; the two side sectors between the cones contain units and no zero divisors.</p>
+<h2 id="the-three-central-values-compared">The Three Central Values Compared</h2>
+<p><strong>The central values $-1,0,+1$ have $0,1,4$ roots; the pattern is the pattern of the sign of the scalar, and the value $-1$ is the one that the split sign removes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\lambda$</th>
+<th>equation</th>
+<th>roots</th>
+<th>number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-1$</td>
+<td>$\Xi^{2}=-1$</td>
+<td>none</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$\Xi^{2}=0$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$+1$</td>
+<td>$\Xi^{2}=1$</td>
+<td>$1,-1,j,-j$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The value $+1$ has the four roots because the non-central unit $j$ is a root of $+1$; the value $-1$ has none because a sum of two real squares is non-negative; the value $0$ has the single root $0$ because the algebra is reduced. The three sets are disjoint, and their cardinalities are the three values $4,1,0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The classes of element of $\mathbb{D}$ fall into six families. Three are owned by articles of this category: the zero divisors (<em>Split-Complex Zero Divisors</em>), of criterion $Q_+Q_- = 0$, the idempotents (<em>Split-Complex Idempotents and Projections</em>), of which there are four, and the ideals with the Peirce decomposition (<em>Split-Complex Ideals and Peirce Decomposition</em>). Three are owned here.</p>
-<p>The nilpotents, and with them the square-zero elements of the plain product: the algebra is reduced, $0$ is the only nilpotent of any index, and $\{0\}$ is the only square-zero element of the plain product. The square roots of the three central values: $X^2 = 1$ has the four roots $\pm 1$ and $\pm j$, with $j$ the non-scalar root; $X^2 = 0$ has the single root $0$; and $X^2 = -1$ has no root at all, since a split square has non-negative real part. The square roots of a general element: they exist exactly on the forward cone $\mathcal{C} = \{Q_+ \ge 0, Q_- \ge 0\} = \{q \ge \lvert q'\rvert\}$, the cone of squares, where they number one, two or four according to how many coordinates vanish; the cone is pointed and convex and defines the order on $\mathbb{D}$, and its boundary is the two non-negative rays of the null cone.</p>
-<p>Each class is read against the two neighbours. Against $\mathbb{C}$, the multiplicatively simple case, the algebra keeps the trivial nilpotents and square-zero set but gains two nontrivial idempotents, a null cone of zero divisors, four roots of $+1$ and none of $-1$. The split-complex algebra is the minimal one in which the phenomenon of the family appears without non-commutativity: the zero divisors and the idempotents are present, while the nilpotents and the square-zero elements of the plain product are not.</p>
+<p>The classes of element of the split-complex algebra are indexed by the articles of the block: the units and the criterion of invertibility by the general norm article, the plain norm by the other, the annihilators by the annihilator article, the roots and the idempotents by the two central-value articles, the general roots by the square-root article, and the ideals by the Peirce article. The units, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents are $0,1,\Pi_{+},\Pi_{-}$, with the two nontrivial ones the primitive zero divisors; there are no nonzero nilpotents and the square-zero elements are $\{0\}$; the roots of $+1$ are the four units $\pm1,\pm j$; the roots of $-1$ are empty.</p>
+<p>The order cone of squares is the forward cone</p>
+<p>$$
+\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{Q:q\ge|q'|\},
+$$</p>
+<p>the image of the square map, a pointed closed convex cone. It defines the componentwise partial order of the algebra, compatible with addition and with multiplication by elements of the cone, and it is the exact domain of the square-root problem: four roots in its interior, two on its boundary minus the apex, one at the apex, none outside. Its boundary is the non-negative part of the null cone of the zero divisors, and its interior is the set of units that are squares.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -178,53 +327,53 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D} = \mathbb{R}[x]/(x^2-1)$</td>
-<td>Split-complex algebra</td>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
 </tr>
 <tr>
-<td>$Q = q + jq'$</td>
-<td>General split-complex number</td>
+<td>$Q=q+jq'$</td>
+<td>General split complex number</td>
 </tr>
 <tr>
-<td>$\bar Q = q - jq'$</td>
-<td>Conjugation, the only involution here</td>
+<td>$Q_{\pm}=q\pm q'$</td>
+<td>Idempotent coordinates</td>
 </tr>
 <tr>
-<td>$\Pi_\pm = \tfrac12(1\pm j)$</td>
+<td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
 <td>Idempotents</td>
 </tr>
 <tr>
-<td>$Q_\pm = q\pm q'$</td>
-<td>Idempotent coordinates, $Q = Q_+\Pi_+ + Q_-\Pi_-$</td>
+<td>$\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$</td>
+<td>Null cone</td>
 </tr>
 <tr>
-<td>$\mathcal{N} = \{q^2 = q'^2\}$</td>
-<td>Null cone, the zero divisors with the origin removed</td>
+<td>$\mathcal{Z}=\mathcal{N}\setminus\{0\}$</td>
+<td>Zero-divisor set</td>
 </tr>
 <tr>
-<td>$\mathcal{C} = \{Q_+ \ge 0, Q_- \ge 0\} = \{q \ge \lvert q'\rvert\}$</td>
-<td>Forward cone, the cone of squares, the solvability cone of square roots</td>
+<td>$\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{q\ge|q'|\}$</td>
+<td>Forward cone, the image of the square</td>
 </tr>
 <tr>
-<td>$X^2 = \lambda$</td>
-<td>Roots of a central value; $\lambda = 1$ gives $\{\pm 1,\pm j\}$, $\lambda = 0$ gives $\{0\}$, $\lambda = -1$ gives $\varnothing$</td>
+<td>$Q\succeq B\iff Q-B\in\mathcal{C}$</td>
+<td>The order of the forward cone</td>
 </tr>
 <tr>
-<td>index of nilpotency</td>
-<td>Least $n$ with $Q^n = 0$; the only nilpotent here is $0$</td>
-</tr>
-<tr>
-<td>square-zero</td>
-<td>$Q^2 = 0$ for the plain product; $\{0\}$ here, the null cone for the sesquilinear product</td>
+<td>$\Xi_{\pm}=\pm\sqrt{Q_{\pm}}$</td>
+<td>The roots in the interior of $\mathcal{C}$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for nilpotents, reduced rings and the multiplicative vocabulary of a ring.</li>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex numbers as a Clifford algebra and the roots of $\pm 1$.</li>
-<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for quadratic forms, squares and the order cones they define.</li>
-<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the split-complex plane, its idempotents and its null directions.</li>
+<li><a href="norm-and-invertibility-in-the-split-complex-algebra.html">Norm and Invertibility in the Split-Complex Algebra</a>, for the plain algebraic norm, which sees only the origin.</li>
+<li><a href="norm-and-invertibility-in-the-general-split-complex-algebra.html">Norm and Invertibility in the General Split-Complex Algebra</a>, for the criterion of invertibility and the three-way classification.</li>
+<li><a href="zero-divisors-of-the-split-complex-algebra.html">Zero Divisors of the Split-Complex Algebra</a>, for the null cone and its two families.</li>
+<li><a href="annihilators-of-the-split-complex-algebra.html">Annihilators of the Split-Complex Algebra</a>, for the annihilator of a class.</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html">Square Roots of One and the Idempotents of the Split-Complex Algebra</a>, for the roots of $+1$ and the four idempotents.</li>
+<li><a href="square-roots-of-zero-and-the-nilpotents-of-the-split-complex-algebra.html">Square Roots of Zero and the Nilpotents of the Split-Complex Algebra</a>, for the roots of $0$ and the absence of nilpotents.</li>
+<li><a href="square-roots-of-a-general-element-in-the-split-complex-algebra.html">Square Roots of a General Element in the Split-Complex Algebra</a>, for the full classification of the roots.</li>
+<li><a href="ideals-and-peirce-decomposition-of-the-split-complex-algebra.html">Ideals and Peirce Decomposition of the Split-Complex Algebra</a>, for the ideals and the radical.</li>
 </ul>
       </div>
     </main>

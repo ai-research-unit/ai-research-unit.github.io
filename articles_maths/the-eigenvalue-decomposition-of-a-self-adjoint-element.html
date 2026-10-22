@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eigenvalue Decomposition of a Self-Adjoint Element — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-eigenvalue-decomposition-of-a-self-adjoint-element"><strong>The Eigenvalue Decomposition of a Self-Adjoint Element</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An element $h$ of an algebra with involution is <strong>self-adjoint</strong> when $h^*=h$. If $h$ has an eigenvalue decomposition $h=\sum_i\lambda_i e_i$, then the involution can be applied to the whole writing, and because the eigenvalue decomposition is unique, the result must be the same decomposition with the labels permuted. This article determines the permutation. The involution sends the eigenprojector of $\lambda$ to the eigenprojector of the conjugate scalar $\varsigma(\lambda)$, and the eigenprojector of $\lambda$ is Hermitian exactly when $\lambda$ is fixed by $\varsigma$. In particular, when the involution is linear over the ground field, every eigenprojector of a self-adjoint element is Hermitian; when the involution is semilinear and nontrivial on the scalars, a non-fixed eigenvalue comes with its conjugate and the two eigenprojectors are exchanged.</p>
+<p>The result is the algebraic form of the statement that a Hermitian matrix has an orthonormal basis of eigenvectors with real eigenvalues. The algebra is form-free: no inner product, no positivity and no distance are used. The eigenvalue decomposition is that of <em>The Eigenvalue Decomposition of an Element</em>; the involution and the two kinds are those of <em>Involutive Algebras</em>; the self-adjoint part and its Jordan structure are <em>The Self-Adjoint Part of an Algebra</em>; the unitary analogue is <em>Unitary Elements and Their Algebraic Decompositions</em>; and the form-theoretic orthogonality of the Peirce corners is <em>The Adjoint of the Peirce Projection</em>. The examples are <em>Matrix Algebras</em> and <em>Examples of Algebras</em>.</p>
+<p>Throughout, $F$ is a field of characteristic not two, $\varsigma$ is an involution of $F$, $A$ is a finite-dimensional unital associative $F$-algebra, and $\sigma$ is a $\varsigma$-semilinear involution of $A$; the image of $x$ is written $x^*=\sigma(x)$, so that $(xy)^*=y^*x^*$ and $(x^*)^*=x$. The fixed field of $\varsigma$ is $F_0=F^\varsigma$, the self-adjoint part is $A^+=H(A)=\{h:h^*=h\}$, and the skew part is $A^-=\{k:k^*=-k\}$. The involution is <strong>of the first kind</strong> when $\varsigma=\mathrm{id}$, and <strong>of the second kind</strong> when $\varsigma\neq\mathrm{id}$; in the second kind $F/F_0$ is quadratic and there is an element $t\in F$ with $\varsigma(t)=-t$ and $F=F_0\oplus F_0t$.</p>
+<h2 id="the-involution-on-the-polynomial-calculus">The Involution on the Polynomial Calculus</h2>
+<h3 id="polynomials-in-a-self-adjoint-element">Polynomials in a self-adjoint element</h3>
+<p>For $p(x)=\sum_k a_kx^k\in F[x]$, write $p^\varsigma(x)=\sum_k\varsigma(a_k)x^k$ for the polynomial with the coefficients conjugated.</p>
+<p><strong>Proposition.</strong> For every $p\in F[x]$ and every $x\in A$,</p>
+<p>$$
+p(x)^*=p^\varsigma(x^*).
+$$</p>
+<p>If $h$ is self-adjoint, then $p(h)^*=p^\varsigma(h)$.</p>
+<p><em>Proof.</em> The involution is additive and semilinear, and it reverses products, so $(a_kx^k)^*=\varsigma(a_k)(x^*)^k$; summing gives the first identity. The second is the case $x^*=x$.</p>
+<p><strong>Corollary.</strong> If $h$ is self-adjoint and $p(h)=0$, then $p^\varsigma(h)=0$.</p>
+<p><em>Proof.</em> Apply the proposition to $p(h)=0$ and use $h^*=h$: $0=p(h)^*=p^\varsigma(h)$.</p>
+<h3 id="the-minimal-polynomial">The minimal polynomial</h3>
+<p><strong>Theorem.</strong> Let $h$ be self-adjoint and let $m_h$ be its minimal polynomial. Then $m_h$ has coefficients in the fixed field $F_0$:</p>
+<p>$$
+m_h\in F_0[x].
+$$</p>
+<p>Consequently the spectrum of $h$ is stable under $\varsigma$: if $\lambda$ is an eigenvalue of $h$, then so is $\varsigma(\lambda)$.</p>
+<p><em>Proof.</em> The polynomial $m_h^\varsigma$ is monic of degree $\deg m_h$ and vanishes at $h$ by the corollary. The minimal polynomial is the unique monic polynomial of least degree vanishing at $h$, so $m_h^\varsigma=m_h$. A polynomial is fixed by the coefficientwise involution exactly when its coefficients lie in $F_0$. For the last statement, apply $\varsigma$ to $m_h(\lambda)=0$: $m_h^\varsigma(\varsigma(\lambda))=m_h(\varsigma(\lambda))=0$.</p>
+<p><strong>Remark.</strong> The theorem is the algebraic reason for the conjugate pairs of eigenvalues of a real matrix. Over $F=\mathbb{R}$ with the trivial involution every polynomial has coefficients in $F_0=\mathbb{R}$, and the statement is empty; over $F=\mathbb{C}$ with the conjugation, it says that the characteristic and the minimal polynomial of a real matrix have real coefficients, so the non-real roots occur in conjugate pairs. The minimal polynomial, not the characteristic polynomial, is the object that the eigenvalue decomposition uses.</p>
+<h2 id="the-permutation-of-the-eigenprojectors">The Permutation of the Eigenprojectors</h2>
+<h3 id="the-law">The law</h3>
+<p><strong>Theorem.</strong> Let $h$ be self-adjoint with eigenvalue decomposition</p>
+<p>$$
+h=\sum_{i=1}^{r}\lambda_i e_i,
+$$</p>
+<p>with the $\lambda_i$ pairwise distinct. Then there is an involution $\pi$ of the index set $\{1,\dots,r\}$ such that</p>
+<p>$$
+e_i^*=e_{\pi(i)}, \qquad \lambda_{\pi(i)}=\varsigma(\lambda_i) \qquad (i=1,\dots,r).
+$$</p>
+<p><em>Proof.</em> Apply the involution to the decomposition. The left side is $h^*=h$. The right side is $\sum_i\varsigma(\lambda_i)e_i^*$, by semilinearity and anti-multiplicativity. The elements $e_i^*$ are nonzero idempotents: $e_i^*e_i^*=(e_i^2)^*=e_i^*$, and $e_i^*=0$ would give $e_i=(e_i^*)^*=0$. They are orthogonal, $e_i^*e_j^*=(e_je_i)^*=0$ for $i\neq j$, and they resolve the identity, $\sum_i e_i^*=1^*=1$. The scalars $\varsigma(\lambda_i)$ are pairwise distinct because $\varsigma$ is injective. Hence</p>
+<p>$$
+h=\sum_{i=1}^{r}\varsigma(\lambda_i)e_i^*
+$$</p>
+<p>is an eigenvalue decomposition of $h$. The eigenvalue decomposition of a given element is unique, so each eigenvalue $\varsigma(\lambda_i)$ of the second writing is one of the eigenvalues $\lambda_j$ of the first, and its projector is the corresponding $e_j$. Define $\pi(i)$ by $e_i^*=e_{\pi(i)}$. Then the eigenvalue carried by $e_{\pi(i)}$ in the second writing is $\varsigma(\lambda_i)$, while in the first it is $\lambda_{\pi(i)}$; hence $\lambda_{\pi(i)}=\varsigma(\lambda_i)$. Applying $*$ to $e_i^*=e_{\pi(i)}$ gives $e_i=e_{\pi(\pi(i))}$, so $\pi^2=\mathrm{id}$.</p>
+<p><strong>Corollary (fixed eigenvalues and Hermitian projectors).</strong> For a self-adjoint $h$ and an index $i$, the following are equivalent:</p>
+<ol>
+<li>$e_i$ is Hermitian, $e_i^*=e_i$;</li>
+<li>$\pi(i)=i$;</li>
+<li>$\lambda_i$ is fixed by $\varsigma$, $\varsigma(\lambda_i)=\lambda_i$.</li>
+</ol>
+<p>Consequently all the eigenprojectors are Hermitian exactly when all the eigenvalues are fixed by $\varsigma$.</p>
+<p><em>Proof.</em> The equivalence of 1 and 2 is the injectivity of $*$ and the distinctness of the idempotents: $e_i^*=e_i$ means $e_{\pi(i)}=e_i$, hence $\pi(i)=i$, and conversely. The equivalence of 2 and 3 is the law: $\pi(i)=i$ gives $\lambda_i=\varsigma(\lambda_i)$, and if $\lambda_i=\varsigma(\lambda_i)$ then $\lambda_{\pi(i)}=\lambda_i$, so $\pi(i)=i$ by the distinctness of the eigenvalues.</p>
+<h3 id="the-two-kinds">The two kinds</h3>
+<p><strong>Corollary (the first kind).</strong> If $\varsigma=\mathrm{id}$, every eigenprojector of a self-adjoint element is Hermitian.</p>
+<p><em>Proof.</em> Every scalar is fixed by the identity, so the corollary above applies with $\pi=\mathrm{id}$.</p>
+<p>The first-kind statement is the one that the matrix examples illustrate: a symmetric complex matrix has symmetric eigenprojectors, and a real matrix with a nonreal conjugate pair has the two eigenprojectors of that pair exchanged by entrywise conjugation. The two examples differ because the involution on the scalars is trivial in the first and nontrivial in the second.</p>
+<p><strong>Corollary (the second kind).</strong> If $\varsigma\neq\mathrm{id}$, the spectrum of a self-adjoint $h$ is a union of orbits of $\varsigma$ of size one or two, and for a two-element orbit $\{\lambda,\bar\lambda\}$ the projectors are exchanged:</p>
+<p>$$
+e_\lambda^*=e_{\bar\lambda}, \qquad e_{\bar\lambda}^*=e_\lambda, \qquad \bar\lambda=\varsigma(\lambda).
+$$</p>
+<p>The eigenvalues of a two-element orbit are not fixed, and neither projector is Hermitian.</p>
+<p><em>Proof.</em> The orbit decomposition is the theorem, and the orbit has size at most two because $\varsigma$ has order two. A two-element orbit is exactly a pair $\lambda\neq\varsigma(\lambda)$, and the law gives the exchange. If $e_\lambda$ were Hermitian, the corollary above would give $\lambda=\varsigma(\lambda)$, a contradiction.</p>
+<h3 id="the-orbit-idempotents">The orbit idempotents</h3>
+<p><strong>Theorem (the decomposition over the fixed field).</strong> Let $h$ be self-adjoint and let $\mathcal{O}$ be the set of orbits of $\varsigma$ on the spectrum. For an orbit $J$ put</p>
+<p>$$
+g_J=\sum_{i\in J}e_i .
+$$</p>
+<p>Then the $g_J$ are pairwise orthogonal Hermitian idempotents with $\sum_J g_J=1$, and</p>
+<p>$$
+h=\sum_{J\in\mathcal{O}}h_J, \qquad h_J=h g_J=g_Jhg_J,
+$$</p>
+<p>where $h_J$ is self-adjoint and lies in the corner $g_JAg_J$. For a one-element orbit $J=\{\lambda\}$, $h_J=\lambda g_J$ with $\lambda\in F_0$. For a two-element orbit $J=\{\lambda,\bar\lambda\}$, put</p>
+<p>$$
+s=\lambda+\bar\lambda\in F_0, \qquad p=\lambda\bar\lambda\in F_0, \qquad \lambda-\bar\lambda=2bt,
+$$</p>
+<p>with $b\in F_0$. Then</p>
+<p>$$
+h_J=\frac{s}{2}g_J+bt\,v_J, \qquad v_J=\frac{h_J-\frac{s}{2}g_J}{bt},
+$$</p>
+<p>where $v_J\in g_JAg_J$ is skew, $v_J^*=-v_J$, and $v_J^2=g_J$.</p>
+<p><em>Proof.</em> The involution permutes the $e_i$ within each orbit, so it fixes the sum $g_J$; distinct orbits are disjoint unions of orthogonal idempotents, so the $g_J$ are orthogonal and sum to the identity. The element $h_J=hg_J$ is fixed by $*$ because $h$ and $g_J$ are, and it lies in $g_JAg_J$ because $g_J$ is an idempotent commuting with $h$. For a singleton, $g_J=e_\lambda$ and $h_J=\lambda e_\lambda$, with $\lambda$ fixed by the corollary. For a pair, $g_J=e_\lambda+e_{\bar\lambda}$, and $h_J=\lambda e_\lambda+\bar\lambda e_{\bar\lambda}$. The scalar $\lambda-\bar\lambda$ is skew and nonzero, so it is $2bt$ with $b\in F_0$ and $b\neq0$, because the skew elements of $F$ are exactly $F_0t$. The element $v_J$ is skew: the numerator is self-adjoint, and $bt$ is skew, so the quotient is skew. Finally,</p>
+<p>$$
+v_J^2=\frac{\left(h_J-\frac{s}{2}g_J\right)^2}{b^2t^2}
+=\frac{\left(\frac{s^2}{4}-p\right)g_J}{b^2t^2}
+=\frac{(\lambda-\bar\lambda)^2}{4b^2t^2}g_J=g_J,
+$$</p>
+<p>using $h_J^2-s h_J+p g_J=0$, which is the Cayley–Hamilton identity of the two eigenvalues, and $\lambda-\bar\lambda=2bt$.</p>
+<p><strong>Remark.</strong> The theorem is the precise sense in which a self-adjoint element over a field with a nontrivial involution has a decomposition over the fixed field. The orbit idempotents $g_J$ are polynomials in $h$ with coefficients in $F_0$, because they are the Chinese remainder idempotents of the minimal polynomial $m_h\in F_0[x]$; the singleton terms are scalar multiples of $g_J$, and the two-element terms are the "complex numbers" $\frac{s}{2}+b\,(tv_J)$ in the corner, with $(tv_J)^2=-t^2g_J$ and $tv_J$ self-adjoint. The pair cannot be split into two scalar multiples of Hermitian idempotents over $F_0$; it splits only after the scalar extension to $F$, where the two projectors $e_\lambda,e_{\bar\lambda}$ appear.</p>
+<h2 id="the-peirce-reading">The Peirce Reading</h2>
+<h3 id="the-stable-corners">The stable corners</h3>
+<p>Let $h=\sum_i\lambda_i e_i$ be self-adjoint and suppose first that all the eigenvalues are fixed. Then all the $e_i$ are Hermitian, and for the Peirce corners $A_{ij}=e_iAe_j$,</p>
+<p>$$
+A_{ij}^*=A_{ji}.
+$$</p>
+<p>The diagonal corners $A_{ii}=e_iAe_i$ are $*$-stable algebras with unit $e_i$, and the off-diagonal corners are paired: $A_{ij}$ and $A_{ji}$ are exchanged by the involution. The Peirce decomposition</p>
+<p>$$
+A=\bigoplus_{i,j=1}^{r}A_{ij}
+$$</p>
+<p>is therefore stable under $*$, and the spectral decomposition of $h$ is adapted to it: $h$ acts on $A_{ij}$ by $\lambda_i$ on the left and by $\lambda_j$ on the right, so $h\in\bigoplus_i A_{ii}$, the eigenspace of $L_h$ for $\lambda_i$ is $e_iA=\bigoplus_jA_{ij}$, and the diagonal corner $A_{ii}$ is the common eigenspace of $L_h$ and $R_h$ for $\lambda_i$.</p>
+<p><em>Proof.</em> The identity $A_{ij}^*=A_{ji}$ follows from $(e_ix e_j)^*=e_j^*x^*e_i^*=e_jx^*e_i$. The diagonal corners are closed under multiplication and under $*$, and $e_i$ is their unit. The action of $h$ is $h(e_ix e_j)=(\lambda_ie_i)x e_j=\lambda_i e_ix e_j$, and similarly on the right.</p>
+<p><strong>Corollary.</strong> If all the eigenvalues are fixed, the Peirce projections $E_{ij}(x)=e_ix e_j$ satisfy $E_{ij}^\dagger=E_{ij}$ with respect to any associative Hermitian form on $(A,*)$, and the Peirce decomposition is orthogonal in the sense that the idempotents $e_i$ are Hermitian and orthogonal.</p>
+<p><em>Proof.</em> The identity for the Peirce projections is that of <em>The Adjoint of the Peirce Projection</em>: $T_{a,b}^\dagger=T_{a^*,b^*}$, and $e_i^*=e_i$, $e_j^*=e_j$, so $E_{ij}^\dagger=E_{ij}$. The idempotents are Hermitian and satisfy $e_ie_j=\delta_{ij}e_i$; this is the algebraic orthogonality. The form-orthogonality of the corners follows from $E_{ij}^\dagger=E_{ij}$ and is proved in that article.</p>
+<p><strong>Remark.</strong> "Orthogonal" here has two readings, and the article keeps them apart. The algebraic reading is $e_ie_j=0$ for $i\neq j$, which always holds for an eigenvalue decomposition. The form-theoretic reading is $\langle A_{ij},A_{kl}\rangle=0$ for $(i,j)\neq(k,l)$, which needs a form and is the subject of <em>The Adjoint of the Peirce Projection</em> and <em>Hermitian Idempotents and the Peirce Decomposition</em>. The self-adjointness of $h$ alone gives the algebraic reading; it gives the form-theoretic reading only when a compatible form is present and the idempotents are Hermitian.</p>
+<h3 id="the-exchanged-corners">The exchanged corners</h3>
+<p>If a two-element orbit $\{\lambda,\bar\lambda\}$ is present, the idempotents $e_\lambda,e_{\bar\lambda}$ are not Hermitian, and the corners $A_{\lambda\lambda}$ and $A_{\bar\lambda\bar\lambda}$ are exchanged by $*$; so are $A_{\lambda\bar\lambda}$ and $A_{\bar\lambda\lambda}$. The orbit idempotent $g=e_\lambda+e_{\bar\lambda}$ is Hermitian, and the corner $gAg$ is $*$-stable. Inside it, the element $h g$ has the form $\frac{s}{2}g+btv$ of the orbit theorem, with $v$ skew and $v^2=g$; the pair is a single "complex" block over $F_0$, not two real blocks.</p>
+<p><strong>Proposition.</strong> In the corner $gAg$, the element $v$ satisfies</p>
+<p>$$
+v^*=-v, \qquad v^2=g, \qquad vg=gv=v,
+$$</p>
+<p>and the element $hg$ commutes with $v$. The subalgebra $F_0[v]$ is spanned by $g$ and $v$ with $v^2=g$; it is isomorphic to $F_0\times F_0$ through $g\mapsto(1,1)$, $v\mapsto(1,-1)$, so it is the split algebra of the pair, not a field.</p>
+<p><em>Proof.</em> The first two identities are the orbit theorem; $vg=v$ and $gv=v$ follow from $v\in gAg$. The commutation is $h g=\frac{s}{2}g+btv$. The algebra $F_0[v]$ is spanned by $g$ and $v$ with $v^2=g$, and the displayed assignment is an isomorphism onto $F_0\times F_0$ because it preserves the unit, is bijective on the two-dimensional spaces, and sends $v^2=g$ to $(1,1)$.</p>
+<p><strong>Remark.</strong> The last proposition is the algebraic model of the two-dimensional real block of a complex conjugate pair. The element $v$ is the "complex structure" of the block, and it is skew, not self-adjoint; the self-adjoint element $hg$ is $\frac{s}{2}g$ plus a multiple of $v$. The notation is consistent with the split complex numbers $\mathbb{R}[j]$, $j^2=+1$, of <em>Examples of Algebras</em>: the corner is a split algebra over $F_0$, and the two idempotents $\frac12(g\pm v)$ of that split algebra are the images of $e_\lambda$ and $e_{\bar\lambda}$ after the scalar extension.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-complex-numbers-with-conjugation">The complex numbers with conjugation</h3>
+<p>Let $A=\mathbb{C}$ over $F=\mathbb{C}$ with $\varsigma$ the conjugation. A self-adjoint element is a real number $h=a$, its minimal polynomial is $x-a$ with $a\in\mathbb{R}=F_0$, and its eigenvalue decomposition is $h=a\cdot1$. The eigenvalue is fixed and the projector $1$ is Hermitian. The example is the degenerate one: the algebra is a field, so the only idempotents are $0$ and $1$, and the only decomposition is the scalar one.</p>
+<h3 id="the-conjugate-transpose">The conjugate transpose</h3>
+<p>Let $A=M_n(\mathbb{C})$ with the conjugate transpose $X^*=\overline X^{\mathsf T}$, the involution of the second kind. A self-adjoint element is a Hermitian matrix. Its eigenvalues are real by the spectral theorem for Hermitian matrices, hence fixed by the conjugation, and its eigenprojectors are Hermitian by the corollary above. The decomposition is the spectral theorem of the Hermitian matrices, read algebraically. For $n=2$ and</p>
+<p>$$
+H=\begin{pmatrix}1&i\\-i&2\end{pmatrix},
+$$</p>
+<p>the characteristic polynomial is $x^2-3x+1$, with the two real roots $\frac{3\pm\sqrt5}{2}$; the two eigenprojectors are Hermitian and orthogonal, and $H$ is their real linear combination. The positivity of $H$ and the norm of its eigenvectors belong to Part II and to <em>Hilbert Algebras</em>, not here.</p>
+<h3 id="the-transpose">The transpose</h3>
+<p>Let $A=M_n(\mathbb{C})$ with the transpose $X^*=X^{\mathsf T}$, the involution of the first kind. A self-adjoint element is a symmetric matrix. Its eigenvalues need not be real: the symmetric matrix</p>
+<p>$$
+S=\begin{pmatrix}0&i\\i&0\end{pmatrix}
+$$</p>
+<p>has the eigenvalues $i$ and $-i$. The eigenprojectors are</p>
+<p>$$
+e_i=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+$$</p>
+<p>both symmetric and Hermitian for the transpose, and $S=i\,e_i+(-i)e_{-i}$. The example shows that the first-kind statement is about the involution on the coefficients, not about the realness of the spectrum: the eigenvalues are not real, but they are fixed by the transpose, and the projectors are fixed as well.</p>
+<h3 id="the-entrywise-conjugation">The entrywise conjugation</h3>
+<p>Let $A=M_n(\mathbb{C})$ with the entrywise conjugation $X^*=\overline X$, the involution of the second kind. A self-adjoint element is a matrix with real entries. The rotation</p>
+<p>$$
+R=\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+$$</p>
+<p>has the eigenvalues $i$ and $-i$, and the eigenprojectors</p>
+<p>$$
+e_i=\frac12\begin{pmatrix}1&i\\-i&1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pmatrix}1&-i\\i&1\end{pmatrix}.
+$$</p>
+<p>The conjugation exchanges the two projectors, and neither is fixed. The orbit idempotent $g=e_i+e_{-i}=I$ is Hermitian. The orbit theorem has $s=i+(-i)=0$, $p=i(-i)=1$ and $\lambda-\bar\lambda=2i$, so $b=1$ and $t=i$, and</p>
+<p>$$
+v=\frac{R-0}{1\cdot i}=\frac{R}{i}=-iR=\begin{pmatrix}0&i\\-i&0\end{pmatrix}.
+$$</p>
+<p>The element $v$ is skew, $v^*=iR=-v$, and $v^2=(-i)^2R^2=I$; the orbit formula reads $R=btv=i(-iR)=R$. The matrix $v$ is the complex structure of the rotation.</p>
+<p>The example is the two-dimensional real rotation, the standard conjugate pair; the "complex structure" of the pair is $-iR$, a real matrix that squares to $I$ and is skew for the entrywise conjugation.</p>
+<h3 id="a-repeated-eigenvalue">A repeated eigenvalue</h3>
+<p>Let $H=\operatorname{diag}(1,1,2)$ with the conjugate transpose. The eigenvalues are $1$ and $2$, both fixed, and the projectors are</p>
+<p>$$
+e_1=E_{11}+E_{22}, \qquad e_2=E_{33},
+$$</p>
+<p>both Hermitian. The eigenvalue $1$ has algebraic multiplicity two and the eigenprojector $e_1$ has rank two; the eigenvalue decomposition groups the two equal eigenvalues into one term. This is the point at which the eigenvalue decomposition differs from a decomposition into one-dimensional eigenspaces: the decomposition is by distinct eigenvalues, and the projector of a repeated eigenvalue is the sum of the projectors of its one-dimensional pieces. The refinement into one-dimensional pieces is not unique and is not part of the eigenvalue decomposition.</p>
+<h2 id="summary">Summary</h2>
+<p>For a self-adjoint element $h$ of an algebra with a $\varsigma$-semilinear involution, the eigenvalue decomposition $h=\sum_i\lambda_i e_i$ is permuted by the involution: there is an involution $\pi$ of the index set with $e_i^*=e_{\pi(i)}$ and $\lambda_{\pi(i)}=\varsigma(\lambda_i)$. The eigenprojector $e_i$ is Hermitian exactly when the eigenvalue $\lambda_i$ is fixed by $\varsigma$; consequently all the projectors are Hermitian exactly when all the eigenvalues are fixed. In the first kind ($\varsigma=\mathrm{id}$) this is automatic, so every eigenprojector of a self-adjoint element is Hermitian; in the second kind the non-fixed eigenvalues occur in conjugate pairs, the two projectors of a pair are exchanged, and neither is Hermitian. The Hermitian orbit idempotents $g_J=\sum_{i\in J}e_i$ give a decomposition $h=\sum_J h_J$ over the fixed field, with a singleton term $\lambda g_J$ for a fixed eigenvalue and a two-element term $\frac{s}{2}g_J+btv_J$ for a conjugate pair, where $v_J$ is skew, $v_J^2=g_J$ and $v_J$ is the algebraic complex structure of the pair. When all the eigenvalues are fixed, the Peirce corners satisfy $A_{ij}^*=A_{ji}$, the diagonal corners are $*$-stable, and the decomposition is orthogonal in the algebraic sense. The eigenvalue decomposition is <em>The Eigenvalue Decomposition of an Element</em>; the involution is <em>Involutive Algebras</em>; the self-adjoint part is <em>The Self-Adjoint Part of an Algebra</em>; the unitary analogue is <em>Unitary Elements and Their Algebraic Decompositions</em>; and the form-theoretic Peirce theory is <em>The Adjoint of the Peirce Projection</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>the ground field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>an involution of $F$</td>
+</tr>
+<tr>
+<td>$F_0=F^\varsigma$</td>
+<td>the fixed field of $\varsigma$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a finite-dimensional unital associative $F$-algebra</td>
+</tr>
+<tr>
+<td>$x^*=\sigma(x)$</td>
+<td>the adjoint of an element</td>
+</tr>
+<tr>
+<td>$A^+=H(A)$</td>
+<td>the self-adjoint elements, $h^*=h$</td>
+</tr>
+<tr>
+<td>$A^-$</td>
+<td>the skew elements, $k^*=-k$</td>
+</tr>
+<tr>
+<td>$h=\sum_i\lambda_i e_i$</td>
+<td>the eigenvalue decomposition</td>
+</tr>
+<tr>
+<td>$e_i$</td>
+<td>the eigenprojectors, $e_ie_j=\delta_{ij}e_i$, $\sum_i e_i=1$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>the involution of the index set with $e_i^*=e_{\pi(i)}$</td>
+</tr>
+<tr>
+<td>$g_J=\sum_{i\in J}e_i$</td>
+<td>the orbit idempotent of a $\varsigma$-orbit $J$</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>a skew scalar, $\varsigma(t)=-t$, $F=F_0\oplus F_0t$</td>
+</tr>
+<tr>
+<td>$v_J$</td>
+<td>the skew element of a pair orbit, $v_J^2=g_J$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions of the first and the second kind and the descent to the fixed field.</li>
+<li>Israel Nathan Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetric and the skew elements and their polynomial calculus.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the eigenvalue decomposition and the Peirce decomposition in a finite-dimensional algebra.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the self-adjoint part and its structure under the symmetrised product.</li>
+<li>The fixed-field case, with fixed eigenvalues and Hermitian projectors, is <a href="the-eigenvalue-decomposition-of-a-hermitian-element.html">The Eigenvalue Decomposition of a Hermitian Element</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

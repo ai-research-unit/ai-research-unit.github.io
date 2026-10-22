@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectral Reading of a Four-Vector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectral-reading-of-a-four-vector"><strong>The Spectral Reading of a Four-Vector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The eigenvalue decomposition of a four-momentum returns two complex numbers. They are not two energies and not two particles. They are the two light-cone frequencies of one momentum, and their product is the mass squared.</p>
+<p>The statement is a reading, not a theorem. The spectrum, the eigenprojections and the two-term writing are those of <em>Eigenvalue Decomposition of a Biquaternion</em>. The material sector and the four-vector dictionary are those of <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. This article owns the interpretation: what the pair means, how it transforms, and what it does not mean.</p>
+<p><strong>Placement.</strong> The article belongs to the Algebra block of the category, after <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. It is the spectral companion of that article: the material sector supplies the four-vector and the interval, and this article supplies the eigenpair and the Doppler reading.</p>
+<p><strong>Conventions.</strong> A four-momentum in the material sector is $\tilde P=i\frac{E}{c}e_t+\vec p$, with $E$ the energy, $\vec p$ the spatial momentum, $m$ the mass, and $c$ the speed of light. The vector part is $\vec p=p_x\vec e_x+p_y\vec e_y+p_z\vec e_z$ with real coefficients, $B=\lvert\vec p\rvert$, and $\vec u_p=\vec p/B$ for $B\neq0$. The biquaternion norm is $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $Q_t=iE/c$, and the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ with $\vec\Xi=-i\vec u_p$.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The spectrum, the eigenprojections and the two-term writing</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+</tr>
+<tr>
+<td>The degenerate regimes, including the scalar and zero-divisor cases</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+</tr>
+<tr>
+<td>The Hermitian case and the Hermitian idempotents</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+</tr>
+<tr>
+<td>The four-vector dictionary and the interval</td>
+<td><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+</tr>
+<tr>
+<td>The boost spectrum and the Doppler factors</td>
+<td><a href="frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a></td>
+</tr>
+<tr>
+<td>The zero-divisor cone and the massless spectrum</td>
+<td><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-eigenpair">The Eigenpair</h2>
+<p>With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are</p>
+<p>$$
+\lambda_\pm=i\left(\frac{E}{c}\pm B\right)
+=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right).
+$$</p>
+<p>Write $\nu_\pm=\lambda_\pm/i$. The pair $\nu_\pm$ is real and non-negative,</p>
+<p>$$
+\nu_\pm=\frac{E}{c}\pm\lvert\vec p\rvert\ge0,
+$$</p>
+<p>and it is the pair of light-cone frequencies of the momentum. The rapidity $\psi$ of the momentum is fixed by</p>
+<p>$$
+\cosh\psi=\frac{E}{mc},
+\qquad
+\sinh\psi=\frac{\lvert\vec p\rvert}{mc},
+\qquad
+\tanh\psi=\frac{\lvert\vec p\rvert c}{E},
+$$</p>
+<p>and the pair takes the compact form</p>
+<p>$$
+\nu_\pm=mc\,e^{\pm\psi},
+\qquad
+\lambda_\pm=i\,mc\,e^{\pm\psi}.
+$$</p>
+<p>This is the <strong>Doppler pair</strong>: the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum, the difference, the product and the ratio are the four physical invariants of the pair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Expression</th>
+<th>Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eigenvalues</td>
+<td>$\lambda_\pm=i\,mc\,e^{\pm\psi}$</td>
+<td>the two light-cone frequencies, imaginary</td>
+</tr>
+<tr>
+<td>frequencies</td>
+<td>$\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\psi}$</td>
+<td>the Doppler pair</td>
+</tr>
+<tr>
+<td>sum</td>
+<td>$\nu_++\nu_-=2E/c$</td>
+<td>twice the energy</td>
+</tr>
+<tr>
+<td>difference</td>
+<td>$\nu_+-\nu_-=2\lvert\vec p\rvert$</td>
+<td>twice the momentum</td>
+</tr>
+<tr>
+<td>product</td>
+<td>$\nu_+\nu_-=m^2c^2$</td>
+<td>the mass squared</td>
+</tr>
+<tr>
+<td>norm</td>
+<td>$\lambda_+\lambda_-=\langle\tilde P\rangle_{\natural}=-m^2c^2$</td>
+<td>the interval</td>
+</tr>
+<tr>
+<td>ratio</td>
+<td>$\nu_+/\nu_-=e^{2\psi}$</td>
+<td>the squared Doppler factor</td>
+</tr>
+</tbody>
+</table></div>
+<p>The product is the invariant. It does not depend on the frame and it does not depend on the direction of $\vec p$; it is the mass shell. The two factors separately do depend on the frame, and their dependence is exactly the Doppler rescaling.</p>
+<h2 id="the-two-term-writing">The Two-Term Writing</h2>
+<p>The eigenprojections are Hermitian idempotents,</p>
+<p>$$
+\tilde\Pi_\pm=\frac12\left(e_t\mp i\vec u_p\right),
+\qquad
+\tilde\Pi_\pm^{2}=\tilde\Pi_\pm,
+\qquad
+\tilde\Pi_\pm^{*}=\tilde\Pi_\pm,
+\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t,
+\qquad
+\tilde\Pi_+\tilde\Pi_-=0,
+$$</p>
+<p>and the decomposition is</p>
+<p>$$
+\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
+=i\,mc\left(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-\right).
+$$</p>
+<p>Each term is a complex multiple of a minimal idempotent, hence a null element. The two terms are the two <strong>lightlike components</strong> of the momentum, and the coefficients are the Doppler-scaled rest frequencies. In light-cone coordinates the writing is the standard split of a timelike vector into two null vectors,</p>
+<p>$$
+\tilde P=k_++k_-,
+\qquad
+k_\pm=i\,mc\,e^{\pm\psi}\,\tilde\Pi_\pm,
+\qquad
+\langle k_\pm\rangle_{\natural}=0.
+$$</p>
+<p>The decomposition is unique up to the exchange of the two labels. The exchange is produced by $\vec u_p\mapsto-\vec u_p$, that is, by the other square root $B\mapsto-B$, and it leaves $\tilde P$ unchanged. No physical statement may depend on which term is called $+$.</p>
+<p>The two idempotents are the pure states along $-\vec u_p$ and $+\vec u_p$ respectively: $\tilde\Pi_+$ has Bloch vector $-\vec u_p$ and $\tilde\Pi_-$ has Bloch vector $+\vec u_p$. The momentum therefore selects an axis, and the two null components are the two states on that axis. The axis is the direction of motion, and the pair of states is the pair of lightlike directions along it.</p>
+<h2 id="are-they-two-particles">Are They Two Particles?</h2>
+<p>No. The two eigenvalues are the one momentum written in the two idempotent coordinates, and the two terms are two null components of one element.</p>
+<p>The sum is the check. The two coefficients satisfy $\nu_++\nu_-=2E/c$, not $E/c$; they are not the energies of two particles whose total is $E$. The two terms are null and complex, so neither is a positive-energy state. The density matrix of a physical particle is a Hermitian positive element of the informational sector, and the $k_\pm$ are not of that kind.</p>
+<p>The comparison with a genuine two-particle object makes the difference explicit. A two-particle state is a tensor product or a pair of independent four-momenta; it lives in a larger space and carries two independent mass-shell conditions. The two-term writing lives in one algebra element and carries one mass-shell condition, $\nu_+\nu_-=m^2c^2$. It is a decomposition, not a pair.</p>
+<p>The reading is therefore a spectral reading of one four-vector, not a particle count. The algebra supplies the two null directions and the two coefficients; it does not supply a second particle, a second energy, or an antiparticle.</p>
+<h2 id="the-frame-dependence">The Frame Dependence</h2>
+<p>The pair is frame-dependent and the product is not. Under a boost of rapidity $\xi$ along $\vec u_p$,</p>
+<p>$$
+\nu_+\longmapsto e^{-\xi}\nu_+,
+\qquad
+\nu_-\longmapsto e^{+\xi}\nu_-,
+\qquad
+\nu_+\nu_-\longmapsto\nu_+\nu_-,
+$$</p>
+<p>which is the Doppler rescaling written on the pair. Under a rotation the frequencies are unchanged and the axis $\vec u_p$ rotates. Under a general boost the new rapidity $\psi'$ is the rapidity of the new momentum, and the pair is $mc\,e^{\pm\psi'}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Change of frame</th>
+<th>$\nu_+$</th>
+<th>$\nu_-$</th>
+<th>product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boost along $\vec p$ by $\xi$</td>
+<td>$e^{-\xi}\nu_+$</td>
+<td>$e^{+\xi}\nu_-$</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>rotation</td>
+<td>unchanged</td>
+<td>unchanged</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>general boost</td>
+<td>$mc\,e^{\psi'}$</td>
+<td>$mc\,e^{-\psi'}$</td>
+<td>unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<p>The transformation law is the reason for the name. The two coefficients are the two Doppler factors, and a boost along the direction of motion multiplies one by $e^{-\xi}$ and the other by $e^{+\xi}$. The product is the mass squared, and it is the invariant of the pair.</p>
+<h3 id="the-rest-frame">The Rest Frame</h3>
+<p>At $\vec p=0$ the rapidity vanishes, $\nu_\pm=mc$, and the two eigenvalues coincide at $imc$. The element is the scalar $i\frac{E}{c}e_t$ with $E=mc^2$, so the degeneracy is the scalar, diabolic regime of <em>Eigenvalue Decomposition of a Biquaternion</em>. The two-term writing still holds, but it is not unique: every complementary pair of Hermitian idempotents gives</p>
+<p>$$
+i\,mc\left(\tilde\Pi_++\tilde\Pi_-\right)=i\,mc\,e_t,
+$$</p>
+<p>and the pair is not determined by the element. The rest frame is the only frame in which the momentum has no preferred null pair.</p>
+<h3 id="the-massless-limit">The Massless Limit</h3>
+<p>At $m=0$ the rapidity diverges and the pair degenerates to</p>
+<p>$$
+\nu_-=0,
+\qquad
+\nu_+=\frac{2E}{c},
+\qquad
+\lambda_-=0,
+\qquad
+\lambda_+=\frac{2iE}{c}.
+$$</p>
+<p>The eigenvalues are still distinct, because $B=\lvert\vec p\rvert=E/c\neq0$. The element is a zero divisor with distinct eigenvalues, and the spectral writing survives with one term,</p>
+<p>$$
+\tilde P=\lambda_+\tilde\Pi_+=2i\frac{E}{c}\tilde\Pi_+.
+$$</p>
+<p>The one-term writing is the spectral form of a null momentum, and it is the zero-divisor regime of the eigenvalue decomposition, not the exceptional regime. The massless limit of the pair is a limit of the coefficients, not a failure of the decomposition.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>The eigenpair is the Doppler pair.</strong> The two eigenvalues are the two light-cone frequencies, $mc\,e^{\pm\psi}$, and their ratio is the squared Doppler factor. The reading is the spectral form of the relativistic Doppler effect.</li>
+<li><strong>The sum and the difference are the energy and the momentum.</strong> Twice the energy and twice the momentum are the symmetric and antisymmetric combinations of the pair. The reading is the light-cone bookkeeping of a four-vector.</li>
+<li><strong>The product is the mass shell.</strong> The product of the eigenvalues is the norm, and the norm is $-m^2c^2$. The reading is that the mass is the invariant of the pair, not a property of either member.</li>
+<li><strong>The two terms are the two null components.</strong> Each term is a complex multiple of a minimal idempotent, and the two idempotents are the two pure states along the direction of motion. The reading is the lightlike decomposition of a timelike momentum.</li>
+<li><strong>The frame dependence is the Doppler shift.</strong> A boost rescales the two coefficients reciprocally. The reading is that the pair is a frame-dependent coordinate of a frame-independent product.</li>
+<li><strong>The rest frame is the degenerate frame.</strong> At rest the pair coalesces and the two-term writing is not unique. The reading is that a massive particle at rest has no preferred null pair.</li>
+<li><strong>The massless limit is a one-term writing.</strong> One coefficient vanishes and the element becomes a null multiple of one idempotent. The reading is the massless spectrum as the boundary of the massive pair.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The algebra gives the frequencies, not a particle count. The two terms are null components of one element, not two particles, and the sum of the coefficients is twice the energy.</p>
+<p>The mass is read from the product, not from either eigenvalue. No numerical mass is derived; the mass is the input that fixes the rapidity through $\cosh\psi=E/(mc)$.</p>
+<p>The pair is frame-dependent. Only the product is invariant, and a statement about one member of the pair is a statement about a frame.</p>
+<p>The reading needs the material sector. The four-momentum, the real vector part and the imaginary scalar are the data of $\mathbb{M}_-$, and the identification of the element with a physical four-momentum is the interpretive step of <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>.</p>
+<p>The two-term writing is not unique at rest and not two-term in the massless limit. The labels $\pm$ are conventional, and the decomposition is canonical only as an unordered pair.</p>
+<p>No dynamics is supplied. The article reads one element at one instant; it does not say how the momentum evolves, and it does not supply a mass spectrum.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The four-momentum $\tilde P=i\frac{E}{c}e_t+\vec p$ has eigenvalues $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)=i\,mc\,e^{\pm\psi}$.</li>
+<li>The pair $\nu_\pm=mc\,e^{\pm\psi}$ is the Doppler pair; its ratio is $e^{2\psi}$ and its product is $m^2c^2$.</li>
+<li>The norm is $\lambda_+\lambda_-=-m^2c^2$; the mass is read from the product, not from either eigenvalue.</li>
+<li>The eigenprojections are the Hermitian idempotents $\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec u_p)$, the two pure states along the direction of motion.</li>
+<li>The two-term writing is $\tilde P=i\,mc(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-)$; the two terms are the two null components of one momentum.</li>
+<li>The terms are not two particles and not two energies; their sum is twice the energy and their difference is twice the momentum.</li>
+<li>A boost along $\vec p$ rescales the pair reciprocally; the product is invariant. A rotation leaves the pair unchanged and rotates the axis.</li>
+<li>At rest the pair coalesces and the two-term writing is not unique; at $m=0$ one coefficient vanishes and the writing has one term.</li>
+<li>The algebra gives the frequencies, not a particle count, a numerical mass, a dynamics or a mass spectrum.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P=i\frac{E}{c}e_t+\vec p$</td>
+<td>the four-momentum of the material sector</td>
+</tr>
+<tr>
+<td>$E$, $\vec p$, $m$</td>
+<td>energy, spatial momentum and mass</td>
+</tr>
+<tr>
+<td>$B=\lvert\vec p\rvert$</td>
+<td>the modulus of the spatial momentum</td>
+</tr>
+<tr>
+<td>$\vec u_p=\vec p/B$</td>
+<td>the direction of motion, a real unit vector</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>the rapidity of the momentum, $\cosh\psi=E/(mc)$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues, $Q_t=iE/c$</td>
+</tr>
+<tr>
+<td>$\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\psi}$</td>
+<td>the Doppler pair</td>
+</tr>
+<tr>
+<td>$\vec\Xi=-i\vec u_p$</td>
+<td>the pure root of $+1$ of the momentum</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)=\tfrac12(e_t\mp i\vec u_p)$</td>
+<td>the eigenprojections, Hermitian idempotents</td>
+</tr>
+<tr>
+<td>$\langle\tilde P\rangle_{\natural}=-m^2c^2$</td>
+<td>the biquaternion norm, the interval</td>
+</tr>
+<tr>
+<td>$k_\pm=i\,mc\,e^{\pm\psi}\tilde\Pi_\pm$</td>
+<td>the two null components of $\tilde P$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the spectrum, the eigenprojections and the degenerate regimes.</li>
+<li><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>, for the four-vector dictionary and the mass shell.</li>
+<li><a href="frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a>, for the boost spectrum and the Doppler factors.</li>
+<li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the massless limit and the null stratum.</li>
+<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the pure states that the idempotents represent.</li>
+<li><a href="the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a>, for the mass shell read as a level set.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

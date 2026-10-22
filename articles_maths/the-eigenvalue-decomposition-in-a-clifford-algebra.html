@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eigenvalue Decomposition in a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-eigenvalue-decomposition-in-a-clifford-algebra"><strong>The Eigenvalue Decomposition in a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Clifford algebra is an associative algebra with a <strong>grade decomposition</strong>, and its centre is larger than the scalars in odd dimension: the volume element is central and may supply a non-scalar coefficient. The <strong>eigenvalue decomposition</strong> of an element $a$,</p>
+<p>$$
+a=\sum_{i=1}^{r}\lambda_{i}e_{i},
+$$</p>
+<p>therefore depends on a choice of <strong>coefficient field</strong> $K$. The eigenvalues $\lambda_{i}$ lie in $K$; the eigenprojectors $e_{i}$ are idempotents of the Clifford algebra, or of its scalar extension; and the grade decomposition records the grades of both. The article develops the existence theorem in this setting, identifies the role of the centre and the volume element, and separates the two kinds of non-scalar eigenvalue: the <strong>internal</strong> ones, which are central multivectors of the algebra, and the <strong>external</strong> ones, which are scalars of a field extension. The internal case is the characteristic phenomenon of odd dimension; the external case is the characteristic phenomenon of even dimension and of the division algebras.</p>
+<p>The base is a field $F$ of characteristic not two, $V$ is a finite-dimensional $F$-space, $Q$ is a non-degenerate quadratic form on $V$, and $\mathrm{Cl}=\mathrm{Cl}(V,Q)$ is the Clifford algebra with $v^{2}=Q(v)1$. The grade decomposition, the volume element $\omega$, the reversion and the grade involution are from <em>The Geometric Product and the Grade Decomposition</em> and <em>Clifford Algebras in Finite Dimensions</em>; the centre is from <em>Clifford Algebras in Finite Dimensions</em>, §<em>16. The Centre</em>; the volume element and the Hodge star are from <em>The Volume Element, Duality and the Hodge Star</em>, §<em>Multiplication by the Volume Element</em>; the idempotents and the minimal left ideals are from <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the matrix classification is from <em>The Low-Dimensional Classification</em> and <em>The Number Systems as Clifford Algebras</em>; the associative original is <em>The Eigenvalue Decomposition of an Element</em>; and the application to the biquaternion algebra is <em>The Biquaternion Eigenvalue Decomposition</em>.</p>
+<h2 id="coefficient-fields-and-the-existence-theorem">Coefficient Fields and the Existence Theorem</h2>
+<h3 id="coefficient-fields">Coefficient Fields</h3>
+<p><strong>Definition.</strong> A <strong>coefficient field</strong> for $a\in\mathrm{Cl}$ is a field $K$ together with a $K$-algebra $\mathrm{Cl}_{K}$ that is one of the following:</p>
+<ol>
+<li>$K=F$ and $\mathrm{Cl}_{K}=\mathrm{Cl}$;</li>
+<li>$K$ is a subfield of the centre $Z(\mathrm{Cl})$ and $\mathrm{Cl}_{K}=\mathrm{Cl}$, viewed as a $K$-algebra;</li>
+<li>$K$ is a field extension of $F$ and $\mathrm{Cl}_{K}=\mathrm{Cl}\otimes_{F}K$.</li>
+</ol>
+<p>In each case $a$ is viewed in $\mathrm{Cl}_{K}$, the algebra $K[a]$ is a finite-dimensional commutative $K$-algebra, and the grade decomposition of $\mathrm{Cl}$ extends to $\mathrm{Cl}_{K}$ by $K$-linearity. The case 1 is the <strong>scalar</strong> case, the case 2 is the <strong>internal</strong> case, and the case 3 is the <strong>external</strong> case.</p>
+<p><strong>Remark.</strong> The internal and the external cases are different even when the field $K$ is the same. In the internal case the algebra is the given Clifford algebra, with $K$ sitting inside its centre; in the external case the algebra is the scalar extension $\mathrm{Cl}\otimes_{F}K$, of larger dimension. For $\mathrm{Cl}_{3,0}$ over $\mathbb{R}$ and $K=\mathbb{C}$ the internal algebra is the four-dimensional $\mathbb{C}$-algebra $M_{2}(\mathbb{C})$, while the external algebra is the eight-dimensional $\mathbb{C}$-algebra $M_{2}(\mathbb{C})\times M_{2}(\mathbb{C})$; the internal eigenvalues $\pm\omega$ live in the first, the external ones would live in a scalar extension and have grade $0$.</p>
+<p><strong>Definition.</strong> A <strong>$K$-eigenvalue</strong> of $a$ is a scalar $\lambda\in K$ for which $a-\lambda1$ is not invertible in $K[a]$. The <strong>$K$-spectrum</strong> $\sigma_{K}(a)$ is the set of the $K$-eigenvalues. A <strong>$K$-eigenvalue decomposition</strong> is a writing</p>
+<p>$$
+a=\sum_{i=1}^{r}\lambda_{i}e_{i}
+$$</p>
+<p>with $\lambda_{i}\in K$ pairwise distinct, $e_{i}\in\mathrm{Cl}_{K}$ nonzero idempotents satisfying $e_{i}e_{j}=\delta_{ij}e_{i}$ and $\sum_{i}e_{i}=1$, and $\lambda_{i}$ commuting with $e_{i}$ for every $i$.</p>
+<p><strong>Remark.</strong> The definition reduces to the associative one of <em>The Eigenvalue Decomposition of an Element</em> when $K=F$ and to the scalar extension of that article when $K/F$ is an extension. The internal case is the new one: $K$ is a subfield of the centre, so the eigenvalues are elements of the Clifford algebra itself, and their grade decomposition is available. The requirement that the eigenvalues commute with the projectors is automatic when $K\subseteq Z(\mathrm{Cl})$, and it is the condition that makes the eigenvalue equation $ae_{i}=\lambda_{i}e_{i}$ meaningful in the noncommutative algebra.</p>
+<h3 id="the-existence-theorem">The Existence Theorem</h3>
+<p><strong>Theorem.</strong> Let $K$ be a coefficient field for $a$ and let $m_{a,K}\in K[t]$ be the minimal polynomial of $a$ over $K$. The following are equivalent:</p>
+<ol>
+<li>$a$ has a $K$-eigenvalue decomposition;</li>
+<li>$m_{a,K}$ splits over $K$ with distinct roots;</li>
+<li>$m_{a,K}(t)=\prod_{i=1}^{r}(t-\lambda_{i})$ with $\lambda_{i}\in K$ pairwise distinct.</li>
+</ol>
+<p>When they hold, the eigenvalues are the $\lambda_{i}$, the eigenprojectors are the Lagrange polynomials</p>
+<p>$$
+e_{i}=\prod_{j\neq i}\frac{a-\lambda_{j}}{\lambda_{i}-\lambda_{j}},
+$$</p>
+<p>and the decomposition is unique.</p>
+<p><em>Proof.</em> The algebra $K[a]$ is finite dimensional, commutative and associative, and its product is the product of $\mathrm{Cl}_{K}$. The theorem is <em>The Eigenvalue Decomposition of an Element</em>, §<em>Existence and Uniqueness</em>, applied to the element $a$ of $K[a]$: the idempotents produced there lie in $K[a]$, hence in $\mathrm{Cl}_{K}$, and the Lagrange formula is the one of that article. The eigenvalue criterion is the same: $a-\lambda$ is not invertible in $K[a]$ exactly when $m_{a,K}(\lambda)=0$.</p>
+<p><strong>Corollary.</strong> The eigenprojectors lie in $K[a]$, they commute with $a$ and with one another, and their sum is $1$. In the internal case they are elements of the Clifford algebra with a grade decomposition; in the external case they are elements of the scalar extension, and their grade decomposition is the extension of the grade decomposition of $\mathrm{Cl}$.</p>
+<p><strong>Remark.</strong> The theorem is coefficient-dependent in a strong sense. The same element may have no eigenvalue over $F$, a full set of eigenvalues over an extension $K$, and a different set of eigenvalues over the centre. The spectrum is not a property of $a$ alone; it is a property of the pair $(a,K)$.</p>
+<h2 id="the-centre-and-the-volume-element">The Centre and the Volume Element</h2>
+<h3 id="the-centre">The Centre</h3>
+<p><strong>Theorem.</strong> Let $\omega=u_{1}\cdots u_{n}$ be the volume element of an orthogonal basis.</p>
+<ol>
+<li>If $n$ is even, the centre of $\mathrm{Cl}$ is $F$.</li>
+<li>If $n$ is odd, the centre is $F[\omega]$, a quadratic algebra over $F$ with $\omega\notin F$; it is a field when $\omega^{2}$ is not a square in $F$, and it is isomorphic to $F\times F$ when $\omega^{2}$ is a nonzero square.</li>
+<li>In both cases
+    $$
+    \omega^{2}=(-1)^{n(n-1)/2}Q(u_{1})\cdots Q(u_{n}).
+    $$</li>
+</ol>
+<p><em>Proof.</em> The volume element is central in odd dimension because it has grade $n$ and $n-1$ is even; in even dimension it commutes with the even part and anticommutes with the odd part, so it is not central. The centre is spanned by $1$ and, in odd dimension, by $\omega$; this is <em>Clifford Algebras in Finite Dimensions</em>, §<em>16. The Centre</em>. The formula for the square is the computation of <em>The Volume Element, Duality and the Hodge Star</em>, §<em>Multiplication by the Volume Element</em>.</p>
+<p><strong>Corollary.</strong> For the definite real forms, $\omega^{2}=(-1)^{n(n-1)/2}$ and the centre is $\mathbb{R}\times\mathbb{R}$ for $n\equiv1\pmod4$ and $\mathbb{C}$ for $n\equiv3\pmod4$. In particular $\mathrm{Cl}_{1,0}\cong\mathbb{R}\times\mathbb{R}$ and $\mathrm{Cl}_{3,0}\cong M_{2}(\mathbb{C})$.</p>
+<p><strong>Remark.</strong> In even dimension there is no internal non-scalar eigenvalue: the centre is the scalar field, and every eigenvalue over $F$ is a scalar. The non-scalar eigenvalues of an even-dimensional Clifford algebra are necessarily external, obtained by extending the scalars. In odd dimension the centre is a quadratic algebra, and an internal non-scalar eigenvalue is a central multivector $\lambda_{0}+\lambda_{n}\omega$ with grades $0$ and $n$, not a scalar.</p>
+<h3 id="the-grade-of-a-central-eigenvalue">The Grade of a Central Eigenvalue</h3>
+<p><strong>Proposition.</strong> Let $n$ be odd and let $\lambda\in Z(\mathrm{Cl})$ be written $\lambda=\lambda_{0}+\lambda_{n}\omega$ with $\lambda_{0},\lambda_{n}\in F$. Then $\lambda$ has grade support in $\{0,n\}$. If $\lambda\notin F$, then $\lambda_{n}\neq0$ and the eigenvalue has a nonzero top-grade part.</p>
+<p><em>Proof.</em> The volume element is homogeneous of grade $n$, and the scalars are of grade $0$; a linear combination has the grade support of its terms. The top-grade part is $\lambda_{n}\omega$.</p>
+<p><strong>Remark.</strong> This is the sense in which an internal eigenvalue is a <strong>multivector eigenvalue</strong>: it is not a scalar of the base field, but a central element with a top-grade component. The eigenprojectors, by contrast, can have grades spread over several degrees; the grade decomposition of the pair is the subject of §<em>The Grade Decomposition of the Spectral Data</em>.</p>
+<h3 id="the-centre-as-a-coefficient-field">The Centre as a Coefficient Field</h3>
+<p>When $Z(\mathrm{Cl})$ is a field, it is a coefficient field in the sense of case 2, and the algebra $\mathrm{Cl}$ is a $Z$-algebra. The eigenvalues in $Z$ are the <strong>internal non-scalar</strong> eigenvalues. When $Z(\mathrm{Cl})\cong F\times F$, it is not a field; choosing $r\in F$ with $\omega^{2}=r^{2}$, the two central idempotents</p>
+<p>$$
+\pi_{\pm}=\tfrac12(1\pm\omega/r)
+$$</p>
+<p>split $\mathrm{Cl}$ into two ideals, and the spectral theory over $F$ is the spectral theory of the two components. The split case is the algebra-level analogue of a scalar with two eigenvalues; the non-split case is the algebra-level analogue of a quadratic extension.</p>
+<h2 id="internal-and-external-non-scalar-eigenvalues">Internal and External Non-Scalar Eigenvalues</h2>
+<h3 id="the-two-kinds">The Two Kinds</h3>
+<p><strong>Definition.</strong> An eigenvalue of $a$ is <strong>scalar</strong> when it lies in $F$. It is <strong>internally non-scalar</strong> when it lies in $Z(\mathrm{Cl})\setminus F$ and $Z(\mathrm{Cl})$ is a field. It is <strong>externally non-scalar</strong> when it lies in $K\setminus F$ for a field extension $K/F$ with $\mathrm{Cl}_{K}=\mathrm{Cl}\otimes_{F}K$.</p>
+<p><strong>Remark.</strong> The distinction is not terminological. An internal eigenvalue is an element of the Clifford algebra, with a grade decomposition; an external eigenvalue is a scalar of the extended field, with grade $0$ in the extended algebra. The internal eigenvalue can be multiplied by the projectors inside the algebra; the external one can only be adjoined. The examples below show the two mechanisms side by side.</p>
+<h3 id="the-internal-case-a-bivector-in-three-dimensions">The Internal Case: A Bivector in Three Dimensions</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{3,0}$ over $\mathbb{R}$, with $\omega=u_{1}u_{2}u_{3}$, $\omega^{2}=-1$, and $Z=\mathbb{R}[\omega]\cong\mathbb{C}$. Let</p>
+<p>$$
+a=u_{1}u_{2}=\omega u_{3}.
+$$</p>
+<p>The element is a bivector of grade $2$, and</p>
+<p>$$
+a^{2}=u_{1}u_{2}u_{1}u_{2}=-u_{1}^{2}u_{2}^{2}=-1=\omega^{2}.
+$$</p>
+<p>The minimal polynomial over $Z$ is</p>
+<p>$$
+m_{a,Z}(t)=t^{2}+1=(t-\omega)(t+\omega),
+$$</p>
+<p>so the internal eigenvalues are $\pm\omega$. The eigenprojectors are</p>
+<p>$$
+e_{\pm}=\tfrac12(1\pm u_{3}),
+$$</p>
+<p>the standard idempotents of the unit vector $u_{3}$; they are idempotent, orthogonal and complete, and</p>
+<p>$$
+a=u_{1}u_{2}=\omega u_{3}=\omega e_{+}-\omega e_{-}.
+$$</p>
+<p>The eigenvalues are $\pm\omega$, of grade $3$; the projectors have grades $0$ and $1$. The element $a$ has grade $2$, and the grade-$1$ parts of the projectors cancel in the sum $e_{+}+e_{-}=1$. The resolution is the Peirce decomposition of the algebra relative to the idempotent $e_{+}$ (equivalently, to $e_{-}$), and the left ideals $\mathrm{Cl}e_{\pm}$ are the two minimal left ideals, the spinor spaces of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>, §<em>Three Dimensions</em>.</p>
+<p><strong>Remark.</strong> The same element over $F=\mathbb{R}$ has minimal polynomial $t^{2}+1$, which is irreducible; it has no scalar eigenvalue and no decomposition over $\mathbb{R}$. The internal eigenvalue exists only because the centre is larger than $\mathbb{R}$. In this sense the volume element of an odd-dimensional algebra is a built-in complex structure, and the internal non-scalar eigenvalues are the eigenvalues that it makes available.</p>
+<h3 id="the-external-case-a-bivector-in-the-plane">The External Case: A Bivector in the Plane</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{2,0}$ over $\mathbb{R}$, with $u_{1}^{2}=u_{2}^{2}=1$ and $a=u_{1}u_{2}$. Then $a^{2}=-1$, and the minimal polynomial over $\mathbb{R}$ is $t^{2}+1$, irreducible. There is no real eigenvalue decomposition. Over the extension $K=\mathbb{C}$,</p>
+<p>$$
+m_{a,\mathbb{C}}(t)=t^{2}+1=(t-i)(t+i),
+$$</p>
+<p>and the eigenprojectors are</p>
+<p>$$
+e_{\pm}=\tfrac12(1\mp i u_{1}u_{2}).
+$$</p>
+<p>They are idempotent, orthogonal and complete, and $a=i e_{+}-i e_{-}$. The eigenvalues $\pm i$ are external scalars of grade $0$; the projectors have grades $0$ and $2$. The element $a$ has grade $2$, and the decomposition lives in $\mathrm{Cl}_{2,0}\otimes_{\mathbb{R}}\mathbb{C}\cong M_{2}(\mathbb{C})$.</p>
+<p><strong>Remark.</strong> The contrast with the previous example is the whole content of the internal/external distinction. In $\mathrm{Cl}_{3,0}$ the imaginary unit is the central volume element, of grade $3$, and the projectors have grades $0$ and $1$; in $\mathrm{Cl}_{2,0}$ the imaginary unit is an external scalar, of grade $0$, and the projectors have grades $0$ and $2$. The two algebras have different complexifications, $\mathrm{Cl}_{3,0}\otimes\mathbb{C}\cong M_{2}(\mathbb{C})\times M_{2}(\mathbb{C})$ and $\mathrm{Cl}_{2,0}\otimes\mathbb{C}\cong M_{2}(\mathbb{C})$, and the grade of the imaginary unit is what distinguishes the two readings.</p>
+<h3 id="the-division-case">The Division Case</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{0,2}\cong\mathbb{H}$ over $\mathbb{R}$, with $u_{1}^{2}=u_{2}^{2}=-1$ and $a=u_{1}u_{2}$. The algebra is a division algebra, so its only idempotents are $0$ and $1$; it has no nontrivial spectral resolution. The element $a$ has $a^{2}=-1$ and no real eigenvalue. Over $\mathbb{C}$ the algebra becomes $M_{2}(\mathbb{C})$, and the decomposition of the previous subsection applies, with the same formulas and the same external eigenvalues $\pm i$. The real algebra has no decomposition for $a$, not because the polynomial fails to split in some extension, but because there are no idempotents to receive the eigenvalues.</p>
+<p><strong>Remark.</strong> The example is the Clifford case of <em>The Number Systems as Algebras with and without Nontrivial Idempotents</em>, §<em>Division Algebras Have None</em>. A division algebra can have a scalar extension that is a matrix algebra and can have a full spectral theory there; the theory does not descend to the division algebra, because the projectors do not descend. The obstruction is the absence of idempotents, not the absence of eigenvalues in an extension.</p>
+<h2 id="the-grade-decomposition-of-the-spectral-data">The Grade Decomposition of the Spectral Data</h2>
+<h3 id="the-standard-idempotents">The Standard Idempotents</h3>
+<p>The idempotents that occur in the spectral resolutions above are the standard ones of the Clifford algebra.</p>
+<ol>
+<li><strong>The vector idempotent.</strong> For a unit vector $u\in V$, $u^{2}=1$, the element
+    $$
+    \pi_{u}=\tfrac12(1+u)
+    $$
+    is an idempotent of grades $0$ and $1$. Its left ideal $\mathrm{Cl}\pi_{u}$ is a spinor module when the form is definite, and the Peirce decomposition relative to $\pi_{u}$ has the diagonal part $\pi_{u}\mathrm{Cl}\pi_{u}\oplus(1-\pi_{u})\mathrm{Cl}(1-\pi_{u})$ and the mixed part.</li>
+<li><strong>The central idempotent.</strong> When $\omega^{2}=1$, the element
+    $$
+    \pi_{\pm}=\tfrac12(1\pm\omega)
+    $$
+    is a central idempotent of grades $0$ and $n$. The two split the algebra, $\mathrm{Cl}=\mathrm{Cl}\pi_{+}\oplus\mathrm{Cl}\pi_{-}$, and each factor is an ideal.</li>
+<li><strong>The Witt idempotent.</strong> For an orthogonal basis of isotropic vectors $a_{1},a_{1}^{\dagger},\dots,a_{m},a_{m}^{\dagger}$ with the Witt normalisation of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>, §<em>The Witt Basis</em>, the product
+    $$
+    \pi=a_{1}a_{1}^{\dagger}\cdots a_{m}a_{m}^{\dagger}
+    $$
+    is a primitive idempotent whose grade support is spread over the even grades; the left ideal $\mathrm{Cl}\pi$ is the exterior algebra of the creation operators.</li>
+</ol>
+<p><strong>Remark.</strong> The grade support of an idempotent is not arbitrary. The idempotent equation compares the grades of $\pi^{2}$ and $\pi$; the scalar part of $\pi$ is an idempotent of the base field, hence $0$ or $1$, and the top-grade part is constrained by the top-grade part of the product. The standard idempotents saturate the two extreme cases: the vector idempotent has the smallest positive grade, and the central idempotent has the largest.</p>
+<h3 id="the-cancellation-of-the-higher-grades">The Cancellation of the Higher Grades</h3>
+<p><strong>Proposition.</strong> Let $a=\sum_{i=1}^{r}\lambda_{i}e_{i}$ be a $K$-eigenvalue decomposition and let $e_{i}=\sum_{k=0}^{n}e_{i,k}$ be the grade decomposition of the projectors. Then for every $k>0$,</p>
+<p>$$
+\sum_{i=1}^{r}e_{i,k}=0 .
+$$</p>
+<p>In particular the top-grade parts of the projectors cancel, and the scalar parts sum to $1$.</p>
+<p><em>Proof.</em> The sum of the projectors is $1$, which has grade $0$; comparing the grade components gives the identities. The scalar part of $1$ is $1$ and its positive-grade parts are $0$.</p>
+<p><strong>Remark.</strong> The cancellation is the grade-level form of the resolution of the identity. In the example $a=u_{1}u_{2}$ of $\mathrm{Cl}_{3,0}$, the projectors $e_{\pm}=\frac12(1\pm u_{3})$ have vector parts $\pm\frac12 u_{3}$, which cancel; the scalar parts sum to $1$. In the external example of $\mathrm{Cl}_{2,0}$, the projectors $e_{\pm}=\frac12(1\mp i u_{1}u_{2})$ have bivector parts $\mp\frac12 i u_{1}u_{2}$, which cancel. The cancellation is the reason a pair of conjugate idempotents can sum to the identity while each carries a nonzero multivector part.</p>
+<h3 id="the-grade-of-the-eigenvalue-equation">The Grade of the Eigenvalue Equation</h3>
+<p><strong>Remark.</strong> The eigenvalue equation is a grade equation as well as a scalar equation, but the grade bookkeeping is not a simple shift. The product of a homogeneous element of grade $k$ with a homogeneous element of grade $j$ has the grades</p>
+<p>$$
+\lvert k-j\rvert,\ \lvert k-j\rvert+2,\ \dots,\ k+j,
+$$</p>
+<p>by the grade theorem of <em>The Geometric Product and the Grade Decomposition</em>. If the eigenprojector $e$ is not homogeneous, its product with $a$ spreads over all the grades obtained from the grades of $e$, and the eigenvalue equation says that the resulting multivector equals the scalar multiple $\lambda e$ grade by grade. The equation therefore constrains the support of $e$, but it does not pair the grades one to one.</p>
+<p><strong>Example.</strong> In $\mathrm{Cl}_{3,0}$ with $a=u_{1}u_{2}$ of grade $2$, the projector $e_{+}=\frac12(1+u_{3})$ has grades $0$ and $1$. The product $a e_{+}=\frac12(u_{1}u_{2}+\omega)$ has grades $2$ and $3$; the eigenvalue $\omega$ has grade $3$, and $\omega e_{+}=\frac12(\omega+u_{1}u_{2})$ has the same grades $2$ and $3$. The product of the grade $3$ of the eigenvalue with the grade $0$ of the projector gives grade $3$; its product with the grade $1$ of the projector gives grade $2$, because the grades $3$ and $1$ multiply to the grades $2$ and $4$, and grade $4$ is absent in dimension three. The two contributions reproduce the product.</p>
+<p><strong>Example.</strong> In $\mathrm{Cl}_{2,0}$ over $\mathbb{C}$ with $a=u_{1}u_{2}$ of grade $2$, the projector $e_{+}=\frac12(1-i u_{1}u_{2})$ has grades $0$ and $2$. The product $a e_{+}=\frac12(u_{1}u_{2}+i)$ has grades $2$ and $0$; the external eigenvalue $i$ has grade $0$, and $i e_{+}=\frac12(i+u_{1}u_{2})$ has the same grades $2$ and $0$. The projector is not homogeneous, and the two grades are exchanged by the multiplication.</p>
+<p><strong>Remark.</strong> The examples show why the projectors of a homogeneous element are not usually homogeneous. The scalar part of a projector is an idempotent of the base field, hence $0$ or $1$; the higher-grade parts are constrained by the eigenvalue equation and by the resolution of the identity, and they cancel in the sum of a complete family.</p>
+<h2 id="the-matrix-model-and-the-reduced-spectrum">The Matrix Model and the Reduced Spectrum</h2>
+<h3 id="the-algebraic-closure">The Algebraic Closure</h3>
+<p>Over an algebraic closure $\bar F$, the Clifford algebra is a full matrix algebra or a product of two copies:</p>
+<p>$$
+\mathrm{Cl}\otimes_{F}\bar F\cong
+\begin{cases}
+M_{N}(\bar F), & n\text{ even},\\[2pt]
+M_{N}(\bar F)\times M_{N}(\bar F), & n\text{ odd},
+\end{cases}
+\qquad N=2^{n/2}\text{ or }2^{(n-1)/2},
+$$</p>
+<p>by <em>The Low-Dimensional Classification</em>. The eigenvalue decomposition over $\bar F$ is the matrix eigenvalue decomposition of <em>The Eigenvalue Decomposition of a Matrix</em>; the Clifford-specific content is the grade of the eigenvalues and the projectors.</p>
+<h3 id="the-reduced-characteristic-polynomial">The Reduced Characteristic Polynomial</h3>
+<p>When $Z(\mathrm{Cl})$ is a field and $\mathrm{Cl}$ is central simple over $Z$ of degree $N$, the <strong>reduced characteristic polynomial</strong> of $a$ is</p>
+<p>$$
+\operatorname{Nrd}(t-a)=\det\mathsf{M}_{N}(t-a)\in Z[t],
+$$</p>
+<p>where $\mathsf{M}_{N}$ is a matrix model over $Z$. Its roots in $Z$, with multiplicities, are the internal eigenvalues of $a$. The model over $Z$ is not the scalar extension $\mathrm{Cl}\otimes_{F}\bar F$ of the previous subsection: for $\mathrm{Cl}_{3,0}$ the model over $Z=\mathbb{C}$ is $M_{2}(\mathbb{C})$, while the complexification is $M_{2}(\mathbb{C})\times M_{2}(\mathbb{C})$. In $\mathrm{Cl}_{3,0}$ the reduced characteristic polynomial of $a=u_{1}u_{2}$ is $t^{2}+1=(t-\omega)(t+\omega)$. In $\mathrm{Cl}_{2,0}$ over $Z=\mathbb{R}$, the model is $M_{2}(\mathbb{R})$ and the reduced characteristic polynomial is again $t^{2}+1$, with no real root; the roots $\pm i$ appear only after the external extension.</p>
+<p><strong>Remark.</strong> The reduced characteristic polynomial is the Clifford analogue of the characteristic polynomial of a matrix. Its coefficients lie in the centre, so its roots are internal when the centre is a field; the external eigenvalues are the roots after extending the scalars. The minimal polynomial of the existence theorem is the squarefree part of the reduced characteristic polynomial when the element is semisimple; the two coincide when in addition all the eigenvalues are distinct.</p>
+<h2 id="examples-and-the-low-dimensional-table">Examples and the Low-Dimensional Table</h2>
+<h3 id="the-split-line">The Split Line</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{1,0}$ over $F$, with $u_{1}^{2}=1$. The centre is $F[u_{1}]\cong F\times F$, and the algebra is split. For $a=u_{1}$ the minimal polynomial is $t^{2}-1=(t-1)(t+1)$, and the spectral resolution is</p>
+<p>$$
+u_{1}=1\cdot\pi_{+}+(-1)\cdot\pi_{-}, \qquad \pi_{\pm}=\tfrac12(1\pm u_{1}).
+$$</p>
+<p>The projectors are central idempotents of grades $0$ and $1$; the eigenvalues $\pm1$ are scalars. The resolution is the decomposition of the algebra into its two ideals.</p>
+<h3 id="the-split-plane">The Split Plane</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{1,1}$ over $F$, with $u_{1}^{2}=1$, $u_{2}^{2}=-1$, and $a=u_{1}u_{2}$. Then $a^{2}=1$, the minimal polynomial is $t^{2}-1$, and</p>
+<p>$$
+a=1\cdot\pi_{+}+(-1)\cdot\pi_{-}, \qquad \pi_{\pm}=\tfrac12(1\pm u_{1}u_{2}).
+$$</p>
+<p>The projectors have grades $0$ and $2$, and the eigenvalues are scalars. The algebra is $\mathrm{Cl}_{1,1}\cong M_{2}(F)$, and the resolution is the matrix spectral resolution of a split involution.</p>
+<h3 id="the-definite-plane">The Definite Plane</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{2,0}$ over $\mathbb{R}$, with $a=u_{1}u_{2}$. Over $\mathbb{R}$ the minimal polynomial is $t^{2}+1$, irreducible; there is no real resolution. Over $\mathbb{C}$ the eigenvalues are $\pm i$ and the projectors are $\tfrac12(1\mp i u_{1}u_{2})$, of grades $0$ and $2$. The algebra is $M_{2}(\mathbb{R})$ over $\mathbb{R}$ and $M_{2}(\mathbb{C})$ over $\mathbb{C}$.</p>
+<h3 id="the-definite-three-space">The Definite Three-Space</h3>
+<p>Let $\mathrm{Cl}=\mathrm{Cl}_{3,0}$ over $\mathbb{R}$, with $a=u_{1}u_{2}=\omega u_{3}$. The centre is $\mathbb{C}$, the eigenvalues are $\pm\omega$, and the projectors are $\tfrac12(1\pm u_{3})$, of grades $0$ and $1$. The algebra is $M_{2}(\mathbb{C})$ over $\mathbb{C}$.</p>
+<h3 id="the-table">The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Centre</th>
+<th>Element</th>
+<th>Coefficient field</th>
+<th>Eigenvalues</th>
+<th>Grades of projectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}_{1,0}$</td>
+<td>$\mathbb{R}\times\mathbb{R}$</td>
+<td>$u_{1}$</td>
+<td>$\mathbb{R}$</td>
+<td>$\pm1$</td>
+<td>$0,1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{1,1}$</td>
+<td>$\mathbb{R}$</td>
+<td>$u_{1}u_{2}$</td>
+<td>$\mathbb{R}$</td>
+<td>$\pm1$</td>
+<td>$0,2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{2,0}$</td>
+<td>$\mathbb{R}$</td>
+<td>$u_{1}u_{2}$</td>
+<td>$\mathbb{R}$</td>
+<td>none</td>
+<td>---</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{2,0}\otimes\mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>$u_{1}u_{2}$</td>
+<td>$\mathbb{C}$</td>
+<td>$\pm i$</td>
+<td>$0,2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{3,0}$</td>
+<td>$\mathbb{C}$</td>
+<td>$u_{1}u_{2}$</td>
+<td>$\mathbb{C}$</td>
+<td>$\pm\omega$</td>
+<td>$0,1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{0,2}\cong\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>$u_{1}u_{2}$</td>
+<td>$\mathbb{R}$</td>
+<td>none</td>
+<td>---</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{0,2}\otimes\mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>$u_{1}u_{2}$</td>
+<td>$\mathbb{C}$</td>
+<td>$\pm i$</td>
+<td>$0,2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark.</strong> The table exhibits the two mechanisms. In $\mathrm{Cl}_{3,0}$ the imaginary unit is internal, of grade $3$, and the eigenvalues are central multivectors; in $\mathrm{Cl}_{2,0}$ and $\mathrm{Cl}_{0,2}$ the imaginary unit is external, of grade $0$, and the eigenvalues are scalars of the extension. In $\mathrm{Cl}_{1,0}$ and $\mathrm{Cl}_{1,1}$ the eigenvalues are scalar from the start, and the projectors are central or matrix idempotents according to the splitness of the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>eigenvalue decomposition</strong> of an element $a$ of a Clifford algebra is taken over a <strong>coefficient field</strong> $K$: the base field, a subfield of the centre, or a scalar extension. It exists exactly when the minimal polynomial $m_{a,K}$ splits over $K$ with distinct roots; the eigenprojectors are the Lagrange polynomials in $a$, and the decomposition is unique. The spectrum depends on $K$, not on $a$ alone.</p>
+<p>The centre is $F$ in even dimension and $F[\omega]$ in odd dimension, with $\omega$ the volume element and $\omega^{2}=(-1)^{n(n-1)/2}Q(u_{1})\cdots Q(u_{n})$. An <strong>internal</strong> non-scalar eigenvalue is a central element of grade $0$ and $n$; an <strong>external</strong> non-scalar eigenvalue is a scalar of a field extension, of grade $0$. In even dimension only the external kind occurs; in odd dimension both occur, and the internal kind is the characteristic feature.</p>
+<p>The eigenprojectors are idempotents with a grade decomposition. The vector idempotent $\tfrac12(1+u)$ has grades $0$ and $1$; the central idempotent $\tfrac12(1+\omega)$, when $\omega^{2}=1$, has grades $0$ and $n$; the Witt idempotent has a spread support. The positive-grade parts of a complete family of projectors cancel, because their sum is the identity. The eigenvalue equation pairs the grades of the element with those of the projectors.</p>
+<p>A division Clifford algebra, such as $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, has no nontrivial idempotents, so it has no nontrivial eigenvalue decomposition even when a scalar extension has one. A split Clifford algebra, such as $\mathrm{Cl}_{1,0}$ or $\mathrm{Cl}_{1,1}$, has the idempotents and the decomposition. The biquaternion algebra is the case $\mathrm{Cl}_{3,0}$, where the volume element is the central imaginary unit; its eigenvalue decomposition is <em>The Biquaternion Eigenvalue Decomposition</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>a field of characteristic not two</td>
+</tr>
+<tr>
+<td>$V$, $Q$</td>
+<td>a finite-dimensional $F$-space and a non-degenerate quadratic form</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}=\mathrm{Cl}(V,Q)$</td>
+<td>the Clifford algebra, $v^{2}=Q(v)1$</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>the dimension of $V$</td>
+</tr>
+<tr>
+<td>$u_{1},\dots,u_{n}$</td>
+<td>an orthogonal basis of $V$</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^{k}$</td>
+<td>the grade-$k$ part of the algebra</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>the volume element, a product of an orthogonal basis</td>
+</tr>
+<tr>
+<td>$Z(\mathrm{Cl})$</td>
+<td>the centre</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>a coefficient field</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}_{K}$</td>
+<td>the algebra $\mathrm{Cl}$ or $\mathrm{Cl}\otimes_{F}K$</td>
+</tr>
+<tr>
+<td>$m_{a,K}$</td>
+<td>the minimal polynomial of $a$ over $K$</td>
+</tr>
+<tr>
+<td>$\sigma_{K}(a)$</td>
+<td>the $K$-spectrum</td>
+</tr>
+<tr>
+<td>$a=\sum_{i}\lambda_{i}e_{i}$</td>
+<td>the $K$-eigenvalue decomposition</td>
+</tr>
+<tr>
+<td>$e_{i}$</td>
+<td>the eigenprojectors, $e_{i}e_{j}=\delta_{ij}e_{i}$, $\sum_{i}e_{i}=1$</td>
+</tr>
+<tr>
+<td>$e_{i,k}$</td>
+<td>the grade-$k$ component of $e_{i}$</td>
+</tr>
+<tr>
+<td>$\pi_{u}=\tfrac12(1+u)$</td>
+<td>the idempotent of a unit vector</td>
+</tr>
+<tr>
+<td>$\pi_{\pm}=\tfrac12(1\pm r)$, $r^{2}=1$</td>
+<td>the idempotents of a root of $1$; central when $r$ is central</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the centre, the volume element and the classification.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the grade decomposition and the idempotents.</li>
+<li>Rafał Abłamowicz and Bertfried Fauser (eds.), <em>Clifford Algebras and Their Applications in Mathematical Physics</em> (Birkhäuser, 2000), for the multivector idempotents and the spinor ideals.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the eigenvalue decomposition and the Peirce decomposition in an associative algebra.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the central simple algebras and their reduced characteristic polynomials.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

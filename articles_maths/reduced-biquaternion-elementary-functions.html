@@ -68,65 +68,103 @@
         <h1 id="reduced-biquaternion-elementary-functions"><strong>Reduced Biquaternion Elementary Functions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article defines the elementary functions of a reduced biquaternion variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.</p>
-<p>The article rests on <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>. That article gives the eigenvalues $\lambda_1=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_2=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, the central idempotents $\Pi_\pm=\tfrac12(1\pm j)$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus $f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$. Those results are used here without proof. The algebra and its bar are <em>Introduction to the Algebra of the Reduced Biquaternions</em>; the norm and the unit criterion are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout.</p>
+<p>The article rests on <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Units</em>: the eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, the central idempotents $\Pi_\pm$, the decomposition $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$, and the spectral calculus. They are collected in §<em>The Eigenvalue Data</em> and used here without proof. The algebra and its bar are <em>Introduction to the Algebra of the Reduced Biquaternions</em>; the norm and the unit criterion are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>.</p>
+<p>Every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout.</p>
 <p><strong>Placement.</strong> The article is in the Analysis group of the Reduced Biquaternion category, after <em>Reduced Biquaternion Analysis</em> and before <em>Reduced Biquaternion Higher Special Functions</em> and <em>Exponential Polar Decomposition of Reduced Biquaternions</em>. The complex member is <em>Complex Special Functions</em>, and the split-complex members are <em>Split-Complex Elementary Functions</em> and <em>Split-Complex Higher Special Functions</em>.</p>
-<p><strong>Plan.</strong> The spectral setting is recalled first, with the two regimes and the spectral calculus (§<em>The Spectral Setting</em>). The exponential and the logarithm follow, with their kernels, images and fibres (§<em>The Exponential</em>, §<em>The Logarithm</em>); the powers and roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions and their inverses follow (§<em>The Trigonometric and Hyperbolic Functions</em>); the relations to the complex line and the split-complex plane close the theory (§<em>Relations to the Complex and Split-Complex Cases</em>). The results are collected in tables in §<em>Summary</em>.</p>
+<p><strong>Plan.</strong> The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§<em>The Spectral Setting</em>). The exponential and the logarithm follow, with their kernels, images and fibres (§<em>The Exponential</em>, §<em>The Logarithm</em>); the powers and roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions and their inverses follow (§<em>The Trigonometric and Hyperbolic Functions</em>); the relations to the complex line and the split-complex plane close the theory (§<em>Relations to the Neighbouring Cases</em>). The results are collected in tables in §<em>Summary</em>, including the comparison with the split-complex and biquaternion cases.</p>
 <p>Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-spectral-setting">The Spectral Setting</h2>
 <h3 id="the-eigenvalue-data">The Eigenvalue Data</h3>
-<p>The algebra is $\mathbb{B}_{\mathrm{r}}=\{Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\}$, with basis $1,i,j,ij$, $i^2=-1$, $j^2=+1$ and $ij=ji$. The eigenvalues, idempotents and decomposition are</p>
-<p>$$
-\lambda_1=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad
-\lambda_2=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown},
-\qquad
-\Pi_\pm=\tfrac12(1\pm j),
-\qquad
-\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-.
-$$</p>
-<p>These are <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em> and §<em>The Eigenprojections</em>. The multiplication is componentwise in the idempotent basis,</p>
-<p>$$
-(Q_{\blacktriangle}+jQ_{\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})
-=(Q_{\blacktriangle}Q_{2\blacktriangle}+Q_{\blacktriangledown}Q_{2\blacktriangledown})
-+j(Q_{\blacktriangle}Q_{2\blacktriangledown}+Q_{\blacktriangledown}Q_{2\blacktriangle}),
-$$</p>
-<p>with eigenvalue components $Q_+Q_{2+}$ and $Q_-Q_{2-}$. The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_1\lambda_2$, and the squared Euclidean norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$. The element is a unit exactly when $\lambda_1\lambda_2\neq0$, that is exactly when both eigenvalues are nonzero.</p>
+<p>The spectral data are those of <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em>, §<em>The Eigenprojections</em> and §<em>Powers, Polynomial Calculus, and the Group of Units</em>. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spectrum</td>
+<td>$\sigma(\breve Q)=\{\lambda_1,\lambda_2\}$</td>
+</tr>
+<tr>
+<td>Eigenvalues</td>
+<td>$\lambda_1=Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $\lambda_2=Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$</td>
+</tr>
+<tr>
+<td>Eigenprojections</td>
+<td>$\Pi_\pm=\tfrac12(1\pm j)$, central, primitive, orthogonal, complete</td>
+</tr>
+<tr>
+<td>Eigenvalue decomposition</td>
+<td>$\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$</td>
+</tr>
+<tr>
+<td>Characteristic polynomial</td>
+<td>$p_{\breve Q}(X)=(X-\lambda_1)(X-\lambda_2)$</td>
+</tr>
+<tr>
+<td>Distinctness</td>
+<td>$\lambda_1\neq\lambda_2$ exactly when $Q_{\blacktriangledown}\neq0$</td>
+</tr>
+<tr>
+<td>Norm</td>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\lambda_1\lambda_2$</td>
+</tr>
+<tr>
+<td>Unit criterion</td>
+<td>$\breve Q$ is a unit exactly when $\lambda_1\lambda_2\neq0$</td>
+</tr>
+<tr>
+<td>Polynomial calculus</td>
+<td>$f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every polynomial $f$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Multiplication is componentwise in the idempotent basis,
+$$
+\bigl(Q_+\Pi_++Q_-\Pi_-\bigr)\bigl(Q_{2+}\Pi_++Q_{2-}\Pi_-\bigr)
+=Q_+Q_{2+}\Pi_++Q_-Q_{2-}\Pi_-,
+$$
+and the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=\lambda_1\lambda_2$. The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, and the squared Euclidean norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$.</p>
 <h3 id="the-regimes">The Regimes</h3>
-<p>The characteristic polynomial is $(X-\lambda_1)(X-\lambda_2)$, and the algebra has two regimes.</p>
+<p>The characteristic polynomial is $(X-\lambda_1)(X-\lambda_2)$, and the algebra has two spectral regimes; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>Degenerate Regimes</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Regime</th>
 <th>Condition</th>
-<th>Spectrum</th>
-<th>Subalgebra</th>
-<th>Eigenprojections</th>
+<th>Consequence for the functions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Distinct</td>
-<td>$Q_{\blacktriangledown}\neq0$</td>
-<td>$\{\lambda_1,\lambda_2\}$, distinct</td>
-<td>$\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\times\mathbb{C}$</td>
-<td>$\Pi_\pm$ are the eigenprojections</td>
+<td>Distinct, not a zero divisor</td>
+<td>$Q_{\blacktriangledown}\neq0$, $\lambda_1\lambda_2\neq0$</td>
+<td>$\log$ is defined on the unit group; the powers and roots read two nonzero eigenvalues</td>
+</tr>
+<tr>
+<td>Zero divisor</td>
+<td>$Q_{\blacktriangledown}\neq0$, $\lambda_1\lambda_2=0$</td>
+<td>$\exp$ does not reach it, so $\log$ is undefined; a trigonometric or hyperbolic value may be a zero divisor</td>
 </tr>
 <tr>
 <td>Scalar</td>
 <td>$Q_{\blacktriangledown}=0$</td>
-<td>$\{Q_{\blacktriangle}\}$, repeated</td>
-<td>$\mathbb{C}[\breve Q]=\mathbb{C}e_t$</td>
-<td>the refinement $\breve Q=Q_{\blacktriangle}\Pi_++Q_{\blacktriangle}\Pi_-$ is available</td>
+<td>one eigenvalue; the two-term spectral form is a non-unique refinement</td>
 </tr>
 </tbody>
 </table></div>
-<p>The algebra is <strong>reduced</strong>: if $\breve X^{2}=0$, both eigenvalues of $\breve X$ are zero, hence $\breve X=0$. There is no nilpotent regime, in contrast with the biquaternions, and the scalar regime is the only degeneration. In the scalar regime the two-term spectral form is a non-unique refinement of the one-term decomposition; the functions below are unaffected, because their spectral form is continuous in $\lambda_1,\lambda_2$.</p>
-<h3 id="the-spectral-calculus">The Spectral Calculus</h3>
-<p>Every elementary function of this article is the spectral function of its complex counterpart. For a function $f$ defined on a domain containing both eigenvalues, the value is</p>
+<p>The algebra is <strong>reduced</strong>: if $\breve X^{2}=0$, both eigenvalues of $\breve X$ are zero, hence $\breve X=0$. There is no nilpotent regime, in contrast with the biquaternions. The distinct regime splits into the units and the zero divisors according to whether the norm vanishes, and the scalar regime is the only spectral degeneration. In the scalar regime the two-term spectral form is a non-unique refinement of the one-term decomposition; the functions below are unaffected, because their spectral form is continuous in $\lambda_1,\lambda_2$.</p>
+<h3 id="the-idempotent-principle">The Idempotent Principle</h3>
+<p>Every elementary function of this article is the spectral function of its complex counterpart. The rule is stated once.</p>
+<p><strong>Theorem (Idempotent Principle).</strong> Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $\rho$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<\rho$. Then</p>
 <p>$$
 f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-.
 $$</p>
-<p>For an entire function the identity follows from the power series and the polynomial calculus of <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>Powers, Polynomial Calculus, and the Group of Units</em>. For a function defined by an integral, an inverse or another complex formula, the same display is the definition of its reduced biquaternion extension, and the value is defined exactly when both eigenvalue expressions are defined. This is the <strong>Idempotent Principle</strong> of the algebra, and it is the exact analogue of <em>Split-Complex Elementary Functions</em>, §<em>The Idempotent Principle</em>, with two real eigenvalues replaced by two complex ones. It is the only rule the rest of the article uses.</p>
+<p><strong>Proof.</strong> The polynomial calculus of <em>Eigenvalue Decomposition of a Reduced Biquaternion</em>, §<em>Powers, Polynomial Calculus, and the Group of Units</em>, gives $\breve Q^n=\lambda_1^n\Pi_++\lambda_2^n\Pi_-$ for every $n\geq0$. Summing termwise and using $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$ gives the display; the rearrangement is legitimate because the series converges absolutely in each component. For a function defined by an integral, an inverse or another complex formula, the display is the definition of its reduced biquaternion extension, and the value is defined exactly when both eigenvalue expressions are defined.</p>
+<p>This is the <strong>Idempotent Principle</strong> of the algebra, and it is the exact analogue of <em>Split-Complex Elementary Functions</em>, §<em>The Idempotent Principle</em>, with two real eigenvalues replaced by two complex ones. It is the only rule the rest of the article uses.</p>
 <p>The rule explains both structural facts of the algebra. Multiplication is commutative, so the functional equations hold for all arguments, with no ordering correction. And every identity between elementary functions that holds in the complex plane holds after the substitution $\lambda_i$ in both components.</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="definition">Definition</h3>
@@ -140,11 +178,11 @@ $$</p>
 d\exp_{\breve Q}(\breve H)=\exp(\breve Q)\,\breve H.
 $$</p>
 <p>The functional equation holds for <strong>all</strong> arguments because the algebra is commutative; no ordering correction is needed. The derivative follows from $\exp(\breve Q+t\breve H)=\exp\breve Q\,\exp(t\breve H)$ and $\exp(t\breve H)=1+t\breve H+O(t^{2})$.</p>
-<h3 id="the-spectral-form">The Spectral Form</h3>
-<p>By the spectral calculus applied to the exponential series,</p>
+<h3 id="the-closed-form">The Closed Form</h3>
+<p>By the Idempotent Principle applied to the exponential series,</p>
 <p>$$
-\exp\breve Q=\exp(\lambda_1)\Pi_++\exp(\lambda_2)\Pi_-
-=\frac{\exp(\lambda_1)+\exp(\lambda_2)}{2}+\frac{\exp(\lambda_1)-\exp(\lambda_2)}{2}j.
+\boxed{\exp\breve Q=\exp(\lambda_1)\Pi_++\exp(\lambda_2)\Pi_-
+=\frac{\exp(\lambda_1)+\exp(\lambda_2)}{2}+\frac{\exp(\lambda_1)-\exp(\lambda_2)}{2}j}.
 $$</p>
 <p>Since $\lambda_1+\lambda_2=2Q_{\blacktriangle}$ and $\lambda_1-\lambda_2=2Q_{\blacktriangledown}$, this is the <strong>reduced Euler formula</strong></p>
 <p>$$
@@ -199,9 +237,44 @@ $$</p>
 \exp(j\ln2)=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34 j,
 $$</p>
 <p>that is $1.25+0.75j$. This is the point of the future hyperbola at boost $\ln2$.</p>
+<h3 id="properties">Properties</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multiplicativity</td>
+<td>$\exp(\breve Q_1+\breve Q_2)=\exp\breve Q_1\,\exp\breve Q_2$ for all $\breve Q_1,\breve Q_2$</td>
+</tr>
+<tr>
+<td>Non-vanishing</td>
+<td>$\exp\breve Q$ is a unit for every $\breve Q$</td>
+</tr>
+<tr>
+<td>Norm</td>
+<td>$\langle\exp\breve Q\rangle_{\mathrm{ts}}=\exp(2Q_{\blacktriangle})=\exp(\lambda_1+\lambda_2)$</td>
+</tr>
+<tr>
+<td>Derivative</td>
+<td>$d\exp_{\breve Q}(\breve H)=\exp(\breve Q)\,\breve H$</td>
+</tr>
+<tr>
+<td>Periodic</td>
+<td>$\exp(\breve Q+P)=\exp\breve Q$ for every $P\in\ker\exp$</td>
+</tr>
+<tr>
+<td>Injective</td>
+<td>no; the kernel is the period lattice</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="the-logarithm">The Logarithm</h2>
 <h3 id="definition_1">Definition</h3>
-<p>A <strong>logarithm</strong> of a unit $\breve Q$ is an element $\breve Q_{\log}$ with $\exp\breve Q_{\log}=\breve Q$. By the spectral calculus, the equation is solved independently in each idempotent component:</p>
+<p>A <strong>logarithm</strong> of a unit $\breve Q$ is an element $\breve Q_{\log}$ with $\exp\breve Q_{\log}=\breve Q$. By the Idempotent Principle, the equation is solved independently in each idempotent component:</p>
 <p>$$
 \breve Q_{\log}=\log(\lambda_1)\Pi_++\log(\lambda_2)\Pi_-,
 $$</p>
@@ -218,6 +291,18 @@ Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle},\quad
 Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}.
 $$</p>
 <p>The double subscript is a label, not an operation: $q_{\log\blacktriangle}$ is the real part of the scalar coefficient $Q_{\log\blacktriangle}$ of the logarithm, not the logarithm of the coefficient $Q_{\blacktriangle}$.</p>
+<h3 id="the-scalar-part">The Scalar Part</h3>
+<p>Let $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ be a logarithm of $\breve Q$. Taking reduced norms in $\exp\breve Q_{\log}=\breve Q$ gives
+$$
+\langle\breve Q\rangle_{\mathrm{ts}}
+=\langle\exp\breve Q_{\log}\rangle_{\mathrm{ts}}
+=\exp(2Q_{\log\blacktriangle}).
+$$
+Hence
+$$
+2Q_{\log\blacktriangle}=\operatorname{Log}(\lambda_1\lambda_2)+2\pi i m,
+$$
+so the scalar coefficient is fixed by the norm up to $\pi i$; its imaginary part is fixed modulo $\pi$, and the split coefficient carries the remaining integer.</p>
 <h3 id="the-eigenvalue-formula">The Eigenvalue Formula</h3>
 <p>In the basis $1,j$ the spectral logarithm is</p>
 <p>$$
@@ -240,14 +325,15 @@ $$</p>
 +j\,\frac{\operatorname{Log}(\lambda_1)-\operatorname{Log}(\lambda_2)}{2},
 $$</p>
 <p>where $\operatorname{Log}$ on the right is the principal complex logarithm, with argument in $(-\pi,\pi]$.</p>
-<p><strong>The four components.</strong> For the principal branch, taking the real and imaginary parts of the two coefficients gives the four real components of the logarithm.</p>
+<h3 id="the-coordinates-of-a-logarithm">The Coordinates of a Logarithm</h3>
+<p>For the principal branch, taking the real and imaginary parts of the two coefficients gives the four real components of the logarithm.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>component</th>
-<th>name</th>
-<th>value from $\lambda_1,\lambda_2$</th>
-<th>value in $(\rho,\phi,\alpha,\beta)$</th>
+<th>Component</th>
+<th>Name</th>
+<th>Value from $\lambda_1,\lambda_2$</th>
+<th>Value in $(\rho,\phi,\alpha,\beta)$</th>
 </tr>
 </thead>
 <tbody>
@@ -321,7 +407,7 @@ $$</p>
 </tr>
 <tr>
 <td>Principal domain</td>
-<td>$\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$, boundary half-open</td>
+<td>$\lvert\operatorname{Im}\lambda_1\rvert\le\pi$ and $\lvert\operatorname{Im}\lambda_2\rvert\le\pi$, boundary half-open</td>
 </tr>
 <tr>
 <td>Existence</td>
@@ -339,6 +425,18 @@ $$</p>
 <p>The principal logarithm is not defined at $\lambda_1=0$ or $\lambda_2=0$, which are the zero divisors. On the unit group it is defined everywhere, including on the walls, where continuity fails but the inverse identity holds.</p>
 <p>A single-valued branch exists on a domain when each eigenvalue lies in a simply connected domain of $\mathbb{C}^{\times}$. The maximal domains are the complements of rays in the two eigenvalues, and the principal branch uses the negative real ray in both. No single-valued branch exists on the whole unit group, because the unit group has fundamental group $\mathbb{Z}^{2}$; the obstruction is the kernel lattice, not a failure of local invertibility. The exponential is a covering map onto the unit group, and the logarithm is its multivalued inverse.</p>
 <p><strong>Example.</strong> For $\breve Q=-1$ the principal logarithm is $i\pi$, the upper endpoint of the first phase. Approaching $-1$ through $\lambda_1$ in the upper half-plane gives phase $\pi$; approaching through the lower half-plane gives phase $-\pi$. The two limits differ by $2\pi i$, so the principal branch cannot be continued continuously across $W_{+}$. The other eigenvalue produces the same phenomenon on $W_{-}$.</p>
+<h3 id="the-principal-domain">The Principal Domain</h3>
+<p>Let $\mu_1,\mu_2$ be the eigenvalues of $\breve Q_{\log}$ and let
+$$
+D=\bigl\{\breve Q_{\log}:\lvert\operatorname{Im}\mu_1\rvert\le\pi,\ \lvert\operatorname{Im}\mu_2\rvert\le\pi\bigr\},
+$$
+with the boundary taken half-open. In the coordinates $(q'_{\log\blacktriangle},q'_{\log\blacktriangledown})$ this is the diamond
+$$
+\lvert q'_{\log\blacktriangle}+q'_{\log\blacktriangledown}\rvert\le\pi,
+\qquad
+\lvert q'_{\log\blacktriangle}-q'_{\log\blacktriangledown}\rvert\le\pi.
+$$
+The exponential maps $D$ bijectively onto the unit group, and $\operatorname{Log}$ is its inverse. The interior maps onto the complement of the two walls, where the principal logarithm is real-analytic.</p>
 <h3 id="the-two-compositions">The Two Compositions</h3>
 <p>The word "inverse" covers two identities, and the exponential and the logarithm satisfy them in opposite strengths.</p>
 <p><strong>Right inverse.</strong> For every unit $\breve Q$,</p>
@@ -360,9 +458,9 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>identity</th>
-<th>holds?</th>
-<th>example</th>
+<th>Identity</th>
+<th>Holds?</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
@@ -400,6 +498,31 @@ $$</p>
 $$</p>
 <p>hence $d\operatorname{Log}_{\breve Q}=\breve Q^{-1}$. The same computation applies to any branch of the logarithm, and it shows that all branches have the same derivative.</p>
 <p>The formula is the exact analogue of $\operatorname{Log}'Q=1/Q$ in $\mathbb{C}$, applied twice. The logarithm is holomorphic in each eigenvalue, and the two Wirtinger derivatives with respect to the conjugates of the eigenvalues annihilate it.</p>
+<h3 id="summary-of-the-logarithm">Summary of the Logarithm</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>A logarithm</th>
+<th>Principal logarithm</th>
+<th>Fibre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit group, $\lambda_1\lambda_2\neq0$</td>
+<td>$\log\lambda_1\Pi_++\log\lambda_2\Pi_-$, any branches</td>
+<td>the same with principal $\operatorname{Log}$</td>
+<td>coset of $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>zero divisors and $0$</td>
+<td>none</td>
+<td>none</td>
+<td>empty</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="powers-and-roots">Powers and Roots</h2>
 <h3 id="the-power-function">The Power Function</h3>
 <p>For a unit $\breve Q$ and a complex exponent $s$, a <strong>power</strong> is the spectral function</p>
@@ -413,13 +536,39 @@ $$</p>
 <p>$$
 \breve Q^{s}=\exp(s\operatorname{Log}\breve Q)\exp\bigl(s(2\pi i k+\pi i(1+j)l)\bigr),\qquad k,l\in\mathbb{Z}.
 $$</p>
-<p>The factor $\exp(s(2\pi i k+\pi i(1+j)l))$ equals $1$ for every $k,l$ exactly when $s$ is an integer. If $s=p/q$ is rational in lowest terms, the two eigenvalues contribute $q$ values each, and the power takes $q^{2}$ values; otherwise the set of values is infinite. The principal branch uses $\operatorname{Log}\breve Q$.</p>
-<p>For an integer $n\ge0$, $\breve Q^{n}$ is the ordinary iterated product and is a polynomial in $\breve Q$; for $n<0$ it is the inverse power on the units. For a fixed choice of logarithm, $\breve Q^{s+t}=\breve Q^{s}\breve Q^{t}$. The second law $(\breve Q^{s})^{t}=\breve Q^{st}$ is not an identity of sets in general: it holds when both exponents are integers, and a fixed branch can differ by the two eigenvalue factors</p>
-<p>$$
-\exp\bigl(2\pi i\,t k_1\bigr),\qquad
-\exp\bigl(2\pi i\,t k_2\bigr),
-$$</p>
-<p>where $k_1,k_2$ are the integers of the logarithm chosen for $\breve Q^{s}$.</p>
+<p>The factor $\exp(s(2\pi i k+\pi i(1+j)l))$ equals $1$ for every $k,l$ exactly when $s$ is an integer. If $s=m/n$ is rational in lowest terms, the two eigenvalues contribute $n$ values each, and the power takes $n^{2}$ values; otherwise the set of values is infinite. The principal branch uses $\operatorname{Log}\breve Q$.</p>
+<h3 id="properties_1">Properties</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-valued</td>
+<td>exactly when $s\in\mathbb{Z}$; finite for rational $s$ and infinite for irrational $s$</td>
+</tr>
+<tr>
+<td>Product law</td>
+<td>$\breve Q^{s+t}=\breve Q^{s}\breve Q^{t}$ for a fixed logarithm</td>
+</tr>
+<tr>
+<td>Power of a power</td>
+<td>$(\breve Q^{s})^{t}=\breve Q^{st}$ when both exponents are integers; fixed branches differ by the two eigenvalue factors</td>
+</tr>
+<tr>
+<td>Norm</td>
+<td>$\langle\breve Q^{s}\rangle_{\mathrm{ts}}=\langle\breve Q\rangle_{\mathrm{ts}}^{s}$, with compatible branches</td>
+</tr>
+</tbody>
+</table></div>
+<p>For an integer $n\ge0$, $\breve Q^{n}$ is the ordinary iterated product and is a polynomial in $\breve Q$; for $n<0$ it is the inverse power on the units. For a fixed choice of logarithm, the product law holds. The second law is not an identity of sets in general: a fixed branch of $\breve Q^{s}$ can differ by the two factors
+$$
+\exp(2\pi i\,t k_1),\qquad \exp(2\pi i\,t k_2),
+$$
+where $k_1,k_2$ are the integers of the logarithm chosen for $\breve Q^{s}$.</p>
 <h3 id="the-roots">The Roots</h3>
 <p><strong>Theorem (the roots).</strong> Let $n\ge1$ and let $\breve Q\in\mathbb{B}_{\mathrm{r}}$.</p>
 <ol>
@@ -435,9 +584,9 @@ where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity and $\lambda_i^{1
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>case</th>
-<th>condition on $(\lambda_1,\lambda_2)$</th>
-<th>number of roots</th>
+<th>Case</th>
+<th>Condition on $(\lambda_1,\lambda_2)$</th>
+<th>Number of roots</th>
 </tr>
 </thead>
 <tbody>
@@ -476,7 +625,7 @@ $$</p>
 \sinh\breve Q=\frac{\exp(\breve Q)-\exp(-\breve Q)}{2},\qquad
 \cosh\breve Q=\frac{\exp(\breve Q)+\exp(-\breve Q)}{2}.
 $$</p>
-<p>By the spectral calculus they are</p>
+<p>By the Idempotent Principle they are</p>
 <p>$$
 \sin\breve Q=\sin(\lambda_1)\Pi_++\sin(\lambda_2)\Pi_-,\qquad
 \cos\breve Q=\cos(\lambda_1)\Pi_++\cos(\lambda_2)\Pi_-,
@@ -579,7 +728,7 @@ $$</p>
 </tr>
 <tr>
 <td>Boundedness</td>
-<td>$\sin$ and $\cos$ are unbounded, since $\sin(it)=i\sinh t$ and $\cos(it)=\cosh t$</td>
+<td>all four are unbounded: $\sin$ and $\cos$ since $\sin(it)=i\sinh t$ and $\cos(it)=\cosh t$; $\sinh$ and $\cosh$ on the real split direction</td>
 </tr>
 </tbody>
 </table></div>
@@ -635,7 +784,7 @@ $$</p>
 =j\ln(\sqrt5+2),
 $$</p>
 <p>because $(2j)^{2}+1=5$. The two eigenvalues of $\sqrt5+2j$ are $\sqrt5+2$ and $\sqrt5-2$, both positive, so the logarithm is the split-complex logarithm and the value is $j\ln(\sqrt5+2)\approx1.4436354752\,j$ for the principal square root and the principal logarithm. The other choice of square root gives the other branch of the multivalued $\operatorname{arsinh}$; for each fixed square root, the logarithm is unique modulo the kernel.</p>
-<h2 id="relations-to-the-complex-and-split-complex-cases">Relations to the Complex and Split-Complex Cases</h2>
+<h2 id="relations-to-the-neighbouring-cases">Relations to the Neighbouring Cases</h2>
 <h3 id="the-complex-line">The Complex Line</h3>
 <p>If the split coefficient vanishes, $\breve Q=Q_{\blacktriangle}$, then both eigenvalues equal $Q_{\blacktriangle}$, that is $\lambda_1=\lambda_2$, and every elementary function reduces to the ordinary complex function:</p>
 <p>$$
@@ -677,17 +826,17 @@ $$</p>
 <p>that is $Q_{\blacktriangledown}=0$, while the split-complex plane is the real pair $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{R}$, that is $\lambda_1,\lambda_2\in\mathbb{R}$.</p>
 <p>The two planes therefore test different degenerations of the same pair of complex functions: the complex line sets the two eigenvalues equal, and the split-complex plane makes them real and independent.</p>
 <h2 id="summary">Summary</h2>
-<p>Every elementary function of a reduced biquaternion variable is a pair of ordinary complex functions of the two eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, written in the idempotent basis. The exponential is</p>
-<p>$$
+<p>Every elementary function of a reduced biquaternion variable is a pair of ordinary complex functions of the two eigenvalues $\lambda_1=Q_+$ and $\lambda_2=Q_-$, written in the idempotent basis. The exponential is
+$$
 \exp(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\exp(Q_{\blacktriangle})\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr),
-$$</p>
-<p>and the functional equation holds for all arguments because the algebra is commutative. Its kernel is the rank-two lattice $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$, and its image is the whole unit group.</p>
-<p>The logarithm exists exactly on the units, $\lambda_1\lambda_2\neq0$, and is</p>
-<p>$$
+$$
+and the functional equation holds for all arguments because the algebra is commutative. Its kernel is the rank-two lattice $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$, and its image is the whole unit group.</p>
+<p>The logarithm exists exactly on the units, $\lambda_1\lambda_2\neq0$, and is
+$$
 \operatorname{Log}\breve Q=\frac{\operatorname{Log}(\lambda_1)+\operatorname{Log}(\lambda_2)}{2}
 +j\,\frac{\operatorname{Log}(\lambda_1)-\operatorname{Log}(\lambda_2)}{2}
-$$</p>
-<p>for the principal branch. The fibre is a coset of the kernel, so the logarithm is unique only in the principal diamond $\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$. The values of the power are $\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa$ in the kernel, and the equation $\breve R^{n}=\breve Q$ has $n^{2}$ solutions for a unit, in particular four square roots.</p>
+$$
+for the principal branch. The fibre is a coset of the kernel, so the logarithm is unique only on the principal domain, where every eigenvalue has imaginary part in $(-\pi,\pi]$. The values of the power are $\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa$ in the kernel, and the equation $\breve R^{n}=\breve Q$ has $n^{2}$ solutions for a unit, in particular four square roots.</p>
 <p>The trigonometric and hyperbolic functions are read at the two eigenvalues. Their identities hold without restriction, the trigonometric period lattice is $\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$, and the hyperbolic period lattice is its multiple by $i$ and equals the kernel. On the complex line the functions restrict to the complex ones; on the split-complex plane the hyperbolic functions restrict to the split-complex hyperbolic ones, while the trigonometric functions remain trigonometric in the two real coordinates.</p>
 <h3 id="main-results">Main Results</h3>
 <div class="table-scroll"><table>
@@ -719,8 +868,12 @@ $$</p>
 <td>$\operatorname{Log}\breve Q=\frac{\operatorname{Log}\lambda_1+\operatorname{Log}\lambda_2}{2}+j\frac{\operatorname{Log}\lambda_1-\operatorname{Log}\lambda_2}{2}$ on the units</td>
 </tr>
 <tr>
+<td>Principal domain</td>
+<td>every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to\mathbb{B}_{\mathrm{r}}^{\times}$ is bijective</td>
+</tr>
+<tr>
 <td>Fibre</td>
-<td>$\operatorname{Log}\breve Q+\ker\exp$; principal diamond $\lvert\arg\lambda_1\rvert+\lvert\arg\lambda_2\rvert\le\pi$ in phase coordinates</td>
+<td>$\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$</td>
 </tr>
 <tr>
 <td>Derivative of the logarithm</td>
@@ -728,7 +881,7 @@ $$</p>
 </tr>
 <tr>
 <td>Powers</td>
-<td>$\breve Q^{s}=\lambda_1^{s}\Pi_++\lambda_2^{s}\Pi_-$; $q^{2}$ values for $s=p/q$</td>
+<td>$\breve Q^{s}=\lambda_1^{s}\Pi_++\lambda_2^{s}\Pi_-$; $n^{2}$ values for $s=m/n$ in lowest terms</td>
 </tr>
 <tr>
 <td>Roots</td>
@@ -741,6 +894,14 @@ $$</p>
 <tr>
 <td>Hyperbolic functions</td>
 <td>$\sinh\breve Q=\sinh\lambda_1\Pi_++\sinh\lambda_2\Pi_-$, $\cosh\breve Q=\cosh\lambda_1\Pi_++\cosh\lambda_2\Pi_-$</td>
+</tr>
+<tr>
+<td>Identities</td>
+<td>$\sin^2\breve Q+\cos^2\breve Q=1$, $\cosh^2\breve Q-\sinh^2\breve Q=1$, the addition and double-angle formulas</td>
+</tr>
+<tr>
+<td>Inverse functions</td>
+<td>$\arcsin\breve Q$, $\arccos\breve Q$, $\arctan\breve Q$ and the hyperbolic inverses, built from the logarithm and the square root</td>
 </tr>
 <tr>
 <td>Periods</td>
@@ -784,13 +945,23 @@ $$</p>
 <td>$\phi\in\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\cos\breve Q,\ \sin\breve Q$</td>
-<td>$\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$, $\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
+<td>$\cos\breve Q$</td>
+<td>$\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\cosh\breve Q,\ \sinh\breve Q$</td>
-<td>$\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$, $\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
+<td>$\sin\breve Q$</td>
+<td>$\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
+<td>all $\breve Q$</td>
+</tr>
+<tr>
+<td>$\cosh\breve Q$</td>
+<td>$\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
+<td>all $\breve Q$</td>
+</tr>
+<tr>
+<td>$\sinh\breve Q$</td>
+<td>$\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
 <td>all $\breve Q$</td>
 </tr>
 <tr>
@@ -817,6 +988,98 @@ $$</p>
 <td>$\breve R$ with $\breve R^{n}=\breve Q$</td>
 <td>$n^{2}$ solutions for a unit, $n$ for a one-eigenvalue zero divisor, $1$ for $0$</td>
 <td>$n\ge1$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="comparison-with-the-neighbouring-cases">Comparison with the Neighbouring Cases</h3>
+<p>The table compares the elementary functions across the three algebras; in the biquaternion column, $B^2=Q_x^2+Q_y^2+Q_z^2$, $\vec U=\vec Q/B$ and $\lambda_\pm=Q_t\pm iB$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Split-complex</th>
+<th>Reduced biquaternion</th>
+<th>Biquaternion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra</td>
+<td>$\mathbb{R}[x]/(x^2-1)\cong\mathbb{R}\times\mathbb{R}$</td>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$</td>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Element</td>
+<td>$Q=q+jq'$</td>
+<td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+</tr>
+<tr>
+<td>Eigenvalues</td>
+<td>$\lambda_\pm=q\pm q'$</td>
+<td>$\lambda_1=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $\lambda_2=Q_{\blacktriangle}-Q_{\blacktriangledown}$</td>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+</tr>
+<tr>
+<td>Spectral calculus</td>
+<td>$\Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-$</td>
+<td>$f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$</td>
+<td>$f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ if $B\neq0$; truncated if $B=0$</td>
+</tr>
+<tr>
+<td>Exponential</td>
+<td>$\exp q(\cosh q'+j\sinh q')$</td>
+<td>$\exp Q_{\blacktriangle}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$</td>
+<td>$\exp Q_t(\cos B\,e_t+\sin B\,\vec U)$ if $B\neq0$; $\exp Q_t(e_t+\vec Q)$ if $B=0$</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>$\{0\}$</td>
+<td>$2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$</td>
+<td>diagonalisable elements with eigenvalues in $2\pi i\mathbb{Z}$; not a subgroup</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>$F=\{\lambda_\pm>0\}$</td>
+<td>$\{\lambda_1\lambda_2\neq0\}$</td>
+<td>$\{\langle\tilde Q\rangle_{\natural}\neq0\}$</td>
+</tr>
+<tr>
+<td>Logarithm domain</td>
+<td>$q>\lvert q'\rvert$</td>
+<td>$\lambda_1\lambda_2\neq0$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
+</tr>
+<tr>
+<td>Logarithm</td>
+<td>$\log\lambda_+\Pi_++\log\lambda_-\Pi_-$</td>
+<td>$\log\lambda_1\Pi_++\log\lambda_2\Pi_-$</td>
+<td>$\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$; Jordan formula if $B=0$</td>
+</tr>
+<tr>
+<td>Powers</td>
+<td>$Q^P=\lambda_+^P\Pi_++\lambda_-^P\Pi_-$, $P\in\mathbb{R}$, single-valued</td>
+<td>$\breve Q^s=\lambda_1^s\Pi_++\lambda_2^s\Pi_-$, multivalued for non-integer $s$</td>
+<td>$\tilde Q^\alpha=\exp(\alpha\operatorname{Log}\tilde Q)$, multivalued; continuous families on the scalar axis</td>
+</tr>
+<tr>
+<td>Square roots</td>
+<td>$4$, $2$, $1$ or $0$, by the signs of $\lambda_\pm$</td>
+<td>$4$ for a unit, $2$ for a zero divisor, $1$ for $0$</td>
+<td>$4$ for a generic unit, $2$ for a zero divisor or a Jordan unit, none for a nonzero nilpotent, a continuous family in the scalar case</td>
+</tr>
+<tr>
+<td>Trigonometric</td>
+<td>$\sin q\cos q'+j\cos q\sin q'$</td>
+<td>$\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
+<td>$\sin Q_t\cosh B\,e_t+\cos Q_t\sinh B\,\vec U$</td>
+</tr>
+<tr>
+<td>Hyperbolic</td>
+<td>$\sinh q\cosh q'+j\cosh q\sinh q'$</td>
+<td>$\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
+<td>$\sinh Q_t\cos B\,e_t+\cosh Q_t\sin B\,\vec U$</td>
 </tr>
 </tbody>
 </table></div>
@@ -913,7 +1176,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="eigenvalue-decomposition-of-a-reduced-biquaternion.html">Eigenvalue Decomposition of a Reduced Biquaternion</a>, for the eigenvalue decomposition, the central idempotents and the spectral calculus used throughout.</li>
+<li><a href="eigenvalue-decomposition-of-a-reduced-biquaternion.html">Eigenvalue Decomposition of a Reduced Biquaternion</a>, for the eigenvalue decomposition, the central idempotents and the polynomial calculus used throughout.</li>
 <li><a href="exponential-polar-decomposition-of-reduced-biquaternions.html">Exponential Polar Decomposition of Reduced Biquaternions</a>, for the polar reading of the logarithm.</li>
 <li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the exponential, the trigonometric functions and the logarithm of one complex variable.</li>
 <li>Lars V. Ahlfors, <em>Complex Analysis</em>, 3rd edition (McGraw-Hill, 1979), for the branch structure of the logarithm and the power functions.</li>

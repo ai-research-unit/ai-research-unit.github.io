@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eigenvalue Decomposition with respect to a Degree-2 Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-eigenvalue-decomposition-with-respect-to-a-degree-2-form"><strong>The Eigenvalue Decomposition with respect to a Degree-2 Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>sesqualgebra with a form</strong> is a unital associative algebra $A$ over a field $F$ with an involution $\varsigma$, a $\varsigma$-semilinear involution $*$, and a Hermitian form $h$ tied to the product by the compatibility</p>
+<p>$$
+h(xy,z)=h(y,x^{*}z).
+$$</p>
+<p>The form is the <strong>degree-2 datum</strong> of the category: it is the quadratic structure $q(x)=h(x,x)$ read on the algebra, and it is the structure with respect to which the left multiplications are adjoint. This article reads the <strong>eigenvalue decomposition</strong> of a Hermitian element $a=a^{*}$ through that datum. The element has the Hermitian spectral resolution</p>
+<p>$$
+a=\sum_{i=1}^{r}\lambda_{i}e_{i}
+$$</p>
+<p>of <em>The Eigenvalue Decomposition of a Hermitian Element</em>, with $\lambda_{i}\in F_{0}=F^{\varsigma}$ and $e_{i}$ Hermitian idempotents. The form adds three statements: the eigenprojectors are pairwise orthogonal, the eigenspaces are the left ideals $Ae_{i}$ and are pairwise orthogonal and non-degenerate, and the eigenvalues are the Rayleigh quotients of $a$ on those eigenspaces. The first two are the form-level content of the resolution; the third is the formula that recovers the eigenvalue from the form.</p>
+<p>The compatibility is from <em>Sesqualgebras with a Form</em>, §<em>The Object</em>; the radical and its one-sided ideal property are from that article, §<em>The Radical Is an Ideal</em>; the Hermitian idempotents and the Peirce decomposition are <em>Hermitian Idempotents and the Peirce Decomposition</em>; the Hermitian spectral resolution is <em>The Eigenvalue Decomposition of a Hermitian Element</em>; the Jordan spectral theorem behind it is <em>The Eigenvalue Decomposition in a Jordan Algebra</em>; the form-theoretic orthogonality of the idempotents is the subject of the present article; and the positive definite case is the Hilbert-space spectral theorem of Part II.</p>
+<h2 id="the-setting">The Setting</h2>
+<h3 id="the-form-and-the-adjoint">The Form and the Adjoint</h3>
+<p>Let $F$ be a field of characteristic not two, $\varsigma$ an involution of $F$, $F_{0}=F^{\varsigma}$, $A$ a finite-dimensional unital associative $F$-algebra, $*$ a $\varsigma$-semilinear involution, and $h:A\times A\to F$ a Hermitian form satisfying</p>
+<p>$$
+h(xy,z)=h(y,x^{*}z), \qquad h(x,yz)=h(y^{*}x,z).
+$$</p>
+<p>The two identities are equivalent, by <em>Sesqualgebras with a Form</em>, §<em>The Compatibility</em>. They say that the left multiplication $L_{x}$ and the left multiplication $L_{x^{*}}$ are adjoint:</p>
+<p>$$
+h(L_{x}y,z)=h(y,L_{x^{*}}z).
+$$</p>
+<p>The form is assumed <strong>non-degenerate</strong>: $h(x,y)=0$ for all $y$ forces $x=0$. The radical is then zero, and the adjoint of an operator is unique. The form is <strong>Hermitian</strong>, so $h(x,x)\in F_{0}$ and $h(y,x)=\varsigma(h(x,y))$.</p>
+<h3 id="the-hermitian-element">The Hermitian Element</h3>
+<p>Let $a\in H(A)$, $a^{*}=a$. The operator $L_{a}$ is self-adjoint:</p>
+<p>$$
+h(L_{a}x,y)=h(ax,y)=h(x,a^{*}y)=h(x,ay)=h(x,L_{a}y),
+$$</p>
+<p>by the compatibility with $(x,y,z)$ replaced by $(a,x,y)$. This is the single most important consequence of the compatibility for the spectral theory: the element is Hermitian exactly when its left multiplication is self-adjoint for the form.</p>
+<p>The Hermitian spectral resolution of $a$ is</p>
+<p>$$
+a=\sum_{i=1}^{r}\lambda_{i}e_{i},
+$$</p>
+<p>with $\lambda_{i}\in F_{0}$ distinct and $e_{i}$ nonzero Hermitian idempotents, pairwise orthogonal and summing to $1$. It exists exactly when the common minimal polynomial of $a$ splits over $F_{0}$ with distinct roots, by <em>The Eigenvalue Decomposition of a Hermitian Element</em>, §<em>The Existence Theorem</em>. The idempotents are the Lagrange polynomials in $a$ with coefficients in $F_{0}$, and the resolution is unique.</p>
+<h3 id="the-eigenspaces-as-left-ideals">The Eigenspaces as Left Ideals</h3>
+<p>The <strong>eigenspace</strong> of $\lambda_{i}$ for the operator $L_{a}$ is</p>
+<p>$$
+E_{i}=\ker(L_{a}-\lambda_{i})=\{x:ax=\lambda_{i}x\}.
+$$</p>
+<p><strong>Proposition.</strong> $E_{i}=Ae_{i}$, and $A=\bigoplus_{i=1}^{r}Ae_{i}$ is a direct sum.</p>
+<p><em>Proof.</em> If $x=x'e_{i}$, then $ax=x'ae_{i}=x'\lambda_{i}e_{i}=\lambda_{i}x$, so $Ae_{i}\subseteq E_{i}$. Conversely, if $ax=\lambda_{i}x$, write $x=\sum_{j}xe_{j}$, which uses $\sum_{j}e_{j}=1$. Since $a$ commutes with each $e_{j}$ and $ae_{j}=\lambda_{j}e_{j}$,</p>
+<p>$$
+0=(L_{a}-\lambda_{i})x=\sum_{j}(\lambda_{j}-\lambda_{i})xe_{j}.
+$$</p>
+<p>The summand $xe_{j}$ lies in $Ae_{j}$, and the sum $A=\sum_{j}Ae_{j}$ is direct because the $e_{j}$ are orthogonal idempotents: if $\sum_{j}y_{j}=0$ with $y_{j}\in Ae_{j}$, then multiplying on the right by $e_{k}$ gives $y_{k}=0$. Hence each summand $(\lambda_{j}-\lambda_{i})xe_{j}$ vanishes, and for $j\neq i$ one gets $xe_{j}=0$. Thus $x=xe_{i}\in Ae_{i}$.</p>
+<p><strong>Remark.</strong> The eigenspaces are the left ideals $Ae_{i}$, not the corners $e_{i}Ae_{i}$. The corner is the part of the eigenspace on which the right multiplication by $e_{i}$ also acts as the identity; the left ideal is the full eigenspace. The distinction matters for the form: the left ideal is non-degenerate, while the corner may be degenerate.</p>
+<h2 id="orthogonality">Orthogonality</h2>
+<h3 id="the-eigenprojectors">The Eigenprojectors</h3>
+<p><strong>Theorem.</strong> The eigenprojectors are pairwise orthogonal for $h$:</p>
+<p>$$
+h(e_{i},e_{j})=0 \quad (i\neq j).
+$$</p>
+<p><em>Proof.</em> For $i\neq j$, $e_{i}e_{j}=0$ and $e_{i}^{*}=e_{i}$. By the compatibility,</p>
+<p>$$
+h(e_{i},e_{j})=h(e_{i}^{2},e_{j})=h(e_{i},e_{i}^{*}e_{j})=h(e_{i},e_{i}e_{j})=0 .
+$$</p>
+<p><strong>Remark.</strong> The proof uses only the Hermitian character of $e_{i}$ and the orthogonality of the idempotents, not the non-degeneracy of $h$. The eigenprojectors therefore form an orthogonal family for any compatible form, degenerate or not.</p>
+<h3 id="the-orthogonality-of-the-eigenspaces">The Orthogonality of the Eigenspaces</h3>
+<p><strong>Theorem.</strong> The eigenspaces are pairwise orthogonal for $h$:</p>
+<p>$$
+h(Ae_{i},Ae_{j})=0 \quad (i\neq j).
+$$</p>
+<p><em>Proof.</em> Let $x\in Ae_{i}$ and $y\in Ae_{j}$. Then $L_{a}x=\lambda_{i}x$ and $L_{a}y=\lambda_{j}y$. Since $L_{a}$ is self-adjoint,</p>
+<p>$$
+\lambda_{i}h(x,y)=h(L_{a}x,y)=h(x,L_{a}y)=\lambda_{j}h(x,y),
+$$</p>
+<p>so $(\lambda_{i}-\lambda_{j})h(x,y)=0$. The eigenvalues are distinct, hence $h(x,y)=0$.</p>
+<p><strong>Corollary.</strong> The algebra splits as an orthogonal direct sum of left ideals,</p>
+<p>$$
+A=\bigoplus_{i=1}^{r}Ae_{i}, \qquad h(Ae_{i},Ae_{j})=0 \quad (i\neq j),
+$$</p>
+<p>and each $Ae_{i}$ is non-degenerate.</p>
+<p><em>Proof.</em> The direct sum is the proposition of §<em>The Eigenspaces as Left Ideals</em>, and the orthogonality is the theorem. For the non-degeneracy, let $x\in Ae_{i}$ with $h(x,Ae_{i})=0$. For $y=\sum_{j}y_{j}$ with $y_{j}\in Ae_{j}$,</p>
+<p>$$
+h(x,y)=\sum_{j}h(x,y_{j})=h(x,y_{i})=0,
+$$</p>
+<p>because $h(x,y_{j})=0$ for $j\neq i$ by orthogonality and $h(x,y_{i})=0$ by the assumption. Hence $x$ is orthogonal to all of $A$, and $x=0$ by non-degeneracy. So the radical of $Ae_{i}$ is zero.</p>
+<p><strong>Remark.</strong> The corollary is the form-theoretic form of the spectral theorem. The element $a$ acts on each summand by the scalar $\lambda_{i}$, and the summands are orthogonal and non-degenerate. The decomposition is a <strong>simultaneous diagonalisation</strong> of the multiplication by $a$ and of the form: the operator is scalar on each block, and the form is block-diagonal with no cross terms.</p>
+<h3 id="the-distinction-from-the-corner">The Distinction from the Corner</h3>
+<p>The corner $e_{i}Ae_{i}$ is a subspace of the non-degenerate left ideal $Ae_{i}$, but it need not be non-degenerate itself: a subspace of a non-degenerate space can be degenerate. The projector $e_{i}$ is the unit of the corner, and $h(e_{i},e_{i})$ can vanish. When it does, the spectral idempotent is <strong>isotropic</strong>; the corner itself may nevertheless be non-degenerate, as the example below shows. The left ideal $Ae_{i}$ is still non-degenerate, and the eigenvalue is still visible on the vectors of $Ae_{i}$ of nonzero norm; only the projector itself fails to have nonzero norm.</p>
+<p><strong>Example.</strong> Let $A=M_{2}(\mathbb{C})$ with the form $h(X,Y)=\tau(XGY^{*})$, $G=\operatorname{diag}(1,-1)$, and the conjugate transpose as involution. The identity $1$ is a Hermitian idempotent, and</p>
+<p>$$
+h(1,1)=\tau(G)=1-1=0 .
+$$</p>
+<p>The scalar element $a=1$ has the one-term resolution $1=1\cdot1$, with the eigenprojector $1$ isotropic. The eigenspace $A1=A$ is the whole algebra, which is non-degenerate, and the eigenvalue $1$ is visible at any $X$ with $h(X,X)\neq0$, for instance $X=E_{11}$, where $h(E_{11},E_{11})=1$ and the Rayleigh quotient is $1$. The example shows that the non-degeneracy of the eigenspaces does not force the projectors to be non-isotropic.</p>
+<h2 id="the-eigenvalue-formula">The Eigenvalue Formula</h2>
+<h3 id="the-rayleigh-quotient">The Rayleigh Quotient</h3>
+<p><strong>Theorem.</strong> Let $x\in Ae_{i}$ with $h(x,x)\neq0$. Then</p>
+<p>$$
+\lambda_{i}=\frac{h(ax,x)}{h(x,x)} .
+$$</p>
+<p>In particular, if $h(e_{i},e_{i})\neq0$, then</p>
+<p>$$
+\lambda_{i}=\frac{h(ae_{i},e_{i})}{h(e_{i},e_{i})}.
+$$</p>
+<p><em>Proof.</em> Since $x\in Ae_{i}$, $ax=\lambda_{i}x$. Then $h(ax,x)=\lambda_{i}h(x,x)$, and the quotient gives $\lambda_{i}$. The second formula is the case $x=e_{i}$.</p>
+<p><strong>Remark.</strong> The quotient lies in $F_{0}$: the numerator is $h(ax,x)=\varsigma(h(x,ax))=\varsigma(h(a^{*}x,x))=\varsigma(h(ax,x))$, so it is fixed by $\varsigma$, and the denominator $h(x,x)$ is fixed by $\varsigma$ as well. The formula is the form-level reconstruction of the eigenvalue, and it is the reason the eigenvalue is a scalar of the fixed field and not an arbitrary element of $F$.</p>
+<p><strong>Corollary.</strong> If $h$ is positive definite, then $h(e_{i},e_{i})>0$ for every nonzero $e_{i}$, and the eigenvalue is the Rayleigh quotient at the projector,</p>
+<p>$$
+\lambda_{i}=\frac{h(ae_{i},e_{i})}{h(e_{i},e_{i})}.
+$$</p>
+<p>If $a$ is a positive element, then $\lambda_{i}\geq0$.</p>
+<p><em>Proof.</em> Positive definiteness gives $h(e_{i},e_{i})>0$, and the formula applies. If $a$ is positive, $a=b^{2}$ with $b$ Hermitian, and $h(ae_{i},e_{i})=h(b^{2}e_{i},e_{i})=h(be_{i},be_{i})\geq0$, so $\lambda_{i}\geq0$.</p>
+<h3 id="the-diagonalisation-of-the-form">The Diagonalisation of the Form</h3>
+<p>Let $q(x)=h(x,x)$ be the quadratic form of the datum. On the commutative algebra $F_{0}[a]=\bigoplus_{i}F_{0}e_{i}$, an element is $x=\sum_{i}\mu_{i}e_{i}$ with $\mu_{i}\in F_{0}$, and</p>
+<p>$$
+q(x)=h\left(\sum_{i}\mu_{i}e_{i},\sum_{j}\mu_{j}e_{j}\right)
+=\sum_{i,j}\mu_{i}\mu_{j}h(e_{i},e_{j})
+=\sum_{i}\mu_{i}^{2}h(e_{i},e_{i}),
+$$</p>
+<p>because the cross terms vanish by the orthogonality of the projectors. The restriction of $q$ to $F_{0}[a]$ is therefore the diagonal quadratic form</p>
+<p>$$
+q|_{F_{0}[a]}=\sum_{i=1}^{r}h(e_{i},e_{i})X_{i}^{2},
+$$</p>
+<p>in the coordinates $x=\sum_{i}X_{i}e_{i}$. The spectral resolution diagonalises the form on the algebra generated by $a$, and the diagonal entries are the values of the form on the eigenprojectors.</p>
+<p><strong>Remark.</strong> The diagonal form may be degenerate even when $h$ is non-degenerate, because some of the diagonal entries $h(e_{i},e_{i})$ may vanish; the example of §<em>The Distinction from the Corner</em> is the case $r=1$ with $h(1,1)=0$. The eigenspaces $Ae_{i}$ are non-degenerate, but the projector lines $\mathbb{C}e_{i}$ need not be. The two statements are compatible: the form is non-degenerate on the whole eigenspace, and it may vanish on the particular vector $e_{i}$.</p>
+<p><strong>Corollary.</strong> If $h$ is positive definite, the restriction of $q$ to $F_{0}[a]$ is positive definite, and the spectral resolution is an orthogonal diagonalisation of $q$ with positive diagonal entries. If $h$ is indefinite and the diagonal entries are all nonzero, the diagonal entries have signs, and the signature of $q$ on $F_{0}[a]$ is the signature of the diagonal form $\sum_{i}h(e_{i},e_{i})X_{i}^{2}$; if some entry vanishes, the restriction is degenerate and one records the nullity as well.</p>
+<p><em>Proof.</em> The diagonal formula and the positivity or indefiniteness of the entries. The signature statement is Sylvester's law read on the diagonal form, in the non-degenerate case.</p>
+<h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
+<h3 id="the-involution-on-the-corners">The Involution on the Corners</h3>
+<p>The eigenprojectors are Hermitian, so the Peirce decomposition of <em>Hermitian Idempotents and the Peirce Decomposition</em> applies to each of them and to the family. For the family $\{e_{i}\}$,</p>
+<p>$$
+A=\bigoplus_{i,j}e_{i}Ae_{j}, \qquad (e_{i}Ae_{j})^{*}=e_{j}Ae_{i},
+$$</p>
+<p>the diagonal corners are $*$-subalgebras with units $e_{i}$, and the off-diagonal corners are exchanged in pairs. The Hermitian part splits as</p>
+<p>$$
+H(A)=\bigoplus_{i}H(e_{i}Ae_{i})\oplus\bigoplus_{i<j}H(e_{i}Ae_{j}\oplus e_{j}Ae_{i}).
+$$</p>
+<h3 id="the-form-on-the-peirce-spaces">The Form on the Peirce Spaces</h3>
+<p>The left ideal $Ae_{i}$ is the direct sum of the Peirce spaces $e_{j}Ae_{i}$ over $j$; the eigenspace is not a single corner. The form is non-degenerate on the whole left ideal, but its restrictions to the individual corners need not be. The diagonal corner $e_{i}Ae_{i}$ is the part of the eigenspace on which the right multiplication by $e_{i}$ acts as the identity. Its form is the restriction of $h$ to the corner.</p>
+<p><strong>Remark.</strong> The corner and the projector carry two different notions of non-degeneracy. The corner is non-degenerate when its radical vanishes; the projector is non-isotropic when $h(e_{i},e_{i})\neq0$. Neither condition implies the other in general. A non-degenerate corner can contain the isotropic vector $e_{i}$, as a hyperbolic plane contains an isotropic line; an isotropic projector can sit in a corner whose form is otherwise non-degenerate. What the spectral theorem uses is the non-degeneracy of the left ideal $Ae_{i}$, which is the corollary of §<em>The Eigenspaces as Left Ideals</em>, not the non-degeneracy of the corner.</p>
+<p><strong>Example.</strong> In the matrix algebra of §<em>The Distinction from the Corner</em>, the corner of the identity is the whole algebra, which is non-degenerate, and the projector $1$ is isotropic. The example separates the two notions: the corner is non-degenerate, and the projector is not.</p>
+<h2 id="the-positive-definite-case">The Positive Definite Case</h2>
+<h3 id="the-spectral-theorem">The Spectral Theorem</h3>
+<p>In this section $F$ is an ordered field, for instance $\mathbb{R}$, and $h$ is positive definite.</p>
+<p><strong>Theorem.</strong> Let $h$ be positive definite, so that $h(x,x)>0$ for every nonzero $x$. Then:</p>
+<ol>
+<li>every nonzero Hermitian idempotent has $h(e,e)>0$;</li>
+<li>every eigenspace $Ae_{i}$ is positive definite;</li>
+<li>the eigenvalues are the Rayleigh quotients at the projectors;</li>
+<li>the spectral resolution is an orthogonal direct sum of positive definite left ideals.</li>
+</ol>
+<p><em>Proof.</em> The first clause is the definition of positive definiteness applied to the nonzero vector $e$. The second is the restriction of a positive definite form to a subspace. The third is the Rayleigh theorem with $h(e_{i},e_{i})>0$. The fourth is the corollary of §<em>The Eigenspaces as Left Ideals</em> together with the second clause.</p>
+<p><strong>Corollary.</strong> Let $h$ be positive definite and let $a$ be Hermitian. Then $a$ lies in the positive cone $H(A)_{+}$ if and only if all its eigenvalues are non-negative. The spectral resolution is the classical spectral theorem of the Hilbert algebra, and the operator norm of $L_{a}$ for the norm $\lVert x\rVert=h(x,x)^{1/2}$ is the spectral radius,</p>
+<p>$$
+\lVert L_{a}\rVert=\max_{i}\lvert\lambda_{i}\rvert .
+$$</p>
+<p><em>Proof.</em> Positive definiteness makes $H(A)$ formally real: for Hermitian $x$, $h(x^{2},1)=h(x,x^{*})=h(x,x)$, so a vanishing sum of squares has every term zero. The positivity criterion is then the positive-cone corollary of <em>The Eigenvalue Decomposition in a Jordan Algebra</em>, read in $H(A)$. The norm identity is the standard consequence of the orthogonal diagonalisation: the operator is multiplication by $\lambda_{i}$ on the orthogonal summand $Ae_{i}$, and the norm of the direct sum is the maximum of the norms of the summands.</p>
+<p><strong>Remark.</strong> The positive definite case is the case in which the form and the spectral resolution are in complete harmony: the projectors are non-isotropic, the diagonal form on $F_{0}[a]$ is positive definite, and the eigenspaces are positive definite. The indefinite case loses the first and the third clauses but keeps the orthogonal decomposition and the non-degeneracy of the eigenspaces; the difference is the subject of §<em>The Indefinite Case</em>.</p>
+<h3 id="the-hermitian-matrices">The Hermitian Matrices</h3>
+<p>Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form</p>
+<p>$$
+h(X,Y)=\tau(XY^{*}),
+$$</p>
+<p>which is positive definite and compatible with the product. A Hermitian matrix $a$ has the spectral resolution $a=\sum_{i}\lambda_{i}P_{i}$ with real eigenvalues and orthogonal projections $P_{i}$; the eigenspace $AP_{i}$ is the space of matrices whose columns lie in the eigenspace of $\lambda_{i}$, and the form restricts to it as the positive definite trace form. The eigenprojectors are pairwise orthogonal, $h(P_{i},P_{j})=\tau(P_{i}P_{j})=\delta_{ij}\operatorname{rank}P_{i}$, and the Rayleigh quotient at $P_{i}$ is $\lambda_{i}$. The spectral resolution is the orthogonal direct sum of the spaces $AP_{i}$, and the form is block-diagonal on them.</p>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>Let $A=\mathbb{C}[G]$ for a finite group $G$, with the involution $g^{*}=g^{-1}$ and the form</p>
+<p>$$
+h(x,y)=\tau(xy^{*}),
+$$</p>
+<p>the $L^{2}$ form of <em>Group Algebras</em>. It is positive definite, and a self-adjoint element is a function $f$ with $f(g^{-1})=\overline{f(g)}$. The left regular representation decomposes into the isotypic components of the irreducible representations. For a central self-adjoint element $f$, the spectral resolution is the Fourier decomposition: the eigenvalues are the scalars by which $f$ acts on the irreducible components, and the eigenprojectors are the central idempotents of the isotypic components. For a general self-adjoint $f$, the resolution refines the isotypic decomposition inside each component, and the eigenprojectors are matrix projections there. The form is orthogonal on the projectors, and the Rayleigh quotient gives the eigenvalue on each spectral block.</p>
+<h2 id="the-indefinite-case">The Indefinite Case</h2>
+<h3 id="the-isotropic-projector">The Isotropic Projector</h3>
+<p><strong>Example.</strong> Let $A=M_{2}(\mathbb{C})$ with the form $h(X,Y)=\tau(XGY^{*})$, $G=\operatorname{diag}(1,-1)$, and the conjugate transpose as involution. The form is non-degenerate and compatible, but it is indefinite. The identity is a Hermitian idempotent with</p>
+<p>$$
+h(1,1)=\tau(G)=0,
+$$</p>
+<p>so the eigenprojector of the scalar element $a=1$ is isotropic. The one-term resolution $1=1\cdot1$ is the spectral resolution, the eigenspace $A1=A$ is non-degenerate, and the eigenvalue $1$ is visible at $X=E_{11}$, where $h(E_{11},E_{11})=1$ and the Rayleigh quotient is $1$. The diagonal form on $F_{0}[a]=\mathbb{C}1$ is $q(X1)=h(1,1)X^{2}=0$: it is identically zero, although the ambient form is non-degenerate. The example shows that the restriction of a non-degenerate form to the algebra generated by a Hermitian element can be degenerate, and that the eigenvalue need not be visible at the projector.</p>
+<p><strong>Remark.</strong> The eigenspaces $Ae_{i}$ remain non-degenerate in the indefinite case; the corollary of §<em>The Eigenspaces as Left Ideals</em> uses only the non-degeneracy of $h$ and the orthogonality of the spectral resolution. What fails is the non-isotropy of the projectors and the positive definiteness of the diagonal form. The eigenvalue is reconstructed from any vector of the eigenspace of nonzero norm, not necessarily from the projector.</p>
+<h3 id="the-signature-of-the-form">The Signature of the Form</h3>
+<p>In this section $F=\mathbb{R}$.</p>
+<p><strong>Theorem.</strong> Let $h$ be non-degenerate and let $a$ be Hermitian with the spectral resolution $a=\sum_{i}\lambda_{i}e_{i}$. Then the form is the orthogonal direct sum of its restrictions to the eigenspaces,</p>
+<p>$$
+h=\bigoplus_{i=1}^{r}h|_{Ae_{i}},
+$$</p>
+<p>and the signature of $h$ is the sum of the signatures of the restrictions,</p>
+<p>$$
+\operatorname{sig}(h)=\sum_{i=1}^{r}\operatorname{sig}(h|_{Ae_{i}}).
+$$</p>
+<p><em>Proof.</em> The eigenspaces are pairwise orthogonal and sum directly to $A$; the form is block-diagonal with respect to the decomposition. Each restriction is non-degenerate by §<em>The Eigenspaces as Left Ideals</em>, so each has a signature, and the signature of an orthogonal direct sum of non-degenerate forms is the sum of the signatures.</p>
+<p><strong>Remark.</strong> The theorem is the form-level content of the spectral resolution: the element $a$ and the form are simultaneously decomposed into the same blocks, the element acting by $\lambda_{i}$ on the $i$-th block and the form restricting to it. The eigenvalues are the labels of the blocks, and the signatures are the form's data on them. The two are independent: the eigenvalues do not determine the signatures, and the signatures do not determine the eigenvalues.</p>
+<h3 id="the-degenerate-form">The Degenerate Form</h3>
+<p>If $h$ is degenerate, the radical $\operatorname{rad}(A)$ is a nonzero left ideal, by <em>Sesqualgebras with a Form</em>, §<em>The Radical Is an Ideal</em>. The spectral resolution of a Hermitian element still exists in the algebra, but the corollary that the eigenspaces are non-degenerate fails: an eigenspace can meet the radical, and the vectors of the radical carry no form-theoretic information. The eigenvalues are then reconstructed only on the non-radical part of each eigenspace, and the radical is invisible to the form. The study of the quotient $A/\operatorname{rad}(A)$ is the subject of <em>Hermitian Algebras</em> and of the topological layer; the present article assumes non-degeneracy and does not develop the quotient.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $(A,*,h)$ be a sesqualgebra with a non-degenerate Hermitian form, and let $a=a^{*}$ have the Hermitian spectral resolution $a=\sum_{i}\lambda_{i}e_{i}$. The eigenprojectors are pairwise orthogonal for $h$; the eigenspaces are the left ideals $Ae_{i}$; they are pairwise orthogonal, their sum is direct, and each is non-degenerate. The eigenvalue is the Rayleigh quotient</p>
+<p>$$
+\lambda_{i}=\frac{h(ax,x)}{h(x,x)}
+$$</p>
+<p>on any vector of $Ae_{i}$ of nonzero norm, and in particular at the projector when $h(e_{i},e_{i})\neq0$. On the commutative algebra $F_{0}[a]=\bigoplus_{i}F_{0}e_{i}$ the quadratic form $q(x)=h(x,x)$ is diagonal,</p>
+<p>$$
+q|_{F_{0}[a]}=\sum_{i}h(e_{i},e_{i})X_{i}^{2},
+$$</p>
+<p>and the spectral resolution diagonalises both the multiplication by $a$ and the form. The diagonal entries may vanish even when $h$ is non-degenerate; the projector is then isotropic, although the eigenspace remains non-degenerate. In the positive definite case the projectors are non-isotropic, the eigenspaces are positive definite, the eigenvalues are the Rayleigh quotients at the projectors, and the resolution is the classical spectral theorem. In the indefinite case the signatures of the eigenspaces add to the signature of $h$, and the eigenvalues and the signatures are independent data. In the degenerate case the radical is a left ideal, and the form sees only the quotient.</p>
+<p>The compatibility and the radical are <em>Sesqualgebras with a Form</em>; the Hermitian idempotents and the Peirce decomposition are <em>Hermitian Idempotents and the Peirce Decomposition</em>; the Hermitian spectral resolution is <em>The Eigenvalue Decomposition of a Hermitian Element</em>; the Jordan spectral theorem is <em>The Eigenvalue Decomposition in a Jordan Algebra</em>; and the positive definite topological layer is Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>a field of characteristic not two</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>an involution of $F$</td>
+</tr>
+<tr>
+<td>$F_{0}=F^{\varsigma}$</td>
+<td>the fixed field</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a finite-dimensional unital associative $F$-algebra</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>a $\varsigma$-semilinear involution of $A$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>a Hermitian form, $h(y,x)=\varsigma(h(x,y))$</td>
+</tr>
+<tr>
+<td>$q(x)=h(x,x)$</td>
+<td>the quadratic form of the datum</td>
+</tr>
+<tr>
+<td>$L_{a}$</td>
+<td>the left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$a=\sum_{i}\lambda_{i}e_{i}$</td>
+<td>the Hermitian spectral resolution</td>
+</tr>
+<tr>
+<td>$\lambda_{i}\in F_{0}$</td>
+<td>the eigenvalues</td>
+</tr>
+<tr>
+<td>$e_{i}$</td>
+<td>the Hermitian eigenprojectors</td>
+</tr>
+<tr>
+<td>$E_{i}=Ae_{i}$</td>
+<td>the eigenspace of $\lambda_{i}$</td>
+</tr>
+<tr>
+<td>$h(Ae_{i},Ae_{j})=0$</td>
+<td>the orthogonality of the eigenspaces</td>
+</tr>
+<tr>
+<td>$h|_{Ae_{i}}$</td>
+<td>the non-degenerate restriction to the eigenspace</td>
+</tr>
+<tr>
+<td>$\operatorname{sig}(h)$</td>
+<td>the signature of the form</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(A)$</td>
+<td>the radical, a left ideal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition, the idempotents and the matrix examples.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Hermitian Jordan algebra and its spectral theory.</li>
+<li>Jacques Faraut and Adam Korányi, <em>Analysis on Symmetric Cones</em> (Oxford University Press, 1994), for the positive definite case, the Rayleigh quotient and the symmetric cones.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the Hermitian forms and the involutions.</li>
+<li>Israel Nathan Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the Hermitian elements and the form-theoretic orthogonality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

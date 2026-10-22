@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum"><strong>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A non-normal element still has a spectral decomposition. What it loses is the orthogonality of the two pieces. The eigenvalues stay distinct, the two idempotents stay complete and orthogonal as idempotents, but the idempotents are no longer Hermitian, and the two eigendirections are no longer orthogonal in the Hilbert space of the algebra.</p>
+<p>The standard language for this situation is <strong>biorthogonal quantum mechanics</strong>. The right eigenvectors of the element and the left eigenvectors of the same element form two bases that are dual to each other, not two orthonormal bases. The spectral projectors are built from one right vector and one left vector, and the probability rule uses the left pairing. When the element is normal, the two bases coincide, the projectors become Hermitian, and the rule reduces to the Born rule.</p>
+<p>This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of <em>Eigenvalue Decomposition of a Biquaternion</em>. The left and right eigenvalue problem is that of <em>Biquaternion Spectral Theory</em>. The article owns the reading and its limits; it proves no spectral theorem.</p>
+<p><strong>Placement.</strong> The article belongs to the informational block of the non-relativistic quantum theory, after <em>Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</em> and before <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>. It uses the matrix model $\mathsf M_2$ and the eigenprojections of the eigenvalue decomposition.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$, and $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The star is Hermitian conjugation, $\tilde Q^{*}=\overline{Q_t}e_t-\overline{\vec Q}$, and $\operatorname{Sc}$ is the scalar part, so that $\operatorname{Tr}\tilde X=2\operatorname{Sc}\tilde X$. The matrix model is $\mathsf M_2(e_t)=I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The eigenvalues are complex and central, so the left and right <strong>eigenvalue</strong> problems coincide; the biorthogonal structure below is a statement about left and right <strong>eigenvectors</strong>, not about a non-commutative spectrum.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The spectrum, the eigenprojections and the two-term writing</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+</tr>
+<tr>
+<td>The normality criterion and the Hermitian case</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+</tr>
+<tr>
+<td>Left and right eigenvalues, and the central-spectrum convention</td>
+<td><a href="../articles_maths/biquaternion-spectral-theory.html">Biquaternion Spectral Theory</a></td>
+</tr>
+<tr>
+<td>The spectral theorem for a normal element</td>
+<td><a href="../articles_maths/biquaternion-spectral-theory.html">Biquaternion Spectral Theory</a></td>
+</tr>
+<tr>
+<td>The matrix model and the determinant</td>
+<td><a href="the-element-and-operator-representations.html">The Element and Operator Representations</a></td>
+</tr>
+<tr>
+<td>The Jordan and nilpotent regimes</td>
+<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-eigenbases">The Two Eigenbases</h2>
+<p>Let $A=\mathsf M_2(\tilde Q)$ and let $B\neq0$, so that $A$ has distinct eigenvalues $\lambda_\pm=Q_t\pm iB$. A <strong>right eigenvector</strong> $r_\sigma\in\mathbb{C}^2$ and a <strong>left eigenvector</strong> $\ell_\sigma\in\mathbb{C}^2$ satisfy</p>
+<p>$$
+Ar_\sigma=\lambda_\sigma r_\sigma,
+\qquad
+\ell_\sigma^{\dagger}A=\lambda_\sigma\ell_\sigma^{\dagger},
+\qquad
+\sigma\in\{+,-\}.
+$$</p>
+<p>The two bases are dual, not orthonormal:</p>
+<p>$$
+\ell_\sigma^{\dagger}r_\tau=\delta_{\sigma\tau},
+$$</p>
+<p>after the normalization $\ell_\sigma^{\dagger}r_\sigma=1$. The spectral projectors are</p>
+<p>$$
+P_\sigma=r_\sigma\ell_\sigma^{\dagger},
+\qquad
+P_\sigma P_\tau=\delta_{\sigma\tau}P_\sigma,
+\qquad
+P_++P_-=I_2,
+\qquad
+A=\lambda_+P_++\lambda_-P_-.
+$$</p>
+<p>These are the Riesz projectors of $A$, and they are exactly the matrix images of the biquaternion eigenprojections:</p>
+<p>$$
+P_\pm=\mathsf M_2(\tilde\Pi_\pm),
+\qquad
+\tilde\Pi_\pm=\frac12\left(e_t\pm\vec\Xi\right),
+\qquad
+\vec\Xi=-\frac{i\vec Q}{B}.
+$$</p>
+<p>The biquaternion relations $\tilde\Pi_\sigma\tilde\Pi_\tau=\delta_{\sigma\tau}\tilde\Pi_\sigma$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ are the same statement as the biorthogonality and the completeness of the two eigenbases. The translation is exact because the matrix model is an isomorphism.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Biorthogonal object</th>
+<th>Matrix form</th>
+<th>Biquaternion form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>right eigenvector</td>
+<td>column of $P_\sigma$</td>
+<td>a nonzero column of $\mathsf M_2(\tilde\Pi_\sigma)$</td>
+</tr>
+<tr>
+<td>left eigenvector</td>
+<td>row of $P_\sigma$</td>
+<td>a nonzero row of $\mathsf M_2(\tilde\Pi_\sigma)$</td>
+</tr>
+<tr>
+<td>pairing</td>
+<td>$\ell_\sigma^{\dagger}r_\tau=\delta_{\sigma\tau}$</td>
+<td>$P_\sigma P_\tau=\delta_{\sigma\tau}P_\sigma$</td>
+</tr>
+<tr>
+<td>completeness</td>
+<td>$P_++P_-=I_2$</td>
+<td>$\tilde\Pi_++\tilde\Pi_-=e_t$</td>
+</tr>
+<tr>
+<td>spectral writing</td>
+<td>$A=\sum_\sigma\lambda_\sigma P_\sigma$</td>
+<td>$\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>dual family</td>
+<td>$P_\sigma^{\dagger}$</td>
+<td>$\tilde\Pi_\sigma^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the whole difference from the Hermitian case. When $P_\sigma=P_\sigma^{\dagger}$ the dual family is the family itself and the two bases coincide. When it is not, the dual family is a second, different family.</p>
+<h2 id="the-non-orthogonality">The Non-Orthogonality</h2>
+<p>The two eigendirections are orthogonal as idempotents, because $P_+P_-=0$. They are not orthogonal in the Hilbert space, because the Hermitian inner product of the two projectors is</p>
+<p>$$
+\operatorname{tr}\left(P_+^{\dagger}P_-\right)\neq0
+$$</p>
+<p>in general. In the biquaternion this number is $2\operatorname{Sc}\left(\tilde\Pi_+^{*}\tilde\Pi_-\right)$, and it vanishes exactly when the two idempotents are Hermitian, that is, when $\tilde Q$ is normal.</p>
+<p>The size of the non-orthogonality is measured by the <strong>Petermann factor</strong> of each projector,</p>
+<p>$$
+\kappa_\sigma=\operatorname{tr}\left(P_\sigma^{\dagger}P_\sigma\right)
+=2\operatorname{Sc}\left(\tilde\Pi_\sigma^{*}\tilde\Pi_\sigma\right).
+$$</p>
+<p>For a rank-one projector $P=r\ell^{\dagger}/(\ell^{\dagger}r)$,</p>
+<p>$$
+\kappa=\frac{(r^{\dagger}r)(\ell^{\dagger}\ell)}{\lvert\ell^{\dagger}r\rvert^{2}}\ge1,
+$$</p>
+<p>by the Cauchy–Schwarz inequality, with equality exactly when $r$ and $\ell$ are proportional. The factor is therefore one precisely in the normal case, and it grows as the two bases turn away from each other. It is the standard measure of the excess of a non-normal mode over an orthogonal one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Normal element</th>
+<th>Non-normal element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eigenbases</td>
+<td>$r_\sigma\propto\ell_\sigma$</td>
+<td>two distinct dual bases</td>
+</tr>
+<tr>
+<td>projectors</td>
+<td>$P_\sigma=P_\sigma^{\dagger}$</td>
+<td>$P_\sigma\neq P_\sigma^{\dagger}$</td>
+</tr>
+<tr>
+<td>cross inner product $\operatorname{tr}(P_+^{\dagger}P_-)$</td>
+<td>$0$</td>
+<td>nonzero in general</td>
+</tr>
+<tr>
+<td>Petermann factor $\kappa_\sigma$</td>
+<td>$1$</td>
+<td>$>1$</td>
+</tr>
+<tr>
+<td>spectral theorem</td>
+<td>orthogonal</td>
+<td>biorthogonal</td>
+</tr>
+<tr>
+<td>Born rule</td>
+<td>available</td>
+<td>replaced by the biorthogonal rule</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-biorthogonal-probability-rule">The Biorthogonal Probability Rule</h2>
+<p>The spectral writing gives the decomposition of a vector, but not yet a probability. For a vector $\psi\in\mathbb{C}^2$, expand it in the right basis,</p>
+<p>$$
+\psi=\sum_\sigma c_\sigma r_\sigma,
+\qquad
+c_\sigma=\ell_\sigma^{\dagger}\psi.
+$$</p>
+<p>The coefficient is the left pairing, not the orthogonal projection. The norm is computed with the metric built from the left basis,</p>
+<p>$$
+\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger},
+\qquad
+\langle\psi,\eta\psi\rangle=\sum_\sigma\lvert c_\sigma\rvert^{2},
+$$</p>
+<p>and the normalized weights are</p>
+<p>$$
+p_\sigma=\frac{\lvert c_\sigma\rvert^{2}}{\sum_\tau\lvert c_\tau\rvert^{2}}
+=\frac{\lvert\ell_\sigma^{\dagger}\psi\rvert^{2}}{\langle\psi,\eta\psi\rangle}.
+$$</p>
+<p>The weights are positive and sum to one for every $\psi$, because $\eta$ is a sum of rank-one positive operators and the left eigenvectors form a basis. The rule is therefore available for every diagonalizable element with distinct eigenvalues, normal or not. What it is not is the Born rule: the denominator is not one in the original Hilbert norm, and the coefficients are not the orthogonal projections.</p>
+<p>The rule has a price. The metric $\eta$ depends on the element, because the left eigenvectors do. Two different observables therefore define two different inner products on the same vector space, and a state has no element-independent norm. That is the sense in which the biorthogonal formulation is a formulation per observable, not a replacement for the Hilbert-space formulation.</p>
+<h2 id="the-density-matrix-as-the-contrast-class">The Density Matrix as the Contrast Class</h2>
+<p>A density matrix is the case in which the whole apparatus collapses. A state $\tilde\varrho$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\eta=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,</p>
+<p>$$
+p_\sigma=\operatorname{tr}\left(\varrho P_\sigma\right)
+=2\operatorname{Sc}\left(\tilde\varrho\tilde\Pi_\sigma\right),
+\qquad
+\tilde\Pi_\sigma=\tilde\Pi_\sigma^{*}.
+$$</p>
+<p>The contrast is the conceptual content of the article. The spectral decomposition alone does not give a probability; <strong>normality</strong> gives it. The density matrix is normal by construction, so the Born rule is the orthogonal case of the biorthogonal rule. A non-normal element is not a state: it is an operator, an effective Hamiltonian or a generator, and its biorthogonal weights are a reading of its modes, not the probabilities of a measurement of that element.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Element</th>
+<th>Metric</th>
+<th>Weights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quantum state</td>
+<td>$\tilde\varrho$ Hermitian, positive, trace one</td>
+<td>$\eta=I$</td>
+<td>$p_\sigma=2\operatorname{Sc}(\tilde\varrho\tilde\Pi_\sigma)$</td>
+</tr>
+<tr>
+<td>normal observable</td>
+<td>$\tilde H$ normal, distinct spectrum</td>
+<td>$\eta=I$ on the eigenbasis</td>
+<td>$p_\sigma=\lvert c_\sigma\rvert^{2}$</td>
+</tr>
+<tr>
+<td>non-normal operator</td>
+<td>$\tilde Q$ with $B\neq0$</td>
+<td>$\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$</td>
+<td>$p_\sigma=\lvert c_\sigma\rvert^{2}/\langle\psi,\eta\psi\rangle$</td>
+</tr>
+<tr>
+<td>exceptional point</td>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>no eigenbasis</td>
+<td>no rule</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the boundary of the whole construction. At an exceptional point the two right eigenvectors coalesce, the left eigenvectors coalesce, and the metric degenerates; the biorthogonal rule has no limit. The exceptional point is treated in <em>Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</em>, and the two articles meet exactly at that row.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>The right modes are the physical modes and the left modes are their duals.</strong> In an open system with an effective non-Hermitian Hamiltonian, the right eigenvectors are the mode shapes that decay or grow, and the left eigenvectors are the duals that extract the amplitude. The reading is the standard one of non-Hermitian photonics and of resonance theory.</li>
+<li><strong>The Petermann factor is excess noise.</strong> A mode with $\kappa>1$ has more spontaneous emission than an orthogonal mode of the same linewidth. The reading is the standard Petermann excess-noise factor of a laser mode, and $\kappa=1$ is the orthogonal limit.</li>
+<li><strong>The metric is an element-dependent inner product.</strong> The biorthogonal rule says that the probability of a mode is measured with the dual basis. The reading is that the inner product is tied to the observable, not fixed once for the whole theory.</li>
+<li><strong>The density matrix is the contrast class.</strong> The ordinary quantum state is Hermitian, so its spectral decomposition is orthogonal and its Born rule is the orthogonal case. The reading is that the non-Hermitian apparatus is an extension of the operator side, not a replacement of the state side.</li>
+<li><strong>The exceptional point is the degenerate limit.</strong> As $B\to0$ the two right vectors and the two left vectors coalesce, the Petermann factor diverges, and the probability rule loses its basis. The reading is the standard divergence of the Petermann factor at an exceptional point.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The biquaternion supplies the spectral decomposition and the projectors; it does not supply the metric. The choice $\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$ is the standard one, but it is a choice, and a different physical normalization gives a different metric. The article states the standard choice and does not claim uniqueness.</p>
+<p>The eigenvalues are central, so the left and right <strong>eigenvalue</strong> problems coincide. The biorthogonal structure is a statement about eigenvectors. The non-commutative left/right eigenvalue problem of <em>Biquaternion Spectral Theory</em> is a different subject, and it is not used here.</p>
+<p>A conserved probability needs a real spectrum. With complex eigenvalues the $\eta$-norm of an evolving state grows or decays, and the weights $p_\sigma$ are not conserved. The biorthogonal rule gives positive weights at one instant, not a conserved distribution in time. The dynamics of a non-Hermitian element is outside this article.</p>
+<p>The Born rule is not derived. The article shows that it is the normal case of a biorthogonal rule; it does not derive the rule from the algebra, and it does not claim that a non-normal element is observable. The measurement postulate remains where <em>The Measurement Problem in Algebraic Form</em> leaves it.</p>
+<p>No dynamics, no arrow of time and no preferred metric are supplied. The article is a spectral reading of a non-normal element, not a quantum theory of open systems.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>For $B\neq0$ a biquaternion has distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and a spectral decomposition with idempotents $\tilde\Pi_\pm$.</li>
+<li>The idempotents need not be Hermitian; the right and left eigenvectors then form two dual bases, and the projectors are $P_\sigma=r_\sigma\ell_\sigma^{\dagger}$.</li>
+<li>The biquaternion relations $\tilde\Pi_\sigma\tilde\Pi_\tau=\delta_{\sigma\tau}\tilde\Pi_\sigma$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ are the biorthogonality and completeness of the two bases.</li>
+<li>The two eigendirections are orthogonal as idempotents and non-orthogonal in the Hilbert space; the cross inner product $2\operatorname{Sc}(\tilde\Pi_+^{*}\tilde\Pi_-)$ measures the failure.</li>
+<li>The Petermann factor $\kappa_\sigma=2\operatorname{Sc}(\tilde\Pi_\sigma^{*}\tilde\Pi_\sigma)$ is at least one and equals one exactly when the element is normal.</li>
+<li>The biorthogonal probability rule is $p_\sigma=\lvert\ell_\sigma^{\dagger}\psi\rvert^{2}/\langle\psi,\eta\psi\rangle$ with $\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$; it is not the Born rule unless $\eta=I$.</li>
+<li>A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\sigma=2\operatorname{Sc}(\tilde\varrho\tilde\Pi_\sigma)$.</li>
+<li>At an exceptional point the two bases coalesce and the metric degenerates; the probability rule has no limit there.</li>
+<li>The algebra supplies the decomposition and the projectors, not the metric, the dynamics or the arrow of time.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a general biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^3$</td>
+</tr>
+<tr>
+<td>$B^2=(\vec Q,\vec Q)$</td>
+<td>the complex norm squared of the vector part</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$</td>
+<td>the eigenprojections, $\vec\Xi=-i\vec Q/B$</td>
+</tr>
+<tr>
+<td>$A=\mathsf M_2(\tilde Q)$</td>
+<td>the $2\times2$ matrix image</td>
+</tr>
+<tr>
+<td>$r_\sigma$, $\ell_\sigma$</td>
+<td>right and left eigenvectors, $\ell_\sigma^{\dagger}r_\tau=\delta_{\sigma\tau}$</td>
+</tr>
+<tr>
+<td>$P_\sigma=r_\sigma\ell_\sigma^{\dagger}$</td>
+<td>the spectral projector, $\mathsf M_2(\tilde\Pi_\sigma)$</td>
+</tr>
+<tr>
+<td>$\kappa_\sigma$</td>
+<td>the Petermann factor $\operatorname{tr}(P_\sigma^{\dagger}P_\sigma)$</td>
+</tr>
+<tr>
+<td>$\eta=\sum_\sigma\ell_\sigma\ell_\sigma^{\dagger}$</td>
+<td>the metric of the biorthogonal basis</td>
+</tr>
+<tr>
+<td>$\tilde\varrho$</td>
+<td>a density matrix, Hermitian, positive, trace one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the spectrum, the eigenprojections and the normality criterion.</li>
+<li><a href="../articles_maths/biquaternion-spectral-theory.html">Biquaternion Spectral Theory</a>, for the left and right eigenvalue problems and the spectral theorem.</li>
+<li><a href="the-element-and-operator-representations.html">The Element and Operator Representations</a>, for the matrix model used throughout.</li>
+<li><a href="exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html">Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</a>, for the degenerate limit of the two bases.</li>
+<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the Hermitian state space and the Born rule.</li>
+<li><a href="the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a>, for the measurement postulate that this article does not derive.</li>
+<li><a href="quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible/Irreversible Dichotomy</a>, for the dynamics that a non-normal generator would have to supply.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
