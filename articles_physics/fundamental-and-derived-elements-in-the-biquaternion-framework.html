@@ -67,7 +67,7 @@
       <div class="article-body">
         <h1 id="fundamental-and-derived-elements-in-the-biquaternion-framework"><strong>Fundamental and Derived Elements in the Biquaternion Framework</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar representations. The companion articles use them all. This article asks a different question about them: <strong>which of these objects must be posited, and which follow from the others?</strong></p>
+<p>The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar decompositions. The companion articles use them all. This article asks a different question about them: <strong>which of these objects must be posited, and which follow from the others?</strong></p>
 <p>The question is not decorative. Every derivation in the framework inherits the status of its inputs. If an object is silently promoted from derived to fundamental — or quietly derived in one place and posited in another — then the framework's account of <em>why</em> it has the structure it has is wrong, even when every formula is right. The purpose of this article is to fix a sorting criterion, state the base to which it applies, and apply the criterion to the framework's objects one at a time.</p>
 <p>The article is therefore mostly bookkeeping, but the bookkeeping is the content. Three discipline rules are observed throughout:</p>
 <ul>
@@ -238,8 +238,8 @@ $$</p>
 <p><strong>The non-central roots do not play $i$'s role.</strong> The equation $\tilde{\Xi}^2=-e_t$ has, besides $\pm i$, a four-real-dimensional family of non-central solutions, of which $\vec e_k$ is the simplest ($\vec e_k^2=-e_t$). These are derived as well (they solve an equation with coefficients in the base), but they are not central, so they do not define the complex scalar structure of $\mathbb{B}$ and cannot replace $i$ in the complex-polar form. Their existence is a genuine feature of the algebra and is why two polar forms exist; it is not evidence that $i$ is fundamental.</p>
 <p><strong>Verdict.</strong> Relative to the framework's base — the complexified algebra $\mathbb{B}$ together with its real structure — the scalar imaginary is <strong>derived</strong>, up to the presentational sign. It is not an independent fundamental element. It is the certificate of the complexification: the posit is "adjoin a central square root of $-1$," and once that is done the square roots are the derived objects. The only honest qualification is that this is base-relative: if one insisted on a base of $\mathbb{H}$ alone, the complexification could not be derived and $i$ would be counted fundamental. The framework does not use that base, and this article does not either.</p>
 <p><strong>A gap, flagged.</strong> What the framework does <em>not</em> supply is a derivation of the complexification itself from $\mathbb{H}$, or any argument that the quaternion real form $\mathbb{H}_{\mathbb{B}}$ should be preferred to the alternative real form $M_2(\mathbb{R})$ available on the same abstract algebra. The sorting below therefore records the complexification as fundamental, with the real-form choice as its content. Whether that choice is physically motivated or merely conventional is not decidable from the algebra, and is left as an open question rather than smoothed over.</p>
-<h2 id="derived-the-polar-representations">Derived: The Polar Representations</h2>
-<p>The polar representations are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.</p>
+<h2 id="derived-the-polar-decompositions">Derived: The Polar Decompositions</h2>
+<p>The polar decompositions are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.</p>
 <p><strong>The inputs are already available.</strong> The exponential $\exp(\tilde Q_1)=\sum_{n\ge0}\tilde Q_1^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\tilde{\Xi}^2=-e_t$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.</p>
 <p><strong>The Hamilton polar form.</strong> For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\vec Q,\vec Q)=B^2\ne0$, put</p>
 <p>$$
@@ -255,7 +255,7 @@ $$</p>
 Q\exp(i\Psi)=Q\cos\Psi+iQ\sin\Psi=Q_r+iQ_i=\tilde Q_1
 $$</p>
 <p>uses the commutativity of the functions of $\Psi$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.</p>
-<p><strong>No new posit.</strong> The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar representations therefore leave the base unchanged.</p>
+<p><strong>No new posit.</strong> The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar decompositions therefore leave the base unchanged.</p>
 <h2 id="the-sorting">The Sorting</h2>
 <p>The results are collected in one place. The statuses are those of the criterion, relative to the base $\mathcal{S}$ fixed above.</p>
 <div class="table-scroll"><table>
@@ -348,7 +348,7 @@ $$</p>
 <td>Solving equations with coefficients in the base.</td>
 </tr>
 <tr>
-<td>Polar representations</td>
+<td>Polar decompositions</td>
 <td>Derived</td>
 <td>Constructions from the exponential and the roots of $-1$.</td>
 </tr>
@@ -360,7 +360,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>The framework's objects sort into a small fundamental core and a large derived family. The fundamental core is the quaternion algebra $\mathbb{H}$ with its multiplication, together with the complexification that adjoins a central square root of $-1$. Everything the companion articles call a natural conjugation, a fixed-point subspace, a form, or a polar representation is derived from these two posits, and the article has written out the construction in each case.</p>
+<p>The framework's objects sort into a small fundamental core and a large derived family. The fundamental core is the quaternion algebra $\mathbb{H}$ with its multiplication, together with the complexification that adjoins a central square root of $-1$. Everything the companion articles call a natural conjugation, a fixed-point subspace, a form, or a polar decomposition is derived from these two posits, and the article has written out the construction in each case.</p>
 <p>The two sorting questions raised in the Introduction are answered as follows.</p>
 <ul>
 <li><strong>The scalar imaginary is derived, not fundamental.</strong> It is not in $\mathbb{H}$, so the complexification is a real posit; but within the complexified algebra it is the unique central square root of $-1$ up to sign, and the sign is exchanged by the real structure. What is fundamental is the complexification, of which $i$ is the certificate.</li>
@@ -446,7 +446,7 @@ $$</p>
 <ul>
 <li><a href="conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>, for the definitions of $\mathbb{B}$, the four conjugations, and the four fixed-point subspaces whose derivation is sorted here.</li>
 <li><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the automorphism group $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})=PGL(2,\mathbb{C})$ and the conjugate-linear coset, which are the source of the non-uniqueness of the real structure used in "The Stipulated Base."</li>
-<li><a href="the-polar-element-representation-in-subspaces.html">The Polar Element Representation in Subspaces</a>, for the Hamilton, complex and Cartan representations whose status as derived constructions is settled here.</li>
+<li><a href="the-polar-decomposition-in-subspaces.html">The Polar Decomposition in Subspaces</a>, for the Hamilton, complex and Cartan representations whose status as derived constructions is settled here.</li>
 <li><a href="the-element-and-operator-representations.html">The Element and Operator Representations</a>, for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{H}_{\mathbb{B}}$ and $M_2(\mathbb{R})$ and the 4×4 regular image, and <a href="../articles_maths/the-twisted-spinor-operator-representation-of-biquaternions.html">The Twisted Spinor Operator Representation of Biquaternions</a>, for the spinor realization.</li>
 <li><a href="../articles_maths/algebras-a-general-introduction.html">Algebras: A General Introduction</a>, for the notions of algebra, centre, simplicity, and base change that the criterion and the base presuppose.</li>
 <li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a> and <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>, for the physical interpretations that this article records as posits rather than derivations.</li>

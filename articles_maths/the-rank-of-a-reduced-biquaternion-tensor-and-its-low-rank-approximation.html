@@ -71,7 +71,7 @@
 <p>The product is <em>The t-Product of Reduced Biquaternion Tensors</em>, the decomposition is <em>The Singular Value Decomposition of a Reduced Biquaternion Tensor</em>, and the norm is that of <em>Reduced Biquaternion Tensors as a Vector Space</em>. The matrix case is the truncated singular value decomposition of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>; the application is <em>Color Video Compression and Deblurring with Reduced Biquaternion Tensors</em>.</p>
 <p>The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion tensors and applications in color video processing", Section 6, where the rank is called the Ht-tubal rank.</p>
 <h2 id="the-tubal-rank">The Tubal Rank</h2>
-<p>Let $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ have the t-SVD</p>
+<p>Let $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ have the t-SVD</p>
 <p>$$
 A=U\ast S\ast V^{\mathsf H},
 $$</p>
@@ -80,11 +80,11 @@ $$</p>
 \operatorname{rank}_{\mathrm t}(A)=\#\{i\in\{1,\dots,w\}:\|S(i,i,:)\|_{\mathrm F}>0\}.
 $$</p>
 <p>The rank counts the nonzero <strong>diagonal tubes</strong>, not the nonzero entries and not the nonzero frontal slices. It is at most $w$. The tensor is zero if and only if its tubal rank is zero.</p>
-<p><strong>Theorem (the rank is the largest rank of the transform slices).</strong> For every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$,</p>
+<p><strong>Theorem (the rank is the largest rank of the transform slices).</strong> For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$,</p>
 <p>$$
 \operatorname{rank}_{\mathrm t}(A)=\max_{1\le k\le n_3}\operatorname{rank}\bigl(\widehat A^{(k)}\bigr),
 $$</p>
-<p>where $\operatorname{rank}(\widehat A^{(k)})$ is the rank of the matrix over $\mathbb{B}_{\mathrm r}$, the larger of the two complex ranks of its idempotent coordinates.</p>
+<p>where $\operatorname{rank}(\widehat A^{(k)})$ is the rank of the matrix over $\mathbb{B}_{\mathrm{r}}$, the larger of the two complex ranks of its idempotent coordinates.</p>
 <p><em>Proof.</em> The tube $S(i,i,:)$ is zero if and only if all of its Fourier coefficients are zero. Its $k$-th Fourier coefficient is the $i$-th diagonal entry of the matrix SVD of $\widehat A^{(k)}$, a pair of singular values of the two complex coordinates; take the singular values in each coordinate ordered decreasingly, so that the nonzero values form an initial segment. Hence the largest $i$ for which some coefficient is nonzero is the largest rank among the slices $\widehat A^{(k)}$, and the number of nonzero tubes is that largest index.</p>
 <p><strong>Corollary (the matrix case).</strong> For $n_3=1$ the t-product is the matrix product and the tubal rank is the matrix rank. For $n_3\ge2$ the tubal rank can be strictly smaller than the rank of every spatial frontal slice, because the transform mixes the slices; it is the rank of the slices of the transform that counts. For $n_3=2$, $A^{(1)}=\tfrac12 I_2$ and $A^{(2)}=\tfrac12\operatorname{diag}(1,-1)$ have spatial rank $2$, while the transform slices are $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, whose singular values pair into one nonzero tube and one zero tube, so the tubal rank is $1$.</p>
 <p><strong>Remark (the rank is not the CP rank).</strong> The CP rank is the smallest number of rank-one terms in the CANDECOMP/PARAFAC decomposition. The tubal rank is the number of nonzero diagonal tubes in the t-SVD. The two ranks are different invariants: a tensor can have small tubal rank and large CP rank, or the reverse. <strong>The approximation theorem below is a theorem about the tubal rank</strong>, and it says nothing about the best approximation of a given CP rank.</p>
@@ -102,7 +102,7 @@ O\bigl(n_1n_2n_3\log n_3+n_3\min(n_1^2n_2,n_1n_2^2)\bigr),
 $$</p>
 <p>plus $O(n_3k(n_1+n_2))$ for the reconstruction. The truncation is performed slice by slice in the Fourier domain on the two idempotent coordinates.</p>
 <h2 id="the-best-rank-math55-approximation">The Best Rank-$k$ Approximation</h2>
-<p><strong>Theorem (Eckart-Young for the tubal rank).</strong> For every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ and every $1\le k\le w$,</p>
+<p><strong>Theorem (Eckart-Young for the tubal rank).</strong> For every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ and every $1\le k\le w$,</p>
 <p>$$
 \|A-A_k\|_{\mathrm F}
 =\min_{\operatorname{rank}_{\mathrm t}(B)\le k}\|A-B\|_{\mathrm F}

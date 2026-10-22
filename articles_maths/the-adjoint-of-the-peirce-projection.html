@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Peirce Projection — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-peirce-projection"><strong>The Adjoint of the Peirce Projection</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Peirce projection of an idempotent $e$ is the operator $P_e(x)=exe$, the projection of $A$ onto the corner $eAe$ along the other three Peirce corners. When $A$ carries a form, the operator has an adjoint, and the adjoint is again a Peirce projection:</p>
+<p>$$
+P_e^\dagger=P_{e^*},
+$$</p>
+<p>where $e^*$ is the adjoint of the idempotent with respect to the form. The identity is the operator form of the element adjoint. It says that the Peirce projection onto the corner of $e$ is adjoint to the Peirce projection onto the corner of $e^*$, and it reduces the question of whether $P_e$ is an orthogonal projection to the question of whether $e$ is Hermitian: $P_e$ is self-adjoint exactly when $e^*=e$.</p>
+<p>The consequence is the orthogonal Peirce decomposition. If $e$ is Hermitian, all four Peirce projections are self-adjoint, the four corners are pairwise orthogonal, and the decomposition</p>
+<p>$$
+A=eAe\oplus eAf\oplus fAe\oplus fAf
+$$</p>
+<p>is an orthogonal direct sum. If $e$ is not Hermitian, $P_e$ is not self-adjoint, the corners need not be orthogonal, and the form may pair the corner of $e$ with the corner of $e^*$; the symplectic matrix algebra and the split algebra with the exchange involution are the standard examples. The article proves the adjoint identity, the kernel–image form of it, and the orthogonal Peirce theorem, and it computes the three cases.</p>
+<p>The article is the form-theoretic companion of <em>The Sandwich Operators on the Peirce Components</em>, <em>Left and Right Multiplication on the Diagonal Peirce Part</em> and <em>Idempotents and Involutions of an Algebra</em>. The Peirce decomposition is that of <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>; the involutions are <em>Involutive Algebras</em>; the Hermitian idempotents and their Peirce theory are <em>Hermitian Idempotents and the Peirce Decomposition</em>; the form theory is <em>Hermitian Forms on a Sesqualgebra</em> and <em>Hermitian Forms over Algebras and Norms</em>; and the matrix and symplectic examples are <em>Matrix Algebras</em> and <em>The Unitary and Symplectic Groups</em>. The article uses no positivity and no topology.</p>
+<p>Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra with $1\neq0$, and $*$ is an involution of $A$. The form $\langle-,-\rangle:A\times A\to k$ is nondegenerate and <strong>associative Hermitian</strong>: for all $a,x,y\in A$,</p>
+<p>$$
+\langle ax,y\rangle=\langle x,a^*y\rangle, \qquad \langle xa,y\rangle=\langle x,ya^*\rangle.
+$$</p>
+<p>The form is written bilinear; if it is sesquilinear over a field with a conjugation, the same identities hold with the scalar conjugation absorbed in the notation, and the operator adjoint is conjugate-linear in the operator. The article does not use the distinction. The idempotent is $e$, its complement is $f=1-e$, the corners are $A_{ij}=e_iAe_j$ with $e_0=e$, $e_1=f$, and the Peirce projections are $E_{ij}=T_{e_i,e_j}$. The operator adjoint is written $\dagger$; the algebra involution is written $*$. They are different maps: $*$ acts on $A$, and $\dagger$ acts on $\operatorname{End}_k(A)$.</p>
+<h2 id="the-form-and-the-adjoint">The Form and the Adjoint</h2>
+<h3 id="the-associative-hermitian-form">The associative Hermitian form</h3>
+<p><strong>Definition.</strong> A <strong>Hermitian form</strong> on the involutive algebra $(A,*)$ is a nondegenerate form satisfying the two adjunction identities above. The first identity says that the adjoint of left multiplication by $a$ is left multiplication by $a^*$; the second says the same for right multiplication. The two identities are the form-level statement that $*$ is an involution of the algebra and that the form is compatible with the multiplication.</p>
+<p><strong>Example (the trace form).</strong> Let $A=M_n(k)$ with an involution $*$ (transpose, conjugate transpose, symplectic, or any other). The form</p>
+<p>$$
+\langle X,Y\rangle=\operatorname{tr}(X^*Y)
+$$</p>
+<p>is nondegenerate and associative Hermitian: $(AX)^*=X^*A^*$ gives</p>
+<p>$$
+\langle AX,Y\rangle=\operatorname{tr}(X^*A^*Y)=\langle X,A^*Y\rangle,
+$$</p>
+<p>and the second identity is the same computation with the cyclic property of the trace. The form is the <strong>Hermitian trace form</strong> of the involution. For the transpose it is the standard bilinear dot product on the matrix entries; for the conjugate transpose it is the Hilbert–Schmidt form; for the symplectic involution it is the symplectic trace form.</p>
+<p><strong>Example (the split algebra).</strong> Let $A=k\times k$ with the exchange involution $(a,b)^*=(b,a)$, and let</p>
+<p>$$
+\langle (a,b),(c,d)\rangle=ad+bc.
+$$</p>
+<p>Then</p>
+<p>$$
+\langle (a,b)(x,y),(c,d)\rangle=\langle (ax,by),(c,d)\rangle=axd+byc,
+$$</p>
+<p>and</p>
+<p>$$
+\langle (x,y),(a,b)^*(c,d)\rangle=\langle (x,y),(bc,ad)\rangle=xad+ybc,
+$$</p>
+<p>so the first identity holds; the second is the same. The form is the hyperbolic form of the two coordinates, and it is nondegenerate: the matrix of the form in the basis $e=(1,0),f=(0,1)$ is $\begin{pmatrix}0&1\\1&0\end{pmatrix}$.</p>
+<h3 id="the-operator-adjoint">The operator adjoint</h3>
+<p><strong>Definition.</strong> For $T\in\operatorname{End}_k(A)$, the <strong>adjoint</strong> $T^\dagger$ is the unique operator with</p>
+<p>$$
+\langle T x,y\rangle=\langle x,T^\dagger y\rangle \qquad\text{for all }x,y\in A.
+$$</p>
+<p>Existence and uniqueness are the nondegeneracy of the form in finite dimension: the map $y\mapsto\langle-,y\rangle$ is an isomorphism $A\to A^\vee$, and $T^\dagger$ is the transpose of $T$ transported across it.</p>
+<p><strong>Proposition.</strong> The adjoint operation on $\operatorname{End}_k(A)$ satisfies</p>
+<p>$$
+(T+S)^\dagger=T^\dagger+S^\dagger, \qquad (TS)^\dagger=S^\dagger T^\dagger, \qquad (T^\dagger)^\dagger=T, \qquad \mathrm{id}^\dagger=\mathrm{id}.
+$$</p>
+<p>It is an anti-involution of the operator algebra. If the form is sesquilinear, it is conjugate-linear in the scalar; the four identities are unchanged.</p>
+<p><em>Proof.</em> The first and the last are immediate. For the product, $\langle TSx,y\rangle=\langle Sx,T^\dagger y\rangle=\langle x,S^\dagger T^\dagger y\rangle$. For the double adjoint, $\langle T^\dagger x,y\rangle=\langle x,Ty\rangle$ by the defining identity applied to $T^\dagger$ and the symmetry of the form; uniqueness gives $(T^\dagger)^\dagger=T$.</p>
+<h3 id="the-adjoints-of-left-and-right-multiplication">The adjoints of left and right multiplication</h3>
+<p><strong>Theorem.</strong> For all $a,b\in A$:</p>
+<p><strong>(a)</strong> $L_a^\dagger=L_{a^*}$.</p>
+<p><strong>(b)</strong> $R_a^\dagger=R_{a^*}$.</p>
+<p><strong>(c)</strong> $T_{a,b}^\dagger=T_{a^*,b^*}$.</p>
+<p><strong>(d)</strong> $P_e^\dagger=P_{e^*}$.</p>
+<p><em>Proof.</em> (a) $\langle L_a x,y\rangle=\langle ax,y\rangle=\langle x,a^*y\rangle=\langle x,L_{a^*}y\rangle$. (b) $\langle R_a x,y\rangle=\langle xa,y\rangle=\langle x,ya^*\rangle=\langle x,R_{a^*}y\rangle$. (c) $T_{a,b}=L_aR_b$, so $T_{a,b}^\dagger=R_b^\dagger L_a^\dagger=R_{b^*}L_{a^*}=L_{a^*}R_{b^*}=T_{a^*,b^*}$, using the commutativity of left and right multiplication. (d) $P_e=T_{e,e}$, so $P_e^\dagger=T_{e^*,e^*}=P_{e^*}$.</p>
+<p><strong>Corollary.</strong> The Peirce projection of $e$ is self-adjoint exactly when $e$ is Hermitian:</p>
+<p>$$
+P_e^\dagger=P_e \iff e^*=e.
+$$</p>
+<p><em>Proof.</em> If $P_e^\dagger=P_e$, then $P_{e^*}=P_e$; applying both sides to $1$ gives $e^*=e$. Conversely, if $e^*=e$, then $P_e^\dagger=P_{e^*}=P_e$.</p>
+<p><strong>Remark.</strong> The theorem is the operator form of the element adjoint. The involution $*$ sends the idempotent $e$ to the idempotent $e^*$; the operator adjoint $\dagger$ sends the Peirce projection $P_e$ to the Peirce projection $P_{e^*}$. The two maps are compatible, and the compatibility is the identity (P_e^\dagger=P_{e^*}). The reader should keep the two stars apart: $e^*$ is an element of $A$, and $P_e^\dagger$ is an operator on $A$.</p>
+<h2 id="the-adjoint-of-the-peirce-projection_1">The Adjoint of the Peirce Projection</h2>
+<h3 id="the-identity">The identity</h3>
+<p>The Peirce projection is</p>
+<p>$$
+P_e=T_{e,e}:A\longrightarrow A, \qquad P_e(x)=exe.
+$$</p>
+<p>It is the projection onto $A_{00}=eAe$ along $N=A_{01}\oplus A_{10}\oplus A_{11}$. Its adjoint is the Peirce projection of the adjoint idempotent:</p>
+<p>$$
+P_e^\dagger=P_{e^*}:A\longrightarrow A, \qquad P_e^\dagger(y)=e^*ye^*.
+$$</p>
+<p>The identity is the main theorem of the article, and it has three readings:</p>
+<ul>
+<li><strong>Operator reading.</strong> The adjoint of the projection onto the corner of $e$ is the projection onto the corner of $e^*$.</li>
+<li><strong>Element reading.</strong> The adjoint of the idempotent $e$ is the idempotent $e^*$; the Peirce projection is the operator that records the corner, and the adjoint records the adjoint corner.</li>
+<li><strong>Form reading.</strong> The corner $eAe$ and the corner $e^*Ae^*$ are the images of the two adjoint projections; the form pairs the first with the dual of the second, and the kernel of one is the orthogonal complement of the image of the other.</li>
+</ul>
+<h3 id="kernel-and-image">Kernel and image</h3>
+<p><strong>Theorem.</strong> Let $P=P_e$.</p>
+<p><strong>(a)</strong> $\ker P=(\operatorname{im}P^\dagger)^\perp=(e^*Ae^*)^\perp$.</p>
+<p><strong>(b)</strong> $\operatorname{im}P=(\ker P^\dagger)^\perp$.</p>
+<p><strong>(c)</strong> If $e$ is Hermitian, $\ker P=(eAe)^\perp$ and $\operatorname{im}P=(\ker P)^\perp$; the projection is orthogonal.</p>
+<p><strong>(d)</strong> If $e$ is not Hermitian, $P$ is not self-adjoint, and the kernel of $P$ is the orthogonal complement of the adjoint corner $e^*Ae^*$, not of $eAe$. The Peirce decomposition is then not orthogonal in general.</p>
+<p><em>Proof.</em> (a) For any operator $T$, $x\in\ker T$ iff $\langle Tx,y\rangle=0$ for all $y$ iff $\langle x,T^\dagger y\rangle=0$ for all $y$ iff $x\in(\operatorname{im}T^\dagger)^\perp$. Apply this to $T=P$ and use $P^\dagger=P_{e^*}$, whose image is $e^*Ae^*$. (b) is the same statement applied to $P^\dagger$. (c) If $e=e^*$, then $P^\dagger=P$, so $\ker P=(\operatorname{im}P)^\perp$ and $\operatorname{im}P=(\ker P)^\perp$. (d) If $P\neq P^\dagger$, the projection is not orthogonal, and (a) identifies its kernel with the orthogonal complement of the adjoint corner.</p>
+<p><strong>Remark.</strong> The identity (\ker P_e=(e^<em>Ae^</em>)^\perp) is the precise sense in which the Peirce decomposition is not orthogonal when $e$ is not Hermitian: the kernel of the projection onto $eAe$ is the orthogonal complement of the <strong>adjoint</strong> corner, not of $eAe$ itself. When $e$ is Hermitian the two corners coincide, and the kernel is the orthogonal complement of the corner, as an orthogonal projection requires.</p>
+<h3 id="the-hermitian-case-orthogonal-peirce-decomposition">The Hermitian case: orthogonal Peirce decomposition</h3>
+<p><strong>Theorem.</strong> Suppose $e$ is Hermitian. Then:</p>
+<p><strong>(a)</strong> Each Peirce projection $E_{ij}=T_{e_i,e_j}$ is self-adjoint.</p>
+<p><strong>(b)</strong> The four Peirce projections are pairwise orthogonal, and the four corners are pairwise orthogonal.</p>
+<p><strong>(c)</strong> The Peirce decomposition is an orthogonal direct sum,</p>
+<p>$$
+A=A_{00}\oplus A_{01}\oplus A_{10}\oplus A_{11},
+$$</p>
+<p>and the form restricts to a nondegenerate form on each corner.</p>
+<p><strong>(d)</strong> $P_e=E_{00}$ is the orthogonal projection onto $eAe$, and $P_f=E_{11}$ is the orthogonal projection onto $fAf$.</p>
+<p><em>Proof.</em> (a) $E_{ij}^\dagger=T_{e_i^*,e_j^*}=T_{e_i,e_j}=E_{ij}$, because $e$ and $f=1-e$ are Hermitian. (b) The $E_{ij}$ are idempotent and self-adjoint by (a), and they satisfy $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$; hence they are pairwise orthogonal projections. Their images are the corners, so the corners are pairwise orthogonal. (c) The sum of the $E_{ij}$ is the identity, so the corners span $A$; with (b) the sum is orthogonal. The restriction of a nondegenerate form to an orthogonal direct summand is nondegenerate, because a vector in the radical of the summand is orthogonal to the summand and to all the other summands, hence to $A$. (d) is the special case $(i,j)=(0,0)$ and $(1,1)$.</p>
+<p><strong>Corollary (the orthogonal Peirce decomposition).</strong> For a Hermitian idempotent $e$,</p>
+<p>$$
+A=eAe\ \perp\ eAf\ \perp\ fAe\ \perp\ fAf,
+$$</p>
+<p>and the orthogonal projection onto $eAe$ is $P_e(x)=exe$. The decomposition is the orthogonal form of the Peirce decomposition of <em>Hermitian Idempotents and the Peirce Decomposition</em>.</p>
+<p><strong>Remark.</strong> The theorem is the reason the Hermitian idempotents are the algebra-level analogues of the orthogonal projections. The Peirce projection $P_e$ is self-adjoint, its image is the corner, and its kernel is the orthogonal complement of the corner. The two mixed corners $eAf$ and $fAe$ are exchanged by the involution, and they are orthogonal to each other under the form.</p>
+<p><strong>Example (the Hilbert–Schmidt form).</strong> Let $A=M_2(\mathbb{C})$ with the conjugate transpose and $\langle X,Y\rangle=\operatorname{tr}(X^*Y)$, and let $e=E_{11}$. The idempotent is Hermitian, $P_e(X)=E_{11}XE_{11}$ is the orthogonal projection onto the $(1,1)$ entry, and the four corners are the four complex lines $E_{11},E_{12},E_{21},E_{22}$. The mixed corners are orthogonal, $\langle E_{12},E_{21}\rangle=\operatorname{tr}(E_{21}E_{21})=0$, and the Peirce decomposition is the orthogonal direct sum of the four lines. The example is the positive definite model of the theorem; the symplectic and split examples below show what changes when the idempotent is not Hermitian.</p>
+<h3 id="the-non-hermitian-case">The non-Hermitian case</h3>
+<p>When $e$ is not Hermitian, the Peirce projection is not self-adjoint, and the corners need not be orthogonal. The form pairs the corner of $e$ with the corner of $e^*$, and the two extreme examples are the symplectic matrix algebra and the split algebra with the exchange involution.</p>
+<p><strong>Example (the symplectic matrix algebra).</strong> Let $A=M_2(k)$ with the symplectic involution</p>
+<p>$$
+X^*=JX^{\mathsf T}J^{-1}, \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+$$</p>
+<p>and the form $\langle X,Y\rangle=\operatorname{tr}(X^*Y)$. Let $e=E_{11}$, so $e^*=E_{22}=f$. The Peirce projection is $P_e(X)=E_{11}XE_{11}$, the projection onto the $(1,1)$ entry, and its adjoint is $P_f$, the projection onto the $(2,2)$ entry. The corners are the four lines</p>
+<p>$$
+A_{00}=kE_{11}, \quad A_{01}=kE_{12}, \quad A_{10}=kE_{21}, \quad A_{11}=kE_{22}.
+$$</p>
+<p>The form is hyperbolic on the pairs: $E_{11}$ and $E_{22}$ are isotropic and satisfy $\langle E_{11},E_{22}\rangle=1$, while $E_{12}$ and $E_{21}$ satisfy $\langle E_{12},E_{21}\rangle=-1$ and are isotropic. The Peirce decomposition is therefore not orthogonal; it is a hyperbolic pairing of the two diagonal corners and of the two mixed corners. The projection $P_e$ is not self-adjoint, and $P_e^\dagger=P_f$.</p>
+<p><strong>Example (the split algebra).</strong> Let $A=k\times k$ with the exchange involution and the hyperbolic form $\langle (a,b),(c,d)\rangle=ad+bc$. Let $e=(1,0)$, so $e^*=(0,1)=f$. The Peirce projection is $P_e(x_0,x_1)=(x_0,0)$, and its adjoint is $P_f(x_0,x_1)=(0,x_1)$. The two coordinate lines are isotropic and paired, and the Peirce decomposition is not orthogonal. The example is the commutative model of the symplectic one: the exchange involution and the hyperbolic form produce the same pairing of the two corners.</p>
+<p><strong>Remark (the two diagonal projections).</strong> In both examples, $P_e$ and $P_f$ are adjoint projections: $P_eP_f=P_fP_e=0$, and $P_e+P_f=E_{00}+E_{11}$ is the projection onto the diagonal part $D=A_{00}\oplus A_{11}$. In the Hermitian case the two projections are orthogonal; in the non-Hermitian case they are adjoint but not self-adjoint, and the form pairs their images. The pair is the simplest example of a dual pair of projections in the sense of the form.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $A$ be a finite-dimensional involutive algebra with a nondegenerate associative Hermitian form. The operator adjoint $\dagger$ satisfies $L_a^\dagger=L_{a^*}$, $R_a^\dagger=R_{a^*}$ and $T_{a,b}^\dagger=T_{a^*,b^*}$. For an idempotent $e$, the Peirce projection $P_e=T_{e,e}$ has adjoint (P_e^\dagger=P_{e^*}), the Peirce projection of the adjoint idempotent. Hence $P_e$ is self-adjoint exactly when $e$ is Hermitian. The kernel of $P_e$ is the orthogonal complement of the image of $P_{e^*}$, that is, $(e^*Ae^*)^\perp$; the image of $P_e$ is the orthogonal complement of the kernel of $P_{e^*}$. When $e$ is Hermitian, all four Peirce projections $E_{ij}$ are self-adjoint, the four corners are pairwise orthogonal, the Peirce decomposition is an orthogonal direct sum, and $P_e$ is the orthogonal projection onto $eAe$. When $e$ is not Hermitian, the Peirce projection is not self-adjoint, the corners need not be orthogonal, and the form pairs the corner of $e$ with the corner of $e^*$: the symplectic matrix algebra and the split algebra with the exchange involution are the models, with isotropic corners and hyperbolic pairings. The article uses no positivity and no topology.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$*$</td>
+<td>the algebra involution, $a\mapsto a^*$</td>
+</tr>
+<tr>
+<td>$\dagger$</td>
+<td>the operator adjoint, $T\mapsto T^\dagger$</td>
+</tr>
+<tr>
+<td>$\langle-,-\rangle$</td>
+<td>the associative Hermitian form</td>
+</tr>
+<tr>
+<td>$L_a,R_a$</td>
+<td>left and right multiplication</td>
+</tr>
+<tr>
+<td>$T_{a,b}=L_aR_b$</td>
+<td>the sandwich $x\mapsto axb$</td>
+</tr>
+<tr>
+<td>$P_e=T_{e,e}$</td>
+<td>the Peirce projection onto $eAe$</td>
+</tr>
+<tr>
+<td>$E_{ij}=T_{e_i,e_j}$</td>
+<td>the Peirce projection onto $A_{ij}$</td>
+</tr>
+<tr>
+<td>$e^*$</td>
+<td>the adjoint idempotent</td>
+</tr>
+<tr>
+<td>$P_e^\dagger=P_{e^*}$</td>
+<td>the adjoint Peirce projection</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the projections onto the corners.</li>
+<li>Nathan Jacobson, <em>Basic Algebra II</em> (Freeman, 1989), for involutions, Hermitian forms and the classical matrix algebras.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions and the Hermitian forms of the classical algebras.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the indefinite and symplectic forms and the dual pairs of projections.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -69,9 +69,9 @@
 <h2 id="introduction">Introduction</h2>
 <p>The modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em> writes every nonzero complex number as</p>
 <p>$$
-Q = r\,u, \qquad r = \lvert Q\rvert > 0, \qquad N(u) = 1,
+Q = r\,u, \qquad r = \sqrt{\langle Q\rangle_{*}} > 0, \qquad \langle u\rangle_{*} = 1,
 $$</p>
-<p>with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $N(u)=1$, not by a number.</p>
+<p>with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $\langle u\rangle_{*}=1$, not by a number.</p>
 <p>This article names it. For a real number $s$ put</p>
 <p>$$
 u(s) = \frac{1-is}{1+is},
@@ -89,13 +89,13 @@ $$</p>
 <h3 id="the-modulusunit-form-recalled">The Modulus–Unit Form Recalled</h3>
 <p>For a complex number $Q$ the norm is</p>
 <p>$$
-N(Q) = Q\bar{Q} = \lvert Q\rvert^2,
+\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2,
 $$</p>
-<p>which is positive off the origin. The modulus is $r = \sqrt{N(Q)}$, a positive real with no sign choice, and the unit factor is</p>
+<p>which is positive off the origin. The modulus is $r = \sqrt{\langle Q\rangle_{*}}$, a positive real with no sign choice, and the unit factor is</p>
 <p>$$
-u = \frac{Q}{r}, \qquad N(u) = \frac{N(Q)}{r^2} = 1.
+u = \frac{Q}{r}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{r^2} = 1.
 $$</p>
-<p>The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : N(u)=1\}$. The pair $(r,u)$ is unique: taking norms in $Q = ru$ forces $r = \sqrt{N(Q)}$, and then $u = Q/r$.</p>
+<p>The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$. The pair $(r,u)$ is unique: taking norms in $Q = ru$ forces $r = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/r$.</p>
 <p>This is where the modulus–unit article stops. The present article adds one object, the real number $s$, and changes nothing else.</p>
 <h3 id="the-chart">The Chart</h3>
 <p><strong>Definition.</strong> For $s \in \mathbb{R}$ the <strong>chart</strong> is</p>
@@ -157,8 +157,8 @@ $$</p>
 <p>$$
 Q = r\,\frac{1-is}{1+is}, \qquad r > 0, \quad s \in \mathbb{R}.
 $$</p>
-<p><strong>Existence.</strong> Let $Q \notin (-\infty,0]$, and put $r = \lvert Q\rvert$ and $u = Q/r$. Then $r > 0$ and $N(u) = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.</p>
-<p><strong>Uniqueness.</strong> Taking norms gives $r = \sqrt{N(Q)}$, and then $u = Q/r$; the chart is injective, so $s$ is determined by $u$.</p>
+<p><strong>Existence.</strong> Let $Q \notin (-\infty,0]$, and put $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/r$. Then $r > 0$ and $\langle u\rangle_{*} = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.</p>
+<p><strong>Uniqueness.</strong> Taking norms gives $r = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/r$; the chart is injective, so $s$ is determined by $u$.</p>
 <p>The coordinate is $s = i(Q-r)/(Q+r)$ of §<em>The Inverse</em>, and the reconstruction is exact:</p>
 <p>$$
 Q = r\,\frac{1-is}{1+is} = r\,\frac{1-s^2}{1+s^2} - i\,r\,\frac{2s}{1+s^2}.
@@ -256,7 +256,7 @@ $$</p>
 <thead>
 <tr>
 <th>$Q$</th>
-<th>$r = \lvert Q\rvert$</th>
+<th>$r = \sqrt{\langle Q\rangle_{*}}$</th>
 <th>$s = i(Q-r)/(Q+r)$</th>
 <th>$u$</th>
 <th>reconstruction error</th>
@@ -335,7 +335,7 @@ u(10^9) \approx -1-2\times10^{-9}i, \qquad u(-10^9) \approx -1+2\times10^{-9}i.
 $$</p>
 <p>The cut corresponds to the single unit factor $-1$, which neither side attains.</p>
 <h2 id="summary">Summary</h2>
-<p>Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = r(1-is)/(1+is)$, with $r = \lvert Q\rvert > 0$ and $s = i(Q-r)/(Q+r) \in \mathbb{R}$. It is the modulus–unit decomposition of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.</p>
+<p>Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = r(1-is)/(1+is)$, with $r = \sqrt{\langle Q\rangle_{*}} > 0$ and $s = i(Q-r)/(Q+r) \in \mathbb{R}$. It is the modulus–unit decomposition of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.</p>
 <p>The chart $s \mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$. It is the stereographic projection from $-1$ onto the imaginary axis, read in the coordinate $s$ of the point $-is$. It is rational in both directions, and it sends $0$ to $1$ and $\pm1$ to $\mp i$.</p>
 <p>The group law is $s_1*s_2 = (s_1+s_2)/(1-s_1s_2)$, with identity $0$ and inverse $-s$; it has a pole at $s_1s_2 = 1$, where the product is the missing point $-1$ and the coordinate escapes to infinity. The chart is a group chunk. A second chart, $v(s) = -u(s)$, misses $+1$ and supplies $-1$, and the two cover the circle.</p>
 <p>In the matrix picture the decomposition is $M_Q = r(I-sJ)(I+sJ)^{-1}$, the Cayley transform of the line $sJ$ onto $SO(2)$ minus $-I$. The price of rationality is locality: one point of the circle, and one ray of the plane, are not covered.</p>
@@ -357,16 +357,16 @@ $$</p>
 <td>a complex number outside the closed negative real axis</td>
 </tr>
 <tr>
-<td>$N(Q) = Q\bar{Q} = \lvert Q\rvert^2$</td>
+<td>$\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$</td>
 <td>the norm, positive definite</td>
 </tr>
 <tr>
-<td>$r = \lvert Q\rvert$</td>
+<td>$r = \sqrt{\langle Q\rangle_{*}}$</td>
 <td>the modulus, a positive real</td>
 </tr>
 <tr>
 <td>$u$</td>
-<td>the unit factor, $N(u) = 1$</td>
+<td>the unit factor, $\langle u\rangle_{*} = 1$</td>
 </tr>
 <tr>
 <td>$s$</td>

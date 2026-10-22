@@ -88,6 +88,7 @@ $$</p>
 \exp(j\theta) = \cosh\theta + j \sinh\theta.
 $$</p>
 <p>The exponential is <strong>not</strong> periodic. Unlike the complex exponential, which is $2\pi i$-periodic, the split complex exponential is injective on the real axis and has no period.</p>
+<p>The norm used below is the Hermitian norm of the layer, the bracket carrying the bar: $\langle Q\rangle_{*} = \langle Q,Q\rangle_{*} = Q\bar Q = q^2-q'^2$. The natural sign of this layer is the identity, so the quaternionic bracket collapses into the plain one, $\langle Q_1,Q_2\rangle_{\natural}=\langle Q_1,Q_2\rangle=Q_1Q_2$, and does not give the norm.</p>
 <h3 id="the-idempotent-form">The Idempotent Form</h3>
 <p>In the idempotent basis, the exponential decomposes as</p>
 <p>$$
@@ -107,11 +108,11 @@ $$</p>
 $$</p>
 <p>Squaring and subtracting eliminates $q'_{\log}$:</p>
 <p>$$
-\exp(2q_{\log})\bigl(\cosh^2 q'_{\log} - \sinh^2 q'_{\log}\bigr) = \exp(2q_{\log}) = q^2 - q'^2 = N(Q).
+\exp(2q_{\log})\bigl(\cosh^2 q'_{\log} - \sinh^2 q'_{\log}\bigr) = \exp(2q_{\log}) = q^2 - q'^2 = \langle Q\rangle_{*}.
 $$</p>
-<p>The left side is positive, so a solution requires $N(Q) > 0$. Under that condition the first equation has the unique solution</p>
+<p>The left side is positive, so a solution requires $\langle Q\rangle_{*} > 0$. Under that condition the first equation has the unique solution</p>
 <p>$$
-q_{\log} = \tfrac12\log N(Q).
+q_{\log} = \tfrac12\log \langle Q\rangle_{*}.
 $$</p>
 <p>The ratio of the two equations then gives $\tanh q'_{\log} = q'/q$. Since $\cosh q'_{\log} > 0$ and $\exp(q_{\log}) > 0$, the first equation forces $q > 0$; together with $q^2 > q'^2$ this gives $|q'/q| < 1$, so $q'_{\log} = \operatorname{artanh}(q'/q)$ is defined. Hence a logarithm exists exactly when</p>
 <p>$$
@@ -145,7 +146,7 @@ $$</p>
 \log Q = \log(Q_+) \Pi_+ + \log(Q_-) \Pi_-,
 $$</p>
 <p>and the real logarithm exists if and only if $Q_+ > 0$ and $Q_- > 0$, which is the same condition $q > |q'|$.</p>
-<p><strong>Example.</strong> Take $Q=5+3j$. Then $N(Q)=25-9=16$ and $q_{\log}=\tfrac12\ln16=\ln4=1.3862944$. The ratio is $q'/q=3/5=0.6$, so $q'_{\log}=\operatorname{artanh}0.6=\tfrac12\ln\frac{1.6}{0.4}=\ln 2=0.6931472$. The logarithm is the number $Q_{\log}=1.3862944+0.6931472\,j$, and $4(\cosh\ln2+j\sinh\ln2)=4(1.25+0.75j)=5+3j$.</p>
+<p><strong>Example.</strong> Take $Q=5+3j$. Then $\langle Q\rangle_{*}=25-9=16$ and $q_{\log}=\tfrac12\ln16=\ln4=1.3862944$. The ratio is $q'/q=3/5=0.6$, so $q'_{\log}=\operatorname{artanh}0.6=\tfrac12\ln\frac{1.6}{0.4}=\ln 2=0.6931472$. The logarithm is the number $Q_{\log}=1.3862944+0.6931472\,j$, and $4(\cosh\ln2+j\sinh\ln2)=4(1.25+0.75j)=5+3j$.</p>
 <h3 id="the-two-compositions">The Two Compositions</h3>
 <p>Unlike the complex case, both inverse identities hold exactly, with no remainder.</p>
 <p><strong>Right inverse.</strong> For $Q$ in the future cone and $Q_{\log}$ its logarithm,</p>
@@ -212,7 +213,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The past cone fails because both idempotent components are negative. The spacelike wedges fail because $N(Q) < 0$, while every exponential has positive norm. The null cone fails because one component is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $Q_- \to 0^+$, for instance, $\log Q_- \to -\infty$ and the $j$-component of $\log Q$ tends to $+\infty$.</p>
+<p>The past cone fails because both idempotent components are negative. The spacelike wedges fail because $\langle Q\rangle_{*} < 0$, while every exponential has positive norm. The null cone fails because one component is zero. There is no branch cut to remove: the boundary is the null cone, where the logarithm diverges rather than jumps. As $Q_- \to 0^+$, for instance, $\log Q_- \to -\infty$ and the $j$-component of $\log Q$ tends to $+\infty$.</p>
 <p>The product identity follows at once from injectivity:</p>
 <p>$$
 \log(QB) = \log Q + \log B
@@ -220,7 +221,7 @@ $$</p>
 <p>whenever both sides are defined, because both sides have the same exponential, $QB$, and $\exp$ is injective.</p>
 <h3 id="the-derivative-of-the-logarithm">The Derivative of the Logarithm</h3>
 <p>The derivative is again forced by the inverse identity.</p>
-<p><strong>Inverse function theorem.</strong> The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $N(\exp(Q_{\log})) = \exp(2q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative</p>
+<p><strong>Inverse function theorem.</strong> The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $\langle \exp(Q_{\log})\rangle_{*} = \exp(2q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative</p>
 <p>$$
 (\exp^{-1})'(Q) = \frac{1}{\exp'(Q_{\log})} = \frac{1}{\exp(Q_{\log})} = \frac{1}{Q}.
 $$</p>
@@ -492,7 +493,7 @@ $$</p>
 </tr>
 <tr>
 <td>$Q_{\log} = q_{\log} + jq'_{\log}$</td>
-<td>A logarithm of $Q$, with $q_{\log} = \tfrac12\log N(Q)$ and $q'_{\log} = \operatorname{artanh}(q'/q)$</td>
+<td>A logarithm of $Q$, with $q_{\log} = \tfrac12\log \langle Q\rangle_{*}$ and $q'_{\log} = \operatorname{artanh}(q'/q)$</td>
 </tr>
 <tr>
 <td>$\sinh Q, \cosh Q, \tanh Q$</td>

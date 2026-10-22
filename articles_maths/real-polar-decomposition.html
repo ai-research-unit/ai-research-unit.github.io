@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Polar Element Representation — Biquaternion Universe</title>
+  <title>Real Polar Decomposition — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -65,30 +65,30 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="real-polar-element-representation"><strong>Real Polar Element Representation</strong></h1>
+        <h1 id="real-polar-decomposition"><strong>Real Polar Decomposition</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is about the <strong>polar representation</strong> of a real number: the statement that every nonzero real number is the product of a positive real scale and a sign, and the description of the sign factor as an element of the two-element group.</p>
-<p>The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion article <em>Modulus–Unit Polar Decomposition of Complex Numbers</em> for the two-dimensional definite algebra $\mathbb{C}$, and in the companion articles on the polar representations of the split-complex and the other algebras of the family. The family decomposes every element of every one of these algebras into the same four <strong>slots</strong> — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{R}$ exactly two slots are occupied, the scale and the compact slot, the latter filled by the discrete sign group, and the algebra is the smallest case of the pattern: no branch choice, no boost, no zero divisors, no boundary, and only one continuous parameter.</p>
+<p>This article is about the <strong>polar decomposition</strong> of a real number: the statement that every nonzero real number is the product of a positive real scale and a sign, and the description of the sign factor as an element of the two-element group.</p>
+<p>The subject is elementary, and its place in this blog is that of the base case. The polar decomposition is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion article <em>Modulus–Unit Polar Decomposition of Complex Numbers</em> for the two-dimensional definite algebra $\mathbb{C}$, and in the companion articles on the polar decompositions of the split-complex and the other algebras of the family. The family decomposes every element of every one of these algebras into the same four <strong>slots</strong> — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{R}$ exactly two slots are occupied, the scale and the compact slot, the latter filled by the discrete sign group, and the algebra is the smallest case of the pattern: no branch choice, no boost, no zero divisors, no boundary, and only one continuous parameter.</p>
 <p>The plan is as follows. The modulus and the sign factor are defined, and existence and uniqueness are proved. The sign factor is then described through the exponential, and the exponential is organised by the rule $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{R}$ and in $\mathbb{C}$. The two factors are then identified with two rows of that rule, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article.</p>
 <p>The conventions and the symbols are those of <em>Real Algebra</em> and of the corpus (<em>Conventions in Mathematics</em>); the symbols this article uses are collected in §<em>Summary of Notation</em>.</p>
 <p>Every numerical value displayed below is exact.</p>
 <h2 id="the-modulus-and-the-sign-factor">The Modulus and the Sign Factor</h2>
 <h3 id="the-two-factors">The Two Factors</h3>
-<p><strong>Definition.</strong> Let $q \in \mathbb{R}$, $q \neq 0$. The <strong>polar representation</strong> of $q$ is the writing</p>
+<p><strong>Definition.</strong> Let $q \in \mathbb{R}$, $q \neq 0$. The <strong>polar decomposition</strong> of $q$ is the writing</p>
 <p>$$
 q = r\,\sigma, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \sigma \in \mathbb{R}, \quad \sigma^2 = 1,
 $$</p>
 <p>in which $r$ is the <strong>modulus</strong> of $q$ and $\sigma$ is its <strong>sign factor</strong>.</p>
-<p>The second factor is a <strong>unit element</strong>, an element of norm one for the norm in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the norm in view is $N(q)=q^2$, so the unit elements are the two roots of $+1$, the group $\{\pm1\} = O(1)$, and the sign factor is the unit factor of the real column. The phrase names the norm-one elements and not every invertible element: the <strong>group of units</strong> $\mathbb{R}^\times$ of the algebra is the wider set of nonzero reals, treated in its own section, and the two senses of the word are kept apart throughout.</p>
+<p>The second factor is a <strong>unit element</strong>, an element of norm one for the norm in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the norm in view is $\langle q\rangle=q^2$, so the unit elements are the two roots of $+1$, the group $\{\pm1\} = O(1)$, and the sign factor is the unit factor of the real column. The phrase names the norm-one elements and not every invertible element: the <strong>group of units</strong> $\mathbb{R}^\times$ of the algebra is the wider set of nonzero reals, treated in its own section, and the two senses of the word are kept apart throughout.</p>
 <p>The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The sign factor is constrained by the equation $\sigma^2 = 1$, which is the two-point set $\{\pm1\}$, so it carries no continuous parameter. The counts add to the real dimension of the algebra, $1 + 0 = 1$, and this additivity is the pattern the whole family follows.</p>
 <h3 id="the-modulus-from-the-norm">The Modulus from the Norm</h3>
 <p>The norm of a real number is</p>
 <p>$$
-N(q) = q\,q = q^2.
+\langle q\rangle = q\,q = q^2.
 $$</p>
-<p>It is a single square, so $N(q) > 0$ for every $q \neq 0$ and $N(q) = 0$ only at $q = 0$; the modulus is</p>
+<p>It is a single square, so $\langle q\rangle > 0$ for every $q \neq 0$ and $\langle q\rangle = 0$ only at $q = 0$; the modulus is</p>
 <p>$$
-r = \sqrt{N(q)} = |q|.
+r = \sqrt{\langle q\rangle} = |q|.
 $$</p>
 <p>Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{R}$ neither does.</p>
 <p>The modulus is multiplicative, because the norm is: $r(q_1 q_2) = r(q_1)r(q_2)$, and also $r(\lambda q_1) = |\lambda|\,r(q_1)$ for real $\lambda$.</p>
@@ -99,14 +99,14 @@ $$</p>
 $$</p>
 <p>It lies on the <strong>two-point set</strong></p>
 <p>$$
-\{\pm1\} = \{\sigma \in \mathbb{R} : N(\sigma) = 1\},
+\{\pm1\} = \{\sigma \in \mathbb{R} : \langle \sigma\rangle = 1\},
 $$</p>
-<p>which is a group under multiplication, since $N(\sigma\tau) = N(\sigma)N(\tau) = 1$ and $N(\sigma^{-1}) = N(\sigma) = 1$ when $N(\sigma) = 1$, and which is compact, being a finite closed subset of $\mathbb{R}$. It is the <strong>orthogonal group of the line</strong>, written $O(1)$: the real $1\times1$ matrices of norm one are exactly $[\pm1]$, because a $1\times1$ matrix $[g]$ preserves the form $N$ exactly when $g^2 = 1$. The group $O(1) \cong \mathbb{Z}/2$ has two elements, the identity $+1$ and the reflection $-1$.</p>
+<p>which is a group under multiplication, since $\langle \sigma\tau\rangle = \langle \sigma\rangle\langle \tau\rangle = 1$ and $\langle \sigma^{-1}\rangle = \langle \sigma\rangle = 1$ when $\langle \sigma\rangle = 1$, and which is compact, being a finite closed subset of $\mathbb{R}$. It is the <strong>orthogonal group of the line</strong>, written $O(1)$: the real $1\times1$ matrices of norm one are exactly $[\pm1]$, because a $1\times1$ matrix $[g]$ preserves the form $N$ exactly when $g^2 = 1$. The group $O(1) \cong \mathbb{Z}/2$ has two elements, the identity $+1$ and the reflection $-1$.</p>
 <p>The sign factor is the element that acts: multiplication by $-1$ is the reflection of the line through the origin, and multiplication by $+1$ is the identity. In the complex case the corresponding unit factor is the circle $\mathrm{U}(1)$, which is connected; here the group $O(1)$ is discrete, and it is the component group of the unit group.</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
-<p><strong>Theorem.</strong> Every nonzero real number $q$ has exactly one polar representation.</p>
-<p><em>Existence.</em> Put $r = \sqrt{N(q)}$ and $\sigma = q/r$. Since $N(q) > 0$, the number $r$ is positive, and $N(\sigma) = N(q)/r^2 = 1$ because $N(\lambda q) = \lambda^2N(q)$ for real $\lambda$. Hence $q = r\sigma$ with $r > 0$ and $\sigma^2 = 1$.</p>
-<p><em>Uniqueness.</em> Suppose $q = r\sigma = r_1\sigma_1$ with $r, r_1 > 0$ and $\sigma^2 = \sigma_1^2 = 1$. Taking norms gives $r^2 = N(q) = r_1^2$, so $r = r_1$ because both are positive, and then $\sigma = q/r = \sigma_1$.</p>
+<p><strong>Theorem.</strong> Every nonzero real number $q$ has exactly one polar decomposition.</p>
+<p><em>Existence.</em> Put $r = \sqrt{\langle q\rangle}$ and $\sigma = q/r$. Since $\langle q\rangle > 0$, the number $r$ is positive, and $\langle \sigma\rangle = \langle q\rangle/r^2 = 1$ because $\langle \lambda q\rangle = \lambda^2\langle q\rangle$ for real $\lambda$. Hence $q = r\sigma$ with $r > 0$ and $\sigma^2 = 1$.</p>
+<p><em>Uniqueness.</em> Suppose $q = r\sigma = r_1\sigma_1$ with $r, r_1 > 0$ and $\sigma^2 = \sigma_1^2 = 1$. Taking norms gives $r^2 = \langle q\rangle = r_1^2$, so $r = r_1$ because both are positive, and then $\sigma = q/r = \sigma_1$.</p>
 <p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is a coordinate for the sign factor: the sign has no continuous coordinate at all, because the group is finite, and the discrete alternative is the whole of what the exponential can offer. This is the base case of the non-uniqueness of the exponential coordinate that appears from $\mathbb{C}$ onward, where the coordinate of the unit factor is a class modulo $2\pi$.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
 <h3 id="the-word-as-exponentials">The Word as Exponentials</h3>
@@ -185,7 +185,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the complete classification of the exponentials of $\mathbb{R}$. The two roots of $+1$ are the two points of the sign group, and in $\mathbb{R}$ every root of $+1$ has norm one, because $N(q) = q^2$; these two points are the whole root set. The split-complex algebra, whose roots of $+1$ number four, is the first in the family where this set is larger than two points. The roots of $-1$ are absent here, and their absence is the statement that $\mathbb{R}$ has no continuous rotation, no continuous phase and no continuous rotor; the compact slot is filled by the discrete sign group alone.</p>
+<p>The table is the complete classification of the exponentials of $\mathbb{R}$. The two roots of $+1$ are the two points of the sign group, and in $\mathbb{R}$ every root of $+1$ has norm one, because $\langle q\rangle = q^2$; these two points are the whole root set. The split-complex algebra, whose roots of $+1$ number four, is the first in the family where this set is larger than two points. The roots of $-1$ are absent here, and their absence is the statement that $\mathbb{R}$ has no continuous rotation, no continuous phase and no continuous rotor; the compact slot is filled by the discrete sign group alone.</p>
 <h3 id="the-sign-factor-as-an-exponential">The Sign Factor as an Exponential</h3>
 <p>The sign factor $\sigma$ has norm one, so its modulus is one. It therefore satisfies $\sigma = \pm1$, and the two cases are reached as follows.</p>
 <ul>
@@ -240,19 +240,19 @@ $$</p>
 <p><strong>No boost, and no continuous rotor or phase.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +e_t$ <strong>off</strong> the fixed subspace, and a rotor or phase would be a unit factor of trigonometric signature, $\exp(\nu\theta)$ with $\nu^2 = -e_t$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_t$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $\exp(\pm\phi)$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The unit group contains exactly one continuous one-parameter subgroup, the scale.</p>
 <p><strong>The sign is the whole compact part.</strong> In the complex algebra the second factor is the connected circle $\mathrm{U}(1)$, and the group of units is connected. Here the second factor is the disconnected group $O(1) = \{\pm1\}$, and it is the component group of $\mathbb{R}^\times$. The two-dimensional definite case is the first in which the second factor is connected, and the passage from $O(1)$ to $\mathrm{U}(1)$ is the first place the family acquires a nontrivial continuous compact factor.</p>
 <h3 id="no-boundary">No Boundary</h3>
-<p>The polar representation of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $q \neq 0$ then $N(q) > 0$, so $r > 0$ and $\sigma = q/r$ is defined; there is no element with $N(q) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
+<p>The polar decomposition of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $q \neq 0$ then $\langle q\rangle > 0$, so $r > 0$ and $\sigma = q/r$ is defined; there is no element with $\langle q\rangle = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar decomposition must be restricted to a cone complement.</p>
 <p><strong>The parametrisation as a homeomorphism.</strong> The parametrisation of the unit group by the two factors,</p>
 <p>$$
 \Phi : \mathbb{R}_{>0} \times \{\pm1\} \longrightarrow \mathbb{R}^\times, \qquad \Phi(r, \sigma) = r\sigma,
 $$</p>
 <p>is a bijective local homeomorphism, and a homeomorphism onto $\mathbb{R}^\times$ because the sign coordinate is discrete and the map is continuous with continuous inverse $(|q|, \operatorname{sgn}q)$; its image is all of $\mathbb{R}^\times$. It fails to cover exactly the complement $\mathbb{R}\setminus\mathbb{R}^\times = \{0\}$, a single point rather than a hypersurface, and the sign group $\{\pm1\}$ is finite, so neither the scale variable nor the sign variable has a boundary. There is no set on which the parametrisation fails, because the norm is definite and the zero-divisor class is empty; the absence of a boundary is the mathematical content of the definiteness of $\mathbb{R}$.</p>
-<p><strong>The boundary as ends.</strong> The scale coordinate $r = |q|$ runs over $(0,\infty)$, whose two ends are $0$ and $+\infty$; the end at $0$ is the removed origin, and the end at $+\infty$ is one of the two ends of the line. The sign coordinate is finite, so it contributes no end. The only boundary of the polar representation is thus the single point at the end $r = 0$, where the norm vanishes.</p>
+<p><strong>The boundary as ends.</strong> The scale coordinate $r = |q|$ runs over $(0,\infty)$, whose two ends are $0$ and $+\infty$; the end at $0$ is the removed origin, and the end at $+\infty$ is one of the two ends of the line. The sign coordinate is finite, so it contributes no end. The only boundary of the polar decomposition is thus the single point at the end $r = 0$, where the norm vanishes.</p>
 <h2 id="the-group-of-units-and-the-sign-group">The Group of Units and the Sign Group</h2>
 <p>The group of units of $\mathbb{R}$ is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, and it is the direct product of the two factors,</p>
 <p>$$
 \mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl(|q|,\ \operatorname{sgn}q\bigr),
 $$</p>
-<p>which is the polar representation read as a group isomorphism. The first factor is one-dimensional and non-compact, the second is finite and compact, and the isomorphism is the reason the parameter counts of the polar representation are one and zero.</p>
+<p>which is the polar decomposition read as a group isomorphism. The first factor is one-dimensional and non-compact, the second is finite and compact, and the isomorphism is the reason the parameter counts of the polar decomposition are one and zero.</p>
 <p>The group of units is <strong>disconnected</strong>, with two components:</p>
 <p>$$
 \pi_0(\mathbb{R}^\times) \cong \{\pm1\} = O(1), \qquad \mathbb{R}^\times = \mathbb{R}_{>0} \sqcup \mathbb{R}_{<0}.
@@ -269,7 +269,7 @@ $$</p>
 <p>$$
 \det M_q = q, \qquad \operatorname{tr}M_q = q.
 $$</p>
-<p>The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the <strong>reflection</strong> of the line through the origin; the sign factor $\sigma = +1$ acts by the identity $[1]$. The two matrices $\pm I$ are exactly the orthogonal group $O(1)$ of the line, and the norm is their determinant squared: the reflection $[-1]$ has $\det[-1] = -1$ and $N(-1) = 1$. The group $O(1)$ is the set of $1\times1$ matrices preserving $N$, and it is the sign group; its identity component is $\{+1\} = SO(1)$, the special orthogonal group, and the quotient $O(1)/SO(1) \cong \{\pm1\}$ is the same two-element group.</p>
+<p>The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the <strong>reflection</strong> of the line through the origin; the sign factor $\sigma = +1$ acts by the identity $[1]$. The two matrices $\pm I$ are exactly the orthogonal group $O(1)$ of the line, and the norm is their determinant squared: the reflection $[-1]$ has $\det[-1] = -1$ and $\langle -1\rangle = 1$. The group $O(1)$ is the set of $1\times1$ matrices preserving $N$, and it is the sign group; its identity component is $\{+1\} = SO(1)$, the special orthogonal group, and the quotient $O(1)/SO(1) \cong \{\pm1\}$ is the same two-element group.</p>
 <h3 id="the-interpretation-of-each-factor">The Interpretation of Each Factor</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -307,10 +307,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Every nonzero real number is a signed similarity of the line, and the polar representation is the splitting of that signed similarity into its scaling and its reflection parts. This is the precise sense in which the real polar representation is the one-dimensional case of the matrix polar decomposition, where the positive definite factor is the scalar $rI$ and the orthogonal factor is $\pm I$; in the complex case the orthogonal factor is a rotation.</p>
+<p>Every nonzero real number is a signed similarity of the line, and the polar decomposition is the splitting of that signed similarity into its scaling and its reflection parts. This is the precise sense in which the real polar decomposition is the one-dimensional case of the matrix polar decomposition, where the positive definite factor is the scalar $rI$ and the orthogonal factor is $\pm I$; in the complex case the orthogonal factor is a rotation.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="a-generic-real-number">A Generic Real Number</h3>
-<p>Take $q = -\tfrac{3}{4}$. Then $N(q) = \tfrac{9}{16}$, so</p>
+<p>Take $q = -\tfrac{3}{4}$. Then $\langle q\rangle = \tfrac{9}{16}$, so</p>
 <p>$$
 r = \sqrt{\tfrac{9}{16}} = \tfrac{3}{4}, \qquad \sigma = \frac{-3/4}{3/4} = -1, \qquad r\sigma = \tfrac{3}{4}\cdot(-1) = -\tfrac{3}{4} = q .
 $$</p>
@@ -320,7 +320,7 @@ $$</p>
 <thead>
 <tr>
 <th>$q$</th>
-<th>$N(q)$</th>
+<th>$\langle q\rangle$</th>
 <th>$r$</th>
 <th>$\sigma$</th>
 <th>exponential coordinate</th>
@@ -412,8 +412,8 @@ $$</p>
 </table></div>
 <p>The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbolic row is occupied, and it produces the scale; the trigonometric row is empty and the second factor is the discrete sign group, the compact slot in its discrete form. In $\mathbb{C}$ the trigonometric row is occupied by the unit factor for the first time, and the unit factor is a connected circle. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The one-dimensional algebra $\mathbb{R}$ is the case in which none of that can happen, which is why it is treated first.</p>
 <h2 id="summary">Summary</h2>
-<p>Every nonzero real number has exactly one polar representation $q = r\sigma$, with modulus $r = \sqrt{N(q)} = |q| > 0$ and sign $\sigma = q/|q| \in \{\pm1\}$. The modulus is fixed and of signature $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real unit group is disconnected while the complex one is connected.</p>
-<p>The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $q = \exp(t)\sigma$ with $t = \ln|q|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[q]$ into the scalar $[r]$ and the reflection $[\sigma]$.</p>
+<p>Every nonzero real number has exactly one polar decomposition $q = r\sigma$, with modulus $r = \sqrt{\langle q\rangle} = |q| > 0$ and sign $\sigma = q/|q| \in \{\pm1\}$. The modulus is fixed and of signature $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real unit group is disconnected while the complex one is connected.</p>
+<p>The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $q = \exp(t)\sigma$ with $t = \ln|q|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar decomposition has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[q]$ into the scalar $[r]$ and the reflection $[\sigma]$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -432,11 +432,11 @@ $$</p>
 <td>a real number</td>
 </tr>
 <tr>
-<td>$N(q) = q^2$</td>
+<td>$\langle q\rangle = q^2$</td>
 <td>the norm, positive definite</td>
 </tr>
 <tr>
-<td>$r = \sqrt{N(q)} = \lvert q\rvert$</td>
+<td>$r = \sqrt{\langle q\rangle} = \lvert q\rvert$</td>
 <td>the modulus, a positive real</td>
 </tr>
 <tr>
@@ -449,7 +449,7 @@ $$</p>
 </tr>
 <tr>
 <td>$q = r\sigma$</td>
-<td>the polar representation</td>
+<td>the polar decomposition</td>
 </tr>
 <tr>
 <td>$q = \exp(t)\sigma$, $t = \ln\lvert q\rvert$</td>

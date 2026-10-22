@@ -70,7 +70,7 @@
 <p>The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of <strong>two real coefficients</strong>, $Q = q + j q' \leftrightarrow (q, q')$. This article presents that <strong>two-component realization</strong> in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after <em>Split-Complex Element Representations</em> and <em>Split-Complex Regular Element Representation</em>.</p>
 <p>The word <em>representation</em> is used here in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of <em>Split-Complex Element Representations</em>, and the matrix of the action on this coefficient space is the subject of <em>Split-Complex Regular Element Representation</em>; this article supplies the coordinate space on which that operator is written.</p>
 <p>The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to <em>Split-Complex Regular Element Representation</em>; it does not treat the polar forms, which belong to <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> and its two companion articles; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the <strong>definite</strong> one and whose product rule differs from the present one in a single sign.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{\natural} = q^2-q'^2$.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+j q'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-j q'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$; norm $\langle Q\rangle_{*} = q^2-q'^2$.</p>
 <h2 id="the-coefficient-space">The Coefficient Space</h2>
 <p><strong>Definition.</strong> The <strong>two-component vector</strong> of a split-complex number $Q = q+j q'$ is the ordered pair</p>
 <p>$$
@@ -203,7 +203,7 @@ $$</p>
 <h2 id="the-norm-with-its-two-signs">The Norm with Its Two Signs</h2>
 <p>The norm of $Q = q+j q'$ in coordinates is</p>
 <p>$$
-\langle Q\rangle_{\natural} = Q\bar Q = q^2 - q'^2,
+\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2,
 $$</p>
 <p>the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form</p>
 <p>$$
@@ -215,7 +215,7 @@ $$</p>
 <tr>
 <th>region</th>
 <th>coordinate condition</th>
-<th>sign of $N$</th>
+<th>sign of $\langle Q\rangle_{*}$</th>
 </tr>
 </thead>
 <tbody>
@@ -239,9 +239,9 @@ $$</p>
 <h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
 <p>Restricted to the two fixed-point subspaces the norm is definite:</p>
 <p>$$
-N\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad N\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
+\langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
 $$</p>
-<p>so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in <em>Split-Complex Norm and Invertibility</em>, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $N = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.</p>
+<p>so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in <em>Split-Complex Norm and Invertibility</em>, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.</p>
 <p><strong>Comparison with the complex case.</strong> For $\mathbb{C}$ the norm is</p>
 <p>$$
 N_{\mathbb{C}}(Q) = Q\bar Q = q^2 + q'^2,
@@ -363,7 +363,7 @@ $$</p>
 <td>Anti-fixed subspace, split imaginary axis</td>
 </tr>
 <tr>
-<td>$\langle Q\rangle_{\natural} = q^2-q'^2$</td>
+<td>$\langle Q\rangle_{*} = q^2-q'^2$</td>
 <td>Norm, signature $(1,1)$</td>
 </tr>
 <tr>

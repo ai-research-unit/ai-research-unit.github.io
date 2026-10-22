@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-polarisation-and-the-quadratic-forms">The Polarisation and the Quadratic Forms</h2>
 <p><strong>Definition.</strong> The <strong>associated quadratic forms</strong> of the two forms are the values at the two equal arguments</p>
 <p>$$
-Q_B(\tilde q)=\langle\tilde q,\tilde q\rangle=\mathrm{Sc}\bigl(\tilde q^2\bigr)=q_t^2-\lvert\vec q\rvert^2 , \qquad Q_N(\tilde q)=\langle\tilde q,\tilde q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde q^{\natural}\tilde q\bigr)=\lvert\tilde q\rvert^2 .
+Q_B(\tilde q)=\langle\tilde q,\tilde q\rangle=\mathrm{Sc}\bigl(\tilde q^2\bigr)=q_t^2-\lvert\vec q\rvert^2 , \qquad Q_\langle\tilde q\rangle_{\natural}=\langle\tilde q,\tilde q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde q^{\natural}\tilde q\bigr)=\lvert\tilde q\rvert^2 .
 $$</p>
 <p>The two quadratic forms are the algebraic norm of the plain form and the quaternion norm of the element, written $\langle\tilde q\rangle$ and $\langle\tilde q\rangle_{\natural}$ for short; $Q_B$ is indefinite and $Q_N$ is the square of the quaternion norm.</p>
 <p><strong>Proposition (the polarisation).</strong> The two forms are recovered from their quadratic forms by the polarisation identity</p>
@@ -114,11 +114,11 @@ $$</p>
 <p>So neither form has a nonzero annihilator, and the two are nondegenerate in the sense of the radical; the statement is the form-level version of the nondegeneracy of the two products, the radical of a product being $\{0\}$ in <em>Comparison Between the Two General Products</em>. A nondegenerate symmetric bilinear form over $\mathbb{R}$ identifies the space with its dual, and both forms do so, the plain form with the reversed sign on the vector part and the quaternion form directly.</p>
 <h2 id="the-isotropic-elements">The Isotropic Elements</h2>
 <p><strong>Definition.</strong> An element $\tilde q\neq0$ is <strong>isotropic</strong> for the form $f$ when $f(\tilde q,\tilde q)=0$; the set of isotropic elements is the <strong>isotropic set</strong> or <strong>null set</strong>, and the set of isotropic directions the isotropic cone.</p>
-<p><strong>Proposition (the two null sets).</strong> The quaternion form has no isotropic element, $Q_N(\tilde q)=\lvert\tilde q\rvert^2>0$ for $\tilde q\neq0$. The plain form has the isotropic elements $Q_B(\tilde q)=0$, that is $q_t^2=\lvert\vec q\rvert^2$: the cone of real dimension three consisting of the elements whose scalar coefficient has the same square as their vector part, with the two sheets $q_t=\pm\lvert\vec q\rvert$ meeting at the origin.</p>
+<p><strong>Proposition (the two null sets).</strong> The quaternion form has no isotropic element, $Q_\langle\tilde q\rangle_{\natural}=\lvert\tilde q\rvert^2>0$ for $\tilde q\neq0$. The plain form has the isotropic elements $Q_B(\tilde q)=0$, that is $q_t^2=\lvert\vec q\rvert^2$: the cone of real dimension three consisting of the elements whose scalar coefficient has the same square as their vector part, with the two sheets $q_t=\pm\lvert\vec q\rvert$ meeting at the origin.</p>
 <p><em>Proof.</em> $Q_N$ is the sum of four squares, so it vanishes only at the origin. $Q_B(\tilde q)=q_t^2-\lvert\vec q\rvert^2$ vanishes exactly when $q_t^2=\lvert\vec q\rvert^2$, a single homogeneous quadratic equation in the four coordinates, hence a cone of real dimension three; it contains the elements $e_t\pm \vec e_x$, whose scalar coefficient has the same square as the vector part, and it is not a subspace, a sum of two isotropic elements being isotropic only when they are proportional.</p>
 <p>So the plain form is indefinite and its null set is the cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde q$ has $\langle\tilde q,\tilde q\rangle=0$, so its square $\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q=2q_t\vec q$ is pure; the isotropic elements are the elements whose square is pure, and they are <strong>not</strong> square-zero and <strong>not</strong> zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde q^2=0$ forces $\tilde q=0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The quaternion space carries two bilinear forms, the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ and the quaternion form $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$, both symmetric and nondegenerate, differing by twice the dot product of the vector parts. Their Gram matrices in the unit basis are $\operatorname{diag}(1,-1,-1,-1)$, of signature $(1,3)$, and $I_4$, of signature $(4,0)$; their associated quadratic forms are $Q_B(\tilde q)=q_t^2-\lvert\vec q\rvert^2$, indefinite, and $Q_N(\tilde q)=\lvert\vec q\rvert^2$, positive definite; and each form is recovered from its quadratic form by polarisation.</p>
+<p>The quaternion space carries two bilinear forms, the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ and the quaternion form $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$, both symmetric and nondegenerate, differing by twice the dot product of the vector parts. Their Gram matrices in the unit basis are $\operatorname{diag}(1,-1,-1,-1)$, of signature $(1,3)$, and $I_4$, of signature $(4,0)$; their associated quadratic forms are $Q_B(\tilde q)=q_t^2-\lvert\vec q\rvert^2$, indefinite, and $Q_\langle\tilde q\rangle_{\natural}=\lvert\vec q\rvert^2$, positive definite; and each form is recovered from its quadratic form by polarisation.</p>
 <p>The plain form has the isotropic cone $q_t^2=\lvert\vec q\rvert^2$, of real dimension three, and the quaternion form has no isotropic element. Both radicals are $\{0\}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -146,7 +146,7 @@ $$</p>
 <td>the Gram matrix of the quaternion form</td>
 </tr>
 <tr>
-<td>$Q_B(\tilde q)=q_t^2-\lvert\vec q\rvert^2$, $Q_N(\tilde q)=\lvert\vec q\rvert^2$</td>
+<td>$Q_B(\tilde q)=q_t^2-\lvert\vec q\rvert^2$, $Q_\langle\tilde q\rangle_{\natural}=\lvert\vec q\rvert^2$</td>
 <td>the two quadratic forms</td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ $$</p>
 <td>the isotropic cone of the plain form</td>
 </tr>
 <tr>
-<td>$Q_N(\tilde q)>0$ for $\tilde q\neq0$</td>
+<td>$Q_\langle\tilde q\rangle_{\natural}>0$ for $\tilde q\neq0$</td>
 <td>the anisotropy of the quaternion form</td>
 </tr>
 </tbody>

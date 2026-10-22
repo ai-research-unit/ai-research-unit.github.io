@@ -69,116 +69,114 @@
 <h2 id="introduction">Introduction</h2>
 <p>The modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Quaternions</em> writes every nonzero quaternion as</p>
 <p>$$
-\tilde q = r\,\tilde u_{\mathrm r}, \qquad r = \lvert\tilde q\rvert > 0, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
+\tilde q = r\,\tilde u_{\mathrm r}, \qquad r = \sqrt{\langle\tilde q\rangle_{\natural}} > 0, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
 $$</p>
 <p>with $r$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That article proves the pair unique and treats $\tilde u_{\mathrm r}$ as a point of the unit sphere $S^3$. It chooses no coordinate on the sphere: the unit factor is named by the equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$, not by a triple of numbers.</p>
-<p>This article names it. For a pure quaternion $v = v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$ put</p>
+<p>This article names it. For a pure quaternion $\vec v = v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$ put</p>
 <p>$$
-u(v) = (1-v)(1+v)^{-1},
+u(\vec v) = (1-\vec v)(1+\vec v)^{-1},
 $$</p>
 <p>and write</p>
 <p>$$
-\tilde q = r\,u(v) = r\,(1-v)(1+v)^{-1}.
+\tilde q = r\,u(\vec v) = r\,(1-\vec v)(1+\vec v)^{-1}.
 $$</p>
-<p>Nothing in the decomposition changes. The number $r$ is still the modulus, the element $u(v)$ is still the same unit factor, and the pair $(r,u)$ is still unique. The only new object is the pure quaternion $v$, which replaces the point of the sphere by a coordinate in the three-dimensional pure subspace.</p>
-<p>The chart is rational: $u(v)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality. As $\lvert v\rvert$ grows the unit $u(v)$ approaches $-1$ without attaining it, so the one unit factor that is missed is $-1$, the unit factor of every negative real quaternion. The decomposition therefore holds on $\mathbb{H}$ cut along the negative real axis, and it fails on the cut.</p>
-<p>Noncommutativity enters the coordinate calculus. The inverse is a rational expression in $u$, and in $\mathbb{H}$ its two orderings coincide; the product is not a bare fraction. The coordinate of a product is the bare fraction conjugated by $1+v_1$, a sandwich that is the exact noncommutative correction. The complex formula is the commutative shadow of this law.</p>
-<p>The plan is as follows. The modulus–unit form is recalled (§<em>The Modulus–Unit Form Recalled</em>), the chart and its inverse are defined (§<em>The Chart</em>), and the chart is proved a bijection (§<em>The Chart</em>). The decomposition is then stated and proved (§<em>The Rational-Chart Decomposition</em>), the group law in the coordinate is computed (§<em>The Group Law</em>), the covering of the sphere by two charts and the cost of rationality are described (§<em>Covering the Sphere</em>), and the matrix picture (§<em>The Matrix Picture</em>) and worked examples (§<em>Worked Examples</em>) close the mathematical part. The comparison with the other two forms is in §<em>The Three Forms</em>.</p>
+<p>Nothing in the decomposition changes. The number $r$ is still the modulus, the element $u(\vec v)$ is still the same unit factor, and the pair $(r,u)$ is still unique. The only new object is the pure quaternion $\vec v$, which replaces the point of the sphere by a coordinate in the three-dimensional pure subspace.</p>
+<p>The chart is rational: $u(\vec v)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality. As $\sqrt{\langle \vec v\rangle_{\natural}}$ grows the unit $u(\vec v)$ approaches $-1$ without attaining it, so the one unit factor that is missed is $-1$, the unit factor of every negative real quaternion. The decomposition therefore holds on $\mathbb{H}$ cut along the negative real axis, and it fails on the cut.</p>
+<p>Noncommutativity enters the coordinate calculus. The inverse is a rational expression in $u$, and in $\mathbb{H}$ its two orderings coincide; the product is not a bare fraction. The coordinate of a product is the bare fraction conjugated by $1+\vec v_1$, a sandwich that is the exact noncommutative correction. The complex formula is the commutative shadow of this law.</p>
+<p>The plan is as follows. The modulus–unit form is recalled (§<em>The Modulus–Unit Form Recalled</em>), the chart and its inverse are defined (§<em>The Chart</em>, §<em>The Inverse</em>), and the chart is proved a bijection (§<em>The Bijection</em>). The decomposition is then stated and proved (§<em>The Rational-Chart Decomposition</em>), the group law in the coordinate is computed (§<em>The Group Law</em>), the covering of the sphere by two charts and the cost of rationality are described (§<em>Covering the Sphere and the Price of Locality</em>), and the matrix picture (§<em>The Matrix Picture</em>) and worked examples (§<em>Worked Examples</em>) close the mathematical part. The comparison with the two other forms is in §<em>Covering the Sphere and the Price of Locality</em> and in <em>Exponential Polar Decomposition of Quaternions</em>, §<em>The Three Polar Decompositions</em>.</p>
 <p>The symbols are those of <em>Quaternion Algebra</em> and <em>Norm and Invertibility in the Quaternion Algebra</em>, and the conventions are those of <em>Conventions in Mathematics</em>. The notation is collected in §<em>Summary of Notation</em>.</p>
 <p>Every numerical value displayed below was recomputed in double precision.</p>
-<h2 id="the-modulusunit-form-recalled">The Modulus–Unit Form Recalled</h2>
-<h3 id="the-two-factors">The Two Factors</h3>
+<h2 id="the-unit-factor-and-its-chart">The Unit Factor and Its Chart</h2>
+<h3 id="the-modulusunit-form-recalled">The Modulus–Unit Form Recalled</h3>
 <p>For a quaternion $\tilde q$ the norm is</p>
 <p>$$
-\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \lvert\tilde q\rvert^2,
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2,
 $$</p>
 <p>which is positive off the origin. The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, a positive real with no sign choice, and the unit factor is</p>
 <p>$$
 \tilde u_{\mathrm r} = \frac{\tilde q}{r}, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle\tilde q\rangle_{\natural}}{r^2} = 1.
 $$</p>
-<p>The unit factor lies on the unit sphere $\mathrm{Sp}(1)=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}=S^3$. The pair $(r,\tilde u_{\mathrm r})$ is unique: taking norms in $\tilde q=r\tilde u_{\mathrm r}$ forces $r=\lvert\tilde q\rvert$, and then $\tilde u_{\mathrm r}=\tilde q/r$.</p>
-<p>This is where the modulus–unit article stops. The present article adds one object, the pure quaternion $v$, and changes nothing else.</p>
-<h3 id="the-unit-sphere">The Unit Sphere</h3>
+<p>The unit factor lies on the unit sphere $\mathrm{Sp}(1)=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}=S^3$. The pair $(r,\tilde u_{\mathrm r})$ is unique: taking norms in $\tilde q=r\tilde u_{\mathrm r}$ forces $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/r$.</p>
+<p>This is where the modulus–unit article stops. The present article adds one object, the pure quaternion $\vec v$, and changes nothing else.</p>
 <p>The unit sphere is a compact, connected, simply connected group of dimension three. Its inverse is the quaternion conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, and it is non-abelian. The chart below is a chart of this three-dimensional group, not of a circle; the extra two dimensions are the reason the chart's parameter is a pure quaternion and the reason the group law is a noncommutative sandwich rather than a scalar fraction.</p>
-<h2 id="the-chart">The Chart</h2>
-<h3 id="definition-of-the-chart">Definition of the Chart</h3>
-<p><strong>Definition.</strong> For a pure quaternion $v$ the <strong>chart</strong> is</p>
+<h3 id="the-chart">The Chart</h3>
+<p><strong>Definition.</strong> For a pure quaternion $\vec v$ the <strong>chart</strong> is</p>
 <p>$$
-u(v) = (1-v)(1+v)^{-1} = \frac{(1-\lvert v\rvert^2)-2v}{1+\lvert v\rvert^2}.
+u(\vec v) = (1-\vec v)(1+\vec v)^{-1} = \frac{(1-\langle \vec v\rangle_{\natural})-2\vec v}{1+\langle \vec v\rangle_{\natural}}.
 $$</p>
-<p>The denominator $1+v$ is invertible because</p>
+<p>The denominator $1+\vec v$ is invertible because</p>
 <p>$$
-\langle 1+v\rangle_{\natural} = (1+v)(1+v)^{\natural} = 1+\lvert v\rvert^2 > 0,
+\langle 1+\vec v\rangle_{\natural} = (1+\vec v)(1+\vec v)^{\natural} = 1+\langle \vec v\rangle_{\natural} > 0,
 $$</p>
-<p>and its inverse is $(1-v)/(1+\lvert v\rvert^2)$, since $(1+v)(1-v)=1-v^2=1+\lvert v\rvert^2$. Substituting gives the expanded form. The real and pure parts of $u(v)$ are</p>
+<p>and its inverse is $(1-\vec v)/(1+\langle \vec v\rangle_{\natural})$, since $(1+\vec v)(1-\vec v)=1-\vec v^2=1+\langle \vec v\rangle_{\natural}$. Substituting gives the expanded form. The real and pure parts of $u(\vec v)$ are</p>
 <p>$$
-\operatorname{Sc}u(v) = \frac{1-\lvert v\rvert^2}{1+\lvert v\rvert^2}, \qquad \operatorname{Vec}u(v) = -\frac{2v}{1+\lvert v\rvert^2}.
+\operatorname{Sc}u(\vec v) = \frac{1-\langle \vec v\rangle_{\natural}}{1+\langle \vec v\rangle_{\natural}}, \qquad \operatorname{Vec}u(\vec v) = -\frac{2\vec v}{1+\langle \vec v\rangle_{\natural}}.
 $$</p>
 <p>Their squares satisfy</p>
 <p>$$
-\left(\frac{1-\lvert v\rvert^2}{1+\lvert v\rvert^2}\right)^2 + \frac{4\lvert v\rvert^2}{(1+\lvert v\rvert^2)^2}
-= \frac{(1+\lvert v\rvert^2)^2}{(1+\lvert v\rvert^2)^2} = 1,
+\left(\frac{1-\langle \vec v\rangle_{\natural}}{1+\langle \vec v\rangle_{\natural}}\right)^2 + \frac{4\langle \vec v\rangle_{\natural}}{(1+\langle \vec v\rangle_{\natural})^2}
+= \frac{(1+\langle \vec v\rangle_{\natural})^2}{(1+\langle \vec v\rangle_{\natural})^2} = 1,
 $$</p>
-<p>so every $u(v)$ is a unit quaternion. Three values fix the orientation:</p>
+<p>so every $u(\vec v)$ is a unit quaternion. Three values fix the orientation:</p>
 <p>$$
 u(0)=1, \qquad u(\vec e_x)=-\vec e_x, \qquad u(\vec e_y)=-\vec e_y .
 $$</p>
-<p>The second value is the general rule for a unit pure parameter: if $\lvert v\rvert=1$ then $u(v)=-v$.</p>
-<p>The chart almost covers the sphere, but not quite. If $u(v)=-1$ then $1-v=-(1+v)$, hence $1=-1$, which is impossible; so $-1$ is not attained. As $\lvert v\rvert$ grows without bound,</p>
+<p>The second value is the general rule for a unit pure parameter: if $\sqrt{\langle \vec v\rangle_{\natural}}=1$ then $u(\vec v)=-\vec v$.</p>
+<p>The chart almost covers the sphere, but not quite. If $u(\vec v)=-1$ then $1-\vec v=-(1+\vec v)$, hence $1=-1$, which is impossible; so $-1$ is not attained. As $\sqrt{\langle \vec v\rangle_{\natural}}$ grows without bound,</p>
 <p>$$
-u(v) = -1+\frac{2}{1+\lvert v\rvert^2}-\frac{2v}{1+\lvert v\rvert^2} \longrightarrow -1,
+u(\vec v) = -1+\frac{2}{1+\langle \vec v\rangle_{\natural}}-\frac{2\vec v}{1+\langle \vec v\rangle_{\natural}} \longrightarrow -1,
 $$</p>
 <p>so $-1$ is the limit of the chart at infinity in every direction.</p>
-<p>Geometrically, the line through $-1$ and $u(v)$ meets the pure subspace at $-v$. Indeed the point $-1+t(u(v)+1)$ has scalar part $-1+t(1+\operatorname{Sc}u(v))$, which vanishes at $t=1/(1+\operatorname{Sc}u(v))$, and its pure part is then $\operatorname{Vec}u(v)/(1+\operatorname{Sc}u(v))=-v$. The standard stereographic coordinate of $u(v)$ from $-1$ is therefore $-v$: the chart is that coordinate with the sign reversed.</p>
+<p>Geometrically, the line through $-1$ and $u(\vec v)$ meets the pure subspace at $-\vec v$. Indeed the point $-1+t(u(\vec v)+1)$ has scalar part $-1+t(1+\operatorname{Sc}u(\vec v))$, which vanishes at $t=1/(1+\operatorname{Sc}u(\vec v))$, and its pure part is then $\operatorname{Vec}u(\vec v)/(1+\operatorname{Sc}u(\vec v))=-\vec v$. The standard stereographic coordinate of $u(\vec v)$ from $-1$ is therefore $-\vec v$: the chart is that coordinate with the sign reversed.</p>
 <h3 id="the-inverse">The Inverse</h3>
-<p><strong>Proposition.</strong> Let $u\in\mathrm{Sp}(1)$ with $u\neq-1$. Then $u=u(v)$ for the pure quaternion</p>
+<p><strong>Proposition.</strong> Let $u\in\mathrm{Sp}(1)$ with $u\neq-1$. Then $u=u(\vec v)$ for the pure quaternion</p>
 <p>$$
-v = (1-u)(1+u)^{-1}.
+\vec v = (1-u)(1+u)^{-1}.
 $$</p>
-<p><strong>Proof.</strong> Write $u=a+w$ with $a\in\mathbb{R}$ and $w$ pure. Since $\langle u\rangle_{\natural}=1$, one has $a^2+\lvert w\rvert^2=1$, and since $u\neq-1$, one has $a\neq-1$. The inverse of $1+u=(1+a)+w$ is</p>
+<p><strong>Proof.</strong> Write $u=a+w$ with $a\in\mathbb{R}$ and $w$ pure. Since $\langle u\rangle_{\natural}=1$, one has $a^2+\langle w\rangle_{\natural}=1$, and since $u\neq-1$, one has $a\neq-1$. The inverse of $1+u=(1+a)+w$ is</p>
 <p>$$
-(1+u)^{-1} = \frac{(1+a)-w}{(1+a)^2+\lvert w\rvert^2} = \frac{(1+a)-w}{2(1+a)} .
+(1+u)^{-1} = \frac{(1+a)-w}{(1+a)^2+\langle w\rangle_{\natural}} = \frac{(1+a)-w}{2(1+a)} .
 $$</p>
 <p>Therefore</p>
 <p>$$
 (1-u)(1+u)^{-1} = \bigl((1-a)-w\bigr)\frac{(1+a)-w}{2(1+a)}
-= \frac{1-a^2-\lvert w\rvert^2-2w}{2(1+a)} = -\frac{w}{1+a},
+= \frac{1-a^2-\langle w\rangle_{\natural}-2w}{2(1+a)} = -\frac{w}{1+a},
 $$</p>
-<p>which is pure. Calling it $v$, one has $v=(1-u)(1+u)^{-1}$, and the computation of §<em>Definition of the Chart</em> read backwards gives $u=(1-v)(1+v)^{-1}=u(v)$.</p>
+<p>which is pure. Calling it $\vec v$, one has $\vec v=(1-u)(1+u)^{-1}$, and the computation of §<em>The Chart</em> read backwards gives $u=(1-\vec v)(1+\vec v)^{-1}=u(\vec v)$.</p>
 <p>The same computation gives the <strong>pure-part formula</strong></p>
 <p>$$
-v = -\frac{\operatorname{Vec}u}{1+\operatorname{Sc}u},
+\vec v = -\frac{\operatorname{Vec}u}{1+\operatorname{Sc}u},
 $$</p>
 <p>valid for every unit $u\neq-1$. The two orderings of the inverse coincide in any associative algebra: the factors $1+u$ and $1-u$ are polynomials in $u$, hence commute, so $(1+u)^{-1}(1-u)=(1-u)(1+u)^{-1}$.</p>
 <p>For a quaternion $\tilde q$ of modulus $r$ the unit factor is $\tilde u_{\mathrm r}=\tilde q/r$, and the coordinate is</p>
 <p>$$
-v = (1-\tilde u_{\mathrm r})(1+\tilde u_{\mathrm r})^{-1} = (r-\tilde q)(r+\tilde q)^{-1}.
+\vec v = (1-\tilde u_{\mathrm r})(1+\tilde u_{\mathrm r})^{-1} = (r-\tilde q)(r+\tilde q)^{-1}.
 $$</p>
-<p>The second form names $v$ by $\tilde q$ alone. On the domain, its denominator vanishes exactly at $\tilde q=-r$, the negative real axis, where the chart has no point.</p>
-<h3 id="the-bijection-and-the-missing-point">The Bijection and the Missing Point</h3>
-<p><strong>Theorem.</strong> The map $v\mapsto u(v)$ is a bijection from the pure subspace onto $\mathrm{Sp}(1)\setminus\{-1\}$.</p>
-<p><strong>Injectivity.</strong> Suppose $u(v_1)=u(v_2)$. The scalar parts give</p>
+<p>The second form names $\vec v$ by $\tilde q$ alone. On the domain, its denominator vanishes exactly at $\tilde q=-r$, the negative real axis, where the chart has no point.</p>
+<h3 id="the-bijection">The Bijection</h3>
+<p><strong>Theorem.</strong> The map $\vec v\mapsto u(\vec v)$ is a bijection from the pure subspace onto $\mathrm{Sp}(1)\setminus\{-1\}$.</p>
+<p><strong>Injectivity.</strong> Suppose $u(\vec v_1)=u(\vec v_2)$. The scalar parts give</p>
 <p>$$
-\frac{1-\lvert v_1\rvert^2}{1+\lvert v_1\rvert^2} = \frac{1-\lvert v_2\rvert^2}{1+\lvert v_2\rvert^2},
+\frac{1-\langle \vec v_1\rangle_{\natural}}{1+\langle \vec v_1\rangle_{\natural}} = \frac{1-\langle \vec v_2\rangle_{\natural}}{1+\langle \vec v_2\rangle_{\natural}},
 $$</p>
-<p>and cross-multiplication gives $\lvert v_1\rvert^2=\lvert v_2\rvert^2$. The pure parts then give</p>
+<p>and cross-multiplication gives $\langle \vec v_1\rangle_{\natural}=\langle \vec v_2\rangle_{\natural}$. The pure parts then give</p>
 <p>$$
-\frac{2v_1}{1+\lvert v_1\rvert^2} = \frac{2v_2}{1+\lvert v_2\rvert^2},
+\frac{2\vec v_1}{1+\langle \vec v_1\rangle_{\natural}} = \frac{2\vec v_2}{1+\langle \vec v_2\rangle_{\natural}},
 $$</p>
-<p>and the common denominator is equal, so $v_1=v_2$.</p>
-<p><strong>Surjectivity.</strong> This is the proposition of §<em>The Inverse</em>: for every unit $u\neq-1$ the pure quaternion $v=(1-u)(1+u)^{-1}$ satisfies $u(v)=u$.</p>
+<p>and the common denominator is equal, so $\vec v_1=\vec v_2$.</p>
+<p><strong>Surjectivity.</strong> This is the proposition of §<em>The Inverse</em>: for every unit $u\neq-1$ the pure quaternion $\vec v=(1-u)(1+u)^{-1}$ satisfies $u(\vec v)=u$.</p>
 <p>The chart is therefore one-to-one, and its image is the sphere with the single point $-1$ removed.</p>
 <h2 id="the-rational-chart-decomposition">The Rational-Chart Decomposition</h2>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition</p>
 <p>$$
-\tilde q = r\,(1-v)(1+v)^{-1}, \qquad r>0, \quad v\in\operatorname{Im}\mathbb{H}.
+\tilde q = r\,(1-\vec v)(1+\vec v)^{-1}, \qquad r>0, \quad \vec v\in\operatorname{Im}\mathbb{H}.
 $$</p>
-<p><strong>Existence.</strong> Let $\tilde q\notin(-\infty,0]$, and put $r=\lvert\tilde q\rvert$ and $\tilde u_{\mathrm r}=\tilde q/r$. Then $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-r$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $v$ with $\tilde u_{\mathrm r}=u(v)$. Hence $\tilde q=ru(v)$.</p>
-<p><strong>Uniqueness.</strong> Taking norms gives $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/r$; the chart is injective, so $v$ is determined by $\tilde u_{\mathrm r}$.</p>
-<p>The coordinate is $v=(r-\tilde q)(r+\tilde q)^{-1}$ of §<em>The Inverse</em>, and the reconstruction is exact:</p>
+<p><strong>Existence.</strong> Let $\tilde q\notin(-\infty,0]$, and put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Then $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-r$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.</p>
+<p><strong>Uniqueness.</strong> Taking norms gives $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/r$; the chart is injective, so $\vec v$ is determined by $\tilde u_{\mathrm r}$.</p>
+<p>The coordinate is $\vec v=(r-\tilde q)(r+\tilde q)^{-1}$ of §<em>The Inverse</em>, and the reconstruction is exact:</p>
 <p>$$
-\tilde q = r\,\frac{(1-\lvert v\rvert^2)-2v}{1+\lvert v\rvert^2}.
+\tilde q = r\,\frac{(1-\langle \vec v\rangle_{\natural})-2\vec v}{1+\langle \vec v\rangle_{\natural}}.
 $$</p>
 <h3 id="the-domain">The Domain</h3>
 <p>The domain is</p>
@@ -186,122 +184,131 @@ $$</p>
 \mathbb{H}\setminus(-\infty,0] = \{\,\tilde q : \tilde q\neq0 \ \text{and} \ \tilde q\notin\mathbb{R}_{<0}\,\},
 $$</p>
 <p>the quaternion space cut along the closed negative real axis.</p>
-<p>The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the sphere is attained exactly once. In the formula $v=(r-\tilde q)(r+\tilde q)^{-1}$ the two exclusions are visible at once: the denominator vanishes at $\tilde q=-r$, the negative real axis, and numerator and denominator both vanish at $\tilde q=0$, where $r=0$ and no decomposition exists. Unlike the split cases, there is no null cone and no element of vanishing norm; the cut is a ray, not a hypersurface.</p>
+<p>The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the sphere is attained exactly once. In the formula $\vec v=(r-\tilde q)(r+\tilde q)^{-1}$ the two exclusions are visible at once: the denominator vanishes at $\tilde q=-r$, the negative real axis, and numerator and denominator both vanish at $\tilde q=0$, where $r=0$ and no decomposition exists. Unlike the split cases, there is no null cone and no element of vanishing norm; the cut is a ray, not a hypersurface.</p>
 <h2 id="the-group-law">The Group Law</h2>
 <h3 id="the-product-formula">The Product Formula</h3>
 <p>The product of two unit factors is a unit factor, and the coordinate of the product is a rational function of the two coordinates.</p>
-<p><strong>Proposition.</strong> For pure $v_1,v_2$ with $1+v_1v_2\neq0$,</p>
+<p><strong>Proposition.</strong> For pure $\vec v_1,\vec v_2$ with $1+\vec v_1\vec v_2\neq0$,</p>
 <p>$$
-u(v_1)u(v_2) = u(v_3), \qquad
-v_3 = (1+v_1)^{-1}(v_1+v_2)(1+v_1v_2)^{-1}(1+v_1).
+u(\vec v_1)u(\vec v_2) = u(\vec v_3), \qquad
+\vec v_3 = (1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1).
 $$</p>
-<p><strong>Proof.</strong> Write $A=1+v_1$ and $B=1+v_2$. From $1-u(v)=2v(1+v)^{-1}$ and $1+u(v)=2(1+v)^{-1}$, applied to each factor,</p>
+<p><strong>Proof.</strong> Write $A=1+\vec v_1$ and $B=1+\vec v_2$. From $1-u(\vec v)=2\vec v(1+\vec v)^{-1}$ and $1+u(\vec v)=2(1+\vec v)^{-1}$, applied to each factor,</p>
 <p>$$
-1-u(v_1)u(v_2) = \bigl(1-u(v_1)\bigr)+u(v_1)\bigl(1-u(v_2)\bigr)
-= 2A^{-1}\Bigl(v_1+(1-v_1)v_2B^{-1}\Bigr),
+1-u(\vec v_1)u(\vec v_2) = \bigl(1-u(\vec v_1)\bigr)+u(\vec v_1)\bigl(1-u(\vec v_2)\bigr)
+= 2A^{-1}\Bigl(\vec v_1+(1-\vec v_1)\vec v_2B^{-1}\Bigr),
 $$</p>
 <p>$$
-1+u(v_1)u(v_2) = \bigl(1+u(v_1)\bigr)-u(v_1)\bigl(1-u(v_2)\bigr)
-= 2A^{-1}\Bigl(1-(1-v_1)v_2B^{-1}\Bigr).
+1+u(\vec v_1)u(\vec v_2) = \bigl(1+u(\vec v_1)\bigr)-u(\vec v_1)\bigl(1-u(\vec v_2)\bigr)
+= 2A^{-1}\Bigl(1-(1-\vec v_1)\vec v_2B^{-1}\Bigr).
 $$</p>
 <p>The two inner parentheses simplify:</p>
 <p>$$
-v_1+(1-v_1)v_2B^{-1} = \bigl(v_1B+(1-v_1)v_2\bigr)B^{-1} = (v_1+v_2)B^{-1},
+\vec v_1+(1-\vec v_1)\vec v_2B^{-1} = \bigl(\vec v_1B+(1-\vec v_1)\vec v_2\bigr)B^{-1} = (\vec v_1+\vec v_2)B^{-1},
 $$</p>
 <p>$$
-1-(1-v_1)v_2B^{-1} = \bigl(B-(1-v_1)v_2\bigr)B^{-1} = (1+v_1v_2)B^{-1}.
+1-(1-\vec v_1)\vec v_2B^{-1} = \bigl(B-(1-\vec v_1)\vec v_2\bigr)B^{-1} = (1+\vec v_1\vec v_2)B^{-1}.
 $$</p>
 <p>Hence</p>
 <p>$$
-v_3 = (1-u_1u_2)(1+u_1u_2)^{-1}
-= A^{-1}(v_1+v_2)B^{-1}\,B(1+v_1v_2)^{-1}A
-= A^{-1}(v_1+v_2)(1+v_1v_2)^{-1}A,
+\vec v_3 = (1-u_1u_2)(1+u_1u_2)^{-1}
+= A^{-1}(\vec v_1+\vec v_2)B^{-1}\,B(1+\vec v_1\vec v_2)^{-1}A
+= A^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}A,
 $$</p>
 <p>which is the stated formula.</p>
 <h3 id="the-noncommutative-correction">The Noncommutative Correction</h3>
 <p>Write</p>
 <p>$$
-B_{\mathrm{bare}} = (v_1+v_2)(1+v_1v_2)^{-1}.
+B_{\mathrm{bare}} = (\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}.
 $$</p>
 <p>Then the exact law reads</p>
 <p>$$
-v_3 = (1+v_1)^{-1}\,B_{\mathrm{bare}}\,(1+v_1).
+\vec v_3 = (1+\vec v_1)^{-1}\,B_{\mathrm{bare}}\,(1+\vec v_1).
 $$</p>
-<p>The bare fraction is the complex formula $(s_1+s_2)/(1-s_1s_2)$ transplanted to the quaternion coordinate, and it is <strong>wrong</strong> in general. The exact coordinate is its conjugate by $1+v_1$. Conjugation preserves the scalar part and rotates the pure part, so it preserves $\lvert B_{\mathrm{bare}}\rvert$ and changes its direction; the bare fraction has the right modulus and the wrong axis. No choice of ordering repairs it: the alternative $(1+v_1v_2)^{-1}(v_1+v_2)$ is another wrong value, not the conjugate of the first. When $v_1$ and $v_2$ commute, the conjugating factor acts trivially and $v_3=B_{\mathrm{bare}}=(v_1+v_2)(1+v_1v_2)^{-1}$, which is the commutative law.</p>
-<p>A clean counterexample is $v_1=\vec e_x$ and $v_2=\vec e_y$. Then $u(v_1)=-\vec e_x$ and $u(v_2)=-\vec e_y$, so</p>
+<p>The bare fraction is the complex formula $(s_1+s_2)/(1-s_1s_2)$ transplanted to the quaternion coordinate, and it is <strong>wrong</strong> in general. The exact coordinate is its conjugate by $1+\vec v_1$. Conjugation preserves the scalar part and rotates the pure part, so it preserves $\sqrt{\langle B_{\mathrm{bare}}\rangle_{\natural}}$ and changes its direction; the bare fraction has the right modulus and the wrong axis. No choice of ordering repairs it: the alternative $(1+\vec v_1\vec v_2)^{-1}(\vec v_1+\vec v_2)$ is another wrong value, not the conjugate of the first. When $\vec v_1$ and $\vec v_2$ commute, the conjugating factor acts trivially and $\vec v_3=B_{\mathrm{bare}}=(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}$, which is the commutative law.</p>
+<p>A clean counterexample is $\vec v_1=\vec e_x$ and $\vec v_2=\vec e_y$. Then $u(\vec v_1)=-\vec e_x$ and $u(\vec v_2)=-\vec e_y$, so</p>
 <p>$$
-u(v_1)u(v_2)=\vec e_x\vec e_y=\vec e_z,
+u(\vec v_1)u(\vec v_2)=\vec e_x\vec e_y=\vec e_z,
 $$</p>
-<p>and therefore $v_3=-\vec e_z$. The bare fraction is</p>
+<p>and therefore $\vec v_3=-\vec e_z$. The bare fraction is</p>
 <p>$$
 B_{\mathrm{bare}} = (\vec e_x+\vec e_y)(1+\vec e_z)^{-1}
 = \frac{(\vec e_x+\vec e_y)(1-\vec e_z)}{2} = \vec e_y,
 $$</p>
-<p>which is a different pure quaternion; the error is $\lvert\vec e_y+\vec e_z\rvert=\sqrt{2}=1.414213562$. The sandwich conjugates $\vec e_y$ by $1-\vec e_x$ and returns $-\vec e_z$.</p>
+<p>which is a different pure quaternion; the error is $\sqrt{\langle\vec e_y+\vec e_z\rangle_{\natural}}=\sqrt{2}=1.414213562$. The sandwich conjugates $\vec e_y$ by $1-\vec e_x$ and returns $-\vec e_z$.</p>
 <h3 id="identity-inverse-and-the-pole">Identity, Inverse and the Pole</h3>
-<p>The law has the identity $v=0$, because $u(0)=1$. The inverse coordinate is $-v$, because</p>
+<p>The law has the identity $\vec v=0$, because $u(0)=1$. The inverse coordinate is $-\vec v$, because</p>
 <p>$$
-u(v)u(-v) = (1-v)(1+v)^{-1}(1+v)(1-v)^{-1}=1 .
+u(\vec v)u(-\vec v) = (1-\vec v)(1+\vec v)^{-1}(1+\vec v)(1-\vec v)^{-1}=1 .
 $$</p>
 <p>It is associative wherever it is defined, being inherited from the multiplication of the sphere.</p>
-<p>When $1+v_1v_2=0$ the formula has a pole. Since $\mathbb{H}$ is a division algebra, this happens exactly when $v_1v_2=-1$. For pure $v_1,v_2$,</p>
+<p>When $1+\vec v_1\vec v_2=0$ the formula has a pole. Since $\mathbb{H}$ is a division algebra, this happens exactly when $\vec v_1\vec v_2=-1$. For pure $\vec v_1,\vec v_2$,</p>
 <p>$$
-v_1v_2 = -v_1\cdot v_2 + v_1\times v_2,
+\vec v_1\vec v_2 = -\vec v_1\cdot \vec v_2 + \vec v_1\times \vec v_2,
 $$</p>
-<p>so the product is real exactly when $v_1$ and $v_2$ are parallel or one of them vanishes, and it equals $-1$ exactly when</p>
+<p>so the product is real exactly when $\vec v_1$ and $\vec v_2$ are parallel or one of them vanishes, and it equals $-1$ exactly when</p>
 <p>$$
-v_2 = \frac{v_1}{\lvert v_1\rvert^2}.
+\vec v_2 = \frac{\vec v_1}{\langle \vec v_1\rangle_{\natural}}.
 $$</p>
-<p>When $\lvert v_1\rvert=1$ this is $v_2=v_1$, and then $u(v_1)=-v_1$ gives $u(v_1)^2=-1$; in every case the product $u(v_1)u(v_2)$ equals $-1$, the missing point, and the coordinate escapes to infinity. The chart is therefore a <strong>group chunk</strong>, not a global group. It is a coordinate on the pure subspace, and that subspace must be compactified to see the whole sphere.</p>
-<h2 id="covering-the-sphere">Covering the Sphere</h2>
+<p>When $\sqrt{\langle \vec v_1\rangle_{\natural}}=1$ this is $\vec v_2=\vec v_1$, and then $u(\vec v_1)=-\vec v_1$ gives $u(\vec v_1)^2=-1$; in every case the product $u(\vec v_1)u(\vec v_2)$ equals $-1$, the missing point, and the coordinate escapes to infinity. The chart is therefore a <strong>group chunk</strong>, not a global group. It is a coordinate on the pure subspace, and that subspace must be compactified to see the whole sphere.</p>
+<h2 id="covering-the-sphere-and-the-price-of-locality">Covering the Sphere and the Price of Locality</h2>
 <h3 id="the-second-chart">The Second Chart</h3>
-<p>The chart misses $-1$. A second chart, $-u(v)$, misses $+1$ and supplies $-1$. On the common domain the two are related by</p>
+<p>The chart misses $-1$. A second chart, $-u(\vec v)$, misses $+1$ and supplies $-1$. On the common domain the two are related by</p>
 <p>$$
--u(v) = u(v^{-1}), \qquad v^{-1} = -\frac{v}{\lvert v\rvert^2},
+-u(\vec v) = u(\vec v^{-1}), \qquad \vec v^{-1} = -\frac{\vec v}{\langle \vec v\rangle_{\natural}},
 $$</p>
-<p>for $v\neq0$. To prove the identity, write $1-v^{-1}=v^{-1}(v-1)$ and $1+v^{-1}=v^{-1}(v+1)$; then</p>
+<p>for $\vec v\neq0$. To prove the identity, write $1-\vec v^{-1}=\vec v^{-1}(\vec v-1)$ and $1+\vec v^{-1}=\vec v^{-1}(\vec v+1)$; then</p>
 <p>$$
-u(v^{-1}) = v^{-1}(v-1)(v+1)^{-1}v = v^{-1}\bigl(-u(v)\bigr)v = -u(v),
+u(\vec v^{-1}) = \vec v^{-1}(\vec v-1)(\vec v+1)^{-1}\vec v = \vec v^{-1}\bigl(-u(\vec v)\bigr)\vec v = -u(\vec v),
 $$</p>
-<p>because $u(v)$ commutes with $v$. The second chart attains $-1$ at $v=0$ and misses $+1$, since $-u(v)=1$ would give $u(v)=-1$. The two charts</p>
+<p>because $u(\vec v)$ commutes with $\vec v$. The second chart attains $-1$ at $\vec v=0$ and misses $+1$, since $-u(\vec v)=1$ would give $u(\vec v)=-1$. The two charts</p>
 <p>$$
-v\longmapsto u(v), \qquad v\longmapsto -u(v)
+\vec v\longmapsto u(\vec v), \qquad \vec v\longmapsto -u(\vec v)
 $$</p>
 <p>therefore cover the sphere, the first missing $-1$ and the second missing $+1$.</p>
 <h3 id="the-two-charts-and-the-cut">The Two Charts and the Cut</h3>
 <p>The first chart covers every nonzero quaternion except the negative real axis; the second covers every nonzero quaternion except the positive real axis. Together they cover $\mathbb{H}^{\times}$. Topologically the one-point compactification of the pure subspace is a three-sphere, $\operatorname{Im}\mathbb{H}\cup\{\infty\}\cong S^3$, and the first chart extends to a homeomorphism onto $S^3$ by setting $u(\infty)=-1$.</p>
 <p>The chart has three properties, and they are the terms of an exchange.</p>
 <ul>
-<li><strong>It is rational.</strong> Both $u(v)$ and its inverse are ratios of polynomials; once the modulus $r$ is known, the decomposition uses field operations alone, with no transcendental function and no infinite series.</li>
+<li><strong>It is rational.</strong> Both $u(\vec v)$ and its inverse are ratios of polynomials; once the modulus $r$ is known, the decomposition uses field operations alone, with no transcendental function and no infinite series.</li>
 <li><strong>It is local.</strong> It misses one point of the sphere, and therefore one ray of the quaternion space. A second chart, or the point at infinity, is needed to recover the sphere.</li>
 <li><strong>It is unbounded.</strong> Near the missing point the coordinate escapes to infinity, and the approach to the cut from different directions gives coordinates escaping in those directions.</li>
 </ul>
-<p>The modulus–unit form is global and uses a square root. The exponential form, treated in <em>Exponential Polar Decomposition of Quaternions</em>, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price. In the quaternion case there is a second price: the group law is not the commutative fraction, and the chart is a group chunk only through a sandwich.</p>
+<p>The modulus–unit form is global and uses a square root. The exponential form, treated in <em>Exponential Polar Decomposition of Quaternions</em>, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price. In the quaternion case there is a second price: the group law is not the commutative fraction, and the chart is a group chunk only through a sandwich. The three forms are compared in <em>Exponential Polar Decomposition of Quaternions</em>, §<em>The Three Polar Decompositions</em>; the rational chart is the only one that stays rational.</p>
+<h3 id="the-departures-from-the-complex-template">The Departures from the Complex Template</h3>
+<p>The complex rational chart is $u(s)=(1-is)/(1+is)$ with $s\in\mathbb{R}$ and group law $s_3=(s_1+s_2)/(1-s_1s_2)$. The quaternion chart keeps the shape $(1-\vec v)(1+\vec v)^{-1}$ but changes four things.</p>
+<ul>
+<li><strong>The parameter is a pure quaternion, not a scalar.</strong> The chart is a chart of a three-dimensional sphere, so the coordinate has three real components.</li>
+<li><strong>The group law is a sandwich.</strong> The complex fraction is replaced by $(1+\vec v_1)^{-1}B_{\mathrm{bare}}(1+\vec v_1)$, the conjugation by $1+\vec v_1$. The bare fraction is correct only when $1+\vec v_1$ commutes with $B_{\mathrm{bare}}$, which is automatic in the commutative case and fails here.</li>
+<li><strong>The inverse is unambiguous in both orderings.</strong> The complex formula $s=i(u-1)/(u+1)$ has no order to specify. In $\mathbb{H}$ the formula $\vec v=(1-u)(1+u)^{-1}$ also has no order to specify, because $1+u$ and $1-u$ commute; the noncommutativity appears in the product, not in the inverse.</li>
+<li><strong>The chart is minus the stereographic coordinate.</strong> The line through $-1$ and $u(\vec v)$ meets the pure subspace at $-\vec v$, not at $\vec v$; the sign is a convention of the chart and does not affect the decomposition.</li>
+</ul>
+<p>The cut and the missing point are exactly as in the complex case: one unit factor, $-1$, is missing, and the elements with that unit factor are the negative real axis. The difference is that this axis is a ray in three-dimensional space, and as an element approaches it the coordinate escapes in the direction of its approach, so the cut has a whole sphere of escape directions rather than two sides.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <h3 id="the-cayley-transform-in-su2">The Cayley Transform in SU(2)</h3>
-<p>Let $V=\iota(v)$ be the image of the pure quaternion $v$ under the embedding of <em>Modulus–Unit Polar Decomposition of Quaternions</em>, §<em>The Embedding in M_2(C)</em>. Since $v$ is pure, $V$ is skew-Hermitian and traceless, and</p>
+<p>Let $V=\iota(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of <em>Modulus–Unit Polar Decomposition of Quaternions</em>, §<em>The Embedding in M_2(C)</em>. Since $\vec v$ is pure, $V$ is skew-Hermitian and traceless, and</p>
 <p>$$
-V^{\dagger}=-V, \qquad V^2=-\lvert v\rvert^2 I .
+V^{\dagger}=-V, \qquad V^2=-\langle \vec v\rangle_{\natural} I .
 $$</p>
 <p>The chart is the <strong>Cayley transform</strong> of $V$:</p>
 <p>$$
-M(v) = \iota\bigl(u(v)\bigr) = (I-V)(I+V)^{-1}.
+M(\vec v) = \iota\bigl(u(\vec v)\bigr) = (I-V)(I+V)^{-1}.
 $$</p>
-<p>The matrices $I-V$ and $I+V$ commute, and $I+V$ is invertible because its eigenvalues are $1\pm i\lvert v\rvert$. The matrix $M(v)$ is unitary,</p>
+<p>The matrices $I-V$ and $I+V$ commute, and $I+V$ is invertible because its eigenvalues are $1\pm i\sqrt{\langle \vec v\rangle_{\natural}}$. The matrix $M(\vec v)$ is unitary,</p>
 <p>$$
-M(v)^{\dagger}M(v) = (I+V^{\dagger})^{-1}(I-V^{\dagger})(I-V)(I+V)^{-1} = I,
+M(\vec v)^{\dagger}M(\vec v) = (I+V^{\dagger})^{-1}(I-V^{\dagger})(I-V)(I+V)^{-1} = I,
 $$</p>
 <p>and its determinant is</p>
 <p>$$
-\det M(v) = \frac{\det(I-V)}{\det(I+V)} = \frac{1+\lvert v\rvert^2}{1+\lvert v\rvert^2}=1,
+\det M(\vec v) = \frac{\det(I-V)}{\det(I+V)} = \frac{1+\langle \vec v\rangle_{\natural}}{1+\langle \vec v\rangle_{\natural}}=1,
 $$</p>
-<p>because the eigenvalues of $V$ are $\pm i\lvert v\rvert$ and each determinant is $1+\lvert v\rvert^2$. Hence $M(v)\in SU(2)$, as it must be, since it is the image of the unit quaternion $u(v)$.</p>
+<p>because the eigenvalues of $V$ are $\pm i\sqrt{\langle \vec v\rangle_{\natural}}$ and each determinant is $1+\langle \vec v\rangle_{\natural}$. Hence $M(\vec v)\in SU(2)$, as it must be, since it is the image of the unit quaternion $u(\vec v)$.</p>
 <p>In coordinates,</p>
 <p>$$
-M(v)=\frac{1}{1+\lvert v\rvert^2}
+M(\vec v)=\frac{1}{1+\langle \vec v\rangle_{\natural}}
 \begin{pmatrix}
-1-\lvert v\rvert^2+2iv_z & 2iv_x+2v_y\\
-2iv_x-2v_y & 1-\lvert v\rvert^2-2iv_z
+1-\langle \vec v\rangle_{\natural}+2iv_z & 2iv_x+2v_y\\
+2iv_x-2v_y & 1-\langle \vec v\rangle_{\natural}-2iv_z
 \end{pmatrix}.
 $$</p>
 <p>The Cayley transform is the matrix analogue of the chart: it maps the skew-Hermitian space onto $SU(2)$ minus the matrix $-I$, and its inverse is $V=(I-M)(I+M)^{-1}$. The sandwich of §<em>The Product Formula</em> is the coordinate expression of the noncommutativity of $SU(2)$, not an artefact of the chart.</p>
@@ -317,13 +324,13 @@ $$</p>
 $$</p>
 <p>The chart coordinate is</p>
 <p>$$
-v=-0.308774178\,\vec e_x-0.463161266\,\vec e_y-0.617548355\,\vec e_z,
+\vec v=-0.308774178\,\vec e_x-0.463161266\,\vec e_y-0.617548355\,\vec e_z,
 $$</p>
-<p>with $\lvert v\rvert=0.831399917$. The reconstruction $r\,u(v)$ reproduces $\tilde q$ to $4.4\times10^{-16}$ in each coefficient.</p>
+<p>with $\sqrt{\langle \vec v\rangle_{\natural}}=0.831399917$. The reconstruction $r\,u(\vec v)$ reproduces $\tilde q$ to $4.4\times10^{-16}$ in each coefficient.</p>
 <h3 id="the-real-and-the-excluded-cases">The Real and the Excluded Cases</h3>
-<p>For $\tilde q=2e_t$ the modulus is $2$ and the unit factor is $1$, so $v=0$. For $\tilde q=-3e_t$ the unit factor is $-1$, which the chart does not attain; the element is excluded. For $\tilde q=\vec e_x$ the modulus is $1$ and the unit factor is $\vec e_x$, so</p>
+<p>For $\tilde q=2e_t$ the modulus is $2$ and the unit factor is $1$, so $\vec v=0$. For $\tilde q=-3e_t$ the unit factor is $-1$, which the chart does not attain; the element is excluded. For $\tilde q=\vec e_x$ the modulus is $1$ and the unit factor is $\vec e_x$, so</p>
 <p>$$
-v = (1-\vec e_x)(1+\vec e_x)^{-1} = -\vec e_x,
+\vec v = (1-\vec e_x)(1+\vec e_x)^{-1} = -\vec e_x,
 $$</p>
 <p>which is consistent with $u(-\vec e_x)=\vec e_x$.</p>
 <h3 id="a-table-of-examples">A Table of Examples</h3>
@@ -334,8 +341,9 @@ $$</p>
 <th>$\tilde q$</th>
 <th>$r$</th>
 <th>$\tilde u_{\mathrm r}$</th>
-<th>$v$</th>
-<th>$\lvert v\rvert$</th>
+<th>$\vec v$</th>
+<th>$\sqrt{\langle \vec v\rangle_{\natural}}$</th>
+<th>reconstruction error</th>
 </tr>
 </thead>
 <tbody>
@@ -345,6 +353,7 @@ $$</p>
 <td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
+<td>$0$</td>
 </tr>
 <tr>
 <td>$\vec e_x$</td>
@@ -352,6 +361,7 @@ $$</p>
 <td>$\vec e_x$</td>
 <td>$-\vec e_x$</td>
 <td>$1$</td>
+<td>$0$</td>
 </tr>
 <tr>
 <td>$3\vec e_x-4\vec e_z$</td>
@@ -359,6 +369,7 @@ $$</p>
 <td>$0.6\vec e_x-0.8\vec e_z$</td>
 <td>$-0.6\vec e_x+0.8\vec e_z$</td>
 <td>$1$</td>
+<td>$2.8\times10^{-16}$</td>
 </tr>
 <tr>
 <td>$e_t+\vec e_x$</td>
@@ -366,6 +377,7 @@ $$</p>
 <td>$(e_t+\vec e_x)/\sqrt{2}$</td>
 <td>$-0.414213562\,\vec e_x$</td>
 <td>$0.414213562$</td>
+<td>$0$</td>
 </tr>
 <tr>
 <td>$-e_t+\vec e_x$</td>
@@ -373,6 +385,7 @@ $$</p>
 <td>$(-e_t+\vec e_x)/\sqrt{2}$</td>
 <td>$-2.414213562\,\vec e_x$</td>
 <td>$2.414213562$</td>
+<td>$2.2\times10^{-16}$</td>
 </tr>
 <tr>
 <td>$e_t+2\vec e_x+3\vec e_y+4\vec e_z$</td>
@@ -380,12 +393,14 @@ $$</p>
 <td>the unit factor above</td>
 <td>the coordinate above</td>
 <td>$0.831399917$</td>
+<td>$4.4\times10^{-16}$</td>
 </tr>
 <tr>
 <td>$-3e_t$</td>
 <td>$3$</td>
 <td>$-e_t$</td>
 <td>excluded</td>
+<td>—</td>
 <td>—</td>
 </tr>
 </tbody>
@@ -398,63 +413,12 @@ $$</p>
 $$</p>
 <p>The coordinate is</p>
 <p>$$
-v=-2000.000500\,\vec e_x,
+\vec v=-2000.000500\,\vec e_x,
 $$</p>
-<p>with $\lvert v\rvert=2000.000500$. The reconstruction returns $\tilde q$ to $1.1\times10^{-16}$. The example makes the cut visible: as the scalar part of $\tilde q$ approaches $-r$, the denominator $r+\tilde q$ approaches zero and the coordinate escapes along the direction of the vector part, which is the direction of approach to the cut.</p>
-<h2 id="the-three-forms">The Three Forms</h2>
-<h3 id="the-comparison">The Comparison</h3>
-<p>The three polar decompositions of the quaternion algebra use the same modulus and the same unit factor; they differ in the coordinate and in the price of naming it.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>form</th>
-<th>word</th>
-<th>domain</th>
-<th>coordinate</th>
-<th>regularity</th>
-<th>price</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>modulus–unit</td>
-<td>$\tilde q=r\tilde u_{\mathrm r}$</td>
-<td>$\mathbb{H}^{\times}$</td>
-<td>none</td>
-<td>algebraic</td>
-<td>a square root</td>
-</tr>
-<tr>
-<td>rational chart</td>
-<td>$\tilde q=r\,u(v)$</td>
-<td>$\mathbb{H}\setminus(-\infty,0]$</td>
-<td>$v\in\operatorname{Im}\mathbb{H}$</td>
-<td>rational</td>
-<td>a cut, and a noncommutative group law</td>
-</tr>
-<tr>
-<td>exponential</td>
-<td>$\tilde q=\exp(\ln r+v)$</td>
-<td>$\mathbb{H}^{\times}$</td>
-<td>$v\in\operatorname{Im}\mathbb{H}$</td>
-<td>transcendental</td>
-<td>a kernel, and non-uniqueness on the real axis</td>
-</tr>
-</tbody>
-</table></div>
-<p>The modulus–unit form is the most general and the least explicit: it names the unit factor by an equation. The rational chart is the most explicit and the most local: it names the unit factor by three real numbers, at the cost of one ray. The exponential is global and analytic, at the cost of a transcendental function and a many-to-one parametrisation.</p>
-<h3 id="the-departures-from-the-complex-template">The Departures from the Complex Template</h3>
-<p>The complex rational chart is $u(s)=(1-is)/(1+is)$ with $s\in\mathbb{R}$ and group law $s_3=(s_1+s_2)/(1-s_1s_2)$. The quaternion chart keeps the shape $(1-v)(1+v)^{-1}$ but changes four things.</p>
-<ul>
-<li><strong>The parameter is a pure quaternion, not a scalar.</strong> The chart is a chart of a three-dimensional sphere, so the coordinate has three real components.</li>
-<li><strong>The group law is a sandwich.</strong> The complex fraction is replaced by $(1+v_1)^{-1}B_{\mathrm{bare}}(1+v_1)$, the conjugation by $1+v_1$. The bare fraction is correct only when $1+v_1$ commutes with $B_{\mathrm{bare}}$, which is automatic in the commutative case and fails here.</li>
-<li><strong>The inverse is unambiguous in both orderings.</strong> The complex formula $s=i(u-1)/(u+1)$ has no order to specify. In $\mathbb{H}$ the formula $v=(1-u)(1+u)^{-1}$ also has no order to specify, because $1+u$ and $1-u$ commute; the noncommutativity appears in the product, not in the inverse.</li>
-<li><strong>The chart is minus the stereographic coordinate.</strong> The line through $-1$ and $u(v)$ meets the pure subspace at $-v$, not at $v$; the sign is a convention of the chart and does not affect the decomposition.</li>
-</ul>
-<p>The cut and the missing point are exactly as in the complex case: one unit factor, $-1$, is missing, and the elements with that unit factor are the negative real axis. The difference is that this axis is a ray in three-dimensional space, and as an element approaches it the coordinate escapes in the direction of its approach, so the cut has a whole sphere of escape directions rather than two sides.</p>
+<p>with $\sqrt{\langle \vec v\rangle_{\natural}}=2000.000500$. The reconstruction returns $\tilde q$ to $1.1\times10^{-16}$. The example makes the cut visible: as the scalar part of $\tilde q$ approaches $-r$, the denominator $r+\tilde q$ approaches zero and the coordinate escapes along the direction of the vector part, which is the direction of approach to the cut.</p>
 <h2 id="summary">Summary</h2>
-<p>Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=r\,u(v)$, with $r=\lvert\tilde q\rvert>0$, $u(v)=(1-v)(1+v)^{-1}$ and $v$ a pure quaternion. The coordinate is $v=(1-u)(1+u)^{-1}=(r-\tilde q)(r+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.</p>
-<p>The chart is rational in both directions and misses the unit factor $-1$, so the decomposition is defined on $\mathbb{H}\setminus(-\infty,0]$. A second chart, $-u(v)=u(v^{-1})$, supplies $-1$ and misses $+1$; the two charts cover the sphere. The group law is the sandwich $v_3=(1+v_1)^{-1}(v_1+v_2)(1+v_1v_2)^{-1}(1+v_1)$, which is the bare fraction conjugated by $1+v_1$; the pole is $v_1v_2=-1$, where the product is the missing point and the coordinate escapes. In the matrix picture the chart is the Cayley transform $M(v)=(I-V)(I+V)^{-1}$ into $SU(2)$.</p>
+<p>Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=r\,u(\vec v)$, with $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ and $\vec v$ a pure quaternion. The coordinate is $\vec v=(1-u)(1+u)^{-1}=(r-\tilde q)(r+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.</p>
+<p>The chart is rational in both directions and misses the unit factor $-1$, so the decomposition is defined on $\mathbb{H}\setminus(-\infty,0]$. A second chart, $-u(\vec v)=u(\vec v^{-1})$, supplies $-1$ and misses $+1$; the two charts cover the sphere. The group law is the sandwich $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$, which is the bare fraction conjugated by $1+\vec v_1$; the pole is $\vec v_1\vec v_2=-1$, where the product is the missing point and the coordinate escapes. In the matrix picture the chart is the Cayley transform $M(\vec v)=(I-V)(I+V)^{-1}$ into $SU(2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -481,7 +445,7 @@ $$</p>
 <td>the quaternion norm, positive definite</td>
 </tr>
 <tr>
-<td>$r=\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$</td>
+<td>$r=\sqrt{\langle\tilde q\rangle_{\natural}}$</td>
 <td>the modulus</td>
 </tr>
 <tr>
@@ -493,15 +457,15 @@ $$</p>
 <td>the unit sphere</td>
 </tr>
 <tr>
-<td>$v=v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$</td>
+<td>$\vec v=v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$</td>
 <td>a pure quaternion, the chart coordinate</td>
 </tr>
 <tr>
-<td>$u(v)=(1-v)(1+v)^{-1}$</td>
+<td>$u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$</td>
 <td>the chart, a unit quaternion</td>
 </tr>
 <tr>
-<td>$v=(1-u)(1+u)^{-1}$</td>
+<td>$\vec v=(1-u)(1+u)^{-1}$</td>
 <td>the inverse chart</td>
 </tr>
 <tr>
@@ -509,15 +473,15 @@ $$</p>
 <td>the domain of the chart decomposition</td>
 </tr>
 <tr>
-<td>$v_3=(1+v_1)^{-1}(v_1+v_2)(1+v_1v_2)^{-1}(1+v_1)$</td>
+<td>$\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$</td>
 <td>the group law in the coordinate</td>
 </tr>
 <tr>
-<td>$V=\iota(v)$</td>
-<td>the skew-Hermitian matrix of $v$</td>
+<td>$V=\iota(\vec v)$</td>
+<td>the skew-Hermitian matrix of $\vec v$</td>
 </tr>
 <tr>
-<td>$M(v)=(I-V)(I+V)^{-1}$</td>
+<td>$M(\vec v)=(I-V)(I+V)^{-1}$</td>
 <td>the Cayley transform into $SU(2)$</td>
 </tr>
 </tbody>

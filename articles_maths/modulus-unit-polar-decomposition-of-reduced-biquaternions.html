@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulus–Unit Polar Decomposition of Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modulusunit-polar-decomposition-of-reduced-biquaternions"><strong>Modulus–Unit Polar Decomposition of Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the <strong>modulus–unit polar decomposition</strong> of a reduced biquaternion: the writing</p>
+<p>$$
+\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\in T^2,
+$$</p>
+<p>with $\breve r$ the <strong>modulus</strong> and $u$ the <strong>unit factor</strong>. The modulus is not a real number: it is an element of the <strong>positive cone</strong></p>
+<p>$$
+P=\{\,x+jy:x>|y|\,\}
+$$</p>
+<p>of the plane $\mathbb{R}\{1,j\}$, the interior of the light cone of the split-complex plane. The unit factor is a point of the <strong>unit torus</strong></p>
+<p>$$
+T^2=\{\,u:u\bar u=1\,\},
+$$</p>
+<p>the two-dimensional group of elements whose two circular components have modulus one. The decomposition carries four real parameters, two for the modulus and two for the torus, which is the real dimension of the algebra.</p>
+<p>The decomposition is the polar decomposition of the algebra for the coefficient conjugation. The <strong>bar</strong> fixes $1$ and $j$ and conjugates the complex coefficients, and the modulus is the unique positive square root</p>
+<p>$$
+\breve r=\sqrt{\breve Q\bar{\breve Q}}
+$$</p>
+<p>taken in the cone $P$, the unit factor being $u=\breve r^{-1}\breve Q$, which satisfies $u\bar u=1$. In the complex algebra the same formulas read $r=\sqrt{Q\bar Q}$ and $u=Q/r$; the difference is that the positive square root now lives in a two-dimensional cone, not in a ray, and that the unit factor runs on a two-torus, not on a circle.</p>
+<p>In the coordinates $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the two circular components are the two complex numbers $Q_{+}$ and $Q_{-}$. The modulus–unit decomposition is therefore a pair of complex modulus–unit decompositions, written in the algebra. This is the source of every difference from the complex case: the modulus is doubled, the phase is doubled, the unit factor is a torus, and the failure set is the union of two real two-planes rather than the origin alone.</p>
+<p>The decomposition is the algebraic member of the three polar decompositions of the algebra. The modulus–unit form, treated here, uses the bar, the positive square root and the unit torus, and chooses no coordinate on the torus. The rational-chart form puts the Cayley coordinate on each circle of the torus, and is developed in <em>Rational-Chart Polar Decomposition of Reduced Biquaternions</em>. The exponential form puts the Lie-algebra coordinate on the torus, and is developed in <em>Exponential Polar Decomposition of Reduced Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}_{\mathrm{r}}$, with basis $1,i,j,ij$, $i^2=-1$, $j^2=+1$ and $ij=ji$. The element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the two complex coefficients are the <strong>scalar part</strong> $Q_{\blacktriangle}$ and the <strong>split part</strong> $Q_{\blacktriangledown}$. The bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$; it fixes $1$ and $j$ and negates $i$ and $ij$. The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$, the squared Euclidean norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2$, and $\lVert\breve Q\rVert=\sqrt{\langle\breve Q\rangle_{\mathrm{ts}*}}$. The two complex numbers $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are the <strong>circular components</strong> of $\breve Q$; they are the values of the two complex characters of the algebra, and their product $Q_{+}Q_{-}$ is the reduced norm.</p>
+<p><strong>Boundaries.</strong> The algebra, its bar and its zero divisors are <em>Introduction to the Algebra of the Reduced Biquaternions</em>, <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em> and <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the group of units as a Lie group is <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>; the involutions and their fixed planes are <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>. The complex member is <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>, and the split-complex member is <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em>. The noncommutative counterpart is <em>The Polar Decomposition of Biquaternions</em>.</p>
+<p>The plan is as follows. The two factors are defined (§<em>The Two Factors</em>), existence and uniqueness are proved (§<em>Existence and Uniqueness</em>), the group of units and the torus are described (§<em>The Group of Units and the Torus</em>), the two planes of the bar are classified (§<em>The Two Axes</em>), the matrix picture is given (§<em>The Matrix Picture</em>), examples are computed (§<em>Worked Examples</em>), and the place of the algebra in the family is recorded (§<em>The Other Algebras</em>).</p>
+<p>Every numerical value displayed below was recomputed in double precision.</p>
+<h2 id="the-two-factors">The Two Factors</h2>
+<h3 id="the-norm-and-the-modulus">The Norm and the Modulus</h3>
+<p>Let $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$. The <strong>bar</strong> is the involution</p>
+<p>$$
+\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}.
+$$</p>
+<p>It fixes $1$ and $j$ and negates $i$ and $ij$. The algebra carries two quadratic norms. The <strong>reduced norm</strong> is</p>
+<p>$$
+\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=Q_{+}Q_{-},
+$$</p>
+<p>complex-valued, multiplicative, and vanishing exactly on the two complex lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, that is on the zero divisors. The <strong>squared Euclidean norm</strong> is</p>
+<p>$$
+\langle\breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2,
+$$</p>
+<p>real and positive definite. Neither form is the modulus: the first is complex and vanishes on the zero divisors, the second is real but is not multiplicative.</p>
+<p>The product $\breve Q\bar{\breve Q}$ is computed from the bar:</p>
+<p>$$
+\breve Q\bar{\breve Q}=(Q_{\blacktriangle}+jQ_{\blacktriangledown})(\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown})
+=\bigl(|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2\bigr)+2j\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})
+=q+jq',
+$$</p>
+<p>with $q=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2$ and $q'=2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})$. The key identity is</p>
+<p>$$
+q^2-q'^2=|Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2|^2=|\langle\breve Q\rangle_{\mathrm{ts}}|^2.
+$$</p>
+<p>For a unit the right side is positive, so $q>|q'|$, and $\breve Q\bar{\breve Q}$ lies in the positive cone</p>
+<p>$$
+P=\{\,x+jy:x>|y|\,\}.
+$$</p>
+<p>The <strong>modulus</strong> is the unique element $\breve r\in P$ with</p>
+<p>$$
+\breve r^2=\breve Q\bar{\breve Q}.
+$$</p>
+<p>It is the positive square root of $\breve Q\bar{\breve Q}$ in the cone, the exact analogue of $r=\sqrt{Q\bar Q}$ in $\mathbb{C}$ with the positive ray replaced by the cone $P$. Explicitly, with $q$ and $q'$ as above,</p>
+<p>$$
+\breve r=\sqrt{\frac{q+\sqrt{q^2-q'^2}}{2}}
++j\,\operatorname{sgn}q'\sqrt{\frac{q-\sqrt{q^2-q'^2}}{2}},
+$$</p>
+<p>and the sign convention is immaterial when $q'=0$. The two coordinates of $\breve r$ are real, so $\bar{\breve r}=\breve r$.</p>
+<p><strong>Proposition (the two scales).</strong> Write $\breve r=x+jy$ with $x,y\in\mathbb{R}$, and put</p>
+<p>$$
+\rho_+=x+y>0,\qquad \rho_-=x-y>0.
+$$</p>
+<p>Then</p>
+<p>$$
+\rho_+=|Q_{+}|,\qquad \rho_-=|Q_{-}|,\qquad \rho_+\rho_-=\sqrt{q^2-q'^2}=|\langle\breve Q\rangle_{\mathrm{ts}}|.
+$$</p>
+<p>Conversely,</p>
+<p>$$
+\breve r=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2}
+=\rho\bigl(\cosh\phi+j\sinh\phi\bigr),
+\qquad
+\rho=\sqrt{\rho_+\rho_-},\qquad \phi=\operatorname{artanh}\frac{\rho_+-\rho_-}{\rho_++\rho_-}.
+$$</p>
+<p><em>Proof.</em> Since $\breve r^2=q+jq'$ and $\breve r^2=(x^2+y^2)+2xyj$, one has $x^2+y^2=q$ and $2xy=q'$. Hence</p>
+<p>$$
+(x+y)^2=x^2+y^2+2xy=q+q'=|Q_{+}|^2,
+$$</p>
+<p>because $|Q_{+}|^2=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2+2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=q+q'$; and similarly $(x-y)^2=q-q'=|Q_{-}|^2$. Both $x\pm y$ are positive because $x>|y|$, so $\rho_\pm=|Q_{\pm}|$. The product is $\rho_+\rho_-=x^2-y^2=\sqrt{q^2-q'^2}$. The parametrisation is the identity $\cosh\phi\pm\sinh\phi=e^{\pm\phi}$ applied to $\rho_\pm=\rho e^{\pm\phi}$.</p>
+<p>The modulus therefore carries two positive scales, $\rho_+$ and $\rho_-$. The reduced norm sees only their product $\rho_+\rho_-$, and the Euclidean norm only their sum of squares $\rho_+^2+\rho_-^2$; neither form distinguishes the two scales from their interchange, and the pair carries the sign of the boost, which both forms lose. No scalar modulus exists, and the modulus is genuinely two-dimensional.</p>
+<h3 id="the-unit-factor-and-the-torus">The Unit Factor and the Torus</h3>
+<p>The <strong>unit factor</strong> is</p>
+<p>$$
+u=\breve r^{-1}\breve Q.
+$$</p>
+<p>Since $\bar{\breve r}=\breve r$ and $\breve r^2=\breve Q\bar{\breve Q}$,</p>
+<p>$$
+u\bar u=\breve r^{-1}\bar{\breve r}^{-1}\breve Q\bar{\breve Q}
+=\breve r^{-2}\breve r^2=1.
+$$</p>
+<p>The set of such elements is the <strong>unit torus</strong></p>
+<p>$$
+T^2=\{\,u\in\mathbb{B}_{\mathrm{r}}:u\bar u=1\,\}.
+$$</p>
+<p>It is a group under multiplication: if $u\bar u=v\bar v=1$ then $(uv)\overline{(uv)}=uv\bar u\bar v=1$, and the inverse of $u$ is $\bar u$. It is closed and bounded in $\mathbb{B}_{\mathrm{r}}\cong\mathbb{R}^4$, hence compact.</p>
+<p><strong>Proposition (the torus as a product of two circles).</strong> Let $u=u_{\blacktriangle}+ju_{\blacktriangledown}$. Then</p>
+<p>$$
+u\bar u=1\quad\Longleftrightarrow\quad |u_{+}|=|u_{-}|=1.
+$$</p>
+<p>The map</p>
+<p>$$
+u\longmapsto(u_{+},\ u_{-})
+$$</p>
+<p>is a bijection from $T^2$ onto $S^1\times S^1$, with inverse</p>
+<p>$$
+u_{\blacktriangle}=\frac{u_{+}+u_{-}}{2},\qquad u_{\blacktriangledown}=\frac{u_{+}-u_{-}}{2},\qquad u_{+}=u_{\blacktriangle}+u_{\blacktriangledown},\quad u_{-}=u_{\blacktriangle}-u_{\blacktriangledown}.
+$$</p>
+<p><em>Proof.</em> From the computation of $u\bar u$, the condition $u\bar u=1$ is $|u_{\blacktriangle}|^2+|u_{\blacktriangledown}|^2=1$ and $\operatorname{Re}(u_{\blacktriangle}\bar u_{\blacktriangledown})=0$. Then</p>
+<p>$$
+|u_{\pm}|^2=|u_{\blacktriangle}|^2+|u_{\blacktriangledown}|^2\pm2\operatorname{Re}(u_{\blacktriangle}\bar u_{\blacktriangledown})=1.
+$$</p>
+<p>Conversely, if $|u_{+}|=|u_{-}|=1$, adding the two squared identities gives $2(|u_{\blacktriangle}|^2+|u_{\blacktriangledown}|^2)=2$ and subtracting gives $4\operatorname{Re}(u_{\blacktriangle}\bar u_{\blacktriangledown})=0$, so $u\bar u=1$. The inverse formula is the linear change $(u_{\blacktriangle},u_{\blacktriangledown})\leftrightarrow(u_{+},u_{-})$.</p>
+<p>The torus is therefore the product of the two circles $|u_{+}|=1$ and $|u_{-}|=1$, and it is two-dimensional. In the coordinates $(u_{\blacktriangle},u_{\blacktriangledown})\in\mathbb{C}^2\cong\mathbb{R}^4$ it is described by the single complex equation $u\bar u=1$, that is by the two real equations $|u_{\blacktriangle}|^2+|u_{\blacktriangledown}|^2=1$ and $\operatorname{Re}(u_{\blacktriangle}\bar u_{\blacktriangledown})=0$.</p>
+<p><strong>Proposition (the torus is not a norm-one set).</strong> The reduced-norm-one set $\{\breve Q:\langle\breve Q\rangle_{\mathrm{ts}}=1\}$ is $\{Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=1\}$, a complex quadric of real dimension two, non-compact. The Euclidean unit sphere $S^3=\{\langle\breve Q\rangle_{\mathrm{ts}*}=1\}$ contains the zero divisor $Q_{\blacktriangle}=Q_{\blacktriangledown}=1/\sqrt2$, and is not a group. The unit factor is the bar-unitary torus, neither the reduced-norm-one set nor the Euclidean sphere.</p>
+<p><em>Proof.</em> The reduced-norm-one set is the level set of a holomorphic function, of real dimension two; it contains the unbounded curve $Q_{\blacktriangle}=\cosh t$, $Q_{\blacktriangledown}=\sinh t$. The point $Q_{\blacktriangle}=Q_{\blacktriangledown}=1/\sqrt2$ lies on $S^3$ and is a zero divisor, since $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$. The bar-unitary set is compact and closed under multiplication by the proposition above.</p>
+<p>The three sets coincide only in the complex algebra, where the norm is definite and the unit factor is one circle. Here the reduced norm is complex, the Euclidean norm is not multiplicative, and only the bar-unitary condition gives a compact group.</p>
+<h3 id="the-count-of-the-parameters">The Count of the Parameters</h3>
+<p>A unit carries four real parameters. The modulus carries two, the scales $\rho_+,\rho_-$, equivalently the radius $\rho>0$ and the boost $\phi\in\mathbb{R}$. The unit factor carries two, the two circles of $T^2$. The counts add:</p>
+<p>$$
+4=2+2.
+$$</p>
+<p>The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the group of units. The decomposition separates the non-compact directions from the compact ones, exactly as the complex decomposition separates the radius from the circle. What the two parameters of $u$ are parametrised by is a separate question, answered by a chart of the torus; the rational chart is the subject of <em>Rational-Chart Polar Decomposition of Reduced Biquaternions</em>, the exponential chart the subject of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, and this article chooses none.</p>
+<h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
+<p><strong>Theorem.</strong> Every unit $\breve Q$ has exactly one modulus–unit polar decomposition $\breve Q=\breve r u$ with $\breve r\in P$ and $u\in T^2$.</p>
+<p><strong>Existence.</strong> Put $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$ and $u=\breve r^{-1}\breve Q$. The element $\breve r$ is defined because $\breve Q\bar{\breve Q}\in P$ for a unit, and $u\bar u=1$ by the computation of §<em>The Unit Factor and the Torus</em>. Hence $\breve Q=\breve r u$ with the two factors in the required sets.</p>
+<p><strong>Uniqueness.</strong> Suppose $\breve r u=\breve r'u'$ with $\breve r,\breve r'\in P$ and $u\bar u=u'\bar u'=1$. Multiplying by the bar gives $\breve r^2=\breve r'^2$, because $\bar{\breve r}=\breve r$, $\bar{\breve r}'=\breve r'$ and $u\bar u=u'\bar u'=1$. Two elements of $P$ with the same square are equal: if $x+jy\in P$ and $x'+jy'\in P$ have square $q+jq'$, then $x^2+y^2=x'^2+y'^2=q$ and $xy=x'y'=q'/2$; the positive numbers $x^2-y^2$ and $x'^2-y'^2$ both equal $\sqrt{q^2-q'^2}$, so $x^2=x'^2$, $x=x'>0$, and then $y=y'$. Hence $\breve r=\breve r'$, and $u=\breve r^{-1}\breve Q=u'$.</p>
+<p>The pair $(\breve r,u)$ is unique. This is a statement about the factorisation, not about a coordinate on the torus: two different charts of $T^2$ assign different parameters to the same unit factor.</p>
+<p><strong>Corollary (the failure set).</strong> The decomposition exists exactly on the units. It fails exactly on the zero divisors</p>
+<p>$$
+\{Q_{\blacktriangle}^2=Q_{\blacktriangledown}^2\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\},
+$$</p>
+<p>the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each of real dimension two. The failure set has real codimension two, as the origin does in $\mathbb{C}$.</p>
+<p><em>Proof.</em> The construction uses $\breve r\in P$, which requires $q^2-q'^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.</p>
+<h2 id="the-group-of-units-and-the-torus">The Group of Units and the Torus</h2>
+<h3 id="the-splitting-of-the-group-of-units">The Splitting of the Group of Units</h3>
+<p>The map</p>
+<p>$$
+\Phi:\mathbb{B}_{\mathrm{r}}^{\times}\longrightarrow P\times T^2,\qquad \Phi(\breve Q)=\bigl(\breve r,u\bigr),
+$$</p>
+<p>is a group isomorphism. It is bijective by the theorem of §<em>Existence and Uniqueness</em>, with inverse $(\breve r,u)\mapsto\breve r u$, and it is a homomorphism because the modulus of a product is the product of the moduli and the unit factor of a product is the product of the unit factors:</p>
+<p>$$
+\breve r(\breve Q_1\breve Q_2)=\breve r(\breve Q_1)\breve r(\breve Q_2),\qquad
+u(\breve Q_1\breve Q_2)=u(\breve Q_1)u(\breve Q_2).
+$$</p>
+<p>The first identity follows from $(\breve Q_1\breve Q_2)\overline{(\breve Q_1\breve Q_2)}=\breve Q_1\bar{\breve Q}_1\breve Q_2\bar{\breve Q}_2=\breve r_1^2\breve r_2^2$ and from $\breve r_1\breve r_2\in P$; the second is the definition of $u$ and the cancellation of the moduli.</p>
+<p>Since $P\cong\mathbb{R}_{>0}\times\mathbb{R}$ under $(\rho,\phi)\mapsto\rho(\cosh\phi+j\sinh\phi)$, and $T^2\cong S^1\times S^1$,</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{R}_{>0}\times\mathbb{R}\times T^2\cong\mathbb{R}^2\times T^2.
+$$</p>
+<p><strong>Corollary (the real dimension and the fundamental group).</strong> The group of units is connected of real dimension four, with fundamental group $\mathbb{Z}^2$. It is not simply connected, and its universal cover is the algebra $\mathbb{B}_{\mathrm{r}}\cong\mathbb{R}^4$.</p>
+<p><em>Proof.</em> The cone is connected and simply connected, the torus is connected with fundamental group $\mathbb{Z}^2$, and the product has the product of the fundamental groups. The algebra is contractible and the exponential of <em>Exponential Polar Decomposition of Reduced Biquaternions</em> is a covering onto the units with kernel $\mathbb{Z}^2$.</p>
+<h3 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h3>
+<p><strong>Theorem.</strong> The torus $T^2$ is the maximal compact subgroup of $\mathbb{B}_{\mathrm{r}}^{\times}$.</p>
+<p><em>Proof.</em> Let $K\subset\mathbb{B}_{\mathrm{r}}^{\times}$ be a compact subgroup. The modulus map $\breve Q\mapsto\breve r$ is a continuous homomorphism onto $P$, so its image is a compact subgroup of $P$. A compact subgroup of $P$ is trivial: in the coordinates $(\rho,\phi)$ of $P\cong\mathbb{R}_{>0}\times\mathbb{R}$, a nontrivial element has $\phi\neq0$ or $\rho\neq1$; its powers have $|n\phi|\to\infty$ or $\rho^n\to0$ or $\infty$, and no such sequence stays in a compact set. Hence every element of $K$ has modulus $1$, that is $K\subset T^2$. The torus is compact, so it is maximal.</p>
+<p>The compact factor is two-dimensional, not one-dimensional as in $\mathbb{C}$ and not zero-dimensional as in the split-complex algebra. The rank of the compact group is two.</p>
+<h3 id="the-deformation-retraction">The Deformation Retraction</h3>
+<p>The map</p>
+<p>$$
+H:[0,1]\times\mathbb{B}_{\mathrm{r}}^{\times}\longrightarrow\mathbb{B}_{\mathrm{r}}^{\times},
+\qquad H(t,\breve Q)=\bigl((1-t)\breve r+t\bigr)u
+$$</p>
+<p>is continuous, fixes $T^2$ at every $t$, is the identity at $t=0$, and lands in $T^2$ at $t=1$. The element $(1-t)\breve r+t$ lies in $P$ for every $t$, because $P$ is convex: its coordinates are $(1-t)x+t$ and $(1-t)y$, and $|(1-t)y|<(1-t)x+t$. The group of units therefore deformation retracts onto the torus. Since the group is already a product $P\times T^2$, the retraction is the projection onto the second factor followed by a linear contraction of the first.</p>
+<h3 id="the-two-circles">The Two Circles</h3>
+<p>The torus contains the two circles</p>
+<p>$$
+S_i=\{\exp(i\alpha):\alpha\in\mathbb{R}\},\qquad
+S_{ij}=\{\exp(ij\beta):\beta\in\mathbb{R}\},
+$$</p>
+<p>the <strong>scalar circle</strong> and the <strong>$ij$-circle</strong>. Their elements are</p>
+<p>$$
+\exp(i\alpha)=\cos\alpha+i\sin\alpha,\qquad
+\exp(ij\beta)=\cos\beta+ij\sin\beta.
+$$</p>
+<p>Every element of $T^2$ is a product $\exp(i\alpha)\exp(ij\beta)=\exp(i\alpha+ij\beta)$, and the parametrisation is a group homomorphism from $\mathbb{R}^2$ onto $T^2$ whose kernel is the lattice</p>
+<p>$$
+2\pi\mathbb{Z}^2+\pi\mathbb{Z}(1,1).
+$$</p>
+<p>The two circles intersect at $\exp(i\alpha)=\exp(ij\beta)$, that is at $\alpha,\beta\in\pi\mathbb{Z}$ with the same parity, which gives the two points $1$ and $-1$. The product map $S_i\times S_{ij}\to T^2$ is therefore not injective: it is a two-to-one covering, and $T^2$ is the quotient of $S^1\times S^1$ by the involution $(z,w)\mapsto(-z,-w)$.</p>
+<p>The genuine splitting of the torus is the map $u\mapsto(u_{+},u_{-})$ of §<em>The Unit Factor and the Torus</em>, which is a bijection onto $S^1\times S^1$. The two circles $S_i$ and $S_{ij}$ generate the torus, but they are not independent; the two circular components $u_{+}$ and $u_{-}$ are.</p>
+<p><strong>Corollary (the Clifford torus).</strong> The torus $T^2$ lies in the Euclidean unit sphere $S^3$, and it is the Clifford torus</p>
+<p>$$
+T^2=\{\,|u_{+}|=|u_{-}|\,\}\cap S^3
+$$</p>
+<p>in it. The sphere is three-dimensional and the torus is two-dimensional; the remaining direction is the difference $|u_{+}|-|u_{-}|$, which the torus sets to zero.</p>
+<p><em>Proof.</em> On $T^2$ one has $|u_{+}|=|u_{-}|=1$ and $|u_{\blacktriangle}|^2+|u_{\blacktriangledown}|^2=1$, so $T^2\subset S^3$. Conversely, on $S^3$ one has $|u_{+}|^2+|u_{-}|^2=2(|u_{\blacktriangle}|^2+|u_{\blacktriangledown}|^2)=2$, so the single equation $|u_{+}|=|u_{-}|$ forces both moduli to be $1$, which is the torus. The remaining direction is the difference of the two moduli.</p>
+<h3 id="multiplication-powers-and-roots">Multiplication, Powers and Roots</h3>
+<p><strong>Theorem (the product in polar form).</strong> For two units</p>
+<p>$$
+\breve Q_1=\breve r_1u_1,\qquad \breve Q_2=\breve r_2u_2,
+$$</p>
+<p>the product is</p>
+<p>$$
+\breve Q_1\breve Q_2=(\breve r_1\breve r_2)(u_1u_2),
+$$</p>
+<p>with $\breve r_1\breve r_2\in P$ and $u_1u_2\in T^2$. In the scales and the circular components,</p>
+<p>$$
+\rho_+(\breve Q_1\breve Q_2)=\rho_+(\breve Q_1)\rho_+(\breve Q_2),\qquad
+\rho_-(\breve Q_1\breve Q_2)=\rho_-(\breve Q_1)\rho_-(\breve Q_2),
+$$</p>
+<p>and the phases add.</p>
+<p><em>Proof.</em> The product of the moduli lies in $P$, because $(x_1x_2+y_1y_2)^2-(x_1y_2+y_1x_2)^2=(x_1^2-y_1^2)(x_2^2-y_2^2)>0$ and the first coordinate is positive. The product of the unit factors lies in $T^2$, because $(u_1u_2)\overline{(u_1u_2)}=u_1\bar u_1u_2\bar u_2=1$. The scale identities follow from the product formula for $Q_{\pm}$.</p>
+<p><strong>Corollary (powers and roots).</strong> For a positive integer $n$,</p>
+<p>$$
+\breve Q^n=\breve r^n u^n,
+$$</p>
+<p>and the $n$-th roots of a unit have modulus $\breve r^{1/n}$ and $n^2$ choices of the unit factor. In particular a generic unit has four square roots.</p>
+<p><em>Proof.</em> The power is the repeated product. On the torus, an $n$-th root is a pair $(u_{+},u_{-})$ whose $n$-th powers are the two prescribed circular components of the target unit factor; each of the two complex equations has $n$ roots, and the choices are independent, giving $n^2$.</p>
+<p>The unit group in polar form is the product of the cone and the torus, and the product law multiplies the scales and the unit factors. The algebra is commutative, so the unit factor carries no rotor: the compact directions are the two scalar phases, and the split unit $j$ acts only through the relative scale $\rho_+/\rho_-=e^{2\phi}$. This is the reason the polar word is a pair of complex polar words and not a richer object.</p>
+<h2 id="the-two-axes">The Two Axes</h2>
+<h3 id="the-bar-and-the-two-planes">The Bar and the Two Planes</h3>
+<p>The bar fixes $1$ and $j$ and negates $i$ and $ij$, so its fixed space is the <strong>scale plane</strong> $\mathbb{R}\{1,j\}$ and its anti-fixed space is the <strong>angle plane</strong> $\mathbb{R}\{i,ij\}$.</p>
+<p>The algebra is the direct sum $\mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of <em>Exponential Polar Decomposition of Reduced Biquaternions</em> is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\phi\in\mathbb{R}\{1,j\}$ and $i\Theta=i\alpha+ij\beta\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.</p>
+<h3 id="the-roots-of-plus-one-zero-and-minus-one">The Roots of Plus One, Zero and Minus One</h3>
+<p>Let $\breve R=R_{\blacktriangle}+jR_{\blacktriangledown}$ with $R_{\blacktriangle},R_{\blacktriangledown}\in\mathbb{C}$. Then</p>
+<p>$$
+\breve R^2=(R_{\blacktriangle}^2+R_{\blacktriangledown}^2)+2R_{\blacktriangle}R_{\blacktriangledown}\,j.
+$$</p>
+<p>The three scalar equations are solved directly.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>equation</th>
+<th>roots in $\mathbb{B}_{\mathrm{r}}$</th>
+<th>plane</th>
+<th>image of $t\mapsto\exp(\breve R t)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\breve R^2=-1$</td>
+<td>$\pm i,\ \pm ij$</td>
+<td>$\mathbb{R}\{i,ij\}$</td>
+<td>two circles, generating $T^2$</td>
+</tr>
+<tr>
+<td>$\breve R^2=0$</td>
+<td>$0$</td>
+<td>—</td>
+<td>$\{1\}$</td>
+</tr>
+<tr>
+<td>$\breve R^2=+1$</td>
+<td>$\pm1,\ \pm j$</td>
+<td>$\mathbb{R}\{1,j\}$</td>
+<td>$\mathbb{R}_{>0}$ for $\pm1$; the future branch of the hyperbola for $\pm j$</td>
+</tr>
+</tbody>
+</table></div>
+<p>For $\breve R^2=-1$ the equations are $R_{\blacktriangle}^2+R_{\blacktriangledown}^2=-1$ and $R_{\blacktriangle}R_{\blacktriangledown}=0$. If $R_{\blacktriangle}=0$ then $R_{\blacktriangledown}^2=-1$, so $R_{\blacktriangledown}=\pm i$ and $\breve R=\pm ij$; if $R_{\blacktriangledown}=0$ then $R_{\blacktriangle}=\pm i$ and $\breve R=\pm i$. The four roots are the two scalar imaginary units and the two $ij$ directions. For $\breve R^2=+1$ the same computation with $R_{\blacktriangle}^2+R_{\blacktriangledown}^2=1$ gives $R_{\blacktriangle}=\pm1$ or $R_{\blacktriangledown}=\pm1$, that is $\breve R=\pm1$ or $\breve R=\pm j$. For $\breve R^2=0$ the equations $R_{\blacktriangle}^2+R_{\blacktriangledown}^2=0$ and $R_{\blacktriangle}R_{\blacktriangledown}=0$ force $R_{\blacktriangle}=R_{\blacktriangledown}=0$, so the algebra has no nilpotent direction.</p>
+<p>The unit factor uses the roots of $-1$: $\exp(i\alpha)$ and $\exp(ij\beta)$ are the two circles. The modulus uses the roots of $+1$: the one-parameter subgroups $\exp(t)$ and $\exp(jt)$ give the two positive directions of the plane $\mathbb{R}\{1,j\}$, and their product is the cone $P$. This is the exact doubling of the complex case: the two roots $\pm i$ of $-1$ give one circle there and two circles here, and the two roots $\pm1$ of $+1$ give one ray there and a two-dimensional cone here.</p>
+<h3 id="position-and-signature">Position and Signature</h3>
+<p>The algebraic norm of the multiplication is</p>
+<p>$$
+\langle\breve Q\rangle=Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2.
+$$</p>
+<p>On the scale plane $\mathbb{R}\{1,j\}$, for $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$, it is $q_{\blacktriangle}^2+q_{\blacktriangledown}^2$, positive definite. On the angle plane $\mathbb{R}\{i,ij\}$, for $\breve Q=iq_{\blacktriangle}+ijq_{\blacktriangledown}$, it is $-(q_{\blacktriangle}^2+q_{\blacktriangledown}^2)$, negative definite. The algebraic norm therefore has real signature $(2,2)$, with $\mathbb{R}\{1,j\}$ the positive plane and $\mathbb{R}\{i,ij\}$ the negative plane. This is the form that sees the split of the algebra.</p>
+<p>The reduced norm behaves differently. On $\mathbb{R}\{1,j\}$ it is $q_{\blacktriangle}^2-q_{\blacktriangledown}^2$, and on $\mathbb{R}\{i,ij\}$ it is $q_{\blacktriangledown}^2-q_{\blacktriangle}^2$; it is indefinite on both planes, with null lines $q_{\blacktriangle}=\pm q_{\blacktriangledown}$ in $\mathbb{R}\{1,j\}$, that is $\mathbb{R}(1\pm j)$, and their $i$-rotates $\mathbb{R}i(1\pm j)$ in $\mathbb{R}\{i,ij\}$. These four real lines are the real forms of the two complex zero-divisor lines.</p>
+<p><strong>Remark (which form is used where).</strong> The modulus–unit decomposition uses the bar and the positive square root of $\breve Q\bar{\breve Q}$, not the reduced norm and not the algebraic norm. The algebraic norm is recorded here because it is the form whose signature separates $\mathbb{R}\{1,j\}$ from $\mathbb{R}\{i,ij\}$; it does not decide invertibility, and it is not the norm of the polar decomposition.</p>
+<h2 id="the-matrix-picture">The Matrix Picture</h2>
+<h3 id="the-matrix-of-multiplication">The Matrix of Multiplication</h3>
+<p>In the real basis $\{1,i,j,ij\}$ the left multiplication by $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, has the matrix</p>
+<p>$$
+M_{\breve Q}=
+\begin{pmatrix}
+q_{\blacktriangle}&-q'_{\blacktriangle}&q_{\blacktriangledown}&-q'_{\blacktriangledown}\\
+q'_{\blacktriangle}&q_{\blacktriangle}&q'_{\blacktriangledown}&q_{\blacktriangledown}\\
+q_{\blacktriangledown}&-q'_{\blacktriangledown}&q_{\blacktriangle}&-q'_{\blacktriangle}\\
+q'_{\blacktriangledown}&q_{\blacktriangledown}&q'_{\blacktriangle}&q_{\blacktriangle}
+\end{pmatrix}.
+$$</p>
+<p>Its transpose is the matrix of the bar:</p>
+<p>$$
+M_{\overline{\breve Q}}=M_{\breve Q}^{\mathsf T}.
+$$</p>
+<p>This is the matrix form of the identity $\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$ in the real basis. In the complex basis $\{1,j\}$ the same matrix is the block matrix</p>
+<p>$$
+M_{\breve Q}=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
+$$</p>
+<p>acting on $(z,w)\in\mathbb{C}^2$ by $z+jw\mapsto(Q_{\blacktriangle}z+Q_{\blacktriangledown}w)+j(Q_{\blacktriangledown}z+Q_{\blacktriangle}w)$.</p>
+<h3 id="the-matrix-of-a-unit">The Matrix of a Unit</h3>
+<p>The modulus has the matrix</p>
+<p>$$
+M_{\breve r}=
+\begin{pmatrix}
+x&0&y&0\\
+0&x&0&y\\
+y&0&x&0\\
+0&y&0&x
+\end{pmatrix},
+\qquad \breve r=x+jy,
+$$</p>
+<p>symmetric with eigenvalues $x+y=\rho_+$ and $x-y=\rho_-$, each repeated twice; it is positive definite because both are positive.</p>
+<p>The unit factor has the matrix $M_u$, and the bar identity gives</p>
+<p>$$
+M_u^{\mathsf T}M_u=M_{\bar u}M_u=M_{\bar u u}=M_1=I.
+$$</p>
+<p>Its determinant is the determinant of the complex matrix $\begin{pmatrix}u_{\blacktriangle}&u_{\blacktriangledown}\\u_{\blacktriangledown}&u_{\blacktriangle}\end{pmatrix}$, which is $u_{\blacktriangle}^2-u_{\blacktriangledown}^2$, read in the real basis:</p>
+<p>$$
+\det M_u=|u_{\blacktriangle}^2-u_{\blacktriangledown}^2|^2=|u_{+}|^2|u_{-}|^2=1.
+$$</p>
+<p>Hence $M_u$ lies in the special orthogonal group $SO(4)$. The map $u\mapsto M_u$ is an injective homomorphism, and its image is a maximal torus of $SO(4)$.</p>
+<p>The decomposition of matrices is therefore</p>
+<p>$$
+M_{\breve Q}=M_{\breve r}M_u,
+$$</p>
+<p>with $M_{\breve r}$ symmetric positive definite and $M_u\in SO(4)$.</p>
+<h3 id="the-matrix-polar-decomposition">The Matrix Polar Decomposition</h3>
+<p><strong>Theorem.</strong> For every unit $\breve Q$, the matrix $M_{\breve Q}$ has the polar decomposition</p>
+<p>$$
+M_{\breve Q}=P U,\qquad P=M_{\breve r}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u,
+$$</p>
+<p>with $P$ symmetric positive definite and $U$ orthogonal. The factors are unique.</p>
+<p><em>Proof.</em> The identity $M_{\overline{\breve Q}}=M_{\breve Q}^{\mathsf T}$ gives $M_{\breve Q}M_{\breve Q}^{\mathsf T}=M_{\breve Q\overline{\breve Q}}=M_{\breve r^2}=M_{\breve r}^2$. The matrix $M_{\breve r}$ is symmetric with positive eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$, so it is the positive square root. The matrix $M_u=M_{\breve r}^{-1}M_{\breve Q}$ is orthogonal, because $M_uM_u^{\mathsf T}=M_{\breve r}^{-1}M_{\breve Q}M_{\breve Q}^{\mathsf T}M_{\breve r}^{-1}=I$. Uniqueness is the uniqueness of the positive square root and of the polar decomposition of an invertible matrix.</p>
+<p>The general polar decomposition of an invertible real $4\times4$ matrix $X$ is $X=M_+U$ with $M_+=(XX^{\mathsf T})^{1/2}$ and $U=M_+^{-1}X$. For $X=M_{\breve Q}$ the two factors collapse to the form above, because $M_{\breve Q}$ is the sum of two conformal blocks. The singular values of $M_{\breve Q}$ are $\rho_+,\rho_+,\rho_-,\rho_-$: each scale is repeated twice. The matrix is conformal exactly when $\rho_+=\rho_-$; otherwise it has two distinct singular values, and it is only block-conformal.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-generic-element">A Generic Element</h3>
+<p>Take $\breve Q=3+4i+j(1-i)$, that is $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. Then</p>
+<p>$$
+Q_{+}=4+3i,\qquad Q_{-}=2+5i,
+$$</p>
+<p>so</p>
+<p>$$
+\rho_+=|Q_{+}|=5,\qquad \rho_-=|Q_{-}|=\sqrt{29}=5.385164807134504.
+$$</p>
+<p>The squared Euclidean norm and the reduced norm are</p>
+<p>$$
+q=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2=25+2=27,\qquad
+q'=2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=2\operatorname{Re}\bigl((3+4i)(1+i)\bigr)=-2,
+$$</p>
+<p>and</p>
+<p>$$
+\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=(4+3i)(2+5i)=-7+26i,
+$$</p>
+<p>of modulus $\sqrt{49+676}=\sqrt{725}=\rho_+\rho_-$.</p>
+<p>The modulus is</p>
+<p>$$
+\breve r=\sqrt{\frac{q+\sqrt{725}}{2}}+j\,\operatorname{sgn}(q')\sqrt{\frac{q-\sqrt{725}}{2}}
+=5.192582403567252-0.192582403567252\,j,
+$$</p>
+<p>whose coordinates are $x=(\rho_++\rho_-)/2=5.192582403567252$ and $y=(\rho_+-\rho_-)/2=-0.192582403567252$. The unit factor has the circular components</p>
+<p>$$
+(Q_{+})/\rho_+=0.8+0.6i,\qquad (Q_{-})/\rho_-=\frac{2+5i}{\sqrt{29}}=0.371390676354104+0.928476690885259\,i.
+$$</p>
+<h3 id="the-hyperbolic-line">The Hyperbolic Line</h3>
+<p>For $\breve Q=\exp(j\phi)=\cosh\phi+j\sinh\phi$ the coefficients are $Q_{\blacktriangle}=\cosh\phi$ and $Q_{\blacktriangledown}=\sinh\phi$, so</p>
+<p>$$
+Q_{+}=e^{\phi},\qquad Q_{-}=e^{-\phi},\qquad
+\rho_+=e^{\phi},\qquad \rho_-=e^{-\phi}.
+$$</p>
+<p>The modulus is</p>
+<p>$$
+\breve r=\frac{e^{\phi}+e^{-\phi}}{2}+j\,\frac{e^{\phi}-e^{-\phi}}{2}=\cosh\phi+j\sinh\phi=\breve Q,
+$$</p>
+<p>and the unit factor is $1$. The relative scale is</p>
+<p>$$
+\frac{\rho_+}{\rho_-}=e^{2\phi},
+$$</p>
+<p>which is the boost parameter of the split-complex companion. There is no separate boost factor: the split unit $j$ is absorbed into the two scales, and the boost is their ratio.</p>
+<h3 id="the-zero-divisors">The Zero Divisors</h3>
+<p>For $\breve Q=1+j$ the coefficients are $Q_{\blacktriangle}=Q_{\blacktriangledown}=1$, so $Q_{-}=0$ and $\rho_-=0$: the element lies on the line $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and has no modulus–unit decomposition, because the second scale would have to be positive and it is zero. For $\breve Q=1-j$ the coefficients are $Q_{\blacktriangle}=1$, $Q_{\blacktriangledown}=-1$, so $Q_{+}=0$ and the decomposition fails in the other scale.</p>
+<p>The element $j$ is not a zero divisor: $Q_{\blacktriangle}=0$ and $Q_{\blacktriangledown}=1$, so $Q_{+}=1$ and $Q_{-}=-1$, both of modulus one, and</p>
+<p>$$
+j=1\cdot j
+$$</p>
+<p>with modulus $1$ and unit factor $j$.</p>
+<h3 id="a-table-of-examples">A Table of Examples</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\breve Q$</th>
+<th>$Q_{+}$</th>
+<th>$Q_{-}$</th>
+<th>$\rho_+$</th>
+<th>$\rho_-$</th>
+<th>unit factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3+4i+j(1-i)$</td>
+<td>$4+3i$</td>
+<td>$2+5i$</td>
+<td>$5$</td>
+<td>$\sqrt{29}$</td>
+<td>$0.8+0.6i$ and $(2+5i)/\sqrt{29}$</td>
+</tr>
+<tr>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$\sqrt2$</td>
+<td>$\sqrt2$</td>
+<td>$e^{i\pi/4}$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$ij$</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$ij$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$j$</td>
+</tr>
+<tr>
+<td>$\exp(j\ln2)$</td>
+<td>$2$</td>
+<td>$1/2$</td>
+<td>$2$</td>
+<td>$1/2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$1+j$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The row $1+i$ is the diagonal case: the two circular components are equal, so the modulus is the scalar $\sqrt2$ and the unit factor is the scalar $e^{i\pi/4}$; the reduced biquaternion decomposition reduces to the complex one. The row $ij$ is the pure $ij$-phase. The row $1+j$ is the zero divisor, where the decomposition does not exist.</p>
+<h3 id="the-reconstruction-error">The Reconstruction Error</h3>
+<p>For the generic element, the reconstruction from the displayed data gives</p>
+<p>$$
+\breve r u-(3+4i+j(1-i))
+$$</p>
+<p>of Euclidean norm $1.7\times10^{-15}$ in double precision: the displayed scales round-trip to $4+3i$ and $2+5i$ up to the last bit. The reconstruction is exact in exact arithmetic, because it is the complex reconstruction in the two circular components.</p>
+<h2 id="the-other-algebras">The Other Algebras</h2>
+<p>The modulus–unit decomposition exists in every algebra of the family, with the unit set of the norm in view.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>element</th>
+<th>norm</th>
+<th>modulus</th>
+<th>unit set</th>
+<th>topology of the unit set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$q$</td>
+<td>$q^2$</td>
+<td>$\lvert q\rvert$</td>
+<td>$\{\pm1\}$</td>
+<td>two points</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$Q=q+iq'$</td>
+<td>$q^2+q'^2$, definite</td>
+<td>$\sqrt{N}$</td>
+<td>$\mathrm{U}(1)$</td>
+<td>circle, compact and connected</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$Q=q+jq'$</td>
+<td>$q^2-q'^2$, indefinite</td>
+<td>$\sqrt{\lvert N\rvert}$, $N\neq0$</td>
+<td>$\{N=\pm1\}$</td>
+<td>four branches, non-compact</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\tilde q$</td>
+<td>sum of four squares, definite</td>
+<td>$\sqrt{N}$</td>
+<td>$S^3$</td>
+<td>sphere, compact and connected</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
+<td>$Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$, complex, multiplicative</td>
+<td>the pair $(\rho_+,\rho_-)$</td>
+<td>$T^2$</td>
+<td>two-torus, compact and connected</td>
+</tr>
+</tbody>
+</table></div>
+<p>The reduced biquaternion column is the only one in which the modulus is two-dimensional and the unit set is a product of two circles. The reduced norm is complex, so no scalar modulus exists; the Euclidean norm is real but does not give a group; the bar-unitary condition gives the compact torus. The failure set is the union of two real two-planes, of codimension two, as the origin is in $\mathbb{C}$; the split-complex failure set is the null cone, of codimension one.</p>
+<h2 id="summary">Summary</h2>
+<p>Every unit $\breve Q$ has exactly one modulus–unit polar decomposition</p>
+<p>$$
+\breve Q=\breve r u,\qquad \breve r=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2},\qquad u\bar u=1,
+$$</p>
+<p>with $\rho_+=|Q_{+}|>0$ and $\rho_-=|Q_{-}|>0$. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in the cone $P=\{x+jy:x>|y|\}$, and the unit factor is $u=\breve r^{-1}\breve Q$ on the torus $T^2=\{u:u\bar u=1\}$. The pair is unique. The decomposition exists exactly on the units and fails exactly on the zero divisors, the union of the two complex lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, of real codimension two.</p>
+<p>The group of units splits as</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}^{\times}\cong P\times T^2\cong\mathbb{R}^2\times T^2,
+$$</p>
+<p>connected of real dimension four, with fundamental group $\mathbb{Z}^2$. The torus is the maximal compact subgroup and a deformation retract. The compact factor has rank two, the scalar circle and the $ij$-circle, and the two circles meet at $\pm1$.</p>
+<p>The modulus is two-dimensional because the reduced norm is complex: it fixes only the product $\rho_+\rho_-=|\langle\breve Q\rangle_{\mathrm{ts}}|$, the Euclidean norm only the sum of squares $\rho_+^2+\rho_-^2$, and the sign of the boost is lost by both. The bar splits the algebra into the scale plane $\mathbb{R}\{1,j\}$ and the angle plane $\mathbb{R}\{i,ij\}$; the modulus lies in $\mathbb{R}\{1,j\}$, the logarithm of the unit factor in $\mathbb{R}\{i,ij\}$, and the algebraic norm has signature $(2,2)$ with $\mathbb{R}\{1,j\}$ positive and $\mathbb{R}\{i,ij\}$ negative.</p>
+<p>In the matrix picture the decomposition is the polar decomposition</p>
+<p>$$
+M_{\breve Q}=M_{\breve r}M_u,
+$$</p>
+<p>with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$ and orthogonal $M_u\in SO(4)$. The singular values are $\rho_+,\rho_+,\rho_-,\rho_-$, and the matrix is conformal exactly when the two scales are equal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>the reduced biquaternion algebra, basis $1,i,j,ij$</td>
+</tr>
+<tr>
+<td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
+<td>an element, $Q_{\blacktriangle}$ the scalar part, $Q_{\blacktriangledown}$ the split part</td>
+</tr>
+<tr>
+<td>$\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$</td>
+<td>the bar</td>
+</tr>
+<tr>
+<td>$Q_{+}$, $Q_{-}$</td>
+<td>the two circular components</td>
+</tr>
+<tr>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$</td>
+<td>the reduced norm</td>
+</tr>
+<tr>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2$</td>
+<td>the squared Euclidean norm</td>
+</tr>
+<tr>
+<td>$P=\{x+jy:x>\lvert y\rvert\}$</td>
+<td>the positive cone of the modulus</td>
+</tr>
+<tr>
+<td>$\breve r=\sqrt{\breve Q\bar{\breve Q}}$</td>
+<td>the modulus, an element of $P$</td>
+</tr>
+<tr>
+<td>$\rho_+=\lvert Q_{+}\rvert$, $\rho_-=\lvert Q_{-}\rvert$</td>
+<td>the two scales</td>
+</tr>
+<tr>
+<td>$\breve r=\rho(\cosh\phi+j\sinh\phi)$</td>
+<td>the modulus in radius and boost</td>
+</tr>
+<tr>
+<td>$u=\breve r^{-1}\breve Q$</td>
+<td>the unit factor</td>
+</tr>
+<tr>
+<td>$T^2=\{u:u\bar u=1\}$</td>
+<td>the unit torus</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}^{\times}\cong P\times T^2$</td>
+<td>the polar splitting of the group of units</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$</td>
+<td>the fixed and anti-fixed planes of the bar</td>
+</tr>
+<tr>
+<td>$M_{\breve Q}$</td>
+<td>the real matrix of multiplication by $\breve Q$</td>
+</tr>
+<tr>
+<td>$SO(4)$</td>
+<td>the special orthogonal group of $\mathbb{R}^4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Norm and Invertibility in the Algebra of the Reduced Biquaternions</a>, for the reduced norm and the unit criterion.</li>
+<li><a href="zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>, for the two zero-divisor lines.</li>
+<li><a href="the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Group of Units of the Algebra of the Reduced Biquaternions</a>, for the structure of $\mathbb{B}_{\mathrm{r}}^{\times}$.</li>
+<li><a href="the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html">The Two Involutions and the Group of Involutions of the Reduced Biquaternions</a>, for the bar and its fixed planes.</li>
+<li><a href="square-roots-of-a-general-element-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of a General Element in the Algebra of the Reduced Biquaternions</a>, for the four square roots.</li>
+<li><a href="modulus-unit-polar-decomposition-of-complex-numbers.html">Modulus–Unit Polar Decomposition of Complex Numbers</a>, for the complex member of the family.</li>
+<li><a href="modulus-unit-polar-decomposition-of-split-complex-numbers.html">Modulus–Unit Polar Decomposition of Split-Complex Numbers</a>, for the hyperbolic companion.</li>
+<li><a href="rational-chart-polar-decomposition-of-reduced-biquaternions.html">Rational-Chart Polar Decomposition of Reduced Biquaternions</a>, for the rational coordinate on the torus.</li>
+<li><a href="exponential-polar-decomposition-of-reduced-biquaternions.html">Exponential Polar Decomposition of Reduced Biquaternions</a>, for the Lie-algebra coordinate on the torus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

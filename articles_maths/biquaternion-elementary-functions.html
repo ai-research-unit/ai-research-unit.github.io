@@ -67,9 +67,10 @@
       <div class="article-body">
         <h1 id="biquaternion-elementary-functions"><strong>Biquaternion Elementary Functions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
-<p>The treatment is purely mathematical. No physics is invoked. No examples are given, except for the explicit counterexamples that establish the failure of the addition formulas in the non-commutative setting. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, and its four conjugations.</p>
-<p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two cases: when the vector part has a nonzero <strong>complex norm</strong>, and when the vector part is <strong>nilpotent</strong>. These two cases cover all possibilities, and they lead to two regimes: the <strong>oscillatory regime</strong> and the <strong>nilpotent regime</strong>. The purpose of this article is to develop the elementary functions in both regimes.</p>
+<p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces. The goal is to define the exponential, the logarithm, the power functions, the trigonometric and hyperbolic functions, and the inverse functions, and to compute them in closed form. The article mirrors <em>Quaternion Special Functions</em> in its treatment of the elementary functions, adapted to the complexified algebra. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<p>The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $P_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, and its four conjugations.</p>
+<p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two regimes: when the vector part has a nonzero <strong>complex norm</strong>, and when the complex norm vanishes. These two regimes cover all possibilities. The first is the <strong>oscillatory regime</strong>; the second contains the <strong>nilpotent case</strong>, where the vector part is nonzero and squares to zero, and the <strong>scalar case</strong>, where the vector part vanishes. The purpose of this article is to develop the elementary functions in all three cases, with the scalar case distinguished where its logarithm or its powers are larger.</p>
 <p>The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions. Throughout, a biquaternion is written</p>
 <p>$$
 \tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
@@ -100,15 +101,15 @@ $$
 $$
 the sum of the square of the scalar part and the square of the complex norm; this is the biquaternion analogue of $|A|^2 = a^2 + b^2$ for $A = a + bi$, with $a$ replaced by $Q_t$ and $b$ by $B$.</p>
 <h3 id="the-two-regimes">The Two Regimes</h3>
-<p>The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$, i.e. when $B = 0$; the criterion is in <em>Zero Divisors of the Biquaternion Algebra</em>, §<em>Pure Zero Divisors</em>. So there are two cases:</p>
+<p>The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$ and $\vec Q\neq0$, i.e. when $B = 0$ and $\vec Q\neq0$; the criterion is in <em>Zero Divisors of the Biquaternion Algebra</em>, §<em>Pure Zero Divisors</em>. The square root splits the discussion into two cases:</p>
 <ul>
 <li><strong>Oscillatory regime:</strong> $B \neq 0$. The vector part is not a zero divisor, and it can be normalized to a root of $-1$. The powers of $\vec Q$ alternate, as in the quaternion case.</li>
-<li><strong>Nilpotent regime:</strong> $B = 0$. The vector part is nilpotent, and $\vec Q^2 = 0$. The powers of $\vec Q$ truncate after the first.</li>
+<li><strong>Nilpotent regime:</strong> $B = 0$. The vector part is nilpotent, and $\vec Q^2 = 0$; when $\vec Q\neq0$ it is a pure zero divisor. The powers of $\vec Q$ truncate after the first.</li>
 </ul>
-<p>These two cases cover all possibilities for the vector part. The elementary functions are computed separately in each case, and the formulas are different in the two regimes.</p>
-<h3 id="the-case-math42">The Case $\vec Q = 0$</h3>
-<p>If $\vec Q = 0$, the biquaternion is a complex scalar $\tilde{Q} = Q_t e_t$, and the elementary functions reduce to the ordinary complex elementary functions. This is a degenerate subcase of both regimes, since $B = 0$ and $\vec Q = 0$. It is treated separately in each section.</p>
-<h3 id="the-case-math47-math48">The Case $B = 0$, $\vec Q \neq 0$</h3>
+<p>These two cases cover all possibilities for the vector part; the case $\vec Q=0$ is the degenerate end of the second and is treated separately below. The elementary functions are computed separately in each case, and the formulas are different in the two regimes.</p>
+<h3 id="the-case-math50">The Case $\vec Q = 0$</h3>
+<p>If $\vec Q = 0$, the biquaternion is a complex scalar $\tilde{Q} = Q_t e_t$, and the elementary functions reduce to the ordinary complex elementary functions. This is a degenerate subcase of the nilpotent regime, since $B = 0$ and $\vec Q = 0$; it is not in the oscillatory regime. It is treated separately in each section because its centraliser is the whole algebra.</p>
+<h3 id="the-case-math55-math56">The Case $B = 0$, $\vec Q \neq 0$</h3>
 <p>In the nilpotent regime with a nonzero vector part, the element $\vec Q$ is a pure zero divisor, and its square vanishes. The elementary functions truncate, and the formulas are linear in $\vec Q$.</p>
 <h2 id="the-subalgebra-generated-by-a-single-biquaternion">The Subalgebra Generated by a Single Biquaternion</h2>
 <p>The elementary functions of a single biquaternion are tractable because the powers of one element span a commutative subalgebra. The $\mathbb{C}$-linear span of $\{e_t, \tilde{Q}, \tilde{Q}^2, \dots\}$ is the <strong>commutative subalgebra generated by $\tilde{Q}$</strong>, written $\mathbb{C}[\tilde{Q}]$; it is the smallest subalgebra of $\mathbb{B}$ containing $e_t$ and $\tilde{Q}$.</p>
@@ -131,7 +132,7 @@ $$</p>
 \exp(\tilde{Q}) = \exp(Q_t e_t) \exp(\vec Q) = \exp(Q_t) \exp(\vec Q),
 $$</p>
 <p>where $\exp(Q_t)$ is the ordinary complex exponential. So it suffices to compute the exponential of the vector part $\vec Q$.</p>
-<h3 id="the-case-math90">The Case $B \neq 0$</h3>
+<h3 id="the-case-math98">The Case $B \neq 0$</h3>
 <p>If $B \neq 0$, write $\vec Q = B \vec u$ with $\vec u^2 = -e_t$. The powers of $\vec Q$ satisfy</p>
 <p>$$
 \vec Q^{2m} = (-1)^m B^{2m} e_t, \qquad \vec Q^{2m+1} = (-1)^m B^{2m+1} \vec u.
@@ -148,7 +149,7 @@ $$</p>
 <p>$$
 \exp(\tilde{Q}) = \exp(Q_t) \bigl(\cos B \, e_t + \sin B \, \vec u\bigr), \qquad B \neq 0.
 $$</p>
-<h3 id="the-case-math99">The Case $B = 0$</h3>
+<h3 id="the-case-math107">The Case $B = 0$</h3>
 <p>If $B = 0$, then $\vec Q^2 = 0$, so</p>
 <p>$$
 \vec Q^n = 0 \quad \text{for all } n \geq 2.
@@ -162,7 +163,7 @@ $$</p>
 \exp(\tilde{Q}) = \exp(Q_t) (e_t + \vec Q), \qquad B = 0.
 $$</p>
 <p>This is the analogue of the exponential of a nilpotent matrix: $\exp(N) = I + N$.</p>
-<h3 id="the-case-math106">The Case $\vec Q = 0$</h3>
+<h3 id="the-case-math114">The Case $\vec Q = 0$</h3>
 <p>If $\vec Q = 0$, the biquaternion is a complex scalar, and both formulas reduce to</p>
 <p>$$
 \exp(\tilde{Q}) = \exp(Q_t) e_t,
@@ -185,7 +186,7 @@ $$</p>
 $$</p>
 <p>In the nilpotent case, $\exp(Q_t) \neq 0$ and $(e_t + \vec Q)(e_t - \vec Q) = e_t - \vec Q^2 = e_t$.</p>
 <p><strong>Derivative in the scalar direction.</strong> The exponential satisfies $\partial/\partial Q_t \exp(\tilde{Q}) = \exp(\tilde{Q})$, where $\partial/\partial Q_t$ is the derivative in the scalar direction. This is the reason the exponential is the fundamental solution of the scalar differential operator $\partial/\partial Q_t$.</p>
-<p><strong>Derivative in the vector directions.</strong> The derivatives $\partial/\partial Q_k \exp(\tilde{Q})$ for $k = 1, 2, 3$ are <strong>not</strong> equal to $\exp(\tilde{Q}) \vec e_k$ or $\vec e_k \exp(\tilde{Q})$ in general. The reason is that $\partial/\partial Q_k \tilde{Q} = \vec e_k$ does not commute with $\tilde{Q}$ unless $\tilde{Q}$ lies in the subalgebra generated by $e_t$ and $\vec e_k$. The correct expression is the biquaternion analogue of the matrix identity $\partial \exp(M) = \int_0^1 \exp(sM)(\partial M)\exp((1-s)M)\,ds$, namely</p>
+<p><strong>Derivative in the vector directions.</strong> The derivatives $\partial/\partial Q_k \exp(\tilde{Q})$ for $k\in\{x,y,z\}$ are <strong>not</strong> equal to $\exp(\tilde{Q}) \vec e_k$ or $\vec e_k \exp(\tilde{Q})$ in general. The reason is that $\partial/\partial Q_k \tilde{Q} = \vec e_k$ does not commute with $\tilde{Q}$ unless $\tilde{Q}$ lies in the subalgebra generated by $e_t$ and $\vec e_k$. The correct expression is the biquaternion analogue of the matrix identity $\partial \exp(M) = \int_0^1 \exp(sM)(\partial M)\exp((1-s)M)\,ds$, namely</p>
 <p>$$
 \partial/\partial Q_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) \vec e_k \exp((1-s)\tilde{Q}) \, ds.
 $$</p>
@@ -197,7 +198,7 @@ $$</p>
 <p>where $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}\,\tilde{Q} = 2Q_t$ is the trace of the element. The verification is direct: in the oscillatory regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(\cos^2 B + \sin^2 B) = \exp(2 Q_t)$; in the nilpotent regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(1 + 0) = \exp(2 Q_t)$.</p>
 <h3 id="derivative-at-the-origin">Derivative at the Origin</h3>
 <p>The differential of the exponential at the origin is the identity, $d\exp_0 = \mathrm{id}$, so $\exp$ is a local diffeomorphism near $0$ and provides exponential coordinates near the identity of the group of units $\mathbb{B}^\times$ (the Lie-group side of this is in <em>Biquaternion Lie Group and Exponential Structure</em>).</p>
-<h3 id="the-group-law-math146-versus-math147">The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$</h3>
+<h3 id="the-group-law-math154-versus-math155">The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$</h3>
 <p>The exponential is not a homomorphism from the additive group of the algebra to the multiplicative group of the units. Its failure to be one is measured by the bracket.</p>
 <p><strong>Commuting case.</strong> If $[a,b] = 0$, then</p>
 <p>$$
@@ -216,10 +217,10 @@ $$</p>
 <p><strong>Concrete description.</strong> A biquaternion lies in the kernel exactly when its representing matrix is conjugate to $\mathrm{diag}(2\pi i m, 2\pi i n)$ with $m, n \in \mathbb{Z}$. The kernel is thus an infinite subset of $\mathbb{B}$, not an additive subgroup, since $\exp$ is not a homomorphism. It contains the scalars $2\pi i k\, e_t$ but much more: $\mathrm{diag}(0, 2\pi i)$ also exponentiates to the identity.</p>
 <p><strong>In biquaternion terms.</strong> The eigenvalues of the matrix representing $\tilde{Q}$ are $\lambda_\pm = Q_t \pm iB$, with $B = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$. So $\exp(\tilde{Q}) = e_t$ exactly when either $\vec Q = 0$ and $\tilde{Q} = Q_t e_t$ is a scalar with $Q_t \in 2\pi i\mathbb{Z}$, or $B \neq 0$ and both $Q_t \pm iB$ lie in $2\pi i\mathbb{Z}$. The second condition is equivalent to</p>
 <p>$$
-Q_t = \pi i k, \qquad B = \pi j, \qquad k, j \in \mathbb{Z}, \quad k \equiv j \pmod 2,
+Q_t = \pi i m, \qquad B = \pi n, \qquad m, n \in \mathbb{Z}, \quad m \equiv n \pmod 2,
 $$</p>
-<p>the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\vec Q \neq 0$, the matrix is a nonzero nilpotent, hence not diagonalizable and not in the kernel: $\exp(\vec Q) = e_t + \vec Q \neq e_t$.</p>
-<p><strong>Example.</strong> The biquaternion $\tilde{Q} = \pi i\, e_t + \pi\, \vec e_z$ has $Q_t = \pi i$, $B = \pi$, so $k = j = 1$ and $\exp(\tilde{Q}) = \exp(\pi i)(\cos\pi\, e_t + \sin\pi\, \vec e_z) = e_t$. Since $\langle\tilde{Q}\rangle_{\natural} = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.</p>
+<p>the eigenvalues then being $\pi i(m\pm n)$. If $B = 0$ but $\vec Q \neq 0$, the matrix is a nonzero nilpotent, hence not diagonalizable and not in the kernel: $\exp(\vec Q) = e_t + \vec Q \neq e_t$.</p>
+<p><strong>Example.</strong> The biquaternion $\tilde{Q} = \pi i\, e_t + \pi\, \vec e_z$ has $Q_t = \pi i$, $B = \pi$, so $m = n = 1$ and $\exp(\tilde{Q}) = \exp(\pi i)(\cos\pi\, e_t + \sin\pi\, \vec e_z) = e_t$. Since $\langle\tilde{Q}\rangle_{\natural} = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.</p>
 <p><strong>On the phrase "eigenvalues differ by a multiple of $2\pi i$".</strong> The condition implies such a difference, but the difference alone is weaker: $\tilde{Q} = e_t$ has equal eigenvalues yet $\exp(e_t) \neq e_t$. Each eigenvalue must be a multiple of $2\pi i$.</p>
 <h3 id="the-exponential-in-the-two-real-directions">The Exponential in the Two Real Directions</h3>
 <p>Let $\vec u$ be a real unit vector part, so that $\vec u^2 = -e_t$. The two real three-dimensional families of exponents — the bivector directions $\theta\vec u$ and the vector directions $\psi\, i\vec u$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in <em>The 12 Products of the Biquaternion Complex Space</em>.</p>
@@ -227,13 +228,525 @@ $$</p>
 <p>$$
 \exp(\theta\vec u) = \cos\theta\, e_t + \sin\theta\, \vec u,
 $$</p>
-<p>a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\vec u) = e_t$, and at the half-period $\exp(\pi\vec u) = -e_t$.</p>
+<p>a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $\langle\exp(\theta\vec u)\rangle_{\natural} = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\vec u) = e_t$, and at the half-period $\exp(\pi\vec u) = -e_t$.</p>
 <p><strong>The vector directions.</strong> With $(i\vec u)^2 = +e_t$ and real parameter $\psi \in \mathbb{R}$,</p>
 <p>$$
 \exp(\psi\, i\vec u) = \cosh\psi\, e_t + \sinh\psi\, i\vec u.
 $$</p>
-<p>This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.</p>
+<p>This element is Hermitian, lies in $\mathbb{M}_+$, and has $\langle\exp(\psi\,i\vec u)\rangle_{\natural} = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.</p>
 <p><strong>Comparison.</strong> A general exponent is $\tilde{Q} = \vec q + i\vec q'$ with $\vec q, \vec q'$ real vector parts; the two families commute only when $\vec q$ and $\vec q'$ are parallel, since $[\vec q, i\vec q'] = 2i\,(\vec q \times \vec q')$, and in general the closed form of §<em>The Exponential</em> with $Q_t = 0$ mixes the two families.</p>
+<h2 id="the-logarithm">The Logarithm</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>logarithm</strong> of a biquaternion $\tilde Q$ is an element $\tilde Q_{\log}$ of $\mathbb B$ with</p>
+<p>$$
+\exp(\tilde Q_{\log})=\tilde Q.
+$$</p>
+<p>The definition is an equation, not a formula; the formula is what solving the equation gives. The subscript is a label, not an operation: $\tilde Q_{\log}$ is a logarithm of $\tilde Q$, not a biquaternion whose scalar part is $\log Q_t$.</p>
+<p>Write the unknown by its scalar and vector parts,</p>
+<p>$$
+\tilde Q_{\log}=Q_{\log,t}e_t+\vec Q_{\log},
+\qquad
+\vec Q_{\log}=Q_{\log,x}\vec e_x+Q_{\log,y}\vec e_y+Q_{\log,z}\vec e_z.
+$$</p>
+<p>By the coefficient rule of <em>Conventions in Mathematics</em>, §<em>The Elements and their Coefficients</em>, the four coordinates are complex, $Q_{\log,t}=q_{\log,t}+iq'_{\log,t}$ and likewise $Q_{\log,x},Q_{\log,y},Q_{\log,z}$, and the subscript $\log$ is carried into each coordinate; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$, as its coefficients keep theirs. The <strong>scalar component</strong> $Q_{\log,t}$ is the coefficient of $e_t$; the <strong>vector component</strong> $\vec Q_{\log}$ is a pure biquaternion, not a scalar, and it carries the axis and the complex angle of the logarithm.</p>
+<p>The exponential is never a zero divisor, since $\langle\exp\tilde Q_1\rangle_{\natural}=\exp(2Q_{1t})\neq0$ for every $\tilde Q_1$ (§<em>Properties</em> of §<em>The Exponential</em>). Hence a logarithm can exist only on the group of units</p>
+<p>$$
+\mathbb B^\times=\{\tilde Q\in\mathbb B:\langle\tilde Q\rangle_{\natural}\neq0\}.
+$$</p>
+<p>Every unit has one, and the constructions below prove it. The logarithm is not unique, and no continuous single-valued branch exists on the whole group.</p>
+<h3 id="the-scalar-part">The Scalar Part</h3>
+<p>Let $\tilde Q_{\log}$ be a logarithm of $\tilde Q$, and write $\tilde Q_{\log}=Q_{\log,t}e_t+\vec Q_{\log}$. Taking biquaternion norms in $\exp(\tilde Q_{\log})=\tilde Q$ gives</p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}
+=\langle\exp(\tilde Q_{\log})\rangle_{\natural}
+=\exp(2Q_{\log,t}).
+$$</p>
+<p>Hence</p>
+<p>$$
+Q_{\log,t}=\frac12\operatorname{Log}\langle\tilde Q\rangle_{\natural}+\pi i n,\qquad n\in\mathbb Z,
+$$</p>
+<p>for a choice of complex logarithm of the norm. The real part of the scalar part is fixed,</p>
+<p>$$
+\operatorname{Re}Q_{\log,t}=\frac12\ln\bigl|\langle\tilde Q\rangle_{\natural}\bigr|,
+$$</p>
+<p>and the imaginary part is fixed modulo $\pi i$. In the quaternion case the norm is real and positive, so the scalar part is the unique real number $\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ and carries no branch. In $\mathbb B$ the scalar part carries one integer before the vector part is considered.</p>
+<h3 id="the-eigenvalue-formula">The Eigenvalue Formula</h3>
+<p>Let $\tilde Q$ be a unit with $B\neq0$, so $\lambda_\pm\neq0$. Write $\vec Q=B\vec u$ with $\vec u^2=-e_t$, and put</p>
+<p>$$
+\lambda_\pm=Q_t\pm iB,\qquad P_\pm=\frac12(e_t\mp i\vec u).
+$$</p>
+<p>Then</p>
+<p>$$
+P_+^2=P_+,\qquad P_-^2=P_-,\qquad P_+P_-=0,\qquad P_++P_-=e_t,
+$$</p>
+<p>and</p>
+<p>$$
+\tilde Q=\lambda_+P_++\lambda_-P_-,\qquad \tilde Q P_\pm=\lambda_\pm P_\pm.
+$$</p>
+<p>The $\lambda_\pm$ are the eigenvalues of $\tilde Q$, and the $P_\pm$ are the eigenprojections. The unordered pair $\{\lambda_+,\lambda_-\}$ is independent of the choice of square root $B$: replacing $B$ by $-B$ swaps $\lambda_+$ with $\lambda_-$ and $P_+$ with $P_-$, and leaves $\tilde Q$ unchanged.</p>
+<p>Every logarithm $\tilde Q_{\log}$ commutes with $\tilde Q$, because $\tilde Q_{\log}\exp(\tilde Q_{\log})=\exp(\tilde Q_{\log})\tilde Q_{\log}$. When $B\neq0$ the eigenvalues are distinct, so the centraliser of $\tilde Q$ is $\mathbb C[\tilde Q]=\operatorname{span}_{\mathbb C}\{e_t,\tilde Q\}$, and $\tilde Q_{\log}$ is a polynomial in $\tilde Q$. It therefore has the same eigenprojections,</p>
+<p>$$
+\tilde Q_{\log}=\mu_+P_++\mu_-P_-,
+$$</p>
+<p>and the equation $\exp(\tilde Q_{\log})=\tilde Q$ is equivalent to</p>
+<p>$$
+\exp\mu_\pm=\lambda_\pm,\qquad
+\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm,\qquad k_\pm\in\mathbb Z.
+$$</p>
+<p>Thus every logarithm is</p>
+<p>$$
+\tilde Q_{\log}
+=\mu_+P_++\mu_-P_-
+=\frac{\mu_++\mu_-}{2}\,e_t
++\frac{\mu_+-\mu_-}{2i}\,\vec u,
+\qquad
+\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm.
+$$</p>
+<p>This is the <strong>eigenvalue formula</strong>. It is the exact biquaternion form of the quaternion formula, with the real angle replaced by the complex angle</p>
+<p>$$
+\Theta=\frac{\mu_+-\mu_-}{2i}.
+$$</p>
+<p><strong>The two integers.</strong> The integers $k_+$ and $k_-$ are independent, but their sum and their difference are not:</p>
+<p>$$
+\mu_++\mu_-=\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-+2\pi i(k_++k_-),
+$$</p>
+<p>$$
+\frac{\mu_+-\mu_-}{2i}
+=\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}+\pi(k_+-k_-).
+$$</p>
+<p>The scalar shift is $\pi i(k_++k_-)$ and the vector shift is $\pi(k_+-k_-)\vec u$. The two shift integers $m=k_++k_-$ and $n=k_+-k_-$ have the same parity, since $m-n=2k_-$. Consequently</p>
+<p>$$
+\ker\exp\cap\mathbb C[\tilde Q]
+=\bigl\{\pi i m\,e_t+\pi n\,\vec u:\ m,n\in\mathbb Z,\ m\equiv n\pmod2\bigr\}.
+$$</p>
+<p>This is the <strong>parity-matched lattice</strong>. It is not the rectangular lattice $2\pi i\mathbb Z e_t\oplus2\pi\mathbb Z\vec u$: the scalar part and the angle cannot be shifted independently.</p>
+<p><strong>The polar form.</strong> Let $R$ be a square root of $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and let $\Theta$ be a complex number with</p>
+<p>$$
+\cos\Theta=\frac{Q_t}{R},\qquad \sin\Theta=\frac{B}{R}.
+$$</p>
+<p>Then</p>
+<p>$$
+\tilde Q=R\bigl(\cos\Theta\,e_t+\sin\Theta\,\vec u\bigr),
+$$</p>
+<p>and every logarithm reads</p>
+<p>$$
+\tilde Q_{\log}=\operatorname{Log}R\,e_t+\Theta\,\vec u,
+$$</p>
+<p>where $\operatorname{Log}R$ is any logarithm of $R$ and $\Theta$ any solution of the two equations. The eigenvalue formula corresponds to the choices</p>
+<p>$$
+\operatorname{Log}R=\frac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2},
+\qquad
+\Theta=\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}.
+$$</p>
+<p>Conversely, taking $R$ over its two square roots, $\operatorname{Log}R$ over all its branches and $\Theta$ over all solutions recovers every logarithm: the two choices of $R$ produce the even-even and the odd-odd shifts, whose union is the parity-matched lattice.</p>
+<h3 id="the-nilpotent-regime">The Nilpotent Regime</h3>
+<p>Assume $B=0$ and $\vec Q\neq0$. Then $\vec Q^2=0$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so a unit has $Q_t\neq0$. The element is a single Jordan block with eigenvalue $Q_t$. The logarithms are</p>
+<p>$$
+\tilde Q_{\log}=\bigl(\operatorname{Log}Q_t+2\pi i k\bigr)e_t+\frac{\vec Q}{Q_t},
+\qquad k\in\mathbb Z.
+$$</p>
+<p>In particular the principal choice is</p>
+<p>$$
+\operatorname{Log}\tilde Q=\operatorname{Log}Q_t\,e_t+\frac{\vec Q}{Q_t}.
+$$</p>
+<p><strong>Proof.</strong> Put $\tilde Q_{\log}=a e_t+b\vec Q$. Since $\vec Q^2=0$,</p>
+<p>$$
+\exp(\tilde Q_{\log})=e^a(e_t+b\vec Q).
+$$</p>
+<p>Equality with $Q_t e_t+\vec Q$ gives $e^a=Q_t$ and $e^a b=1$, hence $a=\operatorname{Log}Q_t+2\pi i k$ and $b=1/Q_t$. Conversely, this value exponentiates to $\tilde Q$. Every logarithm commutes with $\tilde Q$, and the centraliser of a nonzero nilpotent is exactly $\{a e_t+b\vec Q\}$, so there are no others.</p>
+<h3 id="the-scalar-case">The Scalar Case</h3>
+<p>Assume $\vec Q=0$, so $\tilde Q=Q_t e_t$ with $Q_t\neq0$. The centraliser is all of $\mathbb B$, and the fibre is larger than in the other two cases. A biquaternion $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ is a logarithm of $Q_t e_t$ exactly when one of the following holds:</p>
+<ul>
+<li>$\vec Q_1=0$ and $Q_{1t}=\operatorname{Log}Q_t+2\pi i k$ with $k\in\mathbb Z$;</li>
+<li>$\vec Q_1\neq0$, $(\vec Q_1,\vec Q_1)=(\pi n)^2$ for some $n\in\mathbb Z\setminus\{0\}$, and $Q_{1t}=\operatorname{Log}Q_t+\pi i n+2\pi i k$ with $k\in\mathbb Z$.</li>
+</ul>
+<p>In the second case, writing $\vec Q_1=B_1\vec u$ with $B_1=\pm\pi n$ gives</p>
+<p>$$
+\exp\vec Q_1=\cos(\pi n)\,e_t=(-1)^n e_t,
+$$</p>
+<p>and $e^{Q_{1t}}=(-1)^n Q_t$, so the product is $Q_t e_t$. Conversely, if $\exp\tilde Q_1=Q_t e_t$, then either $\vec Q_1=0$, or $\vec Q_1\neq0$ and $\sin B_1=0$ with $\cos B_1=\pm1$, which forces $B_1\in\pi\mathbb Z\setminus\{0\}$; the scalar equation then gives $Q_{1t}$.</p>
+<p><strong>The eigenvalue description.</strong> Equivalently, the logarithms of a complex scalar are exactly the diagonalisable biquaternions whose two eigenvalues lie in $\operatorname{Log}Q_t+2\pi i\mathbb Z$. A non-diagonalisable biquaternion has $\exp\tilde Q_1=e^{Q_{1t}}(e_t+\vec Q_1)\neq Q_t e_t$, so it cannot occur. The set is the translate $\operatorname{Log}Q_t\,e_t+\ker\exp$; it is not a coset in the group sense, because $\ker\exp$ is not a subgroup.</p>
+<p><strong>The fibre is not discrete.</strong> For $\tilde Q=e_t$, the elements $2\pi\vec e_x$ and $2\pi\vec e_y$ are both logarithms, but their difference $2\pi(\vec e_x-\vec e_y)$ is not a logarithm of $e_t$: its exponential has scalar part $\cos(2\pi\sqrt2)\neq1$. Two logarithms need not differ by an element of the kernel, even though each is the principal logarithm plus a kernel element. The scalar logarithms also contain continuous families: for each $n\neq0$, the set $\{(\vec Q_1,\vec Q_1)=(\pi n)^2\}$ is a complex quadric, not a finite sphere. The quaternion spheres of logarithms of a real scalar are replaced by complex quadrics.</p>
+<h3 id="the-coordinates-of-a-logarithm">The Coordinates of a Logarithm</h3>
+<p>The components in the three regimes are collected in one table. The first row is the eigenvalue formula, the second the nilpotent formula, and the last two the two kinds of scalar logarithm.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>$Q_{\log,t}$</th>
+<th>$\vec Q_{\log}$</th>
+<th>$\tilde Q_{\log}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B\neq0$</td>
+<td>$\dfrac{\mu_++\mu_-}{2}$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$, $k_\pm\in\mathbb Z$</td>
+<td>$\dfrac{\mu_+-\mu_-}{2i}\,\vec u$</td>
+<td>$\dfrac{\mu_++\mu_-}{2}\,e_t+\dfrac{\mu_+-\mu_-}{2i}\,\vec u$</td>
+</tr>
+<tr>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$</td>
+<td>$\dfrac{\vec Q}{Q_t}$</td>
+<td>$(\operatorname{Log}Q_t+2\pi i k)e_t+\dfrac{\vec Q}{Q_t}$</td>
+</tr>
+<tr>
+<td>$\vec Q=0$, scalar logarithms</td>
+<td>$\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$</td>
+<td>$0$</td>
+<td>$(\operatorname{Log}Q_t+2\pi i k)e_t$</td>
+</tr>
+<tr>
+<td>$\vec Q=0$, vector logarithms</td>
+<td>$\operatorname{Log}Q_t+\pi i n+2\pi i k$, $n\in\mathbb Z\setminus\{0\}$, $k\in\mathbb Z$</td>
+<td>$\vec Q_1$, $(\vec Q_1,\vec Q_1)=(\pi n)^2$</td>
+<td>$(\operatorname{Log}Q_t+\pi i n+2\pi i k)e_t+\vec Q_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The scalar component is complex. Its real part is fixed by the biquaternion norm,</p>
+<p>$$
+\operatorname{Re}Q_{\log,t}=\frac12\ln\bigl|\langle\tilde Q\rangle_{\natural}\bigr|,
+$$</p>
+<p>and its imaginary part is fixed modulo $\pi i$; in the first row the scalar shift is $\pi i(k_++k_-)$ and the vector shift is $\pi(k_+-k_-)\vec u$, the two integers $k_++k_-$ and $k_+-k_-$ have the same parity, and that parity is what restricts the vector coordinate. The vector component is pure and carries the axis $\vec u$ and the complex angle; it is not the scalar $Q'_{\log}$ of the complex case, but its three-coordinate analogue. The last two rows are the two kinds of scalar logarithm, the scalar ones with zero vector component and the vector ones whose vector component runs over the complex quadric.</p>
+<h3 id="the-principal-logarithm">The Principal Logarithm</h3>
+<p>Define $\operatorname{Log}\tilde Q$ by the three formulas</p>
+<p>$$
+\operatorname{Log}\tilde Q=
+\begin{cases}
+\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}\,e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\,\vec u, & B\neq0,\\[2mm]
+\operatorname{Log}Q_t\,e_t+\dfrac{\vec Q}{Q_t}, & B=0,\ \vec Q\neq0,\\[2mm]
+\operatorname{Log}Q_t\,e_t, & \vec Q=0,
+\end{cases}
+$$</p>
+<p>where every $\operatorname{Log}$ on the right is the principal complex logarithm, with argument in $(-\pi,\pi]$. This is single-valued on all of $\mathbb B^\times$ and satisfies $\exp(\operatorname{Log}\tilde Q)=\tilde Q$. Every eigenvalue of $\operatorname{Log}\tilde Q$ has imaginary part in $(-\pi,\pi]$; this is the defining property of the branch.</p>
+<p>For example, on the principal branch the two components take the following values. The first element is oscillatory, the second lies in the nilpotent regime with $\vec Q^2=0$, and the third is scalar.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q$</th>
+<th>$Q_{\log,t}$</th>
+<th>$\vec Q_{\log}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3e_t+4\vec e_x$</td>
+<td>$\ln 5$</td>
+<td>$\arccos(3/5)\,\vec e_x$</td>
+</tr>
+<tr>
+<td>$2e_t+(1+i)(\vec e_x+i\vec e_y)$</td>
+<td>$\ln 2$</td>
+<td>$\dfrac{1+i}{2}(\vec e_x+i\vec e_y)$</td>
+</tr>
+<tr>
+<td>$(1+i)e_t$</td>
+<td>$\ln\sqrt2+\dfrac{\pi i}{4}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first row has $\lambda_\pm=3\pm4i$ and $B=4$; the second has $B=0$ and $Q_t=2$; the third has $\vec Q=0$ and $Q_t=1+i$. The logarithm is reassembled as $\tilde Q_{\log}=Q_{\log,t}e_t+\vec Q_{\log}$ in each row.</p>
+<p><strong>Cuts.</strong> The principal complex logarithm is discontinuous across the negative real axis. Hence $\operatorname{Log}$ is discontinuous across the union of the walls</p>
+<p>$$
+\mathcal W
+=\{\tilde Q:\lambda_+\in(-\infty,0]\}\cup\{\tilde Q:\lambda_-\in(-\infty,0]\}
+$$</p>
+<p>when $B\neq0$, and across the wall $Q_t\in(-\infty,0]$ when $B=0$. Each oscillatory wall is a real hypersurface of $\mathbb B$; the walls in the $B=0$ regimes lie in the codimension-two set $B=0$ and are lower-dimensional. On the complement of $\mathcal W$ the principal logarithm is real-analytic. Across a wall the two sides differ by $2\pi i P_\pm$ in the oscillatory regime and by $2\pi i e_t$ in the two $B=0$ regimes; these are kernel elements. The cut is an artefact of the branch, not of the exponential, and it can be moved by choosing another ray in each eigenvalue plane.</p>
+<p><strong>The principal angle.</strong> In the oscillatory regime the eigenvalue formula gives</p>
+<p>$$
+\Theta=\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}
+=\frac{\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-}{2}
+-\frac{i}{2}\ln\frac{|\lambda_+|}{|\lambda_-|}.
+$$</p>
+<p>Its real part lies in $(-\pi,\pi)$, while its imaginary part is unbounded. There is no bounded fundamental domain in the $\Theta$ plane; the principal domain is the strip in the eigenvalue plane defined next.</p>
+<h3 id="the-principal-domain">The Principal Domain</h3>
+<p>Let</p>
+<p>$$
+D=\bigl\{\tilde Q_1\in\mathbb B:\text{every eigenvalue of }\tilde Q_1\text{ has imaginary part in }(-\pi,\pi]\bigr\}.
+$$</p>
+<p>Then $\exp$ maps $D$ bijectively onto $\mathbb B^\times$, and $\operatorname{Log}$ is its inverse. The interior $D^\circ$, where the imaginary parts lie in $(-\pi,\pi)$, maps onto $\mathbb B^\times\setminus\mathcal W$, and there $\operatorname{Log}$ is real-analytic.</p>
+<p><strong>Proof.</strong> For surjectivity, let $\tilde Q\in\mathbb B^\times$. If $B\neq0$, the numbers $\operatorname{Log}\lambda_\pm$ have imaginary parts in $(-\pi,\pi]$, and</p>
+<p>$$
+\tilde Q_1=(\operatorname{Log}\lambda_+)P_++(\operatorname{Log}\lambda_-)P_-
+$$</p>
+<p>lies in $D$ and exponentiates to $\tilde Q$. If $B=0$, the element $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ lies in $D$ and exponentiates to $\tilde Q$.</p>
+<p>For injectivity, let $\tilde Q_1,\tilde Q_2\in D$ with $\exp\tilde Q_1=\exp\tilde Q_2=\tilde Q$. Both commute with $\tilde Q$. If $\tilde Q$ is not scalar, they lie in the commutative centraliser, so $\tilde Q_1-\tilde Q_2$ is a kernel element; its eigenvalues are differences of eigenvalues in $(-2\pi,2\pi)$, hence are $0$. A kernel element with all eigenvalues $0$ is $0$ (in the nilpotent centraliser the kernel is scalar), so $\tilde Q_1=\tilde Q_2$. If $\tilde Q$ is scalar, the only eigenvalue in the strip that exponentiates to $Q_t$ is $\operatorname{Log}Q_t$, so both $\tilde Q_i$ have both eigenvalues equal to $\operatorname{Log}Q_t$; a non-diagonalisable element with that repeated eigenvalue would exponentiate to a non-scalar element, so both are scalar and equal. Thus $\exp$ is injective. The analyticity statement is the inverse function theorem on $D^\circ$, where the eigenvalues differ by less than $2\pi$ and the differential of the exponential is invertible.</p>
+<p><strong>No global continuous branch.</strong> The principal logarithm is defined pointwise on all units, but it is not continuous on all of them. No continuous single-valued logarithm exists on $\mathbb B^\times$. If $L$ were one, then for $\lambda\in\mathbb C^\times$ the trace $\operatorname{Tr}L(\lambda e_t)$ would be a continuous logarithm of $\lambda^2$, since</p>
+<p>$$
+\exp\bigl(\operatorname{Tr}L(\lambda e_t)\bigr)
+=\det\exp L(\lambda e_t)
+=\langle\lambda e_t\rangle_{\natural}
+=\lambda^2.
+$$</p>
+<p>But $\lambda^2$ winds twice around the origin and has no continuous logarithm on $\mathbb C^\times$: the imaginary part would have to increase by $4\pi$ around the unit circle and return to its value. Equivalently, $\mathbb B^\times$ is homotopy equivalent to $U(2)$, whose fundamental group is $\mathbb Z$. A branch exists on the complement of any chosen walls.</p>
+<h3 id="the-kernel-and-the-fibre">The Kernel and the Fibre</h3>
+<p>The kernel of the exponential is computed in §<em>The Kernel of the Exponential</em>: $\exp\tilde Q_1=e_t$ exactly when $\tilde Q_1$ is diagonalisable over $\mathbb C$ and every eigenvalue lies in $2\pi i\mathbb Z$. For an element $\tilde Q_1$, write $B_1$ for a square root of $(\vec Q_1,\vec Q_1)$. In the three regimes the condition reads as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element $\tilde Q_1$</th>
+<th>condition for $\exp\tilde Q_1=e_t$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar, $\vec Q_1=0$</td>
+<td>$Q_{1t}\in2\pi i\mathbb Z$</td>
+</tr>
+<tr>
+<td>$B_1\neq0$</td>
+<td>$Q_{1t}=\pi i m$, $B_1=\pi n$, $m\equiv n\pmod2$</td>
+</tr>
+<tr>
+<td>$B_1=0$, $\vec Q_1\neq0$</td>
+<td>never</td>
+</tr>
+</tbody>
+</table></div>
+<p>For the identity $\tilde Q=e_t$, the fibre is $\ker\exp$ itself: the scalar logarithms $2\pi i k\,e_t$ and the vector logarithms $(\pi i n+2\pi i k)e_t+\vec Q_1$ with $n\in\mathbb Z\setminus\{0\}$ and $(\vec Q_1,\vec Q_1)=(\pi n)^2$. The kernel is not a subgroup. For example $2\pi\vec e_x$ and $2\pi\vec e_y$ belong to it, while their sum does not.</p>
+<p>For a non-scalar unit $\tilde Q$, the centraliser is commutative and the logarithms are</p>
+<p>$$
+\tilde Q_{\log}\in\operatorname{Log}\tilde Q+\bigl(\ker\exp\cap\mathbb C[\tilde Q]\bigr),
+$$</p>
+<p>a lattice coset: the parity-matched lattice when $B\neq0$, and $2\pi i\mathbb Z e_t$ in the nilpotent regime. For a scalar unit, the logarithms are the translate $\operatorname{Log}Q_t\,e_t+\ker\exp$ as a set; because the kernel is not a subgroup, two logarithms of the same scalar need not differ by a kernel element.</p>
+<h3 id="the-two-compositions">The Two Compositions</h3>
+<p>The exponential is single-valued and not injective; the logarithm is multi-valued. The two compositions behave as follows.</p>
+<p><em>Right inverse.</em> For every $\tilde Q\in\mathbb B^\times$,</p>
+<p>$$
+\exp(\operatorname{Log}\tilde Q)=\tilde Q.
+$$</p>
+<p>This is the construction of the principal logarithm: in the oscillatory regime, $\exp((\operatorname{Log}\lambda_\pm)P_\pm)=\lambda_\pm P_\pm$; in the nilpotent regime, $\exp(\operatorname{Log}Q_t\,e_t+\vec Q/Q_t)=Q_t e_t+\vec Q$; in the scalar case, $\exp(\operatorname{Log}Q_t)=Q_t$.</p>
+<p><em>Left inverse.</em> For every $\tilde Q_1\in D$,</p>
+<p>$$
+\operatorname{Log}(\exp\tilde Q_1)=\tilde Q_1.
+$$</p>
+<p>For a general $\tilde Q_1$, the principal logarithm of $\exp\tilde Q_1$ is the unique element of $D$ in the fibre, and it differs from $\tilde Q_1$ by a kernel element. In the oscillatory regime, let $\mu_\pm$ be the eigenvalues of $\tilde Q_1$ and let $m_\pm$ be the integers with $\operatorname{Im}(\mu_\pm-2\pi i m_\pm)\in(-\pi,\pi]$. Then</p>
+<p>$$
+\operatorname{Log}(\exp\tilde Q_1)=\tilde Q_1-2\pi i\bigl(m_+P_++m_-P_-\bigr).
+$$</p>
+<p>In the nilpotent regime, for $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1^2=0$,</p>
+<p>$$
+\operatorname{Log}(\exp\tilde Q_1)=\tilde Q_1-2\pi i m e_t,
+$$</p>
+<p>where $m$ is the integer with $\operatorname{Im}(Q_{1t}-2\pi i m)\in(-\pi,\pi]$. In the scalar case, the principal logarithm is $\operatorname{Log}Q_t\,e_t$, and the difference $\tilde Q_1-\operatorname{Log}Q_t\,e_t$ is a kernel element, which may have a nonzero vector part.</p>
+<p>At an eigenvalue with imaginary part exactly $\pi$, the half-open strip chooses the endpoint; this is the same convention as the principal complex logarithm.</p>
+<p><strong>Caution.</strong> The logarithm is not additive in general. For commuting $\tilde Q_1$ and $\tilde Q_2$, a sum of a logarithm of $\tilde Q_1$ and a logarithm of $\tilde Q_2$ is a logarithm of $\tilde Q_1\tilde Q_2$, and the principal values satisfy the corresponding identity only when the sum of the two principal logarithms lies in $D$. It fails for noncommuting arguments.</p>
+<p><strong>Conjugation.</strong> The principal logarithm commutes with quaternion conjugation,</p>
+<p>$$
+\operatorname{Log}(\tilde Q^{\natural})=(\operatorname{Log}\tilde Q)^{\natural},
+$$</p>
+<p>on its domain. The square root $B$ can be chosen the same for $\tilde Q$ and $\tilde Q^{\natural}$; then $\vec u$ changes sign, $\lambda_+$ and $\lambda_-$ are exchanged, and both sides change sign in the vector part.</p>
+<h3 id="the-derivative-of-the-logarithm">The Derivative of the Logarithm</h3>
+<p>On the complement of the walls the logarithm is real-analytic, and its differential at $\tilde Q$ is the inverse of the differential of the exponential at $\operatorname{Log}\tilde Q$. It is not left or right multiplication by $\tilde Q^{-1}$.</p>
+<p>For $B\neq0$, with the eigenprojections $P_\pm$ and the eigenvalues $\lambda_\pm$,</p>
+<p>$$
+d\operatorname{Log}_{\tilde Q}(H)
+=\frac{P_+HP_+}{\lambda_+}
++\frac{P_-HP_-}{\lambda_-}
++\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{\lambda_+-\lambda_-}
+\bigl(P_+HP_-+P_-HP_+\bigr).
+$$</p>
+<p>This is the Fréchet derivative of the matrix logarithm, read in the algebra. If $H$ commutes with $\tilde Q$, the cross terms vanish and</p>
+<p>$$
+d\operatorname{Log}_{\tilde Q}(H)=\tilde Q^{-1}H.
+$$</p>
+<p>If $H$ does not commute with $\tilde Q$, the cross terms need not vanish, and the derivative is not a multiplication by $\tilde Q^{-1}$ on either side.</p>
+<p><strong>Example.</strong> Take $\tilde Q=(3+i)e_t+4\vec e_x$ and $H=\vec e_y$. The eigenvalues are $\lambda_+=3+5i$ and $\lambda_-=3-3i$, and the formula gives</p>
+<p>$$
+d\operatorname{Log}_{\tilde Q}(\vec e_y)=\Delta\,\vec e_y,
+\qquad
+\Delta=\frac{\operatorname{Log}(3+5i)-\operatorname{Log}(3-3i)}{8i}
+=0.2269718737-0.0397492979i.
+$$</p>
+<p>A central difference with step $10^{-6}$ reproduces the value to $3.5\times10^{-15}$. By contrast,</p>
+<p>$$
+\tilde Q^{-1}\vec e_y
+=(0.1274509804+0.0098039216i)\vec e_y
++(-0.1568627451+0.0392156863i)\vec e_z,
+$$</p>
+<p>which has a component in $\vec e_z$ that the derivative does not have. The logarithm is a real-analytic map of eight real variables; it is not a biquaternion multiplication, and the complex identity $d\operatorname{Log}_{\tilde Q}(H)=\tilde Q^{-1}H$ is recovered only on the subspace of directions that commute with $\tilde Q$. In the nilpotent regime, write $\tilde Q=a e_t+N$ with $a=Q_t$ and $N=\vec Q$, so that $N^2=0$, and write $H=h_t e_t+\vec H$. The same series, or the resolvent integral, gives</p>
+<p>$$
+d\operatorname{Log}_{\tilde Q}(H)
+=\frac{H}{a}-\frac{NH+HN}{2a^2}+\frac{NHN}{3a^3},
+\qquad N^2=0.
+$$</p>
+<p>The series terminates after the third term because $N^3=0$. Multiplication by $\tilde Q^{-1}=e_t/a-N/a^2$ is $H/a-NH/a^2$, so the derivative differs from it by $(NH-HN)/(2a^2)+NHN/(3a^3)$. It agrees with the multiplication when $H$ commutes with $N$, and not on every direction that leaves the centraliser.</p>
+<p><strong>The power law.</strong> For every integer $n$,</p>
+<p>$$
+\exp(n\operatorname{Log}\tilde Q)=\tilde Q^n.
+$$</p>
+<p>Thus $n\operatorname{Log}\tilde Q$ is a logarithm of $\tilde Q^n$; the principal values of the two sides agree only when $n\operatorname{Log}\tilde Q$ lies in $D$. The identity $\log(\tilde Q^n)=n\log\tilde Q$ therefore holds between the multi-valued logarithms, and not in general between principal values.</p>
+<h3 id="summary-of-the-logarithm">Summary of the Logarithm</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>a logarithm</th>
+<th>principal logarithm</th>
+<th>fibre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B\neq0$</td>
+<td>$\mu_+P_++\mu_-P_-$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$</td>
+<td>the same with principal $\operatorname{Log}\lambda_\pm$</td>
+<td>coset of the parity-matched lattice</td>
+</tr>
+<tr>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$(\operatorname{Log}Q_t+2\pi i k)e_t+\vec Q/Q_t$</td>
+<td>$\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$</td>
+<td>$2\pi i\mathbb Z e_t$</td>
+</tr>
+<tr>
+<td>$\vec Q=0$</td>
+<td>scalar and vector values of §<em>The Scalar Case</em></td>
+<td>$\operatorname{Log}Q_t\,e_t$</td>
+<td>translate of $\ker\exp$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every unit has a logarithm. The principal logarithm is single-valued and satisfies $\exp(\operatorname{Log}\tilde Q)=\tilde Q$; it is discontinuous on the walls where an eigenvalue is a negative real number, and no continuous single-valued branch exists on the whole unit group. The ambiguity of the logarithm is the kernel of the exponential, constrained by the centraliser when the element is not scalar.</p>
+<h2 id="the-power-functions">The Power Functions</h2>
+<h3 id="definition_2">Definition</h3>
+<p>For $\tilde Q\in\mathbb B$ and $\alpha\in\mathbb C$, the <strong>power function</strong> is defined by</p>
+<p>$$
+\tilde Q^\alpha=\exp(\alpha\operatorname{Log}\tilde Q)
+$$</p>
+<p>on the principal branch, and by $\exp(\alpha\tilde Q_{\log})$ for any logarithm $\tilde Q_{\log}$ in the multi-valued reading. For general $\alpha$ the domain is the group of units $\mathbb B^\times$; for $\alpha$ a non-negative integer the power is also defined on all of $\mathbb B$ by repeated multiplication. The power inherits the multivaluedness of the logarithm: it is single-valued for integer $\alpha$, finite-valued for rational $\alpha$ in the generic case, and infinite-valued for irrational $\alpha$. The formulas below give the principal branch unless stated otherwise.</p>
+<h3 id="the-case-math658">The Case $B \neq 0$</h3>
+<p>On the principal branch, with the principal $R$ and $\Theta$ of §<em>The Eigenvalue Formula</em>,</p>
+<p>$$
+\tilde Q^\alpha
+=R^\alpha\bigl(\cos(\alpha\Theta)\,e_t+\sin(\alpha\Theta)\,\vec u\bigr),
+\qquad B\neq0.
+$$</p>
+<p>Read on all logarithms, the values are</p>
+<p>$$
+\tilde Q^\alpha
+=\exp(\alpha\operatorname{Log}\tilde Q)
+\exp\bigl(\alpha(\pi i m\,e_t+\pi n\,\vec u)\bigr),
+\qquad m\equiv n\pmod2,
+$$</p>
+<p>and the second factor is</p>
+<p>$$
+\exp\bigl(\alpha(\pi i m\,e_t+\pi n\,\vec u)\bigr)
+=e^{\alpha\pi i m}\bigl(\cos(\alpha\pi n)+\sin(\alpha\pi n)\,\vec u\bigr).
+$$</p>
+<p>For $\alpha=p/q$ rational in lowest terms this set is finite; for irrational $\alpha$ it is countably infinite; for integer $\alpha$ it collapses to the single value $\tilde Q^\alpha$ by repeated multiplication. The parity condition is the same one that governs the logarithm: the scalar and angular shifts cannot be chosen independently.</p>
+<h3 id="the-case-math668-math669">The Case $B = 0$, $\vec Q \neq 0$</h3>
+<p>In the nilpotent regime the principal value is</p>
+<p>$$
+\tilde Q^\alpha
+=Q_t^\alpha e_t+\alpha Q_t^{\alpha-1}\vec Q,
+\qquad B=0,\quad \vec Q\neq0,
+$$</p>
+<p>with $Q_t\neq0$ required for invertibility. The linear term $\alpha Q_t^{\alpha-1}\vec Q$ is the analogue of the expansion $(1+a)^\alpha\approx1+\alpha a$ for $a^2=0$. The general values are</p>
+<p>$$
+\tilde Q^\alpha
+=e^{2\pi i\alpha k}\bigl(Q_t^\alpha e_t+\alpha Q_t^{\alpha-1}\vec Q\bigr),
+\qquad k\in\mathbb Z.
+$$</p>
+<p>For integer $\alpha$ the phase is $1$ and the power is single-valued; for non-integer rational $\alpha$ the set is finite; for irrational $\alpha$ it is countably infinite.</p>
+<h3 id="the-case-math680">The Case $\vec Q = 0$</h3>
+<p>If $\tilde Q=Q_t e_t$, the principal value is the ordinary complex power $Q_t^\alpha$. Read on all logarithms, the power is larger. The scalar logarithms give the values</p>
+<p>$$
+Q_t^\alpha e^{2\pi i\alpha k},\qquad k\in\mathbb Z,
+$$</p>
+<p>and the vector logarithms of §<em>The Scalar Case</em> give, for each $n\in\mathbb Z\setminus\{0\}$, each $k\in\mathbb Z$ and each $\vec Q_1$ with $(\vec Q_1,\vec Q_1)=(\pi n)^2$,</p>
+<p>$$
+\exp\bigl(\alpha(\operatorname{Log}Q_t+\pi i n+2\pi i k)\bigr)\exp(\alpha\vec Q_1).
+$$</p>
+<p>The vector part ranges over the complex quadric $(\vec Q_1,\vec Q_1)=(\pi n)^2$, so this part of the set can be continuous even when $\alpha$ is rational. In particular the square roots of $e_t$ are not two: for every root $\vec u$ of $-e_t$, the element $i\vec u$ satisfies $(i\vec u)^2=e_t$. The statement that a square root has only two branches is a non-real quaternion statement and is false in $\mathbb B$.</p>
+<h3 id="summary-of-the-power-function">Summary of the Power Function</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>principal value</th>
+<th>full set of values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B\neq0$</td>
+<td>$R^\alpha(\cos(\alpha\Theta)e_t+\sin(\alpha\Theta)\vec u)$</td>
+<td>multiply by $e^{\alpha\pi i m}(\cos(\alpha\pi n)+\sin(\alpha\pi n)\vec u)$, $m\equiv n\pmod2$</td>
+</tr>
+<tr>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$Q_t^\alpha e_t+\alpha Q_t^{\alpha-1}\vec Q$</td>
+<td>multiply by $e^{2\pi i\alpha k}$, $k\in\mathbb Z$</td>
+</tr>
+<tr>
+<td>$\vec Q=0$</td>
+<td>$Q_t^\alpha$</td>
+<td>scalar phases and vector quadrics of §<em>The Case $\vec Q = 0$</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The table gives the principal branch in the middle column and the complete multi-valued set in the right column.</p>
+<h3 id="properties_1">Properties</h3>
+<p><strong>Integer powers.</strong> For integer $n$, the power function is single-valued on $\mathbb B^\times$ and equals the ordinary power $\tilde Q^n$. For non-negative $n$ the ordinary power is defined by repeated multiplication on all of $\mathbb B$, including the zero divisors; for negative $n$ it is defined on the units. The formula $\tilde Q^n=\exp(n\tilde Q_{\log})$ holds on the units for every logarithm, and the identity $\operatorname{Log}(\tilde Q^n)=n\operatorname{Log}\tilde Q$ holds when $n\operatorname{Log}\tilde Q$ lies in the principal domain.</p>
+<p><strong>Non-multiplicativity.</strong> In general,</p>
+<p>$$
+(\tilde Q_1\tilde Q_2)^\alpha\neq\tilde Q_1^\alpha\tilde Q_2^\alpha,
+$$</p>
+<p>because the logarithm is not multiplicative.</p>
+<p><strong>The square root.</strong> The square root $\tilde Q^{1/2}$ is the image of the logarithm under $\alpha=1/2$. For a generic element of the oscillatory regime it has four values, not two: if $R_0=\exp(\frac12\operatorname{Log}\tilde Q)$ is the principal square root and $\vec u$ is the axis of $\tilde Q$, the four values are $\pm R_0$ and $\pm i\vec u R_0$. The principal branch gives one of them; the other three come from the parity-matched lattice. In the nilpotent regime there are two values, $\pm R_0$. On the scalar axis the fibre can be continuous: the square roots of $e_t$ include $i\vec u$ for every root $\vec u$ of $-e_t$. The two-branch picture of the non-real quaternion case does not survive the complexification.</p>
+<p><strong>Consistency with the biquaternion norm.</strong> For a fixed compatible choice of branch, the power function satisfies</p>
+<p>$$
+\langle\tilde Q^\alpha\rangle_{\natural}
+=\langle\tilde Q\rangle_{\natural}^\alpha.
+$$</p>
+<p>For the principal branch in the oscillatory regime,</p>
+<p>$$
+\tilde Q^\alpha=R^\alpha\bigl(\cos(\alpha\Theta)e_t+\sin(\alpha\Theta)\vec u\bigr),
+$$</p>
+<p>so</p>
+<p>$$
+\langle\tilde Q^\alpha\rangle_{\natural}
+=R^{2\alpha}\bigl(\cos^2(\alpha\Theta)+\sin^2(\alpha\Theta)\bigr)
+=R^{2\alpha}
+=(R^2)^\alpha
+=\langle\tilde Q\rangle_{\natural}^\alpha.
+$$</p>
+<p>In the nilpotent regime,</p>
+<p>$$
+\langle\tilde Q^\alpha\rangle_{\natural}
+=(Q_t^\alpha)^2+0
+=Q_t^{2\alpha}
+=\langle\tilde Q\rangle_{\natural}^\alpha.
+$$</p>
+<p>The identity is <strong>branch-dependent</strong>: the powers $R^\alpha$ and $R^{2\alpha}$, or $Q_t^\alpha$ and $Q_t^{2\alpha}$, must be chosen compatibly. The principal branch of $\tilde Q^\alpha$ satisfies it with the branch of $\langle\tilde Q\rangle^\alpha$ determined by the same logarithm; that branch need not be the principal branch of the scalar power. The scalar axis already shows the point: $(-e_t)^{1/2}=i e_t$ has norm $-1$, while $\langle -e_t\rangle_{\natural}=1$ and its principal square root is $1$. If a non-scalar logarithm of a scalar is used, the vector factor has norm $1$ but the scalar phase can change the two sides by a root of unity; the identity is then read with that phase.</p>
+<h3 id="the-math746-th-root-limits">The $n$-th Root Limits</h3>
+<p>Let $\tilde Q$ be a unit and let $L$ be a chosen logarithm of $\tilde Q$. Then</p>
+<p>$$
+\tilde Q^{1/n}=\exp(L/n).
+$$</p>
+<p>In the Euclidean norm on $\mathbb B$,</p>
+<p>$$
+\exp(L/n)=e_t+\frac{L}{n}+O(1/n^2),
+$$</p>
+<p>so</p>
+<p>$$
+n\bigl(\tilde Q^{1/n}-e_t\bigr)\longrightarrow L.
+$$</p>
+<p>On the principal branch $L=\operatorname{Log}\tilde Q$, and the limit is the principal logarithm. The limit depends on the branch when the branch is changed; at a unit where the principal logarithm is defined, the principal root gives the principal logarithm.</p>
+<p>The mean-root corollaries of <em>Quaternion Special Functions</em> hold with the same proof. For the principal branch,</p>
+<p>$$
+\lim_{n\to\infty}\left(\frac{e_t+\tilde Q^{1/n}}{2}\right)^n=\tilde Q^{1/2},
+$$</p>
+<p>and for several units on the principal domain,</p>
+<p>$$
+\lim_{n\to\infty}\left(\frac1k\sum_{\nu=1}^k\tilde Q_\nu^{1/n}\right)^n
+=\exp\left(\frac1k\sum_{\nu=1}^k\operatorname{Log}\tilde Q_\nu\right),
+$$</p>
+<p>the right-hand side being the exponential of the mean of the principal logarithms. The modulus caution is stronger than in the quaternion case: the biquaternion norm is complex, so the modulus of the limit is not the limit of the moduli in any ordered sense. Only the algebraic identity $\langle\exp\tilde Q_1\rangle_{\natural}=\exp(2\operatorname{Sc}\tilde Q_1)$ remains.</p>
 <h2 id="the-trigonometric-and-hyperbolic-functions">The Trigonometric and Hyperbolic Functions</h2>
 <h3 id="definitions">Definitions</h3>
 <p>The trigonometric and hyperbolic functions are defined by the same power series as in the complex case:</p>
@@ -253,7 +766,7 @@ $$</p>
 \sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
 $$</p>
 <p>where $i$ is the scalar imaginary. These identities hold because $i$ commutes with everything, so the standard derivations carry over. They reduce the computation to the exponential formula.</p>
-<h3 id="the-case-math251">The Case $B \neq 0$</h3>
+<h3 id="the-case-math765">The Case $B \neq 0$</h3>
 <p>For $\tilde{Q} = Q_t e_t + \vec Q$ with $B \neq 0$ and $\vec u = \vec Q/B$, we have</p>
 <p>$$
 \exp(\tilde{Q}) = \exp(Q_t)(\cos B \, e_t + \sin B \, \vec u), \qquad \exp(-\tilde{Q}) = \exp(-Q_t)(\cos B \, e_t - \sin B \, \vec u).
@@ -271,7 +784,7 @@ $$</p>
 <p>$$
 \cosh(\tilde{Q}) = \cosh(Q_t) \cos B \, e_t + \sinh(Q_t) \sin B \, \vec u.
 $$</p>
-<h3 id="the-case-math260">The Case $B = 0$</h3>
+<h3 id="the-case-math774">The Case $B = 0$</h3>
 <p>If $B = 0$, then $\vec Q^2 = 0$, and the powers of $\tilde{Q} = Q_t e_t + \vec Q$ satisfy</p>
 <p>$$
 \tilde{Q}^n = Q_t^n e_t + n Q_t^{n-1} \vec Q, \qquad n \geq 1,
@@ -289,7 +802,7 @@ $$</p>
 <p>$$
 \cosh(\tilde{Q}) = \cosh(Q_t) e_t + \sinh(Q_t) \vec Q.
 $$</p>
-<h3 id="the-case-math272">The Case $\vec Q = 0$</h3>
+<h3 id="the-case-math786">The Case $\vec Q = 0$</h3>
 <p>If $\vec Q = 0$, both formulas reduce to the ordinary complex trigonometric and hyperbolic functions.</p>
 <h3 id="summary-of-trigonometric-and-hyperbolic-functions">Summary of Trigonometric and Hyperbolic Functions</h3>
 <p>$$
@@ -320,7 +833,7 @@ $$</p>
 \cosh(Q_t) e_t + \sinh(Q_t) \vec Q & \text{if } B = 0.
 \end{cases}
 $$</p>
-<h3 id="properties_1">Properties</h3>
+<h3 id="properties_2">Properties</h3>
 <p><strong>Pythagorean identity.</strong> The identity</p>
 <p>$$
 \sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_t
@@ -384,127 +897,89 @@ $$</p>
 $$</p>
 <p>These are unequal: $\tfrac{1}{2}\sinh(2) \approx 1.813$, whereas $\sinh\sqrt{2}/\sqrt{2} \approx 1.368$. The failure is a genuine consequence of non-commutativity.</p>
 <p><strong>Relation to the exponential.</strong> The relations $\sin(\tilde{Q}) = (\exp(i\tilde{Q}) - \exp(-i\tilde{Q}))/(2i)$ and so on hold in general, because the scalar imaginary $i$ commutes with everything.</p>
-<h2 id="the-logarithm">The Logarithm</h2>
-<h3 id="definition_1">Definition</h3>
-<p>The <strong>logarithm</strong> of a biquaternion $\tilde{Q}$ is defined as the inverse of the exponential:</p>
+<h3 id="other-functions">Other Functions</h3>
+<p>The remaining elementary functions are the quotients</p>
 <p>$$
-\log(\tilde{Q}) = \tilde Q_{\log} \iff \exp(\tilde Q_{\log}) = \tilde{Q}.
+\tan\tilde Q=\frac{\sin\tilde Q}{\cos\tilde Q},\qquad
+\cot\tilde Q=\frac{\cos\tilde Q}{\sin\tilde Q},\qquad
+\sec\tilde Q=\frac{e_t}{\cos\tilde Q},\qquad
+\csc\tilde Q=\frac{e_t}{\sin\tilde Q},
 $$</p>
-<p>The exponential is never a zero divisor: from the property $\langle\exp(\tilde Q)\rangle_{\natural} = \exp(2 Q_t)$ for every $\tilde Q$, the biquaternion norm of $\exp(\tilde Q)$ is always nonzero. So the logarithm can exist only on the group of units $\mathbb{B}^\times = \{\langle\tilde{Q}\rangle_{\natural} \neq 0\}$. The following theorem shows that it exists on the whole group of units, and on no larger set.</p>
-<h3 id="existence-of-the-logarithm">Existence of the Logarithm</h3>
-<p><strong>Theorem.</strong> Every invertible biquaternion has a logarithm. The domain of the logarithm is exactly the group of units</p>
 <p>$$
-\mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} \neq 0\}.
+\tanh\tilde Q=\frac{\sinh\tilde Q}{\cosh\tilde Q},\qquad
+\coth\tilde Q=\frac{\cosh\tilde Q}{\sinh\tilde Q},\qquad
+\operatorname{sech}\tilde Q=\frac{e_t}{\cosh\tilde Q},\qquad
+\operatorname{csch}\tilde Q=\frac{e_t}{\sinh\tilde Q}.
 $$</p>
-<p><strong>Proof.</strong> Let $\tilde{Q}$ be invertible, so $\langle\tilde{Q}\rangle_{\natural} \neq 0$. We treat the three cases.</p>
-<p><strong>Case $B \neq 0$.</strong> Set $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, a fixed square root, $\vec u = \vec Q/B$, and let $\Theta$ be determined by $\cos\Theta = Q_t/R$ and $\sin\Theta = B/R$, so that $Q_t = R\cos\Theta$ and $B = R\sin\Theta$. Since $\langle\tilde{Q}\rangle_{\natural} \neq 0$, we have $R \neq 0$, so the principal branch of $\log R$ is defined. Set</p>
+<p>They are defined wherever the denominator is a unit. In $\mathbb B$ a denominator can be a zero divisor without being zero, so the domain is smaller than the complement of the zero set; the singularities are the non-invertible values of $\cos$, $\sin$, $\cosh$ and $\sinh$.</p>
+<p>In the oscillatory regime $B\neq0$, with $\vec u=\vec Q/B$, conjugation by the root $\vec u$ of $-e_t$ gives</p>
 <p>$$
-\tilde Q_{\log} = \log R \, e_t + \Theta \vec u.
+\tan\tilde Q=-\vec u\,\tanh(\tilde Q\vec u),
+\qquad
+\tanh\tilde Q=-\vec u\,\tan(\tilde Q\vec u),
 $$</p>
-<p>Then</p>
+<p>and the corresponding identities for the reciprocal functions, on the branches where the denominators are units. In the nilpotent and scalar regimes the functions are read from the truncated formulas of §<em>The Case $B = 0$</em> and §<em>The Case $\vec Q = 0$</em> of §<em>The Trigonometric and Hyperbolic Functions</em>.</p>
+<h3 id="inequalities">Inequalities</h3>
+<p>The inequalities of <em>Quaternion Special Functions</em>, §<em>Inequalities</em>, do not carry over to $\mathbb B$. They rest on the real, non-negative quaternion norm $\langle\tilde q\rangle_{\natural}$ and on the real modulus of the vector part. In the biquaternion algebra the algebraic norm $\langle\tilde Q\rangle_{\natural}$ is complex and $B$ is a complex square root; neither has an order, and the trigonometric functions take values in a complex two-dimensional algebra. The Euclidean norm can be used, but the bounds then involve $|\cosh B|$ and $|\sinh B|$ and are not the quaternion bounds. The article therefore states no inequalities in $\mathbb B$. On a real quaternion slice, where $Q_t$ and $\vec Q$ are real, the quaternion inequalities apply unchanged.</p>
+<h2 id="the-inverse-trigonometric-and-hyperbolic-functions">The Inverse Trigonometric and Hyperbolic Functions</h2>
+<p>The inverse functions are built from the logarithm and the square root, as in the quaternion and complex cases. On a branch where the square root and the logarithm are defined,</p>
 <p>$$
-\exp(\tilde Q_{\log}) = R(\cos\Theta \, e_t + \sin\Theta \, \vec u) = Q_t e_t + B \vec u = \tilde{Q},
+\sin^{-1}\tilde Q
+=-i\operatorname{Log}\bigl(i\tilde Q+(e_t-\tilde Q^2)^{1/2}\bigr),
+\qquad
+\cos^{-1}\tilde Q
+=-i\operatorname{Log}\bigl(\tilde Q+i(e_t-\tilde Q^2)^{1/2}\bigr),
 $$</p>
-<p>using the identity $\exp(\Theta \vec u) = \cos\Theta \, e_t + \sin\Theta \, \vec u$, which follows from $\vec u^2 = -e_t$.</p>
-<p><strong>Case $B = 0$, $\vec Q \neq 0$.</strong> Then $\vec Q^2 = 0$ and $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 \neq 0$, so $Q_t \neq 0$. Set</p>
 <p>$$
-\tilde Q_{\log} = \log Q_t \, e_t + \vec Q/Q_t.
+\tan^{-1}\tilde Q
+=\frac{1}{2i}\operatorname{Log}\bigl((e_t+i\tilde Q)(e_t-i\tilde Q)^{-1}\bigr),
 $$</p>
-<p>Then</p>
 <p>$$
-\tilde Q_{\log}^2 = (\log Q_t)^2 e_t + 2 \log Q_t \cdot \vec Q/Q_t + (\vec Q/Q_t)^2.
+\sinh^{-1}\tilde Q
+=\operatorname{Log}\bigl(\tilde Q+(\tilde Q^2+e_t)^{1/2}\bigr),
+\qquad
+\cosh^{-1}\tilde Q
+=\operatorname{Log}\bigl(\tilde Q+(\tilde Q^2-e_t)^{1/2}\bigr),
 $$</p>
-<p>The last term vanishes because $\vec Q^2 = 0$. The middle term commutes with the first term, since it is a scalar multiple of $\vec Q$ and the first term is a scalar multiple of $e_t$. So</p>
 <p>$$
-\exp(\tilde Q_{\log}) = \exp(\log Q_t \cdot e_t) \exp(\vec Q/Q_t) = Q_t (e_t + \vec Q/Q_t) = Q_t e_t + \vec Q = \tilde{Q}.
+\tanh^{-1}\tilde Q
+=\frac12\operatorname{Log}\bigl((e_t+\tilde Q)(e_t-\tilde Q)^{-1}\bigr).
 $$</p>
-<p><strong>Case $\vec Q = 0$.</strong> Then $\tilde{Q} = Q_t e_t$ with $Q_t \neq 0$ (since $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 \neq 0$), and $\log \tilde{Q} = \log Q_t \cdot e_t$, the ordinary complex logarithm.</p>
-<p><strong>Converse.</strong> If $\tilde{Q}$ has a logarithm, then $\tilde{Q} = \exp(\tilde Q_{\log})$ for some $\tilde Q_{\log}$, and $\langle\tilde{Q}\rangle_{\natural} = \langle\exp(\tilde Q_{\log})\rangle_{\natural} = \exp\!\bigl(2\,\mathrm{Sc}(\tilde Q_{\log})\bigr) \neq 0$. So $\tilde{Q}$ is invertible.</p>
-<h3 id="summary-of-the-logarithm">Summary of the Logarithm</h3>
+<p>The square root is $\tilde Q_1^{1/2}=\exp(\frac12\operatorname{Log}\tilde Q_1)$ for an element $\tilde Q_1$ on the chosen branch. The formulas are the complex ones read in the commutative subalgebra $\mathbb C[\tilde Q]$; because that subalgebra is commutative, the complex identities that prove them remain valid. They are right inverses on their domains, for example</p>
 <p>$$
-\log(\tilde{Q}) =
-\begin{cases}
-\log R \, e_t + \Theta \vec u & \text{if } B \neq 0, \\[2mm]
-\log Q_t \, e_t + \dfrac{\vec Q}{Q_t} & \text{if } B = 0, \; \vec Q \neq 0, \\[2mm]
-\log Q_t \, e_t & \text{if } \vec Q = 0,
-\end{cases}
+\sin(\sin^{-1}\tilde Q)=\tilde Q,\qquad
+\tanh(\tanh^{-1}\tilde Q)=\tilde Q,
 $$</p>
-<p>defined on the group of units $\mathbb{B}^\times = \{\langle\tilde{Q}\rangle_{\natural} \neq 0\}$. Here $R = \sqrt{Q_t^2 + B^2}$, $\cos\Theta = Q_t/R$, and $\sin\Theta = B/R$. The branch is determined by the choice of $R$, the choice of $\Theta$, and the choice of branch of the complex logarithm.</p>
-<h3 id="properties_2">Properties</h3>
-<p><strong>Multiplicativity.</strong> The logarithm satisfies $\log(\tilde{Q}_1 \tilde{Q}_2) = \log(\tilde{Q}_1) + \log(\tilde{Q}_2)$ whenever $\tilde{Q}_1$ and $\tilde{Q}_2$ commute. In general the logarithm is not multiplicative, and the converse is not claimed: as for the exponential group law (§<em>The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$</em>), a non-commuting pair may satisfy the identity under a compatible choice of branches. The failure is the same as in the quaternion case: when the axes of $\tilde{Q}_1$ and $\tilde{Q}_2$ do not commute, the product of the exponentials is not the exponential of the sum.</p>
-<p><strong>Multivaluedness.</strong> The logarithm is multivalued. The branches are parameterized by the integer shifts of the scalar logarithm and of the angle $\Theta$, that is, by $\log R \mapsto \log R + 2\pi i n$ and $\Theta \mapsto \Theta + 2\pi m$ with $n, m \in \mathbb{Z}$; equivalently, they differ by the elements of the kernel of the exponential.</p>
-<p><strong>Domain.</strong> The logarithm exists exactly on the group of units $\mathbb{B}^\times$. It fails on the zero divisor set $\mathcal{Z}$ and at the zero element $0$.</p>
-<p><strong>Failure at pure nilpotents.</strong> In particular, the logarithm does not exist at any pure nilpotent $\vec Q$ with $\vec Q^2 = 0$ and $\vec Q \neq 0$: such an element is a nonzero zero divisor, hence not invertible, whereas every exponential is invertible.</p>
-<h2 id="the-power-functions">The Power Functions</h2>
-<h3 id="definition_2">Definition</h3>
-<p>For $\tilde{Q} \in \mathbb{B}$ and $\alpha \in \mathbb{C}$, the <strong>power function</strong> is defined by</p>
-<p>$$
-\tilde{Q}^\alpha = \exp(\alpha \log \tilde{Q}).
-$$</p>
-<p>The power function inherits the multivaluedness of the logarithm: for non-integer $\alpha$, it is multivalued, and the principal branch is obtained from the principal logarithm. The domain is the group of units $\mathbb{B}^\times$.</p>
-<h3 id="the-case-math393">The Case $B \neq 0$</h3>
-<p>Using the formula for the logarithm and the exponential, we obtain</p>
-<p>$$
-\tilde{Q}^\alpha = R^\alpha \bigl(\cos(\alpha\Theta) \, e_t + \sin(\alpha\Theta) \, \vec u\bigr), \qquad B \neq 0,
-$$</p>
-<p>where $R = \sqrt{Q_t^2 + B^2}$, $\cos\Theta = Q_t/R$, and $\sin\Theta = B/R$.</p>
-<h3 id="the-case-math398-math399">The Case $B = 0$, $\vec Q \neq 0$</h3>
-<p>In the nilpotent regime,</p>
-<p>$$
-\tilde{Q}^\alpha = Q_t^\alpha e_t + \alpha Q_t^{\alpha-1} \vec Q, \qquad B = 0, \quad \vec Q \neq 0,
-$$</p>
-<p>with $Q_t \neq 0$ required for invertibility. This involves the linear term $\alpha Q_t^{\alpha-1} \vec Q$, which is the analogue of the expansion $(1 + a)^\alpha \approx 1 + \alpha a$ for small $a$ with $a^2 = 0$.</p>
-<h3 id="the-case-math406">The Case $\vec Q = 0$</h3>
-<p>If $\vec Q = 0$, the power function reduces to the ordinary complex power.</p>
-<h3 id="summary-of-the-power-function">Summary of the Power Function</h3>
-<p>$$
-\tilde{Q}^\alpha =
-\begin{cases}
-R^\alpha \bigl(\cos(\alpha\Theta) \, e_t + \sin(\alpha\Theta) \, \vec u\bigr) & \text{if } B \neq 0, \\[2mm]
-Q_t^\alpha e_t + \alpha Q_t^{\alpha-1} \vec Q & \text{if } B = 0, \; \vec Q \neq 0,
-\end{cases}
-$$</p>
-<p>defined on $\mathbb{B}^\times$.</p>
-<h3 id="properties_3">Properties</h3>
-<p><strong>Integer powers.</strong> For integer $n$, the power function is single-valued on $\mathbb{B}^\times$ and reduces to the ordinary power $\tilde{Q}^n$. Moreover, for integer $n$ the ordinary power $\tilde{Q}^n$ is defined by repeated multiplication on all of $\mathbb{B}$, including the zero divisors; the formula $\tilde{Q}^n = \exp(n \log \tilde{Q})$ holds only on the group of units.</p>
-<p><strong>Non-multiplicativity.</strong> In general, $(\tilde{Q}_1 \tilde{Q}_2)^\alpha \neq \tilde{Q}_1^\alpha \tilde{Q}_2^\alpha$, because the logarithm is not multiplicative.</p>
-<p><strong>The square root.</strong> The square root $\tilde{Q}^{1/2}$ is multivalued, and the two branches correspond to the two signs of the angle.</p>
-<p><strong>Consistency with the biquaternion norm.</strong> For a fixed choice of branch, the power function satisfies</p>
-<p>$$
-\langle\tilde{Q}^\alpha\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}^\alpha.
-$$</p>
-<p><strong>Proof.</strong> In the oscillatory regime, $\tilde{Q}^\alpha = R^\alpha(\cos(\alpha\Theta) e_t + \sin(\alpha\Theta) \vec u)$, so</p>
-<p>$$
-\langle\tilde{Q}^\alpha\rangle_{\natural} = R^{2\alpha}(\cos^2(\alpha\Theta) + \sin^2(\alpha\Theta)) = R^{2\alpha} = (R^2)^\alpha = \langle\tilde{Q}\rangle_{\natural}^\alpha.
-$$</p>
-<p>In the nilpotent regime, $\tilde{Q}^\alpha = Q_t^\alpha e_t + \alpha Q_t^{\alpha-1}\vec Q$, so</p>
-<p>$$
-\langle\tilde{Q}^\alpha\rangle_{\natural} = (Q_t^\alpha)^2 + 0 = Q_t^{2\alpha} = \langle\tilde{Q}\rangle_{\natural}^\alpha.
-$$</p>
-<p>The identity is <strong>branch-dependent</strong>: a consistent choice of branch must be made for $R^\alpha$ and $R^{2\alpha}$ (respectively $Q_t^\alpha$ and $Q_t^{2\alpha}$), since the multivaluedness of the power means that the two sides can differ by a phase if inconsistent branches are chosen. Equivalently, one must use a compatible choice of the complex logarithm on both sides of the identity.</p>
+<p>on the branch where the right-hand side is defined.</p>
+<p>The multivaluedness comes from the logarithm and the square root. The branch points are the elements at which the argument of the square root is zero or a zero divisor, and the elements at which $e_t\pm i\tilde Q$ or $e_t\pm\tilde Q$ fail to be invertible. These sets are the complexified analogues of the quaternion branch sets: in the quaternion case the equations $\tilde q^2\pm e_t=0$ give the pair $\tilde q=\pm e_t$ and the unit sphere of pure quaternions, while in $\mathbb B$ each equation defines a complex hypersurface. On the real quaternion slice, with $Q_t$ and $\vec Q$ real, the formulas reduce to the quaternion inverse functions of <em>Quaternion Special Functions</em>; the apparent difference of notation is the difference between the sign-conjugation form used there and the complex form used here.</p>
+<p>In the nilpotent regime the logarithm is the formula of §<em>The Nilpotent Regime</em>, and the square roots are the two values of §<em>The Power Functions</em>; the inverse functions then solve linear equations in $\vec Q$. In the scalar case the formulas reduce to the complex inverse functions in each scalar logarithm, with the vector logarithms adding the families described in §<em>The Scalar Case</em>.</p>
 <h2 id="relations-to-the-quaternion-and-complex-cases">Relations to the Quaternion and Complex Cases</h2>
 <h3 id="the-quaternion-case">The Quaternion Case</h3>
-<p>The biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{B}}$, which is the fixed-point set of complex conjugation. For a quaternion $\tilde q = q_t + \vec q$ with real coefficients, the complex norm $B = |\vec q|$ is real and non-negative, and the elementary functions reduce to the ordinary quaternion elementary functions:</p>
+<p>The biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the real slice $\mathbb{H}_{\mathbb{B}}$, the fixed-point set of complex conjugation. For a quaternion $\tilde q=q_t e_t+\vec q$ with real coefficients, the complex norm is $B=\sqrt{\langle\vec q\rangle_{\natural}}$, a real non-negative number, and the elementary functions reduce to the ordinary quaternion elementary functions:</p>
 <p>$$
-\exp(\tilde q) = \exp(q_t)(\cos|\vec q| + \sin|\vec q| \, \vec u),
+\exp(\tilde q)=\exp(q_t)\bigl(\cos\rho+\sin\rho\,\vec u\bigr),
+\qquad
+\operatorname{Log}(\tilde q)=\ln r+\arccos\frac{q_t}{r}\,\vec u,
 $$</p>
-<p>$$
-\log(\tilde q) = \log|\tilde q| + \arccos(q_t/|\tilde q|) \vec u,
-$$</p>
-<p>and so on, where $|\tilde q| = \sqrt{q_t^2 + |\vec q|^2}$ is the quaternion norm. These are the standard formulas of quaternion analysis.</p>
+<p>and so on, where
+$$
+\rho=\sqrt{\langle\vec q\rangle_{\natural}},\qquad
+r=\sqrt{\langle\tilde q\rangle_{\natural}}=\sqrt{q_t^2+\rho^2},\qquad
+\vec u=\frac{\vec q}{\rho},
+$$
+with $\vec u$ defined for $\vec q\neq0$; for a positive real quaternion the second term of the logarithm is $0$, and the negative real axis is excluded from the branch. The formula is the principal branch on $\mathbb H\setminus(-\infty,0]$, and the biquaternion principal logarithm restricts to it on the real slice. These are the standard formulas of quaternion analysis.</p>
 <h3 id="the-complex-case">The Complex Case</h3>
 <p>The biquaternion algebra contains the complex numbers as the subspace $\mathbb{C}_{\mathbb{B}}$, which is the fixed-point set of quaternion conjugation (the scalar part). For a complex scalar $\tilde{Q} = Q_t e_t$, the vector part vanishes, and the elementary functions reduce to the ordinary complex elementary functions:</p>
 <p>$$
-\exp(Q_t e_t) = \exp(Q_t) e_t, \qquad \log(Q_t e_t) = \log(Q_t) e_t,
+\exp(Q_t e_t) = \exp(Q_t) e_t, \qquad \operatorname{Log}(Q_t e_t) = \operatorname{Log}(Q_t) e_t,
 $$</p>
-<p>and so on. These are the standard formulas of complex analysis.</p>
+<p>and so on. The second formula is the principal branch. The full set of biquaternion logarithms of $Q_t e_t$ is much larger than the complex logarithm: it includes the vector logarithms of §<em>The Scalar Case</em>, and it is not discrete. The same distinction applies to the powers of a scalar. These are the standard formulas of complex analysis only after the principal branch is selected.</p>
 <h3 id="the-relation-between-the-two">The Relation Between the Two</h3>
-<p>The quaternion case and the complex case are the two extremes of the biquaternion case: the quaternion case is the case where $B$ is real, and the complex case is the case where $\vec Q = 0$. The general biquaternion case interpolates between the two, with $B$ complex and $\vec Q$ nonzero.</p>
+<p>The quaternion case and the complex case are the two extremes of the biquaternion case: the quaternion case is the real slice, where all coefficients are real and $B=\sqrt{\langle\vec Q\rangle_{\natural}}$ is real non-negative; the complex case is the case where $\vec Q = 0$. The general biquaternion case interpolates between the two, with $B$ complex and $\vec Q$ nonzero. The interpolation is not uniform in the logarithm: the scalar case has a larger fibre than the other two, because the centraliser is the whole algebra, and its logarithm is not a lattice coset.</p>
 <h2 id="non-commutativity-and-the-one-variable-case">Non-Commutativity and the One-Variable Case</h2>
-<p>The elementary functions of a biquaternion variable are as simple as they are because the <strong>vector part is a single element</strong>, and it commutes with itself. Equivalently, all elementary functions of a single biquaternion $\tilde{Q}$ lie in the <strong>commutative subalgebra</strong> $\mathbb{C}[\tilde{Q}]$ generated by $\tilde{Q}$ and $e_t$. In the oscillatory regime or the nonzero nilpotent regime, this subalgebra is exactly two-dimensional over $\mathbb{C}$, and it is isomorphic either to $\mathbb{C} \times \mathbb{C}$ (in the oscillatory regime) or to $\mathbb{C}[\epsilon]/(\epsilon^2)$ (in the nilpotent regime). Within either isomorphism type, the standard complex-analytic identities — including the Pythagorean identity, the hyperbolic identity, the double-angle formulas, and the relation between the exponential and the trigonometric functions — hold, because the algebra is commutative.</p>
-<p>The powers of $\vec Q$ are determined by the single relation $\vec Q^2 = -B^2 e_t$ (in the oscillatory regime) or $\vec Q^2 = 0$ (in the nilpotent regime), and the whole power series can be summed in closed form. The two cases correspond to the two isomorphism types of $\mathbb{C}[\tilde{Q}]$.</p>
+<p>The elementary functions of a biquaternion variable are as simple as they are because the <strong>vector part is a single element</strong>, and it commutes with itself. Equivalently, all direct elementary functions of a single biquaternion $\tilde{Q}$ — those defined by a power series in $\tilde{Q}$ with complex coefficients — lie in the <strong>commutative subalgebra</strong> $\mathbb{C}[\tilde{Q}]$ generated by $\tilde{Q}$ and $e_t$. In the oscillatory regime or the nonzero nilpotent regime, this subalgebra is exactly two-dimensional over $\mathbb{C}$, and it is isomorphic either to $\mathbb{C} \times \mathbb{C}$ (in the oscillatory regime) or to $\mathbb{C}[\epsilon]/(\epsilon^2)$ (in the nilpotent regime). Within either isomorphism type, the standard complex-analytic identities — including the Pythagorean identity, the hyperbolic identity, the double-angle formulas, and the relation between the exponential and the trigonometric functions — hold, because the algebra is commutative.</p>
+<p>The powers of $\vec Q$ are determined by the single relation $\vec Q^2 = -B^2 e_t$ (in the oscillatory regime) or $\vec Q^2 = 0$ (in the nilpotent regime), and the whole power series can be summed in closed form. The two cases correspond to the two isomorphism types of $\mathbb{C}[\tilde{Q}]$; the scalar case is the one-dimensional degeneration, $\mathbb{C}[\tilde Q]=\mathbb C e_t$.</p>
 <p>For functions of <strong>two or more biquaternion variables</strong>, the situation is different. The powers of a sum $\tilde{Q}_1 + \tilde{Q}_2$ involve the products $\tilde{Q}_1 \tilde{Q}_2$ and $\tilde{Q}_2 \tilde{Q}_1$, which are not equal in general. The binomial expansion does not hold, and the exponential of a sum is not in general the product of the exponentials when the two biquaternions do not commute. So the elementary functions of several biquaternion variables are much more complicated than the elementary functions of one variable, and their theory is largely open.</p>
-<p>This is the fundamental reason the theory of the elementary functions of a biquaternion variable is tractable, while the theory of functions of several biquaternion variables is not.</p>
 <h2 id="collected-formulas">Collected Formulas</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -541,44 +1016,72 @@ $$</p>
 <td>$\cosh(Q_t) e_t + \sinh(Q_t) \vec Q$</td>
 </tr>
 <tr>
-<td>$\log(\tilde{Q})$</td>
-<td>$\log R \, e_t + \Theta \vec u$</td>
-<td>$\log Q_t \, e_t + \vec Q/Q_t$</td>
+<td>$\operatorname{Log}(\tilde{Q})$ (principal)</td>
+<td>$\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec u$</td>
+<td>$\operatorname{Log}Q_t \, e_t + \vec Q/Q_t$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^\alpha$</td>
+<td>$\tilde Q_{\log}$ (a logarithm)</td>
+<td>$\operatorname{Log}R \, e_t + \Theta \vec u$</td>
+<td>$(\operatorname{Log}Q_t+2\pi i k)e_t+\vec Q/Q_t$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^\alpha$ (principal)</td>
 <td>$R^\alpha(\cos(\alpha\Theta) \, e_t + \sin(\alpha\Theta) \, \vec u)$</td>
 <td>$Q_t^\alpha e_t + \alpha Q_t^{\alpha-1} \vec Q$</td>
 </tr>
 </tbody>
 </table></div>
-<p>In the table, $B = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$, $\vec u = \vec Q/B$, $R = \sqrt{Q_t^2 + B^2}$, $\cos\Theta = Q_t/R$, and $\sin\Theta = B/R$. The exponential, the trigonometric functions, and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$. The logarithm and the power function are defined only on the group of units $\langle\tilde{Q}\rangle_{\natural} \neq 0$; in the second column, the formulas for the logarithm and the power function assume $Q_t \neq 0$, which is automatically implied by $\langle\tilde{Q}\rangle_{\natural} \neq 0$ when $B = 0$.</p>
+<p>In the table, $B = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$, $\vec u = \vec Q/B$, $\lambda_\pm = Q_t \pm iB$, $R = \sqrt{Q_t^2 + B^2}$, $\cos\Theta = Q_t/R$, and $\sin\Theta = B/R$. The exponential, the trigonometric functions, and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$. The logarithm is defined only on the group of units $\langle\tilde{Q}\rangle_{\natural} \neq 0$. The power function is defined there for every complex exponent; for a non-negative integer exponent it is defined on all of $\mathbb{B}$ by repeated multiplication. In the second column, the formulas for the logarithm and the general power assume $Q_t \neq 0$, which is automatically implied by $\langle\tilde{Q}\rangle_{\natural} \neq 0$ when $B = 0$.</p>
+<p>The row for a logarithm uses a choice of $R$ and $\Theta$; it does not give the full fibre by itself. The full fibre is a coset of the parity-matched lattice of §<em>The Eigenvalue Formula</em> when $B\neq0$, the translate by $2\pi i\mathbb Z e_t$ in the nilpotent regime, and the larger set of §<em>The Scalar Case</em> when $\vec Q=0$. The principal row uses the principal complex logarithm in each eigenvalue. The power row is the principal branch; the full set of values is described in §<em>The Power Functions</em>. On the scalar axis the principal power is the complex power, but the full power can take non-scalar values.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
 <p><strong>Functions of several biquaternion variables.</strong> How do the elementary functions extend to functions of two or more biquaternion variables? The non-commutativity is a serious obstruction, and the theory is largely open.</p>
 </li>
 <li>
-<p><strong>The transition between the two regimes.</strong> As $B \to 0$, the oscillatory formulas degenerate into the nilpotent ones. What is the precise nature of this degeneration? Is there a uniform asymptotic expansion that interpolates between the two regimes?</p>
+<p><strong>The transition between the two regimes.</strong> Off the walls where an eigenvalue is a negative real number, the eigenvalue formula makes the degeneration $B\to0$ continuous, and the derivative formula has a confluent limit. What happens at the walls, and which uniform asymptotic expansion interpolates across them, is open.</p>
 </li>
 <li>
-<p><strong>The complex norm.</strong> What is the geometric or algebraic meaning of the complex norm $\langle\cdot\rangle$ when it is not real? The complex norm is a square root of the biquaternion norm, and it is complex for a general biquaternion, but its interpretation is not clear. In particular, $\langle\cdot\rangle$ is the analogue of the "magnitude" of the vector part, but its complex-valuedness means it has both a modulus and a phase.</p>
+<p><strong>The complex norm.</strong> What is the geometric or algebraic meaning of the complex norm $B$ when it is not real? The number $B$ is a square root of the quadratic form of the vector part, not of the biquaternion norm, and it is complex for a general biquaternion. It is the analogue of the "magnitude" of the vector part, but its complex-valuedness means it has both a modulus and a phase.</p>
 </li>
 <li>
 <p><strong>The relation to the analysis.</strong> How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?</p>
 </li>
 <li>
-<p><strong>The logarithm at the boundary of the group of units.</strong> The logarithm exists on $\mathbb{B}^\times$ but not on its boundary, which is the zero divisor set $\mathcal{Z}$ together with $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.</p>
+<p><strong>The logarithm at the boundary of the group of units.</strong> The logarithm exists on $\mathbb{B}^\times$ but not on its boundary, the zero divisor set $\mathcal{Z}$ together with the origin $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.</p>
 </li>
 <li>
-<p><strong>The derivative of the exponential in the vector directions.</strong> The formula $\partial/\partial Q_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) \vec e_k \exp((1-s)\tilde{Q})\,ds$ is the biquaternion analogue of the usual identity for the derivative of the exponential. What are the consequences of this formula for the analysis of biquaternion-valued functions?</p>
+<p><strong>The derivative of the exponential in the vector directions.</strong> The formula $\partial/\partial Q_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) \vec e_k \exp((1-s)\tilde{Q})\,ds$ for $k\in\{x,y,z\}$ is the biquaternion analogue of the usual identity for the derivative of the exponential. What are the consequences of this formula for the analysis of biquaternion-valued functions?</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>Every elementary function is defined by applying the scalar power series to $\tilde{Q}$, and all its values lie in the commutative subalgebra $\mathbb{C}[\tilde{Q}]$ generated by $\tilde{Q}$. This is why the standard identities of complex analysis — the Pythagorean identity, the hyperbolic identity, the double-angle formulas, the relation between the exponential and the trigonometric functions — survive the non-commutativity of $\mathbb{B}$ for a single variable; the addition formulas for two independent biquaternions do not, and fail for explicit counterexamples such as $\tilde{Q}_1 = \vec e_x$, $\tilde{Q}_2 = \vec e_y$.</p>
-<p>The structure of $\mathbb{C}[\tilde{Q}]$ is governed by the discriminant and yields exactly two regimes. In the <strong>oscillatory regime</strong> $B \neq 0$ the subalgebra is $\mathbb{C} \times \mathbb{C}$, the element $\tilde{Q}$ is diagonalizable with eigenvalues $Q_t \pm iB$, and the closed forms are the oscillatory-hyperbolic expressions of the collected table, built on $\tilde{Q} = Q_t e_t + B\vec u$ with $\vec u^2 = -e_t$. In the <strong>nilpotent regime</strong> $B = 0$, $\vec Q \neq 0$, the subalgebra is $\mathbb{C}[\epsilon]/(\epsilon^2)$ with the nilpotent $\epsilon = \vec Q$, and every power series truncates after the linear term: the exponential becomes $\exp(Q_t)(e_t + \vec Q)$, the logarithm becomes $\log Q_t\,e_t + \vec Q/Q_t$, and the higher functions reduce to their first-order Taylor expansions in $\vec Q$.</p>
-<p>The exponential is the model of the theory. It is never zero, it satisfies $\exp(\tilde{Q}_1+\tilde{Q}_2) = \exp(\tilde{Q}_1)\exp(\tilde{Q}_2)$ when $\tilde{Q}_1$ and $\tilde{Q}_2$ commute (the converse can fail, §<em>The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$</em>), and the logarithm inverts it on the group of units, using the decomposition $\tilde{Q} = R(\cos\Theta\,e_t + \sin\Theta\,\vec u)$ with $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, $\cos\Theta = Q_t/R$ and $\sin\Theta = B/R$, from which the power function $\tilde{Q}^{\alpha}$ is obtained. Because the scalar imaginary $i$ commutes with everything, it relates the trigonometric functions to the exponential and the trigonometric to the hyperbolic functions, but only for a single argument in a common plane.</p>
-<p>The exponential, the trigonometric and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$; the logarithm and the power function are defined only on the group of units $\langle\tilde{Q}\rangle_{\natural} \neq 0$, and the logarithm there is many-valued, the ambiguity coming from the multi-valuedness of $\Theta$ and of the scalar logarithm.</p>
+<p>Every direct elementary function — the exponential, the trigonometric and the hyperbolic functions — is defined by applying the scalar power series to $\tilde{Q}$, and all its values lie in the commutative subalgebra $\mathbb{C}[\tilde{Q}]$ generated by $\tilde{Q}$. This is why the standard identities of complex analysis — the Pythagorean identity, the hyperbolic identity, the double-angle formulas, the relation between the exponential and the trigonometric functions — survive the non-commutativity of $\mathbb{B}$ for a single variable; the addition formulas for two independent biquaternions do not, and fail for explicit counterexamples such as $\tilde{Q}_1 = \vec e_x$, $\tilde{Q}_2 = \vec e_y$.</p>
+<p>The structure of $\mathbb{C}[\tilde{Q}]$ is governed by the discriminant and yields exactly two regimes. In the <strong>oscillatory regime</strong> $B \neq 0$ the subalgebra is $\mathbb{C} \times \mathbb{C}$, the element $\tilde{Q}$ is diagonalizable with eigenvalues $Q_t \pm iB$, and the closed forms are the oscillatory-hyperbolic expressions of the collected table, built on $\tilde{Q} = Q_t e_t + B\vec u$ with $\vec u^2 = -e_t$. In the <strong>nilpotent regime</strong> $B = 0$, $\vec Q \neq 0$, the subalgebra is $\mathbb{C}[\epsilon]/(\epsilon^2)$ with the nilpotent $\epsilon = \vec Q$, and every power series truncates after the linear term: the exponential becomes $\exp(Q_t)(e_t + \vec Q)$, the principal logarithm becomes $\operatorname{Log}Q_t\,e_t + \vec Q/Q_t$, and the higher functions reduce to their first-order Taylor expansions in $\vec Q$. The scalar case $\vec Q=0$ is the degenerate end of the nilpotent regime, where $\mathbb C[\tilde Q]=\mathbb C e_t$ and the logarithm is the translate of the kernel described in §<em>The Scalar Case</em>, not a lattice coset.</p>
+<p>The exponential is the model of the theory. It is never a zero divisor, it satisfies $\exp(\tilde{Q}_1+\tilde{Q}_2) = \exp(\tilde{Q}_1)\exp(\tilde{Q}_2)$ when $\tilde{Q}_1$ and $\tilde{Q}_2$ commute (the converse can fail, §<em>The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$</em>), and it is surjective onto the group of units: every unit has a logarithm. It is not injective. In the oscillatory regime, with $\lambda_\pm=Q_t\pm iB$ and $P_\pm=\frac12(e_t\mp i\vec u)$, every logarithm is</p>
+<p>$$
+\tilde Q_{\log}=\mu_+P_++\mu_-P_-,
+\qquad
+\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm,
+$$</p>
+<p>equivalently</p>
+<p>$$
+\tilde Q_{\log}
+=\frac{\mu_++\mu_-}{2}e_t+\frac{\mu_+-\mu_-}{2i}\vec u.
+$$</p>
+<p>The principal logarithm uses the principal complex logarithm of each eigenvalue. It is single-valued and real-analytic off the walls where an eigenvalue is a negative real number, and it is the inverse of $\exp$ on the principal domain $D$ of §<em>The Principal Domain</em>. In the oscillatory regime the fibre is a coset of the parity-matched lattice</p>
+<p>$$
+\ker\exp\cap\mathbb C[\tilde Q]
+=\bigl\{\pi i m\,e_t+\pi n\,\vec u:\ m,n\in\mathbb Z,\ m\equiv n\pmod2\bigr\},
+$$</p>
+<p>not the rectangular lattice of independent scalar and angle shifts. No continuous single-valued logarithm exists on all of $\mathbb B^\times$.</p>
+<p>In the nilpotent regime the logarithm is</p>
+<p>$$
+\tilde Q_{\log}=(\operatorname{Log}Q_t+2\pi i k)e_t+\frac{\vec Q}{Q_t},
+$$</p>
+<p>and in the scalar case it is a scalar logarithm together with the vector logarithms of §<em>The Scalar Case</em>; the scalar fibre is a translate of the kernel, and because the kernel is not a subgroup, two logarithms of the same scalar need not differ by a kernel element. The derivative of the logarithm is not multiplication by $\tilde Q^{-1}$: the cross terms of the eigenprojection formula survive whenever the direction does not commute with $\tilde Q$.</p>
+<p>The power function is $\tilde Q^\alpha=\exp(\alpha \tilde Q_{\log})$ for a logarithm $\tilde Q_{\log}$. On the principal branch it is given by the formulas of §<em>The Power Functions</em>; the full set of values adds the kernel shifts, and on the scalar axis it includes continuous families. The square root is not a two-valued function in $\mathbb B$: it has four values in the generic oscillatory case, two in the nilpotent case, and continuous families on the scalar axis. Because the scalar imaginary $i$ commutes with everything, it relates the trigonometric functions to the exponential and the trigonometric to the hyperbolic functions, but only for a single argument in a common plane.</p>
+<p>The exponential, the trigonometric and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$; the logarithm is defined only on the group of units $\langle\tilde{Q}\rangle_{\natural} \neq 0$, and the power function is defined there for every complex exponent, and on all of $\mathbb{B}$ for a non-negative integer exponent. The logarithm is many-valued, the ambiguity coming from the kernel of the exponential and, in the scalar case, from the larger centraliser. The principal branch is single-valued and discontinuous on the walls; it is the branch used by default in this article.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -594,7 +1097,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{Q} = Q_t e_t + \vec Q$</td>
-<td>Biquaternion; $\vec Q = \sum_k Q_k \vec e_k$ the vector part</td>
+<td>Biquaternion; $\vec Q = \sum_{k\in\{x,y,z\}} Q_k \vec e_k$ the vector part</td>
 </tr>
 <tr>
 <td>$B = \sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
@@ -606,15 +1109,47 @@ $$</p>
 </tr>
 <tr>
 <td>$R = \sqrt{Q_t^2+B^2} = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$</td>
-<td>Modulus of the logarithm and the power function</td>
+<td>A square root of the biquaternion norm; modulus of the logarithm and the power function</td>
 </tr>
 <tr>
 <td>$\Theta$</td>
 <td>Angle of the logarithm and the power function, $\cos\Theta = Q_t/R$, $\sin\Theta = B/R$</td>
 </tr>
 <tr>
+<td>$\lambda_\pm = Q_t \pm iB$</td>
+<td>Eigenvalues of $\tilde Q$ in the oscillatory regime</td>
+</tr>
+<tr>
+<td>$P_\pm = \frac12(e_t \mp i\vec u)$</td>
+<td>Eigenprojections of $\tilde Q$; $P_++P_-=e_t$, $P_+P_-=0$</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}\tilde Q$</td>
+<td>Principal logarithm, with eigenvalues in the strip $-\pi<\operatorname{Im}z\le\pi$</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\log}$</td>
+<td>A logarithm of $\tilde Q$; the subscript labels the element, not an operation</td>
+</tr>
+<tr>
+<td>$Q_{\log,t}$</td>
+<td>Scalar component of a logarithm, complex; $\operatorname{Re}Q_{\log,t}=\frac12\ln\lvert\langle\tilde Q\rangle_{\natural}\rvert$</td>
+</tr>
+<tr>
+<td>$\vec Q_{\log}$</td>
+<td>Vector component of a logarithm, pure; $\tilde Q_{\log}=Q_{\log,t}e_t+\vec Q_{\log}$</td>
+</tr>
+<tr>
+<td>$\ker\exp$</td>
+<td>Kernel of the exponential: $\exp\tilde Q_1=e_t$; not a subgroup</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>Principal domain: every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to\mathbb B^\times$ is bijective</td>
+</tr>
+<tr>
 <td>$\mathbb{C}[\tilde{Q}]$</td>
-<td>Commutative subalgebra generated by $\tilde{Q}$; it contains every value $F(\tilde{Q})$</td>
+<td>Commutative subalgebra generated by $\tilde{Q}$; it contains every value of a direct elementary function $F(\tilde{Q})$</td>
 </tr>
 <tr>
 <td>Oscillatory regime</td>
@@ -625,8 +1160,12 @@ $$</p>
 <td>$B = 0$, $\vec Q \neq 0$: $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$, $\epsilon = \vec Q$</td>
 </tr>
 <tr>
+<td>Scalar case</td>
+<td>$\vec Q = 0$: $\mathbb{C}[\tilde{Q}] = \mathbb{C} e_t$, the one-dimensional degeneration</td>
+</tr>
+<tr>
 <td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
-<td>Biquaternion norm; $N \neq 0$ is the group of units, the domain of $\log$ and of powers</td>
+<td>Biquaternion norm; $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is the group of units, the domain of the logarithm and of general powers</td>
 </tr>
 </tbody>
 </table></div>
@@ -638,6 +1177,7 @@ $$</p>
 <li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the classification of the roots of $-1$ that serve as axes of the vector part.</li>
 <li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the zero divisors and nilpotents.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Nicholas J. Higham, <em>Functions of Matrices: Theory and Computation</em> (SIAM, Philadelphia, 2008), for the principal matrix logarithm, its branch cuts, and its Fréchet derivative.</li>
 </ul>
       </div>
     </main>

@@ -67,92 +67,458 @@
       <div class="article-body">
         <h1 id="reduced-biquaternion-elementary-functions"><strong>Reduced Biquaternion Elementary Functions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article records the elementary functions of a reduced biquaternion variable: the exponential, the trigonometric and hyperbolic functions, the logarithm and the power functions. The key structural fact is the <strong>idempotent decomposition</strong>: the algebra is the direct product of two copies of $\mathbb{C}$, the idempotents $\Pi_{\pm}$ commute with everything, and the multiplication is componentwise, so every elementary function of a reduced biquaternion reduces to the corresponding elementary function of two ordinary complex numbers, one for each idempotent coordinate. Because the algebra is <strong>commutative</strong>, the functional equations that hold for commuting arguments in the quaternion and split biquaternion cases hold here for all arguments. The treatment is purely mathematical.</p>
-<p>Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$.</p>
-<h2 id="the-exponential">The Exponential</h2>
-<p><strong>Definition.</strong> For $\breve Q\in\mathbb{B}_{\mathrm{r}}$ the <strong>exponential</strong> is the series
+<p>This article introduces the elementary functions of a reduced biquaternion variable as a collection of named functions: the exponential, the logarithm, the trigonometric and hyperbolic functions, the power functions and the roots. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. Complex analysis is assumed: holomorphic functions, power series, the complex exponential and logarithm, and the branch structure of the argument are used throughout. The order of presentation follows the dependency order: the exponential and the logarithm first, with the powers and roots that come from them, then the trigonometric and hyperbolic functions, then the relations to the complex and split-complex cases.</p>
+<p>Three facts govern the whole article. First, the algebra is <strong>commutative</strong>, so the functional equations, the addition formulas and the differentiation rules hold for all arguments, with no ordering correction. Second, the exponential is <strong>not injective</strong>: its kernel is the rank-two lattice</p>
+<p>$$
+\ker\exp=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z},
+$$</p>
+<p>so the logarithm exists on the unit group and is unique only modulo this lattice. Third, the exponential is <strong>computed by a closed form</strong>,</p>
+<p>$$
+\exp(Q_{\blacktriangle}+jQ_{\blacktriangledown})=e^{Q_{\blacktriangle}}\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr),
+$$</p>
+<p>which reduces every elementary function to ordinary complex functions of the two coefficients.</p>
+<p>Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, the bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, and the squared Euclidean norm is $\langle\breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}$. The two numbers $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are the <strong>circular components</strong>; they multiply componentwise,</p>
+<p>$$
+(Q_{\blacktriangle}+jQ_{\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})
+=(Q_{\blacktriangle}Q_{2\blacktriangle}+Q_{\blacktriangledown}Q_{2\blacktriangledown})
++j(Q_{\blacktriangle}Q_{2\blacktriangledown}+Q_{\blacktriangledown}Q_{2\blacktriangle}),
+$$</p>
+<p>with components $Q_{+}Q_{2+}$ and $Q_{-}Q_{2-}$. The element is a unit exactly when $Q_{\blacktriangle}^{2}\neq Q_{\blacktriangledown}^{2}$, that is exactly when both circular components are non-zero.</p>
+<p><strong>Boundaries.</strong> The algebra and its bar are <em>Introduction to the Algebra of the Reduced Biquaternions</em>; the norm and the unit criterion are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>. The exponential polar decomposition is <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, where the kernel and the principal domain are treated. The complex member is <em>Complex Special Functions</em>, and the split-complex member is <em>Split-Complex Special Functions</em>. The higher special functions are <em>Reduced Biquaternion Higher Special Functions</em>.</p>
+<p>The plan is as follows. The exponential and the logarithm are defined and their two compositions established (§<em>The Reduced Biquaternion Exponential and Logarithm</em>); the powers and the roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions follow (§<em>The Trigonometric and Hyperbolic Functions</em>), with their periods, zeros and inverses; the relations to the complex line and the split-complex plane are recorded (§<em>The Two Planes</em>); the formulas are collected and the notation is tabulated (§<em>Summary</em>, §<em>Summary of Notation</em>).</p>
+<p>Every numerical value displayed below was recomputed in double precision.</p>
+<h2 id="the-reduced-biquaternion-exponential-and-logarithm">The Reduced Biquaternion Exponential and Logarithm</h2>
+<h3 id="the-exponential">The Exponential</h3>
+<p>The <strong>reduced biquaternion exponential</strong> is defined for $\breve Q\in\mathbb{B}_{\mathrm{r}}$ by the power series</p>
+<p>$$
+\exp\breve Q=\sum_{n=0}^{\infty}\frac{\breve Q^{n}}{n!}.
+$$</p>
+<p>The series converges absolutely in the Euclidean norm for every $\breve Q$, because the algebra is finite-dimensional and the series converges in each coefficient. The function is entire, and it satisfies</p>
+<p>$$
+\exp(\breve Q_1+\breve Q_2)=\exp\breve Q_1\,\exp\breve Q_2,\qquad \exp 0=1.
+$$</p>
+<p>The functional equation holds for <strong>all</strong> arguments because the algebra is commutative; no ordering correction is needed. The derivative at $\breve Q$ is left multiplication by $\exp\breve Q$:</p>
+<p>$$
+d\exp_{\breve Q}(\breve H)=\exp(\breve Q)\,\breve H.
+$$</p>
+<p>This follows from $\exp(\breve Q+t\breve H)=\exp\breve Q\,\exp(t\breve H)$ and $\exp(t\breve H)=1+t\breve H+O(t^{2})$.</p>
+<p>For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ the series splits by the binomial theorem, because $Q_{\blacktriangle}$ and $jQ_{\blacktriangledown}$ commute:</p>
+<p>$$
+\exp(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\sum_{k,l}\frac{Q_{\blacktriangle}^{k}(jQ_{\blacktriangledown})^{l}}{k!\,l!}
+=e^{Q_{\blacktriangle}}\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr).
+$$</p>
+<p>This is the <strong>reduced Euler formula</strong>. It is the bridge between the exponential and the trigonometric and hyperbolic functions. In particular,</p>
+<p>$$
+\exp(i\theta)=\cos\theta+i\sin\theta,\qquad
+\exp(ij\beta)=\cos\beta+ij\sin\beta,\qquad
+\exp(j\phi)=\cosh\phi+j\sinh\phi.
+$$</p>
+<p>The first two are the elliptic directions, the third the hyperbolic direction.</p>
+<p><strong>Periods.</strong> The exponential is periodic with the lattice</p>
+<p>$$
+\ker\exp=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
+$$</p>
+<p>In particular $\exp(\breve Q+2\pi i)=\exp\breve Q$ and $\exp(\breve Q+\pi i(1+j))=\exp\breve Q$. The scalar period $2\pi i$ and the split period $2\pi ij$ generate a sublattice of index two; the period $\pi i(1+j)$ is half of their sum.</p>
+<p><strong>Example.</strong> For $\breve Q=j\ln2$ the closed form gives</p>
+<p>$$
+\exp(j\ln2)=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34 j,
+$$</p>
+<p>that is $1.25+0.75j$. This is the hyperbolic exponential $\cosh(\ln2)+j\sinh(\ln2)$, and it is the point of the future hyperbola at boost $\ln2$.</p>
+<h3 id="the-logarithm">The Logarithm</h3>
+<p>A <strong>logarithm</strong> of a unit $\breve Q$ is an element $\breve Q_{\log}$ with $\exp\breve Q_{\log}=\breve Q$. The definition is an equation, not a formula; the formula is what solving the equation gives.</p>
+<p>The element and its logarithm carry two different pairs of complex coordinates, and they must not be mixed. By the coefficient rule of <em>Conventions in Mathematics</em>, a prime marks the imaginary coordinate of a complex coefficient:</p>
+<p>$$
+\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown},\qquad
+\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown},
+$$</p>
+<p>$$
+Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle},\quad
+Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown},\qquad
+Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle},\quad
+Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}.
+$$</p>
+<p>The double subscript is a label, not an operation: $q_{\log\blacktriangle}$ is the real part of the scalar coefficient $Q_{\log\blacktriangle}$ of the logarithm, not the logarithm of the coefficient $Q_{\blacktriangle}$.</p>
+<p>The equation $\exp(Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown})=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is, by the closed form,</p>
+<p>$$
+e^{Q_{\log\blacktriangle}}\cosh Q_{\log\blacktriangledown}=Q_{\blacktriangle},\qquad e^{Q_{\log\blacktriangle}}\sinh Q_{\log\blacktriangledown}=Q_{\blacktriangledown}.
+$$</p>
+<p>Adding and subtracting the two equations gives</p>
+<p>$$
+e^{Q_{\log\blacktriangle}+Q_{\log\blacktriangledown}}=Q_{+},\qquad e^{Q_{\log\blacktriangle}-Q_{\log\blacktriangledown}}=Q_{-}.
+$$</p>
+<p>Hence, for any choices of the complex logarithms,</p>
+<p>$$
+Q_{\log\blacktriangle}+Q_{\log\blacktriangledown}=\log(Q_{+}),\qquad Q_{\log\blacktriangle}-Q_{\log\blacktriangledown}=\log(Q_{-}),
+$$</p>
+<p>and therefore</p>
+<p>$$
+Q_{\log\blacktriangle}=\frac{\log(Q_{+})+\log(Q_{-})}{2},\qquad
+Q_{\log\blacktriangledown}=\frac{\log(Q_{+})-\log(Q_{-})}{2}.
+$$</p>
+<p>Assembling the two coefficients, the logarithm is</p>
+<p>$$
+\breve Q_{\log}=\frac{\log(Q_{+})+\log(Q_{-})}{2}
++j\,\frac{\log(Q_{+})-\log(Q_{-})}{2},
+$$</p>
+<p>which is the <strong>global result</strong>: it holds for every unit $\breve Q$ and every choice of the complex logarithm in each circular component.</p>
+<p>A logarithm exists exactly when both $Q_{+}$ and $Q_{-}$ are non-zero, that is exactly when $\breve Q$ is a <strong>unit</strong>. The general solution is</p>
+<p>$$
+\breve Q_{\log}=\operatorname{Log}\breve Q+2\pi i k+\pi i(1+j)l,\qquad k,l\in\mathbb{Z},
+$$</p>
+<p>with the <strong>principal logarithm</strong></p>
+<p>$$
+\operatorname{Log}\breve Q=\frac{\operatorname{Log}(Q_{+})+\operatorname{Log}(Q_{-})}{2}
++j\,\frac{\operatorname{Log}(Q_{+})-\operatorname{Log}(Q_{-})}{2},
+$$</p>
+<p>where $\operatorname{Log}$ on the right is the principal complex logarithm, with argument in $(-\pi,\pi]$.</p>
+<p><strong>The four components.</strong> For the principal branch, taking the real and imaginary parts of the two coefficients gives the four real components of the logarithm:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>component</th>
+<th>name</th>
+<th>value from $Q_{+},Q_{-}$</th>
+<th>value in $(\rho,\phi,\alpha,\beta)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q_{\log\blacktriangle}$</td>
+<td>logarithmic scale</td>
+<td>$\tfrac12\ln\lvert Q_{+}Q_{-}\rvert=\tfrac12\ln\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert$</td>
+<td>$\ln\rho$</td>
+</tr>
+<tr>
+<td>$q'_{\log\blacktriangle}$</td>
+<td>scalar phase</td>
+<td>$\tfrac12\bigl(\operatorname{Arg}(Q_{+})+\operatorname{Arg}(Q_{-})\bigr)$</td>
+<td>$\alpha$</td>
+</tr>
+<tr>
+<td>$q_{\log\blacktriangledown}$</td>
+<td>boost</td>
+<td>$\tfrac12\ln\lvert Q_{+}/Q_{-}\rvert$</td>
+<td>$\phi$</td>
+</tr>
+<tr>
+<td>$q'_{\log\blacktriangledown}$</td>
+<td>split phase</td>
+<td>$\tfrac12\bigl(\operatorname{Arg}(Q_{+})-\operatorname{Arg}(Q_{-})\bigr)$</td>
+<td>$\beta$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Here $\rho=\sqrt{\lvert Q_{+}Q_{-}\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,</p>
+<p>$$
+\breve Q_{\log}=q_{\log\blacktriangle}+jq_{\log\blacktriangledown}+iq'_{\log\blacktriangle}+ijq'_{\log\blacktriangledown}
+=\ln\rho+j\phi+i\alpha+ij\beta,
+$$</p>
+<p>and the exponential reassembles them:</p>
+<p>$$
+\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\phi+j\sinh\phi\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
+$$</p>
+<p>The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\phi$ the relative scale of the two circular components, and the two primed components are the phases $\alpha$ and $\beta$.</p>
+<p><strong>Example.</strong> For $\breve Q=3+4i+j(1-i)$ the coefficients are $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$, so $Q_{+}=4+3i$ and $Q_{-}=2+5i$. The principal complex logarithms are</p>
+<p>$$
+\operatorname{Log}(4+3i)=1.6094379+0.6435011\,i,\qquad
+\operatorname{Log}(2+5i)=1.6836479+1.1902899\,i,
+$$</p>
+<p>so</p>
+<p>$$
+\operatorname{Log}\breve Q=1.6465429+0.9168955\,i-0.0371050\,j-0.2733944\,ij.
+$$</p>
+<p>Exponentiating gives $3+4i+j(1-i)$ up to rounding. The general logarithm adds $2\pi i k+\pi i(1+j)l$.</p>
+<p>The <strong>kernel</strong> of the exponential is the rank-two lattice</p>
+<p>$$
+\ker\exp=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}.
+$$</p>
+<p>In the circular components it is generated by the two elementary periods of the two components, and the scalar and split periods $2\pi i$, $2\pi ij$ span only a sublattice of index two. The logarithm exists on the whole unit group and is never unique: the ambiguity is one integer per circular component. This is the exact replacement of the single integer $2\pi i\mathbb{Z}$ of the complex case; the split-complex case has no ambiguity because its exponential is injective.</p>
+<h3 id="the-two-compositions">The Two Compositions</h3>
+<p>The word "inverse" covers two identities, and the exponential and the logarithm satisfy them in opposite strengths.</p>
+<p><strong>Right inverse.</strong> For every unit $\breve Q$,</p>
+<p>$$
+\exp(\operatorname{Log}\breve Q)=\breve Q.
+$$</p>
+<p><strong>Proof.</strong> In the circular components, $\exp(\operatorname{Log}(Q_{\pm}))=Q_{\pm}$ by the complex identity, and the two components reassemble.</p>
+<p><strong>Left inverse, up to the kernel.</strong> For every $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$,</p>
+<p>$$
+\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}
+$$</p>
+<p>exactly when $\breve Q_{\log}$ lies in the <strong>principal domain</strong></p>
+<p>$$
+D=\Bigl\{Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}:\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi\Bigr\},
+$$</p>
+<p>with the boundary taken half-open. For a general $\breve Q_{\log}$, the two sides differ by an element of the kernel:</p>
+<p>$$
+\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}+2\pi i k+\pi i(1+j)l
+$$</p>
+<p>for the integers that bring the two phases into the principal diamond.</p>
+<p><strong>Proof.</strong> Both sides are logarithms of $\exp\breve Q_{\log}$, so they differ by an element of $\ker\exp$. The principal value is the representative whose two phases lie in the half-open diamond.</p>
+<p>The asymmetry is the content of the word "multivalued". The exponential forgets two integers, one for each circular component; the principal logarithm chooses one representative. The split-complex exponential forgets none, and the complex exponential forgets one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>identity</th>
+<th>holds?</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp(\operatorname{Log}\breve Q)=\breve Q$</td>
+<td>always, on the units</td>
+<td>$\breve Q=3+4i+j(1-i)$ above</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$</td>
+<td>exactly in the principal domain $D$</td>
+<td>$\breve Q_{\log}=i\pi$</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}(\exp\breve Q_{\log})=\breve Q_{\log}$ modulo the kernel</td>
+<td>always</td>
+<td>$\breve Q_{\log}=i\pi(1+j)$ gives $0$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-principal-logarithm">The Principal Logarithm</h3>
+<p>The principal logarithm is defined on the whole unit group by the formula with the principal argument in each circular component. It is real-analytic on the complement of the two walls</p>
+<p>$$
+W_{+}=\{Q_{+}\in(-\infty,0)\},\qquad W_{-}=\{Q_{-}\in(-\infty,0)\},
+$$</p>
+<p>each of real dimension three, and it is discontinuous across them. A branch that continued analytically across a wall would have to continue by a period and would not be single-valued. The walls are the exact analogue of the negative real axis of $\mathbb{C}$: there is one wall for each circular component, and the jump across $W_{+}$ is $\pi i(1+j)$, across $W_{-}$ is $\pi i(1-j)$, both kernel elements.</p>
+<p>The principal logarithm is not defined at $Q_{+}=0$ or $Q_{-}=0$, which are the zero divisors. On the unit group it is defined everywhere, including on the walls, where continuity fails but the inverse identity holds.</p>
+<p>A single-valued branch exists on a domain when each circular component lies in a simply connected domain of $\mathbb{C}^{\times}$. The maximal domains are the complements of rays in the two components, and the principal branch uses the negative real ray in both. No single-valued branch exists on the whole unit group, because the unit group has fundamental group $\mathbb{Z}^{2}$; the obstruction is the kernel lattice, not a failure of local invertibility. The exponential is a covering map onto the unit group, and the logarithm is its multivalued inverse.</p>
+<p><strong>Example.</strong> For $\breve Q=-1$ the principal logarithm is $i\pi$, the upper endpoint of the first phase. Approaching $-1$ through $Q_{+}$ in the upper half-plane gives phase $\pi$; approaching through the lower half-plane gives phase $-\pi$. The two limits differ by $2\pi i$, so the principal branch cannot be continued continuously across $W_{+}$. The other circular component produces the same phenomenon on $W_{-}$.</p>
+<h3 id="the-derivative-of-the-logarithm">The Derivative of the Logarithm</h3>
+<p>On the complement of the walls the principal logarithm is differentiable, and its derivative is left multiplication by $\breve Q^{-1}$:</p>
+<p>$$
+d\operatorname{Log}_{\breve Q}(\breve H)=\breve Q^{-1}\breve H.
+$$</p>
+<p>In the circular components,</p>
+<p>$$
+\bigl(d\operatorname{Log}_{\breve Q}\breve H\bigr)_{\pm}=\frac{H_{\pm}}{Q_{\pm}}.
+$$</p>
+<p><strong>Proof.</strong> The exponential is a local biholomorphism with derivative left multiplication by $\exp\breve Q_{\log}=\breve Q$; the inverse function theorem gives the derivative of the inverse as left multiplication by $\breve Q^{-1}$.</p>
+<p><strong>Chain rule check.</strong> Differentiating $\exp(\operatorname{Log}\breve Q)=\breve Q$ gives</p>
+<p>$$
+\exp(\operatorname{Log}\breve Q)\,d\operatorname{Log}_{\breve Q}=\mathrm{id},
+$$</p>
+<p>hence $d\operatorname{Log}_{\breve Q}=\breve Q^{-1}$. The same computation applies to any branch of the logarithm, and it shows that all branches have the same derivative.</p>
+<p>The formula is the exact analogue of $\operatorname{Log}'Q=1/Q$ in $\mathbb{C}$, applied twice. The logarithm is holomorphic in each circular component, and the two Wirtinger derivatives with respect to the conjugates of the components annihilate it.</p>
+<h3 id="powers-and-roots">Powers and Roots</h3>
+<p>For a unit $\breve Q$ and a complex exponent $s$, a <strong>power</strong> is</p>
+<p>$$
+\breve Q^{s}=\exp(s\,\breve Q_{\log})=e^{sQ_{\log\blacktriangle}}\bigl(\cosh(sQ_{\log\blacktriangledown})+j\sinh(sQ_{\log\blacktriangledown})\bigr),
+$$</p>
+<p>for a choice of the logarithm $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$. The two circular components of the power are</p>
+<p>$$
+(Q_{+})^{s},\qquad (Q_{-})^{s},
+$$</p>
+<p>with $(Q_{\pm})^{s}=\exp(s\log(Q_{\pm}))$ and a branch chosen in each component. An element of the algebra is determined by its two circular components, so these two numbers define $\breve Q^{s}$ completely.</p>
+<p>Because a logarithm is determined modulo the kernel, the set of values is</p>
+<p>$$
+\breve Q^{s}=\exp(s\operatorname{Log}\breve Q)\exp\bigl(s(2\pi i k+\pi i(1+j)l)\bigr),\qquad k,l\in\mathbb{Z}.
+$$</p>
+<p>The factor</p>
+<p>$$
+\exp\bigl(s(2\pi i k+\pi i(1+j)l)\bigr)
+$$</p>
+<p>equals $1$ for every $k,l$ exactly when $s$ is an integer. If $s=p/q$ is rational in lowest terms, the two circular components contribute $q$ values each, and the power takes $q^{2}$ values; otherwise the set of values is infinite. The principal branch uses $\operatorname{Log}\breve Q$.</p>
+<p>For an integer $n\ge0$, $\breve Q^{n}$ is the ordinary iterated product and is a polynomial in $\breve Q$; for $n<0$ it is the inverse power on the units. For a fixed choice of logarithm,</p>
+<p>$$
+\breve Q^{s+t}=\breve Q^{s}\breve Q^{t}.
+$$</p>
+<p>The second law $(\breve Q^{s})^{t}=\breve Q^{st}$ is not an identity of sets in general: it holds when both exponents are integers, and a fixed branch can differ by the two circular-component factors $e^{2\pi i t(k+l)}$ and $e^{2\pi i tk}$, where $k,l$ are the integers of the logarithm chosen for $\breve Q^{s}$.</p>
+<p><strong>Example.</strong> For $\breve Q=j$ and $s=1/2$ the circular components are $1$ and $-1$. The square roots of the first are $\pm1$, of the second $\pm i$, and the four square roots are</p>
+<p>$$
+\breve R=\frac{\eta_{1}+\eta_{2}i}{2}+j\,\frac{\eta_{1}-\eta_{2}i}{2},
+\qquad \eta_{1},\eta_{2}\in\{\pm1\},
+$$</p>
+<p>each satisfying $\breve R^{2}=j$. One of them is $\breve R=(1+i)/2+j(1-i)/2$, which is $\exp(\tfrac12\operatorname{Log}j)$.</p>
+<p><strong>Theorem (the roots).</strong> Let $n\ge1$ and let $\breve Q\in\mathbb{B}_{\mathrm{r}}$.</p>
+<ol>
+<li>If $\breve Q$ is a unit, the equation $\breve R^{n}=\breve Q$ has exactly $n^{2}$ solutions: the elements whose circular components are
 $$
-\exp \breve Q=\sum_{n\ge0}\frac{\breve Q^{n}}{n!},
+\eta_{1}(Q_{+})^{1/n},\qquad \eta_{2}(Q_{-})^{1/n},
 $$
-which converges for every $\breve Q$ because the algebra is finite-dimensional and the series converges in each coordinate.</p>
-<p><strong>Theorem (the reduction and the closed form).</strong> The exponential acts coefficientwise,
-$$
-\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr),
-$$
-and it satisfies the functional equation for <strong>all</strong> arguments,
-$$
-\exp(\breve Q+\breve Q_{2})=\exp \breve Q\;\exp \breve Q_{2} ,
-$$
-with $\exp 0=1$.</p>
-<p><em>Proof.</em> Using $\breve Q^{n}=Q_{+}^{n}\Pi_++Q_{-}^{n}\Pi_-$, the series splits into $e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$; the second form follows from $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ and $e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=\tfrac12(e^{Q_{+}}+e^{Q_{-}})+\tfrac12(e^{Q_{+}}-e^{Q_{-}})j=e^{Q_{\blacktriangle}}\cosh Q_{\blacktriangledown}+e^{Q_{\blacktriangle}}\sinh Q_{\blacktriangledown}\,j$, because $e^{Q_{+}}+e^{Q_{-}}=e^{Q_{\blacktriangle}}(e^{Q_{\blacktriangledown}}+e^{-Q_{\blacktriangledown}})$ and $e^{Q_{+}}-e^{Q_{-}}=e^{Q_{\blacktriangle}}(e^{Q_{\blacktriangledown}}-e^{-Q_{\blacktriangledown}})$. The functional equation holds because the algebra is commutative, so the binomial series reassembles as the Cauchy product of the two exponentials; in the split biquaternion and quaternion cases the same computation fails for non-commuting arguments, the defect being measured by the commutator.</p>
-<p><strong>Corollary (the hyperbolic unit).</strong> The element $j$ has $j^{2}=+1$, so
-$$
-\exp(j\phi)=\cosh\phi+j\sinh\phi,\qquad \phi\in\mathbb{R},
-$$
-the <strong>hyperbolic exponential</strong>, whose image is the hyperbola $H(\exp(j\phi))=\cosh^{2}\phi-\sinh^{2}\phi=1$ in the plane $\mathbb{R}\{1,j\}$, where $H(a+bj)=a^{2}-b^{2}$. The element $i$ has $i^{2}=-1$, so $\exp(i\theta)=\cos\theta+i\sin\theta$, whose image is the circle $K=1$ in the plane $\mathbb{R}\{1,i\}$, where $K(a+bi)=a^{2}+b^{2}$.</p>
-<p><em>Proof.</em> The first identity is the closed form with $Q_{\blacktriangle}=0$ and $Q_{\blacktriangledown}=\phi$ real, or the Maclaurin series of $\cosh$ and $\sinh$ in the split complex plane; the second is Euler's formula in the complex plane, where $Q_{+}=Q_{-}=i\theta$.</p>
+where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity and $(Q_{\pm})^{1/n}$ is one fixed $n$-th root in each component.</li>
+<li>If exactly one circular component of $\breve Q$ is zero, the equation has exactly $n$ solutions.</li>
+<li>If $\breve Q=0$, the equation has the single solution $\breve R=0$.</li>
+</ol>
+<p><em>Proof.</em> The equation splits into $R_{+}^{n}=Q_{+}$ and $R_{-}^{n}=Q_{-}$ in the two circular components. In $\mathbb{C}$, the equation $z^{n}=q$ has $n$ roots when $q\neq0$ and the single root $0$ when $q=0$. The two components are independent, so the counts multiply in case 1, reduce to one factor in case 2, and give $1$ in case 3.</p>
+<p>A unit therefore has four square roots, and a zero divisor on one circular component has two square roots. The roots of $-1$ are four, not two: they are the two scalar roots $\pm i$ and the two split-imaginary roots $\pm ij$.</p>
 <h2 id="the-trigonometric-and-hyperbolic-functions">The Trigonometric and Hyperbolic Functions</h2>
-<p><strong>Definition.</strong> For $\breve Q\in\mathbb{B}_{\mathrm{r}}$,
-$$
-\cos \breve Q=\sum_{n\ge0}\frac{(-1)^{n}\breve Q^{2n}}{(2n)!},\qquad
-\sin \breve Q=\sum_{n\ge0}\frac{(-1)^{n}\breve Q^{2n+1}}{(2n+1)!},
-$$
-and likewise $\cosh \breve Q$ and $\sinh \breve Q$ without the alternating signs. Equivalently, from the exponential,
-$$
-\cos \breve Q=\frac{e^{i\breve Q}+e^{-i\breve Q}}{2},\quad \sin \breve Q=\frac{e^{i\breve Q}-e^{-i\breve Q}}{2i},\quad
-\cosh \breve Q=\frac{e^{\breve Q}+e^{-\breve Q}}{2},\quad \sinh \breve Q=\frac{e^{\breve Q}-e^{-\breve Q}}{2}.
+<h3 id="trigonometric-functions">Trigonometric Functions</h3>
+<p>The <strong>reduced biquaternion sine</strong> and <strong>cosine</strong> are defined by</p>
+<p>$$
+\sin\breve Q=\frac{\exp(i\breve Q)-\exp(-i\breve Q)}{2i},\qquad
+\cos\breve Q=\frac{\exp(i\breve Q)+\exp(-i\breve Q)}{2}.
 $$</p>
-<p><strong>Theorem (the reduction and the identities).</strong> Each function acts coefficientwise,
-$$
-\cos \breve Q=\cos Q_{+}\,\Pi_++\cos Q_{-}\,\Pi_-,\qquad \mathrm{etc.},
-$$
-and the Pythagorean and addition identities hold for all arguments,
-$$
-\cos^{2}\breve Q+\sin^{2}\breve Q=1,\qquad \cosh^{2}\breve Q-\sinh^{2}\breve Q=1,\qquad \cos(\breve Q_{1}+\breve Q_{2})=\cos \breve Q_{1}\cos \breve Q_{2}-\sin \breve Q_{1}\sin \breve Q_{2} .
+<p>Both are entire. They satisfy</p>
+<p>$$
+\sin'\breve Q=\cos\breve Q,\qquad \cos'\breve Q=-\sin\breve Q,
 $$</p>
-<p><em>Proof.</em> The series split in the idempotent coordinates into the corresponding series of $Q_{+}$ and of $Q_{-}$; the identities hold in each coordinate by the classical complex identities, and since the algebra is commutative the addition formula needs no ordering correction.</p>
-<p><strong>Corollary (the two kinds of rotation).</strong> In the plane $\mathbb{R}\{1,i\}$ the map $\breve Q\mapsto e^{i\theta}\breve Q$ is the ordinary elliptic rotation by $\theta$; in the plane $\mathbb{R}\{1,j\}$ the map $\breve Q\mapsto e^{j\phi}\breve Q$ is the hyperbolic rotation by $\phi$, dilating the two halves $Q_{+},Q_{-}$ reciprocally. This is the elliptic-versus-hyperbolic dichotomy carried by the two directions $i$ and $j$.</p>
-<p><em>Proof.</em> Multiplication by $e^{i\theta}=\cos\theta+i\sin\theta$ is the complex rotation in the first plane; multiplication by $e^{j\phi}=\cosh\phi+j\sinh\phi$ sends $Q_{+}\mapsto e^{\phi}Q_{+}$ and $Q_{-}\mapsto e^{-\phi}Q_{-}$, a reciprocal dilation, which is the hyperbolic rotation of the split complex plane.</p>
-<h2 id="the-logarithm">The Logarithm</h2>
-<p><strong>Definition.</strong> A <strong>logarithm</strong> of $\breve Q$ is a solution $\breve Q_{\log}$ of $\exp \breve Q_{\log}=\breve Q$.</p>
-<p><strong>Theorem (existence and the reduction).</strong> An element has a logarithm if and only if it is a <strong>unit</strong>, that is $Q_{+}\neq0$ and $Q_{-}\neq0$, and then
-$$
-\log \breve Q=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-
-$$
-for a choice of the two complex branches. The principal value is obtained from the principal branch of the complex logarithm in each coordinate; the solution is determined modulo the kernel, which is the lattice $2\pi i\bigl(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-\bigr)$.</p>
-<p><em>Proof.</em> The equation $e^{\breve Q_{\log}}=\breve Q$ splits into $e^{s_{1}}=Q_{+}$ and $e^{s_{2}}=Q_{-}$, each solvable exactly for non-zero right-hand side, with solutions differing by $2\pi i$; the two coordinates are independent, and the non-units, having a vanishing coordinate, have no logarithm.</p>
-<p><strong>Corollary (the branch structure).</strong> The logarithm exists on the unit group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ but is not single-valued: it is a covering map onto the unit group, and a single-valued branch exists exactly on a simply connected domain of the unit group.</p>
-<p><em>Proof.</em> The exponential is a local biholomorphism with discrete kernel, so its inverse is multivalued with the stated kernel, and a single-valued branch on a domain exists precisely when the domain is simply connected and avoids the two coordinate axes.</p>
-<h2 id="the-power-functions">The Power Functions</h2>
-<p><strong>Definition.</strong> For a unit $\breve Q$ and a complex exponent $s$, the <strong>power</strong> is
-$$
-\breve Q^{s}=\exp(s\log \breve Q)=Q_{+}^{s}\Pi_++Q_{-}^{s}\Pi_-,
-$$
-for a choice of the logarithms, and for an integer $s=n$ it agrees with the ordinary power $\breve Q^{n}$.</p>
-<p><strong>Theorem (the roots).</strong> For a non-zero integer $n$ the equation $\breve Q_{2}^{n}=\breve Q$ has, for each unit $\breve Q$, exactly $n^{2}$ solutions, namely
-$$
-\breve Q_{2}=\Bigl(\eta_{1}\,Q_{+}^{1/n}\Bigr)\Pi_++\Bigl(\eta_{2}\,Q_{-}^{1/n}\Bigr)\Pi_-,
-$$
-where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity. In particular a unit has four square roots, $\pm Q_{+}^{1/2}\Pi_+\pm Q_{-}^{1/2}\Pi_-$; a zero divisor has the roots with the corresponding factor absent.</p>
-<p><em>Proof.</em> In each coordinate the equation $s^{n}=Q_{+}$ has the $n$ roots $\eta Q_{+}^{1/n}$, and the two coordinates are independent, giving the product of the two counts; for the square root $n=2$ the roots of unity are $\pm1$ in each coordinate, whence the four sign combinations.</p>
-<p><strong>Corollary (the integer powers are polynomial).</strong> For an integer $n\ge0$, $\breve Q^{n}=Q_{+}^{n}\Pi_++Q_{-}^{n}\Pi_-$ is a polynomial in $\breve Q$, and for $n<0$ it is the inverse power on the units; the map $\breve Q\mapsto \breve Q^{n}$ is a homomorphism of the multiplicative monoid whose kernel on the unit group is the group of the $n$-th roots of unity in the two coordinates.</p>
-<p><em>Proof.</em> The integer powers are the iterated products, read in the coordinates; the kernel is the set of the $\breve Q$ with $Q_{+}^{n}=Q_{-}^{n}=1$.</p>
-<h2 id="relations-to-the-complex-and-split-complex-cases">Relations to the Complex and Split-Complex Cases</h2>
-<p><strong>The complex case.</strong> If the second coefficient vanishes, $\breve Q=Q_{\blacktriangle}$, then $Q_{+}=Q_{-}=Q_{\blacktriangle}$ and every elementary function reduces to the ordinary complex function, $f(\breve Q)=f(Q_{\blacktriangle})$: the reduced biquaternion function restricts to the complex function on the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$.</p>
-<p><strong>The split-complex case.</strong> If both coefficients are real, $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ in the split complex algebra $\mathbb{D}=\mathbb{R}\{1,j\}$, then $Q_{+}=q_{\blacktriangle}+q_{\blacktriangledown}$ and $Q_{-}=q_{\blacktriangle}-q_{\blacktriangledown}$ are real and
-$$
-\exp(q_{\blacktriangle}+jq_{\blacktriangledown})=e^{q_{\blacktriangle}}\bigl(\cosh q_{\blacktriangledown}+j\sinh q_{\blacktriangledown}\bigr),\qquad \log(q_{\blacktriangle}+jq_{\blacktriangledown})=\tfrac12\log(q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2})+\tfrac12 j\log\frac{q_{\blacktriangle}+q_{\blacktriangledown}}{q_{\blacktriangle}-q_{\blacktriangledown}},
-$$
-on the units with $q_{\blacktriangle}>|q_{\blacktriangledown}|$, so that $q_{\blacktriangle}\pm q_{\blacktriangledown}>0$ and the principal logarithms are real; the reduced biquaternion functions restrict to these on the split complex plane.</p>
-<p><em>Proof.</em> On the complex line $Q_{\blacktriangledown}=0$ and $Q_{+}=Q_{-}=Q_{\blacktriangle}$, so both coordinates carry the same function; on the split complex plane the coefficients are real, $Q_{+}=q_{\blacktriangle}+q_{\blacktriangledown}$ and $Q_{-}=q_{\blacktriangle}-q_{\blacktriangledown}$, and substitution in the two-factor formulas gives the displayed expressions, the sums and differences of the two logarithms reproducing the hyperbolic and the logarithmic forms.</p>
-<h2 id="the-reduction-to-two-complex-factors">The Reduction to Two Complex Factors</h2>
-<p><strong>Theorem (the general reduction principle).</strong> Let $F$ be a function defined on a set of complex numbers by a power series with a non-zero radius of convergence, or by an integral of a holomorphic kernel. Then $F$ extends to the reduced biquaternion algebra by
-$$
-F(\breve Q)=F(Q_{+})\,\Pi_++F(Q_{-})\,\Pi_-,
-$$
-and the extension is a homomorphism property for the pointwise operations: it commutes with sums, with products, with the conjugations that preserve the factors, and with the differentiation $\bar\partial$. Every elementary function above is the special case of the principle applied to the corresponding complex function.</p>
-<p><em>Proof.</em> A convergent power series can be evaluated in each coordinate by substitution, and the integral representation is evaluated coefficientwise; the algebraic identities hold in each coordinate and hence in the algebra; the differentiation $\bar\partial$ acts coefficientwise, so it commutes with the extension.</p>
-<h2 id="summary-of-formulas">Summary of Formulas</h2>
+<p>$$
+\sin(\breve Q_1+\breve Q_2)=\sin\breve Q_1\cos\breve Q_2+\cos\breve Q_1\sin\breve Q_2,
+$$</p>
+<p>$$
+\cos(\breve Q_1+\breve Q_2)=\cos\breve Q_1\cos\breve Q_2-\sin\breve Q_1\sin\breve Q_2,
+$$</p>
+<p>$$
+\sin^{2}\breve Q+\cos^{2}\breve Q=1.
+$$</p>
+<p>In the coefficients,</p>
+<p>$$
+\sin(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown},
+$$</p>
+<p>$$
+\cos(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}.
+$$</p>
+<p>The formulas follow from the addition formulas and from $\cos(jQ_{\blacktriangledown})=\cos Q_{\blacktriangledown}$, $\sin(jQ_{\blacktriangledown})=j\sin Q_{\blacktriangledown}$.</p>
+<p>The functions act on the two circular components separately, so $2\pi$ is a period in each component; in the algebra the periods are</p>
+<p>$$
+\mathcal{P}_{\sin}=\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j),
+$$</p>
+<p>of rank two and index two in the lattice $\pi\mathbb{Z}+\pi j\mathbb{Z}$. A period may act in one circular component alone, which is impossible in the complex case with its single period $2\pi$.</p>
+<p>The zeros are read in each component: $\sin\breve Q=0$ exactly when both $Q_{+}$ and $Q_{-}$ lie in $\pi\mathbb{Z}$, and $\cos\breve Q=0$ exactly when both lie in $\frac{\pi}{2}+\pi\mathbb{Z}$.</p>
+<p><strong>Unboundedness.</strong> Unlike the real case, $\sin$ and $\cos$ are unbounded on the algebra. For real $t$,</p>
+<p>$$
+\sin(jt)=j\sinh t,\qquad \cos(jt)=\cosh t,
+$$</p>
+<p>and both grow exponentially in $\lvert t\rvert$.</p>
+<h3 id="hyperbolic-functions">Hyperbolic Functions</h3>
+<p>The <strong>reduced biquaternion hyperbolic sine</strong> and <strong>cosine</strong> are defined by</p>
+<p>$$
+\sinh\breve Q=\frac{\exp(\breve Q)-\exp(-\breve Q)}{2},\qquad
+\cosh\breve Q=\frac{\exp(\breve Q)+\exp(-\breve Q)}{2}.
+$$</p>
+<p>Both are entire, and they satisfy</p>
+<p>$$
+\sinh'\breve Q=\cosh\breve Q,\qquad \cosh'\breve Q=\sinh\breve Q,
+$$</p>
+<p>$$
+\cosh(\breve Q_1+\breve Q_2)=\cosh\breve Q_1\cosh\breve Q_2+\sinh\breve Q_1\sinh\breve Q_2,
+$$</p>
+<p>$$
+\cosh^{2}\breve Q-\sinh^{2}\breve Q=1.
+$$</p>
+<p>In the coefficients,</p>
+<p>$$
+\sinh(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown},
+$$</p>
+<p>$$
+\cosh(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}.
+$$</p>
+<p>The relation between the two families is the complex one, applied coefficientwise:</p>
+<p>$$
+\sin(i\breve Q)=i\sinh\breve Q,\qquad \cos(i\breve Q)=\cosh\breve Q,\qquad
+\sinh(i\breve Q)=i\sin\breve Q,\qquad \cosh(i\breve Q)=\cos\breve Q.
+$$</p>
+<p>The period lattice is</p>
+<p>$$
+\mathcal{P}_{\sinh}=\pi i\mathbb{Z}(1+j)\oplus\pi i\mathbb{Z}(1-j),
+$$</p>
+<p>which is the kernel of the exponential. The zeros are read in each component: $\sinh\breve Q=0$ exactly when both $Q_{+}$ and $Q_{-}$ lie in $i\pi\mathbb{Z}$, and $\cosh\breve Q=0$ exactly when both lie in $i\frac{\pi}{2}+i\pi\mathbb{Z}$.</p>
+<h3 id="the-reduction-and-the-identities">The Reduction and the Identities</h3>
+<p>Every trigonometric and hyperbolic identity that holds for commuting complex arguments holds for all reduced biquaternion arguments. The proof is the formula in the coefficients: the identity holds in $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and the two coefficients reassemble. In particular the Pythagorean identities, the addition formulas and the double-angle formulas hold without restriction.</p>
+<p>The two period lattices are the two lattices of the algebra: $\pi\mathbb{Z}(1+j)\oplus\pi\mathbb{Z}(1-j)$ for the trigonometric functions and $\pi i$ times it for the hyperbolic functions. The first is the period lattice of the trigonometric functions; the second is the kernel of the exponential and the period lattice of the hyperbolic functions.</p>
+<h3 id="other-trigonometric-and-hyperbolic-functions">Other Trigonometric and Hyperbolic Functions</h3>
+<p>The remaining functions are the quotients</p>
+<p>$$
+\tan\breve Q=\frac{\sin\breve Q}{\cos\breve Q},\qquad \cot\breve Q=\frac{\cos\breve Q}{\sin\breve Q},
+$$</p>
+<p>$$
+\tanh\breve Q=\frac{\sinh\breve Q}{\cosh\breve Q},\qquad \coth\breve Q=\frac{\cosh\breve Q}{\sinh\breve Q}.
+$$</p>
+<p>They are defined wherever the denominator is a unit. The poles of $\tan$ and $\cot$ are therefore the sets where $\cos\breve Q$ or $\sin\breve Q$ fails to be a unit, that is where one circular component of the denominator vanishes; each such set is the union of two families of complex planes. The same rule applies to the hyperbolic functions.</p>
+<h3 id="inverse-trigonometric-and-hyperbolic-functions">Inverse Trigonometric and Hyperbolic Functions</h3>
+<p>The inverse functions are defined by the same formulas as in the complex case, with the branch choices made independently in the two circular components:</p>
+<p>$$
+\arcsin\breve Q=-i\operatorname{Log}\bigl(i\breve Q+\sqrt{1-\breve Q^{2}}\bigr),\qquad
+\arccos\breve Q=-i\operatorname{Log}\bigl(\breve Q+i\sqrt{1-\breve Q^{2}}\bigr),
+$$</p>
+<p>$$
+\arctan\breve Q=\frac{1}{2i}\operatorname{Log}\frac{1+i\breve Q}{1-i\breve Q},
+$$</p>
+<p>$$
+\operatorname{arsinh}\breve Q=\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}+1}\bigr),\qquad
+\operatorname{arcosh}\breve Q=\operatorname{Log}\bigl(\breve Q+\sqrt{\breve Q^{2}-1}\bigr),
+$$</p>
+<p>$$
+\operatorname{artanh}\breve Q=\frac12\operatorname{Log}\frac{1+\breve Q}{1-\breve Q}.
+$$</p>
+<p>The square roots and logarithms are multivalued, and the formulas are read in the circular components, where they reduce to the ordinary complex inverse functions. The domain of each is the set of $\breve Q$ for which both component expressions are defined; the branch cuts are inherited from the two complex components.</p>
+<p><strong>Example.</strong> For $\breve Q=2j$ the equation $\sinh\breve Q=1$ has the solution</p>
+<p>$$
+\breve Q=\operatorname{arsinh}(2j)=\operatorname{Log}\bigl(2j+\sqrt{5}\bigr)
+=j\ln(\sqrt5+2),
+$$</p>
+<p>because $(2j)^{2}+1=5$. The two circular components of $\sqrt5+2j$ are $\sqrt5+2$ and $\sqrt5-2$, both positive, so the logarithm is the split-complex logarithm and the value is $j\ln(\sqrt5+2)\approx1.4436354752\,j$, unique modulo the kernel.</p>
+<h2 id="the-two-planes">The Two Planes</h2>
+<h3 id="the-complex-line">The Complex Line</h3>
+<p>If the split coefficient vanishes, $\breve Q=Q_{\blacktriangle}$, then both circular components equal $Q_{\blacktriangle}$ and every elementary function reduces to the ordinary complex function:</p>
+<p>$$
+f(\breve Q)=f(Q_{\blacktriangle}).
+$$</p>
+<p>The reduced biquaternion function therefore restricts to the complex function on the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$. The principal logarithm restricts to the principal complex logarithm, including the value $\operatorname{Log}(-1)=i\pi$ on the negative real axis.</p>
+<h3 id="the-split-complex-plane">The Split-Complex Plane</h3>
+<p>If both coefficients are real, the element lies in the split-complex plane $\mathbb{D}=\mathbb{R}\{1,j\}$; write $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$. Then $Q_{+}=q_{\blacktriangle}+q_{\blacktriangledown}$ and $Q_{-}=q_{\blacktriangle}-q_{\blacktriangledown}$ are real. The exponential is</p>
+<p>$$
+\exp(q_{\blacktriangle}+jq_{\blacktriangledown})=e^{q_{\blacktriangle}}\bigl(\cosh q_{\blacktriangledown}+j\sinh q_{\blacktriangledown}\bigr).
+$$</p>
+<p>On the future cone $q_{\blacktriangle}>\lvert q_{\blacktriangledown}\rvert$ both circular components are positive, and the principal logarithm is the split-complex logarithm</p>
+<p>$$
+\log(q_{\blacktriangle}+jq_{\blacktriangledown})=\tfrac12\ln(q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2})+\tfrac12 j\ln\frac{q_{\blacktriangle}+q_{\blacktriangledown}}{q_{\blacktriangle}-q_{\blacktriangledown}}.
+$$</p>
+<p>Outside the future cone the reduced biquaternion logarithm still exists as long as the element is a unit, but it is complex-valued and is not the split-complex real logarithm; on the past cone both components are negative and the principal logarithm is</p>
+<p>$$
+\log(q_{\blacktriangle}+jq_{\blacktriangledown})=\tfrac12\ln(q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2})+i\pi+\tfrac12 j\ln\frac{q_{\blacktriangle}+q_{\blacktriangledown}}{q_{\blacktriangle}-q_{\blacktriangledown}}.
+$$</p>
+<p>The trigonometric functions on the split-complex plane remain trigonometric in both real variables, and the hyperbolic functions remain hyperbolic:</p>
+<p>$$
+\cos(q_{\blacktriangle}+jq_{\blacktriangledown})=\cos q_{\blacktriangle}\cos q_{\blacktriangledown}-j\sin q_{\blacktriangle}\sin q_{\blacktriangledown},
+$$</p>
+<p>$$
+\sin(q_{\blacktriangle}+jq_{\blacktriangledown})=\sin q_{\blacktriangle}\cos q_{\blacktriangledown}+j\cos q_{\blacktriangle}\sin q_{\blacktriangledown},
+$$</p>
+<p>$$
+\cosh(q_{\blacktriangle}+jq_{\blacktriangledown})=\cosh q_{\blacktriangle}\cosh q_{\blacktriangledown}+j\sinh q_{\blacktriangle}\sinh q_{\blacktriangledown},
+$$</p>
+<p>$$
+\sinh(q_{\blacktriangle}+jq_{\blacktriangledown})=\sinh q_{\blacktriangle}\cosh q_{\blacktriangledown}+j\cosh q_{\blacktriangle}\sinh q_{\blacktriangledown}.
+$$</p>
+<h3 id="the-relation-between-the-two">The Relation Between the Two</h3>
+<p>The complex line $\mathbb{R}\{1,i\}$ and the split-complex plane $\mathbb{R}\{1,j\}$ are two real two-planes in $\mathbb{B}_{\mathrm{r}}$, and they intersect in the real axis $\mathbb{R}$. In the circular components the complex line is the diagonal</p>
+<p>$$
+\{(Q_{+},Q_{-}):Q_{+}=Q_{-}\},
+$$</p>
+<p>that is $Q_{\blacktriangledown}=0$, while the split-complex plane is the real pair $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{R}$, that is $Q_{\pm}\in\mathbb{R}$.</p>
+<p>The two planes therefore test different degenerations of the same pair of complex functions: the complex line sets the two components equal, and the split-complex plane makes them real and independent.</p>
+<h2 id="summary">Summary</h2>
+<p>Every elementary function of a reduced biquaternion variable is a pair of ordinary complex functions of the two circular components $Q_{+}$ and $Q_{-}$, written in the algebra. The exponential is</p>
+<p>$$
+\exp(Q_{\blacktriangle}+jQ_{\blacktriangledown})=e^{Q_{\blacktriangle}}\bigl(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown}\bigr),
+$$</p>
+<p>and the functional equation holds for all arguments because the algebra is commutative. The trigonometric and hyperbolic functions are</p>
+<p>$$
+\sin(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown},\qquad
+\cos(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown},
+$$</p>
+<p>$$
+\sinh(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown},\qquad
+\cosh(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown},
+$$</p>
+<p>and their identities, period lattices and zeros are read in the two components.</p>
+<p>The logarithm exists exactly on the units, $Q_{\pm}\neq0$, and is</p>
+<p>$$
+\operatorname{Log}\breve Q=\frac{\operatorname{Log}(Q_{+})+\operatorname{Log}(Q_{-})}{2}
++j\,\frac{\operatorname{Log}(Q_{+})-\operatorname{Log}(Q_{-})}{2}
+$$</p>
+<p>for the principal branch. The kernel is the rank-two lattice $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$, so the principal logarithm is unique only in the principal diamond $\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$. The values of the power are $\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa$ in the kernel, and the equation $\breve R^{n}=\breve Q$ has $n^{2}$ solutions for a unit, in particular four square roots.</p>
+<p>On the complex line the functions restrict to the complex ones, on the split-complex plane to the split-complex ones. The algebra is commutative, so no commutator correction occurs; the price of the richer algebra is the rank-two lattice of the logarithm and the two period lattices of the trigonometric functions.</p>
+<p><strong>Formulas.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -163,19 +529,14 @@ and the extension is a homomorphism property for the pointwise operations: it co
 </thead>
 <tbody>
 <tr>
-<td>$\exp \breve Q$</td>
-<td>$e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$</td>
+<td>$\exp\breve Q$</td>
+<td>$e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$, equivalently $e^{Q_{\log\blacktriangle}}(\cosh Q_{\log\blacktriangledown}+j\sinh Q_{\log\blacktriangledown})$ for $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$</td>
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\exp(\breve Q_{1}+\breve Q_{2})$</td>
-<td>$\exp \breve Q_{1}\exp \breve Q_{2}$</td>
-<td>all $\breve Q_{1},\breve Q_{2}$, the algebra being commutative</td>
-</tr>
-<tr>
-<td>$\exp(j\phi)$</td>
-<td>$\cosh\phi+j\sinh\phi$</td>
-<td>$\phi\in\mathbb{R}$</td>
+<td>$\exp(\breve Q_1+\breve Q_2)$</td>
+<td>$\exp\breve Q_1\exp\breve Q_2$</td>
+<td>all $\breve Q_1,\breve Q_2$, the algebra being commutative</td>
 </tr>
 <tr>
 <td>$\exp(i\theta)$</td>
@@ -183,36 +544,52 @@ and the extension is a homomorphism property for the pointwise operations: it co
 <td>$\theta\in\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\cos \breve Q,\ \sin \breve Q$</td>
-<td>$\cos Q_{+}\,\Pi_++\cos Q_{-}\,\Pi_-$, $\sin Q_{+}\,\Pi_++\sin Q_{-}\,\Pi_-$</td>
+<td>$\exp(ij\beta)$</td>
+<td>$\cos\beta+ij\sin\beta$</td>
+<td>$\beta\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\exp(j\phi)$</td>
+<td>$\cosh\phi+j\sinh\phi$</td>
+<td>$\phi\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\cos\breve Q,\ \sin\breve Q$</td>
+<td>$\cos Q_{\blacktriangle}\cos Q_{\blacktriangledown}-j\sin Q_{\blacktriangle}\sin Q_{\blacktriangledown}$, $\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown}$</td>
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\cosh \breve Q,\ \sinh \breve Q$</td>
-<td>$\cosh Q_{+}\,\Pi_++\cosh Q_{-}\,\Pi_-$, $\sinh Q_{+}\,\Pi_++\sinh Q_{-}\,\Pi_-$</td>
+<td>$\cosh\breve Q,\ \sinh\breve Q$</td>
+<td>$\cosh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$, $\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$</td>
 <td>all $\breve Q$</td>
 </tr>
 <tr>
-<td>$\log \breve Q$</td>
-<td>$\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-$</td>
-<td>the units, branch choice</td>
+<td>$\operatorname{Log}\breve Q$</td>
+<td>$\frac{\operatorname{Log}(Q_{+})+\operatorname{Log}(Q_{-})}{2}+j\frac{\operatorname{Log}(Q_{+})-\operatorname{Log}(Q_{-})}{2}$</td>
+<td>the units; analytic off $Q_{\pm}\in(-\infty,0]$</td>
+</tr>
+<tr>
+<td>$\log\breve Q$</td>
+<td>the same with a branch choice in each component</td>
+<td>units, branch choice</td>
+</tr>
+<tr>
+<td>$\ker\exp$</td>
+<td>$2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$</td>
+<td>the period lattice</td>
 </tr>
 <tr>
 <td>$\breve Q^{s}$</td>
-<td>$Q_{+}^{s}\Pi_++Q_{-}^{s}\Pi_-$</td>
-<td>the units, branch choice</td>
+<td>$\exp(s\operatorname{Log}\breve Q+s\kappa)$ with $\kappa\in\ker\exp$</td>
+<td>units, branch choice</td>
 </tr>
 <tr>
-<td>$\breve Q_{2}^{n}=\breve Q$</td>
-<td>$n^{2}$ solutions $\eta_{1}Q_{+}^{1/n}\Pi_++\eta_{2}Q_{-}^{1/n}\Pi_-$</td>
-<td>$\breve Q$ a unit</td>
+<td>$\breve R$ with $\breve R^{n}=\breve Q$</td>
+<td>$n^{2}$ solutions for a unit</td>
+<td>$n\ge1$</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
-<p>The biquaternion algebra $M_{2}(\mathbb{C})$ is simple and non-commutative; its exponential is a matrix exponential, its trigonometric functions are entire but the functional equations fail for non-commuting arguments, and the logarithm requires the matrix logarithm with its own branch structure. The reduced biquaternion algebra replaces the single matrix exponential by the <strong>pair</strong> of complex exponentials of the two idempotent coordinates: the functional equation $\exp(\breve Q+\breve Q_{2})=\exp \breve Q\exp \breve Q_{2}$ holds for all arguments because the algebra is commutative, the trigonometric functions are the two complex trigonometric functions, the logarithm exists exactly on the units and is the pair of complex logarithms, and the power functions have the $n^{2}$ roots of the two coordinates. The split biquaternion case is the same pair structure with the quaternion exponential in each half; the reduced case is the commutative member in which every elementary function is a pair of complex elementary functions.</p>
-<h2 id="summary">Summary</h2>
-<p>Every elementary function of a reduced biquaternion variable is the pair of the corresponding complex elementary functions of the two idempotent coordinates: the exponential is $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$, with the functional equation holding for all arguments because the algebra is commutative; the element $i$ generates the elliptic rotation, $\exp(i\theta)=\cos\theta+i\sin\theta$, and the element $j$ the hyperbolic one, $\exp(j\phi)=\cosh\phi+j\sinh\phi$, dilating the two halves reciprocally. The trigonometric and hyperbolic functions are the pairs $\cos Q_{+}\Pi_++\cos Q_{-}\Pi_-$ and the like, and the Pythagorean and addition identities hold for all arguments. The logarithm exists exactly on the units, $Q_{+},Q_{-}\neq0$, and is $\log Q_{+}\Pi_++\log Q_{-}\Pi_-$ for a branch choice in each coordinate, the kernel being the lattice $2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$. The power $\breve Q^{s}=Q_{+}^{s}\Pi_++Q_{-}^{s}\Pi_-$, and the equation $\breve Q_{2}^{n}=\breve Q$ has $n^{2}$ solutions for a unit, in particular four square roots. On the complex line the functions restrict to the complex ones, on the split complex plane to the split complex ones, and the general principle is that every function defined by a power series or a holomorphic integral extends coefficientwise. Against the biquaternion case, where the matrix exponential and the matrix logarithm carry the non-commutative branch structure, the reduced biquaternion elementary functions are the two commutative complex ones.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -223,40 +600,80 @@ and the extension is a homomorphism property for the pointwise operations: it co
 </thead>
 <tbody>
 <tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>the reduced biquaternion algebra, basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ij=ji$</td>
+</tr>
+<tr>
 <td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
-<td>Element, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$</td>
+<td>an element, $Q_{\blacktriangle}$ scalar part, $Q_{\blacktriangledown}$ split part</td>
 </tr>
 <tr>
-<td>$Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$</td>
-<td>Idempotent coordinates</td>
+<td>$Q_{+}$, $Q_{-}$</td>
+<td>the two circular components</td>
 </tr>
 <tr>
-<td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
-<td>Idempotents</td>
+<td>$\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$</td>
+<td>the bar</td>
 </tr>
 <tr>
-<td>$\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$</td>
-<td>Exponential</td>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$</td>
+<td>the reduced norm</td>
 </tr>
 <tr>
-<td>$e^{j\phi}=\cosh\phi+j\sinh\phi$</td>
-<td>Hyperbolic exponential</td>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$</td>
+<td>the squared Euclidean norm</td>
 </tr>
 <tr>
-<td>$e^{i\theta}=\cos\theta+i\sin\theta$</td>
-<td>Elliptic exponential</td>
+<td>$\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$</td>
+<td>a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\phi+i\beta$</td>
 </tr>
 <tr>
-<td>$\log \breve Q=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-$</td>
-<td>Logarithm on the units</td>
+<td>$q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$</td>
+<td>the four real components of the logarithm: $\ln\rho,\alpha,\phi,\beta$</td>
 </tr>
 <tr>
-<td>$\breve Q^{s}=Q_{+}^{s}\Pi_++Q_{-}^{s}\Pi_-$</td>
-<td>Power function</td>
+<td>$\exp\breve Q=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$</td>
+<td>the exponential</td>
+</tr>
+<tr>
+<td>$\exp(j\phi)=\cosh\phi+j\sinh\phi$</td>
+<td>the hyperbolic exponential</td>
+</tr>
+<tr>
+<td>$\exp(i\theta)=\cos\theta+i\sin\theta$</td>
+<td>the scalar elliptic exponential</td>
+</tr>
+<tr>
+<td>$\exp(ij\beta)=\cos\beta+ij\sin\beta$</td>
+<td>the $ij$ elliptic exponential</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}\breve Q$</td>
+<td>the principal logarithm</td>
+</tr>
+<tr>
+<td>$2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$</td>
+<td>the kernel of the exponential</td>
+</tr>
+<tr>
+<td>$\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$</td>
+<td>the principal diamond</td>
+</tr>
+<tr>
+<td>$\sin\breve Q,\ \cos\breve Q,\ \sinh\breve Q,\ \cosh\breve Q$</td>
+<td>trigonometric and hyperbolic functions</td>
+</tr>
+<tr>
+<td>$\breve Q^{s}$</td>
+<td>the power function</td>
+</tr>
+<tr>
+<td>$\breve R$</td>
+<td>a root of $\breve R^{n}=\breve Q$</td>
 </tr>
 <tr>
 <td>$\eta_{1},\eta_{2}$</td>
-<td>$n$-th roots of unity of the two coordinates</td>
+<td>$n$-th roots of unity of the two components</td>
 </tr>
 </tbody>
 </table></div>
@@ -265,7 +682,7 @@ and the extension is a homomorphism property for the pointwise operations: it co
 <li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the exponential, the trigonometric functions and the logarithm of one complex variable.</li>
 <li>Lars V. Ahlfors, <em>Complex Analysis</em>, 3rd edition (McGraw-Hill, 1979), for the branch structure of the logarithm and the power functions.</li>
 <li>G. Baley Price, <em>An Introduction to Multicomplex Spaces and Functions</em> (Marcel Dekker, 1991), for the exponential and the elementary functions of the multicomplex algebra.</li>
-<li>M. Elena Luna-Elizarrarás, Michael Shapiro, Daniele C. Struppa and Adrian Vajiac, <em>Bicomplex Holomorphic Functions</em> (Birkhäuser, 2015), for the idempotent reduction of the elementary functions.</li>
+<li>M. Elena Luna-Elizarrarás, Michael Shapiro, Daniele C. Struppa and Adrian Vajiac, <em>Bicomplex Holomorphic Functions</em> (Birkhäuser, 2015), for the reduction of the elementary functions.</li>
 <li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the exponential of the hypercomplex algebras and the comparison with the division-algebra cases.</li>
 </ul>
       </div>

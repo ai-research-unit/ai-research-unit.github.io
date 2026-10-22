@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Split-Biquaternion Polar Element Representation — Biquaternion Universe</title>
+  <title>Split-Biquaternion Polar Decomposition — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -65,9 +65,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="split-biquaternion-polar-element-representation"><strong>Split-Biquaternion Polar Element Representation</strong></h1>
+        <h1 id="split-biquaternion-polar-decomposition"><strong>Split-Biquaternion Polar Decomposition</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is about the polar representation in the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, where $\mathbb{D}$ is the split complex algebra. The result is that every split biquaternion is a modulus times a rotor,</p>
+<p>This article is about the polar decomposition in the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, where $\mathbb{D}$ is the split complex algebra. The result is that every split biquaternion is a modulus times a rotor,</p>
 <p>$$
 \tilde{Q} = \rho\,\tilde{U} , \qquad \rho \in \mathbb{D}, \quad \rho_{\pm} \ge 0, \qquad \tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
 $$</p>
@@ -81,7 +81,7 @@ $$</p>
 <li><strong>No boost slot.</strong> The split biquaternion algebra is the direct sum of two copies of the quaternion algebra, its unit sphere is compact and six-dimensional, and its group of units is the direct product of that compact sphere and a central non-compact group, so every direction of non-compactness lies in the centre; the non-compact factors are exactly the scale and the hyperbolic phase.</li>
 <li><strong>Degeneration on the zero divisors, not on the null cone of the split-biquaternion norm.</strong> The split-biquaternion norm of a split biquaternion vanishes only at the origin, and the elements on which the rotor is not determined are those with a vanishing idempotent component.</li>
 </ul>
-<p>The article is the fourth and last of the series on the polar representations of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, <em>The Polar Element Representation of Biquaternions</em>: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate.</p>
+<p>The article is the fourth and last of the series on the polar decompositions of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, <em>Modulus–Unit Polar Decomposition of Biquaternions</em>: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate.</p>
 <p>The conventions and the symbols are those of <em>Split-Biquaternion Algebra</em> and of the corpus (<em>Conventions in Mathematics</em>); the symbols this article uses are collected in §<em>Summary of Notation</em>.</p>
 <p>The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ with $\tilde u_\pm \in Sp(1)$, in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the pairs of unit real quaternions. The isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.</p>
 <h2 id="the-word-as-exponentials">The Word as Exponentials</h2>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \tilde Q = \exp\bigl(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr) .
 $$</p>
-<p>The two non-central pieces $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1$ and $\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$ have vanishing bracket, since each is absorbed by its own idempotent, and there is no boost exponent here to obstruct the sum; this is the commutativity that the biquaternion word lacks. The writing holds on the elements with $\lambda\neq0$; at $\lambda = 0$ the element is a zero divisor and the exponent $\ln\lambda$ does not exist, although the polar representation still holds there with a degenerate rotor, as the sections on the domain and on the zero divisors record.</p>
+<p>The two non-central pieces $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1$ and $\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$ have vanishing bracket, since each is absorbed by its own idempotent, and there is no boost exponent here to obstruct the sum; this is the commutativity that the biquaternion word lacks. The writing holds on the elements with $\lambda\neq0$; at $\lambda = 0$ the element is a zero divisor and the exponent $\ln\lambda$ does not exist, although the polar decomposition still holds there with a degenerate rotor, as the sections on the domain and on the zero divisors record.</p>
 <h2 id="why-two-factors">Why Two Factors</h2>
 <h3 id="the-centre-and-the-hyperbolic-phase">The Centre and the Hyperbolic Phase</h3>
 <p>The centre of $\mathbb{H}_{\mathbb{D}}$ is $\mathbb{D}$, the split complex scalars: an element commutes with every element of the algebra exactly when it lies in the span of $e_t$ and $j$. A central factor may therefore be moved through the other factors of a product without changing it, and every central direction of the unit group is a free one-parameter factor of any decomposition. The centre is not a field here but the split complex ring, and its group of positive units is
@@ -169,7 +169,7 @@ $$</p>
 $$</p>
 <p>a split complex number, central and multiplicative. In the component form,</p>
 <p>$$
-{\langle\tilde{Q}\rangle_{\natural}}_+\tilde\Pi_1 + {\langle\tilde{Q}\rangle_{\natural}}_-\tilde\Pi_2 , \qquad \langle\tilde{Q}{\rangle_{\natural}}_{\pm} = \left|\tilde{Q}_{\pm}\right|^2 = \left|\tilde q\pm \tilde q'\right|^2 ,
+{\langle\tilde{Q}\rangle_{\natural}}_+\tilde\Pi_1 + {\langle\tilde{Q}\rangle_{\natural}}_-\tilde\Pi_2 , \qquad {\langle\tilde{Q}\rangle_{\natural}}_{\pm} = \left|\tilde{Q}_{\pm}\right|^2 = \left|\tilde q\pm \tilde q'\right|^2 ,
 $$</p>
 <p>where the last quantities are the ordinary quaternion norms of the two components; this is the identity</p>
 <p>$$
@@ -179,12 +179,12 @@ $$</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = 0 \quad\Longrightarrow\quad \tilde{Q} = 0 ,
 $$</p>
-<p>and the split-biquaternion norm does not detect the zero divisors. This is the sharpest structural difference from the biquaternion algebra, where the norm is complex and vanishes on a cone of codimension two, and it is the reason the polar representation of this article has no null cone to fail on.</p>
+<p>and the split-biquaternion norm does not detect the zero divisors. This is the sharpest structural difference from the biquaternion algebra, where the norm is complex and vanishes on a cone of codimension two, and it is the reason the polar decomposition of this article has no null cone to fail on.</p>
 <p>The zero divisors are instead the elements with a vanishing idempotent component. If $\tilde{Q}_+ = 0$ and $\tilde{Q}\neq0$ then $\tilde{Q} = \tilde{Q}_-$ is annihilated on the right by $\tilde\Pi_1$, since $\tilde{Q}\tilde\Pi_1 = \tilde{Q}_+\tilde\Pi_1 = 0$; and dually for $\tilde{Q}_- = 0$. The invertible elements are exactly those with both components nonzero, and the group of units is</p>
 <p>$$
 \mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \left(\mathbb{R}_{>0}\times Sp(1)\right)^2 ,
 $$</p>
-<p>of real dimension eight. The set of elements of unit norm is smaller: it is the unit sphere $\{\langle\tilde{Q}\rangle_{\natural} = e_t\}\cong \mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six, because a unit of $\mathbb{H}_{\mathbb{D}}$ may carry a scale in either component. Neither the split-biquaternion norm nor the zero divisors is where the polar representation fails, and the section on the domain isolates what is at stake.</p>
+<p>of real dimension eight. The set of elements of unit norm is smaller: it is the unit sphere $\{\langle\tilde{Q}\rangle_{\natural} = e_t\}\cong \mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six, because a unit of $\mathbb{H}_{\mathbb{D}}$ may carry a scale in either component. Neither the split-biquaternion norm nor the zero divisors is where the polar decomposition fails, and the section on the domain isolates what is at stake.</p>
 <h3 id="the-unit-group-and-its-two-counts">The Unit Group and Its Two Counts</h3>
 <p>Since the algebra is the direct sum $\mathbb{H}\oplus\mathbb{H}$, its group of units is the direct product of the two unit groups of the halves,</p>
 <p>$$
@@ -245,7 +245,7 @@ $$</p>
 <p>$$
 \left|\langle\tilde{Q}\rangle_{\natural}\right| = \sqrt{{\langle\tilde{Q}\rangle_{\natural}}_+{\langle\tilde{Q}\rangle_{\natural}}_-} = \rho_+\rho_- ,
 $$</p>
-<p>a non-negative real, multiplicative because the split-biquaternion norm is. Neither is the modulus of the polar representation: $\rho$ is the componentwise square root of the split-biquaternion norm, it is split complex rather than real, and it is the object that the decomposition multiplies by the rotor.</p>
+<p>a non-negative real, multiplicative because the split-biquaternion norm is. Neither is the modulus of the polar decomposition: $\rho$ is the componentwise square root of the split-biquaternion norm, it is split complex rather than real, and it is the object that the decomposition multiplies by the rotor.</p>
 <h2 id="the-scale-and-the-hyperbolic-phase">The Scale and the Hyperbolic Phase</h2>
 <h3 id="the-factorisation-of-the-modulus">The Factorisation of the Modulus</h3>
 <p>The modulus is a split complex number with non-negative components, and such a number factors uniquely into a positive real and a hyperbolic phase. For $\rho_+,\rho_- > 0$, put</p>
@@ -294,12 +294,12 @@ $$</p>
 <p>$$
 \tilde{U} = \exp\left(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right) ,
 $$</p>
-<p>and the argument is an element of the Lie algebra of the unit group: the rotor is the exponential of an element of the compact part, and with the modulus it makes the polar representation a single exponential, as the section on the exponential form shows. The two rotation angles are real, unlike the complex angle of the biquaternion Hamilton form; the angle data of the rotor is a pair of real numbers and not a split complex number. The axis of each half is a unit pure quaternion, so $\mu_+\tilde\Pi_1 + \mu_-\tilde\Pi_2$ is a root of $-e_t$ in the algebra, and the axes of the rotor are exactly the four-dimensional family $\mathcal{A}\times\mathcal{A}$ classified in <em>Split-Biquaternion Roots of Minus One</em>. Over three thousand random rotors the reconstruction $\tilde{U} = \exp(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2)$ had largest coefficient residual $4.3\times10^{-15}$.</p>
+<p>and the argument is an element of the Lie algebra of the unit group: the rotor is the exponential of an element of the compact part, and with the modulus it makes the polar decomposition a single exponential, as the section on the exponential form shows. The two rotation angles are real, unlike the complex angle of the biquaternion Hamilton form; the angle data of the rotor is a pair of real numbers and not a split complex number. The axis of each half is a unit pure quaternion, so $\mu_+\tilde\Pi_1 + \mu_-\tilde\Pi_2$ is a root of $-e_t$ in the algebra, and the axes of the rotor are exactly the four-dimensional family $\mathcal{A}\times\mathcal{A}$ classified in <em>Split-Biquaternion Roots of Minus One</em>. Over three thousand random rotors the reconstruction $\tilde{U} = \exp(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2)$ had largest coefficient residual $4.3\times10^{-15}$.</p>
 <h3 id="the-rotor-is-the-compact-factor">The Rotor Is the Compact Factor</h3>
-<p>The rotor is compact and six-dimensional, and it is the whole non-central part of the group of units: the unit group is the direct product of $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ with the central group $\mathbb{D}_{>0}$, so that a general unit is a rotation of the two halves together with a scale and a hyperbolic phase, and the two operations commute. In the biquaternion algebra the non-central part of the unit group is $SU(2)\times H^3$ — a rotor and a boost — and only half of it is compact; here the non-central part is compact and carries no non-compact direction at all. The two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ is the double cover $Sp(1)\times Sp(1)\to SO(4)$ of the companion article on rotations, and it is the action by which the rotor factor of a polar representation rotates a split biquaternion.</p>
+<p>The rotor is compact and six-dimensional, and it is the whole non-central part of the group of units: the unit group is the direct product of $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ with the central group $\mathbb{D}_{>0}$, so that a general unit is a rotation of the two halves together with a scale and a hyperbolic phase, and the two operations commute. In the biquaternion algebra the non-central part of the unit group is $SU(2)\times H^3$ — a rotor and a boost — and only half of it is compact; here the non-central part is compact and carries no non-compact direction at all. The two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ is the double cover $Sp(1)\times Sp(1)\to SO(4)$ of the companion article on rotations, and it is the action by which the rotor factor of a polar decomposition rotates a split biquaternion.</p>
 <h2 id="the-theorem">The Theorem</h2>
 <h3 id="statement">Statement</h3>
-<p><strong>Theorem (polar representation).</strong> Let $\tilde{Q}\in\mathbb{H}_{\mathbb{D}}$. Then there are</p>
+<p><strong>Theorem (polar decomposition).</strong> Let $\tilde{Q}\in\mathbb{H}_{\mathbb{D}}$. Then there are</p>
 <p>$$
 \rho\in\mathbb{D}, \quad \rho_+\ge0,\ \rho_-\ge0, \qquad \tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
 $$</p>
@@ -317,11 +317,11 @@ $$</p>
 <p>$$
 \rho\tilde{U} = \left(\rho_+\tilde\Pi_1+\rho_-\tilde\Pi_2\right)\left(\tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2\right) = \rho_+\tilde u_+\tilde\Pi_1 + \rho_-\tilde u_-\tilde\Pi_2 = \left(\tilde q+\tilde q'\right)\tilde\Pi_1 + \left(\tilde q-\tilde q'\right)\tilde\Pi_2 = \tilde{Q},
 $$</p>
-<p>which is the claim. The verification was also carried out numerically on two thousand random elements, with worst defect $8.9\times10^{-16}$ in the reconstruction and $2.1\times10^{-14}$ in the identity $\langle\tilde{Q}{\rangle_{\natural}}_\pm = \rho_\pm^2$.</p>
+<p>which is the claim. The verification was also carried out numerically on two thousand random elements, with worst defect $8.9\times10^{-16}$ in the reconstruction and $2.1\times10^{-14}$ in the identity ${\langle\tilde{Q}\rangle_{\natural}}_\pm = \rho_\pm^2$.</p>
 <h3 id="uniqueness">Uniqueness</h3>
-<p>The modulus is unique because each $\rho_\pm$ is the unique non-negative square root of the non-negative real $\langle\tilde{Q}{\rangle_{\natural}}_\pm$, and $\langle\tilde{Q}\rangle_{\natural}$ is determined by $\tilde{Q}$. The rotor is unique when both components of $\tilde{Q}$ are nonzero, because then both $\rho_\pm$ are nonzero and $\tilde u_\pm$ is forced to be $(\tilde q\pm \tilde q')/\rho_\pm$. When $\tilde{Q}_+ = 0$, the element carries no information about $\tilde u_+$, and $\tilde{U}$ is determined only in its $\tilde\Pi_2$ factor; the verification of the non-uniqueness is the computation $\rho\tilde{U} = \rho_-\tilde u_-\tilde\Pi_2 = \tilde{Q}$ for every choice of $\tilde u_+$, which was checked numerically for three different choices on the zero divisor $\tfrac12(1+\vec e_x)(1+j)$.</p>
+<p>The modulus is unique because each $\rho_\pm$ is the unique non-negative square root of the non-negative real ${\langle\tilde{Q}\rangle_{\natural}}_\pm$, and $\langle\tilde{Q}\rangle_{\natural}$ is determined by $\tilde{Q}$. The rotor is unique when both components of $\tilde{Q}$ are nonzero, because then both $\rho_\pm$ are nonzero and $\tilde u_\pm$ is forced to be $(\tilde q\pm \tilde q')/\rho_\pm$. When $\tilde{Q}_+ = 0$, the element carries no information about $\tilde u_+$, and $\tilde{U}$ is determined only in its $\tilde\Pi_2$ factor; the verification of the non-uniqueness is the computation $\rho\tilde{U} = \rho_-\tilde u_-\tilde\Pi_2 = \tilde{Q}$ for every choice of $\tilde u_+$, which was checked numerically for three different choices on the zero divisor $\tfrac12(1+\vec e_x)(1+j)$.</p>
 <h3 id="the-domain-and-the-zero-divisors">The Domain and the Zero Divisors</h3>
-<p>The decomposition exists for <strong>every</strong> element of the algebra, including the zero element and including the zero divisors; no cone and no component condition is excluded. What the zero divisors lose is uniqueness, and what they lose with it is the scale-phase separation of the modulus, which the degenerate cases below record. The domain of this polar representation is therefore the largest of the four algebras of the series, and the reason is the anisotropy of the split-biquaternion norm: a split complex norm whose two real components are positive definite can vanish only at the origin, so it cannot cut out a cone on which the modulus would vanish.</p>
+<p>The decomposition exists for <strong>every</strong> element of the algebra, including the zero element and including the zero divisors; no cone and no component condition is excluded. What the zero divisors lose is uniqueness, and what they lose with it is the scale-phase separation of the modulus, which the degenerate cases below record. The domain of this polar decomposition is therefore the largest of the four algebras of the series, and the reason is the anisotropy of the split-biquaternion norm: a split complex norm whose two real components are positive definite can vanish only at the origin, so it cannot cut out a cone on which the modulus would vanish.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
 <h3 id="the-steps">The Steps</h3>
 <p>Given $\tilde{Q} = \tilde q + j\tilde q'$:</p>
@@ -390,7 +390,7 @@ $$</p>
 <td>$\lambda$</td>
 <td>$(0,\infty)$</td>
 <td>$1$</td>
-<td>the geometric mean $\sqrt{\rho_+\rho_-} = \sqrt{\left|\langle\tilde{Q}\rangle_{\natural}\right|}$ of the two component moduli</td>
+<td>the geometric mean $\sqrt{\rho_+\rho_-} = \sqrt{\lvert\langle\tilde{Q}\rangle_{\natural}\rvert}$ of the two component moduli</td>
 </tr>
 <tr>
 <td>phase</td>
@@ -447,7 +447,7 @@ $$</p>
 $$</p>
 <p>is of this kind: $\rho_+ = 2$, $\rho_- = 1$, $\rho = 1.5 + 0.5j$, $\lambda = \sqrt2 = 1.414213562$, $\tau = \tfrac12\ln2 = 0.346573590$ and $\tilde{U} = e_t$. Its decomposition is by the modulus alone, and it is the sharpest illustration of the empty boost slot: the only non-compact factors of the algebra are central, and this element exhibits one of them at a point where it commutes with everything and does nothing to the rotor.</p>
 <h3 id="the-real-quaternions">The Real Quaternions</h3>
-<p>If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $\tilde q' = 0$, then $\tilde q\pm \tilde q' = \tilde q$, so $\rho_+ = \rho_- = |\tilde q|$, $\rho = |\tilde q|e_t$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_1 + (\tilde q/|\tilde q|)\tilde\Pi_2$, which is the diagonal element $(\tilde u_{\mathrm r},\tilde u_{\mathrm r})$ with $\tilde u_{\mathrm r} = \tilde q/|\tilde q|$. The polar representation of a real quaternion is therefore the quaternion polar representation itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_t$, and the rotor is the diagonal element $\tilde u_{\mathrm r}\,\tilde\Pi_1 + \tilde u_{\mathrm r}\,\tilde\Pi_2$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article <em>Modulus–Unit Polar Decomposition of Quaternions</em>. The two-sided rotor group contains the diagonal $\mathrm{Sp}(1)$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.</p>
+<p>If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $\tilde q' = 0$, then $\tilde q\pm \tilde q' = \tilde q$, so $\rho_+ = \rho_- = |\tilde q|$, $\rho = |\tilde q|e_t$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_1 + (\tilde q/|\tilde q|)\tilde\Pi_2$, which is the diagonal element $(\tilde u_{\mathrm r},\tilde u_{\mathrm r})$ with $\tilde u_{\mathrm r} = \tilde q/|\tilde q|$. The polar decomposition of a real quaternion is therefore the quaternion polar decomposition itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_t$, and the rotor is the diagonal element $\tilde u_{\mathrm r}\,\tilde\Pi_1 + \tilde u_{\mathrm r}\,\tilde\Pi_2$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article <em>Modulus–Unit Polar Decomposition of Quaternions</em>. The two-sided rotor group contains the diagonal $\mathrm{Sp}(1)$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.</p>
 <h3 id="the-zero-divisors">The Zero Divisors</h3>
 <p>If exactly one idempotent component vanishes then $\tilde{Q}$ is a zero divisor, and exactly one component of the modulus vanishes. The scale and the phase degenerate,</p>
 <p>$$
@@ -535,9 +535,9 @@ $$</p>
 <p>$$
 \exp\left(2\pi k\,\mu \tilde\Pi_1\right) = e_t \quad\text{for every unit pure }\mu\text{ and every }k\in\mathbb{Z} , \qquad \exp\left(\ln r + \pi\mu\right) = -r ,
 $$</p>
-<p>both verified to machine precision. The fibre of the exponential over $e_t$ accordingly contains a two-sphere of directions at every non-zero multiple of $2\pi$. The polar representation fixes a representative of the logarithm by $\lambda>0$ and $\theta_\pm\in[0,2\pi]$, the branch that the algorithm uses, and it is the only branch choice in the article.</p>
-<h3 id="the-polar-representation-as-a-single-exponential">The Polar Representation as a Single Exponential</h3>
-<p><strong>Theorem.</strong> An element of $\mathbb{H}_{\mathbb{D}}$ is the exponential of an element of the algebra exactly when it is invertible, and for an invertible element the polar representation is the exponential of a single element,</p>
+<p>both verified to machine precision. The fibre of the exponential over $e_t$ accordingly contains a two-sphere of directions at every non-zero multiple of $2\pi$. The polar decomposition fixes a representative of the logarithm by $\lambda>0$ and $\theta_\pm\in[0,2\pi]$, the branch that the algorithm uses, and it is the only branch choice in the article.</p>
+<h3 id="the-polar-decomposition-as-a-single-exponential">The Polar Decomposition as a Single Exponential</h3>
+<p><strong>Theorem.</strong> An element of $\mathbb{H}_{\mathbb{D}}$ is the exponential of an element of the algebra exactly when it is invertible, and for an invertible element the polar decomposition is the exponential of a single element,</p>
 <p>$$
 \tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right) ,
 $$</p>
@@ -547,7 +547,7 @@ $$</p>
 <ul>
 <li>The exponential polar form of the earlier literature is not a second polar form of this algebra: it is the same decomposition with the modulus written as an exponential and each half of the rotor written as an exponential, and the two presentations differ only in the representative they choose for the argument of the modulus.</li>
 <li>The domain of the exponential polar form is the invertible set and not the whole algebra, in contrast with the two-factor representation, whose domain is the whole algebra: the exponential is surjective onto the invertible elements and misses the zero divisors, which is the precise form of the failure recorded in the degenerate cases.</li>
-<li>The count of polar forms for this algebra is a count of presentations and not of decompositions. The biquaternion partial forms arise from the three ways of splitting four factors into two pairs; two factors admit one splitting, so this algebra has no partial polar representations, and the two-factor grouping is available for every element of the algebra.</li>
+<li>The count of polar forms for this algebra is a count of presentations and not of decompositions. The biquaternion partial forms arise from the three ways of splitting four factors into two pairs; two factors admit one splitting, so this algebra has no partial polar decompositions, and the two-factor grouping is available for every element of the algebra.</li>
 </ul>
 <h2 id="comparison-with-the-other-algebras-of-the-series">Comparison with the Other Algebras of the Series</h2>
 <h3 id="the-four-slots">The Four Slots</h3>
@@ -602,20 +602,20 @@ $$</p>
 <p>The rotor is the <strong>compact part of the unit sphere</strong> of the algebra and the boost is its non-compact part: in $\mathbb{H}$ and $\mathbb{H}_{\mathbb{D}}$ there is no boost, so the rotor is the whole unit sphere, of dimension three and six respectively; in $\mathbb{H}_{\mathrm{s}}$ the unit sphere is the three-dimensional group $SL(2,\mathbb{R})$ and splits into the two-dimensional boosts and the one-dimensional rotations, the reflections lying in the other component $\{N = -1\}$; in $\mathbb{B}$ the unit sphere is $SL(2,\mathbb{C})$, of dimension six, and splits into the three-dimensional boosts and the three-dimensional rotor.</p>
 <p>The two algebras of dimension eight distribute their eight real dimensions differently because in one of them the centre is the complex field and in the other the split complex ring.</p>
 <h3 id="where-the-indefiniteness-goes">Where the Indefiniteness Goes</h3>
-<p>Each of the four algebras has an indefinite structure, and the polar representation exhibits it in a different slot.</p>
+<p>Each of the four algebras has an indefinite structure, and the polar decomposition exhibits it in a different slot.</p>
 <p>In $\mathbb{H}$ there is none: the norm is positive definite, and both the scale and the rotor are as definite as their counterparts in the complex numbers.</p>
 <p>In $\mathbb{H}_{\mathrm{s}}$ the split-biquaternion norm has signature $(2,2)$ and its square root requires an absolute value; the indefinite direction is exhibited as a <strong>boost</strong> in the non-central Hermitian subspace, and the sign of the split-biquaternion norm survives as the determinant of the rotor.</p>
 <p>In $\mathbb{B}$ the norm is complex and its square root requires a branch; the two-dimensional family of branches is exhibited as the central <strong>phase</strong>, and the indefinite direction of the algebra is spent on the three-dimensional <strong>boost</strong>.</p>
 <p>In $\mathbb{H}_{\mathbb{D}}$ the split-biquaternion norm is split complex and requires no branch; there is no cone on which the modulus vanishes, and there is no boost. The indefinite directions are exactly the two central ones, the scale and the hyperbolic phase, and the rotor is compact. The absence of the boost is the strongest structural statement of the comparison: the algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple of compact type, it has no non-zero nilpotent element, and the non-compact part of its unit group is central.</p>
 <h2 id="summary">Summary</h2>
-<p>Every split biquaternion $\tilde{Q} = \tilde q + j\tilde q'$, with $\tilde q,\tilde q'\in\mathbb{H}$, has a polar representation</p>
+<p>Every split biquaternion $\tilde{Q} = \tilde q + j\tilde q'$, with $\tilde q,\tilde q'\in\mathbb{H}$, has a polar decomposition</p>
 <p>$$
 \tilde{Q} = \rho\,\tilde{U} , \qquad \rho = \rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2 , \qquad \rho_\pm = \left|\tilde q\pm \tilde q'\right| \ge 0, \qquad \tilde{U} = \tilde u_+\tilde\Pi_1 + \tilde u_-\tilde\Pi_2 ,
 $$</p>
-<p>with $\tilde u_\pm\in Sp(1)$, in which the modulus $\rho$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $\rho^2 = \langle\tilde{Q}\rangle_{\natural}$, and the rotor lies in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $\rho = \lambda \exp(j\tau)$ with the scale $\lambda = \sqrt{\rho_+\rho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\rho_+/\rho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{H}_{\mathbb{D}}$ is the one whose polar representation has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.</p>
+<p>with $\tilde u_\pm\in Sp(1)$, in which the modulus $\rho$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $\rho^2 = \langle\tilde{Q}\rangle_{\natural}$, and the rotor lies in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $\rho = \lambda \exp(j\tau)$ with the scale $\lambda = \sqrt{\rho_+\rho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\rho_+/\rho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{H}_{\mathbb{D}}$ is the one whose polar decomposition has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.</p>
 <p>The two factors commute, so the order of the product is not part of the statement: $\rho\tilde{U} = \tilde{U}\rho$, and the two halves of the rotor commute with each other and with the modulus.</p>
 <p>The four conjugations act on the decomposition by exchanging the halves of the modulus and of the rotor or by reversing the two rotor angles; of the four, three pass through the exponential, and the flat conjugation $\flat = -{}^{*}$ does not, satisfying $(\exp\tilde{Q})^{\flat} = -\exp(\tilde{Q}^{*})$ in place of $\exp(\tilde{Q}^{\flat})$.</p>
-<p>The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_t$ and vector part $\vec Q$ is $\exp\tilde{Q} = \exp(Q_t)(\cos\theta\,e_t + (\sin\theta/\theta)\vec Q)$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2)$, which is the polar representation written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.</p>
+<p>The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_t$ and vector part $\vec Q$ is $\exp\tilde{Q} = \exp(Q_t)(\cos\theta\,e_t + (\sin\theta/\theta)\vec Q)$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2)$, which is the polar decomposition written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -650,7 +650,7 @@ $$</p>
 <td>the split-biquaternion norm, split complex, anisotropic</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q}{\rangle_{\natural}}_\pm = \rho_\pm^2$</td>
+<td>${\langle\tilde{Q}\rangle_{\natural}}_\pm = \rho_\pm^2$</td>
 <td>the two non-negative components of the split-biquaternion norm</td>
 </tr>
 <tr>
@@ -703,8 +703,8 @@ $$</p>
 <li><a href="split-biquaternion-roots-of-minus-one.html">Split-Biquaternion Roots of Minus One</a>, for the roots of $-e_t$, which are the axes of the two halves of the rotor and form the four-dimensional family $\mathcal{A}\times\mathcal{A}$.</li>
 <li><a href="split-biquaternion-elementary-functions.html">Split-Biquaternion Elementary Functions</a>, for the exponential, the logarithm and the elementary functions whose argument the polar decomposition of this article exhibits.</li>
 <li><a href="split-biquaternion-rotations-and-the-lorentz-group.html">Split-Biquaternion Rotations and the Lorentz Group</a>, for the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the realisation of $SO(4)$ and the absence of parabolic subgroups.</li>
-<li><a href="modulus-unit-polar-decomposition-of-quaternions.html">Modulus–Unit Polar Decomposition of Quaternions</a>, <a href="split-quaternion-polar-element-representation.html">Split-Quaternion Polar Element Representation</a> and <a href="the-polar-element-representation-of-biquaternions.html">The Polar Element Representation of Biquaternions</a>, for the other three algebras of the series.</li>
-<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), Chapter 3, for the polar representations of split biquaternions.</li>
+<li><a href="modulus-unit-polar-decomposition-of-quaternions.html">Modulus–Unit Polar Decomposition of Quaternions</a>, <a href="split-quaternion-polar-decomposition.html">Split-Quaternion Polar Decomposition</a> and <a href="modulus-unit-polar-decomposition-of-biquaternions.html">The Polar Decomposition of Biquaternions</a>, for the other three algebras of the series.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), Chapter 3, for the polar decompositions of split biquaternions.</li>
 </ul>
       </div>
     </main>

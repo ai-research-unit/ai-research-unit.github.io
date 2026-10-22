@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rational-Chart Polar Decomposition of Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rational-chart-polar-decomposition-of-reduced-biquaternions"><strong>Rational-Chart Polar Decomposition of Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Reduced Biquaternions</em> writes every unit as</p>
+<p>$$
+\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\bar u=1,
+$$</p>
+<p>with $\breve r$ the modulus in the positive cone $P=\{x+jy:x>|y|\}$ and $u$ the unit factor on the torus $T^2=\{u:u\bar u=1\}$. That article proves the pair unique and treats $u$ as a point of the torus. It chooses no coordinate on the torus: the unit factor is named by the equation $u\bar u=1$, not by a pair of numbers.</p>
+<p>This article names it. For real numbers $s_1,s_2$ put</p>
+<p>$$
+c(s)=\frac{1-is}{1+is},
+$$</p>
+<p>and let $u(s_1,s_2)$ be the unit whose two circular components are $c(s_1)$ and $c(s_2)$:</p>
+<p>$$
+u(s_1,s_2)=\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2}.
+$$</p>
+<p>Nothing in the decomposition changes. The modulus is still $\breve r$, the element $u=u(s_1,s_2)$ is still the same unit factor, and the pair $(\breve r,u)$ is still unique. The only new object is the pair of real numbers $(s_1,s_2)$, which replaces the point of the torus by a point of the plane.</p>
+<p>The chart is rational: $c(s)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality, and the locality is doubled. As $\lvert s\rvert$ grows the unit $c(s)$ approaches $-1$ without attaining it, so the chart on one circle misses the point $-1$. On the torus the chart misses the union of the two circles on which one circular component equals $-1$. The rational-chart decomposition therefore holds on the complement of two walls and fails on them. Four charts, obtained by multiplying the unit factor by $1,j,-1,-j$, cover the torus.</p>
+<p>The plan is as follows. The modulus–unit form is recalled (§<em>The Modulus–Unit Form Recalled</em>), the chart and its inverse are defined (§<em>The Chart</em>, §<em>The Inverse</em>), and the chart is proved a bijection (§<em>The Bijection</em>). The decomposition is then stated and proved (§<em>The Rational-Chart Decomposition</em>), the group law in the coordinates is computed (§<em>The Group Law</em>), the covering of the torus and the cost of rationality are described (§<em>Covering the Torus and the Price of Locality</em>), and the matrix picture (§<em>The Matrix Picture</em>) and worked examples (§<em>Worked Examples</em>) close the article.</p>
+<p>The symbols are those of <em>Modulus–Unit Polar Decomposition of Reduced Biquaternions</em>. The notation is collected in §<em>Summary of Notation</em>.</p>
+<p>Every numerical value displayed below was recomputed in double precision.</p>
+<h2 id="the-unit-factor-and-its-chart">The Unit Factor and Its Chart</h2>
+<h3 id="the-modulusunit-form-recalled">The Modulus–Unit Form Recalled</h3>
+<p>For a reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the bar is $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$, and the product</p>
+<p>$$
+\breve Q\bar{\breve Q}=\bigl(|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2\bigr)+2j\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})
+$$</p>
+<p>lies in the cone $P$ exactly when $\breve Q$ is a unit. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$, an element of $P$ fixed by the bar, and the unit factor is</p>
+<p>$$
+u=\breve r^{-1}\breve Q,\qquad u\bar u=1.
+$$</p>
+<p>The two scales of the modulus are</p>
+<p>$$
+\rho_+=|Q_{+}|>0,\qquad \rho_-=|Q_{-}|>0,
+$$</p>
+<p>and the two circular components of the unit factor are</p>
+<p>$$
+u_+=\frac{Q_{+}}{\rho_+},\qquad u_-=\frac{Q_{-}}{\rho_-}.
+$$</p>
+<p>Each is a unit complex number. The pair $(\breve r,u)$ is unique: taking the bar forces $\breve r^2=\breve Q\bar{\breve Q}$, the cone fixes the square root, and then $u=\breve r^{-1}\breve Q$.</p>
+<p>This is where the modulus–unit article stops. The present article adds two real numbers, $s_1$ and $s_2$, one for each circular component, and changes nothing else.</p>
+<h3 id="the-chart">The Chart</h3>
+<p><strong>Definition.</strong> For $s\in\mathbb{R}$ the <strong>circle chart</strong> is</p>
+<p>$$
+c(s)=\frac{1-is}{1+is}=\frac{1-s^2}{1+s^2}-i\,\frac{2s}{1+s^2}.
+$$</p>
+<p>The real and imaginary parts are rational functions of $s$, and their squares sum to one:</p>
+<p>$$
+\left(\frac{1-s^2}{1+s^2}\right)^2+\left(\frac{2s}{1+s^2}\right)^2
+=\frac{(1-s^2)^2+4s^2}{(1+s^2)^2}
+=\frac{(1+s^2)^2}{(1+s^2)^2}=1.
+$$</p>
+<p>Every $c(s)$ is therefore a point of the unit circle, and the denominator $1+is$ never vanishes. Three values fix the orientation:</p>
+<p>$$
+c(0)=1,\qquad c(1)=\frac{1-i}{1+i}=-i,\qquad c(-1)=\frac{1+i}{1-i}=i.
+$$</p>
+<p>The circle chart almost covers the circle, but not quite. If $c(s)=-1$ then $1-is=-1-is$, hence $1=-1$, which is impossible; so $-1$ is not attained. As $\lvert s\rvert$ grows without bound,</p>
+<p>$$
+c(s)=\frac{1-s^2-2is}{1+s^2}=-1-\frac{2is}{1+s^2}+\frac{2}{1+s^2}\longrightarrow-1,
+$$</p>
+<p>so $-1$ is the limit of the chart at both ends of the line.</p>
+<p>Geometrically, the line through $-1$ and $c(s)$ meets the imaginary axis at $-is$, so the circle chart is the stereographic projection of the circle from $-1$ onto that axis, followed by the identification $-is\leftrightarrow s$.</p>
+<p><strong>Definition (the torus chart).</strong> For $(s_1,s_2)\in\mathbb{R}^2$ the <strong>torus chart</strong> is the unit $u(s_1,s_2)$ whose circular components are $c(s_1)$ and $c(s_2)$:</p>
+<p>$$
+u(s_1,s_2)=\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2}.
+$$</p>
+<p>The definition is consistent because an element of the torus is determined by its two circular components. The element is a unit factor: its components have modulus one, so $u\bar u=1$.</p>
+<p>The chart misses the set on which one circular component equals $-1$:</p>
+<p>$$
+M=\{\,u:u_+=-1\,\}\cup\{\,u:u_-=-1\,\},
+$$</p>
+<p>the union of two circles in $T^2$, each a copy of $S^1$. On the complement the chart is a coordinate, and the coordinate is rational in the components.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p><strong>Proposition.</strong> Let $u\in T^2$ with $u_+\neq-1$ and $u_-\neq-1$, where $u_+,u_-$ are the circular components of $u$. Then $u=u(s_1,s_2)$ for the real numbers</p>
+<p>$$
+s_1=i\,\frac{u_+-1}{u_++1},\qquad s_2=i\,\frac{u_--1}{u_-+1}.
+$$</p>
+<p><strong>Proof.</strong> For a unit complex number $w\neq-1$, the number $s=i(w-1)/(w+1)$ is real, because</p>
+<p>$$
+\bar s=-i\,\frac{\bar w-1}{\bar w+1}=-i\,\frac{w^{-1}-1}{w^{-1}+1}=-i\,\frac{1-w}{1+w}=i\,\frac{w-1}{w+1}=s,
+$$</p>
+<p>and it satisfies</p>
+<p>$$
+1-is=1+\frac{w-1}{w+1}=\frac{2w}{w+1},\qquad
+1+is=1-\frac{w-1}{w+1}=\frac{2}{w+1},
+$$</p>
+<p>so $c(s)=(1-is)/(1+is)=w$. Applying this to $w=u_+$ and $w=u_-$ gives the two coordinates, and an element of the torus is determined by its circular components.</p>
+<p>For a unit $\breve Q$ the circular components of the unit factor are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$, so the coordinates are</p>
+<p>$$
+s_1=i\,\frac{Q_{+}-\rho_+}{Q_{+}+\rho_+},\qquad
+s_2=i\,\frac{Q_{-}-\rho_-}{Q_{-}+\rho_-}.
+$$</p>
+<p>The second form names the coordinates by $\breve Q$ alone. The denominators vanish exactly at $Q_{+}=-\rho_+$ and $Q_{-}=-\rho_-$, that is at the two walls of §<em>The Domain</em>, where the chart has no point.</p>
+<h3 id="the-bijection">The Bijection</h3>
+<p><strong>Theorem.</strong> The map $(s_1,s_2)\mapsto u(s_1,s_2)$ is a bijection from $\mathbb{R}^2$ onto $T^2\setminus M$.</p>
+<p><strong>Injectivity.</strong> If $u(s_1,s_2)=u(s_1',s_2')$, the two elements have the same circular components, so $c(s_1)=c(s_1')$ and $c(s_2)=c(s_2')$. On one circle, $c(s)=c(s')$ cross-multiplies to</p>
+<p>$$
+(1-is)(1+is')=(1-is')(1+is),
+$$</p>
+<p>that is $1+i(s'-s)+ss'=1+i(s-s')+ss'$, hence $s=s'$. The same for $s_2$.</p>
+<p><strong>Surjectivity.</strong> This is the proposition of §<em>The Inverse</em>: for every unit $u$ with neither circular component equal to $-1$, the real numbers $s_1,s_2$ of that proposition satisfy $u(s_1,s_2)=u$.</p>
+<p>The chart is therefore one-to-one, and its image is the torus with the two circles $M$ removed.</p>
+<h2 id="the-rational-chart-decomposition">The Rational-Chart Decomposition</h2>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every unit $\breve Q$ with</p>
+<p>$$
+Q_{+}\notin(-\infty,0]\quad\text{and}\quad Q_{-}\notin(-\infty,0]
+$$</p>
+<p>has exactly one rational-chart polar decomposition</p>
+<p>$$
+\breve Q=\breve r\,u(s_1,s_2),\qquad \breve r\in P,\quad (s_1,s_2)\in\mathbb{R}^2.
+$$</p>
+<p><strong>Existence.</strong> Let $\breve Q$ satisfy the two conditions, and put $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ and $u=\breve r^{-1}\breve Q$. Then $\breve r\in P$ and $u\bar u=1$. Its circular components are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$. If the first were $-1$ then $Q_{+}=-\rho_+\le0$, contrary to the hypothesis; if the second were $-1$ then $Q_{-}=-\rho_-\le0$, also contrary. Hence neither component is $-1$, and the bijection gives real $s_1,s_2$ with $u=u(s_1,s_2)$. Therefore $\breve Q=\breve r u(s_1,s_2)$.</p>
+<p><strong>Uniqueness.</strong> Taking the bar gives $\breve r^2=\breve Q\bar{\breve Q}$, so $\breve r$ is the modulus; then $u=\breve r^{-1}\breve Q$; the chart is injective, so $(s_1,s_2)$ is determined by $u$.</p>
+<p>The coordinates are those of §<em>The Inverse</em>, and the reconstruction is exact:</p>
+<p>$$
+\breve Q=\breve r\left(\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2}\right).
+$$</p>
+<h3 id="the-domain">The Domain</h3>
+<p>The domain is the complement of the two walls</p>
+<p>$$
+W_+=\{\,Q_{+}\in(-\infty,0]\,\},\qquad W_-=\{\,Q_{-}\in(-\infty,0]\,\},
+$$</p>
+<p>each of real dimension three. The domain is</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}^{\times}\setminus(W_+\cup W_-).
+$$</p>
+<p>The zero divisors are excluded twice over: they are the lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, and $Q_{\blacktriangle}=Q_{\blacktriangledown}$ lies in $W_-$ while $Q_{\blacktriangle}=-Q_{\blacktriangledown}$ lies in $W_+$. The walls are larger than the zero divisors. A unit can have $Q_{+}$ real and negative, for instance $Q_{\blacktriangle}=-3/2$, $Q_{\blacktriangledown}=1/2$, where $Q_{+}=-1$ and $Q_{-}=-2$; such a unit lies on both walls and has no chart coordinate, although it has a perfectly good modulus–unit decomposition with unit factor $(-1,-1)$.</p>
+<p>In the formula $s_k=i(u_k-1)/(u_k+1)$ the two exclusions are visible at once: the denominator of the first vanishes at $u_+=-1$, that is $Q_{+}=-\rho_+$, and the denominator of the second at $u_-=-1$. The numerator and denominator of the second form both vanish at a zero divisor, where one of $\rho_+,\rho_-$ is zero and no decomposition of any kind exists.</p>
+<h2 id="the-group-law">The Group Law</h2>
+<p>The product of two unit factors is a unit factor, and the coordinates of the product are rational functions of the two pairs of coordinates.</p>
+<p><strong>Proposition.</strong> For $(s_1,s_2)$ and $(t_1,t_2)$ in $\mathbb{R}^2$ with $s_1t_1\neq1$ and $s_2t_2\neq1$,</p>
+<p>$$
+u(s_1,s_2)\,u(t_1,t_2)=u(s_3,s_4),\qquad
+s_3=\frac{s_1+t_1}{1-s_1t_1},\qquad s_4=\frac{s_2+t_2}{1-s_2t_2}.
+$$</p>
+<p><strong>Proof.</strong> The circular components of the product are the products of the circular components:</p>
+<p>$$
+c(s_1)c(t_1),\qquad c(s_2)c(t_2).
+$$</p>
+<p>Multiplying the two fractions on one circle,</p>
+<p>$$
+c(s)c(t)=\frac{(1-is)(1-it)}{(1+is)(1+it)}
+=\frac{(1-st)-i(s+t)}{(1-st)+i(s+t)}.
+$$</p>
+<p>Dividing numerator and denominator by $1-st$ puts the right-hand side in the form $(1-is_3)/(1+is_3)$ with $s_3=(s+t)/(1-st)$, which is $c(s_3)$. Applying this on each circle gives the two coordinates of the product.</p>
+<p>The law has the identity $(0,0)$, because $c(0)=1$, and the inverse $(-s_1,-s_2)$, because</p>
+<p>$$
+c(s)c(-s)=\frac{1-is}{1+is}\cdot\frac{1+is}{1-is}=1
+$$</p>
+<p>on each circle. It is associative wherever it is defined, being inherited from the multiplication of the torus.</p>
+<p>When $s_1t_1=1$ the first formula has a pole. The product of the first components is then</p>
+<p>$$
+c(s)c(1/s)=\frac{(1-is)(1-i/s)}{(1+is)(1+i/s)}=\frac{-i(s+1/s)}{i(s+1/s)}=-1,
+$$</p>
+<p>which is the missing point of the chart. The product is a perfectly good unit factor, but its first coordinate does not exist: it has escaped to infinity. The chart is therefore a <strong>group chunk</strong>, not a global group. It is a coordinate on the plane, and the plane must be compactified, component by component, to see the whole torus.</p>
+<h2 id="covering-the-torus-and-the-price-of-locality">Covering the Torus and the Price of Locality</h2>
+<h3 id="the-second-chart">The Second Chart</h3>
+<p>The chart misses the two circles on which a component equals $-1$. The chart</p>
+<p>$$
+v(s_1,s_2)=-u(s_1,s_2)
+$$</p>
+<p>has circular components $-c(s_1)$ and $-c(s_2)$, so it misses the two circles on which a component equals $+1$, and it attains $-1$ in either component. On the common domain the two charts are related by</p>
+<p>$$
+v(s_1,s_2)=u\!\left(-\frac{1}{s_1},-\frac{1}{s_2}\right),\qquad s_1s_2\neq0,
+$$</p>
+<p>because $-c(s)=c(-1/s)$:</p>
+<p>$$
+c(-1/s)=\frac{1+i/s}{1-i/s}=\frac{s+i}{s-i}=-\frac{1-is}{1+is}.
+$$</p>
+<h3 id="the-four-charts">The Four Charts</h3>
+<p>The two charts $u$ and $-u$ do not suffice. The unit with circular components $(1,-1)$ has its first component equal to $+1$ and its second equal to $-1$: the chart $u$ misses it on the second component and the chart $-u$ misses it on the first. The split unit $j$ has exactly these components, so it is missed by both.</p>
+<p>Multiplying by $j$ flips the second circular component and leaves the first, and multiplying by $-j$ flips the first. The four charts</p>
+<p>$$
+u,\qquad ju,\qquad -u,\qquad -ju
+$$</p>
+<p>have the coordinate descriptions</p>
+<p>$$
+(s_1,s_2),\qquad \left(s_1,-\frac{1}{s_2}\right),\qquad
+\left(-\frac{1}{s_1},s_2\right),\qquad
+\left(-\frac{1}{s_1},-\frac{1}{s_2}\right).
+$$</p>
+<p>Their missed sets are the four unions</p>
+<p>$$
+\{u_+=\varepsilon_1\}\cup\{u_-=\varepsilon_2\},\qquad \varepsilon_1,\varepsilon_2\in\{\pm1\}.
+$$</p>
+<p>Every point of the torus avoids at least one of these sets, because a unit complex number cannot equal both $+1$ and $-1$. The four charts therefore cover the torus. They are the product of the two charts of each circle, and the multiplier $j$ is what makes the two circles independent.</p>
+<h3 id="the-cut">The Cut</h3>
+<p>The domain of one chart is the complement of the two walls $W_+$ and $W_-$. The wall $W_+$ is the set on which the first circular component is a non-positive real, and $W_-$ the set on which the second is. Each is a real three-dimensional half-space, and their union is the cut.</p>
+<p>The cut is not the zero-divisor set, which is the union of the two lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$: the zero divisors are the part of the walls where $\rho_+\rho_-=0$. The cut is the price of the chart, not a singularity of the decomposition.</p>
+<p>The chart has three properties, and they are the terms of an exchange.</p>
+<ul>
+<li><strong>It is rational.</strong> Both $c(s)$ and its inverse are ratios of polynomials, and the reconstruction uses field operations alone. No transcendental function and no infinite series occur.</li>
+<li><strong>It is local.</strong> It misses two circles of the torus, and therefore two walls of the unit group. Four charts, or a compactification in each component, are needed to recover the torus.</li>
+<li><strong>It is unbounded.</strong> Near a missed circle the coordinate escapes to infinity, and the two sides of a wall carry opposite signs of the corresponding coordinate.</li>
+</ul>
+<p>The modulus–unit form is global and uses a square root. The exponential form, treated in <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.</p>
+<h2 id="the-matrix-picture">The Matrix Picture</h2>
+<p>In the complex basis $\{1,j\}$ the unit $u(s_1,s_2)=u_{\blacktriangle}+ju_{\blacktriangledown}$ is the block matrix</p>
+<p>$$
+M_u=\begin{pmatrix}u_{\blacktriangle}&u_{\blacktriangledown}\\u_{\blacktriangledown}&u_{\blacktriangle}\end{pmatrix}
+=\frac12\begin{pmatrix}c(s_1)+c(s_2)&c(s_1)-c(s_2)\\ c(s_1)-c(s_2)&c(s_1)+c(s_2)\end{pmatrix}.
+$$</p>
+<p>The change of basis $(z,w)\mapsto(z+w,z-w)$ diagonalises it:</p>
+<p>$$
+M_u\longmapsto\begin{pmatrix}c(s_1)&0\\0&c(s_2)\end{pmatrix}.
+$$</p>
+<p>In the real basis the change is orthogonal after the rescaling $u_\pm\mapsto u_\pm/\sqrt2$, and the matrix becomes the block diagonal matrix of the two rotations</p>
+<p>$$
+R(\theta_1)\oplus R(\theta_2),\qquad
+R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix},
+$$</p>
+<p>with $c(s_k)=e^{i\theta_k}$. The angles are related to the coordinates by</p>
+<p>$$
+\theta_k=-2\arctan s_k,\qquad s_k=-\tan\frac{\theta_k}{2}.
+$$</p>
+<p>The matrix lies in $SO(4)$. Its determinant is $\lvert c(s_1)\rvert^2\lvert c(s_2)\rvert^2=1$, and its trace is $2\cos\theta_1+2\cos\theta_2$. It is conformal exactly when $\theta_1=\pm\theta_2$, that is when $s_1=\pm s_2$; otherwise it has two distinct rotation angles.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-generic-element">A Generic Element</h3>
+<p>Take $\breve Q=3+4i+j(1-i)$, so $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. The circular components and scales are</p>
+<p>$$
+Q_{+}=4+3i,\quad \rho_+=5,\qquad Q_{-}=2+5i,\quad \rho_-=\sqrt{29}=5.385164807134504.
+$$</p>
+<p>The unit factor has circular components</p>
+<p>$$
+u_+=\frac{4+3i}{5}=0.8+0.6i,\qquad
+u_-=\frac{2+5i}{\sqrt{29}}=0.371390676354104+0.928476690885259\,i.
+$$</p>
+<p>The first is $c(-1/3)$, because</p>
+<p>$$
+c\!\left(-\tfrac13\right)=\frac{1+i/3}{1-i/3}=\frac{3+i}{3-i}=0.8+0.6i.
+$$</p>
+<p>The second is $c(s_2)$ with</p>
+<p>$$
+s_2=i\,\frac{u_--1}{u_-+1}
+=-\tan\frac{\theta_-}{2}
+=-\frac{5}{\sqrt{29}+2}=-0.6770329614269008,
+$$</p>
+<p>where $\theta_-=\arctan(5/2)=1.1902899$. The chart coordinate is therefore</p>
+<p>$$
+(s_1,s_2)=\left(-\frac13,\ -0.6770329614269008\right).
+$$</p>
+<p>The modulus is the one computed in <em>Modulus–Unit Polar Decomposition of Reduced Biquaternions</em>,</p>
+<p>$$
+\breve r=5.192582403567252-0.192582403567252\,j,
+$$</p>
+<p>and the reconstruction</p>
+<p>$$
+\breve r\,u(s_1,s_2)
+$$</p>
+<p>returns $3+4i+j(1-i)$ with Euclidean error of order $10^{-16}$ in double precision.</p>
+<h3 id="the-circle-charts">The Circle Charts</h3>
+<p>The scalar circle is the locus $s_1=s_2$. On it the chart reduces to the complex chart:</p>
+<p>$$
+u(s,s)=c(s)=\frac{1-is}{1+is},
+$$</p>
+<p>and the decomposition is the complex rational-chart decomposition of the two equal circular components.</p>
+<p>The $ij$-circle is the locus $s_2=-s_1$. In terms of the angles, the unit $u=e^{i\alpha}e^{ij\beta}$ has circular components $e^{i(\alpha+\beta)}$ and $e^{i(\alpha-\beta)}$, so</p>
+<p>$$
+s_1=-\tan\frac{\alpha+\beta}{2},\qquad s_2=-\tan\frac{\alpha-\beta}{2}.
+$$</p>
+<p>The scalar circle is $\beta=0$, where $s_1=s_2$; the $ij$-circle is $\alpha=0$, where $s_2=-s_1$.</p>
+<p>The values of the chart at the small integers are</p>
+<p>$$
+c(0)=1,\qquad c(1)=-i,\qquad c(-1)=i,\qquad c(2)=\frac{1-4-4i}{5}=-\frac35-\frac45 i.
+$$</p>
+<h3 id="the-pole-and-the-missing-unit">The Pole and the Missing Unit</h3>
+<p>Take $s_1=1/2$ and $t_1=2$, so $s_1t_1=1$. The product of the first components is</p>
+<p>$$
+c(1/2)\,c(2)=\frac{1-i/2}{1+i/2}\cdot\frac{1-2i}{1+2i}.
+$$</p>
+<p>The first factor is $(3-4i)/5$ and the second is $(-3-4i)/5$, and their product is $-1$. The product unit has $u_+=-1$: it exists, but the first coordinate of the product does not. The formula $s_3=(s_1+t_1)/(1-s_1t_1)$ has a pole at $s_1t_1=1$. The product lies in the chart $-u$, whose first coordinate is $-1/s_3$, and there the value is $0$: the point at infinity of the first chart is the origin of the second.</p>
+<p>The unit $j$ has circular components $(1,-1)$: its first coordinate is $s_1=0$, and its second is missing in the chart $u$. In the chart $ju$ the second component is flipped to $+1$, so the second coordinate becomes $-1/s_2=0$, and the point has coordinates $(0,0)$. The unit $-1$ has components $(-1,-1)$ and is missing in the chart $u$; it is covered by $-u$, with coordinates $(0,0)$.</p>
+<h3 id="a-table-of-examples">A Table of Examples</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\breve Q$</th>
+<th>$u_+$</th>
+<th>$u_-$</th>
+<th>chart</th>
+<th>$(s_1,s_2)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3+4i+j(1-i)$</td>
+<td>$0.8+0.6i$</td>
+<td>$(2+5i)/\sqrt{29}$</td>
+<td>$u$</td>
+<td>$(-1/3,\ -0.6770329614)$</td>
+</tr>
+<tr>
+<td>$1+i$</td>
+<td>$e^{i\pi/4}$</td>
+<td>$e^{i\pi/4}$</td>
+<td>$u$</td>
+<td>$(-\tan(\pi/8),\ -\tan(\pi/8))$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$u$</td>
+<td>$(-1,\ -1)$</td>
+</tr>
+<tr>
+<td>$ij$</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$u$</td>
+<td>$(-1,\ 1)$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$ju$</td>
+<td>$(0,\ 0)$</td>
+</tr>
+<tr>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-u$</td>
+<td>$(0,\ 0)$</td>
+</tr>
+<tr>
+<td>$1+j$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The coordinates are read in the chart named. The row $1+i$ is the scalar case: the two coordinates are equal and the decomposition is the complex one. The rows $j$ and $-1$ are outside the chart $u$ and inside another chart, where their coordinates are $(0,0)$ because $ju=1$ and $-(-1)=1$. The row $1+j$ is the zero divisor, where no decomposition exists.</p>
+<h2 id="summary">Summary</h2>
+<p>Every unit $\breve Q$ with $Q_{+}\notin(-\infty,0]$ and $Q_{-}\notin(-\infty,0]$ has exactly one rational-chart polar decomposition</p>
+<p>$$
+\breve Q=\breve r\,u(s_1,s_2),\qquad
+u(s_1,s_2)=\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2},\qquad
+c(s)=\frac{1-is}{1+is},
+$$</p>
+<p>with $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ the modulus in $P$ and $(s_1,s_2)\in\mathbb{R}^2$. The coordinates are rational in the circular components,</p>
+<p>$$
+s_1=i\,\frac{u_+-1}{u_++1},\qquad s_2=i\,\frac{u_--1}{u_-+1},
+$$</p>
+<p>and the reconstruction is exact by field operations.</p>
+<p>The chart is a bijection from $\mathbb{R}^2$ onto the torus minus the two circles on which a circular component equals $-1$. It is a group chunk: for $s_1t_1\neq1$ and $s_2t_2\neq1$,</p>
+<p>$$
+u(s_1,s_2)u(t_1,t_2)=u\!\left(\frac{s_1+t_1}{1-s_1t_1},\frac{s_2+t_2}{1-s_2t_2}\right),
+$$</p>
+<p>with the identity $(0,0)$ and the inverse $(-s_1,-s_2)$. At a pole the product has a component equal to $-1$, and its coordinate does not exist. The four charts $u$, $ju$, $-u$, $-ju$ cover the torus, and they are the product of the two charts of each circle.</p>
+<p>The domain is the complement of the two walls $W_+=\{Q_{+}\in(-\infty,0]\}$ and $W_-=\{Q_{-}\in(-\infty,0]\}$, each of real dimension three. The walls are strictly larger than the zero divisors, which are the part of the walls where $\rho_+\rho_-=0$. The chart is rational, local and unbounded; the modulus–unit form is global and algebraic, and the exponential form is global and transcendental.</p>
+<p>In the matrix picture the unit factor is orthogonally conjugate to the block diagonal matrix of the two rotations $R(\theta_1)\oplus R(\theta_2)$, with $\theta_k=-2\arctan s_k$, and it lies in $SO(4)$. It is conformal exactly when $s_1=\pm s_2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
+<td>the element, $Q_{\blacktriangle}$ scalar part, $Q_{\blacktriangledown}$ split part</td>
+</tr>
+<tr>
+<td>$\breve r\in P$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$u\in T^2$</td>
+<td>the unit factor</td>
+</tr>
+<tr>
+<td>$Q_{+}$, $Q_{-}$</td>
+<td>the two circular components</td>
+</tr>
+<tr>
+<td>$u_+= (Q_{+})/\rho_+$, $u_-=(Q_{-})/\rho_-$</td>
+<td>the circular components of the unit factor</td>
+</tr>
+<tr>
+<td>$c(s)=\dfrac{1-is}{1+is}$</td>
+<td>the circle chart</td>
+</tr>
+<tr>
+<td>$u(s_1,s_2)$</td>
+<td>the torus chart with components $c(s_1),c(s_2)$</td>
+</tr>
+<tr>
+<td>$M=\{\text{a circular component}=-1\}$</td>
+<td>the two circles missed by the chart</td>
+</tr>
+<tr>
+<td>$W_\pm=\{Q_{\pm}\in(-\infty,0]\}$</td>
+<td>the two walls of the cut</td>
+</tr>
+<tr>
+<td>$s_k=i(u_k-1)/(u_k+1)$</td>
+<td>the inverse chart</td>
+</tr>
+<tr>
+<td>$(s_3,s_4)$</td>
+<td>the coordinates of a product</td>
+</tr>
+<tr>
+<td>$R(\theta)$</td>
+<td>the rotation block</td>
+</tr>
+<tr>
+<td>$SO(4)$</td>
+<td>the special orthogonal group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="modulus-unit-polar-decomposition-of-reduced-biquaternions.html">Modulus–Unit Polar Decomposition of Reduced Biquaternions</a>, for the modulus, the torus and the uniqueness of the pair.</li>
+<li><a href="exponential-polar-decomposition-of-reduced-biquaternions.html">Exponential Polar Decomposition of Reduced Biquaternions</a>, for the transcendental coordinate on the torus.</li>
+<li><a href="rational-chart-polar-decomposition-of-complex-numbers.html">Rational-Chart Polar Decomposition of Complex Numbers</a>, for the complex member of the family.</li>
+<li><a href="rational-chart-polar-decomposition-of-split-complex-numbers.html">Rational-Chart Polar Decomposition of Split-Complex Numbers</a>, for the hyperbolic companion.</li>
+<li><a href="the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Group of Units of the Algebra of the Reduced Biquaternions</a>, for the topology of the torus.</li>
+<li><a href="zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>, for the two zero-divisor lines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

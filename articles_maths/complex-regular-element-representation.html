@@ -68,7 +68,7 @@
         <h1 id="complex-regular-element-representation"><strong>Complex Regular Element Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The complex algebra $\mathbb{C}$ is two-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its <strong>regular representation</strong>, the algebra acting on itself on the left, and the $2 \times 2$ real matrix of that action in the basis $1$, $i$. The matrix is the Cayley matrix of complex multiplication, and its image is the algebra of conformal $2 \times 2$ real matrices, the matrices of the shape $qI + q'J$. The article is the base case of the regular-representation articles of the corpus.</p>
-<p>The conventions are those of <em>Complex Algebra</em>: basis $1$, $i$ with $i^2 = -1$, a general element $Q = q + i q'$, norm $N(Q) = Q\bar Q = q^2+q'^2$, and complex conjugation $\bar Q$. The word <em>representation</em> is used in both senses: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the conformal matrices, the determinant and the trace; the complex-linear one-dimensional representation and the classification of the modules over a field are the subject of <em>Complex Element Representations</em> and are cited once.</p>
+<p>The conventions are those of <em>Complex Algebra</em>: basis $1$, $i$ with $i^2 = -1$, a general element $Q = q + i q'$, norm $\langle Q\rangle_{*} = Q\bar Q = q^2+q'^2$, and complex conjugation $\bar Q$. The word <em>representation</em> is used in both senses: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the conformal matrices, the determinant and the trace; the complex-linear one-dimensional representation and the classification of the modules over a field are the subject of <em>Complex Element Representations</em> and are cited once.</p>
 <h2 id="the-left-regular-representation">The Left Regular Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> of $\mathbb{C}$ is the map</p>
 <p>$$
@@ -95,7 +95,7 @@ $$</p>
 = \begin{pmatrix} 3+8 & 6-4 \\ 4-6 & 8+3 \end{pmatrix} = \begin{pmatrix} 11 & 2 \\ -2 & 11 \end{pmatrix} = \mathsf{M}_2(QQ_1),
 $$</p>
 <p>the matrix of the product $QQ_1 = 11-2i$; the reversed order gives $\mathsf{M}_2(Q_1)\mathsf{M}_2(Q) = \mathsf{M}_2(QQ_1)$ as well, the concrete form of commutativity.</p>
-<p><strong>Determinant and trace.</strong> $\det \mathsf{M}_2(Q) = 3\cdot 3 - (-4)\cdot 4 = 25 = N(Q)$ and $\operatorname{tr}\mathsf{M}_2(Q) = 6 = 2\operatorname{Re} Q$; likewise $\det \mathsf{M}_2(Q_1) = 1\cdot 1 - 2\cdot(-2) = 5 = N(Q_1)$ and $\operatorname{tr}\mathsf{M}_2(Q_1) = 2 = 2\operatorname{Re} Q_1$.</p>
+<p><strong>Determinant and trace.</strong> $\det \mathsf{M}_2(Q) = 3\cdot 3 - (-4)\cdot 4 = 25 = \langle Q\rangle_{*}$ and $\operatorname{tr}\mathsf{M}_2(Q) = 6 = 2\operatorname{Re} Q$; likewise $\det \mathsf{M}_2(Q_1) = 1\cdot 1 - 2\cdot(-2) = 5 = \langle Q_1\rangle_{*}$ and $\operatorname{tr}\mathsf{M}_2(Q_1) = 2 = 2\operatorname{Re} Q_1$.</p>
 <p><strong>The unit factor.</strong> $\mathsf{M}_2(u) = \tfrac15 \mathsf{M}_2(Q) = \begin{pmatrix} 0.6 & -0.8 \\ 0.8 & 0.6 \end{pmatrix}$ has determinant $0.36+0.64 = 1$ and lies in $SO(2)$, the rotation through $\theta = \arctan(4/3)$; the factorisation $\mathsf{M}_2(Q) = 5\,\mathsf{M}_2(u)$ is the polar decomposition of the conformal matrix $\mathsf{M}_2(Q)$ into a scalar and a rotation.</p>
 <p><strong>Transposition.</strong> $\mathsf{M}_2(Q)^{\mathsf{T}} = \begin{pmatrix} 3 & 4 \\ -4 & 3 \end{pmatrix} = \mathsf{M}_2(\bar Q)$, since $\bar Q = 3-4i$; more generally $\mathsf{M}_2(Q)^{\mathsf{T}} = \mathsf{M}_2(\bar Q)$, the matrix form of the involution.</p>
 <h2 id="the-left-representation-is-a-homomorphism">The Left Representation Is a Homomorphism</h2>
@@ -138,11 +138,11 @@ $$</p>
 <h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
 <p><strong>Proposition.</strong> For $Q = q+i q'$,</p>
 <p>$$
-\det \mathsf{M}_2(Q) = q^2 + q'^2 = N(Q), \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q = 2 \operatorname{Re} Q .
+\det \mathsf{M}_2(Q) = q^2 + q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q = 2 \operatorname{Re} Q .
 $$</p>
 <p><strong>Proof.</strong> $\det \mathsf{M}_2(Q) = q\cdot q - (-q')\cdot q' = q^2 + q'^2$, and $\operatorname{tr}\mathsf{M}_2(Q) = q + q = 2q$.</p>
 <p>The determinant is the norm, and the trace is twice the real part, which is also the algebra trace $\operatorname{Tr}(Q)$ of $\mathbb{C}$ over $\mathbb{R}$. The regular module is one-dimensional over $\mathbb{C}$ and the determinant is the norm itself. The determinant also shows that $\mathsf{M}_2(Q)$ is invertible exactly when $Q \neq 0$, matching the invertibility criterion of <em>Complex Norm and Invertibility</em>.</p>
-<p><strong>Corollary.</strong> $\mathsf{M}_2(Q)$ is orientation-preserving for $Q \neq 0$, since $\det \mathsf{M}_2(Q) = N(Q) > 0$.</p>
+<p><strong>Corollary.</strong> $\mathsf{M}_2(Q)$ is orientation-preserving for $Q \neq 0$, since $\det \mathsf{M}_2(Q) = \langle Q\rangle_{*} > 0$.</p>
 <h2 id="the-images-of-the-distinguished-subspaces">The Images of the Distinguished Subspaces</h2>
 <p>The two distinguished subspaces $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$ of the algebra have the following images under $\mathsf{M}_2$:</p>
 <div class="table-scroll"><table>
@@ -173,7 +173,7 @@ $$</p>
 M_2(\mathbb{C}) = \left\{ \begin{pmatrix} q & -q' \\ q' & q \end{pmatrix} : q, q' \in \mathbb{R} \right\} = \{ qI + q'J : q, q' \in \mathbb{R} \},
 $$</p>
 <p>the set of real matrices of the shape $qI + q'J$.</p>
-<p><strong>Proposition.</strong> The matrices of the shape $qI + q'J$ are exactly the real $2 \times 2$ matrices commuting with $J$, equivalently the $\mathbb{R}$-linear maps $\mathbb{R}^2 \to \mathbb{R}^2$ that are complex-linear under the identification $\mathbb{R}^2 \cong \mathbb{C}$. They form a field isomorphic to $\mathbb{C}$ under $\mathsf{M}_2$, and the nonzero ones are the <strong>conformal</strong> or <strong>similarity</strong> matrices of the plane: each is the composition of a scaling by $r = \sqrt{N(Q)} > 0$ and a rotation by $\theta = \arg Q$.</p>
+<p><strong>Proposition.</strong> The matrices of the shape $qI + q'J$ are exactly the real $2 \times 2$ matrices commuting with $J$, equivalently the $\mathbb{R}$-linear maps $\mathbb{R}^2 \to \mathbb{R}^2$ that are complex-linear under the identification $\mathbb{R}^2 \cong \mathbb{C}$. They form a field isomorphic to $\mathbb{C}$ under $\mathsf{M}_2$, and the nonzero ones are the <strong>conformal</strong> or <strong>similarity</strong> matrices of the plane: each is the composition of a scaling by $r = \sqrt{\langle Q\rangle_{*}} > 0$ and a rotation by $\theta = \arg Q$.</p>
 <p><strong>Proof.</strong> A matrix $M = \begin{pmatrix} p & n \\ s & t \end{pmatrix}$ commutes with $J$ exactly when $s = -n$ and $p = t$, which is the shape $qI+q'J$; this is the condition that it be the real matrix of a $\mathbb{C}$-linear map. The map $\mathsf{M}_2$ is an injective algebra homomorphism by multiplicativity and faithfulness, and its image is therefore a field isomorphic to $\mathbb{C}$. In the polar form $Q = r\exp(i\theta)$ with $r>0$, the matrix factors as</p>
 <p>$$
 \mathsf{M}_2(Q) = r \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
@@ -191,7 +191,7 @@ $$</p>
 <p>$$
 \exp(\theta J) = \sum_{n \ge 0} \frac{\theta^n J^n}{n!} = \cos\theta\, I + \sin\theta\, J = R_\theta,
 $$</p>
-<p>so the skew-symmetric matrices $\theta J$ form the one-dimensional abelian Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ and $\exp : \mathrm{SO}(2) \to SO(2)$ is surjective with kernel $2\pi\mathbb{Z}$. The determinant of a rotation is $N(u) = 1$ and its trace is $2\operatorname{Re} u$, the specialisation of the determinant and trace formulas to the unit circle.</p>
+<p>so the skew-symmetric matrices $\theta J$ form the one-dimensional abelian Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ and $\exp : \mathrm{SO}(2) \to SO(2)$ is surjective with kernel $2\pi\mathbb{Z}$. The determinant of a rotation is $\langle u\rangle_{*} = 1$ and its trace is $2\operatorname{Re} u$, the specialisation of the determinant and trace formulas to the unit circle.</p>
 <p>The reflections are the other coset. Since $\mathsf{M}_2(Q)^{\mathsf{T}} = \mathsf{M}_2(\bar Q)$, the transpose realises the involution, and the matrix of the reflection $S_u(Q) = u\bar Q$ in the basis $\{1, i\}$ is the product $\mathsf{M}_2(u)E$ with $E = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ the matrix of complex conjugation; with $u = \exp(2i\alpha)$ it is</p>
 <p>$$
 \mathsf{M}_2(u) E = \begin{pmatrix} \cos 2\alpha & \sin 2\alpha \\ \sin 2\alpha & -\cos 2\alpha \end{pmatrix},
@@ -238,8 +238,8 @@ $$</p>
 <td>the complex structure, $J^2 = -I$</td>
 </tr>
 <tr>
-<td>$N(Q) = q^2+q'^2$</td>
-<td>the norm, $\det \mathsf{M}_2(Q) = N(Q)$</td>
+<td>$\langle Q\rangle_{*} = q^2+q'^2$</td>
+<td>the norm, $\det \mathsf{M}_2(Q) = \langle Q\rangle_{*}$</td>
 </tr>
 <tr>
 <td>$\operatorname{tr}\mathsf{M}_2(Q) = 2\operatorname{Re}Q$</td>

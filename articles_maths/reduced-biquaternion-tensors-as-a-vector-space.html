@@ -74,11 +74,11 @@
 <p>$$
 A=(a_{i_1i_2i_3}),\qquad 1\le i_1\le n_1,\quad 1\le i_2\le n_2,\quad 1\le i_3\le n_3,
 $$</p>
-<p>with entries $a_{i_1i_2i_3}\in\mathbb{B}_{\mathrm r}$. The set of these arrays is written $\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$. The <strong>order</strong> is three and is carried by the type; the three <strong>modes</strong> have lengths $n_1,n_2,n_3$. The <strong>horizontal</strong>, <strong>lateral</strong> and <strong>frontal</strong> slices are</p>
+<p>with entries $a_{i_1i_2i_3}\in\mathbb{B}_{\mathrm{r}}$. The set of these arrays is written $\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$. The <strong>order</strong> is three and is carried by the type; the three <strong>modes</strong> have lengths $n_1,n_2,n_3$. The <strong>horizontal</strong>, <strong>lateral</strong> and <strong>frontal</strong> slices are</p>
 <p>$$
 A(i,:,:),\qquad A(:,j,:),\qquad A(:,:,k),
 $$</p>
-<p>and the frontal slice $A(:,:,k)$ is written $A^{(k)}$. A frontal slice is an $n_1\times n_2$ matrix over $\mathbb{B}_{\mathrm r}$; the tensor is the stack of its $n_3$ frontal slices.</p>
+<p>and the frontal slice $A(:,:,k)$ is written $A^{(k)}$. A frontal slice is an $n_1\times n_2$ matrix over $\mathbb{B}_{\mathrm{r}}$; the tensor is the stack of its $n_3$ frontal slices.</p>
 <p>Each entry has a real four-coordinate form and two complex forms. With the basis $1,i,j,ij$ of <em>Reduced Biquaternion Space</em>,</p>
 <p>$$
 a_{i_1i_2i_3}=a_{0,i_1i_2i_3}+a_{1,i_1i_2i_3}i+a_{2,i_1i_2i_3}j+a_{3,i_1i_2i_3}ij,
@@ -101,7 +101,7 @@ A_{(1)}=A_{1,i}+A_{j,k}=A_0+A_2+i(A_1+A_3),\qquad
 A_{(2)}=A_{1,i}-A_{j,k}=A_0-A_2+i(A_1-A_3).
 $$</p>
 <p>The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the <strong>idempotent coordinates</strong> of $A$. They are the components written $X^+$ and $X^-$ in <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>, and they satisfy $\Pi_+\Pi_-=0$, $\Pi_\pm^2=\Pi_\pm$, $\Pi_++\Pi_-=1$. The element convention of <em>Conventions in Mathematics</em> writes the idempotent coordinates with the sign, $Q_{+},Q_{-}$; the tensor branch keeps the parentheses $A_{(1)},A_{(2)}$ and the signs $+,-$ for the idempotents $\Pi_\pm$. The two notations name the same two complex tensors, and the parentheses avoid a collision with the entry indices.</p>
-<p><strong>Proposition (the two complex readings).</strong> The map $A\mapsto(A_{(1)},A_{(2)})$ is a bijection from $\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ onto the pairs of complex tensors of the same shape. Its inverse is</p>
+<p><strong>Proposition (the two complex readings).</strong> The map $A\mapsto(A_{(1)},A_{(2)})$ is a bijection from $\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ onto the pairs of complex tensors of the same shape. Its inverse is</p>
 <p>$$
 A_{1,i}=\tfrac12(A_{(1)}+A_{(2)}),\qquad A_{j,k}=\tfrac12(A_{(1)}-A_{(2)}),
 $$</p>
@@ -121,26 +121,26 @@ $$</p>
 <p>$$
 (A+B)_{i_1i_2i_3}=a_{i_1i_2i_3}+b_{i_1i_2i_3},\qquad (cA)_{i_1i_2i_3}=c\,a_{i_1i_2i_3},
 $$</p>
-<p>for $c\in\mathbb{B}_{\mathrm r}$. With these operations $\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ is a <strong>free left module of rank $n_1n_2n_3$</strong> over $\mathbb{B}_{\mathrm r}$, and also a free right module of the same rank because the algebra is commutative. Its real dimension is $4n_1n_2n_3$; its complex dimension is $2n_1n_2n_3$.</p>
-<p>A real basis is given by the arrays $E_{i_1i_2i_3}$, $iE_{i_1i_2i_3}$, $jE_{i_1i_2i_3}$, $ijE_{i_1i_2i_3}$, where $E_{i_1i_2i_3}$ has entry $1$ at $(i_1,i_2,i_3)$ and $0$ elsewhere. A complex basis is given by $E_{i_1i_2i_3}$ and $jE_{i_1i_2i_3}$, because $\mathbb{B}_{\mathrm r}$ is two-dimensional over $\mathbb{C}$ with basis $1,j$. The module is finite-dimensional over $\mathbb{R}$ and over $\mathbb{C}$, hence complete in the Frobenius norm below.</p>
-<p><strong>Remark (the matrix case).</strong> For $n_3=1$ the tensor is an $n_1\times n_2$ matrix over $\mathbb{B}_{\mathrm r}$, and the frontal slice is the matrix itself. For $n_3\ge2$ the tensor is not a matrix: the $n_3$ frontal slices are matrices, and the product later couples them by a circular convolution. <strong>The third mode is a mode of its own</strong>, not a bookkeeping index for a family of matrices.</p>
+<p>for $c\in\mathbb{B}_{\mathrm{r}}$. With these operations $\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ is a <strong>free left module of rank $n_1n_2n_3$</strong> over $\mathbb{B}_{\mathrm{r}}$, and also a free right module of the same rank because the algebra is commutative. Its real dimension is $4n_1n_2n_3$; its complex dimension is $2n_1n_2n_3$.</p>
+<p>A real basis is given by the arrays $E_{i_1i_2i_3}$, $iE_{i_1i_2i_3}$, $jE_{i_1i_2i_3}$, $ijE_{i_1i_2i_3}$, where $E_{i_1i_2i_3}$ has entry $1$ at $(i_1,i_2,i_3)$ and $0$ elsewhere. A complex basis is given by $E_{i_1i_2i_3}$ and $jE_{i_1i_2i_3}$, because $\mathbb{B}_{\mathrm{r}}$ is two-dimensional over $\mathbb{C}$ with basis $1,j$. The module is finite-dimensional over $\mathbb{R}$ and over $\mathbb{C}$, hence complete in the Frobenius norm below.</p>
+<p><strong>Remark (the matrix case).</strong> For $n_3=1$ the tensor is an $n_1\times n_2$ matrix over $\mathbb{B}_{\mathrm{r}}$, and the frontal slice is the matrix itself. For $n_3\ge2$ the tensor is not a matrix: the $n_3$ frontal slices are matrices, and the product later couples them by a circular convolution. <strong>The third mode is a mode of its own</strong>, not a bookkeeping index for a family of matrices.</p>
 <h2 id="the-transpose-and-the-conjugate-transpose">The Transpose and the Conjugate Transpose</h2>
 <p>The <strong>frontal transpose</strong> $A^{\mathsf T}$ is defined slicewise by</p>
 <p>$$
 (A^{\mathsf T})^{(k)}=(A^{(k)})^{\mathsf T},\qquad 1\le k\le n_3,
 $$</p>
-<p>that is, $(A^{\mathsf T})_{i_2i_1i_3}=a_{i_1i_2i_3}$. It transposes the first two modes and leaves the third mode in place. It is an involution, $(A^{\mathsf T})^{\mathsf T}=A$, and it is $\mathbb{B}_{\mathrm r}$-linear.</p>
+<p>that is, $(A^{\mathsf T})_{i_2i_1i_3}=a_{i_1i_2i_3}$. It transposes the first two modes and leaves the third mode in place. It is an involution, $(A^{\mathsf T})^{\mathsf T}=A$, and it is $\mathbb{B}_{\mathrm{r}}$-linear.</p>
 <p>The <strong>conjugate transpose</strong> $A^{\mathsf H}$ is the tensor reading of the bar conjugation and the frontal transpose, with the order of the frontal slices $2,\dots,n_3$ reversed:</p>
 <p>$$
 (A^{\mathsf H})^{(1)}=(A^{(1)})^{\mathsf H},\qquad
 (A^{\mathsf H})^{(k)}=(A^{(n_3+2-k)})^{\mathsf H}\quad(2\le k\le n_3),
 $$</p>
-<p>where for a matrix $X$ over $\mathbb{B}_{\mathrm r}$ the <strong>bar-transpose</strong> is $X^{\mathsf H}=\bar X^{\mathsf T}$, with the bar acting entrywise. In the two idempotent coordinates it is the pair of the complex conjugate transposes, $X^{\mathsf H}=X_{(1)}^{\mathsf H_{\mathbb C}}\Pi_++X_{(2)}^{\mathsf H_{\mathbb C}}\Pi_-$. The reversal is the convention that makes $A^{\mathsf H}$ the adjoint of the t-product; without it the transform identity of <em>The t-Product of Reduced Biquaternion Tensors</em> fails. For $n_3=1$ the reversal is empty and $A^{\mathsf H}$ is the matrix conjugate transpose. The source writes this operation $A^{*}$; the corpus writes $A^{\mathsf H}$ here, because the star $^{*}$ of <em>Conventions in Mathematics</em> is the Hermitian conjugation of an element, not the bar. On an entry the conjugate transpose acts by the bar, $a\mapsto\bar a$, not by the star.</p>
+<p>where for a matrix $X$ over $\mathbb{B}_{\mathrm{r}}$ the <strong>bar-transpose</strong> is $X^{\mathsf H}=\bar X^{\mathsf T}$, with the bar acting entrywise. In the two idempotent coordinates it is the pair of the complex conjugate transposes, $X^{\mathsf H}=X_{(1)}^{\mathsf H_{\mathbb C}}\Pi_++X_{(2)}^{\mathsf H_{\mathbb C}}\Pi_-$. The reversal is the convention that makes $A^{\mathsf H}$ the adjoint of the t-product; without it the transform identity of <em>The t-Product of Reduced Biquaternion Tensors</em> fails. For $n_3=1$ the reversal is empty and $A^{\mathsf H}$ is the matrix conjugate transpose. The source writes this operation $A^{*}$; the corpus writes $A^{\mathsf H}$ here, because the star $^{*}$ of <em>Conventions in Mathematics</em> is the Hermitian conjugation of an element, not the bar. On an entry the conjugate transpose acts by the bar, $a\mapsto\bar a$, not by the star.</p>
 <p><strong>Proposition.</strong> The conjugate transpose is an involution and is bar-antilinear:</p>
 <p>$$
 (A^{\mathsf H})^{\mathsf H}=A,\qquad (aA+bB)^{\mathsf H}=\bar a\,A^{\mathsf H}+\bar b\,B^{\mathsf H},
 $$</p>
-<p>for $a,b\in\mathbb{B}_{\mathrm r}$.</p>
+<p>for $a,b\in\mathbb{B}_{\mathrm{r}}$.</p>
 <p><em>Proof.</em> The bar is an involution and the reversal of the slices $2,\dots,n_3$ is an involution, so applying $A^{\mathsf H}$ twice returns $A$. The bar is additive and $\overline{ab}=\bar a\bar b$; the reversal and the transpose are linear over the coefficients, so the second identity follows.</p>
 <p><strong>Proposition (the transform of the conjugate transpose).</strong> For every $k$,</p>
 <p>$$
@@ -148,7 +148,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> The $k$-th transform slice is $\sum_{t=1}^{n_3}\omega^{(k-1)(t-1)}(A^{\mathsf H})^{(t)}$, with $\omega=e^{-2\pi i/n_3}$. The first term is $(A^{(1)})^{\mathsf H}$. In the sum over $t\ge2$ put $s=n_3+2-t$, so that $(A^{\mathsf H})^{(t)}=(A^{(s)})^{\mathsf H}$ and $\omega^{(k-1)(t-1)}=\omega^{-(k-1)(s-1)}$. The sum becomes $\sum_{s=2}^{n_3}\omega^{-(k-1)(s-1)}(A^{(s)})^{\mathsf H}$, which together with the first term is $\bigl(\sum_{s=1}^{n_3}\omega^{(k-1)(s-1)}A^{(s)}\bigr)^{\mathsf H}=(\widehat A^{(k)})^{\mathsf H}$.</p>
 <p>The two operations are distinct for $n_3\ge3$. For $n_3=2$ the reversal of the slices $2,\dots,n_3$ is the identity on the second slice, so $A^{\mathsf H}$ is the slicewise conjugate transpose. The frontal transpose and the conjugate transpose agree on real tensors only when $n_3\le2$.</p>
-<p><strong>Remark (the conjugate transpose is not the star).</strong> The star of the algebra is $a^{*}=\bar a^{\natural}$; the conjugate transpose of the tensor uses the bar alone. The two coincide on a real scalar but not on a general reduced biquaternion. <strong>The tensor adjoint of the t-product is the bar-transpose</strong>, and the star is used in this branch only when the Hermitian conjugation of an element is meant.</p>
+<p><strong>Remark (the conjugate transpose is not the star).</strong> The star of the algebra is $a^{*}=\bar a_{\mathrm{ts}}$; the conjugate transpose of the tensor uses the bar alone. The two coincide on a real scalar but not on a general reduced biquaternion. <strong>The tensor adjoint of the t-product is the bar-transpose</strong>, and the star is used in this branch only when the Hermitian conjugation of an element is meant.</p>
 <h2 id="the-norms">The Norms</h2>
 <p>The <strong>Frobenius norm</strong> of a tensor is</p>
 <p>$$
@@ -164,25 +164,25 @@ $$</p>
 <p>The algebra carries four algebraic norms, and each has a tensor reading obtained by summing the norm of the entries. With the notation of <em>Conventions in Mathematics</em>,</p>
 <p>$$
 \langle A\rangle=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle,\qquad
-\langle A\rangle_\natural=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle_\natural,\qquad
+\langle A\rangle_{\mathrm{ts}}=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle_{\mathrm{ts}},\qquad
 \langle A\rangle_*=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle_*,\qquad
-\langle A\rangle_{\natural*}=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle_{\natural*}.
+\langle A\rangle_{\mathrm{ts}*}=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle_{\mathrm{ts}*}.
 $$</p>
 <p>In the idempotent coordinates the four sums are</p>
 <p>$$
 \langle A\rangle=\tfrac12\sum\bigl(a_{(1)}^2+a_{(2)}^2\bigr),\qquad
-\langle A\rangle_\natural=\sum a_{(1)}a_{(2)},
+\langle A\rangle_{\mathrm{ts}}=\sum a_{(1)}a_{(2)},
 $$</p>
 <p>$$
 \langle A\rangle_*=\sum\operatorname{Re}\bigl(a_{(1)}\overline{a_{(2)}}\bigr),\qquad
-\langle A\rangle_{\natural*}=\tfrac12\sum\bigl(|a_{(1)}|^2+|a_{(2)}|^2\bigr)=\|A\|_{\mathrm F}^2.
+\langle A\rangle_{\mathrm{ts}*}=\tfrac12\sum\bigl(|a_{(1)}|^2+|a_{(2)}|^2\bigr)=\|A\|_{\mathrm F}^2.
 $$</p>
-<p>The first sum is complex, the second is complex, the third is real, and the fourth is the square of the Frobenius norm. <strong>Only the fourth is positive definite.</strong> The quaternionic sum vanishes on the tensors with one idempotent coordinate zero, the plain sum vanishes on some nonzero tensors, and the Hermitian sum is indefinite; none of the first three is a norm in the topological sense. The fourth is the Frobenius norm squared, and it is the norm used throughout the branch.</p>
+<p>The first sum is complex, the second is complex, the third is real, and the fourth is the square of the Frobenius norm. <strong>Only the fourth is positive definite.</strong> The tessarine sum vanishes on the tensors with one idempotent coordinate zero, the plain sum vanishes on some nonzero tensors, and the Hermitian sum is indefinite; none of the first three is a norm in the topological sense. The fourth is the Frobenius norm squared, and it is the norm used throughout the branch.</p>
 <p><strong>Remark (the algebraic norms are not multiplicative).</strong> The four sums are additive over the entries but not multiplicative under any of the tensor products of the branch. The Frobenius norm is submultiplicative for the Einstein product, and for the t-product up to a constant that depends on the shape; the algebraic sums are not. <strong>The algebraic norms describe the algebra of the entries, not the metric of the tensor space.</strong></p>
 <h2 id="verification">Verification</h2>
 <p>The identities of this article were recomputed on random tensors of sizes $2\times2\times2$, $3\times2\times3$ and $3\times3\times2$, with at most $54$ entries. The four-coordinate form and the two idempotent coordinates agreed to $2.8\times10^{-16}$; the inverse formulas of the two complex readings agreed to $2.2\times10^{-16}$; the Frobenius norm agreed with the sum of the four real coefficient norms and with the half-sum of the two complex coordinate norms to $7.1\times10^{-15}$; the four algebraic norm sums agreed with their idempotent formulas to $7.1\times10^{-15}$; the frontal transpose and the conjugate transpose were involutions exactly; the transform of the conjugate transpose agreed with the slicewise bar-transpose exactly, for $n_3=2,3,5$; and the bar-antilinearity of the conjugate transpose held exactly.</p>
 <h2 id="summary">Summary</h2>
-<p>A third-order reduced biquaternion tensor is an array $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$. It has four real coefficient tensors $A_0,A_1,A_2,A_3$, two complex tensors $A_{1,i}=A_0+A_1i$ and $A_{j,k}=A_2+A_3i$, and two idempotent coordinates $A_{(1)}=A_{1,i}+A_{j,k}$ and $A_{(2)}=A_{1,i}-A_{j,k}$, with $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$. The set is a free module of rank $n_1n_2n_3$ over $\mathbb{B}_{\mathrm r}$, of real dimension $4n_1n_2n_3$ and complex dimension $2n_1n_2n_3$. The frontal transpose transposes the first two modes; the conjugate transpose also conjugates the entries and reverses the slices $2,\dots,n_3$, and it is the adjoint used by the t-product. The Frobenius norm is the Euclidean norm of the real coordinates and equals the square root of the Krein algebraic norm; the plain, quaternionic and Hermitian algebraic sums are not positive definite. <strong>The two complex readings are independent, and the Frobenius norm is the metric of the branch.</strong></p>
+<p>A third-order reduced biquaternion tensor is an array $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$. It has four real coefficient tensors $A_0,A_1,A_2,A_3$, two complex tensors $A_{1,i}=A_0+A_1i$ and $A_{j,k}=A_2+A_3i$, and two idempotent coordinates $A_{(1)}=A_{1,i}+A_{j,k}$ and $A_{(2)}=A_{1,i}-A_{j,k}$, with $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$. The set is a free module of rank $n_1n_2n_3$ over $\mathbb{B}_{\mathrm{r}}$, of real dimension $4n_1n_2n_3$ and complex dimension $2n_1n_2n_3$. The frontal transpose transposes the first two modes; the conjugate transpose also conjugates the entries and reverses the slices $2,\dots,n_3$, and it is the adjoint used by the t-product. The Frobenius norm is the Euclidean norm of the real coordinates and equals the square root of the tessarine-Hermitian algebraic norm; the plain, tessarine and Hermitian algebraic sums are not positive definite. <strong>The two complex readings are independent, and the Frobenius norm is the metric of the branch.</strong></p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -193,11 +193,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}_{\mathrm r}$</td>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
 <td>The reduced biquaternions, $\mathbb{C}\otimes_{\mathbb R}\mathbb{C}$</td>
 </tr>
 <tr>
-<td>$A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$</td>
+<td>$A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$</td>
 <td>A third-order reduced biquaternion tensor</td>
 </tr>
 <tr>
@@ -233,7 +233,7 @@ $$</p>
 <td>The Frobenius norm, the Euclidean norm of the real coordinates</td>
 </tr>
 <tr>
-<td>$\langle A\rangle,\langle A\rangle_\natural,\langle A\rangle_*,\langle A\rangle_{\natural*}$</td>
+<td>$\langle A\rangle,\langle A\rangle_{\mathrm{ts}},\langle A\rangle_*,\langle A\rangle_{\mathrm{ts}*}$</td>
 <td>The four algebraic norm sums of the entries</td>
 </tr>
 </tbody>

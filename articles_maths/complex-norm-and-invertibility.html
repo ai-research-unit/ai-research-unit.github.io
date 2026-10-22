@@ -96,16 +96,16 @@ $$</p>
 <p><strong>Corollary.</strong> If $\langle Q_1\rangle_{*} \neq 0$ and $\langle Q_2\rangle_{*} \neq 0$, then $\langle Q_1Q_2\rangle_{*} \neq 0$. Equivalently, the product of two units is a unit.</p>
 <p>The multiplicativity is used below to prove the invertibility criterion in one line, and it is the source of the polar decomposition: the norm is the squared scale.</p>
 <h3 id="the-norm-is-a-genuine-norm">The Norm Is a Genuine Norm</h3>
-<p>The name "norm" is not a misnomer here. Define the <strong>modulus</strong></p>
+<p>The name "norm" is not a misnomer here. The <strong>modulus</strong> is the square root of the norm,</p>
 <p>$$
-|Q| = \sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2} \geq 0.
+\sqrt{\langle Q\rangle_{*}} = \sqrt{q^2 + q'^2} \geq 0.
 $$</p>
-<p>Then $|\cdot|$ satisfies the axioms of a norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$:</p>
+<p>Then $\sqrt{\langle\cdot\rangle_{*}}$ satisfies the axioms of a norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$:</p>
 <ul>
-<li><strong>Positive definiteness:</strong> $|Q| \geq 0$, and $|Q| = 0$ if and only if $Q = 0$.</li>
-<li><strong>Homogeneity:</strong> $|\lambda Q| = |\lambda|\,|Q|$ for every $\lambda \in \mathbb{R}$; more generally $|\lambda Q| = |\lambda|\,|Q|$ for every $\lambda \in \mathbb{C}$, by multiplicativity.</li>
-<li><strong>Triangle inequality:</strong> $|Q_1 + Q_2| \leq |Q_1| + |Q_2|$, which is the Cauchy–Schwarz inequality for the Euclidean inner product $(Q_1,Q_2) \mapsto \operatorname{Re}(\bar{Q}_1Q_2)$.</li>
-<li><strong>Multiplicativity:</strong> $|Q_1Q_2| = |Q_1|\,|Q_2|$, from the multiplicativity of the norm.</li>
+<li><strong>Positive definiteness:</strong> $\sqrt{\langle Q\rangle_{*}} \geq 0$, and $\sqrt{\langle Q\rangle_{*}} = 0$ if and only if $Q = 0$.</li>
+<li><strong>Homogeneity:</strong> $\sqrt{\langle \lambda Q\rangle_{*}} = |\lambda|\,\sqrt{\langle Q\rangle_{*}}$ for every $\lambda \in \mathbb{R}$; more generally $\sqrt{\langle \lambda Q\rangle_{*}} = |\lambda|\,\sqrt{\langle Q\rangle_{*}}$ for every $\lambda \in \mathbb{C}$, by multiplicativity.</li>
+<li><strong>Triangle inequality:</strong> $\sqrt{\langle Q_1 + Q_2\rangle_{*}} \leq \sqrt{\langle Q_1\rangle_{*}} + \sqrt{\langle Q_2\rangle_{*}}$, which is the Cauchy–Schwarz inequality for the Euclidean inner product $(Q_1,Q_2) \mapsto \operatorname{Re}(\bar{Q}_1Q_2)$.</li>
+<li><strong>Multiplicativity:</strong> $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\,\sqrt{\langle Q_2\rangle_{*}}$, from the multiplicativity of the norm.</li>
 </ul>
 <p>The value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a complex scalar. The complex norm is the definite base case of the norm series.</p>
 <h3 id="the-norm-from-the-real-coordinates">The Norm from the Real Coordinates</h3>
@@ -124,9 +124,9 @@ $$</p>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
 <p>The <strong>Euclidean norm</strong> of a complex number is the square root of the Hermitian form,</p>
 <p>$$
-\|Q\|_E = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = |Q| .
+\|Q\|_E = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
 $$</p>
-<p>It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the complex product, because $|Q_1Q_2| = |Q_1||Q_2|$.</p>
+<p>It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the complex product, because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$.</p>
 <h3 id="relation-between-the-norm-and-the-hermitian-form">Relation Between the Norm and the Hermitian Form</h3>
 <p>The two forms are related as follows.</p>
 <ul>
@@ -134,11 +134,15 @@ $$</p>
 <li>The <strong>Hermitian form</strong> $Q\bar{Q} = q^2+q'^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.</li>
 </ul>
 <p>That the two coincide is a degeneracy of the commutative two-dimensional case. The information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras.</p>
-<p>The <strong>inner product</strong> on $\mathbb{C}$ as a complex vector space is</p>
+<p>The <strong>Hermitian product</strong> on $\mathbb{C}$ as a complex vector space is</p>
 <p>$$
-\langle Q_1, Q_2 \rangle = \bar{Q}_1 Q_2 = (q_1 q_2+q'_1 q'_2) + (q_1 q'_2-q'_1 q_2)i, \qquad Q_1 = q_1+i q'_1, \; Q_2 = q_2+i q'_2,
+\bar{Q}_1 Q_2 = (q_1 q_2+q'_1 q'_2) + (q_1 q'_2-q'_1 q_2)i, \qquad Q_1 = q_1+i q'_1, \; Q_2 = q_2+i q'_2,
 $$</p>
-<p>linear in the second argument and anti-linear in the first, with $\langle Q_1, Q_1 \rangle = q_1^2+q'^2_1 = \langle Q_1\rangle_{*}$. It is complex-valued in general, and its imaginary part $q_1 q'_2 - q'_1 q_2$ is the oriented area of the parallelogram on $Q_1$ and $Q_2$. It is Hermitian, $\langle Q_1, Q_2\rangle^{*} = \langle Q_2, Q_1\rangle$, and its diagonal is the norm, $\langle Q_1,Q_1\rangle = \langle Q_1\rangle_{*}$: the inner product is the two-variable object of which the norm and the Hermitian form are the diagonal, and it is developed here.</p>
+<p>linear in the second argument and anti-linear in the first. It is complex-valued, and its imaginary part $q_1 q'_2 - q'_1 q_2$ is the oriented area of the parallelogram on $Q_1$ and $Q_2$. Its real part is the Hermitian form of the convention,</p>
+<p>$$
+\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})=\operatorname{Re}(\bar Q_1Q_2)=q_1q_2+q'_1q'_2,
+$$</p>
+<p>and at equal arguments it gives the norm, $\langle Q_1\rangle_{*} = \bar Q_1Q_1 = q_1^2+q'^2_1$: the Hermitian product is the complex two-variable object of which the form is the real part and the norm the diagonal.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
 <p>A complex number $Q_1$ is <strong>invertible</strong> if there exists a complex number $Q_2$ such that</p>
@@ -195,11 +199,11 @@ $$</p>
 <h3 id="the-polar-split-of-the-group-of-units">The Polar Split of the Group of Units</h3>
 <p><strong>Theorem.</strong> The map</p>
 <p>$$
-\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( |Q|, \; Q/|Q| \bigr),
+\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( \sqrt{\langle Q\rangle_{*}}, \; Q/\sqrt{\langle Q\rangle_{*}} \bigr),
 $$</p>
-<p>where $\mathrm{U}(1) = \{ u \in \mathbb{C} : |u| = 1 \}$ is the unit circle, is an isomorphism of topological groups.</p>
-<p><strong>Proof.</strong> The map is well defined because $|Q_1| > 0$ for $Q_1 \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \mathrm{U}(1)$ because $|Q_1/|Q_1|| = 1$. It is a group homomorphism: $|Q_1Q_2| = |Q_1||Q_2|$ and $Q_1Q_2/|Q_1Q_2| = (Q_1/|Q_1|)(Q_2/|Q_2|)$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.</p>
-<p>The two factors are the <strong>scale</strong> $r = |Q| \in \mathbb{R}_{>0}$, a positive real, and the <strong>phase</strong> $u = Q/|Q| \in \mathrm{U}(1)$. The product form is $Q = ru$; here it is recorded as the splitting of the unit group, which is what the norm supplies.</p>
+<p>where $\mathrm{U}(1) = \{ u \in \mathbb{C} : \langle u\rangle_{*} = 1 \}$ is the unit circle, is an isomorphism of topological groups.</p>
+<p><strong>Proof.</strong> The map is well defined because $\sqrt{\langle Q_1\rangle_{*}} > 0$ for $Q_1 \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \mathrm{U}(1)$ because $\langle Q_1/\sqrt{\langle Q_1\rangle_{*}}\rangle_{*} = 1$. It is a group homomorphism: $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$ and $Q_1Q_2/\sqrt{\langle Q_1Q_2\rangle_{*}} = (Q_1/\sqrt{\langle Q_1\rangle_{*}})(Q_2/\sqrt{\langle Q_2\rangle_{*}})$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.</p>
+<p>The two factors are the <strong>scale</strong> $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, a positive real, and the <strong>phase</strong> $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$. The product form is $Q = ru$; here it is recorded as the splitting of the unit group, which is what the norm supplies.</p>
 <h3 id="the-inverse-map">The Inverse Map</h3>
 <p>The inversion map $\iota : \mathbb{C}^\times \to \mathbb{C}^\times$, $\iota(Q) = Q^{-1}$, is a continuous group automorphism of order two, and in the polar coordinates it reads</p>
 <p>$$
@@ -338,12 +342,12 @@ $$</p>
 <td>the norm, real, positive definite, multiplicative</td>
 </tr>
 <tr>
-<td>$\|Q\|_E = \sqrt{\langle Q\rangle_{*}} = |Q|$</td>
+<td>$\|Q\|_E = \sqrt{\langle Q\rangle_{*}}$</td>
 <td>the Euclidean norm and the modulus</td>
 </tr>
 <tr>
-<td>$\langle Q_1, Q_2 \rangle = \bar{Q}_1Q_2$</td>
-<td>the complex inner product, $\langle Q_1,Q_1\rangle = \langle Q_1\rangle_{*}$</td>
+<td>$\bar{Q}_1Q_2$</td>
+<td>the Hermitian product, whose real part is $\langle Q_1,Q_2\rangle_{*}$ and whose diagonal is $\langle Q_1\rangle_{*}$</td>
 </tr>
 <tr>
 <td>$Q_1 = 3+4i$, $Q_2 = 1-2i$</td>
@@ -354,12 +358,12 @@ $$</p>
 <td>the group of units</td>
 </tr>
 <tr>
-<td>$\mathrm{U}(1) = \{u : |u| = 1\}$</td>
+<td>$\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$</td>
 <td>the unit circle, the phase factor group</td>
 </tr>
 <tr>
 <td>$Q = ru$</td>
-<td>the polar split, $r = |Q| \in \mathbb{R}_{>0}$, $u = Q/|Q| \in \mathrm{U}(1)$</td>
+<td>the polar split, $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$</td>
 </tr>
 <tr>
 <td>$Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$</td>

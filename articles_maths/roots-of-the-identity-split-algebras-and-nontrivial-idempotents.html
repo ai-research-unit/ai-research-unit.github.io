@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of the Identity, Split Algebras and Nontrivial Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="roots-of-the-identity-split-algebras-and-nontrivial-idempotents"><strong>Roots of the Identity, Split Algebras and Nontrivial Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>root of the identity</strong> in an algebra $A$ is an element $u$ with $u^2=1$. The name distinguishes the equation from the roots of unity of higher order: a root of the identity is a solution of $x^2-1=0$, and the article never considers $u^n=1$ for $n>2$. The roots of the identity are the algebraic form of the reflections of a vector space, and their theory is the theory of the simplest spectral decomposition, the one with the two eigenvalues $+1$ and $-1$.</p>
+<p>The link with idempotents is the <strong>halving correspondence</strong>. When $2$ is invertible, an idempotent $e$ gives the root $u=2e-1$, and a root $u$ gives the idempotent $e=(1+u)/2$; the two constructions are inverse. The root acts as $+1$ on the image of $e$ and as $-1$ on the image of $1-e$, so the pair $(e,1-e)$ is the spectral decomposition of $u$, and the halving is the passage between an idempotent and its reflection. The correspondence is a bijection of sets, not a ring homomorphism: it does not preserve products, even when the idempotents commute; it preserves instead the Boolean group structure of commuting idempotents, as §<em>What the correspondence does not preserve</em> shows. In characteristic two it collapses completely.</p>
+<p>The article uses the correspondence to separate three classes of algebras. A <strong>division algebra</strong> has no nontrivial idempotent and no root of the identity other than $\pm1$. A <strong>split algebra</strong>, in the weak sense of this article, has a nontrivial idempotent, equivalently a root other than $\pm1$ when $2$ is invertible. The two classes do not exhaust the algebras: the dual numbers have no nontrivial idempotent and are not a division algebra, and they are the standard warning that "no nontrivial idempotent" is weaker than "division." In the semisimple case the warning disappears: a semisimple algebra has no nontrivial idempotent exactly when it is a division algebra, and it is split exactly when it is not a division algebra.</p>
+<p>The article assumes the idempotent theory of <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>, the involutions of <em>Involutive Algebras</em> only as a contrast, and the primitive idempotents of <em>Primitive Idempotents and Minimal Left Ideals</em>. The matrix case is <em>Matrix Algebras</em>; the split-complex algebra is <em>Split-Complex Algebra</em> and <em>The Number Systems as Clifford Algebras</em>; the dual numbers are <em>Dual-Numbers Algebra</em>; the semisimple structure is <em>Simple and Semisimple Modules</em>, §<em>Semisimple Algebras and Wedderburn–Artin</em>; and the Jordan–Chevalley decomposition is <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>. No form, norm or topology is used.</p>
+<p>Throughout, $F$ is a field and $A$ is a unital associative $F$-algebra with $1\neq0$, not assumed commutative. The identity is $1_A$, written $1$ when no confusion is possible. The characteristic is arbitrary unless stated, and the halving correspondence is stated for $2$ invertible; the characteristic-two section records what replaces it. The idempotent is $e$ and its complement is $f=1-e$.</p>
+<h2 id="roots-of-the-identity">Roots of the Identity</h2>
+<h3 id="definition-and-first-properties">Definition and first properties</h3>
+<p><strong>Definition.</strong> A <strong>root of the identity</strong> of $A$ is an element $u\in A$ with $u^2=1$. The set of roots is</p>
+<p>$$
+R(A)=\{u\in A:u^2=1\}.
+$$</p>
+<p>The trivial roots are $1$ and $-1$; they coincide in characteristic two. A root is a unit, with $u^{-1}=u$, so $R(A)\subseteq A^\times$.</p>
+<p><strong>Proposition.</strong> Let $u,v\in R(A)$.</p>
+<p><strong>(a)</strong> $u^{-1}=u$, and $u^{-1}\in R(A)$.</p>
+<p><strong>(b)</strong> If $u$ and $v$ commute, then $uv\in R(A)$; in particular the central roots $R(A)\cap Z(A)$ form a subgroup of $A^\times$.</p>
+<p><strong>(c)</strong> If $A$ is commutative, $R(A)$ is a subgroup of $A^\times$, the <strong>group of roots of the identity</strong>.</p>
+<p><strong>(d)</strong> If $A$ is not commutative, $R(A)$ need not be closed under multiplication.</p>
+<p><em>Proof.</em> (a) $u^2=1$ gives $u^{-1}=u$, and $(u^{-1})^2=u^2=1$. (b) $(uv)^2=uvuv=u^2v^2=1$ when $uv=vu$. The central roots are closed under multiplication, contain $1$, and are closed under inversion by (a), so they form a subgroup. (c) is (b) with every pair commuting. (d) In $M_2(F)$ with $F$ of characteristic not two, let</p>
+<p>$$
+u=\begin{pmatrix}0&1\\1&0\end{pmatrix}, \qquad v=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$</p>
+<p>Then $u^2=v^2=1$, but</p>
+<p>$$
+uv=\begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad (uv)^2=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}\neq1.
+$$</p>
+<p>So the product of two roots need not be a root.</p>
+<p><strong>Remark.</strong> The roots of the identity are not the roots of $-1$. The quaternion algebra $\mathbb{H}$ has the two roots $\pm1$ of $x^2=1$ and the whole sphere of roots of $x^2=-1$; the two equations have different theories. The roots of $-1$ are the subject of the complex structures and the almost-complex geometry, and they are not used here.</p>
+<h3 id="division-algebras">Division algebras</h3>
+<p><strong>Proposition.</strong> Let $D$ be a division algebra over $F$.</p>
+<p><strong>(a)</strong> If $2\neq0$ in $F$, then $R(D)=\{1,-1\}$.</p>
+<p><strong>(b)</strong> If $2=0$ in $F$, then $R(D)=\{1\}$.</p>
+<p><strong>(c)</strong> The only idempotents of $D$ are $0$ and $1$.</p>
+<p><em>Proof.</em> (a) $u^2-1=(u-1)(u+1)=0$. A division algebra has no zero divisors, so $u-1=0$ or $u+1=0$. (b) In characteristic two, $u^2-1=(u-1)^2$, so $u-1=0$. (c) $e^2=e$ gives $e(e-1)=0$, hence $e=0$ or $e=1$.</p>
+<p>The proposition is the model of the division side of the article: no nontrivial idempotent, and no nontrivial root of the identity. The converse is the subject of §<em>Division Algebras and Nontrivial Idempotents</em>, where it is shown to fail without a hypothesis.</p>
+<h3 id="matrix-algebras">Matrix algebras</h3>
+<p><strong>Proposition.</strong> Let $A=M_n(F)$ and suppose $2\neq0$ in $F$. A matrix $U\in A$ satisfies $U^2=I$ exactly when it is diagonalisable over $F$ with eigenvalues in $\{1,-1\}$. The idempotents of $A$ are the diagonalisable matrices with eigenvalues in $\{0,1\}$, and the halving correspondence of §<em>The Halving Correspondence</em> is a bijection between the two sets.</p>
+<p><em>Proof.</em> If $U^2=I$, the polynomial $x^2-1=(x-1)(x+1)$ has distinct roots and annihilates $U$, so the minimal polynomial divides $x^2-1$ and has distinct linear factors; hence $U$ is diagonalisable with eigenvalues $\pm1$. Conversely a diagonalisable matrix with eigenvalues $\pm1$ satisfies $U^2=I$. The idempotent statement is the same argument with $x^2-x=x(x-1)$, and the halving is the bijection $E\mapsto2E-I$ of §<em>The Halving Correspondence</em>.</p>
+<p><strong>Remark.</strong> In characteristic two the polynomial $x^2-1=(x-1)^2$ has a repeated root, and a root of the identity is a unipotent matrix $U=1+N$ with $N^2=0$; it need not be diagonalisable. The idempotents are still the diagonalisable matrices with eigenvalues $0,1$, and the halving correspondence is no longer available. The matrix case is therefore the cleanest illustration of both the correspondence and its characteristic-two failure.</p>
+<p><strong>Example (the rank).</strong> In $M_n(F)$ with $2\neq0$, an idempotent of rank $r$ corresponds to a root of the identity with eigenvalue $+1$ of multiplicity $r$ and eigenvalue $-1$ of multiplicity $n-r$. The trace of the root is $2r-n$, and the rank is recovered as $r=(n+\operatorname{tr}U)/2$. The correspondence is a bijection between the idempotents of rank $r$ and the involutions with $+1$-eigenspace of dimension $r$. For $n=2$ the nontrivial idempotents are the rank-one projections, and the nontrivial roots are the reflections $\operatorname{diag}(1,-1)$ and $\operatorname{diag}(-1,1)$ in a suitable basis, together with the off-diagonal reflections; the halving pairs each projection with its reflection.</p>
+<h2 id="the-halving-correspondence">The Halving Correspondence</h2>
+<h3 id="the-bijection">The bijection</h3>
+<p><strong>Theorem.</strong> Suppose $2$ is invertible in $F$. The maps</p>
+<p>$$
+e\longmapsto u=2e-1, \qquad u\longmapsto e=\frac{1+u}{2}
+$$</p>
+<p>are inverse bijections between the set $\operatorname{Idem}(A)$ of idempotents and the set $R(A)$ of roots of the identity.</p>
+<p><em>Proof.</em> If $e^2=e$, then</p>
+<p>$$
+(2e-1)^2=4e^2-4e+1=1,
+$$</p>
+<p>so $u=2e-1$ is a root. If $u^2=1$, then</p>
+<p>$$
+\left(\frac{1+u}{2}\right)^2=\frac{1+2u+u^2}{4}=\frac{2+2u}{4}=\frac{1+u}{2},
+$$</p>
+<p>so $e=(1+u)/2$ is idempotent. The two composites are</p>
+<p>$$
+\frac{1+(2e-1)}{2}=e, \qquad 2\left(\frac{1+u}{2}\right)-1=u,
+$$</p>
+<p>so the maps are inverse. The use of $2$ is explicit in both formulas.</p>
+<p><strong>Corollary.</strong> Under the correspondence:</p>
+<p><strong>(a)</strong> $e=0$ corresponds to $u=-1$, and $e=1$ corresponds to $u=1$.</p>
+<p><strong>(b)</strong> The complement $1-e$ corresponds to $-u$.</p>
+<p><strong>(c)</strong> The idempotent $e$ is the projection onto the $+1$-eigenspace of $u$, and $1-e$ is the projection onto the $-1$-eigenspace; in formulas,</p>
+<p>$$
+ue=eu=e, \qquad u(1-e)=(1-e)u=-(1-e).
+$$</p>
+<p><strong>(d)</strong> The root $u$ is a reflection: $u^2=1$, and the algebra decomposes as $A=Ae\oplus A(1-e)$ with $u$ acting as $+1$ on the first summand and $-1$ on the second.</p>
+<p><em>Proof.</em> (a) and (b) are immediate from the formulas. (c) $ue=(2e-1)e=2e-e=e$ and $u(1-e)=(2e-1)(1-e)=-(1-e)$; the same on the other side. (d) is (c) read on the direct sum.</p>
+<h3 id="what-the-correspondence-does-not-preserve">What the correspondence does not preserve</h3>
+<p>The halving is a bijection of sets, and it does not respect the multiplicative structures.</p>
+<p><strong>Proposition.</strong> Let $e,f$ be idempotents with roots $u=2e-1$, $v=2f-1$.</p>
+<p><strong>(a)</strong> $uv$ is a root of the identity exactly when $u$ and $v$ commute, equivalently when $e$ and $f$ commute.</p>
+<p><strong>(b)</strong> When $e$ and $f$ commute, the idempotent corresponding to $uv$ is</p>
+<p>$$
+1-(e+f-2ef),
+$$</p>
+<p>the <strong>complement of the symmetric difference</strong> of $e$ and $f$.</p>
+<p><strong>(c)</strong> In a commutative algebra, the idempotents form a Boolean ring under</p>
+<p>$$
+e\oplus f=e+f-2ef, \qquad e\wedge f=ef,
+$$</p>
+<p>and the map $e\mapsto1-2e$ is an isomorphism of groups from $(\operatorname{Idem}(A),\oplus)$ onto $(R(A),\cdot)$. The map $e\mapsto2e-1$ is its negative; it is a bijection, but it is not a homomorphism, and it satisfies $w(e\oplus f)=-w(e)w(f)$.</p>
+<p><em>Proof.</em> (a) $(uv)^2=uvuv=u^2v^2=1$ exactly when $uv=vu$. Since $u=2e-1$ and $v=2f-1$ are polynomials in $e$ and $f$, $uv=vu$ exactly when $ef=fe$. (b) When $e$ and $f$ commute,</p>
+<p>$$
+uv=(2e-1)(2f-1)=4ef-2e-2f+1=1-2(e+f-2ef),
+$$</p>
+<p>and $g=e+f-2ef$ is idempotent because $e$ and $f$ commute; the root $uv$ corresponds to $(1+uv)/2=1-g$. (c) The Boolean ring laws are the usual ones for commuting idempotents, and</p>
+<p>$$
+(1-2e)(1-2f)=1-2(e+f-2ef)=1-2(e\oplus f),
+$$</p>
+<p>so $e\mapsto1-2e$ is multiplicative; it is bijective by the theorem and preserves $0\mapsto1$, hence is a group isomorphism. The map $w(e)=2e-1=-(1-2e)$ is the negative of this isomorphism; it is bijective, but $w(e\oplus f)=-(1-2(e\oplus f))=-w(e)w(f)$, so it is not a homomorphism.</p>
+<p><strong>Remark.</strong> In a noncommutative algebra the idempotents do not form a Boolean ring, and the halving is only a bijection. The product of two roots can fail to be a root, as the $2\times2$ example of §<em>Definition and first properties</em> shows; the product of two commuting roots is a root, but it corresponds to the complement of the symmetric difference of the two idempotents, not to their product. The correspondence is therefore a statement about the <strong>additive</strong> Boolean structure, not about the multiplicative structure of the algebra.</p>
+<h3 id="the-spectral-reading">The spectral reading</h3>
+<p>The halving is the simplest case of the eigenvalue decomposition. The element $u$ has the two eigenvalues $+1$ and $-1$, and the idempotents $e$ and $1-e$ are the corresponding eigenprojectors:</p>
+<p>$$
+A=Ae\oplus A(1-e), \qquad u=\;1\cdot e+(-1)\cdot(1-e)=2e-1.
+$$</p>
+<p>The decomposition is the two-term case of <em>The Eigenvalue Decomposition of an Element</em>, and the formula $e=(1+u)/2$ is the Lagrange–Sylvester formula for the two eigenvalues. The root $u$ is diagonalisable in the sense of that article exactly when $e$ exists, which is automatic when $2$ is invertible; in characteristic two the spectral decomposition is not available in this form, and the Jordan–Chevalley decomposition of <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em> is the substitute.</p>
+<h2 id="division-algebras-and-nontrivial-idempotents">Division Algebras and Nontrivial Idempotents</h2>
+<h3 id="the-division-implication">The division implication</h3>
+<p><strong>Proposition.</strong> A division algebra has no idempotent other than $0$ and $1$, and no root of the identity other than $\pm1$ when $2\neq0$, or other than $1$ when $2=0$.</p>
+<p><em>Proof.</em> This is the proposition of §<em>Division Algebras</em>.</p>
+<p>The implication is one-way. The converse fails, and the dual numbers are the standard counterexample.</p>
+<p><strong>Example (the dual numbers).</strong> Let $A=F[\varepsilon]/(\varepsilon^2)$ with $2\neq0$. An idempotent $e=a+b\varepsilon$ satisfies $e^2=a^2+2ab\varepsilon$ and $e^2=e$, so $a^2=a$ and $2ab=b$. If $a=0$, then $b=0$; if $a=1$, then $2b=b$, hence $b=0$. Thus the only idempotents are $0$ and $1$. The algebra is not a division algebra, since $\varepsilon\neq0$ and $\varepsilon^2=0$. The roots of the identity are also only $\pm1$: $u=a+b\varepsilon$ gives $u^2=a^2+2ab\varepsilon=1$, so $a=\pm1$ and $b=0$. So the dual numbers have the same idempotents and the same roots as a division algebra, without being one.</p>
+<p><strong>Remark (the correct converse).</strong> The converse holds under a hypothesis that excludes the nilpotent direction. A finite-dimensional algebra over a field with no zero divisors is a division algebra; a finite-dimensional <strong>semisimple</strong> algebra with no nontrivial idempotent is a division algebra. The second statement follows from Wedderburn–Artin: a semisimple algebra is a product of matrix algebras $M_{n_i}(D_i)$, and a factor with $n_i\geq2$ has the nontrivial idempotent $E_{11}$, while a product of two or more factors has the central idempotents $(1,0,\dots,0)$; hence a semisimple algebra with no nontrivial idempotent is a single $M_1(D)=D$, a division algebra. The dual numbers fail both hypotheses: they have zero divisors and they are not semisimple.</p>
+<h3 id="the-semisimple-dichotomy">The semisimple dichotomy</h3>
+<p><strong>Theorem.</strong> Let $A$ be a finite-dimensional semisimple algebra over $F$. Then $A$ is a division algebra exactly when it has no nontrivial idempotent. Equivalently, $A$ has a nontrivial idempotent exactly when it is not a division algebra.</p>
+<p><em>Proof.</em> A division algebra has no nontrivial idempotent by the proposition. Conversely, if $A$ is semisimple and has no nontrivial idempotent, Wedderburn–Artin writes $A\cong\prod_i M_{n_i}(D_i)$; as in the remark, the product has only one factor and $n_1=1$, so $A\cong D_1$ is a division algebra. The contrapositive gives the second statement.</p>
+<p><strong>Corollary.</strong> In the semisimple case the three conditions</p>
+<p>$$
+A\ \text{is a division algebra}, \qquad A\ \text{has no nontrivial idempotent}, \qquad R(A)=\{\pm1\}\ (2\neq0)
+$$</p>
+<p>are equivalent. The dual numbers show that none of the equivalences survives without semisimplicity.</p>
+<h2 id="split-algebras">Split Algebras</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition (this article).</strong> An algebra $A$ is <strong>split</strong> when it contains a nontrivial idempotent. Equivalently, the regular left module splits as a direct sum $A=Ae\oplus A(1-e)$ of two nonzero left ideals, and the regular right module splits in the same way.</p>
+<p>The word is used in the weak sense of the title: the algebra splits as a module over itself. It is not the stronger notion <strong>split semisimple</strong>, which requires $A\cong\prod_i M_{n_i}(F)$; the relation between the two is stated at the end of the section.</p>
+<p><strong>Proposition.</strong> Let $A$ be an algebra.</p>
+<p><strong>(a)</strong> $A$ is split exactly when it has a nontrivial idempotent.</p>
+<p><strong>(b)</strong> If $e$ is a nontrivial idempotent, then $A=Ae\oplus A(1-e)$ with both summands nonzero; if $e$ is central, the decomposition is a product of algebras, $A\cong Ae\times A(1-e)$.</p>
+<p><strong>(c)</strong> If $A$ is split and $2$ is invertible, then $A$ has a root of the identity other than $\pm1$.</p>
+<p><em>Proof.</em> (a) is the definition. (b) is the Peirce decomposition at the level of the regular module; the product statement is the central idempotent theorem of <em>Unital Algebras</em>. (c) If $e$ is nontrivial, $u=2e-1$ is a root by the halving theorem, and $u\neq\pm1$ because $e\neq0,1$.</p>
+<h3 id="the-root-criterion">The root criterion</h3>
+<p><strong>Theorem.</strong> Suppose $2$ is invertible in $F$. An algebra $A$ is split exactly when it has a root of the identity other than $1$ and $-1$.</p>
+<p><em>Proof.</em> If $e$ is a nontrivial idempotent, $u=2e-1$ is a root and $u\neq\pm1$. Conversely, if $u\in R(A)$ and $u\neq\pm1$, then $e=(1+u)/2$ is an idempotent and $e\neq0,1$, because $u\neq-1,1$. The two constructions are inverse by the halving theorem.</p>
+<p><strong>Corollary.</strong> For an algebra over a field of characteristic not two, the following are equivalent:</p>
+<p>$$
+A\ \text{is split}, \qquad A\ \text{has a nontrivial idempotent}, \qquad A\ \text{has a nontrivial root of the identity}.
+$$</p>
+<p>The equivalence fails in characteristic two, where the halving is unavailable and the roots of the identity can be plentiful while the idempotents are not; §<em>Characteristic Two</em> gives the examples.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (the split algebra $F\times F$).</strong> The idempotents are $(1,0)$ and $(0,1)$, both nontrivial; the roots of the identity are $(\pm1,\pm1)$, four elements when $2\neq0$, and the halving pairs</p>
+<p>$$
+(1,0)\longleftrightarrow(1,-1), \qquad (0,1)\longleftrightarrow(-1,1).
+$$</p>
+<p>The algebra is the split-complex algebra $F[j]/(j^2-1)$ under the identification $j=(1,-1)$; the two nontrivial roots $\pm j$ correspond to the two idempotents $(1\pm j)/2$.</p>
+<p><strong>Example (matrix algebras).</strong> For $n\geq2$, $M_n(F)$ is split: the matrix units $E_{11}$ and $E_{22}$ are nontrivial idempotents, and the rank-one idempotents are the primitive ones. The roots of the identity are the involutions, and the halving pairs an idempotent of rank $r$ with the involution whose $+1$-eigenspace has dimension $r$. For $n=1$ the algebra is the field $F$, a division algebra, and it is not split.</p>
+<p><strong>Example (the split-complex algebra).</strong> $A=F[j]/(j^2-1)$ has the idempotents $e_\pm=(1\pm j)/2$ and the roots $\pm1,\pm j$. The two nontrivial roots $\pm j$ correspond to $e_\pm$; the algebra is isomorphic to $F\times F$ when $2\neq0$, and the isomorphism sends $e_+$ to $(1,0)$ and $e_-$ to $(0,1)$. In characteristic two, $j^2-1=(j-1)^2$, the algebra is the dual numbers $F[\varepsilon]/(\varepsilon^2)$ with $\varepsilon=j-1$, and it is not split: its only idempotents are $0,1$.</p>
+<p><strong>Example (the group algebra of the cyclic group of order two).</strong> Let $A=F[C_2]$ with $C_2=\{1,g\}$, $g^2=1$. If $2\neq0$, the elements $e_\pm=(1\pm g)/2$ are idempotents and $A\cong F\times F$; the roots are $\pm1,\pm g$, and the nontrivial ones correspond to $e_\pm$. If $2=0$, $A\cong F[\varepsilon]/(\varepsilon^2)$ with $\varepsilon=g-1$, and $A$ is not split.</p>
+<p><strong>Example (the upper triangular algebra).</strong> $T_2(F)$ is split for every field: $E_{11}$ and $E_{22}$ are nontrivial idempotents. When $2\neq0$, the roots of the identity include $\operatorname{diag}(1,-1)$ and $\operatorname{diag}(-1,1)$; in characteristic two the roots are the unipotent triangular matrices with $N^2=0$. The algebra is not semisimple, but it is split in the sense of the definition. This shows that split is not the same as semisimple.</p>
+<p><strong>Example (the dual numbers).</strong> $F[\varepsilon]/(\varepsilon^2)$ is not split when $2\neq0$: it has no nontrivial idempotent and no root other than $\pm1$. It is also not a division algebra. It is the standard example of an algebra that is neither division nor split, and it shows that the dichotomy of §<em>The Semisimple Dichotomy</em> is a semisimple phenomenon.</p>
+<p><strong>Example (the quaternions).</strong> $\mathbb{H}$ is a division algebra, so it is not split; its roots of $x^2=1$ are $\pm1$, while its roots of $x^2=-1$ are the unit imaginary quaternions. The example separates the two equations and shows that a division algebra can have many square roots of $-1$ while having no nontrivial idempotent.</p>
+<h3 id="split-versus-split-semisimple">Split versus split semisimple</h3>
+<p>The word <strong>split</strong> has a second, stronger meaning in the theory of algebras: a finite-dimensional algebra is <strong>split semisimple</strong> when it is isomorphic to a product $\prod_i M_{n_i}(F)$ of matrix algebras over the base field. A split semisimple algebra is semisimple, and every division algebra in its Wedderburn–Artin decomposition is the base field.</p>
+<p><strong>Proposition.</strong> Let $A$ be a finite-dimensional semisimple algebra.</p>
+<p><strong>(a)</strong> If $A$ is split semisimple, then $A$ is split in the weak sense exactly when $A$ is not a single copy of $F$; that is, when it has more than one factor or a factor $M_n(F)$ with $n\geq2$.</p>
+<p><strong>(b)</strong> A central division algebra $D\neq F$ is not split semisimple and is not split in the weak sense; it becomes a matrix algebra after a splitting field extension, but the extension, not the algebra, carries the idempotents.</p>
+<p><em>Proof.</em> (a) A factor $M_n(F)$ with $n\geq2$ has $E_{11}$, and a product of two or more factors has the central idempotents; the single factor $M_1(F)=F$ has none. (b) A division algebra has no nontrivial idempotent by §<em>Division Algebras</em>; for a central division algebra the splitting field extension $L/F$ with $D\otimes_F L\cong M_n(L)$ produces idempotents in the scalar extension, not in $D$.</p>
+<p><strong>Remark.</strong> The two senses of split are therefore different. The weak sense is a property of the algebra over the base field: it has an idempotent. The strong sense is a property of the semisimple algebra and its division algebra factors: all the factors are matrix algebras over the base field. A central division algebra $D\neq F$ is neither weakly split nor split semisimple, but it is split by a field extension; the phrase "split by $L$" refers to the extension and not to an idempotent of $D$.</p>
+<h2 id="characteristic-two">Characteristic Two</h2>
+<p>In characteristic two the halving correspondence collapses: $2=0$, so the formula $e=(1+u)/2$ is undefined, and $u=2e-1=-1$ for every idempotent. The roots of the identity and the idempotents separate, and neither determines the other.</p>
+<h3 id="the-roots">The roots</h3>
+<p><strong>Proposition.</strong> Let $2=0$ in $F$.</p>
+<p><strong>(a)</strong> If $u^2=1$, then $(u-1)^2=0$; the root $u$ is a unipotent element $1+n$ with $n^2=0$.</p>
+<p><strong>(b)</strong> In a reduced algebra, the only root of the identity is $1$.</p>
+<p><strong>(c)</strong> In a division algebra, the only root of the identity is $1$.</p>
+<p><em>Proof.</em> (a) $u^2-1=(u-1)^2$ in characteristic two. (b) A reduced algebra has no nonzero nilpotent, so $n=0$. (c) A division algebra has no nonzero nilpotent, or directly $(u-1)^2=0$ gives $u=1$.</p>
+<p><strong>Example (the dual numbers in characteristic two).</strong> Let $A=F[\varepsilon]/(\varepsilon^2)$ with $2=0$. Every element $1+b\varepsilon$ is a root of the identity, since $(1+b\varepsilon)^2=1+2b\varepsilon+b^2\varepsilon^2=1$. The idempotents, however, are only $0$ and $1$: an idempotent $a+b\varepsilon$ satisfies $a^2=a$ and $2ab=0$, the second equation being automatic; if $a=0$ then $b=0$, and if $a=1$ then $b=0$. So the roots form the additive group $F$ under $1+b\varepsilon$, while the idempotents are the two trivial ones. The halving has no inverse and no meaning.</p>
+<p><strong>Example (the split algebra in characteristic two).</strong> Let $A=F\times F$ with $2=0$. The idempotents are $(1,0)$ and $(0,1)$, but the roots of the identity are only $(1,1)$: a root $(a,b)$ satisfies $a^2=1$ and $b^2=1$, and in characteristic two the only solution is $a=b=1$. So the algebra is split and has no nontrivial root. The example is the exact opposite of the dual numbers, where the roots are plentiful and the idempotents are not.</p>
+<h3 id="the-table">The table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra (characteristic two)</th>
+<th>Nontrivial idempotents</th>
+<th>Nontrivial roots of $x^2=1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F\times F$</td>
+<td>yes, $(1,0),(0,1)$</td>
+<td>no, only $(1,1)$</td>
+</tr>
+<tr>
+<td>$F[\varepsilon]/(\varepsilon^2)$</td>
+<td>no, only $0,1$</td>
+<td>yes, $1+b\varepsilon$ for $b\neq0$</td>
+</tr>
+<tr>
+<td>a reduced algebra</td>
+<td>may have</td>
+<td>no, only $1$</td>
+</tr>
+<tr>
+<td>a division algebra</td>
+<td>no</td>
+<td>no, only $1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the characteristic-two form of the separation: the halving correspondence is a characteristic-not-two theorem, and in characteristic two the two notions must be studied separately.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>root of the identity</strong> is a solution of $u^2=1$. In a division algebra the roots are $\pm1$ when $2\neq0$ and $1$ when $2=0$, and there is no nontrivial idempotent. In a matrix algebra over a field of characteristic not two, the roots are the diagonalisable involutions with eigenvalues $\pm1$, and the idempotents are the diagonalisable projections with eigenvalues $0,1$. When $2$ is invertible, the <strong>halving correspondence</strong> $e\mapsto2e-1$, $u\mapsto(1+u)/2$ is a bijection between idempotents and roots; it sends the complement $1-e$ to $-u$, reads $u$ as the reflection with $+1$-eigenspace the image of $e$ and $-1$-eigenspace the image of $1-e$, and is a Boolean group isomorphism $e\mapsto1-2e$ on a commutative algebra but only a bijection in general. An algebra is <strong>split</strong> in the weak sense of the article when it has a nontrivial idempotent, equivalently when it has a nontrivial root of the identity if $2$ is invertible; $F\times F$, $M_n(F)$ for $n\geq2$, the split-complex algebra, the group algebra $F[C_2]$ and the upper triangular algebra are split, while a division algebra and the dual numbers are not. The dual numbers are neither division nor split, so the division/split dichotomy is a semisimple phenomenon; in the semisimple case a finite-dimensional algebra is division exactly when it has no nontrivial idempotent, and split exactly when it is not division. In characteristic two the halving collapses, the roots of $x^2=1$ are the unipotent elements $1+n$ with $n^2=0$, and the roots and the idempotents separate: $F\times F$ has idempotents and only the trivial root, while the dual numbers have many roots and only the trivial idempotents. The article uses no form, norm or topology.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R(A)$</td>
+<td>the roots of the identity, $\{u:u^2=1\}$</td>
+</tr>
+<tr>
+<td>$e,f$</td>
+<td>idempotent and its complement $f=1-e$</td>
+</tr>
+<tr>
+<td>$u=2e-1$</td>
+<td>the root of the identity attached to $e$</td>
+</tr>
+<tr>
+<td>$e=(1+u)/2$</td>
+<td>the idempotent attached to $u$</td>
+</tr>
+<tr>
+<td>$e\oplus f=e+f-2ef$</td>
+<td>the symmetric difference of commuting idempotents</td>
+</tr>
+<tr>
+<td>split</td>
+<td>has a nontrivial idempotent</td>
+</tr>
+<tr>
+<td>split semisimple</td>
+<td>isomorphic to a product of matrix algebras over the base field</td>
+</tr>
+<tr>
+<td>division</td>
+<td>every nonzero element is invertible</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for idempotents, Peirce decompositions and the matrix examples.</li>
+<li>Nathan Jacobson, <em>Basic Algebra II</em> (Freeman, 1989), for the halving of an idempotent, the roots of the identity and the Wedderburn–Artin theory.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the division, semisimple and local cases and the dual-numbers warning.</li>
+<li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the division algebras, their splitting fields and the contrast between the roots of $+1$ and the roots of $-1$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

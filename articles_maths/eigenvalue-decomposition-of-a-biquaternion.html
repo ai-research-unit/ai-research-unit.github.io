@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eigenvalue Decomposition of a Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="eigenvalue-decomposition-of-a-biquaternion"><strong>Eigenvalue Decomposition of a Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is simple and four-dimensional over $\mathbb{C}$, and the matrix model $\mathsf{M}_2$ identifies it with $M_2(\mathbb{C})$. This article reads the <strong>eigenvalue decomposition</strong> of a biquaternion: the writing of $\tilde Q$ as a complex linear combination of the two idempotents of a complete orthogonal pair, with the eigenvalues as coefficients. The general definition and the existence theorem are those of <em>The Eigenvalue Decomposition of an Element</em>; the biquaternion content is that, in the regime of distinct eigenvalues, the pair is the pair of a pure root of $+1$ and that the decomposition is the Peirce decomposition attached to that root in <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>.</p>
+<p>The notation is fixed in <em>Conventions in Mathematics</em>: the base is $e_t,\vec e_x,\vec e_y,\vec e_z$, a general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients, an idempotent is $\tilde\Pi$, a root of $+1$ is $\tilde\Xi$ and a pure root is $\vec\Xi$, and a pure nilpotent is $\vec\Upsilon$. The characteristic polynomial, the spectrum and the eigenvalues $Q_t\pm iB$ are those of <em>Biquaternion Spectral Theory</em>, §<em>The Biquaternion Spectrum</em>; the root of $+1$, the halving map and the primitive idempotents are those of <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Idempotents</em>; the four Peirce corners are those of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>, §<em>The Peirce Decomposition</em>; the centraliser and the diagonal part are those of <em>The Centraliser and the Diagonal Peirce Part</em>; the off-diagonal components are those of <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>; and the eigenvalue formula and the parity-matched lattice are those of <em>Biquaternion Elementary Functions</em>, §<em>The Eigenvalue Formula</em>.</p>
+<p><strong>Scope.</strong> The article proves the eigenvalue decomposition in the regime of distinct eigenvalues, identifies its eigenprojections with the idempotents of a pure root of $+1$, reads the decomposition as the Peirce decomposition relative to one of them, and treats the two degenerate regimes: the nilpotent vector part, where no such decomposition exists, and the scalar element, where the two-projector writing is not unique.</p>
+<p><strong>Boundaries.</strong> The quaternion case, with its left and right eigenvalues, is the subject of <em>Quaternion Spectral Theory</em>; the reduced-biquaternion case is that of <em>Reduced Biquaternion Spectral Theory</em>; the exponential and the logarithm built on the decomposition are those of <em>Biquaternion Elementary Functions</em>; and the spectral theorem in its general form is that of <em>Biquaternion Spectral Theory</em>. The article cites these and does not restate them. The other products of the biquaternion space carry nilpotents and idempotents relative to the product, and are outside its scope.</p>
+<h2 id="the-pure-root-of-the-vector-part">The Pure Root of the Vector Part</h2>
+<p>The square of the vector part is central,
+$$
+\vec Q^2=-(Q_x^2+Q_y^2+Q_z^2)e_t,
+$$
+as in <em>Biquaternion Spectral Theory</em>, §<em>The Biquaternion Spectrum</em>. Let $B$ be a square root of $Q_x^2+Q_y^2+Q_z^2$, so that $\vec Q^2=-B^2e_t$.</p>
+<p>Assume $B\neq0$. Put
+$$
+\vec U=\frac{\vec Q}{B},\qquad \vec\Xi=-i\vec U=-\frac{i\vec Q}{B}.
+$$
+Then $\vec U$ is a pure unit element of the biquaternion layer, $\vec U^2=-e_t$, and $\vec\Xi$ is a pure root of $+1$:
+$$
+\vec\Xi^2=(-i)^2\vec U^2=e_t.
+$$
+Conversely $\vec Q=B\vec U=iB\vec\Xi$. The root is pure, so it carries the arrow and not the tilde (§<em>Pure Elements and their Coefficients</em> of <em>Conventions in Mathematics</em>), and it belongs to the roots classified in <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Roots of One</em>. For a real vector part, $B$ may be taken real and positive, $\vec U$ is then the real unit vector $\vec u$, and $\vec\Xi=-i\vec u$ lies in the family $i\vec u$ of the pure roots; for a general complex vector part, $\vec U$ and $\vec\Xi$ are genuinely complex.</p>
+<p>The choice is two-fold: the replacement $B\mapsto-B$ replaces $\vec U$ and $\vec\Xi$ by their opposites. Only $B^2$ is determined by $\tilde Q$, and with it the unordered pair $\{\vec\Xi,-\vec\Xi\}$; in the real case the convention $B>0$ removes the choice.</p>
+<h2 id="eigenvalues-and-the-characteristic-polynomial">Eigenvalues and the Characteristic Polynomial</h2>
+<p>Since $\vec Q=iB\vec\Xi$,
+$$
+(\tilde Q-Q_te_t)^2=\vec Q^2=-B^2e_t,
+$$
+hence
+$$
+\tilde Q^2-2Q_t\tilde Q+(Q_t^2+B^2)e_t=0,\qquad Q_t^2+B^2=\langle\tilde Q\rangle_{\natural}.
+$$
+This is the quadratic identity of <em>Biquaternion Spectral Theory</em>, §<em>The Biquaternion Spectrum</em>, and the characteristic polynomial is
+$$
+p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural}=(X-Q_t)^2+B^2,
+$$
+with roots
+$$
+\lambda_\pm=Q_t\pm iB.
+$$
+The discriminant is
+$$
+(\lambda_+-\lambda_-)^2=(2iB)^2=-4B^2\neq0,
+$$
+so the eigenvalues are distinct exactly when $B\neq0$. The minimal polynomial is then $p_{\tilde Q}$.</p>
+<p>Under the matrix model the trace is $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$ and the determinant is $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ (§<em>The Matrix Model</em> of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>), so $p_{\tilde Q}$ is the characteristic polynomial of $\mathsf{M}_2(\tilde Q)$ and $\lambda_\pm$ are its eigenvalues.</p>
+<h2 id="the-eigenprojections">The Eigenprojections</h2>
+<p>Put
+$$
+\tilde\Pi_+=\frac12(e_t+\vec\Xi),\qquad \tilde\Pi_-=\frac12(e_t-\vec\Xi),
+$$
+the two idempotents of the root $\vec\Xi$ under the halving map of <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>, §<em>The Idempotents</em>. By that article the pair is complete and orthogonal, $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$, and the root is their difference, $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$; by <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>, §<em>Idempotents and Orthogonal Idempotents</em>, each member is primitive.</p>
+<p>They are the eigenprojections of $\tilde Q$:
+$$
+\tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,\qquad \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
+$$
+Indeed, since $\vec Q=iB\vec\Xi$ and $\vec\Xi^2=e_t$,
+$$
+\tilde Q\tilde\Pi_+=(Q_te_t+iB\vec\Xi)\frac12(e_t+\vec\Xi)=\frac12(Q_t+iB)(e_t+\vec\Xi)=\lambda_+\tilde\Pi_+,
+$$
+and, with $Q_t-iB$ in place of $Q_t+iB$ and $e_t-\vec\Xi$ in place of $e_t+\vec\Xi$,
+$$
+\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-.
+$$</p>
+<p>Equivalently, by the eigenprojector formula of <em>The Lagrange–Sylvester Eigenprojector Formula</em>, §<em>The Eigenprojector Formula</em>,
+$$
+\tilde\Pi_+=\frac{\tilde Q-\lambda_-e_t}{\lambda_+-\lambda_-},\qquad \tilde\Pi_-=\frac{\tilde Q-\lambda_+e_t}{\lambda_--\lambda_+},\qquad \lambda_+-\lambda_-=2iB.
+$$
+Hence $\tilde\Pi_\pm$ are polynomials in $\tilde Q$, and in particular commute with $\tilde Q$.</p>
+<h2 id="the-eigenvalue-decomposition">The Eigenvalue Decomposition</h2>
+<p>Summing the two eigenvalue relations,
+$$
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
+$$
+This is an eigenvalue decomposition in the sense of <em>The Eigenvalue Decomposition of an Element</em>, §<em>The definition</em>: the coefficients $\lambda_\pm$ are distinct, the idempotents $\tilde\Pi_\pm$ are nonzero, orthogonal and complete, and they are the eigenprojections. Separating scalar and vector parts,
+$$
+\tilde Q=\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec\Xi=Q_te_t+iB\vec\Xi=Q_te_t+B\vec U.
+$$
+So the decomposition writes $\tilde Q$ as a complex linear combination of the two primitive idempotents of $\vec\Xi$, with the eigenvalues as coefficients.</p>
+<p><strong>Uniqueness.</strong> By the uniqueness theorem of <em>The Eigenvalue Decomposition of an Element</em>, §<em>Uniqueness</em>, an element with distinct eigenvalues has a unique eigenprojection attached to each eigenvalue. Here the two eigenprojections are the two idempotents of the root $\vec\Xi$, and the root is read back from them as $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. The unordered pair $\{\tilde\Pi_+,\tilde\Pi_-\}$ is determined by $\tilde Q$; the ordered pair is determined only up to the swap that sends $B$ to $-B$ and $\vec\Xi$ to $-\vec\Xi$. The labelling is canonical when $B^2$ has a distinguished square root, as it does for a real vector part, where $B$ is taken real and positive; for a general complex vector part no canonical choice exists.</p>
+<p><strong>Semisimplicity.</strong> Since $\lambda_+\neq\lambda_-$, the minimal polynomial $p_{\tilde Q}$ is squarefree, and $\tilde Q$ is semisimple (<em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>, §<em>Semisimple Elements</em>). The decomposition is the diagonalisation of $\tilde Q$ with respect to the noncentral idempotents $\tilde\Pi_\pm$.</p>
+<p>Under the matrix model, $\mathsf{M}_2(\tilde\Pi_\pm)$ are the rank-one eigenprojections of $\mathsf{M}_2(\tilde Q)$.</p>
+<h2 id="the-peirce-decomposition-relative-to-the-eigenprojection">The Peirce Decomposition Relative to the Eigenprojection</h2>
+<p>Let
+$$
+\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t,\qquad s,t\in\{+,-\},
+$$
+be the Peirce corners of the pair, in the notation of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>, §<em>The Biquaternion Case</em>. The Peirce decomposition is
+$$
+\mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
+$$
+Each corner is one complex line, the diagonal corners are $\mathbb{C}\tilde\Pi_+$ and $\mathbb{C}\tilde\Pi_-$, and the two mixed corners are square-zero. This is the decomposition attached to the root $\vec\Xi=-i\vec Q/B$ in §<em>The Peirce Decomposition</em> of that article.</p>
+<p>The diagonal part is
+$$
+\mathbb{B}_{++}\oplus\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-=\mathbb{C}[\tilde Q]=\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}.
+$$
+It is a commutative subalgebra isomorphic to $\mathbb{C}\times\mathbb{C}$. By <em>The Centraliser and the Diagonal Peirce Part</em>, §<em>The theorem</em>, applied to the eigenvalue decomposition, it is the centraliser of $\tilde Q$; by <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>, §<em>The Commutator Interpretation</em>, the mixed part is $[\tilde\Pi_+,\mathbb{B}]$, so an element commutes with $\tilde Q$ exactly when its two mixed Peirce components vanish.</p>
+<p>On $\tilde Q$ the Peirce decomposition reads
+$$
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+$$
+with zero mixed components. The eigenvalue decomposition is therefore the Peirce decomposition read on the element: the element lies in the diagonal part, and its two diagonal Peirce coordinates are its eigenvalues. The mixed corners are the directions that fail to commute with $\tilde Q$.</p>
+<p>The two signs of the pair are the two eigenvalues of multiplication by the root: an element of $\mathbb{B}_{st}$ is multiplied by $s$ on the left and by $t$ on the right by $\vec\Xi$ (§<em>The Biquaternion Case</em>). The diagonal corners are the components on which the two signs agree; $\tilde Q$ acts on them by $\lambda_+$ and $\lambda_-$ respectively.</p>
+<h2 id="powers-and-polynomial-calculus">Powers and Polynomial Calculus</h2>
+<p>By Sylvester's formula of <em>The Lagrange–Sylvester Eigenprojector Formula</em>, §<em>Sylvester's Formula</em>, every polynomial $f\in\mathbb{C}[X]$ acts as
+$$
+f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-.
+$$
+In particular
+$$
+\tilde Q^n=\lambda_+^n\tilde\Pi_++\lambda_-^n\tilde\Pi_-,\qquad n\geq0,
+$$
+with $\tilde\Pi_++\tilde\Pi_-=e_t$ for $n=0$. When $\tilde Q$ is a unit, the two eigenvalues are nonzero (§<em>The Unit and the Group of Units</em> of <em>Norm and Invertibility in the Biquaternion Algebra</em>), and the formula extends to negative powers:
+$$
+\tilde Q^{-1}=\lambda_+^{-1}\tilde\Pi_++\lambda_-^{-1}\tilde\Pi_-.
+$$
+The result agrees with the inverse formula $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ of that article, since $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ and $\lambda_-\tilde\Pi_++\lambda_+\tilde\Pi_-=Q_te_t-B\vec U=\tilde Q^{\natural}$.</p>
+<h2 id="the-algebraic-fibre-of-the-decomposition">The Algebraic Fibre of the Decomposition</h2>
+<p>Fix the pair, that is, fix the root $\vec\Xi$ up to sign. Every element of $\mathbb{C}[\tilde Q]$ is
+$$
+\tilde Q_1=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-,\qquad \mu_\pm\in\mathbb{C},
+$$
+and the map $(\mu_+,\mu_-)\mapsto\tilde Q_1$ is a $\mathbb{C}$-linear isomorphism $\mathbb{C}^2\to\mathbb{C}[\tilde Q]$.</p>
+<p>For $\mu_+\neq\mu_-$ this is the eigenvalue decomposition of $\tilde Q_1$, with the eigenprojections $\tilde\Pi_\pm$ and the eigenvalue data $(\mu_+,\mu_-)$. For $\mu_+=\mu_-=a$ the element is $\tilde Q_1=ae_t$, scalar; the writing is still valid but every complete orthogonal pair gives it, so the two-projector pair is not determined by $\tilde Q_1$, although the eigenprojection $e_t$ of the one-term decomposition is.</p>
+<p>The unordered pair $\{\mu_+,\mu_-\}$ is the spectrum when $\mu_+\neq\mu_-$. For $\mu_+\neq\mu_-$, with the pair of idempotents fixed, the coordinate map to the unordered spectrum is two-to-one: the two preimages of $\{\mu_+,\mu_-\}$ are $\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$ and $\mu_-\tilde\Pi_++\mu_+\tilde\Pi_-$, which differ by $(\mu_+-\mu_-)(\tilde\Pi_+-\tilde\Pi_-)\neq0$. For eigenvalues constrained to subsets $S_\pm\subseteq\mathbb{C}$, the corresponding elements are
+$$
+\{\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-:\ \mu_+\in S_+,\ \mu_-\in S_-\}.
+$$</p>
+<h3 id="the-coordinate-change-to-scalar-and-vector-data">The Coordinate Change to Scalar and Vector Data</h3>
+<p>The scalar and vector coordinates of $\tilde Q_1$ are
+$$
+\tilde Q_1=\frac{\mu_++\mu_-}{2}e_t+\frac{\mu_+-\mu_-}{2}\vec\Xi=ae_t+\Theta\vec U,
+\qquad a=\frac{\mu_++\mu_-}{2},\quad \Theta=\frac{\mu_+-\mu_-}{2i},
+$$
+the second equality using $\vec\Xi=-i\vec U$. The map $(\mu_+,\mu_-)\mapsto(a,\Theta)$ is a $\mathbb{C}$-linear isomorphism of $\mathbb{C}^2$; the scalar $a$ is the scalar part and $\Theta$ is the complex angle along the axis $\vec U$ used in <em>Biquaternion Elementary Functions</em>, §<em>The Eigenvalue Formula</em>. The two coordinate systems are the eigenvalue coordinates and the scalar-vector coordinates on the same diagonal part.</p>
+<h3 id="the-parity-matched-lattice">The Parity-Matched Lattice</h3>
+<p>The eigenvalue coordinates in $2\pi i\mathbb{Z}^2$ give
+$$
+L=\bigl\{2\pi i k_+\tilde\Pi_++2\pi i k_-\tilde\Pi_-:\ k_\pm\in\mathbb{Z}\bigr\}.
+$$
+Using $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$,
+$$
+2\pi i k_+\tilde\Pi_++2\pi i k_-\tilde\Pi_-=\pi i(k_++k_-)e_t+\pi i(k_+-k_-)\vec\Xi.
+$$
+With $m=k_++k_-$ and $n=k_+-k_-$ one has $m-n=2k_-$, so $m\equiv n\pmod2$; conversely every pair $(m,n)$ of the same parity comes from the integers $k_\pm=(m\pm n)/2$. Hence
+$$
+L=\bigl\{\pi i m\,e_t+\pi i n\,\vec\Xi:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\bigr\}
+=\bigl\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\bigr\}.
+$$
+This is the parity-matched lattice of <em>Biquaternion Elementary Functions</em>, §<em>The Eigenvalue Formula</em>, written there with the axis $\vec u$; for a real vector part $\vec U=\vec u$, and the two lattices are the same. It is the kernel of the exponential on the diagonal part. It is not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$: the rectangular lattice is the sublattice of index two in $L$ on which $m$ and $n$ are both even, the other coset is $\pi i e_t+\pi\vec U$, and the scalar and the vector coordinate cannot be chosen independently, because the idempotents $\tilde\Pi_\pm$ mix the two directions.</p>
+<h2 id="degenerate-regimes">Degenerate Regimes</h2>
+<p>The eigenvalue decomposition exists exactly when the minimal polynomial is split with distinct roots (<em>The Eigenvalue Decomposition of an Element</em>, §<em>Existence and Uniqueness</em>). Here $p_{\tilde Q}$ always splits over $\mathbb{C}$, and its roots are distinct exactly when $B\neq0$. The two degenerate regimes are separated by whether the vector part vanishes.</p>
+<h3 id="the-nilpotent-regime">The Nilpotent Regime</h3>
+<p>Let $B=0$ and $\vec Q\neq0$. Then $\vec Q^2=0$, so $\vec\Upsilon=\vec Q$ is a pure nilpotent, written with the arrow and without the tilde by §<em>The Nilpotent Convention</em> of <em>Conventions in Mathematics</em>, and
+$$
+\tilde Q=Q_te_t+\vec\Upsilon,\qquad \vec\Upsilon^2=0.
+$$
+The element is a unit exactly when $Q_t\neq0$ (§<em>The Unit and the Group of Units</em> of <em>Norm and Invertibility in the Biquaternion Algebra</em>), and its minimal polynomial is
+$$
+p_{\tilde Q}(X)=(X-Q_t)^2,
+$$
+which is not squarefree. By the theorem of <em>The Eigenvalue Decomposition of an Element</em>, §<em>Existence and Uniqueness</em>, $\tilde Q$ has no eigenvalue decomposition. In the matrix model $\mathsf{M}_2(\tilde Q)$ is a single Jordan block, conjugate to
+$$
+\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}.
+$$</p>
+<p>The centraliser of $\tilde Q$ is
+$$
+\{ae_t+b\vec\Upsilon:\ a,b\in\mathbb{C}\}.
+$$
+It contains no nontrivial idempotent: if $(ae_t+b\vec\Upsilon)^2=ae_t+b\vec\Upsilon$, then $a^2=a$ and $2ab=b$, so $(a,b)=(0,0)$ or $(1,0)$, giving $0$ or $e_t$. Hence no complete orthogonal pair other than the trivial one commutes with $\tilde Q$, and there is no Peirce decomposition adapted to $\tilde Q$ into two primitive idempotents.</p>
+<h3 id="the-scalar-regime">The Scalar Regime</h3>
+<p>Let $\vec Q=0$, so $\tilde Q=Q_te_t$. The element is central and semisimple, with the single eigenvalue $Q_t$ and minimal polynomial $X-Q_t$; its centraliser is all of $\mathbb{B}$.</p>
+<p>In the sense of the general definition the eigenvalue decomposition has one term, $\tilde Q=Q_te_t$, with the single eigenprojection $e_t$, and it is unique. A decomposition into two primitive idempotents with the repeated coefficient $Q_t$ is a different object: every complete orthogonal pair $\tilde\Pi_1,\tilde\Pi_2$ gives
+$$
+\tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2,
+$$
+and the pair is not determined by $\tilde Q$. The eigenvalue data therefore determine nothing beyond the scalar, and the two-projector writing is non-unique.</p>
+<h2 id="the-hermitian-case">The Hermitian Case</h2>
+<p>The idempotents $\tilde\Pi_\pm$ are Hermitian exactly when the axis $\vec U$ is real.</p>
+<p><strong>Proposition.</strong> Let $B\neq0$. The following are equivalent: (i) $\tilde\Pi_\pm$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec\Xi$ is purely imaginary; (iv) $\tilde Q$ is normal.</p>
+<p><em>Proof.</em> Since $\vec\Xi=-i\vec U$ and $\vec\Xi^{*}=-\overline{\vec\Xi}$,
+$$
+\tilde\Pi_\pm^{*}=\frac12\bigl(e_t\pm\vec\Xi^{*}\bigr)=\frac12\bigl(e_t\mp i\overline{\vec U}\bigr),
+$$
+so (i) holds exactly when $\overline{\vec U}=\vec U$, which is (ii); and (ii) and (iii) are the same condition, since $\vec U=i\vec\Xi$. If (ii) holds, then $\tilde Q^{*}=\overline{Q_t}e_t-\overline{B}\,\vec U$ lies in $\mathbb{C}[\tilde Q]$, so $\tilde Q$ commutes with $\tilde Q^{*}$ and (iv) holds. Conversely, if (iv) holds, Theorem 11.2 of <em>Biquaternion Spectral Theory</em>, §<em>The Spectral Theorem</em>, writes $\tilde Q=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2$ with Hermitian idempotents; since $B\neq0$ the eigenvalues are distinct, and the formulas of that theorem identify $\tilde\Pi_1,\tilde\Pi_2$ with $\tilde\Pi_\pm$, so (i) holds.</p>
+<p>The pair is then the Hermitian pair of the root $\vec\Xi=-i\vec u$ over a real unit vector $\vec u$ (§<em>The Families of Idempotents</em> of <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>), and the decomposition is the spectral theorem of <em>Biquaternion Spectral Theory</em>, §<em>The Spectral Theorem</em>, read in the biquaternion algebra.</p>
+<h2 id="remarks">Remarks</h2>
+<ol>
+<li>
+<p><strong>Relation to $M_2(\mathbb{C})$.</strong> Under the matrix model the above is the eigenvalue decomposition of a $2\times2$ complex matrix with distinct eigenvalues: $\lambda_\pm$ are the eigenvalues, $\mathsf{M}_2(\tilde\Pi_\pm)$ are the rank-one eigenprojections, and the two formulas are the Lagrange–Sylvester formulas. The biquaternion-specific content is the identification of the eigenprojections with the idempotents of a pure root of $+1$, and of the eigenvalue data with the scalar part and the complex angle along $\vec U$.</p>
+</li>
+<li>
+<p><strong>Noncentrality.</strong> The idempotents $\tilde\Pi_\pm$ are noncentral: they commute with $\tilde Q$ and with its centraliser, but not with all of $\mathbb{B}$. There is no central idempotent in $\mathbb{B}$, since the algebra is simple (§<em>The Two-Sided Ideals: Simplicity of $\mathbb{B}$</em> of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>). The decomposition is therefore a Peirce decomposition relative to an element-dependent idempotent, not a decomposition of the algebra into ideals.</p>
+</li>
+<li>
+<p><strong>Labelling.</strong> The decomposition is canonical only as the unordered set of pairs $\{(\lambda_+,\tilde\Pi_+),(\lambda_-,\tilde\Pi_-)\}$. The labelling is interchanged by $B\mapsto-B$ and $\vec\Xi\mapsto-\vec\Xi$. It is canonical when $B^2$ has a distinguished square root, as for a real vector part with $B>0$, and not otherwise.</p>
+</li>
+<li>
+<p><strong>Failure in the degenerate regimes.</strong> The eigenvalue decomposition is a property of semisimple elements with distinct eigenvalues. The nilpotent regime is non-semisimple and admits none. The scalar regime is semisimple with a repeated eigenvalue: the general decomposition has one term, and any two-projector refinement is non-unique.</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>For a biquaternion with $B\neq0$, the eigenvalue decomposition is the writing
+$$
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
+\qquad
+\lambda_\pm=Q_t\pm iB,
+\qquad
+\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi),
+$$
+where $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\vec\Xi=-i\vec Q/B$ is the pure root of $+1$ of the vector part. The eigenvalues are distinct, the idempotents are primitive, orthogonal and complete, and they are the eigenprojections. The decomposition is unique up to the simultaneous swap of the two labels.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Condition</th>
+<th>Spectrum</th>
+<th>Minimal polynomial</th>
+<th>Two-projector decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinct</td>
+<td>$B\neq0$</td>
+<td>$\{Q_t+iB,Q_t-iB\}$</td>
+<td>$(X-Q_t)^2+B^2$</td>
+<td>$\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$, unique unordered pair</td>
+</tr>
+<tr>
+<td>Nilpotent</td>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$\{Q_t\}$</td>
+<td>$(X-Q_t)^2$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Scalar</td>
+<td>$\vec Q=0$</td>
+<td>$\{Q_t\}$</td>
+<td>$X-Q_t$</td>
+<td>$Q_t\tilde\Pi_1+Q_t\tilde\Pi_2$ for every complete pair</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Peirce decomposition relative to $\tilde\Pi_+$ has corners $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. Its diagonal part is the centraliser $\mathbb{C}[\tilde Q]=\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}$, and $\tilde Q$ has the diagonal coordinates $\lambda_\pm$ and zero mixed coordinates. The mixed corners are the directions that fail to commute with $\tilde Q$. The polynomial calculus, the inverse and the parity-matched lattice all follow from the decomposition. The idempotents are Hermitian exactly when $\vec U$ is real, and the decomposition is then the spectral theorem.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra, dimension $4$ over $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>General biquaternion, $Q_\mu\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>Algebraic norm and determinant</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>A square root of $Q_x^2+Q_y^2+Q_z^2$</td>
+</tr>
+<tr>
+<td>$\vec U=\vec Q/B$</td>
+<td>Pure unit element, $\vec U^2=-e_t$, for $B\neq0$</td>
+</tr>
+<tr>
+<td>$\vec\Xi=-i\vec U=-\dfrac{i\vec Q}{B}$</td>
+<td>Pure root of $+1$, $\vec\Xi^2=e_t$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>Eigenvalues</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$</td>
+<td>Eigenprojections, primitive orthogonal idempotents</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_1,\tilde\Pi_2$</td>
+<td>A complete orthogonal pair, used in the scalar regime</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$</td>
+<td>Peirce corners of the pair</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[\tilde Q]=\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}$</td>
+<td>Commutative subalgebra and centraliser of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\mu_\pm$</td>
+<td>Eigenvalue coordinates on the diagonal part</td>
+</tr>
+<tr>
+<td>$a=(\mu_++\mu_-)/2$, $\Theta=(\mu_+-\mu_-)/(2i)$</td>
+<td>Scalar and angle coordinates on the diagonal part</td>
+</tr>
+<tr>
+<td>$L=\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$</td>
+<td>Parity-matched lattice, the kernel of $\exp$ on the diagonal part</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon=\vec Q$</td>
+<td>Pure nilpotent, in the regime $B=0$ and $\vec Q\neq0$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>Matrix model $\mathbb{B}\cong M_2(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the eigenvalue decomposition, the Lagrange–Sylvester formula and the spectral theorem.</li>
+<li>Nicholas J. Higham, <em>Functions of Matrices: Theory and Computation</em> (SIAM, Philadelphia, 2008), for the functional calculus and the matrix inverse.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the Peirce decomposition and the structure theory of finite-dimensional algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the algebraic structure of the biquaternion algebra.</li>
+<li>Vladimir V. Rodman, <em>Topics in Quaternion Linear Algebra</em> (Princeton University Press, 2014), for the spectral theory of quaternionic matrices.</li>
+<li>The corpus articles: <a href="the-eigenvalue-decomposition-of-an-element.html">The Eigenvalue Decomposition of an Element</a>, <a href="the-lagrange-sylvester-eigenprojector-formula.html">The Lagrange–Sylvester Eigenprojector Formula</a>, <a href="the-centraliser-and-the-diagonal-peirce-part.html">The Centraliser and the Diagonal Peirce Part</a>, <a href="off-diagonal-peirce-components-and-noncentral-idempotents.html">Off-Diagonal Peirce Components and Noncentral Idempotents</a>, <a href="biquaternion-spectral-theory.html">Biquaternion Spectral Theory</a>, <a href="ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html">Ideals and Peirce Decomposition of the Biquaternion Algebra</a>, <a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, <a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, <a href="norm-and-invertibility-in-the-biquaternion-algebra.html">Norm and Invertibility in the Biquaternion Algebra</a> and <a href="conventions-in-mathematics.html">Conventions in Mathematics</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -71,7 +71,7 @@
 <p>The product is <em>The t-Product of Reduced Biquaternion Tensors</em>, the inverse is <em>The Moore-Penrose Inverse of a Reduced Biquaternion Tensor</em>, and the norms are those of <em>Reduced Biquaternion Tensors as a Vector Space</em>. The matrix counterpart is <em>Matrix Equations and Structured Solutions over the Reduced Biquaternions</em>; the application is <em>Color Video Compression and Deblurring with Reduced Biquaternion Tensors</em>.</p>
 <p>The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion tensors and applications in color video processing", Section 5.</p>
 <h2 id="the-solvability-criterion">The Solvability Criterion</h2>
-<p>Let $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$, $B\in\mathbb{B}_{\mathrm r}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm r}^{n_2\times n_4\times n_3}$. The equation is</p>
+<p>Let $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$, $B\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_4\times n_3}$. The equation is</p>
 <p>$$
 A\ast X=B.
 $$</p>
@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 X=A^\dagger\ast B+L_A\ast Y,
 $$</p>
-<p>where $Y\in\mathbb{B}_{\mathrm r}^{n_2\times n_4\times n_3}$ is arbitrary.</p>
+<p>where $Y\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_4\times n_3}$ is arbitrary.</p>
 <p><em>Proof.</em> If $X$ is a solution, then $R_A\ast B=R_A\ast A\ast X=0$ because $R_A\ast A=0$. Conversely, if $R_A\ast B=0$, then $A\ast A^\dagger\ast B=B$, so $X_0=A^\dagger\ast B$ is a solution. For an arbitrary solution $X$,</p>
 <p>$$
 X=A^\dagger\ast A\ast X+L_A\ast X=A^\dagger\ast B+L_A\ast X,
@@ -121,7 +121,7 @@ $$</p>
 <p>Assembling the slices and inverting the transform gives the stated form. The normal equation is the derivative of the residual, and it is satisfied by the same expression because $A^{\mathsf H}(\mathrm I-A A^\dagger)=0$. The minimum-norm statement is the orthogonality argument of the previous corollary.</p>
 <p><strong>Remark (the two normal equations).</strong> The equation $A\ast X=B$ and its normal equation have the same least-squares solutions; the normal equation is solvable for every $B$, while the original equation is solvable only when $R_A\ast B=0$. <strong>The pseudoinverse solution $A^\dagger\ast B$ is the canonical one</strong>: it is the least-squares solution of minimum norm, and it is the exact solution whenever an exact solution exists.</p>
 <h2 id="the-hermitian-solution">The Hermitian Solution</h2>
-<p>Let $A,B\in\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ be square, and suppose that $X$ is required to be Hermitian, $X^{\mathsf H}=X$. The equation is $A\ast X=B$ with $B$ square.</p>
+<p>Let $A,B\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ be square, and suppose that $X$ is required to be Hermitian, $X^{\mathsf H}=X$. The equation is $A\ast X=B$ with $B$ square.</p>
 <p><strong>Theorem (Hermitian solutions).</strong> The equation has a Hermitian solution if and only if</p>
 <p>$$
 R_A\ast B=0,\qquad B\ast A^{\mathsf H}=A\ast B^{\mathsf H}.
@@ -132,7 +132,7 @@ X=A^\dagger\ast B+(A^\dagger\ast B)^{\mathsf H}
 -A^\dagger\ast B\ast A^{\mathsf H}\ast(A^\dagger)^{\mathsf H}
 +L_A\ast U\ast L_A,
 $$</p>
-<p>where $U\in\mathbb{B}_{\mathrm r}^{n\times n\times n_3}$ is an arbitrary Hermitian tensor.</p>
+<p>where $U\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ is an arbitrary Hermitian tensor.</p>
 <p><em>Proof.</em> If $X$ is Hermitian and $A\ast X=B$, then $R_A\ast B=R_A\ast A\ast X=0$, and $B^{\mathsf H}=X^{\mathsf H}\ast A^{\mathsf H}=X\ast A^{\mathsf H}$, so</p>
 <p>$$
 B\ast A^{\mathsf H}=A\ast X\ast A^{\mathsf H}=A\ast B^{\mathsf H}.
@@ -148,7 +148,7 @@ $$</p>
 <p><strong>Remark (the source's condition).</strong> The source writes the condition as $A\ast B^{*}=B\ast A^{*}$, with its star the bar-transpose of this branch; this is $A\ast B^{\mathsf H}=B\ast A^{\mathsf H}$, the condition used here. The condition says that $A\ast B^{\mathsf H}$ is Hermitian, and it is what makes the cancellation in the proof work.</p>
 <p><strong>Remark (the rectangular case).</strong> When $A$ is $n_1\times n_2$ with $n_1\neq n_2$, the Hermitian unknown $X$ is $n_2\times n_2$ and $B$ is $n_1\times n_2$; the two sides of the condition $B\ast A^{\mathsf H}=A\ast B^{\mathsf H}$ have different shapes, so the condition is formable only in the square case. The rectangular Hermitian problem requires a different compatibility condition and is not treated here; the rectangular equation without the Hermitian constraint is covered by the solvability and least-squares theorems above.</p>
 <h2 id="the-right-handed-equation">The Right-Handed Equation</h2>
-<p>Let $A\in\mathbb{B}_{\mathrm r}^{n_2\times n_4\times n_3}$, $B\in\mathbb{B}_{\mathrm r}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$. The equation is</p>
+<p>Let $A\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_4\times n_3}$, $B\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_4\times n_3}$ and $X\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$. The equation is</p>
 <p>$$
 X\ast A=B.
 $$</p>
@@ -156,7 +156,7 @@ $$</p>
 <p>$$
 X=B\ast A^\dagger+W\ast R_A,
 $$</p>
-<p>where $R_A=\mathrm I_{n_2}-A\ast A^\dagger$ and $W\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ is arbitrary. The minimum-norm least-squares solution is $X=B\ast A^\dagger$. The normal equation is</p>
+<p>where $R_A=\mathrm I_{n_2}-A\ast A^\dagger$ and $W\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ is arbitrary. The minimum-norm least-squares solution is $X=B\ast A^\dagger$. The normal equation is</p>
 <p>$$
 (X\ast A-B)\ast A^{\mathsf H}=0.
 $$</p>

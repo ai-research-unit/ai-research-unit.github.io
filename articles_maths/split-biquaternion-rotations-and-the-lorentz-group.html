@@ -100,7 +100,7 @@ $$</p>
 <h2 id="the-hermitian-form-on-the-split-biquaternions">The Hermitian Form on the Split Biquaternions</h2>
 <h3 id="the-hermitian-scalar-form-and-its-signature">The Hermitian Scalar Form and Its Signature</h3>
 <p>The algebra carries a natural real bilinear form, built from the Hermitian conjugation alone.</p>
-<p><strong>Definition.</strong> The <strong>Hermitian scalar form</strong> on $\mathbb{H}_{\mathbb{D}}$ is</p>
+<p><strong>Definition.</strong> The <strong>Hermitian scalar form</strong> on $\mathbb{H}_{\mathbb{D}}$, the corpus's $\langle\cdot,\cdot\rangle_{*}$ written $g$, is</p>
 <p>$$
 g(\tilde Q_1, \tilde Q_2) = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{*}\right),
 $$</p>
@@ -131,7 +131,7 @@ $$</p>
 <p>Consequently $\mathbb{M}_-$ is a Lorentzian four-space with the form $g$, and $O(3,1)$ is the isometry group of $(\mathbb{M}_-,g)$; $\mathbb{M}_+$ carries the opposite Lorentzian form, and $O(1,3)\cong O(3,1)$ is its isometry group.</p>
 <p><em>Proof.</em> On $\mathbb{M}_+$ the basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ gives diagonal entries $g(e_t,e_t) = +1$ and $g(j\vec e_k,j\vec e_k) = -1$, hence signature $(1,3)$. On $\mathbb{M}_-$ the basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$ gives $g(je_t,je_t) = -1$ and $g(\vec e_k,\vec e_k) = +1$, hence signature $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$.</p>
 <p>The element $je_t$ is therefore a <strong>timelike</strong> vector of the algebra, of $g$-norm $-1$; the elements $\vec e_x, \vec e_y, \vec e_z$ are <strong>spacelike</strong>, of $g$-norm $+1$; and $\mathbb{M}_-$ is the Lorentzian four-space attached to the split biquaternion algebra. In the identity $u = u_+ + u_-$ with $u_{\pm}$ the projections onto $\mathbb{M}_{\pm}$, the form is $g(u,u) = |u_+|^2_{+} + |u_-|^2_{-}$ where the two summands carry opposite signs.</p>
-<h3 id="neutral-planes-and-the-math178-form">Neutral Planes and the $(2,2)$ Form</h3>
+<h3 id="neutral-planes-and-the-math180-form">Neutral Planes and the $(2,2)$ Form</h3>
 <p><strong>Definition.</strong> A real subspace $W\subset\mathbb{H}_{\mathbb{D}}$ is <strong>neutral</strong> if $\dim W = 4$ and $g\big|_W$ has signature $(2,2)$. Such a subspace is <strong>totally isotropic</strong> if $g\big|_W = 0$ and $\dim W = 4$; the maximal $g$-totally-isotropic subspaces of $\mathbb{H}_{\mathbb{D}}$ are four-dimensional.</p>
 <p><strong>Proposition.</strong> Let $\mu\neq\nu$ be two distinct elements of $\{t,x,y,z\}$. The $\mathbb{D}$-span</p>
 <p>$$
@@ -398,8 +398,8 @@ $$</p>
 <td>Split-Biquaternion norm</td>
 </tr>
 <tr>
-<td>$g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
-<td>Hermitian scalar form, signature $(4,4)$</td>
+<td>$g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>Hermitian form, signature $(4,4)$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>

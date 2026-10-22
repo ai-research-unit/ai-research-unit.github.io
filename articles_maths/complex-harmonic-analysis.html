@@ -152,14 +152,14 @@ $$</p>
 $$</p>
 <p>The convolution is the additive convolution. There is also a <strong>multiplicative convolution</strong> on $\mathbb{C}^\times$, defined by</p>
 <p>$$
-(f \star g)(Q_1) = \int_{\mathbb{C}^\times} f(Q_1/Q_2) g(Q_2) \frac{dQ_2}{|Q_2|^2},
+(f \star g)(Q_1) = \int_{\mathbb{C}^\times} f(Q_1/Q_2) g(Q_2) \frac{dQ_2}{\langle Q_2\rangle_{*}},
 $$</p>
 <p>whose Fourier transform is the Mellin transform.</p>
 <h2 id="the-paleywiener-theorem">The Paley–Wiener Theorem</h2>
 <h3 id="functions-of-exponential-type">Functions of Exponential Type</h3>
 <p>A holomorphic function $F : \mathbb{C} \to \mathbb{C}$ is of <strong>exponential type</strong> if there exist constants $A, B > 0$ such that</p>
 <p>$$
-|F(Q)| \leq A \exp(B |Q|), \qquad Q \in \mathbb{C}.
+|F(Q)| \leq A \exp(B \sqrt{\langle Q\rangle_{*}}), \qquad Q \in \mathbb{C}.
 $$</p>
 <p>The <strong>indicator function</strong> of $F$ is</p>
 <p>$$
@@ -205,7 +205,7 @@ $$</p>
 <h3 id="the-fundamental-solution-of-the-laplacian">The Fundamental Solution of the Laplacian</h3>
 <p>The <strong>fundamental solution</strong> of the Laplacian on $\mathbb{C}$ is</p>
 <p>$$
-\Phi(Q) = \frac{1}{2\pi} \log |Q|.
+\Phi(Q) = \frac{1}{2\pi} \log \sqrt{\langle Q\rangle_{*}}.
 $$</p>
 <p>It satisfies</p>
 <p>$$
@@ -228,7 +228,7 @@ $$</p>
 <p>in the sense of distributions. This is the starting point of the theory of the <strong>Bochner–Martinelli integral</strong> and of the solution of the $\bar{\partial}$-equation.</p>
 <h2 id="holomorphic-functions-and-harmonic-analysis">Holomorphic Functions and Harmonic Analysis</h2>
 <h3 id="the-hardy-spaces">The Hardy Spaces</h3>
-<p>The <strong>Hardy space</strong> $H^p(D)$ on the unit disk $D = \{Q : |Q| < 1\}$ is the set of holomorphic functions $f$ on $D$ with</p>
+<p>The <strong>Hardy space</strong> $H^p(D)$ on the unit disk $D = \{Q : \sqrt{\langle Q\rangle_{*}} < 1\}$ is the set of holomorphic functions $f$ on $D$ with</p>
 <p>$$
 \|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
 $$</p>
@@ -260,7 +260,7 @@ $$</p>
 <h3 id="the-bloch-space">The Bloch Space</h3>
 <p>The <strong>Bloch space</strong> $\mathcal{B}$ is the set of holomorphic functions $f$ on $D$ with</p>
 <p>$$
-\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - |Q|^2) |\frac{df}{dQ}| < \infty.
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - \langle Q\rangle_{*}) |\frac{df}{dQ}| < \infty.
 $$</p>
 <p>It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.</p>
 <h2 id="the-mellin-transform">The Mellin Transform</h2>
@@ -386,7 +386,7 @@ $$</p>
 <td>Laplacian</td>
 </tr>
 <tr>
-<td>$D = \{Q : |Q| < 1\}$</td>
+<td>$D = \{Q : \sqrt{\langle Q\rangle_{*}} < 1\}$</td>
 <td>Unit disk</td>
 </tr>
 <tr>

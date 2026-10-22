@@ -129,12 +129,12 @@ $$</p>
 <p><strong>Proof.</strong> $\exp(2\pi k\vec\xi) = \cos(2\pi k) + \sin(2\pi k)\vec\xi = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\xi$ with $\vec\xi$ a root of $-1$ (or $\tilde q = 0$).</p>
 <p>Thus the exponential is a local homeomorphism everywhere and fails to be injective only along the discrete family of $2\pi$-multiples of the roots of $-1$; this is the source of the angle doubling of the Lorentz rotor of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="polar-and-exponential-parametrisation">Polar and Exponential Parametrisation</h2>
-<p><strong>Theorem (polar form).</strong> Every nonzero split-quaternion has a <strong>polar representation</strong></p>
+<p><strong>Theorem (polar form).</strong> Every nonzero split-quaternion has a <strong>polar decomposition</strong></p>
 <p>$$
 \tilde q = \rho\, \tilde u, \qquad \rho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0, \qquad \tilde u = \tilde q/\rho, \qquad \langle \tilde u\rangle_{\natural} = \pm 1 .
 $$</p>
 <p>The positive scalar $\rho$ carries the scale, and the unit $\tilde u$ carries the direction; the unit $\tilde u$ is in $\mathrm{U}$ when $\langle\tilde q\rangle_{\natural}>0$ and in the component $\{N=-1\}$ when $\langle\tilde q\rangle_{\natural}<0$.</p>
-<p><strong>Proof.</strong> For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar representation is the multiplicative form of the decomposition of the group of units into its two components.</p>
+<p><strong>Proof.</strong> For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar decomposition is the multiplicative form of the decomposition of the group of units into its two components.</p>
 <p><strong>Theorem (exponential parametrisation).</strong> Every unit of the identity component $\{N>0\}$ that lies in the image of the exponential is $\exp(q_t + \vec v)$ with $q_t \in \mathbb{R}$ and $\vec v \in V$; the norm-one elements $\mathrm{U}$ that lie in the image are $\exp(\vec v)$ with $\vec v \in V$, and the elliptic and hyperbolic cases are selected by the sign of $\langle \vec v\rangle_{\natural}$: $\langle \vec v\rangle_{\natural} > 0$ gives the compact part and $\langle \vec v\rangle_{\natural} < 0$ the non-compact part.</p>
 <p><strong>Proof.</strong> Immediate from the closed form and the corollary $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, which shows that $q_t$ is fixed by the split-quaternion norm: for $\mathrm{U}$ one needs $q_t = 0$. The sign of $\langle \vec v\rangle_{\natural}$ decides whether the orthogonal factor is trigonometric or hyperbolic in the closed form.</p>
 <h2 id="the-norm-one-group-and-math184">The Norm-One Group and $SL_2(\mathbb{R})$</h2>
@@ -243,7 +243,7 @@ $$</p>
 <tr>
 <td>$\rho\tilde u$</td>
 <td>the polar form of a nonzero element</td>
-<td><em>Split-Quaternion Polar Element Representation</em></td>
+<td><em>Split-Quaternion Polar Decomposition</em></td>
 </tr>
 <tr>
 <td>$\mathrm{SO}^{+}(2,1)$</td>

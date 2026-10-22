@@ -71,12 +71,12 @@
 <p>The product is <em>The t-Product of Reduced Biquaternion Tensors</em>, the decomposition is <em>The Singular Value Decomposition of a Reduced Biquaternion Tensor</em>, and the conjugate transpose is the bar-transpose fixed there. The matrix counterpart is the Moore-Penrose inverse of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>; the equations that use the inverse are <em>Tensor Equations over the Reduced Biquaternions</em>.</p>
 <p>The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion tensors and applications in color video processing", Section 4.</p>
 <h2 id="the-definition">The Definition</h2>
-<p>Let $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$. A tensor $X\in\mathbb{B}_{\mathrm r}^{n_2\times n_1\times n_3}$ is a <strong>Moore-Penrose inverse</strong> of $A$ if</p>
+<p>Let $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$. A tensor $X\in\mathbb{B}_{\mathrm{r}}^{n_2\times n_1\times n_3}$ is a <strong>Moore-Penrose inverse</strong> of $A$ if</p>
 <p>$$
 A\ast X\ast A=A,\qquad X\ast A\ast X=X,\qquad (A\ast X)^{\mathsf H}=A\ast X,\qquad (X\ast A)^{\mathsf H}=X\ast A.
 $$</p>
 <p>These are the four <strong>Penrose equations</strong>, written with the t-product and the conjugate transpose of the branch. The inverse is written $A^\dagger$.</p>
-<p><strong>Theorem (existence and uniqueness).</strong> Every $A\in\mathbb{B}_{\mathrm r}^{n_1\times n_2\times n_3}$ has exactly one Moore-Penrose inverse.</p>
+<p><strong>Theorem (existence and uniqueness).</strong> Every $A\in\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ has exactly one Moore-Penrose inverse.</p>
 <p><em>Proof.</em> Write $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$. The product, the conjugate transpose and the idempotents act coordinatewise, so the four equations are equivalent to the two complex t-product Penrose systems</p>
 <p>$$
 A_{(i)}\ast X_{(i)}\ast A_{(i)}=A_{(i)},\quad
@@ -96,11 +96,11 @@ $$</p>
 s^\dagger=s_{(1)}^\dagger\Pi_++s_{(2)}^\dagger\Pi_-,\qquad
 z^\dagger=\begin{cases}1/z,&z\neq0,\\0,&z=0,\end{cases}
 $$</p>
-<p>for $s\in\mathbb{B}_{\mathrm r}$ and $z\in\mathbb{C}$. This is the scalar Moore-Penrose inverse with respect to the bar conjugation; it satisfies $ss^\dagger s=s$, $s^\dagger ss^\dagger=s^\dagger$, and $ss^\dagger$ and $s^\dagger s$ are each $0$ or $1$ in each idempotent coordinate. Then</p>
+<p>for $s\in\mathbb{B}_{\mathrm{r}}$ and $z\in\mathbb{C}$. This is the scalar Moore-Penrose inverse with respect to the bar conjugation; it satisfies $ss^\dagger s=s$, $s^\dagger ss^\dagger=s^\dagger$, and $ss^\dagger$ and $s^\dagger s$ are each $0$ or $1$ in each idempotent coordinate. Then</p>
 <p>$$
 A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}.
 $$</p>
-<p><strong>Remark (the inversion is in the transform).</strong> The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm r}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. <strong>The reciprocal-or-zero is taken on the transform slices</strong>, as in the display.</p>
+<p><strong>Remark (the inversion is in the transform).</strong> The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm{r}}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. <strong>The reciprocal-or-zero is taken on the transform slices</strong>, as in the display.</p>
 <p><em>Proof of the formula.</em> In the transform, $S$ is f-diagonal, so the four Penrose equations for $S$ and $S^\dagger$ reduce to the scalar equations on each diagonal entry of each slice; hence $S^\dagger$ is the Moore-Penrose inverse of $S$. For unitary $U,V$, the four equations for $A=U\ast S\ast V^{\mathsf H}$ and $X=V\ast S^\dagger\ast U^{\mathsf H}$ follow by cancellation:</p>
 <p>$$
 A\ast X\ast A=U\ast S\ast S^\dagger\ast S\ast V^{\mathsf H}=U\ast S\ast V^{\mathsf H}=A,

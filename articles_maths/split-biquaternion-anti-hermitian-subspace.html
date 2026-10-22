@@ -68,7 +68,7 @@
         <h1 id="split-biquaternion-anti-hermitian-subspace"><strong>Split-Biquaternion Anti-Hermitian Subspace</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, the fixed space of anti-Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that carries it into $\mathbb{M}_+$, the Lie structure it acquires under the commutator, the forms on it, its roots of $-1$, the action of the four involutions and its intersections with the other subspaces. Its complementary partner $\mathbb{M}_+$ is treated in <em>Split-Biquaternion Hermitian Subspace</em>; the comparative tables are in <em>Split-Biquaternion Relations Between Subspaces</em> and <em>Split-Biquaternion Involution Lattice</em>.</p>
-<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The <strong>anti-Hermitian subspace</strong> is the fixed space of anti-Hermitian conjugation,</p>
 <p>$$
@@ -135,9 +135,9 @@ $$</p>
 $$</p>
 <p>of signature $(4,0)$.</p>
 <p><strong>Proof.</strong> Substituting $Q_t = j r_0$ and $Q_k = q_k$ in $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ gives $r_0^2 + \sum_k q_k^2$, because $(j r_0)^2 = j^2 r_0^2 = +r_0^2$.</p>
-<p>Here the split-biquaternion norm is definite exactly as on $\mathbb{M}_+$; the difference from the Hermitian subspace appears in the Hermitian form, not the split-biquaternion norm.</p>
-<h3 id="the-hermitian-form-and-its-isotropic-cone">The Hermitian Form and Its Isotropic Cone</h3>
-<p>The Hermitian form has scalar part $\sum_\mu (q_\mu^2 - q'^2_\mu)$, which on $\mathbb{M}_-$ is</p>
+<p>Here the split-biquaternion norm is definite exactly as on $\mathbb{M}_+$; the difference from the Hermitian subspace appears in the Hermitian norm, not the split-biquaternion norm.</p>
+<h3 id="the-hermitian-norm-and-its-isotropic-cone">The Hermitian Norm and Its Isotropic Cone</h3>
+<p>The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$, which on $\mathbb{M}_-$ is</p>
 <p>$$
 \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = -r_0^2 + q_x^2 + q_y^2 + q_z^2,
 $$</p>
@@ -272,12 +272,12 @@ $$</p>
 <td>The four conjugations</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q}\rangle_{\natural} = r_0^2 + |\vec q|^2$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = r_0^2 + \lvert\vec q\rvert^2$</td>
 <td>Norm on $\mathbb{M}_-$, signature $(4,0)$</td>
 </tr>
 <tr>
-<td>$\sum_\mu (q_\mu^2 - q'^2_\mu)$</td>
-<td>Scalar part of the Hermitian form, signature $(3,1)$ on $\mathbb{M}_-$</td>
+<td>$\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$</td>
+<td>Hermitian norm, signature $(3,1)$ on $\mathbb{M}_-$</td>
 </tr>
 <tr>
 <td>$\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$</td>
@@ -297,7 +297,7 @@ $$</p>
 </tr>
 <tr>
 <td>$r_0^2 = q_x^2 + q_y^2 + q_z^2$</td>
-<td>Isotropic cone of the Hermitian form</td>
+<td>Isotropic cone of the Hermitian norm</td>
 </tr>
 <tr>
 <td>$SO(1,3)$</td>

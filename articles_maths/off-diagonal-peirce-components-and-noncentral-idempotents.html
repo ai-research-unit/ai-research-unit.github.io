@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off-Diagonal Peirce Components and Noncentral Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="off-diagonal-peirce-components-and-noncentral-idempotents"><strong>Off-Diagonal Peirce Components and Noncentral Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An idempotent $e$ in a unital associative algebra splits the algebra into four corners: the two diagonal corners $eAe$ and $(1-e)A(1-e)$, which are algebras, and the two off-diagonal corners $eA(1-e)$ and $(1-e)Ae$, which are bimodules. The diagonal part is the centraliser of $e$; the off-diagonal part is the set of elements that fail to commute with $e$. This article studies the off-diagonal part as the precise measure of the noncentrality of $e$.</p>
+<p>The article assumes the Peirce decomposition of <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>, and the centraliser theorem of <em>The Centraliser and the Diagonal Peirce Part</em>. The commutator operator is <em>The Commutator Operator</em>; the ideals and quotients are <em>Ideals and Quotients of Algebras</em>; the biquaternion example is <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>. The primitive idempotents and the minimal left ideals are treated in <em>List of Rings by Their Idempotents</em> and <em>Simple and Semisimple Modules</em>; this article does not use them. The base is a field $k$ and $A$ is a finite-dimensional unital associative $k$-algebra. The idempotent $e \in A$ is arbitrary, and $f = 1_A - e$.</p>
+<p>The main point is a warning about language. The off-diagonal part measures the failure of $e$ to be central, not the failure of $A$ to be commutative. A nonzero off-diagonal part forces $A$ to be noncommutative, but a noncommutative algebra can have idempotents with a zero off-diagonal part, and a commutative algebra has no other kind. The article separates the two notions carefully.</p>
+<h2 id="the-four-corners">The Four Corners</h2>
+<h3 id="the-peirce-decomposition">The Peirce decomposition</h3>
+<p>Let $e \in A$ be an idempotent, $e^2 = e$, and let $f = 1_A - e$. Then $f$ is also an idempotent, $e f = f e = 0$, and $e + f = 1_A$. Every $x \in A$ has the expansion</p>
+<p>$$
+x = (e+f)x(e+f) = exe + exf + fxe + fxf .
+$$</p>
+<p>The four summands lie in the four subspaces</p>
+<p>$$
+eAe, \qquad eAf, \qquad fAe, \qquad fAf,
+$$</p>
+<p>and the sum is direct. Indeed, if $x = x_{00} + x_{01} + x_{10} + x_{11}$ with $x_{ij} \in e_i A e_j$ (where $e_0 = e$ and $e_1 = f$), then multiplying by $e$ or $f$ on the left and on the right isolates each summand. This is the <strong>Peirce decomposition</strong> of $A$ relative to $e$:</p>
+<p>$$
+A = eAe \oplus eAf \oplus fAe \oplus fAf .
+$$</p>
+<p>The decomposition is the $r=2$ case of the two-sided Peirce decomposition of <em>The Eigenvalue Decomposition of an Element</em>, with the complete orthogonal family $e, f$ and the eigenvalues $1, 0$.</p>
+<h3 id="the-multiplication-table">The multiplication table</h3>
+<p>The four corners multiply according to the rule</p>
+<p>$$
+(e_i A e_j)(e_k A e_l) \subseteq \delta_{jk}\, e_i A e_l, \qquad i,j,k,l \in \{0,1\},
+$$</p>
+<p>with $e_0 = e$ and $e_1 = f$. In words: a product of two corners is nonzero only when the right index of the first equals the left index of the second, and then the result lies in the corner with the outer indices. The rule is the associativity of $A$ together with $e^2=e$, $f^2=f$ and $ef=fe=0$.</p>
+<p>The rule has several consequences.</p>
+<ul>
+<li>The <strong>diagonal corners</strong> $eAe$ and $fAf$ are algebras with identities $e$ and $f$ respectively. They are not unital subalgebras of $A$ in the sense of sharing $1_A$, unless the corner is zero; their identities are $e$ and $f$.</li>
+<li>The <strong>mixed corners</strong> $eAf$ and $fAe$ are bimodules over the diagonal corners: $eAe$ acts on $eAf$ on the left, $fAf$ acts on it on the right, and similarly for $fAe$.</li>
+<li>Each mixed corner <strong>squares to zero</strong>: $(eAf)(eAf) = eA f e A f = 0$, and similarly $(fAe)^2 = 0$.</li>
+<li>The product of the two mixed corners lands in the diagonal corners: $(eAf)(fAe) \subseteq eAe$ and $(fAe)(eAf) \subseteq fAf$.</li>
+</ul>
+<h3 id="the-diagonal-and-off-diagonal-parts">The diagonal and off-diagonal parts</h3>
+<p>Define</p>
+<p>$$
+D = eAe \oplus fAf, \qquad N = eAf \oplus fAe .
+$$</p>
+<p>The subspace $D$ is the <strong>diagonal Peirce part</strong> and $N$ is the <strong>off-diagonal Peirce part</strong>. Then $A = D \oplus N$ as $k$-vector spaces.</p>
+<p>The diagonal part is a unital subalgebra of $A$: it contains $1_A = e + f$, and $D \cdot D \subseteq D$ by the multiplication table. The off-diagonal part is a $D$-bimodule, and</p>
+<p>$$
+N^2 \subseteq D,
+$$</p>
+<p>because the two mixed corners multiply into the diagonal corners. This is the $r=2$ case of the general statement of <em>The Centraliser and the Diagonal Peirce Part</em>; for $r \ge 3$ the square of the off-diagonal part can have off-diagonal components, but here there are only two indices and the product of two mixed corners is diagonal.</p>
+<p>The projection onto the diagonal part along $N$ is</p>
+<p>$$
+\pi : A \longrightarrow D, \qquad \pi(x) = exe + fxf .
+$$</p>
+<p>It is unital, $D$-bimodule linear, and idempotent. It is multiplicative if and only if $N^2 = 0$, by the computation of <em>The Centraliser and the Diagonal Peirce Part</em>: for $x = \pi(x) + n_x$ and $y = \pi(y) + n_y$, one has</p>
+<p>$$
+\pi(xy) = \pi(x)\pi(y) + n_x n_y,
+$$</p>
+<p>and $n_x n_y \in N^2 \subseteq D$, so the obstruction is exactly the product of the off-diagonal parts.</p>
+<h2 id="the-commutator-interpretation">The Commutator Interpretation</h2>
+<h3 id="the-off-diagonal-part-as-a-commutator">The off-diagonal part as a commutator</h3>
+<p>The commutator of $e$ with $x$ is</p>
+<p>$$
+[e,x] = ex - xe = (exe + exf) - (exe + fxe) = exf - fxe .
+$$</p>
+<p>The diagonal terms cancel, and the result lies in $N = eAf \oplus fAe$. Conversely, every element of $N$ is a commutator with $e$:</p>
+<p>$$
+[e, eaf] = e(eaf) - (eaf)e = eaf, \qquad [e, fae] = e(fae) - (fae)e = -fae .
+$$</p>
+<p>Therefore</p>
+<p>$$
+[e,A] = N .
+$$</p>
+<p>The off-diagonal part is exactly the image of the inner derivation $\operatorname{ad}_e(x) = [e,x]$. Its kernel is the centraliser</p>
+<p>$$
+C(e) = \{x : ex = xe\} = D,
+$$</p>
+<p>which is the diagonal part. This is the $r=2$ case of the theorem of <em>The Centraliser and the Diagonal Peirce Part</em>: the centraliser of an idempotent is its diagonal Peirce part.</p>
+<h3 id="the-eigenspaces-of-the-commutator">The eigenspaces of the commutator</h3>
+<p>The map $\operatorname{ad}_e$ acts on the four corners by</p>
+<p>$$
+\operatorname{ad}_e(eae) = 0, \quad \operatorname{ad}_e(faf) = 0, \quad \operatorname{ad}_e(eaf) = eaf, \quad \operatorname{ad}_e(fae) = -fae .
+$$</p>
+<p>Thus $A$ is the direct sum of the eigenspaces of $\operatorname{ad}_e$ for the eigenvalues $0, 1, -1$:</p>
+<p>$$
+A = \underbrace{fAe}_{-1} \oplus \underbrace{(eAe \oplus fAf)}_{0} \oplus \underbrace{eAf}_{+1} .
+$$</p>
+<p>On the diagonal part, $\operatorname{ad}_e = 0$; on the off-diagonal part, $\operatorname{ad}_e^2 = \mathrm{id}$. Hence $\operatorname{ad}_e^2$ is the projection onto $N$ with kernel $D$, and</p>
+<p>$$
+\pi = 1_A - \operatorname{ad}_e^2 .
+$$</p>
+<p>The Peirce decomposition is therefore the eigenspace decomposition of the inner derivation $\operatorname{ad}_e$, and the diagonal projection is the spectral projection of $\operatorname{ad}_e$ for the eigenvalue $0$. The eigenvalues $+1$ and $-1$ are the two off-diagonal directions.</p>
+<h3 id="the-grading">The grading</h3>
+<p>The eigenspace decomposition can be read as a $\mathbb{Z}$-grading. Put</p>
+<p>$$
+A_{-1} = fAe, \qquad A_0 = eAe \oplus fAf, \qquad A_1 = eAf .
+$$</p>
+<p>Then</p>
+<p>$$
+A = A_{-1} \oplus A_0 \oplus A_1, \qquad A_p A_q \subseteq A_{p+q},
+$$</p>
+<p>with $A_p = 0$ for $|p| > 1$. The multiplication table verifies the grading: $A_1 A_1 = 0 = A_2$, $A_{-1} A_{-1} = 0 = A_{-2}$, $A_1 A_{-1} \subseteq A_0$, $A_{-1} A_1 \subseteq A_0$, and $A_0$ acts on $A_{\pm 1}$ by left and right multiplication. The Peirce decomposition is the graded decomposition of $A$ by the eigenvalues of $\operatorname{ad}_e$, with the degree $p$ equal to the eigenvalue.</p>
+<p>The grading is a property of the single idempotent $e$. It does not extend to the family of eigenprojectors of a general split separable element with more than two eigenvalues: there the off-diagonal part is a sum over pairs and the product of two off-diagonal pieces can have a third index, as explained in <em>The Centraliser and the Diagonal Peirce Part</em>.</p>
+<h2 id="central-versus-noncentral-idempotents">Central versus Noncentral Idempotents</h2>
+<h3 id="the-central-case">The central case</h3>
+<p>The following conditions are equivalent:</p>
+<ol>
+<li>$e$ is central, $e \in Z(A)$;</li>
+<li>$eA = Ae$;</li>
+<li>$eAf = 0$ and $fAe = 0$;</li>
+<li>$N = 0$;</li>
+<li>$A = D = eAe \oplus fAf$;</li>
+<li>$A \cong Ae \times Af$ as algebras.</li>
+</ol>
+<p>The equivalence of 1 and 2 is the definition of centrality. If $e$ is central, then $eaf = aef = 0$ and $fae = fea = 0$. More directly, $eA = Ae$ implies $eAf = Ae f = 0$ and $fAe = f e A = 0$. Conversely, if $eAf = 0$ and $fAe = 0$, then for every $x$,</p>
+<p>$$
+ex = e x e + e x f = e x e, \qquad xe = e x e + f x e = e x e,
+$$</p>
+<p>so $ex = xe$. If $N = 0$, then $A = D$, and the computation above shows $e$ is central. If $e$ is central, the map $a \mapsto (ae, af)$ is an isomorphism $A \to Ae \times Af$ with inverse $(u,v) \mapsto u+v$, because $u = ae$ and $v = af$ satisfy $uv = a e a' f = a a' e f = 0$. The converse is the product decomposition: in $A = B \times C$, the idempotent $(1_B,0)$ is central.</p>
+<p>In the central case the Peirce decomposition is a product decomposition. The idempotent splits the algebra into two independent factors, and the off-diagonal part vanishes. This is the case treated in <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>, in the corollary that a central idempotent splits the algebra.</p>
+<h3 id="the-noncentral-case">The noncentral case</h3>
+<p>If $e$ is not central, then $N \neq 0$: some element fails to commute with $e$, and the commutator $[e,x]$ is a nonzero element of $N$. The Peirce decomposition is then not a product decomposition. The diagonal part $D$ is a subalgebra, but it is not an ideal; the off-diagonal part $N$ is a $D$-bimodule, but it is not a subalgebra and need not be an ideal.</p>
+<p>The two-sided ideal generated by $e$ is</p>
+<p>$$
+AeA = eAe \oplus eAf \oplus fAe,
+$$</p>
+<p>that is, the sum of the three corners other than $fAf$. Equivalently, $AeA = D \oplus N$ with the summand $fAf$ removed. Thus</p>
+<p>$$
+A = AeA \oplus fAf
+$$</p>
+<p>as $k$-vector spaces. The corner $fAf$ is both a subalgebra of $A$ and a quotient of $A$: the map</p>
+<p>$$
+\varphi : A \longrightarrow fAf, \qquad \varphi(a) = faf,
+$$</p>
+<p>has kernel exactly $AeA$, and it is multiplicative modulo its kernel. The induced map</p>
+<p>$$
+A/AeA \;\cong\; fAf
+$$</p>
+<p>is an isomorphism of $k$-algebras. The proof of multiplicativity modulo the kernel is the computation</p>
+<p>$$
+\varphi(ab) - \varphi(a)\varphi(b) = f a b f - f a f b f = f a (1-f) b f = f a e b f \in fAeAf \subseteq AeA,
+$$</p>
+<p>where the last inclusion uses that $AeA$ is an ideal. The map $\varphi$ itself is not multiplicative in general; only the quotient map is.</p>
+<p>The ideal $AeA$ is proper whenever $e \neq 1_A$, because $fAf \neq 0$ for $f \neq 0$. Thus a nontrivial idempotent generates a proper two-sided ideal, and the quotient is the opposite corner. This is the first step in the structure theory of finite-dimensional algebras: the primitive idempotents are those for which the corner $eAe$ has no nontrivial idempotents (it is a local ring in the finite-dimensional case, and a division algebra in the semisimple case), and the minimal left ideals are the corresponding $Ae$.</p>
+<h3 id="the-off-diagonal-part-as-a-measure-of-noncentrality">The off-diagonal part as a measure of noncentrality</h3>
+<p>The off-diagonal part $N$ measures the failure of $e$ to be central. It does not measure the failure of $A$ to be commutative. The logical relations are:</p>
+<ul>
+<li>If $A$ is commutative, then every idempotent is central, so $N = 0$ for every $e$.</li>
+<li>If $N \neq 0$, then $A$ is not commutative. This is the contrapositive of the previous point.</li>
+<li>If $N = 0$, then $A$ need not be commutative. The algebra $M_2(k) \times M_2(k)$ with $e = (1,0)$ is noncommutative, and $e$ is central. The idempotents $0$ and $1$ in any noncommutative algebra are central. So a zero off-diagonal part is compatible with noncommutativity.</li>
+</ul>
+<p>In one sentence: $N \neq 0$ is a sufficient witness of noncommutativity, but it is exactly the failure of centrality of $e$, and centrality is stronger than commutativity of the ambient algebra. The article's title uses "noncentral idempotents" for this reason; "noncommutativity" would overstate what $N$ detects.</p>
+<p>The dimension of $N$ is a quantitative measure of the noncentrality. In a matrix algebra it is $2k(n-k)$ for an idempotent of rank $k$, which is zero exactly at the central idempotents $k=0$ and $k=n$ and is maximal at $k=n/2$. In a general algebra the dimension of $N$ is the defect of the centraliser, $\dim N = \dim A - \dim C(e)$.</p>
+<h2 id="the-matrix-case">The Matrix Case</h2>
+<h3 id="the-corners-of-a-rank-math213-idempotent">The corners of a rank-$k$ idempotent</h3>
+<p>Let $A = M_n(k)$ and let $e$ be an idempotent of rank $k$. After conjugating by an invertible matrix, $e = \operatorname{diag}(I_k, 0)$, and the four corners are</p>
+<p>$$
+eAe \cong M_k(k), \qquad fAf \cong M_{n-k}(k), \qquad eAf \cong M_{k,n-k}(k), \qquad fAe \cong M_{n-k,k}(k).
+$$</p>
+<p>Their dimensions are $k^2$, $(n-k)^2$, $k(n-k)$ and $k(n-k)$, and their sum is $n^2$. The diagonal part has dimension $k^2 + (n-k)^2$, and the off-diagonal part has dimension</p>
+<p>$$
+\dim N = 2k(n-k).
+$$</p>
+<p>The off-diagonal part vanishes exactly when $k = 0$ or $k = n$, that is, exactly when $e = 0$ or $e = 1$; these are the only central idempotents of $M_n(k)$. For $0 < k < n$, the idempotent is noncentral and $N \neq 0$.</p>
+<h3 id="the-square-of-the-off-diagonal-part">The square of the off-diagonal part</h3>
+<p>For $0 < k < n$, the two mixed corners multiply onto the full diagonal corners:</p>
+<p>$$
+eAf \cdot fAe = eAe, \qquad fAe \cdot eAf = fAf .
+$$</p>
+<p>Hence</p>
+<p>$$
+N^2 = eAe \oplus fAf = D \neq 0 .
+$$</p>
+<p>The diagonal projection $\pi$ is therefore not multiplicative. It is the projection of a matrix onto its two diagonal blocks; the product of two off-diagonal blocks can be a nonzero diagonal block, and the projection of the product differs from the product of the projections.</p>
+<p>The off-diagonal part is not an ideal when $0 < k < n$: if it were an ideal, then $N^2 \subseteq N \cap D = 0$, contradicting $N^2 = D \neq 0$. The ideal generated by $e$ is the set of matrices whose $fAf$ block is zero, and the quotient is $fAf \cong M_{n-k}(k)$.</p>
+<h3 id="the-extremal-ranks">The extremal ranks</h3>
+<ul>
+<li><strong>Rank zero or full rank.</strong> $e = 0$ or $e = 1$. The off-diagonal part is zero, the idempotent is central, and the Peirce decomposition is the trivial one. In $M_n(k)$ these are the only central idempotents, because a central idempotent is a scalar idempotent and the only scalar idempotents in a field are $0$ and $1$.</li>
+<li><strong>Rank one.</strong> $k = 1$. The off-diagonal part has dimension $2(n-1)$: the first row and the first column off the diagonal. The ideal $AeA$ is the set of matrices with the bottom-right $(n-1) \times (n-1)$ block zero, and the quotient is $M_{n-1}(k)$. The corner $eAe$ is one-dimensional, so the left ideal $Ae$ is minimal (and the right ideal $eA$ is minimal on the right); $e$ is a primitive idempotent. This is treated in <em>Simple and Semisimple Modules</em>.</li>
+<li><strong>Half rank.</strong> $k = n/2$ for even $n$. The off-diagonal part has the maximal dimension $n^2/2$, equal to the dimension of the diagonal part. The two mixed blocks are square and as large as possible.</li>
+</ul>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p>Let $\mathbb{B} \cong M_2(\mathbb{C})$ be the biquaternion algebra, and let $\Pi_+$ be the idempotent of the Peirce decomposition of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>. In the matrix model, $\Pi_+$ is a rank-one projection, conjugate to $\operatorname{diag}(1,0)$. The four corners are one-dimensional:</p>
+<p>$$
+\Pi_+ \mathbb{B} \Pi_+ \cong \mathbb{C}, \qquad \Pi_- \mathbb{B} \Pi_- \cong \mathbb{C}, \qquad \Pi_+ \mathbb{B} \Pi_- \cong \mathbb{C}, \qquad \Pi_- \mathbb{B} \Pi_+ \cong \mathbb{C},
+$$</p>
+<p>with $\Pi_- = 1 - \Pi_+$. The diagonal part is two-dimensional and commutative, the off-diagonal part is two-dimensional, and $N^2 = D$. The off-diagonal directions are the two nilpotent directions that mix the two Peirce components; they are the biquaternion analogue of the strictly upper and strictly lower triangular matrix units. The idempotent $\Pi_+$ is not central, because the two components of the biquaternion algebra are not independent under the full multiplication; the Peirce decomposition is not a product decomposition.</p>
+<p>The example is the smallest noncommutative case: the algebra is four-dimensional over $\mathbb{C}$, the diagonal part is two-dimensional, and the off-diagonal part is two-dimensional. The failure of centrality is visible in the two nilpotent directions, and the quotient $\mathbb{B}/\mathbb{B}\Pi_+\mathbb{B}$ is one-dimensional, isomorphic to the corner $\Pi_-\mathbb{B}\Pi_-$.</p>
+<h2 id="summary">Summary</h2>
+<p>An idempotent $e$ with $f = 1-e$ gives the Peirce decomposition</p>
+<p>$$
+A = eAe \oplus eAf \oplus fAe \oplus fAf,
+$$</p>
+<p>with diagonal part $D = eAe \oplus fAf$ and off-diagonal part $N = eAf \oplus fAe$. The diagonal part is a unital subalgebra, the off-diagonal part is a $D$-bimodule, and $N^2 \subseteq D$. The centraliser of $e$ is $C(e) = D$, and the image of the inner derivation $\operatorname{ad}_e$ is $N$: the off-diagonal part is exactly the set of commutators $[e,x]$. The Peirce decomposition is the eigenspace decomposition of $\operatorname{ad}_e$ for the eigenvalues $0, +1, -1$, equivalently the $\mathbb{Z}$-grading with $A_{-1} = fAe$, $A_0 = D$, $A_1 = eAf$.</p>
+<p>The idempotent $e$ is central if and only if $N = 0$, if and only if $A \cong Ae \times Af$. In that case the Peirce decomposition is a product decomposition. If $e$ is noncentral, $N \neq 0$, the decomposition is not a product, and the ideal $AeA = eAe \oplus eAf \oplus fAe$ is proper, with quotient $A/AeA \cong fAf$. The corner $fAf$ is both a subalgebra and a quotient.</p>
+<p>The off-diagonal part measures noncentrality, not noncommutativity. A nonzero $N$ forces $A$ to be noncommutative, but a noncommutative algebra can have a central idempotent with $N = 0$ (for example $M_2(k) \times M_2(k)$ with $e = (1,0)$), and a commutative algebra has only central idempotents. In $M_n(k)$ with $e$ of rank $k$, $\dim N = 2k(n-k)$, the off-diagonal part vanishes exactly at $k=0,n$, and $N^2 = D \neq 0$ for $0<k<n$. The biquaternion algebra with a rank-one idempotent is the smallest noncommutative example: two diagonal directions and two off-diagonal nilpotent directions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e$</td>
+<td>An idempotent, $e^2 = e$</td>
+</tr>
+<tr>
+<td>$f$</td>
+<td>$1_A - e$, the complementary idempotent</td>
+</tr>
+<tr>
+<td>$eAe$, $fAf$</td>
+<td>The diagonal corners, algebras with identities $e$ and $f$</td>
+</tr>
+<tr>
+<td>$eAf$, $fAe$</td>
+<td>The mixed corners, bimodules over the diagonal corners</td>
+</tr>
+<tr>
+<td>$D = eAe \oplus fAf$</td>
+<td>The diagonal Peirce part; equal to $C(e)$</td>
+</tr>
+<tr>
+<td>$N = eAf \oplus fAe$</td>
+<td>The off-diagonal Peirce part; equal to $[e,A]$</td>
+</tr>
+<tr>
+<td>$\pi(x) = exe + fxf$</td>
+<td>The projection onto $D$ along $N$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_e(x) = ex - xe$</td>
+<td>The inner derivation; $\ker \operatorname{ad}_e = D$, $\operatorname{im} \operatorname{ad}_e = N$</td>
+</tr>
+<tr>
+<td>$A_{-1} = fAe$, $A_0 = D$, $A_1 = eAf$</td>
+<td>The $\mathbb{Z}$-grading by the eigenvalues of $\operatorname{ad}_e$</td>
+</tr>
+<tr>
+<td>$AeA$</td>
+<td>The two-sided ideal generated by $e$, equal to $eAe \oplus eAf \oplus fAe$</td>
+</tr>
+<tr>
+<td>$A/AeA \cong fAf$</td>
+<td>The corner as a quotient</td>
+</tr>
+<tr>
+<td>$k$</td>
+<td>In $M_n(k)$, the rank of $e$; $\dim N = 2k(n-k)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the corner algebras.</li>
+<li>Yurij A. Drozd and Vladimir V. Kirichenko, <em>Finite Dimensional Algebras</em> (Springer, 1994), for the Peirce decomposition, the ideal $AeA$ and the quotient $A/AeA \cong fAf$.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the idempotent $e$, the corner $eAe$, the ideal $AeA$ and the quotient.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for central idempotents, product decompositions and the structure of matrix rings.</li>
+<li>Nicolas Bourbaki, <em>Algèbre</em>, Chapitre VII, for the Peirce decomposition and the graded structure attached to an idempotent.</li>
+<li>The corpus article <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>, for the explicit biquaternion Peirce decomposition used in §<em>The Biquaternion Case</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
