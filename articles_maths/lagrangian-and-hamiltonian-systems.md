@@ -70,7 +70,7 @@ and with $T=\tfrac12\sum_am_a\lvert\,d\vec r_{a}/dt\rvert^2$ the identities $\pa
 **Theorem (the Lagrange–d'Alembert equations).** Let the constraints be $A^a_j(q)dq^{j}/dt=0$, $a=1,\dots,\kappa$, with the rows of $A$ independent, so that the admissible virtual displacements are the vectors with $A^a_j\delta q^j=0$. Then D'Alembert's principle is equivalent to
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial\left(dq^{j}/dt\right)}-\frac{\partial L}{\partial q^j} = \lambda_aA^a_j , \qquad A^a_jdq^{j}/dt=0 ,
+\boxed{\;\frac{d}{dt}\frac{\partial L}{\partial\left(dq^{j}/dt\right)}-\frac{\partial L}{\partial q^j} = \lambda_aA^a_j , \qquad A^a_jdq^{j}/dt=0\;} ,
 $$
 
 the $\lambda_a$ being functions of $t$ determined together with the solution.
@@ -159,7 +159,7 @@ $$
 is well defined, and a curve $q$ satisfies the Euler–Lagrange equations of $L$ if and only if the curve $(q,p)=(\mathbb{F}L)(q,dq/dt)$ satisfies **Hamilton's equations**
 
 $$
-dq^{i}/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q^i} .
+\boxed{\;dq^{i}/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q^i}\;} .
 $$
 
 *Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $dq/dt$; the envelope theorem gives $\partial H/\partial p_i=dq^{i}/dt$ and $\partial H/\partial q^i = -\partial L/\partial q^i$, so that $dp_{i}/dt = \frac{d}{dt}\partial L/\partial\left(dq^{i}/dt\right)=\partial L/\partial q^i=-\partial H/\partial q^i$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,dq/dt)$ to $(q,p)$ a diffeomorphism.
@@ -316,7 +316,7 @@ The bracket turns the differential equations of the flow into an algebraic state
 **Theorem (the bracket formulation).** Along the flow of $X_H$, a smooth function $g(q,p,t)$ satisfies
 
 $$
-\frac{d}{dt}g = \{g,H\} + \frac{\partial g}{\partial t} ,
+\boxed{\;\frac{d}{dt}g = \{g,H\} + \frac{\partial g}{\partial t}\;} ,
 $$
 
 so that $g$ is a constant of the motion if and only if $\{g,H\}+\partial g/\partial t=0$; when $g$ has no explicit time dependence the condition is $\{g,H\}=0$.

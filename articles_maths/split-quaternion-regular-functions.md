@@ -21,8 +21,8 @@ The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial/\partial\bar A, \
 $$
 \boxed{\;
 \nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) e_t
-\;}
-$$.
+\;}.
+$$
 
 The second-order operator $\Box$ is the **ultrahyperbolic operator** of signature $(2,2)$: a wave operator, not a Laplacian. This single sign difference from the quaternion and biquaternion cases governs the whole of the regularity theory below.
 
@@ -55,8 +55,8 @@ hold. This is the **split-quaternion Cauchy–Riemann system**, four scalar equa
 $$
 \boxed{\;
 s(\xi)\,s^{\natural}(\xi) = \xi_t^2 + \xi_x^2 - \xi_y^2 - \xi_z^2 = \langle \xi\rangle_{\natural} e_t
-\;}
-$$,
+\;},
+$$
 
 which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy–Riemann system is **not elliptic**: it is of ultrahyperbolic (wave) type, and its characteristic variety is exactly the null cone $\mathcal{N}$, the same set that carries the zero divisors.
 
@@ -89,8 +89,8 @@ which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}_{
 $$
 \boxed{\;
 \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) F = 0
-\;}
-$$.
+\;}.
+$$
 
 Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial^2/\partial A\partial\bar A = \tfrac14 \Delta$ in one complex variable.
 

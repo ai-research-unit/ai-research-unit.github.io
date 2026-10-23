@@ -60,7 +60,7 @@ the **unitary slice**, of real dimension four, with determinant-one part $\mathr
 
 **Theorem (Sylvester's law of inertia).** Congruence preserves the inertia:
 
-$$\boxed{H' = S^{*}HS,\ S\in\mathbb{B}^{\times}\quad\Longrightarrow\quad \mathrm{inertia}(H')=\mathrm{inertia}(H).}$$
+$$\boxed{\; H' = S^{*}HS,\ S\in\mathbb{B}^{\times}\quad\Longrightarrow\quad \mathrm{inertia}(H')=\mathrm{inertia}(H) \;}.$$
 
 Moreover every Hermitian $\langle\cdot,\cdot\rangle_{*}$ is congruent to the **normal form**
 

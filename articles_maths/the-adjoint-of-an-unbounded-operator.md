@@ -35,7 +35,7 @@ and for such a $y$ the vector $T^*y$ is the unique $z$ with $\langle Tx,y\rangle
 **Proposition (the adjoint is closed and involutive on the closure).** The adjoint $T^*$ is closed, and
 
 $$
-T\subseteq T^{**},\qquad \overline T=T^{**} ,
+\boxed{\;T\subseteq T^{**},\qquad \overline T=T^{**}\;} ,
 $$
 
 the second identity holding exactly when $T$ is closable; in that case $T^{**}$ is the smallest closed extension of $T$, and $(T^*)^*=T$ for a closed $T$.
@@ -47,7 +47,7 @@ the second identity holding exactly when $T$ is closable; in that case $T^{**}$ 
 **Theorem (graph relation).** For a densely defined $T$,
 
 $$
-\Gamma(T^*)=\Gamma(-T)^{\perp}\subseteq H\oplus H ,
+\boxed{\;\Gamma(T^*)=\Gamma(-T)^{\perp}\subseteq H\oplus H\;} ,
 $$
 
 where the orthogonal complement is taken in the inner product $\langle(x,y),(x',y')\rangle=\langle x,x'\rangle+\langle y,y'\rangle$.
@@ -61,7 +61,7 @@ where the orthogonal complement is taken in the inner product $\langle(x,y),(x',
 (ii) $T$ is self-adjoint if and only if
 
 $$
-H\oplus H=\Gamma(T)\oplus U\Gamma(T).
+\boxed{\;H\oplus H=\Gamma(T)\oplus U\Gamma(T)\;}.
 $$
 
 *Proof.* Since $U\Gamma(T)=\Gamma(-T)$ and $U$ is unitary, the theorem is $\Gamma(T^*)=U\Gamma(T)^{\perp}$; taking orthogonal complements and applying $U$ gives $U\Gamma(T^*)^{\perp}=\overline{\Gamma(T)}$, which is (i). For (ii), $\Gamma(T)$ and $U\Gamma(T)$ are orthogonal exactly when $\langle Tx,y\rangle=\langle x,Ty\rangle$ for all $x,y\in D(T)$, that is when $T$ is symmetric; the sum is all of $H\oplus H$ exactly when the orthogonal complement of $U\Gamma(T)$ is $\Gamma(T)$, which by the graph relation is the statement $\Gamma(T^*)=\Gamma(T)$, that is self-adjointness.

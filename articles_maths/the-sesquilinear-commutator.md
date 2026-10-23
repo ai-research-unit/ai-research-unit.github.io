@@ -33,7 +33,7 @@ $$
 **Theorem (the scalars of the bracket).** For all $\lambda\in R$ and all $x,y\in A$,
 
 $$
-[\lambda x,y]_{\varsigma}=\lambda\,(x\star y)-\varsigma(\lambda)\,(y\star x), \qquad [x,\lambda y]_{\varsigma}=\varsigma(\lambda)\,(x\star y)-\lambda\,(y\star x),
+\boxed{\;[\lambda x,y]_{\varsigma}=\lambda\,(x\star y)-\varsigma(\lambda)\,(y\star x), \qquad [x,\lambda y]_{\varsigma}=\varsigma(\lambda)\,(x\star y)-\lambda\,(y\star x)\;},
 $$
 
 so that
@@ -89,7 +89,7 @@ and it is a skew-symmetric $R^{\varsigma}$-bilinear map $A\times A\to S(A)$.
 **Theorem (the bracket on the two halves).** For $h,h'\in H(A)$ and $s,s'\in S(A)$,
 
 $$
-[h,h']_{\varsigma}=[h,h'], \qquad [s,s']_{\varsigma}=-[s,s'], \qquad [s,h]_{\varsigma}=sh+hs .
+\boxed{\;[h,h']_{\varsigma}=[h,h'], \qquad [s,s']_{\varsigma}=-[s,s'], \qquad [s,h]_{\varsigma}=sh+hs\;} .
 $$
 
 So on the Hermitian part the sesquilinear bracket is the ordinary commutator of the envelope, on the skew-Hermitian part it is the negative of the ordinary commutator, and across the two halves it is the **symmetrised** product $sh+hs$.
@@ -123,7 +123,7 @@ $$
 **Proposition.** For all $x,y$,
 
 $$
-[x,1]_{\varsigma}=x-x^{*}, \qquad [1,y]_{\varsigma}=y^{*}-y .
+\boxed{\;[x,1]_{\varsigma}=x-x^{*}, \qquad [1,y]_{\varsigma}=y^{*}-y\;} .
 $$
 
 **Proof.** $[x,1]_{\varsigma}=x\star1-1\star x=x1^{*}-1x^{*}=x-x^{*}$, and $[1,y]_{\varsigma}=1y^{*}-y1^{*}=y^{*}-y$.

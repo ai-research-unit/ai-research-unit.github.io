@@ -41,7 +41,7 @@ is a field of characteristic $0$.
 **Theorem (fundamental theorem of arithmetic).** Every nonzero integer has a factorization into primes, unique up to order and signs, and consequently every $q \in \mathbb{Q}^\times$ has a unique expression
 
 $$
-q = \operatorname{sgn}(q) \prod_p p^{v_p(q)}, \qquad v_p(q) \in \mathbb{Z},\ \text{finitely many nonzero},
+\boxed{\;q = \operatorname{sgn}(q) \prod_p p^{v_p(q)}, \qquad v_p(q) \in \mathbb{Z},\ \text{finitely many nonzero}\;},
 $$
 
 where $\operatorname{sgn}(q) = \pm 1$ and $v_p$ is the $p$-adic valuation of *Absolute Values, Valuations and Completions*.
@@ -50,8 +50,7 @@ where $\operatorname{sgn}(q) = \pm 1$ and $v_p$ is the $p$-adic valuation of *Ab
 
 **Corollary (the unit group).** There is a group isomorphism
 
-$$
-\mathbb{Q}^\times \cong \mathbb{Z}/2\mathbb{Z} \oplus \bigoplus_p \mathbb{Z},
+$$ \boxed{\;\mathbb{Q}^\times \cong \mathbb{Z}/2\mathbb{Z} \oplus \bigoplus_p \mathbb{Z}\;},
 $$
 
 the sign giving the $\mathbb{Z}/2$ and the exponent of each prime giving a copy of $\mathbb{Z}$.
@@ -87,7 +86,7 @@ the sign giving the $\mathbb{Z}/2$ and the exponent of each prime giving a copy 
 **Theorem.** Every subring $R \subseteq \mathbb{Q}$ is a localization of $\mathbb{Z}$: there is a set of primes $S$ such that
 
 $$
-R = \mathbb{Z}_S = \left\{\frac{r}{s} \in \mathbb{Q} : r \in \mathbb{Z},\ s \in \mathbb{Z}\setminus\{0\},\ \text{every prime dividing } s \text{ lies in } S\right\}.
+\boxed{\;R = \mathbb{Z}_S = \left\{\frac{r}{s} \in \mathbb{Q} : r \in \mathbb{Z},\ s \in \mathbb{Z}\setminus\{0\},\ \text{every prime dividing } s \text{ lies in } S\right\}\;}.
 $$
 
 Conversely each such $\mathbb{Z}_S$ is a subring of $\mathbb{Q}$ containing $\mathbb{Z}$, and the correspondence $S \mapsto \mathbb{Z}_S$ is bijective between sets of primes and subrings of $\mathbb{Q}$ containing $\mathbb{Z}$.
@@ -146,8 +145,7 @@ Conversely each such $\mathbb{Z}_S$ is a subring of $\mathbb{Q}$ containing $\ma
 
 **Theorem.** The quadratic extensions of $\mathbb{Q}$, up to isomorphism, are the fields $\mathbb{Q}(\sqrt{d})$ for squarefree integers $d \neq 0, 1$, and
 
-$$
-\mathbb{Q}(\sqrt{d}) \cong \mathbb{Q}(\sqrt{d'}) \iff d/d' \in (\mathbb{Q}^\times)^2 .
+$$ \boxed{\;\mathbb{Q}(\sqrt{d}) \cong \mathbb{Q}(\sqrt{d'}) \iff d/d' \in (\mathbb{Q}^\times)^2 \;}.
 $$
 
 The square classes $\mathbb{Q}^\times/(\mathbb{Q}^\times)^2$ form a vector space over $\mathbb{F}_2$ with basis the class of $-1$ and the classes of the primes, so there are countably many quadratic extensions of $\mathbb{Q}$.
@@ -197,7 +195,7 @@ and no two of these are isomorphic: $\mathbb{R}$ is Archimedean and orderable, w
 **Theorem (product formula).** For every $q \in \mathbb{Q}^\times$,
 
 $$
-\lvert q \rvert_\infty \prod_p \lvert q \rvert_p = 1 .
+\boxed{\;\lvert q \rvert_\infty \prod_p \lvert q \rvert_p = 1 \;}.
 $$
 
 **Proof.** Immediate from the prime factorization $q = \operatorname{sgn}(q)\prod_p p^{v_p(q)}$, as in *Absolute Values, Valuations and Completions*.

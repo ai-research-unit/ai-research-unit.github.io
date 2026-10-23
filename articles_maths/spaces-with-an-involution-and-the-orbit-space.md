@@ -39,7 +39,7 @@ The assignment $Y \mapsto Y_{tr}$ is a functor $\mathbf{Top} \to \mathbf{Top}^{\
 **Theorem.** Let $f : (X,\sigma) \to (Y,\tau)$ be a morphism of $\mathbf{Top}^{\mathbb{Z}/2}$. Then $f$ induces exactly one continuous map
 
 $$
-\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\},
+\boxed{\;\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\}\;},
 $$
 
 and the assignment $(X,\sigma) \mapsto X/\sigma$, $f \mapsto \bar f$ is a functor, the **orbit-space functor**.
@@ -51,7 +51,7 @@ and the assignment $(X,\sigma) \mapsto X/\sigma$, $f \mapsto \bar f$ is a functo
 **Theorem.** The orbit-space functor is left adjoint to the trivial-involution functor:
 
 $$
-(-)/\sigma \ \dashv \ (-)_{tr}, \qquad \mathbf{Top}(X/\sigma,\, Y) \ \cong \ \mathbf{Top}^{\mathbb{Z}/2}((X,\sigma),\, Y_{tr})
+\boxed{\;(-)/\sigma \ \dashv \ (-)_{tr}, \qquad \mathbf{Top}(X/\sigma,\, Y) \ \cong \ \mathbf{Top}^{\mathbb{Z}/2}((X,\sigma),\, Y_{tr})\;}
 $$
 
 naturally in the space $Y$ and the object $(X,\sigma)$.
@@ -61,7 +61,7 @@ naturally in the space $Y$ and the object $(X,\sigma)$.
 **Corollary.** The orbit functor preserves all colimits, and it takes the initial object $\emptyset$ to $\emptyset$ and the coproduct of a family to the coproduct of the quotients: for spaces with involutions $(X_{i},\sigma_{i})$,
 
 $$
-\Bigl(\bigsqcup_{i} X_{i}\Bigr)/\sigma \ \cong \ \bigsqcup_{i} (X_{i}/\sigma_{i}) .
+\boxed{\;\Bigl(\bigsqcup_{i} X_{i}\Bigr)/\sigma \ \cong \ \bigsqcup_{i} (X_{i}/\sigma_{i})\;} .
 $$
 
 For a pushout of equivariant maps the orbit space of the pushout is the pushout of the orbit spaces.

@@ -27,7 +27,7 @@ so that even elements act by parity-preserving operators and odd elements by par
 
 **Proposition.** A graded action decomposes as $\rho = \rho_0\oplus\rho_1$ with $\rho_0 : G_0 \to GL(M_0)\times GL(M_1)$ and $\rho_1 : G_1 \to \mathrm{Iso}(M_0,M_1)$; the endomorphism algebra is graded, $\operatorname{End}(M)_i = \{T : T(M_j)\subseteq M_{j+i}\}$, and the graded commutator
 $$
-[T, S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST
+\boxed{\;[T, S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST\;}
 $$
 makes $\operatorname{End}(M)$ a graded Lie algebra, the **sign** $(-1)^{\lvert T\rvert\lvert S\rvert}$ being the Koszul sign.
 
@@ -47,7 +47,7 @@ makes $\operatorname{End}(M)$ a graded Lie algebra, the **sign** $(-1)^{\lvert T
 
 **Proposition.** The **graded adjoint** of $T \in \operatorname{End}(M)$ with respect to a graded form is the unique operator $T^{*}$ with $B(Tx, y) = (-1)^{\lvert T\rvert\lvert x\rvert}B(x, T^{*}y)$ for homogeneous $x$, and it satisfies
 $$
-(T^{*})^{*} = T, \qquad (T + S)^{*} = T^{*} + S^{*}, \qquad (ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*},
+\boxed{\;(T^{*})^{*} = T, \qquad (T + S)^{*} = T^{*} + S^{*}, \qquad (ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}\;},
 $$
 the **sign rule** of the graded adjoint; the parity of the adjoint is the parity of the operator, $\lvert T^{*}\rvert = \lvert T\rvert$.
 
@@ -80,7 +80,7 @@ restricted to the graded endomorphisms; it is a graded representation of $G$ on 
 **Theorem (the sign rule and the adjoint action).** For an even element $g$ the adjoint action is a graded algebra automorphism of $\operatorname{End}(M)$ preserving the involution $^{*}$ and the supertrace; hence it is a graded isometry of the invariant graded trace form and its graded adjoint is the adjoint action of the inverse,
 
 $$
-\bigl(\operatorname{Ad}_g\bigr)^{*} = \operatorname{Ad}_{g^{-1}} \qquad (g \text{ even}),
+\boxed{\;\bigl(\operatorname{Ad}_g\bigr)^{*} = \operatorname{Ad}_{g^{-1}} \qquad (g \text{ even})\;},
 $$
 
 with respect to $\langle S, T\rangle = \operatorname{str}(S^{*}T)$. For an odd element $g$ the adjoint action still preserves the grading and the graded commutator but carries the extra Koszul sign $(-1)^{\lvert S\rvert\lvert g\rvert} = (-1)^{\lvert S\rvert}$ on a homogeneous $S$; the sign is the graded correction that the exchange of two odd objects requires, and it is the same Koszul sign as in the product rule $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$.

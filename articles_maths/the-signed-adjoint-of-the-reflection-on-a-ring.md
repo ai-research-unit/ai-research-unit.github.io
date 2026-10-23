@@ -18,7 +18,7 @@ This article reads the reflection as a signed operator, computes its square and 
 **Theorem.** The operator $r_u$ is additive and bijective, and its square is the conjugation by $u\alpha(u)$:
 
 $$
-r_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1} .
+\boxed{\;r_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1}\;} .
 $$
 
 Hence $r_u$ is an **involution**, $r_u^2 = \mathrm{id}$, exactly when $u\alpha(u)$ is central; in that case it is a reflection, and its fixed set is $\{x : u\alpha(x) = xu\}$.
@@ -32,7 +32,7 @@ Hence $r_u$ is an **involution**, $r_u^2 = \mathrm{id}$, exactly when $u\alpha(u
 **Theorem.** With respect to the twisted pairing,
 
 $$
-r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}} = r'_{\delta(u)} ,
+\boxed{\;r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}} = r'_{\delta(u)}\;} ,
 $$
 
 where $r'_v$ denotes the signed sandwich $S_{v,v^{-1}}$; the signed adjoint of a reflection is the reflection in $\delta(u)$.
@@ -42,7 +42,7 @@ where $r'_v$ denotes the signed sandwich $S_{v,v^{-1}}$; the signed adjoint of a
 **Theorem (self-adjointness).** The reflection is self-adjoint, $r_u^{*_\sigma} = r_u$, exactly when
 
 $$
-S_{\delta(u),\delta(u)^{-1}} = S_{u,u^{-1}} \iff \delta(u) = \lambda u \ \text{ for some central } \lambda \iff \delta(u)u^{-1} \in Z(A) .
+\boxed{\;S_{\delta(u),\delta(u)^{-1}} = S_{u,u^{-1}} \iff \delta(u) = \lambda u \ \text{ for some central } \lambda \iff \delta(u)u^{-1} \in Z(A)\;} .
 $$
 
 In particular a **$\delta$-symmetric** unit, $\delta(u) = u$, gives a self-adjoint reflection, and so does $\delta(u) = \lambda u$ with $\lambda$ central.

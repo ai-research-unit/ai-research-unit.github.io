@@ -14,7 +14,7 @@ Throughout, $R$ is a commutative ring with $1 \neq 0$ and all modules are $R$-mo
 **Theorem.** Let $M' \xrightarrow{\ \alpha\ } M \xrightarrow{\ \beta\ } M'' \to 0$ be an exact sequence of $R$-modules, and let $N$ be any $R$-module. Then the induced sequence
 
 $$
-M' \otimes_R N \xrightarrow{\ \alpha \otimes \operatorname{id}\ } M \otimes_R N \xrightarrow{\ \beta \otimes \operatorname{id}\ } M'' \otimes_R N \longrightarrow 0
+\boxed{\;M' \otimes_R N \xrightarrow{\ \alpha \otimes \operatorname{id}\ } M \otimes_R N \xrightarrow{\ \beta \otimes \operatorname{id}\ } M'' \otimes_R N \longrightarrow 0\;}
 $$
 
 is exact. That is, the functor $- \otimes_R N$ is right exact.
@@ -82,7 +82,7 @@ and the element $x \otimes y-y \otimes x$ lies in its kernel, since $xy=yx$. Tha
 **Theorem.** For $R$-modules $M,N,P$ there is a natural isomorphism
 
 $$
-\operatorname{Hom}_R(M \otimes_R N,\,P) \;\cong\; \operatorname{Hom}_R\bigl(M,\,\operatorname{Hom}_R(N,P)\bigr),
+\boxed{\;\operatorname{Hom}_R(M \otimes_R N,\,P) \;\cong\; \operatorname{Hom}_R\bigl(M,\,\operatorname{Hom}_R(N,P)\bigr)\;},
 $$
 
 under which $\varphi$ on the left corresponds to the map $m \mapsto (n \mapsto \varphi(m \otimes n))$ on the right.
@@ -112,7 +112,7 @@ The identification $S^{-1}M \cong S^{-1}R \otimes_R M$ means localisation is an 
 **Proposition.** Localisation commutes with kernels, images, cokernels, finite direct sums and tensor products: for any $R$-modules $M,N$,
 
 $$
-S^{-1}(M \otimes_R N) \cong S^{-1}M \otimes_{S^{-1}R} S^{-1}N .
+\boxed{\;S^{-1}(M \otimes_R N) \cong S^{-1}M \otimes_{S^{-1}R} S^{-1}N\;} .
 $$
 
 *Proof.* The identification is immediate on elementary fractions, using $(m \otimes n)/s \mapsto (m/s) \otimes (n/1)$; exactness gives compatibility with kernels and cokernels.

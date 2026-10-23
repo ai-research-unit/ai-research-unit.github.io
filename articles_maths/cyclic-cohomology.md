@@ -98,7 +98,7 @@ the direct limit of the periodicity operator of the next paragraph.
 **Theorem (Connes' periodicity sequence).** There is a long exact sequence
 
 $$
-\cdots\to HC^{n-1}(A)\xrightarrow{S}HC^{n+1}(A)\xrightarrow{I}HH^{n+1}(A)\xrightarrow{B}HC^{n}(A)\xrightarrow{S}HC^{n+2}(A)\to\cdots
+\boxed{\;\cdots\to HC^{n-1}(A)\xrightarrow{S}HC^{n+1}(A)\xrightarrow{I}HH^{n+1}(A)\xrightarrow{B}HC^{n}(A)\xrightarrow{S}HC^{n+2}(A)\to\cdots\;}
 $$
 
 in which $I$ is induced by the inclusion of the cyclic cochains among all Hochschild cochains, $B$ is Connes' operator, and $S$ is the **periodicity operator**, raising the degree by two. The sequence is the dual of the homology sequence of *Cyclic Homology*, with the arrows reversed.
@@ -128,7 +128,7 @@ $$
 Then $\tau_N$ is a trace on $M_N(A)$, the number $\tau_N(e)$ depends only on the $K_0$-class of the idempotent $e\in M_N(A)$, and the resulting bilinear map
 
 $$
-\langle\,\cdot\,,\,\cdot\,\rangle : HC^0(A)\times K_0(A)\to k , \qquad \langle[\tau],[e]\rangle = \tau_N(e) ,
+\boxed{\;\langle\,\cdot\,,\,\cdot\,\rangle : HC^0(A)\times K_0(A)\to k , \qquad \langle[\tau],[e]\rangle = \tau_N(e)\;} ,
 $$
 
 is the **even pairing**. It is natural in $A$ and is compatible with the periodicity operator: $\langle S\tau,x\rangle=\langle\tau,x\rangle$ under the identification of $K_0$ with the even $K$-groups.
@@ -142,7 +142,7 @@ is the **even pairing**. It is natural in $A$ and is compatible with the periodi
 **Theorem (the $K_1$ pairing).** Let $\tau$ be a cyclic $1$-cocycle on $A$ and let $u$ be an invertible element of $M_N(A)$, the class $[u]\in K_1(A)$; then
 
 $$
-\langle[\tau],[u]\rangle = \tau_N\bigl(u^{-1},u\bigr) ,
+\boxed{\;\langle[\tau],[u]\rangle = \tau_N\bigl(u^{-1},u\bigr)\;} ,
 $$
 
 where the extension of $\tau$ to matrices is $\tau_N(x_0,x_1)=\sum_{i,j}\tau(x_0^{ij},x_1^{ji})$, depends only on the classes of $\tau$ and $u$, and defines a pairing $HC^1(A)\times K_1(A)\to k$.

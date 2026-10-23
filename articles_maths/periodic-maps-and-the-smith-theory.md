@@ -45,7 +45,7 @@ fit into a long exact sequence of period three in the indexing. The existence an
 
 **Theorem (localisation).** Let $G = \mathbb{Z}/p$ act on a finite-dimensional $G$-CW complex $X$ with finitely many orbit types, and let $F\subseteq X$ be the fixed set. Then the map induced by the inclusion,
 $$
-H^*_G(X;\mathbb{F}_p)\longrightarrow H^*_G(F;\mathbb{F}_p),
+\boxed{\;H^*_G(X;\mathbb{F}_p)\longrightarrow H^*_G(F;\mathbb{F}_p)\;},
 $$
 becomes an isomorphism after localising at the nonzero elements of $H^*(BG;\mathbb{F}_p)$; equivalently, the kernel and the cokernel of the restriction are annihilated by a power of the "positive-degree" classes of $H^*(BG;\mathbb{F}_p)$. In particular the equivariant cohomology of $X$ is determined by that of $F$ over the generic point of $\operatorname{Spec}H^*(BG;\mathbb{F}_p)$.
 
@@ -71,7 +71,7 @@ becomes an isomorphism after localising at the nonzero elements of $H^*(BG;\math
 
 **Theorem (the Euler characteristic of the quotient).** For a finite-dimensional space with a $\mathbb{Z}/p$ action and finitely generated homology, the Euler characteristic of the orbit space is
 $$
-\chi(X/\mathbb{Z}/p) = \frac{\chi(X)+(p-1)\chi(F)}{p}.
+\boxed{\;\chi(X/\mathbb{Z}/p) = \frac{\chi(X)+(p-1)\chi(F)}{p}\;}.
 $$
 In particular $\chi(X/\mathbb{Z}/2) = (\chi(X)+\chi(F))/2$, and the identity $\chi(X) = \chi(F)+p\,\chi(X\setminus F)$ from the orbit count gives the formula.
 

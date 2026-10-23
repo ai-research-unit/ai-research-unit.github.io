@@ -61,7 +61,7 @@ The identity as stated involves only one element $x$ and one further element $y$
 **Proposition.** Let $(J, \bullet)$ be a commutative $R$-algebra. The Jordan identity $x^2 \bullet (y \bullet x) = (x^2 \bullet y) \bullet x$ for all $x, y \in J$ is equivalent to the operator identity
 
 $$
-[L_x, L_{x^2}] = 0 \qquad \text{for all } x \in J .
+\boxed{\;[L_x, L_{x^2}] = 0 \qquad \text{for all } x \in J\;} .
 $$
 
 It implies, by polarisation, the **linearised identity**
@@ -223,7 +223,7 @@ An element $e \in J$ is an **idempotent** if $e^2 = e$. Idempotents in a Jordan 
 **Theorem.** Let $e$ be an idempotent of a Jordan algebra $J$ over a ring in which $2$ is invertible. Then
 
 $$
-2 L_e^3 - 3 L_e^2 + L_e = 0 ,
+\boxed{\;2 L_e^3 - 3 L_e^2 + L_e = 0\;} ,
 $$
 
 as an identity of endomorphisms of $J$. Equivalently, $L_e(L_e - 1)(2L_e - 1) = 0$, so over a field the only possible eigenvalues of $L_e$ are $0$, $1$ and $\tfrac{1}{2}$.
@@ -247,7 +247,7 @@ for every $w \in J$. Hence $2L_e^3 - 3L_e^2 + L_e = 0$, which factors as $L_e(L_
 The theorem gives a direct sum decomposition of $J$ for each idempotent $e$:
 
 $$
-J = J_1(e) \oplus J_{1/2}(e) \oplus J_0(e), \qquad J_\lambda(e) = \{x \in J : e \bullet x = \lambda x\}.
+\boxed{\;J = J_1(e) \oplus J_{1/2}(e) \oplus J_0(e), \qquad J_\lambda(e) = \{x \in J : e \bullet x = \lambda x\}\;}.
 $$
 
 The summands are the **Peirce spaces** of $e$. The extreme spaces are subalgebras with units $e$ and $1 - e$ respectively when $J$ is unital, the middle space is a bimodule for them, and the products obey

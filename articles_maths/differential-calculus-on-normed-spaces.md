@@ -108,7 +108,7 @@ The map $Df(x)$ is the **Fréchet derivative** of $f$ at $x$. The limit is taken
 **Theorem (chain rule).** Let $f:\Omega \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with
 
 $$
-D(g \circ f)(x)=Dg(f(x)) \circ Df(x).
+\boxed{\;D(g \circ f)(x)=Dg(f(x)) \circ Df(x)\;}.
 $$
 
 *Proof.* Write $g(f(x+h))-g(f(x))=Dg(f(x))\bigl(f(x+h)-f(x)\bigr)+r\bigl(f(x+h)-f(x)\bigr)$ with $r(q)=o(\|q\|)$; substitute $f(x+h)-f(x)=Df(x)h+o(\|h\|)$ and use the boundedness of $Dg(f(x))$ and the estimate $\|r(q)\|\le\varepsilon\|q\|$ for small $\|q\|$.
@@ -222,7 +222,7 @@ The two structural theorems below are consequences of one fixed point theorem, a
 **Theorem (Banach contraction principle).** A contraction $F$ of a complete nonempty metric space $M$ has a unique fixed point $x^*$; for every $x_0 \in M$ the iterates $x_{n+1}=F(x_n)$ converge to $x^*$, and
 
 $$
-d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n).
+\boxed{\;d(x_n,x^*) \le \frac{c^n}{1-c}d(x_1,x_0), \qquad d(x_n,x^*) \le \frac{1}{1-c}d(x_{n+1},x_n)\;}.
 $$
 
 *Proof.* The estimate $d(x_{n+1},x_n)\le c^nd(x_1,x_0)$ makes the sequence Cauchy, by comparison with a geometric series; completeness gives a limit $x^*$, and continuity of $F$ gives $F(x^*)=x^*$. If $x^*,y^*$ are fixed points then $d(x^*,y^*)=d(Fx^*,Fy^*)\le cd(x^*,y^*)$, forcing $x^*=y^*$. The first error estimate is the sum of the tail of the geometric series, and the second follows from $d(x_n,x^*)\le d(x_n,x_{n+1})+cd(x_n,x^*)$.
@@ -270,7 +270,7 @@ $$
 and for $x \in \Omega_0$,
 
 $$
-D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x)).
+\boxed{\;D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x))\;}.
 $$
 
 If $F$ is of class $C^k$ then so is $\varphi$.

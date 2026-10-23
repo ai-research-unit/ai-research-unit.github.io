@@ -90,7 +90,7 @@ The inequality is the martingale-type maximal bound in its independent-sum form,
 **Theorem (strong law of large numbers; Kolmogorov).** Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then
 
 $$
-\bar X_n \longrightarrow \mu \qquad \text{a.s.}
+\boxed{\;\bar X_n \longrightarrow \mu \qquad \text{a.s.}\;}
 $$
 
 *Proof (sketch).* It suffices to treat the mean-zero case by centring. Assume first a finite fourth moment; the estimate $\mathbb{E}[S_n^4] \leq Cn^2$ (obtained by expanding the fourth power and using independence) together with the first Borel–Cantelli lemma applied to the events $\{|\bar X_{n}| \geq \varepsilon\}$ along the subsequence $n = 2^k$ gives convergence along that subsequence; the maximal inequality extends it to the intermediate integers, using that the increments between $2^k$ and $2^{k+1}$ are controlled by the maximal inequality. For the general case, truncate at the level $n$ and use the three-series-type estimate to show that the truncated and untruncated averages have the same limit a.s.; the details are the standard argument.
@@ -112,7 +112,7 @@ The strong law is the probabilistic form of the pointwise ergodic theorem, and t
 **Theorem (central limit theorem).** Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$ and finite positive variance $\sigma^2$. Then the standardised sums converge in distribution to the standard normal:
 
 $$
-Z_n = \frac{S_n - n\mu}{\sigma\sqrt n} \xrightarrow{d} N(0,1).
+\boxed{\;Z_n = \frac{S_n - n\mu}{\sigma\sqrt n} \xrightarrow{d} N(0,1)\;}.
 $$
 
 *Proof.* By Lévy's continuity theorem it suffices to show $\varphi_{Z_n}(t) \to \exp(-t^2/2)$ for every $t$. By independence, $\varphi_{Z_n}(t) = \varphi(t/(\sigma\sqrt n))^n$ after centring, and the expansion of the characteristic function of a mean-zero unit-variance variable is
@@ -152,7 +152,7 @@ The Lindeberg condition says that the individual terms are asymptotically neglig
 **Theorem (Berry–Esseen).** Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$, variance $\sigma^2$ and finite third absolute moment $\rho = \mathbb{E}|X_1 - \mu|^3$. Then there is an absolute constant $C$ with
 
 $$
-\sup_{x \in \mathbb{R}}\left|\mathbb{P}(Z_n \leq x) - \Phi(x)\right| \leq \frac{C\rho}{\sigma^3\sqrt n}.
+\boxed{\;\sup_{x \in \mathbb{R}}\left|\mathbb{P}(Z_n \leq x) - \Phi(x)\right| \leq \frac{C\rho}{\sigma^3\sqrt n}\;}.
 $$
 
 The theorem supplies the rate of the central limit theorem: the Kolmogorov distance between the law of the standardised sum and the normal is $O(n^{-1/2})$, with a constant depending only on the standardised third moment. The order $n^{-1/2}$ is optimal, and the best constant is known to lie between approximately $0.4$ and $0.5$; its exact value is not known. The proof is an application of the smoothing inequality, which compares two distribution functions through the integrals of their characteristic functions against a kernel, together with the estimate of the difference of the characteristic functions by the third-moment bound.

@@ -161,7 +161,7 @@ Strong normalisation is strictly stronger than the normalisation theorem for der
 **Definition.** The **terms** of the lambda calculus are the variables $x, y, \ldots$, the **applications** $MN$ and the **abstractions** $\lambda x.\,M$, together with the constant for the identity and function formation. **$\alpha$-conversion** renames bound variables, and **substitution** $M[x := N]$ replaces free occurrences of $x$ by $N$, renaming bound variables to avoid capture. The **$\beta$-reduction** is
 
 $$
-(\lambda x.\,M)\,N \to_\beta M[x := N],
+\boxed{\;(\lambda x.\,M)\,N \to_\beta M[x := N]\;},
 $$
 
 and **$\eta$-reduction** is $\lambda x.\,Mx \to_\eta M$ when $x$ is not free in $M$. A term is in **$\beta$-normal form** if it contains no $\beta$-redex $(\lambda x.\,M)N$.
@@ -220,9 +220,9 @@ The correspondence is a dictionary in which formulas are types, derivations are 
 **Theorem (Curry–Howard, for implication).** The derivations of the implicational fragment of intuitionistic propositional logic from assumptions $\varphi_1,\ldots,\varphi_n$ correspond exactly to the terms of the simply typed lambda calculus in context $x_1 : \varphi_1, \ldots, x_n : \varphi_n$, with
 
 $$
-\frac{\Gamma, x : \varphi \vdash M : \psi}{\Gamma \vdash \lambda x.\,M : \varphi \to \psi} \to I
+\boxed{\;\frac{\Gamma, x : \varphi \vdash M : \psi}{\Gamma \vdash \lambda x.\,M : \varphi \to \psi} \to I
 \qquad
-\frac{\Gamma \vdash M : \varphi \to \psi \qquad \Gamma \vdash N : \varphi}{\Gamma \vdash M\,N : \psi} \to E,
+\frac{\Gamma \vdash M : \varphi \to \psi \qquad \Gamma \vdash N : \varphi}{\Gamma \vdash M\,N : \psi} \to E\;},
 $$
 
 and $\beta$-reduction of terms corresponds to the reduction of detours in the derivation, while $\eta$-conversion corresponds to the two-way equivalence of a detour with the derivation obtained by removing it.

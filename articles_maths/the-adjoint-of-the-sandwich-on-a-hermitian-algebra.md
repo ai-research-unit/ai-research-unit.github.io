@@ -17,7 +17,7 @@ The Hermitian algebra and its involution are *Hermitian Algebras* and *Hermitian
 **Definition.** For $x\in A$ the **sandwich**, or two-sided operator, is
 
 $$
-\Theta_x : A\to A, \qquad \Theta_x(y) = x\,y\,x^{\dagger} .
+\boxed{\;\Theta_x : A\to A, \qquad \Theta_x(y) = x\,y\,x^{\dagger}\;} .
 $$
 
 It is the composition $\Theta_x = L_xR_{x^{\dagger}} = R_{x^{\dagger}}L_x$ of a left and a right multiplication, and it is semilinear in the parameter up to the involution and linear in the argument.
@@ -25,7 +25,7 @@ It is the composition $\Theta_x = L_xR_{x^{\dagger}} = R_{x^{\dagger}}L_x$ of a 
 **Theorem (the adjoint is the sandwich of the involution).** For every $x$,
 
 $$
-\Theta_x^{*} = \Theta_{x^{\dagger}} ,
+\boxed{\;\Theta_x^{*} = \Theta_{x^{\dagger}}\;} ,
 $$
 
 the adjoint being taken for the form.

@@ -20,7 +20,7 @@ The boundary with Part III is the one fixed for this block. What is developed he
 **Proposition (the convergence radius).** For a series $\sum_na_nx^n$ there is a well-defined **radius of convergence**
 
 $$
-R = \frac{1}{\limsup_n |a_n|_p^{1/n}} \in [0,\infty] ,
+\boxed{\;R = \frac{1}{\limsup_n |a_n|_p^{1/n}} \in [0,\infty]\;} ,
 $$
 
 the series converging for $|x|_p < R$ and diverging for $|x|_p > R$; the value at $|x|_p = R$ depends on the series. In the non-archimedean case convergence is governed by the terms: $\sum_na_nx^n$ converges if and only if $|a_nx^n|_p \to 0$.
@@ -40,7 +40,7 @@ the series converging for $|x|_p < R$ and diverging for $|x|_p > R$; the value a
 **(c)** For $x,y$ with $v(x),v(y) > r$, the product $\exp(x)\exp(y)$ is $\exp$ of an element of $\mathbb{Q}_p$, namely the value of the **Hausdorff series**
 
 $$
-H(X,Y) = \log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}[X,[X,Y]] + \tfrac1{12}[Y,[Y,X]] + \cdots
+\boxed{\;H(X,Y) = \log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}[X,[X,Y]] + \tfrac1{12}[Y,[Y,X]] + \cdots\;}
 $$
 
 evaluated at $(x,y)$, a series in the noncommuting variables $X,Y$ whose terms are iterated commutators and which converges in the $p$-adic topology on the ball $v > r$.
@@ -84,7 +84,7 @@ evaluated at $(x,y)$, a series in the noncommuting variables $X,Y$ whose terms a
 **Theorem (Lazard correspondence).** Let $G$ be a uniform pro-$p$ group with a minimal generating set $g_1,\dots,g_d$. Then every element of $G$ is uniquely $g_1^{a_1}\cdots g_d^{a_d}$ with $a_i \in \mathbb{Z}_p$, and on the free $\mathbb{Z}_p$-module $L = \mathbb{Z}_pg_1\oplus\cdots\oplus\mathbb{Z}_pg_d$ the **Hausdorff operations**
 
 $$
-x +_L y := H(x,y), \qquad [x,y]_L := \text{the degree-two part of } H(x,y) = \tfrac12(xy - yx)
+\boxed{\;x +_L y := H(x,y), \qquad [x,y]_L := \text{the degree-two part of } H(x,y) = \tfrac12(xy - yx)\;}
 $$
 
 in the coordinates $g_i$ make $L$ a **powerful** $\mathbb{Z}_p$-Lie algebra — a free $\mathbb{Z}_p$-module of finite rank with $[L,L]\leq pL$ — and the maps $\exp$ and $\log$ identify $G$ with $(L,+_L)$ as groups: the group law of $G$ in the coordinates $g_i$ is the Lie-algebraic addition $H$. The construction is an equivalence of categories between the uniform pro-$p$ groups and the powerful $\mathbb{Z}_p$-Lie algebras.

@@ -63,7 +63,7 @@ Continuity is not automatic. It is free in the vacuous cases, the identity invol
 **Theorem (extension to the $I$-adic completion).** Let $R$ be a ring, $I$ an ideal with $\sigma(I) = I$, and let $\widehat{R} = \varprojlim_n R/I^n$ be the $I$-adic completion. Then $\sigma$ induces an involution $\bar\sigma_n$ of each quotient $R/I^n$, the family $(\bar\sigma_n)$ is compatible with the projections, and it defines a continuous involution $\widehat{\sigma}$ of $\widehat{R}$ with
 
 $$
-\widehat{\sigma} \circ \iota = \iota \circ \sigma,
+\boxed{\;\widehat{\sigma} \circ \iota = \iota \circ \sigma\;},
 $$
 
 where $\iota : R \to \widehat{R}$ is the natural map. The pair $(\widehat{R}, \widehat{\sigma})$ is an involutive topological ring, $\widehat{\sigma}$ is a homeomorphism for the $\widehat{I}$-adic topology of $\widehat{R}$, and if $2$ is invertible in $R$ then
@@ -105,13 +105,13 @@ with $\tfrac12(r_k + \sigma(r_k)) \in R^\sigma$ for every $k$; so $a$ lies in th
 **Theorem (the averaging map).** Let $\sigma$ be a topological involution of the topological ring $R$ and suppose $2$ is invertible in $R$. Then the **averaging map**
 
 $$
-\pi : R \to R, \qquad \pi(x) = \tfrac12\bigl(x + \sigma(x)\bigr),
+\boxed{\;\pi : R \to R, \qquad \pi(x) = \tfrac12\bigl(x + \sigma(x)\bigr)\;},
 $$
 
 is a continuous idempotent endomorphism of the additive topological group of $R$ with image $R^\sigma$ and kernel $\mathrm{Skew}(R,\sigma)$. Consequently
 
 $$
-(R,+) \cong R^\sigma \oplus \mathrm{Skew}(R,\sigma)
+\boxed{\;(R,+) \cong R^\sigma \oplus \mathrm{Skew}(R,\sigma)\;}
 $$
 
 as topological groups, with the summands closed, and $R^\sigma$ is a retract of $R$. The map $\pi$ is multiplicative, that is a ring homomorphism, exactly when $\sigma$ is also multiplicative, which holds for the trivial involution of every ring and for every involution of a commutative ring.

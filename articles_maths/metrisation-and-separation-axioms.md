@@ -27,7 +27,7 @@ All the axioms below constrain a topological space $X$ by asking for open sets t
 The axioms $T_3$, $T_{3\frac12}$ and $T_4$ are the corresponding regularity, complete regularity and normality conditions together with $T_1$:
 
 $$
-T_3 = \text{regular} + T_1, \qquad T_{3\frac12} = \text{completely regular} + T_1, \qquad T_4 = \text{normal} + T_1 .
+\boxed{\;T_3 = \text{regular} + T_1, \qquad T_{3\frac12} = \text{completely regular} + T_1, \qquad T_4 = \text{normal} + T_1\;} .
 $$
 
 A space satisfying $T_{3\frac12}$ is called a **Tychonoff space**. A normal space in which every closed set is a countable intersection of open sets is **perfectly normal**.
@@ -43,7 +43,7 @@ The $T_1$ hypothesis in the second line is essential and not a technicality. A s
 **Theorem.** The axioms are ordered as follows:
 
 $$
-T_4 \Longrightarrow T_{3\frac12} \Longrightarrow T_3 \Longrightarrow T_2 \Longrightarrow T_1 \Longrightarrow T_0 .
+\boxed{\;T_4 \Longrightarrow T_{3\frac12} \Longrightarrow T_3 \Longrightarrow T_2 \Longrightarrow T_1 \Longrightarrow T_0\;} .
 $$
 
 **Proof.** $T_4 \Rightarrow T_{3\frac12}$: in a normal $T_1$ space a point $x$ outside a closed set $F$ has $\{x\}$ and $F$ disjoint closed sets, and Urysohn's lemma, proved from normality alone in the next section, supplies a continuous $f : X \to [0,1]$ with $f(x) = 0$ and $f = 1$ on $F$, which is complete regularity. $T_{3\frac12} \Rightarrow T_3$: if $f$ separates $x$ from the closed set $F$ as above, then $f^{-1}[0,1/2)$ and $f^{-1}(1/2,1]$ are disjoint open sets containing $x$ and $F$ respectively, which is regularity. $T_3 \Rightarrow T_2$: given $x \neq y$, the singleton $\{y\}$ is closed by $T_1$, and regularity separates $x$ from it. $T_2 \Rightarrow T_1$: a Hausdorff separation of $x$ and $y$ gives an open neighbourhood of $x$ missing $y$. $T_1 \Rightarrow T_0$ was proved above.
@@ -110,7 +110,7 @@ Then $f = 0$ on $A$, and $f = 1$ on $B$ because $\Omega_1 = X \setminus B$. For 
 
 **Theorem (Urysohn embedding lemma).** Let $X$ be a $T_1$ space and let $(f_n)_{n \in \mathbb{N}}$ be a countable family of continuous functions $f_n : X \to [0,1]$ such that for every $x \in X$ and every neighbourhood $\Omega$ of $x$ there is $n$ with $f_n(x) > 0$ and $f_n = 0$ outside $\Omega$. Then
 $$
-F : X \longrightarrow [0,1]^{\mathbb{N}}, \qquad F(x) = (f_n(x))_{n \in \mathbb{N}},
+\boxed{\;F : X \longrightarrow [0,1]^{\mathbb{N}}, \qquad F(x) = (f_n(x))_{n \in \mathbb{N}}\;},
 $$
 is an embedding onto a subspace of the Hilbert cube.
 

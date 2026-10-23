@@ -125,19 +125,19 @@ the future cone of the indefinite form. It is the image of the exponential, trea
 Every invertible element can be written in the normal form
 
 $$
-Q = r\,\epsilon\,\exp(\phi j), \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \phi \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}.
+\boxed{\;Q = r\,\epsilon\,\exp(\phi j), \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \phi \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}\;}.
 $$
 
 The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(r,\phi)$ is the continuous part, and the triple $(r,\phi,\epsilon)$ is unique. The multiplication law is
 
 $$
-(r_1,\phi_1,\epsilon_1)(r_2,\phi_2,\epsilon_2) = (r_1r_2,\ \phi_1+\phi_2,\ \epsilon_1\epsilon_2),
+\boxed{\;(r_1,\phi_1,\epsilon_1)(r_2,\phi_2,\epsilon_2) = (r_1r_2,\ \phi_1+\phi_2,\ \epsilon_1\epsilon_2)\;},
 $$
 
 with $\epsilon_1\epsilon_2$ computed in the four-element group $\{\pm1,\pm j\}$, where $j^2 = 1$. Hence the polar decomposition read as a map is a group isomorphism
 
 $$
-\mathbb{D}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\phi,\epsilon).
+\boxed{\;\mathbb{D}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\phi,\epsilon)\;}.
 $$
 
 Equivalently, the map $(Q_+,Q_-)\mapsto(r,\phi,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $r=\sqrt{\lvert Q_+Q_-\rvert}$ and $\phi=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.

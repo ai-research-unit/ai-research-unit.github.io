@@ -70,7 +70,7 @@ $$
 **Theorem (Hirzebruch–Riemann–Roch).** Let $X$ be a compact complex manifold and let $E$ be a Hermitian holomorphic bundle of rank $r$. Then
 
 $$
-\chi(X,E)=\int_{X}\operatorname{ch}(E)\,\operatorname{td}(TX),
+\boxed{\;\chi(X,E)=\int_{X}\operatorname{ch}(E)\,\operatorname{td}(TX)\;},
 $$
 
 the Chern character of $E$ paired with the Todd class of the tangent bundle; in the Chern roots $x_j$ of $T^{1,0}X$ this is
@@ -119,13 +119,13 @@ and its value at $y=1$ is the signature.
 **Theorem (Hirzebruch).** The $\chi_y$-genus is the characteristic number
 
 $$
-\chi_y(X)=\int_{X}\prod_{j=1}^{n}\frac{x_j\bigl(1+y\,\exp(-x_j(1+y))\bigr)}{1-\exp(-x_j(1+y))} ,
+\boxed{\;\chi_y(X)=\int_{X}\prod_{j=1}^{n}\frac{x_j\bigl(1+y\,\exp(-x_j(1+y))\bigr)}{1-\exp(-x_j(1+y))}\;} ,
 $$
 
 and its value at $y=1$ is the $L$-genus,
 
 $$
-\chi_1(X)=\int_{X}\prod_{j=1}^{n}x_j\coth x_j=\int_{X}L(TX)=\sigma(X),
+\boxed{\;\chi_1(X)=\int_{X}\prod_{j=1}^{n}x_j\coth x_j=\int_{X}L(TX)=\sigma(X)\;},
 $$
 
 the signature of $X$; its value at $y=0$ is the Todd genus $\int\prod\frac{x_j}{1-\exp(-x_j)}$ and its value at $y=-1$ is the Euler characteristic $\int\prod x_j$.

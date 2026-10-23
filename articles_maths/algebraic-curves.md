@@ -37,7 +37,7 @@ Throughout, $K$ is a field, $\bar K$ an algebraic closure, $\mathbb{P}^2$ the pr
 **Theorem (Bézout).** Let $C, D$ be projective plane curves over $\bar K$ of degrees $m, n$ with no common component. Then
 
 $$
-\sum_{P \in C \cap D} I_P(C,D) = mn .
+\boxed{\;\sum_{P \in C \cap D} I_P(C,D) = mn\;} .
 $$
 
 **Proof sketch.** The intersection number is the degree of the resultant of the two defining forms with respect to one of the variables, and the resultant is a form of degree $mn$; the localised multiplicities are exactly the multiplicities of its roots. This is the classical proof, and it is made rigorous by the theory of resultants, whose algorithm is the elimination.
@@ -85,7 +85,7 @@ a $K$-vector space of finite dimension $\ell(D)$.
 **Theorem (Riemann–Roch, stated).** Let $C$ be a nonsingular projective curve of genus $g$ over $K$ and $K_C$ a **canonical divisor**, that is, the divisor of any nonzero rational differential form on $C$. Then
 
 $$
-\ell(D) - \ell(K_C - D) = \deg D + 1 - g ,
+\boxed{\;\ell(D) - \ell(K_C - D) = \deg D + 1 - g\;} ,
 $$
 
 $\deg K_C = 2g - 2$, and $g = \ell(K_C)$. The theorem and its proof, together with the duality statement for the space of differentials, are not covered here.
@@ -103,7 +103,7 @@ $\deg K_C = 2g - 2$, and $g = \ell(K_C)$. The theorem and its proof, together wi
 **Theorem (Weil bound).** Let $C$ be a geometrically irreducible nonsingular projective curve of genus $g$ over $\mathbb{F}_q$. Then
 
 $$
-\lvert \lvert C(\mathbb{F}_q)\rvert - (q+1)\rvert \leq 2g\sqrt q ,
+\boxed{\;\lvert \lvert C(\mathbb{F}_q)\rvert - (q+1)\rvert \leq 2g\sqrt q\;} ,
 $$
 
 and more precisely, the **zeta function** of $C$,

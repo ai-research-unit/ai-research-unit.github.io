@@ -23,7 +23,7 @@ The left and right multiplication maps are $L : E \to \operatorname{End}(E)$, $A
 
 **Proposition (composition).** For all $A, B \in E$,
 $$
-L_A L_B = L_{AB}, \qquad R_A R_B = R_{AB}, \qquad L_A R_B = R_B L_A , \qquad L_A + R_B = R_B + L_A .
+\boxed{\;L_A L_B = L_{AB}, \qquad R_A R_B = R_{AB}, \qquad L_A R_B = R_B L_A , \qquad L_A + R_B = R_B + L_A\;} .
 $$
 In particular $L$ is a representation of the algebra $E$ on itself, $R$ is a representation of the opposite algebra $E^{\mathrm{opp}}$, and the left and right images commute; the composite action $A \otimes B \mapsto L_A R_B$ is a representation of $E \otimes_{\mathbb C} E^{\mathrm{opp}}$.
 
@@ -35,7 +35,7 @@ In particular $L$ is a representation of the algebra $E$ on itself, $R$ is a rep
 
 **Theorem (the double centraliser).** The commutant of $L(E)$ in $\operatorname{End}(E)$ is $R(E)$, and the commutant of $R(E)$ is $L(E)$; moreover
 $$
-\operatorname{End}(E) = L(E)\,R(E) \cong E \otimes_{\mathbb C} E^{\mathrm{opp}} ,
+\boxed{\;\operatorname{End}(E) = L(E)\,R(E) \cong E \otimes_{\mathbb C} E^{\mathrm{opp}}\;} ,
 $$
 so every $\mathbb{C}$-linear operator on $E$ is a sum of two-sided multiplications.
 
@@ -59,7 +59,7 @@ where $A^{\dagger}$ is the adjoint of $A$ for $h$, $h(Au,v) = h(u,A^{\dagger}v)$
 
 **Proposition (the unitary one-sided multiplications are isometries).** Let $U \in E$ be unitary for $h$, $U^{\dagger}U = UU^{\dagger} = \mathrm{id}$. Then $L_U$ and $R_U$ are isometries of the trace form,
 $$
-\langle L_U X, L_U Y\rangle = \langle X, Y\rangle, \qquad \langle R_U X, R_U Y\rangle = \langle X, Y\rangle ,
+\boxed{\;\langle L_U X, L_U Y\rangle = \langle X, Y\rangle, \qquad \langle R_U X, R_U Y\rangle = \langle X, Y\rangle\;} ,
 $$
 and the maps $U \mapsto L_U$ and $U \mapsto R_U$ are commuting unitary representations of the unitary group $\mathrm{U}(V,h)$ on the Hermitian space $E$.
 

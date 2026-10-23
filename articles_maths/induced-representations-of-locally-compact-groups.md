@@ -46,7 +46,7 @@ The action preserves the equivariance condition: $f(g^{-1}xh) = \sigma(h)^{-1}f(
 **Theorem (the induced inner product).** Let $H$ be a closed subgroup of $G$ and $\sigma$ a unitary representation of $H$ on $V$. If $\Delta_G|_H = \Delta_H$ there is a $G$-invariant Radon measure $\nu$ on $G/H$, and
 
 $$
-\langle f_1, f_2\rangle = \int_{G/H} \langle f_1(g), f_2(g)\rangle_V\; d\nu(gH)
+\boxed{\;\langle f_1, f_2\rangle = \int_{G/H} \langle f_1(g), f_2(g)\rangle_V\; d\nu(gH)\;}
 $$
 
 is a $G$-invariant inner product on the continuous $H$-equivariant functions of type $\sigma^{-1}$ with compact support modulo $H$. In general one replaces $\sigma$ by the **normalised** representation $\sigma^{\mathrm{norm}}(h) = \bigl(\Delta_G(h)/\Delta_H(h)\bigr)^{1/2}\sigma(h)$ and takes for $\nu$ the quasi-invariant measure on $G/H$ of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces, normalised once and for all; with the type ${\sigma^{\mathrm{norm}}}^{-1}$ the same formula is again a $G$-invariant inner product. In either case the integrand is well defined, because for $h \in H$
@@ -96,7 +96,7 @@ of $H$-equivariant functions of the function-space model, so that the two models
 **Theorem (induction in stages).** Let $K \leq H \leq G$ be closed subgroups and let $\sigma$ be a unitary representation of $K$. Then there is a natural unitary equivalence
 
 $$
-\operatorname{Ind}_K^G \sigma \;\cong\; \operatorname{Ind}_H^G\bigl(\operatorname{Ind}_K^H \sigma\bigr) ,
+\boxed{\;\operatorname{Ind}_K^G \sigma \;\cong\; \operatorname{Ind}_H^G\bigl(\operatorname{Ind}_K^H \sigma\bigr)\;} ,
 $$
 
 and the identification is given by composing the two function-space descriptions.
@@ -112,7 +112,7 @@ The fundamental relation between induction and restriction is the adjunction bet
 **Theorem (Frobenius reciprocity).** Let $H \leq G$ be closed subgroups, $\sigma$ a unitary representation of $H$ and $\pi$ a unitary representation of $G$. There is a natural isomorphism of vector spaces
 
 $$
-\operatorname{Hom}_G\bigl(\pi, \operatorname{Ind}_H^G\sigma\bigr) \;\cong\; \operatorname{Hom}_H\bigl(\pi|_H, \sigma\bigr) ,
+\boxed{\;\operatorname{Hom}_G\bigl(\pi, \operatorname{Ind}_H^G\sigma\bigr) \;\cong\; \operatorname{Hom}_H\bigl(\pi|_H, \sigma\bigr)\;} ,
 $$
 
 where $\operatorname{Hom}_G$ and $\operatorname{Hom}_H$ denote spaces of intertwining operators. In the finite case with $\sigma$ one-dimensional this is the classical Frobenius reciprocity of *Representations of Groups*, and its character form is

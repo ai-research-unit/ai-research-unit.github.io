@@ -117,8 +117,7 @@ and the absolute value is at most $\sup_{\lvert t-c_0\rvert \leq \lvert h\rvert}
 
 **Theorem (fundamental theorem, second form).** If $F$ is differentiable on $[a,b]$ with $F'$ Riemann integrable, then
 
-$$
-\int_a^b F' = F(b) - F(a) .
+$$ \boxed{\;\int_a^b F' = F(b) - F(a) \;}.
 $$
 
 Consequently every Riemann integrable function with a primitive satisfies the evaluation formula, and primitives differ by constants.
@@ -129,8 +128,7 @@ Consequently every Riemann integrable function with a primitive satisfies the ev
 
 **Theorem (integration by parts).** If $u, v$ are differentiable on $[a,b]$ with $u', v'$ Riemann integrable, then
 
-$$
-\int_a^b u\,v' = u(b)v(b) - u(a)v(a) - \int_a^b u'\, v .
+$$ \boxed{\;\int_a^b u\,v' = u(b)v(b) - u(a)v(a) - \int_a^b u'\, v \;}.
 $$
 
 **Proof.** The product rule gives $(uv)' = u'v + uv'$, and both sides are Riemann integrable; the second fundamental theorem applied to $uv$ gives the identity.
@@ -191,8 +189,7 @@ $$
 
 **Theorem (Riesz representation).** Every bounded linear functional $\Lambda$ on the space $C[a,b]$ of continuous functions with the supremum norm is of the form
 
-$$
-\Lambda(f) = \int_a^b f\,dg
+$$ \boxed{\;\Lambda(f) = \int_a^b f\,dg\;}
 $$
 
 for a function $g$ of bounded variation, unique if normalised by $g(a) = 0$ and right-continuity in the interior. The functional is positive if and only if $g$ is increasing, and its norm is the total variation of $g$.

@@ -75,7 +75,7 @@ stated and proved.
 **Theorem (the commutator identity).** With $n=m+1$ the dimension of the ambient space,
 
 $$
-[\Delta, L_{|x|^2}] = \Delta L_{|x|^2}-L_{|x|^2}\Delta = 4E+2n .
+\boxed{\;[\Delta, L_{|x|^2}] = \Delta L_{|x|^2}-L_{|x|^2}\Delta = 4E+2n\;} .
 $$
 
 *Proof.* Direct computation: $\partial/\partial x_\mu\,(|x|^2Q)=2x_\mu Q+|x|^2\partial/\partial x_\mu Q$, so
@@ -106,7 +106,7 @@ of $\mathcal{P}_k$ onto $\mathcal{H}_k$ with kernel $|x|^2\mathcal{P}_{k-2}$, an
 for the orthogonal group of the ambient space. Iterating gives
 
 $$
-\mathcal{P}_k = \mathcal{H}_k\oplus|x|^2\mathcal{H}_{k-2}\oplus|x|^4\mathcal{H}_{k-4}\oplus\cdots ,
+\boxed{\;\mathcal{P}_k = \mathcal{H}_k\oplus|x|^2\mathcal{H}_{k-2}\oplus|x|^4\mathcal{H}_{k-4}\oplus\cdots\;} ,
 $$
 
 that is $\mathcal{P}_k=\bigoplus_{j\ge0}|x|^{2j}\mathcal{H}_{k-2j}$, the **Stokes decomposition**.
@@ -138,8 +138,8 @@ $\mathcal{P}_{k-1}$ injectively with image meeting $\mathcal{M}_k$ only at $0$.
 **Theorem (the monogenic Fischer decomposition).** For every $k\ge0$,
 
 $$
-\mathcal{P}_k = \bigoplus_{j=0}^{k}\,(x^{\natural})^{\,j}\,\mathcal{M}_{k-j} , \qquad
-\dim\mathcal{M}_k = \dim\mathcal{S}\left[\binom{m+k}{k}-\binom{m+k-1}{k-1}\right] .
+\boxed{\;\mathcal{P}_k = \bigoplus_{j=0}^{k}\,(x^{\natural})^{\,j}\,\mathcal{M}_{k-j} , \qquad
+\dim\mathcal{M}_k = \dim\mathcal{S}\left[\binom{m+k}{k}-\binom{m+k-1}{k-1}\right]\;} .
 $$
 
 *Proof.* By the lemma, $\dim\mathcal{M}_k=\dim\mathcal{P}_k-\dim\mathcal{P}_{k-1}$ and

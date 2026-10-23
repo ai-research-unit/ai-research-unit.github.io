@@ -24,7 +24,7 @@ with the form $\langle\cdot,\cdot\rangle$ of signature $(n,1)$ restricted to the
 **Theorem.** The isometry group of the hyperboloid model is
 
 $$
-\operatorname{Isom}(\mathbb{H}^n) \cong O(n,1) ,
+\boxed{\;\operatorname{Isom}(\mathbb{H}^n) \cong O(n,1)\;} ,
 $$
 
 the group of the linear maps preserving the form $\langle\cdot,\cdot\rangle$, and the orientation-preserving subgroup is $SO^+(n,1)$, the connected component of the identity, which acts transitively on $\mathbb{H}^n$ and has the stabiliser of a point conjugate to $O(n)$; consequently
@@ -104,7 +104,7 @@ $$
 the **signed geodesic flow** is the flow together with the reversal, and the pair satisfies
 
 $$
-\sigma \circ \phi_t = \phi_{-t} \circ \sigma ,
+\boxed{\;\sigma \circ \phi_t = \phi_{-t} \circ \sigma\;} ,
 $$
 
 so the reversal conjugates the flow to its inverse. The article calls the flow the **signed one-sided operator** of the hyperbolic space, the one-sided datum being the parameter $t$ and the sign being the reversal $\sigma$.

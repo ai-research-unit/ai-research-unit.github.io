@@ -56,7 +56,7 @@ invariant under Möbius transformations.
 **Theorem (distance formula).** For $z, w \in \mathbb{H}^2$,
 
 $$
-\cosh d(z, w) = 1 + \frac{|z - w|^2}{2\operatorname{Im} z\,\operatorname{Im} w},
+\boxed{\;\cosh d(z, w) = 1 + \frac{|z - w|^2}{2\operatorname{Im} z\,\operatorname{Im} w}\;},
 $$
 
 and for points on the imaginary axis $z = it$, $w = is$,
@@ -204,7 +204,7 @@ The computation is the elementary integral of the $2$-form $y^{-2}dx\wedge dy$ o
 **Theorem (angle sum and area).** For a hyperbolic triangle with angles $A, B, C$ and area $\Delta$,
 
 $$
-A + B + C = \pi - \Delta, \qquad \text{so} \qquad \Delta = \pi - (A + B + C).
+\boxed{\;A + B + C = \pi - \Delta, \qquad \text{so} \qquad \Delta = \pi - (A + B + C)\;}.
 $$
 
 **Proof.** This is the Gauss–Bonnet theorem of *Riemannian Geometry* for a geodesic triangle in a surface of curvature $-1$: the boundary term contributes the sum of the exterior angles and the angle sum appears with the sign appropriate to negative curvature.
@@ -214,7 +214,7 @@ $$
 **Theorem (hyperbolic law of cosines).** For a hyperbolic triangle with sides $a, b, c$ and opposite angles $A, B, C$,
 
 $$
-\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C,
+\boxed{\;\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C\;},
 $$
 
 and cyclically.

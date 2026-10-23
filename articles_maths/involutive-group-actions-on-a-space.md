@@ -26,7 +26,7 @@ equivalently $\tau\,g\,\tau = \alpha(g)$ for every $g$ as operators on $X$. An a
 **Theorem (the extension).** An equivariant involution $\tau$ is exactly the action of the generator of the semidirect product $G\rtimes_\alpha C_2$ on $X$: the formulas
 
 $$
-(g, t^\epsilon)\cdot x = g\cdot \tau^\epsilon(x) \qquad (\epsilon \in \{0, 1\})
+\boxed{\;(g, t^\epsilon)\cdot x = g\cdot \tau^\epsilon(x) \qquad (\epsilon \in \{0, 1\})\;}
 $$
 
 define a continuous action of $G\rtimes_\alpha C_2$ on $X$, and conversely every continuous action of the extension restricts to an action of $G$ with equivariant involution the action of the generator.
@@ -58,7 +58,7 @@ define a continuous action of $G\rtimes_\alpha C_2$ on $X$, and conversely every
 **Theorem (the fixed orbits).** The fixed points of the induced involution are the orbits $G\cdot x$ with $\tau(x) = g\cdot x$ for some $g \in G$. The natural map
 
 $$
-\rho : X^\tau/G^\alpha \longrightarrow (X/G)^{\bar\tau}, \qquad \rho(G^\alpha\cdot x) = G\cdot x ,
+\boxed{\;\rho : X^\tau/G^\alpha \longrightarrow (X/G)^{\bar\tau}, \qquad \rho(G^\alpha\cdot x) = G\cdot x\;} ,
 $$
 
 is well defined and injective; it is surjective exactly when every $\tau$-stable orbit contains a $\tau$-fixed point, and it may fail to be surjective.
@@ -76,7 +76,7 @@ is well defined and injective; it is surjective exactly when every $\tau$-stable
 **Proposition (the induced involution on functions).** Let $C(X)$ be the algebra of continuous functions $X\to k$. The formula $\tau^*f = f\circ\tau$ is an involution of $C(X)$, the subalgebra of $G$-invariants $C(X)^G$ is stable under it, and $C(X)^G$ with the involution $\tau^*$ is the algebra of continuous functions on the orbit space with the induced involution,
 
 $$
-C(X)^G \;\cong\; C(X/G) , \qquad \tau^*\text{ on } C(X)^G \;\longleftrightarrow\; \bar\tau^*\text{ on } C(X/G) .
+\boxed{\;C(X)^G \;\cong\; C(X/G) , \qquad \tau^*\text{ on } C(X)^G \;\longleftrightarrow\; \bar\tau^*\text{ on } C(X/G)\;} .
 $$
 
 **Proof.** $\tau^*$ is an algebra involution because $\tau$ is a homeomorphism of order two. A $G$-invariant function $f$ satisfies $(\tau^* f)(g\cdot x) = f(\tau(g\cdot x)) = f(\alpha(g)\cdot\tau(x)) = f(\tau(x))$, so $\tau^*f$ is again $G$-invariant. The identification with $C(X/G)$ is the universal property of the quotient map, and the two involutions correspond because $\bar\tau m = m\tau$.

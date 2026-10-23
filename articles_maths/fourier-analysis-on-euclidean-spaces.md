@@ -105,7 +105,7 @@ $$
 
 **Theorem (Plancherel).** The Fourier transform on $\mathcal{S}$ is an isometry of $L^2$,
 $$
-\lVert \mathcal F f\rVert_2 = \lVert f\rVert_2 \qquad (f\in\mathcal{S}),
+\boxed{\;\lVert \mathcal F f\rVert_2 = \lVert f\rVert_2 \qquad (f\in\mathcal{S})\;},
 $$
 and it extends uniquely to a unitary operator $\mathcal{F}:L^2\to L^2$, with $\mathcal{F}^4 = 1$ and $\mathcal{F}^2 = $ reflection; the inverse on $L^2$ is the conjugate transform, $f(x) = \int(\mathcal F f)(\xi)\exp(2\pi ix\cdot\xi)d\xi$ understood as an $L^2$ limit. For $f,g\in L^2$ the **Parseval identity** holds:
 $$
@@ -133,7 +133,7 @@ so that $h_1$ is an eigenfunction with eigenvalue $-i = (-i)^1$, in agreement wi
 
 **Theorem (Hausdorff–Young).** For $1\leq p\leq2$ and $1/n + 1/m = 1$,
 $$
-\lVert \mathcal F f\rVert_q\leq\lVert f\rVert_p \qquad (f\in L^{n}\cap L^1),
+\boxed{\;\lVert \mathcal F f\rVert_q\leq\lVert f\rVert_p \qquad (f\in L^{n}\cap L^1)\;},
 $$
 and the transform extends to a bounded linear map $L^{n}\to L^{m}$ of norm $1$; for $p=2$ this is Plancherel, for $p=1$ the trivial bound, and the intermediate cases fail for $p>2$.
 
@@ -145,7 +145,7 @@ and the transform extends to a bounded linear map $L^{n}\to L^{m}$ of norm $1$; 
 
 **Theorem (Heisenberg's inequality).** For $f\in L^2(\mathbb{R})$ with $xf\in L^2$ and $\mathcal F f\in L^2$,
 $$
-\lVert xf\rVert_2\,\lVert \xi(\mathcal F f)(\xi)\rVert_2\geq\frac{1}{4\pi}\lVert f\rVert_2^2 ,
+\boxed{\;\lVert xf\rVert_2\,\lVert \xi(\mathcal F f)(\xi)\rVert_2\geq\frac{1}{4\pi}\lVert f\rVert_2^2\;} ,
 $$
 with equality exactly for the modulated Gaussians $f(x) = c\exp(-ax^2+ibx)$; the rescaled Gaussians $\exp(-\pi ax^2)$ attain the constant for every $a>0$, which is the statement that no function is better localised in both variables than the Gaussian.
 

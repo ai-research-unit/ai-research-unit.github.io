@@ -22,7 +22,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach
 **Theorem (the reflection is an involutive automorphism).** For every unit $u$ the signed conjugation $\rho_u$ is a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$, and
 
 $$
-\rho_u^2 = c_{u\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u\alpha(u)}\;} ,
 $$
 
 so that $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector. Conversely every signed conjugation that is an involution has a reflector parameter.
@@ -38,7 +38,7 @@ so that $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactl
 **Proposition (fixed subalgebra and negated part).** Let $u$ be a reflector and $\rho = \rho_u$. Then, when $2$ is invertible,
 
 $$
-A = A^+_\rho \oplus A^-_\rho , \qquad A^+_\rho = \{x : \rho(x) = x\} , \qquad A^-_\rho = \{x : \rho(x) = -x\} ,
+\boxed{\;A = A^+_\rho \oplus A^-_\rho , \qquad A^+_\rho = \{x : \rho(x) = x\} , \qquad A^-_\rho = \{x : \rho(x) = -x\}\;} ,
 $$
 
 the fixed set $A^+_\rho$ is a closed subalgebra, the negated part $A^-_\rho$ is a closed subspace, and the multiplication table of the grading holds:
@@ -66,7 +66,7 @@ $$
 so the reflections are parametrised by the reflectors modulo the central units,
 
 $$
-\mathrm{Ref}(A,\alpha) \cong R^\times(A,\alpha)\big/ Z(A)^\times .
+\boxed{\;\mathrm{Ref}(A,\alpha) \cong R^\times(A,\alpha)\big/ Z(A)^\times\;} .
 $$
 
 **Proof.** If $\rho_u = \rho_v$ then $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$, so $(v^{-1}u)\alpha(x) = \alpha(x)(v^{-1}u)$ for all $x$; since $\alpha$ is onto, $v^{-1}u$ commutes with every element and lies in $Z(A)^\times$. Conversely a central unit is absorbed by the inner conjugation. The image of the central units is $\alpha$, since a central unit commutes with everything.

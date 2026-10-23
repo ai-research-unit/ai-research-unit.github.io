@@ -38,7 +38,7 @@ with $P(H)$ the projection onto the fibre over the coset $H$, which therefore co
 **Theorem (imprimitivity; Mackey).** Let $G$ be a locally compact group acting transitively on a standard Borel space $X$ with isotropy subgroups conjugate to a fixed closed subgroup $H$, and let $\rho$ be a unitary representation of $H$. Then the induced representation $\operatorname{Ind}_H^G\rho$ carries a system of imprimitivity based on $X = G/H$ by
 
 $$
-P(E)\, f = 1_E\, f , \qquad E \subseteq G/H ,
+\boxed{\;P(E)\, f = 1_E\, f , \qquad E \subseteq G/H\;} ,
 $$
 
 the projection being multiplication by the indicator function of $E$ in the function-space realisation. Conversely, every unitary representation $\pi$ of $G$ with a system of imprimitivity based on $G/H$ is unitarily equivalent to an induced representation $\operatorname{Ind}_H^G\rho$, where $\rho$ is the restriction of $\pi$ to the isotropy subgroup $H$ on the range of the projection $P(H)$.
@@ -58,7 +58,7 @@ Two induced representations may be equivalent even when the inducing data look d
 **Theorem (intertwining number theorem; Mackey).** Let $H_1, H_2$ be closed subgroups of $G$ and let $\rho_i$ be unitary representations of $H_i$. Under the standard regularity hypotheses on the double coset space $H_2\backslash G/H_1$ — which hold, in particular, when the space is countable and the orbit maps are sufficiently regular, as for a Lie group with closed subgroups — the intertwining space is given by
 
 $$
-\dim\operatorname{Hom}_G\bigl(\operatorname{Ind}_{H_1}^G\rho_1,\ \operatorname{Ind}_{H_2}^G\rho_2\bigr) \;=\; \sum_{s \in H_2\backslash G/H_1} \dim\operatorname{Hom}_{H_2\cap sH_1s^{-1}}\bigl(\rho_1^s,\ \rho_2\bigr) ,
+\boxed{\;\dim\operatorname{Hom}_G\bigl(\operatorname{Ind}_{H_1}^G\rho_1,\ \operatorname{Ind}_{H_2}^G\rho_2\bigr) \;=\; \sum_{s \in H_2\backslash G/H_1} \dim\operatorname{Hom}_{H_2\cap sH_1s^{-1}}\bigl(\rho_1^s,\ \rho_2\bigr)\;} ,
 $$
 
 with $\rho_1^s(x) = \rho_1(s^{-1}xs)$, the two representations $\rho_1^s$ and $\rho_2$ being read on the common subgroup $H_2\cap sH_1s^{-1}$. Consequently $\operatorname{Ind}_{H_1}^G\rho_1 \cong \operatorname{Ind}_{H_2}^G\rho_2$ precisely when the summands match: for a bijection $s \leftrightarrow s'$ between the double cosets carrying nonzero summands, the constituents $\operatorname{Ind}_{H_2\cap sH_1s^{-1}}^{H_2}\rho_1^s$ of the first representation and the corresponding constituents of the second are equivalent, all remaining summands of both sums being zero.
@@ -76,7 +76,7 @@ with $\rho_1^s(x) = \rho_1(s^{-1}xs)$, the two representations $\rho_1^s$ and $\
 **Theorem (restriction formula).** Let $H_1, H_2 \leq G$ be closed subgroups and let $\rho$ be a unitary representation of $H_1$. Then, as a representation of $H_2$,
 
 $$
-\Bigl(\operatorname{Ind}_{H_1}^G\rho\Bigr)\Big|_{H_2} \;\cong\; \bigoplus_{s \in H_2\backslash G/H_1} \operatorname{Ind}_{H_2\cap sH_1s^{-1}}^{H_2}\rho^s ,
+\boxed{\;\Bigl(\operatorname{Ind}_{H_1}^G\rho\Bigr)\Big|_{H_2} \;\cong\; \bigoplus_{s \in H_2\backslash G/H_1} \operatorname{Ind}_{H_2\cap sH_1s^{-1}}^{H_2}\rho^s\;} ,
 $$
 
 the sum running over the double cosets and $\rho^s(h) = \rho(s^{-1}hs)$ for $h \in H_2\cap sH_1s^{-1}$.

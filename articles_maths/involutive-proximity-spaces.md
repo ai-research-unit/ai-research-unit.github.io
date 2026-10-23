@@ -41,7 +41,7 @@ Every proximity map is continuous for the proximity topologies, and the proximit
 **Definition.** An **involutive proximity space** is a proximity space $X$ with an involution $\sigma$ that preserves the proximity,
 
 $$
-A \delta B \iff \sigma(A) \mathrel{\delta} \sigma(B) \qquad (A, B \subseteq X).
+\boxed{\;A \delta B \iff \sigma(A) \mathrel{\delta} \sigma(B) \qquad (A, B \subseteq X)\;}.
 $$
 
 The involution is then a **proximity involution**.
@@ -103,7 +103,7 @@ where $E[A] = \{y : (x,y) \in E \text{ for some } x \in A\}$; equivalently, $A$ 
 **Theorem.** Let $X$ be an involutive proximity space with completion $\hat X$: the complete separated proximity space containing $X$ as a dense subspace, which is the Smirnov compactification when the proximity is totally bounded. Then the involution $\sigma$ extends to exactly one proximity involution $\hat\sigma$ of $\hat X$, and the completion of the orbit space is the orbit space of the completion:
 
 $$
-\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma .
+\boxed{\;\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma\;} .
 $$
 
 **Proof.** The inclusion $X \to \hat X$ is a proximity map and $\hat X$ is complete and separated, so $\sigma : X \to X \subseteq \hat X$ extends uniquely to a proximity map $\hat\sigma : \hat X \to \hat X$, by the universal property of the completion for proximity maps into complete separated spaces; the composite $\hat\sigma\circ\hat\sigma$ extends the identity on the dense subspace, hence is the identity, so $\hat\sigma$ is an involution. The orbit map $\pi : X \to X/\sigma$ is a proximity map into a complete separated space, so it extends to $\hat X \to \widehat{X/\sigma}$ and descends to $\hat X/\hat\sigma \to \widehat{X/\sigma}$; conversely the composite $X \to \hat X \to \hat X/\hat\sigma$ extends from the dense subspace to $\widehat{X/\sigma} \to \hat X/\hat\sigma$. The two composites agree on the dense images and are therefore identities, so the maps are inverse proximity isomorphisms.

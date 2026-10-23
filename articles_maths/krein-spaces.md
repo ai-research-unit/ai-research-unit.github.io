@@ -23,7 +23,7 @@ with $K_{+}$ positive definite and complete for the norm $x\mapsto[x,x]^{1/2}$, 
 **Proposition (the induced Hilbert space).** Let $J$ act as $+\mathrm{id}$ on $K_{+}$ and $-\mathrm{id}$ on $K_{-}$. Then
 
 $$
-\langle x, y \rangle = [Jx, y] = [x_{+}, y_{+}] - [x_{-}, y_{-}], \qquad x = x_{+}+x_{-},\ y = y_{+}+y_{-},
+\boxed{\;\langle x, y \rangle = [Jx, y] = [x_{+}, y_{+}] - [x_{-}, y_{-}], \qquad x = x_{+}+x_{-},\ y = y_{+}+y_{-}\;},
 $$
 
 is a positive definite inner product on $K$, $K$ is complete for its norm $\|x\|^{2} = \langle x,x\rangle = \|x_{+}\|^{2} + \|x_{-}\|^{2}$, and the indefinite form is recovered by $[x,y] = \langle Jx,y\rangle$. So a Krein space is a Hilbert space with an involutive self-adjoint operator $J$.
@@ -41,7 +41,7 @@ is a positive definite inner product on $K$, $K$ is complete for its norm $\|x\|
 **Proposition (the form is continuous).** In any of the induced norms the indefinite form is continuous and bounded,
 
 $$
-|[x,y]| \leq \|x\|\,\|y\| ,
+\boxed{\;|[x,y]| \leq \|x\|\,\|y\|\;} ,
 $$
 
 and the bound is attained on $K_{+}$; on the whole space it is not coercive, since $[x,x]$ takes both signs on the unit sphere.

@@ -65,7 +65,7 @@ Hence $\pi$ is a morphism of $X$ over $k = \mathbb{F}_q$, and it is the operator
 
 **Theorem (fixed points of the Frobenius powers).** Let $X$ be a variety over $\mathbb{F}_q$ and let $\pi = F^a$ be its $q$-power Frobenius. For every $n\geq1$,
 $$
-X(\bar{\mathbb{F}}_q)^{\pi^n} = X(\mathbb{F}_{q^n}) ,
+\boxed{\;X(\bar{\mathbb{F}}_q)^{\pi^n} = X(\mathbb{F}_{q^n})\;} ,
 $$
 the set of points with values in the field with $q^n$ elements. In particular the fixed points of $\pi$ are the $\mathbb{F}_q$-points, $X(\bar{\mathbb{F}}_q)^{\pi} = X(\mathbb{F}_q)$.
 
@@ -93,7 +93,7 @@ is defined.
 
 **Theorem (the Lefschetz fixed-point formula, conjectural form).** For a separated variety $X$ of finite type over $\mathbb{F}_q$ there is a finite-dimensional $\ell$-adic cohomology with a $k$-linear action of $\pi$ such that
 $$
-|X(\mathbb{F}_{q^n})| = \sum_i(-1)^i\operatorname{tr}\bigl(\pi^{n*}\mid H^i_{\mathrm{ét}}(X_{\bar{\mathbb{F}}_q},\mathbb{Q}_\ell)\bigr)
+\boxed{\;|X(\mathbb{F}_{q^n})| = \sum_i(-1)^i\operatorname{tr}\bigl(\pi^{n*}\mid H^i_{\mathrm{ét}}(X_{\bar{\mathbb{F}}_q},\mathbb{Q}_\ell)\bigr)\;}
 $$
 for every $n\geq1$. This is the fixed-point theorem whose left side is the fixed set of the previous section and whose right side is an alternating trace of the operator on cohomology, in the form in which the corpus records it.
 
@@ -107,7 +107,7 @@ the product running over the closed points of $X$, with $\deg(x) = [\kappa(x):\m
 
 **Theorem (the bridge to the point counts).** The zeta function is the formal exponential of the point counts,
 $$
-Z(X,t) = \exp\Bigl(\sum_{n\geq1}|X(\mathbb{F}_{q^n})|\,\frac{t^n}{n}\Bigr),
+\boxed{\;Z(X,t) = \exp\Bigl(\sum_{n\geq1}|X(\mathbb{F}_{q^n})|\,\frac{t^n}{n}\Bigr)\;},
 $$
 so that the arithmetic of the fixed points of the Frobenius powers determines the zeta function and conversely.
 

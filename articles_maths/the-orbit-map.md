@@ -23,7 +23,7 @@ Two points lie in the same orbit exactly when one is carried to the other by an 
 **Proposition.** The stabilisers of two points in the same orbit are conjugate: for $y = gx$,
 
 $$
-G_{gx} = g\,G_x\,g^{-1}.
+\boxed{\;G_{gx} = g\,G_x\,g^{-1}\;}.
 $$
 
 Consequently the orbit is $\{gx : g \in G\}$, and the assignment $gG_x \mapsto gx$ is a bijection of the set of left cosets of the stabiliser onto the orbit.
@@ -43,7 +43,7 @@ The definition is not a choice: the quotient topology is the finest topology on 
 **Theorem.** The orbit map $\pi$ is continuous and surjective, and
 
 $$
-\pi^{-1}(\Omega) = \bigcup_{O \in \Omega} O \quad \text{for } \Omega \subseteq X/G,
+\boxed{\;\pi^{-1}(\Omega) = \bigcup_{O \in \Omega} O \quad \text{for } \Omega \subseteq X/G\;},
 $$
 
 so the preimage of a set of orbits is a union of orbits. A subset $\Omega \subseteq X/G$ is open if and only if its preimage is open in $X$, if and only if its preimage is a $G$-invariant open set of $X$.
@@ -89,7 +89,7 @@ The saturation is the operator that sends a set to the union of the orbits it me
 **Theorem.** The direct image and the preimage of the orbit map are adjoint,
 
 $$
-\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq \Omega \iff A \subseteq \pi^{-1}(\Omega),
+\boxed{\;\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq \Omega \iff A \subseteq \pi^{-1}(\Omega)\;},
 $$
 
 and the preimage is a bijection onto the invariants, so the unit and the counit of the adjunction are the saturation and the identity:

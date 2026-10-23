@@ -59,7 +59,7 @@ whenever the $a_k$ have $\varphi(a_k)=0$ and adjacent $a_k$ lie in distinct suba
 
 **Theorem (the moments factor under freeness).** If $x_1,\dots,x_n$ are free, then the joint moments $\varphi(x_{i_1}\cdots x_{i_m})$ are determined by the moments of the individual $x_i$ by the recursion that removes the consecutive equal blocks and applies the freeness; in particular for free $x,y$,
 $$
-\varphi(xy)=\varphi(x)\varphi(y),\qquad \varphi(xyxy)=\varphi(x^2)\varphi(y)^2+\varphi(x)^2\varphi(y^2)-\varphi(x)^2\varphi(y)^2 .
+\boxed{\;\varphi(xy)=\varphi(x)\varphi(y),\qquad \varphi(xyxy)=\varphi(x^2)\varphi(y)^2+\varphi(x)^2\varphi(y^2)-\varphi(x)^2\varphi(y)^2\;} .
 $$
 
 *Proof.* Both sides are the value of the recursion on the mixed moment; the displayed identities are the first two cases, the second obtained by writing each of $x-\varphi(x)$ and $y-\varphi(y)$ and expanding the vanishing of the four-term free moment.
@@ -97,7 +97,7 @@ converges in moments to the semicircle law $\mu_\sigma$.
 
 **Theorem.** The moments of the standard semicircle law are
 $$
-\int t^{2m}\,d\mu_1(t)=C_m=\frac{1}{m+1}\binom{2m}{m},\qquad \int t^{2m+1}\,d\mu_1(t)=0 .
+\boxed{\;\int t^{2m}\,d\mu_1(t)=C_m=\frac{1}{m+1}\binom{2m}{m},\qquad \int t^{2m+1}\,d\mu_1(t)=0\;} .
 $$
 
 *Proof.* The density integrates to the Catalan numbers, as the generating function $\sum_mC_mz^m=\frac{1-\sqrt{1-4z}}{2z}$ makes explicit; equivalently the moments satisfy $m_0=1$ and the recursion $m_{2m}=\sum_{k=0}^{m-1}m_{2k}m_{2m-2-2k}$, which is the recursion the non-crossing pairings obey.
@@ -114,7 +114,7 @@ and the **$R$-transform** is $R_x(z)=\sum_{n\ge1}\kappa_n(x)z^{n-1}$.
 
 **Theorem (additivity).** If $x$ and $y$ are free, then
 $$
-R_{x+y}=R_x+R_y ,
+\boxed{\;R_{x+y}=R_x+R_y\;} ,
 $$
 that is, the free cumulants are additive under freeness, in the same way that the classical cumulants are additive under independence.
 

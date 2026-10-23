@@ -120,7 +120,7 @@ $$
 **Theorem.** With the Krull topology, $\operatorname{Gal}(L/K)$ is a profinite group:
 
 $$
-\operatorname{Gal}(L/K) \cong \varprojlim_{M/K \text{ finite Galois}} \operatorname{Gal}(M/K),
+\boxed{\;\operatorname{Gal}(L/K) \cong \varprojlim_{M/K \text{ finite Galois}} \operatorname{Gal}(M/K)\;},
 $$
 
 the isomorphism carrying $\sigma$ to the family $(\sigma|_M)_M$. Consequently $\operatorname{Gal}(L/K)$ is compact, Hausdorff and totally disconnected, and its open subgroups are the subgroups $\operatorname{Gal}(L/M)$ for finite Galois $M/K$.
@@ -134,7 +134,7 @@ The point of the topology is that it makes the Galois correspondence exact.
 **Theorem (Krull).** Let $L/K$ be a Galois extension with group $G = \operatorname{Gal}(L/K)$ carrying the Krull topology. The assignments
 
 $$
-M \longmapsto \operatorname{Gal}(L/M), \qquad H \longmapsto L^H,
+\boxed{\;M \longmapsto \operatorname{Gal}(L/M), \qquad H \longmapsto L^H\;},
 $$
 
 are mutually inverse bijections between the intermediate fields $K \subseteq M \subseteq L$ and the **closed** subgroups $H \subseteq G$. Under the bijection:
@@ -174,7 +174,7 @@ the inverse limit over the finite-index normal subgroups with the natural map $\
 **Theorem.** The profinite completion $\hat G^{\mathrm{pf}}$ is a profinite group and $\iota_G$ has dense image. The assignment $G \mapsto \hat G^{\mathrm{pf}}$ is a functor from groups to profinite groups, left adjoint to the forgetful functor: for a profinite group $P$,
 
 $$
-\operatorname{Hom}_{\mathrm{prof}}(\hat G^{\mathrm{pf}}, P) \cong \operatorname{Hom}_{\mathrm{grp}}(G, P).
+\boxed{\;\operatorname{Hom}_{\mathrm{prof}}(\hat G^{\mathrm{pf}}, P) \cong \operatorname{Hom}_{\mathrm{grp}}(G, P)\;}.
 $$
 
 The map $\iota_G$ is injective precisely when $G$ is residually finite.

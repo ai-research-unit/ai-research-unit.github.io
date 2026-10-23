@@ -16,7 +16,7 @@ The Clifford algebra, the parity grading and the volume element are from *Cliffo
 **Proposition.** Let $e\in V$ with $\mathfrak{Q}(e)=1$. Then
 
 $$
-\pi=\tfrac12(1+e)
+\boxed{\;\pi=\tfrac12(1+e)\;}
 $$
 
 is an idempotent, and $ef=\pi$ while $e \pi'=-\pi'$ for $\pi'=\tfrac12(1-e)$, which is the complementary idempotent.
@@ -90,7 +90,7 @@ is an idempotent, and $a_if=0$ for every $i$.
 **Theorem.** Let $\pi$ be the idempotent of a Witt basis. Then the map
 
 $$
-\Lambda^{\bullet}\bigl(\operatorname{span}\{a_1^{\dagger},\ldots,a_m^{\dagger}\}\bigr)\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad a_{i_1}^{\dagger}\wedge\cdots\wedge a_{i_k}^{\dagger}\longmapsto a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi,
+\boxed{\;\Lambda^{\bullet}\bigl(\operatorname{span}\{a_1^{\dagger},\ldots,a_m^{\dagger}\}\bigr)\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad a_{i_1}^{\dagger}\wedge\cdots\wedge a_{i_k}^{\dagger}\longmapsto a_{i_1}^{\dagger}\cdots a_{i_k}^{\dagger}\pi\;},
 $$
 
 is an isomorphism of vector spaces, and under it the creation operators $a_i^{\dagger}$ act by exterior multiplication and the annihilation operators $a_i$ by contraction.
@@ -108,7 +108,7 @@ The even subalgebra acts on a minimal left ideal, and for the idempotent of a un
 **Theorem.** Let $\mathfrak{Q}(e)=1$ and $\pi=\tfrac12(1+e)$. Then $\mathrm{Cl}^0(V,\mathfrak{Q})\pi=\mathrm{Cl}(V,\mathfrak{Q})\pi$, and the map
 
 $$
-\mathrm{Cl}^0(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad x\longmapsto xf,
+\boxed{\;\mathrm{Cl}^0(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q})\pi, \qquad x\longmapsto xf\;},
 $$
 
 is an isomorphism of $\mathrm{Cl}^0$-modules; hence $\mathrm{Cl}(V,\mathfrak{Q})\pi$ is free of rank one over the even subalgebra and has dimension $2^{n-1}=\dim\mathrm{Cl}^0(V,\mathfrak{Q})$.

@@ -62,8 +62,8 @@ The three involutions satisfy the **composition relations**
 $$
 \boxed{\;
 \tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))
-\;}
-$$,
+\;},
+$$
 
 so that, as maps, ${}^{\natural} = \alpha\rho = \rho\alpha$. Equivalently, $\alpha{}^{\natural} = \rho$ and $\rho{}^{\natural} = \alpha$. In particular $\alpha$ and $\rho$ commute, and the set $\{\operatorname{id}, \alpha, \rho, {}^{\natural}\}$ is closed under composition with every element of order two; it is the Klein four-group. The structure of this group and the way it permutes its members are developed in *Split-Quaternion Involution Lattice*.
 
@@ -84,8 +84,8 @@ The fixed space is the scalar line, of dimension $1$; the anti-fixed space is th
 $$
 \boxed{\;
 \{\tilde q : \alpha(\tilde q) = \tilde q\} = \operatorname{span}\{1, \vec e_z\} = \mathbb{D}_3, \qquad \{\tilde q : \alpha(\tilde q) = -\tilde q\} = \operatorname{span}\{\vec e_x, \vec e_y\}
-\;}
-$$.
+\;}.
+$$
 
 Both eigenspaces have dimension $2$. The fixed space is the split-complex plane $\mathbb{D}_3$; the anti-fixed space is the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, which carries the hyperbolic form $q_x^2 - q_y^2$ of signature $(1,1)$ and is spanned by the two basis elements that anticommute into $\pm \vec e_z$.
 
@@ -114,8 +114,8 @@ Because $\alpha$ and $\rho$ commute, they are simultaneously diagonalisable, and
 $$
 \boxed{\;
 \mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y\} \;\oplus\; \mathbb{R} \vec e_z
-\;}
-$$,
+\;},
+$$
 
 of dimensions $1, 2, 1$, on which the sign pair $(\alpha, \rho)$ takes the values $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The sign pair $(-,-)$ does not occur.
 

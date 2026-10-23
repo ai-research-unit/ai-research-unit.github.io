@@ -14,7 +14,7 @@ The article assumes the elementary theory of groups from *Groups*, the definitio
 **Proposition.** The signed conjugation is the automorphism $c_a\circ\alpha$ of $G$, with inverse $\Sigma^{\alpha}_{a^{-1},a}=\alpha\circ c_{a^{-1}}=c_{\alpha(a^{-1})}\circ\alpha$; its square is the inner conjugation by $a\alpha(a)$,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} ,
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)}\;} ,
 $$
 
 and it is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$.
@@ -24,7 +24,7 @@ and it is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$.
 **Proposition (the fixed subgroup).** The fixed set of the signed conjugation is
 
 $$
-\operatorname{Fix}(a) = \{ x\in G : \alpha(x) = a^{-1}xa \} = \{ x\in G : \alpha(x)=c_{a^{-1}}(x) \},
+\boxed{\;\operatorname{Fix}(a) = \{ x\in G : \alpha(x) = a^{-1}xa \} = \{ x\in G : \alpha(x)=c_{a^{-1}}(x) \}\;},
 $$
 
 and it is a subgroup of $G$, nonempty because it contains an element $x$ with $\alpha(x)=a^{-1}xa$ exactly when the operator has a fixed point; when it is nonempty it is a coset of the fixed subgroup $G^{\alpha}=\{x:\alpha(x)=x\}$ of the grade involution.
@@ -62,7 +62,7 @@ The construction degenerates in three ways, and they are distinguished by which 
 **Proposition (abelian group).** If $G$ is abelian then every inner conjugation is the identity, so every signed conjugation is the grade involution,
 
 $$
-\rho_a = c_a\circ\alpha = \alpha \quad\text{for every } a,
+\boxed{\;\rho_a = c_a\circ\alpha = \alpha \quad\text{for every } a\;},
 $$
 
 and the reflections of $(G,\alpha)$ are the single operator $\alpha$. In particular, if $\alpha=\mathrm{id}$ as well then the only reflection is the identity.

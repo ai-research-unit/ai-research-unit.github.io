@@ -11,7 +11,9 @@ The two products are defined and their structures asserted here. The associator 
 **Definition.** The **general plain bilinear product** and the **general plain sesquilinear product** of the elements $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are
 
 $$
-Q_1Q_2 = (q_1q_2+q'_1q'_2) + (q_1q'_2+q'_1q_2)\,j, \qquad Q_1\overline{Q_2} = (q_1q_2-q'_1q'_2) + (q'_1q_2-q_1q'_2)\,j .
+\boxed{\;
+Q_1Q_2 = (q_1q_2+q'_1q'_2) + (q_1q'_2+q'_1q_2)\,j, \qquad Q_1\overline{Q_2} = (q_1q_2-q'_1q'_2) + (q'_1q_2-q_1q'_2)\,j
+\;}.
 $$
 
 The two products are defined on the same coordinates and take their values in the same plane; the first is the product of the algebra, the second differs from it by the conjugation of the second argument. They are the two products of the split-complex space, the bilinear one and the sesquilinear one.
@@ -27,7 +29,7 @@ and the two products coincide exactly when the second factor is real or the firs
 **Proof.** Bilinearity of $Q_1Q_2$ is the distributivity of the algebra. For $Q_1\overline{Q_2}$, linearity in $Q_1$ is clear from the coordinates; in the second argument, $Q_1\overline{\lambda Q_2}=Q_1\,\bar\lambda\,\overline{Q_2}=\bar\lambda\,Q_1\overline{Q_2}$, so the argument is conjugate-linear. The difference is
 
 $$
-\boxed{\; Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2(q'_1+q_1j) \;},
+Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2(q'_1+q_1j),
 $$
 
 which vanishes if and only if $q'_2=0$, that is $Q_2\in\mathbb{R}$, or $Q_1=0$.

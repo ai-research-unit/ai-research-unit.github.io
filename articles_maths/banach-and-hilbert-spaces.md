@@ -44,7 +44,7 @@ $$
 **Theorem (Cauchy–Schwarz).** For all $x,y$ in an inner product space,
 
 $$
-|\langle x,y\rangle| \le \|x\|\,\|y\| ,
+\boxed{\;|\langle x,y\rangle| \le \|x\|\,\|y\|\;} ,
 $$
 
 with equality if and only if $x,y$ are linearly dependent.
@@ -94,7 +94,7 @@ The parallelogram law therefore characterises the inner-product norms among all 
 **Theorem (projection).** Let $C$ be a nonempty closed convex subset of a Hilbert space $H$. For every $x \in H$ there is a unique $p \in C$ with $\|x-p\|=d(x,C)=\inf_{c \in C}\|x-c\|$. If $C=M$ is a closed subspace, then $x-p \perp M$ and every $x$ has a unique decomposition
 
 $$
-x=p+q, \qquad p \in M,\ q \in M^{\perp} ,
+\boxed{\;x=p+q, \qquad p \in M,\ q \in M^{\perp}\;} ,
 $$
 
 so $H=M \oplus M^{\perp}$, where $M^{\perp}=\{y : \langle y,m\rangle=0 \text{ for all } m \in M\}$.
@@ -196,7 +196,7 @@ $$
 **Theorem (spectral theorem, self-adjoint case).** Let $T$ be a bounded self-adjoint operator on a Hilbert space $H$. Then there is a spectral measure $E$ supported on the compact set $\sigma(T) \subseteq \mathbb{R}$ such that
 
 $$
-T=\int_{\sigma(T)}\lambda\,dE(\lambda), \qquad \text{so that} \qquad \langle Tx,y\rangle=\int_{\sigma(T)}\lambda\,d\langle E(\lambda)x,y\rangle ,
+\boxed{\;T=\int_{\sigma(T)}\lambda\,dE(\lambda), \qquad \text{so that} \qquad \langle Tx,y\rangle=\int_{\sigma(T)}\lambda\,d\langle E(\lambda)x,y\rangle\;} ,
 $$
 
 and for every bounded measurable function $f$ on $\sigma(T)$ the operator $f(T)=\int f\,dE$ is bounded with $\|f(T)\|=\sup_{\lambda \in \sigma(T)}|f(\lambda)|$. The map $f \mapsto f(T)$ is a $\mathbb{K}$-algebra homomorphism from the bounded Borel functions to $B(H)$ sending $1$ to $I$ and the identity function to $T$.

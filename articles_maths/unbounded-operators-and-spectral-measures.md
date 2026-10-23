@@ -104,7 +104,7 @@ The Cayley transform turns the analytic condition $A=A^*$ into the algebraic con
 **Theorem (von Neumann).** A closed symmetric operator $A$ has a self-adjoint extension if and only if $n_+=n_-$. When this holds, the self-adjoint extensions are in bijective correspondence with the unitary maps $U:N_+\to N_-$, the extension $A_U$ being determined by
 
 $$
-D(A_U)=D(A)\oplus\{x+Ux:x \in N_+\}, \qquad A_U(x+x_0+Ux_0)=Ax+ix_0-iUx_0 .
+\boxed{\;D(A_U)=D(A)\oplus\{x+Ux:x \in N_+\}, \qquad A_U(x+x_0+Ux_0)=Ax+ix_0-iUx_0\;} .
 $$
 
 The correspondence is obtained from the unitary extensions of the Cayley transform and is a theorem of von Neumann.
@@ -157,7 +157,7 @@ $$
 the integral converging as a strong limit; equivalently,
 
 $$
-\langle Ax,y\rangle=\int_{\mathbb{R}}\lambda\,d\langle E(\lambda)x,y\rangle, \qquad x \in D(A),\ y \in H .
+\boxed{\;\langle Ax,y\rangle=\int_{\mathbb{R}}\lambda\,d\langle E(\lambda)x,y\rangle, \qquad x \in D(A),\ y \in H\;} .
 $$
 
 The measure satisfies $E(B)=0$ for Borel $B$ disjoint from $\sigma(A)$, so $\operatorname{supp}E=\sigma(A)$; conversely $\lambda \in \sigma(A)$ exactly when $E\bigl((\lambda-\varepsilon,\lambda+\varepsilon)\bigr)\neq0$ for every $\varepsilon>0$, so the spectrum is real. If $A$ is bounded with $\|A\|\le M$ then $E$ is supported in $[-M,M]$ and $A=\int_{-M}^M\lambda\,dE(\lambda)$, recovering the spectral theorem of *Banach and Hilbert Spaces*.
@@ -199,7 +199,7 @@ The holomorphic calculus for a single bounded operator is the standard one obtai
 **Theorem (polar decomposition).** Let $A$ be a closed densely defined operator. Then there is a positive self-adjoint operator $|A|=(A^*A)^{1/2}$ with $D(|A|)=D(A)$ and a partial isometry $U$ with $\ker U=\ker A$ and closed initial space $\overline{|A|(D(A))}$, such that
 
 $$
-A=U|A|, \qquad |A|=U^*A,
+\boxed{\;A=U|A|, \qquad |A|=U^*A\;},
 $$
 
 and $U$ is uniquely determined by these conditions. The decomposition separates $A$ into its "modulus" $|A|$ and its "argument" $U$, and $|A|$ has spectral measure computed from $A^*A$; the decomposition specialises to the polar decomposition of a bounded operator and to the absolute value of a self-adjoint operator.

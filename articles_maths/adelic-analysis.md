@@ -29,7 +29,7 @@ whenever $A_v$ is a measurable subset of $K_v$ equal to $\mathcal{O}_v$ for almo
 
 **Theorem (finiteness of the volume).** The quotient $\mathbb{A}/K$ has finite volume for every number field, and it is compact exactly when $K$ is a function field, that is, when $K$ has no infinite place: for a number field $\mathbb{A}/K$ is not compact. With the normalisation above,
 $$
-\operatorname{vol}(\mathbb{A}/K) = \frac{2^{r_1}(2\pi)^{r_2}\,h\,R}{w\sqrt{\lvert d_K \rvert}},
+\boxed{\;\operatorname{vol}(\mathbb{A}/K) = \frac{2^{r_1}(2\pi)^{r_2}\,h\,R}{w\sqrt{\lvert d_K \rvert}}\;},
 $$
 where $h$ is the class number, $R$ the regulator, $w$ the number of roots of unity in $K$ and $d_K$ the discriminant. In particular $\operatorname{vol}(\mathbb{A}_\mathbb{Q}/\mathbb{Q}) = 1$.
 
@@ -79,7 +79,7 @@ $$
 
 **Theorem (Poisson summation).** Let $f \in \mathcal{S}(\mathbb{A})$. Then
 $$
-\sum_{\gamma \in K} f(\gamma) = \sum_{\gamma \in K} (\mathcal F f)(\gamma),
+\boxed{\;\sum_{\gamma \in K} f(\gamma) = \sum_{\gamma \in K} (\mathcal F f)(\gamma)\;},
 $$
 both series converging absolutely.
 
@@ -154,7 +154,7 @@ $$
 $$
 is the completed $L$-function of $\chi$ and satisfies
 $$
-\Lambda(s,\chi) = \epsilon(s,\chi)\,\Lambda(1-s,\chi^{-1}),
+\boxed{\;\Lambda(s,\chi) = \epsilon(s,\chi)\,\Lambda(1-s,\chi^{-1})\;},
 $$
 with the global root number satisfying $\epsilon(s,\chi)\epsilon(1-s,\chi^{-1}) = 1$.
 

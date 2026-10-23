@@ -26,7 +26,7 @@ and $T$ is **bounded** when $\lVert T\rVert < +\infty$. The bounded operators fo
 **Theorem ($B(A)$ is a Banach algebra).** $B(A)$ is a unital algebra under the pointwise linear structure, the composition of operators and the identity $\mathrm{id}$, and
 
 $$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1 \ (A \neq 0),
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1 \ (A \neq 0)\;},
 $$
 
 so the operator norm is a submultiplicative norm on $B(A)$; $B(A)$ is complete for it, hence a unital Banach algebra, and the multiplication of $B(A)$ is continuous.
@@ -60,7 +60,7 @@ and when $A$ is unital both inequalities are equalities, $\lVert L_a\rVert = \lV
 **Proposition (composition and commutation).** For all $a,b \in A$,
 
 $$
-L_{ab} = L_aL_b , \qquad R_{ab} = R_bR_a , \qquad L_aR_b = R_bL_a .
+\boxed{\;L_{ab} = L_aL_b , \qquad R_{ab} = R_bR_a , \qquad L_aR_b = R_bL_a\;} .
 $$
 
 Hence $a \mapsto L_a$ is a unital algebra homomorphism and $a \mapsto R_a$ a unital anti-homomorphism, and the two families commute.
@@ -136,7 +136,7 @@ so $x \mapsto \operatorname{ad}_x$ is a homomorphism of the commutator algebra o
 **Theorem (the exponential of a bounded derivation).** Let $D \in \operatorname{Der}(A) \cap B(A)$ be a bounded derivation. Then the series $\exp D = \sum_{n \geq 0} D^n/n!$ converges in the Banach algebra $B(A)$, its sum is a bounded algebra automorphism of $A$, and
 
 $$
-(\exp D)^{-1} = \exp(-D) , \qquad \exp D = \sum_{n\geq0}\frac{D^n}{n!} , \qquad \exp(D)(ab) = (\exp D\,a)(\exp D\,b) .
+\boxed{\;(\exp D)^{-1} = \exp(-D) , \qquad \exp D = \sum_{n\geq0}\frac{D^n}{n!} , \qquad \exp(D)(ab) = (\exp D\,a)(\exp D\,b)\;} .
 $$
 
 Hence the exponential carries the bounded derivations into the automorphism group $\operatorname{Aut}(A)$.

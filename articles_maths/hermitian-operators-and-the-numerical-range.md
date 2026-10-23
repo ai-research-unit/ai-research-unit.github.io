@@ -51,7 +51,7 @@ so two operators with the same sesquilinear form have the same numerical range, 
 **Theorem (the spectrum lies in the closure).** For every $T\in B(H)$,
 
 $$
-\sigma(T)\subseteq\overline{W(T)} ,
+\boxed{\;\sigma(T)\subseteq\overline{W(T)}\;} ,
 $$
 
 and the boundary of the spectrum is contained in the boundary of the closure of the numerical range, $\partial\sigma(T)\subseteq\partial\overline{W(T)}$.
@@ -63,7 +63,7 @@ and the boundary of the spectrum is contained in the boundary of the closure of 
 **Theorem (equivalence of the norms).** For every $T\in B(H)$,
 
 $$
-\tfrac12\|T\|\le w(T)\le\|T\| ,
+\boxed{\;\tfrac12\|T\|\le w(T)\le\|T\|\;} ,
 $$
 
 and the constant $\tfrac12$ is sharp: on the two-dimensional Hilbert space the shift matrix $T=\begin{pmatrix}0&2\\0&0\end{pmatrix}$ has $\|T\|=2$ and $w(T)=1$.
@@ -95,7 +95,7 @@ and the numerical radius does not exceed the norm; the lower bound on the norm i
 **Corollary.** For Hermitian $T$,
 
 $$
-\|T\|=w(T)=\sup_{x\in W(T)}|x| ,
+\boxed{\;\|T\|=w(T)=\sup_{x\in W(T)}|x|\;} ,
 $$
 
 and the numerical range is the interval $[m,M]$ with $m=\inf W(T)$ and $M=\sup W(T)$ equal to the infimum and supremum of the spectrum; in particular $T$ is positive exactly when $W(T)\subseteq[0,\infty)$ and $T$ is positive and invertible exactly when $W(T)\subseteq[c,\infty)$ for some $c>0$.

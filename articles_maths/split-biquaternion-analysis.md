@@ -247,7 +247,9 @@ The tilde on $\tilde{\nabla}$ signals that it is a split-biquaternion-valued ope
 Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$, we can compute $\tilde{\nabla}F^{\mathrm{fn}}$ in scalar-vector form. Separating the cases in the double sum, we obtain
 
 $$
-\tilde{\nabla}F^{\mathrm{fn}} = \left(\partial/\partial Q_t F_0 - \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
+\boxed{\;
+\tilde{\nabla}F^{\mathrm{fn}} = \left(\partial/\partial Q_t F_0 - \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right)
+\;},
 $$
 
 where
@@ -291,7 +293,9 @@ $$
 where $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$ for $\mu = 1, 2, 3$. Expanding and separating the cases, the cross terms cancel, and we obtain
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = e_t (\partial^2/\partial Q_t^2 + \Delta),
+\boxed{\;
+\tilde{\nabla}\tilde{\nabla}^{\natural} = e_t (\partial^2/\partial Q_t^2 + \Delta)
+\;},
 $$
 
 where $\Delta = \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2$ is the ordinary three-dimensional Laplacian.
@@ -327,7 +331,9 @@ $$
 Separating the cases as before, we obtain
 
 $$
-\tilde{\nabla}\tilde{\nabla} = e_t \left(\partial^2/\partial Q_t^2 - \Delta\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu).
+\boxed{\;
+\tilde{\nabla}\tilde{\nabla} = e_t \left(\partial^2/\partial Q_t^2 - \Delta\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)
+\;}.
 $$
 
 In scalar-vector form,

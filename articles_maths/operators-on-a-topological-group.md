@@ -42,7 +42,7 @@ The two families of translations are the elementary operators, and in the topolo
 **Theorem.** Let $L(G) = \{L_g\}$ and $R(G) = \{R_g\}$. Each is a subgroup of $\operatorname{Homeo}(G)$ isomorphic to $G$, the two commute elementwise, and the subgroup $L(G)R(G)$ that they generate is the image of
 
 $$
-\pi : G\times G \longrightarrow \operatorname{Homeo}(G), \qquad \pi(a,b) = L_aR_b ,
+\boxed{\;\pi : G\times G \longrightarrow \operatorname{Homeo}(G), \qquad \pi(a,b) = L_aR_b\;} ,
 $$
 
 with kernel the anti-diagonal copy of the centre, $\ker\pi = \{(z,z^{-1}) : z \in Z(G)\}$. Hence $L(G)R(G) \cong (G\times G)/Z(G)$.
@@ -80,7 +80,7 @@ The later groups of the category build adjoints, and an adjoint is taken with re
 **Definition.** Let $k$ be a field and $k[G]$ the group algebra, with basis $G$ and finitely supported elements; write $C(G)$ for the $k$-algebra of continuous functions $G \to k$, carrying the topology of uniform convergence on compacta. The **natural pairing** of the category is
 
 $$
-\langle\cdot,\cdot\rangle : C(G) \times k[G] \longrightarrow k, \qquad \langle f, \lambda\rangle = \sum_{g \in G} f(g)\,\lambda_g ,
+\boxed{\;\langle\cdot,\cdot\rangle : C(G) \times k[G] \longrightarrow k, \qquad \langle f, \lambda\rangle = \sum_{g \in G} f(g)\,\lambda_g\;} ,
 $$
 
 the sum being finite because $\lambda$ has finite support.
@@ -92,7 +92,7 @@ the sum being finite because $\lambda$ has finite support.
 **Proposition (the translations are adjoint to their inverses).** On $C(G)$ let $L_a$ act by $(L_af)(x) = f(a^{-1}x)$ and $R_b$ by $(R_bf)(x) = f(xb)$; on $k[G]$ let $L_a$, $R_b$ act by left and right multiplication. Then
 
 $$
-\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle , \qquad \langle R_b f, \lambda\rangle = \langle f, R_{b^{-1}}\lambda\rangle .
+\boxed{\;\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle , \qquad \langle R_b f, \lambda\rangle = \langle f, R_{b^{-1}}\lambda\rangle\;} .
 $$
 
 **Proof.** $\langle L_af, \lambda\rangle = \sum_x f(a^{-1}x)\lambda_x = \sum_y f(y)\lambda_{ay}$, on reindexing $y = a^{-1}x$, and $(a^{-1}\lambda)_y = \lambda_{ay}$, so the first identity is the definition of the pairing. Similarly $\langle R_bf, \lambda\rangle = \sum_x f(xb)\lambda_x = \sum_y f(y)\lambda_{yb^{-1}}$, on reindexing $y = xb$, and $(ub^{-1})_y = \lambda_{yb}$, which gives the second identity.

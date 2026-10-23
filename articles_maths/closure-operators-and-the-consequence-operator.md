@@ -135,7 +135,7 @@ elements** of the system.
 **Theorem.** Let $P$ be a complete lattice. The map
 
 $$
-c \;\longmapsto\; P_c = \{x \in P : c(x) = x\}
+\boxed{\;c \;\longmapsto\; P_c = \{x \in P : c(x) = x\}\;}
 $$
 
 from closure operators on $P$ to closure systems in $P$ is a bijection, with inverse
@@ -167,7 +167,7 @@ determine each other.
 the inclusion of the closed elements. Then $c$ and $j$ are adjoint,
 
 $$
-c \dashv j, \qquad \text{that is,} \qquad c(x) \leq y \iff x \leq j(y) \quad (x \in P,\ y \in P_c).
+\boxed{\;c \dashv j, \qquad \text{that is,} \qquad c(x) \leq y \iff x \leq j(y) \quad (x \in P,\ y \in P_c)\;}.
 $$
 
 **Proof.** If $c(x) \leq y$ with $y$ closed, then $x \leq c(x) \leq y = j(y)$ by extensiveness. If $x
@@ -200,8 +200,8 @@ Part II is a different notion and is not meant.
 lattice in the order inherited from $P$, in which
 
 $$
-{\bigwedge}^{P_c}_{i} x_i = {\bigwedge}^{P}_{i} x_i, \qquad
-{\bigvee}^{P_c}_{i} x_i = c\Big({\bigvee}^{P}_{i} x_i\Big).
+\boxed{\;{\bigwedge}^{P_c}_{i} x_i = {\bigwedge}^{P}_{i} x_i, \qquad
+{\bigvee}^{P_c}_{i} x_i = c\Big({\bigvee}^{P}_{i} x_i\Big)\;}.
 $$
 
 **Proof.** The meet of a family of closed elements is closed, by the previous theorem, so it is the

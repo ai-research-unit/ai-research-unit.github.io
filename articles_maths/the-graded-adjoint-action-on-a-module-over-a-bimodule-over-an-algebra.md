@@ -22,7 +22,7 @@ the one-sided operator adjoint read as an action: since $(L_a)^{*}=L_{\sigma(a)}
 **Proposition.** The adjoint action is a right action of $A$ on $M$,
 
 $$
-(a b)\triangleright x = b\triangleright(a\triangleright x),
+\boxed{\;(a b)\triangleright x = b\triangleright(a\triangleright x)\;},
 $$
 
 and it satisfies $a\triangleright x = L_a^{*}(x)$; the original left action is recovered from the adjoint action by $a x=\sigma(a)\triangleright x$.
@@ -102,7 +102,7 @@ The graded commutator is the graded version of the commutator, and the sign $\ep
 **Theorem.** For homogeneous $a$ and a homogeneous operator $T$, with $\epsilon=(-1)^{\deg a\,\deg T}$,
 
 $$
-[L_a,T]_{\epsilon}^{*}=-\epsilon\,\bigl[L_{\sigma(a)},T^{*}\bigr]_{\epsilon}.
+\boxed{\;[L_a,T]_{\epsilon}^{*}=-\epsilon\,\bigl[L_{\sigma(a)},T^{*}\bigr]_{\epsilon}\;}.
 $$
 
 Thus the adjoint of the graded commutator is the graded commutator of the adjoints, up to the sign $-\epsilon$: the ordinary sign $-1$ for the commutator ($\epsilon=1$) and the sign $+1$ for the anticommutator ($\epsilon=-1$).
@@ -128,7 +128,7 @@ The theorem is the sign rule the grading imposes on the adjoint action: for two 
 **Proposition.** The adjoint action on the signed sandwiches is compatible with the grading:
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(b)}, \qquad \bigl(S_{a,b}\bigr)^{*}=S_{\sigma(a),\sigma(b)},
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(b)}, \qquad \bigl(S_{a,b}\bigr)^{*}=S_{\sigma(a),\sigma(b)}\;},
 $$
 
 and it sends operators of parity $i$ to operators of parity $i$: the adjoint action preserves the degree and the sign rule of the graded operators.

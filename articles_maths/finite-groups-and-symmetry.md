@@ -31,7 +31,7 @@ Everything is a statement about groups of transformations of a set. The symmetry
 **Definition.** For $n \geq 3$ the **dihedral group** $D_n$ is the group of order $2n$ with presentation
 
 $$
-D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle .
+\boxed{\;D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle\;} .
 $$
 
 Every element is uniquely $r^i$ or $r^i s$ with $0 \leq i < n$, the cyclic subgroup $C_n = \langle r \rangle$ is normal of index $2$, and $D_n \cong C_n \rtimes C_2$ with the nontrivial element of $C_2$ acting by inversion. For $n = 3$, $D_3 \cong S_3$. The group is the symmetry group of the regular $n$-gon; that realisation, which needs a distance, belongs to Part II.
@@ -59,7 +59,7 @@ Every element is uniquely $r^i$ or $r^i s$ with $0 \leq i < n$, the cyclic subgr
 **Theorem.** Two permutations of $S_n$ are conjugate if and only if they have the same cycle type. Hence the conjugacy classes of $S_n$ are indexed by the partitions of $n$, and if the cycle type has $m_k$ cycles of length $k$ then the class has size
 
 $$
-\frac{n!}{\prod_{k} k^{m_k} m_k!} .
+\boxed{\;\frac{n!}{\prod_{k} k^{m_k} m_k!}\;} .
 $$
 
 **Proof.** Conjugation relabels the points, so it preserves the partition into cycles; conversely, given two permutations with the same cycle structure, the bijection matching the cycles in order conjugates one to the other. For the size, the centraliser of the permutation consists of the permutations preserving the cycle decomposition, and its order is $\prod_k k^{m_k} m_k!$: each of the $m_k$ cycles of length $k$ contributes its $k$ powers and the $m_k$ cycles may be permuted. The class size is the index of the centraliser.

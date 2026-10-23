@@ -50,8 +50,8 @@ where $\alpha$ is the grade involution, *The Signed Sandwich on a Symmetry Group
 **Theorem.** The restriction of the signed inner conjugation to the vectors is the reflection:
 
 $$
-\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) \quad \text{for every } v \in V,
-\qquad \text{whereas} \qquad \mathrm{Ad}_u(v) = u v u^{-1} = -\rho_u(v) .
+\boxed{\;\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) \quad \text{for every } v \in V,
+\qquad \text{whereas} \qquad \mathrm{Ad}_u(v) = u v u^{-1} = -\rho_u(v)\;} .
 $$
 
 Hence the reflection of the form is a signed two-sided operator and the unsigned two-sided operator is its negative.
@@ -79,7 +79,7 @@ is a bijection of the Clifford algebra, with inverses $y \mapsto \alpha(u^{-1}y)
 **Proposition.** The signed inner conjugation $\mathrm{Ad}^{\alpha}_u$ is an involution of the group layer exactly when $u^{2} = \mathfrak{Q}(u)$ is central and $\alpha$ acts as required, namely
 
 $$
-\mathrm{Ad}^{\alpha}_u \circ \mathrm{Ad}^{\alpha}_u = \mathrm{id} \quad \text{on } V,
+\boxed{\;\mathrm{Ad}^{\alpha}_u \circ \mathrm{Ad}^{\alpha}_u = \mathrm{id} \quad \text{on } V\;},
 $$
 
 while on the whole Clifford algebra it is an involution composed with the grading: $\mathrm{Ad}^{\alpha}_u$ is an algebra automorphism on the even part and a twisted automorphism on the odd part, and its restriction to $V$ is the involution $\rho_u$ with the fixed hyperplane $u^{\perp}$ and the negated line $Fu$.
@@ -91,7 +91,7 @@ while on the whole Clifford algebra it is an involution composed with the gradin
 **Theorem (rotations as even signed sandwiches).** Let $u, w \in V$ have nonzero norm. The product of the two reflections is the signed sandwich by the even element $uw$,
 
 $$
-\rho_u \circ \rho_w = \mathrm{Ad}^{\alpha}_{uw} \quad \text{on } V,
+\boxed{\;\rho_u \circ \rho_w = \mathrm{Ad}^{\alpha}_{uw} \quad \text{on } V\;},
 $$
 
 and it is a rotation: it lies in $\operatorname{O}^+(V,\mathfrak{Q})$ and preserves the orientation. Conversely every rotation of $V$ is such a product, by Cartan–Dieudonné with an even number of factors.

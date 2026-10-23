@@ -94,7 +94,7 @@ For Fréchet spaces, separate continuity of a bilinear form implies joint contin
 **Theorem (Schwartz kernel theorem).** Let $X \subseteq \mathbb{R}^m$ and $Y \subseteq \mathbb{R}^n$ be open and nonempty. For every $T \in \mathcal L(\mathcal D(X),\mathcal D'(Y))$ there is a unique distribution $K \in \mathcal D'(Y \times X)$ with
 
 $$
-\langle T\varphi,\psi\rangle=\langle K,\psi\otimes\varphi\rangle \qquad \text{for all } \varphi \in \mathcal D(X),\ \psi \in \mathcal D(Y).
+\boxed{\;\langle T\varphi,\psi\rangle=\langle K,\psi\otimes\varphi\rangle \qquad \text{for all } \varphi \in \mathcal D(X),\ \psi \in \mathcal D(Y)\;}.
 $$
 
 Conversely, every $K \in \mathcal D'(Y\times X)$ defines by this formula an operator $T \in \mathcal L(\mathcal D(X),\mathcal D'(Y))$. The map $K \mapsto T$ is a linear isomorphism
@@ -188,7 +188,7 @@ and $K\mapsto T$ is an isomorphism $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L
 **Theorem.** (i) $K^*(x,y)=\overline{K(y,x)}$; (ii) if $S \in \mathcal L(\mathcal D(Y),\mathcal D'(Z))$ has kernel $L(z,y)$, then $S\circ T$ has kernel
 
 $$
-(L\circ K)(z,x)=\int_Y L(z,y)K(y,x)\,dy
+\boxed{\;(L\circ K)(z,x)=\int_Y L(z,y)K(y,x)\,dy\;}
 $$
 
 whenever one of the operators has compactly supported kernel, the integral being the distributional pairing in $y$, $\langle L(z,\cdot),K(\cdot,x)\rangle$; (iii) if $K \in L^2(X\times Y)$ then $T$ extends to a compact operator $L^2(X)\to L^2(Y)$ with Hilbert–Schmidt norm $\|T\|_{\mathrm{HS}}^2=\iint|K(x,y)|^2\,dx\,dy$, and every such operator has a kernel in $L^2(X\times Y)$; (iv) if $K \in C^\infty(X\times Y)$ then $T$ maps $\mathcal E'(X)$ into $C^\infty(Y)$, and these **smoothing** operators form a two-sided ideal in $\mathcal L(\mathcal D,\mathcal D')$.
@@ -220,7 +220,7 @@ The kernel theorem can be stated without test functions, as the compatibility of
 **Theorem (algebraic form).** For Fréchet nuclear $E$ and $F$,
 
 $$
-(E\hat\otimes F)' \cong E'\hat\otimes F' \cong \mathcal L(E,F'),
+\boxed{\;(E\hat\otimes F)' \cong E'\hat\otimes F' \cong \mathcal L(E,F')\;},
 $$
 
 the isomorphisms being the natural ones. Specialising to $E=\mathcal D(X)$, $F=\mathcal D(Y)$ recovers the kernel theorem in the form

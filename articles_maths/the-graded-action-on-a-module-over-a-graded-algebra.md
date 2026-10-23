@@ -20,7 +20,7 @@ and $1\cdot m=m$ for a unital algebra. The action is **graded** when it satisfie
 **Proposition.** The action is a homomorphism of graded algebras
 
 $$
-\rho:A\longrightarrow\operatorname{End}_R(M),\qquad \rho(a)(m)=a\cdot m,
+\boxed{\;\rho:A\longrightarrow\operatorname{End}_R(M),\qquad \rho(a)(m)=a\cdot m\;},
 $$
 
 where $\operatorname{End}_R(M)$ is graded by parity, $\operatorname{End}_R(M)^i=\{T:T(M^j)\subseteq M^{i+j}\}$; conversely every such homomorphism defines a graded action.
@@ -50,8 +50,8 @@ where $\operatorname{End}_R(M)$ is graded by parity, $\operatorname{End}_R(M)^i=
 **Theorem (the sign rule).** Let $A$ be **graded-commutative**, $ab=(-1)^{|a||b|}ba$ for homogeneous $a,b$. Then every graded module over $A$ satisfies the sign rule
 
 $$
-a\cdot(b\cdot m)=(-1)^{|a||b|}\,b\cdot(a\cdot m)
-\qquad\text{for homogeneous } a,b,m .
+\boxed{\;a\cdot(b\cdot m)=(-1)^{|a||b|}\,b\cdot(a\cdot m)
+\qquad\text{for homogeneous } a,b,m\;} .
 $$
 
 **Proof.** By the module axioms $a\cdot(b\cdot m)=(ab)\cdot m$ and $b\cdot(a\cdot m)=(ba)\cdot m$, and the graded commutativity of $A$ equates the two products with the sign; the module axioms then transport the equality to the actions.
@@ -61,7 +61,7 @@ $$
 **Theorem (the rule for a graded Lie algebra).** Let $\mathrm{G}$ be a graded Lie algebra with bracket of degree zero and graded antisymmetry, $[a,b]=-(-1)^{|a||b|}[b,a]$, and let $M$ be a graded $\mathrm{G}$-module; the action is compatible with the bracket exactly when
 
 $$
-a\cdot(b\cdot m)-(-1)^{|a||b|}\,b\cdot(a\cdot m)=[a,b]\cdot m
+\boxed{\;a\cdot(b\cdot m)-(-1)^{|a||b|}\,b\cdot(a\cdot m)=[a,b]\cdot m\;}
 $$
 
 for homogeneous $a,b,m$.

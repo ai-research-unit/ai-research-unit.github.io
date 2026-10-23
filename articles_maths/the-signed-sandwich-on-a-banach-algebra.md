@@ -34,7 +34,7 @@ The set of signed sandwiches is $\Sigma^\alpha(A,A) = \{S_{a,b} : a,b \in A\}$.
 **Proposition (decomposition and continuity).** For all $a,b \in A$,
 
 $$
-S_{a,b} = L_a\,\alpha\,R_{\alpha(b)} = T_{a,b}\,\alpha , \qquad \alpha = S_{1,1} ,
+\boxed{\;S_{a,b} = L_a\,\alpha\,R_{\alpha(b)} = T_{a,b}\,\alpha , \qquad \alpha = S_{1,1}\;} ,
 $$
 
 and $S_{a,b}$ is bounded and linear with
@@ -50,7 +50,7 @@ with $\lVert\alpha\rVert \geq 1$; the assignment $(a,b) \mapsto S_{a,b}$ is bili
 **Proposition (the multiplication table).** For all $a,b,c,d \in A$,
 
 $$
-S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b} , \qquad T_{a,b}\,S_{c,d} = S_{ac,\,db} , \qquad S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b} .
+\boxed{\;S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b} , \qquad T_{a,b}\,S_{c,d} = S_{ac,\,db} , \qquad S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b}\;} .
 $$
 
 Hence the product of two signed sandwiches is an unsigned sandwich, and the signed sandwiches are closed under composition exactly when $\alpha = \mathrm{id}$.
@@ -102,7 +102,7 @@ and conversely if every signed sandwich is unsigned then $\alpha$ is inner on th
 **Theorem (the square and the involution case).** For every unit $u$ the reflection is bounded, invertible, an algebra automorphism, and
 
 $$
-\rho_u^2 = c_{u\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)}\;} ,
 $$
 
 where $c_t(x) = txt^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector, $u\alpha(u) \in Z(A)$; its fixed set is the closed subalgebra $\{x : u\alpha(x) = xu\}$, and its norm satisfies $\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$.

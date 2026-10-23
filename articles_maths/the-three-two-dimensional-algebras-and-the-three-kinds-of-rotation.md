@@ -53,7 +53,7 @@ $$
 Multiplicativity makes $G_A$ a group, and for each $u \in G_A$ the map $L_u$ preserves the quadratic form $N$ on $\mathbb{R}^2$:
 
 $$
-N(u \cdot z) = N(u)N(z) = N(z), \qquad z \in A .
+\boxed{\;N(u \cdot z) = N(u)N(z) = N(z), \qquad z \in A\;} .
 $$
 
 So the three cases are the three signatures of a quadratic form in two variables: definite, indefinite and degenerate. That exhausts the possibilities, and it is why there are exactly three kinds of rotation of this kind.
@@ -148,7 +148,7 @@ The three cases are not merely three examples; they are all the examples.
 *Proof.* Write $A = \mathbb{R}\cdot 1 \oplus V$ with $V$ one-dimensional, and choose a generator $\omega$ spanning $V$. Then $\omega^2 = p\cdot 1 + c\,\omega$ for some $p, c \in \mathbb{R}$, so $A \cong \mathbb{R}[\omega]/(\omega^2 - p\omega - c)$ and $A$ is determined up to isomorphism by the polynomial $\omega^2 - p\omega - c$, hence by the sign of its discriminant $p^2 + 4c$. If $p^2 + 4c < 0$ the polynomial is irreducible over $\mathbb{R}$ and
 
 $$
-A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C};
+\boxed{\;A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C}\;};
 $$
 
 if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{D}'$.
@@ -168,7 +168,7 @@ So a commutative algebra cannot implement rotations in $\mathbb{R}^3$; the small
 **Theorem (the quaternion rotation group).** For a unit quaternion $q$ the map
 
 $$
-\rho_q(p) = q\,p\,q^{-1}, \qquad p \in \operatorname{Im}\mathbb{H},
+\boxed{\;\rho_q(p) = q\,p\,q^{-1}, \qquad p \in \operatorname{Im}\mathbb{H}\;},
 $$
 
 is a rotation of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$, and $q \mapsto \rho_q$ is a surjective group homomorphism $S^3 \to SO(3)$ with kernel $\{\pm 1\}$; hence $SO(3) \cong S^3/\{\pm 1\}$.

@@ -65,7 +65,7 @@ where $\sigma = G/H_\alpha\times D^{n+1}$ runs over the equivariant $(n+1)$-cell
 **Theorem.** The obstruction cocycle is a cocycle, $\delta\,\mathfrak o(f) = 0$, so it defines a cohomology class
 
 $$
-[\mathfrak o(f)] \in H^{n+1}_G(X;\underline\pi_n(Y)),
+\boxed{\;[\mathfrak o(f)] \in H^{n+1}_G(X;\underline\pi_n(Y))\;},
 $$
 
 the **obstruction class** of $f$; the map $f$ extends to a $G$-map $X^{n+1}\to Y$ if and only if $[\mathfrak o(f)] = 0$, and then the obstruction cocycle itself vanishes for a suitable choice of the extension.
@@ -131,7 +131,7 @@ $$
 and the Bredon cohomology is represented by the equivariant homotopy classes:
 
 $$
-H^n_G(X;\underline M) \cong [X, K(\underline M,n)]_G .
+\boxed{\;H^n_G(X;\underline M) \cong [X, K(\underline M,n)]_G\;} .
 $$
 
 The obstruction classes are therefore the classes of the maps into these $G$-spaces, and the extension problem is the problem of the homotopy classes of the equivariant maps.
@@ -159,7 +159,7 @@ The obstruction classes are therefore the classes of the maps into these $G$-spa
 **Theorem.** For a free $G$-CW complex with a constant coefficient system the Bredon cohomology is the cohomology of the quotient,
 
 $$
-H^n_G(X;\underline M) \cong H^n(X/G;M) ,
+\boxed{\;H^n_G(X;\underline M) \cong H^n(X/G;M)\;} ,
 $$
 
 so the obstruction groups are the ordinary ones of the quotient and the obstruction theory reduces to the classical theory on $X/G$; this is the case of the equivariant obstruction theory in which the group acts without fixed points and the coefficients do not see the isotropy.

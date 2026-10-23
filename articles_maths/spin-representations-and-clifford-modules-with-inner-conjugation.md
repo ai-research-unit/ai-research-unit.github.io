@@ -68,7 +68,7 @@ Over an algebraically closed field the classification is periodic of period two,
 **Theorem.** Let $n=\dim V$ and let $\mathbb{C}\mathrm{l}_n$ be the complex Clifford algebra. Then
 
 $$
-\mathbb{C}\mathrm{l}_{2m}\cong M_{2^m}(\mathbb{C}), \qquad \mathbb{C}\mathrm{l}_{2m+1}\cong M_{2^m}(\mathbb{C})\times M_{2^m}(\mathbb{C}).
+\boxed{\;\mathbb{C}\mathrm{l}_{2m}\cong M_{2^m}(\mathbb{C}), \qquad \mathbb{C}\mathrm{l}_{2m+1}\cong M_{2^m}(\mathbb{C})\times M_{2^m}(\mathbb{C})\;}.
 $$
 
 Consequently, for $n=2m$ there is exactly one irreducible Clifford module, of complex dimension $2^m$; for $n=2m+1$ there are exactly two, each of complex dimension $2^m$. In both cases the dimension of the irreducible complex spinor module is $2^{\lfloor n/2\rfloor}$.
@@ -86,7 +86,7 @@ In even dimensions the spinor module carries an extra piece of structure: the ac
 **Theorem.** Let $n=2m$ and let $\Delta$ be the irreducible complex Clifford module, of dimension $2^m$. Then $\omega$ acts on $\Delta$ as an involution, $\omega^2=1$, and
 
 $$
-\Delta=\Delta_+\oplus\Delta_-, \qquad \omega|_{\Delta_\pm}=\pm1,
+\boxed{\;\Delta=\Delta_+\oplus\Delta_-, \qquad \omega|_{\Delta_\pm}=\pm1\;},
 $$
 
 with $\dim_{\mathbb{C}}\Delta_+=\dim_{\mathbb{C}}\Delta_-=2^{m-1}$. The two summands are the **half-spinor modules**, also called the spaces of **Weyl spinors**; they are interchanged by the action of $V$ (the odd part), and each is preserved by the even subalgebra $\mathrm{Cl}^0$.
@@ -132,7 +132,7 @@ $$
 is normalised so that $\bigl[\tfrac14(vw-wv),u\bigr]=g(u,w)v-g(u,v)w$ for every $u\in V$, and it is a Lie algebra homomorphism when the right-hand side is given the commutator bracket, with image the even part of degree two. Composing with the spin representation gives the **infinitesimal spin representation**
 
 $$
-d\rho\colon\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S), \qquad d\rho(v\wedge w)=\tfrac14[c(v),c(w)].
+\boxed{\;d\rho\colon\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S), \qquad d\rho(v\wedge w)=\tfrac14[c(v),c(w)]\;}.
 $$
 
 **Proof.** The identification $\Lambda^2V\cong\mathrm{SO}(V,\mathfrak{Q})$ is the standard one for a space with a non-degenerate form and is the subject of *The Orthogonal Lie Algebra*. For the Clifford realisation, the identity $[vw,u]=2\bigl(g(u,w)v-g(u,v)w\bigr)$, obtained from the fundamental relation by writing $vu=2g(u,v)-uv$ and $wu=2g(u,w)-uw$, gives

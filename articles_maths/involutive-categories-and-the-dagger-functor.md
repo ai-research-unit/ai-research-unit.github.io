@@ -36,8 +36,8 @@ $({}^{\dagger}) \circ ({}^{\dagger})^{\mathrm{opp}} = \mathrm{id}_{\mathcal{C}}$
 $f \mapsto f^{\dagger}$ with
 
 $$
-\mathrm{id}_A^{\dagger} = \mathrm{id}_A, \qquad (g \circ f)^{\dagger} = f^{\dagger} \circ g^{\dagger},
-\qquad f^{\dagger\dagger} = f
+\boxed{\;\mathrm{id}_A^{\dagger} = \mathrm{id}_A, \qquad (g \circ f)^{\dagger} = f^{\dagger} \circ g^{\dagger},
+\qquad f^{\dagger\dagger} = f\;}
 $$
 
 for all objects $A$ and all composable morphisms $f, g$. The morphism $f^{\dagger}$ is the **adjoint**

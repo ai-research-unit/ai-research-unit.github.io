@@ -182,7 +182,7 @@ the case $n = 2$ with $\ell_3 = 0$ is an ordinary Lie algebra, and the general s
 **Theorem (Kontsevich formality, standard).** Let $A = k[x_1,\dots,x_n]$ be a polynomial algebra, let $T_{\mathrm{poly}}(A)$ be the graded module of polynomial multivectors, with the **Schouten–Nijenhuis bracket**, and let $C^\bullet(A,A)$ be the Hochschild complex with the Gerstenhaber bracket. Then there is an $L_\infty$-quasi-isomorphism
 
 $$
-\mathcal{U} : \bigl(T_{\mathrm{poly}}(A),\ \text{Schouten bracket},\ 0,\ 0,\dots\bigr) \longrightarrow \bigl(C^{\bullet}(A,A),\ \text{Gerstenhaber bracket},\ \text{cup product},\ \dots\bigr)
+\boxed{\;\mathcal{U} : \bigl(T_{\mathrm{poly}}(A),\ \text{Schouten bracket},\ 0,\ 0,\dots\bigr) \longrightarrow \bigl(C^{\bullet}(A,A),\ \text{Gerstenhaber bracket},\ \text{cup product},\ \dots\bigr)\;}
 $$
 
 from the $L_\infty$-algebra of multivectors, which is the abelian structure with only $\ell_2$ the Schouten bracket and all higher brackets zero, to the Hochschild complex with its full $L_\infty$-structure. The quasi-isomorphism is constructed by an explicit sum over graphs, whose weights are integrals over configuration spaces of points in the upper half-plane.
@@ -192,7 +192,7 @@ from the $L_\infty$-algebra of multivectors, which is the abelian structure with
 1. Every formal Poisson structure on a polynomial algebra $A = k[x_1,\dots,x_n]$, with $k$ a field of characteristic $0$, admits a star product: the Maurer–Cartan element $\pi$ of the multivector $L_\infty$-algebra with $[\pi,\pi] = 0$ transfers along $\mathcal{U}$ to a Maurer–Cartan element of the Hochschild complex, and such an element is exactly an associative deformation whose first-order term is the bracket of $\pi$. The resulting star product has the explicit graph-sum expansion
 
 $$
-    f * g = \sum_{n\geq0}\frac{h^n}{n!}\sum_{\Gamma\in G_n}w_\Gamma\,B_\Gamma(f,g),
+    \boxed{\;f * g = \sum_{n\geq0}\frac{h^n}{n!}\sum_{\Gamma\in G_n}w_\Gamma\,B_\Gamma(f,g)\;},
 $$
 
     where $G_n$ is the set of admissible graphs with $n$ internal vertices, $w_\Gamma$ is a weight obtained by integrating a form over a configuration space of points in the upper half-plane, and $B_\Gamma$ is the bidifferential operator determined by the edges of $\Gamma$ decorated by the Poisson tensor.
@@ -215,7 +215,7 @@ The same formality machinery applies to the deformations of the enveloping algeb
 The cohomology that appears here is that of the **Chevalley--Eilenberg complex** of $\mathrm{G}$. For a $\mathrm{G}$-module $M$ the degree-$n$ cochains are the alternating multilinear maps $f:\mathrm{G}^n\to M$, with differential
 
 $$
-(df)(x_1,\dots,x_{n+1}) = \sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1}) + \sum_{i<j}(-1)^{i+j}f\bigl([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
+\boxed{\;(df)(x_1,\dots,x_{n+1}) = \sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1}) + \sum_{i<j}(-1)^{i+j}f\bigl([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}\bigr)\;},
 $$
 
 the hats marking omitted arguments, and the coefficient module of the theorem is $\wedge^2\mathrm{G}$ with the adjoint action $x\cdot(u\wedge v) = [x,u]\wedge v + u\wedge[x,v]$. The differential is built from the bracket and the action alone, so the cohomology is available here without a general theory of Lie algebra cohomology; the structure of the quasi-Lie bialgebra is the infinitesimal object that the quantum group deforms.

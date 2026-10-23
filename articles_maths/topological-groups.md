@@ -14,7 +14,7 @@ This article develops that interplay: the axioms and their first consequences, t
 **Definition.** A **topological group** is a group $G$ with a topology such that both structure maps
 
 $$
-G \times G \to G, \quad (g, h) \mapsto gh, \qquad G \to G, \quad g \mapsto g^{-1},
+\boxed{\;G \times G \to G, \quad (g, h) \mapsto gh, \qquad G \to G, \quad g \mapsto g^{-1}\;},
 $$
 
 are continuous, the product carrying the product topology. Equivalently, the single map $G \times G \to G$, $(g, h) \mapsto g h^{-1}$, is continuous.
@@ -241,7 +241,7 @@ hold for every $f : \mathbb{Z}/n\mathbb{Z} \to \mathbb{C}$; this is the discrete
 **Theorem (Pontryagin).** For every locally compact abelian group $G$, the evaluation map
 
 $$
-G \longrightarrow G^{\vee\vee}, \qquad g \longmapsto \left(\chi \mapsto \chi(g)\right),
+\boxed{\;G \longrightarrow G^{\vee\vee}, \qquad g \longmapsto \left(\chi \mapsto \chi(g)\right)\;},
 $$
 
 is an isomorphism of topological groups. The assignment $G \mapsto G^\vee$ is a contravariant functor that is an equivalence of categories between locally compact abelian groups and their duals, carrying compact groups to discrete groups and conversely, and products to products.

@@ -12,7 +12,7 @@ This article treats the transpose as the adjoint with respect to the standard pa
 **Definition.** The **standard pairing** of $R^n$ is
 
 $$
-\langle x,y\rangle = \sum_i x_i y_i = x^{\mathrm t}y .
+\boxed{\;\langle x,y\rangle = \sum_i x_i y_i = x^{\mathrm t}y\;} .
 $$
 
 It is biadditive, symmetric, and perfect: the map $x \mapsto \langle x,-\rangle$ is an isomorphism $R^n \to \operatorname{Hom}_R(R^n,R)$.
@@ -20,7 +20,7 @@ It is biadditive, symmetric, and perfect: the map $x \mapsto \langle x,-\rangle$
 **Theorem.** For every matrix $X$ and all columns $x, y$,
 
 $$
-\langle Xx, y\rangle = \langle x, X^{\mathrm t}y\rangle ,
+\boxed{\;\langle Xx, y\rangle = \langle x, X^{\mathrm t}y\rangle\;} ,
 $$
 
 so $X^{\mathrm t}$ is the adjoint of $X$ with respect to the standard pairing. Consequently $X \mapsto X^{\mathrm t}$ is the adjoint involution of the matrix ring, it is additive, anti-multiplicative and of order two, and the orthogonal matrices, those with $X^{\mathrm t}X = XX^{\mathrm t} = I$, are exactly the matrices preserving the standard pairing.

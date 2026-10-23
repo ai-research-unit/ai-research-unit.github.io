@@ -15,7 +15,7 @@ Throughout, $k$ is a field of characteristic not two, $G$ is an abelian group wr
 **Definition.** A **graded involution** of $A$ is a $k$-linear map $\sigma : A \to A$ with
 
 $$
-\sigma^2 = \mathrm{id}, \qquad \sigma(A_g) \subseteq A_g, \qquad \sigma(xy) = \sigma(y)\sigma(x),
+\boxed{\;\sigma^2 = \mathrm{id}, \qquad \sigma(A_g) \subseteq A_g, \qquad \sigma(xy) = \sigma(y)\sigma(x)\;},
 $$
 
 and a **superinvolution** is a $k$-linear map with $\sigma^2 = \mathrm{id}$, $\sigma(A_g)\subseteq A_g$ and
@@ -57,7 +57,7 @@ and the **graded centre** of $A$ is the set of the elements $z$ with $[z, x] = 0
 **Theorem.** Let $\sigma$ be a superinvolution of the superalgebra $A$. Then $\sigma$ carries the graded commutator to the graded commutator with the arguments exchanged and the sign reversed,
 
 $$
-\sigma([x,y]) = -[\sigma(x), \sigma(y)] ,
+\boxed{\;\sigma([x,y]) = -[\sigma(x), \sigma(y)]\;} ,
 $$
 
 and it preserves the graded centre; restricted to the even part, where the graded commutator is the ordinary commutator, it is an anti-automorphism of the Lie algebra $A_0$.
@@ -67,7 +67,7 @@ and it preserves the graded centre; restricted to the even part, where the grade
 **Corollary.** A graded involution satisfies the companion identity
 
 $$
-\sigma([x,y]) = -(-1)^{|x||y|}\,[\sigma(x),\sigma(y)]
+\boxed{\;\sigma([x,y]) = -(-1)^{|x||y|}\,[\sigma(x),\sigma(y)]\;}
 $$
 
 for the same graded commutator; on the even part, and on any pair with one even factor, where the Koszul sign is $1$, this is $\sigma([x,y]) = -[\sigma(x),\sigma(y)]$, the Lie anti-automorphism of $A_0$, while on two odd elements it reads $\sigma([x,y]) = +[\sigma(x),\sigma(y)]$. The two classes therefore differ by the Koszul sign of the two arguments: the superinvolution carries no sign of its own, the graded involution carries the sign in front of the bracket.

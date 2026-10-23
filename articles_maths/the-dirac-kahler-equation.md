@@ -29,7 +29,7 @@ $$
 Their sum $d - \delta$ is the **Laplace–de Rham operator**. It is the square root of the Laplacian, in the sense that
 
 $$
-(d-\delta)^2 = -(d\delta + \delta d) = \square ,
+\boxed{\;(d-\delta)^2 = -(d\delta + \delta d) = \square\;} ,
 $$
 
 where $\square$ is the Laplace–de Rham (Laplace–Beltrami) operator; on functions of flat Euclidean space it reduces to $-\sum_\mu\partial_\mu^2$ up to sign, and on functions of Lorentzian space to the d'Alembertian. This is the property that motivates the equation: the Dirac operator is also a square root of the Laplacian, and $d-\delta$ is its geometric counterpart.
@@ -61,7 +61,7 @@ which is the familiar form $c(dx^\mu)\partial_\mu$ of a Dirac-type operator, wit
 The **Dirac–Kähler equation** is
 
 $$
-(d-\delta+m)\,\Phi = 0 .
+\boxed{\;(d-\delta+m)\,\Phi = 0\;} .
 $$
 
 Applying the operator $d-\delta-m$ on the left and using $(d-\delta)^2 = \square$ gives
@@ -95,7 +95,7 @@ $$
 the Dirac–Kähler equation becomes four Dirac equations, one for each value of the unimpaired index $b$,
 
 $$
-\left(\gamma^\mu\partial_\mu + m\right)\Psi(x)_b = 0 .
+\boxed{\;\left(\gamma^\mu\partial_\mu + m\right)\Psi(x)_b = 0\;} .
 $$
 
 Thus in flat space of signature $(1,3)$ the sixteen components of the multivector arrange into four four-component spinors, and the four copies transform into one another under the Lorentz group. The mechanism is an **internal symmetry** $\mathrm{SO}(2,4)$ acting on the multivector; its parameters are tensors rather than scalars, and it does not commute with the Lorentz transformations. Consequently the Lorentz group does not act independently on the four Dirac fields: it mixes components of different degrees, and the "spin-$\tfrac12$" fields are not strict half-integer representations of the Clifford algebra but coherent superpositions of forms of different degree. In $2^{2^n}$ dimensions the equation is equivalent to $2^{2^{n-1}}$ Dirac equations; in particular it is the four-dimensional case $d=4=2^2$ that gives the factor four used above.

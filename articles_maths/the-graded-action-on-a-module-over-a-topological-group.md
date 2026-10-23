@@ -22,7 +22,7 @@ the **even** and the **odd** parts of the group algebra.
 **Theorem.** $\bar\alpha$ is an algebra automorphism of $k[G]$ with $\bar\alpha^2 = \mathrm{id}$, and $k[G] = k[G]_{\bar0}\oplus k[G]_{\bar1}$ with
 
 $$
-k[G]_i \cdot k[G]_j \subseteq k[G]_{\overline{i+j}} \qquad (i, j \in \{\bar0,\bar1\}),
+\boxed{\;k[G]_i \cdot k[G]_j \subseteq k[G]_{\overline{i+j}} \qquad (i, j \in \{\bar0,\bar1\})\;},
 $$
 
 so that $k[G]$ is a $\mathbb{Z}/2$-graded algebra. The even part is a subalgebra, the odd part is a bimodule over it, the product of two odd elements is even, and $1 \in k[G]_{\bar0}$.
@@ -54,7 +54,7 @@ A **graded action** of $G$ on $M$ is the restriction of a homogeneous action to 
 **Theorem (the two descriptions of homogeneity).** A module action of $k[G]$ on a graded module $M = M_{\bar0}\oplus M_{\bar1}$ is homogeneous if and only if there is a $k$-linear involution $\varepsilon$ of $M$ with $\varepsilon|_{M_{\bar0}} = \mathrm{id}$ and $\varepsilon|_{M_{\bar1}} = -\mathrm{id}$, the **grading involution**, such that
 
 $$
-\varepsilon\,(g\cdot \varepsilon\, m) = \alpha(g)\cdot m \qquad \text{for all } g \in G,\ m \in M ,
+\boxed{\;\varepsilon\,(g\cdot \varepsilon\, m) = \alpha(g)\cdot m \qquad \text{for all } g \in G,\ m \in M\;} ,
 $$
 
 equivalently $\varepsilon \circ g \circ \varepsilon = \alpha(g)$ as operators on $M$. When this holds the assignment $g\cdot_\alpha m := \varepsilon(g \cdot \varepsilon m)$ defines an action of $G$ on $M$, the **$\alpha$-twisted action**, and $g \cdot_\alpha m = \alpha(g)\cdot m$.
@@ -101,7 +101,7 @@ and the map $m \mapsto g\cdot m + \alpha(g)\cdot m$ is even while $m \mapsto g\c
 **Corollary (the fixed module).** The fixed elements $M^G = \{m : g\cdot m = m \text{ for all } g\}$ form a graded submodule, as do the elements on which the two actions agree,
 
 $$
-M^{G,\alpha} = \{m : g\cdot m = \alpha(g)\cdot m \text{ for all } g \in G\} = \{m : u\cdot m = 0 \text{ for every odd } u \in k[G]_{\bar1}\},
+\boxed{\;M^{G,\alpha} = \{m : g\cdot m = \alpha(g)\cdot m \text{ for all } g \in G\} = \{m : u\cdot m = 0 \text{ for every odd } u \in k[G]_{\bar1}\}\;},
 $$
 
 which is the annihilator of the odd part of the group algebra.

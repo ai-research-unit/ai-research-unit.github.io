@@ -32,7 +32,7 @@ and it is **discrete** if $\{0\}$ is a neighbourhood of $0$.
 **Definition.** A topology on $M$ is **linear** if $M$ has a fundamental system of neighbourhoods of $0$ consisting of submodules. A topology on $R$ or on $M$ given by a descending chain of submodules
 
 $$
-M=\Omega_0 \supseteq \Omega_1 \supseteq \Omega_2 \supseteq \cdots
+\boxed{\;M=\Omega_0 \supseteq \Omega_1 \supseteq \Omega_2 \supseteq \cdots\;}
 $$
 
 is the topology in which a set is open if it is a union of cosets of the $\Omega_n$; equivalently, the $\Omega_n$ form a fundamental system of neighbourhoods of $0$.
@@ -58,7 +58,7 @@ is the topology in which a set is open if it is a union of cosets of the $\Omega
 **Theorem (completion).** Let $\mathcal{B}=\{\Omega\}$ be a fundamental system of neighbourhoods of $0$ of a Hausdorff topological module $M$, consisting of submodules and directed downwards. Then the **completion** of $M$ is
 
 $$
-\widehat M=\varprojlim_{\Omega \in \mathcal{B}} M/\Omega ,
+\boxed{\;\widehat M=\varprojlim_{\Omega \in \mathcal{B}} M/\Omega\;} ,
 $$
 
 the inverse limit of the discrete quotients; there is a continuous homomorphism $\iota:M \to \widehat M$ with dense image, $\widehat M$ is Hausdorff and complete, and for every complete Hausdorff topological module $N$ and every uniformly continuous homomorphism $f:M \to N$ there is a unique continuous $\widehat f:\widehat M \to N$ with $f=\widehat f \circ \iota$.
@@ -104,7 +104,7 @@ the inverse limit of the rings $\mathbb{Z}/p^n\mathbb{Z}$ with the reduction map
 **Proposition.** (i) Inverse limits of profinite modules are profinite; products of profinite modules are profinite; a closed submodule and a Hausdorff quotient of a profinite module are profinite. (ii) $\mathbb{Z}_p$ is profinite, and the **profinite completion** of $\mathbb{Z}$,
 
 $$
-\widehat{\mathbb{Z}}=\varprojlim_n \mathbb{Z}/n\mathbb{Z} \cong \prod_p \mathbb{Z}_p ,
+\boxed{\;\widehat{\mathbb{Z}}=\varprojlim_n \mathbb{Z}/n\mathbb{Z} \cong \prod_p \mathbb{Z}_p\;} ,
 $$
 
 is profinite, with $\mathbb{Z}$ dense in it.

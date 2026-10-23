@@ -118,7 +118,7 @@ $$
 for all $x_1, \ldots, x_n \in M$. Consequently the assignment $\bar{f} \mapsto \bar{f} \circ \wedge$ is an isomorphism
 
 $$
-\operatorname{Hom}_R(\Lambda^n M, N) \cong \operatorname{Alt}_n(M; N),
+\boxed{\;\operatorname{Hom}_R(\Lambda^n M, N) \cong \operatorname{Alt}_n(M; N)\;},
 $$
 
 where $\operatorname{Alt}_n(M; N)$ denotes the submodule of $\operatorname{Mult}_n(M; N)$ consisting of the alternating maps. The pair $(\Lambda^n M, \wedge)$ is determined up to unique isomorphism by this property.
@@ -160,7 +160,7 @@ The exterior powers of a free module are again free, with an explicit basis inde
 **Theorem.** Let $M$ be a free $R$-module with basis $(e_i)_{i \in I}$, and suppose the index set is finite of cardinality $m$. Then $\Lambda^n M$ is free with basis
 
 $$
-\{ e_{i_1} \wedge e_{i_2} \wedge \cdots \wedge e_{i_n} : i_1 < i_2 < \cdots < i_n \},
+\boxed{\;\{ e_{i_1} \wedge e_{i_2} \wedge \cdots \wedge e_{i_n} : i_1 < i_2 < \cdots < i_n \}\;},
 $$
 
 so its rank is the binomial coefficient $\binom{m}{n}$. In particular $\Lambda^n M = 0$ for $n > m$, and $\Lambda^m M$ is free of rank $1$.
@@ -216,7 +216,7 @@ for composable linear maps $f : M \to N$ and $g : N \to P$. Hence $M \mapsto \La
 **Theorem.** For all $R$-modules $M, N$ and all $n \geq 0$ there is a natural isomorphism
 
 $$
-\Lambda^n(M \oplus N) \cong \bigoplus_{p + q = n} \Lambda^p M \otimes_R \Lambda^q N,
+\boxed{\;\Lambda^n(M \oplus N) \cong \bigoplus_{p + q = n} \Lambda^p M \otimes_R \Lambda^q N\;},
 $$
 
 the map from the right to the left being $(u, v) \mapsto u \wedge v$ on each summand.

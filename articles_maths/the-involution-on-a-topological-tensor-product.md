@@ -26,8 +26,8 @@ extended $\varsigma$-semilinearly to the whole tensor product; it is $\varsigma$
 **Theorem (the signature of the product).** Let $T$ and $S$ be linear involutions. Then the induced involution of $E \otimes F$ has
 
 $$
-(E \otimes F)^{+} = (E_{+} \otimes F_{+}) \oplus (E_{-} \otimes F_{-}), \qquad
-(E \otimes F)^{-} = (E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+}) ,
+\boxed{\;(E \otimes F)^{+} = (E_{+} \otimes F_{+}) \oplus (E_{-} \otimes F_{-}), \qquad
+(E \otimes F)^{-} = (E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+})\;} ,
 $$
 
 and in the types $(n,m)$ of $T$ and $(r,s)$ of $S$ the type of the product is $(pr + qs,\, ps + qr)$.
@@ -55,7 +55,7 @@ the closures being taken in the completion.
 **Theorem (the induced involution commutes with the flip).** For a continuous involution $\theta$ of $E$ the induced involution $\theta \otimes \theta$ of $E \otimes E$ commutes with the flip,
 
 $$
-(\theta \otimes \theta)\,\tau = \tau\,(\theta \otimes \theta) ,
+\boxed{\;(\theta \otimes \theta)\,\tau = \tau\,(\theta \otimes \theta)\;} ,
 $$
 
 so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on $\mathrm{Sym}^{2}(E)$ the fixed part is $\mathrm{Sym}^{2}(E_{+}) \oplus \mathrm{Sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.
@@ -71,8 +71,8 @@ so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on 
 **Theorem (the involution on the completions).** The induced involution extends uniquely to a continuous involution of the projective completion $E \widehat{\otimes}_\pi F$ and of the injective completion $E \widehat{\otimes}_\varepsilon F$, of the same kind, and its fixed and negated subspaces in each completion are the closures of those of the algebraic tensor product,
 
 $$
-(E \widehat{\otimes}_\bullet F)^{+} = \overline{(E_{+} \otimes F_{+}) \oplus (E_{-} \otimes F_{-})}, \qquad
-(E \widehat{\otimes}_\bullet F)^{-} = \overline{(E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+})} .
+\boxed{\;(E \widehat{\otimes}_\bullet F)^{+} = \overline{(E_{+} \otimes F_{+}) \oplus (E_{-} \otimes F_{-})}, \qquad
+(E \widehat{\otimes}_\bullet F)^{-} = \overline{(E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+})}\;} .
 $$
 
 **Proof.** The induced involution is continuous on the algebraic tensor product for each topology, so it extends to the completion by *Involutive Topological Linear Spaces*, uniquely because the tensor product is dense; the fixed and negated subspaces of the extension are the closures of those of the dense subspace, by the extension theorem of *Involutive Banach Spaces*, carried over to the locally convex setting.

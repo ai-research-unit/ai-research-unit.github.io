@@ -82,8 +82,8 @@ $$
 **Definition.** A **spherical function** of the symmetric space $X$ is a $K$-invariant eigenfunction of every operator in $\mathbb{D}(G/K)$ normalised by $\phi(e) = 1$. For $\lambda \in \mathrm A^*_{\mathbb C}$ the **elementary spherical function** is
 
 $$
-\phi_\lambda(g) = \int_K \exp(\langle i\lambda + \rho,\, H(gk)\rangle)\,dk,
-\qquad g \in G,
+\boxed{\;\phi_\lambda(g) = \int_K \exp(\langle i\lambda + \rho,\, H(gk)\rangle)\,dk,
+\qquad g \in G\;},
 $$
 
 where $H(g)$ is the $\mathrm A$-component of $g$ in the Cartan decomposition and $\rho$ is the half-sum of the positive restricted roots. The function $\phi_\lambda$ is the **matrix coefficient** $\langle \pi_\lambda(g)v, v\rangle$ of the spherical principal series, $v$ the $K$-fixed unit vector.
@@ -123,15 +123,15 @@ The measure is absolutely continuous with the density $\lvert \mathbf c(\lambda)
 **Theorem (spherical convolution theorem).** Let $f, h$ be $K$-bi-invariant functions in $L^1(G)$. Then the spherical transforms multiply:
 
 $$
-\widehat{f*h}(\lambda) = (\mathcal F f)(\lambda)\,(\mathcal F h)(\lambda) ,
+\boxed{\;\widehat{f*h}(\lambda) = (\mathcal F f)(\lambda)\,(\mathcal F h)(\lambda)\;} ,
 $$
 
 and the convolution operator acts on the elementary spherical functions by the scalar $\mathcal F f$:
 
 $$
-C_f \phi_\lambda = (\mathcal F f)(\lambda)\,\phi_\lambda ,
+\boxed{\;C_f \phi_\lambda = (\mathcal F f)(\lambda)\,\phi_\lambda ,
 \qquad
-C_f \phi_\lambda(x) = \int_G f(g)\,\phi_\lambda(g^{-1}\cdot x)\,dg .
+C_f \phi_\lambda(x) = \int_G f(g)\,\phi_\lambda(g^{-1}\cdot x)\,dg\;} .
 $$
 
 The eigenvalue assignment $\lambda \mapsto (\mathcal F f)(\lambda)$ is the **spherical symbol** of the convolution operator, and it is a function on the spectral quotient $\mathrm A^*_{\mathbb C}/W$.

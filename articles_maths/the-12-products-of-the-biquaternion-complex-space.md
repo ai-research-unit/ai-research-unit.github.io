@@ -146,8 +146,8 @@ $$
 =\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)
 =\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)
 =\bigl[Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]
-\;}
-$$.
+\;}.
+$$
 
 The value $\tilde Q_1\tilde Q_2^{*}$ has scalar part $H=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the **Hermitian form** $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* read as a product, and it is **central**: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is **conjugate-commutative**, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its algebraic norm is the square read through the form, $s(\tilde Q_2,\tilde Q_2)=\langle\tilde Q_2,\tilde Q_2\rangle_{*}=|Q_{2,t}|^{2}+(\vec Q_2,\overline{\vec Q_2})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it **fails** the Jordan identity on the whole space, with witness $x=y=\vec e_x$, where the two sides are $0$ and $e_t$.
 
@@ -219,8 +219,8 @@ $$
 \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\bigr)
 =\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)
 =\vec Q_1\times\overline{\vec Q_2}
-\;}
-$$.
+\;}.
+$$
 
 The cross products of the two orders add in the difference while the scalar part and the mixed term cancel, so the half-difference is the **cross product** $\vec Q_1\times\overline{\vec Q_2}$ of the vector part of the first argument with the conjugate of the vector part of the second. It is **pure vector**, so its image is the vector subspace $\mathrm{Vect}(\mathbb{B})$; it is **conjugate-alternating**, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$, and its algebraic norm is the cross product of the vector part with its conjugate, $\mathfrak{a}(\tilde Q_2,\tilde Q_2)=\vec Q_2\times\overline{\vec Q_2}$, which is **not zero** in general: for $\tilde Q_2=\vec e_x+i\vec e_y$ it is $-2i\vec e_z$. It has no unit, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it **fails** the Jacobi identity, with witness $(\vec e_x,\vec e_x,i\vec e_y)$, where the cyclic sum is $-2i\vec e_y$. This is the only one of the three failing brackets whose witness needs a complex element off the real basis, which is why the failure is invisible on the real forms.
 
@@ -281,8 +281,8 @@ f_{\mathrm{pb}}=s_{\mathrm{pb}}+a_{\mathrm{pb}},\qquad
 f_{\mathrm{ps}}=s_{\mathrm{ps}}+a_{\mathrm{ps}},\qquad
 f_{\mathrm{qb}}=s_{\mathrm{qb}}+a_{\mathrm{qb}},\qquad
 f_{\mathrm{qs}}=s_{\mathrm{qs}}+a_{\mathrm{qs}}
-\;}
-$$,
+\;},
+$$
 the subscripts $\mathrm{pb}$, $\mathrm{ps}$, $\mathrm{qb}$, $\mathrm{qs}$ naming the four families — plain bilinear, plain sesquilinear, quaternionic bilinear, general quaternionic sesquilinear — and $s$ and $a$ the symmetric and the antisymmetric part.
 
 These four identities and the four definitions of the general products are the only relations among the twelve: no part of one family is a conjugate of a part of another family, since the four general products are related to one another by the slots while the twelve operations are not. The square of a product of a $\mathbb{C}$-bilinear family reads its symmetric part alone, $f(\tilde Q_2,\tilde Q_2)=s(\tilde Q_2,\tilde Q_2)$ for the plain and for the general quaternionic bilinear product, and its polarised square is twice the symmetric part. In the two sesquilinear families the square is split by the exchange instead: its algebraic norm is the pair $\bigl(s(\tilde Q_2,\tilde Q_2),\mathfrak{a}(\tilde Q_2,\tilde Q_2)\bigr)$, the antisymmetric side being the vector part of the square and not zero, and the polarised square recovers the plain symmetrisation of the bare interchange and not the symmetric part (*The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Equal Arguments and the Square*).

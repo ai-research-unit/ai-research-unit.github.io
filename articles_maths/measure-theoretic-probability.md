@@ -167,7 +167,7 @@ the Fourier transform of the distribution $\mu_X$.
 **Theorem (uniqueness and inversion).** The characteristic function determines the distribution: if $\varphi_X = \varphi_Y$ then $\mu_X = \mu_Y$. More precisely, if $\varphi$ is integrable then $\mu_X$ has the continuous density
 
 $$
-f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\varphi(t)\, dt,
+\boxed{\;f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\varphi(t)\, dt\;},
 $$
 
 and in general the distribution is recovered from the characteristic function by the inversion formula for the Fourier transform of a finite measure.
@@ -201,7 +201,7 @@ Independence is the probabilistic content of the product measure, and it is deve
 **Theorem (weak law of large numbers; Khinchin).** Let $X_1, X_2, \dots$ be independent and identically distributed with $\mathbb{E}|X_1| < \infty$ and mean $\mu$. Then the sample means converge in probability:
 
 $$
-\frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\mathbb{P}} \mu.
+\boxed{\;\frac{1}{n}\sum_{i=1}^n X_i \xrightarrow{\mathbb{P}} \mu\;}.
 $$
 
 **Theorem (strong law of large numbers; Kolmogorov).** Under the same hypotheses the sample means converge almost surely: $\frac{1}{n}\sum_{i=1}^n X_i \to \mu$ a.s.
@@ -209,7 +209,7 @@ $$
 **Theorem (central limit theorem; Lindeberg–Lévy).** Let $X_1, X_2, \dots$ be independent and identically distributed with mean $\mu$ and finite variance $\sigma^2 > 0$. Then
 
 $$
-\frac{1}{\sigma\sqrt{n}}\sum_{i=1}^n (X_i - \mu) \xrightarrow{d} N(0,1),
+\boxed{\;\frac{1}{\sigma\sqrt{n}}\sum_{i=1}^n (X_i - \mu) \xrightarrow{d} N(0,1)\;},
 $$
 
 the standard normal distribution.

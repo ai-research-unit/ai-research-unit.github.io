@@ -57,7 +57,7 @@ when $k = \mathbb{C}$ this is $\frac{1}{|G|}\sum_gf_1(g)\overline{f_2(g)}$ and i
 **Theorem (orthogonality of characters).** Let $k$ be a splitting field for $G$ of characteristic zero with $\lvert G\rvert$ invertible, and let $\chi_1,\dots,\chi_r$ be the distinct irreducible characters of $G$. Then
 
 $$
-\langle\chi_i,\chi_j\rangle = \delta_{ij},
+\boxed{\;\langle\chi_i,\chi_j\rangle = \delta_{ij}\;},
 $$
 
 so that the irreducible characters form an orthonormal set in the space of class functions; in particular they are linearly independent, and $r\leq\lvert\operatorname{conj}(G)\rvert$.
@@ -69,7 +69,7 @@ so that the irreducible characters form an orthonormal set in the space of class
 **Theorem (column orthogonality).** For $g,h\in G$,
 
 $$
-\sum_{i=1}^{r}\chi_i(g)\chi_i(h^{-1}) = \begin{cases}\lvert C_G(g)\rvert & \text{if } g \text{ is conjugate to } h,\\ 0 & \text{otherwise,}\end{cases}
+\boxed{\;\sum_{i=1}^{r}\chi_i(g)\chi_i(h^{-1}) = \begin{cases}\lvert C_G(g)\rvert & \text{if } g \text{ is conjugate to } h,\\ 0 & \text{otherwise,}\end{cases}\;}
 $$
 
 where $C_G(g)$ is the centraliser of $g$; equivalently the columns of the character table are orthogonal with respect to the weights of the class sizes, and $\sum_i\chi_i(1)^2 = \lvert G\rvert$.
@@ -116,7 +116,7 @@ with $\operatorname{Cl}(G)$ the class functions with the pointwise product.
 **Theorem.** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible. Then the classes of the simple modules form a $\mathbb{Z}$-basis of $R_k(G)$ and the character map extends to an isomorphism of $k$-algebras
 
 $$
-R_k(G)\otimes_{\mathbb{Z}}k\;\xrightarrow{\ \cong\ }\;\operatorname{Cl}(G);
+\boxed{\;R_k(G)\otimes_{\mathbb{Z}}k\;\xrightarrow{\ \cong\ }\;\operatorname{Cl}(G)\;};
 $$
 
 consequently the class functions are the characters of virtual modules with coefficients in $k$, the decomposition of a tensor product of two simple modules is read off from the product of their characters, and the structure constants of the ring $R_k(G)$ with respect to the basis of the simple modules are the multiplicities of the tensor product decomposition, the **Kronecker coefficients** of the theory.

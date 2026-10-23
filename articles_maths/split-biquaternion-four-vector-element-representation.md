@@ -42,11 +42,11 @@ or as the **dual row** $\tilde{Q}^{\mathsf{T}}$ of quaternion conjugation, obtai
 **Proposition.** In components, the product $\tilde Q_3 = \tilde Q_1\tilde Q_2$ is given by
 
 $$
-Q_{3t} = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z} , \qquad Q_{3x} = Q_{1t}Q_{2x} + Q_{1x}Q_{2t} + Q_{1y}Q_{2z} - Q_{1z}Q_{2y} ,
+\boxed{\;Q_{3t} = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z} , \qquad Q_{3x} = Q_{1t}Q_{2x} + Q_{1x}Q_{2t} + Q_{1y}Q_{2z} - Q_{1z}Q_{2y}\;}
 $$
 
 $$
-Q_{3y} = Q_{1t}Q_{2y} - Q_{1x}Q_{2z} + Q_{1y}Q_{2t} + Q_{1z}Q_{2x} , \qquad Q_{3z} = Q_{1t}Q_{2z} + Q_{1x}Q_{2y} - Q_{1y}Q_{2x} + Q_{1z}Q_{2t} ,
+\boxed{\;Q_{3y} = Q_{1t}Q_{2y} - Q_{1x}Q_{2z} + Q_{1y}Q_{2t} + Q_{1z}Q_{2x} , \qquad Q_{3z} = Q_{1t}Q_{2z} + Q_{1x}Q_{2y} - Q_{1y}Q_{2x} + Q_{1z}Q_{2t}\;}
 $$
 
 the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{D}$.
@@ -97,7 +97,9 @@ The centre is the set of elements whose vector components vanish; the quaternion
 **Proposition.** In the four-vector description the split-biquaternion norm is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right) ,
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right)
+\;},
 $$
 
 with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.
@@ -120,7 +122,9 @@ Both are positive definite; the indefinite form of the algebra is the Hermitian 
 **Theorem.** A split biquaternion $\tilde{Q}$ is a unit if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D}$, that is, if and only if
 
 $$
-\sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0 .
+\boxed{\;
+\sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0
+\;}.
 $$
 
 **Proof.** Under the Peirce decomposition $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.

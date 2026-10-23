@@ -51,7 +51,7 @@ It is again graded of parity $|T|$, and $T^{\star\star} = T$.
 **Theorem (the super-adjoint is multiplicative).** For graded operators $S, T$,
 
 $$
-(TS)^{*} = T^{*}S^{*} , \qquad (TS)^{\star} = S^{\star}T^{\star} ,
+\boxed{\;(TS)^{*} = T^{*}S^{*} , \qquad (TS)^{\star} = S^{\star}T^{\star}\;} ,
 $$
 
 so the sign absorbed in the definition of the super-adjoint leaves the multiplicativity free of any extra sign.
@@ -73,7 +73,7 @@ so the adjoint reverses the graded commutator and picks up the Koszul sign in do
 **Proposition (the super-adjoint of the graded commutator).** For graded $S,T$,
 
 $$
-[S,T\}^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}\} .
+\boxed{\;[S,T\}^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}\}\;} .
 $$
 
 **Proof.** By the previous proposition $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$, and $[S^{\star},T^{\star}\} = (-1)^{|S|+|T|}[S^{*},T^{*}\}$ because $S^{\star} = (-1)^{|S|}S^{*}$ is a scalar multiple of $S^{*}$; multiplying the first identity by $(-1)^{|S|+|T|}$ and substituting the second gives the display.
@@ -89,7 +89,7 @@ $$
 **Theorem (the super-adjoint of the multiplications).** For every $x$,
 
 $$
-L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}} ,
+\boxed{\;L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}}\;} ,
 $$
 
 where $\Lambda^{\alpha}$ and $\mathrm{P}^{\alpha}$ are the signed left and right multiplications and $\Theta^{\alpha}$ the signed Hermitian sandwich.

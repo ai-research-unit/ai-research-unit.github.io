@@ -40,7 +40,7 @@ $$
 **Definition.** The **converse operator** on $\operatorname{Rel}(X)$ is the map
 
 $$
-c : \operatorname{Rel}(X) \to \operatorname{Rel}(X), \qquad c(R) = R^{-1}.
+\boxed{\;c : \operatorname{Rel}(X) \to \operatorname{Rel}(X), \qquad c(R) = R^{-1}\;}.
 $$
 
 **Proposition.** The operator $c$ satisfies the following for all $R, S \in \operatorname{Rel}(X)$.
@@ -66,7 +66,7 @@ Property (1) says that $c$ is an **involution** of $\operatorname{Rel}(X)$; by (
 automorphism. The maps $\mathrm{id}$ and $c$ therefore form a group of operators,
 
 $$
-C_2 = \{\mathrm{id}, c\}, \qquad c^2 = \mathrm{id},
+\boxed{\;C_2 = \{\mathrm{id}, c\}, \qquad c^2 = \mathrm{id}\;},
 $$
 
 acting on $\operatorname{Rel}(X)$. The action is what the rest of the article computes with: the
@@ -108,7 +108,7 @@ $$
 **Proposition.** For all $R, S \in \operatorname{Rel}(X)$,
 
 $$
-(S \circ R)^{-1} = R^{-1} \circ S^{-1}.
+\boxed{\;(S \circ R)^{-1} = R^{-1} \circ S^{-1}\;}.
 $$
 
 **Proof.** Let $(z,x) \in (S \circ R)^{-1}$. Then $(x,z) \in S \circ R$, so there is $y$ with $(x,y)

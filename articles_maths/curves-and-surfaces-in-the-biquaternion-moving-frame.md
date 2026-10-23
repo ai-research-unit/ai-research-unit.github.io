@@ -163,9 +163,9 @@ $$
 and the frame equations are
 
 $$
-\mathrm Dv_1=\rho\,\mathrm ds\,v_2,\qquad
+\boxed{\;\mathrm Dv_1=\rho\,\mathrm ds\,v_2,\qquad
 \mathrm Dv_2=-\rho\,\mathrm ds\,v_1+\tau\,\mathrm ds\,v_3,\qquad
-\mathrm Dv_3=-\tau\,\mathrm ds\,v_2 ,
+\mathrm Dv_3=-\tau\,\mathrm ds\,v_2\;} ,
 $$
 
 so that $\rho$ and $\tau$ are the **curvature** and the **torsion** of the curve.
@@ -304,7 +304,7 @@ $$
 **Theorem (Gauss, the theorema egregium in the frame).** The Gaussian curvature is the ratio of the determinant of the exterior products of the connection's first two components to the determinant of the coframe,
 
 $$
-K=\frac{a_1b_2-a_2b_1}{A_1B_2-A_2B_1},
+\boxed{\;K=\frac{a_1b_2-a_2b_1}{A_1B_2-A_2B_1}\;},
 $$
 
 and the mean curvature is
@@ -352,7 +352,7 @@ A frame $r(u,v)$ is not arbitrary: the mixed second derivatives of the frame agr
 **Theorem (the structure equation).** The connection of a frame of a surface satisfies
 
 $$
-\frac{\partial\iota_1}{\partial v}-\frac{\partial\iota_2}{\partial u}=\iota_1\wedge\iota_2 ,
+\boxed{\;\frac{\partial\iota_1}{\partial v}-\frac{\partial\iota_2}{\partial u}=\iota_1\wedge\iota_2\;} ,
 $$
 
 where $\iota_1=\iota_1^u\mathrm du+\iota_1^v\mathrm dv$ and $\iota_2=\iota_2^u\mathrm du+\iota_2^v\mathrm dv$ are read as grade-two elements of coefficients $(a_1,b_1,c_1)$ and $(a_2,b_2,c_2)$, and the wedge of two grade-two elements is the cross product of their coefficients. In coefficients,

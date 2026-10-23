@@ -52,7 +52,7 @@ Every $k[G]$-module is thus a representation of $G$ by $k$-linear maps, and conv
 **Theorem (the regular module).** For finite $G$ and $k = \mathbb{C}$, the left regular module $k[G]$ decomposes as
 
 $$
-\mathbb{C}[G] \cong \bigoplus_{\rho} V_\rho^{\oplus n_\rho},
+\boxed{\;\mathbb{C}[G] \cong \bigoplus_{\rho} V_\rho^{\oplus n_\rho}\;},
 $$
 
 where $\rho$ runs over the irreducible complex representations, $V_\rho$ has dimension $n_\rho$, and each occurs with multiplicity equal to its dimension; comparing dimensions gives $\sum_\rho n_\rho^2 = |G|$.
@@ -72,7 +72,7 @@ and its kernel is the **augmentation ideal** $I(G) = \ker\pi$.
 **Proposition.** $I(G)$ is a two-sided ideal of codimension $1$, generated as a left ideal — equivalently as a two-sided ideal — by the elements $g - 1_G$, $g \in G$. Moreover
 
 $$
-\frac{k[G]}{I(G)} \cong k, \qquad \frac{I(G)}{I(G)^2} \cong G^{\mathrm{ab}}\otimes_{\mathbb{Z}} k
+\boxed{\;\frac{k[G]}{I(G)} \cong k, \qquad \frac{I(G)}{I(G)^2} \cong G^{\mathrm{ab}}\otimes_{\mathbb{Z}} k\;}
 $$
 
 for finite $G$, where $G^{\mathrm{ab}} = G/[G,G]$ is the abelianisation.
@@ -140,7 +140,7 @@ $$
 the product running over the irreducible representations of $G$ over $k$ and $D_\rho$ being the division algebra of endomorphisms of the corresponding simple module. Over an algebraically closed field, $D_\rho = k$ and
 
 $$
-k[G] \cong \prod_{\rho} M_{n_\rho}(k), \qquad |G| = \sum_\rho n_\rho^2 .
+\boxed{\;k[G] \cong \prod_{\rho} M_{n_\rho}(k), \qquad |G| = \sum_\rho n_\rho^2\;} .
 $$
 
 *Proof.* By Maschke the algebra is semisimple, so the Wedderburn–Artin theorem applies and gives the product of matrix algebras over division algebras; over an algebraically closed field every finite-dimensional division algebra over $k$ is $k$, and the number of factors and their sizes come from the decomposition of the regular module.

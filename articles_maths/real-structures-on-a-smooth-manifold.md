@@ -37,7 +37,7 @@ An involution is a diffeomorphism, because $\sigma\circ\sigma=\mathrm{id}$ exhib
 **Definition.** The **induced involution** on the algebra of functions is the pullback
 
 $$
-\sigma^* : C^\infty(M) \longrightarrow C^\infty(M), \qquad \sigma^*f = f\circ\sigma,
+\boxed{\;\sigma^* : C^\infty(M) \longrightarrow C^\infty(M), \qquad \sigma^*f = f\circ\sigma\;},
 $$
 
 and the induced involution on the forms is the pullback $\sigma^* : \Omega^k(M)\to\Omega^k(M)$. Both are $\mathbb{R}$-linear and multiplicative, and $(\sigma^*)^2=\mathrm{id}$ because $\sigma^2=\mathrm{id}$.

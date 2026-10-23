@@ -16,7 +16,7 @@ One forward reference deserves to be stated at the outset, because it recurs thr
 A **set** is a collection of objects, its **elements**. One writes $x \in X$ for "$x$ is an element of $X$" and $x \notin X$ for its negation. Two sets are equal when they have the same elements: this is the **axiom of extensionality**,
 
 $$
-X = Y \quad \text{if and only if} \quad (z \in X \iff z \in Y) \ \text{for every } z.
+\boxed{\;X = Y \quad \text{if and only if} \quad (z \in X \iff z \in Y) \ \text{for every } z\;}.
 $$
 
 Extensionality is the principle that a set is determined by its members and by nothing else. It is the reason that two descriptions of the same collection describe the same set, and it is the tool with which every identity below is proved: to show that two sets are equal one shows that each element of one lies in the other.
@@ -80,7 +80,7 @@ For $I = \emptyset$ the union is $\emptyset$ and the intersection is $X$, by the
 **Proof.** Each identity is proved by extensionality. For the first De Morgan law, an element $x$ lies in $(A \cup B)^{\mathrm{c}}$ exactly when it is not in $A \cup B$, that is, when it is in neither $A$ nor $B$; and $x \in A^{\mathrm{c}} \cap B^{\mathrm{c}}$ exactly when it is not in $A$ and not in $B$. The two conditions are the same. The second law is the first applied to the complements, or is proved in the same way. The first distributivity law: $x \in A \cap (B \cup C)$ when $x \in A$ and ($x \in B$ or $x \in C$), that is, when ($x \in A$ and $x \in B$) or ($x \in A$ and $x \in C$), that is, when $x \in (A \cap B) \cup (A \cap C)$. The remaining laws follow from the definitions in the same way, and the infinite distributive laws
 
 $$
-A \cap \bigcup_i B_i = \bigcup_i (A \cap B_i), \qquad A \cup \bigcap_i B_i = \bigcap_i (A \cup B_i)
+\boxed{\;A \cap \bigcup_i B_i = \bigcup_i (A \cap B_i), \qquad A \cup \bigcap_i B_i = \bigcap_i (A \cup B_i)\;}
 $$
 
 are proved by the same elementwise argument with a quantifier in place of a finite disjunction.
@@ -142,7 +142,7 @@ The product of a finite list $X_1, \ldots, X_n$ is defined recursively, $X_1 \ti
 **Proposition.** For sets $X, Y, Z$ one has
 
 $$
-X \times (Y \cup Z) = (X \times Y) \cup (X \times Z), \qquad X \times (Y \cap Z) = (X \times Y) \cap (X \times Z).
+\boxed{\;X \times (Y \cup Z) = (X \times Y) \cup (X \times Z), \qquad X \times (Y \cap Z) = (X \times Y) \cap (X \times Z)\;}.
 $$
 
 **Proof.** An element of the left side of the first identity is a pair $(x, w)$ with $x \in X$ and $w \in Y \cup Z$, so either $w \in Y$ or $w \in Z$; hence the pair lies in $X \times Y$ or in $X \times Z$. The converse is the reverse reading. The second identity is the same argument with "and" in place of "or".

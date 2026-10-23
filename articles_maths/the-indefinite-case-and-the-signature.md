@@ -43,7 +43,7 @@ The form is symmetric, bilinear and compatible, since both sides of $h(uv,w) = h
 **Definition.** The **inertia index** of a Hermitian form on a finite-dimensional module is the triple $(n,m,z)$ of the **ranks of positivity and of negativity** and the dimension of the radical, the triple of *Indefinite Inner Product Spaces*, §*Inertia and the Signature*,
 
 $$
-n = \max\{\dim W : W \text{ positive definite}\}, \qquad m = \max\{\dim W : W \text{ negative definite}\}, \qquad z = \dim A^{\perp} ,
+\boxed{\;n = \max\{\dim W : W \text{ positive definite}\}, \qquad m = \max\{\dim W : W \text{ negative definite}\}, \qquad z = \dim A^{\perp}\;} ,
 $$
 
 and in the nondegenerate case the **signature** is the pair $(n,m)$, with $n+m=N$; the **Pontryagin index** is $\kappa = \min(n,m)$, the rank of the smaller of the two parts. It is not the **rank of negativity** of *Pontryagin Spaces*, the dimension of the negative part, which that article calls the index of $\Pi_{\kappa}$: the two numbers agree exactly when the negative part is the smaller, $m \leq n$, and they differ in the biquaternion instance, where the general quaternionic sesquilinear form of signature $(2,6)$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* makes the Pontryagin space $\Pi_{6}$ of *The Krein Gram Matrix and the Restrictions of the Form*, of positive part of dimension $2$ and negative part of dimension $6$, whose Pontryagin index is $2$.
@@ -57,7 +57,7 @@ and in the nondegenerate case the **signature** is the pair $(n,m)$, with $n+m=N
 **Theorem (the decomposition).** Let $h$ be a Hermitian form on a finite-dimensional module. Then $A$ is the orthogonal direct sum
 
 $$
-A = A_{+} \oplus A_{-} \oplus A^{\perp} ,
+\boxed{\;A = A_{+} \oplus A_{-} \oplus A^{\perp}\;} ,
 $$
 
 with $A_{+}$ positive definite and $A_{-}$ negative definite, and the Gram matrix in a basis adapted to the decomposition is the diagonal matrix with $n$ entries $+1$, $m$ entries $-1$ and $z$ entries $0$ after a rescaling of the basis by the square roots of the diagonal values.

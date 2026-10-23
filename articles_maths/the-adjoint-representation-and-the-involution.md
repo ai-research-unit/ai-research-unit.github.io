@@ -18,7 +18,7 @@ The base is a field $K$ of characteristic not two; $\mathrm{G}$ is a finite-dime
 **Theorem.** Let $\theta$ be an involution of $\mathrm{G}$ and let $\Theta$ be the conjugation $T\mapsto\theta T\theta^{-1}$ on $\mathfrak{gl}(\mathrm{G})$. Then
 
 $$
-\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}
+\boxed{\;\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}\;}
 $$
 
 for every $x\in\mathrm{G}$; equivalently $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$, so the adjoint representation intertwines the involution of $\mathrm{G}$ with the involution of the operator algebra.
@@ -36,7 +36,7 @@ for every $x\in\mathrm{G}$; equivalently $\operatorname{ad}\circ\theta=\Theta\ci
 **Theorem.** The decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ induces a decomposition of the adjoint image,
 
 $$
-\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P}),
+\boxed{\;\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P})\;},
 $$
 
 with $\operatorname{ad}(\mathrm{K})$ a Lie subalgebra of $\mathfrak{gl}(\mathrm{G})$, $\operatorname{ad}(\mathrm{P})$ a module over it, and the brackets $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{K})]\subseteq\operatorname{ad}(\mathrm{K})$, $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{P})$, $[\operatorname{ad}(\mathrm{P}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{K})$; the involution $\Theta$ acts by $+1$ on the first summand and by $-1$ on the second.
@@ -56,7 +56,7 @@ with $\operatorname{ad}(\mathrm{K})$ a Lie subalgebra of $\mathfrak{gl}(\mathrm{
 **Theorem.** The adjoint representation is self-dual, with the invariant form the Killing form:
 
 $$
-B(\operatorname{ad}_x y,z)+B(y,\operatorname{ad}_x z)=0 .
+\boxed{\;B(\operatorname{ad}_x y,z)+B(y,\operatorname{ad}_x z)=0\;} .
 $$
 
 **Proof.** The invariance $B([x,y],z)+B(y,[x,z])=0$ is the associativity of the Killing form; it is exactly the displayed relation.

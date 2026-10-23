@@ -16,7 +16,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $X$ is a Banach space 
 **Theorem ($B(X)$ is a unital Banach algebra).** $B(X)$ is a unital associative algebra under pointwise linear structure, composition and the identity $\mathrm{id}$, the operator norm is submultiplicative,
 
 $$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1 ,
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert , \qquad \lVert \mathrm{id}\rVert = 1\;} ,
 $$
 
 and $B(X)$ is complete for it. The multiplication $(S,T) \mapsto ST$ is continuous, and a linear $T$ is bounded exactly when it is continuous.
@@ -80,7 +80,7 @@ and the **resolvent set** is its complement; the **spectral radius** is $r(T) = 
 **Theorem (the unit group is open and inversion is continuous).** The unit group $B(X)^{\times}$ is open in $B(X)$, inversion $T \mapsto T^{-1}$ is continuous on it, and $B(X)^{\times}$ is a topological group for the subspace topology. If $\lVert T - \mathrm{id}\rVert < 1$ then $T$ is invertible with
 
 $$
-T^{-1} = \sum_{n\geq0}(\mathrm{id} - T)^n .
+\boxed{\;T^{-1} = \sum_{n\geq0}(\mathrm{id} - T)^n\;} .
 $$
 
 **Proof.** The Neumann series $\sum(\mathrm{id}-T)^n$ converges absolutely when $\lVert \mathrm{id} - T\rVert < 1$, by submultiplicativity and completeness, and its sum is an inverse. For openness at a general invertible $T$, write $S = T + H = T(\mathrm{id} + T^{-1}H)$, invertible when $\lVert T^{-1}H\rVert < 1$ by the series, so a small ball about $T$ lies in $B(X)^\times$. Continuity of inversion follows from $(T+H)^{-1} - T^{-1} = -T^{-1}H(T+H)^{-1}$ and the local boundedness of the inverse.
@@ -88,7 +88,7 @@ $$
 **Theorem (the spectrum is compact and nonempty).** For every $T$ the spectrum $\sigma(T)$ is a nonempty compact subset of $\mathbb{K}$ contained in the disk of radius $\lVert T\rVert$, and the spectral radius satisfies
 
 $$
-r(T) = \lim_{n\to\infty}\lVert T^n\rVert^{1/n} = \inf_n\lVert T^n\rVert^{1/n} .
+\boxed{\;r(T) = \lim_{n\to\infty}\lVert T^n\rVert^{1/n} = \inf_n\lVert T^n\rVert^{1/n}\;} .
 $$
 
 **Proof.** Nonemptiness and the spectral radius formula are the Gelfand–Mazur and Beurling–Gelfand theorems of *Topological Algebras and Banach Algebras*; compactness follows because $\sigma(T) \subseteq \{\lvert\lambda\rvert \leq \lVert T\rVert\}$ is closed, the complement being the preimage of the open unit group under the continuous map $\lambda \mapsto T - \lambda\,\mathrm{id}$.

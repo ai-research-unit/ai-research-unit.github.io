@@ -144,7 +144,7 @@ where the connecting map $\delta$ is the boundary operator of the short exact se
 **Theorem (Poincaré lemma).** If $\Xi \subseteq \mathbb{R}^n$ is star-shaped (in particular if $\Xi$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:
 
 $$
-H^k_{dR}(\Xi) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(\Xi) = \mathbb{R}.
+\boxed{\;H^k_{dR}(\Xi) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(\Xi) = \mathbb{R}\;}.
 $$
 
 **Proof.** Let $\Xi$ be star-shaped with respect to $0$. Define a **homotopy operator** $h : \Omega^k(\Xi) \to \Omega^{k-1}(\Xi)$ by
@@ -182,7 +182,7 @@ To state the theorem one needs the induced orientation on the boundary. If $M$ i
 **Theorem (Stokes).** Let $M$ be an oriented smooth $n$-manifold with boundary, and let $\omega \in \Omega^{n-1}(M)$ be a form with compact support. Then
 
 $$
-\int_M d\omega = \int_{\partial M} \omega,
+\boxed{\;\int_M d\omega = \int_{\partial M} \omega\;},
 $$
 
 the boundary carrying the induced orientation.
@@ -294,7 +294,7 @@ $$
 **Theorem (de Rham).** Let $M$ be a smooth manifold. Then there is a natural isomorphism
 
 $$
-H^k_{dR}(M) \longrightarrow H^k(M; \mathbb{R})
+\boxed{\;H^k_{dR}(M) \longrightarrow H^k(M; \mathbb{R})\;}
 $$
 
 between the $k$-th de Rham cohomology and the $k$-th singular cohomology of $M$ with real coefficients, natural with respect to smooth maps. Consequently the de Rham cohomology is a homotopy invariant, its dimension is the $k$-th Betti number of $M$ when finite, and a closed form is exact if and only if all its periods over singular cycles vanish.

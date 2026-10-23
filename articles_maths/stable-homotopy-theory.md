@@ -46,7 +46,7 @@ the colimit along the structure maps, and a spectrum with all homotopy groups ze
 **Theorem (the stable homotopy groups of spheres).** $\pi_k(\mathbb{S}) \cong \pi_k^s$, the $k$-th stable stem, with
 
 $$
-\pi_0^s \cong \mathbb{Z}, \quad \pi_1^s \cong \mathbb{Z}/2, \quad \pi_2^s \cong \mathbb{Z}/2, \quad \pi_3^s \cong \mathbb{Z}/24, \quad \pi_4^s = 0, \quad \pi_5^s = 0,
+\boxed{\;\pi_0^s \cong \mathbb{Z}, \quad \pi_1^s \cong \mathbb{Z}/2, \quad \pi_2^s \cong \mathbb{Z}/2, \quad \pi_3^s \cong \mathbb{Z}/24, \quad \pi_4^s = 0, \quad \pi_5^s = 0\;},
 $$
 
 $$
@@ -68,7 +68,7 @@ This is standard mathematics (Toda, *Composition Methods in Homotopy Groups of S
 **Theorem (Brown representability; the homotopy-theoretic form).** Every reduced cohomology theory on pointed CW complexes is representable: there is a spectrum $E$ with
 
 $$
-E^{k,\mathrm{red}}(X) \cong [\Sigma^\infty X, \Sigma^k E]_{\mathcal{SH}} = \operatorname{colim}_n\bigl[\Sigma^n X, E_{k+n}\bigr]
+\boxed{\;E^{k,\mathrm{red}}(X) \cong [\Sigma^\infty X, \Sigma^k E]_{\mathcal{SH}} = \operatorname{colim}_n\bigl[\Sigma^n X, E_{k+n}\bigr]\;}
 $$
 
 naturally in $X$; and every spectrum defines a reduced cohomology theory by this formula. The corresponding homology theory is $E_k(X) = \pi_k(E\wedge \Sigma^\infty X)$.
@@ -96,7 +96,7 @@ naturally in $X$; and every spectrum defines a reduced cohomology theory by this
 **Theorem (the Adams spectral sequence).** Let $p$ be a prime and let $E$ be a spectrum whose mod-$p$ cohomology $H^*(E;\mathbb{F}_p)$ is bounded below and of finite type as a graded $\mathbb{F}_p$-vector space. Then there is a spectral sequence with
 
 $$
-E_2^{s,t} = \operatorname{Ext}^{s,t}_{\mathcal{A}_p}\bigl(\mathbb{F}_p, H^*(E;\mathbb{F}_p)\bigr) \Longrightarrow \pi_{t-s}(E)\otimes \mathbb{Z}_p,
+\boxed{\;E_2^{s,t} = \operatorname{Ext}^{s,t}_{\mathcal{A}_p}\bigl(\mathbb{F}_p, H^*(E;\mathbb{F}_p)\bigr) \Longrightarrow \pi_{t-s}(E)\otimes \mathbb{Z}_p\;},
 $$
 
 where the Ext groups are computed in the abelian category of graded $\mathcal{A}_p$-modules, the differential is $d_r : E_r^{s,t}\to E_r^{s+r,t+r-1}$, and the **Adams filtration** is by the number of stable maps in a factorisation. The spectral sequence converges conditionally in the sense of Boardman.

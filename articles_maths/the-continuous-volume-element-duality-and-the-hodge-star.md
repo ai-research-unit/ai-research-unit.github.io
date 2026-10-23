@@ -65,7 +65,7 @@ where $\langle\cdot\rangle_{n}$ is the grade projection onto the top grade of *T
 **Definition.** The **Hodge star** of the volume element $\omega$ is the linear map
 
 $$
-\star : \mathrm{Cl}(V,\mathfrak{Q})\to\mathrm{Cl}(V,\mathfrak{Q}), \qquad \star A = A\omega^{-1} ,
+\boxed{\;\star : \mathrm{Cl}(V,\mathfrak{Q})\to\mathrm{Cl}(V,\mathfrak{Q}), \qquad \star A = A\omega^{-1}\;} ,
 $$
 
 homogeneous of degree $-2k$ on the grade $k$ in the sense that it maps $\mathrm{Cl}_{k}$ to $\mathrm{Cl}_{n-k}$, as in *The Volume Element, Duality and the Hodge Star*, §*The Hodge Star*; it is continuous, being linear on a finite-dimensional space, and it is a homeomorphism with inverse $\star^{-1}$ of the same form for $\omega^{-1}$.
@@ -79,7 +79,7 @@ homogeneous of degree $-2k$ on the grade $k$ in the sense that it maps $\mathrm{
 **Theorem (the involutive case).** Let $\omega^{2}=1$, so that $\star$ is an involution. Then the spectral projections $\tfrac12(\mathrm{id}\pm\star)$ are continuous linear maps and
 
 $$
-\mathrm{Cl}_{k}(V,\mathfrak{Q}) = \mathrm{Cl}_{k}^{+}\oplus\mathrm{Cl}_{k}^{-}, \qquad \mathrm{Cl}_{k}^{\pm}=\{x : \star x=\pm x\} ,
+\boxed{\;\mathrm{Cl}_{k}(V,\mathfrak{Q}) = \mathrm{Cl}_{k}^{+}\oplus\mathrm{Cl}_{k}^{-}, \qquad \mathrm{Cl}_{k}^{\pm}=\{x : \star x=\pm x\}\;} ,
 $$
 
 is a topological direct sum of the self-dual and the anti-self-dual parts; the two are interchanged by an orientation-reversing isometry and preserved by an orientation-preserving one.

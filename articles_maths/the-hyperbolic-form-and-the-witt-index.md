@@ -17,7 +17,7 @@ The hyperbolic form is the extremal case of the layer: it is as far from definit
 **Definition.** The **hyperbolic plane** $\mathbb{H}$ is the two-dimensional space with basis $e, f$ and the form
 
 $$
-h(e,e) = 0, \qquad h(f,f) = 0, \qquad h(e,f) = 1, \qquad h(f,e) = \varsigma(1) = 1 .
+\boxed{\;h(e,e) = 0, \qquad h(f,f) = 0, \qquad h(e,f) = 1, \qquad h(f,e) = \varsigma(1) = 1\;} .
 $$
 
 **Proposition.** The hyperbolic plane is non-degenerate, its Witt index is $1$, its matrix in the basis $(e,f)$ is $\begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}$ of determinant $-1$, and its two coordinate lines are the totally isotropic subspaces of maximal dimension.
@@ -43,7 +43,7 @@ $$
 **Theorem (Witt).** Every non-degenerate form decomposes as an orthogonal sum
 
 $$
-V = H \perp V_{\mathrm{an}}, \qquad H \cong \mathbb{H}^{\perp m}, \quad V_{\mathrm{an}} \text{ anisotropic},
+\boxed{\;V = H \perp V_{\mathrm{an}}, \qquad H \cong \mathbb{H}^{\perp m}, \quad V_{\mathrm{an}} \text{ anisotropic}\;},
 $$
 
 with $m = \operatorname{ind}(h)$; the decomposition is unique in the sense that the index and the isometry class of the anisotropic part are invariants of the form.

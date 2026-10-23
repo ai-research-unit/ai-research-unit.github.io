@@ -51,8 +51,8 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})
-\;}
-$$,
+\;},
+$$
 
 with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
 
@@ -72,8 +72,8 @@ $$
 (L_{\tilde Q_4})^{\ast}=L_{\tilde Q_4^{\ast}},\qquad
 (L_{\tilde Q_4})^{N}=L_{\tilde Q_4^{\natural}},\qquad
 (L_{\tilde Q_4})^{\natural\ast}=R_{\bar{\tilde Q_4}}
-\;}
-$$,
+\;},
+$$
 
 and for the two-sided operator $(L_{\tilde Q_4}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_4}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\ast}=L_{\tilde Q_4^{\ast}}R_{\tilde Q_1^{\ast}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{N}=L_{\tilde Q_4^{\natural}}R_{\tilde Q_1^{\natural}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\natural\ast}=L_{\bar{\tilde Q_1}}R_{\bar{\tilde Q_4}}$.
 
@@ -139,8 +139,8 @@ $$
 \boxed{\;
 L_{\tilde Q_4}R_{\tilde Q_4^{-1}}\big|_{V}=-\rho_{\tilde Q_4},\qquad
 L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}\big|_{V}=\rho_{\tilde Q_4}
-\;}
-$$,
+\;},
+$$
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 

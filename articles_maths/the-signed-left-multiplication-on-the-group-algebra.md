@@ -22,7 +22,7 @@ The unsigned left multiplication is $L_a(f) = a*f$. The set of signed left multi
 **Theorem (boundedness and the norm).** $\Lambda_a$ is a bounded linear operator with
 
 $$
-\|\Lambda_a\| \leq \|a\|_1\,\|\alpha\| ,
+\boxed{\;\|\Lambda_a\| \leq \|a\|_1\,\|\alpha\|\;} ,
 $$
 
 and $\|\Lambda_a\| = \|a\|_1$ when $\alpha$ is isometric, in particular for the sign character and for a group automorphism of a unimodular group. The map $a\mapsto\Lambda_a$ is linear and Lipschitz, $\|\Lambda_a - \Lambda_{a'}\|\leq\|a-a'\|_1\|\alpha\|$.
@@ -40,7 +40,7 @@ and $\|\Lambda_a\| = \|a\|_1$ when $\alpha$ is isometric, in particular for the 
 **Proposition (the composition laws).** For all $a, b \in \mathcal{A}$,
 
 $$
-\Lambda_a\,\Lambda_b = L_{a*\alpha(b)}, \qquad L_a\,\Lambda_b = \Lambda_{a*b}, \qquad \Lambda_a\,L_b = \Lambda_{a*\alpha(b)} .
+\boxed{\;\Lambda_a\,\Lambda_b = L_{a*\alpha(b)}, \qquad L_a\,\Lambda_b = \Lambda_{a*b}, \qquad \Lambda_a\,L_b = \Lambda_{a*\alpha(b)}\;} .
 $$
 
 Hence a product of two signed left multiplications is an unsigned left convolution, a product of an unsigned and a signed left multiplication is signed, and the sign of a product is the product of the signs.
@@ -100,7 +100,7 @@ so $\operatorname{Fix}_L(\delta_k)$ is the linear span of the square roots of $k
 **Theorem (invertibility).** The signed left multiplication $\Lambda_a$ is invertible exactly when $a$ is a unit, and then
 
 $$
-\Lambda_a^{-1} = \mathrm{A}\,L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}} ,
+\boxed{\;\Lambda_a^{-1} = \mathrm{A}\,L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}}\;} ,
 $$
 
 that is $\Lambda_a^{-1}(g) = \alpha(a^{-1}*g) = \alpha(a)^{-1}*\alpha(g)$; the inverse of a signed left multiplication is again a signed left multiplication, and the invertible signed left multiplications form a coset of the group of invertible left convolutions.

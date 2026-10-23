@@ -38,9 +38,9 @@ the Involution*, the unique complement of each element.
 two unit laws:
 
 $$
-\neg\neg x = x, \qquad x \leq y \Rightarrow \neg y \leq \neg x, \qquad
+\boxed{\;\neg\neg x = x, \qquad x \leq y \Rightarrow \neg y \leq \neg x, \qquad
 \neg(x \wedge y) = \neg x \vee \neg y, \qquad \neg(x \vee y) = \neg x \wedge \neg y, \qquad
-\neg 0 = 1, \quad \neg 1 = 0 .
+\neg 0 = 1, \quad \neg 1 = 0\;} .
 $$
 
 It is an anti-automorphism of the Boolean algebra: it reverses the order and exchanges the two

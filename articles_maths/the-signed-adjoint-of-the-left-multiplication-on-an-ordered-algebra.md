@@ -34,7 +34,7 @@ and they factor as $L^{\alpha}_a = L_a\Gamma$ and $R^{\alpha}_a = R_a\Gamma$ thr
 **Theorem (the adjoints).** For the trace form,
 
 $$
-\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_{\alpha(a^{*})} , \qquad \bigl(R^{\alpha}_a\bigr)^{*} = R^{\alpha}_{\alpha(a^{*})} ,
+\boxed{\;\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_{\alpha(a^{*})} , \qquad \bigl(R^{\alpha}_a\bigr)^{*} = R^{\alpha}_{\alpha(a^{*})}\;} ,
 $$
 
 so the adjoint of a signed one-sided multiplication is a signed one-sided multiplication with the $\alpha$-twisted adjoint parameter, and the family of the signed one-sided multiplications is **closed under the adjoint**.
@@ -60,7 +60,7 @@ which agrees with the direct computation $(L_{a\alpha(b)})^{*} = L_{(a\alpha(b))
 **Proposition (the self-adjoint signed one-sided multiplications).** The signed left multiplication is self-adjoint,
 
 $$
-\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_a ,
+\boxed{\;\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_a\;} ,
 $$
 
 exactly when the parameter is **$\alpha$-Hermitian**, $a = \alpha(a^{*})$; it is **skew-adjoint**, $\bigl(L^{\alpha}_a\bigr)^{*} = -L^{\alpha}_a$, exactly when $a = -\alpha(a^{*})$.
@@ -86,7 +86,7 @@ and it is **normal** exactly when the two parts commute; in particular the $\alp
 **Theorem (the order of the signed left multiplications).** If the grade involution is **positive** and $a\geq0$, then
 
 $$
-L^{\alpha}_a\geq0 \quad \text{and} \quad R^{\alpha}_a\geq0 , \qquad \bigl(L^{\alpha}_a\bigr)^{*}\geq0 \quad \text{and} \quad \bigl(R^{\alpha}_a\bigr)^{*}\geq0 ,
+\boxed{\;L^{\alpha}_a\geq0 \quad \text{and} \quad R^{\alpha}_a\geq0 , \qquad \bigl(L^{\alpha}_a\bigr)^{*}\geq0 \quad \text{and} \quad \bigl(R^{\alpha}_a\bigr)^{*}\geq0\;} ,
 $$
 
 so the signed one-sided multiplications of positive parameters are positive and their adjoints are positive; the family is **closed under the adjoint** and the adjoint is an order isomorphism of it.

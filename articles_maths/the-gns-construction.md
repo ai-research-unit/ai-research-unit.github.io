@@ -21,7 +21,7 @@ The **form of the state** is $\langle x,y\rangle_{\omega} = \omega(y^{\dagger}x)
 **Proposition (positivity and the Cauchy–Schwarz inequality).** The form of a state is positive semidefinite, Hermitian, and satisfies
 
 $$
-|\langle x,y\rangle_{\omega}|^{2}\leq \langle x,x\rangle_{\omega}\langle y,y\rangle_{\omega}, \qquad \langle x,y\rangle_{\omega} = \overline{\langle y,x\rangle_{\omega}} .
+\boxed{\;|\langle x,y\rangle_{\omega}|^{2}\leq \langle x,x\rangle_{\omega}\langle y,y\rangle_{\omega}, \qquad \langle x,y\rangle_{\omega} = \overline{\langle y,x\rangle_{\omega}}\;} .
 $$
 
 **Proof.** The classical Cauchy–Schwarz argument for a positive semidefinite sesquilinear form: positivity of $\langle x + \lambda y, x+\lambda y\rangle_{\omega}$ for all complex $\lambda$ gives the inequality; Hermitian symmetry is $\omega(y^{\dagger}x) = \overline{\omega(x^{\dagger}y)}$, using $\omega(u^{\dagger}) = \overline{\omega(u)}$ for a state.
@@ -41,7 +41,7 @@ $$
 3. the class $\xi_{\omega} = 1 + N_{\omega}$ is **cyclic**, $\overline{\pi_{\omega}(A)\xi_{\omega}} = H_{\omega}$, and
 
 $$
-\omega(x) = \langle\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}\rangle, \qquad \langle\pi_{\omega}(x)\xi_{\omega},\pi_{\omega}(y)\xi_{\omega}\rangle = \omega(y^{\dagger}x).
+\boxed{\;\omega(x) = \langle\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}\rangle, \qquad \langle\pi_{\omega}(x)\xi_{\omega},\pi_{\omega}(y)\xi_{\omega}\rangle = \omega(y^{\dagger}x)\;}.
 $$
 
 **Proof.** The form descends because the radical is exactly the isotropic part; completion gives $H_{\omega}$; the left multiplication is well defined because $N_{\omega}$ is a left ideal, is multiplicative by associativity, and satisfies $\pi_{\omega}(x^{\dagger}) = \pi_{\omega}(x)^{*}$ by the adjoint axiom and the reality of the form; the density of the image of the quotient is the construction; the two identities are the definitions.
@@ -57,7 +57,7 @@ $$
 **Theorem (uniqueness up to unitary equivalence).** If $(H,\pi,\xi)$ is a cyclic $\ast$-representation of $A$ with
 
 $$
-\omega(x) = \langle\pi(x)\xi,\xi\rangle
+\boxed{\;\omega(x) = \langle\pi(x)\xi,\xi\rangle\;}
 $$
 
 then there is a unitary $U : H_{\omega}\to H$ with $U\xi_{\omega} = \xi$ and $U\pi_{\omega}(x) = \pi(x)U$ for every $x$. So the state determines its cyclic representation, and the map from cyclic representations to states is a bijection on unitary equivalence classes.

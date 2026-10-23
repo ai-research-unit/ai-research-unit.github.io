@@ -63,7 +63,7 @@ Continuity itself is not automatic, with two exceptions. The **inversion is cont
 **Theorem (the dictionary).** For an involution $\sigma$ of $G$ with $\alpha = \sigma\iota$,
 
 $$
-G^\sigma = I(\alpha), \qquad I(\sigma) = G^\alpha .
+\boxed{\;G^\sigma = I(\alpha), \qquad I(\sigma) = G^\alpha\;} .
 $$
 
 So the fixed set of the involution is the inverted set of the associated automorphism, and conversely; the subgroup among the two is $I(\sigma) = G^\alpha$, and the set that may fail to be a subgroup is the fixed set $G^\sigma = I(\alpha)$.
@@ -95,7 +95,7 @@ So the fixed set of the involution is the inverted set of the associated automor
 **Theorem.** Let $\sigma$ be a topological involution of $G$ and $H$ a $\sigma$-stable subgroup. Then $\sigma|_H$ is a topological involution of $H$ with the subspace topology and $H \cap G^\sigma = H^{\sigma|_H}$, $H \cap I(\sigma) = I(\sigma|_H)$. If in addition $H$ is closed and normal then $\bar\sigma$ is a topological involution of the topological group $G/H$, and
 
 $$
-\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma),
+\boxed{\;\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma)\;},
 $$
 
 where $\pi : G \to G/H$ is the quotient map. Both inclusions can be strict.
@@ -115,7 +115,7 @@ $$
 Then $\varphi$ is continuous, takes its values in the fixed set $G^\sigma$, is constant on the left cosets of $I(\sigma)$, and induces a continuous bijection
 
 $$
-\bar\varphi : G/I(\sigma) \longrightarrow \varphi(G) \subseteq G^\sigma, \qquad gI(\sigma) \longmapsto g^{-1}\alpha(g),
+\boxed{\;\bar\varphi : G/I(\sigma) \longrightarrow \varphi(G) \subseteq G^\sigma, \qquad gI(\sigma) \longmapsto g^{-1}\alpha(g)\;},
 $$
 
 onto its image. If $G$ is compact, then $G/I(\sigma)$ is compact Hausdorff, the image $\varphi(G)$ is a closed subspace of $G^\sigma$, and $\bar\varphi$ is a homeomorphism of $G/I(\sigma)$ onto $\varphi(G)$.

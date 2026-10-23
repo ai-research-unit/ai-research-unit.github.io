@@ -27,7 +27,7 @@ $$
 **Proposition (adjoint and composition laws).** For all bounded $Q, S, T$,
 
 $$
-H_{Q}(T)^{\dagger} = H_{Q}(T^{\dagger}) , \qquad H_{Q}(H_{S}(T)) = H_{QS}(T) , \qquad H_{Q}(ST) = H_{Q}(S)H_{Q}(T) \text{ if } Q^{\dagger}Q = 1 .
+\boxed{\;H_{Q}(T)^{\dagger} = H_{Q}(T^{\dagger}) , \qquad H_{Q}(H_{S}(T)) = H_{QS}(T) , \qquad H_{Q}(ST) = H_{Q}(S)H_{Q}(T) \text{ if } Q^{\dagger}Q = 1\;} .
 $$
 
 **Proof.** $(QTQ^{\dagger})^{\dagger} = Q^{\dagger\dagger}T^{\dagger}Q^{\dagger} = QT^{\dagger}Q^{\dagger}$; the composition is associativity; the multiplicativity uses $Q^{\dagger}Q = 1$ to cancel the middle pair.
@@ -43,7 +43,7 @@ $$
 **Theorem (form preservation by $J$-unitary parameters).** Let $Q$ be $J$-unitary, $Q^{\dagger}Q = QQ^{\dagger} = 1$. Then for every $T$ and all $x, y$
 
 $$
-[H_{Q}(T)x, H_{Q}(T)y] = [TQ^{\dagger}x, TQ^{\dagger}y] , \qquad [H_{Q}(T)x,y] = [TQ^{\dagger}x, Q^{\dagger}y] ,
+\boxed{\;[H_{Q}(T)x, H_{Q}(T)y] = [TQ^{\dagger}x, TQ^{\dagger}y] , \qquad [H_{Q}(T)x,y] = [TQ^{\dagger}x, Q^{\dagger}y]\;} ,
 $$
 
 and $H_{Q}(T)$ is $J$-isometric whenever $T$ is; in particular the $J$-unitary group acts on the operators by sandwiches preserving the indefinite geometry.
@@ -63,7 +63,7 @@ and $H_{Q}(T)$ is $J$-isometric whenever $T$ is; in particular the $J$-unitary g
 **Theorem (kernel and image for invertible parameters).** Let $Q$ be invertible. Then for every $T$
 
 $$
-\ker H_{Q}(T) = Q^{\dagger-1}\bigl(\ker T\bigr) = (Q^{\dagger})^{-1}\ker T , \qquad \mathrm{im}\,H_{Q}(T) = Q\bigl(\mathrm{im}\,T\bigr) ,
+\boxed{\;\ker H_{Q}(T) = Q^{\dagger-1}\bigl(\ker T\bigr) = (Q^{\dagger})^{-1}\ker T , \qquad \mathrm{im}\,H_{Q}(T) = Q\bigl(\mathrm{im}\,T\bigr)\;} ,
 $$
 
 and for $J$-unitary $Q$ these read $\ker H_{Q}(T) = Q\ker T$ and $\mathrm{im}\,H_{Q}(T) = Q\,\mathrm{im}\,T$.

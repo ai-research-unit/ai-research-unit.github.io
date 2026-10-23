@@ -56,7 +56,7 @@ The right factor is inverted so that the assignment is a left action.
 **Proposition.** The two-sided action is a left action of $G\times G$, and the permutation representation it defines is
 
 $$
-\rho : G\times G \longrightarrow \operatorname{Sym}(G), \qquad \rho(a,b)(x) = a\,x\,b^{-1} .
+\boxed{\;\rho : G\times G \longrightarrow \operatorname{Sym}(G), \qquad \rho(a,b)(x) = a\,x\,b^{-1}\;} .
 $$
 
 **Proof.** $((e,e)\cdot x)=x$, and
@@ -70,7 +70,7 @@ which is the multiplication of the product group; the statement about $\rho$ is 
 **Proposition (the kernel of the two-sided action).** The kernel of $\rho$ is the diagonal copy of the centre,
 
 $$
-\ker\rho = \{(z,z) : z \in Z(G)\} \cong Z(G),
+\boxed{\;\ker\rho = \{(z,z) : z \in Z(G)\} \cong Z(G)\;},
 $$
 
 so the two-sided action is faithful if and only if $G$ has trivial centre; in general it is a faithful action of the quotient $(G\times G)/Z(G)$, where $Z(G)$ is embedded diagonally.
@@ -100,7 +100,7 @@ The permutation representation $\rho : G\times G\to\operatorname{Sym}(G)$ and th
 **Proposition.** For every $(a,b)$,
 
 $$
-\rho(a,b) = \rho_L(a)\circ\rho_R(b^{-1}) = \rho_R(b^{-1})\circ\rho_L(a).
+\boxed{\;\rho(a,b) = \rho_L(a)\circ\rho_R(b^{-1}) = \rho_R(b^{-1})\circ\rho_L(a)\;}.
 $$
 
 **Proof.** On $x$, both sides give $axb^{-1}$; the two orders agree because $\rho_L(a)\rho_R(c)=\rho_R(c)\rho_L(a)$ for all $a,c$, each side sending $x$ to $axc$.

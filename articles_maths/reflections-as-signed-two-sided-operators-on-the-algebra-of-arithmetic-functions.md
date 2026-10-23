@@ -19,7 +19,7 @@ where $u^{-1}$ is the Dirichlet inverse of $u$.
 
 **Theorem.** For every unit $u$,
 $$
-r_u=\alpha .
+\boxed{\;r_u=\alpha\;} .
 $$
 Consequently the reflection of a unit is independent of the unit, the map $u\mapsto r_u$ is constant on $\mathcal{A}^\times$, and the signed inner conjugation
 $$
@@ -33,7 +33,7 @@ of the graded algebra satisfies $\operatorname{conj}_u\circ\alpha=\alpha\circ\op
 
 **Theorem.** The operator $\alpha$ is an involutive unitary algebra automorphism of $\mathcal{A}$:
 $$
-\alpha^2=\mathrm{id},\qquad \alpha(x*y)=\alpha(x)*\alpha(y),\qquad \alpha^*=\alpha,\qquad \alpha^*\alpha=\alpha\alpha^*=\mathrm{id},
+\boxed{\;\alpha^2=\mathrm{id},\qquad \alpha(x*y)=\alpha(x)*\alpha(y),\qquad \alpha^*=\alpha,\qquad \alpha^*\alpha=\alpha\alpha^*=\mathrm{id}\;},
 $$
 and it reverses the grading, $\alpha(\mathcal{A}_{\bar i})=\mathcal{A}_{\bar{1-i}}$. Its fixed algebra is the even part, $\mathcal{A}^\alpha=\mathcal{A}_{\bar0}$, and its $(-1)$-eigenspace is the odd part, $\mathcal{A}_{\bar1}$.
 

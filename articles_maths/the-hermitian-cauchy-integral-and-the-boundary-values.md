@@ -81,7 +81,7 @@ the **circulant matrices** of the Hermitian theory.
 operator $D^{\mathsf T}$:
 
 $$
-D^{\mathsf T}E = \delta\,I .
+\boxed{\;D^{\mathsf T}E = \delta\,I\;} .
 $$
 
 *Proof.* The $(0,0)$ entry of $D^{\mathsf T}E$ is the combination
@@ -119,7 +119,7 @@ Hadamard matrix.
 **Theorem (Hermitian Clifford–Stokes).** For circulant matrix functions $F,G$ of the shape above,
 
 $$
-\int_\Gamma\bigl[(FD^{\mathsf T})G+F(D^{\mathsf T}G)\bigr]dV = \int_{\partial\Gamma}F N^{\mathsf T}G\,dS .
+\boxed{\;\int_\Gamma\bigl[(FD^{\mathsf T})G+F(D^{\mathsf T}G)\bigr]dV = \int_{\partial\Gamma}F N^{\mathsf T}G\,dS\;} .
 $$
 
 *Proof.* The identity is the divergence theorem for the matrix-valued field built from $F,G$ and the
@@ -133,8 +133,8 @@ conormal matrix multiplies in the correct order.
 **Theorem (Q-Hermitian Borel–Pompeiu).** With $E$ the fundamental solution above,
 
 $$
-\int_{\partial\Gamma}E(Z-V)N^{\mathsf T}(Z)G(X)\,dS(X)-\int_\Gamma E(Z-V)\bigl[D^{\mathsf T}G(X)\bigr]dV(X)
-=\begin{cases}G(Y),&Y\in\Gamma^+,\\ O,&Y\in\Gamma^-,\end{cases}
+\boxed{\;\int_{\partial\Gamma}E(Z-V)N^{\mathsf T}(Z)G(X)\,dS(X)-\int_\Gamma E(Z-V)\bigl[D^{\mathsf T}G(X)\bigr]dV(X)
+=\begin{cases}G(Y),&Y\in\Gamma^+,\\ O,&Y\in\Gamma^-,\end{cases}\;}
 $$
 
 for a $C^1$ matrix function $G$.

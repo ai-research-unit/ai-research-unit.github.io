@@ -43,7 +43,7 @@ The **fundamental solution** or **evolution operator** of the equation is the fa
 **Theorem (the Peano series).** Let $A:J\to B(X)$ be continuous and let the interval be $[s,t]$. Then the fundamental solution is given by the norm-convergent **Peano series**
 
 $$
-\Phi(t,s)=\sum_{n\ge0}\ \int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)\,dt_1\cdots dt_n,
+\boxed{\;\Phi(t,s)=\sum_{n\ge0}\ \int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)\,dt_1\cdots dt_n\;},
 $$
 
 with the $n=0$ term the identity, and $\|\Phi(t,s)\|\le \exp(\int_s^t\|A(u)\|\,du)$.
@@ -71,7 +71,7 @@ on the tangent space $T_xM$, and its fundamental solution is the derivative $D\v
 **Theorem (the evolution operator along an orbit).** The derivative of the flow is the evolution operator of the variational equation, and
 
 $$
-D\varphi_{t-s}(\varphi_s(x))=D\varphi_t(x)\,D\varphi_s(x)^{-1}, \qquad \Phi(t,s)=D\varphi_{t-s}(\varphi_s(x)) ;
+\boxed{\;D\varphi_{t-s}(\varphi_s(x))=D\varphi_t(x)\,D\varphi_s(x)^{-1}, \qquad \Phi(t,s)=D\varphi_{t-s}(\varphi_s(x))\;} ;
 $$
 
 the cocycle law is the chain rule for the flow. For a diffeomorphism $T$ with orbit $\{T^nx\}$ the corresponding family is $\Phi(n,m)=DT^{n-m}(T^mx)$ on the tangent space.
@@ -129,7 +129,7 @@ the values of the evolution operator at later periods are the powers of the mono
 **Theorem (Floquet–Lyapunov).** Let $A(t)$ be $T$-periodic and let $M$ be its monodromy. Then there is a $T$-periodic family $P(t)\in B(X)$ with $P(0)=I$ and a bounded operator $B$ with $\exp(TB)=M$ such that
 
 $$
-\Phi(t,0)=P(t)\exp(tB), \qquad \Phi(t,s)=P(t)\exp((t-s)B)P(s)^{-1}.
+\boxed{\;\Phi(t,0)=P(t)\exp(tB), \qquad \Phi(t,s)=P(t)\exp((t-s)B)P(s)^{-1}\;}.
 $$
 
 The eigenvalues of $M$ are the **Floquet multipliers** and the numbers $\lambda$ with $\exp(T\lambda)\in\sigma(M)$ the **Floquet exponents**; the zero solution of the equation is exponentially stable exactly when every Floquet multiplier lies inside the unit circle, and unstable when one lies outside.

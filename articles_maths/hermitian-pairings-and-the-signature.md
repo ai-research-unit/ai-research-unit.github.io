@@ -39,7 +39,7 @@ $$
 $$
 is the complete invariant of a nondegenerate symmetric bilinear form up to orthogonal equivalence (Sylvester's law of inertia), it is additive over orthogonal sums, it vanishes on the hyperbolic forms, and it induces an isomorphism
 $$
-\sigma : W(\mathbb{R})\xrightarrow{\ \cong\ }\mathbb{Z}.
+\boxed{\;\sigma : W(\mathbb{R})\xrightarrow{\ \cong\ }\mathbb{Z}\;}.
 $$
 For $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$ the same statement holds: the signature is the complete invariant of a nondegenerate Hermitian form and $W(\mathbb{C},-)\cong\mathbb{Z}$.
 
@@ -57,7 +57,7 @@ For $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$ the same st
 
 **Definition.** For a ring with involution $A$ the **Wall groups** $L_n(A)$ are the Witt groups of the $\varepsilon$-quadratic forms on finitely generated free $A$-modules for $n\equiv0,1\pmod4$ (with $\varepsilon = +1$ for $n\equiv0$ and $\varepsilon = -1$ for $n\equiv2$), and the corresponding groups of formations for $n$ odd; they fit into a $4$-periodic sequence
 $$
-L_{n+4}(A)\cong L_n(A).
+\boxed{\;L_{n+4}(A)\cong L_n(A)\;}.
 $$
 For a group ring $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ the groups $L_n(\mathbb{Z}[\pi])$ are the **surgery obstruction groups** of *Cobordism and Surgery Theory*.
 
@@ -77,7 +77,7 @@ For a group ring $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ the
 
 **Corollary (the Hirzebruch signature theorem, named).** For a closed oriented smooth $4k$-manifold the signature is the evaluation of the $L$-genus,
 $$
-\sigma(M) = \int_M L_k(n_1,\dots,n_k),
+\boxed{\;\sigma(M) = \int_M L_k(n_1,\dots,n_k)\;},
 $$
 the Hirzebruch signature theorem; the formula is the analytic and differential-topological computation of the invariant, and it belongs to *Smooth Manifolds and Differential Topology* and Part IV. The present article uses only the topological invariance.
 

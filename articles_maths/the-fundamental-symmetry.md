@@ -23,7 +23,7 @@ The last condition says that the form $\langle x,y\rangle = [Jx,y]$ is positive 
 **Theorem (the bridge).** Let $J$ be a fundamental symmetry and put $\langle x,y\rangle = [Jx,y]$. Then $\langle\cdot,\cdot\rangle$ is a positive definite Hermitian form, $J$ is self-adjoint and involutive for it, and the indefinite form is recovered by
 
 $$
-[x,y] = \langle Jx,y\rangle .
+\boxed{\;[x,y] = \langle Jx,y\rangle\;} .
 $$
 
 Conversely, every involutive and indefiniteness-self-adjoint operator $J$ for which $[Jx,x] > 0$ off zero arises from a fundamental decomposition. So the data of a fundamental symmetry and the data of a fundamental decomposition are the same, and an indefinite inner product space is a definite one together with $J$.
@@ -33,7 +33,7 @@ Conversely, every involutive and indefiniteness-self-adjoint operator $J$ for wh
 **Proposition (both forms are isometric).** $J$ preserves the indefinite form and the definite form:
 
 $$
-[Jx,Jy] = [x,y], \qquad \langle Jx,Jy\rangle = \langle x,y\rangle .
+\boxed{\;[Jx,Jy] = [x,y], \qquad \langle Jx,Jy\rangle = \langle x,y\rangle\;} .
 $$
 
 So $J$ is a unitary operator of the positive definite space and an isometry of the indefinite one, and it is the same operator in both roles.
@@ -45,7 +45,7 @@ So $J$ is a unitary operator of the positive definite space and an isometry of t
 **Proposition.** For a fundamental symmetry $J$ the eigenspaces
 
 $$
-V_{+} = \ker(J-\mathrm{id}), \qquad V_{-} = \ker(J+\mathrm{id})
+\boxed{\;V_{+} = \ker(J-\mathrm{id}), \qquad V_{-} = \ker(J+\mathrm{id})\;}
 $$
 
 are the positive definite and the negative definite parts of a fundamental decomposition: $V = V_{+}\oplus V_{-}$, $V_{+}\perp V_{-}$, and the elements of $V_{+}$ are positive and those of $V_{-}$ negative.

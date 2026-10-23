@@ -66,7 +66,7 @@ A **differential operator of order at most $k$** on $G$ is a $\mathbb{C}$-linear
 **Theorem (the universal enveloping algebra).** Evaluation at the identity gives an isomorphism of filtered $\mathbb{C}$-algebras
 
 $$
-\mathrm{U}(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}} ,
+\boxed{\;\mathrm{U}(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}}\;} ,
 $$
 
 from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $\mathrm{U}(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.
@@ -134,7 +134,7 @@ using the left invariance of the Haar measure, so $\lambda(f)L_g = L_g\lambda(f)
 **Theorem.** The space $C_c^\infty(G)$ is an associative algebra under convolution, with an approximate identity given by a sequence of non-negative functions of integral one whose supports shrink to $e$. The assignment
 
 $$
-\lambda : C_c^\infty(G) \longrightarrow \operatorname{End}_\mathbb{C}(C^\infty(G)), \qquad \lambda(f)h = f * h ,
+\boxed{\;\lambda : C_c^\infty(G) \longrightarrow \operatorname{End}_\mathbb{C}(C^\infty(G)), \qquad \lambda(f)h = f * h\;} ,
 $$
 
 is an algebra homomorphism whose image is contained in the operators commuting with the left translations.
@@ -152,7 +152,7 @@ $$
 **Theorem (the operators are the distributions).** The algebra $\mathcal{D}_e(G)$ of distributions supported at the identity is isomorphic to $\mathrm{U}(\mathrm{G})$, and a left-invariant operator $D$ is the convolution by the distribution $u \in \mathcal{D}_e(G)$ that corresponds to it,
 
 $$
-D f = u * f \qquad (f \in C_c^\infty(G)) .
+\boxed{\;D f = u * f \qquad (f \in C_c^\infty(G))\;} .
 $$
 
 *Proof.* Evaluation at $e$ is a bijection from the distributions supported at $e$ onto the formal polynomials in the coordinate derivations at $e$, that is onto $\mathrm{U}(\mathrm{G})$; convolution of two such distributions is composition of the corresponding operators, because the two-sided action of $G$ on itself makes the convolution reproduce the higher derivatives. Composing with the isomorphism of the first theorem identifies the distributions with the left-invariant operators, and the identity $Df = u * f$ on test functions extends to $C^\infty(G)$.

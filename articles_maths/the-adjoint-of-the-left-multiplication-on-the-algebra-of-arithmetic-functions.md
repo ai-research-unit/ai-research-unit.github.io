@@ -20,7 +20,7 @@ $$
 
 **Theorem.** With respect to the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$ on $\mathcal{H}=\ell^2$, the adjoint of $L_a$ is $\Theta_a$:
 $$
-\langle L_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)f(k)\Bigr)\overline{g(n)}=\sum_{m,k}a(m)f(k)\overline{g(mk)}=\langle f,\Theta_ag\rangle .
+\boxed{\;\langle L_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)f(k)\Bigr)\overline{g(n)}=\sum_{m,k}a(m)f(k)\overline{g(mk)}=\langle f,\Theta_ag\rangle\;} .
 $$
 The map $\Theta_a$ is anti-linear in $a$ and linear in $g$; it is a right multiplication in the transposed algebra, $\Theta_a\Theta_b=\Theta_b\Theta_a$, and $\Theta_\varepsilon=\mathrm{id}$.
 
@@ -30,7 +30,7 @@ The map $\Theta_a$ is anti-linear in $a$ and linear in $g$; it is a right multip
 
 **Theorem.** In general $L_a^*\ne L_{a^*}$, and the equality holds exactly for the scalar multiples of the identity:
 $$
-L_a^*=L_{a^*}\iff \Theta_a=L_{a^*}\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{C}.
+\boxed{\;L_a^*=L_{a^*}\iff \Theta_a=L_{a^*}\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{C}\;}.
 $$
 The operator $L_a$ is self-adjoint exactly when $a$ is a real scalar multiple of the identity,
 $$
@@ -38,7 +38,7 @@ L_a^*=L_a\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{R},
 $$
 and it is unitary exactly when $a$ is a unit scalar multiple of the identity,
 $$
-L_a^*L_a=L_aL_a^*=\mathrm{id}\iff a=\gamma\varepsilon,\ |\gamma|=1.
+\boxed{\;L_a^*L_a=L_aL_a^*=\mathrm{id}\iff a=\gamma\varepsilon,\ |\gamma|=1\;}.
 $$
 The operator is an isometry exactly when $\Theta_aL_a=\mathrm{id}$, which holds in particular for $a=\gamma\delta_p$ with $|\gamma|=1$.
 

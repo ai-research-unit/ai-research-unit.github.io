@@ -38,7 +38,7 @@ By convention $e_0 = h_0 = p_0 = 1$ and $e_k = h_k = 0$ for $k < 0$.
 **Theorem (fundamental theorem of symmetric polynomials).** The symmetric polynomials in $n$ variables form a polynomial ring,
 
 $$
-K[x_1,\ldots,x_n]^{S_n} = K[e_1,\ldots,e_n],
+\boxed{\;K[x_1,\ldots,x_n]^{S_n} = K[e_1,\ldots,e_n]\;},
 $$
 
 with $e_1,\ldots,e_n$ algebraically independent; more generally the symmetric functions of bounded length form $\Lambda = K[e_1,e_2,\ldots]$, a polynomial ring in countably many variables. Hence the Hilbert series of the graded ring of symmetric polynomials in $n$ variables is
@@ -105,7 +105,7 @@ There are eight of them, so $s_{(2,1)} = m_{(2,1)} + 2m_{(1,1,1)}$, that is, $s_
 **Theorem (Jacobi–Trudi).** For every partition $\lambda$,
 
 $$
-s_\lambda = \det\bigl(h_{\lambda_i-i+j}\bigr)_{1\leq i,j\leq \ell(\lambda)} ,
+\boxed{\;s_\lambda = \det\bigl(h_{\lambda_i-i+j}\bigr)_{1\leq i,j\leq \ell(\lambda)}\;} ,
 $$
 
 and dually $s_\lambda = \det(e_{\lambda'_i-i+j})$.
@@ -151,7 +151,7 @@ $m_i(\lambda)$ being the number of parts of $\lambda$ equal to $i$.
 **Theorem (Cauchy identity).** In the completion of $\Lambda\otimes\Lambda$, or equivalently as an identity of formal power series in two families of variables,
 
 $$
-\sum_{\lambda}s_\lambda(x)\,s_\lambda(y) = \prod_{i,j}\frac{1}{1-x_iy_j},
+\boxed{\;\sum_{\lambda}s_\lambda(x)\,s_\lambda(y) = \prod_{i,j}\frac{1}{1-x_iy_j}\;},
 $$
 
 the sum over all partitions $\lambda$, and the **dual Cauchy identity** reads

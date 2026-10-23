@@ -20,7 +20,7 @@ The article treats the signed sandwich from the side of the geometry of the chos
 **Definition.** For $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$ the **signed sandwich** is the $F$-linear operator
 
 $$
-T^{\alpha}_{a,b} : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad T^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b .
+\boxed{\;T^{\alpha}_{a,b} : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad T^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b\;} .
 $$
 
 **Proposition (the relation to the unsigned family).** $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha=\alpha\circ T_{\alpha(a),\alpha(b)}$, and $T^{\alpha}_{1,1}=\alpha$. The signed sandwich is the ordinary sandwich composed with the grade involution, and the map $T_{a,b}\mapsto T_{a,b}\alpha$ is a bijection from the ordinary two-sided operators onto the signed ones.
@@ -30,11 +30,11 @@ $$
 **Proposition (the composition law and the coset structure).** For all $a,b,c,d$,
 
 $$
-T^{\alpha}_{a,b}T^{\alpha}_{c,d}=T_{a\alpha(c),\,\alpha(d)b},
+\boxed{\;T^{\alpha}_{a,b}T^{\alpha}_{c,d}=T_{a\alpha(c),\,\alpha(d)b},
 \qquad
 T^{\alpha}_{a,b}T_{c,d}=T^{\alpha}_{a\alpha(c),\,\alpha(d)b},
 \qquad
-T_{a,b}T^{\alpha}_{c,d}=T^{\alpha}_{ac,\,db} .
+T_{a,b}T^{\alpha}_{c,d}=T^{\alpha}_{ac,\,db}\;} .
 $$
 
 The composite of two signed sandwiches is an **ordinary** sandwich, the two grade involutions cancelling; the family of invertible signed sandwiches is the coset $\mathcal{T}\alpha$ of the group $\mathcal{T}$ of ordinary ones, contains no identity, and is a torsor and not a group.
@@ -54,7 +54,7 @@ The composite of two signed sandwiches is an **ordinary** sandwich, the two grad
 **Theorem (the reflections).** Let $u\in V$ with $\mathfrak{Q}(u)\ne0$. Then the signed sandwich by $(u,u^{-1})$ acts on the quadratic space as the reflection in the hyperplane $u^{\perp}$,
 
 $$
-T^{\alpha}_{u,u^{-1}}(v) = u\,\alpha(v)\,u^{-1} = -u\,v\,u^{-1} = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u , \qquad v\in V .
+\boxed{\;T^{\alpha}_{u,u^{-1}}(v) = u\,\alpha(v)\,u^{-1} = -u\,v\,u^{-1} = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u , \qquad v\in V\;} .
 $$
 
 **Proof.** A vector is odd, so $\alpha(v)=-v$ and $T^{\alpha}_{u,u^{-1}}(v)=-uvu^{-1}$. Since $uv+vu=2B(u,v)$ and $u^2=\mathfrak{Q}(u)$, the product $uvu=2B(u,v)u-\mathfrak{Q}(u)v$, and $u^{-1}=u\,\mathfrak{Q}(u)^{-1}$; substituting gives $-uvu^{-1}=(\mathfrak{Q}(u)v-2B(u,v)u)\mathfrak{Q}(u)^{-1}=\rho_u(v)$. The formula is the reflection of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, quoted in the form needed here.

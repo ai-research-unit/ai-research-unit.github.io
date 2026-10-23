@@ -15,7 +15,7 @@ Nothing analytic and nothing geometric is used. The sphere with the antipodal in
 **Definition.** An **involution** of a set $X$ is a map $\sigma : X \to X$ with
 
 $$
-\sigma \circ \sigma = \mathrm{id}_{X} .
+\boxed{\;\sigma \circ \sigma = \mathrm{id}_{X}\;} .
 $$
 
 When $X$ is a topological space the involution is **continuous** when the map $\sigma$ is continuous, and a **topological involution** is a continuous involution.

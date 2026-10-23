@@ -29,7 +29,7 @@ It is the difference of the product and its transpose, the antisymmetric half of
 **Theorem (the bracket is bounded).** Let $A$ be a normed sesqualgebra with submultiplicative norm. Then for all $x,y$,
 
 $$
-\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert ,
+\boxed{\;\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert\;} ,
 $$
 
 so the bracket is a bounded sesquilinear map, and its sesquilinear norm $\lVert[\ ,\ ]_{\varsigma}\rVert = \sup\{\lVert[x,y]_{\varsigma}\rVert : \lVert x\rVert \leq 1,\ \lVert y\rVert \leq 1\}$ satisfies $\lVert[\ ,\ ]_{\varsigma}\rVert \leq 2$. It is continuous as a map $A \times A \to A$ for the product topology.
@@ -75,7 +75,7 @@ and the bracket is $\mathbb{K}$-bilinear exactly when $\varsigma = \mathrm{id}$ 
 **Theorem (the values are skew-Hermitian).** For all $x,y$,
 
 $$
-[x,y]_{\varsigma}^{*} = -[x,y]_{\varsigma} ,
+\boxed{\;[x,y]_{\varsigma}^{*} = -[x,y]_{\varsigma}\;} ,
 $$
 
 so $[A,A]_{\varsigma} \subseteq S(A)$, where $S(A) = \{s : s^{*} = -s\}$ is the skew-Hermitian part. The set $S(A)$ is a closed real subspace of $A$, and the bracket is a bounded sesquilinear map $A \times A \to S(A)$.
@@ -123,7 +123,7 @@ so $S(A)$ is a real Banach Lie algebra under either bracket, the two brackets be
 **Proposition (the bracket as a difference of two multiplications).** For all $x,y$,
 
 $$
-[x,y]_{\varsigma} = L_x(y) - R_x(y) = R_y(x) - L_y(x) ,
+\boxed{\;[x,y]_{\varsigma} = L_x(y) - R_x(y) = R_y(x) - L_y(x)\;} ,
 $$
 
 so the bracket is the difference of the left and the right multiplication, and with $x$ fixed it is the adjoint action $\operatorname{ad}_x = L_x - R_x$ of *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, §*The Adjoint Action*; it is bounded with $\lVert \operatorname{ad}_x\rVert \leq 2\lVert x\rVert$, and it is the sum of an even and an odd bounded operator.

@@ -45,7 +45,7 @@ $$
 together with the three reconstructing identities
 
 $$
-xy = x \bullet y + x \wedge y, \qquad yx = x \bullet y - x \wedge y, \qquad [x,y] = 2(x \wedge y).
+\boxed{\;xy = x \bullet y + x \wedge y, \qquad yx = x \bullet y - x \wedge y, \qquad [x,y] = 2(x \wedge y)\;}.
 $$
 
 *Proof.* Bilinearity is inherited from the product, coefficient by coefficient. The first two identities restate the definitions after the exchange of $x$ and $y$, and the third is $x \wedge x = \tfrac{1}{2}(x^2 - x^2) = 0$. The fourth is $x \bullet x = \tfrac{1}{2}(x^2 + x^2) = x^2$. Adding the two definitions gives the product, subtracting them gives the product in the other order, and doubling the antisymmetrisation gives the commutator.
@@ -183,7 +183,7 @@ The first condition is automatic, by the third identity of the first proposition
 **Proposition.** The algebra $A$ is Lie-admissible if and only if the commutator satisfies the Jacobi identity,
 
 $$
-[x,[y,z]] + [y,[z,x]] + [z,[x,y]] = 0
+\boxed{\;[x,[y,z]] + [y,[z,x]] + [z,[x,y]] = 0\;}
 $$
 
 for all $x, y, z$.
@@ -205,7 +205,7 @@ and a scalar multiple of a quantity vanishes exactly when the quantity does, wit
 **Theorem (the associator criterion of Lie-admissibility).** The antisymmetrised algebra $A^{\wedge}$ satisfies the Jacobi identity if and only if the associator of $A$ satisfies the identity
 
 $$
-[x,y,z] + [y,z,x] + [z,x,y] = [y,x,z] + [z,y,x] + [x,z,y]
+\boxed{\;[x,y,z] + [y,z,x] + [z,x,y] = [y,x,z] + [z,y,x] + [x,z,y]\;}
 $$
 
 for all $x, y, z$. Equivalently, the Jacobi sum of the commutator is the signed sum of the six associators of the three arguments,

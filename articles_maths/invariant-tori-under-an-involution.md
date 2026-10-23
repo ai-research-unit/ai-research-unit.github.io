@@ -30,7 +30,7 @@ No physics is invoked.
 **Theorem (classification, quoted).** Every involution of the torus $\mathbb{T}^n$ that is an automorphism (a homeomorphism of order two in the same conjugacy class as a smooth one) is conjugate to a **standard involution**
 
 $$
-\sigma_{k,\epsilon}(\theta_1,\dots,\theta_n)=(-\theta_1,\dots,-\theta_k,\ \theta_{k+1}+\epsilon_{k+1},\dots,\theta_n+\epsilon_n), \qquad \epsilon_j\in\{0,\tfrac12\},
+\boxed{\;\sigma_{k,\epsilon}(\theta_1,\dots,\theta_n)=(-\theta_1,\dots,-\theta_k,\ \theta_{k+1}+\epsilon_{k+1},\dots,\theta_n+\epsilon_n), \qquad \epsilon_j\in\{0,\tfrac12\}\;},
 $$
 
 with $k$ coordinates **reflected** and the remaining coordinates **shifted** by $0$ or $\tfrac12$; the linear part is the diagonal $\operatorname{diag}(-1,\dots,-1,+1,\dots,+1)$, and the fixed set is nonempty exactly when all the shift parameters of the shifted coordinates are $0$ (no genuinely free shift), in which case it is the union of $2^k$ subtori $\mathbb{T}^{n-k}$ obtained by fixing each of the $k$ reflected coordinates at $0$ or $\tfrac12$; otherwise the fixed set is empty.

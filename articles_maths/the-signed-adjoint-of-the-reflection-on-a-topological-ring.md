@@ -20,7 +20,7 @@ and $\rho_v$ denotes the signed sandwich $\Sigma^\alpha_{v,v^{-1}}$, so that the
 **Theorem (the square and the involution case).** The reflection is additive, bijective and bounded, and its square is the conjugation by $u\alpha(u)$:
 
 $$
-\rho_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1} .
+\boxed{\;\rho_u^2(x) = u\alpha(u)\,x\,\bigl(u\alpha(u)\bigr)^{-1}\;} .
 $$
 
 Hence $\rho_u$ is an **involution**, $\rho_u^2 = \mathrm{id}$, exactly when $u\alpha(u)$ is central; in that case it is a reflection of order two and its fixed set is $\{x : u\alpha(x) = xu\}$, closed in $R$.
@@ -34,7 +34,7 @@ Hence $\rho_u$ is an **involution**, $\rho_u^2 = \mathrm{id}$, exactly when $u\a
 **Theorem (the explicit form).** With respect to the form of the category,
 
 $$
-\rho_u^\dagger = \Sigma^\alpha_{\delta(u),\,\delta(u)^{-1}} = \rho_{\delta(u)} ,
+\boxed{\;\rho_u^\dagger = \Sigma^\alpha_{\delta(u),\,\delta(u)^{-1}} = \rho_{\delta(u)}\;} ,
 $$
 
 so the signed adjoint of a reflection is the reflection in the element $\delta(u) = \sigma\alpha(u)$; the adjoint is again a reflection, and the adjoint operation is an involution on the class of reflections.
@@ -70,7 +70,7 @@ In particular a **$\delta$-symmetric** unit, $\delta(u) = u$, gives a self-adjoi
 **Theorem (involution, self-adjointness, unitarity).** For a reflection the three conditions are
 
 $$
-\rho_u^2 = \mathrm{id} \iff u\alpha(u)\in Z(R) , \qquad \rho_u^\dagger = \rho_u \iff \delta(u)u^{-1}\in Z(R) , \qquad \rho_u^\dagger \rho_u = \mathrm{id} \iff \delta(u)\alpha(u)\in Z(R) \text{ and } u\sigma(u)\in Z(R) .
+\boxed{\;\rho_u^2 = \mathrm{id} \iff u\alpha(u)\in Z(R) , \qquad \rho_u^\dagger = \rho_u \iff \delta(u)u^{-1}\in Z(R) , \qquad \rho_u^\dagger \rho_u = \mathrm{id} \iff \delta(u)\alpha(u)\in Z(R) \text{ and } u\sigma(u)\in Z(R)\;} .
 $$
 
 The reflection is an orthogonal involution, that is an involution and self-adjoint, exactly when both $u\alpha(u)$ and $\delta(u)u^{-1}$ are central; it is unitary when the two products of the sandwich criterion are central.

@@ -74,9 +74,7 @@ The proposition is the reason Axiom 3 is not redundant: the self-inverse sandwic
 
 **Theorem.** Let $\nu$ be a unit vector and $\tilde q = q_t+\vec q$ its scalar and vector decomposition. Then
 
-$$
-\iota_\nu(\tilde q) = q_t-\nu\vec q\nu = q_t+2\langle\vec q,\nu\rangle\nu-\vec q.
-$$
+$$ \boxed{\; \iota_\nu(\tilde q) = q_t-\nu\vec q\nu = q_t+2\langle\vec q,\nu\rangle\nu-\vec q \;} .$$
 
 Consequently $\iota_\nu$ fixes the scalar part, fixes the vector part parallel to $\nu$ and negates the vector part perpendicular to $\nu$: on the vector subspace $\operatorname{Im}\mathbb{H}$ it is the reflection in the line $\mathbb{R}\nu$, equivalently the rotation by $\pi$ about $\nu$. On $\mathbb{H}$ it fixes the plane $\operatorname{span}(e_t,\nu)$ pointwise and negates its orthogonal complement $\nu^{\perp}$ pointwise.
 
@@ -156,11 +154,9 @@ $$
 
 **Theorem.** Let $\nu_1,\nu_2,\nu_3$ be mutually perpendicular unit vectors. For every quaternion $\tilde q$,
 
-$$
-\tilde{q}^{\natural} = \tfrac12\bigl(\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)-\tilde q\bigr),
+$$ \boxed{\; \tilde{q}^{\natural} = \tfrac12\bigl(\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)-\tilde q\bigr),
 \qquad
-q_t = \tfrac14\bigl(\tilde q+\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)\bigr).
-$$
+q_t = \tfrac14\bigl(\tilde q+\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)\bigr) \;} .$$
 
 *Proof.* Write $\tilde q = q_t+\vec q$. Each involution fixes $q_t$ and, by the lemma, the three together send $\vec q$ to $-\vec q$, so $\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q) = 3q_t-\vec q$. The first identity becomes $\tfrac12(3q_t-\vec q-q_t-\vec q) = q_t-\vec q = \tilde{q}^{\natural}$, and the second becomes $\tfrac14(q_t+\vec q+3q_t-\vec q) = q_t$.
 
@@ -172,11 +168,9 @@ $$
 
 **Theorem.** Let $\nu$ be a unit vector and $\vec q$ a vector. Then
 
-$$
-\vec q_{\parallel\nu} = \tfrac12\bigl(\vec q+\iota_\nu(\vec q)\bigr) = \langle\vec q,\nu\rangle\nu,
+$$ \boxed{\; \vec q_{\parallel\nu} = \tfrac12\bigl(\vec q+\iota_\nu(\vec q)\bigr) = \langle\vec q,\nu\rangle\nu,
 \qquad
-\vec q_{\perp\nu} = \tfrac12\bigl(\vec q-\iota_\nu(\vec q)\bigr) = \vec q-\langle\vec q,\nu\rangle\nu,
-$$
+\vec q_{\perp\nu} = \tfrac12\bigl(\vec q-\iota_\nu(\vec q)\bigr) = \vec q-\langle\vec q,\nu\rangle\nu \;} ,$$
 
 and $\vec q = \vec q_{\parallel\nu}+\vec q_{\perp\nu}$, the first component parallel to $\nu$ and the second perpendicular to it.
 

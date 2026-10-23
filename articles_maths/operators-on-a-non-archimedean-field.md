@@ -14,7 +14,7 @@ Throughout, $(F, \lvert \cdot \rvert)$ is a non-Archimedean field, $\mathcal{O}$
 **Definition.** An additive operator $T : F \to F$ is **bounded** if the set $\{\lvert Tx \rvert : \lvert x \rvert \leq 1\}$ is bounded above in $\mathbb{R}$, and the **operator norm** of a bounded $T$ is
 
 $$
-\lVert T\rVert = \sup_{\lvert x \rvert \leq 1} \lvert Tx \rvert .
+\boxed{\;\lVert T\rVert = \sup_{\lvert x \rvert \leq 1} \lvert Tx \rvert\;} .
 $$
 
 **Proposition (bounded is continuous).** For an additive operator $T$, the following are equivalent: $T$ is bounded; $T$ is uniformly continuous; $T$ is continuous at $0$; there is a constant $C$ with $\lvert Tx \rvert \leq C\lvert x \rvert$ for all $x$. The least such $C$ is the operator norm, and the operator norm is a norm on the space of bounded operators, submultiplicative under composition.
@@ -32,7 +32,7 @@ $$
 **Proposition (contractive operators and the filtration).** For a bounded $T$,
 
 $$
-\lVert T\rVert \leq 1 \iff T(\mathcal{O}) \subseteq \mathcal{O}, \qquad \lVert T\rVert < 1 \iff T(\mathcal{O}) \subseteq \mathrm{M} .
+\boxed{\;\lVert T\rVert \leq 1 \iff T(\mathcal{O}) \subseteq \mathcal{O}, \qquad \lVert T\rVert < 1 \iff T(\mathcal{O}) \subseteq \mathrm{M}\;} .
 $$
 
 Consequently an infinitesimal operator satisfies $T(\mathrm{M}) \subseteq \mathrm{M}$ and has zero residual operator; a general contractive operator has a residual operator as soon as $T(\mathrm{M}) \subseteq \mathrm{M}$, which holds when $T$ is multiplicative, when $T$ is a scalar multiplication $x \mapsto cx$ with $c$ a unit, and more generally when $T$ carries the open unit ball into itself.

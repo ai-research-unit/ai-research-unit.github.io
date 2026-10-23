@@ -57,7 +57,7 @@ The corollary is the operator form of the degree rule: the grading of the algebr
 **Proposition.** For homogeneous $a \in A$ and homogeneous $m \in M$, the product $a \cdot m$ is homogeneous of degree
 
 $$
-|a \cdot m| = |a| + |m| \pmod 2 .
+\boxed{\;|a \cdot m| = |a| + |m| \pmod 2\;} .
 $$
 
 Equivalently, the action is a bilinear map of graded sets
@@ -83,7 +83,7 @@ where $|S|$ is the degree of the operator; for operators of even degree this is 
 **Theorem.** Let $M$ be a graded $A$-module and let $\rho$ be its action map. For homogeneous $a, b \in A$,
 
 $$
-\bigl[\rho(a),\, \rho(b)\bigr]_{\mathrm{gr}} = \rho\bigl([a,b]_{\mathrm{gr}}\bigr), \qquad \text{where} \qquad [a,b]_{\mathrm{gr}} = ab - (-1)^{|a||b|} b a .
+\boxed{\;\bigl[\rho(a),\, \rho(b)\bigr]_{\mathrm{gr}} = \rho\bigl([a,b]_{\mathrm{gr}}\bigr), \qquad \text{where} \qquad [a,b]_{\mathrm{gr}} = ab - (-1)^{|a||b|} b a\;} .
 $$
 
 Hence the action map is a morphism of graded algebras: it carries the graded commutator of the algebra to the graded commutator of the operators, and it preserves the degrees.
@@ -127,7 +127,7 @@ $$
 **Proposition.** The algebra $A$ is a graded module over itself with the left action of *Modules over an Algebra*, and its action map is the left regular representation $L$ of *Left and Right Multiplication*. The inner action sends homogeneous $a$ to an operator of degree $|a|$, so $L$ is a morphism of graded algebras
 
 $$
-L : A \to \operatorname{End}_k(A), \qquad [L(a), L(b)]_{\mathrm{gr}} = L\bigl([a,b]_{\mathrm{gr}}\bigr).
+\boxed{\;L : A \to \operatorname{End}_k(A), \qquad [L(a), L(b)]_{\mathrm{gr}} = L\bigl([a,b]_{\mathrm{gr}}\bigr)\;}.
 $$
 
 *Proof.* The module axioms are those of the regular module, and the degree statement is the degree proposition for $M = A$; the bracket identity is the theorem applied to the left action.

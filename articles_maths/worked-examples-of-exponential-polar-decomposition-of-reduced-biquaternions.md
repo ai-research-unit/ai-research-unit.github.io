@@ -31,7 +31,7 @@ $$
 
 Their product $C_+C_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is written in full throughout. The modulus is $\rho>0$, the boost is $\phi\in\mathbb{R}$, and the phases $(\alpha,\beta)$ are taken in the half-open principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$, with the boundary half-open. Errors are Euclidean in the four real coefficients and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
-**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its components, its polar data, its two factors and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*).
+**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its components, its polar data, its two factors and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions*.
 
 ## The Method
 
@@ -161,9 +161,11 @@ The two phases satisfy $\lvert\alpha\rvert+\lvert\beta\rvert=1.1902899497<\pi$, 
 **The two factors.** The real-hyperbolic factor is
 
 $$
+\boxed{\;
 \breve r=\rho(\cosh\phi+j\sinh\phi)
 =\frac{5+\sqrt{29}}{2}+j\,\frac{5-\sqrt{29}}{2}
-=5.1925824036-0.1925824036\,j,
+=5.1925824036-0.1925824036\,j
+\;},
 $$
 
 and the torus factor is
@@ -386,7 +388,9 @@ $$
 **The two factors.** The real-hyperbolic factor is
 
 $$
-\breve r=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j,
+\boxed{\;
+\breve r=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j
+\;},
 $$
 
 and the torus factor is $u=1$.
@@ -458,7 +462,9 @@ One component vanishes, so the element is a zero divisor and no logarithm exists
 **No polar word.** The modulus vanishes and the boost diverges. The matrix
 
 $$
+\boxed{\;
 \mathsf M(\breve Q)=\begin{pmatrix}1&1\\1&1\end{pmatrix}
+\;}
 $$
 
 has rank one and determinant $0$. Its square is $\breve Q^2=2\breve Q$.
@@ -554,6 +560,7 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 
 ## Further Reading
 
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the decomposition, the principal diamond and uniqueness.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential, the logarithm and the kernel.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the algebraic modulus–unit form.

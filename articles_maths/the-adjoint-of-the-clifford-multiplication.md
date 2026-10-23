@@ -16,7 +16,7 @@ the fibre form being the one for which the Clifford coeffients are skew. This is
 **Theorem.** For the fibre form $h$ and the metric $g$, the Clifford multiplication by a tangent vector is skew-adjoint,
 
 $$
-h(c(v)\sigma,\tau)=-h(\sigma,c(v)\tau) , \qquad c(v)^{*}=-c(v) ,
+\boxed{\;h(c(v)\sigma,\tau)=-h(\sigma,c(v)\tau) , \qquad c(v)^{*}=-c(v)\;} ,
 $$
 
 and consequently $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$: the multiplication by a unit vector is an isometry of the fibre.
@@ -30,8 +30,8 @@ and consequently $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$: the multiplicati
 **Definition.** The **Clifford contraction** is $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, whose adjoint for the tensor product of $g^{-1}$ and $h$ is
 
 $$
-c^* : \mathcal{S}\longrightarrow T^*M\otimes\mathcal{S} , \qquad
-c^*\sigma = -\sum_{i=1}^{n}\theta^i\otimes(e_i\cdot\sigma) .
+\boxed{\;c^* : \mathcal{S}\longrightarrow T^*M\otimes\mathcal{S} , \qquad
+c^*\sigma = -\sum_{i=1}^{n}\theta^i\otimes(e_i\cdot\sigma)\;} .
 $$
 
 **Proposition.** The contraction satisfies $cc^*=n\operatorname{id}_{\mathcal{S}}$ and $\ker c=\operatorname{im}c^*$; the contraction is a surjection with the symbol $c(\xi)=$ Clifford multiplication by $\xi^{\sharp}$, and the adjoint has the symbol $c^*(\xi)=-(\xi\wedge\text{-type})$ contraction, so the two symbols are adjoint at every covector.

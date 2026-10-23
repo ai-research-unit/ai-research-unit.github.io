@@ -39,7 +39,7 @@ and similarly for the packing dimension. The dimension of a Lipschitz image is a
 **Theorem (Marstrand, 1954).** Let $E \subseteq \mathbb{R}^2$ be Borel or analytic, with $\dim_H E = s$. Then for almost every $\theta \in [0,\pi)$
 
 $$
-\dim_H \pi_\theta E = \min(s, 1) ; \qquad \text{if } s > 1 \text{ then } \bigl|\pi_\theta E\bigr| > 0 ,
+\boxed{\;\dim_H \pi_\theta E = \min(s, 1) ; \qquad \text{if } s > 1 \text{ then } \bigl|\pi_\theta E\bigr| > 0\;} ,
 $$
 
 where $|\cdot|$ is the Lebesgue measure.
@@ -47,7 +47,7 @@ where $|\cdot|$ is the Lebesgue measure.
 **Theorem (Mattila, 1975).** Let $E \subseteq \mathbb{R}^n$ be Borel or analytic, with $\dim_H E = s$, and let $G(n,m)$ be the Grassmannian of the $m$-dimensional subspaces. Then for almost every $V \in G(n,m)$
 
 $$
-\dim_H \pi_V E = \min(s, m) ; \qquad \text{if } s > m \text{ then } \mathcal{H}^m(\pi_V E) > 0 .
+\boxed{\;\dim_H \pi_V E = \min(s, m) ; \qquad \text{if } s > m \text{ then } \mathcal{H}^m(\pi_V E) > 0\;} .
 $$
 
 **Proof sketch (the energy identity).** The engine is the identity, valid for $0 < t < n$ and due to the rotational symmetry of the sphere,
@@ -101,7 +101,7 @@ be the set of the directions in which the projection is smaller than the thresho
 **Theorem (slicing; Marstrand and Mattila).** Let $E \subseteq \mathbb{R}^n$ be Borel with $\dim_H E = s$, and let $0 \le m < n$. Then for almost every $(n-m)$-dimensional subspace $W$ and almost every $x$,
 
 $$
-\dim_H \bigl(E \cap (x + W)\bigr) \leq \max(0, s - m) ,
+\boxed{\;\dim_H \bigl(E \cap (x + W)\bigr) \leq \max(0, s - m)\;} ,
 $$
 
 and for a set of translates of positive measure the inequality is an equality when $s > m$; equivalently, in the plane, a set of dimension $s > 1$ meets almost every line in a set of dimension at most $s-1$, with equality for a positive-measure set of lines.

@@ -31,13 +31,13 @@ It is $\mathbb{R}$-linear and satisfies $\sigma(\zeta x) = c(\zeta)\sigma(x)$ fo
 **Theorem.** $\sigma$ is a semilinear involution of the algebra $A_{\mathbb{C}}$,
 
 $$
-\sigma(xy) = \sigma(x)\sigma(y), \qquad \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\zeta x) = \bar\zeta\,\sigma(x), \qquad \sigma^2 = \mathrm{id},
+\boxed{\;\sigma(xy) = \sigma(x)\sigma(y), \qquad \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\zeta x) = \bar\zeta\,\sigma(x), \qquad \sigma^2 = \mathrm{id}\;},
 $$
 
 and its fixed set is the real part:
 
 $$
-A_{\mathbb{C}}^\sigma = A\otimes1 \cong A .
+\boxed{\;A_{\mathbb{C}}^\sigma = A\otimes1 \cong A\;} .
 $$
 
 *Proof.* On decomposable elements $\sigma((a\otimes\lambda)(b\otimes\mu)) = \sigma(ab\otimes\lambda\mu) = ab\otimes\bar\lambda\bar\mu = (a\otimes\bar\lambda)(b\otimes\bar\mu) = \sigma(a\otimes\lambda)\sigma(b\otimes\mu)$; additivity and the scalar rule are immediate, and $\sigma^2 = \mathrm{id}$ because $c^2 = \mathrm{id}$. An element $x = \sum a_j\otimes\lambda_j$ is fixed iff $\sum a_j\otimes(\lambda_j - \bar\lambda_j) = 0$; taking $a_j$ linearly independent forces each $\lambda_j = \bar\lambda_j$, so the fixed set is $A\otimes\mathbb{R} = A\otimes1$.
@@ -61,7 +61,7 @@ $$
 **Theorem (descent).** Let $B$ be a complex algebra with a conjugation $\sigma$ and real form $A = B^\sigma$. The functors
 
 $$
-M \longmapsto H(M) = \{m \in M : \tau(m) = m\}, \qquad N \longmapsto N\otimes_{\mathbb{R}}\mathbb{C}
+\boxed{\;M \longmapsto H(M) = \{m \in M : \tau(m) = m\}, \qquad N \longmapsto N\otimes_{\mathbb{R}}\mathbb{C}\;}
 $$
 
 are inverse equivalences between the category of complex $B$-modules with a semilinear involution $\tau$ compatible with $\sigma$ and the category of real $A$-modules.

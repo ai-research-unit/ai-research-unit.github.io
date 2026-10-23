@@ -24,7 +24,7 @@ the second being the travelling-wave reduction of the equation. The solitary wav
 **Example (the KdV solitary wave).** In the convention of the preceding article, $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$, the travelling-wave ansatz $w = \phi(x-ct)$ gives $-c\phi' - 6\phi\phi' + \phi'''=0$, which integrates once to $\phi'' = c\phi + 3\phi^2 + A$. Taking $A=0$ and seeking a solution decaying at infinity, the equation $\frac12(\phi')^2 = \frac c2\phi^2+\phi^3$ has the homoclinic solution
 
 $$
-\phi(\xi) = -\frac{c}{2}\operatorname{sech}^2\left(\frac{\sqrt{c}}{2}\xi\right),
+\boxed{\;\phi(\xi) = -\frac{c}{2}\operatorname{sech}^2\left(\frac{\sqrt{c}}{2}\xi\right)\;},
 $$
 
 which is the one-soliton of the preceding article with $c = 4\kappa^2$ and amplitude $-\frac{c}{2} = -2\kappa^2$. The amplitude is therefore proportional to the speed, $|{\phi}|_{\max} = c/2$, and this amplitude-speed relation is the signature of the KdV soliton: taller waves travel faster, so a fast soliton overtakes a slow one.
@@ -52,7 +52,7 @@ Its modulus is a localised hump of amplitude $A$ moving with speed $v$, and its 
 **Theorem (asymptotic form of the N-soliton).** In the convention $\partial/\partial t w-6w\partial/\partial x w+\partial^3/\partial x^3 w=0$, the reflectionless solution with $N$ bound states $\kappa_1>\kappa_2>\dots>\kappa_N>0$ has the asymptotic form
 
 $$
-w(x,t) \sim -\sum_{n=1}^N 2\kappa_n^2\operatorname{sech}^2\Bigl(\kappa_n\bigl(x-4\kappa_n^2t-\delta_n^\pm\bigr)\Bigr)
+\boxed{\;w(x,t) \sim -\sum_{n=1}^N 2\kappa_n^2\operatorname{sech}^2\Bigl(\kappa_n\bigl(x-4\kappa_n^2t-\delta_n^\pm\bigr)\Bigr)\;}
 $$
 
 as $t\to\pm\infty$, uniformly on compact sets after the waves have separated; the amplitude and the speed of each wave are the same in the two limits, and only the centres $\delta_n^\pm$ differ. The difference $\delta_n^+-\delta_n^-$ is the **phase shift** of the $n$-th soliton, and it is nonzero whenever more than one soliton is present.
@@ -72,7 +72,7 @@ The shift diverges as $\kappa_1\to\kappa_2$, which is the resonance in which the
 **Proposition (the integrals of the N-soliton).** The conserved quantities $I_k = \int\rho_k\,dx$ of the preceding article evaluate on the $N$-soliton as sums over the individual solitons:
 
 $$
-I_1 = -4\sum_n\kappa_n, \qquad I_2 = \frac{16}{3}\sum_n\kappa_n^3, \qquad I_3 = -\frac{32}{5}\sum_n\kappa_n^5 ,
+\boxed{\;I_1 = -4\sum_n\kappa_n, \qquad I_2 = \frac{16}{3}\sum_n\kappa_n^3, \qquad I_3 = -\frac{32}{5}\sum_n\kappa_n^5\;} ,
 $$
 
 where $I_1=\int w\,dx$, $I_2=\int w^2dx$ and $I_3=\int(w^3+\frac12\partial/\partial x w^2)dx$; the general $I_k$ is a sum of the odd powers $\kappa_n^{2k-1}$. Each integral is evaluated on the one-soliton by elementary integration — for instance $\int w\,dx = -2\kappa^2\int\operatorname{sech}^2(\kappa x)dx = -4\kappa$ — and the additivity over separated solitons, together with the conservation of $I_k$, transports the value to the $N$-soliton. The conservation of each $I_k$ during a collision is therefore the statement that the amplitudes and speeds of the individual waves are unchanged, and the interaction can only redistribute the phases among them.

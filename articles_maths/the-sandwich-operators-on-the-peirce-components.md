@@ -62,8 +62,8 @@ and when $j=r$ and $k=s$ the product lies in $A_{il}$.
 **Corollary (the elementary sandwich).** For homogeneous $a\in A_{ij}$ and $b\in A_{kl}$, the sandwich $T_{a,b}$ has a single nonzero block, from the source corner $A_{jk}$ to the target corner $A_{il}$:
 
 $$
-T_{a,b}(A_{rs})=0 \quad\text{for }(r,s)\neq(j,k), \qquad
-T_{a,b}(A_{jk})\subseteq A_{il}.
+\boxed{\;T_{a,b}(A_{rs})=0 \quad\text{for }(r,s)\neq(j,k), \qquad
+T_{a,b}(A_{jk})\subseteq A_{il}\;}.
 $$
 
 On the source corner the block is $x\mapsto axb$. Every sandwich is a sum of such elementary sandwiches, one for each pair of Peirce components of $a$ and $b$.
@@ -150,7 +150,7 @@ $$
 is the projection of $A$ onto the corner $A_{ij}$ along the other three corners. The four projections are orthogonal and complete:
 
 $$
-E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}, \qquad \sum_{i,j}E_{ij}=\mathrm{id}_A .
+\boxed{\;E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}, \qquad \sum_{i,j}E_{ij}=\mathrm{id}_A\;} .
 $$
 
 *Proof.* On $x\in A_{rs}$, the product $e_ix e_j$ is nonzero only when $r=i$ and $s=j$, and then equals $x$; hence $E_{ij}$ is the identity on $A_{ij}$ and zero on the other corners. The composition is
@@ -176,7 +176,7 @@ Each $E_{ij}$ is the projection onto its corner $A_{ij}$ along the other three c
 **Proposition.** For all $a,b,c,d\in A$,
 
 $$
-T_{a,b}\,T_{c,d}=T_{ac,\,db}.
+\boxed{\;T_{a,b}\,T_{c,d}=T_{ac,\,db}\;}.
 $$
 
 *Proof.* $T_{a,b}(T_{c,d}(x))=a(cxd)b=(ac)x(db)$.

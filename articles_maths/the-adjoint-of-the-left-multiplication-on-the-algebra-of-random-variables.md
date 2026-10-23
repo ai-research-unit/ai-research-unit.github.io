@@ -28,7 +28,7 @@ $$
 
 **Theorem (the adjoint formula).** For every $a\in\mathcal{A}$,
 $$
-L_a^*=L_{a^*}=L_{\bar a},
+\boxed{\;L_a^*=L_{a^*}=L_{\bar a}\;},
 $$
 and the left multiplications therefore form a $*$-algebra of operators under the adjoint.
 
@@ -64,7 +64,7 @@ and on the elements it realises the involution exactly, $\pi(a^*)=L_{a^*}=L_a^*$
 
 **Theorem (the conditions).** For $a\in\mathcal{A}$,
 $$
-L_a\ \text{is self-adjoint}\iff a=a^*\iff a\text{ is real},\qquad L_a\ \text{is an isometry}\iff L_a\ \text{is unitary}\iff|a|=1 ,
+\boxed{\;L_a\ \text{is self-adjoint}\iff a=a^*\iff a\text{ is real},\qquad L_a\ \text{is an isometry}\iff L_a\ \text{is unitary}\iff|a|=1\;} ,
 $$
 and every $L_a$ is normal, $L_aL_a^*=L_a^*L_a$, because the multiplications commute and the adjoint is the multiplication by the conjugate.
 
@@ -72,7 +72,7 @@ and every $L_a$ is normal, $L_aL_a^*=L_a^*L_a$, because the multiplications comm
 
 **Theorem (the spectrum).** The spectrum of $L_a$ is the essential range of $a$,
 $$
-\operatorname{spec}(L_a)=\operatorname{ess\,range}(a)=\{\lambda:\mathbb P(|a-\lambda|<\varepsilon)>0\text{ for every }\varepsilon>0\},
+\boxed{\;\operatorname{spec}(L_a)=\operatorname{ess\,range}(a)=\{\lambda:\mathbb P(|a-\lambda|<\varepsilon)>0\text{ for every }\varepsilon>0\}\;},
 $$
 and the spectral measure of $L_a$ for a real $a$ is the distribution of the random variable $a$.
 

@@ -56,7 +56,7 @@ $$
 **Theorem (composition).** For all $\tilde Q_5,\tilde Q_3,\tilde Q_4,\tilde D\in\mathbb{B}$,
 
 $$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde D}\bigr)=L_{\tilde Q_5\tilde Q_4}\,R_{\tilde D\tilde Q_3},
+\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde D}\bigr)=L_{\tilde Q_5\tilde Q_4}\,R_{\tilde D\tilde Q_3} \;},
 $$
 
 the parameters of the second slot reversing their order.
@@ -88,7 +88,7 @@ $$
 **Theorem (the adjoint exchanges the parameters).** For all $\tilde Q_5,\tilde Q_3\in\mathbb{B}$,
 
 $$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}.
+\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5} \;}.
 $$
 
 *Proof.* The transpose of a composite reverses the order, $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ (*The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*), and the transposes of the factors are the crossed one-sided operators, $(L_{\tilde Q_5})^{\approx}=R_{\tilde Q_5}$ and $(R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}$ (*One-Sided Operators on the Biquaternion Algebra*):
@@ -105,8 +105,8 @@ $$
 **Theorem (the self-adjoint criterion).** For $\tilde Q_5\neq0$ the operator $L_{\tilde Q_5}R_{\tilde Q_3}$ is self-adjoint if and only if the two parameters are proportional,
 
 $$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_5}R_{\tilde Q_3}
-\iff \tilde Q_3=\lambda\tilde Q_5\quad\text{for some }\lambda\in\mathbb{C}.
+\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_5}R_{\tilde Q_3}
+\iff \tilde Q_3=\lambda\tilde Q_5\quad\text{for some }\lambda\in\mathbb{C} \;}.
 $$
 
 Consequently the self-adjoint two-sided operators are the scalar multiples $\lambda\,L_{\tilde Q_5}R_{\tilde Q_5}$ of the diagonal products, together with the zero operator.

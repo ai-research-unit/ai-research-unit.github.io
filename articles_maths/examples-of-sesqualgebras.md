@@ -89,7 +89,7 @@ and it is not commutative, on the witness $E_{12}\star I = E_{12}$ against $I\st
 **Example.** Let $A = R[G]$ be the group algebra of a group $G$ over $R$, with the involution
 
 $$
-\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \varsigma(a_g)\,g^{-1} ,
+\boxed{\;\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \varsigma(a_g)\,g^{-1}\;} ,
 $$
 
 which is $\varsigma$-semilinear, of order two, and anti-multiplicative because $(gh)^{-1} = h^{-1}g^{-1}$. With the derived product $x\star y = xy^{*}$ the group algebra is a sesqualgebra over $(R,\varsigma)$, unital with unit the identity of $G$ and faithful over $R$, hence of full type. The associator is $x((zy)^{*} - z\,y^{*})$ by *Sesqualgebras*, so the product is associative exactly when $(zy)^{*} = z\,y^{*}$ for all $z, y$.
@@ -99,7 +99,7 @@ which is $\varsigma$-semilinear, of order two, and anti-multiplicative because $
 **Proposition.** On the basis elements the identity $(zy)^{*} = z\,y^{*}$ reads $h^{-1}g^{-1} = gh^{-1}$ for all $g, h$, which holds exactly when $g^{-1} = g$ for every $g$ — a group of exponent two is automatically abelian, so this is exactly the elementary abelian two-group case; but the identity must hold on all of $R[G]$, and with $z = \lambda g$ and $y = h$ it reads
 
 $$
-\varsigma(\lambda)\,h^{-1}g^{-1} = \lambda\, gh^{-1} \qquad \text{for all } \lambda\in R , \quad g, h\in G .
+\boxed{\;\varsigma(\lambda)\,h^{-1}g^{-1} = \lambda\, gh^{-1} \qquad \text{for all } \lambda\in R , \quad g, h\in G\;} .
 $$
 
 *Proof.* The two sides are the two coefficientwise products of the basis computation. For the second display, $zy = \lambda\mu gh$ when $y = \mu h$, so $(zy)^{*} = \varsigma(\lambda\mu)(gh)^{-1} = \varsigma(\lambda)\varsigma(\mu)h^{-1}g^{-1}$, while $z\,y^{*} = (\lambda g)(\varsigma(\mu)h^{-1}) = \lambda\varsigma(\mu)gh^{-1}$; putting $\mu = 1$ gives the display.

@@ -22,7 +22,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach
 **Proposition (factorisation, boundedness and the coset).** For all $a,b \in A$,
 
 $$
-\ell_a = L_a\circ\alpha = S_{a,1} , \qquad \varrho_b = \alpha\circ R_b = S_{1,b} ,
+\boxed{\;\ell_a = L_a\circ\alpha = S_{a,1} , \qquad \varrho_b = \alpha\circ R_b = S_{1,b}\;} ,
 $$
 
 and $\ell_a$, $\varrho_b$ are bounded linear operators with
@@ -60,7 +60,7 @@ where $T_{p,q}(x) = pxq$ is the unsigned sandwich. Hence the product of two sign
 **Theorem (the generated group).** The signed left multiplications with unit parameter are invertible with
 
 $$
-\ell_u^{-1} = \ell_{\alpha(u)^{-1}} , \qquad \varrho_v^{-1} = \varrho_{\alpha(v)^{-1}} ,
+\boxed{\;\ell_u^{-1} = \ell_{\alpha(u)^{-1}} , \qquad \varrho_v^{-1} = \varrho_{\alpha(v)^{-1}}\;} ,
 $$
 
 and they generate, together with the unsigned left multiplications, the subgroup $\{L_a : a \in A^\times\}\cdot\{\mathrm{id},\alpha\}$ of $B(A)^\times$. The grade involution normalises the left multiplications,
@@ -106,7 +106,7 @@ so the signed family is the coset $L(A)\alpha$ and the unsigned family is the su
 **Theorem (degeneracy, the inner grade involution).** Suppose $\alpha = c_z$ is the inner automorphism by a unit $z$. Then every signed left multiplication is an unsigned two-sided sandwich,
 
 $$
-\ell_a = T_{az,\,z^{-1}} , \qquad \varrho_b = T_{z,\,z^{-1}b} ,
+\boxed{\;\ell_a = T_{az,\,z^{-1}} , \qquad \varrho_b = T_{z,\,z^{-1}b}\;} ,
 $$
 
 and the signed family carries no information beyond the unsigned family and the inner automorphism.

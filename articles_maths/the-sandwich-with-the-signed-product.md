@@ -25,7 +25,7 @@ $$
 **Proposition (the three conjugations).** Let $x$ be homogeneous of degree $k$ with $\varepsilon_x = (-1)^{k}$. Then
 
 $$
-\Sigma_x = \mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x, \qquad \Sigma_x(v) = -\varepsilon_x\,\chi_x(v) \quad (v \in V),
+\boxed{\;\Sigma_x = \mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x, \qquad \Sigma_x(v) = -\varepsilon_x\,\chi_x(v) \quad (v \in V)\;},
 $$
 
 where $\mathrm{Ad}_x(y) = xyx^{-1}$ is the inner conjugation and $\chi_x(y) = xy\alpha(x)^{-1}$ is the twisted conjugation. So the signed sandwich is the inner conjugation with the argument twisted, it is also the inner conjugation conjugated by $\alpha$, and on the vectors it differs from the twisted conjugation by the sign $-\varepsilon_x$.
@@ -63,7 +63,7 @@ in which the signed sandwiches form the nontrivial coset of the inner conjugatio
 **Theorem (the reflections).** Let $a \in V$ with $\mathfrak{Q}(a) \neq 0$. Then $\Sigma_a$ restricted to $V$ is the reflection in $a^{\perp}$:
 
 $$
-\Sigma_a(v) = a\,\alpha(v)\,a^{-1} = -a\,v\,a^{-1} = \rho_a(v), \qquad v \in V .
+\boxed{\;\Sigma_a(v) = a\,\alpha(v)\,a^{-1} = -a\,v\,a^{-1} = \rho_a(v), \qquad v \in V\;} .
 $$
 
 **Proof.** This is the reflection theorem of *Two-Sided Operators with the Signed Product*, in the sandwich form $b = a^{-1}$.
@@ -71,7 +71,7 @@ $$
 **Theorem (the versor action).** Let $x$ be a versor, so that $\chi_x(V) \subseteq V$. Then $\Sigma_x$ preserves $V$ and its restriction is an isometry,
 
 $$
-q\bigl(\Sigma_x(v)\bigr) = \mathfrak{Q}(v), \qquad B\bigl(\Sigma_x(v),\Sigma_x(w)\bigr) = B(v,w), \qquad v, w \in V,
+\boxed{\;q\bigl(\Sigma_x(v)\bigr) = \mathfrak{Q}(v), \qquad B\bigl(\Sigma_x(v),\Sigma_x(w)\bigr) = B(v,w), \qquad v, w \in V\;},
 $$
 
 and the map $x \mapsto \Sigma_x\big|_V$ is a homomorphism from the Clifford group into $O(V,\mathfrak{Q})$ whose restriction to the even versors carries a rotation $R$ to $-\mathrm{Ad}_R = -\chi_R$, the rotation composed with the central element $-1$, and whose value on an odd versor $a$ is the reflection $\rho_a$.

@@ -103,7 +103,7 @@ $$
 **Proposition.** Let $2$ be invertible in $A$. For $a \in A$ put $a_+ = \tfrac12(a+\sigma(a))$ and $a_- = \tfrac12(a-\sigma(a))$. Then $a_+$ is symmetric, $a_-$ is skew, and $a = a_+ + a_-$. The sum
 
 $$
-A = \mathrm{Sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)
+\boxed{\;A = \mathrm{Sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)\;}
 $$
 
 is direct, and the two summands are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$.
@@ -323,7 +323,7 @@ In the **affine** case $f(x) = ax+b$ the conditions are $a\sigma(a) = 1$ and $\s
 **Theorem.** Let $S$ be a $\sigma$-stable multiplicative set. Then $\sigma$ extends to an involution $\sigma^{\mathrm{ext}}$ of the localization $S^{-1}R$ by $\sigma^{\mathrm{ext}}(r/s) = \sigma(r)/\sigma(s)$, and
 
 $$
-(S^{-1}R)^{\sigma^{\mathrm{ext}}} = (S^\sigma)^{-1}R^\sigma ,
+\boxed{\;(S^{-1}R)^{\sigma^{\mathrm{ext}}} = (S^\sigma)^{-1}R^\sigma\;} ,
 $$
 
 the localization of the fixed subring at the fixed part of $S$, identified with its image in $S^{-1}R$.
@@ -341,7 +341,7 @@ Then $b \in S^\sigma$, since $\sigma(b) = \sigma(s)s\sigma(t)t = b$ by commutati
 **Corollary.** Let $R$ be an integral domain with involution $\sigma$, and let $\sigma$ act on the fraction field by $\sigma(a/b) = \sigma(a)/\sigma(b)$. Then
 
 $$
-\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma) .
+\boxed{\;\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)\;} .
 $$
 
 **Proof.** Take $S = R\setminus\{0\}$, which is $\sigma$-stable with fixed part $R^\sigma\setminus\{0\}$, and apply the theorem.

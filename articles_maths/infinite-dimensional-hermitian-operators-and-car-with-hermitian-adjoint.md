@@ -45,7 +45,7 @@ one has $\{a_j,a_k^{\ast}\} = \delta_{jk}$, $\{a_j,a_k\} = 0$ and $a_j^{2} = 0$ 
 
 **Theorem (the Fock representation).** There is an irreducible $\ast$-representation, the **Fock representation**, on the **Fock space** $\mathcal{F} = \Lambda^{\bullet}\mathcal{H}$, in which $c^{\ast}(f)$ is exterior multiplication by $f$ and $c(f)$ is its adjoint, the interior product (contraction); the **vacuum** is the vector $\Omega$ with $c(f)\Omega = 0$ for all $f$, it is cyclic, and the representation carries the inner product for which these operators are adjoints. The **vacuum idempotent** is the projection onto $\mathbb{C}\Omega$, and in the finite truncation it was verified that the elements
 $$
-f_{\mathrm{vac}} = \prod_{j=1}^{n}a_ja_j^{\ast} = \prod_{j=1}^{n}a_j^{\ast}a_j = \prod_{j=1}^{n}\bigl(1-a_j^{\ast}a_j\bigr)
+\boxed{\;f_{\mathrm{vac}} = \prod_{j=1}^{n}a_ja_j^{\ast} = \prod_{j=1}^{n}a_j^{\ast}a_j = \prod_{j=1}^{n}\bigl(1-a_j^{\ast}a_j\bigr)\;}
 $$
 are self-adjoint idempotents; the three expressions agree because $a_ja_j^{\ast} = 1-a_j^{\ast}a_j$ is the consequence of $\{a_j,a_j^{\ast}\} = 1$.
 
@@ -61,7 +61,7 @@ are self-adjoint idempotents; the three expressions agree because $a_ja_j^{\ast}
 
 **Theorem (Bogoliubov).** Let $U$ be a unitary of $\mathcal{H}$. Then there is an automorphism $\alpha_U$ of the CAR algebra with
 $$
-\alpha_U\bigl(c(f)\bigr) = c(Uf),
+\boxed{\;\alpha_U\bigl(c(f)\bigr) = c(Uf)\;},
 $$
 and the assignment $U\mapsto\alpha_U$ is a homomorphism from the unitary group to the automorphism group. The map is the infinite-dimensional analogue of the conjugation of the Clifford algebra by the units of the slice, and it is the action that makes the CAR algebra the carrier of the fermionic second quantisation: the one-particle unitary acts on the algebra, and its image in the automorphism group is the group of free evolutions.
 

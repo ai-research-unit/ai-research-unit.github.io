@@ -11,7 +11,7 @@ The article proves the two closures from one sign computation, states the corres
 **Proposition.** Every operator splits as
 
 $$
-T = \tfrac{1}{2}\bigl(T + T^{*}\bigr) + \tfrac{1}{2}\bigl(T - T^{*}\bigr) ,
+\boxed{\;T = \tfrac{1}{2}\bigl(T + T^{*}\bigr) + \tfrac{1}{2}\bigl(T - T^{*}\bigr)\;} ,
 $$
 
 with the first summand self-adjoint and the second skew-adjoint; the splitting is the eigenspace decomposition of the involution $T \mapsto T^{*}$, and it is unique.
@@ -25,7 +25,7 @@ with the first summand self-adjoint and the second skew-adjoint; the splitting i
 **Proposition (the sign rule).** If $S$ has sign $\varepsilon$ and $T$ has sign $\delta$ then
 
 $$
-(ST + TS)^{*} = \varepsilon\delta\,(ST + TS), \qquad (ST - TS)^{*} = -\varepsilon\delta\,(ST - TS) .
+\boxed{\;(ST + TS)^{*} = \varepsilon\delta\,(ST + TS), \qquad (ST - TS)^{*} = -\varepsilon\delta\,(ST - TS)\;} .
 $$
 
 **Proof.** $(ST)^{*} = T^{*}S^{*} = \delta\varepsilon\,TS$ and $(TS)^{*} = \varepsilon\delta\,ST$; adding gives the first identity and subtracting gives the second, and the two signs $\varepsilon, \delta$ commute as central signs.
@@ -51,7 +51,7 @@ $$
 **Proposition (the Cayley transform).** Let $S$ be skew-adjoint and suppose $1 + S$ invertible. Then
 
 $$
-U = (1 - S)(1 + S)^{-1}
+\boxed{\;U = (1 - S)(1 + S)^{-1}\;}
 $$
 
 is unitary, and the assignment is inverted by $S = (1 - U)(1 + U)^{-1}$ when $1 + U$ is invertible.

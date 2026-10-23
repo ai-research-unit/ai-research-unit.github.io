@@ -54,7 +54,7 @@ and the generator is the core cell $D^{k+1}\times\{0\}$ of the handle, whose bou
 **Theorem (the effect of a surgery on the homology).** Let $2k \leq n-3$, so that the surgery is **below the middle dimension**, and suppose the attaching class $\alpha$ is nonzero. Then:
 **(a)** in degree $k$ the surgery kills the class,
 $$
-H_k(M';\mathbb{Z}) \cong H_k(M;\mathbb{Z})\big/\langle\alpha\rangle ;
+\boxed{\;H_k(M';\mathbb{Z}) \cong H_k(M;\mathbb{Z})\big/\langle\alpha\rangle\;} ;
 $$
 **(b)** in the intermediate degrees the homology is unchanged,
 $$
@@ -114,13 +114,13 @@ of the Wall surgery obstruction group of the group ring of the fundamental group
 
 **Theorem (Wall; the surgery exact sequence).** Let $X$ be a closed $n$-manifold with $n \geq 5$ and fundamental group $\pi$. There is a long exact sequence of pointed sets
 $$
-\cdots \longrightarrow L_{n+1}(\mathbb{Z}[\pi]) \longrightarrow \mathcal{S}(X) \longrightarrow [X, G/O] \longrightarrow L_n(\mathbb{Z}[\pi]) ,
+\boxed{\;\cdots \longrightarrow L_{n+1}(\mathbb{Z}[\pi]) \longrightarrow \mathcal{S}(X) \longrightarrow [X, G/O] \longrightarrow L_n(\mathbb{Z}[\pi])\;} ,
 $$
 in which $\mathcal{S}(X)$ is the structure set of the homotopy equivalences to $X$ modulo $h$-cobordism, the third term is the set of normal invariants and the maps are the surgery obstruction and the action of the surgery group. Consequently a normal map is normally bordant to a homotopy equivalence if and only if its obstruction in $L_n(\mathbb{Z}[\pi])$ vanishes, and the structure set measures the ambiguity.
 
 **Proposition (the two cases of the obstruction).** The surgery obstruction group is
 $$
-L_{4k}(\mathbb{Z}[\pi]) = \mathbb{Z} \ \text{(for } \pi = 1), \qquad L_{4k+2}(\mathbb{Z}[\pi]) = \mathbb{Z}/2 \ \text{(for } \pi = 1),
+\boxed{\;L_{4k}(\mathbb{Z}[\pi]) = \mathbb{Z} \ \text{(for } \pi = 1), \qquad L_{4k+2}(\mathbb{Z}[\pi]) = \mathbb{Z}/2 \ \text{(for } \pi = 1)\;},
 $$
 and the obstruction is the **signature** of the middle-dimensional intersection form in the first case and the **Kervaire invariant** (the Arf invariant of the form over $\mathbb{F}_2$) in the second.
 

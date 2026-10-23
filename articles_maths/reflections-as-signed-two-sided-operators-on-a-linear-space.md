@@ -13,14 +13,14 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Definition.** For an invertible $a \in E$ the **signed inner sandwich** of $a$ is
 
 $$
-\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\circ\alpha, \qquad
-\Theta^{\alpha}_{a,a^{-1}}(X) = a\,\alpha(X)\,a^{-1} .
+\boxed{\;\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\circ\alpha, \qquad
+\Theta^{\alpha}_{a,a^{-1}}(X) = a\,\alpha(X)\,a^{-1}\;} .
 $$
 
 **Proposition.** $\Theta^{\alpha}_{a,a^{-1}}$ is an automorphism of $E$, and
 
 $$
-\bigl(\Theta^{\alpha}_{a,a^{-1}}\bigr)^{2} = \mathrm{Ad}_{a\alpha(a)} ,
+\boxed{\;\bigl(\Theta^{\alpha}_{a,a^{-1}}\bigr)^{2} = \mathrm{Ad}_{a\alpha(a)}\;} ,
 $$
 
 so it is an involution of $E$ exactly when $a\alpha(a)$ is central in $E$.
@@ -34,7 +34,7 @@ so it is an involution of $E$ exactly when $a\alpha(a)$ is central in $E$.
 **Proposition (the reflection acts trivially by its own signed sandwich).** Let $r$ be a reflection of $V$ and let $\alpha = \alpha_r$, $\alpha_r(X) = rXr$. Then
 
 $$
-\Theta^{\alpha_r}_{r,r^{-1}}(X) = r\,(rXr)\,r = X ,
+\boxed{\;\Theta^{\alpha_r}_{r,r^{-1}}(X) = r\,(rXr)\,r = X\;} ,
 $$
 
 so $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$; the reflection is fixed by the signed inner sandwich of itself.

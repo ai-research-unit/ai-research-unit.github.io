@@ -26,7 +26,7 @@ Throughout, $G$ denotes a topological group, $H$ a discrete group when the conte
 **Theorem (classifying property).** Let $p : EG \to BG$ be a universal principal $G$-bundle and let $X$ be a CW complex. The pullback of $p$ along a map $f : X \to BG$ defines a natural bijection
 
 $$
-[X, BG] \xrightarrow{\ \cong\ } \operatorname{Prin}_G(X), \qquad [f] \mapsto f^*EG .
+\boxed{\;[X, BG] \xrightarrow{\ \cong\ } \operatorname{Prin}_G(X), \qquad [f] \mapsto f^*EG\;} .
 $$
 
 The trivial bundle corresponds to the class of a constant map, so the bijection is between pointed data when a basepoint is fixed.
@@ -98,7 +98,7 @@ for every $H$-module $M$. Consequently $BH$ is the Eilenberg–MacLane space $K(
 **Theorem.** Let $G$ be a topological group and $p : EG \to BG$ its universal bundle. Then
 
 $$
-\pi_n(BG) \cong \pi_{n-1}(G) \quad (n \geq 2), \qquad \pi_1(BG) \cong \pi_0(G),
+\boxed{\;\pi_n(BG) \cong \pi_{n-1}(G) \quad (n \geq 2), \qquad \pi_1(BG) \cong \pi_0(G)\;},
 $$
 
 and consequently $BG$ is simply connected whenever $G$ is connected, and $B$ kills one homotopy degree: $\pi_n(BG)$ is the $(n-1)$-st homotopy group of $G$.
@@ -208,7 +208,7 @@ with $X_n$ having the same $n$-type as $X$, the fibre of $X_n \to X_{n-1}$ being
 **Theorem (representability).** Let $\pi$ be an abelian group and $n \geq 1$. For every CW complex $X$ there is a natural bijection
 
 $$
-H^n(X;\pi) \xrightarrow{\ \cong\ } [X, K(\pi,n)],
+\boxed{\;H^n(X;\pi) \xrightarrow{\ \cong\ } [X, K(\pi,n)]\;},
 $$
 
 where the right-hand side is the set of homotopy classes of maps; for a based connected CW complex the reduced cohomology corresponds to based homotopy classes. The bijection sends a class to its classifying map and is induced by the **fundamental class** $\iota_n \in H^n(K(\pi,n);\pi)$ that corresponds to the identity of $\pi$ under $H^n(K(\pi,n);\pi) \cong \operatorname{Hom}(\pi,\pi)$.

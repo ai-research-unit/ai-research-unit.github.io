@@ -42,7 +42,7 @@ Weak convergence against all continuous functions is equivalently tested against
 **Theorem (Weyl's criterion).** A sequence $(x_n)$ in $[0,1)$ is equidistributed if and only if for every nonzero integer $k$,
 
 $$
-\frac{1}{N}\sum_{n=1}^{N} \exp(2\pi i k x_n) \longrightarrow 0 \qquad \text{as } N \to \infty.
+\boxed{\;\frac{1}{N}\sum_{n=1}^{N} \exp(2\pi i k x_n) \longrightarrow 0 \qquad \text{as } N \to \infty\;}.
 $$
 
 *Proof.* If the sequence is equidistributed, the average of the continuous function $x\mapsto \exp(2\pi ikx)$ tends to its integral, which is $0$ for $k \neq 0$. Conversely, the exponentials with $k \in \mathbb{Z}$ span a self-adjoint algebra of functions separating points, so by the Stone–Weierstrass theorem they are dense in $C([0,1))$, and the hypothesis tested against them extends to every continuous function.
@@ -114,7 +114,7 @@ The discrepancy measures the rate of equidistribution, and the quantitative theo
 **Theorem (Erdős–Turán).** There is an absolute constant $C$ such that for every sequence $(x_n)$ in $[0,1)$ and every $H \geq 1$,
 
 $$
-D_N(x_1, \dots, x_N) \le C\left(\frac{1}{H} + \sum_{k=1}^{H}\frac{1}{k}\left|\frac{1}{N}\sum_{n=1}^{N} \exp(2\pi i k x_n)\right|\right).
+\boxed{\;D_N(x_1, \dots, x_N) \le C\left(\frac{1}{H} + \sum_{k=1}^{H}\frac{1}{k}\left|\frac{1}{N}\sum_{n=1}^{N} \exp(2\pi i k x_n)\right|\right)\;}.
 $$
 
 The inequality converts an estimate of the exponential sums — the Fourier coefficients of the empirical measure — into an estimate of the discrepancy, and it is the quantitative form of Weyl's criterion: the criterion says that the sums vanish in the limit, and the inequality says how quickly they must vanish for the discrepancy to be small. Its proof uses a trigonometric approximation of the indicator function of an interval by a Fejér kernel; the constant is absolute and the optimal version has been improved by later authors.
@@ -140,7 +140,7 @@ The theorem is the quantitative theory of the linear sequence, and it is the rea
 **Theorem (Furstenberg).** Let $\Gamma \le SL_2(\mathbb{R})$ be a lattice, $G = SL_2(\mathbb{R})$, and let $U$ be the horocycle subgroup. Then for every $x \in G/\Gamma$ the orbit $\{u_t x\}$ is equidistributed with respect to the invariant measure:
 
 $$
-\frac{1}{T}\int_0^T f(u_t x)\, dt \longrightarrow \int_{G/\Gamma} f\, d\mu \qquad \text{for every } f \in C_c(G/\Gamma).
+\boxed{\;\frac{1}{T}\int_0^T f(u_t x)\, dt \longrightarrow \int_{G/\Gamma} f\, d\mu \qquad \text{for every } f \in C_c(G/\Gamma)\;}.
 $$
 
 The theorem is stated here for the homogeneous case because it is the continuous-parameter analogue of Weyl's criterion: the time average against every continuous function converges, and the convergence holds for every starting point, not merely almost every one. The proof uses the commutation relation $a_su_ta_s^{-1} = u_{\exp(s)t}$ to rescale the horocycle and the ergodicity of the geodesic flow; the two flows are two aspects of one equidistribution theorem, and the details are in *Homogeneous Dynamics*.

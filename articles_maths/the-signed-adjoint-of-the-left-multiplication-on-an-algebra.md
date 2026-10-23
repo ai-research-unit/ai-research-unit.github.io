@@ -19,7 +19,7 @@ Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensiona
 **Theorem.** With respect to the twisted pairing,
 
 $$
-\Lambda(a)^{*_\sigma}=S_{\delta(a),\,\delta(1)}=\Lambda\bigl(\delta(a)\bigr),
+\boxed{\;\Lambda(a)^{*_\sigma}=S_{\delta(a),\,\delta(1)}=\Lambda\bigl(\delta(a)\bigr)\;},
 $$
 
 so the signed adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)$, and it stays on the **same side**; the assignment $a\mapsto\delta(a)$ on the parameter is the element involution twisted by the grade involution.
@@ -45,7 +45,7 @@ so it is a `*`-map from the involutive algebra $(A,\delta)$ to the involutive al
 **Proposition.** With respect to the plain pairing,
 
 $$
-\Lambda(a)^{*}=S_{\alpha(1),\,\alpha(a)}=S_{1,\,\alpha(a)}=R_{\alpha(a)}\,\alpha,
+\boxed{\;\Lambda(a)^{*}=S_{\alpha(1),\,\alpha(a)}=S_{1,\,\alpha(a)}=R_{\alpha(a)}\,\alpha\;},
 $$
 
 so the plain adjoint of the signed left multiplication is the signed sandwich $S_{1,\alpha(a)}$, the operator $x\mapsto\alpha(x)\alpha(a)$, which multiplies on the **other** side after the twist; and the two adjoints are related by the conjugation of the operator algebra,
@@ -85,9 +85,9 @@ and a product of three is again signed, $\Lambda(a)\Lambda(b)\Lambda(c)=\Lambda(
 **Theorem.** For the twisted pairing,
 
 $$
-\Lambda(a) \text{ is self-adjoint} \iff \delta(a)=a, \qquad
+\boxed{\;\Lambda(a) \text{ is self-adjoint} \iff \delta(a)=a, \qquad
 \Lambda(a) \text{ is unitary} \iff \delta(a)\alpha(a)=1, \qquad
-\Lambda(a) \text{ is an involution} \iff a\alpha(a)=1 .
+\Lambda(a) \text{ is an involution} \iff a\alpha(a)=1\;} .
 $$
 
 The unitary signed left multiplications are exactly the operators $\Lambda(a)$ with $\alpha(a)$ a unitary element of the algebra, and they form a subgroup of the unit group of $E$ isomorphic to a subgroup of the units of $A$.

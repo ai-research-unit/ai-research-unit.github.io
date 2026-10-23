@@ -60,8 +60,7 @@ where $\mathsf{M}_2(Q) = \begin{pmatrix} q & -q' \\ q' & q \end{pmatrix}$ is the
 
 **Proposition (the product in components).** Let $Q = (q,q')$ and $Q_1 = (q_1,q'_1)$. Then the product has components
 
-$$
-(QQ_1)^0 = q q_1 - q' q'_1, \qquad (QQ_1)^1 = q q'_1 + q' q_1 .
+$$ \boxed{\;(QQ_1)^0 = q q_1 - q' q'_1, \qquad (QQ_1)^1 = q q'_1 + q' q_1 \;}.
 $$
 
 **Proof.** Expand $QQ_1 = (q+i q')(q_1+i q'_1) = q q_1 + i q q'_1 + i q' q_1 + i^2 q' q'_1 = (q q_1-q' q'_1) + (q q'_1+q' q_1)i$.
@@ -91,8 +90,7 @@ The first row and the first column reproduce the basis, since $1$ is the identit
 
 On the unit circle the component product becomes a rotation. A unit has the polar form $u = \cos\theta + i\sin\theta$, so its two components are $(u^0,u^1) = (\cos\theta,\sin\theta)$ and its matrix is
 
-$$
-\mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta,
+$$ \boxed{\;\mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta\;},
 $$
 
 which is the **rotation matrix** of the plane through the angle $\theta$. It is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, and of determinant $1$, and the unit criterion $\langle u\rangle_{*} = 1$ is exactly the statement $\det R_\theta = 1$. For a general element $Q = q+i q' = r u$ with $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/\sqrt{\langle Q\rangle_{*}}$, the component product is the matrix
@@ -174,8 +172,7 @@ Both restrictions are **positive definite**, of signature $(1,0)$, and the form 
 
 **Theorem.** A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$, and then
 
-$$
-Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})^\mu = \left( \frac{Q^0}{\langle Q\rangle_{*}}, \, -\frac{Q^1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 .
+$$ \boxed{\;Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})^\mu = \left( \frac{Q^0}{\langle Q\rangle_{*}}, \, -\frac{Q^1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 \;}.
 $$
 
 **Proof.** The criterion and the formula are those of *Complex Norm and Invertibility*; in coordinates the inverse of the pair $(q,q')$ is $(q,-q')/(q^2+q'^2)$.

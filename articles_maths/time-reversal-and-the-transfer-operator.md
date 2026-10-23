@@ -23,7 +23,7 @@ $$
 the composition of the complex conjugation of the amplitudes with the spatial involution of the reversal; it is the operator form of the reversing map of the dynamics, with the additional complex conjugation that the passage to the amplitudes requires. The **reversal** of the dynamics $T$ is the operator condition
 
 $$
-C\,U_T\,C=U_T^{-1},
+\boxed{\;C\,U_T\,C=U_T^{-1}\;},
 $$
 
 which is the operator transcription of $RTR=T^{-1}$ with the anti-unitary reversal.

@@ -76,7 +76,7 @@ for $X$ of degree $p$, $Y$ of degree $q$ and $Z$ arbitrary. It makes $\mathrm{X}
 **Proposition (coordinate formula).** Let $\pi = \frac{1}{2}\sum_{i,j}\pi^{ij}\partial/\partial x^i\wedge\partial/\partial x^j$ be a bivector field. Then $[\pi,\pi]$ is the trivector field
 
 $$
-[\pi,\pi]^{ijk} = \sum_{l=1}^{n}\Bigl(\pi^{il}\,\partial/\partial x^l\,\pi^{jk} + \pi^{jl}\,\partial/\partial x^l\,\pi^{ki} + \pi^{kl}\,\partial/\partial x^l\,\pi^{ij}\Bigr).
+\boxed{\;[\pi,\pi]^{ijk} = \sum_{l=1}^{n}\Bigl(\pi^{il}\,\partial/\partial x^l\,\pi^{jk} + \pi^{jl}\,\partial/\partial x^l\,\pi^{ki} + \pi^{kl}\,\partial/\partial x^l\,\pi^{ij}\Bigr)\;}.
 $$
 
 **Proof.** This is the coordinate expansion of the graded Leibniz rule applied to the decomposition of $\pi$ into the basis vectors $\partial/\partial x^i$; the terms in which the coefficient function is differentiated come from $[\partial/\partial x^i, \pi^{jk}\partial/\partial x^j\wedge\partial/\partial x^k]$ and the terms of the form $\pi^{il}\partial/\partial x^l\,\pi^{jk}$ from the Leibniz rule, while the bracket of two coordinate vector fields vanishes.
@@ -84,7 +84,7 @@ $$
 **Theorem.** Let $\pi$ be a bivector field and let $\{f,g\} = \pi(df,dg)$. Then the bracket satisfies the Jacobi identity if and only if $[\pi,\pi] = 0$. More precisely,
 
 $$
-\{f,\{g,h\}\} + \{g,\{h,f\}\} + \{h,\{f,g\}\} = [\pi,\pi](df, dg, dh)
+\boxed{\;\{f,\{g,h\}\} + \{g,\{h,f\}\} + \{h,\{f,g\}\} = [\pi,\pi](df, dg, dh)\;}
 $$
 
 for all $f, g, h \in C^\infty(M)$.
@@ -152,7 +152,7 @@ $$
 in which
 
 $$
-\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \phi_{jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \phi_{jk}(0) = 0 .
+\boxed{\;\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \phi_{jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \phi_{jk}(0) = 0\;} .
 $$
 
 Consequently the Poisson structure is locally the product of a symplectic structure of dimension $2r$ and a Poisson structure whose rank vanishes at the origin, and the symplectic leaf through $x$ is locally the slice $y = 0$.

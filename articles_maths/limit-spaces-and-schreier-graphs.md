@@ -37,7 +37,7 @@ $$
 is a surjective morphism of labelled graphs. The labelled Schreier graph of the action on the whole tree is the disjoint union of the graphs $\Gamma_n(G,S)$ over $n$, and the labelled Schreier graph of the action on the boundary is their inverse limit
 
 $$
-\Gamma(G,S,X^{\omega}) = \varprojlim_n \Gamma_n(G,S).
+\boxed{\;\Gamma(G,S,X^{\omega}) = \varprojlim_n \Gamma_n(G,S)\;}.
 $$
 
 **Proof.** The projection deletes the last letter and commutes with the action, because an automorphism of the tree carries a word $x_1x_2\cdots x_{n+1}$ to a word of the same length whose prefix is the image of $x_1\cdots x_n$: the recursion $g(x_1\cdots x_nx_{n+1}) = g(x_1\cdots x_n)\,g|_{x_1\cdots x_n}(x_{n+1})$ exhibits the projection as equivariant. An edge $v \to sv$ of $\Gamma_{n+1}$ is carried to the edge $\pi_n(v) \to s\pi_n(v)$ of $\Gamma_n$, and every vertex and every edge of $\Gamma_n$ is the image of one of $\Gamma_{n+1}$, because a word of length $n$ has children and the projection is onto. The graph on $X^*$ is the disjoint union by the invariance of the levels, and the graph on $X^{\omega}$ is the inverse limit of the labelled graphs because the cylinder $[x_1\cdots x_n]$ is the inverse image of the vertex $x_1\cdots x_n$ and the action is continuous.
@@ -103,7 +103,7 @@ $$
 **Theorem (the nucleus criterion).** Two sequences $\cdots x_2x_1$ and $\cdots y_2y_1$ are asymptotically equivalent if and only if there is a sequence $h_n$ of elements of the nucleus $N$ such that
 
 $$
-h_n(x_n) = y_n, \qquad h_n|_{x_n} = h_{n-1} \qquad \text{for every } n \geq 1
+\boxed{\;h_n(x_n) = y_n, \qquad h_n|_{x_n} = h_{n-1} \qquad \text{for every } n \geq 1\;}
 $$
 
 (with $h_0$ arbitrary). Equivalently, the Moore diagram of the nucleus contains a path $\cdots e_2e_1$ in which the edge $e_n$ carries the label $(x_n, y_n)$.
@@ -181,7 +181,7 @@ The theorem is Nekrashevych's, and it is the exact sense in which the limit spac
 **Theorem (the limit space is a boundary).** If the action of the finitely generated group $G$ is contracting, then the self-similarity complex $\Sigma(G,S)$ is a Gromov-hyperbolic space, and the limit space is homeomorphic to its boundary at infinity:
 
 $$
-\mathcal{J}_G \cong \partial\Sigma(G,S),
+\boxed{\;\mathcal{J}_G \cong \partial\Sigma(G,S)\;},
 $$
 
 by a homeomorphism compatible with the projection $X^{-\omega} \to \mathcal{J}_G$, the boundary point of a sequence being the limit of the sequence of its finite prefixes read as vertices of the complex.

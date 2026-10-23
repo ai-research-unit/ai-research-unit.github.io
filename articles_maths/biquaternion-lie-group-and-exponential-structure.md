@@ -50,7 +50,7 @@ $$
 $$
 consistently with the unit quaternions being the unitary part of the norm-one group. Every element of $\mathrm{U}(2)$ is the product of a unit quaternion and a unit complex scalar, and the two factors meet in $\{\pm e_t\}$:
 $$
-\mathrm{U}(2)=S^3\cdot \mathrm{U}(1)\cong (SU(2)\times \mathrm{U}(1))/\{\pm(1,1)\}.
+\boxed{\; \mathrm{U}(2)=S^3\cdot \mathrm{U}(1)\cong (SU(2)\times \mathrm{U}(1))/\{\pm(1,1)\} \;}.
 $$
 
 **Proof.** If $\tilde{Q}\in \mathrm{U}(2)$ then $|\det\mathsf{M}_2(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\mathsf{M}_2(\tilde{Q}))^{-1/2}\in \mathrm{U}(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one unitary elements with the unit quaternions; the scalar $(\det\mathsf{M}_2(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_t\}$ is the set of scalars $\lambda e_t$ of determinant $\lambda^2=1$, and the kernel of $S^3\times \mathrm{U}(1)\to \mathrm{U}(2)$, $(\tilde q,\lambda)\mapsto\lambda\tilde q$, is $\{\pm(1,1)\}$.
@@ -99,15 +99,15 @@ with the eight independent parameters $\alpha,\beta,\delta_1,\delta_2$ and the f
 **Theorem (Euler-angles forms).** With unit vectors $\vec a,\vec b,\vec c,\vec d,\vec m,\vec n,\vec w$ and real angles,
 
 $$
-\tilde U_{\mathrm{SU}(3)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr)
+\boxed{\; \tilde U_{\mathrm{SU}(3)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr)
 \odot\exp\bigl(iD\{\beta,\gamma,-\beta-\gamma\}\bigr)
-\odot\exp\bigl(\tfrac{\delta}{2}b\bigr)[\,]\exp\bigl(-\tfrac{\delta}{2}b\bigr),
+\odot\exp\bigl(\tfrac{\delta}{2}b\bigr)[\,]\exp\bigl(-\tfrac{\delta}{2}b\bigr) \;},
 $$
 
 $$
-\tilde U_{\mathrm{SU}(4)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\beta}{2}b\bigr)
+\boxed{\; \tilde U_{\mathrm{SU}(4)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\beta}{2}b\bigr)
 \odot\exp\bigl(iD\{\gamma,\delta,\epsilon\}\bigr)
-\odot\exp\bigl(\tfrac{\psi}{2}c\bigr)[\,]\exp\bigl(-\tfrac{\eta}{2}d\bigr),
+\odot\exp\bigl(\tfrac{\psi}{2}c\bigr)[\,]\exp\bigl(-\tfrac{\eta}{2}d\bigr) \;},
 $$
 
 and, in the degenerate case in which the outer unit vectors coincide, an $\mathrm{SU}(2)$ element,

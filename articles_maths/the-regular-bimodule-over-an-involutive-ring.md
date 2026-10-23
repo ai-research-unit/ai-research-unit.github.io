@@ -17,7 +17,7 @@ Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, and $\sigm
 **Proposition.** The involution $\sigma$ is an isomorphism of right $A$-modules
 
 $$
-\sigma : ({}_AA)^{\sigma} \longrightarrow A_A , \qquad x \mapsto \sigma(x) ,
+\boxed{\;\sigma : ({}_AA)^{\sigma} \longrightarrow A_A , \qquad x \mapsto \sigma(x)\;} ,
 $$
 
 where $({}_AA)^{\sigma}$ carries $x \cdot a = \sigma(a)x$ and $A_A$ carries $x \cdot a = xa$. Hence the twist of the left regular module is the right regular module up to the comparison $\sigma$, and this comparison is exactly the involution.
@@ -39,7 +39,7 @@ For the identity involution of a commutative ring the two actions are simply int
 **Proposition.** The involution $\sigma$ is an isomorphism of bimodules
 
 $$
-\sigma : {}_AA_A \longrightarrow {}^{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a) ,
+\boxed{\;\sigma : {}_AA_A \longrightarrow {}^{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a)\;} ,
 $$
 
 and conversely every bimodule isomorphism $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ is of the form $x \mapsto d\,\sigma(x)$ with $d$ a central unit; it is an anti-homomorphism, hence its own inverse when $\varphi(1) = 1$, precisely when $d = 1$. So an involution of $A$ is exactly a bimodule isomorphism of the regular bimodule with its $\sigma$-swap, normalised at the unit.
@@ -67,7 +67,7 @@ it is **Hermitian** if in addition $h(y,x) = \sigma\bigl(h(x,y)\bigr)$.
 **Proposition.** On ${}_AA$ the formula
 
 $$
-h(x,y) = x\,\sigma(y)
+\boxed{\;h(x,y) = x\,\sigma(y)\;}
 $$
 
 is a Hermitian $\sigma$-sesquilinear form with values in $A$, and it is non-degenerate: $h(x,y) = 0$ for all $y$ implies $x = 0$, and $h(x,y) = 0$ for all $x$ implies $y = 0$.

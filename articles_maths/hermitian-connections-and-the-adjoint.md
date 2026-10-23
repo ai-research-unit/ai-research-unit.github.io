@@ -37,7 +37,7 @@ $$
 **Theorem (the self-adjointness of a metric connection).** Let $h$ be a Hermitian metric on $E$ and let $\flat : \bar E \to E^*$ be the conjugate-linear isomorphism $s\mapsto h(s,\cdot)$. Then $\nabla$ is metric-compatible if and only if $\flat$ is **parallel** for the pair $(\nabla,\nabla^*)$:
 
 $$
-\nabla^*\circ\flat = \flat\circ\nabla, \qquad \text{as operators } \Gamma(E)\to\Omega^1(M;E^*),
+\boxed{\;\nabla^*\circ\flat = \flat\circ\nabla, \qquad \text{as operators } \Gamma(E)\to\Omega^1(M;E^*)\;},
 $$
 
 where $\nabla$ acts on the $E$-valued (or $1$-form-valued) sections through the underlying real structure of $\bar E$ and $\flat$ acts on the values; equivalently, the measurement of the connection by the metric is self-adjoint:
@@ -61,7 +61,7 @@ Let the manifold carry a density $d\mu$, as in *The Formal Adjoint of a Differen
 **Theorem.** For a metric-compatible connection $\nabla$ and a vector field $X$,
 
 $$
-(\nabla_X)^* = -\nabla_X - \operatorname{div} X,
+\boxed{\;(\nabla_X)^* = -\nabla_X - \operatorname{div} X\;},
 $$
 
 acting as a differential operator on the sections, where the divergence is taken with respect to the density; consequently $\nabla_X$ is skew-adjoint exactly when $\operatorname{div}X = 0$.
@@ -89,7 +89,7 @@ where $e_1,\ldots,e_n$ is a local orthonormal frame, $\nabla^* : \Gamma(T^*M\oti
 **Theorem.** The curvature of the dual connection is the negative transpose of the curvature of $\nabla$,
 
 $$
-R_{\nabla^*}(X,Y) = -\,R_\nabla(X,Y)^{t}, \qquad \text{in frames} \ \Omega_{\nabla^*} = -\,\Omega_\nabla^{\,T},
+\boxed{\;R_{\nabla^*}(X,Y) = -\,R_\nabla(X,Y)^{t}, \qquad \text{in frames} \ \Omega_{\nabla^*} = -\,\Omega_\nabla^{\,T}\;},
 $$
 
 and the curvature of the conjugate connection is the conjugate, $R_{\bar\nabla}(X,Y)=\overline{R_\nabla(X,Y)}$. Consequently, for a metric-compatible connection, the curvature is skew-Hermitian with respect to the metric,

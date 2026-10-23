@@ -46,7 +46,7 @@ The representation is unitary because each transformation is measure-preserving,
 **Theorem (spectral form of ergodicity).** The action is ergodic if and only if the constants are the only $G$-invariant vectors of the Koopman representation: the fixed subspace is
 
 $$
-L^2(X,\mu)^G = \{\text{constant functions}\} \cong \mathbb{C}.
+\boxed{\;L^2(X,\mu)^G = \{\text{constant functions}\} \cong \mathbb{C}\;}.
 $$
 
 *Proof.* An invariant function $f \in L^2$ is measurable, and its level sets $\{f > c\}$ are invariant measurable sets. If the action is ergodic each such set has measure $0$ or $1$, so $f$ is constant a.e.; conversely a non-constant invariant vector produces an invariant set of intermediate measure by taking a level set.
@@ -114,7 +114,7 @@ For $\mathbb{Z}$-actions, mixing of order $2$ is mixing, and mixing of all order
 **Theorem (von Neumann).** Let $T$ be a measure-preserving transformation of $(X,\mathcal{B},\mu)$ and let $P$ be the orthogonal projection of $L^2(X,\mu)$ onto the invariant vectors. Then for every $f \in L^2(X,\mu)$,
 
 $$
-\frac{1}{n}\sum_{k=0}^{n-1} U_T^k f \longrightarrow P f \qquad \text{in } L^2(X,\mu).
+\boxed{\;\frac{1}{n}\sum_{k=0}^{n-1} U_T^k f \longrightarrow P f \qquad \text{in } L^2(X,\mu)\;}.
 $$
 
 *Proof.* Since $U_T$ is unitary and $P$ is the projection onto $\ker(U_T - I)$, the space $L^2$ decomposes as $\ker(U_T - I) \oplus \overline{(U_T - I)L^2}$. On the kernel the average is $f = Pf$; on the image, $(U_T - I)h$ has average $n^{-1}(U_T^n h - h)$, whose norm is at most $2\|h\|/n \to 0$. Density extends the statement to the closure.
@@ -134,7 +134,7 @@ a **Følner sequence**; the definition extends to a locally compact group by rep
 **Theorem (mean ergodic theorem for amenable groups).** Let $G$ be an amenable locally compact group acting on $(X,\mathcal{B},\mu)$ by measure-preserving transformations, let $\{F_n\}$ be a Følner sequence, and let $P$ be the projection onto the invariant vectors of the Koopman representation. Then for every $f \in L^2(X,\mu)$,
 
 $$
-\frac{1}{\eta_G(F_n)}\int_{F_n} U_g f \, dg \longrightarrow P f \qquad \text{in } L^2(X,\mu).
+\boxed{\;\frac{1}{\eta_G(F_n)}\int_{F_n} U_g f \, dg \longrightarrow P f \qquad \text{in } L^2(X,\mu)\;}.
 $$
 
 *Proof.* The operator $A_n f = \eta_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ is a contraction of $L^2$ and commutes with the action, since $U_h A_n U_h^{-1}$ is the average over $hF_n$ and Følner convergence gives $\|A_n - U_h A_n U_h^{-1}\| \to 0$ for each $h$. On invariant vectors $A_n f = f$; on the closed span of $\{U_g f - f\}$ the average tends to $0$ by the Følner condition. The two pieces exhaust $L^2$ as in the abelian case, and a uniform bound plus density completes the argument.

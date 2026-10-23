@@ -78,7 +78,7 @@ respectively.
 **Theorem (mean value property).** If $w$ is harmonic on an open set containing the closed ball $\overline{B}(x,r)$, then
 
 $$
-w(x) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS = \frac{n}{\omega_{n-1}r^{n}}\int_{B(x,r)}w\,dy ,
+\boxed{\;w(x) = \frac{1}{\omega_{n-1}r^{n-1}}\int_{\partial B(x,r)}w\,dS = \frac{n}{\omega_{n-1}r^{n}}\int_{B(x,r)}w\,dy\;} ,
 $$
 
 where $\omega_{n-1}$ is the area of the unit sphere in $\mathbb{R}^n$. Conversely, a continuous function with the mean value property is harmonic.
@@ -144,7 +144,7 @@ and the **heat equation** is $\partial/\partial t w = \Delta w$; the **Cauchy pr
 **Theorem (solution by convolution).** If $f$ is continuous and bounded, then
 
 $$
-w(x,t) = (K_t * f)(x) = \int_{\mathbb{R}^n}K_t(x-y)f(y)\,dy
+\boxed{\;w(x,t) = (K_t * f)(x) = \int_{\mathbb{R}^n}K_t(x-y)f(y)\,dy\;}
 $$
 
 solves the Cauchy problem, and $\|w(\cdot,t)\|_\infty \le \|f\|_\infty$ with $w(\cdot,t)\to f$ uniformly on compact sets as $t\to0^+$.
@@ -178,7 +178,7 @@ with the same statement for the minimum; consequently the solution is unique and
 **Theorem (d'Alembert, $n=1$).** The solution of the Cauchy problem on $\mathbb{R}$ with $f \in C^2$ and $g \in C^1$ is
 
 $$
-w(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}g(s)\,ds .
+\boxed{\;w(x,t) = \frac{f(x-ct)+f(x+ct)}{2} + \frac{1}{2c}\int_{x-ct}^{x+ct}g(s)\,ds\;} .
 $$
 
 *Proof.* Change to characteristic coordinates $\xi = x-ct$, $\eta = x+ct$, in which the equation becomes $w_{\xi\eta}=0$ with general solution $w = F(\xi)+G(\eta)$; the initial conditions determine $F$ and $G$ and give the displayed formula.

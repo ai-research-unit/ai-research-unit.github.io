@@ -43,7 +43,7 @@ $$
 where the integral is along the positive real axis and $t^{Q-1}$ is the split-complex power of *Split-Complex Elementary Functions*, §*The Power Function*. The integral is read componentwise, so by the Idempotent Principle
 
 $$
-\Gamma(Q) = \Gamma(\lambda_+) \Pi_+ + \Gamma(\lambda_-) \Pi_-.
+\boxed{\; \Gamma(Q) = \Gamma(\lambda_+) \Pi_+ + \Gamma(\lambda_-) \Pi_- \;}.
 $$
 
 So the split-complex gamma function is the pair of ordinary real gamma functions at the two eigenvalues.
@@ -67,7 +67,7 @@ for non-negative integers $n$. The scalar $n+1$ has both eigenvalues equal to $n
 ### Reflection Formula
 
 $$
-\Gamma(Q)\Gamma(1-Q)=\frac{\pi}{\sin(\pi\lambda_+)}\Pi_++\frac{\pi}{\sin(\pi\lambda_-)}\Pi_-,
+\boxed{\; \Gamma(Q)\Gamma(1-Q)=\frac{\pi}{\sin(\pi\lambda_+)}\Pi_++\frac{\pi}{\sin(\pi\lambda_-)}\Pi_- \;},
 $$
 
 with the ordinary real sine at each eigenvalue. The formula is read on $0<\lambda_\pm<1$, where both Gamma factors are defined by the integral.
@@ -296,7 +296,7 @@ $$
 By the Idempotent Principle,
 
 $$
-W(Q) = W(\lambda_+) \Pi_+ + W(\lambda_-) \Pi_-,
+\boxed{\; W(Q) = W(\lambda_+) \Pi_+ + W(\lambda_-) \Pi_- \;},
 $$
 
 where $W$ on the right is the ordinary real Lambert W function, with a choice of branch at each eigenvalue.

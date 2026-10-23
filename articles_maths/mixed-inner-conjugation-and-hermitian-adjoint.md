@@ -68,7 +68,7 @@ which was checked on homogeneous units of $\mathrm{Cl}_{0,3}(\mathbb{R})$. For a
 **Theorem (the family collapses on the slice).** For $x\in U$ the four operators satisfy
 
 $$
-\Phi^{\mathrm{id},\mathrm{inv}}_{x} = \Phi^{\mathrm{id},\dagger}_{x} = \Phi^{\alpha,\dagger}_{x} = (-1)^{|x|}\Phi^{\alpha,\mathrm{inv}}_{x}\ \ (\text{homogeneous } x),
+\boxed{\;\Phi^{\mathrm{id},\mathrm{inv}}_{x} = \Phi^{\mathrm{id},\dagger}_{x} = \Phi^{\alpha,\dagger}_{x} = (-1)^{|x|}\Phi^{\alpha,\mathrm{inv}}_{x}\ \ (\text{homogeneous } x)\;},
 $$
 
 and in every case $\Phi^{\mathrm{id},\rho}_{x}$ is the **inner conjugation** $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$; for homogeneous $x$ the signed operators are the sign $(-1)^{|x|}$ times it. So the slice is the exact locus on which the Hermitian theory, the involutive theory and the signed theory agree.
@@ -84,7 +84,7 @@ and in every case $\Phi^{\mathrm{id},\rho}_{x}$ is the **inner conjugation** $\m
 **Theorem (adjoint).** With respect to the Hermitian–Schmidt form $\langle y,z\rangle = \mathrm{Sc}(y^{\dagger}z)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the adjoint of the dagger sandwich is the dagger sandwich of the daggered element,
 
 $$
-\bigl(\Phi^{\theta,\dagger}_{x}\bigr)^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}} \qquad (\theta = \mathrm{id},\alpha),
+\boxed{\;\bigl(\Phi^{\theta,\dagger}_{x}\bigr)^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}} \qquad (\theta = \mathrm{id},\alpha)\;},
 $$
 
 which was checked for both twists.
@@ -94,7 +94,7 @@ which was checked for both twists.
 **Theorem (isometry).** The dagger sandwich is an isometry of the module form for every $x$ in the unitary slice,
 
 $$
-x\in U \ \Longrightarrow \ \bigl(\Phi^{\theta,\dagger}_{x}(y),\Phi^{\theta,\dagger}_{x}(z)\bigr) = (y,z) \quad \text{for all } y,z ,
+\boxed{\;x\in U \ \Longrightarrow \ \bigl(\Phi^{\theta,\dagger}_{x}(y),\Phi^{\theta,\dagger}_{x}(z)\bigr) = (y,z) \quad \text{for all } y,z\;} ,
 $$
 
 and an isometry can occur only when the two positive insertions multiply to the identity,

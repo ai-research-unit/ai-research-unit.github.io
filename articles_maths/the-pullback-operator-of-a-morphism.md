@@ -59,7 +59,7 @@ the base change of the module $M$ along $\varphi$. It preserves direct sums, cok
 
 **Theorem (the adjunction).** For every $\mathcal{O}_Y$-module $\mathcal{G}$ and every $\mathcal{O}_X$-module $\mathcal{F}$ there is a bijection
 $$
-\operatorname{Hom}_{\mathcal{O}_X}\bigl(f^*\mathcal{G},\mathcal{F}\bigr)\ \cong\ \operatorname{Hom}_{\mathcal{O}_Y}\bigl(\mathcal{G},f_*\mathcal{F}\bigr),
+\boxed{\;\operatorname{Hom}_{\mathcal{O}_X}\bigl(f^*\mathcal{G},\mathcal{F}\bigr)\ \cong\ \operatorname{Hom}_{\mathcal{O}_Y}\bigl(\mathcal{G},f_*\mathcal{F}\bigr)\;},
 $$
 natural in $\mathcal{G}$ and $\mathcal{F}$. Equivalently, $f^*$ is left adjoint to $f_*$,
 $$
@@ -78,7 +78,7 @@ $$
 
 **Theorem (functoriality).** For morphisms $f : X\to Y$ and $g : Y\to Z$ there are natural isomorphisms
 $$
-(g\circ f)^*\cong f^*\circ g^*, \qquad (g\circ f)_*\cong g_*\circ f_* ,
+\boxed{\;(g\circ f)^*\cong f^*\circ g^*, \qquad (g\circ f)_*\cong g_*\circ f_*\;} ,
 $$
 and for the identity morphism $\mathrm{id}^*\cong\mathrm{id}$ and $\mathrm{id}_*\cong\mathrm{id}$. Consequently the pullback is a contravariant functor on the category of varieties and the pushforward is a covariant one, and the adjunction is compatible with composition.
 
@@ -86,7 +86,7 @@ and for the identity morphism $\mathrm{id}^*\cong\mathrm{id}$ and $\mathrm{id}_*
 
 **Theorem (the projection formula).** For an $\mathcal{O}_X$-module $\mathcal{F}$ and an $\mathcal{O}_Y$-module $\mathcal{G}$ there is a natural isomorphism
 $$
-f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G}\bigr)\ \cong\ f_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}.
+\boxed{\;f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G}\bigr)\ \cong\ f_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}\;}.
 $$
 
 *Proof.* On an affine chart it is the identity $(M\otimes_AB)\otimes_BN\cong M\otimes_A(N\otimes_AB)$ for modules over $A\to B$, the module identity of Part I's *Extension of Scalars*; the two sides are sheaves, so the affine identification glues. The formula is the compatibility of the adjunction with the tensor product, and it is used in the article's last section and in *Coherent Sheaves*.

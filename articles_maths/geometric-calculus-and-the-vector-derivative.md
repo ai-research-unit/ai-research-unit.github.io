@@ -38,7 +38,7 @@ the dimension of the space; the derivative of the position vector is the dimensi
 **Theorem.** For a vector-valued function $F$, the derivative splits into a scalar and a bivector part:
 
 $$
-\partial F=\partial\cdot F+\partial\wedge F,
+\boxed{\;\partial F=\partial\cdot F+\partial\wedge F\;},
 $$
 
 where $\partial\cdot F$ is the divergence of the field, a scalar-valued function, and $\partial\wedge F$ is its curl, a bivector-valued function.
@@ -64,7 +64,7 @@ where the underlines indicate the factor to which the derivative is applied and 
 **Theorem (the fundamental theorem of geometric calculus).** Let $M$ be a compact region with smooth boundary and let $F$ be a smooth multivector-valued function on a neighbourhood of $M$. Then
 
 $$
-\int_M \underline{\partial} F\,dV=\int_{\partial M}dS\,F,
+\boxed{\;\int_M \underline{\partial} F\,dV=\int_{\partial M}dS\,F\;},
 $$
 
 where $dV$ is the volume element of the region and $dS$ is the directed boundary element, a vector $(n)\,|dS|$ with $n$ the outward unit normal and $|dS|$ the scalar element of area.
@@ -108,7 +108,7 @@ which is the classical statement multiplied by $e$.
 **Theorem.** The vector derivative squares to the Laplacian:
 
 $$
-\partial^2=\Delta=\sum_i\frac{\partial^2}{\partial x_i^2},
+\boxed{\;\partial^2=\Delta=\sum_i\frac{\partial^2}{\partial x_i^2}\;},
 $$
 
 in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.

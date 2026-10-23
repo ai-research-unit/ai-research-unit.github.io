@@ -103,7 +103,7 @@ $$
 the **connecting homomorphism**, natural in maps of short exact sequences, and the resulting triangle
 
 $$
-H_n(A_*) \xrightarrow{\ i_*\ } H_n(B_*) \xrightarrow{\ j_*\ } H_n(C_*) \xrightarrow{\ \Delta\ } H_{n-1}(A_*) \xrightarrow{\ i_*\ } H_{n-1}(B_*) \to \cdots
+\boxed{\;H_n(A_*) \xrightarrow{\ i_*\ } H_n(B_*) \xrightarrow{\ j_*\ } H_n(C_*) \xrightarrow{\ \Delta\ } H_{n-1}(A_*) \xrightarrow{\ i_*\ } H_{n-1}(B_*) \to \cdots\;}
 $$
 
 is exact. The map $\Delta$ satisfies $\Delta j_* = 0$ and $i_* \Delta = 0$, and it is the composite of the inverse of $j$ on a lift, an application of $\partial$, and the inverse of $i$ — the **snake** of the diagram.
@@ -129,7 +129,7 @@ $$
 **Theorem.** The coboundary is the adjoint of the boundary under the evaluation pairing,
 
 $$
-\langle \delta \alpha, c \rangle = \langle \alpha, \partial c \rangle ,
+\boxed{\;\langle \delta \alpha, c \rangle = \langle \alpha, \partial c \rangle\;} ,
 $$
 
 so that $\delta = \partial^*$; consequently $\delta^2 = 0$ because $\partial^2 = 0$, and the pairing descends to cohomology and homology,
@@ -149,7 +149,7 @@ The theorem is the operator-layer form of the universal coefficient theorem: it 
 **Theorem.** The boundary operator is a graded derivation for the cap product of *Cup and Cap Products*: for a cochain $\varphi$ of degree $k$ and a chain $c$ of degree $n$,
 
 $$
-\partial(c \frown \varphi) = (-1)^{k}\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr),
+\boxed{\;\partial(c \frown \varphi) = (-1)^{k}\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr)\;},
 $$
 
 so that on classes the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$, with the boundary measuring the failure of the two terms on the right to cancel. The dual statement, the Leibniz rule $\delta(\varphi \smile \psi) = (\delta\varphi)\smile\psi + (-1)^{|\varphi|}\varphi\smile(\delta\psi)$, makes the coboundary a graded derivation for the cup product; its operator form is the subject of *The Cup Product as an Operator*.

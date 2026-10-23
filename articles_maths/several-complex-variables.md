@@ -145,8 +145,7 @@ where $\Omega^{0,m}$ is the sheaf of $(0,q)$-forms and $\bar\partial$ is the Cau
 
 **Theorem (Dolbeault).** For a domain $D \subseteq \mathbb{C}^n$ and $n, m \geq 0$ there is a natural isomorphism
 
-$$
-H^{n,m}_{\bar\partial}(D) \cong H^q(D, \Omega^n),
+$$ \boxed{\;H^{n,m}_{\bar\partial}(D) \cong H^q(D, \Omega^n)\;},
 $$
 
 where the left-hand side is the cohomology of the Dolbeault complex of $(n,m)$-forms and the right-hand side is the sheaf cohomology of the holomorphic $n$-forms.
@@ -187,8 +186,7 @@ of the exponential sheaf sequence $0 \to \mathbb{Z} \to \mathcal{O} \xrightarrow
 
 **Theorem (Cartan's Theorem B).** Let $X$ be a Stein manifold and let $\mathcal{F}$ be a coherent analytic sheaf on $X$. Then
 
-$$
-H^q(X, \mathcal{F}) = 0 \qquad \text{for all } m \geq 1 .
+$$ \boxed{\;H^q(X, \mathcal{F}) = 0 \qquad \text{for all } m \geq 1 \;}.
 $$
 
 **Proof.** The theorems are Cartan's, proved from Oka's coherence theorem and the solution of the $\bar\partial$-equation; the sheaf-theoretic proof is in *Sheaf Cohomology*.
@@ -243,8 +241,7 @@ $$
 
 **Theorem (Weierstrass preparation and division).** Let $f \in \mathcal{O}_{\mathbb{C}^n,0}$ be regular of order $k$ in $Q_n$. Then $f$ factors uniquely as
 
-$$
-f = u \cdot w ,
+$$ \boxed{\;f = u \cdot w \;},
 $$
 
 where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $Q_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $m$ and $r$ with $g = mf + r$, where $r$ is a polynomial in $Q_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.

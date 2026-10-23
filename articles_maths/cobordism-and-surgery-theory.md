@@ -46,7 +46,7 @@ and all of its torsion is of order $2$ (Wall). In low dimensions $\Omega_1^{SO} 
 **Theorem (Pontryagin–Thom; the identification with homotopy).** For each structure $\mathcal{S}$ with a classifying space $B$ and a Thom spectrum $MB$, there is a natural isomorphism
 
 $$
-\Omega_n^{\mathcal{S}} \cong \pi_n(MB),
+\boxed{\;\Omega_n^{\mathcal{S}} \cong \pi_n(MB)\;},
 $$
 
 so that the cobordism groups are the homotopy groups of the Thom spectra: $\Omega_*^{O} = \pi_*(MO)$, $\Omega_*^{SO} = \pi_*(MSO)$, $\Omega_*^{U} = \pi_*(MU)$, $\Omega_*^{Spin} = \pi_*(MSpin)$. The complex cobordism ring is the polynomial algebra $\Omega_*^{U} = \mathbb{Z}[x_1,x_2,\ldots]$ with $\deg x_i = 2i$ (Milnor, Novikov), and the ring $\pi_*(MU)$ carries the formal group law of Quillen; the spin cobordism groups are computed from $\Omega_*^{Spin}\otimes\mathbb{Z}[\tfrac12]$ by the forgetful maps and are detected by the Stiefel–Whitney numbers together with the $\alpha$-invariant in dimensions $\equiv1,2\pmod 8$.
@@ -82,7 +82,7 @@ from the group of normal maps of degree one over $X$ to the **Wall $L$-group**, 
 **Theorem (the surgery exact sequence).** Let $X$ be a closed $n$-manifold with fundamental group $\pi$ and $n\geq5$. The **structure set** $\mathcal{S}(X)$ of the homotopy equivalences $M\to X$ from closed $n$-manifolds to $X$ modulo $h$-cobordism fits into the exact sequence
 
 $$
-L_{n+1}(\mathbb{Z}[\pi]) \longrightarrow \mathcal{S}(X) \longrightarrow [X,G/O] \longrightarrow L_n(\mathbb{Z}[\pi]) ,
+\boxed{\;L_{n+1}(\mathbb{Z}[\pi]) \longrightarrow \mathcal{S}(X) \longrightarrow [X,G/O] \longrightarrow L_n(\mathbb{Z}[\pi])\;} ,
 $$
 
 in which the second map assigns to a homotopy equivalence its normal invariant and the last map is the surgery obstruction. Consequently the classification of the closed manifolds homotopy equivalent to $X$ is reduced to the computation of the $L$-groups and of the set of normal invariants, and the structure set is the measure of the failure of the Poincaré duality space $X$ to determine its manifold representatives.
@@ -116,7 +116,7 @@ where $bP_{n+1}$ is the subgroup of the homotopy spheres bounding a parallelizab
 **Theorem (Kervaire–Milnor; the order of $bP_{4k}$).** For $k\geq2$ the group $bP_{4k}$ is cyclic of order
 
 $$
-|bP_{4k}| = 2^{2k-2}(2^{2k-1}-1)\,\text{numerator}\!\left(\frac{4B_k}{k}\right) ,
+\boxed{\;|bP_{4k}| = 2^{2k-2}(2^{2k-1}-1)\,\text{numerator}\!\left(\frac{4B_k}{k}\right)\;} ,
 $$
 
 where $B_k$ denotes the $k$-th Bernoulli number in the indexing $B_1=\tfrac16$, $B_2=\tfrac1{30}$, $B_3=\tfrac1{42},\ldots$ The first values are

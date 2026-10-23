@@ -69,7 +69,7 @@ $$
 with $\psi$ the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}'$ its axis rotated by the rotor, the exponent is
 
 $$
-\tilde\Psi = \alpha + \theta_{\mathrm b}\,\vec u_{\mathrm b}' ,
+\boxed{\; \tilde\Psi = \alpha + \theta_{\mathrm b}\,\vec u_{\mathrm b}' \;},
 $$
 
 a real quaternion with scalar part $\alpha$ and pure quaternion part $\theta_{\mathrm b}\vec u_{\mathrm b}'$. This is the arrangement in which the pairing is stated: its $\tilde\Psi$ has a scalar part and a pure part, and the two travel together.
@@ -133,7 +133,7 @@ $$
 with $\theta_{\mathrm b}=\psi/2$ and $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. It is not central and not real in general: its scalar part is $\exp(i\alpha)\cosh\theta_{\mathrm b}$ and its vector part $\exp(i\alpha)\,i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}'$. It is nevertheless the element divided on the left by the modulus,
 
 $$
-\exp(i\tilde\Psi)=\tilde q^{-1}\tilde Q ,
+\boxed{\; \exp(i\tilde\Psi)=\tilde q^{-1}\tilde Q \;},
 $$
 
 because $\tilde q=r\tilde u_{\mathrm r}$ is invertible. The modulus carries the scale, $\langle\tilde q\rangle_{\natural}=r^{2}$, and the second factor the phase and the rotor-conjugated boost, $\langle\exp(i\tilde\Psi)\rangle_{\natural}=\exp(2i\alpha)$; the product is the norm of the element.
@@ -185,7 +185,7 @@ The Hamilton domain and the quaternion construction domain are not nested either
 The factorisation and the construction are therefore different statements. The factorisation is the regrouping of the four factors and exists on the whole complement of the null cone; the construction is the formula $\tan\tilde\Psi=\tilde q_r^{-1}\tilde q_i$ and needs the word to exist and $\tilde q_r$ invertible. On $i\vec e_x+i\vec e_y$ the factorisation is explicit,
 
 $$
-i\vec e_x+i\vec e_y = \left(\vec e_x+\vec e_y\right)\,\exp\!\left(i\frac{\pi}{2}\right),
+\boxed{\; i\vec e_x+i\vec e_y = \left(\vec e_x+\vec e_y\right)\,\exp\!\left(i\frac{\pi}{2}\right) \;},
 $$
 
 with modulus $\vec e_x+\vec e_y$, a real quaternion, and exponent $\pi/2$, real, while the construction has no $\tilde q_r$ to invert.

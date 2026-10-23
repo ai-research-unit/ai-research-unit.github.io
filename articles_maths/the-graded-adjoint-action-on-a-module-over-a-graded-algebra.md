@@ -38,7 +38,7 @@ for homogeneous $x,f$ and every $m$, extended bilinearly.
 **Theorem.** Let $\mathrm{G}$ be a graded Lie algebra acting on the graded module $M$. Then the adjoint action is a graded action of $\mathrm{G}$ on $M^{\vee}$: $\rho^{\vee}$ is linear, homogeneous of degree zero, and
 
 $$
-\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{|x||y|}\rho^{\vee}(y)\rho^{\vee}(x)
+\boxed{\;\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{|x||y|}\rho^{\vee}(y)\rho^{\vee}(x)\;}
 $$
 
 for homogeneous $x,y$; equivalently the sign $(-1)^{|x||f|}$ is exactly the sign that makes the transpose respect the graded bracket.
@@ -58,7 +58,7 @@ the two agree, using $(-1)^{(|x|+|y|)|f|}=(-1)^{|x||f|+|y||f|}$ and the bilinear
 
 **Corollary (the sign rule).** The adjoint action satisfies the **sign rule** : for homogeneous $x,y$,
 $$
-\rho^{\vee}(x)(\rho^{\vee}(y)f)=(-1)^{|x||y|}\rho^{\vee}(y)(\rho^{\vee}(x)f)+\rho^{\vee}([x,y])f,
+\boxed{\;\rho^{\vee}(x)(\rho^{\vee}(y)f)=(-1)^{|x||y|}\rho^{\vee}(y)(\rho^{\vee}(x)f)+\rho^{\vee}([x,y])f\;},
 $$
 so that the adjoint action is graded; without the sign $(-1)^{|x||f|}$ in its definition the transpose would satisfy the ungraded commutator and would not be a graded action.
 
@@ -81,7 +81,7 @@ so that the adjoint action is graded; without the sign $(-1)^{|x||f|}$ in its de
 Let $\mathrm{G}$ be a Lie algebra with the trivial grading, $M=\mathrm{G}$ with the adjoint action $\rho=\operatorname{ad}$. The dual $M^{\vee}=\mathrm{G}^{*}$ with the adjoint action is the **coadjoint action**
 
 $$
-\langle\operatorname{ad}^{\vee}(x)f,y\rangle=-\langle f,[x,y]\rangle,
+\boxed{\;\langle\operatorname{ad}^{\vee}(x)f,y\rangle=-\langle f,[x,y]\rangle\;},
 $$
 
 the sign in the general definition becoming the single minus sign of the even case; the coadjoint action is a graded action (the grading is trivial, so the sign rule is void) and its orbits are the coadjoint orbits, named and studied in a later Part.

@@ -46,7 +46,7 @@ and the adjoint of the unsigned sandwich is $\Sigma_{a,b}^{*} = R_bL_a$.
 **Theorem (the explicit adjoint).** For all $a,b\in\mathrm{G}$,
 
 $$
-\Sigma^{\alpha\,*}_{a,b} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]} ,
+\boxed{\;\Sigma^{\alpha\,*}_{a,b} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} - \alpha R_{[a,b]}\;} ,
 $$
 
 and since $\alpha R_{[a,b]} = R_{[\alpha(a),\alpha(b)]}\alpha$, the adjoint is a signed sandwich of the $\alpha$-transformed pair, corrected by the right multiplication of the commutator.
@@ -76,7 +76,7 @@ the last equality using that the pair is brought to itself by the grading when t
 **Theorem.** The signed sandwich is self-adjoint if and only if the pair satisfies the commutation condition and the invariance condition
 
 $$
-[a,b] = 0 \quad\text{and}\quad \Sigma^{\alpha}_{\alpha(a),\alpha(b)} = \Sigma^{\alpha}_{a,b} ,
+\boxed{\;[a,b] = 0 \quad\text{and}\quad \Sigma^{\alpha}_{\alpha(a),\alpha(b)} = \Sigma^{\alpha}_{a,b}\;} ,
 $$
 
 the second being automatic for homogeneous carrying elements; consequently the signed sandwich is self-adjoint for every pair of homogeneous commuting elements.
@@ -100,7 +100,7 @@ an equation which on the odd part of the algebra becomes the vanishing of the se
 **Theorem (the unitarity condition).** The signed sandwich is **unitary** for $H$ — that is, $\Sigma^{\alpha\,*}_{a,b}\Sigma^{\alpha}_{a,b} = \mathrm{id}$ — if and only if it is self-adjoint and its square is the identity,
 
 $$
-\Sigma^{\alpha\,*}_{a,b}\Sigma^{\alpha}_{a,b} = \mathrm{id} \iff [a,b] = 0 \ \text{and}\ \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \mathrm{id} ,
+\boxed{\;\Sigma^{\alpha\,*}_{a,b}\Sigma^{\alpha}_{a,b} = \mathrm{id} \iff [a,b] = 0 \ \text{and}\ \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \mathrm{id}\;} ,
 $$
 
 so that the unitary signed sandwiches are exactly the involutive signed sandwiches with a commuting carrying pair; the second condition is the centrality of the correction in the sense of the square of *The Signed Sandwich on a Lie Algebra*.

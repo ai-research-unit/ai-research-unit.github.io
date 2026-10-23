@@ -79,7 +79,7 @@ $$
 **Theorem (Gagliardo–Nirenberg–Sobolev).** Let $1\le p<n$ and $k\ge1$ with $kp<n$. Then there is a constant $C$ with
 
 $$
-\|u\|_{L^{n}}^*(\mathbb{R}^n) \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n), \qquad \frac1{p^*} = \frac1p - \frac{k}{n},
+\boxed{\;\|u\|_{L^{n}}^*(\mathbb{R}^n) \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n), \qquad \frac1{p^*} = \frac1p - \frac{k}{n}\;},
 $$
 
 for every $u \in C_c^\infty(\mathbb{R}^n)$; consequently $W^{k,n}(\mathbb{R}^n) \hookrightarrow L^{n^*}(\mathbb{R}^n)$, the embedding being continuous. The exponent $p^*$ is the **Sobolev conjugate** of $p$ at order $k$, and it is the largest $q$ for which such an estimate can hold.
@@ -130,7 +130,7 @@ and for $u \in W^{1,n}(\Omega)$ with $\int_\Omega u = 0$ the same inequality hol
 **Theorem (Lax–Milgram).** Let $\mathfrak{a}$ be a bounded coercive bilinear form on the Hilbert space $H$ and let $F \in H^*$. Then there is a unique $u \in H$ with
 
 $$
-\mathfrak{a}(u,v) = F(v) \qquad \text{for every } v \in H ,
+\boxed{\;\mathfrak{a}(u,v) = F(v) \qquad \text{for every } v \in H\;} ,
 $$
 
 and $\|u\| \le m^{-1}\|F\|_{H^*}$.
@@ -162,7 +162,7 @@ $$
 **Theorem (existence and uniqueness).** Under the ellipticity condition, and with $c\ge0$ bounded, the Dirichlet problem has a unique weak solution $u \in H^1_0(\Omega)$ for every $f \in L^2(\Omega)$, and
 
 $$
-\|u\|_{H^1_0} \le \frac{1+C_P^2}{\lambda}\|f\|_{L^2},
+\boxed{\;\|u\|_{H^1_0} \le \frac{1+C_P^2}{\lambda}\|f\|_{L^2}\;},
 $$
 
 where $C_P$ is the Poincaré constant of $\Omega$.

@@ -150,7 +150,7 @@ $$
 **Theorem (Berezinian change of variables).** Let $N = (N_{ij})$ be an invertible $n \times n$ matrix over $R$ and let $\theta_i = \sum_j N_{ij}\eta_j$ be a linear change of odd variables. Then for every $f \in \Lambda(\eta_1, \ldots, \eta_n)$,
 
 $$
-\int f(\theta)\, d\theta = \det(N)^{-1} \int f(N\eta)\, d\eta,
+\boxed{\;\int f(\theta)\, d\theta = \det(N)^{-1} \int f(N\eta)\, d\eta\;},
 $$
 
 or, in the equivalent form $d\theta = \det(N)^{-1} d\eta$. The Jacobian factor is the **inverse** of the determinant of the change of variables.
@@ -184,7 +184,7 @@ $$
 is the Pfaffian:
 
 $$
-\int \exp\left(\frac{1}{2}\sum_{i,j} A_{ij}\theta_i\theta_j\right) d\theta = \operatorname{Pf}(A).
+\boxed{\;\int \exp\left(\frac{1}{2}\sum_{i,j} A_{ij}\theta_i\theta_j\right) d\theta = \operatorname{Pf}(A)\;}.
 $$
 
 **Proof.** Expanding the exponential, only the term of degree $m$ in the quadratic form can contribute to the top coefficient. That term is
@@ -208,7 +208,7 @@ $$
 Equivalently, with two independent sets of odd variables $\theta$ and $\eta$,
 
 $$
-\det(A) = \int \exp\left(\tfrac{1}{2}\theta^{T}A\theta + \tfrac{1}{2}\eta^{T}A\eta\right) d\theta\, d\eta.
+\boxed{\;\det(A) = \int \exp\left(\tfrac{1}{2}\theta^{T}A\theta + \tfrac{1}{2}\eta^{T}A\eta\right) d\theta\, d\eta\;}.
 $$
 
 This is the algebraic form of the statement that a determinant is a square of a Gaussian integral over odd variables, in contrast with the bosonic Gaussian, whose value is the inverse square root of the determinant.

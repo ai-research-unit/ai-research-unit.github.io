@@ -106,7 +106,9 @@ given by $m\otimes\tilde Q\mapsto m\tilde Q$ and $\tilde Q\otimes m\mapsto \tild
 **Proposition.** There are ring isomorphisms
 
 $$
-\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B},\qquad \operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}},
+\boxed{\;
+\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B},\qquad \operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}
+\;},
 $$
 
 the first given by the left multiplications $\tilde Q\mapsto L_{\tilde Q}$ and the second by the right multiplications $\tilde Q\mapsto R_{\tilde Q}$.
@@ -178,13 +180,17 @@ The classification of modules over $\mathbb{B}$ is complete and has no exception
 **Theorem.** Let $M$ be a left $\mathbb{B}$-module. Then $M$ is a direct sum of copies of $S$,
 
 $$
-M\cong S^{\oplus k},
+\boxed{\;
+M\cong S^{\oplus k}
+\;},
 $$
 
 with $k$ an integer when $M$ is finitely generated. Every $\mathbb{B}$-module is projective. The left regular module is free of rank one over $\mathbb{B}$ and decomposes as
 
 $$
-{}_\mathbb{B}\mathbb{B}\cong S\oplus S,
+\boxed{\;
+{}_\mathbb{B}\mathbb{B}\cong S\oplus S
+\;},
 $$
 
 the two summands being the two columns $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$.

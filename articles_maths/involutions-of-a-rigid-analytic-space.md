@@ -39,11 +39,11 @@ with the structure sheaf obtained by the ideal generated locally by the elements
 
 **Theorem.** Let $A=T_n=K\langle x_1,\dots,x_n\rangle$ with the involution $\sigma(x_i)=-x_i$. Then
 $$
-A^\sigma=K\langle\text{monomials of even total degree}\rangle,
+\boxed{\;A^\sigma=K\langle\text{monomials of even total degree}\rangle\;},
 $$
 which is a $K$-affinoid algebra of the indicated generators; for $n=1$ it is $K\langle x^2\rangle\cong K\langle y\rangle$. The quotient map
 $$
-\mathrm{Sp}(A)\to\mathrm{Sp}(A^\sigma)
+\boxed{\;\mathrm{Sp}(A)\to\mathrm{Sp}(A^\sigma)\;}
 $$
 is finite of degree two and is ramified exactly at the origin $\{x_1=\dots=x_n=0\}$.
 

@@ -15,7 +15,7 @@ The Sturm–Liouville expression, the weighted space and the classical eigenvalu
 **Theorem (the adjoint of the minimal operator).** The minimal operator is symmetric, $T_0\subseteq T_0^{*}$, and its adjoint is the maximal operator:
 
 $$
-T_0^{*} = T_1 .
+\boxed{\;T_0^{*} = T_1\;} .
 $$
 
 *Proof.* The symmetry of $T_0$ is the vanishing of the bracket on compactly supported functions, which have both boundary terms zero. For the adjoint, $v\in\mathrm{dom}\,T_0^{*}$ means that the functional $y\mapsto\langle T_0y,v\rangle$ is bounded on $C_c^\infty$; integrating by parts twice writes the pairing as $\langle y,\ell v\rangle$ plus boundary terms, and the boundedness for all $y$ forces $\ell v\in L^2_w$ and the boundary terms to vanish; hence $v\in\mathrm{dom}\,T_1$, and the two domains agree by the same computation in reverse.
@@ -23,7 +23,7 @@ $$
 **Theorem (self-adjointness and the bracket).** An operator $T$ with $T_0\subseteq T\subseteq T_1$ is self-adjoint if and only if its domain is the set of $y\in\mathrm{dom}\,T_1$ for which the boundary form vanishes against the domain,
 
 $$
-\langle y,v\rangle_\partial = \Bigl[p\,(y\bar v'-y'\bar v)\Bigr]_a^b = 0 \qquad \text{for all } y,v\in\mathrm{dom}\,T .
+\boxed{\;\langle y,v\rangle_\partial = \Bigl[p\,(y\bar v'-y'\bar v)\Bigr]_a^b = 0 \qquad \text{for all } y,v\in\mathrm{dom}\,T\;} .
 $$
 
 The conditions defining such domains are the **self-adjoint boundary conditions**, and they are exactly the Lagrangian subspaces of the boundary form of *The Lagrange Identity and the Self-Adjoint System*.
@@ -51,7 +51,7 @@ $$
 **Theorem (compact resolvent and the eigenfunction expansion).** Let the problem be regular and let $T$ be a self-adjoint extension. Then $T$ has a compact resolvent, its spectrum is discrete, real and simple, the eigenvalues $\lambda_1<\lambda_2<\cdots$ tend to infinity, and the eigenfunctions $\varphi_n$ are complete in $L^2_w(a,b)$:
 
 $$
-f=\sum_{n\ge1}\bigl(f,\varphi_n\bigr)_w\varphi_n , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\varphi_n)_w\bigr|^2 .
+\boxed{\;f=\sum_{n\ge1}\bigl(f,\varphi_n\bigr)_w\varphi_n , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\varphi_n)_w\bigr|^2\;} .
 $$
 
 *Proof.* The resolvent of a regular problem is the Green operator, which is compact on $L^2_w$ because it maps into a space of functions with an $L^2$ second derivative, compactly embedded by Rellich–Kondrachov; the compact self-adjoint spectral theorem of *Banach and Hilbert Spaces* then gives the orthonormal basis of eigenvectors, and the reality and the simplicity are those of the self-adjoint problem. The expansion is the expansion in that basis.

@@ -19,13 +19,13 @@ The article treats the sandwich and its bound, the multiplication constant of th
 **Theorem (the bound and the multiplication constant).** For a submultiplicative norm with $\lVert1\rVert=1$
 
 $$
-\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert ,
+\boxed{\;\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert\;} ,
 $$
 
 and in general the norm of the bilinear map $T$ is the **multiplication constant** of the algebra,
 
 $$
-\lVert T\rVert = \sup\Bigl\{\frac{\lVert xzy\rVert}{\lVert x\rVert\lVert y\rVert\lVert z\rVert} : x,y,z\neq0\Bigr\} = \sup\Bigl\{\frac{\lVert xy\rVert}{\lVert x\rVert\lVert y\rVert} : x,y\neq0\Bigr\} ,
+\boxed{\;\lVert T\rVert = \sup\Bigl\{\frac{\lVert xzy\rVert}{\lVert x\rVert\lVert y\rVert\lVert z\rVert} : x,y,z\neq0\Bigr\} = \sup\Bigl\{\frac{\lVert xy\rVert}{\lVert x\rVert\lVert y\rVert} : x,y\neq0\Bigr\}\;} ,
 $$
 
 so that $\lVert T\rVert\le1$ exactly when the norm is submultiplicative, while $1<\lVert T\rVert\le2^{n/2}$ for the Euclidean norm of the definite case, the value $\sqrt2$ being attained at the idempotent $\tfrac12(1+e_{1})$ and $2^{n/2}$ being the Cauchy–Schwarz estimate.

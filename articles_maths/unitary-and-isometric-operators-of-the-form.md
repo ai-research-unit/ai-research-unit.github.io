@@ -33,7 +33,7 @@ The name is justified by the two theorems of the next subsection: the isometries
 **Theorem (the isometry criterion).** Let $h$ be nonsingular. Then for $T \in B(A)$ the following are equivalent:
 
 $$
-\text{(i) } h(Tx,Ty) = h(x,y) \quad \text{for all } x,y ; \qquad \text{(ii) } T^{\dagger}T = 1 .
+\boxed{\;\text{(i) } h(Tx,Ty) = h(x,y) \quad \text{for all } x,y ; \qquad \text{(ii) } T^{\dagger}T = 1\;} .
 $$
 
 Every isometry is injective, and $T$ is unitary exactly when it is an invertible isometry, equivalently exactly when $T^{\dagger} = T^{-1}$.
@@ -51,7 +51,7 @@ Every isometry is injective, and $T$ is unitary exactly when it is an invertible
 **Theorem (inversion on the unitary group).** Let $h$ be nonsingular. Then the restriction to $\mathrm{U}(A,h)$ of the adjoint operation is inversion,
 
 $$
-T^{\dagger} = T^{-1} \qquad \text{for } T \in \mathrm{U}(A,h) ,
+\boxed{\;T^{\dagger} = T^{-1} \qquad \text{for } T \in \mathrm{U}(A,h)\;} ,
 $$
 
 and it is an involutive anti-automorphism of the group: $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, $(T^{\dagger})^{\dagger} = T$, $1^{\dagger} = 1$. So the group $\mathrm{U}(A,h)$ is stable under the adjoint, and the adjoint operation is the inversion of the group together with the $\varsigma$-semilinear action on the scalars.
@@ -83,7 +83,7 @@ and it is an involutive anti-automorphism of the group: $(ST)^{\dagger} = T^{\da
 **Theorem (the indefinite isometry group is the $J$-unitary group).** Let $h$ be indefinite with fundamental decomposition of symmetry $J$ and companion form $\langle\cdot,\cdot\rangle$, both nonsingular. Then
 
 $$
-T \in \mathrm{U}(A,h) \iff T^{*}JT = J \iff T \in \mathrm{U}(J) ,
+\boxed{\;T \in \mathrm{U}(A,h) \iff T^{*}JT = J \iff T \in \mathrm{U}(J)\;} ,
 $$
 
 where $T^{*}$ is the companion adjoint and $\mathrm{U}(J)$ is the group of the companion operators preserving $J$. On a finite-dimensional space the conditions reduce to $h(Tx,Ty) = h(x,y)$ for all $x,y$.

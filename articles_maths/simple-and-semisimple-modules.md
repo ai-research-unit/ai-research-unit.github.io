@@ -28,7 +28,7 @@ The endomorphism ring of a simple module is as small as a ring can be.
 **Theorem (Schur).** Let $S$ and $T$ be simple left $A$-modules. Then every $A$-linear map $f: S \to T$ is zero or an isomorphism, and
 
 $$
-\operatorname{End}_A(S)=D \text{ is a division ring}, \qquad \operatorname{Aut}_A(S)=D^{\times}.
+\boxed{\;\operatorname{End}_A(S)=D \text{ is a division ring}, \qquad \operatorname{Aut}_A(S)=D^{\times}\;}.
 $$
 
 The lemma is proved in *Automorphisms of Modules over an Algebra*; it is recalled here because it governs the whole theory of semisimple modules. The division ring $D$ may be strictly larger than the base field, and its size is a genuine invariant of $S$: for $A=M_n(F)$ the simple module has $D=F$, while for a division algebra $D$ over $F$ the regular module is simple with endomorphism ring $D^{\mathrm{opp}}$, so a noncommutative division algebra is itself the division ring attached to a simple module. Over an algebraically closed field every finite-dimensional simple module over a finite-dimensional algebra has $D=F$, which is why the representation theory of such algebras has no further arithmetic content.
@@ -71,7 +71,7 @@ Two simple modules $S$ and $T$ are **isomorphic** or not, and by Schur's lemma t
 **Theorem.** Let $M$ be a semisimple left $A$-module with simple constituents $S_1,\dots,S_r$ pairwise non-isomorphic. Then
 
 $$
-M \cong \bigoplus_{i=1}^{r} M_i, \qquad M_i \cong S_i^{\oplus n_i},
+\boxed{\;M \cong \bigoplus_{i=1}^{r} M_i, \qquad M_i \cong S_i^{\oplus n_i}\;},
 $$
 
 where $n_i$ is a cardinal, and the **isotypic components** $M_i$ are the sums of all submodules isomorphic to $S_i$. The decomposition is unique: the submodules isomorphic to $S_i$ are exactly those of $M_i$, and $M_i$ is the image of the projection of $M$ onto the $i$-th block in any such decomposition.
@@ -109,7 +109,7 @@ Thus over a semisimple algebra the module theory is completely determined by the
 **Theorem (Wedderburn–Artin).** Let $A$ be a unital ring. Then $A$ is semisimple if and only if
 
 $$
-A \cong \prod_{i=1}^{r} M_{n_i}(D_i)
+\boxed{\;A \cong \prod_{i=1}^{r} M_{n_i}(D_i)\;}
 $$
 
 for division rings $D_1,\dots,D_r$ and positive integers $n_1,\dots,n_r$. The number $r$, the integers $n_i$ and the division rings $D_i$ are determined by $A$ up to permutation of the factors.

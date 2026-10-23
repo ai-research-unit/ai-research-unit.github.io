@@ -21,13 +21,13 @@ The metric provides the musical isomorphisms $\flat : TM \to T^*M$, $X \mapsto g
 **Theorem (fundamental theorem of Riemannian geometry).** On a Riemannian manifold $(M,g)$ there is exactly one connection $\nabla$ on the tangent bundle that is metric-compatible and torsion-free, the **Levi-Civita connection**. It is determined by the Koszul formula
 
 $$
-2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y]),
+\boxed{\;2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y])\;},
 $$
 
 and in a coordinate chart its components are the Christoffel symbols
 
 $$
-\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial/\partial x^j g_{kl} + \partial/\partial x^k g_{jl} - \partial/\partial x^l g_{jk}\bigr).
+\boxed{\;\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial/\partial x^j g_{kl} + \partial/\partial x^k g_{jl} - \partial/\partial x^l g_{jk}\bigr)\;}.
 $$
 
 *Proof.* This is the theorem of *The Covariant Derivative* in this category, where the existence, the uniqueness and the Koszul formula are proved; the coordinate formula is the same computation written in a chart. The article cites the theorem and uses it.
@@ -49,7 +49,7 @@ The triple $(M, J, g)$ is a **Hermitian manifold**; the almost complex structure
 **Proposition.** The Hermitian condition is equivalent to the skew-adjointness of $J$ with respect to $g$:
 
 $$
-g(JX, Y) = -g(X, JY), \qquad \text{that is,} \qquad J^* = -J \ \text{for } g .
+\boxed{\;g(JX, Y) = -g(X, JY), \qquad \text{that is,} \qquad J^* = -J \ \text{for } g\;} .
 $$
 
 In particular $g(JX,X) = 0$ for every $X$, so no tangent vector is $g$-orthogonal to nothing; $J$ is a $g$-antisymmetric endomorphism, and $g$ makes the complexified tangent bundle $T_{\mathbb{C}}M$ a Hermitian space with respect to the $\mathbb{C}$-bilinear extension of $g$ and the conjugation.

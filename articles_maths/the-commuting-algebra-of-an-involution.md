@@ -18,7 +18,7 @@ $$
 **Proposition (the commuting condition is centrality of the defect).** For $g\in G$,
 
 $$
-c_g\alpha=\alpha c_g \quad\Longleftrightarrow\quad g\,\alpha(g)^{-1}\in Z(G) \quad\Longleftrightarrow\quad \alpha(g)\,g^{-1}\in Z(G).
+\boxed{\;c_g\alpha=\alpha c_g \quad\Longleftrightarrow\quad g\,\alpha(g)^{-1}\in Z(G) \quad\Longleftrightarrow\quad \alpha(g)\,g^{-1}\in Z(G)\;}.
 $$
 
 **Proof.** Writing the composition out, $c_g\alpha(x)=g\alpha(x)g^{-1}$ and $\alpha c_g(x)=\alpha(gxg^{-1})=\alpha(g)\alpha(x)\alpha(g)^{-1}$ for all $x$; the two are equal for all $x$ exactly when $g^{-1}\alpha(g)$ centralises $\alpha(G)=G$, that is $g^{-1}\alpha(g)\in Z(G)$. The second form is the inverse of the first.
@@ -30,7 +30,7 @@ $$
 **Proposition (the form of $\alpha$ on the commuting subgroup).** The restriction $\alpha|_{C_G(\alpha)}$ multiplies by a central element: the map
 
 $$
-z : C_G(\alpha)\longrightarrow Z(G), \qquad z(g)=\alpha(g)\,g^{-1},
+\boxed{\;z : C_G(\alpha)\longrightarrow Z(G), \qquad z(g)=\alpha(g)\,g^{-1}\;},
 $$
 
 is a homomorphism whose kernel is the fixed subgroup $G^{\alpha}$, and $\alpha(g)=z(g)g$ for every $g\in C_G(\alpha)$.
@@ -40,8 +40,8 @@ is a homomorphism whose kernel is the fixed subgroup $G^{\alpha}$, and $\alpha(g
 **Corollary (the exact sequence).** The homomorphism $z$ realises the commuting subgroup as an extension of the fixed subgroup by a subgroup of the centre, and the image of $G\to\operatorname{Inn}(G)$ on $C_G(\alpha)$ is exactly the centraliser $C_{\operatorname{Inn}(G)}(\alpha)$ of $\alpha$ in the inner automorphism group. Consequently
 
 $$
-C_G(\alpha)/Z(G)\ \cong\ C_{\operatorname{Inn}(G)}(\alpha),
-\qquad\text{and}\qquad C_G(\alpha)/G^{\alpha}\ \cong\ \operatorname{im}z\ \leq Z(G).
+\boxed{\;C_G(\alpha)/Z(G)\ \cong\ C_{\operatorname{Inn}(G)}(\alpha),
+\qquad\text{and}\qquad C_G(\alpha)/G^{\alpha}\ \cong\ \operatorname{im}z\ \leq Z(G)\;}.
 $$
 
 **Proof.** The first isomorphism is that the kernel of $G\to\operatorname{Inn}(G)$ is $Z(G)$ and the image on $C_G(\alpha)$ is the set of inner automorphisms commuting with $\alpha$. The second is the first isomorphism theorem applied to $z$.

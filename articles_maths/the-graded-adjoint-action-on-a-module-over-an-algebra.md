@@ -39,7 +39,7 @@ $$
 **Theorem.** Both adjoints exist and are unique, they are homogeneous of the same degree, $\lvert T^{*}\rvert=\lvert T^{\dagger}\rvert=\lvert T\rvert$, and for homogeneous $S,T$
 
 $$
-(ST)^{*}=(-1)^{\lvert S\rvert\lvert T\rvert}\,T^{*}S^{*}, \qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id} .
+\boxed{\;(ST)^{*}=(-1)^{\lvert S\rvert\lvert T\rvert}\,T^{*}S^{*}, \qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id}\;} .
 $$
 
 The graded adjoint is therefore an anti-automorphism of order two **up to the Koszul sign**, and the sign-free adjoint one of order two without a sign: the two rules differ exactly on a pair of odd operators and agree on everything else, which is the graded involution of the operator algebra.
@@ -63,7 +63,7 @@ it is an operator of order two, it is self-adjoint for every graded pairing, and
 **Theorem.** The graded adjoint and the sign-free adjoint differ by the grade involution alone,
 
 $$
-T^{*}=\alpha_M^{\lvert T\rvert}\,T^{\dagger},
+\boxed{\;T^{*}=\alpha_M^{\lvert T\rvert}\,T^{\dagger}\;},
 $$
 
 where $\alpha_M^{\lvert T\rvert}$ is the identity on the even operators and the grade involution applied to the values on the odd ones; consequently the two adjoints agree exactly on the even operators. The pairing twisted by the grade involution,
@@ -125,7 +125,7 @@ the graded commutator; for homogeneous $x$ it is a linear operator on $A$ and, t
 **Theorem.** For homogeneous $x$,
 
 $$
-\mathrm{ad}_x=L_x-R_x\alpha^{\lvert x\rvert},
+\boxed{\;\mathrm{ad}_x=L_x-R_x\alpha^{\lvert x\rvert}\;},
 $$
 
 the grade involution acting on the **argument**; the operator is a graded derivation of degree $\lvert x\rvert$,

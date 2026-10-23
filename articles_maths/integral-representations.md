@@ -81,7 +81,7 @@ The computations were carried out with the exact Smith normal forms of the integ
 **Definition.** The **Grothendieck group** $G_0(R[G])$ of the $R[G]$-lattices is the free abelian group on the isomorphism classes of the lattices modulo the relations $[L\oplus M] = [L]+[M]$; the rationalisation and the reduction induce maps
 
 $$
-G_0(\mathbb{Z}[G])\longrightarrow G_0(\mathbb{Q}[G]), \qquad G_0(\mathcal{O}[G])\longrightarrow G_0(k[G]),
+\boxed{\;G_0(\mathbb{Z}[G])\longrightarrow G_0(\mathbb{Q}[G]), \qquad G_0(\mathcal{O}[G])\longrightarrow G_0(k[G])\;},
 $$
 
 the first carrying a lattice to its rational form and the second to its reduction, and the second has the decomposition matrix as its matrix with respect to the bases of the ordinary and the modular modules; consequently the integral theory carries the information of both the ordinary and the modular theory, and the change of rings of *Change of Rings* is the algebraic operation behind these maps.

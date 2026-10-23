@@ -25,7 +25,7 @@ Let $h$ be positive definite. By *The Norm Defined by a Form*, §*The Norm and I
 **Theorem (the spectral decomposition).** In the situation of the theorem, let $\lambda_{1},\dots,\lambda_{r}$ be the distinct eigenvalues and let $P_{i}$ be the $h$-orthogonal projection onto the eigenspace $\{x : Tx = \lambda_{i}x\}$. Then
 
 $$
-P_{i}P_{j} = \delta_{ij}P_{i} , \qquad \textstyle\sum_{i=1}^{r} P_{i} = 1 , \qquad P_{i}^{\dagger} = P_{i} , \qquad T = \sum_{i=1}^{r}\lambda_{i}P_{i} .
+\boxed{\;P_{i}P_{j} = \delta_{ij}P_{i} , \qquad \textstyle\sum_{i=1}^{r} P_{i} = 1 , \qquad P_{i}^{\dagger} = P_{i} , \qquad T = \sum_{i=1}^{r}\lambda_{i}P_{i}\;} .
 $$
 
 *Proof.* The eigenspaces of a self-adjoint operator for distinct eigenvalues are $h$-orthogonal: if $Tx = \lambda x$ and $Ty = \mu y$ with $\lambda \neq \mu$, then $\lambda h(x,y) = h(Tx,y) = h(x,Ty) = \mu h(x,y)$, and $h(x,y) = 0$ because $\lambda - \mu$ is invertible in $k$. The projections onto the eigenspaces are therefore $h$-orthogonal, which gives the first two relations, and each is self-adjoint because its image and kernel are $h$-orthogonal complements. The last relation is the diagonalisation read in the eigenbasis.
@@ -53,7 +53,7 @@ is defined and real for a self-adjoint $T$.
 **Theorem (the min-max principle).** Let $T$ be $h$-self-adjoint with eigenvalues $\lambda_{1} \geq \lambda_{2} \geq \dots \geq \lambda_{m}$, counted with multiplicity. Then for every $k$,
 
 $$
-\lambda_{k} = \max_{\dim V = k}\ \min_{0 \neq x \in V} R_{T}(x) = \min_{\dim W = m-k+1}\ \max_{0 \neq x \in W} R_{T}(x) ,
+\boxed{\;\lambda_{k} = \max_{\dim V = k}\ \min_{0 \neq x \in V} R_{T}(x) = \min_{\dim W = m-k+1}\ \max_{0 \neq x \in W} R_{T}(x)\;} ,
 $$
 
 the maximum and the minimum running over the subspaces $V, W$ of $A$ of the stated dimension. In particular $\lambda_{1} = \max_{x \neq 0} R_{T}(x)$ and $\lambda_{m} = \min_{x \neq 0} R_{T}(x)$.
@@ -65,7 +65,7 @@ the maximum and the minimum running over the subspaces $V, W$ of $A$ of the stat
 **Theorem (the norm of a self-adjoint operator).** For a self-adjoint operator $T$ of a definite form,
 
 $$
-\lVert T\rVert = \max_{i}\lvert\lambda_{i}\rvert = \rho(T) ,
+\boxed{\;\lVert T\rVert = \max_{i}\lvert\lambda_{i}\rvert = \rho(T)\;} ,
 $$
 
 the spectral radius, and the maximum modulus is attained at one of the two extreme eigenvalues, $\lVert T\rVert = \max(\lvert\lambda_{1}\rvert, \lvert\lambda_{m}\rvert)$.

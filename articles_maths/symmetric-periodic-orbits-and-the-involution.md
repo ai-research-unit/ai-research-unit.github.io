@@ -44,7 +44,7 @@ No physics is invoked.
 **Theorem (reversor: the multipliers are reciprocal).** Let $R$ be a reversor of $T$, let $p\in\mathrm{Fix}(R)$, and let $M=D(T^n)(p)$ be the derivative of the return. Then
 
 $$
-DR(p)\,M\,DR(p)=M^{-1}, \qquad DR(p)^2=I,
+\boxed{\;DR(p)\,M\,DR(p)=M^{-1}, \qquad DR(p)^2=I\;},
 $$
 
 so $M$ is conjugate to its inverse by the linear involution $DR(p)$; consequently the spectrum of $M$ is invariant under $\lambda\mapsto\lambda^{-1}$, and the Floquet multipliers of the symmetric periodic orbit occur in reciprocal pairs, $\lambda$ and $1/\lambda$, with the unit circle mapped to itself.
@@ -54,7 +54,7 @@ so $M$ is conjugate to its inverse by the linear involution $DR(p)$; consequentl
 **Theorem (equivariant involution: the multipliers are isotypic).** Let $\sigma$ be an equivariant involution of $T$, let $p\in\mathrm{Fix}(\sigma)$, and let $M=D(T^n)(p)$. Then
 
 $$
-M\,D\sigma(p)=D\sigma(p)\,M ,
+\boxed{\;M\,D\sigma(p)=D\sigma(p)\,M\;} ,
 $$
 
 so $M$ preserves the isotypic decomposition of $T_pM$ and splits into the blocks on the $+1$ and the $-1$ eigenspaces of $D\sigma(p)$; the multipliers of the symmetric orbit split accordingly, and a symmetric orbit whose fixed point has a non-free $\mathbb{Z}/2$-action on its tangent space has a forced multiplicity in the corresponding block.

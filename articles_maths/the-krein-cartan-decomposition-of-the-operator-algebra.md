@@ -119,7 +119,7 @@ is a Riemannian symmetric space of real dimension $6$, and it is the complex hyp
 
 **Proof.** The quotient of a Lie group by a maximal compact subgroup is a symmetric space of non-compact type, of dimension $\dim\mathfrak{p}_{0}=6$; the identification with the space of positive lines and with the ball is the parametrisation of the maximal positive definite subspaces. The Cartan decomposition of the group is
 
-$$ \boxed{\;\mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0})\;}, $$
+$$ \mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0}), $$
 
 the compact part followed by the hyperbolic part, whose exponentials are the boosts and their conjugates.
 

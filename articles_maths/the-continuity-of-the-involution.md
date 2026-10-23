@@ -21,7 +21,7 @@ The article proves that the twisted action is continuous exactly when $\varsigma
 **Theorem (the twisted action).** Let $A$ be a topological $R$-module and suppose $\varsigma$ continuous. Then the twisted action
 
 $$
-R \times A \longrightarrow A, \qquad (\lambda,x) \longmapsto \lambda \cdot x = \varsigma(\lambda)x,
+\boxed{\;R \times A \longrightarrow A, \qquad (\lambda,x) \longmapsto \lambda \cdot x = \varsigma(\lambda)x\;},
 $$
 
 is continuous, so $A^{\varsigma}$ is a topological $R$-module; the identity map $A \to A^{\varsigma}$ is a homeomorphism of the additive topological groups, it is an isomorphism of topological $R$-modules exactly when $\varsigma = \mathrm{id}$, and in general it is a $\varsigma$-semilinear homeomorphism.
@@ -91,7 +91,7 @@ of *Topological Sesqualgebras*, §*The Two Slots*; the two statements are the sa
 **Theorem (the isometric normal form).** Let $A$ be an associative algebra with a submultiplicative norm $\lVert\cdot\rVert$ and an involution $*$, and put
 
 $$
-\lVert x\rVert_{*} = \max\bigl(\lVert x\rVert, \lVert x^{*}\rVert\bigr) .
+\boxed{\;\lVert x\rVert_{*} = \max\bigl(\lVert x\rVert, \lVert x^{*}\rVert\bigr)\;} .
 $$
 
 Then $\lVert\cdot\rVert_{*}$ is a norm on $A$, it is equivalent to $\lVert\cdot\rVert$ as soon as $*$ is continuous for $\lVert\cdot\rVert$, it is submultiplicative, and the involution is isometric for it, $\lVert x^{*}\rVert_{*} = \lVert x\rVert_{*}$. Consequently an algebra with a continuous involution may always be read with an isometric one, and the $\mathrm{C}^{*}$-identity is the sharp case of the construction.
@@ -142,7 +142,7 @@ This is a $\mathbb{R}$-bilinear product, so it is a sesqualgebra over the trivia
 **Theorem (the product is a continuous bilinear map on the pair).** Let $A$ be a sesqualgebra over $(R,\varsigma)$ whose product is separately continuous and suppose $\varsigma$ continuous. Then the product, read as a map
 
 $$
-A \times A^{\varsigma} \longrightarrow A, \qquad (x,y) \longmapsto xy ,
+\boxed{\;A \times A^{\varsigma} \longrightarrow A, \qquad (x,y) \longmapsto xy\;} ,
 $$
 
 is $R$-bilinear and separately continuous, and it is jointly continuous as soon as the product is.

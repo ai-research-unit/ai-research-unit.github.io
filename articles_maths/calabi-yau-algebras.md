@@ -26,7 +26,7 @@ Throughout, $k$ is a field (the definition works over a commutative ring, with f
 **Definition (Ginzburg).** Let $A$ be a homologically smooth $k$-algebra and let $d$ be an integer. Then $A$ is a **Calabi–Yau algebra of dimension** $d$, or $d$-**CY**, if there is an isomorphism
 
 $$
-\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) \;\cong\; A[-d]
+\boxed{\;\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) \;\cong\; A[-d]\;}
 $$
 
 in the derived category $D(A^{\mathrm{e}})$ of DG $A^{\mathrm{e}}$-modules. The shift convention is fixed once and for all as follows: $\operatorname{RHom}^{\bullet}_{A^{\mathrm{e}}}(A,-)$ is computed by a projective resolution $P_\bullet$ of $A$ whose term $P_i$ sits in homological degree $i$, with $\operatorname{Hom}_{A^{\mathrm{e}}}(P_i,-)$ placed in cohomological degree $i$; with this convention the polynomial algebra in $n$ variables has dimension $n$, as verified below, and the sign of $d$ in the display is the sign of the dimension. Other sources differ by the sign of the shift, and the invariant content is the pair (existence of the isomorphism, absolute value of the shift) together with the convention.
@@ -53,7 +53,7 @@ The Calabi–Yau condition is a duality for the Hochschild theories, and this is
 **Theorem (standard).** Let $A$ be a homologically smooth $k$-algebra. Then $A$ is $d$-CY if and only if there is an isomorphism of graded $k$-modules
 
 $$
-HH^i(A,A) \;\cong\; \bigl(HH_{d-i}(A,A)\bigr)^* ,
+\boxed{\;HH^i(A,A) \;\cong\; \bigl(HH_{d-i}(A,A)\bigr)^*\;} ,
 $$
 
 the **Hochschild Poincaré duality**: the Hochschild cohomology in degree $i$ is dual to the Hochschild homology in degree $d-i$, functorially for the $A$-bimodule structures.

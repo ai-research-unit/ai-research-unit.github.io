@@ -91,7 +91,7 @@ the **chiral Cauchy–Riemann operators**. The operator is the curved-space memb
 
 **Theorem (Lichnerowicz).** For a spin manifold $(M,g)$ with the spinor bundle $\mathcal{S}$ and the Levi-Civita spin connection,
 $$
-D^2 = \nabla^{*}\nabla + \tfrac{1}{4}\operatorname{scal},
+\boxed{\;D^2 = \nabla^{*}\nabla + \tfrac{1}{4}\operatorname{scal}\;},
 $$
 where $\nabla^{*}\nabla$ is the connection Laplacian on the spinors and $\operatorname{scal}$ is the scalar curvature of the metric, acting on $\Gamma(\mathcal{S})$ by scalar multiplication by $\tfrac14$ of the scalar curvature.
 
@@ -111,7 +111,7 @@ so that on integrating the inner product with $\sigma$ over the closed manifold,
 
 **Theorem (Atiyah–Singer; the spin case).** Let $(M,g)$ be a closed spin manifold of even dimension $n = 2m$ with the grading $\mathcal{S} = \mathcal{S}^+\oplus\mathcal{S}^-$ and the chiral Cauchy–Riemann operator $D^+ : \Gamma(\mathcal{S}^+) \to \Gamma(\mathcal{S}^-)$. Then $D^+$ is Fredholm and its analytic index is the **$\hat{A}$-genus**,
 $$
-\operatorname{ind}(D^+) = \dim\ker D^+ - \dim\ker D^- = \int_M \hat{A}(TM) = \langle \hat{A}(TM), [M]\rangle \in \mathbb{Z},
+\boxed{\;\operatorname{ind}(D^+) = \dim\ker D^+ - \dim\ker D^- = \int_M \hat{A}(TM) = \langle \hat{A}(TM), [M]\rangle \in \mathbb{Z}\;},
 $$
 where $\hat{A}(TM)$ is the $\hat{A}$-class of the tangent bundle, the invariant polynomial of the Pontryagin classes
 $$
@@ -135,7 +135,7 @@ in the Pontryagin roots $x_j$ of the curvature; the integral is a characteristic
 
 **Theorem (the $\operatorname{Spin}^c$ index theorem).** Let $(M,g)$ be a closed $\operatorname{Spin}^c$ manifold of even dimension with $\operatorname{Spin}^c$ structure whose determinant line bundle is $L$, and let $D^+_L$ be the chiral $\operatorname{Spin}^c$ Cauchy–Riemann operator twisted by $L$. Then
 $$
-\operatorname{ind}(D^+_L) = \int_M \exp(c_1(L)/2)\,\hat{A}(TM) = \langle \exp(c_1(L)/2)\hat{A}(TM), [M]\rangle ,
+\boxed{\;\operatorname{ind}(D^+_L) = \int_M \exp(c_1(L)/2)\,\hat{A}(TM) = \langle \exp(c_1(L)/2)\hat{A}(TM), [M]\rangle\;} ,
 $$
 the exponential being expanded in the cohomology of $M$; in the almost complex case with the canonical structure the operator is the Dolbeault operator $\bar\partial + \bar\partial^*$ up to a factor, and the index is the holomorphic Euler characteristic, $\operatorname{ind}(D^+) = \chi(M, \mathcal{O})$ in the Kähler case, with the generalisation to the twisted bundles by the Riemann–Roch–Hirzebruch theorem.
 

@@ -58,7 +58,7 @@ where $\langle x,y\rangle = y(x)$ is the duality pairing. It is a supremum of af
 **Proposition (Fenchel–Young).** For all $x$ and $y$,
 
 $$
-\langle x,y\rangle \leq f(x) + f^*(y),
+\boxed{\;\langle x,y\rangle \leq f(x) + f^*(y)\;},
 $$
 
 with equality if and only if $y$ is a supporting slope of $f$ at $x$, that is, if and only if $f(x') \geq f(x) + \langle x'-x,y\rangle$ for every $x'$.
@@ -86,7 +86,7 @@ The pair of inequalities is a **Galois connection** between the lattice of funct
 **Theorem (Fenchel–Moreau).** For every function $f$,
 
 $$
-f^{* *} = \operatorname{cl}\operatorname{conv} f .
+\boxed{\;f^{* *} = \operatorname{cl}\operatorname{conv} f\;} .
 $$
 
 Consequently $f^{**} = f$ if and only if $f$ is closed and convex, and the Legendre transform is an order-reversing involution of the set of closed convex functions, an anti-automorphism of its lattice.
@@ -116,7 +116,7 @@ empty when $f(x) = +\infty$, and it is a closed convex subset of $E'$. A point $
 **Proposition (the transform and the subdifferential are inverse).** For all $x$ and $y$,
 
 $$
-y\in\partial f(x) \iff x\in\partial f^*(y) \iff f(x) + f^*(y) = \langle x,y\rangle .
+\boxed{\;y\in\partial f(x) \iff x\in\partial f^*(y) \iff f(x) + f^*(y) = \langle x,y\rangle\;} .
 $$
 
 Hence $\partial f^* = (\partial f)^{-1}$ as set-valued maps, and the subdifferential of a closed convex function is a **maximal monotone** operator: $(y_2 - y_1)(x_2 - x_1)\geq0$ for $y_i\in\partial f(x_i)$, and no proper enlargement of its graph is monotone.

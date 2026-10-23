@@ -33,9 +33,9 @@ So $\mathrm{L}^{\alpha}_a = L_a\circ\alpha$ is the ordinary left multiplication 
 **Proposition (the left family).** For all $a, c$
 
 $$
-\mathrm{L}^{\alpha}_a \circ \mathrm{L}^{\alpha}_c = L_{a\alpha(c)}, \qquad
+\boxed{\;\mathrm{L}^{\alpha}_a \circ \mathrm{L}^{\alpha}_c = L_{a\alpha(c)}, \qquad
 \mathrm{L}^{\alpha}_a \circ L_c = \mathrm{L}^{\alpha}_{a\alpha(c)}, \qquad
-L_a \circ \mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{ac}.
+L_a \circ \mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{ac}\;}.
 $$
 
 So the composite of **two** signed left multiplications is an ordinary left multiplication, the two grade involutions cancelling; the composite of a signed and an ordinary left multiplication, in either order, is signed.
@@ -45,9 +45,9 @@ So the composite of **two** signed left multiplications is an ordinary left mult
 **Proposition (the right family carries no new operators).** Since $\alpha$ is a bijection, $\{\mathrm{P}^{\alpha}_a : a \in \mathrm{Cl}(V,\mathfrak{Q})\} = \{R_b : b \in \mathrm{Cl}(V,\mathfrak{Q})\}$: the signed right multiplications are exactly the ordinary right multiplications, reparametrised by $b = \alpha(a)$. Consequently
 
 $$
-\mathrm{P}^{\alpha}_a \circ \mathrm{P}^{\alpha}_c = \mathrm{P}^{\alpha}_{ca}, \qquad
+\boxed{\;\mathrm{P}^{\alpha}_a \circ \mathrm{P}^{\alpha}_c = \mathrm{P}^{\alpha}_{ca}, \qquad
 \mathrm{P}^{\alpha}_a \circ R_c = \mathrm{P}^{\alpha}_{\alpha(c)\,a}, \qquad
-R_c \circ \mathrm{P}^{\alpha}_a = \mathrm{P}^{\alpha}_{a\,\alpha(c)},
+R_c \circ \mathrm{P}^{\alpha}_a = \mathrm{P}^{\alpha}_{a\,\alpha(c)}\;},
 $$
 
 and the signed right family is a group, being the ordinary right family. The genuine asymmetry is that the signed left multiplications are new maps while the signed right multiplications are not.
@@ -91,7 +91,7 @@ $$
 **Theorem (the reflections).** Let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. Then $\Sigma_u = \mathrm{L}^{\alpha}_u\circ R_{\alpha(u)^{-1}}$ restricted to $V$ is the reflection $\rho_u$, and its fixed vectors in $V$ are the hyperplane $u^{\perp}$:
 
 $$
-\mathrm{Fix}\bigl(\Sigma_u\big|_V\bigr) = u^{\perp} = \{\, v \in V : B(u,v) = 0 \,\}.
+\boxed{\;\mathrm{Fix}\bigl(\Sigma_u\big|_V\bigr) = u^{\perp} = \{\, v \in V : B(u,v) = 0 \,\}\;}.
 $$
 
 **Proof.** The reflection statement is the theorem of *The Sandwich with the Signed Product*; for the fixed space, $\rho_u(v) = v$ exactly when $2B(v,u)\mathfrak{Q}(u)^{-1}u = 0$, that is $B(v,u) = 0$.

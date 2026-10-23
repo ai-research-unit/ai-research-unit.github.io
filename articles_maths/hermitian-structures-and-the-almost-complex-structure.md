@@ -17,7 +17,7 @@ The article assumes the almost complex structures, the Nijenhuis tensor, the int
 **Proposition.** The complexified tangent bundle $T_{\mathbb{C}}M = TM\otimes_{\mathbb{R}}\mathbb{C}$ splits into the eigenbundles of $J$ with eigenvalues $\pm i$,
 
 $$
-T_{\mathbb{C}}M = T^{1,0}M \oplus T^{0,1}M, \qquad T^{1,0}M = \{v : Jv = iv\}, \quad T^{0,1}M = \{v : Jv = -iv\},
+\boxed{\;T_{\mathbb{C}}M = T^{1,0}M \oplus T^{0,1}M, \qquad T^{1,0}M = \{v : Jv = iv\}, \quad T^{0,1}M = \{v : Jv = -iv\}\;},
 $$
 
 with $T^{0,1}M = \overline{T^{1,0}M}$; the projection onto $T^{1,0}M$ is $\tfrac12(\mathrm{id}-iJ)$. Dually, the complexified cotangent bundle splits as $T^*_{\mathbb{C}}M = \Lambda^{1,0}M\oplus\Lambda^{0,1}M$, and the complexified $k$-forms decompose into the **forms of type $(n,m)$**,
@@ -57,7 +57,7 @@ where $\pi^{n+1,m}$ and $\pi^{n,m+1}$ are the projections onto the two types; th
 **Proposition.** The exterior derivative decomposes as
 
 $$
-d = \partial + \bar\partial \quad \text{on the complexified forms},
+\boxed{\;d = \partial + \bar\partial \quad \text{on the complexified forms}\;},
 $$
 
 that is, $d$ preserves the bidegree in the sense $d\,\Omega^{n,m}\subseteq\Omega^{n+1,m}\oplus\Omega^{n,m+1}$, if and only if the almost complex structure is integrable, $N_J = 0$.
@@ -69,7 +69,7 @@ that is, $d$ preserves the bidegree in the sense $d\,\Omega^{n,m}\subseteq\Omega
 **Theorem.** Suppose $J$ is integrable, so $d = \partial + \bar\partial$. Then
 
 $$
-\partial^2 = 0, \qquad \bar\partial^2 = 0, \qquad \partial\bar\partial + \bar\partial\partial = 0,
+\boxed{\;\partial^2 = 0, \qquad \bar\partial^2 = 0, \qquad \partial\bar\partial + \bar\partial\partial = 0\;},
 $$
 
 so the forms carry a **double complex**: for each $m$ the operators $\bar\partial$ make the rows $\Omega^{\bullet,m}$ into cochain complexes, for each $n$ the operators $\partial$ make the columns $\Omega^{n,\bullet}$ into cochain complexes, and the two commute with the sign, giving the anticommutation.

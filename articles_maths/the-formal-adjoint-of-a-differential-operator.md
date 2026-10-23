@@ -39,7 +39,7 @@ $$
 then
 
 $$
-P^*v = \sum_{|\alpha|\le k} (-1)^{|\alpha|}\,\partial^\alpha\bigl(A_\alpha(x)^* v\bigr),
+\boxed{\;P^*v = \sum_{|\alpha|\le k} (-1)^{|\alpha|}\,\partial^\alpha\bigl(A_\alpha(x)^* v\bigr)\;},
 $$
 
 where $A_\alpha^*$ is the pointwise adjoint of the coefficient matrix with respect to the two fibrewise metrics, and $\partial^\alpha$ is the formal adjoint of the monomial $\partial^\alpha$ with respect to the density $\rho\,dx$;
@@ -63,7 +63,7 @@ by the Leibniz rule $\partial/\partial x_i(\rho\langle u,v\rangle) = \rho\langle
 **Theorem (Lagrange identity).** For $P$ of order at most $k$ and sections $u,v$,
 
 $$
-\langle v, Pu\rangle - \langle u, P^*v\rangle = \operatorname{div} W(u,v)
+\boxed{\;\langle v, Pu\rangle - \langle u, P^*v\rangle = \operatorname{div} W(u,v)\;}
 $$
 
 for a vector field $W(u,v)$ depending smoothly and bilinearly on $u$, $v$ and their derivatives up to order $k-1$, the divergence being taken with respect to the density $d\mu$. Integrating over a compact region $\Omega$ with smooth boundary and applying the divergence theorem,
@@ -81,7 +81,7 @@ the **Green formula**, whose right-hand side is the boundary term. The formal ad
 **Proposition.** The formal adjoint has the same order as $P$ and its principal symbol is the adjoint of the symbol of $P$ with the sign $(-1)^k$:
 
 $$
-\sigma_k(P^*)(x,\xi) = (-1)^k\,\sigma_k(P)(x,\xi)^* \ : \ F_x \longrightarrow E_x,
+\boxed{\;\sigma_k(P^*)(x,\xi) = (-1)^k\,\sigma_k(P)(x,\xi)^* \ : \ F_x \longrightarrow E_x\;},
 $$
 
 the adjoint being taken with respect to the fibrewise metrics; consequently $P$ and $P^*$ have the same characteristic variety and $P$ is elliptic exactly when $P^*$ is.

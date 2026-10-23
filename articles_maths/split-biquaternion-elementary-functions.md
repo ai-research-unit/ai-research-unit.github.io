@@ -188,7 +188,9 @@ The logarithm is multivalued in general, as in the complex case. We compute the 
 In the idempotent basis, the logarithm decomposes:
 
 $$
-\log(\tilde{Q}) = \log(\tilde{Q}_+) \tilde\Pi_1 + \log(\tilde{Q}_-) \tilde\Pi_2,
+\boxed{\;
+\log(\tilde{Q}) = \log(\tilde{Q}_+) \tilde\Pi_1 + \log(\tilde{Q}_-) \tilde\Pi_2
+\;},
 $$
 
 where $\log(\tilde{Q}_\pm)$ is the ordinary quaternion logarithm of the component. The quaternion logarithm is
@@ -202,7 +204,9 @@ where $|\tilde{Q}_\pm|$ is the quaternion modulus, and $\arccos$ is the ordinary
 So the logarithm of a split biquaternion is the pair of the quaternion logarithms of its two idempotent components. Exponentiating the two components returns the element,
 
 $$
-\exp(\tilde Q_{\log})=\exp\bigl(\log\tilde{Q}_+\bigr)\tilde\Pi_1+\exp\bigl(\log\tilde{Q}_-\bigr)\tilde\Pi_2=\tilde{Q}_+\tilde\Pi_1+\tilde{Q}_-\tilde\Pi_2=\tilde{Q},
+\boxed{\;
+\exp(\tilde Q_{\log})=\exp\bigl(\log\tilde{Q}_+\bigr)\tilde\Pi_1+\exp\bigl(\log\tilde{Q}_-\bigr)\tilde\Pi_2=\tilde{Q}_+\tilde\Pi_1+\tilde{Q}_-\tilde\Pi_2=\tilde{Q}
+\;},
 $$
 
 because each quaternion component satisfies $\exp(\log\tilde{Q}_\pm)=\tilde{Q}_\pm$ on its domain.

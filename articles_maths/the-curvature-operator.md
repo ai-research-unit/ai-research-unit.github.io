@@ -81,7 +81,7 @@ The proposition is the one place where the metric enters the algebraic classific
 **Theorem.** For a two-plane $\sigma \subseteq T_pM$ with a basis $X, Y$ the sectional curvature is the Rayleigh quotient of the curvature operator at the bivector $X\wedge Y$:
 
 $$
-K(\sigma) = \frac{R(X, Y, Y, X)}{|X\wedge Y|^2} = \frac{\bigl\langle \mathcal{R}(X\wedge Y),\, X\wedge Y\bigr\rangle}{|X\wedge Y|^2}.
+\boxed{\;K(\sigma) = \frac{R(X, Y, Y, X)}{|X\wedge Y|^2} = \frac{\bigl\langle \mathcal{R}(X\wedge Y),\, X\wedge Y\bigr\rangle}{|X\wedge Y|^2}\;}.
 $$
 
 Consequently the sectional curvature is the restriction of the quadratic form $\omega \mapsto \langle \mathcal{R}\omega, \omega\rangle$ to the decomposable bivectors of unit length, and the values of the sectional curvature at $p$ determine the whole curvature tensor at $p$.
@@ -99,7 +99,7 @@ Consequently the sectional curvature is the restriction of the quadratic form $\
 **Theorem (the Ricci contraction).** For any $X, Y \in T_pM$ and any orthonormal basis $e_1, \ldots, e_n$ of $T_pM$,
 
 $$
-\operatorname{Ric}(X, Y) = \sum_{i=1}^{n} \bigl\langle \mathcal{R}(X\wedge e_i),\, Y\wedge e_i\bigr\rangle .
+\boxed{\;\operatorname{Ric}(X, Y) = \sum_{i=1}^{n} \bigl\langle \mathcal{R}(X\wedge e_i),\, Y\wedge e_i\bigr\rangle\;} .
 $$
 
 The Ricci tensor is therefore the **contraction** of the curvature operator with the metric on one factor of each bivector.
@@ -137,7 +137,7 @@ The Weyl tensor has the symmetries of the curvature, it satisfies the first Bian
 **Theorem.** The curvature operator decomposes as a sum of three self-adjoint endomorphisms, orthogonal with respect to the trace pairing,
 
 $$
-\mathcal{R} = \frac{S}{n(n-1)}\,\mathrm{id} + \mathcal{R}_0 + \mathcal{W},
+\boxed{\;\mathcal{R} = \frac{S}{n(n-1)}\,\mathrm{id} + \mathcal{R}_0 + \mathcal{W}\;},
 $$
 
 where the first summand is scalar, the second is the image of the traceless Ricci tensor $\operatorname{Ric}_0$ under the identification of the previous section applied to the tensor $\operatorname{Ric}_0 \wedge g$, and the third, the **Weyl operator**, is the image of the Weyl tensor. The three summands are the isotypic components of $\mathcal{R}$ under the orthogonal group $O(T_pM, g_p)$: the trivial representation, the traceless symmetric square, and the Weyl module.

@@ -25,7 +25,7 @@ and the **operator algebra of the process** is the von Neumann algebra $\mathcal
 
 **Theorem.** The passage to the adjoint is an involutive, conjugate-linear, isometric anti-automorphism of the operator algebra:
 $$
-(T^*)^*=T,\qquad (S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda\,T^*,\qquad (ST)^*=T^*S^*,\qquad \|T^*\|=\|T\| ,
+\boxed{\;(T^*)^*=T,\qquad (S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda\,T^*,\qquad (ST)^*=T^*S^*,\qquad \|T^*\|=\|T\|\;} ,
 $$
 and it satisfies the $C^*$-identity
 $$
@@ -62,7 +62,7 @@ so $\mathcal{M}$ is a von Neumann algebra, hence a $C^*$-algebra, and the involu
 
 **Theorem (the agreement is proved).** The representation $\pi(a)=L_a$ by the left multiplications is a $*$-representation,
 $$
-\pi(a^*)=\pi(a)^*,
+\boxed{\;\pi(a^*)=\pi(a)^*\;},
 $$
 and the agreement is a theorem, proved from the positivity of the state and the invariance of the form; it is never assumed.
 
@@ -72,7 +72,7 @@ and the agreement is a theorem, proved from the positivity of the state and the 
 
 **Theorem (the reversal).** The reversal $r$ of the index defines the operator $U_rf=f\circ r$ on the path-space $L^2$, which is an involution, $U_r^2=\mathrm{id}$, and self-adjoint, $U_r^*=U_r$; the conjugation
 $$
-\tau(T)=U_r\,T\,U_r^{-1}
+\boxed{\;\tau(T)=U_r\,T\,U_r^{-1}\;}
 $$
 is an involutive automorphism of the operator algebra commuting with the adjoint, $\tau(T^*)=\tau(T)^*$, and it sends the shift to its inverse, $\tau(U_\sigma)=U_\sigma^{-1}$. The process is **reversible** exactly when $\tau$ preserves the state, $\varphi\circ\tau=\varphi$ on the multiplications, equivalently when the reversal operator is measure-preserving.
 

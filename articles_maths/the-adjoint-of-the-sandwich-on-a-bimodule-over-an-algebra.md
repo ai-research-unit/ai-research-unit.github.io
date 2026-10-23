@@ -42,7 +42,7 @@ Both one-sided multiplications therefore have adjoints obtained by applying the 
 **Theorem.** For all $a,b \in A$,
 
 $$
-(S_{a,b})^{*}=S_{\sigma(a),\,\sigma(b)} .
+\boxed{\;(S_{a,b})^{*}=S_{\sigma(a),\,\sigma(b)}\;} .
 $$
 
 *Proof.* Since $S_{a,b}=L_aR_b$ and the adjoint is anti-multiplicative, $(S_{a,b})^{*}=(R_b)^{*}(L_a)^{*}=R_{\sigma(b)}L_{\sigma(a)}$. The two one-sided multiplications commute, so $R_{\sigma(b)}L_{\sigma(a)}=L_{\sigma(a)}R_{\sigma(b)}=S_{\sigma(a),\sigma(b)}$.
@@ -60,7 +60,7 @@ commutes: applying the pair $(\sigma,\sigma)$ to the parameters and applying the
 **Corollary.** Suppose the sandwich map $(a,b)\mapsto S_{a,b}$ is injective. Then
 
 $$
-(S_{a,b})^{*}=S_{a,b} \iff \sigma(a)=a,\ \sigma(b)=b, \qquad (S_{a,b})^{*}=-S_{a,b} \iff \sigma(a)=-a,\ \sigma(b)=-b .
+\boxed{\;(S_{a,b})^{*}=S_{a,b} \iff \sigma(a)=a,\ \sigma(b)=b, \qquad (S_{a,b})^{*}=-S_{a,b} \iff \sigma(a)=-a,\ \sigma(b)=-b\;} .
 $$
 
 Thus the self-adjoint sandwiches are exactly those with both parameters symmetric, and the skew-adjoint sandwiches those with both parameters antisymmetric.
@@ -72,7 +72,7 @@ Thus the self-adjoint sandwiches are exactly those with both parameters symmetri
 **Theorem.** If $a$ and $b$ are unitary elements of $A$, then $S_{a,b}$ is unitary:
 
 $$
-\sigma(a)a=a\sigma(a)=1 \text{ and } \sigma(b)b=b\sigma(b)=1 \implies (S_{a,b})^{*}S_{a,b}=S_{a,b}(S_{a,b})^{*}=\mathrm{id} .
+\boxed{\;\sigma(a)a=a\sigma(a)=1 \text{ and } \sigma(b)b=b\sigma(b)=1 \implies (S_{a,b})^{*}S_{a,b}=S_{a,b}(S_{a,b})^{*}=\mathrm{id}\;} .
 $$
 
 Conversely, for the regular bimodule with the regular pairing and an injective sandwich map, a unitary sandwich has unitary parameters.

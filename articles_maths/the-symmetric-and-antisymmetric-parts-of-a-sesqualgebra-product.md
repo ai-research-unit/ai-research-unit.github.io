@@ -121,7 +121,7 @@ $$
 together with the reconstruction
 
 $$
-f = f^{\mathrm s} + f^{\mathrm a}, \qquad f^{c} = f^{\mathrm s} - f^{\mathrm a}, \qquad f - f^{c} = 2\,f^{\mathrm a}.
+\boxed{\;f = f^{\mathrm s} + f^{\mathrm a}, \qquad f^{c} = f^{\mathrm s} - f^{\mathrm a}, \qquad f - f^{c} = 2\,f^{\mathrm a}\;}.
 $$
 
 *Proof.* Sesquilinearity is the proposition of §*The Adapted Exchange* applied to $f$ and to $f^{c}$ and closed under the halves, and additivity is inherited from $f$ coefficient by coefficient. Exchanging $x$ and $y$ in the definition of $f^{\mathrm s}$ and conjugating gives $c\bigl(f^{\mathrm s}(y,x)\bigr) = \tfrac12\bigl(c(f(y,x)) + c^{2}(f(x,y))\bigr) = \tfrac12\bigl(c(f(y,x)) + f(x,y)\bigr) = f^{\mathrm s}(x,y)$, and the antisymmetric display is the same computation with the sign; the reconstruction is the sum and the difference of the two definitions.
@@ -141,7 +141,7 @@ $$
 **Proposition (the polarisation of the square).** For all $x, y \in A$,
 
 $$
-f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f^{\mathrm{sym}}(x,y),
+\boxed{\;f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f^{\mathrm{sym}}(x,y)\;},
 $$
 
 where $f^{\mathrm{sym}}(x,y) = \tfrac12\bigl(f(x,y) + f(y,x)\bigr)$ is the **plain** symmetrisation, the half of the bare transposition.
@@ -157,7 +157,7 @@ $$
 **Proposition (the diagonal is the separated square).** For every $x \in A$,
 
 $$
-f^{\mathrm s}(x,x) = \tfrac12\bigl(f(x,x) + c(f(x,x))\bigr), \qquad f^{\mathrm a}(x,x) = \tfrac12\bigl(f(x,x) - c(f(x,x))\bigr).
+\boxed{\;f^{\mathrm s}(x,x) = \tfrac12\bigl(f(x,x) + c(f(x,x))\bigr), \qquad f^{\mathrm a}(x,x) = \tfrac12\bigl(f(x,x) - c(f(x,x))\bigr)\;}.
 $$
 
 *Proof.* The definitions at $y = x$.

@@ -54,16 +54,16 @@ $$
 $$
 The matrix is symmetric, and the two columns are exchanged by the reflection $j$. The map is an injective homomorphism of $\mathbb{R}$-algebras,
 $$
-\mathsf{M}_2(XY)=\mathsf{M}_2(X)\mathsf{M}_2(Y),
+\boxed{\;\mathsf{M}_2(XY)=\mathsf{M}_2(X)\mathsf{M}_2(Y),
 \qquad
-\mathsf{M}_2(1)=\mathrm I_2,
+\mathsf{M}_2(1)=\mathrm I_2\;},
 $$
 whose image is the two-dimensional commutative subalgebra of matrices of the form $\begin{pmatrix}a&b\\b&a\end{pmatrix}$, not the whole of $M_2(\mathbb{R})$.
 
 **Invariants and inverse.** The trace and the determinant are
 $$
-\operatorname{tr}\mathsf{M}_2(X)=2x_0,\qquad
-\det\mathsf{M}_2(X)=x_0^2-x_1^2=\langle X\rangle_{*}=XX^{\dagger},
+\boxed{\;\operatorname{tr}\mathsf{M}_2(X)=2x_0,\qquad
+\det\mathsf{M}_2(X)=x_0^2-x_1^2=\langle X\rangle_{*}=XX^{\dagger}\;},
 $$
 where $X^{\dagger}=x_0-x_1j$ is the conjugation. When $x_0^2\neq x_1^2$,
 $$
@@ -122,8 +122,8 @@ $$
 $$
 For $Q$ itself,
 $$
-\mathsf{M}_2^{\Pi}(Q)=
-\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+\boxed{\;\mathsf{M}_2^{\Pi}(Q)=
+\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\;}.
 $$
 The basis elements and the general element are collected in the table.
 
@@ -255,27 +255,27 @@ S_-=\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,
 $$
 each one-dimensional, and $\mathbb{D}=S_+\oplus S_-$. In the eigenbasis model they are the two columns:
 $$
-S_+\longleftrightarrow\left\{\begin{pmatrix}\alpha&0\\0&0\end{pmatrix}:\alpha\in\mathbb{R}\right\},
+S_+\longleftrightarrow\left\{\begin{pmatrix}a_1&0\\0&0\end{pmatrix}:a_1\in\mathbb{R}\right\},
 \qquad
-S_-\longleftrightarrow\left\{\begin{pmatrix}0&0\\0&\beta\end{pmatrix}:\beta\in\mathbb{R}\right\}.
+S_-\longleftrightarrow\left\{\begin{pmatrix}0&0\\0&a_2\end{pmatrix}:a_2\in\mathbb{R}\right\}.
 $$
-A spinor of first chirality is $\xi_+=\alpha\Pi_+$ and is represented by the first column $(\alpha,0)^{\mathsf T}$; a spinor of second chirality is $\xi_-=\beta\Pi_-$ and is represented by the second column $(0,\beta)^{\mathsf T}$. The general element is the sum of one spinor of each chirality, and its two coordinates are the two diagonal entries.
+A spinor of first chirality is $\xi_+=a_1\Pi_+$ and is represented by the first column $(a_1,0)^{\mathsf T}$; a spinor of second chirality is $\xi_-=a_2\Pi_-$ and is represented by the second column $(0,a_2)^{\mathsf T}$. The general element is the sum of one spinor of each chirality, and its two coordinates are the two diagonal entries.
 
 Under multiplication by $Q$ the two columns are scaled independently:
 $$
 Q\xi_+=\lambda_+\xi_+
 \longleftrightarrow
 \begin{pmatrix}\lambda_+&0\\0&0\end{pmatrix}
-\begin{pmatrix}\alpha\\0\end{pmatrix}
+\begin{pmatrix}a_1\\0\end{pmatrix}
 =
-\begin{pmatrix}\lambda_+\alpha\\0\end{pmatrix},
+\begin{pmatrix}\lambda_+a_1\\0\end{pmatrix},
 \qquad
 Q\xi_-=\lambda_-\xi_-
 \longleftrightarrow
 \begin{pmatrix}0&0\\0&\lambda_-\end{pmatrix}
-\begin{pmatrix}0\\\beta\end{pmatrix}
+\begin{pmatrix}0\\a_2\end{pmatrix}
 =
-\begin{pmatrix}0\\\lambda_-\beta\end{pmatrix}.
+\begin{pmatrix}0\\\lambda_-a_2\end{pmatrix}.
 $$
 The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on both columns; on the first column only the first entry survives, on the second only the second. This is the precise sense in which the two spinor spaces are the two eigenspaces.
 

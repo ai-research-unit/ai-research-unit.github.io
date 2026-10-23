@@ -48,7 +48,7 @@ $$
 on $L\mathrm{G}$, where $x = \sum x_mt^m$, $y = \sum y_nt^n$ and $x' = \sum m x_m t^{m-1}$, is a two-cocycle: it is alternating and satisfies the cocycle identity
 
 $$
-\omega([x,y],z)+\omega([y,z],x)+\omega([z,x],y) = 0 ,
+\boxed{\;\omega([x,y],z)+\omega([y,z],x)+\omega([z,x],y) = 0\;} ,
 $$
 
 and it is the unique, up to scalar, invariant two-cocycle on $L\mathrm{G}$ that is continuous for the grading; it is not a coboundary.
@@ -68,7 +68,7 @@ $$
 with $c$ central, $[d, x\otimes t^m] = m\,x\otimes t^m$, and
 
 $$
-[x\otimes t^m, y\otimes t^n] = [x,y]\otimes t^{m+n} + m\,\langle x,y\rangle\,\delta_{m+n,0}\,c .
+\boxed{\;[x\otimes t^m, y\otimes t^n] = [x,y]\otimes t^{m+n} + m\,\langle x,y\rangle\,\delta_{m+n,0}\,c\;} .
 $$
 
 The element $c$ is the **canonical central element**, $d$ the **derivation** or energy operator, the **level** of a representation is the scalar by which $c$ acts, and the subalgebra $\hat{\mathrm{G}}' = L\mathrm{G}\oplus\mathbb{C} c$ is the **universal central extension** of the loop algebra afforded by the cocycle $\omega$. The algebra $\hat{\mathrm{G}}$ is the **affine Kac–Moody algebra** of type $\mathrm{G}^{(1)}$, with a generalised Cartan matrix of affine type obtained from the Cartan matrix of $\mathrm{G}$ by adjoining the null root; the **affine root system** has the imaginary null root $\delta$ and the real roots $\alpha+n\delta$, and the **affine Weyl group** is
@@ -140,7 +140,7 @@ the **Atiyah–Pressley form**, which is closed, nondegenerate and invariant und
 **Theorem (Weyl–Kac character formula).** The character of the integrable highest weight module $L(\lambda)$ of the affine algebra $\hat{\mathrm{G}}$ is
 
 $$
-\operatorname{ch}L(\lambda) = \frac{\sum_{w\in W^{\mathrm{ext}}}(-1)^{\ell(w)}\,\exp(w(\lambda+\rho)-\rho)}{\prod_{\alpha>0}(1-\exp(-\alpha))^{\mathrm{mult}\,\alpha}} ,
+\boxed{\;\operatorname{ch}L(\lambda) = \frac{\sum_{w\in W^{\mathrm{ext}}}(-1)^{\ell(w)}\,\exp(w(\lambda+\rho)-\rho)}{\prod_{\alpha>0}(1-\exp(-\alpha))^{\mathrm{mult}\,\alpha}}\;} ,
 $$
 
 the sum over the extended affine Weyl group and the product over the positive affine roots, with the multiplicities of the imaginary roots accounted for; the formula specialises to the classical Weyl character formula when the level is zero and gives the **Kac–Weyl denominator identity** for the affine algebra. The representations are the algebraic input into the geometric theory: the **geometric Satake equivalence** identifies the tensor category of the representations of the Langlands dual group with the category of the equivariant perverse sheaves on the affine Grassmannian, so that the Schubert cells of the Grassmannian are the geometric counterpart of the weight spaces; the statement is quoted as a pointer to the geometric theory of the affine Grassmannian, which lies beyond this article.

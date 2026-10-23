@@ -58,7 +58,7 @@ The pair $(a,b)$ is the **carrying pair**, and the operator depends on it and no
 **Proposition (the two factorisations of the signed sandwich).** The signed sandwich factors through the grade involution in two ways,
 
 $$
-\Sigma^{\alpha}_{a,b} = \Sigma_{a,b}\,\alpha = \alpha\,\Sigma_{\alpha(a),\alpha(b)} ,
+\boxed{\;\Sigma^{\alpha}_{a,b} = \Sigma_{a,b}\,\alpha = \alpha\,\Sigma_{\alpha(a),\alpha(b)}\;} ,
 $$
 
 and the second identity uses that $\alpha$ is an automorphism of the bracket, $\alpha([u,v]) = [\alpha(u),\alpha(v)]$.
@@ -92,7 +92,7 @@ and since $\alpha^{2} = \mathrm{id}$ it is the composite of two unsigned sandwic
 **Theorem (the square).** The square of the signed sandwich is
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \Sigma_{a,b}\,\Sigma_{\alpha(a),\alpha(b)} ,
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \Sigma_{a,b}\,\Sigma_{\alpha(a),\alpha(b)}\;} ,
 $$
 
 and it is the unsigned sandwich of the pair $(a,b)$ composed with that of the pair $(\alpha(a),\alpha(b))$; in the associative model the corresponding square is the sandwich by the product of the two carrying elements, and the Lie-algebraic computation does not in general collapse to a single sandwich.
@@ -126,7 +126,7 @@ and it is an involution of the algebra exactly when $a+\alpha(a)$ is central.
 **Theorem.** In the enveloping algebra $\mathrm{U}(\mathrm{G})$ the signed sandwich by the pair of a unit $u$ and its inverse $u^{-1}$ is the signed conjugation,
 
 $$
-\Sigma^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1} = \rho_u(x) ,
+\boxed{\;\Sigma^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1} = \rho_u(x)\;} ,
 $$
 
 and on the Lie algebra the restriction of this operator to $\mathrm{G}$ is the signed conjugation by $\exp a$ when $u = \exp a$. Hence the pair of a unit and its inverse is the carrying pair of a reflection, and the reflections of the next article are the signed sandwiches whose carrying pair is inverse.

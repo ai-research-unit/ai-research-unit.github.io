@@ -63,7 +63,7 @@ An equivariant map carries the orbit of $x$ into the orbit of $f(x)$: $f(Gx) \su
 **Theorem.** Let $f : X \to Y$ be a continuous equivariant map. Then there is exactly one map
 
 $$
-\bar f : X/G \longrightarrow Y/G
+\boxed{\;\bar f : X/G \longrightarrow Y/G\;}
 $$
 
 with $\bar f \circ \pi_{X} = \pi_{Y} \circ f$, and it is continuous. The assignment $f \mapsto \bar f$ preserves identities and composition, so $X \mapsto X/G$ is a functor from the category of $G$-spaces and equivariant maps to the category of topological spaces.
@@ -87,7 +87,7 @@ is a naturality identity, and it says that the orbit map is a **natural transfor
 **Theorem.** Let $Y$ carry the trivial action, $gy = y$ for all $g$. Then every continuous map $f : X \to Y$ is equivariant, and the correspondence $f \leftrightarrow \bar f$ is a bijection
 
 $$
-\{\, \text{continuous } f : X \to Y \,\} \ \longleftrightarrow \ \{\, \text{continuous } \bar f : X/G \to Y \,\} .
+\boxed{\;\{\, \text{continuous } f : X \to Y \,\} \ \longleftrightarrow \ \{\, \text{continuous } \bar f : X/G \to Y \,\}\;} .
 $$
 
 **Proof.** With the trivial action on $Y$, equivariance is the condition $f(gx) = f(x)$, which is invariance, and the stated bijection is the universal property of the orbit map proved in *The Orbit Map*.
@@ -131,7 +131,7 @@ The closedness uses the Hausdorff hypothesis and fails without it. Let $L$ be th
 **Theorem.** Let the action be by homeomorphisms. Then the orbit map restricts to a homeomorphism
 
 $$
-\pi|_{X^{G}} : X^{G} \longrightarrow \pi(X^{G}) ,
+\boxed{\;\pi|_{X^{G}} : X^{G} \longrightarrow \pi(X^{G})\;} ,
 $$
 
 and its image $\pi(X^{G})$ is the set of singleton orbits. Every orbit of a fixed point is a singleton, and the preimage of a singleton orbit is a singleton.

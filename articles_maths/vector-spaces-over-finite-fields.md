@@ -26,7 +26,7 @@ $$
 **Theorem.** The order of the general linear group is
 
 $$
-|\operatorname{GL}_n(\mathbb{F}_q)|=\prod_{i=0}^{n-1}(q^n-q^i)=q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1) .
+\boxed{\;|\operatorname{GL}_n(\mathbb{F}_q)|=\prod_{i=0}^{n-1}(q^n-q^i)=q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1)\;} .
 $$
 
 *Proof.* An invertible matrix is exactly an ordered basis of $\mathbb{F}_q^n$, read as the list of its columns: a matrix is invertible if and only if its columns are linearly independent, and every ordered basis occurs exactly once. Hence the order is the number of ordered bases, which is the previous corollary. For the second expression, write $q^n-q^i=q^i(q^{n-i}-1)$ and collect: the exponents sum to $\sum_{i=0}^{n-1}i=n(n-1)/2$, and reindexing gives $\prod_{i=1}^n(q^i-1)$.
@@ -58,7 +58,7 @@ It is a polynomial in $q$ with integer coefficients; the value at $q=1$ is the o
 *Proof.* Count the pairs (ordered $k$-tuple of independent vectors, $k$-dimensional subspace containing them) in two ways. The number of independent $k$-tuples is $N(n,k)=\prod_{i=0}^{k-1}(q^n-q^i)$. Each $k$-dimensional subspace $W$ contains $N(k,k)=\prod_{i=0}^{k-1}(q^k-q^i)$ independent $k$-tuples, namely its ordered bases. Dividing,
 
 $$
-\#\{W:\dim W=k\}=\frac{\prod_{i=0}^{k-1}(q^n-q^i)}{\prod_{i=0}^{k-1}(q^k-q^i)} =\prod_{i=0}^{k-1}\frac{q^n-q^i}{q^k-q^i},
+\boxed{\;\#\{W:\dim W=k\}=\frac{\prod_{i=0}^{k-1}(q^n-q^i)}{\prod_{i=0}^{k-1}(q^k-q^i)} =\prod_{i=0}^{k-1}\frac{q^n-q^i}{q^k-q^i}\;},
 $$
 
 and simplifying $\dfrac{q^n-q^i}{q^k-q^i}=\dfrac{q^{n-i}-1}{q^{k-i}-1}$ and reindexing gives the stated product.
@@ -116,7 +116,7 @@ $$
 **Theorem (similarity classes).** The number of similarity classes of $n \times n$ matrices over $\mathbb{F}_q$ is the coefficient of $t^n$ in
 
 $$
-\prod_{m\ge1}(1-t^m)^{-a_m}, \qquad a_m=\sum_{d\mid m}N_d(q) .
+\boxed{\;\prod_{m\ge1}(1-t^m)^{-a_m}, \qquad a_m=\sum_{d\mid m}N_d(q)\;} .
 $$
 
 *Proof.* By the structure theorem a similarity class is determined by its multiset of elementary divisors, the prime powers $f^e$ with $f$ monic irreducible. For a fixed irreducible $f$ of degree $d$, the possible exponents $e \ge 1$ contribute the factor $\prod_{e\ge1}(1-t^{de})^{-1}$ to the generating function for total degree, so the count is $\prod_d\bigl(\prod_e(1-t^{de})^{-1}\bigr)^{N_d}$. Collecting the factors with $de=m$ gives the displayed product with exponent $a_m$.

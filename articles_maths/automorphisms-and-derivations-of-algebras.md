@@ -50,7 +50,7 @@ The composition and identity statements are direct.
 **Theorem.** The homomorphism $A^\times \to \operatorname{Aut}_R(A)$, $u \mapsto \iota_u$, has kernel $Z(A)^\times$, so
 
 $$
-\operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times.
+\boxed{\;\operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times\;}.
 $$
 
 *Proof.* The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ a unit this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.
@@ -216,7 +216,7 @@ $$
 for all $a, b \in A$. Hence $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism $A \to \operatorname{Der}_R(A)$ whose kernel is the centre $Z(A)$, and
 
 $$
-\operatorname{InnDer}_R(A) \;\cong\; A/Z(A)
+\boxed{\;\operatorname{InnDer}_R(A) \;\cong\; A/Z(A)\;}
 $$
 
 as Lie algebras, where $A/Z(A)$ carries the bracket induced by the commutator.
@@ -290,7 +290,7 @@ The proposition is the algebraic form of the statement that the infinitesimal au
 **Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then
 
 $$
-\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a).
+\boxed{\;\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a)\;}.
 $$
 
 This is the identity $\mathrm{Ad}_{\exp(a)} = \exp(\mathrm{ad}_a)$ of the adjoint representation. The identity is algebraic when $a$ is nilpotent, the series then terminating; in general it is read with the limit of Part II, where the series may be given a value.

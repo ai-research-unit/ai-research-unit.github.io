@@ -69,7 +69,7 @@ So an ideal is a subgroup that is a union of coordinate lines: it is determined 
 **Theorem (the ideals).** The ideals of $\mathbb{D}$ are exactly
 
 $$
-0,\qquad \mathbb{R}\Pi_{+}=\mathbb{D}\Pi_{+},\qquad \mathbb{R}\Pi_{-}=\mathbb{D}\Pi_{-},\qquad \mathbb{D}.
+\boxed{\;0,\qquad \mathbb{R}\Pi_{+}=\mathbb{D}\Pi_{+},\qquad \mathbb{R}\Pi_{-}=\mathbb{D}\Pi_{-},\qquad \mathbb{D}\;}.
 $$
 
 | Ideal | Generator | Dimension over $\mathbb{R}$ | Minimal | Maximal | Quotient |
@@ -86,7 +86,7 @@ Conversely, let $I\neq0$ be an ideal and choose $Q\in I$ nonzero. If both idempo
 **Corollary (failure of simplicity).** $\mathbb{D}$ is **not simple**: it has exactly two nontrivial proper ideals, both minimal and both maximal. The algebra is the direct product of the two fields
 
 $$
-\mathbb{D}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-},\qquad \mathbb{R}\Pi_{+}\cong\mathbb{R},\quad \mathbb{R}\Pi_{-}\cong\mathbb{R},
+\boxed{\;\mathbb{D}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-},\qquad \mathbb{R}\Pi_{+}\cong\mathbb{R},\quad \mathbb{R}\Pi_{-}\cong\mathbb{R}\;},
 $$
 
 and each of the two ideals is a field in its own right.
@@ -194,7 +194,7 @@ with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$. This is the **Peirce decomposition** of $\mat
 **Proposition (the Peirce multiplication).** For $\sigma,\tau,\mu,\nu\in\{+,-\}$,
 
 $$
-\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}.
+\boxed{\;\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}\;}.
 $$
 
 **Proof.** An element of $\mathbb{D}_{\sigma\tau}$ is $\Pi_\sigma Q\Pi_\tau$ and an element of $\mathbb{D}_{\mu\nu}$ is $\Pi_\mu B\Pi_\nu$. The product is $\Pi_\sigma Q\Pi_\tau\Pi_\mu B\Pi_\nu$; the middle factor is $\Pi_\tau\Pi_\mu=\delta_{\tau\mu}\Pi_\tau$, because the two idempotents are orthogonal and complete. The result is $\delta_{\tau\mu}\Pi_\sigma(Q\Pi_\tau B)\Pi_\nu\in\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$.

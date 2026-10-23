@@ -72,7 +72,7 @@ The square of the twisted Cauchy–Riemann operator is a Laplace-type operator, 
 **Theorem (Weitzenböck).** With the conventions above,
 
 $$
-D_E^{2}=\nabla^{E,*}\nabla^{E}+\mathcal{R}^{E},
+\boxed{\;D_E^{2}=\nabla^{E,*}\nabla^{E}+\mathcal{R}^{E}\;},
 $$
 
 where $\nabla^{E,*}\nabla^E$ is the connection Laplacian (the covariant Laplacian, non-negative on compactly supported sections) and $\mathcal{R}^E$ is an endomorphism-valued zeroth-order term, the **Weitzenböck curvature**, built from the curvature $R^S$ of the spin connection and the curvature $F^W$ of the twisting connection:
@@ -112,7 +112,7 @@ and this endomorphism is invertible for every $\xi\neq0$. Hence $D_E$ is ellipti
 **Theorem.** On a closed spin Riemannian manifold with a $\mathbb{Z}/2$-graded twisted Clifford module bundle $E=E_+\oplus E_-$, the operator restricts to an elliptic operator
 
 $$
-D_+\colon\Gamma(E_+)\to\Gamma(E_-),
+\boxed{\;D_+\colon\Gamma(E_+)\to\Gamma(E_-)\;},
 $$
 
 and the **index**
@@ -142,7 +142,7 @@ and the right-hand side is independent of $t$.
 **Theorem (twisted index formula).** Let $(M,g)$ be a closed spin manifold of even dimension $n=2m$, and let $E=S\otimes W$ be a twisted Clifford module bundle with $W$ a Hermitian vector bundle. Then
 
 $$
-\operatorname{ind}(D_+)=\int_M\hat{A}(TM)\,\operatorname{ch}(W),
+\boxed{\;\operatorname{ind}(D_+)=\int_M\hat{A}(TM)\,\operatorname{ch}(W)\;},
 $$
 
 where $\hat{A}(TM)$ is the $\hat{A}$-class of the tangent bundle, expressed in the Pontryagin classes, and $\operatorname{ch}(W)$ is the Chern character of $W$.

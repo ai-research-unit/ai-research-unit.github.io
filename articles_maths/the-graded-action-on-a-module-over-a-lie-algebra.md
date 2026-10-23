@@ -38,7 +38,7 @@ for homogeneous $x,y$ and every $m\in M$.
 **Proposition.** The compatibility condition is equivalent to the two statements
 
 $$
-x\cdot(\beta m) = (-1)^{\lvert x\rvert}\,\beta(x\cdot m), \qquad x\cdot M^{\delta}\subseteq M^{\delta+\lvert x\rvert} ,
+\boxed{\;x\cdot(\beta m) = (-1)^{\lvert x\rvert}\,\beta(x\cdot m), \qquad x\cdot M^{\delta}\subseteq M^{\delta+\lvert x\rvert}\;} ,
 $$
 
 the first of which says that the action graded-commutes with the parity operator, $x\beta = (-1)^{\lvert x\rvert}\beta x$ as operators when $x$ is homogeneous; the odd elements of $\mathrm{G}$ reverse the grading of $M$ and the even elements preserve it.
@@ -50,7 +50,7 @@ the first of which says that the action graded-commutes with the parity operator
 **Theorem (the sign rule is forced).** Let $M$ be a graded module and let $x,y$ be homogeneous elements of odd parity. Then the two orders of application of $x$ and $y$ are related by
 
 $$
-x\cdot(y\cdot m) + y\cdot(x\cdot m) = [x,y]\cdot m ,
+\boxed{\;x\cdot(y\cdot m) + y\cdot(x\cdot m) = [x,y]\cdot m\;} ,
 $$
 
 and the anticommutator replaces the commutator; for two even elements the ordinary commutator appears, and for an even and an odd element the sign is $+1$. Hence the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ of the definition is the only sign for which the odd-odd case is consistent with the Jacobi identity of the bracket.
@@ -96,7 +96,7 @@ $$
 the action
 
 $$
-x\cdot(m\otimes n) = (x\cdot m)\otimes n + (-1)^{\lvert x\rvert\lvert m\rvert}\,m\otimes(x\cdot n) ,
+\boxed{\;x\cdot(m\otimes n) = (x\cdot m)\otimes n + (-1)^{\lvert x\rvert\lvert m\rvert}\,m\otimes(x\cdot n)\;} ,
 $$
 
 and the **Koszul flip** $\tau(m\otimes n) = (-1)^{\lvert m\rvert\lvert n\rvert}n\otimes m$, which is an isomorphism of graded modules.

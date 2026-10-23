@@ -40,7 +40,7 @@ where $\operatorname{conj}_w(x)=wxw^{-1}$. The product of two reflections is the
 **Theorem.** For $u \in A^{\times}$ the operator $r_u$ is a reflection if and only if $u\alpha(u) \in C_A(M)$:
 
 $$
-r_u^{2}=\operatorname{conj}_{u\alpha(u)}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M).
+\boxed{\;r_u^{2}=\operatorname{conj}_{u\alpha(u)}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M)\;}.
 $$
 
 When the condition holds, $r_u$ is the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two; when it fails, $r_u$ is not a reflection, its order being whatever the order of the coset of $u\alpha(u)$ in $A^{\times}/C_A(M)^{\times}$ is.
@@ -72,7 +72,7 @@ The elements with $\alpha(u)=u^{-1}$ are the **$\alpha$-antisymmetric** units; t
 **Theorem.** For units $u,v \in A^{\times}$,
 
 $$
-r_u=r_v \iff v^{-1}u \in C_A(M).
+\boxed{\;r_u=r_v \iff v^{-1}u \in C_A(M)\;}.
 $$
 
 Consequently the map $u \mapsto r_u$ is constant on the right cosets of the subgroup $C_A(M)^{\times}=C_A(M)\cap A^{\times}$ and separates distinct cosets; its image is the set of reflections, and the criterion "$u$ acts by an involution" depends only on the coset.
@@ -92,7 +92,7 @@ Consequently the map $u \mapsto r_u$ is constant on the right cosets of the subg
 The correspondence is therefore a bijection of sets
 
 $$
-\{u \in A^{\times} : u\alpha(u) \in C_A(M)\} \big/ C_A(M)^{\times} \;\longleftrightarrow\; \{\text{reflections of } M\},
+\boxed{\;\{u \in A^{\times} : u\alpha(u) \in C_A(M)\} \big/ C_A(M)^{\times} \;\longleftrightarrow\; \{\text{reflections of } M\}\;},
 $$
 
 sending the coset of $u$ to $r_u$. For a faithful bimodule $C_A(M)=Z(A)$ and the correspondence is between reflections and the cosets of $Z(A)^{\times}$ in the units that act by an involution.

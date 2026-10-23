@@ -51,7 +51,7 @@ by submultiplicativity and the triangle inequality; the sequence $(y_n)$ is boun
 **Theorem (the twisted action is isometric).** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $\varsigma$ be a continuous involution of $\mathbb{K}$. Then $\varsigma$ is isometric, $\lvert\varsigma(\lambda)\rvert = \lvert\lambda\rvert$ for every $\lambda$, and the twisted action $\lambda \cdot x = \varsigma(\lambda)x$ of *Topological Sesqualgebras*, §*The Conjugate Module* satisfies
 
 $$
-\lVert \lambda \cdot x\rVert = \lvert\varsigma(\lambda)\rvert\,\lVert x\rVert = \lvert\lambda\rvert\,\lVert x\rVert .
+\boxed{\;\lVert \lambda \cdot x\rVert = \lvert\varsigma(\lambda)\rvert\,\lVert x\rVert = \lvert\lambda\rvert\,\lVert x\rVert\;} .
 $$
 
 Consequently the conjugate module $A^{\varsigma}$ is a normed $\mathbb{K}$-space with the norm of $A$, the identity $A \to A^{\varsigma}$ is an isometry, and it is $\mathbb{K}$-linear exactly when $\varsigma = \mathrm{id}$.
@@ -65,7 +65,7 @@ Consequently the conjugate module $A^{\varsigma}$ is a normed $\mathbb{K}$-space
 **Theorem (the product is bilinear and jointly continuous on the pair).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$. Read as a map $A \times A^{\varsigma} \to A$, the product is $\mathbb{K}$-bilinear and satisfies
 
 $$
-\lVert xy\rVert \leq \lVert x\rVert\,\lVert y\rVert
+\boxed{\;\lVert xy\rVert \leq \lVert x\rVert\,\lVert y\rVert\;}
 $$
 
 with the norm of $A$ on the first factor and the norm of $A^{\varsigma}$ on the second; it is jointly continuous.
@@ -107,7 +107,7 @@ submultiplicativity of the algebra product and the isometry of the involution. T
 **Proposition (the unit is a right unit of the derived operation).** Let $B$ be a unital Banach algebra with an isometric involution $*$ and let $\star$ be its derived operation. Then
 
 $$
-x \star 1 = x, \qquad 1 \star x = x^{*},
+\boxed{\;x \star 1 = x, \qquad 1 \star x = x^{*}\;},
 $$
 
 so $1$ is a right unit and not a left unit of $\star$ unless $* = \mathrm{id}$, and $\lVert 1\rVert = 1$ if the norm is normalised.

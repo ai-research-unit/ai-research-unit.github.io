@@ -48,7 +48,7 @@ so $\operatorname{End}(V)$ is an **involutive algebra** (a `*`-algebra) over $F$
 **Theorem.** For $g \in G$ a symmetry operator the adjoint with respect to the invariant form is the inverse,
 
 $$
-g^{*} = g^{-1}, \qquad g^{*}g = gg^{*} = \operatorname{id},
+\boxed{\;g^{*} = g^{-1}, \qquad g^{*}g = gg^{*} = \operatorname{id}\;},
 $$
 
 so every element of the symmetry group is a unitary operator of the form; conversely a unitary operator of the form is an isometry, and the group of unitary operators is the isometry group of $h$.
@@ -82,7 +82,7 @@ so the one-parameter groups of symmetries are the exponentials of the skew-adjoi
 **Proposition.** The operator involution is an involutive anti-automorphism of the algebra $\operatorname{End}(V)$, it makes the algebra a `*`-algebra, and its interaction with a subalgebra is what the unitary group of the form is defined by:
 
 $$
-\mathrm{U}(V,h) = \{T : T^{*}T = \operatorname{id}\} = \{T : T^{*} = T^{-1}\}.
+\boxed{\;\mathrm{U}(V,h) = \{T : T^{*}T = \operatorname{id}\} = \{T : T^{*} = T^{-1}\}\;}.
 $$
 
 **Proof.** The anti-automorphism and the involution are the proposition of the previous section; the characterisation of the unitary group is the definition.
@@ -92,7 +92,7 @@ $$
 **Theorem (the two structures do not coincide).** Let $\rho$ be a representation of the symmetry group $G$ by isometries of the invariant form $h$, so that $\rho(g)^{*} = \rho(g)^{-1}$ for every $g$, and let $\sigma$ be an involution of the **elements** of $G$. Then the identity
 
 $$
-\rho(\sigma(g)) = \rho(g)^{*} \qquad \text{for all } g \in G
+\boxed{\;\rho(\sigma(g)) = \rho(g)^{*} \qquad \text{for all } g \in G\;}
 $$
 
 holds if and only if

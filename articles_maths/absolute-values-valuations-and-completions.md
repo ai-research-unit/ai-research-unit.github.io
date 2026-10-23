@@ -71,7 +71,7 @@ It is non-Archimedean and discrete: $\lvert p \rvert_p = 1/p$ and $\lvert n \rve
 **Theorem.** Two nontrivial absolute values on a field $F$ are equivalent if and only if there is a real number $\alpha > 0$ with
 
 $$
-\lvert x \rvert_2 = \lvert x \rvert_1^{\alpha} \quad \text{for all } x \in F .
+\boxed{\;\lvert x \rvert_2 = \lvert x \rvert_1^{\alpha} \quad \text{for all } x \in F\;} .
 $$
 
 **Proof sketch.** If the relation holds, the two absolute values have the same balls up to scaling of the radius, hence the same topology. Conversely, if the topologies agree, then $\lvert x \rvert_1 < 1$ implies $\lvert x \rvert_2 < 1$ (a sequence tending to $0$ in one topology tends to $0$ in the other), and one shows that the subgroups $\{x : \lvert x \rvert_1 < 1\}$ and $\{x : \lvert x \rvert_2 < 1\}$ coincide; choosing $a$ with $\lvert a \rvert_1 \neq 0, 1$ and comparing $\lvert a^n \rvert_1$ with $\lvert x \rvert_2$ for all $x$ gives the exponent $\alpha$.
@@ -79,7 +79,7 @@ $$
 **Theorem (product formula for $\mathbb{Q}$).** For every $x \in \mathbb{Q}^\times$,
 
 $$
-\lvert x \rvert_\infty \prod_{p} \lvert x \rvert_p = 1,
+\boxed{\;\lvert x \rvert_\infty \prod_{p} \lvert x \rvert_p = 1\;},
 $$
 
 where the product is over all primes and the product is finite because $v_p(x) = 0$ for almost all $p$.
@@ -253,7 +253,7 @@ with $n_0 = v_p(x)$; $\mathbb{Z}_p$ corresponds to $n_0 \geq 0$.
 **Theorem (Hensel's lemma).** Let $F$ be complete with respect to a non-Archimedean absolute value, let $\mathcal{O}$ be its valuation ring, and let $f \in \mathcal{O}[x]$. If there is $a \in \mathcal{O}$ with
 
 $$
-\lvert f(a) \rvert < \lvert \frac{df}{dx}(a) \rvert^2,
+\boxed{\;\lvert f(a) \rvert < \lvert \frac{df}{dx}(a) \rvert^2\;},
 $$
 
 then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rvert < \lvert \frac{df}{dx}(a) \rvert$.

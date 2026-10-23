@@ -20,9 +20,7 @@ Throughout, $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\langle\ti
 
 **Theorem (the radius).** Let $c \in \mathbb{H}$ and $R(c)=1+|c|$. If $|\tilde q_n| \geq R(c)$ for some $n$ then $|\tilde q_k| \to \infty$; consequently the filled Julia set is
 
-$$
-K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\},
-$$
+$$ \boxed{\; K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\} \;} ,$$
 
 and a point of $\mathbb{H}$ is tested for membership in $K_c$ by iterating until either $R(c)$ is exceeded or a prescribed bound on the number of steps is reached.
 
@@ -42,9 +40,7 @@ and for $\tilde q \in K_c$ one sets $G_c(\tilde q)=0$.
 
 **Theorem (existence and the explicit series).** For every $\tilde q$ with unbounded orbit the limit exists, and for $|\tilde q|>R(c)$ it equals the absolutely convergent series
 
-$$
-G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{\langle\tilde q_k^2+c\rangle_{\natural}}{\langle\tilde q_k\rangle_{\natural}^2}.
-$$
+$$ \boxed{\; G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{\langle\tilde q_k^2+c\rangle_{\natural}}{\langle\tilde q_k\rangle_{\natural}^2} \;} .$$
 
 The function $G_c$ is continuous, nonnegative, vanishes exactly on $K_c$, and satisfies $G_c(\tilde q)=\log|\tilde q|+O(|\tilde q|^{-2})$ as $|\tilde q|\to\infty$.
 
@@ -88,9 +84,7 @@ since the fundamental solution of the Laplacian in $\mathbb{R}^4$ is $|\tilde q|
 
 **Proposition (subharmonicity, quoted).** The function $G_c$ is subharmonic on the escaping set of $\mathbb{H}=\mathbb{R}^4$ with respect to the Euclidean Laplacian: for every ball $B(\tilde q,r)$ contained in the escaping set,
 
-$$
-G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c.
-$$
+$$ \boxed{\; G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c \;} .$$
 
 ## Worked Example
 

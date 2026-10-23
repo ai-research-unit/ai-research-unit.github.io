@@ -24,7 +24,7 @@ $$
 **Theorem (it is a homeomorphism).** $\Lambda_a = L_a\circ\alpha$ is a homeomorphism of $G$, with inverse
 
 $$
-\Lambda_a^{-1} = \alpha \circ L_{a^{-1}} = \Lambda^{\mathrm{R}}_{\alpha(a^{-1})} ,
+\boxed{\;\Lambda_a^{-1} = \alpha \circ L_{a^{-1}} = \Lambda^{\mathrm{R}}_{\alpha(a^{-1})}\;} ,
 $$
 
 that is $\Lambda_a^{-1}(y) = \alpha(a^{-1}y) = \alpha(y)\,\alpha(a)^{-1}$.
@@ -42,7 +42,7 @@ So the signed left multiplication is an **affine** operator: it permutes the gro
 **Proposition (the composition laws).** For all $a, b \in G$,
 
 $$
-\Lambda_a \circ \Lambda_b = L_{a\alpha(b)}, \qquad L_a \circ \Lambda_b = \Lambda_{ab}, \qquad \Lambda_a \circ L_b = \Lambda_{a\alpha(b)} .
+\boxed{\;\Lambda_a \circ \Lambda_b = L_{a\alpha(b)}, \qquad L_a \circ \Lambda_b = \Lambda_{ab}, \qquad \Lambda_a \circ L_b = \Lambda_{a\alpha(b)}\;} .
 $$
 
 **Proof.** $\Lambda_a(\Lambda_b(x)) = a\alpha(b\alpha(x)) = a\alpha(b)x = L_{a\alpha(b)}(x)$; the second and third are the same computation with the appropriate factor unsigned, using $\alpha(xb) = \alpha(b)\alpha(x)$.
@@ -90,7 +90,7 @@ $$
 **Proposition (when the operator is an involution).** The square of the signed left multiplication is the left translation
 
 $$
-\Lambda_a^2 = L_{a\alpha(a)} ,
+\boxed{\;\Lambda_a^2 = L_{a\alpha(a)}\;} ,
 $$
 
 so $\Lambda_a$ is an involution of the set $G$ if and only if $a\alpha(a) = e$, that is if and only if $\alpha(a) = a^{-1}$, equivalently $a \in I(\alpha) = G^\sigma$. In that case $\Lambda_a$ is a homeomorphism of order two whose fixed set is closed; by the dictionary of *Involutive Topological Groups* the carrier condition is the same one that makes the signed conjugation $\rho_a$ a reflection with central product $a\alpha(a) = e$.

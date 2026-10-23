@@ -33,7 +33,7 @@ Equivalently, the curvature is a section of $\Lambda^2T^*M\otimes\Lambda^2T^*M$:
 **Theorem.** The curvature tensor has the **pair symmetry**
 
 $$
-R(X, Y, Z, W) = R(Z, W, X, Y),
+\boxed{\;R(X, Y, Z, W) = R(Z, W, X, Y)\;},
 $$
 
 and satisfies the **first Bianchi identity**
@@ -61,7 +61,7 @@ equivalently $R(X,Y,Z,W) + R(Y,Z,X,W) + R(Z,X,Y,W) = 0$. The pair symmetry is th
 **Theorem.** The curvature operator is self-adjoint for the metric on the bivectors,
 
 $$
-\mathcal{R}^{*} = \mathcal{R}, \qquad \langle\mathcal{R}(\omega),\eta\rangle = \langle\omega,\mathcal{R}(\eta)\rangle \quad (\omega,\eta\in\Lambda^2T_pM),
+\boxed{\;\mathcal{R}^{*} = \mathcal{R}, \qquad \langle\mathcal{R}(\omega),\eta\rangle = \langle\omega,\mathcal{R}(\eta)\rangle \quad (\omega,\eta\in\Lambda^2T_pM)\;},
 $$
 
 so it is diagonalisable with real eigenvalues and an orthonormal eigenbasis of the bivectors; the eigenvalues are the **principal curvatures** of the curvature operator, and the sectional curvature of a unit bivector is the quadratic form
@@ -113,8 +113,8 @@ the two eigenspaces of the involution, of dimension three each in the four-dimen
 **Theorem.** Let $\sigma$ be an isometric involution of $(M, g)$, with the conjugation $\mathrm{ad}_\sigma$ on the operator layer of *Isometric Involutions on the Operator Layer*, the preceding article. Then the conjugation acts on the curvature tensor and on the curvature operator by the induced involutions of the tangent space,
 
 $$
-\mathrm{ad}_\sigma(R)(X,Y,Z,W) = R(d\sigma X, d\sigma Y, d\sigma Z, d\sigma W), \qquad
-\mathrm{ad}_\sigma(\mathcal{R}) = \mathcal{R},
+\boxed{\;\mathrm{ad}_\sigma(R)(X,Y,Z,W) = R(d\sigma X, d\sigma Y, d\sigma Z, d\sigma W), \qquad
+\mathrm{ad}_\sigma(\mathcal{R}) = \mathcal{R}\;},
 $$
 
 so the curvature operator is a **fixed operator** of the involution, and it commutes with the involution of the bivectors induced by $d\sigma$; the two involutions of the curvature tensor — the skew-symmetry and the pair symmetry — are preserved by $\sigma$, and the Hodge involution is preserved by an orientation-preserving $\sigma$ and conjugated by an orientation-reversing one.

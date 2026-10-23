@@ -93,7 +93,7 @@ the ordinary homotopy group of the fixed set based at $x$; a $G$-map $f$ induces
 **Theorem.** An equivariant fibration is an ordinary fibration on the underlying spaces and, by restriction, a fibration $E^H\to B^H$ on every fixed set; the $G$-fibrations are stable under pullback and composition, the $G$-cofibrations are stable under pushout and composition, and a $G$-fibration between $G$-CW complexes has a long exact sequence of equivariant homotopy groups
 
 $$
-\cdots \to \pi_n^H(F) \to \pi_n^H(E) \to \pi_n^H(B) \to \pi_{n-1}^H(F)\to\cdots
+\boxed{\;\cdots \to \pi_n^H(F) \to \pi_n^H(E) \to \pi_n^H(B) \to \pi_{n-1}^H(F)\to\cdots\;}
 $$
 
 for every $H$, with $F$ the fibre.
@@ -127,7 +127,7 @@ the set of points whose isotropy is conjugate to $H$.
 **Theorem (slice theorem; standard).** Let a compact Lie group $G$ act on a completely regular space $X$ and let $x \in X$. Then there are a $G_x$-invariant neighbourhood $S$ of $x$ (a **slice**) and an equivariant homeomorphism of the associated bundle onto a neighbourhood of the orbit,
 
 $$
-G\times_{G_x} S \;\cong\; U, \qquad U \text{ a } G\text{-invariant neighbourhood of } G\cdot x ,
+\boxed{\;G\times_{G_x} S \;\cong\; U, \qquad U \text{ a } G\text{-invariant neighbourhood of } G\cdot x\;} ,
 $$
 
 which is the identity on the orbit; consequently the space is locally modelled on the twisted product of the orbit with the slice, and the action is determined near each orbit by the representation of the isotropy group on the slice.
@@ -139,7 +139,7 @@ which is the identity on the orbit; consequently the space is locally modelled o
 **Theorem.** For closed subgroups $H,K \leq G$ the fixed set of $H$ in the orbit $G/K$ is
 
 $$
-(G/K)^H = \{gK : g^{-1}Hg \subseteq K\},
+\boxed{\;(G/K)^H = \{gK : g^{-1}Hg \subseteq K\}\;},
 $$
 
 whose connected components are the double cosets, so that $\pi_0^H(G/K)$ is the set of cosets $gK$ with $g^{-1}Hg\subseteq K$ with the base point $eK$ when it is fixed; for $K=1$ the orbit is free and $(G/K)^H$ is empty for $H\neq1$, while for the trivial orbit $G/G=\mathrm{pt}$ all the equivariant homotopy groups vanish. For $H\leq K$ the fixed set is a homogeneous space of the normalizer, and the higher equivariant homotopy groups of the orbit are those of that homogeneous space.

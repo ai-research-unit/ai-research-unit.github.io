@@ -62,13 +62,13 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach
 **Theorem (the universal representation).** Let $A$ be a unital $\mathrm{C}^*$-algebra and $\mathcal{S}(A)$ its state space. The direct sum
 
 $$
-\pi_u = \bigoplus_{f \in \mathcal{S}(A)} \pi_f : A \longrightarrow B\Bigl(\bigoplus_{f \in \mathcal{S}(A)} H_f\Bigr)
+\boxed{\;\pi_u = \bigoplus_{f \in \mathcal{S}(A)} \pi_f : A \longrightarrow B\Bigl(\bigoplus_{f \in \mathcal{S}(A)} H_f\Bigr)\;}
 $$
 
 is a faithful isometric `*`-representation, the **universal representation**, and for every $a$ the norm is the supremum of the GNS norms,
 
 $$
-\lVert a\rVert = \sup_{f \in \mathcal{S}(A)} \lVert\pi_f(a)\rVert = \sup_{f \in \mathcal{S}(A)} f(a^*a)^{1/2} .
+\boxed{\;\lVert a\rVert = \sup_{f \in \mathcal{S}(A)} \lVert\pi_f(a)\rVert = \sup_{f \in \mathcal{S}(A)} f(a^*a)^{1/2}\;} .
 $$
 
 **Proof.** Each $\pi_f$ is a `*`-representation by the GNS construction of *States and Positive Functionals on an Involutive Algebra*, so the direct sum is one and its norm is the supremum of the norms of the summands. For the isometry, $\lVert\pi_f(a)\rVert^2 = \lVert\pi_f(a^*a)\rVert$; the state $f$ with $f(a^*a) = \lVert a^*a\rVert$, which exists because $a^*a$ is self-adjoint, has $\langle\pi_f(a^*a)\xi_f,\xi_f\rangle = \lVert a^*a\rVert$ with $\pi_f(a^*a) \geq 0$, so $\lVert\pi_f(a^*a)\rVert \geq \lVert a^*a\rVert$ and hence $\lVert\pi_f(a^*a)\rVert = \lVert a^*a\rVert$; the supremum is therefore $\lVert a^*a\rVert = \lVert a\rVert^2$.

@@ -41,7 +41,7 @@ so the graded action of an even element is the unsigned left multiplication and 
 
 **Theorem (the Koszul sign).** For homogeneous $a,b\in\mathcal{A}$,
 $$
-\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab}.
+\boxed{\;\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab}\;}.
 $$
 
 *Proof.* For homogeneous $m$,
@@ -56,7 +56,7 @@ the same; the two agree on the homogeneous elements and hence on all of $M$.
 
 **Corollary (commutativity of the graded action).** On the commutative algebra the graded actions commute pairwise,
 $$
-\rho_a\rho_b=\rho_b\rho_a ,
+\boxed{\;\rho_a\rho_b=\rho_b\rho_a\;} ,
 $$
 because the Koszul sign is symmetric, $(-1)^{|a||b|}=(-1)^{|b||a|}$, and the algebra is commutative, $ab=ba$. The Koszul sign is visible in the product law $\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab}$ and not in a failure of commutativity; the family of all graded actions is commutative, and the grading shows in the relation between the product and the composite.
 
@@ -82,7 +82,7 @@ using $2|m|=0$ in $\mathbb{Z}/2$; the two sides agree on the homogeneous element
 
 **Theorem (the adjoint).** On the regular module with the form of the category, the adjoint of the graded action is
 $$
-\rho_a^*=\rho_{\delta(a)},\qquad \delta=\sigma\alpha=\alpha\sigma ,
+\boxed{\;\rho_a^*=\rho_{\delta(a)},\qquad \delta=\sigma\alpha=\alpha\sigma\;} ,
 $$
 for every $a\in\mathcal{A}$.
 

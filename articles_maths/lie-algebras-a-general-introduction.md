@@ -89,7 +89,7 @@ for all $u \in M$, provided that $2$ is not a zero divisor in $R$. Over a genera
 The product satisfies the **Jacobi identity** if
 
 $$
-[u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0
+\boxed{\;[u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0\;}
 $$
 
 for all $u, v, w \in M$.
@@ -123,7 +123,7 @@ $$
 The Jacobi identity is equivalent to
 
 $$
-\mathrm{ad}_u([v, w]) = [\mathrm{ad}_u(v), w] + [v, \mathrm{ad}_u(w)].
+\boxed{\;\mathrm{ad}_u([v, w]) = [\mathrm{ad}_u(v), w] + [v, \mathrm{ad}_u(w)]\;}.
 $$
 
 In words: the adjoint action $\mathrm{ad}_u$ is a **derivation** of the bracket. This is the precise sense in which the Jacobi identity replaces associativity: it says that the bracket behaves like a derivative with respect to itself.
@@ -131,7 +131,7 @@ In words: the adjoint action $\mathrm{ad}_u$ is a **derivation** of the bracket.
 **Formulation 3: The bracket is a representation.** The map $u \mapsto \mathrm{ad}_u$ is a **representation** of $\mathrm{G}$ on itself: it is linear, and it satisfies
 
 $$
-\mathrm{ad}_{[u, v]} = [\mathrm{ad}_u, \mathrm{ad}_v],
+\boxed{\;\mathrm{ad}_{[u, v]} = [\mathrm{ad}_u, \mathrm{ad}_v]\;},
 $$
 
 where the bracket on the right is the commutator of linear maps. This is the **adjoint representation** of $\mathrm{G}$.

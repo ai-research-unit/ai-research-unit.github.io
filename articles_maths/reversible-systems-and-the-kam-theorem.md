@@ -17,7 +17,7 @@ No physics is invoked.
 **Definition.** A **reversible twisted system** is a smooth map $T$ of a product manifold $N\times\mathbb{T}^n$ (or an annulus, for $n=1$) with a reversor $R$ of the form
 
 $$
-R(x,\theta)=(R_0(x),-\theta+\varphi(x)),
+\boxed{\;R(x,\theta)=(R_0(x),-\theta+\varphi(x))\;},
 $$
 
 where $R_0$ is an involution of $N$ and $\varphi$ a smooth function; the system is **twisted** if the frequency map of the integrable model is nondegenerate, $\det\partial\omega/\partial I\neq0$, in action-angle coordinates $(I,\theta)$. The model case is the reversible map of the annulus with a **symmetry line**, the fixed set $\mathrm{Fix}(R)$ a finite union of curves, as in the reversible theory of *Symmetric Periodic Orbits and the Involution*.

@@ -28,7 +28,7 @@ Note that the two faces share the vertex $v_k$; this overlap is what makes the p
 **Theorem (Leibniz rule).** The coboundary is a graded derivation for the cup product:
 
 $$
-\delta(\varphi \smile \psi) = (\delta\varphi) \smile \psi + (-1)^{|\varphi|}\, \varphi \smile (\delta\psi).
+\boxed{\;\delta(\varphi \smile \psi) = (\delta\varphi) \smile \psi + (-1)^{|\varphi|}\, \varphi \smile (\delta\psi)\;}.
 $$
 
 Consequently the cup product of two cocycles is a cocycle, and the product of a cocycle with a coboundary is a coboundary, so $\smile$ descends to a well-defined product
@@ -79,7 +79,7 @@ extended $R$-linearly to $\frown : C_n(X;R) \times C^k(X;R) \to C_{n-k}(X;R)$. T
 **Theorem (the boundary rule).** For $\varphi \in C^k(X;R)$ and $c \in C_n(X;R)$,
 
 $$
-\partial(c \frown \varphi) = (-1)^k\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr).
+\boxed{\;\partial(c \frown \varphi) = (-1)^k\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr)\;}.
 $$
 
 Hence $\frown$ descends to a pairing
@@ -143,7 +143,7 @@ $$
 which splits, though not naturally. Its middle term is the cokernel of the multiplication by the Tor term, and the isomorphism
 
 $$
-H_n(X\times Y;R) \cong \Bigl(\bigoplus_{i+j=n} H_i(X;R)\otimes_R H_j(Y;R)\Bigr) \oplus \Bigl(\bigoplus_{i+j=n-1}\operatorname{Tor}_1^R(H_i(X),H_j(Y))\Bigr)
+\boxed{\;H_n(X\times Y;R) \cong \Bigl(\bigoplus_{i+j=n} H_i(X;R)\otimes_R H_j(Y;R)\Bigr) \oplus \Bigl(\bigoplus_{i+j=n-1}\operatorname{Tor}_1^R(H_i(X),H_j(Y))\Bigr)\;}
 $$
 
 is non-natural. The functor $\operatorname{Tor}_1^R$ is the one of Part I's *Ext and Tor*, written in parallel.

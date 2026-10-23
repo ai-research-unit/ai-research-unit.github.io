@@ -23,7 +23,7 @@ Throughout, $V$ is a complex vector space of dimension $N$, $h$ is a Hermitian f
 
 **Proposition (polarisation).** A Hermitian form is determined by its quadratic function $\mathfrak{Q}(x) = h(x,x)$, through
 $$
-h(x, y) = \tfrac14 \sum_{k=0}^{3} i^{k}\, \mathfrak{Q}(y + i^{k}x) ,
+\boxed{\;h(x, y) = \tfrac14 \sum_{k=0}^{3} i^{k}\, \mathfrak{Q}(y + i^{k}x)\;} ,
 $$
 and $q$ takes real values; conversely a real-valued quadratic function satisfying this polarisation is a Hermitian form.
 
@@ -31,7 +31,7 @@ and $q$ takes real values; conversely a real-valued quadratic function satisfyin
 
 **Theorem (Sylvester normal form).** Every Hermitian form on $V$ is equivalent, under a change of basis in $GL(V)$, to the normal form
 $$
-h(z, w) = \sum_{i=1}^{n} z_i\bar w_i - \sum_{j=n+1}^{N} z_j\bar w_j
+\boxed{\;h(z, w) = \sum_{i=1}^{n} z_i\bar w_i - \sum_{j=n+1}^{N} z_j\bar w_j\;}
 $$
 for a unique pair $(n,m)$ with $n+m=N$; the pair is the **signature** of the form, the number $n$ is its **index of positivity** and $m$ its **index of negativity**, and the normal form is obtained by the Gram–Schmidt process applied to the form.
 
@@ -47,7 +47,7 @@ for a unique pair $(n,m)$ with $n+m=N$; the pair is the **signature** of the for
 
 **Proposition (the unitary group).** The unitary operators of $(V,h)$ form a group $\mathrm{U}(h)$, and in a unitary frame the group is
 $$
-\mathrm{U}(h) \cong \mathrm{U}(N) = \{ A \in GL(N, \mathbb{C}) : A^{\dagger}A = I \} ,
+\boxed{\;\mathrm{U}(h) \cong \mathrm{U}(N) = \{ A \in GL(N, \mathbb{C}) : A^{\dagger}A = I \}\;} ,
 $$
 the classical **unitary group**; the **special unitary group** $SU(N)$ is the subgroup of the unitaries with $\det A = 1$, and every unitary has $|\det A| = 1$. For the indefinite form of signature $(n,m)$ in a normal frame the group is
 $$

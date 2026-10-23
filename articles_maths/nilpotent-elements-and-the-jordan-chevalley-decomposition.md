@@ -130,7 +130,7 @@ $$
 lies in the maximal ideal $(f_i)$, so it is nilpotent. Assembling the components,
 
 $$
-s = \sum_{i=1}^{r} s_i \varepsilon_i, \qquad n = \sum_{i=1}^{r} n_i \varepsilon_i,
+\boxed{\;s = \sum_{i=1}^{r} s_i \varepsilon_i, \qquad n = \sum_{i=1}^{r} n_i \varepsilon_i\;},
 $$
 
 gives $s, n \in k[a]$, $s$ semisimple (a product of fields), $n$ nilpotent, $sn = ns$ (both lie in the commutative algebra $k[a]$), and $a = s + n$. The minimal polynomial of $s$ is $\prod_i f_i$, the squarefree part of $m_a$, and the nilpotency index of $n$ is $\max_i e_i$.
@@ -192,7 +192,7 @@ $$
 Then $u - 1 = s^{-1}n$ is nilpotent, so $u$ is **unipotent**, and
 
 $$
-a = s u = u s .
+\boxed{\;a = s u = u s\;} .
 $$
 
 This is the **multiplicative Jordan–Chevalley decomposition**: every unit is the product of a commuting semisimple unit and a unipotent element. It is unique, because the additive decomposition is unique and $u = s^{-1}a$. Conversely, a multiplicative decomposition $a = su$ with $s$ semisimple, $u$ unipotent and $su = us$ gives the additive decomposition $a = s + s(u-1)$, with $s(u-1)$ nilpotent. The two versions carry the same information for units.
@@ -220,7 +220,7 @@ $$
 with the $\lambda_i$ distinct. The generalized eigenvalue decomposition of *The Eigenvalue Decomposition of an Element* gives idempotents $\varepsilon_i$ and nilpotent elements $n_i = (a-\lambda_i)\varepsilon_i$ with
 
 $$
-a = \sum_{i=1}^{r}\left(\lambda_i \varepsilon_i + n_i\right), \qquad n_i^{e_i} = 0 .
+\boxed{\;a = \sum_{i=1}^{r}\left(\lambda_i \varepsilon_i + n_i\right), \qquad n_i^{e_i} = 0\;} .
 $$
 
 The semisimple part is

@@ -48,7 +48,7 @@ The Langlands reciprocity conjecture is the statement that Artin $L$-functions a
 **Conjecture (Langlands reciprocity).** Let $F$ be a global field and let $\rho : \Gamma_F \to GL_n(\mathbb{C})$ be a Galois representation. Then there is a cuspidal automorphic representation $\pi$ of $GL_n(\mathbb{A}_F)$ with
 
 $$
-L(s, \pi) = L(s, \rho),
+\boxed{\;L(s, \pi) = L(s, \rho)\;},
 $$
 
 the equality holding at every place including the ramified and archimedean ones. In particular $L(s,\rho)$ is entire for irreducible $\rho$ and satisfies the functional equation of $\pi$.
@@ -92,7 +92,7 @@ The dual group is the algebraic home of the local data: for an unramified repres
 **Theorem (local Langlands for $GL_n$; Harris–Taylor, Henniart).** Let $F$ be a non-archimedean local field and let $n \geq 1$. There is a canonical bijection
 
 $$
-\left\{ \text{irreducible admissible representations } \pi \text{ of } GL_n(F) \right\} \longleftrightarrow \left\{ \text{$n$-dimensional Frobenius-semisimple Weil–Deligne representations } \rho \text{ of } W_F \right\},
+\boxed{\;\left\{ \text{irreducible admissible representations } \pi \text{ of } GL_n(F) \right\} \longleftrightarrow \left\{ \text{$n$-dimensional Frobenius-semisimple Weil–Deligne representations } \rho \text{ of } W_F \right\}\;},
 $$
 
 characterised by the equality of local factors: for every irreducible representation $\pi$ and its parameter $\rho = \phi_\pi$, and for every character $\chi$ of $F^\times$,
@@ -148,7 +148,7 @@ Drinfeld proved the case $n=2$ and introduced the moduli of **shtukas** — the 
 **Theorem (modularity; Wiles, Taylor–Wiles, Breuil–Conrad–Diamond–Taylor).** Let $E$ be an elliptic curve over $\mathbb{Q}$. Then there is a cuspidal automorphic representation $\pi$ of $GL_2(\mathbb{A}_{\mathbb{Q}})$ of weight two and level $N_E$ with
 
 $$
-L(s, E) = L(s, \pi),
+\boxed{\;L(s, E) = L(s, \pi)\;},
 $$
 
 where $L(s,E)$ is the Hasse–Weil $L$-function of $E$. Equivalently, every elliptic curve over $\mathbb{Q}$ is modular.

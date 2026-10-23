@@ -254,7 +254,7 @@ which is the dimension of $GL_n$ computed above, and the sum of the dimensions o
 **Theorem (Levi decomposition).** Let $G$ be a connected linear algebraic group over a field $k$ of characteristic zero (more generally, over a perfect field, for reduced groups). Then $G$ is the semidirect product
 
 $$
-G = R_u(G) \rtimes L
+\boxed{\;G = R_u(G) \rtimes L\;}
 $$
 
 of its unipotent radical $R_u(G)$ and a maximal reductive subgroup $L$, called a **Levi factor**; the Levi factor is unique up to conjugacy by an element of $R_u(G)$, and $G/R_u(G) \cong L$ is reductive. For a parabolic subgroup $P$, the same statement reads $P = R_u(P) \rtimes L$ with $L$ reductive.
@@ -270,7 +270,7 @@ of its unipotent radical $R_u(G)$ and a maximal reductive subgroup $L$, called a
 **Theorem (Bruhat decomposition).** Let $G$ be a connected reductive group over an algebraically closed field, $B$ a Borel subgroup and $T \subseteq B$ a maximal torus with Weyl group $W = N_G(T)/T$. Then
 
 $$
-G = \bigsqcup_{w \in W} B w B,
+\boxed{\;G = \bigsqcup_{w \in W} B w B\;},
 $$
 
 the union is disjoint, each $BwB$ is a locally closed subvariety of dimension $\ell(w) + \dim B$ with $\ell$ the length function of *Coxeter Groups*, and the closure is
@@ -296,7 +296,7 @@ where $\leq$ is the Bruhat order on $W$ determined by the length and the reflect
 **Theorem.** Let $G$ be a connected reductive group. Then its centre $Z(G)$ is a diagonalisable group, of the form $S \times A$ with $S$ a torus and $A$ finite, and the derived subgroup $[G,G]$ is semisimple; moreover
 
 $$
-G = Z(G)^\circ \cdot [G,G]
+\boxed{\;G = Z(G)^\circ \cdot [G,G]\;}
 $$
 
 with $Z(G)^\circ \cap [G,G]$ finite, and $\dim G = \dim Z(G)^\circ + \dim [G,G]$.

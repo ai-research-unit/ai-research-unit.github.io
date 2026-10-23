@@ -27,7 +27,7 @@ It is the left one-sided operator $\Lambda^{\theta}_x$ of *One-Sided Operators o
 **Proposition (the sign, and the conjugate form).** Let $x$ be homogeneous of degree $k$ and $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_xx$. Then
 
 $$
-\Lambda^{\alpha}_x=\varepsilon_x\,L_x=\alpha\circ L_x\circ\alpha .
+\boxed{\;\Lambda^{\alpha}_x=\varepsilon_x\,L_x=\alpha\circ L_x\circ\alpha\;} .
 $$
 
 In particular $\Lambda^{\alpha}_x=L_x$ for even $x$ and $\Lambda^{\alpha}_x=-L_x$ for odd $x$.
@@ -65,7 +65,7 @@ $$
 **Proposition (the two pairings).** The left and right factors commute, and
 
 $$
-L_x\circ R_{x^{-1}}=\mathrm{Ad}_x,\qquad \Lambda^{\alpha}_x\circ R_{x^{-1}}=\mathrm{Ad}^{\alpha}_x .
+\boxed{\;L_x\circ R_{x^{-1}}=\mathrm{Ad}_x,\qquad \Lambda^{\alpha}_x\circ R_{x^{-1}}=\mathrm{Ad}^{\alpha}_x\;} .
 $$
 
 *Proof.* $L_x\bigl(R_{x^{-1}}(y)\bigr)=x\,y\,x^{-1}$ and $\Lambda^{\alpha}_x\bigl(R_{x^{-1}}(y)\bigr)=\alpha(x)\,y\,x^{-1}$; the commutation of a left and a right multiplication is associativity.
@@ -81,7 +81,7 @@ with the same $\varepsilon_x=(-1)^{k}$. The right factor is the same in both, so
 **Corollary (the reflection).** For a vector $a$ with $\mathfrak{Q}(a)\neq0$ the pairing with the signed left multiplication gives the reflection on the space of vectors,
 
 $$
-\Lambda^{\alpha}_a\bigl(R_{a^{-1}}(v)\bigr)=\mathrm{Ad}^{\alpha}_a(v)=\rho_a(v),\qquad L_a\bigl(R_{a^{-1}}(v)\bigr)=\mathrm{Ad}_a(v)=-\rho_a(v),
+\boxed{\;\Lambda^{\alpha}_a\bigl(R_{a^{-1}}(v)\bigr)=\mathrm{Ad}^{\alpha}_a(v)=\rho_a(v),\qquad L_a\bigl(R_{a^{-1}}(v)\bigr)=\mathrm{Ad}_a(v)=-\rho_a(v)\;},
 $$
 
 for every $v\in V$. So the plain pairing sends an odd element to the negative of the reflection and the signed pairing to the reflection itself; a reflection is produced by the pair, and the sign that selects $\rho_a$ over $-\rho_a$ is the one carried by $\Lambda^{\alpha}_a$.

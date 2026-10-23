@@ -15,7 +15,7 @@ What is added here: the definition of a subalgebra and of a $*$-subalgebra, the 
 **Definition.** A **subalgebra** of $A$ is an $R$-submodule $B \subseteq A$ with $BB \subseteq B$. The **conjugate image** of a subset $B$ is
 
 $$
-B^{*} = \{ x^{*} : x \in B \},
+\boxed{\;B^{*} = \{ x^{*} : x \in B \}\;},
 $$
 
 and a **$*$-subalgebra** is a subalgebra with $B^{*} \subseteq B$.
@@ -137,7 +137,7 @@ $$
 **Proposition.** Let $A$ be associative with a $\varsigma$-semilinear involution $*$, and let
 
 $$
-Z(A) = \{ z \in A : zx = xz \text{ for every } x \in A \}
+\boxed{\;Z(A) = \{ z \in A : zx = xz \text{ for every } x \in A \}\;}
 $$
 
 be its **centre**. Then $Z(A)$ is closed under the product, $z^{*} \in Z(A)$ for every $z \in Z(A)$, so the involution carries the centre to itself, and $Z(A)$ is an $R$-submodule; in the associative case it is a $*$-subalgebra.

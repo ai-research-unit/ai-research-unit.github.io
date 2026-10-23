@@ -88,9 +88,9 @@ the orthogonal direct sum of the harmonic, the $\bar\partial$-exact and the $\ba
 **Theorem (Kähler identities).** On a Kähler manifold the operators of bidegree $\pm1$ satisfy
 
 $$
-[\Lambda,\partial]=i\,\bar\partial^{*},\qquad
+\boxed{\;[\Lambda,\partial]=i\,\bar\partial^{*},\qquad
 [\Lambda,\bar\partial]=-i\,\partial^{*},\qquad
-[\Lambda,L]=\text{the degree operator},
+[\Lambda,L]=\text{the degree operator}\;},
 $$
 
 where $L\omega=\omega\wedge\cdot$ is the Lefschetz operator of the associated form, $\Lambda=L^{*}$ is its adjoint and the last identity holds on every complex manifold. Consequently the three Laplacians are proportional,
@@ -110,8 +110,8 @@ and each is **bigraded**, $\Delta_{d}(\Omega^{n,m})\subseteq\Omega^{n,m}$.
 **Theorem (Hodge decomposition).** Let $X$ be a compact Kähler manifold. Then
 
 $$
-H^{k}(X;\mathbb{C})=\bigoplus_{n+m=k}H^{n,m}(X),\qquad
-H^{n,m}(X)=\ker\Delta_{\bar\partial}\cap\Omega^{n,m}(X),
+\boxed{\;H^{k}(X;\mathbb{C})=\bigoplus_{n+m=k}H^{n,m}(X),\qquad
+H^{n,m}(X)=\ker\Delta_{\bar\partial}\cap\Omega^{n,m}(X)\;},
 $$
 
 the **Hodge decomposition** of the de Rham cohomology, with $\overline{H^{n,m}}=H^{m,n}$; the complex conjugation is the conjugation of the coefficients. The pieces depend on the Kähler metric through their representatives but not through their dimensions, and the **Hodge numbers** satisfy
@@ -156,7 +156,7 @@ the irreducible $\mathfrak{sl}_2$-pieces.
 **Theorem (Hodge–Riemann relations).** On the primitive cohomology of a compact Kähler manifold the pairing
 
 $$
-\mathfrak{Q}(\alpha,\beta)=\int_{X}L^{\,n-k}\alpha\wedge\beta\qquad\bigl(\alpha,\beta\in P^{k}(X)\bigr)
+\boxed{\;\mathfrak{Q}(\alpha,\beta)=\int_{X}L^{\,n-k}\alpha\wedge\beta\qquad\bigl(\alpha,\beta\in P^{k}(X)\bigr)\;}
 $$
 
 is a polarisation: it is $(-1)^{k}$-symmetric and satisfies the Hodge–Riemann relations

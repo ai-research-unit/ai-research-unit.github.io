@@ -37,7 +37,7 @@ the **Borel fibration** of the action.
 **Theorem.** Let $\sigma$ be a free continuous involution of a space $X$ with orbit map $\pi : X \to X/\sigma$. Then there is a homotopy equivalence
 
 $$
-X \times_{\mathbb{Z}/2} S^{\infty} \ \simeq \ X/\sigma ,
+\boxed{\;X \times_{\mathbb{Z}/2} S^{\infty} \ \simeq \ X/\sigma\;} ,
 $$
 
 and under it the Borel fibration $X \times_{\mathbb{Z}/2} S^{\infty} \to \mathbb{RP}^{\infty}$ corresponds to a map $X/\sigma \to \mathbb{RP}^{\infty}$.
@@ -83,7 +83,7 @@ is a two-fold covering of $B$, and it is the total space of the covering classif
 **Theorem (classification; proof deferred).** Let $B$ be connected and paracompact, and let $B$ have the homotopy type of a cell complex. Then the two-fold coverings of $B$ are classified up to equivalence over $B$ by the homotopy classes of maps $B \to \mathbb{RP}^{\infty}$:
 
 $$
-\{\text{two-fold coverings of } B\} \big/{\cong} \ \longleftrightarrow \ [B, \mathbb{RP}^{\infty}] \ \cong \ H^{1}(B;\mathbb{Z}/2) .
+\boxed{\;\{\text{two-fold coverings of } B\} \big/{\cong} \ \longleftrightarrow \ [B, \mathbb{RP}^{\infty}] \ \cong \ H^{1}(B;\mathbb{Z}/2)\;} .
 $$
 
 The class of a covering is its **classifying map**, and the trivial covering corresponds to the null-homotopic maps and to the zero class in $H^{1}$.
@@ -97,7 +97,7 @@ The class of a covering is its **classifying map**, and the trivial covering cor
 **Theorem.** Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $\pi : X \to X/\sigma$ be the two-fold covering. Then the classifying map of this covering is the composite
 
 $$
-X/\sigma \ \longrightarrow \ \mathbb{RP}^{\infty}
+\boxed{\;X/\sigma \ \longrightarrow \ \mathbb{RP}^{\infty}\;}
 $$
 
 obtained from the Borel construction of the previous section, and two free involutions on $X$ with homeomorphic orbit spaces give equivalent coverings exactly when their classifying maps are homotopic.

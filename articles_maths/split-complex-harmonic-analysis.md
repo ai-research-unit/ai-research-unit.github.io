@@ -62,7 +62,7 @@ where $dQ$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the expon
 In the idempotent basis, the split complex Fourier transform decomposes as
 
 $$
-(\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_+ + \mathcal F f_-(\xi_-) \Pi_-,
+\boxed{\; (\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_+ + \mathcal F f_-(\xi_-) \Pi_- \;},
 $$
 
 where
@@ -168,7 +168,7 @@ where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.
 **Convolution theorem.** For functions for which the split complex Fourier transform is defined,
 
 $$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
+\boxed{\; \widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi) \;}.
 $$
 
 **Proof.** Write the definition, apply Fubini, and change variables.
@@ -368,7 +368,7 @@ where $L(\theta, t)$ is the line with normal direction $(\cosh\theta, \sinh\thet
 **Theorem (Fourier Slice, split version).** The one-dimensional split complex Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional split complex Fourier transform of $f$ to the line through the origin in direction $(\cosh\theta, \sinh\theta)$:
 
 $$
-\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cosh\theta, \sigma \sinh\theta).
+\boxed{\; \widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cosh\theta, \sigma \sinh\theta) \;}.
 $$
 
 **Proof.** Write the definition of the Radon transform, take the split complex Fourier transform in $t$, and change variables.

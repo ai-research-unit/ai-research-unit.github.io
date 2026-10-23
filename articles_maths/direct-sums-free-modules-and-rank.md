@@ -58,7 +58,7 @@ The external constructions are matched by an internal description, which is how 
 **Proposition.** $M=N_1\oplus\cdots\oplus N_k$ if and only if $M=N_1+\cdots+N_k$ and
 
 $$
-N_i \cap \Bigl(\sum_{j \neq i} N_j\Bigr)=0 \qquad \text{for every } i.
+\boxed{\;N_i \cap \Bigl(\sum_{j \neq i} N_j\Bigr)=0 \qquad \text{for every } i\;}.
 $$
 
 *Proof.* Uniqueness fails exactly when two expressions differ, and their difference is a nonzero element of one $N_i$ lying in the sum of the others, with signs absorbed.
@@ -142,7 +142,7 @@ For a free module with basis $B$, one wants to call $|B|$ its **rank**. This pre
 The proof uses only that $-\otimes_R k$ is a functor, not that it is exact; this is why it applies without flatness hypotheses. Two consequences are worth naming. First, rank is additive over direct sums: if $L$ and $L'$ are free then so is $L \oplus L'$, with basis the disjoint union, and
 
 $$
-\operatorname{rk}_R (L \oplus L')=\operatorname{rk}_R L + \operatorname{rk}_R L'.
+\boxed{\;\operatorname{rk}_R (L \oplus L')=\operatorname{rk}_R L + \operatorname{rk}_R L'\;}.
 $$
 
 Second, a free module has a well-defined rank but a submodule of a free module need not be free, so "rank of a submodule" is not available in general.
@@ -188,7 +188,7 @@ Finitely generated modules are controlled by their quotients modulo the Jacobson
 *Proof.* Suppose $M \neq 0$ and let $m_1,\dots,m_k$ be a minimal generating set. From $M=IM$ we get $m_k=\sum_i a_i m_i$ with $a_i \in I$; rearranging,
 
 $$
-(1-a_k)m_k=\sum_{i<k} a_i m_i.
+\boxed{\;(1-a_k)m_k=\sum_{i<k} a_i m_i\;}.
 $$
 
 Since $a_k \in J(R)$, the element $1-a_k$ is a unit, so $m_k$ lies in the span of $m_1,\dots,m_{k-1}$, contradicting minimality. The second statement applies the first to $M/N$.

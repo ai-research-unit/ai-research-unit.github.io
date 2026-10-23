@@ -25,7 +25,7 @@ that is, the set of the first-order deformations of the identity that remain iso
 **Proposition.** The Lie algebra is the space of the **skew-adjoint** operators:
 
 $$
-\mathfrak{u}(A,h) = \{T : T^{*} = -T\} .
+\boxed{\;\mathfrak{u}(A,h) = \{T : T^{*} = -T\}\;} .
 $$
 
 **Proof.** Compute over the dual numbers with $\varepsilon^{2} = 0$:
@@ -47,7 +47,7 @@ The first-order condition for the isometry is therefore $h(Tx,y) + h(x,Ty) = 0$ 
 **Proposition.** The space $\mathfrak{u}(A,h)$ closes under the commutator,
 
 $$
-S, T \in \mathfrak{u}(A,h) \implies [S,T] = ST - TS \in \mathfrak{u}(A,h) ,
+\boxed{\;S, T \in \mathfrak{u}(A,h) \implies [S,T] = ST - TS \in \mathfrak{u}(A,h)\;} ,
 $$
 
 and the commutator makes it a Lie algebra over the fixed ring $R^{\varsigma}$.
@@ -57,7 +57,7 @@ and the commutator makes it a Lie algebra over the fixed ring $R^{\varsigma}$.
 **Corollary.** The Lie algebra of the unitary group is the skew part of the algebra of the operators, the self-adjoint part is its complement under the involution of *The Form-Adjoint of an Operator*, and the product of two skew operators splits as
 
 $$
-ST = \tfrac{1}{2}[S,T] + \tfrac{1}{2}(ST + TS) ,
+\boxed{\;ST = \tfrac{1}{2}[S,T] + \tfrac{1}{2}(ST + TS)\;} ,
 $$
 
 with the commutator inside the Lie algebra and the anticommutator leaving it; the anticommutator is the Jordan structure of *The Hermitian Jordan Algebra of a Form*.

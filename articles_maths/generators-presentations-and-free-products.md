@@ -44,7 +44,7 @@ Thus a generating set is the same thing as an epimorphism from a free group, and
 **Lemma.** If $S_i$ are subgroups of $G$ then $\langle \bigcup_i S_i \rangle$, the **join** of the $S_i$, is the smallest subgroup containing all of them; for two subgroups $H, K$,
 
 $$
-\langle H \cup K \rangle = \{h_1 k_1 h_2 k_2 \cdots h_n k_n : h_i \in H, \ k_i \in K\}.
+\boxed{\;\langle H \cup K \rangle = \{h_1 k_1 h_2 k_2 \cdots h_n k_n : h_i \in H, \ k_i \in K\}\;}.
 $$
 
 **Proof.** The set displayed is closed under multiplication and inversion (an inverse reverses the order and inverts each factor, staying in the set), contains $H$ and $K$, and is contained in every subgroup containing both.
@@ -138,7 +138,7 @@ The definition is the universal property of the **coproduct**, dual to the unive
 **Theorem (normal form).** Let $G = G_1 * G_2$. Every element of $G$ is uniquely expressible as
 
 $$
-g_1 g_2 \cdots g_n, \qquad n \geq 0, \quad g_j \in G_{i_j} \setminus \{e\}, \quad i_j \neq i_{j+1},
+\boxed{\;g_1 g_2 \cdots g_n, \qquad n \geq 0, \quad g_j \in G_{i_j} \setminus \{e\}, \quad i_j \neq i_{j+1}\;},
 $$
 
 the empty product being the identity. A word of this kind is called **reduced**; uniqueness is up to nothing, the expression being already reduced.
@@ -196,7 +196,7 @@ the classical presentation of the modular group, and correspondingly $SL_2(\math
 **Definition.** A **presentation** is a pair $\langle X \mid R \rangle$ consisting of a set $X$ of **generators** and a set $R$ of **relations**, that is, words in $X \sqcup X^{-1}$. The group presented is
 
 $$
-\langle X \mid R \rangle = F(X) / \langle\langle R \rangle\rangle, \qquad \langle\langle R \rangle\rangle = \text{the normal closure of } R \text{ in } F(X),
+\boxed{\;\langle X \mid R \rangle = F(X) / \langle\langle R \rangle\rangle, \qquad \langle\langle R \rangle\rangle = \text{the normal closure of } R \text{ in } F(X)\;},
 $$
 
 the smallest normal subgroup of $F(X)$ containing $R$. A relation $r \in R$ is usually written as an equation $r = e$; for instance $\langle x \mid x^n \rangle$ means $F(\{x\})/\langle\langle x^n\rangle\rangle \cong C_n$. A group is **finitely presented** if it has a presentation with $X$ and $R$ finite, and **finitely generated** if $X$ can be taken finite.

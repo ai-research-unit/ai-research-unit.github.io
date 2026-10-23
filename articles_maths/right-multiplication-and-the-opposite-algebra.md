@@ -15,7 +15,7 @@ The operator calculus – the definitions, the composition laws, the mutual comm
 **Proposition (anti-multiplicativity).** For all $x, z \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-R_x R_z = R_{zx} , \qquad R_1 = \mathrm{id} .
+\boxed{\;R_x R_z = R_{zx} , \qquad R_1 = \mathrm{id}\;} .
 $$
 
 Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ into $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, equivalently an injective anti-homomorphism from $\mathrm{Cl}(V,\mathfrak{Q})$.
@@ -41,7 +41,7 @@ Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\m
 **Theorem (a Clifford algebra is isomorphic to its opposite).** Let $r$ be the reversion, $r(x_1\cdots x_k) = x_k\cdots x_1$ for vectors $x_i$, extended linearly, and let $\natural$ be the Clifford conjugation, $\natural = \alpha \circ r$ with $\alpha$ the grade involution. Then $r$ and $\natural$ are anti-automorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$, and each is an isomorphism of algebras
 
 $$
-\mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad x \longmapsto x^{r} \quad \text{or} \quad x \longmapsto x^{\natural}.
+\boxed{\;\mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad x \longmapsto x^{r} \quad \text{or} \quad x \longmapsto x^{\natural}\;}.
 $$
 
 **Proof.** Reversion is $F$-linear, fixes the generators and reverses products, so it is an anti-automorphism; a composition of the automorphism $\alpha$ with the anti-automorphism $r$ is again an anti-automorphism, and both fix $1$. An anti-automorphism is by definition a unital algebra isomorphism onto the opposite algebra. Both are bijective, with inverses of the same kind.
@@ -65,7 +65,7 @@ because $L_aR_b(y) = ayb = R_bL_a(y)$.
 **Theorem (the commutant of the regular representation).** The algebra of module endomorphisms of the regular left module is the opposite algebra, realised by the right multiplications,
 
 $$
-\mathrm{End}_{\mathrm{Cl}(V,\mathfrak{Q})}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad T \longmapsto T(1),
+\boxed{\;\mathrm{End}_{\mathrm{Cl}(V,\mathfrak{Q})}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad T \longmapsto T(1)\;},
 $$
 
 with inverse $b \mapsto R_b$. Consequently $\{L_a\}' = \{R_b\}$ and $\{R_b\}' = \{L_a\}$, the two families are mutual commutants.

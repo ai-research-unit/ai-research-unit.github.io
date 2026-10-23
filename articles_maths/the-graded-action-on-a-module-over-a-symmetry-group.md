@@ -44,7 +44,7 @@ where $|g| = 0$ for even $g$ and $|g| = 1$ for odd $g$. Equivalently, $M$ is a m
 **Proposition.** A graded action decomposes as
 
 $$
-\rho = \rho_0 \oplus \rho_1, \qquad \rho_0 : G_0 \to GL(M_0)\times GL(M_1), \qquad \rho_1 : G_1 \to \mathrm{Iso}(M_0, M_1),
+\boxed{\;\rho = \rho_0 \oplus \rho_1, \qquad \rho_0 : G_0 \to GL(M_0)\times GL(M_1), \qquad \rho_1 : G_1 \to \mathrm{Iso}(M_0, M_1)\;},
 $$
 
 so that the even subgroup acts by parity-preserving operators on each part and the odd coset acts by parity-reversing isomorphisms. When $G_1 = \varnothing$, the grading is trivial and a graded action is an ordinary action preserving each part.
@@ -62,7 +62,7 @@ $$
 equal to $\rho(g)$ on the even part and to $\rho(z)\rho(g)$ on the odd part; when the central sign element acts on the module by the parity operator, $\rho(z) = \Pi$, this reads
 
 $$
-\rho\bigl(\alpha(g)\bigr) = \Pi^{\,|g|}\,\rho(g), \qquad g \in G,
+\boxed{\;\rho\bigl(\alpha(g)\bigr) = \Pi^{\,|g|}\,\rho(g), \qquad g \in G\;},
 $$
 
 so that the twist by the grade involution is the identity on the even coset and the parity operator on the odd one. The map $\rho\circ\alpha$ is again a graded action, with the same even part and the opposite odd part, and it is the module-level **parity-reversed action**.
@@ -96,7 +96,7 @@ $$
 **Proposition (the graded derivation).** Let $M$ be a graded algebra and let $G$ act by algebra automorphisms of parity $|g|$, $\rho(g)(mn) = \rho(g)(m)\,\rho(g)(n)$. Then every element acts as an automorphism of parity $|g|$, and the associativity of the action is the parity-respecting composition. If instead an element $D$ of parity $|D|$ acts as a **graded derivation**, it obeys the graded Leibniz rule
 
 $$
-D(mn) = (Dm)\,n + (-1)^{|D||m|}\,m\,(Dn),
+\boxed{\;D(mn) = (Dm)\,n + (-1)^{|D||m|}\,m\,(Dn)\;},
 $$
 
 and the rule is the sign rule of the odd part of the action.

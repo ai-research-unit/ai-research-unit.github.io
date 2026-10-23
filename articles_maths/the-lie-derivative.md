@@ -61,7 +61,7 @@ the derivative of the pullback of $\omega$ along the flow.
 **Proposition.** The Lie derivative $\mathcal{L}_X$ is the unique degree-zero derivation of the graded algebra $\Omega^\bullet(M)$ with
 
 $$
-\mathcal{L}_X f = Xf \quad \text{on functions}, \qquad \mathcal{L}_X\alpha = d\iota_X\alpha + \iota_X d\alpha \quad \text{on forms},
+\boxed{\;\mathcal{L}_X f = Xf \quad \text{on functions}, \qquad \mathcal{L}_X\alpha = d\iota_X\alpha + \iota_X d\alpha \quad \text{on forms}\;},
 $$
 
 and the two formulas agree; on a general tensor field it is defined the same way by the flow, and it is the unique derivation of the tensor algebra that commutes with the contractions and extends $\mathcal{L}_Xf = Xf$ and $\mathcal{L}_XY = [X,Y]$.
@@ -99,7 +99,7 @@ with $\iota_X = 0$ on $\Omega^0(M)$.
 **Theorem (Cartan's formula).** For every vector field $X$ and every form $\omega$,
 
 $$
-\mathcal{L}_X\omega = d\,\iota_X\omega + \iota_X\, d\omega,
+\boxed{\;\mathcal{L}_X\omega = d\,\iota_X\omega + \iota_X\, d\omega\;},
 $$
 
 that is, $\mathcal{L}_X = d\,\iota_X + \iota_X\,d$ as operators on $\Omega^\bullet(M)$.
@@ -129,7 +129,7 @@ and a degree $-1$ derivation is determined by its values on the functions and th
 **Corollary (divergence).** If $\mathrm{vol}$ is a volume form on an oriented manifold, there is a unique function $\operatorname{div}X$, the **divergence**, with
 
 $$
-\mathcal{L}_X\mathrm{vol} = (\operatorname{div}X)\,\mathrm{vol},
+\boxed{\;\mathcal{L}_X\mathrm{vol} = (\operatorname{div}X)\,\mathrm{vol}\;},
 $$
 
 and for a top form $\mathcal{L}_X\mathrm{vol} = d\iota_X\mathrm{vol}$, so $\operatorname{div}X$ is the coefficient of $d\iota_X\mathrm{vol}$ in $\mathrm{vol}$. On a Riemannian manifold with the metric volume form, $\operatorname{div}$ is the divergence of the vector calculus, and it is minus the codifferential of the $1$-form dual to $X$, as in *Differential Forms and Stokes' Theorem*.

@@ -55,7 +55,7 @@ The verification on a sampled word of length $10\,000$ gives $-\tfrac1n\log\nu_p
 **Definition.** Let $S_1,\dots,S_m$ be a self-similar iterated function system of ratios $r_i$ on a complete metric space, with attractor $\Lambda$, satisfying the open set condition of *Fractal Geometry* (the maps are written $f_i$ there). Let $p=(p_1,\dots,p_m)$ be a probability vector. A Borel probability measure $\mu$ on $\Lambda$ is **self-similar** with weights $p$ if
 
 $$
-\mu=\sum_{i=1}^m p_i\,\mu\circ S_i^{-1},
+\boxed{\;\mu=\sum_{i=1}^m p_i\,\mu\circ S_i^{-1}\;},
 $$
 
 that is, $\mu(A)=\sum_i p_i\,\mu(S_i^{-1}A)$ for every Borel $A$.
@@ -81,7 +81,7 @@ when the limit exists; the **dimension of the measure** is $\dim_H\mu=\sup\{\alp
 **Theorem (the exact dimension).** Let the system be self-similar with ratios $r_i$ satisfying the open set condition, and let $p$ be a probability vector. Then the local dimension of $\mu_p$ exists and is constant $\mu_p$-almost everywhere, and
 
 $$
-\dim_H\mu_p=\alpha=\frac{H(p)}{\chi}, \qquad H(p)=-\sum_i p_i\log p_i, \qquad \chi=\sum_i p_i\log\frac1{r_i}.
+\boxed{\;\dim_H\mu_p=\alpha=\frac{H(p)}{\chi}, \qquad H(p)=-\sum_i p_i\log p_i, \qquad \chi=\sum_i p_i\log\frac1{r_i}\;}.
 $$
 
 *Proof sketch.* The ball $B(\pi(\xi),\rho)$ with $r_{\xi_1}\cdots r_{\xi_{n+1}}\le\rho<r_{\xi_1}\cdots r_{\xi_n}$ contains the piece $S_{\xi_1}\cdots S_{\xi_{n+1}}\Lambda$ and is contained in a bounded number of pieces at the level $n$, so $\mu(B(\pi(\xi),\rho))\asymp p_{\xi_1}\cdots p_{\xi_n}$ and $\log\rho\approx-\sum_{i\le n}\log(1/r_{\xi_i})$. The numerator is $-\sum_{i\le n}\log p_{\xi_i}$ and the denominator is $\sum_{i\le n}\log(1/r_{\xi_i})$; both are Birkhoff sums of the shift, and the Shannon–McMillan–Breiman theorem of *Ergodic Theory* gives the ratio of the means. The constants are $H(p)/\chi$.
@@ -107,7 +107,7 @@ The limit space, the shift, the tiles and the coding are those of *Limit Spaces 
 **Corollary (the measure-preserving property).** The shift $s$ preserves $\mu$, and its inverse branches $\sigma_x:\mathcal{J}_G\to T_x$, $s\circ\sigma_x=\mathrm{id}$, satisfy $\mu\circ\sigma_x^{-1}=\mu$ restricted to $T_x$ with weight $d^{-1}$: for every Borel $A$,
 
 $$
-\mu(s^{-1}A)=\sum_{x\in X}\mu(\sigma_x^{-1}(A\cap T_x))=\mu(A).
+\boxed{\;\mu(s^{-1}A)=\sum_{x\in X}\mu(\sigma_x^{-1}(A\cap T_x))=\mu(A)\;}.
 $$
 
 *Proof.* The preimage $s^{-1}A$ is the disjoint union of the $d$ sets $\sigma_x(A\cap T_x)$, each of mass $d^{-1}\mu(A\cap T_x)$ by the theorem, and the sum is $\mu(A)$ as $\{T_x\}$ partitions $\mathcal{J}_G$.

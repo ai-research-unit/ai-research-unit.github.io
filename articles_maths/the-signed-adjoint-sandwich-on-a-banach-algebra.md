@@ -20,7 +20,7 @@ with $L_a(x) = ax$ and $R_b(x) = xb$; the **conjugate parameters** of $(a,b)$ ar
 **Theorem (the explicit form).** For all $a,b$ the signed sandwich is adjointable, with
 
 $$
-\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)} ,
+\boxed{\;\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)}\;} ,
 $$
 
 the signed sandwich of the conjugate parameters $(\delta(a),\delta(b))$; the order of the parameters is restored rather than reversed.
@@ -42,7 +42,7 @@ using that the left and right multiplications commute. Moving $\alpha$ to the ri
 **Theorem (composition and inverse).** The signed sandwiches form a monoid under composition with
 
 $$
-\Sigma^\alpha_{p,q}\circ\Sigma^\alpha_{r,s} = \Sigma^\alpha_{p\,\alpha(r),\,\alpha(s)\,q} ,
+\boxed{\;\Sigma^\alpha_{p,q}\circ\Sigma^\alpha_{r,s} = \Sigma^\alpha_{p\,\alpha(r),\,\alpha(s)\,q}\;} ,
 $$
 
 as in the operator theory of the signed sandwich; the inverse of $\Sigma^\alpha_{a,b}$ for invertible $a,b$ is $\Sigma^\alpha_{\alpha(a)^{-1},\alpha(b)^{-1}}$, and the adjoint of the inverse is $(\Sigma^\alpha_{a,b})^{\dagger\,-1} = \Sigma^\alpha_{\delta(a)^{-1},\delta(b)^{-1}} = \bigl(\Sigma^\alpha_{a,b}{}^{-1}\bigr)^\dagger$ when $a,b$ and $\delta(a),\delta(b)$ are invertible.
@@ -52,7 +52,7 @@ as in the operator theory of the signed sandwich; the inverse of $\Sigma^\alpha_
 **Theorem (the unitarity defect).** The signed sandwich $\Sigma^\alpha_{a,b}$ is **unitary**, $\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a,b}\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \mathrm{id}$, if and only if the **defect** $\delta(a)\alpha(a)$ is a central unit and
 
 $$
-\alpha(b)\,\delta(b) = \bigl(\delta(a)\,\alpha(a)\bigr)^{-1} .
+\boxed{\;\alpha(b)\,\delta(b) = \bigl(\delta(a)\,\alpha(a)\bigr)^{-1}\;} .
 $$
 
 Equivalently, $\Sigma^\alpha_{a,b}$ is unitary if and only if $\delta(a)\alpha(a)$ is central and $\alpha(b)\delta(b)$ is its inverse; in particular, when the parameters are **unitary** and $\delta = \sigma\alpha$ acts as inversion on them, $\delta(a)\alpha(a) = 1 = \alpha(b)\delta(b)$ and the sandwich is unitary.

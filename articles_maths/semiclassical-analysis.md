@@ -90,7 +90,7 @@ so that $\frac{d}{dt}\Phi_t(x,\xi)=H_p(\Phi_t(x,\xi))$ and $\Phi_t^*p=p$.
 **Theorem (Egorov).** Let $\mathfrak{a} \in S^0_\hbar$ and let $T>0$. Then
 
 $$
-T(t)^*\,\mathrm{Op}^w_\hbar(\mathfrak{a})\,T(t)=\mathrm{Op}^w_\hbar\bigl(\mathfrak{a}\circ\Phi_{t}\bigr)+O(\hbar \langle t\rangle)
+\boxed{\;T(t)^*\,\mathrm{Op}^w_\hbar(\mathfrak{a})\,T(t)=\mathrm{Op}^w_\hbar\bigl(\mathfrak{a}\circ\Phi_{t}\bigr)+O(\hbar \langle t\rangle)\;}
 $$
 
 in operator norm, uniformly for $|t|\le T$ and for $\mathfrak{a}$ in a bounded subset of $S^0_\hbar$, where $\Phi_t$ is the Hamiltonian flow of $p$; the transport is along $\Phi_{t}$ and not along $\Phi_{-t}$, as the sign in $\frac{d}{dt}\mathfrak{a}_t=\{p,\mathfrak{a}_t\}$ determines. Equivalently, the flow of the operator under the unitary group is the transport of the symbol along the Hamiltonian flow to leading order in $\hbar$.
@@ -134,7 +134,7 @@ if $u_\hbar$ is localised in a compact region of phase space, $\mu$ is a finite 
 **Theorem (invariance).** Let $p$ be a real symbol, $P=\mathrm{Op}^w_\hbar(p)$, and let $(u_\hbar)$ satisfy
 
 $$
-\|(P-E)u_\hbar\|=O(\hbar) \qquad \text{for some } E \in \mathbb{R}.
+\boxed{\;\|(P-E)u_\hbar\|=O(\hbar) \qquad \text{for some } E \in \mathbb{R}\;}.
 $$
 
 Then every semiclassical measure $\mu$ of the family is supported in the energy surface
@@ -192,7 +192,7 @@ up to constants depending only on the dimension and for symbols suitably cut off
 **Theorem (Weyl law).** Let $P=\mathrm{Op}^w_\hbar(p)$ be the semiclassical quantisation of an elliptic real symbol $p$ of order $2$ with $p\to\infty$ as $|\xi|\to\infty$, and let $P_\hbar$ be the corresponding self-adjoint operator with spectrum $\{E_j(\hbar)\}$ (the parameter $\hbar$ fixed, the eigenvalues those of the operator). Then the counting function $N(E)=\#\{j:E_j\le E\}$ satisfies
 
 $$
-N(E)=\frac{1}{(2\pi\hbar)^n}\int_{p\le E}dx\,d\xi+O(\hbar^{-n+1})
+\boxed{\;N(E)=\frac{1}{(2\pi\hbar)^n}\int_{p\le E}dx\,d\xi+O(\hbar^{-n+1})\;}
 $$
 
 for $E$ in a compact set of regular values of $p$; in particular, for the Dirichlet Laplacian on a bounded domain $\Omega \subseteq \mathbb{R}^n$ with eigenvalues $\lambda_1\le\lambda_2\le\cdots$,

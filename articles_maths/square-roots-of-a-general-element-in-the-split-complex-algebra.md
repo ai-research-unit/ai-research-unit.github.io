@@ -68,7 +68,7 @@ because $\Xi^{2}=(x^{2}+x'^{2})+2xx'j$. Adding and subtracting gives the two ide
 **If $Q_{+}>0$ and $Q_{-}>0$ then the equation has exactly four roots,**
 
 $$
-\Xi=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},\qquad \varepsilon_{+},\varepsilon_{-}\in\{+1,-1\}.
+\boxed{\;\Xi=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},\qquad \varepsilon_{+},\varepsilon_{-}\in\{+1,-1\}\;}.
 $$
 
 **Proof.** Each of the two real equations $\Xi_{\pm}^{2}=Q_{\pm}$ has the two solutions $\Xi_{\pm}=\pm\sqrt{Q_{\pm}}$ when $Q_{\pm}>0$. The four combinations are distinct, because the two coordinates are independent and the two square roots are nonzero. Each combination is a root by the reduction, and every root arises this way.
@@ -99,7 +99,7 @@ There are two cases.
 - If $Q_{+}>0$ and $Q_{-}=0$, then $\Xi_{-}^{2}=0$ forces $\Xi_{-}=0$ and $\Xi_{+}^{2}=Q_{+}$ gives $\Xi_{+}=\pm\sqrt{Q_{+}}$. The roots are
 
 $$
-\Xi=\pm\sqrt{Q_{+}}\,\Pi_{+}.
+\boxed{\;\Xi=\pm\sqrt{Q_{+}}\,\Pi_{+}\;}.
 $$
 
 They are the two points $\pm\sqrt{Q_{+}}\,\Pi_{+}$ of the line $\mathbb{R}\Pi_{+}$, and they are zero divisors of the algebra.
@@ -163,7 +163,7 @@ The first two are the real roots, the last two the split-imaginary roots.
 **Corollary (the dichotomy of the radicand).** The equation has a root exactly when $Q$ lies in the **forward cone**
 
 $$
-\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\},
+\boxed{\;\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\}\;},
 $$
 
 the closed cone whose two sides are the non-negative rays of the two null lines, containing the positive real axis. The radicands with four roots are the interior of the cone, those with two roots are its boundary minus the origin, those with one root are the origin, and those with no roots are the complement.

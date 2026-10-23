@@ -29,7 +29,7 @@ for all $x,y$; equivalently, the measure $\pi(x)p(x,dy)$ on $E\times E$ is symme
 
 **Proposition (the reversed chain).** Let $\pi$ be stationary and define
 $$
-p^{*}(x,y)=\frac{\pi(y)\,p(y,x)}{\pi(x)},
+\boxed{\;p^{*}(x,y)=\frac{\pi(y)\,p(y,x)}{\pi(x)}\;},
 $$
 with $p^{*}(x,y)=0$ or arbitrary on the $\pi$-null set where $\pi(x)=0$. Then $p^{*}$ is a Markov kernel and $\pi$ is stationary for it; it is called the **reversed chain** of $p$ with respect to $\pi$. The chain is reversible if and only if $p^{*}=p$ as kernels on the support of $\pi$.
 
@@ -57,7 +57,7 @@ that is, if and only if the law of the chain is invariant under the time reversa
 
 **Theorem (reversibility is self-adjointness).** The chain is reversible with respect to $\pi$ if and only if its Markov operator is self-adjoint on $L^2(\pi)$:
 $$
-\langle Pf,g\rangle_\pi=\langle f,Pg\rangle_\pi\qquad\text{for all }f,g\in L^2(\pi).
+\boxed{\;\langle Pf,g\rangle_\pi=\langle f,Pg\rangle_\pi\qquad\text{for all }f,g\in L^2(\pi)\;}.
 $$
 
 *Proof.* The two pairings are $\langle Pf,g\rangle_\pi=\sum_{x,y}\pi(x)p(x,y)f(y)\bar g(x)$ and $\langle f,Pg\rangle_\pi=\sum_{x,y}\pi(x)p(x,y)f(x)\bar g(y)$. They are equal for all $f,g$ exactly when $\pi(y)p(y,x)=\pi(x)p(x,y)$ for all $x,y$, which is detailed balance; the passage between the two displays is a relabelling of the summation.
@@ -97,7 +97,7 @@ and $\mathcal{E}(f,f)\ge0$ with equality exactly when $f$ is constant.
 
 **Theorem (the Poincaré inequality).** For a finite connected reversible chain with stationary measure $\pi$, the **spectral gap** $\gamma=1-\lambda_2$ is
 $$
-\gamma=\inf\Bigl\{\frac{\mathcal{E}(f,f)}{\operatorname{Var}_\pi(f)}:f\text{ non-constant}\Bigr\},
+\boxed{\;\gamma=\inf\Bigl\{\frac{\mathcal{E}(f,f)}{\operatorname{Var}_\pi(f)}:f\text{ non-constant}\Bigr\}\;},
 $$
 where $\operatorname{Var}_\pi(f)=\|f-\int f\,d\pi\|_{L^2(\pi)}^2$, and the infimum is attained at the eigenfunction of $\lambda_2$.
 

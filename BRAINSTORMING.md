@@ -8626,16 +8626,11 @@ at the end of the articles, make a section about 4x4 matric elements representat
 
 Make 3 articles after the articles about Eigenbasis :
 
-Worked examples of Eigenbasis of a Split-Complex Number
-
-Worked examples of Eigenbasis a Reduced Biquaternion
-
-Worked examples of Eigenbasis a Biquaternion
 
 
-I want the same examples than Worked Examples of 
+I want the same examples than 
 
-Exponential Polar Decomposition of Split-Complex Numbers
+Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers
 
 Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions
 
@@ -8647,8 +8642,81 @@ Worked Examples of Exponential Polar Decomposition of Biquaternions
 
 
 
+Modify the articles you wrote : 
 
 
+Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers
+
+Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions
+
+Worked Examples of Exponential Polar Decomposition of Biquaternions
+
+
+You fail do display the base matrices in each case, and you fail to expplain in each case what the spinors are and show their matrix
+
+
+
+
+
+
+
+Rename
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions
+
+Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions
+
+
+to
+
+Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number
+
+Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion
+
+Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion
+
+
+
+DO NOT WASTE TIME
+
+
+
+
+
+
+
+Merge these articles into the first section only : 
+
+Exponential Polar Decomposition of Biquaternions
+Exponential Polar Decomposition of Biquaternions
+
+Worked Examples of Exponential Polar Decomposition of Biquaternions
+Worked Examples of Exponential Polar Decomposition of Biquaternions
+
+Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion
+Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion
+
+Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions
+Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions
+
+The Quaternion Pairing of the Polar Decomposition of Biquaternions
+
+The Hamilton Root Pairing of the Polar Decomposition of Biquaternions
+
+The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions
+
+
+we don't need sections
+
+
+Worked Examples of Exponential Polar Decomposition of Biquaternions
+Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion
+Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions
+BUT IMBECILE DO NOT REMOVE THE ARTICLES? MOVE THEM IN THE FIRST SECTION
+
+AND DO THE SAME THING FOR SPLIT COMPLEX AND REDUCED BIQUATERNIONS
 
 
 

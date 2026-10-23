@@ -21,7 +21,7 @@ Throughout, $V$ is a finite-dimensional complex vector space with a positive-def
 
 **Proposition (the adjoint formula).** For all $a \in E$,
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a^{\dagger})}, \qquad \bigl(\rho^{\alpha}_{b}\bigr)^{*} = \rho^{\alpha}_{\alpha(b^{\dagger})},
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a^{\dagger})}, \qquad \bigl(\rho^{\alpha}_{b}\bigr)^{*} = \rho^{\alpha}_{\alpha(b^{\dagger})}\;},
 $$
 and the assignment is conjugate-linear and involutive.
 
@@ -48,11 +48,11 @@ and the assignment is conjugate-linear and involutive.
 
 **Proposition (the one-sided operators as degenerate sandwiches).** The signed left multiplication is the signed sandwich with the right parameter equal to the identity,
 $$
-\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,\mathrm{id}}, \qquad \rho^{\alpha}_{b} = \Theta^{\alpha}_{\mathrm{id},b},
+\boxed{\;\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,\mathrm{id}}, \qquad \rho^{\alpha}_{b} = \Theta^{\alpha}_{\mathrm{id},b}\;},
 $$
 and its adjoint is the signed sandwich of the transported adjoint and the identity,
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\mathrm{id}} ;
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\mathrm{id}}\;} ;
 $$
 the two-sided signed sandwich is the composite $\Theta^{\alpha}_{a,b} = \Lambda^{\alpha}_{a}\circ\rho^{\alpha}_{b}$.
 

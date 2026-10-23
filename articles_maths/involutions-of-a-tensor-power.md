@@ -15,7 +15,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition.** $T^{\otimes k}$ is a linear involution of $V^{\otimes k}$, and its type is
 
 $$
-\Bigl( \sum_{j\ \mathrm{even}} \binom{k}{j} p^{\,k-j}q^{\,j},\ \sum_{j\ \mathrm{odd}} \binom{k}{j} p^{\,k-j}q^{\,j} \Bigr), \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^{k} .
+\boxed{\;\Bigl( \sum_{j\ \mathrm{even}} \binom{k}{j} p^{\,k-j}q^{\,j},\ \sum_{j\ \mathrm{odd}} \binom{k}{j} p^{\,k-j}q^{\,j} \Bigr), \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^{k}\;} .
 $$
 
 **Proof.** $(T^{\otimes k})^2 = (T^2)^{\otimes k} = \mathrm{id}$. A basis vector of $V^{\otimes k}$ is a word in $k$ basis vectors of $V$; its eigenvalue under $T^{\otimes k}$ is the product of the eigenvalues of the letters, hence $+1$ if the number $j$ of negated letters is even and $-1$ if it is odd, and the number of words with a prescribed $j$ is $\binom{k}{j}p^{k-j}q^{j}$. The trace is the difference of the two parts of the type, which is $(p-q)^k$.
@@ -30,8 +30,8 @@ $T^{\otimes(k+\ell)}(x\otimes y) = T^{\otimes k}(x)\otimes T^{\otimes\ell}(y)$; 
 **Proposition (the flip and its eigenspaces).** The flip $\tau$ is a linear involution of $V\otimes V$, and since $2 \neq 0$ the space $V\otimes V$ is the direct sum of the **symmetric square** and the **alternating square**,
 
 $$
-V\otimes V = S^{2}V \oplus \Lambda^{2}V, \qquad
-S^{2}V = \ker(\tau-\mathrm{id}), \qquad \Lambda^{2}V = \ker(\tau+\mathrm{id}) ,
+\boxed{\;V\otimes V = S^{2}V \oplus \Lambda^{2}V, \qquad
+S^{2}V = \ker(\tau-\mathrm{id}), \qquad \Lambda^{2}V = \ker(\tau+\mathrm{id})\;} ,
 $$
 
 of dimensions $n(n+1)/2$ and $n(n-1)/2$.
@@ -47,8 +47,8 @@ of dimensions $n(n+1)/2$ and $n(n-1)/2$.
 **Proposition (the induced involution on $\Lambda^{k}V$).** On the $k$-th exterior power the induced involution $\Lambda^{k}T$ is a linear involution of type
 
 $$
-\Bigl( \sum_{j\ \mathrm{even}} \binom{p}{k-j}\binom{q}{j},\ \sum_{j\ \mathrm{odd}} \binom{p}{k-j}\binom{q}{j} \Bigr),
-\qquad \operatorname{tr}\bigl(\Lambda^{k}T\bigr) = \sum_{j} (-1)^{j}\binom{p}{k-j}\binom{q}{j} ,
+\boxed{\;\Bigl( \sum_{j\ \mathrm{even}} \binom{p}{k-j}\binom{q}{j},\ \sum_{j\ \mathrm{odd}} \binom{p}{k-j}\binom{q}{j} \Bigr),
+\qquad \operatorname{tr}\bigl(\Lambda^{k}T\bigr) = \sum_{j} (-1)^{j}\binom{p}{k-j}\binom{q}{j}\;} ,
 $$
 
 with $0 \le k-j \le p$ and $0 \le j \le q$; for $k = n$ the operator is multiplication by $\det T = (-1)^{q}$.

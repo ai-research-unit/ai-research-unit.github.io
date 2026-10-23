@@ -90,8 +90,7 @@ Geometrically, the line through $-1$ and $u(s)$ meets the imaginary axis at $-is
 
 **Proposition.** Let $u \in \mathrm{U}(1)$ with $u \neq -1$. Then $u = u(s)$ for the real number
 
-$$
-s = i\,\frac{u-1}{u+1}.
+$$ \boxed{\;s = i\,\frac{u-1}{u+1}\;}.
 $$
 
 **Proof.** Put $s = i(u-1)/(u+1)$. Since $\lvert u\rvert = 1$, one has $\bar u = u^{-1}$, hence
@@ -144,8 +143,7 @@ The chart is therefore one-to-one, and its image is the circle with the single p
 
 **Theorem.** Every complex number $Q$ outside the closed negative real axis has exactly one rational-chart polar decomposition
 
-$$
-Q = r\,\frac{1-is}{1+is}, \qquad r > 0, \quad s \in \mathbb{R}.
+$$ \boxed{\;Q = r\,\frac{1-is}{1+is}, \qquad r > 0, \quad s \in \mathbb{R}\;}.
 $$
 
 **Existence.** Let $Q \notin (-\infty,0]$, and put $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/r$. Then $r > 0$ and $\langle u\rangle_{*} = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.
@@ -176,8 +174,7 @@ The product of two unit factors is a unit factor, and the coordinate of the prod
 
 **Proposition.** For $s_1, s_2 \in \mathbb{R}$ with $s_1s_2 \neq 1$,
 
-$$
-u(s_1)\,u(s_2) = u(s_3), \qquad s_3 = \frac{s_1+s_2}{1-s_1s_2}.
+$$ \boxed{\;u(s_1)\,u(s_2) = u(s_3), \qquad s_3 = \frac{s_1+s_2}{1-s_1s_2}\;}.
 $$
 
 **Proof.** Multiplying the two fractions,

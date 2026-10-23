@@ -14,7 +14,7 @@ Throughout, $E$ is a Hausdorff locally convex algebra over $\mathbb{K}$ with a u
 **Theorem (the adjoint of the signed left multiplication).** For every $a \in E$ the signed left multiplication has the trace-adjoint
 
 $$
-(\Lambda^{\alpha}_{a})^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\alpha ,
+\boxed{\;(\Lambda^{\alpha}_{a})^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\alpha\;} ,
 $$
 
 the signed right multiplication by $\alpha(a)$, mapping $x$ to $\alpha(x)\alpha(a)$; the adjoint of a signed left multiplication is a signed right multiplication, with the parameter imaged by the grade involution.
@@ -34,7 +34,7 @@ the adjointness of the left and right multiplications of *The Adjoint of the Lef
 **Proposition (the conjugate form).** The signed left multiplication has the conjugate and sandwich forms
 
 $$
-\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1} = \alpha\,L_{\alpha(a)} ,
+\boxed{\;\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1} = \alpha\,L_{\alpha(a)}\;} ,
 $$
 
 so it is the signed sandwich with right factor one and the grade involution composed with the unsigned left multiplication; consequently its adjoint is also the signed sandwich with left factor one, $(\Lambda^{\alpha}_{a})^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)}$, the symmetry exchanging the two boundary cases.
@@ -60,7 +60,7 @@ $$
 **Proposition (unitarity criterion).** The signed left multiplication is unitary for the trace form exactly when both $a$ and $\alpha(a)$ are central involutions,
 
 $$
-a^{2} = \alpha(a)^{2} = 1 , \qquad a, \alpha(a) \in Z(E) ,
+\boxed{\;a^{2} = \alpha(a)^{2} = 1 , \qquad a, \alpha(a) \in Z(E)\;} ,
 $$
 
 the case $b = 1$ of the unitarity criterion of the signed sandwich; for $\alpha = \mathrm{id}$ this is the single condition that $a$ be a central involution.

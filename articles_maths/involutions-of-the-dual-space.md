@@ -15,13 +15,13 @@ Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $T$ is
 **Proposition.** $T^{*}$ is linear, it is an involution of $V^{*}$, and it has the same type as $T$:
 
 $$
-(T^{*})^2 = \mathrm{id}_{V^{*}}, \qquad \text{type}(T^{*}) = (n,m) .
+\boxed{\;(T^{*})^2 = \mathrm{id}_{V^{*}}, \qquad \text{type}(T^{*}) = (n,m)\;} .
 $$
 
 Moreover the fixed part of $T^{*}$ is the annihilator of the negated part of $T$, and conversely,
 
 $$
-(V^{*})_+ = (V_-)^{0}, \qquad (V^{*})_- = (V_+)^{0} .
+\boxed{\;(V^{*})_+ = (V_-)^{0}, \qquad (V^{*})_- = (V_+)^{0}\;} .
 $$
 
 **Proof.** Linearity is the linearity of the composite $\varphi T$ in $\varphi$. By the composition law of the transpose, $(T^2)^{*} = (T^{*})^2$, and $T^2 = \mathrm{id}$ gives $(T^{*})^2 = \mathrm{id}$. For the fixed part, $T^{*}\varphi = \varphi$ means $\varphi(Tv) = \varphi(v)$ for all $v$; on $V_-$ this reads $\varphi(-v) = \varphi(v)$, that is $\varphi(v) = 0$, and on $V_+$ it reads $\varphi(v) = \varphi(v)$; hence $\varphi$ is fixed exactly when it vanishes on $V_-$, which is the definition of $(V_-)^{0}$. The annihilator of $V_-$ has dimension $\dim_F V - m = n$ by *The Transpose of a Linear Map*, which is the dimension of the fixed part of an involution of type $(n,m)$; the negated part is obtained in the same way.
@@ -29,7 +29,7 @@ $$
 **Corollary (the fixed dimensions are exchanged).** $\dim_F (V^{*})_+ = n$ and $\dim_F (V^{*})_- = m$, so the trace and the determinant agree,
 
 $$
-\operatorname{tr}T^{*} = p - q = \operatorname{tr}T , \qquad \det T^{*} = (-1)^{m} = \det T .
+\boxed{\;\operatorname{tr}T^{*} = p - q = \operatorname{tr}T , \qquad \det T^{*} = (-1)^{m} = \det T\;} .
 $$
 
 **Proof.** The dimensions are those of the annihilators, computed in the proposition; the trace is the difference of the two dimensions of the type, and the determinant the sign $(-1)^{m}$.

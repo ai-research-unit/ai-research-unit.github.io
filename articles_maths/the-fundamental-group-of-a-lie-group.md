@@ -74,7 +74,7 @@ is an exact sequence of Lie groups in which $\pi_1(G) \cong p^{-1}(e)$ is a disc
 **Theorem (Malcev, Iwasawa).** Let $G$ be a connected Lie group. Then $G$ contains maximal compact subgroups, any two of them are conjugate in $G$, and the inclusion $K \hookrightarrow G$ of a maximal compact subgroup is a homotopy equivalence. Consequently
 
 $$
-\pi_n(G) \cong \pi_n(K) \quad\text{for all } n \geq 0, \qquad H_n(G;\mathbb{Z}) \cong H_n(K;\mathbb{Z}) \quad\text{for all } n \geq 0,
+\boxed{\;\pi_n(G) \cong \pi_n(K) \quad\text{for all } n \geq 0, \qquad H_n(G;\mathbb{Z}) \cong H_n(K;\mathbb{Z}) \quad\text{for all } n \geq 0\;},
 $$
 
 and $\pi_1(G)$ is finitely generated.
@@ -90,7 +90,7 @@ and $\pi_1(G)$ is finitely generated.
 **Theorem.** Let $G$ be a Lie group and $H$ a closed subgroup. Then $G/H$ has a unique smooth structure making the projection $G \to G/H$ a submersion, the projection is a fibre bundle with fibre $H$, and the **homotopy sequence of the fibration**
 
 $$
-\cdots \to \pi_n(H) \to \pi_n(G) \to \pi_n(G/H) \to \pi_{n-1}(H) \to \cdots \to \pi_0(H) \to \pi_0(G) \to 0
+\boxed{\;\cdots \to \pi_n(H) \to \pi_n(G) \to \pi_n(G/H) \to \pi_{n-1}(H) \to \cdots \to \pi_0(H) \to \pi_0(G) \to 0\;}
 $$
 
 is exact.
@@ -134,7 +134,7 @@ $$
 **Theorem (Bott).** Let $G$ be a compact connected Lie group with maximal torus $T$. Then the inclusion $T \hookrightarrow G$ induces a surjection $\pi_1(T) \to \pi_1(G)$ whose kernel is the coroot lattice, so that
 
 $$
-\pi_1(G) \cong X_*(T)/Q^\vee \cong \pi_1(T)/\langle \alpha^\vee\rangle .
+\boxed{\;\pi_1(G) \cong X_*(T)/Q^\vee \cong \pi_1(T)/\langle \alpha^\vee\rangle\;} .
 $$
 
 In particular $\pi_1(G)$ is a finite group of order equal to the index of the coroot lattice in the coweight lattice, $G$ is simply connected if and only if $X_*(T) = Q^\vee$, and for the **adjoint group** $G_{\mathrm{ad}} = G_{\mathrm{sc}}/Z(G_{\mathrm{sc}})$ — the quotient of the simply connected cover by its centre — there is an isomorphism

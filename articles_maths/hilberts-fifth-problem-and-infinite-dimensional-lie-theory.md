@@ -148,7 +148,7 @@ $$
 whose first terms are
 
 $$
-Z(X,Y) = X + Y + \tfrac{1}{2}[X,Y] + \tfrac{1}{12}\bigl[X,[X,Y]\bigr] - \tfrac{1}{12}\bigl[Y,[Y,X]\bigr] + \cdots .
+\boxed{\;Z(X,Y) = X + Y + \tfrac{1}{2}[X,Y] + \tfrac{1}{12}\bigl[X,[X,Y]\bigr] - \tfrac{1}{12}\bigl[Y,[Y,X]\bigr] + \cdots\;} .
 $$
 
 **Theorem.** For a finite-dimensional or Banach Lie algebra the series converges for $X, Y$ in a neighbourhood of the origin whose size is governed by the norm of the bracket, and its sum is analytic in the two variables; the products of exponentials are then given by a convergent Lie polynomial. For a Fréchet–Lie algebra the series can fail to converge in every neighbourhood of the origin.
@@ -166,7 +166,7 @@ $$
 The differential of the exponential is the operator
 
 $$
-d(\exp)_X = \sum_{k \geq 0} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_X)^k
+\boxed{\;d(\exp)_X = \sum_{k \geq 0} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_X)^k\;}
 $$
 
 formally, as in *The Lie Algebra and the Exponential Map*. The formula is meaningful whenever the operator series converges; for a Banach–Lie algebra it converges for every $X$, and for a Fréchet–Lie algebra it need not converge.

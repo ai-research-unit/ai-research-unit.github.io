@@ -126,7 +126,7 @@ The free algebra on a set is the special case of the free algebra on a module, a
 **Theorem (the tensor algebra is the free associative algebra).** Let $M$ be an $R$-module and let $T(M) = \bigoplus_{n \geq 0} M^{\otimes n}$ be its tensor algebra, with $T^0(M) = R$ and with the product by concatenation of tensors. Then $T(M)$ is an associative unital $R$-algebra, and for every associative unital $R$-algebra $A$ the $R$-linear maps $M \to A$ correspond bijectively to the unital $R$-algebra homomorphisms $T(M) \to A$. Equivalently, in the notation of adjoint functors, the tensor algebra functor is left adjoint to the forgetful functor $U$ from unital associative $R$-algebras to $R$-modules,
 
 $$
-T \dashv U .
+\boxed{\;T \dashv U\;} .
 $$
 
 The construction, the grading and the proof are those of *Tensor Powers and the Free Algebra*, §*The Universal Property*; they are quoted here and not repeated.
@@ -170,7 +170,7 @@ In the language of adjoint functors, the enveloping algebra functor $U$ is left 
 **Theorem (Poincaré–Birkhoff–Witt).** Let $k$ be a field, let $\mathrm{G}$ be a Lie algebra over $k$ and let $(x_i)_{i \in I}$ be a basis of $\mathrm{G}$, totally ordered. Then the ordered monomials
 
 $$
-x_{i_1}^{a_1} x_{i_2}^{a_2} \cdots x_{i_r}^{a_r}, \qquad i_1 < i_2 < \cdots < i_r, \quad a_j \geq 1,
+\boxed{\;x_{i_1}^{a_1} x_{i_2}^{a_2} \cdots x_{i_r}^{a_r}, \qquad i_1 < i_2 < \cdots < i_r, \quad a_j \geq 1\;},
 $$
 
 together with the identity, form a $k$-basis of $\mathrm{U}(\mathrm{G})$. Consequently the canonical map $\iota : \mathrm{G} \to \mathrm{U}(\mathrm{G})$ is injective, and the associated graded of the degree filtration is the symmetric algebra, $\operatorname{gr} \mathrm{U}(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$.
@@ -186,7 +186,7 @@ The model associative algebra is the endomorphism algebra of a module, and every
 **Theorem.** Let $M$ be an $R$-module. Then $\operatorname{End}_R(M)$, with addition and composition of maps, is an associative $R$-algebra with identity $\mathrm{id}_M$. For $M = R^n$ the choices of a basis give an isomorphism
 
 $$
-M_n(R) \cong \operatorname{End}_R(R^n)
+\boxed{\;M_n(R) \cong \operatorname{End}_R(R^n)\;}
 $$
 
 of $R$-algebras, and the matrix units $E_{ij}$ form a basis of $M_n(R)$ with $E_{ij}E_{kl} = \delta_{jk}E_{il}$. The matrix algebra, its units and its ideals are the subject of *Matrix Algebras*, where these statements are proved.

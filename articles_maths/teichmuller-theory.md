@@ -54,7 +54,7 @@ the infimum over the homeomorphisms compatible with the markings up to isotopy. 
 **Theorem (Teichmüller; existence and uniqueness of the extremal map).** Let $[X,f],[Y,h]\in\mathcal{T}(S)$ and let $K$ be the value of the infimum above. Then the infimum is attained: there is a homeomorphism $k : X\to Y$ with $K(k) = K$ realising the distance, and it is unique up to composition with a conformal automorphism of $Y$. The extremal map is the **Teichmüller map**, and it is characterised by the existence of a holomorphic quadratic differential $\phi$ on $X$ such that the Beltrami coefficient of $k$ is
 
 $$
-\mu = k_0\,\frac{\bar\phi}{|\phi|}, \qquad k_0 = \frac{K-1}{K+1} ,
+\boxed{\;\mu = k_0\,\frac{\bar\phi}{|\phi|}, \qquad k_0 = \frac{K-1}{K+1}\;} ,
 $$
 
 a Beltrami differential of constant modulus $k_0$ determined by the direction field of $\phi$. In the natural coordinates of $\phi$ on $X$ and of the push-forward quadratic differential on $Y$, the map $k$ is affine, with the same constant stretch: it multiplies the horizontal coordinate by a fixed factor and the vertical coordinate by the reciprocal factor.
@@ -64,7 +64,7 @@ a Beltrami differential of constant modulus $k_0$ determined by the direction fi
 **Theorem (Teichmüller geodesics; the distance formula).** The Teichmüller metric is a Finsler metric, whose infinitesimal norm is the infimum of the essential sup norms of the Beltrami coefficients modulo the trivial ones; it is not Riemannian for $g\geq2$. The geodesic ray determined by a holomorphic quadratic differential $\phi$ is the family of the extremal maps with Beltrami coefficients $k_0(t)\,\bar\phi/|\phi|$ as the modulus $k_0(t)$ increases from $0$, and every geodesic is of this form; two points are joined by a unique geodesic. The distance has the extremal-length formulation of Kerckhoff: the metric is also given by
 
 $$
-d_T([X,f],[Y,h]) = \tfrac12\log\inf_{\gamma}\frac{\mathrm{Ext}_Y(\gamma)}{\mathrm{Ext}_X(\gamma)} ,
+\boxed{\;d_T([X,f],[Y,h]) = \tfrac12\log\inf_{\gamma}\frac{\mathrm{Ext}_Y(\gamma)}{\mathrm{Ext}_X(\gamma)}\;} ,
 $$
 
 the infimum over the simple closed curves $\gamma$ on $S$, where $\mathrm{Ext}$ is the extremal length of the curve in the corresponding structure.
@@ -86,7 +86,7 @@ where the hyperbolic metric of $X$ is written $\lambda^2|dz|^2$ in a conformal c
 **Theorem (Fenchel–Nielsen coordinates).** Let $S$ have genus $g$ and $n$ punctures with $2g-2+n>0$. Fix a maximal collection of disjoint simple closed curves $\gamma_1,\ldots,\gamma_{3g-3+n}$ that decomposes $S$ into pairs of pants. Then the map
 
 $$
-\mathcal{T}(S)\longrightarrow (\mathbb{R}_{>0}\times\mathbb{R})^{3g-3+n}, \qquad [X,f]\longmapsto \big(\ell_{\gamma_i}(X),\tau_i(X)\big)_{i=1}^{3g-3+n},
+\boxed{\;\mathcal{T}(S)\longrightarrow (\mathbb{R}_{>0}\times\mathbb{R})^{3g-3+n}, \qquad [X,f]\longmapsto \big(\ell_{\gamma_i}(X),\tau_i(X)\big)_{i=1}^{3g-3+n}\;},
 $$
 
 sending a marked structure to the hyperbolic lengths of the curves and to the Fenchel–Nielsen twist parameters along them, is a real-analytic diffeomorphism onto the product. Consequently $\mathcal{T}(S)$ is diffeomorphic to $\mathbb{R}^{6g-6+2n}$, hence contractible.

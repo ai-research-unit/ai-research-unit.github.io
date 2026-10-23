@@ -62,7 +62,7 @@ $$
 **Theorem.** The involution $\sigma$ is well defined, it is an **involutive automorphism** of the group (the composition with the conjugation of the base),
 
 $$
-\sigma(MN) = \sigma(M)\,\sigma(N) , \qquad \sigma^2 = \mathrm{id} ,
+\boxed{\;\sigma(MN) = \sigma(M)\,\sigma(N) , \qquad \sigma^2 = \mathrm{id}\;} ,
 $$
 
 and its fixed elements are the Möbius operators with a real representative matrix; the map is the action of the conjugation of the sphere on the group by the conjugation, and it is the Möbius instance of an involution on the operator layer.
@@ -74,7 +74,7 @@ and its fixed elements are the Möbius operators with a real representative matr
 **Theorem.** The fixed subgroup of the involution is the **real Möbius group**,
 
 $$
-PGL_2(\mathbb{C})^{\sigma} = PGL_2(\mathbb{R}) = PSL_2(\mathbb{R}) ,
+\boxed{\;PGL_2(\mathbb{C})^{\sigma} = PGL_2(\mathbb{R}) = PSL_2(\mathbb{R})\;} ,
 $$
 
 the group of the Möbius operators with real coefficients; it is the group of the automorphisms of the real projective line, it preserves the upper and the lower half-planes, and it acts on the upper half-plane as the orientation-preserving isometry group of the hyperbolic plane.
@@ -112,7 +112,7 @@ with $A^* = \bar{A}^{\mathsf T}$ the conjugate transpose, and the special unitar
 **Theorem.** The adjoint of a matrix $A$ with respect to $J$ is $A^{\dagger} = J^{-1}A^{*}J$, the unitary elements are those with $A^{\dagger} = A^{-1}$, and the projective unitary group of the form of signature $(1,1)$ is the real Möbius group,
 
 $$
-PU(1,1) = PSU(1,1) \cong PSL_2(\mathbb{R}) ,
+\boxed{\;PU(1,1) = PSU(1,1) \cong PSL_2(\mathbb{R})\;} ,
 $$
 
 so the fixed subgroup of the conjugation and the projective unitary group of the Hermitian form coincide, and the adjoint realises the involution on the operators.

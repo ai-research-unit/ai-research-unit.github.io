@@ -29,7 +29,7 @@ It is $R$-linear when $h$ is a form, being the restriction of $h$ to the second 
 **Theorem (the reconstruction).** Let $h$ be a form compatible with the product, $h(xy,z) = h(y,x^{*}z)$ for all $x,y,z$. Then
 
 $$
-h(x,y) = h(y^{*}x, 1) = \varphi(y^{*}x) \qquad \text{for all } x, y \in A .
+\boxed{\;h(x,y) = h(y^{*}x, 1) = \varphi(y^{*}x) \qquad \text{for all } x, y \in A\;} .
 $$
 
 *Proof.* Put $a = y^{*}$, $b = x$ and $c = 1$ in the compatibility: it reads $h(y^{*}x, 1) = h(x, (y^{*})^{*}1) = h(x, y1) = h(x,y)$, the last equality by the unit.
@@ -89,7 +89,7 @@ as soon as $\tau$ is central on products, $\tau(uv) = \tau(vu)$; so the entry's 
 **Theorem (the radical is an annihilator).** Let $h = h_{\varphi}$ be compatible. Then the radical of the entry, §*The Definition*, is
 
 $$
-A^{\perp} = \{x \in A : \varphi(Ax) = 0\} ,
+\boxed{\;A^{\perp} = \{x \in A : \varphi(Ax) = 0\}\;} ,
 $$
 
 the set of the elements annihilated by the functional on all their right multiples, and its image under the involution is $(A^{\perp})^{*} = \{x : \varphi(Ax^{*}) = 0\}$. The radical is a left ideal, and it is zero exactly when for every $x \neq 0$ there is $a \in A$ with $\varphi(ax) \neq 0$.
@@ -109,7 +109,7 @@ the set of the elements annihilated by the functional on all their right multipl
 **Theorem (the dictionary).** Let $h = h_{\varphi}$ be compatible and let $\varphi$ be its $R$-linear functional. Then
 
 $$
-h \text{ is Hermitian} \iff \varphi(z^{*}) = \varsigma(\varphi(z)) \ \text{ for all } z \in A,
+\boxed{\;h \text{ is Hermitian} \iff \varphi(z^{*}) = \varsigma(\varphi(z)) \ \text{ for all } z \in A\;},
 $$
 $$
 h \text{ is skew-Hermitian} \iff \varphi(z^{*}) = -\varsigma(\varphi(z)) \ \text{ for all } z \in A,

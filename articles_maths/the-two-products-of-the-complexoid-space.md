@@ -71,7 +71,7 @@ The product $Q_1Q_2$ is the multiplication of the field, the left multiplication
 **Proof.** Item 1 follows from the multiplication being bilinear and the bar being an involution. For item 2, $\overline{Q_2\bar Q_1} = \bar Q_2 Q_1 = Q_1\bar Q_2$, the last step by commutativity. For item 3, $\bar 1 = 1$ gives $Q_1\bar 1 = Q_1$, while $1\bar Q_2 = \bar Q_2$, which equals $Q_2$ only for real $Q_2$. For item 4 the witness is $Q_1 = 1$, $Q_2 = 1$, $Q_3 = i$:
 
 $$
-\boxed{\;(Q_1\bar Q_2)\bar Q_3 = 1 \cdot \bar i = -i, \qquad Q_1\overline{(Q_2\bar Q_3)} = \overline{1 \cdot \bar i} = \overline{-i} = i\;}.
+(Q_1\bar Q_2)\bar Q_3 = 1 \cdot \bar i = -i, \qquad Q_1\overline{(Q_2\bar Q_3)} = \overline{1 \cdot \bar i} = \overline{-i} = i.
 $$
 
 The two differ, so the product is not associative; it also fails alternation and flexibility and the degree-three identity, the weaker laws of an associative product, with witnesses in *Relations and Comparison Between the Two Products*, below this article in this category, and the failure is the general one for a sesquilinear product, the second slot carrying the conjugate.

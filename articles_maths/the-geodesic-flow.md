@@ -52,7 +52,7 @@ Consequently, on a manifold of negative curvature, the geodesic flow expands the
 **Theorem (Anosov).** Let $M$ be a compact Riemannian manifold of negative sectional curvature. Then the geodesic flow $\varphi_t$ on $SM$ is an Anosov flow: the tangent bundle splits as
 
 $$
-T_vSM=E^s_v\oplus E^0_v\oplus E^u_v , \qquad E^0_v=\mathbb{R}X(v) ,
+\boxed{\;T_vSM=E^s_v\oplus E^0_v\oplus E^u_v , \qquad E^0_v=\mathbb{R}X(v)\;} ,
 $$
 
 with $X$ the spray, and there are constants $C,\lambda>0$ such that $\|D\varphi_t|_{E^s}\|\le C\exp(-\lambda t)$ and $\|D\varphi_{-t}|_{E^u}\|\le C\exp(-\lambda t)$ for $t \ge0$; the strongly stable and strongly unstable distributions $E^s,E^u$ are integrable, and their integral manifolds are the **horospheres**: the leaf of $E^s$ through $v$ is the set of the unit vectors based at the points of the horosphere through $\pi(v)$ centred at the endpoint $\gamma_v(+\infty)$, and the leaf of $E^u$ is the analogous set for the horosphere centred at $\gamma_v(-\infty)$.
@@ -88,7 +88,7 @@ the sum of the positive Lyapunov exponents of the time-one map, by Pesin's formu
 **Theorem (Dinaburg–Manning; the volume entropy).** Let $M$ be a compact Riemannian manifold of nonpositive curvature with universal cover $M^{\mathrm{cov}}$ and let $\mathrm{vol}$ be the volume of $M^{\mathrm{cov}}$. Then the topological entropy of the geodesic flow is the **volume entropy**
 
 $$
-h_{\mathrm{top}}(\varphi)=\lim_{T\to\infty}\frac1T\log\mathrm{vol}(B(x,T)),
+\boxed{\;h_{\mathrm{top}}(\varphi)=\lim_{T\to\infty}\frac1T\log\mathrm{vol}(B(x,T))\;},
 $$
 
 which is independent of $x$; for a manifold with curvature in the interval $[-a^2,-b^2]$, $a \ge b>0$, the entropy satisfies $(n-1)b\le h_{\mathrm{top}}\le(n-1)a$, with $n=\dim M$, and the entropy is $(n-1)k$ for the space form of constant curvature $-k^2$. For a compact hyperbolic surface of curvature $-1$ the entropy per unit time is $1$, and the Liouville measure is the measure of maximal entropy.
@@ -102,7 +102,7 @@ which is independent of $x$; for a manifold with curvature in the interval $[-a^
 **Theorem (prime geodesic theorem; Huber, Selberg).** Let $M$ be a compact hyperbolic surface of curvature $-1$. Then the number of the closed geodesics of length at most $T$ satisfies
 
 $$
-\pi(T)=\#\{\gamma \text{ closed geodesic}:\ell(\gamma)\le T\}\sim\frac{\exp(T)}{T} \qquad (T\to\infty),
+\boxed{\;\pi(T)=\#\{\gamma \text{ closed geodesic}:\ell(\gamma)\le T\}\sim\frac{\exp(T)}{T} \qquad (T\to\infty)\;},
 $$
 
 the exponent $1$ being the topological entropy of the flow; for a compact negatively curved manifold of dimension $n$ and entropy $h$ the corresponding count grows like $\exp(hT)/(hT)$, and the closed geodesics equidistribute in $SM$ with respect to the Liouville measure, by the equidistribution theorem for the periodic orbits of an Anosov flow.

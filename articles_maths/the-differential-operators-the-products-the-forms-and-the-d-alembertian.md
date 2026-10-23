@@ -107,7 +107,7 @@ $$
 and the half-difference is the curl,
 
 $$
-\tilde\nabla\wedge\tilde Q_{\mathrm f}=\tfrac12\bigl(\tilde\nabla\tilde Q_{\mathrm f}-\tilde Q_{\mathrm f}\tilde\nabla\bigr)=\tfrac12\bigl(\nabla\times\vec Q_{\mathrm f}+\nabla\times\vec Q_{\mathrm f}\bigr)=\nabla\times\vec Q_{\mathrm f} ,
+\boxed{\; \tilde\nabla\wedge\tilde Q_{\mathrm f}=\tfrac12\bigl(\tilde\nabla\tilde Q_{\mathrm f}-\tilde Q_{\mathrm f}\tilde\nabla\bigr)=\tfrac12\bigl(\nabla\times\vec Q_{\mathrm f}+\nabla\times\vec Q_{\mathrm f}\bigr)=\nabla\times\vec Q_{\mathrm f} \;},
 $$
 
 a pure vector, so the plain form carries the whole scalar content of the product. Throughout these four subsections the pair
@@ -126,7 +126,7 @@ a scalar, the **contraction** of the derivative with the field in the sign vecto
 **The norm.** The norm is defined with the form, as that form at its two equal arguments:
 
 $$
-\langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
+\langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q,
 $$
 
 the cross terms cancelling. **On the material sector** it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$, the negative of $\frac{\partial^2}{\partial (q'_t)^2}+\Delta$; it is **not** the corpus's d'Alembertian.
@@ -169,9 +169,9 @@ assumed. **On the material sector** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\pa
 arguments, and the two orders of the product agree:
 
 $$
-\Box=\langle\tilde\nabla\rangle_{\natural}=\langle\tilde\nabla,\tilde\nabla\rangle_{\natural}
+\boxed{\; \Box=\langle\tilde\nabla\rangle_{\natural}=\langle\tilde\nabla,\tilde\nabla\rangle_{\natural}
 =\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\nabla\bigr)=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)
-=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q .
+=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q \;}.
 $$
 
 **This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, an operator on the whole algebra, one and
@@ -183,7 +183,7 @@ mass-term sign is left to a local convention.
 **The special case of the material sector.** On $\mathbb{M}_-$ the coordinates are $Q_t=iq'_t$ and $Q_k=q_k$, and the relation $Q_t=iq'_t$ flips the sign of the second derivative in $q'_t$, $\partial^2/\partial Q_t^2=-\partial^2/\partial (q'_t)^2$, so the same operator reads
 
 $$
-\Box\big|_{\mathbb{M}_-}=\frac{\partial^2}{\partial Q_t^2}+\Delta=\Delta-\frac{\partial^2}{\partial (q'_t)^2},
+\boxed{\; \Box\big|_{\mathbb{M}_-}=\frac{\partial^2}{\partial Q_t^2}+\Delta=\Delta-\frac{\partial^2}{\partial (q'_t)^2} \;},
 $$
 
 a plus on the vector part and a minus on the fourth coordinate. On $\mathbb{M}_-$ this reading is the corpus convention, used by the

@@ -52,7 +52,7 @@ At $q = 1$ the relations are those of $W$, so that $H_1(W) = k[W]$.
 **Theorem (the standard basis).** The elements $T_w$, $w\in W$, form a basis of $H_q(W)$ as an $A$-module; consequently $H_q(W)$ is free of rank $\lvert W\rvert$ over $A$ and is a deformation of the group algebra $k[W]$ over the ring $k[q^{\pm1}]$. The multiplication is determined by
 
 $$
-T_wT_s = \begin{cases} T_{ws}, & l(ws) = l(w)+1,\\[2pt] q\,T_{ws} + (q-1)T_w, & l(ws) = l(w)-1 .\end{cases}
+\boxed{\;T_wT_s = \begin{cases} T_{ws}, & l(ws) = l(w)+1,\\[2pt] q\,T_{ws} + (q-1)T_w, & l(ws) = l(w)-1 .\end{cases}\;}
 $$
 
 *Proof (outline).* One shows that the submodule spanned by the $T_w$ is closed under right multiplication by the generators: if $l(ws) = l(w)+1$ the product is $T_{ws}$ by definition, while if $l(ws) = l(w)-1$ one writes $w = w's$ with $l(w) = l(w')+1$ and computes
@@ -82,7 +82,7 @@ that is, $\tau$ is the $A$-linear functional that reads off the coefficient of $
 **Theorem.** The functional $\tau$ is a **trace**: $\tau(T_xT_y) = \tau(T_yT_x)$ for all $x,y\in W$. The form $\langle-,-\rangle$ is symmetric, nondegenerate and **associative**: $\langle T_xT_y,T_z\rangle = \langle T_x,T_yT_z\rangle$. Moreover
 
 $$
-\langle T_x,T_y\rangle = \begin{cases} q^{l(x)}, & xy = 1,\\ 0, & xy\neq1 .\end{cases}
+\boxed{\;\langle T_x,T_y\rangle = \begin{cases} q^{l(x)}, & xy = 1,\\ 0, & xy\neq1 .\end{cases}\;}
 $$
 
 Consequently $H_q(W)$ is a **symmetric algebra** in the sense of *Frobenius Algebras*: it is a free $A$-module of finite rank carrying an associative, symmetric, nondegenerate bilinear form, and it is additionally a **Frobenius algebra** with the symmetrising form $\tau$ as its Frobenius form.
@@ -154,7 +154,7 @@ The algebra has exactly $\lvert W\rvert$ simple modules, all one-dimensional, in
 **Theorem (Kazhdan–Lusztig, standard).** Let $(W,S)$ be a finite Coxeter system and write $\iota$ for the ring involution of $H_q(W)$ with $\iota(q) = q^{-1}$ and $\iota(T_w) = (T_{w^{-1}})^{-1}$. There is a unique basis $\{C'_w : w\in W\}$ of $H_q(W)$ over the Laurent polynomials in $q^{1/2}$ such that
 
 $$
-C'_w = \sum_{y\leq w}(-1)^{l(w)-l(y)}q^{(l(w)-l(y))/2}\,P_{y,w}(q)\,T_y , \qquad \iota(C'_w) = C'_w ,
+\boxed{\;C'_w = \sum_{y\leq w}(-1)^{l(w)-l(y)}q^{(l(w)-l(y))/2}\,P_{y,w}(q)\,T_y , \qquad \iota(C'_w) = C'_w\;} ,
 $$
 
 where $P_{y,w}(q)\in\mathbb{Z}[q]$ are the **Kazhdan–Lusztig polynomials**, with $P_{w,w} = 1$, with $P_{y,w} = 0$ unless $y\leq w$ and $l(y)\equiv l(w)$ modulo $2$, and with the degree of $P_{y,w}$ at most $(l(w)-l(y)-1)/2$ for $y<w$. For $W = S_3$ all the polynomials take the value $1$. The multiplication constants of the $C'$-basis are polynomials in $q$ with non-negative integer coefficients, and this **positivity** is what defines the cells of the algebra.

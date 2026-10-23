@@ -34,7 +34,7 @@ The two conditions in play are therefore distinct from the outset: $r_u^{2}=\mat
 **Theorem.** The adjoint of a reflection is the reflection by the parameter transformed by $\beta=\alpha\sigma$:
 
 $$
-(r_u)^{*}=r_{\beta(u)}, \qquad \beta(u)=\alpha(\sigma(u)) .
+\boxed{\;(r_u)^{*}=r_{\beta(u)}, \qquad \beta(u)=\alpha(\sigma(u))\;} .
 $$
 
 *Proof.* The adjoint of a signed sandwich is $\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(b)}$ by *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*; for $(a,b)=(u,u^{-1})$ this is $S^{\alpha}_{\beta(u),\beta(u^{-1})}$, and $\beta(u^{-1})=\beta(u)^{-1}$, so the adjoint is $r_{\beta(u)}$.
@@ -70,7 +70,7 @@ The corollary stops short of a group isomorphism, because $r_ur_v$ is a reflecti
 **Proposition.** The two conditions
 
 $$
-\text{order two: } r_u^{2}=\mathrm{id} \iff u\alpha(u) \in Z(A), \qquad \text{self-adjoint: } (r_u)^{*}=r_u \iff \beta(u)=u,
+\boxed{\;\text{order two: } r_u^{2}=\mathrm{id} \iff u\alpha(u) \in Z(A), \qquad \text{self-adjoint: } (r_u)^{*}=r_u \iff \beta(u)=u\;},
 $$
 
 are independent: either can hold without the other.
@@ -132,7 +132,7 @@ The commutative case is the extreme degeneracy: the reflections collapse to a si
 **Proposition.** A reflection is unitary exactly when its parameter is a unitary element of $A$:
 
 $$
-r_u^{*}r_u=r_ur_u^{*}=\mathrm{id} \iff \sigma(u)u=u\sigma(u)=1 .
+\boxed{\;r_u^{*}r_u=r_ur_u^{*}=\mathrm{id} \iff \sigma(u)u=u\sigma(u)=1\;} .
 $$
 
 *Proof.* This is the unitarity criterion of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra* with $(a,b)=(u,u^{-1})$.

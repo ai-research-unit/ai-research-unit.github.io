@@ -76,7 +76,7 @@ The determinant identity of the previous paragraph is the first of two constrain
 **Proposition.** Let $q$ be non-degenerate on $V$ of dimension $n$ and let $T$ be a similarity with multiplier $c$. Then
 
 $$
-(\det T)^2 = c^{\,n}, \qquad c^{\,n} \in (F^\times)^2 .
+\boxed{\;(\det T)^2 = c^{\,n}, \qquad c^{\,n} \in (F^\times)^2\;} .
 $$
 
 If $n$ is odd, $c$ is a square in $F$. If $n$ is even the second condition is automatic.
@@ -188,7 +188,7 @@ It is a normal subgroup of $\operatorname{O}(V, \mathfrak{Q})$, because the dete
 **Theorem.** Let $(V, \mathfrak{Q})$ be non-degenerate over a field $F$ of characteristic not $2$. Then
 
 $$
-\operatorname{O}(V, \mathfrak{Q}) / \operatorname{SO}(V, \mathfrak{Q}) \cong \{+1, -1\} \cong \mathbb{Z}/2\mathbb{Z},
+\boxed{\;\operatorname{O}(V, \mathfrak{Q}) / \operatorname{SO}(V, \mathfrak{Q}) \cong \{+1, -1\} \cong \mathbb{Z}/2\mathbb{Z}\;},
 $$
 
 provided the determinant assumes the value $-1$ on $\operatorname{O}(V, \mathfrak{Q})$; this holds whenever there is a hyperplane reflection, in particular for $n \geq 1$. The determinant map is not surjective onto $\{+1,-1\}$ over a general commutative ring, where $(\det T)^2 = 1$ may have more than two solutions.
@@ -245,7 +245,7 @@ Let $F$ have characteristic not $2$ and let $\mathfrak{Q}(x, y) = x^2 - y^2$ on 
 **Proposition.** Every $T \in \operatorname{O}(V, \mathfrak{Q})$ is of the form
 
 $$
-T = \begin{pmatrix} p & \eta r \\ r & \eta p \end{pmatrix}, \qquad p^2 - r^2 = 1, \quad \eta = \pm 1,
+\boxed{\;T = \begin{pmatrix} p & \eta r \\ r & \eta p \end{pmatrix}, \qquad p^2 - r^2 = 1, \quad \eta = \pm 1\;},
 $$
 
 with $\det T = \eta$; conversely every such matrix lies in $\operatorname{O}(V, \mathfrak{Q})$.

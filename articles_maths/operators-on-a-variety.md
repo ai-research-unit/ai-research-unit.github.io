@@ -25,7 +25,7 @@ s \longmapsto m_s, \qquad m_s(t) = st,
 $$
 is an isomorphism of sheaves of $\mathcal{O}_X$-algebras $\mathcal{O}_X\xrightarrow{\ \sim\ }\mathcal{E}nd(\mathcal{O}_X)$. Consequently every endomorphism of $\mathcal{O}_X$ linear over itself is the multiplication by a unique function, and the algebra of global operators is
 $$
-\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\Gamma(X,\mathcal{O}_X),
+\boxed{\;\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\Gamma(X,\mathcal{O}_X)\;},
 $$
 a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the group of invertible global functions.
 
@@ -48,7 +48,7 @@ $$
 
 **Theorem (the operator structure of the vector fields).** On each open $\Xi$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(\Xi))$ form a Lie algebra under the commutator
 $$
-[D_1,D_2] = D_1D_2 - D_2D_1,
+\boxed{\;[D_1,D_2] = D_1D_2 - D_2D_1\;},
 $$
 and a module over the ring $\mathcal{O}_X(\Xi)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
 $$
@@ -60,7 +60,7 @@ so that $\mathcal{D}er_k(\mathcal{O}_X)$ is a sheaf of Lie algebras over $k$ and
 
 **Proposition (the tangent sheaf is the dual of the cotangent sheaf).** There is a natural isomorphism of $\mathcal{O}_X$-modules
 $$
-\mathcal{T}_X \cong \mathcal{H}om_{\mathcal{O}_X}(\Omega^1_{X/k},\mathcal{O}_X),
+\boxed{\;\mathcal{T}_X \cong \mathcal{H}om_{\mathcal{O}_X}(\Omega^1_{X/k},\mathcal{O}_X)\;},
 $$
 where $\Omega^1_{X/k}$ is the cotangent sheaf of *Schemes*. On an affine chart $X = \operatorname{Spec} A$ it is the identification $\operatorname{Der}_k(A)\cong\operatorname{Hom}_A(\Omega^1_{A/k},A)$.
 

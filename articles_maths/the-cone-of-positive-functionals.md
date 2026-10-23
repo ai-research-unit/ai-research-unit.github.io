@@ -48,7 +48,7 @@ is convex, and it is compact in the weak-$\ast$ topology and metrisable when $A$
 **Proposition (the states determine the order).** For Hermitian $h,k$,
 
 $$
-h\leq k \iff \varphi(h)\leq\varphi(k) \ \text{ for every state } \varphi ,
+\boxed{\;h\leq k \iff \varphi(h)\leq\varphi(k) \ \text{ for every state } \varphi\;} ,
 $$
 
 so the order of the Hermitian part is recovered from the state space, and the order isomorphism classes of unital reduced involutive algebras are determined by the order-theoretic structure of their state spaces.
@@ -66,7 +66,7 @@ so the order of the Hermitian part is recovered from the state space, and the or
 **Theorem (Krein–Milman).** The state space is the closed convex hull of its extreme points,
 
 $$
-S(A) = \overline{\mathrm{conv}}\ \mathrm{ext}\,S(A) ,
+\boxed{\;S(A) = \overline{\mathrm{conv}}\ \mathrm{ext}\,S(A)\;} ,
 $$
 
 so every state is a weak-$\ast$ limit of convex combinations of pure states; the extreme points are nonempty, and when $S(A)$ is metrisable they form a $G_\delta$ set.
@@ -90,7 +90,7 @@ so that the Gelfand–Naimark theorem identifies $A$ with $C(X)$ and the states 
 **Theorem (the faces are the annihilators of the left ideals).** The faces of the state space are the sets
 
 $$
-F_I = \{\varphi\in S(A) : \varphi(a^{*}a) = 0 \ \text{for all } a\in I\}
+\boxed{\;F_I = \{\varphi\in S(A) : \varphi(a^{*}a) = 0 \ \text{for all } a\in I\}\;}
 $$
 
 for the closed left ideals $I$ of $A$; the correspondence reverses inclusions, the extreme points correspond to the maximal left ideals, and the facial structure of $S(A)$ is therefore the ideal lattice of $A$ read in the dual.

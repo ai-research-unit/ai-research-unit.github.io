@@ -23,7 +23,7 @@ with $r$ entries $+1$ and $n-r$ entries $-1$; the fixed subspace is the $r$-dime
 
 **Theorem (the fixed set is a locally flat submanifold).** Let $T$ be a locally linear involution of an $n$-manifold $M$. Then the fixed set $F = M^{T}$ is a closed locally flat submanifold of $M$, possibly empty; each connected component has a dimension $r \leq n$ that is constant on the component; and every point of $F$ has an equivariant neighbourhood
 $$
-F\times D^{k}\longrightarrow M, \qquad T(x,v) = (x,-v), \qquad k = n-r,
+\boxed{\;F\times D^{k}\longrightarrow M, \qquad T(x,v) = (x,-v), \qquad k = n-r\;},
 $$
 the **equivariant tubular neighbourhood**, in which $F$ sits as $F\times\{0\}$ and the involution reflects the normal disc.
 
@@ -55,7 +55,7 @@ where $E\mathbb{Z}/2\to B\mathbb{Z}/2 = \mathbb{RP}^\infty$ is the universal $\m
 
 **Theorem (the spectral sequence of the Borel construction).** There is a first-quadrant spectral sequence
 $$
-E^2_{n,m} = H_n\bigl(\mathbb{Z}/2;H_q(M;\mathbb{Z})\bigr) \Longrightarrow H_{n+m}^{\mathbb{Z}/2}(M;\mathbb{Z}),
+\boxed{\;E^2_{n,m} = H_n\bigl(\mathbb{Z}/2;H_q(M;\mathbb{Z})\bigr) \Longrightarrow H_{n+m}^{\mathbb{Z}/2}(M;\mathbb{Z})\;},
 $$
 with coefficients in the module $H_q(M;\mathbb{Z})$ carrying the action of the involution. For the trivial action it specialises to $H_n(\mathbb{RP}^\infty;\mathbb{Z})\otimes H_q(M;\mathbb{Z})$, and with $\mathbb{F}_2$ coefficients to the polynomial ring $\mathbb{F}_2[x]$ tensored with the homology; the $E^\infty$ page and the edge maps recover the Smith sequences relating $H_*(M)$, $H_*(F)$ and $H_*(M/T)$.
 
@@ -77,7 +77,7 @@ of a product carrying an involution, with a linear involution on the second fact
 
 **Theorem (the equivariant surgery obstruction).** Let $T$ act on a closed $n$-manifold $X$ with fundamental group $\pi = \pi_1(X)$, and let $(f,b)$ be an equivariant normal map. Then the obstruction to surgering $(f,b)$ equivariantly into an equivariant homotopy equivalence is an element
 $$
-\sigma^{\mathbb{Z}/2}(f,b) \in L_n\bigl(\mathbb{Z}[\pi]\otimes \mathbb{Z}[\mathbb{Z}/2]\bigr) = L_n\bigl(\mathbb{Z}[\pi\times\mathbb{Z}/2]\bigr),
+\boxed{\;\sigma^{\mathbb{Z}/2}(f,b) \in L_n\bigl(\mathbb{Z}[\pi]\otimes \mathbb{Z}[\mathbb{Z}/2]\bigr) = L_n\bigl(\mathbb{Z}[\pi\times\mathbb{Z}/2]\bigr)\;},
 $$
 the Wall surgery obstruction group of the group ring of $\pi\times\mathbb{Z}/2$ with the involution $g\mapsto g^{-1}$ and the orientation character; it vanishes if and only if the equivariant normal map can be corrected by equivariant surgeries to an equivariant homotopy equivalence, for $n\geq5$.
 

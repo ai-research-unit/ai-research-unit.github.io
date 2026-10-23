@@ -29,7 +29,7 @@ Throughout, $V$ is a finite-dimensional complex vector space with a positive-def
 
 **Theorem (the signed adjoint).** For all $a,b \in E$,
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha(b^{\dagger})},
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha(b^{\dagger})}\;},
 $$
 and in particular the unsigned case is $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$; the adjoint is conjugate-linear in the pair and involutive, $(\Theta^{*})^{*} = \Theta$.
 
@@ -37,7 +37,7 @@ and in particular the unsigned case is $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\d
 
 **Corollary (the self-adjoint signed sandwiches).** $\Theta^{\alpha}_{a,b}$ is self-adjoint, $(\Theta^{\alpha}_{a,b})^{*} = \Theta^{\alpha}_{a,b}$, exactly when
 $$
-a = \alpha(a^{\dagger}), \qquad b = \alpha(b^{\dagger}),
+\boxed{\;a = \alpha(a^{\dagger}), \qquad b = \alpha(b^{\dagger})\;},
 $$
 that is when $aT$ and $bT$ are Hermitian; in particular the signed sandwich of a Hermitian $a$ with $b = a$ and $a = \alpha(a)$ is self-adjoint.
 
@@ -47,8 +47,8 @@ that is when $aT$ and $bT$ are Hermitian; in particular the signed sandwich of a
 
 **Proposition (the unitarity condition).** The signed sandwich satisfies
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})}, \qquad
-\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(aa^{\dagger}),\,\alpha(b^{\dagger}b)},
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})}, \qquad
+\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(aa^{\dagger}),\,\alpha(b^{\dagger}b)}\;},
 $$
 and it is a **unitary** operator on the Hermitian space $E$ exactly when $a$ and $b$ are unitary; the signed sandwiches with $a,b \in \mathrm{U}(h)$ form the group $\mathrm{U}(h)\times \mathrm{U}(h)$ acting on $E$, each factor acting by a one-sided operator.
 

@@ -78,7 +78,7 @@ that is, the ordinary scheme whose structure sheaf is the quotient by the ideal 
 **Theorem (Grothendieck's theorem on formal functions).** Let $f : X \to Y$ be a proper morphism of locally noetherian formal schemes, let $\mathcal{I} \subseteq O_Y$ be an ideal of definition and let $\mathcal{F}$ be a coherent $O_X$-module. Then for every $q \geq 0$ the sheaf $R^q f_*(\mathcal{F})$ is a coherent $O_Y$-module, and the natural map
 
 $$
-\bigl(R^q f_*(\mathcal{F})\bigr)^\wedge \longrightarrow \varprojlim_n R^q f_*\bigl(\mathcal{F} \otimes_{O_X} O_X/\mathcal{I}^n O_X\bigr)
+\boxed{\;\bigl(R^q f_*(\mathcal{F})\bigr)^\wedge \longrightarrow \varprojlim_n R^q f_*\bigl(\mathcal{F} \otimes_{O_X} O_X/\mathcal{I}^n O_X\bigr)\;}
 $$
 
 is an isomorphism; in particular the cohomology of $\mathcal{F}$ on the thickenings determines $R^q f_*(\mathcal{F})$.
@@ -88,7 +88,7 @@ is an isomorphism; in particular the cohomology of $\mathcal{F}$ on the thickeni
 **Theorem (formal GAGA).** Let $A$ be a complete noetherian adic ring with ideal of definition $I$, let $X$ be a formal scheme proper over $\operatorname{Spf} A$, and let $X_0$ be its reduction. Then the functor
 
 $$
-\mathcal{F} \longmapsto \mathcal{F}_0 = \mathcal{F} \otimes_{O_X} O_{X_0}
+\boxed{\;\mathcal{F} \longmapsto \mathcal{F}_0 = \mathcal{F} \otimes_{O_X} O_{X_0}\;}
 $$
 
 from coherent $O_X$-modules to coherent $O_{X_0}$-modules is fully faithful, its essential image is the coherent sheaves on $X_0$ that are "algebraisable" over $\operatorname{Spf} A$, and for a coherent $\mathcal{F}$ the module of global sections $\Gamma(X, \mathcal{F})$ is a finitely generated $A$-module. For $X$ projective over $\operatorname{Spf} A$ the functor is an equivalence between coherent $O_X$-modules and coherent $O_{X_0}$-modules equipped with a compatible $I$-adic completion.
@@ -106,7 +106,7 @@ from coherent $O_X$-modules to coherent $O_{X_0}$-modules is fully faithful, its
 **Definition.** Let $X$ be a scheme and $Y \subseteq X$ a closed subscheme with ideal sheaf $\mathcal{I}_Y$. The **formal completion of $X$ along $Y$** is the formal scheme
 
 $$
-\widehat{X}_{/Y} = \bigl(Y, \varprojlim_n O_X/\mathcal{I}_Y^{\,n}\bigr),
+\boxed{\;\widehat{X}_{/Y} = \bigl(Y, \varprojlim_n O_X/\mathcal{I}_Y^{\,n}\bigr)\;},
 $$
 
 whose underlying topological space is $Y$ and whose structure sheaf is the inverse limit of the structure sheaves of the infinitesimal neighbourhoods of $Y$ in $X$.

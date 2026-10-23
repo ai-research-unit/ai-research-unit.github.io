@@ -86,7 +86,7 @@ $$
 sending the germ of a local morphism to its stalk map. It is injective; it is an isomorphism when $\mathcal{F}$ is of finite presentation over $\mathcal{O}_X$, in particular when $\mathcal{F}$ is locally free of finite rank or coherent. For such $\mathcal{F}$,
 
 $$
-\mathcal{E}nd(\mathcal{F})_x\cong\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x).
+\boxed{\;\mathcal{E}nd(\mathcal{F})_x\cong\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x)\;}.
 $$
 
 *Proof.* The stalk of the hom sheaf is the filtered colimit $\varinjlim_{x\in \Omega}\operatorname{Hom}(\mathcal{F}|_\Omega,\mathcal{G}|_\Omega)$, and passing to the colimit of the stalk maps is the comparison map, since a morphism sends germs to germs. If the stalk map of a local morphism vanishes, the morphism is zero on a neighbourhood of $x$, so the germ is zero: the map is injective. For finite presentation, the restriction and the colimit are inverse: an element of $\operatorname{Hom}(\mathcal{F}_x,\mathcal{G}_x)$ is represented on a small open $\Omega$ by a morphism $\mathcal{F}|_\Omega\to\mathcal{G}|_\Omega$ because $\mathcal{F}$ admits a local presentation by finitely many generators and relations, and two representatives agree on a smaller open set. When $\mathcal{G}=\mathcal{F}$ the source is $\mathcal{E}nd(\mathcal{F})_x$ and the target is $\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x)$.
@@ -94,7 +94,7 @@ $$
 **Corollary (locally free sheaves).** If $\mathcal{F}$ is locally free of rank $r$ over $\mathcal{O}_X$, then
 
 $$
-\mathcal{E}nd(\mathcal{F})_x\cong M_r(\mathcal{O}_{X,x}),\qquad \mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{F}^{\vee},
+\boxed{\;\mathcal{E}nd(\mathcal{F})_x\cong M_r(\mathcal{O}_{X,x}),\qquad \mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{F}^{\vee}\;},
 $$
 
 with $\mathcal{F}^{\vee}=\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\mathcal{O}_X)$ the dual sheaf; $\mathcal{E}nd(\mathcal{F})$ is locally free of rank $r^2$.
@@ -114,7 +114,7 @@ with $\mathcal{F}^{\vee}=\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\mathcal{O}_X
 **Proposition (operators on the structure sheaf).** For a ringed space $(X,\mathcal{O}_X)$,
 
 $$
-\mathcal{E}nd_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X,\qquad \operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X(X),
+\boxed{\;\mathcal{E}nd_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X,\qquad \operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\mathcal{O}_X(X)\;},
 $$
 
 as sheaves of rings and as rings. The inverse map is evaluation at the unit section: the operator $T$ is sent to $T(1)$.

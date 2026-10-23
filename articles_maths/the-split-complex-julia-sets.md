@@ -29,7 +29,7 @@ That is, $z \in F_c$ when there is a neighbourhood $\Omega$ of $z$ on which, for
 **Theorem (the Fatou set is a product).** For every $c \in \mathbb{D}$ the Fatou set is the preimage under the isomorphism $\varphi$ of the product of the real Fatou sets,
 
 $$
-F_c = \varphi^{-1}\bigl(F_+ \times F_-\bigr) ,
+\boxed{\; F_c = \varphi^{-1}\bigl(F_+ \times F_-\bigr) \;},
 $$
 
 where $F_\pm$ is the Fatou set of the real quadratic map $g_\pm(x) = x^2 + c_\pm$ on $\mathbb{R}$.
@@ -39,7 +39,7 @@ where $F_\pm$ is the Fatou set of the real quadratic map $g_\pm(x) = x^2 + c_\pm
 **Corollary (the Julia set is a union of two products).** The Julia set is
 
 $$
-J_c = \varphi^{-1}\Bigl(\bigl(J_+ \times \mathbb{R}\bigr) \cup \bigl(\mathbb{R} \times J_-\bigr)\Bigr) ,
+\boxed{\; J_c = \varphi^{-1}\Bigl(\bigl(J_+ \times \mathbb{R}\bigr) \cup \bigl(\mathbb{R} \times J_-\bigr)\Bigr) \;},
 $$
 
 since the complement of $F_+ \times F_-$ in $\mathbb{R}^2$ is $(J_+ \times \mathbb{R}) \cup (\mathbb{R} \times J_-)$. In the coordinates $z = a+ja'$ the two pieces are the vertical and the horizontal product sets $\{z_+ \in J_+\}$ and $\{z_- \in J_-\}$, each a union of lines in the idempotent coordinates.
@@ -115,7 +115,7 @@ indefinite of signature $(1,1)$; its zero set is the **null cone** $\mathcal{N} 
 **Theorem (the Newton map splits).** Let $p(z) = \sum_{k=0}^{d} a_k z^k$ be a polynomial with coefficients $a_k \in \mathbb{D}$, and let $N_p(z) = z - p(z)/p'(z)$ be the Newton map of $p$, defined where $p'(z)$ is a unit. Then $N_p$ commutes with the idempotent decomposition: in the coordinates,
 
 $$
-\varphi\bigl(N_p(z)\bigr) = \bigl(N_{p_+}(z_+),\ N_{p_-}(z_-)\bigr) ,
+\boxed{\; \varphi\bigl(N_p(z)\bigr) = \bigl(N_{p_+}(z_+),\ N_{p_-}(z_-)\bigr) \;},
 $$
 
 where $p_\pm(x) = \sum_k a_{k\pm} x^k$ is the real polynomial obtained from the coefficients of $p$ and $N_{p_\pm}$ is its real Newton map.

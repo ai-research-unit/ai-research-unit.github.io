@@ -34,13 +34,17 @@ the two blocks being left multiplications by quaternions on two copies of $\math
 **Theorem.** The characteristic polynomial of $L_{\tilde{Q}}$ is
 
 $$
-p_{\tilde{Q}}(\lambda) = \left(\lambda^2 - 2q_t^+\lambda + |\tilde{Q}_+|^2\right)^2\left(\lambda^2 - 2q_t^-\lambda + |\tilde{Q}_-|^2\right)^2 ,
+\boxed{\;
+p_{\tilde{Q}}(\lambda) = \left(\lambda^2 - 2q_t^+\lambda + |\tilde{Q}_+|^2\right)^2\left(\lambda^2 - 2q_t^-\lambda + |\tilde{Q}_-|^2\right)^2
+\;},
 $$
 
 where $q_t^\pm = \mathrm{Re}\,\tilde{Q}_\pm$ and $|\tilde{Q}_\pm|^2 = \sum_\mu(q_\mu\pm q'_\mu)^2$. Hence
 
 $$
-\sigma(\tilde{Q}) = \left\{q_t^+ + i|\vec Q_+|,\, q_t^+ - i|\vec Q_+|,\, q_t^- + i|\vec Q_-|,\, q_t^- - i|\vec Q_-|\right\},
+\boxed{\;
+\sigma(\tilde{Q}) = \left\{q_t^+ + i|\vec Q_+|,\, q_t^+ - i|\vec Q_+|,\, q_t^- + i|\vec Q_-|,\, q_t^- - i|\vec Q_-|\right\}
+\;},
 $$
 
 where $\vec Q_\pm = \mathrm{Vect}\,\tilde{Q}_\pm$ is the vector part of the component and $|\vec Q_\pm| = \sqrt{|\tilde{Q}_\pm|^2 - (q_t^\pm)^2}$ its modulus, the four values with each occurring to multiplicity two.
@@ -139,7 +143,7 @@ with $|\tilde{Q}_\pm - \lambda|^2 = (\mathrm{Re}(\tilde{Q}_\pm) - \mathrm{Re}\,\
 **Corollary (analyticity and resolvent identity).** The resolvent is real-analytic on its domain, with poles along the two conjugacy classes $[\tilde{Q}_\pm]$; for $\lambda,\mu$ in the resolvent set,
 
 $$
-R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu) ,
+\boxed{\;R(\lambda) - R(\mu) = (\lambda - \mu)R(\lambda)R(\mu)\;}
 $$
 
 since with $A = \tilde{Q} - \lambda e_t$ and $B = \tilde{Q} - \mu e_t$ one has $A^{-1} - B^{-1} = A^{-1}(B - A)B^{-1}$ for central $\lambda, \mu$.

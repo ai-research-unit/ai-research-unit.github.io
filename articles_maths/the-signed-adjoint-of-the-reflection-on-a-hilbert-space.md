@@ -19,7 +19,7 @@ Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb
 **Theorem (the adjoint).** For every reflector $U$ the reflection has adjoint
 
 $$
-(\rho_U)^*=S_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)},
+\boxed{\;(\rho_U)^*=S_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)}\;},
 $$
 
 so the adjoint of a reflection is the reflection by the $\alpha$-adjoint reflector; the adjoint operation on the reflections is an involution, $((\rho_U)^*)^*=\rho_U$, and it commutes with the scalar ambiguity of the reflector.
@@ -55,7 +55,7 @@ a self-adjoint reflection has mutually orthogonal eigenvalue pieces, the Hilbert
 **Theorem (self-adjointness).** The reflection is self-adjoint, $(\rho_U)^*=\rho_U$, if and only if
 
 $$
-\alpha(U^*)=k\,U
+\boxed{\;\alpha(U^*)=k\,U\;}
 $$
 
 for a nonzero scalar $k$; for a unitary reflector the criterion is that $U^2$ be a scalar, and it is the same condition for the even and for the odd unitaries. In particular a general unitary reflector does not give a self-adjoint reflection.
@@ -73,7 +73,7 @@ for a nonzero scalar $k$; for a unitary reflector the criterion is that $U^2$ be
 **Theorem (failure at $\alpha=\mathrm{id}$).** Suppose the grading is trivial, $H^1=0$, so that $\alpha=\mathrm{id}$; then the reflectors are the scalar multiples of the unitaries, the reflection is the inner automorphism $\iota_U$, and
 
 $$
-(\iota_U)^*=\iota_{U^*} .
+\boxed{\;(\iota_U)^*=\iota_{U^*}\;} .
 $$
 
 Consequently $\iota_U$ is self-adjoint if and only if $U^*=kU$ for a nonzero scalar $k$; for a unitary $U$ this is $U^2$ scalar. A general inner automorphism of $B(H)$ by a unitary is therefore not self-adjoint on the Hilbert–Schmidt space, and the correspondence between the reflector and the self-adjoint reflection fails beyond the self-adjoint reflections.

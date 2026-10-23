@@ -32,7 +32,7 @@ the **spherical dual** $\operatorname{Irr}(G,K)$ is the set of irreducible unita
 **Theorem (the spherical-function identities).** Let $\omega$ be a spherical function. Then
 
 $$
-\omega(e) = 1, \qquad \omega(x^{-1}) = \overline{\omega(x)}, \qquad |\omega(x)|\leq1,
+\boxed{\;\omega(e) = 1, \qquad \omega(x^{-1}) = \overline{\omega(x)}, \qquad |\omega(x)|\leq1\;},
 $$
 
 and $\omega$ is positive definite; conversely a normalised positive definite bi-$K$-invariant function satisfying the integral equation is spherical.
@@ -62,7 +62,7 @@ It is bi-$K$-invariant, because both the vector and the inner product are $K$-in
 **Theorem (the zonal spherical function is spherical).** For $\pi\in\operatorname{Irr}(G,K)$ and a $K$-fixed unit vector $\xi$, the zonal spherical function satisfies the integral equation
 
 $$
-\int_K\omega_\pi(xky)\,dk = \omega_\pi(x)\omega_\pi(y),
+\boxed{\;\int_K\omega_\pi(xky)\,dk = \omega_\pi(x)\omega_\pi(y)\;},
 $$
 
 and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered from $\omega_\pi$ as its GNS representation, and the pair $(\pi,\xi)$ is determined by $\omega_\pi$ up to unitary equivalence.
@@ -86,7 +86,7 @@ which is the Gelfand transform of the commutative Banach algebra $L^1(K\backslas
 **Theorem (the transform is a `*`-homomorphism).** The spherical transform satisfies
 
 $$
-\widehat{f*h}(\omega) = (\mathcal F f)(\omega)\,(\mathcal F h)(\omega), \qquad \widehat{f^*}(\omega) = \overline{(\mathcal F f)(\omega)} ,
+\boxed{\;\widehat{f*h}(\omega) = (\mathcal F f)(\omega)\,(\mathcal F h)(\omega), \qquad \widehat{f^*}(\omega) = \overline{(\mathcal F f)(\omega)}\;} ,
 $$
 
 and it is injective with dense image in $C_0(\Sigma(G,K))$; the spherical functions are the evaluations at the points of the spectrum.

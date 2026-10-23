@@ -43,7 +43,7 @@ this category, and the transform acts on them as multiplication by the symbol. N
 
 **Theorem (the transform of the conjugate).** For $f\in L^1(\mathbb R^n)$,
 $$
-\widehat{\bar f}(\xi)=\overline{(\mathcal F f)(-\xi)},\qquad \widehat{\bar f}=(\overline{\mathcal F f})^{\mathrm{refl}},
+\boxed{\;\widehat{\bar f}(\xi)=\overline{(\mathcal F f)(-\xi)},\qquad \widehat{\bar f}=(\overline{\mathcal F f})^{\mathrm{refl}}\;},
 $$
 where $g^{\mathrm{refl}}(x)=g(-x)$ is the reflection; equivalently, in the notation of the Fourier article,
 $\mathcal F(\bar f)=\overline{\mathcal F f}\circ(-1)$.
@@ -66,7 +66,7 @@ so that conjugation and the transform fail to commute by exactly the reflection 
 **Theorem (the conjugate-symmetry criterion).** A function $f\in L^1\cap L^2$ is real up to equality almost
 everywhere if and only if its transform obeys the conjugate symmetry
 $$
-(\mathcal F f)(-\xi)=\overline{(\mathcal F f)(\xi)}
+\boxed{\;(\mathcal F f)(-\xi)=\overline{(\mathcal F f)(\xi)}\;}
 $$
 for almost every $\xi$; equivalently, the transform is **Hermitian**. More generally, $f$ satisfies the
 shifted Hermitian condition $\bar f=\tau_yf$ for a translation $\tau_y$ if and only if $\mathcal F f$ has the
@@ -82,8 +82,8 @@ $\widehat{(\tau_{-a}f)}(\xi)=\exp(-2\pi ia\cdot\xi)(\mathcal F f)(\xi)$ of the F
 $f_{\mathrm e}(x)=\frac12(f(x)+f(-x))$ and $f_{\mathrm o}(x)=\frac12(f(x)-f(-x))$ be its even and odd
 parts. Then
 $$
-\mathcal F f_{\mathrm e}(\xi)=\operatorname{Re}(\mathcal F f)(\xi),\qquad
-\mathcal F f_{\mathrm o}(\xi)=i\operatorname{Im}(\mathcal F f)(\xi),
+\boxed{\;\mathcal F f_{\mathrm e}(\xi)=\operatorname{Re}(\mathcal F f)(\xi),\qquad
+\mathcal F f_{\mathrm o}(\xi)=i\operatorname{Im}(\mathcal F f)(\xi)\;},
 $$
 so that the even part of a real function has the real part of the spectrum as its transform and the odd part
 has $i$ times the imaginary part.

@@ -103,7 +103,7 @@ $$
 
 The rotor is the block-diagonal $\operatorname{diag}(1,\mathsf R(\theta,\vec u))$ in both halves. For a general unit the matrix of the action is $r^{2}\Lambda_\pm$, with $\Lambda_\pm=B_\pm\operatorname{diag}(1,\mathsf R)\in SO^{+}(1,3)$; the image of the group of units is the linear conformal group
 
-$$ \boxed{\;CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)\;}, $$
+$$ CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3), $$
 
 of real dimension seven, and not the full conformal group of Lorentzian space, whose translations and special conformal transformations are not sandwiches. The projective null cone, the celestial sphere and the Möbius action are in *Biquaternion Lorentzian and Conformal Geometry*.
 
@@ -266,7 +266,7 @@ Two dualities must be distinguished. The defining module is **self-dual** as a r
 
 Group representations tensor with the diagonal action $g \cdot (v \otimes w) = (gv) \otimes (gw)$. For the polynomial representations of $SL(2,\mathbb{C})$ the Clebsch–Gordan rule is
 
-$$ \boxed{\;V_j \otimes V_k \cong \bigoplus_{l=|j-k|}^{j+k} V_l, \qquad j, k \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}\;}. $$
+$$ V_j \otimes V_k \cong \bigoplus_{l=|j-k|}^{j+k} V_l, \qquad j, k \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}. $$
 
 The tensor square of the spinor is the simplest nontrivial case:
 

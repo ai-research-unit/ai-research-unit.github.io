@@ -33,7 +33,7 @@ on the homogeneous elements, extended by linearity.
 
 **Theorem (the representation law).** The graded action is a representation of the graded algebra,
 $$
-\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab},\qquad \rho_\varepsilon=\mathrm{id},\qquad \rho_a(M_{\bar j})\subseteq M_{\overline{|a|+j}} ,
+\boxed{\;\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab},\qquad \rho_\varepsilon=\mathrm{id},\qquad \rho_a(M_{\bar j})\subseteq M_{\overline{|a|+j}}\;} ,
 $$
 and on a homogeneous element $\rho_a$ is an isomorphism of the graded pieces.
 
@@ -43,7 +43,7 @@ and on a homogeneous element $\rho_a$ is an isomorphism of the graded pieces.
 
 **Theorem (the form is graded).** The form of the category on the regular module $\mathcal{H}=L^2(\Omega,\mathbb P)$ is graded, $\langle x_{\bar i},y_{\bar j}\rangle=0$ for $i\ne j$, and on the regular module the graded action is the signed left multiplication for the odd parameters and the ordinary left multiplication for the even ones,
 $$
-\rho_a=\begin{cases}L_a,&|a|=\bar0,\\ T^\alpha_a=L_a\alpha,&|a|=\bar1.\end{cases}
+\boxed{\;\rho_a=\begin{cases}L_a,&|a|=\bar0,\\ T^\alpha_a=L_a\alpha,&|a|=\bar1.\end{cases}\;}
 $$
 
 *Proof.* The even and the odd parts of $L^2$ are orthogonal for the form because the expectation of a product of opposite parities vanishes, $\varphi(x_{\bar0}y_{\bar1}^*)=0$ by the parity of the measure-preserving involution; the identification of the action is the definition of the grading on the regular module, where the odd parameters act with the grade involution inserted.
@@ -72,7 +72,7 @@ $$
 
 **Theorem (the cancellation).** On the regular module with the form of the category the Koszul sign of the graded adjoint cancels and the graded adjoint of a homogeneous element is the graded action of the **twisted image**,
 $$
-\rho_a^\dagger=\rho_{\delta(a)},\qquad \delta=\sigma\alpha=\alpha\sigma ,
+\boxed{\;\rho_a^\dagger=\rho_{\delta(a)},\qquad \delta=\sigma\alpha=\alpha\sigma\;} ,
 $$
 so the graded adjoint action is the graded action after all, and the map $\delta$ is an isomorphism of the graded algebra.
 

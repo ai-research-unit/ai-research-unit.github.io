@@ -18,7 +18,7 @@ This article fixes the standard involution, derives the involutions induced by a
 **Definition.** The **standard involution** of $K[G]$ is the map
 
 $$
-\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,g^{-1},
+\boxed{\;\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,g^{-1}\;},
 $$
 
 extended linearly.
@@ -58,7 +58,7 @@ $$
 Then
 
 $$
-\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,u_g\,\iota(g)
+\boxed{\;\Bigl(\sum_g a_g\,g\Bigr)^{*} = \sum_g \sigma(a_g)\,u_g\,\iota(g)\;}
 $$
 
 is an involution of $K[G]$ restricting to $\sigma$ on the coefficients; the involution induced by $\iota$ is the case $u = 1$, and the standard involution is the case $u = 1$ and $\iota(g) = g^{-1}$.
@@ -78,7 +78,7 @@ $$
 **Proposition.** The assignment $\bar g^{*} = \overline{g^{-1}}$ extends to an involution of $K^{\alpha}[G]$ with coefficient involution $\sigma$ if and only if
 
 $$
-\alpha(g,h) = \alpha(h^{-1},g^{-1}) \qquad \text{for all } g, h \in G .
+\boxed{\;\alpha(g,h) = \alpha(h^{-1},g^{-1}) \qquad \text{for all } g, h \in G\;} .
 $$
 
 **Proof.** By linearity it suffices to check the products of basis elements. On the one hand $(\bar g\bar h)^{*} = \alpha(g,h)\,\overline{gh}^{*} = \alpha(g,h)\overline{(gh)^{-1}}$. On the other hand $\bar h^{*}\bar g^{*} = \overline{h^{-1}}\,\overline{g^{-1}} = \alpha(h^{-1},g^{-1})\overline{h^{-1}g^{-1}} = \alpha(h^{-1},g^{-1})\overline{(gh)^{-1}}$. The two agree for all $g, h$ exactly under the stated identity. The square is the identity because $\overline{g^{-1}}^{*} = \bar g$ and $\sigma^2 = \mathrm{id}$, and additivity and the unit are immediate.

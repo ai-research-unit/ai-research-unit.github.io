@@ -13,7 +13,7 @@ Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensiona
 **Theorem.** With respect to the twisted pairing,
 
 $$
-\{S_{a,b}x,y\}=\{x,\,S_{\delta(a),\delta(b)}y\}, \qquad \text{that is} \qquad S_{a,b}^{*_\sigma}=S_{\delta(a),\delta(b)} .
+\boxed{\;\{S_{a,b}x,y\}=\{x,\,S_{\delta(a),\delta(b)}y\}, \qquad \text{that is} \qquad S_{a,b}^{*_\sigma}=S_{\delta(a),\delta(b)}\;} .
 $$
 
 The signed adjoint of a sandwich is the sandwich of the two $\delta$-images, with the order of the parameters **not** reversed, and the assignment $S_{a,b}\mapsto S_{\delta(a),\delta(b)}$ is an involution of the signed sandwich space.
@@ -43,7 +43,7 @@ $$
 **Theorem.** The signed sandwich satisfies the composition rules of *The Signed Sandwich on an Algebra*,
 
 $$
-S_{a,b}S_{c,d}=T_{a\alpha(c),\,\alpha(d)b}, \qquad S_{a,b}^{-1}=S_{\alpha(a)^{-1},\,\alpha(b)^{-1}},
+\boxed{\;S_{a,b}S_{c,d}=T_{a\alpha(c),\,\alpha(d)b}, \qquad S_{a,b}^{-1}=S_{\alpha(a)^{-1},\,\alpha(b)^{-1}}\;},
 $$
 
 and the unsigned sandwich $T_{c,d}$ is the identity exactly when $c$ is a central unit and $d=c^{-1}$.
@@ -87,7 +87,7 @@ since $\delta(a)=\sigma(\alpha(a))$ and the equation $\sigma(\alpha(a))\alpha(a)
 **Corollary (the unitary elements).** The **unitary elements** of the algebra for the anti-automorphism $\delta$ are the units $u$ with
 
 $$
-u^{*_\sigma}u=uu^{*_\sigma}=1, \qquad u^{*_\sigma}=\delta(u),
+\boxed{\;u^{*_\sigma}u=uu^{*_\sigma}=1, \qquad u^{*_\sigma}=\delta(u)\;},
 $$
 
 and they form a subgroup of $A^{\times}$; the one-sided signed operators $\Lambda(u)$ with $u$ of this form are unitary, and the signed sandwiches with $a$ and $b$ satisfying the two conditions above are the unitary sandwiches.

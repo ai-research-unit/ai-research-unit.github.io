@@ -29,7 +29,7 @@ Because $A$ is commutative, $L_a$ is also the right multiplication $x \mapsto xa
 **Proposition.** For all $a, b \in A$ and $r \in R$,
 
 $$
-L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A .
+\boxed{\;L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A\;} .
 $$
 
 *Proof.* Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$.
@@ -55,7 +55,7 @@ The multiplication operators are exactly the operators that commute with all of 
 **Theorem.** In $\operatorname{End}_R(A)$, the centralizer of $L(A)$ is $L(A)$ itself:
 
 $$
-\{T \in \operatorname{End}_R(A) : T L_a = L_a T \ \text{for all } a \in A\} = L(A) .
+\boxed{\;\{T \in \operatorname{End}_R(A) : T L_a = L_a T \ \text{for all } a \in A\} = L(A)\;} .
 $$
 
 Equivalently, every $A$-linear endomorphism of the regular module $A$ is a multiplication operator, and $A \cong \operatorname{End}_A(A)$.
@@ -125,7 +125,7 @@ into the $R$-algebra of functions on the character set with pointwise operations
 **Theorem.** $\Gamma$ is a unital $R$-algebra homomorphism, and under it the multiplication operator $L_a$ becomes multiplication of functions by $\Gamma(a)$:
 
 $$
-\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \mathcal F a\,\mathcal F x ,
+\boxed{\;\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \mathcal F a\,\mathcal F x\;} ,
 $$
 
 where $\mathcal F a = \Gamma(a)$.

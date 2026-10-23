@@ -82,7 +82,7 @@ with the loop space $\Omega BQ\mathcal{M}$ homotopy equivalent to $BGL(R)^+$ in 
 **Theorem (Waldhausen).** For a ring $R$ and $\mathcal{M} = \mathrm{Proj}(R)$ there is a natural weak homotopy equivalence
 
 $$
-\Omega|S_\bullet\mathcal{M}| \simeq K(\mathcal{M}) = \Omega BQ\mathcal{M},
+\boxed{\;\Omega|S_\bullet\mathcal{M}| \simeq K(\mathcal{M}) = \Omega BQ\mathcal{M}\;},
 $$
 
 so that $K_n(\mathcal{M}) \cong \pi_n(\Omega|S_\bullet\mathcal{M}|) \cong \pi_{n+1}(|S_\bullet\mathcal{M}|)$; equivalently $K_n \cong \pi_n$ of the loop space of the realisation.
@@ -106,7 +106,7 @@ a spectrum with $\pi_0K(\mathcal{C}) \cong K_0(\mathcal{C})$. The distinction be
 **Theorem (additivity).** Let $\mathcal{A} \to \mathcal{B} \to \mathcal{C}$ be a sequence of exact categories in which $\mathcal{A}$ is a full subcategory of $\mathcal{B}$ closed under extensions and $\mathcal{C}$ is the quotient, so that every object of $\mathcal{B}$ sits in an exact sequence with outer terms in $\mathcal{A}$ and $\mathcal{C}$. Then there is a weak homotopy equivalence
 
 $$
-K(\mathcal{B}) \xrightarrow{\ \simeq\ } K(\mathcal{A}) \times K(\mathcal{C}),
+\boxed{\;K(\mathcal{B}) \xrightarrow{\ \simeq\ } K(\mathcal{A}) \times K(\mathcal{C})\;},
 $$
 
 and the corresponding long exact sequence of $K$-groups degenerates into split short exact sequences.
@@ -122,7 +122,7 @@ $$
 and hence a long exact sequence
 
 $$
-\cdots \to K_n(\mathcal{B}) \to K_n(\mathcal{A}) \to K_n(\mathcal{A}/\mathcal{B}) \to K_{n-1}(\mathcal{B}) \to \cdots .
+\boxed{\;\cdots \to K_n(\mathcal{B}) \to K_n(\mathcal{A}) \to K_n(\mathcal{A}/\mathcal{B}) \to K_{n-1}(\mathcal{B}) \to \cdots\;} .
 $$
 
 *Proof sketch.* All three theorems are proved from the $S_\bullet$-construction and the additivity theorem: the localisation theorem uses the fibration sequence of Waldhausen categories associated to the quotient, and the long exact sequence is the homotopy long exact sequence of the fibration of spectra.

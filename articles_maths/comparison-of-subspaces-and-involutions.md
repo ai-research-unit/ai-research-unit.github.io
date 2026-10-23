@@ -35,6 +35,12 @@ The following table compares the fixed and anti-fixed subspaces of the main conj
 
 The table shows the shape of the main decomposition of each algebra. In $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$ the fixed space is one-dimensional, the scalar line; the anti-fixed space is the imaginary line in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$ and the three-dimensional vector space in $\mathbb{H}$ (*Complexoid Subspaces*, §*The Two Subspaces at a Glance*; *Split-Complexoid Subspaces*, §*The Distinguished Subspaces at a Glance*; *Dual-Number Subspaces*, §*The Two Submodules at a Glance*; *The Scalar and Vector Subspaces of $\mathbb{H}$*, §*The Two-Subspace Lattice and the Absence of the Full Lattice*). The last two columns are where the fixed space grows: the centre of $\mathbb{B}$ is the complex line $\mathbb{C}_{\mathbb{B}}$, of real dimension two, and the centre of $\mathbb{H}_{\mathbb{D}}$ is the split complex line $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, also of dimension two; correspondingly the anti-fixed space of $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$, of dimension three, is replaced by the complex vector space $\mathrm{Vect}(\mathbb{B})$ of real dimension six in $\mathbb{B}$ and by the split complex vector space $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ of the same real dimension six in $\mathbb{H}_{\mathbb{D}}$ (*Introduction to the Remarkable Subspaces*; *Split-Biquaternion Relations Between Subspaces*, §*The Four Subspaces at a Glance*). The anti-fixed spaces of $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ are the largest of the table, of real dimension six, because the complex or split complex coefficients double each vector coordinate. The empty cell of the anti-fixed row in the column $\mathbb{R}$ is genuine: the identity involution has no anti-fixed element but the origin, and $\mathbb{R}$ has no non-trivial involution from which a second decomposition could be drawn.
 
+The dimension count for the last column is
+
+$$
+\boxed{\; \dim \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = 2, \qquad \dim \mathrm{Vect}(\mathbb{H}_{\mathbb{D}}) = 6 \;}.
+$$
+
 ## The Distinguished Subspaces
 
 The following table compares the lattice of distinguished subspaces of the eight algebras: one row per family and the dimension of the subspace in parentheses, with the marker **—** where the family does not occur. The eight algebras are the columns, in the fixed order.

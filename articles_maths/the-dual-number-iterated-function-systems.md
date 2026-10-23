@@ -17,7 +17,7 @@ The article is deliberately short. The definitions of the attractor, the open se
 **Definition.** A **dual similarity** is $S(z) = uz+v$ with $u$ a unit of $\mathbb{D}'$, and its **linear part** in the basis $\{1,\varepsilon\}$ is the triangular matrix
 
 $$
-[u] = \begin{pmatrix} r & 0 \\ s & r \end{pmatrix}, \qquad u = r+\varepsilon s .
+[u] = \begin{pmatrix} r & 0 \\ s & r \end{pmatrix}, \qquad u = r+\varepsilon s.
 $$
 
 An iterated function system is a finite family $\{S_1,\ldots,S_m\}$, $m \geq 2$, of dual similarities that are contractions of the Euclidean plane; its **attractor** is the unique nonempty compact set $\Lambda$ with $\Lambda = \bigcup_i S_i(\Lambda)$.
@@ -41,7 +41,9 @@ $$
 **Theorem (the attractor is a graph).** If the induced real system has a separating address map — the images $r_iA_x+v_{ix}$ are pairwise disjoint — then the attractor is the graph of a continuous function over the real attractor,
 
 $$
-\Lambda = \{x+\varepsilon\varphi(x) : x \in A_x\} ,
+\boxed{\;
+\Lambda = \{x+\varepsilon\varphi(x) : x \in A_x\}
+\;},
 $$
 
 with $\varphi$ the continuous function determined by $\varphi(S_i(x)) = r_i\varphi(x)+s_ix+v_{iy}$.
@@ -51,7 +53,7 @@ with $\varphi$ the continuous function determined by $\varphi(S_i(x)) = r_i\varp
 **Theorem (the dimension, equal ratios).** Suppose the real parts of the linear parts are equal, $r_i = r$ for all $i$, with $|r| < 1$, and that the induced real system has a separating address map. Then
 
 $$
-\dim_B \Lambda = \dim_B A_x = \dim_H A_x ,
+\boxed{\; \dim_B \Lambda = \dim_B A_x = \dim_H A_x \;},
 $$
 
 the similarity dimension of the real factor, and the coupling terms $s_i$ do not change the dimension.
@@ -67,7 +69,7 @@ the similarity dimension of the real factor, and the coupling terms $s_i$ do not
 **Example (a lifted Cantor set).** Let $u = \tfrac13+\varepsilon$ and let the translations be $v_1 = 0$, $v_2 = \tfrac23$, both real; the induced real system $\{x/3, x/3+2/3\}$ has the middle-third Cantor set $A_x$ of dimension $\log2/\log3 = 0.6309297535\ldots$, the addresses separate, and the real parts are equal, so the attractor is the graph over the Cantor set and
 
 $$
-\dim_B\Lambda = \frac{\log 2}{\log 3} = 0.6309297535\ldots .
+\boxed{\; \dim_B\Lambda = \frac{\log 2}{\log 3} = 0.6309297535\ldots \;}.
 $$
 
 The box counts at the scales $3^{-n}$, for the finite set of the $2^{16}$ points belonging to the level-$16$ codings and the grid of side $3^{-n}$ anchored at the origin, are $192, 384, 896, 2048, 4096, 9216$ for $n = 4,\ldots,9$; the ratios to $2^n$ are $12, 12, 14, 16, 16, 18$, of order $n$, as the subexponential factor predicts, and the box dimensions $\log N_n/(n\log3)$ are $1.196, 1.083, 1.031, 0.991, 0.946, 0.923$, decreasing towards $\log2/\log3 = 0.6309297\ldots$. The values were recomputed in exact rational arithmetic; the floating-point counts are unreliable at the grid boundaries at these scales.

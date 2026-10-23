@@ -21,7 +21,7 @@ The article defines the standing model and proves the convergence and the functi
 **Theorem (the exponential series).** For every $x \in A$ the series
 
 $$
-\exp x = \sum_{n \geq 0} \frac{x^{n}}{n!}
+\boxed{\;\exp x = \sum_{n \geq 0} \frac{x^{n}}{n!}\;}
 $$
 
 converges absolutely, $\exp 0 = 1$, and
@@ -49,7 +49,7 @@ The map $\exp : A \to A$ is continuous, and is Lipschitz on every bounded subset
 **Theorem (the involution commutes with the exponential).** For every $x \in A$,
 
 $$
-(\exp x)^{*} = \exp(x^{*}) .
+\boxed{\;(\exp x)^{*} = \exp(x^{*})\;} .
 $$
 
 *Proof.* The involution is anti-multiplicative and of order two, so $(x^{n})^{*} = (x^{*})^{n}$ by induction; it is isometric by the standing hypothesis, hence continuous by *The Continuity of the Involution*, §*The $\mathrm{C}^{*}$-Condition*, and a continuous map commutes with the limits of convergent series. Applying it termwise to $\sum x^{n}/n!$ gives $\sum (x^{*})^{n}/n! = \exp(x^{*})$.
@@ -75,7 +75,7 @@ More generally, if $x$ is normal, $xx^{*} = x^{*}x$, then $\exp x$ is normal.
 **Theorem (the exponential of the skew-Hermitian part lands in the identity component).** The exponential restricts to a continuous map
 
 $$
-\exp : S(A) \longrightarrow \mathrm{U}(A) , \qquad \exp(S(A)) \subseteq \mathrm{U}(A)_{0},
+\boxed{\;\exp : S(A) \longrightarrow \mathrm{U}(A) , \qquad \exp(S(A)) \subseteq \mathrm{U}(A)_{0}\;},
 $$
 
 where $\mathrm{U}(A)_{0}$ is the component of the identity of the unitary group of *The Unitary Group as a Topological Group*.

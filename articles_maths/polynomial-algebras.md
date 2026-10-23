@@ -44,7 +44,7 @@ $$
 the **evaluation** at $a$; and the map $a \mapsto \operatorname{ev}_a$ is a bijection
 
 $$
-\operatorname{Hom}_{k\text{-alg}}(k[x], A) \cong A .
+\boxed{\;\operatorname{Hom}_{k\text{-alg}}(k[x], A) \cong A\;} .
 $$
 
 *Proof.* A $k$-algebra homomorphism is determined by the image of $x$, because $k$ is fixed and the monomials generate; conversely, given $a$ the assignment $x \mapsto a$ extends to a homomorphism since the monomials are linearly independent and products of monomials multiply by adding exponents. The two constructions are inverse to each other.
@@ -58,7 +58,7 @@ $$
 **Theorem (division algorithm).** Let $f, g \in k[x]$ with $g \neq 0$. Then there exist unique $q, r \in k[x]$ with
 
 $$
-f = qg + r, \qquad \deg r < \deg g .
+\boxed{\;f = qg + r, \qquad \deg r < \deg g\;} .
 $$
 
 *Proof.* If $\deg f < \deg g$ take $q = 0$, $r = f$. Otherwise let $a$ and $b$ be the leading coefficients of $f$ and $g$ and let $m = \deg f - \deg g \geq 0$; the polynomial $f - (a/b)x^mg$ has degree less than $\deg f$, and induction on the degree produces $q$ and $r$. For uniqueness, suppose $qg + r = q'g + r'$ with $\deg r, \deg r' < \deg g$; then $(q - q')g = r' - r$. If $q \neq q'$ the left side has degree $\deg(q-q') + \deg g \geq \deg g$, while the right side has degree less than $\deg g$, a contradiction; hence $q = q'$ and then $r = r'$.
@@ -138,7 +138,7 @@ The polynomial algebra is thus the algebraic counterpart of affine $n$-space: it
 **Theorem (derivations).** The $k$-derivations of $k[x_1,\dots,x_n]$ form a free $k[x_1,\dots,x_n]$-module of rank $n$,
 
 $$
-\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial/\partial x_i,
+\boxed{\;\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial/\partial x_i\;},
 $$
 
 In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial/\partial x$.

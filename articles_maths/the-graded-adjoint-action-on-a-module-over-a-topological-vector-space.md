@@ -22,7 +22,7 @@ a continuous algebra automorphism with $\mathrm{Ad}_{a}\mathrm{Ad}_{b} = \mathrm
 **Theorem (the adjoint of the adjoint action).** For every invertible $a \in E$ the adjoint action has the trace-adjoint
 
 $$
-(\mathrm{Ad}_{a})^{\dagger} = \mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1} ,
+\boxed{\;(\mathrm{Ad}_{a})^{\dagger} = \mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1}\;} ,
 $$
 
 so the adjoint action is **unitary** for the trace form and the adjoint operation is compatible with the inversion of the parameter; equivalently, $\mathrm{Ad}_{a}$ is an isometry of the trace form.
@@ -38,7 +38,7 @@ so the adjoint action is **unitary** for the trace form and the adjoint operatio
 **Theorem (parity of the conjugation).** Let $a$ be invertible and homogeneous of parity $p$, $a \in E_{p}$, and let $x$ be homogeneous of parity $i$. Then $axa^{-1}$ is homogeneous of parity $p + i + p = i$, since $a^{-1}$ has the parity $p$ and $2p = 0$ in the grading group $\mathbb{Z}/2$; hence
 
 $$
-\mathrm{Ad}_{a}(E_{i}) \subseteq E_{i} \qquad (i = 0, 1),
+\boxed{\;\mathrm{Ad}_{a}(E_{i}) \subseteq E_{i} \qquad (i = 0, 1)\;},
 $$
 
 so the conjugation by a homogeneous unit preserves the grading, for even and for odd units alike, and it is an automorphism of the graded algebra.
@@ -70,7 +70,7 @@ so the conjugate of the grade involution is the signed inner sandwich of $a$; wh
 **Theorem (the conjugated action on a graded module).** Let $\rho : E \to \mathrm{End}(M)$ be the action and let $a$ be an invertible unit. Then the conjugated action $\rho^{a}_{x} = \rho_{axa^{-1}}$ is again an action, and for homogeneous $x$ of parity $i$ the operator $\rho^{a}_{x}$ has the same parity as $\rho_{x}$,
 
 $$
-\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta ,
+\boxed{\;\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta\;} ,
 $$
 
 because $axa^{-1}$ has the same parity $i$ as $x$; the conjugation therefore preserves the compatibility of the action with the grading, and the conjugation by a homogeneous unit is an automorphism of the graded module structure. The action by a homogeneous element $a$ itself, $m \mapsto a \cdot m$, is a different map: it sends $M_{j}$ into $M_{j+p}$ for $a$ of parity $p$, so the left multiplication by an odd element shifts the parity while the conjugation does not.

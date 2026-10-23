@@ -27,7 +27,9 @@ and the even part is a subalgebra isomorphic to the quaternion algebra, hence a 
 **Proposition (the even–odd formula).** Write $\tilde Q=\tilde q+j\tilde q'$ and $\tilde Q_1=\tilde q_1+j\tilde q_1'$ with $\tilde q,\tilde q',\tilde q_1,\tilde q_1'\in\mathbb{H}$. Then
 
 $$
-F_{\tilde Q_1}(\tilde Q)=\bigl(\tilde q^2+\tilde q'^2+\tilde q_1\bigr)+j\bigl(\tilde q\tilde q'+\tilde q'\tilde q+\tilde q_1'\bigr) ,
+\boxed{\;
+F_{\tilde Q_1}(\tilde Q)=\bigl(\tilde q^2+\tilde q'^2+\tilde q_1\bigr)+j\bigl(\tilde q\tilde q'+\tilde q'\tilde q+\tilde q_1'\bigr)
+\;},
 $$
 
 so the even part of the image is $\tilde q^2+\tilde q'^2+\tilde q_1$ and the odd part is $j$ times the sum of the anticommutator $\{\tilde q,\tilde q'\}$ and $\tilde q_1'$. In particular the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is invariant if and only if $\tilde Q_1$ is even, and then the restriction of the family to it is the quaternion quadratic family,
@@ -45,7 +47,9 @@ $$
 **Theorem (the diagonal slice).** Under the idempotent identification $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is the diagonal $\{(\tilde q,\tilde q)\}$, and the slice of the fractal is
 
 $$
-K_{\tilde Q_1}\cap\mathrm{Cl}^0=\bigl\{\tilde q\in\mathbb{H} : \tilde q\in K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}\bigr\} .
+\boxed{\;
+K_{\tilde Q_1}\cap\mathrm{Cl}^0=\bigl\{\tilde q\in\mathbb{H} : \tilde q\in K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}\bigr\}
+\;}.
 $$
 
 For an even parameter $\tilde Q_1\in\mathrm{Cl}^0$ one has $\tilde Q_{1+}=\tilde Q_{1-}=\tilde Q_1$, and the slice is the quaternion filled Julia set $K_{\tilde Q_1}$; the same holds for the Julia set.
@@ -79,7 +83,9 @@ So the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ are the eigenspaces of the volume 
 **Theorem (the symmetry by the volume element).** Multiplication by $j$ is an isometry of the Euclidean norm and satisfies
 
 $$
-F_{\tilde Q_1}(j\tilde Q)=F_{\tilde Q_1}(\tilde Q) \quad\text{for every } \tilde Q ,
+\boxed{\;
+F_{\tilde Q_1}(j\tilde Q)=F_{\tilde Q_1}(\tilde Q) \quad\text{for every } \tilde Q
+\;},
 $$
 
 so the orbit of $j\tilde Q$ agrees with the orbit of $\tilde Q$ from the first step, and $j$ maps the filled Julia set and the Julia set to themselves for every parameter, exchanging the even part and the odd part.

@@ -119,7 +119,7 @@ They are the imaginary roots, in the split imaginary line $j\mathbb{R}_{\mathbb{
 **Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{D}$ are exactly the four elements
 
 $$
-1,\qquad -1,\qquad j,\qquad -j .
+\boxed{\;1,\qquad -1,\qquad j,\qquad -j\;}.
 $$
 
 **Proof.** The reduction gives $\Xi_{+}^{2}=1$ and $\Xi_{-}^{2}=1$, hence $\Xi_{+}\in\{+1,-1\}$ and $\Xi_{-}\in\{+1,-1\}$. The four combinations are
@@ -180,7 +180,7 @@ is a subgroup of the group of units of the plain product, isomorphic to $(\mathb
 **Proposition (the norms of the roots).** The algebraic norm of the sesquilinear product takes the values
 
 $$
-\langle\pm1\rangle_{*}=1,\qquad \langle\pm j\rangle_{*}=-1,
+\boxed{\;\langle\pm1\rangle_{*}=1,\qquad \langle\pm j\rangle_{*}=-1\;},
 $$
 
 so the real roots are timelike units and the imaginary roots are spacelike units.
@@ -325,7 +325,7 @@ are fields. The properties of the pair are collected in the table.
 **Theorem (the idempotents).** The idempotents of $\mathbb{D}$ are exactly
 
 $$
-0,\qquad 1,\qquad \Pi_{+}=\frac{1+j}{2},\qquad \Pi_{-}=\frac{1-j}{2}.
+\boxed{\;0,\qquad 1,\qquad \Pi_{+}=\frac{1+j}{2},\qquad \Pi_{-}=\frac{1-j}{2}\;}.
 $$
 
 **Proof.** Write $Q=q+jq'$ and impose $Q^{2}=Q$. Since

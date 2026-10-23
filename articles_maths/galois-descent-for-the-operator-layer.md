@@ -27,7 +27,7 @@ under which $\mathrm{ad}_\sigma$ is the action on the second factor, $\mathrm{ad
 
 **Theorem (the descent of the algebra).** The descent data on the operator layer $\mathcal{D}$ correspond to the $k$-algebras $\mathcal{D}_0$ with $\mathcal{D}_0\otimes_kL\cong\mathcal{D}$, the correspondence sending $\mathcal{D}_0$ to the action on the second factor, and the fixed algebra is the descender:
 $$
-\mathcal{D}^{G} = \mathcal{D}_0 .
+\boxed{\;\mathcal{D}^{G} = \mathcal{D}_0\;} .
 $$
 Every descent datum on the operator layer of a variety is effective, and the descended algebra is the operator layer $\mathcal{D}_X$ of the descended variety.
 
@@ -70,7 +70,7 @@ $$
 
 **Corollary (the category of the $\mathcal{D}$-modules as the invariants).** The category of the $\mathcal{D}_X$-modules is equivalent to the category of the $\mathcal{D}$-modules with an effective descent datum, and it is the category of the $G$-invariants of the operator modules,
 $$
-\mathcal{D}_X\text{-mod}\ \simeq\ \bigl(\mathcal{D}\text{-mod}\bigr)^{G} ,
+\boxed{\;\mathcal{D}_X\text{-mod}\ \simeq\ \bigl(\mathcal{D}\text{-mod}\bigr)^{G}\;} ,
 $$
 the equivalence sending $M_0$ to the module with the action on the second factor and its quasi-inverse sending $M$ to the invariants $M^G$.
 
@@ -115,7 +115,7 @@ which vanishes for $M$ with the automorphism sheaf a linear group, by Hilbert's 
 
 **Theorem (the Hochschild–Serre sequence of the descent).** For a $\mathcal{D}$-module with a descent datum there is a spectral sequence
 $$
-E_2^{pq} = H^p\bigl(G,\ H^q(\mathcal{M})\bigr)\ \Longrightarrow\ H^{p+q}(\mathcal{M}^{G}),
+\boxed{\;E_2^{pq} = H^p\bigl(G,\ H^q(\mathcal{M})\bigr)\ \Longrightarrow\ H^{p+q}(\mathcal{M}^{G})\;},
 $$
 the group cohomology of the cohomology of the module converging to the cohomology of the descended module, and its five-term sequence detects the failure of the invariants to compute the cohomology.
 

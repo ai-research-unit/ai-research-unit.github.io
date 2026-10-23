@@ -84,7 +84,7 @@ $$
 which **splits**, though not naturally. The map $\alpha$ sends the class of a cocycle $\varphi$ to the homomorphism induced by $\varphi$ on homology classes, and is called the **Kronecker** or evaluation map. Consequently there is a (non-natural) isomorphism
 
 $$
-H^n(X;G) \cong \operatorname{Hom}_R\bigl(H_n(X;R),G\bigr) \oplus \operatorname{Ext}^1_R\bigl(H_{n-1}(X;R),G\bigr).
+\boxed{\;H^n(X;G) \cong \operatorname{Hom}_R\bigl(H_n(X;R),G\bigr) \oplus \operatorname{Ext}^1_R\bigl(H_{n-1}(X;R),G\bigr)\;}.
 $$
 
 The functors $\operatorname{Ext}^1_R$ and the long exact sequence it carries are the subject of the planned *Ext and Tor* and *Derived Functors* of Part I, which are being written in parallel; only their defining property is used here.
@@ -102,7 +102,7 @@ naturally; with $G = F$ this is the duality $H^n(X;F) \cong H_n(X;F)^*$ between 
 **Corollary (integral coefficients).** For $G = \mathbb{Z}$ and $R = \mathbb{Z}$, the structure theorem for finitely generated abelian groups gives
 
 $$
-H^n(X;\mathbb{Z}) \cong \bigl(H_n(X;\mathbb{Z})/\text{torsion}\bigr) \oplus \operatorname{Torsion}\bigl(H_{n-1}(X;\mathbb{Z})\bigr),
+\boxed{\;H^n(X;\mathbb{Z}) \cong \bigl(H_n(X;\mathbb{Z})/\text{torsion}\bigr) \oplus \operatorname{Torsion}\bigl(H_{n-1}(X;\mathbb{Z})\bigr)\;},
 $$
 
 so the free parts of $H^n$ and $H_n$ agree and the torsion of $H^n$ in degree $n$ is the torsion of $H_{n-1}$: **cohomological torsion is shifted down by one degree relative to homology**. Thus $\mathbb{RP}^2$ has $H_0 \cong \mathbb{Z}$, $H_1 \cong \mathbb{Z}/2$, $H_2 = 0$ and dually $H^0 \cong \mathbb{Z}$, $H^1 = 0$, $H^2 \cong \mathbb{Z}/2$.
@@ -110,7 +110,7 @@ so the free parts of $H^n$ and $H_n$ agree and the torsion of $H^n$ in degree $n
 **Corollary (universal coefficient theorem, homology).** The same argument applied to the tensor product gives the homology version,
 
 $$
-0 \to H_n(X;R) \otimes_R G \to H_n(X;G) \to \operatorname{Tor}_1^R\bigl(H_{n-1}(X;R),G\bigr) \to 0,
+\boxed{\;0 \to H_n(X;R) \otimes_R G \to H_n(X;G) \to \operatorname{Tor}_1^R\bigl(H_{n-1}(X;R),G\bigr) \to 0\;},
 $$
 
 splitting unnaturally, with $\operatorname{Tor}_1^R$ the torsion functor of Part I's *Ext and Tor*, written in parallel.

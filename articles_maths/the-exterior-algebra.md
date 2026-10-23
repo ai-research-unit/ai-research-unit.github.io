@@ -102,7 +102,7 @@ The exterior algebra is the free solution to the equation $x^2 = 0$.
 **Theorem.** For homogeneous elements $u \in \Lambda^p M$ and $v \in \Lambda^q M$,
 
 $$
-u \wedge v = (-1)^{p q}\, v \wedge u.
+\boxed{\;u \wedge v = (-1)^{p q}\, v \wedge u\;}.
 $$
 
 **Proof.** It suffices to prove the claim on elementary wedges $u = x_1 \wedge \cdots \wedge x_p$ and $v = y_1 \wedge \cdots \wedge y_q$, since both sides are bilinear. Moving each of the $q$ elements $y_j$ leftwards past the $p$ elements $x_i$ costs one sign $-1$ per transposition, so the total sign is $(-1)^{pq}$:
@@ -172,7 +172,7 @@ $$
 **Theorem.** For all $R$-modules $M, N$ there is a natural isomorphism of graded algebras
 
 $$
-\Lambda(M \oplus N) \cong \Lambda(M) \hat{\otimes}_R \Lambda(N),
+\boxed{\;\Lambda(M \oplus N) \cong \Lambda(M) \hat{\otimes}_R \Lambda(N)\;},
 $$
 
 where the right-hand side is the **graded tensor product**, with multiplication
@@ -212,7 +212,7 @@ $$
 including the empty product, which is the unit $1 \in \Lambda^0 M$. Equivalently,
 
 $$
-\Lambda(R^m) \cong R\langle x_1, \ldots, x_m \rangle / (x_i^2,\ x_i x_j + x_j x_i),
+\boxed{\;\Lambda(R^m) \cong R\langle x_1, \ldots, x_m \rangle / (x_i^2,\ x_i x_j + x_j x_i)\;},
 $$
 
 the quotient of the free associative algebra by the relations making the generators anticommute and square to zero.

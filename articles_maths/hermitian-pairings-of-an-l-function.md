@@ -23,7 +23,7 @@ and for $\sigma=0$ it is the form of the category, $\langle f,g\rangle_0=\sum_nf
 
 **Theorem.** For the local operator $M_h$ of multiplication by $h$, the adjoint with respect to the coefficient pairing is
 $$
-\langle M_hf,g\rangle_\sigma=\langle f,\Theta_hg\rangle_\sigma ,
+\boxed{\;\langle M_hf,g\rangle_\sigma=\langle f,\Theta_hg\rangle_\sigma\;} ,
 $$
 with $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$; the adjoint of the multiplication by a completely multiplicative function $h$ with $|h(p)|=1$ is the multiplication by $\overline h$ composed with the transposed operator, and on the space of the functions supported on the squarefree integers with $|h(p)|=1$ the operator $M_h$ is unitary.
 
@@ -41,7 +41,7 @@ with the completed form $\Lambda(f\times\bar g,s)$.
 
 **Theorem.** The completed Rankin–Selberg convolution has an analytic continuation with finitely many poles, satisfies a functional equation with conductor the product of the conductors, and its value at the centre is the **completed pairing**
 $$
-\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\tfrac12) ,
+\boxed{\;\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\tfrac12)\;} ,
 $$
 a Hermitian pairing on the space of the $L$-functions for which the convolution converges. The pairing is positive definite on the space of the cuspidal $L$-functions and its positivity is the Hermitian form whose associated operator theory is in *Hermitian Forms and the Zeta Function*.
 
@@ -51,7 +51,7 @@ a Hermitian pairing on the space of the $L$-functions for which the convolution 
 
 **Theorem.** The completed pairing satisfies
 $$
-\langle f,g\rangle_{\mathrm{RS}}=\epsilon\,\overline{\langle f^*,g^*\rangle_{\mathrm{RS}}}
+\boxed{\;\langle f,g\rangle_{\mathrm{RS}}=\epsilon\,\overline{\langle f^*,g^*\rangle_{\mathrm{RS}}}\;}
 $$
 with the root number $\epsilon$, so the involution $s\mapsto1-\bar s$ acts on the pairing as an anti-isometry; the pairing is Hermitian and the functional equation is its compatibility with the conjugate symmetry.
 

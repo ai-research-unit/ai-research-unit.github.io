@@ -36,7 +36,7 @@ $$
 **Theorem (the adjoint preserves the positivity and the order).** The adjoint of a positive operator is positive,
 
 $$
-T\geq0 \implies T^{*}\geq0 ,
+\boxed{\;T\geq0 \implies T^{*}\geq0\;} ,
 $$
 
 so the adjoint is an **order isomorphism** of the operator space for the order $\leq$ defined by the quadratic forms; when the cone is self-dual for the form the quadratic positivity coincides with the order preservation, and then the adjoint of an order-preserving operator is order preserving. The adjoint of an order **isomorphism** is an order isomorphism, and the positivity is therefore an invariant of the adjoint.
@@ -46,7 +46,7 @@ so the adjoint is an **order isomorphism** of the operator space for the order $
 **Corollary (the quadratic order and the operator order).** The operators are ordered by their quadratic forms,
 
 $$
-S\leq T \iff \langle Sx,x\rangle\leq\langle Tx,x\rangle \ \text{ for every } x ,
+\boxed{\;S\leq T \iff \langle Sx,x\rangle\leq\langle Tx,x\rangle \ \text{ for every } x\;} ,
 $$
 
 and the adjoint is an order isomorphism of this order; the self-adjoint operators of the form $T = T^{*}$ form an ordered real vector space with the order interval $[0,I]$ the set of the positive contractions, which is the order of the **effects** when the space is a Hilbert space.
@@ -62,7 +62,7 @@ and the adjoint is an order isomorphism of this order; the self-adjoint operator
 **Proposition (the involution and the positivity of the automorphisms).** The **involution** of the ordered involutive algebra acts on the order automorphisms by the conjugation
 
 $$
-T\mapsto \alpha\,T\,\alpha^{-1} = \alpha T\alpha ,
+\boxed{\;T\mapsto \alpha\,T\,\alpha^{-1} = \alpha T\alpha\;} ,
 $$
 
 and the positive automorphisms are carried to positive automorphisms; the fixed points are the automorphisms commuting with the involution, which are the **\*-automorphisms** of the ordered involutive structure. This is the conjugation action of *The Involution on the Order Automorphisms*, of which the present article displays the adjoint form.

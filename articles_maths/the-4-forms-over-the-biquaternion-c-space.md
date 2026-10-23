@@ -52,8 +52,8 @@ $$
 \mathrm{Sc}\,f^{\mathrm s}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2),
 \qquad
 \mathrm{Sc}\,f^{\mathrm a}(\tilde Q_1,\tilde Q_2)=0
-\;}
-$$.
+\;}.
+$$
 
 *Proof.* For the two bilinear families the scalar part is commutative, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)+\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)\bigr)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$ and $\mathrm{Sc}\,f^{\mathrm a}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)-\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)\bigr)=0$. For the two sesquilinear families the exchange carries the conjugation of the value and the forms are Hermitian, $\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)=\overline{\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)}$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)+\overline{\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)}\bigr)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$ and $\mathrm{Sc}\,f^{\mathrm a}=0$.
 
@@ -125,8 +125,8 @@ $$
 \mathrm{Isom}(B)=\{T:T^{\mathsf T}\mathrm E T=\mathrm E\}=O_4(\mathbb{C}),
 \qquad
 \mathrm{Isom}(H)=\{T:T^{*}T=\mathrm I_4\}=\mathrm{U}(4)
-\;}
-$$,
+\;},
+$$
 $$
 \mathrm{Isom}(N)=\{T:T^{\mathsf T}T=\mathrm I_4\}=O_4(\mathbb{C}),
 \qquad

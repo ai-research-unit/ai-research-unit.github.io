@@ -16,7 +16,7 @@ and the whole family is a two-sphere, the **twistor family** of the manifold. Th
 **Definition.** Let $(M,g,J_1,J_2,J_3)$ be hyperkähler with fundamental forms $\omega_i(X,Y)=g(J_iX,Y)$. For a unit imaginary quaternion $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$, $a^2+b^2+c^2=1$, the **twistor family** is
 
 $$
-I_\lambda=aJ_1+bJ_2+cJ_3 , \qquad \Omega_\lambda = a\omega_1+b\omega_2+c\omega_3 .
+\boxed{\;I_\lambda=aJ_1+bJ_2+cJ_3 , \qquad \Omega_\lambda = a\omega_1+b\omega_2+c\omega_3\;} .
 $$
 
 **Proposition.** For every unit $\lambda$ the endomorphism $I_\lambda$ is a complex structure compatible with $g$, $\Omega_\lambda$ is its fundamental form, $I_\lambda$ is parallel for the Levi-Civita connection, hence integrable, and $\Omega_\lambda$ is closed and Kähler for $g$; the assignment $\lambda\mapsto I_\lambda$ descends to a diffeomorphism from the sphere of unit imaginary quaternions modulo $\pm1$ onto a two-sphere of complex structures.
@@ -26,7 +26,7 @@ $$
 **Theorem (the conjugation on the family, quoted).** The conjugation $\lambda\mapsto\bar\lambda$ of the quaternion algebra acts on the family by the antipode,
 
 $$
-I_{\bar\lambda}=I_{-\lambda}=-I_\lambda , \qquad \Omega_{\bar\lambda}=-\Omega_\lambda ,
+\boxed{\;I_{\bar\lambda}=I_{-\lambda}=-I_\lambda , \qquad \Omega_{\bar\lambda}=-\Omega_\lambda\;} ,
 $$
 
 it is a free involution of the family, it reverses the orientation of the parameter sphere and hence acts on $\mathbb{CP}^1$ as an anti-holomorphic map without fixed points in the holomorphic parameter $\zeta\mapsto-\bar\zeta^{-1}$, and it is an isometry of the parameter sphere.

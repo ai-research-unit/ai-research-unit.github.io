@@ -90,8 +90,8 @@ $\tilde{Q}\tilde{Q}^{\natural}$ vanishes:
 $$
 \boxed{\;
 \tilde{Q}\tilde{Q}^{\natural} = 0
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** Suppose $\tilde{Q}_1 \neq 0$ and $\tilde{Q}_1\tilde{Q}_1^{\natural} = 0$. Then
 $\tilde{Q}_1 \tilde{Q}_1^{\natural} = 0$. Since $\tilde{Q}_1 \neq 0$, we also have
@@ -189,8 +189,8 @@ symmetric. Therefore
 $$
 \boxed{\;
 \tilde{Q}^2 = -(Q_x^2 + Q_y^2 + Q_z^2) e_t = -\tilde{Q}\tilde{Q}^{\natural} e_t
-\;}
-$$.
+\;}.
+$$
 
 ### The Criterion in the Pure Case
 
@@ -238,8 +238,8 @@ for two real vectors, the square of a pure biquaternion is
 $$
 \boxed{\;
 \tilde{Q}^2 = \bigl(|\vec\rho'|^2 - |\vec\rho|^2\bigr)\, e_t - 2i\,(\vec\rho\cdot\vec\rho')\, e_t
-\;}
-$$.
+\;}.
+$$
 
 The square is therefore a complex scalar, and it vanishes exactly when the two conditions
 

@@ -15,7 +15,7 @@ The article defines the continuous quadratic form and its polar form, constructs
 **Definition.** Let $F$ be a topological field and let $V$ be a topological $F$-module. A **continuous quadratic form** is a map $m : V \to F$ such that $\mathfrak{Q}(\lambda v) = \lambda^{2}q(v)$ for all $\lambda \in F$ and $v \in V$, such that the map $(x,y)\mapsto \mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y)$ is bilinear, and which is continuous for the given topologies. Its **polar form** is the symmetric bilinear form
 
 $$
-B(x,y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y)\bigr) ,
+\boxed{\;B(x,y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y)\bigr)\;} ,
 $$
 
 the form of *Quadratic Forms and Polarisation*, §*Quadratic Forms*, and one has $\mathfrak{Q}(x)=B(x,x)$.
@@ -55,7 +55,7 @@ These are the norms of *Normed and Banach Spaces*, read on the forms; the suprem
 **Theorem (polarisation is an isometric isomorphism).** Let $V$ be a normed space over $\mathbb{R}$. Recall that $B$ is the polar form of $m$ and $\mathfrak{Q}(x)=B(x,x)$. The map $m\mapsto B$ is a linear isomorphism $\mathfrak{Q}(V)\to\operatorname{Sym}(V)$ and
 
 $$
-\lVert m\rVert = \lVert B\rVert .
+\boxed{\;\lVert m\rVert = \lVert B\rVert\;} .
 $$
 
 *Proof.* The passage $m\mapsto B$ is additive and homogeneous: for $m_{1},m_{2}$ one has $B_{m_{1}+m_{2}}=B_{m_{1}}+B_{m_{2}}$ by the polarisation identity applied to $m_{1}+m_{2}$, and $B_{\lambda m}=\lambda B_{m}$ for the same reason. The inverse is $B\mapsto(x\mapsto B(x,x))$, which is additive and homogeneous as well, and the two are mutually inverse because $\mathfrak{Q}(x)=B(x,x)$ and $B$ is recovered from $m$ by the identity. For the norms, $\lvert \mathfrak{Q}(x)\rvert=\lvert B(x,x)\rvert\le\lVert B\rVert\lVert x\rVert^{2}$ gives $\lVert m\rVert\le\lVert B\rVert$. In the other direction use the parallelogram form of the identity,

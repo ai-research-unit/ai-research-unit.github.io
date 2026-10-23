@@ -13,7 +13,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition (the reflection is self-adjoint for its own signed sandwich).** With $\alpha = \alpha_r$ one has $\Theta^{\alpha}_{r,r^{-1}} = \mathrm{id}$, and therefore
 
 $$
-\bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \Theta^{\alpha_r}_{r,r^{-1}} ,
+\boxed{\;\bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \Theta^{\alpha_r}_{r,r^{-1}}\;} ,
 $$
 
 so the reflection is self-adjoint and unitary for the signed sandwich it defines.
@@ -23,7 +23,7 @@ so the reflection is self-adjoint and unitary for the signed sandwich it defines
 **Proposition (the adjoint for a general grade involution).** For an arbitrary grade involution $\alpha$,
 
 $$
-\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)} ,
+\boxed{\;\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}\;} ,
 $$
 
 and this sandwich is always unitary; it is self-adjoint if and only if $\alpha(r)$ is an involution, $\alpha(r)^2=1$.

@@ -28,7 +28,7 @@ $$
 is a well-defined bijection. Consequently, if $G$ is finite, then
 
 $$
-|\operatorname{Orb}(x)| = [G : \operatorname{Stab}(x)] = \frac{|G|}{|\operatorname{Stab}(x)|},
+\boxed{\;|\operatorname{Orb}(x)| = [G : \operatorname{Stab}(x)] = \frac{|G|}{|\operatorname{Stab}(x)|}\;},
 $$
 
 so the size of every orbit divides $|G|$.
@@ -58,7 +58,7 @@ $$
 The fixed points of the conjugation action are exactly the elements of the centre $Z(G)$, so an element has a singleton conjugacy class if and only if it is central. Splitting the partition of $G$ into the central elements and the classes of size greater than one gives the **class equation**: if $x_1, \ldots, x_k$ represent the conjugacy classes of size greater than $1$, then
 
 $$
-|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)],
+\boxed{\;|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)]\;},
 $$
 
 each index being greater than $1$ and dividing $|G|$. As a special case, for $x \in G$ the conjugacy class of $x$ has $[G : C_G(x)]$ elements.
@@ -106,7 +106,7 @@ The proof is a model of the method: an action is chosen so that the fixed-point 
 **Theorem (Burnside's lemma).** Let a finite group $G$ act on a finite set $X$ and let $\operatorname{Fix}(a) = \{x \in X : a \cdot x = x\}$. Then the number of orbits is
 
 $$
-|\text{orbits}| = \frac{1}{|G|} \sum_{a \in G} |\operatorname{Fix}(a)|.
+\boxed{\;|\text{orbits}| = \frac{1}{|G|} \sum_{a \in G} |\operatorname{Fix}(a)|\;}.
 $$
 
 **Proof.** Count the set $S = \{(a, x) \in G \times X : a \cdot x = x\}$ in two ways. Grouping by $a$ gives $|S| = \sum_{a \in G} |\operatorname{Fix}(a)|$. Grouping by $x$ gives $|S| = \sum_{x \in X} |\operatorname{Stab}(x)|$. Now $\operatorname{Stab}(x)$ has index $|\operatorname{Orb}(x)|$, so $|\operatorname{Stab}(x)| = |G| / |\operatorname{Orb}(x)|$. Hence

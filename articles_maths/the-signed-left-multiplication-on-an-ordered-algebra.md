@@ -54,7 +54,7 @@ so each signed one-sided multiplication is the unsigned one composed with the gr
 **Theorem.** The signed left multiplications compose by the **twisted law**
 
 $$
-L^{\alpha}_a\,L^{\alpha}_b = L_{a\,\alpha(b)} , \qquad R^{\alpha}_a\,R^{\alpha}_b = R_{\alpha(b)\,a} ,
+\boxed{\;L^{\alpha}_a\,L^{\alpha}_b = L_{a\,\alpha(b)} , \qquad R^{\alpha}_a\,R^{\alpha}_b = R_{\alpha(b)\,a}\;} ,
 $$
 
 their products being **unsigned** multiplications with the twisted parameter; in particular
@@ -90,7 +90,7 @@ $$
 so the fixed set is the sum of the **fixed space of $L_a$ on the even part** and the **$(-1)$-eigenspace of $L_a$ on the odd part**,
 
 $$
-\operatorname{Fix}(L^{\alpha}_a) = \ker(L_a - I)\cap A_{\bar 0} \ \oplus\ \ker(L_a + I)\cap A_{\bar 1} .
+\boxed{\;\operatorname{Fix}(L^{\alpha}_a) = \ker(L_a - I)\cap A_{\bar 0} \ \oplus\ \ker(L_a + I)\cap A_{\bar 1}\;} .
 $$
 
 When the grade involution is the identity the fixed set is the ordinary fixed space of the left multiplication, $\{x : ax = x\}$.
@@ -122,7 +122,7 @@ so it agrees with the unsigned left multiplication on the even part and is its n
 **Proposition.** The signed sandwich of *The Signed Sandwich on an Ordered Algebra* factorises through the signed one-sided multiplications,
 
 $$
-\Theta^{\alpha}_{a,b} = L^{\alpha}_a\,R_{\alpha(b)} = L_a\,R^{\alpha}_{\alpha(b)} ,
+\boxed{\;\Theta^{\alpha}_{a,b} = L^{\alpha}_a\,R_{\alpha(b)} = L_a\,R^{\alpha}_{\alpha(b)}\;} ,
 $$
 
 and the signed conjugation of the reflection article is $\tau_a = L^{\alpha}_a R_{\alpha(a)^{-1}}$, which for a reflection element is $L^{\alpha}_aR_a$. Consequently the two-sided operator is the composition of the two one-sided operators, and the one-sided operator is the two-sided one with the other factor equal to the identity.

@@ -7,8 +7,8 @@ This article computes the exponential polar decomposition of eight biquaternions
 Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$. The modulus, the phase, the rapidity, the rotor angle and the two axes are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
 $$
-\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
-\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+\boxed{\; \tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr) \;}.
 $$
 
 The eight cases cover the identity, the two pure rotors, the pure boost, the parallel axes, the orthogonal axes, the non-parallel axes and the generic null-vector element.
@@ -30,7 +30,7 @@ $$
 
 written in full throughout. The modulus is the principal square root $\bigl(Q_t^2+Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$, taken in the branch with non-negative real part and written $r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$. The rapidity is $\psi\ge0$, the rotor angle is $\theta\in[0,2\pi]$, and the axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$ are real unit vectors, undefined when the corresponding angle vanishes. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
-**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its factors and its check. The boundary is treated separately (§*The Null Cone Family*). The summary collects the results in three tables and reads the patterns across the cases (§*Summary*).
+**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its factors and its check. The boundary is treated separately (§*The Null Cone Family*). The summary collects the results in three tables and reads the patterns across the cases (§*Summary*). The Q-adapted basis, the nilpotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions*.
 
 ## The Method
 
@@ -67,10 +67,10 @@ $$
 The Hermitian factor is
 
 $$
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\boxed{\; \tilde U_{\mathrm b}=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
 =\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
 \qquad
-\psi=2\operatorname{arcosh}\bigl(\operatorname{Sc}\tilde U_{\mathrm b}\bigr),
+\psi=2\operatorname{arcosh}\bigl(\operatorname{Sc}\tilde U_{\mathrm b}\bigr) \;},
 $$
 
 and the unitary factor is
@@ -138,7 +138,7 @@ and its defect is the largest modulus of a coefficient difference in $\exp(\tild
 The true logarithm is the principal logarithm of the unit factor, shifted by the scalar term,
 
 $$
-\operatorname{Log}\tilde Q=(\ln r+i\alpha)e_t+\operatorname{Log}\tilde U,
+\boxed{\; \operatorname{Log}\tilde Q=(\ln r+i\alpha)e_t+\operatorname{Log}\tilde U \;},
 $$
 
 where $\operatorname{Log}\tilde U$ is the principal logarithm of *Biquaternion Elementary Functions*, evaluated on the unit factor. When the unit factor is unipotent, $(\tilde U-e_t)^2=0$ and the series truncates:
@@ -806,6 +806,7 @@ The word reconstructs the element exactly; the last column is the defect of the 
 
 ## Further Reading
 
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four-factor word, the Cartan decomposition, existence, uniqueness and the boundary.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the degenerate limit.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus and the unit factor.

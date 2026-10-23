@@ -14,7 +14,7 @@ Throughout, $\varphi:R \to S$ is a homomorphism of commutative rings with $1 \ne
 **Definition.** Let $M$ be an $R$-module. The **extension of scalars** of $M$ along $\varphi$ is the $S$-module
 
 $$
-M_S \;=\; S \otimes_R M ,
+\boxed{\;M_S \;=\; S \otimes_R M\;} ,
 $$
 
 with $S$-action $s \cdot (s' \otimes m)=(ss') \otimes m$.
@@ -30,7 +30,7 @@ with $S$-action $s \cdot (s' \otimes m)=(ss') \otimes m$.
 **Theorem.** Extension and restriction of scalars are adjoint: for every $R$-module $M$ and every $S$-module $N$ there is a natural bijection
 
 $$
-\operatorname{Hom}_S(S \otimes_R M,\,N) \;\cong\; \operatorname{Hom}_R(M,\,\operatorname{Res}N).
+\boxed{\;\operatorname{Hom}_S(S \otimes_R M,\,N) \;\cong\; \operatorname{Hom}_R(M,\,\operatorname{Res}N)\;}.
 $$
 
 *Proof.* Given an $S$-linear $\Phi:S \otimes_R M \to N$, the map $m \mapsto \Phi(1 \otimes m)$ is $R$-linear, since $\Phi(1 \otimes rm)=\Phi(r(1 \otimes m))=r\Phi(1 \otimes m)$. Conversely, given an $R$-linear $\psi:M \to \operatorname{Res}N$, the map $S \times M \to N$, $(s,m) \mapsto s\,\psi(m)$, is balanced: it is additive in each variable, and $(sr,m)$ and $(s,rm)$ both map to $s\varphi(r)\psi(m)=s\psi(rm)$. It therefore induces an $S$-linear $\Psi:S \otimes_R M \to N$ with $\Psi(s \otimes m)=s\psi(m)$. The two constructions are inverse, and naturality is immediate.
@@ -100,7 +100,7 @@ viewed as a complex vector space by the action of $\mathbb{C}$ on the first fact
 (ii) The map $V \to V_{\mathbb{C}}$, $v \mapsto 1 \otimes v$, is injective and real-linear, and
 
 $$
-V_{\mathbb{C}}=V \oplus iV
+\boxed{\;V_{\mathbb{C}}=V \oplus iV\;}
 $$
 
 as real vector spaces, where $iV=\{i \otimes v\}$.

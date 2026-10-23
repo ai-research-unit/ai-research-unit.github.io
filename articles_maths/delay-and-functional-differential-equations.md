@@ -78,7 +78,7 @@ with $A, B \in B(X)$ bounded operators, and it is **homogeneous**; the general l
 **Theorem (exponential solutions).** The scalar equation $y'(t) = ay(t) + by(t-r)$ has a solution $y(t) = \exp(\lambda t)$ if and only if
 
 $$
-\lambda = a + b\,\exp(-\lambda r) ,
+\boxed{\;\lambda = a + b\,\exp(-\lambda r)\;} ,
 $$
 
 the **characteristic equation**. This transcendental equation has countably many roots $\lambda_n$, none of them with a finite accumulation point in $\mathbb{C}$, and for each root $\exp(\lambda t)$ is a solution; when a root has multiplicity $m$, the functions $t^{k}\exp(\lambda t)$, $0 \le k < m$, are also solutions.
@@ -110,7 +110,7 @@ The semigroup property places linear delay equations inside the theory of strong
 **Theorem (variation of constants for a delay equation).** Let $y$ solve the inhomogeneous equation $y'(t) = Ay(t) + By(t-r) + b(t)$ on $[\sigma,\infty)$ with history $\phi$ and with $b$ continuous. Then
 
 $$
-y(t) = \bigl(T(t-\sigma)\phi\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds ,
+\boxed{\;y(t) = \bigl(T(t-\sigma)\phi\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds\;} ,
 $$
 
 where $K$ is the **fundamental solution**: the solution of the homogeneous equation with the history $K(\theta) = 0$ for $\theta<0$ and the jump $K(0)=I$, continued by the equation. Equivalently, in the scalar case,
@@ -140,7 +140,7 @@ $$
 **Theorem (spectral criterion).** The linear equation $y'(t) = Ay(t) + By(t-r)$ is exponentially stable if and only if every characteristic root $\lambda$ of
 
 $$
-\det\bigl(\lambda I - A - B\exp(-\lambda r)\bigr) = 0
+\boxed{\;\det\bigl(\lambda I - A - B\exp(-\lambda r)\bigr) = 0\;}
 $$
 
 satisfies $\operatorname{Re}\lambda \le -\gamma$ for some $\gamma > 0$; equivalently, if and only if all roots lie in a fixed left half-plane.

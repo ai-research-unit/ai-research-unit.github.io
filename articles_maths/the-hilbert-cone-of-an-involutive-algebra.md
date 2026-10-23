@@ -32,7 +32,7 @@ The Hilbert algebra and the Hermitian sandwich are *Hilbert Algebras* and *The H
 **Definition.** A **Hilbert algebra** is a complex involutive algebra $A$ with an inner product $\langle\cdot,\cdot\rangle$ and a **trace** element (the identity in the unital case) such that the involution is adjoint to the multiplication, $\langle ab,c\rangle = \langle b,a^{*}c\rangle$, and the left multiplications are bounded. It is **positive definite** when $\sum_i a_i^{*}a_i = 0$ implies every $a_i = 0$; the **Hilbert cone** is
 
 $$
-\Pi = \overline{\Bigl\{\sum_{i} a_i^{*}a_i\Bigr\}} .
+\boxed{\;\Pi = \overline{\Bigl\{\sum_{i} a_i^{*}a_i\Bigr\}}\;} .
 $$
 
 **Proposition (the Hilbert cone is a cone).** The set $\Pi$ is a convex cone closed under the involution, under the congruences $x\mapsto c^{*}xc$ and under the symmetrised product; it contains the trace and is proper exactly when the algebra is positive definite; the order $a\leq b\iff b - a\in\Pi$ makes the algebra an ordered involutive algebra with the trace as order unit.
@@ -50,7 +50,7 @@ $$
 **Theorem (the Hilbert cone is self-dual).** In a positive definite Hilbert algebra the Hilbert cone is self-dual, $\Pi = \Pi^{\prime}$; consequently
 
 $$
-a\geq0 \iff \langle a,b\rangle\geq0 \ \text{ for every } b\geq0 ,
+\boxed{\;a\geq0 \iff \langle a,b\rangle\geq0 \ \text{ for every } b\geq0\;} ,
 $$
 
 and the order of the Hilbert algebra is the order of the inner product.

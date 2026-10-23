@@ -32,7 +32,7 @@ Nilpotent elements do not change the unit group, and this is the technical reaso
 **Proposition.** Let $u \in R$ be a unit and let $x \in R$ be nilpotent. Then $u + x$ is a unit. In particular, if $x^n = 0$ then $1 - x$ is a unit with
 
 $$
-(1-x)^{-1} = 1 + x + x^2 + \cdots + x^{n-1} .
+\boxed{\;(1-x)^{-1} = 1 + x + x^2 + \cdots + x^{n-1}\;} .
 $$
 
 **Proof.** The displayed identity follows from $(1-x)(1 + x + \cdots + x^{n-1}) = 1 - x^n = 1$; the sum is finite and so needs no convergence. In general $u + x = u\,(1 + u^{-1}x)$, and $u^{-1}x$ is nilpotent since $(u^{-1}x)^n = u^{-n}x^n$.
@@ -120,7 +120,7 @@ The nilradical is characterised by the prime ideals, and this is the structural 
 **Theorem (Krull).** Let $R$ be a commutative ring with $1 \neq 0$. Then
 
 $$
-\operatorname{nil}(R) = \bigcap_{\mathrm{P} \in \operatorname{Spec} R} \mathrm{P} = \sqrt{(0)} .
+\boxed{\;\operatorname{nil}(R) = \bigcap_{\mathrm{P} \in \operatorname{Spec} R} \mathrm{P} = \sqrt{(0)}\;} .
 $$
 
 **Proof.** This is the case $I = (0)$ of Krull's theorem in *Commutative Rings*, where the radical of an ideal is identified with the intersection of the prime ideals containing it; the second identity is the definition of the nilradical as the radical of the zero ideal.
@@ -166,7 +166,7 @@ The prime ideals of $R$ can be used to separate the elements of $R$ from one ano
 **Theorem.** Let $R$ be a commutative ring with $1 \neq 0$. The map
 
 $$
-R \longrightarrow \prod_{\mathrm{P} \in \operatorname{Spec} R} R/\mathrm{P}, \qquad r \mapsto (r + \mathrm{P})_{\mathrm{P}},
+\boxed{\;R \longrightarrow \prod_{\mathrm{P} \in \operatorname{Spec} R} R/\mathrm{P}, \qquad r \mapsto (r + \mathrm{P})_{\mathrm{P}}\;},
 $$
 
 is a ring homomorphism whose kernel is $\operatorname{nil}(R)$. Consequently $R$ is reduced if and only if this map is injective.

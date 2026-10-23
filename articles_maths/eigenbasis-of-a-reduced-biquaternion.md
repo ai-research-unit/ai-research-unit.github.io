@@ -30,7 +30,7 @@ Here the coefficients $\lambda_+,\lambda_-$ are the eigenvalues and the idempote
 | Spinor spaces | $S_\pm=\mathbb{C}\Pi_\pm$, two complex lines; one complex spinor coordinate per chirality |
 | Unit group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
 
-**Conventions.** The notation is fixed in *Conventions in Mathematics*: the general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex; the idempotents are $\Pi_\pm=\tfrac12(1\pm j)$; and the idempotent coordinates are $Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The eigenvalues are $\lambda_+=Q_+$ and $\lambda_-=Q_-$, so that $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$. The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$. The two spinor spaces are $S_\pm=\mathbb{C}\Pi_\pm$, with complex spinor coordinates $\alpha,\beta$. The base field is $\mathbb{C}$.
+**Conventions.** The notation is fixed in *Conventions in Mathematics*: the general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex; the idempotents are $\Pi_\pm=\tfrac12(1\pm j)$; and the idempotent coordinates are $Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The eigenvalues are $\lambda_+=Q_+$ and $\lambda_-=Q_-$, so that $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$. The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$. The two spinor spaces are $S_\pm=\mathbb{C}\Pi_\pm$, with complex spinor coordinates $A_1,A_2$, the two diagonal entries of the matrix in the eigenbasis. The base field is $\mathbb{C}$.
 
 **Boundaries.** The split-complex case is the subject of *Eigenbasis of a Split-Complex Number*; the biquaternion case is *Eigenbasis of a Biquaternion*; the spectral theory is *Reduced Biquaternion Spectral Theory*; the Peirce and ideal theory is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the exponential and the logarithm built on the decomposition are those of *Reduced Biquaternion Elementary Functions*; and the polar forms are those of *Modulus–Unit Polar Decomposition of Reduced Biquaternions* and *Exponential Polar Decomposition of Reduced Biquaternions*. The general definition, existence and uniqueness of the eigenvalue decomposition are those of *The Eigenvalue Decomposition of an Element* and are not restated.
 
@@ -51,7 +51,7 @@ They are written $\lambda_\pm$ when their values are exhibited, and $Q_\pm$ when
 
 **Theorem.** The spectrum of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is
 $$
-\sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_+,Q_-\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},\,Q_{\blacktriangle}-Q_{\blacktriangledown}\}.
+\boxed{\; \sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_+,Q_-\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},\,Q_{\blacktriangle}-Q_{\blacktriangledown}\} \;}.
 $$
 
 **Proof.** In the idempotent coordinates,
@@ -77,7 +77,7 @@ $$
 $$
 so the eigenvalues are distinct exactly when $Q_{\blacktriangledown}\neq0$, the analogue of $Q_x^2+Q_y^2+Q_z^2\neq0$ in the biquaternion case and of $q'\neq0$ for $Q=q+jq'$ in the split-complex case.
 
-**Minimal polynomial.** When $Q_{\blacktriangledown}\neq0$, the characteristic polynomial is squarefree and is the minimal polynomial. In the zero-divisor subcase $\lambda_+\lambda_-=0$ with $\breve Q\neq0$ one factor is $X$: the polynomial is $X(X-\lambda_+)$ when $\lambda_-=0$ and $X(X-\lambda_-)$ when $\lambda_+=0$. When $Q_{\blacktriangledown}=0$, the element is the complex scalar $Q_{\blacktriangle}$ and the minimal polynomial is $X-Q_{\blacktriangle}$. In every case the minimal polynomial is squarefree, so every element is semisimple.
+**Minimal polynomial.** When $Q_{\blacktriangledown}\neq0$, the characteristic polynomial is squarefree and is the minimal polynomial. In the zero-divisor subcase $\lambda_+\lambda_-=0$ with $\breve Q\neq0$ one factor is $\breve Q_{\mathrm{sp}}$: the polynomial is $X(X-\lambda_+)$ when $\lambda_-=0$ and $X(X-\lambda_-)$ when $\lambda_+=0$. When $Q_{\blacktriangledown}=0$, the element is the complex scalar $Q_{\blacktriangle}$ and the minimal polynomial is $X-Q_{\blacktriangle}$. In every case the minimal polynomial is squarefree, so every element is semisimple.
 
 The data of the spectrum are collected in the table.
 
@@ -120,9 +120,11 @@ $$
 
 Equivalently, by the Lagrange–Sylvester eigenprojector formula of *The Lagrange–Sylvester Eigenprojector Formula*, §*The Eigenprojector Formula*,
 $$
+\boxed{\;
 \Pi_+=\frac{\breve Q-\lambda_-}{\lambda_+-\lambda_-},\qquad
 \Pi_-=\frac{\breve Q-\lambda_+}{\lambda_--\lambda_+},\qquad
-\lambda_+-\lambda_-=2Q_{\blacktriangledown}.
+\lambda_+-\lambda_-=2Q_{\blacktriangledown}
+\;}.
 $$
 The formula applies when $Q_{\blacktriangledown}\neq0$; it exhibits $\Pi_\pm$ as polynomials in $\breve Q$. When $Q_{\blacktriangledown}=0$ the denominator vanishes and the formula does not apply.
 
@@ -258,22 +260,22 @@ $$
 $$
 is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$.
 
-**Coordinates.** Expanding a general element $X=X_{\blacktriangle}+jX_{\blacktriangledown}$ gives
+**Coordinates.** Expanding a general element $\breve Q_{\mathrm{sp}}=Q_{\mathrm{sp},\blacktriangle}+jQ_{\mathrm{sp},\blacktriangledown}$ gives
 $$
-X=(X_{\blacktriangle}+X_{\blacktriangledown})\Pi_++(X_{\blacktriangle}-X_{\blacktriangledown})\Pi_-,
+\breve Q_{\mathrm{sp}}=(Q_{\mathrm{sp},\blacktriangle}+Q_{\mathrm{sp},\blacktriangledown})\Pi_++(Q_{\mathrm{sp},\blacktriangle}-Q_{\mathrm{sp},\blacktriangledown})\Pi_-,
 $$
-so the coordinates of $X$ in this basis are $(X_{\blacktriangle}+X_{\blacktriangledown},\,X_{\blacktriangle}-X_{\blacktriangledown})$. For $\breve Q$ itself,
+so the coordinates of $\breve Q_{\mathrm{sp}}$ in this basis are $(Q_{\mathrm{sp},\blacktriangle}+Q_{\mathrm{sp},\blacktriangledown},\,Q_{\mathrm{sp},\blacktriangle}-Q_{\mathrm{sp},\blacktriangledown})$. For $\breve Q$ itself,
 $$
 \breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}
 \quad\longleftrightarrow\quad
 (\lambda_+,\lambda_-)=(Q_{\blacktriangle}+Q_{\blacktriangledown},\,Q_{\blacktriangle}-Q_{\blacktriangledown}).
 $$
 
-**The coordinates.** The coordinates of $\breve X$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $\breve X=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.
+**The coordinates.** The coordinates of $\breve Q_{\mathrm{sp}}$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $\breve Q_{\mathrm{sp}}=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.
 
 ### The Action of $\breve Q$ and the Eigenbasis
 
-**Definition.** An **eigenvector** of $\breve Q$ is a nonzero $X$ with $\breve QX=\mu X$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $\breve Q$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$ consisting of eigenvectors.
+**Definition.** An **eigenvector** of $\breve Q$ is a nonzero $\breve Q_{\mathrm{sp}}$ with $\breve Q\breve Q_{\mathrm{sp}}=\mu\breve Q_{\mathrm{sp}}$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $\breve Q$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$ consisting of eigenvectors.
 
 In the basis $(\Pi_+,\Pi_-)$ the action is diagonal:
 $$
@@ -333,17 +335,17 @@ The notation $S_\pm$ is reserved for these two spaces.
 
 A **spinor of first chirality** is an element of $S_+$,
 $$
-\xi_+=\alpha\Pi_+,\qquad \alpha\in\mathbb{C},
+\xi_+=A_1\Pi_+,\qquad A_1\in\mathbb{C},
 $$
 and a **spinor of second chirality** is an element of $S_-$,
 $$
-\xi_-=\beta\Pi_-,\qquad \beta\in\mathbb{C}.
+\xi_-=A_2\Pi_-,\qquad A_2\in\mathbb{C}.
 $$
 In the eigenbasis their coordinates are
 $$
-\xi_+\longleftrightarrow(\alpha,0),
+\xi_+\longleftrightarrow(A_1,0),
 \qquad
-\xi_-\longleftrightarrow(0,\beta).
+\xi_-\longleftrightarrow(0,A_2).
 $$
 The two spinor spaces are the two coordinate axes of the eigenbasis.
 
@@ -355,11 +357,11 @@ $$
 $$
 so $S_+$ is the $\lambda_+$-eigenspace and $S_-$ the $\lambda_-$-eigenspace. In coordinates,
 $$
-\alpha\longmapsto\lambda_+\alpha,
+A_1\longmapsto\lambda_+A_1,
 \qquad
-\beta\longmapsto\lambda_-\beta.
+A_2\longmapsto\lambda_-A_2.
 $$
-A general element $\breve X=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.
+A general element $\breve Q_{\mathrm{sp}}=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.
 
 **One complex component per chirality.** The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.
 
@@ -369,7 +371,7 @@ A general element $\breve X=\xi_++\xi_-$ is not a spinor: it is the sum of one s
 
 For any polynomial $f\in\mathbb{C}[X]$, the eigenvalue decomposition gives
 $$
-f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-.
+\boxed{\; f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_- \;}.
 $$
 This follows from
 $$
@@ -568,7 +570,7 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 | Peirce decomposition | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Nilpotents | none; the algebra is reduced, so $N^2=0$ implies $N=0$ |
-| Spinor spaces | $S_\pm=\mathbb{C}\Pi_\pm$, the two minimal ideals; spinors $\alpha\Pi_+$ and $\beta\Pi_-$ |
+| Spinor spaces | $S_\pm=\mathbb{C}\Pi_\pm$, the two minimal ideals; spinors $A_1\Pi_+$ and $A_2\Pi_-$ |
 | Polynomial calculus | $f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
 | Group of units | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
 
@@ -626,13 +628,15 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_+,Q_-\}$ | Spectrum |
 | $p_{\breve Q}(X)=X^{2}-2Q_{\blacktriangle}X+\langle \breve Q\rangle_{\mathrm{ts}}$ | Characteristic polynomial, $(X-\lambda_+)(X-\lambda_-)$ |
 | $L_{\breve Q}=R_{\breve Q}$ | Multiplication operator $X\mapsto\breve QX$; eigenvalues $\lambda_+,\lambda_-$ in the eigenbasis |
-| $\alpha,\beta$ | Complex scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$; the spinor coordinates on $S_+$ and $S_-$ |
+| $A_1,A_2$ | Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis |
+| $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$ |
 | $S_\pm=\mathbb{B}_{\mathrm{r}}\Pi_\pm=\mathbb{C}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (complex lines) |
 | $\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}_{\mathrm{r}}\Pi_\tau$ | Peirce corners of the pair $\Pi_\pm$ |
 | $\mathbb{C}[\breve Q]=\operatorname{span}_{\mathbb{C}}\{1,\breve Q\}$ | Subalgebra generated by $\breve Q$ |
 | $C(\breve Q)=\mathbb{B}_{\mathrm{r}}$ | Centraliser of $\breve Q$ |
 | $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | Group of units, the coordinatewise nonzero pairs |
 | $L=\{(m/2,n/2):m,n\in\mathbb{Z}[i],\ m\equiv n\pmod2\}$ | Lattice of basis-coordinate data for Gaussian-integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}[i]$ |
+| $\breve Q_{\mathrm{sp}}=A_1\Pi_++A_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(A_1,A_2)$ |
 | $\breve Q_2=\mu_+\Pi_++\mu_-\Pi_-$ | General element in the eigenvalue coordinates |
 | $\mu$ | A test scalar in the definition of an eigenvalue |
 | $\mu_\pm$ | Eigenvalue coordinates on the diagonal part |

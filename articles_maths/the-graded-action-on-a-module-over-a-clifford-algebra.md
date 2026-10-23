@@ -16,7 +16,7 @@ The geometric reading is the chirality grading. The module grading of a Clifford
 **Proposition.** The action of a homogeneous element $a\in\mathrm{Cl}^i$ on $S$ is an operator of parity $i$, and the assignment $c(a)\in\mathrm{End}^i(S)$ is an algebra homomorphism that preserves the parity and the relations: for vectors $u,v$,
 
 $$
-c(u)c(v)+c(v)c(u) = 2B(u,v)\operatorname{id}_S ,
+\boxed{\;c(u)c(v)+c(v)c(u) = 2B(u,v)\operatorname{id}_S\;} ,
 $$
 
 and every relation of $\mathrm{Cl}(V,\mathfrak{Q})$ holds in $\mathrm{End}(S)$ with the same signs.
@@ -30,7 +30,7 @@ and every relation of $\mathrm{Cl}(V,\mathfrak{Q})$ holds in $\mathrm{End}(S)$ w
 **Definition.** The **graded commutator** of homogeneous operators $A,B\in\operatorname{End}(S)$ is
 
 $$
-[A,B\} = AB - (-1)^{|A||B|}BA .
+\boxed{\;[A,B\} = AB - (-1)^{|A||B|}BA\;} .
 $$
 
 For odd $A,B$ it is the anticommutator $AB+BA$, and for even $A$ or $B$ it is the ordinary commutator.
@@ -38,7 +38,7 @@ For odd $A,B$ it is the anticommutator $AB+BA$, and for even $A$ or $B$ it is th
 **Proposition.** The Clifford relations are the statement that the Clifford multiplication is a **graded representation**: for homogeneous $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-[c(a),c(b)\} = c([a,b\}) ,
+\boxed{\;[c(a),c(b)\} = c([a,b\})\;} ,
 $$
 
 where the bracket on the right is the graded commutator in the Clifford algebra; for vectors $u,v$ this is $c(u)c(v)+c(v)c(u)=2B(u,v)\operatorname{id}$, and for an even element with any element it is the ordinary commutator.

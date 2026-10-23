@@ -36,7 +36,7 @@ Throughout, $(F, \lvert \cdot \rvert)$ is a valued field with valuation $v$, val
 **Theorem (the residue involution).** An isometric involution $\sigma$ induces a well-defined involution $\bar\sigma$ of the residue field,
 
 $$
-\bar\sigma : k\longrightarrow k, \qquad \bar\sigma(x + \mathrm{M}) = \sigma(x) + \mathrm{M} ,
+\boxed{\;\bar\sigma : k\longrightarrow k, \qquad \bar\sigma(x + \mathrm{M}) = \sigma(x) + \mathrm{M}\;} ,
 $$
 
 which is again an order-two anti-automorphism (an automorphism when $k$ is commutative, which is the field case); it is the identity exactly when $\sigma$ acts trivially on the residue field, and the residue field of the fixed field embeds in the fixed field of the residue involution.

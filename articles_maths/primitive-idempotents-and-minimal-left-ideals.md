@@ -139,13 +139,13 @@ is $A$-linear and surjective, with kernel the left ideal $\{a:ae=0\}$. The simpl
 The primitive idempotents are the indices of the simple left modules. In the semisimple algebra $A\cong\prod_i M_{n_i}(D_i)$, the simple left modules are $S_i=D_i^{n_i}$, one for each factor, and
 
 $$
-Ae\cong S_i,\qquad eAe\cong D_i,\qquad \operatorname{End}_A(Ae)\cong D_i^{\mathrm{op}}
+\boxed{\;Ae\cong S_i,\qquad eAe\cong D_i,\qquad \operatorname{End}_A(Ae)\cong D_i^{\mathrm{op}}\;}
 $$
 
 for a primitive idempotent $e$ in the $i$-th factor. The right modules are the duals, with $eA$ a minimal right ideal and $eAe$ acting on the other side. The finite-dimensional algebra has finitely many simple modules up to isomorphism, and the primitive idempotents of a complete orthogonal family $e_1,\dots,e_n$ with $\sum_i e_i=1$ give a decomposition
 
 $$
-A=\bigoplus_{i=1}^{n} Ae_i
+\boxed{\;A=\bigoplus_{i=1}^{n} Ae_i\;}
 $$
 
 of the regular module into indecomposable projective summands. In a semisimple algebra these summands are simple, and the family is a complete set of primitive idempotents up to equivalence; in a general finite-dimensional algebra the $Ae_i$ are the indecomposable projective modules, and the simple modules are their heads $Ae_i/\operatorname{rad}(Ae_i)$.
@@ -171,9 +171,9 @@ $$
 contains the nonzero proper left ideal $kE_{12}$, so it is not minimal. The idempotent $E_{11}$ is the mirror image: $AE_{11}=kE_{11}$ is minimal and $E_{11}A=kE_{11}\oplus kE_{12}$ is not. Thus
 
 $$
-eAe\ \text{division}\ \not\Rightarrow\ Ae\ \text{minimal},
+\boxed{\;eAe\ \text{division}\ \not\Rightarrow\ Ae\ \text{minimal},
 \qquad
-eAe\ \text{division}\ \not\Rightarrow\ eA\ \text{minimal}
+eAe\ \text{division}\ \not\Rightarrow\ eA\ \text{minimal}\;}
 $$
 
 in general, and the failure occurs on the side opposite to the one that generated the corner. The two primitive idempotents $E_{11}$ and $E_{22}$ are primitive on one side each, and the identity $1=E_{11}+E_{22}$ is primitive on neither.

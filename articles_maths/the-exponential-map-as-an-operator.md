@@ -48,7 +48,7 @@ commutes: $\exp(\varphi_*X) = \varphi(\exp X)$ for every $X \in \mathrm{G}$. In 
 **Theorem (the differential in the left trivialisation).** Identify the tangent space $T_X\mathrm{G}$ with $\mathrm{G}$ by the left translation $dL_{\exp X}$, so that $d\exp_X$ becomes a linear operator on $\mathrm{G}$. Then
 
 $$
-d\exp_X = \frac{1 - \exp(-\operatorname{ad}_X)}{\operatorname{ad}_X} = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}\,\operatorname{ad}_X^k ,
+\boxed{\;d\exp_X = \frac{1 - \exp(-\operatorname{ad}_X)}{\operatorname{ad}_X} = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}\,\operatorname{ad}_X^k\;} ,
 $$
 
 the series being finite because $\operatorname{ad}_X$ is nilpotent on a finite-dimensional Lie algebra at every $X$ if $\mathrm{G}$ is nilpotent and being convergent in every case for the endomorphism algebra.
@@ -76,7 +76,7 @@ the series being finite because $\operatorname{ad}_X$ is nilpotent on a finite-d
 **Theorem (Campbell--Baker--Hausdorff).** In the neighbourhood of the origin in which the logarithm is defined,
 
 $$
-\log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}\bigl([X,[X,Y]] + [Y,[Y,X]]\bigr) + \cdots ,
+\boxed{\;\log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}\bigl([X,[X,Y]] + [Y,[Y,X]]\bigr) + \cdots\;} ,
 $$
 
 a series in the free Lie algebra on two generators whose terms of degree $n$ are polynomials of degree $n$ in $X$ and $Y$; the series is the exponential of the Lie series $\log(\exp(X)\exp(Y))$, and its coefficients are the Bernoulli numbers.
@@ -92,7 +92,7 @@ a series in the free Lie algebra on two generators whose terms of degree $n$ are
 **Theorem.** For all $X \in \mathrm{G}$,
 
 $$
-\operatorname{Ad}_{\exp X} = \exp(\operatorname{ad}_X) = \sum_{k\geq0}\frac{1}{k!}\operatorname{ad}_X^k ,
+\boxed{\;\operatorname{Ad}_{\exp X} = \exp(\operatorname{ad}_X) = \sum_{k\geq0}\frac{1}{k!}\operatorname{ad}_X^k\;} ,
 $$
 
 as an identity of automorphisms of $\mathrm{G}$, and the derivative at the origin of $\operatorname{Ad} : G \to \operatorname{Aut}(\mathrm{G})$ is $\operatorname{ad}$.

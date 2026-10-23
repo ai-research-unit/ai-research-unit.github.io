@@ -99,8 +99,7 @@ The integral converges absolutely and $\|\mathcal F f\|_\infty \le \|f\|_1$.
 
 **Theorem (Inversion).** If $f \in L^1(\mathbb{R})$ and $\mathcal F f \in L^1(\mathbb{R})$, then
 
-$$
-f(a) = \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(2\pi i \xi a) \, d\xi
+$$ \boxed{\;f(a) = \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(2\pi i \xi a) \, d\xi\;}
 $$
 
 for almost every $a$, and for every $a$ if $f$ is continuous.
@@ -183,8 +182,7 @@ In particular $\|f * g\|_1 \le \|f\|_1 \|g\|_1$ and $\|f * g\|_r \le \|f\|_1 \|g
 
 **Theorem.** If $f, g \in L^1(\mathbb{R}^n)$, then $f * g \in L^1(\mathbb{R}^n)$ and
 
-$$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
+$$ \boxed{\;\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)\;}.
 $$
 
 **Proof.** By Fubini, $\widehat{f * g}(\xi) = \int g(b) \exp(-2\pi i \xi \cdot b) \big( \int f(a - b) \exp(-2\pi i \xi \cdot (a - b)) da \big) db$, and the inner integral is $(\mathcal F f)(\xi)$.
@@ -237,8 +235,7 @@ $$
 
 **Theorem (Hardy–Littlewood).** There is a dimensional constant $C_n$ such that for every $f \in L^1(\mathbb{R}^n)$ and every $\lambda > 0$,
 
-$$
-|\{a : Mf(a) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1.
+$$ \boxed{\;|\{a : Mf(a) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1\;}.
 $$
 
 **Proof.** For each $a$ with $Mf(a) > \lambda$ choose a ball $B(a, r_a)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.
@@ -414,10 +411,9 @@ The Riesz potential saturates the Sobolev embedding: it maps $L^{r}$ into $L^{s}
 
 **Theorem (Heisenberg).** Let $f \in L^2(\mathbb{R})$ with $\|f\|_2 = 1$, $a f \in L^2(\mathbb{R})$, and $\xi \mathcal F f \in L^2(\mathbb{R})$. Then
 
-$$
-\left( \int_{\mathbb{R}} a^2 |f(a)|^2 \, da \right)^{\!1/2}
+$$ \boxed{\;\left( \int_{\mathbb{R}} a^2 |f(a)|^2 \, da \right)^{\!1/2}
 \left( \int_{\mathbb{R}} \xi^2 |(\mathcal F f)(\xi)|^2 \, d\xi \right)^{\!1/2}
-\ge \frac{1}{4\pi}.
+\ge \frac{1}{4\pi}\;}.
 $$
 
 Equivalently, for any centres $a_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(a - a_0)^2$ and $(\xi - \xi_0)^2$.

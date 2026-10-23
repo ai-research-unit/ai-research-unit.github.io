@@ -12,7 +12,7 @@ This article computes the signed adjoint, the inverse and the composition of the
 **Theorem.** With respect to the twisted pairing,
 
 $$
-\{S_{a,b}x, y\} = \{x, S_{\delta(a),\delta(b)}y\} , \qquad \text{that is } S_{a,b}^{*_\sigma} = S_{\delta(a),\delta(b)} .
+\boxed{\;\{S_{a,b}x, y\} = \{x, S_{\delta(a),\delta(b)}y\} , \qquad \text{that is } S_{a,b}^{*_\sigma} = S_{\delta(a),\delta(b)}\;} .
 $$
 
 The signed adjoint of a sandwich is the sandwich of the two $\delta$-images, with the order of the parameters **not** reversed, and it is an involution of the algebra of sandwiched operators.
@@ -38,7 +38,7 @@ $$
 **Theorem.** The sandwich is **unitary** for the twisted pairing,
 
 $$
-S_{a,b}^{*_\sigma}S_{a,b} = S_{a,b}S_{a,b}^{*_\sigma} = \mathrm{id} ,
+\boxed{\;S_{a,b}^{*_\sigma}S_{a,b} = S_{a,b}S_{a,b}^{*_\sigma} = \mathrm{id}\;} ,
 $$
 
 exactly when
@@ -54,7 +54,7 @@ For the sandwich with $b = \alpha(a)^{-1}$ these are the two conditions $\sigma(
 **Corollary (the unitary elements).** The **unitary elements** of $A$ with respect to $\sigma$ are the units $u$ with
 
 $$
-u^{*_\sigma}u = uu^{*_\sigma} = 1, \qquad u^{*_\sigma} = \delta(u) = \sigma(\alpha(u)) ;
+\boxed{\;u^{*_\sigma}u = uu^{*_\sigma} = 1, \qquad u^{*_\sigma} = \delta(u) = \sigma(\alpha(u))\;} ;
 $$
 
 they form a subgroup of $A^\times$, and the sandwiches $S_{a,\alpha(a)^{-1}}$ with $a$ and $\alpha(a)$ unitary are the unitary sandwiches. The one-sided case of *The Signed Adjoint of the Left Multiplication on a Ring* is $b = 1$, and the reflection of *The Signed Adjoint of the Reflection on a Ring* is $b = u^{-1}$.

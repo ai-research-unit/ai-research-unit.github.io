@@ -24,7 +24,7 @@ be the action. The **adjoint action** is the assignment $\rho^{*}(x) = \rho(x)^{
 **Theorem (the adjoint of the action is the action of the dagger).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-\rho(x)^{*} = \rho\bigl(x^{\dagger}\bigr),
+\boxed{\;\rho(x)^{*} = \rho\bigl(x^{\dagger}\bigr)\;},
 $$
 
 and consequently $\rho$ is a **$*$-homomorphism** of the daggered algebra into the $*$-algebra of operators on $S$:
@@ -78,7 +78,7 @@ and $\rho(a)$ is unitary iff $a^{\dagger}a = 1$, that is iff $a$ lies in the uni
 **Theorem (adjoint of a composite one-sided action).** Let $T_1,\dots,T_k$ be $A$-linear operators on $S$ that admit adjoints, and let $a_1,\dots,a_k \in \mathrm{Cl}(V,\mathfrak{Q})$. Then
 
 $$
-\Bigl(\sum_{i} \rho(a_i)\,T_i\Bigr)^{*} = \sum_{i} T_i^{*}\,\rho\bigl(a_i^{\dagger}\bigr) .
+\boxed{\;\Bigl(\sum_{i} \rho(a_i)\,T_i\Bigr)^{*} = \sum_{i} T_i^{*}\,\rho\bigl(a_i^{\dagger}\bigr)\;} .
 $$
 
 **Proof.** By the anti-multiplicativity and the involution property, $(\rho(a_i)T_i)^{*} = T_i^{*}\rho(a_i)^{*} = T_i^{*}\rho(a_i^{\dagger})$, and the adjoint of a sum is the sum of the adjoints.
@@ -108,7 +108,7 @@ $$
 **Theorem (the adjoint of a two-sided operator is the operator at the dagger).** The standard maps $\mathrm{id}$, $\alpha$, $r$, $\bar\cdot$ and ${}^{\dagger}$ commute pairwise and each commutes with the dagger, so for the two-sided operator $\Phi^{\theta,c}_x = L_{\theta(x)}R_{c(x)}$ with $\theta$ and $c$ among them one has
 
 $$
-\bigl(\Phi^{\theta,c}_x\bigr)^{*} = \Phi^{\theta,c}_{x^{\dagger}} .
+\boxed{\;\bigl(\Phi^{\theta,c}_x\bigr)^{*} = \Phi^{\theta,c}_{x^{\dagger}}\;} .
 $$
 
 In particular the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_x = L_xR_{x^{\dagger}}$ has adjoint $\Phi^{\mathrm{id},\dagger}_{x^{\dagger}} = L_{x^{\dagger}}R_x$, and on the slice $U$ it is unitary, $(\Phi^{\mathrm{id},\dagger}_x)^{*}\Phi^{\mathrm{id},\dagger}_x = \mathrm{id}$, which is the operator form of $u^{\dagger}u = 1$ that *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* uses.

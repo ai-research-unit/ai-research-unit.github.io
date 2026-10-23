@@ -42,7 +42,7 @@ from Lie groups and smooth homomorphisms to Lie algebras and Lie algebra homomor
 **Theorem.** Let $G$ be a simply connected Lie group and $H$ a Lie group with Lie algebras $\mathrm{G}, \mathrm{H}$. Then the map
 
 $$
-\operatorname{Hom}_{\mathbf{LieGrp}}(G, H) \longrightarrow \operatorname{Hom}_{\mathbf{LieAlg}}(\mathrm{G}, \mathrm{H}), \qquad \varphi \longmapsto d\varphi_e,
+\boxed{\;\operatorname{Hom}_{\mathbf{LieGrp}}(G, H) \longrightarrow \operatorname{Hom}_{\mathbf{LieAlg}}(\mathrm{G}, \mathrm{H}), \qquad \varphi \longmapsto d\varphi_e\;},
 $$
 
 is a bijection.
@@ -123,7 +123,7 @@ $$
 and by the composition rule
 
 $$
-\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_{k \geq 0} \frac{(\operatorname{ad}_X)^k}{k!} \in GL(\mathrm{G}).
+\boxed{\;\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_{k \geq 0} \frac{(\operatorname{ad}_X)^k}{k!} \in GL(\mathrm{G})\;}.
 $$
 
 **Proof.** The map $\operatorname{Ad}$ is a homomorphism because $c_{gh} = c_g \circ c_h$ and the differential is functorial. To identify $d(\operatorname{Ad})_e$, differentiate the identity $\operatorname{Ad}(g)v = \frac{d}{dt}\big|_{t=0} g\exp(tv)g^{-1}$ at $g = \exp(tx)$: the derivative of $g\exp(tv)g^{-1}$ with respect to $s$ at $s = 0$, with $g = \exp(sx)$, is $[x, v]$, so $d(\operatorname{Ad})_e(x) = \operatorname{ad}_x$. The composition rule is the naturality of the exponential applied to the homomorphism $\operatorname{Ad} : G \to GL(\mathrm{G})$, whose Lie algebra is $\mathrm{GL}(\mathrm{G})$: $\operatorname{Ad}(\exp x) = \exp(\operatorname{ad}_x)$, and the exponential in $GL(\mathrm{G})$ is the matrix exponential of the endomorphism $\operatorname{ad}_x$.
@@ -151,7 +151,7 @@ for all $g \in G$ and $x, v, w \in \mathrm{G}$.
 **Theorem.** Let $G$ be a connected Lie group with Lie algebra $\mathrm{G}$. Then the kernel of the adjoint representation is the centre:
 
 $$
-\ker(\operatorname{Ad}) = Z(G) = \{g \in G : gh = hg \text{ for all } h \in G\}.
+\boxed{\;\ker(\operatorname{Ad}) = Z(G) = \{g \in G : gh = hg \text{ for all } h \in G\}\;}.
 $$
 
 Consequently $\operatorname{Ad}$ induces an injective homomorphism $G/Z(G) \to GL(\mathrm{G})$.

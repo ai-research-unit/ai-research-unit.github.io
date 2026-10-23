@@ -97,7 +97,7 @@ The preservation of the two sectors is the structural reason the action splits i
 
 **Theorem (the sandwich of the polar word).** Let $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then
 
-$$ \boxed{\;\Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}\;}, $$
+$$ \Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}, $$
 
 that is,
 
@@ -427,7 +427,7 @@ $$
 
 **Corollary (the isometry slice).** The sandwich is an isometry of the Lorentzian norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,
 
-$$ \boxed{\;L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}\;}, $$
+$$ L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}, $$
 
 so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.
 

@@ -14,7 +14,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $E, F$ are Hausdorff l
 **Proposition (idempotents and decompositions).** Let $P \in \mathcal{L}(E)$ satisfy $P^{2} = P$. Then every $x \in E$ decomposes uniquely as $x = (x - Px) + Px$ with $x - Px \in \ker P$ and $Px \in \mathrm{im}\,P$, so
 
 $$
-E = \ker P \oplus \mathrm{im}\,P ,
+\boxed{\;E = \ker P \oplus \mathrm{im}\,P\;} ,
 $$
 
 $\mathrm{im}\,P = \ker(\mathrm{id} - P)$, and $\ker P = \mathrm{im}(\mathrm{id} - P)$. Conversely, if $E = M \oplus N$ is an algebraic direct sum, the map $P$ that is the identity on $M$ and zero on $N$ is idempotent with $\mathrm{im}\,P = M$ and $\ker P = N$, and it is the unique idempotent with those kernel and image.
@@ -24,7 +24,7 @@ $\mathrm{im}\,P = \ker(\mathrm{id} - P)$, and $\ker P = \mathrm{im}(\mathrm{id} 
 **Proposition (continuity of the summand projection).** Let $P \in \mathcal{L}(E)$ be idempotent. Then $\ker P$ and $\mathrm{im}\,P$ are closed, the map
 
 $$
-\Phi : \ker P \times \mathrm{im}\,P \longrightarrow E, \qquad \Phi(u, v) = u + v ,
+\boxed{\;\Phi : \ker P \times \mathrm{im}\,P \longrightarrow E, \qquad \Phi(u, v) = u + v\;} ,
 $$
 
 is a topological isomorphism, and $P$ is an open map onto its image. Conversely, if $E = M \oplus N$ is a topological direct sum, the projection onto $M$ along $N$ is continuous.

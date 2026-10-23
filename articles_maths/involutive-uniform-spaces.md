@@ -41,7 +41,7 @@ is an entourage. The involution is then a **uniform involution**.
 **Definition.** Let $X$ be an involutive uniform space and $\pi : X \to X/\sigma$ the orbit map. The **orbit uniformity** on $X/\sigma$ is the uniformity generated as a filter by the sets
 
 $$
-(\pi \times \pi)(E), \qquad E \text{ a } \sigma\text{-invariant entourage of } X .
+\boxed{\;(\pi \times \pi)(E), \qquad E \text{ a } \sigma\text{-invariant entourage of } X\;} .
 $$
 
 **Theorem.** The sets $(\pi\times\pi)(E)$ for $\sigma$-invariant entourages $E$ form a base for a uniformity on $X/\sigma$; the orbit map is uniformly continuous for it; and the orbit uniformity is the finest uniformity on $X/\sigma$ making the orbit map uniformly continuous.
@@ -73,7 +73,7 @@ $$
 **Theorem.** Let $X$ be an involutive uniform space with completion $\hat X$, the separated complete uniform space containing $X$ as a dense subspace. Then the involution $\sigma$ extends to exactly one uniformly continuous involution $\hat\sigma$ of $\hat X$, and the fixed set of $\hat\sigma$ is a closed set containing the closure of $X^{\sigma}$:
 
 $$
-\overline{X^{\sigma}} \ \subseteq \ (\hat X)^{\hat\sigma} .
+\boxed{\;\overline{X^{\sigma}} \ \subseteq \ (\hat X)^{\hat\sigma}\;} .
 $$
 
 The containment can be strict, and it is strict exactly when the completion creates a fixed point that the closure of $X^{\sigma}$ does not contain.
@@ -89,7 +89,7 @@ The containment can be strict, and it is strict exactly when the completion crea
 **Theorem.** The completion of the orbit space is the orbit space of the completion:
 
 $$
-\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma ,
+\boxed{\;\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma\;} ,
 $$
 
 by a uniform isomorphism, naturally in the involutive uniform space $X$. The orbit of a point of $X$ has for its image the orbit of the same point under $\hat\sigma$.

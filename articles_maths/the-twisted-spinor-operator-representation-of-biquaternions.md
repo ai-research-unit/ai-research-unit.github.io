@@ -163,7 +163,7 @@ $$
 
 The scale enters **twice**, once from $\tilde{Q}$ and once from $\tilde{Q}^{*}$, and the two copies multiply because the scale is central: the sandwich carries $r^{2}$ where the operator carries $r$. The effect is graded: on lengths the factor is $r^{2}$, on the biquaternion norm it is $r^{4}$, since the norm is quadratic. The polar statement is the same one read backwards,
 
-$$ \boxed{\;\langle H_{\tilde{Q}}(\tilde Q_3)\rangle_{\natural}=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3,\tilde Q_3\rangle_{\natural}=\bigl(r^{2}\bigr)^{2}\langle\tilde Q_3,\tilde Q_3\rangle_{\natural}\;}, $$
+$$ \langle H_{\tilde{Q}}(\tilde Q_3)\rangle_{\natural}=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3,\tilde Q_3\rangle_{\natural}=\bigl(r^{2}\bigr)^{2}\langle\tilde Q_3,\tilde Q_3\rangle_{\natural}, $$
 
 which is the scaling already recorded in the polar article. And the phase, which is the other central factor, does the opposite of the scale: it appears once on the module and **never** in the sandwich, since $\exp(i\alpha)$ and $\exp(-i\alpha)$ are inverse and commute past everything.
 

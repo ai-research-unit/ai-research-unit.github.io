@@ -14,7 +14,7 @@ Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with a continuous i
 **Theorem (the explicit form).** For every $a,b \in A$ the one-sided multiplications are adjointable, with
 
 $$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} .
 $$
 
 Hence the adjoint of a left multiplication is the left multiplication by the image of the parameter under the involution, and the adjoint of a right multiplication is the right multiplication by the image.
@@ -46,7 +46,7 @@ the sandwich of the images, with the order of the parameters restored rather tha
 **Theorem (the properties of the operator and of the element).** For $a \in A$,
 
 $$
-L_a \text{ self-adjoint} \iff a = a^* ; \quad L_a \text{ skew} \iff a = -a^* ; \quad L_a \text{ unitary} \iff a \text{ unitary} ; \quad L_a \text{ an involution} \iff a^2 = 1, \ a = a^* .
+\boxed{\;L_a \text{ self-adjoint} \iff a = a^* ; \quad L_a \text{ skew} \iff a = -a^* ; \quad L_a \text{ unitary} \iff a \text{ unitary} ; \quad L_a \text{ an involution} \iff a^2 = 1, \ a = a^*\;} .
 $$
 
 The same dictionary holds for the right multiplications, and it holds on the image of the regular representation in $\mathcal{A}(A)$.
@@ -72,7 +72,7 @@ The same dictionary holds for the right multiplications, and it holds on the ima
 **Theorem (the commutant).** For a unital involutive Banach algebra with a nondegenerate form, the operators commuting with the left regular representation are the right multiplications,
 
 $$
-\{T \in \mathcal{A}(A) : TL_a = L_aT \ \text{for all } a\} = \{R_b : b \in A\} ,
+\boxed{\;\{T \in \mathcal{A}(A) : TL_a = L_aT \ \text{for all } a\} = \{R_b : b \in A\}\;} ,
 $$
 
 so the commutant of $\{L_a\}$ is the algebra of the right multiplications, isomorphic to $A^{\mathrm{opp}}$; symmetrically the commutant of the right multiplications is the algebra of the left multiplications, and the bicommutant of the regular representation is the whole adjointable algebra.

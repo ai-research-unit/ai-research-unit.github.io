@@ -43,7 +43,7 @@ and the covering $\mathcal{U}$ is **effective for descent** in $\mathbb{X}$ if t
 
 **Theorem (Grothendieck, faithfully flat descent).** Let $R\to R'$ be a faithfully flat ring homomorphism. Then the comparison functor
 $$
-{}_{R}\mathbf{Mod}\longrightarrow\mathrm{Desc}(R'/R),\qquad M\mapsto (M\otimes_RR',\ \text{canonical}),
+\boxed{\;{}_{R}\mathbf{Mod}\longrightarrow\mathrm{Desc}(R'/R),\qquad M\mapsto (M\otimes_RR',\ \text{canonical})\;},
 $$
 from the category of $R$-modules to the category of $R'$-modules with descent data is an equivalence of categories. Equivalently, the category of $R$-modules is equivalent to the category of modules over the cosimplicial ring
 $$
@@ -59,7 +59,7 @@ and the flatness of $R'$ over $R$ shows that $M\otimes_RR'\cong M'$ compatibly w
 
 **Definition.** The **Amitsur complex** of a faithfully flat cover $R\to R'$ is the cosimplicial object with terms $R'\otimes_RR'\otimes_R\cdots\otimes_RR'$ and the coface maps inserting $1$ in the consecutive positions; for an $R$-module $M$ the complex
 $$
-0\to M\to M\otimes_RR'\to M\otimes_RR'\otimes_RR'\to\cdots
+\boxed{\;0\to M\to M\otimes_RR'\to M\otimes_RR'\otimes_RR'\to\cdots\;}
 $$
 is the **Amitsur cochain complex**, and its cohomology computes the descent obstruction: $H^0$ is the module $M$ itself and the higher cohomology vanishes whenever the descent is effective.
 

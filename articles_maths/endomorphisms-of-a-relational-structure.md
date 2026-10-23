@@ -48,8 +48,8 @@ structures over the same index set. A **homomorphism** from $\mathcal{A}$ to $\m
 function $f : A \to B$ such that
 
 $$
-(x, y) \in R_i \quad\Longrightarrow\quad (f(x), f(y)) \in S_i
-\qquad \text{for every } i \text{ and all } x, y \in A .
+\boxed{\;(x, y) \in R_i \quad\Longrightarrow\quad (f(x), f(y)) \in S_i
+\qquad \text{for every } i \text{ and all } x, y \in A\;} .
 $$
 
 A homomorphism is **strong** if the implication is an equivalence for every $i$:
@@ -153,7 +153,7 @@ symmetric group $\operatorname{Sym}(A)$, the group of all bijections of $A$ unde
 inclusion
 
 $$
-\operatorname{Aut}(\mathcal{A}) \;\leq\; \operatorname{Sym}(A)
+\boxed{\;\operatorname{Aut}(\mathcal{A}) \;\leq\; \operatorname{Sym}(A)\;}
 $$
 
 is the precise sense in which the automorphism group measures the symmetry of the structure: it is
@@ -244,7 +244,7 @@ some related representatives exist, and compatibility moves the relation to $x$ 
 **Theorem.** Let $f : \mathcal{A} \to \mathcal{B}$ be a surjective strong homomorphism. Then the map
 
 $$
-\bar f : \mathcal{A}/{\ker f} \to \mathcal{B}, \qquad \bar f([x]) = f(x),
+\boxed{\;\bar f : \mathcal{A}/{\ker f} \to \mathcal{B}, \qquad \bar f([x]) = f(x)\;},
 $$
 
 is an isomorphism of relational structures.

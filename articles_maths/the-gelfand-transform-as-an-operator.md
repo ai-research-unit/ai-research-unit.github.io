@@ -56,7 +56,7 @@ $$
 **Theorem (the kernel is the radical).** The kernel of the Gelfand transform is the intersection of the maximal ideals, that is the radical,
 
 $$
-\ker\Gamma = \bigcap_{\chi \in \Delta}\ker\chi = \operatorname{rad}(A) ,
+\boxed{\;\ker\Gamma = \bigcap_{\chi \in \Delta}\ker\chi = \operatorname{rad}(A)\;} ,
 $$
 
 and $\Gamma$ is injective if and only if $A$ is semisimple, $\operatorname{rad}(A) = 0$. Consequently $\Gamma$ induces an injective transform on the semisimple quotient $A/\operatorname{rad}(A)$, and the image is a subalgebra of $C_0(\Delta)$ isomorphic to $A/\operatorname{rad}(A)$.
@@ -72,7 +72,7 @@ and $\Gamma$ is injective if and only if $A$ is semisimple, $\operatorname{rad}(
 **Theorem (the spectrum is the image of the element).** For $a$ in a unital commutative Banach algebra,
 
 $$
-\sigma(a) = \widehat a(\Delta) = \{\chi(a) : \chi \in \Delta\} ,
+\boxed{\;\sigma(a) = \widehat a(\Delta) = \{\chi(a) : \chi \in \Delta\}\;} ,
 $$
 
 so the spectrum of $a$ is exactly the set of values of its Gelfand transform, and the transform is the spectral model of the algebra.
@@ -82,7 +82,7 @@ so the spectrum of $a$ is exactly the set of values of its Gelfand transform, an
 **Theorem (the spectral radius formula).** For every $a$,
 
 $$
-r(a) = \lVert\widehat a\rVert_\infty = \sup_{\chi\in\Delta}\lvert\chi(a)\rvert = \lim_{n\to\infty}\lVert a^n\rVert^{1/n} ,
+\boxed{\;r(a) = \lVert\widehat a\rVert_\infty = \sup_{\chi\in\Delta}\lvert\chi(a)\rvert = \lim_{n\to\infty}\lVert a^n\rVert^{1/n}\;} ,
 $$
 
 so the Gelfand transform computes the spectral radius, and $\Gamma$ is a contraction that is isometric exactly when $\lVert a\rVert = r(a)$ for all $a$.

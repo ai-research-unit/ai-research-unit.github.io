@@ -47,7 +47,7 @@ The article assumes *Metric Geometry* for the isometries, the affine subspaces a
 **Definition.** An iterated function system $f_1,\dots,f_N$ on $X$ is $\sigma$-**reversible** when $\sigma$ conjugates the maps to the system: there is an involutive permutation $\tau$ of $\{1,\dots,N\}$ with
 
 $$
-\sigma \circ f_i = f_{\tau(i)} \circ \sigma \qquad (i = 1,\dots,N) .
+\boxed{\;\sigma \circ f_i = f_{\tau(i)} \circ \sigma \qquad (i = 1,\dots,N)\;} .
 $$
 
 **Theorem (the symmetry of the attractor).** If the system is $\sigma$-reversible then the Hutchinson operator commutes with the involution, $\sigma(F(A)) = F(\sigma(A))$, and the attractor is $\sigma$-invariant. The fixed set of the attractor is determined by the maps that preserve the fixed set and by the intersections of the pieces with the fixed set, and is computed from the restricted system in the examples.

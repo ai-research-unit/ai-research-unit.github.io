@@ -81,7 +81,7 @@ $$
 so that $L_a$ is the action operator of the left action of $G$ on itself and $R_b$ is the action operator of the right action. They satisfy
 
 $$
-L_a L_b = L_{ab}, \qquad R_a R_b = R_{ab}, \qquad L_a R_b = R_b L_a,
+\boxed{\;L_a L_b = L_{ab}, \qquad R_a R_b = R_{ab}, \qquad L_a R_b = R_b L_a\;},
 $$
 
 and each family is a representation of $G$ on $\mathcal{F}(G)$; the two representations commute.
@@ -102,13 +102,13 @@ $$
 the pullback of the map $x \mapsto axb$. In terms of the one-sided operators,
 
 $$
-\Psi_{a,b} = L_{a^{-1}} R_b = R_b L_{a^{-1}} .
+\boxed{\;\Psi_{a,b} = L_{a^{-1}} R_b = R_b L_{a^{-1}}\;} .
 $$
 
 **Proposition.** The sandwiches compose by
 
 $$
-\Psi_{a,b} \circ \Psi_{c,d} = \Psi_{c a,\, b d},
+\boxed{\;\Psi_{a,b} \circ \Psi_{c,d} = \Psi_{c a,\, b d}\;},
 $$
 
 they satisfy $\Psi_{a,b}^{-1} = \Psi_{a^{-1}, b^{-1}}$, and the assignment $(a, b) \mapsto \Psi_{a,b}$ is a homomorphism $G \times G^{\mathrm{opp}} \to GL(\mathcal{F}(G))$. The sandwich with $b = a^{-1}$ is the **inner conjugation** $\Psi_{a, a^{-1}} f(x) = f(a\,x\,a^{-1})$.

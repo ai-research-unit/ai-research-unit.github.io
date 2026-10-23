@@ -52,7 +52,7 @@ by the maximal left ideals $\mathrm{M}\subseteq A$. When $A$ is commutative the 
 **Theorem (Schur).** Let $V$ and $W$ be irreducible representations of $A$. Then every intertwining operator $T: V\to W$ is zero or an isomorphism, and
 
 $$
-\operatorname{End}_A(V)=\rho(A)' \text{ is a division algebra}, \qquad \operatorname{Aut}_A(V)=\operatorname{End}_A(V)^{\times}.
+\boxed{\;\operatorname{End}_A(V)=\rho(A)' \text{ is a division algebra}, \qquad \operatorname{Aut}_A(V)=\operatorname{End}_A(V)^{\times}\;}.
 $$
 
 The lemma is proved in *Automorphisms of Modules over an Algebra* and is the reason irreducible representations behave as atoms: they have no endomorphisms except zero and invertible ones. The division algebra $D=\operatorname{End}_A(V)$ is a genuine invariant of the irreducible representation. Two consequences are used constantly.
@@ -105,7 +105,7 @@ A representation is **completely reducible** if it is a direct sum of irreducibl
 Let $A$ be finite-dimensional over $F$. Then $A/J(A)$ is semisimple and every simple module is a simple $A/J(A)$-module. Writing $S_1,\dots,S_r$ for the simple modules up to isomorphism and $D_i=\operatorname{End}_A(S_i)^{\mathrm{opp}}$, one has
 
 $$
-A/J(A) \cong \prod_{i=1}^{r} M_{n_i}(D_i), \qquad n_i=\dim_{D_i} S_i,
+\boxed{\;A/J(A) \cong \prod_{i=1}^{r} M_{n_i}(D_i), \qquad n_i=\dim_{D_i} S_i\;},
 $$
 
 and the irreducible representations of $A$ are $S_1,\dots,S_r$. If $F$ is algebraically closed, then $D_i=F$ for all $i$ and
@@ -123,7 +123,7 @@ Let $A=M_n(F)$ with $n \geq 1$ and let $S=F^n$ be the defining representation, m
 **Theorem.** Every left $M_n(F)$-module is a direct sum of copies of $S$. Equivalently, $S$ is the unique irreducible representation of $M_n(F)$, up to isomorphism, and
 
 $$
-M_n(F) \cong S^{\oplus n}
+\boxed{\;M_n(F) \cong S^{\oplus n}\;}
 $$
 
 as a left module over itself.

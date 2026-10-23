@@ -31,7 +31,7 @@ not used.
 is the relation
 
 $$
-\langle U, V \rangle = U^{-1} ; V \subseteq Z \times Z .
+\boxed{\;\langle U, V \rangle = U^{-1} ; V \subseteq Z \times Z\;} .
 $$
 
 **Proposition.** The pairing is additive in each variable and satisfies $\langle U, V \rangle^{-1} =
@@ -48,7 +48,7 @@ $U = \emptyset$ whenever $V = \emptyset$, and iterating over the elements of $X$
 \subseteq X \times Z$,
 
 $$
-\langle R ; S, T \rangle = \langle S, R^{-1} ; T \rangle .
+\boxed{\;\langle R ; S, T \rangle = \langle S, R^{-1} ; T \rangle\;} .
 $$
 
 Hence the operator $L_R : S \mapsto R ; S$ on relations has, under the pairing, the adjoint $L_{R^{-1}}
@@ -73,7 +73,7 @@ for all $S$, which with $S = \Delta_Y$ gives $R = R^{-1}$.
 ; S$ is residuated, with right adjoint $T \mapsto R \backslash T$ where
 
 $$
-R \backslash T = \overline{R^{-1} ; \overline{T}} \subseteq Y \times Z .
+\boxed{\;R \backslash T = \overline{R^{-1} ; \overline{T}} \subseteq Y \times Z\;} .
 $$
 
 Its **unit** and **counit** are the inclusions

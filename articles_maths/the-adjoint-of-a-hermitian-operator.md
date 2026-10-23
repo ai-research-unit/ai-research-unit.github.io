@@ -21,14 +21,14 @@ Throughout, $V$ is a complex vector space of dimension $m$ with the positive-def
 
 **Proposition (existence and uniqueness of the adjoint).** For every operator $H$ there is a unique operator $H^{*}$ with $\langle Hx,y\rangle = \langle x,H^{*}y\rangle$ for all $x,y$. In a unitary frame $e_1,\dots,e_m$ the matrix of $H^{*}$ is the conjugate transpose of the matrix of $H$, $(H^{*})_{ij} = \overline{H_{ji}}$, and the assignment $H\mapsto H^{*}$ is conjugate-linear, involutive and an anti-automorphism,
 $$
-(aH+bK)^{*} = \bar aH^{*}+\bar bK^{*}, \qquad (H^{*})^{*} = H, \qquad (HK)^{*} = K^{*}H^{*}.
+\boxed{\;(aH+bK)^{*} = \bar aH^{*}+\bar bK^{*}, \qquad (H^{*})^{*} = H, \qquad (HK)^{*} = K^{*}H^{*}\;}.
 $$
 
 **Proof.** For fixed $y$ the map $x\mapsto\langle Hx,y\rangle$ is conjugate-linear, hence of the form $x\mapsto \langle x, z\rangle$ for a unique $z$, by the representation of conjugate-linear functionals through the positive-definite form; set $H^{*}y = z$. In a unitary frame the entries satisfy $\langle He_j,e_i\rangle = H_{ij}$ and $\langle e_j,H^{*}e_i\rangle = (H^{*})_{ij}$, so the defining identity gives $H_{ij} = \overline{(H^{*})_{ij}}$, that is $(H^{*})_{ij} = \overline{H_{ji}}$. The three properties are immediate from the definition and the antilinearity of the form in its second argument in the appropriate slot. Hermitian forms and the representation of functionals are *Hermitian Geometry and the Unitary Group* and *Hermitian Forms and Unitary Geometry*.
 
 **Proposition (the Hermitian operator).** $H$ is Hermitian, $H^{*} = H$, if and only if its quadratic form is real, $\langle Hx,x\rangle \in \mathbb{R}$ for all $x$, if and only if its matrix in some unitary frame is a Hermitian matrix; $H$ is anti-Hermitian if and only if $iH$ is Hermitian, and every operator decomposes uniquely as
 $$
-H = \tfrac12(H+H^{*}) + \tfrac12(H-H^{*}),
+\boxed{\;H = \tfrac12(H+H^{*}) + \tfrac12(H-H^{*})\;},
 $$
 the sum of a Hermitian and an anti-Hermitian operator, the **real and imaginary parts** of $H$.
 
@@ -38,7 +38,7 @@ the sum of a Hermitian and an anti-Hermitian operator, the **real and imaginary 
 
 **Proposition (the correspondence).** The assignment
 $$
-H \longmapsto h_H, \qquad h_H(x,y) = \langle Hx, y\rangle ,
+\boxed{\;H \longmapsto h_H, \qquad h_H(x,y) = \langle Hx, y\rangle\;} ,
 $$
 is a bijection between the Hermitian operators on $V$ and the Hermitian forms on $V$; under it the definite operators correspond to the definite forms, $\langle Hx,x\rangle > 0$ for $x\neq0$, and the positive operators are exactly those of the form $H = K^{*}K$.
 

@@ -66,7 +66,7 @@ and it is a base of the cone $E^*_+$.
 **Proposition (the norm is the gauge).** The order-unit norm of *Ordered Vector Spaces and the Order Unit* is the **gauge** of the order interval $[-u,u]$,
 
 $$
-\|x\|_u = \inf\{\lambda>0 : x\in\lambda[-u,u]\},
+\boxed{\;\|x\|_u = \inf\{\lambda>0 : x\in\lambda[-u,u]\}\;},
 $$
 
 and the interval is the closed unit ball, convex, symmetric about the origin and absorbing.
@@ -76,7 +76,7 @@ and the interval is the closed unit ball, convex, symmetric about the origin and
 **Proposition (the order unit norm of a positive operator is the norm of its value at the unit).** For positive $T\in L_+(E,F)$,
 
 $$
-\|T\| = \|\mathrm{ev}_u(T)\|_v = \|Tu\|_v,
+\boxed{\;\|T\| = \|\mathrm{ev}_u(T)\|_v = \|Tu\|_v\;},
 $$
 
 the operator norm being taken for the order-unit norms.
@@ -88,7 +88,7 @@ the operator norm being taken for the order-unit norms.
 **Proposition (the order topology is given by the state space).** The order topology of $E$ is the topology of the norm $\|x\|_u$, which is the supremum of the evaluations over the state space,
 
 $$
-\|x\|_u = \sup\bigl\{\lvert f(x)\rvert : f\in S\bigr\}.
+\boxed{\;\|x\|_u = \sup\bigl\{\lvert f(x)\rvert : f\in S\bigr\}\;}.
 $$
 
 *Proof.* Positivity is detected by the states: an element $y$ lies in $E_+$ if and only if $f(y)\geq0$ for every $f\in S$, by the order-unit form of the Hahn–Banach separation theorem of *Duality Theory* applied to a point outside the cone. Hence for $x\in E$ and $\lambda>0$ the two inequalities $x\leq\lambda u$ and $-x\leq\lambda u$ are equivalent to $f(x)\leq\lambda$ and $-f(x)\leq\lambda$ for every state, that is, to $\lvert f(x)\rvert\leq\lambda$ for every state. Taking the infimum over $\lambda$ and using the gauge formula for the norm gives the displayed identity.

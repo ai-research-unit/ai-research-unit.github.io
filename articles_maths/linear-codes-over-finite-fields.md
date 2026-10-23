@@ -43,7 +43,7 @@ a subspace of dimension $n-k$, so that $C^\perp$ is an $[n,n-k,d^\perp]$-code fo
 **Theorem (Hamming bound and perfect codes).** For an $[n,k,d]_q$-code with $d = 2t+1$, writing $V = \sum_{i=0}^{t}\binom{n}{i}(q-1)^i$ for the number of words agreeing with a fixed word in at least $n-t$ coordinates,
 
 $$
-q^k\,V \leq q^n ,
+\boxed{\;q^k\,V \leq q^n\;} ,
 $$
 
 with equality exactly when every word of $\mathbb{F}_q^n$ agrees with some codeword in at least $n-t$ coordinates; such a code is called **perfect**.
@@ -85,7 +85,7 @@ $$
 **Theorem (MacWilliams).** For every linear code $C \subseteq \mathbb{F}_q^n$,
 
 $$
-W_{C^\perp}(x,y) = \frac{1}{\lvert C\rvert}W_C(y-x,\ y+(q-1)x) ,
+\boxed{\;W_{C^\perp}(x,y) = \frac{1}{\lvert C\rvert}W_C(y-x,\ y+(q-1)x)\;} ,
 $$
 
 so that the weight distribution of the dual code is determined by that of $C$.
@@ -113,7 +113,7 @@ so $W_C = y^7+7x^3y^4+7x^4y^3+x^7$, and its dual has weight distribution $B_0 = 
 **Theorem (cyclic codes as ideals).** Under this identification, cyclic codes are exactly the ideals of $R_n$, and $R_n$ is a principal ideal ring; consequently every cyclic code has a **generator polynomial** $g$ dividing $x^n-1$, of dimension $n-\deg g$, and if $\gcd(n,q) = 1$ then $x^n-1$ is squarefree and
 
 $$
-R_n \cong \prod_{i}\mathbb{F}_q[x]/(f_i)
+\boxed{\;R_n \cong \prod_{i}\mathbb{F}_q[x]/(f_i)\;}
 $$
 
 is a product of fields, the $f_i$ being the distinct irreducible factors of $x^n-1$; the dimension of the cyclic code attached to a divisor $g = \prod_{i\in I}f_i$ is $\sum_{i\notin I}\deg f_i$.

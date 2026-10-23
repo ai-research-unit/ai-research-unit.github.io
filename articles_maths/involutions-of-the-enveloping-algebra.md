@@ -22,7 +22,7 @@ The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensiona
 **Theorem.** Let $\theta$ be an involution of $\mathrm{G}$ and $\Theta$ its extension, and let $\mathfrak{b}$ be a $\Theta$-invariant symmetric form, $b(\Theta u,\Theta v)=\mathfrak{b}(u,v)$. Then $\Theta$ is self-adjoint:
 
 $$
-\Theta^{\dagger}=\Theta .
+\boxed{\;\Theta^{\dagger}=\Theta\;} .
 $$
 
 **Proof.** Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=\mathfrak{b}(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=\mathfrak{b}(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$.
@@ -32,7 +32,7 @@ $$
 **Theorem.** The principal anti-automorphism satisfies, with respect to a symmetric invariant form,
 
 $$
-\sigma^{\dagger}=\sigma ,
+\boxed{\;\sigma^{\dagger}=\sigma\;} ,
 $$
 
 and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are self-adjoint with respect to a symmetric invariant form.

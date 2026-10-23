@@ -49,7 +49,7 @@ $$
 **Theorem (Cauchy–Schwarz).** Let $s$ be Hermitian and positive semi-definite with values in $R$. Then for all $x, y \in A$,
 
 $$
-\varsigma(s(x,y))\,s(x,y) \leq s(x,x)\,s(y,y) \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert s(x,y)\rvert^{2} \leq s(x,x)\,s(y,y) ,
+\boxed{\;\varsigma(s(x,y))\,s(x,y) \leq s(x,x)\,s(y,y) \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert s(x,y)\rvert^{2} \leq s(x,x)\,s(y,y)\;} ,
 $$
 
 with $\lvert\cdot\rvert$ the modulus of the base. Definiteness is not assumed, and when $s(y,y) = 0$ the inequality reads $s(x,y) = 0$.
@@ -91,7 +91,7 @@ The form is positive, so the left side is $\geq 0$, and multiplying the inequali
 **Theorem (the diagonal is a seminorm).** Let $s$ be Hermitian and positive semi-definite with values in $R$. Then $p(x) = s(x,x)^{1/2}$ is a seminorm on $A$,
 
 $$
-p(x) \geq 0, \qquad p(\lambda x) = \lvert\lambda\rvert\,p(x), \qquad p(x+y) \leq p(x) + p(y),
+\boxed{\;p(x) \geq 0, \qquad p(\lambda x) = \lvert\lambda\rvert\,p(x), \qquad p(x+y) \leq p(x) + p(y)\;},
 $$
 
 and $\lvert s(x,y)\rvert \leq p(x)p(y)$; the null set $\{x : p(x) = 0\} = \{x : s(x,x) = 0\}$ is the radical of $s$.
@@ -147,7 +147,7 @@ is Hermitian and positive semi-definite — the diagonal is $s(p,p) = \lvert\var
 **Theorem (the $\mathrm{C}^{*}$-valued norm inequality).** Let $s : A \times A \to B$ be Hermitian and positive semi-definite with values in a $\mathrm{C}^{*}$-algebra $B$, and let the module carry a norm. Then
 
 $$
-\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\,\lVert s(y,y)\rVert \qquad \text{for all } x, y .
+\boxed{\;\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\,\lVert s(y,y)\rVert \qquad \text{for all } x, y\;} .
 $$
 
 *Proof.* For a state $\omega$ of $B$ the composite $\omega \circ s$ is a Hermitian positive semi-definite form with values in $\mathbb{C}$, by the proposition on the scalar reductions, so Cauchy–Schwarz applies to it: $\lvert\omega(s(x,y))\rvert^{2} \leq \omega(s(x,x))\,\omega(s(y,y)) \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$. A state is a positive functional of norm one, and $\lVert b\rVert = \sup\{\lvert\omega(b)\rvert : \omega \text{ a state}\}$ for a $\mathrm{C}^{*}$-algebra element $b$, so taking the supremum over the states gives the claim.

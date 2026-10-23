@@ -56,9 +56,9 @@ it exists by the Riesz representation theorem, and it is characterised by those 
 
 **Theorem (properties of the adjoint).** The map $T\mapsto T^\dagger$ is conjugate-linear and involutive,
 $$
-(T+S)^\dagger=T^\dagger+S^\dagger,\qquad
+\boxed{\;(T+S)^\dagger=T^\dagger+S^\dagger,\qquad
 (\lambda T)^\dagger=\bar\lambda T^\dagger,\qquad
-T^{\dagger\dagger}=T ,
+T^{\dagger\dagger}=T\;} ,
 $$
 it reverses products,
 $$
@@ -114,7 +114,7 @@ which is exactly the relation $K^*=\overline{K^{\mathrm t}}$.
 **Theorem (the adjoint kernel).** Let $K\in L^2(X\times X)$ and let $T_K$ be the integral operator of $K$,
 bounded on $L^2$. Then
 $$
-T_K^\dagger=T_{K^*},\qquad K^*(x,y)=\overline{K(y,x)} ,
+\boxed{\;T_K^\dagger=T_{K^*},\qquad K^*(x,y)=\overline{K(y,x)}\;} ,
 $$
 and $T_{K^*}$ is the integral operator of the conjugate transpose kernel, which lies in $L^2(X\times X)$ with
 the same norm, $\lVert K^*\rVert_{L^2}=\lVert K\rVert_{L^2}$.
@@ -144,9 +144,9 @@ $K^*=K$ is $K(y,x)=K(x,y)$.
 **Theorem.** The map $T\mapsto T^\dagger$ restricted to the integral operators is the conjugate transport of
 the kernel involution: on the class of integral operators with $L^2$ kernels,
 $$
-T_K^\dagger=T_{K^*},\qquad
+\boxed{\;T_K^\dagger=T_{K^*},\qquad
 (T_KT_L)^\dagger=T_L^\dagger T_K^\dagger,\qquad
-(T_K^\dagger)^\dagger=T_K ,
+(T_K^\dagger)^\dagger=T_K\;} ,
 $$
 and it is an isometry of the Hilbert–Schmidt class onto itself.
 

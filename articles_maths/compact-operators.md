@@ -19,7 +19,7 @@ Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$,
 **Proposition (closure and limits of finite rank).** $K(H)$ is a closed linear subspace of $B(H)$ containing $F(H)$, and
 
 $$
-K(H)=\overline{F(H)}^{\ \|\cdot\|} .
+\boxed{\;K(H)=\overline{F(H)}^{\ \|\cdot\|}\;} .
 $$
 
 An operator is compact exactly when it is the norm limit of a sequence of finite-rank operators.
@@ -73,7 +73,7 @@ is a $C^*$-algebra, the **Calkin algebra**, with a faithful trace-free simple st
 **Corollary (the self-adjoint case).** If $K$ is compact and self-adjoint then there is an orthonormal basis $(e_n)$ of $H$ with $K e_n=\lambda_n e_n$ and $\lambda_n\in\mathbb{R}$, $|\lambda_1|\ge|\lambda_2|\ge\cdots$, $\lambda_n\to0$ if the basis is infinite, and
 
 $$
-K=\sum_n\lambda_n\langle\cdot,e_n\rangle e_n
+\boxed{\;K=\sum_n\lambda_n\langle\cdot,e_n\rangle e_n\;}
 $$
 
 in operator norm.
@@ -118,7 +118,7 @@ under which $S_2(H)$ is a Hilbert space.
 **Theorem (trace and duality).** For $T\in S_1(H)$ the series $\operatorname{tr}T=\sum_n\langle Te_n,e_n\rangle$ converges absolutely and is independent of the orthonormal basis; $\operatorname{tr}(ST)=\operatorname{tr}(TS)$ for $S\in B(H)$, $T\in S_1(H)$; and the pairing $(S,T)\mapsto\operatorname{tr}(ST)$ identifies
 
 $$
-S_1(H)^*=B(H),\qquad K(H)^*=S_1(H),\qquad B(H)_*=S_1(H),
+\boxed{\;S_1(H)^*=B(H),\qquad K(H)^*=S_1(H),\qquad B(H)_*=S_1(H)\;},
 $$
 
 so $S_1(H)$ is the predual of $B(H)$ and the weak operator topology is the weak-* topology of this predual.

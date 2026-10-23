@@ -37,13 +37,13 @@ The article assumes *The Symmetric Algebra of a Module with an Involution* for $
 **Theorem.** Let $I$ be a $\sigma$-stable ideal of $A = \operatorname{Sym}(M)$. Then the induced map
 
 $$
-\bar\sigma : A/I\to A/I, \qquad \bar\sigma(a+I) = \sigma(a)+I
+\boxed{\;\bar\sigma : A/I\to A/I, \qquad \bar\sigma(a+I) = \sigma(a)+I\;}
 $$
 
 is well defined, is an $R$-algebra automorphism of order two of the quotient, and its fixed subalgebra is
 
 $$
-(A/I)^{\bar\sigma} = A^\sigma/(I\cap A^\sigma),
+\boxed{\;(A/I)^{\bar\sigma} = A^\sigma/(I\cap A^\sigma)\;},
 $$
 
 where $A^\sigma = \operatorname{Sym}(M)^\sigma$ is the fixed subalgebra.
@@ -57,7 +57,7 @@ where $A^\sigma = \operatorname{Sym}(M)^\sigma$ is the fixed subalgebra.
 **Theorem.** Under the descent of *Commutative Algebras with an Involution*, the $\sigma$-stable ideals of $A$ correspond bijectively to the ideals of the fixed subalgebra $A^\sigma$ by
 
 $$
-I \longmapsto I\cap A^\sigma , \qquad J \longmapsto JA ,
+\boxed{\;I \longmapsto I\cap A^\sigma , \qquad J \longmapsto JA\;} ,
 $$
 
 and the correspondence preserves the sums, the intersections and the products.

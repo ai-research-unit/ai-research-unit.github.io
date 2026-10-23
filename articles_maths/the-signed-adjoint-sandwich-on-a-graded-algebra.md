@@ -50,7 +50,7 @@ $$
 **Theorem.** For a balanced form the left and right multiplications satisfy
 
 $$
-(L_a)^{\dagger}=R_a,\qquad (R_b)^{\dagger}=L_b .
+\boxed{\;(L_a)^{\dagger}=R_a,\qquad (R_b)^{\dagger}=L_b\;} .
 $$
 
 **Proof.** $\beta(L_ax,y)=\beta(ax,y)=\beta(x,ya)=\beta(x,R_ay)$ gives the first; the second is the second balanced condition.
@@ -60,7 +60,7 @@ $$
 **Theorem.** For an α-compatible form the signed sandwich satisfies
 
 $$
-(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\,\alpha(a)} .
+\boxed{\;(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\,\alpha(a)}\;} .
 $$
 
 **Proof.** Write $\Sigma^{\alpha}_{a,b}=L_aR_b\alpha$. Then $(\Sigma^{\alpha}_{a,b})^{\dagger}=\alpha^{\dagger}R_b^{\dagger}L_a^{\dagger}=\alpha L_bR_a$, and $\alpha L_bR_a(x)=\alpha(b\,x\,a)=\alpha(b)\alpha(x)\alpha(a)=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}(x)$.
@@ -105,7 +105,7 @@ $$
 is a balanced α-compatible form, nondegenerate when $\beta$ is, and with respect to it the adjoints of the multiplications are
 
 $$
-(L_a)^{\dagger}=L_{a^{*}},\qquad (R_b)^{\dagger}=R_{b^{*}},\qquad (\Sigma_{a,b})^{\dagger}=\Sigma_{a^{*},b^{*}} .
+\boxed{\;(L_a)^{\dagger}=L_{a^{*}},\qquad (R_b)^{\dagger}=R_{b^{*}},\qquad (\Sigma_{a,b})^{\dagger}=\Sigma_{a^{*},b^{*}}\;} .
 $$
 
 **Proof.** For the left multiplication, $\beta_{*}(L_ax,y)=\beta((ax)^{*},y)=\beta(x^{*}a^{*},y)=\beta(x^{*},a^{*}y)=\beta_{*}(x,L_{a^{*}}y)$ using the balanced property; the right multiplication is the same computation; the unsigned sandwich is their composite. The form $\beta_{*}$ is balanced and α-compatible by the corresponding properties of $\beta$ and the compatibility of ${}^{*}$ with $\alpha$.

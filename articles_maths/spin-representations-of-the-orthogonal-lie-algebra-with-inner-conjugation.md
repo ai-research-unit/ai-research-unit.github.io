@@ -16,7 +16,7 @@ The Clifford algebra, its universal property and the fundamental relation are fr
 **Theorem.** The subspace $\mathrm{Cl}_2(V,\mathfrak{Q})$ of bivectors is closed under the commutator $[A,B]=AB-BA$, and the map
 
 $$
-\lambda:\mathrm{Cl}_2(V,\mathfrak{Q})\longrightarrow\mathrm{SO}(V,\mathfrak{Q}),\qquad \lambda(B)=\operatorname{ad}_B,\qquad \operatorname{ad}_B(v)=Bv-vB,
+\boxed{\;\lambda:\mathrm{Cl}_2(V,\mathfrak{Q})\longrightarrow\mathrm{SO}(V,\mathfrak{Q}),\qquad \lambda(B)=\operatorname{ad}_B,\qquad \operatorname{ad}_B(v)=Bv-vB\;},
 $$
 
 is an isomorphism of Lie algebras onto the orthogonal Lie algebra, the bracket being the commutator of endomorphisms on the right. The image consists of the skew endomorphisms, that is of those $f$ with $B(fv,w)+B(v,fw)=0$ for all $v,w$.
@@ -34,7 +34,7 @@ is an isomorphism of Lie algebras onto the orthogonal Lie algebra, the bracket b
 **Theorem (the infinitesimal spin representation).** The map
 
 $$
-\rho_*:\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S),\qquad \rho_*(\operatorname{ad}_B)=\gamma(B),
+\boxed{\;\rho_*:\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S),\qquad \rho_*(\operatorname{ad}_B)=\gamma(B)\;},
 $$
 
 where $\gamma(B)$ denotes left multiplication by the bivector $B$ on $S$, is a well-defined representation of the orthogonal Lie algebra on $S$, and it is the differential of the spin representation of the spin group.
@@ -91,7 +91,7 @@ each of multiplicity one, independently of whether $n$ is even or odd.
 **Theorem (the chiral splitting).** Let $n=2m$ and let $\omega=e_1e_2\cdots e_{2m}$ be the volume element, of square $\omega^2=(-1)^m$, central in the even part. The action of $\gamma(\omega)$ on $S$ is diagonalisable with the two eigenvalues $\pm\zeta$, where $\zeta^2=(-1)^m$ is a fixed square root; its eigenspaces
 
 $$
-S^\pm=\{\psi\in S:\gamma(\omega)\psi=\pm\zeta\,\psi\}
+\boxed{\;S^\pm=\{\psi\in S:\gamma(\omega)\psi=\pm\zeta\,\psi\}\;}
 $$
 
 are the **half-spinor modules**, have dimension $2^{m-1}$ each, and their weights are the vectors $\tfrac12(\pm\epsilon_1\pm\cdots\pm\epsilon_m)$ with an even number of minus signs for one of them and an odd number for the other.

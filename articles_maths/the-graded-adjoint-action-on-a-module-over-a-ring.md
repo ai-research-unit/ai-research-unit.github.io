@@ -26,7 +26,7 @@ The **grade involution** of the ring acts on homogeneous elements by $a\mapsto (
 **Theorem.** For a homogeneous operator $T$ the adjoint $T^{*}$ defined by $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$ is homogeneous of degree $\lvert T\rvert$, and for homogeneous $S, T$
 
 $$
-(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}, \qquad (T^{*})^{*} = T, \qquad \mathrm{id}^{*} = \mathrm{id} .
+\boxed{\;(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}, \qquad (T^{*})^{*} = T, \qquad \mathrm{id}^{*} = \mathrm{id}\;} .
 $$
 
 The adjoint is a **graded involution**: it is anti-multiplicative up to the Koszul sign.
@@ -60,7 +60,7 @@ it satisfies the graded Leibniz rule in the variable $x$ with the sign $(-1)^{\l
 **Theorem (the graded Lie structure).** The adjoint action satisfies the graded antisymmetry and the graded Jacobi identity,
 
 $$
-\operatorname{ad}_x(y) = -(-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y(x), \qquad \operatorname{ad}_x\operatorname{ad}_y - (-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y\operatorname{ad}_x = \operatorname{ad}_{\operatorname{ad}_x(y)} ,
+\boxed{\;\operatorname{ad}_x(y) = -(-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y(x), \qquad \operatorname{ad}_x\operatorname{ad}_y - (-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y\operatorname{ad}_x = \operatorname{ad}_{\operatorname{ad}_x(y)}\;} ,
 $$
 
 so the graded commutator turns $A$ into a **graded Lie algebra** and $\operatorname{ad}$ is a representation of it by graded derivations, with kernel the graded centre $Z_{\mathrm{gr}}(A)$.
@@ -70,7 +70,7 @@ so the graded commutator turns $A$ into a **graded Lie algebra** and $\operatorn
 **Proposition (compatibility with an involution).** Let $\sigma$ be an involution of $A$ of degree zero commuting with the grade involution $\alpha$. Then
 
 $$
-\operatorname{ad}_x^{*_\sigma} = -\operatorname{ad}_{\delta(x)} , \qquad \delta = \sigma\alpha ,
+\boxed{\;\operatorname{ad}_x^{*_\sigma} = -\operatorname{ad}_{\delta(x)} , \qquad \delta = \sigma\alpha\;} ,
 $$
 
 with respect to the twisted pairing: the adjoint of the adjoint action is the adjoint action of $-\delta(x)$, so the adjoint action is skew-adjoint exactly when $\delta(x) = -x$.

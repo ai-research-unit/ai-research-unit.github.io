@@ -34,7 +34,7 @@ applied with $\beta = d\alpha$ and with $u, v \in \xi$, gives $\alpha(w)\,d\alph
 **Proposition.** Let $\alpha$ be a contact form and let $f \in C^\infty(M)$ be nowhere vanishing. Then $f\alpha$ is a contact form, and
 
 $$
-(f\alpha)\wedge\bigl(d(f\alpha)\bigr)^{\wedge n} = f^{\,n+1}\, \alpha\wedge(d\alpha)^{\wedge n}.
+\boxed{\;(f\alpha)\wedge\bigl(d(f\alpha)\bigr)^{\wedge n} = f^{\,n+1}\, \alpha\wedge(d\alpha)^{\wedge n}\;}.
 $$
 
 Consequently the contact structure $\xi = \ker\alpha$ depends only on the defining form up to multiplication by a nowhere vanishing function, while the form itself does not.
@@ -80,7 +80,7 @@ Then $d\alpha = \sum_i dq^i\wedge dp_i$ is the pullback of the standard symplect
 **Theorem (Darboux for contact forms).** Let $\alpha$ be a contact form on a manifold of dimension $2n+1$. About every point there is a chart $(U, x_1, \ldots, x_n, y_1, \ldots, y_n, z)$ centred at the point in which
 
 $$
-\alpha = dz + \sum_{i=1}^{n} x_i\, dy_i .
+\boxed{\;\alpha = dz + \sum_{i=1}^{n} x_i\, dy_i\;} .
 $$
 
 Consequently every contact manifold of dimension $2n+1$ is locally contactomorphic to $(\mathbb{R}^{2n+1}, \ker\alpha_0)$.
@@ -110,7 +110,7 @@ one solves it by looking for $X_t$ with $\alpha_t(X_t) = 0$, that is with $X_t$ 
 **Definition.** Let $\alpha$ be a contact form on a manifold of dimension $2n+1$. The **Reeb vector field** of $\alpha$ is the unique vector field $R_\alpha$ with
 
 $$
-\alpha(R_\alpha) = 1, \qquad \iota_{R_\alpha} d\alpha = 0 .
+\boxed{\;\alpha(R_\alpha) = 1, \qquad \iota_{R_\alpha} d\alpha = 0\;} .
 $$
 
 **Proposition.** The Reeb vector field exists and is unique. It is transverse to the contact structure, and it is nowhere vanishing.

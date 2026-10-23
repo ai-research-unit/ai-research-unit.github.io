@@ -54,7 +54,7 @@ The solutions of $\alpha^2 = \alpha$ in $\mathbb{D}$ are $0$, $1$ and the two id
 
 **Theorem (the even symmetries).** The map $f_c$ is even in the strong sense that $f_c(uz) = f_c(z)$ for every unit with $u^2 = 1$, that is for $u \in \{\pm1,\pm j\}$; hence the Fatou and the Julia sets are invariant under each of the four maps $z \mapsto uz$,
 $$
-J_c = uJ_c \qquad (u^2 = 1),
+\boxed{\; J_c = uJ_c \qquad (u^2 = 1) \;},
 $$
 although none of the three nontrivial ones commutes with $f_c$. Among the hyperbolic rotations $\exp(js)$ only $u = 1$ satisfies $u^2 = 1$, so no nontrivial rotation of $SO^+(1,1)$ preserves $J_c$: the invariance is the even symmetry of the family, not a rotation symmetry.
 
@@ -79,7 +79,7 @@ a quadratic polynomial with leading coefficient $u$, and its normalised paramete
 **Theorem (the trace on a hyperbola).** For each $t \neq 0$ the level set $\langle z\rangle_{*} = t$ is an orbit of $SO(1,1)$ and is foliated by the level curves of the two coordinates; the Julia set $J_c$ meets it in the set
 
 $$
-J_c \cap \{\langle z\rangle_{*} = t\} = \left\{z : z_+z_- = t,\ (z_+ \in J_+ \text{ or } z_- \in J_-)\right\} ,
+\boxed{\; J_c \cap \{\langle z\rangle_{*} = t\} = \left\{z : z_+z_- = t,\ (z_+ \in J_+ \text{ or } z_- \in J_-)\right\} \;},
 $$
 
 a union of the two coordinate-line families restricted to the hyperbola. On the null lines $t = 0$ the description degenerates: the hyperbola splits into the two null lines, and the two families of coordinate lines coincide with them.
@@ -89,7 +89,7 @@ a union of the two coordinate-line families restricted to the hyperbola. On the 
 **Theorem (the dimension).** For every $c \in \mathbb{D}$ the Hausdorff dimension of the split Julia set is
 
 $$
-\dim_H J_c = 1 + \max\{\dim_H J_+,\ \dim_H J_-\} ,
+\boxed{\; \dim_H J_c = 1 + \max\{\dim_H J_+,\ \dim_H J_-\} \;},
 $$
 
 whenever the two real Julia sets are nonempty, the product rule $\dim_H(A\times\mathbb{R}) = \dim_H A + 1$ for $A \subseteq \mathbb{R}$ being that of *Fractal Geometry*, and the dimension of a finite union being the maximum. If one of the real Julia sets is empty the corresponding product is absent, and if both are empty the set is empty.

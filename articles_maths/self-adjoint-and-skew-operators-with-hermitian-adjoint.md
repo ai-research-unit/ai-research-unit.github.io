@@ -36,7 +36,7 @@ so that $\mathrm{End}_A(S)$ is a $\ast$-algebra. The adjoint is **contravariant*
 **Theorem (the decomposition).** If $2$ is invertible in the ground ring, every operator is the sum of its **self-adjoint part** and its **skew-adjoint part**,
 
 $$
-T = H(T) + K(T), \qquad H(T) = \tfrac12(T+T^{\ast}), \qquad K(T) = \tfrac12(T-T^{\ast}),
+\boxed{\;T = H(T) + K(T), \qquad H(T) = \tfrac12(T+T^{\ast}), \qquad K(T) = \tfrac12(T-T^{\ast})\;},
 $$
 
 with $H(T)^{\ast} = H(T)$ and $K(T)^{\ast} = -K(T)$; the parts are unique, and $T$ is self-adjoint iff $K(T) = 0$ and skew-adjoint iff $H(T) = 0$. So
@@ -62,7 +62,7 @@ $$
 verified on the regular module. Consequently
 
 $$
-[\mathrm{Herm},\mathrm{Herm}]\subseteq\mathrm{Skew}, \qquad [\mathrm{Herm},\mathrm{Skew}]\subseteq\mathrm{Herm}, \qquad [\mathrm{Skew},\mathrm{Skew}]\subseteq\mathrm{Skew},
+\boxed{\;[\mathrm{Herm},\mathrm{Herm}]\subseteq\mathrm{Skew}, \qquad [\mathrm{Herm},\mathrm{Skew}]\subseteq\mathrm{Herm}, \qquad [\mathrm{Skew},\mathrm{Skew}]\subseteq\mathrm{Skew}\;},
 $$
 
 so the skew-adjoint part is closed under the commutator and is a **Lie algebra**, while the commutator couples the two parts with the signs of a **graded Lie algebra**. All three inclusions were checked: with generic self-adjoint operators $H_1,H_2$ and generic skew-adjoint $K_1,K_2$ the commutators $[H_1,H_2]$, $[H_1,K_2]$, $[K_1,K_2]$ landed in $\mathrm{Skew}$, $\mathrm{Herm}$, $\mathrm{Skew}$ respectively.
@@ -88,7 +88,7 @@ and it is commutative and satisfies the Jordan identity, so the self-adjoint par
 **Theorem (the two parts are orthogonal).** With respect to the **Hilbert–Schmidt form** $\langle S,T\rangle_{HS} = \mathrm{Sc}(S^{\ast}T)$ on the operators, the real part of the product of a self-adjoint and a skew-adjoint operator vanishes,
 
 $$
-\mathrm{Re}\,\langle H,K\rangle_{HS} = 0 \qquad (H^{\ast} = H,\ K^{\ast} = -K),
+\boxed{\;\mathrm{Re}\,\langle H,K\rangle_{HS} = 0 \qquad (H^{\ast} = H,\ K^{\ast} = -K)\;},
 $$
 
 verified on the regular module. So the splitting $\mathrm{End} = \mathrm{Herm}\oplus\mathrm{Skew}$ is an **orthogonal** decomposition for the Hilbert–Schmidt form; the Hilbert-Schmidt form is positive definite exactly when the module form and the trace form are, that is, in the compact definite case.

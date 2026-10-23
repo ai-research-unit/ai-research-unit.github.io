@@ -22,7 +22,7 @@ the parameter replaced by its grade-twisted Clifford conjugate; the involution o
 **Theorem.** For the standard form the adjoint of the signed left multiplication is the signed left multiplication by the twisted conjugate,
 
 $$
-\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\alpha\,L_{\hat a}=\mathrm{L}^{\alpha}_{\alpha(\hat a)} .
+\boxed{\;\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\alpha\,L_{\hat a}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}\;} .
 $$
 
 The map $a\mapsto\alpha(\hat a)$ is an anti-automorphism and an involution of the algebra, it is the composite $\alpha\circ\hat{}$ of the grade involution with the Clifford conjugation, on a vector it acts by $\alpha(\vec u)=\alpha(-u)=u$, and the adjoint correspondence is an involution of the signed family.
@@ -40,7 +40,7 @@ The map $a\mapsto\alpha(\hat a)$ is an anti-automorphism and an involution of th
 **Proposition (isometry).** The signed left multiplication is an isometry of the standard form,
 
 $$
-\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}\mathrm{L}^{\alpha}_a=\operatorname{id} ,
+\boxed{\;\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}\mathrm{L}^{\alpha}_a=\operatorname{id}\;} ,
 $$
 
 if and only if $\hat aa=1$; the condition is the same as the orthogonality condition of the ordinary left multiplication $L_a$, so the signed and the ordinary multiplication by $a$ are isometric simultaneously, and the isometric elements form a subgroup of the units containing $\pm1$ and closed under $a\mapsto\hat a$.
@@ -79,7 +79,7 @@ so for the twisted form the parameter involution is the Clifford conjugation $\h
 **Proposition.** The signed sandwich factors as $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_a\,R_b$, and the adjoint of the factor is a factor of the adjoint,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}R_b^{*} = \mathrm{L}^{\alpha}_{\alpha(\hat a)}R_{\hat b} ,
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}R_b^{*} = \mathrm{L}^{\alpha}_{\alpha(\hat a)}R_{\hat b}\;} ,
 $$
 
 which is the decomposition of the signed-sandwich adjoint $\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ into its two factors; in particular the self-adjointness of the left factor is the special case $\alpha(\hat a)=a$ of the left parameter of a self-adjoint sandwich.

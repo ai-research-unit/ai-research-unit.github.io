@@ -15,7 +15,7 @@ The article assumes the smooth real structure, the real points and the descent o
 **Definition.** A **real structure** on a Riemannian manifold $(M, g)$ is an isometric involution,
 
 $$
-\sigma : M \longrightarrow M, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma^*g = g,
+\boxed{\;\sigma : M \longrightarrow M, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma^*g = g\;},
 $$
 
 that is a smooth involution which is an isometry; its **real points** are the fixed points
@@ -35,7 +35,7 @@ and the real structure is **free** when $M^\sigma$ is empty. The involution is t
 **Theorem.** Each connected component of the real points $M^\sigma$ is a **totally geodesic** submanifold of $(M, g)$; at a real point $p$ the tangent space splits as
 
 $$
-T_pM = V_+\oplus V_-, \qquad d\sigma_p = +\mathrm{id}\ \text{on}\ V_+, \qquad d\sigma_p = -\mathrm{id}\ \text{on}\ V_-,
+\boxed{\;T_pM = V_+\oplus V_-, \qquad d\sigma_p = +\mathrm{id}\ \text{on}\ V_+, \qquad d\sigma_p = -\mathrm{id}\ \text{on}\ V_-\;},
 $$
 
 with $V_+ = T_pM^\sigma$; the real points have codimension equal to the multiplicity of the eigenvalue $-1$ of $d\sigma_p$, they are the singular locus of the quotient $M/\sigma$, and the normal exponential map is a diffeomorphism onto a tubular neighbourhood on which the involution acts as $\xi\mapsto-\xi$.

@@ -55,7 +55,7 @@ Four additions are the substance of the article. **Continuity is a hypothesis**,
 **Theorem (criterion).** Let the topology of $A$ be linear with the two-sided ideals $I_0 \supseteq I_1 \supseteq \cdots$ a fundamental system of neighbourhoods of $0$, and let $\sigma$ be a $\varsigma$-semilinear involution of $A$. Then $\sigma$ is continuous if and only if
 
 $$
-\text{for every } n \text{ there is } m \text{ with } \sigma(I_m) \subseteq I_n .
+\boxed{\;\text{for every } n \text{ there is } m \text{ with } \sigma(I_m) \subseteq I_n\;} .
 $$
 
 **Proof.** If $\sigma$ is continuous then $\sigma^{-1}(I_n)$ is a neighbourhood of $0$, so it contains some $I_m$, which says $\sigma(I_m) \subseteq I_n$. Conversely suppose the condition holds and let $\Omega$ be a neighbourhood of $0$; some $I_n$ is contained in $\Omega$, and for that $n$ the inclusion $\sigma(I_m) \subseteq I_n \subseteq \Omega$ shows that $\sigma^{-1}(\Omega)$ contains the neighbourhood $I_m$ of $0$, so $\sigma$ is continuous at $0$ and hence continuous.
@@ -141,7 +141,7 @@ $$
 are continuous idempotent $R^\varsigma$-linear endomorphisms of the $R^\varsigma$-module $A$ with $\pi_1 + \pi_2 = \mathrm{id}_A$, $\pi_1\pi_2 = \pi_2\pi_1 = 0$, images $A^+$ and $A^-$ and kernels $A^-$ and $A^+$. Consequently
 
 $$
-A \cong A^+ \times A^-
+\boxed{\;A \cong A^+ \times A^-\;}
 $$
 
 as topological $R^\varsigma$-modules, $A$ is the topological direct sum of its symmetric and its skew part, and $A^+$ is a retract of $A$. The projection $\pi_1$ is multiplicative, that is an algebra homomorphism, exactly when $\sigma$ is multiplicative, that is for an involutive automorphism or for a commutative $A$; otherwise the splitting is a splitting of modules and not of algebras.
@@ -205,7 +205,7 @@ In this section $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $A$ is a $\mathbb{
 **Theorem (the norm is determined by the involution).** Let $A$ be a unital $\mathrm{C}^*$-algebra. Then
 
 $$
-\|a\|^2 = \|a^*a\| = r(a^*a) = \sup\{|\lambda| : \lambda \in \sigma(a^*a)\} ,
+\boxed{\;\|a\|^2 = \|a^*a\| = r(a^*a) = \sup\{|\lambda| : \lambda \in \sigma(a^*a)\}\;} ,
 $$
 
 so the norm of $a$ is computed from the *-algebra structure of $A$ alone. Consequently a unital *-algebra carries at most one norm making it a $\mathrm{C}^*$-algebra, and the topology of a $\mathrm{C}^*$-algebra is determined by its involutive algebra structure: on a $\mathrm{C}^*$-algebra the involution determines the topology it is continuous for, and "$\mathrm{C}^*$-algebra" is a property of a *-algebra and not a structure added to one.

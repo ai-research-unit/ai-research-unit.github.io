@@ -34,9 +34,11 @@ $$
 and the color channels are recovered by
 
 $$
+\boxed{\;
 A_{\mathrm R}=\frac{A_{(1)}+A_{(2)}}{2i},\qquad
 A_{\mathrm G}=\operatorname{Re}\frac{A_{(1)}-A_{(2)}}{2},\qquad
-A_{\mathrm B}=\operatorname{Im}\frac{A_{(1)}-A_{(2)}}{2}.
+A_{\mathrm B}=\operatorname{Im}\frac{A_{(1)}-A_{(2)}}{2}
+\;}.
 $$
 
 **Remark (the real part).** The encoding uses three of the four real coordinates; the fourth, $A_0$, is zero. The t-product and the t-SVD are taken over the full algebra, and a product or an approximation of pure tensors need not be pure: the real part is a residual, not a color channel. **The color reconstruction reads the coefficients of $i,j,ij$ and discards the real part.** The source's model uses the same pure encoding.
@@ -70,7 +72,9 @@ with $S_k$ f-diagonal, so the number of reduced biquaternion entries is $n_3k(n_
 **The compression ratio.** Relative to the encoded tensor, the ratio is
 
 $$
-\rho_{\mathrm{tensor}}=\frac{n_1n_2}{k(n_1+n_2+1)},
+\boxed{\;
+\rho_{\mathrm{tensor}}=\frac{n_1n_2}{k(n_1+n_2+1)}
+\;},
 $$
 
 and relative to the original RGB video it is
@@ -132,7 +136,9 @@ The inverse is computed by the criterion of *Zero Divisors of the Reduced Biquat
 **The general case.** If $H$ is not a unit, the equation may have no exact solution, and one takes the minimum-norm least-squares solution of *Tensor Equations over the Reduced Biquaternions*,
 
 $$
-X=H^\dagger\ast B,
+\boxed{\;
+X=H^\dagger\ast B
+\;},
 $$
 
 or the Tikhonov solution

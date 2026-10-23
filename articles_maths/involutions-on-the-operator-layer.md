@@ -12,9 +12,9 @@ The operator layer of a group carries two operations that arise from the inversi
 **Definition (the natural pairing).** The **natural pairing** of the category is the bilinear form
 
 $$
-\langle\,\cdot\,,\,\cdot\,\rangle : k[G]\times k[G]\longrightarrow k,
+\boxed{\;\langle\,\cdot\,,\,\cdot\,\rangle : k[G]\times k[G]\longrightarrow k,
 \qquad
-\Bigl\langle \sum_g x_g\,g,\ \sum_h y_h\,h\Bigr\rangle=\sum_g x_g\,y_g,
+\Bigl\langle \sum_g x_g\,g,\ \sum_h y_h\,h\Bigr\rangle=\sum_g x_g\,y_g\;},
 $$
 
 so that $\langle g,h\rangle=\delta_{g,h}$ and the basis $G$ is orthonormal.
@@ -40,7 +40,7 @@ $$
 **Proposition (the adjoint is an involution of the operator algebra).** For all $S,T\in\operatorname{End}_k(k[G])$ and $\lambda\in k$: $\mathrm{id}^{*}=\mathrm{id}$; $(T^{*})^{*}=T$; $(T+\lambda S)^{*}=T^{*}+\lambda S^{*}$; $(\lambda T)^{*}=\lambda T^{*}$; and
 
 $$
-(ST)^{*}=T^{*}S^{*}.
+\boxed{\;(ST)^{*}=T^{*}S^{*}\;}.
 $$
 
 Consequently the adjoint is an **anti-involution** of $\operatorname{End}_k(k[G])$ of order two: it reverses the order of composition.
@@ -70,7 +70,7 @@ Consequently the adjoint is an **anti-involution** of $\operatorname{End}_k(k[G]
 **Proposition (the conjugation by the inversion).** $\mathrm{ad}_{\iota}$ is an automorphism of $\operatorname{End}_k(k[G])$ of order two; it respects the adjoint, $\mathrm{ad}_{\iota}(T^{*})=\mathrm{ad}_{\iota}(T)^{*}$; and it exchanges the translations,
 
 $$
-\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}, \qquad \mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}.
+\boxed{\;\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}, \qquad \mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}\;}.
 $$
 
 **Proof.** Conjugation by an invertible operator is an automorphism of the operator algebra, and $\Sigma_{\iota}^{2}=\mathrm{id}$ gives order two. Since $\Sigma_{\iota}$ is self-adjoint, $\mathrm{ad}_{\iota}(T)^{*}=(\Sigma_{\iota}T\Sigma_{\iota})^{*}=\Sigma_{\iota}^{*}T^{*}\Sigma_{\iota}^{*}=\Sigma_{\iota}T^{*}\Sigma_{\iota}=\mathrm{ad}_{\iota}(T^{*})$. For the translations, $\mathrm{ad}_{\iota}(L_a)(x)=\iota(a\,\iota(x))=x\,a^{-1}=R_{a^{-1}}(x)$.

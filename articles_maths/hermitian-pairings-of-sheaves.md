@@ -44,7 +44,7 @@ for all sections $s$ of $\mathcal{F}$ and $t$ of $\mathcal{G}$ over the same ope
 **Theorem (existence and the dagger laws).** If the Hermitian structures are nondegenerate, every morphism $T:\mathcal{F}\to\mathcal{G}$ has a unique adjoint $T^{\dagger}:\mathcal{G}\to\mathcal{F}$, and the dagger satisfies
 
 $$
-(T^{\dagger})^{\dagger}=T,\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T+S)^{\dagger}=T^{\dagger}+S^{\dagger},\qquad (aT)^{\dagger}=\sigma(a)T^{\dagger},
+\boxed{\;(T^{\dagger})^{\dagger}=T,\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T+S)^{\dagger}=T^{\dagger}+S^{\dagger},\qquad (aT)^{\dagger}=\sigma(a)T^{\dagger}\;},
 $$
 
 for composable morphisms and sections $a$ of $\mathcal{O}_X$; the dagger is therefore a $\sigma$-semilinear anti-involution of the sheaf of endomorphisms.
@@ -64,7 +64,7 @@ for composable morphisms and sections $a$ of $\mathcal{O}_X$; the dagger is ther
 **Theorem (the endomorphism sheaf is an involutive sheaf of rings).** The dagger is a $\sigma$-semilinear anti-involution of the sheaf of algebras $\mathcal{E}nd(\mathcal{F})$, so that $\mathcal{E}nd(\mathcal{F})$ is an involutive sheaf of rings in the sense of *The Involution on the Structure Sheaf*: its fixed part is the subsheaf $\mathcal{H}(\mathcal{F})$ of Hermitian endomorphisms and its anti-invariant part the subsheaf $\mathcal{S}(\mathcal{F})$ of skew-adjoint endomorphisms. If $2$ is invertible in $\mathcal{O}_X(X)$,
 
 $$
-\mathcal{E}nd(\mathcal{F})=\mathcal{H}(\mathcal{F})\oplus\mathcal{S}(\mathcal{F}),\qquad T=\tfrac12(T+T^{\dagger})+\tfrac12(T-T^{\dagger}),
+\boxed{\;\mathcal{E}nd(\mathcal{F})=\mathcal{H}(\mathcal{F})\oplus\mathcal{S}(\mathcal{F}),\qquad T=\tfrac12(T+T^{\dagger})+\tfrac12(T-T^{\dagger})\;},
 $$
 
 the Hermitian part is closed under the **Jordan product** $T\bullet S=\frac12(TS+ST)$ and is a sheaf of Jordan algebras, and the skew part is closed under the **commutator** $[T,S]=TS-ST$ and is a sheaf of Lie algebras.
@@ -78,7 +78,7 @@ the Hermitian part is closed under the **Jordan product** $T\bullet S=\frac12(TS
 **Theorem (involutions and the eigensheaf decomposition).** Let $T$ be unitary with $T^2=\mathrm{id}$. Then $T$ is self-adjoint, $T^{\dagger}=T$, and if $2$ is invertible the sheaf decomposes as the direct sum of the eigensheaves
 
 $$
-\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{1,2}=\tfrac12(\mathrm{id}\pm T),
+\boxed{\;\mathcal{F}=\mathcal{F}_+\oplus\mathcal{F}_-,\qquad \mathcal{F}_{\pm}=\ker(T\mp\mathrm{id}),\qquad \pi_{1,2}=\tfrac12(\mathrm{id}\pm T)\;},
 $$
 
 the projections being morphisms of sheaves with $\pi_1+\pi_2=\mathrm{id}$ and $\pi_1\pi_2=0$.

@@ -29,7 +29,7 @@ $$
 **Theorem (the plain shell is not a group).** Neither set is closed under multiplication. The quadratic form $\mathfrak{Q}$ is not multiplicative:
 
 $$
-\mathfrak{Q}(\tilde Q_4\tilde Q_3)\neq \mathfrak{Q}(\tilde Q_4)\mathfrak{Q}(\tilde Q_3)\quad\text{in general},
+\boxed{\; \mathfrak{Q}(\tilde Q_4\tilde Q_3)\neq \mathfrak{Q}(\tilde Q_4)\mathfrak{Q}(\tilde Q_3)\quad\text{in general} \;},
 $$
 
 and the difference is not a sign that a normalisation could absorb.
@@ -62,7 +62,7 @@ because $\langle\psi(\tilde Q_4)\rangle_{\natural}=Q_{4t}^{2}+(iQ_{4x})^{2}+(iQ_
 **Theorem (what is a group here).** The set
 
 $$
-\{\pm\mathrm{Ad}_{\tilde Q_4}:\tilde Q_4\in\mathbb{B}^{\times}\}\cong\bigl(\mathbb{B}^{\times}/\mathbb{C}^{\times}\bigr)\times\{\pm1\}
+\boxed{\; \{\pm\mathrm{Ad}_{\tilde Q_4}:\tilde Q_4\in\mathbb{B}^{\times}\}\cong\bigl(\mathbb{B}^{\times}/\mathbb{C}^{\times}\bigr)\times\{\pm1\} \;}
 $$
 
 is a subgroup of the group of isometries of the plain form, and it is the whole contribution of the algebra to that group.
@@ -110,7 +110,7 @@ $$
 Consequently $\ker\bigl(\mathbb{B}^{\times}\to\mathrm{Inn}(\mathbb{B})\bigr)=\mathbb{C}^{\times}$, the action fixes the centre pointwise, and
 
 $$
-\mathrm{Inn}(\mathbb{B})=\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C}),
+\boxed{\; \mathrm{Inn}(\mathbb{B})=\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C}) \;},
 $$
 
 acting on $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus V$ by the identity on the centre and by rotations of the traceless subspace $V$, of determinant one.
@@ -126,7 +126,7 @@ $$
 meets every class of $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ in exactly the pair $\pm\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}$, verified together with $\langle\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}\rangle_{\natural}=1$ and $\mathrm{Ad}_{\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}}=\mathrm{Ad}_{\tilde Q_4}$, and
 
 $$
-\mathrm{SL}_2(\mathbb{C})/\{\pm e_t\}\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C}),
+\boxed{\; \mathrm{SL}_2(\mathbb{C})/\{\pm e_t\}\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C}) \;},
 $$
 
 the classical two-to-one cover. The spin group of the plain form is therefore the same group as the spin group of the quaternionic form, $\mathrm{SL}_2(\mathbb{C})$; what differs is its origin. There it is the set of parameters on which the sandwich is an isometry; here it is a section of the central quotient, chosen by the multiplicative norm of the algebra and not by the form of the article.

@@ -35,7 +35,7 @@ $$
 **Theorem.** The conjugation is an algebra automorphism of $\operatorname{End}_{k}(V)$ of order two:
 
 $$
-\operatorname{Ad}_{\sigma}^{2} = \mathrm{id}, \qquad \operatorname{Ad}_{\sigma}(S + T) = \operatorname{Ad}_{\sigma}(S) + \operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(ST) = \operatorname{Ad}_{\sigma}(S)\operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(\mathrm{id}) = \mathrm{id}.
+\boxed{\;\operatorname{Ad}_{\sigma}^{2} = \mathrm{id}, \qquad \operatorname{Ad}_{\sigma}(S + T) = \operatorname{Ad}_{\sigma}(S) + \operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(ST) = \operatorname{Ad}_{\sigma}(S)\operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(\mathrm{id}) = \mathrm{id}\;}.
 $$
 
 Its fixed points are the operators commuting with $\sigma$: $\operatorname{Ad}_{\sigma}(T) = T$ if and only if $\sigma T = T\sigma$. It is an **inner** automorphism, represented by the unit $\sigma$ of the algebra of operators, and it is not the identity unless $\sigma$ is central in $\operatorname{End}_{k}(V)$, which happens exactly when $\sigma$ is a scalar endomorphism.
@@ -45,7 +45,7 @@ Its fixed points are the operators commuting with $\sigma$: $\operatorname{Ad}_{
 **Corollary (the decomposition).** If $2$ is invertible in $k$, every operator splits uniquely as
 
 $$
-T = \frac{T + \operatorname{Ad}_{\sigma}(T)}{2} + \frac{T - \operatorname{Ad}_{\sigma}(T)}{2},
+\boxed{\;T = \frac{T + \operatorname{Ad}_{\sigma}(T)}{2} + \frac{T - \operatorname{Ad}_{\sigma}(T)}{2}\;},
 $$
 
 the first summand equivariant and the second anti-equivariant, meaning fixed by $\operatorname{Ad}_{\sigma}$ up to the sign $-1$. The two summands are the projections onto the fixed and the anti-fixed subalgebras along the two eigenspaces of the involution $\operatorname{Ad}_{\sigma}$ of the operator algebra.
@@ -69,7 +69,7 @@ the first summand equivariant and the second anti-equivariant, meaning fixed by 
 **Theorem.** An equivariant operator preserves the fixed and the anti-fixed submodules: if $T\sigma = \sigma T$ then $T(V^{\sigma}) \subseteq V^{\sigma}$ and $T(V^{-\sigma}) \subseteq V^{-\sigma}$. Conversely, if $2$ is invertible and a linear operator preserves the two eigenspaces of $\sigma$, then it is equivariant. When $2$ is invertible, the algebra $\operatorname{End}_{k}(V)^{\sigma}$ of equivariant operators is the direct sum of the two endomorphism algebras of the eigenspaces,
 
 $$
-\operatorname{End}_{k}(V)^{\sigma} \;\cong\; \operatorname{End}_{k}(V^{\sigma}) \oplus \operatorname{End}_{k}(V^{-\sigma}),
+\boxed{\;\operatorname{End}_{k}(V)^{\sigma} \;\cong\; \operatorname{End}_{k}(V^{\sigma}) \oplus \operatorname{End}_{k}(V^{-\sigma})\;},
 $$
 
 as algebras, and the fixed elements of the involution $\sigma$ are the elements of $V^{\sigma}$.

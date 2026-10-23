@@ -70,8 +70,8 @@ with the divergence, gradient and curl taken for the indefinite form $N|_V$. Lef
 $$
 \boxed{\;
 \{ I \in V : I^2 = -1 \} = \{ I \in V : \langle I\rangle_{\natural} = 1 \} = \{ q_x \vec e_x + q_y \vec e_y + q_z \vec e_z : q_x^2 - q_y^2 - q_z^2 = 1 \}
-\;}
-$$,
+\;},
+$$
 
 a **two-sheeted hyperboloid** of dimension $2$ in $V$, with the two sheets distinguished by the sign of the coefficient $q_x$. Each imaginary unit spans a slice $\mathbb{C}_I \cong \mathbb{C}$, and two slices $\mathbb{C}_I$, $\mathbb{C}_J$ coincide when $I = \pm J$ and otherwise meet only in $\mathbb{R}$.
 
@@ -86,8 +86,8 @@ This is the first departure from the quaternion theory, where the imaginary unit
 $$
 \boxed{\;
 \nabla F = (\partial/\partial q_t + I\,\partial/\partial\rho)F = 2\,\partial/\partial\bar A\,F
-\;}
-$$,
+\;},
+$$
 
 so $F$ is regular if and only if $F$ is holomorphic in $A$ in the classical sense. Hence every classical holomorphic function of $A = q_t+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.
 
@@ -142,8 +142,8 @@ and the second sum is not a scalar multiple of $\vec u$ but has the nonzero vect
 $$
 \boxed{\;
 \mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde q^j \mathcal{M}_{k-j}
-\;}
-$$,
+\;},
+$$
 
 so every Fueter-regular function on a ball has a normally convergent expansion in monogenic homogeneous polynomials, the analogue of the Taylor series of complex analysis.
 

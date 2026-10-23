@@ -83,7 +83,7 @@ Then $C$ is closed, and $C \subseteq \Omega_s$: if $x \in C$ and $x \notin \Omeg
 
 **(iii)** every open cover of $X$ has an open **star refinement** $\mathcal{V}$: for every $V \in \mathcal{V}$ the star
 $$
-\operatorname{st}(V, \mathcal{V}) = \bigcup \{\, V' \in \mathcal{V} : V' \cap V \neq \emptyset \,\}
+\boxed{\;\operatorname{st}(V, \mathcal{V}) = \bigcup \{\, V' \in \mathcal{V} : V' \cap V \neq \emptyset \,\}\;}
 $$
 is contained in some member of the cover;
 

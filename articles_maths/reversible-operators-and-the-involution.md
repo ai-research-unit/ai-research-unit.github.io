@@ -37,7 +37,7 @@ the involution being **unitary** ($C^*=C^{-1}=C$, so that $C$ is a self-adjoint 
 **Theorem (the spectrum is inversion-invariant).** Let $(A,C)$ be reversible. Then the spectrum is invariant under inversion,
 
 $$
-\lambda\in\operatorname{spec}(A)\iff \lambda^{-1}\in\operatorname{spec}(A),
+\boxed{\;\lambda\in\operatorname{spec}(A)\iff \lambda^{-1}\in\operatorname{spec}(A)\;},
 $$
 
 and the point spectrum has the eigenvector pairing: if $Av_\lambda=\lambda v_\lambda$ then $A(Cv_\lambda)=\lambda^{-1}(Cv_\lambda)$ when $C$ is a unitary involution. In the anti-unitary case the same holds with $\lambda^{-1}$ replaced by $\overline{\lambda}^{-1}$, and the spectrum is additionally invariant under complex conjugation.
@@ -51,7 +51,7 @@ and the point spectrum has the eigenvector pairing: if $Av_\lambda=\lambda v_\la
 **Theorem (the isotypic splitting for a commuting involution).** Let $\sigma$ be a unitary involution with $\sigma A=A\sigma$. Then $A$ preserves the eigenspaces $H_+=H_+(\sigma)$ and $H_-=H_-(\sigma)$ of $\sigma$, the space decomposes as the isotypic direct sum $H=H_+\oplus H_-$, and the spectrum is the union
 
 $$
-\operatorname{spec}(A)=\operatorname{spec}(A|_{H_+})\cup\operatorname{spec}(A|_{H_-}),
+\boxed{\;\operatorname{spec}(A)=\operatorname{spec}(A|_{H_+})\cup\operatorname{spec}(A|_{H_-})\;},
 $$
 
 so the symmetric and the antisymmetric modes do not interact; if the involution $C$ reverses $A$ and commutes with $\sigma$, then $C$ exchanges $H_+$ and $H_-$ and pairs the spectra, and the reversible and the equivariant structures coexist.
@@ -73,7 +73,7 @@ so the symmetric and the antisymmetric modes do not interact; if the involution 
 **Theorem (the Koopman operator of a reversible map is reversible).** Let $T$ be an invertible measure-preserving reversible map with reversor $R$ that also preserves the measure. Then the Koopman operator $U_T$ is reversible:
 
 $$
-U_R\,U_T\,U_R=U_T^{-1}=U_T^*,
+\boxed{\;U_R\,U_T\,U_R=U_T^{-1}=U_T^*\;},
 $$
 
 with the unitary involution $C=U_R$; the Perron–Frobenius operator $P_T=U_T^*$ is likewise reversible, $U_RP_TU_R=P_T^{-1}$, and the resonances of the transfer operator come in reciprocal pairs.

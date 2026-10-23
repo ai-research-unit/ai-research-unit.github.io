@@ -164,7 +164,7 @@ for $X \neq 0$: the two middle terms cancel, since $g(X,JX) = g(JX,X)$ by symmet
 **Proposition.** Every almost complex manifold admits a Hermitian metric: if $g_0$ is any Riemannian metric, then
 
 $$
-g(X, Y) = \tfrac12\bigl(g_0(X,Y) + g_0(JX, JY)\bigr)
+\boxed{\;g(X, Y) = \tfrac12\bigl(g_0(X,Y) + g_0(JX, JY)\bigr)\;}
 $$
 
 is Hermitian, and the assignment is a projection onto the Hermitian metrics among all metrics.
@@ -176,7 +176,7 @@ is Hermitian, and the assignment is a projection onto the Hermitian metrics amon
 **Proposition (Wirtinger).** Let $(M,J,g)$ be almost Hermitian with fundamental form $\Omega$ and let $V \subseteq T_xM$ be an oriented real $2k$-plane with oriented orthonormal basis $u_1, \ldots, u_{2k}$. Then
 
 $$
-\bigl| \Omega^{\wedge k}(u_1, \ldots, u_{2k}) \bigr| \leq k!,
+\boxed{\;\bigl| \Omega^{\wedge k}(u_1, \ldots, u_{2k}) \bigr| \leq k!\;},
 $$
 
 with equality if and only if $V$ is a complex subspace, that is $JV = V$.
@@ -208,7 +208,7 @@ that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic
 **Proposition.** The Chern connection is the unique connection on the holomorphic tangent bundle $\nabla : \Gamma(T^{1,0})\to\Omega^1\otimes\Gamma(T^{1,0})$ that is **compatible with the Hermitian metric** in the sense $dh(u,v) = h(\nabla u, v) + h(u,\nabla v)$ and whose $(0,1)$-part is the Dolbeault operator $\bar\partial$; its curvature has **type $(1,1)$**, that is, the curvature $2$-form takes values in the $(1,1)$-forms. In a holomorphic frame the connection matrix is $\theta = h^{-1}\partial h$ and the curvature matrix is
 
 $$
-\Theta = \bar\partial\theta = \bar\partial(h^{-1}\partial h) = -\,h^{-1}\,\bar\partial h\, h^{-1}\wedge \partial h + h^{-1}\,\bar\partial\partial h,
+\boxed{\;\Theta = \bar\partial\theta = \bar\partial(h^{-1}\partial h) = -\,h^{-1}\,\bar\partial h\, h^{-1}\wedge \partial h + h^{-1}\,\bar\partial\partial h\;},
 $$
 
 which is a matrix of $(1,1)$-forms.

@@ -35,7 +35,7 @@ with the projection $\pi : M \to M/\sigma$ sending a point to its orbit.
 **Theorem.** At a point $p$ of the fixed set the differential $d\sigma_p$ is an orthogonal involution of $T_pM$, so it is diagonalisable with the eigenvalues $\pm1$ and the tangent space splits orthogonally:
 
 $$
-T_pM = V_+ \oplus V_-, \qquad d\sigma_p = +\mathrm{id}\ \text{on}\ V_+, \qquad d\sigma_p = -\mathrm{id}\ \text{on}\ V_-,
+\boxed{\;T_pM = V_+ \oplus V_-, \qquad d\sigma_p = +\mathrm{id}\ \text{on}\ V_+, \qquad d\sigma_p = -\mathrm{id}\ \text{on}\ V_-\;},
 $$
 
 with $V_+ = T_p\Sigma$ the tangent space of the fixed component and $V_-$ the **normal direction**. The dimension of the fixed component at $p$ is the multiplicity of the eigenvalue $+1$, and the fixed component is a hypersurface exactly when the eigenvalue $-1$ has multiplicity one.
@@ -51,7 +51,7 @@ with $V_+ = T_p\Sigma$ the tangent space of the fixed component and $V_-$ the **
 **Theorem.** Let $\sigma$ be a fixed-point-free isometric involution of $(M, g)$. Then the orbit space $M/\sigma$ carries a unique smooth structure and a unique Riemannian metric $g_\sigma$ for which the projection $\pi$ is a local isometry and a **two-fold Riemannian covering**,
 
 $$
-\pi^*g_\sigma = g, \qquad \pi(\sigma(x)) = \pi(x),
+\boxed{\;\pi^*g_\sigma = g, \qquad \pi(\sigma(x)) = \pi(x)\;},
 $$
 
 so that $M \to M/\sigma$ is a covering of degree two whose deck transformation group is $\langle\sigma\rangle \cong \mathbb{Z}/2\mathbb{Z}$. Conversely, a connected two-fold Riemannian covering $\pi : M \to N$ has a deck transformation $\sigma$, and $\sigma$ is an isometric involution of $M$ with $N = M/\sigma$.
@@ -93,7 +93,7 @@ the product of the tangent space of the fixed component with the cone over the s
 **Theorem.** The covering $\pi$ is a local isometry, so it preserves the curvature:
 
 $$
-R^{g_\sigma}\bigl(d\pi(X), d\pi(Y)\bigr)d\pi(Z) = d\pi\bigl(R(X, Y)Z\bigr),
+\boxed{\;R^{g_\sigma}\bigl(d\pi(X), d\pi(Y)\bigr)d\pi(Z) = d\pi\bigl(R(X, Y)Z\bigr)\;},
 $$
 
 and it carries the geodesics of $M$ to the geodesics of $M/\sigma$, the sectional curvature, the Ricci curvature, the scalar curvature and the parallel transport being those of $M$ at corresponding points. In the free case the quotient is locally isometric to $M$, so every local invariant of the metric of $M$ is a local invariant of the quotient, and the curvature of the quotient at $\pi(p)$ equals the curvature of $M$ at $p$.

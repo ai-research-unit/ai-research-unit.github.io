@@ -29,7 +29,7 @@ The distinction is the one of the definite layer: for a definite form the self-a
 **Theorem (the decomposition).** Every $T \in B(A)$ is the sum
 
 $$
-T = \tfrac{1}{2}(T + T^{\dagger}) + \tfrac{1}{2}(T - T^{\dagger})
+\boxed{\;T = \tfrac{1}{2}(T + T^{\dagger}) + \tfrac{1}{2}(T - T^{\dagger})\;}
 $$
 
 of a self-adjoint and a skew-adjoint operator, and the two summands are the only such decomposition of $T$ when $2$ is invertible in $k$.
@@ -53,7 +53,7 @@ The proposition is the form-layer reason the spectral theorem is stated for norm
 **Theorem (the sign rule).** Let $S, T \in B(A)$ have adjoint-signs $\epsilon, \delta \in \{+1,-1\}$. Then
 
 $$
-(ST + TS)^{\dagger} = \epsilon\delta\,(ST + TS) , \qquad (ST - TS)^{\dagger} = -\epsilon\delta\,(ST - TS) .
+\boxed{\;(ST + TS)^{\dagger} = \epsilon\delta\,(ST + TS) , \qquad (ST - TS)^{\dagger} = -\epsilon\delta\,(ST - TS)\;} .
 $$
 
 *Proof.* By the anti-multiplicativity, $(ST)^{\dagger} = T^{\dagger}S^{\dagger} = \delta T \cdot \epsilon S = \epsilon\delta\,TS$, and $(TS)^{\dagger} = \epsilon\delta\,ST$. Adding and subtracting give the two assertions.
@@ -105,7 +105,7 @@ $$
 **Theorem (the Cayley transform).** Let $S$ be skew-adjoint and suppose $1 + S$ invertible. Then
 
 $$
-U = (1 - S)(1 + S)^{-1}
+\boxed{\;U = (1 - S)(1 + S)^{-1}\;}
 $$
 
 is unitary, and it is the unique operator with $1 + U$ invertible and $S = (1 - U)(1 + U)^{-1}$.

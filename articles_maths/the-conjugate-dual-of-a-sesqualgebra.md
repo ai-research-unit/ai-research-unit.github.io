@@ -51,7 +51,7 @@ $$
 **Theorem (the topological two-readings).** Let $A$ be a topological sesqualgebra over $(R,\varsigma)$. Then the identity on underlying sets is an isomorphism of topological $R$-modules
 
 $$
-A^{\varsigma*} \;\cong\; (A^{\varsigma})^{*},
+\boxed{\;A^{\varsigma*} \;\cong\; (A^{\varsigma})^{*}\;},
 $$
 
 the ordinary continuous dual of the conjugate module, and it maps the topology of uniform convergence on the compact subsets to itself. In the normed case the isomorphism is an isometry of Banach spaces, and likewise $(A^{\varsigma})^{\varsigma*} \cong A^{*}$.
@@ -97,7 +97,7 @@ equivalently a pairing $A^{\varsigma*} \times A \to R$ that is $R$-linear in the
 **Theorem (the transpose flips the two duals).** Let $f : A \to B$ be a continuous $\varsigma$-semilinear map of topological sesqualgebras over $(R,\varsigma)$. Then the pullback $g \mapsto g \circ f$ is a continuous linear map
 
 $$
-f^{*} : B^{*} \longrightarrow A^{\varsigma*}, \qquad f^{*} : B^{\varsigma*} \longrightarrow A^{*},
+\boxed{\;f^{*} : B^{*} \longrightarrow A^{\varsigma*}, \qquad f^{*} : B^{\varsigma*} \longrightarrow A^{*}\;},
 $$
 
 and the two assignments are the same rule on the two duals.
@@ -113,7 +113,7 @@ and the two assignments are the same rule on the two duals.
 **Theorem (the evaluation is the evaluation of the conjugate module).** The canonical map
 
 $$
-\mathrm{ev} : A \longrightarrow (A^{\varsigma*})^{*}, \qquad \mathrm{ev}_{x}(f) = f(x),
+\boxed{\;\mathrm{ev} : A \longrightarrow (A^{\varsigma*})^{*}, \qquad \mathrm{ev}_{x}(f) = f(x)\;},
 $$
 
 is $\varsigma$-semilinear and continuous; under the identification $(A^{\varsigma*})^{*} \cong (A^{\varsigma})^{**}$ it is the ordinary evaluation of the conjugate module. In the normed case $\mathrm{ev}$ is an isometry.

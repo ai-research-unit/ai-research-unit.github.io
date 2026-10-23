@@ -43,7 +43,7 @@ The theorem is the reason an isometry may be read as an operator: it acts linear
 **Theorem (faithfulness).** Let $M$ be connected. An isometry $F$ of $(M, g)$ is determined by its value $F(p)$ and its differential $dF_p$ at one point $p$. Consequently the assignment
 
 $$
-\operatorname{Isom}(M, g) \longrightarrow \operatorname{Aut}(TM), \qquad F \longmapsto dF,
+\boxed{\;\operatorname{Isom}(M, g) \longrightarrow \operatorname{Aut}(TM), \qquad F \longmapsto dF\;},
 $$
 
 is a faithful representation of the isometry group by bundle automorphisms of the tangent bundle.
@@ -87,7 +87,7 @@ $$
 **Theorem (Myers–Steenrod).** For a connected Riemannian manifold $(M, g)$ the isometry group is a Lie group, its action on $M$ is smooth, and its Lie algebra is the Lie algebra of the Killing fields of $(M, g)$. An isometry is determined by its value and its differential at one point, so
 
 $$
-\dim\operatorname{Isom}(M, g) \leq \frac{n(n+1)}{2}, \qquad n = \dim M .
+\boxed{\;\dim\operatorname{Isom}(M, g) \leq \frac{n(n+1)}{2}, \qquad n = \dim M\;} .
 $$
 
 The theorem is proved in *Riemannian Geometry*, where the group is realised as a closed subgroup of the bundle of orthonormal frames; it is cited here because the operator reading uses it: the tangent-bundle representation of the theorem above is a smooth representation of a Lie group.
@@ -159,7 +159,7 @@ a linear first-order system; hence $\dim\mathfrak{k}(M,g) \le \frac{n(n+1)}{2}$,
 **Theorem.** For $p \in M$ the map
 
 $$
-\rho_p : \operatorname{Isom}_p \longrightarrow O(T_pM, g_p), \qquad \rho_p(F) = dF_p,
+\boxed{\;\rho_p : \operatorname{Isom}_p \longrightarrow O(T_pM, g_p), \qquad \rho_p(F) = dF_p\;},
 $$
 
 is an injective homomorphism of groups, and its image, the **linear isotropy group** at $p$, is a closed subgroup of the orthogonal group. If $M$ is connected, $\rho_p$ is an isomorphism onto the linear isotropy group.

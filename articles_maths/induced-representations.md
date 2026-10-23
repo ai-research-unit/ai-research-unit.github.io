@@ -56,7 +56,7 @@ the **transitivity of the induction**, and $\operatorname{Res}_H^G$ is transitiv
 **Theorem (Frobenius reciprocity).** Let $H\leq G$, let $W$ be a $k[H]$-module and $V$ a $k[G]$-module. Then there are natural isomorphisms of $k$-modules
 
 $$
-\operatorname{Hom}_{k[G]}\bigl(\operatorname{Ind}_H^GW,V\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(W,\operatorname{Res}_H^GV\bigr), \qquad \operatorname{Hom}_{k[G]}\bigl(V,\operatorname{Coind}_H^GW\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(\operatorname{Res}_H^GV,W\bigr),
+\boxed{\;\operatorname{Hom}_{k[G]}\bigl(\operatorname{Ind}_H^GW,V\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(W,\operatorname{Res}_H^GV\bigr), \qquad \operatorname{Hom}_{k[G]}\bigl(V,\operatorname{Coind}_H^GW\bigr)\;\cong\;\operatorname{Hom}_{k[H]}\bigl(\operatorname{Res}_H^GV,W\bigr)\;},
 $$
 
 the **adjunction** between the induction and the restriction of scalars.
@@ -82,7 +82,7 @@ the inner products being those of *Character Theory* taken in the respective gro
 **Theorem (the induced character formula).** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $H\leq G$, let $W$ be a $k[H]$-module with character $\chi$ and let $\chi^{\mathrm{ind}} = \operatorname{Ind}_H^G\chi$ be the character of the induced module. Then for $g\in G$
 
 $$
-\chi^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr),
+\boxed{\;\chi^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr)\;},
 $$
 
 the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\chi^{\mathrm{ind}}(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\chi^{\mathrm{ind}}(1) = [G:H]\chi(1)$.
@@ -106,7 +106,7 @@ the trivial module plus the two-dimensional standard module; the reciprocity was
 **Theorem (Mackey).** Let $H,K\leq G$, let $W$ be a $k[H]$-module and let $W^x$ be the $k[H\cap xKx^{-1}]$-module obtained from $W$ by the conjugation $h\mapsto x^{-1}hx$ followed by restriction to $H\cap xKx^{-1}$. Then there is an isomorphism of $k[K]$-modules
 
 $$
-\operatorname{Res}_K^G\operatorname{Ind}_H^GW \;\cong\; \bigoplus_{x\in S}\operatorname{Ind}_{H\cap xKx^{-1}}^{K}\bigl(W^x\bigr),
+\boxed{\;\operatorname{Res}_K^G\operatorname{Ind}_H^GW \;\cong\; \bigoplus_{x\in S}\operatorname{Ind}_{H\cap xKx^{-1}}^{K}\bigl(W^x\bigr)\;},
 $$
 
 the sum being over a set of double coset representatives of $H\backslash G/K$.

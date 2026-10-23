@@ -15,7 +15,7 @@ Throughout, $p$ is a prime, $\mathbb{Q}_p$ is the field of $p$-adic numbers with
 
 **Theorem (Haar measure).** The additive group $(\mathbb{Q}_p,+)$ is locally compact and Hausdorff, and it carries a nonzero Radon measure $\mu$ that is invariant under translation and is unique up to multiplication by a positive scalar. The measure is moreover invariant under the additive group and satisfies
 $$
-\mu(a + p^n\mathbb{Z}_p) = p^{-n}\,\mu(\mathbb{Z}_p) \qquad (a \in \mathbb{Q}_p,\ n \in \mathbb{Z}),
+\boxed{\;\mu(a + p^n\mathbb{Z}_p) = p^{-n}\,\mu(\mathbb{Z}_p) \qquad (a \in \mathbb{Q}_p,\ n \in \mathbb{Z})\;},
 $$
 and $(\mathbb{Q}_p, +)$ is unimodular, its left and right Haar measures coinciding because the group is abelian.
 
@@ -65,7 +65,7 @@ since $\binom{p^m}{n+1} = \frac{p^m(p^m-1)\cdots(p^m-n)}{(n+1)!}$ has exactly th
 
 **Theorem.** For every $n \geq 0$,
 $$
-\int_{\mathbb{Z}_p} x^n \, d\mu(x) = B_n,
+\boxed{\;\int_{\mathbb{Z}_p} x^n \, d\mu(x) = B_n\;},
 $$
 the $n$-th Bernoulli number.
 
@@ -101,7 +101,7 @@ is a linear isomorphism of the space of $p$-adic distributions on $\mathbb{Z}_p$
 
 **Theorem (Amice transform).** For a distribution $\lambda$ on $\mathbb{Z}_p$, define
 $$
-A_\lambda(T) = \int_{\mathbb{Z}_p} (1+T)^x \, d\lambda(x) = \sum_{n \geq 0} \lambda\bigl(\tbinom{\cdot}{n}\bigr) T^n .
+\boxed{\;A_\lambda(T) = \int_{\mathbb{Z}_p} (1+T)^x \, d\lambda(x) = \sum_{n \geq 0} \lambda\bigl(\tbinom{\cdot}{n}\bigr) T^n\;} .
 $$
 Then $\lambda \mapsto A_\lambda$ is a linear isomorphism of the space of distributions onto the ring of power series with bounded coefficients, and it restricts to a linear isomorphism of the space of measures onto $\mathbb{Z}_p[[T]]$.
 

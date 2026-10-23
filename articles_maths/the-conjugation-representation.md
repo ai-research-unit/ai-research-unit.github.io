@@ -18,7 +18,7 @@ $$
 **Proposition.** $\rho$ is a homomorphism of groups, with
 
 $$
-\ker\rho = Z(G), \qquad \operatorname{im}\rho = \operatorname{Inn}(G), \qquad \operatorname{Inn}(G) \cong G/Z(G).
+\boxed{\;\ker\rho = Z(G), \qquad \operatorname{im}\rho = \operatorname{Inn}(G), \qquad \operatorname{Inn}(G) \cong G/Z(G)\;}.
 $$
 
 **Proof.** The composition law $c_gc_h=c_{gh}$ and $c_e=\mathrm{id}$ from *Inner Conjugation and the Class Operator* say that $\rho$ is a homomorphism. An element $g$ lies in the kernel exactly when $gxg^{-1}=x$ for every $x$, which is $g\in Z(G)$. The image is by definition the group of inner automorphisms, and the isomorphism is the first isomorphism theorem. The identity $\operatorname{Inn}(G)\cong G/Z(G)$ is also stated in *Transformation Groups*, where the conjugation action is introduced.
@@ -42,7 +42,7 @@ Its elements are the **outer automorphisms**: they are cosets of inner automorph
 **Proposition (normality).** $\operatorname{Inn}(G)$ is a normal subgroup of $\operatorname{Aut}(G)$. Indeed, for $\varphi\in\operatorname{Aut}(G)$ and $g\in G$,
 
 $$
-\varphi\, c_g\, \varphi^{-1} = c_{\varphi(g)} .
+\boxed{\;\varphi\, c_g\, \varphi^{-1} = c_{\varphi(g)}\;} .
 $$
 
 **Proof.** For every $x$, $(\varphi c_g \varphi^{-1})(x) = \varphi\bigl(g\,\varphi^{-1}(x)\,g^{-1}\bigr) = \varphi(g)\,x\,\varphi(g)^{-1} = c_{\varphi(g)}(x)$, using the multiplicativity of $\varphi$ and $\varphi^{-1}$. The right-hand side is inner, so the conjugate of an inner automorphism is inner.
@@ -74,7 +74,7 @@ Every automorphism carries a conjugacy class to a conjugacy class, so the automo
 **Proposition (the action is well defined).** For $\varphi\in\operatorname{Aut}(G)$ and $x\in G$,
 
 $$
-\varphi\bigl(\chi(x)\bigr) = \chi\bigl(\varphi(x)\bigr),
+\boxed{\;\varphi\bigl(\chi(x)\bigr) = \chi\bigl(\varphi(x)\bigr)\;},
 $$
 
 so $\varphi$ induces a permutation of the set $\operatorname{Cl}(G)$ of conjugacy classes, and the assignment $\operatorname{Aut}(G)\to\operatorname{Sym}(\operatorname{Cl}(G))$ is an action.

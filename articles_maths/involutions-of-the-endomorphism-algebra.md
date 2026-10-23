@@ -21,7 +21,7 @@ $$
 **Proposition.** The adjoint $A^{*}$ exists, is unique and is linear; the assignment $A \mapsto A^{*}$ is $\varsigma$-semilinear, and it is an involution of the algebra $E$:
 
 $$
-(A^{*})^{*} = A, \qquad (A+B)^{*} = A^{*}+B^{*}, \qquad (\lambda A)^{*} = \varsigma(\lambda)A^{*}, \qquad (AB)^{*} = B^{*}A^{*} .
+\boxed{\;(A^{*})^{*} = A, \qquad (A+B)^{*} = A^{*}+B^{*}, \qquad (\lambda A)^{*} = \varsigma(\lambda)A^{*}, \qquad (AB)^{*} = B^{*}A^{*}\;} .
 $$
 
 **Proof.** Fix $y$. The map $x \mapsto B(Ax,y)$ is linear, and since $x \mapsto B(x,z)$ is a bijection $V \to V^{*}$ by the non-degeneracy of $B$, there is a unique $A^{*}y$ with $B(x,A^{*}y) = B(Ax,y)$; the uniqueness for each $y$ makes $A^{*}$ a well-defined map. For linearity, $B(x,A^{*}(y+\lambda z)) = B(Ax,y+\lambda z) = B(Ax,y)+\overline{\lambda}B(Ax,z) = B(x,A^{*}y) + \overline{\lambda}B(x,A^{*}z) = B(x, A^{*}y+\overline{\lambda}A^{*}z)$, so $A^{*}(y+\lambda z) = A^{*}y+\overline{\lambda}A^{*}z$ and $A^{*}$ is linear in the bilinear case and satisfies $A^{*}(\lambda y) = \overline{\lambda}A^{*}y$ otherwise. The four laws follow by uniqueness: $B(x,(A^{*})^{*}y) = B(A^{*}x,y) = \overline{B(y,A^{*}x)} = \overline{B(Ay,x)} = B(x,Ay)$; additivity and semilinearity are the definitions; and $B(x,(AB)^{*}y) = B(ABx,y) = B(Bx,A^{*}y) = B(x,B^{*}A^{*}y)$.
@@ -35,7 +35,7 @@ $$
 **Proposition.** If $\varsigma = \mathrm{id}$ and $2 \neq 0$ in $F$, then $E$ is the direct sum of its self-adjoint and skew-adjoint parts,
 
 $$
-E = E^{+} \oplus E^{-}, \qquad E^{\pm} = \{A : A^{*} = \pm A\} ,
+\boxed{\;E = E^{+} \oplus E^{-}, \qquad E^{\pm} = \{A : A^{*} = \pm A\}\;} ,
 $$
 
 and the dimensions are $\dim_F E^{+} = n(n+1)/2$ and $\dim_F E^{-} = n(n-1)/2$ for a symmetric pairing, and the two dimensions exchanged for an antisymmetric one. In the sesquilinear case the self-adjoint elements form an $F^{\varsigma}$-linear space only, and the decomposition is not an $F$-linear decomposition.
@@ -47,7 +47,7 @@ and the dimensions are $\dim_F E^{+} = n(n+1)/2$ and $\dim_F E^{-} = n(n-1)/2$ f
 **Proposition.** Let $\Phi$ be the Gram matrix of $B$, $\Phi_{ij} = B(v_i,v_j)$, in a basis $v_1,\dots,v_n$. Then $\Phi$ is invertible and
 
 $$
-[A^{*}] = \Phi^{-1}\,\overline{[A]}^{\mathsf{T}}\,\Phi ,
+\boxed{\;[A^{*}] = \Phi^{-1}\,\overline{[A]}^{\mathsf{T}}\,\Phi\;} ,
 $$
 
 where the bar applies $\varsigma$ to each entry and the transpose is the matrix transpose. Consequently $\operatorname{tr}A^{*} = \varsigma(\operatorname{tr}A)$ and, in the bilinear case, $\det A^{*} = \det A$.

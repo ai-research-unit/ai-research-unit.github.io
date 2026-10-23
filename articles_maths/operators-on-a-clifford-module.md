@@ -115,7 +115,7 @@ $\mathbb{H}$ by Bott periodicity, and the explicit modules and their commutants 
 the multiplication is its own double centraliser:
 
 $$
-\{T : T\,S=S\,T\ \text{for all }S\in\mathrm{End}_A(\mathcal{S})\} = c(A) .
+\boxed{\;\{T : T\,S=S\,T\ \text{for all }S\in\mathrm{End}_A(\mathcal{S})\} = c(A)\;} .
 $$
 
 *Proof.* Containment $c(A)\subseteq$ the double centraliser is immediate. The reverse inclusion is
@@ -152,7 +152,7 @@ symbols of $a$ and of $\partial/\partial x_\mu$, which are $c(a)$ and $\xi_\mu$.
 **Definition.** The **operator of the module** is
 
 $$
-D = \partial/\partial x_t+\sum_{i=1}^{m}c(e_i)\,\partial/\partial x_i ,
+\boxed{\;D = \partial/\partial x_t+\sum_{i=1}^{m}c(e_i)\,\partial/\partial x_i\;} ,
 $$
 
 with conjugate $\bar D=\partial/\partial x_t-\sum_{i\ge1}c(e_i)\partial/\partial x_i$, $\bar e_i=-e_i$; and the

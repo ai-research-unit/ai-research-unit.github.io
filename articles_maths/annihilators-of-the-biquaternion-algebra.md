@@ -69,8 +69,8 @@ $$
 \boxed{\;
 \det L_{\tilde Q_2}=\det R_{\tilde Q_2}=C(\tilde Q_2)^{2},\qquad
 C(\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{2\mu}^{2}
-\;}
-$$.
+\;}.
+$$
 
 *Proof.* The matrix of $L_{\tilde Q_2}$ is the left multiplication matrix of the quaternion
 $\tilde Q_2$, of determinant the square of the quaternion norm $C(\tilde Q_2)$ and trace $4Q_{2,0}$; the
@@ -123,13 +123,17 @@ the line is the shared $\mathbb{C}\tilde Q_2^{\natural}$.
 **Example.** For the non-pure zero divisor $\tilde Q_2=e_t+i\vec e_x$, of central square $1-1=0$, the two
 annihilators are
 $$
+\boxed{\;
 A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z+i\vec e_y\},\qquad
-B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z-i\vec e_y\},
+B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z-i\vec e_y\}
+\;},
 $$
 and for the pure zero divisor $\tilde Q_2=\vec e_x+i\vec e_y$, of central square $1-1=0$,
 $$
+\boxed{\;
 A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\},\qquad
-B_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t-i\vec e_z\}.
+B_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t-i\vec e_z\}
+\;}.
 $$
 In both cases the two planes share the line $\mathbb{C}\tilde Q_2^{\natural}$ and differ in the
 second generator.

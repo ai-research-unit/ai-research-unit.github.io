@@ -26,8 +26,8 @@ $$
 $$
 \boxed{\;
 \sigma(\tilde q) = \{\, q_t + \sqrt{-\langle \vec v\rangle_{\natural}},\; q_t - \sqrt{-\langle \vec v\rangle_{\natural}} \,\}
-\;}
-$$,
+\;},
+$$
 
 where $\sqrt{\cdot}$ denotes either complex square root, the two choices giving the two points of $\sigma(\tilde q)$. In particular $\tilde q$ is singular, i.e. a zero divisor or zero, if and only if $0 \in \sigma(\tilde q)$, if and only if $\langle\tilde q\rangle_{\natural} = 0$.
 
@@ -84,8 +84,8 @@ Both are real-valued; $T$ is linear and $D$ is multiplicative, $D(\tilde q_1 \ti
 $$
 \boxed{\;
 \tilde q^2 - T(\tilde q)\,\tilde q + D(\tilde q)\,e_t = 0, \qquad\text{that is}\qquad \tilde q^2 - 2q_t\,\tilde q + \langle\tilde q\rangle_{\natural} = 0
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** With $\vec v^2 = -\langle \vec v\rangle_{\natural}$, expand $\tilde q^2 = (q_t+\vec v)^2 = q_t^2 + 2q_t\vec v - \langle \vec v\rangle_{\natural}$; then $\tilde q^2 - 2q_t\tilde q + \langle\tilde q\rangle_{\natural} = (q_t^2+2q_t\vec v - \langle \vec v\rangle_{\natural}) - 2q_t(q_t+\vec v) + (q_t^2+\langle \vec v\rangle_{\natural}) = 0$.
 
@@ -144,8 +144,8 @@ $$
 \rho(\tilde q) = |q_t| + \sqrt{|\langle \vec v\rangle_{\natural}|}\quad (\langle \vec v\rangle_{\natural} < 0), \qquad
 \rho(\tilde q) = \sqrt{q_t^2 + \langle \vec v\rangle_{\natural}}\quad (\langle \vec v\rangle_{\natural} > 0), \qquad
 \rho(\tilde q) = |q_t|\quad (\langle \vec v\rangle_{\natural} = 0)
-\;}
-$$.
+\;}.
+$$
 
 Equivalently, with the eigenvalues $\lambda_\pm = q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$, $\rho(\tilde q) = \max(|\lambda_+|,|\lambda_-|)$. It satisfies $\rho(\tilde q) \le \|L_{\tilde q}\|$, where $L_{\tilde q}$ is the left-multiplication operator and $\|L_{\tilde q}\|$ its operator norm on $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ with the Euclidean norm.
 

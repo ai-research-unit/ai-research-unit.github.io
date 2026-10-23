@@ -71,7 +71,7 @@ and $\operatorname{Ind} X = \min\{n : \operatorname{Ind} X \leq n\}$.
 
 **Theorem (Menger–Urysohn; Urysohn).** For every separable metrisable space $X$,
 $$
-\operatorname{ind} X = \operatorname{Ind} X = \dim X .
+\boxed{\;\operatorname{ind} X = \operatorname{Ind} X = \dim X\;} .
 $$
 The theorem is due to Menger and Urysohn, and it is stated in the classical form for normal spaces with a countable base, which are exactly the separable metrisable spaces by Urysohn's metrisation theorem. Its proof is by simultaneous induction on the three definitions, and it is the central theorem of the classical dimension theory. The proof is in the standard references.
 
@@ -113,7 +113,7 @@ Moreover, for every space $X$ the equality $\dim X = 0$ is equivalent to $\opera
 
 **Theorem (product theorem; Menger, Hurewicz).** Let $X$ and $Y$ be separable metrisable spaces with $\dim X \leq m$ and $\dim Y \leq n$. Then
 $$
-\dim (X \times Y) \leq m + n .
+\boxed{\;\dim (X \times Y) \leq m + n\;} .
 $$
 
 **Proof sketch.** Let $\mathcal{U}$ be a finite open cover of $X \times Y$; refine it by a finite cover of the form $(\Omega_i \times V_{i,j})_{i,j}$ with $\Omega_i$ open in $X$ and $V_{i,j}$ open in $Y$. The family $(\Omega_i)$ is a finite open cover of $X$; refine it to a finite open cover of order at most $m+1$, and for each $i$ apply the hypothesis $\dim Y \leq n$ to the finite cover of $Y$ by the sets $V_{i,j}$ to obtain a finite open cover of $Y$ of order at most $n+1$. The family of products of the refined members is then a finite open cover of $X \times Y$ refining $\mathcal{U}$, and its order is at most $m+n+1$. The naive order of the product of a cover of order $m+1$ with one of order $n+1$ is $(m+1)(n+1)$, and the reduction to $m+n+1$ is the substance of the theorem: it is obtained by the sum theorem applied to the fibres of the projection onto $X$, which lets the refinement in the $Y$-direction be chosen independently over the members of the refinement in the $X$-direction. Hence $\dim (X \times Y) \leq m+n$.

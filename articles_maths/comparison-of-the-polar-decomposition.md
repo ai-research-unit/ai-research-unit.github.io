@@ -23,18 +23,22 @@ The symbols are those of the eight polar articles and are defined there; the set
 Every factor of every column is the exponential of an element of its algebra, and the eight columns are the eight readings of one rule. The reference word of the series, the four-factor biquaternion word, reads
 
 $$
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) ,
+\boxed{\;
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)
+\;},
 $$
 
 with the rapidity $\psi \in \mathbb{R}$, $\psi\ge0$, of the boost and its unit axis $\vec u_{\mathrm b} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$), and the rotation angle $\theta \in [0,2\pi]$ of the rotor and its unit axis $\vec u_{\mathrm r} \in \mathcal{A}$; the other seven columns write their word the same way with as many exponentials as they have factors, and the number of the exponentials is the number of factors counted in the table below. For an element $\nu$ of the algebra in view and a real $t \in \mathbb{R}$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:
 
 $$
+\boxed{\;
 \exp(\nu t) =
 \begin{cases}
 \cos t\,e_t + \nu\sin t , & \nu^2 = -e_t , \\
 e_t + \nu t , & \nu^2 = 0 , \\
 \cosh t\,e_t + \nu\sinh t , & \nu^2 = +e_t .
 \end{cases}
+\;}
 $$
 
 The powers of $\nu$ repeat with period four in the trigonometric case, truncate at the second term in the parabolic case, and repeat with period two in the hyperbolic case. Each factor of each column writes its exponent as a parameter times a **root**, and the row that the root occupies is the topology of the factor: a root of $-e_t$ gives a compact factor, a root of $+e_t$ a non-compact one, and a nilpotent a parabolic one.

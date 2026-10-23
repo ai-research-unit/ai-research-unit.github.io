@@ -51,7 +51,7 @@ The article assumes *Complex Analysis* for the normal families and Montel's theo
 **Theorem (Böttcher).** Let $P$ be a monic polynomial of degree $d \geq 2$. There is a conformal map $\varphi$ of a neighbourhood of $\infty$ onto a neighbourhood of $\infty$ with
 
 $$
-\varphi(P(z)) = \varphi(z)^d, \qquad \varphi(z) = z + O(1)
+\boxed{\;\varphi(P(z)) = \varphi(z)^d, \qquad \varphi(z) = z + O(1)\;}
 $$
 
 near infinity, unique up to multiplication by a $(d-1)$-th root of unity. The function $G = \log|\varphi|$ extends to a continuous **Green's function** $G : \mathbb{C} \to [0,\infty)$ that is harmonic on $A(\infty)$, vanishes exactly on $K(P)$, and satisfies $G(P(z)) = d\,G(z)$.
@@ -59,7 +59,7 @@ near infinity, unique up to multiplication by a $(d-1)$-th root of unity. The fu
 **Definition (equipotentials and external rays).** For $t > 0$ the **equipotential** is the level set $\{G = t\}$, a Jordan curve for $t$ small; the **external ray** of angle $\theta$ is
 
 $$
-\gamma_\theta = \{z \in A(\infty) : G(z) > 0, \ \arg \varphi(z) = 2\pi\theta\} ,
+\boxed{\;\gamma_\theta = \{z \in A(\infty) : G(z) > 0, \ \arg \varphi(z) = 2\pi\theta\}\;} ,
 $$
 
 and the ray **lands** at the limit $\lim_{t \to 0^+} \gamma_\theta(t)$, where $\gamma_\theta(t)$ is the point of the ray with $G = t$, when the limit exists.

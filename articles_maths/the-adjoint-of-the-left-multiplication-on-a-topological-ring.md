@@ -14,7 +14,7 @@ Throughout, $R$ is a Hausdorff topological ring with a continuous involution $\s
 **Theorem (the explicit form).** For every $a\in R$ the left multiplication is adjointable and
 
 $$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} .
 $$
 
 Hence the adjoint of a left multiplication is the left multiplication by the image of $a$ under the involution, and the adjoint of a right multiplication is the right multiplication by the image of $b$.
@@ -40,7 +40,7 @@ the sandwich of the images, with the order of the parameters restored rather tha
 **Theorem (self-adjointness and skewness).** The left multiplication satisfies
 
 $$
-L_a^\dagger = L_a \iff \sigma(a) = a , \qquad L_a^\dagger = -L_a \iff \sigma(a) = -a ,
+\boxed{\;L_a^\dagger = L_a \iff \sigma(a) = a , \qquad L_a^\dagger = -L_a \iff \sigma(a) = -a\;} ,
 $$
 
 so the self-adjoint left multiplications are exactly those by the self-adjoint elements, and the skew ones exactly those by the skew elements.
@@ -50,7 +50,7 @@ so the self-adjoint left multiplications are exactly those by the self-adjoint e
 **Theorem (unitarity and involutivity).** The left multiplication satisfies
 
 $$
-L_a^\dagger L_a = \mathrm{id} \iff \sigma(a)a = 1 , \qquad L_aL_a^\dagger = \mathrm{id} \iff a\sigma(a) = 1 , \qquad L_a^2 = \mathrm{id} \iff a^2 = 1 ,
+\boxed{\;L_a^\dagger L_a = \mathrm{id} \iff \sigma(a)a = 1 , \qquad L_aL_a^\dagger = \mathrm{id} \iff a\sigma(a) = 1 , \qquad L_a^2 = \mathrm{id} \iff a^2 = 1\;} ,
 $$
 
 so the left multiplication is unitary, $L_a^\dagger L_a = L_aL_a^\dagger = \mathrm{id}$, exactly when $a$ is unitary in the two-sided sense; it is normal, $L_a^\dagger L_a = L_aL_a^\dagger$, exactly when $a$ commutes with $\sigma(a)$.

@@ -42,7 +42,7 @@ for $u$ of the appropriate class, with $\partial=V_0$ the boundary and $\langle\
 
 **Theorem (the Laplacian is the generator of the form).** The operator
 $$
--\Delta u=v\in L^2(\mu)\quad\text{defined by}\quad \mathcal{E}(u,w)=\langle v,w\rangle_{L^2(\mu)}\ \text{ for all } w \text{ of finite energy},
+\boxed{\;-\Delta u=v\in L^2(\mu)\quad\text{defined by}\quad \mathcal{E}(u,w)=\langle v,w\rangle_{L^2(\mu)}\ \text{ for all } w \text{ of finite energy}\;},
 $$
 with the domain
 $$
@@ -92,7 +92,7 @@ is a non-negative self-adjoint operator on $L^2(\mu)$, it is the **Friedrichs ex
 
 **Theorem (the spectral theorem for the fractal Laplacian).** The heat semigroup of the Laplacian is
 $$
-\exp(t\Delta)=\int_{[0,\infty)}\exp(-t\lambda)\,dE(\lambda) ,
+\boxed{\;\exp(t\Delta)=\int_{[0,\infty)}\exp(-t\lambda)\,dE(\lambda)\;} ,
 $$
 where $E$ is the spectral resolution of the unique self-adjoint extension; the semigroup is a contraction on $L^2(\mu)$ and a positivity-preserving, mass-preserving Markov semigroup, and its kernel is the $p_t(x,y)$ of *The Laplacian on the Orbital Graphs*, with the spectral dimension $d_s$ and the sub-Gaussian bounds.
 

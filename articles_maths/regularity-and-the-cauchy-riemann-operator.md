@@ -192,7 +192,7 @@ using $\Delta|x|^2 = 2m$ and Euler's identity $\sum_j x_j\partial/\partial x_j\,
 **Theorem (Fischer decomposition; the Stokes decomposition).** For every $k \geq 0$,
 
 $$
-\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2} = \bigoplus_{j \geq 0}|x|^{2j}\mathcal{H}_{k-2j},
+\boxed{\;\mathcal{P}_k = \mathcal{H}_k \oplus |x|^2\mathcal{P}_{k-2} = \bigoplus_{j \geq 0}|x|^{2j}\mathcal{H}_{k-2j}\;},
 $$
 
 and the expansion $P = \sum_j |x|^{2j}h_j$ with $h_j \in \mathcal{H}_{k-2j}$ is unique. In particular every $A$-valued polynomial on $A$ has a unique expansion as a sum of harmonic layers in the radial direction.
@@ -230,7 +230,7 @@ $$
 **Theorem (Cauchy–Goursat).** Let $f$ be left regular and of class $C^1$ on a bounded domain $\Omega$ with smooth boundary. Then
 
 $$
-\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0.
+\boxed{\;\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0\;}.
 $$
 
 *Proof.* The divergence theorem applied to the vector field with components $B_\alpha f$ on $\Omega$ gives
@@ -254,7 +254,7 @@ satisfies $D E = \delta_0$; thus $E$ is a fundamental solution of $D$, and $E(x 
 **Theorem (Cauchy–Pompeiu, derived from the divergence theorem).** Let $E$ be a fundamental solution of $D$ as above and let $\Omega \subseteq A$ be a bounded domain with smooth boundary. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,
 
 $$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_{\Omega} E(x-y)\,(Df)(y)\,dy,
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_{\Omega} E(x-y)\,(Df)(y)\,dy\;},
 $$
 
 with the normalisation of $E$ chosen so that the signs are as displayed.

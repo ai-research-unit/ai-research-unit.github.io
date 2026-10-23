@@ -22,7 +22,7 @@ The Clifford algebra, the $k$-vectors, the volume element, the even part and the
 **Theorem.** For the positive definite form on $\mathbb{R}^n$ there is an isomorphism of algebras
 
 $$
-\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1},
+\boxed{\;\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1}\;},
 $$
 
 the even part of the Clifford algebra of the positive definite space of dimension $n$ being the Clifford algebra of the negative definite space of dimension $n-1$.
@@ -98,11 +98,11 @@ The same coincidences hold for the real forms, where they are the classical isom
 **Theorem.** With the conventions and the identifications of *Biquaternion Other Algebraic Element Representations* and *Biquaternion Rotations and Lorentz Transformations*,
 
 $$
-\mathrm{Spin}(1,2)\cong SL(2,\mathbb{R}),\qquad \mathrm{Spin}(1,3)\cong SL(2,\mathbb{C}),
+\boxed{\;\mathrm{Spin}(1,2)\cong SL(2,\mathbb{R}),\qquad \mathrm{Spin}(1,3)\cong SL(2,\mathbb{C})\;},
 $$
 
 $$
-\mathrm{Spin}(2,2)\cong SL(2,\mathbb{R})\times SL(2,\mathbb{R}),\qquad \mathrm{Spin}(3,3)\cong SL(4,\mathbb{R}),\qquad \mathrm{Spin}(4,2)\cong SU(2,2).
+\boxed{\;\mathrm{Spin}(2,2)\cong SL(2,\mathbb{R})\times SL(2,\mathbb{R}),\qquad \mathrm{Spin}(3,3)\cong SL(4,\mathbb{R}),\qquad \mathrm{Spin}(4,2)\cong SU(2,2)\;}.
 $$
 
 **Proof.** Each is a standard isomorphism of the real forms, of the same kind as those of the preceding sections and reflecting the same diagram coincidences; the Lorentzian case $\mathrm{Spin}(1,3)\cong SL(2,\mathbb{C})$ is realised inside the biquaternion algebra in *Biquaternion Spin Geometry* and *Biquaternion Rotations and Lorentz Transformations*, where the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$ is described. The dimensions agree in each case: $3=3$, $6=6$, $6=6$, $15=15$ and $15=15$. The remaining isomorphisms of real forms are tabulated in the literature cited below.

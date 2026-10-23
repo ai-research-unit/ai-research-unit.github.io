@@ -15,7 +15,7 @@ The article assumes the fixed-set theorem and the isometry groups of *Isometries
 **Definition.** Let $\sigma$ be an isometric involution of a Riemannian manifold $(M, g)$. Its **fixed set** is
 
 $$
-\Sigma = \operatorname{Fix}(\sigma) = \{x \in M : \sigma(x) = x\},
+\boxed{\;\Sigma = \operatorname{Fix}(\sigma) = \{x \in M : \sigma(x) = x\}\;},
 $$
 
 a closed subset of $M$, and the **fixed component** of a point $p \in \Sigma$ is the connected component of $\Sigma$ containing $p$.
@@ -37,7 +37,7 @@ $$
 **Theorem (the tube theorem).** The normal exponential map is a diffeomorphism of a neighbourhood of the zero section of $\nu\Sigma$ onto a tubular neighbourhood of $\Sigma$ in $M$; in the coordinates it defines, the metric splits along $\Sigma$ as
 
 $$
-g = g_\Sigma(y) + \sum_a dy^a\,dy^a, \qquad g_\Sigma(y) = g_\Sigma + O(|y|^2),
+\boxed{\;g = g_\Sigma(y) + \sum_a dy^a\,dy^a, \qquad g_\Sigma(y) = g_\Sigma + O(|y|^2)\;},
 $$
 
 where $y$ are the normal coordinates and $g_\Sigma$ is the induced metric of $\Sigma$; the involution acts as $\sigma(y, p) = (-y, p)$ in these coordinates, and the geodesics orthogonal to $\Sigma$ are the images of the straight lines of the normal fibres.

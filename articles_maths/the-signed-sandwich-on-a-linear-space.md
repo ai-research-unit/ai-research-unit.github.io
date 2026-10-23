@@ -19,7 +19,7 @@ $$
 **Proposition (composition laws).** For all $a,b,r,s \in E$,
 
 $$
-\Phi_{a,b}\Phi_{r,s} = \Phi_{ar,sb}, \qquad \Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s} = \Theta^{\alpha}_{a\alpha(r),\alpha(s)b} .
+\boxed{\;\Phi_{a,b}\Phi_{r,s} = \Phi_{ar,sb}, \qquad \Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s} = \Theta^{\alpha}_{a\alpha(r),\alpha(s)b}\;} .
 $$
 
 **Proof.** $\Phi_{a,b}\Phi_{r,s}(X) = a(rXs)b = (ar)X(sb) = \Phi_{ar,sb}(X)$. For the signed case apply $\alpha$ in the middle: $\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s}(X) = a\alpha(r\alpha(X)s)b = a\alpha(s)\alpha(\alpha(X))\alpha(r)b = a\alpha(s)X\alpha(r)b$, so the composite is the signed sandwich with the pair $(a\alpha(r),\alpha(s)b)$. This is the twisted form of the unsigned rule $(a,b)(r,s)=(ar,sb)$, and it reduces to it when $\alpha=\mathrm{id}$.
@@ -27,8 +27,8 @@ $$
 **Proposition (the signed sandwich is the unsigned one composed with $\alpha$).** For all $a,b$,
 
 $$
-\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)} , \qquad
-\Phi_{a,b} = \alpha\circ\Theta^{\alpha}_{\alpha(a),\alpha(b)} = \Theta^{\alpha}_{\alpha(a),\alpha(b)}\circ\alpha .
+\boxed{\;\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)} , \qquad
+\Phi_{a,b} = \alpha\circ\Theta^{\alpha}_{\alpha(a),\alpha(b)} = \Theta^{\alpha}_{\alpha(a),\alpha(b)}\circ\alpha\;} .
 $$
 
 **Proof.** $\Phi_{a,b}(\alpha(X)) = a\alpha(X)b = \Theta^{\alpha}_{a,b}(X)$, which is the first identity; $(\alpha\circ\Phi_{\alpha(a),\alpha(b)})(X) = \alpha(\alpha(a)X\alpha(b)) = a\alpha(X)b$ by the multiplicativity of $\alpha$, which is the second. Replacing $a,b$ by $\alpha(a),\alpha(b)$ in the first identity and composing with $\alpha$ gives the last, since $\alpha^2=\mathrm{id}$.
@@ -36,7 +36,7 @@ $$
 **Corollary (the sign on homogeneous elements).** If $X$ is homogeneous then
 
 $$
-\Theta^{\alpha}_{a,b}(X) = \varepsilon_X\,\Phi_{a,b}(X) ,
+\boxed{\;\Theta^{\alpha}_{a,b}(X) = \varepsilon_X\,\Phi_{a,b}(X)\;} ,
 $$
 
 so the signed sandwich differs from the unsigned one by the parity sign of the element acted on; in particular the two agree on the fixed part of $\alpha$ and are opposite on the negated part.

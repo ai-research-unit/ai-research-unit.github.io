@@ -50,7 +50,7 @@ The direct sum is a graded algebra under the product induced by that of $\mathrm
 **Proposition.** The induced product on $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})$ is associative and graded-commutative, with
 
 $$
-\bar x\,\bar y=(-1)^{jl}\,\bar y\,\bar x \qquad (\bar x\in\operatorname{gr}_j,\ \bar y\in\operatorname{gr}_l).
+\boxed{\;\bar x\,\bar y=(-1)^{jl}\,\bar y\,\bar x \qquad (\bar x\in\operatorname{gr}_j,\ \bar y\in\operatorname{gr}_l)\;}.
 $$
 
 **Proof.** Associativity is inherited from the associativity of the product of $\mathrm{Cl}(V,\mathfrak{Q})$. For the sign, $xy$ and $yx$ differ by $(xy-yx)$, which for $x$ a product of $j$ vectors and $y$ a product of $l$ vectors lies in $F_{j+l-2}$ by repeated application of $uv=-vu+2B(u,v)$; hence $xy-yx$ is of filtration at most $j+l-2$, and only its class in $\operatorname{gr}$ matters, so $\bar x\bar y=(-1)^{jl}\bar y\bar x$.
@@ -60,7 +60,7 @@ $$
 **Theorem.** For every quadratic form $m$ the linear map
 
 $$
-\Lambda^kV\longrightarrow\operatorname{gr}_k\mathrm{Cl}(V,\mathfrak{Q}), \qquad v_1\wedge v_2\wedge\cdots\wedge v_k\longmapsto\overline{v_1v_2\cdots v_k},
+\boxed{\;\Lambda^kV\longrightarrow\operatorname{gr}_k\mathrm{Cl}(V,\mathfrak{Q}), \qquad v_1\wedge v_2\wedge\cdots\wedge v_k\longmapsto\overline{v_1v_2\cdots v_k}\;},
 $$
 
 is an isomorphism, and it is an isomorphism of graded algebras from the exterior algebra $\Lambda(V)$ with its wedge product onto $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})$.
@@ -86,7 +86,7 @@ If $m$ is non-degenerate the grade decomposition of *The Geometric Product and t
 **Proposition.** For $m$ non-degenerate and $k\ge0$,
 
 $$
-F_k=\mathrm{Cl}_0(V,\mathfrak{Q})\oplus\mathrm{Cl}_1(V,\mathfrak{Q})\oplus\cdots\oplus\mathrm{Cl}_k(V,\mathfrak{Q}),
+\boxed{\;F_k=\mathrm{Cl}_0(V,\mathfrak{Q})\oplus\mathrm{Cl}_1(V,\mathfrak{Q})\oplus\cdots\oplus\mathrm{Cl}_k(V,\mathfrak{Q})\;},
 $$
 
 the sum of the graded pieces of grade at most $k$. Hence $\operatorname{gr}_k\mathrm{Cl}(V,\mathfrak{Q})\cong\mathrm{Cl}_k(V,\mathfrak{Q})$ canonically, and the filtration is the **cumulative** filtration of the grading.

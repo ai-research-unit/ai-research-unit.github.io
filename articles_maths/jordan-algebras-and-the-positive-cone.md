@@ -33,7 +33,7 @@ for every finite family $x_i \in J$. Since a sum of finitely many squares can be
 Assume $J$ finite dimensional and formally real. The **positive cone** is
 
 $$
-J_+ = \{x^2 : x \in J\}, \qquad \Omega = \operatorname{int} J_+ ,
+\boxed{\;J_+ = \{x^2 : x \in J\}, \qquad \Omega = \operatorname{int} J_+\;} ,
 $$
 
 and the algebra carries the partial order
@@ -99,7 +99,7 @@ In $H_n(\mathbb{R})$ every element has the spectral decomposition $x = \sum_{i=1
 **Theorem.** In a finite-dimensional formally real Jordan algebra every element $x$ admits a **spectral resolution**
 
 $$
-x = \sum_{i=1}^{r} \lambda_i e_i ,
+\boxed{\;x = \sum_{i=1}^{r} \lambda_i e_i\;} ,
 $$
 
 with $e_i$ pairwise orthogonal idempotents, $\lambda_i \in \mathbb{R}$, and $r$ at most the degree of $J$; the $\lambda_i$ are the eigenvalues of $x$, and $x \in J_+$ if and only if all $\lambda_i \geq 0$. The eigenvalues are the roots of the generic minimum polynomial of $x$ and depend continuously on $x$.
@@ -157,7 +157,7 @@ The spectral resolution yields a functional calculus on the cone.
 **Theorem.** Let $J$ be a finite-dimensional formally real Jordan algebra and let $x = \sum_{i=1}^r \lambda_i e_i$ be its spectral resolution. For any real-valued function $f$ defined on the set of eigenvalues of $x$, put
 
 $$
-f(x) = \sum_{i=1}^r f(\lambda_i) e_i .
+\boxed{\;f(x) = \sum_{i=1}^r f(\lambda_i) e_i\;} .
 $$
 
 Then $f(x)$ depends only on $x$ and $f$, the map $x \mapsto f(x)$ is continuous on the set of elements with spectrum in the domain of $f$, and it respects pointwise operations: $(f + h)(x) = f(x) + h(x)$, $(fh)(x) = f(x)\bullet h(x)$, $(\mathrm{id})^n(x) = x^n$.

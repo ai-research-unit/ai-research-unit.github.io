@@ -42,7 +42,7 @@ $$
 **Proposition.** For every origin $o$, the position map $\varphi_o$ is a bijection. For two origins $o,o'$,
 
 $$
-\varphi_{o'}(a)=\varphi_o(a)-(o'-o),
+\boxed{\;\varphi_{o'}(a)=\varphi_o(a)-(o'-o)\;},
 $$
 
 so the two identifications of $\mathbb{A}$ with $V$ differ by the translation $v \mapsto v-(o'-o)$. Consequently any statement about $\mathbb{A}$ that is to be intrinsic must be invariant under the translations of $V$.
@@ -88,7 +88,7 @@ Part (iii) is the precise sense in which translations are not linear maps but **
 **Proposition.** Affine automorphisms are exactly the maps of the form
 
 $$
-f(a)=o'+T(a-o)
+\boxed{\;f(a)=o'+T(a-o)\;}
 $$
 
 for some origin $o \in \mathbb{A}$, some $T \in \operatorname{GL}(V)$ and some $o' \in \mathbb{A}$. The linear part $T$ is independent of $o$, and $\operatorname{Aff}(V) \cong V \rtimes \operatorname{GL}(V)$, where the semidirect product is taken with respect to the natural action of $\operatorname{GL}(V)$ on $V$.
@@ -96,7 +96,7 @@ for some origin $o \in \mathbb{A}$, some $T \in \operatorname{GL}(V)$ and some $
 *Proof.* Choose an origin $o$ and identify $\mathbb{A}$ with $V$ by $a \mapsto a-o$. Then an affine automorphism becomes a map $x \mapsto Tx+b$ with $T \in \operatorname{GL}(V)$ and $b \in V$, and every such map is an affine automorphism. Composition is
 
 $$
-(x \mapsto T_1x+b_1)\circ(x \mapsto T_2x+b_2)=(x \mapsto T_1T_2x+T_1b_2+b_1),
+\boxed{\;(x \mapsto T_1x+b_1)\circ(x \mapsto T_2x+b_2)=(x \mapsto T_1T_2x+T_1b_2+b_1)\;},
 $$
 
 which is the multiplication law $(T_1,b_1)(T_2,b_2)=(T_1T_2,\,T_1b_2+b_1)$ of the semidirect product $V \rtimes \operatorname{GL}(V)$ with $\operatorname{GL}(V)$ acting on $V$ in the standard way. Changing the origin conjugates the pair by a translation from the translation subgroup $V$, so the decomposition is intrinsic.

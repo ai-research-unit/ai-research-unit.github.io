@@ -21,7 +21,7 @@ Throughout, $k$ is a field, $A\in M_n(k)$, and $V=k^n$. The characteristic polyn
 **Theorem.** Let $k$ be a perfect field and $A\in M_n(k)$. There are unique matrices $A_s,A_n\in M_n(k)$ with
 
 $$
-A=A_s+A_n, \qquad A_sA_n=A_nA_s, \qquad A_s \text{ semisimple}, \qquad A_n \text{ nilpotent}.
+\boxed{\;A=A_s+A_n, \qquad A_sA_n=A_nA_s, \qquad A_s \text{ semisimple}, \qquad A_n \text{ nilpotent}\;}.
 $$
 
 Both $A_s$ and $A_n$ are polynomials in $A$ with coefficients in $k$.
@@ -184,7 +184,7 @@ A matrix $U$ is **unipotent** when $U=I+N$ with $N$ nilpotent; equivalently, whe
 **Theorem.** Let $A$ be invertible. Then there are unique matrices $A_s,A_u$ with
 
 $$
-A=A_sA_u, \qquad A_sA_u=A_uA_s, \qquad A_s \text{ semisimple}, \qquad A_u \text{ unipotent}.
+\boxed{\;A=A_sA_u, \qquad A_sA_u=A_uA_s, \qquad A_s \text{ semisimple}, \qquad A_u \text{ unipotent}\;}.
 $$
 
 They are $A_s$ of the additive decomposition and $A_u=I+A_s^{-1}A_n$.
@@ -262,7 +262,7 @@ The characteristic and the minimal polynomial are both $x^p-t$, whose derivative
 **Theorem.** Let $A=A_s+A_n$ be the Jordan–Chevalley decomposition. Then
 
 $$
-C(A)=C(A_s)\cap C(A_n).
+\boxed{\;C(A)=C(A_s)\cap C(A_n)\;}.
 $$
 
 *Proof.* The matrices $A_s$ and $A_n$ are polynomials in $A$, so every matrix commuting with $A$ commutes with both; this gives $C(A)\subseteq C(A_s)\cap C(A_n)$. Conversely, if $X$ commutes with $A_s$ and with $A_n$, then $X$ commutes with their sum $A$; this gives the reverse inclusion.

@@ -40,7 +40,9 @@ The name *null set of the split-biquaternion norm* attaches to $Z$ through the z
 **Theorem.** The element $\tilde Q$ lies in $Z$ if and only if the split complex number $\langle\tilde Q\rangle_{\natural}$ is a zero divisor of $\mathbb{D}$, equivalently if and only if one of the idempotent components $\tilde Q_\pm$ is the quaternion zero, in which case
 
 $$
-Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2 = \{\tilde Q : \tilde Q_+ = 0\}\cup\{\tilde Q : \tilde Q_- = 0\},
+\boxed{\;
+Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2 = \{\tilde Q : \tilde Q_+ = 0\}\cup\{\tilde Q : \tilde Q_- = 0\}
+\;},
 $$
 
 the union of the two ideals, and each of the two sets is a real four-dimensional subspace; the two meet only at the origin, and $Z$ is the union of two four-dimensional subspaces of the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$. In terms of the decomposition $N = R + jI$ the cone is the locus $\lvert I(\tilde Q)\rvert = R(\tilde Q)$, which for the two real forms $R$ and $I$ is the equality case of the Cauchy–Schwarz inequality.
@@ -89,7 +91,9 @@ where $d_{S^3}$ is the geodesic distance of the quaternion sphere, $d_{S^3}(u,v)
 **Proposition.** The product metric is a bi-invariant metric on the group $S^3\times S^3$, it is the metric induced by the Euclidean form restricted to the unit sphere in the directions tangent to it, and its geodesics are the products of great circles. Its diameter is $\pi$ in each coordinate, the cut locus of a point is the product of the two antipodes, and the volume of the unit sphere with respect to the induced Riemannian volume is
 
 $$
-\operatorname{vol}(S^3\times S^3) = (2\pi^2)^2 = 4\pi^4 .
+\boxed{\;
+\operatorname{vol}(S^3\times S^3) = (2\pi^2)^2 = 4\pi^4
+\;}.
 $$
 
 *Proof.* The group $S^3\times S^3$ is a direct product of compact Lie groups, and the product of bi-invariant metrics is bi-invariant, since translations act coordinatewise. The product of the tangent spaces at the identity is $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$, on which the product of the quaternion invariant inner products is invariant under the adjoint action. The geodesics of a Riemannian product are the products of geodesics, and the cut locus and diameter statements follow. The volume of $S^3$ with the round metric of radius one is $2\pi^2$, and volumes multiply in a Riemannian product.
@@ -103,7 +107,9 @@ The unit sphere contains two distinguished compact subgroups, the two factors $S
 **Proposition.** The quotients
 
 $$
+\boxed{\;
 (S^3\times S^3)/\Delta S^3\cong S^3, \qquad (S^3\times S^3)/(S^3\times\{1\})\cong S^3, \qquad (S^3\times S^3)/\{\pm(1,1)\}
+\;}
 $$
 
 are respectively the quaternion sphere, the quaternion sphere again, and a compact six-dimensional group covered two-to-one by the unit sphere. The first two identifications show that the split biquaternion unit sphere fibres over the quaternion unit sphere, with a fibre the diagonal copy of $S^3$ in the first case and a right coset in the second.

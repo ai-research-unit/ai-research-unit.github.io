@@ -37,7 +37,7 @@ The two composites agree because the product of the algebra is associative, so n
 **Proposition (the composition law).** For all $a,b,c,d \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-T_{a,b} \circ T_{c,d} = T_{ac,\,db} .
+\boxed{\;T_{a,b} \circ T_{c,d} = T_{ac,\,db}\;} .
 $$
 
 **Proof.** For every $y$, $T_{a,b}\bigl(T_{c,d}(y)\bigr) = a\,(c\,y\,d)\,b = (ac)\,y\,(db)$ by associativity.
@@ -75,7 +75,7 @@ so $c\,y = y\,c$ for every $y$, and $c$ is central. Conversely if $c$ is central
 **Corollary (the kernel).** The sandwiches that act as the identity are exactly the pairs $(c, c^{-1})$ with $c$ a unit of the centre,
 
 $$
-\ker\bigl((a,b) \mapsto T_{a,b}\bigr) = \{\, (c, c^{-1}) : c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times} \,\}.
+\boxed{\;\ker\bigl((a,b) \mapsto T_{a,b}\bigr) = \{\, (c, c^{-1}) : c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times} \,\}\;}.
 $$
 
 In even dimension the centre is $F$, so the kernel is the scalars $F^{\times}$; in odd dimension the centre is $F \oplus F\omega$ with $\omega$ the volume element, so the kernel is $F^{\times} \cup F^{\times}\omega$ in the diagonal of the unit group.
@@ -111,7 +111,7 @@ On the space of vectors the sandwich and the twisted conjugation therefore diffe
 **Theorem (the versor action is orthogonal).** Let $x \in \Gamma(V,\mathfrak{Q})$. Then the restriction of $\chi_x$ to $V$ is an isometry of the quadratic space,
 
 $$
-q\bigl(\chi_x(v)\bigr) = \mathfrak{Q}(v), \qquad B\bigl(\chi_x(v), \chi_x(w)\bigr) = B(v, w), \qquad v, w \in V .
+\boxed{\;q\bigl(\chi_x(v)\bigr) = \mathfrak{Q}(v), \qquad B\bigl(\chi_x(v), \chi_x(w)\bigr) = B(v, w), \qquad v, w \in V\;} .
 $$
 
 Consequently $\chi_x\big|_{V} \in O(V,\mathfrak{Q})$, and the map $x \mapsto \chi_x\big|_{V}$ is a homomorphism from $\Gamma(V,\mathfrak{Q})$ onto $O(V,\mathfrak{Q})$.

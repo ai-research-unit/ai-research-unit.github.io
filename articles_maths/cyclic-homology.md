@@ -76,7 +76,7 @@ with the total differential $b+B$, and **periodic cyclic homology** is $HP_n(A)=
 **Theorem (Connes, $SBI$ sequence).** For every $k$-algebra $A$ there is a long exact sequence
 
 $$
-\cdots\xrightarrow{\ B\ }HH_n(A)\xrightarrow{\ I\ }HC_n(A)\xrightarrow{\ S\ }HC_{n-2}(A)\xrightarrow{\ B\ }HH_{n-1}(A)\to\cdots
+\boxed{\;\cdots\xrightarrow{\ B\ }HH_n(A)\xrightarrow{\ I\ }HC_n(A)\xrightarrow{\ S\ }HC_{n-2}(A)\xrightarrow{\ B\ }HH_{n-1}(A)\to\cdots\;}
 $$
 
 natural in $A$, where $HH_n=HH_n(A,A)$ and $HC_n=HC_n(A)$; the sequence is periodic in the sense that the same three operators repeat every two degrees. There is also an exact sequence comparing cyclic and periodic homology,
@@ -118,7 +118,7 @@ In general the kernel of $S:HC_n\to HC_{n-2}$ is the image of $HH_n$ and the cok
 **Corollary.** If the Connes boundary vanishes identically, $B=0$ on $HH_n(A)$ for all $n$, then the mixed complex splits and
 
 $$
-HC_n(A)\cong\bigoplus_{j\ge0}HH_{n-2j}(A).
+\boxed{\;HC_n(A)\cong\bigoplus_{j\ge0}HH_{n-2j}(A)\;}.
 $$
 
 This is the case for $A=k$, where $HH_n(k)=0$ for $n\ge1$, and it gives $HC_{2m}(k)\cong k$, $HC_{2m+1}(k)=0$ again.
@@ -164,7 +164,7 @@ from the algebraic K-theory of *K-Theory of Rings* to the Hochschild homology, w
 **Theorem (Chern character).** For a smooth commutative algebra $A$ the Dennis trace and the de Rham isomorphism assemble into the **Chern character**
 
 $$
-\operatorname{ch}:K_0(A)\to HP_{\mathrm{even}}(A)\cong\prod_{p\ge0}H^{2p}_{dR}(A),
+\boxed{\;\operatorname{ch}:K_0(A)\to HP_{\mathrm{even}}(A)\cong\prod_{p\ge0}H^{2p}_{dR}(A)\;},
 $$
 
 which is a ring homomorphism for the tensor product on the left and the cup product on the right, and which is an isomorphism after tensoring with $\mathbb{Q}$ when $A$ is smooth and of finite type over a field of characteristic zero.

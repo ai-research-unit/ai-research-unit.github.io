@@ -14,7 +14,7 @@ Throughout, groups are written additively and abelian; the companion articles of
 **Theorem (structure theorem for finitely generated abelian groups).** Let $G$ be a finitely generated abelian group. Then
 
 $$
-G \;\cong\; \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}
+\boxed{\;G \;\cong\; \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}\;}
 $$
 
 for integers $r \ge 0$ and $d_1,\dots,d_k \ge 2$ with the divisibility chain
@@ -52,7 +52,7 @@ where $\mathcal{A}$ is an $m \times n$ integer matrix and $\operatorname{col}(\m
 **Theorem (Smith normal form).** For every integer matrix $\mathcal{A}$ there are invertible integer matrices $P \in \operatorname{GL}_m(\mathbb{Z})$ and $Q \in \operatorname{GL}_n(\mathbb{Z})$ (unimodular, $\det=\pm1$) with
 
 $$
-P\mathcal{A}Q=\operatorname{diag}(d_1,\dots,d_s,0,\dots,0),
+\boxed{\;P\mathcal{A}Q=\operatorname{diag}(d_1,\dots,d_s,0,\dots,0)\;},
 $$
 
 where $s=\operatorname{rank}\mathcal{A}$, the $d_i$ are positive integers with $d_1 \mid d_2 \mid \cdots \mid d_s$, and the $d_i$ are uniquely determined by $\mathcal{A}$. They are the invariant factors of the torsion part, and
@@ -116,7 +116,7 @@ of order $8=|\det\mathcal{A}|$. For the first example above, $\Delta_1=\gcd(2,1,
 **Theorem (elementary divisors).** Every finite abelian group is a direct sum of cyclic groups of prime-power order:
 
 $$
-G \;\cong\; \bigoplus_{i}\mathbb{Z}/p_i^{e_i}\mathbb{Z},
+\boxed{\;G \;\cong\; \bigoplus_{i}\mathbb{Z}/p_i^{e_i}\mathbb{Z}\;},
 $$
 
 and the multiset of prime powers $p_i^{e_i}$ is uniquely determined by $G$.

@@ -22,7 +22,7 @@ and $\mathcal{A}^\pm_\rho$ are the $\pm1$-eigenspaces of a reflection $\rho$ whe
 **Theorem (the reflection is an involutive automorphism).** For every unit $u$ the signed conjugation $\rho_u = c_u\alpha$ is a bounded algebra automorphism of $\mathcal{A}$ with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and
 
 $$
-\rho_u^2 = c_{u*\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u*\alpha(u)}\;} ,
 $$
 
 so $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector; conversely every signed conjugation that is an involution has a reflector parameter.
@@ -48,7 +48,7 @@ so the reflections together with the right convolutions generate the whole signe
 **Proposition (fixed subalgebra and negated part).** Let $u$ be a reflector and $\rho = \rho_u$. When $2$ is invertible,
 
 $$
-\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho, \qquad \mathcal{A}^+_\rho = \{f : \rho(f) = f\}, \qquad \mathcal{A}^-_\rho = \{f : \rho(f) = -f\},
+\boxed{\;\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho, \qquad \mathcal{A}^+_\rho = \{f : \rho(f) = f\}, \qquad \mathcal{A}^-_\rho = \{f : \rho(f) = -f\}\;},
 $$
 
 the fixed set $\mathcal{A}^+_\rho$ is a closed subalgebra, the negated part $\mathcal{A}^-_\rho$ is a closed subspace, and the multiplication table of the grading holds:
@@ -70,7 +70,7 @@ $$
 **Theorem (the kernel of the parametrisation).** The assignment $u\mapsto\rho_u$ is a surjection of the reflectors onto the reflections, and
 
 $$
-\rho_u = \rho_v \quad\Longleftrightarrow\quad v^{-1}*u \in Z(\mathcal{A})^\times ,
+\boxed{\;\rho_u = \rho_v \quad\Longleftrightarrow\quad v^{-1}*u \in Z(\mathcal{A})^\times\;} ,
 $$
 
 so the reflections are parametrised by the reflectors modulo the central units, $\mathrm{Ref}(\mathcal{A},\alpha)\cong R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$.

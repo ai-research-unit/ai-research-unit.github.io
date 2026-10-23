@@ -139,7 +139,7 @@ $$
 **Theorem (inversion).** Let $f : \mathbb{R} \to \mathbb{B}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then
 
 $$
-f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
+\boxed{\; f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega \;}.
 $$
 
 **Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
@@ -149,7 +149,7 @@ $$
 **Theorem (Plancherel).** For a root with $\rho^{*} = -\rho$ — the scalar imaginary and the real roots — the transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with
 
 $$
-\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
+\boxed{\; \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega \;}.
 $$
 
 **Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
@@ -279,7 +279,7 @@ $$
 Then
 
 $$
-\mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega),
+\boxed{\; \mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega) \;},
 $$
 
 where the product on the right is the biquaternion product.
@@ -339,7 +339,7 @@ where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conju
 The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
-\mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
+\boxed{\; \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega) \;}.
 $$
 
 The multiplier is a scalar (times $e_t$), and it vanishes on the **null cone**

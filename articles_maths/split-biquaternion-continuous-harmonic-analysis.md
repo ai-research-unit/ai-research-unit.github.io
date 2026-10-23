@@ -142,7 +142,9 @@ $$
 **Theorem (inversion).** Let $f : \mathbb{R} \to \mathbb{H}_{\mathbb{D}}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then
 
 $$
-f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
+\boxed{\;
+f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega
+\;}.
 $$
 
 **Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the idempotent basis. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the quaternion transform in each component.
@@ -152,7 +154,9 @@ $$
 **Theorem (Plancherel).** The transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$ of square-integrable split-biquaternion-valued functions, with
 
 $$
-\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
+\boxed{\;
+\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega
+\;}.
 $$
 
 **Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved.
@@ -242,7 +246,9 @@ $$
 Then
 
 $$
-\mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega),
+\boxed{\;
+\mathcal{F}[f * g](\omega) = \mathcal{F}[f](\omega) \cdot \mathcal{F}[g](\omega)
+\;},
 $$
 
 where the product on the right is the split biquaternion product.

@@ -50,7 +50,7 @@ $$
 is an equalizer, where the two maps are $(s_i) \mapsto (s_i|_{\Omega_i\cap \Omega_j})$ and $(s_i) \mapsto (s_j|_{\Omega_i\cap \Omega_j})$. If the values lie in an abelian category, the same statement holds with the equalizer replaced by the exactness of
 
 $$
-0 \to \mathcal{F}(\Omega) \to \prod_i \mathcal{F}(\Omega_i) \to \prod_{i,j}\mathcal{F}(\Omega_i\cap \Omega_j),
+\boxed{\;0 \to \mathcal{F}(\Omega) \to \prod_i \mathcal{F}(\Omega_i) \to \prod_{i,j}\mathcal{F}(\Omega_i\cap \Omega_j)\;},
 $$
 
 the second map being $(s_i) \mapsto \bigl(s_i|_{\Omega_i\cap \Omega_j} - s_j|_{\Omega_i\cap \Omega_j}\bigr)$.
@@ -86,7 +86,7 @@ over the open neighbourhoods $\Omega$ of $x$, ordered by reverse inclusion. An e
 **Theorem (the étalé space of a sheaf).** Let $\mathcal{F}$ be a sheaf of sets on $X$ and let
 
 $$
-L(\mathcal{F}) = \bigsqcup_{x\in X}\mathcal{F}_x, \qquad \pi : L(\mathcal{F}) \to X,\quad \pi(s_x) = x,
+\boxed{\;L(\mathcal{F}) = \bigsqcup_{x\in X}\mathcal{F}_x, \qquad \pi : L(\mathcal{F}) \to X,\quad \pi(s_x) = x\;},
 $$
 
 with the topology in which a basis of open sets is given by the sets $\Omega_s = \{s_x : x \in \Omega\}$ for $\Omega$ open and $s \in \mathcal{F}(\Omega)$. Then $\pi$ is a local homeomorphism — an **étalé space** over $X$ — and the functor $\mathcal{F} \mapsto L(\mathcal{F})$ is an equivalence between the category of sheaves of sets on $X$ and the category of local homeomorphisms to $X$, with inverse the functor sending $p : E \to X$ to the sheaf of continuous sections of $p$. The stalk of the sections of $p$ at $x$ is the fibre $p^{-1}(x)$, and the equivalence is natural in $X$ and compatible with the sheaf of continuous sections of the previous example.
@@ -100,7 +100,7 @@ with the topology in which a basis of open sets is given by the sets $\Omega_s =
 **Theorem (sheafification).** Let $\mathcal{F}$ be a presheaf of sets on $X$. There is a sheaf $\mathcal{F}^{+}$, the **sheafification** (or **associated sheaf**) of $\mathcal{F}$, together with a morphism of presheaves $\eta : \mathcal{F} \to \mathcal{F}^{+}$, such that for every sheaf $\mathcal{G}$ and every morphism of presheaves $\varphi : \mathcal{F} \to \mathcal{G}$ there is a unique morphism of sheaves $\bar\varphi : \mathcal{F}^{+} \to \mathcal{G}$ with $\bar\varphi \circ \eta = \varphi$:
 
 $$
-\operatorname{Hom}_{\mathrm{PSh}}(\mathcal{F}, \mathcal{G}) \cong \operatorname{Hom}_{\mathrm{Sh}}(\mathcal{F}^{+}, \mathcal{G}).
+\boxed{\;\operatorname{Hom}_{\mathrm{PSh}}(\mathcal{F}, \mathcal{G}) \cong \operatorname{Hom}_{\mathrm{Sh}}(\mathcal{F}^{+}, \mathcal{G})\;}.
 $$
 
 The sheafification has the same stalks as $\mathcal{F}$, $\mathcal{F}^{+}_x \cong \mathcal{F}_x$ for every $x$, and is the unique sheaf with this property up to canonical isomorphism; explicitly, $\mathcal{F}^{+}$ is the sheaf of sections of the étalé space $L(\mathcal{F}) = \bigsqcup_x \mathcal{F}_x$. The functor $\mathcal{F} \mapsto \mathcal{F}^{+}$ is left adjoint to the inclusion $\mathrm{Sh}(X) \hookrightarrow \mathrm{PSh}(X)$, and for a sheaf $\mathcal{G}$ it has the further universal property that a morphism of presheaves $\mathcal{F} \to \mathcal{G}$ factors uniquely through the canonical morphism to the image sheaf.

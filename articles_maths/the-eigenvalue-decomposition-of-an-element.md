@@ -21,7 +21,7 @@ In a finite-dimensional algebra, non-invertibility and being a zero divisor agre
 **Theorem.** Let $m_a$ be the minimal polynomial of $a$. Then
 
 $$
-\lambda \in \sigma(a) \quad \Longleftrightarrow \quad m_a(\lambda) = 0 .
+\boxed{\;\lambda \in \sigma(a) \quad \Longleftrightarrow \quad m_a(\lambda) = 0\;} .
 $$
 
 *Proof.* Suppose first that $m_a(\lambda) = 0$. Write $m_a(x) = (x-\lambda)g(x)$ with $\deg g = \deg m_a - 1$. Evaluating at $a$ gives $(a-\lambda)g(a) = 0$. The element $g(a)$ is nonzero, because $\deg g < \deg m_a$ and $m_a$ is the minimal polynomial. If $a-\lambda$ were invertible, multiplication by its inverse would give $g(a) = 0$, a contradiction. Hence $a-\lambda$ is not invertible and $\lambda$ is an eigenvalue.
@@ -74,7 +74,7 @@ Thus $e_i$ is an eigenvector of the left multiplication $L_a$ and of the right m
 - **The idempotents are polynomials in $a$.** The Lagrange formula of *The Lagrange–Sylvester Eigenprojector Formula* gives
 
 $$
-e_i = \prod_{j \neq i} \frac{a - \lambda_j}{\lambda_i - \lambda_j},
+\boxed{\;e_i = \prod_{j \neq i} \frac{a - \lambda_j}{\lambda_i - \lambda_j}\;},
 $$
 
 so $e_i \in k[a]$. In particular the $e_i$ commute with $a$ and with one another, and the decomposition is internal to the commutative algebra $k[a]$.
@@ -140,7 +140,7 @@ The uniqueness also shows that the eigenprojectors are intrinsic to $a$ and do n
 **Theorem.** Let $a = \sum_i \lambda_i e_i$ be an eigenvalue decomposition. Then
 
 $$
-\ker(L_a - \lambda_i) = e_i A, \qquad \ker(R_a - \lambda_i) = A e_i .
+\boxed{\;\ker(L_a - \lambda_i) = e_i A, \qquad \ker(R_a - \lambda_i) = A e_i\;} .
 $$
 
 *Proof.* Since $a e_i = \lambda_i e_i$, every element $e_i x$ satisfies $a(e_i x) = \lambda_i e_i x$, so $e_i A \subseteq \ker(L_a - \lambda_i)$. Conversely, let $x \in \ker(L_a - \lambda_i)$. Write $x = \sum_j e_j x$, using $\sum_j e_j = 1_A$. Then

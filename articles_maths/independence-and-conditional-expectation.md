@@ -45,7 +45,7 @@ $$
 *Proof.* For every $n$, the event $\{A_n \text{ i.o.}\}$ is contained in $\bigcup_{m\geq n}A_m$, whence
 
 $$
-\mathbb{P}(A_n \text{ i.o.}) \leq \mathbb{P}\!\left(\bigcup_{m \geq n}A_m\right) \leq \sum_{m\geq n}\mathbb{P}(A_m) \longrightarrow 0
+\boxed{\;\mathbb{P}(A_n \text{ i.o.}) \leq \mathbb{P}\!\left(\bigcup_{m \geq n}A_m\right) \leq \sum_{m\geq n}\mathbb{P}(A_m) \longrightarrow 0\;}
 $$
 
 as $n\to\infty$ because the tail of a convergent series tends to $0$.
@@ -148,7 +148,7 @@ The conditional expectation is a random variable, not a number: it is the best g
 The projection picture is the geometric content of conditioning, and it is the reason the conditional expectation is the minimum-mean-square-error predictor: among all $\mathcal{G}$-measurable functions $Z$, the conditional expectation minimises $\mathbb{E}[(X - Z)^2]$ over $Z \in L^2(\mathcal{G})$. It also explains the conditional variance decomposition
 
 $$
-\operatorname{Var}(X) = \mathbb{E}\bigl[\operatorname{Var}(X \mid \mathcal{G})\bigr] + \operatorname{Var}\bigl(\mathbb{E}[X \mid \mathcal{G}]\bigr),
+\boxed{\;\operatorname{Var}(X) = \mathbb{E}\bigl[\operatorname{Var}(X \mid \mathcal{G})\bigr] + \operatorname{Var}\bigl(\mathbb{E}[X \mid \mathcal{G}]\bigr)\;},
 $$
 
 which is the Pythagorean theorem for the orthogonal decomposition $X = \mathbb{E}[X\mid\mathcal{G}] + (X - \mathbb{E}[X\mid\mathcal{G}])$.
@@ -182,7 +182,7 @@ $$
 **Theorem (disintegration; existence on standard Borel spaces).** If $(S,\mathcal{S})$ is a standard Borel space then a regular conditional probability for $X$ given $\mathcal{G}$ exists, and it is unique up to a.s. equality. Consequently for integrable $g$,
 
 $$
-\mathbb{E}[g(X) \mid \mathcal{G}](\omega) = \int_S g(x)\, \mu_\omega(dx) \qquad \text{a.s.}
+\boxed{\;\mathbb{E}[g(X) \mid \mathcal{G}](\omega) = \int_S g(x)\, \mu_\omega(dx) \qquad \text{a.s.}\;}
 $$
 
 The theorem is the disintegration of the joint law of $(X, \mathcal{G})$-measurable information, and its proof is a measurable selection argument: the conditional probabilities of a countable generating algebra of $\mathcal{S}$ are chosen measurably and extended by the Carathéodory theorem. On a general measurable space the regular conditional probability can fail to exist, which is the reason the standard Borel hypothesis is imposed. The case $\mathcal{G} = \sigma(Y)$ gives the **conditional distribution of $X$ given $Y$**, written $\mu_{X\mid Y}(y, dx)$ with $y \mapsto \mu_{X \mid Y}(y,\cdot)$ measurable, and the **Bayes formula** $\mathbb{P}(Y \in A \mid X = x) = \mathbb{P}(X = x \mid Y \in A)\mathbb{P}(Y \in A)/\mathbb{P}(X = x)$ is the discrete-case form of the change of variable between the two conditional distributions.

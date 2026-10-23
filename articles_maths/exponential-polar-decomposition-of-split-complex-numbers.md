@@ -43,7 +43,7 @@ The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exp
 | Uniqueness | $\epsilon$ and $Q_{\log}$ are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
 | Group | $\mathbb{D}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2}$ |
-| Companion | *Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers*, for the reading through the two real coordinates of $Q$ |
+| Companion | *Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number*, for the reading through the two real coordinates of $Q$ |
 | Worked examples | *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*, for the eight cases and the reconstruction tables |
 
 The plan is as follows. The analytic facts and the four components are recalled (§*The Analytic Setting*); the definition, the component sign, the exponent and its components, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved (§*Existence and Uniqueness*); the logarithm, its domain and its fibre are read (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); the numerical cases are collected in *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*. The logarithm is not derived again: §*The Exponent and Its Components* quotes the formula of *Split-Complex Elementary Functions*.
@@ -221,8 +221,8 @@ The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\lo
 **Theorem.** Every split-complex number $Q$ with $N\neq0$ has exactly one exponential polar decomposition
 
 $$
-Q=\epsilon\exp(Q_{\log}), \qquad Q_{\log}=q_{\log}+jq'_{\log}, \qquad
-q_{\log}=\ln r, \quad q'_{\log}=\phi,
+\boxed{\; Q=\epsilon\exp(Q_{\log}), \qquad Q_{\log}=q_{\log}+jq'_{\log}, \qquad
+q_{\log}=\ln r, \quad q'_{\log}=\phi \;}
 $$
 
 with $\epsilon\in\{\pm1,\pm j\}$, $r>0$ and $\phi\in\mathbb{R}$; equivalently
@@ -262,8 +262,8 @@ The decomposition is defined exactly on $\mathbb{D}^\times=\{Q:N\neq0\}$. On the
 *Split-Complex Elementary Functions*, §*The Logarithm*, gives the image, the injectivity and the inverse: $\exp(\mathbb{D})=F$, the kernel is $\{0\}$, and the inverse on $F$ is the logarithm
 
 $$
-Q_{\log}=\tfrac12\ln\bigl(q^2-q'^2\bigr)+j\operatorname{artanh}\frac{q'}{q},
-\qquad Q=q+jq',\quad q>\lvert q'\rvert,
+\boxed{\; Q_{\log}=\tfrac12\ln\bigl(q^2-q'^2\bigr)+j\operatorname{artanh}\frac{q'}{q},
+\qquad Q=q+jq',\quad q>\lvert q'\rvert \;}
 $$
 
 and the two compositions hold as stated there. There is no branch to choose and no period: the kernel is $\{0\}$, and the exponential is not periodic.
@@ -325,7 +325,7 @@ $$
 The component multiplies in $(\mathbb{Z}/2\mathbb{Z})^2$, and the two coordinates add. Hence
 
 $$
-\mathbb{D}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2.
+\boxed{\; \mathbb{D}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2 \;}.
 $$
 
 On the future cone the law is the isomorphism $\exp:(F,+)\to(F,\cdot)$ of *Split-Complex Elementary Functions*; the polar coordinates extend it to the whole group by the discrete factor. The law is exact, not a Baker–Campbell–Hausdorff series. The table restates it.
@@ -582,7 +582,8 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 ## Further Reading
 
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the eight cases, the reconstruction tables and the boundary family.
-- [Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers](relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-split-complex-numbers.html), for the reading of the word through the two real coordinates of $Q$.
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the reading of the word through the two real coordinates of $Q$.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the future cone.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the algebraic modulus–unit form.
 - [Rational-Chart Polar Decomposition of Split-Complex Numbers](rational-chart-polar-decomposition-of-split-complex-numbers.html), for the rational coordinate on the unit factor.

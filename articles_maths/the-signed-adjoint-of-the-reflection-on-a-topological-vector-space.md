@@ -14,7 +14,7 @@ Throughout, $E$ is a Hausdorff locally convex algebra over $\mathbb{K}$ with a u
 **Theorem (the reflection is fixed by its own signed inner sandwich).** For a reflection $r$ whose inner sandwich is $\Theta^{\alpha_{r}}_{r,r^{-1}}$ one has
 
 $$
-\Theta^{\alpha_{r}}_{r,r^{-1}} = \mathrm{id} ,
+\boxed{\;\Theta^{\alpha_{r}}_{r,r^{-1}} = \mathrm{id}\;} ,
 $$
 
 so the reflection is fixed by its own signed sandwich; its trace-adjoint is itself,
@@ -32,13 +32,13 @@ and the reflection is both self-adjoint and unitary for its own signed structure
 **Theorem (the adjoint of the signed inner sandwich).** For an arbitrary trace-preserving grade involution $\alpha$ the signed inner sandwich of the reflection has the trace-adjoint
 
 $$
-(\Theta^{\alpha}_{r,r^{-1}})^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)} ,
+\boxed{\;(\Theta^{\alpha}_{r,r^{-1}})^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}\;} ,
 $$
 
 the signed sandwich by the image of $r$ under the grade involution; the sandwich is therefore self-adjoint exactly when $\Theta^{\alpha}_{r,r^{-1}} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, that is exactly when
 
 $$
-\alpha(r) = r ,
+\boxed{\;\alpha(r) = r\;} ,
 $$
 
 and it is unitary for every $\alpha$.

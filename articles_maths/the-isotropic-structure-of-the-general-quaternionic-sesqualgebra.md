@@ -15,7 +15,7 @@ $$
 **Theorem (the shape of the null set).** In the splitting $\tilde{Q}=c+v$ of the algebra into its centre and vector parts, with $c\in\mathbb{C}_{\mathbb{B}}$ the scalar part and $v\in\mathbb{V}_{\mathbb{B}}$ the vector part,
 
 $$
-\mathcal{K}=\{\tilde{Q}:\|c\|_E=\|v\|_E\};
+\boxed{\; \mathcal{K}=\{\tilde{Q}:\|c\|_E=\|v\|_E\} \;};
 $$
 
 it is a real algebraic cone with apex the origin, homogeneous of degree two; its dimension and its singular point are *The Krein Level Sets and the Hyperbolic Structure*.
@@ -31,9 +31,9 @@ it is a real algebraic cone with apex the origin, homogeneous of degree two; its
 **Theorem (the Witt index and the maximal isotropic subspaces).** The Witt index is $\min(n,m)$: it is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. A maximal totally isotropic complex subspace is $\mathbb{C}(e_t+\vec e_x)$, and a maximal totally isotropic real subspace is the plane
 
 $$
-\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\},
+\boxed{\; \mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\},
 \qquad
-e_t+\vec e_x\ \text{and}\ i(e_t+\vec e_x)\ \text{isotropic, mutually orthogonal}.
+e_t+\vec e_x\ \text{and}\ i(e_t+\vec e_x)\ \text{isotropic, mutually orthogonal} \;}.
 $$
 
 Every totally isotropic subspace is contained in a maximal one, and the automorphism group $\mathrm{U}(1,3)$ acts transitively on the maximal ones.
@@ -49,8 +49,8 @@ The index is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$, and it can be comp
 **Theorem (the index by a maximal definite subspace).** A definite subspace meets a totally isotropic subspace only at the origin. Hence a totally isotropic subspace $\mathbb{W}$ maps injectively into the two quotients $\mathbb{B}/\mathbb{W}_{-}$ and $\mathbb{B}/\mathbb{W}_{+}$, for every maximal negative definite subspace $\mathbb{W}_{-}$ and every maximal positive definite subspace $\mathbb{W}_{+}$, and
 
 $$
-\dim_{\mathbb{C}}\mathbb{W}\leq\dim_{\mathbb{C}}\bigl(\mathbb{B}/\mathbb{W}_{-}\bigr)=n,\qquad
-\dim_{\mathbb{C}}\mathbb{W}\leq\dim_{\mathbb{C}}\bigl(\mathbb{B}/\mathbb{W}_{+}\bigr)=m .
+\boxed{\; \dim_{\mathbb{C}}\mathbb{W}\leq\dim_{\mathbb{C}}\bigl(\mathbb{B}/\mathbb{W}_{-}\bigr)=n,\qquad
+\dim_{\mathbb{C}}\mathbb{W}\leq\dim_{\mathbb{C}}\bigl(\mathbb{B}/\mathbb{W}_{+}\bigr)=m \;}.
 $$
 
 Therefore the Witt index is at most $\min(n,m)$, and the bound is attained.

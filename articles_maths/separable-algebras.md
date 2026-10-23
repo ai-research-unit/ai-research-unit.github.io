@@ -52,7 +52,7 @@ It suffices to test one extension: $A$ is separable if and only if $A \otimes_F 
 **Theorem (the structure of separable algebras).** Let $A$ be a finite-dimensional unital $F$-algebra. Then $A$ is separable over $F$ if and only if
 
 $$
-A \;\cong\; \prod_{i=1}^r M_{n_i}(D_i)
+\boxed{\;A \;\cong\; \prod_{i=1}^r M_{n_i}(D_i)\;}
 $$
 
 where each $D_i$ is a finite-dimensional division algebra over $F$ whose centre $Z(D_i)$ is a finite separable field extension of $F$.
@@ -71,7 +71,7 @@ where each $D_i$ is a finite-dimensional division algebra over $F$ whose centre 
 2. the multiplication map $\mu : A^{\mathrm{e}} \to A$ splits as a homomorphism of $A^{\mathrm{e}}$-modules, that is, there is an $A$-bimodule map $s : A \to A^{\mathrm{e}}$ with $\mu \circ s = \mathrm{id}_A$;
 3. there is an idempotent $e \in A^{\mathrm{e}}$ with $\mu(e) = 1$, where $e = \sum_i x_i \otimes y_i$ satisfies
 $$
-\sum_i x_i y_i = 1, \qquad \sum_i a x_i \otimes y_i = \sum_i x_i \otimes y_i a \quad \text{for all } a \in A .
+\boxed{\;\sum_i x_i y_i = 1, \qquad \sum_i a x_i \otimes y_i = \sum_i x_i \otimes y_i a \quad \text{for all } a \in A\;} .
 $$
 
 The element $e$ is the **separability idempotent**; condition 3 is the explicit form of condition 2, since an $A^{\mathrm{e}}$-linear splitting is determined by the image $s(1) = e$, and $\mu\circ s = \mathrm{id}$ says $\mu(e) = 1$ while $s$ being $A^{\mathrm{e}}$-linear says $ae = ea$ for all $a$ under the identification of $A$ with the diagonal copy of $A^{\mathrm{e}}$.
@@ -166,7 +166,7 @@ That the product is well defined and gives a group rests on the same facts as ov
 **Theorem (standard).** For a commutative ring $R$ the Azumaya Brauer group sits in a natural exact sequence
 
 $$
-1 \longrightarrow \operatorname{Pic}(R) \longrightarrow \operatorname{Br}(R) \longrightarrow \operatorname{Br}'(R),
+\boxed{\;1 \longrightarrow \operatorname{Pic}(R) \longrightarrow \operatorname{Br}(R) \longrightarrow \operatorname{Br}'(R)\;},
 $$
 
 in which the first map sends an invertible module $L$ to the Azumaya algebra $\operatorname{End}_R(L)$ and the second is the comparison map to the cohomological Brauer group $\operatorname{Br}'(R)$, defined by the étale cohomology of the sheaf of units. The sequence expresses that the Azumaya algebras are the algebraic part of the cohomological Brauer group, and that the kernel of the comparison is the Picard group of invertible modules.

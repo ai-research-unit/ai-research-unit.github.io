@@ -20,7 +20,7 @@ for every finite family $x_1,\dots,x_n\in G$ and scalars $c_1,\dots,c_n\in\mathb
 **Theorem (elementary properties).** A continuous $\phi$ is positive definite if and only if the function $\phi^{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ is, and then
 
 $$
-\phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0 ;
+\boxed{\;\phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0\;} ;
 $$
 
 if $\phi(e) = 0$ then $\phi\equiv0$, and every positive definite function is bounded with $\|\phi\|_\infty = \phi(e)$.
@@ -58,7 +58,7 @@ $$
 and a cyclic vector $\xi_\phi = S(\text{normalised approximate identity})$ with
 
 $$
-\phi(x) = \langle\pi_\phi(x)\xi_\phi, \xi_\phi\rangle , \qquad \|\xi_\phi\|^2 = \phi(e) .
+\boxed{\;\phi(x) = \langle\pi_\phi(x)\xi_\phi, \xi_\phi\rangle , \qquad \|\xi_\phi\|^2 = \phi(e)\;} .
 $$
 
 **Proof.** The quotient by the null space of the positive semidefinite form is a pre-Hilbert space, and its completion is $\mathcal{H}_\phi$. The left translation $L_x$ is isometric for the form, $\langle SL_xf, SL_xg\rangle_\phi = \langle Sf,Sg\rangle_\phi$, because $\phi$ is invariant under this substitution in its argument; hence $L_x$ descends to a unitary operator $\pi_\phi(x)$ on $\mathcal{H}_\phi$, and $\pi_\phi(xy) = \pi_\phi(x)\pi_\phi(y)$ because $L_{xy} = L_xL_y$. Continuity of $x\mapsto\pi_\phi(x)$ follows from the continuity of translation in $C_c(G)$ and the bound $\|S(L_xf) - Sf\|^2 = 2\|Sf\|^2 - 2\,\mathrm{Re}\langle S(L_xf),Sf\rangle_\phi$, whose last term is continuous in $x$. The vector $\xi_\phi = S(u)$ for a normalised approximate identity $u$ of $L^1(G)$ is cyclic because $S(C_c(G))$ is dense, and $\langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle_\phi = \langle S(L_xu), S(u)\rangle_\phi\to\phi(x)$.
@@ -72,7 +72,7 @@ $$
 **Theorem (the representations separate the points).** For every $x\neq e$ in $G$ there is a continuous unitary representation $\pi$ with $\pi(x)\neq 1$. Equivalently, the map
 
 $$
-j : G\longrightarrow \prod_{\pi}\mathcal{U}(\mathcal{H}_\pi), \qquad j(x) = (\pi(x))_\pi ,
+\boxed{\;j : G\longrightarrow \prod_{\pi}\mathcal{U}(\mathcal{H}_\pi), \qquad j(x) = (\pi(x))_\pi\;} ,
 $$
 
 the product over the continuous unitary representations, is injective, and the Gelfand–Raikov topology on $G$ is the original one.

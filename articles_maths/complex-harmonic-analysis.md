@@ -95,8 +95,7 @@ $$
 
 with
 
-$$
-\|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle.
+$$ \boxed{\;\|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle\;}.
 $$
 
 This is the Plancherel theorem for $\mathbb{R}^2$, written in complex notation.
@@ -137,8 +136,7 @@ $$
 
 **Convolution theorem.** If $f, g \in L^1(\mathbb{C})$, then
 
-$$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
+$$ \boxed{\;\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)\;}.
 $$
 
 The convolution is the additive convolution. There is also a **multiplicative convolution** on $\mathbb{C}^\times$, defined by
@@ -385,8 +383,7 @@ where the integral is over the line with normal direction $(\cos\theta, \sin\the
 
 **Theorem (Fourier Slice).** The one-dimensional Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:
 
-$$
-\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta).
+$$ \boxed{\;\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta)\;}.
 $$
 
 **Proof.** Write the definition of the Radon transform, take the Fourier transform in $t$, and change variables.

@@ -17,7 +17,7 @@ The Krein space, the fundamental symmetry and the form are *Krein Spaces* and *T
 **Proposition (characterisation and calculus).** $T^{\dagger}$ is the unique bounded operator with
 
 $$
-[Tx,y] = [x,T^{\dagger}y] \qquad \text{for all } x, y\in K ;
+\boxed{\;[Tx,y] = [x,T^{\dagger}y] \qquad \text{for all } x, y\in K\;} ;
 $$
 
 it satisfies $(T^{\dagger})^{\dagger} = T$, $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, $(\alpha T + \beta S)^{\dagger} = \bar\alpha T^{\dagger} + \bar\beta S^{\dagger}$, and $\|T^{\dagger}\| = \|T\|$ for the Hilbert norm.
@@ -67,7 +67,7 @@ it satisfies $(T^{\dagger})^{\dagger} = T$, $(ST)^{\dagger} = T^{\dagger}S^{\dag
 **Definition.** The **$J$-positive cone** is
 
 $$
-\{T : T = T^{\dagger},\ [Tx,x]\geq0 \text{ for every } x\in K\} .
+\boxed{\;\{T : T = T^{\dagger},\ [Tx,x]\geq0 \text{ for every } x\in K\}\;} .
 $$
 
 **Proposition (translation to Hilbert positivity).** $T$ is $J$-positive if and only if $T = T^{\dagger}$ and $JT\geq0$ (Hilbert-positive). So the $J$-positive cone is the image under the map $T\mapsto JT$ of the Hilbert positive cone intersected with the $J$-self-adjoint condition.

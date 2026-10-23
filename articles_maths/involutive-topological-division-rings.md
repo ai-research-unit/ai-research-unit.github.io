@@ -16,7 +16,7 @@ Throughout, $D$ is a topological division ring, Hausdorff, with centre $Z(D)$; $
 **Theorem (closedness and the additive decomposition).** Both $D^\sigma$ and $\mathrm{Skew}(D)$ are closed in $D$, being the equalizers of the continuous maps $\sigma$ and $\mathrm{id}$, respectively $\sigma$ and $-\mathrm{id}$; they are additive subgroups. When $2 = 1+1$ is invertible in $D$ the averaging elements $\tfrac12(x+\sigma(x))$ and $\tfrac12(x-\sigma(x))$ are continuous in $x$ and
 
 $$
-D = D^\sigma \oplus \mathrm{Skew}(D)
+\boxed{\;D = D^\sigma \oplus \mathrm{Skew}(D)\;}
 $$
 
 is a topological direct sum of additive topological groups; the projections are $\tfrac12(\mathrm{id}\pm\sigma)$. When $2$ is not invertible the two sets meet in the elements of order two of the characteristic, and the decomposition is not available.
@@ -44,13 +44,13 @@ is a topological direct sum of additive topological groups; the projections are 
 **Theorem (the norm form).** For every $x\in D$ the norm form $N(x) = x\sigma(x)$ is self-adjoint,
 
 $$
-\sigma(N(x)) = N(x) ,
+\boxed{\;\sigma(N(x)) = N(x)\;} ,
 $$
 
 and $N(x) = 0$ if and only if $x = 0$; hence $N$ is anisotropic. The norm form of $\sigma(x)$ is the $\sigma$-image of the norm form, $N(\sigma(x)) = \sigma(N(x))$, and the norm-one set
 
 $$
-\mathrm{U}(D,\sigma) = \{x\in D^\times : N(x) = 1\}
+\boxed{\;\mathrm{U}(D,\sigma) = \{x\in D^\times : N(x) = 1\}\;}
 $$
 
 is a closed subgroup of $D^\times$.

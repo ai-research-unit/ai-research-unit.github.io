@@ -73,7 +73,7 @@ the diagonal is $h(X,X) = \lvert X_{11}\rvert^{2} + \lvert X_{21}\rvert^{2} \geq
 **Theorem (Cauchy–Schwarz).** Let $h$ be positive definite. Then
 
 $$
-\lvert h(x,y)\rvert^{2} \leq \|x\|^{2}\|y\|^{2} \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert h(x,y)\rvert \leq \|x\|\,\|y\| ,
+\boxed{\;\lvert h(x,y)\rvert^{2} \leq \|x\|^{2}\|y\|^{2} \quad \text{in } k, \qquad \text{equivalently} \qquad \lvert h(x,y)\rvert \leq \|x\|\,\|y\|\;} ,
 $$
 
 for all $x, y \in A$, with $\lvert\cdot\rvert$ the modulus of the base.
@@ -119,7 +119,7 @@ The form is positive definite, so the left side is $\geq 0$, and multiplying the
 **Theorem (the triangle inequality).** Let $h$ be positive definite. Then
 
 $$
-\|x + y\| \leq \|x\| + \|y\| .
+\boxed{\;\|x + y\| \leq \|x\| + \|y\|\;} .
 $$
 
 *Proof.* Expanding the diagonal of a sum by the two slot rules,
@@ -181,7 +181,7 @@ so the involution is an isometry of the normed module and is continuous.
 **Theorem (the diagonal computes the norm).** Under the same hypotheses the norm is determined by the Hermitian squares,
 
 $$
-\|x\|^{2} = \|x^{*}x\| ,
+\boxed{\;\|x\|^{2} = \|x^{*}x\|\;} ,
 $$
 
 and the scalar reading of the same element is the form at the two equal arguments, $h(x,x) = \varphi(x^{*}x)$ for the functional $\varphi$ of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.

@@ -16,7 +16,7 @@ $$
 
 **Theorem ($\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$).** $\mathsf{M}_2$ restricts to an isomorphism of groups $\mathsf{M}_2:\mathrm{U}(\mathbb{B})\to \mathrm{U}(2)$. In particular $\mathrm{U}(\mathbb{B})$ is a compact Lie group of real dimension four, and its elements are exactly the biquaternions of the form
 
-$$ \boxed{\;\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1\;}, $$
+$$ \tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1, $$
 
 that is, scalar multiples of unit quaternions by phases.
 

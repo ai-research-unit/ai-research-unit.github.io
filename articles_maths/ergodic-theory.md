@@ -99,7 +99,7 @@ The classification shows that the ergodic hierarchy is a hierarchy of the spectr
 **Theorem (von Neumann).** Let $T$ be measure-preserving and let $P$ be the orthogonal projection of $L^2(X,\mu)$ onto the fixed space $\ker(U_T - I)$. Then for every $f \in L^2$,
 
 $$
-\frac{1}{n}\sum_{k=0}^{n-1}U_T^kf \longrightarrow Pf \qquad \text{in } L^2.
+\boxed{\;\frac{1}{n}\sum_{k=0}^{n-1}U_T^kf \longrightarrow Pf \qquad \text{in } L^2\;}.
 $$
 
 *Proof.* Decompose $f = Pf + (f - Pf)$ according to $L^2 = \ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}$. The first summand is fixed and its averages are $Pf$. For the second, it suffices to treat $f = g\circ T - g$: the averages telescope,
@@ -128,7 +128,7 @@ $\int_{\{M_Nf>0\}}f\,d\mu = \sum_{k=0}^{N}\int_{\{\text{first positive at }k\}}f
 **Theorem (Birkhoff pointwise ergodic theorem).** Let $T$ be measure-preserving and let $f \in L^1(X,\mu)$. Then the averages converge a.e. and in $L^1$:
 
 $$
-\frac{1}{n}\sum_{k=0}^{n-1}f(T^kx) \longrightarrow f^*(x) \qquad \text{a.e., with } f^* \in L^1, \quad f^*\circ T = f^* \text{ a.e.,} \quad \int f^*\,d\mu = \int f\,d\mu.
+\boxed{\;\frac{1}{n}\sum_{k=0}^{n-1}f(T^kx) \longrightarrow f^*(x) \qquad \text{a.e., with } f^* \in L^1, \quad f^*\circ T = f^* \text{ a.e.,} \quad \int f^*\,d\mu = \int f\,d\mu\;}.
 $$
 
 If $T$ is ergodic then $f^* = \int f\,d\mu$ a.e.
@@ -190,7 +190,7 @@ $$
 where the $\lambda_i(x)$ are the Lyapunov exponents of $T$ at $x$ and the sum is over the positive ones; and if in addition $\mu$ has no zero Lyapunov exponents, then the **Pesin entropy formula**
 
 $$
-h_\mu(T) = \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x)
+\boxed{\;h_\mu(T) = \int \sum_{\lambda_i(x) > 0}\lambda_i(x)\,d\mu(x)\;}
 $$
 
 holds.

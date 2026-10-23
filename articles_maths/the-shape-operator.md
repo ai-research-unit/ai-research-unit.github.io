@@ -50,7 +50,7 @@ where $\nabla$ is the Levi-Civita connection of the induced metric $g$. In parti
 **Theorem.** The shape operator is self-adjoint for the induced metric:
 
 $$
-g\bigl(A(X), Y\bigr) = g\bigl(Y, A(X)\bigr) = g\bigl(X, A(Y)\bigr) \qquad \text{equivalently} \qquad \mathrm{II}(X, Y) = \mathrm{II}(Y, X) .
+\boxed{\;g\bigl(A(X), Y\bigr) = g\bigl(Y, A(X)\bigr) = g\bigl(X, A(Y)\bigr) \qquad \text{equivalently} \qquad \mathrm{II}(X, Y) = \mathrm{II}(Y, X)\;} .
 $$
 
 **Proof.** The torsion-free property of $\bar\nabla$ gives $\bar\nabla_XY - \bar\nabla_YX = [X, Y]$, which is tangent; taking normal parts and using the Gauss formula, the left side has normal part $\mathrm{II}(X,Y)\nu - \mathrm{II}(Y,X)\nu$, and the right side has no normal part, so $\mathrm{II}(X,Y)=\mathrm{II}(Y,X)$. Passing from the tensor to the operator by the metric gives $g(A(X),Y)=g(X,A(Y))$, since $g(A(X),Y)=\mathrm{II}(X,Y)=\mathrm{II}(Y,X)=g(A(Y),X)=g(X,A(Y))$.
@@ -64,7 +64,7 @@ $$
 **Theorem (Gauss).** For tangent vectors $X, Y, Z, W$ of $N$, the curvature tensors of $N$ and of $\bar M$ are related by
 
 $$
-\bar R(X, Y, Z, W) = R(X, Y, Z, W) + \mathrm{II}(X, Z)\,\mathrm{II}(Y, W) - \mathrm{II}(X, W)\,\mathrm{II}(Y, Z),
+\boxed{\;\bar R(X, Y, Z, W) = R(X, Y, Z, W) + \mathrm{II}(X, Z)\,\mathrm{II}(Y, W) - \mathrm{II}(X, W)\,\mathrm{II}(Y, Z)\;},
 $$
 
 equivalently, in operator form,
@@ -101,7 +101,7 @@ and the covariant derivative of the second fundamental form is $(\nabla_X\mathrm
 **Theorem (Codazzi).** For tangent vectors $X, Y, Z$,
 
 $$
-\bar R(X, Y, Z, \nu) = (\nabla_X\mathrm{II})(Y, Z) - (\nabla_Y\mathrm{II})(X, Z) = g\bigl((\nabla_XA)(Y) - (\nabla_YA)(X),\, Z\bigr),
+\boxed{\;\bar R(X, Y, Z, \nu) = (\nabla_X\mathrm{II})(Y, Z) - (\nabla_Y\mathrm{II})(X, Z) = g\bigl((\nabla_XA)(Y) - (\nabla_YA)(X),\, Z\bigr)\;},
 $$
 
 where $\bar R(X,Y,Z,\nu) = \bar g(\bar R(X,Y)Z, \nu)$ is the normal component of the ambient curvature.

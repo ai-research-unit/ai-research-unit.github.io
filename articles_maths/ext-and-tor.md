@@ -72,7 +72,7 @@ natural in the sequence.
 **Theorem (Yoneda).** For $n\ge1$ the group $\operatorname{Ext}_R^n(M,N)$ is naturally isomorphic to the group of equivalence classes of **$n$-fold extensions**, that is, exact sequences
 
 $$
-0\to N\to E_{n-1}\to E_{n-2}\to\cdots\to E_0\to M\to0,
+\boxed{\;0\to N\to E_{n-1}\to E_{n-2}\to\cdots\to E_0\to M\to0\;},
 $$
 
 under a suitable equivalence relation, with the Baer-sum addition. For $n=1$ this reduces to the previous theorem.
@@ -140,7 +140,7 @@ For a complex of free modules the cohomology with coefficients is computed by th
 **Theorem (universal coefficients, cohomology).** Let $C_\bullet$ be a chain complex of free modules over a principal ideal domain $R$, and let $N$ be an $R$-module. For every $n$ there is a natural short exact sequence
 
 $$
-0\longrightarrow\operatorname{Ext}_R^1(H_{n-1}(C_\bullet),N)\longrightarrow H^n(\operatorname{Hom}_R(C_\bullet,N))\longrightarrow\operatorname{Hom}_R(H_n(C_\bullet),N)\longrightarrow0,
+\boxed{\;0\longrightarrow\operatorname{Ext}_R^1(H_{n-1}(C_\bullet),N)\longrightarrow H^n(\operatorname{Hom}_R(C_\bullet,N))\longrightarrow\operatorname{Hom}_R(H_n(C_\bullet),N)\longrightarrow0\;},
 $$
 
 which splits, though not naturally.
@@ -164,7 +164,7 @@ which splits, though not naturally.
 **Theorem (Künneth, algebraic form).** Let $R$ be a principal ideal domain and let $C_\bullet,D_\bullet$ be chain complexes of free $R$-modules with $C_\bullet$ bounded below. For every $n$ there is a natural short exact sequence
 
 $$
-0\longrightarrow\bigoplus_{p+q=n}H_p(C_\bullet)\otimes_RH_q(D_\bullet)\longrightarrow H_n(C_\bullet\otimes_RD_\bullet)\longrightarrow\bigoplus_{p+q=n-1}\operatorname{Tor}_1^R(H_p(C_\bullet),H_q(D_\bullet))\longrightarrow0,
+\boxed{\;0\longrightarrow\bigoplus_{p+q=n}H_p(C_\bullet)\otimes_RH_q(D_\bullet)\longrightarrow H_n(C_\bullet\otimes_RD_\bullet)\longrightarrow\bigoplus_{p+q=n-1}\operatorname{Tor}_1^R(H_p(C_\bullet),H_q(D_\bullet))\longrightarrow0\;},
 $$
 
 which splits, though not naturally.

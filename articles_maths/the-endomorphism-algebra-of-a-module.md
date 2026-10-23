@@ -26,7 +26,7 @@ For a free module the endomorphism algebra is a matrix algebra, and the matrix i
 **Theorem.** For $n \geq 1$ there is an isomorphism of $R$-algebras
 
 $$
-\operatorname{End}_A({}_A A^n) \xrightarrow{\ \sim\ } M_n(A^{\mathrm{opp}}),
+\boxed{\;\operatorname{End}_A({}_A A^n) \xrightarrow{\ \sim\ } M_n(A^{\mathrm{opp}})\;},
 $$
 
 given on the row $e_i$ of the standard basis by $f(e_j)=\sum_i e_i\,a_{ij}$, so that $f(v)=vX$ for the matrix $X=(a_{ij})$, and the product on the right is the matrix product in $A^{\mathrm{opp}}$.
@@ -56,7 +56,7 @@ The two descriptions combine into the structure theorem for the endomorphism alg
 **Theorem.** Let $M=S_1^{n_1}\oplus\cdots\oplus S_k^{n_k}$ with the $S_i$ pairwise non-isomorphic simple modules and $D_i=\operatorname{End}_A(S_i)$. Then
 
 $$
-E \cong M_{n_1}(D_1) \times \cdots \times M_{n_k}(D_k)
+\boxed{\;E \cong M_{n_1}(D_1) \times \cdots \times M_{n_k}(D_k)\;}
 $$
 
 as $R$-algebras, and $M$ is the direct sum of the natural modules $D_i^{\,n_i}$ over the factors.
@@ -102,7 +102,7 @@ $$
 **Corollary.** For a free module ${}_A A^n$,
 
 $$
-Z(\operatorname{End}_A(A^n)) \cong Z(A^{\mathrm{opp}}) = Z(A),
+\boxed{\;Z(\operatorname{End}_A(A^n)) \cong Z(A^{\mathrm{opp}}) = Z(A)\;},
 $$
 
 the scalar matrices with entries in the centre of the algebra.

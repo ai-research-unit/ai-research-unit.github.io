@@ -58,7 +58,7 @@ The lemma is the step that converts the vanishing of an integral against every v
 **Theorem (Euler–Lagrange equation).** Let $\Omega$ be bounded, let $L$ be of class $C^1$ and let $w$ be a stationary point of $J$ of class $C^2$ with respect to variations $v \in C_c^\infty(\Omega)$, that is, with $v$ vanishing near $\partial\Omega$. Then
 
 $$
-\partial L/\partial w\bigl(x,w,\nabla w\bigr) - \sum_{i=1}^{n}\frac{\partial}{\partial x_i}\Bigl(\partial L/\partial p_i\bigl(x,w,\nabla w\bigr)\Bigr) = 0
+\boxed{\;\partial L/\partial w\bigl(x,w,\nabla w\bigr) - \sum_{i=1}^{n}\frac{\partial}{\partial x_i}\Bigl(\partial L/\partial p_i\bigl(x,w,\nabla w\bigr)\Bigr) = 0\;}
 $$
 
 at every point of $\Omega$.
@@ -259,7 +259,7 @@ and inherits the regularity theorem of the preceding article.
 **Theorem (Lagrange multipliers).** Let $J, K_1,\dots,K_m$ be $C^1$ functionals on an open subset of a Banach space $V$ and let $w$ be a stationary point of $J$ subject to the constraints $K_j(w)=0$, with the derivatives $DK_j(w)$ linearly independent. Then there are constants $\lambda_1,\dots,\lambda_m$ with
 
 $$
-DJ(w) = \sum_{j=1}^m\lambda_j\,DK_j(w),
+\boxed{\;DJ(w) = \sum_{j=1}^m\lambda_j\,DK_j(w)\;},
 $$
 
 so that $w$ is a stationary point of the unconstrained functional $J - \sum_j\lambda_jK_j$.
@@ -309,7 +309,7 @@ where $H$ is the Hamiltonian of the Legendre transform above and the conjugate m
 **Theorem (Noether).** Let $G$ be a one-parameter group of transformations of the variables $(x,w)$ leaving the functional $J$ invariant, with infinitesimal generator $(\xi,\eta)$. Then the quantity
 
 $$
-N = \xi\Bigl(L - \sum_iw_i'\partial L/\partial p_i\Bigr) + \sum_i\eta_i\partial L/\partial p_i
+\boxed{\;N = \xi\Bigl(L - \sum_iw_i'\partial L/\partial p_i\Bigr) + \sum_i\eta_i\partial L/\partial p_i\;}
 $$
 
 is constant along every solution of the Euler–Lagrange equation.

@@ -44,7 +44,7 @@ Let $(P, \leq)$ be a poset.
 **Definition.** An **order automorphism** of $P$ is a bijection $f : P \to P$ such that
 
 $$
-x \leq y \quad\Longleftrightarrow\quad f(x) \leq f(y) \qquad \text{for all } x, y \in P .
+\boxed{\;x \leq y \quad\Longleftrightarrow\quad f(x) \leq f(y) \qquad \text{for all } x, y \in P\;} .
 $$
 
 The set of order automorphisms of $P$ is written $\operatorname{Aut}(P)$, and $\operatorname{End}(P)$
@@ -174,7 +174,7 @@ meet, by *Order Theory and Lattices*.
 **Proposition.** Every order automorphism $f$ of $P$ maps down-sets to down-sets, and the map
 
 $$
-O(f) : D \mapsto f(D), \qquad O(P) \to O(P),
+\boxed{\;O(f) : D \mapsto f(D), \qquad O(P) \to O(P)\;},
 $$
 
 is an order automorphism of $O(P)$. The assignment $f \mapsto O(f)$ is a bijection between

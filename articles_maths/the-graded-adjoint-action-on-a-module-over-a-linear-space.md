@@ -13,7 +13,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V = V_0\oplus V_1$ is a graded line
 **Definition.** For an invertible $a \in E^{\times}$ the **adjoint action** of $a$ on $E$ is
 
 $$
-\mathrm{Ad}_a(X) = a\,X\,a^{-1} .
+\boxed{\;\mathrm{Ad}_a(X) = a\,X\,a^{-1}\;} .
 $$
 
 **Proposition.** $\mathrm{Ad}$ is a homomorphism $E^{\times} \to \operatorname{Aut}(E)$ with kernel the centre $Z(E)^{\times}$, so the group of inner automorphisms of $E$ is $E^{\times}/Z(E)^{\times}$; the adjoint action on a graded module $M$ is defined by the same formula, $\mathrm{Ad}_a(m) = a\,m$, together with its inverse, and it is the case $\alpha=\mathrm{id}$ of the signed inner sandwich $\mathrm{Ad}_a\circ\alpha$ of *The Signed Sandwich on a Linear Space*.

@@ -24,8 +24,8 @@ The form is a real quadratic form of **signature $(2,2)$**, read directly from t
 $$
 \boxed{\;
 \langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} \qquad (\tilde q_1, \tilde q_2 \in \mathbb{H}_{\mathrm{s}})
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** The product $\tilde q_1\tilde{q}_1^{\natural}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q_1, \tilde q_2$,
 
@@ -90,8 +90,8 @@ The split-quaternion norm decides invertibility and the Euclidean norm decides t
 $$
 \boxed{\;
 q_t^2 + q_x^2 = q_y^2 + q_z^2
-\;}
-$$.
+\;}.
+$$
 
 Writing $A = q_t + iq_x$ and $B = q_y + iq_z$ with $i^2 = -1$, the condition is $|A| = |B|$. The isotropic vectors are therefore parametrised by a pair $(A, B)$ of complex numbers of equal modulus.
 
@@ -131,8 +131,8 @@ When these hold, the inverse is
 $$
 \boxed{\;
 \tilde q_1^{-1} = \frac{\tilde{q}_1^{\natural}}{\langle\tilde q_1\rangle_{\natural}}
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** Suppose first that $\langle\tilde q_1\rangle_{\natural} \neq 0$. Then $\tilde{q}_1^{\natural}/\langle\tilde q_1\rangle_{\natural}$ is a real multiple of $\tilde{q}_1^{\natural}$, and
 

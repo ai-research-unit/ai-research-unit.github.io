@@ -94,7 +94,7 @@ is exact: its cohomology sheaves vanish in positive degree, so it is a **resolut
 3. Fine sheaves are soft and soft sheaves on a paracompact space are acyclic; hence
 
 $$
-    H^i(M,\Omega^k) = 0 \qquad \text{for all } i > 0 \text{ and all } k.
+    \boxed{\;H^i(M,\Omega^k) = 0 \qquad \text{for all } i > 0 \text{ and all } k\;}.
 $$
 
 *Proof.* (1) is the existence of smooth partitions of unity subordinate to a locally finite cover of a manifold, which uses the smooth Urysohn lemma; the cover of a manifold may be taken locally finite because a manifold is paracompact and locally compact. (2) the product of a $k$-form by a smooth function is a $k$-form, compatibly with restriction, so $\Omega^k$ is a $C^\infty$-module, and the multiplication by the $\eta_i$ of a partition of unity exhibits the fineness. (3) is the theorem of *Sheaf Cohomology* that fine sheaves are soft and that soft sheaves on a paracompact space are acyclic.
@@ -114,7 +114,7 @@ for every $k$, and the isomorphism is induced by the comparison of the de Rham r
 **Theorem (de Rham).** Let $M$ be a smooth manifold. There are natural isomorphisms
 
 $$
-H^k_{dR}(M) \cong H^k(M,\underline{\mathbb{R}}) \cong H^k(M;\mathbb{R})
+\boxed{\;H^k_{dR}(M) \cong H^k(M,\underline{\mathbb{R}}) \cong H^k(M;\mathbb{R})\;}
 $$
 
 for every $k$, natural with respect to smooth maps, where the second is the comparison of sheaf and singular cohomology of *Sheaf Cohomology*. In particular $H^k_{dR}(M)$ is a homotopy invariant of $M$, is finite-dimensional with dimension the $k$-th Betti number when $M$ is a closed manifold, and a closed form on a closed oriented manifold is exact if and only if all of its periods over singular cycles vanish.
@@ -136,7 +136,7 @@ with $d_1$ the exterior derivative; hence $E_2^{0,m} = H^m_{dR}(M)$ on the axis 
 **Theorem (the de Rham complex as a differential graded algebra).** The direct sum $\Omega^\bullet = \bigoplus_{k}\Omega^k$, with the wedge product and the exterior derivative, is a sheaf of commutative differential graded algebras over the constant sheaf $\underline{\mathbb{R}}$: the wedge product is graded-commutative and associative and $d$ is a derivation, $d(\alpha\wedge\beta) = d\alpha\wedge\beta + (-1)^k\alpha\wedge d\beta$ for $\alpha\in\Omega^k$. The same structure holds on global sections, and the isomorphisms of the de Rham theorem are isomorphisms of graded algebras in the sense that the wedge product on forms corresponds to the cup product on cohomology:
 
 $$
-[\alpha]\smile[\beta] = [\alpha\wedge\beta] \in H^{k+l}_{dR}(M)\cong H^{k+l}(M;\mathbb{R}).
+\boxed{\;[\alpha]\smile[\beta] = [\alpha\wedge\beta] \in H^{k+l}_{dR}(M)\cong H^{k+l}(M;\mathbb{R})\;}.
 $$
 
 *Proof.* The graded-commutativity and the derivation property of $d$ are the local computations of the written article; the final statement follows because the comparison of the de Rham resolution with an injective resolution of $\underline{\mathbb{R}}$ is a comparison of resolutions by sheaves of differential graded algebras: injective resolutions may be taken to carry a compatible product by the standard construction, and the induced map on cohomology respects the products up to the homotopy that makes the comparison unique. Equivalently, the wedge product of closed forms is closed and the product of exact forms with closed forms is exact, so the product descends to cohomology; the identification with the cup product follows from the naturality of the comparison and its agreement with the algebra structures on the level of the complexes.

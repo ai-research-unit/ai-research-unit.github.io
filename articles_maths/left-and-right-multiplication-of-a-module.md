@@ -30,7 +30,7 @@ $$
 Consequently
 
 $$
-L : A \to \operatorname{End}_R(M), \qquad a \mapsto L_a,
+\boxed{\;L : A \to \operatorname{End}_R(M), \qquad a \mapsto L_a\;},
 $$
 
 is a unital homomorphism of $R$-algebras.
@@ -82,7 +82,7 @@ An $(A,B)$-bimodule carries both actions, and the two are required to commute.
 **Proposition.** On a bimodule the two sides commute,
 
 $$
-L_a R_b = R_b L_a \qquad (a \in A,\ b \in B),
+\boxed{\;L_a R_b = R_b L_a \qquad (a \in A,\ b \in B)\;},
 $$
 
 and this identity is exactly the bimodule axiom $a(mb)=(am)b$.
@@ -118,7 +118,7 @@ The two one-sided images are mutual centralizers on the regular module.
 **Proposition.** In $\operatorname{End}_R(A)$ the centralizer of $L_A$ is $R_A$ and the centralizer of $R_A$ is $L_A$:
 
 $$
-L_A' = R_A, \qquad R_A' = L_A .
+\boxed{\;L_A' = R_A, \qquad R_A' = L_A\;} .
 $$
 
 *Proof.* A map $f$ commutes with every $L_a$ exactly when $f(ab)=a f(b)$ for all $a,b$, that is, when $f$ is $A$-linear; by *Automorphisms of Modules over an Algebra* the $A$-linear endomorphisms of ${}_A A$ are the right multiplications, so $L_A'=R_A$. The second identity is the same statement read in $A^{\mathrm{opp}}$, or directly: $f(bc)=f(b)c$ for all $b,c$ says $f=R_{f(1)}$.

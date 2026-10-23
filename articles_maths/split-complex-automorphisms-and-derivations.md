@@ -36,7 +36,7 @@ an isomorphism of $\mathbb{R}$-algebras, because multiplication is componentwise
 **Theorem.** Every $\mathbb{R}$-algebra automorphism of $\mathbb{D}$ is either the identity or the conjugation, and these two maps are automorphisms:
 
 $$
-\operatorname{Aut}_{\mathbb{R}}(\mathbb{D}) = \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2, \qquad \bar{\cdot} : q+j q' \longmapsto q-j q'.
+\boxed{\; \operatorname{Aut}_{\mathbb{R}}(\mathbb{D}) = \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2, \qquad \bar{\cdot} : q+j q' \longmapsto q-j q' \;}.
 $$
 
 **Proof.** Let $\sigma$ be an automorphism. Since $\sigma(1) = 1$ and $\sigma$ respects products,
@@ -70,7 +70,7 @@ for all $Q, B \in \mathbb{D}$. The set of all such maps is a real vector space, 
 **Theorem.** The derivation space of the split-complex algebra is zero:
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = 0 .
+\boxed{\; \operatorname{Der}_{\mathbb{R}}(\mathbb{D}) = 0 \;}.
 $$
 
 **Proof (direct).** A derivation satisfies $D(1) = D(1\cdot 1) = D(1) + D(1)$, hence $D(1) = 0$, and by $\mathbb{R}$-linearity $D$ vanishes on every real number. Apply $D$ to the defining relation $j^2 = 1$:
@@ -116,7 +116,7 @@ for all $Q, B \in \mathbb{D}$. The set of all such maps is written $\operatornam
 **Theorem.** The space of $\sigma$-derivations is two-dimensional and is identified with $\mathbb{D}$ itself:
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{D}, \sigma) \;\cong\; \mathbb{D} \;\cong\; \mathbb{R}^2, \qquad D \longmapsto D(j).
+\boxed{\; \operatorname{Der}_{\mathbb{R}}(\mathbb{D}, \sigma) \;\cong\; \mathbb{D} \;\cong\; \mathbb{R}^2, \qquad D \longmapsto D(j) \;}.
 $$
 
 **Proof.** Let $D$ be a $\sigma$-derivation. From the twisted rule applied to $1\cdot 1$,

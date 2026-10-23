@@ -28,7 +28,7 @@ Throughout, $R$ is a topological ring with a **continuous involution** $\sigma$,
 **Theorem (the fixed part of the completion).** Let $\sigma$ be a continuous involution. The fixed part $\widehat{R}^{\widehat{\sigma}}$ and the skew part $\mathrm{Skew}(\widehat{R})$ are closed, being the equalizers of $\widehat\sigma$ with $\mathrm{id}$ and with $-\mathrm{id}$, and they contain the closures $\overline{\iota(R^\sigma)}$ and $\overline{\iota(\mathrm{Skew}(R))}$. When $2$ is invertible in $\widehat{R}$ the inclusions are equalities,
 
 $$
-\widehat{R}^{\widehat{\sigma}} = \overline{\iota(R^\sigma)} , \qquad \mathrm{Skew}(\widehat{R}) = \overline{\iota(\mathrm{Skew}(R))} .
+\boxed{\;\widehat{R}^{\widehat{\sigma}} = \overline{\iota(R^\sigma)} , \qquad \mathrm{Skew}(\widehat{R}) = \overline{\iota(\mathrm{Skew}(R))}\;} .
 $$
 
 **Proof.** The sets are equalizers of continuous maps, hence closed, and they contain the images because $\widehat\sigma\iota = \iota\sigma$. For the converse when $2$ is invertible, let $x$ be fixed and write $x = \lim_i\iota(a_i)$ with $a_i\in R$, possible because $\iota(R)$ is dense; applying $\widehat\sigma$ and using continuity, $\widehat\sigma(x) = \lim_i\iota(\sigma(a_i)) = x$, so $\lim_i\iota(a_i - \sigma(a_i)) = 0$. The elements $\tfrac12(a_i + \sigma(a_i))$ lie in $R^\sigma$ and their images converge to $\tfrac12(x + x) = x$, so $x \in \overline{\iota(R^\sigma)}$. The skew case is identical with the sign reversed.
@@ -36,7 +36,7 @@ $$
 **Proposition (the averaging map and the topological splitting).** Assume $2$ is invertible in $\widehat{R}$ and let $\pi_1 = \tfrac12(\mathrm{id}+\widehat\sigma)$ and $\pi_2 = \tfrac12(\mathrm{id}-\widehat\sigma)$. Then $\pi_1$ and $\pi_2$ are continuous additive projectors with images the fixed and the skew parts, $\pi_1 + \pi_2 = \mathrm{id}$, $\pi_1\pi_2 = 0$, and
 
 $$
-\widehat{R} = \widehat{R}^{\widehat\sigma} \oplus \mathrm{Skew}(\widehat{R})
+\boxed{\;\widehat{R} = \widehat{R}^{\widehat\sigma} \oplus \mathrm{Skew}(\widehat{R})\;}
 $$
 
 is a topological direct sum of additive topological groups. The involution acts as $+1$ on the first summand and $-1$ on the second.

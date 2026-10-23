@@ -57,7 +57,7 @@ sending a closed set to its interior. Both are monotone, and both are order-pres
 **Definition.** Let $P$ and $Q$ be posets and $g : P \to Q$, $h : Q \to P$ monotone maps. Then $g$ is **left adjoint** to $h$, written $g \dashv h$, when
 
 $$
-g(p) \leq q \iff p \leq h(q) \qquad (p \in P,\ q \in Q).
+\boxed{\;g(p) \leq q \iff p \leq h(q) \qquad (p \in P,\ q \in Q)\;}.
 $$
 
 The relation is a **Galois connection**: $g$ is the lower and $h$ the upper adjoint, and each determines the other.
@@ -65,7 +65,7 @@ The relation is a **Galois connection**: $g$ is the lower and $h$ the upper adjo
 **Theorem.** The closure is left adjoint to the interior between the lattice of open sets and the lattice of closed sets:
 
 $$
-C \dashv I, \qquad \overline{U} \subseteq F \iff \Omega \subseteq \operatorname{int} F \qquad (\Omega \in \mathcal{O}(X),\ F \in \mathcal{F}(X)).
+\boxed{\;C \dashv I, \qquad \overline{U} \subseteq F \iff \Omega \subseteq \operatorname{int} F \qquad (\Omega \in \mathcal{O}(X),\ F \in \mathcal{F}(X))\;}.
 $$
 
 **Proof.** Suppose $\overline{U} \subseteq F$. Then $\Omega \subseteq \overline{U} \subseteq F$, and since $\Omega$ is open and $F$ is closed with $\Omega \subseteq F$, the open set $\Omega$ is contained in the largest open set inside $F$, which is $\operatorname{int} F$. Conversely suppose $\Omega \subseteq \operatorname{int} F$. Then $\overline{U} \subseteq \overline{\operatorname{int} F}$, and since $\operatorname{int} F \subseteq F$ with $F$ closed, the closure of $\operatorname{int} F$ is contained in $F$. Hence $\overline{U} \subseteq F$.
@@ -77,7 +77,7 @@ The adjunction is the exact sense in which the interior is the best open approxi
 **Corollary.** The adjunction has the two equivalent forms
 
 $$
-C(\Omega) = \bigcap \{\, F \in \mathcal{F}(X) : \Omega \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, \Omega \in \mathcal{O}(X) : C(\Omega) \subseteq F \,\},
+\boxed{\;C(\Omega) = \bigcap \{\, F \in \mathcal{F}(X) : \Omega \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, \Omega \in \mathcal{O}(X) : C(\Omega) \subseteq F \,\}\;},
 $$
 
 which express each operator through the other.

@@ -56,7 +56,7 @@ with addition $m/s+m'/s'=(s'm+sm')/(ss')$ and scalar action $r(m/s)=(rm)/s$. The
 **Definition.** Let $I \subseteq R$ be an ideal. The **$I$-adic completion** of $M$ is the inverse limit
 
 $$
-\widehat M = \varprojlim_n M/I^nM ,
+\boxed{\;\widehat M = \varprojlim_n M/I^nM\;} ,
 $$
 
 with the projections $\widehat M \to M/I^nM$; the **$I$-adic completion of $R$** is $\widehat R=\varprojlim_n R/I^n$. There is a natural map $\iota:M \to \widehat M$, $m \mapsto (m+I^nM)_n$.
@@ -70,7 +70,7 @@ with the projections $\widehat M \to M/I^nM$; the **$I$-adic completion of $R$**
 **Theorem.** (i) Let $0 \to M' \xrightarrow{\ \alpha\ } M \xrightarrow{\ \beta\ } M'' \to 0$ be exact and put $K_n=\ker(M'/I^nM' \to M/I^nM)$. Then the completed sequence
 
 $$
-0 \to \widehat{M'} \xrightarrow{\ \widehat\alpha\ } \widehat M \xrightarrow{\ \widehat\beta\ } \widehat{M''}
+\boxed{\;0 \to \widehat{M'} \xrightarrow{\ \widehat\alpha\ } \widehat M \xrightarrow{\ \widehat\beta\ } \widehat{M''}\;}
 $$
 
 is exact at $\widehat M$ always, and is exact at $\widehat{M'}$ exactly when $\varprojlim_nK_n=0$; the cokernel of $\widehat\beta$ is $\varprojlim^1_nK_n$. In particular completion is left exact on the sequences for which $M'/I^nM' \to M/I^nM$ is injective for every $n$, and it is not exact in general. (ii) If $R$ is Noetherian and $M$ is finitely generated, completion is exact, and $\widehat M \cong \widehat R \otimes_R M$; moreover $\widehat R$ is a flat $R$-module, so completion is a flat base change along $R \to \widehat R$.
@@ -78,7 +78,7 @@ is exact at $\widehat M$ always, and is exact at $\widehat{M'}$ exactly when $\v
 *Proof.* (i) Since $M \mapsto M/I^nM$ is right exact, the sequences
 
 $$
-0 \to K_n \to M'/I^nM' \to M/I^nM \to M''/I^nM'' \to 0
+\boxed{\;0 \to K_n \to M'/I^nM' \to M/I^nM \to M''/I^nM'' \to 0\;}
 $$
 
 are exact, and the inverse limit is left exact, so $0 \to \varprojlim_nK_n \to \widehat{M'} \to \widehat M \to \widehat{M''}$ is exact; this gives the exactness at $\widehat M$, the criterion at $\widehat{M'}$, and, with the derived long exact sequence of $\varprojlim$ at the following term, the cokernel statement, the systems $M'/I^nM'$ being Mittag-Leffler with vanishing $\varprojlim^1$. (ii) is the Artin–Rees lemma: it gives a stabilisation of the filtrations which makes the passage to the limit exact, and the identification $\widehat M \cong \widehat R \otimes_R M$ follows for finitely generated $M$ once $\widehat R$ is flat; the flatness of $\widehat R$ over a Noetherian $R$ is the standard consequence of Artin–Rees.

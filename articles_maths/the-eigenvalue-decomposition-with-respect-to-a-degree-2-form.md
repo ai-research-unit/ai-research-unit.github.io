@@ -81,7 +81,7 @@ The summand $xe_{j}$ lies in $Ae_{j}$, and the sum $A=\sum_{j}Ae_{j}$ is direct 
 **Theorem.** The eigenprojectors are pairwise orthogonal for $h$:
 
 $$
-h(e_{i},e_{j})=0 \quad (i\neq j).
+\boxed{\;h(e_{i},e_{j})=0 \quad (i\neq j)\;}.
 $$
 
 *Proof.* For $i\neq j$, $e_{i}e_{j}=0$ and $e_{i}^{*}=e_{i}$. By the compatibility,
@@ -145,7 +145,7 @@ The scalar element $a=1$ has the one-term resolution $1=1\cdot1$, with the eigen
 **Theorem.** Let $x\in Ae_{i}$ with $h(x,x)\neq0$. Then
 
 $$
-\lambda_{i}=\frac{h(ax,x)}{h(x,x)} .
+\boxed{\;\lambda_{i}=\frac{h(ax,x)}{h(x,x)}\;} .
 $$
 
 In particular, if $h(e_{i},e_{i})\neq0$, then
@@ -288,7 +288,7 @@ $$
 and the signature of $h$ is the sum of the signatures of the restrictions,
 
 $$
-\operatorname{sig}(h)=\sum_{i=1}^{r}\operatorname{sig}(h|_{Ae_{i}}).
+\boxed{\;\operatorname{sig}(h)=\sum_{i=1}^{r}\operatorname{sig}(h|_{Ae_{i}})\;}.
 $$
 
 *Proof.* The eigenspaces are pairwise orthogonal and sum directly to $A$; the form is block-diagonal with respect to the decomposition. Each restriction is non-degenerate by §*The Eigenspaces as Left Ideals*, so each has a signature, and the signature of an orthogonal direct sum of non-degenerate forms is the sum of the signatures.

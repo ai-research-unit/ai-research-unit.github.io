@@ -194,7 +194,9 @@ $$
 **Theorem (the residual identity).** For every $X\in H(n)$, with $z$ its half-vectorisation,
 
 $$
-\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|PJQz-t\|^{2}.
+\boxed{\;
+\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|PJQz-t\|^{2}
+\;}.
 $$
 
 *Proof.* By the norm identity and the multiplicativity of the row form,
@@ -233,7 +235,9 @@ The theorem is the source's Theorem 3.1. The selection of the least-norm element
 **Theorem (the consistency criterion).** The pair equation has a solution in $H(n)$ if and only if
 
 $$
-\bigl(I_{8ms}-(PJQ)(PJQ)_{\mathrm{MP}}\bigr)t=0,
+\boxed{\;
+\bigl(I_{8ms}-(PJQ)(PJQ)_{\mathrm{MP}}\bigr)t=0
+\;},
 $$
 
 and then the residual is zero and the solution set is that of the preceding theorem.
@@ -247,7 +251,9 @@ and then the residual is zero and the solution set is that of the preceding theo
 **Theorem (the uniqueness criterion).** When the consistency criterion holds, the pair has exactly one solution in $H(n)$ if and only if
 
 $$
-\operatorname{rank}(PJQ)=2n^{2}-n,
+\boxed{\;
+\operatorname{rank}(PJQ)=2n^{2}-n
+\;},
 $$
 
 and then it is the matrix whose four vecs are the column $R(PJQ)_{\mathrm{MP}}t$.

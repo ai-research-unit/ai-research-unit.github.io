@@ -25,7 +25,7 @@ $$
 **Corollary.** The involution $\sigma_k$ is a linear map of the power of order two, so the power splits as the direct sum of its eigenvalue-one and eigenvalue-minus-one parts when $2$ is invertible:
 
 $$
-\operatorname{Sym}^k(M) = \operatorname{Sym}^k(M)^+ \oplus \operatorname{Sym}^k(M)^- .
+\boxed{\;\operatorname{Sym}^k(M) = \operatorname{Sym}^k(M)^+ \oplus \operatorname{Sym}^k(M)^-\;} .
 $$
 
 **Definition.** The **symmetric part** of the power is $\operatorname{Sym}^k(M)^+ = \{u : \sigma_k(u) = u\}$ and the **skew part** is $\operatorname{Sym}^k(M)^- = \{u : \sigma_k(u) = -u\}$; a monomial is **symmetric** when it is fixed and **skew** when it is negated.
@@ -37,7 +37,7 @@ $$
 **Theorem.** Suppose that $M$ decomposes as $M = M^+\oplus M^-$ — which holds when $2$ is invertible or when the involution is split — and let $m = v_1\cdots v_k$ be a monomial with each factor homogeneous with respect to the eigenspace decomposition. Then
 
 $$
-\sigma_k(m) = (-1)^{j}m, \qquad j = \#\{i : v_i \in M^-\},
+\boxed{\;\sigma_k(m) = (-1)^{j}m, \qquad j = \#\{i : v_i \in M^-\}\;},
 $$
 
 the number of the factors drawn from the anti-fixed part. Hence a monomial is symmetric exactly when it has an even number of anti-fixed factors, and skew exactly when the number is odd.
@@ -73,7 +73,7 @@ and the projections onto the two summands are $\tfrac12(\mathrm{id}\pm\sigma_k)$
 **Theorem.** The fixed subalgebra of the symmetric algebra is the direct sum of the symmetric parts of the powers,
 
 $$
-\operatorname{Sym}(M)^\sigma = \bigoplus_{k\ge0}\operatorname{Sym}^k(M)^+ ,
+\boxed{\;\operatorname{Sym}(M)^\sigma = \bigoplus_{k\ge0}\operatorname{Sym}^k(M)^+\;} ,
 $$
 
 and it is a graded subalgebra of $\operatorname{Sym}(M)$; the skew elements form the complementary graded submodule $\bigoplus_k\operatorname{Sym}^k(M)^-$, which is not a subalgebra but satisfies $\operatorname{Sym}(M)^-\cdot\operatorname{Sym}(M)^-\subseteq\operatorname{Sym}(M)^+$.

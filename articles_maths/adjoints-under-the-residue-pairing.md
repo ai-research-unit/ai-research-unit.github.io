@@ -20,7 +20,7 @@ and more generally $\langle x,y\rangle = \mathrm{res}(\tau(x\sigma(y)))$ for a t
 **Theorem (sesquilinearity and the radical).** The residue pairing is additive in each variable and sesquilinear for the residue involution,
 
 $$
-\langle ax,by\rangle = \mathrm{res}(a)\,\bar\sigma\bigl(\mathrm{res}(b)\bigr)\,\langle x,y\rangle , \qquad a,b,x,y\in\mathcal{O} ,
+\boxed{\;\langle ax,by\rangle = \mathrm{res}(a)\,\bar\sigma\bigl(\mathrm{res}(b)\bigr)\,\langle x,y\rangle , \qquad a,b,x,y\in\mathcal{O}\;} ,
 $$
 
 and its radical on the right, $\{x : \langle x,y\rangle = 0 \text{ for all } y\}$, is the maximal ideal $\mathrm{M}$; hence it induces a nondegenerate form on the residue field $k$.
@@ -36,7 +36,7 @@ and its radical on the right, $\{x : \langle x,y\rangle = 0 \text{ for all } y\}
 **Theorem (the adjoint exchanges the sides).** For a unit $a\in\mathcal{O}^\times$ the left and right multiplications are adjointable under the residue pairing, with
 
 $$
-(L_a)^\dagger = R_{\sigma(a)} , \qquad (R_b)^\dagger = L_{\sigma(b)} ,
+\boxed{\;(L_a)^\dagger = R_{\sigma(a)} , \qquad (R_b)^\dagger = L_{\sigma(b)}\;} ,
 $$
 
 so the adjoint of a left multiplication is a **right** multiplication, and conversely; the adjoint operation therefore exchanges the two one-sided families.
@@ -52,7 +52,7 @@ so the adjoint of a left multiplication is a **right** multiplication, and conve
 **Theorem (the self-adjoint elements of the residue pairing).** An element $a\in\mathcal{O}^\times$ is such that $L_a$ is self-adjoint for the residue pairing exactly when
 
 $$
-a \text{ is central modulo } \mathrm{M} \text{ and } \sigma(a) \equiv a \pmod{\mathrm{M}} ,
+\boxed{\;a \text{ is central modulo } \mathrm{M} \text{ and } \sigma(a) \equiv a \pmod{\mathrm{M}}\;} ,
 $$
 
 that is when the residue $\bar a = \mathrm{res}(a)$ is a central self-adjoint element of $k$; the self-adjoint elements in this sense form the central self-adjoint part of the residue field, and they form a subring of $k$ when $k$ is commutative, namely the fixed field $k^{\bar\sigma}$.

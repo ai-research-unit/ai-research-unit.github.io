@@ -37,8 +37,8 @@ object is a **group**, the arrows being its elements.
 reverses the composition:
 
 $$
-(f^{-1})^{-1} = f, \qquad \mathrm{id}_A^{-1} = \mathrm{id}_A, \qquad
-(g \circ f)^{-1} = f^{-1} \circ g^{-1},
+\boxed{\;(f^{-1})^{-1} = f, \qquad \mathrm{id}_A^{-1} = \mathrm{id}_A, \qquad
+(g \circ f)^{-1} = f^{-1} \circ g^{-1}\;},
 $$
 
 and it exchanges the hom-sets, carrying $\mathrm{Hom}(A,B)$ to $\mathrm{Hom}(B,A)$. Hence inversion is

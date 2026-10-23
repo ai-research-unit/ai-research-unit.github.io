@@ -58,7 +58,7 @@ A stopping time is a rule for stopping that uses only the information available 
 **Theorem (Doob decomposition).** Let $\{X_n\}$ be a submartingale. Then there is a martingale $\{M_n\}$ and a predictable increasing process $\{A_n\}$ with $A_0 = 0$ such that
 
 $$
-X_n = M_n + A_n \qquad \text{for all } n,
+\boxed{\;X_n = M_n + A_n \qquad \text{for all } n\;},
 $$
 
 and the decomposition is unique up to an a.s. equivalence. Here predictable means $A_n$ is $\mathcal{F}_{n-1}$-measurable, and increasing means $A_{n+1} \geq A_n$ a.s. The first differences are $A_{n+1} - A_n = \mathbb{E}[X_{n+1} - X_n \mid \mathcal{F}_n]$.
@@ -84,7 +84,7 @@ The maximal inequality is the martingale form of the Kolmogorov inequality of *L
 **Theorem (Doob's $L^{n}$ inequality).** For a nonnegative submartingale and $p > 1$,
 
 $$
-\|X_n^*\|_p \leq \frac{p}{p-1}\,\|X_n\|_p,
+\boxed{\;\|X_n^*\|_p \leq \frac{p}{p-1}\,\|X_n\|_p\;},
 $$
 
 and for a martingale the same inequality holds with $|X|$ in place of $X$ and $X_n^{**} = \max_{k\leq n}|X_k|$.
@@ -146,7 +146,7 @@ Lévy's theorem is the convergence theorem applied to the uniformly integrable m
 **Theorem (optional stopping).** Let $\{X_n\}$ be a uniformly integrable martingale and let $\sigma \leq \tau$ be stopping times. Then $X_\sigma, X_\tau$ are integrable and
 
 $$
-\mathbb{E}[X_\tau \mid \mathcal{F}_\sigma] = X_\sigma \qquad \text{a.s.}; \qquad \text{in particular } \mathbb{E}[X_\tau] = \mathbb{E}[X_0].
+\boxed{\;\mathbb{E}[X_\tau \mid \mathcal{F}_\sigma] = X_\sigma \qquad \text{a.s.}; \qquad \text{in particular } \mathbb{E}[X_\tau] = \mathbb{E}[X_0]\;}.
 $$
 
 *Proof.* The stopped process $X^\tau$ is a uniformly integrable martingale, and by the convergence theorem it converges a.s. and in $L^1$ to $X_\tau$. Applying the martingale property at the stopping time $\sigma$ to the stopped process gives the displayed identity, the measurability of $X_\sigma$ being established by the definition of $\mathcal{F}_\sigma$.

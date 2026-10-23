@@ -18,7 +18,7 @@ This article constructs splitting fields and algebraic closures, proves their un
 
 **(a)** $f$ factors into linear factors in $K[x]$,
 $$
-f = c\,(x - \alpha_1)(x - \alpha_2) \cdots (x - \alpha_n), \qquad c \in F^\times,
+\boxed{\;f = c\,(x - \alpha_1)(x - \alpha_2) \cdots (x - \alpha_n), \qquad c \in F^\times\;},
 $$
 
 **(b)** $K = F(\alpha_1, \ldots, \alpha_n)$ is generated over $F$ by the roots.
@@ -75,7 +75,7 @@ This is why one speaks of *the* splitting field of a polynomial, up to $F$-isomo
 
 Conversely, suppose $K$ is the splitting field over $F$ of a family $\{f_i\}$, let $p \in F[x]$ be irreducible with a root $\alpha \in K$, and let $\beta$ be a root of $p$ in an algebraic closure $\overline{F}$ containing $K$. The simple extensions $F(\alpha)$ and $F(\beta)$ are isomorphic over $F$, both being isomorphic to $F[x]/(p)$; fix $\tau : F(\alpha) \to F(\beta)$ with $\tau(\alpha) = \beta$. The element $\alpha$ lies in the splitting field over $F$ of finitely many members of the family, say $f_1, \ldots, f_m$: write $g = f_1 \cdots f_m$ and $N = F(\text{roots of } g) \subseteq K$. Then $N$ is the splitting field of $g$ over $F(\alpha)$, and $N(\beta)$ is the splitting field of $g$ over $F(\beta)$; by the uniqueness theorem for splitting fields applied to the isomorphism $\tau$, the map $\tau$ extends to an isomorphism
 $$
-\sigma : N \longrightarrow N(\beta), \qquad \sigma\vert_{F(\alpha)} = \tau .
+\boxed{\;\sigma : N \longrightarrow N(\beta), \qquad \sigma\vert_{F(\alpha)} = \tau\;} .
 $$
 Now $\sigma$ carries the root set of $g$ into itself: if $\gamma \in N$ satisfies $g(\gamma) = 0$, then $0 = \sigma(g(\gamma)) = g(\sigma(\gamma))$, because the coefficients of $g$ lie in $F$ and are fixed by $\sigma$. Hence $\sigma(N) = F(\sigma(\text{roots of } g)) \subseteq F(\text{roots of } g) = N$, and since $\sigma$ is injective and $[N:F] = [\sigma(N):F]$ is finite, $\sigma(N) = N$. Therefore $\beta = \tau(\alpha) = \sigma(\alpha) \in \sigma(N) = N \subseteq K$. So every irreducible polynomial over $F$ with a root in $K$ splits in $K$, and $K/F$ is normal.
 
@@ -116,7 +116,7 @@ Now $\sigma$ carries the root set of $g$ into itself: if $\gamma \in N$ satisfie
 **Theorem (counting embeddings).** Let $K/F$ be a finite extension and fix an algebraic closure $\overline{F} \supseteq K$. Write $\operatorname{Hom}_F(K, \overline{F})$ for the set of $F$-linear field homomorphisms $K \to \overline{F}$. Then
 
 $$
-\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert \leq [K:F],
+\boxed{\;\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert \leq [K:F]\;},
 $$
 
 with equality if and only if $K/F$ is separable.

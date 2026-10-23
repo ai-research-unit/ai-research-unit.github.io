@@ -35,7 +35,7 @@ $$
 **Proposition (the two realified Gram matrices).** The realified forms have the Gram matrices
 
 $$
-[\operatorname{Re}B]=\mathrm{I}_{2}, \qquad [\operatorname{Re}H]=\operatorname{diag}(1,-1),
+\boxed{\;[\operatorname{Re}B]=\mathrm{I}_{2}, \qquad [\operatorname{Re}H]=\operatorname{diag}(1,-1)\;},
 $$
 
 of signatures $(2,0)$ and $(1,1)$.
@@ -111,7 +111,7 @@ The two metrics live on the same plane and are read from the two forms.
 **Proposition (the two quadratics differ only in the sign of the square).** For all $Q,C$,
 
 $$
-d_{B}^{2}(Q,C)-d_{H}^{2}(Q,C)=2(q'-c')^{2}, \qquad d_{B}^{2}(Q,C)+d_{H}^{2}(Q,C)=2(q-c)^{2}.
+\boxed{\;d_{B}^{2}(Q,C)-d_{H}^{2}(Q,C)=2(q'-c')^{2}, \qquad d_{B}^{2}(Q,C)+d_{H}^{2}(Q,C)=2(q-c)^{2}\;}.
 $$
 
 *Proof.* Add and subtract the two coordinate expressions $(q-c)^{2}\pm(q'-c')^{2}$.
@@ -131,7 +131,7 @@ The two metrics are therefore the two readings of the two forms related by conju
 **Proposition (multiplication by $j$ preserves one and reverses the other).** For the structure $J(Q)=jQ$,
 
 $$
-d_{B}^{2}(JQ,JC)=d_{B}^{2}(Q,C), \qquad d_{H}^{2}(JQ,JC)=-d_{H}^{2}(Q,C).
+\boxed{\;d_{B}^{2}(JQ,JC)=d_{B}^{2}(Q,C), \qquad d_{H}^{2}(JQ,JC)=-d_{H}^{2}(Q,C)\;}.
 $$
 
 *Proof.* In coordinates $J(q,q')=(q',q)$, since $j(q+jq')=q'+jq$; substituting gives $(q-c)^{2}+(q'-c')^{2}$ unchanged and $(q-c)^{2}-(q'-c')^{2}$ negated. Equivalently, the structure preserves the realified bilinear form and reverses the realified Hermitian form, the two-dimensional instance of the rule recorded in *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.

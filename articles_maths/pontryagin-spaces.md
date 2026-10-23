@@ -27,7 +27,7 @@ The general indefinite theory is *Indefinite Inner Product Spaces*, the complete
 **Definition.** Write $\mathbb{C}^{n,m}$ for $\mathbb{C}^{n}$, $N=n+m$, with the form
 
 $$
-[x,y] = \sum_{i=1}^{n}x_{i}\bar y_{i} - \sum_{j=n+1}^{n}x_{j}\bar y_{j} .
+\boxed{\;[x,y] = \sum_{i=1}^{n}x_{i}\bar y_{i} - \sum_{j=n+1}^{n}x_{j}\bar y_{j}\;} .
 $$
 
 It is a Pontryagin space $\Pi_{\kappa}$ with $\kappa = m$ and finite positive part of dimension $N$; the real analogue $\mathbb{R}^{n,m}$ is defined by the same formula.
@@ -35,7 +35,7 @@ It is a Pontryagin space $\Pi_{\kappa}$ with $\kappa = m$ and finite positive pa
 **Proposition (the operators of the form).** A linear operator $A$ on $\mathbb{C}^{n,m}$ with matrix $A$ in the standard basis is **self-adjoint** for the form exactly when
 
 $$
-G A = A^{\dagger} G, \qquad G = \mathrm{diag}(1,\ldots,1,-1,\ldots,-1),
+\boxed{\;G A = A^{\dagger} G, \qquad G = \mathrm{diag}(1,\ldots,1,-1,\ldots,-1)\;},
 $$
 
 and **unitary** for the form exactly when $A^{\dagger}GA = G$. The self-adjoint operators of the form form a real Lie algebra and the unitary ones a group, the $\dagger$ being the Hilbert adjoint in the standard inner product.

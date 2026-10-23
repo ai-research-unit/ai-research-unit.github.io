@@ -41,7 +41,7 @@ $$
 **Theorem (finiteness and the growth rate).** Let $G$ be a non-elementary hyperbolic group. Then $0 < \delta < \infty$, and $\delta$ equals the **exponential growth rate** of the group:
 
 $$
-\delta = \lim_{n \to \infty} \frac{1}{n}\log \#\{g \in G : |g| \leq n\} .
+\boxed{\;\delta = \lim_{n \to \infty} \frac{1}{n}\log \#\{g \in G : |g| \leq n\}\;} .
 $$
 
 In particular $\delta$ is a quasi-isometry invariant of $G$, since the growth rate of the balls is.
@@ -69,7 +69,7 @@ For $r = 2$ this is $\log 3 = 1.0986\ldots$, for $r = 3$ it is $\log 5 = 1.6094\
 **Theorem (the dimension in the visual metric).** Let $X$ be a proper geodesic hyperbolic space with critical exponent $\delta$ and visual metrics $d_\varepsilon$. Then for every $0 < \varepsilon \leq \varepsilon_0$
 
 $$
-\dim_H(\partial X, d_\varepsilon) = \frac{\delta}{\varepsilon} ,
+\boxed{\;\dim_H(\partial X, d_\varepsilon) = \frac{\delta}{\varepsilon}\;} ,
 $$
 
 so that the product $\varepsilon \cdot \dim_H(\partial X, d_\varepsilon) = \delta$ is independent of the choice of the visual metric within the conformal gauge. In the normalisation $\varepsilon = 1$, when $d_1$ is a metric, the boundary has Hausdorff dimension exactly $\delta$, and this is the equality $\dim_H \partial G = \delta$ of the cocompact case.
@@ -85,7 +85,7 @@ $$
 for every $\xi \in \partial G$. Consequently the Hausdorff dimension of $\mu$ is $\delta$, and in the cocompact case the dimension of the boundary equals the critical exponent,
 
 $$
-\dim_H \partial G = \delta = \dim_H \mu .
+\boxed{\;\dim_H \partial G = \delta = \dim_H \mu\;} .
 $$
 
 **Proof sketch.** The measure is constructed as the weak limit of the normalised atomic measures $\sum_{g}\exp(-s|g|)\delta_g / \sum_g \exp(-s|g|)$ as $s \downarrow \delta$, a construction carried out in *Analysis on Groups*; the limit is a conformal measure and its Ahlfors regularity of exponent $\delta$ is the standard statement of the Patterson–Sullivan theory. The dimension of an Ahlfors $\delta$-regular measure is $\delta$ by the mass distribution principle of *Fractal Geometry*, and the Hausdorff dimension of the boundary is at least $\dim_H\mu$; the reverse inequality is the covering estimate above. The equality $\dim_H \partial G = \delta$ is the content of the cocompact case.

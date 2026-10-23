@@ -1,4 +1,4 @@
-# __Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions__
+# __Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion__
 
 ## Introduction
 
@@ -86,9 +86,11 @@ $$
 The eigenvalues are complex, and they are distinct exactly when $Q_{\blacktriangledown}\neq0$. In that case
 
 $$
+\boxed{\;
 \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-,
 \qquad
-\Pi_\pm=\frac{1\pm j}{2},
+\Pi_\pm=\frac{1\pm j}{2}
+\;},
 $$
 
 with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statements of *Eigenbasis of a Reduced Biquaternion*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*The Eigenvalue Decomposition*. In the scalar case $Q_{\blacktriangledown}=0$, the eigenvalue is repeated, $\lambda_+=\lambda_-=Q_{\blacktriangle}$, and the decomposition is the one-term writing $\breve Q=Q_{\blacktriangle}\cdot1$.
@@ -107,10 +109,12 @@ with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statem
 Every unit $\breve Q\in\mathbb{B}_{\mathrm{r}}^\times=\{Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ has a unique writing
 
 $$
+\boxed{\;
 \breve Q=\exp(\breve Q_{\log})
 =\breve r\,u,
 \qquad
-\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta,
+\breve Q_{\log}=\ln\rho+j\phi+i\alpha+ij\beta
+\;},
 $$
 
 with
@@ -219,9 +223,11 @@ so that $\alpha+\beta=\operatorname{Arg}\lambda_+$ and $\alpha-\beta=\operatorna
 **Proposition (the dictionary).** On the unit group, the map
 
 $$
+\boxed{\;
 (\rho,\phi,\alpha,\beta)\longmapsto
 (\lambda_+,\lambda_-)
 =\bigl(\rho e^{i\alpha}e^{\phi+i\beta},\ \rho e^{i\alpha}e^{-\phi-i\beta}\bigr)
+\;}
 $$
 
 is a bijection from $\{\rho>0,\ \phi\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\}$, with the boundary half-open, onto the set of pairs of nonzero complex numbers. Its inverse is the formula above.
@@ -643,10 +649,11 @@ Read down a column for one algebra and across a row for one concept. The first t
 ## Further Reading
 
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the eight cases and the reconstruction tables.
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Eigenbasis of a Reduced Biquaternion](eigenbasis-of-a-reduced-biquaternion.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal domain.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the decomposition, existence and uniqueness and the matrix picture.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
-- [Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers](relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-split-complex-numbers.html), for the real two-dimensional analogue.
-- [Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions](relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-biquaternions.html), for the noncommutative analogue.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the noncommutative analogue.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.

@@ -116,7 +116,7 @@ The matrix coefficients of the irreducible representations, correctly normalised
 **Theorem (orthogonality).** Let $\pi, \sigma \in \operatorname{Irr}(K)$ and fix orthonormal bases. Then
 
 $$
-\int_K \pi_{ij}(k)\,\overline{\sigma_{lm}(k)}\,dk = \frac{1}{d_\pi}\,\delta_{\pi\sigma}\,\delta_{il}\,\delta_{jm} ,
+\boxed{\;\int_K \pi_{ij}(k)\,\overline{\sigma_{lm}(k)}\,dk = \frac{1}{d_\pi}\,\delta_{\pi\sigma}\,\delta_{il}\,\delta_{jm}\;} ,
 $$
 
 where $\delta_{\pi\sigma} = 1$ if $\pi \cong \sigma$ and $0$ otherwise.
@@ -194,7 +194,7 @@ is a Banach $*$-algebra isomorphic to the algebraic direct sum $\bigoplus_{\pi}\
 **Theorem (Fourier inversion).** For $f$ in the coefficient algebra $A(K)$ the function is recovered from its transform pointwise and uniformly by
 
 $$
-f(k) = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(k)^{-1}\bigr) ,
+\boxed{\;f(k) = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(k)^{-1}\bigr)\;} ,
 $$
 
 the sum being finite. For $f \in L^2(K)$ the same series converges to $f$ in $L^2(K)$.
@@ -208,7 +208,7 @@ the sum being finite. For $f \in L^2(K)$ the same series converges to $f$ in $L^
 **Theorem (Plancherel for compact $K$).** For every $f \in L^2(K)$,
 
 $$
-\|f\|_2^2 = \int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 ,
+\boxed{\;\|f\|_2^2 = \int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2\;} ,
 $$
 
 where $\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 = \operatorname{Tr}\bigl((\mathcal F f)(\pi)(\mathcal F f)(\pi)^*\bigr)$. Equivalently, the transform extends to a unitary equivalence of Hilbert spaces

@@ -36,8 +36,7 @@ The difference from the complex algebra is only in the number of squares: $\lang
 
 **Theorem.** The norm is multiplicative:
 
-$$
-\langle q_1 q_2\rangle = \langle q_1\rangle\,\langle q_2\rangle.
+$$ \boxed{\;\langle q_1 q_2\rangle = \langle q_1\rangle\,\langle q_2\rangle\;}.
 $$
 
 **Proof.** By definition $\langle q_1 q_2\rangle = (q_1 q_2)^2$, and commutativity and associativity of the real product give $(q_1 q_2)^2 = q_1 q_2 q_1 q_2 = q_1^2 q_2^2 = \langle q_1\rangle\langle q_2\rangle$.
@@ -144,8 +143,7 @@ The criterion $\langle q\rangle \neq 0$ is the general form of the invertibility
 
 For $q \neq 0$ the inverse is
 
-$$
-q^{-1} = \frac{1}{\langle q\rangle}\,q = \frac{1}{q}.
+$$ \boxed{\;q^{-1} = \frac{1}{\langle q\rangle}\,q = \frac{1}{q}\;}.
 $$
 
 **Proof.** The verification is the computation in the first part of the proof of the criterion.
@@ -196,8 +194,7 @@ The unit group is the base case of the family: below it lies only the non-unit $
 
 **Theorem.** The map
 
-$$
-\mathbb{R}^\times \longrightarrow \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl( |q|, \operatorname{sgn} q \bigr),
+$$ \boxed{\;\mathbb{R}^\times \longrightarrow \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl( |q|, \operatorname{sgn} q \bigr)\;},
 $$
 
 where $\operatorname{sgn} q = q/|q| \in \{\pm1\}$ for $q \neq 0$, is an isomorphism of groups and a homeomorphism of topological spaces onto the product of the positive ray and the two-element group.

@@ -30,7 +30,7 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per chirality |
 | Unit group | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
-**Conventions.** The notation is fixed in *Conventions in Mathematics*: the algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $\alpha,\beta$; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
+**Conventions.** The notation is fixed in *Conventions in Mathematics*: the algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
 
 **Boundaries.** The complex case is the subject of *Eigenvalues and Diagonalisation*; the reduced biquaternion case is *Eigenbasis of a Reduced Biquaternion*; the biquaternion case is *Eigenbasis of a Biquaternion*; the Peirce and ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*; the exponential and the logarithm built on the decomposition are those of *Split-Complex Exponential and Lie Group Structure*; and the polar forms are those of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. The general definition, existence and uniqueness of the eigenvalue decomposition are those of *The Eigenvalue Decomposition of an Element* and are not restated.
 
@@ -43,11 +43,11 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi
 **Theorem.** The spectrum of $Q=q+jq'$ is
 
 $$
-\sigma(Q)=\{\lambda_+,\lambda_-\},
+\boxed{\;\sigma(Q)=\{\lambda_+,\lambda_-\},
 \qquad
 \lambda_+=q+q'=Q_+,
 \qquad
-\lambda_-=q-q'=Q_-.
+\lambda_-=q-q'=Q_-\;}.
 $$
 
 Thus the two eigenvalues are the two idempotent coordinates, and their sum and product are
@@ -63,10 +63,10 @@ $$
 **Characteristic polynomial.** The characteristic polynomial of $Q$ is
 
 $$
-p_Q(X)=X^2-2qX+\langle Q\rangle_{*}
+\boxed{\;p_Q(X)=X^2-2qX+\langle Q\rangle_{*}
 =(X-\lambda_+)(X-\lambda_-),
 \qquad
-\lambda_\pm=q\pm q'.
+\lambda_\pm=q\pm q'\;}.
 $$
 
 It is the characteristic polynomial of the multiplication operator, whose trace is $\lambda_++\lambda_-=2q$ and whose determinant is $\lambda_+\lambda_-=\langle Q\rangle_{*}$. Its discriminant is
@@ -112,9 +112,9 @@ They are therefore **complementary orthogonal idempotents**. In $\mathbb{D}\cong
 For $q'\neq0$, they are the **eigenprojections** of $Q$, with eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$:
 
 $$
-Q\Pi_+=\lambda_+\Pi_+=(q+q')\Pi_+,
+\boxed{\;Q\Pi_+=\lambda_+\Pi_+=(q+q')\Pi_+,
 \qquad
-Q\Pi_-=\lambda_-\Pi_-=(q-q')\Pi_-.
+Q\Pi_-=\lambda_-\Pi_-=(q-q')\Pi_-\;}.
 $$
 
 Indeed,
@@ -160,8 +160,8 @@ The two idempotents are complementary and orthogonal, $\Pi_++\Pi_-=1$ and $\Pi_+
 For $q'\neq0$, summing the two eigenvalue relations gives
 
 $$
-\boxed{\ Q=\lambda_+\Pi_+ + \lambda_-\Pi_-
-=(q+q')\Pi_+ + (q-q')\Pi_-\ }.
+\boxed{\;Q=\lambda_+\Pi_+ + \lambda_-\Pi_-
+=(q+q')\Pi_+ + (q-q')\Pi_-\;}.
 $$
 
 Equivalently, separating the $1$ and $j$ parts,
@@ -289,20 +289,20 @@ $$
 $$
 is a basis of the plane $\mathbb{D}$.
 
-**Coordinates.** Expanding a general element $X=x_0+x_1j$ gives
+**Coordinates.** Expanding a general element $Q_{\mathrm{sp}}=x_0+x_1j$ gives
 $$
-X=(x_0+x_1)\Pi_++(x_0-x_1)\Pi_-,
+Q_{\mathrm{sp}}=(x_0+x_1)\Pi_++(x_0-x_1)\Pi_-,
 $$
-so the coordinates of $X$ in this basis are $(x_0+x_1,\,x_0-x_1)$. For $Q$ itself,
+so the coordinates of $Q_{\mathrm{sp}}$ in this basis are $(x_0+x_1,\,x_0-x_1)$. For $Q$ itself,
 $$
 Q=q+jq'\quad\longleftrightarrow\quad(\lambda_+,\lambda_-)=(q+q',\,q-q').
 $$
 
-**The coordinates.** The coordinates of $X$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $X=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.
+**The coordinates.** The coordinates of $Q_{\mathrm{sp}}$ in the eigenbasis are its two idempotent coordinates $(\xi_+,\xi_-)$, and the decomposition is the identity $Q_{\mathrm{sp}}=\xi_+\Pi_++\xi_-\Pi_-$. No further data are carried by the eigenbasis.
 
 ### The Action of $Q$ and the Eigenbasis
 
-**Definition.** An **eigenvector** of $Q$ is a nonzero $X$ with $QX=\mu X$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $Q$ is a basis of $\mathbb{D}$ consisting of eigenvectors.
+**Definition.** An **eigenvector** of $Q$ is a nonzero $Q_{\mathrm{sp}}$ with $QQ_{\mathrm{sp}}=\mu Q_{\mathrm{sp}}$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $Q$ is a basis of $\mathbb{D}$ consisting of eigenvectors.
 
 In the basis $(\Pi_+,\Pi_-)$ the action is diagonal:
 $$
@@ -362,17 +362,17 @@ The notation $S_\pm$ is reserved for these two spaces.
 
 A **spinor of first chirality** is an element of $S_+$,
 $$
-\xi_+=\alpha\Pi_+,\qquad \alpha\in\mathbb{R},
+\xi_+=a_1\Pi_+,\qquad a_1\in\mathbb{R},
 $$
 and a **spinor of second chirality** is an element of $S_-$,
 $$
-\xi_-=\beta\Pi_-,\qquad \beta\in\mathbb{R}.
+\xi_-=a_2\Pi_-,\qquad a_2\in\mathbb{R}.
 $$
 In the eigenbasis their coordinates are
 $$
-\xi_+\longleftrightarrow(\alpha,0),
+\xi_+\longleftrightarrow(a_1,0),
 \qquad
-\xi_-\longleftrightarrow(0,\beta).
+\xi_-\longleftrightarrow(0,a_2).
 $$
 The two spinor spaces are the two coordinate axes of the eigenbasis.
 
@@ -384,13 +384,13 @@ Q\xi_-=\lambda_-\xi_-,
 $$
 so $S_+$ is the $\lambda_+$-eigenspace and $S_-$ the $\lambda_-$-eigenspace. In coordinates,
 $$
-\alpha\longmapsto\lambda_+\alpha,
+a_1\longmapsto\lambda_+a_1,
 \qquad
-\beta\longmapsto\lambda_-\beta.
+a_2\longmapsto\lambda_-a_2.
 $$
-A general element $X=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.
+A general element $Q_{\mathrm{sp}}=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $(\xi_+,\xi_-)$ are the coordinates in the direct sum.
 
-**Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $\alpha,\beta\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
+**Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$
 S_+^{\mathbb{C}}=\mathbb{C}\Pi_+,
 \qquad
@@ -683,7 +683,7 @@ which are real; they are distinct exactly when $q'\neq0$. In that case the idemp
 | Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Nilpotents | none; the algebra is reduced, so $N^2=0$ implies $N=0$ |
-| Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, the two minimal ideals; spinors $\alpha\Pi_+$ and $\beta\Pi_-$ |
+| Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, the two minimal ideals; spinors $a_1\Pi_+$ and $a_2\Pi_-$ |
 | Polynomial calculus | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
 | Group of units | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
@@ -740,7 +740,8 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\sigma(Q)=\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$ | Spectrum |
 | $p_Q(X)=X^2-2qX+\langle Q\rangle_{*}=(X-\lambda_+)(X-\lambda_-)$ | Characteristic polynomial |
 | $L_Q(X)=QX$ | Multiplication operator; eigenvalues $\lambda_+,\lambda_-$ in the eigenbasis |
-| $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$; the spinor coordinates on $S_+$ and $S_-$ |
+| $a_1,a_2$ | Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis |
+| $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$ |
 | $S_\pm=\mathbb{D}\Pi_\pm=\mathbb{R}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (real lines) |
 | $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$ | Peirce corners of the pair $\Pi_\pm$, $\sigma,\tau\in\{+,-\}$ |
 | $\mathbb{R}[Q]$ | Subalgebra generated by $Q$ |
@@ -748,6 +749,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\mathbb{D}^\times=\{Q\in\mathbb{D}:\langle Q\rangle_{*}\neq0\}$ | Group of units, characterised by $\lambda_+\lambda_-\neq0$ |
 | $L=\{(m/2,n/2):m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$ | Lattice of basis-coordinate data for integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}$ |
 | $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $t=\operatorname{artanh}(q'/q)$ | Modulus and hyperbolic angle, with $\lambda_\pm=r \exp(\pm t)$ on the identity component |
+| $Q_{\mathrm{sp}}=a_1\Pi_++a_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(a_1,a_2)$ |
 | $Q_2=\mu_+\Pi_++\mu_-\Pi_-$ | General element in the eigenvalue coordinates |
 | $\mu$ | A test scalar in the definition of an eigenvalue |
 | $\mu_\pm$ | Eigenvalue coordinates on the diagonal part |

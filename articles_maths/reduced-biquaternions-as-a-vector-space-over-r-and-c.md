@@ -40,7 +40,7 @@ $$
 $$
 In the idempotent basis the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is
 $$
-\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-,\qquad Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown},
+\boxed{\; \breve Q=Q_{+}\Pi_++Q_{-}\Pi_-,\qquad Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown} \;},
 $$
 and the pair $(Q_{+},Q_{-})$ is the **idempotent coordinate pair**. Both pairs are complex coordinate systems on the same two-dimensional complex space; they are exchanged by the invertible matrix $\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$, and the choice between them is a choice of basis and not of structure. The two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are complex lines of complex dimension one and real dimension two; they are the components of the direct product $\mathbb{C}\oplus\mathbb{C}$ of *Reduced Biquaternion Space*.
 
@@ -75,7 +75,7 @@ $$
 
 **Proposition.** $J$ is $\mathbb{R}$-linear, it is $\mathbb{C}$-linear as well — it is the scalar action of $i$ itself and no new operator over $\mathbb{C}$ — and
 $$
-J^{2}=-\mathrm{id}.
+\boxed{\; J^{2}=-\mathrm{id} \;}.
 $$
 
 *Proof.* For $\lambda\in\mathbb{R}$, $J(\lambda \breve Q)=i\lambda \breve Q=\lambda i\breve Q=\lambda J(\breve Q)$, so $J$ is real-linear; and $J^{2}(\breve Q)=i(i\breve Q)=i^{2}\breve Q=-\breve Q$. It is $\mathbb{C}$-linear as well, $J(i\breve Q)=i^{2}\breve Q=-\breve Q=iJ(\breve Q)$, since $i$ is central and commutes with the scalar action; the point is that $i$ is the **scalar** imaginary, and $J$ **is** the scalar action of $i$, so as a complex map it is the scalar $i$ and not a new operator. The operator $J$ is the complex structure of the real reading.
@@ -100,7 +100,7 @@ The involution $S$ is **not** a conjugation in the sense of the four marks of th
 
 **Proposition (the dimensions).** The realification has real dimension twice the complex dimension,
 $$
-\dim_{\mathbb{R}}\mathbb{B}_{\mathrm{r}}=2\dim_{\mathbb{C}}\mathbb{B}_{\mathrm{r}}=4,
+\boxed{\; \dim_{\mathbb{R}}\mathbb{B}_{\mathrm{r}}=2\dim_{\mathbb{C}}\mathbb{B}_{\mathrm{r}}=4 \;},
 $$
 and the passage is exactly the reading of the complex basis $\{1,j\}$ on the real basis $\{1,i,j,ij\}$, namely $1=1$ and $j=j$ with the two complex scalar coordinates split into four real ones by $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$.
 

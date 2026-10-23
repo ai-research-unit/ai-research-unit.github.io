@@ -20,7 +20,7 @@ the $L^2(G)$ inner product restricted to $\mathcal{A}\cap L^2(G)$; when $G$ is *
 **Theorem (the elementary adjoints).** With respect to the Haar pairing the left convolution has adjoint
 
 $$
-(L_a)^* = L_{a^*} \qquad \text{for every } a\in\mathcal{A},
+\boxed{\;(L_a)^* = L_{a^*} \qquad \text{for every } a\in\mathcal{A}\;},
 $$
 
 and in the unimodular case the right convolution and the grade-involution operator satisfy
@@ -56,7 +56,7 @@ so on a unimodular group the missing conjugation is recovered by the complex con
 **Proposition (the two adjoints are conjugate by $J$).** If $T^\dagger$ denotes the adjoint with respect to the bilinear pairing, then
 
 $$
-T^* = J\,T^\dagger\,J ,
+\boxed{\;T^* = J\,T^\dagger\,J\;} ,
 $$
 
 so the Haar-pairing adjoint is the bilinear-pairing adjoint conjugated by the complex conjugation $J$; for the elementary operators this is the passage $(L_a)^\dagger = L_{a^{-1}}$ to $(L_a)^* = L_{a^*}$, since $J L_{a^{-1}} J = L_{\overline{a^{-1}}} = L_{a^*}$ on a unimodular group.
@@ -74,7 +74,7 @@ so the Haar-pairing adjoint is the bilinear-pairing adjoint conjugated by the co
 **Theorem (the operator image of the Hermitian elements).** The map $f\mapsto\lambda(f)$ carries the Hermitian elements onto the Hermitian operators in $\lambda(\mathcal{A})$ and the positive cone into the positive operators,
 
 $$
-f^* = f \iff \lambda(f)^* = \lambda(f), \qquad f\in\mathcal{A}^+ \implies \lambda(f)\geq0 ,
+\boxed{\;f^* = f \iff \lambda(f)^* = \lambda(f), \qquad f\in\mathcal{A}^+ \implies \lambda(f)\geq0\;} ,
 $$
 
 and it is a `*`-homomorphism; the Hermitian elements of $\mathcal{A}$ form the real subspace $\mathcal{A}_h$, the positive cone $\mathcal{A}^+$ is convex and proper, and $\lambda$ is an order-preserving isomorphism of the ordered `*`-algebra $\mathcal{A}$ onto its image.

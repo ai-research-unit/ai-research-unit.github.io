@@ -27,7 +27,7 @@ Consequently the handle operator on a bordism induces the surgery operator on it
 
 **Corollary (the Euler characteristic).** The Euler characteristic changes by the sign of the index,
 $$
-\chi(W') = \chi(W) + (-1)^k ,
+\boxed{\;\chi(W') = \chi(W) + (-1)^k\;} ,
 $$
 because the handle is attached along a cell of dimension $k$.
 
@@ -47,7 +47,7 @@ $$
 $$
 the connecting map sends the generator to the class $A = [\varphi(S^{k-1})]\in H_{k-1}(W)$ of the attaching sphere. Hence
 $$
-H_i(W')\cong H_i(W)\quad (i \leq k-2,\ i\geq k+1), \qquad H_{k-1}(W')\cong H_{k-1}(W)\big/\langle A\rangle ,
+\boxed{\;H_i(W')\cong H_i(W)\quad (i \leq k-2,\ i\geq k+1), \qquad H_{k-1}(W')\cong H_{k-1}(W)\big/\langle A\rangle\;} ,
 $$
 and $H_k(W')\cong H_k(W)\oplus\mathbb{Z}$ when $A = 0$, while $H_k(W')\cong H_k(W)$ when $A\neq0$.
 
@@ -79,7 +79,7 @@ in which $W_k$ is obtained from $W_{k-1}$ by attaching $k$-handles. The **number
 
 **Corollary (the number of handles).** A compact manifold with a handle decomposition with $c_k$ handles of index $k$ satisfies
 $$
-c_k \;\geq\; b_k(W) \quad \text{and} \quad c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 = \chi(W)
+\boxed{\;c_k \;\geq\; b_k(W) \quad \text{and} \quad c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 = \chi(W)\;}
 $$
 for every $k$, since the handle decomposition is a CW structure and its chain complex computes the homology; the inequalities are the **Morse inequalities** of the topological decomposition.
 

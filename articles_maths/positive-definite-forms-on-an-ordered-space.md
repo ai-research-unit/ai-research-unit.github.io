@@ -44,7 +44,7 @@ it is **autopolar** when it is self-dual for some positive definite form, and th
 **Proposition (the order from the self-dual form).** If the cone is self-dual for the form $B$ then the order of $E$ is the order of the evaluation functionals,
 
 $$
-x\geq0 \iff B(x,y)\geq0 \ \text{ for every } y\geq0 ,
+\boxed{\;x\geq0 \iff B(x,y)\geq0 \ \text{ for every } y\geq0\;} ,
 $$
 
 and the form is a **positive definite form representing the order**; conversely an order-compatible form whose polarity equals the cone is self-dual, and the self-dual forms of an order-unit space are the order-isomorphism invariants of the pair (space, cone).
@@ -60,7 +60,7 @@ and the form is a **positive definite form representing the order**; conversely 
 **Theorem (the Kolmogorov decomposition).** Every positive definite form $B$ on the ordered space is of the form
 
 $$
-B(x,y) = \langle\pi(x)\xi,\ \pi(y)\xi\rangle
+\boxed{\;B(x,y) = \langle\pi(x)\xi,\ \pi(y)\xi\rangle\;}
 $$
 
 for a Hilbert space $\mathcal{H}$, a representation $\pi : E\to L(\mathcal{H})$ by the operators preserving the order, and a vector $\xi\in\mathcal{H}$: the **Kolmogorov** (or **Gelfand–Naimark–Segal**) decomposition. The representation is uniquely determined up to unitary equivalence, is **order preserving**,
@@ -76,7 +76,7 @@ and its **cyclic** vector $\xi$ generates $\mathcal{H}$; the radical $N$ is the 
 **Corollary (the order unit and the states).** When $E$ has an order unit $u$, the positive definite forms with $B(u,u) = 1$ are the **states of the form**, the order-unit seminorm is
 
 $$
-\lVert x\rVert_B = \sup\{B(x,y) : B(y,y)\leq1\} ,
+\boxed{\;\lVert x\rVert_B = \sup\{B(x,y) : B(y,y)\leq1\}\;} ,
 $$
 
 and $x\geq0$ if and only if $\pi(x)\geq0$ in the decomposition of every state form; the set of the state forms is a convex set, and it determines the order by the theorem above.

@@ -59,7 +59,7 @@ the integer obtained by pairing the symbol class with the fundamental class.
 **Theorem (the index theorem as a pairing).** The analytic index of $D$ is the pairing of its symbol class with the fundamental class,
 
 $$
-\operatorname{ind}D=\bigl\langle[\sigma_D],[M]\bigr\rangle ,
+\boxed{\;\operatorname{ind}D=\bigl\langle[\sigma_D],[M]\bigr\rangle\;} ,
 $$
 
 and the pairing is computed through the Chern character by
@@ -90,7 +90,7 @@ so the index is the **Hermitian pairing** of the two kernel spaces: the differen
 **Theorem (the index as a signature).** Let $D$ be a self-adjoint elliptic operator graded by an involution $\tau$ with $\tau D\tau^{-1}=-D$, so that $D$ is odd and splits into the mutually adjoint halves $D^{\pm}$. Then the index of the half is the **signature** of the Hermitian form on the kernel,
 
 $$
-\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)=\sigma(\ker D,\tau),
+\boxed{\;\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)=\sigma(\ker D,\tau)\;},
 $$
 
 the difference of the dimensions of the two eigenspaces of $\tau$ on the kernel; for the signature operator this is the signature of the middle intersection form, and for the Dirac operator the difference of the dimensions of the chiral zero-mode spaces.
@@ -104,7 +104,7 @@ the difference of the dimensions of the two eigenspaces of $\tau$ on the kernel;
 **Theorem (the Chern-character pairing).** The index pairing is computed by the Chern character,
 
 $$
-\operatorname{ind}D=\int_{M}\operatorname{ch}(E)\,\rho(TM),
+\boxed{\;\operatorname{ind}D=\int_{M}\operatorname{ch}(E)\,\rho(TM)\;},
 $$
 
 where $E$ is the bundle of the operator and $\rho(TM)$ is the characteristic class of the symbol — the Todd class for the Dolbeault operator, the $\hat A$-class for the spin operator, the $L$-class for the signature operator; the pairing of the $K$-theory class of $E$ with the cohomology class $\rho$ is the **Hermitian pairing** of the two, and the multiplicativity of the Chern character, $\operatorname{ch}(E\oplus F)=\operatorname{ch}(E)+\operatorname{ch}(F)$ and $\operatorname{ch}(E\otimes F)=\operatorname{ch}(E)\operatorname{ch}(F)$, is what makes the index additive and multiplicative in the natural sense.

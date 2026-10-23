@@ -69,7 +69,7 @@ This is the sense in which the left and the right multiplications commute in an 
 **Theorem.** For all $a, b \in A$,
 
 $$
-L(a)L(b) = L(ab), \qquad L(1) = \mathrm{id}_A .
+\boxed{\;L(a)L(b) = L(ab), \qquad L(1) = \mathrm{id}_A\;} .
 $$
 
 Hence $L : A \to \operatorname{End}_k(A)$ is a homomorphism of unital $k$-algebras, its image $L(A)$ is a subalgebra of $\operatorname{End}_k(A)$, and $L$ is an isomorphism of algebras $A \to L(A)$.
@@ -133,7 +133,7 @@ whose image is the sandwich space $\mathcal{S}(A)$ of *The Sandwich Operator on 
 **Proposition.** The two spaces of one-sided multiplications meet in the multiplications by the central elements:
 
 $$
-L(A) \cap R(A) = L(Z(A)) = R(Z(A)),
+\boxed{\;L(A) \cap R(A) = L(Z(A)) = R(Z(A))\;},
 $$
 
 where $Z(A)$ is the centre of $A$. In particular the intersection contains $k \cdot 1$ and is never zero for a unital algebra, it has dimension $\dim_k Z(A)$, and it has dimension one exactly when the algebra is central, $Z(A) = k \cdot 1$.
@@ -159,7 +159,7 @@ $$
 **Theorem.** For all $a, b \in A$,
 
 $$
-L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b) = (ax)b - a(xb).
+\boxed{\;L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b) = (ax)b - a(xb)\;}.
 $$
 
 Hence the left and the right multiplications commute for every pair if and only if the algebra is associative; the associator is exactly the obstruction to their commutation.

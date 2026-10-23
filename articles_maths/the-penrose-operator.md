@@ -46,7 +46,7 @@ where $D=c\circ\nabla^{\mathcal{S}}$ is the Cauchy–Riemann operator. As a map 
 **Theorem (conformal invariance of the twistor equation).** Let $\hat g=\Omega^2g$ with $\Omega>0$, and identify the spinor bundles of $g$ and $\hat g$ along the conformal factor in the standard way, writing $\hat\sigma$ for the image of a spinor field $\sigma$. Then the twistor equation is conformally invariant:
 
 $$
-\mathcal{P}^{g}\sigma = 0 \qquad\Longleftrightarrow\qquad \mathcal{P}^{\hat g}\hat\sigma = 0 ,
+\boxed{\;\mathcal{P}^{g}\sigma = 0 \qquad\Longleftrightarrow\qquad \mathcal{P}^{\hat g}\hat\sigma = 0\;} ,
 $$
 
 with the weight fixed by the standard identification. In particular the space of twistor spinors is an invariant of the conformal class $[g]$, and the Penrose operator is the conformally covariant operator that realises the invariance.
@@ -62,13 +62,13 @@ with the weight fixed by the standard identification. In particular the space of
 **Proposition (the conformal Killing field).** Let $\sigma$ be a twistor spinor. Then the vector field
 
 $$
-X_\sigma = \sum_{i=1}^{n}\bigl(\sigma,e_i\cdot\sigma\bigr)\,e_i ,
+\boxed{\;X_\sigma = \sum_{i=1}^{n}\bigl(\sigma,e_i\cdot\sigma\bigr)\,e_i\;} ,
 $$
 
 where $(\cdot,\cdot)$ is the real part of the fibre form, is a **conformal Killing field**: it satisfies the conformal Killing equation
 
 $$
-\mathcal{L}_{X_\sigma}g = \frac{2}{n}(\operatorname{div}X_\sigma)\,g .
+\boxed{\;\mathcal{L}_{X_\sigma}g = \frac{2}{n}(\operatorname{div}X_\sigma)\,g\;} .
 $$
 
 Equivalently, the flow of $X_\sigma$ preserves the conformal class of $g$.

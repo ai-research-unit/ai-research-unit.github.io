@@ -336,8 +336,7 @@ where $\gamma$ is the Euler–Mascheroni constant. This product converges unifor
 
 ### Reflection and Duplication
 
-$$
-\Gamma(Q) \Gamma(1 - Q) = \frac{\pi}{\sin(\pi Q)},
+$$ \boxed{\;\Gamma(Q) \Gamma(1 - Q) = \frac{\pi}{\sin(\pi Q)}\;},
 $$
 
 $$
@@ -390,8 +389,7 @@ The series converges absolutely for $\operatorname{Re} s > 1$ and defines a holo
 
 The zeta function extends meromorphically to all of $\mathbb{C}$, with a single simple pole at $s = 1$ with residue $1$. The continuation is given by the functional equation
 
-$$
-\zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1 - s) \zeta(1 - s),
+$$ \boxed{\;\zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1 - s) \zeta(1 - s)\;},
 $$
 
 which relates $\zeta(s)$ to $\zeta(1-s)$.
@@ -400,8 +398,7 @@ which relates $\zeta(s)$ to $\zeta(1-s)$.
 
 For $\operatorname{Re} s > 1$,
 
-$$
-\zeta(s) = \prod_p \frac{1}{1 - p^{-s}},
+$$ \boxed{\;\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\;},
 $$
 
 where the product is over all primes $p$. This is the analytic form of the fundamental theorem of arithmetic, and it is the starting point of analytic number theory.

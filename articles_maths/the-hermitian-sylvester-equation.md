@@ -31,8 +31,8 @@ This article is the biquaternion instance of *The Hermitian Sylvester Equation w
 **Theorem (the Sylvester spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_3)$ and $\mu_{1},\mu_{2}$ those of $\mathsf{M}_2(\tilde Q_4)$. Then
 
 $$
-\mathrm{spec}(S_{\tilde Q_3,\tilde Q_4})=\{\lambda_{i}+\mu_{j}\},\qquad
-\det(S_{\tilde Q_3,\tilde Q_4})=\prod_{i,j}(\lambda_{i}+\mu_{j}).
+\boxed{\; \mathrm{spec}(S_{\tilde Q_3,\tilde Q_4})=\{\lambda_{i}+\mu_{j}\},\qquad
+\det(S_{\tilde Q_3,\tilde Q_4})=\prod_{i,j}(\lambda_{i}+\mu_{j}) \;}.
 $$
 
 *Proof.* $S_{\tilde Q_3,\tilde Q_4}=\mathsf{M}_2(\tilde Q_3)\otimes I+I\otimes\mathsf{M}_2(\tilde Q_4)^{T}$ in the vectorisation of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and the spectrum of a Kronecker sum is the set of pairwise sums.
@@ -60,7 +60,7 @@ $$
 **Theorem (the commutator laws).** For all $\tilde Q_3,\tilde Q_4$,
 
 $$
-[L_{\tilde Q_3},L_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]},\qquad [R_{\tilde Q_3},R_{\tilde Q_4}]=-R_{[\tilde Q_3,\tilde Q_4]},\qquad [L_{\tilde Q_3},R_{\tilde Q_4}]=0 .
+\boxed{\; [L_{\tilde Q_3},L_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]},\qquad [R_{\tilde Q_3},R_{\tilde Q_4}]=-R_{[\tilde Q_3,\tilde Q_4]},\qquad [L_{\tilde Q_3},R_{\tilde Q_4}]=0 \;}.
 $$
 
 *Proof.* $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$ and $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ from the composition laws, and $L$ and $R$ commute because left and right multiplication commute.
@@ -95,7 +95,7 @@ $$
 **Theorem (the integral representation).** Let $\tilde Q_3,\tilde Q_4$ have spectra in the open right half-plane (so that $\exp(-t\tilde Q_3)$ and $\exp(-t\tilde Q_4)$ decay). Then
 
 $$
-\tilde Q = \int_{0}^{\infty} \exp(-t\tilde Q_3)\,c\,\exp(-t\tilde Q_4)\,dt
+\boxed{\; \tilde Q = \int_{0}^{\infty} \exp(-t\tilde Q_3)\,c\,\exp(-t\tilde Q_4)\,dt \;}
 $$
 
 is the solution of $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$.

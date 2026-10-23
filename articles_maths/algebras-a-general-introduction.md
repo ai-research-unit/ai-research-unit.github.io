@@ -182,7 +182,7 @@ The hierarchy of algebraic structures over a fixed commutative ring $R$, from we
 So, over a field $F$:
 
 $$
-\text{field} \subset \text{division algebra} \subset \text{unital associative algebra} \subset \text{associative algebra} \subset \text{algebra} \subset \text{vector space}.
+\boxed{\;\text{field} \subset \text{division algebra} \subset \text{unital associative algebra} \subset \text{associative algebra} \subset \text{algebra} \subset \text{vector space}\;}.
 $$
 
 The inclusions are strict. For example:
@@ -195,7 +195,7 @@ The inclusions are strict. For example:
 Over a commutative ring $R$, the hierarchy is:
 
 $$
-\text{algebra over } R \supset \text{associative algebra over } R \supset \text{unital algebra over } R.
+\boxed{\;\text{algebra over } R \supset \text{associative algebra over } R \supset \text{unital algebra over } R\;}.
 $$
 
 The notion of a division algebra over $R$ is only meaningful when $R$ is an integral domain, and the classical theory requires $R$ to be a field.
@@ -277,7 +277,7 @@ If $A$ and $B$ are free of ranks $m$ and $n$, then $A \oplus B$ is free of rank 
 Let $A$ and $B$ be algebras over the same commutative ring $R$. The **tensor product** $A \otimes_R B$ is the algebra over $R$ whose underlying module is the tensor product of the modules $A$ and $B$, with product defined on elementary tensors by
 
 $$
-(a_1 \otimes b_1)(a_2 \otimes b_2) = (a_1 a_2) \otimes (b_1 b_2)
+\boxed{\;(a_1 \otimes b_1)(a_2 \otimes b_2) = (a_1 a_2) \otimes (b_1 b_2)\;}
 $$
 
 and extended bilinearly.

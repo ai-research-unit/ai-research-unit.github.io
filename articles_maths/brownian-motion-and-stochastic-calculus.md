@@ -50,7 +50,7 @@ The theorem is the precise statement of the roughness of the Brownian path: the 
 **Theorem (quadratic variation of Brownian motion).** The quadratic variation of Brownian motion exists and equals the elapsed time:
 
 $$
-\sum_{i=1}^{n}(B_{t_{i+1}}-B_{t_i})^2 \longrightarrow t \qquad \text{in } L^2 \text{ and a.s. along refining sequences},
+\boxed{\;\sum_{i=1}^{n}(B_{t_{i+1}}-B_{t_i})^2 \longrightarrow t \qquad \text{in } L^2 \text{ and a.s. along refining sequences}\;},
 $$
 
 as the mesh of the partition tends to $0$. In particular the total variation of the path is infinite a.s. on every interval.
@@ -126,7 +126,7 @@ The isometry is the statement that the stochastic integral is an isometry from $
 **Theorem (Itô's formula).** Let $f : \mathbb{R}\times\mathbb{R}\to\mathbb{R}$ be of class $C^{1,2}$ and let $X_t = X_0 + \int_0^t K_s\,ds + \int_0^t H_s\,dB_s$ be a continuous semimartingale. Then
 
 $$
-f(t, X_t) = f(0, X_0) + \int_0^t \partial/\partial t\,f(s,X_s)\,ds + \int_0^t \partial/\partial x\,f(s,X_s)\,dX_s + \frac{1}{2}\int_0^t \partial^2/\partial x^2f(s,X_s)\,d\langle X\rangle_s,
+\boxed{\;f(t, X_t) = f(0, X_0) + \int_0^t \partial/\partial t\,f(s,X_s)\,ds + \int_0^t \partial/\partial x\,f(s,X_s)\,dX_s + \frac{1}{2}\int_0^t \partial^2/\partial x^2f(s,X_s)\,d\langle X\rangle_s\;},
 $$
 
 where the middle integral is the sum of a Lebesgue integral against $K$ and an Itô integral against $H$, and $\langle X\rangle_s = \int_0^s H_u^2\,du$ is the quadratic variation of the martingale part. For the Brownian motion itself, with $dX = dB$ and $d\langle X\rangle = dt$,
@@ -235,7 +235,7 @@ Girsanov's theorem is the change of measure that removes a drift from a diffusio
 **Theorem (Feynman–Kac).** Let $V : \mathbb{R}^d\to\mathbb{R}$ be bounded and continuous from below, let $f$ be bounded and continuous, and define
 
 $$
-u(t,x) = \mathbb{E}^x\!\left[\exp\!\left(-\int_0^tV(B_s)\,ds\right)f(B_t)\right].
+\boxed{\;u(t,x) = \mathbb{E}^x\!\left[\exp\!\left(-\int_0^tV(B_s)\,ds\right)f(B_t)\right]\;}.
 $$
 
 Then $u$ is of class $C^{1,2}$ on $(0,\infty)\times\mathbb{R}^d$, and it solves the parabolic equation

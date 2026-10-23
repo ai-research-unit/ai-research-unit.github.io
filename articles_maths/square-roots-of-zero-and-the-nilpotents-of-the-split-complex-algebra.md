@@ -69,7 +69,7 @@ $$
 The reduction gives
 
 $$
-\mathcal{N}_{0}=\{0\},
+\boxed{\;\mathcal{N}_{0}=\{0\}\;},
 $$
 
 a single point, of real dimension $0$. There is no nonzero cone and no isotropic direction: the only square-zero element is the origin. The contrast with the dual numbers is sharp: there the equation $\varepsilon^{2}=0$ has the nonzero solution $\varepsilon$, and the nilpotent cone is the whole imaginary line. The contrast with the biquaternion algebra is equally sharp: there the nilpotent cone is a four-real-parameter cone inside the pure subspace. Here it collapses to a point because the two idempotent coordinates are real and their squares cannot cancel.
@@ -89,7 +89,7 @@ The verification is immediate: $0^{2}=0$. The content of the theorem is the conv
 The roots of $0$ are the origin together with the square-zero elements; since there are no nonzero square-zero elements, the two sets are
 
 $$
-\{\Xi:\Xi^{2}=0\}=\{0\},\qquad \{\text{nilpotents}\}=\varnothing .
+\boxed{\;\{\Xi:\Xi^{2}=0\}=\{0\},\qquad \{\text{nilpotents}\}=\varnothing\;}.
 $$
 
 The word **nilpotent** is defined for a nonzero element in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, so the nilpotent set is empty and the root set is the singleton $\{0\}$. The article keeps the two notions separate: $0$ is a root of $0$ and is not a nilpotent.

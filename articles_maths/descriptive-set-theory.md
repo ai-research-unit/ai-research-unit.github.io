@@ -69,7 +69,7 @@ and $\Delta^0_\alpha = \Sigma^0_\alpha\cap\Pi^0_\alpha$. The **Borel sets** are 
 
 **Definition.** Let $\{A_s\}$ be a family of subsets of $X$ indexed by the finite sequences of natural numbers. The **Souslin operation** applied to the family is
 $$
-\mathcal{A}\{A_s\} = \bigcup_{x\in\mathcal{N}}\bigcap_{n\in\mathbb{N}}A_{x\restriction n},
+\boxed{\;\mathcal{A}\{A_s\} = \bigcup_{x\in\mathcal{N}}\bigcap_{n\in\mathbb{N}}A_{x\restriction n}\;},
 $$
 and a set is **analytic** ($\Sigma^1_1$) if it is of this form with each $A_s$ closed; a set is **coanalytic** ($\Pi^1_1$) if its complement is analytic.
 

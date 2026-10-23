@@ -25,7 +25,7 @@ and the fundamental form is $\omega = \frac{i}{2}\sum_{i,j}h_{i\bar j}\,dz^i\wed
 **Theorem.** On a Hermitian manifold the holomorphic tangent bundle $T^{1,0}M$, with the Hermitian metric $h$, carries a unique connection $\nabla$ compatible with the metric and with the holomorphic structure,
 
 $$
-\nabla h = 0, \qquad \nabla^{0,1} = \bar\partial,
+\boxed{\;\nabla h = 0, \qquad \nabla^{0,1} = \bar\partial\;},
 $$
 
 the **canonical connection** of the Hermitian manifold; it is the Chern connection of the holomorphic Hermitian bundle $T^{1,0}M$.
@@ -91,7 +91,7 @@ and the **contorsion tensor** $A$ is built from the covariant derivative $\nabla
 **Theorem.** The curvature of the canonical connection is
 
 $$
-\Omega = d\omega + \omega\wedge\omega = \bar\partial\omega = \bar\partial\bigl(h^{-1}\partial h\bigr),
+\boxed{\;\Omega = d\omega + \omega\wedge\omega = \bar\partial\omega = \bar\partial\bigl(h^{-1}\partial h\bigr)\;},
 $$
 
 a matrix of $(1,1)$-forms; in components,
@@ -115,7 +115,7 @@ $$
 **Theorem.** The Ricci form is a real closed $(1,1)$-form, given in a holomorphic frame by
 
 $$
-\rho = \frac{i}{2\pi}\,\bar\partial\partial\log\det(h_{i\bar j}) = -\frac{i}{2\pi}\,\partial\bar\partial\log\det(h_{i\bar j}),
+\boxed{\;\rho = \frac{i}{2\pi}\,\bar\partial\partial\log\det(h_{i\bar j}) = -\frac{i}{2\pi}\,\partial\bar\partial\log\det(h_{i\bar j})\;},
 $$
 
 and its de Rham class is the first Chern class of the manifold, $\rho = c_1(T^{1,0}M) = -c_1(K_M)$, the first Chern class of the holomorphic tangent bundle. The form is the curvature of the induced metric on the determinant line bundle $\det T^{1,0}M = K_M^*$, the anticanonical bundle.

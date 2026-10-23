@@ -16,7 +16,7 @@ Complex conjugation is not $\mathbb{C}$-linear, so the notion of a real form of 
 **Definition.** Let $S$ be a complex module over $\mathrm{Cl}(V,\mathfrak{Q})$. A **reality structure** on $S$ is an antilinear map $J$ with $J^2=\pm1$ that commutes with the Clifford action,
 
 $$
-J\,c(v)=c(v)\,J \qquad (v\in V),
+\boxed{\;J\,c(v)=c(v)\,J \qquad (v\in V)\;},
 $$
 
 and that is compatible with the spin representation, that is, $J\rho(x)=\rho(x)J$ for $x\in\mathrm{Spin}(V,\mathfrak{Q})$. A reality structure with $J^2=+1$ is a **real structure**; one with $J^2=-1$ is a **quaternionic structure**.

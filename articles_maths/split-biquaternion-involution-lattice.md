@@ -57,7 +57,9 @@ The distinction of the second formula — it alone preserves the order of a prod
 **Theorem.** The four conjugations are related by
 
 $$
-{}^{*} = \bar{\cdot} \circ {}^{\natural} , \qquad \flat = -{}^{*} ,
+\boxed{\;
+{}^{*} = \bar{\cdot} \circ {}^{\natural} , \qquad \flat = -{}^{*}
+\;},
 $$
 
 and any two distinct ones among ${}^{\natural}, \bar{\cdot}, {}^{*}$ generate the third, so that $\{ \mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*} \}$ is a group isomorphic to the Klein four-group and those three are pairwise commuting involutions. Each of the four is its own inverse.
@@ -84,7 +86,9 @@ The entry $-\bar{\cdot}$ denotes the map $\tilde{Q} \mapsto -\bar{\tilde{Q}}$. T
 **Theorem.** Conjugation by any of the four maps, $\tau \mapsto \sigma \circ \tau \circ \sigma^{-1}$, fixes each of the four conjugations, so the conjugation action of the Klein group on itself is trivial and $\sigma \circ \tau = \tau \circ \sigma$ for all pairs:
 
 $$
-{}^{\natural} \circ \bar{\cdot} \circ {}^{\natural} = \bar{\cdot} , \qquad {}^{\natural} \circ {}^{*} \circ {}^{\natural} = {}^{*} , \qquad {}^{\natural} \circ \flat \circ {}^{\natural} = \flat .
+\boxed{\;
+{}^{\natural} \circ \bar{\cdot} \circ {}^{\natural} = \bar{\cdot} , \qquad {}^{\natural} \circ {}^{*} \circ {}^{\natural} = {}^{*} , \qquad {}^{\natural} \circ \flat \circ {}^{\natural} = \flat
+\;}.
 $$
 
 **Proof.** The group $\{ \mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*} \}$ is abelian by the preceding theorem, and in an abelian group conjugation is the identity; the anti-Hermitian conjugation is central because it is $-{}^{*}$ with $-\mathrm{id}$ central.
@@ -107,7 +111,9 @@ The practical content is that the four conjugations can be applied in any order 
 The eight labels stand for six distinct subspaces, because the Hermitian pair is counted twice: the anti-Hermitian conjugation has the same eigenspaces as Hermitian conjugation with the signs exchanged, so
 
 $$
-\left\{ \tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \mathbb{M}_- , \qquad \left\{ \tilde{Q} : \tilde{Q}^{\flat} = -\tilde{Q} \right\} = \mathbb{M}_+ .
+\boxed{\;
+\left\{ \tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \mathbb{M}_- , \qquad \left\{ \tilde{Q} : \tilde{Q}^{\flat} = -\tilde{Q} \right\} = \mathbb{M}_+
+\;}.
 $$
 
 **Proof.** Each row is the comparison-of-coefficients computation recorded in the article of the corresponding subspace. For the last row, the equations $-\tilde{Q}^{*} = \tilde{Q}$ and $-\tilde{Q}^{*} = -\tilde{Q}$ are those of ${}^{*}$ read with the opposite labels.

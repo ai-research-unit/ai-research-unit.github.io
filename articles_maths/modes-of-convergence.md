@@ -76,7 +76,7 @@ The definition is the statement that $f_n$ lies eventually in every ball of $B(X
 **Proposition (uniform Cauchy criterion).** Let $Y$ be complete. Then $(f_n)$ converges uniformly if and only if $(f_n)$ is Cauchy for the supremum norm, that is, if and only if
 
 $$
-\sup_{x \in X} \|f_m(x) - f_n(x)\| \longrightarrow 0 \qquad (m, n \to \infty).
+\boxed{\;\sup_{x \in X} \|f_m(x) - f_n(x)\| \longrightarrow 0 \qquad (m, n \to \infty)\;}.
 $$
 
 **Proof.** Uniform convergence implies the Cauchy condition by the triangle inequality. Conversely, if the condition holds, then for each $x$ the sequence $(f_n(x))$ is Cauchy in the complete space $Y$, so it has a limit $f(x)$; given $\epsilon > 0$, choose $N$ with $\sup_x \|f_m(x) - f_n(x)\| < \epsilon$ for $m, n \geq N$ and let $m \to \infty$ in the estimate $\|f_m(x) - f_n(x)\| < \epsilon$ to get $\|f(x) - f_n(x)\| \leq \epsilon$ for all $x$ and $n \geq N$.
@@ -128,7 +128,7 @@ Equivalently, for every $\epsilon > 0$ there is $N$ with $\mu(\{\|f_n - f\| > \e
 **Theorem (a metric for convergence in measure).** On a $\sigma$-finite measure space the formula
 
 $$
-d_\mu(f, g) = \inf \Bigl\{ \epsilon > 0 : \mu\bigl(\{\|f - g\| > \epsilon\}\bigr) \leq \epsilon \Bigr\}
+\boxed{\;d_\mu(f, g) = \inf \Bigl\{ \epsilon > 0 : \mu\bigl(\{\|f - g\| > \epsilon\}\bigr) \leq \epsilon \Bigr\}\;}
 $$
 
 defines a metric on the measurable functions, and $f_n \xrightarrow{\mu} f$ if and only if $d_\mu(f_n, f) \to 0$. The metric is complete, so the measurable functions modulo a.e. equality form a complete metric space under it.
@@ -262,7 +262,7 @@ Hypothesis (c) cannot be replaced by convergence in measure alone, by the exampl
 **Theorem.** Let $f_n : (a,b) \to \mathbb{R}$ be differentiable with $f_n(x_0)$ convergent for some $x_0$ and $f_n' \rightrightarrows g$ uniformly on $(a,b)$. Then $f_n$ converges uniformly to a differentiable $f$ with $\frac{df}{dx} = g$, and
 
 $$
-\frac{d}{dx} \lim_{n} f_n = \lim_n \frac{d}{dx} f_n .
+\boxed{\;\frac{d}{dx} \lim_{n} f_n = \lim_n \frac{d}{dx} f_n\;} .
 $$
 
 **Proof sketch.** For $x \in (a,b)$ the mean value theorem gives $\|f_m(x) - f_n(x) - (f_m(x_0) - f_n(x_0))\| \leq \|f_m' - f_n'\|_\infty \, |x - x_0|$; the uniform Cauchy hypothesis for the derivatives and the convergence at $x_0$ therefore imply the uniform Cauchy condition for the $f_n$, so there is a uniform limit $f$. Passing to the limit in the difference quotient, the same estimate shows that $f$ is differentiable with derivative $g$.

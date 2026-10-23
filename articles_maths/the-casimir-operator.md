@@ -34,7 +34,7 @@ The assignment is functorial: if $f:V\to W$ is a homomorphism of $\mathrm{G}$-mo
 **Theorem (the Casimir operator is an intertwining operator).** For every $x\in\mathrm{G}$,
 
 $$
-[\Omega_\pi,\pi(x)]=0,
+\boxed{\;[\Omega_\pi,\pi(x)]=0\;},
 $$
 
 so $\Omega_\pi\in\operatorname{End}_{\mathrm{G}}(V)$, the algebra of $\mathrm{G}$-module endomorphisms of $V$.
@@ -58,7 +58,7 @@ so $\Omega_\pi\in\operatorname{End}_{\mathrm{G}}(V)$, the algebra of $\mathrm{G}
 **Theorem.** Let $V$ be a finite-dimensional completely reducible $\mathrm{G}$-module and let $V\cong\bigoplus_\nu V(\nu)^{\oplus m_\nu}$ be its decomposition into isotypic components. Then for each $\nu$
 
 $$
-V_{(\nu)}=\{\,v\in V : \Omega_\pi v=(\nu,\nu+2\rho)\,v\,\},
+\boxed{\;V_{(\nu)}=\{\,v\in V : \Omega_\pi v=(\nu,\nu+2\rho)\,v\,\}\;},
 $$
 
 the eigenspace of $\Omega_\pi$ for the eigenvalue $(\nu,\nu+2\rho)$; the eigenspaces of the Casimir operator are exactly the isotypic components.
@@ -96,9 +96,9 @@ $$
 **Theorem.** On the adjoint module $\mathrm{G}$ the Casimir operator is the identity,
 
 $$
-\Omega_{\operatorname{ad}}=\mathrm{id}_{\mathrm{G}},
+\boxed{\;\Omega_{\operatorname{ad}}=\mathrm{id}_{\mathrm{G}},
 \qquad
-\Omega_{\operatorname{ad}}(x)=\sum_{i=1}^{m}[x_i,[x^i,x]]=x .
+\Omega_{\operatorname{ad}}(x)=\sum_{i=1}^{m}[x_i,[x^i,x]]=x\;} .
 $$
 
 **Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[x^i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\theta,\theta+2\rho)$, with $\theta$ the highest root, and the normalisation of the Killing form makes this equal to $1$.

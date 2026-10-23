@@ -144,7 +144,7 @@ The connecting map $\partial$ is the snake-lemma map, and it lowers degree by on
 **Theorem (excision).** Let $Z \subseteq A \subseteq X$ with the closure of $Z$ contained in the interior of $A$. Then the inclusion $(X \setminus Z, A \setminus Z) \hookrightarrow (X,A)$ induces isomorphisms
 
 $$
-H_n(X \setminus Z, A \setminus Z; R) \xrightarrow{\ \cong\ } H_n(X,A;R)
+\boxed{\;H_n(X \setminus Z, A \setminus Z; R) \xrightarrow{\ \cong\ } H_n(X,A;R)\;}
 $$
 
 for all $n$.
@@ -166,7 +166,7 @@ and hence $H_n(S^n;R) \cong R$ and $H_k(S^n;R) = 0$ for $0 < k < n$.
 **Theorem (Mayer–Vietoris).** Let $X = \operatorname{int}(A) \cup \operatorname{int}(B)$ for subspaces $A, B$. Then there is a long exact sequence
 
 $$
-\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \xrightarrow{\ \partial\ } H_{n-1}(A \cap B) \to \cdots,
+\boxed{\;\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \xrightarrow{\ \partial\ } H_{n-1}(A \cap B) \to \cdots\;},
 $$
 
 with coefficients suppressed and the connecting map $\partial$ defined from the snake lemma applied to the short exact sequence of complexes $0 \to C_*(A \cap B) \to C_*(A)\oplus C_*(B) \to C_*(A+B) \to 0$, where $C_*(A+B)$ denotes chains that are sums of chains in $A$ and in $B$; excision identifies $H_*(A+B)$ with $H_*(X)$.
@@ -200,7 +200,7 @@ with coefficients suppressed and the connecting map $\partial$ defined from the 
 **Theorem.** Let $K$ be a simplicial complex with underlying space $|K|$. Then there is a natural isomorphism
 
 $$
-H_n^{\Delta}(K;R) \cong H_n(|K|;R)
+\boxed{\;H_n^{\Delta}(K;R) \cong H_n(|K|;R)\;}
 $$
 
 for all $n$.

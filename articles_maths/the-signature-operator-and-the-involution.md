@@ -44,7 +44,7 @@ the difference of the traces of the action on the harmonic self-dual and anti-se
 **Theorem.** The equivariant index is constant on the conjugacy classes of $\Gamma$ and is a $\Gamma$-cobordism invariant; it is additive under the disjoint union and multiplicative under products, and it depends on the action of $g$ on the cohomology through the character
 
 $$
-\operatorname{ind}_g(D^{+})=\operatorname{tr}\bigl(g\mid H^{2k}_{+}(M)\bigr)-\operatorname{tr}\bigl(g\mid H^{2k}_{-}(M)\bigr),
+\boxed{\;\operatorname{ind}_g(D^{+})=\operatorname{tr}\bigl(g\mid H^{2k}_{+}(M)\bigr)-\operatorname{tr}\bigl(g\mid H^{2k}_{-}(M)\bigr)\;},
 $$
 
 where $H^{2k}_{\pm}$ are the self-dual and anti-self-dual middle cohomology.
@@ -56,7 +56,7 @@ where $H^{2k}_{\pm}$ are the self-dual and anti-self-dual middle cohomology.
 **Theorem ($G$-signature theorem, Atiyah–Singer).** Let $M$ be a closed oriented Riemannian $4k$-manifold with a finite group $\Gamma$ acting isometrically, and let $g\in\Gamma$. Then the $g$-signature is computed from the fixed point set of $g$,
 
 $$
-\sigma(g,M)=\sum_{F\subseteq M^{g}}\sigma(g,F,\nu),
+\boxed{\;\sigma(g,M)=\sum_{F\subseteq M^{g}}\sigma(g,F,\nu)\;},
 $$
 
 where the sum is over the connected components $F$ of the fixed point set and the term depends only on the action of $g$ on the normal bundle $\nu$ of $F$ and on the restriction of the metric to $F$; introduced by Atiyah and Singer and proved by their equivariant index theorem, the formula expresses the equivariant invariant as a sum of **local terms** supported on the fixed point set.
@@ -80,7 +80,7 @@ the product of the cotangents of the half-angles; the formula is the local form 
 **Theorem (Lefschetz fixed point formula).** Let $M$ be a closed oriented manifold with a finite group $\Gamma$ acting smoothly, and let $g\in\Gamma$ have fixed point set $M^{g}$. Then the **Lefschetz number**
 
 $$
-L(g)=\sum_{q}(-1)^{q}\operatorname{tr}\bigl(g\mid H^{q}(M;\mathbb{Q})\bigr)
+\boxed{\;L(g)=\sum_{q}(-1)^{q}\operatorname{tr}\bigl(g\mid H^{q}(M;\mathbb{Q})\bigr)\;}
 $$
 
 equals the Euler characteristic of the fixed point set,

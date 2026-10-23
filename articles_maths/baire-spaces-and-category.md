@@ -13,7 +13,7 @@ This article develops the calculus of meagre sets, characterises Baire spaces in
 
 **Definition.** Let $X$ be a topological space and $A \subseteq X$. Then $A$ is **nowhere dense** in $X$ if the interior of its closure is empty:
 $$
-\bigl(\overline{A}\bigr)^\circ = \emptyset .
+\boxed{\;\bigl(\overline{A}\bigr)^\circ = \emptyset\;} .
 $$
 A set is **meagre**, or of the **first category**, if it is a countable union of nowhere dense sets; it is **of the second category** if it is not meagre; and it is **comeagre**, or **residual**, if its complement is meagre. A **Baire space** is a space in which the intersection of every countable family of dense open sets is dense.
 
@@ -144,7 +144,7 @@ and player I wins otherwise. A **strategy** for a player is a function that assi
 
 **Theorem (the general Banach–Mazur game).** Let $Y$ be a topological space, $X \subseteq Y$, and $\mathcal{W}$ a family of subsets of $Y$ each with nonempty interior and meeting every nonempty open subset of $Y$. In the game $MB(X, Y, \mathcal{W})$, in which the players alternately choose members of $\mathcal{W}$ forming a descending sequence and player I wins if
 $$
-X \cap \Bigl(\bigcap_{n} W_n\Bigr) \neq \emptyset,
+\boxed{\;X \cap \Bigl(\bigcap_{n} W_n\Bigr) \neq \emptyset\;},
 $$
 player II has a winning strategy if and only if $X$ is meagre in $Y$; and if $Y$ is a complete metric space, player I has a winning strategy if and only if $X$ is comeagre in some nonempty open subset of $Y$.
 

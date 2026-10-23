@@ -44,7 +44,7 @@ $$
 **Proposition (the lift of the Riemann curvature).** With $R$ the Riemann curvature tensor of $(M,g)$ and $R_{ij}(X,Y)=g(R(X,Y)e_i,e_j)$ its components in an orthonormal frame,
 
 $$
-R^{\mathcal{S}}(X,Y)\sigma = \tfrac14\sum_{i,j}R_{ij}(X,Y)\,c(e_i)c(e_j)\sigma ;
+\boxed{\;R^{\mathcal{S}}(X,Y)\sigma = \tfrac14\sum_{i,j}R_{ij}(X,Y)\,c(e_i)c(e_j)\sigma\;} ;
 $$
 
 the spin curvature is the image of the curvature form of the Levi-Civita connection under the same Lie-algebra isomorphism that sends the connection to its spin value. In particular the spin connection is flat exactly when the metric is flat.
@@ -111,7 +111,7 @@ For $n$ odd there is no such splitting over the Clifford algebra, and $D$ carrie
 **Theorem (Lichnerowicz, quoted).** Let $D$ be the spinor operator of a spin manifold $(M,g)$ with the spin connection. Then
 
 $$
-D^2 = \nabla^{*}\nabla + \tfrac14\operatorname{scal},
+\boxed{\;D^2 = \nabla^{*}\nabla + \tfrac14\operatorname{scal}\;},
 $$
 
 where $\nabla^{*}\nabla$ is the connection Laplacian on spinors and $\operatorname{scal}$ is the scalar curvature of $g$.
@@ -127,7 +127,7 @@ where $\nabla^{*}\nabla$ is the connection Laplacian on spinors and $\operatorna
 **Proposition (the operator under a conformal change).** Let $\hat g=\Omega^2g$ be a metric conformal to $g$ with $\Omega>0$, with the spinor bundles identified by the conformal factor in the standard way. Then the operator transforms as
 
 $$
-\hat D\bigl(\Omega^{-(n-1)/2}\sigma\bigr) = \Omega^{-(n+1)/2}\,D\sigma + \Omega^{-(n+1)/2}\,c(\operatorname{grad}\log\Omega)\,\sigma ,
+\boxed{\;\hat D\bigl(\Omega^{-(n-1)/2}\sigma\bigr) = \Omega^{-(n+1)/2}\,D\sigma + \Omega^{-(n+1)/2}\,c(\operatorname{grad}\log\Omega)\,\sigma\;} ,
 $$
 
 so that the operator is not conformally invariant but acquires a zeroth-order term; the combination that removes the term is the subject of *The Penrose Operator*.

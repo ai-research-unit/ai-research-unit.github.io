@@ -42,7 +42,7 @@ $$
 **Theorem (the Casimir element is central).** For every $Z \in \mathrm{G}$ the derivation $\operatorname{ad}_Z$ annihilates $\Omega_B$, and hence
 
 $$
-\Omega_B \in Z(\mathrm{U}(\mathrm{G})) .
+\boxed{\;\Omega_B \in Z(\mathrm{U}(\mathrm{G}))\;} .
 $$
 
 *Proof.* In the enveloping algebra the derivation $\operatorname{ad}_Z = [Z, \cdot]$ acts by the Leibniz rule, so
@@ -80,7 +80,7 @@ In particular, for the trace form of a faithful representation and for the Killi
 Let $\mathrm{G}$ be a split semisimple algebra over an algebraically closed field of characteristic zero, let $\mathfrak{h}$ be a Cartan subalgebra and let $V_\lambda$ be the irreducible representation of highest weight $\lambda$. With the normalisation in which the Casimir is formed by the Killing form and $\langle\cdot,\cdot\rangle$ is the induced form on $\mathfrak{h}^*$, the **quadratic invariant** is
 
 $$
-c_\lambda = \langle \lambda, \lambda + 2\varrho\rangle ,
+\boxed{\;c_\lambda = \langle \lambda, \lambda + 2\varrho\rangle\;} ,
 $$
 
 where $\varrho$ is the Weyl vector, half the sum of the positive roots.
@@ -126,7 +126,7 @@ where $\varrho$ is the Weyl vector, half the sum of the positive roots.
 **Theorem.** Let $\mathrm{H}$ be a Cartan subalgebra of the semisimple algebra $\mathrm{G}$, let $\Delta^{+}$ be a system of positive roots and let $\varrho = \tfrac12\sum_{\alpha\in\Delta^{+}}\alpha$. The **Harish-Chandra homomorphism** is the algebra homomorphism
 
 $$
-\gamma : Z(\mathrm{U}(\mathrm{G}))\longrightarrow S(\mathrm{H}) ,
+\boxed{\;\gamma : Z(\mathrm{U}(\mathrm{G}))\longrightarrow S(\mathrm{H})\;} ,
 $$
 
 defined by projecting a central element on the Cartan part of its Poincaré--Birkhoff--Witt decomposition and shifting the result by $\varrho$; it is an isomorphism of $Z(\mathrm{U}(\mathrm{G}))$ onto the Weyl-invariant symmetric algebra $S(\mathrm{H})^{W}$. On the irreducible representation of highest weight $\lambda$ the central element $z$ acts by the scalar $\gamma(z)(\lambda+\varrho)$, and the Casimir element corresponds to the invariant $\lVert\lambda+\varrho\rVert^{2}-\lVert\varrho\rVert^{2}$.

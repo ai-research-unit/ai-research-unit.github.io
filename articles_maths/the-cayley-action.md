@@ -12,7 +12,7 @@ The article assumes the elementary theory of groups from *Groups*, the definitio
 **Definition.** The **Cayley action** of $G$ is the left translation action of $G$ on its own underlying set,
 
 $$
-G\times G \longrightarrow G, \qquad (a,x) \longmapsto a\cdot x = ax .
+\boxed{\;G\times G \longrightarrow G, \qquad (a,x) \longmapsto a\cdot x = ax\;} .
 $$
 
 **Proposition.** The Cayley action is an action, and it is **free**: for $a\neq e$ and every $x$ one has $a\cdot x\neq x$. It is **transitive**: every $x$ is $x\cdot e$, so there is a single orbit. An action that is free and transitive is **sharply transitive**, and then the stabiliser of every point is trivial.
@@ -22,7 +22,7 @@ $$
 **Proposition (the permutation representation).** The permutation representation of the Cayley action is
 
 $$
-\rho_L : G \longrightarrow \operatorname{Sym}(G), \qquad \rho_L(a)(x) = ax ,
+\boxed{\;\rho_L : G \longrightarrow \operatorname{Sym}(G), \qquad \rho_L(a)(x) = ax\;} ,
 $$
 
 a homomorphism; and it is injective.

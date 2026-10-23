@@ -40,7 +40,7 @@ $$
 and the choice $V = -H\nu$ makes the area decrease at the maximal rate, giving
 
 $$
-\frac{d}{dt}\operatorname{Area} = -\int_M H^2\,dA \le 0 .
+\boxed{\;\frac{d}{dt}\operatorname{Area} = -\int_M H^2\,dA \le 0\;} .
 $$
 
 *Proof.* The first variation formula of the article on minimal surfaces gives the derivative as the integral of $V$ against the mean curvature vector with a minus sign; the normal component of $V$ is $V\cdot\nu$ and the tangential part contributes nothing to the first order, because the area is invariant under reparametrisation. Choosing $V=-H\nu$ makes the integrand negative, $-(H)^2$, and Cauchy–Schwarz shows that this choice maximises the rate.
@@ -98,8 +98,8 @@ with $\kappa$ the curvature and $N$ the inward normal shrinks the curve; a circl
 **Theorem (evolution of the curvature).** Along a mean curvature flow of hypersurfaces in $\mathbb{R}^{n+1}$,
 
 $$
-\frac{\partial H}{\partial t} = \Delta H + H|A|^2 , \qquad
-\frac{\partial |A|^2}{\partial t} = \Delta|A|^2 - 2|\nabla A|^2 + 2|A|^4 ,
+\boxed{\;\frac{\partial H}{\partial t} = \Delta H + H|A|^2 , \qquad
+\frac{\partial |A|^2}{\partial t} = \Delta|A|^2 - 2|\nabla A|^2 + 2|A|^4\;} ,
 $$
 
 where $|A|^2$ is the squared norm of the second fundamental form and $\Delta$ is the Laplace–Beltrami operator of the evolving surface; in a general ambient Riemannian manifold the equation for $H$ acquires the additional term $H\,\mathrm{Ric}(\nu,\nu)$.
@@ -113,7 +113,7 @@ where $|A|^2$ is the squared norm of the second fundamental form and $\Delta$ is
 **Theorem (Huisken's pinching theorem).** Let $F_0 : M^n\to\mathbb{R}^{n+1}$ be a compact, strictly convex immersed hypersurface. Then the mean curvature flow becomes extinct at a finite time $T$, and, after rescaling about the extinction point so that the enclosed volume is constant,
 
 $$
-|A|^2 - \frac1nH^2 \longrightarrow 0 \qquad \text{and} \qquad \frac{H^2}{n|A|^2}\longrightarrow1 ,
+\boxed{\;|A|^2 - \frac1nH^2 \longrightarrow 0 \qquad \text{and} \qquad \frac{H^2}{n|A|^2}\longrightarrow1\;} ,
 $$
 
 so the rescaled surfaces converge to a round sphere; consequently $M$ is diffeomorphic to $S^n$.

@@ -33,7 +33,7 @@ and the map $T\mapsto T^*$ is the **involution** of $B(H)$.
 **Proposition (calculus of the adjoint).** The involution is conjugate-linear, involutive and reversing: for $S,T\in B(H)$ and $\lambda\in\mathbb{K}$,
 
 $$
-(S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda T^*,\qquad (ST)^*=T^*S^*,\qquad T^{**}=T .
+\boxed{\;(S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda T^*,\qquad (ST)^*=T^*S^*,\qquad T^{**}=T\;} .
 $$
 
 It is isometric, $\|T^*\|=\|T\|$.
@@ -43,7 +43,7 @@ It is isometric, $\|T^*\|=\|T\|$.
 **Theorem (the C\*-identity).** For every $T\in B(H)$,
 
 $$
-\|T^*T\|=\|T\|^2 .
+\boxed{\;\|T^*T\|=\|T\|^2\;} .
 $$
 
 Hence $B(H)$ is a $C^*$-algebra: a Banach algebra with an isometric involution satisfying the $C^*$-identity.
@@ -83,7 +83,7 @@ The norm topology is the topology of the Banach algebra structure and the one in
 **Proposition (comparison of the topologies).** Every norm-convergent net converges strongly, and every strongly convergent net converges weakly:
 
 $$
-\text{norm}\ \Longrightarrow\ \text{SOT}\ \Longrightarrow\ \text{WOT},
+\boxed{\;\text{norm}\ \Longrightarrow\ \text{SOT}\ \Longrightarrow\ \text{WOT}\;},
 $$
 
 and both implications are strict in infinite dimension; on the unit ball of $B(H)$ the WOT and the SOT have the same closed convex sets, so a WOT-closed convex set is SOT-closed and conversely.

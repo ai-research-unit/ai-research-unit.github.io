@@ -11,7 +11,7 @@ The general quaternionic sesquilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangl
 **Theorem (the Gram matrix is the sign matrix).** In the coefficient basis
 
 $$
-G=\mathrm{diag}(1,-1,-1,-1)=E ,
+\boxed{\; G=\mathrm{diag}(1,-1,-1,-1)=E \;},
 $$
 
 so the diagonal entries are $+1,-1,-1,-1$, the off-diagonal entries vanish, and $\det G=-1$; displayed in full,
@@ -47,8 +47,8 @@ of signature $(2,6)$.
 **Proposition (the form as a matrix trace).** For all biquaternions,
 
 $$
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\,\mathsf{M}_2(\tilde{Q}_1)\bigr)
-=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_2^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\bigr),
+\boxed{\; \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\,\mathsf{M}_2(\tilde{Q}_1)\bigr)
+=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_2^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\bigr) \;},
 $$
 
 where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde{Q}=e_t+i\vec e_x$ the model is
@@ -163,10 +163,10 @@ the bridge identity of *The Fundamental Symmetry of the Biquaternion Algebra*.
 **Theorem (the orthogonal splitting).** The general quaternionic sesquilinear form splits the algebra as an orthogonal sum
 
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}},
+\boxed{\; \mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}},
 \qquad
 \mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}},\qquad
-\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}},
+\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}} \;},
 $$
 
 and the four subspaces of signature $(1,3)$ are **non-degenerate**, $\mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\}$, and are pairwise **not** Krein-orthogonal.

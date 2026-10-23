@@ -196,7 +196,7 @@ $$
 **Theorem (the Peirce decomposition of a derivation).** Let $\delta\in\operatorname{Der}(A)$ and let $x=\delta(e)=x_{01}+x_{10}\in N$. Put $a=-x_{01}+x_{10}\in N$. Then
 
 $$
-\delta=\operatorname{ad}_a+\delta_0,\qquad \delta_0\in\operatorname{Der}(A,e),
+\boxed{\;\delta=\operatorname{ad}_a+\delta_0,\qquad \delta_0\in\operatorname{Der}(A,e)\;},
 $$
 
 and the decomposition is unique with $a\in N$. Conversely, every pair $(a,\delta_0)\in N\times\operatorname{Der}(A,e)$ gives a derivation $\operatorname{ad}_a+\delta_0$.
@@ -206,7 +206,7 @@ and the decomposition is unique with $a\in N$. Conversely, every pair $(a,\delta
 **Corollary.** As vector spaces,
 
 $$
-\operatorname{Der}(A)=\operatorname{Inn}(A)+\operatorname{Der}(A,e),
+\boxed{\;\operatorname{Der}(A)=\operatorname{Inn}(A)+\operatorname{Der}(A,e)\;},
 $$
 
 and the intersection is $\operatorname{ad}_D$, the inner derivations by the diagonal part $D=A_{00}\oplus A_{11}$. The evaluation map gives the exact sequence
@@ -246,7 +246,7 @@ In particular the off-diagonal blocks of $\delta$ are exactly those of the inner
 **Theorem.** Let $A$ be a finite-dimensional central simple algebra over $k$. Then every derivation of $A$ is inner:
 
 $$
-\operatorname{Der}(A)=\operatorname{Inn}(A)\cong A/Z(A).
+\boxed{\;\operatorname{Der}(A)=\operatorname{Inn}(A)\cong A/Z(A)\;}.
 $$
 
 Consequently

@@ -65,13 +65,13 @@ and $X$ is a **length space** if $d_i = d$; the intrinsic metric always satisfie
 
 **Definition.** Let $x_0, \ldots, x_k$ be points of a distance space and let $d_{ij} = d(x_i, x_j)$. The **Cayley–Menger determinant** is
 $$
-\operatorname{CM}(x_0,\ldots,x_k) = \det\begin{pmatrix} 0 & 1 & 1 & \cdots & 1 \\ 1 & 0 & d_{01}^2 & \cdots & d_{0k}^2 \\ 1 & d_{10}^2 & 0 & \cdots & d_{1k}^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & d_{k0}^2 & d_{k1}^2 & \cdots & 0 \end{pmatrix},
+\boxed{\;\operatorname{CM}(x_0,\ldots,x_k) = \det\begin{pmatrix} 0 & 1 & 1 & \cdots & 1 \\ 1 & 0 & d_{01}^2 & \cdots & d_{0k}^2 \\ 1 & d_{10}^2 & 0 & \cdots & d_{1k}^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & d_{k0}^2 & d_{k1}^2 & \cdots & 0 \end{pmatrix}\;},
 $$
 the determinant of the $(k+2) \times (k+2)$ matrix with the vanishing diagonal, the unit border and the squares of the distances off the border.
 
 **Theorem (the volume formula).** Let $x_0, \ldots, x_k$ be points of the Euclidean space $\mathbb{R}^k$ and let $V$ be the volume of the simplex they span. Then
 $$
-\operatorname{CM}(x_0,\ldots,x_k) = (-1)^{k+1}\, 2^k\, (k!)^2\, V^2 ,
+\boxed{\;\operatorname{CM}(x_0,\ldots,x_k) = (-1)^{k+1}\, 2^k\, (k!)^2\, V^2\;} ,
 $$
 so that the Cayley–Menger determinant has the sign $(-1)^{k+1}$ for the $k+1$ points spanning a nondegenerate simplex of $\mathbb{R}^k$, vanishes exactly for the points lying in an affine subspace of dimension at most $k-1$, and its absolute value is determined by the volume.
 
@@ -79,7 +79,7 @@ so that the Cayley–Menger determinant has the sign $(-1)^{k+1}$ for the $k+1$ 
 
 **Theorem (Menger; the embedding criterion).** A metric space $X$ is isometric to a subset of the Euclidean space $\mathbb{R}^n$ if and only if every subset of $n+3$ points of $X$ is isometric to a subset of $\mathbb{R}^n$; for a finite set $x_0, \ldots, x_m$ the criterion is that the Cayley–Menger determinants satisfy
 $$
-(-1)^{k+1}\operatorname{CM}(x_{i_0},\ldots,x_{i_k}) \geq 0
+\boxed{\;(-1)^{k+1}\operatorname{CM}(x_{i_0},\ldots,x_{i_k}) \geq 0\;}
 $$
 for every subset of $k+1$ points with $k \leq n$, and that $\operatorname{CM}$ vanish for every subset of $n+2$ points. Consequently the metric geometry of the finite subsets of $\mathbb{R}^n$ is the geometry of the signs of the Cayley–Menger determinants, and the **four-point property** of a metric space, the condition that every four points embed in the Euclidean plane, is the case $n = 2$ of the criterion.
 

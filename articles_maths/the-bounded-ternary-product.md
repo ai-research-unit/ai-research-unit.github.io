@@ -35,7 +35,7 @@ and it satisfies the Hermitian symmetry $\{x,y,z\}^{*} = \{z^{*},y^{*},x^{*}\}$.
 **Theorem (the ternary product is bounded).** Let $A$ be a normed sesqualgebra with submultiplicative norm and isometric involution. Then for all $x,y,z$,
 
 $$
-\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert ,
+\boxed{\;\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert\;} ,
 $$
 
 and $\{x,y,z\}$ is continuous as a map $A \times A \times A \to A$ for the product topology.
@@ -81,7 +81,7 @@ The pair map $(x,y) \mapsto \Theta_{x,y}$ is a bounded bilinear map $A \times A^
 **Theorem (the pair operators under the commutator).** For all $x,y,u,v,p,q$,
 
 $$
-[\Theta_{x,y}, \Theta_{u,v}] = T_{[x \star y,\,u \star v],\,1} , \qquad [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}] = T_{[[x \star y,\,u \star v],\,p \star q],\,1} ,
+\boxed{\;[\Theta_{x,y}, \Theta_{u,v}] = T_{[x \star y,\,u \star v],\,1} , \qquad [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}] = T_{[[x \star y,\,u \star v],\,p \star q],\,1}\;} ,
 $$
 
 where the brackets in the right-hand members are the commutators of the envelope. The operators $\Theta$ form a bounded Lie triple system: the bracket is bounded with $\lVert[\Theta_{x,y},\Theta_{u,v}]\rVert \leq 2\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert$, and the triple commutator is again a left multiplication of the same shape, $T_{b,1}$ with $b = [[x \star y, u \star v], p \star q]$, hence a pair operator $\Theta_{b,1}$ in the unital case, of norm at most $4\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert\lVert p\rVert\lVert q\rVert$.
@@ -125,7 +125,7 @@ for all $x,y,z$ and some $C \geq 0$; the least such $C$ is the **norm** of the t
 **Theorem (the identity survives the completion).** The ternary product of $\widehat{A}$ satisfies the Jordan triple identity
 
 $$
-\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+\boxed{\;\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\}\;} ,
 $$
 
 so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple.

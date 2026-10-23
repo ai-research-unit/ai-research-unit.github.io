@@ -21,7 +21,7 @@ Throughout, $V$ is a finite-dimensional complex vector space with a positive-def
 
 **Proposition (the adjoints).** For all $A, B \in E$,
 $$
-L_A^{*} = L_{A^{\dagger}}, \qquad R_B^{*} = R_{B^{\dagger}}, \qquad \Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}},
+\boxed{\;L_A^{*} = L_{A^{\dagger}}, \qquad R_B^{*} = R_{B^{\dagger}}, \qquad \Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}\;},
 $$
 and the assignment is compatible with the composition and the involution of $E$: $(L_AL_B)^{*} = L_{B^{\dagger}}L_{A^{\dagger}}$.
 
@@ -35,7 +35,7 @@ and the assignment is compatible with the composition and the involution of $E$:
 
 **Proposition (the involution preserves the adjoint).** If $T$ is unitary and self-adjoint, so that $\alpha(X) = TXT$ satisfies $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$, then
 $$
-\alpha\,L_A^{*}\,\alpha = L_{\alpha(A)}^{*},
+\boxed{\;\alpha\,L_A^{*}\,\alpha = L_{\alpha(A)}^{*}\;},
 $$
 and similarly for the right multiplication; the grade involution carries the adjoint of the left multiplication by $A$ to the adjoint of the left multiplication by $\alpha(A)$.
 

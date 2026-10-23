@@ -81,7 +81,7 @@ Existence and uniqueness are the nondegeneracy of the form in finite dimension: 
 **Proposition.** The adjoint operation on $\operatorname{End}_k(A)$ satisfies
 
 $$
-(T+S)^\dagger=T^\dagger+S^\dagger, \qquad (TS)^\dagger=S^\dagger T^\dagger, \qquad (T^\dagger)^\dagger=T, \qquad \mathrm{id}^\dagger=\mathrm{id}.
+\boxed{\;(T+S)^\dagger=T^\dagger+S^\dagger, \qquad (TS)^\dagger=S^\dagger T^\dagger, \qquad (T^\dagger)^\dagger=T, \qquad \mathrm{id}^\dagger=\mathrm{id}\;}.
 $$
 
 It is an anti-involution of the operator algebra. If the form is sesquilinear, it is conjugate-linear in the scalar; the four identities are unchanged.
@@ -105,7 +105,7 @@ It is an anti-involution of the operator algebra. If the form is sesquilinear, i
 **Corollary.** The Peirce projection of $e$ is self-adjoint exactly when $e$ is Hermitian:
 
 $$
-P_e^\dagger=P_e \iff e^*=e.
+\boxed{\;P_e^\dagger=P_e \iff e^*=e\;}.
 $$
 
 *Proof.* If $P_e^\dagger=P_e$, then $P_{e^*}=P_e$; applying both sides to $1$ gives $e^*=e$. Conversely, if $e^*=e$, then $P_e^\dagger=P_{e^*}=P_e$.
@@ -173,7 +173,7 @@ and the form restricts to a nondegenerate form on each corner.
 **Corollary (the orthogonal Peirce decomposition).** For a Hermitian idempotent $e$,
 
 $$
-A=eAe\ \perp\ eAf\ \perp\ fAe\ \perp\ fAf,
+\boxed{\;A=eAe\ \perp\ eAf\ \perp\ fAe\ \perp\ fAf\;},
 $$
 
 and the orthogonal projection onto $eAe$ is $P_e(x)=exe$. The decomposition is the orthogonal form of the Peirce decomposition of *Hermitian Idempotents and the Peirce Decomposition*.

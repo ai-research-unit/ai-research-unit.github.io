@@ -46,7 +46,7 @@ so it is a derivation for every derivation $D$ as soon as $\lambda$ is fixed by 
 
 **Theorem.** Let $D$ and $E$ be derivations of $A$. Then their **commutator**
 $$
-[D,E] = D \circ E - E \circ D
+\boxed{\;[D,E] = D \circ E - E \circ D\;}
 $$
 is a derivation. Consequently $\operatorname{Der}(A)$ is closed under the commutator, so it is a Lie subalgebra, over $R^{\varsigma}$, of the associative algebra $\operatorname{End}_{R}(A)$; no associativity of the product of $A$ is used.
 
@@ -98,7 +98,7 @@ Then $\Phi(D)$ is a derivation, $\Phi$ is an additive map of order two on $\oper
 
 **Theorem (the decomposition).** Suppose $2$ is invertible in $R$. Then every derivation decomposes uniquely as
 $$
-D = D_{+} + D_{-}, \qquad D_{+} = \tfrac{1}{2}\bigl(D + \Phi(D)\bigr), \quad D_{-} = \tfrac{1}{2}\bigl(D - \Phi(D)\bigr),
+\boxed{\;D = D_{+} + D_{-}, \qquad D_{+} = \tfrac{1}{2}\bigl(D + \Phi(D)\bigr), \quad D_{-} = \tfrac{1}{2}\bigl(D - \Phi(D)\bigr)\;},
 $$
 with $D_{+}$ a $*$-derivation and $D_{-}$ a skew derivation.
 
@@ -178,7 +178,7 @@ which vanishes for all $x$ and $y$ exactly under the stated identity; every asso
 
 **Theorem.** Suppose $A$ associative, and let $\mathfrak{n} = \{a \in A : (\varsigma(\lambda) - \lambda)aA = 0 \ \text{for all } \lambda \in R\}$, so that $\mathrm{ad}_a$ is a derivation for every $a \in \mathfrak{n}$. Then the inner derivations form a Lie subalgebra of $\operatorname{Der}(A)$ with
 $$
-[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{ab - ba},
+\boxed{\;[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{ab - ba}\;},
 $$
 and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from $\mathfrak{n}$, with the commutator, onto the inner derivations, with kernel $\mathfrak{n} \cap Z(A)$. In the bilinear case $\mathfrak{n} = A$ and the kernel is the centre, so the inner derivations are isomorphic to $A/Z(A)$.
 

@@ -46,7 +46,7 @@ So the grading and the involution of the module are not independent: an $\alpha$
 **Theorem.** Let $\beta=\alpha\sigma$ be the composite of the grade involution and the involution of the algebra, an involution of $A$ because $\alpha$ and $\sigma$ commute. Then for all $a,b \in A$,
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\,\beta(b)} .
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\,\beta(b)}\;} .
 $$
 
 *Proof.* Since $S^{\alpha}_{a,b}=S_{a,b}\circ\alpha$ and the adjoint is anti-multiplicative, $(S^{\alpha}_{a,b})^{*}=\alpha^{*}(S_{a,b})^{*}$. By the proposition above $\alpha^{*}=\alpha$, and by *The Adjoint of the Sandwich on a Bimodule over an Algebra* $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$. Hence $(S^{\alpha}_{a,b})^{*}=\alpha\,S_{\sigma(a),\sigma(b)}$. Finally, the conjugation identity $S^{\alpha}_{c,d}=\alpha S_{\alpha^{-1}(c),\alpha^{-1}(d)}$ of *The Signed Sandwich on a Bimodule over an Algebra* gives $\alpha S_{\sigma(a),\sigma(b)}=S^{\alpha}_{\alpha^{-1}\sigma(a),\,\alpha^{-1}\sigma(b)}$, and $\alpha^{-1}\sigma=(\alpha^{-1}\sigma)=\alpha\sigma$ because $\alpha^{-1}=\alpha$ commutes with $\sigma$.
@@ -96,7 +96,7 @@ $$
 *Proof.* By the theorem and the composition rules of the signed sandwiches,
 
 $$
-(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}=S^{\alpha}_{\beta(a),\beta(b)}S^{\alpha}_{a,b}=S_{\beta(a)\alpha(a),\,\alpha(b)\beta(b)}, \qquad S^{\alpha}_{a,b}(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{a,b}S^{\alpha}_{\beta(a),\beta(b)}=S_{a\alpha(\beta(a)),\,\alpha(\beta(b))b}.
+\boxed{\;(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}=S^{\alpha}_{\beta(a),\beta(b)}S^{\alpha}_{a,b}=S_{\beta(a)\alpha(a),\,\alpha(b)\beta(b)}, \qquad S^{\alpha}_{a,b}(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{a,b}S^{\alpha}_{\beta(a),\beta(b)}=S_{a\alpha(\beta(a)),\,\alpha(\beta(b))b}\;}.
 $$
 
 With $\beta=\alpha\sigma$ and $\alpha^{2}=\mathrm{id}$, the parameters are $\beta(a)\alpha(a)=\alpha(\sigma(a)a)$, $\alpha(b)\beta(b)=\alpha(b\sigma(b))$ in the first product, and $a\alpha(\beta(a))=a\sigma(a)$, $\alpha(\beta(b))b=\sigma(b)b$ in the second. Both products equal $\mathrm{id}=S_{1,1}$ exactly when $\sigma(a)a=a\sigma(a)=1$ and $\sigma(b)b=b\sigma(b)=1$, by injectivity of the sandwich map.
@@ -116,7 +116,7 @@ Hence the unitary signed sandwiches generate a group of isometries of the pairin
 **Corollary.** For a unit $u$ the reflection $r_u=S^{\alpha}_{u,u^{-1}}$ has a reflection as its adjoint,
 
 $$
-(r_u)^{*}=S^{\alpha}_{\beta(u),\,\beta(u)^{-1}}=r_{\beta(u)},
+\boxed{\;(r_u)^{*}=S^{\alpha}_{\beta(u),\,\beta(u)^{-1}}=r_{\beta(u)}\;},
 $$
 
 and $r_u$ is unitary exactly when $u$ is a unitary element of $A$.

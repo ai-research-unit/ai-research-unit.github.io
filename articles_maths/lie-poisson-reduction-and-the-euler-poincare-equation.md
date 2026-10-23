@@ -47,7 +47,7 @@ the dual of the Lie algebra, and the quotient map is the trivialisation followed
 
 The bracket on $\mathfrak g^*$ produced by the reduction has a closed form, and it is the definition of the Lie–Poisson structure. For $f,g\in C^\infty(\mathfrak g^*)$ and $\xi\in\mathfrak g^*$,
 $$
-\{f,g\}(\xi)=\bigl\langle\xi,\,[df_\xi,dg_\xi]\bigr\rangle ,
+\boxed{\;\{f,g\}(\xi)=\bigl\langle\xi,\,[df_\xi,dg_\xi]\bigr\rangle\;} ,
 $$
 where $df_\xi$ and $dg_\xi$ are read as elements of $\mathfrak g$ through the pairing. In linear coordinates, $\{x_i,x_j\}=\sum_kc^k_{ij}x_k$ with $c^k_{ij}$ the structure constants of $\mathfrak g$; the bracket is therefore **linear**, that is, the bracket of two linear functions is again linear, and a linear Poisson structure on a vector space is the same thing as a Lie algebra structure on its dual. This is the reason the reduction lands on a *linear* structure: the quotient of $T^*G$ by the lift of left translation is a vector space, and its Poisson tensor has no quadratic terms.
 
@@ -65,7 +65,7 @@ df/dt=\{f,H\},
 $$
 which is the same formula as in the finite-dimensional Hamiltonian theory of *Lagrangian and Hamiltonian Systems* and is the sense in which the reduction preserves the form of the equations. Written on the momentum itself, the equation is
 $$
-d\xi/dt=\mathrm{ad}^*_{dH_\xi}\xi ,
+\boxed{\;d\xi/dt=\mathrm{ad}^*_{dH_\xi}\xi\;} ,
 $$
 the **Lie–Poisson equation**: the momentum is transported by the coadjoint action of the differential of the Hamiltonian. With the convention of the introduction the equation carries a plus; the equivalent reading $\frac{d}{dt}\langle\xi,X\rangle=\langle\xi,[X,dH]\rangle$, valid for every $X\in\mathfrak g$, is the one to use when the sign is in doubt, since it depends only on the bracket of $\mathfrak g$ and on the pairing.
 
@@ -107,7 +107,7 @@ $$
 $$
 the boundary term vanishes and the fundamental lemma gives the **Euler–Poincaré equation**
 $$
-\boxed{\;\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}.\;}
+\boxed{\;\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}\;}.
 $$
 Two features of the derivation are the content of the equation. First, **the momentum is transported by the coadjoint action of the velocity itself**, so the equation is nonlinear in the velocity and is not the statement that momentum is constant; the reduction of a symmetry does not produce a conserved momentum, it produces a momentum that moves under the coadjoint action. Second, **the equation is a single equation on $\mathfrak g^*$**, not a pair on $T^*G$: the configuration variable $g$ has been eliminated, and it is recovered afterwards by solving the reconstruction equation $dg/dt=g\xi$, which is linear in $g$ once $\xi$ is known. The reduction has hence removed the group and kept the algebra, at the price of a nonlinear equation and the loss of the canonical structure.
 

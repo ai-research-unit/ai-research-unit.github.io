@@ -35,7 +35,7 @@ a positive definite Hermitian form on $\Gamma(\mathcal{S})$.
 **Theorem.** The **formal adjoint** of the Cauchy–Riemann operator $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, with respect to the spinor inner product, is
 
 $$
-D^{*}=\sum_i\nabla^{\mathcal{S},*}_{e_i}c(e_i)^{*}=\sum_i\Bigl(-\nabla^{\mathcal{S}}_{e_i}-\operatorname{div}e_i\Bigr)\bigl(-c(e_i)\bigr)=D ,
+\boxed{\;D^{*}=\sum_i\nabla^{\mathcal{S},*}_{e_i}c(e_i)^{*}=\sum_i\Bigl(-\nabla^{\mathcal{S}}_{e_i}-\operatorname{div}e_i\Bigr)\bigl(-c(e_i)\bigr)=D\;} ,
 $$
 
 the divergence term vanishing on a closed manifold; hence $D$ is **formally self-adjoint**, $D^{*}=D$. The adjoint of the operator with respect to the module form of a Hermitian Clifford module is the same statement algebraically, and it is the content of *Dirac Operators with Hermitian Adjoint*.
@@ -66,8 +66,8 @@ $$
 which are mutual adjoints,
 
 $$
-(D^{+})^{*}=D^{-},\qquad
-\operatorname{coker}D^{+}=\ker(D^{+})^{*}=\ker D^{-},
+\boxed{\;(D^{+})^{*}=D^{-},\qquad
+\operatorname{coker}D^{+}=\ker(D^{+})^{*}=\ker D^{-}\;},
 $$
 
 and the index of the positive half is the difference of the chiral zero-mode spaces,
@@ -122,7 +122,7 @@ the Lichnerowicz curvature of the twisting.
 **Theorem.** The square of the Cauchy–Riemann operator is the self-adjoint Lichnerowicz Laplacian
 
 $$
-D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}\cdot\mathrm{id},
+\boxed{\;D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}\cdot\mathrm{id}\;},
 $$
 
 whose adjoint is itself, $D^{2,*}=D^{2}$; for a harmonic spinor $\psi$ the formula gives the Bochner identity

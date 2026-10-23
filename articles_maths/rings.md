@@ -128,7 +128,7 @@ The three notions coincide in a commutative ring, where one speaks simply of an 
 **Proposition.** Let $S \subseteq A$. Then
 
 $$
-(S) = \Big\{ \sum_{i=1}^{n} x_i s_i y_i : n \geq 1, \ x_i, y_i \in A, \ s_i \in S \Big\}, \qquad AS = \Big\{ \sum_{i=1}^{n} x_i s_i : x_i \in A, \ s_i \in S \Big\},
+\boxed{\;(S) = \Big\{ \sum_{i=1}^{n} x_i s_i y_i : n \geq 1, \ x_i, y_i \in A, \ s_i \in S \Big\}, \qquad AS = \Big\{ \sum_{i=1}^{n} x_i s_i : x_i \in A, \ s_i \in S \Big\}\;},
 $$
 
 and $SA$ is described symmetrically.
@@ -154,7 +154,7 @@ and $SA$ is described symmetrically.
 **Definition.** Let $P \subsetneq A$ be a proper two-sided ideal. Then $P$ is **prime** if for all two-sided ideals $I, J$,
 
 $$
-IJ \subseteq P \implies I \subseteq P \text{ or } J \subseteq P ,
+\boxed{\;IJ \subseteq P \implies I \subseteq P \text{ or } J \subseteq P\;} ,
 $$
 
 and $P$ is **maximal** if there is no two-sided ideal strictly between $P$ and $A$.
@@ -208,7 +208,7 @@ The ideal $I$ has to be two-sided for $A/I$ to be a ring. The quotients by one-s
 **Theorem (second isomorphism theorem).** Let $I \trianglelefteq A$ and let $S$ be a subring of $A$. Then $I + S$ is a subring, $I \cap S$ is a two-sided ideal of $S$, and
 
 $$
-(I + S)/I \cong S/(I \cap S) .
+\boxed{\;(I + S)/I \cong S/(I \cap S)\;} .
 $$
 
 **Proof.** $I + S$ is a subring since both are additive subgroups and $IS \subseteq I$; the kernel of the restriction to $S$ of the quotient map $A \to A/I$ is $I \cap S$, and its image is $(I + S)/I$, so the first isomorphism theorem applies.

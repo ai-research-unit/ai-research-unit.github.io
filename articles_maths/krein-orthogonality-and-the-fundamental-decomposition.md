@@ -15,11 +15,11 @@ $$
 **Theorem (the complement).** For every subspace $\mathbb{W}$,
 
 $$
-\dim\mathbb{W}+\dim\mathbb{W}^{\perp_{K}}=\dim\mathbb{B},
+\boxed{\; \dim\mathbb{W}+\dim\mathbb{W}^{\perp_{K}}=\dim\mathbb{B},
 \qquad
 \mathbb{W}\subseteq(\mathbb{W}^{\perp_{K}})^{\perp_{K}},
 \qquad
-(\mathbb{W}^{\perp_{K}})^{\perp_{K}}=\mathbb{W}\ \text{if and only if}\ \mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\}.
+(\mathbb{W}^{\perp_{K}})^{\perp_{K}}=\mathbb{W}\ \text{if and only if}\ \mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\} \;}.
 $$
 
 In particular $\mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}}$ and $\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}}$.
@@ -63,9 +63,9 @@ $$
 **Theorem (the fundamental symmetry of a decomposition).** For every fundamental decomposition $(\mathbb{W},\mathbb{W}^{\perp_{K}})$ the operator $J_{\mathbb{W}}$ is a $J$-self-adjoint involution with $J_{\mathbb{W}}^{2}=\mathrm{id}$, its signature is $(2,6)$ over $\mathbb{R}$, and it reproduces the general quaternionic sesquilinear form from the Hermitian one,
 
 $$
-\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J_{\mathbb{W}}\tilde{Q}_1\rangle_{*},
+\boxed{\; \langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J_{\mathbb{W}}\tilde{Q}_1\rangle_{*},
 \qquad
-\langle\tilde{Q},J_{\mathbb{W}}\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},\tilde{Q}\rangle_{*} .
+\langle\tilde{Q},J_{\mathbb{W}}\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},\tilde{Q}\rangle_{*} \;}.
 $$
 
 The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$, with $J_{\mathbb{C}_{\mathbb{B}}}=J={}^{\natural}$.

@@ -47,7 +47,7 @@ the quotient of the unit sphere of $\mathbb{C}^n$ by the free action of $\mathbb
 
 **Proposition (lens spaces as free quotients and the involution).** The lens space $L(m;q_1,\dots,q_n)$ is the quotient of $S^{2n-1}$ by the free action of $\mathbb{Z}/m$; for $m$ even the subgroup of order two of $\mathbb{Z}/m$ acts freely on $S^{2n-1}$ and the quotient map factors,
 $$
-S^{2n-1}\longrightarrow L(m;q_1,\dots,q_n)\longrightarrow L(m/2;q_1,\dots,q_n),
+\boxed{\;S^{2n-1}\longrightarrow L(m;q_1,\dots,q_n)\longrightarrow L(m/2;q_1,\dots,q_n)\;},
 $$
 so that the lens space of even order double covers the lens space of half the order, with the free involution $(z_1,\dots,z_n)\mapsto(-z_1,\dots,-z_n)$ as the covering transformation. The quotient of $S^{2n-1}$ by the subgroup of order two is $L(2;1,\dots,1) = \mathbb{RP}^{2n-1}$.
 
@@ -55,7 +55,7 @@ so that the lens space of even order double covers the lens space of half the or
 
 **Theorem (classification of lens spaces).** Two lens spaces are **homeomorphic** if and only if their parameters are related as in the Reidemeister classification, and **homotopy equivalent** if and only if
 $$
-q_1\cdots q_n \;\equiv\; \pm k^{\,n}\,q'_1\cdots q'_n \pmod m
+\boxed{\;q_1\cdots q_n \;\equiv\; \pm k^{\,n}\,q'_1\cdots q'_n \pmod m\;}
 $$
 for some $k$ coprime to $m$ (Whitehead). In dimension three ($n=2$) the homeomorphism classification is
 $$
@@ -67,7 +67,7 @@ up to the order of the two entries, with $\varepsilon = \pm1$ and $k$ coprime to
 
 **Corollary (amphichiral lens spaces).** A three-dimensional lens space $L(m;q)$ is homeomorphic to its mirror image if and only if
 $$
-q^2\equiv -1 \pmod m .
+\boxed{\;q^2\equiv -1 \pmod m\;} .
 $$
 The lens space $L(5;2)$ is amphichiral, since $2^2 = 4\equiv-1\pmod5$; the lens space $L(7;2)$ is chiral, since $4\not\equiv-1\pmod7$. The chirality of a lens space is thus an arithmetic condition on the parameter, and the example is the three-dimensional companion of the knot-theoretic chirality of *Amphichiral Knots and the Orientation-Reversing Involution*.
 

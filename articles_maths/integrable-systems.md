@@ -42,7 +42,7 @@ $$
 the Lax equation $\partial L/\partial t = [A,L]$ is equivalent to the Korteweg–de Vries equation
 
 $$
-\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0 .
+\boxed{\;\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0\;} .
 $$
 
 *Proof.* By the direct computation of the commutator, treated as an operator on a test function $\psi$:
@@ -203,7 +203,7 @@ $$
 in the sense that
 
 $$
-\partial/\partial x\,\frac{\delta I_{k+1}}{\delta w} = R\,\partial/\partial x\,\frac{\delta I_k}{\delta w} ;
+\boxed{\;\partial/\partial x\,\frac{\delta I_{k+1}}{\delta w} = R\,\partial/\partial x\,\frac{\delta I_k}{\delta w}\;} ;
 $$
 
 the densities $\rho_1,\rho_2,\rho_3$ of the preceding theorem are those of the sequence up to the constant normalisation, the invariant $\int w$ being the additional member outside the recursion; consequently KdV has infinitely many independent conserved quantities in involution.
@@ -277,7 +277,7 @@ The scheme is the exact analogue for KdV of the Fourier solution of a constant-c
 **Theorem (the one-soliton solution).** For the reflectionless potential with a single bound state $\lambda = -\kappa^2$, the evolution of the data gives
 
 $$
-w(x,t) = -2\kappa^2\operatorname{sech}^2\bigl(\kappa(x-4\kappa^2t-x_0)\bigr),
+\boxed{\;w(x,t) = -2\kappa^2\operatorname{sech}^2\bigl(\kappa(x-4\kappa^2t-x_0)\bigr)\;},
 $$
 
 a negative localised travelling wave moving to the right with speed $4\kappa^2$; it is the unique reflectionless solution with one bound state.

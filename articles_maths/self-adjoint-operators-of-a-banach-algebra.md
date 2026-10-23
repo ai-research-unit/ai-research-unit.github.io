@@ -26,7 +26,7 @@ Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with a continuous i
 **Theorem (the order is a partial order).** The relation $S \leq T$ is reflexive, transitive and antisymmetric on the self-adjoint operators; it is invariant under the inner conjugations by the unitary operators and under the adjointable isometries,
 
 $$
-S \leq T \;\Longrightarrow\; U^\dagger S U \leq U^\dagger T U \quad (U \text{ unitary}) ,
+\boxed{\;S \leq T \;\Longrightarrow\; U^\dagger S U \leq U^\dagger T U \quad (U \text{ unitary})\;} ,
 $$
 
 and the positive operators form a convex cone containing the operators $S^\dagger S$.

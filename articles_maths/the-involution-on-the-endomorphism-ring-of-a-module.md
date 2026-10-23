@@ -56,7 +56,7 @@ Both are $R$-submodules of $E$.
 **Theorem.** If $2$ is invertible in $R$, then
 
 $$
-E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*}),
+\boxed{\;E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*})\;},
 $$
 
 and the two summands have intersection $0$.
@@ -70,7 +70,7 @@ The decomposition is the module-level form of the fixed-and-skew decomposition o
 **Theorem.** The self-adjoint part is closed under the **Jordan product**
 
 $$
-f \bullet g=\tfrac12(fg+gf),
+\boxed{\;f \bullet g=\tfrac12(fg+gf)\;},
 $$
 
 and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{Sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a **special** Jordan algebra.
@@ -118,7 +118,7 @@ $$
 **Theorem.** An endomorphism $u$ is unitary if and only if it preserves the pairing:
 
 $$
-u \in \mathrm{U}(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M .
+\boxed{\;u \in \mathrm{U}(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M\;} .
 $$
 
 *Proof.* $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of units is two-sided, so $u\in \mathrm{U}(M)$.

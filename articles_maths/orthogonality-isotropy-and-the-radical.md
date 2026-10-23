@@ -13,8 +13,8 @@ This is the counterpart of the orthogonality theory of *Bilinear Forms* and of t
 **Definition.** Two elements $x, y$ are **orthogonal** when $h(x,y) = 0$; for a subset $W \subseteq A$ the **right complement** and the **left complement** are
 
 $$
-W^{\perp} = \{x : h(w,x) = 0 \ \text{for all } w \in W\}, \qquad
-{}^{\perp}W = \{x : h(x,w) = 0 \ \text{for all } w \in W\} .
+\boxed{\;W^{\perp} = \{x : h(w,x) = 0 \ \text{for all } w \in W\}, \qquad
+{}^{\perp}W = \{x : h(x,w) = 0 \ \text{for all } w \in W\}\;} .
 $$
 
 **Proposition.** For a Hermitian form the two complements coincide, $W^{\perp} = {}^{\perp}W$, and orthogonality is a symmetric relation.
@@ -24,7 +24,7 @@ $$
 **Proposition (the radical of a restriction).** For every subset $W$,
 
 $$
-W \cap W^{\perp} = \operatorname{rad}(h|_{W}) ,
+\boxed{\;W \cap W^{\perp} = \operatorname{rad}(h|_{W})\;} ,
 $$
 
 and the restriction $h|_{W}$ is non-degenerate exactly when $W \cap W^{\perp} = 0$. For every $W$ one has $W \subseteq W^{\perp\perp}$.
@@ -54,7 +54,7 @@ Over a general ring the rank argument is replaced by the hypothesis that $h$ be 
 **Proposition.** The radical is the total orthogonal complement,
 
 $$
-\operatorname{rad} = A^{\perp} = {}^{\perp}A ,
+\boxed{\;\operatorname{rad} = A^{\perp} = {}^{\perp}A\;} ,
 $$
 
 and it is invariant under the isometries of the form.

@@ -68,7 +68,7 @@ Polarising the identity $\mathfrak{Q}(u + v) = \mathfrak{Q}(u) + \mathfrak{Q}(v)
 **Proposition.** Let $m$ be a quadratic form with polar form $B$ and let $2$ be invertible in $R$. Then for all $u, v \in M$,
 
 $$
-\mathfrak{Q}(u + v) + \mathfrak{Q}(u - v) = 2q(u) + 2q(v), \qquad \mathfrak{Q}(u + v) - \mathfrak{Q}(u - v) = 4B(u, v),
+\boxed{\;\mathfrak{Q}(u + v) + \mathfrak{Q}(u - v) = 2q(u) + 2q(v), \qquad \mathfrak{Q}(u + v) - \mathfrak{Q}(u - v) = 4B(u, v)\;},
 $$
 
 $$
@@ -288,7 +288,7 @@ Its polar form is $B \perp B'$, given by $(B \perp B')((x, x'), (y, y')) = B(x, 
 **Proposition.** The orthogonal direct sum is commutative and associative up to isometry, with $\operatorname{rad}(m \perp m') = \operatorname{rad}(m) \oplus \operatorname{rad}(m')$ and $\operatorname{rank}(m \perp m') = \operatorname{rank}(m) + \operatorname{rank}(m')$. The discriminant is multiplicative,
 
 $$
-\Delta(m \perp m') = \Delta(m)\,\Delta(m'),
+\boxed{\;\Delta(m \perp m') = \Delta(m)\,\Delta(m')\;},
 $$
 
 and for real forms the indices and the nullity add, so $\sigma(m \perp m') = \sigma(m) + \sigma(m')$.
@@ -306,7 +306,7 @@ Over $\mathbb{R}$ a diagonal form can be normalised further, because every posit
 **Theorem (Sylvester's law of inertia).** Let $m$ be a quadratic form on a finite-dimensional real vector space $V$. Then there are unique integers $n, r, z \geq 0$ with $n + r + z = \dim V$ such that
 
 $$
-m \cong \underbrace{\langle 1, \ldots, 1\rangle}_{n} \perp \underbrace{\langle -1, \ldots, -1\rangle}_{r} \perp \underbrace{\langle 0, \ldots, 0\rangle}_{z}.
+\boxed{\;m \cong \underbrace{\langle 1, \ldots, 1\rangle}_{n} \perp \underbrace{\langle -1, \ldots, -1\rangle}_{r} \perp \underbrace{\langle 0, \ldots, 0\rangle}_{z}\;}.
 $$
 
 The numbers $n$ and $r$ are the **positive** and **negative indices**, $z$ is the **nullity**, and $\operatorname{rank}(m) = n + r$.

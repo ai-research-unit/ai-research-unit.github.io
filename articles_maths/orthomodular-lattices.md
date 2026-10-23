@@ -43,7 +43,7 @@ Let $L$ be an ortholattice.
 **Definition.** $L$ is **orthomodular** if
 
 $$
-x \leq y \quad\Longrightarrow\quad y = x \vee (x^{\perp} \wedge y) \qquad \text{for all } x, y \in L .
+\boxed{\;x \leq y \quad\Longrightarrow\quad y = x \vee (x^{\perp} \wedge y) \qquad \text{for all } x, y \in L\;} .
 $$
 
 An **orthomodular lattice** is an ortholattice satisfying this law.
@@ -68,7 +68,7 @@ operations are reversed and the orthocomplement is kept, is orthomodular with th
 The dual form of the law is
 
 $$
-x \geq y \quad\Longrightarrow\quad y = x \wedge (x^{\perp} \vee y) \qquad \text{for all } x, y \in L .
+\boxed{\;x \geq y \quad\Longrightarrow\quad y = x \wedge (x^{\perp} \vee y) \qquad \text{for all } x, y \in L\;} .
 $$
 
 **Proof.** Taking the order-dual of the identity $y = x \vee (x^{\perp} \wedge y)$ and exchanging the

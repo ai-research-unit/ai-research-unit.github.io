@@ -187,8 +187,7 @@ $$
 
 It satisfies the **functional equation**
 
-$$
-\Gamma(a + 1) = a \Gamma(a),
+$$ \boxed{\;\Gamma(a + 1) = a \Gamma(a)\;},
 $$
 
 which follows from integration by parts. Since $\Gamma(1) = 1$, this gives
@@ -201,8 +200,7 @@ for non-negative integers $n$. The gamma function is the unique logarithmically 
 
 **Reflection formula.**
 
-$$
-\Gamma(a) \Gamma(1 - a) = \frac{\pi}{\sin(\pi a)}, \qquad 0 < a < 1.
+$$ \boxed{\;\Gamma(a) \Gamma(1 - a) = \frac{\pi}{\sin(\pi a)}, \qquad 0 < a < 1\;}.
 $$
 
 **Duplication formula.**
@@ -357,8 +355,7 @@ where $B_{2n}$ are the Bernoulli numbers.
 
 For $s > 1$,
 
-$$
-\zeta(s) = \prod_p \frac{1}{1 - p^{-s}},
+$$ \boxed{\;\zeta(s) = \prod_p \frac{1}{1 - p^{-s}}\;},
 $$
 
 where the product is over all primes $p$. This is the analytic form of the fundamental theorem of arithmetic.

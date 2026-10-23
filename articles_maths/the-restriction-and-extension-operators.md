@@ -70,7 +70,7 @@ so that $\operatorname{Supp}(j_!\mathcal{M})$ is a closed subset of $X$ containe
 **Theorem (the adjoint chain).** For an open immersion $j:\Omega\hookrightarrow X$ there are natural bijections, for $\mathcal{M}$ on $\Omega$ and $\mathcal{F}$ on $X$,
 
 $$
-\operatorname{Hom}_X(j_!\mathcal{M},\mathcal{F})\cong\operatorname{Hom}_\mathrm{U}(\mathcal{M},j^*\mathcal{F}),\qquad \operatorname{Hom}_\Omega(j^*\mathcal{F},\mathcal{M})\cong\operatorname{Hom}_X(\mathcal{F},j_*\mathcal{M}),
+\boxed{\;\operatorname{Hom}_X(j_!\mathcal{M},\mathcal{F})\cong\operatorname{Hom}_\mathrm{U}(\mathcal{M},j^*\mathcal{F}),\qquad \operatorname{Hom}_\Omega(j^*\mathcal{F},\mathcal{M})\cong\operatorname{Hom}_X(\mathcal{F},j_*\mathcal{M})\;},
 $$
 
 so that $j_!$ is left adjoint to $j^*$, and $j^*$ is left adjoint to $j_*$.
@@ -112,7 +112,7 @@ the **open-closed sequence**, whose exactness is the stalk computation of the pr
 **Proposition (extension preserves cohomology of the open set).** The exactness of $j_!$ gives, for every $i$,
 
 $$
-H^i(X,j_!\mathcal{M})\cong H^i_c(\Omega,\mathcal{M}),
+\boxed{\;H^i(X,j_!\mathcal{M})\cong H^i_c(\Omega,\mathcal{M})\;},
 $$
 
 the cohomology of $\Omega$ with support in the family of closed subsets of $X$ contained in $\Omega$; the identification is the one of *Sheaf Cohomology* for sections with support in a family, and for a compact space, or when every closed subset of $X$ contained in $\Omega$ is compact, these are the compactly supported sections.
@@ -122,7 +122,7 @@ the cohomology of $\Omega$ with support in the family of closed subsets of $X$ c
 **Proposition (restriction on cohomology).** Restriction induces, for every $i$, a natural map
 
 $$
-H^i(X,\mathcal{F})\longrightarrow H^i(\Omega,\mathcal{F}|_\Omega),
+\boxed{\;H^i(X,\mathcal{F})\longrightarrow H^i(\Omega,\mathcal{F}|_\Omega)\;},
 $$
 
 the **restriction map on cohomology**, obtained by applying the functor of global sections of $\Omega$ to an acyclic resolution of $\mathcal{F}$ and restricting its terms; it is the edge map of the adjoint chain, and its kernel and cokernel are described by the open-closed sequence of the previous sections. The extension by zero is the left adjoint of the restriction on the level of the operator categories, and its effect on cohomology is the isomorphism of the preceding proposition.

@@ -23,7 +23,7 @@ Throughout, $(M, J, g)$ is a complex manifold of complex dimension $n$ with a He
 
 **Proposition (the equivalent conditions).** For a Hermitian metric $g$ on a complex manifold $(M, J)$ the following are equivalent:
 $$
-d\omega = 0, \qquad \nabla\omega = 0, \qquad \nabla J = 0, \qquad \nabla^{\mathrm{C}}J = J\nabla^{\mathrm C},
+\boxed{\;d\omega = 0, \qquad \nabla\omega = 0, \qquad \nabla J = 0, \qquad \nabla^{\mathrm{C}}J = J\nabla^{\mathrm C}\;},
 $$
 where $\nabla$ is the Levi-Civita connection, $\nabla^{\mathrm C}$ the Chern connection and $\nabla^{\mathrm C}J$ is the covariant derivative of the tensor $J$. Each says that the complex structure of the manifold is parallel for the metric, so that the Riemannian holonomy is contained in the unitary group.
 
@@ -43,7 +43,7 @@ and conversely a real function with $i\partial\bar\partial\varphi$ positive defi
 
 **Theorem (the Kähler identities).** On a Kähler manifold the contractions and the Cauchy–Riemann operators satisfy
 $$
-[\Lambda, \partial] = -i\,\bar\partial^{*}, \qquad [\Lambda, \bar\partial] = i\,\partial^{*}, \qquad [\Lambda, d] = d^{*} .
+\boxed{\;[\Lambda, \partial] = -i\,\bar\partial^{*}, \qquad [\Lambda, \bar\partial] = i\,\partial^{*}, \qquad [\Lambda, d] = d^{*}\;} .
 $$
 The last is the sum of the first two, $[\Lambda, d] = [\Lambda,\partial]+[\Lambda,\bar\partial] = d^{*}$.
 
@@ -63,7 +63,7 @@ and consequently the harmonic forms for the three Laplacians coincide; the bideg
 
 **Proposition (positivity of the Kähler form).** The Kähler form $\omega$ is a **positive** $(1,1)$-form: for every nonzero real tangent vector $v$,
 $$
-\omega(v, Jv) = g(v, v) > 0 ,
+\boxed{\;\omega(v, Jv) = g(v, v) > 0\;} ,
 $$
 and for a complex line $T \subseteq T_pM$ spanned in a unitary frame by the real vectors $u, Ju$ one has $\omega(u,Ju) = |u|^2 > 0$; the form is thus positive in the sense of positivity of the associated Hermitian form $h = g - i\omega$.
 

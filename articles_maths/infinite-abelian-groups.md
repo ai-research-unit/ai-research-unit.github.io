@@ -94,7 +94,7 @@ The theorem is the abelian case of the Nielsen–Schreier theorem for free group
 **Theorem (structure theorem).** Every finitely generated abelian group $A$ is isomorphic to a direct sum
 
 $$
-A \cong \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \mathbb{Z}/d_2\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}
+\boxed{\;A \cong \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \mathbb{Z}/d_2\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}\;}
 $$
 
 with $r \geq 0$, $d_i > 1$ and $d_1 \mid d_2 \mid \cdots \mid d_k$. The integer $r = \operatorname{rk}(A)$ and the sequence $(d_1,\ldots,d_k)$, the **invariant factors**, are uniquely determined by $A$. Equivalently $A$ is a direct sum of cyclic groups of prime-power order, the **elementary divisors**, uniquely determined up to order.
@@ -150,7 +150,7 @@ A rank-one torsion-free group need not admit solutions to the equations $nx = a$
 **Definition.** For a prime $p$, the **Prüfer group** $\mathbb{Z}[p^\infty]$ is the group presented by
 
 $$
-\mathbb{Z}[p^\infty] = \langle x_1, x_2, x_3, \ldots \mid p\,x_1 = 0,\ p\,x_{k+1} = x_k \text{ for } k \geq 1\rangle.
+\boxed{\;\mathbb{Z}[p^\infty] = \langle x_1, x_2, x_3, \ldots \mid p\,x_1 = 0,\ p\,x_{k+1} = x_k \text{ for } k \geq 1\rangle\;}.
 $$
 
 **Proposition.** $\mathbb{Z}[p^\infty]$ is divisible, its elements of order dividing $p^k$ form a cyclic subgroup of order $p^k$, and every proper subgroup of $\mathbb{Z}[p^\infty]$ is finite and cyclic. The subgroups of order $p^k$ form a chain, and the quotient of $\mathbb{Z}[p^\infty]$ by the subgroup of order $p^k$ is again a Prüfer group.
@@ -164,7 +164,7 @@ The verification accompanying this article constructs $\mathbb{Z}[p^\infty]$ as 
 **Theorem.** Every divisible abelian group is a direct sum of copies of $D_1$ and of copies of the groups $\mathbb{Z}[p^\infty]$, one family for each prime $p$:
 
 $$
-D \cong D_1^{(I)} \oplus \bigoplus_p \mathbb{Z}[p^\infty]^{(I_p)}.
+\boxed{\;D \cong D_1^{(I)} \oplus \bigoplus_p \mathbb{Z}[p^\infty]^{(I_p)}\;}.
 $$
 
 The cardinal numbers $|I|$ and $|I_p|$ are uniquely determined by $D$.

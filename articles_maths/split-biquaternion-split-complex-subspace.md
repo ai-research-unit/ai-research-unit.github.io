@@ -44,7 +44,9 @@ Of the four distinguished subspaces, $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is t
 **Theorem.** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the centre of $\mathbb{H}_{\mathbb{D}}$,
 
 $$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q}_1 \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}_1\tilde{Q}_2 = \tilde{Q}_2\tilde{Q}_1 \ \text{for every} \ \tilde{Q}_2 \in \mathbb{H}_{\mathbb{D}} \right\}.
+\boxed{\;
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q}_1 \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}_1\tilde{Q}_2 = \tilde{Q}_2\tilde{Q}_1 \ \text{for every} \ \tilde{Q}_2 \in \mathbb{H}_{\mathbb{D}} \right\}
+\;}.
 $$
 
 **Proof.** An element commutes with every other element if and only if it commutes with the basis elements $\vec e_x, \vec e_y, \vec e_z$, and $Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ commutes with all three precisely when $Q_x = Q_y = Q_z = 0$, because $Q_\mu \vec e_\mu$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_t$, which is the fixed space of ${}^{\natural}$.
@@ -80,7 +82,9 @@ for $\mu\in\{x,y,z\}$. The table states that $\mathbb{D}_{\mathbb{H}_{\mathbb{D}
 **Proposition.** On the split complex subspace the split-biquaternion norm is the square of the coefficient,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = Q_t^2, \qquad \tilde{Q} = Q_t e_t.
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2, \qquad \tilde{Q} = Q_t e_t
+\;}.
 $$
 
 **Proof.** $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_t^2 e_t$, read as the split complex scalar $Q_t^2$.
@@ -102,7 +106,9 @@ The inverse is $\tilde{Q}^{-1} = Q_t^{-1} e_t = \dfrac{\bar{Q_t}}{Q_t \bar{Q_t}}
 **Corollary.** The zero divisors of the split complex subspace are exactly the nonzero elements of the two **light lines**
 
 $$
-\mathbb{R} \tilde\Pi_1 \cup \mathbb{R} \tilde\Pi_2, \qquad \tilde\Pi_1 = \tfrac{1}{2}(1 + j), \quad \tilde\Pi_2 = \tfrac{1}{2}(1 - j),
+\boxed{\;
+\mathbb{R} \tilde\Pi_1 \cup \mathbb{R} \tilde\Pi_2, \qquad \tilde\Pi_1 = \tfrac{1}{2}(1 + j), \quad \tilde\Pi_2 = \tfrac{1}{2}(1 - j)
+\;},
 $$
 
 and the annihilator of each light line is the other.

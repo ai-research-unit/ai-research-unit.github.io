@@ -38,7 +38,7 @@ $$
 **Proposition (factorisation and composition).** $\Sigma_{a,b}=L_a\circ R_b=R_b\circ L_a$, and
 
 $$
-\Sigma_{a,b}\circ\Sigma_{c,d} = \Sigma_{ac,\,db} .
+\boxed{\;\Sigma_{a,b}\circ\Sigma_{c,d} = \Sigma_{ac,\,db}\;} .
 $$
 
 **Proof.** The factorisation is the definition of the translations; the composition is
@@ -64,9 +64,9 @@ $$
 **Proposition (the composition laws).** For all $a,b,c,d\in G$,
 
 $$
-\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma_{a\alpha(c),\,\alpha(d)b}, \qquad
+\boxed{\;\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma_{a\alpha(c),\,\alpha(d)b}, \qquad
 \Sigma_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{ac,\,db}, \qquad
-\Sigma^{\alpha}_{a,b}\circ\Sigma_{c,d} = \Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} .
+\Sigma^{\alpha}_{a,b}\circ\Sigma_{c,d} = \Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b}\;} .
 $$
 
 **Proof.** The first is
@@ -110,7 +110,7 @@ $$
 **Proposition (its square).** The square of the signed conjugation is the inner conjugation by the element $a\alpha(a)$:
 
 $$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} = \Sigma_{a\alpha(a),\,(a\alpha(a))^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} = \Sigma_{a\alpha(a),\,(a\alpha(a))^{-1}}\;} .
 $$
 
 Hence the signed conjugation is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$, that is, exactly when the element $a\alpha(a)$ is central.

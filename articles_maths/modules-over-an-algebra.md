@@ -156,7 +156,7 @@ The proofs pass to cosets as in *Modules* §7. The first isomorphism theorem has
 **Proposition.** Let $M$ be a left $A$-module and $f \in \operatorname{Hom}_A(A,M)$, where $A$ is the left regular module. Then $f$ is determined by $m=f(1_A)$, and $f \mapsto f(1_A)$ is an isomorphism of abelian groups
 
 $$
-\operatorname{Hom}_A(A,M) \cong M.
+\boxed{\;\operatorname{Hom}_A(A,M) \cong M\;}.
 $$
 
 *Proof.* For $b \in A$, $A$-linearity gives $f(b)=f(b1_A)=bf(1_A)=bm$, so $f$ is determined by $m=f(1_A)$. Conversely, for any $m \in M$ the map $f(b)=bm$ is $A$-linear: $f(b b')=b b' m=b (b'm)=b f(b')$. The two constructions are inverse, and both are additive in $f$ and in $m$.
@@ -168,7 +168,7 @@ The endomorphism ring of the regular module has a description dual to the preced
 **Theorem.** Multiplication on the right gives a ring isomorphism
 
 $$
-A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a).
+\boxed{\;A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a)\;}.
 $$
 
 *Proof.* For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A^{\mathrm{opp}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.
@@ -204,7 +204,7 @@ Consequently the cyclic left $A$-modules are exactly the quotients $A/L$ by left
 **Schur's lemma.** Let $S$ and $T$ be simple left $A$-modules and let $f \in \operatorname{Hom}_A(S,T)$. Then $\ker f$ and $\operatorname{im} f$ are submodules of $S$ and $T$, so by simplicity each is $0$ or the whole module. If $f \neq 0$ then $\ker f \neq S$ and $\operatorname{im} f \neq 0$, hence $\ker f=0$ and $\operatorname{im} f=T$, so $f$ is an isomorphism. Therefore
 
 $$
-\operatorname{Hom}_A(S,T)=0 \text{ if } S \not\cong T, \qquad \operatorname{End}_A(S) \text{ is a division ring.}
+\boxed{\;\operatorname{Hom}_A(S,T)=0 \text{ if } S \not\cong T, \qquad \operatorname{End}_A(S) \text{ is a division ring.}\;}
 $$
 
 In particular $\operatorname{Aut}_A(S)=\operatorname{End}_A(S)^{\times}$ is the multiplicative group of that division ring. The lemma is developed and applied in .

@@ -37,7 +37,7 @@ The ring-theoretic background is *Rings*, *Integral Domains*, *Unique Factorisat
 **Theorem (Lagrange interpolation).** Let $K$ be a field, $a_1,\ldots,a_m$ distinct elements of $K$ and $b_1,\ldots,b_m \in K$. Then there is exactly one polynomial $f \in K[x]$ of degree $< m$ with $f(a_i) = b_i$ for all $i$, namely
 
 $$
-f(x) = \sum_{i=1}^{m}b_i\prod_{j\neq i}\frac{x-a_j}{a_i-a_j}.
+\boxed{\;f(x) = \sum_{i=1}^{m}b_i\prod_{j\neq i}\frac{x-a_j}{a_i-a_j}\;}.
 $$
 
 **Proof.** Each summand $\prod_{j\neq i}(x-a_j)/(a_i-a_j)$ takes the value $1$ at $a_i$ and $0$ at the other $a_j$, so the sum interpolates. Uniqueness holds because a nonzero polynomial of degree $< m$ has at most $m-1$ roots, and a polynomial of degree $< m$ vanishing at $m$ points is zero, by the root theorem of *Integral Domains*.
@@ -85,7 +85,7 @@ $$
 **Theorem (partial fractions).** Let $K$ be a field, $f, g \in K[x]$ with $g \neq 0$ and with factorisation into pairwise coprime powers $g = g_1^{e_1}\cdots g_r^{e_r}$. Then there are polynomials $p_i$, with $\deg p_i < e_i\deg g_i$, and a polynomial part $p$, unique, with
 
 $$
-\frac{f}{g} = p + \sum_{i=1}^{r}\frac{p_i}{g_i^{e_i}} ,
+\boxed{\;\frac{f}{g} = p + \sum_{i=1}^{r}\frac{p_i}{g_i^{e_i}}\;} ,
 $$
 
 and if $g_i$ is linear, say $g_i = x-a_i$, each summand has the form $\sum_{j=1}^{e_i}c_{ij}/(x-a_i)^j$ with $c_{ij} \in K$.

@@ -20,7 +20,7 @@ the **defect** of $u$ is $\delta(u)u^{-1}$; and the **conjugate parameter** is $
 **Theorem (the explicit form).** For every unit $u$, the reflection is adjointable and
 
 $$
-(\rho_u)^\dagger = \rho_{\delta(u)} , \qquad (\rho_u)^\dagger(x) = \delta(u)\,\alpha(x)\,\delta(u)^{-1} .
+\boxed{\;(\rho_u)^\dagger = \rho_{\delta(u)} , \qquad (\rho_u)^\dagger(x) = \delta(u)\,\alpha(x)\,\delta(u)^{-1}\;} .
 $$
 
 The adjoint of a reflection is the reflection at the image of the parameter under the composite $\delta = \sigma\alpha$.
@@ -36,7 +36,7 @@ The adjoint of a reflection is the reflection at the image of the parameter unde
 **Theorem (the centrality criterion).** The reflection $\rho_u$ is self-adjoint if and only if the defect $\delta(u)u^{-1}$ is central:
 
 $$
-(\rho_u)^\dagger = \rho_u \iff \delta(u)u^{-1} \in Z(A) \quad (\text{a central unit}) .
+\boxed{\;(\rho_u)^\dagger = \rho_u \iff \delta(u)u^{-1} \in Z(A) \quad (\text{a central unit})\;} .
 $$
 
 Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whenever $u$ is a fixed point of $\delta$; the self-adjointness fails for a unit whose defect is not central.

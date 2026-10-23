@@ -59,7 +59,7 @@ $$
 with $\mathrm{div}\,\vec F = \sum_{\mu\in\{x,y,z\}} \partial/\partial Q_\mu\,F_\mu$, $\mathrm{grad}\,F_0 = \sum_{\mu\in\{x,y,z\}} (\partial/\partial Q_\mu\,F_0)\vec e_\mu$ and $\mathrm{rot}\,\vec F = \sum_{\mu,\nu,\lambda\in\{x,y,z\}} \epsilon_{\mu\nu\lambda}(\partial/\partial Q_\mu\,F_\nu)\vec e_\lambda$. Hence left-regularity is
 
 $$
-\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t \vec F = -\mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F,
+\boxed{\; \partial/\partial Q_t F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t \vec F = -\mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F \;},
 $$
 
 while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The two systems differ only in the sign of the curl term and coincide exactly when $\mathrm{rot}\,\vec F = 0$. This is the **quaternionic Cauchy–Riemann system**: one biquaternion equation, equivalently eight real equations for the eight real components of $F^{\mathrm{fn}}$. The reflection $q_k \mapsto -q_k$ interchanges $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, so the conjugate theory is the mirror image; conjugating $\tilde{\nabla}F^{\mathrm{fn}} = 0$ shows that ${F^{\mathrm{fn}}}^{\natural}$ is right-regular for $\tilde{\nabla}^{\natural}$.
@@ -73,7 +73,7 @@ while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The t
 Consequently every regular function is real-analytic and enjoys the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates (article on biquaternion integration). Since each complex component is harmonic, the **mean value property** holds: for $F^{\mathrm{fn}}$ regular near the closed ball $\bar{B}(\tilde{Q}_0, r)$,
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{|B(\tilde{Q}_0,r)|}\int_{B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dV = \frac{1}{|\partial B(\tilde{Q}_0,r)|}\int_{\partial B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dS,
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{|B(\tilde{Q}_0,r)|}\int_{B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dV = \frac{1}{|\partial B(\tilde{Q}_0,r)|}\int_{\partial B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dS \;},
 $$
 
 with the ordinary measures on $\mathbb{R}^4$; the property follows equally from the Cauchy formula, the proof above showing that it is already a consequence of the factorization.
@@ -151,7 +151,7 @@ defined for $\rho > 0$ by replacing $a$ by $q_t$, $a'$ by $\rho$, and the comple
 **Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$, with axial extension $f^{\mathrm{ax}}_0$. Then
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4\, f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho} - \frac{2\,v(q_t,\rho)}{\rho^2}\right)
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4\, f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho} - \frac{2\,v(q_t,\rho)}{\rho^2}\right) \;}
 $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.

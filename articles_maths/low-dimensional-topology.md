@@ -34,7 +34,7 @@ $$
 **Theorem (Kneser; Milnor; prime decomposition).** Every compact oriented three-manifold $M$ is a connected sum
 
 $$
-M \cong P_1\#\cdots\# P_k
+\boxed{\;M \cong P_1\#\cdots\# P_k\;}
 $$
 
 of prime manifolds, and the collection $\{P_i\}$ is unique up to order and homeomorphism. A prime manifold with finite fundamental group is a spherical space form; the remaining prime manifolds are either Seifert fibred or hyperbolic, and this is the trichotomy of the geometrisation theorem below.
@@ -95,7 +95,7 @@ twice the volume of the regular ideal simplex; the knot is the simplest hyperbol
 **Theorem (Weeks manifold; Gabai–Meyerhoff–Milley).** The Weeks manifold, the hyperbolic three-manifold obtained by surgery on the Whitehead link, is the unique closed hyperbolic three-manifold of minimal volume, and
 
 $$
-\mathrm{vol}(\text{Weeks manifold}) = 0.94270736\ldots .
+\boxed{\;\mathrm{vol}(\text{Weeks manifold}) = 0.94270736\ldots\;} .
 $$
 
 **Proof sketch.** The proof combines the computation of the volumes of the hyperbolic three-manifolds with bounded volume obtained by the Mom technology of Gabai, Meyerhoff and Milley, the list of the cusped manifolds of small volume, and the enumeration of the fillings; the minimality is established by exhausting all the candidates below the bound.
@@ -151,7 +151,7 @@ unimodular over $\mathbb{Z}$ by Poincaré duality; it is **even** if $Q_M(a,a)$ 
 **Theorem (Seiberg–Witten; Furuta; the $10/8$ conjecture).** The Seiberg–Witten invariants of a closed smooth four-manifold constrain the intersection form. For a closed smooth spin four-manifold Furuta's theorem gives
 
 $$
-b_2(M) \geq \tfrac{10}{8}\,|\sigma(M)| + 2 ,
+\boxed{\;b_2(M) \geq \tfrac{10}{8}\,|\sigma(M)| + 2\;} ,
 $$
 
 and the conjectured refinement with the coefficient $\tfrac{11}{8}$ is verified for the known examples and open in general. Furuta's inequality already excludes the form $E_8\oplus E_8$: the form has $b_2 = 16$ and $\sigma = 16$, while the bound requires $b_2\geq 22$.

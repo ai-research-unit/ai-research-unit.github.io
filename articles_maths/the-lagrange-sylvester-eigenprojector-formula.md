@@ -67,7 +67,7 @@ The map $k[x] \to k^r$, $f \mapsto (f(\lambda_1), \dots, f(\lambda_r))$, factors
 **Theorem.** Let $a = \sum_{i=1}^{r} \lambda_i e_i$ be an eigenvalue decomposition with the $\lambda_i$ distinct. Then for each $i$,
 
 $$
-e_i = \prod_{j \neq i} \frac{a - \lambda_j 1_A}{\lambda_i - \lambda_j} .
+\boxed{\;e_i = \prod_{j \neq i} \frac{a - \lambda_j 1_A}{\lambda_i - \lambda_j}\;} .
 $$
 
 *Proof.* The polynomial on the right is $h_i(a)$, and $h_i(\lambda_j) = \delta_{ij}$. Evaluating $h_i$ on the decomposition gives
@@ -151,7 +151,7 @@ The formula is polynomial in $a$, so it is invariant under every algebra homomor
 **Theorem (Sylvester).** Let $a = \sum_{i=1}^{r} \lambda_i e_i$ be an eigenvalue decomposition, and let $f \in k[x]$ be any polynomial. Then
 
 $$
-f(a) = \sum_{i=1}^{r} f(\lambda_i) e_i .
+\boxed{\;f(a) = \sum_{i=1}^{r} f(\lambda_i) e_i\;} .
 $$
 
 *Proof.* Let $h$ be the interpolation polynomial of $f$ at the nodes $\lambda_1, \dots, \lambda_r$, of degree less than $r$. The difference $f - h$ vanishes at every $\lambda_i$, so it is divisible by $x-\lambda_i$ for every $i$; since the $\lambda_i$ are distinct, it is divisible by $m_a = \prod_i (x-\lambda_i)$. Evaluating at $a$ gives $f(a) = h(a)$, and $h(a) = \sum_i h(\lambda_i)e_i = \sum_i f(\lambda_i)e_i$ by the eigenprojector formula.
@@ -285,7 +285,7 @@ $$
 Summing over $i$,
 
 $$
-f(a) = \sum_{i=1}^{r} \sum_{k=0}^{e_i-1} \frac{f^{(k)}(\lambda_i)}{k!} (a-\lambda_i)^k \varepsilon_i .
+\boxed{\;f(a) = \sum_{i=1}^{r} \sum_{k=0}^{e_i-1} \frac{f^{(k)}(\lambda_i)}{k!} (a-\lambda_i)^k \varepsilon_i\;} .
 $$
 
 This is the **generalized Sylvester formula**, also called the Hermite–Sylvester formula. It reduces to Sylvester's formula when all $e_i=1$, because the $k=0$ term is $f(\lambda_i)\varepsilon_i$ and the higher terms are absent. It is the explicit form of the Jordan–Chevalley decomposition of $f(a)$: the $k=0$ terms give the semisimple part, and the terms with $k \ge 1$ give the nilpotent part.

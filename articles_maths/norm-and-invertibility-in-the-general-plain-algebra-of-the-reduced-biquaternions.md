@@ -50,7 +50,7 @@ so $\langle\cdot,\cdot\rangle$ is **complex-valued**, real exactly on the quadri
 
 **Proposition.** The algebraic norm of the multiplication is **not** multiplicative:
 $$
-\langle \breve Q_{1}\breve Q_{2}\rangle\neq \langle \breve Q_{1}\rangle\,\langle \breve Q_{2}\rangle\quad\text{in general.}
+\boxed{\; \langle \breve Q_{1}\breve Q_{2}\rangle\neq \langle \breve Q_{1}\rangle\,\langle \breve Q_{2}\rangle\quad\text{in general.} \;}
 $$
 
 *Proof.* In the idempotent coordinates the multiplication is componentwise, $\breve Q_{1}=(Q_{1+},Q_{1-})$, $\breve Q_{2}=(Q_{2+},Q_{2-})$, with $Q_{1+}=Q_{1\blacktriangle}+Q_{1\blacktriangledown}$ and $Q_{1-}=Q_{1\blacktriangle}-Q_{1\blacktriangledown}$; the algebraic norm is $\langle \breve Q_{1}\rangle=Q_{1\blacktriangle}^{2}+Q_{1\blacktriangledown}^{2}=\tfrac12(Q_{1+}^{2}+Q_{1-}^{2})$. The pair $\breve Q_{1}=\Pi_+=(1,0)$ and $\breve Q_{2}=\Pi_-=(0,1)$ gives $\breve Q_{1}\breve Q_{2}=0$, so $\langle \breve Q_{1}\breve Q_{2}\rangle=0$, while $\langle \Pi_+\rangle=\tfrac12(1+0)=\tfrac12$ and $\langle \Pi_-\rangle=\tfrac12(0+1)=\tfrac12$, and $\langle \breve Q_{1}\rangle\langle \breve Q_{2}\rangle=\tfrac14\neq0$. The two values differ, and multiplicativity fails.
@@ -71,15 +71,17 @@ The multiplication has zero divisors: $\Pi_+\Pi_-=0$ with $\Pi_+,\Pi_-$ nonzero.
 
 **Theorem (the criterion).** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
+\boxed{\;
 \breve Q\ \text{is invertible}\iff \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}\neq0,\qquad
-\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}=\frac{\breve Q_{\mathrm{ts}}}{\langle \breve Q\rangle_{\mathrm{ts}}} .
+\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}=\frac{\breve Q_{\mathrm{ts}}}{\langle \breve Q\rangle_{\mathrm{ts}}}
+\;}.
 $$
 
 *Proof.* In the idempotent coordinates $\breve Q=(Q_{+},Q_{-})$, the multiplication is the componentwise product, so $\breve Q$ is invertible with inverse the pair of the inverses exactly when both coordinates are nonzero, that is when $(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}\neq0$. The inverse is then $((Q_{\blacktriangle}+Q_{\blacktriangledown})^{-1},(Q_{\blacktriangle}-Q_{\blacktriangledown})^{-1})$, which corresponds to the element $\tfrac12\bigl((Q_{\blacktriangle}+Q_{\blacktriangledown})^{-1}+(Q_{\blacktriangle}-Q_{\blacktriangledown})^{-1}\bigr)+\tfrac12\bigl((Q_{\blacktriangle}+Q_{\blacktriangledown})^{-1}-(Q_{\blacktriangle}-Q_{\blacktriangledown})^{-1}\bigr)j=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}$, and the verification is $\breve Q(Q_{\blacktriangle}-jQ_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$.
 
 **Theorem (multiplicativity).** The reduced norm is multiplicative under the multiplication,
 $$
-\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\,\langle \breve Q_{2}\rangle_{\mathrm{ts}},
+\boxed{\; \langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\,\langle \breve Q_{2}\rangle_{\mathrm{ts}} \;},
 $$
 and it is the determinant of the multiplication in the idempotent coordinates.
 

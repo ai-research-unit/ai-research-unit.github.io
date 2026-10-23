@@ -15,7 +15,7 @@ Throughout, $H$ is a complex (or real) Hilbert space with inner product $\langle
 **Theorem (reality of the spectrum and the norm formula).** For a self-adjoint $T$ the spectrum is real, $\sigma(T)\subseteq\mathbb{R}$, and
 
 $$
-\|T\|=\sup_{\|x\|=1}|\langle Tx,x\rangle|=\max_{\lambda\in\sigma(T)}|\lambda| .
+\boxed{\;\|T\|=\sup_{\|x\|=1}|\langle Tx,x\rangle|=\max_{\lambda\in\sigma(T)}|\lambda|\;} .
 $$
 
 *Proof.* The numerical range of a self-adjoint operator lies in $\mathbb{R}$ and its closure contains the spectrum, so the spectrum is real. For the norm formula, the bound $\|T\|\ge\sup|\langle Tx,x\rangle|$ is Cauchy–Schwarz; the reverse inequality follows by polarising $|\langle T(x+y),x+y\rangle|$ and using that the diagonal is real, which gives $\|Tx\|\le\sup_{\|x\|=1}|\langle Tx,x\rangle|\|x\|$; the identification with $\max|\lambda|$ is the spectral theorem below.
@@ -47,13 +47,13 @@ for the disjoint countable unions, the sum converging in the strong operator top
 **Theorem (the spectral theorem, self-adjoint case).** Let $T$ be a bounded self-adjoint operator. Then there is a spectral measure $E$ on the Borel subsets of the compact set $\sigma(T)\subseteq\mathbb{R}$ with
 
 $$
-T=\int_{\sigma(T)}\lambda\,dE(\lambda),
+\boxed{\;T=\int_{\sigma(T)}\lambda\,dE(\lambda)\;},
 $$
 
 and for every bounded Borel function $f$ on $\sigma(T)$ the operator
 
 $$
-f(T)=\int_{\sigma(T)}f(\lambda)\,dE(\lambda)
+\boxed{\;f(T)=\int_{\sigma(T)}f(\lambda)\,dE(\lambda)\;}
 $$
 
 is bounded with $\|f(T)\|=\sup_{\lambda\in\sigma(T)}|f(\lambda)|$; the map $f\mapsto f(T)$ is a $\mathbb{K}$-algebra homomorphism sending $1$ to $I$, the identity function to $T$, and $\bar f$ to $f(T)^*$.

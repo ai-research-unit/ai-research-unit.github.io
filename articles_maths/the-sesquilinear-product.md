@@ -35,7 +35,7 @@ and additivity in each variable extends to finite sums.
 **Proposition (the scalars of a product).** For all $\lambda, \mu \in R$ and all $x, y \in A$,
 
 $$
-(\lambda x) \star (\mu y) = \lambda \, \varsigma(\mu) \, (x \star y) .
+\boxed{\;(\lambda x) \star (\mu y) = \lambda \, \varsigma(\mu) \, (x \star y)\;} .
 $$
 
 More generally, for finite families,
@@ -81,7 +81,7 @@ Conversely, for any family of scalars $c_{ij}^{k}$ the last formula defines a $\
 **Proposition (conjugation reverses the star-product).** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $x \star y = xy^{*}$ be the derived operation. Then
 
 $$
-(x \star y)^{*} = y \star x .
+\boxed{\;(x \star y)^{*} = y \star x\;} .
 $$
 
 **Proof.** $(x \star y)^{*} = (xy^{*})^{*} = (y^{*})^{*} x^{*} = y x^{*} = y \star x$, using $(uv)^{*} = v^{*} u^{*}$ and $*^{2} = \mathrm{id}$.
@@ -125,7 +125,7 @@ $$
 **Proposition.** Let $\star$ be the derived operation of an algebra with a $\varsigma$-semilinear involution $*$, and suppose $2$ is invertible in $R$. Then the product splits as
 
 $$
-x \star y = \tfrac{1}{2}\bigl( x \star y + y \star x \bigr) + \tfrac{1}{2}\bigl( x \star y - y \star x \bigr),
+\boxed{\;x \star y = \tfrac{1}{2}\bigl( x \star y + y \star x \bigr) + \tfrac{1}{2}\bigl( x \star y - y \star x \bigr)\;},
 $$
 
 the symmetrised part $x \star y + y \star x$ is **Hermitian**, $(x \star y + y \star x)^{*} = x \star y + y \star x$, and the difference $x \star y - y \star x$ is **skew-Hermitian**, $(x \star y - y \star x)^{*} = -(x \star y - y \star x)$.

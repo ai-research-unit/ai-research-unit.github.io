@@ -34,7 +34,7 @@ $$
 **Proposition (equivalence with skew-adjointness of the vectors).** The condition above is equivalent to the statement that every vector acts by a skew-adjoint operator:
 
 $$
-(v\cdot s, t) = -(s, v\cdot t) \qquad \text{for all } v \in V,
+\boxed{\;(v\cdot s, t) = -(s, v\cdot t) \qquad \text{for all } v \in V\;},
 $$
 
 and dually $(s, v\cdot t) = -(v\cdot s, t)$.
@@ -72,7 +72,7 @@ using that the dagger is an anti-involution and the cyclicity of the scalar part
 **Theorem (the slice acts unitarily).** If $S$ is a Hermitian Clifford module and $u$ lies in the unitary slice $U$, then left multiplication by $u$ is a unitary operator on $S$:
 
 $$
-(u\cdot s, u\cdot t) = (s,t) \qquad \text{for all } s, t \in S .
+\boxed{\;(u\cdot s, u\cdot t) = (s,t) \qquad \text{for all } s, t \in S\;} .
 $$
 
 **Proof.** $(u\cdot s, u\cdot t) = (s, u^{\dagger}\cdot(u\cdot t)) = (s, (u^{\dagger}u)\cdot t) = (s,t)$ for $u^{\dagger}u = 1$.
@@ -82,7 +82,7 @@ $$
 **Proposition (the adjoint of the one-sided action).** The adjoint of left multiplication by $x$ with respect to a module form is left multiplication by $x^{\dagger}$,
 
 $$
-L_x^{*} = L_{x^{\dagger}} ,
+\boxed{\;L_x^{*} = L_{x^{\dagger}}\;} ,
 $$
 
 and on the regular module this is the statement $\langle L_xy,z\rangle = \langle y, L_{x^{\dagger}}z\rangle$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*. The general theory of one-sided actions and their adjoints, the Dirac operators built from them, and the spinor adjoint are *The Adjoint of the One-Sided Action with Hermitian Adjoint*, *Dirac Differential Operators* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*.

@@ -94,7 +94,7 @@ $$
 and the second-order operator is the Euclidean Laplacian in the four real coordinates,
 
 $$
-\Box\big|_{\mathbb{H}_{\mathbb{B}}} = e_t\left(\frac{\partial^2}{\partial q_t^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2}\right) = e_t\,\Delta_4 .
+\boxed{\; \Box\big|_{\mathbb{H}_{\mathbb{B}}} = e_t\left(\frac{\partial^2}{\partial q_t^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2}\right) = e_t\,\Delta_4 \;}.
 $$
 
 Its principal symbol is $\sum_\mu\xi_\mu^2$, that is the norm $\langle\cdot\rangle_{\natural}$ restricted to the subspace, which is positive definite: the operator is **elliptic**.
@@ -142,9 +142,9 @@ The principal symbol is $q_t^2 - \sum_k (q'_k)^2$, that is the norm $\langle\cdo
 **The operator.** The scalar partial carries $-i$ and the three spatial ones are ordinary real derivatives:
 
 $$
-\tilde\nabla\big|_{\mathbb{M}_-} = -i e_t\,\frac{\partial}{\partial q'_t} + \sum_{\mu=1}^{3} \vec e_\mu\,\frac{\partial}{\partial q_\mu},
+\boxed{\; \tilde\nabla\big|_{\mathbb{M}_-} = -i e_t\,\frac{\partial}{\partial q'_t} + \sum_{\mu=1}^{3} \vec e_\mu\,\frac{\partial}{\partial q_\mu},
 \qquad
-\Box\big|_{\mathbb{M}_-} = e_t\left(-\frac{\partial^2}{\partial (q'_t)^2} + \sum_{k=1}^{3}\frac{\partial^2}{\partial q_k^2}\right).
+\Box\big|_{\mathbb{M}_-} = e_t\left(-\frac{\partial^2}{\partial (q'_t)^2} + \sum_{k=1}^{3}\frac{\partial^2}{\partial q_k^2}\right) \;}.
 $$
 
 The principal symbol is $-(q'_t)^2 + \sum_k q_k^2$, that is the norm $\langle\cdot\rangle_{\natural}$ on the subspace, of signature $(3,1)$: again the **wave operator**, with the imaginary scalar coordinate in the distinguished position. It is not elliptic.
@@ -156,7 +156,7 @@ The principal symbol is $-(q'_t)^2 + \sum_k q_k^2$, that is the norm $\langle\cd
 **Theorem.** Let $V$ be one of the four real forms — $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ or $\mathbb{M}_-$ — and let $\langle\partial\rangle_{\natural}$ denote the differential operator obtained from the quadratic form $\langle\cdot\rangle_{\natural}|_V$ by replacing each real coordinate by the corresponding partial derivative. Then
 
 $$
-\Box\big|_{V} = e_t\,\langle\partial\rangle_{\natural}.
+\boxed{\; \Box\big|_{V} = e_t\,\langle\partial\rangle_{\natural} \;}.
 $$
 
 **Proof.** Expanding the composition, $\Box = \tilde\nabla\tilde\nabla^{\natural} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural}\,\partial^2/\partial Q_\mu\partial Q_\nu$, with $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$. The diagonal coefficients are $e_\mu e_\mu^{\natural} = e_\mu(\pm e_\mu) = e_t$, and the off-diagonal ones cancel in pairs, $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = -e_\mu e_\nu - e_\nu e_\mu = 0$ for $\mu \neq \nu$. So the operator is $e_t$ times the scalar operator $\sum_\mu \partial^2/\partial Q_\mu^2$, whose restriction to a real form is $\sum_\mu \pm\partial^2/\partial q_\mu^2$ with a minus sign exactly on the purely imaginary coordinates. The sign pattern is the one of the norm in the real basis of the subspace, and the two agree coefficient by coefficient.

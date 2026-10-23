@@ -60,7 +60,7 @@ The function $c$ is the **factor set**, and the requirement that this multiplica
 **Proposition (the cocycle condition).** The multiplication of $A \rtimes_c G$ is associative if and only if
 
 $$
-c(\sigma,\tau)\, c(\sigma\tau,\rho) = \alpha_\sigma\bigl(c(\tau,\rho)\bigr)\, c(\sigma,\tau\rho) \qquad \text{for all } \sigma,\tau,\rho \in G ,
+\boxed{\;c(\sigma,\tau)\, c(\sigma\tau,\rho) = \alpha_\sigma\bigl(c(\tau,\rho)\bigr)\, c(\sigma,\tau\rho) \qquad \text{for all } \sigma,\tau,\rho \in G\;} ,
 $$
 
 and then $A \rtimes_c G$ is a unital $G$-graded algebra with $1$-component $A$ if and only if $c$ is **normalised**, $c(1,\sigma) = 1 = c(\sigma,1)$ for all $\sigma$.
@@ -118,7 +118,7 @@ the $F$-algebra with basis $\{u_\sigma\}$, multiplication $u_\sigma u_\tau = \al
 1. $F^\alpha G$ is semisimple for every cocycle $\alpha$.
 2. If $F$ is algebraically closed, then $F^\alpha G$ is isomorphic to a product of matrix algebras, one summand $M_{d_\chi}(F)$ for each irreducible projective representation of $G$ of degree $d_\chi$ with cocycle $\alpha$, and
 $$
-\lvert G\rvert = \sum_\chi d_\chi^2 .
+\boxed{\;\lvert G\rvert = \sum_\chi d_\chi^2\;} .
 $$
 
 *Proof (sketch).* The averaging argument of Maschke applies to the regular representation of $G$ on $F^\alpha G$ because the group elements act by semilinear maps with respect to the twisted multiplication, and the average of an invariant projection exists since $\lvert G\rvert$ is invertible. Statement 2 is the Artin–Wedderburn theorem applied to the semisimple algebra $F^\alpha G$, whose simple modules are the irreducible $\alpha$-projective representations; the dimension count is the sum of the squares of their degrees, since the regular module is a direct sum of $d_\chi$ copies of each simple module of dimension $d_\chi$.
@@ -202,7 +202,7 @@ is graded with homogeneous component $L(u_\sigma \otimes v_\sigma)$, whose produ
 **Theorem (Noether–Deuring, standard).** Let $L/F$ be a finite Galois extension with group $G$. The map $\Phi$ is an isomorphism
 
 $$
-\operatorname{Br}(L/F) \;\cong\; H^2(G, L^\times) .
+\boxed{\;\operatorname{Br}(L/F) \;\cong\; H^2(G, L^\times)\;} .
 $$
 
 *Proof (outline).* The construction $[c] \mapsto [L \rtimes_c G]$ is injective because a crossed product with factor set $c$ determines the cocycle up to equivalence: the $L$-basis $\{u_\sigma\}$ is unique up to the substitutions $u_\sigma \mapsto t(\sigma)^{-1}u_\sigma$ that change $c$ by a coboundary. It is surjective by the crossed-product theorem for central simple algebras: if $A$ is central simple over $F$ and split by $L$, then $A \otimes_F L \cong M_n(L)$, and choosing an identification of the simple $A \otimes_F L$-module with $L^n$ exhibits $A$ as the algebra of $G$-fixed points in $M_n(L)$ with respect to the action twisted by the factor set; explicitly $A \cong L \rtimes_c G$ for a suitable $c$. The cohomological form of this statement is that every class in the relative Brauer group is represented by a crossed product, and it is the content of the classical theorem.

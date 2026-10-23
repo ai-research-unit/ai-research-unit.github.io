@@ -16,7 +16,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $H$ is a Hilbert space
 **Theorem (existence of the form-adjoint).** Let $B$ be a non-degenerate bounded sesquilinear form with induced operator $\Phi$, $B(x,y) = \langle x, \Phi y\rangle$, and suppose $\Phi$ is invertible with bounded inverse. Then for every $T \in B(H)$ there is a unique $T^{\dagger} \in B(H)$ with
 
 $$
-B(Tx, y) = B(x, T^{\dagger}y) \qquad (x, y \in H),
+\boxed{\;B(Tx, y) = B(x, T^{\dagger}y) \qquad (x, y \in H)\;},
 $$
 
 and
@@ -32,7 +32,7 @@ The map $T \mapsto T^{\dagger}$ is an involution of $B(H)$, and it fixes the ide
 **Proposition (the involutions are conjugate).** The form-adjoint is the canonical adjoint transported by the similarity $\Phi$,
 
 $$
-T^{\dagger} = \Phi^{-1}\,T^{*}\,\Phi ,
+\boxed{\;T^{\dagger} = \Phi^{-1}\,T^{*}\,\Phi\;} ,
 $$
 
 so it is an involution of $B(H)$ of the same kind as the canonical one, and the map $T \mapsto \Phi T$ is an isomorphism of $B(H)$ with the canonical involution onto $B(H)$ with the form involution. In particular the two involutions have the same structural properties: both reverse products, both are isometric for the operator norm, and both are homeomorphisms for the weak, strong and weak-star topologies.
@@ -56,7 +56,7 @@ a group under multiplication; for the canonical involution it is the unitary gro
 **Theorem (the unitary group of a form).** For the form-adjoint of a non-degenerate bounded form $B$ with induced operator $\Phi$,
 
 $$
-T^{\dagger}T = \mathrm{id} \iff T^{*}\Phi T = \Phi \iff B(Tx, Ty) = B(x, y) \ \text{for all } x, y ,
+\boxed{\;T^{\dagger}T = \mathrm{id} \iff T^{*}\Phi T = \Phi \iff B(Tx, Ty) = B(x, y) \ \text{for all } x, y\;} ,
 $$
 
 so the unitary group of the form is the group of bounded operators preserving $B$; it is a closed subgroup of $B(H)$ for the norm topology, hence a topological group, and it contains the identity and is closed under inverses by the involution.

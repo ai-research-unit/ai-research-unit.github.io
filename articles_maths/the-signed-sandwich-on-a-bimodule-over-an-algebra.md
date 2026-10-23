@@ -104,7 +104,7 @@ It is the composite $S^{\alpha}_{a,b}=L_a\circ R_b\circ\alpha=S_{a,b}\circ\alpha
 **Theorem.** For all $a,b \in A$,
 
 $$
-S^{\alpha}_{a,b}=S_{a,b}\circ\alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b}=\alpha\circ S_{\alpha^{-1}(a),\,\alpha^{-1}(b)} .
+\boxed{\;S^{\alpha}_{a,b}=S_{a,b}\circ\alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b}=\alpha\circ S_{\alpha^{-1}(a),\,\alpha^{-1}(b)}\;} .
 $$
 
 In particular the signed and the unsigned sandwiches coincide exactly when $\alpha=\mathrm{id}$, and $S^{\alpha}_{a,b}(x)=S_{a,b}(\alpha(x))$ for every $x$.
@@ -120,7 +120,7 @@ The compositions of signed and unsigned sandwiches follow the parity of the twis
 **Theorem.** For all $a,b,c,d \in A$,
 
 $$
-S_{a,b}\circ S_{c,d}=S_{ac,\,db}, \qquad S^{\alpha}_{a,b}\circ S_{c,d}=S^{\alpha}_{a\alpha(c),\,\alpha(d)b},
+\boxed{\;S_{a,b}\circ S_{c,d}=S_{ac,\,db}, \qquad S^{\alpha}_{a,b}\circ S_{c,d}=S^{\alpha}_{a\alpha(c),\,\alpha(d)b}\;},
 $$
 
 $$
@@ -172,7 +172,7 @@ the elements that act the same way from either side; it is a subalgebra of $A$ c
 **Theorem.** Let $u \in A^{\times}$ and put $w=u\alpha(u)$. The signed inner conjugation $r_u$ is a reflection if and only if $w \in C_A(M)$, and then it is the inner automorphism $\operatorname{conj}_w$ of order two,
 
 $$
-r_u^{2}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M).
+\boxed{\;r_u^{2}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M)\;}.
 $$
 
 *Proof.* By the proposition above, $r_u^{2}=\operatorname{conj}_w$, and an inner conjugation is the identity exactly when the conjugating element acts centrally on the module, which is the definition of $C_A(M)$; when $w \in C_A(M)$ the map is the identity. Conversely $r_u^{2}=\mathrm{id}$ says $wx=xw$ for all $x$, so $w \in C_A(M)$.

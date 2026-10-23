@@ -92,7 +92,7 @@ is a fundamental solution of the Fueter operator, $\bar\partial E=\delta_0$, and
 **Theorem (Cauchy–Fueter integral formula).** Let $\Omega\subseteq\mathbb{H}$ be a bounded domain with smooth boundary, let $\nu_B=\sum_{\mu\in\{t,x,y,z\}}\nu_\mu e_\mu$ where $(\nu_t,\dots,\nu_z)$ is the outward unit normal, and let $f$ be left regular on a neighbourhood of $\bar\Omega$. Then for $q\in\Omega$,
 
 $$
-f(q) = \frac{1}{2\pi^2}\int_{\partial\Omega}\frac{(p-q)^{\natural}}{|p-q|^4}\,\nu_B(p)\,f(p)\,dS(p) .
+\boxed{\;f(q) = \frac{1}{2\pi^2}\int_{\partial\Omega}\frac{(p-q)^{\natural}}{|p-q|^4}\,\nu_B(p)\,f(p)\,dS(p)\;} .
 $$
 
 Moreover, for $f$ of class $C^1$ on $\bar\Omega$ the **Cauchy–Fueter–Pompeiu formula**
@@ -128,7 +128,7 @@ This extension is constant on every sphere $\{q_t\}\times S^2_{r}$ about the rea
 **Theorem (Fueter).** Let $f=u+iv$ be holomorphic on a domain $\Omega\subseteq\mathbb{C}$, and define
 
 $$
-f^{\mathrm{ax}}(q) = u(q_t,r) + \frac{\vec q}{r}\,v(q_t,r) , \qquad |\vec q| = r .
+\boxed{\;f^{\mathrm{ax}}(q) = u(q_t,r) + \frac{\vec q}{r}\,v(q_t,r) , \qquad |\vec q| = r\;} .
 $$
 
 Then the function
@@ -204,7 +204,7 @@ the reduced Cauchy–Riemann system of the axial theory. The solutions are exact
 **Theorem (Taylor-type expansion).** Every function left regular on a neighbourhood of the origin has a unique expansion
 
 $$
-f(q) = \sum_{k\ge0}\;\sum_{\lambda} a_\lambda\,V_\lambda(q) , \qquad a_\lambda\in\mathbb{H} ,
+\boxed{\;f(q) = \sum_{k\ge0}\;\sum_{\lambda} a_\lambda\,V_\lambda(q) , \qquad a_\lambda\in\mathbb{H}\;} ,
 $$
 
 convergent on the ball of regularity, where $V_\lambda$ runs over the **Fueter polynomials**: the symmetrised products

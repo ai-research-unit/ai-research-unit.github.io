@@ -40,7 +40,7 @@ The last axiom is the one that binds the form to the involution. When the base i
 **Proposition.** The adjoint axiom is equivalent to each of
 
 $$
-\langle xy, z \rangle = \langle x, z\,y^{\dagger} \rangle, \qquad \langle x^{\dagger}y, z \rangle = \langle y, xz \rangle .
+\boxed{\;\langle xy, z \rangle = \langle x, z\,y^{\dagger} \rangle, \qquad \langle x^{\dagger}y, z \rangle = \langle y, xz \rangle\;} .
 $$
 
 **Proof.** For the first, apply the axiom to the pair $(y^{\dagger}, x^{\dagger})$ and use $y^{\dagger}x^{\dagger} = (xy)^{\dagger}$: $\langle y^{\dagger}x^{\dagger}, z\rangle = \langle x^{\dagger}, yz \rangle$, and substituting $z \mapsto z y^{\dagger}$ in the axiom gives $\langle xy, zy^{\dagger}\rangle = \langle y, x^{\dagger}zy^{\dagger}\rangle$. The two readings coincide because $\langle \cdot, \cdot\rangle$ is positive definite and hence non-degenerate. The second follows from the first by transposing the roles of the two arguments.
@@ -54,7 +54,7 @@ $$
 **Proposition.** For every $x \in A$ the element $x^{\dagger}x$ is self-adjoint, $(x^{\dagger}x)^{\dagger} = x^{\dagger}x$, and the scalar $\tau(x^{\dagger}x)$ with $\tau(y) = \langle y, 1\rangle$ is non-negative:
 
 $$
-\tau(x^{\dagger}x) = \langle x^{\dagger}x, 1 \rangle = \langle x, x \rangle \geq 0 .
+\boxed{\;\tau(x^{\dagger}x) = \langle x^{\dagger}x, 1 \rangle = \langle x, x \rangle \geq 0\;} .
 $$
 
 **Proof.** $(x^{\dagger}x)^{\dagger} = x^{\dagger}(x^{\dagger})^{\dagger} = x^{\dagger}x$. For the scalar, apply the adjoint axiom with $x$ replaced by $x^{\dagger}$, $y$ by $x$ and $z$ by $1$, using $(x^{\dagger})^{\dagger} = x$; the value is $\langle x, x \rangle$, which is positive for $x \neq 0$ by the positive definiteness of the form.
@@ -164,7 +164,7 @@ The **reduced trace form** is $T_{\operatorname{red}}(x,y) = \operatorname{Trd}(
 **Definition.** The **trace form of the Hilbert algebra** is the scalar form obtained by inserting the dagger into the trace:
 
 $$
-\langle x, y \rangle = \tau(x^{\dagger}y),
+\boxed{\;\langle x, y \rangle = \tau(x^{\dagger}y)\;},
 $$
 
 with $\tau$ the reduced trace when $A$ is central simple and the regular trace otherwise. It is Hermitian with respect to $\bar{\cdot}$, because

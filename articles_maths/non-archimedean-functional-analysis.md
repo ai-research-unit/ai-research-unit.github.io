@@ -39,7 +39,7 @@ and let $\ell^\infty(I)$ be the space of all bounded families $(a_i)_{i\in I}$, 
 
 **Theorem.** $c_0(I)$ and $\ell^\infty(I)$ are Banach spaces over $K$, with $c_0(I) \subseteq \ell^\infty(I)$ a closed subspace, and the dual of $c_0(I)$ is isometrically $\ell^\infty(I)$:
 $$
-c_0(I)' \cong \ell^\infty(I), \qquad \lVert f \rVert = \sup_{\lVert a \rVert_\infty \leq 1} \lvert f(a) \rvert = \sup_i \lvert f(e_i) \rvert,
+\boxed{\;c_0(I)' \cong \ell^\infty(I), \qquad \lVert f \rVert = \sup_{\lVert a \rVert_\infty \leq 1} \lvert f(a) \rvert = \sup_i \lvert f(e_i) \rvert\;},
 $$
 where $e_i$ is the family that is $1$ at $i$ and $0$ elsewhere.
 
@@ -61,7 +61,7 @@ for every finite $F \subseteq I$ and all $a_i \in K$; it is **orthonormal** if i
 
 **Proposition.** A family $(e_i)_{i \in I}$ of nonzero vectors is orthogonal if and only if each of its finite subfamilies is. If $(e_i)$ is orthogonal and $x$ lies in the closed span of the family, then $x = \sum_i a_ie_i$ for a unique family $(a_i)$ with $a_i\|e_i\|\to0$, and
 $$
-\lVert x \rVert = \sup_{i \in I} \lvert a_i \rvert \lVert e_i \rVert .
+\boxed{\;\lVert x \rVert = \sup_{i \in I} \lvert a_i \rvert \lVert e_i \rVert\;} .
 $$
 In particular an orthogonal family is topologically free.
 

@@ -77,7 +77,7 @@ that is, when the left multiplication by $x$ and the left multiplication by $x^{
 **Theorem (the equivalent form).** A Hermitian form $h$ is compatible if and only if
 
 $$
-h(x, yz) = h(y^{*}x, z)
+\boxed{\;h(x, yz) = h(y^{*}x, z)\;}
 $$
 
 for all $x, y, z \in A$.
@@ -87,7 +87,7 @@ for all $x, y, z \in A$.
 **Theorem (the ternary identity).** Let $h$ be compatible. Then
 
 $$
-h(xy^{*}z, w) = h(z, yx^{*}w)
+\boxed{\;h(xy^{*}z, w) = h(z, yx^{*}w)\;}
 $$
 
 for all $x, y, z, w \in A$.
@@ -141,7 +141,7 @@ so $h(x,y) = 0$ for all $y$ exactly when $H^{T}x = 0$, because $\varsigma(y)$ ra
 **Theorem (the collapse of the layer).** Let $(A,h)$ be a topological sesqualgebra with a form and suppose $\varsigma = \mathrm{id}$. Then $h$ is $R$-bilinear and symmetric, $*$ is $R$-linear, and the derived operation $x \star y = xy^{*}$ is $R$-bilinear. If moreover $* = \mathrm{id}$ the compatibility reads
 
 $$
-h(xy, z) = h(y, xz),
+\boxed{\;h(xy, z) = h(y, xz)\;},
 $$
 
 and $(A,h)$ is an object of the bilinear degree-2 form layer: a topological $R$-algebra with a continuous symmetric bilinear form satisfying the pairing condition $h(ax,y) = h(x,ay)$, that is, one for which every left multiplication is self-adjoint. Conversely every such algebra with such a form is a topological sesqualgebra with a form over $(R,\mathrm{id})$.

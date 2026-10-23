@@ -22,7 +22,9 @@ The set of elements that are not units is nevertheless large, and it is cut out 
 **Theorem.** $\tilde{Q}$ is a zero divisor if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a zero divisor of $\mathbb{D}$, equivalently if and only if one of the two idempotent components vanishes:
 
 $$
-Z = \mathbb{H} \tilde\Pi_1 \cup \mathbb{H} \tilde\Pi_2 = \{\tilde{Q}_+ = 0\} \cup \{\tilde{Q}_- = 0\} .
+\boxed{\;
+Z = \mathbb{H} \tilde\Pi_1 \cup \mathbb{H} \tilde\Pi_2 = \{\tilde{Q}_+ = 0\} \cup \{\tilde{Q}_- = 0\}
+\;}.
 $$
 
 Each of the two sets is a four-dimensional real subspace, and they meet only at the origin.
@@ -58,7 +60,9 @@ In the biquaternion case the norm is the determinant and the nonzero null elemen
 **Theorem.** There is no Segre embedding whose image is the projective zero divisor locus. Instead, the projectivised zero divisor locus splits as a disjoint union of two projective three-spaces,
 
 $$
-\mathbb{P}(Z) = \mathbb{P}(\mathbb{H}\tilde\Pi_1) \sqcup \mathbb{P}(\mathbb{H}\tilde\Pi_2) = \mathbb{P}^3 \sqcup \mathbb{P}^3 ,
+\boxed{\;
+\mathbb{P}(Z) = \mathbb{P}(\mathbb{H}\tilde\Pi_1) \sqcup \mathbb{P}(\mathbb{H}\tilde\Pi_2) = \mathbb{P}^3 \sqcup \mathbb{P}^3
+\;},
 $$
 
 with no incidence between them; the analogue of the rank-one outer product is the single-factor parametrisation $\tilde{Q} = u \tilde\Pi_{1,2}$, and the analogue of the tensor product of two spinor spaces is absent.

@@ -15,7 +15,7 @@ What is added here: the definition of the cone and its elementary closures, the 
 **Definition.** The **algebraic positive cone** of $A$ is the set of the finite sums of Hermitian squares,
 
 $$
-C(A) = \Bigl\{ \sum_{i=1}^{n} x_i^{*} x_i : n \geq 0,\ x_i \in A \Bigr\} .
+\boxed{\;C(A) = \Bigl\{ \sum_{i=1}^{n} x_i^{*} x_i : n \geq 0,\ x_i \in A \Bigr\}\;} .
 $$
 
 Its elements are called **positive**, or **sums of Hermitian squares**; the empty sum is $0$.

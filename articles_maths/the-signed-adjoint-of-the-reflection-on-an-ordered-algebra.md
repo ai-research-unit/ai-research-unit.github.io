@@ -34,7 +34,7 @@ it is the signed conjugation by $a$, and it is an **involution** exactly when $a
 **Theorem (the adjoint of the reflection).** For the trace form the adjoint of the reflection is the reflection with the $\alpha$-twisted adjoint parameter,
 
 $$
-(\tau_a)^{*} = \tau_{\alpha(a^{*})} ;
+\boxed{\;(\tau_a)^{*} = \tau_{\alpha(a^{*})}\;} ;
 $$
 
 in particular the adjoint of a reflection is again a reflection, the adjoint of $\tau_a$ is the ordinary conjugation by $a^{*}$ when the grade involution is the identity, and the family of the reflections is **closed under the adjoint**.
@@ -64,7 +64,7 @@ and the adjoint of the realised reflection $\tau_a = \operatorname{Inn}_a\circ\a
 **Proposition (the self-adjoint reflections).** The reflection is **self-adjoint**,
 
 $$
-(\tau_a)^{*} = \tau_a ,
+\boxed{\;(\tau_a)^{*} = \tau_a\;} ,
 $$
 
 when the parameter is **$\alpha$-Hermitian**, $a = \alpha(a^{*})$; conversely, the self-adjoint reflections are the reflections $\tau_a$ with $a^{-1}\alpha(a^{*})$ central, so the self-adjointness of the reflection depends on the parameter only through its class in the centre of the algebra.
@@ -90,7 +90,7 @@ and when $a$ is a reflection element the square is the identity, $\tau_a^{2} = \
 **Theorem (the positivity of the reflection and of its adjoint).** If the grade involution is **positive** and the parameter $a$ is positive and invertible, then the reflection $\tau_a$ is **positive** and its adjoint $\tau_{\alpha(a^{*})}$ is positive:
 
 $$
-\alpha\geq0, \quad a\geq0\ \text{invertible} \implies \tau_a\geq0 \ \text{ and } \ (\tau_a)^{*}\geq0 .
+\boxed{\;\alpha\geq0, \quad a\geq0\ \text{invertible} \implies \tau_a\geq0 \ \text{ and } \ (\tau_a)^{*}\geq0\;} .
 $$
 
 If the grade involution is not positive then the reflection of positive parameters need not be positive, and the obstruction is the sign of $\alpha$ on the odd part of the cone.

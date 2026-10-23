@@ -22,7 +22,7 @@ $B(R)$ is the algebra of bounded endomorphisms of the additive group of $R$ with
 **Theorem (the adjoint is a continuous operator-algebra involution).** On the adjointable operators the adjoint map $T\mapsto T^\dagger$ is additive, is involutive, $T^{\dagger\dagger} = T$, and reverses the composition,
 
 $$
-(ST)^\dagger = T^\dagger S^\dagger ,
+\boxed{\;(ST)^\dagger = T^\dagger S^\dagger\;} ,
 $$
 
 so it is an **anti-automorphism of order two** of $B(R,\sigma)$; when the form is continuous in each variable the adjoint map is continuous for the topology of bounded convergence.
@@ -38,7 +38,7 @@ so it is an **anti-automorphism of order two** of $B(R,\sigma)$; when the form i
 **Theorem (the left multiplication is adjointable).** For every $a\in R$ the left multiplication $L_a$ is adjointable with respect to the form of the category, and
 
 $$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} .
 $$
 
 Hence $a\mapsto L_a$ is a homomorphism of rings into $B(R,\sigma)$ and the adjoint of $L_a$ is the left multiplication by the image of $a$ under the element involution.

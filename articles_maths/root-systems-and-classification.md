@@ -130,7 +130,7 @@ where $\alpha^\vee = 2\alpha/(\alpha, \alpha)$ is the **coroot**, and the axiom 
 **Proposition.** For non-proportional roots $\alpha, \beta$ with $(\alpha, \alpha) \geq (\beta, \beta)$, the positive integer
 
 $$
-\langle \alpha, \beta^\vee \rangle \langle \beta, \alpha^\vee \rangle = 4\cos^2\theta
+\boxed{\;\langle \alpha, \beta^\vee \rangle \langle \beta, \alpha^\vee \rangle = 4\cos^2\theta\;}
 $$
 
 takes one of the values $0, 1, 2, 3$, where $\theta$ is the angle between $\alpha$ and $\beta$; the value $4$ occurs only for proportional roots. Consequently the possible angles between distinct non-proportional roots are $90^\circ$, $60^\circ$ or $120^\circ$, $45^\circ$ or $135^\circ$, and $30^\circ$ or $150^\circ$, and if $(\alpha, \alpha) \neq (\beta, \beta)$ the ratio of the squared lengths is $2$ or $3$ (or $1/2, 1/3$).
@@ -188,7 +188,7 @@ $$
 **Theorem (Killing–Cartan).** The connected Dynkin diagrams are exactly
 
 $$
-A_n\ (n \geq 1), \quad B_n\ (n \geq 2), \quad C_n\ (n \geq 3), \quad D_n\ (n \geq 4), \quad E_6,\ E_7,\ E_8,\ F_4,\ G_2,
+\boxed{\;A_n\ (n \geq 1), \quad B_n\ (n \geq 2), \quad C_n\ (n \geq 3), \quad D_n\ (n \geq 4), \quad E_6,\ E_7,\ E_8,\ F_4,\ G_2\;},
 $$
 
 with the low-rank coincidences $B_2 = C_2$, $A_3 = D_3$, and $A_1 = B_1 = C_1$ resolved by convention. Consequently there is a bijection between isomorphism classes of simple Lie algebras over an algebraically closed field of characteristic zero, connected Dynkin diagrams, and irreducible reduced root systems.
@@ -265,7 +265,7 @@ For $\mathrm{SL}(n+1, K)$ the Cartan subalgebra is the traceless diagonal matric
 A semisimple Lie algebra $\mathrm{G}$ over an algebraically closed field of characteristic zero has a Cartan subalgebra $\mathrm{H}$, abelian, self-normalising, of dimension equal to the rank $r$ of $\mathrm{G}$, and unique up to conjugacy. The adjoint action of $\mathrm{H}$ gives the root space decomposition
 
 $$
-\mathrm{G} = \mathrm{H} \oplus \bigoplus_{\alpha \in \Phi} \mathrm{G}_\alpha,
+\boxed{\;\mathrm{G} = \mathrm{H} \oplus \bigoplus_{\alpha \in \Phi} \mathrm{G}_\alpha\;},
 $$
 
 with each root space one-dimensional, $[\mathrm{G}_\alpha, \mathrm{G}_\beta] \subseteq \mathrm{G}_{\alpha+\beta}$, and $-\alpha \in \Phi$ whenever $\alpha \in \Phi$. Transporting the Killing form to $\mathrm{H}^*$ makes $\Phi$ a reduced root system in a Euclidean space: finite, spanning, stable under the reflections $s_\alpha$, with integrality of $2(\beta,\alpha)/(\alpha,\alpha)$.

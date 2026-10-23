@@ -119,7 +119,9 @@ They are the roots in the line $j\mathbb{C}$, with vanishing scalar part; they a
 **Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{B}_{\mathrm{r}}$ are exactly the four elements
 
 $$
-1,\qquad -1,\qquad j,\qquad -j .
+\boxed{\;
+1,\qquad -1,\qquad j,\qquad -j
+\;}.
 $$
 
 **Proof.** The reduction gives $\Xi_{+}^{2}=1$ and $\Xi_{-}^{2}=1$, hence $\Xi_{+}\in\{+1,-1\}$ and $\Xi_{-}\in\{+1,-1\}$. The four combinations are
@@ -329,7 +331,7 @@ They are **central**, because the algebra is commutative, and **primitive**, bec
 **Theorem (the idempotents).** The solutions of $\Pi^{2}=\Pi$ are
 
 $$
-\Pi=0,\qquad \Pi=1,\qquad \Pi=\Pi_{+}=\tfrac12(1+j),\qquad \Pi=\Pi_{-}=\tfrac12(1-j),
+\boxed{\; \Pi=0,\qquad \Pi=1,\qquad \Pi=\Pi_{+}=\tfrac12(1+j),\qquad \Pi=\Pi_{-}=\tfrac12(1-j) \;},
 $$
 
 and there are no others.
@@ -478,7 +480,7 @@ $$
 are the two non-trivial minimal ideals, and
 
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}\Pi_{+}\oplus\mathbb{B}_{\mathrm{r}}\Pi_{-}
+\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}\Pi_{+}\oplus\mathbb{B}_{\mathrm{r}}\Pi_{-} \;}
 $$
 
 is the direct sum of the two copies of $\mathbb{C}$. The two ideals are collected in the table.

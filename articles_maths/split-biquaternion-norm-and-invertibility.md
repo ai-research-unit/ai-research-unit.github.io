@@ -66,7 +66,9 @@ So the real part of the split-biquaternion norm is the sum of the squares of all
 **Theorem.** The split-biquaternion norm is multiplicative:
 
 $$
-\langle\tilde{Q}_1 \bullet \tilde{Q}_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural} \, \langle\tilde{Q}_2\rangle_{\natural}.
+\boxed{\;
+\langle\tilde{Q}_1 \bullet \tilde{Q}_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural} \, \langle\tilde{Q}_2\rangle_{\natural}
+\;}.
 $$
 
 **Proof.** Compute
@@ -286,7 +288,9 @@ In a general non-commutative algebra, the notions of left inverse, right inverse
 **Theorem.** A split biquaternion $\tilde Q_1$ is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{D}$:
 
 $$
-\langle\tilde Q_1\rangle_{\natural} \in \mathbb{D}^\times.
+\boxed{\;
+\langle\tilde Q_1\rangle_{\natural} \in \mathbb{D}^\times
+\;}.
 $$
 
 **Proof.** Suppose $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{D}$. Define
@@ -427,7 +431,9 @@ It is a group under multiplication, with identity $e_t$.
 **Theorem.** The group of units is isomorphic to the direct product of two copies of the quaternion unit group:
 
 $$
-\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times \times \mathbb{H}^\times,
+\boxed{\;
+\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times \times \mathbb{H}^\times
+\;},
 $$
 
 where $\mathbb{H}^\times = \mathbb{H} \setminus \{0\}$ is the group of nonzero quaternions.

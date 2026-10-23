@@ -30,7 +30,7 @@ The statements $c_gc_{g^{-1}}=\mathrm{id}=c_{g^{-1}}c_g$ and $c_e=\mathrm{id}$ a
 **Proposition (the composition law).** For all $g, h \in G$,
 
 $$
-c_g \circ c_h = c_{gh}.
+\boxed{\;c_g \circ c_h = c_{gh}\;}.
 $$
 
 **Proof.** For every $x$, $c_g(c_h(x)) = g(hxh^{-1})g^{-1} = (gh)x(gh)^{-1} = c_{gh}(x)$. The law says that the assignment $g\mapsto c_g$ is multiplicative, a fact whose interpretation as a homomorphism into $\operatorname{Aut}(G)$ belongs to *The Conjugation Representation*.
@@ -56,7 +56,7 @@ The inner conjugations act on the set $G$: the assignment $(g,x)\mapsto c_g(x)$ 
 **Proposition (the stabiliser is the centraliser).** For $x \in G$ the stabiliser of $x$ under the conjugation action is the centraliser
 
 $$
-C_G(x) = \{ g \in G : gx = xg \},
+\boxed{\;C_G(x) = \{ g \in G : gx = xg \}\;},
 $$
 
 and the orbit–stabiliser theorem of *Transformation Groups* gives $|\chi(x)| = [G:C_G(x)]$, so the size of a class divides $|G|$ when $G$ is finite.
@@ -124,7 +124,7 @@ Multiplying on the right by $\mathrm{Ad}_h$ gives the claim, since $\mathrm{Ad}_
 **Proposition (its value on the centre).** An element $z \in k[G]$ fixed by every inner conjugation is central, and the class operator acts on it by the scalar $|\chi|$:
 
 $$
-\mathrm{Ad}_\chi(z) = |\chi|\, z .
+\boxed{\;\mathrm{Ad}_\chi(z) = |\chi|\, z\;} .
 $$
 
 **Proof.** An element is fixed by every $\mathrm{Ad}_g$ exactly when its coefficients are constant on conjugacy classes, which is the centrality statement of *Group Algebras*. For such a $z$ each term of the sum sends $z$ to itself, because $gzg^{-1}=z$ when $z$ is central, and there are $|\chi|$ terms.

@@ -57,7 +57,7 @@ where $\Omega_{ij} = \Omega_i\times_UU_j$ and $\Omega_{ijk} = \Omega_i\times_UU_
 **Definition.** Let $\mathcal{X}$ be an algebraic stack presented by an atlas $u : \Omega\to\mathcal{X}$, with 2-fibre products $\Omega\times_{\mathcal{X}}\Omega$, $\Omega\times_{\mathcal{X}}\Omega\times_{\mathcal{X}}\Omega$ forming the **Čech nerve** of the atlas, a simplicial scheme $\Omega_\bullet$. An $\mathcal{O}_{\mathcal{X}}$-**module** on $\mathcal{X}$ is the data of a quasi-coherent sheaf $\mathcal{F}$ on $\Omega$ with an isomorphism $\alpha : p_1^*\mathcal{F}\to p_2^*\mathcal{F}$ over $\Omega\times_{\mathcal{X}}\Omega$ satisfying the cocycle condition over $\Omega\times_{\mathcal{X}}\Omega\times_{\mathcal{X}}\Omega$; equivalently, a quasi-coherent sheaf on $\mathcal{X}$ is a descent datum for the atlas, and the category of quasi-coherent sheaves on $\mathcal{X}$ is identified with the category of quasi-coherent sheaves on $\Omega$ with the descent datum. The **cohomology** is the cohomology of the simplicial scheme, that is, of the total complex of the Čech nerve,
 
 $$
-H^i(\mathcal{X},\mathcal{F}) = R^i\Gamma(\mathcal{X},\mathcal{F}) = H^i\bigl(\check C^\bullet(\Omega_\bullet,\mathcal{F})\bigr),
+\boxed{\;H^i(\mathcal{X},\mathcal{F}) = R^i\Gamma(\mathcal{X},\mathcal{F}) = H^i\bigl(\check C^\bullet(\Omega_\bullet,\mathcal{F})\bigr)\;},
 $$
 
 or, in the étale or smooth topology, the derived functors of the global sections functor on the lisse-étale site.
@@ -66,7 +66,7 @@ or, in the étale or smooth topology, the derived functors of the global section
 
 1. The cohomology of $\mathcal{F}$ is computed by the Čech nerve: $H^i(\mathcal{X},\mathcal{F})$ is the $i$-th cohomology of the complex of the simplicial structure, and it agrees with the derived functors of global sections, so the long exact sequences and the spectral sequences of *Sheaf Cohomology* and *Derived Functors and Sheaf Cohomology* hold verbatim for stacks.
 2. If $\mathcal{X}$ is Deligne–Mumford with finite stabilisers over the complex numbers and $X$ is its coarse space, then for the étale cohomology with rational coefficients
-   $$H^i(\mathcal{X},\mathbb{Q})\cong H^i(X,\mathbb{Q}),$$
+   $$\boxed{\;H^i(\mathcal{X},\mathbb{Q})\cong H^i(X,\mathbb{Q})\;},$$
  so that the stacky refinement does not change the rational cohomology of the moduli problem.
 3. For the classifying stack $BG$ of a finite group $G$ one has $H^i(BG,\mathbb{Q}) = H^i(G,\mathbb{Q})$, the group cohomology in degree $i$, which vanishes for $i>0$ when $G$ is finite and $\mathbb{Q}$ is the coefficient module; hence the comparison of (2) is a statement about finite stabilisers, and the cohomology with integral coefficients, or with coefficients in a nontrivial local system, does see the stack structure.
 

@@ -48,7 +48,7 @@ $$
 
 **Theorem (the adjoint).** Let $S$ be the one-sided shift, and let $\mathcal F_n=\sigma(X_0,\dots,X_n)$ for $n\ge0$. Then the adjoint of $S$ is the conditional expectation
 $$
-S^*=\mathbb E[\cdot\mid\mathcal F_0]\circ \text{(the $\sigma^{-1}$ on the image)},
+\boxed{\;S^*=\mathbb E[\cdot\mid\mathcal F_0]\circ \text{(the $\sigma^{-1}$ on the image)}\;},
 $$
 more precisely $S^*$ maps $f$ to the function $\omega\mapsto\mathbb E[f\mid X_0](\omega)$ after the identification, and $\ker S^*$ is the orthogonal complement of the image of $S$.
 
@@ -75,7 +75,7 @@ more precisely $S^*$ maps $f$ to the function $\omega\mapsto\mathbb E[f\mid X_0]
 
 **Theorem (mixing).** The process is mixing if and only if
 $$
-\langle S^nf,g\rangle\longrightarrow\langle f,\mathbf 1\rangle\langle\mathbf 1,g\rangle\qquad (n\to\infty)
+\boxed{\;\langle S^nf,g\rangle\longrightarrow\langle f,\mathbf 1\rangle\langle\mathbf 1,g\rangle\qquad (n\to\infty)\;}
 $$
 for all $f,g\in L^2(\mu)$, that is, the correlations decay to the product of the means.
 
@@ -101,7 +101,7 @@ for all $f,g\in L^2(\mu)$, that is, the correlations decay to the product of the
 
 **Theorem (the Markov shift).** Let $\{X_n\}$ be a Markov chain with transition kernel $p$ and invariant measure $\pi$, and let $\mu=\mathbb P_\pi$ be its law as a stationary process. Then the shift $\sigma$ preserves $\mu$, the Koopman operator of the shift is the shift operator of the process, and the Markov operator is the conditional expectation of the next coordinate,
 $$
-P f(x)=\mathbb E[f(X_1)\mid X_0=x]=\mathbb E_\mu[f\circ\sigma\mid X_0=x].
+\boxed{\;P f(x)=\mathbb E[f(X_1)\mid X_0=x]=\mathbb E_\mu[f\circ\sigma\mid X_0=x]\;}.
 $$
 
 *Proof.* The stationarity of $\mathbb P_\pi$ is the invariance of $\pi$; the identity is the definition of the transition kernel and the Markov property. The Markov operator is *The Markov Operator*, earlier in this category.

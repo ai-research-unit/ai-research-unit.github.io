@@ -12,7 +12,7 @@ This article defines the two classes, proves the decomposition, computes the act
 **Definition.** A **$\sigma$-derivation** is an additive map $\delta : A\to A$ with
 
 $$
-\delta(ab) = \delta(a)\,b + \sigma(a)\,\delta(b) \qquad \text{for all } a, b \in A ;
+\boxed{\;\delta(ab) = \delta(a)\,b + \sigma(a)\,\delta(b) \qquad \text{for all } a, b \in A\;} ;
 $$
 
 when $\sigma = \mathrm{id}$ this is a derivation. A derivation $D$ is a **star-derivation** when
@@ -30,7 +30,7 @@ $$
 **Proposition (the decomposition).** A derivation $D$ is a star-derivation exactly when $\sigma D\sigma = D$, and a skew derivation exactly when $\sigma D\sigma = -D$, where $\sigma D\sigma$ is the conjugate derivation $a \mapsto \sigma(D(\sigma(a)))$. Every derivation decomposes uniquely as
 
 $$
-D = D_+ + D_-, \qquad D_+ = \tfrac12(D+\sigma D\sigma), \quad D_- = \tfrac12(D-\sigma D\sigma),
+\boxed{\;D = D_+ + D_-, \qquad D_+ = \tfrac12(D+\sigma D\sigma), \quad D_- = \tfrac12(D-\sigma D\sigma)\;},
 $$
 
 with $D_+$ a star-derivation and $D_-$ a skew derivation.
@@ -46,7 +46,7 @@ with $D_+$ a star-derivation and $D_-$ a skew derivation.
 **Theorem.** For $a \in A$ let $D_a$ be the inner derivation $D_a(x) = ax-xa$. Then $D_a$ is a star-derivation exactly when $a+\sigma(a)$ is central, and a skew derivation exactly when $a-\sigma(a)$ is central:
 
 $$
-D_a\sigma = \sigma D_a \iff a+\sigma(a)\in Z(A), \qquad D_a\sigma = -\sigma D_a \iff a-\sigma(a)\in Z(A).
+\boxed{\;D_a\sigma = \sigma D_a \iff a+\sigma(a)\in Z(A), \qquad D_a\sigma = -\sigma D_a \iff a-\sigma(a)\in Z(A)\;}.
 $$
 
 In particular a central element gives the zero derivation, a **symmetric** element gives a **skew** derivation, and a **skew** element gives a **star**-derivation; for a central element both conditions hold and $D_a = 0$.

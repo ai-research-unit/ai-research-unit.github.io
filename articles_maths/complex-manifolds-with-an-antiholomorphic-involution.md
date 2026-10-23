@@ -17,7 +17,7 @@ Throughout, $(M, c)$ is a connected complex manifold of complex dimension $n$ wi
 
 **Proposition (the quotient in the general case).** If $M^{c} \neq \varnothing$ the quotient $Q = M/\langle c\rangle$ is a real orbifold of dimension $2n$ whose singular locus is the image of the real locus, $\pi(M^{c})$; at a real point $p$ the local model of the quotient is
 $$
-\mathbb{R}^{n} \times \bigl(\mathbb{R}^{n}/\pm\mathrm{id}\bigr),
+\boxed{\;\mathbb{R}^{n} \times \bigl(\mathbb{R}^{n}/\pm\mathrm{id}\bigr)\;},
 $$
 the fixed directions contributing the cone $\mathbb{R}^n/\pm\mathrm{id}$, so $Q$ is a smooth manifold with boundary only when $n = 1$, and is genuinely singular along $\pi(M^{c})$ when $n \ge 2$.
 

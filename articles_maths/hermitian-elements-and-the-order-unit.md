@@ -20,7 +20,7 @@ The ordered vector space and the order unit are *Ordered Vector Spaces and the O
 **Proposition (every element is a complex combination of two Hermitian elements).** Every $a\in A$ has a unique decomposition
 
 $$
-a = h + ik, \qquad h = \tfrac12(a + a^{*}) = \operatorname{Re}a, \quad k = \tfrac1{2i}(a - a^{*}) = \operatorname{Im}a ,
+\boxed{\;a = h + ik, \qquad h = \tfrac12(a + a^{*}) = \operatorname{Re}a, \quad k = \tfrac1{2i}(a - a^{*}) = \operatorname{Im}a\;} ,
 $$
 
 with $h,k\in H(A)$; and $a$ is normal, Hermitian, or positive according as $hk = kh$, $k = 0$, or $k = 0$ and $h\geq0$.
@@ -32,7 +32,7 @@ with $h,k\in H(A)$; and $a$ is normal, Hermitian, or positive according as $hk =
 **Definition.** An **order unit** of $H(A)$ is an element $u > 0$ such that for every $h$ there is $\lambda>0$ with $-\lambda u\leq h\leq\lambda u$; an order unit is **strong** when in addition every nonempty majorised set has a least upper bound, and the **order-unit seminorm** is
 
 $$
-\lVert h\rVert_u = \inf\{\lambda>0 : -\lambda u\leq h\leq\lambda u\} .
+\boxed{\;\lVert h\rVert_u = \inf\{\lambda>0 : -\lambda u\leq h\leq\lambda u\}\;} .
 $$
 
 **Proposition (the identity is an order unit).** When $A$ is a unital reduced involutive algebra the identity is a positive order unit of $H(A)$; in a $\ast$-normed algebra with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$ the order-unit norm at the identity is the given norm, $\lVert h\rVert_1 = \lVert h\rVert$, and the order interval $[-1,1]$ is the unit ball of $H(A)$ in that norm.
@@ -48,7 +48,7 @@ $$
 **Theorem (the Jordan decomposition).** Let $A$ be a unital reduced involutive algebra that is $\ast$-normed with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$, and let $h\in H(A)$. Then there are unique commuting positive elements $h_+,h_-$ with
 
 $$
-h = h_+ - h_-, \qquad h_+h_- = 0, \qquad \lVert h\rVert = \max(\lVert h_+\rVert,\lVert h_-\rVert) ,
+\boxed{\;h = h_+ - h_-, \qquad h_+h_- = 0, \qquad \lVert h\rVert = \max(\lVert h_+\rVert,\lVert h_-\rVert)\;} ,
 $$
 
 the **positive part** $h_+$ and the **negative part** $h_-$; the decomposition is produced by the functional calculus, $h_\pm = \tfrac12(\lvert h\rvert\pm h)$ with $\lvert h\rvert = (h^{2})^{1/2}$, and it is the decomposition of $h$ with respect to the order unit.

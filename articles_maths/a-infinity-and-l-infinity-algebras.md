@@ -40,7 +40,7 @@ m_1m_2 = m_2(m_1\otimes\mathrm{id}) + m_2(\mathrm{id}\otimes m_1) ,
 $$
 
 $$
-m_2(m_2\otimes\mathrm{id}) - m_2(\mathrm{id}\otimes m_2) = -m_1m_3 - m_3(m_1\otimes\mathrm{id}\otimes\mathrm{id}) - m_3(\mathrm{id}\otimes m_1\otimes\mathrm{id}) - m_3(\mathrm{id}\otimes\mathrm{id}\otimes m_1) .
+\boxed{\;m_2(m_2\otimes\mathrm{id}) - m_2(\mathrm{id}\otimes m_2) = -m_1m_3 - m_3(m_1\otimes\mathrm{id}\otimes\mathrm{id}) - m_3(\mathrm{id}\otimes m_1\otimes\mathrm{id}) - m_3(\mathrm{id}\otimes\mathrm{id}\otimes m_1)\;} .
 $$
 
 Thus $m_1$ is a differential, $m_2$ is a chain map for that differential, and the **associativity defect** $m_2(m_2\otimes\mathrm{id}) - m_2(\mathrm{id}\otimes m_2)$ is the image under $m_1$ of the higher operation $m_3$ together with the terms in which $m_3$ is applied to arguments one of which is an $m_1$-image. In particular:
@@ -82,7 +82,7 @@ $$
 that is, $i$ is a quasi-isomorphism of complexes whose image consists of $d$-cycles. Then $H$ carries an $A_\infty$-algebra structure with $m_1 = 0$, $m_2$ the product induced by the product of $A$, and
 
 $$
-m_n = \sum_{\text{plane trees with }n\text{ leaves}} \pm p\,b_h\,b_h\cdots b_h\,i^{\otimes n}
+\boxed{\;m_n = \sum_{\text{plane trees with }n\text{ leaves}} \pm p\,b_h\,b_h\cdots b_h\,i^{\otimes n}\;}
 $$
 
 where $b_h(\alpha_1,\dots,\alpha_r) = (-1)^{\lvert\alpha_1\rvert+\cdots+\lvert\alpha_{r-1}\rvert}h(\alpha_1\cdots\alpha_{r-1})\alpha_r$ is the "circle operation" built from the homotopy $h$ and the product of $A$; further, there is an $A_\infty$-quasi-isomorphism $H\to A$ extending $i$. The resulting minimal $A_\infty$-algebra is the **minimal model** of $A$.
@@ -152,7 +152,7 @@ $$
 $$
 
 $$
-\sum_{\mathrm{cyc}}\ell_2\bigl(\ell_2\otimes\mathrm{id}\bigr) = -\,\ell_1\ell_3 - \sum_{\mathrm{cyc}}\ell_3\bigl(\ell_1\otimes\mathrm{id}\otimes\mathrm{id}\bigr) ,
+\boxed{\;\sum_{\mathrm{cyc}}\ell_2\bigl(\ell_2\otimes\mathrm{id}\bigr) = -\,\ell_1\ell_3 - \sum_{\mathrm{cyc}}\ell_3\bigl(\ell_1\otimes\mathrm{id}\otimes\mathrm{id}\bigr)\;} ,
 $$
 
 where $\sum_{\mathrm{cyc}}$ denotes the sum over the three cyclic permutations of the three arguments. Thus $\ell_1$ is a differential for which the bracket $\ell_2$ is a chain map, and the **Jacobi defect**, the cyclic sum on the left, is a boundary: it equals the image of $\ell_3$ under $\ell_1$ together with the terms in which one argument of $\ell_3$ is replaced by its $\ell_1$-image. In particular:

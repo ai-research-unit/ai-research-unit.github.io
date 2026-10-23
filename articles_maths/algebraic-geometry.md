@@ -72,7 +72,7 @@ and the same statements hold with $\mathbb{A}^n_k$ replaced by an affine variety
 
 1. $X$ is irreducible if and only if $I(X)$ is prime, if and only if $k[X]$ is an integral domain.
 2. $X$ is a Noetherian topological space, and it has a unique irredundant decomposition
-   $$X = X_1\cup\cdots\cup X_r$$
+   $$\boxed{\;X = X_1\cup\cdots\cup X_r\;}$$
    into maximal irreducible closed subsets, its **irreducible components**, which are the closed sets $V(\mathrm{P})$ for the minimal primes $\mathrm{P}\supseteq I(X)$.
 3. Every nonempty open subset of an irreducible $X$ is irreducible and dense; the open sets of the Zariski topology are, for irreducible $X$, exactly the complements of the proper closed subsets, each of which is dense.
 
@@ -96,7 +96,7 @@ and the same statements hold with $\mathbb{A}^n_k$ replaced by an affine variety
 **Theorem (the contravariant equivalence).** The assignment $X\mapsto k[X]$ extends to an equivalence of categories
 
 $$
-\{\text{affine varieties over } k\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{finitely generated reduced } k\text{-algebras}\},
+\boxed{\;\{\text{affine varieties over } k\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{finitely generated reduced } k\text{-algebras}\}\;},
 $$
 
 under which a morphism $\varphi : X\to Y$ corresponds to the $k$-algebra homomorphism $\varphi^* : k[Y]\to k[X]$, $\varphi^*(g) = g\circ\varphi$. In particular $\varphi$ is an isomorphism if and only if $\varphi^*$ is, and the assignment is fully faithful.
@@ -106,7 +106,7 @@ under which a morphism $\varphi : X\to Y$ corresponds to the $k$-algebra homomor
 **Corollary (products and graphs).** The product of affine varieties $X$ and $Y$ exists, and
 
 $$
-k[X\times Y] = k[X]\otimes_k k[Y],
+\boxed{\;k[X\times Y] = k[X]\otimes_k k[Y]\;},
 $$
 
 the tensor product over $k$; the diagonal $\Delta : X\to X\times X$ and the graph $\Gamma_\varphi\subseteq X\times Y$ of a morphism are closed subvarieties, the graph being the zero set of the equations $y_i = \varphi_i(x)$. Consequently the categorical product of affine varieties, and the fibre product over a point, are affine varieties.

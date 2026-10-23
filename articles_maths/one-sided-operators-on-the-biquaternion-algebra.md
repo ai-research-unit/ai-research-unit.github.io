@@ -59,10 +59,10 @@ and $L_{\tilde Q_5}=0$ or $R_{\tilde Q_3}=0$ forces $\tilde Q_5=0$ or $\tilde Q_
 **Theorem (the four composition laws).** For all $\tilde Q_5,\tilde Q_3,\tilde Q_4,\tilde Q_6\in\mathbb{B}$,
 
 $$
-L_{\tilde Q_5}L_{\tilde Q_3}=L_{\tilde Q_5\tilde Q_3},\qquad
+\boxed{\; L_{\tilde Q_5}L_{\tilde Q_3}=L_{\tilde Q_5\tilde Q_3},\qquad
 R_{\tilde Q_5}R_{\tilde Q_3}=R_{\tilde Q_3\tilde Q_5},\qquad
 L_{\tilde Q_5}R_{\tilde Q_3}=R_{\tilde Q_3}L_{\tilde Q_5},\qquad
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde Q_6}\bigr)=L_{\tilde Q_5\tilde Q_4}R_{\tilde Q_6\tilde Q_3},
+\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde Q_6}\bigr)=L_{\tilde Q_5\tilde Q_4}R_{\tilde Q_6\tilde Q_3} \;},
 $$
 
 and the diagonal product $L_{\tilde Q_5}R_{\tilde Q_5^{-1}}$ for a unit $\tilde Q_5$ is the **inner automorphism** $\mathrm{Ad}_{\tilde Q_5}(\tilde Q)=\tilde Q_5\tilde Q\tilde Q_5^{-1}$.
@@ -80,8 +80,8 @@ and the diagonal product $L_{\tilde Q_5}R_{\tilde Q_5^{-1}}$ for a unit $\tilde 
 **Theorem (association swaps the two families).** For all $\tilde Q_5,\tilde Q_3\in\mathbb{B}$,
 
 $$
-\bigl(L_{\tilde Q_5}\bigr)^{\approx}=R_{\tilde Q_5},\qquad
-\bigl(R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}.
+\boxed{\; \bigl(L_{\tilde Q_5}\bigr)^{\approx}=R_{\tilde Q_5},\qquad
+\bigl(R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3} \;}.
 $$
 
 *Proof.* By the invariance of the scalar part under cyclic permutation of the factors, for all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
@@ -165,8 +165,8 @@ $$
 **Theorem (the double centraliser).** An operator $S\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ commutes with every left multiplication if and only if it is a right multiplication, and conversely:
 
 $$
-\{\,S:SL_{\tilde Q_5}=L_{\tilde Q_5}S\ \ \forall\tilde Q_5\,\}=\{\,R_{\tilde Q_3}\,\},\qquad
-\{\,S:SR_{\tilde Q_3}=R_{\tilde Q_3}S\ \ \forall\tilde Q_3\,\}=\{\,L_{\tilde Q_5}\,\}.
+\boxed{\; \{\,S:SL_{\tilde Q_5}=L_{\tilde Q_5}S\ \ \forall\tilde Q_5\,\}=\{\,R_{\tilde Q_3}\,\},\qquad
+\{\,S:SR_{\tilde Q_3}=R_{\tilde Q_3}S\ \ \forall\tilde Q_3\,\}=\{\,L_{\tilde Q_5}\,\} \;}.
 $$
 
 *Proof.* Let $S$ commute with all $L_{\tilde Q_5}$ and put $\tilde Q_3=S(e_t)$. For every $\tilde Q_5$, using $\tilde Q_5=L_{\tilde Q_5}(e_t)$ and the commutation,
@@ -180,7 +180,7 @@ so $S=R_{\tilde Q_3}$; the converse is the third composition law. The second ide
 **Corollary (the bicommutant is the scalars).** An operator commuting with both families is a scalar multiple of the identity:
 
 $$
-\{\,S:SL_{\tilde Q_5}=L_{\tilde Q_5}S\ \text{and}\ SR_{\tilde Q_3}=R_{\tilde Q_3}S\ \ \forall \tilde Q_5,\tilde Q_3\,\}=\mathbb{C}\,\mathrm{id}.
+\boxed{\; \{\,S:SL_{\tilde Q_5}=L_{\tilde Q_5}S\ \text{and}\ SR_{\tilde Q_3}=R_{\tilde Q_3}S\ \ \forall \tilde Q_5,\tilde Q_3\,\}=\mathbb{C}\,\mathrm{id} \;}.
 $$
 
 *Proof.* By the theorem $S=R_{\tilde Q_4}$ for some $\tilde Q_4$, and commutation with every right multiplication reads $R_{\tilde Q_4}R_{\tilde Q_3}=R_{\tilde Q_3}R_{\tilde Q_4}$, that is $\tilde Q_3\tilde Q_4=\tilde Q_4\tilde Q_3$ for all $\tilde Q_3$, i.e. $\tilde Q_4$ central.

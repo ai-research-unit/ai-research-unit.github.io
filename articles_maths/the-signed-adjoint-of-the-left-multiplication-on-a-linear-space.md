@@ -13,8 +13,8 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition.** For every $a \in E$,
 
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\circ\alpha , \qquad
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger}(Y) = \alpha(Y)\,\alpha(a) .
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\circ\alpha , \qquad
+\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger}(Y) = \alpha(Y)\,\alpha(a)\;} .
 $$
 
 **Proof.** $\langle\Lambda^{\alpha}_{a}X,Y\rangle = \operatorname{tr}(a\alpha(X)Y) = \operatorname{tr}(\alpha(X)Ya) = \langle\alpha(X),Ya\rangle = \langle X,\alpha(Ya)\rangle = \langle X,\alpha(Y)\alpha(a)\rangle$, using the $\alpha$-invariance of the trace pairing and the multiplicativity $\alpha(Ya)=\alpha(Y)\alpha(a)$; the adjoint is unique because the trace pairing is non-degenerate. This is the case $b=1$ of the adjoint formula $(\Theta^{\alpha}_{a,b})^{\dagger}=\Theta^{\alpha}_{\alpha(b),\alpha(a)}$.

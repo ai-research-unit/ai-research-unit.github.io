@@ -99,7 +99,7 @@ with $v_\mathrm{p}$ the discrete valuation of *Valuation Theory and Henselian Ri
 **Theorem (Riemann–Hurwitz).** Let $L/K$ be a finite separable extension of function fields, $[L:K] = m$, let $F_L$ be the constant field of $L$ and $K' = KF_L$, so that $[L:K'] = m/[F_L:F_K]$, and let $g_L$, $g_K$ be the genera of $L$ and $K$. Then
 
 $$
-2g_L - 2 = [L:K'](2g_K - 2) + \deg \mathrm{D}_{L/K},
+\boxed{\;2g_L - 2 = [L:K'](2g_K - 2) + \deg \mathrm{D}_{L/K}\;},
 $$
 
 where $\deg \mathrm{D}_{L/K}$ is the degree of the different of $L/K$, a nonnegative integer vanishing exactly when the extension is unramified.
@@ -127,7 +127,7 @@ Thus $d = 1$ or $2$ gives the genus $0$ (a conic), $d = 3$ or $4$ gives genus $1
 **Theorem (Artin reciprocity for global fields).** Let $L/K$ be a finite abelian extension of global fields. There is a modulus $\mathrm{M}$ of $K$, a formal product of a divisor supported on the ramified places and the archimedean places in the number-field case, such that the Artin map of *Class Field Theory*
 
 $$
-\left(\frac{L/K}{\cdot}\right) : I_K^{\mathrm{M}} \longrightarrow \operatorname{Gal}(L/K), \qquad \mathrm{A} \longmapsto \left(\frac{L/K}{\mathrm{A}}\right),
+\boxed{\;\left(\frac{L/K}{\cdot}\right) : I_K^{\mathrm{M}} \longrightarrow \operatorname{Gal}(L/K), \qquad \mathrm{A} \longmapsto \left(\frac{L/K}{\mathrm{A}}\right)\;},
 $$
 
 is a surjective homomorphism with kernel $P_\mathrm{M}\operatorname{N}_{L/K}(I_L^{\mathrm{M}})$; it induces an isomorphism of the ray class group $\operatorname{Cl}_\mathrm{M}(K)$ modulo the norm group with the Galois group, and the map $H \mapsto L_H$ from congruence subgroups to abelian extensions is a bijection with the extension theorem of Takagi. Every statement in *Class Field Theory* holds verbatim for function fields, with the single modification that the archimedean part of the modulus is absent.

@@ -52,8 +52,8 @@ $$
 
 **Theorem (second order and the factorization).** The two operators commute and their product is
 $$
-\boxed{\;
-\bar\partial\partial=\partial\bar\partial=\partial^2/\partial Q_{+}\partial\bar Q_{+}\,\Pi_++\partial^2/\partial Q_{-}\partial\bar Q_{-}\,\Pi_-
+
+\boxed{\;\bar\partial\partial=\partial\bar\partial=\partial^2/\partial Q_{+}\partial\bar Q_{+}\,\Pi_++\partial^2/\partial Q_{-}\partial\bar Q_{-}\,\Pi_-
 \;},
 $$
 and the Euclidean Laplacian is the sum of the two idempotent components of $8\bar\partial\partial$,
@@ -73,8 +73,8 @@ $$
 
 **Theorem (the regularity system).** Writing $f=g_{1}\Pi_++g_{2}\Pi_-$, the function $f$ is regular if and only if
 $$
-\boxed{\;
-\partial/\partial\bar Q_{+}\,g_{1}=0,\qquad\partial/\partial\bar Q_{-}\,g_{2}=0
+
+\boxed{\;\partial/\partial\bar Q_{+}\,g_{1}=0,\qquad\partial/\partial\bar Q_{-}\,g_{2}=0
 \;},
 $$
 the pair of complex Cauchy–Riemann systems. In the real coordinates $\alpha=q_{\blacktriangle}+q_{\blacktriangledown}$, $\alpha'=q'_{\blacktriangle}+q'_{\blacktriangledown}$ of $Q_{+}$ and $\beta=q_{\blacktriangle}-q_{\blacktriangledown}$, $\beta'=q'_{\blacktriangle}-q'_{\blacktriangledown}$ of $Q_{-}$, with $g_{1}=p_{1}+ir_{1}$ and $g_{2}=p_{2}+ir_{2}$, the system is
@@ -87,7 +87,7 @@ $$
 
 **Remark (the dependence on the second variable).** The equation $\partial/\partial\bar Q_{+}\,g_{1}=0$ is the Cauchy–Riemann system in $Q_{+}$ with $Q_{-}$ entering only as a parameter, so a $C^{1}$ solution has $g_{1}(Q_{+},Q_{-})$ holomorphic in $Q_{+}$ for each fixed $Q_{-}$, and symmetrically $g_{2}(Q_{+},Q_{-})$ holomorphic in $Q_{-}$ for each fixed $Q_{+}$. The narrower class of functions differentiable in the reduced sense — the difference-quotient class of *Reduced Biquaternion Analysis*, §*The Problem of Differentiability* — is the class in which $g_{1}$ does not depend on $Q_{-}$ and $g_{2}$ does not depend on $Q_{+}$, that is
 $$
-f(\breve Q)=G_{1}(Q_{+})\,\Pi_++G_{2}(Q_{-})\,\Pi_-
+\boxed{\;f(\breve Q)=G_{1}(Q_{+})\,\Pi_++G_{2}(Q_{-})\,\Pi_-\;}
 $$
 with $G_{1},G_{2}$ holomorphic in one complex variable. The operator condition alone is the weaker and larger class; the reduced-analytic class is the one that carries the derivative and the integral theory, and it is meant when a statement needs a genuine difference quotient.
 
@@ -101,9 +101,9 @@ with $G_{1},G_{2}$ holomorphic in one complex variable. The operator condition a
 
 **The Cauchy kernel.** The function
 $$
-\boxed{\;
+
 G(\breve Q)=\frac{1}{2\pi i}\Bigl(\frac{\Pi_+}{Q_{+}}+\frac{\Pi_-}{Q_{-}}\Bigr)
-\;}
+
 $$
 is regular on the complement of the zero-divisor set $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, since each component is holomorphic in its own coordinate.
 

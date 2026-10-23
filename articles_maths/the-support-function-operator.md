@@ -58,7 +58,7 @@ and $K\subseteq L$ implies $\sigma_K\leq\sigma_L$.
 **Theorem (the support function determines the closed convex set).** For a nonempty closed convex $K$,
 
 $$
-K = \{x\in E : \langle u,x\rangle\leq\sigma_K(u) \ \text{for every } u\in E'\} ,
+\boxed{\;K = \{x\in E : \langle u,x\rangle\leq\sigma_K(u) \ \text{for every } u\in E'\}\;} ,
 $$
 
 and consequently $\sigma_K = \sigma_L$ for closed convex $K,L$ implies $K = L$.
@@ -74,7 +74,7 @@ The theorem is the statement that a closed convex set is the intersection of the
 **Theorem.** The support function operator
 
 $$
-\Sigma : K\mapsto\sigma_K , \qquad \Sigma(K+L) = \Sigma(K)+\Sigma(L), \quad \Sigma(\lambda K) = \lambda\,\Sigma(K) ,
+\boxed{\;\Sigma : K\mapsto\sigma_K , \qquad \Sigma(K+L) = \Sigma(K)+\Sigma(L), \quad \Sigma(\lambda K) = \lambda\,\Sigma(K)\;} ,
 $$
 
 is an order isomorphism from the nonempty closed convex subsets of $E$ onto the closed sublinear functions of the dual, the order being the inclusion on the sets and the pointwise order on the functions. It converts the Minkowski sum into the pointwise sum, its inverse is the reconstruction
@@ -134,7 +134,7 @@ a closed convex set containing the origin and, if $A$ contains the origin, a clo
 **Theorem (the bipolar theorem).** For every $A\subseteq E$,
 
 $$
-A^{\circ\circ} = \overline{\operatorname{conv}}(A\cup\{0\}) ,
+\boxed{\;A^{\circ\circ} = \overline{\operatorname{conv}}(A\cup\{0\})\;} ,
 $$
 
 so that for a closed convex set containing the origin the polar is an involution, $K^{\circ\circ} = K$.

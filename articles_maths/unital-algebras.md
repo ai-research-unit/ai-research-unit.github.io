@@ -65,7 +65,7 @@ The two constructions are inverse to one another, and they establish an equivale
 (2) $\Rightarrow$ (1). Let $A$ be an associative ring with identity $1_A$ and let $\eta : R \to Z(A)$ be a unital ring homomorphism. Define the action of $R$ on $A$ by
 
 $$
-r \cdot a = \eta(r)\,a .
+\boxed{\;r \cdot a = \eta(r)\,a\;} .
 $$
 
 This is an $R$-module structure: distributivity in $a$ is the distributivity of the ring, distributivity in $r$ is the additivity of $\eta$, the associativity $(rs)\cdot a = \eta(rs)a = \eta(r)\bigl(\eta(s)a\bigr) = r\cdot(s\cdot a)$ is the multiplicativity of $\eta$, and $1_R \cdot a = \eta(1_R)a = 1_Aa = a$ is the unitality of $\eta$. The ring multiplication is $R$-bilinear with respect to this action: for $a, b \in A$,
@@ -155,7 +155,7 @@ and the two differ by the difference of $a(bc)$ and $(ab)c$, which is zero exact
 **Theorem (universal property).** Let $A$ be an $R$-algebra and let $B$ be a unital associative $R$-algebra. Then every $R$-algebra homomorphism $\varphi : A \to B$ extends uniquely to a unital $R$-algebra homomorphism $\varphi^+ : A^+ \to B$, given by
 
 $$
-\varphi^+(a, r) = \varphi(a) + r\,1_B .
+\boxed{\;\varphi^+(a, r) = \varphi(a) + r\,1_B\;} .
 $$
 
 Equivalently, restriction along the inclusion $A \hookrightarrow A^+$ is a bijection $\operatorname{Hom}^{1}_{R\text{-alg}}(A^+, B) \to \operatorname{Hom}_{R\text{-alg}}(A, B)$, natural in $A$ and in $B$: the unitisation is left adjoint to the forgetful functor from unital associative $R$-algebras to $R$-algebras.
@@ -231,7 +231,7 @@ $$
 a direct sum of $R$-submodules
 
 $$
-A = eAe \oplus eAf \oplus fAe \oplus fAf .
+\boxed{\;A = eAe \oplus eAf \oplus fAe \oplus fAf\;} .
 $$
 
 The summands are the **Peirce spaces** of $e$. Writing $e_1 = e$ and $e_2 = f$, the products obey

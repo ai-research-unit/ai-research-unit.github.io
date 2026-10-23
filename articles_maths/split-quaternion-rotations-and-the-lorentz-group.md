@@ -28,8 +28,8 @@ Both are groups under multiplication, and $\mathrm{U}$ is a subgroup of $\mathrm
 $$
 \boxed{\;
 \mathrm{U} = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R})
-\;}
-$$,
+\;},
+$$
 
 and the two components are interchanged by multiplication by $\vec e_y$. The full group of units is
 
@@ -74,8 +74,8 @@ has kernel $\{\pm 1\}$.
 $$
 \boxed{\;
 \Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R})
-\;}
-$$,
+\;},
+$$
 
 and the image of the norm-one group is $\Theta(\mathrm{U}) = SO^{+}(2,1)$, the identity component.
 

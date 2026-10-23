@@ -21,7 +21,7 @@ When $\Sigma\subseteq\mathbb{R}$ it is bounded and self-adjoint with $\|M_\lambd
 **Proposition (the spectral data of the spectral operator).** The spectrum of $M_\lambda$ is the support of $\mu$:
 
 $$
-\sigma(M_\lambda)=\operatorname{supp}\mu=\{\lambda:\mu(\lambda-\varepsilon,\lambda+\varepsilon)>0\ \text{for every}\ \varepsilon>0\},
+\boxed{\;\sigma(M_\lambda)=\operatorname{supp}\mu=\{\lambda:\mu(\lambda-\varepsilon,\lambda+\varepsilon)>0\ \text{for every}\ \varepsilon>0\}\;},
 $$
 
 the spectral measure is $E(S)=M_{\mathbf{1}_S}$, the functional calculus is $f(M_\lambda)=M_f$ for bounded Borel $f$, and the eigenvectors of $M_\lambda$ are the nonzero functions supported on the atoms of $\mu$, with the atom at $\lambda$ of multiplicity equal to the mass of the atom.
@@ -43,7 +43,7 @@ $$
 with
 
 $$
-U\,T\,U^{-1}=M_\lambda .
+\boxed{\;U\,T\,U^{-1}=M_\lambda\;} .
 $$
 
 Equivalently, $T=\int\lambda\,dE(\lambda)$ where $E$ is the spectral measure of $T$ and the measure class of $\mu$ may be taken as the class of $\langle E(\cdot)x,x\rangle$ for a total family of vectors $x$.
@@ -53,8 +53,8 @@ Equivalently, $T=\int\lambda\,dE(\lambda)$ where $E$ is the spectral measure of 
 **Theorem (normal case).** A bounded normal operator $T$ on a separable Hilbert space is unitarily equivalent to a multiplication operator,
 
 $$
-T\simeq M_z \quad\text{on}\quad \bigoplus_{n}L^2(\sigma(T),\mu_n),
-\qquad (M_z f)(z)=z f(z),
+\boxed{\;T\simeq M_z \quad\text{on}\quad \bigoplus_{n}L^2(\sigma(T),\mu_n),
+\qquad (M_z f)(z)=z f(z)\;},
 $$
 
 and the same statement with $M_\lambda$ holds for a self-adjoint operator; in both cases the unitary equivalence is implemented by the spectral measure through the Borel functional calculus, $x\mapsto(f\mapsto\langle f(T)x,y\rangle)$.

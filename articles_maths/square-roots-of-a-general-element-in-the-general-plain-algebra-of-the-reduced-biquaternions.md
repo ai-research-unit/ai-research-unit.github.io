@@ -40,7 +40,7 @@ $$
 
 **Corollary (the reduction).** $X^{2}=\breve Q$ holds if and only if
 $$
-p^{2}=Q_{+}\qquad\text{and}\qquad q^{2}=Q_{-} .
+\boxed{\; p^{2}=Q_{+}\qquad\text{and}\qquad q^{2}=Q_{-} \;}.
 $$
 
 *Proof.* The element $\breve Q$ has the unique idempotent coordinates $(Q_{+},Q_{-})$, and by the proposition $X^{2}$ has the coordinates $(p^{2},q^{2})$; two elements are equal exactly when their coordinates are equal. So the single algebra equation is the pair of equations in the field $\mathbb{C}$, and the two are **independent**: neither $p$ nor $q$ is constrained by the other.
@@ -57,7 +57,7 @@ Because $\mathbb{C}$ is algebraically closed, a complex number $z$ has a square 
 
 1. If $Q_{+}\neq0$ and $Q_{-}\neq0$, choose square roots $p$ of $Q_{+}$ and $q$ of $Q_{-}$; then the four square roots of $\breve Q$ are
 $$
-X=\sigma\,p\,\Pi_++\tau\,q\,\Pi_-,\qquad \sigma,\tau\in\{+1,-1\},
+\boxed{\; X=\sigma\,p\,\Pi_++\tau\,q\,\Pi_-,\qquad \sigma,\tau\in\{+1,-1\} \;},
 $$
 and there are no others.
 2. If exactly one of $Q_{+},Q_{-}$ is $0$, say $Q_{-}=0$ and $Q_{+}\neq0$, then $\breve Q=Q_{+}\Pi_+$, the second equation forces $q=0$, and the two square roots are
@@ -94,7 +94,7 @@ X=\tfrac12(p_{r}+q_{r})+\tfrac12(p_{i}+q_{i})i+\tfrac12(p_{r}-q_{r})j+\tfrac12(p
 $$
 The element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ has $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so the two complex equations are
 $$
-p^{2}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad q^{2}=Q_{\blacktriangle}-Q_{\blacktriangledown} .
+\boxed{\; p^{2}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad q^{2}=Q_{\blacktriangle}-Q_{\blacktriangledown} \;}.
 $$
 The **first** is solved by $p$ a square root of $Q_{\blacktriangle}+Q_{\blacktriangledown}$ and the **second** by $q$ a square root of $Q_{\blacktriangle}-Q_{\blacktriangledown}$; the four roots of the generic case are the four ways of pairing the two signs. The two special rows are read as the two equations $Q_{\blacktriangle}+Q_{\blacktriangledown}=0$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}=0$, which are the two idempotent lines $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$ of the algebra.
 

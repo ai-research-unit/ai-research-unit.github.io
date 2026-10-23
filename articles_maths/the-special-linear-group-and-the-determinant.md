@@ -26,7 +26,7 @@ because multilinearity expands $D(\dots,v_i+v_j,\dots,v_i+v_j,\dots)=0$ into the
 **Theorem (existence and uniqueness).** For each $n \ge 1$ there is exactly one normalised alternating multilinear form $D:V^n \to F$, and in a basis $\mathcal{B}$ with coordinates $v_j=\sum_i a_{ij}e_i$ it is given by the **Leibniz formula**
 
 $$
-D(v_1,\dots,v_n)=\sum_{\sigma \in S_n}\operatorname{sgn}(\sigma)\prod_{j=1}^{n}a_{\sigma(j)j}.
+\boxed{\;D(v_1,\dots,v_n)=\sum_{\sigma \in S_n}\operatorname{sgn}(\sigma)\prod_{j=1}^{n}a_{\sigma(j)j}\;}.
 $$
 
 *Proof.* Uniqueness: by multilinearity it suffices to evaluate $D$ on basis vectors. Writing each $v_j$ in the basis, expanding by multilinearity expresses $D(v_1,\dots,v_n)$ as a sum of terms $D(e_{i_1},\dots,e_{i_n})$ times coefficients; an alternating form vanishes unless $i_1,\dots,i_n$ are distinct, and then the term is $\operatorname{sgn}(\sigma)D(e_1,\dots,e_n)$ for the permutation $\sigma$ with $i_j=\sigma(j)$. So $D$ is determined by $D(e_1,\dots,e_n)$, and normalisation fixes it. Existence: the Leibniz formula is readily checked to be multilinear, to vanish on repeated arguments, and to equal $1$ on the basis.
@@ -82,7 +82,7 @@ For rectangular matrices the multiplicativity of the determinant is replaced by 
 **Theorem (Cauchy–Binet).** Let $A$ be $m \times n$ and $B$ an $n \times m$ matrix with $m \le n$. For a subset $S \subseteq \{1,\dots,n\}$ of size $m$ let $A_{\cdot S}$ be the $m \times m$ matrix formed by the columns of $A$ indexed by $S$, and $B_{S \cdot}$ the $m \times m$ matrix formed by the rows of $B$ indexed by $S$. Then
 
 $$
-\det(AB)=\sum_{|S|=m}\det(A_{\cdot S})\det(B_{S\cdot}).
+\boxed{\;\det(AB)=\sum_{|S|=m}\det(A_{\cdot S})\det(B_{S\cdot})\;}.
 $$
 
 *Proof.* The $m$-th alternating power is a functor: for linear maps $F^n \xrightarrow{B} F^n \xrightarrow{A} F^m$ one has $\wedge^m(AB)=(\wedge^m A)(\wedge^m B)$. In the basis $\{e_S\}$ of $\wedge^m F^n$ indexed by the $m$-element subsets $S$, the entries of the matrix of $\wedge^m A$ are the maximal minors $\det(A_{\cdot S})$, and similarly for $B$. Taking determinants of both sides of the functorial identity gives the formula.
@@ -140,7 +140,7 @@ The elementary matrices are products of transvections, the shear maps $x\mapsto 
 **Theorem (Dieudonné).** For $n \ge 2$,
 
 $$
-[\operatorname{GL}_n(F),\operatorname{GL}_n(F)]=\operatorname{SL}_n(F)
+\boxed{\;[\operatorname{GL}_n(F),\operatorname{GL}_n(F)]=\operatorname{SL}_n(F)\;}
 $$
 
 except for $n=2$ with $F=\mathbb{F}_2$ or $F=\mathbb{F}_3$. For $F=\mathbb{F}_2$ one has $\operatorname{GL}_2(\mathbb{F}_2)=\operatorname{SL}_2(\mathbb{F}_2)=S_3$ and the commutator subgroup is $A_3$, the cyclic group of order $3$, of index $2$ in $\operatorname{SL}_2(\mathbb{F}_2)$; for $F=\mathbb{F}_3$ the commutator subgroup is the quaternion group $Q_8$, of index $3$ in $\operatorname{SL}_2(\mathbb{F}_3)$ and index $6$ in $\operatorname{GL}_2(\mathbb{F}_3)$. For all other $n$ and $F$ the abelianisation of $\operatorname{GL}_n(F)$ is $F^{\times}$, induced by the determinant.

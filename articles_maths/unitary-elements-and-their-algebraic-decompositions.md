@@ -47,7 +47,7 @@ $$
 **Theorem.** Let $u$ be unitary with eigenvalue decomposition
 
 $$
-u=\sum_{i=1}^{r}\lambda_i e_i,
+\boxed{\;u=\sum_{i=1}^{r}\lambda_i e_i\;},
 $$
 
 with the $\lambda_i$ pairwise distinct. Then there is an involution $\pi$ of the index set $\{1,\dots,r\}$ such that
@@ -85,7 +85,7 @@ that is $\lambda_{\pi(i)}^{-1}=\varsigma(\lambda_i)$ for every $i$. Applying $*$
 **Corollary.** A unitary element with an eigenvalue decomposition has Hermitian eigenprojectors exactly when its eigenvalues are unimodular; in that case the decomposition is
 
 $$
-u=\sum_i\lambda_i e_i, \qquad e_i^*=e_i, \qquad \lambda_i\varsigma(\lambda_i)=1,
+\boxed{\;u=\sum_i\lambda_i e_i, \qquad e_i^*=e_i, \qquad \lambda_i\varsigma(\lambda_i)=1\;},
 $$
 
 and it is the algebraic spectral decomposition of $u$.
@@ -133,7 +133,7 @@ $$
 **Theorem.** The $g_J$ are pairwise orthogonal Hermitian idempotents with $\sum_J g_J=1$, and
 
 $$
-u=\sum_{J\in\mathcal{O}}u_J, \qquad u_J=ug_J=g_Jug_J,
+\boxed{\;u=\sum_{J\in\mathcal{O}}u_J, \qquad u_J=ug_J=g_Jug_J\;},
 $$
 
 where $u_J$ is unitary in the corner $g_JAg_J$. On a one-element orbit $\{\lambda\}$, $u_J=\lambda g_J$ with $\lambda$ unimodular. On a two-element orbit $\{\lambda,\mu\}$ with $\mu=\varsigma(\lambda)^{-1}$, the corner contains the idempotents $e_\lambda,e_\mu$, exchanged by $*$, and $u_J=\lambda e_\lambda+\mu e_\mu$.

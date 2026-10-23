@@ -29,7 +29,7 @@ and $S^\alpha_{a,b}$ depends on $a$ and $b$ only through the product $a*b$.
 
 **Theorem (the signed adjoint).** With respect to the form of the category, the adjoint of the signed sandwich is
 $$
-\bigl(S^\alpha_{a,b}\bigr)^{*} = \alpha\circ\Theta_{a*b},
+\boxed{\;\bigl(S^\alpha_{a,b}\bigr)^{*} = \alpha\circ\Theta_{a*b}\;},
 $$
 where $\Theta_c=L_c^*$ is the transposed multiplication,
 $$
@@ -47,11 +47,11 @@ Equivalently $\bigl(S^\alpha_{a,b}\bigr)^{*}(g)(k)=\lambda(k)\sum_{m}\overline{(
 
 **Theorem.** Write $c=a*b$. Then
 $$
-S^\alpha_{a,b}\ \text{is self-adjoint} \iff \alpha\Theta_c=\alpha L_c \iff \Theta_c=L_c,
+\boxed{\;S^\alpha_{a,b}\ \text{is self-adjoint} \iff \alpha\Theta_c=\alpha L_c \iff \Theta_c=L_c\;},
 $$
 and
 $$
-S^\alpha_{a,b}\ \text{is an isometry} \iff \Theta_cL_c=\mathrm{id},\qquad S^\alpha_{a,b}\ \text{is unitary} \iff c=\gamma\varepsilon \text{ with } |\gamma|=1,
+\boxed{\;S^\alpha_{a,b}\ \text{is an isometry} \iff \Theta_cL_c=\mathrm{id},\qquad S^\alpha_{a,b}\ \text{is unitary} \iff c=\gamma\varepsilon \text{ with } |\gamma|=1\;},
 $$
 the first equivalence holding because $\alpha$ is unitary and $\|S^\alpha_{a,b}f\|=\|L_cf\|$, and the second because a unitary convolution operator is a scalar multiple of the identity.
 

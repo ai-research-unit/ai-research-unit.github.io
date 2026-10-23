@@ -53,7 +53,7 @@ and it is a first-order operator of the same order as $d$, not a zeroth-order co
 **Theorem.** Let $M$ be a closed oriented Riemannian manifold, or let one of the two forms be compactly supported. Then for $\alpha \in \Omega^k(M)$ and $\beta \in \Omega^{k+1}(M)$,
 
 $$
-\int_M \langle d\alpha, \beta\rangle_g\,\mathrm{vol}_g = \int_M \langle \alpha, \delta\beta\rangle_g\,\mathrm{vol}_g .
+\boxed{\;\int_M \langle d\alpha, \beta\rangle_g\,\mathrm{vol}_g = \int_M \langle \alpha, \delta\beta\rangle_g\,\mathrm{vol}_g\;} .
 $$
 
 That is, $\delta$ is the formal adjoint of $d$: the **integration by parts** on a manifold.
@@ -105,7 +105,7 @@ $$
 **Theorem (Hodge).** On a closed oriented Riemannian manifold the space $\mathcal H^k(M)$ is finite-dimensional, and every de Rham cohomology class has exactly one harmonic representative; the orthogonal decomposition
 
 $$
-\Omega^k(M) = \mathcal H^k(M) \oplus d\Omega^{k-1}(M) \oplus \delta\Omega^{k+1}(M)
+\boxed{\;\Omega^k(M) = \mathcal H^k(M) \oplus d\Omega^{k-1}(M) \oplus \delta\Omega^{k+1}(M)\;}
 $$
 
 holds, and $\mathcal H^k(M) \cong H^k_{dR}(M)$. The identity of the harmonic forms with the cohomology is the theorem of *Differential Forms and Stokes' Theorem*; the analysis that makes the decomposition an orthogonal decomposition of Hilbert spaces is *The L2 Adjoint of a Differential Operator* and *Partial Differential Equations*.
@@ -115,7 +115,7 @@ holds, and $\mathcal H^k(M) \cong H^k_{dR}(M)$. The identity of the harmonic for
 **Theorem (Weitzenböck).** On a Riemannian manifold the Laplace–de Rham operator differs from the connection Laplacian by a zeroth-order term:
 
 $$
-\Delta = \nabla^*\nabla + \mathcal{R},
+\boxed{\;\Delta = \nabla^*\nabla + \mathcal{R}\;},
 $$
 
 where $\nabla^*\nabla = -\sum_i\nabla_{e_i}\nabla_{e_i} + \cdots$ is the connection Laplacian on the forms, and $\mathcal R$ is an endomorphism of $\Lambda^\bullet T^*M$ built from the curvature of the Levi–Civita connection by the Weitzenböck construction; on functions $\mathcal R = 0$, and on $1$-forms $\mathcal R = \operatorname{Ric}$ up to the identification of $T^*M$ with $TM$ by the metric, so that $\Delta\alpha = \nabla^*\nabla\alpha + \operatorname{Ric}(\alpha^\sharp,\cdot)$ on the $1$-forms.

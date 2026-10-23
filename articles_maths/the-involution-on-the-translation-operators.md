@@ -30,7 +30,7 @@ and the right translation is $S_a f(x) = f(xa)$; the assignment $a \mapsto T_a$ 
 **Theorem.** The adjoint of the left translation is the left translation by the inverse,
 
 $$
-T_a^{*} = T_{a^{-1}} = T_a^{-1}, \qquad\text{and}\qquad S_a^{*} = S_{a^{-1}},
+\boxed{\;T_a^{*} = T_{a^{-1}} = T_a^{-1}, \qquad\text{and}\qquad S_a^{*} = S_{a^{-1}}\;},
 $$
 
 with respect to the invariant inner product of $L^2(G)$.
@@ -57,7 +57,7 @@ and it extends to the algebra they generate by linearity; when $\sigma$ is inner
 
 **Proposition.** The **inversion** $\iota(a) = a^{-1}$ induces the map $T_a \mapsto T_{a^{-1}} = T_a^{-1}$ on the translations, which is the **operator inversion**; it is an involution of the family, it reverses the composition law,
 $$
-\tau_{\iota}(T_aT_b) = T_{(ab)^{-1}} = T_{b^{-1}a^{-1}} = T_{b^{-1}}T_{a^{-1}} = \tau_{\iota}(T_b)\,\tau_{\iota}(T_a),
+\boxed{\;\tau_{\iota}(T_aT_b) = T_{(ab)^{-1}} = T_{b^{-1}a^{-1}} = T_{b^{-1}}T_{a^{-1}} = \tau_{\iota}(T_b)\,\tau_{\iota}(T_a)\;},
 $$
 and it is an automorphism of the family exactly when $G$ is abelian.
 
@@ -89,7 +89,7 @@ which is an involution, $C^2 = \mathrm{id}$.
 
 **Proposition.** The reversing symmetry swaps the left and the right translations,
 $$
-C\,T_a\,C = S_a, \qquad C\,S_a\,C = T_a,
+\boxed{\;C\,T_a\,C = S_a, \qquad C\,S_a\,C = T_a\;},
 $$
 because the inversion is an anti-automorphism; it is unitary when the bi-invariant measure exists ($G$ unimodular) and has $\lVert C\rVert = 1$ in general; and it intertwines the inversion on the translations, $C\,T_a = S_a\,C$.
 

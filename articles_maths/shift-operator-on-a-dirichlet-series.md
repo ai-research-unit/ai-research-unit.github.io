@@ -29,7 +29,7 @@ as operators on the formal series. On any Dirichlet series that converges somewh
 
 **Theorem.** On $\mathcal{H}=\ell^2$ the operator $\Sigma_t$ is diagonal, $\Sigma_t=\operatorname{diag}(n^{-t})$, with
 $$
-\|\Sigma_t\|_{\mathcal{H}}=1 \quad\text{for } \Re t\ge0,
+\boxed{\;\|\Sigma_t\|_{\mathcal{H}}=1 \quad\text{for } \Re t\ge0\;},
 $$
 and $\Sigma_t$ is a contraction for $\Re t\ge0$; it is unitary exactly for $t$ purely imaginary, in which case $\Sigma_{i\theta}=\operatorname{diag}(n^{-i\theta})$ and $\Sigma_{i\theta}^*=\Sigma_{-i\theta}$. The family $(\Sigma_t)_{\Re t\ge0}$ is a strongly continuous contraction semigroup whose generator is the closed unbounded operator
 $$
@@ -44,7 +44,7 @@ $$
 
 **Theorem.** On $\mathcal{H}=\ell^2$ the spectrum of the unit shift $\Sigma$ is
 $$
-\operatorname{spec}(\Sigma)=\overline{\{\,n^{-1}:f(n)\ne0\,\}}\cup\{0\},
+\boxed{\;\operatorname{spec}(\Sigma)=\overline{\{\,n^{-1}:f(n)\ne0\,\}}\cup\{0\}\;},
 $$
 and the spectrum of $\Sigma_t$ is the closure of $\{n^{-t}:f(n)\ne0\}$ together with $0$. These are the spectra of a diagonal operator, and they are countable with $0$ as the only accumulation point.
 
@@ -67,7 +67,7 @@ $$
 
 **Theorem.** For all $t$, $\ \mathcal{R}\Sigma_t\mathcal{R}=\Sigma_{-t}$: the reflection conjugates the shift by $t$ into the shift by $-t$. Equivalently, on the completed function,
 $$
-(\mathcal{R}\Sigma_t\mathcal{R}\Lambda_f)(s)=\Lambda_f(s-t).
+\boxed{\;(\mathcal{R}\Sigma_t\mathcal{R}\Lambda_f)(s)=\Lambda_f(s-t)\;}.
 $$
 
 **Proof.** $(\mathcal{R}\Sigma_t\mathcal{R}\Lambda)(s)=(\Sigma_t\mathcal{R}\Lambda)(1-s)=(\mathcal{R}\Lambda)(1-s+t)=\Lambda(1-(1-s+t))=\Lambda(s-t)=\Sigma_{-t}\Lambda(s)$. The computation uses only the two definitions.

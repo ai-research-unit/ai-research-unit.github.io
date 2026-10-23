@@ -24,7 +24,7 @@ $$
 **Proposition (composition laws).** For all $a, b, r, s \in E$,
 
 $$
-\Phi_{a,b}\Phi_{r,s} = \Phi_{ar,sb}, \qquad \Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s} = \Theta^{\alpha}_{a\alpha(r),\alpha(s)b} .
+\boxed{\;\Phi_{a,b}\Phi_{r,s} = \Phi_{ar,sb}, \qquad \Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s} = \Theta^{\alpha}_{a\alpha(r),\alpha(s)b}\;} .
 $$
 
 **Proof.** $\Phi_{a,b}\Phi_{r,s}(x) = a(rxs)b = (ar)x(sb) = \Phi_{ar,sb}(x)$. For the signed case, $\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s}(x) = a\alpha(r\alpha(x)s)b = a\alpha(s)\alpha(\alpha(x))\alpha(r)b = a\alpha(s)x\alpha(r)b$, using the multiplicativity of $\alpha$ and $\alpha^{2} = \mathrm{id}$, so the composite is the signed sandwich with the pair $(a\alpha(r), \alpha(s)b)$. This is the twisted form of the unsigned rule $(a, b)(r, s) = (ar, sb)$, and it reduces to it when $\alpha = \mathrm{id}$.
@@ -32,8 +32,8 @@ $$
 **Proposition (the signed sandwich is the unsigned one composed with $\alpha$).** For all $a, b$,
 
 $$
-\Theta^{\alpha}_{a,b} = \Phi_{a,b} \circ \alpha = \alpha \circ \Phi_{\alpha(a),\alpha(b)}, \qquad
-\Phi_{a,b} = \alpha \circ \Theta^{\alpha}_{\alpha(a),\alpha(b)} = \Theta^{\alpha}_{\alpha(a),\alpha(b)} \circ \alpha .
+\boxed{\;\Theta^{\alpha}_{a,b} = \Phi_{a,b} \circ \alpha = \alpha \circ \Phi_{\alpha(a),\alpha(b)}, \qquad
+\Phi_{a,b} = \alpha \circ \Theta^{\alpha}_{\alpha(a),\alpha(b)} = \Theta^{\alpha}_{\alpha(a),\alpha(b)} \circ \alpha\;} .
 $$
 
 **Proof.** $\Phi_{a,b}(\alpha(x)) = a\alpha(x)b = \Theta^{\alpha}_{a,b}(x)$, which is the first identity; $(\alpha \circ \Phi_{\alpha(a),\alpha(b)})(x) = \alpha(\alpha(a)x\alpha(b)) = a\alpha(x)b$ by the multiplicativity of $\alpha$, which is the second. Replacing $a, b$ by $\alpha(a), \alpha(b)$ in the first identity and composing with $\alpha$ gives the last, since $\alpha^{2} = \mathrm{id}$.
@@ -41,7 +41,7 @@ $$
 **Corollary (the sign on homogeneous elements).** If $x$ is homogeneous then
 
 $$
-\Theta^{\alpha}_{a,b}(x) = \varepsilon_{x}\,\Phi_{a,b}(x) ,
+\boxed{\;\Theta^{\alpha}_{a,b}(x) = \varepsilon_{x}\,\Phi_{a,b}(x)\;} ,
 $$
 
 so the signed sandwich differs from the unsigned one by the parity sign of the element acted on; in particular the two agree on the fixed part of $\alpha$ and are opposite on the negated part.

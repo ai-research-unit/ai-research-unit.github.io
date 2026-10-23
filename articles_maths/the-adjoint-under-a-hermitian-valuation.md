@@ -34,7 +34,7 @@ Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\s
 **Theorem (the unitary group is bounded).** Under a Hermitian valuation a unitary element $u$, with $u\sigma(u) = 1$, generates the norm form value $N(u) = 1$ and therefore has $2v(u) = 0$; for a real-valued valuation this gives $v(u) = 0$, so
 
 $$
-\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times .
+\boxed{\;\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times\;} .
 $$
 
 The unitary group is a subgroup of the units, it is closed when $N$ is continuous, and it is bounded.
@@ -54,7 +54,7 @@ The unitary group is a subgroup of the units, it is closed when $N$ is continuou
 **Theorem (the norm form as a map on the units).** The norm form is a map of the units into the units, $N : R^\times\to R^\times$, with $N(1) = 1$ and the identity
 
 $$
-N(uv) = u\,N(v)\,\sigma(u) ,
+\boxed{\;N(uv) = u\,N(v)\,\sigma(u)\;} ,
 $$
 
 so $N$ is multiplicative when the values commute with the parameters, in particular on the centre and on a commutative field; it is a homomorphism $R^\times\to (R^\times)^{\sigma}$ when $R$ is commutative, and it factors through the residue, $\bar N(\bar u) = \bar u\,\bar\sigma(\bar u)$, with the residue norm form of *Involutive Valued Fields*.
@@ -74,7 +74,7 @@ For a self-adjoint unit $x$ the norm is $x^2$, so the norm form is the obstructi
 **Theorem (the unitary action on the lattice).** The unitary group preserves the valuation ring and each ideal of the filtration,
 
 $$
-u\in \mathrm{U}(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u ,
+\boxed{\;u\in \mathrm{U}(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u\;} ,
 $$
 
 and acts by isometries of the form, $v(B(ux,uy)) = v(B(x,y))$; the induced action on the residue field is by isometries of the residue form, and the residue action is the reduction of the involution.

@@ -14,7 +14,7 @@ Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with inv
 **Proposition (the real form).** $A^+$ is a real linear subspace of $A$ closed under the involution, $A^-$ is the real subspace $iA^+$, and
 
 $$
-A = A^+ \oplus iA^+ , \qquad a = \tfrac12(a + a^*) + \tfrac i2(a - a^*) ,
+\boxed{\;A = A^+ \oplus iA^+ , \qquad a = \tfrac12(a + a^*) + \tfrac i2(a - a^*)\;} ,
 $$
 
 a direct sum of real vector spaces; the decomposition is unique and $A$ is the complexification of $A^+$.
@@ -42,7 +42,7 @@ a direct sum of real vector spaces; the decomposition is unique and $A$ is the c
 **Theorem (Vidav's characterisation).** Let $A$ be a unital Banach algebra with an isometric involution. An element $a \in A$ is self-adjoint if and only if
 
 $$
-\lVert \exp(ita)\rVert = 1 \qquad \text{for every } t \in \mathbb{R} .
+\boxed{\;\lVert \exp(ita)\rVert = 1 \qquad \text{for every } t \in \mathbb{R}\;} .
 $$
 
 The self-adjoint elements are therefore exactly the elements all of whose exponentials are isometries, and $a \in A^+$ implies $\sigma(a) \subseteq \mathbb{R}$.

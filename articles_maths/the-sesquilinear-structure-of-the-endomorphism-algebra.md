@@ -39,7 +39,7 @@ $$
 **Theorem (the adjoint is an anti-automorphism of order two).** For all $S,T\in E$ and all $\lambda\in R$,
 
 $$
-(ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T^{\dagger})^{\dagger}=T,\qquad (\lambda T)^{\dagger}=\varsigma(\lambda)\,T^{\dagger},\qquad \mathrm{id}^{\dagger}=\mathrm{id} .
+\boxed{\;(ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T^{\dagger})^{\dagger}=T,\qquad (\lambda T)^{\dagger}=\varsigma(\lambda)\,T^{\dagger},\qquad \mathrm{id}^{\dagger}=\mathrm{id}\;} .
 $$
 
 **Proof.** For the first, $\Phi(STu,v)=\Phi(Tu,S^{\dagger}v)=\Phi(u,T^{\dagger}S^{\dagger}v)$ shows that $T^{\dagger}S^{\dagger}$ satisfies the defining identity of $(ST)^{\dagger}$, and the adjoint is unique. For the second, read the defining identity with the roles of the two slots exchanged, $\Phi(Tv,u)=\Phi(v,T^{\dagger}u)$, and apply $\varsigma$; the sesqui-symmetry $\varsigma\bigl(\Phi(a,b)\bigr)=\Phi(b,a)$ turns the two sides into $\Phi(u,Tv)=\Phi(T^{\dagger}u,v)$, which is the defining identity of $(T^{\dagger})^{\dagger}$, so the two endomorphisms agree. For the third, $\Phi(\lambda Tu,v)=\lambda\,\Phi(Tu,v)=\lambda\,\Phi(u,T^{\dagger}v)$, and $\lambda\,\Phi(u,w)=\Phi\bigl(u,\varsigma(\lambda)w\bigr)$ by the second slot's rule, so $\varsigma(\lambda)T^{\dagger}$ is the adjoint of $\lambda T$. The last statement is $\Phi(u,v)=\Phi(u,\mathrm{id}\,v)$.
@@ -65,7 +65,7 @@ $$
 **Theorem (the parities and the unit laws).** For all $R,S,T\in E$ and all $\lambda\in R$,
 
 $$
-(\lambda S)\star T=\lambda\,(S\star T),\qquad S\star(\lambda T)=\varsigma(\lambda)\,(S\star T) ,
+\boxed{\;(\lambda S)\star T=\lambda\,(S\star T),\qquad S\star(\lambda T)=\varsigma(\lambda)\,(S\star T)\;} ,
 $$
 
 so $\star$ is a sesquilinear product in the sense of *The Sesquilinear Product*, $R$-linear in the first slot and $\varsigma$-semilinear in the second; and
@@ -95,7 +95,7 @@ so $\mathrm{id}$ is a right unit for $\star$, while the left unit law holds up t
 **Theorem (the adjoint-type involutions).** Let $U$ be a unitary endomorphism and let
 
 $$
-\sigma_{U}(T)=U\,T^{\dagger}\,U^{\dagger} .
+\boxed{\;\sigma_{U}(T)=U\,T^{\dagger}\,U^{\dagger}\;} .
 $$
 
 Then $\sigma_{U}$ is a $\varsigma$-semilinear map of $E$ of order two up to an inner $*$-automorphism,

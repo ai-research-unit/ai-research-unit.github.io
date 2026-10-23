@@ -106,7 +106,7 @@ $$
 then
 
 $$
-u(t) \le a\,\exp\Bigl(\int_{t_0}^{t}\beta(s)\,ds\Bigr) .
+\boxed{\;u(t) \le a\,\exp\Bigl(\int_{t_0}^{t}\beta(s)\,ds\Bigr)\;} .
 $$
 
 *Proof.* Put $v(t) = a + \int_{t_0}^t \beta u$; then $v \ge u \ge 0$ and $v'(t) = \beta(t)u(t) \le \beta(t)v(t)$, so $(v(t)\exp(-\int_{t_0}^{t}\beta))' \le 0$, and integrating gives $v(t) \le v(t_0)\exp(\int_{t_0}^{t}\beta) = a\,\exp(\int_{t_0}^{t}\beta)$.
@@ -182,7 +182,7 @@ $$
 **Theorem (variation of constants).** The solution of the inhomogeneous linear system $y' = A(t)y + b(t)$ with $y(t_0) = y_0$ is
 
 $$
-y(t) = \Phi(t)y_0 + \int_{t_0}^{t}\Phi(t)\Phi(s)^{-1}b(s)\,ds .
+\boxed{\;y(t) = \Phi(t)y_0 + \int_{t_0}^{t}\Phi(t)\Phi(s)^{-1}b(s)\,ds\;} .
 $$
 
 *Proof.* Write $y(t) = \Phi(t)u(t)$; the product rule and $\Phi' = A\Phi$ give $\Phi u' = b$, so $u' = \Phi^{-1}b$ and $u(t) = y_0 + \int_{t_0}^t \Phi(s)^{-1}b(s)\,ds$.
@@ -302,7 +302,7 @@ and the boundary term vanishes because both $y$ and $z$ satisfy the separated co
 **Theorem (Sturm–Liouville).** For a regular Sturm–Liouville problem the eigenvalues are real, form an increasing sequence $\lambda_1 < \lambda_2 < \cdots$ with $\lambda_n \to \infty$, and to each eigenvalue corresponds a one-dimensional eigenspace. The eigenfunctions $y_n$, normalised in $L^2((a,b),w\,dx)$, are orthonormal and complete: every $f \in L^2((a,b),w\,dx)$ has an expansion
 
 $$
-f = \sum_{n\ge1} c_n y_n, \qquad c_n = \int_a^b f(x)\,y_n(x)\,w(x)\,dx ,
+\boxed{\;f = \sum_{n\ge1} c_n y_n, \qquad c_n = \int_a^b f(x)\,y_n(x)\,w(x)\,dx\;} ,
 $$
 
 convergent in $L^2$ and uniformly absolutely convergent when $f$ is continuous with $f'$ of bounded variation satisfying the boundary conditions. The eigenvalues obey the **asymptotic law**

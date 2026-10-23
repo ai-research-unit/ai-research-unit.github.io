@@ -22,7 +22,7 @@ and the reversal $\flat = -{}^{*}$. The involution ${}^{*}$ is the dagger of the
 **Proposition (the dagger is positive here).** The scalar form of the dagger is positive definite,
 
 $$
-\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr) = |Q_{1t}|^{2} + |Q_{1x}|^{2} + |Q_{1y}|^{2} + |Q_{1z}|^{2} > 0 \quad (\tilde{Q}_1 \neq 0),
+\boxed{\;\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr) = |Q_{1t}|^{2} + |Q_{1x}|^{2} + |Q_{1y}|^{2} + |Q_{1z}|^{2} > 0 \quad (\tilde{Q}_1 \neq 0)\;},
 $$
 
 so ${}^{*}$ is a positive involution of $\mathbb{B}$ and $\mathbb{B}$ is in the good case of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.
@@ -36,7 +36,7 @@ so ${}^{*}$ is a positive involution of $\mathbb{B}$ and $\mathbb{B}$ is in the 
 **Proposition (the sandwich is the dagger sandwich of the corpus).** The operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* specialized to $\mathbb{B}$ is the map
 
 $$
-\Theta_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*} = \mathrm{H}_{\tilde{Q}_1}(x)
+\boxed{\;\Theta_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*} = \mathrm{H}_{\tilde{Q}_1}(x)\;}
 $$
 
 of *Biquaternion Rotations and Lorentz Transformations*, §*The Dagger Sandwich*. Its two general laws read in this algebra as the composition
@@ -60,8 +60,8 @@ which is $\Theta_{ax} = a\,\sigma(a)\Theta_x$ with $\sigma$ the coefficient conj
 **Theorem (the sandwich preserves the sectors).** For every unit $\tilde{Q}_1$, the sandwich maps the Hermitian subspace to itself and the anti-Hermitian subspace to itself:
 
 $$
-x^{\dagger} = x \ \Longrightarrow \ \mathrm{H}_{\tilde{Q}_1}(x)^{\dagger} = \mathrm{H}_{\tilde{Q}_1}(x), \qquad
-x^{\dagger} = -x \ \Longrightarrow \ \mathrm{H}_{\tilde{Q}_1}(x)^{\dagger} = -\mathrm{H}_{\tilde{Q}_1}(x).
+\boxed{\;x^{\dagger} = x \ \Longrightarrow \ \mathrm{H}_{\tilde{Q}_1}(x)^{\dagger} = \mathrm{H}_{\tilde{Q}_1}(x), \qquad
+x^{\dagger} = -x \ \Longrightarrow \ \mathrm{H}_{\tilde{Q}_1}(x)^{\dagger} = -\mathrm{H}_{\tilde{Q}_1}(x)\;}.
 $$
 
 **Proof.** $(\tilde{Q}x\tilde{Q}_1^{*})^{\dagger} = \tilde{Q}_1^{\dagger{}^{*}}x^{\dagger}\tilde{Q}_1^{*} = \tilde{Q}x\tilde{Q}_1^{*}$ when $x^{\dagger} = x$, and the same computation with a sign in the anti-Hermitian case; this is the general sector-preservation of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* instantiated at ${}^{*}$.

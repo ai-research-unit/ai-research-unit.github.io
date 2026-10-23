@@ -60,9 +60,7 @@ and the interval is $\mathrm{Sc}(\mathrm dA^2)$.
 
 **Theorem.** The interval is diagonal in the four differentials:
 
-$$
-\mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2\hat\imath_0^2 - \tfrac19\bigl((\mathrm da_1)^2\imath_1^2 + (\mathrm da_2)^2\imath_2^2 + (\mathrm da_3)^2\imath_3^2\bigr).
-$$
+$$ \boxed{\; \mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2\hat\imath_0^2 - \tfrac19\bigl((\mathrm da_1)^2\imath_1^2 + (\mathrm da_2)^2\imath_2^2 + (\mathrm da_3)^2\imath_3^2\bigr) \;} .$$
 
 The four squared frame elements $\hat\imath_0^2,\hat\imath_1^2,\hat\imath_2^2,\hat\imath_3^2$, each multiplied by the square of the weight of its component, are the coefficients of the **metric** of the frame, and the interval is the quadratic form of that metric on the coefficient differentials; the metric is the diagonal form with entries $g_{00}=\hat\imath_0^2$ and $g_{kk}=\tfrac19\hat\imath_k^2=-\tfrac19\imath_k^2$.
 
@@ -104,9 +102,7 @@ $$
 
 **Theorem (the split).** The differential of a Riemannian quaternion is the sum of two parts, one from the coefficients and one from the frame:
 
-$$
-\mathrm dA = \underbrace{\sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu}_{\text{coefficient part}} + \underbrace{\sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu}_{\text{frame part}}.
-$$
+$$ \boxed{\; \mathrm dA = \underbrace{\sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu}_{\text{coefficient part}} + \underbrace{\sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu}_{\text{frame part}} \;} .$$
 
 *Proof.* The differential is linear over the sum, so it is the sum of the differentials of the four terms, and each is the product rule displayed. Both parts are real linear combinations of basis elements, hence elements of the algebra.
 
@@ -168,9 +164,7 @@ on the region $r>\kappa$. The frame is dynamic: it tends to the constant frame a
 
 By the corollary of the interval theorem, the interval of a displacement is
 
-$$
-\mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2\Bigl(1-\frac{\kappa}{r}\Bigr) - \frac{1}{9\bigl(1-\kappa/r\bigr)}\bigl((\mathrm da_1)^2+(\mathrm da_2)^2+(\mathrm da_3)^2\bigr),
-$$
+$$ \boxed{\; \mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2\Bigl(1-\frac{\kappa}{r}\Bigr) - \frac{1}{9\bigl(1-\kappa/r\bigr)}\bigl((\mathrm da_1)^2+(\mathrm da_2)^2+(\mathrm da_3)^2\bigr) \;} ,$$
 
 and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ with the frame of the display. The source reads this frame as the one of a central mass, with $\kappa$ the Schwarzschild radius, and the ratio of the scalar coefficient to the vector coefficients as the gravitational redshift; the reading is recorded as the source's. The interval of the display is the interval of the frame, and it carries the factor $\tfrac19$ of the source's weights in its vector part.
 

@@ -30,8 +30,8 @@ for all smooth forms, the identity of integration by parts; the **$L^{2}$ adjoin
 **Theorem.** For the exterior derivative $d:\Omega^{k}\to\Omega^{k+1}$ the formal adjoint is the **codifferential** $d^{*}:\Omega^{k+1}\to\Omega^{k}$,
 
 $$
-(d\alpha,\beta)=(\alpha,d^{*}\beta),\qquad
-d^{*}=(-1)^{k}\star^{-1}d\star
+\boxed{\;(d\alpha,\beta)=(\alpha,d^{*}\beta),\qquad
+d^{*}=(-1)^{k}\star^{-1}d\star\;}
 $$
 
 up to the degree and dimension sign, and the formal adjoints of $d$ and $d^{*}$ are mutual: $(d^{*})^{*}=d$ on the appropriate domains. On a closed manifold the formal adjoint and the $L^{2}$ adjoint coincide on the smooth forms.
@@ -74,9 +74,9 @@ the signature of the manifold, by *The Signature Operator*.
 **Theorem.** The adjoint operation and the chirality are related by
 
 $$
-(D^{+})^{*}=D^{-},\qquad
+\boxed{\;(D^{+})^{*}=D^{-},\qquad
 \tau D \tau^{-1}=-D,\qquad
-\tau (D^{+})^{*}\tau^{-1}=D^{+},
+\tau (D^{+})^{*}\tau^{-1}=D^{+}\;},
 $$
 
 so that conjugation by the chirality sends the positive half of the operator to the negative of the adjoint of its own negative half; equivalently, the chirality exchanges the two halves of the self-adjoint operator and conjugates the index problem into its dual. The self-adjointness is therefore the statement that the index of the positive half and the index of the negative half are opposite, $\operatorname{ind}D^{+}=-\operatorname{ind}D^{-}$, so that the index of the self-adjoint operator is well defined as the signature, with no dependence on the choice of the half.
@@ -115,7 +115,7 @@ so the star, normalized by the degree-dependent phase, intertwines the exterior 
 - the chirality acts on $V$ with the trace the index, and the non-middle harmonic forms cancel in that trace: the chirality maps $\mathcal{H}^{j}$ to $\mathcal{H}^{n-j}$, so its trace on the sum $\mathcal{H}^{j}\oplus\mathcal{H}^{n-j}$ is $0$ for $j\neq n-j$, and only the middle harmonic forms contribute, with
 
 $$
-\operatorname{tr}(\tau\mid V)=\operatorname{tr}(\tau\mid\mathcal{H}^{2k})=b_{+}-b_{-}=\sigma(M),
+\boxed{\;\operatorname{tr}(\tau\mid V)=\operatorname{tr}(\tau\mid\mathcal{H}^{2k})=b_{+}-b_{-}=\sigma(M)\;},
 $$
 
 the **signature** of the middle intersection form.

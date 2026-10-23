@@ -17,7 +17,7 @@ and the space of the **real forms** is its fixed space, $\mathcal{S}_k(\Gamma_0(
 
 **Theorem.** The coefficient conjugation is an anti-linear involution of $\mathcal{S}_k(\Gamma_0(N))$, and it is an isometry of the Petersson form:
 $$
-\iota^2=\mathrm{id},\qquad \langle\iota f,\iota g\rangle=\overline{\langle f,g\rangle} .
+\boxed{\;\iota^2=\mathrm{id},\qquad \langle\iota f,\iota g\rangle=\overline{\langle f,g\rangle}\;} .
 $$
 The space of the cusp forms is the complexification of the space of the real forms.
 
@@ -27,7 +27,7 @@ The space of the cusp forms is the complexification of the space of the real for
 
 **Theorem (the conjugate symmetry).** For every $n\ge1$ the Hecke operator commutes with the coefficient conjugation,
 $$
-\iota\,T_n\,\iota=T_n ,
+\boxed{\;\iota\,T_n\,\iota=T_n\;} ,
 $$
 and consequently the adjoint of $T_n$ satisfies
 $$
@@ -45,7 +45,7 @@ where the bar is the entrywise conjugation in a basis of forms with real $q$-exp
 
 **Theorem.** The conjugate symmetry holds for the good Hecke operators and for the Atkin–Lehner involutions,
 $$
-\iota\,T_n\,\iota=T_n\quad(\gcd(n,N)=1),\qquad \iota\,w_d\,\iota=w_d ,
+\boxed{\;\iota\,T_n\,\iota=T_n\quad(\gcd(n,N)=1),\qquad \iota\,w_d\,\iota=w_d\;} ,
 $$
 and it intertwines the adjoint and the conjugate:
 $$

@@ -47,7 +47,9 @@ $$
 **Theorem (the filled Julia set is a product).** The filled Julia set of the split-biquaternion family is the product of the two quaternion filled Julia sets,
 
 $$
-K_{\tilde Q_1}=K_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}},
+\boxed{\;
+K_{\tilde Q_1}=K_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}
+\;},
 $$
 
 under the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, and the orbit of $\tilde Q$ is bounded in the Euclidean norm if and only if both quaternion orbits are bounded.
@@ -65,7 +67,9 @@ under the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, 
 **Theorem (the Julia set of the product).** The Julia set of the split-biquaternion family is the boundary of the product,
 
 $$
-J_{\tilde Q_1}=\bigl(J_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}\bigr)\cup\bigl(K_{\tilde Q_{1,+}}\times J_{\tilde Q_{1,-}}\bigr),
+\boxed{\;
+J_{\tilde Q_1}=\bigl(J_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}\bigr)\cup\bigl(K_{\tilde Q_{1,+}}\times J_{\tilde Q_{1,-}}\bigr)
+\;},
 $$
 
 and it is non-empty whenever one of the two quaternion Julia sets is non-empty.
@@ -99,7 +103,9 @@ $$
 in agreement with the quaternion convention (*The Quaternion Mandelbrot Set*). Then it is the product of the two quaternion connectedness loci,
 
 $$
-\mathcal{M}_{\mathbb{H}_{\mathbb{D}}}=\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}} ,
+\boxed{\;
+\mathcal{M}_{\mathbb{H}_{\mathbb{D}}}=\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}
+\;},
 $$
 
 identified with the pairs $(\tilde Q_{1,+},\tilde Q_{1,-})$. Separately, the filled Julia set $K_{\tilde Q_1}=K_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}$ is connected if and only if both quaternion filled Julia sets $K_{\tilde Q_{1,\pm}}$ are.

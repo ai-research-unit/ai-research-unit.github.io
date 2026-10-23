@@ -16,7 +16,7 @@ The article assumes *Unitary Geometry over a Field with Involution* and *Hermiti
 **Definition.** A **local field** is a field $K$ with a nontrivial absolute value $|\cdot|$ for which $K$ is complete and locally compact; the local fields are the real numbers $\mathbb{R}$, the complex numbers $\mathbb{C}$, the finite extensions of the $p$-adic numbers $\mathbb{Q}_p$, and the finite extensions of the Laurent series field $\mathbb{F}_p((t))$. A local field is **Archimedean** when it is $\mathbb{R}$ or $\mathbb{C}$ and **non-Archimedean** otherwise; a non-Archimedean local field has the **ring of integers**
 
 $$
-\mathcal{O}_K = \{x \in K : |x| \leq 1\} ,
+\boxed{\;\mathcal{O}_K = \{x \in K : |x| \leq 1\}\;} ,
 $$
 
 a discrete valuation ring with the unique maximal ideal $\mathfrak{p} = \{x : |x| < 1\}$ and the finite residue field $k = \mathcal{O}_K/\mathfrak{p}$.
@@ -32,7 +32,7 @@ a discrete valuation ring with the unique maximal ideal $\mathfrak{p} = \{x : |x
 **Theorem.** For a nondegenerate Hermitian form $H$ over a non-Archimedean local field with an involution, the **discriminant** is the class
 
 $$
-\operatorname{disc}(H) = \det(H) \in K_0^\times / N(K^\times)
+\boxed{\;\operatorname{disc}(H) = \det(H) \in K_0^\times / N(K^\times)\;}
 $$
 
 and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate Hermitian forms are isometric if and only if they have the same rank, the same discriminant and the same Hasse invariant, and every compatible triple is realised. Over the real field the two invariants are replaced by the **signature** $(n,m)$, and over the complex field with the conjugation the form is classified by the signature as well.

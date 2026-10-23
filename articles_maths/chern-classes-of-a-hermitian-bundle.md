@@ -17,7 +17,7 @@ Let $E \to M$ be a complex vector bundle of rank $k$ with a Hermitian metric $h$
 **Proposition (the curvature is skew-Hermitian).** With respect to the metric $h$, the curvature of the Chern connection satisfies
 
 $$
-\Theta^* = -\Theta, \qquad \text{equivalently} \qquad H\,\Theta + \Theta^*H = 0 \ \text{ in a holomorphic frame},
+\boxed{\;\Theta^* = -\Theta, \qquad \text{equivalently} \qquad H\,\Theta + \Theta^*H = 0 \ \text{ in a holomorphic frame}\;},
 $$
 
 so the matrix valued $2$-form $\Theta$ is skew-Hermitian, and $\frac{i}{2\pi}\Theta$ is Hermitian.
@@ -53,7 +53,7 @@ The **total Chern form** is $c(\Theta) = \det(I_k + \frac{i}{2\pi}\Theta)$, and 
 **Proposition.** Let $L$ be a holomorphic line bundle with a Hermitian metric $h$, and let $\Theta$ be the curvature of its Chern connection. Then in a holomorphic frame
 
 $$
-\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h, \qquad c_1(L) = \Bigl[\frac{i}{2\pi}\Theta\Bigr] = \Bigl[\frac{i}{2\pi}\bar\partial\partial\log h\Bigr],
+\boxed{\;\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h, \qquad c_1(L) = \Bigl[\frac{i}{2\pi}\Theta\Bigr] = \Bigl[\frac{i}{2\pi}\bar\partial\partial\log h\Bigr]\;},
 $$
 
 a real closed $(1,1)$-form, and its cohomology class is the first Chern class of $L$.
@@ -77,7 +77,7 @@ where the $x_j$ are the eigenvalues of $\frac{i}{2\pi}\Theta$; the total Chern c
 **Proposition.** The Chern character is additive and multiplicative,
 
 $$
-\mathrm{ch}(E \oplus F) = \mathrm{ch}(E) + \mathrm{ch}(F), \qquad \mathrm{ch}(E \otimes F) = \mathrm{ch}(E)\,\mathrm{ch}(F),
+\boxed{\;\mathrm{ch}(E \oplus F) = \mathrm{ch}(E) + \mathrm{ch}(F), \qquad \mathrm{ch}(E \otimes F) = \mathrm{ch}(E)\,\mathrm{ch}(F)\;},
 $$
 
 for Hermitian bundles with the direct-sum and tensor-product metrics, and it is unchanged by the dual, $\mathrm{ch}(E^*) = \mathrm{ch}(E)$ up to the grading; the classes in the two displays are the topological Chern characters of *Characteristic Classes*, written with the Hermitian representatives.

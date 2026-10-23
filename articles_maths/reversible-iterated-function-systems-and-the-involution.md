@@ -30,7 +30,7 @@ The indices with $\rho(i)=i$ are **fixed branches**; the pairs $\{i,\rho(i)\}$ w
 
 **Theorem (the coding intertwines the involution).** Let $\pi:\partial\mathcal{T}\to\Lambda$ be the coding map of the iterated function system, and let $R^{\mathrm{flip}}(x_1x_2\cdots)=\rho(x_1)\rho(x_2)\cdots$ be the **letterwise flip** of the boundary. Then
 $$
-R\circ\pi=\pi\circ R^{\mathrm{flip}} ,
+\boxed{\;R\circ\pi=\pi\circ R^{\mathrm{flip}}\;} ,
 $$
 so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.
 
@@ -44,11 +44,11 @@ so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.
 
 **Theorem (the reversal commutes with the limit map).** For a reversible self-similar group the limit map commutes with the involution,
 $$
-R\circ\varphi=\varphi\circ R ,
+\boxed{\;R\circ\varphi=\varphi\circ R\;} ,
 $$
 the exchange of the inverse branches is $R\circ\sigma_x=\sigma_{\rho(x)}\circ R$, and the time-reversal involution conjugates the transfer operator with the permuted one: with $L_\varphi$ the transfer operator of the previous article and $P_\rho f=f\circ R$ the operator of the involution,
 $$
-P_\rho\,L_\varphi\,P_\rho=L_\varphi .
+\boxed{\;P_\rho\,L_\varphi\,P_\rho=L_\varphi\;} .
 $$
 
 *Proof.* On the boundary the letterwise flip commutes with the shift, so $R\varphi=\varphi R$ by the coding. The branch relation follows by taking the inverses: $(R\sigma_x)^{-1}=\sigma_x^{-1}R=\varphi|_{T_x}R$ and $(\sigma_{\rho(x)}R)^{-1}=R^{-1}\varphi|_{T_{\rho(x)}}=R\varphi|_{T_{\rho(x)}}$; the two agree because $R$ maps $T_{\rho(x)}$ to $T_x$. For the transfer operator, $P_\rho L_\varphi P_\rho f(x)=\sum_{\varphi(y)=Rx}d(y)f(Ry)=\sum_{\varphi(Ry')=Rx}d(Ry')f(Ry')=\sum_{\varphi(y')=x}d(y')f(y')$ where the change of variables $y=Ry'$ uses $\varphi R=R\varphi$ and the invariance of the local degree under $R$; this is $L_\varphi f(x)$.

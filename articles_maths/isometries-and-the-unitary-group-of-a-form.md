@@ -19,7 +19,7 @@ The group is the stabiliser of the form under congruence (*Congruence and the St
 **Proposition (the equation of an isometry).** Let $T$ admit the adjoint $T^{*}$. Then
 
 $$
-T \in \operatorname{Iso}(A,h) \iff T^{*}T = 1 .
+\boxed{\;T \in \operatorname{Iso}(A,h) \iff T^{*}T = 1\;} .
 $$
 
 **Proof.** $h(Tx, Ty) = h(x, T^{*}Ty)$ for every pair by the definition of the adjoint, and $h(x,y) = h(x, T^{*}Ty)$ for every pair iff $h(x, (T^{*}T - 1)y) = 0$ for every $x, y$; the nonsingularity of $h$ makes this equivalent to $T^{*}T = 1$.
@@ -27,7 +27,7 @@ $$
 **Corollary (the finite-dimensional case).** Over a field and in finite dimension with $h$ non-degenerate, every isometry is invertible: if $Tx = 0$ then $h(x,y) = h(Tx,Ty) = 0$ for every $y$, and non-degeneracy gives $x = 0$, so $T$ is injective and hence bijective. Then
 
 $$
-\mathrm{U}(A,h) = \{T : T^{*}T = 1\} = \{T : TT^{*} = 1\} .
+\boxed{\;\mathrm{U}(A,h) = \{T : T^{*}T = 1\} = \{T : TT^{*} = 1\}\;} .
 $$
 
 Over a general ring the implication fails — an injective endomorphism of a free module of finite rank need not be surjective — and the group is the set of the invertible isometries, which is the reading of the topological article *Unitary and Isometric Operators of the Form* in the complete case, where the unilateral shift is isometric without being unitary.
@@ -47,7 +47,7 @@ $$
 **Proposition (the determinant).** Over a field, for $T \in \mathrm{U}(A,h)$ the determinant satisfies
 
 $$
-\det(T)\,\varsigma(\det(T)) = 1 .
+\boxed{\;\det(T)\,\varsigma(\det(T)) = 1\;} .
 $$
 
 **Proof.** Taking determinants in $T^{*}T = 1$ and using that the adjoint is $\varsigma$-semilinear, $\det(T^{*}) = \varsigma(\det(T))$; the determinant of the identity is $1$.

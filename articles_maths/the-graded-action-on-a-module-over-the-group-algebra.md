@@ -30,7 +30,7 @@ satisfying $a\cdot(b\cdot m) = (a*b)\cdot m$, with the **homogeneity** $\mathcal
 **Theorem (the two descriptions of homogeneity).** A bounded module action of the graded group algebra $\mathcal{A}$ on $M = M^+\oplus M^-$ is homogeneous if and only if
 
 $$
-\varepsilon\,(a\cdot \varepsilon\,m) = \alpha(a)\cdot m \qquad \text{for all } a\in\mathcal{A},\ m\in M ,
+\boxed{\;\varepsilon\,(a\cdot \varepsilon\,m) = \alpha(a)\cdot m \qquad \text{for all } a\in\mathcal{A},\ m\in M\;} ,
 $$
 
 equivalently $\varepsilon\,(a\cdot)\,\varepsilon = \alpha(a)\cdot$ on $M$ for every $a$. When this holds, the assignment
@@ -46,7 +46,7 @@ defines a second bounded module action of $\mathcal{A}$ on $M$, the **$\alpha$-t
 **Corollary (the sign rule).** The grading involution interchanges the two actions,
 
 $$
-\varepsilon\,(a\cdot_\alpha m) = a\cdot \varepsilon\,m, \qquad \varepsilon\,(a\cdot m) = a\cdot_\alpha \varepsilon\,m ,
+\boxed{\;\varepsilon\,(a\cdot_\alpha m) = a\cdot \varepsilon\,m, \qquad \varepsilon\,(a\cdot m) = a\cdot_\alpha \varepsilon\,m\;} ,
 $$
 
 so the twisted action is the given action transported by $\varepsilon$; in particular the two actions have the same operator norms and the same invariant subspaces under $\varepsilon$.
@@ -58,7 +58,7 @@ so the twisted action is the given action transported by $\varepsilon$; in parti
 **Theorem (when the two actions agree).** The homogeneous action and its $\alpha$-twist coincide, $a\cdot_\alpha m = a\cdot m$ for all $a, m$, if and only if the odd part of the algebra acts trivially,
 
 $$
-\mathcal{A}^-\cdot M = 0 ,
+\boxed{\;\mathcal{A}^-\cdot M = 0\;} ,
 $$
 
 and then the action factors through the even quotient $\mathcal{A}/\mathcal{A}^-$. In particular, if $\alpha = \mathrm{id}$ the two actions are equal for every module.

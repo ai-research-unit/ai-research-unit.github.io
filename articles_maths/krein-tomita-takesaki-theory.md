@@ -13,7 +13,7 @@ The modular data itself — the Tomita operator, the $J$-modular operator and th
 **Definition.** Let $\mathcal{M}$ be a Krein–von Neumann algebra on $K$ with a modular vector $\xi$, $J$-modular operator $\Delta$ and $J$-modular conjugation $\jmath$, in the sense of *The Indefinite Modular Operator*. The **$J$-modular automorphism group** is
 
 $$
-\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it} .
+\boxed{\;\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it}\;} .
 $$
 
 **Theorem ($J$-modular group).** $\sigma$ is a one-parameter group of $J$-automorphisms of $\mathcal{M}$: each $\sigma_t$ is an algebra automorphism of $\mathcal{M}$, is compatible with the indefinite adjoint, $\sigma_t(x^{\dagger}) = \sigma_t(x)^{\dagger}$, and fixes the fundamental symmetry, $\sigma_t(J) = J$; the family is strongly continuous in the definite topology of $J$.
@@ -33,7 +33,7 @@ $$
 **Theorem (conjugation maps the algebra to its commutant).** With the notation above,
 
 $$
-\jmath\,\mathcal{M}\,\jmath = \mathcal{M}^{c}, \qquad \jmath\,\Delta\,\jmath = \Delta^{-1}, \qquad \jmath\,J\,\jmath = J .
+\boxed{\;\jmath\,\mathcal{M}\,\jmath = \mathcal{M}^{c}, \qquad \jmath\,\Delta\,\jmath = \Delta^{-1}, \qquad \jmath\,J\,\jmath = J\;} .
 $$
 
 So the $J$-modular conjugation is an anti-isomorphism of the algebra onto its commutant, it inverts the $J$-modular operator, and it commutes with the fundamental symmetry.

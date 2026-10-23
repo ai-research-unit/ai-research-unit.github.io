@@ -43,7 +43,7 @@ quaternionic case, and positive definite, $(s,s)>0$ for $s\neq0$.
 adjoint to the action of the conjugate element:
 
 $$
-(x\cdot s,\,t) = (s,\,x^{*}\cdot t) \qquad x\in A,\ s,t\in\mathcal{S} ,
+\boxed{\;(x\cdot s,\,t) = (s,\,x^{*}\cdot t) \qquad x\in A,\ s,t\in\mathcal{S}\;} ,
 $$
 
 equivalently $\rho(x)^{\dagger}=\rho(x^{*})$ for the representation $\rho=c$ of the action.
@@ -114,7 +114,7 @@ generators and the bounded functions and the module is the space of sections.
 multiplication $c(x)$ has adjoint $c(x^{*})$:
 
 $$
-c(x)^{\dagger} = c(x^{*}) , \qquad x\in A .
+\boxed{\;c(x)^{\dagger} = c(x^{*}) , \qquad x\in A\;} .
 $$
 
 In particular the multiplication by a generator is skew-adjoint and the multiplication by a unit
@@ -130,7 +130,7 @@ $D=\sum_\mu c(e_\mu)\partial/\partial x_\mu$ has formal adjoint $D^{\dagger}=-\b
 sections, and for sections on a bounded domain with smooth boundary,
 
 $$
-\langle Df,g\rangle-\langle f,D^{\dagger}g\rangle = \int_{\partial\Omega}\bigl(c(\nu_B)f,g\bigr)\,dS ,
+\boxed{\;\langle Df,g\rangle-\langle f,D^{\dagger}g\rangle = \int_{\partial\Omega}\bigl(c(\nu_B)f,g\bigr)\,dS\;} ,
 $$
 
 the boundary term being the conormal pairing of *The Cauchy Integral Operator*.

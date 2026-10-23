@@ -267,8 +267,7 @@ $$
 
 **Theorem (Mean Value Theorem).** If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with
 
-$$
-\frac{df}{dx}(c) = \frac{f(b) - f(a)}{b - a}.
+$$ \boxed{\;\frac{df}{dx}(c) = \frac{f(b) - f(a)}{b - a}\;}.
 $$
 
 **Proof.** Apply Rolle to $g(c) = f(c) - \frac{f(b) - f(a)}{b - a}(c - a)$.
@@ -281,8 +280,7 @@ $$
 
 **Theorem (Taylor).** If $f$ is $n$ times differentiable on an interval containing $a$ and $b$, with $f^{(n)}$ continuous on the interval between them, then
 
-$$
-f(b) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (b - a)^k + R_n(b),
+$$ \boxed{\;f(b) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (b - a)^k + R_n(b)\;},
 $$
 
 where the remainder is
@@ -339,8 +337,7 @@ then $F$ is differentiable on $(a, b)$ and $F' = f$.
 
 **Theorem (Fundamental Theorem of Calculus, II).** If $f$ is Riemann integrable on $[a, b]$ and $F$ is an antiderivative of $f$ on $[a, b]$, then
 
-$$
-\int_a^b f = F(b) - F(a).
+$$ \boxed{\;\int_a^b f = F(b) - F(a)\;}.
 $$
 
 ### Properties of the Integral

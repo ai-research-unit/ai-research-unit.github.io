@@ -137,7 +137,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 **Definition.** Let $F : \mathcal{C} \to \mathcal{D}$ and $G : \mathcal{D} \to \mathcal{C}$ be functors. $F$ is **left adjoint** to $G$, written $F \dashv G$, if there is a bijection
 
 $$
-\mathcal{D}(F(C), D) \cong \mathcal{C}(C, G(D))
+\boxed{\;\mathcal{D}(F(C), D) \cong \mathcal{C}(C, G(D))\;}
 $$
 
 for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ and in $D$. The functor $G$ is the **right adjoint** of $F$.
@@ -159,9 +159,9 @@ for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ an
 **Theorem (triangular identities).** With the notation above, the composites
 
 $$
-F \xrightarrow{\ F\eta\ } F \circ G \circ F \xrightarrow{\ \varepsilon F\ } F,
+\boxed{\;F \xrightarrow{\ F\eta\ } F \circ G \circ F \xrightarrow{\ \varepsilon F\ } F,
 \qquad
-G \xrightarrow{\ \eta G\ } G \circ F \circ G \xrightarrow{\ G\varepsilon\ } G
+G \xrightarrow{\ \eta G\ } G \circ F \circ G \xrightarrow{\ G\varepsilon\ } G\;}
 $$
 
 are the identities of $F$ and of $G$. Conversely, a pair of natural transformations $\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow G \circ F$ and $\varepsilon : F \circ G \Rightarrow \mathrm{id}_{\mathcal{D}}$ satisfying the two identities makes $F$ left adjoint to $G$.
@@ -181,7 +181,7 @@ The unit and counit are the useful form of an adjunction: the unit is the insert
 **Theorem (Yoneda lemma).** For a locally small category $\mathcal{C}$, an object $A$ and a presheaf $F : \mathcal{C}^{\mathrm{opp}} \to \mathbf{Set}$, the map
 
 $$
-[\mathcal{C}^{\mathrm{opp}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A),
+\boxed{\;[\mathcal{C}^{\mathrm{opp}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A)\;},
 $$
 
 is a bijection, natural in $A$ and in $F$.

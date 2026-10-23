@@ -95,7 +95,7 @@ for $X$ connected and nonempty, the splitting being given by $n\mapsto n[1]$ wit
 **Theorem (Swan).** Let $X$ be a compact Hausdorff space and let $C(X)$ be the ring of continuous complex functions. The functor $E\mapsto\Gamma(X,E)$ is an equivalence between the category of vector bundles over $X$ and the category of finitely generated projective $C(X)$-modules, and it induces an isomorphism
 
 $$
-K^0(X) \;\cong\; K_0\bigl(C(X)\bigr) ,
+\boxed{\;K^0(X) \;\cong\; K_0\bigl(C(X)\bigr)\;} ,
 $$
 
 where $K_0$ of a ring is the Grothendieck group of its finitely generated projective modules of *K-Theory of Rings*.
@@ -149,7 +149,7 @@ the **winding number** of $g$; so the isomorphism classes of complex line bundle
 **Theorem (Bott periodicity; standard).** Let $X$ be a based compact space. There is a natural isomorphism
 
 $$
-\beta : K^{0}_{\mathrm{red}}(X) \;\longrightarrow\; K^{0}_{\mathrm{red}}(S^2X) , \qquad K^{0}_{\mathrm{red}}(S^2X)\cong K^{0}_{\mathrm{red}}(X),
+\boxed{\;\beta : K^{0}_{\mathrm{red}}(X) \;\longrightarrow\; K^{0}_{\mathrm{red}}(S^2X) , \qquad K^{0}_{\mathrm{red}}(S^2X)\cong K^{0}_{\mathrm{red}}(X)\;},
 $$
 
 and consequently the groups $K^{-n}$ are periodic of period two, $K^{-n-2}(X)\cong K^{-n}(X)$ for all $n \geq 0$. The **Bott class** is the generator
@@ -207,7 +207,7 @@ which is an action because $\exp(2\pi in(x+m')) = \exp(2\pi inx)$ for integers $
 **Theorem (six-term exact sequence).** For a compact Hausdorff pair $(X,Y)$ with $Y$ closed, there is a six-term exact sequence
 
 $$
-K^0(X,Y) \longrightarrow K^0(X) \longrightarrow K^0(Y) \xrightarrow{\ \partial\ } K^1(X,Y) \longrightarrow K^1(X) \longrightarrow K^1(Y) ,
+\boxed{\;K^0(X,Y) \longrightarrow K^0(X) \longrightarrow K^0(Y) \xrightarrow{\ \partial\ } K^1(X,Y) \longrightarrow K^1(X) \longrightarrow K^1(Y)\;} ,
 $$
 
 in which the maps are the pullbacks of the inclusions and the **index map** $\partial : K^0(Y)\to K^1(X,Y)$; the last term returns to the first by Bott periodicity, so the sequence is cyclic of length six, and a sequence of the same shape exists for every closed pair.

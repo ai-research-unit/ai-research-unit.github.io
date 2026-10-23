@@ -78,7 +78,7 @@ The factor $\tfrac{1}{4}$ is fixed so that the identification with $\mathrm{SO}(
 **Theorem.** Let $V$ be a space over a field of characteristic not $2$ with a non-degenerate form $\mathfrak{Q}$, let $\Lambda^2 V$ carry the bivector bracket transported from $\mathrm{SO}(V, \mathfrak{Q})$ by $\varphi(u \wedge v)(x) = B(v, x)u - B(u, x)v$, and let $B_2$ carry the commutator. Then
 
 $$
-\Phi : \Lambda^2 V \longrightarrow B_2, \qquad \Phi(u \wedge v) = \tfrac{1}{4}(uv - vu)
+\boxed{\;\Phi : \Lambda^2 V \longrightarrow B_2, \qquad \Phi(u \wedge v) = \tfrac{1}{4}(uv - vu)\;}
 $$
 
 is an isomorphism of Lie algebras onto the bivectors, and $\varphi \circ \Phi^{-1} : B_2 \to \mathrm{SO}(V, \mathfrak{Q})$ is an isomorphism of Lie algebras.
@@ -118,7 +118,7 @@ as one checks on the three basis vectors $e_i, e_j, e_l$. Therefore $\Phi$ carri
 **Theorem.** For every $x \in \Lambda^2 V$ the adjoint action of the bivector $\Phi(x)$ on the vectors is the skew map $\varphi(x)$:
 
 $$
-[\Phi(x), w] = \varphi(x)(w) \qquad (w \in V).
+\boxed{\;[\Phi(x), w] = \varphi(x)(w) \qquad (w \in V)\;}.
 $$
 
 **Proof.** On basis elements, with $x = e_i \wedge e_j$ and $\Phi(x) = \tfrac{1}{2}e_ie_j$, compute
@@ -138,7 +138,7 @@ The square of a bivector in the Clifford algebra records whether the bivector sp
 **Proposition.** For $u, v \in V$,
 
 $$
-\Phi(u \wedge v)^2 = -\tfrac{1}{4}\bigl(\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u, v)^2\bigr) = -\tfrac{1}{4}\det \begin{pmatrix} \mathfrak{Q}(u) & B(u,v) \\ B(u,v) & \mathfrak{Q}(v)\end{pmatrix},
+\boxed{\;\Phi(u \wedge v)^2 = -\tfrac{1}{4}\bigl(\mathfrak{Q}(u)\mathfrak{Q}(v) - B(u, v)^2\bigr) = -\tfrac{1}{4}\det \begin{pmatrix} \mathfrak{Q}(u) & B(u,v) \\ B(u,v) & \mathfrak{Q}(v)\end{pmatrix}\;},
 $$
 
 a scalar. In particular the square is $-\mathfrak{Q}(u)\mathfrak{Q}(v)/4$ when $u$ and $v$ are orthogonal.

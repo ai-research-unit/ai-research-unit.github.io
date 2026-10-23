@@ -43,7 +43,7 @@ The set of the involutions is written $\operatorname{Inv}(A)$, or $\operatorname
 **Theorem.** Let $\alpha, \beta \in \operatorname{Inv}(A)$. Then the composite $\alpha\beta$ is an $R$-linear automorphism of $A$, and it has order two if and only if $\alpha$ and $\beta$ commute:
 
 $$
-(\alpha\beta)^{2} = \mathrm{id} \iff \alpha\beta = \beta\alpha .
+\boxed{\;(\alpha\beta)^{2} = \mathrm{id} \iff \alpha\beta = \beta\alpha\;} .
 $$
 
 **Proof.** The composite of two anti-automorphisms is an automorphism, and it is $(\varsigma \circ \varsigma)$-semilinear, that is $R$-linear, so $\alpha\beta$ is $R$-linear and multiplicative; it is an involution exactly when its square is $\mathrm{id}$. Now
@@ -85,7 +85,7 @@ $$
 **Theorem.** Let $u \in \mathrm{U}(A)$ be unitary and let $\sigma_{u}(x) = ux^{*}u^{*}$. Then $\sigma_{u}$ is a $\varsigma$-semilinear anti-automorphism of $A$ with $\sigma_{u} = \alpha_{u} \circ *$, where $\alpha_{u}(x) = uxu^{*}$ is the inner $*$-automorphism of *Units and the Unitary Elements*, and
 
 $$
-\sigma_{u}^{2} = \alpha_{u^{2}} , \qquad \text{so that} \qquad \sigma_{u} \in \operatorname{Inv}(A) \iff u^{2} \in Z(A) .
+\boxed{\;\sigma_{u}^{2} = \alpha_{u^{2}} , \qquad \text{so that} \qquad \sigma_{u} \in \operatorname{Inv}(A) \iff u^{2} \in Z(A)\;} .
 $$
 
 **Proof.** The map is additive, and it reverses products because
@@ -125,7 +125,7 @@ so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, 
 **Theorem (the stability criterion).** Let $\alpha, \beta \in \operatorname{Inv}(A)$ and suppose that $H(A,\alpha)$ and $H(A,\beta)$ generate $A$. Then
 
 $$
-\alpha H(A,\beta) = H(A,\beta) \iff \alpha\beta = \beta\alpha .
+\boxed{\;\alpha H(A,\beta) = H(A,\beta) \iff \alpha\beta = \beta\alpha\;} .
 $$
 
 **Proof.** By the conjugation proposition, $\alpha H(A,\beta) = H(A,\alpha\beta\alpha)$. Since $\alpha$ is bijective, $\alpha H(A,\beta)$ generates $A$ exactly when $H(A,\beta)$ does, so the determination lemma applies to the pair $\alpha\beta\alpha$, $\beta$: the subspace $\alpha H(A,\beta)$ is $H(A,\beta)$ exactly when $\alpha\beta\alpha = \beta$. This equality is $\alpha\beta\alpha\alpha = \beta\alpha$, that is $\alpha\beta = \beta\alpha$.

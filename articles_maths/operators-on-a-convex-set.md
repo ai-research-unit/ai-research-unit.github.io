@@ -44,7 +44,7 @@ with the supremum norm and the pointwise order, and with the constant function $
 **Theorem (the state space of the function system is the convex set).** For a compact convex set $K$ the map
 
 $$
-\mathrm{ev} : K\to S(A(K)), \qquad \mathrm{ev}(x)(a) = a(x),
+\boxed{\;\mathrm{ev} : K\to S(A(K)), \qquad \mathrm{ev}(x)(a) = a(x)\;},
 $$
 
 is an affine homeomorphism onto the state space of $A(K)$.
@@ -58,7 +58,7 @@ is an affine homeomorphism onto the state space of $A(K)$.
 **Theorem.** For compact convex sets $K$ and $L$ the assignment
 
 $$
-g\mapsto \Phi_g, \qquad \Phi_g(a) = a\circ g \quad (a\in A(K)),
+\boxed{\;g\mapsto \Phi_g, \qquad \Phi_g(a) = a\circ g \quad (a\in A(K))\;},
 $$
 
 is an affine bijection from the continuous affine maps $g : L\to K$ onto the positive unital linear maps $\Phi : A(K)\to A(L)$, with inverse sending $\Phi$ to the map whose evaluation at $y\in L$ is $\Phi(\cdot)(y)$.
@@ -68,7 +68,7 @@ is an affine bijection from the continuous affine maps $g : L\to K$ onto the pos
 **Proposition (affine maps preserve barycentres).** Let $g : L\to K$ be continuous affine and let $\mu$ be a probability measure on $L$ with barycentre $y$. Then $g(y)$ is the barycentre of the pushed-forward measure $g_*\mu$ on $K$,
 
 $$
-g\bigl(r(\mu)\bigr) = r(g_*\mu).
+\boxed{\;g\bigl(r(\mu)\bigr) = r(g_*\mu)\;}.
 $$
 
 *Proof.* For $a\in A(K)$ one has $\int a\,d(g_*\mu) = \int (a\circ g)\,d\mu = (a\circ g)(y) = a(g(y))$, using the affinity of $a$ and $g$ through the barycentre of $\mu$; the two sides therefore have the same values against every $a$, and they are equal by the separation of points of $K$.

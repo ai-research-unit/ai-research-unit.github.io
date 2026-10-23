@@ -28,7 +28,7 @@ The article uses no analysis and no geometry: the actions are algebraic actions 
 **Theorem (the fixed part is the cohomology of the descended sheaf).** Let $G$ act on $X$ with the equivariant sheaf $\mathcal{F}$, and let the descent hold: the quotient $X/G$ exists and $\mathcal{F}^{G}$ is the fixed sheaf. Then the descent isomorphism on the cohomology is
 
 $$
-H^*(X/G,\mathcal{F}^{G})\;\xrightarrow{\ \cong\ }\;H^*(X,\mathcal{F})^{G},
+\boxed{\;H^*(X/G,\mathcal{F}^{G})\;\xrightarrow{\ \cong\ }\;H^*(X,\mathcal{F})^{G}\;},
 $$
 
 the fixed part of the cohomology of the sheaf is the cohomology of its descended sheaf; for $G$ finite the identification follows from the transfer, $q^*:H^*(X/G,\mathcal{F}^{G})\to H^*(X,\mathcal{F})^{G}$ being an isomorphism.
@@ -38,7 +38,7 @@ the fixed part of the cohomology of the sheaf is the cohomology of its descended
 **Theorem (the Galois form).** Let $\Gamma=\operatorname{Gal}(K/k)$ act semilinearly on the sheaf $\mathcal{F}$ over $X_K$, as in *Galois Descent for Sheaves*, and let $\mathcal{F}^{\Gamma}$ be the fixed sheaf over $X$. Then
 
 $$
-H^*(X,\mathcal{F}^{\Gamma})\;\xrightarrow{\ \cong\ }\;H^*(X_K,\mathcal{F})^{\Gamma},
+\boxed{\;H^*(X,\mathcal{F}^{\Gamma})\;\xrightarrow{\ \cong\ }\;H^*(X_K,\mathcal{F})^{\Gamma}\;},
 $$
 
 with the action of $\Gamma$ on the cohomology semilinear over $K$; the invariants of the cohomology are the cohomology of the descended sheaf.
@@ -50,7 +50,7 @@ with the action of $\Gamma$ on the cohomology semilinear over $K$; the invariant
 **Theorem (the descent spectral sequence).** Let $G$ act on $X$ with $\mathcal{F}$ equivariant and let the action be **free** on a $G$-invariant open cover, so that the quotient exists and the cover descends. Then there is a spectral sequence
 
 $$
-E_2^{n,m}=H^p(G,H^q(X,\mathcal{F}))\;\Longrightarrow\;H^{p+q}(X/G,\mathcal{F}^{G}),
+\boxed{\;E_2^{n,m}=H^p(G,H^q(X,\mathcal{F}))\;\Longrightarrow\;H^{p+q}(X/G,\mathcal{F}^{G})\;},
 $$
 
 the **descent spectral sequence**; its edge maps in low degree give the exact sequence

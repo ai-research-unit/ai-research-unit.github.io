@@ -18,7 +18,7 @@ The article assumes the reflection, the signed conjugation and the carrying elem
 **Theorem (the reflection is unitary).** The adjoint of the signed conjugation is its inverse,
 
 $$
-\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a) = \rho_a^{-1} ,
+\boxed{\;\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a) = \rho_a^{-1}\;} ,
 $$
 
 so that $\rho_a^{*}\rho_a = \rho_a\rho_a^{*} = \mathrm{id}$: every reflection preserves the form $H$.
@@ -40,7 +40,7 @@ since $\alpha \exp(-\operatorname{ad}_a) = \exp(-\operatorname{ad}_{\alpha(a)})\
 **Theorem (the self-adjoint reflections).** The reflection is self-adjoint if and only if it is an involution,
 
 $$
-\rho_a^{*} = \rho_a \iff \rho_a^{2} = \mathrm{id} \iff a + \alpha(a)\in Z(\mathrm{G}) ,
+\boxed{\;\rho_a^{*} = \rho_a \iff \rho_a^{2} = \mathrm{id} \iff a + \alpha(a)\in Z(\mathrm{G})\;} ,
 $$
 
 and the self-adjoint reflections are exactly the involutive reflections; in particular the reflection by an **odd** element is self-adjoint.
@@ -56,7 +56,7 @@ and the self-adjoint reflections are exactly the involutive reflections; in part
 **Theorem.** The fixed subalgebra of a self-adjoint reflection is the orthogonal complement of the image of the operator $\mathrm{id} - \rho_a$,
 
 $$
-\operatorname{Fix}(\rho_a) = \bigl(\operatorname{im}(\mathrm{id}-\rho_a)\bigr)^{\perp} ,
+\boxed{\;\operatorname{Fix}(\rho_a) = \bigl(\operatorname{im}(\mathrm{id}-\rho_a)\bigr)^{\perp}\;} ,
 $$
 
 and for an involutive reflection the algebra decomposes into the fixed subalgebra and its complement on which the reflection acts by $-\mathrm{id}$.

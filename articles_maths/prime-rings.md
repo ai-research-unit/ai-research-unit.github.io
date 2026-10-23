@@ -42,7 +42,7 @@ The converse fails, and the standard witness is a product of two rings.
 **Example.** The ring $k \times k$ is semiprime and not prime, and the matrix ring $M_n(F)$ is prime and contains the nonzero nilpotent element $E_{12}$ for $n \geq 2$, so a prime ring need not be reduced; the two conditions of the pair are ordered as
 
 $$
-\text{no zero divisors} \implies \text{prime} \implies \text{semiprime} ,
+\boxed{\;\text{no zero divisors} \implies \text{prime} \implies \text{semiprime}\;} ,
 $$
 
 and each implication is strict in the non-commutative case, the first witnessed by $M_n(F)$ and the second by $k \times k$. The class of *reduced* rings, those with no nonzero nilpotent element, lies below semiprime and is not comparable with prime, as the table below records.

@@ -47,13 +47,13 @@ and **uniformly definitizable** when moreover $[n(T)x,x]\geq c\|x\|^{2}$ for som
 **Theorem (uniform case).** Let $T$ be a bounded $J$-self-adjoint operator on a Krein space and suppose there are a real polynomial $n\neq0$ and $c>0$ with $[n(T)x,x]\geq c\|x\|^{2}$ for every $x$. Then
 
 $$
-\langle x,y\rangle_{K,n} := [n(T)x,y]
+\boxed{\;\langle x,y\rangle_{K,n} := [n(T)x,y]\;}
 $$
 
 is an inner product defining a norm equivalent to the Hilbert norm of $K$, and $T$ is self-adjoint for it. Consequently there is a bounded invertible operator $V$ with
 
 $$
-V^{-1}TV\ \text{self-adjoint in the transported Hilbert structure},
+\boxed{\;V^{-1}TV\ \text{self-adjoint in the transported Hilbert structure}\;},
 $$
 
 so $T$ is **similar to a self-adjoint operator**.

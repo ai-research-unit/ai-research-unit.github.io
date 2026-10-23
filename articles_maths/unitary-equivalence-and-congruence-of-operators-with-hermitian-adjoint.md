@@ -24,7 +24,7 @@ The forms and their congruence classification are *Hermitian Forms on a Hermitia
 **Proposition (conjugation by the slice).** For $u\in U$ the inner conjugation $\mathrm{Ad}_u(t) = utu^{-1}$ is an algebra automorphism, it restricts to the isometry group of the form, and on the algebra it coincides with the Hermitian sandwich:
 
 $$
-u\,t\,u^{-1} = u\,t\,u^{\dagger} \qquad (u\in U),
+\boxed{\;u\,t\,u^{-1} = u\,t\,u^{\dagger} \qquad (u\in U)\;},
 $$
 
 verified on the regular module. So on the slice the **involutive** equivalence (by the inverse) and the **Hermitian** congruence (by the dagger) are the same relation; the failure of this identity off the slice is the defect $uu^{\dagger}$ of *Mixed Inner Conjugation and Hermitian Adjoint*, and it is why the two relations must be distinguished in general.
@@ -39,7 +39,7 @@ verified on the regular module. So on the slice the **involutive** equivalence (
 
 **Theorem (Sylvester's law of inertia).** Let $S$ be Hermitian. Then the **inertia** of $S$, the triple
 $$
-\mathrm{In}(S) = \bigl(n_+(S),n_-(S),n_0(S)\bigr)
+\boxed{\;\mathrm{In}(S) = \bigl(n_+(S),n_-(S),n_0(S)\bigr)\;}
 $$
 of the numbers of positive, negative and zero eigenvalues of the associated form, is invariant under congruence: $\mathrm{In}(A^{\dagger}SA) = \mathrm{In}(S)$ for every invertible $A$. Moreover the inertia is a **complete** invariant of the congruence class: two Hermitian forms are congruent exactly when they have the same inertia. This was checked on the regular module of $\mathrm{Cl}_{0,4}(\mathbb{R})$: the inertia of a self-adjoint element was unchanged under congruence by random invertible $A$ (forty trials), while the **spectrum** changed in every trial, so the congruence invariant is strictly coarser than the unitary invariant.
 
@@ -56,7 +56,7 @@ of the numbers of positive, negative and zero eigenvalues of the associated form
 **Theorem (the passage from equivalence to congruence).** Unitary equivalence implies congruence, $USU^{-1} = USU^{\dagger}$ for $U$ unitary, and the implication is strict: on the regular module of $\mathrm{Cl}_{0,4}(\mathbb{R})$ there are elements of the same inertia that are not unitarily equivalent, because their spectra differ. Hence
 
 $$
-\text{unitary equivalence} \ \subsetneq\ \text{congruence},
+\boxed{\;\text{unitary equivalence} \ \subsetneq\ \text{congruence}\;},
 $$
 
 with the unitary orbits the level sets of the ordered spectrum and the congruence orbits the level sets of the inertia; the forgetful map from the spectrum to the inertia, from a multiset of real numbers to the triple of its sign counts, is the map between them.

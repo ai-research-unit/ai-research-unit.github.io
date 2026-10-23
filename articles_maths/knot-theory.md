@@ -36,7 +36,7 @@ The article develops the combinatorial and algebraic theory in order: the diagra
 **Theorem (the Seifert matrix and the Alexander polynomial).** Let $V$ be a Seifert matrix of the knot $K$. Then
 
 $$
-\Delta_K(t) \doteq \det(t^{1/2}V - t^{-1/2}V^{\mathsf{T}})
+\boxed{\;\Delta_K(t) \doteq \det(t^{1/2}V - t^{-1/2}V^{\mathsf{T}})\;}
 $$
 
 up to multiplication by a unit $\pm t^{k}$, where $\Delta_K$ is the **Alexander polynomial**; it satisfies $\Delta_K(t)\doteq\Delta_K(t^{-1})$ and $\Delta_K(1) = \pm1$, and the determinant of the knot is $|\Delta_K(-1)|$. The **signature** $\sigma(K)$ is the signature of the symmetric matrix $V + V^{\mathsf{T}}$, an even integer, and it is a concordance invariant.
@@ -114,7 +114,7 @@ whose span is $-2-(-7) = 5$, equal to its crossing number. In each case the Tait
 **Theorem (Ozsváth–Szabó; knot Floer homology).** To a knot $K\subseteq S^3$ one attaches a bigraded homology $\widehat{HFK}(K)$, the **knot Floer homology**, whose Euler characteristic with respect to one of the gradings is the Alexander polynomial:
 
 $$
-\sum_{i,j}(-1)^i\,\mathrm{rk}\,\widehat{HFK}_i(K,j)\,t^j = \Delta_K(t) .
+\boxed{\;\sum_{i,j}(-1)^i\,\mathrm{rk}\,\widehat{HFK}_i(K,j)\,t^j = \Delta_K(t)\;} .
 $$
 
 Knot Floer homology detects the Seifert genus, the fibredness and the unknot: $g(K)$ is the maximal $j$ with $\widehat{HFK}(K,j)\neq0$, the knot is fibered if and only if the top grading has rank one, and $K$ is the unknot if and only if $\widehat{HFK}(K)$ has rank one. The construction is the Lagrangian Floer theory of the symmetric product of a Heegaard surface, in the sense of *Floer Homology*.
@@ -140,7 +140,7 @@ for the **smooth slice genus** $g_4(K)$, the minimal genus of a smoothly embedde
 **Theorem (Milnor conjecture; Kronheimer–Mrowka; Rasmussen).** For the torus knot $T(n,m)$ the Seifert genus equals the smooth slice genus,
 
 $$
-g_4(T(n,m)) = g(T(n,m)) = \frac{(n-1)(m-1)}{2},
+\boxed{\;g_4(T(n,m)) = g(T(n,m)) = \frac{(n-1)(m-1)}{2}\;},
 $$
 
 and the unknotting number is $u(T(n,m)) = \frac{(n-1)(m-1)}{2}$. The equality of the Seifert genus and the smooth slice genus, and the unknotting number formula, were proved by Kronheimer and Mrowka by gauge theory, using the analysis of the moduli spaces of the Seiberg–Witten equations of Part III; Rasmussen gave a second proof of the slice-genus statement by the $s$-invariant of Khovanov homology.

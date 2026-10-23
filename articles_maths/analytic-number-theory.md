@@ -75,7 +75,7 @@ and consequently for every $n$ there is a prime between $n$ and $2n$.
 
 **Theorem (Perron).** Let $F(s) = \sum_{n\geq1}a_nn^{-s}$ converge absolutely for $\Re s>\sigma_a$, and let $c>\max(0,\sigma_a)$. For $x>0$ not an integer,
 $$
-\sum_{n\leq x}a_n = \frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}F(s)\,\frac{x^s}{s}\,ds ,
+\boxed{\;\sum_{n\leq x}a_n = \frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}F(s)\,\frac{x^s}{s}\,ds\;} ,
 $$
 the integral taken over the vertical line and interpreted as the limit of the integrals over the segments $\lvert t\rvert\leq T$. If $x$ is an integer, the right side is the sum with the last term halved.
 
@@ -87,7 +87,7 @@ the integral taken over the vertical line and interpreted as the limit of the in
 
 **Theorem (von Mangoldt's explicit formula).** For $x>1$ not a prime power,
 $$
-\psi(x) = x - \sum_{\rho}\frac{x^{\rho}}{\rho} - \log 2\pi - \frac12\log\bigl(1-x^{-2}\bigr),
+\boxed{\;\psi(x) = x - \sum_{\rho}\frac{x^{\rho}}{\rho} - \log 2\pi - \frac12\log\bigl(1-x^{-2}\bigr)\;},
 $$
 the sum being taken over the nontrivial zeros of $\zeta$ in the sense of the symmetric limit $\lim_{T\to\infty}\sum_{\lvert\gamma\rvert\leq T}$, which converges.
 
@@ -109,7 +109,7 @@ $$
 $$
 Consequently $\zeta$ has no zero on the line $\Re s = 1$, the logarithmic derivative $-\zeta'/\zeta$ is bounded in a region to the left of that line apart from the pole at $s=1$, and the explicit formula yields
 $$
-\psi(x) = x + O\bigl(x\exp(-c'\sqrt{\log x})\bigr)
+\boxed{\;\psi(x) = x + O\bigl(x\exp(-c'\sqrt{\log x})\bigr)\;}
 $$
 for a positive constant $c'$; in particular $\pi(x)\sim x/\log x$.
 

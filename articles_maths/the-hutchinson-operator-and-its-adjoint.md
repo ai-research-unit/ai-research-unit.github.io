@@ -51,7 +51,7 @@ $$
 **Theorem (the contraction and the fixed point).** Let $(X,d)$ be complete and let each $f_i$ be a contraction of ratio $r_i$, with $r = \max_i r_i \in [0,1)$. Then $F$ maps $\mathcal{K}(X)$ into itself, it is a contraction of ratio $r$,
 
 $$
-d_H\bigl(F(A), F(B)\bigr) \leq r\, d_H(A,B) \qquad (A, B \in \mathcal{K}(X)) ,
+\boxed{\;d_H\bigl(F(A), F(B)\bigr) \leq r\, d_H(A,B) \qquad (A, B \in \mathcal{K}(X))\;} ,
 $$
 
 and it has a unique fixed point $K \in \mathcal{K}(X)$, the **attractor** of the system. For every $A \in \mathcal{K}(X)$ the iterates $F^n(A)$ converge to $K$ with $d_H(F^n(A), K) \leq r^n (1-r)^{-1} d_H(A, F(A))$.
@@ -61,7 +61,7 @@ and it has a unique fixed point $K \in \mathcal{K}(X)$, the **attractor** of the
 **Theorem (the collage theorem).** For every $A \in \mathcal{K}(X)$,
 
 $$
-d_H(A, K) \leq \frac{1}{1-r}\, d_H\bigl(A, F(A)\bigr) .
+\boxed{\;d_H(A, K) \leq \frac{1}{1-r}\, d_H\bigl(A, F(A)\bigr)\;} .
 $$
 
 **Proof sketch.** The triangle inequality in the Hausdorff metric and the contraction give $d_H(A,K) \leq d_H(A, F(A)) + r\, d_H(A, K)$, and the rearrangement gives the bound. The inequality is the quantitative form of the statement that a compact set which is nearly invariant under $F$ is near the attractor, and it is the operator statement used in the inverse problem of the fractal image compression.
@@ -87,7 +87,7 @@ The last identity is the defining adjoint relation; it holds for every bounded c
 **Theorem (the properties of the pair).** **(a)** $T$ is a positive linear contraction of the space of the bounded continuous functions with the sup norm, of norm one, and it preserves the constants. **(b)** $L$ maps the probability measures into themselves, is continuous for the weak topology, and is a contraction of ratio $r$ for the **Wasserstein** metric $W_1$. **(c)** $L$ has a unique fixed point $\mu$ in the probability measures,
 
 $$
-\mu = \sum_{i=1}^N p_i\,(f_i)_\# \mu ,
+\boxed{\;\mu = \sum_{i=1}^N p_i\,(f_i)_\# \mu\;} ,
 $$
 
 the **self-similar measure** of the weights; it is the invariant measure of the random walk that applies the map $f_i$ with probability $p_i$, and its support is the attractor, $\operatorname{supp}\mu = K$.

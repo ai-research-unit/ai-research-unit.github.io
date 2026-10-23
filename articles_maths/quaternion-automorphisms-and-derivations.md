@@ -35,9 +35,7 @@ $$
 
 **Theorem.** The inner automorphisms are exactly the automorphisms that act on the imaginary subspace as rotations, and there is a canonical isomorphism
 
-$$
-\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong SO(3),
-$$
+$$ \boxed{\; \operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong SO(3) \;} ,$$
 
 the rotation group of the three-dimensional space $\operatorname{Im}\mathbb{H}$.
 
@@ -67,9 +65,7 @@ the rotation group of the three-dimensional space $\operatorname{Im}\mathbb{H}$.
 
 **Theorem.** Every derivation of $\mathbb{H}$ is inner, so there is an isomorphism
 
-$$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_t\cong\operatorname{Im}\mathbb{H},
-$$
+$$ \boxed{\; \operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_t\cong\operatorname{Im}\mathbb{H} \;} ,$$
 
 of real vector spaces and of Lie algebras, the bracket on the right being $[\vec q_1,\vec q_2] = 2(\vec q_1\times\vec q_2)$.
 
@@ -77,9 +73,7 @@ of real vector spaces and of Lie algebras, the bracket on the right being $[\vec
 
 **Corollary.** $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ has dimension $3$, with basis $\{D_1,D_2,D_3\}$, $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$, and the structure constants
 
-$$
-[D_1,D_2] = D_3, \qquad [D_2,D_3] = D_1, \qquad [D_3,D_1] = D_2.
-$$
+$$ \boxed{\; [D_1,D_2] = D_3, \qquad [D_2,D_3] = D_1, \qquad [D_3,D_1] = D_2 \;} .$$
 
 *Proof.* The three inner derivations span $\operatorname{Im}\mathbb{H}/\mathbb{R}e_t$ modulo the centre, which is three-dimensional; the brackets follow from $[\vec e_x,\vec e_y] = 2\vec e_z$, $[\vec e_y,\vec e_z] = 2\vec e_x$, $[\vec e_z,\vec e_x] = 2\vec e_y$ and $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$.
 

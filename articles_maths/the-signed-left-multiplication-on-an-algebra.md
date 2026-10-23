@@ -73,7 +73,7 @@ The proposition is the precise sense in which the signed left multiplication is 
 **Proposition.** For all $a, b \in A$,
 
 $$
-\bigl[L(b),\, \Lambda(a)\bigr] = \Lambda\bigl(ba - a\alpha(b)\bigr),
+\boxed{\;\bigl[L(b),\, \Lambda(a)\bigr] = \Lambda\bigl(ba - a\alpha(b)\bigr)\;},
 $$
 
 and $\Lambda(a)$ commutes with $L(b)$ if and only if $ba = a\alpha(b)$, that is, if and only if $L(b)$ fixes the image of $\Lambda(a)$ in the appropriate sense.
@@ -91,7 +91,7 @@ The corollary is the sign rule of the grading in operator form: the even left mu
 **Proposition.** Let $A$ be finite-dimensional. The signed left multiplication $\Lambda(a)$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ is a unit, and then
 
 $$
-\Lambda(a)^{-1} = \Lambda\bigl(\alpha(a^{-1})\bigr) = \Lambda\bigl(\alpha(a)^{-1}\bigr).
+\boxed{\;\Lambda(a)^{-1} = \Lambda\bigl(\alpha(a^{-1})\bigr) = \Lambda\bigl(\alpha(a)^{-1}\bigr)\;}.
 $$
 
 *Proof.* The form $\Lambda(a) = L(a)\alpha$ is the composite of the invertible operator $\alpha$ and the left multiplication $L(a)$, so it is invertible exactly when $L(a)$ is, which by the injectivity of $L$ and finite dimension is exactly when $a$ is a unit. For the inverse, use the identity $\Lambda(a)\Lambda(c) = L(a\alpha(c))$: with $c = \alpha(a^{-1})$ one gets $a\alpha(c) = a\alpha(\alpha(a^{-1})) = aa^{-1} = 1$, so $\Lambda(a)\Lambda(\alpha(a^{-1})) = L(1) = \mathrm{id}$; the same computation in the other order gives the two-sided inverse. The second form uses $\alpha(a^{-1}) = \alpha(a)^{-1}$.
@@ -163,7 +163,7 @@ The two readings of "the elements it fixes" — the fixed points of the operator
 **Theorem.** For all $a, b \in A$,
 
 $$
-S_{a,b} = \Lambda(a)\,R\bigl(\alpha(b)\bigr) = L(a)\,\alpha\,R\bigl(\alpha(b)\bigr),
+\boxed{\;S_{a,b} = \Lambda(a)\,R\bigl(\alpha(b)\bigr) = L(a)\,\alpha\,R\bigl(\alpha(b)\bigr)\;},
 $$
 
 so the signed sandwich is the signed left multiplication followed by a right multiplication.

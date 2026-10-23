@@ -84,7 +84,7 @@ The general $W$ may contain isotropic vectors, and then $W^\perp$ is degenerate 
 **Theorem.** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field of characteristic not $2$, of Witt index $m$. Then
 
 $$
-V \cong V_0 \perp m\,H,
+\boxed{\;V \cong V_0 \perp m\,H\;},
 $$
 
 where $V_0$ is anisotropic (contains no nonzero isotropic vector) and $m\,H$ is the orthogonal sum of $m$ hyperbolic planes. The anisotropic part $V_0$ is unique up to isometry, and $\dim V = \dim V_0 + 2m$.
@@ -190,7 +190,7 @@ with the explicit basis $u, f, g$. The Witt index is $1$ and the anisotropic par
 **Theorem (Witt cancellation).** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$, and let $q_x, q_y$ be quadratic forms with
 
 $$
-q \perp q_x \cong q \perp q_y.
+\boxed{\;q \perp q_x \cong q \perp q_y\;}.
 $$
 
 Then $q_x \cong q_y$.
@@ -251,7 +251,7 @@ Both have the associated form $b((x_1, y_1), (x_2, y_2)) = x_1y_2 + x_2y_1$: for
 **Proposition.** Over $\mathbb{F}_2$ the cancellation theorem fails as stated. Let $q_x = 0$ and $q_y(x) = x^2$ be the two quadratic forms on $\mathbb{F}_2$, and let $r(x) = x^2$ on $\mathbb{F}_2$. Then
 
 $$
-q_x \perp r \cong q_y \perp r, \qquad \text{but} \qquad q_x \not\cong q_y.
+\boxed{\;q_x \perp r \cong q_y \perp r, \qquad \text{but} \qquad q_x \not\cong q_y\;}.
 $$
 
 **Proof.** The form $q_x \perp r$ is $(x, y) \mapsto y^2$ and the form $q_y \perp r$ is $(x, y) \mapsto x^2 + y^2 = (x + y)^2$. The invertible linear map $T(x, y) = (x, x + y)$ of $\mathbb{F}_2^2$ has $T(x, y)_1 + T(x, y)_2 = x + (x + y) = y$, so $(q_y \perp r)(T(x, y)) = y^2 = (q_x \perp r)(x, y)$; thus $T$ is an isometry $q_x \perp r \to q_y \perp r$. On the other hand $q_x(1) = 0 \neq 1 = q_y(1)$, so $q_x$ and $q_y$ are not isometric.

@@ -48,7 +48,7 @@ Over a ring in which the relevant ranks are defined, the alternating sum of the 
 **Proposition.** Let $C_\bullet$ be a complex of finitely generated free modules over a field $F$, nonzero in only finitely many degrees, and suppose $H_n(C_\bullet)$ is finite-dimensional for every $n$. Then
 
 $$
-\sum_n(-1)^n\dim_F C_n=\sum_n(-1)^n\dim_F H_n(C_\bullet).
+\boxed{\;\sum_n(-1)^n\dim_F C_n=\sum_n(-1)^n\dim_F H_n(C_\bullet)\;}.
 $$
 
 *Proof.* The short exact sequences $0\to Z_n\to C_n\to B_{n-1}\to0$ and $0\to B_n\to Z_n\to H_n\to0$ give $\dim C_n=\dim Z_n+\dim B_{n-1}$ and $\dim Z_n=\dim B_n+\dim H_n$. Substituting and summing with alternating signs telescopes, because the boundary contributions enter with opposite signs.
@@ -66,7 +66,7 @@ The snake lemma applied degreewise does not by itself produce a long exact seque
 **Theorem.** For a short exact sequence of complexes $0\to A_\bullet\to B_\bullet\to C_\bullet\to0$ there is a long exact sequence in homology
 
 $$
-\cdots \longrightarrow H_n(A) \longrightarrow H_n(B) \longrightarrow H_n(C) \xrightarrow{\ \partial_n\ } H_{n-1}(A) \longrightarrow H_{n-1}(B) \longrightarrow \cdots,
+\boxed{\;\cdots \longrightarrow H_n(A) \longrightarrow H_n(B) \longrightarrow H_n(C) \xrightarrow{\ \partial_n\ } H_{n-1}(A) \longrightarrow H_{n-1}(B) \longrightarrow \cdots\;},
 $$
 
 natural in the short exact sequence, with $\partial_n$ the connecting morphism.
@@ -96,7 +96,7 @@ It satisfies $d^2=0$ because $f$ is a chain map.
 **Proposition.** There is a long exact sequence
 
 $$
-\cdots\to H_n(A)\xrightarrow{H_n(f)}H_n(B)\to H_n(\operatorname{Cone}f)\xrightarrow{}H_{n-1}(A)\to\cdots,
+\boxed{\;\cdots\to H_n(A)\xrightarrow{H_n(f)}H_n(B)\to H_n(\operatorname{Cone}f)\xrightarrow{}H_{n-1}(A)\to\cdots\;},
 $$
 
 so the homology of the cone is the obstruction to $f$ being a quasi-isomorphism, where a **quasi-isomorphism** is a chain map inducing isomorphisms on all homology groups.

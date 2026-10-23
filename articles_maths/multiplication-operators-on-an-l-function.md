@@ -23,7 +23,7 @@ Its matrix in the basis of the $\delta_n$ is $M_h(m,n)=h(m)$ when $m\mid n$ and 
 
 **Theorem (the $L$-function identity).** For all $h,f$ and every $s$ in the common region of absolute convergence,
 $$
-L(M_hf,s)=L(h,s)\,L(f,s).
+\boxed{\;L(M_hf,s)=L(h,s)\,L(f,s)\;}.
 $$
 Consequently $M_h$ is multiplication of the $L$-function by $L(h,s)$, and $M_hM_g=M_{h*g}$, $M_\varepsilon=\mathrm{id}$.
 
@@ -59,7 +59,7 @@ its matrix is lower-triangular Toeplitz, and $L(M_{h_p}f,s)=L_p(h_p,s)L_p(f,s)$ 
 
 **Theorem (the Euler product as an operator product).** Every $f\in\mathcal{A}$ factors uniquely as a convergent product $f=\prod_pf_p$ with $f_p\in\mathcal{A}_p$ and $f_p(p^r)=f(p^r)$, the product being multiplicative in the sense that $f(n)=\prod_{p^r\parallel n}f(p^r)$. For $h=\prod_ph_p$ with $h_p\in\mathcal{A}_p$,
 $$
-M_h=\prod_pM_{h_p},
+\boxed{\;M_h=\prod_pM_{h_p}\;},
 $$
 the product converging in the operator norm of $\mathcal{H}$ when $\sum_p\|h_p-\delta_1\|_1<\infty$; this is the case for $h\in\ell^1$.
 
@@ -81,7 +81,7 @@ and the **reflection operator** $\mathcal{R}$ acts on functions of $s$ by $(\mat
 
 **Theorem (the functional equation as an operator identity).** With the conjugate-linear coefficient involution $f^{*}(n)=\overline{f(n)}$, the functional equation of $L(f,\cdot)$ is the operator identity
 $$
-\mathcal{R}\Lambda_f = \epsilon\,\Lambda_{f^{*}},
+\boxed{\;\mathcal{R}\Lambda_f = \epsilon\,\Lambda_{f^{*}}\;},
 $$
 that is, $\Lambda_f(1-s)=\epsilon\,\Lambda_{f^*}(s)$ for all $s$; it is an involution up to the scalar $\epsilon$, and it intertwines $M_h$ with $M_{h^*}$ in the sense that $\mathcal{R}\Lambda_{M_hf}=\epsilon\,\Lambda_{h^**(M_hf)}$.
 

@@ -91,7 +91,7 @@ It is the composite $S^{\alpha}_{a,b} = L_a \circ R_b \circ \alpha = S_{a,b}\cir
 **Theorem (the signed sandwich is the unsigned sandwich at $\alpha$).** For all $a, b \in A$,
 
 $$
-S^{\alpha}_{a,b} = S_{a,b} \circ \alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b} = \alpha \circ S_{\alpha^{-1}(a),\alpha^{-1}(b)} .
+\boxed{\;S^{\alpha}_{a,b} = S_{a,b} \circ \alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b} = \alpha \circ S_{\alpha^{-1}(a),\alpha^{-1}(b)}\;} .
 $$
 
 In particular the two sandwiches coincide exactly when $\alpha = \mathrm{id}$, and $S^{\alpha}_{a,b}(x) = S_{a,b}(\alpha(x))$ for every $x$.
@@ -105,7 +105,7 @@ In particular the two sandwiches coincide exactly when $\alpha = \mathrm{id}$, a
 **Proposition.** For all $a, b, c, d \in A$,
 
 $$
-S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\; b\,\alpha(d)} .
+\boxed{\;S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\; b\,\alpha(d)}\;} .
 $$
 
 **Proof.** Using $S^{\alpha}_{c,d} = S_{c,d}\alpha$ and the commutation $\alpha S_{c,d} = S_{\alpha(c),\alpha(d)}\alpha$ of the previous section, the composite is $S_{a,b}\alpha S_{c,d}\alpha = S_{a,b}S_{\alpha(c),\alpha(d)}\alpha^2 = S_{a\alpha(c),\,b\alpha(d)}$, and this is $S^{\alpha}_{a\alpha(c),b\alpha(d)}$ by the definition.
@@ -135,7 +135,7 @@ $$
 **Theorem.** Let $u \in A^\times$. The signed inner conjugation $r_u$ is an involution if and only if $u\,\alpha(u)$ is central; it is then the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two, and it can be written
 
 $$
-r_u(x) = u\,\alpha(x)\,u^{-1}, \qquad r_u^2(x) = x \iff u\,\alpha(u) \in Z(A).
+\boxed{\;r_u(x) = u\,\alpha(x)\,u^{-1}, \qquad r_u^2(x) = x \iff u\,\alpha(u) \in Z(A)\;}.
 $$
 
 **Proof.** By the composition computation, $r_u^2 = \operatorname{conj}_{u\alpha(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central. When $u\alpha(u)$ is central, $r_u^2 = \mathrm{id}$ is automatic since $\operatorname{conj}_{u\alpha(u)}(x) = x$. Conversely if $r_u^2 = \mathrm{id}$ then $u\alpha(u) x = x\, u\alpha(u)$ for all $x$, so $u\alpha(u)$ is central.

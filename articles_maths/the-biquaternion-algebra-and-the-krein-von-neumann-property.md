@@ -55,9 +55,9 @@ the double commutant is the image itself, $\mathcal{M}''=\mathcal{M}$, and the c
 **Theorem (the adjoint changes sides).** For every $\tilde Q$,
 
 $$
-(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}} ,
+\boxed{\; (L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}} ,
 \qquad\text{that is}\qquad
-(L_{\tilde Q})^{\dagger}(\tilde S)=\tilde S\,\bar{\tilde Q} .
+(L_{\tilde Q})^{\dagger}(\tilde S)=\tilde S\,\bar{\tilde Q} \;}.
 $$
 
 **Proof.** The indefinite adjoint is $T^{\dagger}=JT^{*}J$. For a left multiplication, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$ and $J$ is an anti-automorphism, so $JL_{\tilde Q^{*}}J=R_{J(\tilde Q^{*})}$. Now $J(\tilde Q^{*})=\bar{\tilde Q}$, because $\tilde Q^{*}$ carries the coefficients $\bar Q_t,-\bar Q_x,-\bar Q_y,-\bar Q_z$ and $J$ fixes the centre and negates the vector units, restoring the coefficients $\bar Q_t,\bar Q_x,\bar Q_y,\bar Q_z$. Hence $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$. The same identity is computed for the three operator families in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
@@ -73,7 +73,7 @@ $$
 **Theorem (the envelope).** The smallest unital subalgebra of $\mathcal{L}(\mathbb{B})$ that contains $\mathcal{M}$ and is closed under the indefinite adjoint is
 
 $$
-\mathcal{M}^{\dagger}=\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})=\mathcal{L}(\mathbb{B}) ,
+\boxed{\; \mathcal{M}^{\dagger}=\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})=\mathcal{L}(\mathbb{B}) \;},
 $$
 
 of complex dimension $16$.
@@ -109,7 +109,7 @@ $$
 and the left regular representation is a $J'$-representation of the $\ast$-algebra $(\mathbb{B},{}^{*})$:
 
 $$
-(L_{\tilde Q})^{\dagger'}=J'(L_{\tilde Q})^{*}J'=R_c\,L_{\tilde Q^{*}}\,R_c=L_{\tilde Q^{*}}\,R_{c^{2}}=L_{\tilde Q^{*}} .
+\boxed{\; (L_{\tilde Q})^{\dagger'}=J'(L_{\tilde Q})^{*}J'=R_c\,L_{\tilde Q^{*}}\,R_c=L_{\tilde Q^{*}}\,R_{c^{2}}=L_{\tilde Q^{*}} \;}.
 $$
 
 Hence $(\mathcal{M},J')$ is a Krein–von Neumann algebra on the twisted Krein space $(\mathbb{B},\langle\cdot,\cdot\rangle_{\natural*}')$, with the algebra involution as its adjoint.

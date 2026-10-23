@@ -49,7 +49,7 @@ Equivalently, $a=0$ when every component of $C(\mathbb{R})$ has a neighbourhood 
 
 **Theorem (Harnack).** Let $C$ be a smooth projective real curve of genus $g$ with $s$ connected components of the real locus. Then
 $$
-s\le g+1 ,
+\boxed{\;s\le g+1\;} ,
 $$
 and if the real locus is nonseparating, that is $a=1$, then $s\le g$. In particular a real curve of genus $g$ has at most $g+1$ real components, and the bound is attained only in the separating case.
 
@@ -73,7 +73,7 @@ with equality exactly when $g'=0$. If $\Sigma$ is nonorientable, with $k\geq1$ c
 
 **Theorem (the eigenspaces of the conjugation on the curve).** On the cohomology of the structure sheaf the conjugation acts semilinearly, and in degree one
 $$
-H^1(C_{\mathbb{C}},\mathcal{O}) = H^1_+\oplus H^1_- , \qquad H^1_+\cong H^1(C,\mathcal{O}), \qquad \dim_{\mathbb{C}}H^1 = \dim_{\mathbb{R}}H^1_+ = g ,
+\boxed{\;H^1(C_{\mathbb{C}},\mathcal{O}) = H^1_+\oplus H^1_- , \qquad H^1_+\cong H^1(C,\mathcal{O}), \qquad \dim_{\mathbb{C}}H^1 = \dim_{\mathbb{R}}H^1_+ = g\;} ,
 $$
 the $(+1)$-eigenspace being the cohomology of the real curve and the $(-1)$-eigenspace its conjugate.
 
@@ -85,7 +85,7 @@ the $(+1)$-eigenspace being the cohomology of the real curve and the $(-1)$-eige
 
 **Theorem (the possible numbers of the components).** For a smooth projective real curve of genus $g$ the number $s$ of the real components takes the values
 $$
-s\in\{0,1,\ldots,g+1\}
+\boxed{\;s\in\{0,1,\ldots,g+1\}\;}
 $$
 subject to $s\le g$ when the real locus is nonseparating, and every such value is realised: for each $g$ and each admissible pair $(s,a)$ there is a smooth projective real curve of type $(s,a)$.
 

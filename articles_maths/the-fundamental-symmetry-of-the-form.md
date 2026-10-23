@@ -57,7 +57,7 @@ $$
 the subspaces $A^{+}, A^{-}$ are the eigenspaces of $J$ for the eigenvalues $+1$ and $-1$, the companion form is positive definite and Hermitian, $J$ is self-adjoint for the companion, $\langle Jx,y\rangle = \langle x,Jy\rangle$, and
 
 $$
-h(x,y) = \langle Jx,y \rangle , \qquad \langle x,y \rangle = h(Jx,y) \qquad \text{for all } x, y \in A .
+\boxed{\;h(x,y) = \langle Jx,y \rangle , \qquad \langle x,y \rangle = h(Jx,y) \qquad \text{for all } x, y \in A\;} .
 $$
 
 Moreover $J$ is an isometry of both forms,
@@ -103,7 +103,7 @@ the companion reads $\langle x,y\rangle = h(P^{+}x,y) - h(P^{-}x,y)$, and in the
 **Theorem (the canonical symmetry).** Let the form be nondegenerate with Gram matrix $H$ Hermitian and invertible over $R$, and let the companion be the one whose Gram matrix is the **modulus** $|H| = (H^{2})^{1/2}$, the positive definite square root of $H^{2}$. Then the companion has the fundamental symmetry $J$ determined by
 
 $$
-J^{T} = H\,|H|^{-1} = H\,(H^{2})^{-1/2} , \qquad \text{that is} \qquad J = \varsigma\bigl(H(H^{2})^{-1/2}\bigr) ,
+\boxed{\;J^{T} = H\,|H|^{-1} = H\,(H^{2})^{-1/2} , \qquad \text{that is} \qquad J = \varsigma\bigl(H(H^{2})^{-1/2}\bigr)\;} ,
 $$
 
 which satisfies $J^{2} = \mathrm{id}$, $J^{T} = \varsigma(J)$, and $h(x,y) = \langle Jx,y\rangle$ for the companion of Gram matrix $|H|$. When $H$ is symmetric — in particular in the bilinear layer, where $\varsigma = \mathrm{id}$ — its transpose is itself and the formula is the classical $J = H(H^{2})^{-1/2} = \operatorname{sign}(H)$; in the general sesquilinear case the transpose on the left is essential, because the bridge reads $H = J^{T}|H|$ in the Gram matrices.
@@ -123,7 +123,7 @@ $$
 Then
 
 $$
-T^{\dagger} = J\,T^{*}\,J ,
+\boxed{\;T^{\dagger} = J\,T^{*}\,J\;} ,
 $$
 
 and consequently $T$ is $h$-self-adjoint, $T^{\dagger}=T$, if and only if $JT$ is self-adjoint for the companion; $T$ is $h$-unitary, $T^{\dagger}T=TT^{\dagger}=\mathrm{id}$, if and only if $T$ is a $J$-unitary operator, $T^{*}JT = J$; and $T$ is an $h$-isometry, $T^{\dagger}T=\mathrm{id}$, if and only if $T^{*}JT = J$.

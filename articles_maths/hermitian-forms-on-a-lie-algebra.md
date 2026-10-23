@@ -32,7 +32,7 @@ which is conjugate-linear and is a bijection exactly when $H$ is non-degenerate;
 **Proposition.** The non-degenerate Hermitian forms on $\mathrm{G}$ are classified by their signature: over a complex vector space there is a basis in which $H$ has the form
 
 $$
-H(X,Y) = \sum_{i=1}^{p}X_i\overline{Y_i} - \sum_{j=p+1}^{n}X_j\overline{Y_j} ,
+\boxed{\;H(X,Y) = \sum_{i=1}^{p}X_i\overline{Y_i} - \sum_{j=p+1}^{n}X_j\overline{Y_j}\;} ,
 $$
 
 and the absolute value of the signature is the only invariant of the form up to linear isomorphism.
@@ -50,7 +50,7 @@ $$
 **Proposition.** The two conditions
 
 $$
-H([X,Y],Z) = H(X,[Y,Z]), \qquad H([X,Y],Z) + H(Y,[X,Z]) = 0
+\boxed{\;H([X,Y],Z) = H(X,[Y,Z]), \qquad H([X,Y],Z) + H(Y,[X,Z]) = 0\;}
 $$
 
 are equivalent, and under either of them the adjoint operator of $\operatorname{ad}_X$ with respect to $H$ is $-\operatorname{ad}_X$,
@@ -88,7 +88,7 @@ so the adjoint operators of the algebra are skew-Hermitian.
 **Theorem.** Let $\mathrm{G}$ be a real Lie algebra with an invariant Hermitian form $H$, and let $\sigma$ be the principal anti-automorphism of $\mathrm{U}(\mathrm{G})$. Then the adjoint operation for $H$ on the operators coincides with the star,
 
 $$
-\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X = \operatorname{ad}_{\sigma(X)} \qquad (X\in\mathrm{G}),
+\boxed{\;\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X = \operatorname{ad}_{\sigma(X)} \qquad (X\in\mathrm{G})\;},
 $$
 
 and a representation of $\mathrm{G}$ by skew-Hermitian operators with respect to $H$ is a star-representation of $\mathrm{U}(\mathrm{G})$; conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators are skew-Hermitian for $H$ is unitarisable.

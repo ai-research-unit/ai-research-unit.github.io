@@ -29,13 +29,13 @@ In the presence of (B2) and (B3) the axiom (B1) says that $\mathcal{B}$ is an **
 
 **Example (the bornology of a metric space).** Let $(X,d)$ be a metric space and let
 $$
-\mathcal{B}_d = \{ B \subseteq X : \operatorname{diam}_d(B) < \infty \}, \qquad \operatorname{diam}_d(B) = \sup \{ d(x,y) : x,y \in B \} .
+\boxed{\;\mathcal{B}_d = \{ B \subseteq X : \operatorname{diam}_d(B) < \infty \}, \qquad \operatorname{diam}_d(B) = \sup \{ d(x,y) : x,y \in B \}\;} .
 $$
 Then $\mathcal{B}_d$ is a bornology, the **metric bornology**, and it is the family of bounded sets of the metric in the usual sense. The metric bornology is unchanged when the metric is replaced by any metric that is **bornologically equivalent** to $d$, meaning that the identity is a bounded map in both directions; the truncated metric $\min(d,1)$ is not of this kind, since every set has diameter at most $1$ for it, so it induces the same topology as $d$ and the maximal bornology. The topology and the bornology of a metric space are thus independent data.
 
 **Example (the compact bornology).** Let $X$ be a locally compact Hausdorff space and let
 $$
-\mathcal{B}_c = \{ B \subseteq X : \overline{B} \text{ is compact} \}
+\boxed{\;\mathcal{B}_c = \{ B \subseteq X : \overline{B} \text{ is compact} \}\;}
 $$
 be the family of **relatively compact** subsets. Then $\mathcal{B}_c$ is a bornology: finite unions of relatively compact sets are relatively compact, subsets are, and the local compactness ensures that every point has a relatively compact neighbourhood, so the family covers $X$. It is the **compact bornology**, and on a compact space it is the maximal bornology. For a non-locally-compact space the relatively compact sets need not cover $X$, and then they form only a **bornological base**, not a bornology; the next subsection isolates the notion.
 

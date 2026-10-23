@@ -20,7 +20,7 @@ the signed sandwich with the two parameters conjugated and their order kept — 
 **Proposition (quoted).** The adjoints of the one-sided factors and of the grade involution for the standard form are
 
 $$
-L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha ,
+\boxed{\;L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha\;} ,
 $$
 
 so that the ordinary sandwich satisfies $T_{a,b}^{*}=T_{\hat a,\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.
@@ -30,8 +30,8 @@ so that the ordinary sandwich satisfies $T_{a,b}^{*}=T_{\hat a,\hat b}$ and the 
 **Theorem.** The adjoint of the signed sandwich is the signed sandwich by the conjugated parameters,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\,\alpha(\hat b)}
-=R_{\hat b}\,\alpha\,L_{\hat a} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\,\alpha(\hat b)}
+=R_{\hat b}\,\alpha\,L_{\hat a}\;} .
 $$
 
 **Proof.** The adjoint of a composite is the composite of the adjoints in the reverse order, so $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=(L_a\alpha R_b)^{*}=R_b^{*}\alpha^{*}L_a^{*}=R_{\hat b}\alpha L_{\hat a}$. Now $R_{\hat b}\alpha=\alpha R_{\alpha(\hat b)}$ and $L_{\alpha(\hat a)}\alpha=\alpha L_{\hat a}$, so the composite is $\alpha R_{\alpha(\hat b)}L_{\hat a}=L_{\alpha(\hat a)}\alpha R_{\alpha(\hat b)}$, which is the signed sandwich by $\alpha(\hat a)$ and $\alpha(\hat b)$ since the left and right multiplications commute.
@@ -45,9 +45,9 @@ $$
 **Proposition (composition law, quoted).** The composites of the two-sided family are
 
 $$
-\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\,\alpha(d)b} , \qquad
+\boxed{\;\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\,\alpha(d)b} , \qquad
 \Sigma^{\alpha}_{a,b}T_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} , \qquad
-T_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db} ,
+T_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db}\;} ,
 $$
 
 so the composite of two signed sandwiches is an **ordinary** sandwich, the two grade involutions cancelling.

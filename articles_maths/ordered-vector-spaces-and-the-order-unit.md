@@ -28,7 +28,7 @@ $$
 **Proposition.** The relation $\leq$ is a partial order; it is compatible with the linear operations,
 
 $$
-x \leq y \implies x + z \leq y + z, \qquad x \leq y \implies \lambda x \leq \lambda y \ \text{for } \lambda \geq 0,
+\boxed{\;x \leq y \implies x + z \leq y + z, \qquad x \leq y \implies \lambda x \leq \lambda y \ \text{for } \lambda \geq 0\;},
 $$
 
 and its positive part is $E_+$: $x\geq0$ exactly when $x\in E_+$. Conversely every partial order compatible with the linear operations and such that the order is determined by its positive part arises from the cone $E_+ = \{x : x\geq0\}$.
@@ -72,7 +72,7 @@ Equivalently, the order intervals $[-\lambda u,\lambda u]$ absorb $E$, so that $
 **Proposition (the order-unit norm).** Let $E$ be Archimedean with order unit $u$. The formula
 
 $$
-\|x\|_u = \inf\{\lambda > 0 : -\lambda u \leq x \leq \lambda u\}
+\boxed{\;\|x\|_u = \inf\{\lambda > 0 : -\lambda u \leq x \leq \lambda u\}\;}
 $$
 
 defines a norm on $E$, the **order-unit norm**, whose closed unit ball is the order interval $[-u,u]$, and for which $u$ has norm one.
@@ -82,7 +82,7 @@ defines a norm on $E$, the **order-unit norm**, whose closed unit ball is the or
 **Proposition (uniqueness up to equivalence).** Any two order units $u,v$ give equivalent order-unit norms: there are constants $0 < c\leq C$ with
 
 $$
-c\,\|x\|_u \leq \|x\|_v \leq C\,\|x\|_u
+\boxed{\;c\,\|x\|_u \leq \|x\|_v \leq C\,\|x\|_u\;}
 $$
 
 for all $x$, so the order topology does not depend on the order unit.

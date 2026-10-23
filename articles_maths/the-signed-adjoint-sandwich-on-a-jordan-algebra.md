@@ -37,7 +37,7 @@ $$
 **Theorem.** The grade involution $\alpha$ preserves the trace form,
 
 $$
-T(\alpha x,\alpha y) = T(x,y) , \qquad \text{hence} \qquad T(\alpha x,y) = T(x,\alpha y) , \qquad \alpha^{\dagger} = \alpha .
+\boxed{\;T(\alpha x,\alpha y) = T(x,y) , \qquad \text{hence} \qquad T(\alpha x,y) = T(x,\alpha y) , \qquad \alpha^{\dagger} = \alpha\;} .
 $$
 
 *Proof.* For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\bullet y)}) = \operatorname{tr}(\alpha L_{x\bullet y}\alpha^{-1}) = \operatorname{tr}(L_{x\bullet y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$.
@@ -51,7 +51,7 @@ $$
 **Theorem.** The adjoint of the symmetrised signed sandwich is the symmetrised signed sandwich at the images of the parameters:
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \bigl(U_{a,b}\circ\alpha\bigr)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \bigl(U_{a,b}\circ\alpha\bigr)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha = \Sigma^{\alpha}_{\alpha(a),\alpha(b)}\;} .
 $$
 
 *Proof.* The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{\dagger} = \Psi^{\dagger}\circ\Phi^{\dagger}$, so $(U_{a,b}\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ U_{a,b}^{\dagger} = \alpha\circ U_{a,b}$. Since $\alpha$ is an automorphism, $\alpha\,U_{a,b}\,\alpha^{-1} = U_{\alpha(a),\alpha(b)}$, that is $\alpha\,U_{a,b} = U_{\alpha(a),\alpha(b)}\,\alpha$; substituting gives the displayed sandwich. The symmetry $U_{a,b} = U_{b,a}$ of the quadratic representation leaves the parameter order, so only the images under $\alpha$ intervene.
@@ -75,7 +75,7 @@ $$
 **Theorem (the unitarity condition).** The signed sandwich is unitary with respect to the adjoint, $(\Sigma^{\alpha}_{a,b})^{\dagger}\Sigma^{\alpha}_{a,b} = \Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{a,b})^{\dagger} = \mathrm{id}$, exactly when the quadratic representation is an involution:
 
 $$
-U_{a,b}^2 = \mathrm{id} .
+\boxed{\;U_{a,b}^2 = \mathrm{id}\;} .
 $$
 
 *Proof.* $\Sigma^{\alpha}_{a,b}{}^{\dagger}\Sigma^{\alpha}_{a,b} = U_{\alpha(a),\alpha(b)}\alpha\,U_{a,b}\alpha = U_{\alpha(a),\alpha(b)}U_{\alpha(a),\alpha(b)}\alpha^2 = U_{\alpha(a),\alpha(b)}^2$, and similarly $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{a,b}{}^{\dagger} = U_{a,b}^2$; the two are the identity together exactly when $U_{a,b}^2 = \mathrm{id}$, equivalently $U_{\alpha(a),\alpha(b)}^2 = \mathrm{id}$.

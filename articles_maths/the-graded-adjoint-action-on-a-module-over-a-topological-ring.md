@@ -26,7 +26,7 @@ $$
 and the operators $L_r(m) = r\cdot m$ have adjoints $L_r^\dagger = L_{\sigma(r)}$ for the action, then the twisted multiplication has adjoint
 
 $$
-\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \delta = \sigma\alpha ,
+\boxed{\;\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \delta = \sigma\alpha\;} ,
 $$
 
 so the graded adjoint action is the graded action with the parameter replaced by its $\delta$-image, and the adjoint operation is an involution on the class of twisted left multiplications.
@@ -42,7 +42,7 @@ so the graded adjoint action is the graded action with the parameter replaced by
 **Corollary (the self-adjoint, unitary and involutive twisted multiplications).** The twisted left multiplication satisfies
 
 $$
-\bigl(\ell_r^\pi\bigr)^\dagger = \ell_r^\pi \iff \delta(r) = r , \qquad \bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \mathrm{id} \iff \delta(r)\alpha(r)\in K , \qquad \bigl(\ell_r^\pi\bigr)^2 = \mathrm{id} \iff r\alpha(r)\in K ,
+\boxed{\;\bigl(\ell_r^\pi\bigr)^\dagger = \ell_r^\pi \iff \delta(r) = r , \qquad \bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \mathrm{id} \iff \delta(r)\alpha(r)\in K , \qquad \bigl(\ell_r^\pi\bigr)^2 = \mathrm{id} \iff r\alpha(r)\in K\;} ,
 $$
 
 with $K$ the units inducing the grade involution, when the parametrisation is injective; in particular the graded adjoint action is self-adjoint exactly on the parameters fixed by the twist.
@@ -58,7 +58,7 @@ with $K$ the units inducing the grade involution, when the parametrisation is in
 **Corollary (the graded commutator and the sign rule).** On a genuinely graded module the twisted multiplications of homogeneous parameters satisfy the sign rule: the adjoint action of the odd part anticommutes with the parity operator in the sense that
 
 $$
-\ell_r^\pi\circ\pi = \pi\circ\ell_{\alpha(r)}^\pi ,
+\boxed{\;\ell_r^\pi\circ\pi = \pi\circ\ell_{\alpha(r)}^\pi\;} ,
 $$
 
 and the even part commutes with $\pi$; the obstruction to associativity of the twisted action is exactly the nonvanishing of the graded commutator on the odd part, as in *The Graded Action on a Module over a Topological Ring*.

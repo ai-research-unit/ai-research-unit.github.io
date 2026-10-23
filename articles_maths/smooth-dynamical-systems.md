@@ -20,7 +20,7 @@ No physics is invoked.
 **Theorem (existence, uniqueness and smooth dependence).** Let $M$ be a smooth manifold and $X \in\mathrm{X}(M)$. Then for every $p \in M$ there is a unique maximal integral curve through $p$, the domain $\mathcal D$ of the flow is open, the flow $\varphi:\mathcal D\to M$ is smooth, and for every $(t,p) \in\mathcal D$ the derivative $D_p\varphi_t$ is the fundamental matrix of the **variational equation**
 
 $$
-\left(d\Phi/dt\right)(t)=DX(\varphi_t(p))\,\Phi(t), \qquad \Phi(0)=\mathrm{id},
+\boxed{\;\left(d\Phi/dt\right)(t)=DX(\varphi_t(p))\,\Phi(t), \qquad \Phi(0)=\mathrm{id}\;},
 $$
 
 so the derivative of the flow solves the linearised equation along the orbit. If $M$ is compact, every vector field is complete.
@@ -72,7 +72,7 @@ and the **centre subspace** $E^c$ collects the eigenvalues on the imaginary axis
 **Theorem (stable manifold theorem).** Let $p$ be a hyperbolic fixed point of $X$ with $A=DX(p)$ and decomposition $T_pM=E^s\oplus E^u$. Then there are smooth *immersed* submanifolds $W^s(p)$ and $W^u(p)$, tangent at $p$ to $E^s$ and $E^u$, with
 
 $$
-W^s(p)=\{q:\varphi_t(q)\to p \text{ as } t\to+\infty\}, \qquad W^u(p)=\{q:\varphi_t(q)\to p \text{ as } t\to-\infty\},
+\boxed{\;W^s(p)=\{q:\varphi_t(q)\to p \text{ as } t\to+\infty\}, \qquad W^u(p)=\{q:\varphi_t(q)\to p \text{ as } t\to-\infty\}\;},
 $$
 
 of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent spaces vary smoothly. The theorem, its global form and the Hadamard–Perron construction of the manifolds are developed.
@@ -120,7 +120,7 @@ of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent 
 **Theorem (index and the Poincaré–Hopf theorem).** (i) The index of an isolated zero is an integer, independent of the circle chosen small enough, and invariant under smooth changes of coordinates and under homotopies of $X$ that do not introduce zeros on the circle. (ii) If $\Omega$ is a domain with finitely many zeros of $X$ in its interior and no zeros on its boundary, then
 
 $$
-\operatorname{ind}_\Omega(X)=\sum_{p:X(p)=0}\operatorname{ind}_p(X).
+\boxed{\;\operatorname{ind}_\Omega(X)=\sum_{p:X(p)=0}\operatorname{ind}_p(X)\;}.
 $$
 
 (iii) If $M$ is a closed oriented surface and $X$ a smooth vector field on $M$ with finitely many zeros, then the sum of the indices of the zeros equals the Euler characteristic $\chi(M)$; in particular the sphere has no nonvanishing vector field, and the index of a source, a sink or a saddle is $+1,+1,-1$ respectively. The theorem is the Poincaré–Hopf theorem of *Differential Topology* and *Degree Theory and the Brouwer Fixed Point Theorem*, where the degree and the winding number are developed.

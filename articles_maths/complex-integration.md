@@ -171,8 +171,7 @@ The winding number therefore depends only on the homotopy class of the path in $
 
 **Theorem (Cauchy–Goursat).** Let $f$ be holomorphic on an open set $\Omega$ and let $T$ be a closed triangle whose interior and boundary lie in $\Omega$. Then
 
-$$
-\oint_{\partial T} f(Q) \, dQ = 0 .
+$$ \boxed{\;\oint_{\partial T} f(Q) \, dQ = 0 \;}.
 $$
 
 **Proof.** Let $I = \oint_{\partial T} f \, dQ$ and subdivide $T$ by joining the midpoints of its sides into four congruent triangles $T_1, T_2, T_3, T_4$. The integrals over the interior edges cancel in pairs, so
@@ -255,8 +254,7 @@ This homological form is the sharp statement of the theorem: it is the hypothesi
 
 **Theorem (Cauchy integral formula).** Let $f$ be holomorphic on a domain $\Omega$ and let $\gamma$ be a cycle in $\Omega$ homologous to zero in $\Omega$. Then for every $Q \in \Omega \setminus \gamma^*$,
 
-$$
-f(Q) \operatorname{Ind}(\gamma, Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 .
+$$ \boxed{\;f(Q) \operatorname{Ind}(\gamma, Q) = \frac{1}{2\pi i} \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 \;}.
 $$
 
 **Proof.** Fix $Q \in \Omega \setminus \gamma^*$ and define
@@ -377,8 +375,7 @@ $$
 
 **Theorem (residue theorem).** Let $f$ be holomorphic on a domain $\Omega$ except for isolated singularities $Q_1, Q_2, \dots$, and let $\gamma$ be a cycle in $\Omega$ avoiding the singularities and homologous to zero in $\Omega$. Then
 
-$$
-\frac{1}{2\pi i} \oint_\gamma f(Q) \, dQ = \sum_k \operatorname{Ind}(\gamma, Q_k) \operatorname{Res}(f, Q_k),
+$$ \boxed{\;\frac{1}{2\pi i} \oint_\gamma f(Q) \, dQ = \sum_k \operatorname{Ind}(\gamma, Q_k) \operatorname{Res}(f, Q_k)\;},
 $$
 
 the sum being over the finitely many singularities of $f$ enclosed by $\gamma$.

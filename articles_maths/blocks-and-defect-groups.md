@@ -42,7 +42,7 @@ on the class sums $C$ of the conjugacy classes with representative $g_C$; it is 
 **Definition.** Let $\chi$ be an ordinary irreducible character of $G$ and let $p^a$ be the exact power of $p$ dividing $\lvert G\rvert$. The **defect** of $\chi$ is
 
 $$
-d(\chi) = a-v_p\bigl(\chi(1)\bigr),
+\boxed{\;d(\chi) = a-v_p\bigl(\chi(1)\bigr)\;},
 $$
 
 an integer between $0$ and $a$; the integer $p^{d(\chi)}$ is the **defect** of the character, and a character of defect zero is one whose degree is divisible by the full power $p^a$.

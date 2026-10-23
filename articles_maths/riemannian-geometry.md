@@ -68,7 +68,7 @@ $$
 **Theorem (fundamental theorem).** On a Riemannian manifold there is exactly one connection that is both metric and torsion-free, the **Levi-Civita connection**, given by the Koszul formula
 
 $$
-2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]).
+\boxed{\;2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y])\;}.
 $$
 
 **Proof.** The right-hand side is $C^\infty(M)$-linear in $X, Y, Z$, hence a tensor, and nondegeneracy of $g$ determines $\nabla_XY$; the two properties follow by substitution, the metricity from the first three terms and the torsion-freeness from the last three.
@@ -206,7 +206,7 @@ where $D/dt$ is the covariant derivative along $\gamma$. The Jacobi equation is 
 In the constant-curvature model the comparison fields are explicit: with $s(t)$ for the solution of the model Jacobi equation,
 
 $$
-s_{K_c}(t) = \begin{cases} \sin(t\sqrt{K_c})/\sqrt{K_c}, & K_c > 0, \\ t, & K_c = 0, \\ \sinh(t\sqrt{-K_c})/\sqrt{-K_c}, & K_c < 0. \end{cases}
+\boxed{\;s_{K_c}(t) = \begin{cases} \sin(t\sqrt{K_c})/\sqrt{K_c}, & K_c > 0, \\ t, & K_c = 0, \\ \sinh(t\sqrt{-K_c})/\sqrt{-K_c}, & K_c < 0. \end{cases}\;}
 $$
 
 **Proof sketch.** One compares the two scalar functions $|J|^2$ and the model $s^2$ by means of the Riccati equation satisfied by the logarithmic derivative of $|J|$ and the Sturm comparison theorem for ordinary differential equations; the argument belongs to Part III.
@@ -284,7 +284,7 @@ $$
 **Theorem (Gauss–Bonnet, surface case).** For a compact oriented Riemannian surface $M$ with Gaussian curvature $K$ and volume form $\mathrm{vol}_g$,
 
 $$
-\int_M K\,\mathrm{vol}_g = 2\pi\,\chi(M).
+\boxed{\;\int_M K\,\mathrm{vol}_g = 2\pi\,\chi(M)\;}.
 $$
 
 **Theorem (generalised Gauss–Bonnet–Chern).** For a compact oriented Riemannian manifold of even dimension $2k$, the integral of the Pfaffian of the curvature form is the Euler characteristic:

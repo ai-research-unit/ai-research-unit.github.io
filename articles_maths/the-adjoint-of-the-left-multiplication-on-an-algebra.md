@@ -13,7 +13,7 @@ Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensiona
 **Theorem.** For all $a,b \in A$,
 
 $$
-\langle L_ax,y\rangle=\langle x,R_ay\rangle, \qquad \langle R_bx,y\rangle=\langle x,L_by\rangle,
+\boxed{\;\langle L_ax,y\rangle=\langle x,R_ay\rangle, \qquad \langle R_bx,y\rangle=\langle x,L_by\rangle\;},
 $$
 
 so $L_a^{*}=R_a$ and $R_b^{*}=L_b$: the adjoint of the left multiplication is the right multiplication by the same element, and conversely. The adjoint operation therefore **exchanges** the two sides of the regular representation.
@@ -72,7 +72,7 @@ which is the two-sided multiplication by $a$ on the two sides; the skew part is 
 **Theorem (the inner derivation is skew-adjoint).** The inner derivation $D_a=L_a-R_a$ satisfies
 
 $$
-D_a^{*}=R_a-L_a=-D_a
+\boxed{\;D_a^{*}=R_a-L_a=-D_a\;}
 $$
 
 for the plain pairing, so the inner derivations are skew-adjoint operators; for the twisted pairing $D_a^{*_\sigma}=D_{\sigma(a)}$, so $D_a$ is skew-adjoint for the twisted pairing exactly when $\sigma(a)=-a$, that is when $a$ is a skew element.
@@ -84,7 +84,7 @@ for the plain pairing, so the inner derivations are skew-adjoint operators; for 
 **Theorem.** The left multiplication $L_a$ is unitary for the plain pairing exactly when $a$ is a central involution,
 
 $$
-L_a^{*}L_a=L_aL_a^{*}=\mathrm{id} \iff a^{2}=1 \text{ and } a \in Z(A),
+\boxed{\;L_a^{*}L_a=L_aL_a^{*}=\mathrm{id} \iff a^{2}=1 \text{ and } a \in Z(A)\;},
 $$
 
 and unitary for the twisted pairing exactly when $a$ is unitary in the algebra,

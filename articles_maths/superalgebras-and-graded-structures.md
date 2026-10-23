@@ -58,7 +58,7 @@ $$
 **Proposition.** $A \otimes_R B$ is associative if $A$ and $B$ are; it is supercommutative if $A$ and $B$ are; and the exterior algebra satisfies
 
 $$
-\Lambda(M \oplus N) \cong \Lambda(M) \otimes_R \Lambda(N)
+\boxed{\;\Lambda(M \oplus N) \cong \Lambda(M) \otimes_R \Lambda(N)\;}
 $$
 
 as superalgebras, which is the isomorphism of *The Exterior Algebra* with the graded tensor product reinterpreted as a super tensor product.
@@ -170,7 +170,7 @@ In each case $\operatorname{str}(XY) = (-1)^{|X||Y|}\operatorname{str}(YX)$, and
 **Proposition.** In a supercommutative algebra, the even part is commutative, the odd part is a module over the even part, and the product of two odd elements is even and symmetric: for odd $a, b, c$,
 
 $$
-abc = -cba, \qquad (ab)c = c(ab), \qquad (ab)c = (bc)a.
+\boxed{\;abc = -cba, \qquad (ab)c = c(ab), \qquad (ab)c = (bc)a\;}.
 $$
 
 **Proof.** For odd $a, b$ the sign in $ab = -ba$ is $-1$, and the product $ab$ is even, so it commutes with $c$: $(ab)c = c(ab)$. Associativity and the anticommutativity of odd elements give $cba = (cb)a = -(bc)a = -a(bc) = -(ab)c$, which is $abc = -cba$; the last identity is the same computation with the letters cyclically permuted.
@@ -192,7 +192,7 @@ The two expressions agree over a supercommutative algebra, and the Berezinian is
 **Theorem.** The Berezinian is multiplicative:
 
 $$
-\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)
+\boxed{\;\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)\;}
 $$
 
 for even supermatrices with invertible even diagonal blocks, and it is characterised by the two properties $\operatorname{Ber}\!\begin{pmatrix} A & 0 \\ 0 & D\end{pmatrix} = \det(A)\det(D)^{-1}$ and multiplicativity.

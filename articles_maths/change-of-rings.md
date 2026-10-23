@@ -70,7 +70,7 @@ This is **extension of scalars** along $\varphi$. Its elements are finite sums $
 **Proposition.** Extension of scalars is right exact and preserves direct sums and free modules:
 
 $$
-B\otimes_A A \cong B, \qquad B\otimes_A A^n \cong B^n, \qquad B\otimes_A \Bigl(\bigoplus_i M_i\Bigr)\cong\bigoplus_i (B\otimes_A M_i).
+\boxed{\;B\otimes_A A \cong B, \qquad B\otimes_A A^n \cong B^n, \qquad B\otimes_A \Bigl(\bigoplus_i M_i\Bigr)\cong\bigoplus_i (B\otimes_A M_i)\;}.
 $$
 
 It preserves projective modules, and it carries the regular module ${}_A A$ to the regular module ${}_B B$.
@@ -130,7 +130,7 @@ $$
 for ${}_A M$, ${}_B N$, ${}_B N'$. Equivalently, there is an adjoint triple
 
 $$
-\varphi_! \dashv \operatorname{Res}_\varphi \dashv \varphi_*.
+\boxed{\;\varphi_! \dashv \operatorname{Res}_\varphi \dashv \varphi_*\;}.
 $$
 
 *Proof.* The first isomorphism is the tensor–hom adjunction applied to the $(B,A)$-bimodule $B$, with $\operatorname{Hom}_B(B,N)\cong \operatorname{Res}_\varphi N$. The second is the same adjunction applied to the $(A,B)$-bimodule $B$, giving $\operatorname{Hom}_B(N',\operatorname{Hom}_A(B,N))\cong\operatorname{Hom}_A(B\otimes_B N',N)\cong\operatorname{Hom}_A(\operatorname{Res}_\varphi N',N)$. Both are natural in all variables.
@@ -221,7 +221,7 @@ The central result of the article is that flatness of the bimodule ${}_B B_A$ is
 *Proof.* Let $X$ be a right $A$-module. By associativity of the balanced product of *The Balanced Product over an Algebra*, applied to the right $A$-module $X$, the $(A,B)$-bimodule $B$ (through $\varphi$; its left $A$-action is $a\cdot b=\varphi(a)b$, and its right $B$-action is multiplication in $B$, the right $A$-module structure entering only through the flatness hypothesis) and the left $B$-module $N$,
 
 $$
-X\otimes_A \operatorname{Res}_\varphi N \cong (X\otimes_A B)\otimes_B N.
+\boxed{\;X\otimes_A \operatorname{Res}_\varphi N \cong (X\otimes_A B)\otimes_B N\;}.
 $$
 
 The functor $X\mapsto X\otimes_A B$ is exact on right $A$-modules because $B$ is flat as a right $A$-module, and $-\otimes_B N$ is exact because $N$ is a flat left $B$-module; the composite is exact, so $\operatorname{Res}_\varphi N$ is flat.

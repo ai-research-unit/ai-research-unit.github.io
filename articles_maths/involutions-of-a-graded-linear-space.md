@@ -25,7 +25,7 @@ $$
 onto the two parts. Conversely, for every linear involution $T$ of $V$ the decomposition
 
 $$
-V_0 = \ker(T-\mathrm{id}) = V_+, \qquad V_1 = \ker(T+\mathrm{id}) = V_-
+\boxed{\;V_0 = \ker(T-\mathrm{id}) = V_+, \qquad V_1 = \ker(T+\mathrm{id}) = V_-\;}
 $$
 
 is a grading, and the grade involution of that grading is $T$ itself.
@@ -45,7 +45,7 @@ is a grading, and the grade involution of that grading is $T$ itself.
 **Proposition.** For a graded space $V$, every endomorphism $X \in E = \operatorname{End}_F(V)$ is uniquely $X = X_0 + X_1$ with $X_0$ even and $X_1$ odd, and
 
 $$
-E = E_0 \oplus E_1 , \qquad E_0 = \{X : \alpha X \alpha = X\} , \qquad E_1 = \{X : \alpha X \alpha = -X\} .
+\boxed{\;E = E_0 \oplus E_1 , \qquad E_0 = \{X : \alpha X \alpha = X\} , \qquad E_1 = \{X : \alpha X \alpha = -X\}\;} .
 $$
 
 The conjugation $\Phi_\alpha(X) = \alpha X \alpha$ is an involution of the linear space $E$, equal to the grade involution of the grading $E = E_0 \oplus E_1$; its type is $(p^2+q^2, 2nm)$ with $p=\dim V_0$ and $q=\dim V_1$, and its trace is $(n-m)^2$.
@@ -61,7 +61,7 @@ The conjugation $\Phi_\alpha(X) = \alpha X \alpha$ is an involution of the linea
 **Proposition (the graded dual).** The dual of a graded space is graded by
 
 $$
-(V^{*})_0 = (V_1)^{0}, \qquad (V^{*})_1 = (V_0)^{0} ,
+\boxed{\;(V^{*})_0 = (V_1)^{0}, \qquad (V^{*})_1 = (V_0)^{0}\;} ,
 $$
 
 where the first is the set of functionals vanishing on $V_1$ and the second the set vanishing on $V_0$; equivalently $(V^{*})_i \cong (V_i)^{*}$, and the transposed involution $\alpha^{*}$ is the grade involution of $V^{*}$.

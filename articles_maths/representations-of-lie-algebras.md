@@ -204,7 +204,7 @@ the sum of the fundamental weights; it satisfies $\langle\rho, \alpha_i^\vee\ran
 **Theorem (Weyl character formula).** For every $\lambda \in P^+$,
 
 $$
-\operatorname{ch} V(\lambda) = \frac{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\lambda + \rho))}{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\rho))},
+\boxed{\;\operatorname{ch} V(\lambda) = \frac{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\lambda + \rho))}{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\rho))}\;},
 $$
 
 where $\ell(w)$ is the length of $w$ in the Weyl group. The denominator is the **Weyl denominator**
@@ -218,7 +218,7 @@ $$
 **Theorem (Weyl dimension formula).** For $\lambda \in P^+$,
 
 $$
-\dim_K V(\lambda) = \prod_{\alpha \in \Phi^+} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}.
+\boxed{\;\dim_K V(\lambda) = \prod_{\alpha \in \Phi^+} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}\;}.
 $$
 
 **Proof.** Evaluate the character formula at the identity by applying the ring homomorphism $\exp(\lambda) \mapsto 1$ together with the derivatives in the direction of $\rho$; the limit is finite and yields the product formula.
@@ -238,7 +238,7 @@ as it must. For $\mathrm{SL}(3)$ with $\lambda = a\omega_1 + b\omega_2$, the pos
 **Theorem (Kostant).** The multiplicity of the weight $\mu$ in $V(\lambda)$ is
 
 $$
-m_{V(\lambda)}(\mu) = \sum_{w \in W} (-1)^{\ell(w)}\, \mathcal{P}\bigl(w(\lambda + \rho) - (\mu + \rho)\bigr).
+\boxed{\;m_{V(\lambda)}(\mu) = \sum_{w \in W} (-1)^{\ell(w)}\, \mathcal{P}\bigl(w(\lambda + \rho) - (\mu + \rho)\bigr)\;}.
 $$
 
 **Proof sketch.** The character formula is rewritten using $\prod_{\alpha>0}(1 - \exp(-\alpha))^{-1} = \sum_{\nu} \mathcal{P}(\nu) e^{\nu}$, the generating function of the partition function; comparing coefficients of $e^\mu$ on both sides gives the formula.

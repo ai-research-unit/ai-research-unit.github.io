@@ -32,7 +32,7 @@ Throughout, $\infty$-category means $(\infty,1)$-category: all $k$-morphisms for
 **Definition.** A **Segal space** is a simplicial space $X : \Delta^{\mathrm{opp}} \to \mathbf{sSet}$, $[n]\mapsto X_n$, such that the **Segal maps**
 
 $$
-X_n \longrightarrow X_1 \times_{X_0} X_1 \times_{X_0} \cdots \times_{X_0} X_1 \qquad (n \text{ factors})
+\boxed{\;X_n \longrightarrow X_1 \times_{X_0} X_1 \times_{X_0} \cdots \times_{X_0} X_1 \qquad (n \text{ factors})\;}
 $$
 
 are weak equivalences of simplicial sets for $n \geq 2$, the fibre products being taken over the face maps $X_1 \to X_0$. A **complete Segal space** is a Segal space such that the map $X_0 \to X_1^{\mathrm{eq}}$, from the objects to the space of equivalences, is a weak equivalence, where $X_1^{\mathrm{eq}} \subseteq X_1$ is the union of the components of $X_1$ whose images in $\pi_0$ are isomorphisms.

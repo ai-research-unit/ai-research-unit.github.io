@@ -22,7 +22,7 @@ A perfect pairing is nondegenerate and reflexive, and for each $y$ the functiona
 **Theorem (the adjoint exists).** For every $T \in E$ and every $y \in V$ there is a unique $T^{*}y \in V$ with
 
 $$
-B(Tx,y) = B(x,T^{*}y) \quad \text{for all } x \in V .
+\boxed{\;B(Tx,y) = B(x,T^{*}y) \quad \text{for all } x \in V\;} .
 $$
 
 The assignment $T \mapsto T^{*}$ is well defined, and it is an **involution of the ring $E$**: it is additive, $(ST)^{*} = T^{*}S^{*}$, $\mathrm{id}^{*} = \mathrm{id}$, and $(T^{*})^{*} = T$.
@@ -36,13 +36,13 @@ The assignment $T \mapsto T^{*}$ is well defined, and it is an **involution of t
 **Definition.** The **unitary elements** of $(E,B)$ are
 
 $$
-\mathrm{U}(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}.
+\boxed{\;\mathrm{U}(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}\;}.
 $$
 
 **Proposition.** $\mathrm{U}(V,B)$ is a subgroup of the unit group $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,
 
 $$
-T \in \mathrm{U}(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V .
+\boxed{\;T \in \mathrm{U}(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V\;} .
 $$
 
 **Proof.** If $T$ is unitary then $B(Tx,Ty) = B(T^{*}Tx,y) = B(x,y)$, using the defining identity for $T^{*}$ with the pair $(Tx,y)$ replaced by $(x,Ty)$; conversely, if $T$ preserves $B$ then $B(x,T^{*}Ty) = B(Tx,Ty) = B(x,y)$ for all $x$, so $T^{*}T = \mathrm{id}$ by nondegeneracy, and the same argument on the other side gives $TT^{*} = \mathrm{id}$. The product of two unitary elements is unitary because the adjoint is anti-multiplicative, $(ST)^{*}(ST) = T^{*}S^{*}ST = T^{*}T = \mathrm{id}$, and the inverse of a unitary element is unitary because $T^{*} = T^{-1}$.

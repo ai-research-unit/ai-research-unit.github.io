@@ -156,7 +156,9 @@ $$
 The inner sum is the standard orthogonality relation:
 
 $$
+\boxed{\;
 \sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+\;}
 $$
 
 which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
@@ -176,7 +178,9 @@ For a signal $f$ that takes values in the quaternion subspace $\mathbb{H}_{\math
 **Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ be a real quaternion-valued signal, and let $F$ be its discrete split-biquaternion Fourier transform with respect to a root $\rho$. Then
 
 $$
-F[N-u] = \overline{F[u]}, \qquad u = 1, \ldots, N-1.
+\boxed{\;
+F[N-u] = \overline{F[u]}, \qquad u = 1, \ldots, N-1
+\;}.
 $$
 
 **Proof.** The proof uses the reality of $f$, i.e., $\overline{f[n]} = f[n]$ for every $n$, and the identity
@@ -284,7 +288,9 @@ $$
 Then
 
 $$
-\mathcal{F}[f * g][u] = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u],
+\boxed{\;
+\mathcal{F}[f * g][u] = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u]
+\;},
 $$
 
 where the product on the right is the split biquaternion product.

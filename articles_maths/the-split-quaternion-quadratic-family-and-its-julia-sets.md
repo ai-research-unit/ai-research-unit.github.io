@@ -27,8 +27,8 @@ the boundedness being with respect to the Euclidean norm $|\cdot|$.
 $$
 \boxed{\;
 \mathcal{C}=\{\tilde q : q_t=0\}\cup\{\tilde q : \langle\tilde q\rangle_{\natural}=0\}
-\;}
-$$.
+\;}.
+$$
 
 *Proof.* Under the matrix model $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ the differential is $h\mapsto qh+hq$; if $q$ has eigenvalues $\lambda_1,\lambda_2$ then this map has eigenvalues $\lambda_i+\lambda_j$ on the basis $v_iv_j^{\!\top}$, so it is singular exactly when some pair of eigenvalues sums to zero. For real eigenvalues this means $\lambda_1+\lambda_2=2q_t=0$, or $\lambda_1\lambda_2=\langle\tilde q\rangle_{\natural}=0$; for a conjugate complex pair it means $2\operatorname{Re}\lambda=2q_t=0$. Hence the condition is $q_t=0$ or $\langle\tilde q\rangle_{\natural}=0$. The verification at the nilpotent $\vec e_x+\vec e_y$ (kernel containing $\vec e_x$) and at the invertible element $\vec e_y+\vec e_z$ (kernel containing $\vec e_x$) is recorded in the companion file.
 
@@ -65,8 +65,8 @@ $$.
 $$
 \boxed{\;
 f_{\operatorname{Ad}_{\tilde u}(c)}\circ\operatorname{Ad}_{\tilde u}=\operatorname{Ad}_{\tilde u}\circ f_c
-\;}
-$$.
+\;}.
+$$
 
 The inner automorphisms form the group of all automorphisms of the algebra over $\mathbb{R}$, isomorphic to $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$, acting on the vector subspace by the adjoint representation of *Split-Quaternion Rotations and the Lorentz Group*. Consequently $K_{\operatorname{Ad}_{\tilde u}c}=\operatorname{Ad}_{\tilde u}K_c$.
 
@@ -91,8 +91,8 @@ The inner automorphisms form the group of all automorphisms of the algebra over 
 $$
 \boxed{\;
 A_{\pm}^{(n+1)}=\bigl(A_\pm^{(n)}\bigr)^2+C_\pm , \qquad A_\pm^{(0)}=\text{the components of } A , \quad C_\pm=\text{the components of } c
-\;}
-$$.
+\;}.
+$$
 
 Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each idempotent direction**; and in the complex case $\langle \vec c\rangle_{\natural}>0$ the corresponding statement is a single complex orbit.
 

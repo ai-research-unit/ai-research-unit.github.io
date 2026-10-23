@@ -33,7 +33,7 @@ The relation $\mu(T^{-1}A)=\mu(A)$ is exactly the statement that $U_T$ is an **i
 **Theorem (the adjoint is the Perron–Frobenius operator).** Let $T$ preserve $\mu$ and let $U_T^*$ be the adjoint. Then $U_T^*$ is the **Perron–Frobenius operator** $P_T$, characterised by
 
 $$
-\int_A P_Tg\,d\mu=\int_{T^{-1}A}g\,d\mu \qquad \text{for all measurable } A,
+\boxed{\;\int_A P_Tg\,d\mu=\int_{T^{-1}A}g\,d\mu \qquad \text{for all measurable } A\;},
 $$
 
 and equivalently by $\int_X (U_Tf)\,g\,d\mu=\int_X f\,(P_Tg)\,d\mu$; if $T$ is invertible and measure-preserving, then $P_T=U_{T^{-1}}$ and $U_T^*=U_T^{-1}$, so that the adjoint is again a Koopman operator and the operator is unitary.
@@ -43,7 +43,7 @@ and equivalently by $\int_X (U_Tf)\,g\,d\mu=\int_X f\,(P_Tg)\,d\mu$; if $T$ is i
 **Theorem (the pointwise formula).** Let $T$ be a smooth expanding map of a compact manifold preserving the measure with density $\rho$, and let $P_T$ act on functions; then
 
 $$
-(P_Tg)(x)=\sum_{y:\,T(y)=x}\frac{g(y)}{|\det DT(y)|}\cdot\frac{\rho(y)}{\rho(x)},
+\boxed{\;(P_Tg)(x)=\sum_{y:\,T(y)=x}\frac{g(y)}{|\det DT(y)|}\cdot\frac{\rho(y)}{\rho(x)}\;},
 $$
 
 that is, the sum over the preimages of $x$ of the value of $g$ divided by the Jacobian and weighted by the density ratio; in the case of the density $\rho=1$ of the Lebesgue measure of the doubling map the formula reduces to $P_Tg(x)=\tfrac12[g(x/2)+g((x+1)/2)]$, verified below.
@@ -79,7 +79,7 @@ to $3\times10^{-17}$, so that the adjoint has the eigenvalues $2^{-n}$ with the 
 **Theorem (the reversible Koopman operator).** Let $T$ be reversible with reversor $R$, $RTR=T^{-1}$, and suppose that $R$ preserves the measure $\mu$. Then the Koopman operator $U_R$ is unitary and
 
 $$
-U_T^*=U_{T^{-1}}=U_R\,U_T\,U_R,
+\boxed{\;U_T^*=U_{T^{-1}}=U_R\,U_T\,U_R\;},
 $$
 
 so that $U_T$ is conjugated to its inverse by the involution $U_R$; equivalently $U_T^*U_R=U_RU_T$, and the pair $(U_T,U_R)$ is a **reversible operator** structure: the unitary involution $U_R$ reverses the operator, in the exact operator analogue of the reversibility of the dynamics.

@@ -23,7 +23,7 @@ the usual graph energy of the level-$n$ graph of *Graph Theory*, and the **level
 **Theorem (the renormalisation of the energy and of the resistance).** Let $u$ be harmonic at every interior vertex of level $n$ and let $u_{\mathrm{ext}}$ be its harmonic extension to the level $n+1$. Then $\mathcal{E}_{n+1}(u_{\mathrm{ext}})=\tfrac35\mathcal{E}_n(u)$; equivalently the effective resistance of the level-$n$ graph between two boundary points is $R_n=(\tfrac53)^n R_0$. In particular the **Dirichlet form**
 
 $$
-\mathcal{E}(u)=\lim_{n\to\infty}\Bigl(\frac53\Bigr)^n\mathcal{E}_n(u)
+\boxed{\;\mathcal{E}(u)=\lim_{n\to\infty}\Bigl(\frac53\Bigr)^n\mathcal{E}_n(u)\;}
 $$
 
 exists for every function of finite energy and is finite exactly on the functions of the domain of the generator.
@@ -67,7 +67,7 @@ the renormalised limit of the graph Laplacians.
 
 **Theorem (spectral decimation).** If $-\Delta_mu=\lambda_mu$ on $V_m$ for all sufficiently large $m$, then the limit $\lambda=\tfrac32\lim_m5^m\lambda_m$ exists and $-\Delta u=\lambda u$; the sequence is governed by the **decimation relation**
 $$
-\lambda_m(5-\lambda_m)=\lambda_{m-1},
+\boxed{\;\lambda_m(5-\lambda_m)=\lambda_{m-1}\;},
 $$
 so that the decimation polynomial is $R(z)=z(5-z)$: every eigenvalue at one level is a preimage of an eigenvalue at the previous level. The values $2$, $5$ and $6$ are **forbidden** — the relation does not determine the level above them — and the eigenfunctions are born in two ways: the seeds $\lambda_1=2$ and $\lambda_1=5$ at the first level, and at a level $m_0\ge2$ the seeds $\lambda_{m_0}=5$ and $\lambda_{m_0}=6$, the value $6$ descending to $\lambda_{m_0+1}=3$ because $3(5-3)=6$.
 
@@ -91,7 +91,7 @@ the values $0.438447$ and $4.561553$ being the roots of $z^2-5z+2$ — the preim
 
 **Theorem (the spectral dimension).** The eigenvalues of the Laplacian are pure point, and
 $$
-N(\lambda)\asymp\lambda^{d_s/2},\qquad d_s=\frac{2\log3}{\log5}=1.365212\ldots,
+\boxed{\;N(\lambda)\asymp\lambda^{d_s/2},\qquad d_s=\frac{2\log3}{\log5}=1.365212\ldots\;},
 $$
 the **spectral dimension** of the gasket.
 

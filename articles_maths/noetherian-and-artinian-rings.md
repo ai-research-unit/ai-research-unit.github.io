@@ -67,7 +67,7 @@ The descending chain condition has no description by finite generation: $\mathbb
 **Proposition.** Let $R$ be an Artinian commutative ring and let $x \in R$. Then the chain of principal ideals
 
 $$
-(x) \supseteq (x^2) \supseteq (x^3) \supseteq \cdots
+\boxed{\;(x) \supseteq (x^2) \supseteq (x^3) \supseteq \cdots\;}
 $$
 
 stabilises; that is, there is $n \geq 1$ with $x^n = x^{n+1} y$ for some $y \in R$.
@@ -209,13 +209,13 @@ The Akizuki–Hopkins theorem reduces the study of Artinian rings to that of Noe
 **Theorem.** Let $R$ be a commutative Artinian ring. Then $R$ has finitely many maximal ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$, the ideals $\mathrm{M}_1, \ldots, \mathrm{M}_r$ are pairwise comaximal, and the natural map
 
 $$
-R \longrightarrow R/\mathrm{M}_1^{n_1} \times \cdots \times R/\mathrm{M}_r^{n_r}
+\boxed{\;R \longrightarrow R/\mathrm{M}_1^{n_1} \times \cdots \times R/\mathrm{M}_r^{n_r}\;}
 $$
 
 is an isomorphism for every $n_i \geq 1$ with $\mathrm{N}^{n_i} \subseteq \mathrm{M}_i^{n_i}$; in particular
 
 $$
-R \;\cong\; R_{\mathrm{M}_1} \times \cdots \times R_{\mathrm{M}_r},
+\boxed{\;R \;\cong\; R_{\mathrm{M}_1} \times \cdots \times R_{\mathrm{M}_r}\;},
 $$
 
 a finite product of Artinian local rings, where $R_{\mathrm{M}_i}$ is the localization of $R$ at $\mathrm{M}_i$.

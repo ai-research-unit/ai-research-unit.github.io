@@ -23,10 +23,8 @@ $$
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The **central square** is
 
 $$
-\boxed{\;
-\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2
-\;}
-$$.
+\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2.
+$$
 
 The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
@@ -117,8 +115,8 @@ $$
 $$
 \boxed{\;
 \tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_x^2+\Xi_y^2+\Xi_z^2=0
-\;}
-$$,
+\;},
+$$
 
 that is, writing $\Xi_k=\xi_k+i\xi'_k$, the pair of real equations $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$. Its nonzero elements are the nilpotents of the algebra.
 
@@ -205,8 +203,8 @@ that is $\sum_kp_k^2=\sum_k(p'_k)^2$ and $\sum_kp_kp'_k=0$: the two real parts o
 $$
 \boxed{\;
 \{\tilde\Upsilon=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z : Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0\}
-\;}
-$$,
+\;},
+$$
 
 a complex cone of complex dimension two and real dimension four, a four-real-parameter family. Its nonzero elements are written
 
@@ -217,7 +215,9 @@ $$
 and equivalently, with $r>0$ and $\vec u_p,\vec u_{p'}$ the two orthogonal real unit directions, so that $r^2=\vec p\cdot\vec p=\vec p'\cdot\vec p'$,
 
 $$
-\tilde\Upsilon=r(\vec u_p+i\vec u_{p'}),\qquad r>0,\qquad \vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1,\qquad \vec u_p\cdot\vec u_{p'}=0 .
+\boxed{\;
+\tilde\Upsilon=r(\vec u_p+i\vec u_{p'}),\qquad r>0,\qquad \vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1,\qquad \vec u_p\cdot\vec u_{p'}=0
+\;}.
 $$
 
 **Proof.** The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^3$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\vec p$ and the imaginary part $\vec p'$ are orthogonal and have equal sum of squares, which is the stated form; conversely such a pair satisfies both.

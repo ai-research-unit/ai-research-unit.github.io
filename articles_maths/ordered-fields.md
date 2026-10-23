@@ -75,7 +75,7 @@ The order is **translation invariant** by (O1) and **multiplication by nonnegati
 **Definition.** The **positive cone** of an ordered field $F$ is
 
 $$
-P = \{x \in F : x > 0\}.
+\boxed{\;P = \{x \in F : x > 0\}\;}.
 $$
 
 **Theorem.** The positive cone $P$ of an ordered field satisfies
@@ -109,7 +109,7 @@ is a total order making $F$ an ordered field with positive cone $P$.
 **Proof.** (a) Each square is $\geq 0$ by the basic-rules theorem, a sum of nonnegative elements is $\geq 0$, and a sum of nonnegative elements is $0$ only if every term is $0$, since a positive term would make the sum positive. (b) In characteristic $\neq 2$, and here $\operatorname{char} F = 0$,
 
 $$
-x = \left(\frac{x+1}{2}\right)^2 - \left(\frac{x-1}{2}\right)^2 .
+\boxed{\;x = \left(\frac{x+1}{2}\right)^2 - \left(\frac{x-1}{2}\right)^2\;} .
 $$
 
 (c) If $x = a^2 \neq 0$ then $x > 0$, and the converse holds by hypothesis; for the rationals, $2 = 1^2 + 1^2$ is positive and is not a square, so the inclusion of nonzero squares in $P$ is strict there.
@@ -231,7 +231,7 @@ is ordered lexicographically by the lowest-degree nonzero coefficient: $\sum a_k
 **Theorem.** Let $F$ be an Archimedean ordered field. Then the map
 
 $$
-\Phi : F \to \mathbb{R}, \qquad \Phi(x) = \sup\{q \in \mathbb{Q} : q < x\},
+\boxed{\;\Phi : F \to \mathbb{R}, \qquad \Phi(x) = \sup\{q \in \mathbb{Q} : q < x\}\;},
 $$
 
 is an injective order-preserving field homomorphism; hence $F$ is isomorphic, as an ordered field, to a subfield of $\mathbb{R}$.

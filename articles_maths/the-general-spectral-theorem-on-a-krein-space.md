@@ -43,7 +43,7 @@ $$
 and the operator is the strong integral
 
 $$
-A=\int_{\mathbb{R}}\lambda\,dE(\lambda)+\text{a finite-dimensional correction on }\operatorname{span}(W_0),
+\boxed{\;A=\int_{\mathbb{R}}\lambda\,dE(\lambda)+\text{a finite-dimensional correction on }\operatorname{span}(W_0)\;},
 $$
 
 the integral converging in the strong operator topology; on each of the two definite parts the spectral function is that of a self-adjoint operator on a Hilbert space, and on the finite-dimensional part it is the spectral resolution of the finite matrix.
@@ -67,7 +67,7 @@ for a constant $c$, with a fixed sign; it is **uniformly positive** if $[Ax,x]\g
 **Theorem (Krein's similarity theorem).** Let $A$ be a bounded self-adjoint operator in a Krein space and suppose $[Ax,x]\ge\varepsilon[x,x]$ for all $x$ and some $\varepsilon>0$. Then there is a bounded invertible operator $V$ and a self-adjoint operator $B$ on the Hilbert space $H$ with
 
 $$
-A=V^{-1}BV,
+\boxed{\;A=V^{-1}BV\;},
 $$
 
 and $A$ has a spectral function whose integral represents $A$; consequently the spectral theorem in the form of the existence of a resolution of the identity holds for $A$ on the whole real line and the non-real spectrum is empty.
@@ -77,7 +77,7 @@ and $A$ has a spectral function whose integral represents $A$; consequently the 
 **Corollary (the uniformly positive case).** A uniformly positive self-adjoint operator in a Krein space has a spectral function $E$ on the real line with
 
 $$
-A=\int_{\mathbb{R}}\lambda\,dE(\lambda),\qquad E(\Delta)^{[*]}=E(\Delta),
+\boxed{\;A=\int_{\mathbb{R}}\lambda\,dE(\lambda),\qquad E(\Delta)^{[*]}=E(\Delta)\;},
 $$
 
 and the $J$-orthogonal projections $E(\Delta)$ form a resolution of the identity in the indefinite metric; the operator generates a bounded group $\exp(itA)$ for $t\in\mathbb{R}$ and the group is $J$-unitary exactly when $A$ is self-adjoint in the Krein space.

@@ -46,8 +46,8 @@ The three involutions satisfy
 $$
 \boxed{\;
 {}^{\natural} = \alpha \circ \rho = \rho \circ \alpha
-\;}
-$$,
+\;},
+$$
 
 so that any two of them determine the third. Equivalent forms are ${}^{\natural}\,\alpha = \alpha\,{}^{\natural} = \rho$ and ${}^{\natural}\,\rho = \rho\,{}^{\natural} = \alpha$. In particular $\alpha$ and $\rho$ commute, every product of two distinct involutions is the third, and every square is the identity.
 
@@ -91,8 +91,8 @@ Because $G$ is abelian, every element of $G$ preserves the eigenspaces of every 
 $$
 \boxed{\;
 \{0\} \;\subset\; S \;\subset\; \operatorname{span}\{\vec e_x,\vec e_y\} \;\subset\; \operatorname{span}\{1,\vec e_x,\vec e_y\} \;\subset\; \mathbb{H}_{\mathrm{s}}
-\;}
-$$,
+\;},
+$$
 
 the eigenspaces of dimension $2$ being the two $\pm1$ eigenspaces of the single involution $\alpha$, namely $\mathbb{D}_3$ and $\operatorname{span}\{\vec e_x,\vec e_y\}$, and the eigenspaces of dimension $3$ being $V$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$. The eigenspaces of the three involutions, their intersections and their common refinement, in terms of the coordinate blocks $\langle 1\rangle, \langle \vec e_x\rangle, \langle \vec e_y\rangle, \langle \vec e_z\rangle$ of *Split-Quaternion Relations Between Subspaces*, are:
 
@@ -120,8 +120,8 @@ The group $G$ acts on $\mathbb{H}_{\mathrm{s}}$ by the four sign patterns tabula
 $$
 \boxed{\;
 \tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \quad \tilde{q}^{\natural}, \quad \alpha(\tilde q), \quad \rho(\tilde q)
-\;}
-$$,
+\;},
+$$
 
 with $\tilde q$ repeated exactly when $G$ does not act freely at $\tilde q$. The possible orbit sizes and stabilisers are:
 

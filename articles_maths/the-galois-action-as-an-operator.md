@@ -44,7 +44,7 @@ using the contravariance of $\operatorname{Spec}$ exactly as for the action on $
 
 **Theorem (the fixed points are the $k$-points).** For a finite Galois extension $L/k$ the fixed points of the action on the $L$-points are the $k$-points,
 $$
-X(L)^G = X(k).
+\boxed{\;X(L)^G = X(k)\;}.
 $$
 
 *Proof.* A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\varphi : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\varphi = \varphi$, that is $\varphi(a) = \sigma(\varphi(a))$ for all $a$ and all $\sigma$, so $\varphi$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.
@@ -70,7 +70,7 @@ Hence $\sigma$ acts by a $k$-algebra automorphism of $\mathcal{O}_{X_L}$ that is
 
 **Theorem (the invariant functions are the functions on $X$).** Let $X = \operatorname{Spec}A$ be affine and $L/k$ finite Galois. Then the ring of invariants of the action on the coordinate ring is
 $$
-(A\otimes_kL)^G = A\otimes_kL^G = A ,
+\boxed{\;(A\otimes_kL)^G = A\otimes_kL^G = A\;} ,
 $$
 the image of the pullback $A\to A\otimes_kL$, $a\mapsto a\otimes1$. Consequently $\Gamma(X_L,\mathcal{O}_{X_L})^G = \Gamma(X,\mathcal{O}_X)$.
 
@@ -91,7 +91,7 @@ and the assignment is multiplicative, $(\sigma\tau)^* = \sigma^*\tau^*$ in the s
 
 **Theorem (the invariants of the structure sheaf).** For a finite Galois extension $L/k$ the invariants of the semilinear action on the cohomology of the structure sheaf are the cohomology of $X$:
 $$
-H^i(X_L,\mathcal{O}_{X_L})^G \cong H^i(X,\mathcal{O}_X)\otimes_kL^G \cong H^i(X,\mathcal{O}_X)
+\boxed{\;H^i(X_L,\mathcal{O}_{X_L})^G \cong H^i(X,\mathcal{O}_X)\otimes_kL^G \cong H^i(X,\mathcal{O}_X)\;}
 $$
 whenever $X$ is separated, so that the cohomology is computed by the Čech complex of an affine cover with $G$-stable indexing.
 

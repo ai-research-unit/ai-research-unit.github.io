@@ -60,9 +60,9 @@ At the unit they agree, $\Lambda^{\alpha}_a(e) = a = L_a(e)$.
 **Proposition.** The signed and the unsigned left multiplications compose by
 
 $$
-\Lambda^{\alpha}_a \circ \Lambda^{\alpha}_b = L_{a\,\alpha(b)}, \qquad
+\boxed{\;\Lambda^{\alpha}_a \circ \Lambda^{\alpha}_b = L_{a\,\alpha(b)}, \qquad
 \Lambda^{\alpha}_a \circ L_b = \Lambda^{\alpha}_{a\,b}, \qquad
-L_a \circ \Lambda^{\alpha}_b = \Lambda^{\alpha}_{a\,\alpha(b)} .
+L_a \circ \Lambda^{\alpha}_b = \Lambda^{\alpha}_{a\,\alpha(b)}\;} .
 $$
 
 In particular the composite of two **signed** left multiplications is an **unsigned** one: the signed operators are not closed under composition, and every word in the signed and the unsigned left multiplications reduces to a single operator, signed or unsigned according to the number of signed factors modulo two.
@@ -71,7 +71,7 @@ In particular the composite of two **signed** left multiplications is an **unsig
 
 **Corollary (the generated group).** The set
 $$
-\langle L_a, \alpha : a \in G\rangle = \{L_a : a \in G\} \cup \{\Lambda^{\alpha}_a : a \in G\}
+\boxed{\;\langle L_a, \alpha : a \in G\rangle = \{L_a : a \in G\} \cup \{\Lambda^{\alpha}_a : a \in G\}\;}
 $$
 is a group, equal to the semidirect product $G \rtimes \langle\alpha\rangle$ in which the generator of the second factor acts on $G$ by $\alpha$; the unsigned left multiplications form the normal subgroup $\{L_a\} \cong G$ of index two when $\alpha \neq \mathrm{id}$, and the signed left multiplications $\Lambda^{\alpha}_a = L_a\alpha$ are the nontrivial coset.
 
@@ -98,7 +98,7 @@ and it is a **left action up to the grade involution**: $\Lambda^{\alpha}_a\Lamb
 **Proposition.** The signed left multiplication fixes the following elements and no others:
 
 $$
-\Lambda^{\alpha}_a(x) = x \quad\Longleftrightarrow\quad a = x\,\alpha(x)^{-1} = \begin{cases} e & x \in G_0 \\ z & x \in G_1 \end{cases}.
+\boxed{\;\Lambda^{\alpha}_a(x) = x \quad\Longleftrightarrow\quad a = x\,\alpha(x)^{-1} = \begin{cases} e & x \in G_0 \\ z & x \in G_1 \end{cases}\;}.
 $$
 
 Hence $\Lambda^{\alpha}_a$ has a fixed point exactly when $a = e$ or $a = z$: the operator $\Lambda^{\alpha}_e = \alpha$ fixes the whole even part and inverts the sign on the odd part, the operator $\Lambda^{\alpha}_z$ fixes the whole odd part, and for every other $a$ the signed left multiplication is fixed-point-free.

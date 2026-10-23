@@ -85,7 +85,7 @@ is nonempty and bounded above by $4$, and its supremum in $\mathbb{R}$ is $\pi$,
 **Theorem.** Let $F$ be an ordered field with real closure $F^{rc}$ and algebraic closure $\overline{F}$. Then
 
 $$
-\overline{F} = F^{rc}(i), \qquad i^2 = -1, \qquad [\overline{F} : F^{rc}] = 2 .
+\boxed{\;\overline{F} = F^{rc}(i), \qquad i^2 = -1, \qquad [\overline{F} : F^{rc}] = 2\;} .
 $$
 
 Thus the algebraic closure of a real-closed field is obtained by adjoining a single square root of $-1$. In particular, for $F = \mathbb{R}$ one has $\overline{F} = \mathbb{C} = \mathbb{R}(i)$.

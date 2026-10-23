@@ -41,8 +41,8 @@ $$
 
 It is bijective, and injective in the strong sense: a given $2\times2$ matrix has one preimage, recovered by the same four entries. Two functionals transfer exactly:
 
-$$ \boxed{\;\operatorname{tr}\mathsf{M}_2(\tilde{Q}_1)=2Q_{1t},\qquad
-\det\mathsf{M}_2(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}\;}. $$
+$$ \operatorname{tr}\mathsf{M}_2(\tilde{Q}_1)=2Q_{1t},\qquad
+\det\mathsf{M}_2(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}. $$
 
 ### The Left Regular Map $\mathsf{M}_4$
 
@@ -54,8 +54,8 @@ $$
 
 and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. Its functionals are
 
-$$ \boxed{\;\operatorname{tr}\mathsf{M}_4(\tilde{Q}_1)=4Q_{1t},\qquad
-\det\mathsf{M}_4(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}^2\;}. $$
+$$ \operatorname{tr}\mathsf{M}_4(\tilde{Q}_1)=4Q_{1t},\qquad
+\det\mathsf{M}_4(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}^2. $$
 
 Unlike $\mathsf{M}_2$, the map $\mathsf{M}_4$ is not onto: its image is a four-complex-dimensional family inside the sixteen-dimensional algebra $M_4(\mathbb{C}).$ Concretely, it is the family of matrices of left multiplication by a biquaternion, and nothing else.
 
@@ -278,8 +278,8 @@ The groups reached in the table are classical, and two of them sit over another 
 
 **The two double covers.** The definite form and the indefinite form each carry a two-sheeted cover, and the two are the same construction applied to the compact group and to its complexification:
 
-$$ \boxed{\;SU(2)\longrightarrow SO(3),\qquad
-\mathbb{B}^{\times}_1=\mathrm{Spin}(1,3)\longrightarrow SO^{+}(1,3)\;}. $$
+$$ SU(2)\longrightarrow SO(3),\qquad
+\mathbb{B}^{\times}_1=\mathrm{Spin}(1,3)\longrightarrow SO^{+}(1,3). $$
 
 In both, the kernel is the order-two centre, $\{\pm I\}$ in the matrix picture and $\{\pm e_t\}$ in the algebra, and in both a full turn of the covering element gives the negative of the identity cover element while two turns give the identity. The first cover is between compact groups; the second is between non-compact ones, and it is the complexification of the first, the unit quaternions being replaced by $SL(2,\mathbb{C})$.
 

@@ -7,8 +7,8 @@ This is the reference article of the remarkable-subspace group of the chapter. T
 ## The Two Subspaces
 
 The two remarkable subspaces are
-$$ \boxed{\; \mathbb{R}_{\mathbb{H}}=\{\tilde q:\tilde q^{\natural}=\tilde q\}=\mathbb{R}e_t, \qquad
-\mathrm{Vect}(\mathbb{H})=\{\tilde q:\tilde q^{\natural}=-\tilde q\}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z \;} .$$
+$$ \mathbb{R}_{\mathbb{H}}=\{\tilde q:\tilde q^{\natural}=\tilde q\}=\mathbb{R}e_t, \qquad
+\mathrm{Vect}(\mathbb{H})=\{\tilde q:\tilde q^{\natural}=-\tilde q\}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z. $$
 
 **Proposition.** They are supplementary and their intersection is the origin:
 $$ \boxed{\; \mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0, \qquad

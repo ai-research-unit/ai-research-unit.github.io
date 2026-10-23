@@ -16,7 +16,7 @@ The boundary with Part III is the one fixed in the representation-theoretic bloc
 **Definition.** Let $\pi$ be a unitary representation of a locally compact group $G$ on a Hilbert space $\mathcal{H}$. A vector $\xi \in \mathcal{H}$ is **invariant** if $\pi(g)\xi = \xi$ for all $g \in G$. For a compact subset $Q \subseteq G$ and $\varepsilon > 0$, a vector $\xi$ with $\|\xi\| = 1$ is **$(Q, \varepsilon)$-invariant** if
 
 $$
-\sup_{g \in Q} \|\pi(g)\xi - \xi\| < \varepsilon .
+\boxed{\;\sup_{g \in Q} \|\pi(g)\xi - \xi\| < \varepsilon\;} .
 $$
 
 The representation $\pi$ **almost has invariant vectors** if for every compact $Q$ and every $\varepsilon > 0$ there is a unit $(Q,\varepsilon)$-invariant vector. The trivial representation $1_G$ is **weakly contained** in $\pi$, written $1_G \prec \pi$, if the matrix coefficients of $1_G$ are limits of matrix coefficients of $\pi$ uniformly on compacta; equivalently, if $\pi$ almost has invariant vectors.

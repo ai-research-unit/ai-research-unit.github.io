@@ -18,7 +18,7 @@ This article treats the kind, the two types of the first kind, the reduction of 
 **Theorem (the two types of the first kind).** A first-kind involution $\sigma$ of $A$ is of **orthogonal type** or of **symplectic type**; the type is determined by
 
 $$
-\dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n+1) \quad \text{(orthogonal)}, \qquad \dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n-1) \quad \text{(symplectic)},
+\boxed{\;\dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n+1) \quad \text{(orthogonal)}, \qquad \dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n-1) \quad \text{(symplectic)}\;},
 $$
 
 where $n$ is the degree of $A$ over $F$ in the sense of *Central Simple Algebras and the Brauer Group*; an orthogonal involution has a symmetric unit and a family of orthogonal symmetric idempotents summing to $1$, a symplectic one has neither, and a symplectic involution exists only when $n$ is even.
@@ -32,7 +32,7 @@ where $n$ is the degree of $A$ over $F$ in the sense of *Central Simple Algebras
 **Theorem (inner reduction).** Let $\sigma$ and $\tau$ be two involutions of $A$, and suppose that $\sigma$ and $\tau$ have the same restriction to $F$, so that $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$. Then $\sigma\tau^{-1}$ is inner: there is a unit $u \in A^\times$ with
 
 $$
-\sigma(a) = u\,\tau(a)\,u^{-1} \quad \text{for all } a \in A .
+\boxed{\;\sigma(a) = u\,\tau(a)\,u^{-1} \quad \text{for all } a \in A\;} .
 $$
 
 **Proof.** The composite $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$, and every automorphism of a central simple algebra is inner by the Skolem–Noether theorem, which is proved in *Central Simple Algebras and the Brauer Group*; write it as conjugation by $u$.
@@ -40,7 +40,7 @@ $$
 **Proposition (when the conjugate is an involution).** For a unit $u$ the map $\sigma = \operatorname{inn}_u\circ\tau$ is an involution if and only if $\tau(u)u$ is central,
 
 $$
-\sigma^2 = \mathrm{id} \iff \tau(u)\,u \in F .
+\boxed{\;\sigma^2 = \mathrm{id} \iff \tau(u)\,u \in F\;} .
 $$
 
 Under this condition $\sigma$ is of the same kind as $\tau$; it is of the **same type** as $\tau$ when $\tau(u)u$ is a square in $F$ and of the **opposite type** when it is not, in the first-kind case.

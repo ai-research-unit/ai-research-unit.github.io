@@ -107,7 +107,7 @@ the module of coherent sequences $(a_k)_{k\geq0}$ with $a_k \in A/I^k$ and $a_{k
 **Proposition.** The completion of the polynomial algebra at the augmentation ideal is the formal power series algebra:
 
 $$
-R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n),
+\boxed{\;R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n)\;},
 $$
 
 where $\widehat{\phantom{A}}$ denotes $\mathrm{M}$-adic completion.
@@ -139,7 +139,7 @@ $$
 **Theorem (formal inverse function theorem).** If $J$ is invertible over $R$, then there is a unique $n$-tuple $G = (G_1,\ldots,G_n)$ of formal power series with no constant terms such that
 
 $$
-F \circ G = \mathrm{id} = G \circ F,
+\boxed{\;F \circ G = \mathrm{id} = G \circ F\;},
 $$
 
 that is $F_i(G_1,\ldots,G_n) = x_i$ and $G_i(F_1,\ldots,F_n) = x_i$ for all $i$.
@@ -225,7 +225,7 @@ $$
 and the $\mathrm{M}$-adic completion of $S$ is
 
 $$
-\hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M).
+\boxed{\;\hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M)\;}.
 $$
 
 *Proof.* The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathrm{M}^k/\mathrm{M}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{Sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{Sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{Sym}^k(M)$.

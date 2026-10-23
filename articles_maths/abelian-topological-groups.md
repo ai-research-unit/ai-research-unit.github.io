@@ -105,7 +105,7 @@ It is a subgroup of $G^\vee$, closed in the compact-open topology, and the assig
 **Theorem (annihilator duality).** Let $G$ be a locally compact abelian group and $H \subseteq G$ a closed subgroup. Then
 
 $$
-(G/H)^\vee \cong H^\perp, \qquad H^\vee \cong G^\vee / H^\perp,
+\boxed{\;(G/H)^\vee \cong H^\perp, \qquad H^\vee \cong G^\vee / H^\perp\;},
 $$
 
 as topological groups, the first isomorphism carrying a character of $G/H$ to its composite with the quotient map and the second carrying a character of $H$ to its class modulo the characters vanishing on $H$.
@@ -137,7 +137,7 @@ $$
 where $n \geq 0$ and $K$ is a compact abelian group; equivalently, $G \cong \mathbb{R}^n \times G_1$ with $G_1$ a locally compact abelian group containing a compact open subgroup, and the global product $G \cong \mathbb{R}^n \times K$ with $K$ compact is not available in general. And $G$ is compactly generated if and only if
 
 $$
-G \cong \mathbb{R}^n \times \mathbb{Z}^m \times K
+\boxed{\;G \cong \mathbb{R}^n \times \mathbb{Z}^m \times K\;}
 $$
 
 with $K$ compact; the compact factor is finite, $G \cong \mathbb{R}^n \times \mathbb{Z}^m \times F$, exactly when $G$ contains no infinite compact subgroup.
@@ -181,7 +181,7 @@ The main theorem of the theory is stated here and developed in the companion art
 **Theorem (Pontryagin duality).** For every locally compact abelian group $G$, the evaluation map
 
 $$
-\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x),
+\boxed{\;\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x)\;},
 $$
 
 is an isomorphism of topological groups. The assignment $G \mapsto G^\vee$ is a contravariant functor that is an equivalence of categories between the category of locally compact abelian groups and its opposite, and it carries compact groups to discrete groups and conversely.

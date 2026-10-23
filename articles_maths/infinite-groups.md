@@ -68,7 +68,7 @@ The infinite dihedral group is the simplest infinite group that is neither free 
 **Definition.** A group is a **torsion group** if every element has finite order, an **exponent $n$ group** if $x^n = 1$ for all $x$, and the **free Burnside group** of rank $m$ and exponent $n$ is
 
 $$
-B(m,n) = \langle x_1, \ldots, x_m \mid w^n = 1 \text{ for every word } w \text{ in the } x_i \rangle = F_m / \langle\!\langle x^n : x \in F_m\rangle\!\rangle,
+\boxed{\;B(m,n) = \langle x_1, \ldots, x_m \mid w^n = 1 \text{ for every word } w \text{ in the } x_i \rangle = F_m / \langle\!\langle x^n : x \in F_m\rangle\!\rangle\;},
 $$
 
 where $\langle\!\langle \cdot \rangle\!\rangle$ denotes the normal closure.
@@ -110,7 +110,7 @@ The exponents $2,3,4,6$ were settled by Burnside, Sanov and Marshall Hall, and a
 **Proof sketch.** One considers a free group $F$ on $d$ generators, a prime $p$, and a set of $r$ relators of length at least $L$, and forms the quotient by the normal closure of the relators together with the $p$-powers of the elements of $F$; the objects counted are the graded quotients of the lower $p$-central series, which are vector spaces over $\mathbb{F}_p$ with one dimension for each generator and one relation removing one dimension for each relator. The argument is the origin of the **Golod–Shafarevich inequality**
 
 $$
-r > \frac{d^2}{4},
+\boxed{\;r > \frac{d^2}{4}\;},
 $$
 
 which is the condition under which the dimension series has bounded degrees and the quotient is infinite: the relators are numerous enough to eliminate the classes that the $p$-power relations would otherwise leave, while the counting still exhibits at least one nontrivial class in every degree. Choosing the relators generically of length at least $L$ among the words of $F$ then yields an infinite $d$-generated group all of whose elements have order a power of $p$, and, with the relators placed inside the higher terms of the series, one that is residually a finite $p$-group. It is the first proof that infinite finitely generated torsion groups exist without exhibiting a uniform exponent.

@@ -15,7 +15,9 @@ The article owns the topology of the split-biquaternion Julia set as a product, 
 **Theorem (topology of the product).** The split-biquaternion Julia set is
 
 $$
-J_{\tilde Q_1}=\bigl(J_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}\bigr)\cup\bigl(K_{\tilde Q_{1+}}\times J_{\tilde Q_{1-}}\bigr),
+\boxed{\;
+J_{\tilde Q_1}=\bigl(J_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}\bigr)\cup\bigl(K_{\tilde Q_{1+}}\times J_{\tilde Q_{1-}}\bigr)
+\;},
 $$
 
 and the following hold.
@@ -54,7 +56,9 @@ $$
 **Theorem (the $\mathbb{D}$-line).** Let $\tilde Q_1=\lambda e_t$ with $\lambda\in\mathbb{D}$, and write $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde Q_{1\pm}=\lambda_\pm e_t$ are real, and the connectedness locus of the family restricted to the $\mathbb{D}$-line is the square
 
 $$
-\bigl\{\lambda\in\mathbb{D} : K_{\lambda e_t} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\} ,
+\boxed{\;
+\bigl\{\lambda\in\mathbb{D} : K_{\lambda e_t} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\}
+\;},
 $$
 
 the square of the real Mandelbrot interval.
@@ -64,7 +68,9 @@ the square of the real Mandelbrot interval.
 **Theorem (the solids of revolution).** For a real quaternion parameter $c\in[-2,\tfrac14]$ the quaternion filled Julia set is the solid of revolution about the real axis,
 
 $$
-K_c=\{\tilde q\in\mathbb{H} : (\operatorname{Sc}\tilde q,\ |\operatorname{Vect}\tilde q|)\in K_c^{\mathbb{C}}\} ,
+\boxed{\;
+K_c=\{\tilde q\in\mathbb{H} : (\operatorname{Sc}\tilde q,\ |\operatorname{Vect}\tilde q|)\in K_c^{\mathbb{C}}\}
+\;},
 $$
 
 where $K_c^{\mathbb{C}}$ is the complex filled Julia set of $z\mapsto z^2+c$. Hence on the $\mathbb{D}$-line the split-biquaternion filled Julia set is the product of two such solids of revolution, one for each component.

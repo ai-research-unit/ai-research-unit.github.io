@@ -56,7 +56,7 @@ The two inverse members are defined only on the group of units. The reversion an
 **Proposition (the parameter rule).** For every central $a \in A$ and every $x$,
 
 $$
-\Theta_{ax} = a\,\sigma(a)\,\Theta_x .
+\boxed{\;\Theta_{ax} = a\,\sigma(a)\,\Theta_x\;} .
 $$
 
 **Proof.** The dagger is $\sigma$-semilinear, so $(ax)^{\dagger} = \sigma(a)\,x^{\dagger}$. Then
@@ -80,7 +80,7 @@ so $\Theta_x(ay) = a\,\Theta_x(y)$ and the operator is $\mathbb{C}$-linear, whil
 **Proposition.** For all $x, z$,
 
 $$
-\Theta_{xz} = \Theta_x \circ \Theta_z .
+\boxed{\;\Theta_{xz} = \Theta_x \circ \Theta_z\;} .
 $$
 
 **Proof.** The dagger is an anti-automorphism, so $(xz)^{\dagger} = z^{\dagger}x^{\dagger}$. Then
@@ -128,9 +128,9 @@ The inner conjugation is the only member that fixes the unit identically; the si
 **Theorem.** Let $x$ be an element of the Clifford group $\Gamma(V,\mathfrak{Q})$, with Clifford norm $N(x) = x\,x^{\natural} = x^{\natural}\,x$, a scalar of $A$. Then
 
 $$
-x^{\dagger} = \sigma\bigl(N(x)\bigr)\,\sigma(x)^{-1},
+\boxed{\;x^{\dagger} = \sigma\bigl(N(x)\bigr)\,\sigma(x)^{-1},
 \qquad
-\Theta_x(y) = \sigma\bigl(N(x)\bigr)\; x\,y\,\sigma(x)^{-1}.
+\Theta_x(y) = \sigma\bigl(N(x)\bigr)\; x\,y\,\sigma(x)^{-1}\;}.
 $$
 
 **Proof.** On $\Gamma$ the norm is a scalar, so $x^{\natural} = N(x)x^{-1}$. The dagger is the composite of Clifford conjugation with the ring automorphism $\sigma$, so

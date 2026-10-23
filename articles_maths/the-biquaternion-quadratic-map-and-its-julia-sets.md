@@ -134,9 +134,7 @@ Counting the coordinates, the critical set is the zero set of that one non-zero 
 
 **Theorem (central parameter, eigenvalue reduction).** Let $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, let $q_n$ be the iterates of the complex quadratic map $\zeta\mapsto\zeta^2+C$ starting from $\zeta_0=\zeta$, and let $p_n$ be as above. For every $\tilde Q$,
 
-$$
-\mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))=p_n\bigl(\mathsf{M}_2(\tilde Q)\bigr)=q_n\text{ applied to the spectrum},
-$$
+$$ \mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))=p_n\bigl(\mathsf{M}_2(\tilde Q)\bigr)=q_n\text{ applied to the spectrum}, $$
 
 in the sense that the spectrum of $\mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q)$. If $\mathsf{M}_2(\tilde Q)$ is diagonalisable, then $\tilde Q\in\mathcal K_{\tilde Q_5}$ if and only if both eigenvalues lie in the filled Julia set $K_C$ of $\zeta\mapsto\zeta^2+C$. If $\mathsf{M}_2(\tilde Q)$ has a repeated eigenvalue $\lambda$ and is not scalar, the extra condition is that the derivative sequence $(q_n'(\lambda))$ be bounded as well.
 

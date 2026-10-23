@@ -62,7 +62,7 @@ The centre is the group of **homotheties**, or dilations, and it is the kernel o
 **Theorem.** The determinant defines a surjective group homomorphism
 
 $$
-\det:\operatorname{GL}(V) \longrightarrow F^{\times},
+\boxed{\;\det:\operatorname{GL}(V) \longrightarrow F^{\times}\;},
 $$
 
 whose kernel is the subgroup of automorphisms of determinant $1$.
@@ -120,7 +120,7 @@ $$
 and in a basis obtained by extending a basis of $W$ to a basis of $V$, the matrices of $P_W$ are exactly the invertible block upper triangular matrices
 
 $$
-\begin{pmatrix} A & B \\ 0 & D \end{pmatrix}, \qquad A \in \operatorname{GL}_k(F),\ D \in \operatorname{GL}_{n-k}(F).
+\boxed{\;\begin{pmatrix} A & B \\ 0 & D \end{pmatrix}, \qquad A \in \operatorname{GL}_k(F),\ D \in \operatorname{GL}_{n-k}(F)\;}.
 $$
 
 *Proof.* Transitivity: a linear isomorphism carries any $k$-subspace to any other, because bases of the two subspaces extend to bases of $V$, and a bijection of bases extends to an automorphism. For the stabiliser, an operator with $T(W) \subseteq W$ and $\dim W=\dim T(W)$ in finite dimension has $T(W)=W$, so the containment is an equality. In a basis adapted to $W$ the first $k$ columns of the matrix have their last $n-k$ entries zero, which is the block form, and invertibility is exactly $A,D$ invertible.
@@ -140,7 +140,7 @@ The $B$-orbits on the flag variety are indexed by the symmetric group and give t
 **Theorem (Bruhat).** Let $B$ be the upper triangular subgroup of $\operatorname{GL}_n(F)$ and let $W=S_n$, represented by the permutation matrices. Then
 
 $$
-\operatorname{GL}_n(F)=\bigsqcup_{w \in W} B w B,
+\boxed{\;\operatorname{GL}_n(F)=\bigsqcup_{w \in W} B w B\;},
 $$
 
 a disjoint union of double cosets indexed by the symmetric group. The double coset of the longest element $w_0$ is the big cell, of maximal dimension, and the cells $BvB$ with $v \le w$ in the Bruhat order are exactly those obtained from $BwB$ by imposing further vanishing of minors.

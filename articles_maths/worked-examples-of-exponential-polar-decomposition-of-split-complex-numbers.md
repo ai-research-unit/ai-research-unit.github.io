@@ -23,7 +23,7 @@ The eight cases cover the four open components, the pure discrete unit, the two 
 | Negative scalar | $-2$ | the same exponent as $2$, $\epsilon=-1$ |
 | Null cone | $1+j$ | $(q+q')(q-q')=0$, but no polar word |
 
-**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its word and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*).
+**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its word and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers*.
 
 ## The Method
 
@@ -52,9 +52,9 @@ The four conditions are exclusive and cover every unit. In every row the product
 The two combinations are recovered from the polar data by
 
 $$
-r\,e^{\phi}=\lvert q+q'\rvert,
+\boxed{\; r\,e^{\phi}=\lvert q+q'\rvert,
 \qquad
-r\,e^{-\phi}=\lvert q-q'\rvert.
+r\,e^{-\phi}=\lvert q-q'\rvert \;}
 $$
 
 These two identities are the check used in every case.
@@ -64,9 +64,9 @@ These two identities are the check used in every case.
 The polar word is
 
 $$
-Q=\epsilon\,r\,e^{\phi j}=r\,\epsilon\bigl(\cosh\phi+j\sinh\phi\bigr),
+\boxed{\; Q=\epsilon\,r\,e^{\phi j}=r\,\epsilon\bigl(\cosh\phi+j\sinh\phi\bigr),
 \qquad
-Q_{\log}=\ln r+j\phi.
+Q_{\log}=\ln r+j\phi \;}
 $$
 
 The exponent of $\epsilon Q$ and the unit factor $\epsilon e^{\phi j}$ are read separately, and the reconstruction is the scale $r$ times the unit factor. The check is the multiplication.
@@ -565,6 +565,7 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 ## Further Reading
 
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the decomposition, existence, uniqueness and the component sign.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the future cone.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the algebraic modulus–unit form.

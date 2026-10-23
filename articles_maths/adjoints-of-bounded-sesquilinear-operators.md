@@ -59,7 +59,7 @@ $$
 **Theorem (the characterisation).** A bounded linear $T$ is adjointable if and only if it is a left multiplication, $T=L_{c}$ with $c=T(1)$; then
 
 $$
-L_{c}^{\dagger}=L_{c^{*}},\qquad\text{that is,}\qquad L_{c}^{\dagger}(y)=c^{*}y .
+\boxed{\;L_{c}^{\dagger}=L_{c^{*}},\qquad\text{that is,}\qquad L_{c}^{\dagger}(y)=c^{*}y\;} .
 $$
 
 **Proof.** Suppose $T^{\dagger}$ exists. Replace $x$ by $xa$ in the defining identity: on the left, $h(T(xa),y)=(T(xa))^{*}y$, and on the right, $h(xa,T^{\dagger}y)=a^{*}h(x,T^{\dagger}y)=a^{*}\bigl((Tx)^{*}y\bigr)=a^{*}(Tx)^{*}y$. The two are equal for every $y$, so $(T(xa))^{*}=a^{*}(Tx)^{*}$ and, taking the involution, $T(xa)=(Tx)\,a$: the operator is right $A$-linear. Evaluating at $x=1$ gives $T(a)=T(1)a$, and replacing $a$ by $x$ gives $T=L_{T(1)}$. Conversely $L_{c}$ is bounded with $\lVert L_{c}\rVert=\lVert c\rVert$, and $h(L_{c}x,y)=(cx)^{*}y=x^{*}c^{*}y=x^{*}(c^{*}y)=h(x,L_{c^{*}}y)$, so $L_{c}$ is adjointable with adjoint $L_{c^{*}}$.
@@ -75,7 +75,7 @@ $$
 **Theorem (the adjoint operation).** On the adjointable operators the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two: for adjointable $S,T$ and $\lambda\in\mathbb{K}$,
 
 $$
-(S+T)^{\dagger}=S^{\dagger}+T^{\dagger},\qquad (\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger},\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T^{\dagger})^{\dagger}=T,\qquad \mathrm{id}^{\dagger}=\mathrm{id}.
+\boxed{\;(S+T)^{\dagger}=S^{\dagger}+T^{\dagger},\qquad (\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger},\qquad (ST)^{\dagger}=T^{\dagger}S^{\dagger},\qquad (T^{\dagger})^{\dagger}=T,\qquad \mathrm{id}^{\dagger}=\mathrm{id}\;}.
 $$
 
 **Proof.** Additivity is the additivity of $h$ in the slot that carries the operator; the scalar law is $h((\lambda T)x,y)=\varsigma(\lambda)h(Tx,y)=\varsigma(\lambda)h(x,T^{\dagger}y)=h(x,\varsigma(\lambda)T^{\dagger}y)$, using the linearity of $h$ in the second slot; the composite law is $h(STx,y)=h(Tx,S^{\dagger}y)=h(x,T^{\dagger}S^{\dagger}y)$; the law of order two is the defining identity read with the two arguments exchanged together with the Hermitian property $h(y,x)=h(x,y)^{*}$; and the identity is plainly self-adjoint. On the parameters the laws read $L_{c}^{\dagger}=L_{c^{*}}$, and $a\mapsto a^{*}$ is the involution.
@@ -129,7 +129,7 @@ the equality being the centrality of $\tau$.
 **Theorem (the adjoint exists after the reduction).** Let $\tau$ be a continuous central functional whose reduction $h_{\tau}$ is **perfect**, the map $y\mapsto h_{\tau}(\cdot,y)$ a bijection onto $A^{*}$, so that every bounded linear functional on $A$ is represented by a vector through $h_{\tau}$ — the hypothesis of *The Sesquilinear Adjoint Operator*, satisfied for instance when $A$ is a Hilbert space and $h_{\tau}$ its inner product. Then every bounded operator is adjointable for $h_{\tau}$, and in particular
 
 $$
-L_{a}^{\dagger}=L_{a^{*}},\qquad L^{\varsigma}_{a}{}^{\dagger}=S_{1,a},\qquad R_{b}^{\dagger}=R_{b^{*}},\qquad T_{p,q}^{\dagger}=T_{p^{*},q^{*}},\qquad S_{a,b}^{\dagger}=S_{b,a},
+\boxed{\;L_{a}^{\dagger}=L_{a^{*}},\qquad L^{\varsigma}_{a}{}^{\dagger}=S_{1,a},\qquad R_{b}^{\dagger}=R_{b^{*}},\qquad T_{p,q}^{\dagger}=T_{p^{*},q^{*}},\qquad S_{a,b}^{\dagger}=S_{b,a}\;},
 $$
 
 the formulas of *The Sesquilinear Adjoint Operator*, where $L_{a}(x)=ax$ is the linear left multiplication and $L^{\varsigma}_{a}(x)=ax^{*}$ the conjugate one.

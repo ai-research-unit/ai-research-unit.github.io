@@ -95,7 +95,7 @@ The operator $\bar\partial_E$ is the $(0,1)$-part of a connection when the base 
 **Theorem (the Chern connection).** Let $E$ be a holomorphic vector bundle with a Hermitian metric $h$. Then there is exactly one connection $\nabla$ on $E$ that is metric-compatible and has $(0,1)$-part equal to the holomorphic structure,
 
 $$
-\nabla^{0,1} = \bar\partial_E .
+\boxed{\;\nabla^{0,1} = \bar\partial_E\;} .
 $$
 
 It is the **Chern connection**, also called the metric connection of the holomorphic bundle.
@@ -113,7 +113,7 @@ which, with the anti-Hermitian condition and the reality of the metric, has the 
 **Corollary.** In a holomorphic frame the Chern connection has the connection form
 
 $$
-\omega = H^{-1}\partial H
+\boxed{\;\omega = H^{-1}\partial H\;}
 $$
 
 of type $(1,0)$, that is, $\nabla = \partial + \bar\partial + H^{-1}\partial H$ read on the components of a section in the holomorphic frame; it is the unique solution of the metric-compatibility equation with vanishing $(0,1)$-part, and it therefore satisfies $dH = \omega^*H + H\omega$ with this $\omega$.
@@ -125,7 +125,7 @@ of type $(1,0)$, that is, $\nabla = \partial + \bar\partial + H^{-1}\partial H$ 
 **Theorem.** The curvature of the Chern connection is
 
 $$
-\Theta = d\omega + \omega\wedge\omega = \bar\partial\bigl(H^{-1}\partial H\bigr),
+\boxed{\;\Theta = d\omega + \omega\wedge\omega = \bar\partial\bigl(H^{-1}\partial H\bigr)\;},
 $$
 
 it has no component of type $(0,2)$, and it is of type $(1,1)$ and $h$-skew-Hermitian,

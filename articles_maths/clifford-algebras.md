@@ -38,7 +38,7 @@ The construction makes sense over any commutative ring; when $R$ is a field, one
 **Theorem (universal property).** Let $A$ be an associative algebra with identity over $R$, and let $f : V \to A$ be an $R$-linear map such that
 
 $$
-f(v)^2 = \mathfrak{Q}(v)\cdot 1_A \qquad (v \in V).
+\boxed{\;f(v)^2 = \mathfrak{Q}(v)\cdot 1_A \qquad (v \in V)\;}.
 $$
 
 Then there is a unique homomorphism of $R$-algebras $f^{\mathrm{ind}} : \mathrm{Cl}(V, \mathfrak{Q}) \to A$ with $f^{\mathrm{ind}}(v) = f(v)$ for all $v \in V$.
@@ -58,7 +58,7 @@ So the Clifford algebra is characterised by the universal property and not by th
 **Theorem.** In $\mathrm{Cl}(V, \mathfrak{Q})$ the generators satisfy
 
 $$
-uv + vu = 2B(u, v)\cdot 1 \qquad (u, v \in V).
+\boxed{\;uv + vu = 2B(u, v)\cdot 1 \qquad (u, v \in V)\;}.
 $$
 
 **Proof.** Since $\mathfrak{Q}(u + v) = \mathfrak{Q}(u) + 2B(u, v) + \mathfrak{Q}(v)$ and the square of a sum in an associative algebra expands as
@@ -190,7 +190,7 @@ where $|b|$ and $|a'|$ are the parities of the homogeneous elements $b$ and $a'$
 **Theorem.** Let $q_1 \perp q_2$ be the orthogonal sum of the forms $q_1$ on $V_1$ and $q_2$ on $V_2$, on the space $V_1 \oplus V_2$. Then there is a natural isomorphism of $\mathbb{Z}/2$-graded algebras
 
 $$
-\mathrm{Cl}(V_1 \oplus V_2,\ q_1 \perp q_2) \cong \mathrm{Cl}(V_1, q_1) \,\hat{\otimes}\, \mathrm{Cl}(V_2, q_2).
+\boxed{\;\mathrm{Cl}(V_1 \oplus V_2,\ q_1 \perp q_2) \cong \mathrm{Cl}(V_1, q_1) \,\hat{\otimes}\, \mathrm{Cl}(V_2, q_2)\;}.
 $$
 
 **Proof.** Let $A = \mathrm{Cl}(V_1, q_1)$ and $B = \mathrm{Cl}(V_2, q_2)$, and define an $R$-linear map

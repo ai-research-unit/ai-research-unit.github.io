@@ -84,19 +84,19 @@ $$
 be the ordinary generating function of the free operad. Then $G$ satisfies the functional equation
 
 $$
-G(u)=u+\sum_{p\ge2}\dim_kM(p)\,G(u)^p,
+\boxed{\;G(u)=u+\sum_{p\ge2}\dim_kM(p)\,G(u)^p\;},
 $$
 
 the term of arity $p$ recording a root operation of arity $p$ with its $p$ subtrees. If $M$ is concentrated in arity two with $\dim_kM(2)=1$, this is $G=u+G^2$, so
 
 $$
-G(u)=\frac{1-\sqrt{1-4u}}{2}=\sum_{n\ge1}C_{n-1}u^n, \qquad C_{n-1}=\frac{1}{n}\binom{2n-2}{n-1},
+\boxed{\;G(u)=\frac{1-\sqrt{1-4u}}{2}=\sum_{n\ge1}C_{n-1}u^n, \qquad C_{n-1}=\frac{1}{n}\binom{2n-2}{n-1}\;},
 $$
 
 and the dimensions of the components are the Catalan numbers $1,1,2,5,14$ for $n=1,\dots,5$. The functional equation is a relation between **ordinary** generating functions, because the planar decomposition orders the $p$ subtrees at a vertex; passing to the exponential generating function $F(u)=\sum_n\dim_k\mathcal{F}(M)(n)\,u^n/n!$ therefore does not amount to replacing $\dim_kM(p)$ by $\dim_kM(p)/p!$. In the binary case
 
 $$
-F(u)=\sum_{n\ge1}C_{n-1}\frac{u^n}{n!}=u+\frac{u^2}{2}+\frac{u^3}{3}+\frac{5u^4}{24}+\cdots,
+\boxed{\;F(u)=\sum_{n\ge1}C_{n-1}\frac{u^n}{n!}=u+\frac{u^2}{2}+\frac{u^3}{3}+\frac{5u^4}{24}+\cdots\;},
 $$
 
 which is not the solution $1-\sqrt{1-2u}$ of the substitution equation $F=u+\tfrac12F^2$: that solution has coefficients $u+\frac12u^2+\frac12u^3+\frac58u^4+\cdots$, with $n!$-multiples $1,1,3,15,\dots$, the odd double factorials, and not the Catalan dimensions of the free operad.

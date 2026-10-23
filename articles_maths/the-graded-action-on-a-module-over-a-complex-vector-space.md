@@ -23,7 +23,7 @@ that is when every even endomorphism preserves the two parts of $M$ and every od
 
 **Proposition (the equivalent form).** The action is compatible if and only if for every homogeneous $X \in E_i$ and every $m \in M$,
 $$
-X\,\beta(m) = (-1)^{i}\,\beta(X\,m),
+\boxed{\;X\,\beta(m) = (-1)^{i}\,\beta(X\,m)\;},
 $$
 equivalently $\beta(Xm) = (-1)^i X\beta(m)$; the two grade involutions therefore satisfy $\beta\circ\rho_X = (-1)^i\,\rho_X\circ\beta$ on the homogeneous part $E_i$.
 
@@ -45,7 +45,7 @@ equivalently $\beta(Xm) = (-1)^i X\beta(m)$; the two grade involutions therefore
 
 **Proposition (the induced involution on the module endomorphisms).** The algebra $\operatorname{End}_E(M)$ of module endomorphisms is graded by
 $$
-\operatorname{End}_E(M)_i = \{f : f(M_j)\subseteq M_{i+j}\},
+\boxed{\;\operatorname{End}_E(M)_i = \{f : f(M_j)\subseteq M_{i+j}\}\;},
 $$
 with grade involution $\gamma(f) = \beta f \beta$; the same holds for the algebra $\operatorname{End}_{\mathbb C}(M)$ of all complex-linear endomorphisms of $M$ when $M$ is a complex vector space.
 
@@ -66,7 +66,7 @@ $$
 
 **Proposition (the sign rule is the parity of the action).** Let $X \in E_i$ act on the graded module $M$ by $\rho_X$, and suppose $M$ is an algebra on which $E$ acts by derivations. Then $X$ acts as a graded derivation of parity $i$,
 $$
-\rho_X(mn) = \rho_X(m)\,n + (-1)^{i|m|}\,m\,\rho_X(n) ,
+\boxed{\;\rho_X(mn) = \rho_X(m)\,n + (-1)^{i|m|}\,m\,\rho_X(n)\;} ,
 $$
 and the sign is the Koszul sign of the two odd objects $X$ and $m$.
 

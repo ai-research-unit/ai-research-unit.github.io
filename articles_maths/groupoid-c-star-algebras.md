@@ -54,7 +54,7 @@ The groupoid is **transitive** if for every $u,v \in G^{(0)}$ there is an arrow 
 **Definition.** Let $G$ be a second countable locally compact étale groupoid. The **convolution** of $f, g \in C_c(G)$ is
 
 $$
-(f*g)(x) = \sum_{y \in G,\ r(y) = r(x)} f(y)\,g(y^{-1}x) ,
+\boxed{\;(f*g)(x) = \sum_{y \in G,\ r(y) = r(x)} f(y)\,g(y^{-1}x)\;} ,
 $$
 
 a finite sum because the fibre $r^{-1}(r(x))$ meets the compact supports of $f$ and $g$ in finite sets, and the **involution** is
@@ -108,7 +108,7 @@ $$
 **Theorem (basic properties).** Let $G$ be a second countable locally compact étale groupoid. Then the full and reduced groupoid algebras are separable $\mathrm{C}^*$-algebras, the regular representation induces a surjective $*$-homomorphism
 
 $$
-C^*(G) \longrightarrow C^*_r(G),
+\boxed{\;C^*(G) \longrightarrow C^*_r(G)\;},
 $$
 
 which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If $G$ is a discrete group the two algebras are $C^*(G)$ and $C^*_r(G)$ of *Operator Algebras*, and if $G = X\rtimes H$ is a transformation groupoid of a discrete group $H$, then $C^*(G) \cong C_0(X)\rtimes H$ and $C^*_r(G) \cong C_0(X)\rtimes_r H$.

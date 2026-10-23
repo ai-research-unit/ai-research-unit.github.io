@@ -75,7 +75,7 @@ The definitions of these groups as matrix groups require the theory of linear gr
 The four families intersect in a finite and completely known list of small cases. Among the simple groups the coincidences include
 
 $$
-A_5 \cong \mathrm{PSL}_2(4) \cong \mathrm{PSL}_2(5), \qquad A_6 \cong \mathrm{PSL}_2(9), \qquad A_8 \cong \mathrm{PSL}_4(2),
+\boxed{\;A_5 \cong \mathrm{PSL}_2(4) \cong \mathrm{PSL}_2(5), \qquad A_6 \cong \mathrm{PSL}_2(9), \qquad A_8 \cong \mathrm{PSL}_4(2)\;},
 $$
 
 $$
@@ -104,7 +104,7 @@ and among the small non-simple members $A_4 \cong \mathrm{PSL}_2(3)$, $S_4 \cong
 The **Monster** $\mathbb{M}$ has order
 
 $$
-|\mathbb{M}| = 2^{46}\cdot 3^{20}\cdot 5^{9}\cdot 7^{6}\cdot 11^{2}\cdot 13^{3}\cdot 17\cdot 19\cdot 23\cdot 29\cdot 31\cdot 41\cdot 47\cdot 59\cdot 71,
+\boxed{\;|\mathbb{M}| = 2^{46}\cdot 3^{20}\cdot 5^{9}\cdot 7^{6}\cdot 11^{2}\cdot 13^{3}\cdot 17\cdot 19\cdot 23\cdot 29\cdot 31\cdot 41\cdot 47\cdot 59\cdot 71\;},
 $$
 
 and it contains twenty of the sporadic groups as subquotients; the six **pariahs** $J_1, J_3, J_4, \mathrm{O'N}, \mathrm{Ru}, \mathrm{Ly}$ are not among them. The Baby Monster $\mathbb{B}$ is the second largest sporadic group, of order $2^{41}3^{13}5^6 7^2 11\cdot 13\cdot 17\cdot 19\cdot 23\cdot 31\cdot 47$, and it arises as the centraliser in the Monster of an involution, modulo that involution.

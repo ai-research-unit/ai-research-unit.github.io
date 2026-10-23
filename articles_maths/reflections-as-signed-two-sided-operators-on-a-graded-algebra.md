@@ -28,7 +28,7 @@ $$
 is well defined, and its image consists of reflections whose square is the identity:
 
 $$
-\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\mathrm{id} .
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\mathrm{id}\;} .
 $$
 
 **Proof.** The reflection property is the theorem of *The Signed Sandwich on a Graded Algebra*; the computation is $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}=\Sigma^{\alpha}_{1,1}$.
@@ -42,7 +42,7 @@ $$
 **Proposition (composition).** The composite of two signed reflections is a signed sandwich of the same shape,
 
 $$
-\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{b,b^{-1}}=\Sigma^{\alpha}_{c,\,c^{-1}},\qquad c=a\,\alpha(b),
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{b,b^{-1}}=\Sigma^{\alpha}_{c,\,c^{-1}},\qquad c=a\,\alpha(b)\;},
 $$
 
 so the signed reflections generate the group of the operators $\Sigma^{\alpha}_{a,a^{-1}}$; the composite need not be an involution, and it is one exactly when $c\alpha(c)=1$.
@@ -56,7 +56,7 @@ so the signed reflections generate the group of the operators $\Sigma^{\alpha}_{
 **Theorem.** The map $\Phi$ fails to be a correspondence in the degenerate cases: if $a\alpha(a)\neq1$ then $\Sigma^{\alpha}_{a,a^{-1}}$ is not a reflection, and if $a\alpha(a)=0$ then
 
 $$
-\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=0 ,
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=0\;} ,
 $$
 
 so the operator is nilpotent of order two and not invertible.

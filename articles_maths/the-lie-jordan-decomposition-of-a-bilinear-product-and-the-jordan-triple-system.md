@@ -47,7 +47,7 @@ so $(V,[\cdot,\cdot])$ is a Lie algebra. Because the product that defines it is 
 The symmetrisation satisfies the **Jordan identity**
 
 $$
-G \bullet (H \bullet (G \bullet G)) = (G \bullet H) \bullet (G \bullet G),
+\boxed{\;G \bullet (H \bullet (G \bullet G)) = (G \bullet H) \bullet (G \bullet G)\;},
 $$
 
 so $(V, \bullet)$ is a Jordan algebra. Because the product is associative, this is the *special* Jordan algebra $M_2(\mathbb{C})^+$ — the symmetrisation of an associative algebra, which is the general source of special Jordan algebras, and which here is the corpus's $H_2(\mathbb{C})$ with the Hermitian part singled out. The corpus's *Jordan Algebras* and *Special and Exceptional Jordan Algebras* record the theory; the second half of the source's decomposition lands exactly there.
@@ -57,7 +57,7 @@ so $(V, \bullet)$ is a Jordan algebra. Because the product is associative, this 
 The two halves are not independent: the bracket is a *derivation* of the Jordan product,
 
 $$
-[G, H \bullet K] = [G,H] \bullet K + H \bullet [G,K],
+\boxed{\;[G, H \bullet K] = [G,H] \bullet K + H \bullet [G,K]\;},
 $$
 
 and the sum
@@ -91,8 +91,8 @@ Both forms are ternary operations on $V$, and both are symmetric in the outer tw
 A **Jordan triple system** is a vector space with a ternary product that is linear in each argument, symmetric in the outer two, and satisfies the five-linear **Jordan triple identity**
 
 $$
-\{x, y, \{u, v, w\}\}
-= \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}.
+\boxed{\;\{x, y, \{u, v, w\}\}
+= \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}\;}.
 $$
 
 Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($A_\mu\bar\Psi\gamma^\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.

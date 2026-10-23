@@ -43,7 +43,7 @@ where $u_{n}$ is a chosen generator of $H^{n}(S^{n};R)$ and $u_{0}$ the unit.
 **Theorem.** For $n \geq 1$ the degree of the antipodal map of $S^{n}$ is
 
 $$
-\deg(\alpha) = (-1)^{n+1} .
+\boxed{\;\deg(\alpha) = (-1)^{n+1}\;} .
 $$
 
 **Proof.** The degree is multiplicative, $\deg(f \circ g) = \deg(f)\deg(g)$, for self-maps of the sphere, and the degree of a reflection is $-1$. The linear operator $-I$ of $\mathbb{R}^{n+1}$ is the composite of the $n+1$ reflections $\rho_{i}$ that change the sign of the $i$-th coordinate, and each $\rho_{i}$ restricts to a reflection of the sphere, a homeomorphism that fixes the equator of the $i$-th coordinate and exchanges the two hemispheres, of degree $-1$. Hence the antipodal map, the restriction of $-I = \rho_{1}\circ\cdots\circ\rho_{n+1}$, has degree $(-1)^{n+1}$.
@@ -81,7 +81,7 @@ the evaluation of the cup product on the fundamental class; it is nondegenerate 
 **Theorem.** The antipodal operator scales the cup-product pairing by its degree:
 
 $$
-b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, \mathfrak{b}(u,v) \qquad (u, v \in H^{*}(S^{n};R)).
+\boxed{\;b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, \mathfrak{b}(u,v) \qquad (u, v \in H^{*}(S^{n};R))\;}.
 $$
 
 Consequently the adjoint of the antipodal operator with respect to the pairing is the same operator multiplied by that scalar,
@@ -115,7 +115,7 @@ because $v = \alpha^{*}\alpha^{*}v$ and the isometry-up-to-sign relation applies
 **Theorem.** The fixed part of the antipodal operator on the cohomology of the sphere is
 
 $$
-H^{*}(S^{n};R)^{\alpha^{*}} = \begin{cases} H^{0}(S^{n};R) \oplus H^{n}(S^{n};R), & n \text{ odd}, \\ H^{0}(S^{n};R), & n \text{ even}, \end{cases}
+\boxed{\;H^{*}(S^{n};R)^{\alpha^{*}} = \begin{cases} H^{0}(S^{n};R) \oplus H^{n}(S^{n};R), & n \text{ odd}, \\ H^{0}(S^{n};R), & n \text{ even}, \end{cases}\;}
 $$
 
 and the anti-invariant part is the complementary summand when two is invertible: the whole of $H^{n}$ in the even case and zero in the odd case. In the even dimensions the invariant cohomology is only the degree-zero part, and in the odd dimensions it is the whole ring.

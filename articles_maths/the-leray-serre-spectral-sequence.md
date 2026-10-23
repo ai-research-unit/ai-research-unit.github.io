@@ -59,7 +59,7 @@ For each $n$ the filtration is finite because a singular simplex has compact ima
 **Theorem (the Serre spectral sequence).** Let $p : E \to B$ be a Serre fibration with $B$ a CW complex, and suppose that $B$ is path-connected and that $\pi_1(B, b_0)$ acts trivially on $H_*(F;R)$ for the fibre $F$ over $b_0$. Then the spectral sequence of the Serre filtration has
 
 $$
-E^2_{n,m} = H_n\bigl(B; H_q(F;R)\bigr) \ \Longrightarrow \ H_{n+m}(E;R),
+\boxed{\;E^2_{n,m} = H_n\bigl(B; H_q(F;R)\bigr) \ \Longrightarrow \ H_{n+m}(E;R)\;},
 $$
 
 with the coefficient module $H_q(F;R)$ constant, and the differential on the second page is
@@ -101,7 +101,7 @@ obtained by projecting the filtration quotients. When $B$ is path-connected and 
 **Theorem (the five-term exact sequence).** For a fibration $F \to E \to B$ as in the theorem above, the low-degree terms of the spectral sequence give the exact sequence
 
 $$
-H_2(E;R) \to H_2(B;R) \xrightarrow{\ \tau\ } H_1(F;R)_B \to H_1(E;R) \to H_1(B;R) \to 0,
+\boxed{\;H_2(E;R) \to H_2(B;R) \xrightarrow{\ \tau\ } H_1(F;R)_B \to H_1(E;R) \to H_1(B;R) \to 0\;},
 $$
 
 where the subscript denotes the coinvariants under the action of $\pi_1(B)$ (no subscript when the action is trivial), and $\tau$ is the **transgression**, which in these degrees is the differential $d^2$. In cohomology the corresponding sequence is
@@ -215,7 +215,7 @@ induced by the cross product and the multiplication of $H^*(F;R)$. The product o
 **Theorem (Leray–Serre with local coefficients).** For a Serre fibration $p : E \to B$ with $B$ path-connected, there is a first quadrant spectral sequence
 
 $$
-E^2_{n,m} = H_n\bigl(B; \mathcal{H}_q(F;R)\bigr) \Longrightarrow H_{n+m}(E;R),
+\boxed{\;E^2_{n,m} = H_n\bigl(B; \mathcal{H}_q(F;R)\bigr) \Longrightarrow H_{n+m}(E;R)\;},
 $$
 
 the homology of $B$ with coefficients in the local system $\mathcal{H}_q(F;R)$; when the monodromy is trivial this is the constant-coefficient statement above. The theory of local coefficients is the sheaf theory of andwritten later in this batch, and the identification of $H_*(B;\mathcal{H})$ with the cohomology of the corresponding sheaf is made there.

@@ -42,7 +42,7 @@ is the restriction of the algebra action to the group, that is, the pin represen
 **Proposition (the splitting).** The ideal splits according to the grading,
 
 $$
-I=I^0\oplus I^1,\qquad I^i=\mathrm{Cl}^i(V,\mathfrak{Q})\,\pi,
+\boxed{\;I=I^0\oplus I^1,\qquad I^i=\mathrm{Cl}^i(V,\mathfrak{Q})\,\pi\;},
 $$
 
 and left multiplication by an even element preserves the two summands while left multiplication by an odd element interchanges them.
@@ -60,8 +60,8 @@ and left multiplication by an even element preserves the two summands while left
 **Proposition (the operator realised by left multiplications).** For $x\in\mathrm{Cl}(V,\mathfrak{Q})$, $v\in V$ and $\psi\in I$,
 
 $$
-\Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
-=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi .
+\boxed{\;\Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
+=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\,\psi\;} .
 $$
 
 So the signed Hermitian sandwich is realised on the ideal as the conjugation of the Clifford multiplication by the left multiplication of $\alpha(x)$ and the **adjoint** of the left multiplication of $x$: the left factor is the signed left multiplication $\Lambda^{\alpha}_x$ and the right factor is the dagger right multiplication, read on the ideal as the adjoint operator $\rho(x)^{*}=\rho(x^{\dagger})$. On the unitary slice the adjoint is the inverse and the formula is that of the inverse formulation.
@@ -71,8 +71,8 @@ So the signed Hermitian sandwich is realised on the ideal as the conjugation of 
 **Corollary (the reflection, on and off the slice).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,
 
 $$
-\Theta^{\alpha}_u(v)\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi,\qquad
-\rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi ,
+\boxed{\;\Theta^{\alpha}_u(v)\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi,\qquad
+\rho(u)\,\rho(v)\,\rho(u)^{*}\,\psi=-\mathfrak{Q}(u)\,\rho_u(v)\,\psi\;} ,
 $$
 
 and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)\psi$; the unsigned sandwich is the negative of this on the slice. So on the ideal the sandwich with a slice-normalised vector is the reflection, and the sign that the two-sided operator removes is $-\mathfrak{Q}(u)$, which is $+1$ exactly on the slice.

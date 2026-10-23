@@ -81,7 +81,7 @@ The proposition is the model of the division side of the article: no nontrivial 
 **Theorem.** Suppose $2$ is invertible in $F$. The maps
 
 $$
-e\longmapsto u=2e-1, \qquad u\longmapsto e=\frac{1+u}{2}
+\boxed{\;e\longmapsto u=2e-1, \qquad u\longmapsto e=\frac{1+u}{2}\;}
 $$
 
 are inverse bijections between the set $\operatorname{Idem}(A)$ of idempotents and the set $R(A)$ of roots of the identity.
@@ -195,7 +195,7 @@ The implication is one-way. The converse fails, and the dual numbers are the sta
 **Corollary.** In the semisimple case the three conditions
 
 $$
-A\ \text{is a division algebra}, \qquad A\ \text{has no nontrivial idempotent}, \qquad R(A)=\{\pm1\}\ (2\neq0)
+\boxed{\;A\ \text{is a division algebra}, \qquad A\ \text{has no nontrivial idempotent}, \qquad R(A)=\{\pm1\}\ (2\neq0)\;}
 $$
 
 are equivalent. The dual numbers show that none of the equivalences survives without semisimplicity.
@@ -227,7 +227,7 @@ The word is used in the weak sense of the title: the algebra splits as a module 
 **Corollary.** For an algebra over a field of characteristic not two, the following are equivalent:
 
 $$
-A\ \text{is split}, \qquad A\ \text{has a nontrivial idempotent}, \qquad A\ \text{has a nontrivial root of the identity}.
+\boxed{\;A\ \text{is split}, \qquad A\ \text{has a nontrivial idempotent}, \qquad A\ \text{has a nontrivial root of the identity}\;}.
 $$
 
 The equivalence fails in characteristic two, where the halving is unavailable and the roots of the identity can be plentiful while the idempotents are not; §*Characteristic Two* gives the examples.

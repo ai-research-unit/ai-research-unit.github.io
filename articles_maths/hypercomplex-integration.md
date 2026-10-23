@@ -50,7 +50,7 @@ The fundamental integral theorem of the theory is the hypersurface version; it f
 **Theorem (Cauchy–Goursat).** Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be left regular and of class $C^1$ on $\bar\Omega$. Then
 
 $$
-\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0,
+\boxed{\;\int_{\partial\Omega} \nu_B(y)\, f(y)\, dS(y) = 0\;},
 $$
 
 where $\nu_B$ is the conormal element and $dS$ the surface measure.
@@ -174,7 +174,7 @@ along any path from a fixed base point is well defined and is a primitive of $f$
 **Theorem (Cauchy integral formula, general form).** Let $\Omega$ be a bounded domain with smooth boundary, $E$ a Cauchy kernel for $D$, and $f$ left regular on a neighbourhood of $\bar\Omega$. Then for every $x \in \Omega$,
 
 $$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y).
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y)\;}.
 $$
 
 This was stated in *Hypercomplex Analysis* and derived there from the Cauchy–Pompeiu formula; in the commutative case it is the classical Cauchy formula, and in the quaternionic case it is the Cauchy formula for monogenic functions. The kernel $E$ is specific to the system; the formula is not.
@@ -204,7 +204,7 @@ for $0 < \epsilon$ small enough that $B(p,\epsilon) \setminus \{p\} \subseteq U^
 **Theorem (residue theorem, general form).** Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be left regular on $\bar\Omega$ except at finitely many points $x_1, \dots, x_k$ in the interior, with a removable-type behaviour at the boundary. Then
 
 $$
-\int_{\partial\Omega} \nu_B(y)\,f(y)\,dS(y) = \sum_{i=1}^{k} \operatorname{Res}_{x_i} f.
+\boxed{\;\int_{\partial\Omega} \nu_B(y)\,f(y)\,dS(y) = \sum_{i=1}^{k} \operatorname{Res}_{x_i} f\;}.
 $$
 
 *Proof.* Excise a small ball around each $x_i$ and apply Cauchy–Goursat to the punctured domain.

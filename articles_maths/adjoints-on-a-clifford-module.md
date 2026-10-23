@@ -117,8 +117,8 @@ Clifford-adjoint exists and is unique for every $T\in\mathrm{End}_\mathbb{R}(\ma
 assignment $T\mapsto T^{\mathrm{Cl}}$ is an anti-linear involution of the operator algebra:
 
 $$
-(T^{\mathrm{Cl}})^{\mathrm{Cl}}=T , \qquad (ST)^{\mathrm{Cl}}=T^{\mathrm{Cl}}S^{\mathrm{Cl}} , \qquad
-(\alpha T)^{\mathrm{Cl}}=\bar\alpha\,T^{\mathrm{Cl}} \quad (\alpha\in\mathbb{K}) .
+\boxed{\;(T^{\mathrm{Cl}})^{\mathrm{Cl}}=T , \qquad (ST)^{\mathrm{Cl}}=T^{\mathrm{Cl}}S^{\mathrm{Cl}} , \qquad
+(\alpha T)^{\mathrm{Cl}}=\bar\alpha\,T^{\mathrm{Cl}} \quad (\alpha\in\mathbb{K})\;} .
 $$
 
 An operator is **Clifford-self-adjoint** when $T^{\mathrm{Cl}}=T$, and **Clifford-skew** when
@@ -201,7 +201,7 @@ positive functional $\mathrm{Sc}$ that is central, $\mathrm{Sc}(ax)=\mathrm{Sc}(
 Then for an $A$-linear operator $T$ (an intertwiner, $T\,c(x)=c(x)\,T$) the two adjoints coincide,
 
 $$
-T^{\dagger}=T^{\mathrm{Cl}} \qquad (T \ A\text{-linear}) ,
+\boxed{\;T^{\dagger}=T^{\mathrm{Cl}} \qquad (T \ A\text{-linear})\;} ,
 $$
 
 and the Clifford-self-adjoint intertwiners are exactly the Hermitian-self-adjoint ones.
@@ -243,7 +243,7 @@ the dagger, which agree exactly on a $\ast$-representation and need not agree ot
 Hermitian-adjoint of the operator $D=\partial/\partial x^t+\sum_{i\ge1}c(e_i)\partial/\partial x^i$ is
 
 $$
-D^{\dagger}=-\bar D ,
+\boxed{\;D^{\dagger}=-\bar D\;} ,
 $$
 
 and it is the operator that closes the factorisation $D\bar D=\Delta\,1_\mathcal{S}$; on a bounded

@@ -23,7 +23,7 @@ with the inverse-limit topology, the completion of the algebra for the filtratio
 **Theorem.** The filtration completion is a complete Hausdorff topological algebra when the filtration is separated, the algebra embeds in it as a dense subalgebra, and its associated graded algebra is $\Lambda(V)$:
 
 $$
-\operatorname{gr}\widehat{\mathrm{Cl}}_{\mathrm{filt}}\cong\Lambda(V).
+\boxed{\;\operatorname{gr}\widehat{\mathrm{Cl}}_{\mathrm{filt}}\cong\Lambda(V)\;}.
 $$
 
 *Proof.* This is the proposition of *The Continuous Grade Decomposition and the Filtration*, §*The Completion of the Filtration*; the density is the standard property of an inverse limit over a cofinal family of onto maps, the separatedness is the theorem of the same article that $\bigcap_{k}N_{k}=0$ for a non-degenerate form, and the identification of the associated graded is the invariance of the successive quotients under completion.
@@ -61,7 +61,7 @@ is a Banach algebra containing $\mathrm{Cl}(V,\mathfrak{Q})/J$ as a dense subalg
 **Theorem (finite dimension).** Let $V$ be finite-dimensional over a complete valued field and $q$ non-degenerate. Then $N_{k}=0$ for $k>n$, the filtration topology is discrete, and both completions are the algebra itself:
 
 $$
-\widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,\mathfrak{Q}).
+\boxed{\;\widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,\mathfrak{Q})\;}.
 $$
 
 *Proof.* The filtration topology is discrete by *The Continuous Grade Decomposition and the Filtration*, §*The Quotients and the Separation*, so the algebra is complete for it and the inverse limit stabilizes; a finite-dimensional normed space over a complete field is complete, so the norm completion is the algebra itself; and the projective seminorm is a norm in finite dimension, since the projective norm is equivalent to the unique norm of the finite-dimensional tensor powers.
@@ -89,7 +89,7 @@ $$
 **Theorem (convergence and the exponential).** Let the base be $\mathbb{R}$ or $\mathbb{C}$ and let $\widehat{A}$ be either completion of the algebra. Then every absolutely convergent series $\sum_{n}x_{n}$ with $\sum_{n}\lVert x_{n}\rVert<\infty$ converges in $\widehat{A}$, the geometric series $\sum_{n\ge0}t^{n}$ converges for $\lVert t\rVert<1$ with sum $(1-t)^{-1}$, and for every $v\in V$ the exponential
 
 $$
-\exp(v) = \sum_{n\ge0}\frac{v^{n}}{n!}
+\boxed{\;\exp(v) = \sum_{n\ge0}\frac{v^{n}}{n!}\;}
 $$
 
 converges in the norm completion, because $\lVert v^{n}/n!\rVert\le\lVert v\rVert^{n}/n!$ and the numerical series converges.

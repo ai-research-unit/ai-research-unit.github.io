@@ -43,7 +43,7 @@ so that $E_f(w)\to+\infty$ as $\|w\|_{H^1}\to\infty$; the functional attains a m
 **Proposition (completion of the square).** Let $w_0$ be the minimiser of $E_f$. Then for every $w\in H^1_0(\Omega)$,
 
 $$
-E_f(w) = \mathfrak{a}(w-w_0,w-w_0) - \mathfrak{a}(w_0,w_0) ,
+\boxed{\;E_f(w) = \mathfrak{a}(w-w_0,w-w_0) - \mathfrak{a}(w_0,w_0)\;} ,
 $$
 
 so that the minimum value is $-\mathfrak{a}(w_0,w_0)=-\langle f,w_0\rangle$, and $E_f$ is the translate of the squared form norm.
@@ -77,7 +77,7 @@ so the derivative at $0$ vanishes, which for all $v$ is the variational equation
 *Proof.* For any $w=U+\phi$ with $\phi\in H^1_0(\Omega)$,
 
 $$
-\int|\nabla w|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\phi} + \int|\nabla\phi|^2 ,
+\boxed{\;\int|\nabla w|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\phi} + \int|\nabla\phi|^2\;} ,
 $$
 
 and the middle term vanishes because $\Delta U=0$ in the weak sense and $\phi$ has trace zero; hence $\int|\nabla w|^2\ge\int|\nabla U|^2$, with equality only for $\phi=0$ by the Poincaré inequality. The classical minimiser is therefore the harmonic function with the given boundary values.
@@ -105,7 +105,7 @@ and the dependence of $\phi_0$ on $U$ is affine and bounded; the boundary data t
 **Theorem (variational inequalities).** Let $K\subseteq H^1_0(\Omega)$ be a nonempty closed convex set and let $\mathfrak{a}$ be a bounded coercive Hermitian form. Then $E_f$ has a unique minimiser $w$ over $K$, and $w$ is characterised by the variational inequality
 
 $$
-\operatorname{Re}\bigl(\mathfrak{a}(w,v-w)\bigr) \ge \operatorname{Re}\langle f,v-w\rangle \qquad \text{for every } v\in K .
+\boxed{\;\operatorname{Re}\bigl(\mathfrak{a}(w,v-w)\bigr) \ge \operatorname{Re}\langle f,v-w\rangle \qquad \text{for every } v\in K\;} .
 $$
 
 *Proof.* Existence is the standard argument for a coercive convex continuous functional on a closed convex set: a minimising sequence is bounded, so a subsequence converges weakly, and the weak lower semicontinuity of $E_f$, which is convex continuous, gives a minimiser. Uniqueness is strict convexity, using the parallelogram identity for the quadratic part. For the characterisation, the convexity of $K$ makes $w+t(v-w)\in K$ for $0\le t\le1$; the derivative of $t\mapsto E_f(w+t(v-w))$ at $t=0$ is $2\operatorname{Re}(\mathfrak{a}(w,v-w)-\langle f,v-w\rangle)$, and it must be nonnegative.

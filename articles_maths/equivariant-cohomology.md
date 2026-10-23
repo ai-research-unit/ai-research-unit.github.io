@@ -55,7 +55,7 @@ So $H_G^*(X;R)$ depends only on the equivariant homotopy type of $X$ and not on 
 **Theorem.** If $G$ acts freely on $X$, then the projection $EG\times X\to X$, $(e,x)\mapsto x$, is a $G$-equivariant homotopy equivalence, and it descends to a homotopy equivalence
 
 $$
-X_G = EG\times_G X \ \simeq\ X/G .
+\boxed{\;X_G = EG\times_G X \ \simeq\ X/G\;} .
 $$
 
 Hence $H_G^*(X;R) \cong H^*(X/G;R)$ for a free action, and the Borel fibration is the composite $X/G \to BG$ classifying the principal bundle $X\to X/G$.
@@ -89,7 +89,7 @@ $$
 where $\mathcal{H}^q(X;R)$ is the local system on $BG$ determined by the action of $\pi_1(BG)$ on the cohomology of the fibre; the system is trivial and the formula reads
 
 $$
-E_2^{n,m} = H^p(BG;R)\otimes_R H^q(X;R) \ \Longrightarrow \ H_G^{p+q}(X;R)
+\boxed{\;E_2^{n,m} = H^p(BG;R)\otimes_R H^q(X;R) \ \Longrightarrow \ H_G^{p+q}(X;R)\;}
 $$
 
 when the action of the fundamental group is trivial, in particular for a connected group $G$ or when $X$ has trivial monodromy. The spectral sequence converges to the equivariant cohomology, is natural in equivariant maps, and its edge maps are the pullback $H^*(BG;R)\to H_G^*(X;R)$ along $X_G\to BG$ and the map $H_G^*(X;R)\to H^*(X;R)^G$ to the invariants.
@@ -166,7 +166,7 @@ The general comparison, the exact sequence that measures the failure of the isom
 **Theorem (localization; standard).** Let $T$ be a torus acting on a finite-dimensional $T$-CW complex $X$ and let $F = X^T$ be the fixed set. Then the inclusion $F\hookrightarrow X$ induces an isomorphism after localizing at the multiplicative set of nonzero elements of $H^*(BT;\mathbb{Q})$ that restrict nontrivially to $H^*(BT)$ through every subtorus:
 
 $$
-H_T^*(X;\mathbb{Q})[\mathcal{S}^{-1}] \;\cong\; H_T^*(F;\mathbb{Q})[\mathcal{S}^{-1}] ,
+\boxed{\;H_T^*(X;\mathbb{Q})[\mathcal{S}^{-1}] \;\cong\; H_T^*(F;\mathbb{Q})[\mathcal{S}^{-1}]\;} ,
 $$
 
 and since the action on $F$ is trivial there, the right side is $H^*(F;\mathbb{Q})\otimes H^*(BT;\mathbb{Q})$ localized. In particular, for a torus action the rational equivariant cohomology is determined by the fixed set.

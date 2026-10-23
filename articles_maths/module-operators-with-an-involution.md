@@ -84,7 +84,7 @@ Congruences are the general "change of pairing" operation on operators: replacin
 **Theorem.** An operator $u$ is unitary if and only if it preserves the pairing, $\langle u(m),u(n)\rangle=\langle m,n\rangle$ for all $m,n$. The unitary operators form a subgroup $\mathrm{U}(M)$ of $E^{\times}$, the isometry group of the pairing, and for $u \in \mathrm{U}(M)$ and $f \in E$,
 
 $$
-(ufu^{*})^{*}=u f^{*}u^{*}, \qquad (ufu^{-1})^{*}=u f^{*}u^{-1}.
+\boxed{\;(ufu^{*})^{*}=u f^{*}u^{*}, \qquad (ufu^{-1})^{*}=u f^{*}u^{-1}\;}.
 $$
 
 *Proof.* The isometry characterisation and the group property are *The Involution on the Endomorphism Ring of a Module*; the two identities use $u^{*}=u^{-1}$ and anti-multiplicativity.
@@ -122,7 +122,7 @@ The classification of the orbits of self-adjoint operators requires invariants (
 **Proposition.** For every $f \in E$,
 
 $$
-f+f^{*} \in \operatorname{Sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{Sym}(M), \qquad f^{*} f \in \operatorname{Sym}(M) .
+\boxed{\;f+f^{*} \in \operatorname{Sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{Sym}(M), \qquad f^{*} f \in \operatorname{Sym}(M)\;} .
 $$
 
 Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is skew-adjoint if and only if $f=-f^{*}$.

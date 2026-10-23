@@ -73,7 +73,7 @@ $$
 is an isomorphism, because $H_{*,\mathrm{red}}(C X;R)=0$. Under the excision identification $H_{n+1}(C X, X;R) \cong H_{n+1,\mathrm{red}}(\Sigma X;R)$ given by the second cone, this is an isomorphism
 
 $$
-\partial : H_{n+1,\mathrm{red}}(\Sigma X;R) \xrightarrow{\ \cong\ } H_{n,\mathrm{red}}(X;R).
+\boxed{\;\partial : H_{n+1,\mathrm{red}}(\Sigma X;R) \xrightarrow{\ \cong\ } H_{n,\mathrm{red}}(X;R)\;}.
 $$
 
 *Proof.* The pair sequence reads $H_{n+1,\mathrm{red}}(C X)\to H_{n+1,\mathrm{red}}(C X,X)\xrightarrow{\partial}H_{n,\mathrm{red}}(X)\to H_{n,\mathrm{red}}(C X)$, and the two outer groups vanish, so the middle map is an isomorphism. The identification of the relative group with the reduced suspension is the excision $H_{n+1}(C X,X)\cong H_{n+1}(C X\cup_X C X, C X)\cong H_{n+1,\mathrm{red}}(\Sigma X)$ of *Simplicial and Singular Homology*.
@@ -91,7 +91,7 @@ so that the suspension isomorphism is the statement that $\sigma_n$ is an isomor
 **Theorem (the operator is the cone).** The suspension operator is induced by the cone operator: for a cycle $c \in C_{n,\mathrm{red}}(X;R)$,
 
 $$
-\sigma_n[c] = [E_n c] \in H_{n+1,\mathrm{red}}(\Sigma X;R),
+\boxed{\;\sigma_n[c] = [E_n c] \in H_{n+1,\mathrm{red}}(\Sigma X;R)\;},
 $$
 
 and it satisfies $\partial \sigma_n = \mathrm{id}$. It is natural: for a based map $f : X \to Y$,
@@ -143,7 +143,7 @@ suspended by $\sigma$, commutes with the corresponding map of the suspended pair
 **Theorem.** The reduced cohomology of a suspension has trivial product: for classes $u,v$ of positive degree in $H^{*,\mathrm{red}}(\Sigma X;R)$,
 
 $$
-u \smile v = 0 .
+\boxed{\;u \smile v = 0\;} .
 $$
 
 Equivalently, the cup product of two suspensions is zero, so the ring $H^{*,\mathrm{red}}(\Sigma X;R)$ is square-zero in positive degrees; consequently the suspension operator does not transport the products of $X$ to the products of $\Sigma X$, and the product of a cohomology theory is not a stable operation.

@@ -38,7 +38,7 @@ for homogeneous $x,y$; it is the associative superalgebra universal for the prop
 **Theorem (Poincaré–Birkhoff–Witt for Lie superalgebras).** Let $(x_i)_{i\in I}$ be a basis of $\mathrm{G}$ over $k$ consisting of homogeneous elements, ordered by a total order, and let $I_{\bar0}$, $I_{\bar1}$ be the even and the odd basis elements. Then the monomials
 
 $$
-x_{i_1}^{a_1}\cdots x_{i_r}^{a_r}, \qquad i_1<\cdots<i_r,\ a_j\geq1,\ a_j = 1 \text{ whenever } i_j\in I_{\bar1},
+\boxed{\;x_{i_1}^{a_1}\cdots x_{i_r}^{a_r}, \qquad i_1<\cdots<i_r,\ a_j\geq1,\ a_j = 1 \text{ whenever } i_j\in I_{\bar1}\;},
 $$
 
 together with the unit, form a $k$-basis of $\mathrm{U}(\mathrm{G})$; consequently the symbol map is an isomorphism of algebras
@@ -96,7 +96,7 @@ the induced module on which $\mathrm{N}^+$ acts by zero; it is the super-analogu
 **Theorem (Kac, standard).** Every simple finite-dimensional $\mathrm{G}$-module is the head of a unique Kac module $K(\lambda)$ with $\lambda$ a dominant integral weight, so that the simple finite-dimensional modules are indexed by the dominant integral weights; the Kac module $K(\lambda)$ is either simple — and then $\lambda$ is called **typical** — or has a unique maximal submodule and a composition series of length $>1$ — and then $\lambda$ is called **atypical**. The set of typical weights is the complement of a union of hyperplanes in $\mathrm{H}^*$, and for a typical weight the **Berezin–Kac character formula**
 
 $$
-\operatorname{ch}K(\lambda) = \frac{\sum_{w\in W}(-1)^{\lvert w\rvert}w\bigl(\exp(\lambda+\rho)\prod_{\alpha\in\Delta^+_{\bar1}}\bigl(1+\exp(-\alpha)\bigr)\bigr)}{\prod_{\alpha\in\Delta^+_{\bar0}}\bigl(\exp(\alpha/2)-\exp(-\alpha/2)\bigr)}
+\boxed{\;\operatorname{ch}K(\lambda) = \frac{\sum_{w\in W}(-1)^{\lvert w\rvert}w\bigl(\exp(\lambda+\rho)\prod_{\alpha\in\Delta^+_{\bar1}}\bigl(1+\exp(-\alpha)\bigr)\bigr)}{\prod_{\alpha\in\Delta^+_{\bar0}}\bigl(\exp(\alpha/2)-\exp(-\alpha/2)\bigr)}\;}
 $$
 
 holds, the product over the odd positive roots being the factor that distinguishes the super-character from the ordinary character; the character is read as the **supercharacter** $\operatorname{ch}V = \sum_\mu(\dim V_\mu)\,e^\mu$ with the dimensions taken in the super sense.
@@ -122,7 +122,7 @@ with the differential given by the same display as in *Lie Algebra Cohomology*, 
 **Theorem.** The complex is a complex — that is, $d^2 = 0$ — and
 
 $$
-H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M)
+\boxed{\;H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M)\;}
 $$
 
 for every supermodule $M$, so that the cohomological interpretations of the low degrees hold as in the ungraded case: $H^0$ is the invariants, $H^1$ the derivations modulo the inner superderivations, $H^2$ the classes of abelian extensions of the Lie superalgebra; the identification is proved by the resolution $\mathrm{U}(\mathrm{G})\otimes S^\bullet(\mathrm{G})\to k$, which is free by the super Poincaré–Birkhoff–Witt theorem.

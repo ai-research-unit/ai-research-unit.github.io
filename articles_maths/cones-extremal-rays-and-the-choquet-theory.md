@@ -24,7 +24,7 @@ It is **pointed** when $C\cap(-C) = \{0\}$, **generating** when $C - C = E$, and
 **Definition.** A **ray** of $C$ is the set $\mathbb{R}_{\geq0}\,x = \{tx : t\geq0\}$ of nonnegative multiples of a nonzero $x\in C$. A ray $R$ is **extremal** when
 
 $$
-x, y\in C,\ x + y\in R \implies x, y\in R .
+\boxed{\;x, y\in C,\ x + y\in R \implies x, y\in R\;} .
 $$
 
 A vector $x\in C$ is an **extremal generator** when its ray is extremal, and the set of extremal rays is written $\operatorname{ray}(C)$.
@@ -44,7 +44,7 @@ A vector $x\in C$ is an **extremal generator** when its ray is extremal, and the
 **Proposition (the dual cone and the base of the dual).** The **dual cone** of $C$ is
 
 $$
-C^* = \{f\in E' : f(x)\geq0 \ \text{for every } x\in C\},
+\boxed{\;C^* = \{f\in E' : f(x)\geq0 \ \text{for every } x\in C\}\;},
 $$
 
 a closed convex cone in the dual for the weak-* topology; when $C$ is closed, proper and generating with a base, the states $S = \{f\in C^* : f(u) = 1\}$ of *Ordered Vector Spaces and the Order Unit* are a base of $C^*$, weak-* compact when the base of $C$ is compact.
@@ -84,7 +84,7 @@ and a measure is **maximal** when it is maximal for $\preceq$. The **Choquet bou
 **Theorem (Choquet–Bishop–de Leeuw).** Every maximal measure $\mu$ on $K$ is carried by the Choquet boundary, $\mu(K\setminus\partial K) = 0$. Consequently, for a metrizable $K$, where $\partial K = \operatorname{ext} K$, every $x\in K$ is the barycentre of a measure carried by the extreme points,
 
 $$
-x = \int_{\operatorname{ext} K} e\,d\mu(e) .
+\boxed{\;x = \int_{\operatorname{ext} K} e\,d\mu(e)\;} .
 $$
 
 *Proof.* If $x\notin\partial K$ there is an upper semicontinuous convex $f$ with $f(x)>0$ and $f\leq0$ on $\partial K$; the set where $f$ attains its positive maximum is a compact convex subset of $K$ disjoint from the boundary, and a maximal measure gives it no mass, by the maximality; iterating over the boundary and using the metrizability to run a countable exhaustion yields the result. The identification $\partial K = \operatorname{ext} K$ in the metrizable case is the Choquet–Bishop–de Leeuw theorem.

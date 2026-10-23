@@ -60,7 +60,7 @@ using $\varepsilon^2 = 0$.
 **Corollary.** For $R = \mathbb{R}$, the group of units is
 
 $$
-(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R},
+\boxed{\; (\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R} \;},
 $$
 
 with the two factors the nonzero scalars and the shear group. The unit group is abelian, has exactly two connected components, distinguished by the sign of the real part, and each is contractible.
@@ -151,7 +151,7 @@ The orbits of the shear group are therefore the fibres of the augmentation, and 
 **Theorem.** The set $G = \{S(s) : s \in \mathbb{R}\}$ is a one-parameter subgroup of $GL_2(\mathbb{R})$, and the map $s \mapsto S(s)$ is an isomorphism of groups
 
 $$
-(\mathbb{R}, +) \longrightarrow G, \qquad S(s)S(t) = S(s+t), \qquad S(0) = I, \qquad S(s)^{-1} = S(-s).
+\boxed{\; (\mathbb{R}, +) \longrightarrow G, \qquad S(s)S(t) = S(s+t), \qquad S(0) = I, \qquad S(s)^{-1} = S(-s) \;}.
 $$
 
 **Proof.** $S(s) = I + sE$ and $E^2 = 0$, so $(I+sE)(I+tE) = I + (s+t)E + stE^2 = I + (s+t)E$.
@@ -189,7 +189,7 @@ $$
 which is the coordinate of the line through the origin of slope $t$, i.e. the coordinate of the projective line at points where the first homogeneous coordinate is nonzero. Then
 
 $$
-S(s)(q + \varepsilon q') = q + (q'+s q)\varepsilon \quad\Longrightarrow\quad t \longmapsto \frac{q' + s q}{q} = t + s.
+\boxed{\; S(s)(q + \varepsilon q') = q + (q'+s q)\varepsilon \quad\Longrightarrow\quad t \longmapsto \frac{q' + s q}{q} = t + s \;}.
 $$
 
 So on the projective line the shear acts by a **translation** of the affine coordinate. A transformation of the projective line with a single fixed point of multiplicity two is called parabolic; the fixed point here is the class of $\varepsilon$, i.e. the fibre over the origin, and the shear group is exactly the one-parameter unipotent subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes that point — the subgroup conjugate to the translations. This is the Lie-theoretic content of the word "parabolic" in the title.

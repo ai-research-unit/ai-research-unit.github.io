@@ -109,7 +109,7 @@ converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as ab
 The inversion formula is
 
 $$
-f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) \exp(\langle \xi, Q \rangle \varepsilon) \, d\xi,
+\boxed{\; f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) \exp(\langle \xi, Q \rangle \varepsilon) \, d\xi \;},
 $$
 
 under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to
@@ -161,7 +161,9 @@ where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.
 **Convolution theorem.** For functions for which the dual Fourier transform is defined,
 
 $$
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
+\boxed{\;
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)
+\;}.
 $$
 
 **Proof.** Write the definition, apply Fubini, and change variables.
@@ -303,7 +305,9 @@ where $B(Q_1, r)$ is the Euclidean ball of radius $r$ centred at $Q_1$, and $|B(
 **Theorem (Hardy–Littlewood, dual version).** There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D}')$ and every $\lambda > 0$,
 
 $$
-|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+\boxed{\;
+|\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1
+\;}.
 $$
 
 This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{D}')$ for $1 < p \leq \infty$.
@@ -311,7 +315,7 @@ This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\m
 **Theorem.** For $1 < p \leq \infty$, there exists $C_p > 0$ such that
 
 $$
-\|Mf\|_p \leq C_p \|f\|_p.
+\boxed{\; \|Mf\|_p \leq C_p \|f\|_p \;}.
 $$
 
 **Proof.** The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.
@@ -397,7 +401,7 @@ where $L(\theta, t)$ is the line with normal direction $(\cos\theta, \sin\theta)
 **Theorem (Fourier Slice, dual version).** The one-dimensional dual Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional dual Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:
 
 $$
-\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta).
+\boxed{\; \widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta) \;}.
 $$
 
 **Proof.** Write the definition of the Radon transform, take the dual Fourier transform in $t$, and change variables.

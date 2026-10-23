@@ -41,7 +41,7 @@ the domain of the realisation of $L$ under $B$ in the notation of *Differential 
 **Theorem (the boundary form is skew-Hermitian).** For a formally self-adjoint operator $L=L^{\dagger}$ the boundary form is sesquilinear, linear in the first argument and conjugate-linear in the second, and
 
 $$
-\langle w,v\rangle_\partial = -\,\overline{\langle v,w\rangle_\partial} ,
+\boxed{\;\langle w,v\rangle_\partial = -\,\overline{\langle v,w\rangle_\partial}\;} ,
 $$
 
 so that $\langle w,w\rangle_\partial$ is purely imaginary and the form is the imaginary part of a Hermitian pairing of the boundary data; it is a function of the traces $\gamma w,\gamma v$ alone.
@@ -59,7 +59,7 @@ that is, if the boundary form vanishes identically on the admissible subspace, e
 **Theorem (self-adjointness as the vanishing of the boundary term).** Let $L$ be formally self-adjoint and let $B$ be a boundary condition. Then the realisation of $L$ under $B$ is symmetric,
 
 $$
-\langle Lw,v\rangle = \langle w,Lv\rangle \qquad \text{for every } w,v\in\mathcal{A} ,
+\boxed{\;\langle Lw,v\rangle = \langle w,Lv\rangle \qquad \text{for every } w,v\in\mathcal{A}\;} ,
 $$
 
 if and only if the problem is self-adjoint in the sense above; the difference of the two sides is exactly $-\langle w,v\rangle_\partial$.
@@ -99,7 +99,7 @@ which is a Hermitian sesquilinear form on the admissible subspace $\mathcal{A}$,
 **Theorem (completeness of the eigenfunction expansion).** Let the problem $(L,B)$ be self-adjoint and suppose that the Green operator $G$ of *The Green Operator* exists, is compact and is self-adjoint on $L^2(\Omega)$. Then the eigenvalues of the problem form a real sequence $\lambda_1,\lambda_2,\dots$ tending to infinity in absolute value, each of finite multiplicity, the eigenfunctions $\varphi_n$ may be chosen orthonormal in $L^2(\Omega)$, and they are complete:
 
 $$
-f = \sum_{n\ge1}\langle f,\varphi_n\rangle\,\varphi_n , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle\bigr|^2 ,
+\boxed{\;f = \sum_{n\ge1}\langle f,\varphi_n\rangle\,\varphi_n , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle\bigr|^2\;} ,
 $$
 
 the first series converging in $L^2(\Omega)$ for every $f$.

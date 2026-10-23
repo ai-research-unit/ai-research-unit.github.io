@@ -27,7 +27,7 @@ and the Sylvester operator is $L_{\tilde Q_1}+R_{\tilde D}=\mathsf{M}_2(\tilde Q
 **Theorem (the one-sided spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$, repeated with algebraic multiplicity. Then
 
 $$
-\mathrm{spec}(L_{\tilde Q_1}) = \{\lambda_{1},\lambda_{2},\lambda_{1},\lambda_{2}\},\qquad \mathrm{spec}(R_{\tilde D}) = \{\mu_{1},\mu_{2},\mu_{1},\mu_{2}\},
+\boxed{\; \mathrm{spec}(L_{\tilde Q_1}) = \{\lambda_{1},\lambda_{2},\lambda_{1},\lambda_{2}\},\qquad \mathrm{spec}(R_{\tilde D}) = \{\mu_{1},\mu_{2},\mu_{1},\mu_{2}\} \;},
 $$
 
 each eigenvalue with multiplicity two, and the characteristic polynomials are $\chi_{L_{\tilde Q_1}}(t)=\chi_{\mathsf{M}_2(\tilde Q_1)}(t)^{2}$ and $\chi_{R_{\tilde D}}(t)=\chi_{\mathsf{M}_2(\tilde D)}(t)^{2}$.
@@ -49,13 +49,13 @@ that is, the four pairwise differences of the eigenvalues of $\mathsf{M}_2(\tild
 **Theorem (the two-sided spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde{Q})$. Then
 
 $$
-\mathrm{spec}(\Theta_{\tilde{Q}}) = \{\lambda_{i}\overline{\lambda_{j}}\ :\ i,j=1,2\} = \{\lvert\lambda_{1}\rvert^{2},\ \lambda_{1}\overline{\lambda_{2}},\ \lambda_{2}\overline{\lambda_{1}},\ \lvert\lambda_{2}\rvert^{2}\},
+\boxed{\; \mathrm{spec}(\Theta_{\tilde{Q}}) = \{\lambda_{i}\overline{\lambda_{j}}\ :\ i,j=1,2\} = \{\lvert\lambda_{1}\rvert^{2},\ \lambda_{1}\overline{\lambda_{2}},\ \lambda_{2}\overline{\lambda_{1}},\ \lvert\lambda_{2}\rvert^{2}\} \;},
 $$
 
 and consequently
 
 $$
-\operatorname{tr}(\Theta_{\tilde{Q}}) = \lvert\operatorname{tr}\mathsf{M}_2(\tilde{Q})\rvert^{2},\qquad \det(\Theta_{\tilde{Q}}) = \lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{4},
+\boxed{\; \operatorname{tr}(\Theta_{\tilde{Q}}) = \lvert\operatorname{tr}\mathsf{M}_2(\tilde{Q})\rvert^{2},\qquad \det(\Theta_{\tilde{Q}}) = \lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{4} \;},
 $$
 
 the trace of the sandwich being the Hermitian square of the trace of the element.

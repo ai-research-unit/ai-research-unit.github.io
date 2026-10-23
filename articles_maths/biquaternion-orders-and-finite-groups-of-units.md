@@ -31,11 +31,11 @@ $$
 
 **Theorem.** The group of units of the Lipschitz order is the eight-element quaternion group,
 $$
-\mathcal{L}^{\times}\cong Q_8=\{\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z\},
+\boxed{\; \mathcal{L}^{\times}\cong Q_8=\{\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z\} \;},
 $$
 and the group of units of the Hurwitz order is the twenty-four-element binary tetrahedral group,
 $$
-(\mathcal{L}')^{\times}\cong 2T=\{\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z,\tfrac12(\pm e_t\pm \vec e_x\pm \vec e_y\pm \vec e_z)\}.
+\boxed{\; (\mathcal{L}')^{\times}\cong 2T=\{\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z,\tfrac12(\pm e_t\pm \vec e_x\pm \vec e_y\pm \vec e_z)\} \;}.
 $$
 
 **Proof.** On real quaternion coordinates the norm is $\langle\tilde q\rangle_{\natural}=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ with $\tilde q^{\natural}$ the quaternion conjugate, and $\tilde q^{\natural}$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $\langle\tilde q\rangle_{\natural}=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_t\pm \vec e_x\pm \vec e_y\pm \vec e_z)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
@@ -95,7 +95,7 @@ the rotation groups of the tetrahedron, the octahedron and the icosahedron.
 
 **Theorem.** The finite subgroups of the unit quaternions $Sp(1)=S^3$ are the twofold preimages of these: the cyclic groups, the **binary dihedral** groups, and the three binary polyhedral groups
 $$
-2T\ (24),\qquad 2O\ (48),\qquad 2I\ (120),
+\boxed{\; 2T\ (24),\qquad 2O\ (48),\qquad 2I\ (120) \;},
 $$
 the binary tetrahedral, octahedral and icosahedral groups.
 

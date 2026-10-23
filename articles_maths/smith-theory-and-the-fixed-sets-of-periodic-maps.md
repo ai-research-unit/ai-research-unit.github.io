@@ -29,7 +29,7 @@ The fixed set $F = X^G$ is a closed subspace when $G$ is finite and $X$ is Hausd
 **Theorem (Smith inequality).** Let $\mathbb{Z}/p$ act on a finite-dimensional complex $X$ with finitely generated mod $p$ homology, and let $F = X^{\mathbb{Z}/p}$. Then the mod $p$ homology of $F$ is finitely generated in each degree and
 
 $$
-\sum_i \dim_{\mathbb{F}_p} H_i(F;\mathbb{F}_p) \;\leq\; \sum_i \dim_{\mathbb{F}_p} H_i(X;\mathbb{F}_p),
+\boxed{\;\sum_i \dim_{\mathbb{F}_p} H_i(F;\mathbb{F}_p) \;\leq\; \sum_i \dim_{\mathbb{F}_p} H_i(X;\mathbb{F}_p)\;},
 $$
 
 the total mod $p$ Betti number of the fixed set is at most that of the space. More precisely, the **Smith index** of a class of dimension $k$ is $k$ and each fixed class in degree $k$ accounts for a class in degree at least $k$ downstairs, so that for every $k$,
@@ -45,7 +45,7 @@ $$
 **Theorem (Smith theory of $p$-groups).** Let $P$ be a $p$-group acting on a finite-dimensional complex $X$ and let $F = X^P$. Then the mod $p$ homology of $F$ is finitely generated and the Smith inequality holds, with the fixed set of $P$ equal to the fixed set of its centre and computed by iteration over a central series:
 
 $$
-X^P = X^{Z(P)}, \qquad F \text{ a mod } p \text{ finite complex}, \qquad \sum_i\dim_{\mathbb{F}_p}H_i(F)\le\sum_i\dim_{\mathbb{F}_p}H_i(X).
+\boxed{\;X^P = X^{Z(P)}, \qquad F \text{ a mod } p \text{ finite complex}, \qquad \sum_i\dim_{\mathbb{F}_p}H_i(F)\le\sum_i\dim_{\mathbb{F}_p}H_i(X)\;}.
 $$
 
 *Proof.* The fixed set of a group is the fixed set of any set of generators, and the centre of a $p$-group is nontrivial; the fixed set of $P$ equals that of $Z(P)$ because a $p$-group acts on $X^{Z(P)}$ and the quotient by the centre has smaller order, so induction on $|P|$ with the prime-period theorem at each stage gives the statement. The finiteness is the finiteness of the equivariant cohomology as a module over the noetherian ring $H^*(BP;\mathbb{F}_p)$, which is polynomial over $\mathbb{F}_p$ on generators of even degree for $p$ odd and a polynomial ring over $\mathbb{F}_2$; the rank is the fixed-set dimension.
@@ -107,7 +107,7 @@ and when the action is free the **Smith transfer** is the chain map $\tau : C_*(
 **Theorem (Lefschetz–Hopf).** Let $\sigma$ be a periodic map of finite order on a finite complex $X$, and let
 
 $$
-L(\sigma) = \sum_k (-1)^k \operatorname{tr}\bigl(\sigma_* \mid H_k(X;\mathbb{Q})\bigr)
+\boxed{\;L(\sigma) = \sum_k (-1)^k \operatorname{tr}\bigl(\sigma_* \mid H_k(X;\mathbb{Q})\bigr)\;}
 $$
 
 be its Lefschetz number. Then $L(\sigma) = \chi(X^{\sigma})$, the Lefschetz number of the map is the Euler characteristic of its fixed set; more generally, for a finite group $G$ acting on $X$ and each $g \in G$, $L(g) = \chi(X^g)$.

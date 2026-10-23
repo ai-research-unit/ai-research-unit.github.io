@@ -15,7 +15,7 @@ The reflection is therefore self-adjoint and unitary, and the adjoint operation 
 
 **Theorem.** For every unit $u$ of $\mathcal{A}$, with the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$,
 $$
-r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha f\|=\|f\| ,
+\boxed{\;r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha f\|=\|f\|\;} ,
 $$
 so the reflection is an involutive unitary operator and is its own adjoint.
 
@@ -31,7 +31,7 @@ a Hermitian form equivalent to the coefficient form through the grade involution
 
 **Theorem.** With respect to the signed pairing the adjoint of the reflection is again the reflection:
 $$
-\{r_uf,g\}=\{f,r_ug\},\qquad \{r_uf,g\}=\{f,\alpha g\} .
+\boxed{\;\{r_uf,g\}=\{f,r_ug\},\qquad \{r_uf,g\}=\{f,\alpha g\}\;} .
 $$
 The signed adjoint of the reflection is the reflection, and the signed pairing makes the reflection an isometry.
 

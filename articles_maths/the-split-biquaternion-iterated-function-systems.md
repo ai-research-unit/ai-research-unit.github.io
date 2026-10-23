@@ -15,7 +15,9 @@ The article owns the operator norm of a split-biquaternion generator, the contra
 **Proposition (the operator norm).** For $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_1+\tilde Q_{1,-}\tilde\Pi_2$ the operator norm of left multiplication is
 
 $$
-\|L_{\tilde Q_1}\|=\max\bigl(|\tilde Q_{1,+}|,\ |\tilde Q_{1,-}|\bigr) ,
+\boxed{\;
+\|L_{\tilde Q_1}\|=\max\bigl(|\tilde Q_{1,+}|,\ |\tilde Q_{1,-}|\bigr)
+\;},
 $$
 
 and the generator $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a contraction exactly when $\max(|\tilde Q_{1,+}|,|\tilde Q_{1,-}|)<1$.
@@ -35,13 +37,17 @@ using the norm identity $\|\tilde Q\|_E^2=\tfrac12(|\tilde Q_+|^2+|\tilde Q_-|^2
 **Theorem (the attractor is a product).** Let $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$, $i=1,\dots,m$, be a system of contractions. Then the attractor is the product
 
 $$
-K=K^+\times K^-,
+\boxed{\;
+K=K^+\times K^-
+\;},
 $$
 
 where $K^\pm$ are the attractors of the two quaternion systems $\{(\tilde Q_{1,i}^\pm,\tilde Q_{2,i}^\pm)\}_i$, and for the dimension, if both quaternion systems are systems of similarities satisfying the open set condition with ratios $r_i^\pm=|\tilde Q_{1,i}^\pm|$, then
 
 $$
-\dim_HK=s_++s_-\ , \qquad \sum_{i=1}^m(r_i^+)^{s_+}=1,\qquad \sum_{i=1}^m(r_i^-)^{s_-}=1 .
+\boxed{\;
+\dim_HK=s_++s_-\ , \qquad \sum_{i=1}^m(r_i^+)^{s_+}=1,\qquad \sum_{i=1}^m(r_i^-)^{s_-}=1
+\;}.
 $$
 
 **Proof.** The Hutchinson operator of the system is the product of the Hutchinson operators of the two quaternion systems in the idempotent coordinates, so its fixed point is the product of the two quaternion attractors (*The Quaternion Iterated Function Systems*). The dimension is the product formula $\dim_H(A\times B)=\dim_H A+\dim_HB$ together with the similarity dimension of each factor (*Fractal Geometry*).

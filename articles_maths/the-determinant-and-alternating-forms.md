@@ -86,7 +86,7 @@ This is the **Leibniz formula**. It is a polynomial with integer coefficients in
 **Theorem.** Let $M$ be free of rank $m$ and let $f, g \in \operatorname{End}_R(M)$. Then
 
 $$
-\det(g \circ f) = \det(g)\, \det(f).
+\boxed{\;\det(g \circ f) = \det(g)\, \det(f)\;}.
 $$
 
 Moreover $f$ is invertible if and only if $\det(f)$ is a unit of $R$, and then $\det(f^{-1}) = \det(f)^{-1}$.
@@ -100,7 +100,7 @@ Moreover $f$ is invertible if and only if $\det(f)$ is a unit of $R$, and then $
 **Proposition.** Let $M$ be free of rank $m$ and let $f \in \operatorname{End}_R(M)$. Then
 
 $$
-\det(\mathrm{id}_M + t f) = \sum_{k=0}^{m} \operatorname{tr}(\Lambda^k f)\, t^k,
+\boxed{\;\det(\mathrm{id}_M + t f) = \sum_{k=0}^{m} \operatorname{tr}(\Lambda^k f)\, t^k\;},
 $$
 
 where $\operatorname{tr}(\Lambda^k f)$ denotes the trace of the induced endomorphism of $\Lambda^k M$ and $\operatorname{tr}(\Lambda^0 f) = 1$.
@@ -164,7 +164,7 @@ The multiplicativity of the determinant in the square case is the $n = m$ case o
 **Theorem (Cauchy–Binet).** Let $A$ be an $r \times m$ matrix and $B$ an $m \times s$ matrix over a commutative ring $R$. For increasing index sets $I \subseteq \{1, \ldots, r\}$ and $J \subseteq \{1, \ldots, s\}$ of size $n$,
 
 $$
-\det\bigl((AB)_{I,J}\bigr) = \sum_{K} \det(A_{I,K})\, \det(B_{K,J}),
+\boxed{\;\det\bigl((AB)_{I,J}\bigr) = \sum_{K} \det(A_{I,K})\, \det(B_{K,J})\;},
 $$
 
 the sum over the increasing $n$-element subsets $K \subseteq \{1, \ldots, m\}$.

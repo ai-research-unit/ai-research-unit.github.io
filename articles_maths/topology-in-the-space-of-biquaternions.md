@@ -81,7 +81,7 @@ The norm of §1 is the topological norm: it is the norm that defines the topolog
 **Proposition (the product is bounded).** For all $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$,
 
 $$
-\lVert\tilde{Q}_1\tilde{Q}_2\rVert\leq\sqrt{2}\,\lVert\tilde{Q}_1\rVert\,\lVert\tilde{Q}_2\rVert .
+\boxed{\; \lVert\tilde{Q}_1\tilde{Q}_2\rVert\leq\sqrt{2}\,\lVert\tilde{Q}_1\rVert\,\lVert\tilde{Q}_2\rVert \;}.
 $$
 
 **Proof.** Under the $2\times2$ realization $\mathsf{M}_2$ of *The Matrix Element Representation and the Biquaternion Dynamics*, one has $\mathsf{M}_2(\tilde{Q}_1\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$, with $\lVert\cdot\rVert_F$ the Frobenius norm. Frobenius norm is submultiplicative, so

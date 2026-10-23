@@ -42,7 +42,7 @@ $$
 **Proposition (the trace-adjointness).** For every $A \in E$,
 
 $$
-(L_A)^{\dagger} = R_A, \qquad (R_A)^{\dagger} = L_A ,
+\boxed{\;(L_A)^{\dagger} = R_A, \qquad (R_A)^{\dagger} = L_A\;} ,
 $$
 
 where ${}^{\dagger}$ is the adjoint with respect to the trace pairing.
@@ -58,7 +58,7 @@ where ${}^{\dagger}$ is the adjoint with respect to the trace pairing.
 **Proposition (the two operations).** Suppose $E$ carries a pairing-based involution $A \mapsto A^{*}$ as in *Involutions of the Endomorphism Algebra*. Then on $\operatorname{End}_F(E)$ the induced operator involution $S^{*}(X) = S(X^{*})^{*}$ satisfies
 
 $$
-L_A^{*} = R_{A^{*}}, \qquad R_A^{*} = L_{A^{*}} ,
+\boxed{\;L_A^{*} = R_{A^{*}}, \qquad R_A^{*} = L_{A^{*}}\;} ,
 $$
 
 and the trace-adjoint and the operator involution are related by
@@ -72,7 +72,7 @@ $$
 **Proposition (the trace pairing is compatible with the involution).** If the involution is the adjoint with respect to a pairing on $V$, then
 
 $$
-\langle X^{*},Y\rangle = \varsigma\bigl(\langle Y^{*},X\rangle\bigr) ,
+\boxed{\;\langle X^{*},Y\rangle = \varsigma\bigl(\langle Y^{*},X\rangle\bigr)\;} ,
 $$
 
 so the trace pairing is $\varsigma$-compatible with the involution; in the bilinear symmetric case it satisfies $\langle X^{*},Y\rangle = \langle X,Y^{*}\rangle$.

@@ -23,7 +23,7 @@ is the eigenspace decomposition of the induced operator $\mathcal J$ on $\Lambda
 
 **Proposition.** Write $g$ for the Hermitian metric and let $\mathcal{R}$ be its Riemannian curvature operator. If $g$ is Kähler then $\mathcal{R}$ commutes with $\mathcal J$,
 $$
-[\mathcal R, \mathcal J] = 0 ,
+\boxed{\;[\mathcal R, \mathcal J] = 0\;} ,
 $$
 so $\mathcal{R}$ preserves the type of bivectors and decomposes into a Hermitian part on $\Lambda^{1,1}$ and a pair of conjugate parts on $\Lambda^{2,0}$ and $\Lambda^{0,2}$; if $g$ is merely Hermitian the Riemannian curvature operator need not commute with $\mathcal J$, and it is the curvature of the Chern connection that preserves the type.
 
@@ -49,7 +49,7 @@ are the Chern curvature coefficients.
 
 **Proposition (the first Chern form).** The trace form
 $$
-c_1(g) = \frac{i}{2\pi}\operatorname{tr}\Theta
+\boxed{\;c_1(g) = \frac{i}{2\pi}\operatorname{tr}\Theta\;}
 $$
 is a closed real $(1,1)$-form whose de Rham class is the first Chern class $c_1(M)$, independent of the Hermitian metric; in a holomorphic frame of a line bundle the form is $\frac{i}{2\pi}\partial\bar\partial\log\|s\|^2$, and for the tangent bundle it is the Ricci form of the chosen metric up to a factor.
 
@@ -96,7 +96,7 @@ $$
 
 **Proposition (the unitary decomposition).** For a Kähler metric the space of algebraic curvature tensors decomposes under $\mathrm{U}(n)$ into the scalar part, the traceless-Ricci part, the Bochner part and the Weyl part,
 $$
-\mathcal R = \mathcal R_{\text{scalar}} + \mathcal R_{\text{Ric}} + \mathcal R_{\text{Bochner}} + \mathcal R_{\text{Weyl}} ,
+\boxed{\;\mathcal R = \mathcal R_{\text{scalar}} + \mathcal R_{\text{Ric}} + \mathcal R_{\text{Bochner}} + \mathcal R_{\text{Weyl}}\;} ,
 $$
 and the first three are determined by the scalar curvature, the traceless Ricci form and the $(2,0)$-part of the curvature, while the Weyl part is the conformally invariant remainder; in complex dimension two the Weyl part splits further by the Hodge star into the self-dual and anti-self-dual halves.
 

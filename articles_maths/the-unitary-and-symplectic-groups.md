@@ -98,7 +98,7 @@ A Hermitian form on a complex space can be viewed as a real bilinear form on the
 **Proposition.** Let $h = s + i\,a$ with $s, a$ real-valued, $s$ symmetric bilinear and $a$ alternating bilinear. Then
 
 $$
-\operatorname{U}(V, h) = \operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a).
+\boxed{\;\operatorname{U}(V, h) = \operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a)\;}.
 $$
 
 **Proof.** The identity $h(Tu, Tv) = h(u, v)$ is equivalent to the pair of real identities $s(Tu, Tv) = s(u, v)$ and $a(Tu, Tv) = \mathfrak{a}(u, v)$, because the real and imaginary parts of a complex number vanish together. The first is the orthogonal condition for $s$ and the second the symplectic condition for $a$.
@@ -175,7 +175,7 @@ the isometry condition is $M^T \Omega M = \Omega$, and the group of such matrice
 **Theorem.** Every symplectic matrix has determinant $1$. Hence
 
 $$
-\operatorname{Sp}(2m, F) \subseteq SL(2m, F).
+\boxed{\;\operatorname{Sp}(2m, F) \subseteq SL(2m, F)\;}.
 $$
 
 **Proof.** Let $\operatorname{Pf}$ be the Pfaffian, which satisfies $\operatorname{Pf}(M^T \Omega M) = \det(M)\operatorname{Pf}(\Omega)$ for every $2m \times 2m$ matrix $M$, and $\operatorname{Pf}(\Omega) = (-1)^{m(m-1)/2} \neq 0$ for the matrix above. If $M^T \Omega M = \Omega$, applying $\operatorname{Pf}$ gives $\det(M)\operatorname{Pf}(\Omega) = \operatorname{Pf}(\Omega)$, that is $\det M = 1$.
@@ -218,7 +218,7 @@ The intersection of the symplectic and orthogonal groups on a real space of even
 **Theorem.** With the standard alternating form and the standard positive definite form on $\mathbb{R}^{2m}$,
 
 $$
-Sp(2m, \mathbb{R}) \cap O(2m) = \mathrm{U}(m).
+\boxed{\;Sp(2m, \mathbb{R}) \cap O(2m) = \mathrm{U}(m)\;}.
 $$
 
 **Proof.** Let $A \in GL(2m, \mathbb{R})$ satisfy $A^{T}\Omega A = \Omega$ and $A^{T}A = I$. From the first relation, $\Omega A = (A^{T})^{-1}\Omega = A\Omega$, because $A^{T} = A^{-1}$ by the second; so $A$ commutes with $\Omega$. Identifying $\mathbb{R}^{2m}$ with $\mathbb{C}^m$ by taking $\Omega$ as the matrix of multiplication by $i$, commutativity with $\Omega$ says exactly that $A$ is complex-linear, and the orthogonal condition $A^{T}A = I$ says that $A$ preserves the Euclidean form, which is the real part of the standard Hermitian form. Hence $A$ is complex-linear and unitary, that is $A \in \mathrm{U}(m)$. Conversely, let $U \in \mathrm{U}(m)$ and write it as the real matrix $A = \begin{pmatrix} X & -Y \\ Y & X\end{pmatrix}$; the conditions $X^{T}X + Y^{T}Y = I$ and $X^{T}Y - Y^{T}X = 0$, which are $U^{\dagger}U = I$, give $A^{T}A = I$ directly, and $A$ commutes with $\Omega$ because it is complex-linear, so $A^{T}\Omega A = A^{-1}\Omega A = \Omega$.

@@ -71,7 +71,7 @@ $$
 **Definition.** A **fundamental decomposition** of $V$ is an orthogonal direct sum
 
 $$
-V = V_{+} \oplus V_{-}, \qquad V_{+} \perp V_{-},
+\boxed{\;V = V_{+} \oplus V_{-}, \qquad V_{+} \perp V_{-}\;},
 $$
 
 with $V_{+}$ positive definite and $V_{-}$ negative definite.
@@ -93,7 +93,7 @@ with $V_{+}$ positive definite and $V_{-}$ negative definite.
 **Theorem (the bridge).** With $J$ as above, the form
 
 $$
-\langle x, y \rangle = [Jx, y]
+\boxed{\;\langle x, y \rangle = [Jx, y]\;}
 $$
 
 is a positive definite inner product on $V$, and the indefinite form is recovered from it by $[x,y] = \langle Jx,y\rangle$. So every indefinite inner product space is, after the choice of a fundamental decomposition, a definite one, and the two differ by the operator $J$.

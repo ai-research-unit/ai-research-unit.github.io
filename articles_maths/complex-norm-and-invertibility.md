@@ -30,8 +30,7 @@ The complex norm is a genuine positive-definite quadratic form.
 
 **Theorem.** The norm is multiplicative:
 
-$$
-\langle Q_1 Q_2\rangle_{*} = \langle Q_1\rangle_{*} \, \langle Q_2\rangle_{*}.
+$$ \boxed{\;\langle Q_1 Q_2\rangle_{*} = \langle Q_1\rangle_{*} \, \langle Q_2\rangle_{*}\;}.
 $$
 
 **Proof.** Compute
@@ -158,8 +157,7 @@ The criterion $\langle Q\rangle_{*} \neq 0$ is equivalent to the elementary stat
 
 For $Q \neq 0$ the inverse is
 
-$$
-Q^{-1} = \frac{\bar{Q}}{\langle Q\rangle_{*}} = \frac{q - i q'}{q^2+q'^2} = \frac{q}{q^2+q'^2} - \frac{q'}{q^2+q'^2} i .
+$$ \boxed{\;Q^{-1} = \frac{\bar{Q}}{\langle Q\rangle_{*}} = \frac{q - i q'}{q^2+q'^2} = \frac{q}{q^2+q'^2} - \frac{q'}{q^2+q'^2} i \;}.
 $$
 
 **Proof.** The verification is the computation in the first part of the proof of the criterion.
@@ -207,8 +205,7 @@ The unit group is the base case of the family: below it lies only the non-unit $
 
 **Theorem.** The map
 
-$$
-\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( \sqrt{\langle Q\rangle_{*}}, \; Q/\sqrt{\langle Q\rangle_{*}} \bigr),
+$$ \boxed{\;\mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \bigl( \sqrt{\langle Q\rangle_{*}}, \; Q/\sqrt{\langle Q\rangle_{*}} \bigr)\;},
 $$
 
 where $\mathrm{U}(1) = \{ u \in \mathbb{C} : \langle u\rangle_{*} = 1 \}$ is the unit circle, is an isomorphism of topological groups.

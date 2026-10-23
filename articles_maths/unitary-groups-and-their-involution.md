@@ -66,7 +66,7 @@ a maximal compact subgroup of $\mathrm{U}(V,h)$; maximal compact subgroups are c
 **Theorem (the involution).** Let $K$ be the stabiliser of a definite decomposition. Then there is a unique involutive automorphism $\theta$ of $\mathrm{U}(V,h)$ with
 
 $$
-\mathrm{U}(V,h)^{\theta} = K, \qquad \theta(T) = T \text{ on } K, \qquad d\theta = -1 \text{ on } \mathfrak{n},
+\boxed{\;\mathrm{U}(V,h)^{\theta} = K, \qquad \theta(T) = T \text{ on } K, \qquad d\theta = -1 \text{ on } \mathfrak{n}\;},
 $$
 
 the **Cartan involution** of the pair; for the standard form it is $\theta(g) = JgJ^{-1}$. It is defined up to conjugacy, and two Cartan involutions are conjugate by an element of $\mathrm{U}(V,h)$, through the conjugacy of the maximal compact subgroups.
@@ -103,7 +103,7 @@ with base point $o = eK$ and tangent space $T_oX = \mathfrak{n}$; the **geodesic
 **Proposition.** The space $X$ is diffeomorphic to the manifold of $h$-negative subspaces of dimension $m$,
 
 $$
-X \cong \{W \leq V : \dim W = m,\ h|_W < 0\},
+\boxed{\;X \cong \{W \leq V : \dim W = m,\ h|_W < 0\}\;},
 $$
 
 via $gK \mapsto gV_-$; it is connected, simply connected, of dimension $2pq$ and rank $\min(n,m)$, and it is a symmetric space of noncompact type in the sense of *Riemannian Symmetric Spaces and the Involution*.
@@ -115,7 +115,7 @@ via $gK \mapsto gV_-$; it is connected, simply connected, of dimension $2pq$ and
 **Theorem.** The Cartan involution of $\mathrm{U}(V,h)$, up to conjugacy, is determined by the signature $(n,m)$ alone, and the conjugacy classes of the involutions with compact fixed subgroup of the unitary groups correspond to the signatures; the family of symmetric spaces obtained is
 
 $$
-X_{n,m} = \mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m)), \qquad 1 \leq m \leq n,\ \ n+m = \dim V,
+\boxed{\;X_{n,m} = \mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m)), \qquad 1 \leq m \leq n,\ \ n+m = \dim V\;},
 $$
 
 with $X_{n,m} \cong X_{m,n}$ under the exchange of the form with its negative.

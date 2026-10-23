@@ -29,7 +29,7 @@ the composition of the signed left multiplication and the dagger right multiplic
 **Theorem (the adjoint).** For every $x$,
 
 $$
-\bigl(\Theta^{\alpha}_x\bigr)^{*} = \Theta^{\alpha}_{x^{\dagger}} ,
+\boxed{\;\bigl(\Theta^{\alpha}_x\bigr)^{*} = \Theta^{\alpha}_{x^{\dagger}}\;} ,
 $$
 
 the adjoint being taken for the form; so the adjoint of the signed sandwich is the signed sandwich of the involution.
@@ -57,7 +57,7 @@ the equalities to the unsigned sandwiches holding because $x^{\dagger}x$ and $xx
 **Theorem (multiplicativity and the parity table).** For all $x, z$ one has $\Theta^{\alpha}_{xz} = \Theta^{\alpha}_x\Theta^{\alpha}_z$; for homogeneous parameters
 
 $$
-\Theta^{\alpha}_x\Theta^{\alpha}_z = \varepsilon_x\varepsilon_z\,\Theta_{xz} ,
+\boxed{\;\Theta^{\alpha}_x\Theta^{\alpha}_z = \varepsilon_x\varepsilon_z\,\Theta_{xz}\;} ,
 $$
 
 so the composite of two signed sandwiches is the ordinary sandwich exactly when the parameters have the same parity, and in particular when both are odd.
@@ -105,7 +105,7 @@ because the sign is a real scalar and the modular conjugation is antilinear with
 **Proposition (the modular flow on the signed family).** The modular automorphism $\sigma_t(x) = \Delta^{it}x\Delta^{-it}$ acts by
 
 $$
-\Delta^{it}\,\bar\Theta^{\alpha}_x\,\Delta^{-it} = \bar\Theta^{\alpha}_{\sigma_t(x)} ,
+\boxed{\;\Delta^{it}\,\bar\Theta^{\alpha}_x\,\Delta^{-it} = \bar\Theta^{\alpha}_{\sigma_t(x)}\;} ,
 $$
 
 and it preserves the parity, $\varepsilon_{\sigma_t(x)} = \varepsilon_x$, so it preserves the sign; the modular flow therefore acts on the family of signed sandwiches through its action on the parameters and commutes with the sign bookkeeping.

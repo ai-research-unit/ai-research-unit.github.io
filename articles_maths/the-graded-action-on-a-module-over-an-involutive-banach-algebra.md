@@ -34,7 +34,7 @@ and the **graded (twisted) multiplication** by $r$ is the operator $\ell_r^\pi(m
 **Proposition (compatibility of the action with the grading).** The parity operator satisfies
 
 $$
-\pi(r\cdot m) = \alpha(r)\cdot\pi(m) , \qquad \text{and for homogeneous } r , \quad \pi(r\cdot m) = (-1)^{\lvert r\rvert}\,r\cdot\pi(m) ,
+\boxed{\;\pi(r\cdot m) = \alpha(r)\cdot\pi(m) , \qquad \text{and for homogeneous } r , \quad \pi(r\cdot m) = (-1)^{\lvert r\rvert}\,r\cdot\pi(m)\;} ,
 $$
 
 where $\lvert r\rvert$ is the parity of a homogeneous $r$. Equivalently $\pi \circ L_r = L_{\alpha(r)}\circ\pi$ and $L_r\circ\pi = \pi\circ L_{\alpha(r)}$ for the plain action $L_r(m) = r\cdot m$. Hence $\pi$ is $A^0$-linear but not $A$-linear unless $A^1 = 0$.
@@ -44,7 +44,7 @@ where $\lvert r\rvert$ is the parity of a homogeneous $r$. Equivalently $\pi \ci
 **Proposition (the sign rule and the failure of associativity).** For all $r,s \in A$ and $m \in M$,
 
 $$
-r\star(s\star m) = \bigl(r\,\alpha(s)\bigr)\cdot m , \qquad (rs)\star m = (rs)\cdot\pi(m) ,
+\boxed{\;r\star(s\star m) = \bigl(r\,\alpha(s)\bigr)\cdot m , \qquad (rs)\star m = (rs)\cdot\pi(m)\;} ,
 $$
 
 so the graded action is associative, $r\star(s\star m) = (rs)\star m$ for all $r,s,m$, exactly when every $s$ is even, that is $A = A^0$; in general the obstruction is the odd part of $s$. The operator $\ell_r^\pi$ satisfies the sign rule
@@ -90,7 +90,7 @@ $$
 **Proposition (continuity and the completed grading).** The parity operator $\pi$ is a topological automorphism of the additive group of $M$, hence a homeomorphism, with $\lVert\pi\rVert < +\infty$; the graded action is continuous as a map $A \times M \to M$; and if $M$ is graded, the completion of $M$ is the direct sum of the completions of its parts,
 
 $$
-\widehat{M} = \widehat{M^0} \oplus \widehat{M^1} ,
+\boxed{\;\widehat{M} = \widehat{M^0} \oplus \widehat{M^1}\;} ,
 $$
 
 the parity operator extending to the completion as the sign change of the two summands.

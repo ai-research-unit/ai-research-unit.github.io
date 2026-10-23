@@ -51,7 +51,7 @@ using the anti-multiplicativity of $*$ and $*^{2} = \mathrm{id}$; hence $[x,y] \
 **Theorem.** Let $x, y \in S(A)$. Then $(xy)^{*} = yx$, and
 
 $$
-xy \in S(A) \iff xy = -yx, \qquad xy \in H(A) \iff xy = yx .
+\boxed{\;xy \in S(A) \iff xy = -yx, \qquad xy \in H(A) \iff xy = yx\;} .
 $$
 
 In particular the skew-Hermitian part is closed under the product exactly when any two of its elements anticommute, and it is carried into the Hermitian part exactly when they commute.
@@ -79,7 +79,7 @@ $$
 **Theorem.** For $s \in S(A)$ define $\mathrm{ad}_{s}(x) = [s,x] = sx - xs$. Then $\mathrm{ad}_{s}$ is a $*$-derivation of $A$ that preserves $H(A)$ and $S(A)$, the map $s \mapsto \mathrm{ad}_{s}$ is a homomorphism of Lie algebras
 
 $$
-[\mathrm{ad}_{s}, \mathrm{ad}_{t}] = \mathrm{ad}_{[s,t]} ,
+\boxed{\;[\mathrm{ad}_{s}, \mathrm{ad}_{t}] = \mathrm{ad}_{[s,t]}\;} ,
 $$
 
 and its kernel is the set of the central skew-Hermitian elements, that is $S(A) \cap Z(A)$.
@@ -105,7 +105,7 @@ Finally $\mathrm{ad}_{s} = 0$ if and only if $sx = xs$ for every $x$, that is if
 **Theorem.** Let $u \in \mathrm{U}(A)$ be unitary and let $\alpha_{u}(x) = uxu^{*}$. Then $\alpha_{u}$ preserves $S(A)$, and it is an automorphism of the Lie algebra $\mathfrak{u}(A)$:
 
 $$
-\alpha_{u}\bigl([x,y]\bigr) = \bigl[\alpha_{u}(x), \alpha_{u}(y)\bigr] \quad \text{for all } x, y \in S(A) .
+\boxed{\;\alpha_{u}\bigl([x,y]\bigr) = \bigl[\alpha_{u}(x), \alpha_{u}(y)\bigr] \quad \text{for all } x, y \in S(A)\;} .
 $$
 
 The assignment $u \mapsto \alpha_{u}$ is a homomorphism of the group $\mathrm{U}(A)$ into the automorphism group of $\mathfrak{u}(A)$, and its kernel is the group of the central unitary elements.

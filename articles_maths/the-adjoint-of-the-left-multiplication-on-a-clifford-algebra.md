@@ -6,7 +6,7 @@
 The left multiplication $L_a$ acts on the Clifford algebra by $x\mapsto ax$, and its adjoint for the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is the left multiplication by the Clifford conjugate,
 
 $$
-L_a^{*} = L_{\hat a} , \qquad \hat a = \alpha(a^{r}) ,
+\boxed{\;L_a^{*} = L_{\hat a} , \qquad \hat a = \alpha(a^{r})\;} ,
 $$
 
 where $x\mapsto x^{r}$ is the reversion; this is an operator of the same family with the parameter conjugated. The adjoint therefore defines an involution on the parameters, and its consequences are geometric: the **self-adjoint** left multiplications are those with $\hat a=a$, the **orthogonal** ones are the units $a$ with $\hat aa=1$, and the multiplication by a vector is skew-adjoint, $L_u^*=-L_u$. The article collects these consequences and the corresponding statements for the twisted form of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*.
@@ -32,7 +32,7 @@ where $x\mapsto x^{r}$ is the reversion; this is an operator of the same family 
 **Proposition.** For the twisted form the adjoint of $L_a$ is the **signed** left multiplication
 
 $$
-(L_a)^{*\alpha} = L_{\hat a}\,\alpha ,
+\boxed{\;(L_a)^{*\alpha} = L_{\hat a}\,\alpha\;} ,
 $$
 
 as *The Signed Adjoint of the Left Multiplication on a Clifford Algebra* records; the operator is one-sided signed and differs from the standard adjoint by the grade involution. Consequently a left multiplication is self-adjoint for the twisted form exactly when $L_{\hat a}\alpha=L_a$, that is when $a\alpha(x)=\alpha(x)a$ for all $x$, which holds only for the central scalars in the central-simple case.

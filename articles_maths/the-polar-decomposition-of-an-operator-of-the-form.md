@@ -21,7 +21,7 @@ A self-adjoint operator is **positive** when $h(Tx,x) \geq 0$ for every $x$, and
 **Proposition (the positivity).** Let $h$ be definite. Then $T^{\dagger}T$ is positive,
 
 $$
-h(T^{\dagger}Tx,x) = h(Tx,Tx) = \lVert Tx\rVert^{2} \geq 0 \qquad \text{for all } x ,
+\boxed{\;h(T^{\dagger}Tx,x) = h(Tx,Tx) = \lVert Tx\rVert^{2} \geq 0 \qquad \text{for all } x\;} ,
 $$
 
 and the kernel of $T^{\dagger}T$ is the kernel of $T$.
@@ -49,7 +49,7 @@ and the kernel of $T^{\dagger}T$ is the kernel of $T$.
 **Theorem (the phase is well defined and isometric).** The formula
 
 $$
-U(\lvert T\rvert x) = Tx \qquad x \in A ,
+\boxed{\;U(\lvert T\rvert x) = Tx \qquad x \in A\;} ,
 $$
 
 defines an $R$-linear isometry from the range of $\lvert T\rvert$ onto the range of $T$, and it extends by continuity to an isometry from the closure of the range of $\lvert T\rvert$ onto the closure of the range of $T$; setting $U = 0$ on the kernel of $\lvert T\rvert$ gives an operator $U \in B(A)$.
@@ -61,7 +61,7 @@ defines an $R$-linear isometry from the range of $\lvert T\rvert$ onto the range
 **Theorem (the polar decomposition).** With $\lvert T\rvert$ the modulus and $U$ the phase of the theorem above,
 
 $$
-T = U\lvert T\rvert , \qquad \lvert T\rvert = U^{\dagger}T , \qquad U^{\dagger}U = P_{\mathrm{ran}\lvert T\rvert} , \qquad UU^{\dagger} = P_{\mathrm{ran}T} ,
+\boxed{\;T = U\lvert T\rvert , \qquad \lvert T\rvert = U^{\dagger}T , \qquad U^{\dagger}U = P_{\mathrm{ran}\lvert T\rvert} , \qquad UU^{\dagger} = P_{\mathrm{ran}T}\;} ,
 $$
 
 where $P_{\mathrm{ran}\lvert T\rvert}$ and $P_{\mathrm{ran}T}$ are the $h$-orthogonal projections onto the closures of the corresponding ranges. The pair $(\lvert T\rvert, U)$ is the unique pair with $\lvert T\rvert$ positive self-adjoint, $U$ an isometry on the range of $\lvert T\rvert$ and $U = 0$ on its kernel.

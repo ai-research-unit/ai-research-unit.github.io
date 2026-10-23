@@ -35,7 +35,9 @@ where $\tilde{Q} = a\,je_t + v$; the sign condition $a > 0$ selects one of the t
 **Theorem.** $H^3$ is a connected smooth three-dimensional submanifold of $\mathbb{M}_-$, diffeomorphic to $\mathbb{R}^3$; the diffeomorphism is
 
 $$
-v\longmapsto \sqrt{1 + \lvert v\rvert^2}\,je_t + v, \qquad v\in\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3,
+\boxed{\;
+v\longmapsto \sqrt{1 + \lvert v\rvert^2}\,je_t + v, \qquad v\in\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3
+\;},
 $$
 
 with inverse $\tilde{Q}\mapsto\mathrm{Vect}(\tilde{Q})$. The tangent space at $\tilde{Q}\in H^3$ is the $g$-orthogonal complement of $\tilde{Q}$, and $g$ is positive definite on it.
@@ -55,7 +57,9 @@ $$
 **Theorem.** The hyperbolic distance is a metric on $H^3$, it is invariant under every linear isometry of $(\mathbb{M}_-,g)$ that preserves the sheet, and $H^3$ with this metric is a complete Riemannian manifold of constant sectional curvature $-1$. Its isometry group is
 
 $$
-\operatorname{Isom}(H^3) = O^{\uparrow}(3,1),
+\boxed{\;
+\operatorname{Isom}(H^3) = O^{\uparrow}(3,1)
+\;},
 $$
 
 the subgroup of $O(3,1)$ preserving the chosen sheet, of index two in $O(3,1)$ and with identity component
@@ -101,7 +105,9 @@ the projectivisation of the null cone in $\mathbb{M}_-$.
 **Theorem.** The boundary is a two-sphere,
 
 $$
-\partial H^3\cong S^2 ,
+\boxed{\;
+\partial H^3\cong S^2
+\;},
 $$
 
 and the map $\tilde{Q} = a\,je_t + v\mapsto v/\lvert v\rvert$ realises the boundary as the unit sphere of $\operatorname{Im}\mathbb{H}$, the boundary point of a null vector being its direction. On the boundary the group $SO^{+}(3,1)$ acts by the conformal transformations of the round sphere, and the boundary carries a conformal structure rather than a Riemannian one.

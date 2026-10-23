@@ -41,9 +41,7 @@ $$
 Because $\varepsilon^2 = 0$, the series truncates at the first order in the infinitesimal part. For $Q = q + \varepsilon q'$,
 
 $$
-\boxed{\;
-\exp(Q) = \exp(q) + \exp(q) q' \varepsilon = \exp(q) (1 + q' \varepsilon)
-\;}.
+\exp(Q) = \exp(q) + \exp(q) q' \varepsilon = \exp(q) (1 + q' \varepsilon).
 $$
 
 So the dual exponential is the ordinary real exponential applied to the real part, multiplied by the factor $1 + \varepsilon q'$ in the infinitesimal part.
@@ -69,7 +67,7 @@ The second is immediate. The third follows from term-by-term differentiation of 
 The dual analogue of Euler's formula is
 
 $$
-\exp(\varepsilon q') = 1 + \varepsilon q'.
+\boxed{\; \exp(\varepsilon q') = 1 + \varepsilon q' \;}.
 $$
 
 This is the truncation of the exponential series at first order in $\varepsilon$, and it is the algebraic content of the infinitesimal translation: adding $\varepsilon q'$ to the exponent multiplies the exponential by $1 + \varepsilon q'$, which is an infinitesimal perturbation of the identity.

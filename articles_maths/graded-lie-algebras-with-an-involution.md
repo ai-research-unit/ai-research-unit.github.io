@@ -28,13 +28,13 @@ The base is a field $K$ of characteristic not two; the graded Lie algebra is $\m
 **Theorem.** Let $\omega$ be an even involution of the graded Lie algebra $\mathrm{G}$. The eigenspaces
 
 $$
-\mathrm{K}=\{x:\omega x=x\},\qquad \mathrm{P}=\{x:\omega x=-x\}
+\boxed{\;\mathrm{K}=\{x:\omega x=x\},\qquad \mathrm{P}=\{x:\omega x=-x\}\;}
 $$
 
 are graded subspaces, $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ as graded vector spaces, $\mathrm{K}$ is a graded Lie subalgebra, $\mathrm{P}$ a graded module over it, and
 
 $$
-[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
+\boxed{\;[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}\;}.
 $$
 
 **Proof.** An involution is diagonalisable; an even involution preserves each component, so the eigenspaces are graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees.

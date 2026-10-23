@@ -68,7 +68,7 @@ The two readings of the plane are separated by one operator, and the separation 
 **Proposition (linearity is the commutator with $J$).** A real-linear map $T$ of $\mathbb{D}$ is $\mathbb{D}$-linear exactly when it commutes with $J$, and conjugate-linear over $\mathbb{D}$ exactly when it anticommutes with it:
 
 $$
-T(Q_1Q_2) = Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = JT, \qquad T(Q_1Q_2) = \bar Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = -JT .
+\boxed{\; T(Q_1Q_2) = Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = JT, \qquad T(Q_1Q_2) = \bar Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = -JT \;}.
 $$
 
 **Proof.** Let $T$ be real-linear. Then $T(JQ_2)=T(jQ_2)$ and $J(TQ_2)=jT(Q_2)$, so the identity $T(jQ_2)=jT(Q_2)$ is exactly $TJ=JT$; real-linearity then gives $T(Q_1Q_2)=T(q_1Q_2+jq'_1Q_2)=q_1T(Q_2)+j q'_1T(Q_2)=Q_1\,T(Q_2)$ for every $Q_1=q_1+jq'_1$, and conversely $TJ=JT$ gives $T(jQ_2)=jT(Q_2)$, hence the same identity for every $Q_1$. The conjugate-linear case is the same computation with the sign reversed: $T(jQ_2)=-jT(Q_2)$, and then $T(Q_1Q_2)=q_1T(Q_2)-jq'_1T(Q_2)=\bar Q_1\,T(Q_2)$.
@@ -97,7 +97,7 @@ Read over the ring $\mathbb{D}$ itself, the set is a **free module of rank one**
 The difference is concrete. A vector space over a field has every nonzero element invertible as a scalar, so every nonzero vector generates; here the scalars include the zero divisors, so a nonzero element of the module need not generate it. Exactly as in the ring, the element $\Pi_1$ is a nonzero scalar that annihilates $\Pi_2$, and $\Pi_1\cdot\mathbb{D}=\mathbb{R}\Pi_1$ is a proper nonzero submodule. The submodules of the rank-one module are the ideals of the ring,
 
 $$
-0, \quad \mathbb{R}\Pi_1, \quad \mathbb{R}\Pi_2, \quad \mathbb{D},
+\boxed{\; 0, \quad \mathbb{R}\Pi_1, \quad \mathbb{R}\Pi_2, \quad \mathbb{D} \;},
 $$
 
 the two idempotent lines and the two trivial submodules; each idempotent line is closed under multiplication by every scalar, and it is minimal. This is the two-dimensional case of the ideal theory owned by *Ideals and Peirce Decomposition of the Split-Complex Algebra*, and the submodules are the same two lines as the subspaces of *Split-Complexoid Subspaces*: the module theory and the subspace theory meet at the idempotent lines.
@@ -121,7 +121,7 @@ $$
 So the plane is a **pair of real lines**,
 
 $$
-\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2,
+\boxed{\; \mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2 \;},
 $$
 
 and in these coordinates the structure is diagonal, $J(q_+\Pi_1+q_-\Pi_2)=q_+\Pi_1-q_-\Pi_2$, hence $J=\operatorname{diag}(1,-1)$. The two coordinate lines are exactly its two eigenspaces, and the coordinates in which they separate are the reason $J$ is a product structure and not a complex structure. The same coordinates carry the multiplication, which is componentwise, and they are developed as a representation in *Split-Complex Two-Component Element Representation*.

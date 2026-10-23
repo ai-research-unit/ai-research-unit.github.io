@@ -114,7 +114,7 @@ the vectors $b_i$ are a **basis**, the integer matrix of the change of basis bet
 **Definition.** A **crystallographic group** in dimension $n$ is a subgroup $\Gamma \leq E(n)$ that is discrete as a subgroup of $E(n)$ and cocompact, that is, the quotient $\mathbb{R}^n/\Gamma$ is compact. Its **translation subgroup** is $T_\Gamma = \Gamma \cap \mathbb{R}^n$, its **point group** is the image $P = \ell(\Gamma) \leq O(n)$ of $\Gamma$ under the linear-part homomorphism, and the sequence
 
 $$
-1 \to T_\Gamma \to \Gamma \to P \to 1
+\boxed{\;1 \to T_\Gamma \to \Gamma \to P \to 1\;}
 $$
 
 is exact; the quotient is the point group. A crystallographic group is **torsion-free** if it contains no element of finite order other than the identity; the torsion-free crystallographic groups are the fundamental groups of the compact flat manifolds, and $T_\Gamma = \Gamma$ exactly when $\Gamma$ is a pure lattice of translations. The two conditions are not the same: the Klein bottle group is torsion-free with point group of order two and translation subgroup of index two.
@@ -128,7 +128,7 @@ is exact; the quotient is the point group. A crystallographic group is **torsion
 **Theorem (the crystallographic restriction).** Let $\Gamma \leq E(n)$ be a crystallographic group and let $A \in P \leq O(n)$ be the linear part of an element of finite order $k$; then
 
 $$
-2\cos(2\pi/k) \in \mathbb{Z}, \qquad \text{hence } k \in \{1, 2, 3, 4, 6\}.
+\boxed{\;2\cos(2\pi/k) \in \mathbb{Z}, \qquad \text{hence } k \in \{1, 2, 3, 4, 6\}\;}.
 $$
 
 **Proof.** Choose a basis of the lattice $T_\Gamma$ and write $A$ as a matrix with integer entries; the trace of an integer matrix is an integer, and the eigenvalues of the orthogonal transformation $A$ on the invariant plane of the rotation are $\exp(\pm 2\pi i/k)$, so $\operatorname{tr} A = 1 + 2\cos(2\pi/k)$ in dimension three and $2\cos(2\pi/k)$ in dimension two; in either case $2\cos(2\pi/k)$ is an integer. Since $-2 \leq 2\cos(2\pi/k) \leq 2$, the integer is one of $-2, -1, 0, 1, 2$, giving $k \in \{2, 3, 4, 6\}$ and, adding $k = 1$, the five possibilities.

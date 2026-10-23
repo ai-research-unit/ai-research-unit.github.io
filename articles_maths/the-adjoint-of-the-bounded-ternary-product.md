@@ -43,7 +43,7 @@ and the pair map $(x,y)\mapsto\Theta_{x,y}$ is linear in $x$ and $\varsigma$-sem
 **Theorem (the adjoint of the pair operator).** For all $x,y\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad\text{equivalently}\qquad h\bigl(\Theta_{x,y}z,w\bigr)=h\bigl(z,\Theta_{y,x}w\bigr)\quad\text{for all }z,w\in A .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad\text{equivalently}\qquad h\bigl(\Theta_{x,y}z,w\bigr)=h\bigl(z,\Theta_{y,x}w\bigr)\quad\text{for all }z,w\in A\;} .
 $$
 
 **Proof.** The pair operator is the bounded left multiplication $L_{x\star y}$, and *Adjoints of Bounded Sesquilinear Operators* gives $L_{c}^{\dagger}=L_{c^{*}}$; here $c=x\star y$ and $c^{*}=(xy^{*})^{*}=yx^{*}=y\star x$, so $\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}=L_{y\star x}=\Theta_{y,x}$. Written out, $h(\Theta_{x,y}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w$ and $h(z,\Theta_{y,x}w)=z^{*}(yx^{*}w)=z^{*}yx^{*}w$, which agree; this is the direct verification and it uses only the anti-multiplicativity of $*$ and the associativity.
@@ -73,7 +73,7 @@ $$
 **Theorem (when the pair operator is self-adjoint).** For $x,y\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y\;} .
 $$
 
 The pair operator is therefore self-adjoint exactly when the derived product of the pair is Hermitian.
@@ -113,7 +113,7 @@ so the family of the pair operators is stable under the adjoint and the ternary 
 **Theorem (the reversed triple).** For all $x,y,z,w\in A$,
 
 $$
-h\bigl(\{x,y,z\},w\bigr)=h\bigl(z,\{y,x,w\}\bigr).
+\boxed{\;h\bigl(\{x,y,z\},w\bigr)=h\bigl(z,\{y,x,w\}\bigr)\;}.
 $$
 
 The triple is reversible: the pairing of $\{x,y,z\}$ with $w$ equals the pairing of $z$ with the triple $\{y,x,w\}$, and this is the statement that the pair operator of $(x,y)$ has the pair operator of the reversed pair $(y,x)$ as its adjoint.

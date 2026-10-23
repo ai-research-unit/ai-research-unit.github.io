@@ -13,7 +13,7 @@ Throughout, $H=H^0\oplus H^1$ and $M=M^0\oplus M^1$ are graded Hilbert spaces ov
 **Proposition (the adjoint action is a homomorphism of the opposite algebra).** The assignment $\rho^\vee(T)=\rho(T)^*$ is bounded linear, is unital, and satisfies
 
 $$
-\rho^\vee(S\cdot T)=\rho^\vee(S)\rho^\vee(T),\qquad\text{that is}\qquad \rho(ST)^*=\rho(T)^*\rho(S)^* ,
+\boxed{\;\rho^\vee(S\cdot T)=\rho^\vee(S)\rho^\vee(T),\qquad\text{that is}\qquad \rho(ST)^*=\rho(T)^*\rho(S)^*\;} ,
 $$
 
 so $\rho^\vee$ is a representation of the opposite algebra $B(H)^{\mathrm{opp}}$, not of $B(H)$; it is injective exactly when $\rho$ is, and it is isometric with $\|\rho^\vee(T)\|=\|\rho(T)\|$.
@@ -53,7 +53,7 @@ so the graded commutator of the opposite algebra is the graded commutator of the
 **Theorem (the adjoint action preserves the opposite sign rule).** Let $\rho$ be a graded action. Then for homogeneous $S,T$,
 
 $$
-\rho^\vee\bigl([S,T]^{\mathrm{opp}}_{\mathrm{gr}}\bigr)=[\rho^\vee(S),\rho^\vee(T)]_{\mathrm{gr}},
+\boxed{\;\rho^\vee\bigl([S,T]^{\mathrm{opp}}_{\mathrm{gr}}\bigr)=[\rho^\vee(S),\rho^\vee(T)]_{\mathrm{gr}}\;},
 $$
 
 equivalently
@@ -83,7 +83,7 @@ equivalently $\rho^\vee=\rho\circ(\ )^*$; an action that is not a $*$-action has
 **Theorem (agreement criterion).** The adjoint action equals the action through the involution,
 
 $$
-\rho^\vee(T)=\rho(T^*),
+\boxed{\;\rho^\vee(T)=\rho(T^*)\;},
 $$
 
 if and only if $\rho$ is a $*$-action. In a $*$-action the adjoint action is a graded action of $B(H)$ (not only of $B(H)^{\mathrm{opp}}$), its sign rule is the graded commutator rule of $B(H)$, and the involution of $B(H)$ is an automorphism of the representation.

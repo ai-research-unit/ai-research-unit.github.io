@@ -30,7 +30,7 @@ where $\operatorname{Ad}_{\exp a} = \exp(\operatorname{ad}_a)$ is the inner auto
 **Theorem.** The square of the signed conjugation is the inner automorphism of the element $a + \alpha(a)$,
 
 $$
-\rho_a^{2} = \exp(\operatorname{ad}_{a+\alpha(a)}) = \operatorname{Ad}_{\exp(a+\alpha(a))} ,
+\boxed{\;\rho_a^{2} = \exp(\operatorname{ad}_{a+\alpha(a)}) = \operatorname{Ad}_{\exp(a+\alpha(a))}\;} ,
 $$
 
 and $\rho_a$ is an involution of the algebra exactly when $a+\alpha(a)$ is central.
@@ -68,7 +68,7 @@ where $Z(\mathrm{G})$ is the centre; the element $a$ is a **carrying element** o
 **Theorem (the correspondence).** Let $R$ be the set of reflections of $(\mathrm{G},\alpha)$ and let $E$ be the set of elements acting by an involution. Then the map
 
 $$
-E\longrightarrow \operatorname{Aut}(\mathrm{G}), \qquad a\longmapsto \exp(\operatorname{ad}_a)\alpha
+\boxed{\;E\longrightarrow \operatorname{Aut}(\mathrm{G}), \qquad a\longmapsto \exp(\operatorname{ad}_a)\alpha\;}
 $$
 
 has image the reflections whose carrying element is $a$ up to the centre, and its fibres are the cosets of the centre; when the grade involution is the identity the correspondence reduces to the inner automorphisms, and the reflections are the inner involutions.
@@ -84,7 +84,7 @@ has image the reflections whose carrying element is $a$ up to the centre, and it
 **Theorem.** The fixed set of the reflection $\rho_a$ is
 
 $$
-\operatorname{Fix}(\rho_a) = \{x : \alpha(x) = \exp(-\operatorname{ad}_a)x\} ,
+\boxed{\;\operatorname{Fix}(\rho_a) = \{x : \alpha(x) = \exp(-\operatorname{ad}_a)x\}\;} ,
 $$
 
 and it is a subalgebra of $\mathrm{G}$, nonempty exactly when the operator has a fixed point; when it is nonempty it is a coset of the fixed subalgebra $\mathrm{G}^{\alpha}$ of the grade involution.

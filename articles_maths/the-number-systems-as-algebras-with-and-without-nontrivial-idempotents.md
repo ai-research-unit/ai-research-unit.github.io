@@ -21,7 +21,7 @@ An idempotent is **nontrivial** when it is neither $0$ nor $1$; two idempotents 
 **Theorem.** In every unital algebra $A$ over a field of characteristic not two, the map
 
 $$
-\xi\longmapsto e=\tfrac12(1+\xi)
+\boxed{\;\xi\longmapsto e=\tfrac12(1+\xi)\;}
 $$
 
 is a bijection from the roots of $1$ onto the idempotents, with inverse
@@ -255,13 +255,13 @@ The following table collects the structural properties. "Local" means a unique m
 The table is organized by the implications
 
 $$
-\text{division}\Longrightarrow\text{local}\Longrightarrow\text{no nontrivial idempotents},
+\boxed{\;\text{division}\Longrightarrow\text{local}\Longrightarrow\text{no nontrivial idempotents}\;},
 $$
 
 and
 
 $$
-\text{division}\Longrightarrow\text{simple}\Longrightarrow\text{semisimple}.
+\boxed{\;\text{division}\Longrightarrow\text{simple}\Longrightarrow\text{semisimple}\;}.
 $$
 
 The first chain is the content of §*Division Algebras Have None* and §*Local Algebras Have None*. The second is the standard structure theory: a division algebra is simple, and a finite-dimensional simple algebra is semisimple because its radical is a two-sided ideal. The table respects both chains: every division algebra is local, simple and semisimple, and every local algebra has no nontrivial idempotents.

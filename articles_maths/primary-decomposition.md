@@ -97,7 +97,7 @@ because $a \in I$ and $xy \in I$; hence $z \in (I : y)$. On the other hand $z y 
 **Theorem (Lasker–Noether).** Let $R$ be a commutative Noetherian ring. Every proper ideal $I \subsetneq R$ is a finite intersection of primary ideals,
 
 $$
-I = \mathrm{Q}_1 \cap \mathrm{Q}_2 \cap \cdots \cap \mathrm{Q}_r .
+\boxed{\;I = \mathrm{Q}_1 \cap \mathrm{Q}_2 \cap \cdots \cap \mathrm{Q}_r\;} .
 $$
 
 **Proof.** By the two lemmas, $I$ is a finite intersection of irreducible ideals, and each irreducible ideal is primary.
@@ -149,7 +149,7 @@ The first uniqueness theorem is the statement that the associated primes carry n
 **Theorem (second uniqueness theorem).** Let $I = \bigcap_i \mathrm{Q}_i$ be an irredundant primary decomposition and let $\mathrm{P}_i = \operatorname{rad}(\mathrm{Q}_i)$. If $\mathrm{P}_i$ is a minimal prime of $I$, then the component $\mathrm{Q}_i$ is uniquely determined by $I$ and $\mathrm{P}_i$: with $\iota : R \to R_{\mathrm{P}_i}$ the localization map and $I_{\mathrm{P}_i}$ the localization of the ideal $I$,
 
 $$
-\mathrm{Q}_i = \iota^{-1}(I_{\mathrm{P}_i}).
+\boxed{\;\mathrm{Q}_i = \iota^{-1}(I_{\mathrm{P}_i})\;}.
 $$
 
 Equivalently, $\mathrm{Q}_i$ consists of those $r \in R$ with $sr \in I$ for some $s \notin \mathrm{P}_i$.
@@ -227,7 +227,7 @@ The set $V(I)$ depends only on $\operatorname{rad}(I)$, so the correspondence is
 **Theorem (strong Nullstellensatz).** Let $k$ be algebraically closed and let $I \subseteq k[x_1, \ldots, x_n]$ be an ideal. Then
 
 $$
-I(V(I)) = \operatorname{rad}(I).
+\boxed{\;I(V(I)) = \operatorname{rad}(I)\;}.
 $$
 
 Equivalently, the maps $I \mapsto V(I)$ and $S \mapsto I(S)$ are inverse bijections between radical ideals and algebraic subsets of $k^n$.

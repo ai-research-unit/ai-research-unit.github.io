@@ -27,7 +27,7 @@ It is the two-sided operator of *Two-Sided Operators on a Clifford Algebra* atta
 **Proposition (the parity sign).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then
 
 $$
-\mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x,
+\boxed{\;\mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x\;},
 $$
 
 where $\mathrm{Ad}_x(y)=x\,y\,x^{-1}$ is the inner conjugation. In particular $\mathrm{Ad}^{\alpha}_x=\mathrm{Ad}_x$ when $x$ is even, and $\mathrm{Ad}^{\alpha}_x=-\mathrm{Ad}_x$ when $x$ is odd.
@@ -89,7 +89,7 @@ which is $F^{\times}\cdot1$ when $\dim V$ is even and $F^{\times}\cdot1\cup F^{\
 **Proposition.** The kernel of the signed inner conjugation on the unit group is the group of nonzero scalars,
 
 $$
-\ker\mathrm{Ad}^{\alpha}=F^{\times}\cdot1 ,
+\boxed{\;\ker\mathrm{Ad}^{\alpha}=F^{\times}\cdot1\;} ,
 $$
 
 in every dimension.
@@ -99,7 +99,7 @@ in every dimension.
 **Corollary (the volume element).** Let $\dim V$ be odd and let $\omega$ be the volume element. Then $\omega$ is central, so $\mathrm{Ad}_{\omega}=\mathrm{id}$, while
 
 $$
-\mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id}.
+\boxed{\;\mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id}\;}.
 $$
 
 *Proof.* The volume element is odd and central in odd dimension, so $\mathrm{Ad}_\omega=\mathrm{id}$, and the parity-sign proposition gives $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{Ad}_\omega$.

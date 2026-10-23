@@ -63,7 +63,7 @@ The arc-length parametrisation is therefore the **normalisation** of a rectifiab
 **Theorem.** Let $E \subseteq X$ be the image of a non-constant rectifiable curve. Then
 
 $$
-\dim_H E = 1 , \qquad \text{and} \qquad 0 < \mathcal{H}^1(E) \leq \ell(\gamma) ,
+\boxed{\;\dim_H E = 1 , \qquad \text{and} \qquad 0 < \mathcal{H}^1(E) \leq \ell(\gamma)\;} ,
 $$
 
 with $\mathcal{H}^1(E) = \ell(\gamma)$ when $\gamma$ is injective.
@@ -99,7 +99,7 @@ be the four maps of the plane that replace an interval by the four sides of the 
 **Theorem (the curve is not rectifiable).** Let $K_n = F^n(K_0)$ with $F = \bigcup_{i}S_i$. Then $K_n$ is a polygonal arc of $4^n$ segments each of length $3^{-n}$, its length is
 
 $$
-\ell(K_n) = 4^n \cdot 3^{-n} = \left(\frac{4}{3}\right)^{n} \cdot 1 \longrightarrow \infty ,
+\boxed{\;\ell(K_n) = 4^n \cdot 3^{-n} = \left(\frac{4}{3}\right)^{n} \cdot 1 \longrightarrow \infty\;} ,
 $$
 
 so $\ell(K) = \infty$ and $K$ is not rectifiable. The one-dimensional content of $K$ is zero, and for $s = \log 4/\log 3$ the $s$-content of each stage is the constant one:
@@ -125,7 +125,7 @@ The map is called snowflaking because it is the metric form of the construction 
 **Theorem (snowflaking changes the dimension).** For every bounded $E \subseteq X$ and every $0 < \alpha < 1$,
 
 $$
-\dim_H (E, d^\alpha) = \frac{1}{\alpha}\,\dim_H (E, d) , \qquad \dim_B (E, d^\alpha) = \frac{1}{\alpha}\,\dim_B (E, d) .
+\boxed{\;\dim_H (E, d^\alpha) = \frac{1}{\alpha}\,\dim_H (E, d) , \qquad \dim_B (E, d^\alpha) = \frac{1}{\alpha}\,\dim_B (E, d)\;} .
 $$
 
 **Proof sketch.** A set $U$ has $d^\alpha$-diameter $(\operatorname{diam}_d U)^\alpha$, so a $d$-cover by sets of diameter at most $\delta$ is a $d^\alpha$-cover by sets of diameter at most $\delta^\alpha$ and conversely; replacing $\delta$ by $\delta^\alpha$ in the exponent of the covering number multiplies the exponent by $1/\alpha$.

@@ -127,7 +127,7 @@ The Satake parameter is the local datum that appears in the Euler factor of an a
 **Theorem (spectral decomposition for $GL_2$).** The space $L^2(GL_2(\mathbb{Q})\backslash GL_2(\mathbb{A}), \omega)$ decomposes as a direct sum and integral
 
 $$
-L^2 = L^2_{cusp} \oplus L^2_{res} \oplus L^2_{cont},
+\boxed{\;L^2 = L^2_{cusp} \oplus L^2_{res} \oplus L^2_{cont}\;},
 $$
 
 where $L^2_{cusp}$ is the cuspidal spectrum, $L^2_{res}$ is spanned by the residues of Eisenstein series, and $L^2_{cont}$ is the continuous spectrum spanned by the Eisenstein series $E(g, \varphi, s)$ for $\varphi$ in a space of automorphic forms on the Levi subgroup and $s$ on the critical line.
@@ -151,7 +151,7 @@ The analytic continuation and the functional equation are proved by the theory o
 **Theorem (Selberg's trace formula).** Let $G$ be a reductive group over $\mathbb{Q}$ and let $f$ be a test function on $G(\mathbb{A})$ of a suitable class. Then the trace of the operator $R(f)$ on the discrete part of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$ has two expansions,
 
 $$
-\operatorname{tr} R(f)\big|_{\mathrm{disc}} = \sum_{[\gamma]} \operatorname{vol}\!\left(G_\gamma(\mathbb{Q})\backslash G_\gamma(\mathbb{A})\right) O_\gamma(f) = \sum_{\pi} m(\pi)\, \operatorname{tr} \pi(f),
+\boxed{\;\operatorname{tr} R(f)\big|_{\mathrm{disc}} = \sum_{[\gamma]} \operatorname{vol}\!\left(G_\gamma(\mathbb{Q})\backslash G_\gamma(\mathbb{A})\right) O_\gamma(f) = \sum_{\pi} m(\pi)\, \operatorname{tr} \pi(f)\;},
 $$
 
 the **geometric** expansion indexed by conjugacy classes $[\gamma]$ of $G(\mathbb{Q})$, with $G_\gamma$ the centraliser and $O_\gamma(f)$ the orbital integral, and the **spectral** expansion indexed by automorphic representations $\pi$ with multiplicities $m(\pi)$.
@@ -179,7 +179,7 @@ where $N_\pi$ is the **conductor** of $\pi$ — the product of the local conduct
 **Theorem (functional equation).** For a cuspidal automorphic representation $\pi$ of $GL_n$ there is a **root number** $\varepsilon(\pi) \in \mathbb{C}^\times$ with $|\varepsilon(\pi)| = 1$ such that
 
 $$
-\Lambda(s, \pi) = \varepsilon(\pi)\, \Lambda(1-s, \pi^{\vee}),
+\boxed{\;\Lambda(s, \pi) = \varepsilon(\pi)\, \Lambda(1-s, \pi^{\vee})\;},
 $$
 
 where $\pi^{\vee}$ is the contragredient representation. The completed $L$-function extends to a meromorphic function of $s$ of finite order, and it is entire when $\pi$ is cuspidal.

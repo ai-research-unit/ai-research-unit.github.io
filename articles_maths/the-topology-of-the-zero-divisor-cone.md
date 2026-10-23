@@ -120,7 +120,7 @@ is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle
 **Proposition (homotopy invariants of the link).** The quotient map $S^3\times S^3\to L$ is a principal $S^1$-bundle, and its long exact homotopy sequence, with $\pi_1(S^3\times S^3)=\pi_2(S^3\times S^3)=0$, gives
 
 $$
-\pi_1(L)=0,\qquad \pi_2(L)\cong\pi_1(S^1)=\mathbb{Z}.
+\boxed{\; \pi_1(L)=0,\qquad \pi_2(L)\cong\pi_1(S^1)=\mathbb{Z} \;}.
 $$
 
 Hence $L$ is simply connected but is **not** homeomorphic to $S^5$, whose $\pi_2$ vanishes.
@@ -172,7 +172,7 @@ the negative of a sum of three squares, which likewise vanishes only at $\tilde 
 **Proposition (the sphere of real roots of $-1$).** The unit sphere of the slice $P\cap\mathbb{H}_{\mathbb{B}}$ is
 
 $$
-S^2=\{\mu\in\mathbb{H}_{\mathbb{B}}:\mu^{2}=-e_t\},
+\boxed{\; S^2=\{\mu\in\mathbb{H}_{\mathbb{B}}:\mu^{2}=-e_t\} \;},
 $$
 
 the sphere of **real roots of $-1$**; it is compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and it is **not** a group. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ in the slice $i\mathbb{H}_{\mathbb{B}}$ is its image under multiplication by the central unit $i$ and is homeomorphic to it.

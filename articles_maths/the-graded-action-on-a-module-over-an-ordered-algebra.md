@@ -62,7 +62,7 @@ that is, when $\rho$ preserves the parity of the operators; and then $\rho$ is a
 **Theorem (the sign rule).** For a graded action, a homogeneous $a\in A$ and a homogeneous $m\in M$,
 
 $$
-\alpha_M(a\cdot m) = (-1)^{\lvert a\rvert}\,a\cdot\alpha_M(m) ,
+\boxed{\;\alpha_M(a\cdot m) = (-1)^{\lvert a\rvert}\,a\cdot\alpha_M(m)\;} ,
 $$
 
 equivalently $\alpha_M\rho(a)\alpha_M = (-1)^{\lvert a\rvert}\rho(a) = \rho(\alpha(a))$, so that the module grading operator **intertwines the action with its grade-twist**:
@@ -76,7 +76,7 @@ $$
 **Corollary (the sign on the tensor product).** When the action is extended to a tensor product of graded modules by the rule
 
 $$
-a\cdot(m\otimes n) = (a\cdot m)\otimes n + (-1)^{\lvert a\rvert\lvert m\rvert}\,m\otimes(a\cdot n) ,
+\boxed{\;a\cdot(m\otimes n) = (a\cdot m)\otimes n + (-1)^{\lvert a\rvert\lvert m\rvert}\,m\otimes(a\cdot n)\;} ,
 $$
 
 the result is a graded action; the Koszul sign $(-1)^{\lvert a\rvert\lvert m\rvert}$ is forced, and it is the unique choice for which the extension is associative with the sign rule.
@@ -96,7 +96,7 @@ the action composed with the module grading; it is the module analogue of the si
 **Theorem (the twisted composition law).** The signed action operators compose by
 
 $$
-\rho^{\alpha}(a)\,\rho^{\alpha}(b) = \rho(a\,\alpha(b)) ,
+\boxed{\;\rho^{\alpha}(a)\,\rho^{\alpha}(b) = \rho(a\,\alpha(b))\;} ,
 $$
 
 the products being the **ordinary** action at the twisted parameters; consequently

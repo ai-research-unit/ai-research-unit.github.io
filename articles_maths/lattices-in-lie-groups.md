@@ -16,7 +16,7 @@ The boundary with Part III is the one fixed for this block: the **measure-theore
 **Definition.** Let $G$ be a locally compact group with left Haar measure $\mu$ and let $\Gamma \leq G$ be a discrete subgroup. The group $\Gamma$ is a **lattice** in $G$ if
 
 $$
-\mu(G/\Gamma) < \infty ,
+\boxed{\;\mu(G/\Gamma) < \infty\;} ,
 $$
 
 where the quotient is taken with the quotient measure induced by $\mu$, that is, the measure for which

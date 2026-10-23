@@ -18,7 +18,7 @@ No physics is invoked.
 **Definition.** Let $\mathcal A=\{0,1,\dots,d-1\}$ be a finite **alphabet** of cardinality $d \ge2$. The **full shift** on $\mathcal A$ is the set
 
 $$
-\Sigma_d=\mathcal A^{\mathbb{Z}}=\{x=(x_n)_{n \in\mathbb{Z}}:x_n \in\mathcal A\}
+\boxed{\;\Sigma_d=\mathcal A^{\mathbb{Z}}=\{x=(x_n)_{n \in\mathbb{Z}}:x_n \in\mathcal A\}\;}
 $$
 
 with the **shift** $\sigma:\Sigma_d\to\Sigma_d$, $(\sigma x)_n=x_{n+1}$; the one-sided full shift is $\Sigma_d^+=\mathcal A^{\mathbb{N}}$ with the same formula. The set carries the product topology of the discrete topologies, which is induced by the metric
@@ -50,7 +50,7 @@ with $\mathcal L_n(X)=\mathcal L(X)\cap\mathcal A^n$; a subshift is **determined
 **Theorem (entropy and the language).** Let $X$ be a subshift. Then the topological entropy of the shift restricted to $X$ is
 
 $$
-h_{\mathrm{top}}(\sigma|_X)=\lim_{n\to\infty}\frac1n\log|\mathcal L_n(X)|,
+\boxed{\;h_{\mathrm{top}}(\sigma|_X)=\lim_{n\to\infty}\frac1n\log|\mathcal L_n(X)|\;},
 $$
 
 the exponential growth rate of the language.
@@ -84,7 +84,7 @@ equivalently the subshift whose forbidden words are the pairs $ij$ with $A_{ij}=
 (ii) the number of fixed points of $\sigma^n$ satisfies $p_n=\operatorname{tr}(A^n)$, and the **zeta function** of the subshift,
 
 $$
-\zeta_X(t)=\exp\Bigl(\sum_{n\ge1}\frac{p_n}{n}t^n\Bigr)=\frac1{\det(I-tA)},
+\boxed{\;\zeta_X(t)=\exp\Bigl(\sum_{n\ge1}\frac{p_n}{n}t^n\Bigr)=\frac1{\det(I-tA)}\;},
 $$
 
 is rational, the identity being the formula of Bowen and Lanford;

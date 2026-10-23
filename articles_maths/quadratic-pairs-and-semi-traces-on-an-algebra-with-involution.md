@@ -21,7 +21,7 @@ $$
 **Proposition.** Both are additive subgroups of $A$ containing the central scalars fixed by $\sigma$, and
 
 $$
-A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)
+\boxed{\;A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)\;}
 $$
 
 when two is invertible in $R$; in characteristic two the two subgroups coincide and the decomposition fails.
@@ -45,7 +45,7 @@ $$
 **Proposition (the four are two).** If two is invertible in $R$ then
 
 $$
-\mathrm{Alt}(A,\sigma) = \mathrm{Skew}(A,\sigma), \qquad \mathrm{Symd}(A,\sigma) = \mathrm{Sym}(A,\sigma):
+\boxed{\;\mathrm{Alt}(A,\sigma) = \mathrm{Skew}(A,\sigma), \qquad \mathrm{Symd}(A,\sigma) = \mathrm{Sym}(A,\sigma):\;}
 $$
 
 every skew element is alternating and every symmetric element symmetrized.
@@ -131,7 +131,7 @@ by the $R$-linearity of the reduced trace and its invariance under $\sigma$; and
 **Theorem (the classification of the semi-traces).** The semi-traces for $\sigma$ are in bijection with the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\xi(\lambda) = 1_A$, the semi-trace attached to $\lambda$ being
 
 $$
-f_\lambda(s) = \operatorname{Trd}(\ell\,s), \qquad s \in \mathrm{Sym}(A,\sigma),
+\boxed{\;f_\lambda(s) = \operatorname{Trd}(\ell\,s), \qquad s \in \mathrm{Sym}(A,\sigma)\;},
 $$
 
 for any lift $\ell$ of $\lambda$ in $A$. In particular a semi-trace exists exactly when $\sigma$ is locally quadratic.

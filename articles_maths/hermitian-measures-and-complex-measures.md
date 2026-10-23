@@ -47,7 +47,7 @@ the supremum over the finite measurable partitions of $A$; the **variation norm*
 function $\lvert\mu\rvert$ is a finite positive measure; every complex measure is a finite linear combination
 of positive finite measures,
 $$
-\mu=\mu_1-\mu_2+i(\mu_3-\mu_4),
+\boxed{\;\mu=\mu_1-\mu_2+i(\mu_3-\mu_4)\;},
 $$
 and the space $M(X)$ of complex measures is a complex vector space in which the variation norm is complete,
 so $M(X)$ is a Banach space.
@@ -159,7 +159,7 @@ function of $\xi$, with $\lVert\hat\mu\rVert_\infty\leq\lVert\mu\rVert$, and it 
 
 **Theorem.** The involution commutes with the transform through the reflection of the argument,
 $$
-\widehat{\bar\mu}(\xi)=\overline{\hat\mu(-\xi)} .
+\boxed{\;\widehat{\bar\mu}(\xi)=\overline{\hat\mu(-\xi)}\;} .
 $$
 Consequently $\mu$ is Hermitian if and only if its transform is a Hermitian function,
 $\hat\mu(-\xi)=\overline{\hat\mu(\xi)}$, and $\mu$ is anti-Hermitian if and only if $\hat\mu$ is odd, with
@@ -196,8 +196,8 @@ of positive definite functions.
 **Theorem.** Write $\langle\mu,f\rangle=\int f\,d\mu$ for $f\in L^1(\lvert\mu\rvert)$. The involution is the
 adjoint of the complex conjugation of the function,
 $$
-\langle\bar\mu,f\rangle=\overline{\langle\mu,\bar f\rangle},\qquad
-\langle\mu,\bar f\rangle=\overline{\langle\bar\mu,f\rangle} .
+\boxed{\;\langle\bar\mu,f\rangle=\overline{\langle\mu,\bar f\rangle},\qquad
+\langle\mu,\bar f\rangle=\overline{\langle\bar\mu,f\rangle}\;} .
 $$
 
 **Proof.** $\langle\bar\mu,f\rangle=\int f\,d\bar\mu=\overline{\int\bar f\,d\mu}$ by the conjugation of the

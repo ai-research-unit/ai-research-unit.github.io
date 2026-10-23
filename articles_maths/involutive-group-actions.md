@@ -32,7 +32,7 @@ The involution and the action each have their own fixed set, and each set is sta
 **Proposition (the constants of the action are $\sigma$-stable).** The set of $\Gamma$-fixed points
 
 $$
-G^{\Gamma}=\{g\in G : \gamma\cdot g=g \ \text{for all } \gamma\in\Gamma\}
+\boxed{\;G^{\Gamma}=\{g\in G : \gamma\cdot g=g \ \text{for all } \gamma\in\Gamma\}\;}
 $$
 
 is stable under $\sigma$, and $\sigma$ restricts to an involution of $G^{\Gamma}$.
@@ -56,7 +56,7 @@ Let $N\trianglelefteq G$ be a $\sigma$-stable normal subgroup, so that $\sigma$ 
 **Proposition (the fixed points of the quotient).** With $N$ as above, the image of $G^{\sigma}$ in $G/N$ is contained in the fixed set $(G/N)^{\bar\sigma}$, and the containment can be strict. When $\sigma$ is an automorphism of $G$ and $N$ is a central subgroup of order two on which $\sigma$ acts trivially, the quotient of the two fixed sets is $N$ itself,
 
 $$
-(G/N)^{\bar\sigma}\big/\pi(G^{\sigma})\;\cong\;N/2N=N ,
+\boxed{\;(G/N)^{\bar\sigma}\big/\pi(G^{\sigma})\;\cong\;N/2N=N\;} ,
 $$
 
 so the containment is strict, the image having index two in the fixed set of the quotient.
@@ -78,7 +78,7 @@ so the containment is strict, the image having index two in the fixed set of the
 **Proposition (an involution on the semidirect product).** Let $\Gamma$ act on $G$ preserving $\sigma$, and let $\Gamma$ carry an involution $\tau$. If the action is $\tau$-twisted, that is $\tau(\gamma)\cdot\tau(g)=\tau(\gamma\cdot g)$ for all $\gamma,g$, then
 
 $$
-\Theta(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)
+\boxed{\;\Theta(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)\;}
 $$
 
 is an involution of the semidirect product $G\rtimes\Gamma$, and its restriction to $G$ is $\sigma$. If $\tau=\mathrm{id}$ this reduces to $\Theta(g,\gamma)=(\sigma(g),\gamma)$.

@@ -31,7 +31,7 @@ The module is a module in the ordinary sense when the grading is forgotten.
 **Proposition (intertwining of the parity operators).** A bounded action $\rho$ is graded if and only if it intertwines the two parity operators,
 
 $$
-\rho(T)\,\Gamma_M=(-1)^{|T|}\,\Gamma_M\,\rho(T)\quad\text{on homogeneous }T,
+\boxed{\;\rho(T)\,\Gamma_M=(-1)^{|T|}\,\Gamma_M\,\rho(T)\quad\text{on homogeneous }T\;},
 $$
 
 equivalently $\rho(\Gamma_H)=\Gamma_M$ when $\rho$ is a $*$-homomorphism, and the even part of the action is the subalgebra $\rho(B(H)^0)$, which preserves each graded piece.
@@ -55,7 +55,7 @@ and the action is a **graded action** when the module carries the grading and th
 **Theorem (the sign rule is forced by multiplicativity).** Let $\rho$ be a graded action of $B(H)$ on $M$. Then for homogeneous $S,T$ the graded commutator is preserved:
 
 $$
-\rho\bigl([S,T]_{\mathrm{gr}}\bigr)=[\rho(S),\rho(T)]_{\mathrm{gr}} .
+\boxed{\;\rho\bigl([S,T]_{\mathrm{gr}}\bigr)=[\rho(S),\rho(T)]_{\mathrm{gr}}\;} .
 $$
 
 The sign $(-1)^{|S||T|}$ is the unique sign for which multiplicativity and the grading are compatible; with the ordinary commutator $ST-TS$ in its place the identity fails for two odd elements.
@@ -79,7 +79,7 @@ so the action of an odd operator changes the degree of the vector, and the two o
 **Theorem (a graded action of a $C^*$-algebra is contractive).** Every action $\rho$ of $B(H)$ by bounded operators on the Hilbert space $M$ satisfies
 
 $$
-\|\rho(T)\|\le\|T\| ,
+\boxed{\;\|\rho(T)\|\le\|T\|\;} ,
 $$
 
 with equality exactly when $\rho$ is injective; in particular a graded action of $B(H)$ is a contraction, and it is an isometry exactly when it is faithful.

@@ -32,7 +32,7 @@ with the second sum over the other branches, and in the uniform case, $d\equiv d
 
 **Theorem (the adjoint is the Koopman operator).** The adjoint of the transfer operator with respect to the invariant measure is the **Koopman operator**,
 $$
-L_\varphi^{\,*}=U_\varphi,\qquad U_\varphi f=f\circ\varphi ,
+\boxed{\;L_\varphi^{\,*}=U_\varphi,\qquad U_\varphi f=f\circ\varphi\;} ,
 $$
 so that $\langle L_\varphi f,g\rangle=\langle f,U_\varphi g\rangle$ for all $f,g\in L^2(\mu)$.
 
@@ -58,7 +58,7 @@ the transfer operator read through the reversal of the kernel.
 
 **Theorem (the reversed kernel).** With $R\varphi=\varphi R$ and $R_*\mu=\mu$, the adjoint $L_\varphi^*=U_\varphi$ commutes with the involutive unitary $R_*$:
 $$
-R_*U_\varphi R_*=U_{R\varphi R}=U_\varphi=L_\varphi^{\,*},
+\boxed{\;R_*U_\varphi R_*=U_{R\varphi R}=U_\varphi=L_\varphi^{\,*}\;},
 $$
 so the **reversed kernel** $R_*L_\varphi^*R_*$ is the adjoint itself; the transfer operator, being its adjoint, commutes with $R_*$ as well, $R_*L_\varphi R_*=L_\varphi$; and $L_\varphi$ is **self-adjoint up to the involution**,
 $$
@@ -90,7 +90,7 @@ that is, symmetric for the **twisted Hermitian form** $\langle f,g\rangle_R=\lan
 
 **Theorem (the duality of the correlations).** The correlations of the limit dynamical system are computed through the adjoint:
 $$
-C_n(f,g)=\int f\circ\varphi^n\,\bar g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int\bar g\,d\mu\Bigr)=\langle L_\varphi^{\,n}f,g\rangle-\langle f,1\rangle\langle1,g\rangle ,
+\boxed{\;C_n(f,g)=\int f\circ\varphi^n\,\bar g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int\bar g\,d\mu\Bigr)=\langle L_\varphi^{\,n}f,g\rangle-\langle f,1\rangle\langle1,g\rangle\;} ,
 $$
 and when the spectral gap of *The Transfer Operator of the Limit Dynamical System* holds the decay is exponential, $|C_n(f,g)|\le C\theta^n$, for $f$ and $g$ in the H\"older class.
 

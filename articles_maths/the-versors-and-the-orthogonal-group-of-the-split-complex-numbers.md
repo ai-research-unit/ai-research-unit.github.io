@@ -35,7 +35,7 @@ $$
 The map $u\mapsto R_{u}$ is an injective homomorphism of groups, because $R_{uv}=R_{u}\circ R_{v}$ and $R_{1}=\mathrm{id}$, and it is injective since $R_{u}(1)=u$ recovers $u$. Each $R_{u}$ preserves the indefinite form,
 
 $$
-g(R_{u}Q,R_{u}C)=\langle u\rangle_{*}\,g(Q,C)=g(Q,C),
+\boxed{\; g(R_{u}Q,R_{u}C)=\langle u\rangle_{*}\,g(Q,C)=g(Q,C) \;},
 $$
 
 since $g(uQ,uC)=u\bar u\,g(Q,C)$ for the polarisation $g$ of the norm (*Norm and Invertibility in the General Split-Complex Algebra*), so every versor acts by a map preserving the form. These are the hyperbolic rotations of the plane, whose parametrisation and identification with $SO(1,1)$ are *Hyperbolic Rotations*.
@@ -49,7 +49,7 @@ since $g(uQ,uC)=u\bar u\,g(Q,C)$ for the polarisation $g$ of the norm (*Norm and
 **The full orthogonal group.** The $\mathbb{R}$-linear maps preserving $g$ are more numerous: with the matrix $M$ of the map in the real basis $1$, $j$, they are the solutions of the matrix condition
 
 $$
-M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1),
+\boxed{\; M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1) \;},
 $$
 
 that is the group $O(1,1)$, of four components. The versors give its proper half $SO(1,1)$, of two components; the other two cosets are formed by the reflections $Q\mapsto u\bar Q$ with $\langle u\rangle_{*}=1$ (*Hyperbolic Rotations*). The group of the title is thus $O(1,1)$, and the versors are its proper half.
@@ -61,7 +61,7 @@ that is the group $O(1,1)$, of four components. The versors give its proper half
 **Theorem (the square map).** The map
 
 $$
-\sigma:\mathbb{D}^{(1)}\to\mathbb{D}^{(1)}_{0}, \qquad \sigma(u)=u^{2},
+\boxed{\; \sigma:\mathbb{D}^{(1)}\to\mathbb{D}^{(1)}_{0}, \qquad \sigma(u)=u^{2} \;},
 $$
 
 is a surjective group homomorphism with kernel $\{1,-1\}$, and each element of the target has exactly two preimages, $u$ and $-u$. It is therefore a two-to-one cover of the identity component by the whole norm-one group.

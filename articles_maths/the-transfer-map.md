@@ -61,8 +61,8 @@ Note that no global section of $p$ and no choice of a basepoint of $E$ is involv
 **Proposition.** The transfer is natural for maps of the cover: a deck transformation $h \in G$ satisfies $h_\# \tau_n = \tau_n$, and the projection satisfies
 
 $$
-p_\#\, \tau_n = d \cdot \mathrm{id}_{C_n(B;R)}, \qquad\qquad
-\tau_n\, p_\# = \sum_{g \in G} g_\# \quad \text{on } C_n(E;R).
+\boxed{\;p_\#\, \tau_n = d \cdot \mathrm{id}_{C_n(B;R)}, \qquad\qquad
+\tau_n\, p_\# = \sum_{g \in G} g_\# \quad \text{on } C_n(E;R)\;}.
 $$
 
 *Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \sigma^{\mathrm{lift}} = \sum_g (hg)_\# \sigma^{\mathrm{lift}} = \sum_g g_\# \sigma^{\mathrm{lift}}$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \sigma^{\mathrm{lift}} = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \sigma^{\mathrm{lift}} = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity.
@@ -104,7 +104,7 @@ The proof uses only that the deck action is by homeomorphisms and that lifts of 
 **Theorem.** On homology the two composites are
 
 $$
-p_*\, \tau_* = d \cdot \mathrm{id}, \qquad\qquad \tau_*\, p_* = N_* := \sum_{g \in G} g_* .
+\boxed{\;p_*\, \tau_* = d \cdot \mathrm{id}, \qquad\qquad \tau_*\, p_* = N_* := \sum_{g \in G} g_*\;} .
 $$
 
 Consequently the image of $\tau_*$ is contained in the fixed part $H_n(E;R)^G = \{x : g_* x = x \ \forall g\}$.
@@ -124,7 +124,7 @@ $$
 is an isomorphism, with inverse $d^{-1}\tau_*$. In particular the transfer is injective and
 
 $$
-H_n(B;R) \;\cong\; H_n(E;R)^G, \qquad\qquad H_n(E;R) \;\cong\; H_n(B;R) \oplus \ker p_* .
+\boxed{\;H_n(B;R) \;\cong\; H_n(E;R)^G, \qquad\qquad H_n(E;R) \;\cong\; H_n(B;R) \oplus \ker p_*\;} .
 $$
 
 *Proof.* Both maps $p_*$ and $d^{-1}\tau_*$ carry the fixed part to the fixed part: $p_*$ commutes with the deck action because $p \circ g = p$, and $\tau_*$ lands in the fixed part by the theorem. On the fixed part, $p_* d^{-1}\tau_* = d^{-1} (d\,\mathrm{id}) = \mathrm{id}$ and $d^{-1}\tau_* p_* = d^{-1} N_* = d^{-1}(d\,\mathrm{id}) = \mathrm{id}$, the last because every element of the fixed part is fixed by each $g_*$, so $N_* = d\cdot\mathrm{id}$ there. Hence the two maps are inverse isomorphisms. The splitting is the standard splitting of a linear map with a section up to the invertible scalar $d$; on the fixed part the sequence $0 \to H_n(E;R)^G \to H_n(E;R) \to \ker p_* \to 0$ is split by $d^{-1}\tau_* p_*$.

@@ -46,7 +46,7 @@ so the signed left multiplications are not closed under composition and form a c
 **Theorem (the signed adjoint of the left multiplication).** The adjoint of the signed left multiplication with respect to the trace form is the signed left multiplication by the adjointed parameter,
 
 $$
-\bigl(\Lambda^{\alpha}_a\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}, \qquad\text{that is}\qquad \bigl(\Lambda^{\alpha}_a\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y) .
+\boxed{\;\bigl(\Lambda^{\alpha}_a\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}, \qquad\text{that is}\qquad \bigl(\Lambda^{\alpha}_a\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\;} .
 $$
 
 **Proof.** Use the factorisation $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$: the adjoint of a composite is the composite of the adjoints in reverse order, $(\alpha L_{\alpha(a)})^{*} = L_{\alpha(a)}^{*}\alpha^{*}$, and $L_{b}^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$ from *The Signed Adjoint Sandwich on a Symmetry Group*, so
@@ -60,7 +60,7 @@ Directly: $\langle \Lambda^{\alpha}_a(x), y\rangle = \tau((a\alpha(x))^{*}y) = \
 **Proposition.** The adjoint of the signed left multiplication is the signed left multiplication with the parameter replaced by $\alpha(a)^{*}$; for $\alpha = \mathrm{id}$ the formula is $L_a^{*} = L_{a^{*}}$, the adjoint of the ordinary left multiplication. The signed left multiplication is unitary exactly when
 
 $$
-\alpha(a)^{*}\,\alpha(a) = e, \qquad \text{i.e.,} \qquad \alpha(a)^{*} = \alpha(a)^{-1},
+\boxed{\;\alpha(a)^{*}\,\alpha(a) = e, \qquad \text{i.e.,} \qquad \alpha(a)^{*} = \alpha(a)^{-1}\;},
 $$
 
 because the composite of the adjoint with the operator is an ordinary left multiplication,
@@ -82,7 +82,7 @@ which is the identity exactly when the parameter is the unit.
 **Proposition.** The signed sandwich factors as a signed left multiplication followed by a right multiplication,
 
 $$
-S^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a, \qquad S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b,
+\boxed{\;S^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a, \qquad S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b\;},
 $$
 
 and its adjoint factors the same way, in reverse order:

@@ -44,7 +44,7 @@ The **Hochschild homology** is $HH_n(A,M)=H_n(C_\bullet(A,M))$. The **Hochschild
 **Theorem.** There are natural isomorphisms
 
 $$
-HH_n(A,M)\cong\operatorname{Tor}_n^{A^{\mathrm{e}}}(A,M), \qquad HH^n(A,M)\cong\operatorname{Ext}_{A^{\mathrm{e}}}^n(A,M),
+\boxed{\;HH_n(A,M)\cong\operatorname{Tor}_n^{A^{\mathrm{e}}}(A,M), \qquad HH^n(A,M)\cong\operatorname{Ext}_{A^{\mathrm{e}}}^n(A,M)\;},
 $$
 
 where $A$ is regarded as an $A$-bimodule via the multiplication. In particular Hochschild homology is the left derived functor of the coinvariants $M\mapsto M_A=M\otimes_{A^{\mathrm{e}}}A$ and Hochschild cohomology is the right derived functor of the invariants $M\mapsto M^A=\operatorname{Hom}_{A^{\mathrm{e}}}(A,M)$.
@@ -116,7 +116,7 @@ and for a symmetric bimodule $M$, that is an $A$-module, $HH_1(A,M)\cong M\otime
 **Theorem (Hochschild–Kostant–Rosenberg).** Let $A$ be a commutative $k$-algebra that is smooth over $k$. Then there are natural isomorphisms
 
 $$
-HH_n(A,A)\cong\Omega^n_{A/k}, \qquad HH^n(A,A)\cong\bigoplus_{p+q=n}\Lambda^p\operatorname{Der}_k(A,A)\otimes_A\Omega^q_{A/k}
+\boxed{\;HH_n(A,A)\cong\Omega^n_{A/k}, \qquad HH^n(A,A)\cong\bigoplus_{p+q=n}\Lambda^p\operatorname{Der}_k(A,A)\otimes_A\Omega^q_{A/k}\;}
 $$
 
 under which the Hochschild boundary corresponds to the de Rham differential and the shuffle products correspond to the exterior products.
@@ -168,7 +168,7 @@ $$
 
 **Theorem (Gerstenhaber).** The bracket makes $HH^{\bullet}(A,A)$ a graded Lie algebra of degree $-1$: it satisfies $[\varphi,\psi]=-(-1)^{(p+1)(q+1)}[\psi,\varphi]$ and the graded Jacobi identity
 $$
-(-1)^{(p+1)(r+1)}[[\varphi,\psi],\theta]+(-1)^{(q+1)(p+1)}[[\psi,\theta],\varphi]+(-1)^{(r+1)(q+1)}[[\theta,\varphi],\psi]=0
+\boxed{\;(-1)^{(p+1)(r+1)}[[\varphi,\psi],\theta]+(-1)^{(q+1)(p+1)}[[\psi,\theta],\varphi]+(-1)^{(r+1)(q+1)}[[\theta,\varphi],\psi]=0\;}
 $$
 on classes of degrees $p,q,r$, and the bracket is compatible with the cup product in the sense of a Poisson-type identity
 $$

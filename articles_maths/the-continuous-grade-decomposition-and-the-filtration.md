@@ -31,7 +31,7 @@ a finite rational linear combination of the continuous permutation operators of 
 **Theorem.** Let $m$ be non-degenerate on the finite-dimensional space $V$. Then the grade projections $\langle\cdot\rangle_{k}$, $k=0,\dots,n$, are continuous linear maps and
 
 $$
-\mathrm{Cl}(V,\mathfrak{Q}) = \bigoplus_{k=0}^{n}\mathrm{Cl}_{k}(V,\mathfrak{Q})
+\boxed{\;\mathrm{Cl}(V,\mathfrak{Q}) = \bigoplus_{k=0}^{n}\mathrm{Cl}_{k}(V,\mathfrak{Q})\;}
 $$
 
 is a topological direct sum of closed subspaces; consequently every linear map out of the algebra that is continuous on each grade is continuous, and a sequence converges if and only if each of its grade components converges.
@@ -79,7 +79,7 @@ the second holding when the form is non-degenerate and the grade decomposition i
 **Theorem.** The associated graded algebra $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})=\bigoplus_{k\ge0}N_{k}/N_{k+1}$ with the product induced by the filtration is isomorphic, as a graded algebra, to the exterior algebra $\Lambda(V)$ of *The Exterior Algebra*:
 
 $$
-\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})\;\cong\;\Lambda(V), \qquad N_{k}/N_{k+1}\cong\Lambda^{k}V .
+\boxed{\;\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})\;\cong\;\Lambda(V), \qquad N_{k}/N_{k+1}\cong\Lambda^{k}V\;} .
 $$
 
 *Proof.* The algebraic statement, that the natural map from the filtration quotients to the exterior powers is an isomorphism and that the induced product is the wedge product, is the theorem of Poincaré–Birkhoff–Witt for Clifford algebras proved in *The Filtration and the Associated Graded Algebra*, §*The Associated Graded Algebra*. It is a statement about the algebra and not about its topology, and it therefore holds for every quadratic form, degenerate ones included; the degenerate case is treated degreewise and the isomorphism is degreewise.

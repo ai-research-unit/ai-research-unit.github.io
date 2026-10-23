@@ -106,7 +106,7 @@ $$
 **Theorem.** $\mathcal{A}(\mathcal{H})$ is a unital simple C*-algebra. If $\mathcal{H}$ is separable and infinite-dimensional, then
 
 $$
-\mathcal{A}(\mathcal{H})\cong M_{2^{\infty}}(\mathbb{C})=\bigotimes_{k=1}^{\infty}M_2(\mathbb{C}),
+\boxed{\;\mathcal{A}(\mathcal{H})\cong M_{2^{\infty}}(\mathbb{C})=\bigotimes_{k=1}^{\infty}M_2(\mathbb{C})\;},
 $$
 
 the infinite tensor product of the $2\times2$ complex matrix algebras, called the uniformly hyperfinite (UHF) algebra of type $2^{\infty}$.
@@ -136,7 +136,7 @@ An orthogonal transformation of the underlying real Hilbert space induces an aut
 **Theorem (Shale–Stinespring).** Let $T$ be a real orthogonal transformation of $\mathcal{H}$. The automorphism $\alpha_T$ of the CAR algebra is **implementable** in the Fock representation — that is, there is a unitary $U_T$ on $\mathcal{F}$ with $\alpha_T(x)=U_TxU_T^{*}$ for all $x$ — if and only if
 
 $$
-T-\mathrm{id} \ \text{ is Hilbert–Schmidt}.
+\boxed{\;T-\mathrm{id} \ \text{ is Hilbert–Schmidt}\;}.
 $$
 
 When this holds, $U_T$ is determined up to scalar of modulus one, and the assignment $T\mapsto U_T$ is a projective representation of the group of implementable transformations.
@@ -154,7 +154,7 @@ The Clifford group and the Pin and Spin groups have infinite-dimensional analogu
 **Theorem (over $\mathbb{R}$).** There are exact sequences
 
 $$
-1\to\{\pm1\}\to\mathrm{Pin}(\mathcal{H})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } O_1(\mathcal{H}_{\mathbb{R}})\to1, \qquad 1\to\{\pm1\}\to\mathrm{Spin}(\mathcal{H})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } SO_1(\mathcal{H}_{\mathbb{R}})\to1,
+\boxed{\;1\to\{\pm1\}\to\mathrm{Pin}(\mathcal{H})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } O_1(\mathcal{H}_{\mathbb{R}})\to1, \qquad 1\to\{\pm1\}\to\mathrm{Spin}(\mathcal{H})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } SO_1(\mathcal{H}_{\mathbb{R}})\to1\;},
 $$
 
 where $O_1(\mathcal{H}_{\mathbb{R}})$ is the union of the finite-dimensional orthogonal groups $O(V)$ over the finite-dimensional subspaces $V\subseteq\mathcal{H}_{\mathbb{R}}$ — the subgroup of the isometries of $\mathcal{H}_{\mathbb{R}}$ fixing some finite-codimensional subspace pointwise — and $SO_1$ is its special part.

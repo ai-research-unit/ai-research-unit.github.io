@@ -49,7 +49,7 @@ $$
 $$
 and when $d\varphi_*\mu/d\mu\equiv 1$, that is when $\mu$ is the invariant measure with unit Jacobian normalisation, $L_\varphi$ is the transpose of $U_\varphi$ with respect to $\mu$:
 $$
-\int (L_\varphi f)\,g\,d\mu=\int f\,(U_\varphi g)\,d\mu .
+\boxed{\;\int (L_\varphi f)\,g\,d\mu=\int f\,(U_\varphi g)\,d\mu\;} .
 $$
 
 *Proof.* Change the variable $x=\varphi(y)$ in $\int f(y)g(\varphi(y))\,d\mu(y)$ and use the definition of the pushforward; the local degree is the image counting, and the Radon–Nikodym factor is the discrepancy between $\mu$ and $\varphi_*\mu$. When $\mu$ is invariant with unit Jacobian, the two agree and the identity is the transpose relation. This is the duality of *The Transfer Operator* specialised to the limit system, with the **adjoint** of the transfer operator treated in *The Adjoint of the Transfer Operator of the Limit Dynamical System* and *The Adjoint of the Koopman Operator*.
@@ -84,7 +84,7 @@ where $\Delta_w$ is the Jacobian of the branch composition along $w$, the sum be
 
 **Theorem (dimension is the root of the pressure).** If the limit map is conformal with the inverse branches of the ratios $r_x$ and the system satisfies the open set condition, then the Hausdorff dimension of the limit space is the unique root $s$ of
 $$
-P(-s\log|\varphi'|)=0,\qquad\text{equivalently}\qquad \sum_{x\in X}r_x^{s}=1,
+\boxed{\;P(-s\log|\varphi'|)=0,\qquad\text{equivalently}\qquad \sum_{x\in X}r_x^{s}=1\;},
 $$
 and the equilibrium state of the potential $-s\log|\varphi'|$ is the self-similar measure of maximal dimension of *The Self-Similar Measure and the Invariant Measure*.
 
@@ -104,7 +104,7 @@ so $L_\varphi U_\varphi=d\,U_\varphi\ \cdot$ the identity of the fibres, the loc
 
 **Theorem (the spectral reading of the mixing).** The limit dynamical system is ergodic with respect to the invariant measure $\mu$ exactly when the eigenvalue $1$ of $L_\varphi$ on the continuous functions is simple, and it is mixing exactly when the rest of the spectrum of $L_\varphi$ on the H\"older functions is contained in a disc of radius $<1$, in which case the correlations
 $$
-C_n(f,g)=\int f\circ\varphi^n\,g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int g\,d\mu\Bigr)
+\boxed{\;C_n(f,g)=\int f\circ\varphi^n\,g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int g\,d\mu\Bigr)\;}
 $$
 decay exponentially, $|C_n(f,g)|\le C\theta^n$, and the central limit theorem holds for the Birkhoff sums.
 

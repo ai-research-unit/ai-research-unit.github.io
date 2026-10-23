@@ -40,7 +40,9 @@ written also $J=\operatorname{Res}_{\mathbb{C}/\mathbb{R}}(i\cdot)$.
 
 **Theorem (the criterion for $\mathbb{C}$-linearity).** Let $T:V\to W$ be a map of complex vector spaces. Then $T$ is $\mathbb{C}$-linear if and only if $T$ is $\mathbb{R}$-linear on the realifications and commutes with the complex structures,
 $$
-T J_V = J_W T .
+\boxed{\;
+T J_V = J_W T
+\;}.
 $$
 
 *Proof.* If $T$ is $\mathbb{C}$-linear then it is $\mathbb{R}$-linear and $T(iv)=iT(v)$, which is the displayed identity. Conversely if $T$ is $\mathbb{R}$-linear and commutes with $J$, then $T\bigl((a+ib)v\bigr)=T(av+bJ_Vv)=aT(v)+bJ_WT(v)=(a+ib)T(v)$, so $T$ is $\mathbb{C}$-linear.
@@ -56,7 +58,9 @@ $$
 
 **Corollary (the maps that appear in the passage).** The realifications bring in the conjugate-linear maps, which are no part of the complex-linear structure: the $\mathbb{R}$-linear endomorphisms of $V_{\mathbb{R}}$ split as
 $$
-\operatorname{End}_{\mathbb{R}}(V_{\mathbb{R}})=\operatorname{End}_{\mathbb{C}}(V)\oplus \operatorname{Ant}_{\mathbb{C}}(V),
+\boxed{\;
+\operatorname{End}_{\mathbb{R}}(V_{\mathbb{R}})=\operatorname{End}_{\mathbb{C}}(V)\oplus \operatorname{Ant}_{\mathbb{C}}(V)
+\;},
 $$
 the commuting and the anticommuting endomorphisms, of real dimensions $2n^2$ and $2n^2$ and of complex dimensions $n^2$ and $n^2$.
 
@@ -185,7 +189,9 @@ of real dimension three, whose two non-unit generators are orthogonal, of square
 **The Galois-twisted automorphisms.** Every $\mathbb{R}$-linear automorphism of $\mathbb{B}$ restricts on the centre to an automorphism of $\mathbb{C}$ read over $\mathbb{R}$, and there is an exact sequence
 
 $$
-1\longrightarrow\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\longrightarrow\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})\xrightarrow{\ \rho\ }\{\mathrm{id},\kappa\}\cong\mathbb{Z}/2,
+\boxed{\;
+1\longrightarrow\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\longrightarrow\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})\xrightarrow{\ \rho\ }\{\mathrm{id},\kappa\}\cong\mathbb{Z}/2
+\;},
 $$
 
 $\kappa(\lambda)=\bar\lambda$ being the Galois conjugation. The real automorphism group is therefore twice the complex one, the extra coset being conjugate-linear: it is the structure that fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, represented by the coefficient conjugation $\bar{\cdot}$. The derivations do not grow, $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ agreeing with $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the reason is the centrality of $i$. The coset is the descent of *Real Forms and the Descent of an Algebra*.

@@ -16,7 +16,7 @@ The article uses no analysis and no geometry: the derived category is the derive
 **Proposition (identification with the groupoid).** The category $\mathrm{Sh}_G(X)$ of equivariant sheaves is the category of sheaves on the action groupoid $X/\!/G$, and the equivariant derived category is $D^b_G(X)\cong D^b(X/\!/G)$; when the action is free and properly discontinuous the descent of *Equivariant Sheaves and Descent* is an equivalence of abelian categories and induces an equivalence of derived categories,
 
 $$
-D^b_G(X)\simeq D^b(X/G).
+\boxed{\;D^b_G(X)\simeq D^b(X/G)\;}.
 $$
 
 *Proof.* The identification of the abelian categories is that of *Equivariant Sheaves and Descent*; an equivalence of abelian categories induces an equivalence of their derived categories because it is exact and preserves injectives and acyclic resolutions. The descent equivalence is the theorem of *Equivariant Sheaves and Descent* for a free properly discontinuous action.
@@ -38,7 +38,7 @@ $$
 each with the equivariant structure under which $\varphi_h$ permutes the summands or the factors; on the derived categories the forgetful functor of the equivariant derived category has the derived adjoints
 
 $$
-\operatorname{Ind}\ \dashv\ \operatorname{For}\ \dashv\ \operatorname{Coind},\qquad \operatorname{Ind},\operatorname{Coind}:D^b(X)\to D^b_G(X),
+\boxed{\;\operatorname{Ind}\ \dashv\ \operatorname{For}\ \dashv\ \operatorname{Coind},\qquad \operatorname{Ind},\operatorname{Coind}:D^b(X)\to D^b_G(X)\;},
 $$
 
 and when $G$ is finite, $\operatorname{Ind}$ and $\operatorname{Coind}$ are exact and the derived adjoints are the adjoints themselves.

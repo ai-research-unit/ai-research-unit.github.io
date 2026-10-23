@@ -71,8 +71,7 @@ so both $q_1$ and $q_2$ lie in the fixed subspace $\mathbb{R}_{\mathbb{R}}$; ind
 
 **The anti-fixed subspace is empty.** An element is anti-fixed exactly when $\operatorname{id}(q) = -q$, i.e. $q = -q$, i.e. $2q = 0$, i.e. $q = 0$. The anti-fixed subspace is therefore the zero subspace $\{0\}$, and it is not a subspace of positive dimension:
 
-$$
-\{a \in \mathbb{R} : \operatorname{id}(a) = -a\} = \{0\}.
+$$ \boxed{\;\{a \in \mathbb{R} : \operatorname{id}(a) = -a\} = \{0\}\;}.
 $$
 
 This is the concrete form of the absence of the imaginary direction: $\mathbb{C}$ has the imaginary axis $i\mathbb{R}_{\mathbb{C}}$ as its anti-fixed subspace, and $\mathbb{R}$ has only $0$.
@@ -93,8 +92,7 @@ The result is the trivial decomposition $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \o
 
 **The Cartesian decomposition.** The decomposition of an element into a fixed part plus an anti-fixed part, $\tfrac{1}{2}(q+\operatorname{id}q) + \tfrac{1}{2}(q-\operatorname{id}q)$, reduces on the worked elements to
 
-$$
-q_1 = -\tfrac{3}{4} + 0, \qquad q_2 = \tfrac{7}{2} + 0,
+$$ \boxed{\;q_1 = -\tfrac{3}{4} + 0, \qquad q_2 = \tfrac{7}{2} + 0\;},
 $$
 
 with both anti-fixed parts zero.
@@ -119,8 +117,7 @@ No infinitesimal occurs: the multiples of any positive element eventually exceed
 
 **Completeness.** Let $S = \{q_1, 0, q_2\} = \{-\tfrac{3}{4}, 0, \tfrac{7}{2}\}$. It is non-empty and bounded, and
 
-$$
-\sup S = \tfrac{7}{2} = q_2, \qquad \inf S = -\tfrac{3}{4} = q_1,
+$$ \boxed{\;\sup S = \tfrac{7}{2} = q_2, \qquad \inf S = -\tfrac{3}{4} = q_1\;},
 $$
 
 both attained. A bounded set whose supremum is not attained is $T = \{\tfrac{n}{n+1} : n \in \mathbb{N}\}$, for which $\sup T = 1$ and $1 \notin T$; the existence of the supremum is the completeness axiom, and it is the property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$.

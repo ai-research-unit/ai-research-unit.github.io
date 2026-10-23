@@ -60,8 +60,8 @@ points of $\Gamma$ at which the surface is smooth and the limits exist.
 $\Gamma$ the one-sided extensions exist at every point of $\Gamma$, and
 
 $$
-\mathcal{C}^+h = \tfrac12 h + \mathcal{S}h , \qquad
-\mathcal{C}^-h = -\tfrac12 h + \mathcal{S}h ,
+\boxed{\;\mathcal{C}^+h = \tfrac12 h + \mathcal{S}h , \qquad
+\mathcal{C}^-h = -\tfrac12 h + \mathcal{S}h\;} ,
 $$
 
 where
@@ -100,7 +100,7 @@ formula.
 Cauchy operator satisfies
 
 $$
-\mathcal{S}^2 = I
+\boxed{\;\mathcal{S}^2 = I\;}
 $$
 
 on the space of densities for which it is defined as a bounded operator.
@@ -147,7 +147,7 @@ $$
 regular boundary,
 
 $$
-D\,\mathcal{T}_\Omega = I , \qquad \mathcal{T}_\Omega\,D = I - \mathcal{C}_{\partial\Omega}
+\boxed{\;D\,\mathcal{T}_\Omega = I , \qquad \mathcal{T}_\Omega\,D = I - \mathcal{C}_{\partial\Omega}\;}
 $$
 
 on the classes for which the operators are defined; the second identity is the operator form of the

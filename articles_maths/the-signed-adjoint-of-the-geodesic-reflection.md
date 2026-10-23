@@ -24,7 +24,7 @@ the geodesic reflection of *Geodesic Reflection as an Operator*; in the Clifford
 **Theorem.** The geodesic reflection preserves the quadratic form, $\mathfrak{Q}(\rho_a x) = \mathfrak{Q}(x)$, so it is an isometry of the form; it is an involution, $\rho_a^2 = \mathrm{id}$; consequently it is **self-adjoint** and **unitary** with respect to the pairing of the form,
 
 $$
-\rho_a^{\dagger} = \rho_a^{-1} = \rho_a , \qquad \rho_a^{\dagger}\rho_a = \mathrm{id} ,
+\boxed{\;\rho_a^{\dagger} = \rho_a^{-1} = \rho_a , \qquad \rho_a^{\dagger}\rho_a = \mathrm{id}\;} ,
 $$
 
 and the self-adjointness is the statement that a reflection is its own adjoint, which holds for every reflection of a nondegenerate form.
@@ -70,13 +70,13 @@ the geodesic reflection is therefore self-adjoint for the signed structure it de
 **Theorem.** For an arbitrary grade involution $\alpha$ the adjoint of the signed inner sandwich of the reflection is
 
 $$
-\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\,\alpha(r)} ,
+\boxed{\;\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\,\alpha(r)}\;} ,
 $$
 
 the signed sandwich by the inverse image of the parameter; the sandwich is always **unitary**, and it is **self-adjoint** if and only if $\alpha(r)$ is an involution,
 
 $$
-\alpha(r)^2 = \mathrm{id} .
+\boxed{\;\alpha(r)^2 = \mathrm{id}\;} .
 $$
 
 **Proof.** The adjoint formula of the signed adjoint sandwich with the parameters $r$ and $r^{-1}$ gives $\Theta^{\alpha}_{\alpha(r^{-1}),\alpha(r)} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$; the unitarity parameter is $\alpha(r^{-1})\alpha(r) = \alpha(r)^{-1}\alpha(r) = 1$, a central element, so the sandwich is unitary; the self-adjointness requires $\alpha(r^{-1}) = \alpha(r)$, that is, $\alpha(r)^{-1} = \alpha(r)$, which is $\alpha(r)^2 = \mathrm{id}$. The statement is in *The Signed Adjoint of the Reflection on a Linear Space*.

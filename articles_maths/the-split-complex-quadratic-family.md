@@ -45,7 +45,7 @@ is an isomorphism of real vector spaces and of rings, with the product of $\math
 **Theorem (the recursion splits).** For $c = \gamma + j\gamma'$ with $c_+ = \gamma+\gamma'$ and $c_- = \gamma-\gamma'$, the iterate of $f_c$ is given componentwise:
 
 $$
-\varphi\bigl(f_c(z)\bigr) = \bigl(z_+^2 + c_+,\ z_-^2 + c_-\bigr) .
+\boxed{\; \varphi\bigl(f_c(z)\bigr) = \bigl(z_+^2 + c_+,\ z_-^2 + c_-\bigr) \;}.
 $$
 
 Consequently, with $g_+(u) = u^2+c_+$ and $g_-(v) = v^2+c_-$ the two real quadratic maps of the pair,
@@ -101,7 +101,7 @@ $$
 **Theorem.** The connectedness locus is the square
 
 $$
-M_{\mathbb{D}} = \varphi^{-1}\Bigl([-2,\tfrac14] \times [-2,\tfrac14]\Bigr) = \left\{c = \gamma+j\gamma' : -2 \leq \gamma+\gamma' \leq \tfrac14, \ -2 \leq \gamma-\gamma' \leq \tfrac14 \right\} ,
+\boxed{\; M_{\mathbb{D}} = \varphi^{-1}\Bigl([-2,\tfrac14] \times [-2,\tfrac14]\Bigr) = \left\{c = \gamma+j\gamma' : -2 \leq \gamma+\gamma' \leq \tfrac14, \ -2 \leq \gamma-\gamma' \leq \tfrac14 \right\} \;},
 $$
 
 the product of two real Mandelbrot intervals, with vertices $\frac14$, $-\frac78 \pm j\frac98$ and $-2$ in the coordinates $c = \gamma+j\gamma'$, centre $-\frac78$, diagonal $\frac94$ along the real axis and side length $\frac{9\sqrt2}{8}$.
@@ -123,7 +123,7 @@ and the region is the square with these vertices; the centre is the average of t
 **Theorem (the norm along the critical orbit).** Along the critical orbit the norm is the product of the two real orbits,
 
 $$
-\langle f_c^n(0)\rangle_{*} = g_+^n(0)\, g_-^n(0) ,
+\boxed{\; \langle f_c^n(0)\rangle_{*} = g_+^n(0)\, g_-^n(0) \;},
 $$
 
 so $\langle\cdot\rangle_{*}$ vanishes at the $n$-th step exactly when one of the two real orbits passes through $0$. In particular $\langle\cdot\rangle_{*}$ is not a Lyapunov function and the vanishing of $\langle\cdot\rangle_{*}$ at some step does not decide the boundedness of the orbit.

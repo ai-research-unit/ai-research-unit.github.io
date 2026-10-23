@@ -24,7 +24,7 @@ $$
 **Proposition (the regular matrix is the Cayley matrix).** In the basis $1, j$,
 
 $$
-\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}, \qquad Q = q+j q'.
+\boxed{\;\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}, \qquad Q = q+j q'\;}.
 $$
 
 Each entry is a single coefficient of $Q$, carrying no sign other than those of the coefficients themselves, because in this basis each product of basis elements is one basis element.
@@ -56,7 +56,7 @@ The first column is the coordinate column of $Q$, the second that of $Qj = 3+2j$
 **Theorem (multiplicativity).** For all $Q, B \in \mathbb{D}$,
 
 $$
-\mathsf{M}_2(Q)\,\mathsf{M}_2(B) = \mathsf{M}_2(QB).
+\boxed{\;\mathsf{M}_2(Q)\,\mathsf{M}_2(B) = \mathsf{M}_2(QB)\;}.
 $$
 
 Hence $\mathsf{M}_2$ is an algebra homomorphism, and $\mathbb{D}$ is a left $\mathbb{D}$-module under it.
@@ -95,7 +95,7 @@ $$
 In the basis $1, j$ its matrix has columns $R_{Q}(1) = Q$ and $R_{Q}(j) = jQ = Qj$; since the algebra is commutative, $jQ = Qj$, so the two columns are again $(q,q')^{\mathsf{T}}$ and $(q',q)^{\mathsf{T}}$:
 
 $$
-\mathsf{M}_2^{R}(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} = \mathsf{M}_2(Q).
+\boxed{\;\mathsf{M}_2^{R}(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix} = \mathsf{M}_2(Q)\;}.
 $$
 
 **Proposition.** The left and right regular representations of $\mathbb{D}$ coincide: $\mathsf{M}_2 = \mathsf{M}_2^{R}$.

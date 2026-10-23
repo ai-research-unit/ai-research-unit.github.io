@@ -148,7 +148,9 @@ where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-va
 **Theorem (divergence theorem).** Let $F^{\mathrm{fn}}$ be a continuously differentiable split-biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
 
 $$
-\int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS,
+\boxed{\;
+\int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS
+\;},
 $$
 
 where $\tilde u_{\mathrm n} = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
@@ -184,7 +186,9 @@ where $\tilde u_{\mathrm n}^{\natural} = n_0 e_t - \sum_{k=1}^{3} n_k \vec e_k$ 
 **Theorem (first Green's formula).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial/\partial\tilde u_{\mathrm n} = \sum_\mu n_\mu \partial/\partial q_\mu$ be the scalar normal derivative. Then
 
 $$
-\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}})\, ((\partial/\partial q_\mu G^{\mathrm{fn}}))^{\natural} + F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} \, dS.
+\boxed{\;
+\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}})\, ((\partial/\partial q_\mu G^{\mathrm{fn}}))^{\natural} + F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} \, dS
+\;}.
 $$
 
 **Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial/\partial q_\mu\,(F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial/\partial q_\mu F^{\mathrm{fn}})\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural} + F^{\mathrm{fn}}\,(\partial^2/\partial q_\mu^2 G^{\mathrm{fn}})^{\natural}$, the second term because $\partial/\partial q_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial^2/\partial q_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial/\partial q_\mu$ by $\partial/\partial\tilde u_{\mathrm n}$.
@@ -194,7 +198,9 @@ $$
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} - (\Box F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde u_{\mathrm n} F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dS.
+\boxed{\;
+\int_\Omega \left[ F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} - (\Box F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F^{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G^{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde u_{\mathrm n} F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dS
+\;}.
 $$
 
 **Proof.** For each $\mu$ the product rule gives

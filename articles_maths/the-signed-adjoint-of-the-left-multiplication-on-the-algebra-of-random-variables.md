@@ -32,7 +32,7 @@ $$
 
 **Theorem (the closed form).** For every $a\in\mathcal{A}$,
 $$
-\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha\,L_{a^*},\qquad \delta=\sigma\alpha ,
+\boxed{\;\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha\,L_{a^*},\qquad \delta=\sigma\alpha\;} ,
 $$
 so the adjoint of a signed left multiplication is a signed left multiplication, of the twisted parameter.
 
@@ -50,7 +50,7 @@ so the signed adjoint is an involution on the class of the operators.
 
 **Theorem (products).** The signed left multiplications multiply by
 $$
-T^\alpha_a\,T^\alpha_b=L_{a\alpha(b)},
+\boxed{\;T^\alpha_a\,T^\alpha_b=L_{a\alpha(b)}\;},
 $$
 an **unsigned** left multiplication, and the adjoint reverses the product, $(T^\alpha_aT^\alpha_b)^*=T^\alpha_{\delta(b)}T^\alpha_{\delta(a)}$; the square is
 $$
@@ -64,7 +64,7 @@ which is the identity exactly when $a\,\alpha(a)=1$.
 
 **Corollary (self-adjointness, isometry and unitarity).** For $a\in\mathcal{A}$,
 $$
-T^\alpha_a\ \text{is self-adjoint}\iff a=\delta(a)\iff\alpha(a)=a^* ,
+\boxed{\;T^\alpha_a\ \text{is self-adjoint}\iff a=\delta(a)\iff\alpha(a)=a^*\;} ,
 $$
 and
 $$

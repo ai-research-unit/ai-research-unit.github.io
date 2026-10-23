@@ -70,7 +70,7 @@ With the left Haar measure, this is the standard choice: for abelian $G$ it redu
 **Proposition ($L^1$ bound and Young's inequality).** Let $f \in L^{n}(G)$ and $g \in L^{m}(G)$ with $1 \leq p, q, r \leq \infty$ and $1/n + 1/m = 1 + 1/r$. Then $f*g$ is defined almost everywhere, belongs to $L^r(G)$, and
 
 $$
-\|f*g\|_r \leq \|f\|_p\,\|g\|_q .
+\boxed{\;\|f*g\|_r \leq \|f\|_p\,\|g\|_q\;} .
 $$
 
 In particular, taking $p = q = r = 1$, $L^1(G)$ is closed under convolution and $\|f*g\|_1 \leq \|f\|_1\|g\|_1$. The inequality holds for all locally compact $G$ when $p = q = r = 1$, and for unimodular $G$ in general.
@@ -92,7 +92,7 @@ The general case is the Riesz–Thorin interpolation of the three elementary cas
 **Theorem (adjoint of a convolution).** For $f, g \in L^1(G)$ the adjoints of the operators of convolution are
 
 $$
-(f*g)^*(x) = (g^* * f^*)(x), \qquad (f^*)^* = f ,
+\boxed{\;(f*g)^*(x) = (g^* * f^*)(x), \qquad (f^*)^* = f\;} ,
 $$
 
 and the involution $f \mapsto f^*$ is an isometric anti-automorphism of the Banach algebra $L^1(G)$: $(f*g)^* = g^* * f^*$, $(\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*$ and $\|f^*\|_1 = \|f\|_1$.
@@ -162,7 +162,7 @@ A **$*$-representation** of $L^1(G)$ on a Hilbert space $H$ is a homomorphism $\
 **Theorem (the correspondence).** There is a bijection between nondegenerate $*$-representations $\pi$ of $L^1(G)$ on a Hilbert space $H$ and continuous unitary representations $U$ of $G$ on $H$, given by
 
 $$
-\pi(f) = \int_G f(g)\,U(g)\,dg ,
+\boxed{\;\pi(f) = \int_G f(g)\,U(g)\,dg\;} ,
 $$
 
 the integral converging in the strong operator topology. The bijection respects direct sums, subrepresentations, irreducibility and unitary equivalence, and it satisfies $\|\pi(f)\| \leq \|f\|_1$ and $\pi(L_x f) = U(x)\pi(f)$, $\pi(R_x f) = \pi(f)U(x)^{-1}$.

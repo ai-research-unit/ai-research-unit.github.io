@@ -120,9 +120,9 @@ For a homeomorphism the same statements hold with the full orbit $\{T^nx:n \in \
 **Definition.** Let $X$ be compact and $T:X\to X$ continuous. For a finite open cover $\mathcal U$ of $X$ let $N(\mathcal U)$ be the least cardinality of a subcover, put $H(\mathcal U)=\log N(\mathcal U)$, and for $\mathcal U,\mathcal V$ let $\mathcal U\vee\mathcal V=\{\Xi\cap V:\Xi \in\mathcal U,\ V \in\mathcal V\}$; define $\mathcal U^n=\bigvee_{i=0}^{n-1}T^{-i}\mathcal U$. Then
 
 $$
-h(T,\mathcal U)=\lim_{n\to\infty}\frac1nH(\mathcal U^n)=\inf_{n\ge1}\frac1nH(\mathcal U^n),
+\boxed{\;h(T,\mathcal U)=\lim_{n\to\infty}\frac1nH(\mathcal U^n)=\inf_{n\ge1}\frac1nH(\mathcal U^n),
 \qquad
-h_{\mathrm{top}}(T)=\sup_{\mathcal U}h(T,\mathcal U),
+h_{\mathrm{top}}(T)=\sup_{\mathcal U}h(T,\mathcal U)\;},
 $$
 
 the **topological entropy** of $T$; the limit exists because $H(\mathcal U^{m+n})\le H(\mathcal U^m)+H(\mathcal U^n)$, so the sequence is subadditive.
@@ -130,7 +130,7 @@ the **topological entropy** of $T$; the limit exists because $H(\mathcal U^{m+n}
 **Theorem (Bowen's definition).** Let $X$ be a compact metric space and $T:X\to X$ continuous. For $n \in \mathbb{N}$ and $\epsilon>0$ call a set $E \subseteq X$ **$(n,\epsilon)$-separated** if for all distinct $x,y \in E$ there is $0\le k<n$ with $d(T^kx,T^ky)>\epsilon$, and let $s_n(\epsilon)$ be the largest cardinality of such a set; call $F$ **$(n,\epsilon)$-spanning** if the balls $B_{n,\epsilon}(x)=\{y:\max_{0\le k<n}d(T^kx,T^ky)<\epsilon\}$ with $x \in F$ cover $X$, and let $r_n(\epsilon)$ be the least cardinality of such a set. Then
 
 $$
-h_{\mathrm{top}}(T)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log s_n(\epsilon)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log r_n(\epsilon),
+\boxed{\;h_{\mathrm{top}}(T)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log s_n(\epsilon)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log r_n(\epsilon)\;},
 $$
 
 and the two limits agree with the definition by covers.
@@ -160,7 +160,7 @@ and the two limits agree with the definition by covers.
 **Theorem (variational principle).** Let $X$ be a compact metric space and $T:X\to X$ continuous. Then
 
 $$
-h_{\mathrm{top}}(T)=\sup_{\mu}h_\mu(T),
+\boxed{\;h_{\mathrm{top}}(T)=\sup_{\mu}h_\mu(T)\;},
 $$
 
 the supremum being over the $T$-invariant Borel probability measures and $h_\mu$ the measure-theoretic entropy; the supremum is attained for every expansive system. The measure-theoretic entropy, the ergodic decomposition and the existence of measures of maximal entropy are the subject of *Ergodic Theory*, and the variational principle is quoted there from the standard theory.

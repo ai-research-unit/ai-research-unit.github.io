@@ -27,7 +27,7 @@ $$
 $$
 which satisfy
 $$
-(\pi^{1,0})^2 = \pi^{1,0}, \qquad (\pi^{0,1})^2 = \pi^{0,1}, \qquad \pi^{1,0}\pi^{0,1} = \pi^{0,1}\pi^{1,0} = 0, \qquad \pi^{1,0} + \pi^{0,1} = \mathrm{id} .
+\boxed{\;(\pi^{1,0})^2 = \pi^{1,0}, \qquad (\pi^{0,1})^2 = \pi^{0,1}, \qquad \pi^{1,0}\pi^{0,1} = \pi^{0,1}\pi^{1,0} = 0, \qquad \pi^{1,0} + \pi^{0,1} = \mathrm{id}\;} .
 $$
 They are conjugate, $\overline{\pi^{1,0}} = \pi^{0,1}$, and the complexified tangent space is their direct sum.
 
@@ -49,13 +49,13 @@ They are conjugate, $\overline{\pi^{1,0}} = \pi^{0,1}$, and the complexified tan
 
 **Definition.** The **Nijenhuis operator** of an almost complex structure $J$ is the tensor
 $$
-N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y] \qquad (X, Y \in \mathfrak{X}(M)),
+\boxed{\;N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y] \qquad (X, Y \in \mathfrak{X}(M))\;},
 $$
 with no scalar factor.
 
 **Proposition (tensoriality and elementary symmetries).** $N_J$ is a tensor of type $(1,2)$, that is it is $C^\infty(M)$-bilinear, it is antisymmetric, $N_J(Y,X) = -N_J(X,Y)$, and it satisfies
 $$
-N_J(X, JX) = 0, \qquad N_J(JX, JY) = N_J(X, Y) .
+\boxed{\;N_J(X, JX) = 0, \qquad N_J(JX, JY) = N_J(X, Y)\;} .
 $$
 When $J$ is integrable the tensor vanishes.
 

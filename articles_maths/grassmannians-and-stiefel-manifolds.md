@@ -120,7 +120,7 @@ and they are closed, since $O(n)$ is compact and the exponential of $\mathrm{SO}
 **Theorem.** The Grassmannian is the homogeneous space
 
 $$
-\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k) \times O(n-k)),
+\boxed{\;\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k) \times O(n-k))\;},
 $$
 
 and, in the oriented case, $SO(n)/(SO(k) \times SO(n-k))$; the action of $O(n)$ is transitive and the stabiliser of $W_0 = \mathbb{R}^k \times \{0\}$ is $O(k) \times O(n-k)$, acting on $W_0$ and on its orthogonal complement.
@@ -166,7 +166,7 @@ the class of the wedge product up to scalar; it is independent of the basis chos
 **Theorem (Plücker embedding).** The map
 
 $$
-\iota : \mathrm{Gr}_k(V) \longrightarrow \mathbb{P}\left(\textstyle\bigwedge^kV\right), \qquad W \longmapsto [w_1 \wedge \cdots \wedge w_k],
+\boxed{\;\iota : \mathrm{Gr}_k(V) \longrightarrow \mathbb{P}\left(\textstyle\bigwedge^kV\right), \qquad W \longmapsto [w_1 \wedge \cdots \wedge w_k]\;},
 $$
 
 is well defined and injective; its image is a closed smooth submanifold, and the map is an embedding. The image is the set of **decomposable** classes, characterised by the **Plücker relations**: for $1 \leq k \leq n$ and indices $i_1, \ldots, i_{k+1}$ and $j_1, \ldots, j_{k-1}$,
@@ -220,7 +220,7 @@ and the cells are the open cells of a CW decomposition whose closures are the Sc
 **Corollary (the Poincaré polynomial).** The cells are indexed by the $k$-element subsets, and the generating function of the cell counts by dimension is the **Gaussian binomial coefficient**
 
 $$
-P_t(\mathrm{Gr}_k(\mathbb{R}^n)) = \sum_{\lambda} t^{|\lambda|} = \binom{n}{k}_t ,
+\boxed{\;P_t(\mathrm{Gr}_k(\mathbb{R}^n)) = \sum_{\lambda} t^{|\lambda|} = \binom{n}{k}_t\;} ,
 $$
 
 so with $\mathbb{F}_2$ coefficients the total dimension of the cohomology is $\binom{n}{k}$, and the mod-$2$ Betti numbers are the numbers of cells of each dimension. The Euler characteristic is the value at $t = -1$,

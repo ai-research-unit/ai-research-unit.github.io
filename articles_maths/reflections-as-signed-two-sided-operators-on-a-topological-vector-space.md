@@ -20,7 +20,7 @@ An element $r$ with $r^{2}$ central (in particular $r^{2} = 1$) is an **involuti
 **Proposition (the correspondence).** Let $\alpha$ be an involutive automorphism of $E$. Then $E^{+}$ is a subalgebra of $E$ containing $1$, the map $x \mapsto (x + \alpha(x))/2$ is a continuous projection onto $E^{+}$ with kernel $E^{-}$ when $2$ is invertible in $\mathbb{K}$, and
 
 $$
-E = E^{+} \oplus E^{-}
+\boxed{\;E = E^{+} \oplus E^{-}\;}
 $$
 
 as a topological direct sum; conversely an algebra grading $E = E_0 \oplus E_1$ with $E_{i}E_{j} \subseteq E_{i+j}$ defines an involutive automorphism, equal to $+1$ on $E_0$ and $-1$ on $E_1$. The two constructions are inverse to one another, so reflections, involutive automorphisms and gradings of $E$ are the same datum.
@@ -36,7 +36,7 @@ as a topological direct sum; conversely an algebra grading $E = E_0 \oplus E_1$ 
 **Proposition (the reflection is fixed by its signed sandwich).** Let $r$ be an involution and let $\alpha_r = \mathrm{Ad}_{r}$ be the involutive automorphism it defines. Then
 
 $$
-\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id} ,
+\boxed{\;\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}\;} ,
 $$
 
 so the signed inner sandwich of a reflection is the identity, and the reflection is fixed and unitary for its own signed sandwich.
@@ -46,7 +46,7 @@ so the signed inner sandwich of a reflection is the identity, and the reflection
 **Proposition (the signed sandwich by a reflection).** For an involution $r$ and an arbitrary grade involution $\alpha$,
 
 $$
-\Theta^{\alpha}_{r, r^{-1}} = \mathrm{Ad}_{r} \circ \alpha = \alpha \circ \mathrm{Ad}_{\alpha(r)} ,
+\boxed{\;\Theta^{\alpha}_{r, r^{-1}} = \mathrm{Ad}_{r} \circ \alpha = \alpha \circ \mathrm{Ad}_{\alpha(r)}\;} ,
 $$
 
 and the inner sandwich $\Phi_{r, r^{-1}} = \mathrm{Ad}_{r}$ is the reflection itself; the signed sandwich is the composite of the reflection with the grade involution, and it reduces to $\mathrm{Ad}_{r}$ when $\alpha = \mathrm{id}$.

@@ -14,7 +14,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 **Proposition (continuity and the norm).** Let $\theta$ be a $\varsigma$-semilinear involution of $X$. Then $\theta$ is continuous if and only if it is bounded, and then
 
 $$
-\lVert\theta\rVert = \sup_{x \neq 0}\frac{\lVert\theta x\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert\theta x\rVert
+\boxed{\;\lVert\theta\rVert = \sup_{x \neq 0}\frac{\lVert\theta x\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert\theta x\rVert\;}
 $$
 
 is finite and satisfies $\lVert\theta\rVert \geq 1$ and $\lVert\theta^{-1}\rVert = \lVert\theta\rVert$; a continuous involution is a topological isomorphism of $X$ onto itself.
@@ -40,7 +40,7 @@ defines a norm on $X$, equivalent to $\lVert\cdot\rVert$, for which $\theta$ is 
 **Proposition (closedness and the inherited norm).** The fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and the direct sum
 
 $$
-X = X^{\theta} \oplus X^{-}
+\boxed{\;X = X^{\theta} \oplus X^{-}\;}
 $$
 
 is topological, the sum being equivalent to the direct sum of the two restricted norms.
@@ -64,7 +64,7 @@ and the two inequalities are equalities on the summands; the direct sum norm $\l
 **Theorem (the transpose has the same norm).** For a continuous involution $\theta$,
 
 $$
-\lVert\theta'\rVert = \lVert\theta\rVert ,
+\boxed{\;\lVert\theta'\rVert = \lVert\theta\rVert\;} ,
 $$
 
 and $\theta'$ is isometric exactly when $\theta$ is isometric.

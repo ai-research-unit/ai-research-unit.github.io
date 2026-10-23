@@ -22,7 +22,7 @@ Throughout, $R = R^0\oplus R^1$ is a graded ring, unital, with grade involution 
 **Proposition (the parity operator intertwines the two grade involutions).** For $r \in R$ and $m \in M$, the compatibility of the action with the gradings is the relation
 
 $$
-\pi(r\cdot m) = \alpha(r)\cdot\pi(m) ,
+\boxed{\;\pi(r\cdot m) = \alpha(r)\cdot\pi(m)\;} ,
 $$
 
 and for homogeneous $r$ of degree $i$ this reads $\pi(r\cdot m) = (-1)^i\,r\cdot\pi(m)$. Equivalently, the action $R\times M\to M$ is a morphism of graded modules, and the parity operator is **$\alpha$-semilinear**: it is additive, involutive, and $\pi(r\cdot m) = \alpha(r)\pi(m)$.
@@ -38,7 +38,7 @@ and for homogeneous $r$ of degree $i$ this reads $\pi(r\cdot m) = (-1)^i\,r\cdot
 **Definition.** The **graded action** of $R$ on $M$ is the action $r\cdot m$ with $R^iM^j\subseteq M^{i+j}$; the **twisted action** is
 
 $$
-r\star m = r\cdot\pi(m) ,
+\boxed{\;r\star m = r\cdot\pi(m)\;} ,
 $$
 
 the module-level signed left multiplication. The **sign rule** is the requirement that for homogeneous $r$ the twisted action of $r$ carry the parity operator to multiplication by $(-1)^{|r|}$, that is $\pi(r\star m) = (-1)^{|r|}\,r\star m$.

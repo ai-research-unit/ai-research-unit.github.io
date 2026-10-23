@@ -35,7 +35,7 @@ $$
 **Proposition.** $M^{*}$ is a left $A$-module under the action above, and the **evaluation pairing**
 
 $$
-\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \varphi,x\rangle = \varphi(x) ,
+\boxed{\;\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \varphi,x\rangle = \varphi(x)\;} ,
 $$
 
 satisfies $\langle a\cdot\varphi,x\rangle = \langle\varphi,x\rangle\sigma(a)$ and $\langle\varphi,a\cdot x\rangle = a\langle\varphi,x\rangle$; it is $\sigma$-sesquilinear in this sense, and it is non-degenerate when $M$ is free of finite rank.
@@ -51,7 +51,7 @@ satisfies $\langle a\cdot\varphi,x\rangle = \langle\varphi,x\rangle\sigma(a)$ an
 **Definition.** For the free left $A$-module $M = A^{n}$ with its standard basis, the endomorphism ring $\operatorname{End}_A(A^{n})$ is identified with the matrix ring $M_n(A)$, and the **induced map** is
 
 $$
-A^{*} = \sigma(A)^{\mathsf{T}}, \qquad (A^{*})_{ij} = \sigma(A_{ji}) .
+\boxed{\;A^{*} = \sigma(A)^{\mathsf{T}}, \qquad (A^{*})_{ij} = \sigma(A_{ji})\;} .
 $$
 
 **Proposition.** The assignment $A \mapsto A^{*}$ is additive and of order two. It is an involution of the ring $M_n(A)$ in the sense of *Involutive Rings* — an anti-automorphism of order two — exactly when $A$ is commutative, and in that case the fixed matrices are the **$\sigma$-self-adjoint** ones and the **unitary** matrices are those with $A^{*}A = AA^{*} = I$.

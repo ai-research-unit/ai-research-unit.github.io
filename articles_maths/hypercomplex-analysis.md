@@ -24,7 +24,7 @@ For a commutative $A$ the two notions agree, and for $A = \mathbb{C}$ they are t
 **Theorem (rigidity over $\mathbb{H}$).** Let $\Omega \subseteq \mathbb{H}$ be a domain. A $C^1$ function $f : \Omega \to \mathbb{H}$ that is left $\mathbb{H}$-differentiable at every point of $\Omega$ is of the form
 
 $$
-f(x) = ax + b, \qquad a, b \in \mathbb{H}.
+\boxed{\;f(x) = ax + b, \qquad a, b \in \mathbb{H}\;}.
 $$
 
 *Proof.* Writing the differential as left multiplication by $\frac{df}{dx}$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.
@@ -114,7 +114,7 @@ $$
 Then
 
 $$
-D \bar D = \bar D D = \Delta \cdot 1,
+\boxed{\;D \bar D = \bar D D = \Delta \cdot 1\;},
 $$
 
 where $\Delta = \sum_{\alpha} \partial^2/\partial x_\alpha^2$ is the Laplacian of $\mathbb{R}^m$.
@@ -250,7 +250,7 @@ Both proofs are the honest generalisation of the complex-analytic arguments: the
 **Theorem (Cauchy–Pompeiu formula).** Let $\Omega \subseteq A$ be a bounded domain with smooth boundary $\partial\Omega$, oriented by the outward normal, and let $E$ be a Cauchy kernel for $D$. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,
 
 $$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_\Omega E(x-y)\,(Df)(y)\,dy,
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y) - \int_\Omega E(x-y)\,(Df)(y)\,dy\;},
 $$
 
 where $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ is the **conormal element**, $\nu_\alpha$ the components of the outward unit normal, and $dS$ the surface measure.

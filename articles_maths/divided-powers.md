@@ -113,7 +113,7 @@ $$
 **Theorem.** If $M$ is free with basis $e_1, \ldots, e_d$, then $\Gamma(M)$ is free as an $R$-module with basis the **divided monomials** $\gamma^{(a)}$, for all multi-indices $a$, and the product is
 
 $$
-\gamma^{(a)} \gamma^{(b)} = \binom{a+b}{a} \gamma^{(a+b)}, \qquad \binom{a+b}{a} = \prod_{i=1}^{d} \binom{a_i+b_i}{a_i}.
+\boxed{\;\gamma^{(a)} \gamma^{(b)} = \binom{a+b}{a} \gamma^{(a+b)}, \qquad \binom{a+b}{a} = \prod_{i=1}^{d} \binom{a_i+b_i}{a_i}\;}.
 $$
 
 *Proof.* The formula makes $\Gamma(M)$ a graded commutative algebra, and the divided monomials are independent by construction; the product formula is the product formula of the one-generator case applied in each coordinate. The assertion that this is the free divided power algebra on $M$ is the standard normal-form theorem for divided power algebras (Berthelot–Ogus, §3, or Roby 1965), applied to the free module; we use it as the model of $\Gamma(M)$.
@@ -127,7 +127,7 @@ $$
 **Proposition.** For every $u, v \in M$ and $m, n \geq 0$, the additivity relation holds:
 
 $$
-\gamma_n(u+v) = \sum_{i+j=n} \gamma_i(u)\,\gamma_j(v).
+\boxed{\;\gamma_n(u+v) = \sum_{i+j=n} \gamma_i(u)\,\gamma_j(v)\;}.
 $$
 
 *Proof.* Write $u = \sum_i c_i e_i$, $v = \sum_i d_i e_i$. Then
@@ -168,7 +168,7 @@ The additivity axiom extends from two summands to any finite number.
 **Proposition.** For $u_1, \ldots, u_k \in M$ and $n \geq 0$,
 
 $$
-\gamma_n(u_1 + \cdots + u_k) = \sum_{a_1 + \cdots + a_k = n} \gamma_{a_1}(u_1)\,\gamma_{a_2}(u_2) \cdots \gamma_{a_k}(u_k).
+\boxed{\;\gamma_n(u_1 + \cdots + u_k) = \sum_{a_1 + \cdots + a_k = n} \gamma_{a_1}(u_1)\,\gamma_{a_2}(u_2) \cdots \gamma_{a_k}(u_k)\;}.
 $$
 
 *Proof.* Induction on $k$. For $k = 1$ the statement is trivial and for $k = 2$ it is the additivity axiom. Assume it for $k - 1$ and put $v = u_1 + \cdots + u_{k-1}$. Then by additivity in the form $k = 2$,

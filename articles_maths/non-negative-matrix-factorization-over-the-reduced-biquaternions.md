@@ -30,7 +30,9 @@ unless $mn=0$. The larger cone $\mathcal{C}_{+}^{m\times n}$ is self-dual for th
 
 **Theorem (the product formula).** For $W=W_0+W_1 i+W_2 j+W_3 ij$ and $H=H_0+H_2 j$, the product has the four components
 $$
-WH=(W_0H_0+W_2H_2)+(W_1H_0+W_3H_2)\,i+(W_0H_2+W_2H_0)\,j+(W_1H_2+W_3H_0)\,ij .
+\boxed{\;
+WH=(W_0H_0+W_2H_2)+(W_1H_0+W_3H_2)\,i+(W_0H_2+W_2H_0)\,j+(W_1H_2+W_3H_0)\,ij
+\;}.
 $$
 
 *Proof.* Multiply the two sums termwise using the table $i^{2}=-1$, $j^{2}=+1$, $ji=ij$ and the commutativity of the algebra. The sixteen products reduce, since $H_1=H_3=0$, to the eight displayed, and the component matrices commute with the scalars $i$ and $j$ because they are real.
@@ -86,7 +88,9 @@ Consequently, if $X\notin\mathcal{O}$ then every exact factorization has a basis
 
 **Theorem (the product in the two idempotent components).** Let $W^{\pm}=W_0\pm W_2+i(W_1\pm W_3)$ and let $H^{\pm}=H_0\pm H_2$, so that $W^{\pm}$ are the two complex matrices $\varphi_\pm(W)$ and $H^{\pm}$ are the two real matrices $\varphi_\pm(H)$. Then
 $$
-(WH)^{\pm}=W^{\pm}H^{\pm},
+\boxed{\;
+(WH)^{\pm}=W^{\pm}H^{\pm}
+\;},
 $$
 and the objective satisfies
 $$
@@ -97,7 +101,9 @@ $$
 
 **Theorem (the constraints in the two components).** The structured cone reads, in the two components,
 $$
-H\in\mathcal{O}^{l\times n}\iff H^{+}\ \text{and}\ H^{-}\ \text{are real and}\ H_{pq}^{+}\ge|H_{pq}^{-}|\ \text{for every}\ p,q,
+\boxed{\;
+H\in\mathcal{O}^{l\times n}\iff H^{+}\ \text{and}\ H^{-}\ \text{are real and}\ H_{pq}^{+}\ge|H_{pq}^{-}|\ \text{for every}\ p,q
+\;},
 $$
 and the non-negative cone of the basis reads
 $$

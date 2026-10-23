@@ -14,7 +14,7 @@ Throughout, $A$ is a unital $\mathrm{C}^*$-algebra over $\mathbb{C}$ with involu
 **Theorem (the $\mathrm{C}^*$-identity and the spectral radius).** For every $a \in A$,
 
 $$
-\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a) = r(a)^2 \;\;\text{for normal } a , \qquad \lVert a\rVert = r(a^*a)^{1/2} \;\;\text{in general} .
+\boxed{\;\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a) = r(a)^2 \;\;\text{for normal } a , \qquad \lVert a\rVert = r(a^*a)^{1/2} \;\;\text{in general}\;} .
 $$
 
 For a normal $a$, $\lVert a\rVert = r(a)$; for a self-adjoint $a$, likewise $\lVert a\rVert = r(a)$.
@@ -24,7 +24,7 @@ For a normal $a$, $\lVert a\rVert = r(a)$; for a self-adjoint $a$, likewise $\lV
 **Proposition (the involution and the spectrum).** For every $a$,
 
 $$
-\sigma(a^*) = \overline{\sigma(a)} , \qquad r(a^*) = r(a) , \qquad r(a^*a) = r(a)^2 ,
+\boxed{\;\sigma(a^*) = \overline{\sigma(a)} , \qquad r(a^*) = r(a) , \qquad r(a^*a) = r(a)^2\;} ,
 $$
 
 and the involution is isometric, $\lVert a^*\rVert = \lVert a\rVert$.
@@ -44,7 +44,7 @@ $$
 **Theorem (the unique $\mathrm{C}^*$-norm and the isometric maps).** A $*$-algebra carries at most one $\mathrm{C}^*$-norm; every $*$-isomorphism of $\mathrm{C}^*$-algebras is isometric; and every unital $*$-homomorphism $\varphi : A \to B$ of unital $\mathrm{C}^*$-algebras is contractive, with
 
 $$
-\lVert\varphi(a)\rVert = r\bigl(\varphi(a^*a)\bigr)^{1/2} \leq r(a^*a)^{1/2} = \lVert a\rVert .
+\boxed{\;\lVert\varphi(a)\rVert = r\bigl(\varphi(a^*a)\bigr)^{1/2} \leq r(a^*a)^{1/2} = \lVert a\rVert\;} .
 $$
 
 An injective unital $*$-homomorphism is isometric.

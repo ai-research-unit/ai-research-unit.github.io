@@ -127,7 +127,9 @@ and likewise $K_{\mathrm F}(M,N)=\sum_{t}\langle M_{t},N_{t}\rangle_{F}=\tfrac12
 **Theorem (least squares factorises).** Let $X$ be an arbitrary reduced biquaternion matrix, and let $X^{+}$ and $X^{-}$ range independently over the complex matrices. Then $X$ is a least squares solution of $AX\approx B$ if and only if $X^{+}$ is a least squares solution of $A^{+}X^{+}\approx B^{+}$ and $X^{-}$ is a least squares solution of $A^{-}X^{-}\approx B^{-}$. In that case
 
 $$
-\min_{X}K_{\mathrm F}(AX-B)=\tfrac12\Bigl(\min_{X^{+}}\bigl\lVert A^{+}X^{+}-B^{+}\bigr\rVert_{F}^{2}+\min_{X^{-}}\bigl\lVert A^{-}X^{-}-B^{-}\bigr\rVert_{F}^{2}\Bigr).
+\boxed{\;
+\min_{X}K_{\mathrm F}(AX-B)=\tfrac12\Bigl(\min_{X^{+}}\bigl\lVert A^{+}X^{+}-B^{+}\bigr\rVert_{F}^{2}+\min_{X^{-}}\bigl\lVert A^{-}X^{-}-B^{-}\bigr\rVert_{F}^{2}\Bigr)
+\;}.
 $$
 
 *Proof.* By the decoupling theorem $AX-B$ has components $A^{+}X^{+}-B^{+}$ and $A^{-}X^{-}-B^{-}$, and by the metric theorem its norm is half the sum of the two squared Frobenius norms. The two components of $X$ are independent variables, so the minimum of the sum is the sum of the minima.
@@ -139,7 +141,9 @@ The theorem is the whole content of the reduction in the unconstrained case: two
 **Theorem (total least squares factorises).** Let $X$ be an arbitrary reduced biquaternion matrix, and let $X^{+},X^{-}$ range independently over the complex matrices. Then $X$ is a total least squares solution of $AX\approx B$ if and only if $X^{+}$ is a total least squares solution of $A^{+}X^{+}\approx B^{+}$ and $X^{-}$ is a total least squares solution of $A^{-}X^{-}\approx B^{-}$. In that case the minimum perturbation size is
 
 $$
-\min_{X,E,G}K_{\mathrm F}\bigl([E,G]\bigr)=\tfrac12\Bigl(\sum_{k=n+1}^{n+d}\bigl(s_{k}^{+}\bigr)^{2}+\sum_{k=n+1}^{n+d}\bigl(s_{k}^{-}\bigr)^{2}\Bigr),
+\boxed{\;
+\min_{X,E,G}K_{\mathrm F}\bigl([E,G]\bigr)=\tfrac12\Bigl(\sum_{k=n+1}^{n+d}\bigl(s_{k}^{+}\bigr)^{2}+\sum_{k=n+1}^{n+d}\bigl(s_{k}^{-}\bigr)^{2}\Bigr)
+\;},
 $$
 
 where $s_{k}^{+}:=s_{k}([A^{+},B^{+}])$ and $s_{k}^{-}:=s_{k}([A^{-},B^{-}])$, so that $s_{1}^{+}\ge\cdots\ge s_{n+d}^{+}$ are the singular values of the complex matrix $[A^{+},B^{+}]$, and likewise with the sign $-$ for the other component.
@@ -167,7 +171,9 @@ the bar-transpose; and $(AM)^{\dagger}=M^{\dagger}A^{\dagger}$. In components $(
 **Theorem (the normal equations).** A matrix $X$ minimises $K_{\mathrm F}(AX-B)$ if and only if
 
 $$
-A^{\dagger}AX=A^{\dagger}B,
+\boxed{\;
+A^{\dagger}AX=A^{\dagger}B
+\;},
 $$
 
 and in components the two complex normal equations $(A^{+})^{*}A^{+}X^{+}=(A^{+})^{*}B^{+}$ and $(A^{-})^{*}A^{-}X^{-}=(A^{-})^{*}B^{-}$ hold.

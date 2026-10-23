@@ -42,7 +42,7 @@ $$
 **Theorem.** With respect to the Hall inner product, the Schur functions are an orthonormal $\mathbb{Z}$-basis, $\langle s_\lambda,s_\mu\rangle = \delta_{\lambda\mu}$; the monomial and the complete homogeneous symmetric functions are dual bases, $\langle m_\lambda,h_\mu\rangle = \delta_{\lambda\mu}$; and the **Cauchy identity**
 
 $$
-\prod_{i,j}\frac{1}{1-x_iy_j} \;=\; \sum_\lambda h_\lambda(x)\,m_\lambda(y) \;=\; \sum_\lambda s_\lambda(x)\,s_\lambda(y)
+\boxed{\;\prod_{i,j}\frac{1}{1-x_iy_j} \;=\; \sum_\lambda h_\lambda(x)\,m_\lambda(y) \;=\; \sum_\lambda s_\lambda(x)\,s_\lambda(y)\;}
 $$
 
 holds, the two forms of the identity being exchanged by the duality of the two bases. The Kostka matrix is the transition matrix between the Schur and the monomial bases, and it is the matrix of the inner products $\langle h_\mu,s_\lambda\rangle$. 
@@ -102,7 +102,7 @@ so that at $t = 0$ it is the Hall inner product and at $t = 1$ the factor become
 **Theorem (orthogonality, standard).** The Hall–Littlewood polynomials are pairwise orthogonal for the $t$-deformed form,
 
 $$
-\langle P_\lambda(\,\cdot\,;t),P_\mu(\,\cdot\,;t)\rangle_t = 0 \qquad (\lambda\neq\mu),
+\boxed{\;\langle P_\lambda(\,\cdot\,;t),P_\mu(\,\cdot\,;t)\rangle_t = 0 \qquad (\lambda\neq\mu)\;},
 $$
 
 the form is non-degenerate on $\Lambda_{\mathbb{Q}(t)}$ and the $P_\lambda$ therefore form an orthogonal basis. The values $\langle P_\lambda,P_\lambda\rangle_t$ are explicit rational functions of $t$, products over the multiplicities of the parts of $\lambda$, computed in the standard reference; only the vanishing of the off-diagonal inner products is used below, and the normalisation of the form is the one for which the power sums are orthogonal with $\langle p_r,p_r\rangle_t = r\frac{1-t^r}{1-t}$.
@@ -165,7 +165,7 @@ The $q = t$ specialisation reduces the deformed form to the Hall form, since the
 **Theorem (Macdonald positivity, Haiman).** The change of basis
 
 $$
-P_\lambda(x;q,t) = \sum_\mu K_{\lambda\mu}(q,t)\,s_\mu(x)
+\boxed{\;P_\lambda(x;q,t) = \sum_\mu K_{\lambda\mu}(q,t)\,s_\mu(x)\;}
 $$
 
 has coefficients $K_{\lambda\mu}(q,t)\in\mathbb{N}[q,t]$, the **$(q,t)$-Kostka polynomials**; at $q = t$ the form degenerates to the Hall form, the polynomials become the Schur functions, and therefore $K_{\lambda\mu}(t,t) = 0$ for $\lambda\neq\mu$; at $t = 0$ the coefficients are, up to the normalisation of the polynomials, the entries inverse to the Kostka–Foulkes matrix of the previous section, and at $q = 0$ they are the $q$-Kostka polynomials of the Hall–Littlewood theory.

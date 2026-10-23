@@ -32,7 +32,7 @@ $$
 **Theorem (the adjoint of the signed action).** The adjoint of the signed action is the signed action with the $\alpha$-twisted adjoint parameter,
 
 $$
-\bigl(\rho^{\alpha}(a)\bigr)^{*} = \rho^{\alpha}(\alpha(a^{*})) ,
+\boxed{\;\bigl(\rho^{\alpha}(a)\bigr)^{*} = \rho^{\alpha}(\alpha(a^{*}))\;} ,
 $$
 
 so the family of the signed actions is **closed under the adjoint**, and the adjoint action is the module version of the one-sided formula $(L^{\alpha}_a)^{*} = L^{\alpha}_{\alpha(a^{*})}$.
@@ -62,7 +62,7 @@ which agrees with the direct computation $\bigl(\rho(a\alpha(b))\bigr)^{*} = \rh
 **Proposition (the self-adjoint signed actions).** The signed action is **self-adjoint**,
 
 $$
-\bigl(\rho^{\alpha}(a)\bigr)^{*} = \rho^{\alpha}(a) ,
+\boxed{\;\bigl(\rho^{\alpha}(a)\bigr)^{*} = \rho^{\alpha}(a)\;} ,
 $$
 
 exactly when the parameter is **$\alpha$-Hermitian**, $a = \alpha(a^{*})$; it is **skew-adjoint**, $\bigl(\rho^{\alpha}(a)\bigr)^{*} = -\rho^{\alpha}(a)$, exactly when $a = -\alpha(a^{*})$; and every signed action decomposes into the self-adjoint and the skew-adjoint parts, being normal exactly when these commute. For a faithful action, the self-adjoint signed action is an involution exactly on the **reflection elements**, by $(\rho^{\alpha}(a))^{2} = \rho(a\alpha(a))$.
@@ -72,7 +72,7 @@ exactly when the parameter is **$\alpha$-Hermitian**, $a = \alpha(a^{*})$; it is
 **Theorem (the order of the signed actions).** If the module grading is **positive**, $\alpha_M(M_+)\subseteq M_+$, and the action of $a$ is positive with $a\geq0$, then the signed action and its adjoint are positive,
 
 $$
-\rho^{\alpha}(a)\geq0 \quad \text{and} \quad \bigl(\rho^{\alpha}(a)\bigr)^{*}\geq0 ,
+\boxed{\;\rho^{\alpha}(a)\geq0 \quad \text{and} \quad \bigl(\rho^{\alpha}(a)\bigr)^{*}\geq0\;} ,
 $$
 
 so the adjoint is an **order isomorphism** of the family of the signed actions; on the homogeneous elements the signed action acts by the parity sign,

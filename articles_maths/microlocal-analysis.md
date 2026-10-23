@@ -106,7 +106,7 @@ The product of two distributions is generally undefined, since one cannot multip
 **Theorem (product criterion).** Let $u,v \in \mathcal D'(\mathbb{R}^n)$ and suppose
 
 $$
-WF(u)\cap(-WF(v))=\varnothing, \qquad -WF(v)=\{(x,-\xi):(x,\xi)\in WF(v)\} .
+\boxed{\;WF(u)\cap(-WF(v))=\varnothing, \qquad -WF(v)=\{(x,-\xi):(x,\xi)\in WF(v)\}\;} .
 $$
 
 Then the bilinear form $(u,v)\mapsto\langle uv,\varphi\rangle$, defined for $\varphi \in C_c^\infty$ by the tensor product $u\otimes v$ paired with $\varphi(x)\delta(x-y)$, extends uniquely to a distribution $uv \in \mathcal D'$, and
@@ -132,7 +132,7 @@ where the sum is the conic sumset in the fibres. If the intersection is nonempty
 **Theorem (pullback criterion).** Let $f:X\to Y$ be a smooth map of manifolds and let $u \in \mathcal D'(Y)$. Then the pullback $f^*u \in \mathcal D'(X)$ is defined whenever
 
 $$
-WF(u)\cap N_f=\varnothing, \qquad N_f=\{(f(x),\eta):d f(x)^{\mathsf T}\eta=0,\ \eta \neq0\},
+\boxed{\;WF(u)\cap N_f=\varnothing, \qquad N_f=\{(f(x),\eta):d f(x)^{\mathsf T}\eta=0,\ \eta \neq0\}\;},
 $$
 
 the conormal bundle of $f$; when defined,
@@ -162,7 +162,7 @@ and its integral curves in $\operatorname{Char}(P)$ are the **bicharacteristics*
 **Theorem (propagation of singularities).** Let $P$ be a pseudodifferential operator of real principal type and let $u \in \mathcal D'(M)$ satisfy $Pu \in C^\infty$ (or, more generally, $Pu \in H^s_{\mathrm{loc}}$). Then
 
 $$
-WF(u)\setminus WF(Pu)\subseteq\operatorname{Char}(P),
+\boxed{\;WF(u)\setminus WF(Pu)\subseteq\operatorname{Char}(P)\;},
 $$
 
 and $WF(u)\setminus WF(Pu)$ is a union of bicharacteristics: if $(x_0,\xi_0)\in WF(u)\setminus WF(Pu)$ then the whole bicharacteristic through $(x_0,\xi_0)$ lies in $WF(u)\setminus WF(Pu)$. The same statement holds with $WF^s$ in place of $WF$.

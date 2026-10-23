@@ -43,7 +43,7 @@ The map $T$ is **measure-preserving** if $\mathcal{P}_T\mathbf{1}=\mathbf{1}$, a
 **Theorem (piecewise monotone maps).** Let $T$ be a piecewise $C^1$ map of an interval or a compact manifold with finitely many **inverse branches** $y_1,\dots,y_k$, defined on the pieces and satisfying $T(y_i(x))=x$ and $T'(y_i(x))\neq0$. Then the transfer operator with respect to the Riemannian volume $m$ is
 
 $$
-\mathcal{P}_T h(x)=\sum_{i=1}^{k}\frac{h(y_i(x))}{|T'(y_i(x))|},
+\boxed{\;\mathcal{P}_T h(x)=\sum_{i=1}^{k}\frac{h(y_i(x))}{|T'(y_i(x))|}\;},
 $$
 
 the sum over the preimages of $x$.
@@ -91,7 +91,7 @@ the **Gauss–Kuzmin–Wirsing operator**. Its fixed point is the Gauss density 
 **Theorem (Lasota–Yorke inequality).** Let $T$ be a piecewise $C^2$ expanding map of the interval, with $|T'|\ge\lambda>1$ and bounded distortion. Then there are constants $C>0$ and $\theta<1$ such that, for every $h$ of bounded variation,
 
 $$
-\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\theta^n\|h\|_{\mathrm{BV}} ;
+\boxed{\;\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\theta^n\|h\|_{\mathrm{BV}}\;} ;
 $$
 
 consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded variation is quasi-compact, its essential spectral radius is at most $\theta$, its peripheral spectrum consists of the simple eigenvalue $1$ and finitely many roots of unity, and the Fourier coefficients of the correlations decay at rate at most $\theta$.
@@ -113,7 +113,7 @@ which reduces to $\mathcal{P}_T$ when $\varphi=-\log|T'|$ on each branch, so tha
 **Theorem (the pressure as a spectral radius).** For a topologically mixing piecewise monotone map $T$ and a Hölder potential $\varphi$ the spectral radius of $\mathcal{P}_\varphi$ on the Hölder space is $\exp(P(\varphi))$, where $P(\varphi)$ is the **topological pressure**, the eigenvalue $\exp(P(\varphi))$ is simple, and its eigenvector and its dual eigenfunctional give the **Gibbs state** of $\varphi$: the unique invariant measure $\mu_\varphi$ with
 
 $$
-\mu_\varphi(T(A))=\int_A\exp(P(\varphi)-\varphi)\,d\mu_\varphi \qquad \text{locally},
+\boxed{\;\mu_\varphi(T(A))=\int_A\exp(P(\varphi)-\varphi)\,d\mu_\varphi \qquad \text{locally}\;},
 $$
 
 and $h_{\mu_\varphi}+\int\varphi\,d\mu_\varphi=P(\varphi)$, the **variational principle**.

@@ -18,7 +18,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $E$ and $F$ are Hausdo
 **Theorem (an operator is weakly continuous).** Every $T \in \mathcal{L}(E, F)$ is continuous for the weak topologies,
 
 $$
-T : (E, \sigma(E, E')) \longrightarrow (F, \sigma(F, F')) .
+\boxed{\;T : (E, \sigma(E, E')) \longrightarrow (F, \sigma(F, F'))\;} .
 $$
 
 Conversely, a linear map $T : E \to F$ is continuous for the given topologies if and only if it is continuous for the weak topologies.
@@ -34,7 +34,7 @@ Conversely, a linear map $T : E \to F$ is continuous for the given topologies if
 **Theorem (weak-star, weak and Mackey continuity).** The transpose $T'$ is continuous for the weak-star topologies,
 
 $$
-T' : (F', \sigma(F', F)) \longrightarrow (E', \sigma(E', E)) ,
+\boxed{\;T' : (F', \sigma(F', F)) \longrightarrow (E', \sigma(E', E))\;} ,
 $$
 
 for the weak topologies $T' : (F', \sigma(F', F'')) \to (E', \sigma(E', E''))$, and for the Mackey topologies $T' : (F', \tau(F', F'')) \to (E', \tau(E', E''))$.
@@ -44,7 +44,7 @@ for the weak topologies $T' : (F', \sigma(F', F'')) \to (E', \sigma(E', E''))$, 
 **Theorem (injectivity, image and weak-star homeomorphism).** The transpose $T'$ is injective if and only if $T$ has dense range; the image is always the annihilator,
 
 $$
-T'(F') = (\ker T)^{\perp} \subseteq E' ,
+\boxed{\;T'(F') = (\ker T)^{\perp} \subseteq E'\;} ,
 $$
 
 and $T'$ is a weak-star homeomorphism of $F'$ onto this annihilator exactly when $T$ is surjective.

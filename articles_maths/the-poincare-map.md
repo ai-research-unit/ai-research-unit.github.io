@@ -53,7 +53,7 @@ More generally, if $g$ satisfies $g(Px)=\exp(i\phi(x))g(x)$ for a phase $\phi$ a
 **Theorem (transfer of the ergodic properties, quoted).** Let the flow be the suspension of $(P,\tau)$ with finite mean return time. Then the flow preserves $\mu$ if and only if $P$ preserves the induced $\mu_\Sigma$, and the flow is ergodic if and only if $P$ is ergodic; the flow is mixing if and only if $P$ is mixing and the roof $\tau$ is not cohomologous to a constant, the exceptional case $\tau\equiv\bar\tau$ being the product of $P$ with the rotation of period $\bar\tau$, which is ergodic but not mixing. The entropy is given by **Abramov's formula**
 
 $$
-h_\mu(\varphi_1)=h_{\mu_\Sigma}(P)\big/\bar\tau ,
+\boxed{\;h_\mu(\varphi_1)=h_{\mu_\Sigma}(P)\big/\bar\tau\;} ,
 $$
 
 the entropy per unit time of the flow being the entropy per return of the return map divided by the mean return time.
@@ -89,7 +89,7 @@ defined for $x\in A$; it is the Poincaré map of the discrete system on the "sec
 **Theorem (Kac's formula).** If $(X,\mu,T)$ is ergodic and measure-preserving and $\mu(A)>0$, then
 
 $$
-\int_A r_A\,d\mu=1, \qquad \int_A r_A\,d\mu_A=\frac{1}{\mu(A)} ;
+\boxed{\;\int_A r_A\,d\mu=1, \qquad \int_A r_A\,d\mu_A=\frac{1}{\mu(A)}\;} ;
 $$
 
 that is, the mean return time to $A$ with respect to the induced probability is the reciprocal of the measure of $A$.
@@ -107,7 +107,7 @@ that is, the mean return time to $A$ with respect to the induced probability is 
 **Theorem (the two spectra agree off the flow direction).** The vector $X(p)$ is an eigenvector of the monodromy $M=D_p\varphi_T$ with eigenvalue $1$, and
 
 $$
-\det(\mu I-DP(p))=\frac{\det(\mu I-D_p\varphi_T)}{\mu-1} \quad \text{in the reduced sense},
+\boxed{\;\det(\mu I-DP(p))=\frac{\det(\mu I-D_p\varphi_T)}{\mu-1} \quad \text{in the reduced sense}\;},
 $$
 
 so the eigenvalues of $DP(p)$, counted with multiplicity, are the eigenvalues of $D_p\varphi_T$ other than the trivial eigenvalue $1$; these are the **Floquet multipliers** of the periodic orbit apart from $1$.

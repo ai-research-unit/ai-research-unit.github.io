@@ -36,7 +36,7 @@ for all $x,y\in\mathrm{G}$, and $\iota$ is $R$-linear.
 **Theorem (the universal property).** Let $A$ be an associative $R$-algebra with identity and let $\varphi:\mathrm{G}\to A$ be an $R$-linear map satisfying $\varphi([x,y]) = \varphi(x)\varphi(y)-\varphi(y)\varphi(x)$. Then there is a unique $R$-algebra homomorphism $\Phi:\mathrm{U}(\mathrm{G})\to A$ with $\Phi\circ\iota = \varphi$. Consequently the correspondence $\varphi\mapsto\Phi$ is a natural bijection
 
 $$
-\operatorname{Hom}_{\mathsf{Lie}_R}(\mathrm{G},A_{\mathrm{Lie}}) \;\cong\; \operatorname{Hom}_{\mathsf{Alg}_R}\bigl(\mathrm{U}(\mathrm{G}),A\bigr),
+\boxed{\;\operatorname{Hom}_{\mathsf{Lie}_R}(\mathrm{G},A_{\mathrm{Lie}}) \;\cong\; \operatorname{Hom}_{\mathsf{Alg}_R}\bigl(\mathrm{U}(\mathrm{G}),A\bigr)\;},
 $$
 
 where $A_{\mathrm{Lie}}$ is the Lie algebra with the commutator bracket, and $\mathrm{G}\mapsto \mathrm{U}(\mathrm{G})$ is the left adjoint of $A\mapsto A_{\mathrm{Lie}}$.
@@ -62,7 +62,7 @@ the **symbol map**, induced by the identity on $\mathrm{G}$; it is an isomorphis
 **Theorem (Poincaré–Birkhoff–Witt).** Let $k$ be a field, let $\mathrm{G}$ be a Lie algebra over $k$ and let $(x_i)_{i\in I}$ be a basis of $\mathrm{G}$ ordered by a total order on $I$. Then the monomials
 
 $$
-x_{i_1}^{a_1}x_{i_2}^{a_2}\cdots x_{i_r}^{a_r}, \qquad i_1<i_2<\cdots<i_r,\ a_j\geq1,
+\boxed{\;x_{i_1}^{a_1}x_{i_2}^{a_2}\cdots x_{i_r}^{a_r}, \qquad i_1<i_2<\cdots<i_r,\ a_j\geq1\;},
 $$
 
 together with the unit, form a $k$-basis of $\mathrm{U}(\mathrm{G})$. Consequently the symbol map $\sigma:\operatorname{Sym}(\mathrm{G})\to\mathrm{gr}\,\mathrm{U}(\mathrm{G})$ is an isomorphism of graded algebras, the canonical map $\iota:\mathrm{G}\to \mathrm{U}(\mathrm{G})$ is injective, and $\mathrm{U}(\mathrm{G})$ is a domain and, when $\mathrm{G}$ is finite-dimensional, a Noetherian ring.
@@ -110,7 +110,7 @@ extended to algebra homomorphisms $\Delta:\mathrm{U}(\mathrm{G})\to \mathrm{U}(\
 **Theorem (the equivalence).** The universal property induces an equivalence of categories
 
 $$
-\mathsf{Rep}_R(\mathrm{G}) \;\simeq\; \mathsf{Mod}_{\mathrm{U}(\mathrm{G})},
+\boxed{\;\mathsf{Rep}_R(\mathrm{G}) \;\simeq\; \mathsf{Mod}_{\mathrm{U}(\mathrm{G})}\;},
 $$
 
 between the representations of the Lie algebra and the left modules over its enveloping algebra; the equivalence is the identity on the underlying $R$-modules and sends a representation $\rho$ to the module structure $u\cdot m = \Phi_\rho(u)m$ obtained from the universal property.

@@ -80,7 +80,7 @@ the argument of $t$ forces the two linear terms to be conjugates in the sense $K
 
 **Theorem (Cauchy–Schwarz for a positive definite kernel).** For a positive definite kernel $K$,
 $$
-\lvert K(x,y)\rvert^2\leq K(x,x)\,K(y,y),\qquad K(x,x)\geq0 .
+\boxed{\;\lvert K(x,y)\rvert^2\leq K(x,x)\,K(y,y),\qquad K(x,x)\geq0\;} .
 $$
 
 **Proof.** The $1\times1$ matrix is $K(x,x)\geq0$. Applying the $2\times2$ condition to
@@ -167,7 +167,7 @@ regular representation, and its kernel is the identity kernel $K(x,y)=\mathbf 1_
 definite if and only if there is a unique finite positive measure $\mu$ on $\mathbb R^n$, with
 $\mu(\mathbb R^n)=\varphi(0)$, such that
 $$
-\varphi(x)=\int_{\mathbb R^n}\exp(2\pi ix\cdot\xi)\,d\mu(\xi)\qquad\text{for all }x\in\mathbb R^n .
+\boxed{\;\varphi(x)=\int_{\mathbb R^n}\exp(2\pi ix\cdot\xi)\,d\mu(\xi)\qquad\text{for all }x\in\mathbb R^n\;} .
 $$
 The measure $\mu$ is a probability measure exactly when $\varphi(0)=1$, and it is the
 **Fourier–Stieltjes transform** (or spectral measure) of $\varphi$; the transform is written with the
@@ -236,7 +236,7 @@ group, is *Positive Definite Functions and the Gelfand–Raikov Theorem*.
 **Theorem (the GNS decomposition of a positive definite kernel).** Let $K$ be a positive definite kernel on
 a set $X$. Then there are a Hilbert space $H$ and a map $x\mapsto k_x$ of $X$ into $H$ with
 $$
-K(x,y)=\langle k_y,k_x\rangle
+\boxed{\;K(x,y)=\langle k_y,k_x\rangle\;}
 $$
 for all $x,y$, and the $k_x$ span a dense subspace; the pair $(H,k_\bullet)$ is unique up to unitary
 equivalence fixing every $k_x$. Conversely, for every map $k_\bullet:X\to H$ the kernel

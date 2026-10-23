@@ -22,8 +22,8 @@ a series with real coefficients convergent for every $\tilde q$ by *Split-Quater
 $$
 \boxed{\;
 \exp v = c_0(\lambda) + c_1(\lambda)\, v, \qquad \lambda = \langle v\rangle_{\natural}
-\;}
-$$,
+\;},
+$$
 
 where
 
@@ -42,8 +42,8 @@ In every case $\langle \exp v\rangle_{\natural} = 1$, so $\exp v$ lies in the no
 $$
 \boxed{\;
 \exp \tilde q = \exp(q_t) \exp v
-\;}
-$$,
+\;},
+$$
 
 and hence
 
@@ -60,8 +60,8 @@ The exponential is therefore never zero and always invertible, its split-quatern
 $$
 \boxed{\;
 \exp(\mathbb{H}_{\mathrm{s}}) = \big\{\tilde q : \langle\tilde q\rangle_{\natural} > 0,\ \operatorname{Sc}(\tilde q) > -\sqrt{\langle\tilde q\rangle_{\natural}}\big\} \cup \{\tilde q \in \mathbb{R} : \tilde q < 0\}
-\;}
-$$,
+\;},
+$$
 
 the open set on which the split-quaternion norm is positive and the scalar part exceeds $-\sqrt{N}$, together with the negative scalar line. Equivalently, it is the set $\{N>0,\ \operatorname{Sc} \geq -\sqrt N\}$ with the elements $q_t + v$ removed for which $q_t < 0$ and $v \neq 0$ is nilpotent, these being exactly the non-scalar elements with $\operatorname{Sc} = -\sqrt N$.
 

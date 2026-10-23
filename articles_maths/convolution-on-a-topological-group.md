@@ -24,7 +24,7 @@ The two sums agree by the substitution $z = y^{-1}x$, and both are finite: only 
 **Proposition (bilinearity).** Convolution is bilinear: $(f_1+f_2)*g = f_1*g + f_2*g$, $f*(g_1+g_2) = f*g_1 + f*g_2$, and $(\lambda f)*g = f*(\lambda g) = \lambda(f*g)$ for $\lambda \in k$. Its support satisfies
 
 $$
-\operatorname{supp}(f*g) \subseteq (\operatorname{supp} f)(\operatorname{supp} g),
+\boxed{\;\operatorname{supp}(f*g) \subseteq (\operatorname{supp} f)(\operatorname{supp} g)\;},
 $$
 
 and in particular is finite.
@@ -52,7 +52,7 @@ The only point to check is that the reorganisation is legitimate, and it is: the
 **Corollary.** The finitely supported functions form an associative $k$-algebra under convolution, with identity $\delta_e$. The map $a \mapsto \delta_a$ is an injective homomorphism of the group $G$ into the units of this algebra, and
 
 $$
-\delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}} .
+\boxed{\;\delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}}\;} .
 $$
 
 **Proof.** The identity is $\delta_e$, since $(\delta_e*g)(x) = g(\exp(-1)x) = g(x)$ and $(g*\delta_e)(x) = g(xe^{-1}) = g(x)$. For the products, $\delta_a*\delta_b = \delta_{ab}$ by the definition with the unique contributing pair $y = a$, $z = b$. Injectivity is clear from $\delta_a(e) \neq \delta_b(e)$ for $a \neq b$.
@@ -94,7 +94,7 @@ where $(L_af)(x) = f(a^{-1}x)$ and $(R_bf)(x) = f(xb)$ are the translations of f
 **Proposition.** $T_\phi$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,
 
 $$
-T_\phi = \sum_{a} \phi(a)\,L_a .
+\boxed{\;T_\phi = \sum_{a} \phi(a)\,L_a\;} .
 $$
 
 **Proof.** $\phi = \sum_a \phi(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\phi * f = \sum_a \phi(a)(\delta_a * f) = \sum_a \phi(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.

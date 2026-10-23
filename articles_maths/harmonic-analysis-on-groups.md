@@ -88,7 +88,7 @@ Associativity $(f*g)*h = f*(g*h)$ holds, so $L^1(G)$ is a Banach algebra under c
 **Theorem (convolution theorem).** For $f, g \in L^1(G)$,
 
 $$
-\widehat{f * g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \chi \in G^\vee .
+\boxed{\;\widehat{f * g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \chi \in G^\vee\;} .
 $$
 
 *Proof.* Substituting $x = yz$ in the defining integral and using the left invariance of $dz$ and the multiplicativity $\chi(yz) = \chi(y)\chi(z)$,
@@ -106,7 +106,7 @@ The transform of an $L^1$ function need not be integrable, so inversion requires
 **Theorem (inversion).** There is a Haar measure $d\chi$ on $G^\vee$ such that for every $f \in L^1(G)$ with $\mathcal F f \in L^1(G^\vee)$ the function $f$ agrees almost everywhere with the continuous function
 
 $$
-f(x) = \int_{G^\vee} (\mathcal F f)(\chi)\,\chi(x)\,d\chi .
+\boxed{\;f(x) = \int_{G^\vee} (\mathcal F f)(\chi)\,\chi(x)\,d\chi\;} .
 $$
 
 In particular $f$ is equal a.e. to a function vanishing at infinity.
@@ -116,7 +116,7 @@ In particular $f$ is equal a.e. to a function vanishing at infinity.
 **Theorem (Plancherel).** Let $d\chi$ be the dual Haar measure of the inversion theorem. The Fourier transform is an isometry of the dense subspace $L^1(G) \cap L^2(G)$ of $L^2(G)$ into $L^2(G^\vee)$,
 
 $$
-\int_G |f(x)|^2\,dx = \int_{G^\vee} |(\mathcal F f)(\chi)|^2\,d\chi ,
+\boxed{\;\int_G |f(x)|^2\,dx = \int_{G^\vee} |(\mathcal F f)(\chi)|^2\,d\chi\;} ,
 $$
 
 and it extends uniquely to a unitary equivalence of Hilbert spaces $\mathcal{F} : L^2(G) \to L^2(G^\vee)$.

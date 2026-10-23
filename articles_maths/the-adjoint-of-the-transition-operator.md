@@ -28,7 +28,7 @@ $$
 
 **Theorem (the adjoint formula).** With $\pi$ stationary,
 $$
-P_t^{*}g(y)=\frac{1}{\pi(y)}\int_E\pi(dx)\,p_t(x,dy)\,g(x)=\int_Ep_t^{*}(y,dx)\,g(x)\qquad\pi\text{-a.e.},
+\boxed{\;P_t^{*}g(y)=\frac{1}{\pi(y)}\int_E\pi(dx)\,p_t(x,dy)\,g(x)=\int_Ep_t^{*}(y,dx)\,g(x)\qquad\pi\text{-a.e.}\;},
 $$
 where $p_t^{*}(y,dx)=\pi(dx)p_t(x,dy)/\pi(y)$. Equivalently the adjoint $P_t^*$ is the transition operator of the reversed process.
 
@@ -58,7 +58,7 @@ with $\pi$ as a stationary measure, and it is the semigroup of the reversed proc
 
 **Theorem (reversibility as self-adjointness).** The process is reversible, that is its two-sided stationary version is invariant under the time reversal, if and only if
 $$
-P_t^{*}=P_t\qquad\text{for all }t\ge0,
+\boxed{\;P_t^{*}=P_t\qquad\text{for all }t\ge0\;},
 $$
 equivalently if and only if the kernels satisfy the detailed balance $\pi(dx)p_t(x,dy)=\pi(dy)p_t(y,dx)$ for all $t$. A reversible process has a self-adjoint transition semigroup.
 
@@ -78,7 +78,7 @@ the adjoint of $L$ with respect to the form $\langle\cdot,\cdot\rangle_\pi$, wit
 
 **Theorem (the Dirichlet form).** For a reversible process the Dirichlet form
 $$
-\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi=-\langle f,Lg\rangle_\pi
+\boxed{\;\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi=-\langle f,Lg\rangle_\pi\;}
 $$
 is symmetric and nonnegative on the domain of $L$; for the time-one chain it is $\mathcal{E}(f,g)=\langle(I-P_1)f,g\rangle_\pi$, the Dirichlet form of *Reversible Markov Chains and Time Reversal*, earlier in this category.
 

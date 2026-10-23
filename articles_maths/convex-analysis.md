@@ -115,7 +115,7 @@ the **Huber function**, and the proximal map is the soft thresholding $\operator
 
 **Theorem (Fenchel duality).** Let $f,g$ be closed proper convex functions on $\mathbb{R}^n$ and let $A$ be a linear map. If the qualification $0\in\operatorname{ri}(\operatorname{dom}g-A\operatorname{dom}f)$ holds, then
 $$
-\inf_x\{f(x)+g(Ax)\} = \sup_y\{-f^*(-A^{\mathsf T}y)-g^*(y)\},
+\boxed{\;\inf_x\{f(x)+g(Ax)\} = \sup_y\{-f^*(-A^{\mathsf T}y)-g^*(y)\}\;},
 $$
 and the supremum is attained.
 
@@ -129,7 +129,7 @@ with $f_i$ closed proper convex, the **Lagrangian** is $L(x,\lambda,\mu) = f_0(x
 
 **Theorem (Karush–Kuhn–Tucker; Slater).** If the programme is feasible and Slater's condition holds — there is a feasible $x$ with $f_i(x)<0$ for all $i$ — then there is no duality gap, the dual optimum is attained, and $x^*$ is optimal exactly when there are $(\lambda^*,\mu^*)$ with $\lambda^*\geq0$, complementary slackness $\lambda_i^*f_i(x^*) = 0$, and the stationarity condition
 $$
-0\in\partial f_0(x^*)+\sum_i\lambda_i^*\partial f_i(x^*)+A^{\mathsf T}\mu^* .
+\boxed{\;0\in\partial f_0(x^*)+\sum_i\lambda_i^*\partial f_i(x^*)+A^{\mathsf T}\mu^*\;} .
 $$
 Conversely, if $x^*$ is feasible and such multipliers exist, then $x^*$ is optimal.
 
@@ -137,7 +137,7 @@ Conversely, if $x^*$ is feasible and such multipliers exist, then $x^*$ is optim
 
 **Theorem (minimax).** Let $K\subseteq\mathbb{R}^n$ and $L\subseteq\mathbb{R}^m$ be nonempty compact convex sets, and let $\phi:K\times L\to\mathbb{R}$ be continuous, convex in its first variable and concave in its second. Then
 $$
-\min_{x\in K}\max_{y\in L}\phi(x,y) = \max_{y\in L}\min_{x\in K}\phi(x,y).
+\boxed{\;\min_{x\in K}\max_{y\in L}\phi(x,y) = \max_{y\in L}\min_{x\in K}\phi(x,y)\;}.
 $$
 **Proof sketch.** That the left side is at least the right is the weak duality; for equality one uses the convexity and concavity to reduce to the minimisation of a convex function on $K$ and applies the supporting hyperplane theorem in the product $K\times L$, or invokes the general minimax theorem of Sion, of which this is the compact case, proved by the same separation.
 

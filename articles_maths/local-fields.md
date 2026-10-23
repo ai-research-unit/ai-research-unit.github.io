@@ -122,7 +122,7 @@ and no term of the chain is all of $F$; hence $F$ is not compact.
 **Theorem.** Let $F$ be a non-Archimedean local field. Then the map
 
 $$
-\mathbb{Z} \times \mathcal{O}^\times \longrightarrow F^\times, \qquad (n, u) \longmapsto \pi^n u
+\boxed{\;\mathbb{Z} \times \mathcal{O}^\times \longrightarrow F^\times, \qquad (n, u) \longmapsto \pi^n u\;}
 $$
 
 is an isomorphism of topological groups, where $\mathbb{Z}$ carries the discrete topology and $\mathcal{O}^\times$ the subspace topology. Consequently $F^\times$ is abelian, locally compact, totally disconnected and $\sigma$-compact, and $\mathcal{O}^\times = \mathcal{O} \setminus \mathrm{M}$ is compact and open.
@@ -132,7 +132,7 @@ is an isomorphism of topological groups, where $\mathbb{Z}$ carries the discrete
 **Theorem (the residues of the units).** Let $F$ be non-Archimedean with residue field $k$ of cardinality $q$ and residue characteristic $p$. Then there is an isomorphism of topological groups
 
 $$
-\mathcal{O}^\times \cong \mu_{q-1}(F) \times U^1, \qquad U^1 = 1 + \mathrm{M},
+\boxed{\;\mathcal{O}^\times \cong \mu_{q-1}(F) \times U^1, \qquad U^1 = 1 + \mathrm{M}\;},
 $$
 
 where $\mu_{q-1}(F)$ is the group of $(q-1)$-th roots of unity in $F$. The **principal units** $U^n = 1 + \mathrm{M}^n$ form a decreasing chain
@@ -180,7 +180,7 @@ The residue field decides not only the topology of a non-Archimedean local field
 Every element of $F^\times$ is a unit times a power of the uniformiser, $x = \pi^{v(x)}u$; the factor $\pi^{2m}$ is a square, and multiplying a diagonal entry by a square does not change the isometry class of the one-dimensional form it spans, so every form may be written, after a change of each diagonal entry by a square, as
 
 $$
-\phi = \phi_1 \perp \langle \pi \rangle \phi_2, \qquad \phi_1 = \langle u_1, \ldots, u_r\rangle, \qquad \phi_2 = \langle u_{r+1}, \ldots, u_n\rangle,
+\boxed{\;\phi = \phi_1 \perp \langle \pi \rangle \phi_2, \qquad \phi_1 = \langle u_1, \ldots, u_r\rangle, \qquad \phi_2 = \langle u_{r+1}, \ldots, u_n\rangle\;},
 $$
 
 with all the $u_i$ in $\mathcal{O}^\times$. Reduction modulo $\mathrm{M}$ gives two forms over the residue field: the **first residue form** $\overline{\phi_1} = \langle \overline{u_1}, \ldots, \overline{u_r}\rangle$, of dimension $r$, and the **second residue form** $\overline{\phi_2} = \langle \overline{u_{r+1}}, \ldots, \overline{u_n}\rangle$, of dimension $n - r$.

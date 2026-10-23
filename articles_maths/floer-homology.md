@@ -60,7 +60,7 @@ on the space of contractible loops, whose $L^2$-gradient flow is the Floer equat
 **Theorem (Arnold conjecture for Hamiltonian diffeomorphisms).** Let $(M,\omega)$ be a closed symplectic manifold, let $H$ be a periodic Hamiltonian whose time-one flow $\phi^1_H$ is nondegenerate, and let $\sum_i b_i(M)$ be the sum of the Betti numbers. Then
 
 $$
-\#\,\mathrm{Fix}(\phi^1_H) \geq \sum_{i=0}^{2n} b_i(M) .
+\boxed{\;\#\,\mathrm{Fix}(\phi^1_H) \geq \sum_{i=0}^{2n} b_i(M)\;} .
 $$
 
 **Proof.** The fixed points of $\phi^1_H$ are the $1$-periodic orbits of $X_H$, hence the generators of the Floer complex. The rank of a chain complex is at least the rank of its homology; applied to the Floer complex, whose homology has total rank $\sum b_i(M)$ by the isomorphism $HF_*\cong H_{*+\dim_{\mathbb{C}}M}(M)$, this gives the inequality.
@@ -88,7 +88,7 @@ with Lagrangian boundary conditions; the counts are finite for a generic $J$ and
 **Theorem (Gromov; Lagrangian non-displacement).** Let $(M,\omega)$ be a closed symplectic manifold and let $L\subseteq M$ be a closed Lagrangian submanifold with $HF_*(L,L)\neq0$. Then $L$ is not displaceable: every Hamiltonian diffeomorphism $\phi$ satisfies $\phi(L)\cap L\neq\emptyset$. Consequently, under the isomorphism $HF_*(L,L)\cong H_*(L;\mathbb{Q})$ for the Lagrangians satisfying the regularity hypotheses,
 
 $$
-\#\,(L\cap\phi(L)) \geq \sum_{i=0}^{n} b_i(L)
+\boxed{\;\#\,(L\cap\phi(L)) \geq \sum_{i=0}^{n} b_i(L)\;}
 $$
 
 for a Hamiltonian diffeomorphism $\phi$ in general position: this is the **Arnold conjecture for Lagrangian intersections**. For $M=\mathbb{CP}^n$ the Clifford torus $T^n$ has nonzero Floer homology with itself and is not displaceable.
@@ -98,7 +98,7 @@ for a Hamiltonian diffeomorphism $\phi$ in general position: this is the **Arnol
 **Theorem (Atiyah–Floer conjecture).** Let $Y$ be a closed oriented three-manifold with a Heegaard splitting $Y = Y_1\cup_\Sigma Y_2$ along a surface $\Sigma$, and let $R(Y_i)$ be the moduli space of flat connections on $Y_i$, a Lagrangian submanifold of the moduli space $R(\Sigma)$ of flat connections on $\Sigma$ with respect to the Atiyah–Bott symplectic form. Then the Lagrangian Floer homology of the pair $(R(Y_1),R(Y_2))$ in $R(\Sigma)$ is isomorphic to the instanton Floer homology of $Y$:
 
 $$
-HF_*\bigl(R(Y_1),R(Y_2)\bigr) \cong I_*(Y).
+\boxed{\;HF_*\bigl(R(Y_1),R(Y_2)\bigr) \cong I_*(Y)\;}.
 $$
 
 **Remark.** The conjecture is the precise form of the statement that the instanton theory of a three-manifold is the Lagrangian Floer theory of the two halves of a Heegaard splitting, and it has been verified in important cases while its general form remains open. It is a relative of the theorem of Donaldson identifying the instanton invariants of a four-manifold with the pairing in the Lagrangian Floer homology of the moduli spaces of flat connections on its boundary components: a four-manifold with boundary $\partial W = Y_0\sqcup Y_1$ gives a Lagrangian correspondence between $R(Y_0)$ and $R(Y_1)$, and the Donaldson invariants are the matrix elements of this correspondence. The structural content is that the instanton and the symplectic Floer theories are two faces of one construction, and it is the reason the instanton theory of the next section belongs to the same family as the symplectic theories.

@@ -52,7 +52,7 @@ If $Z$ is a single point $c$, transversality says exactly that $c$ is a regular 
 **Theorem (preimage theorem).** If $F : M \to N$ is transverse to the regular submanifold $Z \subseteq N$, then $F^{-1}(Z)$ is a regular submanifold of $M$, of dimension
 
 $$
-\dim F^{-1}(Z) = \dim M - \dim N + \dim Z,
+\boxed{\;\dim F^{-1}(Z) = \dim M - \dim N + \dim Z\;},
 $$
 
 and at each $p \in F^{-1}(Z)$,
@@ -190,7 +190,7 @@ The Hessian is well defined: the value $V(W(f))(n)$ depends only on $v$ and $w$,
 **Theorem (Morse lemma).** Let $n$ be a nondegenerate critical point of $f$ of index $\lambda$. Then there are coordinates $x^1, \ldots, x^n$ on a neighbourhood of $n$ with $x^i(n) = 0$ and
 
 $$
-f = f(n) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2 .
+\boxed{\;f = f(n) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2\;} .
 $$
 
 **Proof sketch.** The statement is local and reduces to a quadratic form, which the classification of quadratic forms of *Quadratic Forms and Polarisation* puts into the displayed diagonal shape; the change of coordinates is produced by the inverse function theorem. Nondegeneracy is exactly the invertibility needed.
@@ -216,7 +216,7 @@ the Euler characteristic.
 **Theorem (strong Morse inequalities).** For every $k$,
 
 $$
-c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 \geq b_k - b_{k-1} + b_{k-2} - \cdots \pm b_0 .
+\boxed{\;c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 \geq b_k - b_{k-1} + b_{k-2} - \cdots \pm b_0\;} .
 $$
 
 **Proof sketch.** As the level passes a critical value of index $\lambda$, the sublevel set changes by the attachment of a $\lambda$-handle $D^\lambda \times D^{n-\lambda}$ along $S^{\lambda-1} \times D^{n-\lambda}$; the handle attachment is the topological content of the Morse lemma, and it produces a chain complex whose $k$-th chain group has rank $c_k$ and whose homology is $H^k_{dR}(M)$. The rank inequalities for a chain complex then give the stated bounds. The handle attachment in the smooth category requires the gradient flow of $f$, whose existence and regularity are the differential-equation theory of Part III; the topological chain-level statement is what is used here, and it is standard.

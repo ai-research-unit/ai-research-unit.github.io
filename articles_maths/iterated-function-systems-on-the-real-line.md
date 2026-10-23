@@ -28,8 +28,7 @@ $$
 
 **Theorem (the operator is a contraction).** If $r = \max_i r_i < 1$ then $d_H(F(S),F(S')) \leq r\,d_H(S,S')$ for all $S,S' \in \mathcal{K}(\mathbb{R})$. Consequently $F$ has a unique fixed point $\Lambda \in \mathcal{K}(\mathbb{R})$, the **attractor** of the system, and $\Lambda = \lim_{k\to\infty}F^k(S)$ in $d_H$ for every $S\in\mathcal{K}(\mathbb{R})$; moreover
 
-$$
-\Lambda = \bigcap_{k\geq0}\ \overline{\bigcup_{\lvert w\rvert = k} f_w(S_0)}, \qquad S_0 \ \text{a nonempty compact set,}
+$$ \boxed{\;\Lambda = \bigcap_{k\geq0}\ \overline{\bigcup_{\lvert w\rvert = k} f_w(S_0)}, \qquad S_0 \ \text{a nonempty compact set,}\;}
 $$
 
 and $\Lambda$ is the unique nonempty compact set with $\Lambda = \bigcup_i f_i(\Lambda)$.
@@ -60,8 +59,7 @@ The left side is strictly decreasing in $s$, from $m>1$ at $s=0$ to $0$ as $s\to
 
 **Theorem (Moran–Hutchinson, quoted).** If the system satisfies the open set condition, the attractor has
 
-$$
-\dim_H\Lambda = \dim_B\Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1,
+$$ \boxed{\;\dim_H\Lambda = \dim_B\Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1\;},
 $$
 
 and $0 < \mathcal{H}^s(\Lambda) < \infty$. The theorem is that of *Fractal Geometry*; it is stated here only to fix the dimension of the one-dimensional examples.
@@ -120,8 +118,7 @@ the first because $1/2=f_1(1)$ and $1=\pi(2,2,2,\dots)$, the second because $1/2
 
 **Theorem (the coding of the dynamics).** For every $\omega\in\Sigma$ the address map satisfies
 
-$$
-\pi(\omega) = f_{\omega_1}\bigl(\pi(\sigma\omega)\bigr),
+$$ \boxed{\;\pi(\omega) = f_{\omega_1}\bigl(\pi(\sigma\omega)\bigr)\;},
 $$
 
 so the shift sends an address of a point to an address of the point of $\Lambda$ that $f_{\omega_1}$ carries to it; equivalently, on the piece $f_{\omega_1}(\Lambda)$ the inverse branch of $f_{\omega_1}$ is the map $\pi\circ\sigma\circ\pi^{-1}$ wherever $\pi^{-1}$ is single-valued. The topological entropy of the full shift is $\log m$, the number of words of length $n$ being $m^n$.

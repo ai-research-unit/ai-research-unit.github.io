@@ -25,7 +25,7 @@ The definition is *Topological Sesqualgebras*, §*The Definition* with the local
 **Theorem (the seminorm criterion for the product).** Let $\{p_\alpha\}$ be a separating family generating the topology of a locally convex $\mathbb{K}$-space $A$ with a product additive in each variable. If for every $\alpha$ there are $\beta$ and a constant $C \geq 1$ with
 
 $$
-p_\alpha(xy) \leq C\,p_\beta(x)\,p_\beta(y) \qquad (x, y \in A) ,
+\boxed{\;p_\alpha(xy) \leq C\,p_\beta(x)\,p_\beta(y) \qquad (x, y \in A)\;} ,
 $$
 
 then the product is jointly continuous, hence separately continuous, and $A$ is a locally convex sesqualgebra over $(\mathbb{K},\varsigma)$. Conversely, if the product is jointly continuous, then for every $\alpha$ there are $\beta, \gamma$ and $C$ with $p_\alpha(xy) \leq C\,p_\beta(x)p_\gamma(y)$; for a directed family this is equivalent to the estimate above with a single index.
@@ -41,7 +41,7 @@ then the product is jointly continuous, hence separately continuous, and $A$ is 
 **Proposition (the one-sided multiplications).** Let $a \in A$ and let $L_a(x) = ax$ and $R_a(x) = xa$. Then $L_a$ is continuous and $\varsigma$-semilinear, and $R_a$ is continuous and $\mathbb{K}$-linear. Moreover, if the product satisfies the estimate of §*The Product and the Twisted Slot* for a constant $C$ independent of $a$, then for each $\alpha$ there are $\beta$ with
 
 $$
-p_\alpha(L_a x) \leq C\,p_\beta(a)\,p_\beta(x), \qquad p_\alpha(R_a x) \leq C\,p_\beta(x)\,p_\beta(a) .
+\boxed{\;p_\alpha(L_a x) \leq C\,p_\beta(a)\,p_\beta(x), \qquad p_\alpha(R_a x) \leq C\,p_\beta(x)\,p_\beta(a)\;} .
 $$
 
 *Proof.* The parities are *Topological Sesqualgebras*, §*The One-Sided Multiplications*. Continuity is separate continuity, which the locally convex hypothesis assumes, with the bound depending on the fixed $a$: for each $\alpha$ there are $\beta$ and $C_a$ with $p_\alpha(ax) \leq C_a p_\beta(x)$. The uniform estimate with the factor $p_\beta(a)$ is the joint-continuity criterion of §*The Product and the Twisted Slot* read with one variable fixed, and it is asserted under that hypothesis and not under separate continuity alone, which need not supply it.
@@ -63,7 +63,7 @@ $$
 **Theorem (the kernels and the quotients).** Let $A$ be a locally m-convex sesqualgebra with generating family $\{p_\alpha\}$ of submultiplicative seminorms and put $N_\alpha = \ker p_\alpha$. Then each $N_\alpha$ is a closed two-sided ideal, the quotient $A/N_\alpha$ is a normed sesqualgebra over the same datum $(\mathbb{K},\varsigma)$ with the norm induced by $p_\alpha$, and its completion
 
 $$
-A_\alpha = \widehat{A/N_\alpha}
+\boxed{\;A_\alpha = \widehat{A/N_\alpha}\;}
 $$
 
 is a Banach sesqualgebra over $(\mathbb{K},\varsigma)$.

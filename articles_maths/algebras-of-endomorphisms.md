@@ -65,7 +65,7 @@ the algebra of block-scalar maps, and $A'' = A$. The statement is computed below
 **Proposition (the basic laws).** For every subalgebra $A \subseteq E$,
 
 $$
-A \subseteq A'' , \qquad A' = A''' , \qquad A'' \text{ is a subalgebra},
+\boxed{\;A \subseteq A'' , \qquad A' = A''' , \qquad A'' \text{ is a subalgebra}\;},
 $$
 
 and the bicommutant is the largest subalgebra with the same commutant: if $B' = A'$ then $B \subseteq A''$.
@@ -79,7 +79,7 @@ and the bicommutant is the largest subalgebra with the same commutant: if $B' = 
 **Theorem (double centraliser).** Let $A \subseteq E$ be a subalgebra. If $V$ is a semisimple $A$-module, then
 
 $$
-A'' = A .
+\boxed{\;A'' = A\;} .
 $$
 
 Equivalently, a subalgebra of $\operatorname{End}_F(V)$ over which $V$ is semisimple is determined by its commutant.
@@ -91,7 +91,7 @@ Equivalently, a subalgebra of $\operatorname{End}_F(V)$ over which $V$ is semisi
 **Corollary (the commutant of a semisimple algebra is its opposite over the division algebra).** For a semisimple $A$ acting faithfully on $V$ with $V \cong \bigoplus_i S_i^{m_i}$ and $D_i = \operatorname{End}_A(S_i)$,
 
 $$
-A' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}}) ,
+\boxed{\;A' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}})\;} ,
 $$
 
 which is the double centraliser identity read from the other side.

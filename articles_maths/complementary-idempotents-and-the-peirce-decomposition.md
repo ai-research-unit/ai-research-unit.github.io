@@ -112,7 +112,7 @@ $$
 **Theorem.** Let $e_1,\dots,e_r$ be a complete orthogonal family and $A_{ij}=e_iAe_j$. Then
 
 $$
-A=\bigoplus_{i,j=1}^r A_{ij}.
+\boxed{\;A=\bigoplus_{i,j=1}^r A_{ij}\;}.
 $$
 
 *Proof.* For $a\in A$,
@@ -130,7 +130,7 @@ which lies in the sum. If $\sum_{i,j}x_{ij}=0$ with $x_{ij}\in A_{ij}$, multiply
 **Theorem.** The corners obey
 
 $$
-A_{ij}A_{kl}\subseteq\delta_{jk}A_{il},
+\boxed{\;A_{ij}A_{kl}\subseteq\delta_{jk}A_{il}\;},
 $$
 
 and the inclusion can be strict.
@@ -162,7 +162,7 @@ Hence $\pi$ is multiplicative exactly when $A_{ij}A_{ji}=0$ for all $i\neq j$, t
 **Proposition.** The map $a\mapsto(a_{ij})$, with $a_{ij}=e_iae_j$, is an isomorphism of $k$-algebras from $A$ onto the algebra of $r\times r$ matrices $(a_{ij})$ with $a_{ij}\in A_{ij}$ and product
 
 $$
-(ab)_{il}=\sum_ja_{ij}b_{jl}.
+\boxed{\;(ab)_{il}=\sum_ja_{ij}b_{jl}\;}.
 $$
 
 *Proof.* The Peirce decomposition gives a bijection and $k$-linearity, the product formula is the expansion of $ab$, and associativity is inherited from $A$. The identity is the diagonal matrix with entries $e_i$.

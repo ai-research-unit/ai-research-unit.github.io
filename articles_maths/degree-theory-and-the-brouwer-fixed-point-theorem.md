@@ -62,7 +62,7 @@ the identifications being by excision and by the local homology of $S^n$.
 **Theorem (the sum formula).** With $f$ and $y$ as above, and only finitely many $x_i$ with $\deg_{x_i}f \neq 0$, there is the **sum formula**
 
 $$
-\deg f = \sum_{i=1}^{m} \deg_{x_i}f .
+\boxed{\;\deg f = \sum_{i=1}^{m} \deg_{x_i}f\;} .
 $$
 
 *Proof.* Consider the commutative diagram in which the top row is the Mayer–Vietoris sequence of the decomposition $S^n = \bigsqcup_i D_i \cup (S^n \setminus \bigcup_i \operatorname{int}D_i)$, using that $H_n(\partial D_i) = 0$ for $n \geq 2$ and the pair sequence for $n = 1$; the induced map sends the fundamental class to the sum of the local fundamental classes, and evaluating against $[S^n]$ gives the formula.
@@ -70,7 +70,7 @@ $$
 **Theorem (the regular value formula).** Let $f : S^n \to S^n$ be smooth and let $y \in S^n$ be a **regular value** of $f$, that is, a point such that the differential $df_x$ is invertible for every $x \in f^{-1}(y)$. Then $f^{-1}(y)$ is finite, and
 
 $$
-\deg f = \sum_{x \in f^{-1}(y)} \operatorname{sign}\det\bigl(df_x : T_xS^n \to T_yS^n\bigr),
+\boxed{\;\deg f = \sum_{x \in f^{-1}(y)} \operatorname{sign}\det\bigl(df_x : T_xS^n \to T_yS^n\bigr)\;},
 $$
 
 the signs being computed with respect to orientations of the tangent spaces induced by those of the spheres.
@@ -267,7 +267,7 @@ Then $g$ is continuous and odd, $g(-x) = -g(x)$, so the restriction of $g$ to th
 *Proof sketch.* By **Alexander duality**, which for a compact subset $K \subseteq S^n$ states $H_{i,\mathrm{red}}(S^n\setminus K;\mathbb{Z}) \cong H^{n-i-1,\mathrm{red}}(K;\mathbb{Z})$, and is a consequence of the Lefschetz duality of *Poincaré Duality* applied to a regular neighbourhood; applying it to $K = \Sigma \cong S^{n-1}$ gives
 
 $$
-H_{0,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-1,\mathrm{red}}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{i,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-i-1,\mathrm{red}}(S^{n-1}) = 0 \quad (i \neq 0),
+\boxed{\;H_{0,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-1,\mathrm{red}}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{i,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-i-1,\mathrm{red}}(S^{n-1}) = 0 \quad (i \neq 0)\;},
 $$
 
 where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $H_{0,\mathrm{red}}$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.

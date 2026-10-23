@@ -15,7 +15,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition (stable subspaces are the pairs).** A subspace $U$ is stable under $T$ if and only if
 
 $$
-U = (U \cap V_+) \oplus (U \cap V_-) ,
+\boxed{\;U = (U \cap V_+) \oplus (U \cap V_-)\;} ,
 $$
 
 and the assignment $U \mapsto (U \cap V_+, U \cap V_-)$ is a bijection between the stable subspaces of $V$ and the pairs of subspaces $(U_+,U_-)$ with $U_+ \subseteq V_+$ and $U_- \subseteq V_-$; the inverse is $(U_+,U_-) \mapsto U_+ \oplus U_-$. Under this bijection the lattice of stable subspaces is isomorphic to the product of the lattices of subspaces of $V_+$ and of $V_-$.
@@ -33,7 +33,7 @@ and the assignment $U \mapsto (U \cap V_+, U \cap V_-)$ is a bijection between t
 **Definition.** The **projectors** of the involution are
 
 $$
-P_+ = \tfrac12(\mathrm{id}_V + T), \qquad P_- = \tfrac12(\mathrm{id}_V - T) .
+\boxed{\;P_+ = \tfrac12(\mathrm{id}_V + T), \qquad P_- = \tfrac12(\mathrm{id}_V - T)\;} .
 $$
 
 **Proposition.** $P_+$ and $P_-$ are idempotent endomorphisms with $P_+ + P_- = \mathrm{id}_V$, $P_+P_- = P_-P_+ = 0$, and $T = P_+ - P_-$; they commute with $T$ and with every endomorphism commuting with $T$; a subspace $U$ is stable under $T$ if and only if it is preserved by both projectors, $P_\pm(U) \subseteq U$.

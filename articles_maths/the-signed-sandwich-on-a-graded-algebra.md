@@ -46,7 +46,7 @@ $$
 **Theorem.** The signed sandwiches compose by
 
 $$
-\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\,\alpha(c),\ \alpha(d)\,b},
+\boxed{\;\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\,\alpha(c),\ \alpha(d)\,b}\;},
 $$
 
 and the unsigned sandwiches compose by $\Sigma_{a,b}\circ\Sigma_{c,d}=\Sigma_{ac,db}$.
@@ -58,7 +58,7 @@ and the unsigned sandwiches compose by $\Sigma_{a,b}\circ\Sigma_{c,d}=\Sigma_{ac
 **Theorem.** The signed sandwich $\Sigma^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are units of $A$, and then
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1}=\Sigma^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1}=\Sigma^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})}\;} .
 $$
 
 **Proof.** Compose on the right: $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\Sigma^{\alpha}_{a\alpha(\alpha(a^{-1})),\ \alpha(\alpha(b^{-1}))b}=\Sigma^{\alpha}_{a a^{-1},\ b^{-1}b}=\Sigma^{\alpha}_{1,1}$, by the composition law, the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$; the same computation with the factors interchanged gives the left inverse. Conversely if $\Sigma^{\alpha}_{a,b}$ is invertible then left multiplication by $a$ is invertible, so $a$ is a unit, and right multiplication by $b$ is invertible, so $b$ is a unit.
@@ -80,7 +80,7 @@ $$
 **Theorem.** If $a$ is a unit with $a\,\alpha(a)=1$, then the signed sandwich
 
 $$
-\Sigma^{\alpha}_{a,\,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}
+\boxed{\;\Sigma^{\alpha}_{a,\,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}\;}
 $$
 
 is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}$ is an involution whenever $a,b$ are units with $a\alpha(a)=1$ and $b\alpha(b)=1$ and $a,b$ lie in the centre. An element $x$ is fixed by $\Sigma^{\alpha}_{a,a^{-1}}$ exactly when $\alpha(x)=a^{-1}xa$.

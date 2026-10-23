@@ -33,8 +33,7 @@ The matrix has only one independent entry, the single real coordinate of $q$; it
 
 **Theorem (multiplicativity).** For all $q_1, q_2 \in \mathbb{R}$,
 
-$$
-\mathsf{M}_1(q_1)\,\mathsf{M}_1(q_2) = \mathsf{M}_1(q_1 q_2).
+$$ \boxed{\;\mathsf{M}_1(q_1)\,\mathsf{M}_1(q_2) = \mathsf{M}_1(q_1 q_2)\;}.
 $$
 
 Hence $\mathsf{M}_1$ is an $\mathbb{R}$-algebra homomorphism and the space $\mathbb{R}$ is a left $\mathbb{R}$-module under it. It is **faithful**: if $\mathsf{M}_1(q) = [0]$ then $q = L_{q}(1) = 0$. It is in fact **bijective** onto the algebra of $1\times1$ real matrices, since every $1\times1$ matrix is $[q]$ for its unique entry $q$; the regular representation of the field is therefore an **isomorphism** onto its own matrix algebra, the strongest form the representation can take, and it is the statement that $\mathbb{R}$ already is the algebra of real scalars.
@@ -87,8 +86,7 @@ Transposition is therefore trivial in the matrix picture; it does not change the
 
 **Proposition.** For $q \in \mathbb{R}$,
 
-$$
-\det \mathsf{M}_1(q) = q, \qquad \operatorname{tr}\mathsf{M}_1(q) = q.
+$$ \boxed{\;\det \mathsf{M}_1(q) = q, \qquad \operatorname{tr}\mathsf{M}_1(q) = q\;}.
 $$
 
 **Proof.** The determinant and the trace of the $1\times1$ matrix $[q]$ are both its entry $q$.
@@ -101,8 +99,7 @@ $$
 
 so the determinant is multiplicative exactly as the norm is. In the one-dimensional case the determinant **is** the element, and the norm is its square:
 
-$$
-N(q) = q^2 = \bigl(\det\mathsf{M}_1(q)\bigr)^2 .
+$$ \boxed{\;N(q) = q^2 = \bigl(\det\mathsf{M}_1(q)\bigr)^2 \;}.
 $$
 
 The determinant is the **algebra norm** of the one-dimensional algebra, the field norm of $\mathbb{R}$ over itself, and it is the signed quantity $\det\mathsf{M}_1(q) = q$ whose sign is the sign of the element; the norm of *Real Norm and Invertibility* squares it and so forgets the sign. This is the base rung of the ladder of determinants: for the complex algebra the regular matrix is $2\times2$ and its determinant is already the norm itself, $\det\mathsf{M}_1(A) = u^2+v^2 = N(A)$, with no squaring. The real case is the one in which the determinant has degree one and the norm degree two, and the gap is filled by the sign.

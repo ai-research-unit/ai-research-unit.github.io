@@ -56,8 +56,8 @@ convergent for every $\tilde q$, because the algebra is finite-dimensional and a
 $$
 \boxed{\;
 \exp(\tilde q) = \exp(q_t) \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\vec v \Bigr), \qquad \mu < 0
-\;}
-$$,
+\;},
+$$
 
 $$
 \exp(\tilde q) = \exp(q_t) \bigl( 1 + \vec v \bigr), \qquad \mu = 0,
@@ -100,8 +100,8 @@ a series in the free Lie algebra on $\tilde q_1,\tilde q_2$, convergent near the
 $$
 \boxed{\;
 \ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\}
-\;}
-$$,
+\;},
+$$
 
 that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.
 

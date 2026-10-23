@@ -15,7 +15,7 @@ The algebra, its grading and its ideal structure are *Clifford Algebras* and *Cl
 **Definition.** The **left regular representation** of the Clifford algebra is
 
 $$
-\rho : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad \rho(x) = L_x, \qquad L_x(y) = x\,y .
+\boxed{\;\rho : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad \rho(x) = L_x, \qquad L_x(y) = x\,y\;} .
 $$
 
 **Proposition.** $\rho$ is an injective homomorphism of unital $F$-algebras, and its image is the algebra of left multiplications, a subalgebra of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$ isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})$.

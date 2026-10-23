@@ -47,7 +47,7 @@ with $\lambda_{i}\in K$ pairwise distinct, $e_{i}\in\mathrm{Cl}_{K}$ nonzero ide
 When they hold, the eigenvalues are the $\lambda_{i}$, the eigenprojectors are the Lagrange polynomials
 
 $$
-e_{i}=\prod_{j\neq i}\frac{a-\lambda_{j}}{\lambda_{i}-\lambda_{j}},
+\boxed{\;e_{i}=\prod_{j\neq i}\frac{a-\lambda_{j}}{\lambda_{i}-\lambda_{j}}\;},
 $$
 
 and the decomposition is unique.
@@ -192,7 +192,7 @@ The idempotents that occur in the spectral resolutions above are the standard on
 **Proposition.** Let $a=\sum_{i=1}^{r}\lambda_{i}e_{i}$ be a $K$-eigenvalue decomposition and let $e_{i}=\sum_{k=0}^{n}e_{i,k}$ be the grade decomposition of the projectors. Then for every $k>0$,
 
 $$
-\sum_{i=1}^{r}e_{i,k}=0 .
+\boxed{\;\sum_{i=1}^{r}e_{i,k}=0\;} .
 $$
 
 In particular the top-grade parts of the projectors cancel, and the scalar parts sum to $1$.
@@ -224,12 +224,12 @@ by the grade theorem of *The Geometric Product and the Grade Decomposition*. If 
 Over an algebraic closure $\bar F$, the Clifford algebra is a full matrix algebra or a product of two copies:
 
 $$
-\mathrm{Cl}\otimes_{F}\bar F\cong
+\boxed{\;\mathrm{Cl}\otimes_{F}\bar F\cong
 \begin{cases}
 M_{N}(\bar F), & n\text{ even},\\[2pt]
 M_{N}(\bar F)\times M_{N}(\bar F), & n\text{ odd},
 \end{cases}
-\qquad N=2^{n/2}\text{ or }2^{(n-1)/2},
+\qquad N=2^{n/2}\text{ or }2^{(n-1)/2}\;},
 $$
 
 by *The Low-Dimensional Classification*. The eigenvalue decomposition over $\bar F$ is the matrix eigenvalue decomposition of *The Eigenvalue Decomposition of a Matrix*; the Clifford-specific content is the grade of the eigenvalues and the projectors.

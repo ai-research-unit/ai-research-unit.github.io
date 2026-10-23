@@ -25,7 +25,7 @@ Then $\cdot$ is a left action of the unitary group $\mathrm{U}(A,h)$ on $B(A)$: 
 **Proposition (the covariance of the matrix elements).** For a unitary $U$ and an operator $T$,
 
 $$
-h(Tx,y) = h\bigl((UTU^{\dagger})(Ux), Uy\bigr) \qquad \text{for all } x, y .
+\boxed{\;h(Tx,y) = h\bigl((UTU^{\dagger})(Ux), Uy\bigr) \qquad \text{for all } x, y\;} .
 $$
 
 *Proof.* The right side is $h(UTU^{\dagger}Ux, Uy) = h(UTx, Uy) = h(Tx, U^{\dagger}Uy) = h(Tx,y)$, using $U^{\dagger}U = 1$.
@@ -61,7 +61,7 @@ written $k = h_{C}$.
 **Theorem (the Gram matrix transformation).** Let $H$ and $K$ be the Gram matrices of $h$ and $k$ in a basis, and let $C$ have matrix $\Gamma$ in the same basis. Then $k = h_{C}$ if and only if
 
 $$
-K = \Gamma^{T} H\, \varsigma(\Gamma) .
+\boxed{\;K = \Gamma^{T} H\, \varsigma(\Gamma)\;} .
 $$
 
 *Proof.* The value $k(x,y) = h(Cx,Cy)$ is the quadratic form of the matrix $\Gamma^{T}H\varsigma(\Gamma)$ evaluated at the coordinate vectors of $x$ and $y$, and the two forms have the same Gram matrix exactly when they agree, by the reconstruction of a form from its Gram matrix of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*.
@@ -77,7 +77,7 @@ $$
 **Proposition (the cone and the tolerance under congruence).** Every congruence carries a positive semi-definite form to a positive semi-definite form, so it is an automorphism of the cone of *Positivity and the Positive Cone of a Hermitian Form*, §*The Cone of Positive Forms*; the definite forms are carried to definite forms; and the tolerance $x \succeq_{h} y \iff h(x-y,x-y) \geq 0$ of *Positivity and the Positive Cone of a Hermitian Form*, §*The Tolerance*, is transformed by
 
 $$
-x \succeq_{h_{C}} y \iff Cx \succeq_{h} Cy .
+\boxed{\;x \succeq_{h_{C}} y \iff Cx \succeq_{h} Cy\;} .
 $$
 
 *Proof.* The diagonal of the congruent form is $h_{C}(x,x) = h(Cx,Cx)$, which is nonnegative for every $x$ exactly when $h$ is positive semi-definite on the range of $C$, that is on all of $A$; the definiteness is the proposition above. For the tolerance, $h_{C}(x-y,x-y) = h(C(x-y),C(x-y)) = h(Cx-Cy,Cx-Cy)$ by the linearity of $C$, which is the assertion.

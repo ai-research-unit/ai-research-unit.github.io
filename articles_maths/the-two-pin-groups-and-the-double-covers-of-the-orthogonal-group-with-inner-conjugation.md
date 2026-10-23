@@ -52,7 +52,7 @@ The two propositions together give the exact count in the definite case: one cla
 
 **Corollary (the two do not agree).** $\mathrm{Pin}_+(n)$ and $\mathrm{Pin}_-(n)$ are not isomorphic in general, and the smallest witnesses are
 $$
-\mathrm{Pin}_+(1)\cong C_2\times C_2,\qquad \mathrm{Pin}_-(1)\cong C_4 ,
+\boxed{\;\mathrm{Pin}_+(1)\cong C_2\times C_2,\qquad \mathrm{Pin}_-(1)\cong C_4\;} ,
 $$
 of which the first has three elements of order two and the second a unique one.
 
@@ -64,7 +64,7 @@ For the standard signatures the two groups take the names used throughout the co
 
 **Theorem (the standard forms).** With the form of $n$ positive and $m$ negative squares,
 $$
-\mathrm{Pin}_+(n)=\mathrm{Pin}(n,0),\qquad \mathrm{Pin}_-(n)=\mathrm{Pin}(0,n),
+\boxed{\;\mathrm{Pin}_+(n)=\mathrm{Pin}(n,0),\qquad \mathrm{Pin}_-(n)=\mathrm{Pin}(0,n)\;},
 $$
 and both map onto $O(n)=O(n,0)=O(0,n)$. By contrast,
 $$
@@ -90,7 +90,7 @@ For $N$ even the centre of the Clifford algebra is $F$, so the centre of either 
 
 For $N$ odd the centre of the Clifford algebra is $F\oplus F\omega$, and the volume element is the interesting element. Its square and its norm are
 $$
-\omega^{2}=(-1)^{n(n-1)/2}\prod_i \mathfrak{Q}(e_i),\qquad N(\omega)=\omega\bar\omega=(-1)^{n}\prod_i \mathfrak{Q}(e_i),
+\boxed{\;\omega^{2}=(-1)^{n(n-1)/2}\prod_i \mathfrak{Q}(e_i),\qquad N(\omega)=\omega\bar\omega=(-1)^{n}\prod_i \mathfrak{Q}(e_i)\;},
 $$
 so $N(\omega)=\pm1$ and $\omega\in\mathrm{Pin}(V,\mathfrak{Q})$; it is central, and $\omega^{2}=\pm1$ makes its order two or four. The centre of $\mathrm{Pin}(V,\mathfrak{Q})$ is then $\{\pm1,\pm\omega\}$, of order four, and its isomorphism type is read from $\omega^{2}$: it is $C_2\times C_2$ when $\omega^{2}=+1$ and $C_4$ when $\omega^{2}=-1$. Since $\prod_iq(e_i)=(-1)^m$ in $\mathrm{Cl}_{n,m}$, the two definite families and the indefinite family run as follows.
 

@@ -46,14 +46,14 @@ is the **annihilator** of $\breve Q_{1}$. Since the multiplication is commutativ
 
 **Theorem (the annihilator of a line).** For $Q_{+},Q_{-}\in\mathbb{C}^{\times}$,
 $$
-\operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+.
+\boxed{\; \operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+ \;}.
 $$
 
 *Proof.* Write $\breve Q_{2}=Q_{2\blacktriangle}+jQ_{2\blacktriangledown}$ and read it in the idempotent coordinates $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$, with $Q_{2+}=Q_{2\blacktriangle}+Q_{2\blacktriangledown}$ and $Q_{2-}=Q_{2\blacktriangle}-Q_{2\blacktriangledown}$. Then $(Q_{+}\Pi_+)\breve Q_{2}=Q_{+}Q_{2+}\Pi_+$, because $\Pi_+^{2}=\Pi_+$ and $\Pi_+\Pi_-=0$ (*Zero Divisors of the Algebra of the Reduced Biquaternions*), and this is zero iff $Q_{2+}=0$, since $Q_{+}\neq0$ and a complex number has no zero divisors. The condition $Q_{2+}=0$ is $\breve Q_{2}=Q_{2\blacktriangle}-Q_{2\blacktriangle}j=Q_{2\blacktriangle}(1-j)=Q_{2-}\Pi_-$ with $Q_{2-}=2Q_{2\blacktriangle}\in\mathbb{C}$, that is $\breve Q_{2}\in\mathbb{C}\Pi_-$. The same computation on the other line.
 
 **Corollary (the two lines annihilate each other).** The two maximal ideals are the annihilators of each other,
 $$
-\operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+,
+\boxed{\; \operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+ \;},
 $$
 and each is a complex line of real dimension two.
 

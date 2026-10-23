@@ -20,7 +20,7 @@ Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with inv
 **Theorem (Cauchy–Schwarz).** Let $f$ be positive. Then for all $a,b \in A$,
 
 $$
-\lvert f(b^*a)\rvert^2 \leq f(a^*a)\,f(b^*b) ,
+\boxed{\;\lvert f(b^*a)\rvert^2 \leq f(a^*a)\,f(b^*b)\;} ,
 $$
 
 with equality if and only if $a$ and $b$ are linearly dependent modulo the null space of the form.
@@ -30,7 +30,7 @@ with equality if and only if $a$ and $b$ are linearly dependent modulo the null 
 **Theorem (boundedness of a positive functional).** Let $f$ be positive on a unital involutive Banach algebra. Then $f$ is bounded, with
 
 $$
-\lVert f\rVert = f(1) ,
+\boxed{\;\lVert f\rVert = f(1)\;} ,
 $$
 
 so a state is exactly a positive functional with $f(1) = 1$. In a $\mathrm{C}^*$-algebra every positive functional is bounded.
@@ -42,7 +42,7 @@ so a state is exactly a positive functional with $f(1) = 1$. In a $\mathrm{C}^*$
 **Theorem (the construction).** Let $f$ be a positive functional on $A$. Then $N_f = \{a : f(a^*a) = 0\}$ is a left ideal, the formula $\langle a + N_f, b + N_f\rangle_f = f(b^*a)$ is a well-defined inner product on $A/N_f$, and there is a unique $*$-representation $\pi_f : A \to B(H_f)$ on the completion with
 
 $$
-\pi_f(a)\,(b + N_f) = ab + N_f , \qquad \pi_f(a)\xi_f = a + N_f , \qquad f(a) = \langle \pi_f(a)\xi_f, \xi_f\rangle_f ,
+\boxed{\;\pi_f(a)\,(b + N_f) = ab + N_f , \qquad \pi_f(a)\xi_f = a + N_f , \qquad f(a) = \langle \pi_f(a)\xi_f, \xi_f\rangle_f\;} ,
 $$
 
 so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The representation is **cyclic**, $\pi_f(A)\xi_f$ is dense in $H_f$, and the pair $(\pi_f, H_f)$ is the **GNS representation** of $f$.

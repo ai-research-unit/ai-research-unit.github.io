@@ -20,7 +20,7 @@ No physics is invoked.
 **Theorem (Banach contraction principle).** Let $(M,d)$ be a complete metric space and $T:M\to M$ a contraction with constant $\kappa<1$, that is, $d(Tx,Ty)\le\kappa\,d(x,y)$ for all $x,y$. Then $T$ has exactly one fixed point $x^*$, and for every $x \in M$,
 
 $$
-d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}\,d(x,Tx),
+\boxed{\;d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}\,d(x,Tx)\;},
 $$
 
 so the iterates converge to $x^*$ at the rate of a geometric series.
@@ -116,7 +116,7 @@ The theorem is the standard tool for existence in nonlinear problems: one embeds
 **Theorem (Schaefer).** Let $T:X\to X$ be continuous and compact, and suppose the set
 
 $$
-S=\{x \in X:x=\lambda\,Tx \text{ for some } \lambda \in[0,1]\}
+\boxed{\;S=\{x \in X:x=\lambda\,Tx \text{ for some } \lambda \in[0,1]\}\;}
 $$
 
 is bounded. Then $T$ has a fixed point.

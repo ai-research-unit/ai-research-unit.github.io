@@ -156,9 +156,9 @@ The table is justified factor by factor below; the phase row is the subject of Â
 
 **Proposition.** For all $\tilde Q,\tilde X$,
 
-$$ \boxed{\;\langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\Rho^{2}\langle \tilde X\rangle_{\natural},
+$$ \langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\Rho^{2}\langle \tilde X\rangle_{\natural},
 \qquad
-\langle R_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}\;}, $$
+\langle R_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}, $$
 
 and the complex determinant and the trace of the left multiplication are
 
@@ -282,7 +282,7 @@ The phase of $-\pi/2$ is $-i$ and its operator is $J^{-1}=L_{-i}$. On the princi
 
 **Proposition.** The operator $J$ is $\mathbb{C}$-linear, exchanges the two real forms,
 
-$$ \boxed{\;J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-\;}, $$
+$$ J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-, $$
 
 and satisfies
 

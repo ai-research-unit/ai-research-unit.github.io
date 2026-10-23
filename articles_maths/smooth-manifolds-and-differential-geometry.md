@@ -92,7 +92,7 @@ for all $f, h \in C^\infty(M)$. The set of derivations at $p$ is a real vector s
 **Theorem.** For every $p \in M$ the map from tangent vectors to derivations that sends the class of a curve $\gamma$ to $D_\gamma(f) = (f \circ \gamma)'(0)$ is a vector space isomorphism
 
 $$
-T_pM \longrightarrow \operatorname{Der}_p(C^\infty(M)).
+\boxed{\;T_pM \longrightarrow \operatorname{Der}_p(C^\infty(M))\;}.
 $$
 
 **Proof sketch.** The map is well defined because tangent curves give the same derivative of $f \circ \gamma$ by the chain rule, and it is linear. For injectivity, a derivation that kills every function has vanishing pairing with every coordinate function, hence the corresponding coordinate velocity vanishes. For surjectivity, let $D$ be a derivation and choose a chart with coordinates $x^i$ around $p$, which we may suppose is the origin. Writing $f$ in the chart and subtracting its Taylor expansion to first order expresses $f - f(p) - \sum_i (\partial f/\partial x^i)(0) x^i$ as a sum of products of functions vanishing at $0$; the Leibniz rule applied to those products shows that $D(f) = \sum_i D(x^i)\,(\partial f/\partial x^i)(0)$, so $D$ is the derivation of the vector $\sum_i D(x^i)\partial/\partial x^i|_p$.
@@ -112,7 +112,7 @@ the tangent vector at $F(p)$ whose action on a function on $N$ is the action of 
 **Theorem (chain rule).** For smooth maps $F : M \to N$ and $G : N \to P$ and a point $p \in M$,
 
 $$
-d(G \circ F)_p = dG_{F(p)} \circ dF_p,
+\boxed{\;d(G \circ F)_p = dG_{F(p)} \circ dF_p\;},
 $$
 
 and $d(\mathrm{id}_M)_p = \mathrm{id}_{T_pM}$. Consequently, if $F$ is a diffeomorphism then $dF_p$ is invertible with inverse $d(F^{-1})_{F(p)}$.
@@ -186,7 +186,7 @@ Such a chart is **adapted** to $S$. The subspace $S$ then carries a smooth struc
 **Theorem (rank theorem).** Let $F : M \to N$ be a smooth map of constant rank $r$ near $p$. Then there are charts $(\Omega, \varphi)$ about $p$ and $(V, \psi)$ about $F(p)$ with $F(\Omega) \subseteq V$ such that
 
 $$
-\psi \circ F \circ \varphi^{-1}(x^1, \ldots, x^m) = (x^1, \ldots, x^r, 0, \ldots, 0).
+\boxed{\;\psi \circ F \circ \varphi^{-1}(x^1, \ldots, x^m) = (x^1, \ldots, x^r, 0, \ldots, 0)\;}.
 $$
 
 Consequently, about a point of constant rank $r$, the map $F$ looks like the projection of the first $r$ coordinates followed by the inclusion of the first $r$ coordinates.

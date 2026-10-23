@@ -67,7 +67,7 @@ $$
 
 **Theorem (the Gram matrices).** On the complex basis $1,j$ and on the real basis $1,i,j,ij$ the forms have the Gram matrices
 $$
-G_{B}=\operatorname{diag}(1,1),\qquad G_{N}=\operatorname{diag}(1,-1),\qquad G_{H}=\operatorname{diag}(1,-1),\qquad G_{K}=\operatorname{diag}(1,1)
+\boxed{\; G_{B}=\operatorname{diag}(1,1),\qquad G_{N}=\operatorname{diag}(1,-1),\qquad G_{H}=\operatorname{diag}(1,-1),\qquad G_{K}=\operatorname{diag}(1,1) \;}
 $$
 over $\mathbb{C}$, and
 $$
@@ -87,7 +87,7 @@ $$
 $$
 one object with two arities: the form with two arguments and its diagonal with one. The four algebraic norms are
 $$
-\langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2},\qquad \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2},\qquad \langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2},\qquad \langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}.
+\boxed{\; \langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2},\qquad \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2},\qquad \langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2},\qquad \langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2} \;}.
 $$
 
 This is the definition of *Conventions in Mathematics*, §*The Conjugations*, and of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* of the biquaternion category. The two arities of each letter are one object and are never given two letters.
@@ -120,7 +120,7 @@ $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$ take c
 
 **Theorem (the tessarine bilinear norm is multiplicative).** For all $\breve Q_{1},\breve Q_{2}$,
 $$
-\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\,\langle \breve Q_{2}\rangle_{\mathrm{ts}},\qquad \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown}).
+\boxed{\; \langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\,\langle \breve Q_{2}\rangle_{\mathrm{ts}},\qquad \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown}) \;}.
 $$
 
 *Proof.* In the idempotent coordinates $\breve Q_{1}=Q_{1+}\Pi_++Q_{1-}\Pi_-$ and $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$, the product is componentwise (*Reduced Biquaternion Space*), so $\breve Q_{1}\breve Q_{2}$ has coordinates $\bigl(Q_{1+}Q_{2+},Q_{1-}Q_{2-}\bigr)$; the norm $\langle\cdot\rangle_{\mathrm{ts}}$ is the product of the two coordinates, which is multiplicative in the coordinates:
@@ -130,7 +130,7 @@ $$
 
 **Corollary (the reduced norm and the criterion).** $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is the determinant of the multiplication by $\breve Q$ in the two-dimensional idempotent coordinates, it is the **reduced norm** of the algebra, and
 $$
-\breve Q\ \text{is invertible}\iff \langle \breve Q\rangle_{\mathrm{ts}}\neq0,\qquad \breve Q^{-1}=\frac{Q_{\blacktriangle}-Q_{\blacktriangledown}j}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}=\frac{\breve Q_{\mathrm{ts}}}{\langle \breve Q\rangle_{\mathrm{ts}}}.
+\boxed{\; \breve Q\ \text{is invertible}\iff \langle \breve Q\rangle_{\mathrm{ts}}\neq0,\qquad \breve Q^{-1}=\frac{Q_{\blacktriangle}-Q_{\blacktriangledown}j}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}=\frac{\breve Q_{\mathrm{ts}}}{\langle \breve Q\rangle_{\mathrm{ts}}} \;}.
 $$
 
 *Proof.* In the idempotent coordinates the multiplication by $\breve Q$ is $(U_1,U_2)\mapsto(Q_{+}U_1,Q_{-}U_2)$ with $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so the determinant is $Q_{+}Q_{-}=\langle \breve Q\rangle_{\mathrm{ts}}$; it is nonzero exactly when both coordinates are nonzero, which is the criterion of *Reduced Biquaternion Space*. The inverse is verified by $\breve Q(Q_{\blacktriangle}-Q_{\blacktriangledown}j)=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}$.

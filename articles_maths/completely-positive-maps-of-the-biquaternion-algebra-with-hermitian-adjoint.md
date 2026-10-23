@@ -40,7 +40,7 @@ so the correspondence $\Phi\leftrightarrow C_{\Phi}$ is a linear bijection betwe
 **Theorem (Choi).** A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if its Choi matrix is positive semidefinite:
 
 $$
-\Phi\ \text{CP}\iff C_{\Phi}\succeq0 .
+\boxed{\; \Phi\ \text{CP}\iff C_{\Phi}\succeq0 \;}.
 $$
 
 *Proof.* The forward implication is the positivity of the amplification $\mathrm{id}_{2}\otimes\Phi$ applied to the rank-one positive element $\sum_{i,j}E_{ij}\otimes E_{ij}$, whose image is $C_{\Phi}$; the converse is the spectral decomposition of $C_{\Phi}\succeq0$ used in the theorem below. Both directions were verified: the round trip $\Phi\mapsto C_{\Phi}\mapsto\Phi$ was checked to be the identity, random positive semidefinite Choi matrices were shown to produce positive maps on positive elements, and random Kraus sums were shown to have positive semidefinite Choi matrices.
@@ -50,7 +50,7 @@ $$
 **Theorem (Kraus).** A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if there are elements $\tilde{Q}_{1},\dots,\tilde{Q}_{r}\in\mathbb{B}$, $r\le4$, with
 
 $$
-\Phi(\tilde{Q}_2) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde{Q}_2\,\tilde{Q}_{k}^{*} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde{Q}_2).
+\boxed{\; \Phi(\tilde{Q}_2) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde{Q}_2\,\tilde{Q}_{k}^{*} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde{Q}_2) \;}.
 $$
 
 The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
@@ -78,7 +78,7 @@ The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
 **Theorem (the canonical positive map that is not completely positive).** The transposition $\Phi(\tilde{Q}_2)=\tilde{Q}_2^{T}$ is positive on the biquaternion algebra and its Choi matrix is the **flip**
 
 $$
-C_{\Phi}=\sum_{i,j}E_{ij}\otimes E_{ji},
+\boxed{\; C_{\Phi}=\sum_{i,j}E_{ij}\otimes E_{ji} \;},
 $$
 
 whose eigenvalues are $+1$ with multiplicity three and $-1$ with multiplicity one. Hence $\Phi$ is positive and **not** completely positive.

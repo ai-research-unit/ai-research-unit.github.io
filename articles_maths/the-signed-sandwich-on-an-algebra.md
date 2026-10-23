@@ -83,9 +83,9 @@ The identity (b) is the precise sense in which the signed sandwich is the unsign
 **Theorem.** For all $a, b, c, d \in A$,
 
 $$
-S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b}, \qquad
+\boxed{\;S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b}, \qquad
 T_{a,b}\,S_{c,d} = S_{ac,\,db}, \qquad
-S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b} .
+S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b}\;} .
 $$
 
 In particular the product of two signed sandwiches is an unsigned sandwich, and the signed sandwiches are not closed under composition unless $\alpha = \mathrm{id}$.
@@ -107,7 +107,7 @@ is $k$-linear onto the signed sandwich space, and its products obey the table ab
 **Theorem.** Let $A$ be finite-dimensional. The signed sandwich $S_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
 
 $$
-S_{a,b}^{-1} = S_{\alpha(a)^{-1},\, \alpha(b)^{-1}} .
+\boxed{\;S_{a,b}^{-1} = S_{\alpha(a)^{-1},\, \alpha(b)^{-1}}\;} .
 $$
 
 *Proof.* The form $S_{a,b} = T_{a,b}\alpha$ is the composite of the invertible operator $\alpha$ with the sandwich $T_{a,b}$, so it is invertible exactly when $T_{a,b}$ is; by *The Sandwich Operator on an Algebra* this is exactly when $a$ and $b$ are units. For the inverse, apply the composition rule for two signed sandwiches: $S_{a,b}S_{\alpha(a)^{-1},\alpha(b)^{-1}} = T_{a\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})b} = T_{a\alpha(a)^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.
@@ -145,7 +145,7 @@ Hence $\rho_u$ is an involution — a reflection — exactly when $u\,\alpha(u)$
 **Proposition.** The signed sandwich and the unsigned sandwich determine one another through the involution,
 
 $$
-S_{a,b} = T_{a,b}\,\alpha = \alpha\, T_{\alpha(a),\, \alpha(b)}, \qquad T_{a,b} = S_{a,b}\,\alpha .
+\boxed{\;S_{a,b} = T_{a,b}\,\alpha = \alpha\, T_{\alpha(a),\, \alpha(b)}, \qquad T_{a,b} = S_{a,b}\,\alpha\;} .
 $$
 
 *Proof.* The first identity is elementary property (b). For the second, compose the first on the right with $\alpha$ and use $\alpha^2 = \mathrm{id}$.

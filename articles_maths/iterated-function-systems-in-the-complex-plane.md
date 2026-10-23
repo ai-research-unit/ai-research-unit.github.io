@@ -99,7 +99,7 @@ the disks being paired; the group is classical when the disks are bounded by cir
 **Theorem (the coding map).** Let $\mathcal{S} = \{S_1, \ldots, S_m\}$ be an iterated function system of similarities with attractor $\Lambda$, and let $\Sigma = \{1, \ldots, m\}^{\mathbb{N}}$ be the full shift on $m$ symbols. For each $\omega = (\omega_1, \omega_2, \ldots) \in \Sigma$ the intersections
 
 $$
-\bigcap_{n \geq 1} S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda)
+\boxed{\; \bigcap_{n \geq 1} S_{\omega_1}\circ\cdots\circ S_{\omega_n}(\Lambda) \;}
 $$
 
 are nested compact sets of diameter tending to $0$, so their intersection is a single point $\pi(\omega) \in \Lambda$; the map $\pi : \Sigma \to \Lambda$ is continuous and surjective, it satisfies $S_i \circ \pi = \pi \circ \sigma_i$ with $\sigma_i$ the $i$-th branch of the inverse of the shift, and it is injective exactly when the sets $S_i(\Lambda)$ are pairwise disjoint.

@@ -18,7 +18,7 @@ Positivity of the involution is assumed in this article. For a Clifford algebra 
 **Theorem (the sandwich is completely positive).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the map
 
 $$
-\Theta_x(y) = x\,y\,x^{\dagger}
+\boxed{\;\Theta_x(y) = x\,y\,x^{\dagger}\;}
 $$
 
 is completely positive, with Kraus form of rank one, $\Theta_x(y) = V y V^{\dagger}$ with $V = x$.
@@ -34,9 +34,9 @@ which is positivity in the amplified algebra; the constants $k$ are uniform, so 
 **Theorem (unitality and automorphisms).** For $x \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-\Theta_x(1) = x\,x^{\dagger}, \qquad
+\boxed{\;\Theta_x(1) = x\,x^{\dagger}, \qquad
 \Theta_x \text{ unital} \iff x \in U, \qquad
-\Theta_x \text{ a unital algebra automorphism} \iff x \in U ,
+\Theta_x \text{ a unital algebra automorphism} \iff x \in U\;} ,
 $$
 
 and on $U$ the map is the inner automorphism $\Theta_x = \mathrm{Ad}_x$.
@@ -56,7 +56,7 @@ $$
 be its **Choi matrix**, with $E_{ij}$ the matrix units. Then $\Phi$ is completely positive if and only if $C_{\Phi} \ge 0$; a completely positive $\Phi$ has a **Kraus representation**
 
 $$
-\Phi(y) = \sum_{r=1}^{R} V_r\,y\,V_r^{\dagger},
+\boxed{\;\Phi(y) = \sum_{r=1}^{R} V_r\,y\,V_r^{\dagger}\;},
 $$
 
 of minimal length $R = \operatorname{rank}C_{\Phi}$, and $\Phi$ is unital exactly when $\sum_r V_rV_r^{\dagger} = 1$.

@@ -82,8 +82,7 @@ For the first levels this gives: $C_0 = [0,1]$; $C_1 = [0,\tfrac13]\cup[\tfrac23
 
 **Theorem (the coding).** Every point of $C$ is uniquely of the form
 
-$$
-x = \sum_{n \geq 1}\frac{d_n}{3^n}, \qquad d_n \in \{0,2\},
+$$ \boxed{\;x = \sum_{n \geq 1}\frac{d_n}{3^n}, \qquad d_n \in \{0,2\}\;},
 $$
 
 and the map $\{0,2\}^{\mathbb{N}} \to C$, $(d_n) \mapsto \sum_n d_n3^{-n}$, is a homeomorphism. Equivalently, writing $2 = 3-1$, every point of $C$ has a base-three expansion whose digits are all $0$ or $2$, and this expansion is unique.
@@ -126,8 +125,7 @@ of diameter $3^{-k}$, where $i_j = w_j+1$; the $2^k$ cylinders at level $k$ are 
 
 **Theorem (the additive tiling).** The middle-third Cantor set satisfies
 
-$$
-C + C = [0,2], \qquad C - C = [-1,1],
+$$ \boxed{\;C + C = [0,2], \qquad C - C = [-1,1]\;},
 $$
 
 where $C+C = \{x+y : x,y \in C\}$ and $C-C = \{x-y\}$. Equivalently, every real number in $[0,2]$ is a sum of two points of $C$, and every number in $[-1,1]$ is a difference of two points of $C$.
@@ -158,8 +156,7 @@ $$
 
 and writing $t=2^{-s}$ gives $t+t^2=1$, so $t=(\sqrt5-1)/2$ and
 
-$$
-s = \frac{\log\varphi}{\log 2} = 0.6942\ldots, \qquad \varphi = \frac{1+\sqrt5}{2},
+$$ \boxed{\;s = \frac{\log\varphi}{\log 2} = 0.6942\ldots, \qquad \varphi = \frac{1+\sqrt5}{2}\;},
 $$
 
 by the quoted Moran–Hutchinson theorem. The attractor is a Cantor set of unequal pieces, no two scales equal; it shows that the similarity dimension is not restricted to equal ratios and that the level-$k$ pieces need not have the same length.

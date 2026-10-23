@@ -41,7 +41,7 @@ $\mathcal{D}=\sum_{r=0}^{3}\partial/\partial Z_r$.
 **Theorem (the square is the Laplacian).** The Hermitian Dirac operator satisfies
 
 $$
-\mathcal{D}^2 = \{\partial/\partial\underline z,\partial/\partial\bar z\} = \tfrac14\Delta_{2n} ,
+\boxed{\;\mathcal{D}^2 = \{\partial/\partial\underline z,\partial/\partial\bar z\} = \tfrac14\Delta_{2n}\;} ,
 $$
 
 because the two squares vanish separately; in the quaternionic case the sum of the four operators
@@ -76,15 +76,15 @@ differential of the resulting bicomplex.
 module, the involution $*$ exchanges the two halves of the split,
 
 $$
-(\partial/\partial\underline z)^{\dagger} \sim \partial/\partial\bar z , \qquad
-(\partial/\partial\bar z)^{\dagger} \sim \partial/\partial\underline z ,
+\boxed{\;(\partial/\partial\underline z)^{\dagger} \sim \partial/\partial\bar z , \qquad
+(\partial/\partial\bar z)^{\dagger} \sim \partial/\partial\underline z\;} ,
 $$
 
 the symbol $\sim$ meaning equality up to the conjugation of the variables and the normalisation of
 the theorem; consequently the Hermitian Dirac operator is **symmetric**,
 
 $$
-\langle \mathcal{D}f,g\rangle = \langle f,\mathcal{D}g\rangle ,
+\boxed{\;\langle \mathcal{D}f,g\rangle = \langle f,\mathcal{D}g\rangle\;} ,
 $$
 
 on compactly supported smooth sections.

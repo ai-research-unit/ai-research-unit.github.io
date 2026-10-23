@@ -43,7 +43,7 @@ The ternary product has three slots and the variable may be put in any of them. 
 **Theorem (the three readings).** For all $x,y,z\in A$,
 
 $$
-\Theta_{x,y}(z)=T_{x\star y,\,1}(z)=S_{x,z}(y)=T_{1,\,y^{*}z}(x).
+\boxed{\;\Theta_{x,y}(z)=T_{x\star y,\,1}(z)=S_{x,z}(y)=T_{1,\,y^{*}z}(x)\;}.
 $$
 
 **Proof.** The first identity is $xy^{*}z=(x\star y)z$, the product being read as the plain left multiplication by the derived product $x\star y$; the second is $xy^{*}z=S_{x,z}(y)$ by the definition of the sandwich; the third is $xy^{*}z=x(y^{*}z)=T_{1,\,y^{*}z}(x)$, the product read as the plain right multiplication by the element $y^{*}z$.
@@ -77,7 +77,7 @@ Consequently $\Theta_{x,y}=0$ if and only if $x\star y=0$, and $\Theta_{x,y}=\Th
 **Theorem (the operators under the commutator).** For all $x,y,u,v,p,q\in A$,
 
 $$
-[\Theta_{x,y},\Theta_{u,v}]=T_{[x\star y,\,u\star v],\,1},
+\boxed{\;[\Theta_{x,y},\Theta_{u,v}]=T_{[x\star y,\,u\star v],\,1}\;},
 $$
 
 the bracket being the commutator of the endomorphism algebra $\operatorname{End}_R(A)$. Consequently the $R$-span of the operators $\Theta_{x,y}$ is a Lie subalgebra of $\operatorname{End}_R(A)$ isomorphic to $A$ under the commutator, and it is closed under the triple commutator
@@ -149,7 +149,7 @@ The ternary operator of the pair $(x,x)$ is the quadratic object of the Jordan t
 **Theorem (the quadratic representation).** Let $A$ be commutative and let $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$, so that the derived operation is the product. Then
 
 $$
-\Theta_{x,x}(z)=x^{2}z=\mathrm{Jor}_x(z), \qquad \{x,z,x\}=xzx=\mathrm{Jor}_x(z),
+\boxed{\;\Theta_{x,x}(z)=x^{2}z=\mathrm{Jor}_x(z), \qquad \{x,z,x\}=xzx=\mathrm{Jor}_x(z)\;},
 $$
 
 where $\mathrm{Jor}_x$ is the quadratic representation of the Jordan algebra of the product; equivalently

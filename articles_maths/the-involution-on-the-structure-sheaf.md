@@ -22,7 +22,7 @@ the sheaf of **self-adjoint** or **invariant** functions, and when $2$ is invert
 **Proposition.** $\mathcal{O}_X^{\sigma}$ is a subsheaf of $\mathcal{O}_X$ and a sheaf of commutative rings; $\mathcal{O}_X$ is a sheaf of $\mathcal{O}_X^{\sigma}$-algebras; and when $2$ is invertible in $\mathcal{O}_X(X)$ there is a direct sum decomposition
 
 $$
-\mathcal{O}_X=\mathcal{O}_X^{\sigma}\oplus\mathcal{O}_X^-,\qquad \sigma(a^{\sigma}+a^-)=a^{\sigma}-a^-,
+\boxed{\;\mathcal{O}_X=\mathcal{O}_X^{\sigma}\oplus\mathcal{O}_X^-,\qquad \sigma(a^{\sigma}+a^-)=a^{\sigma}-a^-\;},
 $$
 
 exhibiting $\mathcal{O}_X$ as the trivial extension of $\mathcal{O}_X^{\sigma}$ by the $\mathcal{O}_X^{\sigma}$-module $\mathcal{O}_X^-$ with the product $\mathcal{O}_X^-\cdot\mathcal{O}_X^-\subseteq\mathcal{O}_X^{\sigma}$.
@@ -46,7 +46,7 @@ exhibiting $\mathcal{O}_X$ as the trivial extension of $\mathcal{O}_X^{\sigma}$ 
 **Proposition (the fixed module).** The **fixed part** of a $\sigma$-equivariant module is the subsheaf
 
 $$
-\mathcal{M}^{\sigma}:\ \Omega\longmapsto \{\,m\in\mathcal{M}(\Omega): u(m)=m\,\}\quad\text{for a $\sigma$-invariant $\Omega$},
+\boxed{\;\mathcal{M}^{\sigma}:\ \Omega\longmapsto \{\,m\in\mathcal{M}(\Omega): u(m)=m\,\}\quad\text{for a $\sigma$-invariant $\Omega$}\;},
 $$
 
 a sheaf of $\mathcal{O}_X^{\sigma}$-modules; the same discussion of the invariant opens as in *Equivariant Sheaves and Descent* applies, and over an invariant open set the fixed part is the fixed subspace of the $\sigma$-semilinear involution.
@@ -92,7 +92,7 @@ $$
 are inverse equivalences between the category of $\sigma$-equivariant $\mathcal{O}_X$-modules on $X$ and the category of sheaves of $\mathcal{O}_X^{\sigma}$-modules,
 
 $$
-\mathcal{M}\mathrm{od}^{\sigma}(X,\mathcal{O}_X)\simeq\mathcal{M}\mathrm{od}(X,\mathcal{O}_X^{\sigma}),
+\boxed{\;\mathcal{M}\mathrm{od}^{\sigma}(X,\mathcal{O}_X)\simeq\mathcal{M}\mathrm{od}(X,\mathcal{O}_X^{\sigma})\;},
 $$
 
 and the structure sheaf itself descends, $\mathcal{O}_X^{\sigma}$ being recovered as the fixed part of $\mathcal{O}_X$.

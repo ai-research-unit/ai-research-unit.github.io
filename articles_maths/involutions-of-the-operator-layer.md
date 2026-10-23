@@ -28,7 +28,7 @@ them.
 be monotone. The **conjugate** of $f$ is
 
 $$
-f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} : P \to P, \qquad f^{\perp}(x) = (f(x^{\perp}))^{\perp}.
+\boxed{\;f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} : P \to P, \qquad f^{\perp}(x) = (f(x^{\perp}))^{\perp}\;}.
 $$
 
 **Theorem.** The conjugate of a monotone map is monotone, and the assignment $f \mapsto f^{\perp}$ is an
@@ -36,8 +36,8 @@ involution of the set of monotone maps. It is an anti-automorphism of the compos
 order-reversing map of the pointwise order:
 
 $$
-(f^{\perp})^{\perp} = f, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}, \qquad
-f \leq g \Rightarrow g^{\perp} \leq f^{\perp} .
+\boxed{\;(f^{\perp})^{\perp} = f, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}, \qquad
+f \leq g \Rightarrow g^{\perp} \leq f^{\perp}\;} .
 $$
 
 **Proof.** For monotonicity, if $x \leq y$ then $y^{\perp} \leq x^{\perp}$, so $f(y^{\perp}) \leq
@@ -112,8 +112,8 @@ of the set of monotone maps, an **automorphism** of the composition monoid, and 
 of the pointwise order:
 
 $$
-(f^{\sigma})^{\sigma} = f, \qquad (g \circ f)^{\sigma} = g^{\sigma} \circ f^{\sigma}, \qquad
-f \leq g \Rightarrow f^{\sigma} \leq g^{\sigma} .
+\boxed{\;(f^{\sigma})^{\sigma} = f, \qquad (g \circ f)^{\sigma} = g^{\sigma} \circ f^{\sigma}, \qquad
+f \leq g \Rightarrow f^{\sigma} \leq g^{\sigma}\;} .
 $$
 
 **Proof.** The same computations as before, with $\sigma$ order-preserving, so that $f \leq g$ gives

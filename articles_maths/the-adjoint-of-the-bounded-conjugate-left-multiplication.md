@@ -21,7 +21,7 @@ $$
 **Proposition (parity, bound, injectivity).** $L_{a}$ is $\varsigma$-semilinear and bounded, with
 
 $$
-L_{a}(\lambda x)=\varsigma(\lambda)L_{a}(x),\qquad \lVert L_{a}\rVert=\lVert a\rVert,\qquad L_{a}(1)=a,
+\boxed{\;L_{a}(\lambda x)=\varsigma(\lambda)L_{a}(x),\qquad \lVert L_{a}\rVert=\lVert a\rVert,\qquad L_{a}(1)=a\;},
 $$
 
 so $L_{a}=0$ if and only if $a=0$; the parameter map $a\mapsto L_{a}$ is $\varsigma$-semilinear and isometric onto its image. The composite of two of them is linear, $L_{a}L_{b}=T_{a,b^{*}}$, so the family is not closed under composition and its composites leave the one-sided operators.
@@ -49,7 +49,7 @@ when such a bounded operator exists; the twisted rule is the rule of *Adjoints o
 **Theorem (the adjoint of $L_{a}$ for $h$, when it exists).** Let $h(x,y)=x^{*}y$ and suppose $L_{a}$ has an adjoint $S^{\dagger}$ for $h$. Then $S^{\dagger}=S_{1,a}$, $S_{1,a}(y)=y^{*}a$, and consequently
 
 $$
-xa^{*}y=a^{*}yx\qquad\text{for all }x,y\in A .
+\boxed{\;xa^{*}y=a^{*}yx\qquad\text{for all }x,y\in A\;} .
 $$
 
 **Proof.** Put $x=1$ in the defining identity $h(L_{a}x,y)=h(x,S^{\dagger}y)^{*}$: the left side is $h(a,y)=a^{*}y$ and the right is $h(1,S^{\dagger}y)^{*}=(S^{\dagger}y)^{*}$, so $S^{\dagger}y=(a^{*}y)^{*}=y^{*}a=S_{1,a}(y)$, which is $\varsigma$-semilinear. Substituting back, the identity reads $h(ax^{*},y)=h(x,y^{*}a)^{*}$; the left side is $(ax^{*})^{*}y=xa^{*}y$ and the right is $\bigl(x^{*}(y^{*}a)\bigr)^{*}=(x^{*}y^{*}a)^{*}=a^{*}yx$, so the condition is $xa^{*}y=a^{*}yx$ for all $x,y$; at $y=1$ it is $xa^{*}=a^{*}x$, that is $a^{*}$ commutes with every $x$, and with $a^{*}$ central the condition further reads $a^{*}xy=a^{*}yx$, that is $a^{*}[x,y]=0$.
@@ -69,7 +69,7 @@ $$
 **Theorem (the adjoint of the conjugate left multiplication).** Let $\tau$ be a continuous central functional whose reduction $h_{\tau}$ is perfect, the map $y\mapsto h_{\tau}(\cdot,y)$ a bijection onto $A^{*}$, so that every bounded functional on $A$ is represented through $h_{\tau}$. Then $L_{a}$ is adjointable for $h_{\tau}$ and
 
 $$
-L_{a}^{\dagger}=S_{1,a},\qquad S_{1,a}(y)=y^{*}a,
+\boxed{\;L_{a}^{\dagger}=S_{1,a},\qquad S_{1,a}(y)=y^{*}a\;},
 $$
 
 a bounded $\varsigma$-semilinear operator with $\lVert L_{a}^{\dagger}\rVert\le\lVert a\rVert$.

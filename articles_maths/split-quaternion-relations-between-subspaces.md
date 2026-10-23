@@ -41,10 +41,8 @@ $$
 where $\langle \cdot\rangle$ denotes the real span of the displayed elements. Each of the blocks $\langle 1\rangle$, $\langle \vec e_y\rangle$ and $\langle \vec e_z\rangle$ is the intersection of the distinguished subspaces containing it, and $\langle \vec e_x\rangle$ is the complement of $\mathbb{D}_2 + \mathbb{D}_3$ in $\mathbb{H}_{\mathrm{s}}$; each of the four distinguished subspaces is a sum of blocks:
 
 $$
-\boxed{\;
-S = \langle 1 \rangle, \qquad V = \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle
-\;}
-$$,
+S = \langle 1 \rangle, \qquad V = \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle,
+$$
 
 $$
 \mathbb{D}_2 = \langle 1 \rangle \oplus \langle \vec e_y \rangle, \qquad \mathbb{D}_3 = \langle 1 \rangle \oplus \langle \vec e_z \rangle .
@@ -68,11 +66,13 @@ Explicitly,
 $$
 \boxed{\;
 S \cap V = \{0\}, \quad S \cap \mathbb{D}_2 = S, \quad S \cap \mathbb{D}_3 = S, \quad V \cap \mathbb{D}_2 = \mathbb{R} \vec e_y
-\;}
-$$,
+\;},
+$$
 
 $$
-V \cap \mathbb{D}_3 = \mathbb{R} \vec e_z, \quad \mathbb{D}_2 \cap \mathbb{D}_3 = S .
+\boxed{\;
+V \cap \mathbb{D}_3 = \mathbb{R} \vec e_z, \quad \mathbb{D}_2 \cap \mathbb{D}_3 = S
+\;}.
 $$
 
 Three features are worth isolating:
@@ -119,13 +119,15 @@ The product of two vectors is not a vector: it splits as
 $$
 \boxed{\;
 \vec q\vec q_1 = -B(\vec q,\vec q_1)\cdot 1 + \tfrac{1}{2}[\vec q,\vec q_1]
-\;}
-$$,
+\;},
+$$
 
 with scalar part $-B(\vec q,\vec q_1) \in S$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $\vec e_x, \vec e_y, \vec e_z$,
 
 $$
-[\vec e_x,\vec e_y] = 2 \vec e_z, \qquad [\vec e_y,\vec e_z] = -2 \vec e_x, \qquad [\vec e_z,\vec e_x] = 2 \vec e_y,
+\boxed{\;
+[\vec e_x,\vec e_y] = 2 \vec e_z, \qquad [\vec e_y,\vec e_z] = -2 \vec e_x, \qquad [\vec e_z,\vec e_x] = 2 \vec e_y
+\;},
 $$
 
 so $[V,V] \subseteq V$ and $V \cong \mathrm{SL}_2(\mathbb{R})$. The bracket is alternating and satisfies the Jacobi identity. It is the antisymmetrisation of the product on the vector subspace.

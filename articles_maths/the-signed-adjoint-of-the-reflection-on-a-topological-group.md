@@ -20,7 +20,7 @@ the second expression holding by the identification of the linear extension with
 **Theorem (the class of reflections is closed under the adjoint).** With respect to the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$, the adjoint of the signed conjugation is the signed conjugation by the inverse,
 
 $$
-\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a} ,
+\boxed{\;\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a}\;} ,
 $$
 
 so the adjoint of a reflection is the reflection carried by the inverse of the carrying element, and the adjoint operation is an involution on the set of reflections.
@@ -40,7 +40,7 @@ so the adjoint of a reflection is the reflection carried by the inverse of the c
 **Corollary (the involution and its fixed space).** Let $\rho_a$ be a self-adjoint reflection. Then the group algebra decomposes as the direct sum of the two eigenspaces of the involution,
 
 $$
-k[G] = \ker(\rho_a - \mathrm{id}) \oplus \ker(\rho_a + \mathrm{id}),
+\boxed{\;k[G] = \ker(\rho_a - \mathrm{id}) \oplus \ker(\rho_a + \mathrm{id})\;},
 $$
 
 the two summands are mutually orthogonal for the signed form, and the first is the fixed space of the reflection, the annihilator of the second.

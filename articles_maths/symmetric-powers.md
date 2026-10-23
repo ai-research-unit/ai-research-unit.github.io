@@ -115,7 +115,7 @@ Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of t
 Thus the symmetric power is exactly the **module of coinvariants** of the permutation action,
 
 $$
-\operatorname{Sym}^n M \cong (M^{\otimes n})_{S_n} = M^{\otimes n} \big/ \langle \sigma v - v : v \in M^{\otimes n},\ \sigma \in S_n \rangle,
+\boxed{\;\operatorname{Sym}^n M \cong (M^{\otimes n})_{S_n} = M^{\otimes n} \big/ \langle \sigma v - v : v \in M^{\otimes n},\ \sigma \in S_n \rangle\;},
 $$
 
 where $\langle - \rangle$ denotes the submodule generated.
@@ -183,7 +183,7 @@ Equivalently, the map $R[x_1, \ldots, x_d] \to \operatorname{Sym}(R^d)$ sending 
 The number of multi-indices $a$ with $a_i \geq 0$ and $|a| = n$ is the number of ways of distributing $n$ indistinguishable balls into $d$ boxes, namely
 
 $$
-\operatorname{rank}_R \operatorname{Sym}^n M = \binom{n + d - 1}{d - 1} = \binom{n + d - 1}{n}.
+\boxed{\;\operatorname{rank}_R \operatorname{Sym}^n M = \binom{n + d - 1}{d - 1} = \binom{n + d - 1}{n}\;}.
 $$
 
 For $d = 1$ this is $1$ for every $n$; for $n = 1$ it is $d$; for $n = 2$ it is $\frac{d(d+1)}{2}$, the dimension of the space of symmetric $d \times d$ matrices. The values for small $d$ and $n$ are tabulated below.
@@ -234,7 +234,7 @@ This assignment is functorial: $\operatorname{Sym}^n(\operatorname{id}_M) = \ope
 **Theorem.** For all $R$-modules $M, N$ there is a natural isomorphism
 
 $$
-\operatorname{Sym}^n (M \oplus N) \cong \bigoplus_{k=0}^{n} \operatorname{Sym}^k M \otimes_R \operatorname{Sym}^{n-k} N.
+\boxed{\;\operatorname{Sym}^n (M \oplus N) \cong \bigoplus_{k=0}^{n} \operatorname{Sym}^k M \otimes_R \operatorname{Sym}^{n-k} N\;}.
 $$
 
 *Proof.* Both sides represent the same functor of $P$. Giving a symmetric multilinear map $f : (M \oplus N)^n \to P$ is the same as giving, for each $k$, a map on $M^k \times N^{n-k}$ that is symmetric multilinear in the $M$-variables and in the $N$-variables separately, the blocks being independent; a symmetric multilinear $f$ is determined by these restrictions, and any such family combines uniquely to a symmetric multilinear $f$ because the symmetry only permutes variables within each block. Hence

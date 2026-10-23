@@ -32,7 +32,7 @@ where $g$ is the induced (first fundamental) metric. The **mean curvature vector
 **Theorem (first variation of area).** For every variation $\Phi$ of $\phi$,
 
 $$
-\frac{d}{dt}A(\phi_t)\Bigr|_{t=0} = -\int_M V\cdot H\,dA ,
+\boxed{\;\frac{d}{dt}A(\phi_t)\Bigr|_{t=0} = -\int_M V\cdot H\,dA\;} ,
 $$
 
 where $dA = \sqrt{\det(g_{ij})}\,dx$ is the area element and $H$ is the mean curvature vector. Hence a surface is a critical point of the area functional for all variations fixing the boundary if and only if $H\equiv0$.
@@ -128,7 +128,7 @@ is conformal with $\sigma_{ww}+\sigma_{vv}=0$, so it is minimal, and it is one o
 **Theorem (isoperimetric inequality for minimal surfaces).** Let $\phi : D\to\mathbb{R}^n$ be a minimal disc with boundary a closed curve of length $L$. Then
 
 $$
-A(\phi) \le \frac{L^2}{4\pi} ,
+\boxed{\;A(\phi) \le \frac{L^2}{4\pi}\;} ,
 $$
 
 with equality only for the planar disc.
@@ -148,7 +148,7 @@ where $|A|^2$ is the squared norm of the second fundamental form. The **Jacobi o
 **Theorem (stability criterion).** A minimal surface is stable if and only if
 
 $$
-\int_M|A|^2f^2\,dA \le \int_M|\nabla f|^2\,dA
+\boxed{\;\int_M|A|^2f^2\,dA \le \int_M|\nabla f|^2\,dA\;}
 $$
 
 for every compactly supported $f$; the plane and the catenoid are stable, the helicoid is not, and a complete stable minimal surface in $\mathbb{R}^3$ is a plane (do Carmo–Peng, Fischer-Colbrie–Schoen).

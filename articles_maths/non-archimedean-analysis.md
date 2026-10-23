@@ -19,7 +19,7 @@ Throughout, $K$ is a complete non-Archimedean field with a nontrivial absolute v
 
 **(a)** The series converges if and only if $a_n \to 0$, and then
 $$
-\Bigl\lvert \sum_{n \geq 0} a_n \Bigr\rvert \leq \max_{n \geq 0} \lvert a_n \rvert ,
+\boxed{\;\Bigl\lvert \sum_{n \geq 0} a_n \Bigr\rvert \leq \max_{n \geq 0} \lvert a_n \rvert\;} ,
 $$
 with equality whenever the maximum is attained and the terms attaining it do not cancel.
 
@@ -123,7 +123,7 @@ the product over the positive integers not divisible by $p$, with $\mu$ the Möb
 
 **Theorem.** The product converges on $B(0,1)$, its coefficients are rational with denominators prime to $p$, so that $E_p \in \mathbb{Z}_{(p)}[[x]]$ has integral coefficients after the identification $\mathbb{Z}_{(p)} \subset \mathcal{O}$, and on the disc $B(0, \rho_{\exp})$ of convergence of the exponential,
 $$
-E_p(x) = \exp\Bigl( x + \frac{x^p}{p} + \frac{x^{p^2}}{p^2} + \cdots \Bigr) ,
+\boxed{\;E_p(x) = \exp\Bigl( x + \frac{x^p}{p} + \frac{x^{p^2}}{p^2} + \cdots \Bigr)\;} ,
 $$
 the series in the argument converging on $B(0,1)$ and its exponential on $B(0,\rho_{\exp})$. In particular $E_p(x) \equiv \exp x \pmod{x^{p}}$: the two series agree in degrees below $p$, while $E_p$, unlike $\exp$, has integral coefficients.
 
@@ -157,7 +157,7 @@ The theorem explains a structural difference from the Archimedean case: the clos
 
 **Theorem (maximum modulus principle).** Let $K$ be a complete non-Archimedean field with infinite residue field, let $f = \sum_n a_n x^n$ converge on $\overline{B}(0,r)$ and let $\lVert f \rVert_r = \sup_{\lvert x \rvert \leq r} \lvert f(x) \rvert$. Then
 $$
-\lVert f \rVert_r = \max_{n \geq 0} \lvert a_n \rvert r^n ,
+\boxed{\;\lVert f \rVert_r = \max_{n \geq 0} \lvert a_n \rvert r^n\;} ,
 $$
 and the supremum on the left is attained: there is $x_0$ with $\lvert x_0 \rvert \leq r$ and $\lvert f(x_0) \rvert = \lVert f \rVert_r$.
 

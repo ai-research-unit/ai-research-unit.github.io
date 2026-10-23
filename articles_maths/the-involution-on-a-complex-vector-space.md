@@ -27,7 +27,7 @@ Throughout, $V$ is a complex vector space of dimension $m$, regarded as a real v
 
 **Proposition (the relations).** The complex structure and any conjugation anticommute,
 $$
-Jc = -cJ,
+\boxed{\;Jc = -cJ\;},
 $$
 and with $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$, $cJ=-Jc$ they generate the Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$; the product $K = Jc$ is a real structure with $K^2 = \mathrm{id}$ and $KJ = -JK$, distinct from $c$ unless $V_0$ is $J$-stable.
 
@@ -35,7 +35,7 @@ and with $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$, $cJ=-Jc$ they generate the C
 
 **Proposition (the real form and the tangent decomposition).** The real form $V_0$ has real dimension $m$, is **totally real**, $V_0\cap JV_0 = 0$, and
 $$
-V = V_0\oplus JV_0
+\boxed{\;V = V_0\oplus JV_0\;}
 $$
 as real vector spaces; the proof of the corresponding statement for a complex manifold is the split of *Real Structures on a Complex Manifold*.
 
@@ -64,7 +64,7 @@ $$
 
 **Proposition (the conjugation of operators).** The conjugation $c$ acts on the endomorphism algebra by
 $$
-c\cdot X = cXc \qquad (X \in \operatorname{End}_{\mathbb C}(V)),
+\boxed{\;c\cdot X = cXc \qquad (X \in \operatorname{End}_{\mathbb C}(V))\;},
 $$
 and this is a $\mathbb{C}$-linear algebra automorphism of order two, whose fixed subalgebra is the complexification of the endomorphisms of the real form,
 $$

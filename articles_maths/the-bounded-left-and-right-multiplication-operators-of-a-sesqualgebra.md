@@ -39,7 +39,7 @@ $$
 and if $A$ is unital with $\lVert 1\rVert = 1$ and an isometric involution then both are equalities:
 
 $$
-\lVert L_a\rVert = \lVert a\rVert = \lVert R_a\rVert .
+\boxed{\;\lVert L_a\rVert = \lVert a\rVert = \lVert R_a\rVert\;} .
 $$
 
 *Proof.* By the submultiplicative estimate of *Banach Sesqualgebras*, $\lVert a \star x\rVert \leq \lVert a\rVert\lVert x\rVert$, so $L_a$ is bounded with norm at most $\lVert a\rVert$, and likewise $\lVert x \star a\rVert \leq \lVert x\rVert\lVert a\rVert$ gives the bound for $R_a$. For the equality, $L_a(1) = a \star 1 = a$ and $R_a(1) = 1 \star a = a^{*}$ by the unit rules $x \star 1 = x$ and $1 \star x = x^{*}$ of *Sesqualgebras*, §*The Derived Operation of an Involutive Algebra*, so $\lVert L_a\rVert \geq \lVert a\rVert/\lVert 1\rVert = \lVert a\rVert$ and $\lVert R_a\rVert \geq \lVert a^{*}\rVert/\lVert 1\rVert = \lVert a\rVert$, the last equality by the isometry of the involution.
@@ -71,7 +71,7 @@ and the kernel of $\rho$ is the **right annihilator** $\operatorname{Ann}_r(A) =
 **Proposition (the composition laws).** Suppose the product of $A$ is associative. Then
 
 $$
-L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a ,
+\boxed{\;L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a\;} ,
 $$
 
 and all three composites are bounded with norm at most $\lVert a\rVert\lVert b\rVert$.
@@ -107,7 +107,7 @@ $$
 **Proposition (the bracket with a fixed element).** For every $a$ the additive map
 
 $$
-\operatorname{ad}_a = L_a - R_a , \qquad \operatorname{ad}_a(x) = a \star x - x \star a = [a,x]_{\varsigma} ,
+\boxed{\;\operatorname{ad}_a = L_a - R_a , \qquad \operatorname{ad}_a(x) = a \star x - x \star a = [a,x]_{\varsigma}\;} ,
 $$
 
 is bounded with $\lVert \operatorname{ad}_a\rVert \leq 2\lVert a\rVert$, and it is an element of the graded algebra $\mathcal{B}(A)$ realised as the sum of an even and an odd part, namely $\operatorname{ad}_a = (-R_a, L_a)$. In the associative case it is the ordinary inner derivation $\operatorname{ad}_a(x) = a \star x - x \star a$ of the associative product; in the standard example it is neither linear nor conjugate-linear, being the difference of an odd and an even operator.

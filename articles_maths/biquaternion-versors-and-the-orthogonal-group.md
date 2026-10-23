@@ -105,7 +105,7 @@ $$
 be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, and $\Omega$ commutes with the even slot and anticommutes with every vector. In the biquaternion dictionary the quaternion units are the spatial bivectors, $\vec e_x\mapsto\gamma^{2}\gamma^{3}$, $\vec e_y\mapsto\gamma^{3}\gamma^{1}$, $\vec e_z\mapsto\gamma^{1}\gamma^{2}$, and the central scalar imaginary is $i\mapsto-\Omega$.
 
 **Theorem (the volume element is minus the identity on Lorentzian space).** On the odd slot the signed inner conjugation of the volume element negates every vector,
-$$ \boxed{\;\mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega \eta\Omega^{-1}=-\eta\;}, $$
+$$ \mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega \eta\Omega^{-1}=-\eta, $$
 so that $\Omega$ acts on the Lorentzian space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Hermitian copy of the same space the sandwich of the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{\dagger}=-i$.
 
 **Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every vector: moving $\gamma^{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma^{j}\Omega=-\Omega\gamma^{j}$, and the same for every generator. Hence $\Omega \eta\Omega^{-1}=-\Omega\Omega^{-1}\eta=-\eta$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(\tilde U)=iUi^{\dagger}=iU(-i)=-i^2\tilde U=\tilde U$.

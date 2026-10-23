@@ -55,14 +55,14 @@ The algebra is therefore an **associative commutative unital $\mathbb{R}$-algebr
 
 **Definition.** The **$\mathbb{C}$ scalar part** of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is $Q_{\blacktriangle}$, the **$j$-part** is $jQ_{\blacktriangledown}$, and the **idempotent coordinates** are $Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}$,
 $$
-\breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j).
+\boxed{\; \breve Q=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j) \;}.
 $$
 
 The algebra has no vector part: it has no vector subspace, and the two terms are the coefficients of the scalar unit $1$ and of the hyperbolic unit $j$, both complex.
 
 **Proposition (the multiplication in the idempotent coordinates).** For $\breve Q_{1}=(Q_{1+},Q_{1-})$ and $\breve Q_{2}=(Q_{2+},Q_{2-})$ in the idempotent coordinates $Q_{1+}=Q_{1\blacktriangle}+Q_{1\blacktriangledown}$, $Q_{1-}=Q_{1\blacktriangle}-Q_{1\blacktriangledown}$ and $Q_{2+}=Q_{2\blacktriangle}+Q_{2\blacktriangledown}$, $Q_{2-}=Q_{2\blacktriangle}-Q_{2\blacktriangledown}$,
 $$
-\breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+},\;Q_{1-}Q_{2-}),
+\boxed{\; \breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+},\;Q_{1-}Q_{2-}) \;},
 $$
 the product being componentwise.
 
@@ -104,7 +104,7 @@ The zero divisors, their two families and their geometry are *Zero Divisors of t
 
 **Theorem (the structure).** The component map $\varphi(\breve Q)=(Q_{+},Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras
 $$
-\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\oplus\mathbb{C},
+\boxed{\; \mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\oplus\mathbb{C} \;},
 $$
 and the ring is a direct product of two fields; it is not simple, its maximal ideals are the two idempotent lines $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$ read as kernels of the two projections, and its only idempotents are $0,1,\Pi_+,\Pi_-$.
 

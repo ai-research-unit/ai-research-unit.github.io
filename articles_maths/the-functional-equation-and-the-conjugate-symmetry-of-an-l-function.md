@@ -41,7 +41,7 @@ L(f,1-s)=\gamma(f,s)\,L(f^*,s),
 $$
 equivalently
 $$
-\Lambda_f(1-s)=\epsilon\,\overline{\Lambda_{f^*}(\bar s)},
+\boxed{\;\Lambda_f(1-s)=\epsilon\,\overline{\Lambda_{f^*}(\bar s)}\;},
 $$
 where $\epsilon$ is the sign. When $f^*=f$, that is when the coefficients are real, the equation reads $\Lambda_f(s)=\epsilon\overline{\Lambda_f(1-\bar s)}$; and $\epsilon=\pm1$ in the self-dual case with the convention that the archimedean factor is normalised so that the sign is a fourth root of unity in general.
 
@@ -51,7 +51,7 @@ where $\epsilon$ is the sign. When $f^*=f$, that is when the coefficients are re
 
 **Theorem.** The functional equation has the following consequences.
 $$
-L(f,-n)=0 \ \text{ for the negative integers } n \text{ making } \gamma(f,s) \text{ vanish and not cancelled}, \qquad \operatorname{ord}_{s=\rho}L(f,\cdot)=\operatorname{ord}_{s=1-\rho}L(f^*,\cdot),
+\boxed{\;L(f,-n)=0 \ \text{ for the negative integers } n \text{ making } \gamma(f,s) \text{ vanish and not cancelled}, \qquad \operatorname{ord}_{s=\rho}L(f,\cdot)=\operatorname{ord}_{s=1-\rho}L(f^*,\cdot)\;},
 $$
 so the zeros are symmetric under $s\mapsto1-s$ up to conjugation, and the only possible poles are the poles of the gamma factor and of $L(f,\cdot)$ itself. The completed function satisfies $\Lambda_f(s)=\epsilon^2\Lambda_f(s)$ after two reflections, so $\epsilon^2$ is the consistency of the equation with the reflection of order two.
 
@@ -67,7 +67,7 @@ fixing pointwise the **critical line** $\Re s=1/2$, and the **conjugate reflecti
 
 **Theorem.** If the coefficients of $f$ are real, so that $f^*=f$ and $\Lambda_f$ is real on the real axis in the region of convergence, then
 $$
-\Lambda_f(\kappa(s))=\epsilon\,\overline{\Lambda_f(s)},
+\boxed{\;\Lambda_f(\kappa(s))=\epsilon\,\overline{\Lambda_f(s)}\;},
 $$
 so the zeros of $\Lambda_f$ are symmetric under $\kappa$, the zero set is invariant under $s\mapsto\bar s$ and $s\mapsto1-s$ separately, and the zeros come in the quadruples $\rho$, $\bar\rho$, $1-\rho$, $1-\bar\rho$ (with coincidences at the critical line and the real axis).
 

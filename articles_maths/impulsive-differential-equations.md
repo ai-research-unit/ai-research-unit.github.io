@@ -64,8 +64,8 @@ with $A : I \to B(X)$ continuous and $B_k \in B(X)$. Its **fundamental matrix** 
 **Theorem (product formula).** On the interval $(\tau_k,\tau_{k+1}]$ the fundamental matrix is obtained by multiplying the ordinary fundamental matrices and the jump factors:
 
 $$
-W(t,\tau_k^+) = \Phi_k(t)\,\bigl(I + B_k\bigr), \qquad
-W(t,t_0) = \Phi_k(t)\,(I+B_k)\,\Phi_{k-1}(\tau_k)\cdots(I+B_1)\,\Phi_0(\tau_1)\,(I+B_0)\,\Phi_{t_0}(\tau_0),
+\boxed{\;W(t,\tau_k^+) = \Phi_k(t)\,\bigl(I + B_k\bigr), \qquad
+W(t,t_0) = \Phi_k(t)\,(I+B_k)\,\Phi_{k-1}(\tau_k)\cdots(I+B_1)\,\Phi_0(\tau_1)\,(I+B_0)\,\Phi_{t_0}(\tau_0)\;},
 $$
 
 where $\Phi_j$ denotes the ordinary fundamental matrix of $y'=A(t)y$ on the relevant interval. When $A$ is constant and the jumps occur at equally spaced times $\tau_k = kT$, the one-period product is
@@ -99,7 +99,7 @@ since $\exp(2\pi A) = I$ for the rotation generator $A$. The multipliers are $1+
 **Theorem (variation of constants).** The solution of the inhomogeneous linear impulsive system $y' = A(t)y + b(t)$, $y(\tau_k^+) = (I+B_k)y(\tau_k^-) + c_k$, with $y(t_0)=y_0$, is
 
 $$
-y(t) = W(t,t_0)y_0 + \int_{t_0}^{t}W(t,s)\,b(s)\,ds + \sum_{\tau_k \in (t_0,t]} W(t,\tau_k^+)\,c_k ,
+\boxed{\;y(t) = W(t,t_0)y_0 + \int_{t_0}^{t}W(t,s)\,b(s)\,ds + \sum_{\tau_k \in (t_0,t]} W(t,\tau_k^+)\,c_k\;} ,
 $$
 
 the sum being finite on every compact interval when the impulse times are locally finite.
@@ -145,7 +145,7 @@ $$
 with $a \ge 0$, $\beta \ge 0$ continuous, $\gamma_k \ge 0$. Then
 
 $$
-u(t) \le a\,\exp\Bigl(\int_{t_0}^t\beta(s)\,ds\Bigr)\prod_{\tau_k \in (t_0,t]}(1+\gamma_k) .
+\boxed{\;u(t) \le a\,\exp\Bigl(\int_{t_0}^t\beta(s)\,ds\Bigr)\prod_{\tau_k \in (t_0,t]}(1+\gamma_k)\;} .
 $$
 
 *Proof.* Apply the ordinary Gronwall inequality of *Ordinary Differential Equations* on each interval between consecutive impulse times, accumulating the factor $1+\gamma_k$ at each impulse.

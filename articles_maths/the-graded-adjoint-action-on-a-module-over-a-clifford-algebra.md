@@ -36,7 +36,7 @@ for homogeneous $x,f$ and every $m$, extended bilinearly.
 **Theorem.** The adjoint action is a graded action: $\rho^{\vee}$ is linear, homogeneous of degree zero, and satisfies the graded bracket identity
 
 $$
-\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)
+\boxed{\;\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)\;}
 $$
 
 for homogeneous $x,y$; equivalently, the sign $(-1)^{\lvert x\rvert\lvert f\rvert}$ is exactly the sign that makes the transpose respect the graded bracket.
@@ -63,7 +63,7 @@ the sign being $+$ on functionals of even degree and $-$ on functionals of odd d
 **Corollary (the sign rule).** The adjoint action satisfies the sign rule: for homogeneous $x,y$,
 
 $$
-\rho^{\vee}(x)\rho^{\vee}(y)=(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)+\rho^{\vee}([x,y]) ;
+\boxed{\;\rho^{\vee}(x)\rho^{\vee}(y)=(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)+\rho^{\vee}([x,y])\;} ;
 $$
 
 in particular the odd generators of the Clifford algebra graded-anticommute on the dual, as they do on the module.
@@ -75,7 +75,7 @@ in particular the odd generators of the Clifford algebra graded-anticommute on t
 **Proposition.** The standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is invariant under the left and right multiplications of *The Adjoint of the Left Multiplication on a Clifford Algebra* in the sense that it identifies the coadjoint module with the algebra, and under that identification the coadjoint action is the adjoint action of the **conjugated parameter**,
 
 $$
-\rho^{\vee}(a)\ \longleftrightarrow\ \mathrm{ad}_{\alpha(\hat a)} ,
+\boxed{\;\rho^{\vee}(a)\ \longleftrightarrow\ \mathrm{ad}_{\alpha(\hat a)}\;} ,
 $$
 
 the module-level form of the adjoint formula $L_a^*=L_{\hat a}$ of the operator theory.

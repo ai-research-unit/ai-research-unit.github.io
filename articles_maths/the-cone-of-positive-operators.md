@@ -30,7 +30,7 @@ Let $E$ and $F$ be ordered vector spaces, with positive cones $E_+$ and $F_+$, a
 **Theorem (the extreme rays between function spaces are the weighted compositions).** Let $E = C(X)$ and $F = C(Y)$ for compact Hausdorff $X$ and $Y$. A positive operator $T : C(X)\to C(Y)$ generates an extreme ray of $L_+(C(X),C(Y))$ if and only if
 
 $$
-(Tf)(y) = h(y)\,f\bigl(\phi(y)\bigr)
+\boxed{\;(Tf)(y) = h(y)\,f\bigl(\phi(y)\bigr)\;}
 $$
 
 for a continuous $\phi : Y\to X$ and a positive $h\in C(Y)$, with the caveat that the representation is unique only up to the points at which $h$ vanishes.
@@ -46,7 +46,7 @@ for a continuous $\phi : Y\to X$ and a positive $h\in C(Y)$, with the caveat tha
 **Theorem (a strictly positive rank-one operator is an order unit).** Let $E$ have an order unit $u$, let $f$ be a positive functional that is **strictly positive**, $f(x)>0$ for every nonzero $x\in E_+$, and let $v$ be an order unit of $F$. Then the rank-one operator
 
 $$
-T = f\otimes v, \qquad Tx = f(x)\,v ,
+\boxed{\;T = f\otimes v, \qquad Tx = f(x)\,v\;} ,
 $$
 
 is an order unit of $L_+(E,F)$, and the order-unit norm it defines dominates the operator norm.

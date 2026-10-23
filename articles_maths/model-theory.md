@@ -74,7 +74,7 @@ Vaught's test is the standard route to completeness, and it is applied to algebr
 **Definition.** An embedding $h : \mathcal{M} \to \mathcal{N}$ is **elementary** if for every formula $\varphi(x_1,\dots,x_n)$ and every tuple $a=(a_1,\dots,a_n)$ in $M$,
 
 $$
-\mathcal{M} \models \varphi[a_1,\dots,a_n] \iff \mathcal{N} \models \varphi[h(a_1),\dots,h(a_n)].
+\boxed{\;\mathcal{M} \models \varphi[a_1,\dots,a_n] \iff \mathcal{N} \models \varphi[h(a_1),\dots,h(a_n)]\;}.
 $$
 
 $\mathcal{M}$ is an **elementary substructure** of $\mathcal{N}$, written $\mathcal{M} \preceq \mathcal{N}$, if the inclusion is elementary.
@@ -155,7 +155,7 @@ $$
 **Theorem (quantifier-elimination criterion).** $T$ admits quantifier elimination if and only if for every quantifier-free formula $\varphi(x_1,\dots,x_n, y_1,\dots,y_m)$, every pair of models $\mathcal{M}, \mathcal{N}$ of $T$ with a common substructure $\mathcal{A}$, and every tuple $a=(a_1,\dots,a_m)$ in $A$,
 
 $$
-\mathcal{M} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m) \iff \mathcal{N} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m).
+\boxed{\;\mathcal{M} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m) \iff \mathcal{N} \models \exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n, a_1,\dots,a_m)\;}.
 $$
 
 **Proof sketch.** If $T$ admits quantifier elimination, then $\exists x_1\cdots\exists x_n\,\varphi(x_1,\dots,x_n,y_1,\dots,y_m)$ is equivalent modulo $T$ to a quantifier-free formula $\psi(y_1,\dots,y_m)$; for the tuple $a=(a_1,\dots,a_m)$ in the common substructure $\mathcal{A}$, the truth of $\psi(a_1,\dots,a_m)$ is decided inside $\mathcal{A}$ and hence is the same in $\mathcal{M}$ and in $\mathcal{N}$. Conversely, the criterion permits the construction, by induction on the number of quantifiers, of a quantifier-free equivalent for each formula, the quantifier step being handled by showing that the set of tuples satisfying $\exists x_1\cdots\exists x_n\,\varphi$ is already quantifier-free definable.
@@ -227,7 +227,7 @@ The relation is an equivalence relation because $U$ is a filter; the quotient ca
 **Theorem (Łoś).** For every formula $\varphi(x_1,\ldots,x_n)$ and every tuple $[f_1],\ldots,[f_n]$ of the ultraproduct,
 
 $$
-\prod_U \mathcal{M}_i \models \varphi[[f_1],\ldots,[f_n]] \iff \{i \in I : \mathcal{M}_i \models \varphi[f_1(i),\ldots,f_n(i)]\} \in U.
+\boxed{\;\prod_U \mathcal{M}_i \models \varphi[[f_1],\ldots,[f_n]] \iff \{i \in I : \mathcal{M}_i \models \varphi[f_1(i),\ldots,f_n(i)]\} \in U\;}.
 $$
 
 **Proof sketch.** Induction on the complexity of $\varphi$. For an atomic formula the statement is the definition of the coordinatewise interpretation modulo $U$. For a conjunction, the two sets whose membership in $U$ is asserted are the intersection of the two sets for the conjuncts, and an ultrafilter is closed under finite intersections and contains a set exactly when it contains its supersets. For a negation, use that an ultrafilter contains exactly one of a set and its complement. For a quantifier, the existential case is the substantive one: if the set of indices at which a witness exists lies in $U$, one chooses a witness at each such index using the axiom of choice and glues them into a function; the axiom of choice is used exactly here.

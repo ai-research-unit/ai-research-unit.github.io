@@ -32,7 +32,7 @@ The conventions are those of *Presheaves and Sheaves* for sheaves and stalks and
 **Proposition (the induced map on cohomology is zero).** If $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ is a coboundary of a complex, then $d^i$ carries the cocycles $\ker d^i$ into the coboundaries $\operatorname{im}d^i$, and consequently the map induced by $d^i$ on the cohomology sheaves is zero:
 
 $$
-d^i(\ker d^i)\subseteq\operatorname{im}d^i,\qquad \mathcal{H}^i(\mathcal{F}^\bullet)\to\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\ \text{induced by}\ d^i\ \text{is}\ 0 .
+\boxed{\;d^i(\ker d^i)\subseteq\operatorname{im}d^i,\qquad \mathcal{H}^i(\mathcal{F}^\bullet)\to\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\ \text{induced by}\ d^i\ \text{is}\ 0\;} .
 $$
 
 *Proof.* If $s\in\ker d^i$, then $d^i(s)\in\operatorname{im}d^i$ by definition of the image, and $d^i(s)\in\ker d^{i+1}$ because $d^{i+1}d^i=0$; so $d^i(s)$ is a coboundary, and its class in $\mathcal{H}^{i+1}$ is zero.
@@ -58,7 +58,7 @@ the quotient in the abelian category of sheaves; the kernel and the image are th
 **Proposition (stalks of the cohomology sheaves).** For every $x\in X$ and every $i$,
 
 $$
-\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x),
+\boxed{\;\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x)\;},
 $$
 
 the cohomology of the complex of stalks; and a morphism of complexes is a quasi-isomorphism if and only if it induces an isomorphism on the complexes of stalks at every point.
@@ -86,7 +86,7 @@ whose coboundary is the coboundary of $\mathcal{F}^\bullet$ applied to sections,
 **Theorem (the abstract de Rham theorem).** If $(\mathcal{F}^\bullet,d)$ is a resolution of a sheaf $\mathcal{F}$ by acyclic sheaves, $H^j(X,\mathcal{F}^i)=0$ for $j>0$, then there is a natural isomorphism
 
 $$
-H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)\cong H^i(X,\mathcal{F})
+\boxed{\;H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)\cong H^i(X,\mathcal{F})\;}
 $$
 
 for every $i$. More generally, any resolution whose complex of sections is effaceable computes the cohomology.

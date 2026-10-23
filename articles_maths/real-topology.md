@@ -69,8 +69,7 @@ Thus the connected subsets of $\mathbb{R}$ are the intervals — the sets $[a,b]
 
 **The punctured line.** Removing a point disconnects the line into exactly two components:
 
-$$
-\mathbb{R} \setminus \{q_0\} = (-\infty, q_0) \sqcup (q_0, \infty), \qquad \pi_0(\mathbb{R}\setminus\{q_0\}) \cong \{\pm1\}.
+$$ \boxed{\;\mathbb{R} \setminus \{q_0\} = (-\infty, q_0) \sqcup (q_0, \infty), \qquad \pi_0(\mathbb{R}\setminus\{q_0\}) \cong \{\pm1\}\;}.
 $$
 
 In particular the group of units $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ has two components, the positive and negative rays, as recorded in *Real Norm and Invertibility* and *Real Exponential and Lie Group Structure*. In the complex case the punctured plane is connected, because a plane minus a point can be walked around; the disconnectedness of the punctured line is the one-dimensional exception, and it is why the real unit group is disconnected.
@@ -93,8 +92,7 @@ The unit set is the group $O(1)$, and it is the **base case** of the theorem tha
 
 **The group of units.** $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ is an open, dense, disconnected, non-compact topological group with two contractible components, the positive and negative rays. Its identity component is $\mathbb{R}_{>0}$, and its group of components is the sign group:
 
-$$
-\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}, \qquad \pi_0(\mathbb{R}^\times) \cong \{\pm1\}.
+$$ \boxed{\;\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}, \qquad \pi_0(\mathbb{R}^\times) \cong \{\pm1\}\;}.
 $$
 
 ## Contractibility and the Homotopy Groups
@@ -123,8 +121,7 @@ The real unit group is thus homotopy equivalent to a two-point space, and every 
 
 **The one-point compactification.** $\mathbb{R}$ is locally compact and Hausdorff but not compact, so it has an **Alexandrov one-point compactification**
 
-$$
-\mathbb{R} \cup \{\infty\} \cong S^1,
+$$ \boxed{\;\mathbb{R} \cup \{\infty\} \cong S^1\;},
 $$
 
 the circle, obtained by adjoining the single point $\infty$ that closes up the two unbounded directions. The construction is the quotient of the two-point compactification below that identifies the two ends, and it is the standard instance of the one-point compactification of a locally compact space.

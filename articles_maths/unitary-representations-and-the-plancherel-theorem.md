@@ -30,7 +30,7 @@ and the assignment $\pi\mapsto(\pi(f))_{f\in L^1(G)}$ is a bijection, up to unit
 **Corollary (the transform of the group algebra).** The **operator-valued Fourier transform** $f\mapsto\mathcal F f$, $(\mathcal F f)(\pi) = \pi(f)$, satisfies
 
 $$
-\widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi), \qquad \widehat{f^*}(\pi) = (\mathcal F f)(\pi)^* ,
+\boxed{\;\widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi), \qquad \widehat{f^*}(\pi) = (\mathcal F f)(\pi)^*\;} ,
 $$
 
 so it is a `*`-homomorphism from the group algebra into the direct product of the algebras $B(\mathcal{H}_\pi)$ over the dual, with the uniform bound $\|(\mathcal F f)(\pi)\|\leq\|f\|_1$.
@@ -44,7 +44,7 @@ so it is a `*`-homomorphism from the group algebra into the direct product of th
 **Theorem (Plancherel, representation-theoretic form).** Let $G$ be unimodular and of type I. There is a measure $\mu$ on the unitary dual $\hat G$, unique up to normalisation, called the **Plancherel measure**, such that for every $f\in L^1(G)\cap L^2(G)$
 
 $$
-\int_G |f(x)|^2\,dx = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,(\mathcal F f)(\pi)^*\bigr)\,d\mu(\pi) = \int_{\hat G} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu(\pi) ,
+\boxed{\;\int_G |f(x)|^2\,dx = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,(\mathcal F f)(\pi)^*\bigr)\,d\mu(\pi) = \int_{\hat G} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu(\pi)\;} ,
 $$
 
 and the transform $f\mapsto\mathcal F f$ extends to a unitary equivalence
@@ -60,7 +60,7 @@ between the group $L^2$ space and the direct integral of the Hilbert–Schmidt s
 **Corollary (the inversion formula).** For $f$ whose transform is of trace class for $\mu$-almost every $\pi$ and integrable against the measurable field of trace norms, one has, for almost every $x\in G$ and in the sense of distributions in general,
 
 $$
-f(x) = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,\pi(x)^{*}\bigr)\,d\mu(\pi) , \qquad \pi(x)^* = \pi(x^{-1}) .
+\boxed{\;f(x) = \int_{\hat G} \operatorname{tr}\!\bigl((\mathcal F f)(\pi)\,\pi(x)^{*}\bigr)\,d\mu(\pi) , \qquad \pi(x)^* = \pi(x^{-1})\;} .
 $$
 
 **Proof.** The identity is Plancherel polarised, $\langle f,g\rangle_{L^2} = \int_{\hat G}\operatorname{tr}((\mathcal F f)(\pi)(\mathcal F g)(\pi)^*)d\mu(\pi)$, with $g$ taken as an approximate identity concentrated at $x$; continuity of the pairings gives the pointwise statement where the integrand is integrable, and the distributional statement otherwise.

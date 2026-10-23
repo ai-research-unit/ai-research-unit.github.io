@@ -37,11 +37,21 @@ Each structure is read with its product and with its decomposition: the operatio
 
 ### The General Plain Algebra (GPA)
 
-Its product is the **general plain bilinear product**. Its decomposition is the scalar part $Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2$, and it splits into its two parts, $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$. The multiplication is associative, $e_t$ is a unit on both sides, and the values fill the whole space.
+Its product is the **general plain bilinear product**. Its decomposition is the scalar part $Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2$, and it splits into its two parts:
+
+$$
+\boxed{\;\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}\;}.
+$$
+
+The multiplication is associative, $e_t$ is a unit on both sides, and the values fill the whole space.
 
 ### The General Plain Sesqualgebra (GPS)
 
-Its product is the **general plain sesquilinear product**. Its decomposition is the scalar part $Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and the vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, and it splits into its two parts, $\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, $e_t$ is a unit on the right only, and the values fill the whole space.
+Its product is the **general plain sesquilinear product**. Its decomposition is the scalar part $Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and the vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, and it splits into its two parts,
+$$
+\boxed{\;\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}\;}
+$$
+The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, $e_t$ is a unit on the right only, and the values fill the whole space.
 
 ### The General Quaternionic Algebra (GQA)
 

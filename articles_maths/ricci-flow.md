@@ -28,7 +28,7 @@ where $R_{ij}$ is the Ricci tensor of $g(t)$. The flow is **normalised** if the 
 *Proof.* Quoted as standard (Hamilton). The equation is not parabolic because of its diffeomorphism invariance, and the proof introduces the **DeTurck trick**: one adds to the flow the Lie derivative $\mathcal{L}_{W(g)}g$ of the metric along a vector field $W$ determined by the difference of the connections of $g$ and of a fixed background metric, obtaining the **Ricci–DeTurck equation**
 
 $$
-\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + \nabla_iW_j+\nabla_jW_i ,
+\boxed{\;\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + \nabla_iW_j+\nabla_jW_i\;} ,
 $$
 
 which has a strictly parabolic principal symbol of quasilinear type. The parabolic existence theorem gives a solution for short time, and one undoes the gauge by solving the flow of the time-dependent vector field $W$ and pulling the solution back; the diffeomorphism invariance of the Ricci tensor makes the pulled-back solution a Ricci flow. Uniqueness follows from the uniqueness for the parabolic equation in the fixed gauge.
@@ -50,7 +50,7 @@ so the volume decreases when the scalar curvature is positive and increases when
 **Theorem (evolution of the scalar curvature).** Along a Ricci flow,
 
 $$
-\frac{\partial R}{\partial t} = \Delta R + 2|R_{ij}|^2 ,
+\boxed{\;\frac{\partial R}{\partial t} = \Delta R + 2|R_{ij}|^2\;} ,
 $$
 
 where $\Delta$ is the Laplace–Beltrami operator of $g(t)$ and $|R_{ij}|^2 = R_{ij}R^{ij}$.
@@ -124,8 +124,8 @@ for a constant $C$ depending only on the initial metric; consequently the curvat
 **Theorem (Perelman's monotonicity).** The **entropy** functionals
 
 $$
-\mathcal{F}(g,f) = \int_M\bigl(R+|\nabla f|^2\bigr)\exp(-f)dV, \qquad
-\mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}\exp(-f)dV
+\boxed{\;\mathcal{F}(g,f) = \int_M\bigl(R+|\nabla f|^2\bigr)\exp(-f)dV, \qquad
+\mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}\exp(-f)dV\;}
 $$
 
 are monotone along the coupled flow $\partial/\partial t\,g=-2R_{ij}$, $\partial/\partial t\,f=-\Delta f+|\nabla f|^2-R$ (and $\partial/\partial t\tau=-1$ for $\mathcal{W}$): $\frac{d}{dt}\mathcal{F}\ge0$ and $\frac{d}{dt}\mathcal{W}\ge0$, with equality only for the corresponding solitons.

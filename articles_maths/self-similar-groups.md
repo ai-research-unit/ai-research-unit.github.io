@@ -67,7 +67,7 @@ the product being the concatenation of the words, and by the letter $x \in X$ re
 **Proposition (the multiplication rule).** For $g, h \in \operatorname{Aut}(\mathcal{T})$ and $v \in X^*$,
 
 $$
-(gh)|_v = g|_{h(v)}\,h|_v .
+\boxed{\;(gh)|_v = g|_{h(v)}\,h|_v\;} .
 $$
 
 **Proof.** For every word $w$, $(gh)(vw) = g(h(vw)) = g\bigl(h(v)\,h|_v(w)\bigr) = g(h(v))\,g|_{h(v)}(h|_v(w))$, and the left side is $(gh)(v)\,(gh)|_v(w) = g(h(v))\,(gh)|_v(w)$; comparing gives the identity.
@@ -119,7 +119,7 @@ $$
 is an injective group homomorphism, so that $G$ embeds in its own permutational wreath product. Iterating the recursion one has, for every $n$, an embedding
 
 $$
-G \hookrightarrow G \wr \operatorname{Aut}(\mathcal{T}_n),
+\boxed{\;G \hookrightarrow G \wr \operatorname{Aut}(\mathcal{T}_n)\;},
 $$
 
 where the finite group $\operatorname{Aut}(\mathcal{T}_n)$ acts on the level $X^n$.
@@ -203,7 +203,7 @@ so that $\langle b, c, d\rangle \cong (\mathbb{Z}/2)^2$; the group is generated 
 The growth of the group is intermediate, which is what makes it the counterexample to the generalised Milnor problem. With respect to a finite generating set the volume growth function of *Geometric Group Theory*, $v_{G,S}(n) = \#\{g \in G : |g|_S \leq n\}$, is neither polynomial nor exponential, and
 
 $$
-\lim_{n \to \infty} \frac{\log\log v_{G,S}(n)}{\log n} = \alpha_0 = \frac{\log 2}{\log\lambda_0} \approx 0.7674,
+\boxed{\;\lim_{n \to \infty} \frac{\log\log v_{G,S}(n)}{\log n} = \alpha_0 = \frac{\log 2}{\log\lambda_0} \approx 0.7674\;},
 $$
 
 where $\lambda_0$ is the positive root of $X^3 - X^2 - 2X - 4 \approx 2.4675$; this is the theorem of Erschler and Zheng, and the corresponding upper bound is due to Bartholdi. The growth is therefore $\exp\bigl(n^{\alpha_0 + o(1)}\bigr)$, strictly between polynomial and exponential, and it is the same for every finite generating set because the growth type is a quasi-isometry invariant. The intermediate growth is visible from the tree: a section of a long word is shorter than the word, because the four sections of the generators lie in the five-element set $\{1, a, b, c, d\}$, and the recursion therefore shrinks the word length — the **contraction** that the next article turns into an algorithm. The amenability and the failure of elementary amenability are those of *Amenable Groups*, where the group is the example showing that the class of elementary amenable groups is strictly smaller than the amenable class.

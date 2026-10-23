@@ -32,7 +32,7 @@ Throughout, $k$ is a field, $V$ is a finite-dimensional $k$-vector space of dime
 **Theorem.** As a $k[x]$-module,
 
 $$
-V_T \;\cong\; k[x]/(f_1) \oplus k[x]/(f_2) \oplus \cdots \oplus k[x]/(f_k),
+\boxed{\;V_T \;\cong\; k[x]/(f_1) \oplus k[x]/(f_2) \oplus \cdots \oplus k[x]/(f_k)\;},
 $$
 
 where $f_1 \mid f_2 \mid \cdots \mid f_k$ are monic polynomials of degree at least $1$. The $f_i$ are the **invariant factors** of $T$ and are uniquely determined by $T$. In this decomposition,
@@ -60,7 +60,7 @@ $$
 **Theorem (rational canonical form).** Every operator $T$ on a finite-dimensional $k$-vector space is represented in some basis by the block diagonal matrix
 
 $$
-\operatorname{diag}\bigl(C(f_1),\dots,C(f_k)\bigr),
+\boxed{\;\operatorname{diag}\bigl(C(f_1),\dots,C(f_k)\bigr)\;},
 $$
 
 where $f_1 \mid \cdots \mid f_k$ are the invariant factors of $T$; this form is unique up to the ordering of the blocks, which is determined by the divisibility chain, and it requires no hypothesis on the field.

@@ -29,7 +29,7 @@ The **action of $J$** on $M$ is the composite $J\to\operatorname{Mult}(J)\to\ope
 **Proposition.** A module over $J$ is the same thing as an $R$-module $M$ with an $R$-linear map $\rho : J \to \operatorname{End}_R(M)$ such that
 
 $$
-\rho_{a\bullet b} = \tfrac12\bigl(\rho_a\rho_b + \rho_b\rho_a\bigr) \qquad \text{and} \qquad [\rho_a, \rho_{a^2}] = 0 ,
+\boxed{\;\rho_{a\bullet b} = \tfrac12\bigl(\rho_a\rho_b + \rho_b\rho_a\bigr) \qquad \text{and} \qquad [\rho_a, \rho_{a^2}] = 0\;} ,
 $$
 
 the second being the operator form of the Jordan identity.
@@ -71,7 +71,7 @@ $$
 **Theorem (compatibility of the action with the grading).** For homogeneous $a \in J$ and homogeneous $m \in M$,
 
 $$
-\rho_a(M_j) \subseteq M_{\overline{j+|a|}} , \qquad \rho_a(m) = a \cdot m \in M_{\overline{j+|a|}} .
+\boxed{\;\rho_a(M_j) \subseteq M_{\overline{j+|a|}} , \qquad \rho_a(m) = a \cdot m \in M_{\overline{j+|a|}}\;} .
 $$
 
 Hence the representing map $J \to \operatorname{End}_R(M)$ is **graded**: it maps $J_i$ into the operators that shift the module degree by $i$.
@@ -105,7 +105,7 @@ Thus the graded action differs from the unsigned action by the parity sign $(-1)
 **Theorem (the sign rule).** For every $L \in \operatorname{Mult}(J)$,
 
 $$
-\alpha_M\,\rho_L\,\alpha_M^{-1} = \rho_{\alpha(L)} ,
+\boxed{\;\alpha_M\,\rho_L\,\alpha_M^{-1} = \rho_{\alpha(L)}\;} ,
 $$
 
 where $\alpha(L)$ is the automorphism of the multiplication algebra induced by $\alpha$ on the generators, $\alpha(L_a) = L_{\alpha(a)}$; consequently, for homogeneous $a, b$,

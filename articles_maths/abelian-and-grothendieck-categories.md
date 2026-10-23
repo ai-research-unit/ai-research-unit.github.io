@@ -52,7 +52,7 @@ $$
 **Definition.** An additive category $\mathcal{A}$ is **abelian** if every morphism has a kernel and a cokernel, and for every $f:A\to B$ the canonical map
 
 $$
-\operatorname{coim}f \longrightarrow \operatorname{im}f
+\boxed{\;\operatorname{coim}f \longrightarrow \operatorname{im}f\;}
 $$
 
 is an isomorphism, where $\operatorname{coim}f=\operatorname{coker}(\ker f\to A)$ and $\operatorname{im}f=\ker(B\to\operatorname{coker}f)$.
@@ -94,7 +94,7 @@ $$
 and maps $a:A\to A'$, $b:B\to B'$, $c:C\to C'$ commuting with the rows, there is an exact sequence
 
 $$
-\ker a\to\ker b\to\ker c\xrightarrow{\ \partial\ }\operatorname{coker}a\to\operatorname{coker}b\to\operatorname{coker}c,
+\boxed{\;\ker a\to\ker b\to\ker c\xrightarrow{\ \partial\ }\operatorname{coker}a\to\operatorname{coker}b\to\operatorname{coker}c\;},
 $$
 
 and the connecting morphism $\partial$ is natural in the diagram.

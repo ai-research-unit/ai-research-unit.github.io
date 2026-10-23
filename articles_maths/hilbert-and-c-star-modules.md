@@ -63,7 +63,7 @@ Two further identities are used repeatedly. For a self-adjoint element the order
 **Theorem (Cauchy–Schwarz).** Let $E$ be a pre-Hilbert $A$-module. For all $x,y \in E$,
 
 $$
-\langle x,y\rangle^*\langle x,y\rangle \leq \|x\|^2 \langle y,y\rangle, \qquad \|\langle x,y\rangle\| \leq \|x\|\,\|y\|.
+\boxed{\;\langle x,y\rangle^*\langle x,y\rangle \leq \|x\|^2 \langle y,y\rangle, \qquad \|\langle x,y\rangle\| \leq \|x\|\,\|y\|\;}.
 $$
 
 The first inequality is in the order of $A$; the second is the numerical consequence.
@@ -79,7 +79,7 @@ Choose $a=-\langle x,x\rangle^{-1}\langle x,y\rangle$ when $\langle x,x\rangle$ 
 **Theorem.** The $A$-valued norm $\|x\|=\|\langle x,x\rangle\|^{1/2}$ is a norm on $E$. It satisfies the parallelogram law
 
 $$
-\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2
+\boxed{\;\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2\;}
 $$
 
 when the inner product is scalar-valued, that is for $A=\mathbb{C}$, and it fails in general.
@@ -190,7 +190,7 @@ The compatibility relation is the statement that the left inner product acts as 
 **Theorem (Rieffel).** If $E$ is an $A$-$B$-imprimitivity bimodule, then
 
 $$
-A \cong \mathcal{K}(E_B), \qquad B \cong \mathcal{K}({}_A E),
+\boxed{\;A \cong \mathcal{K}(E_B), \qquad B \cong \mathcal{K}({}_A E)\;},
 $$
 
 and the categories of nondegenerate \*-representations of $A$ and of $B$ are equivalent. The algebras $A$ and $B$ are then said to be **Morita equivalent** as $C^*$-algebras.

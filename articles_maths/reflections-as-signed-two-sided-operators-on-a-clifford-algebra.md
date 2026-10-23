@@ -16,7 +16,7 @@ The article reads the reflections as the involutive members of the signed family
 **Proposition (the correspondence for a non-degenerate form).** Let $q$ be non-degenerate. The map
 
 $$
-\{u\in V : \mathfrak{Q}(u)\ne0\}\big/\sim \ \longrightarrow\ \{\text{reflections of }(V,\mathfrak{Q})\}, \qquad [u]\mapsto\rho_u ,
+\boxed{\;\{u\in V : \mathfrak{Q}(u)\ne0\}\big/\sim \ \longrightarrow\ \{\text{reflections of }(V,\mathfrak{Q})\}, \qquad [u]\mapsto\rho_u\;} ,
 $$
 
 where $u\sim\lambda u$ for $\lambda\in F^{\times}$, is a bijection. Every reflection is a signed two-sided operator, $T^{\alpha}_{u,u^{-1}}=\rho_u$, and conversely every signed sandwich by a unit acting on $V$ by an involution with a fixed hyperplane of codimension one is a reflection.

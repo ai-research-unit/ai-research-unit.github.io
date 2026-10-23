@@ -161,7 +161,7 @@ For a general field $F$ the same construction is carried out by transfinite recu
 **Corollary (the principle in its classical form).** Let $f_1, \dots, f_m, g \in \mathbb{Z}[x_1, \dots, x_n]$ be polynomials. If the implication
 
 $$
-f_1 = \dots = f_m = 0 \implies g = 0
+\boxed{\;f_1 = \dots = f_m = 0 \implies g = 0\;}
 $$
 
 holds over $\mathbb{C}$, then it holds over every algebraically closed field of characteristic $0$; and it holds over every algebraically closed field of sufficiently large characteristic.

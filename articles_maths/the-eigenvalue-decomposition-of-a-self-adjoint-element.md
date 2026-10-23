@@ -33,7 +33,7 @@ If $h$ is self-adjoint, then $p(h)^*=p^\varsigma(h)$.
 **Theorem.** Let $h$ be self-adjoint and let $m_h$ be its minimal polynomial. Then $m_h$ has coefficients in the fixed field $F_0$:
 
 $$
-m_h\in F_0[x].
+\boxed{\;m_h\in F_0[x]\;}.
 $$
 
 Consequently the spectrum of $h$ is stable under $\varsigma$: if $\lambda$ is an eigenvalue of $h$, then so is $\varsigma(\lambda)$.
@@ -55,7 +55,7 @@ $$
 with the $\lambda_i$ pairwise distinct. Then there is an involution $\pi$ of the index set $\{1,\dots,r\}$ such that
 
 $$
-e_i^*=e_{\pi(i)}, \qquad \lambda_{\pi(i)}=\varsigma(\lambda_i) \qquad (i=1,\dots,r).
+\boxed{\;e_i^*=e_{\pi(i)}, \qquad \lambda_{\pi(i)}=\varsigma(\lambda_i) \qquad (i=1,\dots,r)\;}.
 $$
 
 *Proof.* Apply the involution to the decomposition. The left side is $h^*=h$. The right side is $\sum_i\varsigma(\lambda_i)e_i^*$, by semilinearity and anti-multiplicativity. The elements $e_i^*$ are nonzero idempotents: $e_i^*e_i^*=(e_i^2)^*=e_i^*$, and $e_i^*=0$ would give $e_i=(e_i^*)^*=0$. They are orthogonal, $e_i^*e_j^*=(e_je_i)^*=0$ for $i\neq j$, and they resolve the identity, $\sum_i e_i^*=1^*=1$. The scalars $\varsigma(\lambda_i)$ are pairwise distinct because $\varsigma$ is injective. Hence
@@ -105,7 +105,7 @@ $$
 Then the $g_J$ are pairwise orthogonal Hermitian idempotents with $\sum_J g_J=1$, and
 
 $$
-h=\sum_{J\in\mathcal{O}}h_J, \qquad h_J=h g_J=g_Jhg_J,
+\boxed{\;h=\sum_{J\in\mathcal{O}}h_J, \qquad h_J=h g_J=g_Jhg_J\;},
 $$
 
 where $h_J$ is self-adjoint and lies in the corner $g_JAg_J$. For a one-element orbit $J=\{\lambda\}$, $h_J=\lambda g_J$ with $\lambda\in F_0$. For a two-element orbit $J=\{\lambda,\bar\lambda\}$, put

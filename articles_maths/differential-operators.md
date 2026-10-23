@@ -71,7 +71,7 @@ The symbol is a function of $x$ and of the frequency vector $\xi$; it is the tot
 **Theorem (the symbol of a composition).** Let $L_1$ and $L_2$ have symbols $\sigma_1$ and $\sigma_2$ and orders $m_1$ and $m_2$. Then the symbol of the composition is
 
 $$
-\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\xi^\gamma\,\sigma_1(x,\xi)\,\partial/\partial x^\gamma\,\sigma_2(x,\xi) ,
+\boxed{\;\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\xi^\gamma\,\sigma_1(x,\xi)\,\partial/\partial x^\gamma\,\sigma_2(x,\xi)\;} ,
 $$
 
 the sum being finite because $\partial/\partial\xi^\gamma\,\sigma_1$ vanishes for $|\gamma|>m_1$; the principal part of the right-hand side is the product $\sigma_{m_1}(x,\xi)\sigma_{m_2}(x,\xi)$ of the principal symbols.
@@ -119,7 +119,7 @@ Both are differential operators of order at most $m$, with coefficients as smoot
 **Theorem (the defining identity).** Let $u$ and $v$ be of class $C_c^\infty(\Omega)$. Then
 
 $$
-\int_\Omega (Lu)\,\bar v\,dx = \int_\Omega u\,\overline{L^{\dagger}v}\,dx , \qquad \int_\Omega (Lu)\,v\,dx = \int_\Omega u\,(L^{t}v)\,dx .
+\boxed{\;\int_\Omega (Lu)\,\bar v\,dx = \int_\Omega u\,\overline{L^{\dagger}v}\,dx , \qquad \int_\Omega (Lu)\,v\,dx = \int_\Omega u\,(L^{t}v)\,dx\;} .
 $$
 
 *Proof.* It suffices to treat a single term $a_\alpha\partial^\alpha$ and to sum. For compactly supported smooth functions the boundary terms of the integration by parts vanish, and iterating $|\alpha|$ times gives
@@ -174,7 +174,7 @@ where $Lu$ is taken in the sense of distributions; the **minimal realisation** i
 **Theorem (the domain decides self-adjointness).** Let $L$ be a differential operator with smooth coefficients. The formal adjoint is the transpose of the maximal realisation in the sense that, for $v \in \mathcal{D}_{\max}(L)$ and $u \in C_c^\infty(\Omega)$,
 
 $$
-\langle Lu,v\rangle = \langle u, L^{\dagger}v\rangle ,
+\boxed{\;\langle Lu,v\rangle = \langle u, L^{\dagger}v\rangle\;} ,
 $$
 
 and the minimal realisation of $L$ is contained in the adjoint of the maximal realisation of $L^{\dagger}$. The equality $\mathcal{D}(L)=\mathcal{D}(L^{\dagger})$ and $L = L^{\dagger}$ holds for some choice of boundary condition but not for the maximal realisation alone: the expression $-\Delta$ on a bounded domain is symmetric on $C_c^\infty(\Omega)$ and has distinct self-adjoint extensions differing in their boundary conditions.

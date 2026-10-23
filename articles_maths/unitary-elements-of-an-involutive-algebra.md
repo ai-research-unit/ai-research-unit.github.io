@@ -35,7 +35,7 @@ $$
 is an automorphism of the group of units with $\theta^2 = \mathrm{id}$, and
 
 $$
-\mathrm{U}(A) = \{g \in A^\times : \theta(g) = g\}
+\boxed{\;\mathrm{U}(A) = \{g \in A^\times : \theta(g) = g\}\;}
 $$
 
 is its fixed subgroup.
@@ -73,7 +73,7 @@ shows that the coefficient of $t$ vanishes exactly when $x^* = -x$, that is exac
 **Corollary.** For every unitary $u$ the elements $u + u^*$ and $i(u - u^*)$ are self-adjoint when the square root of $-1$ exists in $k$, and $u - u^*$ is always skew. The unitary elements therefore decompose in the affine form
 
 $$
-u = \tfrac12(u + u^*) + \tfrac12(u - u^*),
+\boxed{\;u = \tfrac12(u + u^*) + \tfrac12(u - u^*)\;},
 $$
 
 the first summand self-adjoint and the second skew, which is the decomposition $A = A^+\oplus A^-$ applied to $u$.
@@ -109,7 +109,7 @@ Consequently $H(A)$ is closed under $\bullet$, and the skew part $A^-$ is a **Jo
 **Proposition.** Let $k$ be a skew element with $1 - k$ invertible, and set
 
 $$
-u = (1+k)(1-k)^{-1} .
+\boxed{\;u = (1+k)(1-k)^{-1}\;} .
 $$
 
 Then $u$ is unitary, and its inverse is $(1-k)(1+k)^{-1}$. In particular the unitary group contains the image of the Cayley transform of the skew elements, and the transform is the algebraic substitute for the exponential of the Lie algebra: its first-order term at $k = 0$ is $2k$.

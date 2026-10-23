@@ -78,7 +78,7 @@ that is continuous for the strong operator topology on $\mathrm{U}(\mathcal{H})$
 **Proposition (complete reducibility of invariant subspaces).** Let $\pi$ be a unitary representation on $\mathcal{H}$ and let $M \subseteq \mathcal{H}$ be a closed invariant subspace. Then $M^\perp$ is closed and invariant, and
 
 $$
-\mathcal{H} = M \oplus M^\perp
+\boxed{\;\mathcal{H} = M \oplus M^\perp\;}
 $$
 
 as unitary representations. Consequently every finite-dimensional unitary representation is completely reducible, and every unitary representation of a compact group is completely reducible once it is known that the irreducible representations of a compact group are finite-dimensional.
@@ -110,7 +110,7 @@ as unitary representations. Consequently every finite-dimensional unitary repres
 **Proposition.** Let $\pi$ be a unitary representation. The commutant $\pi(G)' = \operatorname{End}_G(\pi)$ is a strongly closed self-adjoint subalgebra of $B(\mathcal{H}_\pi)$ containing $1$: a **von Neumann algebra**. If $\pi = \bigoplus_{i \in I}\pi_i$ is a direct sum of irreducible representations, then
 
 $$
-\operatorname{End}_G(\pi) \cong \prod_i \mathbb{C}\cdot 1_{\mathcal{H}_{\pi_i}} \qquad \text{when the } \pi_i \text{ are pairwise inequivalent,}
+\boxed{\;\operatorname{End}_G(\pi) \cong \prod_i \mathbb{C}\cdot 1_{\mathcal{H}_{\pi_i}} \qquad \text{when the } \pi_i \text{ are pairwise inequivalent,}\;}
 $$
 
 and the commutant is larger, by matrix algebras over the multiplicities, when equivalences occur. The general structure theory of such commutants is that in Part II, and the classification of the group representations by the type of the commutant is not covered here.
@@ -162,7 +162,7 @@ and the finite linear combinations of matrix coefficients are dense in $L^2(K)$ 
 **Theorem (differentiable vectors and $(\mathrm{G}, K)$-modules).** Let $G$ be a Lie group with Lie algebra $\mathrm{G}$ and let $\pi$ be a unitary representation of $G$ on $\mathcal{H}$. The space $\mathcal{H}^\infty$ of **smooth vectors** — those $v$ for which $g \mapsto \pi(g)v$ is $C^\infty$ — is a dense $G$-invariant subspace of $\mathcal{H}$, and the derived action
 
 $$
-d\pi(X)v = \frac{d}{dt}\Big|_{t=0} \pi(\exp tX)v , \qquad X \in \mathrm{G},\ v \in \mathcal{H}^\infty ,
+\boxed{\;d\pi(X)v = \frac{d}{dt}\Big|_{t=0} \pi(\exp tX)v , \qquad X \in \mathrm{G},\ v \in \mathcal{H}^\infty\;} ,
 $$
 
 makes $\mathcal{H}^\infty$ a module over the universal enveloping algebra of $\mathrm{G}$; the derived action is a representation of the Lie algebra $\mathrm{G}$ by skew-adjoint operators, $d\pi(X)^* = -d\pi(X)$. When $G$ is a reductive Lie group with maximal compact subgroup $K$, the space $\mathcal{H}^\infty$ with its $K$-finite part is a $(\mathrm{G}, K)$-module, and the irreducible unitary representations of $G$ correspond to irreducible $(\mathrm{G}, K)$-modules with an invariant Hermitian form; this is the algebraic frame of the representation theory.

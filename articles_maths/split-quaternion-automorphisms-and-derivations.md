@@ -40,8 +40,8 @@ is surjective with kernel the centre $\mathbb{R}^\times$. Hence
 $$
 \boxed{\;
 \mathrm{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathbb{H}_{\mathrm{s}}^{\times} / \mathbb{R}^\times = \mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** The Skolem–Noether theorem for a central simple algebra applies: every automorphism is inner, which gives the surjectivity and the identification of the automorphism group with the quotient. The kernel of $g \mapsto \iota_g$ is the set of units $g$ with $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. the units of the centre, $\mathbb{R}^\times$. The last isomorphism is the adjoint action on $V$ of *Split-Quaternion Rotations and the Lorentz Group*, which identifies $\mathrm{PGL}_2(\mathbb{R})$ with $SO(2,1)$.
 
@@ -50,8 +50,8 @@ $$.
 $$
 \boxed{\;
 \mathrm{Aut}^0(\mathbb{H}_{\mathrm{s}}) \cong PSL_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)
-\;}
-$$,
+\;},
+$$
 
 which is also the image of the norm-one group $U = \{N = 1\}$ under $g \mapsto \iota_g$.
 
@@ -88,8 +88,8 @@ has kernel the centre $\mathbb{R}$. Hence
 $$
 \boxed{\;
 \mathrm{Der}(\mathbb{H}_{\mathrm{s}}) = \mathrm{ad}(\mathbb{H}_{\mathrm{s}}) \cong \mathbb{H}_{\mathrm{s}}/\mathbb{R} \cong V \cong \mathrm{SL}_2(\mathbb{R})
-\;}
-$$,
+\;},
+$$
 
 the vector subspace $V$ **under the commutator bracket**, of real dimension $3$.
 

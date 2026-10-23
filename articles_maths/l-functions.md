@@ -21,9 +21,9 @@ The prerequisites are *Adelic Analysis* for the adelic integrals, the Hecke char
 
 **Proposition.** The set $\widehat{G}$ of characters of the finite abelian group $G = (\mathbb{Z}/q\mathbb{Z})^\times$ is a group under pointwise multiplication, isomorphic to $G$; the characters satisfy the orthogonality relations
 $$
-\sum_{\chi \in \widehat G} \chi(a) = \begin{cases} \varphi(q) & a\equiv1 \pmod q,\\ 0 & \text{otherwise},\end{cases}
+\boxed{\;\sum_{\chi \in \widehat G} \chi(a) = \begin{cases} \varphi(q) & a\equiv1 \pmod q,\\ 0 & \text{otherwise},\end{cases}
 \qquad
-\sum_{a \in G}\chi(a) = \begin{cases} \varphi(q) & \chi = \chi_0,\\ 0 & \text{otherwise},\end{cases}
+\sum_{a \in G}\chi(a) = \begin{cases} \varphi(q) & \chi = \chi_0,\\ 0 & \text{otherwise},\end{cases}\;}
 $$
 and the characters of $(\mathbb{Z}/q\mathbb{Z})^\times$ are exactly the characters of $\mathbb{Z}/q\mathbb{Z}$ whose value at a nonunit is $0$.
 
@@ -69,7 +69,7 @@ and the **root number** is $\epsilon_\chi = \dfrac{\tau(\chi)}{i^{a}\sqrt q}$.
 
 **Theorem (functional equation of the Dirichlet $L$-function).** Let $\chi$ be primitive modulo $q$. Then $L(s,\chi)$ has an analytic continuation to an entire function of $s$, and
 $$
-\Lambda(s,\chi) = \epsilon_\chi\,\Lambda(1-s,\bar\chi), \qquad \lvert\epsilon_\chi\rvert = 1 .
+\boxed{\;\Lambda(s,\chi) = \epsilon_\chi\,\Lambda(1-s,\bar\chi), \qquad \lvert\epsilon_\chi\rvert = 1\;} .
 $$
 For a nonprimitive character the same statements hold after removing the finitely many Euler factors of the inducing modulus, and for the principal character the completed function has poles at $s=0$ and $s=1$ corresponding to the pole of $\zeta$.
 
@@ -103,7 +103,7 @@ $$
 
 **Theorem (values at $1$ and the class number formula).** For the primitive quadratic character $\chi_d$ of a quadratic field $K = \mathbb{Q}(\sqrt d)$ of discriminant $d$,
 $$
-L(1,\chi_d) = \begin{cases} \dfrac{2\pi h}{w\sqrt{\lvert d\rvert}} & d<0,\\[2mm] \dfrac{2h\log\varepsilon}{\sqrt d} & d>0,\end{cases}
+\boxed{\;L(1,\chi_d) = \begin{cases} \dfrac{2\pi h}{w\sqrt{\lvert d\rvert}} & d<0,\\[2mm] \dfrac{2h\log\varepsilon}{\sqrt d} & d>0,\end{cases}\;}
 $$
 where $h$ is the class number, $w$ the number of roots of unity and $\varepsilon>1$ the fundamental unit. The formula is the class number formula of *Zeta Functions* for a quadratic field, written in terms of the character, and it shows that $L(1,\chi_d)$ is a computable positive number, the positivity being itself a nontrivial statement.
 

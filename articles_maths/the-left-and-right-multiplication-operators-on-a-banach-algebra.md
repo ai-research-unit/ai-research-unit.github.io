@@ -16,7 +16,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a Banach algebr
 **Proposition (norms of the multiplications and of their products).** For all $a,b \in A$,
 
 $$
-\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_b\rVert \leq \lVert b\rVert , \qquad \lVert L_aR_b\rVert \leq \lVert a\rVert\,\lVert b\rVert ,
+\boxed{\;\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_b\rVert \leq \lVert b\rVert , \qquad \lVert L_aR_b\rVert \leq \lVert a\rVert\,\lVert b\rVert\;} ,
 $$
 
 with equality in the first two when $A$ is unital and equality in the third when $A$ is unital and $\lVert a\rVert = \lVert b\rVert$ for suitable pairs; more precisely $\lVert L_aR_b\rVert = \lVert a\rVert\lVert b\rVert$ when $A$ is unital and both $a$ and $b$ are such that $\lVert axb\rVert = \lVert a\rVert\lVert x\rVert\lVert b\rVert$ for some unit vector $x$.
@@ -56,7 +56,7 @@ and the actions are separately continuous; the bimodule is **essential**, $A \cd
 **Proposition (module endomorphisms of the regular bimodule).** A bounded linear map $T : A \to A$ is a **left $A$-module endomorphism**, $T(ax) = aT(x)$ for all $a,x$, exactly when $T$ is a right multiplier; it is a **right $A$-module endomorphism**, $T(xa) = T(x)a$, exactly when $T$ is a left multiplier. Consequently
 
 $$
-\operatorname{End}_A(A) = \{R_b : b \in A\} , \qquad \operatorname{End}(A_A) = \{L_b : b \in A\}
+\boxed{\;\operatorname{End}_A(A) = \{R_b : b \in A\} , \qquad \operatorname{End}(A_A) = \{L_b : b \in A\}\;}
 $$
 
 on a unital algebra, and the two-sided $A$-module endomorphisms are the multiplications by the centre, $\operatorname{End}_{A\text{-}A}(A) = \{L_c : c \in Z(A)\}$.
@@ -88,7 +88,7 @@ they extend the actions of $\iota(A)$ on $A$, and $A$ is essential as an $M(A)$-
 **Theorem (the multiplier algebra is the module endomorphism algebra).** Let $A$ be a faithful Banach algebra with $A^2 = A$. Then the map
 
 $$
-M(A) \longrightarrow \{\,T \in B(A) : T(ax) = aT(x),\ T(xa) = T(x)a \ \forall a,x\,\} , \qquad (L,R) \longmapsto L = R ,
+\boxed{\;M(A) \longrightarrow \{\,T \in B(A) : T(ax) = aT(x),\ T(xa) = T(x)a \ \forall a,x\,\} , \qquad (L,R) \longmapsto L = R\;} ,
 $$
 
 is an isometric algebra isomorphism onto the bounded two-sided $A$-module endomorphisms of $A$; equivalently $M(A) \cong \operatorname{End}_{A\text{-}A}(A)$ up to the canonical identification of the two components.

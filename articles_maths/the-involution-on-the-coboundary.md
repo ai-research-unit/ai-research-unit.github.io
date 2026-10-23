@@ -40,7 +40,7 @@ and its **coboundary operator** is $d$; for the Čech complex of a cover it is t
 **Theorem (the induced involution).** Let $\theta$ be an involution of the complex $(\mathcal{C}^{\bullet},d)$, commuting or anticommuting. Then $\theta$ carries cocycles to cocycles and coboundaries to coboundaries, so it induces an endomorphism
 
 $$
-\theta^*:H^n(\mathcal{C}^{\bullet})\longrightarrow H^n(\mathcal{C}^{\bullet}),\qquad (\theta^*)^2=\mathrm{id},
+\boxed{\;\theta^*:H^n(\mathcal{C}^{\bullet})\longrightarrow H^n(\mathcal{C}^{\bullet}),\qquad (\theta^*)^2=\mathrm{id}\;},
 $$
 
 an involution of the cohomology in the sense of *Cohomology with an Involution*; in the commuting case $\theta^*$ is induced by an involution of the complex as a cochain complex, and in the anticommuting case it is induced by $\theta$ after the sign is absorbed.
@@ -56,7 +56,7 @@ an involution of the cohomology in the sense of *Cohomology with an Involution*;
 **Theorem (an involution of a cover).** Let $\theta$ be an involution of the index set of a cover $\mathcal{U}=\{U_i\}$, permuting the opens with $\theta(U_i)=U_{\theta(i)}$ and $\theta^2=\mathrm{id}$, compatible with the inclusion of the overlaps. Then $\theta$ induces an endomorphism of the Čech complex by
 
 $$
-(\theta\alpha)_{i_0\ldots i_n}=(-1)^{\operatorname{sgn}(\theta,i_0,\ldots,i_n)}\,\theta\bigl(\alpha_{\theta(i_0)\ldots\theta(i_n)}\bigr),
+\boxed{\;(\theta\alpha)_{i_0\ldots i_n}=(-1)^{\operatorname{sgn}(\theta,i_0,\ldots,i_n)}\,\theta\bigl(\alpha_{\theta(i_0)\ldots\theta(i_n)}\bigr)\;},
 $$
 
 and it satisfies $\theta\,\delta=\operatorname{sgn}(\theta)\,\delta\,\theta$, where the sign is the product of the sign of the permutation of the indices and the sign of the involution on the coefficients; in particular the induced map on the Čech cohomology is an involution, and its fixed part is computed on the $\theta$-invariant cochains.
@@ -70,7 +70,7 @@ and it satisfies $\theta\,\delta=\operatorname{sgn}(\theta)\,\delta\,\theta$, wh
 **Theorem (the involution on a spectral sequence).** Let $(\mathcal{C}^{n,m},d',d'')$ be a double complex with an involution $\theta$ commuting (or anticommuting) with both differentials, of order two and bidegree zero. Then the spectral sequences of the double complex carry an involution on each page,
 
 $$
-\theta_r:E_r^{n,m}\longrightarrow E_r^{n,m},\qquad (\theta_r)^2=\mathrm{id},
+\boxed{\;\theta_r:E_r^{n,m}\longrightarrow E_r^{n,m},\qquad (\theta_r)^2=\mathrm{id}\;},
 $$
 
 compatible with the differentials, $\theta_{r+1}\circ d_r=d_r\circ\theta_{r+1}$ on the derived page, and converging to the involution $\theta^*$ on the cohomology of the total complex; hence the fixed part of the abutment is computed from the fixed parts of the pages.

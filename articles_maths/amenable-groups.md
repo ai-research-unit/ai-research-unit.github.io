@@ -18,7 +18,7 @@ The boundary with Part III is the one fixed for this block. What is developed he
 **Definition.** Let $G$ be a topological group and let $C_b(G)$ be the space of bounded continuous real-valued functions on $G$, with the left action of $G$ given by $(\lambda_g f)(x) = f(g^{-1}x)$. A **mean** on $G$ is a linear functional $m : C_b(G) \to \mathbb{R}$ such that
 
 $$
-m(f) \geq 0 \ \text{whenever } f \geq 0, \qquad m(1_G) = 1, \qquad m(\lambda_g f) = m(f) \ \text{for all } g\in G ,
+\boxed{\;m(f) \geq 0 \ \text{whenever } f \geq 0, \qquad m(1_G) = 1, \qquad m(\lambda_g f) = m(f) \ \text{for all } g\in G\;} ,
 $$
 
 where $1_G$ denotes the constant function $1$. The group $G$ is **amenable** if such a mean exists. A mean is **left-invariant** by the third condition; replacing it by $m(f^\vee)$ with $f^\vee(x) = f(x^{-1})$ gives a right-invariant mean, and a group with a left-invariant mean has a two-sided invariant one, so the distinction is immaterial.

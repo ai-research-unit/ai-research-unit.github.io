@@ -36,7 +36,7 @@ $$
 using associativity in the second chain; so $Z(A)$ is closed under addition and multiplication and is a subalgebra. For $z, w \in Z(A)$,
 
 $$
-zw = wz,
+\boxed{\;zw = wz\;},
 $$
 
 because $z$ is central; so $Z(A)$ is commutative. Finally $1_A a = a = a 1_A$ for all $a$.
@@ -77,7 +77,7 @@ The entries for $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$ and $\mathbb{B}$ follow 
 **Proposition (centre of a tensor product).** Let $A$ and $B$ be unital associative $R$-algebras. Then
 
 $$
-Z(A) \otimes_R Z(B) \;\subseteq\; Z(A \otimes_R B),
+\boxed{\;Z(A) \otimes_R Z(B) \;\subseteq\; Z(A \otimes_R B)\;},
 $$
 
 with the inclusion realised by $z \otimes w \mapsto z \otimes w$. If $A$ and $B$ are central simple algebras over a field $F$, then $A \otimes_F B$ is central simple and $Z(A \otimes_F B) = F = Z(A) \otimes_F Z(B)$.

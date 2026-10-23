@@ -23,7 +23,7 @@ Throughout, $(\Omega,\mathcal{F},\mathbb{P})$ is a probability space as in *Meas
 **Proposition (union bound).** For any finite or countable family of events $\{A_i\}$,
 
 $$
-\mathbb{P}\!\left(\bigcup_i A_i\right) \leq \sum_i\mathbb{P}(A_i).
+\boxed{\;\mathbb{P}\!\left(\bigcup_i A_i\right) \leq \sum_i\mathbb{P}(A_i)\;}.
 $$
 
 **Proposition (first moment method).** Let $X \geq 0$ be a random variable taking values in a countable set. If $\mathbb{E}[X] < 1$ then $\mathbb{P}(X = 0) > 0$; more generally, if $\mathbb{E}[X] \leq k$ then $\mathbb{P}(X \leq k) > 0$. When $X$ counts the defects of a random object, the object is defect-free with positive probability.
@@ -65,7 +65,7 @@ The bound is the first and simplest of the colouring results, and it is the entr
 **Theorem (second moment method).** Let $X \geq 0$ be a random variable with finite second moment and $\mathbb{E}[X] > 0$. Then
 
 $$
-\mathbb{P}(X = 0) \leq \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}, \qquad \text{and hence} \qquad \mathbb{P}(X > 0) \geq 1 - \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}.
+\boxed{\;\mathbb{P}(X = 0) \leq \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}, \qquad \text{and hence} \qquad \mathbb{P}(X > 0) \geq 1 - \frac{\operatorname{Var}(X)}{\mathbb{E}[X]^2}\;}.
 $$
 
 *Proof.* By the Cauchy–Schwarz inequality, $\mathbb{E}[X]^2 = \mathbb{E}[X\mathbf{1}_{\{X>0\}}]^2 \leq \mathbb{E}[X^2]\,\mathbb{P}(X > 0)$, whence $\mathbb{P}(X>0) \geq \mathbb{E}[X]^2/\mathbb{E}[X^2]$; subtracting from $1$ and using $\mathbb{E}[X^2] = \operatorname{Var}(X) + \mathbb{E}[X]^2$ gives the stated form.
@@ -163,7 +163,7 @@ The method also requires quantitative bounds on the deviation of a random variab
 **Theorem (Chernoff bounds).** Let $X_1,\dots,X_n$ be independent Bernoulli$(p)$ variables and $S = \sum_iX_i$, $\mu = np$. Then for $0 < \delta < 1$,
 
 $$
-\mathbb{P}(S \geq (1+\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{3}\right), \qquad \mathbb{P}(S \leq (1-\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{2}\right).
+\boxed{\;\mathbb{P}(S \geq (1+\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{3}\right), \qquad \mathbb{P}(S \leq (1-\delta)\mu) \leq \exp\!\left(-\frac{\delta^2\mu}{2}\right)\;}.
 $$
 
 **Theorem (Hoeffding).** Let $X_1,\dots,X_n$ be independent with $a_i \leq X_i \leq b_i$ and let $S = \sum_iX_i$. Then

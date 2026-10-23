@@ -151,7 +151,7 @@ is a unital quantale, and it is the free unital quantale on the monoid $M$; when
 
 **Theorem.** Let $Q$ be an involutive quantale. Then the involution is an order isomorphism, and its fixed points,
 
-$$ \boxed{\;Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\}\;},
+$$ Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\},
 $$
 
 form a frame for the order inherited from $Q$, with the joins and meets of $Q$.

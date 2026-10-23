@@ -14,7 +14,7 @@ The definition is von Neumann's: a ring is **regular** if every principal left i
 **Definition.** A ring $A$ with $1 \neq 0$ is **von Neumann regular**, or **regular**, if for every $a \in A$ there is $x \in A$ with
 
 $$
-a = axa .
+\boxed{\;a = axa\;} .
 $$
 
 The element $x$ is a **generalised inverse** of $a$.

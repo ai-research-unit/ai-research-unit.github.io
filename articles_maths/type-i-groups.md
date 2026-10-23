@@ -46,7 +46,7 @@ be its **commutant**, a von Neumann algebra. The representation $\pi$ is a **fac
 **Theorem (the regular representation).** Let $G$ be unimodular and of type I. Then the left regular representation decomposes as a direct integral
 
 $$
-\lambda \;\cong\; \int_{\operatorname{Irr}(G)}^{\oplus} m(\pi)\, \pi\, d\mu(\pi) ,
+\boxed{\;\lambda \;\cong\; \int_{\operatorname{Irr}(G)}^{\oplus} m(\pi)\, \pi\, d\mu(\pi)\;} ,
 $$
 
 where $\mu$ is a Radon measure on the dual, unique up to equivalence, the **Plancherel measure** of $G$, and $m(\pi)$ is the multiplicity function, a measurable function determined by the representation up to $\mu$-null sets. The measure and the multiplicity are unique: any two such decompositions agree on a common refinement.
@@ -98,7 +98,7 @@ When these hold, the dual is a standard Borel space and the "smooth" decompositi
 **Theorem (extensions and quotients).** Let
 
 $$
-1 \to N \to G \to Q \to 1
+\boxed{\;1 \to N \to G \to Q \to 1\;}
 $$
 
 be a short exact sequence of locally compact second countable groups. If $N$ and $Q$ are of type I then $G$ is of type I; if $G$ is of type I then $Q$ is of type I. The class of type I groups is closed under quotients by closed normal subgroups, under finite direct products and under extensions, but it is **not** closed under passing to an arbitrary closed subgroup: the free group $F_2$ is a discrete, hence closed, subgroup of the type I group $PSL_2(\mathbb{R})$, and $F_2$ is not of type I.
@@ -146,7 +146,7 @@ be a short exact sequence of locally compact second countable groups. If $N$ and
 **Theorem (statement).** Let $G$ be a unimodular separable locally compact group of type I. Then there is a unique (up to a positive scalar) Radon measure $\mu_{\mathrm{Pl}}$ on $\operatorname{Irr}(G)$, the **Plancherel measure**, such that for $f \in C_c(G)$ with $\lambda(f)$ the operator with kernel $f$, the operator $\lambda(f)$ is a direct integral of multiples of the identity on the fibers and
 
 $$
-\lambda(f) \;\longleftrightarrow\; \int_{\operatorname{Irr}(G)} \mathcal{F}f(\pi)\, d\mu_{\mathrm{Pl}}(\pi) ,
+\boxed{\;\lambda(f) \;\longleftrightarrow\; \int_{\operatorname{Irr}(G)} \mathcal{F}f(\pi)\, d\mu_{\mathrm{Pl}}(\pi)\;} ,
 $$
 
 with $\mathcal{F}f(\pi) = \pi(f) = \int_G f(g)\pi(g)\,dg$ the operator-valued Fourier transform; the Fourier transform extends to an isometry of $L^2(G)$ onto the direct integral $\int^\oplus \mathcal{H}_\pi \otimes \overline{\mathcal{H}_\pi}\,d\mu_{\mathrm{Pl}}(\pi)$, the **Plancherel theorem**.

@@ -20,8 +20,8 @@ $$
 $$
 \boxed{\;
 Z = \{\tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0\}
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** The criterion is the corollary of the invertibility criterion proved in *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*: a nonzero element is a zero divisor exactly when it is not invertible, and it is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$.
 
@@ -90,16 +90,16 @@ extends to an involutive algebra anti-automorphism that preserves $\langle\cdot\
 $$
 \boxed{\;
 \tilde q \in V \quad \text{and} \quad \langle\tilde q\rangle_{\natural} = 0
-\;}
-$$,
+\;},
+$$
 
 that is, if and only if $\tilde q$ is a nonzero vector of the vector subspace lying on the level set $N = 0$, $q_x^2 = q_y^2 + q_z^2$. The set of nilpotents is therefore a two-dimensional cone, and in particular
 
 $$
 \boxed{\;
 (\vec e_x + \vec e_z)^2 = \vec e_x^2 + \vec e_x \vec e_z + \vec e_z \vec e_x + \vec e_z^2 = -1 + 0 + 1 = 0
-\;}
-$$.
+\;}.
+$$
 
 Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.
 

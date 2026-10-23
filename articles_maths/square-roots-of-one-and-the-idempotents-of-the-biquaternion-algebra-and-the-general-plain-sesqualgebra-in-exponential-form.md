@@ -123,7 +123,7 @@ and for $w$ of norm one the values are $C=\exp(2i\theta)$ and $\langle\cdot\rang
 **Theorem (quoted).** In the general plain sesqualgebra the roots of $+1$ are exactly the elements of the unit-scalar form of real unit $w$,
 
 $$
-\tilde\Xi=\exp(i\theta)w,\qquad \theta\in\mathbb{R},\quad w\in\mathbb{H}\ \text{real},\quad \lvert w\rvert=1,
+\boxed{\; \tilde\Xi=\exp(i\theta)w,\qquad \theta\in\mathbb{R},\quad w\in\mathbb{H}\ \text{real},\quad \lvert w\rvert=1 \;},
 $$
 
 a single real four-parameter family $\mathrm{U}(1)\cdot S^{3}$, which is the unitary group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$; and no root of $+1$ is a zero divisor.
@@ -151,7 +151,7 @@ The reading is the sharpest difference between the two structures. The same two 
 **Theorem (the non-trivial roots in hyperbolic form).** The non-trivial roots of $+1$ in the biquaternion algebra are exactly the elements
 
 $$
-\tilde\Xi=\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n},\qquad t\in\mathbb{R},\ t\neq0,\quad \vec u_{\mathrm b},\vec u_{\mathrm n}\ \text{real unit vectors with}\ \vec u_{\mathrm b}\perp\vec u_{\mathrm n} .
+\boxed{\; \tilde\Xi=\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n},\qquad t\in\mathbb{R},\ t\neq0,\quad \vec u_{\mathrm b},\vec u_{\mathrm n}\ \text{real unit vectors with}\ \vec u_{\mathrm b}\perp\vec u_{\mathrm n} \;}.
 $$
 
 Each has the real halves $\vec\xi=-\sinh t\,\vec u_{\mathrm b}\vec u_{\mathrm n}$ and $\vec\xi'=\cosh t\,\vec u_{\mathrm n}$ of the algebra's classification, and each has $C(\tilde\Xi)=-1$ and $\langle\tilde\Xi\rangle_{\natural}=-e_t$, the same two values as the purely imaginary roots. The form has four real parameters — the parameter $t$ and the two directions $\vec u_{\mathrm n}$ and $\vec u_{\mathrm b}$ — and it is the four-parameter family of the classification; the parameter may be taken positive, since the two pairs $(t,\vec u_{\mathrm b})$ and $(-t,-\vec u_{\mathrm b})$ give the same root, and the value $t=0$ is excluded because it gives the purely imaginary root $i\vec u_{\mathrm n}$ and not a non-trivial one.
@@ -242,7 +242,7 @@ $$
 So every root of $+1$ of the algebra is the exponential of $i\pi$ times an idempotent,
 
 $$
-\tilde\Xi = \exp\bigl(i\pi\tilde\Pi_-\bigr), \qquad \tilde\Pi_- = \tfrac12(e_t-\tilde\Xi), \qquad \tilde\Pi_-^2 = \tilde\Pi_- .
+\boxed{\; \tilde\Xi = \exp\bigl(i\pi\tilde\Pi_-\bigr), \qquad \tilde\Pi_- = \tfrac12(e_t-\tilde\Xi), \qquad \tilde\Pi_-^2 = \tilde\Pi_- \;}.
 $$
 
 The central pair sits at the two ends of the halving: $\tilde\Xi = e_t$ gives $\tilde\Pi_- = 0$ and $\exp(0) = e_t$, and $\tilde\Xi = -e_t$ gives $\tilde\Pi_- = e_t$ and $\exp(i\pi) = -e_t$. The exponential is not that of an idempotent itself but of $i\pi$ times an idempotent, so it does not collide with the remark of §*The Idempotents in Exponential Form*, §*The Halving Map* that no idempotent other than $e_t$ is an exponential.
@@ -302,7 +302,7 @@ $$
 of the Hermitian idempotents, and the family
 
 $$
-\tilde\Pi=\tfrac12\bigl(e_t+\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n}\bigr),\qquad t\in\mathbb{R},\ t\neq0,\quad \vec u_{\mathrm b},\vec u_{\mathrm n}\ \text{real unit vectors with}\ \vec u_{\mathrm b}\perp\vec u_{\mathrm n},
+\boxed{\; \tilde\Pi=\tfrac12\bigl(e_t+\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n}\bigr),\qquad t\in\mathbb{R},\ t\neq0,\quad \vec u_{\mathrm b},\vec u_{\mathrm n}\ \text{real unit vectors with}\ \vec u_{\mathrm b}\perp\vec u_{\mathrm n} \;},
 $$
 
 of the non-trivial idempotents, of real dimension four. Every idempotent other than the two trivial ones is isotropic, $C=0$, and is a zero divisor; the Hermitian family lies in the Hermitian subspace $\mathbb{M}_+$, and the non-trivial family lies in none of the remarkable subspaces.

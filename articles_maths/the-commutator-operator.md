@@ -47,7 +47,7 @@ The two identities say that $A$, equipped with the bracket in place of the produ
 **Proposition.** For every $a \in A$ the map $x \mapsto [a, x]$ is $k$-linear and satisfies the **Leibniz rule**
 
 $$
-[a, xy] = [a, x]\, y + x\, [a, y] .
+\boxed{\;[a, xy] = [a, x]\, y + x\, [a, y]\;} .
 $$
 
 *Proof.* Linear in $x$ because the product is; and $a(xy) - (xy)a = (ax - xa)y + x(ay - ya)$ by associativity, the cross terms $axy$ cancelling after the expansion.
@@ -93,7 +93,7 @@ $$
 is $k$-linear, and it satisfies
 
 $$
-[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]},
+\boxed{\;[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}\;},
 $$
 
 where the bracket on the left is the commutator of operators in $\operatorname{End}_k(A)$ and that on the right is the bracket of $A$; hence $\mathrm{ad}$ is a homomorphism of Lie algebras from the commutator algebra $A^{(-)}$ into $\operatorname{End}_k(A)$.
@@ -139,7 +139,7 @@ The commutator of two multiplication operators is again a multiplication operato
 **Theorem.** For all $a, b \in A$,
 
 $$
-[L(a), L(b)] = L([a, b]), \qquad [R(a), R(b)] = R([b, a]) = -R([a, b]), \qquad [L(a), R(b)] = -A_{a,b},
+\boxed{\;[L(a), L(b)] = L([a, b]), \qquad [R(a), R(b)] = R([b, a]) = -R([a, b]), \qquad [L(a), R(b)] = -A_{a,b}\;},
 $$
 
 where $A_{a,b}(x) = (a, x, b)$ is the associator operator of *The Sandwich Operator on an Algebra*.

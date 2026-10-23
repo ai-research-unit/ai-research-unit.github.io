@@ -48,7 +48,7 @@ and the adjoint is $\mathcal{T}^{*}\psi=-\sum_i\nabla_i\bigl(\psi_i+\tfrac1nc(e_
 **Theorem (the orthogonal decomposition).** The connection Laplacian decomposes as
 
 $$
-\nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2} ,
+\boxed{\;\nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2}\;} ,
 $$
 
 where $D$ is the Cauchy–Riemann operator of *The Spinor Operator*; both summands are non-negative operators on the compactly supported sections, and the decomposition is orthogonal for the $L^2$ form.
@@ -70,13 +70,13 @@ Now $\nabla^*c^*=(c\nabla)^*$, because the adjoint of a composite is the composi
 **Theorem.** For a spinor $\sigma$ the twistor equation $\mathcal{T}\sigma=0$ is equivalent to
 
 $$
-\nabla_X\sigma = -\tfrac1n c(X)D\sigma \qquad\text{for all vector fields } X ,
+\boxed{\;\nabla_X\sigma = -\tfrac1n c(X)D\sigma \qquad\text{for all vector fields } X\;} ,
 $$
 
 and then $\sigma$ satisfies the scalar identity
 
 $$
-\nabla^{*}\nabla\sigma = \frac{\operatorname{scal}}{4(n-1)}\,\sigma , \qquad D^{2}\sigma = \frac{n}{4(n-1)}\,\operatorname{scal}\,\sigma ,
+\boxed{\;\nabla^{*}\nabla\sigma = \frac{\operatorname{scal}}{4(n-1)}\,\sigma , \qquad D^{2}\sigma = \frac{n}{4(n-1)}\,\operatorname{scal}\,\sigma\;} ,
 $$
 
 where $\operatorname{scal}$ is the scalar curvature.

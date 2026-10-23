@@ -14,7 +14,7 @@ The article uses the notation of *Operators on a Sheaf* throughout and does not 
 **Proposition (sections and their gluing).** For every open $\Omega\subseteq X$ the sections of the sheaf of operators are the operators on the restriction,
 
 $$
-\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_\Omega),
+\boxed{\;\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_\Omega)\;},
 $$
 
 and an operator on $\mathcal{F}$ over $\Omega$ is the same thing as a compatible family of operators over the members of an open cover of $\Omega$: if $\Omega=\bigcup_iU_i$ and $T_i\in\operatorname{End}(\mathcal{F}|_{\Omega_i})$ satisfy $T_i|_{\Omega_i\cap \Omega_j}=T_j|_{\Omega_i\cap \Omega_j}$ for all $i,j$, then there is a unique $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ restricting to $T_i$ on each $\Omega_i$.
@@ -24,7 +24,7 @@ and an operator on $\mathcal{F}$ over $\Omega$ is the same thing as a compatible
 **Proposition (the bifunctor).** The sheaf hom $\mathcal{H}om(-,-)$ is a bifunctor on sheaves of $\mathcal{O}_X$-modules, contravariant in the first variable and covariant in the second, so that a morphism $\varphi:\mathcal{F}\to\mathcal{G}$ induces $\mathcal{H}om(\varphi,\mathcal{G}):\mathcal{H}om(\mathcal{G},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$ and $\mathcal{H}om(\mathcal{F},\varphi):\mathcal{H}om(\mathcal{F},\mathcal{G})\to\mathcal{H}om(\mathcal{F},\mathcal{G})$. For the operator sheaf this gives, for every isomorphism $\varphi:\mathcal{F}\to\mathcal{G}$, an isomorphism of sheaves of rings
 
 $$
-\mathcal{E}nd(\varphi):\mathcal{E}nd(\mathcal{F})\longrightarrow\mathcal{E}nd(\mathcal{G}),\qquad T\mapsto\varphi\,T\,\varphi^{-1},
+\boxed{\;\mathcal{E}nd(\varphi):\mathcal{E}nd(\mathcal{F})\longrightarrow\mathcal{E}nd(\mathcal{G}),\qquad T\mapsto\varphi\,T\,\varphi^{-1}\;},
 $$
 
 and $\mathcal{E}nd$ is a functor on the groupoid of sheaves and isomorphisms.
@@ -92,7 +92,7 @@ and it is a morphism of sheaves of groups; it does not extend to a morphism $\ma
 **Proposition (the support).** The support of the operator sheaf is the support of the sheaf,
 
 $$
-\operatorname{Supp}(\mathcal{E}nd(\mathcal{F}))=\operatorname{Supp}(\mathcal{F}),
+\boxed{\;\operatorname{Supp}(\mathcal{E}nd(\mathcal{F}))=\operatorname{Supp}(\mathcal{F})\;},
 $$
 
 and over an open set where $\mathcal{F}$ vanishes the operator sheaf vanishes; over a point $x$ where the stalk $\mathcal{F}_x$ is a free module of rank $r$ over the local ring, the operator sheaf is locally free of rank $r^2$ near $x$.

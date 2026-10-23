@@ -34,7 +34,7 @@ No physics is invoked.
 **Theorem (Poincaré–Dulac normal form).** Let $f$ be a smooth (or formal) vector field vanishing at the origin with linearisation $A$. Then there is a formal change of coordinates that transforms $f$ into the **normal form**
 
 $$
-dx/dt=Ax+g(x), \qquad g=\sum_{\alpha \text{ resonant}}g_\alpha x^\alpha ,
+\boxed{\;dx/dt=Ax+g(x), \qquad g=\sum_{\alpha \text{ resonant}}g_\alpha x^\alpha\;} ,
 $$
 
 a vector field whose nonlinear part consists only of the resonant monomials; if a finite number of monomials is prescribed the transformation can be taken polynomial, and the normal form is unique up to the transformations that commute with the resonant structure.
@@ -82,7 +82,7 @@ in which the symmetric equilibrium $x=0$ loses stability at $\mu=0$ and a symmet
 **Theorem (Andronov–Hopf).** Let $f$ be a one-parameter family with $f(x_0,\mu_0)=0$, and suppose that $A(\mu)=D_xf(x_0,\mu)$ has a simple pair of eigenvalues $\lambda(\mu)=\alpha(\mu)\pm i\omega(\mu)$ with $\alpha(\mu_0)=0$, $\omega(\mu_0)=\omega_0>0$, no other eigenvalue on the imaginary axis, and the **transversality** $\alpha'(\mu_0)\neq0$; suppose further that the **first Lyapunov coefficient** $\ell_1$, computed from the second and third derivatives of $f$ at $(x_0,\mu_0)$, is nonzero. Then the family is equivalent near $(x_0,\mu_0)$ to the normal form in polar coordinates
 
 $$
-dr/dt=\mu r+\ell_1r^3+O(r^5), \qquad \,d\theta/dt=\omega_0+O(\mu,r^2),
+\boxed{\;dr/dt=\mu r+\ell_1r^3+O(r^5), \qquad \,d\theta/dt=\omega_0+O(\mu,r^2)\;},
 $$
 
 and the phase portrait is as follows: for $\mu$ on the side of $\mu_0$ on which $(\mu-\mu_0)\alpha'(\mu_0)<0$ the equilibrium is stable and there is no closed orbit near it, while on the other side the equilibrium is unstable and there is exactly one limit cycle, of radius $r\approx\sqrt{-(\mu-\mu_0)\alpha'(\mu_0)/\ell_1}$, which is stable when $\ell_1<0$ (**supercritical Hopf**) and unstable when $\ell_1>0$ (**subcritical Hopf**).
@@ -130,7 +130,7 @@ The proof follows the reduction of the discrete case to the Poincaré return map
 **Theorem (Feigenbaum universality; period-doubling cascade).** Let $f_\mu$ be a one-parameter family of unimodal maps with a quadratic critical point, and let $\mu_1<\mu_2<\cdots$ be the values at which the period of the attracting orbit doubles. Then the ratios of successive intervals converge,
 
 $$
-\delta=\lim_{n\to\infty}\frac{\mu_n-\mu_{n-1}}{\mu_{n+1}-\mu_n}=4.669201609\ldots,
+\boxed{\;\delta=\lim_{n\to\infty}\frac{\mu_n-\mu_{n-1}}{\mu_{n+1}-\mu_n}=4.669201609\ldots\;},
 $$
 
 the **Feigenbaum constant**, and the rescaled return maps converge to a universal limit: the **doubling (renormalisation) operator** $\mathcal T$, which rescales the second iterate $f\circ f$ of a unimodal map back to the unit interval and acts on the space of unimodal maps, has a fixed point $f^*$ with scaling factor $\alpha=-2.502907875\ldots$, and the universality means that every one-parameter family with a quadratic critical point is governed by the same fixed point of $\mathcal T$ and hence by the same sequence of ratios. Consequently the cascade accumulates at the finite parameter $\mu_\infty$, beyond which the limiting dynamics carries an invariant Cantor set on which the map is chaotic, and within whose parameter windows attracting cycles of every period occur, the family ceasing to be hyperbolic at $\mu_\infty$; the chaotic regime and the measure-theoretic aspects are treated .

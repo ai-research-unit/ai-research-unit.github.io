@@ -37,7 +37,7 @@ the unsigned action of $L_a$ precomposed with the grade involution of the module
 **Theorem.** The adjoint of the graded action is the graded action at the image of the parameter:
 
 $$
-\bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_{\alpha(a)} .
+\boxed{\;\bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_{\alpha(a)}\;} .
 $$
 
 *Proof.* The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{*} = \Psi^{*}\circ\Phi^{*}$, so $(\rho^{\alpha}_a)^{*} = (\rho_{L_a}\circ\alpha_M)^{*} = \alpha_M^{*}\circ\rho_{L_a}^{*} = \alpha_M\circ\rho_{L_a}$. Since the grade involution intertwines the multiplication operators by $\alpha_M\rho_{L_a}\alpha_M^{-1} = \rho_{L_{\alpha(a)}}$, one has $\alpha_M\circ\rho_{L_a} = \rho_{L_{\alpha(a)}}\circ\alpha_M = \rho^{\alpha}_{\alpha(a)}$.
@@ -45,7 +45,7 @@ $$
 **Corollary (the sign rule).** The even elements of $J$ act by self-adjoint operators and the odd elements by skew-adjoint operators:
 
 $$
-a \in J^+ \Longrightarrow \bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_a, \qquad a \in J^- \Longrightarrow \bigl(\rho^{\alpha}_a\bigr)^{*} = -\rho^{\alpha}_a ,
+\boxed{\;a \in J^+ \Longrightarrow \bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_a, \qquad a \in J^- \Longrightarrow \bigl(\rho^{\alpha}_a\bigr)^{*} = -\rho^{\alpha}_a\;} ,
 $$
 
 which is the sign rule of the grading on the adjoint layer, the module-level form of $\alpha^{*} = \alpha$ and $L_a^{*} = L_a$.
@@ -55,7 +55,7 @@ which is the sign rule of the grading on the adjoint layer, the module-level for
 **Theorem.** The product of two graded actions is the twisted product $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, and its adjoint is
 
 $$
-\bigl(\rho^{\alpha}_a\rho^{\alpha}_b\bigr)^{*} = \rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)} .
+\boxed{\;\bigl(\rho^{\alpha}_a\rho^{\alpha}_b\bigr)^{*} = \rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)}\;} .
 $$
 
 *Proof.* $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_a}\alpha_M\rho_{L_b}\alpha_M = \rho_{L_a}\rho_{L_{\alpha(b)}}\alpha_M^2 = \rho_{L_aL_{\alpha(b)}}$, using the intertwining $\alpha_M\rho_{L_b} = \rho_{L_{\alpha(b)}}\alpha_M$; the adjoint is anti-multiplicative and each factor's adjoint is known.

@@ -22,7 +22,7 @@ the $L^1$ norm $\|f\|_1 = \int_G |f(x)|\,dx$, and the involution $f^*(x) = \over
 **Proposition (the algebra laws).** Convolution is bilinear, associative and submultiplicative,
 
 $$
-(f*g)*h = f*(g*h), \qquad \|f*g\|_1 \leq \|f\|_1\,\|g\|_1 ,
+\boxed{\;(f*g)*h = f*(g*h), \qquad \|f*g\|_1 \leq \|f\|_1\,\|g\|_1\;} ,
 $$
 
 and it is commutative exactly when $G$ is abelian. The algebra $\mathcal{A}$ is unital exactly when $G$ is discrete, the unit being the point mass $\delta_e$; in general $\mathcal{A}$ has no identity.
@@ -60,7 +60,7 @@ Thus $f \mapsto L_f$ is an algebra homomorphism, $f \mapsto R_f$ an algebra anti
 **Theorem (the norm is attained).** The left regular representation is isometric,
 
 $$
-\|L_f\| = \|f\|_1 , \qquad \|R_f\| = \|f\|_1 ,
+\boxed{\;\|L_f\| = \|f\|_1 , \qquad \|R_f\| = \|f\|_1\;} ,
 $$
 
 so $\mathcal{C}_L = \{L_f : f \in L^1(G)\}$ and $\mathcal{C}_R = \{R_f : f \in L^1(G)\}$ are closed subalgebras of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$ and to its opposite algebra.
@@ -120,7 +120,7 @@ $$
 **Theorem (the convolution theorem).** The two transforms are algebra homomorphisms: for $f, g \in L^1(G)$,
 
 $$
-\widehat{f*g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi),
+\boxed{\;\widehat{f*g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi)\;},
 $$
 
 the first for abelian $G$, the second in general; both are continuous, with $|(\mathcal F f)(\chi)| \leq \|f\|_1$ in the abelian case and $\|(\mathcal F f)(\pi)\| \leq \|f\|_1$ in general.

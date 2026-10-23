@@ -19,7 +19,7 @@ Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensiona
 **Theorem.** Let $u$ be a reflector, so that $\rho_u$ is an involutive automorphism. Then $\delta(u)$ is again a reflector, and
 
 $$
-\rho_u^{*_\sigma}=S_{\delta(u),\,\delta(u)^{-1}}=\rho_{\delta(u)}, \qquad \rho_u^{*}=S_{\alpha(u)^{-1},\,\alpha(u)}=\rho_{\alpha(u)} .
+\boxed{\;\rho_u^{*_\sigma}=S_{\delta(u),\,\delta(u)^{-1}}=\rho_{\delta(u)}, \qquad \rho_u^{*}=S_{\alpha(u)^{-1},\,\alpha(u)}=\rho_{\alpha(u)}\;} .
 $$
 
 The twisted adjoint of the reflection by $u$ is the reflection by $\delta(u)$, and the plain adjoint is the reflection by $\alpha(u)$; both are reflections, and the adjoint operation carries the reflection set into itself.
@@ -41,7 +41,7 @@ so the action is an involution of the reflection set; the reflection by $1$ is $
 **Theorem.** A reflection $\rho_u$ is self-adjoint for the twisted pairing exactly when
 
 $$
-u^{-1}\delta(u) \in Z(A),
+\boxed{\;u^{-1}\delta(u) \in Z(A)\;},
 $$
 
 and self-adjoint for the plain pairing exactly when $u^{-1}\alpha(u) \in Z(A)$. Equivalently, $\rho_u^{*_\sigma}=\rho_u$ exactly when $\delta(u)=\lambda u$ for some central $\lambda \in Z(A)$.
@@ -93,7 +93,7 @@ $$
 is a unital subalgebra of $A$, on which $\rho_u$ acts as the identity, and it contains the central elements fixed by the grade involution. The reflection preserves the trace and the plain pairing of the category,
 
 $$
-\tau(\rho_u(x))=\tau(x), \qquad \langle \rho_u(x),\rho_u(y)\rangle=\langle x,y\rangle ,
+\boxed{\;\tau(\rho_u(x))=\tau(x), \qquad \langle \rho_u(x),\rho_u(y)\rangle=\langle x,y\rangle\;} ,
 $$
 
 so a reflection is an automorphism of the algebra that is also an automorphism of its pairing.

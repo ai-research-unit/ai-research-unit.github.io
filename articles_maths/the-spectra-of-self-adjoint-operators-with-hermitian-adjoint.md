@@ -22,7 +22,7 @@ The self-adjoint and skew-adjoint operators are *Self-Adjoint and Skew Operators
 **Theorem (the decomposition).** A self-adjoint $T$ has the **spectral decomposition**
 
 $$
-T = \sum_{i}\lambda_i\,P_i , \qquad \lambda_i\in\mathbb{R},
+\boxed{\;T = \sum_{i}\lambda_i\,P_i , \qquad \lambda_i\in\mathbb{R}\;},
 $$
 
 where the $P_i$ are the orthogonal projections onto the eigenspaces; the projections satisfy $P_i^2 = P_i = P_i^{\ast}$, $P_iP_j = \delta_{ij}P_i$ and $\sum_iP_i = \mathrm{id}$. Conversely every real linear combination of orthogonal projections is self-adjoint. The decomposition was checked on the regular module of $\mathrm{Cl}_{0,4}(\mathbb{R})$ with the eigenvectors of a self-adjoint two-sided operator: the reconstruction $T = \sum_i\lambda_iP_i$ holds, and $\mathrm{Tr}(T) = \sum_i\lambda_i$, $\det(T) = \prod_i\lambda_i$ with multiplicities.
@@ -36,7 +36,7 @@ where the $P_i$ are the orthogonal projections onto the eigenspaces; the project
 **Theorem (min-max, Courant–Fischer).** Let $T$ be self-adjoint with eigenvalues ordered $\lambda_1\leq\lambda_2\leq\cdots\leq\lambda_N$ and let $\mathcal{S}_k$ range over the $k$-dimensional subspaces of $S$. Then
 
 $$
-\lambda_k = \min_{\dim\mathcal{S}_k = k}\ \max_{0\neq s\in\mathcal{S}_k}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle} = \max_{\dim\mathcal{S}_{N-k+1}=N-k+1}\ \min_{0\neq s\in\mathcal{S}}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle} ,
+\boxed{\;\lambda_k = \min_{\dim\mathcal{S}_k = k}\ \max_{0\neq s\in\mathcal{S}_k}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle} = \max_{\dim\mathcal{S}_{N-k+1}=N-k+1}\ \min_{0\neq s\in\mathcal{S}}\ \frac{\langle Ts,s\rangle}{\langle s,s\rangle}\;} ,
 $$
 
 so the spectrum is read off from the extremes of the Rayleigh quotient; in particular $\lambda_{\min} = \min_sR_T(s)$ and $\lambda_{\max} = \max_sR_T(s)$. This was checked on the regular module: for every random vector the Rayleigh quotient lay between the extreme eigenvalues.
@@ -64,7 +64,7 @@ so the spectrum is read off from the extremes of the Rayleigh quotient; in parti
 **Theorem (the spectrum of $L_a+R_b$).** The left and the right multiplications commute, $L_aR_b = R_bL_a$, so for self-adjoint $a,b$ the operator $L_a+R_b$ is self-adjoint, the pair $L_a,R_b$ is a commuting family of self-adjoint operators, and it is simultaneously diagonalisable. The eigenvalues of $L_a+R_b$ are the sums $\lambda_i+\mu_j$ of an eigenvalue $\lambda_i$ of $L_a$ and an eigenvalue $\mu_j$ of $R_b$ taken along the common eigenbasis, hence lie in the set of all sums $\sigma(L_a)+\sigma(R_b)$; this was checked on the regular module of $\mathrm{Cl}_{0,4}(\mathbb{R})$, where every eigenvalue of $L_a+R_b$ was a sum of a left and a right eigenvalue. In particular
 
 $$
-L_a+R_b \ \text{invertible} \iff \lambda_i+\mu_j\neq0 \ \text{for every pair} ,
+\boxed{\;L_a+R_b \ \text{invertible} \iff \lambda_i+\mu_j\neq0 \ \text{for every pair}\;} ,
 $$
 
 the Clifford form of the solvability condition of the Hermitian Sylvester equation, checked against the determinant: $\det(L_a+R_b) = 0$ exactly when some $\lambda_i+\mu_j$ vanished.

@@ -43,7 +43,7 @@ $$
 **Theorem.** For every generator $x_i$ the adjoint of the multiplication $L_{x_i}$ with respect to the trace form is the derivative $\partial/\partial x_i$:
 
 $$
-L_{x_i}^{\dagger} = \partial/\partial x_i , \qquad \text{that is} \qquad \langle x_i u, v\rangle = \langle u, \partial/\partial x_i v\rangle .
+\boxed{\;L_{x_i}^{\dagger} = \partial/\partial x_i , \qquad \text{that is} \qquad \langle x_i u, v\rangle = \langle u, \partial/\partial x_i v\rangle\;} .
 $$
 
 *Proof.* On the monomials, $\langle x_i x^a, x^b\rangle = \langle x^{a+e_i}, x^b\rangle = (a+e_i)!\,\delta_{a+e_i,b}$ and $\langle x^a, \partial/\partial x_i x^b\rangle = b_i\langle x^a,x^{b-e_i}\rangle = b_i\,a!\,\delta_{a,b-e_i}$; the two agree because $a+e_i = b$ gives $b_i = a_i+1$ and $(a+e_i)! = (a_i+1)a!$. Hence the two operators are adjoint.
@@ -53,7 +53,7 @@ $$
 **Theorem.** For every $u \in A$ the adjoint of the multiplication $L_u$ with respect to the trace form is the **polarisation operator** $P_u = u(\partial)$ of *The Polarisation Operator*:
 
 $$
-L_u^{\dagger} = u(\partial) = P_u , \qquad \text{that is} \qquad \langle u w, v\rangle = \langle w, u(\partial)v\rangle .
+\boxed{\;L_u^{\dagger} = u(\partial) = P_u , \qquad \text{that is} \qquad \langle u w, v\rangle = \langle w, u(\partial)v\rangle\;} .
 $$
 
 *Proof.* Both sides are additive in $u$, and for a monomial $u = x^a$ the operator $u(\partial) = \partial^a$ is the composite $\partial^{a} = (\partial/\partial x_1)^{a_1}\cdots(\partial/\partial x_n)^{a_n}$; the relation $\langle x_iw,\cdot\rangle = \langle w,\partial/\partial x_i\,\cdot\rangle$ composes to $\langle u w,v\rangle = \langle w, u(\partial)v\rangle$.

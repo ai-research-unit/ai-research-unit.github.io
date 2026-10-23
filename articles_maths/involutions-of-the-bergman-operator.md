@@ -25,7 +25,7 @@ Throughout, $\Omega$ is a bounded domain in $\mathbb{C}^n$, $A^2(\Omega)$ is its
 
 **Proposition (the Bergman operator is an orthogonal projection).** The Bergman operator $B$ is idempotent and self-adjoint for the $L^2$ inner product,
 $$
-B^2 = B, \qquad B^{*} = B,
+\boxed{\;B^2 = B, \qquad B^{*} = B\;},
 $$
 so it is the orthogonal projection of $L^2(\Omega)$ onto $A^2(\Omega)$; equivalently $\operatorname{im}B = A^2(\Omega)$ and $\ker B$ is the orthogonal complement of the Bergman space.
 
@@ -33,7 +33,7 @@ so it is the orthogonal projection of $L^2(\Omega)$ onto $A^2(\Omega)$; equivale
 
 **Proposition (conjugate symmetry is self-adjointness).** The kernel satisfies $K(z,w) = \overline{K(w,z)}$, and this identity is equivalent to the self-adjointness of $B$: for $f, g \in L^2$,
 $$
-\langle Bf, g\rangle = \int\!\!\int K(z,w)f(w)\overline{g(z)}\,dV(w)\,dV(z) = \overline{\langle Bg, f\rangle} = \langle f, Bg\rangle .
+\boxed{\;\langle Bf, g\rangle = \int\!\!\int K(z,w)f(w)\overline{g(z)}\,dV(w)\,dV(z) = \overline{\langle Bg, f\rangle} = \langle f, Bg\rangle\;} .
 $$
 
 **Proof.** Substituting the definition of $B$, exchanging the order of integration by Fubini, and using the conjugate symmetry $K(z,w) = \overline{K(w,z)}$ gives $\langle Bf,g\rangle = \int\!\!\int \overline{K(w,z)}f(w)\overline{g(z)} = \overline{\int\!\!\int K(w,z)g(z)\overline{f(w)}} = \overline{\langle Bg,f\rangle} = \langle f,Bg\rangle$; conversely, if $B$ is self-adjoint the two iterated integrals differ by conjugation for all $f,g$ and the kernel is conjugate-symmetric. The kernel and the Fubini exchange are *The Bergman Operator* and *Reproducing Kernel Hilbert Spaces*.
@@ -51,7 +51,7 @@ $$
 
 **Proposition (the conjugation is an antiunitary involution).** $\sigma$ is a conjugate-linear involution of $A^2(\Omega)$ and an isometry,
 $$
-\sigma^2 = \mathrm{id}, \qquad \sigma(\lambda f) = \bar\lambda\,\sigma f, \qquad \langle \sigma f, \sigma g\rangle = \langle g, f\rangle ,
+\boxed{\;\sigma^2 = \mathrm{id}, \qquad \sigma(\lambda f) = \bar\lambda\,\sigma f, \qquad \langle \sigma f, \sigma g\rangle = \langle g, f\rangle\;} ,
 $$
 and it commutes with the Bergman operator, $\sigma B = B\sigma$; its fixed space is the **real Bergman space** of the functions with real Taylor coefficients at the origin.
 

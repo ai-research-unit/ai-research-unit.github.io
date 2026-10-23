@@ -41,7 +41,7 @@ Hence $f_c$ is a **skew product**: the projection $\pi(x+\varepsilon y) = x$ to 
 **Theorem (the critical locus is the ideal).** The derivative of $f_c$ is the multiplication by $2z$, and
 
 $$
-2z = 2x + 2\varepsilon y \ \text{ is a unit} \iff x \neq 0 .
+\boxed{\; 2z = 2x + 2\varepsilon y \ \text{ is a unit} \iff x \neq 0 \;}.
 $$
 
 So the **critical locus** of $f_c$ is the set $\{x = 0\} = \mathbb{R}\varepsilon$, the ideal of the nilpotents, a whole line and not a point.
@@ -51,7 +51,7 @@ So the **critical locus** of $f_c$ is the set $\{x = 0\} = \mathbb{R}\varepsilon
 **Theorem (the collapse of the critical set).** Every critical point has the same image:
 
 $$
-f_c(\varepsilon y) = c \qquad \text{for every } y \in \mathbb{R} .
+\boxed{\; f_c(\varepsilon y) = c \qquad \text{for every } y \in \mathbb{R} \;}.
 $$
 
 Consequently the critical set collapses to the single critical value $c$, the critical orbit is the orbit of $c$, and the family has no "critical point" in the sense of *The Julia Sets of a Complex Polynomial* other than the value $c$ itself.
@@ -81,7 +81,7 @@ are bounded; for the critical orbit, $x_0 = 0$ and the real orbit is $(g_\gamma^
 **Theorem (the projection of the connectedness locus).** The projection $\pi(M_{\mathbb{D}'}) \subseteq \mathbb{R}$ is the real Mandelbrot interval $[-2,\tfrac14]$, and the fibre over $\gamma \in [-2,\tfrac14]$ is
 
 $$
-\{\delta \in \mathbb{R} : (\gamma,\delta) \in M_{\mathbb{D}'}\} = \begin{cases} \mathbb{R}, & \sup_n |P_n(\gamma)| < \infty, \\ \{0\}, & \sup_n |P_n(\gamma)| = \infty, \end{cases}
+\boxed{\; \{\delta \in \mathbb{R} : (\gamma,\delta) \in M_{\mathbb{D}'}\} = \begin{cases} \mathbb{R}, & \sup_n |P_n(\gamma)| < \infty, \\ \{0\}, & \sup_n |P_n(\gamma)| = \infty, \end{cases} \;}
 $$
 
 so the connectedness locus is the real interval in $\gamma$ with the fibre either the whole line or the single point $0$.

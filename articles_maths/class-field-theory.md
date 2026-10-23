@@ -132,7 +132,7 @@ defined on ideals coprime to $\mathrm{M}_0$ and extended multiplicatively.
 **Theorem (Artin reciprocity law).** Let $L/K$ be a finite abelian extension and let $\mathrm{M}$ be admissible for $L/K$. Then the Artin map is surjective, its kernel is
 
 $$
-\ker\left(\frac{L/K}{\cdot}\right) = P_\mathrm{M} \cdot \operatorname{N}_{L/K}\bigl(I_L^{\mathrm{M}}\bigr),
+\boxed{\;\ker\left(\frac{L/K}{\cdot}\right) = P_\mathrm{M} \cdot \operatorname{N}_{L/K}\bigl(I_L^{\mathrm{M}}\bigr)\;},
 $$
 
 where $\operatorname{N}_{L/K}$ is the ideal norm map and $I_L^{\mathrm{M}}$ is the group of fractional ideals of $L$ coprime to $\mathrm{M}\mathcal{O}_L$, and therefore
@@ -192,7 +192,7 @@ $$
 **(b)** For each $\mathrm{M}$ there is a largest such extension, the **ray class field** $K_{\mathrm{M}}$, characterised by $H = P_\mathrm{M}$, so that
 
 $$
-\operatorname{Gal}(K_{\mathrm{M}}/K) \cong \operatorname{Cl}_{\mathrm{M}}(K) = I_K^{\mathrm{M}}/P_\mathrm{M} .
+\boxed{\;\operatorname{Gal}(K_{\mathrm{M}}/K) \cong \operatorname{Cl}_{\mathrm{M}}(K) = I_K^{\mathrm{M}}/P_\mathrm{M}\;} .
 $$
 
 **(c)** Every abelian extension of $K$ is contained in the ray class field of some modulus; equivalently, the union of the fields $K_{\mathrm{M}}$ over all moduli $\mathrm{M}$ is the maximal abelian extension $K^{\mathrm{ab}}$ of $K$.
@@ -270,7 +270,7 @@ whose discriminant is $-4(-1)^3 - 27(1)^2 = -23$, exhibiting the field as a degr
 **Theorem (Chebotarev, weak form).** Let $L/K$ be a finite Galois extension of number fields with group $G$, let $C \subseteq G$ be a conjugacy class, and let $\mathrm{M}$ be a modulus divisible by the ramified primes and containing the ramified real places. Then there are infinitely many unramified primes $\mathrm{p}$ of $K$ with $\mathrm{p} \nmid \mathrm{M}$ and
 
 $$
-\operatorname{Frob}_\mathrm{p} \in C ,
+\boxed{\;\operatorname{Frob}_\mathrm{p} \in C\;} ,
 $$
 
 where the condition is that the Frobenius elements of the primes of $L$ above $\mathrm{p}$ form the conjugacy class $C$. For $L/K$ abelian, this is the statement that every class of $I_K^{\mathrm{M}}/P_\mathrm{M}$ contains infinitely many primes.

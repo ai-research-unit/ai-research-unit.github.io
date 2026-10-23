@@ -32,9 +32,9 @@ $$
 **Theorem (the root decomposition as an eigenspace decomposition).** The algebra decomposes as
 
 $$
-\mathrm{G}=\mathrm{H}\oplus\bigoplus_{\alpha\in\Phi}\mathrm{G}_\alpha,
+\boxed{\;\mathrm{G}=\mathrm{H}\oplus\bigoplus_{\alpha\in\Phi}\mathrm{G}_\alpha,
 \qquad
-\mathrm{G}_\alpha=\{\,x : \operatorname{ad}_h(x)=\alpha(h)x\text{ for all }h\in\mathrm{H}\,\},
+\mathrm{G}_\alpha=\{\,x : \operatorname{ad}_h(x)=\alpha(h)x\text{ for all }h\in\mathrm{H}\,\}\;},
 $$
 
 and the joint eigenspaces of the family $\operatorname{ad}(\mathrm{H})$ are exactly the pieces $\mathrm{G}_\alpha$ and $\mathrm{H}=\mathrm{G}_0$.
@@ -44,7 +44,7 @@ and the joint eigenspaces of the family $\operatorname{ad}(\mathrm{H})$ are exac
 **Corollary.** On each root space the Cartan operator acts by the scalar $\alpha(h)$:
 
 $$
-\operatorname{ad}_h|_{\mathrm{G}_\alpha}=\alpha(h)\,\mathrm{id},\qquad \operatorname{ad}_h|_{\mathrm H}=0 .
+\boxed{\;\operatorname{ad}_h|_{\mathrm{G}_\alpha}=\alpha(h)\,\mathrm{id},\qquad \operatorname{ad}_h|_{\mathrm H}=0\;} .
 $$
 
 **Remark.** The roots are the eigenvalues, read as functions of $h$. This is why the roots are elements of the dual $\mathrm{H}^*$: for each fixed operator $\operatorname{ad}_h$ the eigenvalue is a scalar, and the several operators assemble the eigenvalue into a linear functional on $\mathrm{H}$.
@@ -62,7 +62,7 @@ $$
 **Corollary (the characteristic polynomial).** For $h\in\mathrm{H}$ the characteristic polynomial of the Cartan operator is
 
 $$
-\det(t\,\mathrm{id}-\operatorname{ad}_h)=t^{\dim\mathrm{H}}\prod_{\alpha\in\Phi}\bigl(t-\alpha(h)\bigr),
+\boxed{\;\det(t\,\mathrm{id}-\operatorname{ad}_h)=t^{\dim\mathrm{H}}\prod_{\alpha\in\Phi}\bigl(t-\alpha(h)\bigr)\;},
 $$
 
 a product of linear factors with multiplicities one, showing the diagonalisability directly.

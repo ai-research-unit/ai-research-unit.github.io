@@ -27,7 +27,7 @@ so the resolvent is a maximal analytic operator-valued function with values in $
 **Proposition (the indefinite adjoint identity).** For a $J$-self-adjoint $A$ and $z\in\rho(A)$ one has $\bar z\in\rho(A)$ and
 
 $$
-R(z)^{[*]}=R(\bar z),\qquad\text{that is}\qquad J\,R(z)^*\,J=R(\bar z),
+\boxed{\;R(z)^{[*]}=R(\bar z),\qquad\text{that is}\qquad J\,R(z)^*\,J=R(\bar z)\;},
 $$
 
 so the resolvent set is symmetric with respect to the real axis, the spectrum is symmetric, $\sigma(A)=\overline{\sigma(A)}$, and the resolvent satisfies the indefinite counterpart of the Hilbert-space identity.
@@ -91,7 +91,7 @@ is $J$-unitary, $C(A)^{[*]}C(A)=C(A)C(A)^{[*]}=I$, and the assignment is a bijec
 **Theorem (the sharp Hilbert estimate).** For a self-adjoint $A$ on a Hilbert space,
 
 $$
-\|R(z)\|=\frac1{\operatorname{dist}(z,\sigma(A))}\qquad(z\notin\sigma(A)),
+\boxed{\;\|R(z)\|=\frac1{\operatorname{dist}(z,\sigma(A))}\qquad(z\notin\sigma(A))\;},
 $$
 
 and the equality characterises the self-adjoint case among bounded operators up to similarity by a unitary.
@@ -101,7 +101,7 @@ and the equality characterises the self-adjoint case among bounded operators up 
 **Theorem (failure in the indefinite metric).** A bounded $J$-self-adjoint operator satisfies the one-sided estimates
 
 $$
-\|R(z)\|\ge\frac1{\operatorname{dist}(z,\sigma(A))}\quad\text{and}\quad\|R(z)\|\le\frac{M}{\operatorname{dist}(z,\sigma(A))}
+\boxed{\;\|R(z)\|\ge\frac1{\operatorname{dist}(z,\sigma(A))}\quad\text{and}\quad\|R(z)\|\le\frac{M}{\operatorname{dist}(z,\sigma(A))}\;}
 $$
 
 for a constant $M$ depending on $A$ and the fundamental decomposition when $A$ is definite; in the general indefinite case no bound of the form $M/\operatorname{dist}(z,\sigma(A))$ need hold, and the resolvent may grow arbitrarily fast as the real spectrum is approached, the growth being governed by the negative spectral subspace.

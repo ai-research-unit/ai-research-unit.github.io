@@ -135,7 +135,7 @@ $$
 **Proposition.** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution and the derived operation $x \star y = xy^{*}$. The associator of the derived operation is
 
 $$
-(x \star y) \star z - x \star (y \star z) = x\bigl((zy)^{*} - zy^{*}\bigr) .
+\boxed{\;(x \star y) \star z - x \star (y \star z) = x\bigl((zy)^{*} - zy^{*}\bigr)\;} .
 $$
 
 Consequently the derived operation is associative if and only if $x\bigl((zy)^{*} - zy^{*}\bigr) = 0$ for all $x, y, z \in A$, which for an $A$ with zero left annihilator (in particular for a unital $A$) is the condition $(zy)^{*} = zy^{*}$; when $A$ has a unit this in turn holds if and only if the involution is the identity.
@@ -167,7 +167,7 @@ $$
 **Theorem (the identity).** The triple product of the derived operation satisfies the Jordan triple identity
 
 $$
-\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\} .
+\boxed{\;\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\}\;} .
 $$
 
 **Proof.** The verification is a finite expansion of each side in the products and the involution, using only the associativity of $A$ and $(uv)^{*} = v^{*}u^{*}$; it is carried out in *Algebraic J\*-Algebras*, where the identity is the defining axiom of the $J^{*}$-triple.
@@ -187,7 +187,7 @@ $$
 **Proposition.** $L_a$ is $\varsigma$-semilinear for every $a$, while $R_a$ is $R$-linear; $L_a$ is $R$-linear exactly when $\varsigma = \mathrm{id}$ or $(\lambda - \varsigma(\lambda))ax = 0$ for every $\lambda \in R$ and $x \in A$. When the product is associative — which for an algebra of full type forces $\varsigma = \mathrm{id}$, by the theorem of *The Collapse at the Identity* — the two families satisfy
 
 $$
-L_aL_b = L_{ab}, \qquad R_aR_b = R_{ba}, \qquad L_aR_b = R_bL_a,
+\boxed{\;L_aL_b = L_{ab}, \qquad R_aR_b = R_{ba}, \qquad L_aR_b = R_bL_a\;},
 $$
 
 so $a \mapsto L_a$ is multiplicative but its values are $\varsigma$-semilinear, while $a \mapsto R_a$ is multiplicative up to the reversal of the order — a representation of the opposite algebra $A^{\mathrm{opp}}$ — with $R$-linear values.

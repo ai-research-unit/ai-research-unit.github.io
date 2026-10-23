@@ -32,7 +32,7 @@ it exists and is unique because the pairing is nondegenerate.
 **Theorem.** The adjoint exists and is unique, it is an operator of $\operatorname{End}_K(V)$, and in a basis it has the matrix
 
 $$
-T^{\dagger} = H^{-1}\, T^{*}\, H , \qquad T^{*} = \overline{T}^{\mathsf T} ,
+\boxed{\;T^{\dagger} = H^{-1}\, T^{*}\, H , \qquad T^{*} = \overline{T}^{\mathsf T}\;} ,
 $$
 
 where $H$ is the matrix of the pairing and the star is the conjugate transpose; the adjoint is therefore the **two-sided sandwich** of the conjugate transpose between the matrix of the pairing and its inverse, and it is the unique operator with the defining identity.
@@ -62,7 +62,7 @@ so the adjoint is a **conjugate-linear anti-automorphism of order two** of the a
 **Theorem.** When $2$ is invertible in $K$ the algebra of the operators decomposes as the direct sum
 
 $$
-\operatorname{End}_K(V) = \operatorname{Herm}(V,h) \oplus \operatorname{Skew}(V,h), \qquad T = \tfrac12(T + T^{\dagger}) + \tfrac12(T - T^{\dagger}) ,
+\boxed{\;\operatorname{End}_K(V) = \operatorname{Herm}(V,h) \oplus \operatorname{Skew}(V,h), \qquad T = \tfrac12(T + T^{\dagger}) + \tfrac12(T - T^{\dagger})\;} ,
 $$
 
 the Hermitian part and the skew-Hermitian part; the Hermitian operators form a $K_0$-vector space of the dimension $n^2$ over $K_0$ in the quadratic case, and the skew-Hermitian operators form the complement; the trace of a self-adjoint operator lies in the fixed field $K_0$, and the trace of a skew-adjoint operator lies in the trace-zero part of $K$ over $K_0$.
@@ -80,7 +80,7 @@ the Hermitian part and the skew-Hermitian part; the Hermitian operators form a $
 **Theorem.** The unitary elements form a group under the composition, equal to the group of the isometries of $h$; the determinant of a unitary element has norm one, $N(\det T) = 1$ in the nontrivial case, and the special unitary group is the subgroup of determinant one. The self-adjoint and the skew-adjoint elements are the tangent spaces of the unitary group at the identity,
 
 $$
-\mathfrak{u}(V,h) = \operatorname{Skew}(V,h) ,
+\boxed{\;\mathfrak{u}(V,h) = \operatorname{Skew}(V,h)\;} ,
 $$
 
 the Lie algebra of the unitary group, and the exponential of a skew-adjoint operator is unitary.

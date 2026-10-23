@@ -34,7 +34,7 @@ Its elements are written $X = X_{\mathrm{K}} + X_{\mathrm{P}}$ with the two comp
 **Proposition.** The decomposition satisfies
 
 $$
-[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}, \qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}, \qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K} .
+\boxed{\;[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}, \qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}, \qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}\;} .
 $$
 
 *Proof.* The involution $\theta$ is an automorphism, so $\theta[X,Y] = [\theta X,\theta Y]$; taking $X,Y$ in the eigenpieces with signs $\epsilon,\delta\in\{+1,-1\}$ gives $\theta[X,Y] = \epsilon\delta[X,Y]$, so the bracket lies in the eigenspace of the sign $\epsilon\delta$. In particular $\mathrm{K}$ is a subalgebra, $\mathrm{P}$ is a $\mathrm{K}$-module, and the sum is a $\mathbb{Z}/2$-grading of the Lie algebra in the sense of *Graded Lie Algebras with an Involution*.
@@ -42,7 +42,7 @@ $$
 **Proposition.** The two pieces are orthogonal for the Killing form and for the twisted form, and the restrictions satisfy
 
 $$
-B_\theta(X,Y) = \begin{cases} -B(X,Y), & X,Y\in\mathrm{K},\\ B(X,Y), & X,Y\in\mathrm{P},\\ 0, & X\in\mathrm{K},\ Y\in\mathrm{P}, \end{cases}
+\boxed{\;B_\theta(X,Y) = \begin{cases} -B(X,Y), & X,Y\in\mathrm{K},\\ B(X,Y), & X,Y\in\mathrm{P},\\ 0, & X\in\mathrm{K},\ Y\in\mathrm{P}, \end{cases}\;}
 $$
 
 so that $-B$ is positive definite on $\mathrm{K}$ and $B$ is positive definite on $\mathrm{P}$.
@@ -94,7 +94,7 @@ where $\Theta$ is the automorphism of $G$ integrating $\theta$; when $G$ is simp
 **Theorem (the Cartan decomposition of the group).** Let $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ be the Cartan decomposition. The map
 
 $$
-\mathrm{K}\times\mathrm{P} \longrightarrow G, \qquad (X,Y) \longmapsto \exp X\,\exp Y ,
+\boxed{\;\mathrm{K}\times\mathrm{P} \longrightarrow G, \qquad (X,Y) \longmapsto \exp X\,\exp Y\;} ,
 $$
 
 is a diffeomorphism onto $G$; equivalently every $g\in G$ has a unique expression $g = k\exp Y$ with $k\in K$ and $Y\in\mathrm{P}$, and the map $Y\mapsto\exp Y$ is a diffeomorphism from $\mathrm{P}$ onto the image.

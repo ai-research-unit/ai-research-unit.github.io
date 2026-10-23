@@ -123,7 +123,7 @@ where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the biquaternion-valued o
 **Theorem (divergence theorem).** Let $F^{\mathrm{fn}}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
 
 $$
-\int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS,
+\boxed{\; \int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} \, dS \;},
 $$
 
 where $\tilde u_{\mathrm n} = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ is the biquaternion-valued outward unit normal.
@@ -302,7 +302,7 @@ $$
 **Theorem.** In the sense of distributions on $\mathbb{H}_{\mathbb{B}}$,
 
 $$
-\tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t,
+\boxed{\; \tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t \;},
 $$
 
 where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
@@ -360,7 +360,7 @@ where $G^{\mathrm{fn}}$ is the fundamental solution defined above, $\tilde u_{\m
 **Theorem (Cauchy integral formula for regular functions).** If $F^{\mathrm{fn}}$ satisfies $\tilde{\nabla}F^{\mathrm{fn}} = 0$ on $\Omega$ (the biquaternion analogue of the Cauchy–Riemann equations), then
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}).
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) \;}.
 $$
 
 ### Proof of the Cauchy Integral Formula
@@ -460,7 +460,7 @@ where $\varepsilon$ is small enough that the sphere does not enclose any other s
 **Theorem (residue theorem).** Let $F^{\mathrm{fn}}$ be regular on a domain $\Omega$ except at isolated singularities $\tilde{Q}_1, \dots, \tilde{Q}_n$. Then
 
 $$
-\frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) = \sum_{k=1}^{n} \mathrm{Res}(F^{\mathrm{fn}}, \tilde{Q}_k)
+\boxed{\; \frac{1}{2\pi^2} \int_{\partial \Omega} G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F^{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) = \sum_{k=1}^{n} \mathrm{Res}(F^{\mathrm{fn}}, \tilde{Q}_k) \;}
 $$
 
 for any $\tilde{Q}_0$ outside the singularities.

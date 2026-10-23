@@ -39,7 +39,7 @@ and the conjugate module $A^{\varsigma}$ carries the grading of $A$.
 **Proposition (the parities and the degrees of the product).** The product satisfies the two scalar rules $(\lambda x)\star y=\lambda(x\star y)$ and $x\star(\lambda y)=\varsigma(\lambda)(x\star y)$, it is $k$-bilinear as a map $A\times A^{\varsigma}\to A$, and it is homogeneous:
 
 $$
-A^{i}\star A^{j}\subseteq A^{i+j},\qquad i,j\in\{0,1\},
+\boxed{\;A^{i}\star A^{j}\subseteq A^{i+j},\qquad i,j\in\{0,1\}\;},
 $$
 
 so that the product is a map of graded sets $A^{i}\times(A^{\varsigma})^{j}\to A^{i+j}$.
@@ -100,7 +100,7 @@ $$
 **Proposition (the parities and the degree of the derived action).** The derived action is linear in the algebra element and $\varsigma$-semilinear in the module element, and it is homogeneous: for homogeneous $a$ and $m$,
 
 $$
-a\star(\lambda m)=\varsigma(\lambda)(a\star m), \qquad (\lambda a)\star m=\lambda(a\star m), \qquad \lvert a\star m\rvert=\lvert a\rvert+\lvert m\rvert ,
+\boxed{\;a\star(\lambda m)=\varsigma(\lambda)(a\star m), \qquad (\lambda a)\star m=\lambda(a\star m), \qquad \lvert a\star m\rvert=\lvert a\rvert+\lvert m\rvert\;} ,
 $$
 
 the last identity for a nonvanishing $a\star m$, the zero element carrying no degree.
@@ -132,7 +132,7 @@ The condition is stated on the even part only, and it is a condition and not a c
 **Proposition (the obstruction on the odd part).** Extend the identity of the definition to an odd element, $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ for $a\in A^{1}$. It fails whenever an odd element acts nontrivially, and in the matrix superalgebra of the worked case it fails for every conjugation. With $a=E_{12}$ and $m=f_{2}$,
 
 $$
-\theta(E_{12}\cdot f_{2})=f_{1}\neq0=(E_{12})^{*}\cdot\theta(f_{2})
+\boxed{\;\theta(E_{12}\cdot f_{2})=f_{1}\neq0=(E_{12})^{*}\cdot\theta(f_{2})\;}
 $$
 
 for the coefficientwise conjugation, and with $a=E_{12}$ and $m=f_{1}$ the left-hand side is $0$ while the right-hand side is $(E_{12})^{*}\theta(f_{1})=E_{21}\theta(f_{1})$, which is nonzero for every conjugation.

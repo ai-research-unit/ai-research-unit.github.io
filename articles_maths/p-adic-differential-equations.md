@@ -55,7 +55,7 @@ The estimate is crude because the denominators of the recurrence are $m+1$ rathe
 
 **Theorem (Dwork's lemma).** Let $f = \sum_{m \geq 0} a_m x^m \in \mathcal{O}[[x]]$ with $a_0 = 1$ and suppose that for some power $q = p^s$ of the residue characteristic the quotient
 $$
-\frac{f(x)}{f(x^q)} = \sum_{m \geq 0} b_m x^m
+\boxed{\;\frac{f(x)}{f(x^q)} = \sum_{m \geq 0} b_m x^m\;}
 $$
 has all its coefficients $b_m$ in $\mathcal{O}$. Then $f$ has all its coefficients in $\mathcal{O}$ and in particular converges on the open unit disc: $f \in K\{x\}$. The conclusion is not coefficient decay — $f = (1-x)^{-1}$ satisfies the hypothesis with $a_m = 1$ for every $m$ — and it is the integrality of the coefficients, not their decay, that the lemma supplies.
 
@@ -109,7 +109,7 @@ The definition of the slope of a differential module over $\mathcal{R}$ makes pr
 
 **Theorem (Dwork–Robba).** Let $M$ be a nonzero differential module over $\mathcal{R}$. Then $M$ admits a unique decomposition
 $$
-M = M_{>0} \oplus M_{\leq 0}
+\boxed{\;M = M_{>0} \oplus M_{\leq 0}\;}
 $$
 into differential submodules, where $M_{>0}$ has all slopes $> 0$ and $M_{\leq 0}$ has all slopes $\leq 0$; more generally $M$ decomposes uniquely as a direct sum of isoclinic submodules of distinct slopes, and the slopes are rational numbers. The submodule of slope $0$ is the **unit-root part**, and it is the part whose solutions converge on the open unit disc.
 
@@ -125,7 +125,7 @@ The decomposition is the $p$-adic replacement for the classification of singular
 
 **Theorem (formal Fuchs theorem).** Let $B \in M_n(K)$ and consider the equation $xy' = By$. Then there is a formal fundamental solution
 $$
-Y(x) = F(x)\,x^B, \qquad F \in \mathrm{GL}_n(K[[x]]), \quad F(0) = I,
+\boxed{\;Y(x) = F(x)\,x^B, \qquad F \in \mathrm{GL}_n(K[[x]]), \quad F(0) = I\;},
 $$
 where $x^B$ is defined by the formal logarithm of the matrix, and the expansion is valid in a finite extension of $K$ if the eigenvalues of $B$ are not all in $K$.
 

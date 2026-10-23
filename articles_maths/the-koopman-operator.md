@@ -17,7 +17,7 @@ No physics is invoked.
 **Definition.** Let $(X,\mathcal{B},\mu)$ be a probability space and let $T:X\to X$ be measurable and **measure-preserving**, $\mu(T^{-1}A)=\mu(A)$ for all $A\in\mathcal{B}$. The **Koopman operator** of $T$ is
 
 $$
-\Phi_T:L^2(X,\mu)\to L^2(X,\mu), \qquad \Phi_Tf=f\circ T .
+\boxed{\;\Phi_T:L^2(X,\mu)\to L^2(X,\mu), \qquad \Phi_Tf=f\circ T\;} .
 $$
 
 The **fixed space** is $\ker(\Phi_T-I)$, the **coboundaries** are the functions $g\circ T-g$ with $g\in L^2$, and the **coboundary space** is the closed span of the coboundaries. For a measure-preserving flow $\varphi_t$ the **Koopman flow** is the one-parameter family
@@ -37,7 +37,7 @@ $$
 **Theorem (Stone, quoted).** A strongly continuous one-parameter unitary group $\{\Phi_t\}_{t\in\mathbb{R}}$ on a Hilbert space has the form
 
 $$
-\Phi_t=\exp(itA), \qquad A \text{ self-adjoint},
+\boxed{\;\Phi_t=\exp(itA), \qquad A \text{ self-adjoint}\;},
 $$
 
 with the generator $A=\frac{1}{i}\frac{d}{dt}\Big|_{t=0}\Phi_t$, and the group is recovered from the spectral measure $E$ of $A$ by $\Phi_t=\int_{\mathbb{R}}\exp(it\lambda)dE(\lambda)$.

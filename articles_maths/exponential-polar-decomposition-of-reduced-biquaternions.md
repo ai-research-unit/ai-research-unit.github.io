@@ -49,7 +49,7 @@ which are a complex-linear change of coordinates on the element. The decompositi
 | Uniqueness | unique in the principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ |
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^2$ |
 | Group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2$ |
-| Companion | *Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions*, for the reading through the two complex components |
+| Companion | *Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion*, for the reading through the two complex components |
 | Worked examples | *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, for the eight cases and the reconstruction tables |
 
 The plan is as follows. The analytic facts and the two complex components are recalled (§*The Analytic Setting*); the definition, the exponent and its four real coordinates, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved in the principal domain (§*Existence and Uniqueness*); the logarithm, its principal branch and its fibre are read (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); the numerical cases are collected in *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*.
@@ -293,7 +293,9 @@ $$
 In full,
 
 $$
-\breve Q=\rho\bigl(\cosh\phi+j\sinh\phi\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
+
+\boxed{\;\breve Q=\rho\bigl(\cosh\phi+j\sinh\phi\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr)
+\;}.
 $$
 
 The polar word is one exponential, not a product of independent exponentials with an ordering correction. The closed form of the exponential is
@@ -318,7 +320,9 @@ In the four coordinates, $\rho=1$, $\phi=\ln2$ and $\alpha=\beta=0$.
 **Theorem.** The exponential is a bijection from the **principal domain**
 
 $$
+
 D=\Bigl\{\ln\rho+j\phi+i\alpha+ij\beta:\rho>0,\ \phi\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\Bigr\}
+
 $$
 
 onto the unit group $\mathbb{B}_{\mathrm{r}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.
@@ -517,7 +521,7 @@ $$
 The radii multiply, the boosts add, and the phases add on the torus. In the components the law is the pair of complex laws $C_\pm(\breve Q_1\breve Q_2)=C_\pm(\breve Q_1)C_\pm(\breve Q_2)$. The group of units is therefore
 
 $$
-\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2,
+\boxed{\;\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2\;},
 $$
 
 with the two real coordinates $\ln\rho$ and $\phi$ and the two torus coordinates $(\alpha,\beta)$ modulo $\Lambda$. The exponential exhibits the group as the quotient of the additive group $\mathbb{R}^4$ by the kernel lattice,
@@ -582,7 +586,9 @@ In the real basis $\{1,i,j,ij\}$ the same identity is the exponential of a $4\ti
 **Proposition (the derivative).** The derivative of the exponential at $\breve Q_{\log}$ is left multiplication by $\exp\breve Q_{\log}$:
 
 $$
-d\exp_{\breve Q_{\log}}(\breve H)=\exp(\breve Q_{\log})\,\breve H.
+
+\boxed{\;d\exp_{\breve Q_{\log}}(\breve H)=\exp(\breve Q_{\log})\,\breve H
+\;}.
 $$
 
 Its determinant is
@@ -925,6 +931,7 @@ The table compares the three exponential polar decompositions; in the split-comp
 ## Further Reading
 
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the eight cases, the reconstruction tables and the boundary family.
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential and the logarithm as functions, the kernel and the principal domain.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
 - [Rational-Chart Polar Decomposition of Reduced Biquaternions](rational-chart-polar-decomposition-of-reduced-biquaternions.html), for the rational coordinate on the torus.
@@ -933,5 +940,5 @@ The table compares the three exponential polar decompositions; in the split-comp
 - [Exponential Polar Decomposition of Complex Numbers](exponential-polar-decomposition-of-complex-numbers.html), for the one-coordinate exponential.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic exponential.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the noncommutative counterpart.
-- [Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions](relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-reduced-biquaternions.html), for the relation with the eigenvalue decomposition.
+- [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the relation with the eigenvalue decomposition.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.

@@ -55,7 +55,7 @@ and the general element with the **conjugation parity** is an element of one of 
 
 **Theorem (the decomposition of the operator layer).** When $2$ is invertible in $\mathcal{O}_{X_L}$ the operator layer splits into the two eigenspaces,
 $$
-\mathcal{D} = \mathcal{D}_+\oplus\mathcal{D}_-, \qquad T = \tfrac12\bigl(T+\mathrm{ad}_\sigma(T)\bigr)+\tfrac12\bigl(T-\mathrm{ad}_\sigma(T)\bigr),
+\boxed{\;\mathcal{D} = \mathcal{D}_+\oplus\mathcal{D}_-, \qquad T = \tfrac12\bigl(T+\mathrm{ad}_\sigma(T)\bigr)+\tfrac12\bigl(T-\mathrm{ad}_\sigma(T)\bigr)\;},
 $$
 and $\mathcal{D}_+$ is the fixed subalgebra. In characteristic two the decomposition fails and every operator is fixed or nilpotent in the conjugation.
 
@@ -73,7 +73,7 @@ so that $\mathcal{D} = \mathcal{D}_+\oplus\mathcal{D}_-$ is a $\mathbb{Z}/2$-gra
 
 **Theorem (the fixed algebra is the operator layer of the descended variety).** Let $X$ be a variety over $k$, let $L/k$ be a finite Galois extension with group $G$, and let the operator layer $\mathcal{D}_{X_L}$ carry the conjugation of the geometric involution. Then the fixed algebra is the operator layer of $X$,
 $$
-\mathcal{D}_{X_L}^{G}\ =\ \mathcal{D}_X .
+\boxed{\;\mathcal{D}_{X_L}^{G}\ =\ \mathcal{D}_X\;} .
 $$
 
 *Proof.* An operator on $X_L$ that is fixed by every $\sigma\in G$ is an operator whose coefficients are fixed, hence defined over $k$; the sheaf of the fixed operators is the descent of $\mathcal{D}_{X_L}$ along the base change, by the descent of the module category and of the algebra structure of Part I's *Descent Theory* and *Real Forms and the Descent of an Algebra*. On an affine chart the statement is that the $G$-invariants of the Weyl-type algebra $A\otimes_kL$ are $A$, computed from the coefficients by the fixed-point theorem of *The Galois Action as an Operator*.
@@ -94,7 +94,7 @@ which on a smooth proper variety is the trace pairing of *The Weil Restriction a
 
 **Theorem (the two operations differ, and when they agree).** The conjugation by the geometric involution and the adjoint are distinct operations on the operator layer; they agree on an operator $T$ exactly when $T$ is invariant under the composite, that is when the adjoint of the conjugate equals the conjugate of the adjoint,
 $$
-\mathrm{ad}_\sigma(T)^{*} = \mathrm{ad}_\sigma(T^{*}) .
+\boxed{\;\mathrm{ad}_\sigma(T)^{*} = \mathrm{ad}_\sigma(T^{*})\;} .
 $$
 When the pairing is invariant under the conjugation, $\langle\sigma x,\sigma y\rangle = \langle x,y\rangle$, the two operations commute on the whole layer, and the fixed operators and the self-adjoint operators are related by the decomposition of the layer.
 

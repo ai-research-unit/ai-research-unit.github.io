@@ -15,7 +15,7 @@ Throughout, $E$ is a Polish space with its Borel $\sigma$-algebra, $\{X_t\}_{t\g
 
 **Definition.** A **transition operator** (or transition semigroup) on $E$ is a family $\{P_t\}_{t\ge0}$ of Markov kernels, acting on bounded measurable functions by
 $$
-P_tf(x)=\int_E f(y)\,p_t(x,dy)=\mathbb E_x[f(X_t)],
+\boxed{\;P_tf(x)=\int_E f(y)\,p_t(x,dy)=\mathbb E_x[f(X_t)]\;},
 $$
 and on finite measures by $\mu P_t(B)=\int_E\mu(dx)\,p_t(x,B)$, such that
 $$
@@ -55,7 +55,7 @@ $$
 
 **Theorem (resolvent identity).** For $\lambda,\mu>0$,
 $$
-R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L),
+\boxed{\;R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L)\;},
 $$
 and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.
 
@@ -73,7 +73,7 @@ and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.
 
 **Theorem (Kolmogorov equations).** Let the transition semigroup be Feller with generator $L$ and let the process be non-explosive. Then for $f\in\mathcal D(L)$ the function $u(t,x)=P_tf(x)$ solves the **backward equation**
 $$
-\partial/\partial t u=Lu,\qquad u(0,x)=f(x),
+\boxed{\;\partial/\partial t u=Lu,\qquad u(0,x)=f(x)\;},
 $$
 and the transition kernels solve the **forward equation** $\partial/\partial t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.
 

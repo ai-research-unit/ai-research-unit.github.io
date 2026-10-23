@@ -159,9 +159,9 @@ $$
 **Proposition.** For all $x, y \in A$,
 
 $$
-x \star y = \star_{+}(x,y) + \star_{-}(x,y), \qquad
+\boxed{\;x \star y = \star_{+}(x,y) + \star_{-}(x,y), \qquad
 c\bigl(\star_{+}(y,x)\bigr) = \star_{+}(x,y), \qquad
-c\bigl(\star_{-}(y,x)\bigr) = -\star_{-}(x,y),
+c\bigl(\star_{-}(y,x)\bigr) = -\star_{-}(x,y)\;},
 $$
 
 and both halves are $\varsigma$-sesquilinear products of $A$. On the diagonal $\star_{+}(x,x) = \tfrac12\bigl(x \star x + c(x \star x)\bigr)$ and $\star_{-}(x,x) = \tfrac12\bigl(x \star x - c(x \star x)\bigr)$.
@@ -206,7 +206,7 @@ $$
 **Proposition.** The operators $p$ and $q$ are additive and satisfy
 
 $$
-p^2 = p, \qquad q^2 = q, \qquad pq = qp = 0, \qquad p + q = \mathrm{id},
+\boxed{\;p^2 = p, \qquad q^2 = q, \qquad pq = qp = 0, \qquad p + q = \mathrm{id}\;},
 $$
 
 so that the space of products is the direct sum of its conjugate-symmetric products, the image of $p$, and its skew-conjugate-symmetric products, the image of $q$.
@@ -267,7 +267,7 @@ and the computation for $\star_{-}$ is the same with a sign.
 **Theorem (the whole scalar part is conjugate-symmetric).** Let $\varepsilon$ be compatible with $c$ and suppose the scalar form $s = \varepsilon\circ\star$ is $\varsigma$-Hermitian. Then
 
 $$
-\varepsilon\bigl(\star_{-}(x,y)\bigr) = 0, \qquad \varepsilon\bigl(\star_{+}(x,y)\bigr) = s(x,y) = \varepsilon(x \star y)
+\boxed{\;\varepsilon\bigl(\star_{-}(x,y)\bigr) = 0, \qquad \varepsilon\bigl(\star_{+}(x,y)\bigr) = s(x,y) = \varepsilon(x \star y)\;}
 $$
 
 for all $x, y$. The skew-conjugate-symmetric half is scalar-free, and the conjugate-symmetric half carries the whole scalar form.

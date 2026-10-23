@@ -43,8 +43,8 @@ Throughout, $\langle\cdot\rangle_{\natural}$ is the indefinite norm of signature
 $$
 \boxed{\;
 P(s)=\lim_{n\to\infty}\frac1n\log\sum_{|\omega|=n}\|DS_\omega\|_\infty^{\,s}=0
-\;}
-$$,
+\;},
+$$
 
 where $S_\omega$ is the composition of the branches of the word $\omega$ and $DS_\omega$ its derivative; when the branches have locally constant derivatives this reduces to $\sum_i\theta_i^{\,s}=1$, and the exponent equals the Patterson–Sullivan exponent $\delta(\Gamma)$ of *The Limit Sets of the Hyperbolic Lattices*. The statement is quoted from *Kleinian and Fuchsian Groups*, and it is the reason the hyperbolic Cantor set of this article is the same object as the limit set of the previous one.
 

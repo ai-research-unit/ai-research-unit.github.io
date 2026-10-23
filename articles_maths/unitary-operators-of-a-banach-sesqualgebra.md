@@ -29,7 +29,7 @@ and is **multiplicative** when moreover $T(1)=1$.
 **Theorem (the identification with the unital $*$-maps).** Let $T$ be a bounded operator of one of the two parities with $T(1)=1$. Then $T$ preserves the product if and only if $T$ is a unital $*$-endomorphism of the corresponding parity:
 
 $$
-T(xy)=Tx\,Ty,\qquad T(y^{*})=(Ty)^{*} .
+\boxed{\;T(xy)=Tx\,Ty,\qquad T(y^{*})=(Ty)^{*}\;} .
 $$
 
 For a $\mathbb{K}$-linear $T$ these are the ordinary unital $*$-endomorphisms, and for a $\varsigma$-semilinear $T$ they are the $\varsigma$-semilinear ones, with $T(\lambda y)=\varsigma(\lambda)Ty$.
@@ -61,7 +61,7 @@ For a $\mathbb{K}$-linear $T$ these are the ordinary unital $*$-endomorphisms, a
 **Theorem (the inner automorphisms).** For $u\in \mathrm{U}(A)$ the map $\alpha_{u}(x)=uxu^{*}$ is a bounded unital $*$-automorphism, hence an element of $G_{0}$, and it is isometric with $\alpha_{u}^{-1}=\alpha_{u^{*}}$. The assignment $u\mapsto\alpha_{u}$ is a continuous homomorphism of topological groups
 
 $$
-\mathrm{U}(A)\longrightarrow G_{0},\qquad \alpha_{u}\alpha_{v}=\alpha_{uv},
+\boxed{\;\mathrm{U}(A)\longrightarrow G_{0},\qquad \alpha_{u}\alpha_{v}=\alpha_{uv}\;},
 $$
 
 whose kernel is the group $\mathrm{U}(A)\cap Z(A)$ of the central unitary elements; its image is the normal subgroup $\operatorname{Inn}(A)$ of the inner $*$-automorphisms, and $G_{0}/\operatorname{Inn}(A)$ is the group of the outer $*$-automorphisms.
@@ -75,7 +75,7 @@ whose kernel is the group $\mathrm{U}(A)\cap Z(A)$ of the central unitary elemen
 **Theorem (the two classes are different).** A multiplicative operator $T$ is unitary in the sense of *The Unitary Operators of a Sesqualgebra*, $T^{\dagger}=T^{-1}$, exactly when it also preserves the reduction of the pairing by a continuous central functional $\tau$,
 
 $$
-\tau\circ T=\tau ,
+\boxed{\;\tau\circ T=\tau\;} ,
 $$
 
 the adjoint being taken for the reduced form $h_{\tau}$ of *Adjoints of Bounded Sesquilinear Operators*. In particular every inner $*$-automorphism $\alpha_{u}$ of a unitary element is unitary, and the left multiplication $L_{u}$ of a unitary element is antiunitary and is **not** product-preserving.

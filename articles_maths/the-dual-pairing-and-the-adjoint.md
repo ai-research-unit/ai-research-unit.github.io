@@ -20,7 +20,7 @@ $$
 **Theorem (existence and uniqueness).** Every weakly continuous $T$ has a unique adjoint $T^{*}$; the assignment $T \mapsto T^{*}$ is linear, reverses composition, $(ST)^{*} = T^{*}S^{*}$, fixes the identity, and is an algebra anti-isomorphism
 
 $$
-\mathcal{L}_{\sigma}(E) \longrightarrow \mathcal{L}_{\sigma}(F) .
+\boxed{\;\mathcal{L}_{\sigma}(E) \longrightarrow \mathcal{L}_{\sigma}(F)\;} .
 $$
 
 **Proof.** For fixed $y \in F$ the functional $x \mapsto \langle Tx, y\rangle$ is continuous for $\sigma(E,F)$, because $T$ is, so it is $\langle x, y^{*}\rangle$ for a unique $y^{*} \in F$ by the non-degeneracy of the pairing; set $T^{*}y = y^{*}$. Linearity in $y$ is the bilinearity of the pairing, continuity of $T^{*}$ for $\sigma(F,E)$ is the same computation with the roles exchanged, and the composition rule is $\langle STx, y\rangle = \langle Tx, S^{*}y\rangle = \langle x, T^{*}S^{*}y\rangle$.
@@ -40,7 +40,7 @@ the closures being in the weak topology; in particular $T$ is injective exactly 
 **Theorem (the adjoint is the transpose read through the duality).** Let $E$ be reflexive and let $T \in \mathcal{L}(E)$. Then the transpose $T'' = (T')'$ acts on $E'' = E$ and equals the adjoint of $T$ with respect to the canonical pairing $\langle E, E'\rangle$:
 
 $$
-\iota_{E}\,T^{*} = T''\,\iota_{E}, \qquad T^{*} = \iota_{E}^{-1}T''\iota_{E} .
+\boxed{\;\iota_{E}\,T^{*} = T''\,\iota_{E}, \qquad T^{*} = \iota_{E}^{-1}T''\iota_{E}\;} .
 $$
 
 Consequently the adjoint of $T$ with respect to the canonical pairing exists, is the double transpose under the identification, and is denoted by the same symbol $T^{*}$; for a general dual pair which is not the canonical one, the adjoint exists exactly when $T$ is weakly continuous.
@@ -66,7 +66,7 @@ so the Hilbert adjoint, the pairing adjoint and the double transpose are one ope
 **Theorem (the double adjoint).** For $T \in \mathcal{L}_{\sigma}(E)$ the double adjoint $T^{**}$ acts on $E$ and equals $T$, so that
 
 $$
-(T^{*})^{*} = T ,
+\boxed{\;(T^{*})^{*} = T\;} ,
 $$
 
 and the adjoint operation is an involution exchanging the two sides, $\mathcal{L}_{\sigma}(E) \to \mathcal{L}_{\sigma}(F)$.

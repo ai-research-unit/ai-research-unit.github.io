@@ -69,7 +69,7 @@ In the four-dimensional algebra there are three decompositions, all induced by i
 The two members of the conjugation decomposition are
 
 $$
-\mathbb{R}_{\mathbb{D}} = \{Q : \bar Q = Q\} = \{q\}, \qquad j\mathbb{R}_{\mathbb{D}} = \{Q : \bar Q = -Q\} = \{jq'\},
+\boxed{\; \mathbb{R}_{\mathbb{D}} = \{Q : \bar Q = Q\} = \{q\}, \qquad j\mathbb{R}_{\mathbb{D}} = \{Q : \bar Q = -Q\} = \{jq'\} \;},
 $$
 
 the fixed and the anti-fixed line. Their bases, dimensions, intersections, sums, the action of the involution on each and the restricted norm are *Split-Complexoid Subspaces*; three properties are needed for the comparison below and are collected here.

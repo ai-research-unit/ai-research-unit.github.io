@@ -27,9 +27,9 @@ that is, $T^{\mathsf{T}}\varphi = \varphi \circ T$.
 **Proposition (the elementary laws).** For linear maps $S : U \to V$ and $T : V \to W$,
 
 $$
-(T \circ S)^{\mathsf{T}} = S^{\mathsf{T}} \circ T^{\mathsf{T}}, \qquad
+\boxed{\;(T \circ S)^{\mathsf{T}} = S^{\mathsf{T}} \circ T^{\mathsf{T}}, \qquad
 (\mathrm{id}_V)^{\mathsf{T}} = \mathrm{id}_{V^{*}}, \qquad
-(\lambda T)^{\mathsf{T}} = \lambda\, T^{\mathsf{T}} .
+(\lambda T)^{\mathsf{T}} = \lambda\, T^{\mathsf{T}}\;} .
 $$
 
 **Proof.** For the first, $((T S)^{\mathsf{T}}\varphi)(u) = \varphi(TSu) = (T^{\mathsf{T}}\varphi)(Su) = (S^{\mathsf{T}}T^{\mathsf{T}}\varphi)(u)$ for every $u$, and the maps agree. The other two are immediate from the definitions.
@@ -51,7 +51,7 @@ $$
 **Proposition (the transpose through kernel and image).** For a linear $T : V \to W$,
 
 $$
-\ker T^{\mathsf{T}} = (\operatorname{im}T)^{0}, \qquad \operatorname{im}T^{\mathsf{T}} = (\ker T)^{0} .
+\boxed{\;\ker T^{\mathsf{T}} = (\operatorname{im}T)^{0}, \qquad \operatorname{im}T^{\mathsf{T}} = (\ker T)^{0}\;} .
 $$
 
 **Proof.** $T^{\mathsf{T}}\varphi = 0$ means $\varphi(Tv) = 0$ for all $v$, that is, $\varphi$ annihilates $\operatorname{im}T$; this is the first identity. For the second, a functional of the form $T^{\mathsf{T}}\varphi$ vanishes on $\ker T$, so $\operatorname{im}T^{\mathsf{T}} \subseteq (\ker T)^{0}$; the two spaces have the same dimension, because $\dim\operatorname{im}T^{\mathsf{T}} = \dim W^{*} - \dim(\operatorname{im}T)^{0} = \dim\operatorname{im}T$ by rank–nullity, while $\dim(\ker T)^{0} = \dim V - \dim\ker T = \dim\operatorname{im}T$. Equal dimensions and a containment give equality.
@@ -105,7 +105,7 @@ the transpose matrix, of size $(\dim V)\times(\dim W)$, whose $(i,j)$ entry is $
 **Theorem.** For a finite-dimensional $V$, the transpose restricts to a bijection $E \to E$ on the endomorphism algebra $E = \operatorname{End}_F(V) \cong \operatorname{Hom}_F(V^{*},V^{*})$, and it is an anti-isomorphism
 
 $$
-(A B)^{\mathsf{T}} = B^{\mathsf{T}} A^{\mathsf{T}} , \qquad (\mathrm{id}_V)^{\mathsf{T}} = \mathrm{id}_V , \qquad (A + \lambda B)^{\mathsf{T}} = A^{\mathsf{T}} + \lambda B^{\mathsf{T}} .
+\boxed{\;(A B)^{\mathsf{T}} = B^{\mathsf{T}} A^{\mathsf{T}} , \qquad (\mathrm{id}_V)^{\mathsf{T}} = \mathrm{id}_V , \qquad (A + \lambda B)^{\mathsf{T}} = A^{\mathsf{T}} + \lambda B^{\mathsf{T}}\;} .
 $$
 
 Under the identification of $E$ with $\operatorname{End}_F(V^{*})$ it is an isomorphism $E \to E^{\mathrm{opp}}$, whence $E \cong E^{\mathrm{opp}}$ as $F$-algebras.

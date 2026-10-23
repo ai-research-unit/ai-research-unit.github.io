@@ -134,7 +134,7 @@ the tensor algebra on the desuspension of $\bar C$, with the unique derivation e
 **Theorem (bar–cobar adjunction, standard).** The bar and cobar constructions form an adjoint pair
 
 $$
-\Omega : \{\text{coaugmented DG coalgebras}\} \rightleftarrows \{\text{augmented DGAs}\} : B ,
+\boxed{\;\Omega : \{\text{coaugmented DG coalgebras}\} \rightleftarrows \{\text{augmented DGAs}\} : B\;} ,
 $$
 
 with $\Omega \dashv B$. The unit and counit are not isomorphisms, and the correct statement of the relation is given by **twisting morphisms**: for a DGA $A$ and a DG coalgebra $C$, the **twisting morphisms** are the degree $-1$ linear maps $\tau : C \to A$ satisfying the **Maurer–Cartan equation**
@@ -150,7 +150,7 @@ for the convolution product $\star$ on $\operatorname{Hom}_k(C,A)$, and they are
 **Theorem (Koszul duality via the cobar construction, standard).** Let $A$ be a Koszul algebra over a field, with Koszul dual $A^!$ regarded as a graded coalgebra by dualising the multiplication. Then there is a quasi-isomorphism of DGAs
 
 $$
-\Omega(A^!)\ \xrightarrow{\ \simeq\ }\ A ,
+\boxed{\;\Omega(A^!)\ \xrightarrow{\ \simeq\ }\ A\;} ,
 $$
 
 so that $A$ is recovered as the homology of the cobar construction on its Koszul dual, and dually $B(A)$ is quasi-isomorphic to $A^!$. The Koszul complex of *Koszul Duality* is the linearisation of this statement: the bar construction is the noncommutative Koszul complex, and the cobar construction is its dual.
@@ -168,7 +168,7 @@ This is the precise sense in which the two constructions of the previous article
 **Theorem (Kontsevich formality; statement of the DGA form).** Let $A = k[x_1,\dots,x_n]$ and let $C^\bullet(A,A)$ be its Hochschild complex as a DGA; let $T_{\mathrm{poly}}(A)$ be the graded algebra of polynomial multivectors with the zero differential and the wedge product. Then there is a quasi-isomorphism of DGAs (indeed of $L_\infty$-algebras, as in *Deformation Quantization* and)
 
 $$
-\bigl(T_{\mathrm{poly}}(A),\ 0\bigr) \longrightarrow \bigl(C^\bullet(A,A),\ \delta\bigr)
+\boxed{\;\bigl(T_{\mathrm{poly}}(A),\ 0\bigr) \longrightarrow \bigl(C^\bullet(A,A),\ \delta\bigr)\;}
 $$
 
 from the multivectors with zero differential to the Hochschild complex, and this quasi-isomorphism is the source of the star products of *Deformation Quantization*. The formality of the little disks operad, stated in *Deformation Quantization*, is the operadic form of the statement; the topological and model-categorical versions belong to Part II.

@@ -25,7 +25,7 @@ Throughout, $V$ is a finite-dimensional complex vector space with a positive-def
 
 **Proposition (the graded algebra).** The eigenspaces $E_0$ and $E_1$ of $\alpha$ satisfy
 $$
-E_0E_0 \subseteq E_0, \qquad E_0E_1 \subseteq E_1, \qquad E_1E_0 \subseteq E_1, \qquad E_1E_1 \subseteq E_0 ,
+\boxed{\;E_0E_0 \subseteq E_0, \qquad E_0E_1 \subseteq E_1, \qquad E_1E_0 \subseteq E_1, \qquad E_1E_1 \subseteq E_0\;} ,
 $$
 so $E$ is a $\mathbb{Z}_2$-graded algebra with degree $|X| = 0$ on $E_0$ and $1$ on $E_1$; the $\mathbb{C}$-subalgebra $E_0$ is the commutant of $T$, and $E_1$ is its odd complement, $E_1 = E_0T$.
 
@@ -55,7 +55,7 @@ it is the graded adjoint representation of the graded Lie algebra $E$.
 
 **Proposition (compatibility with the grading).** The adjoint action is a **graded derivation** of $E$ and a graded map of degree $|X|$,
 $$
-\mathrm{ad}_X(E_j) \subseteq E_{j+|X|}, \qquad \mathrm{ad}_X(YZ) = \mathrm{ad}_X(Y)\,Z + (-1)^{|X||Y|}Y\,\mathrm{ad}_X(Z),
+\boxed{\;\mathrm{ad}_X(E_j) \subseteq E_{j+|X|}, \qquad \mathrm{ad}_X(YZ) = \mathrm{ad}_X(Y)\,Z + (-1)^{|X||Y|}Y\,\mathrm{ad}_X(Z)\;},
 $$
 so an even adjoint action preserves the degree and an odd adjoint action exchanges the two degrees; the graded Jacobi identity is the statement that $\mathrm{ad}$ is a representation, $\mathrm{ad}_{[X,Y]} = [\mathrm{ad}_X,\mathrm{ad}_Y]$, with the graded commutator of the operators on the right.
 
@@ -69,7 +69,7 @@ so an even adjoint action preserves the degree and an odd adjoint action exchang
 
 **Proposition (the adjoint of the adjoint action).** For the ordinary commutator $\mathrm{ad}_X(Y) = XY-YX$ and the Hermitian trace form of $E$,
 $$
-\mathrm{ad}_X^{*} = \mathrm{ad}_{X^{\dagger}}
+\boxed{\;\mathrm{ad}_X^{*} = \mathrm{ad}_{X^{\dagger}}\;}
 $$
 for every $X$, so the adjoint of the adjoint action of $X$ is the adjoint action of the adjoint element; in particular the adjoint action of a Hermitian element is self-adjoint, and that of an anti-Hermitian element is anti-Hermitian. For the graded commutator the same identity holds when $X$ is even, and for odd $X$ the adjoint acquires the sign $(-1)^{|X|}$.
 

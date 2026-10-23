@@ -21,7 +21,7 @@ The Clifford algebra, the parity grading and the intrinsic involutions are from 
 **Proposition (the left action).** Let $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ be a left ideal. For every $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the left multiplication $L_a$ carries $I$ into itself, $L_a(I)\subseteq I$, and $I$ is a Clifford module. Consequently the assignment
 
 $$
-\rho(x)\psi=x\,\psi,\qquad x\in\mathrm{Pin}(V,\mathfrak{Q}),\ \psi\in I,
+\boxed{\;\rho(x)\psi=x\,\psi,\qquad x\in\mathrm{Pin}(V,\mathfrak{Q}),\ \psi\in I\;},
 $$
 
 is the restriction of the algebra action to the group, that is, the pin representation of *Pin Representations and Clifford Modules with Signed Inner Conjugation*.
@@ -39,7 +39,7 @@ is the restriction of the algebra action to the group, that is, the pin represen
 **Proposition (the splitting).** The ideal splits according to the grading,
 
 $$
-I=I^0\oplus I^1,\qquad I^{i}=\mathrm{Cl}^{i}(V,\mathfrak{Q})\,\pi=\{\,a\pi : a\in\mathrm{Cl}^{i}(V,\mathfrak{Q})\,\},
+\boxed{\;I=I^0\oplus I^1,\qquad I^{i}=\mathrm{Cl}^{i}(V,\mathfrak{Q})\,\pi=\{\,a\pi : a\in\mathrm{Cl}^{i}(V,\mathfrak{Q})\,\}\;},
 $$
 
 and left multiplication by an even element preserves the two summands while left multiplication by an odd element interchanges them.
@@ -65,7 +65,7 @@ So the signed inner conjugation is realised on the ideal as the conjugation of t
 **Corollary (the reflection, with and without the sign).** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$ and let $\rho_u$ be the reflection in $u^{\perp}$. Then for all $v\in V$ and $\psi\in I$,
 
 $$
-\rho(\mathrm{Ad}^{\alpha}_u(v))\,\psi=\rho_u(v)\,\psi,\qquad \rho(u)\,\rho(v)\,\rho(u)^{-1}\,\psi=-\rho_u(v)\,\psi .
+\boxed{\;\rho(\mathrm{Ad}^{\alpha}_u(v))\,\psi=\rho_u(v)\,\psi,\qquad \rho(u)\,\rho(v)\,\rho(u)^{-1}\,\psi=-\rho_u(v)\,\psi\;} .
 $$
 
 So on the ideal the sandwich with a vector returns the negative of the reflection, and the signed inner conjugation is what removes the sign; the parity sign $\varepsilon_x=(-1)^{k}$ of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* is the only difference between the two computations.

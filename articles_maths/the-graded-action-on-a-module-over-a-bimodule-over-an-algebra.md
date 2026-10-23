@@ -100,7 +100,7 @@ $$
 Then $R$ is a right action, $R_{bc}=R_cR_b$, and the left and right actions commute:
 
 $$
-(m\cdot b)\cdot c=m\cdot(bc), \qquad a\,(m\cdot b)=(am)\cdot b .
+\boxed{\;(m\cdot b)\cdot c=m\cdot(bc), \qquad a\,(m\cdot b)=(am)\cdot b\;} .
 $$
 
 Consequently $M$ is a graded $(A,A)$-bimodule, and each $R_b$ is $R$-linear of parity $\deg b$.
@@ -118,7 +118,7 @@ The theorem is the precise form of the assertion that the grading imposes a sign
 **Proposition.** Let ${}_A M_A$ be a graded bimodule with the Koszul right action, and let $S_{a,b}=L_aR_b$ be the unsigned sandwich of *The Signed Sandwich on a Bimodule over an Algebra*. Then
 
 $$
-S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b},
+\boxed{\;S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b}\;},
 $$
 
 and $S_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $S^{\alpha}_{a,b}=S_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.
@@ -154,7 +154,7 @@ $$
 **Proposition.** The graded commutator is graded-alternating, $[S,T]=-(-1)^{\deg S\,\deg T}[T,S]$, it is a graded derivation in each argument,
 
 $$
-[S,TT']=[S,T]T'+(-1)^{\deg S\,\deg T}T[S,T'],
+\boxed{\;[S,TT']=[S,T]T'+(-1)^{\deg S\,\deg T}T[S,T']\;},
 $$
 
 and an even operator $T$ is $A$-linear exactly when $[T,L_a]=0$ for all homogeneous $a$.

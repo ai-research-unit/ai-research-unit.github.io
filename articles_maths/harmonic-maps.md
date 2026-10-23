@@ -50,7 +50,7 @@ $$
 Hence $\phi$ is a critical point of the energy if and only if $\tau(\phi)=0$, and in local coordinates this is the system
 
 $$
-\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N ,
+\boxed{\;\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N\;} ,
 $$
 
 where $\Delta_g$ is the Laplace–Beltrami operator of $(M,g)$ and $\Gamma$ the Christoffel symbols of $(N,h)$.
@@ -106,7 +106,7 @@ a section equation for $\phi : M\times[0,T)\to N$; it is the gradient flow of th
 *Proof.* The energy is nonincreasing along the flow, $\frac{d}{dt}E(\phi_t) = -\int|\tau(\phi_t)|^2\le0$, so the flow stays in a bounded energy class. For a target of nonpositive curvature the **Bochner estimate** for the flow,
 
 $$
-\frac{\partial}{\partial t}|d\phi|^2 - \Delta|d\phi|^2 \le -C|d\phi|^4 + C'|d\phi|^2 ,
+\boxed{\;\frac{\partial}{\partial t}|d\phi|^2 - \Delta|d\phi|^2 \le -C|d\phi|^4 + C'|d\phi|^2\;} ,
 $$
 
 bounds the gradient in terms of the energy, and the maximum principle then gives uniform gradient bounds independent of $t$. The higher derivatives are bounded by the parabolic regularity theory, and a subsequence converges to a limit map whose tension field vanishes, since $\int_0^\infty\|\tau(\phi_t)\|^2dt < \infty$ forces a sequence $t_j\to\infty$ with $\tau(\phi_{t_j})\to0$.
@@ -136,7 +136,7 @@ bounds the gradient in terms of the energy, and the maximum principle then gives
 **Theorem (Bochner formula for maps).** For a harmonic map $\phi : (M,g)\to(N,h)$,
 
 $$
-\frac12\Delta|d\phi|^2 = |\nabla d\phi|^2 + \bigl\langle d\phi,\operatorname{Ric}^M\bigr\rangle - \bigl\langle R^N(d\phi,d\phi)d\phi,d\phi\bigr\rangle ,
+\boxed{\;\frac12\Delta|d\phi|^2 = |\nabla d\phi|^2 + \bigl\langle d\phi,\operatorname{Ric}^M\bigr\rangle - \bigl\langle R^N(d\phi,d\phi)d\phi,d\phi\bigr\rangle\;} ,
 $$
 
 where the inner products contract the appropriate pairs of indices, $\operatorname{Ric}^M$ is the Ricci curvature of the source and $R^N$ the Riemann curvature tensor of the target.

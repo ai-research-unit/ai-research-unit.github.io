@@ -49,7 +49,7 @@ and the assignment $\sigma\mapsto\sigma^*$ is multiplicative, $(\sigma\tau)^* = 
 
 **Theorem (the invariants are the cohomology of the descended variety).** Let $X$ be a variety over $k$, let $L/k$ be a finite Galois extension with group $G$, and let $\mathcal{F}$ be a $G$-equivariant quasi-coherent sheaf on $X_L$ descended from a sheaf $\mathcal{F}_0$ on $X$. Then for every $i$
 $$
-H^i(X_L,\mathcal{F})^G\ \cong\ H^i(X,\mathcal{F}_0),
+\boxed{\;H^i(X_L,\mathcal{F})^G\ \cong\ H^i(X,\mathcal{F}_0)\;},
 $$
 the invariants of the semilinear action are the cohomology of the descended sheaf.
 
@@ -67,7 +67,7 @@ and it is exactly the image of the pullback $H^i(X,\mathcal{F}_0)\to H^i(X_L,\ma
 
 **Theorem (the Hochschild–Serre spectral sequence).** Let $L/k$ be a Galois extension with group $G$ and let $\mathcal{F}$ be a $G$-equivariant quasi-coherent sheaf on $X_L$ descended from $\mathcal{F}_0$ on $X$. There is a spectral sequence of cohomological type
 $$
-E_2^{pq} = H^p\bigl(G,\ H^q(X_L,\mathcal{F})\bigr)\ \Longrightarrow\ H^{p+q}(X,\mathcal{F}_0),
+\boxed{\;E_2^{pq} = H^p\bigl(G,\ H^q(X_L,\mathcal{F})\bigr)\ \Longrightarrow\ H^{p+q}(X,\mathcal{F}_0)\;},
 $$
 starting from the group cohomology of Part I's *Group Cohomology* with coefficients in the cohomology of the extension and converging to the cohomology of the descended variety.
 
@@ -123,8 +123,8 @@ $$
 $$
 and it decomposes the cohomology into the $(+1)$-eigenspace $H^i_+ = H^i(X_{\mathbb{C}},\mathcal{O})^\sigma$ and the $(-1)$-eigenspace $H^i_-$, both $\mathbb{R}$-subspaces with
 $$
-H^i(X_{\mathbb{C}},\mathcal{O}) = H^i_+\oplus H^i_-, \qquad H^i_- = i\,H^i_+, \qquad
-H^i_+\cong H^i(X_{\mathbb{R}},\mathcal{O}), \qquad \dim_{\mathbb{C}}H^i(X_{\mathbb{C}},\mathcal{O}) = \dim_{\mathbb{R}}H^i_+ = \dim_{\mathbb{R}}H^i_- .
+\boxed{\;H^i(X_{\mathbb{C}},\mathcal{O}) = H^i_+\oplus H^i_-, \qquad H^i_- = i\,H^i_+, \qquad
+H^i_+\cong H^i(X_{\mathbb{R}},\mathcal{O}), \qquad \dim_{\mathbb{C}}H^i(X_{\mathbb{C}},\mathcal{O}) = \dim_{\mathbb{R}}H^i_+ = \dim_{\mathbb{R}}H^i_-\;} .
 $$
 
 *Proof.* The conjugation is an antilinear involution of $\mathcal{O}_{X_{\mathbb{C}}}$, so $\sigma^*$ is antilinear with $(\sigma^*)^2=\mathrm{id}$. Every $v$ is the sum of the fixed vector $\tfrac12(v+\sigma^*v)$ and the antifixed vector $\tfrac12(v-\sigma^*v)$, so the two eigenspaces span; they intersect in $0$ because a vector fixed and antifixed at once is $0$; and for a fixed $v$ the vector $iv$ satisfies $\sigma^*(iv) = -i\,\sigma^*(v) = -iv$, so $H^i_- = iH^i_+$ and the two $\mathbb{R}$-subspaces have the same real dimension, namely $\dim_{\mathbb{C}}H^i(X_{\mathbb{C}},\mathcal{O})$. The $(+1)$-eigenspace is the invariant subspace, identified with $H^i(X_{\mathbb{R}},\mathcal{O})$ by the invariant theorem.

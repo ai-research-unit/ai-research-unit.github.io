@@ -44,13 +44,13 @@ the sandwich with the **product parameter** $c = a\alpha(b)$; this product is ag
 **Theorem (the reflections realised by the signed sandwich).** The map
 
 $$
-\tau : R(A,\alpha)\to \operatorname{Aut}(A), \qquad a\mapsto\tau_a,
+\boxed{\;\tau : R(A,\alpha)\to \operatorname{Aut}(A), \qquad a\mapsto\tau_a\;},
 $$
 
 from the set $R(A,\alpha)$ of reflection elements into the group of automorphisms of $A$ takes its values in the reflections, and two reflection elements give the same reflection exactly when their ratio is central. The image is
 
 $$
-\operatorname{im}\tau = \{\operatorname{Inn}_a\circ\alpha : a\in R(A,\alpha)\} ,
+\boxed{\;\operatorname{im}\tau = \{\operatorname{Inn}_a\circ\alpha : a\in R(A,\alpha)\}\;} ,
 $$
 
 the **realised reflections**, and the grade involution is the reflection $\tau_1$; every realised reflection is the composite of the grade involution with an inner automorphism, $\tau_a = \operatorname{Inn}_a\circ\alpha = \alpha\circ\operatorname{Inn}_{\alpha(a)^{-1}}$. When the grade involution is inner the realised reflections are exactly the inner reflections of $A$.
@@ -66,7 +66,7 @@ the **realised reflections**, and the grade involution is the reflection $\tau_1
 **Proposition.** A realised reflection $\tau_a$ is positive if and only if the signed sandwich $\Theta^{\alpha}_{a,\alpha(a)^{-1}}$ is positive; in particular, if the grade involution is positive and both $a$ and $\alpha(a)^{-1}$ are positive, then $\tau_a$ is positive, and if the grade involution is positive and $a$ is positive while $\alpha(a)^{-1} = \alpha(a^{-1})$ is negative, then $\tau_a$ is order reversing. In the graded case with parity $\varepsilon$ the reflection acts as
 
 $$
-\tau_a(x) = \varepsilon_x\,\operatorname{Inn}_a(x) \qquad (x \ \text{homogeneous}) ,
+\boxed{\;\tau_a(x) = \varepsilon_x\,\operatorname{Inn}_a(x) \qquad (x \ \text{homogeneous})\;} ,
 $$
 
 so it agrees with the ordinary inner conjugation on the even part and is its negative on the odd part.

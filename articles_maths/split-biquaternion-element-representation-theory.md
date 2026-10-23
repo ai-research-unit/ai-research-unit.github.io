@@ -55,7 +55,9 @@ The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}$, viewed as left $\m
 **Theorem (Schur).** For simple $\mathbb{H}_{\mathbb{D}}$-modules $S, T$, every nonzero homomorphism $S \to T$ is an isomorphism, and $\operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S)$ is a division ring. Here
 
 $$
-\operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{opp}} \cong \mathbb{H} .
+\boxed{\;
+\operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{opp}} \cong \mathbb{H}
+\;}.
 $$
 
 **Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_1 T$ to $\tilde\Pi_1 T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{opp}}$.
@@ -69,7 +71,9 @@ The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue o
 The **real representations** of $\mathbb{H}_{\mathbb{D}}$ are its representations on real vector spaces, that is its left modules; by the structure theorem these decompose into copies of $S_+$ and $S_-$. A real representation of dimension $n$ is described by a pair of non-negative integers $(a, b)$ with $4(a+b) = n$, the multiplicities of $S_+$ and $S_-$:
 
 $$
-M \cong a\, S_+ \oplus b\, S_- , \qquad \dim_{\mathbb{R}} M = 4(a+b) .
+\boxed{\;
+M \cong a\, S_+ \oplus b\, S_- , \qquad \dim_{\mathbb{R}} M = 4(a+b)
+\;}.
 $$
 
 The regular representation corresponds to $(a,b) = (1,1)$. The endomorphism ring of such a module is $M_a(\mathbb{H}) \times M_b(\mathbb{H})$, a product of two matrix algebras over the division ring $\mathbb{H}$.
@@ -105,7 +109,9 @@ $$
 Since $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ and $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$ with $S^3 = SU(2)$, every finite-dimensional continuous representation of $\mathbb{H}_{\mathbb{D}}^{\times}$ is the exterior tensor product of one representation of the first copy of $\mathbb{H}^{\times}$ and one of the second:
 
 $$
-\rho = \rho_1 \boxtimes \rho_2 , \qquad \rho_i : \mathbb{H}^{\times} \to GL(V_i) .
+\boxed{\;
+\rho = \rho_1 \boxtimes \rho_2 , \qquad \rho_i : \mathbb{H}^{\times} \to GL(V_i)
+\;}.
 $$
 
 Each copy of $\mathbb{H}^{\times}$ is the product of the abelian factor $\mathbb{R}_{>0}$ and the compact factor $SU(2)$, so its irreducible finite-dimensional continuous representations are the tensor products $\chi \otimes \sigma$ of a continuous character $\chi(a) = a^{\lambda}$ of $\mathbb{R}_{>0}$, $\lambda \in \mathbb{C}$, and an irreducible representation $\sigma = \mathrm{Sym}^{n}(\mathbb{C}^2)$ of $SU(2)$ of spin $n/2$. The irreducible finite-dimensional continuous representations of the unit group are therefore indexed by a pair of a character exponent and a spin for each factor, with

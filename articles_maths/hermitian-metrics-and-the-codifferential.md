@@ -43,7 +43,7 @@ $$
 is the formal adjoint of the exterior derivative for the Hermitian pairing,
 
 $$
-\langle d\alpha,\beta\rangle_{L^2} = \langle\alpha,\delta\beta\rangle_{L^2}, \qquad \alpha,\beta \ \text{compactly supported},
+\boxed{\;\langle d\alpha,\beta\rangle_{L^2} = \langle\alpha,\delta\beta\rangle_{L^2}, \qquad \alpha,\beta \ \text{compactly supported}\;},
 $$
 
 and it is the same operator as the Riemannian codifferential of *The Codifferential*, its sign convention fixed by the even dimension.
@@ -85,7 +85,7 @@ $$
 **Theorem.** The four operators are formally self-adjoint, nonnegative on the compactly supported forms,
 
 $$
-\langle\Delta\alpha,\alpha\rangle_{L^2} = \lVert d\alpha\rVert_{L^2}^2 + \lVert\delta\alpha\rVert_{L^2}^2 \ge 0, \qquad \langle\Delta_{\bar\partial}\alpha,\alpha\rangle_{L^2} = \lVert\bar\partial\alpha\rVert_{L^2}^2 + \lVert\bar\partial^*\alpha\rVert_{L^2}^2 \ge 0,
+\boxed{\;\langle\Delta\alpha,\alpha\rangle_{L^2} = \lVert d\alpha\rVert_{L^2}^2 + \lVert\delta\alpha\rVert_{L^2}^2 \ge 0, \qquad \langle\Delta_{\bar\partial}\alpha,\alpha\rangle_{L^2} = \lVert\bar\partial\alpha\rVert_{L^2}^2 + \lVert\bar\partial^*\alpha\rVert_{L^2}^2 \ge 0\;},
 $$
 
 and they preserve the bidegree; $\Delta$ commutes with $d$ and $\delta$, and $\Delta_{\bar\partial}$ commutes with $\bar\partial$ and $\bar\partial^*$. Expanding $d=\partial+\bar\partial$ and $\delta=\partial^*+\bar\partial^*$ gives the decomposition
@@ -101,7 +101,7 @@ whose last two terms, the **cross terms**, vanish when the Hermitian metric is K
 **Corollary (the Kähler case).** On a Kähler manifold the cross terms vanish and moreover $\Delta_\partial=\Delta_{\bar\partial}$, so
 
 $$
-\Delta = 2\Delta_\partial = 2\Delta_{\bar\partial},
+\boxed{\;\Delta = 2\Delta_\partial = 2\Delta_{\bar\partial}\;},
 $$
 
 and a form is harmonic for $\Delta$ exactly when it is harmonic for $\Delta_{\bar\partial}$. The identities producing this coincidence, the Lefschetz decomposition and the Hodge–Riemann relations are *Kähler Geometry* and *Hermitian Metrics and the Hodge Theory* in Part IV, and are named as forward references; the present article supplies only the operators and the split.

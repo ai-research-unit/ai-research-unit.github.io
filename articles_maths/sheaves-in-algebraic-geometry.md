@@ -68,7 +68,7 @@ with the evident restriction maps; the sheaf axioms hold by the same exactness u
 **Theorem (modules and quasi-coherent sheaves).** For $X = \operatorname{Spec} A$ the functor $M\mapsto M^{\mathrm{sh}}$ is an equivalence of categories
 
 $$
-\mathbf{Mod}(A)\ \xrightarrow{\ \sim\ }\ \mathbf{QCoh}(X), \qquad M\mapsto M^{\mathrm{sh}}, \qquad \mathcal{F}\mapsto\Gamma(X,\mathcal{F}),
+\boxed{\;\mathbf{Mod}(A)\ \xrightarrow{\ \sim\ }\ \mathbf{QCoh}(X), \qquad M\mapsto M^{\mathrm{sh}}, \qquad \mathcal{F}\mapsto\Gamma(X,\mathcal{F})\;},
 $$
 
 with quasi-inverse the global sections functor. The equivalence commutes with kernels, cokernels, images and finite direct sums, with the tensor product, with the sheaf hom, and with the localisation $A\to A_f$ in the sense that $M^{\mathrm{sh}}|_{D(f)} = M^{\mathrm{sh}}_f$ on $\operatorname{Spec} A_f$.
@@ -84,7 +84,7 @@ $$
 is a short exact sequence of quasi-coherent sheaves on $X = \operatorname{Spec} A$, then $0\to\Gamma(X,\mathcal{F}')\to\Gamma(X,\mathcal{F})\to\Gamma(X,\mathcal{F}'')\to 0$ is exact, and indeed the original sequence is exact if and only if its sequence of global sections is. Consequently
 
 $$
-H^i(X,\mathcal{F}) = 0 \qquad \text{for } i > 0
+\boxed{\;H^i(X,\mathcal{F}) = 0 \qquad \text{for } i > 0\;}
 $$
 
 for every quasi-coherent $\mathcal{F}$ on an affine scheme $X$.
@@ -184,7 +184,7 @@ $$
 **Theorem (Serre duality).** Let $X$ be a smooth projective scheme of dimension $n$ over a field $k$, and let $\mathcal{F}$ be a coherent sheaf on $X$. There are natural isomorphisms
 
 $$
-H^i(X,\mathcal{F}) \cong H^{n-i}\bigl(X,\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\omega_X)\bigr)^{\vee},
+\boxed{\;H^i(X,\mathcal{F}) \cong H^{n-i}\bigl(X,\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\omega_X)\bigr)^{\vee}\;},
 $$
 
 where ${}^{\vee}$ denotes the $k$-dual, and the top group is $H^n(X,\omega_X)\cong k$; equivalently, the pairing

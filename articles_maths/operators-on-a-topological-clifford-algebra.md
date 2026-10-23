@@ -13,7 +13,7 @@ The article treats the operators of the layer, the algebra of bounded operators 
 **Definition.** The operators attached to the elements of the algebra are
 
 $$
-L_{x}(y)=xy,\qquad R_{x}(y)=yx,\qquad T_{x,y}(z)=xzy,\qquad \chi_{x}=T_{x,\alpha(x)^{-1}},
+\boxed{\;L_{x}(y)=xy,\qquad R_{x}(y)=yx,\qquad T_{x,y}(z)=xzy,\qquad \chi_{x}=T_{x,\alpha(x)^{-1}}\;},
 $$
 
 the **left multiplication**, the **right multiplication**, the **sandwich** and the **signed inner conjugation**, the last for $x$ a unit and $\alpha$ the grade involution; the **intrinsic anti-involutions** are the grade involution $\alpha$, the reversion $x\mapsto x^{r}$ and the Clifford conjugation $x^{\natural}=\alpha(x^{r})$ of *Topological Clifford Algebras*, §*The Conventions of the Category*, read as linear maps of the algebra into itself.

@@ -23,7 +23,7 @@ $$
 $$
 then $\alpha$ is equivariant exactly when the off-diagonal blocks vanish, $\alpha^{+-} = \alpha^{-+} = 0$, and anti-equivariant exactly when the diagonal blocks vanish. Hence
 $$
-\operatorname{End}_k(H)^{\mathbb{Z}/2} \;\cong\; \operatorname{End}_k(H^{+})\oplus\operatorname{End}_k(H^{-}) \,\subseteq\, \operatorname{End}_k(H)
+\boxed{\;\operatorname{End}_k(H)^{\mathbb{Z}/2} \;\cong\; \operatorname{End}_k(H^{+})\oplus\operatorname{End}_k(H^{-}) \,\subseteq\, \operatorname{End}_k(H)\;}
 $$
 and the anti-invariant operators form the complementary summand $\operatorname{Hom}_k(H^{+},H^{-})\oplus\operatorname{Hom}_k(H^{-},H^{+})$; over a field the algebra decomposes as a $k[\mathbb{Z}/2]$-module into these two summands, and $\operatorname{End}_k(H)$ is the direct sum of the invariant and the anti-invariant operators.
 
@@ -73,7 +73,7 @@ and the **Lefschetz number** of the involution is $L(T) = \operatorname{Str}(T_*
 
 **Proposition (the Lefschetz number and the Euler characteristic).** For a locally linear (or smooth) involution $T$ of a closed manifold, the Lefschetz number is the Euler characteristic of the fixed set,
 $$
-L(T) = \chi(F), \qquad F = M^{T}.
+\boxed{\;L(T) = \chi(F), \qquad F = M^{T}\;}.
 $$
 In particular $L(T) = \#F$ when the fixed set is finite, and $L(T) = 0$ for a free involution; the identity $L(T)\equiv\chi(M)\pmod 2$ also holds, because the trace of an involution on a vector space has the parity of the dimension.
 

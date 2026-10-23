@@ -50,7 +50,7 @@ The proof is the mechanism of the grade theorem of *The Geometric Product and th
 **Proposition.** Let $e_I=e_{i_1}\cdots e_{i_k}$ be a basis blade of an orthogonal basis, with index set $I$. Then $e_I\omega$ is, up to sign, the basis blade of the complementary index set,
 
 $$
-e_I\omega=\pm\,e_{I^{c}}, \qquad I^{c}=\{1,\ldots,n\}\setminus I,
+\boxed{\;e_I\omega=\pm\,e_{I^{c}}, \qquad I^{c}=\{1,\ldots,n\}\setminus I\;},
 $$
 
 so that the complement map carries the subspace spanned by the index set $I$ to its orthogonal complement in $V$.
@@ -78,7 +78,7 @@ By the corollary above, $\star$ carries $\mathrm{Cl}_k(V,\mathfrak{Q})$ isomorph
 **Theorem.** The square of the star is the scalar inverse of the square of the volume element:
 
 $$
-\star\star A=A\omega^{-2}=(\omega^2)^{-1}A,
+\boxed{\;\star\star A=A\omega^{-2}=(\omega^2)^{-1}A\;},
 $$
 
 so that $\star^2=(\omega^2)^{-1}\operatorname{id}$, and when $\omega^2=\pm1$ the star is an involution or a complex structure accordingly, $\star^2=\omega^2\operatorname{id}$.
@@ -114,7 +114,7 @@ The complement map supplies the cross product of a three-dimensional space with 
 **Theorem.** Let $V$ be three-dimensional with a definite form, $\omega$ the volume element of an orthonormal basis, and $a,b\in V$. Then
 
 $$
-a\times b:=\star(a\wedge b)=(a\wedge b)\omega^{-1}
+\boxed{\;a\times b:=\star(a\wedge b)=(a\wedge b)\omega^{-1}\;}
 $$
 
 is a vector, bilinear and alternating in $a$ and $b$, orthogonal to both, of square $\mathfrak{Q}(a)\mathfrak{Q}(b)-B(a,b)^2$, and it satisfies $a\times b=0$ exactly when $a$ and $b$ are linearly dependent.

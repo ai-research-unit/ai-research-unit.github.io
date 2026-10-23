@@ -62,7 +62,7 @@ $$
 Define $h : X \to Y$ by
 
 $$
-h(x) = \begin{cases} f(x), & x \in C, \\ g^{-1}(x), & x \in X \setminus C. \end{cases}
+\boxed{\;h(x) = \begin{cases} f(x), & x \in C, \\ g^{-1}(x), & x \in X \setminus C. \end{cases}\;}
 $$
 
 The second case is well defined because $X \setminus C = g(Y \setminus f(C))$ is contained in the image of $g$, which is injective. The image of the first case is $f(C)$, and the image of the second is $g^{-1}(X \setminus C) = Y \setminus f(C)$, the equality following from $X \setminus C = g(Y \setminus f(C))$ and the injectivity of $g$; since these two sets are complementary and $f, g^{-1}$ are injective, $h$ is injective. For surjectivity, let $y \in Y$: if $y \in f(C)$ then $y = f(x)$ for some $x \in C$; otherwise $y \notin f(C)$, so $g(y) \in g(Y \setminus f(C)) = X \setminus C$, and $h(g(y)) = g^{-1}(g(y)) = y$. Hence $h$ is bijective.
@@ -170,7 +170,7 @@ For infinite cardinals the arithmetic simplifies drastically; the simplification
 **Theorem.** Let $\kappa$ and $\lambda$ be infinite cardinals. Then
 
 $$
-\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa, \lambda), \qquad \kappa^n = \kappa \ \text{for every finite } n \geq 1.
+\boxed{\;\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa, \lambda), \qquad \kappa^n = \kappa \ \text{for every finite } n \geq 1\;}.
 $$
 
 In particular $\aleph_0 + \aleph_0 = \aleph_0 \cdot \aleph_0 = \aleph_0$, and $\aleph_0 + \mathrm{C} = \aleph_0 \cdot \mathrm{C} = \mathrm{C}$.
@@ -184,7 +184,7 @@ The theorem uses the axiom of choice twice — through the well-ordering and thr
 **Definition.** The **continuum hypothesis** (CH) is the assertion
 
 $$
-2^{\aleph_0} = \aleph_1,
+\boxed{\;2^{\aleph_0} = \aleph_1\;},
 $$
 
 where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of a set of cardinality $\mathrm{C}$ is either countable or of cardinality $\mathrm{C}$.

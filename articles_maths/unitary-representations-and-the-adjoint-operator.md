@@ -30,7 +30,7 @@ and $A$ is **unitary** when $A^{*} = A^{-1}$, equivalently when $A$ is surjectiv
 **Theorem.** Let $\pi$ be a strongly continuous unitary representation. Then
 
 $$
-\pi(g)^{*} = \pi(g)^{-1} = \pi(g^{-1}) \qquad (g\in G),
+\boxed{\;\pi(g)^{*} = \pi(g)^{-1} = \pi(g^{-1}) \qquad (g\in G)\;},
 $$
 
 and the map $g\mapsto \pi(g)^{*}$ is again a strongly continuous unitary representation, the **contragredient**; it is equivalent to $\pi$ through the conjugate-linear identification of $\mathcal{H}$ with its dual. The commutant of an irreducible $\pi$ is the scalars, by Schur's lemma.
@@ -50,7 +50,7 @@ $$
 and the operator $A_X = i\,\pi_*(X)$ is self-adjoint; the map $X\mapsto A_X$ is real-linear and satisfies the commutation relation
 
 $$
-[A_X, A_Y] = -i\,A_{[X,Y]} \qquad (X,Y\in\mathrm{G}) .
+\boxed{\;[A_X, A_Y] = -i\,A_{[X,Y]} \qquad (X,Y\in\mathrm{G})\;} .
 $$
 
 *Proof.* The skew-adjointness is the derivative at $t = 0$ of the unitarity identity $\pi(\exp tX)^{*}\pi(\exp tX) = \mathrm{id}$, which gives $\pi_*(X)^{*} + \pi_*(X) = 0$; the self-adjointness of $A_X$ follows from that of $i$ times a skew-adjoint operator, and the commutation relation from $[\pi_*(X),\pi_*(Y)] = \pi_*([X,Y])$ multiplied by $i^2 = -1$.
@@ -60,7 +60,7 @@ $$
 **Theorem (Stone).** For every $X\in\mathrm{G}$ the operators $A_X = i\pi_*(X)$ are the self-adjoint generators of the strongly continuous one-parameter unitary groups
 
 $$
-t\longmapsto\pi(\exp tX) = \exp(-itA_X) ,
+\boxed{\;t\longmapsto\pi(\exp tX) = \exp(-itA_X)\;} ,
 $$
 
 the domain of $A_X$ is the set of $b\in\mathcal{H}$ for which the derivative of the group at $t = 0$ exists, and the spectral theorem for $A_X$ decomposes the representation of the one-parameter subgroup. The common domain of the operators $A_X$ is the intersection of their domains, on which the commutation relations above hold in the sense of the commutator of unbounded operators.

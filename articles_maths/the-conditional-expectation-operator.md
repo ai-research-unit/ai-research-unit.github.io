@@ -29,7 +29,7 @@ The two descriptions agree because the indicators of the sets of $\mathcal G$ sp
 
 **Theorem.** The map $E_{\mathcal G}:L^2(\mathcal F)\to L^2(\mathcal F)$ is the orthogonal projection onto $L^2(\mathcal G)$; in particular
 $$
-E_{\mathcal G}^2=E_{\mathcal G},\qquad E_{\mathcal G}^*=E_{\mathcal G},\qquad \|E_{\mathcal G}\|=1,\qquad \|E_{\mathcal G}X\|_2\le\|X\|_2 ,
+\boxed{\;E_{\mathcal G}^2=E_{\mathcal G},\qquad E_{\mathcal G}^*=E_{\mathcal G},\qquad \|E_{\mathcal G}\|=1,\qquad \|E_{\mathcal G}X\|_2\le\|X\|_2\;} ,
 $$
 and $E_{\mathcal G}X=X$ exactly when $X\in L^2(\mathcal G)$.
 
@@ -60,7 +60,7 @@ The module property is the operator statement that the conditional expectation i
 
 **Theorem (the tower property).** If $\mathcal H\subseteq\mathcal G$ are sub-$\sigma$-algebras, then
 $$
-E_{\mathcal H}E_{\mathcal G}=E_{\mathcal G}E_{\mathcal H}=E_{\mathcal H}.
+\boxed{\;E_{\mathcal H}E_{\mathcal G}=E_{\mathcal G}E_{\mathcal H}=E_{\mathcal H}\;}.
 $$
 Consequently the projections $\{E_{\mathcal G}\}$ over the sub-$\sigma$-algebras of $\mathcal F$ form a commuting family, and the map $\mathcal G\mapsto E_{\mathcal G}$ reverses inclusions.
 
@@ -78,7 +78,7 @@ Consequently the projections $\{E_{\mathcal G}\}$ over the sub-$\sigma$-algebras
 
 **Theorem (convergence of the projections).** Let $\{\mathcal F_n\}_{n\ge0}$ be an increasing filtration with $\mathcal F_\infty=\sigma(\bigcup_n\mathcal F_n)$. Then for every $X\in L^2(\mathcal F)$,
 $$
-E_{\mathcal F_n}X\longrightarrow E_{\mathcal F_\infty}X\qquad \text{in } L^2\text{ and a.s.},
+\boxed{\;E_{\mathcal F_n}X\longrightarrow E_{\mathcal F_\infty}X\qquad \text{in } L^2\text{ and a.s.}\;},
 $$
 and the sequence $\{E_{\mathcal F_n}X\}$ is the uniformly integrable martingale of *Martingales*, written $X_n=\mathbb E[X\mid\mathcal F_n]$.
 

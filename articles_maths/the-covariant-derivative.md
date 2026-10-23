@@ -21,7 +21,7 @@ $$
 **Proposition.** The assignment $X \mapsto \nabla_X$ is $C^\infty(M)$-linear, $\nabla_{fX+gY} = f\nabla_X + g\nabla_Y$, and for each $X$ the operator $\nabla_X$ is a first-order differential operator on the sections of $E$ in the sense of *Differential Operators on a Manifold*, with the Leibniz rule
 
 $$
-\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E).
+\boxed{\;\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E)\;}.
 $$
 
 Its principal symbol is $\sigma_1(\nabla_X)(x,\xi) = \langle \xi, X_x\rangle\, \mathrm{id}_{E_x}$.
@@ -75,7 +75,7 @@ the bracket being the graded commutator of the matrix of forms with the matrix o
 **Theorem.** For every connection $\nabla$ on $E$ there is a unique section $R$ of $\Lambda^2T^*M \otimes \operatorname{End}(E)$, the **curvature**, such that for every pair of vector fields $X, Y$ and every section $s$,
 
 $$
-R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[X,Y]}s .
+\boxed{\;R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[X,Y]}s\;} .
 $$
 
 Equivalently, $R \wedge \cdot = (d^\nabla)^2$ on the $E$-valued forms, and in a frame $R = d\omega + \omega \wedge \omega$. The contraction $R(X,Y)$ is $C^\infty(M)$-linear in $X$ and $Y$ and in $s$, so it is a tensor; and it is the obstruction to the operators $\nabla_X$ forming a representation of the Lie algebra of vector fields, the failure being measured by the bracket $[X,Y]$.
@@ -157,7 +157,7 @@ The **torsion** of a connection $\nabla$ on the tangent bundle $TM$ is the tenso
 **Theorem (fundamental theorem of Riemannian geometry).** On a Riemannian manifold $(M,g)$ there is exactly one connection on $TM$ that is metric-compatible and torsion-free, the **Levi–Civita connection**. It is determined by the Koszul formula
 
 $$
-2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y]),
+\boxed{\;2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y])\;},
 $$
 
 which expresses its covariant derivative in terms of the metric and the Lie bracket alone.

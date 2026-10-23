@@ -46,7 +46,7 @@ for all finitely generated projective $P,Q$. Equivalently, $K_0(R)$ is the Groth
 **Corollary.** For a connected commutative ring $R$ there is a split exact sequence
 
 $$
-0\to K_0^{\mathrm{red}}(R)\to K_0(R)\xrightarrow{\ \operatorname{rk}\ }\mathbb{Z}\to0,
+\boxed{\;0\to K_0^{\mathrm{red}}(R)\to K_0(R)\xrightarrow{\ \operatorname{rk}\ }\mathbb{Z}\to0\;},
 $$
 
 where the **reduced group** $K_0^{\mathrm{red}}(R)$ is the kernel of the rank. For a field or a principal ideal domain, $K_0^{\mathrm{red}}(R)=0$. In general $K_0^{\mathrm{red}}(R)$ is the group of **stable isomorphism classes of projectives of rank zero**; equivalently, $[P]=[Q]$ in $K_0^{\mathrm{red}}$ if and only if $P\oplus R^n\cong Q\oplus R^n$ for some $n$, with both sides of rank zero.
@@ -110,7 +110,7 @@ where $SL(R)=\bigcup_nSL_n(R)$ and $SK_1(R)=SL(R)/E(R)$ is the **special Whitehe
 **Theorem (Mayer–Vietoris for $K_0$ and $K_1$).** Let $R\to R/I$ and $R\to S$ be ring homomorphisms with $R/I$ a quotient, and suppose that the resulting square with $T=S\otimes_RR/I$ is cartesian — that is, $R$ is the fibre product of $S$ and $R/I$ over $T$ — and that at least one of the two maps is surjective. Then there is an exact **Mayer–Vietoris sequence**
 
 $$
-K_1(R)\to K_1(S)\oplus K_1(R/I)\to K_1(T)\xrightarrow{\ \partial\ }K_0(R)\to K_0(S)\oplus K_0(R/I)\to K_0(T).
+\boxed{\;K_1(R)\to K_1(S)\oplus K_1(R/I)\to K_1(T)\xrightarrow{\ \partial\ }K_0(R)\to K_0(S)\oplus K_0(R/I)\to K_0(T)\;}.
 $$
 
 If instead $I$ is a nilpotent ideal of $R$, then the reduction $R\to R/I$ induces an isomorphism $K_0(R)\cong K_0(R/I)$ and a surjection $K_1(R)\to K_1(R/I)$ whose kernel is the image of the group of units of $R$ congruent to $1$ modulo $I$ under the natural map.
@@ -168,7 +168,7 @@ so the kernel of $K_0(\mathbb{Z},S)\to K_0(\mathbb{Z})$ is the free abelian grou
 **Theorem.** Let $A$ be a finite-dimensional algebra over a field $F$, with Jacobson radical $\operatorname{rad}A$ and semisimple quotient $A/\operatorname{rad}A\cong\prod_{i=1}^rM_{n_i}(D_i)$ for division rings $D_i$ finite-dimensional over $F$. Then
 
 $$
-K_0(A)\cong\mathbb{Z}^r, \qquad K_1(A)\cong\prod_{i=1}^rD_i^{\times}/[D_i^{\times},D_i^{\times}].
+\boxed{\;K_0(A)\cong\mathbb{Z}^r, \qquad K_1(A)\cong\prod_{i=1}^rD_i^{\times}/[D_i^{\times},D_i^{\times}]\;}.
 $$
 
 *Proof.* The radical is nilpotent, so the reduction $A\to A/\operatorname{rad}A$ induces isomorphisms on $K_0$ and $K_1$ by the nilpotent-ideal statement above. For a product of matrix rings over division rings, $K_0$ and $K_1$ are the direct sums of those of the factors by the product formulae, and a matrix ring over a division ring has the $K$-groups of the division ring by Morita invariance, with $K_0(M_n(D))\cong\mathbb{Z}$ and $K_1(M_n(D))\cong K_1(D)$.

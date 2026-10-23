@@ -14,7 +14,7 @@ The article is the sixth of the `* Operator Theory` group of this category. It a
 **Theorem.** For every $a \in A$ the adjoint of the signed left multiplication is the signed left multiplication by the transformed parameter:
 
 $$
-\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma .
+\boxed{\;\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma\;} .
 $$
 
 *Proof.* The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=S^{\alpha}_{a,1}$. By *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, $\bigl(S^{\alpha}_{a,1}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $S^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.
@@ -66,7 +66,7 @@ The one-sided case is therefore not an analogy but a factorisation: the sandwich
 **Proposition.** The kernel of the parameter map $a \mapsto L^{\alpha}_a$ is the annihilator $\operatorname{Ann}_A(M)=\{a : aM=0\}$. Consequently
 
 $$
-\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_a \iff \beta(a)-a \in \operatorname{Ann}_A(M), \qquad \bigl(L^{\alpha}_a\bigr)^{*}=-L^{\alpha}_a \iff \beta(a)+a \in \operatorname{Ann}_A(M).
+\boxed{\;\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_a \iff \beta(a)-a \in \operatorname{Ann}_A(M), \qquad \bigl(L^{\alpha}_a\bigr)^{*}=-L^{\alpha}_a \iff \beta(a)+a \in \operatorname{Ann}_A(M)\;}.
 $$
 
 For a faithful module these read $\beta(a)=a$ and $\beta(a)=-a$.
@@ -96,7 +96,7 @@ $$
 **Proposition.** For every $a$,
 
 $$
-\ker\bigl(L^{\alpha}_a\bigr)^{*}=\bigl(\operatorname{im}L^{\alpha}_a\bigr)^{\mathrm{c}}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}={}^{\mathrm{c}}\bigl(\ker L^{\alpha}_a\bigr) .
+\boxed{\;\ker\bigl(L^{\alpha}_a\bigr)^{*}=\bigl(\operatorname{im}L^{\alpha}_a\bigr)^{\mathrm{c}}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}={}^{\mathrm{c}}\bigl(\ker L^{\alpha}_a\bigr)\;} .
 $$
 
 *Proof.* These are the general identities of *The Adjoint of a Module Homomorphism* for the operator $L^{\alpha}_a$.

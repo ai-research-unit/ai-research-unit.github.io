@@ -333,7 +333,7 @@ $$
 **Equality.** We have shown
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \left(\frac{\partial^2}{\partial Q_t^2} + \Delta_Q\right) e_t.
+\boxed{\; \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \left(\frac{\partial^2}{\partial Q_t^2} + \Delta_Q\right) e_t \;}.
 $$
 
 The operator $\partial^2/\partial Q_t^2 + \Delta_Q$ is the **four-dimensional Laplacian in the formal coordinates** $Q_t, Q_x, Q_y, Q_z$, and we write
@@ -347,7 +347,7 @@ The operator $\Box$ is a scalar operator: it multiplies a biquaternion by the id
 **Remark on the signature.** The formal expression $\partial^2/\partial Q_t^2 + \Delta_Q$ has the interpretation of a Laplacian in the coordinates $Q_\mu$, but when the subspace is such that some of the $Q_\mu$ are purely imaginary, the operator takes a Lorentzian form in the underlying real coordinates. For example, on $\mathbb{M}_-$, where $Q_t = iq'_t$ and $Q_\mu = q_\mu$, the derivative $\partial^2/\partial Q_t^2 = -\partial^2/\partial (q'_t)^2$, so
 
 $$
-\Box\big|_{\mathbb{M}_-} = -\frac{\partial^2}{\partial (q'_t)^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2},
+\boxed{\; \Box\big|_{\mathbb{M}_-} = -\frac{\partial^2}{\partial (q'_t)^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} \;},
 $$
 
 which is the Lorentzian wave operator (the d'Alembertian) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{M}_+$, where $Q_t = q_t$ and $Q_\mu = iq'_\mu$, we have
@@ -379,7 +379,7 @@ The scalar part is $\partial^2/\partial Q_t^2 - \Delta_Q$, and the vector part i
 The square is related to the d'Alembertian by the identity
 
 $$
-\boxed{\;\tilde{\nabla}^2 = 2\,\frac{\partial}{\partial Q_t}\,\tilde{\nabla} - \Box.\;}
+\boxed{\;\tilde{\nabla}^2 = 2\,\frac{\partial}{\partial Q_t}\,\tilde{\nabla} - \Box \;}
 $$
 
 The conjugate square satisfies the analogous identity

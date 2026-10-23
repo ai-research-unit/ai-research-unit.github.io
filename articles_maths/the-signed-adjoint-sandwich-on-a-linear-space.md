@@ -17,8 +17,8 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition (the adjoint of the signed sandwich).** For all $a,b \in E$,
 
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)} , \qquad
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\dagger}(Y) = \alpha(b)\,\alpha(Y)\,\alpha(a) .
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)} , \qquad
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\dagger}(Y) = \alpha(b)\,\alpha(Y)\,\alpha(a)\;} .
 $$
 
 **Proof.** $\langle\Theta^{\alpha}_{a,b}(X),Y\rangle = \operatorname{tr}(a\alpha(X)bY) = \operatorname{tr}(\alpha(X)\,bYa) = \langle\alpha(X),\,bYa\rangle = \langle X,\,\alpha(bYa)\rangle = \langle X,\,\alpha(b)\alpha(Y)\alpha(a)\rangle$, using the $\alpha$-invariance of the trace pairing in the middle and the multiplicativity $\alpha(bYa)=\alpha(b)\alpha(Y)\alpha(a)$; the adjoint is unique because the trace pairing is non-degenerate.
@@ -36,8 +36,8 @@ $$
 **Proposition.** For every $a \in E$,
 
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\circ\alpha , \qquad
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger}(Y) = \alpha(Y)\,\alpha(a) .
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\circ\alpha , \qquad
+\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger}(Y) = \alpha(Y)\,\alpha(a)\;} .
 $$
 
 **Proof.** The signed left multiplication is $\Theta^{\alpha}_{a,1}$, so the previous proposition gives the adjoint $\Theta^{\alpha}_{\alpha(1),\alpha(a)}=\Theta^{\alpha}_{1,\alpha(a)}$, whose value at $Y$ is $\alpha(Y)\alpha(a)$; this is the right multiplication by $\alpha(a)$ after the grade involution. For $\alpha=\mathrm{id}$ it is $R_a$, in agreement with $(L_a)^{\dagger}=R_a$ of *The Adjoint of the Left Multiplication on a Linear Space*.
@@ -55,7 +55,7 @@ $$
 **Theorem (the unitarity criterion of a signed sandwich).** For all $a,b \in E$,
 
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\dagger}\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad u = \alpha(b)\alpha(a) ,
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\dagger}\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad u = \alpha(b)\alpha(a)\;} ,
 $$
 
 so $\Theta^{\alpha}_{a,b}$ is unitary for the trace pairing — $(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b}=\mathrm{id}$ and the same on the other side — if and only if $u=\alpha(b)\alpha(a)$ is a central involution of $E$.

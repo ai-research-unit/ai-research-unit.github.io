@@ -16,7 +16,7 @@ Throughout, $R$ is a commutative ring with identity $1 \neq 0$, the corpus defau
 **Definition.** An **integral domain** is a commutative ring $R$ with $1 \neq 0$ such that
 
 $$
-a b = 0 \quad \Longrightarrow \quad a = 0 \ \text{or}\ b = 0 .
+\boxed{\;a b = 0 \quad \Longrightarrow \quad a = 0 \ \text{or}\ b = 0\;} .
 $$
 
 Equivalently, $R$ has no zero divisors in the sense of *Rings*, §Zero Divisors, the element $0$ being the only element that annihilates a nonzero element. A field is the special case in which every nonzero element is a unit; the field axioms belong to *Fields*, later in this category.
@@ -130,7 +130,7 @@ $$
 **Proposition (freshman's dream).** Let $R$ be a commutative ring of prime characteristic $p$. Then for all $x, y \in R$ and all $n \geq 1$,
 
 $$
-(x + y)^{p^n} = x^{p^n} + y^{p^n}, \qquad (xy)^{p^n} = x^{p^n} y^{p^n} .
+\boxed{\;(x + y)^{p^n} = x^{p^n} + y^{p^n}, \qquad (xy)^{p^n} = x^{p^n} y^{p^n}\;} .
 $$
 
 **Proof.** For $n = 1$, expand $(x+y)^p$ by the binomial theorem of *Commutative Rings*. Each binomial coefficient $\binom{p}{k}$ with $0 < k < p$ is divisible by $p$ and so vanishes in $R$, leaving $x^p + y^p$; the second identity is the commutativity of $R$. The general case follows by iterating the case $n = 1$.

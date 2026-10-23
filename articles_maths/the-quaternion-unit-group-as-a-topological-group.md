@@ -9,7 +9,7 @@ The quaternions form a division algebra, so the units of the quaternion product 
 **Proposition (the units are the nonzero elements).** The group of units of the quaternion product is
 
 $$
-\mathbb{H}^\times=\mathrm{GL}_1(\mathbb{H})=\{\tilde q:\tilde q\neq0\},
+\boxed{\;\mathbb{H}^\times=\mathrm{GL}_1(\mathbb{H})=\{\tilde q:\tilde q\neq0\}\;}
 $$
 
 of real dimension $4$, open and dense in the algebra; its centre is $\mathbb{R}^\times e_t\cong\mathbb{R}^\times$, of real dimension one.

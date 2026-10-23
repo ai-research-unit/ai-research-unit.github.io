@@ -36,7 +36,7 @@ Composition is induced by composition of chain maps, which descends to homotopy 
 **Proposition.** The mapping cone of a chain map $f:C\to D$ fits into a diagram
 
 $$
-C\xrightarrow{\ f\ }D\xrightarrow{\ i\ }\operatorname{Cone}(f)\xrightarrow{\ q\ }C[1],
+\boxed{\;C\xrightarrow{\ f\ }D\xrightarrow{\ i\ }\operatorname{Cone}(f)\xrightarrow{\ q\ }C[1]\;},
 $$
 
 in which $i$ is the inclusion of $D$ as the degree-$0$ component of the cone and $q$ is the projection onto $C[1]$; the composite of any two consecutive maps is zero, and the induced maps on homology form the long exact sequence of *Homological Algebra*.
@@ -124,7 +124,7 @@ and an exact functor between triangulated categories carries distinguished trian
 **Theorem.** If $\mathcal{A}$ has enough injectives then every left exact additive functor $F:\mathcal{A}\to\mathcal{B}$ has a right derived functor $\mathbb{R}F$, and if $\mathcal{A}$ has enough projectives then every right exact $F$ has a left derived functor $\mathbb{L}F$. In either case
 
 $$
-H^n\bigl(\mathbb{R}F(A)\bigr)\cong R^nF(A), \qquad H_n\bigl(\mathbb{L}F(A)\bigr)\cong L_nF(A),
+\boxed{\;H^n\bigl(\mathbb{R}F(A)\bigr)\cong R^nF(A), \qquad H_n\bigl(\mathbb{L}F(A)\bigr)\cong L_nF(A)\;},
 $$
 
 so the derived functors of *Derived Functors* are recovered as the cohomology of the total derived functor.
@@ -152,7 +152,7 @@ for a projective resolution $P_\bullet$ of $M$; both are well-defined objects of
 **Theorem (adjunction).** The derived functors satisfy
 
 $$
-\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}(M\otimes_R^{\mathbb{L}}N,P)\cong\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}\bigl(M,\mathbb{R}\operatorname{Hom}_R(N,P)\bigr),
+\boxed{\;\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}(M\otimes_R^{\mathbb{L}}N,P)\cong\operatorname{Hom}_{D(R\text{-}\mathbf{Mod})}\bigl(M,\mathbb{R}\operatorname{Hom}_R(N,P)\bigr)\;},
 $$
 
 so $-\otimes_R^{\mathbb{L}}N$ is left adjoint to $\mathbb{R}\operatorname{Hom}_R(N,-)$ on the derived category. There is also a natural isomorphism $M\otimes_R^{\mathbb{L}}N\cong N\otimes_R^{\mathbb{L}}M$.

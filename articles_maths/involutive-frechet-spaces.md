@@ -29,7 +29,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 **Theorem (invariant generating sequence).** Let $\theta$ be a continuous involution of $E$. Then the seminorms
 
 $$
-q_{n} = \sup(p_{n}, p_{n}\circ\theta)
+\boxed{\;q_{n} = \sup(p_{n}, p_{n}\circ\theta)\;}
 $$
 
 form an increasing generating sequence of $\theta$-invariant seminorms defining the topology, so the Fréchet structure may be given by invariant seminorms; with respect to them $\theta$ is isometric, and the metric $d_{\theta}(x,y) = \sum_n 2^{-n}\min(1, q_n(x-y))$ is $\theta$-invariant.
@@ -45,7 +45,7 @@ form an increasing generating sequence of $\theta$-invariant seminorms defining 
 **Theorem (the summands are Fréchet).** The fixed subspace $E^{\theta}$ and the negated subspace $E^{-}$ are closed subspaces of $E$, hence Fréchet spaces for the induced structure and the restricted generating seminorms; in the antilinear case $E^{\theta}$ is a real Fréchet space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and
 
 $$
-E = E^{\theta} \oplus E^{-}
+\boxed{\;E = E^{\theta} \oplus E^{-}\;}
 $$
 
 is a topological direct sum of Fréchet spaces.
@@ -61,7 +61,7 @@ is a topological direct sum of Fréchet spaces.
 **Theorem (the transposed involution on the strong dual).** The strong dual $E'_{b}$ is a complete locally convex space, the transposed involution $\theta'(\varphi) = \varphi\circ\theta$ is a continuous involution of the same kind, and its fixed and negated subspaces are the annihilators
 
 $$
-(E'_{b})^{\theta'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\theta})^{\circ} ,
+\boxed{\;(E'_{b})^{\theta'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\theta})^{\circ}\;} ,
 $$
 
 which are weakly-star closed subspaces of $E'_{b}$; the transposed involution is an isometry of the strong topology onto itself.

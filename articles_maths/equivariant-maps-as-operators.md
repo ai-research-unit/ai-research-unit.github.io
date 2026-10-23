@@ -41,7 +41,7 @@ $$
 **Theorem.** A $G$-map $f : X \to Y$ induces a chain map of complexes of $R[G]$-modules
 
 $$
-f_\# : C_*(X;R) \longrightarrow C_*(Y;R), \qquad f_\#(\eta) = f \circ \eta,
+\boxed{\;f_\# : C_*(X;R) \longrightarrow C_*(Y;R), \qquad f_\#(\eta) = f \circ \eta\;},
 $$
 
 and $f_\#$ is an element of $\operatorname{Hom}_{R[G]}(C_*(X;R), C_*(Y;R))$: it is $R$-linear, it commutes with $\partial$, and it commutes with the action, $f_\# \, g_\# = g_\# \, f_\#$ for every $g \in G$.
@@ -73,7 +73,7 @@ from the $G$-equivariant self-homeomorphisms to the equivariant operators. This 
 **Theorem.** Let $H : X \times I \to Y$ be an equivariant homotopy from $f$ to $g$, the interval carrying the trivial action. Then there is a degree-one $R[G]$-linear map (a **homotopy operator**)
 
 $$
-P : C_n(X;R) \longrightarrow C_{n+1}(Y;R), \qquad \partial P + P\partial = g_\# - f_\#,
+\boxed{\;P : C_n(X;R) \longrightarrow C_{n+1}(Y;R), \qquad \partial P + P\partial = g_\# - f_\#\;},
 $$
 
 which intertwines the actions. Consequently $f_\#$ and $g_\#$ induce the same map on every invariant built from the complex, and in particular the same map on the coinvariants and on the Borel complex.
@@ -119,7 +119,7 @@ $$
 **Theorem.** The Borel complex computes the homology of $G$ with coefficients in the complex of the space,
 
 $$
-H_n^G(X;R) \cong H_n\bigl(G; C_*(X;R)\bigr) = \operatorname{Tor}^{R[G]}_n\bigl(R, C_*(X;R)\bigr),
+\boxed{\;H_n^G(X;R) \cong H_n\bigl(G; C_*(X;R)\bigr) = \operatorname{Tor}^{R[G]}_n\bigl(R, C_*(X;R)\bigr)\;},
 $$
 
 in the sense of *Group Cohomology*, and for a free action it reduces to the homology of the orbit space, $H_n^G(X;R) \cong H_n(X/G;R)$.

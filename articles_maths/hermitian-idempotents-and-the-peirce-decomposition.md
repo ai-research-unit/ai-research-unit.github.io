@@ -67,7 +67,7 @@ The **corners** $eAe$ and $fAf$ are subalgebras with units $e$ and $f$, and the 
 **Theorem (the exchange).** Let $e$ be a Hermitian idempotent and $f = 1 - e$. Then $f$ is a Hermitian idempotent and the involution exchanges the two indices of each Peirce space,
 
 $$
-(e_i A e_j)^{*} = e_j A e_i ,
+\boxed{\;(e_i A e_j)^{*} = e_j A e_i\;} ,
 $$
 
 so the two corners $eAe$ and $fAf$ are carried to themselves and the involution exchanges the two mixed spaces, $(eAf)^{*} = fAe$ and $(fAe)^{*} = eAf$.
@@ -167,7 +167,7 @@ and the corner is closed under the derived product; it is stable under $*$ and c
 **Theorem.** Let $e$ be a Hermitian idempotent, $f = 1 - e$, and write $A_{ij} = e_i A e_j$ with $e_{1} = e$ and $e_{2} = f$. For the derived product,
 
 $$
-A_{ij} \star A_{kl} \subseteq \delta_{jl}\, A_{ik} .
+\boxed{\;A_{ij} \star A_{kl} \subseteq \delta_{jl}\, A_{ik}\;} .
 $$
 
 So the two indices that must agree are the right index $j$ of the first factor and the right index $l$ of the second, while the outer indices of the result are the two left indices $i$ and $k$. In the table of the algebra product it is instead the right index of the first factor and the left index of the second that must agree, $(e_i A e_j)(e_k A e_l) \subseteq \delta_{jk} e_i A e_l$; the sesquilinear table is the transpose of the ordinary one.
@@ -195,7 +195,7 @@ and the last element lies in $e_i A e_k = A_{ik}$ because $e_j b^{*} e_k$ is an 
 **Theorem.** Let $e_{1}, \dots, e_{n}$ be an orthogonal complete family of Hermitian idempotents. Then
 
 $$
-A = \bigoplus_{i,j} e_i A e_j ,
+\boxed{\;A = \bigoplus_{i,j} e_i A e_j\;} ,
 $$
 
 the table of the algebra product is $(e_i A e_j)(e_k A e_l) \subseteq \delta_{jk} e_i A e_l$, and the table of the derived product is $(e_i A e_j) \star (e_k A e_l) \subseteq \delta_{jl} e_i A e_k$. The diagonal sum $\bigoplus_{i} e_i A e_i$ is a $*$-subalgebra with unit $1$, each $e_i A e_i$ is a corner with unit $e_i$, and the off-diagonal sum is a bimodule over the diagonal.

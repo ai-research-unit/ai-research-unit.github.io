@@ -36,9 +36,9 @@ for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermiti
 **Proposition.** Each of the three Clifford forms has a class in the Witt group of its own involution,
 
 $$
-[h_{\dagger}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger}\bigr), \qquad
+\boxed{\;[h_{\dagger}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger}\bigr), \qquad
 [h_{\bar\cdot}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), \bar\cdot\bigr), \qquad
-[h_{r}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{r}\bigr),
+[h_{r}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{r}\bigr)\;},
 $$
 
 over a field of characteristic not two, since each is non-degenerate by *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint* and nonsingularity follows from non-degeneracy over the algebra when the algebra is a product of matrix algebras over a field.
@@ -52,8 +52,8 @@ over a field of characteristic not two, since each is non-degenerate by *Hermiti
 **Proposition (invariance of the class).** The isometry groups of the three forms act on the forms by isometries, hence fix their Witt classes:
 
 $$
-s \in U \ \Longrightarrow \ [h_{\dagger}(s\,\cdot\,, s\,\cdot\,)] = [h_{\dagger}], \qquad
-s \in \mathrm{Pin}(V,\mathfrak{Q}) \ \Longrightarrow \ [h_{\bar\cdot}(s\,\cdot\,,s\,\cdot\,)] = [h_{\bar\cdot}] ,
+\boxed{\;s \in U \ \Longrightarrow \ [h_{\dagger}(s\,\cdot\,, s\,\cdot\,)] = [h_{\dagger}], \qquad
+s \in \mathrm{Pin}(V,\mathfrak{Q}) \ \Longrightarrow \ [h_{\bar\cdot}(s\,\cdot\,,s\,\cdot\,)] = [h_{\bar\cdot}]\;} ,
 $$
 
 and similarly for $h_r$ with the group $\{s : s^{r}s = 1\}$. So the unit form is not merely non-degenerate: it is **fixed as a Witt class** by the whole unitary slice and the whole Pin group, and the orbits of the Clifford groups in the Witt group are trivial on the unit form.
@@ -69,7 +69,7 @@ and similarly for $h_r$ with the group $\{s : s^{r}s = 1\}$. So the unit form is
 **Proposition.** The map which sends a Hermitian form over the base to the form on the same module regarded over the Clifford algebra, $g \mapsto g\otimes_{\!A}\mathrm{Cl}(V,\mathfrak{Q})$ with the diagonal involution, induces a homomorphism of Witt groups
 
 $$
-W^{\varepsilon}(A,\sigma) \longrightarrow W^{\varepsilon}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger}\bigr),
+\boxed{\;W^{\varepsilon}(A,\sigma) \longrightarrow W^{\varepsilon}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger}\bigr)\;},
 $$
 
 the **Clifford invariant** or **unitary Clifford map**, and its image is the subgroup of forms that are the scalar extension of a form over the base.

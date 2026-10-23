@@ -29,9 +29,9 @@ holds for all $\tilde Q,\tilde S,\tilde Q_3$.
 **Theorem (the operator is the star).** The Tomita operator of the pair $(\mathcal{M},\xi)$ is
 
 $$
-S(\tilde Q\,\xi)=\tilde Q^{*}\xi ,
+\boxed{\; S(\tilde Q\,\xi)=\tilde Q^{*}\xi ,
 \qquad\text{that is}\qquad
-S(\tilde Q)=\tilde Q^{*}\quad\text{on } \mathbb{B}.
+S(\tilde Q)=\tilde Q^{*}\quad\text{on } \mathbb{B} \;}.
 $$
 
 **Proof.** By definition $S(\Lambda\xi)=\Lambda^{*}\xi$ for $\Lambda=L_{\tilde Q}\in\mathcal{M}$, and the definite adjoint of the left multiplication is $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$ (*The Adjoint of the Left Multiplication on a Hermitian Algebra*). Hence $S(\tilde Q\xi)=L_{\tilde Q^{*}}e_t=\tilde Q^{*}$, as claimed.
@@ -53,7 +53,7 @@ $$
 **Corollary (the polar decomposition).** $S=\jmath\Delta^{1/2}$ with
 
 $$
-\Delta=\mathrm{id} ,\qquad \jmath=S={}^{*} ,
+\boxed{\; \Delta=\mathrm{id} ,\qquad \jmath=S={}^{*} \;},
 $$
 
 so the **modular operator is the identity**, the **modular conjugation is the star**, and the modular flow is trivial, $\sigma_t(\Lambda)=\Delta^{\mathrm{i}t}\Lambda\Delta^{-\mathrm{i}t}=\Lambda$ for every $t$.
@@ -73,9 +73,9 @@ and it is tracial, $\omega(L_{\tilde Q}L_{\tilde Q_1})=(QR)_0=(RQ)_0=\omega(L_{\
 **Theorem (the conjugation changes sides).** The modular conjugation exchanges the left and the right multiplications,
 
 $$
-\jmath\,L_{\tilde Q}\,\jmath=R_{\tilde Q^{*}} ,
+\boxed{\; \jmath\,L_{\tilde Q}\,\jmath=R_{\tilde Q^{*}} ,
 \qquad\text{hence}\qquad
-\jmath\,\mathcal{M}\,\jmath=\mathcal{M}' .
+\jmath\,\mathcal{M}\,\jmath=\mathcal{M}' \;}.
 $$
 
 **Proof.** For every $\tilde S$, $(\jmath L_{\tilde Q}\jmath)(\tilde S)=(\tilde Q\,\tilde S^{*})^{*}=\tilde S\,\tilde Q^{*}=R_{\tilde Q^{*}}(\tilde S)$; as $\tilde Q$ ranges over $\mathbb{B}$ the right multiplications range over $\mathcal{M}'$, which gives the second identity. This is the commutant theorem of Tomita in the definite case, $\jmath\mathcal{M}\jmath=\mathcal{M}'$, computed on the biquaternion algebra.

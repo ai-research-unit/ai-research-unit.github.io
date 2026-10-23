@@ -54,7 +54,7 @@ for some nonzero ideal $I$ of $\mathcal{O}_k[S^{-1}]$.
 **Theorem (Borel–Harish-Chandra).** Let $k$ be a number field, let $\mathbf{G}$ be a connected reductive linear algebraic group over $k$ with no nontrivial $k$-character — a condition that holds automatically when $\mathbf{G}$ is semisimple — and let $S$ be a finite set of places containing the archimedean ones. Then the $S$-arithmetic group $\mathbf{G}(\mathcal{O}_k[S^{-1}])$ is a lattice in
 
 $$
-G_S = \prod_{v \in S} \mathbf{G}(k_v) ,
+\boxed{\;G_S = \prod_{v \in S} \mathbf{G}(k_v)\;} ,
 $$
 
 a locally compact group. It is uniform if and only if $\mathbf{G}$ has no nontrivial $k$-split torus; equivalently, when $\mathbf{G}$ is semisimple, if and only if no proper $k$-parabolic subgroup of $\mathbf{G}$ exists.
@@ -90,7 +90,7 @@ a locally compact group. It is uniform if and only if $\mathbf{G}$ has no nontri
 **Definition.** A **Siegel set** in $G_S$ relative to a minimal $k$-parabolic subgroup $\mathbf{P}$ with Levi decomposition $\mathbf{P} = \mathbf{M}\cdot\mathbf{N}$ and a maximal $k$-split torus $\mathbf{A} \leq \mathbf{M}$ is a set of the form
 
 $$
-\mathrm{S}_{t,u} = \omega\cdot\mathbf{A}_t\cdot\mathbf{N}_u ,
+\boxed{\;\mathrm{S}_{t,u} = \omega\cdot\mathbf{A}_t\cdot\mathbf{N}_u\;} ,
 $$
 
 where $\omega$ is a compact set, $\mathbf{A}_t = \{a \in \mathbf{A} : \chi(a) \geq t \text{ for all } k\text{-roots } \chi \text{ of } \mathbf{A} \text{ in } \mathbf{N}\}$ is the truncation of the split torus at level $t$, and $\mathbf{N}_u$ is the truncation of the unipotent radical.

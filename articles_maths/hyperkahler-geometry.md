@@ -60,7 +60,7 @@ $$
 the linear combination in the bundle $\mathcal{Q}$ with constant coefficients $a,b,c$. Then $\mathbb{I}$ is an integrable complex structure and a Kähler structure for $g$, with fundamental form
 
 $$
-\Omega_{\mathbb{I}} = a\Omega_1 + b\Omega_2 + c\Omega_3 .
+\boxed{\;\Omega_{\mathbb{I}} = a\Omega_1 + b\Omega_2 + c\Omega_3\;} .
 $$
 
 The assignment $(a,b,c)\mapsto \mathbb{I}$ is a bijection from $S^2$ onto the set of complex structures on $M$ that lie in $\mathcal{Q}$ and are Kähler for $g$. It is the **twistor sphere** of the hyperkähler structure.
@@ -84,7 +84,7 @@ where each $\mu_i:M\to\mathrm{K}^*$ is a moment map for the action on the symple
 **Theorem (hyperkähler quotient).** Let $K$ act on a hyperkähler manifold $M$ with a hyperkähler moment map $\mu$, and let the action be free and proper on the common zero locus $\mu^{-1}(0)$. Then the quotient
 
 $$
-M \mathbin{/\!\!/} K = \mu^{-1}(0)/K
+\boxed{\;M \mathbin{/\!\!/} K = \mu^{-1}(0)/K\;}
 $$
 
 is a smooth manifold carrying an induced hyperkähler structure, of dimension $\dim M - 4\dim K$. It is the **hyperkähler quotient**.
@@ -114,7 +114,7 @@ is a smooth manifold carrying an induced hyperkähler structure, of dimension $\
 **Theorem (Bogomolov decomposition, statement).** Let $M$ be a compact Kähler manifold with $c_1(M)=0$ in $H^2(M;\mathbb{R})$. Then $M$ has a finite étale cover
 
 $$
-M^{\mathrm{cov}} = T \times \prod_{i} Y_i \times \prod_{j} Z_j,
+\boxed{\;M^{\mathrm{cov}} = T \times \prod_{i} Y_i \times \prod_{j} Z_j\;},
 $$
 
 where $T$ is a complex torus, each $Y_i$ is a simply connected Calabi–Yau manifold of complex dimension at least $3$ with holonomy $SU(\dim_{\mathbb{C}}Y_i)$, each $Z_j$ is a simply connected irreducible hyperkähler manifold with holonomy $Sp(\dim_{\mathbb{C}}Z_j/2)$, and the decomposition is unique up to order and isometry.

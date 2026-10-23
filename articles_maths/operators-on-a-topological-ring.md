@@ -84,7 +84,7 @@ The later groups of the category build adjoints, and an adjoint is taken with re
 **Definition.** Let $k$ be a field and $k\{R\}$ the free $k$-module on the set $R$, that is the $k$-vector space of finitely supported functions $R \to k$; write $C(R)$ for the $k$-algebra of continuous functions $R \to k$, carrying the topology of uniform convergence on compacta when $R$ is locally compact. The **natural pairing** of the category is
 
 $$
-\langle\cdot,\cdot\rangle : C(R)\times k\{R\} \longrightarrow k, \qquad \langle f, \lambda\rangle = \sum_{x \in R} f(x)\,\lambda_x ,
+\boxed{\;\langle\cdot,\cdot\rangle : C(R)\times k\{R\} \longrightarrow k, \qquad \langle f, \lambda\rangle = \sum_{x \in R} f(x)\,\lambda_x\;} ,
 $$
 
 the sum being finite because $\lambda$ has finite support.
@@ -96,7 +96,7 @@ the sum being finite because $\lambda$ has finite support.
 **Proposition (the one-sided multiplications are adjoint to their inverses).** Let $L_a$ act on $C(R)$ by $(L_a f)(x) = f(a^{-1}x)$ when $a$ is a unit, and on $k\{R\}$ by the linear extension of $x \mapsto ax$; let $R_a$ act by $(R_a f)(x) = f(xa)$ and on $k\{R\}$ by the linear extension of $x \mapsto xa$. Then
 
 $$
-\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle , \qquad \langle R_a f, \lambda\rangle = \langle f, R_{a^{-1}}\lambda\rangle .
+\boxed{\;\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle , \qquad \langle R_a f, \lambda\rangle = \langle f, R_{a^{-1}}\lambda\rangle\;} .
 $$
 
 **Proof.** $\langle L_a f, \lambda\rangle = \sum_x f(a^{-1}x)\lambda_x = \sum_y f(y)\lambda_{ay}$ on reindexing $y = a^{-1}x$, and $(L_{a^{-1}}\lambda)_y = \lambda_{ay}$, so the first identity is the definition of the pairing. Similarly $\langle R_a f, \lambda\rangle = \sum_x f(xa)\lambda_x = \sum_y f(y)\lambda_{ya^{-1}}$, and $(R_{a^{-1}}\lambda)_y = \lambda_{ya}$, which gives the second.

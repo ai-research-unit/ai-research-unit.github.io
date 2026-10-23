@@ -12,7 +12,7 @@ This article treats those three questions in the elementary range: the stability
 **Theorem.** An involution $\sigma$ of a local ring $(A, \mathfrak m)$ carries the maximal ideal to itself, $\sigma(\mathfrak m) = \mathfrak m$, and every power of the maximal ideal likewise, $\sigma(\mathfrak m^n) = \mathfrak m^n$. Consequently $\sigma$ descends to the residue field: the map
 
 $$
-\sigma_k(a + \mathfrak m) = \sigma(a) + \mathfrak m
+\boxed{\;\sigma_k(a + \mathfrak m) = \sigma(a) + \mathfrak m\;}
 $$
 
 is a well-defined involution of $k$.
@@ -30,13 +30,13 @@ is a well-defined involution of $k$.
 **Proposition.** The fixed subring $A^\sigma$ is a local ring with maximal ideal
 
 $$
-\mathfrak m^\sigma = A^\sigma \cap \mathfrak m = \{a \in \mathfrak m : \sigma(a) = a\},
+\boxed{\;\mathfrak m^\sigma = A^\sigma \cap \mathfrak m = \{a \in \mathfrak m : \sigma(a) = a\}\;},
 $$
 
 and its residue field is the fixed field of the residue involution,
 
 $$
-A^\sigma/\mathfrak m^\sigma \cong k^{\sigma_k},
+\boxed{\;A^\sigma/\mathfrak m^\sigma \cong k^{\sigma_k}\;},
 $$
 
 when $2$ is invertible in $A$. Without the hypothesis on $2$ the natural map $A^\sigma/\mathfrak m^\sigma \to k^{\sigma_k}$ is still injective, and it is surjective exactly when every element of $k^{\sigma_k}$ has a $\sigma$-fixed lift.

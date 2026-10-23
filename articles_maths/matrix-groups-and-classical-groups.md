@@ -179,7 +179,7 @@ the images of the quaternion units are $\rho(\vec e_x) = i\sigma_z$, $\rho(\vec 
 **Theorem.** The restriction of $\rho$ to the unit sphere $\mathbb{H}^1 = \{q \in \mathbb{H} : N(q) = 1\}$ is an isomorphism of topological groups
 
 $$
-\mathbb{H}^1 \longrightarrow SU(2), \qquad \mathbb{H}^1 = S^3 .
+\boxed{\;\mathbb{H}^1 \longrightarrow SU(2), \qquad \mathbb{H}^1 = S^3\;} .
 $$
 
 **Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(q^{\natural})\rho(q) = \rho(q^{\natural} q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + wj$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces.
@@ -197,7 +197,7 @@ Identify $\mathbb{R}^3$ with the space of pure quaternions $\mathrm{Vect}(\mathb
 **Theorem.** For $u \in \mathbb{H}^1$ the map $\varphi_u(x) = u x  u^{\natural}$ restricts to a rotation of the pure quaternions, $\varphi_u \in SO(3)$, and
 
 $$
-\varphi : \mathbb{H}^1 \longrightarrow SO(3), \qquad u \longmapsto \varphi_u,
+\boxed{\;\varphi : \mathbb{H}^1 \longrightarrow SO(3), \qquad u \longmapsto \varphi_u\;},
 $$
 
 is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \cong \mathbb{H}^1/\{\pm 1\} \cong SU(2)/\{\pm I\} = PSU(2)$.
@@ -235,7 +235,7 @@ $$
 is a surjective homomorphism with kernel $\{\pm(1,1)\}$ of order $2$. Hence
 
 $$
-SO(4) \cong (\mathbb{H}^1 \times \mathbb{H}^1)/\{\pm(1,1)\} \cong (SU(2) \times SU(2))/\{\pm(I,I)\}.
+\boxed{\;SO(4) \cong (\mathbb{H}^1 \times \mathbb{H}^1)/\{\pm(1,1)\} \cong (SU(2) \times SU(2))/\{\pm(I,I)\}\;}.
 $$
 
 **Proof.** The map $\psi_{(u,v)}$ preserves the norm because $N(uqv^{\natural}) = N(u)N(q)N(v) = N(q)$, so it is orthogonal; it is the composite of left multiplication by $u$ and right multiplication by $ v^{\natural}$, and each of these has real determinant $1$: the maps $u \mapsto L_u$ and $v \mapsto R_v$ are continuous from the connected group $\mathbb{H}^1 = S^3$ into the orthogonal group $O(4)$ of $\mathbb{H} \cong \mathbb{R}^4$, so their images lie in the identity component $SO(4)$. The map is a homomorphism because each factor acts multiplicatively. Its kernel consists of the pairs with $uq = qv$ for all $q$; taking $q = 1$ gives $u = v$, and then $uq = qu$ for all $q$, so $u$ is central and, being a unit of norm $1$, is $\pm 1$. Thus the kernel has order $2$ and the image is a connected compact subgroup of dimension $6$, equal to $\dim SO(4)$; a connected subgroup of a connected group of the same dimension is open and closed, so the image is all of $SO(4)$.

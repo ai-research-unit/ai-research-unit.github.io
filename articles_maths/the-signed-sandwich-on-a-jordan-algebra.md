@@ -27,7 +27,7 @@ The sandwich is an operator on the module $J$; it is not in general an operator 
 **Theorem.** For all $a, b \in J$,
 
 $$
-\tfrac12\bigl(S_{a,b} + S_{b,a}\bigr) = U_{a,b} ,
+\boxed{\;\tfrac12\bigl(S_{a,b} + S_{b,a}\bigr) = U_{a,b}\;} ,
 $$
 
 the quadratic representation of *The Left and Right Multiplication Operators on a Jordan Algebra*; in particular the symmetrisation of the sandwiches is an operator of the Jordan structure, and it lies in $\operatorname{Mult}(J)$.
@@ -105,7 +105,7 @@ These two laws are used here and not reproved. They are laws of operators on the
 **Theorem (the failed law).** For all $a, b, c, d \in J$,
 
 $$
-\Sigma^{\alpha}_{a,b}\,\Sigma^{\alpha}_{c,d} = U_{a,b}\,U_{\alpha(c),\alpha(d)} ,
+\boxed{\;\Sigma^{\alpha}_{a,b}\,\Sigma^{\alpha}_{c,d} = U_{a,b}\,U_{\alpha(c),\alpha(d)}\;} ,
 $$
 
 a product of two quadratic representations. This product is **not** in general of the form $\Sigma^{\alpha}_{e,f}$; indeed it lies in the span of the $U_{e,f}$ only when $U_{a,b}U_{\alpha(c),\alpha(d)}$ is itself a quadratic representation, which is the exception and not the rule. Hence the monoid law of the ring case does not survive the symmetrisation.
@@ -135,7 +135,7 @@ It is the **signed conjugation** by $u$, and it is an operator of the Jordan str
 **Theorem.** Let $u \in A^\times$. Then
 
 $$
-r_u^2 = \operatorname{conj}_{u\alpha(u)} , \qquad r_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1} .
+\boxed{\;r_u^2 = \operatorname{conj}_{u\alpha(u)} , \qquad r_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1}\;} .
 $$
 
 Hence $r_u$ is an involution, a **reflection**, exactly when $u\,\alpha(u)$ is central in $A$; it is then the inner automorphism of $J$ by $u\alpha(u)$, of order two.

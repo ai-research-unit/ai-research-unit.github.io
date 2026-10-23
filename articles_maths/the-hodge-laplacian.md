@@ -63,7 +63,7 @@ $$
 **Theorem (Hodge decomposition).** On a closed oriented Riemannian manifold the space of $k$-forms splits as an orthogonal direct sum
 
 $$
-\Omega^{k}(M)=\mathcal{H}^{k}(M)\oplus d\,\Omega^{k-1}(M)\oplus d^{*}\,\Omega^{k+1}(M),
+\boxed{\;\Omega^{k}(M)=\mathcal{H}^{k}(M)\oplus d\,\Omega^{k-1}(M)\oplus d^{*}\,\Omega^{k+1}(M)\;},
 $$
 
 the **harmonic**, **exact** and **coexact** parts, and the decomposition is unique. Equivalently the closed forms split as $\ker(d|_{\Omega^{k}})=\mathcal{H}^{k}\oplus d\Omega^{k-1}$.
@@ -73,8 +73,8 @@ the **harmonic**, **exact** and **coexact** parts, and the decomposition is uniq
 **Theorem (Hodge).** The map that assigns to a harmonic form its de Rham class is an isomorphism
 
 $$
-\mathcal{H}^{k}(M)\;\xrightarrow{\ \cong\ }\;H^{k}_{dR}(M;\mathbb{C}),\qquad
-\dim\mathcal{H}^{k}(M)=b_{k}(M),
+\boxed{\;\mathcal{H}^{k}(M)\;\xrightarrow{\ \cong\ }\;H^{k}_{dR}(M;\mathbb{C}),\qquad
+\dim\mathcal{H}^{k}(M)=b_{k}(M)\;},
 $$
 
 so every de Rham class has a unique harmonic representative, and the Betti numbers are the dimensions of the kernels of the Laplacian.
@@ -110,7 +110,7 @@ The Laplacian can be written through the Levi-Civita connection $\nabla$ and the
 **Theorem (Weitzenböck formula).** For a $k$-form $\omega$ on a Riemannian manifold,
 
 $$
-\Delta\omega=\nabla^{*}\nabla\omega+\mathcal{R}_k\,\omega ,
+\boxed{\;\Delta\omega=\nabla^{*}\nabla\omega+\mathcal{R}_k\,\omega\;} ,
 $$
 
 where $\nabla^{*}\nabla=-\operatorname{tr}_g\nabla^2$ is the **rough Laplacian** and $\mathcal{R}_k$ is the endomorphism of $\Lambda^{k}T^{*}M$ built from the curvature tensor by contraction,

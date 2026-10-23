@@ -44,7 +44,7 @@ and it is an involution of order two; the group $\operatorname{Aut}_o(A)$ is the
 **Proposition (the inner automorphisms).** For every **unitary** $a$ (that is, $a^{*}a = aa^{*} = 1$), the conjugation
 
 $$
-\Phi_a : x\mapsto a\,x\,a^{-1}
+\boxed{\;\Phi_a : x\mapsto a\,x\,a^{-1}\;}
 $$
 
 is an order automorphism; it is a \*-automorphism exactly when it commutes with the involution, $a x a^{-1} = (a x^{*} a^{-1})^{*}$ for every $x$, that is, when $a$ is **central** or the involution is **inner** in the appropriate sense; the map $a\mapsto\Phi_a$ is a homomorphism of the unitary group onto the inner automorphism group, with the central unitaries as kernel.
@@ -56,7 +56,7 @@ is an order automorphism; it is a \*-automorphism exactly when it commutes with 
 **Theorem (the conjugation by the involution).** The map
 
 $$
-\operatorname{conj}_\alpha : \operatorname{Aut}_o(A)\to\operatorname{Aut}_o(A), \qquad \operatorname{conj}_\alpha(T) = \alpha\,T\,\alpha^{-1} ,
+\boxed{\;\operatorname{conj}_\alpha : \operatorname{Aut}_o(A)\to\operatorname{Aut}_o(A), \qquad \operatorname{conj}_\alpha(T) = \alpha\,T\,\alpha^{-1}\;} ,
 $$
 
 is an **automorphism of the group of order two**, an **order automorphism** of the group in the sense that it preserves the positivity,
@@ -78,7 +78,7 @@ the **\*-automorphisms** of the ordered involutive structure.
 **Proposition (the involution on the automorphisms is the adjoint-composition).** The two actions on $\operatorname{Aut}_o(A)$ — the conjugation by the involution and the adjoint map — combine into the **involution on the order automorphisms**
 
 $$
-T\mapsto (\operatorname{conj}_\alpha\circ *)(T) = \alpha T^{*}\alpha^{-1} = \alpha T^{*}\alpha ,
+\boxed{\;T\mapsto (\operatorname{conj}_\alpha\circ *)(T) = \alpha T^{*}\alpha^{-1} = \alpha T^{*}\alpha\;} ,
 $$
 
 which is an **anti-automorphism** of order two of the group, preserves the order automorphisms, and is the identity exactly on the order automorphisms that are **self-adjoint and \*-commuting**, $T^{*} = \alpha T\alpha$.

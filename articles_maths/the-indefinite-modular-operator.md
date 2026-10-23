@@ -45,7 +45,7 @@ with $\jmath$ an antilinear isometry of the definite form of $J$ and $\Delta$ a 
 **Proposition (the $J$-modular operator).** When the polar decomposition exists the $J$-modular operator is
 
 $$
-\Delta = \bar S^{\dagger}\bar S
+\boxed{\;\Delta = \bar S^{\dagger}\bar S\;}
 $$
 
 with $\dagger$ the indefinite adjoint, it is positive for the definite form $\langle\cdot,\cdot\rangle = [J\cdot,\cdot]$, self-adjoint for the indefinite form, and it commutes with $J$; its domain is the set of $u$ with $\bar Su\in\mathrm{dom}\,\bar S^{\dagger}$.
@@ -55,7 +55,7 @@ with $\dagger$ the indefinite adjoint, it is positive for the definite form $\la
 **Proposition (the $J$-modular conjugation).** With the notation of the polar decomposition, $\jmath$ is antilinear, $J$-unitary, involutive, $\jmath^{2} = \mathrm{id}$, and it commutes with the fundamental symmetry,
 
 $$
-\jmath J = J\jmath , \qquad [\jmath u,\jmath v] = \overline{[u,v]} .
+\boxed{\;\jmath J = J\jmath , \qquad [\jmath u,\jmath v] = \overline{[u,v]}\;} .
 $$
 
 **Proof.** The involution $S^{2} = \mathrm{id}$ passes to the closure as $\jmath\Delta^{1/2}\jmath\Delta^{1/2} = \mathrm{id}$, and the uniqueness of the polar decomposition, together with the positivity of $\Delta$, forces $\jmath^{2} = \mathrm{id}$; the $J$-unitarity is the isometry statement of the definition, and the commutation with $J$ is the $J$-compatibility of the involution underlying $S$.
@@ -63,7 +63,7 @@ $$
 **Theorem (the modular flow is the flow of the pair).** The one-parameter family
 
 $$
-\sigma_t(x) = \Delta^{it}\,x\,\Delta^{-it}, \qquad x\in\mathcal{M},
+\boxed{\;\sigma_t(x) = \Delta^{it}\,x\,\Delta^{-it}, \qquad x\in\mathcal{M}\;},
 $$
 
 is a one-parameter group of $J$-automorphisms of $\mathcal{M}$: each $\sigma_t$ is an algebra automorphism of $\mathcal{M}$, each $\sigma_t$ is compatible with the indefinite adjoint, $\sigma_t(x^{\dagger}) = \sigma_t(x)^{\dagger}$, and $\sigma_{s+t} = \sigma_s\sigma_t$.

@@ -42,13 +42,13 @@ where $\operatorname{ad}_x^{*}$ is the transpose of $\operatorname{ad}_x$.
 **Theorem.** For every $x\in\mathrm{G}$ the operator $\operatorname{ad}_x$ is skew with respect to $\kappa$:
 
 $$
-\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0\qquad\text{for all }y,z .
+\boxed{\;\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0\qquad\text{for all }y,z\;} .
 $$
 
 Equivalently, the following square commutes with a sign:
 
 $$
-\kappa^{\flat}\circ\operatorname{ad}_x=-\operatorname{ad}_x^{*}\circ\kappa^{\flat}.
+\boxed{\;\kappa^{\flat}\circ\operatorname{ad}_x=-\operatorname{ad}_x^{*}\circ\kappa^{\flat}\;}.
 $$
 
 **Proof.** The invariance identity gives $\kappa([x,y],z)=\kappa(x,[y,z])$ and $\kappa(y,[x,z])=\kappa([y,x],z)=-\kappa([x,y],z)$; adding, the two terms cancel. The commuting-square form is the same identity read through the definition of $\kappa^{\flat}$.

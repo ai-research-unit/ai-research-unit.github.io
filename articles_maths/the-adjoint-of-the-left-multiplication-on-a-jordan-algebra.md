@@ -41,7 +41,7 @@ the trace of the multiplication by the product in the finite-dimensional $F$-lin
 **Theorem.** The trace form is **associative**: for all $x, y, z \in J$
 
 $$
-T(x\bullet y, z) = T(x, y\bullet z) , \qquad \text{equivalently} \qquad T(L_xy, z) = T(y, L_xz) .
+\boxed{\;T(x\bullet y, z) = T(x, y\bullet z) , \qquad \text{equivalently} \qquad T(L_xy, z) = T(y, L_xz)\;} .
 $$
 
 *Proof.* By the **linearised Jordan identity** the operator $L_{(x\bullet y)\bullet z}-L_{x\bullet(y\bullet z)}$ is a sum of commutators of the left multiplications $L_x, L_y, L_z$; the trace of a commutator vanishes, so $\operatorname{tr}(L_{(x\bullet y)\bullet z}) = \operatorname{tr}(L_{x\bullet(y\bullet z)})$, which is the displayed associativity. Equivalently, the multiplication algebra is associative and the trace of a product is invariant under the cyclic permutation of its factors, by which both sides equal $\operatorname{tr}(L_xL_yL_z)$.
@@ -55,7 +55,7 @@ $$
 **Theorem.** For every $x \in J$ the adjoint of the left multiplication with respect to the trace form is the left multiplication itself:
 
 $$
-L_x^{\dagger} = L_x .
+\boxed{\;L_x^{\dagger} = L_x\;} .
 $$
 
 *Proof.* The associativity of $T$ reads $T(L_xy,z) = T(y,L_xz)$ for all $y, z$, which is exactly the defining relation $T(L_xy,z) = T(y,L_x^{\dagger}z)$ of the adjoint; the adjoint is unique by the non-degeneracy, so $L_x^{\dagger} = L_x$.
@@ -69,7 +69,7 @@ $$
 **Theorem.** The quadratic representation is self-adjoint, $\mathrm{Jor}_x^{\dagger} = \mathrm{Jor}_x$; for invertible $x$ it is invertible with
 
 $$
-\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}} , \qquad (\mathrm{Jor}_x^{-1})^{\dagger} = \mathrm{Jor}_x^{-1} ,
+\boxed{\;\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}} , \qquad (\mathrm{Jor}_x^{-1})^{\dagger} = \mathrm{Jor}_x^{-1}\;} ,
 $$
 
 and the map $\mathrm{Jor} : x\mapsto \mathrm{Jor}_x$ defines the symmetries of the algebra.

@@ -56,7 +56,7 @@ $$
 of the **Maurer–Cartan equation**
 
 $$
-\partial m_t+\tfrac{1}{2}[m_t,m_t]=0,
+\boxed{\;\partial m_t+\tfrac{1}{2}[m_t,m_t]=0\;},
 $$
 
 where $m_0$ is the multiplication of $A$ and $\partial=[m_0,-]$ is the Hochschild coboundary, and where two solutions are equivalent when they differ by the gauge action of the degree-zero part of the differential graded Lie algebra. The first-order coefficient $m_1$ is a $2$-cocycle, the obstruction to extending a partial deformation to the next order is the class of $\tfrac{1}{2}[m_t,m_t]$ in $HH^3(A,A)$, and the deformation is unobstructed when this class vanishes at every stage.
@@ -104,7 +104,7 @@ with $\varphi:A\times M\to M$ satisfying $a\varphi(b,m)-\varphi(ab,m)+\varphi(a,
 **Theorem.** If the deformation functor is unobstructed and $HH^2(A,A)$ is finite-dimensional over $k$ then the formal moduli space is the formal spectrum of the power series ring $k[[t_1,\dots,t_d]]$ with $d=\dim_kHH^2(A,A)$, and the **Kuranishi map**
 
 $$
-\kappa:HH^2(A,A)\longrightarrow HH^3(A,A)
+\boxed{\;\kappa:HH^2(A,A)\longrightarrow HH^3(A,A)\;}
 $$
 
 given by the quadratic obstruction $\kappa(\alpha)=\tfrac12[\alpha,\alpha]$ is the only data needed to present the versal deformation as the zero locus of the Maurer–Cartan equation.
@@ -132,7 +132,7 @@ given by the quadratic obstruction $\kappa(\alpha)=\tfrac12[\alpha,\alpha]$ is t
 **Theorem (Deligne, as formulated in the associative case).** The deformation functor $\operatorname{Def}_A$ is the **Maurer–Cartan functor** of the differential graded Lie algebra $C^{\bullet}(A,A)$:
 
 $$
-\operatorname{Def}_A(R)=\operatorname{MC}\bigl(C^{\bullet}(A,A)\otimes_k\mathrm{M}_R\bigr)/\text{gauge},
+\boxed{\;\operatorname{Def}_A(R)=\operatorname{MC}\bigl(C^{\bullet}(A,A)\otimes_k\mathrm{M}_R\bigr)/\text{gauge}\;},
 $$
 
 where $\operatorname{MC}(\mathrm{G}\otimes\mathrm{M})=\{x \in \mathrm{G}^1\otimes\mathrm{M}:\partial x+\tfrac12[x,x]=0\}$ is the set of Maurer–Cartan elements and the gauge group is the degree-zero part of the differential graded Lie algebra acting by the exponential. In particular the tangent space of the deformation functor is $HH^2(A,A)$, the obstruction space is $HH^3(A,A)$, and the automorphism group of a deformation is computed by $HH^1$ and $HH^0$.

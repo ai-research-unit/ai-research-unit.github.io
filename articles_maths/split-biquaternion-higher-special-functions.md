@@ -44,7 +44,9 @@ For integer order the series converges for every $\tilde{Q} \in \mathbb{H}_{\mat
 Because the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$, the Bessel function decomposes:
 
 $$
-J_\nu(\tilde{Q}) = J_{\nu_+}(\tilde{Q}_+) \tilde\Pi_1 + J_{\nu_-}(\tilde{Q}_-) \tilde\Pi_2,
+\boxed{\;
+J_\nu(\tilde{Q}) = J_{\nu_+}(\tilde{Q}_+) \tilde\Pi_1 + J_{\nu_-}(\tilde{Q}_-) \tilde\Pi_2
+\;},
 $$
 
 where $\nu = \nu_+ \tilde\Pi_1 + \nu_- \tilde\Pi_2$ and $J_{\nu_\pm}(\tilde{Q}_\pm)$ is the ordinary quaternion Bessel function of the component $\tilde{Q}_\pm$ with the order $\nu_\pm$ belonging to that component. The quaternion Bessel function is defined by the same power series, with $\tilde{Q}_\pm$ in place of $\tilde{Q}$, and it can be computed in closed form in the two regimes (pure oscillatory and pure nilpotent), as discussed in the biquaternion higher special functions article.
@@ -58,7 +60,9 @@ So the split biquaternion Bessel function is the pair of the quaternion Bessel f
 For a component $\tilde{Q}_\pm = \theta_\pm \vec u_\pm$ with $\theta_\pm \neq 0$ and $\vec u_\pm^2 = -e_t$, the quaternion Bessel function is
 
 $$
+\boxed{\;
 J_n(\theta_\pm \vec u_\pm) = I_n(\theta_\pm) \, \vec u_\pm^n = \begin{cases} (-1)^{n/2} I_n(\theta_\pm) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta_\pm) \, \vec u_\pm & \text{if } n \text{ is odd}, \end{cases}
+\;}
 $$
 
 where $I_n(\theta_\pm)$ on the right is the ordinary complex **modified** Bessel function evaluated at the real (or complex) number $\theta_\pm$. The two signs $(-1)^m$ in the defining series cancel, which is why the modified function appears in place of $J_n$.
@@ -176,7 +180,9 @@ where $a_\pm, b_\pm, c_\pm$ are the idempotent components of the parameters, and
 In the pure oscillatory regime the quaternion hypergeometric function does **not** reduce to the ordinary complex hypergeometric function: for a component $\tilde{Q}_\pm = \theta\vec u$ with $\vec u^2 = -e_t$ one has
 
 $$
-{}_2F_1(a, b; c; \theta\vec u) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_t + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \vec u,
+\boxed{\;
+{}_2F_1(a, b; c; \theta\vec u) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_t + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \vec u
+\;},
 $$
 
 the Pochhammer symbols sitting at $2k$ and $2k+1$ rather than at $k$, which is the even/odd decomposition stated for the biquaternion case.

@@ -54,8 +54,8 @@ the second from differentiating under the integral.
 **Theorem (Plancherel).** The transform extends from $\mathcal S(\mathbb R^n)\cap L^2$ to a unique
 bounded linear operator $\mathcal F:L^2(\mathbb R^n)\to L^2(\mathbb R^n)$, which is an isometry:
 $$
-\lVert\mathcal Ff\rVert_2=\lVert f\rVert_2,\qquad
-\langle\mathcal Ff,\mathcal Fg\rangle=\langle f,g\rangle ,
+\boxed{\;\lVert\mathcal Ff\rVert_2=\lVert f\rVert_2,\qquad
+\langle\mathcal Ff,\mathcal Fg\rangle=\langle f,g\rangle\;} ,
 $$
 the inner product being $\langle f,g\rangle=\int f\bar g$. It is onto, hence unitary, and its inverse is
 the conjugate transform, $\mathcal F^{-1}=\overline{\mathcal F}$.
@@ -130,9 +130,9 @@ orthonormal in $L^2(\mathbb R^n)$ by Fubini.
 
 **Theorem.** The Fourier operator is diagonal in the Hermite basis:
 $$
-\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha ,
+\boxed{\;\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha ,
 \qquad\text{so}\qquad
-\mathcal F=\sum_\alpha(-i)^{\lvert\alpha\rvert}\langle\cdot,h_\alpha\rangle h_\alpha .
+\mathcal F=\sum_\alpha(-i)^{\lvert\alpha\rvert}\langle\cdot,h_\alpha\rangle h_\alpha\;} .
 $$
 
 **Proof.** On $\mathbb R$ the two identities $\mathcal F(\partial/\partial x\,f)=2\pi i\xi\mathcal Ff$ and
@@ -178,7 +178,7 @@ $$
 $$
 and for $k\in L^1(\mathbb R^n)$, with $T_k$ the convolution operator of the previous article,
 $$
-\mathcal FT_k\mathcal F^{-1}=M_{\mathcal F k},\qquad \mathcal F^{-1}T_m\mathcal F=M_m
+\boxed{\;\mathcal FT_k\mathcal F^{-1}=M_{\mathcal F k},\qquad \mathcal F^{-1}T_m\mathcal F=M_m\;}
 $$
 for the multiplier operator $T_m$.
 

@@ -35,7 +35,7 @@ because $S\neq0$ and $-1$ is the scalar $-1$ of the algebra. Hence the pin repre
 **Theorem (faithfulness and the kernel).** Suppose $S$ is irreducible. If $\mathrm{Cl}(V,\mathfrak{Q})$ is simple then the pin representation is faithful, and its restriction to $\mathrm{Spin}(V,\mathfrak{Q})$ is the spin representation. If $\mathrm{Cl}(V,\mathfrak{Q})\cong A\times A$ is a product of two simple algebras and $S$ is the irreducible module of the first factor, then the kernel of $\rho$ is
 
 $$
-\ker\rho=\mathrm{Pin}(V,\mathfrak{Q})\cap\bigl(\{1\}\times A\bigr).
+\boxed{\;\ker\rho=\mathrm{Pin}(V,\mathfrak{Q})\cap\bigl(\{1\}\times A\bigr)\;}.
 $$
 
 *Proof.* The annihilator of an irreducible module is a two-sided ideal, proper because $1$ acts as $\mathrm{id}_S$; over a simple algebra it vanishes and the action is faithful, and over a product the module of one factor is annihilated by the other. Restricting a faithful action to a subgroup is faithful.
@@ -65,7 +65,7 @@ $$
 with $\varepsilon_x=(-1)^{k}$ the parity sign of $x$. Equivalently,
 
 $$
-\rho\bigl(\mathrm{Ad}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{-1}.
+\boxed{\;\rho\bigl(\mathrm{Ad}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{-1}\;}.
 $$
 
 *Proof.* For $s\in S$, $\rho(x)\rho(v)\rho(x)^{-1}(s)=x\bigl(v(x^{-1}s)\bigr)=(xvx^{-1})s=\rho(xvx^{-1})(s)$, which is the first identity, and $\mathrm{Ad}_x=\varepsilon_x\mathrm{Ad}^{\alpha}_x$ by *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*.
@@ -73,7 +73,7 @@ $$
 **Corollary (the reflection in the module).** Let $a\in V$ with $\mathfrak{Q}(a)\neq0$ and let $\rho_a$ be the reflection in $a^{\perp}$. Then for every $v\in V$
 
 $$
-\rho(a)\,\rho(v)\,\rho(a)^{-1}=-\rho\bigl(\rho_a(v)\bigr).
+\boxed{\;\rho(a)\,\rho(v)\,\rho(a)^{-1}=-\rho\bigl(\rho_a(v)\bigr)\;}.
 $$
 
 So an odd element of $\mathrm{Pin}$, which is a product of vectors, conjugates the Clifford action by the negative of the reflection; and the signed inner conjugation is the two-sided operator whose restriction to $V$ removes that sign.

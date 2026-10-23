@@ -32,7 +32,7 @@ The condition $f(b)=0$ is what makes $\tau$ invertible with an inverse of the sa
 (iv) $(\tau-\operatorname{id})(x)=f(x)b$, so $\tau-\operatorname{id}$ has rank $1$ and its square is zero:
 
 $$
-(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)f(b)b=0 ;
+\boxed{\;(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)f(b)b=0\;} ;
 $$
 
 (v) $\det\tau=1$, so $\tau \in \operatorname{SL}(V)$.
@@ -72,13 +72,13 @@ The **elementary column operations** are the same matrices applied on the right,
 **Proposition.** For distinct indices $i,j,k$ one has the commutator identity
 
 $$
-E_{ij}(\lambda)E_{jk}(\mu)E_{ij}(-\lambda)E_{jk}(-\mu)=E_{ik}(\lambda\mu),
+\boxed{\;E_{ij}(\lambda)E_{jk}(\mu)E_{ij}(-\lambda)E_{jk}(-\mu)=E_{ik}(\lambda\mu)\;},
 $$
 
 and for $t \in F^{\times}$ and the diagonal matrix $D=\operatorname{diag}(1,\dots,t,\dots,t^{-1},\dots,1)$ with $t$ and $t^{-1}$ in positions $i$ and $j$,
 
 $$
-D E_{ij}(\lambda) D^{-1}=E_{ij}(t^2\lambda), \qquad D E_{ji}(\lambda) D^{-1}=E_{ji}(t^{-2}\lambda).
+\boxed{\;D E_{ij}(\lambda) D^{-1}=E_{ij}(t^2\lambda), \qquad D E_{ji}(\lambda) D^{-1}=E_{ji}(t^{-2}\lambda)\;}.
 $$
 
 *Proof.* The first is the standard elementary computation $[E_{ij}(\lambda),E_{jk}(\mu)]=E_{ik}(\lambda\mu)$ for $i,j,k$ distinct, obtained by multiplying out $2 \times 2$ blocks. The second is conjugation of the matrix with a single off-diagonal entry, which scales that entry by $t\cdot t$ when it lies above the diagonal and by $t^{-1}\cdot t^{-1}$ when it lies below it.

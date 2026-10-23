@@ -28,7 +28,7 @@ $$
 **Proposition.** $h_c$ is Hermitian with respect to $c$:
 
 $$
-h_c(y,x) = c\bigl(h_c(x,y)\bigr).
+\boxed{\;h_c(y,x) = c\bigl(h_c(x,y)\bigr)\;}.
 $$
 
 **Proof.** By the definition, $h_c(y,x) = c(y)x$, and $c(h_c(x,y)) = c(c(x)y) = c(y)\,c(c(x)) = c(y)x$, using that $c$ is an anti-homomorphism and $c^{2} = \mathrm{id}$.
@@ -70,7 +70,7 @@ $$
 **Proposition.** For an anti-involution $c$ the radical of $h_c$ on $R$ is trivial,
 
 $$
-\{\, x : h_c(x,y) = 0 \ \text{for all } y \,\} = \{\, x : c(x) = 0 \,\} = 0 ,
+\boxed{\;\{\, x : h_c(x,y) = 0 \ \text{for all } y \,\} = \{\, x : c(x) = 0 \,\} = 0\;} ,
 $$
 
 because $h_c(x,1) = c(x)$ and $c$ is bijective. In particular every Hermitian form of this shape, and so each of the three forms of a Clifford algebra, is non-degenerate.
@@ -104,7 +104,7 @@ and all three have their diagonal fixed by it. The first two of the table need n
 **Proposition.** The isometries of $h_c$ on the algebra are
 
 $$
-\mathrm{Isom}(h_c) = \{\, s \in \mathrm{Cl}(V,\mathfrak{Q}) : c(s)\,s = 1 \,\},
+\boxed{\;\mathrm{Isom}(h_c) = \{\, s \in \mathrm{Cl}(V,\mathfrak{Q}) : c(s)\,s = 1 \,\}\;},
 $$
 
 an identity valid with $c$ the dagger, Clifford conjugation or reversion. In particular

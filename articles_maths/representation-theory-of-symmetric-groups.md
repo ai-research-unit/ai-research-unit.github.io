@@ -29,7 +29,7 @@ Throughout, $K$ is a field of characteristic not dividing $n!$ unless a modular 
 **Theorem (the numbers).** The number of irreducible representations of $S_n$ over an algebraically closed field of characteristic zero equals the number of conjugacy classes, hence the number of partitions of $n$. The regular representation, that is, the action of $S_n$ on $K[S_n]$ by left multiplication, decomposes as
 
 $$
-K[S_n] \cong \bigoplus_{\lambda \vdash n}(S^\lambda)^{\oplus \dim S^\lambda},
+\boxed{\;K[S_n] \cong \bigoplus_{\lambda \vdash n}(S^\lambda)^{\oplus \dim S^\lambda}\;},
 $$
 
 whence $\sum_{\lambda\vdash n}(\dim S^\lambda)^2 = n!$, and the character of the regular representation is $n!$ at the identity and $0$ elsewhere.
@@ -45,7 +45,7 @@ whence $\sum_{\lambda\vdash n}(\dim S^\lambda)^2 = n!$, and the character of the
 **Theorem (orthogonality).** With $\lvert C_\mu\rvert$ the size of the class of cycle type $\mu$,
 
 $$
-\sum_{\mu\vdash n}\lvert C_\mu\rvert\,\chi^\lambda_\mu\overline{\chi^{\lambda'}_\mu} = n!\,\delta_{\lambda\lambda'}, \qquad \sum_{\lambda\vdash n}\chi^\lambda_\mu\overline{\chi^\lambda_\nu} = \frac{n!}{\lvert C_\mu\rvert}\delta_{\mu\nu},
+\boxed{\;\sum_{\mu\vdash n}\lvert C_\mu\rvert\,\chi^\lambda_\mu\overline{\chi^{\lambda'}_\mu} = n!\,\delta_{\lambda\lambda'}, \qquad \sum_{\lambda\vdash n}\chi^\lambda_\mu\overline{\chi^\lambda_\nu} = \frac{n!}{\lvert C_\mu\rvert}\delta_{\mu\nu}\;},
 $$
 
 the row and column orthogonality relations.
@@ -109,7 +109,7 @@ with $K_{\mu\lambda}$ the Kostka number, the number of semistandard tableaux of 
 **Theorem (Murnaghan–Nakayama).** Let $\lambda \vdash n$ and let $\mu = (\mu_1,\ldots,\mu_k)$ be a partition. Then
 
 $$
-\chi^\lambda_\mu = \sum_{\xi}(-1)^{\operatorname{ht}(\xi)},
+\boxed{\;\chi^\lambda_\mu = \sum_{\xi}(-1)^{\operatorname{ht}(\xi)}\;},
 $$
 
 the sum over all ways to remove from $\lambda$ a rim hook $\xi$ of size $\mu_1$ such that the remaining diagram is the diagram of a partition $\lambda^-$ with $\chi^{\lambda^-}_{(\mu_2,\ldots,\mu_k)} \neq 0$, each removal weighted by its sign.

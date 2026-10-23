@@ -100,7 +100,7 @@ the infimum and the supremum being taken in $[0,\infty]$, with the convention th
 **Theorem (comparison).** For every bounded set $E$,
 
 $$
-\dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E ,
+\boxed{\;\dim_H E \leq \underline{\dim}_B E \leq \overline{\dim}_B E\;} ,
 $$
 
 and the inequalities can be strict on both sides. The Hausdorff dimension is countably stable and the box dimension is not; equality holds for the self-similar sets satisfying the open set condition, below.
@@ -142,7 +142,7 @@ where the union is over the words of length $k$.
 **Theorem (Moran, Hutchinson).** Let $f_1,\ldots,f_m$ be a self-similar IFS on $\mathbb{R}^n$ satisfying the open set condition. Then
 
 $$
-\dim_H \Lambda = \dim_B \Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1 ,
+\boxed{\;\dim_H \Lambda = \dim_B \Lambda = s, \qquad \sum_{i=1}^m r_i^{\,s} = 1\;} ,
 $$
 
 and $0 < \mathcal{H}^s(\Lambda) < \infty$.
@@ -196,7 +196,7 @@ Dimension, cardinality and topological dimension are three independent invariant
 **Theorem (the dimension of a product).** For Borel sets in Euclidean space,
 
 $$
-\dim_H(E_1\times E_2) \geq \dim_H E_1 + \dim_H E_2 , \qquad \dim_H(E_1\times E_2) \leq \dim_H E_1 + \overline{\dim}_B E_2 ,
+\boxed{\;\dim_H(E_1\times E_2) \geq \dim_H E_1 + \dim_H E_2 , \qquad \dim_H(E_1\times E_2) \leq \dim_H E_1 + \overline{\dim}_B E_2\;} ,
 $$
 
 and the second inequality can be strict when the box dimension of $E_2$ exceeds its Hausdorff dimension; the box dimension satisfies $\overline{\dim}_B(E_1\times E_2) \leq \overline{\dim}_B E_1 + \overline{\dim}_B E_2$.

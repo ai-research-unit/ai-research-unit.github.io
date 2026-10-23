@@ -38,7 +38,7 @@ The **unsigned sandwich** is $\Sigma_{a,b} = \Sigma^{\mathrm{id}}_{a,b}$. The op
 **Proposition (decomposition and additivity).** The signed sandwich is the composite
 
 $$
-\Sigma^\alpha_{a,b} = L_a \circ \alpha \circ R_{\alpha(b)} ,
+\boxed{\;\Sigma^\alpha_{a,b} = L_a \circ \alpha \circ R_{\alpha(b)}\;} ,
 $$
 
 it is additive, and it is continuous whenever $\alpha$ is; in particular it lies in $\operatorname{End}_c(R)$. The signed sandwich is the unsigned sandwich followed by the grade involution,
@@ -66,7 +66,7 @@ $$
 **Theorem (the signed sandwich group).** The signed sandwiches with both parameters in $R^\times$ are exactly the invertible signed sandwiches, they form a group $\Sigma^\alpha(R^\times)$ under composition, and the map
 
 $$
-R^\times \times R^\times \longrightarrow \Sigma^\alpha(R^\times), \qquad (a, b) \longmapsto \Sigma^\alpha_{a,b} ,
+\boxed{\;R^\times \times R^\times \longrightarrow \Sigma^\alpha(R^\times), \qquad (a, b) \longmapsto \Sigma^\alpha_{a,b}\;} ,
 $$
 
 is a surjective group homomorphism whose kernel is
@@ -82,7 +82,7 @@ the set of units inducing the grade involution. This kernel is trivial when $\al
 **Corollary (the parametrisation of the reflections).** The signed sandwiches $\rho_u = \Sigma^\alpha_{u,u^{-1}}$ for $u \in R^\times$ are the **signed conjugations**; they satisfy the composition law $\rho_u\rho_v = \Sigma^\alpha_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$ and they are involutions exactly when $u\alpha(u)$ is central, because
 
 $$
-\rho_u^2 = \Sigma^\alpha_{u\alpha(u),\,\alpha(u^{-1})u^{-1}} = c_{u\alpha(u)},
+\boxed{\;\rho_u^2 = \Sigma^\alpha_{u\alpha(u),\,\alpha(u^{-1})u^{-1}} = c_{u\alpha(u)}\;},
 $$
 
 and $c_{u\alpha(u)} = \mathrm{id}$ exactly when $u\alpha(u) \in Z(R)$.

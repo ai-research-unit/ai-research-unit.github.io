@@ -89,7 +89,7 @@ $$
 and iterating,
 
 $$
-P_k = \bigoplus_{j=0}^{\lfloor k/2\rfloor} r^{2j}\,\mathcal{H}_{k-2j} .
+\boxed{\;P_k = \bigoplus_{j=0}^{\lfloor k/2\rfloor} r^{2j}\,\mathcal{H}_{k-2j}\;} .
 $$
 
 *Proof.* Put $m = k - 2$ and filter $P_m$ by the submodules $F_j = r^{2j}P_{m-2j}$, $j \geq 0$, a descending chain with $F_0 = P_m$ and $F_j = 0$ for $2j > m$. The operator
@@ -131,7 +131,7 @@ The images of the layers are the **spherical harmonics**. The elements of $\math
 **Theorem.** Let $\Delta_{S}$ be the Laplace–Beltrami operator of $S^{n-1}$. For $f \in \mathcal{H}_k$,
 
 $$
-\Delta_S f = -k(k + n - 2)\, f .
+\boxed{\;\Delta_S f = -k(k + n - 2)\, f\;} .
 $$
 
 *Proof.* In polar coordinates the Euclidean Laplacian is $\Delta = \partial^2/\partial r^2 + \frac{n-1}{r}\partial/\partial r + \frac{1}{r^2}\Delta_S$. For a homogeneous harmonic $f$ of degree $k$ one has $\partial^2/\partial r^2 f = k(k-1)r^{k-2}f^{\mathrm{res}}$ and $\frac{n-1}{r}\partial/\partial r f = (n-1)k r^{k-2}f^{\mathrm{res}}$, where $f^{\mathrm{res}} = f|_{S^{n-1}}$. Hence
@@ -197,7 +197,7 @@ with $\cos\gamma = \cos\theta\cos\theta' + \sin\theta\sin\theta'\cos(\phi - \phi
 **Theorem.** For $k \geq 2$,
 
 $$
-\dim\mathcal{H}_k = \binom{n+k-1}{k} - \binom{n+k-3}{k-2} = \frac{(2k+n-2)\,(k+n-3)!}{k!\,(n-2)!} ,
+\boxed{\;\dim\mathcal{H}_k = \binom{n+k-1}{k} - \binom{n+k-3}{k-2} = \frac{(2k+n-2)\,(k+n-3)!}{k!\,(n-2)!}\;} ,
 $$
 
 while $\dim\mathcal{H}_0 = 1$ and $\dim\mathcal{H}_1 = n$.

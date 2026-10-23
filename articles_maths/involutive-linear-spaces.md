@@ -35,7 +35,7 @@ $$
 are operators with $P_+^2 = P_+$, $P_-^2 = P_-$, $P_+ + P_- = \mathrm{id}$ and $P_+P_- = P_-P_+ = 0$, and
 
 $$
-V = V_+ \oplus V_-, \qquad V_+ = \ker(T - \mathrm{id}), \qquad V_- = \ker(T + \mathrm{id}),
+\boxed{\;V = V_+ \oplus V_-, \qquad V_+ = \ker(T - \mathrm{id}), \qquad V_- = \ker(T + \mathrm{id})\;},
 $$
 
 with $T$ acting as $+\mathrm{id}$ on $V_+$ and as $-\mathrm{id}$ on $V_-$. Conversely $T = P_+ - P_-$.
@@ -81,7 +81,7 @@ both square to the identity matrix. The matrix $T$ has trace $0$ and determinant
 **Proposition.** Let $2 \neq 0$ in $F$ and let $T$ be a linear involution of $V$ of type $(n,m)$, so that $n = p + q$. Then
 
 $$
-\operatorname{tr}T = p - q, \qquad \det T = (-1)^m, \qquad \operatorname{rk}(T - \mathrm{id}) = q, \qquad \operatorname{rk}(T + \mathrm{id}) = p ,
+\boxed{\;\operatorname{tr}T = p - q, \qquad \det T = (-1)^m, \qquad \operatorname{rk}(T - \mathrm{id}) = q, \qquad \operatorname{rk}(T + \mathrm{id}) = p\;} ,
 $$
 
 and the minimal polynomial of $T$ divides $x^2 - 1$. Moreover $T$ is diagonalisable, and its eigenvalues are $1$ with multiplicity $n$ and $-1$ with multiplicity $m$.
@@ -103,7 +103,7 @@ and the minimal polynomial of $T$ divides $x^2 - 1$. Moreover $T$ is diagonalisa
 an operator commuting with $T$ is exactly one preserving each of the two summands, and conversely; equivalently
 
 $$
-\{U \in \operatorname{GL}(V) : UT = TU\} = \operatorname{GL}(V_+) \times \operatorname{GL}(V_-) .
+\boxed{\;\{U \in \operatorname{GL}(V) : UT = TU\} = \operatorname{GL}(V_+) \times \operatorname{GL}(V_-)\;} .
 $$
 
 The orbit of $T$ is therefore in bijection with the set of cosets

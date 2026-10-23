@@ -56,7 +56,7 @@ is a unital algebra homomorphism; together with the counit $\varepsilon(g)=1$ an
 *Proof.* Let $V$ be a representation and let $W \subseteq V$ be an invariant subspace. Choose any $F$-linear projection $\pi: V \to W$ and average it over the group,
 
 $$
-\bar\pi=\frac{1}{|G|}\sum_{g \in G}\rho(g)\,\pi\,\rho(g)^{-1},
+\boxed{\;\bar\pi=\frac{1}{|G|}\sum_{g \in G}\rho(g)\,\pi\,\rho(g)^{-1}\;},
 $$
 
 the factor $|G|^{-1}$ existing because $\operatorname{char} F \nmid |G|$. Then $\bar\pi$ is $F$-linear and $G$-equivariant, since conjugation by any $\rho(h)$ permutes the terms of the sum, and its restriction to $W$ is the identity, because $W$ is invariant and $\pi$ fixes $W$ pointwise. Hence $\bar\pi$ is an $F[G]$-linear projection of $V$ onto $W$, so that $V=W\oplus\ker\bar\pi$; every submodule of every module is therefore a direct summand, and every representation is completely reducible by *Simple and Semisimple Modules*. Applying this to the regular module gives that $F[G]$ is semisimple.
@@ -116,7 +116,7 @@ $$
 **Theorem (First orthogonality).** Let $\chi_i,\chi_j$ be the characters of two irreducible complex representations. Then
 
 $$
-\langle \chi_i, \chi_j \rangle_G=\delta_{ij}.
+\boxed{\;\langle \chi_i, \chi_j \rangle_G=\delta_{ij}\;}.
 $$
 
 *Proof.* For irreducible $V_i,V_j$, the space $\operatorname{Hom}_{\mathbb{C}}(V_j,V_i)$ carries the action $g\cdot T=\rho_i(g)T\rho_j(g)^{-1}$, and averaging over $G$ with the factor $|G|^{-1}$ projects onto the invariants, which are $\operatorname{Hom}_G(V_j,V_i)$ by Schur's lemma. Computing the trace of the averaging operator and using Schur's lemma for the case $i=j$ gives the result; this is the standard unitary trick, and it is the statement that the matrix coefficients of the irreducible representations form an orthogonal basis of the space of functions on $G$, with the factorization
@@ -130,7 +130,7 @@ where for $i=j$ the operator $P_i$ is the flip $v\otimes w\mapsto w\otimes v$ of
 **Theorem (Second orthogonality).** Let $\mathcal{C}$ be a conjugacy class of $G$ and let $g \in \mathcal{C}$. Then for representatives $g,h$ of classes,
 
 $$
-\sum_{i=1}^{r}\chi_i(g)\overline{\chi_i(h)}=\begin{cases} \dfrac{|G|}{|\mathcal{C}|}=|C_G(g)|, & g \sim h,\\[4pt] 0, & g \nsim h,\end{cases}
+\boxed{\;\sum_{i=1}^{r}\chi_i(g)\overline{\chi_i(h)}=\begin{cases} \dfrac{|G|}{|\mathcal{C}|}=|C_G(g)|, & g \sim h,\\[4pt] 0, & g \nsim h,\end{cases}\;}
 $$
 
 where $C_G(g)$ is the centralizer of $g$ and $|\mathcal{C}|=|G|/|C_G(g)|$ is the size of the class.

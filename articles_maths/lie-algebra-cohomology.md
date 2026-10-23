@@ -106,7 +106,7 @@ with $\partial_n(u\otimes x_1\wedge\cdots\wedge x_n) = \sum_i(-1)^{i+1}ux_i\otim
 **Theorem (standard).** The standard resolution is a free resolution of $k$ over $\mathrm{U}(\mathrm{G})$, so that for every $\mathrm{G}$-module $M$
 
 $$
-H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M), \qquad H_n(\mathrm{G};M)\cong\operatorname{Tor}_n^{\mathrm{U}(\mathrm{G})}(k,M),
+\boxed{\;H^n(\mathrm{G};M)\cong\operatorname{Ext}^n_{\mathrm{U}(\mathrm{G})}(k,M), \qquad H_n(\mathrm{G};M)\cong\operatorname{Tor}_n^{\mathrm{U}(\mathrm{G})}(k,M)\;},
 $$
 
 where the homology of the complex $\Lambda_\bullet\mathrm{G}\otimes M$ with the boundary obtained from the same formula computes the Tor groups; the functoriality in $\mathrm{G}$ and in $M$ matches on both sides, and every short exact sequence $0\to M'\to M\to M''\to0$ of $\mathrm{G}$-modules gives a long exact sequence of cohomology groups.
@@ -122,7 +122,7 @@ where the homology of the complex $\Lambda_\bullet\mathrm{G}\otimes M$ with the 
 **Theorem (Whitehead's first and second lemmas, standard).** Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra over a field $k$ of characteristic zero and let $M$ be a finite-dimensional $\mathrm{G}$-module. Then
 
 $$
-H^1(\mathrm{G};M) = 0, \qquad H^2(\mathrm{G};M) = 0 .
+\boxed{\;H^1(\mathrm{G};M) = 0, \qquad H^2(\mathrm{G};M) = 0\;} .
 $$
 
 Consequently every derivation of $\mathrm{G}$ with values in $M$ is inner, every extension of Lie algebras with finite-dimensional kernel splits — this is the theorem of Levi — and every finite-dimensional representation of $\mathrm{G}$ is completely reducible from the cohomological point of view: $\operatorname{Ext}^1_{\mathrm{U}(\mathrm{G})}(k,M) = 0$.
@@ -184,7 +184,7 @@ the **Killing form three-cocycle**: it is alternating, it satisfies $(d\omega)(x
 **Proposition.** Let $\mathrm{G}$ be a Lie algebra over $k$. Then
 
 $$
-H^1(\mathrm{G};\mathrm{G})\cong\operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G}),
+\boxed{\;H^1(\mathrm{G};\mathrm{G})\cong\operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G})\;},
 $$
 
 the **outer derivations** of $\mathrm{G}$, which is zero when $\mathrm{G}$ is semisimple of characteristic zero, and is the space of the "infinitesimal automorphisms modulo the inner ones" in general; the group $H^2(\mathrm{G};\mathrm{G})$ is the space of the **infinitesimal deformations** of $\mathrm{G}$ up to equivalence.

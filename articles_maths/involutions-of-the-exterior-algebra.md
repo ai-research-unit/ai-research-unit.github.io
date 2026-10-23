@@ -44,7 +44,7 @@ $$
 and the **reversal** is the composite $\alpha r$. On a homogeneous element of degree $k$,
 
 $$
-r(x)=(-1)^{k(k-1)/2}x,\qquad \alpha r(x)=(-1)^{k(k+1)/2}x .
+\boxed{\;r(x)=(-1)^{k(k-1)/2}x,\qquad \alpha r(x)=(-1)^{k(k+1)/2}x\;} .
 $$
 
 **Proof.** Reversing the order of $k$ factors takes $k(k-1)/2$ transpositions of neighbours, each contributing $-1$ by the graded commutativity of the wedge product; composing with $\alpha$ adds the sign $(-1)^k$, and $k(k-1)/2+k=k(k+1)/2$.

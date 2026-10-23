@@ -27,7 +27,7 @@ which carries the Cauchy product of sequences to the product of power series. Th
 
 **Theorem (the local decomposition).** The map
 $$
-E:\bigoplus\nolimits'_p\mathcal{A}_p\to\mathcal{A},\qquad E((f_p)_p)(n)=\prod_{p^r\parallel n}f_p(p^r),
+\boxed{\;E:\bigoplus\nolimits'_p\mathcal{A}_p\to\mathcal{A},\qquad E((f_p)_p)(n)=\prod_{p^r\parallel n}f_p(p^r)\;},
 $$
 is an isomorphism of algebras, and it is the **Euler product operator**. Its inverse is the factorisation $f\mapsto(f_p)_p$ with $f_p(p^r)=f(p^r)$. In particular every multiplicative function is $E$ of its local data, and $E$ is multiplicative: $E((f_p)*(g_p))=E((f_p))\, E((g_p))$.
 
@@ -45,7 +45,7 @@ so the Euler product is not an equality to be proved at each $s$ but the definit
 
 **Theorem (Euler).** Let $f$ be multiplicative with $|f(n)|\le Cn^{\sigma_0}$ for some $C>0$ and real $\sigma_0$. Then the Euler product
 $$
-\prod_pL_p(f,s)=\prod_p\Bigl(\sum_{r\ge0}f(p^r)p^{-rs}\Bigr)
+\boxed{\;\prod_pL_p(f,s)=\prod_p\Bigl(\sum_{r\ge0}f(p^r)p^{-rs}\Bigr)\;}
 $$
 converges absolutely and locally uniformly in $\Re s>\sigma_0+1$, and its value is $L(f,s)=\sum_nf(n)n^{-s}$. The product converges conditionally for $\Re s>\sigma_0$ in the cases where the local sums stay bounded away from $0$.
 
@@ -71,7 +71,7 @@ of operator algebras, under which $\prod_pM_{f_p}$ goes to the tensor product of
 
 **Theorem.** For $f=E((f_p)_p)$ multiplicative and $n=\prod_{i=1}^kp_i^{r_i}$,
 $$
-f(n)=\prod_{i=1}^kf_{p_i}(p_i^{r_i}),\qquad f(1)=1,
+\boxed{\;f(n)=\prod_{i=1}^kf_{p_i}(p_i^{r_i}),\qquad f(1)=1\;},
 $$
 and the Dirichlet series of $f$ is the absolutely convergent product. Conversely, if $L(f,s)=\prod_pG_p(s)$ with each $G_p$ a power series in $p^{-s}$ with constant term $1$ and the product absolutely convergent in a half-plane, then $f$ is multiplicative and $G_p=L_p(f,\cdot)$.
 

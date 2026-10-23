@@ -28,7 +28,7 @@ $$
 **Proposition.** In the Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ the reflection is the restriction to the vectors of the signed inner conjugation by $a$,
 
 $$
-\rho_a(v) = a\,\alpha(v)\,a^{-1}, \qquad v \in V,
+\boxed{\;\rho_a(v) = a\,\alpha(v)\,a^{-1}, \qquad v \in V\;},
 $$
 
 while the unsigned inner conjugation is its negative, $uvu^{-1} = -\rho_a(v)$; the vector $a$ satisfies $a^2 = \mathfrak{Q}(a)$ and $a^{-1} = \mathfrak{Q}(a)^{-1}a$, and the conjugation by $a$ is the reflection up to the sign of the grade involution.
@@ -44,7 +44,7 @@ while the unsigned inner conjugation is its negative, $uvu^{-1} = -\rho_a(v)$; t
 **Theorem (the reflection is self-adjoint).** The adjoint of the reflection with respect to the form is the reflection itself,
 
 $$
-\rho_a^{*} = \rho_a^{-1} = \rho_a, \qquad \langle \rho_a v, w\rangle = \langle v, \rho_a w\rangle \ \text{for all } v, w,
+\boxed{\;\rho_a^{*} = \rho_a^{-1} = \rho_a, \qquad \langle \rho_a v, w\rangle = \langle v, \rho_a w\rangle \ \text{for all } v, w\;},
 $$
 
 so the reflection is both unitary and **Hermitian** (self-adjoint); in the notation of the operator involution it is a unitary element fixed by the adjoint.
@@ -56,7 +56,7 @@ so the reflection is both unitary and **Hermitian** (self-adjoint); in the notat
 **Proposition.** The self-adjoint unitary elements of $G$ are exactly the **involutions** of $G$,
 
 $$
-\{g \in G : g^{*} = g^{-1} = g\} = \{g \in G : g^2 = \mathrm{id}\},
+\boxed{\;\{g \in G : g^{*} = g^{-1} = g\} = \{g \in G : g^2 = \mathrm{id}\}\;},
 $$
 
 and a reflection is the involutive isometry whose fixed space is a hyperplane; an involution that fixes a subspace of codimension greater than one is a product of commuting reflections and is self-adjoint without being a single reflection.

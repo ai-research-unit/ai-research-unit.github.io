@@ -21,7 +21,7 @@ defined on the distributions $f$ for which the convolution with $E$ is defined: 
 **Theorem (the inverse property).** Let $E$ be a fundamental solution of the constant-coefficient operator $L$. Then
 
 $$
-L\,T_E = I \ \text{on } \mathcal{E}'(\mathbb{R}^n), \qquad T_E\,L = I \ \text{on } C_c^\infty(\mathbb{R}^n) ,
+\boxed{\;L\,T_E = I \ \text{on } \mathcal{E}'(\mathbb{R}^n), \qquad T_E\,L = I \ \text{on } C_c^\infty(\mathbb{R}^n)\;} ,
 $$
 
 the second identity meaning that $E*(Lf)=f$ for every compactly supported smooth $f$; more generally $T_EL=I$ on every space on which the convolution with $E$ and with $Lf$ is defined and on which the fundamental solution is admissible.
@@ -67,7 +67,7 @@ using the constant coefficients to move $L_2$ onto $E_2$ and the convolution wit
 **Theorem (the Fourier multiplier).** Let $L$ have constant coefficients with symbol $\sigma_L(\xi)$, and let $E$ be a tempered fundamental solution. On the Schwartz space,
 
 $$
-\widehat{T_E f}(\xi) = \frac{(\mathcal F f)(\xi)}{\sigma_L(\xi)} ,
+\boxed{\;\widehat{T_E f}(\xi) = \frac{(\mathcal F f)(\xi)}{\sigma_L(\xi)}\;} ,
 $$
 
 in the sense that the distribution $1/\sigma_L(\xi)$ is the Fourier transform of $E$ and multiplication by it is the action of $T_E$; the operator $T_E$ is the **Fourier multiplier** by $1/\sigma_L$.
@@ -129,7 +129,7 @@ where $S$ is a **smoothing operator**: $S$ maps the compactly supported distribu
 **Theorem (approximate inversion).** Let $E$ be a properly supported parametrix of $L$. Then
 
 $$
-L\,T_E = I - S , \qquad T_E\,L = I - S' ,
+\boxed{\;L\,T_E = I - S , \qquad T_E\,L = I - S'\;} ,
 $$
 
 where $S$ and $S'$ are smoothing operators, and on every Sobolev space of finite order the operators $S$ and $S'$ are compact. Consequently $L$ is **Fredholm** on the Sobolev scale: it has finite-dimensional kernel and cokernel, and $Lu=f$ is solvable exactly when $f$ is orthogonal to the kernel of the formal adjoint.

@@ -34,7 +34,7 @@ Throughout, $(F, v)$ is a non-Archimedean field with value group $\Gamma$, valua
 **Theorem (the residue involution over an arbitrary residue field).** Let $\sigma$ be isometric. Then $\bar\sigma$ is a well-defined order-two operator on the residue field $k = \mathcal{O}/\mathrm{M}$, additive and reversing the product,
 
 $$
-\bar\sigma(x + \mathrm{M}) = \sigma(x)+\mathrm{M} ,
+\boxed{\;\bar\sigma(x + \mathrm{M}) = \sigma(x)+\mathrm{M}\;} ,
 $$
 
 and its fixed field is the residue field of the fixed field, $k^{\bar\sigma} = k_{F^\sigma}$; the residue field $k$ may be of positive characteristic and imperfect, and $\bar\sigma$ is then an order-two operator on a possibly imperfect field, not necessarily the identity on the constants.

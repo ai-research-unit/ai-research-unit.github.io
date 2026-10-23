@@ -56,7 +56,7 @@ $$
 the number of times the simple module $S_j$ occurs in a composition series of the reduction, and the **decomposition matrix** is the matrix $D = (d_{\chi j})$ with the ordinary irreducible characters as rows and the simple modular modules as columns; the decomposition is independent of the choice of the integral form, and the reduction is compatible with the Brauer character in the sense that
 
 $$
-\chi(g) = \sum_jd_{\chi j}\,\varphi_j(g) \qquad\text{for every } p\text{-regular } g\in G .
+\boxed{\;\chi(g) = \sum_jd_{\chi j}\,\varphi_j(g) \qquad\text{for every } p\text{-regular } g\in G\;} .
 $$
 
 The existence of the integral form and the independence of the reduction are not covered here.
@@ -68,7 +68,7 @@ The existence of the integral form and the independence of the reduction are not
 3. if $\varphi_1,\dots,\varphi_r$ are the Brauer characters of the simple modules and $\chi_1,\dots,\chi_s$ the ordinary irreducible characters, then the matrix $D$ has rank $r$, and the relations $\sum_\chi d_{\chi i}d_{\chi j} = c_{ij}$ define the **Cartan matrix** $C = D^{\mathsf{T}}D$, whose entries are the multiplicities of the simple modules in the projective indecomposables:
 
 $$
-c_{ij} = \bigl[P_i : S_j\bigr] = \bigl[P_j : S_i\bigr].
+\boxed{\;c_{ij} = \bigl[P_i : S_j\bigr] = \bigl[P_j : S_i\bigr]\;}.
 $$
 
 *Proof (outline).* The first two assertions are the standard properties of the reduction; the third is the computation of the multiplicities of the composition factors of the projective modules: the multiplicity of $S_j$ in $P_i$ is the multiplicity of $S_i$ in $P_j$, by the symmetry of the algebra, and it equals $\sum_\chi d_{\chi i}d_{\chi j}$ by counting the occurrences of the ordinary constituents of $k[G]$ through the decomposition matrix. The details are the standard theory of Brauer and are recorded in the references.

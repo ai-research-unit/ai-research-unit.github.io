@@ -14,7 +14,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ and $H$ is a Hilbert sp
 **Theorem (existence and the defining properties).** For every $T \in B(H)$ there is a unique $T^{*} \in B(H)$ with
 
 $$
-\langle Tx, y\rangle = \langle x, T^{*}y\rangle \qquad (x, y \in H),
+\boxed{\;\langle Tx, y\rangle = \langle x, T^{*}y\rangle \qquad (x, y \in H)\;},
 $$
 
 and $\lVert T^{*}\rVert = \lVert T\rVert$, $(S+T)^{*} = S^{*}+T^{*}$, $(\lambda T)^{*} = \overline{\lambda}T^{*}$, $(\mathrm{id})^{*} = \mathrm{id}$ and $T^{**} = T$.
@@ -34,7 +34,7 @@ so $T \mapsto T^{*}$ is an involutive anti-automorphism of $B(H)$: it reverses p
 **Proposition (the $C^{*}$-identity).** For every $T \in B(H)$,
 
 $$
-\lVert T^{*}T\rVert = \lVert T\rVert^{2} ,
+\boxed{\;\lVert T^{*}T\rVert = \lVert T\rVert^{2}\;} ,
 $$
 
 and this identity exhibits $B(H)$ as a $C^{*}$-algebra for the adjoint involution.
@@ -66,7 +66,7 @@ so the Hilbert adjoint is the transpose of *The Dual Operator* conjugated by the
 **Proposition (the spectrum transforms by conjugation).** For $T \in B(H)$,
 
 $$
-\sigma(T^{*}) = \overline{\sigma(T)} ,
+\boxed{\;\sigma(T^{*}) = \overline{\sigma(T)}\;} ,
 $$
 
 and $T$ is invertible exactly when $T^{*}$ is, with $(T^{-1})^{*} = (T^{*})^{-1}$; the involution therefore preserves invertibility and the unitary group.

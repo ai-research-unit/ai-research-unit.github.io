@@ -115,7 +115,9 @@ Since the centre is central and the four subspaces are the fixed spaces of invol
 The entries are read off the expansions of the product. For $\tilde{Q}_1 = Q_{1t} e_t + j\vec Q_1$ and $\tilde{Q}_2 = Q_{2t} e_t + j\vec Q_2$ in $\mathbb{M}_+$,
 
 $$
-\tilde{Q}_1\tilde{Q}_2 = Q_{1t} Q_{2t} - \vec Q_1\cdot\vec Q_2 + \vec Q_1\times\vec Q_2 + j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1),
+\boxed{\;
+\tilde{Q}_1\tilde{Q}_2 = Q_{1t} Q_{2t} - \vec Q_1\cdot\vec Q_2 + \vec Q_1\times\vec Q_2 + j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1)
+\;},
 $$
 
 which has real scalar part, real vector part $\vec Q_1\times\vec Q_2$ and split-imaginary vector part $j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\vec Q_1\times\vec Q_2$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec Q_1\times\vec Q_2$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
@@ -144,7 +146,9 @@ For an arbitrary element, $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ is Hermitian
 For the element $\tilde{Q} = (1 + j) + \vec e_x + j\vec e_y$ the four coordinate blocks are the real scalar part $1$, the split-imaginary scalar part $j$, the real vector part $\vec e_x$ and the split-imaginary vector part $j\vec e_y$. Its Hermitian conjugate is $\tilde{Q}^{*} = (1 - j) - \vec e_x + j\vec e_y$, so
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 + j\vec e_y \in \mathbb{M}_+, \qquad \tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*}) = j + \vec e_x \in \mathbb{M}_-,
+\boxed{\;
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 + j\vec e_y \in \mathbb{M}_+, \qquad \tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*}) = j + \vec e_x \in \mathbb{M}_-
+\;},
 $$
 
 the two parts lying in the two sectors of the Hermitian decomposition, as the general statement requires.

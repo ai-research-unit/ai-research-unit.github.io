@@ -36,7 +36,7 @@ equivalently on a monomial $\sigma(x_1\cdots x_n)=(-1)^n x_n\cdots x_1$.
 **Definition.** The **star structure** of the enveloping algebra attached to the involution $\theta$ is the anti-involution
 
 $$
-{}^{*}=\tau=\Theta\circ\sigma,\qquad x^{*}=-\theta(x)\ (x\in\mathrm{G}),
+\boxed{\;{}^{*}=\tau=\Theta\circ\sigma,\qquad x^{*}=-\theta(x)\ (x\in\mathrm{G})\;},
 $$
 
 and the **unitary elements** are those with $u^{*}u=uu^{*}=1$.

@@ -14,7 +14,7 @@ The article is the third of the `* Operator Theory` group of this category. It a
 **Definition.** An **involution** of $E$ is an $R$-linear map $\theta : E \to E$ with
 
 $$
-\theta^{2}=\mathrm{id}, \qquad \theta(fg)=\theta(g)\theta(f) \qquad (f,g \in E),
+\boxed{\;\theta^{2}=\mathrm{id}, \qquad \theta(fg)=\theta(g)\theta(f) \qquad (f,g \in E)\;},
 $$
 
 that is, an $R$-linear anti-automorphism of order two. The pair $(E,\theta)$ is an involutive $R$-algebra.
@@ -90,7 +90,7 @@ The identity involution of a commutative $E$ is not a pairing involution in gene
 **Theorem.** Let $\theta$ be a pairing involution. Then
 
 $$
-\operatorname{Fix}(\theta)=\operatorname{Sym}(M)
+\boxed{\;\operatorname{Fix}(\theta)=\operatorname{Sym}(M)\;}
 $$
 
 is an $R$-submodule closed under the Jordan product $f\bullet g=\frac12(fg+gf)$ and under the square, and containing the identity. It is a unital special Jordan subalgebra of $E$.

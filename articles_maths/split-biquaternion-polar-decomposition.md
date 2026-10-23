@@ -301,7 +301,9 @@ $$
 such that
 
 $$
-\tilde{Q} = \rho\,\tilde{U} ,
+\boxed{\;
+\tilde{Q} = \rho\,\tilde{U}
+\;},
 $$
 
 and the modulus $\rho$ is unique: it is the componentwise non-negative square root of the split-biquaternion norm. The rotor $\tilde{U}$ is unique if and only if $\tilde{Q}$ is invertible, equivalently if and only if both idempotent components of $\tilde{Q}$ are nonzero; if one component vanishes, the corresponding factor of $\tilde{U}$ is arbitrary, and if $\tilde{Q} = 0$ both factors are arbitrary.
@@ -516,7 +518,9 @@ $$
 so it reverses both angles and keeps both axes. The split complex conjugation exchanges the two halves of every factor,
 
 $$
-\bar{\tilde{Q}} = \bar{\rho}\bar{\tilde{U}} , \qquad \bar{\rho} = \rho_-\tilde\Pi_1 + \rho_+\tilde\Pi_2 , \qquad \bar{\tilde{U}} = \tilde u_-\tilde\Pi_1 + \tilde u_+\tilde\Pi_2 ,
+\boxed{\;
+\bar{\tilde{Q}} = \bar{\rho}\bar{\tilde{U}} , \qquad \bar{\rho} = \rho_-\tilde\Pi_1 + \rho_+\tilde\Pi_2 , \qquad \bar{\tilde{U}} = \tilde u_-\tilde\Pi_1 + \tilde u_+\tilde\Pi_2
+\;},
 $$
 
 so it exchanges the two component moduli, sends $\tau$ to $-\tau$, keeps $\lambda$, and exchanges the halves of the rotor. The Hermitian conjugation does both,
@@ -620,7 +624,9 @@ both verified to machine precision. The fibre of the exponential over $e_t$ acco
 **Theorem.** An element of $\mathbb{H}_{\mathbb{D}}$ is the exponential of an element of the algebra exactly when it is invertible, and for an invertible element the polar decomposition is the exponential of a single element,
 
 $$
-\tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right) ,
+\boxed{\;
+\tilde{Q} = \exp\left(\ln\lambda + j\tau + \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\right)
+\;},
 $$
 
 whose argument is the sum of the argument of the modulus, $\log\rho = \ln\lambda + j\tau$, and the argument of the rotor, $\log\tilde{U} = \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$.

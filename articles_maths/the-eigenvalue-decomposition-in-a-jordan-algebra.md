@@ -29,7 +29,7 @@ The base is a field $k$ of characteristic not two, $J$ is a finite-dimensional u
 **Proposition.** Let $m_x$ be the monic generator of the ideal $\{p\in k[t]:p(x)=0\}$, the **minimal polynomial** of $x$. Then
 
 $$
-\lambda\in\sigma(x) \quad\Longleftrightarrow\quad m_x(\lambda)=0 .
+\boxed{\;\lambda\in\sigma(x) \quad\Longleftrightarrow\quad m_x(\lambda)=0\;} .
 $$
 
 *Proof.* The evaluation map $k[t]\to k[x]$, $p\mapsto p(x)$, has kernel $(m_x)$ and induces an isomorphism $k[x]\cong k[t]/(m_x)$. Under it the element $x-\lambda1$ corresponds to the class of $t-\lambda$. That class is invertible in $k[t]/(m_x)$ exactly when $t-\lambda$ is coprime to $m_x$, that is, exactly when $m_x(\lambda)\neq0$. Hence non-invertibility is the vanishing of $m_x$ at $\lambda$.
@@ -113,7 +113,7 @@ The uniqueness is the uniqueness of the Lagrange interpolation: if $x=\sum_i\lam
 **Theorem.** Let $J$ be a finite-dimensional formally real Jordan algebra over $\mathbb{R}$. Then every $x\in J$ has a spectral resolution
 
 $$
-x=\sum_{i=1}^{r}\lambda_i e_i
+\boxed{\;x=\sum_{i=1}^{r}\lambda_i e_i\;}
 $$
 
 with $\lambda_i\in\mathbb{R}$ and $e_i$ pairwise orthogonal idempotents. The eigenvalues are the roots of $m_x$, they are real and simple, and the resolution is unique up to the order of the terms.
@@ -127,7 +127,7 @@ with $\lambda_i\in\mathbb{R}$ and $e_i$ pairwise orthogonal idempotents. The eig
 **Corollary (spectral mapping).** For every polynomial $p\in\mathbb{R}[t]$,
 
 $$
-p(x)=\sum_{i=1}^{r}p(\lambda_i)e_i .
+\boxed{\;p(x)=\sum_{i=1}^{r}p(\lambda_i)e_i\;} .
 $$
 
 In particular $x^n=\sum_i\lambda_i^n e_i$ for $n\geq0$, with the convention $\lambda_i^0=1$ and $\sum_i e_i=1$. The spectral idempotent $e_i$ is the value at $x$ of the indicator polynomial that is $1$ at $\lambda_i$ and $0$ at the other eigenvalues.

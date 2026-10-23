@@ -23,7 +23,7 @@ $$
 **Proposition.** For all $x, y$ and all $\lambda \in R$,
 
 $$
-[x,y]_{\varsigma} = -[y,x]_{\varsigma} , \qquad [\lambda x, y]_{\varsigma} = \lambda [x,y]_{\varsigma} + \bigl(\lambda - \varsigma(\lambda)\bigr)(y \star x) ,
+\boxed{\;[x,y]_{\varsigma} = -[y,x]_{\varsigma} , \qquad [\lambda x, y]_{\varsigma} = \lambda [x,y]_{\varsigma} + \bigl(\lambda - \varsigma(\lambda)\bigr)(y \star x)\;} ,
 $$
 
 and consequently the bracket is linear over the fixed ring $R^{\varsigma}$ in each variable, and linear over all of $R$ exactly in the degenerate case $(\varsigma(\lambda) - \lambda)A = 0$ for every $\lambda$, the case in which the product of $A$ is bilinear.
@@ -51,7 +51,7 @@ so the antisymmetrisation carries $\lambda$ on one of its two terms and $\varsig
 **Theorem.** The Jacobi identity for the antisymmetrisation of the derived sesquilinear product fails in general. In $A = M_{2}(\mathbb{C})$ with the conjugate transpose, for $x = E_{11}$, $y = E_{22}$ and $z = E_{12}$,
 
 $$
-[[x,y]_{\varsigma}, z]_{\varsigma} + [[y,z]_{\varsigma}, x]_{\varsigma} + [[z,x]_{\varsigma}, y]_{\varsigma} = E_{21} - E_{12} \neq 0 .
+\boxed{\;[[x,y]_{\varsigma}, z]_{\varsigma} + [[y,z]_{\varsigma}, x]_{\varsigma} + [[z,x]_{\varsigma}, y]_{\varsigma} = E_{21} - E_{12} \neq 0\;} .
 $$
 
 **Proof.** The three inner brackets are
@@ -119,7 +119,7 @@ in which every term appears twice with opposite signs once the products are reas
 **Theorem (the commutator is graded by the involution).** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $H(A)$ and $S(A)$ be the Hermitian and the skew-Hermitian elements. Then
 
 $$
-[S,S] \subseteq S , \qquad [S,H] \subseteq H , \qquad [H,H] \subseteq S ,
+\boxed{\;[S,S] \subseteq S , \qquad [S,H] \subseteq H , \qquad [H,H] \subseteq S\;} ,
 $$
 
 so that $A$, as a Lie algebra over $R$ under the commutator, is **$\mathbb{Z}/2$-graded** with even part $S(A)$ and odd part $H(A)$, the degree of an element being $1$ on $H(A)$ and $0$ on $S(A)$. Moreover $[x,y]^{*} = -[x^{*},y^{*}]$: the involution reverses the commutator, so it is not an automorphism of the Lie algebra but a graded anti-automorphism, and the negation is a central correction.

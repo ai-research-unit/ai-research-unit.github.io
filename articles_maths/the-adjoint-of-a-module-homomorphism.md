@@ -48,7 +48,7 @@ The second display in the definition follows from the first by replacing $a$ wit
 **Theorem.** Let $\langle\cdot,\cdot\rangle$ be a non-degenerate pairing on the pairs $(M,M)$ and $(N,N)$, and let $f : M \to N$ be $A$-linear. Suppose that for every $n \in N$ the functional $m \mapsto \langle f(m),n\rangle$ is represented by an element of $M$; that is, there is $f^{*}(n) \in M$ with
 
 $$
-\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle \qquad (m \in M).
+\boxed{\;\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle \qquad (m \in M)\;}.
 $$
 
 Then $f^{*}(n)$ is unique, the assignment $n \mapsto f^{*}(n)$ is $A$-linear, and
@@ -66,7 +66,7 @@ When $M=N$ and the pairing is non-degenerate, the representing element always ex
 **Theorem.** For a perfect non-degenerate reflexive pairing, the adjoint is additive, anti-multiplicative, involutive and $R$-linear:
 
 $$
-(f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*}.
+\boxed{\;(f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*}\;}.
 $$
 
 *Proof.* Additivity and $R$-linearity follow from the defining identity and uniqueness. For the product, $\langle fg(m),n\rangle=\langle g(m),f^{*}(n)\rangle=\langle m,g^{*}(f^{*}(n))\rangle$, so $(fg)^{*}=g^{*}f^{*}$ by uniqueness. For order two, reflexivity gives $\langle f^{*}(n),m\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\varepsilon\langle f(m),n\rangle=\langle n,f(m)\rangle$, so $f$ represents the functional defining $(f^{*})^{*}$; uniqueness gives $(f^{*})^{*}=f$.
@@ -106,7 +106,7 @@ Both are submodules, the first of $N$ and the second of $M$.
 **Theorem.** For a homomorphism $f : M \to N$ with adjoint $f^{*} : N \to M$,
 
 $$
-\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}, \qquad \operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f).
+\boxed{\;\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}, \qquad \operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f)\;}.
 $$
 
 *Proof.* $f^{*}(n)=0$ means $\langle m,f^{*}(n)\rangle=0$ for all $m$, that is $\langle f(m),n\rangle=0$ for all $m$, which says $n \in (\operatorname{im}f)^{\mathrm{c}}$; this is the first identity. For the second, $\langle m,f^{*}(n)\rangle=\langle f(m),n\rangle$ vanishes for all $n$ exactly when $f(m) \in {}^{\mathrm{c}}N$, that is $m \in \ker f$, so ${}^{\mathrm{c}}(\operatorname{im}f^{*})=\ker f$; taking complements gives the identity.

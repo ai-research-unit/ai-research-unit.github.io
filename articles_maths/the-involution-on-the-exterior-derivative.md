@@ -34,7 +34,7 @@ extended linearly to all degrees; it is the transpose of the action of $\theta$ 
 **Theorem.** The exterior derivative equivaries with the induced involution:
 
 $$
-\Theta\,d=d\,\Theta .
+\boxed{\;\Theta\,d=d\,\Theta\;} .
 $$
 
 **Proof.** For a $p$-cochain $\omega$ and vectors $x_0,\dots,x_p$, the left side is $(d\omega)(\theta x_0,\dots,\theta x_p)$ and the right side is $d(\Theta\omega)(x_0,\dots,x_p)$. In the first sum the terms $x_i\cdot\omega(\dots)$ become $\theta x_i\cdot\omega(\theta\dots)$ and in the second sum the brackets become $[\theta x_i,\theta x_j]=\theta[x_i,x_j]$; the two expressions coincide term by term because $\theta$ is a Lie automorphism and the action of $\mathrm{G}$ on the cochains is the coadjoint one, transported by $\theta$.
@@ -52,7 +52,7 @@ $$
 **Theorem.** If $\mathrm{G}$ carries a nondegenerate symmetric bilinear form preserved by $\theta$, then the induced pairing on the cochains, extended multiplicatively, is invariant and nondegenerate, and the involution $\Theta$ is an **isometry**:
 
 $$
-\beta(\Theta\omega,\Theta\eta)=\beta(\omega,\eta).
+\boxed{\;\beta(\Theta\omega,\Theta\eta)=\beta(\omega,\eta)\;}.
 $$
 
 **Proof.** The form on $\mathrm{G}$ extends to $\Lambda^\bullet\mathrm{G}^{\ast}$ by the determinant-type rule on homogeneous elements; since $\theta$ preserves it on $\mathrm{G}$, its extension preserves the induced pairing on each degree, and multiplicativity gives the general case.

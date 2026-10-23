@@ -15,7 +15,7 @@ Only the topology and the real numbers are used, together with the intermediate 
 **Definition.** The **antipodal involution** of the sphere $S^{n} = \{x \in \mathbb{R}^{n+1} : |x| = 1\}$ is the map $\alpha(x) = -x$. A map $f : S^{n} \to \mathbb{R}^{k}$ is **odd**, or **antipodal**, when
 
 $$
-f(-x) = -f(x) \qquad (x \in S^{n}) .
+\boxed{\;f(-x) = -f(x) \qquad (x \in S^{n})\;} .
 $$
 
 **Proposition.** The antipodal involution is a free continuous involution of $S^{n}$, and the odd maps $S^{n} \to \mathbb{R}^{k}$ are exactly the equivariant maps for the antipodal involution of $S^{n}$ and the antipodal involution of $\mathbb{R}^{k}$. The odd maps $S^{n} \to S^{k}$ are the equivariant maps of the spheres.

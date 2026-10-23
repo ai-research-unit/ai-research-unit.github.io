@@ -45,7 +45,7 @@ $$
 **Theorem (Cauchy–Schwarz).** Let $f$ be positive. Then for all $x,y \in A$,
 
 $$
-\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)\,h_{f}(y,y) = f(x^{*}x)f(y^{*}y) ,
+\boxed{\;\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)\,h_{f}(y,y) = f(x^{*}x)f(y^{*}y)\;} ,
 $$
 
 with equality if and only if $x$ and $y$ are linearly dependent modulo $N_{f}$.
@@ -73,7 +73,7 @@ so $ax \in N_{f}$, and $N_{f}$ is a left ideal.
 **Theorem (a positive functional is continuous).** Let $f$ be positive on the unital $\mathrm{C}^{*}$-algebra $A$. Then $f$ is bounded and
 
 $$
-\lVert f\rVert = f(1) ,
+\boxed{\;\lVert f\rVert = f(1)\;} ,
 $$
 
 so a state is exactly a positive functional with $f(1) = 1$, and the pairing of a state is controlled by $h_{f}(x,y) \leq \lVert x\rVert\lVert y\rVert$ in absolute value.
@@ -101,7 +101,7 @@ is a well-defined inner product on $A/N_{f}$, and the completion $H_{f}$ is a Hi
 **Theorem (the GNS representation).** Let $f$ be positive. Then the left multiplication by an element of $A$ passes to the quotient as a bounded operator,
 
 $$
-\pi_{f}(a) : H_{f} \to H_{f} , \qquad \pi_{f}(a)(x + N_{f}) = ax + N_{f} ,
+\boxed{\;\pi_{f}(a) : H_{f} \to H_{f} , \qquad \pi_{f}(a)(x + N_{f}) = ax + N_{f}\;} ,
 $$
 
 and $\pi_{f}$ is a $*$-representation, $\pi_{f}(a)^{*} = \pi_{f}(a^{*})$, so $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ makes the involution of the sesqualgebra into the adjoint.

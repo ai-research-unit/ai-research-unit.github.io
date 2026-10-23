@@ -19,7 +19,7 @@ The formal adjoint and the boundary operator are those of *Differential Operator
 **Theorem (the Lagrange identity).** Let $L=\sum_{k=0}^m p_k(x)\,\frac{d^k}{dx^k}$ be a differential operator on an interval with smooth coefficients and let $L^{\dagger}=\sum_{k=0}^m(-1)^k\frac{d^k}{dx^k}\bigl(\bar p_k\,\cdot\bigr)$ be its formal adjoint. Then there is a sesquilinear expression $P(u,v)$, the **bilinear concomitant**, of order at most $m-1$ in each of $u,v$, with
 
 $$
-\bar v\,Lu - u\,\overline{L^{\dagger}v} = \frac{d}{dx}P(u,v) ,
+\boxed{\;\bar v\,Lu - u\,\overline{L^{\dagger}v} = \frac{d}{dx}P(u,v)\;} ,
 $$
 
 the **Lagrange identity**; for the second-order operator $Lu=-(pu')'+qu$ with real $p>0$ and real $q$,
@@ -45,7 +45,7 @@ a sesquilinear in $u,v$, of order at most $m-1$ in each variable in each compone
 **Theorem (the Green formula).** With the notation above and $\Omega$ a bounded domain with smooth boundary,
 
 $$
-\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS ,
+\boxed{\;\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS\;} ,
 $$
 
 where $\nu$ is the outward unit normal; the right side is the **boundary form**
@@ -87,7 +87,7 @@ and the boundary term of the Lagrange identity is the difference of the boundary
 **Theorem (the Sturm–Liouville system).** Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$ and real $q$, and write $y=(u,pu')$. Then $\ell u=\lambda w u$ reads as the system $y'=Ay$ with
 
 $$
-A = \begin{pmatrix}0 & 1/p\\ q-\lambda w & 0\end{pmatrix} ,
+\boxed{\;A = \begin{pmatrix}0 & 1/p\\ q-\lambda w & 0\end{pmatrix}\;} ,
 $$
 
 and the form $\omega(y,z)=y_1\bar z_2-y_2\bar z_1=p(u\bar v'-u'\bar v)$ is symplectic for $A$ when $\lambda$ is real; the system is self-adjoint, $\omega$ is invariant on pairs of solutions, and the boundary term is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. The two boundary conditions at $a$ and $b$ make the problem self-adjoint exactly when this form vanishes against the admissible pairs.

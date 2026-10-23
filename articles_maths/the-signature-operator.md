@@ -87,7 +87,7 @@ $$
 **Theorem.** The square of the signature operator is the **Hodge Laplacian**
 
 $$
-D^{2}=dd^{*}+d^{*}d=\Delta ,
+\boxed{\;D^{2}=dd^{*}+d^{*}d=\Delta\;} ,
 $$
 
 the operator whose kernel is the space $\mathcal{H}^{k}(M)$ of **harmonic $k$-forms**.
@@ -115,13 +115,13 @@ the self-dual and anti-self-dual harmonic forms, of dimensions $b_{+}$ and $b_{-
 **Theorem (Hirzebruch's signature theorem).** Let $M$ be a closed oriented manifold of dimension $4k$ and let $D^{+}:\Omega^{+}\to\Omega^{-}$ be the positive half of its signature operator. Then the analytic index of $D^{+}$ is the signature of $M$:
 
 $$
-\operatorname{ind}D^{+}=\dim\ker D^{+}-\dim\operatorname{coker}D^{+}=b_{+}-b_{-}=\sigma(M) .
+\boxed{\;\operatorname{ind}D^{+}=\dim\ker D^{+}-\dim\operatorname{coker}D^{+}=b_{+}-b_{-}=\sigma(M)\;} .
 $$
 
 Combined with the Atiyah–Singer index theorem, the index is the characteristic number
 
 $$
-\sigma(M)=\int_M L(TM),
+\boxed{\;\sigma(M)=\int_M L(TM)\;},
 $$
 
 where $L(TM)$ is the **Hirzebruch $L$-genus** of the tangent bundle, the genus with the first terms

@@ -75,6 +75,12 @@ The last rung of the ladder is described once here, because it is the reason the
 
 The six lower columns carry the marker **—** because none of them is a tensor product of $\mathbb{H}$ with a two-dimensional commutative algebra: the row is meaningful only for the two namesakes, and it is stated rather than omitted. For the two biquaternion systems the centre and the norm are recorded in the tables above and are not repeated here.
 
+The last two columns are the pair of tensor products
+
+$$
+\boxed{\; \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}, \qquad \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H} \;}.
+$$
+
 The two systems are built by adjoining to $\mathbb{H}$ the two distinct square roots of a central unit, $-1$ in $\mathbb{C}$ and $+1$ in $\mathbb{D}$, and the sign of the square root is the whole of the difference. The complexification is a field extension of the centre and produces a simple algebra (*The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$*, §*The Complex Vector Space*); the split case is a product of rings and produces a semisimple one, the product of two simple ideals each isomorphic to $\mathbb{H}$ (*Split-Biquaternion Algebra*, §*Basic Properties*). The two are the only columns of the master table whose norm is ring-valued and the only two whose analysis is built on a ring-valued Cauchy theory, and both properties follow from the single fact that $\mathbb{C}$ and $\mathbb{D}$ are the two quadratic algebras over $\mathbb{R}$ that admit a central imaginary or split-imaginary unit commuting with the quaternion basis.
 
 ## Summary

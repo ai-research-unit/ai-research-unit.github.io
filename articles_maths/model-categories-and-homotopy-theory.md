@@ -52,7 +52,7 @@ A **model category** is a bicomplete category equipped with a model structure. T
 **Theorem (existence).** The localisation $\mathcal{C}[\mathcal{W}^{-1}]$ exists and has the same objects as $\mathcal{C}$; its morphisms are computed by
 
 $$
-\operatorname{Hom}_{\operatorname{Ho}(\mathcal{C})}(X,Y) \cong \pi\bigl(\operatorname{Hom}_{\mathcal{C}}(QX, RY)\bigr),
+\boxed{\;\operatorname{Hom}_{\operatorname{Ho}(\mathcal{C})}(X,Y) \cong \pi\bigl(\operatorname{Hom}_{\mathcal{C}}(QX, RY)\bigr)\;},
 $$
 
 the homotopy classes of morphisms between a cofibrant replacement of $X$ and a fibrant replacement of $Y$, where the homotopy relation is defined through cylinder and path objects.
@@ -101,7 +101,7 @@ the homotopy classes of morphisms between a cofibrant replacement of $X$ and a f
 **Theorem (geometric realisation).** There is a Quillen adjunction $|\!-\!| \dashv \operatorname{Sing}$ between simplicial sets with the Quillen model structure and topological spaces with the Quillen model structure, where $|\Delta_n|$ is the standard simplex of *Simplicial and Singular Homology* and $\operatorname{Sing}(X)_n = \operatorname{Hom}_{\mathbf{Top}}(\Delta_n, X)$. The derived functors give equivalences of homotopy categories
 
 $$
-\operatorname{Ho}(\mathbf{sSet}) \simeq \operatorname{Ho}(\mathbf{Top}),
+\boxed{\;\operatorname{Ho}(\mathbf{sSet}) \simeq \operatorname{Ho}(\mathbf{Top})\;},
 $$
 
 and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.

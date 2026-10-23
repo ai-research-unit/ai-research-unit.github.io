@@ -66,7 +66,7 @@ It is the largest subspace of $\operatorname{End}_K(\mathrm{G})$ in which $\oper
 **Proposition (the basic exact sequence).** The adjoint map $\operatorname{ad}:\mathrm{G}\to\operatorname{Der}(\mathrm{G})$ is a Lie algebra homomorphism with kernel $\mathrm{Z}(\mathrm{G})$, hence $\operatorname{Inn}(\mathrm{G})\cong\mathrm{G}/\mathrm{Z}(\mathrm{G})$ and
 
 $$
-0\longrightarrow\mathrm{Z}(\mathrm{G})\longrightarrow\mathrm{G}\xrightarrow{\operatorname{ad}}\operatorname{Der}(\mathrm{G})\longrightarrow\operatorname{Out}(\mathrm{G})\longrightarrow0 .
+\boxed{\;0\longrightarrow\mathrm{Z}(\mathrm{G})\longrightarrow\mathrm{G}\xrightarrow{\operatorname{ad}}\operatorname{Der}(\mathrm{G})\longrightarrow\operatorname{Out}(\mathrm{G})\longrightarrow0\;} .
 $$
 
 **Proof.** The homomorphism property is $\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the centre; the image is $\operatorname{Inn}(\mathrm{G})$; the quotient is $\operatorname{Out}(\mathrm{G})$.
@@ -78,9 +78,9 @@ $$
 **Theorem.** With coefficients in the adjoint module $\mathrm{G}$,
 
 $$
-\operatorname{Der}(\mathrm{G})=Z^1(\mathrm{G};\mathrm{G}),\qquad
+\boxed{\;\operatorname{Der}(\mathrm{G})=Z^1(\mathrm{G};\mathrm{G}),\qquad
 \operatorname{Inn}(\mathrm{G})=B^1(\mathrm{G};\mathrm{G}),\qquad
-\operatorname{Out}(\mathrm{G})=H^1(\mathrm{G};\mathrm{G}).
+\operatorname{Out}(\mathrm{G})=H^1(\mathrm{G};\mathrm{G})\;}.
 $$
 
 **Proof.** The differential on a one-cochain $\delta:\mathrm{G}\to\mathrm{G}$ is $d\delta(x,y)=[x,\delta(y)]-[y,\delta(x)]-\delta([x,y])$; its vanishing is the Leibniz rule read with one argument transposed. The coboundaries are the inner derivations, by the identification recorded in *Lie Algebra Cohomology*, and the quotient is $\operatorname{Out}(\mathrm{G})$.
@@ -102,7 +102,7 @@ $$
 **Proposition (the iterated Leibniz rule).** For a derivation $D$ and all $x,y$ and all $n\geq0$,
 
 $$
-D^n([x,y])=\sum_{i=0}^{n}\binom{n}{i}\,[D^ix,D^{n-i}y],
+\boxed{\;D^n([x,y])=\sum_{i=0}^{n}\binom{n}{i}\,[D^ix,D^{n-i}y]\;},
 $$
 
 with $D^0=\operatorname{id}$.

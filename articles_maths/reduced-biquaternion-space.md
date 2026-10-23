@@ -89,7 +89,7 @@ $(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blackt
 The decomposition is an **algebra** decomposition and not merely a linear one: because the idempotents are orthogonal, the product is componentwise in the two coordinates,
 
 $$
-\breve Q_{1}\breve Q_{2}=\bigl[(Q_{1\blacktriangle}+Q_{1\blacktriangledown})(Q_{2\blacktriangle}+Q_{2\blacktriangledown})\bigr]\Pi_++\bigl[(Q_{1\blacktriangle}-Q_{1\blacktriangledown})(Q_{2\blacktriangle}-Q_{2\blacktriangledown})\bigr]\Pi_-,
+\boxed{\; \breve Q_{1}\breve Q_{2}=\bigl[(Q_{1\blacktriangle}+Q_{1\blacktriangledown})(Q_{2\blacktriangle}+Q_{2\blacktriangledown})\bigr]\Pi_++\bigl[(Q_{1\blacktriangle}-Q_{1\blacktriangledown})(Q_{2\blacktriangle}-Q_{2\blacktriangledown})\bigr]\Pi_- \;},
 $$
 
 so the product is carried by two independent copies of the complex multiplication. That is the whole content of the isomorphism of the next section, and the reason every quadratic question about the algebra splits into two complex questions.
@@ -113,7 +113,7 @@ $\varphi^{-1}(u,v)=\tfrac12(u+v)+\tfrac12(u-v)j$.
 **Corollary (the algebra is a direct product of two fields).** The reduced biquaternion algebra is the direct product of the fields $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$,
 
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,
+\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_- \;},
 $$
 
 each factor being a field isomorphic to $\mathbb{C}$, and the two projections are the idempotent coordinates.
@@ -123,7 +123,7 @@ each factor being a field isomorphic to $\mathbb{C}$, and the two projections ar
 **Corollary (zero divisors, and the absence of division).** The algebra has **zero divisors**: every nonzero element of one idempotent line annihilates every element of the other,
 
 $$
-\Pi_+\Pi_-=0,\qquad\text{so}\qquad (A\Pi_+)(B\Pi_-)=0\quad\text{for all }A,B\in\mathbb{C}.
+\boxed{\; \Pi_+\Pi_-=0,\qquad\text{so}\qquad (A\Pi_+)(B\Pi_-)=0\quad\text{for all }A,B\in\mathbb{C} \;}.
 $$
 
 An element $\breve Q$ is a **unit** exactly when both idempotent coordinates are nonzero, $Q_{+}\neq0$ and $Q_{-}\neq0$; otherwise it is a zero divisor. The algebra is therefore not a field and not a division algebra, and the set of zero divisors is the union of the two idempotent lines with the origin removed.

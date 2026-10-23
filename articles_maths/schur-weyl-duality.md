@@ -51,7 +51,7 @@ where $S^\lambda$ is the Specht module and $S_d$ acts on $V^{\otimes d}$ by perm
 **(a)** As a module for the product of the two actions, $V^{\otimes d}$ decomposes as
 
 $$
-V^{\otimes d} \cong \bigoplus_{\substack{\lambda \vdash d\\ \ell(\lambda)\leq n}} S^\lambda\otimes_K \mathbb{S}_\lambda(V),
+\boxed{\;V^{\otimes d} \cong \bigoplus_{\substack{\lambda \vdash d\\ \ell(\lambda)\leq n}} S^\lambda\otimes_K \mathbb{S}_\lambda(V)\;},
 $$
 
 the sum over partitions of $d$ with at most $n$ rows; the multiplicities are finite and the decomposition is multiplicity-free, each irreducible pair occurring at most once.
@@ -59,7 +59,7 @@ the sum over partitions of $d$ with at most $n$ rows; the multiplicities are fin
 **(b)** The two algebras of endomorphisms are mutual commutants:
 
 $$
-\operatorname{End}_{S_d}(V^{\otimes d}) = \text{the image of } K[GL(V)], \qquad \operatorname{End}_{GL(V)}(V^{\otimes d}) = \text{the image of } K[S_d] .
+\boxed{\;\operatorname{End}_{S_d}(V^{\otimes d}) = \text{the image of } K[GL(V)], \qquad \operatorname{End}_{GL(V)}(V^{\otimes d}) = \text{the image of } K[S_d]\;} .
 $$
 
 **(c)** $\mathbb{S}_\lambda(V)$ is either $0$ or an irreducible polynomial representation of $GL(V)$, of highest weight $\lambda$ with respect to the diagonal torus, and its dimension is
@@ -87,7 +87,7 @@ $$
 **Corollary (the Cauchy identity).** Applying the duality to $V\otimes W$ with $V = K^n$ and $W = K^m$, and passing to the symmetric algebra of $V\otimes W$, gives the multiplicity-free decomposition
 
 $$
-\operatorname{Sym}(V\otimes W) = \bigoplus_{\lambda}\mathbb{S}_\lambda(V)\otimes\mathbb{S}_\lambda(W),
+\boxed{\;\operatorname{Sym}(V\otimes W) = \bigoplus_{\lambda}\mathbb{S}_\lambda(V)\otimes\mathbb{S}_\lambda(W)\;},
 $$
 
 whose character identity is the Cauchy identity

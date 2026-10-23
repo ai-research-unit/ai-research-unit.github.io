@@ -30,7 +30,7 @@ For a fixed **initial state** $q$ the map $w \mapsto \lambda(q,w)$ is a transfor
 **Proposition (sections of a state).** For $x \in X$ the **section** of $A_q$ at $x$ is the state at the target of the arrow $q \to \pi(q,x)$:
 
 $$
-A_q|_x = A_{\pi(q,x)} .
+\boxed{\;A_q|_x = A_{\pi(q,x)}\;} .
 $$
 
 **Proof.** Reading a word $xw$ through the machine from $q$ prints $\lambda(q,x)$ and continues from the state $\pi(q,x)$ with the remaining word $w$; this is exactly the recursion $A_q(xw) = \lambda(q,x)\,A_{\pi(q,x)}(w)$, and the definition of the section of *Self-Similar Groups* reads off the factor.
@@ -98,7 +98,7 @@ The theorem is one of Nekrashevych's; the input is the reduction lemma of the ne
 **Definition (contracting).** A self-similar action of a group $G$ on $\mathcal{T}(X)$ is **contracting** if there is a finite set $N \subset G$ with the property that for every $g \in G$ there is $n$ such that
 
 $$
-g|_v \in N \qquad \text{for every } v \in X^* \text{ with } |v| \geq n .
+\boxed{\;g|_v \in N \qquad \text{for every } v \in X^* \text{ with } |v| \geq n\;} .
 $$
 
 The minimal such $N$ is the **nucleus** of the action. A contracting action is thus one in which the sections of every element become members of one fixed finite set once the element is restricted deep enough in the tree.
@@ -122,7 +122,7 @@ The definition of a contracting action does not by itself say how fast the secti
 **Theorem.** Let $G$ be a finitely generated self-similar group with finite generating set $S$ and word length $|g| = |g|_S$. The number
 
 $$
-\rho = \limsup_{n \to \infty} \max_{v \in X^n} \left( \limsup_{|g| \to \infty} \frac{|g|_v|}{|g|} \right)^{1/n}
+\boxed{\;\rho = \limsup_{n \to \infty} \max_{v \in X^n} \left( \limsup_{|g| \to \infty} \frac{|g|_v|}{|g|} \right)^{1/n}\;}
 $$
 
 is finite, depends on the action and not on the generating set, and satisfies the following: $\rho < 1$ if and only if the action is contracting.

@@ -116,7 +116,7 @@ The representability of the functors attached to a module is what makes the clas
 **Definition.** An **adjunction** $F\dashv G$ between functors $F:\mathcal{C}\to\mathcal{D}$ and $G:\mathcal{D}\to\mathcal{C}$ consists of a natural bijection
 
 $$
-\mathcal{D}(FA,B)\cong\mathcal{C}(A,GB)
+\boxed{\;\mathcal{D}(FA,B)\cong\mathcal{C}(A,GB)\;}
 $$
 
 for all objects $A$ of $\mathcal{C}$ and $B$ of $\mathcal{D}$. Then $F$ is the **left adjoint** of $G$ and $G$ the **right adjoint** of $F$.
@@ -132,7 +132,7 @@ for all objects $A$ of $\mathcal{C}$ and $B$ of $\mathcal{D}$. Then $F$ is the *
 **Theorem.** For $R$-modules $M,N,P$ there is a natural isomorphism
 
 $$
-\operatorname{Hom}_R(M\otimes_RN,P)\cong\operatorname{Hom}_R\bigl(M,\operatorname{Hom}_R(N,P)\bigr),
+\boxed{\;\operatorname{Hom}_R(M\otimes_RN,P)\cong\operatorname{Hom}_R\bigl(M,\operatorname{Hom}_R(N,P)\bigr)\;},
 $$
 
 so that $- \otimes_RN$ is left adjoint to $\operatorname{Hom}_R(N,-)$.

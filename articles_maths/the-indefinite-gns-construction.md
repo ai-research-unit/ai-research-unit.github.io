@@ -45,7 +45,7 @@ $$
 **Theorem (the indefinite GNS representation).** Let $\omega$ be an indefinite state on $A$ and suppose there is a positive definite form $\langle\cdot,\cdot\rangle$ on $A$ with
 
 $$
-|[x,y]_{\omega}| \leq c\,\|x\|\,\|y\|, \qquad \|x\|^{2} = \langle x,x\rangle ,
+\boxed{\;|[x,y]_{\omega}| \leq c\,\|x\|\,\|y\|, \qquad \|x\|^{2} = \langle x,x\rangle\;} ,
 $$
 
 for some constant $c$ (a **majorant** of $[\,,\,]_{\omega}$). Then the completion $K_{\omega}$ of $A/N_{\omega}$ in the norm induced by the majorant is a Krein space, the left regular representation descends to a $\ast$-representation
@@ -57,7 +57,7 @@ $$
 which preserves the indefinite form, and the class $\xi_{\omega} = 1 + N_{\omega}$ is **cyclic** with
 
 $$
-[\pi_{\omega}(x)\xi_{\omega}, \xi_{\omega}] = \omega(x), \qquad [\pi_{\omega}(x)\xi_{\omega}, \pi_{\omega}(y)\xi_{\omega}] = \omega(y^{\dagger}x).
+\boxed{\;[\pi_{\omega}(x)\xi_{\omega}, \xi_{\omega}] = \omega(x), \qquad [\pi_{\omega}(x)\xi_{\omega}, \pi_{\omega}(y)\xi_{\omega}] = \omega(y^{\dagger}x)\;}.
 $$
 
 **Proof.** The form descends to the quotient because the radical is exactly the set orthogonal to everything; it is Hermitian and invariant there; the majorant makes the quotient a pre-Hilbert space whose completion is a Krein space with the form extended by continuity, which is possible because the majorant bounds it; the left multiplication descends because $N_{\omega}$ is a left ideal, and the invariance of the form is the adjoint axiom for the representation. Cyclicity is the density of the image of $A$, and the two displayed identities are the definitions.
@@ -83,7 +83,7 @@ $$
 **Theorem (the role of $J$).** The fundamental symmetry of the Krein space $K_{\omega}$ produced by a majorant is exactly the operator attached to that majorant: if $\langle\cdot,\cdot\rangle$ is the majorant and $[\cdot,\cdot]$ the form, then $J$ is the unique operator with
 
 $$
-[x,y] = \langle Jx,y\rangle, \qquad J^{2} = \mathrm{id}, \qquad \langle Jx,y\rangle = \langle x,Jy\rangle ,
+\boxed{\;[x,y] = \langle Jx,y\rangle, \qquad J^{2} = \mathrm{id}, \qquad \langle Jx,y\rangle = \langle x,Jy\rangle\;} ,
 $$
 
 and different majorants give Krein spaces with the same representation up to the equivalence of *The Fundamental Symmetry* and different operators $J$.

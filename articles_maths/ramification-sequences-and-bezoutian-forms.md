@@ -55,7 +55,7 @@ $$
 the norm maps of the residue field extensions sum to $N : \bigoplus_{n\in P'}k_1(\kappa_n) \to k_1(F)$, the place at infinity contributing the identity of $k_1(F)$, and the sequence
 
 $$
-0 \longrightarrow k_2(F) \longrightarrow k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{n \in P'} k_1(\kappa_n) \xrightarrow{\ N\ } k_1(F) \longrightarrow 0
+\boxed{\;0 \longrightarrow k_2(F) \longrightarrow k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{n \in P'} k_1(\kappa_n) \xrightarrow{\ N\ } k_1(F) \longrightarrow 0\;}
 $$
 
 is exact.
@@ -187,7 +187,7 @@ The form on the left lives on $E_{g_1g_2}$, of dimension $\deg g_1 + \deg g_2$, 
 **Theorem (second rule).** Let $f, g \in F[t]$ be monic, square-free and coprime. Then
 
 $$
-B\!\left(\frac{f}{g}\right) + B\!\left(\frac{g}{f}\right) = \begin{cases} 0 & \text{if } \deg f \equiv \deg g \bmod 2, \\[2pt] [1] & \text{if } \deg f \not\equiv \deg g \bmod 2, \end{cases}
+\boxed{\;B\!\left(\frac{f}{g}\right) + B\!\left(\frac{g}{f}\right) = \begin{cases} 0 & \text{if } \deg f \equiv \deg g \bmod 2, \\[2pt] [1] & \text{if } \deg f \not\equiv \deg g \bmod 2, \end{cases}\;}
 $$
 
 where $[1]$ is the class of the one-dimensional form $\langle 1\rangle$.
@@ -237,7 +237,7 @@ the two entries $-a_1a_2^2$ and $a_1a_2^2b$ being the square multiples $-a_1$ an
 **Theorem (the criterion).** Let $g \in F[t]$ be monic and square-free and let $f \in F[t]$ be coprime to $g$, and let $R(f/g) \in R_2(F)$ be the sequence of the pair. Then $R(f/g)$ is represented by a symbol if and only if
 
 $$
-B(f/g) = 0 \quad \text{in } W(F).
+\boxed{\;B(f/g) = 0 \quad \text{in } W(F)\;}.
 $$
 
 The two implications are the lemma and the theorem of Becher and Raczek, quoted as standard: a symbol whose ramification is the sequence of a pair has trivial Bezoutian, and a pair whose Bezoutian is trivial has its sequence represented by a symbol.

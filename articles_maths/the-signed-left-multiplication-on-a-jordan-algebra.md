@@ -58,7 +58,7 @@ They are linear in the parameter $a$ and additive in $x$, and they are the opera
 **Theorem.** For every $a \in J$,
 
 $$
-\ell^{\alpha}_a = \ell_a\circ\alpha , \qquad \rho^{\alpha}_a = \rho_a\circ\alpha ,
+\boxed{\;\ell^{\alpha}_a = \ell_a\circ\alpha , \qquad \rho^{\alpha}_a = \rho_a\circ\alpha\;} ,
 $$
 
 and the signed actions are obtained from the unsigned ones by precomposition with the grade involution.
@@ -82,7 +82,7 @@ so the signed sandwich is the product of one **unsigned** and one **signed** one
 **Theorem (the sign rule).** Let $A = A_{\bar 0}\oplus A_{\bar 1}$ be the grading by $\alpha$ and let $a$ be homogeneous of parity $|a| \in \{0,1\}$. Then
 
 $$
-\ell^{\alpha}_a(A_{\bar i}) \subseteq A_{\overline{i+|a|}} , \qquad \rho^{\alpha}_a(A_{\bar i}) \subseteq A_{\overline{i+|a|}} ,
+\boxed{\;\ell^{\alpha}_a(A_{\bar i}) \subseteq A_{\overline{i+|a|}} , \qquad \rho^{\alpha}_a(A_{\bar i}) \subseteq A_{\overline{i+|a|}}\;} ,
 $$
 
 so that the signed one-sided actions are **graded operators of degree $|a|$**: they preserve the degree when $a$ is even and exchange the even and odd parts when $a$ is odd.
@@ -98,7 +98,7 @@ so that the signed one-sided actions are **graded operators of degree $|a|$**: t
 **Theorem.** The elements fixed by the signed left multiplication are
 
 $$
-\{x \in J : \ell^{\alpha}_a(x) = x\} = \{x \in A_{\bar 0} : ax = x\} \oplus \{x \in A_{\bar 1} : ax = -x\} ;
+\boxed{\;\{x \in J : \ell^{\alpha}_a(x) = x\} = \{x \in A_{\bar 0} : ax = x\} \oplus \{x \in A_{\bar 1} : ax = -x\}\;} ;
 $$
 
 that is, the intersection of the even part with the eigenvalue-one space of the left multiplication $\ell_a$, together with the intersection of the odd part with its eigenvalue-minus-one space.

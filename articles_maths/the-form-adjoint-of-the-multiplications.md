@@ -17,7 +17,7 @@ The operators themselves, their sums, products and adjoints, are *The Form-Adjoi
 **Proposition.** For every $x \in A$,
 
 $$
-L_{x}^{*} = L_{x^{*}}, \qquad R_{x}^{*} = R_{x^{t}} .
+\boxed{\;L_{x}^{*} = L_{x^{*}}, \qquad R_{x}^{*} = R_{x^{t}}\;} .
 $$
 
 **Proof.** $h(L_{x}y, z) = h(xy, z) = h(y, x^{*}z) = h(y, L_{x^{*}}z)$ by the compatibility, which is the defining relation of the adjoint; the uniqueness of the adjoint for a nonsingular form identifies $L_{x}^{*}$ with $L_{x^{*}}$. For the right multiplication the element $x^{t}$ is defined by $h(yx,z) = h(y,zx^{t})$, which exists and is unique when $h$ is nonsingular, so $R_{x^{t}}$ is the adjoint of $R_{x}$ by construction, and in a basis with Gram matrix $G$ it is $x^{t} = Gx^{*}G^{-1}$. The two identities agree, $x^{t} = x^{*}$, exactly when the form satisfies the third identity $h(xy,z) = h(x,zy^{*})$; the identity is not a consequence of the compatibility, and on the $2\times2$ matrices over $\mathbb{Z}[\mathrm{i}]$ the left identity holds on all $4096$ triples of the tested set while the right identity by $x^{*}$ holds on all of them for the trace form and fails on $1728$ of them for the compatible form $\tau(xGy^{*})$, $G = \operatorname{diag}(1,-1)$.
@@ -33,7 +33,7 @@ $$
 **Proposition.** For every $x \in A$,
 
 $$
-\Theta_{x}^{*} = \Theta_{x^{*}} ,
+\boxed{\;\Theta_{x}^{*} = \Theta_{x^{*}}\;} ,
 $$
 
 the adjoint of the sandwich by $x$ being the sandwich by $x^{*}$, for a **cyclic** functional $\varphi = h(\cdot,1)$, in particular for the trace form; when $x$ is self-adjoint the sandwich is a self-adjoint operator in the sense of *Self-Adjoint and Skew Operators of a Form*.

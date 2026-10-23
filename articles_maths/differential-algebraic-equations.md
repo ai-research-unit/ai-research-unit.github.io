@@ -60,7 +60,7 @@ uniformly on compact intervals, and the **tractability index** is a variant comp
 **Theorem (the differentiation index counts derivatives of the data).** For a linear system $Ey' + Ay = q(t)$ with regular pencil and index $\nu$, every solution is of the form
 
 $$
-y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y_{\mathrm{hom}},
+\boxed{\;y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y_{\mathrm{hom}}\;},
 $$
 
 where the $c_k$ are matrices and $y_{\mathrm{hom}}$ solves the homogeneous system; consequently the solution depends on the first $\nu-1$ derivatives of $q$, and the initial value $y(t_0)$ must satisfy $\nu-1$ consistency conditions for a solution to exist.
@@ -90,7 +90,7 @@ $$
 The first is an ordinary linear system with the solution of *Ordinary Differential Equations*. The second is solved by
 
 $$
-v = \sum_{k=0}^{\nu-1}(-N)^k q_2^{(k)},
+\boxed{\;v = \sum_{k=0}^{\nu-1}(-N)^k q_2^{(k)}\;},
 $$
 
 a finite sum because $N$ is nilpotent of index $\nu$; it involves no free constant, so the value of $v$ is completely determined by $q_2$ and its derivatives, and in particular the initial value $v(t_0)$ must equal $\sum_{k}(-N)^kq_2^{(k)}(t_0)$.
@@ -114,7 +114,7 @@ which is verified by substituting the case $k$ into $v = q_2 - Nv'$ to obtain th
 **Theorem (index one).** For the semi-explicit system $y_1' = f(t,y_1,y_2)$, $0=g(t,y_1,y_2)$ with $\partial/\partial y_2\,g$ invertible in a neighbourhood of a point $(t_0,y_1^0,y_2^0)$ satisfying $g(t_0,y_1^0,y_2^0)=0$, the constraint can be solved locally for $y_2 = G(t,y_1)$, $y_2^0 = G(t_0,y_1^0)$, and the system becomes the ordinary equation
 
 $$
-y_1' = f\bigl(t, y_1, G(t,y_1)\bigr) .
+\boxed{\;y_1' = f\bigl(t, y_1, G(t,y_1)\bigr)\;} .
 $$
 
 Hence through every consistent point with $y_2^0 = G(t_0,y_1^0)$ there passes a unique solution; the only consistency condition is the constraint itself.

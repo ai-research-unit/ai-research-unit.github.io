@@ -43,8 +43,8 @@ Two facts decide how the twelve distribute over the forms, and both are immediat
 **Fact 1 (the scalar part of the two bilinear products is symmetric).** For the plain product $\tilde{Q}_2\tilde{Q}_1$ and the quaternionic product $\tilde{Q}_2^{\natural}\tilde{Q}_1$ the scalar part is unchanged when the two arguments are exchanged:
 
 $$
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_2,\tilde{Q}_1\rangle,\qquad
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural}.
+\boxed{\; \langle\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_2,\tilde{Q}_1\rangle,\qquad
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural} \;}.
 $$
 
 Consequently the symmetric half of a bilinear product has the **same** scalar part as the product, and the antisymmetric half has the **zero** scalar part. This is why $\mathrm{APA}$ and $\mathrm{AQA}$ carry no form, and why the two bilinear forms of the table below are each carried by two operations.
@@ -52,8 +52,8 @@ Consequently the symmetric half of a bilinear product has the **same** scalar pa
 **Fact 2 (the scalar part of the two sesquilinear products is Hermitian, not symmetric).** For the plain sesquilinear product $\tilde{Q}_2\tilde{Q}_1^{*}$ and the general quaternionic sesquilinear product $\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}$ the exchanged scalar part is the conjugate:
 
 $$
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\overline{\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}},\qquad
-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\overline{\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}}.
+\boxed{\; \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\overline{\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}},\qquad
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\overline{\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}} \;}.
 $$
 
 Consequently the scalar part of the symmetric half is the **half-sum of the form with its conjugate**, a real form, and the scalar part of the antisymmetric half is the **half-difference**, a purely imaginary alternating form:
@@ -178,7 +178,7 @@ The operation is $\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}$, both slots read throug
 The operation is the half-sum $\tfrac12(\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}+\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-sum of the Krein form with its conjugate, a **real** form of signature $(2,6)$: at $\tilde{Q}_2=\tilde{Q}_1$ it reads
 
 $$
-p_t^{2}+p_t^{\prime2}-p_x^{2}-p_x^{\prime2}-p_y^{2}-p_y^{\prime2}-p_z^{2}-p_z^{\prime2},
+\boxed{\; p_t^{2}+p_t^{\prime2}-p_x^{2}-p_x^{\prime2}-p_y^{2}-p_y^{\prime2}-p_z^{2}-p_z^{\prime2} \;},
 $$
 
 the real part of the Krein form, indefinite with one positive and three negative complex dimensions.
@@ -243,8 +243,8 @@ The article closes with the reading that separates the definite rows of the tabl
 On the **anti-Hermitian sector** $\mathbb{M}_{-}$, the real $4$-dimensional sector the antisymmetric part $\mathrm{APS}$ takes its values in, the four forms of the region restrict to four real forms, of inertia
 
 $$
-(3,1)\ \text{for the general quaternionic bilinear form},\qquad (1,3)\ \text{for the Krein form},
-\qquad (4,0)\ \text{for the Hermitian form},\qquad (0,4)\ \text{for the general plain bilinear form}.
+\boxed{\; (3,1)\ \text{for the general quaternionic bilinear form},\qquad (1,3)\ \text{for the Krein form},
+\qquad (4,0)\ \text{for the Hermitian form},\qquad (0,4)\ \text{for the general plain bilinear form} \;}.
 $$
 
 The first two are indefinite and the last two are definite up to sign, and the difference shows in the groups that preserve them. Take the six-dimensional algebra of infinitesimal motions of the indefinite form of inertia $(3,1)$ on $\mathbb{M}_{-}$: the definite restrictions of the sector are preserved only by its three-dimensional compact part, while the indefinite restrictions are preserved by all six dimensions. And the space of symmetric forms on $\mathbb{M}_{-}$ that is preserved by the whole six-dimensional algebra is **one-dimensional**, spanned by the form of inertia $(3,1)$ itself.

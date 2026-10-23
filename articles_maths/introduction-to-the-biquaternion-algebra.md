@@ -82,8 +82,8 @@ $$
 + (Q_{1,0} Q_{2x} + Q_{1,1} Q_{2t} + Q_{1,2} Q_{2z} - Q_{1,3} Q_{2y})\, \vec e_x
 + (Q_{1,0} Q_{2y} - Q_{1,1} Q_{2z} + Q_{1,2} Q_{2t} + Q_{1,3} Q_{2x})\, \vec e_y
 + (Q_{1,0} Q_{2z} + Q_{1,1} Q_{2y} - Q_{1,2} Q_{2x} + Q_{1,3} Q_{2t})\, \vec e_z
-\;}
-$$.
+\;}.
+$$
 
 ### The Scalar–Vector Form
 
@@ -321,8 +321,8 @@ The algebra is central simple of complex dimension four. Since the base field $\
 $$
 \boxed{\;
 \mathbb{B} \;\cong\; M_2(\mathbb{C})
-\;}
-$$,
+\;},
+$$
 
 under the assignment
 
@@ -352,8 +352,8 @@ $$
 \boxed{\;
 \langle\tilde Q\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = \det\bigl(\rho(\tilde Q)\bigr) , \qquad
 \rho(\tilde Q) = \begin{pmatrix} Q_t + iQ_3 & Q_x + iQ_2 \\ -Q_x + iQ_2 & Q_t - iQ_3 \end{pmatrix}
-\;}
-$$.
+\;}.
+$$
 
 **Theorem.** The reduced norm is multiplicative, $\langle\tilde Q_1 \tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and an element $\tilde Q$ is invertible if and only if $\langle\tilde Q\rangle_{\natural} \neq 0$; then $\tilde Q^{-1} = \tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. A nonzero element is a zero divisor exactly when $\langle\tilde Q\rangle_{\natural} = 0$.
 

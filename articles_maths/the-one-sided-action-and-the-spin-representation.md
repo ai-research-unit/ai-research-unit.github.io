@@ -13,7 +13,7 @@ The algebra and the minimal left ideals are *Left Multiplication and the Cliffor
 **Definition.** Let $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ be a minimal left ideal. The **one-sided action** of the algebra on $I$ is the restriction of the left multiplication,
 
 $$
-\rho_I : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)\psi = x\,\psi , \qquad \psi \in I .
+\boxed{\;\rho_I : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)\psi = x\,\psi , \qquad \psi \in I\;} .
 $$
 
 It is the module action of the regular module on its submodule $I$, and it is an algebra homomorphism.
@@ -39,7 +39,7 @@ $$
 **Theorem (irreducibility).** Let $I$ be a minimal left ideal. Then the action $\rho_I$ of the algebra on $I$ is irreducible: $I$ has no proper nonzero submodule, and every nonzero element of $I$ is a cyclic vector. Equivalently, the only $F$-linear maps $T : I \to I$ with $T(x\psi) = xT(\psi)$ for every $x$ and $\psi$ are the multiplications by elements of the division ring $D = \mathrm{End}_{\mathrm{Cl}}(I)$, so the commutant is a division algebra and
 
 $$
-\rho_I\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) = \mathrm{End}_D(I)
+\boxed{\;\rho_I\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) = \mathrm{End}_D(I)\;}
 $$
 
 whenever the algebra is simple.

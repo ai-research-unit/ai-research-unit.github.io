@@ -43,7 +43,7 @@ for a smooth function $\lambda$; the conformal Killing fields form a Lie algebra
 
 **Proposition.** The conformal algebra of a Riemannian manifold of dimension $n \geq 3$ is finite-dimensional and of dimension at most
 $$
-\dim \mathrm{CONF}(M,g) \leq \frac{(n+1)(n+2)}{2},
+\boxed{\;\dim \mathrm{CONF}(M,g) \leq \frac{(n+1)(n+2)}{2}\;},
 $$
 with equality exactly when the metric is conformally flat (on a connected open set with the generic metric, and on the conformally flat manifolds); the conformal algebra of the Euclidean space $\mathbb{R}^n$ is the Lie algebra $\mathrm{SO}(n+1,1)$ of dimension $(n+1)(n+2)/2$, spanned by the constant vector fields (translations), the linear fields $x \mapsto \omega x$ with $\omega \in \mathrm{SO}(n)$ (rotations), the radial fields $x \mapsto c x$ (dilations) and the fields $x \mapsto |x|^2 a - 2\langle a,x\rangle x$ (the special conformal transformations).
 
@@ -95,7 +95,7 @@ $$
 $$
 satisfying the **Vahlen conditions** (the Hermitian conditions with respect to the conjugation of the Clifford algebra) modulo the nonzero scalars, in such a way that the matrix acts on $\mathbb{R}^n \cup \{\infty\}$ by the fractional transformation
 $$
-x \longmapsto (a x + b)(c x + d)^{-1},
+\boxed{\;x \longmapsto (a x + b)(c x + d)^{-1}\;},
 $$
 with the Clifford multiplication in the numerator and the inverse in the Clifford algebra; the matrices form a group isomorphic to the Möbius group, and the action is the conformal action on the sphere.
 
@@ -115,7 +115,7 @@ acting on functions, where $\Delta_g$ is the Laplacian of the metric and $\opera
 
 **Theorem (conformal covariance).** Under the conformal change $g' = \Omega^2 g$ the conformal Laplacian transforms by
 $$
-L_{g'}(\Omega^{(n-2)/2}u) = \Omega^{(n+2)/2}\,L_g(u) , \qquad u \in C^\infty(M),
+\boxed{\;L_{g'}(\Omega^{(n-2)/2}u) = \Omega^{(n+2)/2}\,L_g(u) , \qquad u \in C^\infty(M)\;},
 $$
 so that the operator is conformally covariant with the **conformal weight** of the function $u \mapsto \Omega^{(n-2)/2}u$; the operator is invariant as an operator on the densities of the appropriate weight, and it is the unique second-order conformally invariant operator of its form on functions, the general classification belonging to the conformal invariant theory of the references.
 

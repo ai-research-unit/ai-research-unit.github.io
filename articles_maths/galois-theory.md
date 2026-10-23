@@ -75,7 +75,7 @@ We need two facts, one group-theoretic and one field-theoretic.
 **Lemma (Artin).** Let $K$ be a field, $H$ a finite group of automorphisms of $K$, and $K^H$ its fixed field. Then
 
 $$
-[K : K^H] \leq \lvert H \rvert.
+\boxed{\;[K : K^H] \leq \lvert H \rvert\;}.
 $$
 
 **Proof sketch.** Let $n = \lvert H \rvert$ and suppose $[K:K^H] > n$, so there are $n+1$ elements $x_1, \ldots, x_{n+1}$ of $K$ linearly independent over $K^H$. The linear system
@@ -101,7 +101,7 @@ so equality holds throughout and $\operatorname{Gal}(K/K^H) = H$. Taking $H = G$
 **Theorem (fundamental theorem of Galois theory).** Let $K/F$ be a finite Galois extension with group $G = \operatorname{Gal}(K/F)$. The maps
 
 $$
-E \longmapsto \operatorname{Gal}(K/E), \qquad H \longmapsto K^H
+\boxed{\;E \longmapsto \operatorname{Gal}(K/E), \qquad H \longmapsto K^H\;}
 $$
 
 are inverse bijections between the set of intermediate fields $F \subseteq E \subseteq K$ and the set of subgroups $H \leq G$. They reverse inclusions. For a subgroup $H$ with fixed field $E = K^H$:
@@ -127,7 +127,7 @@ $$
 **Corollary (degree-index duality).** Intermediate fields $F \subseteq E_1 \subseteq E_2 \subseteq K$ correspond to subgroups $\operatorname{Gal}(K/E_2) \leq \operatorname{Gal}(K/E_1) \leq G$, and
 
 $$
-[E_2:E_1] = [\operatorname{Gal}(K/E_1) : \operatorname{Gal}(K/E_2)].
+\boxed{\;[E_2:E_1] = [\operatorname{Gal}(K/E_1) : \operatorname{Gal}(K/E_2)]\;}.
 $$
 
 ---

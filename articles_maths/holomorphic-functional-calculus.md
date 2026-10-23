@@ -64,7 +64,7 @@ the integral of a continuous $A$-valued function on a compact contour.
 **Theorem (spectral mapping).** For every $f$ holomorphic on a neighbourhood of $\sigma(a)$,
 
 $$
-\sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr) .
+\boxed{\;\sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr)\;} .
 $$
 
 *Proof.* Quoted as standard. One direction is elementary: if $\mu=f(\lambda_0)$ for some $\lambda_0\in\sigma(a)$, write $f(\lambda)-f(\lambda_0)=(\lambda-\lambda_0)g(\lambda)$ with $g$ holomorphic, so $f(a)-f(\lambda_0)1=(a-\lambda_01)g(a)$, and since $a-\lambda_01$ is not invertible neither is $f(a)-\mu1$. The other direction uses the calculus applied to the function $1/(f(\lambda)-\mu)$ when $\mu\notin f(\sigma(a))$.
@@ -74,7 +74,7 @@ $$
 **Corollary (spectral radius).** The spectral radius is
 
 $$
-r(a) = \max_{\lambda\in\sigma(a)}|\lambda| = \lim_{n\to\infty}\|a^n\|^{1/n} ,
+\boxed{\;r(a) = \max_{\lambda\in\sigma(a)}|\lambda| = \lim_{n\to\infty}\|a^n\|^{1/n}\;} ,
 $$
 
 the Gelfand formula; the limit exists and equals the maximum by the spectral mapping theorem applied to the function $\lambda\mapsto\lambda^n$ and the standard estimate $r(a)\le\|a\|$.
@@ -96,7 +96,7 @@ $$
 **Theorem (properties of the Riesz projection).** With the notation above, $P_1$ is an idempotent of $A$; it commutes with $a$; it is the value at $a$ of any function holomorphic near $\sigma(a)$ that equals $1$ on a neighbourhood of $\sigma_1$ and $0$ on a neighbourhood of the rest of the spectrum. Its image $P_1A$ and its kernel $(1-P_1)A$ are closed subspaces invariant under $a$, and
 
 $$
-\sigma(a|_{P_1A})=\sigma_1 , \qquad \sigma(a|_{(1-P_1)A})=\sigma(a)\setminus\sigma_1 .
+\boxed{\;\sigma(a|_{P_1A})=\sigma_1 , \qquad \sigma(a|_{(1-P_1)A})=\sigma(a)\setminus\sigma_1\;} .
 $$
 
 *Proof.* Idempotency follows from the calculus applied to the indicator-type function: $P_1=f(a)$ for $f$ the function described, and $f^2=f$ on a neighbourhood of the spectrum, so $P_1^2=f(a)^2=(f^2)(a)=f(a)=P_1$ by the homomorphism property and locality. Commutation with $a$ follows from the resolvent identity. The image and kernel are closed because $P_1$ is a bounded projection, invariant because $a$ commutes with $P_1$, and the spectra are computed by the spectral mapping theorem applied to the restriction.

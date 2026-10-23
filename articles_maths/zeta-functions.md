@@ -45,7 +45,7 @@ The theorem is the mechanism by which the analytic properties of the counting fu
 
 **Theorem (the integral representation).** For $\sigma > 1$,
 $$
-\Gamma(s)\zeta(s) = \int_0^\infty \frac{x^{s-1}}{\exp(x) - 1} \, dx ,
+\boxed{\;\Gamma(s)\zeta(s) = \int_0^\infty \frac{x^{s-1}}{\exp(x) - 1} \, dx\;} ,
 $$
 the integral converging at $0$ because $x^{s-1}/(\exp(x)-1) \sim x^{s-2}$ and $s > 1$, and at $\infty$ by the exponential decay. The formula exhibits the pole of $\zeta$ at $s=1$: the function $\Gamma(s)\zeta(s)$, continued meromorphically by the integral, has a simple pole at $s=1$ of residue $1$, and since $\Gamma$ is holomorphic and nonzero at $1$, that pole belongs to $\zeta$ and has the same residue.
 
@@ -69,7 +69,7 @@ where $\gamma$ is Euler's constant. The continuation is unique.
 
 **Theorem (functional equation of the zeta function).** For all $s \in \mathbb{C}$,
 $$
-\Lambda(s) = \Lambda(1-s), \qquad\text{equivalently}\qquad \zeta(s) = 2^s\pi^{s-1}\sin\Bigl(\frac{\pi s}{2}\Bigr)\Gamma(1-s)\,\zeta(1-s).
+\boxed{\;\Lambda(s) = \Lambda(1-s), \qquad\text{equivalently}\qquad \zeta(s) = 2^s\pi^{s-1}\sin\Bigl(\frac{\pi s}{2}\Bigr)\Gamma(1-s)\,\zeta(1-s)\;}.
 $$
 Moreover $\zeta(1-s)$ on the right is the analytic continuation, so the formula continues $\zeta$ to the whole plane and exhibits the trivial zeros.
 
@@ -89,7 +89,7 @@ Splitting the integral at $t=1$ and substituting $t\mapsto1/t$ in the part over 
 
 **Theorem (the positive even values).** For every $n \geq 1$,
 $$
-\zeta(2n) = \frac{(-1)^{n+1}B_{2n}(2\pi)^{2n}}{2(2n)!},
+\boxed{\;\zeta(2n) = \frac{(-1)^{n+1}B_{2n}(2\pi)^{2n}}{2(2n)!}\;},
 $$
 so that in particular $\zeta(2) = \pi^2/6$, $\zeta(4) = \pi^4/90$, $\zeta(6) = \pi^6/945$; the values at the positive odd integers are not known to be rational multiples of powers of $\pi$, and $\zeta(3)$ is irrational (Apéry).
 

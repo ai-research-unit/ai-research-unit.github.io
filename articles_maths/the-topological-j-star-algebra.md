@@ -15,7 +15,7 @@ The article defines the normed $J^{*}$-algebra and proves the three recoveries, 
 **Definition.** A **normed $J^{*}$-algebra** is a normed space $A$ over $(\mathbb{K},\varsigma)$ with a map $\{\cdot,\cdot,\cdot\} : A \times A \times A \to A$ that is additive in each variable, $\mathbb{K}$-linear in the first and the third and $\varsigma$-semilinear in the second, and satisfies
 
 $$
-\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+\boxed{\;\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\}\;} ,
 $$
 
 together with
@@ -39,7 +39,7 @@ the recovered involution being $\varsigma$-semilinear and involutive, $*^{2} = \
 **Proposition (the recovered operations are submultiplicative and isometric).** Let $A$ be a normed $J^{*}$-algebra with the constant $C$ of the definition. Then for all $x,y$,
 
 $$
-\lVert xy\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert , \qquad \lVert y^{*}\rVert \leq C\lVert y\rVert ,
+\boxed{\;\lVert xy\rVert \leq C\lVert x\rVert\lVert y^{*}\rVert , \qquad \lVert y^{*}\rVert \leq C\lVert y\rVert\;} ,
 $$
 
 and at $C = 1$ the recovered involution is an isometry, $\lVert y^{*}\rVert = \lVert y\rVert$, and the recovered product is submultiplicative, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$. At a general $C$ the two estimates give $C \geq 1$ for a nonzero $A$.

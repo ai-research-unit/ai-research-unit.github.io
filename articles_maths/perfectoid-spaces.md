@@ -112,7 +112,7 @@ $$
 **Theorem (tilting equivalence; Scholze).** Let $K$ be a perfectoid field with tilt $K^\flat$. Then the functor
 
 $$
-X \longmapsto X^\flat
+\boxed{\;X \longmapsto X^\flat\;}
 $$
 
 from perfectoid spaces over $K$ to perfectoid spaces over $K^\flat$, defined on affinoids by $\operatorname{Spa}(A, A^+) \mapsto \operatorname{Spa}(A^\flat, A^{\flat+})$, is an equivalence of categories. The functor preserves fibre products, and for a perfectoid space $X$ the underlying topological space of $X^\flat$ is canonically homeomorphic to that of $X$, the map being a homeomorphism that identifies the structure sheaves up to tilting.
@@ -134,7 +134,7 @@ and consequently an isomorphism of étale cohomology groups $H^i_{\mathrm{\acute
 **Theorem (Fontaine–Wintenberger).** Let $K$ be a perfectoid field. Then tilting induces an equivalence of categories between the finite extensions of $K$ and the finite extensions of $K^\flat$, and an isomorphism of absolute Galois groups
 
 $$
-\operatorname{Gal}(\overline{K}/K) \cong \operatorname{Gal}(\overline{K^\flat}/K^\flat).
+\boxed{\;\operatorname{Gal}(\overline{K}/K) \cong \operatorname{Gal}(\overline{K^\flat}/K^\flat)\;}.
 $$
 
 **Proof.** A finite extension of a perfectoid field is again perfectoid, by the preservation of the two defining conditions under finite extension, and tilting is compatible with the extension; the equivalence on fields is the affine case of the tilting equivalence, and the Galois statement follows from the equivalence of finite étale algebras together with the description of the Galois group as the automorphism group of the separable closure. This is the theorem of Fontaine and Wintenberger on the field of norms, predating the general theory.
@@ -152,7 +152,7 @@ $$
 **Theorem (the primitive comparison).** Let $X$ be a smooth rigid analytic variety over a perfectoid field and let $\widehat{X}$ be the associated perfectoid space. Then there is a comparison
 
 $$
-H^i_{\mathrm{\acute{e}t}}(X, \mathbb{Z}/\ell^n\mathbb{Z}) \cong H^i_{\mathrm{pro\acute{e}t}}(\widehat{X}, \mathbb{Z}/\ell^n\mathbb{Z})
+\boxed{\;H^i_{\mathrm{\acute{e}t}}(X, \mathbb{Z}/\ell^n\mathbb{Z}) \cong H^i_{\mathrm{pro\acute{e}t}}(\widehat{X}, \mathbb{Z}/\ell^n\mathbb{Z})\;}
 $$
 
 for all $i$ and $n$, and the pro-étale cohomology groups of $\widehat{X}$ are related to the de Rham cohomology of $X$ by the $p$-adic comparison theorems.

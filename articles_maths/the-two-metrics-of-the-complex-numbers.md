@@ -113,8 +113,7 @@ The two metrics live on the same plane and are read from the two forms.
 
 **Proposition (the two quadratics differ only in the sign of the square).** For all $Q_1,Q_2$,
 
-$$
-d_{H}^{2}(Q_1,Q_2)-d_{B}^{2}(Q_1,Q_2)=2(q'_1-q'_2)^{2}, \qquad d_{H}^{2}(Q_1,Q_2)+d_{B}^{2}(Q_1,Q_2)=2(q_1-q_2)^{2}.
+$$ \boxed{\;d_{H}^{2}(Q_1,Q_2)-d_{B}^{2}(Q_1,Q_2)=2(q'_1-q'_2)^{2}, \qquad d_{H}^{2}(Q_1,Q_2)+d_{B}^{2}(Q_1,Q_2)=2(q_1-q_2)^{2}\;}.
 $$
 
 *Proof.* Add and subtract the two coordinate expressions $(q_1-q_2)^{2}\pm(q'_1-q'_2)^{2}$.
@@ -123,8 +122,7 @@ So each metric recovers one of the two squared coordinates from the pair, and th
 
 **Proposition (the forms are exchanged by conjugation in a slot).** For all $Q_1,Q_2$,
 
-$$
-H(Q_1,Q_2)=B(Q_1,\bar Q_2), \qquad B(Q_1,Q_2)=H(Q_1,\bar Q_2).
+$$ \boxed{\;H(Q_1,Q_2)=B(Q_1,\bar Q_2), \qquad B(Q_1,Q_2)=H(Q_1,\bar Q_2)\;}.
 $$
 
 *Proof.* $B(Q_1,\bar Q_2)=Q_1\bar Q_2=H(Q_1,Q_2)$, and $H(Q_1,\bar Q_2)=Q_1\overline{\bar Q_2}=Q_1Q_2=B(Q_1,Q_2)$.
@@ -133,8 +131,7 @@ The two metrics are therefore the two readings of the two forms related by conju
 
 **Proposition (multiplication by $i$ preserves one and reverses the other).** For the complex structure $J(Q)=iQ$,
 
-$$
-d_{H}^{2}(JQ_1,JQ_2)=d_{H}^{2}(Q_1,Q_2), \qquad d_{B}^{2}(JQ_1,JQ_2)=-d_{B}^{2}(Q_1,Q_2).
+$$ \boxed{\;d_{H}^{2}(JQ_1,JQ_2)=d_{H}^{2}(Q_1,Q_2), \qquad d_{B}^{2}(JQ_1,JQ_2)=-d_{B}^{2}(Q_1,Q_2)\;}.
 $$
 
 *Proof.* In coordinates $J(q_1,q'_1)=(-q'_1,q_1)$; substituting gives $(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$ unchanged and $(q_1-q_2)^{2}-(q'_1-q'_2)^{2}$ negated. Equivalently, the realified Hermitian form is preserved by $J$ and the realified bilinear form is reversed, as the realification rules record.

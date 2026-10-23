@@ -126,7 +126,7 @@ $$
 **Theorem (double centraliser).** The commutant of the left multiplications is the right multiplications and conversely,
 
 $$
-\{L_a : a\in\mathrm{Cl}(V,\mathfrak{Q})\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}.
+\boxed{\;\{L_a : a\in\mathrm{Cl}(V,\mathfrak{Q})\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}\;}.
 $$
 
 **Proof.** An operator $T$ commutes with every $L_a$ exactly when $T(ay)=aT(y)$ for all $a,y$, that is exactly when $T$ is left $\mathrm{Cl}(V,\mathfrak{Q})$-linear; such a $T$ is determined by its value at $1$, since $T(y)=T(y\cdot1)=y\,T(1)$, so $T=R_{T(1)}$. The second identity is the same statement with the multiplication reversed.
@@ -138,7 +138,7 @@ $$
 **Proposition.** The left and the right multiplications together generate the image of the enveloping algebra under
 
 $$
-\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
+\boxed{\;\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr)\;},
 $$
 
 an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,\mathfrak{Q})$ is **central simple** over $F$; otherwise it is a proper subalgebra.
@@ -151,7 +151,7 @@ an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,\math
 **Theorem.** The only left multiplications that carry the space of vectors into itself are the scalars:
 
 $$
-\{\,x : L_x(V)\subseteq V\,\}=F\cdot 1 .
+\boxed{\;\{\,x : L_x(V)\subseteq V\,\}=F\cdot 1\;} .
 $$
 
 

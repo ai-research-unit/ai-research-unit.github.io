@@ -26,7 +26,7 @@ A **proposition** is an assertion that is either true or false, and not both. Pr
 The symbols $\wedge$, $\vee$, $\neg$ are the **algebraic** connectives; $\to$ and $\leftrightarrow$ are **defined** from them by
 
 $$
-p \to q \;:\equiv\; \neg p \vee q, \qquad p \leftrightarrow q \;:\equiv\; (p \to q) \wedge (q \to p).
+\boxed{\;p \to q \;:\equiv\; \neg p \vee q, \qquad p \leftrightarrow q \;:\equiv\; (p \to q) \wedge (q \to p)\;}.
 $$
 
 The definition of implication is the material one: $p \to q$ is false exactly when $p$ is true and $q$ is false. It is not a statement of causation. A compound proposition built from a fixed finite list of atoms is a **formula**, written $\varphi, \psi, \chi$.
@@ -81,7 +81,7 @@ $$
 of assignments making it true. Then
 
 $$
-[[\neg\varphi]] = \{0,1\}^n \setminus [[\varphi]], \qquad [[\varphi \wedge \psi]] = [[\varphi]] \cap [[\psi]], \qquad [[\varphi \vee \psi]] = [[\varphi]] \cup [[\psi]],
+\boxed{\;[[\neg\varphi]] = \{0,1\}^n \setminus [[\varphi]], \qquad [[\varphi \wedge \psi]] = [[\varphi]] \cap [[\psi]], \qquad [[\varphi \vee \psi]] = [[\varphi]] \cup [[\psi]]\;},
 $$
 
 so the map $\varphi \mapsto [[\varphi]]$ carries the logic of $n$ atoms onto the power-set algebra of a set with $2^n$ points. Tautologies are the formulas with $[[\varphi]] = \{0,1\}^n$; contradictions are those with $[[\varphi]] = \emptyset$; and logical equivalence is equality of truth sets. This is the precise sense in which the algebra of propositions and the algebra of subsets are one structure, and both are instances of the **Boolean algebras** developed in Part V. The number $2^n$ is a cardinality, computed.

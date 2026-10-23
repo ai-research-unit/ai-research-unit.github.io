@@ -148,7 +148,7 @@ in which the first map is the Thom isomorphism of the normal bundle, the second 
 **Theorem (Atiyah–Singer).** Let $M$ be a closed smooth manifold and let $D$ be an elliptic operator on $M$. Then
 
 $$
-\operatorname{ind}_a(D)=\operatorname{ind}_t\bigl([\sigma(D)]\bigr).
+\boxed{\;\operatorname{ind}_a(D)=\operatorname{ind}_t\bigl([\sigma(D)]\bigr)\;}.
 $$
 
 In particular the analytic index depends only on the symbol class, and the symbolic homomorphism $\operatorname{ind}_a$ of the previous section equals the topological homomorphism.
@@ -164,7 +164,7 @@ $$
 and for the Cauchy–Riemann operator of the spinor bundle twisted by a Clifford module bundle $W$ on a closed spin manifold $M$,
 
 $$
-\operatorname{ind}=\int_M\hat{A}(TM)\wedge\operatorname{ch}(W).
+\boxed{\;\operatorname{ind}=\int_M\hat{A}(TM)\wedge\operatorname{ch}(W)\;}.
 $$
 
 In general the Chern character converts the $K$-theoretic statement into a cohomological one: the cohomological Thom isomorphism is multiplication by a characteristic class of the bundle — the Todd class in the complex case — and the remaining step is the integration over the manifold.
@@ -190,7 +190,7 @@ and as $t\to0^{+}$ the pointwise supertrace of the heat kernel has an asymptotic
 **Theorem (spin case).** Let $(M,g)$ be a closed spin manifold of even dimension, let $E=S\otimes W$ be a twisted Clifford module bundle with twisting bundle $W$, and let $D_E$ be the twisted Cauchy–Riemann operator. Then the symbol class is the class of the spinor bundle together with the twisting, and the index reduces to the characteristic number
 
 $$
-\operatorname{ind}(D_E)=\int_M\hat{A}(TM)\operatorname{ch}(W).
+\boxed{\;\operatorname{ind}(D_E)=\int_M\hat{A}(TM)\operatorname{ch}(W)\;}.
 $$
 
 In particular, for untwisted $W$ the index is the $\hat{A}$-genus of $M$, and the spin case of the theorem is the statement that the index of the Cauchy–Riemann operator is a topological characteristic number.

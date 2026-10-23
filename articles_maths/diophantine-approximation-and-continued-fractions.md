@@ -62,7 +62,7 @@ $$
 **Theorem (Hurwitz).** For every irrational $\alpha$ there are infinitely many $r/s$ with
 
 $$
-\left\lvert \alpha - \frac{r}{s} \right\rvert < \frac{1}{\sqrt5\, s^2} .
+\boxed{\;\left\lvert \alpha - \frac{r}{s} \right\rvert < \frac{1}{\sqrt5\, s^2} \;}.
 $$
 
 The constant $\sqrt5$ is best possible: for $\alpha = \varphi = (1+\sqrt5)/2$ and every $c > \sqrt5$, the inequality $\lvert \varphi - r/s\rvert < 1/(c s^2)$ has only finitely many solutions. Thus $\varphi$ is badly approximable and its Lagrange constant is $1/\sqrt5$.
@@ -138,13 +138,12 @@ $$
 **Theorem.** The convergents satisfy
 
 $$
-r_n s_{n-1} - r_{n-1} s_n = (-1)^{n-1}, \qquad r_n s_{n-2} - r_{n-2} s_n = (-1)^n a_n,
+\boxed{\;r_n s_{n-1} - r_{n-1} s_n = (-1)^{n-1}, \qquad r_n s_{n-2} - r_{n-2} s_n = (-1)^n a_n\;},
 $$
 
 so that $r_n$ and $s_n$ are coprime, and for every $n$,
 
-$$
-\left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}} < \frac{1}{s_n^2} .
+$$ \boxed{\;\left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}} < \frac{1}{s_n^2} \;}.
 $$
 
 **Proof.** The determinant identities are inductions on $n$ from the recurrences; the coprimality is the first identity. The estimate follows from the identity
@@ -172,7 +171,7 @@ $$
 **Theorem.** Every irrational $\alpha$ has a unique infinite continued fraction $[a_0; a_1, a_2, \dots]$, and the convergents converge to $\alpha$:
 
 $$
-\alpha = \lim_{n\to\infty} \frac{r_n}{s_n}, \qquad \left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}} .
+\boxed{\;\alpha = \lim_{n\to\infty} \frac{r_n}{s_n}, \qquad \left\lvert \alpha - \frac{r_n}{s_n} \right\rvert < \frac{1}{s_n s_{n+1}}\;}.
 $$
 
 The map $\alpha \mapsto (a_0, a_1, a_2, \dots)$ is a bijection from the irrationals to the sequences with $a_i \geq 1$ for $i \geq 1$, and $\alpha$ is rational exactly when its expansion is finite.
@@ -229,8 +228,7 @@ with the error in the approximation $\mu(T^{-n}([0,t])) = \log(1+t)/\log 2 + O(\
 
 **Theorem (Khinchin's constant).** For almost every $b$ the geometric mean of the partial quotients converges:
 
-$$
-\lim_{n\to\infty} (a_1 a_2 \cdots a_n)^{1/n} = K_0, \qquad K_0 = \prod_{k=1}^{\infty}\left(1 + \frac{1}{k(k+2)}\right)^{\log_2 k} = 2.6854520010\dots .
+$$ \boxed{\;\lim_{n\to\infty} (a_1 a_2 \cdots a_n)^{1/n} = K_0, \qquad K_0 = \prod_{k=1}^{\infty}\left(1 + \frac{1}{k(k+2)}\right)^{\log_2 k} = 2.6854520010\dots \;}.
 $$
 
 **Theorem (Lévy's constant).** For almost every $b$ the denominators of the convergents grow exponentially:

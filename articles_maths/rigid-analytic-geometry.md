@@ -84,7 +84,7 @@ $$
 **Theorem (Weierstrass division).** Let $f \in K\langle X_1, \dots, X_n\rangle$ be distinguished of order $d$ in $X_n$, and let $g \in K\langle X_1, \dots, X_n\rangle$. Then there are a unique $q \in K\langle X_1, \dots, X_n\rangle$ and a unique $r \in K\langle X_1, \dots, X_{n-1}\rangle[X_n]$ of degree $< d$ in $X_n$ with
 
 $$
-g = qf + r,
+\boxed{\;g = qf + r\;},
 $$
 
 and $\lVert q \rVert_G \leq \lVert f \rVert_G^{-1}\lVert g \rVert_G$.
@@ -110,7 +110,7 @@ with $u \in K\langle X_1, \dots, X_n\rangle^\times$ a unit and $g \in K\langle X
 **Theorem (maximum modulus principle).** Let $f \in K\langle X_1, \dots, X_n\rangle$. Then
 
 $$
-\sup_{x \in \operatorname{Sp} K\langle X_1, \dots, X_n\rangle} \lvert f(x) \rvert = \lVert f \rVert_G ,
+\boxed{\;\sup_{x \in \operatorname{Sp} K\langle X_1, \dots, X_n\rangle} \lvert f(x) \rvert = \lVert f \rVert_G\;} ,
 $$
 
 and the supremum is attained.
@@ -209,7 +209,7 @@ The **strong G-topology** is the Grothendieck topology whose admissible open set
 **Theorem (GAGA; Kiehl, Köpf).** Let $X$ be a projective algebraic variety over $K$ and let $X^{\mathrm{an}}$ be its **analytification**, obtained by gluing the affinoid spaces associated to an affine cover of $X$. Then analytification induces an equivalence of categories
 
 $$
-\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X^{\mathrm{an}}),
+\boxed{\;\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X^{\mathrm{an}})\;},
 $$
 
 and for projective $X$ the analytification functor is fully faithful, $\operatorname{Hom}(X, Y) \cong \operatorname{Hom}(X^{\mathrm{an}}, Y^{\mathrm{an}})$ for projective $X$ and $Y$. In particular the coherent sheaves on $X^{\mathrm{an}}$, its closed analytic subsets and its finite étale covers are all algebraic.

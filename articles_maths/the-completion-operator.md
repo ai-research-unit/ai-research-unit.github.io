@@ -14,7 +14,7 @@ Throughout, $R$ is a topological ring carrying a linear topology, that is a topo
 **Definition.** Let $R$ be a topological ring with a linear topology given by a fundamental system of neighbourhoods of zero consisting of ideals $\{I_\lambda\}_{\lambda \in \Lambda}$, directed by containment. The **completion** of $R$ is the inverse limit
 
 $$
-\widehat{R} = \varprojlim_{\lambda} R/I_\lambda ,
+\boxed{\;\widehat{R} = \varprojlim_{\lambda} R/I_\lambda\;} ,
 $$
 
 taken in the category of rings, with the inverse limit topology, and the **canonical map** $\iota_R : R \to \widehat{R}$ sends $x$ to the family of its classes. When the topology is the $I$-adic topology of a single ideal $I$, so that the fundamental system is $\{I^n\}_{n\geq 0}$, this reads $\widehat{R} = \varprojlim_n R/I^n$.
@@ -72,7 +72,7 @@ So the completion of a non-Hausdorff ring is the completion of its Hausdorff quo
 **Proposition (ideals).** Let $I$ be an ideal of $R$ with the subspace topology and the induced linear topology. Then $\widehat{I}$ is an ideal of $\widehat{R}$, the inclusion extends to a continuous injective map $\widehat{I} \to \widehat{R}$, and when $I$ is closed and $R$ is complete the map is a homeomorphism onto $I$. The completion of the quotient is the quotient of the completion,
 
 $$
-\widehat{R/I} \cong \widehat{R}/\widehat{I} ,
+\boxed{\;\widehat{R/I} \cong \widehat{R}/\widehat{I}\;} ,
 $$
 
 for the topology on $R/I$ given by the images of the $I_\lambda$.

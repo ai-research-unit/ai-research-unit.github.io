@@ -104,7 +104,7 @@ The density theorem of *Automorphisms of Modules over an Algebra* says that the 
 **Theorem (density).** Let $S$ be a simple left $A$-module and put $D=\operatorname{End}_A(S)$, a division ring by Schur's lemma, acting on $S$ on the left. Let $x_1,\dots,x_n \in S$ be $D$-linearly independent and let $y_1,\dots,y_n \in S$ be arbitrary. Then there exists $a \in A$ with
 
 $$
-a x_i = y_i \qquad (i=1,\dots,n).
+\boxed{\;a x_i = y_i \qquad (i=1,\dots,n)\;}.
 $$
 
 *Proof sketch.* For $n=1$ simplicity gives $S=A x_1$, so some $a$ carries $x_1$ to $y_1$. For general $n$, form the submodule $N=\{(a x_1,\dots,a x_n) : a \in A\} \subseteq S^n$; one shows $N=S^n$ by using the $D$-independence of the $x_i$ and the simplicity of $S$, and a surjectivity statement on $S^n$ is exactly the existence of $a$ with the prescribed values. The complete argument is in *Automorphisms of Modules over an Algebra*.
@@ -116,7 +116,7 @@ The theorem measures the image of the algebra inside the operators of the module
 **Corollary.** Let $S$ be simple and $D=\operatorname{End}_A(S)$. Then the bicommutant of $L_A$ in $\operatorname{End}_R(S)$ is $\operatorname{End}_D(S)$, and the density theorem says that $L_A$ is large inside it: no element of $\operatorname{End}_D(S)$ is separated from $L_A$ by finitely many conditions — for finitely many $D$-independent $x_1,\dots,x_n$ and arbitrary $y_1,\dots,y_n$, some $a \in A$ has $a x_i=y_i$. In particular, if $S$ is finite-dimensional over an algebraically closed field $F$, then $\operatorname{End}_A(S)=F$ and the density theorem gives
 
 $$
-A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S).
+\boxed{\;A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S)\;}.
 $$
 
 *Proof.* The centralizer of $L_A$ is $D$, so the centralizer of $D$ — the bicommutant — is $\operatorname{End}_D(S)$. The middle clause is the theorem restated. For the last, Schur's lemma gives $D=F$ when $F$ is algebraically closed and $S$ is finite-dimensional, and $S$ being finite-dimensional over $F$ means the finite conditions already determine every operator, so a subalgebra realising every finite set of values is all of $\operatorname{End}_F(S)$; passing to the image gives $A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S)$.
@@ -128,7 +128,7 @@ The density theorem computes the endomorphism ring of a sum of copies of one sim
 **Proposition.** Let $S$ be simple with $D=\operatorname{End}_A(S)$ and let $M=S^n$ be a finite direct sum. Then
 
 $$
-\operatorname{End}_A(M) \cong M_n(D),
+\boxed{\;\operatorname{End}_A(M) \cong M_n(D)\;},
 $$
 
 and with $D$-linear coordinates the endomorphisms act by matrices.

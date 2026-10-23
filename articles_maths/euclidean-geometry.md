@@ -24,7 +24,7 @@ the **norm** $|x| = \sqrt{\langle x, x\rangle}$, and the **distance** $d(x, y) =
 **Theorem (Cauchy–Schwarz).** For all $x, y \in \mathbb{R}^n$,
 
 $$
-|\langle x, y\rangle| \leq |x|\,|y| ,
+\boxed{\;|\langle x, y\rangle| \leq |x|\,|y|\;} ,
 $$
 
 with equality if and only if $x$ and $y$ are linearly dependent.
@@ -48,7 +48,7 @@ which is well defined by the Cauchy–Schwarz inequality. The vectors are **orth
 **Theorem.** Every isometry of $\mathbb{R}^n$ is of the form
 
 $$
-F(x) = Ax + b, \qquad A \in O(n), \quad b \in \mathbb{R}^n ,
+\boxed{\;F(x) = Ax + b, \qquad A \in O(n), \quad b \in \mathbb{R}^n\;} ,
 $$
 
 and the representation is unique. Consequently $E(n)$ is the semidirect product $\mathbb{R}^n \rtimes O(n)$, with multiplication $(A, b)(A', b') = (AA', Ab' + b)$, and it is a Lie group of dimension $n(n+1)/2$; the subgroup of orientation-preserving isometries is $\mathbb{R}^n \rtimes SO(n)$.
@@ -104,7 +104,7 @@ $$
 **Theorem (law of cosines).** In a triangle with sides $a, b, c$ and the angle $\gamma$ between the sides $a$ and $b$,
 
 $$
-c^2 = a^2 + b^2 - 2ab\cos\gamma .
+\boxed{\;c^2 = a^2 + b^2 - 2ab\cos\gamma\;} .
 $$
 
 For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement of the polarisation identity for the inner product. In the analytic language it is the immediate computation $|x - y|^2 = |x|^2 + |y|^2 - 2\langle x, y\rangle$ with $\langle x, y\rangle = ab\cos\gamma$.

@@ -25,7 +25,7 @@ The algebra, the grading and the three involutions are *Clifford Algebras* and *
 **Proposition (the parity sign, restated as a statement about the grading).** For homogeneous $x$ the twist is the sign character on the left factor, $\alpha(x)=\varepsilon_x x$, so
 
 $$
-\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x .
+\boxed{\;\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x\;} .
 $$
 
 The operator family is therefore a graded deformation of the Hermitian family: the two agree on $\mathrm{Cl}^0$, the even part of the algebra of operators, and differ by $-1$ on $\mathrm{Cl}^1$.
@@ -73,7 +73,7 @@ $$
 **Corollary (two odd steps give an ordinary step).** If $x$ and $z$ are both odd then $xz$ is even, $\varepsilon_{xz}=+1$, and
 
 $$
-\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\Theta_{xz},
+\boxed{\;\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\Theta_{xz}\;},
 $$
 
 an **ordinary** Hermitian sandwich. The square of an odd step is ordinary as well, $(\Theta^{\alpha}_x)^{2}=\Theta_{x^{2}}$.
@@ -96,7 +96,7 @@ $$
 **Corollary (the double cover of the pin group).** With the trivial involution and a definite form, $U=\mathrm{Pin}(V,\mathfrak{Q})$ (for an indefinite form $U\cap\Gamma=\{N=1\}$ is the double cover of the identity component, while $\Gamma_{\dagger}=\mathrm{Pin}$ always), the even part $U^0$ is the spin group, and
 
 $$
-\mathrm{Pin}=\mathrm{Spin}\sqcup(\text{odd coset}),\qquad \mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2 ,
+\boxed{\;\mathrm{Pin}=\mathrm{Spin}\sqcup(\text{odd coset}),\qquad \mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2\;} ,
 $$
 
 whenever the odd part is non-empty, which over $\mathbb{R}$ always holds since a vector can be rescaled to square $-1$. Hence the odd part is a coset and it is the coset that carries the reflections; the signed Hermitian sandwich is constant on the two cosets up to the sign.

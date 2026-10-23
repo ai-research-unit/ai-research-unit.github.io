@@ -30,7 +30,7 @@ The composition being a morphism of complexes means $d(f\circ g) = (df)\circ g +
 **Definition.** The **homotopy category** $H^0(\mathcal{A})$ has the same objects as $\mathcal{A}$, and morphisms
 
 $$
-\operatorname{Hom}_{H^0(\mathcal{A})}(x,y) = H^0\bigl(\operatorname{Hom}_{\mathcal{A}}(x,y)\bigr) = \ker\bigl(d : \operatorname{Hom}^0\to\operatorname{Hom}^1\bigr)\big/\operatorname{im}\bigl(d : \operatorname{Hom}^{-1}\to\operatorname{Hom}^0\bigr) .
+\boxed{\;\operatorname{Hom}_{H^0(\mathcal{A})}(x,y) = H^0\bigl(\operatorname{Hom}_{\mathcal{A}}(x,y)\bigr) = \ker\bigl(d : \operatorname{Hom}^0\to\operatorname{Hom}^1\bigr)\big/\operatorname{im}\bigl(d : \operatorname{Hom}^{-1}\to\operatorname{Hom}^0\bigr)\;} .
 $$
 
 Thus a morphism in $H^0(\mathcal{A})$ is a homotopy class of degree-$0$ cycles, and the composition is induced by that of $\mathcal{A}$; the definition is a verbatim generalisation of the homotopy category of DG modules of *Differential Graded Algebras*.
@@ -78,7 +78,7 @@ with differential $(df)(m) = d_Nf(m) - (-1)^{\lvert f\rvert}f(d_Mm)$ and composi
 3. A DG functor $F : \mathcal{A}\to\mathcal{B}$ induces a triangulated functor $D(\mathcal{A})\to D(\mathcal{B})$; $F$ is a quasi-equivalence if and only if $F$ is fully faithful on $H^0$ and essentially surjective, and then $D(\mathcal{A})\simeq D(\mathcal{B})$.
 4. Every quasi-equivalence of DG categories induces an equivalence of derived categories, and the **derived Morita theory** states the converse: two small DG categories have equivalent derived categories if and only if their DG categories of compact modules are quasi-equivalent,
 $$
-   D(\mathcal{A})\simeq D(\mathcal{B}) \iff \mathrm{perf}(\mathcal{A})\simeq_{\mathrm{qe}}\mathrm{perf}(\mathcal{B}) ,
+   \boxed{\;D(\mathcal{A})\simeq D(\mathcal{B}) \iff \mathrm{perf}(\mathcal{A})\simeq_{\mathrm{qe}}\mathrm{perf}(\mathcal{B})\;} ,
 $$
    where $\simeq_{\mathrm{qe}}$ denotes quasi-equivalence. In that case $\mathcal{A}$ and $\mathcal{B}$ are **derived Morita equivalent**.
 

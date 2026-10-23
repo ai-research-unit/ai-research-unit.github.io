@@ -39,7 +39,7 @@ $$
 **Remark.** The parity (linear, conjugate, linear) is the ternary form of the parity rule of the block: one slot is conjugated and the two others are not, and the bookkeeping "one conjugation for each conjugate slot" is the same one that governs the conjugate dual, the transpose and the transport of *Conjugate-Linear Maps and the Conjugate Dual*. The operator form of the defining identity,
 
 $$
-[L(x,y), L(u,v)] = L(\{x,y,u\}, v) - L(u, \{y,x,v\}), \qquad L(x,y)z = \{x,y,z\},
+\boxed{\;[L(x,y), L(u,v)] = L(\{x,y,u\}, v) - L(u, \{y,x,v\}), \qquad L(x,y)z = \{x,y,z\}\;},
 $$
 
 turns the identity into a commutation relation of the operators $L(x,y)$, which are taken up in *The Ternary Product as an Operator*.
@@ -97,7 +97,7 @@ which is diagonal and hence outside $W$ as soon as $ad \neq 0$ or $bc \neq 0$; s
 **Proposition (the outer symmetry is not an axiom).** The defining axioms do not include the outer symmetry $\{x,y,z\} = \{z,y,x\}$, and it is not a consequence: on $M_2(\mathbb{C})$ with $\varsigma(z) = \bar z$,
 
 $$
-\{E_{12}, E_{11}, E_{11}\} = 0 \neq E_{12} = \{E_{11}, E_{11}, E_{12}\} .
+\boxed{\;\{E_{12}, E_{11}, E_{11}\} = 0 \neq E_{12} = \{E_{11}, E_{11}, E_{12}\}\;} .
 $$
 
 **Proof.** $\{E_{12}, E_{11}, E_{11}\} = E_{12}E_{11}E_{11} = (E_{12}E_{11})E_{11} = 0$, since $E_{12}E_{11} = 0$; and $\{E_{11}, E_{11}, E_{12}\} = E_{11}E_{11}E_{12} = E_{11}E_{12} = E_{12}$.

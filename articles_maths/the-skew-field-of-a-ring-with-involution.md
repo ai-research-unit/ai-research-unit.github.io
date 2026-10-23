@@ -16,7 +16,7 @@ $$
 **Proposition.** $\mathrm{Sym}(A,\sigma)$ and $\mathrm{Skew}(A,\sigma)$ are additive subgroups of $A$, they intersect in $\{0\}$, and for $2$ invertible
 
 $$
-A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma), \qquad x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x)).
+\boxed{\;A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma), \qquad x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x))\;}.
 $$
 
 An element is symmetric and skew at once exactly when $2x = 0$; in particular the intersection is trivial in characteristic not two and equals $\{x : 2x = 0\}$ in general.
@@ -40,7 +40,7 @@ and the two products of a symmetric and a skew element have a fixed behaviour th
 **Theorem (the commutator and the anti-commutator).** For all homogeneous pairs the following hold with no commutativity hypothesis:
 
 $$
-[x,y] = xy-yx \in \mathrm{Skew} \ \text{if } x, y \in \mathrm{Skew}, \qquad [x,y] \in \mathrm{Sym} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew},
+\boxed{\;[x,y] = xy-yx \in \mathrm{Skew} \ \text{if } x, y \in \mathrm{Skew}, \qquad [x,y] \in \mathrm{Sym} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew}\;},
 $$
 
 $$
@@ -60,7 +60,7 @@ In particular $\mathrm{Skew}(A,\sigma)$ is closed under the commutator and is a 
 **Proposition.** Let $\tau$ be a $\sigma$-invariant trace and let $2$ be invertible in $A$ and in $k$. Then
 
 $$
-\tau(\mathrm{Skew}(A,\sigma)) = 0, \qquad \tau\bigl(\mathrm{Sym}(A,\sigma)\cdot\mathrm{Skew}(A,\sigma)\bigr) = 0 .
+\boxed{\;\tau(\mathrm{Skew}(A,\sigma)) = 0, \qquad \tau\bigl(\mathrm{Sym}(A,\sigma)\cdot\mathrm{Skew}(A,\sigma)\bigr) = 0\;} .
 $$
 
 **Proof.** For skew $x$ one has $\tau(x) = \tau(\sigma(x)) = \tau(-x) = -\tau(x)$, so $2\tau(x) = 0$ and $\tau(x) = 0$. For symmetric $x$ and skew $y$, $\tau(xy) = \tau(\sigma(xy)) = \tau(\sigma(y)\sigma(x)) = \tau((-y)x) = -\tau(yx) = -\tau(xy)$, so again $2\tau(xy) = 0$.

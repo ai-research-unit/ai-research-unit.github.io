@@ -34,7 +34,7 @@ equivalently $d_H^Z(A,B) = \max\bigl(\sup_{a\in A}d(a,B), \sup_{b\in B}d(b,A)\bi
 **Definition.** Let $(X, d_X)$ and $(Y, d_Y)$ be compact metric spaces. The **Gromov–Hausdorff distance** is
 
 $$
-d_{GH}(X, Y) = \inf\Bigl\{ d_H^Z\bigl(i(X), j(Y)\bigr) : Z\ \text{a metric space},\ i : X \to Z,\ j : Y \to Z\ \text{isometric embeddings}\Bigr\},
+\boxed{\;d_{GH}(X, Y) = \inf\Bigl\{ d_H^Z\bigl(i(X), j(Y)\bigr) : Z\ \text{a metric space},\ i : X \to Z,\ j : Y \to Z\ \text{isometric embeddings}\Bigr\}\;},
 $$
 
 the infimum over all metric spaces $Z$ in which both $X$ and $Y$ embed isometrically and over all such embeddings.
@@ -44,13 +44,13 @@ the infimum over all metric spaces $Z$ in which both $X$ and $Y$ embed isometric
 **Theorem (the Kuratowski embedding).** Every separable metric space $(X, d)$ embeds isometrically into $\ell^\infty(X)$, the Banach space of bounded real functions on $X$ with the supremum norm, by the map
 
 $$
-\Phi : X \to \ell^\infty(X), \qquad \Phi(x) = d(x, \cdot) - d(x_0, \cdot)
+\boxed{\;\Phi : X \to \ell^\infty(X), \qquad \Phi(x) = d(x, \cdot) - d(x_0, \cdot)\;}
 $$
 
 for a fixed base point $x_0$. Consequently the Gromov–Hausdorff distance of two compact spaces may be computed by embedding both into a single Banach space, and
 
 $$
-d_{GH}(X, Y) = \inf_{i, j} d_H^{\ell^\infty}\bigl(i(X), j(Y)\bigr)
+\boxed{\;d_{GH}(X, Y) = \inf_{i, j} d_H^{\ell^\infty}\bigl(i(X), j(Y)\bigr)\;}
 $$
 
 over the isometric embeddings into $\ell^\infty$.

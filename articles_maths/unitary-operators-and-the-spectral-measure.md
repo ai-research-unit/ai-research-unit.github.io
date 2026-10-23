@@ -31,7 +31,7 @@ Throughout, $H$ is a complex Hilbert space with inner product linear in the firs
 **Proposition (the topologies of the unitary group).** The unitary group carries the norm, strong operator and weak operator topologies, and
 
 $$
-\text{norm}\ \subsetneq\ \text{SOT}\ \subsetneq\ \text{WOT}
+\boxed{\;\text{norm}\ \subsetneq\ \text{SOT}\ \subsetneq\ \text{WOT}\;}
 $$
 
 with the SOT and WOT coinciding on the unitary group; it is SOT- and WOT-compact, so $\mathrm{U}(H)$ is a compact Hausdorff topological group in the strong topology, and it is metrisable there when $H$ is separable.
@@ -43,7 +43,7 @@ with the SOT and WOT coinciding on the unitary group; it is SOT- and WOT-compact
 **Theorem (spectral theorem for a unitary).** For every unitary $U$ there is a spectral measure $E$ on the Borel subsets of $\mathbb{T}$ with
 
 $$
-U=\int_{\mathbb{T}}z\,dE(z),
+\boxed{\;U=\int_{\mathbb{T}}z\,dE(z)\;},
 $$
 
 and the support of $E$ is $\sigma(U)\subseteq\mathbb{T}$; for every bounded Borel function $f$ on $\mathbb{T}$ the operator $f(U)=\int f\,dE$ is bounded with $\|f(U)\|=\sup_{z\in\mathbb{T}}|f(z)|$, the map $f\mapsto f(U)$ is an isometric $*$-homomorphism, and $U$ is unitarily equivalent to a multiplication by the independent variable on a direct sum of $L^2(\mathbb{T},\mu_j)$.
@@ -65,7 +65,7 @@ and the support of $E$ is $\sigma(U)\subseteq\mathbb{T}$; for every bounded Bore
 **Theorem (Stone).** For every strongly continuous one-parameter unitary group $t\mapsto T(t)$ there is a self-adjoint operator $A$, generally unbounded, with
 
 $$
-T(t)=\exp(itA)\quad(t\in\mathbb{R}),
+\boxed{\;T(t)=\exp(itA)\quad(t\in\mathbb{R})\;},
 $$
 
 and $A$ is the generator of the group, determined by $A=\lim_{t\to0}(T(t)-I)/it$ on its domain;

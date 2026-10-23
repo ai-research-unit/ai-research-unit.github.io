@@ -35,7 +35,7 @@ $$
 **Theorem (the decomposition into the two halves).** Suppose $2$ is invertible in $R$. Then $H(A) \cap S(A) = 0$, and every $x \in A$ has the unique decomposition
 
 $$
-x = \frac{x + x^{*}}{2} + \frac{x - x^{*}}{2}, \qquad \frac{x + x^{*}}{2} \in H(A), \qquad \frac{x - x^{*}}{2} \in S(A) ,
+\boxed{\;x = \frac{x + x^{*}}{2} + \frac{x - x^{*}}{2}, \qquad \frac{x + x^{*}}{2} \in H(A), \qquad \frac{x - x^{*}}{2} \in S(A)\;} ,
 $$
 
 so that $A = H(A) \oplus S(A)$ as $R^{\varsigma}$-modules.
@@ -83,7 +83,7 @@ hence $h \in H(A)$ and $s \in S(A)$, and $h + s = x$ by inspection. For the inte
 **Theorem (the sesquilinear product splits over the halves).** Let $2$ be invertible in $R$ and let $y = h + s$ be the decomposition of $y$ into its Hermitian and skew-Hermitian parts. Then for every $x \in A$,
 
 $$
-x \star y = xy^{*} = xh - xs .
+\boxed{\;x \star y = xy^{*} = xh - xs\;} .
 $$
 
 **Proof.** $y^{*} = h^{*} + s^{*} = h - s$, so $xy^{*} = x(h - s) = xh - xs$.

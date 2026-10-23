@@ -72,7 +72,7 @@ So $\mathbb{D}$ is not a field, and not a division algebra. This is the fundamen
 The product of two split complex numbers is defined by extending the real multiplication bilinearly:
 
 $$
-\boxed{\;Q B = (q + j q')(b + j b') = (q b + q' b') + (q b' + q' b) j, \qquad Q = q + j q', \quad B = b + j b'\;}.
+Q B = (q + j q')(b + j b') = (q b + q' b') + (q b' + q' b) j, \qquad Q = q + j q', \quad B = b + j b'.
 $$
 
 In developed form,
@@ -185,13 +185,13 @@ This is the **idempotent decomposition** of $Q$. It is the single most important
 The map
 
 $$
-\boxed{\;\varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q')\;},
+\varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q'),
 $$
 
 is an algebra isomorphism. It is bijective, and it satisfies
 
 $$
-\varphi(Q + B) = \varphi(Q) + \varphi(B), \qquad \varphi(Q B) = \varphi(Q) \varphi(B),
+\boxed{\;\varphi(Q + B) = \varphi(Q) + \varphi(B), \qquad \varphi(Q B) = \varphi(Q) \varphi(B)\;},
 $$
 
 where the multiplication on $\mathbb{R} \oplus \mathbb{R}$ is componentwise:
@@ -279,7 +279,7 @@ so $1+j$ and $1-j$ are non-zero elements with zero product, and $\mathbb{D}$ is 
 **Proposition.** Write $Q = Q_+\Pi_+ + Q_-\Pi_-$ in the idempotent basis, with $Q$ not both coordinates zero. Then $Q$ is a zero divisor if and only if one of $Q_+, Q_-$ vanishes; if both are nonzero then $Q$ is a unit, with inverse
 
 $$
-Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-.
+\boxed{\; Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_- \;}.
 $$
 
 **Proof.** In the idempotent basis multiplication is componentwise, $QB = Q_+B_+\Pi_+ + Q_-B_-\Pi_-$. If $Q_+ = 0$ then $Q\Pi_+ = Q_-\Pi_-\Pi_+ = 0$ with $\Pi_+ \neq 0$, so $Q$ is a zero divisor, and symmetrically for $Q_- = 0$. If both coordinates are nonzero, the displayed formula gives $Q Q^{-1} = \Pi_+ + \Pi_- = 1$, so $Q$ is a unit, and a unit is never a zero divisor.

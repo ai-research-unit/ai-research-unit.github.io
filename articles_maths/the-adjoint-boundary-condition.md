@@ -45,7 +45,7 @@ and the **adjoint boundary condition** is the condition whose boundary subspace 
 **Theorem (the adjoint of a boundary-value problem).** Let $L$ be a differential operator with smooth coefficients and let $B$ be a boundary condition with boundary subspace $M$. Then the realisation of $L$ under $B$ has the adjoint realisation of $L^{\dagger}$ under $B^{*}$, where $B^{*}$ is the boundary condition with subspace $M^{\perp}$:
 
 $$
-(L,B)^{*} = (L^{\dagger},B^{*}) .
+\boxed{\;(L,B)^{*} = (L^{\dagger},B^{*})\;} .
 $$
 
 *Proof.* The domain of the adjoint consists of the $v$ for which $u\mapsto\langle Lu,v\rangle$ is bounded by the norm on the admissible subspace. By the Green formula, $\langle Lu,v\rangle=\langle u,L^{\dagger}v\rangle+\langle u,v\rangle_\partial$; the first term is controlled by $L^{\dagger}v$ and the second by the boundary data, so the boundedness is the simultaneous requirement $L^{\dagger}v\in L^2$ and $\langle m,\Sigma\gamma v\rangle=0$ for every $m\in M$, that is $\gamma v\in M^{\perp}$; the action of the adjoint is $L^{\dagger}v$.
@@ -53,7 +53,7 @@ $$
 **Theorem (the self-adjointness criterion).** Let $L$ be formally self-adjoint, $L=L^{\dagger}$. Then the realisation of $L$ under $B$ is self-adjoint if and only if
 
 $$
-M^{\perp} = M ,
+\boxed{\;M^{\perp} = M\;} ,
 $$
 
 that is, if and only if $M$ is isotropic for the boundary form and of half the dimension of $\mathcal{B}$; such a subspace is **Lagrangian**, and the condition is **self-adjoint**.
@@ -79,7 +79,7 @@ where $u_1=u$, $u_2=pu'$ are the components of the boundary data and $[\,\cdot\,
 **Theorem (the self-adjoint conditions).** The Lagrangian subspaces of the four-dimensional boundary space are exactly the self-adjoint boundary conditions of the Sturm–Liouville problem: they comprise the separated conditions
 
 $$
-\alpha_1u(a)+\alpha_2(pu')(a)=0,\qquad \beta_1u(b)+\beta_2(pu')(b)=0 ,
+\boxed{\;\alpha_1u(a)+\alpha_2(pu')(a)=0,\qquad \beta_1u(b)+\beta_2(pu')(b)=0\;} ,
 $$
 
 with real $(\alpha_1,\alpha_2)$ and $(\beta_1,\beta_2)$ not both zero, and the coupled conditions, in which the boundary values at $a$ and at $b$ are related by a matrix whose graph is Lagrangian; the operator with such a domain is self-adjoint, and the classical Sturm–Liouville problems of *The Sturm–Liouville Operator* are the instances.

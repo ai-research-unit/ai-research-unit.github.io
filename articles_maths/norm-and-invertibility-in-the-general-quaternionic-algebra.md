@@ -37,8 +37,8 @@ Throughout this article the product is the general quaternionic bilinear product
 $$
 \boxed{\;
 \tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t , \qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=Q_t^2+(\vec Q,\vec Q)
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** The first display is the definition of the product at equal arguments; the scalar–vector form of *Introduction to the General Quaternionic Algebra* gives $\tilde Q^{\natural}\tilde Q=(Q_t-\vec Q)(Q_t+\vec Q)=Q_t^2-\vec Q^2$, and $\vec Q^2=-(\vec Q,\vec Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_t+\vec Q)(Q_t-\vec Q)=Q_t^2-\vec Q^2$, gives the same value.
 
@@ -70,8 +70,8 @@ The symmetric half read as an operation, with its centrality, its coefficient on
 $$
 \boxed{\;
 \langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}
-\;}
-$$,
+\;},
+$$
 
 and it is invariant under the natural conjugation, $\langle\tilde Q_1^{\natural}\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}$.
 
@@ -184,8 +184,8 @@ have a solution exactly when $\langle\tilde Q_1\rangle_{\natural}\neq0$, and the
 $$
 \boxed{\;
 \tilde Q_2=(\tilde Q_1^{-1})^{\natural}=\frac{\tilde Q_1^{\natural\natural}}{\langle\tilde Q_1^{\natural}\rangle_{\natural}}=\frac{\tilde Q_1}{\langle\tilde Q_1\rangle_{\natural}}
-\;}
-$$,
+\;},
+$$
 
 where $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$ is the inverse of the plain product. When $\langle\tilde Q_1\rangle_{\natural}=0$ neither equation has a solution.
 

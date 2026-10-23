@@ -31,7 +31,7 @@ The quotient $G/[G,G]$ is the **abelianisation** of $G$, and it is the largest a
 **Definition.** The **derived series** of a group $G$ is the descending chain
 
 $$
-G^{(0)} = G, \qquad G^{(i+1)} = [G^{(i)}, G^{(i)}], \qquad G^{(0)} \trianglerighteq G^{(1)} \trianglerighteq G^{(2)} \trianglerighteq \cdots
+\boxed{\;G^{(0)} = G, \qquad G^{(i+1)} = [G^{(i)}, G^{(i)}], \qquad G^{(0)} \trianglerighteq G^{(1)} \trianglerighteq G^{(2)} \trianglerighteq \cdots\;}
 $$
 
 Each $G^{(i)}$ is characteristic in $G$, hence normal, and each quotient $G^{(i)}/G^{(i+1)}$ is abelian.

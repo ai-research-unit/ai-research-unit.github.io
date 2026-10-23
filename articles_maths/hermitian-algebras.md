@@ -43,7 +43,7 @@ Two of the three data are constitutive of the algebra — the product and the in
 **Proposition.** The adjoint axiom is equivalent to
 
 $$
-\langle x^{\dagger}y, z \rangle = \langle y, xz \rangle .
+\boxed{\;\langle x^{\dagger}y, z \rangle = \langle y, xz \rangle\;} .
 $$
 
 **Proof.** Apply the axiom to the pair $(y^{\dagger}, x^{\dagger})$ and use $y^{\dagger}x^{\dagger} = (xy)^{\dagger}$, obtaining $\langle (xy)^{\dagger}, z\rangle = \langle x^{\dagger}, yz\rangle$; reading the axiom on the pair $(x^{\dagger},y)$ gives the displayed relation. The non-degeneracy of the form is what makes the adjoint unique.
@@ -53,7 +53,7 @@ $$
 **Proposition.** Let $L_x : A \to A$ be the left multiplication $L_x(y) = xy$ and let $R_x(y) = yx$ be the right multiplication. Then
 
 $$
-L_{x^{\dagger}} = L_x^{*},
+\boxed{\;L_{x^{\dagger}} = L_x^{*}\;},
 $$
 
 the adjoint being taken with respect to $\langle \cdot, \cdot \rangle$.
@@ -67,7 +67,7 @@ The two identities are the adjoint axiom in operator form, and they are the orig
 **Proposition.** The form and the involution determine each other through the functional $\varphi = \langle \cdot, 1\rangle$:
 
 $$
-\langle x, y \rangle = \langle x^{\dagger}y, 1 \rangle .
+\boxed{\;\langle x, y \rangle = \langle x^{\dagger}y, 1 \rangle\;} .
 $$
 
 **Proof.** Apply the adjoint axiom with $y$ replaced by $x^{\dagger}y$ and $z = 1$, and use $(x^{\dagger}y)^{\dagger} = y^{\dagger}x$. Conversely, a $\sigma$-linear functional $\varphi$ on $A$ produces the Hermitian form $h_\varphi(x, y) = \varphi(y^{\dagger}x)$, and the two constructions are inverse. This is the correspondence of *The Sesquilinear Form and the Conjugation*, stated here for the involution of the algebra; it uses neither positivity nor completeness.

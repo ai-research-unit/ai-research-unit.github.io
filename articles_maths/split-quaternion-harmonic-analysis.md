@@ -48,8 +48,8 @@ the transform of the four scalar components of $f$.
 $$
 \boxed{\;
 f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi
-\;}
-$$,
+\;},
+$$
 
 the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.
 
@@ -74,8 +74,8 @@ with the product of the algebra inside the integral.
 $$
 \boxed{\;
 \widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi)
-\;}
-$$,
+\;},
+$$
 
 the product being the product of the algebra.
 
@@ -136,8 +136,8 @@ exists exactly when $\langle\tilde q-\tilde q_2\rangle_{\natural} \neq 0$, that 
 $$
 \boxed{\;
 \widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi)
-\;}
-$$,
+\;},
+$$
 
 so that the **symbol** of the operator is the frequency vector $\xi \in V$; the symbol is invertible exactly when $\xi$ is a unit, that is exactly when $\langle \xi\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
 

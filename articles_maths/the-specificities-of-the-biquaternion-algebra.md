@@ -47,8 +47,8 @@ The block is not only the one structure where the criterion holds; it is the one
 $$
 \boxed{\;
 Z(\mathbb{B})=\mathbb{C}e_t
-\;}
-$$,
+\;},
+$$
 
 and it has no two-sided ideal other than $0$ and $\mathbb{B}$: the block is **simple**, and every non-zero element generates the whole algebra as a two-sided ideal.
 
@@ -66,8 +66,8 @@ $$
 \boxed{\;
 \mathbb{B}=\mathbb{B}_{11}\oplus\mathbb{B}_{12}\oplus\mathbb{B}_{21}\oplus\mathbb{B}_{22},\qquad
 \mathbb{B}_{ij}=\{\tilde Q:\tilde\Pi\tilde Q\tilde\Pi_j=\tilde Q\},\quad \tilde\Pi_1=\tilde\Pi,\ \tilde\Pi_2=\tilde\Pi'
-\;}
-$$,
+\;},
+$$
 
 into two **corner subalgebras** $\mathbb{B}_{11}=\tilde\Pi\mathbb{B}\tilde\Pi$ and $\mathbb{B}_{22}=\tilde\Pi'\mathbb{B}\tilde\Pi'$, each isomorphic to $\mathbb{C}$, and two off-diagonal spaces $\mathbb{B}_{12}=\tilde\Pi\mathbb{B}\tilde\Pi'$ and $\mathbb{B}_{21}$, each of complex dimension one, carrying the **matrix units** $E_{ij}\in\mathbb{B}_{ij}$ with
 

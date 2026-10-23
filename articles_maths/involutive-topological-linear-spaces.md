@@ -47,7 +47,7 @@ Continuity is a hypothesis, and on a linear space it is free more often than on 
 **Theorem (criterion).** Let the topology of $V$ be linear, with the submodules $\Omega_0 \supseteq \Omega_1 \supseteq \cdots$ a fundamental system of neighbourhoods of $0$, and let $\theta$ be a $\varsigma$-semilinear involution of $V$. Then $\theta$ is continuous if and only if
 
 $$
-\text{for every } n \text{ there is } m \text{ with } \theta(\Omega_m) \subseteq \Omega_n .
+\boxed{\;\text{for every } n \text{ there is } m \text{ with } \theta(\Omega_m) \subseteq \Omega_n\;} .
 $$
 
 **Proof.** If $\theta$ is continuous then $\theta^{-1}(\Omega_n)$ is a neighbourhood of $0$, so it contains some $\Omega_m$, which says $\theta(\Omega_m) \subseteq \Omega_n$. Conversely suppose the condition holds and let $\Omega$ be a neighbourhood of $0$; some $\Omega_n$ is contained in $\Omega$, and for that $n$ the inclusion $\theta(\Omega_m) \subseteq \Omega_n \subseteq \Omega$ shows that $\theta^{-1}(\Omega)$ contains the neighbourhood $\Omega_m$ of $0$, so $\theta$ is continuous at $0$ and hence continuous.
@@ -97,7 +97,7 @@ $$
 are continuous idempotent $R^\varsigma$-linear endomorphisms of $V$ with $\pi_1 + \pi_2 = \mathrm{id}_V$, $\pi_1\pi_2 = \pi_2\pi_1 = 0$, images $V^\theta$ and $V^-$ and kernels $V^-$ and $V^\theta$. Consequently
 
 $$
-V \cong V^\theta \times V^-
+\boxed{\;V \cong V^\theta \times V^-\;}
 $$
 
 as topological $R^\varsigma$-modules, $V$ is the topological direct sum of its fixed and its negated subspace, and $V^\theta$ is a retract of $V$. When $\varsigma = \mathrm{id}$ the maps are $R$-linear and the splitting is a splitting of $R$-modules.
@@ -129,7 +129,7 @@ with equality when $2$ is invertible in $R$. The quotient fixed subspace can be 
 **Theorem (extension to the completion).** Let $V$ be a Hausdorff topological $R$-module with a linear topology, let $\Omega_0 \supseteq \Omega_1 \supseteq \cdots$ be a fundamental system of submodules of $0$, let $\widehat{V} = \varprojlim_n V/\Omega_n$ be the completion, and let $\theta$ be a topological involution of $V$ of kind $\varsigma$. Then $\theta$ extends to a continuous involution $\widehat{\theta}$ of $\widehat{V}$ of the same kind, the unique continuous extension, and if $2$ is invertible in $R$ then
 
 $$
-(\widehat{V})^{\widehat{\theta}} = \overline{\iota(V^\theta)},
+\boxed{\;(\widehat{V})^{\widehat{\theta}} = \overline{\iota(V^\theta)}\;},
 $$
 
 the closure being taken in $\widehat{V}$. Consequently the completion adds to the fixed subspace the limits of its elements and nothing else.

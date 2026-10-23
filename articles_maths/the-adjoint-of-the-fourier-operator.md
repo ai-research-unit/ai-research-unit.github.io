@@ -83,7 +83,7 @@ proved by the same change of variable wherever the integrals converge.
 **Theorem.** The adjoint of the Fourier operator is the conjugate transform, and the conjugate transform is
 the inverse:
 $$
-\mathcal F^\dagger=\overline{\mathcal F}=\mathcal F^{-1} .
+\boxed{\;\mathcal F^\dagger=\overline{\mathcal F}=\mathcal F^{-1}\;} .
 $$
 Equivalently, $\langle\mathcal Ff,g\rangle=\langle f,\overline{\mathcal F}g\rangle$ for all $f,g\in L^2$.
 
@@ -103,8 +103,8 @@ by continuity; hence $\mathcal F^\dagger=\overline{\mathcal F}=\mathcal F^{-1}$.
 
 **Theorem.** The Fourier operator is unitary,
 $$
-\mathcal F^\dagger\mathcal F=\mathcal F\mathcal F^\dagger=\mathrm{id},\qquad
-\mathcal F^\dagger=\mathcal F^{-1}=\mathcal F^3 ,
+\boxed{\;\mathcal F^\dagger\mathcal F=\mathcal F\mathcal F^\dagger=\mathrm{id},\qquad
+\mathcal F^\dagger=\mathcal F^{-1}=\mathcal F^3\;} ,
 $$
 and the two identities are the two Fourier inversion formulas: the first, applied at a point, reads
 $$
@@ -187,9 +187,9 @@ $f(x)=(2\pi)^{-n/2}\int(\mathcal F f)(\xi)\exp(ix\cdot\xi)d\xi$ in the symmetric
 **Theorem.** The square of the transform is the reflection, $\mathcal F^2=R$ with $Rf(x)=f(-x)$, and the
 symmetries of the transform are
 $$
-\mathcal F^3=\mathcal F^{-1}=\overline{\mathcal F},\qquad
+\boxed{\;\mathcal F^3=\mathcal F^{-1}=\overline{\mathcal F},\qquad
 \mathcal F^4=\mathrm{id},\qquad
-\overline{\mathcal F}=\mathcal F R=R\mathcal F .
+\overline{\mathcal F}=\mathcal F R=R\mathcal F\;} .
 $$
 The adjoint is the transform followed by the reflection, $\mathcal F^\dagger=\mathcal F R=\mathcal F^{-1}$,
 and the reflection is self-adjoint and unitary, $R^\dagger=R=R^{-1}$.

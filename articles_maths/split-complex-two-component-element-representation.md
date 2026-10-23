@@ -70,7 +70,7 @@ so the two components of the product are the two entries of the matrix product $
 **Proposition (the product in components).** Let $Q, B$ have two-component vectors $(q, q')$ and $(b, b')$. Then the two-component vector of the product has components
 
 $$
-(QB)^0 = q b + q' b', \qquad (QB)^1 = q b' + q' b.
+\boxed{\;(QB)^0 = q b + q' b', \qquad (QB)^1 = q b' + q' b\;}.
 $$
 
 **Proof.** Expand $QB = (q+j q')(b+j b') = q b + q b' j + q' b j + q' b' j^2$ and use $j^2 = +1$ to collect the terms:
@@ -166,7 +166,7 @@ In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $
 The norm of $Q = q+j q'$ in coordinates is
 
 $$
-\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2,
+\boxed{\; \langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2 \;},
 $$
 
 the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form
@@ -188,7 +188,7 @@ with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficie
 Restricted to the two fixed-point subspaces the norm is definite:
 
 $$
-\langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}),
+\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
 $$
 
 so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Norm and Invertibility in the General Split-Complex Algebra*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.

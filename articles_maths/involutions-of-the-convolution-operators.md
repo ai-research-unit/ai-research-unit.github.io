@@ -91,7 +91,7 @@ requires. The norm identity is the substitution $x\mapsto-x$.
 **Theorem.** For $k\in L^1(\mathbb R^n)$ the adjoint of the convolution operator is the convolution operator
 of the involution,
 $$
-T_k^\dagger=T_{k^*},\qquad (T_k^\dagger f)(x)=\int_{\mathbb R^n}\overline{k(y-x)}f(y)\,dy ,
+\boxed{\;T_k^\dagger=T_{k^*},\qquad (T_k^\dagger f)(x)=\int_{\mathbb R^n}\overline{k(y-x)}f(y)\,dy\;} ,
 $$
 and the kernel of $T_k$ is $K(x,y)=k(x-y)$, whose conjugate transpose is
 $K^*(x,y)=\overline{k(y-x)}=k^*(x-y)$, the kernel of $T_{k^*}$.
@@ -112,9 +112,9 @@ $K(x,y)=k(x-y)$.
 **Theorem.** The map $T_k\mapsto T_k^\dagger$ on the convolution operators is the transport of the profile
 involution under $k\mapsto T_k$:
 $$
-T_k^\dagger=T_{k^*},\qquad
+\boxed{\;T_k^\dagger=T_{k^*},\qquad
 (T_kT_l)^\dagger=T_l^\dagger T_k^\dagger,\qquad
-(T_k^\dagger)^\dagger=T_k ,
+(T_k^\dagger)^\dagger=T_k\;} ,
 $$
 and $k\mapsto T_k$ is a $\ast$-homomorphism of the convolution algebra into the bounded operators,
 $T_{k*l}=T_kT_l$ and $T_{k^*}=T_k^\dagger$; the element involution of the `* Theory` layer and the adjoint
@@ -167,7 +167,7 @@ unitary after the sign. The examples show both extremities of the multiplier dic
 **Theorem.** Let $k\in L^1(\mathbb R^n)$ with $\mathcal F k\in L^\infty$. Then the convolution operator $T_k$ is
 unitary on $L^2$ if and only if the multiplier is unimodular,
 $$
-T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert(\mathcal F k)(\xi)\rvert=1\ \text{for almost every }\xi ,
+\boxed{\;T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert(\mathcal F k)(\xi)\rvert=1\ \text{for almost every }\xi\;} ,
 $$
 and the unitary convolution operators form a group under composition, the **group of unitary multipliers**;
 under the Fourier transform it is the group of unimodular functions that arise as transforms of profiles.

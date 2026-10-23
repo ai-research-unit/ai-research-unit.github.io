@@ -36,7 +36,7 @@ and $R_b\alpha=\alpha R_{\alpha(b)}$ is the same relation read the other way; th
 **Theorem.** For a balanced α-compatible form,
 
 $$
-(\ell_a)^{\dagger}=\varrho_{\alpha(a)},\qquad\text{that is}\qquad (\ell_a)^{\dagger}(x)=\alpha(x)\,\alpha(a).
+\boxed{\;(\ell_a)^{\dagger}=\varrho_{\alpha(a)},\qquad\text{that is}\qquad (\ell_a)^{\dagger}(x)=\alpha(x)\,\alpha(a)\;}.
 $$
 
 **Proof.** By *The Signed Adjoint Sandwich on a Graded Algebra*, $(\ell_a)^{\dagger}=\Sigma^{\alpha}_{1,\alpha(a)}$ (the case $b=1$ of the sandwich adjoint), and $\Sigma^{\alpha}_{1,\alpha(a)}(x)=1\cdot\alpha(x)\cdot\alpha(a)=\alpha(x)\alpha(a)=\varrho_{\alpha(a)}(x)$.
@@ -46,7 +46,7 @@ $$
 **Proposition (the sandwich from the two adjoints).** The signed sandwich factors as $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$, and its adjoint is the composite of the two one-sided adjoints,
 
 $$
-(\Sigma^{\alpha}_{a,b})^{\dagger}=R_{\alpha(b)}^{\,\dagger}\circ(\ell_a)^{\dagger}=L_{\alpha(b)}\circ\varrho_{\alpha(a)}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)},
+\boxed{\;(\Sigma^{\alpha}_{a,b})^{\dagger}=R_{\alpha(b)}^{\,\dagger}\circ(\ell_a)^{\dagger}=L_{\alpha(b)}\circ\varrho_{\alpha(a)}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}\;},
 $$
 
 in agreement with the two-sided computation.

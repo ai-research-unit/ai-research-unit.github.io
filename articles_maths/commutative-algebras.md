@@ -155,7 +155,7 @@ functorial by post-composition.
 **Theorem (Yoneda).** The assignment $A \mapsto h_A$ is a fully faithful functor: for all $A, A'$,
 
 $$
-\operatorname{Hom}_{\mathsf{CAlg}_R}(A, A') \cong \operatorname{Nat}(h_A, h_{A'}),
+\boxed{\;\operatorname{Hom}_{\mathsf{CAlg}_R}(A, A') \cong \operatorname{Nat}(h_A, h_{A'})\;},
 $$
 
 so $A$ is determined up to canonical isomorphism by the functor $h_A$, and by its values $h_A(B)$ on the "test algebras" $B$.
@@ -201,7 +201,7 @@ $$
 which is well defined because the preimage of a prime ideal is prime, and continuous because $(\phi^*)^{-1}V(\mathrm{A}) = V(B\phi(\mathrm{A}))$. The assignment is contravariant: $(\psi \circ \phi)^* = \phi^* \circ \psi^*$, and $(\mathrm{id})^* = \mathrm{id}$. Thus
 
 $$
-\operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{opp}} \longrightarrow \mathsf{Top}
+\boxed{\;\operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{opp}} \longrightarrow \mathsf{Top}\;}
 $$
 
 is a functor from the opposite category of commutative $R$-algebras to topological spaces.
@@ -227,7 +227,7 @@ $$
 and on a general open set $U$ let $\mathcal{O}(U)$ be the set of compatible families of elements of the $A_f$ over principal opens $D(f) \subseteq U$, with the restriction maps coming from the localisations $A_f \to A_{fg}$. Then $\mathcal{O}$ is a sheaf of commutative $R$-algebras, the **structure sheaf**, and its stalk at a prime $\mathrm{P}$ is the local ring
 
 $$
-\mathcal{O}_{\mathrm{P}} = \varinjlim_{f \notin \mathrm{P}} A_f = A_{\mathrm{P}} .
+\boxed{\;\mathcal{O}_{\mathrm{P}} = \varinjlim_{f \notin \mathrm{P}} A_f = A_{\mathrm{P}}\;} .
 $$
 
 The global sections recover the algebra, $\mathcal{O}(\operatorname{Spec} A) = A$; this is the precise sense in which the spectrum is a geometric model of $A$. The pair $(\operatorname{Spec} A, \mathcal{O})$ is an affine scheme, and the construction is the starting point of algebraic geometry; only the sheaf-theoretic organisation of the localisations is used here.

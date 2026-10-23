@@ -17,7 +17,7 @@ No physics is invoked.
 **Definition.** Let a compact group $\Gamma$ act on a manifold $M$, and let $f:M\times\mathbb{R}\to TM$ be a parameter family of vector fields. The family is **$\Gamma$-equivariant** if
 
 $$
-f(\gamma x,\lambda)=\gamma f(x,\lambda) \qquad (\gamma\in\Gamma),
+\boxed{\;f(\gamma x,\lambda)=\gamma f(x,\lambda) \qquad (\gamma\in\Gamma)\;},
 $$
 
 so that the flow commutes with the action; a solution and its image under the action are both solutions, and the solution set carries the action. For a map $T$ the condition is $T(\gamma x)=\gamma T(x)$.
@@ -43,7 +43,7 @@ so that the flow commutes with the action; a solution and its image under the ac
 **Theorem (the $\mathbb{Z}/2$ pitchfork).** Let $f(x,\lambda)$ be an odd function of $x$, $f(-x,\lambda)=-f(x,\lambda)$, the equivariance for the involution $\sigma(x)=-x$ on $\mathbb{R}$, with $f(0,\lambda)=0$ and $\partial f/\partial x(0,0)=0$, $\partial f/\partial x\partial\lambda(0,0)\neq0$. Then in the Taylor expansion of $f$ all the even powers of $x$ vanish, and the lowest non-trivial normal form is
 
 $$
-f(x,\lambda)=\lambda x+a x^3+\cdots ;
+\boxed{\;f(x,\lambda)=\lambda x+a x^3+\cdots\;} ;
 $$
 
 the trivial solution $x=0$ is stable for $\lambda<0$ and unstable for $\lambda>0$, the bifurcating branches are $x=\pm\sqrt{-\lambda/a}$ (real for $\lambda>0$ when $a<0$, the **supercritical** case, and for $\lambda<0$ when $a>0$, the **subcritical** case), and the two branches are interchanged by the involution. The bifurcation is a **pitchfork**, and it is the generic one-parameter bifurcation of a $\mathbb{Z}/2$-equivariant scalar system.

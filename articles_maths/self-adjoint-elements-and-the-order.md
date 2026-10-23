@@ -28,7 +28,7 @@ The Hermitian elements and the order unit are *Hermitian Elements and the Order 
 **Proposition (the adjoint of the one-sided multiplications).** The adjoints of the one-sided multiplications are
 
 $$
-(L_a)^{*} = L_{a^{*}}, \qquad (R_a)^{*} = R_{a^{*}} ;
+\boxed{\;(L_a)^{*} = L_{a^{*}}, \qquad (R_a)^{*} = R_{a^{*}}\;} ;
 $$
 
 consequently $L_a$ is **self-adjoint** if and only if $a$ is self-adjoint, and the map $a\mapsto L_a$ is a **\*-homomorphism**: $L_{ab} = L_aL_b$ and $L_{a^{*}} = (L_a)^{*}$, so it carries the involution of the algebra to the adjoint involution of the operators.
@@ -50,7 +50,7 @@ the sum of two self-adjoint operators, and the symmetrised combination $L_a + L_
 **Theorem (the order of the self-adjoint elements is the order of their operators).** For self-adjoint $a,b$ the following are equivalent:
 
 $$
-\text{(i)} \ a\leq b ; \quad \text{(ii)} \ L_{b-a}\geq0 ; \quad \text{(iii)} \ \langle (b-a)x,x\rangle\geq0 \ \text{ for every } x ; \quad \text{(iv)} \ \varphi(b-a)\geq0 \ \text{ for every positive functional } \varphi ,
+\boxed{\;\text{(i)} \ a\leq b ; \quad \text{(ii)} \ L_{b-a}\geq0 ; \quad \text{(iii)} \ \langle (b-a)x,x\rangle\geq0 \ \text{ for every } x ; \quad \text{(iv)} \ \varphi(b-a)\geq0 \ \text{ for every positive functional } \varphi\;} ,
 $$
 
 so the map $a\mapsto L_a$ is an **order isomorphism** of the self-adjoint part onto its image in the self-adjoint operators, and the order of the elements is the **quadratic order** of the multiplication operators.
@@ -60,7 +60,7 @@ so the map $a\mapsto L_a$ is an **order isomorphism** of the self-adjoint part o
 **Corollary (the positivity of an element and of its multiplication).** An element is positive if and only if its left multiplication is positive, and if and only if its right multiplication is positive,
 
 $$
-a\geq0 \iff L_a\geq0 \iff R_a\geq0 ;
+\boxed{\;a\geq0 \iff L_a\geq0 \iff R_a\geq0\;} ;
 $$
 
 the map $a\mapsto L_a$ carries the order unit to the identity operator, the Jordan decomposition to the decomposition of $L_a$ into self-adjoint parts, and the order interval $[0,1]$ to the interval $[0,L_1] = [0,I]$ of the multiplication operators.

@@ -56,9 +56,9 @@ Hermitian Dirac operators $\partial/\partial Z_0,\dots,\partial/\partial Z_3$ of
 split it:
 
 $$
-\partial/\partial X = \text{ (a fixed quaternionic combination of the four } \partial/\partial Z_r\,\text{)} ,
+\boxed{\;\partial/\partial X = \text{ (a fixed quaternionic combination of the four } \partial/\partial Z_r\,\text{)} ,
 \qquad
-\Delta_4 = 16\sum_{r\in\{t,x,y,z\}}\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger} .
+\Delta_4 = 16\sum_{r\in\{t,x,y,z\}}\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger}\;} .
 $$
 
 *Proof.* The four Hermitian operators are invertible $\mathbb{H}$-linear combinations of
@@ -84,7 +84,7 @@ monogenic functions is a restricted class of regular functions rather than a sep
 **axial** when it is invariant under the rotations of $\vec q$, equivalently when it has the form
 
 $$
-f(q) = A(q_t,r)+\vec q\,B(q_t,r)
+\boxed{\;f(q) = A(q_t,r)+\vec q\,B(q_t,r)\;}
 $$
 
 away from the axis $\vec q=0$, with $A,B$ scalar-valued.
@@ -93,7 +93,7 @@ away from the axis $\vec q=0$, with $A,B$ scalar-valued.
 Fueter operator exactly when
 
 $$
-A_0 = 3B+rB_r , \qquad B_0 = -\tfrac{1}{r}A_r ,
+\boxed{\;A_0 = 3B+rB_r , \qquad B_0 = -\tfrac{1}{r}A_r\;} ,
 $$
 
 the **reduced Cauchy–Riemann system** of *Fueter Theory*; equivalently, with $A=\phi$, $B=\psi/r$,

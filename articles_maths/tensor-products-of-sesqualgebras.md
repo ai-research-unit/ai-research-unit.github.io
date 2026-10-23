@@ -87,7 +87,7 @@ A sesqualgebra of the group carries an associative product together with its inv
 **Theorem (the derived operation is the tensor product of the derived operations).** With $\star$ the derived operation of the tensor product and $\star$ also written for the derived operations of $A$ and of $B$,
 
 $$
-(a\otimes b)\star(c\otimes d) = (a\star c)\otimes(b\star d) .
+\boxed{\;(a\otimes b)\star(c\otimes d) = (a\star c)\otimes(b\star d)\;} .
 $$
 
 *Proof.* $(a\otimes b)\star(c\otimes d)=(a\otimes b)\,\natural(c\otimes d)=(a\otimes b)(c^{*}\otimes d^{*})=ac^{*}\otimes bd^{*}=(a\star c)\otimes(b\star d)$.
@@ -95,7 +95,7 @@ $$
 **Theorem (the involution transposes the sesquilinear product).** Suppose the involutions of $A$ and of $B$ are anti-automorphisms of their products, as in the theorem above. Then for all $x, y\in A\otimes_R B$,
 
 $$
-\natural(x\star y) = y\star x .
+\boxed{\;\natural(x\star y) = y\star x\;} .
 $$
 
 *Proof.* By the two theorems above and the anti-multiplicativity of the involutions of the factors, on elementary tensors $\natural\bigl((a\otimes b)\star(c\otimes d)\bigr)=\natural\bigl((ac^{*})\otimes(bd^{*})\bigr)=(ac^{*})^{*}\otimes(bd^{*})^{*}=ca^{*}\otimes db^{*}=(c\star a)\otimes(d\star b)=(c\otimes d)\star(a\otimes b)$, and the general case is additivity.
@@ -154,7 +154,7 @@ the second-to-last equality again by the commuting of the images. The two constr
 **Corollary (the coproduct of the commutative factors).** If $A$, $B$, $C$ are commutative, the commuting condition is automatic and the theorem reads
 
 $$
-\operatorname{Hom}\bigl(A\otimes_R B, C\bigr) \cong \operatorname{Hom}(A, C)\times\operatorname{Hom}(B, C) ,
+\boxed{\;\operatorname{Hom}\bigl(A\otimes_R B, C\bigr) \cong \operatorname{Hom}(A, C)\times\operatorname{Hom}(B, C)\;} ,
 $$
 
 so that $A\otimes_R B$ with the two canonical maps is the **coproduct** of $A$ and $B$ in the category of commutative sesqualgebras over $(R,\varsigma)$. It is not the product: the product of the category is the direct product of *Direct Products of Sesqualgebras*, and its two factors do not commute but annihilate.

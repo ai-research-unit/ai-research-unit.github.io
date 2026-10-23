@@ -12,8 +12,8 @@ Throughout, $(G,\alpha)$ is a group with an involutive automorphism $\alpha$, $\
 **Theorem (the adjoint is a signed sandwich).** For every $a,b\in G$,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(b)^{-1}}
-=\Sigma^{\alpha}_{\alpha(a^{-1}),\ \alpha(b^{-1})}.
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(b)^{-1}}
+=\Sigma^{\alpha}_{\alpha(a^{-1}),\ \alpha(b^{-1})}\;}.
 $$
 
 **Proof.** In the basis $G$, $\Sigma^{\alpha}_{a,b}(g)=a\,\alpha(g)\,b$, so the matrix entry $\bigl(\Sigma^{\alpha}_{a,b}\bigr)_{h,g}$ equals $1$ exactly when $h=a\,\alpha(g)\,b$, that is when $g=\alpha(a)^{-1}\alpha(h)\alpha(b)^{-1}=\alpha\bigl(a^{-1}hb^{-1}\bigr)$, using that $\alpha$ is an automorphism with $\alpha^{2}=\mathrm{id}$. Hence the transpose sends $h$ to $\alpha(a)^{-1}\alpha(h)\alpha(b)^{-1}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}(h)$.
@@ -37,7 +37,7 @@ In particular the adjoint of the unsigned sandwich is the unsigned sandwich with
 **Theorem (every signed sandwich is unitary).** For every $a,b\in G$,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\Sigma^{\alpha}_{a,b}=\mathrm{id}=\Sigma^{\alpha}_{a,b}\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}.
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\Sigma^{\alpha}_{a,b}=\mathrm{id}=\Sigma^{\alpha}_{a,b}\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\;}.
 $$
 
 **Proof.** By the adjoint formula and the composition law,
@@ -70,7 +70,7 @@ $$
 **Theorem (the self-adjointness criterion).** The signed sandwich $\Sigma^{\alpha}_{a,b}$ is self-adjoint if and only if
 
 $$
-\alpha(a)\,a\in Z(G) \quad\text{and}\quad b\,\alpha(b)=\bigl(\alpha(a)\,a\bigr)^{-1},
+\boxed{\;\alpha(a)\,a\in Z(G) \quad\text{and}\quad b\,\alpha(b)=\bigl(\alpha(a)\,a\bigr)^{-1}\;},
 $$
 
 equivalently if and only if there is a central element $z$ of order at most two with $\alpha(a)a=z$ and $b\alpha(b)=z$.

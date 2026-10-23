@@ -144,7 +144,7 @@ characteristic zero.
 **Theorem.** The classes of the non-commutative chain are ordered as
 
 $$
-\text{division ring} \implies \text{Ore domain} \implies \text{domain} \implies \text{prime} \implies \text{semiprime} ,
+\boxed{\;\text{division ring} \implies \text{Ore domain} \implies \text{domain} \implies \text{prime} \implies \text{semiprime}\;} ,
 $$
 
 and each implication is strict.

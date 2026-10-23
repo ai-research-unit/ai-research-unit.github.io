@@ -25,7 +25,9 @@ It is also a free module of rank $n^2n_3$ over $\mathbb{B}_{\mathrm{r}}$, and an
 The Fourier transform along the third mode is an isomorphism of algebras
 
 $$
-T_n\cong\prod_{k=1}^{n_3}M_n(\mathbb{B}_{\mathrm{r}}),
+\boxed{\;
+T_n\cong\prod_{k=1}^{n_3}M_n(\mathbb{B}_{\mathrm{r}})
+\;},
 $$
 
 where the product is coordinatewise. Composing with the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ gives
@@ -84,7 +86,9 @@ Both are submodules of $T_n$ over $\mathbb{B}_{\mathrm{r}}$, and both contain $0
 **Theorem (the transform description).** In the transform,
 
 $$
-\operatorname{Ann}_L(A)=\Bigl\{B:\widehat B^{(k)}\in\ker_L\bigl(\widehat A^{(k)}\bigr)\ \text{for every }k\Bigr\},
+\boxed{\;
+\operatorname{Ann}_L(A)=\Bigl\{B:\widehat B^{(k)}\in\ker_L\bigl(\widehat A^{(k)}\bigr)\ \text{for every }k\Bigr\}
+\;},
 $$
 
 where $\ker_L(M)=\{Y:MY=0\}$ is the right null space of the matrix $M$, and
@@ -129,7 +133,9 @@ $$
 It is the determinant of the block circulant matrix $\operatorname{circ}(A)$ read as an element of $\mathbb{B}_{\mathrm{r}}$: the Fourier matrix diagonalises the block circulant, and the determinant of a block diagonal matrix is the product of the determinants of its blocks. It is multiplicative,
 
 $$
-\det\nolimits_{\mathrm t}(A\ast B)=\det\nolimits_{\mathrm t}(A)\det\nolimits_{\mathrm t}(B),
+\boxed{\;
+\det\nolimits_{\mathrm t}(A\ast B)=\det\nolimits_{\mathrm t}(A)\det\nolimits_{\mathrm t}(B)
+\;},
 $$
 
 because $\operatorname{circ}(A\ast B)=\operatorname{circ}(A)\operatorname{circ}(B)$.

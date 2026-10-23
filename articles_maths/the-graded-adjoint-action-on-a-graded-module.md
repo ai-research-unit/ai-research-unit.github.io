@@ -24,7 +24,7 @@ $$
 **Theorem (the adjoint of the graded action).** For every $r$, the graded adjoint action is adjointable and
 
 $$
-\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \bigl(\ell_r^\pi\bigr)^\dagger(m) = \pi(\delta(r))\gamma(m) ,
+\boxed{\;\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \bigl(\ell_r^\pi\bigr)^\dagger(m) = \pi(\delta(r))\gamma(m)\;} ,
 $$
 
 the graded adjoint action by the conjugate element $\delta(r)$; the adjoint is the action conjugated by the composite involution.
@@ -36,7 +36,7 @@ the graded adjoint action by the conjugate element $\delta(r)$; the adjoint is t
 **Definition.** The **graded commutant** of the representation $\pi$ is
 
 $$
-\pi(A)^{\mathrm{g}} = \{T \in \mathrm{End}(M) : T\pi(r) = \pi(\delta(r))T \ \text{for all } r\} ,
+\boxed{\;\pi(A)^{\mathrm{g}} = \{T \in \mathrm{End}(M) : T\pi(r) = \pi(\delta(r))T \ \text{for all } r\}\;} ,
 $$
 
 the operators that intertwine the representation with its conjugate; the **`*`-module structure** is the datum of $\pi$, $\gamma$ and the forms for which $\pi$ is a `*`-representation.

@@ -31,7 +31,7 @@ $$
 **Theorem (polar decomposition).** The closure $\bar S$ of the Tomita operator has the polar decomposition
 
 $$
-\bar S = J\,\Delta^{1/2}, \qquad \Delta = \bar S^{*}\bar S , \qquad J = \text{the modular conjugation},
+\boxed{\;\bar S = J\,\Delta^{1/2}, \qquad \Delta = \bar S^{*}\bar S , \qquad J = \text{the modular conjugation}\;},
 $$
 
 with $\Delta$ a positive definite self-adjoint operator and $J$ an antiunitary involution.
@@ -61,7 +61,7 @@ $$
 **Theorem (Tomita–Takesaki, the conjugation).** With $J$ the modular conjugation of the pair $(\mathcal{M},\xi)$,
 
 $$
-J\,\mathcal{M}\,J = \mathcal{M}' , \qquad J\,\mathcal{M}'\,J = \mathcal{M} , \qquad J\Delta J = \Delta^{-1} , \qquad J\xi = \xi .
+\boxed{\;J\,\mathcal{M}\,J = \mathcal{M}' , \qquad J\,\mathcal{M}'\,J = \mathcal{M} , \qquad J\Delta J = \Delta^{-1} , \qquad J\xi = \xi\;} .
 $$
 
 **Proof.** The statement $J\mathcal{M}J\subseteq\mathcal{M}'$ is read off the adjoint of $S$: $S^{*}$ has domain $\mathcal{M}'\xi$ and agrees with $S$ there, and $J = \bar S\Delta^{-1/2}$ on the dense set gives $JxJ$ commuting with $\mathcal{M}$; the reverse inclusion is the same statement applied to $\mathcal{M}'$, or the bicommutant theorem; the inversion of $\Delta$ is $J\Delta J = JS^{*}SJ = S S^{*}$; and $J\xi = \xi$ is the fact that $\xi$ is fixed by the conjugation of its own polar decomposition.
@@ -77,7 +77,7 @@ $$
 **Theorem (Tomita–Takesaki, the flow).** With $\Delta$ the modular operator of the pair $(\mathcal{M},\xi)$, the family
 
 $$
-\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it},
+\boxed{\;\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it}\;},
 $$
 
 is a one-parameter group of automorphisms of $\mathcal{M}$, strongly continuous in the strong topology, and the vector $\xi$ satisfies the KMS condition for it: for all $x, y\in\mathcal{M}$ the function $F(t) = \langle\sigma_t(y)x\xi,\xi\rangle$ extends holomorphically to the strip $0<\mathrm{Im}\,z<1$ with boundary values

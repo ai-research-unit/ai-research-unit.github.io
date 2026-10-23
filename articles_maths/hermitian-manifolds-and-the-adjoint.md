@@ -35,7 +35,7 @@ The **adjoint** $T^{*}$ of a $\mathbb{C}$-linear operator $T$ is defined by $\la
 **Theorem.** The complex structure is **anti-self-adjoint** for the Riemannian metric and for the Hermitian pairing,
 
 $$
-J^{*} = -J, \qquad \langle JX, Y\rangle = -\langle X, JY\rangle, \qquad \langle JX, Y\rangle_{\mathbb{C}} = -\langle X, JY\rangle_{\mathbb{C}},
+\boxed{\;J^{*} = -J, \qquad \langle JX, Y\rangle = -\langle X, JY\rangle, \qquad \langle JX, Y\rangle_{\mathbb{C}} = -\langle X, JY\rangle_{\mathbb{C}}\;},
 $$
 
 and it is **unitary** for the Hermitian pairing, $\langle JX, JY\rangle_{\mathbb{C}} = \langle X, Y\rangle_{\mathbb{C}}$. Equivalently, $J$ is an orthogonal operator with $J^2 = -\mathrm{id}$, so its transpose is $-J$ and its inverse is $-J$, and the two facts together give $J^{*} = J^{-1} = -J$. The complex structure is thus a **skew-adjoint** operator of square $-1$: it is the operator-theoretic form of the almost complex structure.
@@ -75,7 +75,7 @@ and the **contraction operator** is its metric adjoint $\Lambda = L^{*}$, the co
 **Theorem.** The contraction is the adjoint of the Lefschetz operator for the $L^2$ pairing of the forms,
 
 $$
-\Lambda = L^{*}, \qquad \langle L\alpha, \beta\rangle = \langle \alpha, \Lambda\beta\rangle,
+\boxed{\;\Lambda = L^{*}, \qquad \langle L\alpha, \beta\rangle = \langle \alpha, \Lambda\beta\rangle\;},
 $$
 
 and the two operators satisfy the $\mathfrak{sl}_2$ commutation relations of the Lefschetz decomposition,
@@ -93,8 +93,8 @@ the **Lefschetz decomposition** of the forms into the primitive parts. The metri
 **Theorem (the Kähler identities, quoted from the Hermitian geometry).** On a Kähler manifold the adjoints of the holomorphic and the anti-holomorphic Dolbeault operators are expressed by the commutators with the contraction:
 
 $$
-[\Lambda, \partial] = i\,\bar\partial^{*}, \qquad
-[\Lambda, \bar\partial] = -i\,\partial^{*},
+\boxed{\;[\Lambda, \partial] = i\,\bar\partial^{*}, \qquad
+[\Lambda, \bar\partial] = -i\,\partial^{*}\;},
 $$
 
 equivalently

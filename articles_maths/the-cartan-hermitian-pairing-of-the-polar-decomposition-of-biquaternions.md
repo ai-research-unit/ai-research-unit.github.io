@@ -13,7 +13,7 @@ The four factors are those of *Modulus–Unit Polar Decomposition of Biquaternio
 
 **The Cartan Hermitian pairing** is the grouping that multiplies the scale into the boost and the phase into the rotor:
 
-$$ \boxed{\;\tilde{Q} = \tilde H\,\tilde U , \qquad \tilde H = r\,\tilde U_{\mathrm b} , \qquad \tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r}\;}. $$
+$$ \tilde{Q} = \tilde H\,\tilde U , \qquad \tilde H = r\,\tilde U_{\mathrm b} , \qquad \tilde U = \exp(i\alpha)\,\tilde u_{\mathrm r}. $$
 
 It takes the first and the third factors of the word, the scale and the boost $\tilde U_{\mathrm b}$, into $\tilde H$, and the second and the fourth, the phase and the rotor $\tilde u_{\mathrm r}$, into $\tilde U$. The two factors are therefore of two different kinds: $\tilde H$ is **Hermitian and positive**, $\tilde U$ is **unitary**. The pairing is the matrix polar decomposition of the biquaternion, read in the algebra, and it is the form of the polar word that the physics articles use for a unit-norm Lorentz rotor. It is called the **Cartan pairing** here because the two exponents of its factors lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra, one Hermitian and one anti-Hermitian; the Hermitian split of the exponents, and not the mere grouping of the factors, is what the name records.
 
@@ -154,7 +154,7 @@ The first factor is where the pairing keeps the **scale** and the **boost**. The
 
 The unitary elements of the algebra are the elements fixed by the equation $\tilde U^{*}\tilde U = e_t$,
 
-$$ \boxed{\;\mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\} \cong \mathrm{U}(2) \cong \mathrm{U}(1)\cdot\mathrm{Sp}(1)\;}, $$
+$$ \mathrm{U}(\mathbb{B}) = \{\tilde U : \tilde U^{*}\tilde U = e_t\} \cong \mathrm{U}(2) \cong \mathrm{U}(1)\cdot\mathrm{Sp}(1), $$
 
 a compact group of real dimension four, the product of the central phase circle and the unit sphere of the real quaternions (*The Unitary Group of the Biquaternion Algebra*, §*The Structure of the Unitary Group*). The second factor of the Cartan pairing is such an element: $\tilde U = \exp(i\alpha)\tilde u_{\mathrm r}$ is the product of the central phase, of modulus one, and the unit real quaternion, and it satisfies $\tilde U\,\tilde U^{*} = e_t$. Its determinant has modulus one, $|\det\mathsf{M}_2(\tilde U)| = 1$, as it must for a unitary matrix.
 
@@ -326,7 +326,7 @@ $$
 
 and the split is the Cartan decomposition of the algebra as a real Lie algebra under the commutator,
 
-$$ \boxed{\;\mathfrak{gl}(2,\mathbb{C}) = \mathfrak{u}(2) \oplus \mathfrak{p} , \qquad \mathfrak{u}(2) = \mathfrak{su}(2)\oplus i\mathbb{R} , \qquad \mathfrak{p} = \{\text{Hermitian matrices}\}\;}. $$
+$$ \mathfrak{gl}(2,\mathbb{C}) = \mathfrak{u}(2) \oplus \mathfrak{p} , \qquad \mathfrak{u}(2) = \mathfrak{su}(2)\oplus i\mathbb{R} , \qquad \mathfrak{p} = \{\text{Hermitian matrices}\}. $$
 
 The compact summand $\mathfrak{u}(2)$ is spanned by the anti-Hermitian elements, the anti-Hermitian scalar $ie_t$ and the anti-Hermitian vectors $\tfrac{\theta}{2}\vec u_{\mathrm r}$; the non-compact summand $\mathfrak{p}$ is spanned by the Hermitian elements, the real scalar $\ln r\,e_t$ and the Hermitian vectors $i\tfrac{\psi}{2}\vec u_{\mathrm b}$. The two summands are of real dimension four each, and their sum is the real dimension $8$ of the algebra. The exponent of $\mathfrak{u}(2)$ is the unitary group $\mathrm{U}(2)$ and the exponent of $\mathfrak{p}$ is the positive cone of the Hermitian elements, so the Cartan decomposition of the algebra reads the pairing at the level of the group.
 

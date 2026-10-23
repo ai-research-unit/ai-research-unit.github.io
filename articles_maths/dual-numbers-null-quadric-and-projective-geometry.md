@@ -66,7 +66,7 @@ the class of the maximal ideal, the point at infinity of the chart.
 **Theorem.** The projectivised isotropic set is the single point
 
 $$
-\mathbb{P}(\mathcal{N}) = \{[0 : 1]\} = \{[\varepsilon]\} \subset \mathbb{P}^1(\mathbb{R}),
+\boxed{\; \mathbb{P}(\mathcal{N}) = \{[0 : 1]\} = \{[\varepsilon]\} \subset \mathbb{P}^1(\mathbb{R}) \;},
 $$
 
 a point of multiplicity two. It is the unique real point of the projective quadric $q^2 = 0$, and the projective quadric is that point counted twice.
@@ -96,7 +96,7 @@ $$
 **Theorem.** On the affine chart $\{q \neq 0\}$ the shear acts by translation of the coordinate $t$:
 
 $$
-t = \frac{q'}{q} \;\longmapsto\; \frac{q' + sq}{q} = t + s.
+\boxed{\; t = \frac{q'}{q} \;\longmapsto\; \frac{q' + sq}{q} = t + s \;}.
 $$
 
 It fixes the isotropic point $[\varepsilon] = [0:1]$ and no other point, and it is the one-parameter unipotent subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes that point.

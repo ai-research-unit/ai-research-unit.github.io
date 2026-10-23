@@ -154,7 +154,7 @@ $$
 
 **Theorem (the valence formula).** Let $\Gamma$ contain $-I$ and let $k$ be even. For a nonzero $f\in M_k(\Gamma)$,
 $$
-\sum_{P\in\bar\Gamma\backslash\mathbb{H}^*}\frac{1}{\lvert\bar\Gamma_P\rvert}\operatorname{ord}_P(f) = \frac{k\,[\bar\Gamma(1):\bar\Gamma]}{12},
+\boxed{\;\sum_{P\in\bar\Gamma\backslash\mathbb{H}^*}\frac{1}{\lvert\bar\Gamma_P\rvert}\operatorname{ord}_P(f) = \frac{k\,[\bar\Gamma(1):\bar\Gamma]}{12}\;},
 $$
 the sum over the orbits of the points of $\mathbb{H}^*$, where $\operatorname{ord}_P$ is the order of vanishing at $P$ and $\lvert\bar\Gamma_P\rvert$ the order of the stabiliser.
 
@@ -180,7 +180,7 @@ while $\dim S_k(\Gamma)$ is the number of holomorphic sections of the $(k/2)$-th
 
 **Theorem.** The graded ring of modular forms of level one is
 $$
-\bigoplus_{k}M_k(\Gamma(1)) = \mathbb{C}[E_4,E_6],
+\boxed{\;\bigoplus_{k}M_k(\Gamma(1)) = \mathbb{C}[E_4,E_6]\;},
 $$
 the two generators being algebraically independent, of weights $4$ and $6$; the ideal of cusp forms is $\Delta\cdot\mathbb{C}[E_4,E_6]$.
 
@@ -268,7 +268,7 @@ $$
 $$
 the product converges absolutely for $\Re s>(k+1)/2$, $L(f,s)$ has an analytic continuation to an entire function, and
 $$
-\Lambda(f,s) = \varepsilon\,\Lambda(f,k-s), \qquad \varepsilon = \pm1 ,
+\boxed{\;\Lambda(f,s) = \varepsilon\,\Lambda(f,k-s), \qquad \varepsilon = \pm1\;} ,
 $$
 the sign $\varepsilon$ being the **root number**; the critical line is $\Re s = k/2$ and the nontrivial zeros lie in the critical strip $(k-1)/2<\Re s<(k+1)/2$, since the Euler product is nonvanishing for $\Re s>(k+1)/2$ and the functional equation excludes the zeros for $\Re s<(k-1)/2$.
 

@@ -76,7 +76,7 @@ $$
 satisfies
 
 $$
-\partial/\partial x^\mu j^\mu = -\,E_i\,\xi^i ,
+\boxed{\;\partial/\partial x^\mu j^\mu = -\,E_i\,\xi^i\;} ,
 $$
 
 and is therefore conserved, $\partial/\partial x^\mu j^\mu=0$, on every solution of the equations of motion. For a $k$-parameter group the construction gives $k$ currents $j^\mu_a = L^\mu_i\xi^i_a - F^\mu_a$.
@@ -146,8 +146,8 @@ with the action invariant up to a divergence, $\delta L = \partial/\partial x^\m
 **Theorem (Noether, second theorem).** Let the action admit a symmetry of the second kind depending on the $q$ arbitrary functions $\varepsilon^\alpha$. Then the Euler–Lagrange expressions satisfy, **identically in the fields and off shell**, the $q$ differential identities
 
 $$
-\sum_{i}\sum_{k=0}^{r}(-1)^k\,\partial/\partial x^{\mu_1}\cdots\partial/\partial x^{\mu_k}\,\Bigl(a^{i\mu_1\cdots\mu_k}_\alpha\,E_i\Bigr) \equiv 0 ,
-\qquad \alpha = 1,\dots,q ,
+\boxed{\;\sum_{i}\sum_{k=0}^{r}(-1)^k\,\partial/\partial x^{\mu_1}\cdots\partial/\partial x^{\mu_k}\,\Bigl(a^{i\mu_1\cdots\mu_k}_\alpha\,E_i\Bigr) \equiv 0 ,
+\qquad \alpha = 1,\dots,q\;} ,
 $$
 
 with $a^{i\varnothing}_\alpha = b^i_\alpha$. In particular, when the transformation is first order in $\varepsilon$, the identity is
@@ -210,7 +210,7 @@ $$
 that is,
 
 $$
-\partial^2/\partial x^\nu\partial x^\mu F^{\mu\nu} \equiv 0 ,
+\boxed{\;\partial^2/\partial x^\nu\partial x^\mu F^{\mu\nu} \equiv 0\;} ,
 $$
 
 which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial^2/\partial x^\nu\partial x^\mu$.

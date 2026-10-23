@@ -33,7 +33,7 @@ the sesquilinear product $x \star y = xy^{*}$ and its symmetrisation being those
 **Theorem.** $J(A)$ is a commutative Jordan algebra over the fixed ring $R^{\varsigma}$: the product $\circ$ is commutative and $R^{\varsigma}$-bilinear, and it satisfies the Jordan identity
 
 $$
-(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr)
+\boxed{\;(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr)\;}
 $$
 
 for all $x, y \in H(A)$.
@@ -115,7 +115,7 @@ The Hermitian idempotents, their involution-invariance and their behaviour under
 **Theorem.** Let $e$ be a Hermitian idempotent of $A$ and put $f = 1 - e$. Then $f$ is a Hermitian idempotent, the Jordan algebra splits as
 
 $$
-J(A) = \mathrm{J}_1(e) \oplus \mathrm{J}_{1/2}(e) \oplus \mathrm{J}_0(e),
+\boxed{\;J(A) = \mathrm{J}_1(e) \oplus \mathrm{J}_{1/2}(e) \oplus \mathrm{J}_0(e)\;},
 $$
 
 where $\mathrm{J}_\lambda(e)$ is the $\lambda$-eigenspace of the operator $x \mapsto e \circ x$ on $J(A)$, and the three spaces are the Hermitian parts of the associative Peirce spaces of $e$:
@@ -149,7 +149,7 @@ $$
 **Proposition.** $\mathrm{Jor}_x$ takes its values in $J(A)$, is $R^{\varsigma}$-linear, and read through the associative product of $A$ it is
 
 $$
-\mathrm{Jor}_x(y) = xyx .
+\boxed{\;\mathrm{Jor}_x(y) = xyx\;} .
 $$
 
 **Proof.** For $y \in H(A)$ the element $xyx$ is Hermitian, $(xyx)^{*} = x^{*}y^{*}x^{*} = xyx$, so the operator preserves $J(A)$, and it is $R^{\varsigma}$-linear because the product is $R^{\varsigma}$-bilinear on the Hermitian part. Expanding, $x \circ (x \circ y) = \tfrac14(x^{2}y + 2xyx + yx^{2})$ and $(x \circ x)\circ y = \tfrac12(x^{2}y + yx^{2})$, so the combination displayed is $xyx$.

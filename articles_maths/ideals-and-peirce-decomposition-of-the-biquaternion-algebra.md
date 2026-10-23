@@ -147,12 +147,10 @@ $$
 so the algebra splits into the four **Peirce spaces**
 
 $$
-\boxed{\;
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},
 \qquad
-\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau
-\;}
-$$,
+\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau,
+$$
 
 with $\tilde\Pi_+=\tilde\Pi$ and $\tilde\Pi_-=\tilde\Pi'$. This is the **Peirce decomposition** of $\mathbb{B}$ with respect to $\tilde\Pi$. It refines the two-term decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}\tilde\Pi'$.
 
@@ -229,8 +227,8 @@ $$
 \mathbb{B}_{+-}=\mathbb{C}\vec\Upsilon_x,\qquad
 \mathbb{B}_{-+}=\mathbb{C}\vec\Upsilon_y,\qquad
 \mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-
-\;}
-$$,
+\;},
+$$
 
 so the Peirce decomposition reads
 
@@ -491,8 +489,8 @@ The two idempotents group the basis into one-sided ideals in a second way. The t
 $$
 \boxed{\;
 \mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_- = (\mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_y) \oplus (\mathbb{C}\vec\Upsilon_x \oplus \mathbb{C}\tilde\Pi_-)
-\;}
-$$,
+\;},
+$$
 
 $$
 \mathbb{B} = \tilde\Pi_+\mathbb{B} \oplus \tilde\Pi_-\mathbb{B} = (\mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_x) \oplus (\mathbb{C}\vec\Upsilon_y \oplus \mathbb{C}\tilde\Pi_-).

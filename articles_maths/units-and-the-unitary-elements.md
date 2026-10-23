@@ -27,7 +27,7 @@ What is added here: the unit and its Hermitian property, the definition of the u
 **Definition.** An element $u \in A$ is **unitary** when
 
 $$
-u u^{*} = u^{*} u = 1 .
+\boxed{\;u u^{*} = u^{*} u = 1\;} .
 $$
 
 The set of the unitary elements is written $\mathrm{U}(A)$.
@@ -53,7 +53,7 @@ The set of the unitary elements is written $\mathrm{U}(A)$.
 **Proposition.** If $u$ is unitary then $u^{*}$ is unitary, and the restriction of the involution to $\mathrm{U}(A)$ is the inversion map:
 
 $$
-u^{*} = u^{-1} \quad \text{for every } u \in \mathrm{U}(A) .
+\boxed{\;u^{*} = u^{-1} \quad \text{for every } u \in \mathrm{U}(A)\;} .
 $$
 
 Consequently the restriction of $*$ to $\mathrm{U}(A)$ is an involutive anti-automorphism of the group $\mathrm{U}(A)$, and it is an automorphism exactly when $\mathrm{U}(A)$ is abelian.

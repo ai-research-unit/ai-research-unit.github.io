@@ -29,7 +29,7 @@ $$
 **Theorem (the radius formula).** The spectral radius is the limit
 
 $$
-r(x) = \lim_{n}\lVert x^{n}\rVert^{1/n} = \inf_{n \geq 1}\lVert x^{n}\rVert^{1/n},
+\boxed{\;r(x) = \lim_{n}\lVert x^{n}\rVert^{1/n} = \inf_{n \geq 1}\lVert x^{n}\rVert^{1/n}\;},
 $$
 
 and in particular $r(x) = r(y)$ as soon as $\lVert x^{n}\rVert = \lVert y^{n}\rVert$ for all $n$.
@@ -53,8 +53,8 @@ the axiom stated for the normed object in *The Norm Defined by a Form*, §*The $
 **Theorem (the identity).** In a $\mathrm{C}^{*}$-sesqualgebra, for every $x$,
 
 $$
-\lVert x^{*}x\rVert = \lVert xx^{*}\rVert = \lVert x \star x\rVert = \lVert x\rVert^{2}, \qquad
-\lVert x\rVert = r(x^{*}x)^{1/2} = r(xx^{*})^{1/2} = r(x \star x)^{1/2} .
+\boxed{\;\lVert x^{*}x\rVert = \lVert xx^{*}\rVert = \lVert x \star x\rVert = \lVert x\rVert^{2}, \qquad
+\lVert x\rVert = r(x^{*}x)^{1/2} = r(xx^{*})^{1/2} = r(x \star x)^{1/2}\;} .
 $$
 
 *Proof.* The element $xx^{*}$ is the star of $x^{*}x$, so $\lVert xx^{*}\rVert = \lVert x^{*}x\rVert$ once the involution is isometric, and the isometry is the theorem of *The Continuity of the Involution*, §*The $\mathrm{C}^{*}$-Condition*, or one line from the condition: $\lVert x\rVert^{2} = \lVert x^{*}x\rVert \leq \lVert x^{*}\rVert\lVert x\rVert$ gives $\lVert x\rVert \leq \lVert x^{*}\rVert$, and $x^{**} = x$ gives the reverse. The element $y = x^{*}x$ is self-adjoint, and for a self-adjoint $y$ the identity $\lVert y^{2}\rVert = \lVert y^{*}y\rVert = \lVert y\rVert^{2}$ iterates to $\lVert y^{2^{n}}\rVert = \lVert y\rVert^{2^{n}}$, so that $r(y) = \lim_{n}\lVert y^{2^{n}}\rVert^{1/2^{n}} = \lVert y\rVert$; hence $\lVert x^{*}x\rVert = r(x^{*}x)$. The radius formula is applied at $x \star x = xx^{*}$.
@@ -126,7 +126,7 @@ In particular the statements hold for the self-adjoint elements, $x^{*} = x$.
 **Theorem (the norm is a formula in the algebra).** In a $\mathrm{C}^{*}$-sesqualgebra the norm is determined by the algebra, the involution and the datum,
 
 $$
-\lVert x\rVert = r(x \star x)^{1/2},
+\boxed{\;\lVert x\rVert = r(x \star x)^{1/2}\;},
 $$
 
 the radius being the radius of the derived square, defined by invertibility alone.

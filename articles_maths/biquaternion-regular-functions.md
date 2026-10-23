@@ -41,7 +41,7 @@ $$
 This is the **Cauchy–Riemann operator** of the biquaternion theory, classically the Dirac operator. The pair $(\tilde{\nabla}, \tilde{\nabla}^{\natural})$ plays the role of $(\partial/\partial\bar A, \partial/\partial A)$ in one complex variable. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where all coefficients are real and the partials are ordinary real derivatives, $\tilde{\nabla}$ is the **Cauchy–Riemann operator** on $\mathbb{R}^4$. The units satisfy the Clifford relation $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu} e_t$, so the cross terms cancel and
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t.
+\boxed{\; \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t \;}.
 $$
 
 The **d'Alembertian** $\Box$ is scalar and acts component-wise. On $\mathbb{H}_{\mathbb{B}}$ it is the Euclidean Laplacian of signature $(4,0)$; on $\mathbb{M}_-$ it is $-\partial^2/\partial {q'_t}^2 + \Delta_{\mathbb{M}_-}$ of signature $(3,1)$; on $\mathbb{M}_+$ it is $\partial^2/\partial q_t^2 - \Delta_{\mathbb{M}_+}$ of signature $(1,3)$; these are coordinate expressions of one abstract operator, the factors of $-i$ being a change of coordinates. The second-order operator $\tilde{\nabla}^2 = \tilde{\nabla}\tilde{\nabla} = (\partial^2/\partial Q_t^2 - \Delta_Q)e_t + 2\sum_\mu \vec e_\mu \partial^2/\partial Q_t\partial Q_\mu$ also appears, with $\tilde{\nabla}^2 = 2\partial/\partial Q_t\,\tilde{\nabla} - \Box \neq \Box$; it must not be confused with $\Box$, the natural second-order operator. For a function depending only on $q_t, q_x$,
@@ -71,7 +71,7 @@ $$
 with $\mathrm{div}\,\vec F = \sum_{\mu\in\{x,y,z\}} \partial/\partial Q_\mu\,F_\mu$, $\mathrm{grad}\,F_0 = \sum_{\mu\in\{x,y,z\}} (\partial/\partial Q_\mu\,F_0)\vec e_\mu$, and $\mathrm{rot}\,\vec F = \sum_{\mu,\nu,\lambda\in\{x,y,z\}}\epsilon_{\mu\nu\lambda}(\partial/\partial Q_\mu\,F_\nu)\vec e_\lambda$. Therefore $F^{\mathrm{fn}}$ is regular if and only if
 
 $$
-\partial/\partial Q_t\,F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t\,\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0.
+\boxed{\; \partial/\partial Q_t\,F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t\,\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0 \;}.
 $$
 
 This is a **system of four equations** for the four coefficients, the biquaternionic **Cauchy–Riemann–Fueter system**. It is the precise sense in which regularity is expressed by a system of equations rather than by one complex equation, and it is the local expression of the regularity notion inherited from the Clifford algebra, coupling $F_0$ to $\vec F$ through $\mathrm{div}$, $\mathrm{grad}$, and $\mathrm{rot}$.
@@ -121,7 +121,7 @@ $$
 where $\tilde u_{\mathrm n}$ is the biquaternion-valued outward unit normal. If $F^{\mathrm{fn}}$ is regular, the volume term vanishes and
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)\tilde u_{\mathrm n}F^{\mathrm{fn}}(\tilde{Q})\,dS.
+\boxed{\; F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)\tilde u_{\mathrm n}F^{\mathrm{fn}}(\tilde{Q})\,dS \;}.
 $$
 
 Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_+$ or $\mathbb{M}_-$ or on the full algebra $\mathbb{B}$ (§*Where the Complex Analogy Fails: Zero Divisors and the Null Cone*); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2\delta_0 e_t$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.
@@ -168,7 +168,7 @@ $$
 and consequently
 
 $$
-\ker(\Delta-\alpha^2)=\ker D_\alpha\oplus\ker D_{-\alpha}.
+\boxed{\; \ker(\Delta-\alpha^2)=\ker D_\alpha\oplus\ker D_{-\alpha} \;}.
 $$
 
 *Proof.* The shifts commute, both being $D$ plus a scalar. The sum is $\Pi_\alpha+\Pi_{-\alpha}=-\frac{1}{2\alpha}D_{-\alpha}+\frac{1}{2\alpha}D_{\alpha}=\frac{1}{2\alpha}\bigl((D+\alpha)-(D-\alpha)\bigr)=I$; the products are $\Pi_\alpha\Pi_{-\alpha}=-\frac{1}{4\alpha^2}D_{-\alpha}D_\alpha=-\frac{1}{4\alpha^2}(\Delta-\alpha^2)=0$ on the null-set, and likewise in the other order; and the idempotence is $\Pi_\alpha^2=\frac{1}{4\alpha^2}\bigl(\Delta-2\alpha D+\alpha^2\bigr)=\frac{1}{4\alpha^2}\bigl(2\alpha^2-2\alpha D\bigr)=-\frac{1}{2\alpha}(D-\alpha)=\Pi_\alpha$, the third equality using $\Delta=\alpha^2$ on the null-set. For the range, $D_\alpha f=0$ gives $Df=-\alpha f$, whence $(D-\alpha)f=-2\alpha f$ and $\Pi_\alpha f=f$: so $\Pi_\alpha$ fixes $\ker D_\alpha$ pointwise, and conversely $\Pi_\alpha f=f$ gives $D_{-\alpha}f=-2\alpha f$, hence $D_\alpha f=-\frac{1}{2\alpha}D_\alpha D_{-\alpha}f=0$ on the null-set. The same with $\alpha$ replaced by $-\alpha$.

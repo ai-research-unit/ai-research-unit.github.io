@@ -13,7 +13,7 @@ Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $E = \
 **Theorem (existence, uniqueness, linearity).** For every $A \in E$ there is a unique endomorphism $A^{*} \in E$ with
 
 $$
-B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V ,
+\boxed{\;B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V\;} ,
 $$
 
 and the assignment $A \mapsto A^{*}$ is additive, of order two and anti-multiplicative: $(A^{*})^{*} = A$, $(A+B)^{*} = A^{*}+B^{*}$, $(AB)^{*} = B^{*}A^{*}$, and $(\lambda A)^{*} = \varsigma(\lambda)A^{*}$.
@@ -37,8 +37,8 @@ $$
 **Theorem (kernel and image of the adjoint).** For every $A \in E$,
 
 $$
-\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}, \qquad \operatorname{im}A^{*} = (\ker A)^{\mathrm{c}} , \qquad
-\operatorname{rk}A^{*} = \operatorname{rk}A .
+\boxed{\;\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}, \qquad \operatorname{im}A^{*} = (\ker A)^{\mathrm{c}} , \qquad
+\operatorname{rk}A^{*} = \operatorname{rk}A\;} .
 $$
 
 **Proof.** $A^{*}y = 0$ means $B(x,A^{*}y) = 0$ for all $x$, that is $B(Ax,y) = 0$ for all $x$, which says $y \in (\operatorname{im}A)^{\mathrm{c}}$; this is the first identity. For the second, $A^{*}y$ ranges over the paired complement of $\ker A$: indeed $B(x,A^{*}y) = B(Ax,y)$ vanishes for all $y$ exactly when $x \in \ker A$, so $(\operatorname{im}A^{*})^{\mathrm{c}} = \ker A$, and taking paired complements gives the identity. The rank is unchanged because $\dim\ker A^{*} = \dim(\operatorname{im}A)^{\mathrm{c}} = \dim\ker A$.
@@ -60,8 +60,8 @@ $$
 **Proposition (the adjoint of a composite).** For $A_1,\dots,A_k \in E$,
 
 $$
-(A_1A_2\cdots A_k)^{*} = A_k^{*}\cdots A_2^{*}A_1^{*} , \qquad
-\Bigl(\sum_i A_i\Bigr)^{*} = \sum_i A_i^{*} .
+\boxed{\;(A_1A_2\cdots A_k)^{*} = A_k^{*}\cdots A_2^{*}A_1^{*} , \qquad
+\Bigl(\sum_i A_i\Bigr)^{*} = \sum_i A_i^{*}\;} .
 $$
 
 **Proof.** Induction on $k$ from $(AB)^{*}=B^{*}A^{*}$ and additivity.

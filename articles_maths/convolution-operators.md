@@ -103,7 +103,7 @@ whose multiplier is not a function of a continuous variable.
 **Theorem (the convolution theorem).** For $k,f\in L^1(\mathbb R^n)$ the transform of the convolution is
 the product of the transforms,
 $$
-\mathcal F(k*f)(\xi)=(\mathcal F k)(\xi)(\mathcal F f)(\xi),
+\boxed{\;\mathcal F(k*f)(\xi)=(\mathcal F k)(\xi)(\mathcal F f)(\xi)\;},
 $$
 with the normalisation $(\mathcal F f)(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$ fixed by *Fourier Analysis on
 Euclidean Spaces*.
@@ -139,7 +139,7 @@ positive finite measure on which $\lvert m\rvert\geq\lVert m\rVert_\infty-\epsil
 
 **Corollary.** For $k\in L^1(\mathbb R^n)$ the convolution operator is bounded on $L^2$ with
 $$
-\lVert T_k\rVert_{L^2\to L^2}=\lVert\mathcal F k\rVert_\infty\leq\lVert k\rVert_1 ,
+\boxed{\;\lVert T_k\rVert_{L^2\to L^2}=\lVert\mathcal F k\rVert_\infty\leq\lVert k\rVert_1\;} ,
 $$
 the equality being the theorem and the inequality the trivial bound $\lvert\mathcal F k\rvert\leq\lVert k\rVert_1$;
 the inequality is strict unless $\lvert\mathcal F k\rvert=\lVert k\rVert_1$ almost everywhere, and the two
@@ -151,7 +151,7 @@ quantities agree for the Poisson kernel of the examples below.
 
 **Theorem (Young).** For $1\leq p,q,r\leq\infty$ with $1+1/r=1/n + 1/m$ and $k\in L^{n}$, $f\in L^{m}$,
 $$
-\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q .
+\boxed{\;\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q\;} .
 $$
 In particular, for $k\in L^1$ the operator $T_k$ is bounded on every $L^{n}$, $1\leq p\leq\infty$, with
 $\lVert T_k\rVert_{L^{n}}\to L^{n}\leq\lVert k\rVert_1$.

@@ -30,7 +30,7 @@ $$
 **Theorem (the explicit form of the adjoint).** With respect to the signed form,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = \Sigma^{\alpha}_{a^{-1},\,b^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = \Sigma^{\alpha}_{a^{-1},\,b^{-1}}\;} .
 $$
 
 Equivalently, the adjoint of $u\mapsto a\alpha(u)b$ is $u\mapsto a^{-1}\alpha(u)b^{-1}$, and the adjoint operation is an involution on the set of signed sandwiches: $((\Sigma^{\alpha}_{a,b})^\dagger)^\dagger = \Sigma^{\alpha}_{a,b}$.
@@ -52,7 +52,7 @@ $$
 **Theorem (the inverse and the criterion).** The inverse of the signed sandwich is $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1} = \Sigma^{\alpha}_{\sigma(a),\,\sigma(b)}$, and the identity criterion for signed sandwiches is
 
 $$
-\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1} .
+\boxed{\;\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1}\;} .
 $$
 
 Consequently $\Sigma^{\alpha}_{a,b}$ is unitary if and only if
@@ -78,7 +78,7 @@ $$
 **Theorem.** With respect to the signed form,
 
 $$
-\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a} ,
+\boxed{\;\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a}\;} ,
 $$
 
 the signed conjugation is self-adjoint if and only if $a^2 \in Z(G)$, and it is unitary if and only if $a^{-1}\alpha(a) \in Z(G)$. When $\rho_a$ is a reflection — that is, when $a\alpha(a) \in Z(G)$ — the two conditions are equivalent, and the reflection is then an orthogonal involution of the group algebra.

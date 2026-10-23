@@ -27,9 +27,9 @@ The preimage is determined by the implication $x \in f^{-1}(B) \iff f(x) \in B$,
 **Proposition (the preimage is a lattice homomorphism).** For every family $(B_i)_{i \in I}$ in $\mathcal{P}(Y)$ and all $B, C \subseteq Y$,
 
 $$
-f^{-1}\Bigl(\bigcup_{i \in I} B_i\Bigr) = \bigcup_{i \in I} f^{-1}(B_i), \qquad
+\boxed{\;f^{-1}\Bigl(\bigcup_{i \in I} B_i\Bigr) = \bigcup_{i \in I} f^{-1}(B_i), \qquad
 f^{-1}(B \cap C) = f^{-1}(B) \cap f^{-1}(C), \qquad
-f^{-1}(B^{c}) = f^{-1}(B)^{c},
+f^{-1}(B^{c}) = f^{-1}(B)^{c}\;},
 $$
 
 and consequently $f^{-1}(\emptyset) = \emptyset$ and $f^{-1}(Y) = X$.
@@ -55,7 +55,7 @@ Unlike the preimage, the direct image is not a Boolean homomorphism: it preserve
 **Theorem (the Galois connection).** For $A \subseteq X$ and $B \subseteq Y$,
 
 $$
-f_{*}(A) \subseteq B \iff A \subseteq f^{-1}(B).
+\boxed{\;f_{*}(A) \subseteq B \iff A \subseteq f^{-1}(B)\;}.
 $$
 
 **Proof.** Both sides say that $f(x) \in B$ for every $x \in A$: the left says every value $f(x)$ with $x \in A$ lies in $B$, and the right says every $x \in A$ lies in the set of points mapped into $B$.
@@ -73,7 +73,7 @@ The adjunction lets continuity be stated without naming a single open set twice,
 **Theorem.** The map $f$ is continuous if and only if
 
 $$
-f_{*}\bigl(\overline{A}\bigr) \subseteq \overline{f_{*}(A)}, \qquad A \subseteq X,
+\boxed{\;f_{*}\bigl(\overline{A}\bigr) \subseteq \overline{f_{*}(A)}, \qquad A \subseteq X\;},
 $$
 
 where the closures are taken in $X$ and in $Y$; equivalently, if and only if $f^{-1}$ carries closed sets to closed sets, or if and only if $\overline{f^{-1}(B)} \subseteq f^{-1}(\overline{B})$ for every $B \subseteq Y$.

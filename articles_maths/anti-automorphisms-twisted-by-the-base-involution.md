@@ -47,7 +47,7 @@ The set of them is written $\operatorname{Aut}_{\varsigma}(A)$; the untwisted ca
 **Theorem.** Let $f$ and $g$ be bijective semilinear maps of $A$ with twists $\varsigma_{f}$ and $\varsigma_{g}$. Then the composite $f \circ g$ has twist $\varsigma_{f} \circ \varsigma_{g}$, and the two orientations multiply as the rule
 
 $$
-(\text{anti}) \circ (\text{anti}) = \text{auto} , \qquad (\text{anti}) \circ (\text{auto}) = \text{anti} , \qquad (\text{auto}) \circ (\text{auto}) = \text{auto} .
+\boxed{\;(\text{anti}) \circ (\text{anti}) = \text{auto} , \qquad (\text{anti}) \circ (\text{auto}) = \text{anti} , \qquad (\text{auto}) \circ (\text{auto}) = \text{auto}\;} .
 $$
 
 **Proof.** For the twist, $(f \circ g)(\lambda x) = f\bigl(\varsigma_{g}(\lambda)g(x)\bigr) = \varsigma_{f}\bigl(\varsigma_{g}(\lambda)\bigr)(f \circ g)(x)$. For the orientations, if $f$ and $g$ both reverse products then $(f \circ g)(xy) = f(g(y)g(x)) = f(g(x))f(g(y)) = (f \circ g)(x)(f \circ g)(y)$, so the composite is multiplicative; the other two cases are the same computation with one reversal.
@@ -63,7 +63,7 @@ $$
 **Theorem.** Let $R$ be a domain, let $A$ be a noncommutative unital $R$-algebra, and let the twist take values in $\{\mathrm{id},\varsigma\}$, so that the twist of a semilinear map is unique by the lemma above. Then the four sets
 
 $$
-\operatorname{Aut}_{R}(A) , \qquad \operatorname{Aut}_{\varsigma}(A) , \qquad \operatorname{Tw}_{\mathrm{id}}(A) , \qquad \operatorname{Tw}_{\varsigma}(A)
+\boxed{\;\operatorname{Aut}_{R}(A) , \qquad \operatorname{Aut}_{\varsigma}(A) , \qquad \operatorname{Tw}_{\mathrm{id}}(A) , \qquad \operatorname{Tw}_{\varsigma}(A)\;}
 $$
 
 form a group $P$ under composition, each of them is either empty or a coset of the linear automorphism group $\operatorname{Aut}_{R}(A)$, and the map that records the twist and the orientation,
@@ -103,7 +103,7 @@ is a homomorphism with kernel $\operatorname{Aut}_{R}(A)$. When all four classes
 **Theorem.** Let $\operatorname{Tw}_{\varsigma}(A)$ be nonempty and let $f_{0}$ be an element of it. Then the map $\sigma \mapsto f_{0}\sigma$ is a bijection
 
 $$
-\operatorname{Aut}_{R}(A) \longrightarrow \operatorname{Tw}_{\varsigma}(A) ,
+\boxed{\;\operatorname{Aut}_{R}(A) \longrightarrow \operatorname{Tw}_{\varsigma}(A)\;} ,
 $$
 
 so that $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ is a right coset of the linear automorphism group; it is also the left coset $\operatorname{Aut}_{R}(A)f_{0}$, because $f_{0}\sigma f_{0}^{-1}$ is an $R$-linear automorphism for every $\sigma$.

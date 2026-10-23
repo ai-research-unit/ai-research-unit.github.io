@@ -191,8 +191,7 @@ Write $f(Q) = u(q, q') + i v(q, q')$, where $Q = q + i q'$ and $u, v : \Omega \t
 
 **Theorem.** $f$ is holomorphic at $Q_0 = q_0 + i q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the **Cauchy–Riemann equations**
 
-$$
-\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = -\frac{\partial v}{\partial q}.
+$$ \boxed{\;\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = -\frac{\partial v}{\partial q}\;}.
 $$
 
 **Proof.** Write $h = h_1 + i h_2$. The difference quotient is
@@ -313,8 +312,7 @@ is well-defined, holomorphic, and satisfies $F' = f$.
 
 **Theorem (Cauchy Integral Formula).** Let $f$ be holomorphic on a domain containing the closed disk $\overline{B}(Q_0, r)$. Then for every $Q$ in the open disk,
 
-$$
-f(Q) = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1.
+$$ \boxed{\;f(Q) = \frac{1}{2\pi i} \oint_{\sqrt{\langle Q_1 - Q_0\rangle_{*}} = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1\;}.
 $$
 
 **Proof.** Apply the Cauchy-Goursat theorem to the function $g(Q_1) = (f(Q_1) - f(Q))/(Q_1 - Q)$ on the punctured disk, then let the radius of the small circle around $Q$ tend to zero.
@@ -435,8 +433,7 @@ $$
 
 **Theorem (Residue Theorem).** Let $f$ be holomorphic on a simply connected domain except for isolated singularities $Q_1, \dots, Q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $Q_k$ and winds once around each. Then
 
-$$
-\oint_\gamma f(Q) \, dQ = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, Q_k).
+$$ \boxed{\;\oint_\gamma f(Q) \, dQ = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, Q_k)\;}.
 $$
 
 **Proof.** Apply the Cauchy–Goursat theorem to the domain with small disks removed around each singularity, then use the definition of the residue.

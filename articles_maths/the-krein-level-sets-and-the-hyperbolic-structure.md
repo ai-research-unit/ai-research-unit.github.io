@@ -14,9 +14,7 @@ $$
 $$
 \boxed{\;\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}=\Bigl\{(c,v):\|v\|_E^{2}=1+\|c\|_E^{2}\Bigr\}\cong S^{5}\times\mathbb{R}^{2}\;},
 $$
-$$
-\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}=\{(c,v):\|c\|_E=\|v\|_E\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0},
-$$
+$$ \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}=\{(c,v):\|c\|_E=\|v\|_E\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0}, $$
 
 all three of real dimension $7$; the first is homotopy equivalent to $S^{1}$, the second to $S^{5}$, the third to $S^{1}\times S^{5}$.
 
@@ -74,9 +72,7 @@ which is Kähler, complete, of constant negative holomorphic sectional curvature
 
 **Theorem (the real hyperboloids).** On the Hermitian subspace $\mathbb{M}_{+}$ and on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the interval form of Lorentzian space, and with the real coordinates $q$,
 
-$$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}.
-$$
+$$ \langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}. $$
 
 The positive level set is the two-sheeted hyperboloid, whose sheet $q_t>0$ is given by $q_t=\sqrt{1+\|\vec q\|^{2}}$ with $\vec q\in\mathbb{R}^{3}$ free, hence is $\mathbb{R}^{3}$; the negative level set is the one-sheeted hyperboloid $q_t^{2}=\|\vec q\|^{2}-1$, diffeomorphic to $S^{2}\times\mathbb{R}$; and the null set is the null cone, of two nappes.
 

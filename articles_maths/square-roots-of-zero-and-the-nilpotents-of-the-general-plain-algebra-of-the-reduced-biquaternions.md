@@ -66,7 +66,7 @@ so $\breve Q_{\mathrm{ts}}\breve Q^{*}=0$ requires $|Q_{\blacktriangle}|^{2}+|Q_
 
 **Theorem (the tessarine bilinear product and the plain sesquilinear product).** The tessarine bilinear product $\breve Q_{1,\mathrm{ts}}\breve Q_{2}$ and the plain sesquilinear product $\breve Q_{1}\breve Q_{2}^{*}$ have the same nonzero square-zero set, the two idempotent lines
 $$
-\bigl\{\breve Q\neq0:\breve Q_{\mathrm{ts}}\breve Q=0\bigr\}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-=\bigl\{\breve Q\neq0:\breve Q \breve Q^{*}=0\bigr\}=\mathcal{N},
+\boxed{\; \bigl\{\breve Q\neq0:\breve Q_{\mathrm{ts}}\breve Q=0\bigr\}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-=\bigl\{\breve Q\neq0:\breve Q \breve Q^{*}=0\bigr\}=\mathcal{N} \;},
 $$
 the null cone of the reduced norm.
 
@@ -96,7 +96,7 @@ and this vanishes iff $|Q_{\blacktriangle}|^{2}=|Q_{\blacktriangledown}|^{2}$ an
 
 **Theorem (index two).** For every nonzero element of the null cone,
 $$
-\breve Q\in\mathcal{N}\ \Longrightarrow\ \breve Q_{\mathrm{ts}}\breve Q=0\quad\text{and}\quad \breve Q \breve Q^{*}=0,
+\boxed{\; \breve Q\in\mathcal{N}\ \Longrightarrow\ \breve Q_{\mathrm{ts}}\breve Q=0\quad\text{and}\quad \breve Q \breve Q^{*}=0 \;},
 $$
 so the tessarine bilinear product and the plain sesquilinear product are nilpotent of index two on the cone.
 
@@ -124,7 +124,7 @@ a nonzero element of the second idempotent line. The next power is $(\breve Q_{\
 
 **Theorem (the radical).** The Jacobson radical of the algebra is
 $$
-\operatorname{rad}\mathbb{B}_{\mathrm{r}}=\{0\},
+\boxed{\; \operatorname{rad}\mathbb{B}_{\mathrm{r}}=\{0\} \;},
 $$
 and the algebra is semisimple and Artinian.
 

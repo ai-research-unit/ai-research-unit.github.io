@@ -43,7 +43,7 @@ $$
 
 **Theorem.** Let $(X, \delta)$ be a proximity space and define, for $A \subseteq X$,
 $$
-\operatorname{cl}_\delta(A) = \{ x \in X : \{x\} \delta A \} .
+\boxed{\;\operatorname{cl}_\delta(A) = \{ x \in X : \{x\} \delta A \}\;} .
 $$
 Then $\operatorname{cl}_\delta$ is a Kuratowski closure operator, so it is the closure operator of a topology on $X$, the **topology induced by the proximity**.
 
@@ -129,7 +129,7 @@ An **entourage** is a subset $U \subseteq X \times X$ containing the diagonal an
 
 **Theorem (Smirnov).** Let $X$ be a completely regular Hausdorff space. There is a bijective correspondence, up to equivalence, between the compactifications of $X$ and the totally bounded proximities on $X$: to a compactification $\gamma X$ one assigns the proximity
 $$
-A \delta_\gamma B \iff \operatorname{cl}_{\gamma X}(A) \cap \operatorname{cl}_{\gamma X}(B) \neq \emptyset ,
+\boxed{\;A \delta_\gamma B \iff \operatorname{cl}_{\gamma X}(A) \cap \operatorname{cl}_{\gamma X}(B) \neq \emptyset\;} ,
 $$
 and to a totally bounded proximity one assigns its completion, which is compact. Under this correspondence, finer proximities correspond to larger compactifications, the Čech–Stone proximity corresponds to $\beta X$, and the one-point compactification of a locally compact space corresponds to the coarsest totally bounded proximity.
 

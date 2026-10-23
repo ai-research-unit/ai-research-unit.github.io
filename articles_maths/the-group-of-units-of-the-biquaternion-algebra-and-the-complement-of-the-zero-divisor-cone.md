@@ -54,7 +54,9 @@ $\mathbb{B}$ is invertible in the plain product exactly when $\langle\tilde Q\ra
 then
 
 $$
-\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
+\boxed{\;
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}}
+\;}.
 $$
 
 *Proof.* The natural conjugation is an anti-automorphism, $\tilde Q_1^{\natural}\tilde
@@ -77,8 +79,10 @@ Q^{-1}$ and $\tilde Q^{-1}\tilde Q$ returning $e_t$ with error below $10^{-9}$.
 **Theorem (the partition of the algebra).** The algebra is the disjoint union
 
 $$
+\boxed{\;
 \mathbb{B}=\mathbb{B}^\times\uplus\mathcal{C},\qquad
-\mathbb{B}^\times=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}\neq0\},
+\mathbb{B}^\times=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}\neq0\}
+\;},
 $$
 
 of its **group of units** and its **zero-divisor cone**. The cone is exactly the complement of the
@@ -245,7 +249,9 @@ with empty interior, of real codimension two; and the group and the cone have on
 boundary,
 
 $$
-\partial\mathbb{B}^\times=\partial\mathcal{C}=\mathcal{C}.
+\boxed{\;
+\partial\mathbb{B}^\times=\partial\mathcal{C}=\mathcal{C}
+\;}.
 $$
 
 *Proof.* The cone is the zero set of a polynomial, hence closed, and it is a proper algebraic

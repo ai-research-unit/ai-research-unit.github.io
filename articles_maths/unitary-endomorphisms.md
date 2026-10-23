@@ -13,7 +13,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Definition.** The **unitary group** of $B$ is
 
 $$
-\mathrm{U}(V,B) = \{A \in E : A^{*}A = AA^{*} = \mathrm{id}_V\} = \{A \in \operatorname{GL}(V) : B(Ax,Ay) = B(x,y) \ \forall x,y\} .
+\boxed{\;\mathrm{U}(V,B) = \{A \in E : A^{*}A = AA^{*} = \mathrm{id}_V\} = \{A \in \operatorname{GL}(V) : B(Ax,Ay) = B(x,y) \ \forall x,y\}\;} .
 $$
 
 **Proposition.** $\mathrm{U}(V,B)$ is a subgroup of $\operatorname{GL}(V)$, and it is exactly the stabiliser of $B$ under the action $A \cdot B = B \circ (A\times A)$ of $\operatorname{GL}(V)$ on the pairings.
@@ -41,7 +41,7 @@ $$
 **Proposition (the bracket table).** With $E^{\pm} = \{X : X^{*} = \pm X\}$,
 
 $$
-[E^{+},E^{+}] \subseteq E^{-}, \qquad [E^{+},E^{-}] \subseteq E^{+}, \qquad [E^{-},E^{-}] \subseteq E^{-},
+\boxed{\;[E^{+},E^{+}] \subseteq E^{-}, \qquad [E^{+},E^{-}] \subseteq E^{+}, \qquad [E^{-},E^{-}] \subseteq E^{-}\;},
 $$
 
 so the skew-adjoint operators form a Lie subalgebra of $E$ under the bracket, and the self-adjoint operators form a subspace closed under the anticommutator, $\{E^{+},E^{+}\} \subseteq E^{+}$.

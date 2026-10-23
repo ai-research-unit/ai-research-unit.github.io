@@ -29,7 +29,7 @@ in a local orthonormal frame $(e_1,\dots,e_n)$, where the first term contracts t
 **Proposition.** Let $\alpha\in\Gamma(T^*M\otimes\mathcal{S})$ and $s\in\Gamma(\mathcal{S})$, and take $M$ closed. Then
 
 $$
-\int_M h(\nabla^{\mathcal{S}}s,\alpha)\,d\text{vol}_g = \int_M h(s,\delta\alpha)\,d\text{vol}_g ,
+\boxed{\;\int_M h(\nabla^{\mathcal{S}}s,\alpha)\,d\text{vol}_g = \int_M h(s,\delta\alpha)\,d\text{vol}_g\;} ,
 $$
 
 where the pairing of $T^*M\otimes\mathcal{S}$ is the tensor product of $g^{-1}$ and $h$; so $\delta$ is the formal adjoint of $\nabla^{\mathcal{S}}$.
@@ -72,7 +72,7 @@ since in the flat case the derivative of the frame vanishes.
 **Theorem (the curved case, quoted).** On a closed spin manifold with the spin connection and the fibre form $h$, the Cauchy–Riemann operator is formally self-adjoint,
 
 $$
-D^* = D, \qquad \int_M h(D\sigma,\tau)\,d\text{vol}_g = \int_M h(\sigma,D\tau)\,d\text{vol}_g ,
+\boxed{\;D^* = D, \qquad \int_M h(D\sigma,\tau)\,d\text{vol}_g = \int_M h(\sigma,D\tau)\,d\text{vol}_g\;} ,
 $$
 
 equivalently $\delta\circ c^* = c\circ\nabla^{\mathcal{S}}$ as operators on $\mathcal{S}$ after the derivative of the frame is included.
@@ -102,7 +102,7 @@ so the connection Laplacian is non-negative and its kernel consists of the paral
 **Theorem (the Lichnerowicz identity, quoted).** The Cauchy–Riemann operator and the connection Laplacian are related by
 
 $$
-D^2 = \nabla^{*}\nabla + \tfrac14\operatorname{scal},
+\boxed{\;D^2 = \nabla^{*}\nabla + \tfrac14\operatorname{scal}\;},
 $$
 
 as *The Spinor Operator* records; the codifferential enters through the term $\nabla^{*}\nabla=\delta\nabla^{\mathcal{S}}$.

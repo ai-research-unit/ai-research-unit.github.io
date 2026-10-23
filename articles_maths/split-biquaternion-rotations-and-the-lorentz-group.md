@@ -102,7 +102,9 @@ so that $\mathbb{M}_+$ has the orthonormal basis $(e_t, j\vec e_x, j\vec e_y, j\
 **Theorem.** The restrictions of the Hermitian scalar form have signatures
 
 $$
-g\big|_{\mathbb{M}_+} \sim (1,3), \qquad g\big|_{\mathbb{M}_-} \sim (3,1).
+\boxed{\;
+g\big|_{\mathbb{M}_+} \sim (1,3), \qquad g\big|_{\mathbb{M}_-} \sim (3,1)
+\;}.
 $$
 
 Consequently $\mathbb{M}_-$ is a Lorentzian four-space with the form $g$, and $O(3,1)$ is the isometry group of $(\mathbb{M}_-,g)$; $\mathbb{M}_+$ carries the opposite Lorentzian form, and $O(1,3)\cong O(3,1)$ is its isometry group.
@@ -140,7 +142,9 @@ $$
 **Theorem.** An element $\tilde S$ has norm $e_t$ if and only if its two idempotent components are unit quaternions, so that
 
 $$
-S(\mathbb{H}_{\mathbb{D}}) = \left\{\tilde S_+\tilde\Pi_1 + \tilde S_-\tilde\Pi_2 : \lvert\tilde S_+\rvert = \lvert\tilde S_-\rvert = 1\right\}\cong S^3\times S^3,
+\boxed{\;
+S(\mathbb{H}_{\mathbb{D}}) = \left\{\tilde S_+\tilde\Pi_1 + \tilde S_-\tilde\Pi_2 : \lvert\tilde S_+\rvert = \lvert\tilde S_-\rvert = 1\right\}\cong S^3\times S^3
+\;},
 $$
 
 a compact group of dimension six. Under the identification $\tilde S = a + jb$ it is
@@ -180,7 +184,9 @@ $$
 **Theorem.** The unitary group is four-dimensional and isomorphic to the direct product $Sp(1)\times\mathbb{R}$. Concretely,
 
 $$
-\mathrm{U}(\mathbb{H}_{\mathbb{D}}) = \left\{u\,\exp(\psi j) : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad \exp(\psi j) = \cosh\psi + j\sinh\psi,
+\boxed{\;
+\mathrm{U}(\mathbb{H}_{\mathbb{D}}) = \left\{u\,\exp(\psi j) : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad \exp(\psi j) = \cosh\psi + j\sinh\psi
+\;},
 $$
 
 and its action on $\mathbb{M}_-$ given by $\tilde{Q}\mapsto \tilde S\tilde{Q}\tilde{S}^{*}$ is by isometries of $g$; it fixes the timelike vector $je_t$ and acts on the spacelike three-plane $\operatorname{Im}\mathbb{H} = \mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ by

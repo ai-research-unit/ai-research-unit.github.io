@@ -53,6 +53,12 @@ $$
 
 **Proof.** On the unit sphere $\|q\|^2 + \|q'\|^2 = 1$ the extra equation $\|q\|^2 = \|q'\|^2$ gives $\|q\| = \|q'\| = 1/\sqrt{2}$. So $L$ is the set of pairs of four-vectors of fixed length $1/\sqrt2$, that is $S^3 \times S^3$.
 
+The homeomorphism is
+
+$$
+\boxed{\; L \cong S^3\times S^3 \;}.
+$$
+
 The link of the null cone is thus the same manifold as the norm-one group $S^3 \times S^3 = \mathrm{Spin}(4)$, and the coincidence is structural: both are the twofold product of a three-sphere by itself, one cut out by the Hermitian form on the unit sphere and the other by the split complex norm on the whole algebra. The link is connected, simply connected, and has the homology of $S^3\times S^3$, with nonzero Betti numbers in degrees $0,3,3,6$.
 
 ## The Group of Units and Its Homotopy
@@ -64,7 +70,9 @@ The link of the null cone is thus the same manifold as the norm-one group $S^3 \
 **Corollary.** The homotopy groups of the unit group are
 
 $$
-\pi_t = 0, \quad \pi_x = 0, \quad \pi_y = 0, \quad \pi_z(\mathbb{H}_{\mathbb{D}}^{\times}) = \mathbb{Z}\oplus\mathbb{Z} ,
+\boxed{\;
+\pi_t = 0, \quad \pi_x = 0, \quad \pi_y = 0, \quad \pi_z(\mathbb{H}_{\mathbb{D}}^{\times}) = \mathbb{Z}\oplus\mathbb{Z}
+\;},
 $$
 
 the last being $\pi_z(S^3)\oplus\pi_z(S^3)$ by the Künneth and Hurewicz theorems for a product of simply connected spaces.

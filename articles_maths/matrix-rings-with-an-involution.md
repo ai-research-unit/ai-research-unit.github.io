@@ -34,7 +34,7 @@ Throughout, $R$ is a ring with $1 \neq 0$, $F$ is a field, $n \geq 1$, and $M_n(
 **Definition.** Let $J \in M_n(R)$ satisfy $J^{\mathrm t} = -J$ and $J^2 = -1$; necessarily $n$ is even and $-1$ is a square in the centre. The **symplectic involution** is
 
 $$
-X^{\tau} = J^{-1}X^{\mathrm t}J .
+\boxed{\;X^{\tau} = J^{-1}X^{\mathrm t}J\;} .
 $$
 
 **Proposition.** $X \mapsto X^{\tau}$ is an involution of $M_n(R)$, and $X^{\tau} = X$ if and only if $JX$ is skew-symmetric.
@@ -47,7 +47,7 @@ $$
 
 **Proposition.** Let $2$ be invertible in $R$. Every matrix decomposes uniquely as the sum of a symmetric and a skew-symmetric matrix under the transpose,
 $$
-X = \tfrac12(X+X^{\mathrm t}) + \tfrac12(X-X^{\mathrm t}),
+\boxed{\;X = \tfrac12(X+X^{\mathrm t}) + \tfrac12(X-X^{\mathrm t})\;},
 $$
 and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each case the symmetric and the skew matrices are the eigenspaces of the involution for $+1$ and $-1$, and the fixed set is the symmetric one.
 
@@ -78,11 +78,11 @@ and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each cas
 **Theorem (the separating invariant).** The dimension of the symmetric part of a first-kind involution of $M_n(F)$ is
 
 $$
-\dim_F \mathrm{Sym}(M_n(F),\sigma) =
+\boxed{\;\dim_F \mathrm{Sym}(M_n(F),\sigma) =
 \begin{cases}
 \tfrac12 n(n+1) & \text{transpose type},\\[2pt]
 \tfrac12 n(n-1) & \text{symplectic type}.
-\end{cases}
+\end{cases}\;}
 $$
 
 Hence the transpose and the symplectic involutions are inequivalent for $n \geq 2$, and the type is determined by this dimension.

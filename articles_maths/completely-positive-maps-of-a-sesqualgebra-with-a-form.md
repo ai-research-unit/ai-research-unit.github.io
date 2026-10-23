@@ -73,7 +73,7 @@ The terminology is the one of the bilinear layer, and the amplified map is the n
 **Theorem (the sandwich is completely positive).** For every $a \in A$ the sandwich $\Theta_{a}$ is completely positive, and its amplification is the sandwich by the diagonal matrix,
 
 $$
-\Theta_{a} \otimes \mathrm{id}_{n} = \Theta_{\operatorname{diag}(a,\dots,a)} .
+\boxed{\;\Theta_{a} \otimes \mathrm{id}_{n} = \Theta_{\operatorname{diag}(a,\dots,a)}\;} .
 $$
 
 *Proof.* The amplification acts entrywise, $(\Theta_{a} \otimes \mathrm{id}_{n})(x_{ij}) = (a x_{ij}a^{*})$, and the sandwich by the diagonal matrix $a^{(n)} = \operatorname{diag}(a,\dots,a)$ is $(a^{(n)} X a^{(n)*})_{ij} = a x_{ij}a^{*}$, which is the same. The amplified sandwich is positive by the positivity of the sandwich applied to $M_{n}(A)$ with the form $h_{n}$, whose cone is the cone of that algebra.
@@ -81,7 +81,7 @@ $$
 **Corollary (the sandwich is a channel of Kraus rank one).** The sandwich is the composition of the left multiplication and the right multiplication of *The Adjoint under a Hermitian Form*, §*The Multiplications*, $\Theta_{a} = m_{a} \circ R_{a}$ with $m_{a}(x) = ax$ and $R_{a}(x) = xa^{*}$,
 
 $$
-\Theta_{a} = m_{a} \circ R_{a} ,
+\boxed{\;\Theta_{a} = m_{a} \circ R_{a}\;} ,
 $$
 
 and its adjoint for the form is $\Theta_{a}^{\dagger} = \Theta_{a^{*}}$, so the sandwich is self-adjoint as an operator exactly when $a$ is Hermitian, while it is a positive map for every $a$.
@@ -131,7 +131,7 @@ the block matrix whose positivity is the complete positivity of $\varphi$ and wh
 **Theorem (the classification of the sandwich).** For $a \in A$ on a unital object,
 
 $$
-\Theta_{a}(1) = a\,a^{*} , \qquad \Theta_{a}(x)\Theta_{a}(y) = a\,x\,(a^{*}a)\,y\,a^{*} ,
+\boxed{\;\Theta_{a}(1) = a\,a^{*} , \qquad \Theta_{a}(x)\Theta_{a}(y) = a\,x\,(a^{*}a)\,y\,a^{*}\;} ,
 $$
 
 so the sandwich is **unital**, $\Theta_{a}(1) = 1$, exactly when $a a^{*} = 1$; it is **multiplicative**, $\Theta_{a}(xy) = \Theta_{a}(x)\Theta_{a}(y)$, as soon as $a^{*}a = 1$, and in the matrix model the converse holds for $a \neq 0$; and it is an **automorphism** of the algebra exactly when $a$ is unitary, in which case $\Theta_{a} = \alpha_{a}$ is the inner automorphism by $a$.

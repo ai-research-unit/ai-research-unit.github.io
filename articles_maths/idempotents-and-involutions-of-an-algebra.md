@@ -45,7 +45,7 @@ It is an anti-automorphism of order two; the definition and the first properties
 **Corollary.** The involution is a permutation of order two of the set $\operatorname{Idem}(A)$ of idempotents, preserving orthogonality, completeness and primitivity. Its fixed set is the set of **Hermitian idempotents**,
 
 $$
-\operatorname{Idem}(A)^\sigma=\{e\in\operatorname{Idem}(A):e^*=e\}.
+\boxed{\;\operatorname{Idem}(A)^\sigma=\{e\in\operatorname{Idem}(A):e^*=e\}\;}.
 $$
 
 The trivial idempotents $0,1$ are always fixed, since $\sigma(0)=0$ and $\sigma(1)=1$.
@@ -95,7 +95,7 @@ The Hermitian idempotents are the fixed points of the involution on $\operatorna
 **Proposition.** Let $e$ be a Hermitian idempotent and $f=1-e$. Then $f$ is Hermitian, and the four Peirce corners satisfy
 
 $$
-(eAe)^*=eAe, \qquad (fAf)^*=fAf, \qquad (eAf)^*=fAe, \qquad (fAe)^*=eAf .
+\boxed{\;(eAe)^*=eAe, \qquad (fAf)^*=fAf, \qquad (eAf)^*=fAe, \qquad (fAe)^*=eAf\;} .
 $$
 
 In particular the Peirce decomposition is stable under the involution, the two diagonal corners are $*$-subalgebras with identities $e$ and $f$, and the involution exchanges the two off-diagonal corners.
@@ -143,7 +143,7 @@ The name records the relation, not a new operation: the complement of $e$ is $1-
 **Proposition (the converse).** Suppose $2$ is invertible in $F$. If $u\in A$ satisfies $u^*=-u$ and $u^2=1$, then
 
 $$
-e=\frac{1+u}{2}
+\boxed{\;e=\frac{1+u}{2}\;}
 $$
 
 is an idempotent with $e^*=1-e$, and the two constructions are inverse. Hence, when $2$ is invertible, the complementary idempotents are in bijection with the skew roots of the identity.

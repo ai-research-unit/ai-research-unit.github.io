@@ -64,7 +64,7 @@ The subalgebra $\mathrm{H}$ is the **isotropy algebra** and $\mathrm{M}$ the **i
 **Theorem.** On a symmetric space, with $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$ the symmetric pair and the metric induced from an $\operatorname{Ad}(G)$-invariant inner product on $\mathrm{G}$, the Riemann curvature tensor at $o$ is, for $X, Y, Z \in \mathrm{M}$,
 
 $$
-R(X, Y)Z = -[[X, Y], Z], \qquad \text{and hence} \qquad K(X\wedge Y) = \bigl\|[X, Y]\bigr\|^2 \geq 0
+\boxed{\;R(X, Y)Z = -[[X, Y], Z], \qquad \text{and hence} \qquad K(X\wedge Y) = \bigl\|[X, Y]\bigr\|^2 \geq 0\;}
 $$
 
 for the compact type, with the opposite sign
@@ -90,7 +90,7 @@ for the noncompact type, where the bracket is that of $\mathrm{G}$ and $\|[X,Y]\
 **Theorem (Cartan).** Every symmetric space whose isometry group is semisimple decomposes uniquely as a Riemannian product
 
 $$
-M = M_c \times M_n \times M_e
+\boxed{\;M = M_c \times M_n \times M_e\;}
 $$
 
 of a compact-type factor, a noncompact-type factor and a Euclidean factor; the decomposition is orthogonal in the metric and the factors are the images of the distinct types of simple ideals in the symmetric pair.
@@ -104,7 +104,7 @@ of a compact-type factor, a noncompact-type factor and a Euclidean factor; the d
 **Theorem (Cartan).** Let $M = G/H$ be a symmetric space of noncompact type, with $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$ and the Cartan involution $\sigma$. Then the map
 
 $$
-\exp : \mathrm{M} \longrightarrow M, \qquad \exp(X) = \exp_G(X)\cdot o,
+\boxed{\;\exp : \mathrm{M} \longrightarrow M, \qquad \exp(X) = \exp_G(X)\cdot o\;},
 $$
 
 is a diffeomorphism; consequently $M$ is diffeomorphic to a Euclidean space, and the exponential map of the metric coincides with the group exponential along $\mathrm{M}$.

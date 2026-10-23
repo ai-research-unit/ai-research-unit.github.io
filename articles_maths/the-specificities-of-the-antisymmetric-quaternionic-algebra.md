@@ -16,11 +16,9 @@ object it has one sharp feature, and the feature is the whole of the present art
 
 The feature is the action of the algebra unit. For the block,
 $$
-\boxed{\;
 L_{e_t}\tilde Q_1=e_t\diamond\tilde Q_1=\vec Q_1 , \qquad
 R_{e_t}\tilde Q_1=\tilde Q_1\diamond e_t=-\vec Q_1 , \qquad
-L_{e_t}^{2}=L_{e_t}
-\;},
+L_{e_t}^{2}=L_{e_t},
 $$
 so the left multiplication by $e_t$ is the **projection onto the vector subspace** along the
 centre, and the right multiplication is its negative. The block is the **only** one of the twelve
@@ -70,7 +68,7 @@ the element $e_t$ is a projector.
 **Proposition (the unit acts as the projection onto the vector subspace).** For every element
 $\tilde Q_1$,
 $$
-L_{e_t}\tilde Q_1=\vec Q_1 , \qquad R_{e_t}\tilde Q_1=-\vec Q_1 , \qquad L_{e_t}^{2}=L_{e_t}.
+\boxed{\; L_{e_t}\tilde Q_1=\vec Q_1 , \qquad R_{e_t}\tilde Q_1=-\vec Q_1 , \qquad L_{e_t}^{2}=L_{e_t} \;}.
 $$
 The image of $L_{e_t}$ is $\mathrm{Vect}(\mathbb{B})$, its kernel is $\mathbb{C}_{\mathbb{B}}$,
 and $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$.

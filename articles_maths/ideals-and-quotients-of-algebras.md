@@ -138,7 +138,7 @@ The three isomorphism theorems and the correspondence theorem carry over from mo
 **Theorem (first isomorphism theorem).** Let $\varphi : A \to B$ be an algebra homomorphism. Then $\varphi$ induces an isomorphism
 
 $$
-A/\ker\varphi \;\cong\; \operatorname{im}\varphi,
+\boxed{\;A/\ker\varphi \;\cong\; \operatorname{im}\varphi\;},
 $$
 
 given by $a + \ker\varphi \mapsto \varphi(a)$.
@@ -148,7 +148,7 @@ given by $a + \ker\varphi \mapsto \varphi(a)$.
 **Theorem (second isomorphism theorem).** Let $B$ be a subalgebra and $I$ a two-sided ideal of $A$. Then $B + I$ is a subalgebra of $A$, $B \cap I$ is a two-sided ideal of $B$, and
 
 $$
-(B + I)/I \;\cong\; B/(B \cap I).
+\boxed{\;(B + I)/I \;\cong\; B/(B \cap I)\;}.
 $$
 
 *Proof.* For $b, b' \in B$ and $x, x' \in I$,
@@ -162,7 +162,7 @@ since $bb' \in B$ and the remaining three terms lie in $I$; this also shows that
 **Theorem (third isomorphism theorem).** Let $I \subseteq J$ be two-sided ideals of $A$. Then $J/I$ is a two-sided ideal of $A/I$, and
 
 $$
-(A/I)/(J/I) \;\cong\; A/J.
+\boxed{\;(A/I)/(J/I) \;\cong\; A/J\;}.
 $$
 
 *Proof.* The set $J/I$ is the image of $J$ under the quotient map, so it is an ideal by the proposition on images of ideals. The composite $A \to A/I \to (A/I)/(J/I)$ has kernel $J$, so the first isomorphism theorem applies.

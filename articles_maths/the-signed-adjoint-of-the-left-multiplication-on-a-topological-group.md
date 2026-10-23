@@ -20,7 +20,7 @@ with the **signed right multiplication** $\Lambda^{\mathrm{R}}_b(u) = \alpha(u)b
 **Theorem (the explicit form of the adjoint).** With respect to the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$,
 
 $$
-\Lambda_a^\dagger = \Lambda_{a^{-1}} , \qquad \bigl(\Lambda^{\mathrm{R}}_b\bigr)^\dagger = \Lambda^{\mathrm{R}}_{b^{-1}} ,
+\boxed{\;\Lambda_a^\dagger = \Lambda_{a^{-1}} , \qquad \bigl(\Lambda^{\mathrm{R}}_b\bigr)^\dagger = \Lambda^{\mathrm{R}}_{b^{-1}}\;} ,
 $$
 
 so the adjoint of the one-sided signed operator is the one-sided signed operator of the inverse, and the adjoint operation is an involution on each of the two signed families.
@@ -36,9 +36,9 @@ so the adjoint of the one-sided signed operator is the one-sided signed operator
 **Theorem (the three conditions).** The signed left multiplication satisfies
 
 $$
-\Lambda_a \text{ is self-adjoint} \iff a^2 = e , \qquad
+\boxed{\;\Lambda_a \text{ is self-adjoint} \iff a^2 = e , \qquad
 \Lambda_a \text{ is unitary} \iff a \in G^\alpha = H , \qquad
-\Lambda_a \text{ is an involution} \iff a \in I(\alpha) = G^\sigma .
+\Lambda_a \text{ is an involution} \iff a \in I(\alpha) = G^\sigma\;} .
 $$
 
 It is simultaneously unitary and self-adjoint exactly for the elements of order two in the fixed subgroup, which are the elements of $G^\alpha \cap G^\sigma$, and for those elements it is an orthogonal involution.
@@ -64,7 +64,7 @@ $$
 and its adjoint is assembled from the one-sided adjoints:
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = R_{b^{-1}}\circ\Lambda_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = R_{b^{-1}}\circ\Lambda_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}}\;} .
 $$
 
 **Proof.** $L_a\Lambda^{\mathrm{R}}_b(u) = L_a(\alpha(u)b) = a\alpha(u)b$ and $\Lambda_aR_{\alpha(b)}(u) = a\alpha(u\alpha(b)) = a\alpha(u)\alpha^2(b) = a\alpha(u)b$. For the adjoint, $(\Sigma^\alpha_{a,b})^\dagger = (\Lambda_aR_{\alpha(b)})^\dagger = R_{\alpha(b)}^\dagger\Lambda_a^\dagger = R_{\sigma\alpha(b)}\Lambda_{a^{-1}}$, and $\sigma\alpha = \sigma(\sigma\iota) = \iota$, so $\sigma\alpha(b) = b^{-1}$ and the adjoint is $R_{b^{-1}}\Lambda_{a^{-1}}(u) = a^{-1}\alpha(u)b^{-1} = \Sigma^\alpha_{a^{-1},b^{-1}}(u)$, consistently with *The Signed Adjoint Sandwich on a Topological Group*.

@@ -48,7 +48,7 @@ a group of operators on $\mathbb{P}(V)$; the **projective special linear group**
 **Theorem (the central extension).** The projection $GL(V) \to PGL(V)$ has kernel the scalars $K^\times$ acting by the nonzero scalar multiplications, and it sits in the exact sequence
 
 $$
-1 \longrightarrow K^\times \longrightarrow GL(V) \longrightarrow PGL(V) \longrightarrow 1 ,
+\boxed{\;1 \longrightarrow K^\times \longrightarrow GL(V) \longrightarrow PGL(V) \longrightarrow 1\;} ,
 $$
 
 so that $PGL(V)$ is the quotient of $GL(V)$ by its centre $K^\times$; the same sequence with $SL(V)$ in place of $GL(V)$ has kernel the group of scalars of determinant one, which is the group of the $(n+1)$-th roots of unity in $K$.
@@ -98,7 +98,7 @@ the **projective semilinear group**, where the field automorphisms act on the cl
 **Theorem (the fundamental theorem of projective geometry).** Let $\dim V \geq 3$ and let $f$ be a collineation of $\mathbb{P}(V)$; then $f$ is induced by a semilinear bijection of $V$, unique up to a scalar, so
 
 $$
-\operatorname{Aut}(\mathbb{P}(V)) = P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K) .
+\boxed{\;\operatorname{Aut}(\mathbb{P}(V)) = P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K)\;} .
 $$
 
 For $\dim V = 2$ the statement that a bijection of the line preserving the collinearity is semilinear is false, and the cross ratio, not the semilinearity, is then the invariant.
@@ -128,7 +128,7 @@ where $z$ is an affine coordinate on the complement of a point; the operator gro
 **Theorem.** The group $PGL(2,K)$ acts sharply triply transitively on the projective line: it acts transitively on the ordered triples of distinct points, and the stabiliser of a triple is trivial; consequently the **cross ratio**
 
 $$
-[z_1 : z_2 : z_3 : z_4] = \frac{(z_1 - z_3)(z_2 - z_4)}{(z_1 - z_4)(z_2 - z_3)}
+\boxed{\;[z_1 : z_2 : z_3 : z_4] = \frac{(z_1 - z_3)(z_2 - z_4)}{(z_1 - z_4)(z_2 - z_3)}\;}
 $$
 
 is the complete invariant of the ordered quadruples of distinct points.

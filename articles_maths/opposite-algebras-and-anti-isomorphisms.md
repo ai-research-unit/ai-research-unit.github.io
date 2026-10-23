@@ -59,7 +59,7 @@ The corollary is the reason the opposite algebra is a construction and not a new
 **Proposition.** For $k$-algebras $A$ and $B$ the swap $\tau(a \otimes b) = b \otimes a$ is an isomorphism of algebras
 
 $$
-(A \otimes_k B)^{\mathrm{opp}} \cong A^{\mathrm{opp}} \otimes_k B^{\mathrm{opp}}, \qquad (a \otimes b)^{\mathrm{opp}} \longmapsto a^{\mathrm{opp}} \otimes b^{\mathrm{opp}} .
+\boxed{\;(A \otimes_k B)^{\mathrm{opp}} \cong A^{\mathrm{opp}} \otimes_k B^{\mathrm{opp}}, \qquad (a \otimes b)^{\mathrm{opp}} \longmapsto a^{\mathrm{opp}} \otimes b^{\mathrm{opp}}\;} .
 $$
 
 *Proof.* Both sides are spanned by the decomposable elements and both products reverse the two factors and keep their order: $(a \otimes b)^{\mathrm{opp}}(a' \otimes b')^{\mathrm{opp}} = ((a' \otimes b')(a \otimes b))^{\mathrm{opp}} = (a'a \otimes b'b)^{\mathrm{opp}}$, which corresponds to $a^{\mathrm{opp}}a'^{\mathrm{opp}} \otimes b^{\mathrm{opp}}b'^{\mathrm{opp}}$, the product of the two images in $A^{\mathrm{opp}} \otimes B^{\mathrm{opp}}$. The map is $k$-bilinear on the factors, hence defined on the tensor product, and it is a bijection with inverse the corresponding map for the opposite algebras.
@@ -97,7 +97,7 @@ an **anti-isomorphism** is a bijective anti-homomorphism, and an **anti-automorp
 **Theorem (the dictionary).** For $k$-algebras $A$ and $B$ there is a bijection
 
 $$
-\operatorname{Anti}(A, B) \longrightarrow \operatorname{Hom}_k(A, B^{\mathrm{opp}}), \qquad f \longmapsto \iota_B \circ f,
+\boxed{\;\operatorname{Anti}(A, B) \longrightarrow \operatorname{Hom}_k(A, B^{\mathrm{opp}}), \qquad f \longmapsto \iota_B \circ f\;},
 $$
 
 and it restricts to a bijection $\operatorname{AntiIso}(A,B) \to \operatorname{Iso}_k(A, B^{\mathrm{opp}})$. Under the dictionary the anti-automorphisms of $A$ correspond to the isomorphisms $A \to A^{\mathrm{opp}}$, and the involutions of $A$ to those isomorphisms of *Involutive Algebras* whose square is the identity.
@@ -111,7 +111,7 @@ The dictionary is the reason anti-isomorphisms need no separate theory: an anti-
 **Theorem.** Let $A$ carry an anti-automorphism $\rho_0$. Then the map $\alpha \mapsto \rho_0 \circ \alpha$ is a bijection
 
 $$
-\operatorname{Aut}_k(A) \longrightarrow \operatorname{Anti}(A,A), \qquad \alpha \longmapsto \rho_0 \alpha,
+\boxed{\;\operatorname{Aut}_k(A) \longrightarrow \operatorname{Anti}(A,A), \qquad \alpha \longmapsto \rho_0 \alpha\;},
 $$
 
 and the anti-automorphisms of $A$ form a coset of the automorphism group in the monoid of all bijective $k$-linear maps of $A$. Two anti-automorphisms compose to an automorphism, and the products of an odd number of anti-automorphisms are anti-automorphisms.

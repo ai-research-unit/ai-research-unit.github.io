@@ -38,7 +38,7 @@ $$
 
 **Proposition (the kernel is well defined, independent of the basis and reproducing).** The series converges absolutely and locally uniformly, the sum does not depend on the orthonormal basis, $K$ is holomorphic in $z$ and antiholomorphic in $w$, it satisfies the Hermitian symmetry $K(w, z) = \overline{K(z, w)}$, and for every $f \in A^2(\Omega)$
 $$
-f(z) = \langle f, K(\cdot, z)\rangle = \int_\Omega f(w)\,\overline{K(z, w)}\,dV(w) .
+\boxed{\;f(z) = \langle f, K(\cdot, z)\rangle = \int_\Omega f(w)\,\overline{K(z, w)}\,dV(w)\;} .
 $$
 
 **Proof.** For fixed $z$ the functional $f \mapsto f(z)$ is continuous by the previous section, so it is represented by a unique vector $K_z \in A^2(\Omega)$ with $f(z) = \langle f, K_z\rangle$, by Riesz's theorem of *Hilbert Spaces*; expanding $K_z = \sum_j \langle K_z,\varphi_j\rangle\varphi_j$ and using $\langle K_z,\varphi_j\rangle = \overline{\varphi_j(z)}$ gives $K_z = \sum_j \overline{\varphi_j(z)}\,\varphi_j$, and $K(z,w) = \overline{K_w(z)}$ is its evaluation. The absolute and locally uniform convergence is the convergence in $A^2$ together with the continuity of the evaluations; the independence of the basis is the uniqueness of the representing vector; the symmetry is $K(w,z) = \overline{K(z,w)}$ read from the display.
@@ -61,7 +61,7 @@ The kernel is positive on the diagonal, $K_{\mathbb{D}}(z,z) = \pi^{-1}(1-|z|^2)
 
 **Proposition.** The Bergman operator is a bounded self-adjoint idempotent,
 $$
-P^2 = P, \qquad P^{*} = P, \qquad \|P\| = 1, \qquad P \ge 0 ,
+\boxed{\;P^2 = P, \qquad P^{*} = P, \qquad \|P\| = 1, \qquad P \ge 0\;} ,
 $$
 where ${}^{*}$ is the adjoint for the $L^2$ inner product; its range is $A^2(\Omega)$, its kernel is $(A^2(\Omega))^{\perp}$, and $I - P$ is the projection onto $(A^2(\Omega))^{\perp}$.
 
@@ -85,7 +85,7 @@ U_F : A^2(\Omega_2) \longrightarrow A^2(\Omega_1), \qquad (U_F g)(z) = g\bigl(F(
 $$
 is an isometry onto its image, and the Bergman kernels are related by
 $$
-K_{\Omega_1}(z, w) = \det F'(z)\; K_{\Omega_2}\bigl(F(z), F(w)\bigr)\; \overline{\det F'(w)} .
+\boxed{\;K_{\Omega_1}(z, w) = \det F'(z)\; K_{\Omega_2}\bigl(F(z), F(w)\bigr)\; \overline{\det F'(w)}\;} .
 $$
 
 **Proof.** The change of variables $z = F^{-1}(\zeta)$ has real Jacobian $|\det F'|^2$, so $\int_{\Omega_1}|g\circ F|^2\,|\det F'|^2\,dV = \int_{\Omega_2}|g|^2\,dV$ and $U_F$ is an isometry; its inverse is $h \mapsto (h\circ F^{-1})\det(F^{-1})'$. For the kernel, the reproducing property of $K_{\Omega_1}$ must be transported by the isometry: for $h \in A^2(\Omega_1)$ one has $h(z) = \langle h, K_{\Omega_1}(\cdot,z)\rangle = \langle U_F^{-1}h, U_F^{-1}K_{\Omega_1}(\cdot,z)\rangle$, and computing $U_F^{-1}K_{\Omega_1}(\cdot,z)$ from the isometry and the reproducing property of $K_{\Omega_2}$ gives the displayed factor. This is the transformation law of the Bergman kernel.

@@ -50,7 +50,7 @@ $$
 **Theorem (fundamental theorem of Riemannian geometry).** On a Riemannian manifold $(M, g)$ there is exactly one connection $\nabla$ that is metric and torsion-free. It is the **Levi-Civita connection**, and it is determined by the **Koszul formula**
 
 $$
-2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]).
+\boxed{\;2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y])\;}.
 $$
 
 **Proof.** The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the skew symmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$.
@@ -114,7 +114,7 @@ where $U_p$ is the set of vectors $v$ for which the geodesic $\gamma_v$ with $\g
 **Theorem (Gauss lemma).** For $v \in U_p$ and $w \in T_{v}(T_pM) \cong T_pM$,
 
 $$
-g_{\exp_p(v)}\bigl(d(\exp_p)_v(v),\, d(\exp_p)_v(w)\bigr) = g_p(v, w).
+\boxed{\;g_{\exp_p(v)}\bigl(d(\exp_p)_v(v),\, d(\exp_p)_v(w)\bigr) = g_p(v, w)\;}.
 $$
 
 In words, the radial geodesics leave $p$ orthogonally to the spheres of constant radius, and the exponential map is a radial isometry.
@@ -284,7 +284,7 @@ The table is the reason the three two-dimensional algebras of *The Three Two-Dim
 **Theorem (Gauss–Bonnet).** Let $M$ be a compact oriented Riemannian surface with Gaussian curvature $K$ and Euler characteristic $\chi(M)$. Then
 
 $$
-\int_M K\, \mathrm{vol}_g = 2\pi\,\chi(M).
+\boxed{\;\int_M K\, \mathrm{vol}_g = 2\pi\,\chi(M)\;}.
 $$
 
 **Proof sketch.** For a geodesic triangle with interior angles $\alpha, \beta, \gamma$ the Gauss–Bonnet formula with boundary is $\int_T K\,\mathrm{vol}_g = \alpha + \beta + \gamma - \pi$; triangulating the surface and summing, the boundary terms cancel in pairs and the angle sums contribute $2\pi$ times the alternating count of the vertices, faces and edges, which is $2\pi\chi(M)$.

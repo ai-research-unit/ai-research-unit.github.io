@@ -25,7 +25,7 @@ and the **Riemann $\Xi$ function** is $\Xi(t) = \xi(\tfrac12+it)$.
 
 **Theorem.** The function $\xi$ is entire of order $1$, it satisfies $\xi(s) = \xi(1-s)$, it is real on the real axis, and $\Xi$ is real and even for real $t$. The zeros of $\xi$ are exactly the nontrivial zeros of $\zeta$, and
 $$
-\text{RH} \iff \text{every zero of } \Xi \text{ is real} \iff \xi(s)\neq0 \text{ for } \Re s > \tfrac12 .
+\boxed{\;\text{RH} \iff \text{every zero of } \Xi \text{ is real} \iff \xi(s)\neq0 \text{ for } \Re s > \tfrac12\;} .
 $$
 **Proof.** The function $s(s-1)$ removes the pole of $\zeta$ at $s=1$ and the trivial zero at $s=0$; the factor $\Gamma(s/2)$ removes the trivial zeros at the negative even integers; what remains is entire by the functional equation of *Zeta Functions*, which reads $\xi(s)=\xi(1-s)$ in these variables, and the order and the reality on the line follow from the Hadamard factorisation and from the functional equation, which for real $s$ exhibits $\xi$ as real. The equivalence of the three statements is a rewriting of the definitions.
 
@@ -39,7 +39,7 @@ the product over the roots $\alpha$ in the upper half-plane, the convergence of 
 
 **Theorem (Riemann–von Mangoldt).** For $T\geq2$,
 $$
-N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e} + \frac78 + S(T) + O\bigl(T^{-1}\bigr),
+\boxed{\;N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e} + \frac78 + S(T) + O\bigl(T^{-1}\bigr)\;},
 $$
 where $S(T) = \frac1\pi\arg\zeta(\tfrac12+iT) = O(\log T)$ unconditionally, and $S(T) = O(\log T/\log\log T)$ under the hypothesis.
 
@@ -115,7 +115,7 @@ $$
 
 **Remark (Weil's positivity criterion).** The explicit formula of *The Prime Number Theorem*, in Weil's form, expresses the sum $\sum_\rho h(\gamma)$ over the nontrivial zeros, for a suitable test function $h$, as an explicit distribution $W(h)$ whose terms involve the archimedean factor and the sum over the primes. The criterion, proved by Weil and reformulated by Bombieri, is that the Riemann hypothesis is equivalent to the positivity
 $$
-W(h * h^{\mathrm{refl}}) \geq 0 \quad\text{for every Schwartz function } h, \qquad h^{\mathrm{refl}}(x) = \overline{h(-x)},
+\boxed{\;W(h * h^{\mathrm{refl}}) \geq 0 \quad\text{for every Schwartz function } h, \qquad h^{\mathrm{refl}}(x) = \overline{h(-x)}\;},
 $$
 where the convolution is on the additive group of the line. The criterion is the framework in which the positivity methods of the theory are stated; the same shape, with the primes of a function field in place of the primes of $\mathbb{Z}$, is what Weil's proof of the analogue of the hypothesis for a curve uses, and the same shape is what a proof over $\mathbb{Q}$ would have to supply.
 

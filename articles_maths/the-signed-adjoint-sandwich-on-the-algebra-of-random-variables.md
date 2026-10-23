@@ -32,7 +32,7 @@ $$
 
 **Theorem (the closed form).** For all $a,b\in\mathcal{A}$,
 $$
-\bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)}=S^\alpha_{\alpha(a^*),\alpha(b^*)},
+\boxed{\;\bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)}=S^\alpha_{\alpha(a^*),\alpha(b^*)}\;},
 $$
 with $\delta=\sigma\alpha$; on the commutative algebra, where $S^\alpha_{a,b}=S^\alpha_{ab}$, this is $\bigl(S^\alpha_c\bigr)^*=S^\alpha_{\delta(c)}$.
 
@@ -46,7 +46,7 @@ with $\delta=\sigma\alpha$; on the commutative algebra, where $S^\alpha_{a,b}=S^
 
 **Theorem (products).** The signed sandwiches compose by
 $$
-S^\alpha_{a,b}\,S^\alpha_{c,d}=S^\alpha_{a\alpha(c),\alpha(d)b},
+\boxed{\;S^\alpha_{a,b}\,S^\alpha_{c,d}=S^\alpha_{a\alpha(c),\alpha(d)b}\;},
 $$
 and the adjoint reverses the product, $(S^\alpha_{a,b}S^\alpha_{c,d})^*=(S^\alpha_{c,d})^*(S^\alpha_{a,b})^*$; the map $(a,b)\mapsto S^\alpha_{a,b}$ is a representation of the semidirect product of the algebra with its grade involution.
 
@@ -54,7 +54,7 @@ and the adjoint reverses the product, $(S^\alpha_{a,b}S^\alpha_{c,d})^*=(S^\alph
 
 **Theorem (square and involution).** On the commutative algebra the sandwich is $S^\alpha_c$ with $c=ab$, its square is
 $$
-\bigl(S^\alpha_c\bigr)^2=S^\alpha_{c\,\alpha(c)},
+\boxed{\;\bigl(S^\alpha_c\bigr)^2=S^\alpha_{c\,\alpha(c)}\;},
 $$
 and it is an involution exactly when $c\,\alpha(c)=1$, that is when $c$ is an $\alpha$-cocycle; the involutive signed sandwiches form a group under multiplication.
 

@@ -33,7 +33,7 @@ The **ordinary two-sided multiplication** with the same parameters is $T_{a,b}(x
 **Proposition.** The two families convert into each other under the involution:
 
 $$
-S_{a,b} = T_{a,b} \circ {}^{*} , \qquad {}^{*} \circ T_{p,q} = S_{q^{*},\,p^{*}} .
+\boxed{\;S_{a,b} = T_{a,b} \circ {}^{*} , \qquad {}^{*} \circ T_{p,q} = S_{q^{*},\,p^{*}}\;} .
 $$
 
 **Proof.** The first is the definition. For the second, $({}^{*} \circ T_{p,q})(x) = (p x q)^{*} = q^{*} x^{*} p^{*} = S_{q^{*},p^{*}}(x)$, using $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$.
@@ -82,7 +82,7 @@ so a sandwich is an involution exactly when $a b^{*} = 1$, equivalently $a^{*} b
 **Theorem.** The sandwich $S_{a,b}$ is invertible if and only if $a$ and $b$ are units of $A$, and then
 
 $$
-S_{a,b}^{-1} = S_{(b^{-1})^{*},\, (a^{-1})^{*}} .
+\boxed{\;S_{a,b}^{-1} = S_{(b^{-1})^{*},\, (a^{-1})^{*}}\;} .
 $$
 
 **Proof.** If $a$ or $b$ is not a unit then multiplication by it is not injective, so $S_{a,b}$ has a nonzero kernel and is not invertible. Conversely $S_{a,b}(x) = a x^{*} b$ is inverted by $S_{(b^{-1})^{*},(a^{-1})^{*}}$ by the table: writing the table as $S_{p,q} \circ S_{r,s} = T_{p s^{*},\, r^{*} q}$, the composite $S_{a,b} \circ S_{(b^{-1})^{*},(a^{-1})^{*}}$ is $T_{a d^{*},\, c^{*} b}$ with $c = (b^{-1})^{*}$ and $d = (a^{-1})^{*}$, that is $T_{a a^{-1},\, (b^{-1}) b} = T_{1,1} = \mathrm{id}$, and the same computation in the other order gives $\mathrm{id}$ as well.
@@ -100,7 +100,7 @@ $$
 **Proposition.** For a unitary $u$ the sandwich $S_{u,u}$ is an involution of the module:
 
 $$
-S_{u,u}^{2} = T_{u u^{*},\, u^{*} u} = T_{1,1} = \mathrm{id} , \qquad S_{u,u}(x) = u\,x^{*}\,u .
+\boxed{\;S_{u,u}^{2} = T_{u u^{*},\, u^{*} u} = T_{1,1} = \mathrm{id} , \qquad S_{u,u}(x) = u\,x^{*}\,u\;} .
 $$
 
 **Proof.** The square is read from the table, and for a unitary $u$ one has $u u^{*} = 1 = u^{*} u$.

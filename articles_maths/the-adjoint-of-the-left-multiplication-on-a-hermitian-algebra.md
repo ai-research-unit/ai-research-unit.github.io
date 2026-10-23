@@ -17,7 +17,7 @@ The involution and the adjoint axiom are *Hermitian Adjoints on a Hermitian Alge
 **Theorem.** For every $x$ the left multiplication is bounded on the completion and
 
 $$
-\bar L_x^{*} = \bar L_{x^{\dagger}} .
+\boxed{\;\bar L_x^{*} = \bar L_{x^{\dagger}}\;} .
 $$
 
 **Proof.** On the algebra the identity is the adjoint axiom, $\langle L_xy,z\rangle = \langle xy,z\rangle = \langle y,x^{\dagger}z\rangle = \langle y,L_{x^{\dagger}}z\rangle$; the operator $L_x$ is bounded on $A$ for the form norm, so it extends to $H$ with the same adjoint; both sides of the identity are bounded and agree on the dense subspace $A$, hence on $H$.
@@ -25,7 +25,7 @@ $$
 **Proposition (the adjoint at the cyclic vector).** With $\xi = \iota(1)$,
 
 $$
-\bar L_x\xi = \iota(x) , \qquad \bar L_x^{*}\xi = \iota(x^{\dagger}) ,
+\boxed{\;\bar L_x\xi = \iota(x) , \qquad \bar L_x^{*}\xi = \iota(x^{\dagger})\;} ,
 $$
 
 so the adjoint is the map of the cyclic vector to the involution, and the deviation of the involution from the identity on $\iota(A)$ is the deviation of $\bar L_x^{*}$ from $\bar L_x$.
@@ -35,7 +35,7 @@ so the adjoint is the map of the cyclic vector to the involution, and the deviat
 **Proposition (positivity of the adjoint products).** For every $x$ and every $u\in H$,
 
 $$
-\langle\bar L_x\bar L_x^{*}u,u\rangle = \|\bar L_x^{*}u\|^{2}\geq0 , \qquad \langle\bar L_x^{*}\bar L_xu,u\rangle = \|\bar L_xu\|^{2}\geq0 ,
+\boxed{\;\langle\bar L_x\bar L_x^{*}u,u\rangle = \|\bar L_x^{*}u\|^{2}\geq0 , \qquad \langle\bar L_x^{*}\bar L_xu,u\rangle = \|\bar L_xu\|^{2}\geq0\;} ,
 $$
 
 so $\bar L_x\bar L_x^{*}$ and $\bar L_x^{*}\bar L_x$ are positive operators, and the left multiplications form a $\ast$-closed family.

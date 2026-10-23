@@ -109,7 +109,7 @@ In particular, if $0 \notin S$ then $\iota$ is injective if and only if every el
 **Theorem (universal property of localization).** Let $S \subseteq R$ be multiplicative and let $\varphi : R \to T$ be a ring homomorphism such that $\varphi(s)$ is a unit of $T$ for every $s \in S$. Then there is a unique ring homomorphism $\psi : S^{-1}R \to T$ with $\psi \circ \iota = \varphi$, namely
 
 $$
-\psi\left(\frac{r}{s}\right) = \varphi(r)\varphi(s)^{-1}.
+\boxed{\;\psi\left(\frac{r}{s}\right) = \varphi(r)\varphi(s)^{-1}\;}.
 $$
 
 **Proof.** The formula is forced, so uniqueness is clear. It is well defined: if $t(rs' - r's) = 0$ with $t \in S$, applying $\varphi$ gives $\varphi(t)(\varphi(r)\varphi(s') - \varphi(r')\varphi(s)) = 0$, and $\varphi(t)$ is a unit, so $\varphi(r)\varphi(s') = \varphi(r')\varphi(s)$; multiplying by the inverses of $\varphi(s)\varphi(s')$ gives the same value for $r/s$ and $r'/s'$. Additivity and multiplicativity follow from the corresponding properties of $\varphi$ together with the commutativity of $T$.
@@ -147,7 +147,7 @@ Every saturated ideal is disjoint from $S$: if $s \in I \cap S$ then $1/1 = s/s 
 **Theorem (ideal correspondence).** The maps
 
 $$
-\mathrm{A} \longmapsto \iota^{-1}(\mathrm{A}), \qquad I \longmapsto S^{-1}I,
+\boxed{\;\mathrm{A} \longmapsto \iota^{-1}(\mathrm{A}), \qquad I \longmapsto S^{-1}I\;},
 $$
 
 are inverse bijections between the ideals $\mathrm{A}$ of $S^{-1}R$ and the saturated ideals $I$ of $R$. Under this bijection prime ideals correspond to prime ideals, and the maximal ideals of $S^{-1}R$ correspond to the primes of $R$ that are disjoint from $S$ and maximal among such primes. In particular a maximal ideal $\mathrm{M}$ of $R$ with $\mathrm{M} \cap S = \emptyset$ has $\mathrm{M} S^{-1}R$ maximal in $S^{-1}R$.
@@ -256,7 +256,7 @@ $$
 **Theorem.** $R_\mathrm{P}$ is a local ring with maximal ideal
 
 $$
-\mathrm{P} R_\mathrm{P} = \left\{\frac{p}{s} : p \in \mathrm{P},\ s \notin \mathrm{P}\right\},
+\boxed{\;\mathrm{P} R_\mathrm{P} = \left\{\frac{p}{s} : p \in \mathrm{P},\ s \notin \mathrm{P}\right\}\;},
 $$
 
 and residue field $R_\mathrm{P}/\mathrm{P}R_\mathrm{P} \cong \operatorname{Frac}(R/\mathrm{P})$.

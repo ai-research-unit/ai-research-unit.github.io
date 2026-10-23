@@ -88,7 +88,7 @@ with the $x$-derivatives even and the $\xi$-derivatives odd, and the derivatives
 **Theorem (the Lie superalgebra of vector fields).** The tangent sheaf with the **superbracket**
 
 $$
-[X, Y] = XY - (-1)^{|X||Y|}YX
+\boxed{\;[X, Y] = XY - (-1)^{|X||Y|}YX\;}
 $$
 
 is a sheaf of Lie superalgebras: the bracket is super anticommutative, $[X,Y] = -(-1)^{|X||Y|}[Y,X]$, and satisfies the super Jacobi identity. On a supermanifold of dimension $(p \mid q)$ the bracket of two odd fields is even and may be nonzero, in contrast with the commuting case.
@@ -144,13 +144,13 @@ with $A$ the even-even, $B$ the even-odd, $C$ the odd-even and $D$ the odd-odd b
 **Theorem (integration and change of variables).** A section of the Berezinian line bundle with compact support on a supermanifold of dimension $(p \mid q)$ has a well-defined integral
 
 $$
-\int_M s = \int_{M_{\mathrm{red}}}\Bigl(\text{the coefficient of } dx_1\cdots dx_p\, d\xi_1\cdots d\xi_q \text{ in } s\Bigr),
+\boxed{\;\int_M s = \int_{M_{\mathrm{red}}}\Bigl(\text{the coefficient of } dx_1\cdots dx_p\, d\xi_1\cdots d\xi_q \text{ in } s\Bigr)\;},
 $$
 
 computed in a superchart and independent of the chart, where the even part is integrated over the body and the odd part is integrated by the Berezin rule. Under a change of supercoordinates, with $J = \partial(x', \xi')/\partial(x, \xi)$ the Jacobian of the change from the coordinates $(x, \xi)$ to the coordinates $(x', \xi')$, the Berezinian measures are related by
 
 $$
-dx\,d\xi = \operatorname{Ber}(J)^{-1}\,dx'\,d\xi' ,
+\boxed{\;dx\,d\xi = \operatorname{Ber}(J)^{-1}\,dx'\,d\xi'\;} ,
 $$
 
 the inverse Berezinian appearing, exactly as the inverse determinant appears in the purely odd change of variables of *Grassmann Variables and Berezin Integration* and the inverse Jacobian in the ordinary change of variables of the even part. The integral is a finite algebraic operation — the extraction of a top coefficient — and agrees with the Berezin integral on each chart.

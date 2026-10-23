@@ -38,7 +38,7 @@ The two directions of the correspondence are the following. From the manifold to
 **Theorem (the transform, quoted).** Let $\mathcal{O}(k)$ be the pullback to $Z(M)$ of the hyperplane bundle of the fibre and let $\mathcal{F}$ be a holomorphic vector bundle on $Z(M)$; the **Penrose transform** is the map from the holomorphic cohomology on $Z(M)$ to the fields on $M$,
 
 $$
-\mathbb{H}^1(Z(M),\mathcal{O}(k)\otimes\mathcal{F}) \longrightarrow \{\text{massless fields on } M \text{ of the corresponding type}\} ,
+\boxed{\;\mathbb{H}^1(Z(M),\mathcal{O}(k)\otimes\mathcal{F}) \longrightarrow \{\text{massless fields on } M \text{ of the corresponding type}\}\;} ,
 $$
 
 sending a cohomology class to the family of its restrictions to the twistor lines; it is an isomorphism onto the kernel of the relevant field equation, and the Hermitian form gives the reality conditions under which the image consists of real fields.

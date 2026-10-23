@@ -16,7 +16,7 @@ The reversible systems and the exchange relation are *Reversible Iterated Functi
 
 **Theorem (the invariance criterion).** The self-similar measure is reversible if and only if the weights are invariant under the permutation of the branches, $p_{\rho(i)}=p_i$ for every $i$; in general the involution transports the measure by
 $$
-R_*\mu_p=\mu_{\rho(p)},\qquad\text{so that}\qquad R_*\mu_p=\mu_p\iff p=\rho(p).
+\boxed{\;R_*\mu_p=\mu_{\rho(p)},\qquad\text{so that}\qquad R_*\mu_p=\mu_p\iff p=\rho(p)\;}.
 $$
 On the boundary the transport of the Bernoulli measure is $R^{\mathrm{flip}}_*\nu_p=\nu_{\rho(p)}$, the Bernoulli measure with the permuted weights.
 
@@ -62,7 +62,7 @@ the sum over the orbits up to the involution, for the potential $W$ of the syste
 
 **Theorem (the finite quotient does not change the pressure).** The quotient by the involution is a finite-to-one factor, so the topological entropy and the pressure are unchanged:
 $$
-P_R(t)=P(t) ,
+\boxed{\;P_R(t)=P(t)\;} ,
 $$
 the pressure of *The Transfer Operator of the Limit Dynamical System*. The involution affects the counting, not the growth rate: the number of periodic orbits of length $n$ up to reversal is
 $$
@@ -94,7 +94,7 @@ and it is a lower bound for $P(t)$; the exchanged part contributes the residual 
 
 **Theorem (the splitting of the spectrum).** Let $\mu$ be an $R$-invariant measure and let $L_\varphi$ be the transfer operator, with $P_\rho f=f\circ R$ the involution. Then $L_\varphi$ commutes with $P_\rho$, the eigenfunctions split into the **symmetric** family, $f\circ R=f$, and the **antisymmetric** family, $f\circ R=-f$, and the invariant density $h$ of the previous article is symmetric:
 $$
-P_\rho L_\varphi P_\rho=L_\varphi,\qquad h\circ R=h .
+\boxed{\;P_\rho L_\varphi P_\rho=L_\varphi,\qquad h\circ R=h\;} .
 $$
 
 *Proof.* The relation $P_\rho L_\varphi P_\rho=L_\varphi$ is the theorem of *Reversible Iterated Function Systems and the Involution*; commuting operators have a common eigenbasis, and the involution has the eigenvalues $\pm1$, so the eigenfunctions split by the symmetry of $f$. The invariant density is an eigenfunction for the eigenvalue $1$ with positive values, hence cannot be antisymmetric, and is symmetric.

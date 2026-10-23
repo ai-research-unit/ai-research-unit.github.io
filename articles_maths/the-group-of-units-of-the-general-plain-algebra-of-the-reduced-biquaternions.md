@@ -28,7 +28,7 @@ $$
 $$
 and the algebra is the disjoint union
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\}.
+\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\} \;}.
 $$
 
 *Proof.* By *Zero Divisors of the Algebra of the Reduced Biquaternions* the zero divisors are the nonzero elements of the null set of the norm, and by *Norm and Invertibility in the Algebra of the Reduced Biquaternions* the null set is $\mathcal N\cup\{0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, since $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=0$ if and only if $Q_{\blacktriangle}+Q_{\blacktriangledown}=0$ or $Q_{\blacktriangle}-Q_{\blacktriangledown}=0$, that is $\breve Q\in\mathbb{C}\Pi_-$ or $\breve Q\in\mathbb{C}\Pi_+$. The zero divisors are the nonzero elements of that set, that is $\mathcal N$; the units are the elements of $N\neq0$; and $0$ is neither.
@@ -47,7 +47,7 @@ $$
 
 When they hold, the inverse is
 $$
-\breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}=\frac{1}{2}\Bigl(\frac{1}{Q_{\blacktriangle}+Q_{\blacktriangledown}}+\frac{1}{Q_{\blacktriangle}-Q_{\blacktriangledown}}\Bigr)+\frac{1}{2}\Bigl(\frac{1}{Q_{\blacktriangle}+Q_{\blacktriangledown}}-\frac{1}{Q_{\blacktriangle}-Q_{\blacktriangledown}}\Bigr)j,
+\boxed{\; \breve Q^{-1}=\frac{Q_{\blacktriangle}-jQ_{\blacktriangledown}}{Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}}=\frac{1}{2}\Bigl(\frac{1}{Q_{\blacktriangle}+Q_{\blacktriangledown}}+\frac{1}{Q_{\blacktriangle}-Q_{\blacktriangledown}}\Bigr)+\frac{1}{2}\Bigl(\frac{1}{Q_{\blacktriangle}+Q_{\blacktriangledown}}-\frac{1}{Q_{\blacktriangle}-Q_{\blacktriangledown}}\Bigr)j \;},
 $$
 with idempotent coordinates $(Q_{+}^{-1},Q_{-}^{-1})$.
 
@@ -65,7 +65,7 @@ and $Q_{\blacktriangle}\cdot\frac{-Q_{\blacktriangledown}}{Q_{\blacktriangle}^{2
 
 **Theorem (the structure of the unit group).** The map
 $$
-\Phi:\mathbb{B}_{\mathrm{r}}^{\times}\to\mathbb{C}^{\times}\times\mathbb{C}^{\times},\qquad \breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}),
+\boxed{\; \Phi:\mathbb{B}_{\mathrm{r}}^{\times}\to\mathbb{C}^{\times}\times\mathbb{C}^{\times},\qquad \breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}) \;},
 $$
 is an isomorphism of groups.
 

@@ -30,7 +30,7 @@ where $\alpha$ is the **grade involution**, negating the odd part and fixing the
 **Theorem.** Let $h$ be a nondegenerate Hermitian pairing compatible with the quadratic form $\mathfrak{Q}$, and let $T$ be a conformal operator with the factor $\lambda = \lambda(T)$. Then the adjoint of $T$ with respect to $h$ is
 
 $$
-T^{\dagger} = \lambda(T)\, T^{-1} ,
+\boxed{\;T^{\dagger} = \lambda(T)\, T^{-1}\;} ,
 $$
 
 so the adjoint of a conformal operator is again a conformal operator, with the factor $\overline{\lambda(T)}$, and the adjoint of a similarity is its inverse multiplied by the factor; for an isometry, $\lambda = 1$, the adjoint is the inverse, and the conformal operator is unitary.
@@ -60,7 +60,7 @@ which **exchanges the two parameters and applies the grade involution to each**,
 **Theorem.** The signed adjoint of the signed sandwich is the signed sandwich of the adjoint parameters, and it is a **sign-reversing** adjoint: on the even part of the algebra it is the ordinary adjoint, and on the odd part it is the negative of the ordinary adjoint. The signed adjoint is conjugate-linear, additive and anti-multiplicative,
 
 $$
-(\Theta\Psi)^{\ddagger} = \Psi^{\ddagger}\Theta^{\ddagger}, \qquad (T^{\ddagger})^{\ddagger} = T ,
+\boxed{\;(\Theta\Psi)^{\ddagger} = \Psi^{\ddagger}\Theta^{\ddagger}, \qquad (T^{\ddagger})^{\ddagger} = T\;} ,
 $$
 
 and it is an involution of the algebra of the operators whenever the grade involution and the adjoint commute up to the sign of the grade.
@@ -80,7 +80,7 @@ and the operators satisfying it are the **signed-unitary** operators of the conf
 **Theorem.** For a conformal operator with the factor $\lambda = \lambda(T)$ the signed unitarity condition is equivalent to the ordinary unitarity,
 
 $$
-T^{\ddagger}T = \mathrm{id} \quad \Longleftrightarrow \quad T^{\dagger}T = \mathrm{id} \quad \Longleftrightarrow \quad \lambda(T) = 1 ,
+\boxed{\;T^{\ddagger}T = \mathrm{id} \quad \Longleftrightarrow \quad T^{\dagger}T = \mathrm{id} \quad \Longleftrightarrow \quad \lambda(T) = 1\;} ,
 $$
 
 so the signed-unitary conformal operators are exactly the isometries of the form, the intersection of the conformal group with the unitary group,

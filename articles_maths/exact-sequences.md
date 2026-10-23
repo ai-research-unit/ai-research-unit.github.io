@@ -106,7 +106,7 @@ $$
 where the first two maps are the restrictions of $f$ and $g$ and the last two are induced by $f'$ and $g'$. If in addition $f$ is injective and $g'$ is surjective, the sequence extends to a long exact sequence
 
 $$
-0 \longrightarrow \ker a \longrightarrow \ker b \longrightarrow \ker c \xrightarrow{\ \partial\ } \operatorname{coker} a \longrightarrow \operatorname{coker} b \longrightarrow \operatorname{coker} c \longrightarrow 0 .
+\boxed{\;0 \longrightarrow \ker a \longrightarrow \ker b \longrightarrow \ker c \xrightarrow{\ \partial\ } \operatorname{coker} a \longrightarrow \operatorname{coker} b \longrightarrow \operatorname{coker} c \longrightarrow 0\;} .
 $$
 
 *Proof.* Exactness at $\ker b$: the composite $\ker a \to \ker b \to \ker c$ is the restriction of $gf=0$, so it vanishes. Conversely, if $b_0 \in \ker b$ has $g(b_0)=0$, then $b_0 \in \ker g=\operatorname{im} f$, say $b_0=f(a_0)$, and $b(b_0)=0$ gives $f'(a(a_0))=b(f(a_0))=b(b_0)=0$, so $a(a_0)=0$ by injectivity of $f'$; thus $a_0 \in \ker a$ and $b_0$ is in the image.
@@ -188,7 +188,7 @@ Fix a module $M$. For each module $N$ the set $\operatorname{Hom}_R(M,N)$ is an 
 **Theorem.** The functor $\operatorname{Hom}_R(M,-)$ is **left exact**: if $0 \to A \xrightarrow{f} B \xrightarrow{g} C$ is exact then
 
 $$
-0 \longrightarrow \operatorname{Hom}_R(M,A) \xrightarrow{f_*} \operatorname{Hom}_R(M,B) \xrightarrow{g_*} \operatorname{Hom}_R(M,C)
+\boxed{\;0 \longrightarrow \operatorname{Hom}_R(M,A) \xrightarrow{f_*} \operatorname{Hom}_R(M,B) \xrightarrow{g_*} \operatorname{Hom}_R(M,C)\;}
 $$
 
 is exact.
@@ -226,7 +226,7 @@ The tensor product of modules is defined and developed; its exactness is recorde
 **Theorem.** The functor $-\otimes_R M$ is **right exact**: if $A \xrightarrow{f} B \xrightarrow{g} C \to 0$ is exact then
 
 $$
-A \otimes_R M \xrightarrow{f \otimes \operatorname{id}} B \otimes_R M \xrightarrow{g \otimes \operatorname{id}} C \otimes_R M \longrightarrow 0
+\boxed{\;A \otimes_R M \xrightarrow{f \otimes \operatorname{id}} B \otimes_R M \xrightarrow{g \otimes \operatorname{id}} C \otimes_R M \longrightarrow 0\;}
 $$
 
 is exact. It is not in general left exact.

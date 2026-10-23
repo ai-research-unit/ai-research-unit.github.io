@@ -23,7 +23,7 @@ $$
 **Lemma (the transpose transported is the adjoint).** For $C \in \operatorname{End}_F(V)$ and $\varphi \in V^{*}$ the representing vector of the transpose is
 
 $$
-x_{C^{\mathsf{T}}\varphi} = C^{*}x_{\varphi} .
+\boxed{\;x_{C^{\mathsf{T}}\varphi} = C^{*}x_{\varphi}\;} .
 $$
 
 **Proof.** For every $z$, $B(C^{*}x_{\varphi}, z) = B(x_{\varphi}, Cz) = \varphi(Cz) = (C^{\mathsf{T}}\varphi)(z)$; the representing vector is unique, giving the identity.
@@ -31,7 +31,7 @@ $$
 **Proposition (the transpose as an adjoint).** For $A \in \operatorname{End}_F(V)$ the transpose $A^{\mathsf{T}} : V^{*} \to V^{*}$ satisfies
 
 $$
-B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}\bigl(\varphi, (A^{*})^{\mathsf{T}}\psi\bigr) ,
+\boxed{\;B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}\bigl(\varphi, (A^{*})^{\mathsf{T}}\psi\bigr)\;} ,
 $$
 
 so the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint; under the identification $V^{*} \cong V$ the transpose of $A$ corresponds to the adjoint of $A$.
@@ -43,7 +43,7 @@ so the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint; und
 **Theorem.** On the endomorphisms of the dual the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint:
 
 $$
-\bigl(A^{\mathsf{T}}\bigr)^{*_{B^{*}}} = \bigl(A^{*_B}\bigr)^{\mathsf{T}} ,
+\boxed{\;\bigl(A^{\mathsf{T}}\bigr)^{*_{B^{*}}} = \bigl(A^{*_B}\bigr)^{\mathsf{T}}\;} ,
 $$
 
 and the assignment $A \mapsto A^{*_B}$ transported to $V^{*}$ by the identification $V^{*}\cong V$ is the $B^{*}$-involution on $\operatorname{End}_F(V^{*})$.

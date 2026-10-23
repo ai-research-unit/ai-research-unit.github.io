@@ -93,7 +93,7 @@ $\bar\sigma(\xi)=\xi_t-\sum_{i\ge1}e_i\xi_i$.
 **Proposition (invertibility of the symbol).** For every $\xi\neq0$,
 
 $$
-\sigma(\xi)\,\bar\sigma(\xi) = \bar\sigma(\xi)\,\sigma(\xi) = |\xi|^2 = \xi_t^2+\sum_{i=1}^{m}\xi_i^2 > 0 ,
+\boxed{\;\sigma(\xi)\,\bar\sigma(\xi) = \bar\sigma(\xi)\,\sigma(\xi) = |\xi|^2 = \xi_t^2+\sum_{i=1}^{m}\xi_i^2 > 0\;} ,
 $$
 
 so $\sigma(\xi)$ is a unit of $A$, with $\sigma(\xi)^{-1}=\bar\sigma(\xi)/|\xi|^2$, and $D$ is
@@ -205,8 +205,8 @@ $$
 Then $DE=\delta_0$; explicitly
 
 $$
-E(x) = \frac{1}{\omega_m}\frac{x^{\natural}}{|x|^{m+1}} , \qquad
-\omega_m = |S^m| = \frac{2\pi^{(m+1)/2}}{\Gamma\bigl(\frac{m+1}{2}\bigr)} ,
+\boxed{\;E(x) = \frac{1}{\omega_m}\frac{x^{\natural}}{|x|^{m+1}} , \qquad
+\omega_m = |S^m| = \frac{2\pi^{(m+1)/2}}{\Gamma\bigl(\frac{m+1}{2}\bigr)}\;} ,
 $$
 
 and $E(x-y)$ is the **Cauchy kernel** of the theory.
@@ -240,7 +240,7 @@ $\mathcal{P}_{k-1}$ injectively with image meeting $\mathcal{M}_k$ only at $0$.
 **Theorem (Fischer decomposition).** For every $k\ge0$,
 
 $$
-\mathcal{P}_k = \bigoplus_{j=0}^{k}\,(x^{\natural})^{\,j}\,\mathcal{M}_{k-j} ,
+\boxed{\;\mathcal{P}_k = \bigoplus_{j=0}^{k}\,(x^{\natural})^{\,j}\,\mathcal{M}_{k-j}\;} ,
 $$
 
 the multiplier being left multiplication by the $j$-th power of the conjugate variable.

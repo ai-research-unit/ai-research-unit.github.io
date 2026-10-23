@@ -43,11 +43,11 @@ is an **almost split sequence**, or **Auslander–Reiten sequence**, if it does 
 
 **Theorem (Auslander–Reiten formula).** Let $A$ be a finite-dimensional $k$-algebra, and let $\underline{\operatorname{Hom}}$ denote $\operatorname{Hom}$ modulo the morphisms that factor through a projective module and $\overline{\operatorname{Hom}}$ the same modulo the morphisms that factor through an injective module. For every finite-dimensional module $M$ without projective summands and every finite-dimensional module $N$ there is a natural isomorphism
 $$
-D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M),
+\boxed{\;D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M)\;},
 $$
 and, for every $N$ without injective summands and every $M$, a natural isomorphism
 $$
-D\operatorname{Ext}^1_A(M,N)\cong\overline{\operatorname{Hom}}_A(\tau^{-1}N,M).
+\boxed{\;D\operatorname{Ext}^1_A(M,N)\cong\overline{\operatorname{Hom}}_A(\tau^{-1}N,M)\;}.
 $$
 The stable Hom is necessary: a morphism $N\to\tau M$ that factors through a projective module contributes nothing to $\operatorname{Ext}^1_A(M,N)$, and likewise on the dual side. The isomorphisms are compatible with the module structures and are natural in both variables.
 
@@ -97,8 +97,8 @@ which has no projective summands when $M$ has none, and $\operatorname{Tr}$ is a
 
 **Theorem (Happel, for hereditary algebras).** Let $A=kQ$ be the path algebra of an acyclic quiver and let $C$ be the Cartan matrix, $C_{ij}=\dim_k\operatorname{Hom}_A(P_i,P_j)$, the number of paths from $j$ to $i$, as in *Quiver Representations and Representation Type*, so that the $j$-th column of $C$ is the dimension vector of $P_j$. Then the Auslander–Reiten translation acts on the dimension vectors of the modules without projective summands by
 $$
-\underline{\dim}\,\tau M=-C^{\mathsf T}C^{-1}\,\underline{\dim}M=\Phi^{-\mathsf T}\,\underline{\dim}M,
-\qquad \Phi=-C^{-1}C^{\mathsf T}:\mathbb{Z}^{Q_0}\to\mathbb{Z}^{Q_0},
+\boxed{\;\underline{\dim}\,\tau M=-C^{\mathsf T}C^{-1}\,\underline{\dim}M=\Phi^{-\mathsf T}\,\underline{\dim}M,
+\qquad \Phi=-C^{-1}C^{\mathsf T}:\mathbb{Z}^{Q_0}\to\mathbb{Z}^{Q_0}\;},
 $$
 so that the **Coxeter transformation** $\Phi$ and the matrix of the translation are inverse transposes of one another in this convention and therefore have the same order. For a Dynkin quiver $\Phi$ has finite order, equal to the Coxeter number of the diagram; for an affine quiver it has infinite order, and the periodic orbits of the translation are exactly the regular ones, whose dimension vectors are the positive multiples of the null root.
 

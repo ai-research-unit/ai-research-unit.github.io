@@ -28,8 +28,8 @@ $$
 so the functions $\exp(\pi)_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ form an orthonormal basis of $L^2(K)$. Consequently
 
 $$
-L^2(K) = \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigoplus_{i,j=1}^{d_\pi}\ \mathbb{C}\,\exp(\pi)_{ij}
-\;\cong\; \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr),
+\boxed{\;L^2(K) = \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigoplus_{i,j=1}^{d_\pi}\ \mathbb{C}\,\exp(\pi)_{ij}
+\;\cong\; \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr)\;},
 $$
 
 the orthogonal direct sum being a Hilbert-space direct sum, and each irreducible $\pi$ occurring with multiplicity $d_\pi$.
@@ -133,7 +133,7 @@ For (b), the orthogonality relation is Schur's lemma applied to the operator $\i
 **Corollary (algebraic Peter–Weyl).** As an algebra under convolution, appropriately completed, the regular representation gives
 
 $$
-L^1(K) \;\widehat{\longrightarrow}\; \bigoplus_{\pi\in\operatorname{Irr}(K)} \operatorname{End}(\mathcal{H}_\pi)
+\boxed{\;L^1(K) \;\widehat{\longrightarrow}\; \bigoplus_{\pi\in\operatorname{Irr}(K)} \operatorname{End}(\mathcal{H}_\pi)\;}
 $$
 
 under $f \mapsto ((\mathcal F f)(\pi))$, the target being the algebraic direct sum of full matrix algebras; equivalently the group von Neumann algebra $L(K) = \lambda(K)''$ is the direct sum $\bigoplus_\pi \operatorname{End}(\mathcal{H}_\pi)$, a type I von Neumann algebra.
@@ -163,7 +163,7 @@ in $L^2$, with $\|f\|_2^2 = \sum_\pi|\lambda_\pi(f)|^2$. Consequently two class 
 Let $K$ be a compact connected Lie group with Lie algebra $\mathrm{K}$ and $-\Delta$ the Laplace–Beltrami operator of a bi-invariant metric, a positive essentially self-adjoint operator on $L^2(K)$ commuting with both regular representations. By Peter–Weyl, $L^2(K)$ is the Hilbert sum of the finite-dimensional summands $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$, on each of which $-\Delta$ acts as a scalar $\lambda_\pi \geq 0$, the **Casimir eigenvalue** of $\pi$: $-\Delta f = \lambda_\pi f$ for $f$ in the summand of $\pi$. Hence the heat semigroup is
 
 $$
-\exp(-t(-\Delta)) f = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\, \operatorname{pr}_\pi f ,
+\boxed{\;\exp(-t(-\Delta)) f = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\, \operatorname{pr}_\pi f\;} ,
 $$
 
 where $\operatorname{pr}_\pi$ is the orthogonal projection onto the coefficient space of $\pi$, and the **heat kernel** is

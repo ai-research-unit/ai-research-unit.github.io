@@ -52,7 +52,13 @@ Three consequences close the article.
 
 **On the two products.** The field product is associative and has a two-sided unit; the sesquilinear product keeps a right unit and no left unit, since $Q_1\bar 1=Q_1$ but $1\bar Q_1=\bar Q_1$, which equals $Q_1$ only for real $Q_1$. The two products therefore differ on exactly the laws the slot analysis predicts, and the comparison of the two, with the slot reading and the two adjoints, is *Relations and Comparison Between the Two Products*, above this article in this category.
 
-**On the two forms.** The two bilinear forms coincide with the two sesquilinear ones two-and-two, $\langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2$, and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its modules are *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category.
+**On the two forms.** The two bilinear forms coincide with the two sesquilinear ones two-and-two,
+
+$$
+\boxed{\; \langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2, \qquad \langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2 \;}
+$$
+
+and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its modules are *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category.
 
 ## Summary
 

@@ -56,8 +56,8 @@ $$
 **Theorem.** The dagger is positive if and only if the scalar form of the dagger is positive definite, and this holds exactly when the quadratic form is negative definite. In particular
 
 $$
-\mathrm{Cl}_{0,n} \text{ over } \mathbb{R}, \quad x^{\dagger} = x^{\natural}, \qquad
-\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2} \ \ge 0 .
+\boxed{\;\mathrm{Cl}_{0,n} \text{ over } \mathbb{R}, \quad x^{\dagger} = x^{\natural}, \qquad
+\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2} \ \ge 0\;} .
 $$
 
 **Proof.** By *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the scalar form of the dagger is $\mathrm{Sc}(x^{\dagger}y) = \sum_I(-1)^{|I|}(\prod_{i\in I}e_i^{2})a_Ib_I$ in an orthogonal basis, so $\mathrm{Sc}(x^{\dagger}x) = \sum_I(-1)^{|I|}\prod_{i\in I}e_i^{2}\,a_I^{2}$. For a negative definite form every $e_i^{2} = -1$ and $(-1)^{|I|}\prod_{i\in I}e_i^{2} = (-1)^{|I|}(-1)^{|I|} = 1$, giving the displayed sum. For a positive definite form with $n \ge 1$ the odd part enters with a minus sign, so the form is indefinite; and a mixed signature contains both signs.
@@ -71,7 +71,7 @@ $$
 **Theorem.** Suppose the dagger is positive and $x \in \mathrm{Cl}(V,\mathfrak{Q})$ lies in a matrix Clifford algebra of the form $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$, or is an invertible element of such an algebra. Then $x$ has a **polar decomposition**
 
 $$
-x = u\,|x|, \qquad |x| = \bigl(x^{\dagger}x\bigr)^{1/2} \in P, \qquad u^{\dagger}u = 1,
+\boxed{\;x = u\,|x|, \qquad |x| = \bigl(x^{\dagger}x\bigr)^{1/2} \in P, \qquad u^{\dagger}u = 1\;},
 $$
 
 with $|x|$ the positive square root and $u$ in the unitary slice. The decomposition is unique when $x$ is invertible.
@@ -95,9 +95,9 @@ $$
 **Theorem (Cartan decomposition).** For the Lie bracket $[u,v] = uv - vu$,
 
 $$
-[\mathrm{Skew}, \mathrm{Skew}] \subseteq \mathrm{Skew}, \qquad
+\boxed{\;[\mathrm{Skew}, \mathrm{Skew}] \subseteq \mathrm{Skew}, \qquad
 [\mathrm{Skew}, \mathrm{Herm}] \subseteq \mathrm{Herm}, \qquad
-[\mathrm{Herm}, \mathrm{Herm}] \subseteq \mathrm{Skew} .
+[\mathrm{Herm}, \mathrm{Herm}] \subseteq \mathrm{Skew}\;} .
 $$
 
 **Proof.** The dagger is an anti-automorphism: for $u^{\dagger} = -u$ and $v^{\dagger} = -v$,

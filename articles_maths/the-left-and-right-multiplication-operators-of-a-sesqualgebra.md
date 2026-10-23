@@ -27,7 +27,7 @@ Both are additive in $x$, since the product is additive in each variable. The de
 **Proposition (the parity of the two operators).** For every $a \in A$ the left multiplication $L_a$ is $\varsigma$-semilinear and the right multiplication $R_a$ is $R$-linear:
 
 $$
-L_a(\lambda x) = \varsigma(\lambda)L_a(x) , \qquad R_a(\lambda x) = \lambda R_a(x) .
+\boxed{\;L_a(\lambda x) = \varsigma(\lambda)L_a(x) , \qquad R_a(\lambda x) = \lambda R_a(x)\;} .
 $$
 
 Consequently $L_a$ is $R^{\varsigma}$-linear and lies in $\operatorname{End}_{R^{\varsigma}}(A)$, while $R_a$ lies in $\operatorname{End}_{R}(A)$.
@@ -53,7 +53,7 @@ $$
 **Proposition.** Suppose the product of $A$ is associative. Then
 
 $$
-L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a .
+\boxed{\;L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a\;} .
 $$
 
 **Proof.** The three identities are the associative law read in the three possible orders, and they are the ones of *Sesqualgebras*, §*The Left and the Right Multiplication*: for $x \in A$ one has $L_aL_b(x) = a \star (b \star x) = (a \star b) \star x = L_{a \star b}(x)$, and the other two are the same computation.
@@ -69,7 +69,7 @@ $$
 **Proposition (the composition in the standard example).** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution and let $x \star y = xy^{*}$. Write $T_{p,q}(x) = p\,x\,q$ for the ordinary two-sided multiplication. Then
 
 $$
-L_aL_b = T_{a,\,b^{*}} , \qquad R_aR_b = T_{1,\,(a b)^{*}} ,
+\boxed{\;L_aL_b = T_{a,\,b^{*}} , \qquad R_aR_b = T_{1,\,(a b)^{*}}\;} ,
 $$
 
 and $L_aR_b \neq R_bL_a$ in general.

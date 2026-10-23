@@ -32,7 +32,7 @@ $$
 **Theorem (the Gauss measure).** The measure
 
 $$
-\mu(A)=\frac1{\log2}\int_A\frac{dx}{1+x} \qquad (A \subseteq(0,1] \text{ measurable})
+\boxed{\;\mu(A)=\frac1{\log2}\int_A\frac{dx}{1+x} \qquad (A \subseteq(0,1] \text{ measurable})\;}
 $$
 
 is $T$-invariant and ergodic; it is the unique absolutely continuous invariant probability measure of the Gauss map. Its density $\frac{1}{(1+x)\log2}$ is the **Gauss density**, and the invariance is the identity
@@ -48,7 +48,7 @@ which for the branches $T|_{(\frac{1}{k+1},\frac1k]}(x)=\frac1x-k$ reduces to a 
 **Theorem (Gauss–Kuzmin).** For every interval $A \subseteq(0,1]$,
 
 $$
-\mu(T^{-n}A)\to\mu(A) \qquad (n\to\infty),
+\boxed{\;\mu(T^{-n}A)\to\mu(A) \qquad (n\to\infty)\;},
 $$
 
 so that the distribution of the preimages converges to the Gauss measure, whatever the initial measure; more precisely, the **Gauss–Kuzmin–Wirsing** theorem gives the rate
@@ -112,7 +112,7 @@ so that $\mu(a_1=1)=\log_2\frac43=0.41504\ldots$ and the distribution of $a_n$ c
 **Theorem (law of large numbers and Lévy's constant).** For Lebesgue-almost every $x$,
 
 $$
-\frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots,
+\boxed{\;\frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots\;},
 $$
 
 the **Lévy constant**, and in particular the denominators of the convergents grow like $\exp(n\pi^2/(12\log2))$.

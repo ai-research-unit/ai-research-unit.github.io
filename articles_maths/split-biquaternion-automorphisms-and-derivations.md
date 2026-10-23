@@ -58,7 +58,9 @@ is an $\mathbb{R}$-algebra automorphism, because $\bar{\cdot}$ is a ring automor
 **Concretely**, every real automorphism of $\mathbb{H}_{\mathbb{D}}$ has exactly one of the two forms
 
 $$
-\sigma(\tilde Q_+, \tilde Q_-) = (u_+ \tilde Q_+ u_+^{-1},\, u_- \tilde Q_- u_-^{-1}) \quad\text{or}\quad \sigma(\tilde Q_+, \tilde Q_-) = \left(u_+ \tilde Q_- u_+^{-1},\, u_- \tilde Q_+ u_-^{-1}\right),
+\boxed{\;
+\sigma(\tilde Q_+, \tilde Q_-) = (u_+ \tilde Q_+ u_+^{-1},\, u_- \tilde Q_- u_-^{-1}) \quad\text{or}\quad \sigma(\tilde Q_+, \tilde Q_-) = \left(u_+ \tilde Q_- u_+^{-1},\, u_- \tilde Q_+ u_-^{-1}\right)
+\;},
 $$
 
 with $u_\pm$ determined up to a real scalar; the first family is the identity coset, the second the coset of $c$.
@@ -74,7 +76,9 @@ with $u_\pm$ determined up to a real scalar; the first family is the identity co
 **Every real derivation is $\mathbb{D}$-linear.** A derivation maps the centre to the centre, since for central $A$ and every $\tilde Q$, $D(A)\tilde Q = D(A\tilde Q) - A D(\tilde Q) = D(\tilde Q A) - D(\tilde Q)A = \tilde Q D(A)$. A derivation of $\mathbb{D}$ over $\mathbb{R}$ vanishes, because $0 = D(1) = D(j^2) = 2jD(j)$ forces $D(j) = 0$ and $j$ generates $\mathbb{D}$ over $\mathbb{R}$. Hence $D$ vanishes on the centre and, since $j$ is central, $D(j\tilde Q) = jD(\tilde Q)$, so $D$ is $\mathbb{D}$-linear. Therefore
 
 $$
-\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) .
+\boxed{\;
+\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})
+\;}.
 $$
 
 **Theorem.** $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, a real Lie algebra of dimension $6$, and every derivation is inner.
@@ -90,7 +94,9 @@ For the division algebra $\mathbb{H}$, every derivation is inner: $\mathrm{Der}(
 **Inner derivations.** For $a \in \mathbb{H}_{\mathbb{D}}$ the map $\mathrm{ad}_a(\tilde Q) = a\tilde Q - \tilde Q a$ is a derivation, and $\mathrm{ad}$ has kernel the centre $Z(\mathbb{H}_{\mathbb{D}}) = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and image all derivations, so
 
 $$
-\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathbb{H}_{\mathbb{D}} / \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} ,
+\boxed{\;
+\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathbb{H}_{\mathbb{D}} / \mathbb{D}_{\mathbb{H}_{\mathbb{D}}}
+\;},
 $$
 
 an isomorphism of Lie algebras because $[\mathrm{ad}_a,\mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$.

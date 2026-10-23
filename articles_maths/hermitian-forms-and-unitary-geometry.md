@@ -18,7 +18,7 @@ The article assumes *Unitary Geometry over a Field with Involution* for the fiel
 **Definition.** A **hyperbolic plane** is the two-dimensional space with the form, in a basis $(e,f)$,
 
 $$
-h(e,e) = h(f,f) = 0, \qquad h(e,f) = 1 ,
+\boxed{\;h(e,e) = h(f,f) = 0, \qquad h(e,f) = 1\;} ,
 $$
 
 written $\mathbb{H}$; a vector $x$ is **isotropic** when $h(x,x) = 0$ and **anisotropic** otherwise, and a subspace is **totally isotropic** when the restriction of the form to it vanishes. The **Witt index** of a nondegenerate form is the largest dimension of a totally isotropic subspace.
@@ -34,7 +34,7 @@ written $\mathbb{H}$; a vector $x$ is **isotropic** when $h(x,x) = 0$ and **anis
 **Theorem (Witt cancellation).** Let $(V_1,h_1)$, $(V_2,h_2)$ and $(W,g)$ be nondegenerate Hermitian spaces with $V_1 \perp W$ isometric to $V_2 \perp W$; then $V_1$ is isometric to $V_2$,
 
 $$
-V_1 \perp W \ \cong\ V_2 \perp W \quad \Longrightarrow \quad V_1 \cong V_2 .
+\boxed{\;V_1 \perp W \ \cong\ V_2 \perp W \quad \Longrightarrow \quad V_1 \cong V_2\;} .
 $$
 
 **Proof sketch.** The isometry of the sums is an isometry between two subspaces of the common space, and the Witt extension theorem applied to the subspace $W$ in the two copies gives the extension to the whole space; the orthogonal complement of $W$ in either sum is $V_1$ or $V_2$, and the extension carries one to the other. The statement is the cancellation theorem of *Quadratic Forms and Polarisation*.
@@ -46,7 +46,7 @@ $$
 **Theorem (the decomposition).** Let $(V,h)$ be a nondegenerate Hermitian space of dimension $N$ over a field of characteristic not two. Then $V$ decomposes as
 
 $$
-V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0 ,
+\boxed{\;V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0\;} ,
 $$
 
 an orthogonal sum of $r$ hyperbolic planes and an **anisotropic** subspace $V_0$ (one containing no isotropic vector), of dimension $N - 2r$; the number $r$ is the Witt index, it is the same for every such decomposition by the Witt cancellation theorem, and the isometry class of the whole space is determined by the number $r$ and the isometry class of the anisotropic residue $V_0$.

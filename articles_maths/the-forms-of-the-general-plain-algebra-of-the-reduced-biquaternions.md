@@ -47,7 +47,7 @@ $$
 
 **Proposition (the four forms on the coordinates).** For $\breve Q_{1}=Q_{1\blacktriangle}+jQ_{1\blacktriangledown}$ and $\breve Q_{2}=Q_{2\blacktriangle}+jQ_{2\blacktriangledown}$,
 $$
-\langle \breve Q_{1},\breve Q_{2}\rangle=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown},\qquad \langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown},
+\boxed{\; \langle \breve Q_{1},\breve Q_{2}\rangle=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown},\qquad \langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown} \;},
 $$
 $$
 \langle \breve Q_{1},\breve Q_{2}\rangle_{*}=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}-Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},\qquad \langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}+Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown} .
@@ -90,7 +90,7 @@ so the signatures are $(2,2)$ for $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cd
 
 **Theorem (the bridge identity).** The tessarine sign is an $\langle\cdot,\cdot\rangle_{*}$-self-adjoint involution,
 $$
-\langle \breve Q_{1,\mathrm{ts}},\breve Q_{2}\rangle_{*}=\langle \breve Q_{1},\breve Q_{2,\mathrm{ts}}\rangle_{*}=\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*},
+\boxed{\; \langle \breve Q_{1,\mathrm{ts}},\breve Q_{2}\rangle_{*}=\langle \breve Q_{1},\breve Q_{2,\mathrm{ts}}\rangle_{*}=\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*} \;},
 $$
 and it fixes the scalar line $\mathbb{C}$ and negates the $j$-line $\mathbb{C}j$; the two lines are $\langle\cdot,\cdot\rangle_{*}$-orthogonal, and $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ restricted to them is $+H$ and $-H$ respectively.
 
@@ -118,7 +118,7 @@ equivalently $(L_{\breve Q})^{H}=L_{\breve Q^{*}}$, so the left multiplication b
 
 **Theorem (the unitary elements).** The set
 $$
-\mathcal U=\{U\in\mathbb{B}_{\mathrm{r}}:U^{*}U=1\}=\{U:U=Q_{+}\Pi_++|Q_{+}|^{-2}Q_{+}\,\Pi_-,\ Q_{+}\in\mathbb{C}^{\times}\}
+\boxed{\; \mathcal U=\{U\in\mathbb{B}_{\mathrm{r}}:U^{*}U=1\}=\{U:U=Q_{+}\Pi_++|Q_{+}|^{-2}Q_{+}\,\Pi_-,\ Q_{+}\in\mathbb{C}^{\times}\} \;}
 $$
 is a group under the multiplication, isomorphic to $\mathbb{C}^{\times}$ through the first idempotent coordinate; it is the group of elements whose left multiplication is an $\langle\cdot,\cdot\rangle_{*}$-isometry, $\langle U\breve Q_{1},U\breve Q_{2}\rangle_{*}=\langle \breve Q_{1},\breve Q_{2}\rangle_{*}$ for all $\breve Q_{1},\breve Q_{2}$.
 

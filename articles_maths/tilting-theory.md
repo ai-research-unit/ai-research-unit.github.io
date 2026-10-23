@@ -45,7 +45,7 @@ A module satisfying only the first two conditions is **partial tilting**; a part
 
 **Theorem (Brenner–Butler).** Let $T$ be a tilting $A$-module and $B=\operatorname{End}_A(T)^{\mathrm{opp}}$. Let $\mathcal{T}$ be the full subcategory of the $A$-modules $M$ with $\operatorname{Ext}^1_A(T,M)=0$, and let $\mathcal{Y}$ be the full subcategory of the $B$-modules $N$ with $\operatorname{Tor}_1^B(N,T)=0$. Then $\mathcal{T}$ is a torsion class in $\mathrm{mod}\,A$, with torsion-free class the $A$-modules $M$ with $\operatorname{Hom}_A(T,M)=0$, and $\mathcal{Y}$ is a torsion-free class in $\mathrm{mod}\,B$, with torsion class the $B$-modules $N$ with $N\otimes_BT=0$; the functor $\operatorname{Hom}_A(T,-)$ restricts to an equivalence $\mathcal{T}\to\mathcal{Y}$ with inverse $-\otimes_BT$, and it induces isomorphisms
 $$
-K_0(\mathcal{T})\cong K_0(\mathcal{Y}),\qquad K_0(A)\cong K_0(B),
+\boxed{\;K_0(\mathcal{T})\cong K_0(\mathcal{Y}),\qquad K_0(A)\cong K_0(B)\;},
 $$
 on the Grothendieck groups, so that the derived equivalence preserves the number of indecomposable projective modules and the numerical invariants of the module category.
 

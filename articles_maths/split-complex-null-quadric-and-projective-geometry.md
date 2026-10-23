@@ -26,7 +26,7 @@ The form is **indefinite** and **split**: its discriminant is $\operatorname{dis
 **Theorem.** The isotropic cone is the union of the two **null lines**
 
 $$
-\mathcal{N}=\{q=q'\}\cup\{q=-q'\}=\mathbb{R}(1+j)\ \cup\ \mathbb{R}(1-j)=\mathbb{R}\Pi_+\ \cup\ \mathbb{R}\Pi_-,
+\boxed{\; \mathcal{N}=\{q=q'\}\cup\{q=-q'\}=\mathbb{R}(1+j)\ \cup\ \mathbb{R}(1-j)=\mathbb{R}\Pi_+\ \cup\ \mathbb{R}\Pi_- \;},
 $$
 
 each a maximal totally isotropic subspace of $(\mathbb{D},N)$; the two lines are the eigenspaces of the conjugation and are interchanged by it. There are no other isotropic vectors.
@@ -48,7 +48,7 @@ with a point written $[q:q']$ for the line spanned by $q+j q'$; the affine coord
 **Theorem (the projective null quadric).** The projectivised isotropic cone is the two-point set
 
 $$
-Q^0=\mathbb{P}(\mathcal{N})=\{[1:1],\ [1:-1]\}=\{[\mathbb{R}\Pi_+],\ [\mathbb{R}\Pi_-]\}\cong 2\ \text{points},
+\boxed{\; Q^0=\mathbb{P}(\mathcal{N})=\{[1:1],\ [1:-1]\}=\{[\mathbb{R}\Pi_+],\ [\mathbb{R}\Pi_-]\}\cong 2\ \text{points} \;},
 $$
 
 the **two points at infinity** of the hyperbolic plane; in the affine coordinate they are $t=+1$ and $t=-1$.
@@ -70,7 +70,7 @@ the first the interval $-1<t<1$ through the real line $[1]=[1:0]$, the second th
 **Theorem (the hyperbolic group acts by projectivities).** The hyperbolic one-parameter group $\{\exp(js)\}_{s\in\mathbb{R}}$, $\exp(js)=\cosh s+j\sinh s$, preserves $N$ and therefore acts on the projective line, where its projectivity is
 
 $$
-s:\quad t\longmapsto t'=\frac{t+\tau}{1+\tau t}, \qquad \tau=\tanh s ,
+\boxed{\; s:\quad t\longmapsto t'=\frac{t+\tau}{1+\tau t}, \qquad \tau=\tanh s \;},
 $$
 
 a Möbius transformation **fixing the two points at infinity** $t=\pm1$.

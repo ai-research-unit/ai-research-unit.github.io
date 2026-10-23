@@ -27,7 +27,7 @@ The article sets up the isomorphism $\operatorname{Mult}(A)\cong A$, transports 
 **Definition.** Let $\sigma$ be an $R$-algebra involution of $A$. The **induced involution** of the multiplication operators is the $R$-linear map
 
 $$
-{}^{*} : \operatorname{Mult}(A)\to\operatorname{Mult}(A), \qquad L_a^{*} = L_{\sigma(a)} ,
+\boxed{\;{}^{*} : \operatorname{Mult}(A)\to\operatorname{Mult}(A), \qquad L_a^{*} = L_{\sigma(a)}\;} ,
 $$
 
 extended linearly to the combinations of the $L_a$.
@@ -47,7 +47,7 @@ extended linearly to the combinations of the $L_a$.
 **Theorem.** The fixed part and the skew part of the multiplication operators are
 
 $$
-\operatorname{Mult}(A)^* = \{L_a : \sigma(a) = a\} \cong A^\sigma, \qquad \operatorname{Mult}(A)^- = \{L_a : \sigma(a) = -a\} \cong A^- ,
+\boxed{\;\operatorname{Mult}(A)^* = \{L_a : \sigma(a) = a\} \cong A^\sigma, \qquad \operatorname{Mult}(A)^- = \{L_a : \sigma(a) = -a\} \cong A^-\;} ,
 $$
 
 and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(A)^-$ when $2$ is invertible.

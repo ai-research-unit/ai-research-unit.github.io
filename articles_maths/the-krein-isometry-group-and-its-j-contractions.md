@@ -68,7 +68,7 @@ $$
 
 **Theorem (the boosts are Krein isometries).** Each $T_{t}$ is a Krein isometry, the assignment $t\mapsto T_{t}$ is a one-parameter subgroup of $U_{J}(\mathbb{B})$, and the spectrum is
 
-$$ \boxed{\;\mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\}\;}, $$
+$$ \mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\}, $$
 
 so the boosts are the elements of the group whose spectrum is real and off the unit circle. The restriction of $T_{t}$ to the Lorentzian slice $\mathbb{H}_{\mathbb{B}}$ is the Lorentz boost of rapidity $t$ along the $\vec e_x$ direction, that is of velocity $\tanh t$.
 

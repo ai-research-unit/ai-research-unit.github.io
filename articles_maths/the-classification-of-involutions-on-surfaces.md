@@ -33,7 +33,7 @@ and the quotient map is a $2$-fold cover branched at the cone points.
 
 **Theorem (Riemann–Hurwitz).** The Euler characteristics of $S$ and of the quotient orbifold are related by $\chi(S) = 2\,\chi_{\mathrm{orb}}(O)$, that is,
 $$
-2 - 2g = 2\Bigl(2 - 2\gamma - \tfrac{r}{2}\Bigr) = 4 - 4\gamma - r,
+\boxed{\;2 - 2g = 2\Bigl(2 - 2\gamma - \tfrac{r}{2}\Bigr) = 4 - 4\gamma - r\;},
 $$
 so that
 $$
@@ -44,7 +44,7 @@ $$
 
 **Corollary (the possible numbers of fixed points).** For an orientation-preserving involution of $S_g$ the number of fixed points is
 $$
-r = 2 + 2g - 4\gamma \qquad (\gamma = 0,1,\dots), \qquad r\geq0, \qquad r \equiv 2g+2 \pmod 4 .
+\boxed{\;r = 2 + 2g - 4\gamma \qquad (\gamma = 0,1,\dots), \qquad r\geq0, \qquad r \equiv 2g+2 \pmod 4\;} .
 $$
 The involution is free exactly when $g$ is odd, the quotient then being a closed orientable surface of genus $\gamma = (g+1)/2$; and the involution is **hyperelliptic** exactly when $\gamma = 0$, in which case $r = 2g+2$ and the quotient is the sphere.
 
@@ -66,7 +66,7 @@ Let $\tau$ be an orientation-reversing involution of $S_g$.
 
 **Theorem (classification; orientation-reversing, nonempty fixed set).** Suppose $\tau$ has a fixed point. Then its fixed set is a disjoint union of $k$ simple closed curves, where
 $$
-1 \leq k \leq g+1, \qquad k \equiv g+1 \pmod 2 ,
+\boxed{\;1 \leq k \leq g+1, \qquad k \equiv g+1 \pmod 2\;} ,
 $$
 and $\tau$ is determined up to conjugacy by $k$. Conversely every such $k$ occurs.
 

@@ -32,7 +32,7 @@ $$
 **Theorem (the form is the spinor adjoint).** A Hermitian form on $S$ for which the action is self-adjoint is the same thing as a $\sigma$-semilinear map
 
 $$
-J : S \longrightarrow S^{*}, \qquad J(s) = (s,\cdot), \qquad \langle J(s), t\rangle = (s,t),
+\boxed{\;J : S \longrightarrow S^{*}, \qquad J(s) = (s,\cdot), \qquad \langle J(s), t\rangle = (s,t)\;},
 $$
 
 that intertwines the action with the adjoint action,
@@ -86,7 +86,7 @@ so $\beta_{\gamma}$ is **skew-Hermitian** for every non-isotropic vector $\gamma
 **Theorem (non-degeneracy and invariance).** For non-isotropic $\gamma$ the pairing $\beta_{\gamma}$ is non-degenerate, and it is invariant under the stabiliser of $\gamma$ in the unitary slice:
 
 $$
-u^{\dagger}\gamma u = \gamma \ \Longrightarrow \ \beta_{\gamma}(u\cdot s, u\cdot t) = \beta_{\gamma}(s,t) .
+\boxed{\;u^{\dagger}\gamma u = \gamma \ \Longrightarrow \ \beta_{\gamma}(u\cdot s, u\cdot t) = \beta_{\gamma}(s,t)\;} .
 $$
 
 **Proof.** Non-degeneracy follows because $\mathrm{Sc}(s^{\dagger}\gamma t)$ is $\mathrm{Sc}$ composed with the invertible multiplications by $\gamma$ and by the dagger; invariance is $\beta_{\gamma}(us,ut) = \mathrm{Sc}(s^{\dagger}u^{\dagger}\gamma u t) = \mathrm{Sc}(s^{\dagger}\gamma t)$ for $u^{\dagger}\gamma u = \gamma$.
@@ -98,7 +98,7 @@ $$
 **Theorem (adjointness of the Dirac operator for the Dirac pairing).** Let the frame be orthogonal to $\gamma$, so that $\gamma$ anticommutes with each $e_j$, and let $D$ be self-adjoint or skew-adjoint for the module form, $D^{*} = \varepsilon D$ with $\varepsilon = \pm1$. Then
 
 $$
-\beta_{\gamma}(D\cdot s, t) = -\,\varepsilon\,\beta_{\gamma}(s, D\cdot t) .
+\boxed{\;\beta_{\gamma}(D\cdot s, t) = -\,\varepsilon\,\beta_{\gamma}(s, D\cdot t)\;} .
 $$
 
 In particular, an operator that is **skew**-adjoint for the module form $(\varepsilon = -1)$ is self-adjoint for the Dirac pairing, and an operator that is **self**-adjoint for the module form $(\varepsilon = +1)$ is skew-adjoint for the Dirac pairing.

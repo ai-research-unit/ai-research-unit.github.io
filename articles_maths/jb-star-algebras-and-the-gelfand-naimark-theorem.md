@@ -20,7 +20,7 @@ where $a^{2} = a\bullet a$; it is **unital** when there is an identity $1$. An e
 **Proposition (the cone of a unital Jordan algebra).** The set $J_+$ of the sums of squares is closed under addition and nonnegative scaling and contains $1 = 1^{2}$; it is a proper cone under the formally real hypothesis
 
 $$
-x_1^{2} + \dots + x_n^{2} = 0 \implies x_1 = \dots = x_n = 0 ,
+\boxed{\;x_1^{2} + \dots + x_n^{2} = 0 \implies x_1 = \dots = x_n = 0\;} ,
 $$
 
 that is, when the algebra is **formally real**, and then it orders $J$ by $a\leq b\iff b - a\in J_+$ with $1$ as order unit.
@@ -60,7 +60,7 @@ closed under the Jordan product, so that the order of a JB\*-algebra is a **Jord
 **Theorem (Gelfand–Naimark for JB-algebras).** Every JB-algebra is isometrically isomorphic, as an ordered Jordan algebra, to a JC-algebra: there is a Hilbert space $H$, a norm-closed real Jordan subalgebra $J\subseteq B(H)_{\mathrm{sa}}$, and a bijective linear isomorphism $\Phi : A\to J$ with
 
 $$
-\Phi(a\bullet b) = \{\Phi(a),\Phi(b)\}, \qquad \Phi(A_+) = J_+, \qquad \lVert\Phi(a)\rVert = \lVert a\rVert ,
+\boxed{\;\Phi(a\bullet b) = \{\Phi(a),\Phi(b)\}, \qquad \Phi(A_+) = J_+, \qquad \lVert\Phi(a)\rVert = \lVert a\rVert\;} ,
 $$
 
 so that $\Phi$ preserves the order, the order unit and the positive cone.
@@ -68,7 +68,7 @@ so that $\Phi$ preserves the order, the order unit and the positive cone.
 **Theorem (Gelfand–Naimark for JB\*-algebras).** Every JB\*-algebra is isometrically $\ast$-isomorphic to a JC\*-algebra: there is a Hilbert space $H$, a norm-closed complex Jordan $\ast$-subalgebra $A_0\subseteq B(H)$, and a bijective linear map $\Phi : A\to A_0$ with
 
 $$
-\Phi(a\bullet b) = \Phi(a)\bullet\Phi(b), \qquad \Phi(a^{*}) = \Phi(a)^{*}, \qquad \Phi(A_+) = A_{0+} , \qquad \lVert\Phi(a)\rVert = \lVert a\rVert ,
+\boxed{\;\Phi(a\bullet b) = \Phi(a)\bullet\Phi(b), \qquad \Phi(a^{*}) = \Phi(a)^{*}, \qquad \Phi(A_+) = A_{0+} , \qquad \lVert\Phi(a)\rVert = \lVert a\rVert\;} ,
 $$
 
 preserving the involution, the order, the cone and the norm.

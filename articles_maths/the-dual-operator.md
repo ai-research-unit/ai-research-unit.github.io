@@ -26,7 +26,7 @@ that is, $T'y' = y' \circ T$.
 **Proposition (the transpose is linear and reverses composition).** For $S, T \in \mathcal{L}(E, F)$, $R \in \mathcal{L}(F, G)$ and $\lambda \in \mathbb{K}$,
 
 $$
-(S + T)' = S' + T', \qquad (\lambda T)' = \lambda T', \qquad (\mathrm{id}_{E})' = \mathrm{id}_{E'}, \qquad (RT)' = T'R' .
+\boxed{\;(S + T)' = S' + T', \qquad (\lambda T)' = \lambda T', \qquad (\mathrm{id}_{E})' = \mathrm{id}_{E'}, \qquad (RT)' = T'R'\;} .
 $$
 
 Hence $T \mapsto T'$ is a linear map $\mathcal{L}(E, F) \to \mathcal{L}(F', E')$ that is a unital algebra anti-homomorphism $\mathcal{L}(E) \to \mathcal{L}(E')$ on the endomorphisms.
@@ -42,7 +42,7 @@ Hence $T \mapsto T'$ is a linear map $\mathcal{L}(E, F) \to \mathcal{L}(F', E')$
 **Theorem (characterisation by weak-star continuity).** Let $R : F' \to E'$ be linear. Then $R$ is continuous for the weak-star topologies, $R : (F', \sigma(F', F)) \to (E', \sigma(E', E))$, if and only if $R = T'$ for a unique $T \in \mathcal{L}(E, F)$. In that case
 
 $$
-\langle x, R y'\rangle = \langle Tx, y'\rangle \qquad (x \in E, \ y' \in F').
+\boxed{\;\langle x, R y'\rangle = \langle Tx, y'\rangle \qquad (x \in E, \ y' \in F')\;}.
 $$
 
 **Proof.** If $R = T'$ then $\langle x, Ry'\rangle = \langle x, T'y'\rangle = \langle Tx, y'\rangle$, and weak-star continuity follows from the continuity of $T$, as in the proposition above. Conversely, weak-star continuity of $R$ says that for each $x \in E$ the functional $y' \mapsto \langle x, Ry'\rangle$ on $F'$ is weak-star continuous; since the dual of $(F', \sigma(F', F))$ is $F$ for a locally convex $F$, this functional is $\langle Tx, y'\rangle$ for a unique $Tx \in F$, and $x \mapsto Tx$ is linear by the linearity of $R$; that $T$ is continuous follows because it is continuous for the weak topology $\sigma(E, E')$, and a linear map of locally convex spaces is continuous exactly when it is weakly continuous. Uniqueness is the separating property of $F'$.
@@ -64,7 +64,7 @@ $$
 **Theorem (the transpose is an isometry on normed spaces).** Let $X, Y$ be normed spaces and $T \in B(X, Y)$. Then $T' \in B(Y^{*}, X^{*})$ and
 
 $$
-\lVert T'\rVert = \lVert T\rVert .
+\boxed{\;\lVert T'\rVert = \lVert T\rVert\;} .
 $$
 
 Hence $T \mapsto T'$ is a linear isometry $B(X, Y) \to B(Y^{*}, X^{*})$, and $T'' = (T')'$ is an isometry extending $T$ under the canonical embeddings.

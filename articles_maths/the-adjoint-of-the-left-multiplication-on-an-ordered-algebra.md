@@ -30,7 +30,7 @@ so the left multiplications form a **\*-homomorphism** $a\mapsto L_a$ with $L_{a
 **Proposition (the two-sided multiplications).** For $a,b\in A$ let $T_{a,b} = L_aR_b$, $T_{a,b}(x) = axb$; then
 
 $$
-(T_{a,b})^{*} = T_{b^{*},a^{*}} ,
+\boxed{\;(T_{a,b})^{*} = T_{b^{*},a^{*}}\;} ,
 $$
 
 so the two-sided multiplications form a **bimodule** under the adjoint, the map $(a,b)\mapsto T_{a,b}$ is bilinear, and the identity $T_{a,b}T_{c,d} = T_{ac,db}$ holds by associativity; consequently the adjoint of a two-sided multiplication is again a two-sided multiplication, and the **self-adjoint** two-sided multiplications are the $T_{a,a^{*}}$ and their sums.
@@ -48,7 +48,7 @@ so the two-sided multiplications form a **bimodule** under the adjoint, the map 
 **Proposition (the adjoint of an inner derivation).** The adjoint of an inner derivation is
 
 $$
-(\delta_a)^{*} = \delta_{a^{*}} ,
+\boxed{\;(\delta_a)^{*} = \delta_{a^{*}}\;} ,
 $$
 
 so $\delta_a$ is self-adjoint exactly when $a$ is self-adjoint, and it is **skew-adjoint**, $(\delta_a)^{*} = -\delta_a$, exactly when $a$ is **skew-adjoint**, $a^{*} = -a$; the inner derivations form a Lie subalgebra of the operators, $[\delta_a,\delta_b] = \delta_{[a,b]}$, closed under the adjoint.
@@ -64,7 +64,7 @@ so $\delta_a$ is self-adjoint exactly when $a$ is self-adjoint, and it is **skew
 **Theorem (the order of the multiplications).** The map $a\mapsto L_a$ is an **order isomorphism** of the ordered involutive algebra onto the subalgebra of the left multiplications, and
 
 $$
-a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff T_{a,b}\geq0 \ \text{ for every } b\geq0 ,
+\boxed{\;a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff T_{a,b}\geq0 \ \text{ for every } b\geq0\;} ,
 $$
 
 so the positive cone of the algebra is carried isomorphically onto the cone of the positive multiplications; the adjoint of a positive multiplication is positive, and the adjoint is therefore an **order automorphism** of the multiplication algebra.

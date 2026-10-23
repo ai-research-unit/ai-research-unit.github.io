@@ -12,7 +12,7 @@ Throughout, $(G,\varepsilon)$ is a group with a degree character $\varepsilon:G\
 **Theorem (the adjoint action is an action).** The assignment
 
 $$
-g\triangleright T=\rho(g)\,T\,\rho(g)^{-1}
+\boxed{\;g\triangleright T=\rho(g)\,T\,\rho(g)^{-1}\;}
 $$
 
 is a $k$-linear action of $G$ on $\operatorname{End}_k(M)$: $e\triangleright T=T$ and $g\triangleright(h\triangleright T)=(gh)\triangleright T$.
@@ -45,7 +45,7 @@ $$
 **Theorem (the twisted action is graded, and projective).** For homogeneous $g,T$,
 
 $$
-\lvert g\triangleright' T\rvert=\varepsilon(g)+\lvert T\rvert ,
+\boxed{\;\lvert g\triangleright' T\rvert=\varepsilon(g)+\lvert T\rvert\;} ,
 $$
 
 so the twisted adjoint action is a **graded action** on $\operatorname{End}_k(M)$ with the degree $\varepsilon$: it preserves the parity of the adjoint action twisted by $\varepsilon(g)$. It is not an honest action; it satisfies
@@ -73,7 +73,7 @@ $$
 **Theorem (the coadjoint action is a graded action).** The coadjoint action is an action of $G$ on $M^{*}$ with the sign rule
 
 $$
-\lvert g\cdot\varphi\rvert=\varepsilon(g)+\lvert\varphi\rvert ,
+\boxed{\;\lvert g\cdot\varphi\rvert=\varepsilon(g)+\lvert\varphi\rvert\;} ,
 $$
 
 so it is a graded action on the dual with the degree $\varepsilon$; it is an honest action, $(gh)\cdot\varphi=g\cdot(h\cdot\varphi)$, and it is contragredient to the action on $M$ in the sense of the pairing $\langle\varphi,m\rangle=\varphi(m)$.

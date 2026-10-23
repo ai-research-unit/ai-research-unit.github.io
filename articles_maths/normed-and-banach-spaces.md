@@ -42,7 +42,7 @@ In $\mathbb{K}^n$ the three norms $\|\cdot\|_1,\|\cdot\|_2,\|\cdot\|_\infty$ are
 **Definition.** A linear map $T:X \to Y$ between normed spaces is **bounded** if there is $C \ge 0$ with $\|Tx\| \le C\|x\|$ for all $x$, and the least such constant is the **operator norm**
 
 $$
-\|T\|=\sup_{x \neq 0}\frac{\|Tx\|}{\|x\|}=\sup_{\|x\| \le 1}\|Tx\|=\sup_{\|x\|=1}\|Tx\| .
+\boxed{\;\|T\|=\sup_{x \neq 0}\frac{\|Tx\|}{\|x\|}=\sup_{\|x\| \le 1}\|Tx\|=\sup_{\|x\|=1}\|Tx\|\;} .
 $$
 
 **Theorem.** For linear $T:X \to Y$ the following are equivalent: (i) $T$ is continuous; (ii) $T$ is continuous at $0$; (iii) $T$ is bounded; (iv) $T$ maps bounded sets to bounded sets. In this case $\ker T$ is closed.
@@ -78,7 +78,7 @@ $$
 *Proof.* Choose $z \notin Y$ with $d(z,Y)=d>0$ and pick $y \in Y$ with $\|z-y\| \le d/(1-\varepsilon)$; set $x=(z-y)/\|z-y\|$. For $y' \in Y$ one has $y+\|z-y\|y' \in Y$ and hence
 
 $$
-\|x-y'\|=\frac{1}{\|z-y\|}\bigl\|z-\bigl(y+\|z-y\|y'\bigr)\bigr\| \ge \frac{d}{\|z-y\|} \ge 1-\varepsilon .
+\boxed{\;\|x-y'\|=\frac{1}{\|z-y\|}\bigl\|z-\bigl(y+\|z-y\|y'\bigr)\bigr\| \ge \frac{d}{\|z-y\|} \ge 1-\varepsilon\;} .
 $$
 
 **Theorem.** A normed space is finite-dimensional if and only if its closed unit ball is compact. Consequently every locally compact normed space is finite-dimensional.

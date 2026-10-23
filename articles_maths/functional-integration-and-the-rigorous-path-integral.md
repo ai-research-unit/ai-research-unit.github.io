@@ -167,7 +167,7 @@ $$
 is absolutely continuous with respect to $\mathbb{W}$, and
 
 $$
-\frac{d\mathbb{W}_h}{d\mathbb{W}}(x)=\exp\Bigl(\int_0^1h'(t)\,dx(t)-\frac12\int_0^1h'(t)^2\,dt\Bigr),
+\boxed{\;\frac{d\mathbb{W}_h}{d\mathbb{W}}(x)=\exp\Bigl(\int_0^1h'(t)\,dx(t)-\frac12\int_0^1h'(t)^2\,dt\Bigr)\;},
 $$
 
 where the integral is the Itô integral of $h'$ against the canonical Brownian path. The space $H^1_0$ is the Cameron–Martin space of $\mathbb{W}$.
@@ -198,7 +198,7 @@ The dichotomy is the sharp form of the statement that the Brownian measure does 
 **Theorem (Feynman–Kac).** Let $V:\mathbb{R}^d\to\mathbb{R}$ be continuous and bounded below, let $f$ be bounded and continuous, and let $\mathbb{E}^x$ denote the expectation for Brownian motion started at $x$. Then
 
 $$
-u(t,x)=\mathbb{E}^x\Bigl[\exp\Bigl(-\int_0^tV(x_s)\,ds\Bigr)f(x_t)\Bigr]
+\boxed{\;u(t,x)=\mathbb{E}^x\Bigl[\exp\Bigl(-\int_0^tV(x_s)\,ds\Bigr)f(x_t)\Bigr]\;}
 $$
 
 is the unique bounded solution of the initial-value problem
@@ -310,7 +310,7 @@ $$
 **Theorem (the harmonic oscillator).** For the harmonic potential the sliced kernels converge as $n\to\infty$ to the **Mehler kernel**
 
 $$
-K(x_a,x_b;t)=\Bigl(\frac{\omega}{2\pi i\sin\omega t}\Bigr)^{1/2}\exp\Bigl(\frac{i\omega}{2\sin\omega t}\bigl((x_a^2+x_b^2)\cos\omega t-2x_ax_b\bigr)\Bigr).
+\boxed{\;K(x_a,x_b;t)=\Bigl(\frac{\omega}{2\pi i\sin\omega t}\Bigr)^{1/2}\exp\Bigl(\frac{i\omega}{2\sin\omega t}\bigl((x_a^2+x_b^2)\cos\omega t-2x_ax_b\bigr)\Bigr)\;}.
 $$
 
 

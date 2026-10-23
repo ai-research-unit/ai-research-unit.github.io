@@ -37,7 +37,7 @@ $$
 **Theorem (the adjoint of the ternary operator).** For all $x,y\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x};\qquad\text{that is,}\qquad \varphi(\Theta_{x,y}z,w)=\varphi(z,\Theta_{y,x}w)\quad\text{for all }z,w\in A .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{y,x};\qquad\text{that is,}\qquad \varphi(\Theta_{x,y}z,w)=\varphi(z,\Theta_{y,x}w)\quad\text{for all }z,w\in A\;} .
 $$
 
 **Proof.** By the definition of the pairing, $\varphi(\Theta_{x,y}z,w)=\tau\bigl(xy^{*}zw^{*}\bigr)$, and the cyclicity of $\tau$ turns it into $\tau\bigl(zw^{*}xy^{*}\bigr)$. On the other side, $\varphi(z,\Theta_{y,x}w)=\tau\bigl(z(yx^{*}w)^{*}\bigr)=\tau\bigl(zw^{*}xy^{*}\bigr)$, by the anti-multiplicativity of $*$. The two are equal, and the adjoint is unique.
@@ -55,7 +55,7 @@ $$
 **Theorem (the quadratic representation is self-adjoint).** For every $x\in A$ the operator $\Theta_{x,x}$ is self-adjoint, and
 
 $$
-\Theta_{x,x}=T_{x\star x,1},\qquad \Theta_{x,x}^{\dagger}=T_{(x\star x)^{*},1} .
+\boxed{\;\Theta_{x,x}=T_{x\star x,1},\qquad \Theta_{x,x}^{\dagger}=T_{(x\star x)^{*},1}\;} .
 $$
 
 **Proof.** The first identity is the factorisation of the pair through the derived product, $\Theta_{x,x}=T_{x\star x,1}$, and the diagonal is self-adjoint by the corollary of the adjoint theorem. The second identity is the same factorisation read on the adjoint, and it agrees with the first because the derived square is Hermitian: $(x\star x)^{*}=(xx^{*})^{*}=(x^{*})^{*}x^{*}=xx^{*}=x\star x$.
@@ -67,7 +67,7 @@ $$
 **Theorem (when the ternary operator is self-adjoint).** For $x,y\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y .
+\boxed{\;\Theta_{x,y}^{\dagger}=\Theta_{x,y}\quad\Longleftrightarrow\quad x\star y=y\star x\quad\Longleftrightarrow\quad (x\star y)^{*}=x\star y\;} .
 $$
 
 The operator of a pair is therefore self-adjoint exactly when the derived product of the pair is Hermitian.

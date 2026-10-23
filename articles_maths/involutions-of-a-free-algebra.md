@@ -33,7 +33,7 @@ The property is the reason the free algebra is the domain of the anti-involution
 **Definition.** The **reversal** of a word $w = x_1 x_2 \cdots x_n$ is the word
 
 $$
-\mathrm{rev}(w) = x_n \cdots x_2 x_1, \qquad \mathrm{rev}(1) = 1,
+\boxed{\;\mathrm{rev}(w) = x_n \cdots x_2 x_1, \qquad \mathrm{rev}(1) = 1\;},
 $$
 
 and the **reversal map** on $F\langle X\rangle$ is the linear extension of $\mathrm{rev}$ to the words. A word with $\mathrm{rev}(w) = w$ is a **palindrome**.
@@ -47,7 +47,7 @@ and the **reversal map** on $F\langle X\rangle$ is the linear extension of $\mat
 **Proposition.** The reversal involution has fixed space spanned by the **palindromes** together with the sums $w + \mathrm{rev}(w)$ and skew part spanned by the differences $w - \mathrm{rev}(w)$; the underlying space decomposes as
 
 $$
-F\langle X\rangle = F\langle X\rangle^+ \oplus F\langle X\rangle^-, \qquad F\langle X\rangle^\pm = \{a : \mathrm{rev}(a) = \pm a\},
+\boxed{\;F\langle X\rangle = F\langle X\rangle^+ \oplus F\langle X\rangle^-, \qquad F\langle X\rangle^\pm = \{a : \mathrm{rev}(a) = \pm a\}\;},
 $$
 
 and the fixed space is the span of the symmetric combinations and the skew space the span of the antisymmetric ones.

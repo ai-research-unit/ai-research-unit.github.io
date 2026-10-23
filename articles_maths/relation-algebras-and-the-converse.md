@@ -57,8 +57,8 @@ witness for one of the two relations.
 **Proposition.** The converse reverses composition and commutes with the Boolean operations:
 
 $$
-(R^{-1})^{-1} = R, \qquad (R ; S)^{-1} = S^{-1} ; R^{-1}, \qquad
-(R \cup S)^{-1} = R^{-1} \cup S^{-1}, \qquad (\overline{R})^{-1} = \overline{R^{-1}},
+\boxed{\;(R^{-1})^{-1} = R, \qquad (R ; S)^{-1} = S^{-1} ; R^{-1}, \qquad
+(R \cup S)^{-1} = R^{-1} \cup S^{-1}, \qquad (\overline{R})^{-1} = \overline{R^{-1}}\;},
 $$
 
 where $\overline{R} = (X \times X) \setminus R$. Hence $R \mapsto R^{-1}$ is an order isomorphism of
@@ -137,8 +137,8 @@ $$
 **Theorem.** For all relations $R, S, T$,
 
 $$
-R ; S \subseteq T \quad\Longleftrightarrow\quad S \subseteq R \backslash T \quad\Longleftrightarrow\quad
-R \subseteq T / S .
+\boxed{\;R ; S \subseteq T \quad\Longleftrightarrow\quad S \subseteq R \backslash T \quad\Longleftrightarrow\quad
+R \subseteq T / S\;} .
 $$
 
 **Proof.** $R;S \subseteq T$ says that every $(x,z)$ with a witness $y$, $(x,y) \in R$, $(y,z) \in S$,
@@ -158,8 +158,8 @@ last identity is the definition read through the converse.
 **Theorem (Peircean law).** For relations $R, S, T$ on $X$ the following are equivalent:
 
 $$
-(R ; S) \cap T = \emptyset, \qquad (R^{-1} ; T) \cap S = \emptyset, \qquad
-(T ; S^{-1}) \cap R = \emptyset .
+\boxed{\;(R ; S) \cap T = \emptyset, \qquad (R^{-1} ; T) \cap S = \emptyset, \qquad
+(T ; S^{-1}) \cap R = \emptyset\;} .
 $$
 
 **Proof.** (1) $\Rightarrow$ (2): suppose $(R;S) \cap T = \emptyset$ and suppose some $(a,b)$ lies in

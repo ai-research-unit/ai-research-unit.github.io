@@ -42,7 +42,9 @@ where on the right $\tilde{\nabla}$ is the quaternion operator acting on each id
 **Theorem.** The operator factors the scalar d'Alembertian:
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t .
+\boxed{\;
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t
+\;}.
 $$
 
 **Proof.** The units satisfy $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_t$, so the cross terms cancel in the product, leaving the sum of the second derivatives.
@@ -58,7 +60,9 @@ The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solu
 **Theorem (regularity system).** Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1\vec e_x + F_2\vec e_y + F_3\vec e_z$, the function $F^{\mathrm{fn}}$ is left-regular if and only if
 
 $$
-\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F , \qquad \partial/\partial Q_t\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0 ,
+\boxed{\;
+\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F , \qquad \partial/\partial Q_t\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0
+\;},
 $$
 
 a system of four first-order equations coupling the scalar part $F_0$ to the vector part $\vec F$.
@@ -90,7 +94,9 @@ is regular for $\tilde{Q} \neq 0$ and is the fundamental solution of $\tilde{\na
 **Theorem.** Every left-regular function is harmonic for the d'Alembertian:
 
 $$
-\Box F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}\left(\tilde{\nabla}F^{\mathrm{fn}}\right) = 0 , \qquad \Box = \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right)e_t .
+\boxed{\;
+\Box F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}\left(\tilde{\nabla}F^{\mathrm{fn}}\right) = 0 , \qquad \Box = \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right)e_t
+\;}.
 $$
 
 **Proof.** Apply $\tilde{\nabla}^{\natural}$ to $\tilde{\nabla}F^{\mathrm{fn}} = 0$ and use the factorization.

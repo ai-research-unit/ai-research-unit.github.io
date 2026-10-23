@@ -61,7 +61,7 @@ the sum over a set of coset representatives of $H$ in $G$; the summands depend o
 **Theorem.** The restriction and the transfer satisfy the composition identities
 
 $$
-r\circ t = [G:H]\,\mathrm{id}_{M^H}, \qquad t\circ r = [G:H]\,\mathrm{id}_{M^G}, \qquad N_G = t\circ N_H ,
+\boxed{\;r\circ t = [G:H]\,\mathrm{id}_{M^H}, \qquad t\circ r = [G:H]\,\mathrm{id}_{M^G}, \qquad N_G = t\circ N_H\;} ,
 $$
 
 where $[G:H]$ is the index and $N_G=\sum_{g\in G}\rho(g)$, $N_H=\sum_{h\in H}\rho(h)$ are the norms; the norm of the subgroup acts on the fixed part $M^H$ by the scalar $|H|$. For $H=1$ the transfer is the norm $N_G$ and for $H=G$ the restriction is the identity and the transfer is the identity.
@@ -97,7 +97,7 @@ the last identity being **Frobenius reciprocity**; for $H=1$ the transfer is the
 **Theorem (Shapiro's lemma).** For a subgroup $H\leq G$, a $G$-module $M$ and its restriction to $H$, there is a natural isomorphism
 
 $$
-H^*(G; \mathrm{Ind}_H^G N) \cong H^*(H;N), \qquad H^*_G(G/H \times Z; \underline M) \cong H^*_H(Z;\underline M),
+\boxed{\;H^*(G; \mathrm{Ind}_H^G N) \cong H^*(H;N), \qquad H^*_G(G/H \times Z; \underline M) \cong H^*_H(Z;\underline M)\;},
 $$
 
 the cohomology of the induced module is the cohomology of the subgroup, and the same with the Bredon cohomology of the orbit $G/H$ and of the coefficient system restricted to $H$: the induction and the restriction form an adjoint pair on the cohomology.
@@ -155,7 +155,7 @@ and they are compatible with the conjugation, $g\,\mathrm{res}_K^G\,g^{-1}=\math
 **Theorem (Mackey).** For subgroups $H,K\leq G$ the composite of the transfer from $H$ with the restriction to $K$ is the sum over the double cosets of the conjugates of the transfers and the restrictions:
 
 $$
-\mathrm{res}_K^G\circ\mathrm{cor}_H^G = \sum_{KgH\in K\backslash G/H} \mathrm{cor}_{K\cap gHg^{-1}}^{K}\circ g\circ\mathrm{res}_{H\cap g^{-1}Kg}^{H} ,
+\boxed{\;\mathrm{res}_K^G\circ\mathrm{cor}_H^G = \sum_{KgH\in K\backslash G/H} \mathrm{cor}_{K\cap gHg^{-1}}^{K}\circ g\circ\mathrm{res}_{H\cap g^{-1}Kg}^{H}\;} ,
 $$
 
 the **double coset formula**, which is the multiplication rule of the Mackey functor of the equivariant operators; for $H=K=1$ it specialises to the norm and for $H=K$ normal to the sum of the conjugations over the quotient $G/H$.

@@ -25,7 +25,7 @@ Throughout, $(M,\omega)$ is a compact Kähler manifold of complex dimension $n$ 
 
 **Proposition (the Lefschetz operator is self-adjoint for the pairing).** The contraction $\Lambda$ is the formal adjoint of $L$,
 $$
-(L\alpha,\beta) = (\alpha,\Lambda\beta),
+\boxed{\;(L\alpha,\beta) = (\alpha,\Lambda\beta)\;},
 $$
 and with $H = [L,\Lambda]$ the three operators satisfy $[H,L] = 2L$, $[H,\Lambda] = -2\Lambda$, $[L,\Lambda] = H$, so that the exterior algebra is a finite-dimensional representation of the Lie algebra $\mathfrak{sl}_2$; on the $k$-forms $H = (k-n)\,\mathrm{id}$.
 
@@ -37,7 +37,7 @@ and with $H = [L,\Lambda]$ the three operators satisfy $[H,L] = 2L$, $[H,\Lambda
 
 **Proposition (the Hodge star).** The Hodge star is an isometry of the exterior algebra, $\star^{2} = (-1)^{k(2n-k)}\mathrm{id}$ on the $k$-forms, and it intertwines the Lefschetz operator and the contraction,
 $$
-\star L = \Lambda\star, \qquad \star\Lambda = L\star .
+\boxed{\;\star L = \Lambda\star, \qquad \star\Lambda = L\star\;} .
 $$
 
 **Proof.** The identity $\star L = \Lambda\star$ is the classical pairing of exterior multiplication with contraction through the star, with the sign convention of the Hodge star fixed as in *The Volume Element, Duality and the Hodge Star*; it holds on a Kähler manifold because $\omega$ is parallel and the star is built from the metric and the volume element. Applying $\star^{2}$ to both sides and cancelling the scalar $(-1)^{k(2n-k)}$ gives the second identity. The Hodge star and its properties are *The Volume Element, Duality and the Hodge Star*, and the Kähler intertwining is *The Kähler Form Operator*.
@@ -56,7 +56,7 @@ C^{2} = (-1)^{k(2n-k)}\,\mathrm{id}\quad\text{on }\Omega^{k},
 $$
 and it exchanges the Kähler operator and its adjoint,
 $$
-C\,L\,C^{-1} = \Lambda, \qquad C\,\Lambda\,C^{-1} = L .
+\boxed{\;C\,L\,C^{-1} = \Lambda, \qquad C\,\Lambda\,C^{-1} = L\;} .
 $$
 
 **Proof.** $C^{2} = \star\sigma\star\sigma$; the star is real, so it commutes with the conjugation $\sigma$, and $\sigma^{2}=\mathrm{id}$, giving $C^{2} = \star^{2}$, which is $(-1)^{k(2n-k)}$ on $\Omega^{k}$; and $C L C^{-1} = \star\sigma L\sigma^{-1}\star^{-1} = \star L\star^{-1} = \Lambda$ using $\sigma L = L\sigma$ and $\star L = \Lambda\star$. The inverse $\star^{-1}$ is $\pm\star$, absorbed in the sign. This is *The Kähler Form Operator* and *The Volume Element, Duality and the Hodge Star*.

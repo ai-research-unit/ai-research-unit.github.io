@@ -16,7 +16,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 **Theorem (invariant generation).** Let $\theta$ be a continuous involution of $E$ and let $\mathcal{P}$ be any generating family of seminorms. Then the family
 
 $$
-\mathcal{P}^{\theta} = \{\, \sup(p, p \circ \theta) : p \in \mathcal{P} \,\}
+\boxed{\;\mathcal{P}^{\theta} = \{\, \sup(p, p \circ \theta) : p \in \mathcal{P} \,\}\;}
 $$
 
 generates the same topology and consists of $\theta$-invariant seminorms; hence every continuous involution admits a $\theta$-admissible topology equal to the given one. In particular a continuous involution is an isometry for each seminorm of some generating family.
@@ -46,7 +46,7 @@ $$
 are continuous $\theta$-invariant projections with $\mathrm{im}\,\pi_1 = E^{\theta}$, $\mathrm{im}\,\pi_2 = E^{-}$, and
 
 $$
-E = E^{\theta} \oplus E^{-}
+\boxed{\;E = E^{\theta} \oplus E^{-}\;}
 $$
 
 as a topological direct sum; the projection onto $E^{\theta}$ along $E^{-}$ is $\pi_1$, and the direct sum is locally convex for the product topology.
@@ -70,7 +70,7 @@ so that $\langle \theta x, \varphi\rangle = \varsigma\bigl(\langle x, \theta'\va
 **Proposition (the transposed involution is continuous).** The map $\theta'$ is an involution of $E'$ of the same kind as $\theta$, and it is continuous for the weak-star topology $\sigma(E', E)$, for the weak topology $\sigma(E', E'')$ and for the strong topology $\beta(E', E)$; on the weak-star dual it is a homeomorphism, and its fixed and negated parts are the annihilators
 
 $$
-(E')^{\theta'} = (E^{-})^{\circ}, \qquad (E')^{-} = (E^{\theta})^{\circ} .
+\boxed{\;(E')^{\theta'} = (E^{-})^{\circ}, \qquad (E')^{-} = (E^{\theta})^{\circ}\;} .
 $$
 
 **Proof.** $\theta'$ is the transpose of the involution $\theta$, so it is an involution and is weak-star continuous by *The Dual Operator and the Weak Topology*; continuity for the strong topology is the strong continuity of the transpose of *The Dual Operator and the Weak Topology*, and the weak-star homeomorphism statement is the same place. A functional is fixed under $\theta'$ exactly when $\varphi(\theta x) = \varphi(x)$ for all $x$; on $E^{-}$ this reads $\varphi(-x) = \varphi(x)$, so $\varphi$ vanishes there, and on $E^{\theta}$ it is automatic; hence the fixed part is the annihilator of $E^{-}$, and the negated part is the annihilator of $E^{\theta}$.

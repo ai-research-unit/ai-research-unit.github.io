@@ -33,7 +33,7 @@ for all $\lambda \in R$ and $x \in M$. The set of them is written $\operatorname
 **Theorem.** For all $R$-modules $M, N$ there are natural isomorphisms of abelian groups
 
 $$
-\operatorname{Hom}_{\varsigma}(M, N) \;\cong\; \operatorname{Hom}_{R}(M^{\varsigma}, N) \;\cong\; \operatorname{Hom}_{R}(M, N^{\varsigma}).
+\boxed{\;\operatorname{Hom}_{\varsigma}(M, N) \;\cong\; \operatorname{Hom}_{R}(M^{\varsigma}, N) \;\cong\; \operatorname{Hom}_{R}(M, N^{\varsigma})\;}.
 $$
 
 **Proof.** A semilinear $f : M \to N$ is additive, so it can be read on the same underlying set with the twisted action: $f(\lambda \cdot x) = f(\varsigma(\lambda) x) = \varsigma(\varsigma(\lambda)) f(x) = \lambda f(x)$, so $f$ is a linear map $M^{\varsigma} \to N$, and the reading is a bijection because it changes nothing but the action declared on the source. On the other side, $f(\lambda x) = \varsigma(\lambda) f(x) = \lambda \cdot f(x)$ says that the same $f$ is a linear map $M \to N^{\varsigma}$. Both readings are natural, a linear $M^{\varsigma} \to N$ being the same rule of assignment as a semilinear $M \to N$.
@@ -84,7 +84,7 @@ the semilinear maps of $M$ into the base ring read as an $R$-module.
 **Theorem.** There are natural isomorphisms of $R$-modules
 
 $$
-M^{\varsigma*} \;\cong\; (M^{\varsigma})^{*}, \qquad (M^{\varsigma})^{\varsigma*} \;\cong\; M^{*},
+\boxed{\;M^{\varsigma*} \;\cong\; (M^{\varsigma})^{*}, \qquad (M^{\varsigma})^{\varsigma*} \;\cong\; M^{*}\;},
 $$
 
 and $M^{\varsigma*} = M^{*}$ for $\varsigma = \mathrm{id}$.
@@ -140,7 +140,7 @@ is $\varsigma$-semilinear, and under the identification $(M^{\varsigma*})^{*} \c
 **Theorem (transport preserves the parity).** Let $A$ carry a $\varsigma$-sesquilinear product $\cdot_{A}$ and let $\varphi : A \to B$ be a $\varsigma$-semilinear bijection. Then the transported product
 
 $$
-x \cdot_{B} y = \varphi\bigl( \varphi^{-1}(x) \cdot_{A} \varphi^{-1}(y) \bigr)
+\boxed{\;x \cdot_{B} y = \varphi\bigl( \varphi^{-1}(x) \cdot_{A} \varphi^{-1}(y) \bigr)\;}
 $$
 
 is a $\varsigma$-sesquilinear product on $B$ of the same parity as $\cdot_{A}$, linear in the first slot and $\varsigma$-semilinear in the second.

@@ -38,7 +38,7 @@ which is the infinitesimal unitarity condition of the module.
 **Theorem (the sign rule).** The adjoint of the graded action is a signed multiple of the graded action,
 
 $$
-\bigl(\rho^{\alpha}(x)\bigr)^{*} = \beta^{*}\rho(x)^{*} = -\beta\rho(x) = (-1)^{\lvert x\rvert+1}\rho^{\alpha}(x),
+\boxed{\;\bigl(\rho^{\alpha}(x)\bigr)^{*} = \beta^{*}\rho(x)^{*} = -\beta\rho(x) = (-1)^{\lvert x\rvert+1}\rho^{\alpha}(x)\;},
 $$
 
 so that
@@ -64,7 +64,7 @@ the **graded action is skew-adjoint for the even elements and self-adjoint for t
 **Theorem.** The graded action graded-commutes with the parity operator,
 
 $$
-\rho^{\alpha}(x)\,\beta = (-1)^{\lvert x\rvert}\,\beta\,\rho^{\alpha}(x) ,
+\boxed{\;\rho^{\alpha}(x)\,\beta = (-1)^{\lvert x\rvert}\,\beta\,\rho^{\alpha}(x)\;} ,
 $$
 
 so the graded action by an even element commutes with the grading operator and the graded action by an odd element anticommutes with it; the sign rule for the adjoint is the same sign as the graded commutation.
@@ -102,7 +102,7 @@ on homogeneous $u\in \mathrm{U}(\mathrm{G})$, where $u^{\star}$ is the star of t
 **Theorem.** The graded action preserves the graded form up to the parity of the acting element,
 
 $$
-\bigl(\rho^{\alpha}(x)m,n\bigr) = (-1)^{\lvert x\rvert}\bigl(m,\rho^{\alpha}(x)n\bigr) ,
+\boxed{\;\bigl(\rho^{\alpha}(x)m,n\bigr) = (-1)^{\lvert x\rvert}\bigl(m,\rho^{\alpha}(x)n\bigr)\;} ,
 $$
 
 and the form is invariant under the action exactly when the sign rule holds; the module is **unitary** when the form is positive definite, and the graded action is then a representation by unitary and self-adjoint operators on the odd part and by unitary and skew-adjoint operators on the even part.

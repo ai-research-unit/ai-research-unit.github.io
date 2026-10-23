@@ -178,9 +178,7 @@ nonzero because $Q_t\neq0$ and $\tilde Q\neq0$.
 **Theorem (the non-pure family is the idempotent family).** A non-pure zero divisor is a complex
 multiple of a nontrivial idempotent of the plain product,
 
-$$
-\tilde Q=2Q_t\tilde\Pi , \qquad \tilde\Pi=\frac{\tilde Q}{2Q_t} ,
-$$
+$$\boxed{\; \tilde Q=2Q_t\tilde\Pi , \qquad \tilde\Pi=\frac{\tilde Q}{2Q_t} \;},$$
 
 and conversely every complex multiple of a nontrivial plain idempotent is a non-pure zero divisor
 of $\star$.
@@ -211,7 +209,7 @@ displacement is the subject of *Square Roots of One and the Idempotents of the G
 algebraic norm,
 
 $$
-\boxed{\; C=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}=\{\tilde Q:\tilde Q\star\tilde Q=0\} \;}.
+C=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}=\{\tilde Q:\tilde Q\star\tilde Q=0\}.
 $$
 
 **Proposition (shape).** The set $C$ is a real cone of real dimension $6$ in the real

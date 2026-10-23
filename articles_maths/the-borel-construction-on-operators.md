@@ -35,7 +35,7 @@ and the **Borel construction** is the assignment $X\mapsto X_G$; the projection 
 **Theorem.** If the action of $G$ on $X$ is free, then the projection $EG\times X\to X$ is a $G$-homotopy equivalence, so the Borel construction is homotopy equivalent to the orbit space,
 
 $$
-X_G \simeq X/G ,
+\boxed{\;X_G \simeq X/G\;} ,
 $$
 
 and the equivariant cohomology is the cohomology of the quotient; in general the comparison map $X_G\to X/G$ exists and is induced by the projection $EG\to\mathrm{pt}$, and it is an equivalence exactly in the free case.
@@ -75,7 +75,7 @@ so it is a ring homomorphism $\mathrm{End}_G(C_*(X))\to\mathrm{End}(C_*(X_G))$; 
 **Theorem.** The operator algebra of the homotopy quotient contains operators that do not come from the Borel construction of any operator on $X$: the multiplications by the classes of the base, in particular the multiplication by the generator $x \in H^1(BG;k)$, act on $H_G^*(X;k)$ and enlarge the algebra. Hence the image of the fixed part of the operator algebra of $X$ is a proper subalgebra of the operator algebra of the homotopy quotient in general, and the equivariant operators are the image of the fixed part together with the base multiplications:
 
 $$
-\mathrm{End}_G(H^*(X;k)) \ \text{maps into}\ \mathrm{End}(H_G^*(X;k)), \qquad x\smile(-) \ \text{acts on}\ H_G^*(X;k) ,
+\boxed{\;\mathrm{End}_G(H^*(X;k)) \ \text{maps into}\ \mathrm{End}(H_G^*(X;k)), \qquad x\smile(-) \ \text{acts on}\ H_G^*(X;k)\;} ,
 $$
 
 with the base acting through the projection $X_G\to BG$ and the module structure of *Equivariant Cohomology*.
@@ -133,7 +133,7 @@ up to the natural quasi-isomorphism; the Borel construction of an operator $T$ i
 **Theorem.** The Serre spectral sequence of the Borel fibration has the $E^2$ page
 
 $$
-E_2^{n,m} = H^p\bigl(G;H^q(X;k)\bigr) ,
+\boxed{\;E_2^{n,m} = H^p\bigl(G;H^q(X;k)\bigr)\;} ,
 $$
 
 the group cohomology with coefficients in the cohomology of the fibre, and it converges to $H_G^*(X;k)$; for the trivial action and the field of coefficients it reduces to the tensor product $H^p(BG;k)\otimes H^q(X;k)$ under the Künneth hypothesis, and the Borel construction of an operator acts on the pages as the induced map on the coefficient modules. The spectral sequence is that of *The Leray–Serre Spectral Sequence*, with the local system of the fibre cohomology along the base.

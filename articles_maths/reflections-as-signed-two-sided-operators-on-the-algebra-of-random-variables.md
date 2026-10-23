@@ -23,7 +23,7 @@ where $u^{-1}$ is the pointwise reciprocal of the unit.
 
 **Theorem.** For every unit $u$,
 $$
-r_u=\alpha .
+\boxed{\;r_u=\alpha\;} .
 $$
 Consequently the reflection is independent of the unit, the map $u\mapsto r_u$ is constant on $\mathcal{A}^\times$, and the inner conjugation
 $$
@@ -37,7 +37,7 @@ is the identity for every unit: the group of inner automorphisms of the graded a
 
 **Theorem.** The operator $\alpha$ is an involutive, unitary, self-adjoint algebra automorphism of $\mathcal{A}$:
 $$
-\alpha^2=\mathrm{id},\qquad \alpha(xy)=\alpha(x)\alpha(y),\qquad \alpha(1)=1,\qquad \alpha^*=\alpha,\qquad \alpha^*\alpha=\alpha\alpha^*=\mathrm{id},
+\boxed{\;\alpha^2=\mathrm{id},\qquad \alpha(xy)=\alpha(x)\alpha(y),\qquad \alpha(1)=1,\qquad \alpha^*=\alpha,\qquad \alpha^*\alpha=\alpha\alpha^*=\mathrm{id}\;},
 $$
 it commutes with the conjugation, $\alpha\sigma=\sigma\alpha$, it reverses the grading, $\alpha(\mathcal{A}_{\bar i})=\mathcal{A}_{\bar{1-i}}$, and it is self-adjoint for the form of the category. Its fixed algebra is the even part, $\mathcal{A}^\alpha=\mathcal{A}_{\bar0}$, and its $(-1)$-eigenspace is the odd part, $\mathcal{A}_{\bar1}$.
 
@@ -49,7 +49,7 @@ it commutes with the conjugation, $\alpha\sigma=\sigma\alpha$, it reverses the g
 
 **Theorem.** Write $S^\alpha_c=L_c\alpha$, the signed left multiplication by $c$, so that $L_c\alpha=\alpha L_{\alpha(c)}$. Then $S^\alpha_c$ is an involution if and only if
 $$
-c\,\alpha(c)=1 ,
+\boxed{\;c\,\alpha(c)=1\;} ,
 $$
 and the involutive signed sandwiches are exactly the maps $S^\alpha_c$ with $c$ a unit of $\mathcal{A}$ satisfying this equation. Each such $S^\alpha_c$ is unitary exactly when also $|c|=1$.
 

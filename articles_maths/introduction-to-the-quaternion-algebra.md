@@ -23,12 +23,14 @@ The resulting algebra is written $\mathbb{H}$ and called the **quaternion algebr
 **Proposition (the coordinate rule).** The product is well defined by the rules above and is given on coordinates by
 
 $$
+\boxed{\;
 \begin{aligned}
 (\tilde q_1\tilde q_2)_t &= q_{1t}q_{2t}-q_{1x}q_{2x}-q_{1y}q_{2y}-q_{1z}q_{2z},\\
 (\tilde q_1\tilde q_2)_x &= q_{1t}q_{2x}+q_{1x}q_{2t}+q_{1y}q_{2z}-q_{1z}q_{2y},\\
 (\tilde q_1\tilde q_2)_y &= q_{1t}q_{2y}-q_{1x}q_{2z}+q_{1y}q_{2t}+q_{1z}q_{2x},\\
 (\tilde q_1\tilde q_2)_z &= q_{1t}q_{2z}+q_{1x}q_{2y}-q_{1y}q_{2x}+q_{1z}q_{2t}.
 \end{aligned}
+\;}
 $$
 
 *Proof.* The rules determine the product of every pair of basis elements and hence, by bilinearity, the product of every pair of elements; this is the well-definedness. Expanding $\bigl(\sum_\mu q_{1\mu} e_\mu\bigr)\bigl(\sum_\nu q_{2\nu} e_\nu\bigr)$ with the basis rules and collecting the four coordinates gives the displayed formulas.
@@ -101,7 +103,9 @@ The classes of element of $\mathbb{H}$ are therefore as small as an associative 
 **Theorem (the presentation).** The algebra $\mathbb{H}$ is presented by two generators and the relations
 
 $$
-\mathbb{H}\;\cong\;\bigl\langle\, \vec e_x,\vec e_y\;\bigm|\; \vec e_x^2=\vec e_y^2=(\vec e_x \vec e_y)^2=-e_t\,\bigr\rangle,
+\boxed{\;
+\mathbb{H}\;\cong\;\bigl\langle\, \vec e_x,\vec e_y\;\bigm|\; \vec e_x^2=\vec e_y^2=(\vec e_x \vec e_y)^2=-e_t\,\bigr\rangle
+\;},
 $$
 
 the relations meaning $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x \vec e_y=-\vec e_y \vec e_x$.

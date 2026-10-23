@@ -41,7 +41,7 @@ and the **injective tensor product** $A \widehat{\otimes}_\varepsilon B$ is the 
 **Proposition (the canonical map).** The identity on $A \otimes B$ extends to a continuous linear map
 
 $$
-A \widehat{\otimes}_\pi B \longrightarrow A \widehat{\otimes}_\varepsilon B ,
+\boxed{\;A \widehat{\otimes}_\pi B \longrightarrow A \widehat{\otimes}_\varepsilon B\;} ,
 $$
 
 which is a topological isomorphism for all $B$ if and only if $A$ is nuclear; in finite dimension it is always an isomorphism.
@@ -63,7 +63,7 @@ $$
 of *Tensor Products of Sesqualgebras*, §*The Product on the Tensor Product*, extended by additivity, is a continuous product on $A \otimes B$ for the projective topology, additive in each variable, $\mathbb{K}$-linear in the first and $\varsigma$-semilinear in the second, and submultiplicative:
 
 $$
-\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi .
+\boxed{\;\lVert uv\rVert_\pi \leq \lVert u\rVert_\pi\lVert v\rVert_\pi\;} .
 $$
 
 *Proof.* Let $u = \sum_k a_k \otimes b_k$ and $v = \sum_l c_l \otimes d_l$ be representations. Then
@@ -89,7 +89,7 @@ by the submultiplicativity of the factor norms and the triangle inequality for t
 **Theorem (the tensor involution is continuous).** Let $A$ and $B$ be normed sesqualgebras with isometric involutions $*$. Then the tensor involution
 
 $$
-\natural(a \otimes b) = a^{*} \otimes b^{*}
+\boxed{\;\natural(a \otimes b) = a^{*} \otimes b^{*}\;}
 $$
 
 of *Tensor Products of Sesqualgebras*, §*The Tensor Involution*, extended by additivity, is a continuous $\varsigma$-semilinear isometry of $A \otimes B$ for the projective topology, $\lVert\natural(u)\rVert_\pi = \lVert u\rVert_\pi$, and it extends uniquely to an isometric $\varsigma$-semilinear involution of the projective completion; for the injective norm the same holds when the twist is trivial, $\varsigma = \mathrm{id}$.

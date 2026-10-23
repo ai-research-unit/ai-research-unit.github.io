@@ -80,7 +80,7 @@ This monotonicity in the structure is the organising principle of the article.
 Dropping invertibility gives a larger object. An **endomorphism** of a structure $X$ is a map $X \to X$ preserving the data, and the endomorphisms form a monoid under composition, written $\operatorname{End}(X)$: composition is associative and $\mathrm{id}_X$ is a two-sided identity, but a general endomorphism need not be invertible. The invertible elements of a monoid form a group, and
 
 $$
-\operatorname{Aut}(X) = \operatorname{End}(X)^\times.
+\boxed{\;\operatorname{Aut}(X) = \operatorname{End}(X)^\times\;}.
 $$
 
 Invertibility is not automatic for a self-map of a set: for a finite set a self-map is injective exactly when it is surjective, whereas for an infinite set injectivity is strictly weaker, the map $x \mapsto x + 1$ of $\mathbb{N}$ being injective and not surjective, hence an endomorphism of $\mathbb{N}$ that is not an automorphism.
@@ -94,7 +94,7 @@ The abstract group and the concrete transformation group are related by the noti
 **Definition.** Let $G$ be a group and $X$ a set. A **(left) action** of $G$ on $X$ is a function
 
 $$
-G \times X \to X, \qquad (a, x) \mapsto a \cdot x,
+\boxed{\;G \times X \to X, \qquad (a, x) \mapsto a \cdot x\;},
 $$
 
 such that $e \cdot x = x$ and $(a b) \cdot x = a \cdot (b \cdot x)$ for all $a, b \in G$ and all $x \in X$. One says that $G$ **acts on** $X$, or that $X$ is a $G$-set.

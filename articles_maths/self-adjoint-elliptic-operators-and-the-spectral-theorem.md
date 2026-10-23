@@ -39,7 +39,7 @@ $$
 the eigenvalues real, of finite multiplicity and with $|\lambda_n|\to\infty$; the operator has the spectral representation
 
 $$
-Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2<\infty\Bigr\} ,
+\boxed{\;Lf = \sum_{n\ge1}\lambda_n\,\langle f,\varphi_n\rangle\,\varphi_n , \qquad \mathrm{dom}\,L = \Bigl\{f\in L^2(\Omega) : \sum_n\lambda_n^2|\langle f,\varphi_n\rangle|^2<\infty\Bigr\}\;} ,
 $$
 
 and for every bounded Borel function $g$ on the real line the functional calculus is
@@ -55,7 +55,7 @@ with the spectral measure $E(B)=\sum_{\lambda_n\in B}P_n$, where $P_n$ is the or
 **Corollary (the expansion and the Green function).** For $f\in L^2(\Omega)$ the series $f=\sum_n\langle f,\varphi_n\rangle\varphi_n$ converges in $L^2$, and the solution of $Lu=f$ in the domain is $u=\sum_n\lambda_n^{-1}\langle f,\varphi_n\rangle\varphi_n$; the Green function of the problem is
 
 $$
-G(x,y) = \sum_{n\ge1}\frac{\varphi_n(x)\overline{\varphi_n(y)}}{\lambda_n} ,
+\boxed{\;G(x,y) = \sum_{n\ge1}\frac{\varphi_n(x)\overline{\varphi_n(y)}}{\lambda_n}\;} ,
 $$
 
 the series converging in $L^2(\Omega\times\Omega)$ and, when the eigenfunctions are continuous, absolutely and uniformly away from the diagonal.
@@ -73,7 +73,7 @@ the series converging in $L^2(\Omega\times\Omega)$ and, when the eigenfunctions 
 **Theorem (Weyl's law for the Laplacian).** Let $\Omega\subseteq\mathbb{R}^n$ be a bounded open set with smooth boundary, and let $N(\lambda)$ be the counting function of the eigenvalues of $-\Delta$ under the Dirichlet condition, ordered increasingly and counted with multiplicity. Then
 
 $$
-N(\lambda) \sim \frac{\omega_n}{(2\pi)^n}\,|\Omega|\,\lambda^{n/2} \qquad (\lambda\to\infty) ,
+\boxed{\;N(\lambda) \sim \frac{\omega_n}{(2\pi)^n}\,|\Omega|\,\lambda^{n/2} \qquad (\lambda\to\infty)\;} ,
 $$
 
 where $\omega_n$ is the volume of the unit ball in $\mathbb{R}^n$ and $|\Omega|$ is the volume of the domain; equivalently the eigenvalues grow as

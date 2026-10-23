@@ -31,7 +31,7 @@ and the **unsigned sandwich** is $T_{A,B}(T)=ATB$.
 **Proposition (boundedness and norm).** $S_{A,B}$ is a bounded operator on $B(H)$ with
 
 $$
-\|S_{A,B}\|=\|A\|\,\|B\| ,
+\boxed{\;\|S_{A,B}\|=\|A\|\,\|B\|\;} ,
 $$
 
 the norm being computed with respect to the operator norm; the same formula holds for the Hilbert–Schmidt norm on $S_2(H)$, where $\|S_{A,B}\|_{HS}=\|A\|\,\|B\|$.
@@ -41,7 +41,7 @@ the norm being computed with respect to the operator norm; the same formula hold
 **Proposition (relation to the unsigned sandwich and the coset).** Every signed sandwich is the unsigned sandwich composed with the involution,
 
 $$
-S_{A,B}=T_{A,B}\circ\alpha ,
+\boxed{\;S_{A,B}=T_{A,B}\circ\alpha\;} ,
 $$
 
 so the signed sandwiches form the coset $T(B(H),B(H))\,\alpha$ of the unsigned ones inside $B(B(H))$, and the signed sandwich is the unsigned sandwich with the argument twisted. In particular $S_{A,B}=T_{A,B}$ for all $A,B$ exactly when $\alpha=\mathrm{id}$, that is when $H^1=0$.
@@ -53,10 +53,10 @@ so the signed sandwiches form the coset $T(B(H),B(H))\,\alpha$ of the unsigned o
 **Theorem (products of two-sided operators).** For $A,B,C,D\in B(H)$,
 
 $$
-T_{A,B}\,T_{C,D}=T_{AC,\,DB},\qquad
+\boxed{\;T_{A,B}\,T_{C,D}=T_{AC,\,DB},\qquad
 T_{A,B}\,S_{C,D}=S_{AC,\,DB},\qquad
 S_{A,B}\,T_{C,D}=S_{A\alpha(C),\,\alpha(D)B},\qquad
-S_{A,B}\,S_{C,D}=T_{A\alpha(C),\,\alpha(D)B}.
+S_{A,B}\,S_{C,D}=T_{A\alpha(C),\,\alpha(D)B}\;}.
 $$
 
 So the product of an even number of signed sandwiches is unsigned, the product of an odd number is signed, and the sign rule is the involution acting on the inner factors.

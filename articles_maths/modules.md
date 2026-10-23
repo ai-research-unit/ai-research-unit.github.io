@@ -15,7 +15,7 @@ Throughout, $R$ is an associative ring with identity $1 \neq 0$ and modules are 
 A **left $R$-module** is an abelian group $(M,+)$ with a scalar multiplication $R \times M \to M$, $(r,m) \mapsto rm$, such that for all $r,s \in R$ and $m,n \in M$:
 
 $$
-r(m+n)=rm+rn, \qquad (r+s)m=rm+sm, \qquad (rs)m=r(sm), \qquad 1m=m.
+\boxed{\;r(m+n)=rm+rn, \qquad (r+s)m=rm+sm, \qquad (rs)m=r(sm), \qquad 1m=m\;}.
 $$
 
 These are axioms (M1)–(M4) of *Rings* §14, now for a possibly noncommutative $R$. A **right $R$-module** uses $M \times R \to M$, $(m,r) \mapsto mr$, with $(m+n)r=mr+nr$, $m(r+s)=mr+ms$, $m(rs)=(mr)s$, $m1=m$. Over a commutative ring a left module becomes a right module by $mr := rm$, so the two notions coincide. The **zero module** $\{0\}$ has one element.
@@ -175,7 +175,7 @@ Over a principal ideal domain, $\operatorname{Ann}(m)=(a)$ for some $a \in R$ an
 **Structure theorem.** Let $R$ be a principal ideal domain and let $M$ be a finitely generated $R$-module. Then
 
 $$
-M \cong R^r \oplus R/(d_1) \oplus \cdots \oplus R/(d_k)
+\boxed{\;M \cong R^r \oplus R/(d_1) \oplus \cdots \oplus R/(d_k)\;}
 $$
 
 for some $r \geq 0$ and nonzero non-units $d_1 \mid d_2 \mid \cdots \mid d_k$ in $R$. The **free rank** $r$ and the **invariant factors** $d_i$ (up to multiplication by units) are uniquely determined by $M$. Thus $M$ is the direct sum of a free module and a torsion module, and the torsion part is a finite direct sum of cyclic torsion modules.

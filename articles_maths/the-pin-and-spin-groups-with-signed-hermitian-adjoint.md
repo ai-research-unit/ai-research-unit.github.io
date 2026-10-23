@@ -31,9 +31,9 @@ The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact seq
 **Proposition (the Hermitian Clifford group is a group).** $\Gamma_{\dagger}=\{x\in\Gamma(V,\mathfrak{Q}):\sigma(N(x))^{2}=1\}$ is a subgroup of $\Gamma(V,\mathfrak{Q})$, and it is the set of parameters for which the Hermitian sandwiches restrict to isometries of $V$,
 
 $$
-\Theta^{\alpha}_x(V)\subseteq V\iff x\in\Gamma(V,\mathfrak{Q}),
+\boxed{\;\Theta^{\alpha}_x(V)\subseteq V\iff x\in\Gamma(V,\mathfrak{Q}),
 \qquad
-\Theta^{\alpha}_x\bigr|_{V}\in O(V,\mathfrak{Q})\iff x\in\Gamma_{\dagger}.
+\Theta^{\alpha}_x\bigr|_{V}\in O(V,\mathfrak{Q})\iff x\in\Gamma_{\dagger}\;}.
 $$
 
 *Proof.* $N$ is multiplicative on $\Gamma$ and $\sigma$ is a ring homomorphism, so $\sigma(N(xy))=\sigma(N(x))\sigma(N(y))$ and the condition $\sigma(N)^{2}=1$ is closed under multiplication and inversion; it holds at $1$. The two equivalences are the action proposition of the companion article, where the operator acts on $V$ as $\varepsilon_x\sigma(N(x))\chi(x)$ with $\chi(x)\in O(V,\mathfrak{Q})$, so it is an isometry exactly when the scalar has square $1$.
@@ -69,9 +69,9 @@ On a vector of square $-1$ the signed Hermitian sandwich **is** the reflection, 
 **Theorem (the double cover, in the Hermitian formulation).** Suppose that $-1$ is not a square in $F$ and that every element of $F^{\times}$ differs from $\pm1$ by a square; both hold over $\mathbb{R}$. Let the involution be trivial and the form definite in the corpus's convention, $q$ negative definite, so that every element of $\mathrm{Pin}(V,\mathfrak{Q})$ lies on the slice and $\Gamma_{\dagger}=U\cap\Gamma=\mathrm{Pin}(V,\mathfrak{Q})$. Then
 
 $$
-1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Pin}(V,\mathfrak{Q})\xrightarrow{\ \Theta^{\alpha}\ } O(V,\mathfrak{Q})\longrightarrow 1,
+\boxed{\;1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Pin}(V,\mathfrak{Q})\xrightarrow{\ \Theta^{\alpha}\ } O(V,\mathfrak{Q})\longrightarrow 1,
 \qquad
-1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Spin}(V,\mathfrak{Q})\xrightarrow{\ \Theta^{\alpha}\ } SO(V,\mathfrak{Q})\longrightarrow 1
+1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Spin}(V,\mathfrak{Q})\xrightarrow{\ \Theta^{\alpha}\ } SO(V,\mathfrak{Q})\longrightarrow 1\;}
 $$
 
 are exact, with the same two-to-one identification $x\sim-x$ as in the inverse formulation.
@@ -89,7 +89,7 @@ are exact, with the same two-to-one identification $x\sim-x$ as in the inverse f
 **Corollary (the Hermitian reading).** With $\sigma=\mathrm{id}$, every element of $O(V,\mathfrak{Q})$ is a product of signed Hermitian sandwiches of unit vectors,
 
 $$
-\gamma=\Theta^{\alpha}_{u_1}\circ\cdots\circ\Theta^{\alpha}_{u_k},\qquad \mathfrak{Q}(u_i)=-1,
+\boxed{\;\gamma=\Theta^{\alpha}_{u_1}\circ\cdots\circ\Theta^{\alpha}_{u_k},\qquad \mathfrak{Q}(u_i)=-1\;},
 $$
 
 with $k$ even exactly when $\gamma\in SO(V,\mathfrak{Q})$; the word length $k$ is the reflection length of $\gamma$ and the algebraic length of the corresponding element of $\mathrm{Pin}$ in the generating set of unit vectors. The reflections are the Hermitian sandwiches of the odd elements, and the parity of the number of factors is the determinant.

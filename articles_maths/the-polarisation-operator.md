@@ -41,7 +41,7 @@ Thus the product is recovered from the square, and this is why the axioms of a J
 Polarising the cube $g(x) = x^3 = x\bullet(x\bullet x)$ in the two extra variables $y$ and $z$ gives the **Jordan triple product**
 
 $$
-\{x, y, z\} = (x\bullet y)\bullet z + (z\bullet y)\bullet x - (x\bullet z)\bullet y ,
+\boxed{\;\{x, y, z\} = (x\bullet y)\bullet z + (z\bullet y)\bullet x - (x\bullet z)\bullet y\;} ,
 $$
 
 symmetric in its outer two variables, which is the ternary product of *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System*. In a special Jordan algebra $J = A^+$ with the halved product it is $\{x,y,z\} = \tfrac12(xyz + zyx)$, the symmetrisation of the associative triple product, and the identity of the two expressions is the computation of the quadratic representation below.
@@ -62,7 +62,7 @@ is defined whenever $n!$ is invertible in $R$. Its symmetry is immediate: the ri
 **Proposition (the difference reading).** Let $\nabla_h f(x) = f(x+h) - f(x)$ be the difference operator in the direction $h$. Then
 
 $$
-(\Pi f)(x_1,\dots,x_n) = \frac1{n!}\,\bigl(\nabla_{x_1}\cdots\nabla_{x_n} f\bigr)(0) .
+\boxed{\;(\Pi f)(x_1,\dots,x_n) = \frac1{n!}\,\bigl(\nabla_{x_1}\cdots\nabla_{x_n} f\bigr)(0)\;} .
 $$
 
 *Proof.* Expanding the product of differences at $0$ gives $\sum_{S}(-1)^{n-|S|}f(\sum_{i\in S}x_i)$, with $S$ the set of the $x_i$'s that have been added, since each factor $\nabla_{x_i}$ either adds $x_i$ or does not, with the sign $+$ for not adding and $-$ after; the number of factors not added is $n-|S|$. Division by $n!$ gives the statement.
@@ -82,7 +82,7 @@ so that $\Delta(x\bullet -)^{\ }$ is the square in degree two. The diagonal is $
 **Theorem.** For every symmetric $n$-linear $F$,
 
 $$
-\Pi \Delta F = F ,
+\boxed{\;\Pi \Delta F = F\;} ,
 $$
 
 and for every homogeneous map $f$ of degree $n$ one has $\Delta\Pi f = f$ when $n!$ is invertible in $R$. Hence, in that case, $\Delta$ and $\Pi$ are mutually inverse isomorphisms

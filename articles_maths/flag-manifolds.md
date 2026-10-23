@@ -44,7 +44,7 @@ $$
 is the group $P$ of **block upper triangular** matrices, with blocks of sizes $d_1, d_2 - d_1, \ldots, d_k - d_{k-1}, n - d_k$; for the complete flag it is the group $B$ of invertible upper triangular matrices, the **Borel subgroup**. Hence
 
 $$
-F\ell(d_1, \ldots, d_k; \mathbb{K}^n) = GL(n, \mathbb{K})/P , \qquad F\ell_n(\mathbb{K}) = GL(n, \mathbb{K})/B ,
+\boxed{\;F\ell(d_1, \ldots, d_k; \mathbb{K}^n) = GL(n, \mathbb{K})/P , \qquad F\ell_n(\mathbb{K}) = GL(n, \mathbb{K})/B\;} ,
 $$
 
 and, replacing the general linear group by its maximal compact subgroup, $GL(n, \mathbb{K})$ by $\mathrm{U}(n)$ over $\mathbb{C}$ and by $O(n)$ over $\mathbb{R}$,
@@ -114,7 +114,7 @@ where $S_n$ is the **symmetric group** (the Weyl group of $GL(n)$) and $\sigma_w
 **Theorem (Bruhat).** The Schubert cell $C_w$ is isomorphic to an affine space of dimension $\ell(w)$, the number of inversions of the permutation $w$; consequently
 
 $$
-F\ell_n(\mathbb{C}) = \bigsqcup_{w \in S_n} \mathbb{C}^{\ell(w)}, \qquad \chi(F\ell_n(\mathbb{C})) = \sum_{w\in S_n}(-1)^{2\ell(w)} = n! ,
+\boxed{\;F\ell_n(\mathbb{C}) = \bigsqcup_{w \in S_n} \mathbb{C}^{\ell(w)}, \qquad \chi(F\ell_n(\mathbb{C})) = \sum_{w\in S_n}(-1)^{2\ell(w)} = n!\;} ,
 $$
 
 the cells all having even real dimension $2\ell(w)$.
@@ -134,7 +134,7 @@ the cells all having even real dimension $2\ell(w)$.
 **Theorem (Borel presentation).** The integral cohomology ring of the complete flag manifold is
 
 $$
-H^*(F\ell_n(\mathbb{C});\mathbb{Z}) \cong \mathbb{Z}[x_1, \ldots, x_n]\big/\bigl(e_1(x), \ldots, e_n(x)\bigr),
+\boxed{\;H^*(F\ell_n(\mathbb{C});\mathbb{Z}) \cong \mathbb{Z}[x_1, \ldots, x_n]\big/\bigl(e_1(x), \ldots, e_n(x)\bigr)\;},
 $$
 
 where $e_i$ is the $i$-th elementary symmetric polynomial and $x_i$ is the first Chern class of the tautological quotient line $\mathcal{L}_i$; the ring is free of rank $n!$ as a $\mathbb{Z}$-module, with basis the **Schubert classes** $[X_w]$ for $w \in S_n$.

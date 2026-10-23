@@ -155,8 +155,7 @@ where $C \subseteq M^n$ is a cell and $f, g : C \to M$ are definable continuous 
 
 **Theorem.** The dimension is the unique function from definable sets to $\{-\infty, 0, 1, 2, \dots\}$ satisfying
 
-$$
-\dim A = 0 \iff A \text{ finite}, \qquad \dim(A \cup B) = \max(\dim A, \dim B), \qquad \dim(A \times B) = \dim A + \dim B,
+$$ \boxed{\;\dim A = 0 \iff A \text{ finite}, \qquad \dim(A \cup B) = \max(\dim A, \dim B), \qquad \dim(A \times B) = \dim A + \dim B\;},
 $$
 
 and for every definable function $f : A \to M^n$, $\dim f(A) \leq \dim A$, with equality holding if $f$ is injective.

@@ -15,7 +15,7 @@ The article treats the multiplications and their norms, the embedding of the alg
 **Theorem (the norm of a multiplication).** Let the norm be submultiplicative with $\lVert1\rVert=1$. Then for every $x$
 
 $$
-\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert ,
+\boxed{\;\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert\;} ,
 $$
 
 and the maps $x\mapsto L_{x}$ and $x\mapsto R_{x}$ are **isometric** algebra anti-isomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$ onto their images; their images are closed subalgebras of the bounded operators when the algebra is complete.

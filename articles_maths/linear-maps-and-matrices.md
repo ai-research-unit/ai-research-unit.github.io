@@ -32,7 +32,7 @@ Composition of linear maps is linear, so the endomorphisms $\operatorname{End}_F
 **Theorem (rank–nullity).** For every $T:V \to W$ with $V$ finite-dimensional,
 
 $$
-\dim_F V=\dim_F\ker T+\dim_F\operatorname{im}T, \qquad \text{that is} \qquad \dim_F V=\operatorname{null}T+\operatorname{rk}T .
+\boxed{\;\dim_F V=\dim_F\ker T+\dim_F\operatorname{im}T, \qquad \text{that is} \qquad \dim_F V=\operatorname{null}T+\operatorname{rk}T\;} .
 $$
 
 *Proof.* Let $u_1,\dots,u_k$ be a basis of $\ker T$. By the basis extension theorem it extends to a basis $u_1,\dots,u_k,v_1,\dots,v_r$ of $V$. The images $T(v_1),\dots,T(v_r)$ span $\operatorname{im}T$, because any $T(v)$ with $v=\sum a_i u_i+\sum b_j v_j$ equals $\sum b_j T(v_j)$. They are independent: if $\sum b_j T(v_j)=0$ then $T(\sum b_j v_j)=0$, so $\sum b_j v_j \in \ker T$ and hence is a combination of the $u_i$; independence of the full basis forces all $b_j=0$. Thus $T(v_1),\dots,T(v_r)$ is a basis of $\operatorname{im}T$, so $\operatorname{rk}T=r$ and $k+r=\dim_F V$.
@@ -128,7 +128,7 @@ with exactly $r$ ones on the diagonal, where $r=\operatorname{rk}T$. This normal
 *Proof.* Let $T:F^n \to F^m$ be the linear map with matrix $A$ in the standard bases, so that $\operatorname{im}T$ is the column space and $\operatorname{rk}A=\operatorname{rk}T$. The transpose $A^{\mathsf{T}}$ is the matrix of the linear map $T^*:F^m \to F^n$ given by $T^*(y)=A^{\mathsf{T}}y$, whose image is exactly the row space of $A$. Hence row rank $=\operatorname{rk}T^*$. Now $\ker T^*=(\operatorname{im}T)^{\perp}=\{y : y^{\mathsf{T}}Ax=0 \text{ for all } x \in F^n\}$, which has dimension $m-\dim\operatorname{im}T=m-\operatorname{rk}A$; applying rank–nullity to $T^*:F^m \to F^n$ gives
 
 $$
-\operatorname{rk}T^*=m-\dim\ker T^*=m-(m-\operatorname{rk}A)=\operatorname{rk}A .
+\boxed{\;\operatorname{rk}T^*=m-\dim\ker T^*=m-(m-\operatorname{rk}A)=\operatorname{rk}A\;} .
 $$
 
 Because the two ranks agree, one writes $\operatorname{rk}A$ without qualification. The rank is the number of pivots in any row-echelon form of $A$, equivalently the size of the largest invertible square submatrix — the last equivalence is proved next.
@@ -192,7 +192,7 @@ A system $Ax=b$ with $A$ an $m \times n$ matrix over $F$ asks for the $x \in F^n
 **Theorem (rank criterion).** The system $Ax=b$ is consistent if and only if
 
 $$
-\operatorname{rk}A=\operatorname{rk}[A \mid b],
+\boxed{\;\operatorname{rk}A=\operatorname{rk}[A \mid b]\;},
 $$
 
 where $[A\mid b]$ is the augmented matrix.

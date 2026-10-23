@@ -21,7 +21,7 @@ The operator $D_m$ retains the multiples of $m$; the operator $S_m$ reads the co
 
 **Theorem.** For all $m,k\ge1$,
 $$
-S_mS_k=S_{mk},\qquad D_mD_k=D_{mk},\qquad S_mD_m=\mathrm{id},\qquad D_mS_m=P_m,
+\boxed{\;S_mS_k=S_{mk},\qquad D_mD_k=D_{mk},\qquad S_mD_m=\mathrm{id},\qquad D_mS_m=P_m\;},
 $$
 where $P_m$ is the orthogonal projection onto the subspace of functions supported on the multiples of $m$. In particular $D_m$ is injective with left inverse $S_m$, and $S_m$ has kernel the functions supported on the nonmultiples of $m$.
 
@@ -37,7 +37,7 @@ where $P_m$ is the orthogonal projection onto the subspace of functions supporte
 
 **Theorem.** On the Banach algebra $\mathcal{A}(\sigma)$ with the norm $\|\cdot\|_\sigma$,
 $$
-\|D_m\|_\sigma=m^{-\sigma},\qquad \|S_m\|_\sigma=m^{\sigma}.
+\boxed{\;\|D_m\|_\sigma=m^{-\sigma},\qquad \|S_m\|_\sigma=m^{\sigma}\;}.
 $$
 On the Hilbert space $\mathcal{H}=\ell^2$ the section $D_m$ has operator norm $1$ and is an isometry, and $S_m$ is a co-isometry with $S_mS_m^*=\mathrm{id}$ and $S_m^*S_m=P_m$.
 
@@ -57,7 +57,7 @@ On the Hilbert space $\mathcal{H}=\ell^2$ the section $D_m$ has operator norm $1
 
 **Theorem.** For every $f$ and every $m$,
 $$
-L(D_mf,s)=m^{-s}L(f,s),\qquad L(S_mf,s)=m^{s}\sum_{\substack{n\ge1\\ m\mid n}}f(n)n^{-s}.
+\boxed{\;L(D_mf,s)=m^{-s}L(f,s),\qquad L(S_mf,s)=m^{s}\sum_{\substack{n\ge1\\ m\mid n}}f(n)n^{-s}\;}.
 $$
 The first identity is an identity of Dirichlet series in their common half-plane; the second exhibits $L(S_mf,\cdot)$ as $m^{s}$ times the $m$-divisible section of $L(f,\cdot)$.
 

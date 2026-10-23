@@ -20,7 +20,7 @@ it restricts to $\sigma$ on the constants and sends $x$ to $f$.
 **Theorem.** The map $(\,)^{\sigma,f}$ is a ring homomorphism for every $f$, because $R[x]$ is commutative, and it is an involution if and only if
 
 $$
-\sigma^2 = \mathrm{id}, \qquad f(f(x)) = x, \qquad \text{and the coefficients of } f \text{ are twisted compatibly with } \sigma .
+\boxed{\;\sigma^2 = \mathrm{id}, \qquad f(f(x)) = x, \qquad \text{and the coefficients of } f \text{ are twisted compatibly with } \sigma\;} .
 $$
 
 The involution is the identity on $R[x]$ exactly when $\sigma = \mathrm{id}$ and $f = x$.
@@ -50,13 +50,13 @@ Conversely every pair $(a,b)$ with these two conditions and $\sigma^2 = \mathrm{
 **Theorem.** The involution $x \mapsto -x$ of $R[x]$ has fixed subring
 
 $$
-R[x]^{+} = R[x^2] = \{g(x^2) : g \in R[x]\},
+\boxed{\;R[x]^{+} = R[x^2] = \{g(x^2) : g \in R[x]\}\;},
 $$
 
 the polynomials in $x^2$, and it induces the $\mathbb{Z}/2$-grading
 
 $$
-R[x] = R[x^2] \oplus x\,R[x^2],
+\boxed{\;R[x] = R[x^2] \oplus x\,R[x^2]\;},
 $$
 
 with even part $R[x^2]$ and odd part $xR[x^2]$. The symmetric part is the even part and the skew part is the odd part.

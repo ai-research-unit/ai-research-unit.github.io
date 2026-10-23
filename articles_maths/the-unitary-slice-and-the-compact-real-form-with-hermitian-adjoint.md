@@ -38,7 +38,7 @@ so the operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian
 **Theorem (the slice is the isometry group).** $U$ is exactly the group of isometries of the Hermitian form $h_{\dagger}(x,y) = x^{\dagger}y$:
 
 $$
-\mathrm{Isom}(h_{\dagger}) = U .
+\boxed{\;\mathrm{Isom}(h_{\dagger}) = U\;} .
 $$
 
 **Proof.** $h_{\dagger}(sx,sy) = (sx)^{\dagger}(sy) = x^{\dagger}s^{\dagger}s\,y$, which equals $h_{\dagger}(x,y) = x^{\dagger}y$ for all $x,y$ exactly when $s^{\dagger}s = 1$, the necessity by $x = y = 1$.
@@ -46,7 +46,7 @@ $$
 **Proposition (the identity involution).** When $\sigma = \mathrm{id}$ the dagger is Clifford conjugation and
 
 $$
-U = \{\, x : N(x) = 1 \,\} = \mathrm{Pin}(V,\mathfrak{Q}), \qquad N(x) = x\,\bar x ,
+\boxed{\;U = \{\, x : N(x) = 1 \,\} = \mathrm{Pin}(V,\mathfrak{Q}), \qquad N(x) = x\,\bar x\;} ,
 $$
 
 so the unitary slice is the Pin group of the quadratic space, and in particular is the double cover of the orthogonal group in the definite real case.
@@ -60,7 +60,7 @@ so the unitary slice is the Pin group of the quadratic space, and in particular 
 **Theorem.** With the bracket $[u,v] = uv - vu$, the skew part
 
 $$
-\mathfrak{u} = \mathrm{Skew}(V,\mathfrak{Q}) = \{\, u : u^{\dagger} = -u \,\}
+\boxed{\;\mathfrak{u} = \mathrm{Skew}(V,\mathfrak{Q}) = \{\, u : u^{\dagger} = -u \,\}\;}
 $$
 
 is a Lie algebra, $\mathfrak{u}$ is the Lie algebra of $U$, and the exponential maps it into the slice:

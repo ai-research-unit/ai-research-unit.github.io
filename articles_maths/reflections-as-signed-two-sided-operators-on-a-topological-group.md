@@ -44,7 +44,7 @@ A reflection is thus a continuous involutive automorphism of $G$, that is a topo
 **Theorem (the fixed subgroup is closed).** Let $\rho_a$ be a reflection. Its fixed set
 
 $$
-\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}
+\boxed{\;\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}\;}
 $$
 
 is closed in $G$, it is a subgroup of $G$ containing $e$, it reduces to the centraliser $C_G(a)$ when $\alpha = \mathrm{id}$, and it is a left coset of the fixed subgroup $G^\alpha$ whenever it is nonempty. If $G$ is compact then $\operatorname{Fix}(a)$ is compact, and if $G$ is connected and $\operatorname{Fix}(a)$ is open then $\operatorname{Fix}(a) = G$.
@@ -54,7 +54,7 @@ is closed in $G$, it is a subgroup of $G$ containing $e$, it reduces to the cent
 **Theorem (the carrying elements form a closed set).** Put
 
 $$
-C = \{a \in G : a\,\alpha(a) \in Z(G)\},
+\boxed{\;C = \{a \in G : a\,\alpha(a) \in Z(G)\}\;},
 $$
 
 the set of elements that carry a reflection. Then $C$ is closed in $G$, it is symmetric under $a \mapsto a^{-1}$ and under $a \mapsto \alpha(a)$, and it contains $I(\sigma) = G^\alpha$.
@@ -64,7 +64,7 @@ the set of elements that carry a reflection. Then $C$ is closed in $G$, it is sy
 **Theorem (the carrying elements and the cosets).** Two elements $a, a'$ carry the same reflection if and only if $a' \in aZ(G)$, so the reflections are parametrised by the cosets $aZ(G)$ of the elements $a \in C$, and the map
 
 $$
-G \longrightarrow \operatorname{Homeo}(G), \qquad a \mapsto \rho_a ,
+\boxed{\;G \longrightarrow \operatorname{Homeo}(G), \qquad a \mapsto \rho_a\;} ,
 $$
 
 factors through $G/Z(G)$ as a continuous injection on the carriers.

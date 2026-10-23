@@ -30,7 +30,7 @@ is continuous. The **projective tensor product** $E \widehat{\otimes}_\pi F$ is 
 **Proposition (the projective norm for normed spaces).** Let $E$, $F$ be normed spaces and let $u \in E\otimes F$. Then
 
 $$
-\lVert u\rVert_\pi = \inf\Bigl\{\sum_{k=1}^{n}\lVert x_k\rVert\lVert y_k\rVert : u = \sum_{k=1}^n x_k\otimes y_k\Bigr\} ,
+\boxed{\;\lVert u\rVert_\pi = \inf\Bigl\{\sum_{k=1}^{n}\lVert x_k\rVert\lVert y_k\rVert : u = \sum_{k=1}^n x_k\otimes y_k\Bigr\}\;} ,
 $$
 
 the infimum over all finite representations of $u$; this is a norm on $E \otimes F$ generating the projective topology, and its completion is $E\widehat{\otimes}_\pi F$.
@@ -76,7 +76,7 @@ with the supremum norms; similarly the injective tensor product of the sequence 
 **Theorem (the comparison map).** Let $E$, $F$ be locally convex spaces. Then the identity of $E\otimes F$ extends to a continuous linear map
 
 $$
-E \widehat{\otimes}_\pi F \longrightarrow E \widehat{\otimes}_\varepsilon F ,
+\boxed{\;E \widehat{\otimes}_\pi F \longrightarrow E \widehat{\otimes}_\varepsilon F\;} ,
 $$
 
 which is injective when $E$ and $F$ are Hausdorff, and it is a topological isomorphism for all $F$ if and only if $E$ is nuclear.
@@ -134,7 +134,7 @@ with the two completed tensor topologies agreeing, since $\mathcal{S}$ is nuclea
 **Theorem (Grothendieck's inequality).** There is a universal constant $K_G$, with $1 < K_G < 2$, such that for every $n$, every $m$ and every real matrix $(a_{ij})$,
 
 $$
-\max\Bigl\{\sum_{i,j}a_{ij}\langle s_i, t_j\rangle\Bigr\} \leq K_G \max\Bigl\{\Bigl\lvert\sum_{i,j}a_{ij}s_it_j'\Bigr\rvert\Bigr\} ,
+\boxed{\;\max\Bigl\{\sum_{i,j}a_{ij}\langle s_i, t_j\rangle\Bigr\} \leq K_G \max\Bigl\{\Bigl\lvert\sum_{i,j}a_{ij}s_it_j'\Bigr\rvert\Bigr\}\;} ,
 $$
 
 the first supremum over Hilbert-space vectors $s_i$, $t_j$ of norm at most $1$ and the second over real numbers $s_i$, $t_j'$ of modulus at most $1$.

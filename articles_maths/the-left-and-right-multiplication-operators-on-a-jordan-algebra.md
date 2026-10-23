@@ -30,7 +30,7 @@ Both are $R$-linear in $a$ and in $x$, and both are injective and unital when $J
 **Theorem.** For every $a \in J$,
 
 $$
-L_a = R_a .
+\boxed{\;L_a = R_a\;} .
 $$
 
 *Proof.* For every $x$, $L_a(x) = a \bullet x = x \bullet a = R_a(x)$, by the commutativity axiom of the Jordan product.
@@ -72,7 +72,7 @@ Thus in the associative case the quadratic representation is the **two-sided pro
 **Theorem (fundamental formula).** For all $a, b \in J$,
 
 $$
-U_{U_a b} = U_a U_b U_a .
+\boxed{\;U_{U_a b} = U_a U_b U_a\;} .
 $$
 
 This is proved in *The Jordan Multiplication Operators*; it is quoted here and used below.
@@ -98,7 +98,7 @@ conversely if $U_a$ is invertible then $a$ is invertible.
 **Theorem.** Let $e$ be an idempotent of $J$, $e\bullet e = e$, and let
 
 $$
-J = J_1 \oplus J_{1/2} \oplus J_0
+\boxed{\;J = J_1 \oplus J_{1/2} \oplus J_0\;}
 $$
 
 be the Peirce decomposition of *Jordan Algebras*, with $L_e$ acting as $1$, $\tfrac12$, $0$ on $J_1$, $J_{1/2}$, $J_0$ respectively. Then

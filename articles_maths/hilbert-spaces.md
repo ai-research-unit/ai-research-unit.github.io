@@ -15,7 +15,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $H$ is a Hilbert space
 **Theorem (Cauchy–Schwarz and the norm axioms).** For all $x,y\in H$,
 
 $$
-|\langle x,y\rangle|\le\|x\|\,\|y\| ,
+\boxed{\;|\langle x,y\rangle|\le\|x\|\,\|y\|\;} ,
 $$
 
 with equality exactly when $x,y$ are linearly dependent, and $\|\cdot\|$ is a norm: the triangle inequality is
@@ -51,7 +51,7 @@ and the inner product is then unique and given by the polarisation identity.
 **Theorem (projection).** Let $C\subseteq H$ be a nonempty closed convex set. For every $x\in H$ there is a unique $p\in C$ with $\|x-p\|=d(x,C)$, and if $C=M$ is a closed subspace then $x-p\perp M$ and
 
 $$
-H=M\oplus M^{\perp},\qquad x=p+q,\quad p\in M,\ q\in M^{\perp}.
+\boxed{\;H=M\oplus M^{\perp},\qquad x=p+q,\quad p\in M,\ q\in M^{\perp}\;}.
 $$
 
 *Proof.* A minimising sequence is Cauchy by the parallelogram law applied to $x-c_m$ and $x-c_n$, so completeness gives a limit that is a nearest point, and uniqueness is again the parallelogram law; for a subspace, minimising $t\mapsto\|x-p-tm\|^2$ gives $\operatorname{Re}\langle x-p,m\rangle=0$ and, over $\mathbb{C}$, also $\langle x-p,im\rangle=0$, so $x-p\perp M$.
@@ -87,7 +87,7 @@ equivalently an antiunitary involution. A vector is **real** for $J$ if $Jx=x$; 
 **Theorem (Riesz representation).** For every bounded linear functional $\varphi\in H^*$ there is a unique $y\in H$ with
 
 $$
-\varphi(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\varphi\|=\|y\| .
+\boxed{\;\varphi(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\varphi\|=\|y\|\;} .
 $$
 
 The map $\Phi:H\to H^*$, $\Phi(y)=\langle\cdot,y\rangle$, is a conjugate-linear isometric bijection, and $H$ is reflexive.

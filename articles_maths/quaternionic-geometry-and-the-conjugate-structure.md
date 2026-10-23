@@ -34,7 +34,7 @@ so that the conjugated structure is $\bar J_\mu=\rho(\overline{\vec e_\mu})=-J_\
 **Definition.** Let $(M,\mathcal{Q})$ be an almost quaternionic manifold. The **conjugate structure** is the bundle involution
 
 $$
-\sigma : \mathcal{Q}\longrightarrow\mathcal{Q}, \qquad \sigma(J)=-J ,
+\boxed{\;\sigma : \mathcal{Q}\longrightarrow\mathcal{Q}, \qquad \sigma(J)=-J\;} ,
 $$
 
 together with the conjugate quaternionic structures on the tangent spaces; it is locally the conjugation of the quaternion algebra acting on the local trivialisation $\mathcal{Q}=\mathbb{R}^3\otimes\mathcal{O}$.

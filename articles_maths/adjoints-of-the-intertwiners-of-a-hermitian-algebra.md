@@ -15,13 +15,13 @@ The Hermitian algebra, its involution and its completion are *Hermitian Algebras
 **Definition.** A bounded operator $T : H\to H'$ is an **intertwiner** of the left representations when
 
 $$
-T\,\bar L_x = \bar L'_x\,T \qquad \text{for every } x\in A .
+\boxed{\;T\,\bar L_x = \bar L'_x\,T \qquad \text{for every } x\in A\;} .
 $$
 
 **Theorem (the adjoint of an intertwiner is an intertwiner).** If $T$ is an intertwiner then $T^{*} : H'\to H$ is an intertwiner of the left representations in the reverse direction,
 
 $$
-T^{*}\,\bar L'_x = \bar L_x\,T^{*} \qquad \text{for every } x\in A .
+\boxed{\;T^{*}\,\bar L'_x = \bar L_x\,T^{*} \qquad \text{for every } x\in A\;} .
 $$
 
 **Proof.** Taking adjoints in $T\bar L_x = \bar L'_xT$ gives $\bar L_x^{*}T^{*} = T^{*}\bar L'_x{}^{*}$, which by $\bar L_y^{*} = \bar L_{y^{\dagger}}$ is $\bar L_{x^{\dagger}}T^{*} = T^{*}\bar L'_{x^{\dagger}}$; since the involution is of order two and runs over the algebra, the identity holds with $x$ in place of $x^{\dagger}$.
@@ -33,7 +33,7 @@ $$
 **Proposition (the modular conjugation exchanges the two commutation properties).** For the standard representation, an operator $T$ commutes with all the left multiplications exactly when $\jmath T\jmath$ commutes with all the right multiplications; equivalently
 
 $$
-\{\bar R_x\}' = \jmath\,\{\bar L_x\}'\jmath .
+\boxed{\;\{\bar R_x\}' = \jmath\,\{\bar L_x\}'\jmath\;} .
 $$
 
 **Proof.** $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$ and $\jmath\bar R_x\jmath = \bar L_{x^{\dagger}}$ by *The Adjoint of the Left and the Right Multiplication*. Conjugating $T\bar L_x = \bar L_xT$ by $\jmath$ gives $\jmath T\jmath\,\bar R_{x^{\dagger}} = \bar R_{x^{\dagger}}\jmath T\jmath$, so $\jmath T\jmath$ commutes with every right multiplication; the converse is the same computation applied to $\jmath S\jmath$.

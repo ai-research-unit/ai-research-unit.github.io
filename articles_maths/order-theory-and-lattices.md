@@ -93,7 +93,7 @@ Order-completeness is an internal notion of the order and requires no distance; 
 Thus a lattice is a poset with two binary operations, and the order is recoverable from either operation by
 
 $$
-x \leq y \iff x \vee y = y \iff x \wedge y = x.
+\boxed{\;x \leq y \iff x \vee y = y \iff x \wedge y = x\;}.
 $$
 
 **Example.** The power set $\mathcal{P}(X)$ with $\subseteq$ is a lattice, with $A \vee B = A \cup B$ and $A \wedge B = A \cap B$. This is the lattice of subsets of the next-to-last section.
@@ -250,7 +250,7 @@ The fixed points of a monotone map of a complete lattice are themselves a comple
 **Theorem (Knaster–Tarski).** Let $L$ be a complete lattice and let $f : L \to L$ be monotone. Then the set $\operatorname{Fix}(f)$ of fixed points of $f$, with the order inherited from $L$, is a complete lattice. In particular
 
 $$
-\mu f = \bigwedge \{x \in L : f(x) \leq x\}, \qquad \nu f = \bigvee \{x \in L : x \leq f(x)\},
+\boxed{\;\mu f = \bigwedge \{x \in L : f(x) \leq x\}, \qquad \nu f = \bigvee \{x \in L : x \leq f(x)\}\;},
 $$
 
 are the least and greatest fixed points of $f$.
@@ -278,7 +278,7 @@ A **lattice of sets** is a family $\mathcal{L} \subseteq \mathcal{P}(X)$ closed 
 **Remark.** The chain of inclusions
 
 $$
-\text{lattices} \;\supset\; \text{modular lattices} \;\supset\; \text{distributive lattices} \;\supset\; \text{Boolean lattices}
+\boxed{\;\text{lattices} \;\supset\; \text{modular lattices} \;\supset\; \text{distributive lattices} \;\supset\; \text{Boolean lattices}\;}
 $$
 
 is strict, with witnesses $N_5$ for the first inclusion, $M_3$ for the second, and a three-element chain for the third, that chain being distributive and bounded but not complemented. Each class is closed under the formation of products, the first three are closed under sublattices, and in the Boolean case one requires in addition closure under complement and under $0$ and $1$. The characterising forbidden sublattices are $N_5$ for modularity and $N_5, M_3$ for distributivity.

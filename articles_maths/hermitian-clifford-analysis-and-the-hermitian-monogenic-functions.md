@@ -68,7 +68,7 @@ f_jf_k+f_kf_j = 0 , \qquad f_j^{*}f_k^{*}+f_k^{*}f_j^{*} = 0 ,
 $$
 
 $$
-f_jf_k^{*}+f_k^{*}f_j = \delta_{jk} , \qquad j,k=1,\dots,n .
+\boxed{\;f_jf_k^{*}+f_k^{*}f_j = \delta_{jk} , \qquad j,k=1,\dots,n\;} .
 $$
 
 *Proof.* Each is a direct computation in the relations $e_ae_b+e_be_a=-2\delta_{ab}$, with $i$
@@ -97,15 +97,15 @@ $$
 $D=\sum_{a=1}^{2n}e_a\partial/\partial x_a$ and the two Hermitian operators satisfy
 
 $$
-D = 2\bigl(\partial/\partial\underline z-\partial/\partial\bar z\bigr) ,
+\boxed{\;D = 2\bigl(\partial/\partial\underline z-\partial/\partial\bar z\bigr) ,
 \qquad
-\{\partial/\partial\underline z,\partial/\partial\bar z\} = \tfrac14\,\Delta_{2n} .
+\{\partial/\partial\underline z,\partial/\partial\bar z\} = \tfrac14\,\Delta_{2n}\;} .
 $$
 
 Moreover each operator is isotropic,
 
 $$
-(\partial/\partial\underline z)^2 = 0 , \qquad (\partial/\partial\bar z)^2 = 0 ,
+\boxed{\;(\partial/\partial\underline z)^2 = 0 , \qquad (\partial/\partial\bar z)^2 = 0\;} ,
 $$
 
 so that the pair $(\partial/\partial\underline z,\partial/\partial\bar z)$ is a complex of first-order

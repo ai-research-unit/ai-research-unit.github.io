@@ -79,7 +79,7 @@ the integral converging absolutely in norm; consequently $\|R(\lambda,A)\|\le \f
 2. every $\lambda>0$ belongs to the resolvent set of $A$, and
 
 $$
-\|R(\lambda,A)\| \le \frac1\lambda \qquad (\lambda>0).
+\boxed{\;\|R(\lambda,A)\| \le \frac1\lambda \qquad (\lambda>0)\;}.
 $$
 
 *Proof.* Quoted as standard. For the necessity, the Laplace representation of the resolvent gives $\|R(\lambda,A)\|\le\int_0^\infty \exp(-\lambda t)dt=1/\lambda$ for a contraction semigroup; closedness and density are the properties of the generator above. For the sufficiency, the **Yosida approximation** $A_\lambda = \lambda A R(\lambda,A) = \lambda^2R(\lambda,A)-\lambda I$ is a bounded operator generating the uniformly continuous semigroup $\exp(tA_\lambda)$, and the bound $\|\exp(tA_\lambda)\|\le1$ follows from the resolvent bound; one shows that $\exp(tA_\lambda)x$ converges as $\lambda\to\infty$, uniformly on compact intervals, and defines $T(t)x$ as the limit. The limit is a strongly continuous contraction semigroup whose generator extends $A$, and since the resolvent determines the generator, its generator is $A$.
@@ -186,8 +186,8 @@ The generation theorems construct the semigroup from its generator. The **Lie–
 
 **Theorem (Lie–Trotter).** Let $A$ and $B$ generate strongly continuous contraction semigroups $\{\exp(tA)\}$ and $\{\exp(tB)\}$ on a Banach space. Then the closure of $A+B$ on $D(A)\cap D(B)$ generates a contraction semigroup, and for every $t\ge0$
 $$
-\exp(t\,\overline{A+B})
-=\operatorname*{s-lim}_{n\to\infty}\Big(\exp(\frac{t}{n}A)\,\exp(\frac{t}{n}B)\Big)^{n},
+\boxed{\;\exp(t\,\overline{A+B})
+=\operatorname*{s-lim}_{n\to\infty}\Big(\exp(\frac{t}{n}A)\,\exp(\frac{t}{n}B)\Big)^{n}\;},
 $$
 the limit being strong and uniform on compact time intervals.
 
@@ -240,7 +240,7 @@ and for the point spectrum the inclusion $\{\exp(t\lambda) : \lambda\in\sigma_p(
 **Theorem (spectral mapping for analytic semigroups).** If the semigroup is eventually norm-continuous — in particular if it is analytic, or if it is uniformly continuous — then
 
 $$
-\sigma(T(t))\setminus\{0\} = \exp(t\sigma(A)) \qquad (t>0).
+\boxed{\;\sigma(T(t))\setminus\{0\} = \exp(t\sigma(A)) \qquad (t>0)\;}.
 $$
 
 *Proof.* Quoted as standard. The reverse inclusion is proved by the argument principle applied to the resolvent along the boundary of a large sector, the norm-continuity providing the decay needed to close the contour; the analytic case is the typical application.

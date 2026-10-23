@@ -131,7 +131,7 @@ Thus an idele is a tuple $x = (x_v)$ with $x_v \in K_v^\times$ for all $v$ and $
 **Proposition (the norm and the product formula).** The **idele norm** is the continuous homomorphism
 
 $$
-\lvert \cdot \rvert : \mathbb{I}_K \longrightarrow \mathbb{R}_{>0}, \qquad \lvert x \rvert = \prod_{v \in V_K} \lvert x_v \rvert_v ,
+\boxed{\;\lvert \cdot \rvert : \mathbb{I}_K \longrightarrow \mathbb{R}_{>0}, \qquad \lvert x \rvert = \prod_{v \in V_K} \lvert x_v \rvert_v\;} ,
 $$
 
 which is well defined because almost all factors equal $1$, and which restricts to $K^\times$ as the trivial character: $\lvert a \rvert = 1$ for every $a \in K^\times$, by the product formula.
@@ -155,7 +155,7 @@ The group $C_K^1$ is the **norm-one idele class group**.
 **Theorem (structure of the idele class group).** For a number field $K$ there is an isomorphism of topological groups
 
 $$
-\mathbb{I}_K \cong \mathbb{I}_K^1 \times \mathbb{R}_{>0},
+\boxed{\;\mathbb{I}_K \cong \mathbb{I}_K^1 \times \mathbb{R}_{>0}\;},
 $$
 
 obtained by choosing a place $v_0$ and sending $x$ to $(x \cdot c(x)^{-1}, \lvert x \rvert)$ for an idele $c(x)$ supported at $v_0$ with $\lvert c(x) \rvert = \lvert x \rvert$; consequently $C_K$ is the product of the compact group $C_K^1$ and $\mathbb{R}_{>0}$. For a function field $K$, the image of the norm is $q^{\mathbb{Z}}$ and $\mathbb{I}_K / \mathbb{I}_K^1 \cong \mathbb{Z}$.
@@ -215,7 +215,7 @@ obtained by choosing a place $v_0$ and sending $x$ to $(x \cdot c(x)^{-1}, \lver
 **Theorem (statement of the idelic reciprocity law).** Let $K$ be a global field. There is a continuous homomorphism
 
 $$
-\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{Gal}(K^{\mathrm{ab}}/K),
+\boxed{\;\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{Gal}(K^{\mathrm{ab}}/K)\;},
 $$
 
 the **global reciprocity map**, whose kernel is the connected component of the identity in the number field case and the closure of the image of the norm subgroups in general, and which induces a bijection between the open subgroups of $C_K$ of finite index and the finite abelian extensions of $K$, sending an extension $L/K$ to the quotient $C_K / N_{L/K}(C_L)$.

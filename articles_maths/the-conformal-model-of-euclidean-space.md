@@ -42,7 +42,7 @@ where $x$ on the right is the image of the point in $\mathbb{R}^n\subset\mathbb{
 **Theorem.** For every point $x$ the point vector is null, $X^2=0$, and for two points
 
 $$
-B(X,Y)=-\tfrac12|x-y|^2 .
+\boxed{\;B(X,Y)=-\tfrac12|x-y|^2\;} .
 $$
 
 **Proof.** Expand $X^2=\mathfrak{Q}(x)+2B(x,\tfrac12|x|^2n_\infty)+2B(x,n)+2B(\tfrac12|x|^2n_\infty,n)+0+0$, using $n^2=n_\infty^2=0$: the two cross terms with $x$ vanish because $x$ is orthogonal to $n$ and to $n_\infty$, and the last is $\tfrac12|x|^2\cdot2B(n_\infty,n)=-|x|^2$, so $X^2=|x|^2-|x|^2=0$. For the second statement, expand the bilinear form on $X$ and $Y$ in the same way; the terms degenerate to $B(x,y)-\tfrac12|x|^2-\tfrac12|y|^2$, which is $-\tfrac12|x-y|^2$ by the expansion of the square.
@@ -68,7 +68,7 @@ the point vector of $x$ being orthogonal to $s$.
 1. For a point $c$ and a radius $r>0$, the sphere of centre $c$ and radius $r$ is represented by
    
 $$
-   s=c+\tfrac12\bigl(|c|^2-r^2\bigr)n_\infty+n ,
+   \boxed{\;s=c+\tfrac12\bigl(|c|^2-r^2\bigr)n_\infty+n\;} ,
 $$
 
    which is the point vector of the centre displaced by $-\tfrac12r^2n_\infty$.
@@ -103,7 +103,7 @@ $$
 **Theorem.** The group $O(n+1,1)$ preserves the null cone, hence acts on the points of $\mathbb{R}^n$ and on the point at infinity, and the action on the points is conformal; conversely every conformal transformation of $\mathbb{R}^n\cup\{\infty\}$ arises this way, and the kernel of the action is $\{\pm1\}$. So
 
 $$
-\mathrm{Conf}(\mathbb{R}^n)=\mathrm{Conf}(S^n)\cong O(n+1,1)/\{\pm1\}.
+\boxed{\;\mathrm{Conf}(\mathbb{R}^n)=\mathrm{Conf}(S^n)\cong O(n+1,1)/\{\pm1\}\;}.
 $$
 
 **Proof.** An orthogonal map preserves the form, so it carries null vectors to null vectors, and the induced map on the rays is a bijection of the sphere of directions, hence a transformation of $S^n$; the metric statement of the theorem above, $|x-y|^2=-2B(X,Y)$, shows that the transformation is conformal with respect to the round metric, because it preserves the bilinear form up to a scalar factor on the cone. The converse, that every conformal transformation arises from an orthogonal map, is the classical theorem of Liouville for $n\ge3$ and is verified by enumeration in low dimensions; the kernel is $\{\pm1\}$ because a linear map fixing every point of the cone fixes the whole space.

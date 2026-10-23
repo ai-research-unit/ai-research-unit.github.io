@@ -29,7 +29,7 @@ The topological companion, in which the adjoint is taken on the bounded operator
 **Proposition.** The assignment $T \mapsto T^{*}$ is $\varsigma$-semilinear and an anti-automorphism of order two:
 
 $$
-(S + T)^{*} = S^{*} + T^{*}, \qquad (\lambda T)^{*} = \varsigma(\lambda)T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad (T^{*})^{*} = T .
+\boxed{\;(S + T)^{*} = S^{*} + T^{*}, \qquad (\lambda T)^{*} = \varsigma(\lambda)T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad (T^{*})^{*} = T\;} .
 $$
 
 **Proof.** Additivity and the semilinearity are read from $h((\lambda T)x, y) = \lambda h(Tx,y) = \lambda h(x,T^{*}y)$ and $h(x, \varsigma(\lambda)T^{*}y) = \varsigma(\varsigma(\lambda))h(x,T^{*}y)$, using that the first slot is $R$-linear and the second $\varsigma$-semilinear. For the product, $h(STx, y) = h(Tx, S^{*}y) = h(x, T^{*}S^{*}y)$. For the last, $h(T^{*}x, y) = \varsigma(h(y, T^{*}x)) = \varsigma(h(Ty, x)) = h(x, Ty)$, so $(T^{*})^{*} = T$.
@@ -57,7 +57,7 @@ $$
 **Definition.** An operator $S$ is **$\varsigma$-semilinear** when $S(\lambda x) = \varsigma(\lambda)Sx$; its **twisted adjoint** is the semilinear operator $S^{*}$ with
 
 $$
-h(Sx, y) = \varsigma\bigl(h(x, S^{*}y)\bigr) .
+\boxed{\;h(Sx, y) = \varsigma\bigl(h(x, S^{*}y)\bigr)\;} .
 $$
 
 **Proposition.** A semilinear operator admits no adjoint in the linear sense, and it admits exactly one twisted adjoint when $h$ is nonsingular; the twisted adjoint is again $\varsigma$-semilinear and of order two.
@@ -73,7 +73,7 @@ Let $A$ be free of finite rank over the base with basis $e_{1},\dots,e_{n}$ and 
 **Proposition.** With the dagger in the first slot and the form $h_{G}(x,y) = \tau(x^{\dagger}Gy)$, the adjoint of the multiplication by $T$ is the multiplication by
 
 $$
-T^{*} = G^{-1}T^{\dagger}G, \qquad \text{and the multiplication by } T \text{ is an isometry} \iff T^{\dagger}GT = G ,
+\boxed{\;T^{*} = G^{-1}T^{\dagger}G, \qquad \text{and the multiplication by } T \text{ is an isometry} \iff T^{\dagger}GT = G\;} ,
 $$
 
 the equation of the indefinite unitary group of $G$; for $G = 1$ it is $T^{*} = T^{\dagger}$, the conjugate transpose of the definite case, and the form is then the canonical form of *Hermitian Algebras*.

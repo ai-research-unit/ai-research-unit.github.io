@@ -64,7 +64,7 @@ Sensitivity is the failure of the family of iterates to be equicontinuous: a rot
 **Example (the Lorenz attractor).** Consider the system
 
 $$
-dx/dt=\sigma(y-x), \qquad \,dy/dt=x(\rho-z)-y, \qquad \,dz/dt=xy-\beta z ,
+\boxed{\;dx/dt=\sigma(y-x), \qquad \,dy/dt=x(\rho-z)-y, \qquad \,dz/dt=xy-\beta z\;} ,
 $$
 
 with $\sigma=10$, $\rho=28$, $\beta=\frac83$. The origin is a hyperbolic equilibrium of saddle type whose eigenvalues are all real, namely $\lambda^2+11\lambda-270=0$ together with $-\beta$, that is $11.83$, $-22.83$ and $-2.67$; the two remaining equilibria have a pair of complex eigenvalues with positive real part, and numerically the orbits spiral in the two wings of a butterfly-shaped set and never settle: the set
@@ -103,7 +103,7 @@ $$
 when the limit exists, with $N_\delta(A)$ the least number of sets of diameter $\le\delta$ needed to cover $A$; its upper and lower variants always exist, and the inequality
 
 $$
-\dim_HA\le\underline{\dim}_BA\le\overline{\dim}_BA
+\boxed{\;\dim_HA\le\underline{\dim}_BA\le\overline{\dim}_BA\;}
 $$
 
 holds. The Hausdorff dimension is countably stable, $\dim_H\bigcup_kA_k=\sup_k\dim_HA_k$, while the box dimension is only finitely stable; neither is a topological invariant, and the theory is that of the standard literature on fractal geometry, cited below.
@@ -121,7 +121,7 @@ and the measure $H^s$ with $s=\log2/\log3$ is positive and finite on $C$. The sa
 **Definition.** Let $\mu$ be an ergodic invariant measure of a $C^1$ diffeomorphism with Lyapunov exponents $\lambda_1\ge\cdots\ge\lambda_d$ and $j$ the largest index with $\lambda_1+\cdots+\lambda_j \ge0$ (so that $j<d$ unless the measure is volume-preserving with all the sums nonnegative). The **Kaplan–Yorke number** is
 
 $$
-D_{KY}=j+\frac{\lambda_1+\cdots+\lambda_j}{|\lambda_{j+1}|} .
+\boxed{\;D_{KY}=j+\frac{\lambda_1+\cdots+\lambda_j}{|\lambda_{j+1}|}\;} .
 $$
 
 **Theorem (Ledrappier–Young).** Let $f$ be a $C^{1+\alpha}$ diffeomorphism of a surface and let $\mu$ be an ergodic hyperbolic measure with a positive exponent and an SRB property. Then the Hausdorff dimension of $\mu$ — the infimum of the Hausdorff dimensions of the sets of full measure — satisfies the **dimension formula** of Ledrappier and Young, and in the case in which the unstable distribution is one-dimensional and the measure is the SRB measure, it equals the Kaplan–Yorke number $1+\lambda_1/|\lambda_2|$; the equality of the Hausdorff dimension of a hyperbolic attractor with the Kaplan–Yorke number is the **Kaplan–Yorke conjecture**, proved in this and in more general settings by the dimension theory of the invariant measures.

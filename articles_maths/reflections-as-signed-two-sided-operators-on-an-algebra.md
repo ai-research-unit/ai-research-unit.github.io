@@ -37,7 +37,7 @@ The word is chosen to match the classical case: on a Clifford algebra the signed
 **Theorem.** For every reflector $u$ the signed conjugation $\rho_u$ is an automorphism of the $k$-algebra $A$ with
 
 $$
-\rho_u^2 = \mathrm{id},
+\boxed{\;\rho_u^2 = \mathrm{id}\;},
 $$
 
 so that $\rho_u$ is an involutive automorphism of $A$. Conversely, if a signed conjugation $\rho_u$ is an involutive automorphism, then $u$ is a reflector.
@@ -59,7 +59,7 @@ $$
 the summands are the fixed subalgebra and the negated part, and
 
 $$
-A^+_\rho A^+_\rho \subseteq A^+_\rho, \qquad A^+_\rho A^-_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^+_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^-_\rho \subseteq A^+_\rho .
+\boxed{\;A^+_\rho A^+_\rho \subseteq A^+_\rho, \qquad A^+_\rho A^-_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^+_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^-_\rho \subseteq A^+_\rho\;} .
 $$
 
 *Proof.* The map $\rho$ is an involutive automorphism, so its eigenvalues are $\pm 1$ and the decomposition and the multiplication table are those of the eigenspaces of an involutive automorphism, as in *The Signed Sandwich on an Algebra*. When $2 = 0$ the negated part is zero and the decomposition collapses, since an order-two automorphism is the identity.
@@ -111,7 +111,7 @@ and $\rho$ is the composite $\rho = \iota_u \circ \alpha$ of the inner automorph
 **Proposition.** The reflections of $A$ relative to $\alpha$ are the involutive automorphisms lying in the coset $\iota_{A^\times} \alpha$ of the inner automorphism group, and the map
 
 $$
-A^\times / Z(A)^\times \longrightarrow \mathrm{Out}(A) = \operatorname{Aut}_k(A)/\operatorname{Inn}_k(A), \qquad [u] \mapsto [\iota_u]
+\boxed{\;A^\times / Z(A)^\times \longrightarrow \mathrm{Out}(A) = \operatorname{Aut}_k(A)/\operatorname{Inn}_k(A), \qquad [u] \mapsto [\iota_u]\;}
 $$
 
 sends the reflectors to the classes of the reflections. In particular, if every automorphism of $A$ is inner — for example if $A$ is a central simple algebra, by *Central Simple Algebras and the Brauer Group* — then every involutive automorphism is a reflection up to a choice of $\alpha$.

@@ -110,7 +110,7 @@ $$
 and the characteristic polynomial is
 
 $$
-p_{\tilde Q}(X)=X^{2}-2Q_{t}X+\langle\tilde Q\rangle_{\natural}=(X-Q_{t})^{2}+B^{2},
+\boxed{\;p_{\tilde Q}(X)=X^{2}-2Q_{t}X+\langle\tilde Q\rangle_{\natural}=(X-Q_{t})^{2}+B^{2}\;},
 $$
 
 with the roots
@@ -166,8 +166,8 @@ $$
 Summing the two eigenvalue relations,
 
 $$
-\tilde Q=\lambda_{+}\tilde\Pi_{+}+\lambda_{-}\tilde\Pi_{-}
-=(Q_{t}+iB)\tilde\Pi_{+}+(Q_{t}-iB)\tilde\Pi_{-}.
+\boxed{\;\tilde Q=\lambda_{+}\tilde\Pi_{+}+\lambda_{-}\tilde\Pi_{-}
+=(Q_{t}+iB)\tilde\Pi_{+}+(Q_{t}-iB)\tilde\Pi_{-}\;}.
 $$
 
 This is the eigenvalue decomposition of *Eigenbasis of a Biquaternion*, §*The Eigenvalue Decomposition*, read in the Clifford algebra. The eigenvalues are distinct, the idempotents are nonzero, orthogonal and complete, and the resolution is unique up to the swap of the two signs. The scalar-vector form is
@@ -195,8 +195,8 @@ and each corner is one complex line: the diagonal corners are $\mathbb{C}\tilde\
 The diagonal part is
 
 $$
-\mathbb{B}_{++}\oplus\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{C}\tilde\Pi_{-}
-=\mathbb{C}[\tilde Q]=\operatorname{span}_{\mathbb{C}}\{e_{t},\tilde Q\},
+\boxed{\;\mathbb{B}_{++}\oplus\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{C}\tilde\Pi_{-}
+=\mathbb{C}[\tilde Q]=\operatorname{span}_{\mathbb{C}}\{e_{t},\tilde Q\}\;},
 $$
 
 a commutative subalgebra isomorphic to $\mathbb{C}\times\mathbb{C}$. It is the centraliser of $\tilde Q$ by *The Centraliser and the Diagonal Peirce Part*, §*The theorem*, and the mixed part is $[\tilde\Pi_{+},\mathbb{B}]$ by *Off-Diagonal Peirce Components and Noncentral Idempotents*, §*The Commutator Interpretation*. The element $\tilde Q$ lies in the diagonal part, with the diagonal coordinates $\lambda_{\pm}$; the mixed corners are the directions that fail to commute with $\tilde Q$.

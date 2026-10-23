@@ -70,7 +70,7 @@ which identify $R^nF(A)$ with the $n$-th cohomology of $F(Q^\bullet)$.
 **Theorem.** Let $0\to A\to B\to C\to0$ be a short exact sequence in $\mathcal{A}$ and let $F$ be left exact with enough injectives. There are connecting morphisms $\delta^n:R^nF(C)\to R^{n+1}F(A)$, natural in the short exact sequence, making
 
 $$
-0\to F(A)\to F(B)\to F(C)\xrightarrow{\ \delta^0\ } R^1F(A)\to R^1F(B)\to R^1F(C)\xrightarrow{\ \delta^1\ } R^2F(A)\to\cdots
+\boxed{\;0\to F(A)\to F(B)\to F(C)\xrightarrow{\ \delta^0\ } R^1F(A)\to R^1F(B)\to R^1F(C)\xrightarrow{\ \delta^1\ } R^2F(A)\to\cdots\;}
 $$
 
 exact. Dually, a right exact $G$ with enough projectives gives a long exact sequence in $L_nG$, with connecting morphisms $L_nG(C)\to L_{n-1}G(A)$.
@@ -88,7 +88,7 @@ The connecting morphisms allow derived functors in high degree to be computed fr
 **Corollary (dimension shifting).** Let $0\to A\to I\to A'\to0$ be short exact with $I$ injective. Then $R^nF(A')\cong R^{n+1}F(A)$ for all $n\ge1$, and the beginning of the long exact sequence is the four-term exact sequence
 
 $$
-0\to F(A)\to F(I)\to F(A')\to R^1F(A)\to0,
+\boxed{\;0\to F(A)\to F(I)\to F(A')\to R^1F(A)\to0\;},
 $$
 
 so that $R^1F(A)\cong\operatorname{coker}(F(I)\to F(A'))$; dually, if $0\to A'\to P\to A\to0$ is short exact with $P$ projective then $L_nG(A)\cong L_{n+1}G(A')$ for all $n\ge1$ and $L_1G(A)\cong\ker(G(A')\to G(P))$.
@@ -128,7 +128,7 @@ When two left exact functors are composed, the derived functors of the composite
 **Theorem (Grothendieck, elementary case).** Let $F:\mathcal{A}\to\mathcal{B}$ and $G:\mathcal{B}\to\mathcal{C}$ be left exact functors between abelian categories with enough injectives. Suppose that $F$ sends injective objects of $\mathcal{A}$ to $G$-acyclic objects, that is, $R^nG(F(I))=0$ for every injective $I$ and every $n\ge1$. Then for every object $A$ of $\mathcal{A}$ there are natural isomorphisms
 
 $$
-R^n(GF)(A)\cong R^nG(FA), \qquad n\ge0 .
+\boxed{\;R^n(GF)(A)\cong R^nG(FA), \qquad n\ge0\;} .
 $$
 
 *Proof.* Take an injective resolution $I^\bullet$ of $A$. By hypothesis each $F(I^n)$ is $G$-acyclic, so the resolution $F(I^\bullet)$ of $FA$ by $G$-acyclic objects computes $R^nG(FA)$ by the acyclic-resolution theorem. But $R^n(GF)(A)$ is by definition $H^n(GF(I^\bullet))=H^n(G(F(I^\bullet)))$, which is also $R^nG(FA)$.

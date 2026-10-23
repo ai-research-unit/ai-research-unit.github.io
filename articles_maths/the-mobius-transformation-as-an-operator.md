@@ -24,7 +24,7 @@ the complex projective line, whose points are written in the affine coordinate $
 **Definition.** A **Möbius transformation** is a map of the sphere
 
 $$
-z \longmapsto \frac{az + b}{cz + d}, \qquad a, b, c, d \in \mathbb{C}, \quad ad - bc \neq 0 ,
+\boxed{\;z \longmapsto \frac{az + b}{cz + d}, \qquad a, b, c, d \in \mathbb{C}, \quad ad - bc \neq 0\;} ,
 $$
 
 with the conventions that the pole $-d/c$ is sent to $\infty$ and $\infty$ is sent to $a/c$ when $c \neq 0$, and that $\infty$ is sent to $\infty$ and $z$ to $(az+b)/d$ when $c = 0$; it is the operator of the sphere that the article studies.
@@ -38,7 +38,7 @@ with the conventions that the pole $-d/c$ is sent to $\infty$ and $\infty$ is se
 **Theorem.** The operator group of the sphere is the projective general linear group
 
 $$
-\operatorname{Möb} = PSL(2,\mathbb{C}) = PGL(2,\mathbb{C}) = SL(2,\mathbb{C})/\{\pm I\} ,
+\boxed{\;\operatorname{Möb} = PSL(2,\mathbb{C}) = PGL(2,\mathbb{C}) = SL(2,\mathbb{C})/\{\pm I\}\;} ,
 $$
 
 the quotient of the determinant-one matrices by the central element $-I$; the projection $SL(2,\mathbb{C}) \to PSL(2,\mathbb{C})$ is two-to-one, and the operator group acts on the sphere by the fractional linear formula, so the centre of $SL(2,\mathbb{C})$ is exactly the kernel of the action.
@@ -88,7 +88,7 @@ $$
 as its orientation-preserving isometry group, by the action of $SL(2,\mathbb{C})$ on the quaternionic coordinates $(z, t) \mapsto (z + t j)$ and the formula
 
 $$
-g \cdot (z + tj) = (a(z + tj) + b)(c(z + tj) + d)^{-1} ,
+\boxed{\;g \cdot (z + tj) = (a(z + tj) + b)(c(z + tj) + d)^{-1}\;} ,
 $$
 
 for $g$ the class of $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$; the action on the boundary sphere $\hat{\mathbb{C}}$ is the fractional linear action, and it is the conformal boundary action of *Hyperbolic Geometry*.

@@ -30,7 +30,7 @@ the two composites agreeing by associativity, and its value at the unit is $\ope
 **Proposition.** For every $u \in A^\times$, $\operatorname{conj}_u$ is a unital ring automorphism of $A$; its inverse is $\operatorname{conj}_{u^{-1}}$, and for all $u, v \in A^\times$
 
 $$
-\operatorname{conj}_u \circ \operatorname{conj}_v = \operatorname{conj}_{uv}, \qquad \operatorname{conj}_{u^{-1}} = \operatorname{conj}_u^{-1}.
+\boxed{\;\operatorname{conj}_u \circ \operatorname{conj}_v = \operatorname{conj}_{uv}, \qquad \operatorname{conj}_{u^{-1}} = \operatorname{conj}_u^{-1}\;}.
 $$
 
 **Proof.** Additivity is clear; multiplicativity is $\operatorname{conj}_u(xy) = uxyu^{-1} = (uxu^{-1})(uyu^{-1}) = \operatorname{conj}_u(x)\operatorname{conj}_u(y)$, and $\operatorname{conj}_u(1) = uu^{-1} = 1$; bijectivity follows from the inverse formula. The composition law is $(uxu^{-1}) \mapsto v(uxu^{-1})v^{-1} = (vu)x(vu)^{-1}$.
@@ -74,7 +74,7 @@ a subgroup of $\operatorname{Aut}(A)$, and the **outer automorphism group** is t
 **Theorem.** The assignment $u \mapsto \operatorname{conj}_u$ is a group homomorphism $A^\times \to \operatorname{Aut}(A)$ with kernel $Z(A)^\times$, and it induces an isomorphism
 
 $$
-A^\times / Z(A)^\times \;\cong\; \operatorname{Inn}(A), \qquad \operatorname{Inn}(A) \trianglelefteq \operatorname{Aut}(A).
+\boxed{\;A^\times / Z(A)^\times \;\cong\; \operatorname{Inn}(A), \qquad \operatorname{Inn}(A) \trianglelefteq \operatorname{Aut}(A)\;}.
 $$
 
 **Proof.** The homomorphism and the kernel are the two propositions above; the first isomorphism theorem gives the isomorphism. For normality, if $\varphi \in \operatorname{Aut}(A)$ then $\varphi \operatorname{conj}_u \varphi^{-1} = \operatorname{conj}_{\varphi(u)}$, because $\varphi(uxu^{-1}) = \varphi(u)\varphi(x)\varphi(u)^{-1}$.
@@ -117,7 +117,7 @@ The inner automorphisms sit inside the two operator structures of this category,
 **Proposition.** For $u \in A^\times$ and $a \in A$,
 
 $$
-[\operatorname{conj}_u, \operatorname{ad}_a] = \operatorname{ad}_{\operatorname{conj}_u(a) - a}.
+\boxed{\;[\operatorname{conj}_u, \operatorname{ad}_a] = \operatorname{ad}_{\operatorname{conj}_u(a) - a}\;}.
 $$
 
 **Proof.** An inner automorphism acts on the derivation $\operatorname{ad}_a$ by $D \mapsto \operatorname{conj}_u D \operatorname{conj}_u^{-1}$; in the operator picture this is $\operatorname{conj}_u\operatorname{ad}_a\operatorname{conj}_{u^{-1}}$, and computing on $x$ gives $u(au^{-1}xu - u^{-1}xua)u^{-1} = uau^{-1}x - x\,uau^{-1} = \operatorname{ad}_{uau^{-1}}(x)$. So $\operatorname{conj}_u\operatorname{ad}_a\operatorname{conj}_u^{-1} = \operatorname{ad}_{\operatorname{conj}_u(a)}$, and writing the commutator as the difference of this and $\operatorname{ad}_a$ gives the stated form.

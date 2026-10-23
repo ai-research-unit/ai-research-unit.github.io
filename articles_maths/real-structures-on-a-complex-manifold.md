@@ -27,7 +27,7 @@ that is an antiholomorphic involution; the pair $(M, c)$ is a **complex manifold
 
 **Proposition (the conjugation reverses the type).** The differential of a real structure exchanges the two eigenbundles of $J$,
 $$
-dc\bigl(T^{1,0}M\bigr) = T^{0,1}M, \qquad dc\bigl(T^{0,1}M\bigr) = T^{1,0}M ,
+\boxed{\;dc\bigl(T^{1,0}M\bigr) = T^{0,1}M, \qquad dc\bigl(T^{0,1}M\bigr) = T^{1,0}M\;} ,
 $$
 and pulls a $(n,m)$-form back to a $(m,n)$-form, $c^{*}\Omega^{n,m}(M) \subseteq \Omega^{m,n}(M)$; on the level of the operators it conjugates the complex structure, $dc\circ J = -J\circ dc$, and it maps the Cauchy–Riemann operator $\bar\partial$ to $\partial$, $c^{*}\circ\bar\partial = \partial\circ c^{*}$.
 
@@ -35,7 +35,7 @@ and pulls a $(n,m)$-form back to a $(m,n)$-form, $c^{*}\Omega^{n,m}(M) \subseteq
 
 **Proposition (the linear model).** On $\mathbb{C}^n$ the **standard real structure** is the componentwise complex conjugation
 $$
-c(z) = \bar z, \qquad c(z_1,\dots,z_n) = (\bar z_1,\dots,\bar z_n),
+\boxed{\;c(z) = \bar z, \qquad c(z_1,\dots,z_n) = (\bar z_1,\dots,\bar z_n)\;},
 $$
 and on $\mathbb{CP}^n$ the standard real structure is $c([z_0:\dots:z_n]) = [\bar z_0:\dots:\bar z_n]$; both are antiholomorphic involutions, and their real points are $\mathbb{R}^n$ and $\mathbb{RP}^n$.
 
@@ -47,7 +47,7 @@ and on $\mathbb{CP}^n$ the standard real structure is $c([z_0:\dots:z_n]) = [\ba
 
 **Proposition (the real points of a real structure).** The real points $M^{c} = \operatorname{Fix}(c)$ form a closed real submanifold or a disjoint union of submanifolds of $M$; at a real point $n$ the tangent space splits as
 $$
-T_pM = T_pM^{c} \oplus J_n\,T_pM^{c}
+\boxed{\;T_pM = T_pM^{c} \oplus J_n\,T_pM^{c}\;}
 $$
 where $T_pM^{c}$ is the $+1$-eigenspace of $dc_n$ and $J_pT_pM^{c}$ is the $-1$-eigenspace, so that $T_pM$ is the complexification of the real tangent space of the real locus and $T_pM^{c}$ is totally real, $T_pM^{c}\cap J_pT_pM^{c} = 0$.
 

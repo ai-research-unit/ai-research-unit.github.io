@@ -23,7 +23,7 @@ $$
 is an isomorphism of $k$-algebras from $kQ$ onto the opposite algebra of $kQ^{\mathrm{rev}}$,
 
 $$
-kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}} ,
+\boxed{\;kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}}\;} ,
 $$
 
 and it is the identification by which the reversal of the arrows computes the opposite algebra of a path algebra. In particular $kQ^{\mathrm{opp}} \cong kQ^{\mathrm{rev}}$, and $kQ$ carries an involution induced by the reversal exactly when the quiver is isomorphic to its reversal.
@@ -45,7 +45,7 @@ for every arrow $a$; the second condition says that $\tau_1$ reverses each arrow
 **Theorem.** A quiver involution $\tau$ induces an anti-automorphism of $kQ$ of order two, the **relabelling involution** $\sigma_\tau$, by
 
 $$
-\sigma_\tau(e_i) = e_{\tau_0(i)}, \qquad \sigma_\tau(a) = \tau_1(a), \qquad \sigma_\tau(a_1\cdots a_n) = \tau_1(a_n)\cdots\tau_1(a_1),
+\boxed{\;\sigma_\tau(e_i) = e_{\tau_0(i)}, \qquad \sigma_\tau(a) = \tau_1(a), \qquad \sigma_\tau(a_1\cdots a_n) = \tau_1(a_n)\cdots\tau_1(a_1)\;},
 $$
 
 extended linearly. It is a graded involution for the length grading, it permutes the trivial paths, and every length-preserving involution of $kQ$ that carries arrows to arrows and trivial paths to trivial paths arises from a quiver involution.

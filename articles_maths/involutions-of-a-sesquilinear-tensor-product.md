@@ -27,7 +27,7 @@ $$
 **Theorem.** The tensor involution is additive, bijective and of order two; it is $\varsigma$-**semilinear**,
 
 $$
-\natural(\lambda\, X) = \varsigma(\lambda)\,\natural(X) , \qquad \lambda\in R , \quad X\in A\otimes_RB ;
+\boxed{\;\natural(\lambda\, X) = \varsigma(\lambda)\,\natural(X) , \qquad \lambda\in R , \quad X\in A\otimes_RB\;} ;
 $$
 
 and when the two factor involutions are anti-automorphisms of their products, it is an anti-automorphism of the envelope,
@@ -103,7 +103,7 @@ $$
 **Theorem.** The tensor square $A\otimes_RA$ carries the two anti-involutions $\natural$ and $\natural\tau$, of order two and $\varsigma$-semilinear, and the four maps
 
 $$
-\mathrm{id}, \quad \natural, \quad \natural\tau, \quad \tau
+\boxed{\;\mathrm{id}, \quad \natural, \quad \natural\tau, \quad \tau\;}
 $$
 
 form a commutative group of exponent two, of order four when the flip is not the identity and the involution is not trivial: $\natural\,\natural\tau = \tau$, $\tau\,\natural = \natural\tau$ and $\tau\,\natural\tau = \natural$. The tensor involution $\natural$ is the identity exactly when the factor involution is trivial, for a factor that is free and unital over $R$, and the two anti-involutions agree exactly when the flip is the identity.
@@ -150,7 +150,7 @@ the second called the **reversal** of the tensor power.
 **Theorem.** Both maps are $\varsigma$-semilinear anti-automorphisms of $A^{\otimes n}$ for the envelope product, of order two; the reversal is the twist composed with the order-reversing permutation,
 
 $$
-\rho_n = \pi_n\,\natural_n , \qquad \pi_n(a_1\otimes\cdots\otimes a_n) = a_n\otimes\cdots\otimes a_1 ,
+\boxed{\;\rho_n = \pi_n\,\natural_n , \qquad \pi_n(a_1\otimes\cdots\otimes a_n) = a_n\otimes\cdots\otimes a_1\;} ,
 $$
 
 where $\pi_n$ is an $R$-linear automorphism of order two; and for $n = 2$ these are the two involutions of the tensor square, $\natural_2 = \natural$ and $\rho_2 = \natural\tau$.

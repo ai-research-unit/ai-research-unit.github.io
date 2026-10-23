@@ -28,7 +28,7 @@ where $\rho$ is the one-sided Clifford action. The operator $D^2$ is the **Hermi
 **Theorem.** The Dirac operator is formally self-adjoint:
 
 $$
-D^{*} = D .
+\boxed{\;D^{*} = D\;} .
 $$
 
 **Proof.** By the composite rule of *The Adjoint of the One-Sided Action with Hermitian Adjoint*, $(\rho(e_j)\partial/\partial x_j)^{*} = (\partial/\partial x_j)^{*}\rho(e_j^{\dagger}) = (-\partial/\partial x_j)(-\rho(e_j)) = \rho(e_j)\partial/\partial x_j$, the two sign flips cancelling; summing gives $D^{*} = D$.
@@ -40,7 +40,7 @@ $$
 **Theorem.** For every $s$ in the module $S$ (in the analytic setting, for every $s$ in the domain of $D$),
 
 $$
-(D^2 s, s) = (Ds, Ds) = \lVert Ds\rVert^{2} \ge 0 ,
+\boxed{\;(D^2 s, s) = (Ds, Ds) = \lVert Ds\rVert^{2} \ge 0\;} ,
 $$
 
 so $D^2$ is a **positive** operator; and $D^{2} = D^{*}D$ because $D$ is self-adjoint. In particular $D$ has no negative eigenvalue and its kernel is the set of $s$ with $\lVert Ds\rVert = 0$.
@@ -54,7 +54,7 @@ so $D^2$ is a **positive** operator; and $D^{2} = D^{*}D$ because $D$ is self-ad
 **Theorem (Hodge splitting).** Let $S$ be finite-dimensional (or, in the analytic setting of *Dirac Differential Operators*, let $D$ have closed range with finite-dimensional kernel). Then $S$ decomposes orthogonally,
 
 $$
-S = \ker D \oplus D(S) = \ker D \oplus \operatorname{im} D ,
+\boxed{\;S = \ker D \oplus D(S) = \ker D \oplus \operatorname{im} D\;} ,
 $$
 
 and the two summands are orthogonal and $D$-invariant.

@@ -20,7 +20,7 @@ A word of disambiguation begins the account, because the corpus writes two diffe
 **Definition.** For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the **signed left multiplication** is the $F$-linear operator
 
 $$
-\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) .
+\boxed{\;\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y)\;} .
 $$
 
 **Proposition.** The following hold.
@@ -42,11 +42,11 @@ $$
 **Proposition (composition).** For all $a,c$,
 
 $$
-\mathrm{L}^{\alpha}_a\circ\mathrm{L}^{\alpha}_c = L_{a\alpha(c)} ,
+\boxed{\;\mathrm{L}^{\alpha}_a\circ\mathrm{L}^{\alpha}_c = L_{a\alpha(c)} ,
 \qquad
 \mathrm{L}^{\alpha}_a\circ L_c = \mathrm{L}^{\alpha}_{ac} ,
 \qquad
-L_a\circ\mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{a\alpha(c)} .
+L_a\circ\mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{a\alpha(c)}\;} .
 $$
 
 Two signed left multiplications compose to an **ordinary** left multiplication, the two grade involutions cancelling; a signed and an ordinary one compose to a signed one. The signed left family is therefore a coset $L(\Gamma)\alpha$ of the group of invertible left multiplications and not a group, exactly as for the two-sided family.
@@ -62,7 +62,7 @@ Two signed left multiplications compose to an **ordinary** left multiplication, 
 **Proposition (the pairing with the right factor).** For a unit $x$ the composition of the signed left multiplication with the ordinary right multiplication by the inverse of the twisted parameter is the signed sandwich,
 
 $$
-\mathrm{L}^{\alpha}_x\circ R_{\alpha(x)^{-1}} = T^{\alpha}_{x,\alpha(x)^{-1}} ,
+\boxed{\;\mathrm{L}^{\alpha}_x\circ R_{\alpha(x)^{-1}} = T^{\alpha}_{x,\alpha(x)^{-1}}\;} ,
 $$
 
 and for a vector $u$ with $\mathfrak{Q}(u)\ne0$ this is the reflection $\rho_u$; the signed left multiplication alone is not a motion of $V$.

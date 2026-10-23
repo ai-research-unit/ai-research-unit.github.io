@@ -36,8 +36,8 @@ which is not open.
 **Definition.** The **interior** $\operatorname{int} A$ of a set $A$ is the union of all open sets contained in $A$, an open set; $A$ is open exactly when $A = \operatorname{int} A$. The **closure** $\overline{A}$ is the intersection of all closed sets containing $A$, a closed set; $A$ is closed exactly when $A = \overline{A}$. The **boundary** is $\partial A = \overline{A} \cap \overline{X \setminus A}$, and the three sets $\operatorname{int} A$, $\partial A$ and $\operatorname{int}(X \setminus A)$ partition $X$:
 
 $$
-\operatorname{int} A = \bigcup \{\Omega : \Omega \text{ open}, \ \Omega \subseteq A\}, \qquad
-\overline{A} = \bigcap \{F : F \text{ closed}, \ A \subseteq F\}.
+\boxed{\;\operatorname{int} A = \bigcup \{\Omega : \Omega \text{ open}, \ \Omega \subseteq A\}, \qquad
+\overline{A} = \bigcap \{F : F \text{ closed}, \ A \subseteq F\}\;}.
 $$
 
 **Proposition.** Let $A \subseteq X$. Then $x \in \overline{A}$ if and only if every neighbourhood of $x$ meets $A$. Consequently $x \in \operatorname{int} A$ if and only if $A$ is a neighbourhood of $x$, and $X = \operatorname{int} A \sqcup \partial A \sqcup \operatorname{int}(X \setminus A)$.
@@ -299,7 +299,7 @@ The proof is by ultrafilters: given an ultrafilter on the product, its coordinat
 **Example (Heine–Borel).** A subset of $\mathbb{R}^n$ is compact if and only if it is closed and bounded,
 
 $$
-K \subseteq \mathbb{R}^n \text{ compact} \iff K \text{ closed and bounded}.
+\boxed{\;K \subseteq \mathbb{R}^n \text{ compact} \iff K \text{ closed and bounded}\;}.
 $$
 
 In a general metric space compactness is equivalent to sequential compactness and to completeness together with total boundedness, the standard metric characterisation of compactness, and it is the reason metric arguments may use sequences where general topological arguments may not.

@@ -123,10 +123,10 @@ anti-self-adjoint, $X_r^{*}=-X_r$, and consequently $(\partial/\partial X_r)^{\d
 **Theorem (the split of the Laplacian).** With the Hermitian conjugation,
 
 $$
-\sum_{r=0}^{3}Z_rZ_r^{*} = \sum_{r=0}^{3}Z_r^{*}Z_r = 16\,|X|^2 ,
+\boxed{\;\sum_{r=0}^{3}Z_rZ_r^{*} = \sum_{r=0}^{3}Z_r^{*}Z_r = 16\,|X|^2 ,
 \qquad
 \Delta_N = 16\sum_{r=0}^{3}\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger}
-= 16\sum_{r=0}^{3}(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r .
+= 16\sum_{r=0}^{3}(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r\;} .
 $$
 
 *Proof.* The Hadamard patterns are orthogonal with $SS^{\mathsf T}=4I_4$; combining the four
@@ -162,7 +162,7 @@ the quaternionic conjugates of the coefficients.
 partner of $\partial/\partial Z_r$ in the split of the Laplacian:
 
 $$
-\Delta_N = 16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger} = 16\sum_r(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r,
+\boxed{\;\Delta_N = 16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger} = 16\sum_r(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r\;},
 $$
 
 and the two operators $\partial/\partial Z_r$ and $(\partial/\partial Z_r)^{\dagger}$ are the two halves of the
@@ -234,7 +234,7 @@ $\dagger$-images of the $q$-Hermitian monogenic ones, and the conjugate Cauchyâ€
 the adjoint of the Hermitian one, so the two classes are the two kernels
 
 $$
-\ker\partial/\partial Z_r\quad\text{and}\quad\ker(\partial/\partial Z_r)^{\dagger}=\bigl(\ker\partial/\partial Z_r\bigr)^{\dagger} ;
+\boxed{\;\ker\partial/\partial Z_r\quad\text{and}\quad\ker(\partial/\partial Z_r)^{\dagger}=\bigl(\ker\partial/\partial Z_r\bigr)^{\dagger}\;} ;
 $$
 
 a function is both $q$-Hermitian monogenic and anti-monogenic exactly when it is annihilated by all

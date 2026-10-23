@@ -23,7 +23,7 @@ The form is **nonsingular** when the **Riesz map** $\flat : A \to A^{*}$, $\flat
 **Theorem (existence and uniqueness).** Let $h$ be nonsingular. Then every $T \in B(A)$ has exactly one right adjoint $T^{\dagger}$, given by
 
 $$
-T^{\dagger} = \flat^{-1}\circ T^{\flat}\circ\flat , \qquad T^{\flat}(\varphi) = \varphi\circ T ,
+\boxed{\;T^{\dagger} = \flat^{-1}\circ T^{\flat}\circ\flat , \qquad T^{\flat}(\varphi) = \varphi\circ T\;} ,
 $$
 
 it is bounded, and $\lVert T^{\dagger}\rVert \leq \lVert \flat\rVert\lVert \flat^{-1}\rVert\lVert T\rVert$.
@@ -91,7 +91,7 @@ that is, the adjoint of $S$ against the transposed form $h^{t}(x,y) = h(y,x)$, r
 **Theorem (the two adjoints coincide).** Let $h$ be Hermitian and nonsingular. Then for every $S \in B^{\varsigma}(A)$ the left adjoint exists, is unique, and equals the adjoint,
 
 $$
-{}^{\dagger}S = S^{\dagger} .
+\boxed{\;{}^{\dagger}S = S^{\dagger}\;} .
 $$
 
 *Proof.* The left adjoint is the adjoint against $h^{t}$ read with the arguments exchanged, so it exists and is unique by the theorem of §*The Twisted Rule*. For the coincidence, the Hermitian property turns the defining relation of $S^{\dagger}$ into $h(Sx,y) = \varsigma(h(x,S^{\dagger}y))$, that is $h(y,Sx) = h(x,S^{\dagger}y)$ after applying $\varsigma$; and the defining relation of ${}^{\dagger}S$, read through the Hermitian property as $h({}^{\dagger}Sy,x) = \varsigma(h(x,{}^{\dagger}Sy))$, is the same identity $h(y,Sx) = h(x,{}^{\dagger}Sy)$. Hence $h(x,S^{\dagger}y) = h(x,{}^{\dagger}Sy)$ for all $x,y$, and the nondegeneracy of $h$ gives ${}^{\dagger}S = S^{\dagger}$.
@@ -103,7 +103,7 @@ $$
 **Theorem (the indefinite case).** Let $A = A^{+}\oplus A^{-}$ be a fundamental decomposition of $h$ with symmetry $J$ and companion form $\langle\cdot,\cdot\rangle = h(J\cdot,\cdot)$, both nonsingular, and let $T^{\dagger}$ be the $h$-adjoint of $T$ and $T^{*}$ its companion adjoint. Then
 
 $$
-T^{\dagger} = J\,T^{*}\,J ,
+\boxed{\;T^{\dagger} = J\,T^{*}\,J\;} ,
 $$
 
 so $T$ is $h$-self-adjoint exactly when $JT$ is companion-self-adjoint, and $T$ is $h$-unitary exactly when $T^{*}JT = J$, that is when $T$ is $J$-unitary.

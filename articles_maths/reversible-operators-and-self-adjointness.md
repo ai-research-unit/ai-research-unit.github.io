@@ -21,7 +21,7 @@ Throughout, $\mathcal{H}$ is a complex Hilbert space with the form $\langle\cdot
 
 **Theorem (the parity decomposition).** For a unitary involution $J$ the eigenspaces
 $$
-\mathcal{H}_+=\{x:Jx=x\},\qquad \mathcal{H}_-=\{x:Jx=-x\}
+\boxed{\;\mathcal{H}_+=\{x:Jx=x\},\qquad \mathcal{H}_-=\{x:Jx=-x\}\;}
 $$
 are closed, orthogonal, and $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$; the orthogonal projections $P_\pm=\frac12(I\pm J)$ are self-adjoint projections and $J=P_+-P_-$. Every $x$ splits uniquely as $x=x_++x_-$ with $x_\pm\in\mathcal{H}_\pm$.
 
@@ -51,7 +51,7 @@ and it is **$J$-self-adjoint** in the same condition read on the indefinite form
 
 **Theorem (the spectrum is conjugate-symmetric).** If $T$ is reversible with respect to $J$, then $J$ intertwines $T$ and $T^*$, so $T$ and $T^*$ are similar and
 $$
-\operatorname{spec}(T)=\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)},
+\boxed{\;\operatorname{spec}(T)=\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)}\;},
 $$
 that is the spectrum of a reversible operator is symmetric under $\lambda\mapsto\bar\lambda$.
 
@@ -91,7 +91,7 @@ and every eigenvector of $T$ has a definite parity; the reversing symmetry there
 
 **Theorem (the reversible process).** Let $\{X_n\}$ be a stationary process, $U_r$ the reversal operator, $U_rf=f\circ r$, and $P$ its transition or Markov operator with the stationary measure $\pi$. Then
 $$
-U_r\,P\,U_r=P^{\mathrm{rev}} ,
+\boxed{\;U_r\,P\,U_r=P^{\mathrm{rev}}\;} ,
 $$
 the transition operator of the reversed process, and the process is reversible exactly when $U_rPU_r=P$, that is exactly when $P$ is reversible with respect to $U_r$ and self-adjoint for the $\pi$-form. In that case the spectrum of $P$ refines into the even and the odd parts under the reversal, and the eigenfunctions have definite parity.
 

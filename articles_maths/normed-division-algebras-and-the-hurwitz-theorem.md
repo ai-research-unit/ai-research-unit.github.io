@@ -66,7 +66,7 @@ which uses $\bar{(-b)} = -b$ and $b b^{\natural} = N(b)$; this gives the display
 **Theorem (the doubling of the chain).** Starting from $\mathbb{R}$ with its identity involution and $N(\lambda) = \lambda^2$, the doubling produces, successively,
 
 $$
-\mathbb{R}\ (n=1) \longrightarrow \mathbb{C}\ (n=2) \longrightarrow \mathbb{H}\ (n=4) \longrightarrow \mathbb{O}\ (n=8) \longrightarrow \mathbb{S}\ (n=16),
+\boxed{\;\mathbb{R}\ (n=1) \longrightarrow \mathbb{C}\ (n=2) \longrightarrow \mathbb{H}\ (n=4) \longrightarrow \mathbb{O}\ (n=8) \longrightarrow \mathbb{S}\ (n=16)\;},
 $$
 
 and the norm is multiplicative at every step through the octonions, but not at the sedenions. Consequently there is a normed division algebra of each dimension $1,2,4,8$ over $\mathbb{R}$, and there is no normed division algebra of dimension $16$.
@@ -117,7 +117,7 @@ by the two antisymmetries and the left alternative law, which is the flexible la
 **Theorem (Hurwitz, standard).** Let $A$ be a finite-dimensional real algebra with identity carrying an anisotropic multiplicative norm. Then $\dim_{\mathbb R}A\in\{1,2,4,8\}$, and $A$ is isomorphic to one of
 
 $$
-\mathbb{R}\ (\dim1), \qquad \mathbb{C}\ (\dim2), \qquad \mathbb{H}\ (\dim4), \qquad \mathbb{O}\ (\dim8) .
+\boxed{\;\mathbb{R}\ (\dim1), \qquad \mathbb{C}\ (\dim2), \qquad \mathbb{H}\ (\dim4), \qquad \mathbb{O}\ (\dim8)\;} .
 $$
 
 **Equivalent form.** The theorem is equivalent to the classical statement that there are real coefficients $c_{ijk}$ with
@@ -151,7 +151,7 @@ The identity is the multiplicativity of the norm of $\mathbb{C}$ in coordinates,
 **Proposition (the four-square identity, Euler).** For all real $a_1,\dots,a_4,b_1,\dots,b_4$,
 
 $$
-\Bigl(\sum_{i=1}^{4}a_i^2\Bigr)\Bigl(\sum_{i=1}^{4}b_i^2\Bigr) = (a_1b_1-a_2b_2-a_3b_3-a_4b_4)^2 + (a_1b_2+a_2b_1+a_3b_4-a_4b_3)^2 + (a_1b_3-a_2b_4+a_3b_1+a_4b_2)^2 + (a_1b_4+a_2b_3-a_3b_2+a_4b_1)^2 .
+\boxed{\;\Bigl(\sum_{i=1}^{4}a_i^2\Bigr)\Bigl(\sum_{i=1}^{4}b_i^2\Bigr) = (a_1b_1-a_2b_2-a_3b_3-a_4b_4)^2 + (a_1b_2+a_2b_1+a_3b_4-a_4b_3)^2 + (a_1b_3-a_2b_4+a_3b_1+a_4b_2)^2 + (a_1b_4+a_2b_3-a_3b_2+a_4b_1)^2\;} .
 $$
 
 The identity is the multiplicativity of the norm of $\mathbb{H}$ in the coordinates $1,e_1,e_2,e_3$, and it is verified by expanding the product of the two quaternions and reading off the norm, exactly as in the computation of the previous section.

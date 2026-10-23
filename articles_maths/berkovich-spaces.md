@@ -82,7 +82,7 @@ for the norm of any presentation of $A$, and the right-hand side is $\lvert a \r
 **Corollary (Berkovich maximum modulus principle).** For every $a \in A$,
 
 $$
-\sup_{x \in M(A)} \lvert a \rvert_x = \lvert a \rvert_{\mathrm{sup}} ,
+\boxed{\;\sup_{x \in M(A)} \lvert a \rvert_x = \lvert a \rvert_{\mathrm{sup}}\;} ,
 $$
 
 and the supremum is attained, at the spectral point. In particular the supremum over the Berkovich spectrum is the spectral norm of $A$, which for a reduced affinoid algebra is a norm and is bounded by every residue norm of a presentation.
@@ -148,7 +148,7 @@ the union of the discs of radius $n$, and the **Berkovich projective line** is o
 **(a)** For every affinoid subdomain $\Omega \subseteq X$ the set
 
 $$
-\Omega^{\mathrm{an}} = \{x \in M(A) : \lvert f \rvert_x \leq 1 \text{ for every } f \in A \text{ with } \lvert f \rvert \leq 1 \text{ on } \Omega\}
+\boxed{\;\Omega^{\mathrm{an}} = \{x \in M(A) : \lvert f \rvert_x \leq 1 \text{ for every } f \in A \text{ with } \lvert f \rvert \leq 1 \text{ on } \Omega\}\;}
 $$
 
 is a closed subset of $M(A)$, the assignment $\Omega \mapsto \Omega^{\mathrm{an}}$ preserves inclusions and finite intersections, its classical points are exactly the points of $\Omega$, and the family of the $\Omega^{\mathrm{an}}$ generates the topology of $M(A)$: the Berkovich topology is the coarsest topology in which all the sets $\Omega^{\mathrm{an}}$ are closed.

@@ -40,8 +40,8 @@ the sections of the bundle associated to $P$ by the conjugation action of $G$ on
 **Theorem.** The gauge group acts on the connections by the pullback, and on the curvature by the adjoint representation,
 
 $$
-u\cdot A=u^{*}A,\qquad
-F_{u\cdot A}=u^{-1}F_Au=\operatorname{Ad}(u^{-1})F_A ,
+\boxed{\;u\cdot A=u^{*}A,\qquad
+F_{u\cdot A}=u^{-1}F_Au=\operatorname{Ad}(u^{-1})F_A\;} ,
 $$
 
 so the action preserves the flatness and the equation $F_A=0$; the action is affine, $u\cdot(A_0+\eta)=u\cdot A_0+\operatorname{Ad}(u^{-1})\eta$ for the correct transformation of $\eta$, and the stabiliser of a connection in the gauge group is the group of parallel automorphisms. The action is free at the **irreducible** connections, those whose holonomy group is the whole structure group, and the orbit space of the irreducible connections is a manifold.
@@ -71,7 +71,7 @@ equivalently when $\kappa$ preserves the space of sections of the real subbundle
 **Theorem.** The real structure induces an involution of the affine space of connections,
 
 $$
-\tau:\mathcal{A}\to\mathcal{A},\qquad \tau(A)=\kappa A\kappa^{-1},
+\boxed{\;\tau:\mathcal{A}\to\mathcal{A},\qquad \tau(A)=\kappa A\kappa^{-1}\;},
 $$
 
 an affine map whose linear part is the conjugation of the one-forms, and the fixed points of $\tau$ are the **real connections**. The curvature of a real connection is real, $F_{\tau(A)}=\kappa F_A\kappa^{-1}$, and the involution commutes with the gauge group action in the sense that $\tau(u\cdot A)=\kappa u\kappa^{-1}\cdot\tau(A)$; the real structures on the bundle form a torsor over the real gauge transformations, and the reality condition is an involution on the elements of the connection space.
@@ -85,8 +85,8 @@ an affine map whose linear part is the conjugation of the one-forms, and the fix
 **Theorem.** The involution $\tau$ of the connection space descends to the moduli space,
 
 $$
-\overline{\tau}:\mathcal{M}\to\mathcal{M},\qquad
-\overline{\tau}([A])=[\tau(A)],
+\boxed{\;\overline{\tau}:\mathcal{M}\to\mathcal{M},\qquad
+\overline{\tau}([A])=[\tau(A)]\;},
 $$
 
 and it is well defined because $\tau$ intertwines the gauge action; the fixed points of $\overline{\tau}$ are the gauge orbits that meet the fixed set of $\tau$, that is the gauge classes of real connections. The involution is an isometry of the natural metric on the moduli space when the real structure is compatible with the metric on the bundle, and the fixed locus is the moduli space of real connections, the quotient of $\mathcal{A}^{\tau}$ by the subgroup of the gauge group that commutes with $\kappa$.

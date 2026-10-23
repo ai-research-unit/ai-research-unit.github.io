@@ -22,7 +22,7 @@ and the set of **carrying units** is $I_\alpha(R) = \{ u \in R^\times : u\alpha(
 **Proposition (reflections are continuous involutions with closed fixed set).** For $u \in I_\alpha(R)$ the operator $\rho_u$ is a continuous additive operator, $\rho_u^2 = \mathrm{id}$, it is a homeomorphism of $R$ with $\rho_u^{-1} = \rho_u$, and its fixed set is the closed subring
 
 $$
-R^{\rho_u} = \{ x : \alpha(x) = u^{-1}xu \} = \{ x : \alpha(x) = c_{u^{-1}}(x) \} ,
+\boxed{\;R^{\rho_u} = \{ x : \alpha(x) = u^{-1}xu \} = \{ x : \alpha(x) = c_{u^{-1}}(x) \}\;} ,
 $$
 
 which contains the fixed subring $R^\alpha \cap Z(R)$ of the grade involution.
@@ -52,7 +52,7 @@ So the reflection differs from the inner automorphism $c_u$ exactly by the grade
 **Theorem (the correspondence between the elements and the reflections).** The map
 
 $$
-I_\alpha(R) \longrightarrow \{\text{reflections of } R\}, \qquad u \longmapsto \rho_u ,
+\boxed{\;I_\alpha(R) \longrightarrow \{\text{reflections of } R\}, \qquad u \longmapsto \rho_u\;} ,
 $$
 
 is surjective by definition, and its kernel is the set of units inducing the grade involution,
@@ -72,7 +72,7 @@ which is trivial when $\alpha$ is not inner. Hence the reflections of $R$ are in
 **Proposition (the reflections compose).** For carrying units $u, v$ the product of the reflections is the reflection carried by $u\alpha(v)$,
 
 $$
-\rho_u\circ\rho_v = \rho_{u\alpha(v)} ,
+\boxed{\;\rho_u\circ\rho_v = \rho_{u\alpha(v)}\;} ,
 $$
 
 and the reflections form a subgroup of the signed sandwich group when the grade involution is not inner, namely the image of $I_\alpha(R)$ under $u \mapsto \rho_u$, a homomorphic image of the carrying units in which $u$ acts through the automorphism $\alpha$; every reflection lies in the continuous automorphism group $\operatorname{Aut}_c(R)$.

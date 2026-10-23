@@ -73,7 +73,7 @@ where $m_i$ is the algebraic multiplicity and $e_i$ is the multiplicity of $\lam
 **Theorem.** Let $A$ have the primary decomposition over a splitting field. Then the spectral projections $P_i$ exist, are polynomials in $A$, satisfy
 
 $$
-P_i^2=P_i, \qquad P_iP_j=\delta_{ij}P_i, \qquad \sum_iP_i=I,
+\boxed{\;P_i^2=P_i, \qquad P_iP_j=\delta_{ij}P_i, \qquad \sum_iP_i=I\;},
 $$
 
 and the matrix
@@ -103,7 +103,7 @@ $$
 where $m_i$ is the algebraic multiplicity of $\lambda_i$. Consequently
 
 $$
-\operatorname{Tr}A=\sum_{i=1}^{r}\lambda_im_i, \qquad \det A=\prod_{i=1}^{r}\lambda_i^{m_i}.
+\boxed{\;\operatorname{Tr}A=\sum_{i=1}^{r}\lambda_im_i, \qquad \det A=\prod_{i=1}^{r}\lambda_i^{m_i}\;}.
 $$
 
 *Proof.* The projection $P_i$ is the identity on $V_i$ and zero on $V_j$ for $j\neq i$. Hence its rank is $\dim V_i=m_i$, and its trace is the trace of the identity on $V_i$, which is $m_i$. On $V_i$ the matrix has the form $\lambda_iI+N_i$ with $N_i$ nilpotent, so its trace is $\lambda_im_i$ and its determinant is $\lambda_i^{m_i}$; the trace and the determinant of $A$ are the sum and the product of the contributions of the primary blocks.
@@ -170,7 +170,7 @@ $$
 is the algebra of block-diagonal matrices, of dimension $\sum_i m_i^2$. It contains the centraliser $C(A)=\{X:AX=XA\}$, and it equals the centraliser exactly when $A$ is diagonalisable. In that case the off-diagonal part is the image of the commutator operator $\operatorname{ad}_A(X)=AX-XA$, and
 
 $$
-M_n(k)=C(A)\oplus\operatorname{im}\operatorname{ad}_A .
+\boxed{\;M_n(k)=C(A)\oplus\operatorname{im}\operatorname{ad}_A\;} .
 $$
 
 *Proof.* A matrix commuting with $A$ preserves each generalized eigenspace $V_i$, because $V_i$ is the kernel of $(A-\lambda_iI)^{m_i}$ and $X(A-\lambda_iI)^{m_i}=(A-\lambda_iI)^{m_i}X$. Hence it is block diagonal, so $C(A)\subseteq D$. If $A$ is diagonalisable, $A=\lambda_iI$ on each $V_i$, and every block-diagonal matrix commutes with $A$, so $C(A)=D$. Conversely, if $C(A)=D$, then every matrix of the corner $P_iM_nP_i$ commutes with $A$. The corner is isomorphic to $M_{m_i}(k)$ and acts faithfully on $V_i$; the only matrices commuting with all endomorphisms of $V_i$ are the scalars, so $A$ is scalar on $V_i$ for every $i$, and $A$ is diagonalisable. In the diagonalisable case $\operatorname{ad}_A$ acts on $P_iM_nP_j$ by multiplication by $\lambda_i-\lambda_j$, which is nonzero for $i\neq j$; hence the kernel is the diagonal part $D=C(A)$ and the image is the off-diagonal part, and the decomposition follows from the rank–nullity theorem.

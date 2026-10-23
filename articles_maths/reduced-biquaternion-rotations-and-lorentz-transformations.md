@@ -57,7 +57,9 @@ whose compact part is the diagonal circle $\{e^{i\theta}\}$.
 
 **Theorem (the action of a versor).** Every versor has the form
 $$
-P=e^{i\theta}\Pi_++e^{i\psi}\Pi_-,\qquad \theta,\psi\in\mathbb{R},
+\boxed{\;
+P=e^{i\theta}\Pi_++e^{i\psi}\Pi_-,\qquad \theta,\psi\in\mathbb{R}
+\;},
 $$
 it preserves the Euclidean form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$, it acts by left multiplication as the diagonal map
 $$
@@ -93,7 +95,9 @@ so the two elliptic rotations produce the diagonal phases $(\theta+\psi,\theta-\
 
 **Theorem (the hyperbolic rotation).** The element $j$ has $j^{2}=+1$, so
 $$
+\boxed{\;
 e^{j\phi}=\cosh\phi+j\sinh\phi
+\;}
 $$
 generates a non-compact one-parameter subgroup of hyperbolic rotations, and its action on the split complex plane $S_{j}=\mathbb{R}\{1,j\}$ is
 $$
@@ -144,7 +148,9 @@ since the algebra is commutative. Consequently the conjugation action, the orbit
 
 **Theorem (the factorisation of the polar form).** The polar form of an element, established in *Modulus–Unit Polar Decomposition of Reduced Biquaternions*, is
 $$
-\breve Q=\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-,\qquad \rho_{1},\rho_{2}\ge0,\quad \theta_{1},\theta_{2}\in(-\pi,\pi].
+\boxed{\;
+\breve Q=\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-,\qquad \rho_{1},\rho_{2}\ge0,\quad \theta_{1},\theta_{2}\in(-\pi,\pi]
+\;}.
 $$
 Setting
 $$

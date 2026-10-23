@@ -25,7 +25,7 @@ $$
 **Theorem (the induced involution is an isometric involution).** **(a)** $\Sigma$ maps $\mathcal{K}(X)$ into itself, because the image of a compact set under a continuous map is compact. **(b)** $\Sigma^2 = \operatorname{id}_{\mathcal{K}(X)}$, because $\sigma^2 = \operatorname{id}_X$. **(c)** $\Sigma$ is an isometry of the Hausdorff metric:
 
 $$
-d_H\bigl(\Sigma(A), \Sigma(B)\bigr) = d_H(A,B) \qquad (A, B \in \mathcal{K}(X)) .
+\boxed{\;d_H\bigl(\Sigma(A), \Sigma(B)\bigr) = d_H(A,B) \qquad (A, B \in \mathcal{K}(X))\;} .
 $$
 
 **(d)** The fixed set $\operatorname{Fix}\Sigma = \{A : \sigma(A) = A\}$ is closed in $\mathcal{K}(X)$ and consists exactly of the compact sets invariant under $\sigma$.
@@ -45,7 +45,7 @@ $$
 Then the Hutchinson operator and the induced involution commute,
 
 $$
-F \circ \Sigma = \Sigma \circ F ,
+\boxed{\;F \circ \Sigma = \Sigma \circ F\;} ,
 $$
 
 and the attractor $K$ is a fixed point of the involution, $\sigma(K) = K$.
@@ -77,7 +77,7 @@ $$
 and the self-similar measure $\mu$ is invariant under the involution,
 
 $$
-\sigma_\# \mu = \mu .
+\boxed{\;\sigma_\# \mu = \mu\;} .
 $$
 
 **Proof sketch.** The computation is a reindexing: $\sigma_\#(L\mu) = \sum_i p_i (\sigma\circ f_i)_\#\mu = \sum_i p_i (f_{\tau(i)}\circ\sigma)_\#\mu = \sum_j p_{\tau(j)}(f_j)_\#(\sigma_\#\mu) = L(\sigma_\#\mu)$, using $p_j = p_{\tau(j)}$ in the last step. Then $\sigma_\#\mu$ is a fixed point of $L$ and, by the uniqueness of the self-similar measure of *The Hutchinson Operator and Its Adjoint*, $\sigma_\#\mu = \mu$. The measure-theoretic construction of the symmetric measure, its invariance and the dimension of its quotient are those of *Fractal Analysis*'s *The Self-Similar Measure and the Involution*; the operator relation is what is stated here.

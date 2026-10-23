@@ -12,7 +12,7 @@ This article defines the semilinear involution of a ring, derives the identities
 **Definition.** Let $\varsigma$ be an automorphism of the ring $A$. A **$\varsigma$-semilinear involution** of $A$ is a map $\sigma : A \to A$ such that for all $a, b \in A$
 
 $$
-\sigma(a+b) = \sigma(a)+\sigma(b), \quad \sigma(ab) = \sigma(b)\sigma(a), \quad \sigma(1) = 1, \quad \sigma^2 = \mathrm{id}, \quad \sigma\varsigma = \varsigma^{-1}\sigma .
+\boxed{\;\sigma(a+b) = \sigma(a)+\sigma(b), \quad \sigma(ab) = \sigma(b)\sigma(a), \quad \sigma(1) = 1, \quad \sigma^2 = \mathrm{id}, \quad \sigma\varsigma = \varsigma^{-1}\sigma\;} .
 $$
 
 The last condition is the **semilinearity**: $\sigma$ carries the automorphism $\varsigma$ to its inverse. When $\varsigma = \mathrm{id}$ the definition reduces to that of an ordinary involution, so the linear case is the case of a trivial twisting automorphism.
@@ -20,7 +20,7 @@ The last condition is the **semilinearity**: $\sigma$ carries the automorphism $
 **Proposition (elementary).** Let $\sigma$ be $\varsigma$-semilinear. Then $\sigma$ is a bijection with $\sigma^{-1} = \sigma$, it is $\mathbb{Z}$-linear, it satisfies $\sigma(a^n) = \sigma(a)^n$, and it carries units to units. Moreover
 
 $$
-\sigma\varsigma = \varsigma^{-1}\sigma, \qquad \varsigma\sigma = \sigma\varsigma^{-1}, \qquad \sigma\varsigma^2 = \varsigma^{-2}\sigma, \qquad \sigma\varsigma^{k} = \varsigma^{-k}\sigma
+\boxed{\;\sigma\varsigma = \varsigma^{-1}\sigma, \qquad \varsigma\sigma = \sigma\varsigma^{-1}, \qquad \sigma\varsigma^2 = \varsigma^{-2}\sigma, \qquad \sigma\varsigma^{k} = \varsigma^{-k}\sigma\;}
 $$
 
 for every integer $k$.
@@ -32,7 +32,7 @@ for every integer $k$.
 **Theorem.** Let $\sigma$ be a $\varsigma$-semilinear involution and put $\tau = \sigma\varsigma$. Then $\tau$ is an **ordinary involution** of $A$, $\sigma = \tau\varsigma^{-1}$, and the automorphisms $\varsigma$ and $\sigma$ generate the dihedral group
 
 $$
-\langle \varsigma, \sigma \rangle = \{\varsigma^k, \sigma\varsigma^k : k \in \mathbb{Z}\}, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma\varsigma\sigma^{-1} = \varsigma^{-1}.
+\boxed{\;\langle \varsigma, \sigma \rangle = \{\varsigma^k, \sigma\varsigma^k : k \in \mathbb{Z}\}, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma\varsigma\sigma^{-1} = \varsigma^{-1}\;}.
 $$
 
 **Proof.** $\tau$ is additive and carries $1$ to $1$; it is anti-multiplicative, $\tau(ab) = \sigma(\varsigma(ab)) = \sigma(\varsigma(a)\varsigma(b)) = \sigma(\varsigma(b))\sigma(\varsigma(a)) = \tau(b)\tau(a)$; and $\tau^2 = \sigma\varsigma\sigma\varsigma = \sigma(\varsigma\sigma)\varsigma = \sigma(\sigma\varsigma^{-1})\varsigma = \varsigma^{-1}\varsigma = \mathrm{id}$, using the second identity of the previous proposition. The formula $\sigma = \tau\varsigma^{-1}$ is then immediate. The relation $\sigma\varsigma\sigma^{-1} = \varsigma^{-1}$ is the semilinearity with $\sigma^{-1} = \sigma$, and together with $\sigma^2 = \mathrm{id}$ it presents $\langle \varsigma, \sigma \rangle$ as the semidirect product $\langle \varsigma \rangle \rtimes \langle \sigma \rangle$, the dihedral group of order $2m$ when $\varsigma$ has finite order $m$ and an infinite dihedral group otherwise.

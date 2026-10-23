@@ -37,7 +37,7 @@ $$
 **Theorem (commutative case).** Let $M$ be a closed spin Riemannian manifold, let $A=C^{\infty}(M)$ act on $H=L^{2}(M,S)$ by pointwise multiplication, and let $D$ be the Cauchy–Riemann operator of the spinor bundle. Then the pure states of $A$ are the points of $M$ and
 
 $$
-d(x,y)=\text{the geodesic distance from }x\text{ to }y.
+\boxed{\;d(x,y)=\text{the geodesic distance from }x\text{ to }y\;}.
 $$
 
 **Proof.** For $f\in C^{\infty}(M)$ the commutator of $D$ with multiplication by $f$ is Clifford multiplication by the gradient, $[D,f]=c(df)$, so $\|[D,f]\|=\|df\|_{\infty}=\sup_M|\nabla f|$. The Connes distance is therefore
@@ -90,7 +90,7 @@ The **KO-dimension** of the triple is the residue $n\bmod8$ determined by the si
 **Theorem (Connes' reconstruction).** Let $(A,H,D)$ be a commutative spectral triple satisfying the axioms of dimension, regularity, finiteness, reality, first order and orientation, with $A$ commutative as a $*$-algebra. Then there is a closed spin Riemannian manifold $M$, a spinor bundle $S\to M$ and a spin structure such that
 
 $$
-A\cong C^{\infty}(M), \qquad H\cong L^{2}(M,S), \qquad D\cong\text{the Cauchy–Riemann operator of }S,
+\boxed{\;A\cong C^{\infty}(M), \qquad H\cong L^{2}(M,S), \qquad D\cong\text{the Cauchy–Riemann operator of }S\;},
 $$
 
 and the reconstruction is functorial.
@@ -116,7 +116,7 @@ of even degree, a closed cyclic cocycle modulo coboundaries; the operator $\exp(
 **Theorem (index pairing).** Let $e\in M_N(A)$ be an idempotent representing a class $[e]\in K_0(A)$. Then the compression $eDe$ is a Fredholm operator on the range of $e$, the pairing of its index with the Connes–Chern character is
 
 $$
-\langle\operatorname{ch}(D),[e]\rangle=\operatorname{index}(eDe),
+\boxed{\;\langle\operatorname{ch}(D),[e]\rangle=\operatorname{index}(eDe)\;},
 $$
 
 computed in the graded sense, and it depends only on the cyclic cohomology class of $\operatorname{ch}(D)$ and the $K$-theory class of $e$.

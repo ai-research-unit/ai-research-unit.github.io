@@ -30,7 +30,7 @@ $$
 
 **Theorem (orthogonal decomposition).** For a unitary $U$,
 $$
-L^2=\ker(U-I)\oplus\overline{\operatorname{Im}(U-I)},
+\boxed{\;L^2=\ker(U-I)\oplus\overline{\operatorname{Im}(U-I)}\;},
 $$
 the second summand being the closed span of the coboundaries $g\circ T-g$, and the two summands are orthogonal.
 
@@ -50,7 +50,7 @@ each $A_n$ a contraction of $L^2$ with $\|A_n\|\le1$.
 
 **Theorem (von Neumann).** Let $P$ be the orthogonal projection of $L^2$ onto $\ker(U-I)$. Then for every $f\in L^2$,
 $$
-A_nf=\frac1n\sum_{k=0}^{n-1}f\circ T^k\longrightarrow Pf\qquad \text{in } L^2,
+\boxed{\;A_nf=\frac1n\sum_{k=0}^{n-1}f\circ T^k\longrightarrow Pf\qquad \text{in } L^2\;},
 $$
 and $\|A_nf\|\le\|f\|_2$ for every $n$.
 
@@ -64,7 +64,7 @@ whose norm is at most $2\|g\|_2/n\to0$, and the general element of the closure i
 
 **Theorem (identification of the limit).** The limit $P$ of the ergodic operator is the conditional expectation onto the invariant $\sigma$-algebra,
 $$
-Pf=\mathbb E[f\mid\mathcal I]\qquad \text{a.e.},
+\boxed{\;Pf=\mathbb E[f\mid\mathcal I]\qquad \text{a.e.}\;},
 $$
 and $T$ is ergodic exactly when $P$ is the rank-one projection $Pf=\int f\,d\mu$.
 

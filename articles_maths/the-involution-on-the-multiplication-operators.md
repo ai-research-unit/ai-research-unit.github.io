@@ -15,7 +15,7 @@ The article assumes *Involutions of the Multiplication Operators* for $L_a$ and 
 **Definition.** The **involution on the multiplication operators** is the map
 
 $$
-{}^{*} : \operatorname{Mult}(A)\to\operatorname{Mult}(A), \qquad F^{*} = F^{\dagger}|_{\operatorname{Mult}(A)},
+\boxed{\;{}^{*} : \operatorname{Mult}(A)\to\operatorname{Mult}(A), \qquad F^{*} = F^{\dagger}|_{\operatorname{Mult}(A)}\;},
 $$
 
 the restriction of the adjoint involution of $\operatorname{End}_R(A)$. On the generators it is $L_a^{*} = L_{\sigma(a)}$.
@@ -39,8 +39,8 @@ the restriction of the adjoint involution of $\operatorname{End}_R(A)$. On the g
 **Theorem.** The fixed algebra and the skew part of the multiplication operators are
 
 $$
-\operatorname{Mult}(A)^{*} = \{F : F^{\dagger} = F\} = L_{A^\sigma}\cong A^\sigma, \qquad
-\operatorname{Mult}(A)^{-} = \{F : F^{\dagger} = -F\} = L_{A^-}\cong A^- ,
+\boxed{\;\operatorname{Mult}(A)^{*} = \{F : F^{\dagger} = F\} = L_{A^\sigma}\cong A^\sigma, \qquad
+\operatorname{Mult}(A)^{-} = \{F : F^{\dagger} = -F\} = L_{A^-}\cong A^-\;} ,
 $$
 
 and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult}(A)^{-}$ when $2$ is invertible.

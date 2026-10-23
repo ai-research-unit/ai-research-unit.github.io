@@ -56,7 +56,7 @@ that is the group $O(2)$. The versors give the maps of determinant $+1$ in it; t
 **Theorem (the square map).** The map
 
 $$
-\sigma:\mathrm{U}(1)\to \mathrm{U}(1), \qquad \sigma(u)=u^{2},
+\boxed{\; \sigma:\mathrm{U}(1)\to \mathrm{U}(1), \qquad \sigma(u)=u^{2} \;},
 $$
 
 is a surjective group homomorphism with kernel $\{1,-1\}$, and each element of the target has exactly two preimages, $u$ and $-u$. It is therefore a two-to-one cover of the circle by itself.

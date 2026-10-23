@@ -29,7 +29,7 @@ The equivariant maps are the morphisms of $\mathbf{Top}^{\mathbb{Z}/2}$, and the
 **Theorem.** An equivariant map $f : (X,\sigma) \to (Y,\tau)$ induces a unique continuous map
 
 $$
-\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\},
+\boxed{\;\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\}\;},
 $$
 
 and a map $f^{fix} : X^{\sigma} \to Y^{\tau}$ by restriction; the two assignments are functorial, and the square
@@ -99,7 +99,7 @@ The converse fails: an ordinary homotopy equivalence need not be equivariant, an
 **Theorem.** Let $H$ be an equivariant homotopy from $f$ to $g$. Then $H$ descends to a homotopy
 
 $$
-\bar H : (X/\sigma)\times I \longrightarrow Y/\tau, \qquad \bar H(\{x,\sigma x\}, t) = \bar H(x,t),
+\boxed{\;\bar H : (X/\sigma)\times I \longrightarrow Y/\tau, \qquad \bar H(\{x,\sigma x\}, t) = \bar H(x,t)\;},
 $$
 
 from $\bar f$ to $\bar g$. Consequently an equivariant homotopy equivalence induces a homotopy equivalence of the orbit spaces.
@@ -115,7 +115,7 @@ from $\bar f$ to $\bar g$. Consequently an equivariant homotopy equivalence indu
 **Theorem.** Let $Y$ carry the trivial involution. Then the correspondence $f \mapsto \bar f$ is a bijection
 
 $$
-[X/\sigma, Y] \ \cong \ [X, Y_{tr}]^{G}
+\boxed{\;[X/\sigma, Y] \ \cong \ [X, Y_{tr}]^{G}\;}
 $$
 
 between the ordinary homotopy classes of maps $X/\sigma \to Y$ and the equivariant homotopy classes of equivariant maps $X \to Y_{tr}$.

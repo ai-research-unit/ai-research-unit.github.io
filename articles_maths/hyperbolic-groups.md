@@ -30,7 +30,7 @@ The boundary with Part III is the one fixed for this block. What is developed he
 **Definition.** For $p \in X$ the **Gromov product** of $x, y$ with respect to $p$ is
 
 $$
-(x\vert y)_p = \tfrac{1}{2}\bigl(d(p,x)+d(p,y)-d(x,y)\bigr) ,
+\boxed{\;(x\vert y)_p = \tfrac{1}{2}\bigl(d(p,x)+d(p,y)-d(x,y)\bigr)\;} ,
 $$
 
 a non-negative quantity measuring how long the geodesics from $p$ to $x$ and from $p$ to $y$ travel together. In a tree the product is the length of the common initial segment; in general $X$ is $\delta$-hyperbolic exactly when the products satisfy the four-point inequality up to $2\delta$, which is the form of hyperbolicity used in the construction of the boundary.
@@ -100,7 +100,7 @@ where $(\xi\vert\eta)_p$ is the Gromov product of two representatives. For $\var
 **Theorem (quasi-symmetry).** A quasi-isometry $f : X \to Y$ of proper hyperbolic spaces induces a homeomorphism of boundaries which is **quasi-symmetric** with respect to visual metrics: there is a control function $\eta : [0,\infty) \to [0,\infty)$ with $\eta(t) \to 0$ as $t \to 0$ such that
 
 $$
-\frac{d(\xi_1,\xi_2)}{d(\xi_1,\xi_3)} < t \;\Longrightarrow\; \frac{d(f\xi_1,f\xi_2)}{d(f\xi_1,f\xi_3)} < \eta(t)
+\boxed{\;\frac{d(\xi_1,\xi_2)}{d(\xi_1,\xi_3)} < t \;\Longrightarrow\; \frac{d(f\xi_1,f\xi_2)}{d(f\xi_1,f\xi_3)} < \eta(t)\;}
 $$
 
 for all triples of distinct boundary points. The quasi-symmetric structure of the boundary is therefore a quasi-isometry invariant finer than the topology, and it is the invariant used in the rigidity theorems.

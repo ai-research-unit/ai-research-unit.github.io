@@ -38,7 +38,9 @@ called quaternion, vector and total conjugation. Each is an involution: applying
 **Worked values.** For $\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z$,
 
 $$
-\tilde{q}^{\natural} = 1-2\vec e_x+\vec e_y-3\vec e_z, \qquad -\tilde{q}^{\natural} = -1+2\vec e_x-\vec e_y+3\vec e_z, \qquad -\tilde q = -1-2\vec e_x+\vec e_y-3\vec e_z.
+\boxed{\;
+\tilde{q}^{\natural} = 1-2\vec e_x+\vec e_y-3\vec e_z, \qquad -\tilde{q}^{\natural} = -1+2\vec e_x-\vec e_y+3\vec e_z, \qquad -\tilde q = -1-2\vec e_x+\vec e_y-3\vec e_z
+\;}.
 $$
 
 **Proposition (fixed-point subspaces).** The fixed points of the three involutions are
@@ -104,7 +106,9 @@ $$
 So $\operatorname{Ad}_u$ fixes $\vec e_x$ and carries $\vec e_y$ to $\vec e_z$ and $\vec e_z$ to $-\vec e_y$; its matrix in the basis $(\vec e_x,\vec e_y,\vec e_z)$ is
 
 $$
-R_u = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix},
+\boxed{\;
+R_u = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix}
+\;},
 $$
 
 and it agrees with the general formula $R_{\tilde q} = \bigl(1-2(q_y^2+q_z^2),\,2(q_xq_y-q_tq_z),\,2(q_xq_z+q_tq_y);\ \dots\bigr)$ at $q_t = q_x = 1/\sqrt2$, $q_y = q_z = 0$. The reading of $R_u$ as the quarter turn about $\vec e_x$, and of the assignment $u\mapsto R_u$ as the two-to-one covering $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, is in *Quaternion Rotations and Reflections*.
@@ -120,7 +124,9 @@ $$
 the worked element has image
 
 $$
-\mathsf{M}_2(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}.
+\boxed{\;
+\mathsf{M}_2(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}
+\;}.
 $$
 
 Its trace is $2q_t = 2$ and its determinant is $\langle\tilde q\rangle_{\natural} = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_t$ and $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}$.

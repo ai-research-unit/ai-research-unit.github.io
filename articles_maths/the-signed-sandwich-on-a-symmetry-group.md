@@ -23,7 +23,7 @@ Throughout, $G$ is a graded group with central involution $z$ and grading homomo
 
 **Proposition.** The even part $G_0$ is a subgroup, the odd part $G_1$ is a coset, the product of two even or two odd elements is even and the product of an even and an odd element is odd:
 $$
-G_0\,G_0 \subseteq G_0, \qquad G_1\,G_1 \subseteq G_0, \qquad G_0\,G_1 \subseteq G_1, \qquad G_1\,G_0 \subseteq G_1 .
+\boxed{\;G_0\,G_0 \subseteq G_0, \qquad G_1\,G_1 \subseteq G_0, \qquad G_0\,G_1 \subseteq G_1, \qquad G_1\,G_0 \subseteq G_1\;} .
 $$
 The sign element $z$ is even, $z \in G_0$.
 
@@ -88,7 +88,7 @@ $$
 **Proposition (composition).** The signed sandwiches compose by
 
 $$
-S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b},
+\boxed{\;S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b}\;},
 $$
 
 and the identity is $S^{\alpha}_{e,e} = \mathrm{id}$; the inverse is
@@ -124,7 +124,7 @@ which contains the fixed subgroup $G^{\langle\alpha\rangle} = G_0$ when $a$ comm
 **Theorem (the reflection).** Let $V$ be a quadratic space with polar form $B$ and let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. In the pin group $\mathrm{Pin}(V,\mathfrak{Q}) \leq \Gamma(V,\mathfrak{Q})$ the signed inner conjugation by the vector $u$ is the reflection in $u^{\perp}$,
 
 $$
-\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u, \qquad v \in V,
+\boxed{\;\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u, \qquad v \in V\;},
 $$
 
 while the unsigned inner conjugation is its negative, $\mathrm{Ad}_u(v) = -\rho_u(v)$. The signed sandwich is therefore the two-sided operator that realises the reflections, and the unsigned one realises them only up to sign.

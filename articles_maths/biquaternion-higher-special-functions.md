@@ -77,7 +77,7 @@ The parity of $\vec u^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an i
 For integer $\nu = n$, the result is
 
 $$
-J_n(\theta \vec u) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases}
+\boxed{\; J_n(\theta \vec u) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
 $$
 
 where $I_n(\theta)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\vec u$.
@@ -137,7 +137,7 @@ The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients (
 **The pure oscillatory case.** For $\tilde{Q} = \theta \vec u$ with $\theta \neq 0$ and $\vec u^2 = -e_t$, the recurrence gives
 
 $$
-P_n(\theta \vec u) = \begin{cases} P_n(i\theta) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases}
+\boxed{\; P_n(\theta \vec u) = \begin{cases} P_n(i\theta) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
 $$
 
 where $P_n(i\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $i\theta$. The generator $\vec u$ plays the role of the imaginary unit, so no reduction to $P_n(\theta)$ holds: only the even part of $P_n$ survives on $e_t$ and only the odd part on $\vec u$. For instance $P_2(\theta\vec u) = -(3\theta^2+1)/2$, whereas $P_2(\theta) = (3\theta^2-1)/2$. This follows from the recurrence and the alternating powers of $\vec u$.
@@ -210,7 +210,7 @@ The two series are not the ordinary hypergeometric function evaluated at $\theta
 For $\tilde{Q} = \vec Q$ with $\vec Q^2 = 0$, the powers of $\tilde{Q}$ truncate, and the hypergeometric series reduces to
 
 $$
-{}_2F_1(a, b; c; \vec Q) = e_t + \frac{ab}{c} \vec Q.
+\boxed{\; {}_2F_1(a, b; c; \vec Q) = e_t + \frac{ab}{c} \vec Q \;}.
 $$
 
 The higher terms vanish because $\vec Q^n = 0$ for $n \geq 2$. This is the analogue of the linear approximation of the hypergeometric function near zero.

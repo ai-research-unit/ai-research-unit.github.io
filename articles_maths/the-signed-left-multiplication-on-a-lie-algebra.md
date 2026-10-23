@@ -64,7 +64,7 @@ and the ordinary left multiplication is recovered by $\alpha\circ\ell^{\alpha}_a
 **Theorem (the annihilated elements).** The kernel of the signed left multiplication is the centraliser of $\alpha(a)$,
 
 $$
-\ker\ell^{\alpha}_a = \{x : [a,\alpha(x)] = 0\} = \mathfrak{c}(\alpha(a)) ,
+\boxed{\;\ker\ell^{\alpha}_a = \{x : [a,\alpha(x)] = 0\} = \mathfrak{c}(\alpha(a))\;} ,
 $$
 
 and the operator is injective exactly when $\alpha(a)$ is not central in any summand.
@@ -80,7 +80,7 @@ and the operator is injective exactly when $\alpha(a)$ is not central in any sum
 **Theorem (the fixed elements).** The fixed set of the signed left multiplication as a linear map is
 
 $$
-\operatorname{Fix}(\ell^{\alpha}_a) = \{x : [a,\alpha(x)] = x\} ,
+\boxed{\;\operatorname{Fix}(\ell^{\alpha}_a) = \{x : [a,\alpha(x)] = x\}\;} ,
 $$
 
 and it is nonempty exactly when the operator has a fixed point; it is the solution set of the linear equation $\operatorname{ad}_a\alpha(x) = x$, an affine subspace that is a coset of the kernel, and it is a single point exactly when $\operatorname{ad}_a\alpha$ has no eigenvalue $1$.
@@ -96,7 +96,7 @@ and it is nonempty exactly when the operator has a fixed point; it is the soluti
 **Theorem.** The signed sandwich is the signed left multiplication followed by a signed right multiplication,
 
 $$
-\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_a\,R_{\alpha(b)} = r^{\alpha}_{b}\,L_{\alpha(a)} ,
+\boxed{\;\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_a\,R_{\alpha(b)} = r^{\alpha}_{b}\,L_{\alpha(a)}\;} ,
 $$
 
 and it is the composite of the signed left multiplication with a right multiplication of the $\alpha$-transformed parameter; the unsigned sandwich is the special case $\alpha = \mathrm{id}$.

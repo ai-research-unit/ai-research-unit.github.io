@@ -39,7 +39,7 @@ The three operators are the three representations of the same group $\mathbb{R}$
 **Theorem (invariance as a divergence condition).** Let $m$ be a smooth volume with $\operatorname{div}_mX=\mathcal{L}_Xm/m$; the measure $m$ is invariant under the flow if and only if $\operatorname{div}_mX=0$, and the density $\rho$ evolves as
 
 $$
-\frac{\partial\rho}{\partial t}=-\operatorname{div}(\rho X) \qquad \text{(the Liouville equation)},
+\boxed{\;\frac{\partial\rho}{\partial t}=-\operatorname{div}(\rho X) \qquad \text{(the Liouville equation)}\;},
 $$
 
 so a smooth positive density $\rho$ gives an invariant measure exactly when $\operatorname{div}(\rho X)=0$.
@@ -67,7 +67,7 @@ the directional derivative of $f$ along $X$; consequently $\Phi_t=\exp(t\mathcal
 **Theorem (the Lie derivative is a derivation).** For $f,g\in C^1(M)$ and vector fields $X,Y$,
 
 $$
-\mathcal{L}_X(fg)=(\mathcal{L}_Xf)g+f(\mathcal{L}_Xg), \qquad [\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]},
+\boxed{\;\mathcal{L}_X(fg)=(\mathcal{L}_Xf)g+f(\mathcal{L}_Xg), \qquad [\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}\;},
 $$
 
 where $[X,Y]=XY-YX$ is the Lie bracket of vector fields and $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_X\mathcal{L}_Y-\mathcal{L}_Y\mathcal{L}_X$; consequently $X\mapsto\mathcal{L}_X$ is a representation of the Lie algebra $\mathrm{X}(M)$ by derivations of $C^\infty(M)$.
@@ -93,7 +93,7 @@ where $\iota_X$ is the interior product and $d$ the exterior derivative; in part
 **Theorem (Stone for the flow operator).** If $\mu$ is a $\varphi_t$-invariant probability measure, then $\Phi_tf=f\circ\varphi_t$ is a strongly continuous one-parameter unitary group on $L^2(M,\mu)$, and there is a unique self-adjoint operator $A$ with
 
 $$
-\Phi_t=\exp(itA), \qquad A=-i\mathcal{L}_X ,
+\boxed{\;\Phi_t=\exp(itA), \qquad A=-i\mathcal{L}_X\;} ,
 $$
 
 on the domain where the generator exists, with $\mathcal{L}_X$ essentially skew-adjoint; the spectral measure $E$ of $A$ gives $\Phi_t=\int_{\mathbb{R}}\exp(it\lambda)dE(\lambda)$.

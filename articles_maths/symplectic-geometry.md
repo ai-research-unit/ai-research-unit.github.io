@@ -80,7 +80,7 @@ The central local fact of symplectic geometry is that a symplectic form has no l
 **Theorem (Darboux).** Let $(M, \omega)$ be a symplectic manifold of dimension $2m$. About every point $x \in M$ there is a chart $(\Xi, x_1, \ldots, x_m, y_1, \ldots, y_m)$ centred at $x$ in which
 
 $$
-\omega = \sum_{i=1}^{m} dx_i \wedge dy_i .
+\boxed{\;\omega = \sum_{i=1}^{m} dx_i \wedge dy_i\;} .
 $$
 
 Consequently every symplectic manifold of dimension $2m$ is locally symplectomorphic to $(\mathbb{R}^{2m}, \omega_0)$.
@@ -132,7 +132,7 @@ $$
 **Theorem.** The Jacobi identity for the bracket is equivalent to the closedness of $\omega$: substituting the Hamiltonian fields into the invariant formula for the differential of a $2$-form and using $[X_f, X_g] = -X_{\{f,g\}}$ gives
 
 $$
-d\omega(X_f, X_g, X_h) = -2\bigl(\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}\bigr).
+\boxed{\;d\omega(X_f, X_g, X_h) = -2\bigl(\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}\bigr)\;}.
 $$
 
 Consequently, on a symplectic manifold the bracket satisfies the Jacobi identity, and the vector space $C^\infty(M)$ is a Lie algebra under it.
@@ -232,7 +232,7 @@ where $X^{\#}$ is the fundamental vector field of the action and $X_{\mu_X}$ is 
 **Theorem (Marsden–Weinstein).** Let $G$ act freely and properly on the symplectic manifold $(M, \omega)$ with an equivariant momentum map $\mu$, and suppose $0 \in \mathrm{G}^*$ is a regular value of $\mu$. Then the quotient
 
 $$
-M /\!/ G = \mu^{-1}(0)/G
+\boxed{\;M /\!/ G = \mu^{-1}(0)/G\;}
 $$
 
 is a smooth manifold of dimension $\dim M - 2\dim G$, and it carries a unique symplectic form $\omega_{\mathrm{red}}$ with

@@ -103,7 +103,7 @@ and the resolution is unique.
 **Theorem.** Let $h=\sum_{i}\lambda_{i}e_{i}$ be a Hermitian spectral resolution. Applying the involution to the resolution gives the same resolution:
 
 $$
-h^{*}=\sum_{i}\lambda_{i}e_{i}^{*}=\sum_{i}\lambda_{i}e_{i}=h .
+\boxed{\;h^{*}=\sum_{i}\lambda_{i}e_{i}^{*}=\sum_{i}\lambda_{i}e_{i}=h\;} .
 $$
 
 The permutation of the eigenprojectors is the identity, and every eigenvalue is fixed by $\varsigma$.
@@ -174,7 +174,7 @@ is the set of Hermitian elements whose mixed Jordan Peirce components vanish. It
 **Proposition.** In the associative algebra $A$, the centraliser of $h$ is the diagonal Peirce part
 
 $$
-C_{A}(h)=\bigoplus_{i=1}^{r}e_{i}Ae_{i},
+\boxed{\;C_{A}(h)=\bigoplus_{i=1}^{r}e_{i}Ae_{i}\;},
 $$
 
 and it contains $F[h]$. Its Hermitian part is the diagonal part $D$ of $J(A)$.
@@ -190,7 +190,7 @@ and it contains $F[h]$. Its Hermitian part is the diagonal part $D$ of $J(A)$.
 **Theorem.** Suppose $F=\mathbb{C}$, $\varsigma$ is the complex conjugation, $F_{0}=\mathbb{R}$, and $J(A)$ is formally real. Then every Hermitian element $h\in H(A)$ has a Hermitian spectral resolution
 
 $$
-h=\sum_{i=1}^{r}\lambda_{i}e_{i}
+\boxed{\;h=\sum_{i=1}^{r}\lambda_{i}e_{i}\;}
 $$
 
 with $\lambda_{i}\in\mathbb{R}$ and $e_{i}$ Hermitian idempotents. The resolution is unique, and it is the spectral resolution of $h$ in the formally real Jordan algebra $J(A)$.

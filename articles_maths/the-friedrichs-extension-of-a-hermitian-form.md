@@ -59,7 +59,7 @@ $$
 characterised by
 
 $$
-t(u,v)=\langle A_Fu,v\rangle\qquad(u\in D(A_F),\ v\in H_t),
+\boxed{\;t(u,v)=\langle A_Fu,v\rangle\qquad(u\in D(A_F),\ v\in H_t)\;},
 $$
 
 and $A_F$ is bounded below by $m$. The operator $A_F$ is the **Friedrichs extension** of $t$; its form domain is $H_t$, so $\mathcal{D}(A_F^{1/2})=H_t$, and
@@ -73,7 +73,7 @@ $$
 **Theorem (maximality).** Among all self-adjoint operators $A$ that represent the form $t$, the Friedrichs extension is the largest: if $A$ represents $t$ then
 
 $$
-A\le A_F
+\boxed{\;A\le A_F\;}
 $$
 
 in the order of self-adjoint operators, equivalently $A_F^{-1}\le A^{-1}$ on the positive part; and the Friedrichs extension is the unique self-adjoint extension of $t$ whose operator domain is contained in $H_t$, the smallest possible form domain.
@@ -99,7 +99,7 @@ in the order of self-adjoint operators, equivalently $A_F^{-1}\le A^{-1}$ on the
 **Proposition (characterisation).** $A_N$ is the self-adjoint extension of $T$ with $\ker A_N=\ker A_F$, and it is the unique extension whose form domain contains all the other form domains; for every self-adjoint extension $A$ of $T$,
 
 $$
-A_N\le A\le A_F ,
+\boxed{\;A_N\le A\le A_F\;} ,
 $$
 
 so the Krein–von Neumann extension is the smallest and the Friedrichs extension the largest in the operator order.

@@ -15,7 +15,7 @@ The article assumes *Commutative Algebras with an Involution* for $\sigma$, *Inv
 **Theorem (existence and uniqueness).** For every $F \in \operatorname{End}_R(A)$ there is a unique $F^{\dagger}\in\operatorname{End}_R(A)$ with
 
 $$
-B(Fx,y) = B(x,F^{\dagger}y) \qquad \text{for all } x, y \in A .
+\boxed{\;B(Fx,y) = B(x,F^{\dagger}y) \qquad \text{for all } x, y \in A\;} .
 $$
 
 *Proof.* The map $y\mapsto B(F\,\cdot\,,y)$ is $R$-linear, so it is an element of the dual of $A$; non-degeneracy identifies the dual with $A$ through $z\mapsto B(\,\cdot\,,z)$, so there is a unique $z$ with $B(Fx,y) = B(x,z)$ for all $x$; put $F^{\dagger}y = z$. The assignment is additive and $R$-linear in $F$ and in $y$ because $B$ is bilinear.
@@ -25,7 +25,7 @@ $$
 **Theorem.** The map ${}^{\dagger} : \operatorname{End}_R(A)\to\operatorname{End}_R(A)$ is additive, $R$-linear, of order two, and anti-multiplicative:
 
 $$
-(F+G)^{\dagger} = F^{\dagger}+G^{\dagger}, \qquad (\lambda F)^{\dagger} = \lambda F^{\dagger}, \qquad (FG)^{\dagger} = G^{\dagger}F^{\dagger}, \qquad (F^\dagger)^\dagger = F .
+\boxed{\;(F+G)^{\dagger} = F^{\dagger}+G^{\dagger}, \qquad (\lambda F)^{\dagger} = \lambda F^{\dagger}, \qquad (FG)^{\dagger} = G^{\dagger}F^{\dagger}, \qquad (F^\dagger)^\dagger = F\;} .
 $$
 
 Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of *Involutive Algebras*.
@@ -46,7 +46,7 @@ Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{
 
 **Theorem.** For every $a \in A$ the adjoint of the multiplication $L_a$ is the multiplication by the image of $a$ under the involution:
 $$
-L_a^{\dagger} = L_{\sigma(a)} .
+\boxed{\;L_a^{\dagger} = L_{\sigma(a)}\;} .
 $$
 
 *Proof.* $B(L_ax,y) = B(ax,y) = B(x,\sigma(a)y) = B(x,L_{\sigma(a)}y)$ for all $x,y$, so $L_{\sigma(a)}$ satisfies the defining relation of the adjoint, and the adjoint is unique.

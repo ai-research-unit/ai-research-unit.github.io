@@ -80,7 +80,7 @@ The symmetry conditions do not only classify the forms; when $2$ is invertible t
 **Theorem.** Let $2$ be invertible in $R$. Then every bilinear form $B$ on $M$ has a unique decomposition
 
 $$
-B = B_{s} + B_{a}, \qquad B_{s}^{\intercal} = B_{s}, \qquad B_{a}^{\intercal} = -B_{a},
+\boxed{\;B = B_{s} + B_{a}, \qquad B_{s}^{\intercal} = B_{s}, \qquad B_{a}^{\intercal} = -B_{a}\;},
 $$
 
 into a **symmetric part** and an **alternating part**, given by
@@ -233,7 +233,7 @@ The restriction of a non-degenerate form to a general submodule need not be non-
 **Proposition.** Let $B$ be non-degenerate on a finite-dimensional space $V$ over a field, and let $W \subseteq V$ be a subspace. Then
 
 $$
-\dim W + \dim W^\perp = \dim V, \qquad W \subseteq (W^\perp)^\perp,
+\boxed{\;\dim W + \dim W^\perp = \dim V, \qquad W \subseteq (W^\perp)^\perp\;},
 $$
 
 and the following are equivalent: (i) $V = W \perp W^\perp$; (ii) $W \cap W^\perp = 0$; (iii) the restriction of $B$ to $W$ is non-degenerate.
@@ -265,7 +265,7 @@ $$
 such that
 
 $$
-B(e_i, e_j) = 0, \qquad B(f_i, f_j) = 0, \qquad B(e_i, f_j) = \delta_{ij}.
+\boxed{\;B(e_i, e_j) = 0, \qquad B(f_i, f_j) = 0, \qquad B(e_i, f_j) = \delta_{ij}\;}.
 $$
 
 In the ordering $e_1, f_1, \ldots, e_m, f_m$ the Gram matrix is the block sum of $m$ copies of $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$; in the ordering $e_1, \ldots, e_m, f_1, \ldots, f_m$, which is the one used, it is the block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$ with $I_m$ the identity matrix of size $m$.

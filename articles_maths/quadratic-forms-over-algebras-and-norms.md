@@ -247,7 +247,7 @@ The form $N$ is the **norm** of the composition algebra, and the identity is a *
 **Proposition.** In a composition algebra the polar form of the norm satisfies
 
 $$
-B_N(xy, xz) = N(x)B_N(y, z), \qquad B_N(xz, yz) = N(z)B_N(x, y),
+\boxed{\;B_N(xy, xz) = N(x)B_N(y, z), \qquad B_N(xz, yz) = N(z)B_N(x, y)\;},
 $$
 
 so left and right multiplication by $x$ are similarities of the norm with multiplier $N(x)$.
@@ -261,7 +261,7 @@ The dimensions $1, 2, 4, 8$ are the dimensions in which a composition law exists
 **Theorem (two squares).** For all $x_1, x_2, y_1, y_2$ in $F$,
 
 $$
-(x_1^2 + x_2^2)(y_1^2 + y_2^2) = (x_1y_1 - x_2y_2)^2 + (x_1y_2 + x_2y_1)^2.
+\boxed{\;(x_1^2 + x_2^2)(y_1^2 + y_2^2) = (x_1y_1 - x_2y_2)^2 + (x_1y_2 + x_2y_1)^2\;}.
 $$
 
 **Proof.** This is multiplicativity of the complex norm, $N(z)N(w) = N(zw)$, written in coordinates for $z = x_1 + ix_2$ and $w = y_1 + iy_2$.
@@ -269,7 +269,7 @@ $$
 **Theorem (four squares, Euler).** For all $x_i, y_i$ in $F$,
 
 $$
-\Bigl(\sum_{k=1}^{4} x_k^2\Bigr)\Bigl(\sum_{k=1}^{4} y_k^2\Bigr) = \sum_{k=1}^{4} z_k^2,
+\boxed{\;\Bigl(\sum_{k=1}^{4} x_k^2\Bigr)\Bigl(\sum_{k=1}^{4} y_k^2\Bigr) = \sum_{k=1}^{4} z_k^2\;},
 $$
 
 where $z = (x_1 + x_2\vec e_x + x_3\vec e_y + x_4\vec e_z)(y_1 + y_2\vec e_x + y_3\vec e_y + y_4\vec e_z)$ is the quaternion product; the coordinates $z_k$ of the product are the right-hand side.

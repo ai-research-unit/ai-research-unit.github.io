@@ -79,7 +79,7 @@ where the group $\mathbb{Z} \oplus \mathbb{Z}$ carries the **lexicographic** ord
 **Theorem (primes and convex subgroups).** Let $v$ be a valuation on $K$ with value group $\Gamma$. The prime ideals of $\mathcal{O}_v$ correspond bijectively to the convex subgroups $\Delta \subseteq \Gamma$, by
 
 $$
-\mathrm{P}_\Delta = \{x \in K : v(x) > \Delta\},
+\boxed{\;\mathrm{P}_\Delta = \{x \in K : v(x) > \Delta\}\;},
 $$
 
 with the convention that $\mathrm{P}_0 = \mathrm{M}_v$ and $\mathrm{P}_\Gamma = (0)$. The correspondence reverses inclusions, and
@@ -105,7 +105,7 @@ $$
 **Theorem (integral closure as an intersection).** Let $R$ be an integral domain with fraction field $K$. The integral closure of $R$ in $K$ is the intersection of all valuation rings $V$ of $K$ with $R \subseteq V$:
 
 $$
-\overline{R} = \bigcap_{V \supseteq R} V .
+\boxed{\;\overline{R} = \bigcap_{V \supseteq R} V\;} .
 $$
 
 **Proof.** An element of $\overline{R}$ lies in every valuation ring containing $R$, since valuation rings are integrally closed; this gives one inclusion. Conversely, suppose $x \in K$ is not integral over $R$. Then the ideal $x^{-1} R[x^{-1}]$ of the ring $R[x^{-1}]$ is proper: if it were the whole ring, then $1 = x^{-1} a$ for some $a \in R[x^{-1}]$, whence $x = a$ is a polynomial $\sum r_i x^{-i}$ in $x^{-1}$, and multiplying by a power $x^n$ gives a monic equation for $x$ over $R$. So $x^{-1}R[x^{-1}]$ lies in a maximal ideal $\mathrm{M}$ of $R[x^{-1}]$, and by Chevalley there is a valuation ring $V$ of $K$ with $R[x^{-1}] \subseteq V$ and $\mathrm{M}_V \cap R[x^{-1}] = \mathrm{M}$. Then $x^{-1} \in \mathrm{M}_V$, so $v(x^{-1}) > 0$ and $v(x) < 0$, hence $x \notin V$. Thus a non-integral element is missed by some valuation ring containing $R$, and the intersection is exactly $\overline{R}$.
@@ -133,7 +133,7 @@ $$
 **Theorem (fundamental inequality).** Let $L/K$ be a finite extension of degree $n$ and let $w_1, \ldots, w_g$ be the distinct extensions of $v$ to $L$. Then
 
 $$
-\sum_{i=1}^{g} e(w_i/v)\, f(w_i/v) \leq n .
+\boxed{\;\sum_{i=1}^{g} e(w_i/v)\, f(w_i/v) \leq n\;} .
 $$
 
 If $v$ is Henselian, in the sense defined below, then there is exactly one extension and equality holds, $e f = n$. If moreover $L/K$ is separable, equality holds for arbitrary $v$; this is the separable case of the fundamental equality, proved by passing to the completion and quoted here as a standard theorem of valuation theory from the literature.

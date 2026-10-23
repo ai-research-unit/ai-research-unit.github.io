@@ -36,7 +36,7 @@ $$
 **Theorem (the signed adjoint sandwich).** The adjoint of the signed sandwich on the graded group algebra is the signed sandwich with the involuted and adjointed parameters,
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}, \qquad\text{that is}\qquad \bigl(S^{\alpha}_{a,b}\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*} .
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}, \qquad\text{that is}\qquad \bigl(S^{\alpha}_{a,b}\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*}\;} .
 $$
 
 **Proof.** Compute the defining identity of the adjoint:
@@ -58,7 +58,7 @@ so $\langle S^{\alpha}_{a,b}(x), y\rangle = \tau\bigl(x^{*}\,\alpha(a)^{*}\alpha
 **Proposition.** The adjoint of the signed sandwich is obtained from the adjoint of the unsigned sandwich by replacing the two parameters by their images under the grade involution; for $\alpha = \mathrm{id}$ it is the familiar $(S_{a,b})^{*} = S_{a^{*},b^{*}}$. The composite $(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}$ is an **unsigned** sandwich, because the composition of two signed sandwiches is unsigned: by the composition law $S^{\alpha}_{a,b}\circ S^{\alpha}_{c,d} = S_{a\alpha(c),\,\alpha(d)b}$ of *The Signed Sandwich on a Symmetry Group*,
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*}\,S^{\alpha}_{a,b} = S_{\alpha(a)^{*}\alpha(a),\ \alpha(b)\alpha(b)^{*}},
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*}\,S^{\alpha}_{a,b} = S_{\alpha(a)^{*}\alpha(a),\ \alpha(b)\alpha(b)^{*}}\;},
 $$
 
 so $S^{\alpha}_{a,b}$ is unitary exactly when $\alpha(a)^{*} = \alpha(a)^{-1}$ and $\alpha(b)^{*} = \alpha(b)^{-1}$.
@@ -76,7 +76,7 @@ so $S^{\alpha}_{a,b}$ is unitary exactly when $\alpha(a)^{*} = \alpha(a)^{-1}$ a
 **Proposition.** The adjoint of the signed inner conjugation is the signed inner conjugation by the adjointed parameter,
 
 $$
-\bigl(\mathrm{Ad}^{\alpha}_{a}\bigr)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}},
+\boxed{\;\bigl(\mathrm{Ad}^{\alpha}_{a}\bigr)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}}\;},
 $$
 
 and it is unitary exactly when $\alpha(a)^{*} = a^{-1}$, in which case the adjoint is the inverse; the reflection $\rho_u = \mathrm{Ad}^{\alpha}_{u}$ is self-adjoint when the vector $u$ satisfies $u^{*} = u$, and then $\rho_u^{*} = \rho_u = \rho_u^{-1}$.

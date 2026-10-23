@@ -40,7 +40,9 @@ The requirement that both $\tilde{Q}_1$ and $\tilde{Q}_2$ be nonzero is essentia
 **Theorem.** A nonzero split biquaternion $\tilde{Q}$ is a zero divisor if and only if at least one of its two idempotent components vanishes:
 
 $$
-\tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0).
+\boxed{\;
+\tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0)
+\;}.
 $$
 
 **Proof.** In the idempotent basis the product is $\tilde{Q}_1 \tilde{Q}_2 = \tilde{Q}_{1+} \tilde{Q}_{2+} \tilde\Pi_1 + \tilde{Q}_{1-} \tilde{Q}_{2-} \tilde\Pi_2$, so $\tilde{Q}_1 \tilde{Q}_2 = 0$ if and only if $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ and $\tilde{Q}_{1-} \tilde{Q}_{2-} = 0$. If $\tilde{Q}_{1+} = 0$ and $\tilde{Q}_1 \neq 0$, then $\tilde{Q}_{1-} \neq 0$, and $\tilde{Q}_2 = \tilde\Pi_1 \neq 0$ satisfies $\tilde{Q}_1 \tilde{Q}_2 = 0$, so $\tilde{Q}_1$ is a zero divisor. Conversely, if $\tilde{Q}_1 \tilde{Q}_2 = 0$ with $\tilde{Q}_2 \neq 0$, then $\tilde{Q}_{2+} \neq 0$ or $\tilde{Q}_{2-} \neq 0$; in the first case $\tilde{Q}_{1+} \tilde{Q}_{2+} = 0$ with $\tilde{Q}_{2+} \neq 0$ forces $\tilde{Q}_{1+} = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_{1-} = 0$.
@@ -96,13 +98,17 @@ There are four real parameters $s_0, s_1, s_2, s_3$, so $Z_-$ is four-dimensiona
 The zero divisor set is
 
 $$
-\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}.
+\boxed{\;
+\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}
+\;}.
 $$
 
 The two subspaces intersect at the origin:
 
 $$
-Z_+ \cap Z_- = \{0\}.
+\boxed{\;
+Z_+ \cap Z_- = \{0\}
+\;}.
 $$
 
 Indeed, an element in both would have all coefficients both multiples of $1 - j$ and multiples of $1 + j$. Since $(1 - j)$ and $(1 + j)$ are linearly independent in $\mathbb{D}$, this forces all coefficients to vanish, i.e., $\tilde{Q} = 0$.

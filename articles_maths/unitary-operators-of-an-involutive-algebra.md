@@ -21,7 +21,7 @@ and **unitary for the twisted pairing** when the same equations hold with $T^{*_
 **Theorem.** $\mathrm{U}(E)$ and $\mathrm{U}(E,*_\sigma)$ are subgroups of the unit group $E^{\times}$, and
 
 $$
-T \in \mathrm{U}(E) \iff T \in E^{\times} \text{ and } T^{*}=T^{-1}, \qquad T \in \mathrm{U}(E,*_\sigma) \iff T \in E^{\times} \text{ and } T^{*_\sigma}=T^{-1} .
+\boxed{\;T \in \mathrm{U}(E) \iff T \in E^{\times} \text{ and } T^{*}=T^{-1}, \qquad T \in \mathrm{U}(E,*_\sigma) \iff T \in E^{\times} \text{ and } T^{*_\sigma}=T^{-1}\;} .
 $$
 
 Each is the fixed subgroup of the order-two automorphism $\theta(T)=(T^{*})^{-1}$, respectively $\theta_\sigma(T)=(T^{*_\sigma})^{-1}$, of $E^{\times}$, and each contains the identity and is closed under the adjoint and under inversion.
@@ -39,7 +39,7 @@ Each is the fixed subgroup of the order-two automorphism $\theta(T)=(T^{*})^{-1}
 **Theorem.** For every unitary operator $u \in \mathrm{U}(E)$ the operators $u+u^{*}$ and $u u^{*}$ are self-adjoint and $u-u^{*}$ is skew-adjoint, and
 
 $$
-u=\tfrac12\bigl(u+u^{*}\bigr)+\tfrac12\bigl(u-u^{*}\bigr), \qquad (u+u^{*})^{*}=u+u^{*}, \qquad (u-u^{*})^{*}=-(u-u^{*}), \qquad (uu^{*})^{*}=uu^{*}=1 .
+\boxed{\;u=\tfrac12\bigl(u+u^{*}\bigr)+\tfrac12\bigl(u-u^{*}\bigr), \qquad (u+u^{*})^{*}=u+u^{*}, \qquad (u-u^{*})^{*}=-(u-u^{*}), \qquad (uu^{*})^{*}=uu^{*}=1\;} .
 $$
 
 *Proof.* Apply $*$ and use $(ST)^{*}=S^{*}T^{*}$ and $u^{*}=u^{-1}$: $(u+u^{*})^{*}=u^{*}+u=u+u^{*}$, $(u-u^{*})^{*}=u^{*}-u=-(u-u^{*})$, and $(uu^{*})^{*}=u^{**}u^{*}=uu^{*}$, which is $1$ for a unitary $u$. This is the computation of *Unitary Elements of an Involutive Algebra* carried out in the involutive algebra $(E,*)$.
@@ -53,7 +53,7 @@ $$
 **Theorem.** The conjugation $c_{\sigma}(T)=\sigma T\sigma$ is an involutive automorphism of $E$ that carries the plain unitary group isomorphically onto the twisted one,
 
 $$
-c_{\sigma}\bigl(\mathrm{U}(E)\bigr)=\mathrm{U}(E,*_\sigma), \qquad c_{\sigma}\bigl(\mathrm{U}(E,*_\sigma)\bigr)=\mathrm{U}(E),
+\boxed{\;c_{\sigma}\bigl(\mathrm{U}(E)\bigr)=\mathrm{U}(E,*_\sigma), \qquad c_{\sigma}\bigl(\mathrm{U}(E,*_\sigma)\bigr)=\mathrm{U}(E)\;},
 $$
 
 and it carries $E^{+}$ onto $E^{+}_\sigma$ and $E^{-}$ onto $E^{-}_\sigma$.

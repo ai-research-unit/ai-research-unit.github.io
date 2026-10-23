@@ -108,7 +108,7 @@ natural in $\mathcal{U}$ and $\mathcal{F}$, converging to the sheaf cohomology o
 **Theorem (Leray's theorem).** Let $\mathcal{U}$ be an open cover of $X$ such that $\underline{H}^m(\mathcal{F})(\Xi_{i_0\ldots i_n}) = H^m(\Xi_{i_0\ldots i_n},\mathcal{F}) = 0$ for every nonempty finite intersection and every $m > 0$, that is, every nonempty finite intersection is **acyclic** for $\mathcal{F}$. Then the natural map
 
 $$
-\check H^n(\mathcal{U},\mathcal{F}) \to H^n(X,\mathcal{F})
+\boxed{\;\check H^n(\mathcal{U},\mathcal{F}) \to H^n(X,\mathcal{F})\;}
 $$
 
 is an isomorphism for every $n \geq 0$.
@@ -126,7 +126,7 @@ is an isomorphism for every $n \geq 0$.
 **Theorem (the nerve theorem).** Let $X$ be a paracompact space and $\mathcal{U}$ an open cover such that every nonempty finite intersection $\Xi_{i_0\ldots i_n}$ is contractible. Then the geometric realisation of the nerve is homotopy equivalent to $X$:
 
 $$
-|N(\mathcal{U})| \simeq X.
+\boxed{\;|N(\mathcal{U})| \simeq X\;}.
 $$
 
 *Proof sketch.* The homotopy equivalence is realised by a map sending the vertex $i$ to a point of $\Xi_i$ and extending over the simplices using the contractibility of the intersections; the inverse is a partition-of-unity map, which exists because the cover may be taken locally finite on a paracompact space, sending $x$ to the barycentric coordinates of the set of members of the cover containing $x$. The two composites are homotopic to the identity by a straight-line homotopy in the simplex of the nerve, the partitions of unity providing the continuity.
@@ -188,7 +188,7 @@ $$
 with the Čech differential $\delta$ in the horizontal direction and the exterior derivative $d$ in the vertical direction; the two commute, $\delta d = d\delta$, so that $K^{\bullet,\bullet}$ is a double complex, and the two spectral sequences of the filtration by total degree both converge to the hypercohomology of $\Omega^\bullet$: the first has $E_2^{n,m} = \check H^n(\mathcal{U},\mathcal{H}^m(\Omega^\bullet))$ with $\mathcal{H}^0(\Omega^\bullet) = \underline{\mathbb{R}}$ and $\mathcal{H}^m = 0$ for $m>0$ by the Poincaré lemma, and the second has $E_1^{n,m} = \Omega^m(\Xi_{(n)})$ computing $H^m_{dR}(M)$. The comparison of the two degenerations is the **de Rham theorem**,
 
 $$
-H^n_{dR}(M) \cong H^n(M;\mathbb{R}),
+\boxed{\;H^n_{dR}(M) \cong H^n(M;\mathbb{R})\;},
 $$
 
 and the construction is the model for the comparison theorems of the subject. The section is recorded here because it is the Čech complex, not the de Rham complex, that provides the second index; the differential forms themselves are those of the written *Differential Forms and Stokes' Theorem*, and are not redefined here.

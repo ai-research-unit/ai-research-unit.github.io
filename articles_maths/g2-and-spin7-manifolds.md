@@ -36,7 +36,7 @@ and this identifies $G_2$ as a subgroup of $SO(7)$, since $\varphi_0$ determines
 **Proposition.** The form $\varphi_0$ is definite: at each point the orbit $GL(7,\mathbb{R})\cdot\varphi_0$ is open in $\Lambda^3(\mathbb{R}^7)^*$, of dimension $49 - 14 = 35$, equal to the dimension of $\Lambda^3(\mathbb{R}^7)^*$; so the $3$-forms equivalent to $\varphi_0$ form an open cone, the cone of **definite** or **positive** $3$-forms. The $3$-form $\varphi_0$ determines an orientation and a metric by the identity
 
 $$
-g_\varphi(u,v)\,\mathrm{vol}_\varphi = \tfrac16\,\iota_u\varphi\wedge\iota_v\varphi\wedge\varphi,
+\boxed{\;g_\varphi(u,v)\,\mathrm{vol}_\varphi = \tfrac16\,\iota_u\varphi\wedge\iota_v\varphi\wedge\varphi\;},
 $$
 
 and $\psi_0 = *_\varphi\varphi_0\in\Lambda^4(\mathbb{R}^7)^*$ is the **coassociative 4-form**, which is also $G_2$-invariant.
@@ -54,7 +54,7 @@ for $e^7$ the $1$-form of the last coordinate and a suitable choice of orientati
 **Proposition.** The groups fit into the chain of inclusions
 
 $$
-SU(3) \subset G_2 \subset \mathrm{Spin}(7) \subset SO(8), \qquad G_2 \subset SO(7)\subset SO(8),
+\boxed{\;SU(3) \subset G_2 \subset \mathrm{Spin}(7) \subset SO(8), \qquad G_2 \subset SO(7)\subset SO(8)\;},
 $$
 
 with $\dim SU(3) = 8$, $\dim G_2 = 14$, $\dim \mathrm{Spin}(7)=21$ and $\dim SO(8) = 28$; moreover $\mathrm{Spin}(7)/G_2 = S^7$ and $G_2/SU(3) = S^6$, so that $G_2$ acts transitively on the six-sphere and $\mathrm{Spin}(7)$ on the seven-sphere.
@@ -122,7 +122,7 @@ with $d\Phi\in W_1$ and $d\Psi\in W_2$. A $\mathrm{Spin}(7)$-structure is **tors
 **Proposition (Betti number constraints).** Let $M$ be a compact $\mathrm{Spin}(7)$-manifold with holonomy exactly $\mathrm{Spin}(7)$. Then $b_1(M)=b_7(M)=0$, $b_2(M)=b_6(M)$, $b_3(M)=b_5(M)$, and
 
 $$
-\chi(M) = 2 + 2b_2(M) - 2b_3(M) + b_4(M).
+\boxed{\;\chi(M) = 2 + 2b_2(M) - 2b_3(M) + b_4(M)\;}.
 $$
 
 **Proof.** The vanishing of $b_1$ is as in the $G_2$ case: a parallel $1$-form would be fixed by the holonomy group, and $\mathrm{Spin}(7)$ fixes no vector. The remaining identities are Poincaré duality, and the Euler characteristic is the alternating sum with $b_0=b_8=1$ and $b_1=b_7=0$.

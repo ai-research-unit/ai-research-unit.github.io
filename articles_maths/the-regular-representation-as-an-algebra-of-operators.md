@@ -43,7 +43,7 @@ and $L$ and $R$ denote the maps $a \mapsto L_a$ and $a \mapsto R_a$.
 **Proposition.** Inside $\operatorname{End}(A)$,
 
 $$
-L(A)' = \{T : TL_a = L_aT \text{ for all } a \in A\} = R(A) \cong A^{\mathrm{opp}} ,
+\boxed{\;L(A)' = \{T : TL_a = L_aT \text{ for all } a \in A\} = R(A) \cong A^{\mathrm{opp}}\;} ,
 $$
 
 and dually $R(A)' = L(A)$.
@@ -63,7 +63,7 @@ and dually $R(A)' = L(A)$.
 **Theorem (the double centraliser for the regular representation).** If $A$ is a semisimple ring, then
 
 $$
-L(A)'' = L(A) .
+\boxed{\;L(A)'' = L(A)\;} .
 $$
 
 **Proof.** A semisimple ring is semisimple as a left module over itself, and by the proposition on the module over the operators the module ${}_AA$ read over $L(A)$ is ${}_AA$; it is therefore semisimple over $L(A)$. The double centraliser theorem of *Algebras of Endomorphisms* then gives $L(A)'' = L(A)$, the module structure used being the one just identified and the theorem being cited, not reproved.
@@ -83,7 +83,7 @@ $$
 **Proposition.** Let $A$ be a finite-dimensional semisimple algebra over a field $F$, with Wedderburn–Artin decomposition $A \cong \bigoplus_i M_{n_i}(D_i)$ and simple left modules $S_i$, and put $D_i = \operatorname{End}_A(S_i)$. Then the regular module decomposes isotypically,
 
 $$
-{}_AA \;\cong\; \bigoplus_i S_i^{\oplus m_i}, \qquad m_i = \dim_{D_i} S_i ,
+\boxed{\;{}_AA \;\cong\; \bigoplus_i S_i^{\oplus m_i}, \qquad m_i = \dim_{D_i} S_i\;} ,
 $$
 
 and consequently $\dim_F A = \sum_i m_i \dim_F S_i$. Reading the operators, $L(A) \cong \prod_i M_{n_i}(D_i)$ acts on the summand $S_i^{\oplus m_i}$ componentwise, and the commutant separates the components: $L(A)' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}})$ up to the choice of decompositions.

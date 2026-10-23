@@ -167,8 +167,8 @@ $$
 $$
 \boxed{\;
 \tilde\Xi=+i\vec u,\qquad \tilde\Xi=-i\vec u,\qquad \vec u=u_x\vec e_x+u_y\vec e_y+u_z\vec e_z,\ u_k\in\mathbb{R},\ u_x^2+u_y^2+u_z^2=1
-\;}
-$$,
+\;},
+$$
 
 equivalently over the real unit vectors with $\vec u^2=-e_t$; since $i$ is central the family is also written $\tilde\Xi=\pm\vec u i$.
 
@@ -451,8 +451,8 @@ the first because $\vec e_z\tilde\Pi_{+}=(\vec e_z+i\vec e_z^2)/2=(\vec e_z-i)/2
 $$
 \boxed{\;
 \tilde\Pi=\tfrac12 e_t+\tfrac12\tilde\Xi
-\;}
-$$,
+\;},
+$$
 
 where $\tilde\Xi\in\mathbb{B}$ is a root of $+1$, that is $\tilde\Xi^2=e_t$. There are no other idempotents in $\mathbb{B}$.
 

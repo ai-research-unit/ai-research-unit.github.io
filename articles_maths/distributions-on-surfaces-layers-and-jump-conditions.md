@@ -79,7 +79,7 @@ The definition applies unchanged when the two extensions are smooth on the two c
 
 **Theorem (jump formula).** Let $u$ be piecewise smooth across $S$. Then, in $\mathcal{D}'(\Omega)$,
 $$
-\partial/\partial x_j u = \{\partial/\partial x_j u\} + [u]\,n_j\,\delta_S .
+\boxed{\;\partial/\partial x_j u = \{\partial/\partial x_j u\} + [u]\,n_j\,\delta_S\;} .
 $$
 
 *Proof.* Differentiate the product $u = u^{+}H(\varphi) + u^{-}(1 - H(\varphi))$ by the Leibniz rule:
@@ -138,7 +138,7 @@ The single layer is a measure and has order $0$; the double layer has order $1$ 
 
 **Theorem (layer expansion).** Let $u \in \mathcal{D}'(\mathbb{R}^n)$ with $\operatorname{supp} u \subseteq S$. Then $u$ is locally a finite sum
 $$
-u = \sum_{k=0}^{N} \partial^k/\partial n^k(g_k\,\delta_S),
+\boxed{\;u = \sum_{k=0}^{N} \partial^k/\partial n^k(g_k\,\delta_S)\;},
 $$
 with densities $g_k$ that are distributions on $S$.
 
@@ -265,7 +265,7 @@ $$
 $$
 with flux $f = (f_1,\dots,f_n)$. Let $S$ be a non-characteristic surface of the equation, and write $\nu = (\nu_t,\nu_x)$ for its normal. Then
 $$
-[u]\,\nu_t + \sum_{j=1}^{n} [f_j(u)]\,\nu_{x_j} = 0 .
+\boxed{\;[u]\,\nu_t + \sum_{j=1}^{n} [f_j(u)]\,\nu_{x_j} = 0\;} .
 $$
 
 *Proof.* The equation is the divergence of the vector field $(u, f(u))$. By the jump formula for the divergence in $\mathbb{R}^{n+1}$, applied in the variables of the space, the singular part of the divergence is $[u]\nu_t\delta_S + \sum_j[f_j(u)]\nu_{x_j}\delta_S$, and it must vanish.

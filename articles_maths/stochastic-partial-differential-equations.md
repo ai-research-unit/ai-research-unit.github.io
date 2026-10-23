@@ -84,7 +84,7 @@ A **strong solution** is an $H$-valued process with $X_t\in D(A)$ for almost eve
 **Theorem (the stochastic convolution).** Let $\Phi$ be progressively measurable with $\sup_{t\le T}\mathbb{E}\|\Phi_t\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2<\infty$. Then the process
 
 $$
-W_A(t) = \int_0^tS(t-s)\Phi_s\,dW^\Sigma_s , \qquad t\in[0,T],
+\boxed{\;W_A(t) = \int_0^tS(t-s)\Phi_s\,dW^\Sigma_s , \qquad t\in[0,T]\;},
 $$
 
 is well defined, has continuous paths in $H$, and in the case of a deterministic $\Phi$ is Gaussian of mean zero with covariance operator
@@ -108,7 +108,7 @@ it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname
 **Theorem (Itô's formula in Hilbert space).** Let $X$ be a strong solution of the stochastic evolution equation with $F$ and $B$ bounded on bounded sets, and let $f : [0,T]\times H\to\mathbb{R}$ be $C^1$ in $t$ and twice Fréchet differentiable in $x$, with $\partial/\partial x\,f$, $\partial^2/\partial x^2\,f$ continuous and bounded on bounded sets. Then almost surely, for all $t$,
 
 $$
-f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f+\langle\partial/\partial x\,f,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)\Sigma B(X_s)^*\partial^2/\partial x^2\,f\bigr)\Bigr)ds+\int_0^t\langle\partial/\partial x\,f,B(X_s)\,dW^\Sigma_s\rangle_H .
+\boxed{\;f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f+\langle\partial/\partial x\,f,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)\Sigma B(X_s)^*\partial^2/\partial x^2\,f\bigr)\Bigr)ds+\int_0^t\langle\partial/\partial x\,f,B(X_s)\,dW^\Sigma_s\rangle_H\;} .
 $$
 
 *Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial^2/\partial x^2\,f\,B e_k\Sigma^{1/2},Be_k\Sigma^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry.
@@ -154,7 +154,7 @@ For $\Sigma=I$ this holds for the interval, where $\sum_nn^{-2}=\pi^2/6$ and the
 **Theorem (invariant measure of the linear equation).** Let $A$ generate an exponentially stable semigroup and let $\Sigma$ be trace class. Then the solution of $dX_t = AX_t\,dt+dW^\Sigma_t$ has, for every initial law, a limit law as $t\to\infty$, independent of the initial datum; it is the centred Gaussian measure $\mathcal{N}(0,\Sigma_\infty)$ with covariance operator
 
 $$
-\Sigma_\infty = \int_0^\infty S(t)\Sigma S(t)^*\,dt ,
+\boxed{\;\Sigma_\infty = \int_0^\infty S(t)\Sigma S(t)^*\,dt\;} ,
 $$
 
 which is the unique solution of the Lyapunov equation $A\Sigma_\infty+\Sigma_\infty A^*+\Sigma=0$; the measure is invariant for the transition semigroup, and the process is the infinite-dimensional **Ornstein–Uhlenbeck process**.

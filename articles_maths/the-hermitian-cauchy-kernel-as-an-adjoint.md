@@ -83,7 +83,7 @@ matrix $D$ of the four Hermitian Dirac operators, the circulant matrix $E$ of th
 kernels satisfies
 
 $$
-D^{\mathsf T}E = \delta I , \qquad E\,D^{\mathsf T} = \delta I \ \text{ on the appropriate domain} ,
+\boxed{\;D^{\mathsf T}E = \delta I , \qquad E\,D^{\mathsf T} = \delta I \ \text{ on the appropriate domain}\;} ,
 $$
 
 so the matrix kernel is the two-sided inverse of the adjoint matrix operator on the level of
@@ -118,8 +118,8 @@ Operator* are complementary projections and the singular operator is self-adjoin
 the module form:
 
 $$
-(\mathcal{C}^{+})^{\dagger}=\mathcal{C}^{+} , \qquad (\mathcal{C}^{-})^{\dagger}=\mathcal{C}^{-} , \qquad
-\mathcal{S}^{\dagger}=\mathcal{S} , \qquad \mathcal{S}^2=I .
+\boxed{\;(\mathcal{C}^{+})^{\dagger}=\mathcal{C}^{+} , \qquad (\mathcal{C}^{-})^{\dagger}=\mathcal{C}^{-} , \qquad
+\mathcal{S}^{\dagger}=\mathcal{S} , \qquad \mathcal{S}^2=I\;} .
 $$
 
 *Proof.* The one-operator statement is that of *The Cauchy Integral Operator*; passing to the matrix
@@ -145,8 +145,8 @@ on the boundary the one-sided extensions $\mathcal{C}^{\pm}f$ exist as continuou
 the **Plemelj–Sokhotski formulae**
 
 $$
-\mathcal{C}^{\pm}f = \pm\tfrac12 f + \mathcal{S}f , \qquad \mathcal{C}^{+}f-\mathcal{C}^{-}f = f ,
-\qquad \mathcal{C}^{+}f+\mathcal{C}^{-}f = 2\mathcal{S}f ,
+\boxed{\;\mathcal{C}^{\pm}f = \pm\tfrac12 f + \mathcal{S}f , \qquad \mathcal{C}^{+}f-\mathcal{C}^{-}f = f ,
+\qquad \mathcal{C}^{+}f+\mathcal{C}^{-}f = 2\mathcal{S}f\;} ,
 $$
 
 with $\mathcal{S}=2\mathcal{C}^{+}-I$ the singular operator of *The Cauchy Integral Operator*; the

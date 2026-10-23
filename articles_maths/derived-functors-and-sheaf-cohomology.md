@@ -67,7 +67,7 @@ $$
 be a resolution of $\mathcal{F}$ — a complex of sheaves, exact at every stage including $\mathcal{A}^0$, with only $\mathcal{F}$ in degree $-1$ — such that the cohomological $\delta$-functor $T^i = H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr)$ is effaceable; for instance, such that each $\mathcal{A}^i$ is acyclic, $H^j(X,\mathcal{A}^i) = 0$ for $j>0$. Then the natural map
 
 $$
-H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr) \to H^i(X,\mathcal{F})
+\boxed{\;H^i\bigl(\Gamma(X,\mathcal{A}^\bullet)\bigr) \to H^i(X,\mathcal{F})\;}
 $$
 
 induced by lifting $\mathcal{F}\to\mathcal{A}^\bullet$ to injective resolutions is an isomorphism for every $i$.
@@ -105,7 +105,7 @@ and when $\mathcal{A}^\bullet$ is a resolution of a single sheaf $\mathcal{F}$, 
 **Theorem (the Grothendieck spectral sequence).** Let $F : \mathcal{A}\to\mathcal{B}$ and $G : \mathcal{B}\to\mathcal{C}$ be left exact functors between abelian categories, and suppose that $F$ sends injective objects of $\mathcal{A}$ to $G$-acyclic objects of $\mathcal{B}$ (that is, $R^jG(F(I)) = 0$ for $j>0$ and $I$ injective). Then for every object $A$ of $\mathcal{A}$ there is a spectral sequence of cohomological type
 
 $$
-E_2^{n,m} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A),
+\boxed{\;E_2^{n,m} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A)\;},
 $$
 
 natural in $A$. When $\mathcal{A}$ is a category of sheaves, $\mathcal{B} = \mathcal{C} = \mathbf{Ab}$, $F = f_*$ for a continuous map $f : X\to Y$ and $G = \Gamma(Y,-)$, the hypothesis holds and the sequence becomes the **Leray spectral sequence**
@@ -127,7 +127,7 @@ $$
 the **five-term exact sequence** of the spectral sequence, obtained from the edge homomorphisms and the differential $d_2 : E_2^{0,1}\to E_2^{2,0}$. For the Leray spectral sequence it reads
 
 $$
-0 \to H^1(Y,f_*\mathcal{F})\to H^1(X,\mathcal{F})\to H^0(Y,R^1f_*\mathcal{F})\xrightarrow{\ d_2\ } H^2(Y,f_*\mathcal{F})\to H^2(X,\mathcal{F}),
+\boxed{\;0 \to H^1(Y,f_*\mathcal{F})\to H^1(X,\mathcal{F})\to H^0(Y,R^1f_*\mathcal{F})\xrightarrow{\ d_2\ } H^2(Y,f_*\mathcal{F})\to H^2(X,\mathcal{F})\;},
 $$
 
 which is the exact sequence used to compute the cohomology of a fibration and of a covering map.

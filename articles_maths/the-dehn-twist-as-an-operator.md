@@ -37,7 +37,7 @@ normalised by $i(e_1,e_2) = 1$ on the two curves of a standard torus summand.
 
 **Theorem (the Picard–Lefschetz transvection).** Let $A = [a]\in H_1(S;\mathbb{Z})$ be the class of the curve $a$. Then the operator induced by the Dehn twist on the homology is
 $$
-(T_a)_* : H_1(S;\mathbb{Z})\to H_1(S;\mathbb{Z}), \qquad (T_a)_*(x) = x + i(A,x)\,A ,
+\boxed{\;(T_a)_* : H_1(S;\mathbb{Z})\to H_1(S;\mathbb{Z}), \qquad (T_a)_*(x) = x + i(A,x)\,A\;} ,
 $$
 the **transvection** with direction $A$. Equivalently $(T_a)_*(x) = x - i(x,A)A$; the two forms differ by the choice of sign convention for the intersection number, and either is a transvection.
 
@@ -45,7 +45,7 @@ the **transvection** with direction $A$. Equivalently $(T_a)_*(x) = x - i(x,A)A$
 
 **Corollary (the matrix and the order).** In a symplectic basis $e_1,f_1,\dots,e_g,f_g$ of $H_1(S;\mathbb{Z})$ with $i(e_j,f_j) = 1$ and all other pairings zero, the matrix of $(T_a)_*$ is the symplectic transvection
 $$
-(T_a)_* = I + A\,A^{\dagger}\,J,
+\boxed{\;(T_a)_* = I + A\,A^{\dagger}\,J\;},
 $$
 where $J$ is the matrix of the intersection form; the matrix is unipotent, with all eigenvalues equal to $1$, and $(T_a)_*^k - I$ has rank one for $k\neq0$, so the transvection has infinite order.
 
@@ -73,7 +73,7 @@ The twists are the generators of the mapping class group, and the transvections 
 
 **Theorem (the symplectic representation is surjective).** The action on the homology gives a surjective homomorphism
 $$
-\mathrm{Mod}(S_g)\longrightarrow \operatorname{Sp}\bigl(2g,\mathbb{Z}\bigr), \qquad \bigl[\phi\bigr]\longmapsto \phi_* ,
+\boxed{\;\mathrm{Mod}(S_g)\longrightarrow \operatorname{Sp}\bigl(2g,\mathbb{Z}\bigr), \qquad \bigl[\phi\bigr]\longmapsto \phi_*\;} ,
 $$
 whose kernel is the **Torelli group** $\mathcal{I}(S_g)$; the images of the Dehn twists are the transvections, and the transvections generate $\operatorname{Sp}(2g,\mathbb{Z})$. For $g = 1$ the map is an isomorphism $\mathrm{Mod}(T^2)\cong SL_2(\mathbb{Z})$.
 

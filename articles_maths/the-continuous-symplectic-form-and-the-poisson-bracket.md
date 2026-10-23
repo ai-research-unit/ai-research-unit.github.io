@@ -39,7 +39,7 @@ $$
 **Theorem (topological splitting).** Let $V$ be a normed space over $\mathbb{R}$ and let $\operatorname{Bil}(V)$ carry the operator norm. The symmetrisation and the antisymmetrisation are continuous linear projections, they commute, and
 
 $$
-\operatorname{Bil}(V) = \operatorname{Sym}(V)\oplus\operatorname{Alt}(V)
+\boxed{\;\operatorname{Bil}(V) = \operatorname{Sym}(V)\oplus\operatorname{Alt}(V)\;}
 $$
 
 is a topological direct sum, the norm of each projection being $1$. The polar forms of the quadratic forms are exactly the symmetric summand, and the summand of the alternating forms is the object of this article.
@@ -87,7 +87,7 @@ The corollary is the reason the two articles of the category are disjoint in the
 **Theorem.** Let $M$ be a normed space over $\mathbb{R}$ and let $M'$ be its continuous dual with the dual norm. The form
 
 $$
-\omega\bigl((x,f),(y,g)\bigr) = g(x) - f(y)
+\boxed{\;\omega\bigl((x,f),(y,g)\bigr) = g(x) - f(y)\;}
 $$
 
 on $M\oplus M'$ is continuous, alternating, and non-degenerate.
@@ -105,7 +105,7 @@ on $M\oplus M'$ is continuous, alternating, and non-degenerate.
 **Proposition.** Let $\{\cdot,\cdot\}$ be a continuous Poisson bracket on $A$. Then each Hamiltonian derivation $X_{f}$ is a continuous derivation of $A$, the map $X : A\to\operatorname{Der}(A)$, $f\mapsto X_{f}$, is linear and continuous for the topology of pointwise convergence on $\operatorname{Der}(A)$, its kernel is the Poisson centre, and
 
 $$
-X_{\{f,g\}} = [X_{f},X_{g}] .
+\boxed{\;X_{\{f,g\}} = [X_{f},X_{g}]\;} .
 $$
 
 *Proof.* The derivation property is the algebraic one, and continuity is the continuity of the bracket in its second variable with $f$ fixed. Linearity of $X$ is the bilinearity of the bracket, and continuity is the pointwise continuity of $g\mapsto\{f,g\}$ uniformly over $f$ in a bounded set. The kernel is the centre by the definition of both. The displayed identity is the Jacobi identity, as in *Symplectic Forms and Poisson Brackets*, §*The Poisson Bracket*, and it holds in the topological algebra because it is a polynomial identity.

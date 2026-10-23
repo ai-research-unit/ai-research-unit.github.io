@@ -106,11 +106,11 @@ For $x=u_1\cdots u_k$ a product of vectors one has $N(x)=\prod_i(-\mathfrak{Q}(u
 **Theorem.** Suppose that $-1$ is not a square in $F$ and that every element of $F^{\times}$ differs from $\pm1$ by a square; both hypotheses hold over $\mathbb{R}$ and over every Euclidean field. Then there are exact sequences
 
 $$
-1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Pin}(V,\mathfrak{Q})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } O(V,\mathfrak{Q})\longrightarrow 1,
+\boxed{\;1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Pin}(V,\mathfrak{Q})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } O(V,\mathfrak{Q})\longrightarrow 1\;},
 $$
 
 $$
-1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Spin}(V,\mathfrak{Q})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } SO(V,\mathfrak{Q})\longrightarrow 1.
+\boxed{\;1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Spin}(V,\mathfrak{Q})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } SO(V,\mathfrak{Q})\longrightarrow 1\;}.
 $$
 
 **Proof.** By the previous lemma the kernel of $\mathrm{Ad}^{\alpha}$ on $\Gamma$ is $F^{\times}$; intersecting with the condition $N(x)=\pm1$ leaves the scalars $\lambda$ with $\lambda^2=\pm1$, which under the first hypothesis are $\lambda=\pm1$. The image of Pin is all of $O(V,\mathfrak{Q})$: a reflection depends only on the line $Fu$, and the second hypothesis allows the generator of that line to be rescaled so that $\mathfrak{Q}(u)=\pm1$, whence $u\in\mathrm{Pin}$ with $N(u)=\mp1$, and the reflections generate $O$. The image of Spin lies in $SO$, because the determinant of an even element's signed inner conjugation is $+1$: the determinant of a reflection is $-1$, and the parity of the number of reflections is the parity of $x$. Surjectivity onto $SO$ follows from Cartan–Dieudonné, which writes every element of $SO$ as an even product of reflections, and each reflection lies in Pin.
@@ -140,7 +140,7 @@ Over $\mathbb{R}$ the definite Spin groups can be identified with the classical 
 **Theorem.** For the definite forms over $\mathbb{R}$,
 
 $$
-\mathrm{Spin}(2)\cong \mathrm{U}(1),\quad \mathrm{Spin}(3)\cong Sp(1)=SU(2),\quad \mathrm{Spin}(4)\cong Sp(1)\times Sp(1),
+\boxed{\;\mathrm{Spin}(2)\cong \mathrm{U}(1),\quad \mathrm{Spin}(3)\cong Sp(1)=SU(2),\quad \mathrm{Spin}(4)\cong Sp(1)\times Sp(1)\;},
 $$
 
 $$

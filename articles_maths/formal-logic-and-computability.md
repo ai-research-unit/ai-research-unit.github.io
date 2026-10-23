@@ -128,7 +128,7 @@ The standard **dovetailing** construction — running computations on all inputs
 **Theorem (Turing).** The **halting set**
 
 $$
-K = \{\langle M, x\rangle : \text{the Turing machine } M \text{ halts on input } x\}
+\boxed{\;K = \{\langle M, x\rangle : \text{the Turing machine } M \text{ halts on input } x\}\;}
 $$
 
 is computably enumerable but not decidable.
@@ -195,7 +195,7 @@ $$
 where $\#\sigma$ is the numeral of the Gödel number of $\sigma$; the lemma is proved by substituting the Gödel number of the formula into itself, exactly the diagonal construction of Cantor's theorem and of the halting problem. Apply it to $\psi(x) = \neg\mathrm{Prov}_T(x)$, obtaining a sentence $G$ with
 
 $$
-T \vdash G \leftrightarrow \neg \mathrm{Prov}_T(\# G).
+\boxed{\;T \vdash G \leftrightarrow \neg \mathrm{Prov}_T(\# G)\;}.
 $$
 
 If $T \vdash G$, then $T$ proves that $G$ is provable, that is, $T \vdash \mathrm{Prov}_T(\# G)$, and then $T \vdash \neg G$ by the equivalence, contradicting consistency. If $T \vdash \neg G$, then $T \vdash \mathrm{Prov}_T(\# G)$, so that a derivation of $G$ exists by $\Sigma_1$-completeness, and $T \vdash G$, again contradicting consistency. Hence neither, and $T$ is incomplete.
@@ -215,7 +215,7 @@ The sentence $G$ is a **Gödel sentence**: it asserts its own unprovability. It 
 **Proof sketch.** The proof of the first theorem can be formalised inside $T$, because all the syntactic manipulations are primitive recursive. The formalisation yields
 
 $$
-T \vdash \mathrm{Con}_T \to G,
+\boxed{\;T \vdash \mathrm{Con}_T \to G\;},
 $$
 
 where $G$ is the Gödel sentence. If $T \vdash \mathrm{Con}_T$ then $T \vdash G$, contradicting the first theorem. Hence $T$ does not prove its own consistency.

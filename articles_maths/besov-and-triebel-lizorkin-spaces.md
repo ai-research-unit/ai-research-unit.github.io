@@ -32,7 +32,7 @@ the sum being locally finite; the $\varphi_j$ are the **Littlewood–Paley block
 **Theorem (Bernstein's inequalities).** Let $k \in \mathbb{N}_0$, $1\le p\le r\le\infty$, and let $f \in L^{n}(\mathbb{R}^n)$ have $\operatorname{supp}\mathcal F f \subseteq\{|\xi|\le R\}$. Then
 
 $$
-\|\partial^\alpha f\|_{L^r}\le C\,R^{|\alpha|+n(\frac1p-\frac1r)}\|f\|_{L^{n}} \quad (|\alpha|=k),
+\boxed{\;\|\partial^\alpha f\|_{L^r}\le C\,R^{|\alpha|+n(\frac1p-\frac1r)}\|f\|_{L^{n}} \quad (|\alpha|=k)\;},
 $$
 
 with a constant depending on $k,n$ but not on $R$ or $f$; in particular the frequency localisation allows any derivative to be traded for a power of the frequency and any higher $L^r$ norm to be traded for the $L^{n}$ norm at the cost of $R^{n(1/p-1/r)}$.
@@ -107,7 +107,7 @@ and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,n}
 **Theorem (difference characterisation of Besov spaces).** Let $s>0$, $0<p,q\le\infty$, and let $k$ be an integer with $k>s$. Then $f \in B^{s}_{n,m}$ if and only if
 
 $$
-\|f\|_{L^{n}}+\Bigl(\int_0^\infty\bigl(t^{-s}\sup_{|h|\le t}\|\Delta_h^kf\|_{L^{n}}\bigr)^q\,\frac{dt}{t}\Bigr)^{1/q}<\infty ,
+\boxed{\;\|f\|_{L^{n}}+\Bigl(\int_0^\infty\bigl(t^{-s}\sup_{|h|\le t}\|\Delta_h^kf\|_{L^{n}}\bigr)^q\,\frac{dt}{t}\Bigr)^{1/q}<\infty\;} ,
 $$
 
 with the $\sup$ modification for $q=\infty$; the quantity is an equivalent quasi-norm. The classical Besov definition by the modulus of continuity is therefore the same scale, and for $p=q=\infty$ the characterisation reduces to the Hölder condition of order $s$.
@@ -184,8 +184,8 @@ The atomic decomposition is the bridge from the Fourier description to the real-
 **Theorem (real interpolation).** Let $s_0,s_1 \in\mathbb{R}$ with $s_0 \neq s_1$, $0<p,q,q_0,q_1\le\infty$ and $\theta \in(0,1)$; put $s=(1-\theta)s_0+\theta s_1$. Then
 
 $$
-\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}, \qquad
-\bigl(F^{s_0}_{p,q_0},F^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}
+\boxed{\;\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}, \qquad
+\bigl(F^{s_0}_{p,q_0},F^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}\;}
 $$
 
 with equivalent quasi-norms, the real method being taken in the sense of *Interpolation Theory*; the real interpolation of the two scales is therefore the Besov scale, whatever the originating family.

@@ -132,7 +132,7 @@ The identity $\bigcap_P (P/N) = (\bigcap_P P)/N$ is the correspondence theorem a
 Conversely, let $A$ be semiprime, so that $\operatorname{Nil}_*(A) = 0$ by the theorem above. For each nonzero $a \in A$ there is then a prime ideal $P_a$ with $a \notin P_a$, since the intersection of all the prime ideals is zero. The homomorphism
 
 $$
-A \longrightarrow \prod_{a \neq 0} A/P_a, \qquad x \mapsto (x + P_a)_{a \neq 0},
+\boxed{\;A \longrightarrow \prod_{a \neq 0} A/P_a, \qquad x \mapsto (x + P_a)_{a \neq 0}\;},
 $$
 
 has zero kernel, because a nonzero $a$ is not in $P_a$, and each component map is surjective by construction. Hence $A$ is a subdirect product of the prime rings $A/P_a$.

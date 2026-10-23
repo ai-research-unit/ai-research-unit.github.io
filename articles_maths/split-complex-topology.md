@@ -80,7 +80,7 @@ The differentiability statement that each line is smooth at its non-apex points,
 **Theorem.** The link is the four-point set
 
 $$
-L=\Bigl\{\pm\tfrac1{\sqrt2}(1+j),\ \pm\tfrac1{\sqrt2}(1-j)\Bigr\}\cong 4\ \text{points},
+\boxed{\;L=\Bigl\{\pm\tfrac1{\sqrt2}(1+j),\ \pm\tfrac1{\sqrt2}(1-j)\Bigr\}\cong 4\ \text{points}\;},
 $$
 
 a closed, compact $0$-manifold with $\pi_0(L)$ of order $4$ and $\pi_n(L)=0$ for all $n\geq 1$. The null cone is the cone on $L$, and the projectivised null cone is the two-point set
@@ -102,7 +102,7 @@ the two null directions.
 **Theorem.** The complement of the null cone in the plane is the disjoint union of the four open sectors
 
 $$
-\mathbb{D}^\times=(\mathbb{D}^\times)_0\ \sqcup\ -(\mathbb{D}^\times)_0\ \sqcup\ \Sigma_+\ \sqcup\ \Sigma_-,
+\boxed{\;\mathbb{D}^\times=(\mathbb{D}^\times)_0\ \sqcup\ -(\mathbb{D}^\times)_0\ \sqcup\ \Sigma_+\ \sqcup\ \Sigma_-\;},
 $$
 
 with
@@ -114,7 +114,7 @@ $$
 each homeomorphic to $\mathbb{R}^2$, hence contractible. Consequently
 
 $$
-\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times,\qquad \pi_0(\mathbb{D}^\times)\cong(\mathbb{Z}/2)^2,\qquad \pi_n(\mathbb{D}^\times)=0\ \ (n\geq 1).
+\boxed{\;\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times,\qquad \pi_0(\mathbb{D}^\times)\cong(\mathbb{Z}/2)^2,\qquad \pi_n(\mathbb{D}^\times)=0\ \ (n\geq 1)\;}.
 $$
 
 **Proof.** The two lines $q=\pm q'$ divide $\mathbb{R}^2$ into the four open sectors above, determined by the signs of $Q_+=q+q'$ and $Q_-=q-q'$; each sector is a convex open cone, hence homeomorphic to $\mathbb{R}^2$ and contractible. Under the idempotent coordinates $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$, the four sectors are the four components of the product of two two-component groups, giving the component group $(\mathbb{Z}/2)^2$. A disjoint union of contractible spaces has vanishing homotopy in positive degrees.

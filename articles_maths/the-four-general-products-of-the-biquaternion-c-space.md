@@ -52,8 +52,8 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and linear in the 
 $$
 \boxed{\;
 \tilde Q_1\tilde Q_2=\bigl(Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2
-\;}
-$$.
+\;}.
+$$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu} Q_{2,\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
 
@@ -83,8 +83,8 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and conjugate-line
 $$
 \boxed{\;
 \tilde Q_1\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
-\;}
-$$.
+\;}.
+$$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
@@ -114,8 +114,8 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and linear in the 
 $$
 \boxed{\;
 \tilde Q_1^{\natural}\tilde Q_2=\bigl(Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)+Q_{1,0}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2
-\;}
-$$.
+\;}.
+$$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, and the vector part is the one displayed.
 
@@ -141,8 +141,8 @@ The rule is linear in the coordinates $Q_{1,0},\dots,Q_{1,3}$ and conjugate-line
 $$
 \boxed{\;
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr)-Q_{1,0}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}
-\;}
-$$.
+\;}.
+$$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 

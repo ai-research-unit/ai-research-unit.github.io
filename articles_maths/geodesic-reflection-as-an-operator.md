@@ -94,7 +94,7 @@ extended to the conformal sphere by $i(0) = \infty$ and $i(\infty) = 0$; it is a
 **Definition.** Let $(V,\mathfrak{Q})$ be a quadratic space with polar form $B$ and let $a \in V$ with $\mathfrak{Q}(a) \neq 0$. In the Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ the **reflection in the hyperplane** $a^\perp$ is the signed conjugation by the vector $a$,
 
 $$
-\rho_a(x) = -\,a\,x\,a^{-1} = a\,\alpha(x)\,a^{-1},
+\boxed{\;\rho_a(x) = -\,a\,x\,a^{-1} = a\,\alpha(x)\,a^{-1}\;},
 $$
 
 where $\alpha$ is the grade involution, which acts on the vectors by $x \mapsto -x$ and on the scalars by the identity; the vector $a$ is the **reflection element**, and the sign in the formula is the sign of the odd part of the grading.
@@ -102,7 +102,7 @@ where $\alpha$ is the grade involution, which acts on the vectors by $x \mapsto 
 **Theorem.** For every vector $x \in V$ the signed conjugation of the definition is the reflection
 
 $$
-\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a ,
+\boxed{\;\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a\;} ,
 $$
 
 so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\Theta^{\alpha}_{a,a^{-1}}$ of *The Signed Sandwich on an Ordered Algebra*, and it is the operator form of the geodesic reflection in the constant-curvature geometries.
@@ -112,7 +112,7 @@ so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the sig
 **Corollary (the Cartan–Dieudonné theorem).** Every orthogonal transformation of a nondegenerate quadratic space is the product of at most $\dim V$ reflections,
 
 $$
-O(V,\mathfrak{Q}) \ni T = \rho_{a_1}\circ\cdots\circ\rho_{a_k}, \qquad k \leq \dim V ,
+\boxed{\;O(V,\mathfrak{Q}) \ni T = \rho_{a_1}\circ\cdots\circ\rho_{a_k}, \qquad k \leq \dim V\;} ,
 $$
 
 and the number of the factors is the dimension of the space of the vectors moved by $T$; the orientation-preserving transformations are the products of an even number of reflections.

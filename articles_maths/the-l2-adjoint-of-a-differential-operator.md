@@ -57,13 +57,13 @@ and $T^*v = w$ for the unique such $w$; the uniqueness is the density of $\mathr
 **Theorem (the formal and the global adjoint).** Let $P$ be a differential operator and let $P^{\dagger}$ be its formal adjoint, defined by the pairing on $\Gamma_c(F)$ with $P$ acting on $\Gamma_c(E)$. Then the adjoint of $P$ with the minimal domain contains the operator $P^{\dagger}$ with the minimal domain,
 
 $$
-P_{\min}^{\ *} \supseteq P^{\dagger}_{\min},
+\boxed{\;P_{\min}^{\ *} \supseteq P^{\dagger}_{\min}\;},
 $$
 
 with equality if and only if the boundary term of Green's formula vanishes for all compactly supported sections, which holds automatically when $M$ is closed; and the density of the maximal domain makes the maximal operator the adjoint of $P^{\dagger}_{\min}$,
 
 $$
-(P^{\dagger}_{\min})^* = P_{\max}, \qquad (P_{\min})^* = P^{\dagger}_{\max},
+\boxed{\;(P^{\dagger}_{\min})^* = P_{\max}, \qquad (P_{\min})^* = P^{\dagger}_{\max}\;},
 $$
 
 on a manifold without boundary, up to the closures. On a manifold with boundary the maximal domain is cut down by the boundary conditions, and the adjoint of a boundary-value problem is another boundary-value problem, whose boundary conditions are read from the Green formula.
@@ -81,7 +81,7 @@ on a manifold without boundary, up to the closures. On a manifold with boundary 
 **Proposition (the variational characterisation of the spectrum).** Let $T$ be self-adjoint and bounded below, with the associated quadratic form $\mathfrak{Q}(u)=\langle Tu,u\rangle$ on $\mathrm{dom}(T)$. Then the bottom of the spectrum is
 
 $$
-\inf\sigma(T) = \inf_{u\neq0}\frac{\mathfrak{Q}(u)}{\lVert u\rVert_{L^2}^2},
+\boxed{\;\inf\sigma(T) = \inf_{u\neq0}\frac{\mathfrak{Q}(u)}{\lVert u\rVert_{L^2}^2}\;},
 $$
 
 the **Rayleigh quotient**; if $T$ has compact resolvent, its spectrum is discrete, $\lambda_1\le\lambda_2\le\cdots$, and the eigenvalues are characterised by the min–max principle.

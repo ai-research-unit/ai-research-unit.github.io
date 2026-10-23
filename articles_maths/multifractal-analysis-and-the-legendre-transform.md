@@ -57,7 +57,7 @@ the sum of the $q$-th powers of the masses of the level-$n$ pieces.
 **Definition.** The **growth exponent** $\tau(q)$ is the number, when it exists, with $S_n(q)\asymp (r^n)^{\tau(q)}$ for a common ratio $r$, and in general the unique solution of the **equation of Bowen**,
 
 $$
-\sum_{i=1}^m p_i^{\,q}\,r_i^{-\tau(q)}=1 .
+\boxed{\;\sum_{i=1}^m p_i^{\,q}\,r_i^{-\tau(q)}=1\;} .
 $$
 
 **Theorem (the exponent exists, is convex and is finitely often differentiable).** For every $q$ the equation $\sum_i p_i^q r_i^{-\tau}=1$ has exactly one real solution $\tau(q)$; the function $\tau$ so defined is convex and decreasing, it satisfies $\tau(0)=-\dim_H\Lambda$ and $\tau(1)=0$, and it is real-analytic with $\tau'(q)$ equal to the mean logarithm of the weights under the Gibbs probability $q_i\propto p_i^q r_i^{-\tau(q)}$.
@@ -93,7 +93,7 @@ $$
 **Theorem (the formalism for the self-similar measures).** Let $S_1,\dots,S_m$ be a self-similar iterated function system satisfying the open set condition, and let the ratios be distinct or the pieces separated in the sense that the $n$-th level pieces have pairwise disjoint neighbourhoods of comparable size; let $p$ be a probability vector and $\mu_p$ the self-similar measure. Then the local dimension exists at every point, the level sets are nonempty exactly on the interval of exponents $[\tau'(+\infty),\tau'(-\infty)]$, and the multifractal formalism holds:
 
 $$
-\dim_H K_\alpha=\inf_{q}(q\alpha-\tau(q))=\tau^*(\alpha)
+\boxed{\;\dim_H K_\alpha=\inf_{q}(q\alpha-\tau(q))=\tau^*(\alpha)\;}
 $$
 
 for every $\alpha$ in that interval.

@@ -42,7 +42,7 @@ and the residue operator restricts to a homomorphism $\mathcal{O}^\times \to k^\
 **Proposition (the valuation ring is a sublevel set).** The valuation ring, its maximal ideal and the multiplicative group are the level sets of the valuation:
 
 $$
-\mathcal{O} = \{ x : v(x) \geq 0 \}, \qquad \mathrm{M} = \{ x : v(x) > 0 \}, \qquad F^\times = \{ x : v(x) < \infty \},
+\boxed{\;\mathcal{O} = \{ x : v(x) \geq 0 \}, \qquad \mathrm{M} = \{ x : v(x) > 0 \}, \qquad F^\times = \{ x : v(x) < \infty \}\;},
 $$
 
 and the valuation is order reversing for the divisibility: $v(y) \leq v(x)$ exactly when $y$ divides $x$ in $\mathcal{O}$, and $v(x) < v(y)$ exactly when $x$ divides $y$ in $\mathcal{O}$.
@@ -62,7 +62,7 @@ and the valuation is order reversing for the divisibility: $v(y) \leq v(x)$ exac
 **Theorem (the valuation of the completion).** The valuation extends uniquely to a valuation $\widehat{v}$ of the completion $\widehat{F}$ with the same value group,
 
 $$
-\Gamma_{\widehat{F}} = \Gamma , \qquad \widehat{v}\circ \iota = v ,
+\boxed{\;\Gamma_{\widehat{F}} = \Gamma , \qquad \widehat{v}\circ \iota = v\;} ,
 $$
 
 and the completion has the same valuation ring and maximal ideal up to the canonical identification, $\widehat{\mathcal{O}} = \overline{\iota(\mathcal{O})}$ and $\widehat{\mathrm{M}} = \overline{\iota(\mathrm{M})}$. So the valuation operator commutes with the completion operator.
@@ -88,7 +88,7 @@ with neutral elements $\infty$ for $\oplus$ and $0$ for $\odot$.
 **Theorem (the valuation is a tropical homomorphism).** The valuation is a homomorphism from the multiplicative monoid $(F, \cdot)$ to the tropical semiring $(\Gamma \cup \{\infty\}, \oplus, \odot)$:
 
 $$
-v(xy) = v(x) \odot v(y), \qquad v(x + y) \geq v(x) \oplus v(y) .
+\boxed{\;v(xy) = v(x) \odot v(y), \qquad v(x + y) \geq v(x) \oplus v(y)\;} .
 $$
 
 It is exactly multiplicative, and additive up to the inequality forced by cancellation. When the inequality is an equality for all $x, y$ the field is said to have a **splitting** of the valuation; the inequality is strict exactly when the two summands have equal value and cancel.

@@ -87,7 +87,9 @@ an involution of the algebra that reverses the order of a product, $(\tilde q_1\
 The vector part $\vec q$ of a quaternion is identified with a vector in $\mathbb{R}^3$. Under this identification, the product of two quaternions is
 
 $$
-\tilde q_1\tilde q_2 = (q_{1t} q_{2t} - \vec q_1 \cdot \vec q_2) + (q_{1t} \vec q_2 + q_{2t} \vec q_1 + \vec q_1 \times \vec q_2),
+\boxed{\;
+\tilde q_1\tilde q_2 = (q_{1t} q_{2t} - \vec q_1 \cdot \vec q_2) + (q_{1t} \vec q_2 + q_{2t} \vec q_1 + \vec q_1 \times \vec q_2)
+\;},
 $$
 
 where $\vec q_1 \cdot \vec q_2$ is the ordinary dot product and $\vec q_1 \times \vec q_2$ is the ordinary cross product in $\mathbb{R}^3$. The dot product and cross product are not separate operations; they are the scalar and vector parts of a single quaternion product.
@@ -240,7 +242,9 @@ Indeed, $q_r$ is fixed by quaternion conjugation, so it lies in $\mathbb{R}_{\ma
 This gives the direct sum decomposition
 
 $$
-\mathbb{H} = \mathbb{R}_{\mathbb{H}} \oplus \operatorname{Im}\mathbb{H},
+\boxed{\;
+\mathbb{H} = \mathbb{R}_{\mathbb{H}} \oplus \operatorname{Im}\mathbb{H}
+\;},
 $$
 
 where $\operatorname{Im}\mathbb{H}$ is the set of pure quaternions. Both are real vector spaces of dimensions $1$ and $3$, and their direct sum is the full algebra $\mathbb{H}$ of real dimension $4$.
@@ -270,7 +274,9 @@ $$
 For pure quaternions $\vec q_1, \vec q_2 \in \operatorname{Im}\mathbb{H}$, the commutator is
 
 $$
-[\vec q_1, \vec q_2] = 2 \vec q_1 \times \vec q_2.
+\boxed{\;
+[\vec q_1, \vec q_2] = 2 \vec q_1 \times \vec q_2
+\;}.
 $$
 
 So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathrm{SO}(3)$ of skew-symmetric $3\times 3$ real matrices:

@@ -58,8 +58,7 @@ the matrix of the product $QQ_1 = 11-2i$; the reversed order gives $\mathsf{M}_2
 
 **Theorem (multiplicativity).** For all $Q, Q_1 \in \mathbb{C}$,
 
-$$
-\mathsf{M}_2(Q)\,\mathsf{M}_2(Q_1) = \mathsf{M}_2(QQ_1).
+$$ \boxed{\;\mathsf{M}_2(Q)\,\mathsf{M}_2(Q_1) = \mathsf{M}_2(QQ_1)\;}.
 $$
 
 Hence $\mathsf{M}_2$ is an $\mathbb{R}$-algebra homomorphism and the space $\mathbb{C}$ is a left $\mathbb{C}$-module under it. It is **faithful**: if $\mathsf{M}_2(Q) = 0$ then $Q = L_{Q}(1) = 0$.
@@ -122,8 +121,7 @@ The algebra is a field, its regular module is simple, and there is no Peirce dec
 
 **Proposition.** For $Q = q+i q'$,
 
-$$
-\det \mathsf{M}_2(Q) = q^2 + q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q = 2 \operatorname{Re} Q .
+$$ \boxed{\;\det \mathsf{M}_2(Q) = q^2 + q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q = 2 \operatorname{Re} Q \;}.
 $$
 
 **Proof.** $\det \mathsf{M}_2(Q) = q\cdot q - (-q')\cdot q' = q^2 + q'^2$, and $\operatorname{tr}\mathsf{M}_2(Q) = q + q = 2q$.
@@ -169,8 +167,7 @@ The image $M_2(\mathbb{C})$ is the field of conformal matrices, and its group of
 
 **Proposition.** The image of the unit circle under $\mathsf{M}_2$ is the rotation group of the plane. For $u = \exp(i\theta) \in \mathrm{U}(1)$,
 
-$$
-\mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta, \qquad \det R_\theta = \cos^2\theta + \sin^2\theta = 1, \qquad \operatorname{tr} R_\theta = 2\cos\theta,
+$$ \boxed{\;\mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta, \qquad \det R_\theta = \cos^2\theta + \sin^2\theta = 1, \qquad \operatorname{tr} R_\theta = 2\cos\theta\;},
 $$
 
 and $R_\theta$ is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, with determinant $+1$. The map $u \mapsto \mathsf{M}_2(u)$ is an isomorphism of Lie groups $\mathrm{U}(1) \to SO(2)$.

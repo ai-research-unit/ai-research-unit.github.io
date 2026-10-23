@@ -27,7 +27,7 @@ and the **spectrum** is $\sigma(L) = \mathbb{C}\setminus\rho(L)$. The spectrum i
 **Theorem (the resolvent identity).** For $\lambda,\mu\in\rho(L)$,
 
 $$
-R(\lambda)-R(\mu) = (\lambda-\mu)\,R(\lambda)R(\mu) , \qquad R(\lambda)R(\mu)=R(\mu)R(\lambda) .
+\boxed{\;R(\lambda)-R(\mu) = (\lambda-\mu)\,R(\lambda)R(\mu) , \qquad R(\lambda)R(\mu)=R(\mu)R(\lambda)\;} .
 $$
 
 *Proof.* Write $R(\lambda)-R(\mu)=R(\lambda)\bigl((L-\mu)-(L-\lambda)\bigr)R(\mu)$ and observe that $(L-\mu)-(L-\lambda)=\lambda-\mu$; the second identity follows from the first by exchanging $\lambda$ and $\mu$, since the left-hand side changes sign and so does $\lambda-\mu$. The two resolvents therefore commute.
@@ -119,9 +119,9 @@ defined for $\lambda$ in the resolvent set $\rho(D)$ of the complement; the seco
 **Theorem (the block resolvent).** Let $\lambda\in\rho(D)$. Then $\lambda\in\rho(L)$ if and only if $S(\lambda)$ is invertible, and in that case the blocks of $R(\lambda)=(L-\lambda)^{-1}$ are
 
 $$
-R_{11}(\lambda) = S(\lambda)^{-1}, \qquad
+\boxed{\;R_{11}(\lambda) = S(\lambda)^{-1}, \qquad
 R_{12}(\lambda) = -S(\lambda)^{-1}B\,(D-\lambda)^{-1}, \qquad
-R_{21}(\lambda) = -(D-\lambda)^{-1}C\,S(\lambda)^{-1},
+R_{21}(\lambda) = -(D-\lambda)^{-1}C\,S(\lambda)^{-1}\;},
 $$
 
 with $R_{22}(\lambda)=(D-\lambda)^{-1}+(D-\lambda)^{-1}C\,S(\lambda)^{-1}B\,(D-\lambda)^{-1}$; the compression of the resolvent to the first summand is therefore
@@ -203,7 +203,7 @@ as $\varepsilon\downarrow0$ for every continuous $g$ of compact support, the **S
 **Theorem (the Dunford integral).** Let $L$ generate a strongly continuous semigroup $\exp(tL)$, $t\ge0$, with $\|\exp(tL)\|\le M\exp(\omega t)$. Then for $a>\omega$ and $t>0$,
 
 $$
-\exp(tL) = \frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty} \exp(t\lambda)\,R(\lambda)\,d\lambda ,
+\boxed{\;\exp(tL) = \frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty} \exp(t\lambda)\,R(\lambda)\,d\lambda\;} ,
 $$
 
 the integral converging in the operator norm and defining the semigroup from the resolvent.

@@ -56,7 +56,7 @@ $X\times X$ determines a Hilbert space $H_K$ of $\mathcal{S}$-valued functions o
 point evaluations are continuous, with the reproducing property
 
 $$
-(K(x,\cdot)s,\,f)_{H_K} = (s,\,f(x)) \qquad x\in X,\ s\in\mathcal{S},\ f\in H_K ,
+\boxed{\;(K(x,\cdot)s,\,f)_{H_K} = (s,\,f(x)) \qquad x\in X,\ s\in\mathcal{S},\ f\in H_K\;} ,
 $$
 
 and every such space arises from exactly one kernel. The theorem is the general Aronszajn theorem of
@@ -121,7 +121,7 @@ $$
 determined by the Cauchy kernel and the conormal element:
 
 $$
-S(w,z) = E(w-z)\,\nu_B(z)
+\boxed{\;S(w,z) = E(w-z)\,\nu_B(z)\;}
 $$
 
 up to the normalisation of the Cauchy–Pompeiu formula of *Clifford Analysis*, and it is Hermitian in
@@ -148,7 +148,7 @@ first is its interior analogue.
 $\Omega\times\Omega$ associate the integral operator
 
 $$
-(T_Kf)(x) = \int_\Omega K(x,y)\,f(y)\,dy .
+\boxed{\;(T_Kf)(x) = \int_\Omega K(x,y)\,f(y)\,dy\;} .
 $$
 
 The kernel is Hermitian exactly when the operator is self-adjoint on $L^2(\Omega;\mathcal{S})$, and

@@ -58,7 +58,7 @@ a nonzero scalar determined by the four points up to the scaling of the represen
 
 **Definition.** Let $n \geq 2$ and let $\mathbb{R}^{n+1,2}$ be the real vector space of dimension $n+3$ with the form of signature $(n+1,2)$. The **Lie quadric** is the set of null lines of this form,
 $$
-\mathcal{Q}^{n+1} = \{[z] : z \in \mathbb{R}^{n+1,2}\setminus\{0\},\ \langle z,z\rangle = 0\} \subseteq \mathbb{P}(\mathbb{R}^{n+1,2}),
+\boxed{\;\mathcal{Q}^{n+1} = \{[z] : z \in \mathbb{R}^{n+1,2}\setminus\{0\},\ \langle z,z\rangle = 0\} \subseteq \mathbb{P}(\mathbb{R}^{n+1,2})\;},
 $$
 the projectivised null cone of the form, a smooth quadric of dimension $n+1$. The **Lie sphere geometry** of the sphere $S^n$ is the geometry of the quadric $\mathcal{Q}^{n+1}$ with the incidence relation defined by the polarity of the form, and its transformations are the **Lie sphere transformations**, the projective orthogonal transformations of the form, that is, the group $PO(n+1,2) = O(n+1,2)/\{\pm 1\}$.
 
@@ -90,7 +90,7 @@ The theorem is the classical invariance of Lie; the curvature spheres are define
 
 **Theorem.** The Möbius geometry is the Lie sphere geometry with the set of the points distinguished: the Möbius group $\operatorname{Möb}(n) = O(n+1,1)/\{\pm 1\}$ is the subgroup of the Lie sphere group $PO(n+1,2)$ that preserves the set of the degenerate spheres, and the embedding of the Möbius model into the Lie model,
 $$
-\mathbb{R}^{n+1,1} \hookrightarrow \mathbb{R}^{n+1,2},
+\boxed{\;\mathbb{R}^{n+1,1} \hookrightarrow \mathbb{R}^{n+1,2}\;},
 $$
 as the hyperplane of the form cut out by the coordinates of the orientation, realises the Möbius space as the set of the point spheres of the Lie quadric; the Lie sphere group contains the Möbius group as the subgroup preserving the point spheres, and it acts transitively on the oriented spheres; the two geometries have the same local invariants of the conformal structure, and the Lie sphere geometry carries in addition the invariants of the oriented contact, of which the curvature sphere congruence of a hypersurface is the basic example.
 

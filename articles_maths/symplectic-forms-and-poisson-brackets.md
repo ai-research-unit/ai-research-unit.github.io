@@ -138,7 +138,7 @@ $$
 **Proposition.** For a prime power $q$ one has
 
 $$
-|Sp(2n, \mathbb{F}_q)| = q^{n^2} \prod_{i=1}^{n} (q^{2i} - 1).
+\boxed{\;|Sp(2n, \mathbb{F}_q)| = q^{n^2} \prod_{i=1}^{n} (q^{2i} - 1)\;}.
 $$
 
 **Proof.** Count the symplectic bases of $\mathbb{F}_q^{2n}$. The first vector $e_1$ may be any nonzero vector, of which there are $q^{2n} - 1$; having chosen $e_1$, the vector $f_1$ must satisfy $\omega(e_1, f_1) = 1$, a single nonhomogeneous linear condition, which has $q^{2n-1}$ solutions. Continuing, once $e_1, f_1, \ldots, e_{i-1}, f_{i-1}$ have been chosen, let $W_{i-1}$ be their orthogonal complement, of dimension $2n - 2i + 2$; the vector $e_i$ must lie in $W_{i-1}$ and be nonzero, giving $q^{2n-2i+2} - 1$ choices, and then $f_i$ must satisfy the single nonhomogeneous condition $\omega(e_i, f_i) = 1$ inside $W_{i-1}$, an affine hyperplane of $q^{2n-2i+1}$ elements. Multiplying,
@@ -192,7 +192,7 @@ an integral polynomial in the entries, defined over every commutative ring.
 **Theorem (Pfaffian identities).** For every alternating $\Omega$ and every $A \in GL_{2n}(K)$,
 
 $$
-\operatorname{Pf}(A^{\mathsf{T}} \Omega A) = \det(A)\, \operatorname{Pf}(\Omega), \qquad \det(\Omega) = \operatorname{Pf}(\Omega)^2.
+\boxed{\;\operatorname{Pf}(A^{\mathsf{T}} \Omega A) = \det(A)\, \operatorname{Pf}(\Omega), \qquad \det(\Omega) = \operatorname{Pf}(\Omega)^2\;}.
 $$
 
 **Proof.** Both identities are polynomial identities with integer coefficients in the entries of $\Omega$ and $A$, so it suffices to establish them over a field of characteristic $0$. In the coordinates $x_1, \ldots, x_n, y_1, \ldots, y_n$ of the preceding sections the matrix of the standard form is the block matrix $J = \begin{pmatrix} 0 & I_n \\ -I_n & 0\end{pmatrix}$, whose Pfaffian is $\operatorname{Pf}(J) = (-1)^{n(n-1)/2}$: the only nonvanishing summands pair $x_i$ with $y_i$, and the sign is the parity of the permutation that sorts these pairs, since $\operatorname{Pf}$ is unchanged by an even reordering of the variables and changes sign under an odd one. Conjugating by the permutation matrix that reorders the coordinates as $x_1, y_1, x_2, y_2, \ldots$ gives the block diagonal matrix $J'$ with diagonal blocks $\begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$, for which $\det(J') = 1$ and $\operatorname{Pf}(J') = 1$, each nonvanishing summand contributing $+1$. For the change-of-basis rule, use the equivalent definition of the Pfaffian as the scalar appearing in
@@ -284,7 +284,7 @@ $$
 **Corollary.** With the Poisson bracket, $A$ is a Lie algebra over $K$, and the Hamiltonian vector fields form a Lie subalgebra $\operatorname{Ham}(V)$ of $\operatorname{Der}(A)$. There is a short exact sequence of Lie algebras
 
 $$
-0 \longrightarrow K \cdot 1 \longrightarrow (A, \{\cdot, \cdot\}) \xrightarrow{\ f \mapsto X_f\ } \operatorname{Ham}(V) \longrightarrow 0,
+\boxed{\;0 \longrightarrow K \cdot 1 \longrightarrow (A, \{\cdot, \cdot\}) \xrightarrow{\ f \mapsto X_f\ } \operatorname{Ham}(V) \longrightarrow 0\;},
 $$
 
 in which the constants constitute the centre of the bracket, since $\{f, g\} = 0$ for all $g$ exactly when $X_f = 0$ exactly when $f$ is constant.

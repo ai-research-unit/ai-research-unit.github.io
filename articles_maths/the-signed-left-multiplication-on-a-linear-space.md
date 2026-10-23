@@ -29,9 +29,9 @@ so the signed left multiplication is the ordinary left multiplication by $\alpha
 **Proposition (composition).** For all $a,b \in E$,
 
 $$
-\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
+\boxed{\;\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
 L_a\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}, \qquad
-\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a} .
+\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a}\;} .
 $$
 
 In particular the composite of two signed left multiplications is an ordinary left multiplication, and the set $\{L_a : a \in E\} \cup \{\Lambda^{\alpha}_{a} : a \in E\}$ is closed under composition.
@@ -41,7 +41,7 @@ In particular the composite of two signed left multiplications is an ordinary le
 **Corollary (invertibility and inverse).** $\Lambda^{\alpha}_{a}$ is invertible if and only if $a$ is invertible, and then
 
 $$
-\bigl(\Lambda^{\alpha}_{a}\bigr)^{-1} = \Lambda^{\alpha}_{\alpha(a^{-1})} .
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{-1} = \Lambda^{\alpha}_{\alpha(a^{-1})}\;} .
 $$
 
 **Proof.** Invertibility follows from the factorisation $\Lambda^{\alpha}_{a} = L_a\alpha$ and the invertibility of $\alpha$; the inverse is checked by the composition law: $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{\alpha(a^{-1})} = L_{a\alpha(\alpha(a^{-1}))} = L_{a a^{-1}} = \mathrm{id}$, and likewise on the other side.
@@ -49,7 +49,7 @@ $$
 **Proposition (fixed elements).** The fixed space of $\Lambda^{\alpha}_{a}$ is
 
 $$
-\ker(\Lambda^{\alpha}_{a}-\mathrm{id}) = \{X \in E : a\alpha(X) = X\} ;
+\boxed{\;\ker(\Lambda^{\alpha}_{a}-\mathrm{id}) = \{X \in E : a\alpha(X) = X\}\;} ;
 $$
 
 equivalently, when $a$ is invertible, $X$ is fixed exactly when $\alpha(X) = a^{-1}X$. For $a=1$ the fixed space is the fixed part $E^{+}$ of $\alpha$, of dimension $p^2+q^2$ in the matrix-unit basis.

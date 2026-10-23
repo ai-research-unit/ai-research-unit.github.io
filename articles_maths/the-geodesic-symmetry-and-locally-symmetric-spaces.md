@@ -23,7 +23,7 @@ equivalently, on a geodesic $\gamma$ with $\gamma(0) = p$, the map $\sigma_p(\ga
 **Theorem.** The geodesic symmetry is well defined, smooth and an involution of $\Omega$, it fixes $p$ and only $p$ in $\Omega$, and its differential at $p$ is $-\mathrm{id}$:
 
 $$
-\sigma_p(p) = p, \qquad \sigma_p^2 = \mathrm{id}_\Omega, \qquad d(\sigma_p)_p = -\mathrm{id}_{T_pM} .
+\boxed{\;\sigma_p(p) = p, \qquad \sigma_p^2 = \mathrm{id}_\Omega, \qquad d(\sigma_p)_p = -\mathrm{id}_{T_pM}\;} .
 $$
 
 **Proof.** The exponential map is a diffeomorphism on a ball of $T_pM$, and the reflection $v \mapsto -v$ is a diffeomorphism of the ball, so the composition is a smooth map; applying it twice returns the original point, $\sigma_p^2 = \mathrm{id}$. The fixed points in $\Omega$ are the images of the fixed points of $v\mapsto -v$, that is of $v = 0$, so $p$ is the only fixed point; and the differential at $0$ of $v \mapsto -v$ is $-\mathrm{id}$, which is $d(\sigma_p)_p$ because $d(\exp_p)_0 = \mathrm{id}_{T_pM}$.
@@ -65,7 +65,7 @@ in which the curvature at $p$ appears at the second order. The reflection $x\map
 **Theorem.** On a locally symmetric manifold the covariant derivatives of the curvature vanish to all orders,
 
 $$
-\nabla R = 0 \implies \nabla^kR = 0 \quad (k \geq 0),
+\boxed{\;\nabla R = 0 \implies \nabla^kR = 0 \quad (k \geq 0)\;},
 $$
 
 so the curvature is determined by its value at one point, the curvature operator $\mathcal{R}$ is parallel, and the isometry group acts on the curvature operator by conjugation, $dF_p\,\mathcal{R}_p\,(dF_p)^{-1} = \mathcal{R}_{F(p)}$ with the identification induced by $dF_p$.
@@ -85,7 +85,7 @@ so the curvature is determined by its value at one point, the curvature operator
 **Proposition.** When $\sigma_p$ is a local isometry it preserves the metric, the connection, the curvature and the curvature operator; on the normal neighbourhood it acts on the curvature operator by
 
 $$
-d(\sigma_p)\,\mathcal{R}_{\,x}\bigl(X\wedge Y\bigr)\ =\ \mathcal{R}_{\sigma_p(x)}\bigl(d\sigma_p X\wedge d\sigma_p Y\bigr),
+\boxed{\;d(\sigma_p)\,\mathcal{R}_{\,x}\bigl(X\wedge Y\bigr)\ =\ \mathcal{R}_{\sigma_p(x)}\bigl(d\sigma_p X\wedge d\sigma_p Y\bigr)\;},
 $$
 
 with the tangent spaces identified by $d\sigma_p$, and at the centre it conjugates by $-\mathrm{id}$; since $-\mathrm{id}$ commutes with every operator, $\mathcal{R}_p$ is itself preserved.

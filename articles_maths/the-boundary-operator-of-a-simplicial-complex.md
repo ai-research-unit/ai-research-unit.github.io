@@ -68,7 +68,7 @@ $$
 **Theorem (the square is zero).** For every $n$,
 
 $$
-\partial_{n-1}\partial_n = 0, \qquad \text{equivalently} \qquad A_{n-1}A_n = 0 ,
+\boxed{\;\partial_{n-1}\partial_n = 0, \qquad \text{equivalently} \qquad A_{n-1}A_n = 0\;} ,
 $$
 
 the second as a matrix identity over $R$.
@@ -118,7 +118,7 @@ The first formula is the operator form of the computation: the Betti numbers of 
 **Theorem.** Let $R$ be a principal ideal domain and let $K$ be finite. Then the homology is the direct sum of a free part and a torsion part,
 
 $$
-H_n^\Delta(K;R) \;\cong\; R^{\beta_n} \oplus \bigoplus_{j} R/(d^{(n)}_j), \qquad d^{(n)}_1 \mid d^{(n)}_2 \mid \cdots ,
+\boxed{\;H_n^\Delta(K;R) \;\cong\; R^{\beta_n} \oplus \bigoplus_{j} R/(d^{(n)}_j), \qquad d^{(n)}_1 \mid d^{(n)}_2 \mid \cdots\;} ,
 $$
 
 where the **Betti number** is
@@ -184,7 +184,7 @@ read as zero when the images are not distinct and with the orientation induced b
 **Theorem.** Let $\phi : K \to K$ be a simplicial map of a finite complex and let $\phi_n$ be its chain map. Then the **Lefschetz number**
 
 $$
-L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)
+\boxed{\;L(\phi) = \sum_n (-1)^n \operatorname{tr}(\phi_n) = \sum_n (-1)^n \operatorname{tr}\bigl(H_n^\Delta(\phi)\bigr)\;}
 $$
 
 depends only on the induced maps on homology, the equality being the **Hopf trace formula**.

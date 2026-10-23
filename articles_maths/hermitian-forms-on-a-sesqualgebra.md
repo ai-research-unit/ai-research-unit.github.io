@@ -47,7 +47,7 @@ The definition is that of the entry's sesquilinear form with the scalars $R$ rep
 **Proposition (the two forms of the algebra).** The maps
 
 $$
-\Psi(x,y) = y^{*}x, \qquad \Phi(x,y) = xy^{*}
+\boxed{\;\Psi(x,y) = y^{*}x, \qquad \Phi(x,y) = xy^{*}\;}
 $$
 
 are $A$-valued sesquilinear forms on $A$, both Hermitian, and they satisfy
@@ -65,7 +65,7 @@ $$
 **Proposition (the diagonal).** For every $x$ the elements
 
 $$
-\Psi(x,x) = x^{*}x, \qquad \Phi(x,x) = xx^{*} = x \star x
+\boxed{\;\Psi(x,x) = x^{*}x, \qquad \Phi(x,x) = xx^{*} = x \star x\;}
 $$
 
 are Hermitian, $\Psi(x,x)^{*} = \Psi(x,x)$ and $\Phi(x,x)^{*} = \Phi(x,x)$.
@@ -145,7 +145,7 @@ for all $x, y$, exactly when $\varphi$ is central on products, $\varphi(uv) = \v
 **Theorem (the radicals are the annihilators).** The radicals of the two $A$-valued forms are
 
 $$
-\operatorname{rad}(\Psi) = \{x : Ax = 0\}, \qquad \operatorname{rad}(\Phi) = \{x : xA = 0\} ,
+\boxed{\;\operatorname{rad}(\Psi) = \{x : Ax = 0\}, \qquad \operatorname{rad}(\Phi) = \{x : xA = 0\}\;} ,
 $$
 
 the left and the right annihilators of the algebra. Consequently $\Psi$ is nondegenerate exactly when $A$ has no nonzero left annihilator, and $\Phi$ exactly when it has no nonzero right annihilator.

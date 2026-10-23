@@ -26,7 +26,7 @@ $$
 where the trace is the ordinary trace on the finite-rank operators and $(\mathcal F f)(\pi)(\mathcal F h)(\pi)^*$ is trace class. Taking $h = f$ gives the **isometric form**
 
 $$
-\int_{\operatorname{Irr}(G)} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) \;=\; \int_G |f(g)|^2\,dg ,
+\boxed{\;\int_{\operatorname{Irr}(G)} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) \;=\; \int_G |f(g)|^2\,dg\;} ,
 $$
 
 and taking $h$ to be an approximate identity concentrated at $e$ and passing to the limit gives the **definite form**
@@ -52,7 +52,7 @@ where $\chi_\pi(g) = \operatorname{Tr}\pi(g)$ is the (possibly distributional, f
 **Theorem (inversion).** Let $G$ be unimodular of type I and let $f \in L^1(G)\cap L^2(G)$ be such that $\pi \mapsto \operatorname{Tr}((\mathcal F f)(\pi)\pi(g)^{-1})$ is integrable against $\mu_P$ for almost every $g$. Then
 
 $$
-f(g) = \int_{\operatorname{Irr}(G)} \operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(g)^{-1}\bigr)\,d\mu_P(\pi)
+\boxed{\;f(g) = \int_{\operatorname{Irr}(G)} \operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(g)^{-1}\bigr)\,d\mu_P(\pi)\;}
 $$
 
 for almost every $g$; the integral converges in $L^2(G)$ for every $f \in L^2(G)$ and defines the inverse transform. In the abelian case $\operatorname{Irr}(G) = G^\vee$, $d_\pi = 1$, and the formula is the inversion theorem of *Harmonic Analysis on Groups*; in the compact case it is the Fourier inversion of *Analysis on Compact Groups*.
@@ -64,7 +64,7 @@ for almost every $g$; the integral converges in $L^2(G)$ for every $f \in L^2(G)
 **Theorem.** For a unimodular group $G$ of type I, the operator-valued transform extends uniquely to a unitary equivalence of Hilbert spaces
 
 $$
-\mathcal{F} : L^2(G) \;\longrightarrow\; \int_{\operatorname{Irr}(G)}^{\oplus} \bigl(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*\bigr)\,d\mu_P(\pi),
+\boxed{\;\mathcal{F} : L^2(G) \;\longrightarrow\; \int_{\operatorname{Irr}(G)}^{\oplus} \bigl(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*\bigr)\,d\mu_P(\pi)\;},
 $$
 
 where the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ carries the Hilbert–Schmidt inner product $\langle A,B\rangle = \operatorname{Tr}(AB^*)$. Under $\mathcal{F}$, left convolution by $f \in L^1(G)$ corresponds to the field of operators $(\mathcal F f)(\pi)$, and the left regular representation corresponds to the field $\pi\otimes\pi^*$; equivalently $\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1}$ is multiplication by $(\mathcal F f)(\pi)$ on the fibres.

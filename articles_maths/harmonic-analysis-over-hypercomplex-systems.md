@@ -87,7 +87,7 @@ The explicit transforms, the reproducing kernels and the spherical monogenics of
 **Theorem (the Fourier image of the operator).** For a suitable function or distribution $f$,
 
 $$
-\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi), \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1}B_k\xi_k,
+\boxed{\;\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi), \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1}B_k\xi_k\;},
 $$
 
 the multiplication being left multiplication in $A$. Hence $f$ is left regular if and only if
@@ -113,7 +113,7 @@ where $A_\mathbb{C} = A \otimes_\mathbb{R}\mathbb{C}$ is the complexification.
 **Theorem (the characteristic variety of an elliptic system).** For an elliptic hypercomplex system,
 
 $$
-\operatorname{Char}(D) = \Bigl\{\zeta \in \mathbb{C}^m : \sum_{\alpha=0}^{m-1}\zeta_\alpha^2 = 0\Bigr\},
+\boxed{\;\operatorname{Char}(D) = \Bigl\{\zeta \in \mathbb{C}^m : \sum_{\alpha=0}^{m-1}\zeta_\alpha^2 = 0\Bigr\}\;},
 $$
 
 the complex isotropic cone. In particular $\operatorname{Char}(D)$ meets the real subspace only at the origin, which is the ellipticity of $D$.
@@ -235,7 +235,7 @@ $$
 **Theorem (reproducing property).** Let $f$ be left regular on a neighbourhood of $\bar\Omega$. Then $\mathcal{C}\bigl(f|_{\partial\Omega}\bigr) = f$ on $\Omega$; equivalently, the Cauchy kernel reproduces regular functions,
 
 $$
-f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y).
+\boxed{\;f(x) = \int_{\partial\Omega} E(x-y)\,\nu_B(y)\,f(y)\,dS(y)\;}.
 $$
 
 This is the Cauchy integral formula of *Hypercomplex Integration*, reinterpreted as an integral operator with kernel $E(x-y)\nu_B(y)$ acting on boundary data.

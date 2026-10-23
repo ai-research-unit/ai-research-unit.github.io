@@ -63,7 +63,7 @@ Throughout, $K$ is a field, $\bar K$ a separable closure, $G_K = \operatorname{G
 **Definition.** Let $G$ be a finite group and $\mathbf{C} = (C_1,\ldots,C_r)$ a tuple of conjugacy classes of $G$, with $C_i \neq 1$. For each $i$ choose $\sigma_i \in C_i$, and suppose that $\sigma_1\cdots\sigma_r = 1$ and $\langle\sigma_1,\ldots,\sigma_r\rangle = G$. Writing $n_i$ for the order of the centraliser of $\sigma_i$ in $G$, the tuple is **rigid** if
 
 $$
-\#\{(\tau_1,\ldots,\tau_r) : \tau_i \in C_i,\ \tau_1\cdots\tau_r = 1,\ \langle\tau_i\rangle = G\} = \frac{\lvert G\rvert}{n_1n_2\cdots n_r},
+\boxed{\;\#\{(\tau_1,\ldots,\tau_r) : \tau_i \in C_i,\ \tau_1\cdots\tau_r = 1,\ \langle\tau_i\rangle = G\} = \frac{\lvert G\rvert}{n_1n_2\cdots n_r}\;},
 $$
 
 that is, if the natural upper bound given by the character theory of $G$ is attained.
@@ -95,7 +95,7 @@ that is, if the natural upper bound given by the character theory of $G$ is atta
 **Theorem (obstruction).** Let $L/K$ be a Galois extension with group $\bar G$ and let $A$ be a finite $\bar G$-module (in the application, a finite abelian group with the action of $\bar G$). The obstruction to a compatible solution of the embedding problem with abelian kernel $A$ is a class
 
 $$
-\operatorname{ob} \in H^2(\bar G, A),
+\boxed{\;\operatorname{ob} \in H^2(\bar G, A)\;},
 $$
 
 which vanishes exactly when a solution exists; the classes in $H^2(G_K,A)$ classifying such problems are the cohomology classes of *Galois Cohomology*, and the vanishing of the obstruction is the statement in *Galois Cohomology* that the extension of modules splits compatibly with the homomorphism.

@@ -55,7 +55,7 @@ for every $u \in L^2(\Omega)$; the function $G(x,\cdot)$ is locally integrable f
 **Theorem (characterisation).** Let $L$ be of order $2$ with leading coefficient $p$, and suppose the Green operator exists. Then the Green function is characterised by the three conditions
 
 $$
-L_xG(x,y) = \delta(x-y), \qquad B_xG(\cdot,y) = 0 \ \text{for } y\in\Omega, \qquad G(\cdot,y)\in L^1_{\mathrm{loc}}(\Omega) ,
+\boxed{\;L_xG(x,y) = \delta(x-y), \qquad B_xG(\cdot,y) = 0 \ \text{for } y\in\Omega, \qquad G(\cdot,y)\in L^1_{\mathrm{loc}}(\Omega)\;} ,
 $$
 
 the equation being read in the distributional sense of *Distributions and Fundamental Solutions*; equivalently, $G(\cdot,y)$ solves $L_xG=0$ away from $x=y$ and has the singularity fixed by the delta.
@@ -85,7 +85,7 @@ and letting $\varepsilon\to0$ the integral tends to $0$ because $G$ is locally i
 **Theorem (symmetry).** Let $(L,B)$ be formally self-adjoint, so that $L=L^{\dagger}$ and the boundary condition pairs with itself. Then the Green function is **Hermitian-symmetric**,
 
 $$
-G(x,y) = \overline{G(y,x)} ,
+\boxed{\;G(x,y) = \overline{G(y,x)}\;} ,
 $$
 
 and for a real operator it is symmetric, $G(x,y)=G(y,x)$. The identity expresses the **reciprocity** of the boundary-value problem: the response at $x$ to a source at $y$ equals the conjugate response at $y$ to a source at $x$.
@@ -119,7 +119,7 @@ where $\Phi$ is the fundamental solution of the Laplacian and $H(\cdot,y)$ is th
 **Theorem (the one-dimensional construction).** Let $L = -(p\,\partial/\partial x)'+q$ with $p>0$ of class $C^1$ and $q$ continuous on $[a,b]$, and let the boundary condition be separated. If the homogeneous problem is trivial, let $u_<$ be the solution of $Lu=0$ satisfying the condition at $a$, normalised by $u_<'(a)=1$, and $u_>$ the solution satisfying the condition at $b$, normalised by $u_>'(b)=1$. Then
 
 $$
-G(x,y) = \frac{u_<(x\wedge y)\,u_>(x\vee y)}{p(y)\,W(y)} , \qquad W = u_<'u_> - u_<u_>' ,
+\boxed{\;G(x,y) = \frac{u_<(x\wedge y)\,u_>(x\vee y)}{p(y)\,W(y)} , \qquad W = u_<'u_> - u_<u_>'\;} ,
 $$
 
 where $x\wedge y$ and $x\vee y$ are the smaller and the larger of $x$ and $y$, and $W$ is a nonzero constant by the Liouville identity.

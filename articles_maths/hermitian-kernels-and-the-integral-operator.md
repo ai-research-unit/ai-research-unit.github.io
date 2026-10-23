@@ -48,7 +48,7 @@ kernel of the first article of this group is, and **real** if $K$ takes real val
 **Theorem (the adjoint kernel).** When $T_K$ is bounded on $L^2(\mu)$, its adjoint is the integral operator
 with the conjugate transpose kernel,
 $$
-T_K^\dagger=T_{K^*} .
+\boxed{\;T_K^\dagger=T_{K^*}\;} .
 $$
 Consequently $T_K$ is self-adjoint, $T_K^\dagger=T_K$, if and only if the kernel is Hermitian.
 
@@ -66,7 +66,7 @@ $T_K^\dagger=T_{K^*}$, and the fixed-point statement is immediate.
 **Theorem (the dictionary).** Let $K\in L^2(X\times X)$ and suppose $T_K$ is bounded. Then $K$ is positive
 definite if and only if $T_K$ is a positive operator,
 $$
-K\ \text{positive definite}\ \Longleftrightarrow\ \langle T_Kf,f\rangle\geq0\ \text{for all }f\in L^2(\mu) ;
+\boxed{\;K\ \text{positive definite}\ \Longleftrightarrow\ \langle T_Kf,f\rangle\geq0\ \text{for all }f\in L^2(\mu)\;} ;
 $$
 more precisely, for $f$ a finite linear combination of indicator functions,
 $$
@@ -98,7 +98,7 @@ $$
 linear isometry of $L^2(X\times X)$ onto the class of Hilbert–Schmidt operators on $L^2(X)$, and the class is
 a Hilbert space with the inner product
 $$
-\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K(x,y)\overline{L(x,y)}\,d\mu(x)d\mu(y) ;
+\boxed{\;\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K(x,y)\overline{L(x,y)}\,d\mu(x)d\mu(y)\;} ;
 $$
 the correspondence carries the kernel involution to the adjoint, $T_{K^*}=T_K^\dagger$, so that it is a
 $\ast$-isometry.

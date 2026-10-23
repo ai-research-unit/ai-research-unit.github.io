@@ -18,7 +18,7 @@ It does not construct $G/H$ again, and it does not develop the structure theory 
 **Theorem (the principle of Klein).** Let $(G,H)$ be a Klein geometry. Then the group of the automorphisms of the geometry that commute with the action of $G$, that is the group of homeomorphisms $\varphi$ of $G/H$ with $\varphi(gx) = g\varphi(x)$ for every $g \in G$, is $N_G(H)/H$, and the map
 
 $$
-G \to \operatorname{Aut}(G/H), \qquad g \mapsto (xH \mapsto gxH) ,
+\boxed{\;G \to \operatorname{Aut}(G/H), \qquad g \mapsto (xH \mapsto gxH)\;} ,
 $$
 
 has kernel the largest normal subgroup of $G$ contained in $H$. In particular the action of $G$ on $G/H$ is faithful exactly when $H$ contains no nontrivial normal subgroup of $G$.

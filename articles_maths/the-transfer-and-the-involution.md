@@ -23,7 +23,7 @@ where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices
 **Theorem.** The transfer is a well-defined chain map and it satisfies
 
 $$
-p_\# \tau = 2\,\mathrm{id}, \qquad\qquad \tau p_\# = 1 + T = N,
+\boxed{\;p_\# \tau = 2\,\mathrm{id}, \qquad\qquad \tau p_\# = 1 + T = N\;},
 $$
 
 as operators on $C_*(B;R)$ and $C_*(X;R)$ respectively; the second identity is the statement that the sum over the two sheets of the preimage of a simplex is the simplex together with its image under the involution.
@@ -95,7 +95,7 @@ which raises the degree by the codimension $d$ of the fixed set and is the pushf
 **Theorem (the Euler class identity).** The restriction and the transfer to the fixed set satisfy
 
 $$
-r \circ \tau = e \smile (-),
+\boxed{\;r \circ \tau = e \smile (-)\;},
 $$
 
 where $e \in H_{\mathbb{Z}/2}^{d}(F;R) = H^*(F;R)\otimes H^*(B\mathbb{Z}/2;R)$ is the **equivariant Euler class** of the normal directions to $F$, the class of the normal $G$-bundle in equivariant cohomology. In the free case the fixed set is empty, the two maps are absent, and the same identity with $e$ the Euler class of the double cover is the collaring of the next section.
@@ -139,7 +139,7 @@ $$
 be the cohomological transfer, of degree zero, and let $e \in H^1(B;R)$ be the **Euler class** of the cover, characterised by $p^*e = 0$ and by generating the kernel of the pullback. Then
 
 $$
-\tau \circ p^* = 0, \qquad \tau(p^*\beta \smile \alpha) = \beta \smile \tau(\alpha), \qquad e \smile \tau = 0,
+\boxed{\;\tau \circ p^* = 0, \qquad \tau(p^*\beta \smile \alpha) = \beta \smile \tau(\alpha), \qquad e \smile \tau = 0\;},
 $$
 
 the first identity being the exactness at the middle, the second the projection formula of the transfer, and the third the exactness at the other occurrence of the base; the vanishing $\tau p^* = 0$ holds because $\tau p^*$ is the multiplication by the degree $2$ of the covering, which is zero in $\mathbb{F}_2$ and in the twisted theory, and it makes the images of $p^*$ and $\tau$ the successive kernels. With integer coefficients and a double cover whose deck transformation reverses the orientation the statements hold with the twisted coefficients $H^{*,\mathrm{red}}(S^0)$ in place of $R$.

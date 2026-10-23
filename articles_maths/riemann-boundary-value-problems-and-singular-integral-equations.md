@@ -55,7 +55,7 @@ The kernel normalisation is the one for which $S^2=I$; this fixes the constant c
 **Theorem (Plemelj).** For $h\in H(\Gamma,\beta)$ the transform $\mathcal{C}h$ extends Hölder continuously to $\Gamma$ from either side, and
 
 $$
-\mathcal{C}^\pm h=\tfrac12\bigl(Sh\pm h\bigr).
+\boxed{\;\mathcal{C}^\pm h=\tfrac12\bigl(Sh\pm h\bigr)\;}.
 $$
 
 Equivalently,
@@ -137,7 +137,7 @@ using $f^+=f^-B+h$. The converse is the same computation read backwards: $\Phi^+
 **Corollary (the solution).** In the class $\mathcal{R}_{-1}$ the Riemann problem with constant coefficient $B$ and free term $h$ has the unique solution
 
 $$
-f=\mathcal{C}\bigl(hB^{-1}\bigr)\,Y,
+\boxed{\;f=\mathcal{C}\bigl(hB^{-1}\bigr)\,Y\;},
 $$
 
 and in the class $\mathcal{R}_0$ its general solution is
@@ -212,7 +212,7 @@ so $Kf=g$ is $\Phi^+(a+b)=g+\Phi^-(a-b)$, that is $\Phi^+=\Phi^-B+h$ with the st
 **Corollary (existence, uniqueness and the closed form).** In $H(\Gamma,\beta)$ the singular integral equation of regular type has the unique solution
 
 $$
-f=(P_+g)\,(a+b)^{-1}+(P_-g)\,(a-b)^{-1},
+\boxed{\;f=(P_+g)\,(a+b)^{-1}+(P_-g)\,(a-b)^{-1}\;},
 $$
 
 and the operator of the equation is invertible, with inverse $K^{-1}g=(P_+g)(a+b)^{-1}+(P_-g)(a-b)^{-1}$.

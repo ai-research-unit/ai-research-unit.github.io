@@ -26,7 +26,7 @@ the supremum over the continuous unitary representations $\pi$ of $G$.
 **Theorem (the involution recalled).** The map $f\mapsto f^*$ is an involutive, isometric, conjugate-linear anti-automorphism of $\mathcal{A}$:
 
 $$
-(f^*)^* = f, \qquad (f*g)^* = g^*\!*f^*, \qquad (\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*, \qquad \|f^*\|_1 = \|f\|_1 .
+\boxed{\;(f^*)^* = f, \qquad (f*g)^* = g^*\!*f^*, \qquad (\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*, \qquad \|f^*\|_1 = \|f\|_1\;} .
 $$
 
 **Proof.** These are the four axiom verifications of *The Convolution Algebra $L^1(G)$*, §The Involution; the modular factor is exactly what makes the norm isometric under the inversion $x\mapsto x^{-1}$, and it is absent only when $\Delta\equiv1$.
@@ -56,7 +56,7 @@ $$
 **Theorem (the positive cone).** The set
 
 $$
-\mathcal{A}^+ = \Bigl\{\sum_{i=1}^n g_i^*\!*g_i : n\geq0,\ g_i\in\mathcal{A}\Bigr\}
+\boxed{\;\mathcal{A}^+ = \Bigl\{\sum_{i=1}^n g_i^*\!*g_i : n\geq0,\ g_i\in\mathcal{A}\Bigr\}\;}
 $$
 
 of finite sums of squares is a convex cone under the real scalars, stable under $f\mapsto h^*\!*f*\!h$, and proper, $\mathcal{A}^+\cap(-\mathcal{A}^+)=\{0\}$; the positive functionals on $\mathcal{A}$, those $\omega$ with $\omega(f^*\!*f)\geq0$ for all $f$, are exactly the real-linear functionals that are $\geq0$ on $\mathcal{A}^+$.
@@ -76,7 +76,7 @@ $$
 and on the completion the involution is isometric and satisfies the $\mathrm{C}^*$-identity
 
 $$
-\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2 \qquad (f\in C^*(G)) ;
+\boxed{\;\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2 \qquad (f\in C^*(G))\;} ;
 $$
 
 the algebra $\mathcal{A}$ is dense in $C^*(G)$ and the inclusion $\mathcal{A}\hookrightarrow C^*(G)$ is injective.

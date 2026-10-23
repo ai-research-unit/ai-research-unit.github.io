@@ -54,8 +54,8 @@ as real vector spaces. In the case of the simple module the summands are the eig
 $$
 \boxed{\;
 M \cong (\mathbb{R}^2)^{\oplus d}
-\;}
-$$,
+\;},
+$$
 
 so $\dim_{\mathbb{R}} M = 2d$, every module has even dimension, and the isomorphism class of $M$ is determined by its dimension alone.
 
@@ -138,8 +138,8 @@ The absence of an identity is the same phenomenon as in the quaternion case, whe
 $$
 \boxed{\;
 \mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}}
-\;}
-$$.
+\;}.
+$$
 
 The equivalence sends a vector space $W$ to $\mathbb{R}^2 \otimes_{\mathbb{R}} W$ and a module $M$ to $\operatorname{Hom}_{\mathbb{H}_{\mathrm{s}}}(\mathbb{R}^2, M)$. Under it the simple module corresponds to $\mathbb{R}$, direct sums to direct sums, and tensor products to tensor products with the algebra acting on the first factor.
 

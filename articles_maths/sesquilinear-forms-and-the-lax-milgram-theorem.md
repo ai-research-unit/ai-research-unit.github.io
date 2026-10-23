@@ -37,7 +37,7 @@ A form is Hermitian exactly when its diagonal $B(x,x)$ is real for every $x$.
 **Theorem (representation of a bounded form).** For every bounded sesquilinear form $B$ there is a unique $A\in B(H)$ with
 
 $$
-B(x,y)=\langle Ax,y\rangle\quad(x,y\in H),\qquad \|A\|=\|B\| .
+\boxed{\;B(x,y)=\langle Ax,y\rangle\quad(x,y\in H),\qquad \|A\|=\|B\|\;} .
 $$
 
 Conversely every $A\in B(H)$ represents the bounded form $B_A(x,y)=\langle Ax,y\rangle$, and the correspondence $B\leftrightarrow A$ is a conjugate-linear isometry that carries the adjoint form to the adjoint operator: $B^*\leftrightarrow A^*$.
@@ -59,7 +59,7 @@ $$
 Equivalently, for every $f\in H$ there is a unique $x\in H$ with
 
 $$
-B(x,y)=\langle f,y\rangle\qquad(y\in H),
+\boxed{\;B(x,y)=\langle f,y\rangle\qquad(y\in H)\;},
 $$
 
 and it satisfies $\|x\|\le\frac1c\|f\|$.
@@ -83,7 +83,7 @@ $$
 is an inner product on $H$ whose norm is equivalent to the original norm,
 
 $$
-\sqrt{c}\,\|x\|\le\|x\|_B\le\sqrt{\|B\|}\,\|x\| ,
+\boxed{\;\sqrt{c}\,\|x\|\le\|x\|_B\le\sqrt{\|B\|}\,\|x\|\;} ,
 $$
 
 and $H$ is complete for $\|\cdot\|_B$; the two norms induce the same topology.

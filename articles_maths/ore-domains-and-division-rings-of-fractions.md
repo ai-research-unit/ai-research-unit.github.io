@@ -90,7 +90,7 @@ $$
 is well ordered. The set of all Malcev–Neumann series is written $k((G))$. Addition is coefficientwise, and multiplication is the convolution
 
 $$
-(fh)(g) = \sum_{uv = g} f(u)h(v) ,
+\boxed{\;(fh)(g) = \sum_{uv = g} f(u)h(v)\;} ,
 $$
 
 the sum being over the pairs $(u, v) \in G \times G$ with $uv = g$.
@@ -98,7 +98,7 @@ the sum being over the pairs $(u, v) \in G \times G$ with $uv = g$.
 **Lemma (Malcev–Neumann, standard).** Let $f$ and $h$ be Malcev–Neumann series. Then at each $g \in G$ there are only finitely many pairs $(u, v)$ with $uv = g$, $f(u) \neq 0$ and $h(v) \neq 0$; the product $fh$ defined by the convolution is a Malcev–Neumann series; and if the support of $h$ lies strictly above the identity, then so does the support of every power of $h$, and
 
 $$
-(1 - h)(1 + h + h^2 + h^3 + \cdots) = 1 ,
+\boxed{\;(1 - h)(1 + h + h^2 + h^3 + \cdots) = 1\;} ,
 $$
 
 the series being a Malcev–Neumann series.
@@ -116,7 +116,7 @@ $$
 Then $h(1) = 1 - c^{-1}f(g_0) = 0$, and for $x$ below the identity, $g_0x$ is below $g_0$, hence outside the support of $f$, so $h(x) = 0$ as well. Therefore the support of $h$ lies strictly above the identity, and the third part of the lemma applies:
 
 $$
-f^{-1} = (1 + h + h^2 + h^3 + \cdots)(cg_0)^{-1} ,
+\boxed{\;f^{-1} = (1 + h + h^2 + h^3 + \cdots)(cg_0)^{-1}\;} ,
 $$
 
 which lies in $k((G))$; indeed $f = cg_0(1 - h)$, the identity $(1 - h)(1 + h + h^2 + \cdots) = 1$ is the telescoping identity of the lemma, and $cg_0$ is invertible with inverse $c^{-1}g_0^{-1}$. So every nonzero element $f$ has a right inverse $g$, and then $g \neq 0$ and $g$ has a right inverse $h$, whence

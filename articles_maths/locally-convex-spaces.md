@@ -44,7 +44,7 @@ and the topology on $E$ is translation-invariant: a fundamental system at $x_0$ 
 **Definition.** Let $A \subseteq E$ be an **absorbing** set, that is, a set such that for every $x \in E$ there is $t > 0$ with $x \in tA$. The **gauge** (or **Minkowski functional**) of $A$ is
 
 $$
-p_A(x) = \inf\{t > 0 : x \in tA\} .
+\boxed{\;p_A(x) = \inf\{t > 0 : x \in tA\}\;} .
 $$
 
 **Proposition.** Let $A$ be a convex absorbing set, so that $p_A$ is finite-valued.
@@ -54,7 +54,7 @@ $$
 **(b)** If $A$ is convex, balanced and absorbing, then
 
 $$
-\{x : p_A(x) < 1\} \subseteq A \subseteq \{x : p_A(x) \leq 1\} ,
+\boxed{\;\{x : p_A(x) < 1\} \subseteq A \subseteq \{x : p_A(x) \leq 1\}\;} ,
 $$
 
 with equality $A = \{p_A \leq 1\}$ when $A$ is closed and $A = \{p_A < 1\}$ when $A$ is open.
@@ -104,7 +104,7 @@ with equality $A = \{p_A \leq 1\}$ when $A$ is closed and $A = \{p_A < 1\}$ when
 **Theorem (Hahn–Banach; geometric form).** Let $E$ be a locally convex space, let $A, B \subseteq E$ be non-empty disjoint convex sets. If $A$ is open, there is a continuous linear functional $f \in E'$ and a real number $\alpha$ with
 
 $$
-f(a) < \alpha \leq f(b) \qquad (a \in A, \ b \in B).
+\boxed{\;f(a) < \alpha \leq f(b) \qquad (a \in A, \ b \in B)\;}.
 $$
 
 If $A$ is compact and $B$ is closed and convex, then the separation is strict, $\sup_A f < \inf_B f$.

@@ -80,7 +80,7 @@ the neutral element being the class of any degenerate module, and the inverse of
 **Theorem (the Kasparov product).** For separable $\mathrm{C}^*$-algebras $A,B,C$ there is a bilinear map
 
 $$
-KK(A,B)\times KK(B,C) \longrightarrow KK(A,C) , \qquad (x,y)\mapsto x\otimes_By ,
+\boxed{\;KK(A,B)\times KK(B,C) \longrightarrow KK(A,C) , \qquad (x,y)\mapsto x\otimes_By\;} ,
 $$
 
 natural in all three variables, associative, and with the elements $[\operatorname{id}_A]$ as units; the product is compatible with the functoriality of the previous theorem, $[\varphi]\otimes_B[\psi] = [\psi\circ\varphi]$ for $*$-homomorphisms $\varphi : A\to B$ and $\psi : B\to C$.
@@ -100,7 +100,7 @@ natural in all three variables, associative, and with the elements $[\operatorna
 **Theorem (Bott periodicity in $KK$; standard).** For separable $\mathrm{C}^*$-algebras $A,B$ there are natural isomorphisms
 
 $$
-KK(A,B) \;\cong\; KK(SA,SB) \;\cong\; KK\bigl(A\otimes C_0(\mathbb{R}^2), B\bigr) \;\cong\; KK(A,\Sigma^2B) ,
+\boxed{\;KK(A,B) \;\cong\; KK(SA,SB) \;\cong\; KK\bigl(A\otimes C_0(\mathbb{R}^2), B\bigr) \;\cong\; KK(A,\Sigma^2B)\;} ,
 $$
 
 and the groups $KK(A,B)$ and $KK^1(A,B) := KK(A,SB)$ exhaust the theory, the higher groups being periodic of period two. The isomorphism is given by the Kasparov product with the **Bott element** $\beta\in KK(\mathbb{C},C_0(\mathbb{R}^2))\cong\mathbb{Z}$, the generator of the group.
@@ -128,7 +128,7 @@ which is periodic of period two and closes after six terms; the maps are the fun
 **Theorem (Kasparov; the universal coefficient theorem).** For separable $\mathrm{C}^*$-algebras $A$ and $B$ with $A$ in the bootstrap class there is a short exact sequence
 
 $$
-0 \longrightarrow \operatorname{Ext}\bigl(K_*(A),K_*(B)\bigr) \longrightarrow KK(A,B) \longrightarrow \operatorname{Hom}\bigl(K_*(A),K_*(B)\bigr) \longrightarrow 0 ,
+\boxed{\;0 \longrightarrow \operatorname{Ext}\bigl(K_*(A),K_*(B)\bigr) \longrightarrow KK(A,B) \longrightarrow \operatorname{Hom}\bigl(K_*(A),K_*(B)\bigr) \longrightarrow 0\;} ,
 $$
 
 which splits unnaturally; in particular $KK(A,B)$ is determined by the $K$-theory of $A$ and $B$ together with the extension data.

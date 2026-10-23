@@ -19,7 +19,7 @@ $$
 **Proposition (boundedness and norm).** $\ell_U$ is a bounded linear operator on $B(H)$ with
 
 $$
-\|\ell_U\|=\|U\|,
+\boxed{\;\|\ell_U\|=\|U\|\;},
 $$
 
 and the map $U\mapsto\ell_U$ is linear, injective and order-reversing under composition; the same identity holds for the Hilbert–Schmidt norm, $\|\ell_U(T)\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality for suitable $T$.
@@ -51,7 +51,7 @@ so the signed right multiplication is the right multiplication with the same twi
 **Theorem (products).** For all $U,V,W\in B(H)$,
 
 $$
-\ell_U\,\ell_V=L_{U\alpha(V)},\qquad L_U\,\ell_V=\ell_{UV},\qquad \ell_U\,L_V=L_{U\alpha(V)},\qquad \ell_U\varrho_V=L_{U\alpha(V)} .
+\boxed{\;\ell_U\,\ell_V=L_{U\alpha(V)},\qquad L_U\,\ell_V=\ell_{UV},\qquad \ell_U\,L_V=L_{U\alpha(V)},\qquad \ell_U\varrho_V=L_{U\alpha(V)}\;} .
 $$
 
 So the product of two signed left multiplications is an unsigned left multiplication, the product of a signed and an unsigned one is signed, and the signed left multiplications form the coset
@@ -77,7 +77,7 @@ of the unsigned left multiplications inside $B(B(H))$.
 **Theorem (invertibility).** $\ell_U$ is invertible in $B(B(H))$ exactly when $U\in B(H)$ is invertible, and then
 
 $$
-(\ell_U)^{-1}=\ell_{\alpha(U)^{-1}}=\ell_{\alpha(U^{-1})}.
+\boxed{\;(\ell_U)^{-1}=\ell_{\alpha(U)^{-1}}=\ell_{\alpha(U^{-1})}\;}.
 $$
 
 *Proof.* $\ell_U\ell_W=L_{U\alpha(W)}=L_I$ exactly when $\alpha(W)=U^{-1}$, that is $W=\alpha(U^{-1})=\alpha(U)^{-1}$; the other order is analogous, and the inverse is a signed left multiplication. Invertibility of the product forces $U$ invertible since $\ell_U$ is a composite of the invertible $\alpha$ and the left multiplication by $U$.

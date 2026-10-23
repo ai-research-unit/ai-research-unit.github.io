@@ -30,7 +30,7 @@ extended bilinearly, and the involution $(au_g)^* = \alpha_{g^{-1}}(a^*)u_{g^{-1
 **Proposition.** The $*$-algebra $A[G]_\alpha$ is unital with unit $1_A u_e$ when $A$ is unital, and it contains a copy of $A$ as the span of the elements $a u_e$; the elements $u_g$ are unitaries of $A[G]_\alpha$ whose conjugation implements the action,
 
 $$
-u_g(a u_e)u_g^* = \alpha_g(a)u_e .
+\boxed{\;u_g(a u_e)u_g^* = \alpha_g(a)u_e\;} .
 $$
 
 **Proof.** The associativity is the computation $(au_g)(bu_h)(cu_k) = a\alpha_g(b)\alpha_{gh}(c)u_{ghk}$ from both brackettings, using that $\alpha$ is a homomorphism; the involution axioms are checked similarly. The displayed identity is the definition of the product together with $u_g^* = u_{g^{-1}}$ for $a = 1_A$.
@@ -140,7 +140,7 @@ $$
 **Theorem (Takai duality).** Let $G$ be a discrete abelian group and let $\alpha : G \to \operatorname{Aut}(A)$. Then there is an isomorphism of $\mathrm{C}^*$-algebras
 
 $$
-(A\rtimes_\alpha G)\rtimes_{\hat\alpha}\hat G \;\cong\; A\otimes K\bigl(\ell^2(G)\bigr) ,
+\boxed{\;(A\rtimes_\alpha G)\rtimes_{\hat\alpha}\hat G \;\cong\; A\otimes K\bigl(\ell^2(G)\bigr)\;} ,
 $$
 
 canonical up to the choice of identification, where $\hat\alpha$ is the dual action of $\hat G$ and $K(\ell^2(G))$ is the algebra of compact operators on $\ell^2(G)$; if $G$ is finite then $K(\ell^2(G)) = M_{\lvert G\rvert}(\mathbb{C})$ and the isomorphism is between finite-dimensional algebras.
@@ -162,7 +162,7 @@ in agreement with the general finite-dimensional count $\dim(A\rtimes G) = \dim(
 **Theorem (Green's imprimitivity theorem).** Let a locally compact group $G$ act freely and properly on a locally compact Hausdorff space $X$. Then
 
 $$
-C_0(X)\rtimes G \;\cong\; C_0(X/G)\otimes K\bigl(L^2(G)\bigr),
+\boxed{\;C_0(X)\rtimes G \;\cong\; C_0(X/G)\otimes K\bigl(L^2(G)\bigr)\;},
 $$
 
 and in the discrete case with $X/G$ compact the algebra is $C(X/G)\otimes K(\ell^2(G))$. The isomorphism is induced by the imprimitivity bimodule of the action.

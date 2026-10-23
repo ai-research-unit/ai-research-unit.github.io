@@ -44,7 +44,7 @@ and the pair $(W, S)$ is a **Coxeter system**. The **rank** of the system is $|S
 **Proposition.** The length function satisfies
 
 $$
-\ell(ws) = \ell(w) + 1 \quad\text{or}\quad \ell(ws) = \ell(w) - 1
+\boxed{\;\ell(ws) = \ell(w) + 1 \quad\text{or}\quad \ell(ws) = \ell(w) - 1\;}
 $$
 
 for every $w \in W$ and $s \in S$, and $\ell(w) \equiv \ell(w') \pmod{2}$ whenever $w$ and $w'$ are related by a sequence of relations; hence $\varepsilon(w) = (-1)^{\ell(w)}$ is a well-defined map $W \to \{\pm 1\}$ and is a homomorphism.
@@ -62,7 +62,7 @@ where the hat means the term is deleted.
 **Theorem (exchange and deletion conditions).** The exchange condition holds in every Coxeter system. Consequently, if a word $s_1\cdots s_k$ is not reduced, then it contains two letters that cancel after a single deletion: there are indices $i < j$ with $s_i = s_j$ and
 
 $$
-s_1 \cdots s_k = s_1 \cdots \widehat{s_i} \cdots \widehat{s_j} \cdots s_k,
+\boxed{\;s_1 \cdots s_k = s_1 \cdots \widehat{s_i} \cdots \widehat{s_j} \cdots s_k\;},
 $$
 
 and iterating gives a reduced word for the same element.
@@ -110,7 +110,7 @@ The list is due to Coxeter, and the group $I_2(m)$ is the dihedral group of orde
 **Theorem (order via the degrees).** For a finite Coxeter group the reflection degrees $d_1, \ldots, d_n$ are the integers appearing in the table below, and
 
 $$
-|W| = d_1 d_2 \cdots d_n.
+\boxed{\;|W| = d_1 d_2 \cdots d_n\;}.
 $$
 
 | Type | degrees |

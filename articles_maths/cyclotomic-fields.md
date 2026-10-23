@@ -100,7 +100,7 @@ so two cyclotomic fields intersect in $\mathbb{Q}$ exactly when $m$ and $n$ are 
 **Theorem.** Let $K = \mathbb{Q}(\zeta_n)$. Then $K/\mathbb{Q}$ is a Galois extension with
 
 $$
-\operatorname{Gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+\boxed{\;\operatorname{Gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
 $$
 
 the isomorphism sending $k \in (\mathbb{Z}/n\mathbb{Z})^\times$ to the automorphism $\sigma_k$ determined by $\sigma_k(\zeta_n) = \zeta_n^k$. In particular $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ is abelian of order $\varphi(n)$, and its exponent divides $\lambda(n)$, the exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$.
@@ -146,7 +146,7 @@ Thus $\sqrt{p^\ast} = g \in \mathbb{Z}[\zeta_p]$, which exhibits the quadratic s
 **Theorem.** Let $K = \mathbb{Q}(\zeta_n)$, $n \geq 1$. The ring of integers of $K$ is
 
 $$
-\mathcal{O}_K = \mathbb{Z}[\zeta_n],
+\boxed{\;\mathcal{O}_K = \mathbb{Z}[\zeta_n]\;},
 $$
 
 the smallest subring of $K$ containing $\mathbb{Z}$ and $\zeta_n$. Consequently $\{1, \zeta_n, \ldots, \zeta_n^{\varphi(n)-1}\}$ is an integral basis of $K$ over $\mathbb{Q}$, and $\mathcal{O}_K$ is a Dedekind domain in the sense of *Dedekind Domains and Ideal Class Groups*.
@@ -194,7 +194,7 @@ evaluated at $x = 1$ gives $\prod_{k}(1 - \zeta_{p^v}^k) = p$, so $p \in (1-\zet
 **Theorem.** Let $n \geq 2$ and $\zeta = \zeta_n$. Then
 
 $$
-\operatorname{N}_{\mathbb{Q}(\zeta_n)/\mathbb{Q}}(1 - \zeta) = \begin{cases} p & \text{if } n = p^v \text{ is a prime power}, \\ 1 & \text{otherwise.}\end{cases}
+\boxed{\;\operatorname{N}_{\mathbb{Q}(\zeta_n)/\mathbb{Q}}(1 - \zeta) = \begin{cases} p & \text{if } n = p^v \text{ is a prime power}, \\ 1 & \text{otherwise.}\end{cases}\;}
 $$
 
 **Proof.** By the corollary on norms, $\operatorname{N}(1-\zeta) = \Phi_n(1)$, the resultant of $\Phi_n(x)$ and $x - 1$ being $\Phi_n(1)$. Now $\Phi_n(1) = p$ when $n = p^v$: from $\Phi_{p^v}(x) = \Phi_p(x^{p^{v-1}})$ and $\Phi_p(1) = p$. When $n$ is divisible by at least two distinct primes, write $n = pm$ with $p \nmid m$ and use $\Phi_n(x) = \Phi_m(x^p)/\Phi_m(x)$ for such $n$; at $x=1$ this gives $\Phi_n(1) = \Phi_m(1)/\Phi_m(1) = 1$ by induction on the number of prime factors.

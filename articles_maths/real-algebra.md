@@ -108,7 +108,7 @@ $$
 is a multiplicative submonoid of $\mathbb{R}$ and is closed under addition. It is the **positive cone** of the ordered field, and it determines the order by
 
 $$
-q_1 < q_2 \iff q_2 - q_1 \in \mathbb{R}_{>0}.
+\boxed{\;q_1 < q_2 \iff q_2 - q_1 \in \mathbb{R}_{>0}\;}.
 $$
 
 The absolute value is not a separate operation from the field structure; it is defined in terms of the order, and the order is defined in terms of the field structure together with the completeness axiom.
@@ -222,7 +222,7 @@ Indeed, $q_r$ is fixed by the identity conjugation, so it lies in the real subsp
 This gives the direct sum decomposition
 
 $$
-\mathbb{R} = \mathbb{R}_{\mathbb{R}},
+\boxed{\;\mathbb{R} = \mathbb{R}_{\mathbb{R}}\;},
 $$
 
 where $\mathbb{R}_{\mathbb{R}}$ is the real subspace. It is a real vector space of dimension $1$, and its direct sum is the full algebra $\mathbb{R}$ of real dimension $1$.

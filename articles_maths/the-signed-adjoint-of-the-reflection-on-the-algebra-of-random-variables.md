@@ -23,7 +23,7 @@ Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\
 
 **Theorem (the reflection and its adjoint).** For every unit $u$ of $\mathcal{A}$,
 $$
-r_u=\alpha,\qquad r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha x\|=\|x\| ,
+\boxed{\;r_u=\alpha,\qquad r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha x\|=\|x\|\;} ,
 $$
 so the reflection is an involutive unitary operator and is its own adjoint.
 
@@ -51,7 +51,7 @@ a Hermitian form equivalent to the form of the category through the grade involu
 
 **Theorem (the signed adjoint of the reflection).** With respect to the signed pairing the adjoint of the reflection is again the reflection, and the reflection is an isometry:
 $$
-\{r_ux,y\}=\{x,r_uy\},\qquad \{r_ux,r_uy\}=\{x,y\} .
+\boxed{\;\{r_ux,y\}=\{x,r_uy\},\qquad \{r_ux,r_uy\}=\{x,y\}\;} .
 $$
 
 *Proof.* With $r_u=\alpha$ one has $\{r_ux,y\}=\langle\alpha x,\alpha y\rangle=\langle x,y\rangle$ by the unitarity of $\alpha$, and $\{x,r_uy\}=\langle x,\alpha\alpha y\rangle=\langle x,y\rangle$; the two are equal, and the isometry is the same computation applied twice. The signed pairing is equivalent to the form because $\alpha$ is invertible.
@@ -62,7 +62,7 @@ $$
 
 **Theorem (the involutions).** The signed sandwiches that are involutions are the operators $S^\alpha_c=L_c\alpha$ with
 $$
-c\,\alpha(c)=1 ,
+\boxed{\;c\,\alpha(c)=1\;} ,
 $$
 the $\alpha$-cocycles, and they form a group under multiplication; the reflection $\alpha=S^\alpha_1$ is the one with $c=1$, and $-\alpha=S^\alpha_{-1}$ is the companion. Every involution is self-adjoint for the form of the category exactly when it is also $\alpha$-Hermitian, $\alpha(c)=c^*$, which fails for the general cocycle.
 

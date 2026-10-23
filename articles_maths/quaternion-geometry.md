@@ -96,9 +96,7 @@ $$
 
 The bi-invariance of the metric says that the isometry group of $S^3$ contains the two-sided action of $S^3\times S^3$. By *Quaternion Rotations and Reflections* that action is a surjective homomorphism $S^3\times S^3\to SO(4)$ with kernel $\{\pm(1,1)\}$; the isometry group of $S^3$ is $O(4) = SO(4)\rtimes\mathbb{Z}/2\mathbb{Z}$, and the piece containing the identity is exactly $SO(4)$. The sphere is therefore the homogeneous space
 
-$$
-S^3 \cong SO(4)/SO(3) \cong (S^3\times S^3)/\Delta S^3, \qquad \Delta S^3 = \{(\tilde q,\tilde q) : \tilde q\in S^3\},
-$$
+$$ \boxed{\; S^3 \cong SO(4)/SO(3) \cong (S^3\times S^3)/\Delta S^3, \qquad \Delta S^3 = \{(\tilde q,\tilde q) : \tilde q\in S^3\} \;} ,$$
 
 the quotient by the diagonal, which is the isotropy of the identity. The **isotropy representation** is the adjoint action $\operatorname{Ad}$ of $S^3$ on the tangent space $\operatorname{Im}\mathbb{H}$ at the identity, so the sphere is a symmetric space of rank one and the stabiliser of a point is the group $SO(3)$ of rotations of the tangent space. The scalar part of the two-sided action is trivial: since $\Phi_{(\tilde q_1,\tilde q_2)}(\tilde p) = \tilde q_1\tilde p \tilde q_2^{-1}$ fixes the scalar line when $\tilde q_1 = \tilde q_2$, the diagonal $S^3$ fixes the identity and acts on the tangent space by the adjoint action, as required.
 
@@ -126,9 +124,7 @@ so that $\pi(\tilde q p) = \pi(\tilde q)$ for $p\in \mathrm{U}(1)$, and the assi
 
 **Theorem.** The Hopf map is a locally trivial fibre bundle with fibre $S^1$ and base $S^2$,
 
-$$
-S^1 \longrightarrow S^3 \xrightarrow{\ \pi\ } S^2,
-$$
+$$ \boxed{\; S^1 \longrightarrow S^3 \xrightarrow{\ \pi\ } S^2 \;} ,$$
 
 and it is the orbit map of the free right action of $\mathrm{U}(1)\cong S^1$ on $S^3$. The fibre over any point is a great circle of $S^3$, and the fibres are pairwise linked, each two of them having linking number one.
 
@@ -146,10 +142,8 @@ The relation is defined with the scalar on the right, because $\mathbb{H}$ is no
 
 **Theorem.** The map
 
-$$
-\mathbb{H}P^1\longrightarrow S^4 = \{\tilde q\in\mathbb{H}\oplus\mathbb{R} : |\tilde q|^2 + t^2 = 1\},
-\qquad [\tilde q : \tilde p]\mapsto \left(2\tilde q \tilde p^{\natural},\ |\tilde q|^2 - |\tilde p|^2\right)\big/\!\left(|\tilde q|^2 + |\tilde p|^2\right),
-$$
+$$ \boxed{\; \mathbb{H}P^1\longrightarrow S^4 = \{\tilde q\in\mathbb{H}\oplus\mathbb{R} : |\tilde q|^2 + t^2 = 1\},
+\qquad [\tilde q : \tilde p]\mapsto \left(2\tilde q \tilde p^{\natural},\ |\tilde q|^2 - |\tilde p|^2\right)\big/\!\left(|\tilde q|^2 + |\tilde p|^2\right) \;} ,$$
 
 is a homeomorphism, so $\mathbb{H}P^1\cong S^4$.
 

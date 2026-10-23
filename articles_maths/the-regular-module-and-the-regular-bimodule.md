@@ -15,7 +15,7 @@ Throughout, $R$ is an associative ring with $1 \neq 0$, not assumed commutative.
 **Definition.** The **left regular module** ${}_RR$ is the additive group $(R,+)$ with the scalar multiplication
 
 $$
-R \times R \to R, \qquad (r,m) \mapsto rm ,
+\boxed{\;R \times R \to R, \qquad (r,m) \mapsto rm\;} ,
 $$
 
 the multiplication of $R$ itself.
@@ -75,7 +75,7 @@ which is the associativity of $R$ once more.
 **Proposition.** For a right $R$-module $M$ there is a natural isomorphism
 
 $$
-M \otimes_R {}_RR \cong M, \qquad m \otimes r \mapsto mr ,
+\boxed{\;M \otimes_R {}_RR \cong M, \qquad m \otimes r \mapsto mr\;} ,
 $$
 
 and for a left $R$-module $N$ a natural isomorphism ${}_RR \otimes_R N \cong N$, $r \otimes n \mapsto rn$. For bimodules the same element is the two-sided identity, ${}_SM_R \otimes_R {}_RR_R \cong {}_SM_R$ and ${}_RR_R \otimes_R {}_RN_T \cong {}_RN_T$, naturally in the outer module.
@@ -91,7 +91,7 @@ and for a left $R$-module $N$ a natural isomorphism ${}_RR \otimes_R N \cong N$,
 **Proposition.** There are ring isomorphisms
 
 $$
-\operatorname{End}_R(R_R) \cong R, \qquad \operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}} ,
+\boxed{\;\operatorname{End}_R(R_R) \cong R, \qquad \operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}}\;} ,
 $$
 
 the first given by the left multiplications $b \mapsto L_b$ and the second by the right multiplications $b \mapsto R_b$, where $L_b(x) = bx$ and $R_b(x) = xb$.

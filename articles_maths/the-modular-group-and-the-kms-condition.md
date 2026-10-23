@@ -15,7 +15,7 @@ The modular operator and the Tomita–Takesaki theorem are *The Modular Operator
 **Definition.** Let $\omega$ be a state on a von Neumann algebra $\mathcal{M}$ and $\sigma$ a strongly continuous group of automorphisms of $\mathcal{M}$. Then $\omega$ is **KMS at $\beta>0$ with respect to $\sigma$** when for every $x, y\in\mathcal{M}$ there is a function $F_{x,y}$ bounded and continuous on the closed strip $\{z : 0\leq\mathrm{Im}\,z\leq\beta\}$ and holomorphic in the open strip, with
 
 $$
-F_{x,y}(t) = \omega\big(x\,\sigma_t(y)\big), \qquad F_{x,y}(t+i\beta) = \omega\big(\sigma_t(y)\,x\big)
+\boxed{\;F_{x,y}(t) = \omega\big(x\,\sigma_t(y)\big), \qquad F_{x,y}(t+i\beta) = \omega\big(\sigma_t(y)\,x\big)\;}
 $$
 
 for all real $t$. The state is **KMS with respect to $\sigma$** when it is KMS at some $\beta$; the normalisation $\beta = 1$ is a rescaling of the group.
@@ -23,7 +23,7 @@ for all real $t$. The state is **KMS with respect to $\sigma$** when it is KMS a
 **Proposition (the boundary values are a commutativity relation).** The KMS condition can be read as the statement that the two sesquilinear forms
 
 $$
-(x,y)\mapsto\omega(x\sigma_t(y)), \qquad (x,y)\mapsto\omega(\sigma_t(y)x)
+\boxed{\;(x,y)\mapsto\omega(x\sigma_t(y)), \qquad (x,y)\mapsto\omega(\sigma_t(y)x)\;}
 $$
 
 are the two boundary values of one analytic family, so the KMS condition is a "commutativity up to analytic continuation" of the state with the flow.

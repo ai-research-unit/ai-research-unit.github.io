@@ -56,7 +56,7 @@ and let $c = g \circ f$ be its closure operator. Then the conjugate $c^{\perp}$ 
 of the reversed connection $g^{\perp} \dashv f^{\perp}$:
 
 $$
-c^{\perp} = f^{\perp} \circ g^{\perp}, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp} .
+\boxed{\;c^{\perp} = f^{\perp} \circ g^{\perp}, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}\;} .
 $$
 
 **Proof.** The conjugation is an anti-automorphism of composition, $(g \circ f)^{\perp} = f^{\perp}

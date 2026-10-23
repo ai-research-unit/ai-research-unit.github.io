@@ -12,7 +12,7 @@ Throughout, $(G,\alpha)$ is a group with an involutive automorphism $\alpha$, $\
 **Theorem (the adjoint of a signed left multiplication).** For every $a\in G$,
 
 $$
-\bigl(\ell^{\alpha}_a\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\,e}=\ell^{\alpha}_{\alpha(a)^{-1}}=\ell^{\alpha}_{\alpha(a^{-1})}.
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\,e}=\ell^{\alpha}_{\alpha(a)^{-1}}=\ell^{\alpha}_{\alpha(a^{-1})}\;}.
 $$
 
 Hence the adjoint of a signed left multiplication is a signed left multiplication, and the set $\{\ell^{\alpha}_a:a\in G\}$ is closed under the adjoint.
@@ -22,9 +22,9 @@ Hence the adjoint of a signed left multiplication is a signed left multiplicatio
 **Corollary (the adjoint inverts the index through the involution).** The assignment $a\mapsto\alpha(a)^{-1}$ is an involution of the set $G$, and the adjoint on the signed left multiplications is that assignment on the indices:
 
 $$
-a\mapsto\alpha(a)^{-1},
+\boxed{\;a\mapsto\alpha(a)^{-1},
 \qquad
-a\mapsto\alpha(a)^{-1}\mapsto\alpha\bigl(\alpha(a)^{-1}\bigr)^{-1}=a .
+a\mapsto\alpha(a)^{-1}\mapsto\alpha\bigl(\alpha(a)^{-1}\bigr)^{-1}=a\;} .
 $$
 
 It is the anti-automorphism $\sigma=\iota\alpha=\alpha\iota$ of *Involutive Groups*, read on the index set.
@@ -54,7 +54,7 @@ It is the anti-automorphism $\sigma=\iota\alpha=\alpha\iota$ of *Involutive Grou
 **Proposition (the adjoint of the signed sandwich factors through the signed left multiplication).** For every $a,b\in G$,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\ell^{\alpha}_a\bigr)^{*}\circ(R_b)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}\circ R_{b^{-1}}.
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\ell^{\alpha}_a\bigr)^{*}\circ(R_b)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}\circ R_{b^{-1}}\;}.
 $$
 
 **Proof.** The factorisation $\Sigma^{\alpha}_{a,b}=R_b\circ\ell^{\alpha}_a$ is from *The Signed Adjoint Sandwich on a Group*; the adjoint of a product reverses the order, and the adjoints of the two factors are the theorem above and $(R_b)^{*}=R_{b^{-1}}$.

@@ -54,7 +54,7 @@ that is, it conjugates the left and the right convolutions into those of the ima
 **Proposition (decomposition and bound).** For all $a, b \in \mathcal{A}$,
 
 $$
-S_{a,b} = T_{a,b}\,\mathrm{A} = L_a\mathrm{A}R_b = L_a R_{\alpha(b)}\mathrm{A}, \qquad \mathrm{A} = S_{1,1} \ \text{(unital case)},
+\boxed{\;S_{a,b} = T_{a,b}\,\mathrm{A} = L_a\mathrm{A}R_b = L_a R_{\alpha(b)}\mathrm{A}, \qquad \mathrm{A} = S_{1,1} \ \text{(unital case)}\;},
 $$
 
 and $S_{a,b}$ is bounded with
@@ -70,7 +70,7 @@ the assignment $(a,b)\mapsto S_{a,b}$ being bilinear; when $\alpha$ is isometric
 **Proposition (the multiplication table).** For all $a,b,c,d \in \mathcal{A}$,
 
 $$
-S_{a,b}T_{c,d} = S_{a*\alpha(c),\,\alpha(d)*b}, \qquad T_{a,b}S_{c,d} = S_{a*c,\,d*b}, \qquad S_{a,b}S_{c,d} = T_{a*\alpha(c),\,\alpha(d)*b} .
+\boxed{\;S_{a,b}T_{c,d} = S_{a*\alpha(c),\,\alpha(d)*b}, \qquad T_{a,b}S_{c,d} = S_{a*c,\,d*b}, \qquad S_{a,b}S_{c,d} = T_{a*\alpha(c),\,\alpha(d)*b}\;} .
 $$
 
 Hence a signed sandwich followed or preceded by an unsigned one is signed, and the product of two signed sandwiches is unsigned; the signed sandwiches are closed under composition exactly when $\alpha = \mathrm{id}$.
@@ -134,7 +134,7 @@ $$
 **Theorem (the square and the involution condition).** For every unit $u$ the reflection is bounded, invertible and an algebra automorphism of $\mathcal{A}$, and
 
 $$
-\rho_u^2 = c_{u*\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)} ,
+\boxed{\;\rho_u^2 = c_{u*\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)}\;} ,
 $$
 
 with $c_t(f) = t*f*t^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector; its fixed set is the closed subalgebra $\{f : u*\alpha(f) = f*u\}$, and its norm satisfies $\|\rho_u\|\leq\|u\|_1\|u^{-1}\|_1\|\alpha\|$.

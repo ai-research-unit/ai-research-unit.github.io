@@ -104,7 +104,7 @@ where the restriction of $Q$ to $W$ is non-degenerate. Over a general commutativ
 **Theorem.** Let $M$ be a free $R$-module of finite rank with quadratic form $\mathfrak{Q}$, radical $\mathrm{rad}(Q)$, and induced non-degenerate form $\bar{Q}$ on $M/\mathrm{rad}(Q)$. Suppose that $M$ is the direct sum of $\mathrm{rad}(Q)$ and a complement $W$ on which $Q$ is non-degenerate. Then there is an algebra isomorphism
 
 $$
-Cl(M, \mathfrak{Q}) \cong Cl(M/\mathrm{rad}(Q), \bar{Q}) \hat{\otimes} \Lambda(\mathrm{rad}(Q)),
+\boxed{\;Cl(M, \mathfrak{Q}) \cong Cl(M/\mathrm{rad}(Q), \bar{Q}) \hat{\otimes} \Lambda(\mathrm{rad}(Q))\;},
 $$
 
 where $\hat{\otimes}$ is the graded tensor product, and $\Lambda(\mathrm{rad}(Q))$ is the exterior algebra on $\mathrm{rad}(Q)$.
@@ -158,7 +158,7 @@ So the degenerate Clifford algebra is semisimple iff the quadratic form is non-d
 Let $M$ be free of finite rank $n$, with radical $\mathrm{rad}(Q)$ of rank $r$ and non-degenerate quotient $M/\mathrm{rad}(Q)$ of rank $n - r$. Then
 
 $$
-\operatorname{rank} Cl(M, \mathfrak{Q}) = 2^{n-r} \cdot 2^r = 2^n.
+\boxed{\;\operatorname{rank} Cl(M, \mathfrak{Q}) = 2^{n-r} \cdot 2^r = 2^n\;}.
 $$
 
 The non-degenerate factor contributes $2^{n-r}$, and the radical factor contributes $2^r$. The total rank is $2^n$, as expected. The decomposition is compatible with the rank count.
@@ -321,7 +321,7 @@ This is true over any commutative ring.
 In finite dimensions, the even subalgebra is itself a Clifford algebra. If $M$ is free of finite rank $n$ with quadratic form $\mathfrak{Q}$, and if $\dim M \geq 1$, then
 
 $$
-Cl^+(M, \mathfrak{Q}) \cong Cl(M', Q'),
+\boxed{\;Cl^+(M, \mathfrak{Q}) \cong Cl(M', Q')\;},
 $$
 
 where $M'$ is a free module of rank $n - 1$ and $Q'$ is a quadratic form determined by $Q$. The precise form of $Q'$ depends on the choice of a vector $u$ with $\mathfrak{Q}(u) \neq 0$:

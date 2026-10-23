@@ -134,7 +134,7 @@ $$
 **Theorem.** Let $G \subseteq GL_n(\mathbb{K})$ be a Lie subgroup with Lie algebra $\mathrm{G} \subseteq \mathrm{GL}(n, \mathbb{K})$. Then the exponential map of $G$ agrees with the ordinary matrix exponential on $\mathrm{G}$:
 
 $$
-\exp(A) = \sum_{k=0}^{\infty} \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots,
+\boxed{\;\exp(A) = \sum_{k=0}^{\infty} \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots\;},
 $$
 
 and the series converges absolutely for every $A$.
@@ -188,7 +188,7 @@ $$
 **Theorem.** Identify $T_v\mathrm{G}$ with $\mathrm{G}$ for every $v$, and $T_{\exp(v)}G$ with $\mathrm{G}$ by left translation. Then the differential of the exponential is the operator
 
 $$
-d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - \exp(-\operatorname{ad}_v)}{\operatorname{ad}_v},
+\boxed{\;d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - \exp(-\operatorname{ad}_v)}{\operatorname{ad}_v}\;},
 $$
 
 the series being the entire function $\frac{1-\exp(-z)}{z}$ applied to the endomorphism $\operatorname{ad}_v$.
@@ -226,7 +226,7 @@ $$
 has a unique solution $Z(X, Y)$, and this solution is a **Lie polynomial**: it is a convergent series in $X, Y$ whose every term is obtained from $X, Y$ by iterated brackets. Its first terms are
 
 $$
-Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \tfrac{1}{12}[X, [X, Y]] - \tfrac{1}{12}[Y, [X, Y]] - \tfrac{1}{24}[Y, [X, [X, Y]]] + \cdots.
+\boxed{\;Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \tfrac{1}{12}[X, [X, Y]] - \tfrac{1}{12}[Y, [X, Y]] - \tfrac{1}{24}[Y, [X, [X, Y]]] + \cdots\;}.
 $$
 
 **Proof sketch.** The derivative formula for the exponential gives the differential equation satisfied by $Z$ along the path $\exp(X)\exp(tY)$, and the solution is obtained by successive approximation; each step introduces one more bracket, and the convergence for small $X, Y$ follows from the analytic dependence on the two variables, by the analytic implicit function theorem.

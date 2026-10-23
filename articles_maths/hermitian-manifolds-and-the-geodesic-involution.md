@@ -31,7 +31,7 @@ on a normal neighbourhood $\Omega$ of $p$; the previous articles of this categor
 **Theorem.** The geodesic symmetry is an involution of the normal neighbourhood, fixing $p$ alone and reversing every geodesic through $p$, and its differential at $p$ is the geodesic involution of the tangent space:
 
 $$
-\sigma_p^2 = \mathrm{id}, \qquad d(\sigma_p)_p = -\mathrm{id} = \iota|_{T_pM} .
+\boxed{\;\sigma_p^2 = \mathrm{id}, \qquad d(\sigma_p)_p = -\mathrm{id} = \iota|_{T_pM}\;} .
 $$
 
 Along the geodesic $\gamma$ with $\gamma(0)=p$ the symmetry acts by $\gamma(t)\mapsto\gamma(-t)$, and on the tangent bundle along $\gamma$ its differential acts by the transport followed by the reversal, $d(\sigma_p)_{\gamma(t)} = -\iota\circ P_{t\to -t}$, where $P$ is the parallel transport along the geodesic.
@@ -65,7 +65,7 @@ Consequently the differential of the geodesic symmetry at its centre is complex-
 **Theorem (the compatibility condition, quoted from the Hermitian geometry).** The geodesic symmetry is holomorphic on a whole neighbourhood of $p$ exactly when the complex structure is **parallel** at $p$ in the sense of the Levi-Civita connection,
 
 $$
-(\nabla J)_p = 0 \quad \text{equivalently} \quad \nabla J = 0 \text{ on the neighbourhood},
+\boxed{\;(\nabla J)_p = 0 \quad \text{equivalently} \quad \nabla J = 0 \text{ on the neighbourhood}\;},
 $$
 
 and when this holds at every point the metric is **Kähler** and the manifold is **locally Hermitian symmetric**; conversely a Kähler manifold that is locally symmetric is Hermitian symmetric, its geodesic symmetry being holomorphic.
@@ -81,7 +81,7 @@ and when this holds at every point the metric is **Kähler** and the manifold is
 **Theorem.** A Hermitian symmetric space is a symmetric space whose complex structure is parallel; the geodesic symmetry at every point is then holomorphic, its differential $-\mathrm{id}$ being complex-linear, and the parallel complex structure is the one for which the symmetric structure is complex. In the Cartan decomposition the complex structure is an endomorphism of $\mathfrak{p}$ with $J^2 = -\mathrm{id}$, and the complexified tangent space $\mathfrak{p}\otimes\mathbb{C}$ splits into the $(+i)$- and $(-i)$-eigenspaces $\mathfrak{p}_+\oplus\mathfrak{p}_-$; the symmetric space is Hermitian exactly when
 
 $$
-[\mathfrak{p}_+,\mathfrak{p}_+] = 0,
+\boxed{\;[\mathfrak{p}_+,\mathfrak{p}_+] = 0\;},
 $$
 
 equivalently when the centre of $\mathfrak{k}$ is one-dimensional in the compact type and the complexified isotropy has a one-dimensional centre.

@@ -24,7 +24,7 @@ The binomial coefficients are $\binom{n}{k} = n!/(k!\,(n-k)!)$ for $0 \leq k \le
 **Theorem (binomial theorem).** Let $R$ be a commutative ring, let $a, b \in R$ and let $n \geq 0$. Then
 
 $$
-(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{\,n-k} .
+\boxed{\;(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^k b^{\,n-k}\;} .
 $$
 
 **Proof.** Expand the product of $n$ factors, each $a + b$. Distributivity expresses $(a+b)^n$ as the sum of all $2^n$ words in the letters $a, b$. By the commutative law a word with $k$ copies of $a$ and $n-k$ copies of $b$ equals $a^k b^{n-k}$, so the words group into $n+1$ classes according to $k$; the class with $k$ copies of $a$ is in bijection with the $k$-element subsets of $\{1, \ldots, n\}$, of which there are $\binom{n}{k}$.
@@ -132,7 +132,7 @@ The ideal $J$ exists by Zorn's lemma applied to the set of ideals disjoint from 
 **Theorem (Krull).** Let $I$ be an ideal of the commutative ring $R$. Then the radical of $I$ is the intersection of the prime ideals containing $I$:
 
 $$
-\sqrt{I} = \bigcap_{\mathrm{P} \supseteq I} \mathrm{P} .
+\boxed{\;\sqrt{I} = \bigcap_{\mathrm{P} \supseteq I} \mathrm{P}\;} .
 $$
 
 In particular the nilradical is the intersection of all the prime ideals, $\operatorname{nil}(R) = \bigcap_{\mathrm{P} \in \operatorname{Spec} R} \mathrm{P}$.
@@ -168,7 +168,7 @@ $$
 is a surjective ring homomorphism with kernel $I_1 \cap \cdots \cap I_n = I_1 I_2 \cdots I_n$, so that
 
 $$
-R/(I_1 I_2 \cdots I_n) \cong R/I_1 \times R/I_2 \times \cdots \times R/I_n .
+\boxed{\;R/(I_1 I_2 \cdots I_n) \cong R/I_1 \times R/I_2 \times \cdots \times R/I_n\;} .
 $$
 
 **Proof.** $\varphi$ is a homomorphism with kernel the intersection. For $n=2$, choose $a_1 \in I_1$, $a_2 \in I_2$ with $a_1 + a_2 = 1$; then $a_2 \equiv 1 \pmod{I_1}$, $a_2 \equiv 0 \pmod{I_2}$, and dually for $a_1$, so $x_1 a_2 + x_2 a_1$ maps to $(x_1 + I_1, x_2 + I_2)$. Iterate for $n \geq 3$, using that a product of ideals coprime to a given ideal is coprime to it. The intersection equals the product by the proposition, iterated.

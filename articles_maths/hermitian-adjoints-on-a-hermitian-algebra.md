@@ -17,7 +17,7 @@ The Hermitian algebra and its axioms are *Hermitian Algebras*; the multiplicatio
 **Proposition (the adjoint axiom is the operator identity).** For every $x$ the left multiplication satisfies
 
 $$
-L_{x^{\dagger}} = L_x^{*} , \qquad R_{x^{\dagger}} = R_x^{*} ,
+\boxed{\;L_{x^{\dagger}} = L_x^{*} , \qquad R_{x^{\dagger}} = R_x^{*}\;} ,
 $$
 
 the adjoints being the Hermitian adjoints on the operators of the completion; so the algebraic involution on the algebra is the Hermitian adjoint on the corresponding multiplications.

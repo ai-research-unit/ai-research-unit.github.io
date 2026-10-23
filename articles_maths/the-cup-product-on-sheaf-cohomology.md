@@ -24,7 +24,7 @@ The notation for sheaves, for the tensor product $\mathcal{F}\otimes_{\mathcal{O
 **Theorem (the cup product).** Let $\mathcal{F}$ and $\mathcal{G}$ be sheaves of $\mathcal{O}_X$-modules, and suppose that $\mathcal{F}$ is flat, or more generally that the higher tensor sheaves $\operatorname{Tor}_i^{\mathcal{O}_X}(\mathcal{F},\mathcal{G})$ vanish for $i>0$. Then there is a natural bilinear product
 
 $$
-\smile\ :\ H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\longrightarrow H^{p+q}(X,\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta,
+\boxed{\;\smile\ :\ H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\longrightarrow H^{p+q}(X,\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta\;},
 $$
 
 for all $p,q\geq0$. Without the flatness hypothesis, the product is defined into the hypercohomology of the derived tensor product, $\smile:H^p(X,\mathcal{F})\times H^q(X,\mathcal{G})\to\mathbb{H}^{p+q}(X,\mathcal{F}\otimes_{\mathcal{O}_X}^{\mathbf{L}}\mathcal{G})$; the two agree when the Tor sheaves vanish.
@@ -74,7 +74,7 @@ and passing to the limit over the refinements gives the product $\check H^p(X,\m
 **Proposition (comparison with the singular product).** Let $X$ be paracompact and locally contractible and let $R$ be a commutative ring. Under the comparison isomorphism $H^*(X,\underline{R})\cong H^*(X;R)$ of *Sheaf Cohomology*, the cup product on the sheaf cohomology of the constant sheaf corresponds to the singular cup product of *Cup and Cap Products*;
 
 $$
-H^*(X,\underline{R})\cong H^*(X;R)\quad\text{as graded rings.}
+\boxed{\;H^*(X,\underline{R})\cong H^*(X;R)\quad\text{as graded rings.}\;}
 $$
 
 *Proof.* The comparison theorem identifies the sheafified singular cochain complex with a flabby resolution of $\underline{R}$ and compares the multiplication on the cochains, which is the front-face/back-face product on both sides; the signs and the unit agree.
@@ -84,7 +84,7 @@ $$
 **Theorem (the cohomology ring).** Let $\mathcal{R}$ be a sheaf of commutative $\mathcal{O}_X$-algebras that is flat over $\mathcal{O}_X$, with multiplication $\mu:\mathcal{R}\otimes_{\mathcal{O}_X}\mathcal{R}\to\mathcal{R}$. Composing the cup product with $\mu$ gives a product
 
 $$
-H^p(X,\mathcal{R})\times H^q(X,\mathcal{R})\longrightarrow H^{p+q}(X,\mathcal{R}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta,
+\boxed{\;H^p(X,\mathcal{R})\times H^q(X,\mathcal{R})\longrightarrow H^{p+q}(X,\mathcal{R}),\qquad (\alpha,\beta)\mapsto\alpha\smile\beta\;},
 $$
 
 under which $H^*(X,\mathcal{R})=\bigoplus_iH^i(X,\mathcal{R})$ is a graded commutative unital ring, with unit the class $1\in H^0(X,\mathcal{R})$ of the identity section. For $\mathcal{R}=\mathcal{O}_X$ this is the **cohomology ring of the structure sheaf**, and for $\mathcal{R}=\underline{R}$ the constant sheaf it is the **cohomology ring of the space** with coefficients in $R$.

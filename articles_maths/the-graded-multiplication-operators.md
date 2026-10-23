@@ -21,7 +21,7 @@ $$
 **Proposition.** For a homogeneous element $x$ the left multiplication $L_x$ and the right multiplication $R_x$ are homogeneous operators of parity $|x|$:
 
 $$
-L_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|}, \qquad R_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|} .
+\boxed{\;L_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|}, \qquad R_x(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i + |x|}\;} .
 $$
 
 **Proof.** $L_x(y) = xy$ lies in $\mathrm{Cl}^{|x|+i}$ for $y \in \mathrm{Cl}^{i}$ because the product adds the parities; the same computation on the right.
@@ -29,7 +29,7 @@ $$
 **Proposition (the graded commutators of the multiplication operators).** For homogeneous $x$ and $y$,
 
 $$
-[L_x, R_y\} = \bigl(1 - (-1)^{|x||y|}\bigr)L_{xy} , \qquad [L_x, L_y\} = L_{xy - (-1)^{|x||y|}yx} , \qquad [R_x, R_y\} = R_{yx - (-1)^{|x||y|}xy} .
+\boxed{\;[L_x, R_y\} = \bigl(1 - (-1)^{|x||y|}\bigr)L_{xy} , \qquad [L_x, L_y\} = L_{xy - (-1)^{|x||y|}yx} , \qquad [R_x, R_y\} = R_{yx - (-1)^{|x||y|}xy}\;} .
 $$
 
 In particular the left and the right families commute as ordinary operators, $L_xR_y = R_yL_x = L_{xy}$; their graded commutator $[L_x,R_y\}$ vanishes when a factor is even and equals $2L_{xy}$ when both elements are odd; and the graded commutator $[L_x,L_y\}$ vanishes exactly when $xy = (-1)^{|x||y|}yx$, which holds for two orthogonal vectors but not for two general even elements, the even part of a Clifford algebra being a Clifford algebra in its own right.
@@ -89,7 +89,7 @@ so the signed left family is multiplicative in the written order, exactly like t
 **Proposition.** The supercentre of the Clifford algebra is the centre, $Z(\mathrm{Cl}(V,\mathfrak{Q}))$, and the super-commutant of the left multiplications is
 
 $$
-\{L_x : x \in \mathrm{Cl}(V,\mathfrak{Q})\}^{\mathrm{s}} = \{\, R_y : y \in \mathrm{Cl}^{0}(V,\mathfrak{Q}) \,\} \oplus \{\, \Gamma R_y : y \in \mathrm{Cl}^{1}(V,\mathfrak{Q}) \,\},
+\boxed{\;\{L_x : x \in \mathrm{Cl}(V,\mathfrak{Q})\}^{\mathrm{s}} = \{\, R_y : y \in \mathrm{Cl}^{0}(V,\mathfrak{Q}) \,\} \oplus \{\, \Gamma R_y : y \in \mathrm{Cl}^{1}(V,\mathfrak{Q}) \,\}\;},
 $$
 
 the even part of the super-commutant being the right multiplications and the odd part their conjugates by the parity operator.

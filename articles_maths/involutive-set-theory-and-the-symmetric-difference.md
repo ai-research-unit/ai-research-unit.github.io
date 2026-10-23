@@ -42,8 +42,8 @@ every element is its own inverse: $A \triangle A = \emptyset$. Hence $(\mathcal{
 abelian group of exponent two, in which the third sum of a pair rewrites as
 
 $$
-A \triangle B = (A \cap \neg B) \cup (\neg A \cap B), \qquad A \triangle B = (A \cup B) \triangle
-(A \cap B) .
+\boxed{\;A \triangle B = (A \cap \neg B) \cup (\neg A \cap B), \qquad A \triangle B = (A \cup B) \triangle
+(A \cap B)\;} .
 $$
 
 **Proof.** An element $x$ lies in the left side of the first expression exactly when it lies in one of
@@ -73,8 +73,8 @@ other side is the same. The idempotence and the identity element are immediate.
 Boolean algebra on the same power set:
 
 $$
-A \cup B = A \triangle B \triangle (A \cap B), \qquad A \setminus B = A \triangle (A \cap B),
-\qquad X \triangle A = \neg A .
+\boxed{\;A \cup B = A \triangle B \triangle (A \cap B), \qquad A \setminus B = A \triangle (A \cap B),
+\qquad X \triangle A = \neg A\;} .
 $$
 
 **Proof.** The first identity is the complement of the second rewriting of the symmetric difference
@@ -88,8 +88,8 @@ $(\mathcal{P}(X), \triangle)$, that is, $\neg A = X \triangle A$; it is an invol
 It is **not** a homomorphism of the group: translating twice by $X$ gives
 
 $$
-\neg(A \triangle B) = X \triangle A \triangle B = \neg A \triangle B,
-\qquad \neg A \triangle \neg B = A \triangle B,
+\boxed{\;\neg(A \triangle B) = X \triangle A \triangle B = \neg A \triangle B,
+\qquad \neg A \triangle \neg B = A \triangle B\;},
 $$
 
 so the two agree only when $X = \emptyset$. The complement is an affine involution of the group, that

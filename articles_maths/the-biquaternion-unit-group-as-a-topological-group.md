@@ -34,7 +34,7 @@ The determinant of the matrix model is a group homomorphism onto the nonzero sca
 **Theorem (the determinant sequence).** The determinant is a surjective homomorphism of topological groups,
 
 $$
-1\longrightarrow\mathbb{B}^\times_1=\{\tilde{Q}:\det\mathsf{M}_2(\tilde{Q})=1\}\longrightarrow\mathbb{B}^\times\xrightarrow{\ \det\ }\mathbb{C}^\times\longrightarrow 1,
+\boxed{\; 1\longrightarrow\mathbb{B}^\times_1=\{\tilde{Q}:\det\mathsf{M}_2(\tilde{Q})=1\}\longrightarrow\mathbb{B}^\times\xrightarrow{\ \det\ }\mathbb{C}^\times\longrightarrow 1 \;},
 $$
 
 and the real dimension of the group is the sum $6+2=8$.
@@ -46,7 +46,7 @@ and the real dimension of the group is the sum $6+2=8$.
 **Proposition (the matrix identifications).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the determinant gives
 
 $$
-\mathbb{B}^\times\cong GL_2(\mathbb{C}),\qquad \mathbb{B}^\times_1\cong SL_2(\mathbb{C}),\qquad \mathbb{C}^\times e_t\cong \mathbb{C}^\times I,
+\boxed{\; \mathbb{B}^\times\cong GL_2(\mathbb{C}),\qquad \mathbb{B}^\times_1\cong SL_2(\mathbb{C}),\qquad \mathbb{C}^\times e_t\cong \mathbb{C}^\times I \;},
 $$
 
 and the determinant sequence is that of the general linear group.
@@ -84,10 +84,10 @@ The subgroups and the real forms of the algebra are *Biquaternion Lie Group and 
 The topology of $\mathbb{B}^\times$ is that of its manifold structure. The polar decomposition $\tilde{Q}_1=\tilde{U}\tilde{Q}_2$ with $\tilde{U}$ unitary and $\tilde{Q}_2=(\tilde{Q}_1^{*}\tilde{Q}_1)^{1/2}$ positive definite gives a strong deformation retraction of $\mathbb{B}^\times$ onto the maximal compact subgroup $\mathrm{U}(\mathbb{B})=\{\tilde{Q}^{*}\tilde{Q}=e_t\}\cong \mathrm{U}(2)$, and a second retraction takes the determinant-one group $\mathbb{B}^\times_1$ onto the unit quaternions $S^3$. The structure of $\mathrm{U}(\mathbb{B})=S^1\cdot S^3$ with $S^1\cap S^3=\{\pm e_t\}$, the two retractions, the homotopy groups, the generators and the universal cover are proved in *The Unitary Group of the Biquaternion Algebra*; the statements are collected here for the algebraic group.
 
 $$
-\mathbb{B}^\times\simeq \mathrm{U}(\mathbb{B})\simeq S^1\times S^3,\qquad
+\boxed{\; \mathbb{B}^\times\simeq \mathrm{U}(\mathbb{B})\simeq S^1\times S^3,\qquad
 \mathbb{B}^\times_1\simeq S^3,\qquad
 \pi_1(\mathbb{B}^\times)\cong\mathbb{Z},\quad \pi_2(\mathbb{B}^\times)=0,\quad \pi_3(\mathbb{B}^\times)\cong\mathbb{Z},\qquad
-(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^3 .
+(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^3 \;}.
 $$
 
 **Proposition (connectedness).** Both $\mathbb{B}^\times$ and $\mathbb{B}^\times_1$ are connected, and the group has exactly one connected component; in the matrix picture this is the connectedness of $GL_2(\mathbb{C})$ and of $SL_2(\mathbb{C})$.

@@ -22,7 +22,7 @@ the form making the group elements an orthonormal basis. It is the algebraic sha
 **Theorem (the adjoint is the inverse).** On $k[G]$ the left and right multiplications satisfy
 
 $$
-(L_a)^\dagger = L_{a^{-1}} , \qquad (R_b)^\dagger = R_{b^{-1}} ,
+\boxed{\;(L_a)^\dagger = L_{a^{-1}} , \qquad (R_b)^\dagger = R_{b^{-1}}\;} ,
 $$
 
 with respect to the natural form, where $L_a u = au$ and $R_b u = ub$.
@@ -50,7 +50,7 @@ the natural form twisted by the grade involution; it reduces to $B$ when $\alpha
 **Theorem (the adjoints with respect to the signed form).** On $k[G]$,
 
 $$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} , \qquad A^\dagger = A .
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} , \qquad A^\dagger = A\;} .
 $$
 
 **Proof.** $(L_au)_k = u_{a^{-1}k}$, so $B_\alpha(L_au,v) = \sum_g u_{a^{-1}g}v_{\alpha(g)} = \sum_h u_h v_{\alpha(a)\alpha(h)}$ on setting $h = a^{-1}g$ and using that $\alpha$ is an automorphism. If $T$ is the adjoint then $(Tv)_{\alpha(h)} = v_{\alpha(a)\alpha(h)}$, so $(Tv)_k = v_{\alpha(a)k}$ on writing $k = \alpha(h)$; since $(L_cv)_k = v_{c^{-1}k}$ and $\alpha(a)^{-1} = \alpha(a^{-1}) = \sigma(a)$, this is $L_{\sigma(a)}$. The computation for $R_b$ gives $(R_b)^\dagger = R_{\alpha(b)^{-1}} = R_{\sigma(b)}$, and for $A$ one has $(Au)_k = u_{\alpha^{-1}(k)}$, whence $B_\alpha(Au,v) = \sum_h u_h v_h$, which identifies the adjoint with $A$.
@@ -62,7 +62,7 @@ $$
 **Theorem (the left regular representation is a `*`-representation).** With respect to the signed form the assignment $a\mapsto L_a$ satisfies
 
 $$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (L_aL_b)^\dagger = L_b^\dagger L_a^\dagger , \qquad (L_a^\dagger)^\dagger = L_a ,
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (L_aL_b)^\dagger = L_b^\dagger L_a^\dagger , \qquad (L_a^\dagger)^\dagger = L_a\;} ,
 $$
 
 so the involution on the elements of $G$ agrees with the adjoint on the operators: the left regular representation is a `*`-representation of the involutive group algebra, and it extends to a `*`-representation of the semidirect product $G\rtimes_\alpha C_2$ on the same space.

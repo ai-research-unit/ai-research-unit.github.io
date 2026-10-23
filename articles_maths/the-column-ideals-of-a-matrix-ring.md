@@ -47,7 +47,7 @@ the corners being the **Peirce spaces**. A corner \(E_{ii}AE_{kk}\) is a subalge
 **Proposition (the corners are one-dimensional).** For all \(i, k\),
 
 $$
-E_{ii}AE_{kk} = DE_{ik} .
+\boxed{\;E_{ii}AE_{kk} = DE_{ik}\;} .
 $$
 
 *Proof.* Writing \(X = \sum_{p,q}x_{pq}E_{pq}\), the product of the two outer units is \(E_{ii}XE_{kk} = \sum_{p,q}x_{pq}E_{ii}E_{pq}E_{kk} = x_{ik}E_{ik}\), since \(E_{ii}E_{pq} = \delta_{ip}E_{iq}\) and \(E_{iq}E_{kk} = \delta_{qk}E_{ik}\). So a corner consists of the left multiples of one matrix unit by elements of \(D\).
@@ -65,7 +65,7 @@ $$
 using \(\sum_i E_{ii} = I\) and the directness of the Peirce decomposition. By §*The Corners of the Algebra* each summand is the line \(DE_{ij}\), so
 
 $$
-L_j = \bigoplus_{i=1}^{n} DE_{ij},
+\boxed{\;L_j = \bigoplus_{i=1}^{n} DE_{ij}\;},
 $$
 
 a left \(D\)-module of dimension \(n\). The summand \(E_{jj}AE_{jj} = DE_{jj}\) is the **diagonal corner of the column**, and the \(n-1\) summands \(E_{ii}AE_{jj} = DE_{ij}\) with \(i \neq j\) are the **off-diagonal corners of the column**.
@@ -188,7 +188,7 @@ The count of §*The Theorem* is a statement about corner-adapted bases, and it s
 **Proposition (an idempotent basis).** For \(n \geq 2\) the \(n\) elements
 
 $$
-E_{jj}, \qquad E_{jj} + E_{ij} \quad (i \neq j),
+\boxed{\;E_{jj}, \qquad E_{jj} + E_{ij} \quad (i \neq j)\;},
 $$
 
 are idempotent and form a \(D\)-basis of \(L_j\). So a basis of the column can consist entirely of idempotents.

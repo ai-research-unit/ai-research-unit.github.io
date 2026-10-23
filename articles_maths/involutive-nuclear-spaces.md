@@ -41,8 +41,8 @@ so the fixed part of the product involution is the direct sum of the products of
 **Theorem (the completed tensor product).** Let one of $E$, $F$ be nuclear. Then the projective and the injective completions coincide, $E \widehat{\otimes}_\pi F = E \widehat{\otimes}_\varepsilon F = E \widehat{\otimes} F$, the tensor product involution extends uniquely to a continuous involution $T \widehat{\otimes} S$ of this completed tensor product, of the same kind, and its fixed and negated subspaces are the completions of those of the algebraic tensor product,
 
 $$
-(E \widehat{\otimes} F)^{+} = \overline{(E_{+} \otimes F_{+}) \oplus (E_{-} \otimes F_{-})}, \qquad
-(E \widehat{\otimes} F)^{-} = \overline{(E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+})} .
+\boxed{\;(E \widehat{\otimes} F)^{+} = \overline{(E_{+} \otimes F_{+}) \oplus (E_{-} \otimes F_{-})}, \qquad
+(E \widehat{\otimes} F)^{-} = \overline{(E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+})}\;} .
 $$
 
 **Proof.** The coincidence of the two completions when a factor is nuclear is the theorem of *Topological Tensor Products*; the involution $T \otimes S$ is continuous for the projective topology because $T$ and $S$ are, so it extends to the completion $E\widehat{\otimes}_\pi F$ by *Involutive Topological Linear Spaces*, and the injective completion carries the same involution because the two completions are equal; the fixed and negated subspaces of the extension are the closures of the corresponding subspaces of the dense algebraic tensor product, by the extension theorem of *Involutive Banach Spaces*.
@@ -50,8 +50,8 @@ $$
 **Corollary (the antilinear case).** If $\theta$ and $\omega$ are antilinear then $\theta \otimes \omega$ is antilinear, of the same kind as the factors, with
 
 $$
-\ker\bigl((\theta\otimes\omega) - \mathrm{id}\bigr) = E_{+} \otimes F_{+} , \qquad
-\ker\bigl((\theta\otimes\omega) + \mathrm{id}\bigr) = i\,(E_{+} \otimes F_{+}) ,
+\boxed{\;\ker\bigl((\theta\otimes\omega) - \mathrm{id}\bigr) = E_{+} \otimes F_{+} , \qquad
+\ker\bigl((\theta\otimes\omega) + \mathrm{id}\bigr) = i\,(E_{+} \otimes F_{+})\;} ,
 $$
 
 read over $\mathbb{R}$; the two pieces $E_{+}\otimes F_{+}$ and $E_{-}\otimes F_{-}$ of the linear formula coincide here because $E_{-} = iE_{+}$ and $F_{-} = iF_{+}$. The completed tensor product of two involutive nuclear spaces is again an involutive nuclear space.
@@ -63,7 +63,7 @@ read over $\mathbb{R}$; the two pieces $E_{+}\otimes F_{+}$ and $E_{-}\otimes F_
 **Proposition (the dual of an involutive nuclear space).** Let $E$ be a nuclear Fréchet space with a continuous involution $\theta$. Then the strong dual $E'_{b}$ is nuclear, the transposed involution $\theta'$ is continuous for the strong topology, and
 
 $$
-(E'_{b})^{\theta'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\theta})^{\circ} ;
+\boxed{\;(E'_{b})^{\theta'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\theta})^{\circ}\;} ;
 $$
 
 the dual pair $(E, E'_{b})$ with the two involutions is a dual pair of involutive nuclear spaces, and when $E$ is reflexive the operation is an involution, $(\theta')' = \theta$.

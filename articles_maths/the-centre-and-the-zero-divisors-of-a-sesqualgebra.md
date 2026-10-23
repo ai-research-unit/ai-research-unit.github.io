@@ -14,7 +14,7 @@ What is added here: the centre and its closure under the scalars, the parts cut 
 
 **Definition.** The **centre** of $A$ is
 $$
-Z(A) = \{ z \in A : zx = xz \text{ for every } x \in A \}.
+\boxed{\;Z(A) = \{ z \in A : zx = xz \text{ for every } x \in A \}\;}.
 $$
 It is the **centralizer** of $A$ in itself, $Z(A) = C_{A}(A)$, where the centralizer of a subset $S \subseteq A$ is $C_{A}(S) = \{ a \in A : as = sa \text{ for every } s \in S \}$. In the notation of *The Left and Right Multiplication Operators of a Sesqualgebra*, the centre is the set of the $z$ with $L_{z} = R_{z}$, the elements whose two multiplications agree.
 
@@ -42,7 +42,7 @@ Let $H(A) = \{a : a^{*} = a\}$ and $S(A) = \{a : a^{*} = -a\}$ be the Hermitian 
 
 **Proposition.** The sets $Z(A) \cap H(A)$ and $Z(A) \cap S(A)$ are the fixed part and the anti-fixed part of the involution on $Z(A)$. If $2$ is invertible in $R$, every $z \in Z(A)$ has the unique decomposition
 $$
-z = z_{+} + z_{-}, \qquad z_{+} = \tfrac{1}{2}(z + z^{*}), \qquad z_{-} = \tfrac{1}{2}(z - z^{*}),
+\boxed{\;z = z_{+} + z_{-}, \qquad z_{+} = \tfrac{1}{2}(z + z^{*}), \qquad z_{-} = \tfrac{1}{2}(z - z^{*})\;},
 $$
 with $z_{+} \in Z(A) \cap H(A)$ and $z_{-} \in Z(A) \cap S(A)$.
 

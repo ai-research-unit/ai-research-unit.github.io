@@ -67,7 +67,7 @@ Consequently $\circ$ is linear in each variable over the fixed ring $R^{\varsigm
 **Proposition.** The symmetrised product is the polarisation of the square:
 
 $$
-x \circ y = \tfrac12\Bigl((x + y) \star (x + y) - x \star x - y \star y\Bigr).
+\boxed{\;x \circ y = \tfrac12\Bigl((x + y) \star (x + y) - x \star x - y \star y\Bigr)\;}.
 $$
 
 **Proof.** The product is additive in each variable, so $(x+y)\star(x+y) = x\star x + x\star y + y\star x + y\star y$; halving the difference gives the symmetrisation.
@@ -97,7 +97,7 @@ so that $\circ$ is an operation $A \times A \to H(A)$.
 **Theorem (the symmetrisation on the Hermitian part).** For $x, y \in H(A)$ the symmetrised sesquilinear product and the plain symmetrisation agree,
 
 $$
-x \circ y = \tfrac12\bigl(xy + yx\bigr) = x \bullet y ,
+\boxed{\;x \circ y = \tfrac12\bigl(xy + yx\bigr) = x \bullet y\;} ,
 $$
 
 and $H(A)$ is closed under both.
@@ -115,7 +115,7 @@ and $H(A)$ is closed under both.
 **Theorem.** The symmetrised sesquilinear product restricted to $H(A)$ satisfies the Jordan identity,
 
 $$
-(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr) \qquad \text{for all } x, y \in H(A) ,
+\boxed{\;(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr) \qquad \text{for all } x, y \in H(A)\;} ,
 $$
 
 and with this product $H(A)$ is a commutative Jordan algebra over $R^{\varsigma}$.

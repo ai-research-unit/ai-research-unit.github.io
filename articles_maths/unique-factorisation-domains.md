@@ -95,7 +95,7 @@ as in *Integral Domains*, above. The units are the elements of norm $1$, namely 
 **Proposition.** The two factorisations
 
 $$
-6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})
+\boxed{\;6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})\;}
 $$
 
 are factorisations of $6$ into irreducibles, and they differ neither by the order of the factors nor by units.
@@ -219,7 +219,7 @@ The coefficients $\binom{p}{k}$ with $1 \leq k \leq p-1$ are divisible by $p$, t
 **Corollary.** The chain of implications
 
 $$
-\text{Euclidean} \Longrightarrow \text{principal} \Longrightarrow \text{unique factorisation} \Longrightarrow \text{integral domain}
+\boxed{\;\text{Euclidean} \Longrightarrow \text{principal} \Longrightarrow \text{unique factorisation} \Longrightarrow \text{integral domain}\;}
 $$
 
 holds, and each implication is strict: $\mathbb{Z}[(1+\sqrt{-19})/2]$ is a principal ideal domain that is not Euclidean, $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal, and $\mathbb{Z}[\sqrt{-5}]$ is a domain that is not a unique factorisation domain. The strictness of the first two implications is established in *Euclidean Domains* and *Principal Ideal Domains*, below this article in this category, and the third by the section on $\mathbb{Z}[\sqrt{-5}]$ of this article.
@@ -229,7 +229,7 @@ holds, and each implication is strict: $\mathbb{Z}[(1+\sqrt{-19})/2]$ is a princ
 **Theorem.** Let $F$ be a field. Every nonzero $f \in F[x]$ has a factorisation
 
 $$
-f = c \, p_1(x) \, p_2(x) \cdots p_r(x)
+\boxed{\;f = c \, p_1(x) \, p_2(x) \cdots p_r(x)\;}
 $$
 
 with $c \in F^{\times}$ and the $p_i$ monic irreducible polynomials, and this factorisation is unique up to the order of the factors.

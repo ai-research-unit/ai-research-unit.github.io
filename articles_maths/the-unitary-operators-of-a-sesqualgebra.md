@@ -21,7 +21,7 @@ Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma
 **Definition.** An operator $T:A\to A$ of one of the two parities, so that its adjoint is defined, is **unitary** when it is invertible and
 
 $$
-T^{\dagger}T=TT^{\dagger}=\mathrm{id},
+\boxed{\;T^{\dagger}T=TT^{\dagger}=\mathrm{id}\;},
 $$
 
 equivalently when $T^{\dagger}=T^{-1}$; an $R$-linear one is a **unitary operator**, and a $\varsigma$-semilinear one is an **antiunitary operator**.
@@ -53,7 +53,7 @@ equivalently when $T^{\dagger}=T^{-1}$; an $R$-linear one is a **unitary operato
 **Theorem (the one-sided operators).** Let $u\in \mathrm{U}(A)$. Then
 
 $$
-L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1},
+\boxed{\;L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1}\;},
 $$
 
 so the conjugate left multiplication by a unitary element is an antiunitary operator; and $R_{b}$ is a unitary operator exactly when $b$ is a unitary element, $R_{b}^{\dagger}=R_{b^{*}}$, $R_{b}^{-1}=R_{b^{-1}}$.
@@ -79,7 +79,7 @@ $$
 **Theorem.** Let $T$ be an $R$-linear operator with $T(1)=1$. Then $T$ preserves the derived product,
 
 $$
-T(x\star y)=Tx\star Ty\qquad\text{for all }x,y,
+\boxed{\;T(x\star y)=Tx\star Ty\qquad\text{for all }x,y\;},
 $$
 
 if and only if $T$ is a unital $*$-map: $T(xy)=Tx\,Ty$ and $T(y^{*})=(Ty)^{*}$ for all $x,y$.

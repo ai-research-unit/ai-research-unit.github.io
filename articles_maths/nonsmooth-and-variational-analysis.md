@@ -71,7 +71,7 @@ and for the composition $f\circ G$ with $G$ continuously differentiable the chai
 
 **Theorem (the mean value theorem; Clarke).** Let $f$ be locally Lipschitz on an open set containing the segment $[x,y]$. Then there is $z$ in the segment with
 $$
-f(y)-f(x)\in\langle\partial^\circ f(z),\,y-x\rangle ;
+\boxed{\;f(y)-f(x)\in\langle\partial^\circ f(z),\,y-x\rangle\;} ;
 $$
 and consequently $\lvert f(y)-f(x)\rvert\leq\max_{b\in\partial^\circ f(z)}\lvert b\rvert\,\lvert y-x\rvert$ for some $z$ in the segment, so that a bound on the generalised gradient gives a Lipschitz bound.
 
@@ -89,7 +89,7 @@ and consequently $\lvert f(y)-f(x)\rvert\leq\max_{b\in\partial^\circ f(z)}\lvert
 
 **Theorem (Ekeland).** Let $(X,d)$ be a complete metric space and $f:X\to\mathbb{R}\cup\{+\infty\}$ lower semicontinuous and bounded below, with $f\not\equiv+\infty$. For every $\epsilon>0$ and every $x_0$ with $f(x_0)\leq\inf_Xf+\epsilon$ there is $x_\epsilon$ with
 $$
-f(x_\epsilon)\leq f(x_0), \qquad d(x_\epsilon,x_0)\leq1, \qquad f(x_\epsilon)\leq f(x)+\epsilon\, d(x,x_\epsilon)\quad\text{for all } x\in X .
+\boxed{\;f(x_\epsilon)\leq f(x_0), \qquad d(x_\epsilon,x_0)\leq1, \qquad f(x_\epsilon)\leq f(x)+\epsilon\, d(x,x_\epsilon)\quad\text{for all } x\in X\;} .
 $$
 In particular every lower semicontinuous functional bounded below on a complete metric space has, for every $\epsilon>0$, a point that is $\epsilon$-optimal and $\epsilon$-optimal for the perturbed functional.
 
@@ -143,7 +143,7 @@ $$
 
 **Theorem (the limiting form; Mordukhovich).** If $\bar x$ is a local minimiser of the problem above and a certain **basic constraint qualification** holds — the intersection of the limiting normal cones of the active constraint sets contains no nonzero positive combination adding to an element of $-N(\bar x;C)$ — then there are $\lambda_i\geq0$ with complementary slackness and
 $$
-0\in\partial f_0(\bar x)+\sum_i\lambda_i\partial f_i(\bar x)+N(\bar x;C),
+\boxed{\;0\in\partial f_0(\bar x)+\sum_i\lambda_i\partial f_i(\bar x)+N(\bar x;C)\;},
 $$
 with the limiting subdifferential and the limiting normal cone. The advantage of this form is that the multiplier rule holds under a qualification that is automatically verified when the constraints are described by a system with a surjective derivative; the disadvantage is that the objects are not convex, so the conditions are necessary and not sufficient.
 

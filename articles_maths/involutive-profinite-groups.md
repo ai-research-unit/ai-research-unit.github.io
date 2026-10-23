@@ -18,7 +18,7 @@ Throughout, $G$ is a profinite group with identity $e$, $\sigma$ is a continuous
 **Theorem (the inverse-limit description).** Let $\sigma$ be a continuous involution of $G$ and let $N$ run over the $\sigma$-stable open normal subgroups. Then the induced maps give isomorphisms of topological groups
 
 $$
-G \;\cong\; \varprojlim_N G/N , \qquad G^\sigma \;\cong\; \varprojlim_N (G/N)^\sigma , \qquad G^\alpha \;\cong\; \varprojlim_N (G/N)^\alpha ,
+\boxed{\;G \;\cong\; \varprojlim_N G/N , \qquad G^\sigma \;\cong\; \varprojlim_N (G/N)^\sigma , \qquad G^\alpha \;\cong\; \varprojlim_N (G/N)^\alpha\;} ,
 $$
 
 the limits taken over the stable $N$, and the fixed subgroup of the limit is the limit of the fixed subgroups of the finite quotients.

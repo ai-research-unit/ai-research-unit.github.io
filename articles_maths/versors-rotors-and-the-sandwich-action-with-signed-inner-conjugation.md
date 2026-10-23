@@ -22,7 +22,7 @@ a product of non-isotropic, hence invertible, vectors. The number $k$ is the len
 **Proposition.** Every versor is invertible, with
 
 $$
-(v_1v_2\cdots v_k)^{-1}=v_k^{-1}\cdots v_2^{-1}v_1^{-1}, \qquad v^{-1}=v\,\mathfrak{Q}(v)^{-1}\ \text{ for a vector }v,
+\boxed{\;(v_1v_2\cdots v_k)^{-1}=v_k^{-1}\cdots v_2^{-1}v_1^{-1}, \qquad v^{-1}=v\,\mathfrak{Q}(v)^{-1}\ \text{ for a vector }v\;},
 $$
 
 and the inverse of a versor is a versor of the same length and parity.
@@ -78,13 +78,13 @@ the last expression being the inner product of $B$ with $v$. Then $\operatorname
 **Theorem (the plane).** Let $e_1,e_2$ be orthogonal with $\mathfrak{Q}(e_1)=1$ and $\mathfrak{Q}(e_2)=\varepsilon\in\{+1,-1\}$, and put $B=e_1e_2$, so that $B^2=-\varepsilon$. Then $J_B$ annihilates the orthogonal complement of the plane of $B$ and acts on the plane by
 
 $$
-J_B(e_1)=-e_2, \qquad J_B(e_2)=\varepsilon e_1, \qquad J_B^2=-\varepsilon.
+\boxed{\;J_B(e_1)=-e_2, \qquad J_B(e_2)=\varepsilon e_1, \qquad J_B^2=-\varepsilon\;}.
 $$
 
 For $\varepsilon=+1$, with a real parameter $\theta$ and the rotor $R=\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ of the plane,
 
 $$
-R\,e_1\,R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2,
+\boxed{\;R\,e_1\,R^{-1}=\cos\theta\,e_1+\sin\theta\,e_2\;},
 $$
 
 the plane rotation with parameter $\theta$; for $\varepsilon=-1$, with a real parameter $\varphi$ and the rotor $R=\cosh\tfrac{\varphi}{2}-\sinh\tfrac{\varphi}{2}B$,

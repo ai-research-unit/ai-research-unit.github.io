@@ -90,7 +90,7 @@ the group of homotopy classes of unitaries in the stabilization; for a non-unita
 **Theorem (Bott periodicity for $\mathrm{C}^*$-algebras; standard).** For every $\mathrm{C}^*$-algebra $A$ there are natural isomorphisms
 
 $$
-K_0(A) \;\cong\; K_1(SA) , \qquad K_0(A) \;\cong\; K_0(S^2A) , \qquad K_1(A)\cong K_1(S^2A) ,
+\boxed{\;K_0(A) \;\cong\; K_1(SA) , \qquad K_0(A) \;\cong\; K_0(S^2A) , \qquad K_1(A)\cong K_1(S^2A)\;} ,
 $$
 
 so that the functors $K_n(A) = K_0(S^nA)$ for $n \geq 0$ are periodic of period two, $K_{n+2}(A)\cong K_n(A)$, with $K_0$ and $K_1$ the only two groups. The isomorphism $K_0(A)\to K_1(SA)$ is the **Bott map**.
@@ -106,7 +106,7 @@ so that the functors $K_n(A) = K_0(S^nA)$ for $n \geq 0$ are periodic of period 
 **Theorem (the six-term exact sequence; standard).** For every short exact sequence $0\to J\xrightarrow{\iota}A\xrightarrow{\pi}A/J\to0$ of $\mathrm{C}^*$-algebras the induced maps on $K$-theory are accompanied by a **boundary (index) map** $\partial : K_1(A/J)\to K_0(J)$ and fit into the cyclic exact sequence
 
 $$
-K_0(J) \xrightarrow{\iota_*} K_0(A) \xrightarrow{\pi_*} K_0(A/J) \xrightarrow{\ \partial\ } K_1(J) \xrightarrow{\iota_*} K_1(A) \xrightarrow{\pi_*} K_1(A/J) \xrightarrow{\ \partial\ } K_0(J) ,
+\boxed{\;K_0(J) \xrightarrow{\iota_*} K_0(A) \xrightarrow{\pi_*} K_0(A/J) \xrightarrow{\ \partial\ } K_1(J) \xrightarrow{\iota_*} K_1(A) \xrightarrow{\pi_*} K_1(A/J) \xrightarrow{\ \partial\ } K_0(J)\;} ,
 $$
 
 in which the last map returns to the first term; exactness holds at each of the six terms.
@@ -126,7 +126,7 @@ in which the last map returns to the first term; exactness holds at each of the 
 **Theorem (Gelfand duality and the topological theory).** Let $X$ be a compact Hausdorff space and $A = C(X)$. Then there are natural isomorphisms
 
 $$
-K_0(A) \cong K^0(X) , \qquad K_1(A) \cong K^1(X) ,
+\boxed{\;K_0(A) \cong K^0(X) , \qquad K_1(A) \cong K^1(X)\;} ,
 $$
 
 where $K^0$ and $K^1$ are the topological $K$-groups of *Topological K-Theory*; the identification on $K_0$ is Swan's theorem, and the identification on $K_1$ matches the components of the unitary group of $C(X)$ with the clutching classes on the suspension.

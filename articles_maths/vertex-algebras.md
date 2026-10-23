@@ -68,7 +68,7 @@ a formal series in $z,w,u$, so that $\delta(z-w) = \sum_{n\in\mathbb{Z}}z^nw^{-n
 **Theorem (the Jacobi identity).** The locality axiom for a pair of fields $Y(a,x)$, $Y(b,y)$ is equivalent to the **Jacobi identity**
 
 $$
-z^{-1}\delta\Bigl(\frac{y-x}{z}\Bigr)Y(a,x)Y(b,y) \;- \; z^{-1}\delta\Bigl(\frac{y-x}{-z}\Bigr)Y(b,y)Y(a,x) \;=\; y^{-1}\delta\Bigl(\frac{x+z}{y}\Bigr)Y\bigl(Y(a,z)b,\,y\bigr),
+\boxed{\;z^{-1}\delta\Bigl(\frac{y-x}{z}\Bigr)Y(a,x)Y(b,y) \;- \; z^{-1}\delta\Bigl(\frac{y-x}{-z}\Bigr)Y(b,y)Y(a,x) \;=\; y^{-1}\delta\Bigl(\frac{x+z}{y}\Bigr)Y\bigl(Y(a,z)b,\,y\bigr)\;},
 $$
 
 an identity between formal series in $x,y,z$ with coefficients in $\operatorname{End}_k(V)$; consequently a vertex algebra is a vector space with a **quasi-symmetric product** in the sense of the identity, and the identity is the algebraic form of the locality in which the theory is usually axiomatised.
@@ -78,7 +78,7 @@ an identity between formal series in $x,y,z$ with coefficients in $\operatorname
 **Theorem (the mode commutator formula).** For $a,b\in V$ the modes satisfy
 
 $$
-\bigl[a_{(m)},b_{(n)}\bigr] = \sum_{j\geq0}\binom{m}{j}\,\bigl(a_{(j)}b\bigr)_{(m+n-j)},
+\boxed{\;\bigl[a_{(m)},b_{(n)}\bigr] = \sum_{j\geq0}\binom{m}{j}\,\bigl(a_{(j)}b\bigr)_{(m+n-j)}\;},
 $$
 
 the sum being finite because $a_{(j)}b = 0$ for $j\gg0$.
@@ -88,7 +88,7 @@ the sum being finite because $a_{(j)}b = 0$ for $j\gg0$.
 **Corollary (associativity).** For all $a,b,c\in V$ the **Borcherds identity**
 
 $$
-(a_{(m)}b)_{(n)}c = \sum_{j\geq0}(-1)^j\binom{m}{j}\Bigl(a_{(m-j)}b_{(n+j)}c - (-1)^mb_{(m+n-j)}a_{(j)}c\Bigr)
+\boxed{\;(a_{(m)}b)_{(n)}c = \sum_{j\geq0}(-1)^j\binom{m}{j}\Bigl(a_{(m-j)}b_{(n+j)}c - (-1)^mb_{(m+n-j)}a_{(j)}c\Bigr)\;}
 $$
 
 holds; it expresses the associativity of the product in terms of the modes and is again equivalent to the Jacobi identity.

@@ -26,7 +26,7 @@ The base is $\mathbb{R}$; the algebra $\mathrm{G}_0$ is finite-dimensional real 
 **Proposition.** $\kappa_\theta$ is a symmetric bilinear form, and it is invariant under $\theta$:
 
 $$
-\kappa_\theta(\theta x,\theta y)=\kappa_\theta(x,y),\qquad \kappa_\theta(\theta x,y)=\kappa_\theta(x,\theta y).
+\boxed{\;\kappa_\theta(\theta x,\theta y)=\kappa_\theta(x,y),\qquad \kappa_\theta(\theta x,y)=\kappa_\theta(x,\theta y)\;}.
 $$
 
 **Proof.** Symmetry follows from the symmetry of $\kappa$ and $\theta^2=\mathrm{id}$; the invariance under $\theta$ is the same computation.
@@ -40,13 +40,13 @@ $$
 **Theorem.** A Cartan involution $\theta$ decomposes the algebra as the direct sum of its two eigenspaces,
 
 $$
-\mathrm{G}_0=\mathrm{K}\oplus\mathrm{P},\qquad \theta=\mathrm{id}\text{ on }\mathrm{K},\qquad \theta=-\mathrm{id}\text{ on }\mathrm{P},
+\boxed{\;\mathrm{G}_0=\mathrm{K}\oplus\mathrm{P},\qquad \theta=\mathrm{id}\text{ on }\mathrm{K},\qquad \theta=-\mathrm{id}\text{ on }\mathrm{P}\;},
 $$
 
 and the eigenspaces satisfy
 
 $$
-[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
+\boxed{\;[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}\;}.
 $$
 
 **Proof.** An involution of a vector space whose square is the identity is diagonalisable with eigenvalues $\pm1$ in characteristic not two, giving the direct sum; the bracket relations follow from applying $\theta$ to $[x,y]$, which is an automorphism, and reading the sign according to the degrees of $x$ and $y$.

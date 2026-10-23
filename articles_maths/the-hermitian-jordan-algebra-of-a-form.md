@@ -19,7 +19,7 @@ $$
 **Proposition.** The self-adjoint part is closed under the symmetrised product and contains the identity; with the product $\circ$ it is a commutative algebra with unit $1$, and it satisfies the **Jordan identity**
 
 $$
-(T \circ S)\circ T^{2} = T \circ (S \circ T^{2}), \qquad T^{2} = T \circ T .
+\boxed{\;(T \circ S)\circ T^{2} = T \circ (S \circ T^{2}), \qquad T^{2} = T \circ T\;} .
 $$
 
 **Proof.** Closure: the sign rule of *Self-Adjoint and Skew Operators of a Form* gives $(TS+ST)^{*} = TS+ST$ for self-adjoint $S, T$. Commutativity is the definition. The identity is self-adjoint and $1 \circ T = T$. The Jordan identity is the standard identity of the special Jordan algebras: it holds in every associative algebra for the symmetrised product, and the verification is the expansion of the two sides in the associative product combined with the associativity.
@@ -31,7 +31,7 @@ $$
 **Proposition.** The map
 
 $$
-\operatorname{Herm}(A,h) \longrightarrow \{\text{Hermitian forms on } A\}, \qquad T \longmapsto Q_{T}, \quad Q_{T}(x) = h(Tx,x) ,
+\boxed{\;\operatorname{Herm}(A,h) \longrightarrow \{\text{Hermitian forms on } A\}, \qquad T \longmapsto Q_{T}, \quad Q_{T}(x) = h(Tx,x)\;} ,
 $$
 
 is an injective $R^{\varsigma}$-linear map onto the Hermitian forms of the shape $h(T\cdot,\cdot)$ when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$; its inverse sends such a form back to its operator through the polarisation $\tfrac{1}{2}\bigl(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr) = \tfrac{1}{2}\bigl(h(Tx,y) + h(Ty,x)\bigr)$ and the non-degeneracy of $h$.
@@ -47,7 +47,7 @@ is an injective $R^{\varsigma}$-linear map onto the Hermitian forms of the shape
 **Proposition.** The sandwich $\Theta_{T}(y) = TyT^{*}$ of *The Form-Adjoint of the Multiplications* coincides with the quadratic representation exactly when $T$ is self-adjoint:
 
 $$
-T^{*} = T \implies \Theta_{T} = U_{T}, \qquad \text{and} \qquad \Theta_{T}(S) = TST^{*} .
+\boxed{\;T^{*} = T \implies \Theta_{T} = U_{T}, \qquad \text{and} \qquad \Theta_{T}(S) = TST^{*}\;} .
 $$
 
 **Proof.** For a self-adjoint $T$ the definition of the sandwich gives $TyT^{*} = TyT$, which is the quadratic representation. The general statement is the definition of the sandwich read as an operator on the operator algebra.

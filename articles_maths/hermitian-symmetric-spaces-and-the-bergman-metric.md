@@ -35,7 +35,7 @@ The map $s_p$ is the **geodesic symmetry** at $p$, and the condition that $M$ be
 
 **Definition.** A **bounded symmetric domain** is a bounded domain $\Omega \subseteq \mathbb{C}^n$ such that for every $p \in \Omega$ there is a holomorphic automorphism $s_p$ of $\Omega$, involutive, with $p$ as an isolated fixed point. Its **Bergman metric** is
 $$
-g^{\mathrm B}_{i\bar j}(z) = \partial/\partial z_i\,\partial/\partial\bar z_j \log K(z,z),
+\boxed{\;g^{\mathrm B}_{i\bar j}(z) = \partial/\partial z_i\,\partial/\partial\bar z_j \log K(z,z)\;},
 $$
 where $K$ is the Bergman kernel of $\Omega$; the norm is invariant under the holomorphic automorphisms and is a Kähler metric.
 

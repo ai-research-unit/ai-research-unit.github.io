@@ -30,7 +30,7 @@ and its orbits are the **coadjoint orbits** $\mathcal{O}_\xi = \{\operatorname{A
 **Theorem (Kirillov--Kostant--Souriau).** Every coadjoint orbit $\mathcal{O}\subset\mathrm{G}^{*}$ carries a canonical $G$-invariant symplectic form $\omega$, the **KKS form**, defined at $\xi\in\mathcal{O}$ by
 
 $$
-\omega_\xi(\operatorname{ad}^{*}_X\xi, \operatorname{ad}^{*}_Y\xi) = \langle \xi, [X,Y]\rangle ,
+\boxed{\;\omega_\xi(\operatorname{ad}^{*}_X\xi, \operatorname{ad}^{*}_Y\xi) = \langle \xi, [X,Y]\rangle\;} ,
 $$
 
 and the form is non-degenerate because its kernel is the annihilator of the stabiliser, which is the tangent space of the orbit.
@@ -56,7 +56,7 @@ and the form is non-degenerate because its kernel is the annihilator of the stab
 **Theorem (Kirillov).** Let $G$ be a connected simply connected nilpotent Lie group, let $\xi\in\mathrm{G}^{*}$, and let $\mathfrak{p}$ be a real polarisation of $\xi$. Then the induced representation
 
 $$
-\pi_\xi = \operatorname{Ind}_P^G\chi_\xi
+\boxed{\;\pi_\xi = \operatorname{Ind}_P^G\chi_\xi\;}
 $$
 
 is irreducible, its equivalence class depends only on the orbit $\mathcal{O}_\xi$ and not on the polarisation, and the assignment $\mathcal{O}\mapsto\pi_\xi$ is a bijection from the coadjoint orbits onto the unitary dual $\widehat{G}$.
@@ -112,7 +112,7 @@ so the orbit is a homogeneous Hamiltonian $\mathrm{G}$-space, and the moment map
 **Theorem (Kostant).** Let $G$ be compact and connected, let $\mathrm{T}\subseteq\mathrm{G}$ be a Cartan subalgebra and let $W$ be the Weyl group. For a coadjoint orbit $\mathcal{O}_\lambda$ the projection onto the dual of the Cartan subalgebra is the convex hull of the Weyl-group orbit of $\lambda$,
 
 $$
-\operatorname{pr}_{\mathrm{T}^{*}}(\mathcal{O}_\lambda) = \operatorname{conv}\bigl(W\cdot\lambda\bigr) ,
+\boxed{\;\operatorname{pr}_{\mathrm{T}^{*}}(\mathcal{O}_\lambda) = \operatorname{conv}\bigl(W\cdot\lambda\bigr)\;} ,
 $$
 
 a convex polytope whose vertices are the weights $w\lambda$; the orbit is the orbit of an integral weight exactly when it is the orbit of an irreducible representation, and the weight polytope is the moment polytope of that representation.

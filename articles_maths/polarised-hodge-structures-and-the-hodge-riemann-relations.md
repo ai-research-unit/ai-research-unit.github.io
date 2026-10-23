@@ -61,7 +61,7 @@ $$
 $$
 
 $$
-Q\bigl(Cx,\bar x\bigr)>0\quad\text{for every }x\neq0 ;
+\boxed{\;Q\bigl(Cx,\bar x\bigr)>0\quad\text{for every }x\neq0\;} ;
 $$
 
 a Hodge structure with a polarisation is a **polarised Hodge structure**. The first relation is the horizontality of $Q$ with respect to the decomposition; the second is the positivity, and it says that the Hermitian form
@@ -79,7 +79,7 @@ is positive definite on $V_{\mathbb{C}}$.
 **Theorem (Hodge index theorem).** Let $X$ be a compact Kähler manifold of even complex dimension and let $Q$ be the intersection form on its middle cohomology, the polarisation furnished by the $\varepsilon$-Hermitian pairing $\langle u\cup v,[X]\rangle$ of *Hermitian Pairings on a Topological Space*. Then the signature of $Q$ is
 
 $$
-\sigma(X)=\sum_{n,m}(-1)^{n}\,h^{n,m}(X),
+\boxed{\;\sigma(X)=\sum_{n,m}(-1)^{n}\,h^{n,m}(X)\;},
 $$
 
 the alternating sum over the Hodge numbers; for a compact Kähler surface this is $\sigma=h^{0,0}-h^{1,0}-h^{1,1}+h^{2,0}+h^{2,2}-\cdots$, and the positivity of the polarisation on the primitive cohomology is what fixes the signs.
@@ -95,7 +95,7 @@ the alternating sum over the Hodge numbers; for a compact Kähler surface this i
 **Theorem.** The period domain is an open subset of a flag manifold and a homogeneous complex manifold
 
 $$
-D=G_{\mathbb{R}}/V ,
+\boxed{\;D=G_{\mathbb{R}}/V\;} ,
 $$
 
 where $G_{\mathbb{R}}=\operatorname{Aut}(V_{\mathbb{R}},Q)$ is the real form of the orthogonal or symplectic group that preserves $Q$ and $V$ is the compact subgroup preserving the Hodge filtration and the positivity; the tangent space of $D$ at a point is $\operatorname{Hom}(H^{n,m},H^{n-1,m+1})$ modulo the stabiliser.

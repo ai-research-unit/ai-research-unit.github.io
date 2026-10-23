@@ -20,7 +20,7 @@ $$
 
 **Theorem.** With respect to the coefficient form,
 $$
-\langle T_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)\lambda(k)f(k)\Bigr)\overline{g(n)}=\langle f,\alpha\Theta_ag\rangle ,
+\boxed{\;\langle T_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)\lambda(k)f(k)\Bigr)\overline{g(n)}=\langle f,\alpha\Theta_ag\rangle\;} ,
 $$
 so that $T_a^{\alpha\dagger}=\alpha\Theta_a=\Theta_{\alpha(a)}\alpha$, with the explicit form
 $$
@@ -34,7 +34,7 @@ The signed adjoint is anti-linear in $a$; it is the adjoint of the adjoint, $(T_
 
 **Theorem.** The signed adjoints satisfy
 $$
-T_a^{\alpha\dagger}T_b^{\alpha\dagger}=\Theta_{\alpha(a)}\Theta_{\alpha(b)}=\Theta_{\alpha(a)*\alpha(b)}=\Theta_{\alpha(a*b)},\qquad \bigl(T_a^{\alpha\dagger}\bigr)^2=\Theta_{\alpha(a)*\alpha(a)},
+\boxed{\;T_a^{\alpha\dagger}T_b^{\alpha\dagger}=\Theta_{\alpha(a)}\Theta_{\alpha(b)}=\Theta_{\alpha(a)*\alpha(b)}=\Theta_{\alpha(a*b)},\qquad \bigl(T_a^{\alpha\dagger}\bigr)^2=\Theta_{\alpha(a)*\alpha(a)}\;},
 $$
 and the products with the signed left multiplication are
 $$
@@ -46,7 +46,7 @@ so the signed adjoints close under composition, forming the transposed algebra w
 
 **Corollary (self-adjointness and unitarity).** The signed left multiplication is self-adjoint exactly for the real scalar multiples of the identity,
 $$
-T_a=T_a^{\alpha\dagger}\iff L_{\alpha(a)}=\Theta_a\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{R},
+\boxed{\;T_a=T_a^{\alpha\dagger}\iff L_{\alpha(a)}=\Theta_a\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{R}\;},
 $$
 and it is unitary exactly for the unitary scalar multiples of the identity,
 $$

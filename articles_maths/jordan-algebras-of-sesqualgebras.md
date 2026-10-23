@@ -45,7 +45,7 @@ A scalar can be taken out of a sum only when it multiplies every term of it, so 
 **Theorem.** The Jordan identity for the symmetrisation of the derived sesquilinear product fails off the Hermitian part. In $A = M_{2}(\mathbb{C})$ with the conjugate transpose, for $x = E_{12}$ and $y = E_{22}$,
 
 $$
-(x \circ y) \circ (x \circ x) = \tfrac14\bigl(E_{12} + E_{21}\bigr) \neq 0 = x \circ \bigl(y \circ (x \circ x)\bigr) .
+\boxed{\;(x \circ y) \circ (x \circ x) = \tfrac14\bigl(E_{12} + E_{21}\bigr) \neq 0 = x \circ \bigl(y \circ (x \circ x)\bigr)\;} .
 $$
 
 **Proof.** With the matrix-unit rule $E_{ab}E_{cd} = \delta_{bc}E_{ad}$: $x \circ x = E_{12}E_{21} = E_{11}$, and $y \circ (x \circ x) = E_{22} \circ E_{11} = \tfrac12(E_{22}E_{11} + E_{11}E_{22}) = 0$, so the right-hand side is $x \circ 0 = 0$. On the left, $x \circ y = \tfrac12(E_{12}E_{22} + E_{22}E_{21}) = \tfrac12(E_{12} + E_{21})$, whose symmetrisation with $E_{11}$ is $\tfrac12\bigl(\tfrac12(E_{12}+E_{21})E_{11} + E_{11}\tfrac12(E_{12}+E_{21})\bigr) = \tfrac14\bigl(E_{12}+E_{21}\bigr)$, and the two sides differ.
@@ -73,7 +73,7 @@ $$
 **Theorem.** The Hermitian part with the symmetrisation,
 
 $$
-J(A) = \bigl(H(A), \circ\bigr) , \qquad x \circ y = \tfrac12\bigl(xy + yx\bigr) \text{ for } x, y \in H(A) ,
+\boxed{\;J(A) = \bigl(H(A), \circ\bigr) , \qquad x \circ y = \tfrac12\bigl(xy + yx\bigr) \text{ for } x, y \in H(A)\;} ,
 $$
 
 is a commutative Jordan algebra over the fixed ring $R^{\varsigma}$: the product is commutative and $R^{\varsigma}$-bilinear, and it satisfies the Jordan identity.
@@ -133,7 +133,7 @@ $$
 **Theorem (recalled, the unital reading).** In the unital case the ternary product determines the binary one and the involution,
 
 $$
-\{x,y,1\} = x \star y , \qquad \{1,y,1\} = y^{*} , \qquad xy = x \star y^{*} ,
+\boxed{\;\{x,y,1\} = x \star y , \qquad \{1,y,1\} = y^{*} , \qquad xy = x \star y^{*}\;} ,
 $$
 
 so the derived operation, the involution and the associative product are recovered from the ternary product by inserting the unit.

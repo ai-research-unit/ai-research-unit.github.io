@@ -19,7 +19,7 @@ $$
 and the general solution is
 
 $$
-y_n = (g_\gamma^n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j .
+\boxed{\; y_n = (g_\gamma^n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j \;}.
 $$
 
 **Proof.** The chain rule gives $(g^n)'(x_0) = \prod_{k=0}^{n-1} g'(x_k) = \prod_{k=0}^{n-1} 2x_k$. The affine recursion has the homogeneous solution $\prod 2x_k$ and the particular solution obtained by the variation of constants, which is the displayed sum.
@@ -29,13 +29,13 @@ $$
 **Definition.** The **multiplier** of a periodic orbit $x_0, \ldots, x_{p-1}$ of period $p$ of $g_\gamma$ is
 
 $$
-\lambda = (g_\gamma^p)'(x_0) = \prod_{k=0}^{p-1} 2x_k ,
+\boxed{\; \lambda = (g_\gamma^p)'(x_0) = \prod_{k=0}^{p-1} 2x_k \;},
 $$
 
 and the **Lyapunov exponent** of an orbit with respect to an invariant measure $\mu$ is
 
 $$
-\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma^n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general} .
+\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma^n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general}.
 $$
 
 **Theorem (what the infinitesimal dynamics reports).** On a periodic orbit of period $p$ the infinitesimal coordinate is multiplied by the multiplier in one period,
@@ -57,7 +57,7 @@ so the cycle is attracting for $|\lambda| < 1$, parabolic for $|\lambda| = 1$ an
 **Theorem (the collapse of the two sets).** For every $c = \gamma+\varepsilon\delta$,
 
 $$
-F(f_c) = \pi^{-1}\bigl(F(g_\gamma)\bigr), \qquad J(f_c) = \pi^{-1}\bigl(J(g_\gamma)\bigr) = J(g_\gamma)\times\mathbb{R}\varepsilon ,
+\boxed{\; F(f_c) = \pi^{-1}\bigl(F(g_\gamma)\bigr), \qquad J(f_c) = \pi^{-1}\bigl(J(g_\gamma)\bigr) = J(g_\gamma)\times\mathbb{R}\varepsilon \;},
 $$
 
 so the Fatou and the Julia sets of the dual map are the vertical cylinders over the real Fatou and Julia sets: the dual Julia set is a union of vertical lines, and it has no structure in the infinitesimal direction beyond the factor $\mathbb{R}$.

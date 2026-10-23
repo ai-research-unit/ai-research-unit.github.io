@@ -27,7 +27,7 @@ $$
 and the sum is direct. Indeed, if $x = x_{00} + x_{01} + x_{10} + x_{11}$ with $x_{ij} \in e_i A e_j$ (where $e_0 = e$ and $e_1 = f$), then multiplying by $e$ or $f$ on the left and on the right isolates each summand. This is the **Peirce decomposition** of $A$ relative to $e$:
 
 $$
-A = eAe \oplus eAf \oplus fAe \oplus fAf .
+\boxed{\;A = eAe \oplus eAf \oplus fAe \oplus fAf\;} .
 $$
 
 The decomposition is the $r=2$ case of the two-sided Peirce decomposition of *The Eigenvalue Decomposition of an Element*, with the complete orthogonal family $e, f$ and the eigenvalues $1, 0$.
@@ -100,7 +100,7 @@ $$
 Therefore
 
 $$
-[e,A] = N .
+\boxed{\;[e,A] = N\;} .
 $$
 
 The off-diagonal part is exactly the image of the inner derivation $\operatorname{ad}_e(x) = [e,x]$. Its kernel is the centraliser
@@ -144,7 +144,7 @@ $$
 Then
 
 $$
-A = A_{-1} \oplus A_0 \oplus A_1, \qquad A_p A_q \subseteq A_{p+q},
+\boxed{\;A = A_{-1} \oplus A_0 \oplus A_1, \qquad A_p A_q \subseteq A_{p+q}\;},
 $$
 
 with $A_p = 0$ for $|p| > 1$. The multiplication table verifies the grading: $A_1 A_1 = 0 = A_2$, $A_{-1} A_{-1} = 0 = A_{-2}$, $A_1 A_{-1} \subseteq A_0$, $A_{-1} A_1 \subseteq A_0$, and $A_0$ acts on $A_{\pm 1}$ by left and right multiplication. The Peirce decomposition is the graded decomposition of $A$ by the eigenvalues of $\operatorname{ad}_e$, with the degree $p$ equal to the eigenvalue.

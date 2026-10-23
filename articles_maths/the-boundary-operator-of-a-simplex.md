@@ -43,7 +43,7 @@ The generators are the oriented simplices, and the relations are the sign relati
 **Definition.** The **boundary operator** $\partial_{n} : C_{n} \to C_{n-1}$ is defined on an oriented simplex by
 
 $$
-\partial_{n}[v_{0}, \ldots, v_{n}] = \sum_{i=0}^{n} (-1)^{i}\,[v_{0}, \ldots, \hat{v}_{i}, \ldots, v_{n}],
+\boxed{\;\partial_{n}[v_{0}, \ldots, v_{n}] = \sum_{i=0}^{n} (-1)^{i}\,[v_{0}, \ldots, \hat{v}_{i}, \ldots, v_{n}]\;},
 $$
 
 where the hat omits the vertex it covers and the remaining vertices keep their order; for $n = 0$ one sets $\partial_{0} = 0$. The formula is extended $R$-linearly to all of $C_{n}$, so that
@@ -107,7 +107,7 @@ The identities are the combinatorial engine of the square-zero property: the dou
 **Theorem.** For every $n \geq 1$,
 
 $$
-\partial_{n-1} \circ \partial_{n} = 0 .
+\boxed{\;\partial_{n-1} \circ \partial_{n} = 0\;} .
 $$
 
 Equivalently, every boundary is a cycle: the image of $\partial_{n}$ is contained in the kernel of $\partial_{n-1}$.

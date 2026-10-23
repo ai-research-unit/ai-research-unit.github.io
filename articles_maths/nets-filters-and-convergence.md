@@ -27,7 +27,7 @@ A directed set need not be linearly ordered, and this is the whole point of the 
 
 **Definition.** Let $(x_\alpha)_{\alpha \in D}$ be a net in a topological space $X$. It **converges to** $x \in X$, written $x_\alpha \to x$ or $\lim_\alpha x_\alpha = x$, if for every neighbourhood $\Omega$ of $x$ there is $\alpha_0 \in D$ such that $x_\alpha \in \Omega$ for every $\alpha \geq \alpha_0$:
 $$
-x_\alpha \to x \iff \forall\, \Omega \in \mathcal{N}_x\ \ \exists\, \alpha_0 \in D\ \ \forall\, \alpha \geq \alpha_0 : \ x_\alpha \in \Omega ,
+\boxed{\;x_\alpha \to x \iff \forall\, \Omega \in \mathcal{N}_x\ \ \exists\, \alpha_0 \in D\ \ \forall\, \alpha \geq \alpha_0 : \ x_\alpha \in \Omega\;} ,
 $$
 and one says that the net is **eventually** in $\Omega$. A point $x$ is a **cluster point** of the net if for every neighbourhood $\Omega$ of $x$ and every $\alpha_0 \in D$ there is $\alpha \geq \alpha_0$ with $x_\alpha \in \Omega$:
 $$
@@ -167,7 +167,7 @@ and defined by $\xi_{(a,A)} = a$. It is directed because $\mathcal{F}$ is closed
 
 **Theorem.** Let $A \subseteq X$. Then
 $$
-x \in \overline{A} \iff x_\alpha \to x \text{ for some net } (x_\alpha) \text{ in } A \iff \mathcal{F} \to x \text{ for some filter } \mathcal{F} \text{ with } A \in \mathcal{F} .
+\boxed{\;x \in \overline{A} \iff x_\alpha \to x \text{ for some net } (x_\alpha) \text{ in } A \iff \mathcal{F} \to x \text{ for some filter } \mathcal{F} \text{ with } A \in \mathcal{F}\;} .
 $$
 
 **Proof.** If $x \in \overline{A}$, the family $\{\Omega \cap A : \Omega \in \mathcal{N}_x\}$ has the finite intersection property and generates a filter containing $A$ and converging to $x$. If a net in $A$ converges to $x_1$, every neighbourhood of $x_1$ contains a point of $A$, so $x_1 \in \overline{A}$; the filter statement is the same finite-intersection argument.

@@ -56,7 +56,7 @@ the length of the shortest program that outputs $x$; the **prefix complexity** $
 **Definition.** Fix a prefix-free universal partial computable function $\Omega$, as in the definition of $K$. **Chaitin's constant** is
 
 $$
-\Omega = \sum_{p : \Omega(p) \text{ halts}} 2^{-|p|} ,
+\boxed{\;\Omega = \sum_{p : \Omega(p) \text{ halts}} 2^{-|p|}\;} ,
 $$
 
 the halting probability of $\Omega$: the measure of the set of infinite binary sequences that begin with a program on which $\Omega$ halts.
@@ -76,7 +76,7 @@ the halting probability of $\Omega$: the measure of the set of infinite binary s
 **Corollary (incompressibility criterion).** A real $x$ is Martin-Löf random exactly when there is a constant $c$ with
 
 $$
-K(x \upharpoonright n) \geq n - c
+\boxed{\;K(x \upharpoonright n) \geq n - c\;}
 $$
 
 for every $n$, where $x \upharpoonright n$ is the first $n$ bits of $x$.

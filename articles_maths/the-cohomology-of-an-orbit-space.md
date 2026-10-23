@@ -75,7 +75,7 @@ which is the identity on the quotient when the action is free: for a free involu
 **Theorem (Grothendieck).** Let $k$ be a field in which two is invertible. Then the pullback
 
 $$
-\pi^* : H^*(Q;k) \longrightarrow H^*(X;k)^\sigma
+\boxed{\;\pi^* : H^*(Q;k) \longrightarrow H^*(X;k)^\sigma\;}
 $$
 
 is an isomorphism onto the invariants, and it is injective with image the invariant subalgebra. Equivalently, the cohomology of the orbit space is the invariant cohomology of the space, and the transfer realises the inverse: $\pi^*\circ\tfrac12\tau = \mathrm{id}$ and $\tfrac12\tau\circ\pi^*=\mathrm{id}$ on the invariants.
@@ -95,7 +95,7 @@ is an isomorphism onto the invariants, and it is injective with image the invari
 **Theorem (Cartan–Leray).** Let the involution act, and consider the two-fold covering $\pi : X\to Q$ of the free part; then the cohomology of the quotient is the abutment of the spectral sequence
 
 $$
-E_2^{n,m} = H^p(\mathbb{Z}/2; H^q(X;\mathbb{F}_2)) \ \Longrightarrow \ H^{p+q}(Q;\mathbb{F}_2),
+\boxed{\;E_2^{n,m} = H^p(\mathbb{Z}/2; H^q(X;\mathbb{F}_2)) \ \Longrightarrow \ H^{p+q}(Q;\mathbb{F}_2)\;},
 $$
 
 with coefficients in the cohomology of $X$ regarded as a module over the group ring $\mathbb{F}_2[\mathbb{Z}/2]$ through the action $\sigma^*$; the sequence is natural for equivariant maps, and for the free action it converges to the quotient cohomology from the group cohomology of the coefficient module.
@@ -139,7 +139,7 @@ acting on $H^*(X;k)$.
 **Theorem.** The two projections are idempotents with $p_+ + p_- = \mathrm{id}$, $p_+p_-=0$, $p_\pm^2=p_\pm$, and they decompose the cohomology into the invariant and the anti-invariant parts,
 
 $$
-H^*(X;k) = H^*(X;k)^+ \oplus H^*(X;k)^- , \qquad H^*(X;k)^\pm = p_\pm H^*(X;k) ,
+\boxed{\;H^*(X;k) = H^*(X;k)^+ \oplus H^*(X;k)^- , \qquad H^*(X;k)^\pm = p_\pm H^*(X;k)\;} ,
 $$
 
 with $H^*(X;k)^+ = H^*(X;k)^\sigma$; the quotient cohomology is the invariant part, $H^*(Q;k)\cong H^*(X;k)^+$, and the coinvariants are canonically isomorphic to the invariants through the averaging, the quotient of $H^*(X;k)$ by the anti-invariant part being the invariant part.

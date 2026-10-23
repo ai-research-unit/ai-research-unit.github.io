@@ -59,19 +59,19 @@ The article assumes *Metric, Uniform and Complete Spaces* for compactness, compl
 **Theorem (the end space and its dimension).** The end space $E(T_r)$ is a Cantor set for $r \geq 3$. With the visual metric $d(\xi,\eta) = r^{\,-\ell(\xi,\eta)}$, where $\ell(\xi,\eta)$ is the length of the common initial path of two rays, the number of cylinders of diameter $r^{-n}$ is
 
 $$
-N\bigl(E(T_r), r^{-n}\bigr) \asymp (r-1)^{n} ,
+\boxed{\;N\bigl(E(T_r), r^{-n}\bigr) \asymp (r-1)^{n}\;} ,
 $$
 
 so
 
 $$
-\dim_H E(T_r) = \frac{\log(r-1)}{\log r} .
+\boxed{\;\dim_H E(T_r) = \frac{\log(r-1)}{\log r}\;} .
 $$
 
 For $r = 3$ this is $\log 2/\log 3 = 0.6309\ldots$; for $r = 4$ it is $\log 3/\log 4 = 0.7924\ldots$. Since the dimension is less than one, the dendrite $\overline{T_r}$ itself has
 
 $$
-\dim_H \overline{T_r} = 1 ,
+\boxed{\;\dim_H \overline{T_r} = 1\;} ,
 $$
 
 being a countable union of arcs together with an end set of dimension strictly less than one.

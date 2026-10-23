@@ -23,7 +23,7 @@ So a Krein algebra is a $\ast$-algebra with an indefinite form tied to the produ
 **Proposition (the left regular representation).** The adjoint axiom says that for each $x$ the operator $L_x$ of left multiplication has the operator $L_{x^{\dagger}}$ as its adjoint for the indefinite form:
 
 $$
-[L_xy,z] = [y,L_{x^{\dagger}}z] = [y,x^{\dagger}z] .
+\boxed{\;[L_xy,z] = [y,L_{x^{\dagger}}z] = [y,x^{\dagger}z]\;} .
 $$
 
 So the left regular representation is a $\ast$-representation for the indefinite form, exactly as it is for the positive definite one.
@@ -39,7 +39,7 @@ So the left regular representation is a $\ast$-representation for the indefinite
 **Definition.** A **fundamental symmetry of the algebra** is an $F$-linear operator $J$ on $A$ with
 
 $$
-J^{2} = \mathrm{id}, \qquad [Jx,y] = [x,Jy], \qquad [Jx,x] > 0 \text{ for } x\neq0, \qquad J(x^{\dagger}) = (Jx)^{\dagger},
+\boxed{\;J^{2} = \mathrm{id}, \qquad [Jx,y] = [x,Jy], \qquad [Jx,x] > 0 \text{ for } x\neq0, \qquad J(x^{\dagger}) = (Jx)^{\dagger}\;},
 $$
 
 the last condition being the **compatibility condition**: $J$ is compatible with the involution. (The name $J$-positivity is kept for the cone of the later section, where the third and the fourth conditions are both used.)

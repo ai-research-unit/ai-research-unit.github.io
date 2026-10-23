@@ -15,7 +15,7 @@ The adjoint axiom and the involution are *Hermitian Adjoints on a Hermitian Alge
 **Theorem.** For every $x\in A$ the extended left multiplication satisfies
 
 $$
-\bar L_x^{*} = \bar L_{x^{\dagger}} \qquad \text{on } H .
+\boxed{\;\bar L_x^{*} = \bar L_{x^{\dagger}} \qquad \text{on } H\;} .
 $$
 
 So the adjoint of the left multiplication by $x$ is the left multiplication by the involution of $x$, and the map $x\mapsto\bar L_x$ is a $\ast$-representation with the involution on the algebra and the Hermitian adjoint on the operators.
@@ -35,7 +35,7 @@ So the adjoint of the left multiplication by $x$ is the left multiplication by t
 **Theorem.** For every $x\in A$ the extended right multiplication satisfies
 
 $$
-\bar R_x^{*} = \bar R_{x^{\dagger}} \qquad \text{on } H .
+\boxed{\;\bar R_x^{*} = \bar R_{x^{\dagger}} \qquad \text{on } H\;} .
 $$
 
 **Proof.** The same computation read from the other side: $\langle R_xy,z\rangle = \langle yx,z\rangle = \langle y,zx^{\dagger}\rangle$ by the adjoint axiom applied with the roles of the two arguments exchanged, which is $\langle y,R_{x^{\dagger}}z\rangle$.

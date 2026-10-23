@@ -95,7 +95,7 @@ $$
 an $m$-form on the space of variables $(x,u,p)$. It is the **multimomentum form**, or the **De Donder–Weyl form**, and it is the field-theoretic Poincaré–Cartan form: for $m=1$ it is $p_i\,du^i$, the canonical one-form of *Lagrangian and Hamiltonian Systems*. Its exterior derivative is the **multisymplectic form**
 
 $$
-\Omega_{DW}=-d\Theta_{DW}=-dp^\mu_i\wedge du^i\wedge\varpi_\mu ,
+\boxed{\;\Omega_{DW}=-d\Theta_{DW}=-dp^\mu_i\wedge du^i\wedge\varpi_\mu\;} ,
 $$
 
 a closed $(m+1)$-form, closed because it is exact. The sign is fixed by the one-variable case, where $\Omega_{DW}=du^i\wedge dp_i$ is the symplectic form $\omega=\sum_idq^i\wedge dp_i$ of *Lagrangian and Hamiltonian Systems* with $q=u$; a reader who prefers the opposite sign must reverse it in $\Theta_{DW}$ as well, since it is the derivative that is fixed and the form only up to a sign convention.
@@ -118,7 +118,7 @@ The distinction between the polysymplectic and the multisymplectic reading is th
 The one-variable bracket is defined by $\{f,g\}=\omega(X_f,X_g)$, and the definition needs the two vector fields $X_f,X_g$ obtained by inverting $\omega$. In the covariant formalism this inversion is not available, and the reason is a matter of degree: from a function $f$ on the phase space one can form the $1$-form $df$, whereas the polysymplectic form accepts vectors and returns $(m-1)$-forms, so the equation that would define $X_f$,
 
 $$
-\iota_{X_f}\Omega_{DW}=df\wedge(\text{an }(m-1)\text{-form}),
+\boxed{\;\iota_{X_f}\Omega_{DW}=df\wedge(\text{an }(m-1)\text{-form})\;},
 $$
 
 contains an $(m-1)$-form that must be supplied from outside. There is no canonical choice, and different choices give different vector fields. Consequently there is **no covariant Poisson bracket**: a bracket would have to be built from a canonical choice, and no such choice exists. The obstruction is not a technical difficulty but a degree count, and it is the precise sense in which the field case is not the finite-dimensional case.
@@ -138,7 +138,7 @@ $$
 with $\delta^\mu_\nu$ the Kronecker symbol; the index $\mu$ is the divergence index and $\nu$ labels which translation the current belongs to. The conservation law is
 
 $$
-\partial/\partial x^\mu\,J^\mu{}_\nu=0 \qquad\text{on shell},
+\boxed{\;\partial/\partial x^\mu\,J^\mu{}_\nu=0 \qquad\text{on shell}\;},
 $$
 
 and it says that each of the $m$ translations has a current, so that the conserved objects of a field theory are indexed by the directions of the independent variables. For $m=1$ the current reduces to $J=p\,u'-L$, the single conserved quantity of an autonomous problem, and the conservation law to $\frac{d}{dx}(pu'-L)=0$; the multimomentum current is thus the covariant form of the Jacobi or Beltrami first integral, $m$ copies of it.

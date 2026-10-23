@@ -66,13 +66,13 @@ The chart $u(s)$ lies on the hyperbola $\langle u\rangle_{*}=1$. It covers the t
 For real $s\neq\pm1$ define
 
 $$
-u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}\,j .
+u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}\,j.
 $$
 
 The element $1+sj$ has norm $1-s^2$, so it is invertible exactly when $s\neq\pm1$; the displayed form has the real denominator $1-s^2$, which vanishes at $s=\pm1$. The norm is constant on the chart:
 
 $$
-\langle u(s)\rangle_{*} = \frac{\langle 1-sj\rangle_{*}}{\langle 1+sj\rangle_{*}} = \frac{1-s^2}{1-s^2} = 1.
+\boxed{\;\langle u(s)\rangle_{*} = \frac{\langle 1-sj\rangle_{*}}{\langle 1+sj\rangle_{*}} = \frac{1-s^2}{1-s^2} = 1\;}.
 $$
 
 The chart is rational, defined over $\mathbb{Q}$, and it uses no hyperbolic function. Its values at small integers and fractions are as follows.
@@ -93,7 +93,7 @@ The identity $u(0)=1$ is the identity of the chart. The chart is not periodic: $
 Let $u=x+yj$ be a unit of norm $1$. The inverse of the chart is
 
 $$
-s = -\frac{j(u-1)}{u+1} = \frac{j(1-u)}{u+1},
+\boxed{\;s = -\frac{j(u-1)}{u+1} = \frac{j(1-u)}{u+1}\;},
 $$
 
 defined for $u\neq-1$. Since $\langle u\rangle_{*}=1$, the conjugate is the inverse, $\bar u=u^{-1}$, and the conjugate of $s$ is
@@ -163,7 +163,7 @@ The three intervals $(-\infty,-1)$, $(-1,1)$ and $(1,\infty)$ map to the three o
 **Theorem.** Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ and $Q$ not on the negative real axis has a unique decomposition
 
 $$
-Q = r\,\epsilon\,u(s), \qquad r>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\},
+\boxed{\;Q = r\,\epsilon\,u(s), \qquad r>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\}\;},
 $$
 
 with $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The decomposition is defined exactly on $\{\langle Q\rangle_{*}\neq0\}\setminus\mathbb{R}_{<0}$.
@@ -228,7 +228,7 @@ $$
 where
 
 $$
-s_3 = \frac{s_1+s_2}{1+s_1s_2}.
+\boxed{\; s_3 = \frac{s_1+s_2}{1+s_1s_2} \;}.
 $$
 
 The identity is $s=0$, because $u(0)=1$, and the inverse is $s\mapsto-s$, because $u(s)u(-s)=1$. The law is the hyperbolic addition formula, transported from the exponential coordinate by $s=-\tanh(\phi/2)$ on the identity component.

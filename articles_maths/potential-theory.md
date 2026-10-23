@@ -23,7 +23,7 @@ with $\sigma_{n-1}$ the surface measure of the unit sphere, so that $\Delta N = 
 
 **Theorem (the mean value property).** A continuous $u$ on $\Omega$ is harmonic if and only if for every ball $B(x,r)\subseteq\Omega$
 $$
-u(x) = \frac{1}{\sigma_{n-1}r^{n-1}}\int_{\partial B(x,r)}u\,d\sigma = \frac{1}{\omega_nr^n}\int_{B(x,r)}u\,dy ,
+\boxed{\;u(x) = \frac{1}{\sigma_{n-1}r^{n-1}}\int_{\partial B(x,r)}u\,d\sigma = \frac{1}{\omega_nr^n}\int_{B(x,r)}u\,dy\;} ,
 $$
 where $\sigma_{n-1}$ is the surface measure of the unit sphere and $\omega_n$ the volume of the unit ball. Consequently a harmonic function is $C^\infty$, in fact analytic, and it satisfies the **strong maximum principle**: if $u$ attains its maximum at an interior point of a connected $\Omega$, then $u$ is constant; and the **Liouville theorem**: a harmonic function on $\mathbb{R}^n$ bounded above (or below) is constant.
 
@@ -53,7 +53,7 @@ and the **Poisson integral** of a function $f\in C(\partial B)$ is $u(x) = \frac
 
 **Theorem (Green's function and the representation).** Let $\Omega$ be a bounded domain with smooth boundary. There is a unique function $G:\Omega\times\Omega\to(-\infty,+\infty]$ with $G(x,y) = N(x-y)-h_x(y)$, where $h_x$ is harmonic in $y$ and chosen so that $G(x,\cdot) = 0$ on $\partial\Omega$; it is symmetric, $G(x,y) = G(y,x)$, positive, and satisfies for every $u$ harmonic on a neighbourhood of $\bar\Omega$
 $$
-u(x) = \frac{1}{\sigma_{n-1}}\int_{\partial\Omega}\partial/\partial\nu G(x,\zeta)\,u(\zeta)\,d\sigma(\zeta),
+\boxed{\;u(x) = \frac{1}{\sigma_{n-1}}\int_{\partial\Omega}\partial/\partial\nu G(x,\zeta)\,u(\zeta)\,d\sigma(\zeta)\;},
 $$
 the **Poisson formula** of the domain, whose kernel $\partial/\partial\nu G$ is the Poisson kernel.
 
@@ -95,7 +95,7 @@ and the **energy capacity** is $\operatorname{cap}_2(K) = 1/\inf\{I(\mu) : \mu\ 
 
 **Theorem (Wiener's criterion).** Let $\Omega$ be a domain and $\zeta_0\in\partial\Omega$. Then $\zeta_0$ is a **regular** boundary point for the Dirichlet problem — every solution constructed by Perron's method attains its boundary data continuously at $\zeta_0$ — if and only if
 $$
-\sum_{k\geq1}2^{k(n-2)}\operatorname{cap}\bigl(\Omega^{\mathsf c}\cap\{2^{-k}\leq\lvert x-\zeta_0\rvert\leq2^{-k+1}\}\bigr) = +\infty
+\boxed{\;\sum_{k\geq1}2^{k(n-2)}\operatorname{cap}\bigl(\Omega^{\mathsf c}\cap\{2^{-k}\leq\lvert x-\zeta_0\rvert\leq2^{-k+1}\}\bigr) = +\infty\;}
 $$
 for $n\geq3$, with the logarithmic modification of the summands in the plane. Equivalently, $\zeta_0$ is regular exactly when the complement $\Omega^{\mathsf c}$ is not thin at $\zeta_0$ in the fine topology, which is the geometric form of the same divergence condition. In particular every point of a boundary that satisfies the exterior cone condition is regular, points of a smooth boundary are regular, and an isolated point of the boundary is never regular, in accordance with the removable singularity theorem.
 

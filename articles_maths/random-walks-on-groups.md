@@ -69,7 +69,7 @@ The proposition is the bridge between the harmonic analysis and the probability:
 **Theorem (Fourier description).** Let $G$ be a locally compact abelian group with dual $\widehat G$ and Fourier transform $\widehat\mu(\chi) = \int_G\chi(x)\,d\mu(x)$, as in *Harmonic Analysis on Groups*. Then for the walk with step distribution $\mu$,
 
 $$
-\widehat{\mu^{*n}} = \widehat\mu^{\,n}, \qquad p^{(n)}(x,y) = \int_{\widehat G}\chi(x^{-1}y)\,\widehat\mu(\chi)^n\,d\chi
+\boxed{\;\widehat{\mu^{*n}} = \widehat\mu^{\,n}, \qquad p^{(n)}(x,y) = \int_{\widehat G}\chi(x^{-1}y)\,\widehat\mu(\chi)^n\,d\chi\;}
 $$
 
 in the sense of the Fourier inversion theorem — the identity is one of densities with respect to the Haar measure, the dual measure being normalised so that inversion holds — and the walk is recurrent if and only if
@@ -141,7 +141,7 @@ The spectral description is the general form of the Fourier description, valid w
 **Theorem (Kesten).** Let $G$ be a finitely generated group, and let $\mu$ be a symmetric probability measure on $G$ with finite support generating $G$. Then
 
 $$
-\rho(P_\mu) = 1 \quad \Longleftrightarrow \quad G \text{ is amenable},
+\boxed{\;\rho(P_\mu) = 1 \quad \Longleftrightarrow \quad G \text{ is amenable}\;},
 $$
 
 and $\rho(P_\mu)<1$ otherwise; in particular the random walk is recurrent exactly when $G$ is amenable, and the return probabilities decay exponentially exactly when $G$ is non-amenable.
@@ -159,7 +159,7 @@ Avez's theorem is the information-theoretic counterpart of Kesten's: the non-ame
 **Theorem (Varopoulos).** Let $G$ be a finitely generated group of polynomial growth of degree $d$ — that is, $|B(e,n)| \asymp n^d$ for the balls of the Cayley graph — and let $\mu$ be a symmetric non-degenerate probability measure of finite support. Then
 
 $$
-p^{(2n)}(e) \asymp n^{-d/2},
+\boxed{\;p^{(2n)}(e) \asymp n^{-d/2}\;},
 $$
 
 so that the walk is recurrent for $d\leq2$ and transient for $d\geq3$.

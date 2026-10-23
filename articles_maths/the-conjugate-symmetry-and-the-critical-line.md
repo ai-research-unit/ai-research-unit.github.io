@@ -17,7 +17,7 @@ The **critical line** is $\Re s=1/2$, the **critical strip** is $0\le\Re s\le1$,
 
 **Theorem.** The map $\kappa$ is an anti-holomorphic involution of the Riemann sphere, $\kappa^2=\mathrm{id}$, its fixed set is the critical line, and it commutes with the conjugation $s\mapsto\bar s$; together they generate the Klein four-group
 $$
-\{s,\ \bar s,\ 1-s,\ 1-\bar s\}
+\boxed{\;\{s,\ \bar s,\ 1-s,\ 1-\bar s\}\;}
 $$
 acting on the Riemann sphere, with fixed set the union of the critical line and the real line.
 
@@ -31,7 +31,7 @@ acting on the Riemann sphere, with fixed set the union of the critical line and 
 
 **Theorem.** Let $\Lambda_f$ satisfy the functional equation with real coefficients, $\Lambda_f(\kappa(s))=\epsilon\overline{\Lambda_f(s)}$, $|\epsilon|=1$. Then the multiset $Z$ of zeros of $\Lambda_f$ is invariant under $\kappa$ and under the conjugation,
 $$
-Z=\kappa(Z)=\overline Z,\qquad \operatorname{ord}_\rho\Lambda_f=\operatorname{ord}_{\kappa(\rho)}\Lambda_f=\operatorname{ord}_{\bar\rho}\Lambda_f ,
+\boxed{\;Z=\kappa(Z)=\overline Z,\qquad \operatorname{ord}_\rho\Lambda_f=\operatorname{ord}_{\kappa(\rho)}\Lambda_f=\operatorname{ord}_{\bar\rho}\Lambda_f\;} ,
 $$
 so the zeros other than the real ones occur in the quadruples $\rho,\bar\rho,1-\rho,1-\bar\rho$; a zero on the critical line occurs together with its conjugate, and a zero on the real axis occurs together with $1-\rho$.
 
@@ -59,7 +59,7 @@ the reflection $s\mapsto1-s$ preserves the strip and reverses the sign of the or
 
 **Theorem (Riemann–von Mangoldt).** For the completed zeta function,
 $$
-N(T)=\frac{T}{2\pi}\log\frac{T}{2\pi e}+O(\log T),
+\boxed{\;N(T)=\frac{T}{2\pi}\log\frac{T}{2\pi e}+O(\log T)\;},
 $$
 and the same formula with the parameters of the completion holds for a general $\Lambda_f$, the main term being $\frac{T}{\pi}\log\frac{TN^{1/d}}{2\pi e d}$ for degree $d$.
 

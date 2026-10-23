@@ -29,7 +29,7 @@ The set of such maps is written $\operatorname{Der}_R(A, M)$, and $\operatorname
 **Proposition.** For every $A$-module $M$ the set $\operatorname{Der}_R(A,M)$ is an $A$-module under $(a\delta)(x) = a\,\delta(x)$, and an $R$-submodule of $\operatorname{Hom}_R(A, M)$. For $M = A$ the commutator $[\delta, \delta'] = \delta\delta' - \delta'\delta$ is again a derivation, so $\operatorname{Der}_R(A)$ is a Lie $R$-algebra; the two structures satisfy
 
 $$
-[\delta, a\delta'] = \delta(a)\,\delta' + a\,[\delta, \delta'] , \qquad [a\delta, \delta'] = a\,[\delta,\delta'] - \delta'(a)\,\delta .
+\boxed{\;[\delta, a\delta'] = \delta(a)\,\delta' + a\,[\delta, \delta'] , \qquad [a\delta, \delta'] = a\,[\delta,\delta'] - \delta'(a)\,\delta\;} .
 $$
 
 *Proof.* Linearity in $\delta$ is clear, and $(a\delta)(xy) = a(\delta(x)y + x\delta(y)) = (a\delta(x))y + x(a\delta(y))$ uses the commutativity of $A$ to move $a$ past $y$. The commutator of two derivations is a derivation by *Derivations of a Ring*. For the first displayed identity, $(\delta a\delta' - a\delta'\delta)(x) = \delta(a\delta'(x)) - a\delta'(\delta(x)) = \delta(a)\delta'(x) + a\delta(\delta'(x)) - a\delta'(\delta(x))$, and rearranging gives the claim; the second is the same with the roles interchanged, or follows from the antisymmetry.
@@ -61,7 +61,7 @@ The map $d : A \to \Omega_{A/R}$, $a \mapsto da$, is the **universal derivation*
 **Theorem (universal property).** For every $A$-module $M$ and every derivation $\delta : A \to M$ there is a unique $A$-linear map $\varphi : \Omega_{A/R} \to M$ with $\delta = \varphi \circ d$. Hence
 
 $$
-\operatorname{Der}_R(A, M) \cong \operatorname{Hom}_A(\Omega_{A/R}, M)
+\boxed{\;\operatorname{Der}_R(A, M) \cong \operatorname{Hom}_A(\Omega_{A/R}, M)\;}
 $$
 
 naturally in $M$, and in particular $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A)$.
@@ -103,7 +103,7 @@ and the assignment is compatible with composition. If $A \to A'$ is a ring homom
 **Theorem.** Let $A \to B$ be a surjective $R$-algebra homomorphism with kernel $J$. Then there is an exact sequence of $B$-modules
 
 $$
-J/J^2 \longrightarrow \Omega_{A/R}\otimes_A B \longrightarrow \Omega_{B/R} \longrightarrow 0 ,
+\boxed{\;J/J^2 \longrightarrow \Omega_{A/R}\otimes_A B \longrightarrow \Omega_{B/R} \longrightarrow 0\;} ,
 $$
 
 in which the first map sends the class of $j$ to $dj\otimes1$.

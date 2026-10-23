@@ -32,7 +32,7 @@ $$
 **Theorem (the adjoint stays in the family).** The adjoint of a signed sandwich for the trace form is the signed sandwich
 
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha(b^{*})} ,
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha(b^{*})}\;} ,
 $$
 
 with the parameters replaced by the $\alpha$-twists of their adjoints; in particular the adjoint of a signed sandwich is a signed sandwich, and the family $\{\Theta^{\alpha}_{a,b}\}$ is **closed under the adjoint**.
@@ -50,7 +50,7 @@ and this is $\langle x,\Theta^{\alpha}_{\alpha(a^{*}),\alpha(b^{*})}y\rangle$ be
 **Corollary (the unsigned case and the composition).** For the identity grade involution, $(\Theta_{a,b})^{*} = \Theta_{a^{*},b^{*}}$, which is the adjoint of the two-sided multiplication of *The Adjoint of the Left Multiplication on an Ordered Algebra*; in general the adjoint is an **anti-homomorphism** on the family of the signed sandwiches,
 
 $$
-\bigl(\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{c,d}\bigr)^{*} = \bigl(\Theta^{\alpha}_{c,d}\bigr)^{*}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} ,
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{c,d}\bigr)^{*} = \bigl(\Theta^{\alpha}_{c,d}\bigr)^{*}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\;} ,
 $$
 
 as for every family of operators, and the composition law of the signed sandwich makes the adjoint of a product again a signed sandwich with the twisted parameters in the reverse order.
@@ -84,7 +84,7 @@ the two summands being self-adjoint and skew-adjoint respectively; the operator 
 **Theorem (the adjoint preserves the positivity of the signed sandwich).** The adjoint is an **order isomorphism** of the family of the signed sandwiches for the quadratic order: if the signed sandwich $\Theta^{\alpha}_{a,b}$ is positive, then its adjoint is positive,
 
 $$
-\Theta^{\alpha}_{a,b}\geq0 \implies \bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\geq0 ,
+\boxed{\;\Theta^{\alpha}_{a,b}\geq0 \implies \bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\geq0\;} ,
 $$
 
 and therefore if the grade involution is positive and the parameters $a,b$ are positive then the adjoint $\Theta^{\alpha}_{\alpha(a^{*}),\alpha(b^{*})}$ is positive.

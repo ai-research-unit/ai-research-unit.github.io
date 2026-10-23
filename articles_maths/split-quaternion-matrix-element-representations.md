@@ -36,8 +36,8 @@ so that on a general element
 $$
 \boxed{\;
 \mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = \begin{pmatrix} q_t - q_z & q_y - q_x \\ q_x + q_y & q_t + q_z \end{pmatrix}
-\;}
-$$.
+\;}.
+$$
 
 The defining representation is the model in which every statement of this article is computed.
 
@@ -103,8 +103,8 @@ $$
 $$
 \boxed{\;
 \det \mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}, \qquad \operatorname{tr} \mathsf{M}_2(\tilde q) = 2 \operatorname{Sc}(\tilde q)
-\;}
-$$.
+\;}.
+$$
 
 The determinant of the matrix model is the split-quaternion norm, a quadratic form of signature $(2,2)$, and the trace is twice the scalar part; the restriction of the trace to the vector subspace vanishes, so $\mathsf{M}_2(V)$ is the space of traceless matrices.
 

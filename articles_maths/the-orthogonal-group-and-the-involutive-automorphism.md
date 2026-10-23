@@ -46,7 +46,7 @@ $$
 is an involutive automorphism of $O(V,\mathfrak{Q})$ — the **involutive automorphism** of the pair — and it is a Cartan involution: its fixed subgroup is
 
 $$
-O(V,\mathfrak{Q})^{\theta} = \{g : gJ = Jg\} = O(V_+)\times O(V_-) = O(n)\times O(m),
+\boxed{\;O(V,\mathfrak{Q})^{\theta} = \{g : gJ = Jg\} = O(V_+)\times O(V_-) = O(n)\times O(m)\;},
 $$
 
 the metrically diagonal matrices, it is the stabiliser of the definite decomposition, and it is a maximal compact subgroup; the differential $d\theta$ is $+1$ on $\mathfrak{k} = \mathfrak{o}(n)\oplus\mathfrak{o}(m)$ and $-1$ on $\mathfrak{n}$, and $\theta$ is unique up to conjugacy.
@@ -60,7 +60,7 @@ the metrically diagonal matrices, it is the stabiliser of the definite decomposi
 **Proposition.** The fixed subgroup $K = O(n)\times O(m)$ is a maximal compact subgroup of $O(V,\mathfrak{Q})$, and the quotient $O(V,\mathfrak{Q})/K$ is connected when the identity components are used; the Cartan decomposition is
 
 $$
-\mathfrak{o}(n,m) = \mathfrak{k}\oplus\mathfrak{n}, \qquad \mathfrak{n} = \left\{\begin{pmatrix} 0 & X \\ X^{t} & 0\end{pmatrix} : X \in \mathbb{R}^{n\times m}\right\} \cong \mathbb{R}^{pq},
+\boxed{\;\mathfrak{o}(n,m) = \mathfrak{k}\oplus\mathfrak{n}, \qquad \mathfrak{n} = \left\{\begin{pmatrix} 0 & X \\ X^{t} & 0\end{pmatrix} : X \in \mathbb{R}^{n\times m}\right\} \cong \mathbb{R}^{pq}\;},
 $$
 
 with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{n}]\subseteq\mathfrak{n}$ and $[\mathfrak{n},\mathfrak{n}]\subseteq\mathfrak{k}$, so $\dim_{\mathbb{R}} O(n,m)/K = pq$.
@@ -84,7 +84,7 @@ with base point $o = eK$ and tangent space $T_oX = \mathfrak{n} \cong \mathbb{R}
 **Proposition.** The space $X$ is the manifold of $Q$-negative subspaces of dimension $m$,
 
 $$
-X \cong \{W \leq V : \dim W = m,\ Q|_W < 0\},
+\boxed{\;X \cong \{W \leq V : \dim W = m,\ Q|_W < 0\}\;},
 $$
 
 by $gK \mapsto gV_-$; it is a symmetric space of noncompact type, of dimension $pq$ and rank $\min(n,m)$, and the stabiliser of a negative subspace is a conjugate of $K$.

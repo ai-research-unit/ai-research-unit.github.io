@@ -25,7 +25,7 @@ For an irreducible polynomial, separability has a simple criterion in terms of t
 *Proof.* Over a splitting field $K$, write $f = \prod_i (x-\alpha_i)$. A repeated root $\alpha$ means that $(x-\alpha)^2$ divides $f$, so $f(\alpha) = 0$ and $f'(\alpha) = 0$; the linear factor $x-\alpha$ then divides both $f$ and $f'$ over $K$, and hence over $k$ because the gcd is defined over $k$ and is unchanged by field extension. Conversely, if a nonconstant $g$ divides both $f$ and $f'$, then a root of $g$ in a splitting field is a repeated root of $f$. This proves the equivalence of 1 and 2. The discriminant is
 
 $$
-\Delta(f) = \prod_{1 \le i < j \le n}(\alpha_j - \alpha_i)^2 = (-1)^{n(n-1)/2}\operatorname{Res}(f,f'),
+\boxed{\;\Delta(f) = \prod_{1 \le i < j \le n}(\alpha_j - \alpha_i)^2 = (-1)^{n(n-1)/2}\operatorname{Res}(f,f')\;},
 $$
 
 a symmetric polynomial in the roots, hence an element of $k$; it vanishes exactly when two roots coincide. This proves the equivalence of 1 and 3.
@@ -88,7 +88,7 @@ where the trace is that of the multiplication operator on $k[a]$.
 *Proof.* Over a splitting field, let $\alpha_1, \dots, \alpha_d$ be the roots of $m_a$ counted with multiplicity. The multiplication by $a$ on $k[a]$ has the companion matrix of $m_a$ as its matrix, and its eigenvalues are the $\alpha_i$. Hence $\operatorname{Tr}(a^k) = \sum_i \alpha_i^k$, and
 
 $$
-T_{ij} = \sum_{\ell=1}^{d} \alpha_\ell^{i+j} = (V V^{\mathsf T})_{ij},
+\boxed{\;T_{ij} = \sum_{\ell=1}^{d} \alpha_\ell^{i+j} = (V V^{\mathsf T})_{ij}\;},
 $$
 
 where $V_{i\ell} = \alpha_\ell^i$ is the Vandermonde matrix. Thus $\det T = (\det V)^2 = \Delta(m_a)$. The form is nondegenerate exactly when $\det T \neq 0$, which is exactly the separability of $m_a$.
@@ -140,7 +140,7 @@ even when the eigenvalues are repeated. What fails without separability is not t
 If $m_a$ is split and squarefree, then $e_i = 1$ for every $i$, the nilpotent parts vanish, and
 
 $$
-a = \sum_{i=1}^{r} \lambda_i \varepsilon_i, \qquad \varepsilon_i \varepsilon_j = \delta_{ij}\varepsilon_i, \quad \sum_i \varepsilon_i = 1 .
+\boxed{\;a = \sum_{i=1}^{r} \lambda_i \varepsilon_i, \qquad \varepsilon_i \varepsilon_j = \delta_{ij}\varepsilon_i, \quad \sum_i \varepsilon_i = 1\;} .
 $$
 
 This is the eigenvalue decomposition. The idempotents are the Lagrange idempotents of *The Lagrange–Sylvester Eigenprojector Formula*, and the algebra $k[a]$ is isomorphic to $k^r$. The condition is also equivalent to the diagonalisability of the left multiplication $L_a$ and of the right multiplication $R_a$ on $A$, as proved in *The Eigenvalue Decomposition of an Element*.

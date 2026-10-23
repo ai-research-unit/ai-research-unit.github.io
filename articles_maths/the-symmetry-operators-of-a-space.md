@@ -26,7 +26,7 @@ The article has five sections: the symmetry operators and the group they form; t
 **Definition.** Let $X$ carry a coarser structure and a finer structure, as a smooth manifold carries its smooth structure and its metric. The **structural symmetry group** $\operatorname{Aut}(X, \text{structure})$ is the group of bijections preserving the coarse structure, and the **metric symmetry group** $\operatorname{Isom}(X, g) \subseteq \operatorname{Aut}(X, \text{structure})$ is the subgroup preserving the finer one; the inclusion is the hierarchy
 
 $$
-\operatorname{Sym}(X) = \operatorname{Isom}(X, g) \;\subseteq\; \operatorname{Aut}(X, \text{structure}) \;\subseteq\; \operatorname{Sym}(X^{\mathrm{set}}) = \operatorname{Bij}(X),
+\boxed{\;\operatorname{Sym}(X) = \operatorname{Isom}(X, g) \;\subseteq\; \operatorname{Aut}(X, \text{structure}) \;\subseteq\; \operatorname{Sym}(X^{\mathrm{set}}) = \operatorname{Bij}(X)\;},
 $$
 
 and each inclusion can be strict. This is *Transformation Groups*, where the automorphism group of a structure is defined for a general structure; the metric case is the specialisation to the Riemannian or quadratic structure, and the properness of the inclusion is the difference between the differentiable and the isometric classification of a manifold.

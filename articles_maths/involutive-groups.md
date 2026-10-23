@@ -105,7 +105,7 @@ This set has four elements and $S_3$ has six, so it is not a subgroup; concretel
 **Theorem.** The inverted set $I(\sigma)$ is always a subgroup of $G$. In the notation of the bijection $\alpha = \sigma\iota$, it is the fixed subgroup of $\alpha$,
 
 $$
-I(\sigma) = G^{\sigma\iota} = G^\alpha ,
+\boxed{\;I(\sigma) = G^{\sigma\iota} = G^\alpha\;} ,
 $$
 
 and dually $I(\alpha) = G^{\sigma}$ for the same pair $(\sigma, \alpha)$.
@@ -196,7 +196,7 @@ each a product of disjoint transpositions and so of order two, whose product is 
 **Proposition.** Let $H$ be a $\sigma$-stable subgroup. Then $\sigma$ restricts to an involution of $H$, and $H \cap G^\sigma = H^\sigma$ and $H \cap I(\sigma) = I(\sigma|_H)$. If in addition $H \trianglelefteq G$, then $\sigma$ induces an involution $\bar\sigma$ of the quotient $G/H$, and
 
 $$
-\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma),
+\boxed{\;\pi(G^\sigma) \subseteq (G/H)^{\bar\sigma}, \qquad \pi(I(\sigma)) \subseteq I(\bar\sigma)\;},
 $$
 
 where $\pi : G \to G/H$ is the quotient map. Both inclusions can be strict.

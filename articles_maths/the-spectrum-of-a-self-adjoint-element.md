@@ -14,7 +14,7 @@ Throughout, $A$ is a unital $\mathrm{C}^*$-algebra over $\mathbb{C}$ with involu
 **Theorem (the spectrum of a self-adjoint element is real).** If $a^* = a$ then $\sigma(a) \subseteq \mathbb{R}$, and for $\lambda \notin \mathbb{R}$,
 
 $$
-\lVert (a-\lambda)^{-1}\rVert \leq \frac{1}{\lvert\operatorname{Im}\lambda\rvert} .
+\boxed{\;\lVert (a-\lambda)^{-1}\rVert \leq \frac{1}{\lvert\operatorname{Im}\lambda\rvert}\;} .
 $$
 
 **Proof.** Write $\lambda = s + it$ with $t \neq 0$ and $c = a - s$, a self-adjoint element, so that $a - \lambda = c - it$. By the $\mathrm{C}^*$-identity and $(c-it)^*(c-it) = c^2 + t^2$,
@@ -46,7 +46,7 @@ which is commutative because $a$ commutes with $a^* = a$.
 **Theorem (the spectral theorem for a self-adjoint element).** Let $a$ be self-adjoint. The Gelfand transform is an isometric $*$-isomorphism
 
 $$
-C^*(a,1) \longrightarrow C(\sigma(a)) , \qquad a \mapsto (\lambda \mapsto \lambda) ,
+\boxed{\;C^*(a,1) \longrightarrow C(\sigma(a)) , \qquad a \mapsto (\lambda \mapsto \lambda)\;} ,
 $$
 
 so $C^*(a,1)$ is the algebra of continuous functions on the compact real set $\sigma(a)$, and $a$ corresponds to the identity function. In particular $\sigma(a)$ is the compact real set on which the algebra is represented, and the spectrum is recovered from the algebra.
@@ -56,7 +56,7 @@ so $C^*(a,1)$ is the algebra of continuous functions on the compact real set $\s
 **Corollary (the spectral mapping theorem, self-adjoint case).** For a self-adjoint $a$ and a continuous $f : \sigma(a) \to \mathbb{C}$, there is an element $f(a) \in C^*(a,1)$ with
 
 $$
-\sigma(f(a)) = f(\sigma(a)) ,
+\boxed{\;\sigma(f(a)) = f(\sigma(a))\;} ,
 $$
 
 the assignment $f \mapsto f(a)$ is an isometric $*$-homomorphism from $C(\sigma(a))$ onto $C^*(a,1)$, and it is the **continuous functional calculus**. The calculus is developed in *The Functional Calculus of a Self-Adjoint Element*.

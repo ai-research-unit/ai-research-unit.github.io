@@ -17,7 +17,7 @@ Nothing analytic and nothing geometric is used. The circle and the sphere occur 
 **Theorem (trivializing neighbourhood).** Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $x \in X$. Then there is an open neighbourhood $\Omega$ of $x$ with
 
 $$
-\Omega \cap \sigma(\Omega) = \emptyset .
+\boxed{\;\Omega \cap \sigma(\Omega) = \emptyset\;} .
 $$
 
 Moreover $\Omega$ can be chosen so that the image $\pi(\Omega)$ is open in $X/\sigma$ and $\pi^{-1}(\pi(\Omega)) = \Omega \cup \sigma(\Omega)$ is the disjoint union of two homeomorphic copies of $\Omega$.
@@ -45,7 +45,7 @@ The neighbourhood is the two-fold analogue of the disjoint neighbourhoods of the
 **Definition.** A continuous surjection $p : E \to B$ is a **covering map** when every point of $B$ has an open neighbourhood $V$ that is **evenly covered**: there is a discrete space $F$ and a homeomorphism
 
 $$
-\varphi : p^{-1}(V) \longrightarrow V \times F
+\boxed{\;\varphi : p^{-1}(V) \longrightarrow V \times F\;}
 $$
 
 over $V$, that is, $\mathrm{pr}_{V} \circ \varphi = p$ on $p^{-1}(V)$. The space $F$ is the **fibre**, and the covering is **$n$-fold** when $F$ has $n$ points. A **two-fold covering** is a covering with two points in the fibre.
@@ -57,7 +57,7 @@ For a two-fold covering the preimage of an evenly covered $V$ is the disjoint un
 **Theorem.** Let $\sigma$ be a free continuous involution of a Hausdorff space $X$. Then the orbit map
 
 $$
-\pi : X \longrightarrow X/\sigma
+\boxed{\;\pi : X \longrightarrow X/\sigma\;}
 $$
 
 is a two-fold covering. The fibre over the orbit of $x$ is the two-point set $\{x, \sigma(x)\}$, and the trivializing neighbourhood of the previous section provides the evenly covered neighbourhood of its image.

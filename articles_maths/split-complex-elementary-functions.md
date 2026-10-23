@@ -98,7 +98,7 @@ $$
 This is the **split Euler formula**, and it is the bridge between the exponential and the hyperbolic functions. In particular, for $q'=\theta$,
 
 $$
-\exp(j\theta)=\cosh\theta+j\sinh\theta.
+\boxed{\; \exp(j\theta)=\cosh\theta+j\sinh\theta \;}.
 $$
 
 Both eigenvalues of $\exp Q$ are positive, $\exp(\lambda_\pm)>0$, so the image lies in the set $\{\lambda_+>0,\ \lambda_->0\}$, the future cone $F=\{Q:q>\lvert q'\rvert\}$.
@@ -174,8 +174,8 @@ $$
 and §*The Scalar Part* gives $q_{\log}$. The logarithm is
 
 $$
-\log Q=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12 j\ln\frac{\lambda_+}{\lambda_-}
-=\frac{1}{2}\ln(q^2-q'^2)+\frac{j}{2}\ln\left(\frac{q+q'}{q-q'}\right),
+\boxed{\; \log Q=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12 j\ln\frac{\lambda_+}{\lambda_-}
+=\frac{1}{2}\ln(q^2-q'^2)+\frac{j}{2}\ln\left(\frac{q+q'}{q-q'}\right) \;},
 $$
 
 and in the idempotent basis it is the single line

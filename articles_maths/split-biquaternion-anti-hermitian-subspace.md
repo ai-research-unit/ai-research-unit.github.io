@@ -67,7 +67,9 @@ So the symmetrized product of two anti-Hermitian elements is Hermitian, the mirr
 **Proposition.** Under the commutator, $\mathbb{M}_-$ is a **Lie subalgebra** of $\mathbb{H}_{\mathbb{D}}$:
 
 $$
-[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-.
+\boxed{\;
+[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-
+\;}.
 $$
 
 **Proof.** With the same expansion, the commutator retains only the cross term $2\vec q_1\times\vec q_2$, which is a pure real quaternion; this lies in $\mathbb{M}_-$ because its scalar part is $0$ and its vector part is real. The Jacobi identity is inherited from the associativity of the product.
@@ -109,7 +111,9 @@ a negative real scalar. The square of $je_t$ is $e_t$, so $je_t$ itself is an in
 **Theorem.** On the anti-Hermitian subspace the split-biquaternion norm is the **positive definite** real quadratic form
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = r_0^2 + q_x^2 + q_y^2 + q_z^2, \qquad \tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z,
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = r_0^2 + q_x^2 + q_y^2 + q_z^2, \qquad \tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z
+\;},
 $$
 
 of signature $(4,0)$.
@@ -147,7 +151,9 @@ As on $\mathbb{M}_+$, the isotropic cone of the Hermitian form consists of units
 **Theorem.** The roots of $-1$ in $\mathbb{M}_-$ are the unit pure real quaternions,
 
 $$
-\xi = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_x^2 + q_y^2 + q_z^2 = 1,
+\boxed{\;
+\xi = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_x^2 + q_y^2 + q_z^2 = 1
+\;},
 $$
 
 which form a two-sphere $S^2$.

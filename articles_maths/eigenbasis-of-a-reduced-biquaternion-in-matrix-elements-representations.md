@@ -72,9 +72,11 @@ whose image is the two-dimensional commutative subalgebra of matrices of the for
 
 **Invariants and inverse.** The trace and the determinant are
 $$
+\boxed{\;
 \operatorname{tr}\varphi(\breve X)=2Q_\blacktriangle,\qquad
 \det\varphi(\breve X)=Q_\blacktriangle^2-Q_\blacktriangledown^2
-=\langle\breve X\rangle_{\mathrm{ts}}=Q_+Q_-.
+=\langle\breve X\rangle_{\mathrm{ts}}=Q_+Q_-
+\;}.
 $$
 When $Q_+Q_-\neq0$,
 $$
@@ -131,8 +133,10 @@ $$
 $$
 the matrix is
 $$
+\boxed{\;
 \varphi^{\Pi}(\breve X)=
-\begin{pmatrix}\xi_+&0\\0&\xi_-\end{pmatrix}.
+\begin{pmatrix}\xi_+&0\\0&\xi_-\end{pmatrix}
+\;}.
 $$
 For $\breve Q$ itself,
 $$
@@ -279,27 +283,27 @@ S_-=\mathbb{B}_{\mathrm r}\Pi_-=\mathbb{C}\Pi_-,
 $$
 each one-dimensional over $\mathbb{C}$, and $\mathbb{B}_{\mathrm r}=S_+\oplus S_-$. In the eigenbasis model they are the two columns:
 $$
-S_+\longleftrightarrow\left\{\begin{pmatrix}\alpha&0\\0&0\end{pmatrix}:\alpha\in\mathbb{C}\right\},
+S_+\longleftrightarrow\left\{\begin{pmatrix}A_1&0\\0&0\end{pmatrix}:A_1\in\mathbb{C}\right\},
 \qquad
-S_-\longleftrightarrow\left\{\begin{pmatrix}0&0\\0&\beta\end{pmatrix}:\beta\in\mathbb{C}\right\}.
+S_-\longleftrightarrow\left\{\begin{pmatrix}0&0\\0&A_2\end{pmatrix}:A_2\in\mathbb{C}\right\}.
 $$
-A spinor of first chirality is $\xi_+=\alpha\Pi_+$ and is represented by the first column $(\alpha,0)^{\mathsf T}$; a spinor of second chirality is $\xi_-=\beta\Pi_-$ and is represented by the second column $(0,\beta)^{\mathsf T}$. The general element is the sum of one spinor of each chirality, and its two coordinates are the two diagonal entries.
+A spinor of first chirality is $\xi_+=A_1\Pi_+$ and is represented by the first column $(A_1,0)^{\mathsf T}$; a spinor of second chirality is $\xi_-=A_2\Pi_-$ and is represented by the second column $(0,A_2)^{\mathsf T}$. The general element is the sum of one spinor of each chirality, and its two coordinates are the two diagonal entries.
 
 Under multiplication by $\breve Q$ the two columns are scaled independently:
 $$
 \breve Q\xi_+ = Q_+\xi_+
 \longleftrightarrow
 \begin{pmatrix}Q_+&0\\0&0\end{pmatrix}
-\begin{pmatrix}\alpha\\0\end{pmatrix}
+\begin{pmatrix}A_1\\0\end{pmatrix}
 =
-\begin{pmatrix}Q_+\alpha\\0\end{pmatrix},
+\begin{pmatrix}Q_+A_1\\0\end{pmatrix},
 \qquad
 \breve Q\xi_- = Q_-\xi_-
 \longleftrightarrow
 \begin{pmatrix}0&0\\0&Q_-\end{pmatrix}
-\begin{pmatrix}0\\\beta\end{pmatrix}
+\begin{pmatrix}0\\A_2\end{pmatrix}
 =
-\begin{pmatrix}0\\Q_-\beta\end{pmatrix}.
+\begin{pmatrix}0\\Q_-A_2\end{pmatrix}.
 $$
 The same diagonal matrix $\operatorname{diag}(Q_+,Q_-)$ acts on both columns; on the first column only the first entry survives, on the second only the second. This is the precise sense in which the two spinor spaces are the two eigenspaces.
 
@@ -336,8 +340,10 @@ A_-=\begin{pmatrix}q_\blacktriangledown&-q'_\blacktriangledown\\ q'_\blacktriang
 $$
 The matrix is the realification of the complex $2\times2$ matrix $\varphi(\breve X)$: each complex entry becomes its real $2\times2$ block, and the two diagonal blocks are $A_+$ and the two off-diagonal blocks are $A_-$. It is an injective homomorphism of $\mathbb{R}$-algebras, and
 $$
+\boxed{\;
 \operatorname{tr}L_{\breve X}=4q_\blacktriangle,\qquad
-\det L_{\breve X}=\lvert Q_+Q_-\rvert^2.
+\det L_{\breve X}=\lvert Q_+Q_-\rvert^2
+\;}.
 $$
 The determinant is the squared modulus of the complex determinant, which is the general rule for the realification.
 

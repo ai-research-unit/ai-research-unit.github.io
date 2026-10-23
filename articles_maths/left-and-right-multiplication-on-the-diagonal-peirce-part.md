@@ -17,7 +17,7 @@ $$
 and it is exactly the centraliser of $e$: the elements on which $L_e$ and $R_e$ agree. The **off-diagonal part** is $N=A_{01}\oplus A_{10}$, and the commutator $L_e-R_e=\operatorname{ad}_e$ vanishes on $D$, acts as $+1$ on $A_{01}$ and as $-1$ on $A_{10}$, and satisfies
 
 $$
-(L_e-R_e)^2=P_N,\qquad P_D=I-L_e-R_e+2L_eR_e,
+\boxed{\;(L_e-R_e)^2=P_N,\qquad P_D=I-L_e-R_e+2L_eR_e\;},
 $$
 
 where $P_D$ and $P_N$ are the projections onto $D$ and $N$. The article proves these identities, computes the restrictions of $L_d$ and $R_d$ to the diagonal part for $d\in D$, and reads the diagonal part as the algebra $eAe\times fAf$ acting on itself by left and right multiplication.
@@ -67,8 +67,8 @@ They are the regular representations of $A$ on itself.
 **(d)** The images and kernels are
 
 $$
-\operatorname{im}L_e=eA, \quad \ker L_e=fA, \quad
-\operatorname{im}R_e=Ae, \quad \ker R_e=Af.
+\boxed{\;\operatorname{im}L_e=eA, \quad \ker L_e=fA, \quad
+\operatorname{im}R_e=Ae, \quad \ker R_e=Af\;}.
 $$
 
 **(e)** The image of $P_e=L_eR_e$ is the corner $eAe$, and its kernel is $eAf\oplus fAe\oplus fAf$.
@@ -129,8 +129,8 @@ The diagonal part is the set of elements whose Peirce decomposition has no mixed
 **(b)** Relative to the ordered corners $(A_{00},A_{01},A_{10},A_{11})$, the block matrices are
 
 $$
-L_d=\operatorname{diag}(L_{d_0},L_{d_0},L_{d_1},L_{d_1}), \qquad
-R_d=\operatorname{diag}(R_{d_0},R_{d_1},R_{d_0},R_{d_1}),
+\boxed{\;L_d=\operatorname{diag}(L_{d_0},L_{d_0},L_{d_1},L_{d_1}), \qquad
+R_d=\operatorname{diag}(R_{d_0},R_{d_1},R_{d_0},R_{d_1})\;},
 $$
 
 where each entry is the left or right multiplication of the corresponding corner algebra.

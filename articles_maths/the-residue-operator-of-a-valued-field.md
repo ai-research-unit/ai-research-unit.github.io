@@ -14,7 +14,7 @@ Throughout, $F$ is a field with a non-Archimedean absolute value $\lvert \cdot \
 **Definition.** The **residue map** of the valued field $(F, \lvert \cdot \rvert)$ is the quotient map
 
 $$
-\mathrm{res} : \mathcal{O} \longrightarrow k = \mathcal{O}/\mathrm{M}, \qquad \mathrm{res}(x) = x + \mathrm{M} .
+\boxed{\;\mathrm{res} : \mathcal{O} \longrightarrow k = \mathcal{O}/\mathrm{M}, \qquad \mathrm{res}(x) = x + \mathrm{M}\;} .
 $$
 
 The element $\mathrm{res}(x)$ is the **residue** of $x$; the operator $\mathrm{res}$ is also called the **reduction** modulo $\mathrm{M}$, and written $x \mapsto \bar x$.
@@ -50,7 +50,7 @@ The element $\mathrm{res}(x)$ is the **residue** of $x$; the operator $\mathrm{r
 **Theorem (the residue operator of the completion).** Let $\widehat{F}$ be the completion of $F$. Then $\widehat{\mathcal{O}}$ is the valuation ring of $\widehat{F}$ and the natural map
 
 $$
-\mathcal{O}/\mathrm{M} \longrightarrow \widehat{\mathcal{O}}/\widehat{\mathrm{M}}, \qquad x + \mathrm{M} \longmapsto \iota(x) + \widehat{\mathrm{M}} ,
+\boxed{\;\mathcal{O}/\mathrm{M} \longrightarrow \widehat{\mathcal{O}}/\widehat{\mathrm{M}}, \qquad x + \mathrm{M} \longmapsto \iota(x) + \widehat{\mathrm{M}}\;} ,
 $$
 
 is an isomorphism; hence the residue map of the completion has the same residue field as the residue map of $F$, and the two operators are related by $\mathrm{res}_{\widehat{F}} \circ \iota = \mathrm{res}_F$ on $\mathcal{O}$.
@@ -66,7 +66,7 @@ is an isomorphism; hence the residue map of the completion has the same residue 
 **Proposition (the residue is multiplicative on the units).** The restriction $\mathrm{res} : \mathcal{O}^\times \to k^\times$ is a surjective group homomorphism with kernel the **principal units** $U^1 = 1 + \mathrm{M}$, so that
 
 $$
-\mathcal{O}^\times / (1 + \mathrm{M}) \cong k^\times .
+\boxed{\;\mathcal{O}^\times / (1 + \mathrm{M}) \cong k^\times\;} .
 $$
 
 **Proof.** A unit of $\mathcal{O}$ has nonzero residue and a nonzero residue has a unit preimage, because reduction is surjective and the units of a local ring are the elements of nonzero residue; the kernel is the set of units congruent to $1$ modulo $\mathrm{M}$, namely $1 + \mathrm{M}$. The first isomorphism theorem for groups gives the isomorphism.

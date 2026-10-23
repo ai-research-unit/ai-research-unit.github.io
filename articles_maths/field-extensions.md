@@ -159,7 +159,7 @@ Thus the number of conjugates of $\alpha$ equals $\deg m_\alpha$ exactly when $m
 **Theorem (tower law).** Let $F \subseteq E \subseteq K$ be fields. Then
 
 $$
-[K:F] = [K:E]\,[E:F],
+\boxed{\;[K:F] = [K:E]\,[E:F]\;},
 $$
 
 with the convention that the product is infinite if either factor is infinite.
@@ -215,7 +215,7 @@ where $e_i e_{i'}$ is an $F$-linear combination of the $e$'s and $l_j l_{j'}$ is
 **Theorem.** Let $K = F(\alpha_1, \ldots, \alpha_n)$ and let $K_i = F(\alpha_1, \ldots, \alpha_i)$, with $K_0 = F$. If every $\alpha_i$ is algebraic over $K_{i-1}$, then
 
 $$
-[K:F] = \prod_{i=1}^{n} [K_i : K_{i-1}],
+\boxed{\;[K:F] = \prod_{i=1}^{n} [K_i : K_{i-1}]\;},
 $$
 
 and each factor is the degree of the minimal polynomial of $\alpha_i$ over $K_{i-1}$.
@@ -231,7 +231,7 @@ and each factor is the degree of the minimal polynomial of $\alpha_i$ over $K_{i
 **Theorem.** Let $K/F$ be an extension. The set
 
 $$
-E = \{\alpha \in K : \alpha \text{ is algebraic over } F\}
+\boxed{\;E = \{\alpha \in K : \alpha \text{ is algebraic over } F\}\;}
 $$
 
 is a subfield of $K$, called the **algebraic closure of $F$ in $K$**.

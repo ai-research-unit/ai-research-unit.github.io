@@ -16,7 +16,7 @@ Throughout, $A$ is a unital commutative-compatible associative Fréchet algebra 
 **Proposition (continuity of the involution and the seminorms).** The involution of an involutive Fréchet algebra is continuous if and only if for every $n$
 
 $$
-p_n(a^*) \leq C_n\,p_m(a) \qquad (a \in A)
+\boxed{\;p_n(a^*) \leq C_n\,p_m(a) \qquad (a \in A)\;}
 $$
 
 for some $m = m(n)$ and some constant $C_n$. In that case the involution is a homeomorphism, it is an isomorphism of the topological algebra onto its topological opposite, and it descends to each quotient $A_n$ and to the limit.
@@ -30,7 +30,7 @@ for some $m = m(n)$ and some constant $C_n$. In that case the involution is a ho
 **Theorem (the projective limit description).** Let $A$ be an involutive Fréchet algebra. Then each quotient $A_n = A/\ker p_n$ is a normed (and, completed, Banach) $*$-algebra, and
 
 $$
-A \;\cong\; \varprojlim_n A_n
+\boxed{\;A \;\cong\; \varprojlim_n A_n\;}
 $$
 
 is the projective limit of the Banach $*$-algebras $A_n$ along the continuous unital $*$-homomorphisms $A_{n} \to A_{m}$ for $m \leq n$. Conversely the projective limit of a countable system of Banach $*$-algebras with continuous connecting $*$-homomorphisms is an involutive Fréchet algebra.
@@ -40,7 +40,7 @@ is the projective limit of the Banach $*$-algebras $A_n$ along the continuous un
 **Theorem (the m-convex case and the spectrum).** If the seminorms $p_n$ are submultiplicative and the algebra is **m-convex**, then $A$ is a projective limit of Banach algebras and the spectrum of an element is the set of $\lambda$ with $a - \lambda$ non-invertible; for each $n$ the spectrum of the image $\pi_n(a)$ in $A_n$ contains $\sigma(a)$, and
 
 $$
-\sigma(a) = \bigcup_n \sigma_{A_n}\bigl(\pi_n(a)\bigr) ,
+\boxed{\;\sigma(a) = \bigcup_n \sigma_{A_n}\bigl(\pi_n(a)\bigr)\;} ,
 $$
 
 a compact subset of $\mathbb{C}$. The involution moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$, and the Hermitian elements are those with real spectrum in the $A_n$.

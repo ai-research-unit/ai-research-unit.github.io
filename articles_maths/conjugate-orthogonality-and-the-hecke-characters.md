@@ -17,7 +17,7 @@ equivalently a continuous homomorphism $\chi:I_K\to\mathbb{T}$ trivial on $K^\ti
 
 **Theorem.** The Hecke characters of $K$ form a group under pointwise multiplication, equal to the Pontryagin dual of the compact group $C_K^0$ of idèle classes of norm one times a discrete free part; each character factors as
 $$
-\chi=\prod_{v}\chi_v,
+\boxed{\;\chi=\prod_{v}\chi_v\;},
 $$
 a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of which are unramified, and a character is **unramified** at $v$ if $\chi_v$ is trivial on the units $\mathcal{O}_v^\times$.
 
@@ -37,7 +37,7 @@ a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of whi
 
 **Theorem (orthogonality).** Let $G$ be a compact abelian group with normalised Haar measure and dual $\widehat G$. Then
 $$
-\int_G\chi(g)\overline{\psi(g)}\,dg=\delta_{\chi\psi},\qquad \sum_{\chi\in\widehat G}\chi(g)\overline{\chi(h)}=\delta_{gh},
+\boxed{\;\int_G\chi(g)\overline{\psi(g)}\,dg=\delta_{\chi\psi},\qquad \sum_{\chi\in\widehat G}\chi(g)\overline{\chi(h)}=\delta_{gh}\;},
 $$
 where the second identity holds in the appropriate sense for the discrete dual and is the **second orthogonality** relation.
 
@@ -60,7 +60,7 @@ $$
 
 **Theorem (conductor-discriminant formula).** For an abelian extension $L/K$ with Galois group $\operatorname{Gal}(L/K)$ and group of characters $\widehat G$,
 $$
-\mathfrak{d}_{L/K}=\prod_{\chi\in\widehat G}\mathfrak{f}(\chi),\qquad \operatorname{disc}(L/K)=\prod_{\chi}\operatorname{disc}(\chi),
+\boxed{\;\mathfrak{d}_{L/K}=\prod_{\chi\in\widehat G}\mathfrak{f}(\chi),\qquad \operatorname{disc}(L/K)=\prod_{\chi}\operatorname{disc}(\chi)\;},
 $$
 the discriminant of the extension being the product of the conductors of its characters.
 

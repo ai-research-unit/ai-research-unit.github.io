@@ -14,7 +14,7 @@ Throughout, $H$ is a complex Hilbert space, $B(H)$ the algebra of bounded operat
 **Definition.** For $A \subseteq B(H)$ the **commutant** is
 
 $$
-A' = \{T \in B(H) : TS = ST \text{ for every } S \in A\} ,
+\boxed{\;A' = \{T \in B(H) : TS = ST \text{ for every } S \in A\}\;} ,
 $$
 
 and the **bicommutant** is $A'' = (A')'$.
@@ -26,7 +26,7 @@ and the **bicommutant** is $A'' = (A')'$.
 **Theorem (the double commutant theorem).** Let $A$ be a unital $*$-subalgebra of $B(H)$. Then
 
 $$
-A'' = \overline{A}^{\,\mathrm{weak}} = \overline{A}^{\,\mathrm{strong}} ,
+\boxed{\;A'' = \overline{A}^{\,\mathrm{weak}} = \overline{A}^{\,\mathrm{strong}}\;} ,
 $$
 
 the bicommutant is the weak closure and the strong closure of $A$. Hence $A$ is a von Neumann algebra if and only if $A = A''$.

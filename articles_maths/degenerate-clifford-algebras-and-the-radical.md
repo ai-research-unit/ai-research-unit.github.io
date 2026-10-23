@@ -62,7 +62,7 @@ where $0$ denotes the zero form on the radical. The second summand is the zero f
 **Theorem.** With $W$ a complement of $\operatorname{rad}(q)$, there is an isomorphism of $\mathbb{Z}/2$-graded algebras
 
 $$
-\mathrm{Cl}(V, \mathfrak{Q}) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \Lambda(\operatorname{rad}(q)),
+\boxed{\;\mathrm{Cl}(V, \mathfrak{Q}) \cong \mathrm{Cl}(W, \bar{q}) \,\hat{\otimes}\, \Lambda(\operatorname{rad}(q))\;},
 $$
 
 where $\Lambda(\operatorname{rad}(q))$ is the exterior algebra on the radical and $\hat\otimes$ is the graded tensor product of *Clifford Algebras*.
@@ -112,7 +112,7 @@ Every element of $\bigoplus_{k \geq 1}\Lambda^k(\operatorname{rad}(q))$ is nilpo
 **Theorem.** Let $V$ be free of rank $n$ and $r_0 = \operatorname{rank}\operatorname{rad}(q)$. Then $\mathrm{Cl}(V, \mathfrak{Q})$ is free of rank
 
 $$
-\operatorname{rank}\mathrm{Cl}(V, \mathfrak{Q}) = 2^{n - r_0} \cdot 2^{r_0} = 2^n.
+\boxed{\;\operatorname{rank}\mathrm{Cl}(V, \mathfrak{Q}) = 2^{n - r_0} \cdot 2^{r_0} = 2^n\;}.
 $$
 
 **Pro.** The graded tensor product of two free modules of ranks $2^{n - r_0}$ and $2^{r_0}$ is free of rank $2^{n - r_0} \cdot 2^{r_0} = 2^n$. The rank of the non-degenerate factor is the dimension count.
@@ -124,7 +124,7 @@ So the presence of a radical changes the structure but not the rank: it replaces
 **Theorem.** The image of $\operatorname{rad}(q)$ generates a two-sided ideal
 
 $$
-\mathrm{N} = \operatorname{rad}(q)\cdot \mathrm{Cl}(V, \mathfrak{Q}) = \mathrm{Cl}(V, \mathfrak{Q})\cdot \operatorname{rad}(q),
+\boxed{\;\mathrm{N} = \operatorname{rad}(q)\cdot \mathrm{Cl}(V, \mathfrak{Q}) = \mathrm{Cl}(V, \mathfrak{Q})\cdot \operatorname{rad}(q)\;},
 $$
 
 which under the decomposition is $\mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{k\geq 1}\Lambda^k(\operatorname{rad}(q))$. The ideal $\mathrm{N}$ is nilpotent, and the quotient $\mathrm{Cl}(V, \mathfrak{Q})/\mathrm{N}$ is $\mathrm{Cl}(W, \bar{q})$. For a field $F$ of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical of $\mathrm{Cl}(V, \mathfrak{Q})$.

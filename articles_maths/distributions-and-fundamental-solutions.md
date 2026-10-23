@@ -88,7 +88,7 @@ a distribution of order $1$; the limit exists because the odd kernel annihilates
 **Theorem (structure of compactly supported distributions).** Every $w \in \mathcal E'(\Omega)$ of order at most $N$ is a finite sum
 
 $$
-w=\sum_{|\alpha|\le N}(-1)^{|\alpha|}\partial^\alpha\mu_\alpha
+\boxed{\;w=\sum_{|\alpha|\le N}(-1)^{|\alpha|}\partial^\alpha\mu_\alpha\;}
 $$
 
 of derivatives of complex measures $\mu_\alpha$ of compact support; if $w$ is real and $N=0$ then the representing measure is unique and $w$ is a signed measure, and a distribution of order $0$ that is positive, meaning $\langle w,\varphi\rangle\ge0$ for $\varphi\ge0$, is a positive measure on $\Omega$.
@@ -158,7 +158,7 @@ $$
 **Theorem.** $\mathcal F$ maps $\mathcal S(\mathbb{R}^n)$ isomorphically onto itself, with $\mathcal F^{-1}$ the inverse, $\|\mathcal F f\|_2=(2\pi)^{n/2}\|f\|_2$, and the identities
 
 $$
-\widehat{\partial/\partial x_j\,f}(\xi)=i\xi_j(\mathcal F f)(\xi), \qquad \widehat{x_jf}(\xi)=i\partial/\partial x_j(\mathcal F f)(\xi), \qquad \widehat{(f*g)}=\mathcal F f\mathcal F g .
+\boxed{\;\widehat{\partial/\partial x_j\,f}(\xi)=i\xi_j(\mathcal F f)(\xi), \qquad \widehat{x_jf}(\xi)=i\partial/\partial x_j(\mathcal F f)(\xi), \qquad \widehat{(f*g)}=\mathcal F f\mathcal F g\;} .
 $$
 
 *Proof.* These are the standard properties: differentiation under the integral sign for the first, integration by parts for the second and the convolution theorem by Fubini; inversion follows from the Fourier inversion theorem, and the $L^2$ identity is Plancherel's theorem. Their proofs, with the normalisation used here, belong to *Fourier Analysis on Euclidean Spaces*.
@@ -282,7 +282,7 @@ satisfies $(\partial/\partial t-\Delta)E=\delta$; it is smooth away from the ori
 **Theorem (parametrix and elliptic regularity).** Let $P$ be elliptic of order $m$ with coefficients in $C^\infty(\Omega)$. Then $P$ has a properly supported parametrix $E$ on every compactly contained open subset. Consequently, for $w \in \mathcal D'(\Omega)$ and $s \in \mathbb{R}$,
 
 $$
-Pw \in H^s_{\mathrm{loc}}(\Omega) \implies w \in H^{s+m}_{\mathrm{loc}}(\Omega),
+\boxed{\;Pw \in H^s_{\mathrm{loc}}(\Omega) \implies w \in H^{s+m}_{\mathrm{loc}}(\Omega)\;},
 $$
 
 and in particular $Pw \in C^\infty(\Omega)$ implies $w \in C^\infty(\Omega)$: an elliptic operator does not create singularities, and it removes them.

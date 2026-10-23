@@ -49,7 +49,7 @@ $$
 
 **Theorem (the binomial expansion of the iterated difference).** For every $m\geq1$,
 $$
-(\Delta^ma)_n=\sum_{j=0}^m(-1)^{m-j}\binom mj a_{n+j},
+\boxed{\;(\Delta^ma)_n=\sum_{j=0}^m(-1)^{m-j}\binom mj a_{n+j}\;},
 $$
 and the same with $a(x+jh)$ and $\Delta_h$ in place of $a_{n+j}$ and $\Delta$.
 
@@ -110,7 +110,7 @@ so that $\Sigma a$ is the partial-sum sequence vanishing at $0$.
 **Theorem (the fundamental theorem of finite differences).** $\Sigma$ is a right inverse of $\Delta$ and
 inverts it up to the constants:
 $$
-\Delta\Sigma a=a,\qquad \Sigma\Delta a=a-a_0 .
+\boxed{\;\Delta\Sigma a=a,\qquad \Sigma\Delta a=a-a_0\;} .
 $$
 More generally the solutions of $\Delta u=a$ are $u=\Sigma a+c$ with $c$ constant, and the solutions of the
 homogeneous equation $\Delta u=0$ are the constant sequences.
@@ -193,7 +193,7 @@ formula with the remainder controlled by the growth of the function.
 $\lVert\Delta\rVert=2$, and under the Fourier series $\mathcal F a(\theta)=\sum_na_n\exp(-2\pi in\theta)$ it becomes
 multiplication by $\exp(2\pi i\theta)-1$:
 $$
-\widehat{\Delta a}(\theta)=(\exp(2\pi i\theta)-1)\,\mathcal F a(\theta).
+\boxed{\;\widehat{\Delta a}(\theta)=(\exp(2\pi i\theta)-1)\,\mathcal F a(\theta)\;}.
 $$
 Its spectrum is the circle $\{\exp(2\pi i\theta)-1:\theta\in\mathbb T\}$, the circle of centre $-1$ and
 radius $1$, and $\Delta$ has no eigenvalues on $\ell^2(\mathbb Z)$.

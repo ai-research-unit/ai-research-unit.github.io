@@ -24,7 +24,7 @@ and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **
 **Theorem.** Every reflection is self-adjoint for the standard form:
 
 $$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{a,a^{-1}} .
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{a,a^{-1}}\;} .
 $$
 
 **Proof.** The general formula gives $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$. Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1})=\alpha(a)^{-1}=a$; the adjoint is therefore $\Sigma^{\alpha}_{a,a^{-1}}$.
@@ -48,7 +48,7 @@ $$
 **Theorem (failure of self-adjointness).** There exist Clifford algebras and units $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint. Concretely, in the Euclidean Clifford algebra $\mathrm{Cl}_4$ with $e_1^2=e_2^2=e_3^2=e_4^2=-1$ and the standard form, the even element $a=1+e_1e_2$ is a unit, its grade-twisted product is $\alpha(a)a=a^{2}=2e_1e_2$, which is not central, and the conjugation by $a$ has adjoint the conjugation by $a^{-1}$:
 
 $$
-\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}} , \qquad \bigl(T_{a,a^{-1}}\bigr)^{*}=T_{a^{-1},a}\neq T_{a,a^{-1}} .
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}} , \qquad \bigl(T_{a,a^{-1}}\bigr)^{*}=T_{a^{-1},a}\neq T_{a,a^{-1}}\;} .
 $$
 
 **Proof.** For the even element $a$ one has $\alpha(a)=a$, so $\alpha(a)a=a^2$. The square is computed from $a^2=(1+e_1e_2)^2=1+2e_1e_2+(e_1e_2)^2=1+2e_1e_2-1=2e_1e_2$, which is not central in the central-simple algebra $\mathrm{Cl}_4$; by the criterion the sandwich is not self-adjoint. The adjoint is $T_{a^{-1},a}$ by the general formula, with $a^{-1}=(1-e_1e_2)/2$, and the two conjugations differ: on the vector $e_1$,
@@ -60,7 +60,7 @@ $$
 **Corollary (the totally degenerate case).** When $a$ is not a unit the reflected sandwich does not exist; the operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$, and its square is
 
 $$
-\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma_{a\alpha(a),\,\alpha(a)a} ,
+\boxed{\;\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma_{a\alpha(a),\,\alpha(a)a}\;} ,
 $$
 
 which is the zero operator when $a\alpha(a)=0$. For an isotropic vector $u$, $\mathfrak{Q}(u)=0$ and $u^2=0$, the operator $\Sigma^{\alpha}_{u,u}$ is square-zero, a degenerate limiting case of a reflection and not a reflection; the self-adjointness question does not arise because the reflection itself is not defined.

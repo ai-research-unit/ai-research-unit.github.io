@@ -29,7 +29,7 @@ The involution and the adjoint axiom are *Hilbert Algebras*; the states built on
 **Definition.** The **positive cone** is
 
 $$
-A_{+} = \Bigl\{\sum_{i=1}^{n} y_i^{*}y_i : n\geq1,\ y_i\in A\Bigr\},
+\boxed{\;A_{+} = \Bigl\{\sum_{i=1}^{n} y_i^{*}y_i : n\geq1,\ y_i\in A\Bigr\}\;},
 $$
 
 the set of finite sums of elements $y^{*}y$; an element of $A_{+}$ is **positive** and one writes $x\geq0$.
@@ -57,7 +57,7 @@ the set of finite sums of elements $y^{*}y$; an element of $A_{+}$ is **positive
 **Proposition (compatibility with the algebra).** The order is invariant under the inner conjugations and compatible with the involution:
 
 $$
-a\leq b \ \Longrightarrow\ y^{*}ay\leq y^{*}by, \qquad a\leq b \ \Longleftrightarrow\ -b\leq -a .
+\boxed{\;a\leq b \ \Longrightarrow\ y^{*}ay\leq y^{*}by, \qquad a\leq b \ \Longleftrightarrow\ -b\leq -a\;} .
 $$
 
 **Proof.** Both are the stability and the linearity of the cone.

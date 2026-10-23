@@ -16,7 +16,7 @@ The Clifford algebra, the $k$-vectors, the volume element and reversion are from
 **Theorem.** For $n=8$ the vector representation of $SO(8)$ is of dimension eight, and the two half-spinor modules $S^+$ and $S^-$ of $\mathrm{Spin}(8)$ are of dimension eight each:
 
 $$
-\dim 8_v=\dim 8_s=\dim 8_c=8 .
+\boxed{\;\dim 8_v=\dim 8_s=\dim 8_c=8\;} .
 $$
 
 **Proof.** The vector representation has dimension $n=8$ by definition, and the half-spinor modules have dimension $2^{m-1}$ for $n=2m$ with $m=4$, by *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation*, that is $2^3=8$.
@@ -70,7 +70,7 @@ for the pairing $\langle\cdot,\cdot\rangle$ of the spinor module with its dual, 
 **Theorem (triality).** There is an outer automorphism
 
 $$
-\tau:\mathrm{Spin}(8)\longrightarrow\mathrm{Spin}(8),\qquad \tau^3=1,
+\boxed{\;\tau:\mathrm{Spin}(8)\longrightarrow\mathrm{Spin}(8),\qquad \tau^3=1\;},
 $$
 
 whose induced permutation of the three eight-dimensional representations is a three-cycle, and the group of outer automorphisms of $\mathrm{Spin}(8)$, and of its Lie algebra $\mathrm{SO}(8)$, is the symmetric group $S_3$:
@@ -86,7 +86,7 @@ $$
 **Theorem.** The fixed-point subgroup of the triality automorphism of order three is the exceptional group $G_2$:
 
 $$
-\mathrm{Spin}(8)^{\tau}\cong G_2 ,
+\boxed{\;\mathrm{Spin}(8)^{\tau}\cong G_2\;} ,
 $$
 
 of dimension $14$, and it is the automorphism group of the octonions.

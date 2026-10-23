@@ -190,7 +190,7 @@ Write $f(Q) = u(q, q') + j v(q, q')$, where $Q = q + jq'$ and $u, v : \Omega \to
 **Theorem.** $f$ is split complex differentiable at $Q_0 = q_0 + j q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the **split Cauchy–Riemann equations**
 
 $$
-\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = \frac{\partial v}{\partial q}.
+\boxed{\;\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = \frac{\partial v}{\partial q}\;}.
 $$
 
 **Proof.** Write $h = h_1 + j h_2$. The difference quotient is
@@ -204,7 +204,7 @@ For the limit to exist independently of the direction of $h$, the numerator must
 **Corollary.** If $f$ is split complex differentiable, then $u$ and $v$ satisfy the **wave equation**:
 
 $$
-\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'^2} = 0.
+\boxed{\;\frac{\partial^2 u}{\partial q^2} - \frac{\partial^2 u}{\partial q'^2} = 0, \qquad \frac{\partial^2 v}{\partial q^2} - \frac{\partial^2 v}{\partial q'^2} = 0\;}.
 $$
 
 **Proof.** Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials.
@@ -222,7 +222,7 @@ $$
 **Theorem.** $f$ is split complex differentiable iff $f$ is real differentiable and $\partial f / \partial \bar{Q} = 0$. In that case,
 
 $$
-f'(Q) = \frac{\partial f}{\partial Q}.
+\boxed{\;f'(Q) = \frac{\partial f}{\partial Q}\;}.
 $$
 
 The condition $\partial f / \partial \bar{Q} = 0$ is the split Cauchy–Riemann equations in compact form.
@@ -310,7 +310,7 @@ The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultipli
 **Theorem (Cauchy–Goursat, split version).** If $f$ is split complex differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then
 
 $$
-\oint_\gamma f(Q) \, dQ = 0.
+\boxed{\; \oint_\gamma f(Q) \, dQ = 0 \;}.
 $$
 
 **Proof.** In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour.

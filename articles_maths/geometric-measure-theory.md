@@ -51,7 +51,7 @@ the $m$-dimensional volume of the image of the unit $m$-cube under the different
 
 **Theorem (area formula).** Let $f:\mathbb{R}^m\to\mathbb{R}^n$ be Lipschitz and let $A\subseteq\mathbb{R}^m$ be $\mathcal{L}^m$-measurable. Then
 $$
-\int_AJ_mf\,dx = \int_{\mathbb{R}^n}\mathcal{H}^0\bigl(A\cap f^{-1}(y)\bigr)\,d\mathcal{H}^m(y),
+\boxed{\;\int_AJ_mf\,dx = \int_{\mathbb{R}^n}\mathcal{H}^0\bigl(A\cap f^{-1}(y)\bigr)\,d\mathcal{H}^m(y)\;},
 $$
 and more generally $\int_A\varphi(f(x))J_mf(x)dx = \int\varphi(y)N(f,A,y)d\mathcal{H}^m(y)$ for Borel $\varphi\geq0$, where $N(f,A,y)$ is the number of preimages in $A$.
 
@@ -63,7 +63,7 @@ and more generally $\int_A\varphi(f(x))J_mf(x)dx = \int\varphi(y)N(f,A,y)d\mathc
 
 **Theorem (coarea formula).** Let $f:\mathbb{R}^n\to\mathbb{R}^m$ be Lipschitz with $m\leq n$ and let $A$ be $\mathcal{L}^n$-measurable. Then
 $$
-\int_AJ_mf\,dx = \int_{\mathbb{R}^m}\mathcal{H}^{n-m}\bigl(A\cap f^{-1}(y)\bigr)\,dy .
+\boxed{\;\int_AJ_mf\,dx = \int_{\mathbb{R}^m}\mathcal{H}^{n-m}\bigl(A\cap f^{-1}(y)\bigr)\,dy\;} .
 $$
 **Proof sketch.** The formula is the area formula applied to the map $F(x) = (f(x),x)$ from $\mathbb{R}^n$ to $\mathbb{R}^m\times\mathbb{R}^{n-m}$, whose Jacobian equals $J_mf$; the level sets of $f$ are the images of the fibres of the projection in the product, and the area formula for $F$ expresses the integral over the domain as the integral over the target, in which the slices appear.
 
@@ -141,7 +141,7 @@ and the **boundary** is defined by Stokes' theorem, $(\partial T)(\omega) = T(d\
 
 **Theorem (the solution of the Plateau problem).** Let $S$ be an integral $(m-1)$-current in $\mathbb{R}^n$ with compact support and $\partial S = 0$. Then there is an integral $m$-current $T$ with $\partial T = S$ and
 $$
-\mathbf{M}(T) = \inf\{\mathbf{M}(U) : U\ \text{integral},\ \partial U = S\} ,
+\boxed{\;\mathbf{M}(T) = \inf\{\mathbf{M}(U) : U\ \text{integral},\ \partial U = S\}\;} ,
 $$
 so that $T$ is a surface of least mass with the prescribed boundary; and $T$ is stationary, hence smooth outside a closed singular set of Hausdorff dimension at most $m-2$ in the interior by the regularity theorem of Almgren, whose boundary regularity is the theorem of Hardt and Simon. The class of fillings is nonempty because the cone over $S$ is an integral current with boundary $S$. The solution is the weak form of the classical minimal surface spanned by a curve, and in the case $m = 2$, $n = 3$ the mass-minimiser for a smooth Jordan curve is the classical minimal disc, whose existence is the theorem of Douglas and Radó.
 

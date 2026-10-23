@@ -133,8 +133,7 @@ Comparing the coefficients of $1$ and $i$:
 
 The fixed points are complex numbers with vanishing imaginary part:
 
-$$
-Q = q, \qquad q \in \mathbb{R}.
+$$ \boxed{\;Q = q, \qquad q \in \mathbb{R}\;}.
 $$
 
 This is the **real subspace** $\mathbb{R}_{\mathbb{C}}$, a copy of the real number line embedded in $\mathbb{C}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{C}$ (isomorphic to $\mathbb{R}$), and it is the only one of the two fixed-point sets that is an ordered field.
@@ -159,16 +158,14 @@ $$
 
 The real and the imaginary parts are obtained from the complex conjugation:
 
-$$
-q = \frac{1}{2}(Q + \bar Q), \qquad q' = \frac{1}{2i}(Q - \bar Q).
+$$ \boxed{\;q = \frac{1}{2}(Q + \bar Q), \qquad q' = \frac{1}{2i}(Q - \bar Q)\;}.
 $$
 
 Indeed, $q$ is fixed by complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}}$, and $q'$ is real, so $i q'$ is negated by complex conjugation.
 
 This gives the direct sum decomposition
 
-$$
-\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i \mathbb{R}_{\mathbb{C}},
+$$ \boxed{\;\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i \mathbb{R}_{\mathbb{C}}\;},
 $$
 
 where $i \mathbb{R}_{\mathbb{C}}$ is the set of complex numbers of the form $i q'$ with $q' \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{C}$ of real dimension $2$.

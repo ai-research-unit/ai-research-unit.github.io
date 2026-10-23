@@ -71,7 +71,7 @@ $\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_t = 1$, $\vec 
 $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_\mathbb{R}\mathbb{H}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over the split complex numbers. Since $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$ as a real algebra, distributivity of the tensor product gives
 
 $$
-\mathbb{H}_{\mathbb{D}} \cong (\mathbb{R}\times\mathbb{R})\otimes_\mathbb{R}\mathbb{H} \cong \mathbb{H}\times\mathbb{H}.
+\boxed{\;\mathbb{H}_{\mathbb{D}} \cong (\mathbb{R}\times\mathbb{R})\otimes_\mathbb{R}\mathbb{H} \cong \mathbb{H}\times\mathbb{H}\;}.
 $$
 
 So $\mathbb{H}_{\mathbb{D}}$ is a product of two copies of $\mathbb{H}$: it is semisimple, it is not simple, its centre is $\mathbb{D}$, and it has zero divisors, beginning with $1+j$ and $1-j$, which are the images of $(2,0)$ and $(0,2)$ and multiply to zero. This algebra is not the four-dimensional coquaternion algebra $M_2(\mathbb{R})$; the two are distinct, and the corpus's $\mathbb{H}_{\mathbb{D}}$ is the tensor product above.
@@ -89,7 +89,7 @@ Two classical theorems organise the whole table, and the examples are best read 
 **Theorem (Wedderburn–Artin, standard).** A finite-dimensional semisimple algebra over a field $k$ is isomorphic to a finite product
 
 $$
-A \cong M_{n_1}(D_1) \times \dots \times M_{n_r}(D_r),
+\boxed{\;A \cong M_{n_1}(D_1) \times \dots \times M_{n_r}(D_r)\;},
 $$
 
 where the $D_i$ are finite-dimensional division algebras over $k$. The algebra is simple if and only if $r = 1$.
@@ -161,7 +161,7 @@ $$
 with both factors nonzero, so $1 - g$ is a zero divisor. When $\operatorname{char} k$ does not divide $|G|$, Maschke's theorem makes $k[G]$ semisimple, and over $k = \mathbb{C}$ it decomposes as a product of matrix algebras
 
 $$
-\mathbb{C}[G] \cong \prod_{\rho \text{ irreducible}} M_{n_\rho}(\mathbb{C}),
+\boxed{\;\mathbb{C}[G] \cong \prod_{\rho \text{ irreducible}} M_{n_\rho}(\mathbb{C})\;},
 $$
 
 one factor for each irreducible complex representation, of size equal to its degree; the algebra is simple only for the trivial group. The centre of $k[G]$ consists of the class sums, and it has dimension equal to the number of conjugacy classes. Group algebras are treated, and their operator-algebraic completions.

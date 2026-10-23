@@ -49,7 +49,7 @@ The Leibniz rule extends from two factors to any finite list, and the extension 
 **Proposition (the product rule).** For $x_1, \dots, x_n \in A$,
 
 $$
-D(x_1 x_2 \cdots x_n) = \sum_{i=1}^{n} x_1 \cdots x_{i-1}\, D(x_i)\, x_{i+1} \cdots x_n .
+\boxed{\;D(x_1 x_2 \cdots x_n) = \sum_{i=1}^{n} x_1 \cdots x_{i-1}\, D(x_i)\, x_{i+1} \cdots x_n\;} .
 $$
 
 **Proof.** Induction on $n$, the case $n = 1$ being the definition and the step being the two-factor rule applied to $x_1\cdots x_{n-1}$ and $x_n$.
@@ -133,7 +133,7 @@ $$
 Hence $\operatorname{ad}$ is a homomorphism of Lie rings $A \to \operatorname{Der}(A)$ with kernel the centre, so that
 
 $$
-\operatorname{Inn}_{\mathrm{der}}(A) := \operatorname{ad}(A) \;\cong\; A / Z(A)
+\boxed{\;\operatorname{Inn}_{\mathrm{der}}(A) := \operatorname{ad}(A) \;\cong\; A / Z(A)\;}
 $$
 
 as Lie rings. The elements of $\operatorname{Inn}_{\mathrm{der}}(A)$ are the **inner derivations**.
@@ -147,7 +147,7 @@ as Lie rings. The elements of $\operatorname{Inn}_{\mathrm{der}}(A)$ are the **i
 **Theorem.** $\operatorname{Inn}_{\mathrm{der}}(A)$ is a Lie ideal of $\operatorname{Der}(A)$: for every derivation $D$ and every $a \in A$,
 
 $$
-[D, \operatorname{ad}_a] = \operatorname{ad}_{D(a)} .
+\boxed{\;[D, \operatorname{ad}_a] = \operatorname{ad}_{D(a)}\;} .
 $$
 
 Hence $\operatorname{Inn}_{\mathrm{der}}(A) \trianglelefteq \operatorname{Der}(A)$ as Lie rings, and the quotient $\operatorname{Out}_{\mathrm{der}}(A) = \operatorname{Der}(A)/\operatorname{Inn}_{\mathrm{der}}(A)$ is the Lie ring of **outer derivations**.

@@ -84,8 +84,8 @@ The count of the four is taken, one step, in *The 4 Forms over the Biquaternion 
 $$
 \boxed{\;
 B=(-1,-1),\qquad H=(1,1),\qquad N=(1,-1),\qquad K=(-1,1)
-\;}
-$$,
+\;},
+$$
 
 which are four different pairs.
 
@@ -98,8 +98,8 @@ which are four different pairs.
 $$
 \boxed{\;
 \langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}
-\;}
-$$,
+\;},
+$$
 
 the general plain bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $\langle\tilde Q\rangle=0$, already the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
 
@@ -125,8 +125,8 @@ the general quaternionic bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\r
 $$
 \boxed{\;
 \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}
-\;}
-$$.
+\;}.
+$$
 
 *Proof.* Under the matrix representation $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the algebraic norm is the determinant, $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$, as the computation of the determinant of $\mathsf{M}_2(\tilde Q)=Q_t\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\mathsf{M}_2$ is an algebra homomorphism and the determinant is multiplicative, so $\langle\cdot\rangle_{\natural}$ is.
 

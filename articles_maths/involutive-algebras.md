@@ -115,7 +115,7 @@ $$
 are $F$-linear maps with $p_+^2 = p_+$, $p_-^2 = p_-$, $p_+ + p_- = \mathrm{id}$ and $p_+p_- = p_-p_+ = 0$, and
 
 $$
-A = A^+ \oplus A^-, \qquad A^+ = \ker(\sigma - \mathrm{id}), \qquad A^- = \ker(\sigma + \mathrm{id}).
+\boxed{\;A = A^+ \oplus A^-, \qquad A^+ = \ker(\sigma - \mathrm{id}), \qquad A^- = \ker(\sigma + \mathrm{id})\;}.
 $$
 
 **Proof.** $(2p_+)^2 = (\mathrm{id}+\sigma)^2 = \mathrm{id} + 2\sigma + \sigma^2 = 2(\mathrm{id}+\sigma) = 4p_+$, so $p_+^2 = p_+$ because $2$ is invertible; the same computation with $\sigma$ replaced by $-\sigma$ gives $p_-^2 = p_-$, and the sum and the products follow from the definitions. The images of $p_+$ and $p_-$ are the fixed and the negated elements, and every element is $a = p_+(a) + p_-(a)$, uniquely.
@@ -133,7 +133,7 @@ $$
 **Theorem.** Let $\sigma$ be an involution of $A$. Then
 
 $$
-[A^+, A^+] \subseteq A^-, \qquad [A^+, A^-] \subseteq A^+, \qquad [A^-, A^-] \subseteq A^- .
+\boxed{\;[A^+, A^+] \subseteq A^-, \qquad [A^+, A^-] \subseteq A^+, \qquad [A^-, A^-] \subseteq A^-\;} .
 $$
 
 In particular $A^-$ is a Lie subalgebra, $A^+$ is a module over it, and $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra whose even part is $A^-$ and whose odd part is $A^+$.
@@ -241,7 +241,7 @@ exhibits $a$ as a symmetric element plus an element of $I$.
 **Theorem.** Let $(A,\sigma)$ and $(B,\tau)$ be involutive $F$-algebras and let $2 \neq 0$. Then $\sigma \otimes \tau$ on $A \otimes_F B$, defined on decomposable elements by $a \otimes b \mapsto \sigma(a) \otimes \tau(b)$, is an $F$-linear involution, and
 
 $$
-(A \otimes B)^+ = A^+ \otimes B^+ \;\oplus\; A^- \otimes B^-, \qquad (A \otimes B)^- = A^+ \otimes B^- \;\oplus\; A^- \otimes B^+ .
+\boxed{\;(A \otimes B)^+ = A^+ \otimes B^+ \;\oplus\; A^- \otimes B^-, \qquad (A \otimes B)^- = A^+ \otimes B^- \;\oplus\; A^- \otimes B^+\;} .
 $$
 
 **Proof.** The map is the tensor product of two $F$-linear maps, hence $F$-linear; it reverses a product because the two factors do, fixes $1 \otimes 1$, and has square the identity because each factor has. For the decomposition, $A \otimes B$ is spanned by the four spaces on the right, and each of them lies in the stated eigenvalue space by the multiplicativity of $\sigma \otimes \tau$; the sum is direct because the decomposition of each factor is direct and tensor products of independent subspaces are independent.

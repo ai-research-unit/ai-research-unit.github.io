@@ -20,7 +20,7 @@ The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, 
 **Theorem (orbit–stabiliser).** For a group $G$ acting on a set $X$ and $x \in X$, the map
 
 $$
-\varphi_x : G/G_x \longrightarrow G \cdot x, \qquad \varphi_x(gG_x) = g \cdot x,
+\boxed{\;\varphi_x : G/G_x \longrightarrow G \cdot x, \qquad \varphi_x(gG_x) = g \cdot x\;},
 $$
 
 is a well-defined $G$-equivariant bijection. In particular, if the action is transitive and $H = G_x$, then $X \cong G/H$ as $G$-sets.
@@ -120,7 +120,7 @@ which is finite because $G$ is compact and $G$-invariant by the invariance of $\
 **Theorem (the reductive case).** Let $H$ be a closed subgroup of a Lie group $G$, and suppose the Lie algebra splits as a vector space,
 
 $$
-\mathrm{G} = \mathrm{H} \oplus \mathrm{M}, \qquad [\mathrm{H}, \mathrm{M}] \subseteq \mathrm{M},
+\boxed{\;\mathrm{G} = \mathrm{H} \oplus \mathrm{M}, \qquad [\mathrm{H}, \mathrm{M}] \subseteq \mathrm{M}\;},
 $$
 
 a **reductive decomposition** with $\mathrm{M}$ an $\operatorname{Ad}(H)$-invariant complement of $\mathrm{H}$. Then an $\operatorname{Ad}(H)$-invariant inner product on $\mathrm{M}$ induces a $G$-invariant Riemannian metric on $G/H$.
@@ -172,7 +172,7 @@ for $\xi, \eta \in \mathrm{M}$ extended to invariant vector fields. The canonica
 **Theorem (Nomizu).** For a normal homogeneous space $G/H$ with the metric induced from an $\operatorname{Ad}(G)$-invariant inner product $\langle\cdot,\cdot\rangle$ on $\mathrm{G}$, the sectional curvature of the Levi-Civita connection at the identity coset is, for an orthonormal pair $\xi, \eta \in \mathrm{M}$,
 
 $$
-K(\xi \wedge \eta) = \tfrac{1}{4}\bigl\|[\xi,\eta]_{\mathrm{M}}\bigr\|^2 + \bigl\|[\xi,\eta]_{\mathrm{H}}\bigr\|^2 ,
+\boxed{\;K(\xi \wedge \eta) = \tfrac{1}{4}\bigl\|[\xi,\eta]_{\mathrm{M}}\bigr\|^2 + \bigl\|[\xi,\eta]_{\mathrm{H}}\bigr\|^2\;} ,
 $$
 
 where the subscripts denote the components in $\mathrm{M}$ and $\mathrm{H}$. Both terms are nonnegative; the second vanishes when the decomposition satisfies $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{M}$, and the first vanishes when $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$. In particular every normal homogeneous space of a compact group has nonnegative sectional curvature.

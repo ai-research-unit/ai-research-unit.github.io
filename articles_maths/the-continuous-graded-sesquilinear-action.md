@@ -37,7 +37,7 @@ $$
 **Theorem (continuity and the bound).** The derived action is the composite of the action with the conjugation, $(a,m)\mapsto(a,\theta(m))\mapsto a\cdot\theta(m)$, so it is continuous whenever the action and $\theta$ are; if the action is separately continuous, so is the derived action. In the normed case, if the action satisfies $\lVert a\cdot m\rVert\le C\lVert a\rVert\lVert m\rVert$ and the conjugation satisfies $\lVert\theta(m)\rVert\le D\lVert m\rVert$, then
 
 $$
-\lVert a\star m\rVert\le CD\,\lVert a\rVert\lVert m\rVert,
+\boxed{\;\lVert a\star m\rVert\le CD\,\lVert a\rVert\lVert m\rVert\;},
 $$
 
 and with a normed module action ($C=1$) and an isometric conjugation ($D=1$) the constant is one.
@@ -47,7 +47,7 @@ and with a normed module action ($C=1$) and an isometric conjugation ($D=1$) the
 **Proposition (the parities and the degree).** The derived action is linear in the algebra element and $\varsigma$-semilinear in the module element, and it is homogeneous:
 
 $$
-(\lambda a)\star m=\lambda(a\star m),\qquad a\star(\lambda m)=\varsigma(\lambda)(a\star m),\qquad A^{i}\star M^{j}\subseteq M^{i+j}.
+\boxed{\;(\lambda a)\star m=\lambda(a\star m),\qquad a\star(\lambda m)=\varsigma(\lambda)(a\star m),\qquad A^{i}\star M^{j}\subseteq M^{i+j}\;}.
 $$
 
 **Proof.** The two scalar rules are the linearity of the action in the first slot and the $\varsigma$-semilinearity of $\theta$; the degree is $\lvert a\star m\rvert=\lvert a\rvert+\lvert\theta(m)\rvert=\lvert a\rvert+\lvert m\rvert$, the conjugation being even.
@@ -67,7 +67,7 @@ $$
 **Definition.** A graded sesquilinear module over $A$ is **compatible** when
 
 $$
-\theta(a\cdot m)=a^{*}\cdot\theta(m)\qquad\text{for all }a\in A^{0},\ m\in M .
+\boxed{\;\theta(a\cdot m)=a^{*}\cdot\theta(m)\qquad\text{for all }a\in A^{0},\ m\in M\;} .
 $$
 
 **Theorem (the even part intertwines, the odd part obstructs).** The condition of the definition is a closed condition on the pair $(A,M,\theta)$, and the even part $A^{0}$ acts on a compatible module through $\theta$; the identity cannot be extended to the odd part, because $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ fails for every conjugation as soon as some $a\in A^{1}$ acts nontrivially.

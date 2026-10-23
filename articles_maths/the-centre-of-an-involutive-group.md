@@ -18,7 +18,7 @@ Throughout, $(G,\sigma)$ is an involutive group, $\alpha=\sigma\iota$ is the ass
 **Proposition (the fixed and inverted sets of the restriction).** For the restricted involution,
 
 $$
-Z(G)^{\sigma|_{Z(G)}}=Z(G)\cap G^{\sigma}=Z(G)\cap I(\alpha)=I(\alpha)\cap Z(G),
+\boxed{\;Z(G)^{\sigma|_{Z(G)}}=Z(G)\cap G^{\sigma}=Z(G)\cap I(\alpha)=I(\alpha)\cap Z(G)\;},
 $$
 $$
 I(\sigma|_{Z(G)})=Z(G)\cap I(\sigma)=Z(G)\cap G^{\alpha}=G^{\alpha}\cap Z(G).
@@ -45,7 +45,7 @@ $$
 **Proposition (the derived subgroup is stable).** $[G,G]$ is $\sigma$-stable, and more precisely
 
 $$
-\sigma([a,b])=\bigl[\sigma(b)^{-1},\,\sigma(a)^{-1}\bigr]=[\sigma(a),\sigma(b)],
+\boxed{\;\sigma([a,b])=\bigl[\sigma(b)^{-1},\,\sigma(a)^{-1}\bigr]=[\sigma(a),\sigma(b)]\;},
 $$
 
 Consequently $\sigma$ induces an involution $\sigma^{\mathrm{ab}}$ of the abelianisation $G^{\mathrm{ab}}$, and for the inversion the induced map is the inversion of the abelian group $G^{\mathrm{ab}}$.
@@ -67,7 +67,7 @@ Let $t$ act on $G$ by $\alpha$ in the semidirect product $G\rtimes\langle t\rang
 **Proposition (the central elements of the extension).** The centre of the extension is described in two parts:
 
 $$
-Z\bigl(G\rtimes\langle t\rangle\bigr)\cap G = Z(G)\cap G^{\alpha},
+\boxed{\;Z\bigl(G\rtimes\langle t\rangle\bigr)\cap G = Z(G)\cap G^{\alpha}\;},
 $$
 
 and an element $(g,t)$ with a nontrivial $t$-component is central if and only if $\alpha$ is inner and $c_{g}=\alpha$. Hence the centre is $\bigl(Z(G)\cap G^{\alpha}\bigr)\times\langle t\rangle$ when $\alpha=\mathrm{id}$, it is $\bigl(Z(G)\cap G^{\alpha}\bigr)$ together with the single coset $(g_{0}\,Z(G)\cap G^{\alpha},\,t)$ when $\alpha$ is an inner involution $c_{g_{0}}\neq\mathrm{id}$, and it has no element outside $G$ when $\alpha$ is not inner.

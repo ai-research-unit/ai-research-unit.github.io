@@ -13,7 +13,7 @@ The Clifford algebra and its grading are *Clifford Algebras* and *Clifford Algeb
 **Definition.** A **Clifford module** is a vector space $S$ with an action of $\mathrm{Cl}(V,\mathfrak{Q})$ by $F$-linear maps, $x\otimes s\mapsto x\cdot s$, respecting the algebra structure. Its **signed action** is
 
 $$
-x \cdot_{\alpha} s = \alpha(x)\cdot s, \qquad x \in \mathrm{Cl}(V,\mathfrak{Q}),\ s \in S .
+\boxed{\;x \cdot_{\alpha} s = \alpha(x)\cdot s, \qquad x \in \mathrm{Cl}(V,\mathfrak{Q}),\ s \in S\;} .
 $$
 
 **Proposition.** The signed action makes $S$ into a Clifford module, denoted $S^{\alpha}$ and called the **twist** of $S$ by $\alpha$, and the identity map on the underlying space is an isomorphism of $F$-vector spaces carrying the signed action to the ordinary one. On a homogeneous element the signed action is $x\cdot_{\alpha} s = (-1)^{|x|}x\cdot s$.
@@ -43,7 +43,7 @@ $$
 **Theorem.** Let $\dim V = n$ be **even**, and let $\omega = e_1\cdots e_n$ be the volume element. Then $\omega$ is even, it is a unit with $\omega^{2} = (-1)^{n(n-1)/2}\prod_{i}q(e_i) \in F^{\times}$, and it implements the grade involution:
 
 $$
-\alpha(x) = \omega\,x\,\omega^{-1} \qquad \text{for every } x \in \mathrm{Cl}(V,\mathfrak{Q}).
+\boxed{\;\alpha(x) = \omega\,x\,\omega^{-1} \qquad \text{for every } x \in \mathrm{Cl}(V,\mathfrak{Q})\;}.
 $$
 
 Consequently $\alpha$ is an inner automorphism in even dimension, the signed action is the ordinary action conjugated by the operator of $\omega$ on the module, and $S^{\alpha}\cong S$ for every Clifford module $S$. For the spinor module the operator of $\omega$ is the **chirality operator** $\Gamma_S$, and the signed action is $\Gamma_S\,x\,\Gamma_S^{-1}$.

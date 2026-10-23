@@ -33,7 +33,7 @@ The Markov property is the statement that the past and the future are conditiona
 **Theorem (Chapman–Kolmogorov).** The $m+n$ step transitions are the compositions
 
 $$
-p^{(m+n)}(x,B) = \int_E p^{(m)}(x,dy)\,p^{(n)}(y,B), \qquad P^{m+n} = P^mP^n \text{ in the countable case}.
+\boxed{\;p^{(m+n)}(x,B) = \int_E p^{(m)}(x,dy)\,p^{(n)}(y,B), \qquad P^{m+n} = P^mP^n \text{ in the countable case}\;}.
 $$
 
 *Proof.* Condition on $X_m$ and apply the Markov property to the last $n$ steps:
@@ -94,7 +94,7 @@ The theorem is the ergodic statement of the classification: the chain admits an 
 **Theorem (ergodic theorem for Markov chains).** Let the chain be irreducible positive recurrent with stationary distribution $\pi$ and let $f$ be integrable with respect to $\pi$. Then for every initial distribution,
 
 $$
-\frac{1}{n}\sum_{k=0}^{n-1}f(X_k) \longrightarrow \int_E f\,d\pi \qquad \text{a.s.}
+\boxed{\;\frac{1}{n}\sum_{k=0}^{n-1}f(X_k) \longrightarrow \int_E f\,d\pi \qquad \text{a.s.}\;}
 $$
 
 *Proof (sketch).* The argument is the regenerative decomposition at the successive visits to a fixed state $x$: the chain decomposes into independent and identically distributed **excursions** away from $x$, by the strong Markov property, and the empirical average over an excursion converges by the law of large numbers of *Laws of Large Numbers and the Central Limit Theorem*. The ratio of the excursion sums to the excursion lengths gives the identity $\int f\,d\pi = \mathbb{E}_x\bigl[\sum_{k<\tau_x^+}f(X_k)\bigr]/\mathbb{E}_x[\tau_x^+]$. The full statement is the special case of the pointwise ergodic theorem, applied to the shift on the canonical path space with the invariant measure $\pi$.
@@ -106,7 +106,7 @@ The formula $\int f\,d\pi = \mathbb{E}_x[\sum_{k<\tau_x^+}f(X_k)]/\mathbb{E}_x[\
 **Theorem (convergence theorem).** Let the chain be irreducible, aperiodic and positive recurrent with stationary distribution $\pi$. Then for every initial distribution $\mu$,
 
 $$
-\| \mu P^n - \pi \|_{\mathrm{TV}} \longrightarrow 0,
+\boxed{\;\| \mu P^n - \pi \|_{\mathrm{TV}} \longrightarrow 0\;},
 $$
 
 where $\|\cdot\|_{\mathrm{TV}}$ is the total variation norm; and if the chain is periodic with period $d$, the convergence holds along each residue class modulo $d$ with the appropriate limiting measure.

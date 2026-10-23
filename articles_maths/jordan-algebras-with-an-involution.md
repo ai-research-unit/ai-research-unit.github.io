@@ -55,7 +55,7 @@ its elements are the **self-adjoint** (or **Hermitian**) elements, and an elemen
 **Theorem.** Let $K/F$ be a quadratic extension with nontrivial automorphism $\varsigma$, and let $(J,\sigma)$ be a $K$-Jordan algebra with a $\varsigma$-semilinear involution. Then
 
 $$
-J = H(J) \oplus i\,H(J) ,
+\boxed{\;J = H(J) \oplus i\,H(J)\;} ,
 $$
 
 where $i \in K$ satisfies $\varsigma(i) = -i$ and $K = F\oplus Fi$; the sum is direct and is a decomposition of $J$ into two copies of the $F$-Jordan algebra $H(J)$.
@@ -95,7 +95,7 @@ Let $A$ be an associative unital $F$-algebra with an involution $\ast$ in the se
 **Theorem.** The map $\sigma = \ast$ restricted to $J = A^+$ is a linear involution of the Jordan algebra $J$, and
 
 $$
-H(J) = H(A,\ast) ,
+\boxed{\;H(J) = H(A,\ast)\;} ,
 $$
 
 the self-adjoint part of $J$ being exactly the set of the $\ast$-self-adjoint elements of $A$; the self-adjoint part is a Jordan subalgebra of $A^+$.

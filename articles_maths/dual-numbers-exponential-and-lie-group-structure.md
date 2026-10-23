@@ -64,7 +64,7 @@ Over $R = \mathbb{R}$ the series converges for every $Q$, in the topology of $\m
 **Theorem.** For every $Q = q + \varepsilon q'$,
 
 $$
-\exp(q + \varepsilon q') = \exp(q)\bigl(1 + \varepsilon q'\bigr) = \exp(q) + \exp(q)\varepsilon q'.
+\boxed{\; \exp(q + \varepsilon q') = \exp(q)\bigl(1 + \varepsilon q'\bigr) = \exp(q) + \exp(q)\varepsilon q' \;}.
 $$
 
 **Proof.** By the binomial expansion and $\varepsilon^2 = 0$, $(q + \varepsilon q')^k = q^k + k q^{k-1}\varepsilon q'$ for $k \geq 1$. Summing,
@@ -108,7 +108,7 @@ $$
 is a group under multiplication, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over $R = \mathbb{R}$ it is a two-dimensional abelian Lie group with the following structure:
 
 $$
-(\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
+\boxed{\; (\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +) \;},
 $$
 
 the isomorphism being $q + \varepsilon q' \leftrightarrow (q,\, q'/q)$.
@@ -174,7 +174,7 @@ are inverse isomorphisms of groups, where $\mathrm{M}$ carries the additive grou
 **Theorem.** The central scalars embed as $\mathbb{R}^\times \hookrightarrow (\mathbb{D}')^\times$, $q \mapsto q$, and
 
 $$
-(\mathbb{D}')^\times / \mathbb{R}^\times \;\cong\; 1 + \mathrm{M} \;\cong\; (\mathbb{R}, +),
+\boxed{\; (\mathbb{D}')^\times / \mathbb{R}^\times \;\cong\; 1 + \mathrm{M} \;\cong\; (\mathbb{R}, +) \;},
 $$
 
 the isomorphism being the class of $q + \varepsilon q'$ mapped to $1 + (q'/q)\varepsilon$, equivalently to the parabolic angle $s = q'/q$.

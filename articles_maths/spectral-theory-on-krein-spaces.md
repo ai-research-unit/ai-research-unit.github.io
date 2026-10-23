@@ -21,7 +21,7 @@ The indefinite adjoint, $J$-self-adjointness and the $J$-positive cone are *J-Se
 **Theorem (conjugate symmetry).** The spectrum and the point spectrum of a $J$-self-adjoint operator are symmetric with respect to the real axis:
 
 $$
-\lambda\in\sigma(T) \iff \bar\lambda\in\sigma(T) , \qquad \lambda\in\sigma_{n}(T) \iff \bar\lambda\in\sigma_{n}(T) ,
+\boxed{\;\lambda\in\sigma(T) \iff \bar\lambda\in\sigma(T) , \qquad \lambda\in\sigma_{n}(T) \iff \bar\lambda\in\sigma_{n}(T)\;} ,
 $$
 
 with equality of algebraic multiplicities, and the root subspace at $\bar\lambda$ is the $J$-orthogonal complement of the root subspace at $\lambda$ for the appropriate invariant pairing.

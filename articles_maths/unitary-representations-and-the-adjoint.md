@@ -18,7 +18,7 @@ Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$
 **Theorem (the integrated form is a `*`-representation).** For every continuous unitary representation $\pi$ and every $f\in L^1(G)$,
 
 $$
-\pi(f)^* = \pi(f^*), \qquad \pi(f*g) = \pi(f)\pi(g), \qquad \|\pi(f)\|\leq\|f\|_1 ,
+\boxed{\;\pi(f)^* = \pi(f^*), \qquad \pi(f*g) = \pi(f)\pi(g), \qquad \|\pi(f)\|\leq\|f\|_1\;} ,
 $$
 
 with $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, for every locally compact $G$.
@@ -34,7 +34,7 @@ with $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, for every locally compact $G
 **Definition.** The **projection onto the invariants** of $\pi$ is the strong limit
 
 $$
-P = \text{strong-}\!\lim_{\alpha}\pi(u_\alpha), \qquad \mathcal{H}^G = P\mathcal{H},
+\boxed{\;P = \text{strong-}\!\lim_{\alpha}\pi(u_\alpha), \qquad \mathcal{H}^G = P\mathcal{H}\;},
 $$
 
 where $u_\alpha$ is a normalised approximate identity of $L^1(G)$; equivalently $P\xi$ is the unique invariant element closest to $\xi$.

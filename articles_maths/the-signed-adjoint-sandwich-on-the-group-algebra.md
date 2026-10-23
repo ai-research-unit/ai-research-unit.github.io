@@ -36,7 +36,7 @@ and the adjoint is an anti-linear involution, $(ST)^* = T^*S^*$, $(T^*)^* = T$.
 **Theorem (the explicit form of the adjoint).** With respect to the Haar pairing, in the unimodular case,
 
 $$
-\bigl(T_{a,b}\bigr)^* = T_{a^*,\,b^*} , \qquad \bigl(S_{a,b}\bigr)^* = S_{\alpha(a^*),\,\alpha(b^*)} ,
+\boxed{\;\bigl(T_{a,b}\bigr)^* = T_{a^*,\,b^*} , \qquad \bigl(S_{a,b}\bigr)^* = S_{\alpha(a^*),\,\alpha(b^*)}\;} ,
 $$
 
 and the adjoint operation is an involution on each family, $\bigl((S_{a,b})^*\bigr)^* = S_{a,b}$.
@@ -46,7 +46,7 @@ and the adjoint operation is an involution on each family, $\bigl((S_{a,b})^*\bi
 **Corollary (compatibility with the coset structure and the composition law).** The adjoint carries the signed sandwiches to the signed sandwiches and the unsigned to the unsigned, and it is compatible with the composition law of *The Signed Sandwich on the Group Algebra*,
 
 $$
-\bigl(S_{c,d}S_{a,b}\bigr)^* = S_{a,b}^*\,S_{c,d}^* , \qquad S_{a,b}^* = T_{a,b}^*\,\mathrm{A} = S_{\alpha(a^*),\alpha(b^*)} ,
+\boxed{\;\bigl(S_{c,d}S_{a,b}\bigr)^* = S_{a,b}^*\,S_{c,d}^* , \qquad S_{a,b}^* = T_{a,b}^*\,\mathrm{A} = S_{\alpha(a^*),\alpha(b^*)}\;} ,
 $$
 
 and it respects the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$, carrying $\mathrm{A}$ to itself.
@@ -60,7 +60,7 @@ and it respects the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$, carrying 
 **Theorem (the unitarity criterion).** In the unital case (in particular for a discrete group, or in the measure algebra $M(G)$) the signed sandwich $S_{a,b}$ is unitary if and only if both parameters are unitary elements of $\mathcal{A}$,
 
 $$
-S_{a,b}^*S_{a,b} = S_{a,b}S_{a,b}^* = 1 \iff a^*\!*a = a*\!a^* = 1 \ \text{and}\ b^*\!*b = b*\!b^* = 1 .
+\boxed{\;S_{a,b}^*S_{a,b} = S_{a,b}S_{a,b}^* = 1 \iff a^*\!*a = a*\!a^* = 1 \ \text{and}\ b^*\!*b = b*\!b^* = 1\;} .
 $$
 
 On the group algebra $L^1(G)$ of a non-discrete group there are no unitary elements, so no signed sandwich is unitary there; the unitarity condition is nonvacuous exactly on a discrete group or in the measure algebra, where the point masses are unitary.

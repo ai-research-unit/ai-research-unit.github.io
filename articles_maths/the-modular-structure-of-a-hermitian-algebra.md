@@ -23,7 +23,7 @@ For the Hermitian algebra of the group von Neumann algebra of a non-abelian infi
 **Theorem (the exchange).** Let $\jmath$ be the modular conjugation of the completion. Then
 
 $$
-\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_x\,\jmath = \bar L_{x^{\dagger}} ,
+\boxed{\;\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_x\,\jmath = \bar L_{x^{\dagger}}\;} ,
 $$
 
 and consequently $\jmath\bar L_x^{*}\jmath = \bar R_x$: the modular conjugation turns the adjoint of a left multiplication into the right multiplication by the same element.
@@ -89,7 +89,7 @@ the closure of the image of the positive cone under the cyclic vector.
 **Theorem (self-duality).** The cone $P$ is **self-dual**:
 
 $$
-P = P^{\natural} := \{u\in H : [u,v]\geq0 \text{ for every } v\in P\} ,
+\boxed{\;P = P^{\natural} := \{u\in H : [u,v]\geq0 \text{ for every } v\in P\}\;} ,
 $$
 
 the modular conjugation fixes $P$ pointwise in the sense $\jmath P = P$, and $\Theta_xP\subseteq P$ for every $x\in\mathcal{M}$.
@@ -131,7 +131,7 @@ $$
 **Theorem (Tomita–Takesaki).** The closure of $S$ has a polar decomposition
 
 $$
-\bar S = J\,\Delta^{1/2} ,
+\boxed{\;\bar S = J\,\Delta^{1/2}\;} ,
 $$
 
 where $J$ is an antiunitary involution, $J^{2} = \mathrm{id}$, and $\Delta = \bar S^{*}\bar S$ is a positive self-adjoint operator, generally unbounded; equivalently $\bar S = J\Delta^{1/2}$, $\bar S^{*} = J\Delta^{-1/2}$ and $\Delta = \bar S^{*}\bar S$.

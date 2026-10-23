@@ -22,7 +22,7 @@ with $\tau$ linear and continuous, $\tau(xy) = \tau(yx)$, and it is assumed **no
 **Proposition (associativity and symmetry).** The trace form is symmetric, $\langle x, y\rangle = \langle y, x\rangle$, and associative with respect to the multiplication,
 
 $$
-\langle xy, z\rangle = \langle x, yz\rangle ,
+\boxed{\;\langle xy, z\rangle = \langle x, yz\rangle\;} ,
 $$
 
 and the multiplications are adjoint families for it; the associativity is the compatibility of the form with the algebra structure, and it is the identity that all the adjoint computations of this group use.
@@ -36,7 +36,7 @@ and the multiplications are adjoint families for it; the associativity is the co
 **Theorem (the adjointness of the multiplications).** For every $a \in E$ the left and the right multiplication have adjoints with respect to the trace form, given by
 
 $$
-(L_{a})^{\dagger} = R_{a} , \qquad (R_{a})^{\dagger} = L_{a} .
+\boxed{\;(L_{a})^{\dagger} = R_{a} , \qquad (R_{a})^{\dagger} = L_{a}\;} .
 $$
 
 Consequently the adjoint of a left multiplication is a right multiplication, and conversely; the adjoint operation exchanges the two sides.
@@ -62,7 +62,7 @@ and the inner automorphism $\mathrm{Ad}_{a} = \Phi_{a,a^{-1}}$ has adjoint $\mat
 **Theorem (the involution is self-adjoint for the trace form).** Let $\theta$ be a continuous algebra involution of $E$ preserving the trace, $\tau \circ \theta = \varsigma \circ \tau$. Then $\theta$ is metrically $\varsigma$-self-adjoint,
 
 $$
-\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta y\rangle\bigr) \qquad (x, y \in E),
+\boxed{\;\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta y\rangle\bigr) \qquad (x, y \in E)\;},
 $$
 
 so $\theta^{\dagger} = \theta$ up to the scalar involution, and $\theta$ is an isometry of the trace form, $\langle \theta x, \theta y\rangle = \varsigma(\langle x, y\rangle)$.

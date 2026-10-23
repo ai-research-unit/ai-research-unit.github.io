@@ -39,7 +39,7 @@ The failure for three generators is witnessed by an explicit $s$-identity.
 The identity is
 
 $$
-G(x,y,z) = 0,
+\boxed{\;G(x,y,z) = 0\;},
 $$
 
 where $G$ is a homogeneous polynomial of degree $8$, an alternating sum of monomials in the operators $L_x, L_y, L_z$; the precise expression is recorded by Glennie (1963) and reproduced in the standard references. Its existence proves at once that $\operatorname{J}(X) \neq \operatorname{SJ}(X)$ for $|X| \geq 3$, and hence that some Jordan algebra is exceptional. The Albert algebra below is the concrete witness.
@@ -211,13 +211,13 @@ in which $J^+$ and $J^-$ are two copies of the module $J$ and are abelian, the m
 The explicit bracket and the verification of the Jacobi identity are in the standard references. For the special algebras $J = H_n(D)$ the construction recovers the classical simple Lie algebras of the corresponding matrix groups; for the Albert algebra it gives the exceptional Lie algebra
 
 $$
-\mathrm{G}(H_3(\mathbb{O})) \cong \mathrm{E}_7 ,
+\boxed{\;\mathrm{G}(H_3(\mathbb{O})) \cong \mathrm{E}_7\;} ,
 $$
 
 of dimension $133$, while
 
 $$
-\operatorname{Der}(H_3(\mathbb{O})) \cong \mathrm{F}_4, \qquad \mathrm{STR}(H_3(\mathbb{O})) \cong \mathrm{E}_6 \oplus \mathbb{R} ,
+\boxed{\;\operatorname{Der}(H_3(\mathbb{O})) \cong \mathrm{F}_4, \qquad \mathrm{STR}(H_3(\mathbb{O})) \cong \mathrm{E}_6 \oplus \mathbb{R}\;} ,
 $$
 
 where $\mathrm{STR}(J) = \operatorname{Der}(J) \oplus L(J)$ is the structure algebra, the Lie algebra of the structure group $\operatorname{Str}(J)$ of dimension $79$; its centre is spanned by $L_1$, which generates the dilations, its derived algebra is the invariant-preserving $\mathrm{E}_6$ of dimension $78$, and the graded pieces of $\mathrm{G}(J)$ add to $27 + 79 + 27 = 133$, as the dimension of $\mathrm{E}_7$ requires. The TKK construction is the cleanest bridge between the Jordan theory of this category and the Lie theory, and it shows that the exceptional Jordan algebra is not an isolated curiosity but the entry point to the exceptional series.

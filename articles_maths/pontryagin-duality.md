@@ -48,7 +48,7 @@ Equivalently, it is the topology of uniform convergence on compact subsets of $G
 **Theorem.** For a locally compact abelian group $G$ the dual $G^\vee$ is a locally compact abelian group, and the evaluation map
 
 $$
-G \times G^\vee \longrightarrow S^1, \qquad (x, \chi) \mapsto \chi(x),
+\boxed{\;G \times G^\vee \longrightarrow S^1, \qquad (x, \chi) \mapsto \chi(x)\;},
 $$
 
 is continuous. If $G$ is compact then $G^\vee$ is discrete, and if $G$ is discrete then $G^\vee$ is compact.
@@ -62,7 +62,7 @@ is continuous. If $G$ is compact then $G^\vee$ is discrete, and if $G$ is discre
 **Theorem (Pontryagin).** For every locally compact abelian group $G$, the evaluation map
 
 $$
-\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x),
+\boxed{\;\iota_G : G \longrightarrow G^{\vee\vee}, \qquad \iota_G(x)(\chi) = \chi(x)\;},
 $$
 
 is an isomorphism of topological groups. The contravariant functor $G \mapsto G^\vee$ is an equivalence of categories between the category of locally compact abelian groups and its opposite.

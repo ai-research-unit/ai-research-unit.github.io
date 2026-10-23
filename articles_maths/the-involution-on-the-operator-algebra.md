@@ -34,7 +34,7 @@ and it is nondegenerate by hypothesis; it is the twisted pairing $\{x,y\} = \lan
 **Theorem (existence, uniqueness and the elementary laws).** Let $T \in B(A)$ be adjointable. Then $T^\dagger$ is unique, and the assignment $T \mapsto T^\dagger$ is additive, conjugate-linear when the scalar twist is present, involutive and anti-multiplicative:
 
 $$
-(S + T)^\dagger = S^\dagger + T^\dagger , \qquad (ST)^\dagger = T^\dagger S^\dagger , \qquad (T^\dagger)^\dagger = T , \qquad (\lambda T)^\dagger = \bar\lambda\,T^\dagger .
+\boxed{\;(S + T)^\dagger = S^\dagger + T^\dagger , \qquad (ST)^\dagger = T^\dagger S^\dagger , \qquad (T^\dagger)^\dagger = T , \qquad (\lambda T)^\dagger = \bar\lambda\,T^\dagger\;} .
 $$
 
 Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of order two, an isomorphism $\mathcal{A}(A) \to \mathcal{A}(A)^{\mathrm{opp}}$, and the adjointable operators form a subalgebra of $B(A)$.
@@ -44,7 +44,7 @@ Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of ord
 **Theorem (self-adjoint and skew operators).** An operator $T$ is **self-adjoint** when $T^\dagger = T$ and **skew** when $T^\dagger = -T$; the self-adjoint operators form a real linear subspace and the skew operators the real subspace $i\mathcal{A}(A)^+$; every adjointable $T$ decomposes as
 
 $$
-T = \tfrac12(T + T^\dagger) + \tfrac12(T - T^\dagger) ,
+\boxed{\;T = \tfrac12(T + T^\dagger) + \tfrac12(T - T^\dagger)\;} ,
 $$
 
 and the self-adjoint and the skew operators are closed when the adjoint is continuous. The self-adjoint operators are exactly the operators fixed by the involution, and they are the analogue in $\mathcal{A}(A)$ of the self-adjoint elements of $A$.
@@ -54,7 +54,7 @@ and the self-adjoint and the skew operators are closed when the adjoint is conti
 **Theorem (the left regular representation is a `*`-representation).** The left and right multiplications are adjointable, with
 
 $$
-(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} ,
+\boxed{\;(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)}\;} ,
 $$
 
 and the map $a \mapsto L_a$ is a `*`-representation of $(A,\sigma)$ in $\mathcal{A}(A)$: $L_{ab} = L_aL_b$, $L_{a^*} = (L_a)^\dagger$. Hence the involution of the elements and the adjoint of the operators agree on the image of the regular representation, an agreement proved and not assumed.

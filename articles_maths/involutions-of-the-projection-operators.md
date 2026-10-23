@@ -16,13 +16,13 @@ The article assumes *The Projection Operator* for the idempotents, the centre of
 **Definition.** Let $P \in \operatorname{End}_K(V)$ be a projection, $P^2 = P$, and let $\mathrm{id}$ be the identity; the **involution associated to $P$** is
 
 $$
-\sigma_P = 2P - \mathrm{id} .
+\boxed{\;\sigma_P = 2P - \mathrm{id}\;} .
 $$
 
 **Theorem.** The map $\sigma_P$ is an involution of the vector space,
 
 $$
-\sigma_P^2 = \mathrm{id} ,
+\boxed{\;\sigma_P^2 = \mathrm{id}\;} ,
 $$
 
 and the correspondence $P \mapsto \sigma_P$ is a bijection between the projections of $V$ and the involutions of $V$ when $2$ is invertible in $K$; the inverse sends an involution $\sigma$ to the projection
@@ -70,7 +70,7 @@ is the **involution of the set of the projections**, and it satisfies $c^2 = \ma
 **Theorem.** The involution associated to a projection is compatible with the adjoint of the Hermitian structure: for the adjoint $P^{\dagger}$ of the projection $P$ with respect to $h$, the associated involution is the adjoint of the associated involution,
 
 $$
-\sigma_{P^{\dagger}} = (\sigma_P)^{\dagger} ,
+\boxed{\;\sigma_{P^{\dagger}} = (\sigma_P)^{\dagger}\;} ,
 $$
 
 so the map $P \mapsto \sigma_P$ intertwines the adjoint on the projections with the adjoint on the involutions; consequently $\sigma_P$ is self-adjoint exactly when $P$ is an orthogonal projection, and the involutions coming from the orthogonal projections are the self-adjoint involutions of the Hermitian structure.

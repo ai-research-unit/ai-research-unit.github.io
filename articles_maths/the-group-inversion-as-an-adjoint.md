@@ -12,7 +12,7 @@ Throughout, $k[G]$ is the group algebra with basis $G$, $\Sigma_{\iota}$ is the 
 **Theorem (the inversion is the adjoint index).** For every $a,b\in G$,
 
 $$
-(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}, \qquad (R_b)^{*}=R_{b^{-1}}=R_{\iota(b)},
+\boxed{\;(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}, \qquad (R_b)^{*}=R_{b^{-1}}=R_{\iota(b)}\;},
 $$
 
 and for a two-sided translation $(L_aR_b)^{*}=L_{a^{-1}}R_{b^{-1}}$.
@@ -40,9 +40,9 @@ and for a two-sided translation $(L_aR_b)^{*}=L_{a^{-1}}R_{b^{-1}}$.
 **Theorem (the identities of the inversion, the unit and the counit).** In $k[G]$,
 
 $$
-(\varepsilon\otimes\mathrm{id})\Delta=\mathrm{id}=(\mathrm{id}\otimes\varepsilon)\Delta,
+\boxed{\;(\varepsilon\otimes\mathrm{id})\Delta=\mathrm{id}=(\mathrm{id}\otimes\varepsilon)\Delta,
 \qquad
-m(\mathrm{id}\otimes\Sigma_{\iota})\Delta=u\varepsilon=m(\Sigma_{\iota}\otimes\mathrm{id})\Delta,
+m(\mathrm{id}\otimes\Sigma_{\iota})\Delta=u\varepsilon=m(\Sigma_{\iota}\otimes\mathrm{id})\Delta\;},
 $$
 
 where $m$ is the multiplication of $k[G]$. The first two say that the counit is the identity for the comultiplication; the last two say that the inversion is the inverse for the multiplication in the sense of the comultiplication.

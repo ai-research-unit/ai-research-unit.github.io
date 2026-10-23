@@ -70,8 +70,8 @@ $$
 **Theorem (finiteness and the double cover).** For a finite root system $\Phi$ in a definite space the lift is finite, the signed Hermitian sandwich restricts to a surjection
 
 $$
-\Theta^{\alpha}:\Gamma_\Phi\longrightarrow W_\Phi,\qquad
-\Theta^{\alpha}_{a_\alpha}=\rho_\alpha ,
+\boxed{\;\Theta^{\alpha}:\Gamma_\Phi\longrightarrow W_\Phi,\qquad
+\Theta^{\alpha}_{a_\alpha}=\rho_\alpha\;} ,
 $$
 
 with kernel $\{\pm1\}$, and $|\Gamma_\Phi|=2\,|W_\Phi|$. So the lift is a central extension of the reflection group by two elements, the element $-1$ generating the kernel, and the cover is two-to-one.
@@ -83,7 +83,7 @@ with kernel $\{\pm1\}$, and $|\Gamma_\Phi|=2\,|W_\Phi|$. So the lift is a centra
 **Theorem (the even part is the lift of the rotation subgroup).** Let $\Gamma_\Phi^0=\Gamma_\Phi\cap\mathrm{Spin}(V,\mathfrak{Q})$. Then $\Gamma_\Phi^0$ is normal of index two in $\Gamma_\Phi$, it is the lift of the rotation subgroup,
 
 $$
-\Theta^{\alpha}(\Gamma_\Phi^0)=W_\Phi\cap SO(V,\mathfrak{Q}),
+\boxed{\;\Theta^{\alpha}(\Gamma_\Phi^0)=W_\Phi\cap SO(V,\mathfrak{Q})\;},
 $$
 
 of index two in $W_\Phi$, and $|\Gamma_\Phi^0|=|W_\Phi|$.
@@ -129,7 +129,7 @@ The icosahedral system in $\mathrm{Cl}_{0,3}$ gives the binary icosahedral group
 **Proposition.** For a finite root system in a definite space the orders are
 
 $$
-|\Gamma_\Phi|=2\,|W_\Phi|,\qquad |\Gamma^0_\Phi|=|W_\Phi|,\qquad |\ker\Theta^{\alpha}|=2,
+\boxed{\;|\Gamma_\Phi|=2\,|W_\Phi|,\qquad |\Gamma^0_\Phi|=|W_\Phi|,\qquad |\ker\Theta^{\alpha}|=2\;},
 $$
 
 and the map $\Theta^{\alpha}$ is the restriction to the lift of the covering of the orthogonal group.

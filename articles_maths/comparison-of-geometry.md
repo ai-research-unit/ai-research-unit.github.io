@@ -21,6 +21,12 @@ The following table compares the invariant form of the eight algebras: its formu
 
 The table records the definite–indefinite divide. In $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ the form is positive definite, the null set is the origin alone, and the geometry is the Euclidean or spherical one of the line, the plane and the three-sphere; the norm and the Euclidean form coincide and every level set is a sphere (*Real Line Geometry and Isometries*; *Rotations and Reflections in the Complex Plane*; *Quaternion Geometry*). In $\mathbb{D}$ the signature is $(1,1)$, the null set is the pair of lines $\mathbb{R}(1\pm j)$, and the geometry is Lorentzian of dimension two; in $\mathbb{H}_{\mathrm{s}}$ the signature is $(2,2)$ and the null set is the three-dimensional cone over a torus (*Hyperbolic Rotations*; *Split-Quaternion Null Quadric and Projective Geometry*). The dual numbers are the degenerate column: the form has rank one, its radical is the maximal ideal $\mathrm{M}$, and the geometry is parabolic rather than Lorentzian, its rotations being shears (*Shears and Parabolic Rotations*). The two biquaternion systems carry a form with coefficients in $\mathbb{C}$ or $\mathbb{D}$ whose realification is of split signature $(4,4)$; in $\mathbb{B}$ the null cone is a complex cone of real dimension six, while in $\mathbb{H}_{\mathbb{D}}$ the norm $\langle\cdot\rangle_{\natural}$ is **anisotropic** and the non-invertible elements form the zero-divisor set $Z=Z_+\cup Z_-$ of two four-dimensional pieces, so that the null cone of the Hermitian form $g$ of signature $(4,4)$ strictly contains them (*The Null Quadric and Its Projective Geometry*; *Split-Biquaternion Geometry*).
 
+The projective null quadric of the split-quaternion and biquaternion columns is
+
+$$
+\boxed{\; Q\cong\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3 \;}.
+$$
+
 ## The Null Quadric and the Projective Picture
 
 The following table compares the projective picture of the eight algebras: the projectivised null set, its dimension, the maximal isotropic subspaces and the polarity. The eight algebras are the columns, in the fixed order, with the marker **—** where the null set is empty.

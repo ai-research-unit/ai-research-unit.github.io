@@ -16,7 +16,7 @@ The Clifford algebra, the fundamental relation and the parity grading are from *
 **Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **two-sided operator** attached to the pair $(\theta,c)$ is the map
 
 $$
-\Phi^{\theta,c}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x).
+\boxed{\;\Phi^{\theta,c}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)\;}.
 $$
 
 The left factor carries the element and the right factor carries its conjugate. The pairing of the two factors is what makes the family closed under composition.
@@ -131,7 +131,7 @@ For the signed inner conjugation this condition is the definition of the Cliffor
 **Proposition.** Let $x\in\Gamma(V,\mathfrak{Q})$ and let $N(x)=x x^{\natural}$ be its Clifford norm. Then $x^{\natural}=N(x)\,x^{-1}$ and
 
 $$
-x\,y\,x^{\natural}=N(x)\,\bigl(x\,y\,x^{-1}\bigr)
+\boxed{\;x\,y\,x^{\natural}=N(x)\,\bigl(x\,y\,x^{-1}\bigr)\;}
 $$
 
 for every $y\in\mathrm{Cl}(V,\mathfrak{Q})$. The conjugation sandwich on $\Gamma$ is thus the inner conjugation scaled by the norm.

@@ -71,7 +71,7 @@ because $*$ is anti-multiplicative and $*^{2} = \mathrm{id}$. Now $a^{*}x \in AI
 **Theorem (the quotient of a sesqualgebra).** Let $I$ be a two-sided ideal of $A$. Then the rule
 
 $$
-(x + I)(y + I) = xy + I
+\boxed{\;(x + I)(y + I) = xy + I\;}
 $$
 
 is well defined, and with it $A/I$ is a sesqualgebra with the same base involution $\varsigma$; the quotient map $\pi : A \to A/I$ is a surjective homomorphism with kernel $I$.
@@ -91,7 +91,7 @@ where $xj \in AI \subseteq I$ and $iy \in IA \subseteq I$ because $I$ is two-sid
 **Theorem (the involution descends exactly for a $*$-ideal).** Let $I$ be a two-sided ideal. Then the rule
 
 $$
-(x + I)^{*} = x^{*} + I
+\boxed{\;(x + I)^{*} = x^{*} + I\;}
 $$
 
 defines a map on $A/I$ if and only if $I$ is a $*$-ideal, and in that case $A/I$ is an algebra with a $\varsigma$-semilinear involution, and $\pi$ is a $*$-homomorphism.
@@ -123,7 +123,7 @@ defines a map on $A/I$ if and only if $I$ is a $*$-ideal, and in that case $A/I$
 **Theorem (the third isomorphism theorem).** Let $I \subseteq J$ be two-sided ideals of $A$. Then $J/I$ is a two-sided ideal of $A/I$, and
 
 $$
-\frac{A/I}{J/I} \; \cong \; A/J
+\boxed{\;\frac{A/I}{J/I} \; \cong \; A/J\;}
 $$
 
 as sesqualgebras. If in addition $I$ and $J$ are $*$-ideals, then the involution descends to each of them and the isomorphism is a $*$-isomorphism.

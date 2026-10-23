@@ -36,7 +36,7 @@ The article has five sections: the involution on the symmetry group; the induced
 **Definition.** Let $X = G/K$ be a homogeneous space for the symmetry group $G$, and let $\sigma$ be an involution of $G$ with $\sigma(K) = K$. The **induced involution** on $X$ is
 
 $$
-\sigma_X : X \longrightarrow X, \qquad \sigma_X(gK) = \sigma(g)K .
+\boxed{\;\sigma_X : X \longrightarrow X, \qquad \sigma_X(gK) = \sigma(g)K\;} .
 $$
 
 **Proposition.** The induced map $\sigma_X$ is well defined, it is a bijection of $X$ with $\sigma_X^2 = \mathrm{id}$, and it fixes the base point $o = eK$; it is the unique map of $X$ making the projection $G \to G/K$ equivariant for $\sigma$ on the group and $\sigma_X$ on the space. When $X$ carries the chosen form and $\sigma$ preserves it, $\sigma_X$ is an isometry of $X$.

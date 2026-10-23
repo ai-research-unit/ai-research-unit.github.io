@@ -33,7 +33,7 @@ The product is associative, because concatenation of words is associative, and t
 **Definition.** The **degree** of a homogeneous tensor $v_1 \cdots v_n$ is $n$, and the **grade involution** of $T(V)$ is the linear map
 
 $$
-\alpha : T(V) \to T(V), \qquad \alpha(x) = (-1)^n x \ \text{ on } V^{\otimes n} .
+\boxed{\;\alpha : T(V) \to T(V), \qquad \alpha(x) = (-1)^n x \ \text{ on } V^{\otimes n}\;} .
 $$
 
 **Proposition.** The grade involution is an algebra automorphism of $T(V)$ with $\alpha^2 = \mathrm{id}$, and it is the unique automorphism of $T(V)$ that is $-\mathrm{id}$ on $V$. Its fixed algebra is the even part $\bigoplus_{n \text{ even}} V^{\otimes n}$ and its negated part is the odd part $\bigoplus_{n \text{ odd}} V^{\otimes n}$; the grading of $T(V)$ is the one whose grade involution is $\alpha$.
@@ -65,7 +65,7 @@ defined on decomposable tensors and extended linearly.
 **Proposition.** The reversal involution and the grade involution commute, $\theta_\sigma\alpha = \alpha\theta_\sigma$, and their composite $\theta_\sigma\alpha$ is an anti-automorphism of $T(V)$ of order two, the **signed reversal**, acting on a decomposable tensor by
 
 $$
-\theta_\sigma\alpha(v_1\cdots v_n) = (-1)^n \sigma(v_n)\cdots\sigma(v_1) .
+\boxed{\;\theta_\sigma\alpha(v_1\cdots v_n) = (-1)^n \sigma(v_n)\cdots\sigma(v_1)\;} .
 $$
 
 *Proof.* The grade involution multiplies a word of length $n$ by $(-1)^n$ and the reversal preserves the length, so the two commute; the composite of an anti-automorphism with an automorphism is an anti-automorphism, and its square is $\theta_\sigma^2\alpha^2 = \mathrm{id}$.
@@ -87,7 +87,7 @@ $$
 **Proposition.** Let $x$ and $y$ be homogeneous elements of $T(V)$ of degrees $m$ and $n$. Then
 
 $$
-\theta_\sigma(xy) = \theta_\sigma(y)\theta_\sigma(x), \qquad \alpha(xy) = \alpha(x)\alpha(y), \qquad (\theta_\sigma\alpha)(xy) = (\theta_\sigma\alpha)(y)\,(\theta_\sigma\alpha)(x),
+\boxed{\;\theta_\sigma(xy) = \theta_\sigma(y)\theta_\sigma(x), \qquad \alpha(xy) = \alpha(x)\alpha(y), \qquad (\theta_\sigma\alpha)(xy) = (\theta_\sigma\alpha)(y)\,(\theta_\sigma\alpha)(x)\;},
 $$
 
 so the reversal and the signed reversal are anti-multiplicative and the grade involution is multiplicative. The sign rule of the grading is $\alpha(x) = (-1)^m x$ on the degree-$m$ part: the grade involution is the identity on the even part and minus the identity on the odd part, and the signed reversal differs from the reversal by the sign $(-1)^m$ on the degree-$m$ part. The two maps $\alpha$ and $\theta_\sigma$ commute, and neither of them carries a Koszul factor of its own: the factor $(-1)^{mn}$ belongs to the graded twist of *Superalgebras and Graded Structures*, and it is what separates the graded involution from the superinvolution in *Involutive Graded Algebras*.

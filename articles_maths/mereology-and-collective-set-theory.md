@@ -105,7 +105,7 @@ A pre-order carries a canonical equivalence relation, and for the division relat
 
 **Theorem.** The relation $\preceq$ on the quotient $M/{\sim}$ given by
 $$
-[x] \preceq [y] \quad\iff\quad x \mid y
+\boxed{\;[x] \preceq [y] \quad\iff\quad x \mid y\;}
 $$
 is well defined and is a partial order.
 
@@ -194,7 +194,7 @@ Both are read as universally quantified over $x$ and $y$, and $<$ is the first p
 The literature states strong supplementation in two forms, which differ exactly in whether the witness is required to be disjoint from the second object or merely not a part of it. The **disjoint form** is
 
 $$
-x \nleq y \;\Rightarrow\; \exists z\,(z \le x \wedge z \perp y) ,
+\boxed{\;x \nleq y \;\Rightarrow\; \exists z\,(z \le x \wedge z \perp y)\;} ,
 $$
 
 written $(\mathrm{SSP}_\perp)$ below.
@@ -267,7 +267,7 @@ One structure therefore satisfies $(\mathrm{SSP}_\perp)$ and the failure of anti
 **Definition.** Parthood $\le$ is **extensional** when objects with the same proper parts are equal:
 
 $$
-\forall z\,(z < x \iff z < y) \;\Rightarrow\; x = y .
+\boxed{\;\forall z\,(z < x \iff z < y) \;\Rightarrow\; x = y\;} .
 $$
 
 The condition is written (EXT) below.

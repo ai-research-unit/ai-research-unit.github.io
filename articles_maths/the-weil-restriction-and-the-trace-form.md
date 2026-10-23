@@ -38,7 +38,7 @@ the base change of $X$ along the automorphism $\sigma$ of $L$; it agrees with $X
 
 **Theorem (the base change of the restriction).** For a finite Galois extension $L/k$ with group $G$ there is a canonical isomorphism over $L$
 $$
-\bigl(R_{L/k}X\bigr)\times_kL\ \cong\ \prod_{\sigma\in G}{}^\sigma X ,
+\boxed{\;\bigl(R_{L/k}X\bigr)\times_kL\ \cong\ \prod_{\sigma\in G}{}^\sigma X\;} ,
 $$
 the product of the conjugates of $X$.
 
@@ -50,7 +50,7 @@ the product of the conjugates of $X$.
 
 **Theorem (base change is left adjoint to the restriction).** For a $k$-scheme $T$ and an $L$-variety $X$ there is a bijection, natural in both variables,
 $$
-\operatorname{Hom}_k\bigl(T,\ R_{L/k}X\bigr)\ \cong\ \operatorname{Hom}_L\bigl(T\times_kL,\ X\bigr),
+\boxed{\;\operatorname{Hom}_k\bigl(T,\ R_{L/k}X\bigr)\ \cong\ \operatorname{Hom}_L\bigl(T\times_kL,\ X\bigr)\;},
 $$
 so that the base-change functor $(-)\times_kL$ is left adjoint to the Weil restriction:
 $$
@@ -110,7 +110,7 @@ Its polar quadratic form is $\alpha\mapsto\operatorname{Tr}_{L/k}(\alpha^2)$, an
 
 **Theorem (nondegeneracy and invariance).** The trace form is nondegenerate exactly when $L/k$ is separable, and when $L/k$ is Galois it is invariant under the action,
 $$
-\mathfrak{Q}(\sigma x,\sigma y) = \mathfrak{Q}(x,y) \qquad (\sigma\in G),
+\boxed{\;\mathfrak{Q}(\sigma x,\sigma y) = \mathfrak{Q}(x,y) \qquad (\sigma\in G)\;},
 $$
 so that the Galois group preserves the trace form. The multiplication operator $m_\alpha$ is self-adjoint with respect to $q$, $\mathfrak{Q}(\alpha x,y) = \mathfrak{Q}(x,\alpha y)$.
 

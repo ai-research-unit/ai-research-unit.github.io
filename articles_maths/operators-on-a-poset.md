@@ -172,7 +172,7 @@ the previous subsection is the set of monotone maps of $P$ and of $P^{\mathrm{op
 **Definition.** A monotone map $f : P \to Q$ is **residuated**, with **residual** $g : Q \to P$, if
 
 $$
-f(p) \leq q \quad\Longleftrightarrow\quad p \leq g(q) \qquad \text{for all } p \in P, q \in Q .
+\boxed{\;f(p) \leq q \quad\Longleftrightarrow\quad p \leq g(q) \qquad \text{for all } p \in P, q \in Q\;} .
 $$
 
 Equivalently, the pair $f \dashv g$ is a **Galois connection** between $P$ and $Q$ in the sense of
@@ -196,7 +196,7 @@ it preserves all joins: $f(\bigvee_i p_i) = \bigvee_i f(p_i)$ for every family i
 residual is given by
 
 $$
-g(q) = \bigvee \{p \in P : f(p) \leq q\}.
+\boxed{\;g(q) = \bigvee \{p \in P : f(p) \leq q\}\;}.
 $$
 
 **Proof.** If $f$ is residuated then it preserves joins, by *Order Theory and Lattices*. Conversely, if
@@ -238,8 +238,8 @@ and only if it preserves arbitrary unions, and then there is a unique relation $
 Y$ with
 
 $$
-f(A) = R[A] = \{y \in Y : (x,y) \in R \text{ for some } x \in A\}, \qquad
-g(B) = \{x \in X : (x,y) \in R \Rightarrow y \in B\},
+\boxed{\;f(A) = R[A] = \{y \in Y : (x,y) \in R \text{ for some } x \in A\}, \qquad
+g(B) = \{x \in X : (x,y) \in R \Rightarrow y \in B\}\;},
 $$
 
 where $g$ is the residual of $f$. Hence the residuated maps $\mathcal{P}(X) \to \mathcal{P}(Y)$ are in

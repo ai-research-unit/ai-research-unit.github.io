@@ -18,7 +18,7 @@ The article assumes the Lie group, its Lie algebra and the exponential from *Lie
 **Proposition.** Let $Z_0$ span $\mathfrak{z}(\mathrm{K})$. Then $\operatorname{ad}_{Z_0}$ has the eigenvalues $0$, $i$ and $-i$, its $0$-eigenspace is $\mathrm{K}$, and the decomposition
 
 $$
-\mathrm{P}\otimes\mathbb{C} = \mathrm{P}^{+}\oplus\mathrm{P}^{-}
+\boxed{\;\mathrm{P}\otimes\mathbb{C} = \mathrm{P}^{+}\oplus\mathrm{P}^{-}\;}
 $$
 
 into the $i$- and the $-i$-eigenspaces gives $\mathrm{P}$ a complex structure by the operator $J = \operatorname{ad}_{Z_0}$ restricted to $\mathrm{P}$; the operator $J$ is $K$-invariant, $J^2 = -\mathrm{id}$, and $[JX,JY] = [X,Y]$ for $X,Y\in\mathrm{P}$.
@@ -68,7 +68,7 @@ a domain of holomorphy in the complexification of $\mathrm{P}$.
 **Theorem.** The tube domain is biholomorphic to the bounded symmetric domain, the biholomorphism being the **Cayley transform**
 
 $$
-c = (\mathrm{id} - J)(\mathrm{id} + J)^{-1}\big|_{\mathrm{P}} ,
+\boxed{\;c = (\mathrm{id} - J)(\mathrm{id} + J)^{-1}\big|_{\mathrm{P}}\;} ,
 $$
 
 which extends to a biholomorphism of a neighbourhood of the base point with $c(0) = 0$ and carries the tube to the bounded domain; the group $G$ acts on the tube by the affine transformations $X\mapsto \operatorname{Ad}_kX + Y$ with $k\in K$ and $Y\in\mathrm{P}$.
@@ -80,7 +80,7 @@ which extends to a biholomorphism of a neighbourhood of the base point with $c(0
 **Theorem (the Siegel upper half-plane).** For $G = Sp(n,\mathbb{R})$ the cone is the cone of the positive definite symmetric matrices, the tube domain is the Siegel upper half-plane
 
 $$
-\mathcal{H}_n = \bigl\{Z\in\operatorname{Sym}_n(\mathbb{C}) : \operatorname{Im}Z>0\bigr\} ,
+\boxed{\;\mathcal{H}_n = \bigl\{Z\in\operatorname{Sym}_n(\mathbb{C}) : \operatorname{Im}Z>0\bigr\}\;} ,
 $$
 
 and the group acts by the fractional linear transformations $Z\mapsto (AZ+B)(CZ+D)^{-1}$; the bounded realisation is the corresponding bounded symmetric domain of rank $n$.

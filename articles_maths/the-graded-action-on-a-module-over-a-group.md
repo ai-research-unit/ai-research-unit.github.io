@@ -50,7 +50,7 @@ The degree on the group makes the group algebra into a graded algebra, and the g
 **Proposition.** If $\varepsilon : G\to\{\pm1\}$ is a degree, then the group algebra is graded by
 
 $$
-k[G]^{\bar0} = \Bigl\{\sum_{g\in G^{\bar0}} c_g\,g\Bigr\}, \qquad k[G]^{\bar1} = \Bigl\{\sum_{g\in G^{\bar1}} c_g\,g\Bigr\},
+\boxed{\;k[G]^{\bar0} = \Bigl\{\sum_{g\in G^{\bar0}} c_g\,g\Bigr\}, \qquad k[G]^{\bar1} = \Bigl\{\sum_{g\in G^{\bar1}} c_g\,g\Bigr\}\;},
 $$
 
 and the multiplication respects the grading, $k[G]^{\bar i}\,k[G]^{\bar j}\subseteq k[G]^{\overline{i+j}}$.
@@ -60,7 +60,7 @@ and the multiplication respects the grading, $k[G]^{\bar i}\,k[G]^{\bar j}\subse
 **Corollary (the compatibility of the action).** A graded module over $(G,\varepsilon)$ is a graded module over the graded algebra $k[G]$, in the sense that the action is compatible with the grading,
 
 $$
-k[G]^{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}} .
+\boxed{\;k[G]^{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}}\;} .
 $$
 
 **Proof.** It suffices to check the inclusion on the basis $G\subseteq k[G]$, where it is the defining property of the graded action, and to extend by linearity.
@@ -82,7 +82,7 @@ on homogeneous $m$, extended linearly.
 **Proposition (it is a projective action).** For homogeneous $m$ the signed action satisfies
 
 $$
-g\triangleright(h\triangleright m) = (-1)^{\varepsilon(g)\varepsilon(h)}\,(gh)\triangleright m .
+\boxed{\;g\triangleright(h\triangleright m) = (-1)^{\varepsilon(g)\varepsilon(h)}\,(gh)\triangleright m\;} .
 $$
 
 Hence the signed action is a **projective action** with cocycle the **Koszul sign** $c(g,h)=(-1)^{\varepsilon(g)\varepsilon(h)}$; it is an honest action exactly when the degree is trivial. Each operator $g\pi_M^{\varepsilon(g)}$ is even, and the assignment $g\mapsto g\pi_M^{\varepsilon(g)}$ is a projective representation with the same cocycle.

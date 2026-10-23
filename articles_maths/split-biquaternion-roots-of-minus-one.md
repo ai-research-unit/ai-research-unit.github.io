@@ -88,7 +88,9 @@ $$
 where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,
 
 $$
-\tilde\Xi = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-),
+\boxed{\;
+\tilde\Xi = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-)
+\;},
 $$
 
 with $\mu_\pm$ unit pure real quaternions.

@@ -48,7 +48,7 @@ and its conjugate is $\bar D = \partial/\partial x_t-\sum_{i=1}^{m}e_i\partial/\
 **Proposition (factorisation and ellipticity).** The identities
 
 $$
-D\bar D = \bar DD = \Delta = \partial^2/\partial x_t^2+\sum_{i=1}^{m}\partial^2/\partial x_i^2
+\boxed{\;D\bar D = \bar DD = \Delta = \partial^2/\partial x_t^2+\sum_{i=1}^{m}\partial^2/\partial x_i^2\;}
 $$
 
 hold, and $D$ is elliptic: its principal symbol $\sigma(\xi) = \xi_t+\sum_{i=1}^{m}e_i\xi_i$ is a unit of $A$ for every $\xi = (\xi_t,\dots,\xi_m)\neq0$, with
@@ -112,7 +112,7 @@ in the sense of distributions; consequently $E$ is a fundamental solution of $D$
 **Theorem (Cauchy–Pompeiu).** Let $\Omega\subseteq\mathbb{R}^{m+1}$ be a bounded domain with smooth boundary, oriented by the outward normal $\nu$, and put $\nu_B = \nu_t+\sum_{i=1}^{m}\nu_i e_i$, $\nu_\mu$ the components of $\nu$. For $f$ of class $C^1$ on $\bar\Omega$ and $x\in\Omega$,
 
 $$
-f(x) = \int_{\partial\Omega}E(x-y)\,\nu_B(y)\,f(y)\,dS(y)-\int_{\Omega}E(x-y)\,(Df)(y)\,dy .
+\boxed{\;f(x) = \int_{\partial\Omega}E(x-y)\,\nu_B(y)\,f(y)\,dS(y)-\int_{\Omega}E(x-y)\,(Df)(y)\,dy\;} .
 $$
 
 *Proof.* Quoted as standard; it is the Clifford instance of the general Cauchy–Pompeiu formula of *Hypercomplex Analysis*, and it is proved by cutting the singular point out of the domain, applying the divergence theorem to the smooth part and letting the excision radius shrink, the singular integral at the boundary contributing the value $f(x)$.
@@ -464,7 +464,7 @@ $$
 **Theorem (Fischer decomposition).** Let $\mathcal{P}_k$ be the space of $\mathcal{S}$-valued homogeneous polynomials of degree $k$ on $\mathbb{R}^{m+1}$. Then
 
 $$
-\mathcal{P}_k = \bigoplus_{j=0}^{k} (x^{\natural})^{\,j}\,\mathcal{M}_{k-j} ,
+\boxed{\;\mathcal{P}_k = \bigoplus_{j=0}^{k} (x^{\natural})^{\,j}\,\mathcal{M}_{k-j}\;} ,
 $$
 
 a finite direct sum in which $(x^{\natural})^{\,j}$ denotes left multiplication by the $j$-th power of the conjugate variable $x^{\natural} = x_t-\sum_{i=1}^{m}e_ix_i$.

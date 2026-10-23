@@ -64,7 +64,7 @@ The definition is the one that gives the maximum principle its classical shape. 
 **Theorem (Pontryagin maximum principle, normal form).** Suppose that $\Omega$ is compact, that $f$ is continuous in $(u,t)$ and of class $C^1$ in $x$ with a bound on $\partial/\partial x f$, and that $L$ and $\varphi$ are of class $C^1$ in $x$. Let $(x^*,u^*)$ be optimal for the problem with $x(t_0)=x_0$ fixed, $T$ fixed and $x(T)$ free. Then there is an absolutely continuous $n : [t_0,T]\to\mathbb{R}^n$ such that, for almost every $t$,
 
 $$
-\left(dx/dt\right)^{*} = \frac{\partial H}{\partial n}, \qquad \,dn/dt = -\frac{\partial H}{\partial x},
+\boxed{\;\left(dx/dt\right)^{*} = \frac{\partial H}{\partial n}, \qquad \,dn/dt = -\frac{\partial H}{\partial x}\;},
 $$
 
 the second equation being read along $(x^*,u^*,n)$, and such that $u^*(t)$ minimises the function $u\mapsto H(x^*(t),u,n(t),t)$ over $\Omega$ at almost every $t$. At the terminal time,
@@ -146,7 +146,7 @@ $$
 where $S$ is the symmetric solution on $[t_0,T]$ of the **matrix Riccati equation**
 
 $$
-dS/dt = -C - A^{\mathsf T}S - SA + SBD^{-1}B^{\mathsf T}S , \qquad S(T) = E ,
+\boxed{\;dS/dt = -C - A^{\mathsf T}S - SA + SBD^{-1}B^{\mathsf T}S , \qquad S(T) = E\;} ,
 $$
 
 which the hypotheses of the theorem ensure to exist on the whole interval, while the scalar instance below shows how a solution can fail to. The costate system is $dx/dt = Ax - BD^{-1}B^{\mathsf T}Sx$, $dn/dt = -Cx - A^{\mathsf T}n$.
@@ -248,7 +248,7 @@ the infimum being over the controls on $[\tau,\tau']$ and $x$ the trajectory the
 **Theorem (Hamilton–Jacobi–Bellman).** Suppose $V$ is of class $C^1$ on $X\times(t_0,T)$. Then $V$ satisfies
 
 $$
-\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\xi,u,t) + \Bigl\langle \frac{\partial V}{\partial\xi}, f(\xi,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\xi,T)=\varphi(\xi).
+\boxed{\;\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\xi,u,t) + \Bigl\langle \frac{\partial V}{\partial\xi}, f(\xi,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\xi,T)=\varphi(\xi)\;}.
 $$
 
 *Proof.* Take $\tau'=\tau+\varepsilon$ in Bellman's principle, let the control be constant on the short interval, and expand to first order in $\varepsilon$; dividing by $\varepsilon$ and using that an optimal control achieves the minimum gives the equation.

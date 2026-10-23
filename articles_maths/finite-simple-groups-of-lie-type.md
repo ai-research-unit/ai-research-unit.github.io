@@ -40,7 +40,7 @@ The second family of relations is the **Chevalley commutator formula**; the stru
 **Theorem (order formula).** For the simply connected Chevalley group of an irreducible root system with $N$ positive roots and Weyl group degrees $d_1,\ldots,d_n$,
 
 $$
-|G_{\mathrm{sc}}(\Phi,q)| = q^{N} \prod_{i=1}^{n} (q^{d_i} - 1),
+\boxed{\;|G_{\mathrm{sc}}(\Phi,q)| = q^{N} \prod_{i=1}^{n} (q^{d_i} - 1)\;},
 $$
 
 and the adjoint group is the quotient by the centre, of order $|G_{\mathrm{sc}}|/|Z|$ with $Z$ the centre. The order is the value at $q$ of a polynomial with integer coefficients.
@@ -54,7 +54,7 @@ and the adjoint group is the quotient by the centre, of order $|G_{\mathrm{sc}}|
 **Theorem.** For $q$ a prime power, $n \geq 1$,
 
 $$
-|\mathrm{GL}_n(q)| = q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1), \qquad |\mathrm{SL}_n(q)| = |\mathrm{GL}_n(q)|/(q-1),
+\boxed{\;|\mathrm{GL}_n(q)| = q^{n(n-1)/2}\prod_{i=1}^{n}(q^i-1), \qquad |\mathrm{SL}_n(q)| = |\mathrm{GL}_n(q)|/(q-1)\;},
 $$
 
 and the projective special linear group has order
@@ -151,7 +151,7 @@ The twisted groups of type $^2A_n$ are the **unitary groups** $\mathrm{PSU}_{n+1
 **Theorem (orders of the twisted groups).** For the parameters above,
 
 $$
-\lvert {}^2A_{n}(q)\rvert = |\mathrm{SU}_{n+1}(q)|, \qquad \lvert {}^2D_n(q)\rvert = q^{n(n-1)}(q^n+1)\prod_{i=1}^{n-1}(q^{2i}-1),
+\boxed{\;\lvert {}^2A_{n}(q)\rvert = |\mathrm{SU}_{n+1}(q)|, \qquad \lvert {}^2D_n(q)\rvert = q^{n(n-1)}(q^n+1)\prod_{i=1}^{n-1}(q^{2i}-1)\;},
 $$
 
 $$

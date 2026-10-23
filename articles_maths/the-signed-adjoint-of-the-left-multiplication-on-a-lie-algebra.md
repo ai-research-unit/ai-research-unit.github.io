@@ -18,7 +18,7 @@ The article assumes the signed left multiplication, its factorisation and its ke
 **Theorem (the explicit adjoint).** The adjoint of the signed left multiplication is the signed left multiplication by the negative of the image of the parameter,
 
 $$
-\bigl(\ell^{\alpha}_a\bigr)^{*} = \alpha^{*}L_a^{*} = -\alpha L_a = -L_{\alpha(a)}\alpha = \ell^{\alpha}_{-\alpha(a)} = -\ell^{\alpha}_{\alpha(a)} .
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*} = \alpha^{*}L_a^{*} = -\alpha L_a = -L_{\alpha(a)}\alpha = \ell^{\alpha}_{-\alpha(a)} = -\ell^{\alpha}_{\alpha(a)}\;} .
 $$
 
 *Proof.* The adjoint reverses the order, so $(\ell^{\alpha}_a)^{*} = \alpha^{*}L_a^{*}$; the involution is a self-adjoint isometry, $\alpha^{*} = \alpha$, and the left multiplication is skew-adjoint, $L_a^{*} = -L_a$, as in *The Signed Adjoint Sandwich on a Lie Algebra*; hence the adjoint is $-\alpha L_a$, and the naturality $\alpha L_a = L_{\alpha(a)}\alpha$ together with the linearity in the parameter gives the forms displayed.
@@ -28,7 +28,7 @@ $$
 **Theorem (self-adjoint and skew-adjoint).** The signed left multiplication is self-adjoint exactly for the odd parameters and skew-adjoint exactly for the even parameters:
 
 $$
-\bigl(\ell^{\alpha}_a\bigr)^{*} = \ell^{\alpha}_a \iff \alpha(a) = -a \iff a\in\mathrm{G}^{-} ,
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*} = \ell^{\alpha}_a \iff \alpha(a) = -a \iff a\in\mathrm{G}^{-}\;} ,
 $$
 $$
 \bigl(\ell^{\alpha}_a\bigr)^{*} = -\ell^{\alpha}_a \iff \alpha(a) = a \iff a\in\mathrm{G}^{+} .
@@ -45,7 +45,7 @@ $$
 **Theorem.** The signed left multiplication is unitary for $H$ exactly when the ordinary left multiplication is a complex structure,
 
 $$
-\bigl(\ell^{\alpha}_a\bigr)^{*}\ell^{\alpha}_a = \mathrm{id} \iff L_a^{2} = -\mathrm{id} \ \text{and}\ L_{\alpha(a)}^{2} = -\mathrm{id} ,
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{*}\ell^{\alpha}_a = \mathrm{id} \iff L_a^{2} = -\mathrm{id} \ \text{and}\ L_{\alpha(a)}^{2} = -\mathrm{id}\;} ,
 $$
 
 and in that case the operator is a unitary complex structure on the algebra.

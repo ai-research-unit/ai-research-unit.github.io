@@ -30,7 +30,7 @@ which is the adjointness condition of *Hermitian Modules over a Hermitian Algebr
 **Proposition.** With respect to the module form $(\cdot,\cdot)$ and the induced adjoint on $\mathrm{End}_A(S)$, the adjoint of the bilinear operator $T_b : s\mapsto b(s,\cdot)$ is $T_{b^{*}}$, where $b^{*}(s,t) = \sigma(b(t,s))$; equivalently, the assignment $b\mapsto T_b$ commutes with the adjoint:
 
 $$
-(T_b)^{*} = T_{b^{*}} .
+\boxed{\;(T_b)^{*} = T_{b^{*}}\;} .
 $$
 
 **Proof.** $\langle T_bs, t\rangle = b(s,t)$ and $\langle s, T_{b^{*}}t\rangle = b^{*}(t,s) = \sigma(b(s,t))$; comparing with the defining property $\langle T_bs,t\rangle = \sigma(\langle s, T_b^{*}t\rangle)$ of the adjoint under the sesquilinear convention gives the identity.
@@ -50,7 +50,7 @@ $$
 is an **isomorphism** of algebras, and the $2^n$ blade operators $\rho(e_{i_1}\cdots e_{i_k})$ form a basis of $\mathrm{End}_A(S)$; equivalently every endomorphism of the spinor module is a Clifford-linear combination of the blades. In bilinear form, the **bilinear covariants**
 
 $$
-b_A(s,t) = \bigl(s, \rho(\Gamma_A)\,t\bigr), \qquad \Gamma_A \text{ a basis of } \mathrm{Cl}(V,\mathfrak{Q}),
+\boxed{\;b_A(s,t) = \bigl(s, \rho(\Gamma_A)\,t\bigr), \qquad \Gamma_A \text{ a basis of } \mathrm{Cl}(V,\mathfrak{Q})\;},
 $$
 
 span the space of bilinear forms on $S$, and every bilinear form is a linear combination of the covariants.
@@ -72,7 +72,7 @@ span the space of bilinear forms on $S$, and every bilinear form is a linear com
 **Theorem.** For $u$ in the unitary slice $U$, the bilinear form $b\circ(u\times u)$ has the same expansion coefficients as $b$ in the covariants:
 
 $$
-b_A(u\cdot s, u\cdot t) = b_{\,u^{\dagger}\Gamma_Au}(s,t) ,
+\boxed{\;b_A(u\cdot s, u\cdot t) = b_{\,u^{\dagger}\Gamma_Au}(s,t)\;} ,
 $$
 
 so the slice permutes the covariants by the conjugation $\Gamma_A\mapsto u^{\dagger}\Gamma_A u$ of the Clifford algebra; in particular the scalar covariant is invariant, the space of degree-$k$ covariants is preserved, and the expansion of any form in the covariants is transformed by the adjoint representation of the slice.

@@ -26,7 +26,7 @@ The positive cone and the positive functionals are *The Positive Cone of an Invo
 **Definition.** A **positive definite form** (or a **semidefinite form**) on the involutive algebra is a Hermitian form $\langle\cdot,\cdot\rangle : A\times A\to\mathbb{C}$ with
 
 $$
-\langle a,a\rangle\geq0 \ \text{ for every } a , \qquad \langle a,b\rangle = \overline{\langle b,a\rangle} , \qquad \langle \alpha a + \beta b, c\rangle = \alpha\langle a,c\rangle + \beta\langle b,c\rangle ;
+\boxed{\;\langle a,a\rangle\geq0 \ \text{ for every } a , \qquad \langle a,b\rangle = \overline{\langle b,a\rangle} , \qquad \langle \alpha a + \beta b, c\rangle = \alpha\langle a,c\rangle + \beta\langle b,c\rangle\;} ;
 $$
 
 it is **definite** when $\langle a,a\rangle = 0$ implies $a = 0$, and its **radical** is the subspace $N = \{a : \langle a,a\rangle = 0\}$.
@@ -38,7 +38,7 @@ it is **definite** when $\langle a,a\rangle = 0$ implies $a = 0$, and its **radi
 **Proposition (Cauchy–Schwarz and the radical).** Every positive definite form satisfies
 
 $$
-\lvert\langle a,b\rangle\rvert^{2}\leq\langle a,a\rangle\langle b,b\rangle ,
+\boxed{\;\lvert\langle a,b\rangle\rvert^{2}\leq\langle a,a\rangle\langle b,b\rangle\;} ,
 $$
 
 its radical $N$ is a subspace on which the form vanishes, the quotient $A/N$ carries a definite form, and the completion of the quotient is a Hilbert space $\mathcal{H}_\varphi$.
@@ -50,7 +50,7 @@ its radical $N$ is a subspace on which the form vanishes, the quotient $A/N$ car
 **Theorem (the order is the intersection of the forms).** For Hermitian $h$,
 
 $$
-h\geq0 \iff \langle h\, a, a\rangle_\varphi\geq0 \ \text{ for every } a \text{ and every positive functional } \varphi \iff \varphi(h)\geq0 \ \text{ for every positive functional } \varphi ,
+\boxed{\;h\geq0 \iff \langle h\, a, a\rangle_\varphi\geq0 \ \text{ for every } a \text{ and every positive functional } \varphi \iff \varphi(h)\geq0 \ \text{ for every positive functional } \varphi\;} ,
 $$
 
 equivalently $h$ is positive exactly when it is a positive operator in every representation associated with a positive definite form; hence the order of the Hermitian part is recovered from the cone of the forms, and the cone is the intersection of the half-spaces cut by the positive functionals.

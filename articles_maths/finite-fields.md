@@ -31,7 +31,7 @@ Throughout, $p$ is a prime, $q = p^n$ with $n \geq 1$, and $\mathbb{F}_p = \math
 **Theorem.** For every prime power $q = p^n$ there exists a field with $q$ elements, namely the splitting field of
 
 $$
-f_q(x) = x^{q} - x
+\boxed{\;f_q(x) = x^{q} - x\;}
 $$
 
 over $\mathbb{F}_p$.
@@ -62,7 +62,7 @@ So the roots form a subfield of $K$ containing $\mathbb{F}_p$; since $K$ is gene
 **Theorem (Frobenius).** Let $K$ be a field of characteristic $p > 0$. The map
 
 $$
-\varphi : K \to K, \qquad \varphi(x) = x^p,
+\boxed{\;\varphi : K \to K, \qquad \varphi(x) = x^p\;},
 $$
 
 is an injective field endomorphism, called the **Frobenius map**. If $K$ is finite, $\varphi$ is an automorphism, of order $\log_p \lvert K \rvert$ when $K = \mathbb{F}_{p^n}$.
@@ -114,7 +114,7 @@ This is a special case of the general fact that every finite subgroup of the mul
 **Corollary (number of irreducibles).** The number of monic irreducible polynomials of degree $n$ over $\mathbb{F}_p$ is
 
 $$
-\frac{1}{n} \sum_{d \mid n} \mu(d)\, p^{n/d},
+\boxed{\;\frac{1}{n} \sum_{d \mid n} \mu(d)\, p^{n/d}\;},
 $$
 
 where $\mu$ is the Möbius function. Each is the minimal polynomial of an element of $\mathbb{F}_{p^n}$ of degree $n$ over $\mathbb{F}_p$, and the formula counts the Frobenius orbits of size $n$.

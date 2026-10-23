@@ -38,7 +38,7 @@ sending $X$ to the left-invariant vector field $X^{\mathrm{lift}}$ of *Operators
 **Theorem (the derived representation is the derivative of the regular representation).** For $X \in \mathrm{G}$ and $f \in C^\infty(G)$,
 
 $$
-X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} L_{\exp(tX)}f .
+\boxed{\;X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} L_{\exp(tX)}f\;} .
 $$
 
 Hence the derived representation of the left regular representation is the representation by the left-invariant fields, and the right regular representation has the derived representation $X \mapsto -{X^{\mathrm{lift}}}^{R}$, where ${X^{\mathrm{lift}}}^{R}$ is the right-invariant field equal to $X$ at the identity.
@@ -70,7 +70,7 @@ whose image is the algebra $D_L(G)$ of left-invariant differential operators; it
 **Theorem (the bi-invariant operators are the invariants).** An operator $D \in \operatorname{End}_\mathbb{C}(C^\infty(G))$ commutes with every left and every right translation if and only if it lies in the image of the centre $Z(\mathrm{U}(\mathrm{G}))$,
 
 $$
-D_L(G)\cap D_R(G) = Z^{\mathrm{lift}}(\mathrm{U}(\mathrm{G})) .
+\boxed{\;D_L(G)\cap D_R(G) = Z^{\mathrm{lift}}(\mathrm{U}(\mathrm{G}))\;} .
 $$
 
 *Proof.* This is the identification of the bi-invariant differential operators with the centre of the enveloping algebra from *Operators on a Lie Group*, restated as the statement that the operators fixed by the two-sided action are the elements of the centre. An operator commuting with all translations is in particular left-invariant and right-invariant, hence bi-invariant; the converse is the centrality.
@@ -88,7 +88,7 @@ $$
 **Theorem (Peter--Weyl).** Let $G$ be compact. The left regular representation on $L^2(G)$ decomposes as the Hilbert direct sum
 
 $$
-L^2(G) = \bigoplus_{\pi\in\widehat{G}} V_\pi\otimes V_\pi^{*},
+\boxed{\;L^2(G) = \bigoplus_{\pi\in\widehat{G}} V_\pi\otimes V_\pi^{*}\;},
 $$
 
 over the set $\widehat{G}$ of equivalence classes of irreducible unitary representations, each occurring with multiplicity its dimension; the matrix coefficients $\pi\mapsto \langle \pi(g)v,w\rangle$ span a dense subspace. The decomposition is stated and proved in *Unitary Representations of a Lie Group* and in *Harmonic Analysis on Groups*; the operator-theoretic content is that the regular representation is the direct integral of the irreducible unitary representations.

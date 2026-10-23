@@ -38,7 +38,7 @@ where $e_1,\dots,e_m$ is a local orthonormal frame; the sum is independent of th
 **Theorem (Weitzenböck–Lichnerowicz).** For the Dirac operator of a Clifford module with a Clifford connection,
 
 $$
-D^2 = \nabla^*\nabla+\mathcal{R} ,
+\boxed{\;D^2 = \nabla^*\nabla+\mathcal{R}\;} ,
 $$
 
 where $\nabla^*\nabla=-\sum_j\nabla_{e_j}\nabla_{e_j}+\cdots$ is the connection Laplacian (a nonnegative operator) and $\mathcal{R}$ is the endomorphism of $S$ determined by the curvature of $\nabla$ and, in the spin case, by the scalar curvature: $\mathcal{R}=\tfrac14\mathrm{scal}\cdot1_S$ for the spin Dirac operator.
@@ -76,7 +76,7 @@ so the graph norm $\|f\|^2+\|Df\|^2$ is equivalent to the $H^1$ norm. A symmetri
 **Theorem (the spectrum of the flat model).** The self-adjoint operator $D$ has spectrum $\mathbb{R}$, purely absolutely continuous, with no eigenvalues; the unitary Fourier transform diagonalises it,
 
 $$
-\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi) , \qquad \sigma(\xi)=\sum_{j=1}^{m}e_j\xi_j ,
+\boxed{\;\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi) , \qquad \sigma(\xi)=\sum_{j=1}^{m}e_j\xi_j\;} ,
 $$
 
 and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
@@ -114,7 +114,7 @@ and each of $D^\pm$ is elliptic.
 **Theorem (Fredholm and index).** In the situation above, $D^\pm$ are Fredholm operators between the Sobolev spaces, $\ker D^\pm$ are finite-dimensional, and
 
 $$
-\operatorname{ind}D^+ = \dim\ker D^+-\dim\ker D^- = \dim\ker D^+-\dim\mathrm{coker}\,D^+
+\boxed{\;\operatorname{ind}D^+ = \dim\ker D^+-\dim\ker D^- = \dim\ker D^+-\dim\mathrm{coker}\,D^+\;}
 $$
 
 is unchanged by continuous deformations of the operator within the class of Dirac-type operators; it is the **analytic index** of the pair. The chiral Dirac operator has compact resolvent and its index is a topological invariant, computed by the Atiyah–Singer theorem of *The Atiyah–Singer Index Theorem and K-Theory*.

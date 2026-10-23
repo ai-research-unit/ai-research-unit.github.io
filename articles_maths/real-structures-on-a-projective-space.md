@@ -18,7 +18,7 @@ The article assumes *Field Extensions* of Part I for the field with an involutio
 **Definition.** A **real structure** on $V$ is an antilinear involution of the first kind,
 
 $$
-\sigma : V \to V, \qquad \sigma(\lambda x) = \bar{\lambda}\,\sigma(x), \qquad \sigma^2 = \mathrm{id} ;
+\boxed{\;\sigma : V \to V, \qquad \sigma(\lambda x) = \bar{\lambda}\,\sigma(x), \qquad \sigma^2 = \mathrm{id}\;} ;
 $$
 
 the **real form** of $V$ is the fixed space
@@ -32,7 +32,7 @@ a vector space over the fixed field $K$, and the pair $(V,\sigma)$ is the **desc
 **Proposition.** Let $\sigma$ be a real structure on $V$. Then $V^\sigma$ is a $K$-subspace of $V$ with
 
 $$
-V = V^\sigma \otimes_K L , \qquad \dim_K V^\sigma = \dim_L V ,
+\boxed{\;V = V^\sigma \otimes_K L , \qquad \dim_K V^\sigma = \dim_L V\;} ,
 $$
 
 the inclusion and the scalar extension giving the isomorphism; the assignment $W \mapsto W^\sigma$ is an equivalence between the real structures on the $L$-spaces and the $K$-spaces, the inverse sending a $K$-space $U$ to $U \otimes_K L$ with the involution $u \otimes \lambda \mapsto u \otimes \bar{\lambda}$; and every $x \in V$ is written uniquely as $x = y + i z$ with $y, z \in V^\sigma$ when $L = K(i)$ is a quadratic extension with the element $i$ of square in $K$.
@@ -62,7 +62,7 @@ which is well defined because $\sigma(\lambda v) = \bar{\lambda}\sigma(v)$ repre
 **Theorem.** Let $\sigma$ be a real structure on $V$ of the first kind. Then the fixed points of the induced involution are exactly the projectivisation of the real form,
 
 $$
-\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^{\sigma}) ,
+\boxed{\;\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^{\sigma})\;} ,
 $$
 
 and the fixed locus is a projective space over the fixed field $K$ of the same dimension as $\mathbb{P}(V)$; for $L = \mathbb{C}$ and $K = \mathbb{R}$ the real points of $\mathbb{P}^n(\mathbb{C})$ with the standard structure are the real projective space $\mathbb{P}^n(\mathbb{R})$.

@@ -24,13 +24,13 @@ It is **compatible with the parity** when it preserves the grading, $\omega(\mat
 **Theorem.** A parity-compatible involution decomposes the superalgebra into its eigenspaces,
 
 $$
-\mathrm{G}=\mathrm{K}\oplus\mathrm{P},\qquad \omega=\mathrm{id}\text{ on }\mathrm{K},\qquad \omega=-\mathrm{id}\text{ on }\mathrm{P},
+\boxed{\;\mathrm{G}=\mathrm{K}\oplus\mathrm{P},\qquad \omega=\mathrm{id}\text{ on }\mathrm{K},\qquad \omega=-\mathrm{id}\text{ on }\mathrm{P}\;},
 $$
 
 with each of $\mathrm{K},\mathrm{P}$ graded, and the brackets
 
 $$
-[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
+\boxed{\;[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}\;}.
 $$
 
 **Proof.** A diagonalisable involution gives the eigenspace decomposition in characteristic not two; compatibility with the parity makes the eigenspaces graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees.
@@ -58,7 +58,7 @@ the sign $(-1)^{|x||y|}$ being the Koszul sign; the map is parity-compatible and
 **Theorem.** If $\omega$ is a super-involution then the associated form
 
 $$
-\beta(x,y)=\langle\omega x,y\rangle
+\boxed{\;\beta(x,y)=\langle\omega x,y\rangle\;}
 $$
 
 is a graded bilinear form with $\beta(x,y)=-(-1)^{|x||y|}\beta(y,x)$ when the underlying pairing is the super trace form, and the eigenspaces of $\omega$ give a super-symmetric decomposition; when $\mathrm{G}$ is a real Lie superalgebra with an even part a real semisimple Lie algebra, the super-involution restricts on the even part to a Cartan involution, and the odd part is exchanged or fixed according to the parity of the twist.

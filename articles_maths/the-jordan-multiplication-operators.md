@@ -61,7 +61,7 @@ Thus the family $L(J)$ is closed under addition and under scalar multiplication 
 **Proposition.** For every $a \in J$, the Jordan identity $a^2 \bullet (a \bullet x) = (a^2 \bullet x) \bullet a$ is equivalent to
 
 $$
-[L_a, L_{a^2}] = 0 .
+\boxed{\;[L_a, L_{a^2}] = 0\;} .
 $$
 
 Polarising gives the **linearised** form, and, when $2$ and $3$ are invertible, the **cyclic** form
@@ -123,7 +123,7 @@ $\operatorname{Mult}(J)$ is an associative algebra, and as such it carries the s
 **Proposition.** For all $a, b \in J$ the operator $[L_a, L_b] = L_aL_b - L_bL_a$ is a **derivation** of $J$:
 
 $$
-[L_a,L_b](x \bullet y) = [L_a,L_b](x) \bullet y + x \bullet [L_a,L_b](y) .
+\boxed{\;[L_a,L_b](x \bullet y) = [L_a,L_b](x) \bullet y + x \bullet [L_a,L_b](y)\;} .
 $$
 
 *Proof.* The linearised Jordan identity, with $c = x$ and the roles permuted, gives
@@ -151,7 +151,7 @@ By *Jordan Algebras* it is symmetric and $R$-bilinear, and every derivation of $
 **Theorem.** The trace form is **associative**,
 
 $$
-T(x \bullet y, z) = T(x, y \bullet z) \qquad \text{for all } x, y, z \in J ,
+\boxed{\;T(x \bullet y, z) = T(x, y \bullet z) \qquad \text{for all } x, y, z \in J\;} ,
 $$
 
 and consequently every multiplication operator is self-adjoint for it,

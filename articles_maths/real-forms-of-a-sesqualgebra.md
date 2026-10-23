@@ -19,7 +19,7 @@ The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\va
 **Theorem.** The fixed ring $R^{\varsigma}$ is a subring of $R$ containing $1$; the anti-fixed part $R^{-}$ is an $R^{\varsigma}$-submodule; and when $2$ is invertible in $R$ the ring decomposes as
 
 $$
-R = R^{\varsigma}\oplus R^{-}, \qquad \lambda = \tfrac12\bigl(\lambda+\varsigma(\lambda)\bigr) + \tfrac12\bigl(\lambda-\varsigma(\lambda)\bigr).
+\boxed{\;R = R^{\varsigma}\oplus R^{-}, \qquad \lambda = \tfrac12\bigl(\lambda+\varsigma(\lambda)\bigr) + \tfrac12\bigl(\lambda-\varsigma(\lambda)\bigr)\;}.
 $$
 
 *Proof.* Sums and products of fixed elements are fixed because $\varsigma$ is a ring homomorphism, and $\varsigma(1)=1$. For $\lambda\in R^{-}$ and $\mu\in R^{\varsigma}$ one has $\varsigma(\mu\lambda)=\varsigma(\mu)\varsigma(\lambda)=\mu(-\lambda)=-\mu\lambda$, so $R^{-}$ is an $R^{\varsigma}$-submodule. The displayed decomposition is the standard one of the two projections $\tfrac12(\mathrm{id}\pm\varsigma)$, and it is direct because a scalar that is both fixed and anti-fixed satisfies $\lambda=-\lambda$, hence $2\lambda=0$ and $\lambda=0$ when $2$ is invertible.
@@ -31,7 +31,7 @@ $$
 **Proposition.** Every sesqualgebra over $(R,\varsigma)$ is a module over the fixed ring $R^{\varsigma}$, and for $\mu\in R^{\varsigma}$ the two scalar rules of the product read the same:
 
 $$
-(\mu x)y = \mu(xy) = x(\mu y) .
+\boxed{\;(\mu x)y = \mu(xy) = x(\mu y)\;} .
 $$
 
 *Proof.* The restriction of the $R$-action to $R^{\varsigma}$ is an action because $R^{\varsigma}$ is a subring. The first equality is the first scalar rule and the second is the second rule with $\varsigma(\mu)=\mu$.
@@ -73,7 +73,7 @@ $$
 **Theorem (the descent).** Let $\alpha$ be a $\varsigma$-semilinear automorphism of $A$ of order two. The multiplication of $A$ restricts to $A^{\alpha}$, the restricted product is $R^{\varsigma}$-bilinear, and the multiplication map
 
 $$
-\mu : A^{\alpha}\otimes_{R^{\varsigma}} R\longrightarrow A, \qquad \mu(x\otimes\lambda) = \lambda x,
+\boxed{\;\mu : A^{\alpha}\otimes_{R^{\varsigma}} R\longrightarrow A, \qquad \mu(x\otimes\lambda) = \lambda x\;},
 $$
 
 is a homomorphism of $R^{\varsigma}$-algebras which is also $R$-linear; and it is compatible with the involutions when the tensor product carries $x\otimes\lambda\mapsto x^{*}\otimes\varsigma(\lambda)$. It is an isomorphism in each of the worked cases below.

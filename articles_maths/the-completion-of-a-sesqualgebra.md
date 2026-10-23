@@ -27,7 +27,7 @@ The article completes the underlying space, extends the product and the twisted 
 **Theorem (the conjugate module commutes with completion).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$. Then the completion of the conjugate module is the conjugate module of the completion,
 
 $$
-\widehat{A^{\varsigma}} \;=\; \widehat{A}^{\varsigma},
+\boxed{\;\widehat{A^{\varsigma}} \;=\; \widehat{A}^{\varsigma}\;},
 $$
 
 and the twisted action of $\mathbb{K}$ on $\widehat{A}$ is the unique continuous extension of the twisted action on $A$.
@@ -55,7 +55,7 @@ of *Banach Sesqualgebras*, §*The Submultiplicative Estimate* bounds the differe
 **Theorem (the extended product).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$. Then the product extends to a unique continuous product
 
 $$
-\widehat{A} \times \widehat{A}^{\varsigma} \longrightarrow \widehat{A}
+\boxed{\;\widehat{A} \times \widehat{A}^{\varsigma} \longrightarrow \widehat{A}\;}
 $$
 
 making $\widehat{A}$ a normed sesqualgebra over $(\mathbb{K},\varsigma)$; the extension is submultiplicative, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$, additive in each variable, $\mathbb{K}$-linear in the first and $\varsigma$-semilinear in the second.

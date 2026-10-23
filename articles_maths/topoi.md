@@ -25,7 +25,7 @@ Throughout, a category is written $\mathcal{C}$ and the presheaf category is $\w
 
 **Definition.** A **Grothendieck topos** is a category $\mathcal{E}$ equivalent to $\mathbf{Sh}(\mathcal{C},J)$ for some small site $(\mathcal{C},J)$:
 $$
-\mathcal{E}\simeq\mathbf{Sh}(\mathcal{C},J).$$ A **morphism of sites** $(\mathcal{C},J)\to(\mathcal{D},K)$ is a functor $\mathcal{C}\to\mathcal{D}$ carrying covering sieves to covering sieves, in the sense that the functor induces an adjoint pair of functors between the sheaf categories with the left adjoint left exact; the resulting comparison of toposes is a geometric morphism in the sense defined below.
+\boxed{\;\mathcal{E}\simeq\mathbf{Sh}(\mathcal{C},J)\;}.$$ A **morphism of sites** $(\mathcal{C},J)\to(\mathcal{D},K)$ is a functor $\mathcal{C}\to\mathcal{D}$ carrying covering sieves to covering sieves, in the sense that the functor induces an adjoint pair of functors between the sheaf categories with the left adjoint left exact; the resulting comparison of toposes is a geometric morphism in the sense defined below.
 
 **Theorem (Giraud).** A category $\mathcal{E}$ is a Grothendieck topos if and only if it satisfies the following intrinsic conditions:
 1. $\mathcal{E}$ is cocomplete;

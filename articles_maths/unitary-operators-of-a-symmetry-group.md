@@ -16,7 +16,7 @@ The article has four sections: the unitary group of the form; the unitary operat
 **Definition.** The **unitary group** of the form is
 
 $$
-\mathrm{U}(V,h) = \{T \in GL(V) : h(Tu,Tv) = h(u,v)\} = \{T : T^{*} = T^{-1}\} = \{T : T^{*}T = \operatorname{id}\},
+\boxed{\;\mathrm{U}(V,h) = \{T \in GL(V) : h(Tu,Tv) = h(u,v)\} = \{T : T^{*} = T^{-1}\} = \{T : T^{*}T = \operatorname{id}\}\;},
 $$
 
 the group of all operators of a space with the form that preserve it; the three descriptions agree by the unitarity theorem of *The Adjoint of a Symmetry Operator*.
@@ -82,7 +82,7 @@ the unitary part of the commutant of the representation on $V$.
 **Proposition.** The left and right regular representations are unitary, they commute, and their adjoints reverse the group element,
 
 $$
-\lambda(g)^{*} = \lambda(g)^{-1} = \lambda(g^{-1}), \qquad \rho(g)^{*} = \rho(g)^{-1} = \rho(g^{-1}),
+\boxed{\;\lambda(g)^{*} = \lambda(g)^{-1} = \lambda(g^{-1}), \qquad \rho(g)^{*} = \rho(g)^{-1} = \rho(g^{-1})\;},
 $$
 
 by the invariance of the Haar measure; the operators of the symmetry group on the functions of the space are the unitary operators of the representation.

@@ -24,7 +24,7 @@ $$
 **Proposition.** The signed left multiplication factors through the grade involution and the unsigned left multiplication,
 
 $$
-\ell_a=L_a\circ\alpha,
+\boxed{\;\ell_a=L_a\circ\alpha\;},
 $$
 
 and the signed sandwich is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$.
@@ -40,7 +40,7 @@ and the signed sandwich is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ
 **Theorem.** The composition of two signed left multiplications is an unsigned left multiplication:
 
 $$
-\ell_a\circ\ell_b=L_{a\,\alpha(b)},\qquad\text{so}\qquad \ell_a\circ\ell_b(x)=a\,\alpha(b)\,x .
+\boxed{\;\ell_a\circ\ell_b=L_{a\,\alpha(b)},\qquad\text{so}\qquad \ell_a\circ\ell_b(x)=a\,\alpha(b)\,x\;} .
 $$
 
 **Proof.** $\ell_a(\ell_b(x))=\ell_a(b\alpha(x))=a\,\alpha(b\alpha(x))=a\,\alpha(b)\,\alpha(\alpha(x))=a\alpha(b)x$, using the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$.

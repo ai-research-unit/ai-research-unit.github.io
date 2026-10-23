@@ -39,8 +39,7 @@ $$
 
 It is a single square, so $\langle q\rangle > 0$ for every $q \neq 0$ and $\langle q\rangle = 0$ only at $q = 0$; the modulus is
 
-$$
-r = \sqrt{\langle q\rangle} = |q|.
+$$ \boxed{\;r = \sqrt{\langle q\rangle} = |q|\;}.
 $$
 
 Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{R}$ neither does.
@@ -117,8 +116,7 @@ $$
 
 in which the continuous part is the exponential and the discrete part is the sign. The reconstruction is exact: for $q = -\tfrac{3}{4}$, $r = \tfrac{3}{4}$, $t = \ln\tfrac{3}{4}$ and $\sigma = -1$, and $\exp(t)\sigma = \tfrac{3}{4}\cdot(-1) = q$. The kernel of the exponential is trivial,
 
-$$
-\exp(t) = 1 \iff t = 0, \qquad \ker\exp = \{0\},
+$$ \boxed{\;\exp(t) = 1 \iff t = 0, \qquad \ker\exp = \{0\}\;},
 $$
 
 in contrast with the complex case, where the kernel is the discrete lattice $2\pi i\,\mathbb{Z}$. The exponential of the real algebra is injective, and this injectivity is why the sign must be carried separately. The pair $(t, \sigma)$ is unique, because the logarithm is unique on the positive reals and the sign is determined; the exponential therefore supplies a canonical continuous coordinate on the identity component, and the sign is the discrete coordinate of the component.
@@ -162,8 +160,7 @@ is a bijective local homeomorphism, and a homeomorphism onto $\mathbb{R}^\times$
 
 The group of units of $\mathbb{R}$ is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, and it is the direct product of the two factors,
 
-$$
-\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl(|q|,\ \operatorname{sgn}q\bigr),
+$$ \boxed{\;\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}, \qquad q \longmapsto \bigl(|q|,\ \operatorname{sgn}q\bigr)\;},
 $$
 
 which is the polar decomposition read as a group isomorphism. The first factor is one-dimensional and non-compact, the second is finite and compact, and the isomorphism is the reason the parameter counts of the polar decomposition are one and zero.

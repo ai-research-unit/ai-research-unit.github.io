@@ -52,7 +52,7 @@ In the non-Archimedean case the supremum norm satisfies the stronger inequality 
 **Definition.** A **power series** about $a \in F$ is a series of functions
 
 $$
-f(x) = \sum_{n \geq 0} a_n (x - a)^n, \qquad a_n \in F .
+\boxed{\;f(x) = \sum_{n \geq 0} a_n (x - a)^n, \qquad a_n \in F\;} .
 $$
 
 The **radius of convergence** of the series is
@@ -104,7 +104,7 @@ The definition is local: analyticity is a property of the germ of $f$ at each po
 **(b)** $f$ is differentiable on $\Omega$, in the sense that
 
 $$
-\frac{df}{dx}(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+\boxed{\;\frac{df}{dx}(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}\;}
 $$
 
 exists for every $a \in \Omega$, and $\frac{df}{dx}$ is analytic on $\Omega$, with $\frac{df}{dx} = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;
@@ -266,7 +266,7 @@ The properties collected here are the ones that distinguish the non-Archimedean 
 **Theorem (maximum modulus principle for a power series).** Let $F$ be non-Archimedean and complete with infinite residue field, let $f = \sum_n a_n x^n$ converge on $\overline{B}(0,r)$, and put $\lVert f \rVert_r = \sup_{\lvert x \rvert \leq r} \lvert f(x) \rvert$ and
 
 $$
-\lVert f \rVert_G = \max_{n \geq 0} \lvert a_n \rvert r^n ,
+\boxed{\;\lVert f \rVert_G = \max_{n \geq 0} \lvert a_n \rvert r^n\;} ,
 $$
 
 the **Gauss norm** of $f$ at the radius $r$. Then $\lVert f \rVert_r = \lVert f \rVert_G$, and the supremum is attained: there is $x_0$ with $\lvert x_0 \rvert = r$ and $\lvert f(x_0) \rvert = \lVert f \rVert_G$.

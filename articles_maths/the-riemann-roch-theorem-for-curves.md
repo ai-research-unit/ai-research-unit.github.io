@@ -71,7 +71,7 @@ recovering the genus formula of *Algebraic Curves*. For $d = 4$ this gives $g = 
 **Theorem (Riemann–Roch).** Let $C$ be a nonsingular projective curve of genus $g$ over a field $K$ and $D$ a divisor on $C$. Then
 
 $$
-\ell(D) - \ell(K_C-D) = \deg D + 1 - g .
+\boxed{\;\ell(D) - \ell(K_C-D) = \deg D + 1 - g\;} .
 $$
 
 **Theorem (Riemann's inequality).** Under the same hypotheses, $\ell(D) \geq \deg D + 1 - g$; equivalently $\deg D + 1 - \ell(D) \leq g$ for every divisor $D$, so that $g = \max_D\,(\deg D + 1 - \ell(D))$, the maximum being attained at every divisor of degree at least $2g-1$, where the index of speciality vanishes.
@@ -113,7 +113,7 @@ with equality if and only if $D = 0$, or $D \sim K_C$, or $C$ is hyperelliptic a
 **Theorem (Riemann–Hurwitz).** Let $\phi : C \to C'$ be a finite separable morphism of nonsingular projective curves over $K$ of degree $n$, with constant fields $K_C$, $K_{C'}$ and $K'' = C'_{K_{C}}$, so that $[C:K''C'] = n/[K_C:K_{C'}] =: n_0$. Then
 
 $$
-2g_C - 2 = n_0(2g_{C'}-2) + \deg \mathrm{D}_{C/C'},
+\boxed{\;2g_C - 2 = n_0(2g_{C'}-2) + \deg \mathrm{D}_{C/C'}\;},
 $$
 
 where $\mathrm{D}_{C/C'}$ is the different of the extension of function fields, of degree $\sum_{P \in C}(d(P)-1)[K(P):K]$ with $d(P) \geq e(P)-1$ the different exponent at $P$ and $e(P)$ the ramification index.
@@ -123,7 +123,7 @@ This is the Riemann–Hurwitz formula of *Global Fields* in the corrected form s
 **Corollary (the Hurwitz bound).** Let $C$ be a curve of genus $g \geq 2$ over a field of characteristic $0$. Then the group $\operatorname{Aut}(C)$ of automorphisms of $C$ over $K$ is finite and
 
 $$
-\lvert \operatorname{Aut}(C)\rvert \leq 84(g-1).
+\boxed{\;\lvert \operatorname{Aut}(C)\rvert \leq 84(g-1)\;}.
 $$
 
 **Proof sketch.** An automorphism of finite order $n > 1$ with quotient $C/\langle\sigma\rangle$ of genus $g_0$ and $r$ branch points gives, by Riemann–Hurwitz, $2g-2 \geq n(2g_0-2)+r(n-1) \geq n(2g_0-2)+n-1$; combining with Riemann–Roch for the quotient map yields the numerical bound $n \leq 84(g-1)$ for a single automorphism, and the full group is bounded by the same argument applied to the whole group acting with its orbit decomposition.

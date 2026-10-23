@@ -46,7 +46,7 @@ is positive definite.
 **Definition.** The **Cartan decomposition** is the eigenspace decomposition
 
 $$
-\mathrm{G} = \mathrm{K}\oplus\mathrm{P}, \qquad \mathrm{K} = \{X : \theta X = X\}, \quad \mathrm{P} = \{X : \theta X = -X\} .
+\boxed{\;\mathrm{G} = \mathrm{K}\oplus\mathrm{P}, \qquad \mathrm{K} = \{X : \theta X = X\}, \quad \mathrm{P} = \{X : \theta X = -X\}\;} .
 $$
 
 Its structure — the bracket relations, the maximal compact subgroup and the global decomposition of the group — is the subject of *The Cartan Decomposition and the Cartan Involution*, and the present article uses the definition and the existence.

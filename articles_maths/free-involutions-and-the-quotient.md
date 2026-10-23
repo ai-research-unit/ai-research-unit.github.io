@@ -24,7 +24,7 @@ Throughout, $(G,\sigma)$ is an involutive group with $\sigma$ an anti-automorphi
 **Proposition (the injectivity of the conjugate product).** If $\sigma$ is free, the map
 
 $$
-\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g),
+\boxed{\;\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g)\;},
 $$
 
 is injective. If $G$ is finite it is therefore a bijection, and every element of $G$ is the conjugate product of a unique pair $(g^{-1},\sigma(g))$.
@@ -36,8 +36,8 @@ is injective. If $G$ is finite it is therefore a bijection, and every element of
 **Definition.** The **orbit quotient** of a free involution $\sigma$ is the set of orbits
 
 $$
-G/\langle\sigma\rangle = \{\,\{g,\sigma(g)\} : g\in G\,\} ,
-\qquad \pi : G\longrightarrow G/\langle\sigma\rangle, \quad \pi(g)=\{g,\sigma(g)\}.
+\boxed{\;G/\langle\sigma\rangle = \{\,\{g,\sigma(g)\} : g\in G\,\} ,
+\qquad \pi : G\longrightarrow G/\langle\sigma\rangle, \quad \pi(g)=\{g,\sigma(g)\}\;}.
 $$
 
 **Proposition (the projection is a double cover).** The projection $\pi$ is surjective, every fibre has exactly two elements, and $\sigma$ is its nontrivial deck transformation: $\pi\sigma=\pi$ and $\sigma(g)\neq g$ for $g\neq e$. For finite $G$, $\lvert G/\langle\sigma\rangle\rvert=\lvert G\rvert/2$.

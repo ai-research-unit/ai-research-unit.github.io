@@ -63,7 +63,7 @@ $$
 The **geodesic flow** on $G/\Gamma$ is the action of $A$, and the **horocycle flow** is the action of $U$. The two are linked by the commutation relation
 
 $$
-a_s \eta_t a_s^{-1} = \begin{pmatrix} 1 & \exp(s)t \\ 0 & 1 \end{pmatrix} = \eta_{\exp(s)t},
+\boxed{\;a_s \eta_t a_s^{-1} = \begin{pmatrix} 1 & \exp(s)t \\ 0 & 1 \end{pmatrix} = \eta_{\exp(s)t}\;},
 $$
 
 which is the contraction relation of the Mautner phenomenon.
@@ -145,7 +145,7 @@ The dynamical reading is that in higher rank the action of $G$ on $G/\Gamma$ det
 **Theorem (Furstenberg).** Let $\Gamma \le SL_2(\mathbb{R})$ be a lattice and let $x \in G/\Gamma$. Then the horocycle orbit $\{\eta_t x : t \in \mathbb{R}\}$ is equidistributed in $G/\Gamma$ with respect to the invariant measure:
 
 $$
-\frac{1}{T}\int_0^T f(\eta_t x)\, dt \longrightarrow \int_{G/\Gamma} f \, d\mu \qquad \text{as } T \to \infty,
+\boxed{\;\frac{1}{T}\int_0^T f(\eta_t x)\, dt \longrightarrow \int_{G/\Gamma} f \, d\mu \qquad \text{as } T \to \infty\;},
 $$
 
 for every $f \in C_c(G/\Gamma)$. In particular the horocycle flow is uniquely ergodic.

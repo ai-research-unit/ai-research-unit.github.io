@@ -27,9 +27,9 @@ The signed sandwich is the composite $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\al
 
 **Proposition (composition).** For all $a,b,c,d \in E$,
 $$
-\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\alpha(c),\,\alpha(d)b}, \qquad
+\boxed{\;\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\alpha(c),\,\alpha(d)b}, \qquad
 \Phi_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{ac,\,db}, \qquad
-\Theta^{\alpha}_{a,b}\,\Phi_{c,d} = \Theta^{\alpha}_{a\alpha(d),\,\alpha(c)b}.
+\Theta^{\alpha}_{a,b}\,\Phi_{c,d} = \Theta^{\alpha}_{a\alpha(d),\,\alpha(c)b}\;}.
 $$
 Thus the set of signed sandwiches is closed under composition, and each product of a signed and an unsigned sandwich is again a signed sandwich; the unsigned sandwiches are closed among themselves, $\Phi_{a,b}\Phi_{c,d} = \Phi_{ac,db}$.
 
@@ -37,7 +37,7 @@ Thus the set of signed sandwiches is closed under composition, and each product 
 
 **Corollary (invertibility and inverse).** $\Theta^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are invertible, and then
 $$
-\bigl(\Theta^{\alpha}_{a,b}\bigr)^{-1} = \Theta^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})} .
+\boxed{\;\bigl(\Theta^{\alpha}_{a,b}\bigr)^{-1} = \Theta^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})}\;} .
 $$
 
 **Proof.** Invertibility follows from the factorisation $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha$ and the invertibility of $\alpha$. The inverse is checked by the composition law: with $c = \alpha(a^{-1})$ and $d = \alpha(b^{-1})$ one has $a\alpha(c) = a\alpha(\alpha(a^{-1})) = aa^{-1} = \mathrm{id}$ and $\alpha(d)b = \alpha(\alpha(b^{-1}))b = b^{-1}b = \mathrm{id}$, so the composite is $\Theta^{\alpha}_{\mathrm{id},\mathrm{id}} = \mathrm{id}$, and likewise on the other side.
@@ -69,7 +69,7 @@ it is a $\mathbb{C}$-linear involution of $V$ of type $(n-1,1)$, fixing the hype
 
 **Proposition (the inner signed sandwich by a unitary is an isometry).** Let $u \in E$ be unitary, $u^{\dagger}u = uu^{\dagger} = \mathrm{id}$. Then $\Theta^{\alpha}_{u,u^{-1}}$ preserves the Hermitian trace form,
 $$
-\bigl\langle \Theta^{\alpha}_{u,u^{-1}}(X),\, \Theta^{\alpha}_{u,u^{-1}}(Y)\bigr\rangle = \langle X, Y\rangle ,
+\boxed{\;\bigl\langle \Theta^{\alpha}_{u,u^{-1}}(X),\, \Theta^{\alpha}_{u,u^{-1}}(Y)\bigr\rangle = \langle X, Y\rangle\;} ,
 $$
 and it is an involution exactly when $u\alpha(u)$ is central. If moreover $\alpha$ comes from a unitary reflection $r$ and $u = r$, then $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$: a reflection is fixed by the signed inner sandwich of itself.
 

@@ -36,7 +36,7 @@ The first identity is the symmetry in the outer variables and the second is the 
 **Proposition (the triple of a Jordan algebra).** Let $J$ be a Jordan algebra with product $\bullet$. Then
 
 $$
-\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y
+\boxed{\;\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y\;}
 $$
 
 makes $J$ a Jordan triple system, and the linear map $y\mapsto \{x,y,x\}$ on $J$ is twice the quadratic representation $\mathrm{Jor}_x$, $\{x,y,x\} = 2\,\mathrm{Jor}_x(y)$.
@@ -74,7 +74,7 @@ and the **skew** elements are those with $\sigma(x) = -x$.
 **Theorem.** $H(T)$ is a sub-triple of $T$: if $x, y, z \in H(T)$ then $\{x,y,z\}\in H(T)$. If $\sigma$ is conjugate-linear over a quadratic extension $K/F$ with $K = F\oplus Fi$, $\varsigma(i) = -i$, then
 
 $$
-T = H(T)\oplus i\,H(T), \qquad H(T) = \{x : \sigma(x) = x\}, \qquad iH(T) = \{x : \sigma(x) = -x\},
+\boxed{\;T = H(T)\oplus i\,H(T), \qquad H(T) = \{x : \sigma(x) = x\}, \qquad iH(T) = \{x : \sigma(x) = -x\}\;},
 $$
 
 and $H(T)$ is the **fixed subtriple**, a Jordan triple over the fixed field $F$.
@@ -90,7 +90,7 @@ and $H(T)$ is the **fixed subtriple**, a Jordan triple over the fixed field $F$.
 **Theorem.** Let $J$ be a Jordan algebra with a $\varsigma$-semilinear involution $\sigma$ in the sense of *Jordan Algebras with an Involution*, and let $T = J$ be the associated Jordan triple. Then $\sigma$ is a $\varsigma$-semilinear involution of $T$, and the fixed subtriple of $T$ is the triple of the self-adjoint part:
 
 $$
-H(T) = H(J), \qquad \{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y \ \text{ on } \ H(J) .
+\boxed{\;H(T) = H(J), \qquad \{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y \ \text{ on } \ H(J)\;} .
 $$
 
 *Proof.* The preservation of the ternary product follows from the preservation of the binary product: $\sigma\{x,y,z\} = (\sigma x\bullet\sigma y)\bullet\sigma z+\cdots = \{\sigma x,\sigma y,\sigma z\}$; the fixed sites coincide by definition.

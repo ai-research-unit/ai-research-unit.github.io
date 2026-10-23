@@ -32,8 +32,8 @@ Restricted to the vector subspace $V$, where $q_t = 0$, the null cone meets $V$ 
 $$
 \boxed{\;
 \mathcal{L} = \{\, L_\lambda : \lambda \in \mathbb{P}^1 \,\}, \qquad \mathcal{M} = \{\, M_\mu : \mu \in \mathbb{P}^1 \,\}
-\;}
-$$,
+\;},
+$$
 
 each parametrised by a projective line; the two families are disjoint, every maximal isotropic plane lies in exactly one of them, and their union is the null cone. In the examples,
 
@@ -54,8 +54,8 @@ is a member of one family, with both generators null and mutually $B$-orthogonal
 $$
 \boxed{\;
 \{\, \tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0 \,\} \longleftrightarrow \{\text{matrices of rank } 1\}
-\;}
-$$.
+\;}.
+$$
 
 Every such element is an outer product
 
@@ -74,8 +74,8 @@ determined by the pair $(u,v)$ up to $(u,v) \mapsto (\lambda u, \lambda^{-1} v)$
 $$
 \boxed{\;
 \sigma : \mathbb{P}^1 \times \mathbb{P}^1 \longrightarrow \mathbb{P}^3, \qquad ([s:t],[u:v]) \longmapsto (su : sv : tu : tv)
-\;}
-$$,
+\;},
+$$
 
 whose image is the smooth quadric surface $\{q_t q_z - q_x q_y = 0\}$. The two factors of $\mathbb{P}^1\times\mathbb{P}^1$ are the two families of isotropic lines, and $\mathcal{Q} \cong \mathbb{P}^1 \times \mathbb{P}^1$.
 

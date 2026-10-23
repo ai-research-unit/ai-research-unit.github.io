@@ -23,7 +23,7 @@ so that $\Lambda^{\alpha}_x = \varepsilon_xL_x$ and $\mathrm{P}^{\alpha}_x = \va
 **Theorem (the adjoints).** For every $x$,
 
 $$
-\bigl(\Lambda^{\alpha}_x\bigr)^{*} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad \bigl(\mathrm{P}^{\alpha}_x\bigr)^{*} = \mathrm{P}^{\alpha}_{x^{\dagger}} ,
+\boxed{\;\bigl(\Lambda^{\alpha}_x\bigr)^{*} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad \bigl(\mathrm{P}^{\alpha}_x\bigr)^{*} = \mathrm{P}^{\alpha}_{x^{\dagger}}\;} ,
 $$
 
 the adjoints being taken for the form; so the signed actions are $\ast$-representations with the involution of the algebra.
@@ -65,7 +65,7 @@ so the adjoint of a signed action is the sign times the adjoint of the ordinary 
 **Theorem (the graded commutator under adjunction).** For graded operators $S,T$ the adjoint reverses the graded commutator with the Koszul sign, $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$; in particular, for homogeneous $x,z$,
 
 $$
-\bigl[\Lambda^{\alpha}_x,\ \mathrm{P}^{\alpha}_z\bigr\}^{*} = -(-1)^{|x||z|}\,\bigl[\Lambda^{\alpha}_{x^{\dagger}},\ \mathrm{P}^{\alpha}_{z^{\dagger}}\bigr\} ,
+\boxed{\;\bigl[\Lambda^{\alpha}_x,\ \mathrm{P}^{\alpha}_z\bigr\}^{*} = -(-1)^{|x||z|}\,\bigl[\Lambda^{\alpha}_{x^{\dagger}},\ \mathrm{P}^{\alpha}_{z^{\dagger}}\bigr\}\;} ,
 $$
 
 so the graded commutator of the two signed actions is adjoint to the graded commutator of the two signed actions of the involution.
@@ -83,7 +83,7 @@ so the graded commutator of the two signed actions is adjoint to the graded comm
 **Theorem (the conjugation by the Tomita operator).** On the dense subspace $A\xi$,
 
 $$
-S\,\Lambda^{\alpha}_x\,S = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad S\,\mathrm{P}^{\alpha}_x\,S = \Lambda^{\alpha}_{x^{\dagger}} ,
+\boxed{\;S\,\Lambda^{\alpha}_x\,S = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad S\,\mathrm{P}^{\alpha}_x\,S = \Lambda^{\alpha}_{x^{\dagger}}\;} ,
 $$
 
 so the Tomita operator exchanges the signed actions and turns each into the signed action of the involution on the other side.

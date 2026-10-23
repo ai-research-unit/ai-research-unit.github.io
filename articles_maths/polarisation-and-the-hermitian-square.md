@@ -43,7 +43,7 @@ Note that $h_{\mathrm{tr}}$ is not $R$-sesquilinear when $\varsigma \neq \mathrm
 **Proposition (the polarisation identity).** For all $x, y \in A$,
 
 $$
-\mathfrak{Q}(x+y) = \mathfrak{Q}(x) + \mathfrak{Q}(y) + h_{\mathrm{tr}}(x,y) .
+\boxed{\;\mathfrak{Q}(x+y) = \mathfrak{Q}(x) + \mathfrak{Q}(y) + h_{\mathrm{tr}}(x,y)\;} .
 $$
 
 **Proof.** Expand by biadditivity: $\mathfrak{Q}(x+y) = h(x,x) + h(x,y) + h(y,x) + h(y,y) = \mathfrak{Q}(x) + \mathfrak{Q}(y) + h(x,y) + h(y,x)$, and the last two terms are $h_{\mathrm{tr}}(x,y)$.
@@ -51,7 +51,7 @@ $$
 **Corollary (the diagonal recovers the trace form).** If $2$ is invertible in $R^{\varsigma}$ then
 
 $$
-h_{\mathrm{tr}}(x,y) = \mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y),
+\boxed{\;h_{\mathrm{tr}}(x,y) = \mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\;},
 $$
 
 so two forms with the same diagonal have the same trace form and differ by a skew-Hermitian form.
@@ -67,7 +67,7 @@ The diagonal of the layer is computed by the algebra, because the functional of 
 **Proposition.** The diagonal is the functional image of the **Hermitian square**:
 
 $$
-\mathfrak{Q}(x) = \varphi(x^{*}x), \qquad \varphi = h(\cdot, 1),
+\boxed{\;\mathfrak{Q}(x) = \varphi(x^{*}x), \qquad \varphi = h(\cdot, 1)\;},
 $$
 
 and $x^{*}x$ is self-adjoint, $(x^{*}x)^{*} = x^{*}x$.

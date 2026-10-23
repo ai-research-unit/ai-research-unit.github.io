@@ -24,17 +24,21 @@ The table is the ladder of the matrix models. In $\mathbb{R}$ the algebra is the
 The models of the table are displayed by their generators. In the split-complex column $j\mapsto J$ and in the dual-number column $\varepsilon\mapsto E$, with
 
 $$
+\boxed{\;
 J=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad J^2=I_2,\qquad
-E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad E^2=0,
+E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad E^2=0
+\;},
 $$
 
 so that $a+jb\mapsto aI_2+bJ=\begin{pmatrix}a&b\\b&a\end{pmatrix}$ and $a+\varepsilon b\mapsto aI_2+bE=\begin{pmatrix}a&b\\0&a\end{pmatrix}$; and in the biquaternion column the four generators read
 
 $$
+\boxed{\;
 e_t\mapsto I_2,\qquad
 \vec e_x\mapsto -i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
 \vec e_y\mapsto -i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\vec e_z\mapsto -i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+\vec e_z\mapsto -i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}
+\;},
 $$
 
 with the scalar imaginary $i\mapsto iI_2$; the four images square to $-I_2$, and $(-i\sigma_1)(-i\sigma_2)=-\sigma_1\sigma_2=-i\sigma_3$, so that they are a quaternion system as the generators of $\mathbb{B}$ require.
@@ -53,9 +57,11 @@ The following table compares the left regular representation of the eight algebr
 The Cayley matrices of the two-dimensional rung are
 
 $$
+\boxed{\;
 Q=q+iq'\mapsto\begin{pmatrix}q&-q'\\q'&q\end{pmatrix},\ \ \det=q^2+q'^2;\qquad
 Q=q+jq'\mapsto\begin{pmatrix}q&q'\\q'&q\end{pmatrix},\ \ \det=q^2-q'^2;\qquad
-Q=q+\varepsilon q'\mapsto\begin{pmatrix}q&q'\\0&q\end{pmatrix},\ \ \det=q^2,
+Q=q+\varepsilon q'\mapsto\begin{pmatrix}q&q'\\0&q\end{pmatrix},\ \ \det=q^2
+\;},
 $$
 
 the first the complex, the second the split-complex and the third the dual-number Cayley matrix, the second symmetric and the third upper triangular, so that the two are the images named in the section above.

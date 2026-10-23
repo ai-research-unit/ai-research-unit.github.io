@@ -108,7 +108,7 @@ The first substantial consequence of the complex method is that boundedness at t
 **Theorem (Riesz–Thorin).** Let $(X,\mu)$ and $(Y,\nu)$ be $\sigma$-finite measure spaces, let $1 \le p_0,p_1,q_0,q_1 \le \infty$, and let $T$ be a linear map bounded from $L^{n_0}(\mu)$ to $L^{m_0}(\nu)$ with norm $M_0$ and from $L^{n_1}(\mu)$ to $L^{m_1}(\nu)$ with norm $M_1$. For $0<\theta<1$ put
 
 $$
-\frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1}, \qquad \frac1q=\frac{1-\theta}{q_0}+\frac{\theta}{q_1}.
+\boxed{\;\frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1}, \qquad \frac1q=\frac{1-\theta}{q_0}+\frac{\theta}{q_1}\;}.
 $$
 
 Then $T$ maps $L^{n}(\mu)$ boundedly to $L^{m}(\nu)$ with
@@ -197,7 +197,7 @@ the **Lorentz space** of measurable functions whose decreasing rearrangement $f^
 **Theorem (duality).** Let $(A_0,A_1)$ be a compatible couple with $A_0\cap A_1$ dense in both $A_0$ and $A_1$. Then for $1\le q<\infty$ and $0<\theta<1$,
 
 $$
-\bigl((A_0,A_1)_{\theta,q}\bigr)^*=(A_0^*,A_1^*)_{\theta,q'}, \qquad \frac1q+\frac1{q'}=1,
+\boxed{\;\bigl((A_0,A_1)_{\theta,q}\bigr)^*=(A_0^*,A_1^*)_{\theta,q'}, \qquad \frac1q+\frac1{q'}=1\;},
 $$
 
 the dual couple being the compatible couple obtained by embedding $A_0^*$ and $A_1^*$ into $(A_0\cap A_1)^*$.
@@ -215,7 +215,7 @@ with equivalence of norms; the two spaces on the left form a compatible couple b
 **Theorem (comparison of the two methods).** For $0<\theta<1$,
 
 $$
-(A_0,A_1)_{\theta,1} \subseteq [A_0,A_1]_\theta \subseteq (A_0,A_1)_{\theta,\infty},
+\boxed{\;(A_0,A_1)_{\theta,1} \subseteq [A_0,A_1]_\theta \subseteq (A_0,A_1)_{\theta,\infty}\;},
 $$
 
 with continuous inclusions. Consequently the complex space coincides with a real space only in special cases; for the couple $(L^1,L^\infty)$ one has $[L^1,L^\infty]_\theta=L^{1/(1-\theta)}=(L^1,L^\infty)_{\theta,p}$ with $p=1/(1-\theta)$, so that here the complex space is the real space at the diagonal value $q=p$, but this coincidence is a theorem about the couple and not a general identity.

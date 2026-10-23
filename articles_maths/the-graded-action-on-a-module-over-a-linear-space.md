@@ -13,7 +13,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V = V_0\oplus V_1$ is a graded line
 **Definition.** The action of $E$ on the graded module $M$ is **compatible** with the gradings when
 
 $$
-E_i\,M_j \subseteq M_{i+j} \qquad (i,j \in \{0,1\}) ,
+\boxed{\;E_i\,M_j \subseteq M_{i+j} \qquad (i,j \in \{0,1\})\;} ,
 $$
 
 that is, when the even endomorphisms preserve the two parts of $M$ and the odd endomorphisms exchange them.
@@ -21,7 +21,7 @@ that is, when the even endomorphisms preserve the two parts of $M$ and the odd e
 **Proposition (the equivalent form).** The action is compatible if and only if for every homogeneous $X \in E_i$ and every $m \in M$,
 
 $$
-X\,\beta(m) = (-1)^{i}\,\beta(X\,m) ,
+\boxed{\;X\,\beta(m) = (-1)^{i}\,\beta(X\,m)\;} ,
 $$
 
 equivalently $\beta(Xm) = (-1)^i X\beta(m)$; the two grade involutions therefore satisfy $\beta\circ \rho_X = (-1)^i \rho_X\circ\beta$ on the homogeneous part $E_i$, where $\rho_X$ is the action of $X$.

@@ -28,7 +28,7 @@ the field of Hilbert–Schmidt operators on the fibres; it is extended to $L^2(G
 **Theorem (unitarity).** The transform $\mathcal{F}$ is isometric on $L^1(G)\cap L^2(G)$,
 
 $$
-\int_{\operatorname{Irr}(G)}\bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx ,
+\boxed{\;\int_{\operatorname{Irr}(G)}\bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx\;} ,
 $$
 
 and it extends to a surjective isometry, hence a unitary operator, $\mathcal{F} : L^2(G)\to\mathcal{H}_P$; consequently $\|\mathcal{F}\| = \|\mathcal{F}^{-1}\| = 1$ and $\mathcal{F}$ is invertible.
@@ -46,7 +46,7 @@ and it extends to a surjective isometry, hence a unitary operator, $\mathcal{F} 
 **Theorem (convolution becomes multiplication).** For every $f \in L^1(G)$ the Plancherel operator intertwines left convolution with the field of its transforms,
 
 $$
-\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} (\mathcal F f)(\pi)\,d\mu_P(\pi) ,
+\boxed{\;\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} (\mathcal F f)(\pi)\,d\mu_P(\pi)\;} ,
 $$
 
 the field acting on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ by left multiplication, $A\mapsto(\mathcal F f)(\pi)A$; the operator $\lambda(f)$ is thereby unitarily equivalent to a decomposable operator with the fibres $(\mathcal F f)(\pi)$.
@@ -81,7 +81,7 @@ the integral converging in $L^2(G)$ and defining the inverse transform.
 **Theorem (inversion).** For $f \in L^1(G)\cap L^2(G)$ with $\pi\mapsto\operatorname{Tr}((\mathcal F f)(\pi)\pi(x)^{-1})$ integrable against $\mu_P$ for almost every $x$,
 
 $$
-f(x) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(x)^{-1}\bigr)\,d\mu_P(\pi)
+\boxed{\;f(x) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(x)^{-1}\bigr)\,d\mu_P(\pi)\;}
 $$
 
 for almost every $x$; equivalently $\mathcal{F}^{-1}\mathcal{F} = \mathrm{id}$ and $\mathcal{F}\mathcal{F}^{-1} = \mathrm{id}$.

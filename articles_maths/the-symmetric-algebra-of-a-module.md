@@ -95,7 +95,7 @@ $$
 from $R$-modules to commutative unital $R$-algebras is left adjoint to the forgetful functor $U : \mathsf{CAlg}_R \to \mathsf{Mod}_R$:
 
 $$
-\operatorname{Hom}_{\mathsf{CAlg}_R}\bigl(\operatorname{Sym}(M), A\bigr) \cong \operatorname{Hom}_{\mathsf{Mod}_R}\bigl(M, \mathrm{U}(A)\bigr),
+\boxed{\;\operatorname{Hom}_{\mathsf{CAlg}_R}\bigl(\operatorname{Sym}(M), A\bigr) \cong \operatorname{Hom}_{\mathsf{Mod}_R}\bigl(M, \mathrm{U}(A)\bigr)\;},
 $$
 
 naturally in $M$ and $A$. The natural transformation $M \to U(\operatorname{Sym}(M))$ is the inclusion of the degree-one part.
@@ -133,7 +133,7 @@ Equivalently, $I$ is the smallest two-sided ideal containing the image of the li
 **Theorem.** There is a natural isomorphism of graded algebras
 
 $$
-\operatorname{Sym}(M) \cong T(M) / I .
+\boxed{\;\operatorname{Sym}(M) \cong T(M) / I\;} .
 $$
 
 *Proof.* The quotient $T(M)/I$ is generated as an algebra by the image of $M = T^1(M)$, and it is commutative: its generators commute because the class of $x \otimes y - y \otimes x$ is zero. Hence by the universal property of $\operatorname{Sym}(M)$ the identity map $M \to T(M)/I$ extends to a unique algebra homomorphism $\Phi : \operatorname{Sym}(M) \to T(M)/I$ with $\Phi(x_1 \cdots x_n) = x_1 \otimes \cdots \otimes x_n + I$.
@@ -210,7 +210,7 @@ The construction is functorial: $\operatorname{Sym}(\operatorname{id}_M) = \oper
 **Theorem.** For all $R$-modules $M, N$ there is a natural isomorphism of graded algebras
 
 $$
-\operatorname{Sym}(M \oplus N) \cong \operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N).
+\boxed{\;\operatorname{Sym}(M \oplus N) \cong \operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N)\;}.
 $$
 
 *Proof.* The inclusions $M \hookrightarrow M \oplus N \hookrightarrow \operatorname{Sym}(M \oplus N)$ and $N \hookrightarrow M \oplus N \hookrightarrow \operatorname{Sym}(M \oplus N)$ give, by the universal property, algebra homomorphisms $\operatorname{Sym}(M) \to \operatorname{Sym}(M \oplus N)$ and $\operatorname{Sym}(N) \to \operatorname{Sym}(M \oplus N)$ whose images commute (all elements of $\operatorname{Sym}(M \oplus N)$ commute). By the universal property of the tensor product of algebras there is therefore a homomorphism

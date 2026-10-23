@@ -63,7 +63,7 @@ Boundedness makes the filtrations of each $Z_n$, $B_n$ and $H_n$ finite, so the 
 **Theorem.** Let $C_{\bullet\bullet}$ be a double complex with commuting horizontal and vertical differentials and total complex $\operatorname{Tot}(C)$. If for each $n$ only finitely many $C_{n,m}$ with $n+m=N$ are nonzero, then there are two spectral sequences converging to the homology of the total complex,
 
 $$
-{}^IE^2_{n,m}=H^{\mathrm{h}}_n H^{\mathrm{v}}_q(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr), \qquad {}^{II}E^2_{n,m}=H^{\mathrm{v}}_m H^{\mathrm{h}}_n(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr),
+\boxed{\;{}^IE^2_{n,m}=H^{\mathrm{h}}_n H^{\mathrm{v}}_q(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr), \qquad {}^{II}E^2_{n,m}=H^{\mathrm{v}}_m H^{\mathrm{h}}_n(C)\Longrightarrow H_{n+m}\bigl(\operatorname{Tot}C\bigr)\;},
 $$
 
 where $H^{\mathrm{h}}$ and $H^{\mathrm{v}}$ denote homology with respect to the horizontal and the vertical differentials.
@@ -93,7 +93,7 @@ obtained from the double complex $C_n\otimes_RD_m$. Over a principal ideal domai
 **Theorem (Grothendieck).** Let $\mathcal{A},\mathcal{B},\mathcal{C}$ be abelian categories with enough injectives, let $F:\mathcal{A}\to\mathcal{B}$ and $G:\mathcal{B}\to\mathcal{C}$ be left exact covariant functors, and suppose that $F$ carries injective objects of $\mathcal{A}$ to $G$-acyclic objects of $\mathcal{B}$. Then for every object $A$ of $\mathcal{A}$ there is a first-quadrant spectral sequence
 
 $$
-E_2^{n,m}=R^pG\bigl(R^qF(A)\bigr)\Longrightarrow R^{n+m}(GF)(A),
+\boxed{\;E_2^{n,m}=R^pG\bigl(R^qF(A)\bigr)\Longrightarrow R^{n+m}(GF)(A)\;},
 $$
 
 natural in $A$, with differentials $d^r:E^r_{n,m}\to E^r_{n+r,q-r+1}$.
@@ -141,7 +141,7 @@ where $\operatorname{Res}N$ is $N$ regarded as an $R$-module. When $S$ is flat o
 **Theorem.** Let $N$ be a normal subgroup of a group $G$, let $M$ be a $G$-module over $\mathbb{Z}$, and regard $M$ as an $N$-module by restriction. There is a first-quadrant spectral sequence
 
 $$
-E_2^{n,m}=H^n\bigl(G/N,H^q(N,M)\bigr)\Longrightarrow H^{n+m}(G,M),
+\boxed{\;E_2^{n,m}=H^n\bigl(G/N,H^q(N,M)\bigr)\Longrightarrow H^{n+m}(G,M)\;},
 $$
 
 where the coefficient system $H^q(N,M)$ for $G/N$ comes from the conjugation action of $G$ on $N$.

@@ -146,7 +146,7 @@ and it satisfies $R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[
 **Theorem (structure equation).** The curvature of a connection on a vector bundle is the obstruction to the connection being flat and it is tensorial: for a change of frame $g$,
 
 $$
-R' = g^{-1} R\, g,
+\boxed{\;R' = g^{-1} R\, g\;},
 $$
 
 so the curvature is a well-defined section of $\Lambda^2 T^*M \otimes \operatorname{End}E$.
@@ -160,7 +160,7 @@ so the curvature is a well-defined section of $\Lambda^2 T^*M \otimes \operatorn
 **Theorem (Bianchi identity).** For a connection $\nabla$ with curvature $R$,
 
 $$
-d^\nabla R = 0, \qquad \text{that is} \quad dR + [\omega, R] = 0.
+\boxed{\;d^\nabla R = 0, \qquad \text{that is} \quad dR + [\omega, R] = 0\;}.
 $$
 
 For a principal bundle, the same identity reads $d\Omega + [\omega, \Omega] = 0$.
@@ -244,7 +244,7 @@ the **Gauss–Bonnet theorem**, expressing the Euler characteristic as the integ
 **Theorem.** Let $(M, g)$ be a Riemannian manifold. Then there is a unique connection $\nabla$ on the tangent bundle $TM$ that is **metric**, $X\langle Y, Z\rangle = \langle\nabla_XY, Z\rangle + \langle Y, \nabla_XZ\rangle$, and **torsion-free**, $\nabla_XY - \nabla_YX = [X, Y]$. It is the **Levi-Civita connection**, and its curvature is the Riemann curvature tensor
 
 $$
-R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z.
+\boxed{\;R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z\;}.
 $$
 
 **Proof sketch.** The Koszul formula determines $\nabla_XY$ uniquely from $g$ and the bracket; the right-hand side is $C^\infty(M)$-linear in each slot, so it defines a connection, and the two required properties are consequences of the formula.

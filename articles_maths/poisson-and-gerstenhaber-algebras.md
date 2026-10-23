@@ -78,7 +78,7 @@ that is graded antisymmetric, graded derivation in each variable with respect to
 **Theorem.** Let $A$ be a commutative $k$-algebra and $\pi\in\Lambda^2\operatorname{Der}(A)$ a bivector. The formula
 
 $$
-\{f,g\} = \pi(df\wedge dg)
+\boxed{\;\{f,g\} = \pi(df\wedge dg)\;}
 $$
 
 defines a Poisson bracket on $A$ if and only if $[\pi,\pi]_{SN} = 0$; the bracket is the skew-symmetrisation of a biderivation and the condition is the Jacobi identity, which for the bracket of the displayed form is equivalent to the vanishing of the Schouten–Nijenhuis square of the bivector.
@@ -138,7 +138,7 @@ so that $HH^\bullet(A,A)$ is a **Gerstenhaber algebra**; the bracket of two one-
 **Example (the Hochschild–Kostant–Rosenberg identification).** For a polynomial algebra $A = k[x_1,\dots,x_n]$ over a field of characteristic zero the **Hochschild–Kostant–Rosenberg theorem** gives
 
 $$
-HH^\bullet(A,A)\cong\Lambda^\bullet\operatorname{Der}(A) = \Lambda^\bullet_A\bigl(\bigoplus_iA\,\partial/\partial x_i\bigr),
+\boxed{\;HH^\bullet(A,A)\cong\Lambda^\bullet\operatorname{Der}(A) = \Lambda^\bullet_A\bigl(\bigoplus_iA\,\partial/\partial x_i\bigr)\;},
 $$
 
 an isomorphism of Gerstenhaber algebras, the cup product corresponding to the exterior product and the Gerstenhaber bracket to the Schouten–Nijenhuis bracket; the isomorphism is the algebraic source of the identification of the Poisson cohomology of the previous section with the cohomology of the Hochschild-type complex, and it explains why the two brackets — the Schouten–Nijenhuis bracket of polyderivations and the Gerstenhaber bracket of Hochschild cochains — are the same bracket in the commutative case.
@@ -156,7 +156,7 @@ $$
 which is associative, with $\mu_0$ the given product; two deformations are **equivalent** if they are related by a $k[[t]]$-linear automorphism of $A[[t]]$ reducing to the identity modulo $t$. Suppose $A$ commutative; the **semi-classical bracket** of a deformation is
 
 $$
-\{a,b\} = \mu_1(a,b)-\mu_1(b,a),
+\boxed{\;\{a,b\} = \mu_1(a,b)-\mu_1(b,a)\;},
 $$
 
 and the deformation is a **quantisation** of a Poisson structure when this bracket is a Poisson bracket on $A$.

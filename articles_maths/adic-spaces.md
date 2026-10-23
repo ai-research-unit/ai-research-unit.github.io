@@ -28,7 +28,7 @@ This article defines Huber rings, continuous valuations, the adic spectrum and i
 **Proposition.** Let $A$ be a Huber ring and $\lvert \cdot \rvert$ a continuous valuation with value group $\Gamma$. Then the sets
 
 $$
-A^\circ = \{a \in A : \lvert a \rvert \leq 1\}, \qquad A^{\circ\circ} = \{a \in A : \lvert a \rvert < 1\}
+\boxed{\;A^\circ = \{a \in A : \lvert a \rvert \leq 1\}, \qquad A^{\circ\circ} = \{a \in A : \lvert a \rvert < 1\}\;}
 $$
 
 are an open subring and an open ideal of $A$ respectively, and the pair is a ring of definition. If $\lvert \cdot \rvert$ is continuous then it is bounded by a constant multiple of the norm of any fixed ring of definition, and its support is a prime ideal.
@@ -90,7 +90,7 @@ for the topology of the rational subset, namely the topology in which the denomi
 **Theorem.** The category of adic spaces has fibre products, and the fibre product of affinoid spaces is the adic spectrum of the completed tensor product:
 
 $$
-\operatorname{Spa}(B, B^+) \times_{\operatorname{Spa}(A, A^+)} \operatorname{Spa}(C, C^+) = \operatorname{Spa}\bigl(B \widehat{\otimes}_A C, \ B^+ \widehat{\otimes}_{A^+} C^+\bigr),
+\boxed{\;\operatorname{Spa}(B, B^+) \times_{\operatorname{Spa}(A, A^+)} \operatorname{Spa}(C, C^+) = \operatorname{Spa}\bigl(B \widehat{\otimes}_A C, \ B^+ \widehat{\otimes}_{A^+} C^+\bigr)\;},
 $$
 
 where $\widehat{\otimes}$ denotes the completion of the tensor product for the appropriate Huber topology.
@@ -106,7 +106,7 @@ where $\widehat{\otimes}$ denotes the completion of the tensor product for the a
 **Theorem (rigid spaces as adic spaces).** Let $K$ be a complete non-Archimedean field and let $X$ be a rigid analytic space over $K$ in the sense of *Rigid Analytic Geometry*. Then there is an adic space $X^{\mathrm{ad}}$ over $\operatorname{Spa}(K, \mathcal{O})$ and a functorial isomorphism
 
 $$
-\{\text{rigid spaces over } K\} \xrightarrow{\ \sim\ } \{\text{adic spaces over } \operatorname{Spa}(K, \mathcal{O})\}
+\boxed{\;\{\text{rigid spaces over } K\} \xrightarrow{\ \sim\ } \{\text{adic spaces over } \operatorname{Spa}(K, \mathcal{O})\}\;}
 $$
 
 in the quasi-compact and quasi-separated case, under which affinoid algebras correspond to complete Tate Huber rings of definition and the rigid G-topology corresponds to the analytic topology.

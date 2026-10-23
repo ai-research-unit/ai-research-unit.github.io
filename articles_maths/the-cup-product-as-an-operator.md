@@ -41,8 +41,8 @@ reads $\delta L_\varphi = L_{\delta\varphi} + (-1)^{|\varphi|} L_\varphi \delta$
 **Theorem.** For cohomology classes $\varphi$ and $\psi$,
 
 $$
-L_\varphi L_\psi = L_{\varphi \smile \psi}, \qquad\qquad
-L_\varphi L_\psi = (-1)^{|\varphi||\psi|}\, L_\psi L_\varphi ,
+\boxed{\;L_\varphi L_\psi = L_{\varphi \smile \psi}, \qquad\qquad
+L_\varphi L_\psi = (-1)^{|\varphi||\psi|}\, L_\psi L_\varphi\;} ,
 $$
 
 and the assignment $\varphi \mapsto L_\varphi$ is an injective homomorphism of graded rings from the graded-commutative ring $H^*(X;R)$ to the graded-commutative ring of endomorphisms of the graded module $H^*(X;R)$.
@@ -124,7 +124,7 @@ So the graded commutativity of the cohomology is precisely the statement that th
 **Theorem.** The cup product is the pullback of the cross product along the diagonal,
 
 $$
-\varphi \smile \psi = \Delta^*(\varphi \times \psi),
+\boxed{\;\varphi \smile \psi = \Delta^*(\varphi \times \psi)\;},
 $$
 
 and more generally for a map $f : X \to Y$ the multiplication operators intertwine the pullbacks:
@@ -152,7 +152,7 @@ the cap product of *Cup and Cap Products*. The operators pair with the evaluatio
 **Theorem.** The cap product operator is the adjoint of the left multiplication operator under the evaluation pairing: for cohomology classes $\varphi,\psi$ and a homology class $c$,
 
 $$
-\langle L_\varphi \psi,\, c\rangle = \langle \psi,\, C_\varphi c\rangle .
+\boxed{\;\langle L_\varphi \psi,\, c\rangle = \langle \psi,\, C_\varphi c\rangle\;} .
 $$
 
 The operators compose contravariantly, $C_\psi C_\varphi = C_{\varphi\smile\psi}$, so that the assignment $\varphi \mapsto C_\varphi$ is a representation of the ring $H^*(X;R)$ on the graded module $H_*(X;R)$ up to the Koszul sign, and it is the same module structure as the cap product $H_*(X;R) \times H^*(X;R)\to H_*(X;R)$ of *Cup and Cap Products* read with the cohomology acting on the left.

@@ -65,7 +65,7 @@ so the map $x \mapsto x^2$ on $\mathbb{Q}$ is not additive and therefore not an 
 
 **Theorem.** The fixed field of the Frobenius operator is the prime field:
 $$
-F^{\varphi} = \{x \in F : x^p = x\} = \mathbb{F}_p .
+\boxed{\;F^{\varphi} = \{x \in F : x^p = x\} = \mathbb{F}_p\;} .
 $$
 
 **Proof.** The elements fixed by $\varphi$ are the roots in $F$ of the polynomial $X^p - X$, which has at most $p$ roots in the field $F$. The $p$ elements of $\mathbb{F}_p$ all satisfy $a^p = a$ (the multiplicative group $\mathbb{F}_p^\times$ has order $p-1$, so $a^{p-1}=1$ for $a\neq0$, and $0^p=0$), so they are exactly the $p$ roots and there are no others.
@@ -76,7 +76,7 @@ $$
 
 **Theorem (the Frobenius generates $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$).** For the finite field $\mathbb{F}_{p^n}$, the Frobenius operator $\varphi$ is an automorphism of order $n$, and
 $$
-\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n .
+\boxed{\;\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n\;} .
 $$
 Its fixed field is $\mathbb{F}_p$, and $\varphi^n = \mathrm{id}$ on $\mathbb{F}_{p^n}$.
 
@@ -90,7 +90,7 @@ Its fixed field is $\mathbb{F}_p$, and $\varphi^n = \mathrm{id}$ on $\mathbb{F}_
 
 **Proposition.** In a field $F$ of characteristic $p$, every derivation $D$ of $F$ annihilates the image of the Frobenius:
 $$
-D\bigl(x^p\bigr) = p\,x^{p-1}D(x) = 0 \quad \text{for all } x \in F, \qquad D\big|_{F^p} = 0 .
+\boxed{\;D\bigl(x^p\bigr) = p\,x^{p-1}D(x) = 0 \quad \text{for all } x \in F, \qquad D\big|_{F^p} = 0\;} .
 $$
 Hence $F^p \subseteq F^{D}$ for every derivation $D$, and if $F$ is perfect every derivation is zero.
 

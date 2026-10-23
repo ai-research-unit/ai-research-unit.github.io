@@ -64,7 +64,7 @@ The difference is not a technicality. The Caputo derivative is the one for which
 **Theorem (composition laws).** For $\alpha>0$ and $n=\lceil\alpha\rceil$:
 
 $$
-D_a^\alpha I_a^\alpha f = f, \qquad I_a^\alpha D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^{k-\alpha}}{\Gamma(k-\alpha+1)}\,\Bigl[I_a^{n-\alpha}f\Bigr]^{(k)}(a^+),
+\boxed{\;D_a^\alpha I_a^\alpha f = f, \qquad I_a^\alpha D_a^\alpha f(t) = f(t) - \sum_{k=0}^{n-1}\frac{(t-a)^{k-\alpha}}{\Gamma(k-\alpha+1)}\,\Bigl[I_a^{n-\alpha}f\Bigr]^{(k)}(a^+)\;},
 $$
 
 (the latter for $f$ with the required regularity), and for the Caputo derivative
@@ -168,7 +168,7 @@ The proof is the Picard argument verbatim, with the single change that the kerne
 **Theorem (the linear equation).** The solution of ${}^C D_0^\alpha y = \lambda y$ with $y(0)=y_0$, $\alpha\in(0,1)$, is
 
 $$
-y(t) = y_0\,E_\alpha(\lambda t^\alpha),
+\boxed{\;y(t) = y_0\,E_\alpha(\lambda t^\alpha)\;},
 $$
 
 and more generally the solution with $y(0)=y_0$ of ${}^C D_0^\alpha y - \lambda y = t^{\beta-1}g(t)$ is given by the convolution of the Mittag-Leffler kernel with the forcing term.
@@ -204,7 +204,7 @@ $$
 **Theorem (subdiffusive scaling).** The kernel $K_t^{(\alpha)}$ is a probability density for each $t>0$, it is self-similar,
 
 $$
-K_t^{(\alpha)}(x) = t^{-\alpha n/2}K_1^{(\alpha)}\bigl(x\,t^{-\alpha/2}\bigr),
+\boxed{\;K_t^{(\alpha)}(x) = t^{-\alpha n/2}K_1^{(\alpha)}\bigl(x\,t^{-\alpha/2}\bigr)\;},
 $$
 
 and for $0<\alpha<1$ it has the heavy tail

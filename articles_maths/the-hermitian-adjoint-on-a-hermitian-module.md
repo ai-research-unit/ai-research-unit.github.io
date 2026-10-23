@@ -25,7 +25,7 @@ $$
 **Theorem (the adjoint of the action).** For every $x\in A$,
 
 $$
-\rho(x)^{*} = \rho(x^{\dagger}) ,
+\boxed{\;\rho(x)^{*} = \rho(x^{\dagger})\;} ,
 $$
 
 so the action of $A$ on $M$ is a $\ast$-representation with the involution of the algebra and the Hermitian adjoint of the module.
@@ -35,7 +35,7 @@ so the action of $A$ on $M$ is a $\ast$-representation with the involution of th
 **Proposition (the adjoint of a composite of actions).** For $x, y\in A$ and bounded module operators $S,T$,
 
 $$
-\bigl(\rho(x)S\,\rho(y)\bigr)^{*} = \rho(y^{\dagger})S^{*}\rho(x^{\dagger}) ,
+\boxed{\;\bigl(\rho(x)S\,\rho(y)\bigr)^{*} = \rho(y^{\dagger})S^{*}\rho(x^{\dagger})\;} ,
 $$
 
 so adjacency reverses the order and turns each action into the action of the involution.
@@ -67,7 +67,7 @@ so the module is a module over the involution as well, and the two structures ar
 **Theorem (polar decomposition of the module involution).** The closure of $S_M$ has a polar decomposition
 
 $$
-\bar S_M = J_M\,\Delta_M^{1/2} ,
+\boxed{\;\bar S_M = J_M\,\Delta_M^{1/2}\;} ,
 $$
 
 with $J_M$ an antiunitary involution and $\Delta_M = \bar S_M^{*}\bar S_M\geq0$ the **modular operator of the module**; the identities $\Delta_M = \bar S_M^{*}\bar S_M$, $J_M\Delta_MJ_M = \Delta_M^{-1}$ and $J_M\Delta_M^{it}J_M = \Delta_M^{-it}$ hold as in the algebra case.

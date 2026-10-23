@@ -39,7 +39,7 @@ where $T^{\dagger} = JT^{*}J$ is the adjoint for the indefinite form. A **non-de
 **Proposition (the definite translation).** $\mathcal{M}$ is a $J$-algebra if and only if it is a unital subalgebra of $\mathcal{L}(K)$ closed in the weak operator topology and satisfying
 
 $$
-J\mathcal{M}^{*}J = \mathcal{M}, \qquad \mathcal{M}^{*} = \{\,T^{*} : T\in\mathcal{M}\,\} .
+\boxed{\;J\mathcal{M}^{*}J = \mathcal{M}, \qquad \mathcal{M}^{*} = \{\,T^{*} : T\in\mathcal{M}\,\}\;} .
 $$
 
 If in addition $J\in\mathcal{M}$ then $\mathcal{M}$ is a von Neumann algebra of the Hilbert space $(K,\langle\cdot,\cdot\rangle)$ containing $J$; conversely every such von Neumann algebra is a $J$-algebra.
@@ -63,7 +63,7 @@ the ordinary commutant; the **$J$-bicommutant** is $\mathcal{S}^{cc}$. When $\ma
 **Theorem ($J$-bicommutant).** Let $\mathcal{M}$ be a unital $J$-algebra on a Krein space $K$ containing the identity and the fundamental symmetry $J$. Then
 
 $$
-\mathcal{M}^{cc} = \mathcal{M} .
+\boxed{\;\mathcal{M}^{cc} = \mathcal{M}\;} .
 $$
 
 Equivalently, a unital algebra of bounded operators closed under the indefinite adjoint and in the weak operator topology is a Krein–von Neumann algebra.

@@ -95,7 +95,7 @@ The alternating pattern of signs is visible: $-, +, -$ on the inner terms and $+
 **Theorem.** The Hochschild differential satisfies
 
 $$
-b \circ b = 0, \qquad \text{that is} \qquad b_{n+1} b_n = 0 \quad \text{for every } n \geq 0 .
+\boxed{\;b \circ b = 0, \qquad \text{that is} \qquad b_{n+1} b_n = 0 \quad \text{for every } n \geq 0\;} .
 $$
 
 *Proof.* Fix $f \in C^n(A,M)$ and arguments $a_0, \dots, a_{n+1}$. The cochain $b f$ is a sum of $n+2$ terms, each of which is the value of $f$ at an $(n+1)$-tuple together with a product of two adjacent arguments contracted or an end action applied; the differential $b(bf)$ is the alternating sum over the $n+3$ positions of $(b f)$ of the same operation. Expand: the double sum ranges over the pairs $(i,j)$ with $0 \leq i < j \leq n+1$, where $i$ is the position contracted in the inner application and $j$ that contracted in the outer one; each pair $(i,j)$ arises in exactly two ways, once by contracting $a_i a_{i+1}$ first and then the resulting adjacent product with $a_{i+2}$, and once by contracting $a_{i+1}a_{i+2}$ first and then $a_i$ with the result. The two contributions are equal as values of $f$ — both amount to the single value $f(\dots, a_i a_{i+1} a_{i+2}, \dots)$ — and their coefficients in the alternating sum are $(-1)^i(-1)^{j-1}$ and $(-1)^{i+1}(-1)^j$, which are opposite. The two end terms are paired with the contractions at the ends in the same way, and every remaining term cancels; hence $b^2 f = 0$.
@@ -137,7 +137,7 @@ The definitions are those of a cochain complex, and they are the reason the squa
 **Proposition.** The low-dimensional modules of the Hochschild complex are
 
 $$
-H^0(A,M) = M^A, \qquad H^1(A,M) = \operatorname{Der}_k(A,M) / \operatorname{InnDer}_k(A,M), \qquad H^2(A,M) = \text{the abelian extensions up to equivalence},
+\boxed{\;H^0(A,M) = M^A, \qquad H^1(A,M) = \operatorname{Der}_k(A,M) / \operatorname{InnDer}_k(A,M), \qquad H^2(A,M) = \text{the abelian extensions up to equivalence}\;},
 $$
 
 where $M^A = \{m : am = ma\}$ is the invariant submodule, $\operatorname{Der}_k(A,M)$ is the module of $k$-linear maps satisfying the Leibniz rule, and $\operatorname{InnDer}_k(A,M)$ is the submodule of inner derivations $a \mapsto am - ma$.
@@ -220,7 +220,7 @@ Let $A = k[\varepsilon]/(\varepsilon^2)$ and $M = A$. The derivations are the ma
 The Hochschild cochains are the multilinear maps $C^n(A,M) = \operatorname{Hom}_k(A^{\otimes n},M)$, assembled into the graded $A^{\mathrm{e}}$-module $C^{\bullet}(A,M)$, and the **Hochschild differential** $b$ is the degree-one operator
 
 $$
-(b f)(a_0,\dots,a_n) = a_0 f(a_1,\dots,a_n) + \sum_{i=1}^{n}(-1)^i f(a_0,\dots,a_{i-1}a_i,\dots,a_n) + (-1)^{n+1}f(a_0,\dots,a_{n-1})a_n .
+\boxed{\;(b f)(a_0,\dots,a_n) = a_0 f(a_1,\dots,a_n) + \sum_{i=1}^{n}(-1)^i f(a_0,\dots,a_{i-1}a_i,\dots,a_n) + (-1)^{n+1}f(a_0,\dots,a_{n-1})a_n\;} .
 $$
 
 In low degrees it is $b m = (a \mapsto am - ma)$ on $M$, the Leibniz operator $b f(a_0,a_1) = a_0 f(a_1) - f(a_0a_1) + f(a_0)a_1$ on the linear maps, and the three-term alternating operator on the bilinear maps. The square-zero property $b^2 = 0$ holds, by the cancellation of the twelve terms of the double sum; it makes $(C^{\bullet}(A,M), b)$ a cochain complex, and it makes the quotient $H^n(A,M) = \ker b_n / \operatorname{im} b_{n-1}$ defined. The differential commutes with the $A^{\mathrm{e}}$-action, has degree one, is the transpose of the chain boundary of *Hochschild Homology*, and its kernel and image reproduce the low-dimensional theory: $H^0(A,M) = M^A$, $H^1(A,M)$ is the module of derivations modulo the inner ones, and $H^2(A,M)$ classifies the abelian extensions. For $M = A$ the degree-zero differential is $m \mapsto \mathrm{ad}_m$, with kernel the centre and image the inner derivations, so $H^1(A,A)$ is the space of outer derivations and vanishes for a central simple algebra. The cohomology's derived-functor description, its products and its theorems are the subject of *Hochschild Homology*; the complex and the differential as an operator are the subject of this article.

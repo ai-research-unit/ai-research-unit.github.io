@@ -84,7 +84,7 @@ The proof is the algebraic core of the theorem; its geometric form, in which $H$
 **Theorem (Schreier index formula).** Let $F_n$ be free of rank $n$ and let $H \leq F_n$ have finite index $k$. Then
 
 $$
-\operatorname{rk}(H) = k(n - 1) + 1 = 1 + k(n-1).
+\boxed{\;\operatorname{rk}(H) = k(n - 1) + 1 = 1 + k(n-1)\;}.
 $$
 
 **Proof.** Let $T$ be a Schreier transversal with $|T| = k$. The **Schreier graph** $\Gamma$ has the $k$ cosets as vertices, and for each coset $Hg$ and each generator $x \in X$ an undirected edge joining $Hg$ to $Hgx$; thus $\Gamma$ has $k$ vertices and $nk$ edges, and it is connected because $F_n$ permutes the cosets transitively by right multiplication. A spanning tree of $\Gamma$ has $k-1$ edges, and the subgroup $H$ is the fundamental group of $\Gamma$, free of rank
@@ -110,7 +110,7 @@ The verification accompanying this article confirms the formula on the kernels o
 **Theorem (Kurosh).** Let $G = *_{i \in I} A_i$ be a free product of groups. Every subgroup $H \leq G$ decomposes as a free product
 
 $$
-H = F * \Big( *_{i \in I} *_{j \in J_i} H_{ij} \Big),
+\boxed{\;H = F * \Big( *_{i \in I} *_{j \in J_i} H_{ij} \Big)\;},
 $$
 
 where $F$ is a free group, and for each $i$ the groups $H_{ij}$ are conjugates of subgroups of $A_i$ in $G$. If $H$ has finite index in $G$ and the index set $I$ and the factors are finite, then $F$ has finite rank and the $J_i$ are finite.
@@ -148,7 +148,7 @@ where $t$ is a new generator, the **stable letter**. The subgroup $G$ is the **b
 **Theorem (Britton's lemma and normal form).** Every element of $G*_\alpha$ has a unique **normal form**
 
 $$
-g_0\, t^{\epsilon_1} g_1\, t^{\epsilon_2} \cdots t^{\epsilon_n} g_n,
+\boxed{\;g_0\, t^{\epsilon_1} g_1\, t^{\epsilon_2} \cdots t^{\epsilon_n} g_n\;},
 $$
 
 where $g_0 \in G$, $\epsilon_i = \pm 1$, $g_i \in G$ for $i < n$, and no subword $t^{-1} g_i t$ with $g_i \in A$ or $t g_i t^{-1}$ with $g_i \in B$ occurs. In particular the base $G$ embeds in $G*_\alpha$, and an element is trivial if and only if its normal form reduces to the empty word by the applications of the relations $t a t^{-1} = \alpha(a)$ and $t^{-1} b t = \alpha^{-1}(b)$.

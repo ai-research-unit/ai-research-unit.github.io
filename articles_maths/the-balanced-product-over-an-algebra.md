@@ -46,7 +46,7 @@ $$
 such that for every abelian group $P$ and every $A$-balanced map $f: M\times N\to P$ there is a unique group homomorphism $\bar{f}: M\otimes_A N\to P$ with $\bar{f}(m\otimes n)=f(m,n)$. Equivalently,
 
 $$
-\operatorname{Hom}_{\mathbb{Z}}(M\otimes_A N, P) \cong \operatorname{Bal}_A(M,N;P), \qquad \bar{f} \longmapsto \bar{f}\circ\iota,
+\boxed{\;\operatorname{Hom}_{\mathbb{Z}}(M\otimes_A N, P) \cong \operatorname{Bal}_A(M,N;P), \qquad \bar{f} \longmapsto \bar{f}\circ\iota\;},
 $$
 
 naturally in $P$.
@@ -110,7 +110,7 @@ Three special cases are used constantly.
 **Theorem.** Let $M$ be a right $A$-module and $N$ a left $A$-module. Then there are natural isomorphisms of abelian groups
 
 $$
-A \otimes_A N \cong N, \qquad M \otimes_A A \cong M,
+\boxed{\;A \otimes_A N \cong N, \qquad M \otimes_A A \cong M\;},
 $$
 
 the first induced by $a\otimes n \mapsto an$ and the second by $m\otimes a \mapsto ma$. If $N$ is an $(A,C)$-bimodule the first is an isomorphism of $(A,C)$-bimodules, and if $M$ is a $(B,A)$-bimodule the second is an isomorphism of $(B,A)$-bimodules.
@@ -216,7 +216,7 @@ The balanced product is the left adjoint of a hom functor, and this adjunction i
 **Theorem.** Let ${}_B M_A$ be a $(B,A)$-bimodule, $N$ a left $A$-module and $P$ a left $B$-module. Then there is a natural isomorphism of abelian groups
 
 $$
-\operatorname{Hom}_B(M\otimes_A N, P) \cong \operatorname{Hom}_A\bigl(N, \operatorname{Hom}_B(M,P)\bigr),
+\boxed{\;\operatorname{Hom}_B(M\otimes_A N, P) \cong \operatorname{Hom}_A\bigl(N, \operatorname{Hom}_B(M,P)\bigr)\;},
 $$
 
 where the left $B$-module $\operatorname{Hom}_B(M,P)$ is a left $A$-module by $(af)(m)=f(ma)$.

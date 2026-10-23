@@ -72,13 +72,13 @@ The quantum group is **unimodular** if $\varphi = \psi$ up to scaling, **compact
 **Theorem (Kustermans–Vaes; standard).** Let $(M,\Delta)$ satisfy the axioms. Then the left Haar weight is unique up to scaling and is KMS with respect to its modular group $\sigma$; there exists a unique strongly continuous one-parameter group $\tau$ of $*$-automorphisms of $M$, the **scaling group**, with
 
 $$
-\tau_t\circ\sigma_s = \sigma_s\circ\tau_t , \qquad \Delta\circ\tau_t = (\tau_t\otimes\tau_t)\circ\Delta , \qquad \varphi\circ\tau_t = \nu^t\,\varphi \quad \text{for a constant } \nu>0 ,
+\boxed{\;\tau_t\circ\sigma_s = \sigma_s\circ\tau_t , \qquad \Delta\circ\tau_t = (\tau_t\otimes\tau_t)\circ\Delta , \qquad \varphi\circ\tau_t = \nu^t\,\varphi \quad \text{for a constant } \nu>0\;} ,
 $$
 
 where $\nu$ is the **scaling constant**; there exist unique maps: a $*$-anti-automorphism $R$ of $M$ with $R^2 = \operatorname{id}$, the **unitary antipode**, satisfying $\Delta\circ R = \operatorname{flip}\circ(R\otimes R)\circ\Delta$ with $\operatorname{flip}$ the tensor flip, and an anti-automorphism $S$ of a dense domain of $M$, the **antipode**, with
 
 $$
-S = R\circ\tau_{-i/2} , \qquad S\bigl(S(a)^*\bigr) = a ,
+\boxed{\;S = R\circ\tau_{-i/2} , \qquad S\bigl(S(a)^*\bigr) = a\;} ,
 $$
 
 and a $*$-homomorphism $\epsilon : M\to\mathbb{C}$ on the algebraic core, the **counit**; the identities of a quantum group,
@@ -140,7 +140,7 @@ Then $W$ is a bijection of $G\times G$ onto itself — it carries the basis vect
 **Theorem (Woronowicz; standard).** For every compact quantum group there is a unique **Haar state** $h$, a state with
 
 $$
-(h\otimes\iota)\Delta(a) = h(a)1 = (\iota\otimes h)\Delta(a) \qquad (a\in A) ,
+\boxed{\;(h\otimes\iota)\Delta(a) = h(a)1 = (\iota\otimes h)\Delta(a) \qquad (a\in A)\;} ,
 $$
 
 which is faithful on the dense $*$-algebra $A_0$ of matrix coefficients of the finite-dimensional unitary corepresentations; every irreducible corepresentation is finite-dimensional, the matrix coefficients span a dense $*$-subalgebra $A_0$ which is a Hopf $*$-algebra, and the analogue of the Peter–Weyl theorem expresses $A_0$ as the algebraic direct sum of the matrix blocks of the irreducible corepresentations. This is Woronowicz's theory of compact quantum groups; it is quoted as standard.

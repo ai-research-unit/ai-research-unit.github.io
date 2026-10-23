@@ -40,7 +40,7 @@ The underlying $R$-module of $M^{\sigma}$ is that of $M$; only the action is cha
 **Proposition.** The assignment $M \mapsto M^{\sigma}$, with a homomorphism $f : M \to N$ sent to the same map $f : M^{\sigma} \to N^{\sigma}$, is an endofunctor of the category of left $A$-modules, and
 
 $$
-(M^{\sigma})^{\sigma}=M \qquad (M \text{ a left } A\text{-module}),
+\boxed{\;(M^{\sigma})^{\sigma}=M \qquad (M \text{ a left } A\text{-module})\;},
 $$
 
 so the functor is an equivalence of categories and an involution up to the identity.
@@ -84,7 +84,7 @@ For a free module the induced involution is $\sigma$ applied entrywise and combi
 **Theorem.** Let $n \geq 1$ and identify $\operatorname{End}_A({}_A A^n)\cong M_n(A^{\mathrm{opp}})$ by the right multiplication $f(v)=vX$ of *The Endomorphism Algebra of a Module*. Then the map
 
 $$
-\Theta : M_n(A^{\mathrm{opp}}) \to M_n(A^{\mathrm{opp}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji}),
+\boxed{\;\Theta : M_n(A^{\mathrm{opp}}) \to M_n(A^{\mathrm{opp}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji})\;},
 $$
 
 is an involution of the $R$-algebra $M_n(A^{\mathrm{opp}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.
@@ -118,7 +118,7 @@ Thus for a free module the involution induced by $\sigma$ is determined up to co
 **Proposition.** If $u : M \to M^{\sigma}$ is an isomorphism, then the composite
 
 $$
-\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}) \xrightarrow{\ f \mapsto u^{-1}fu\ } \operatorname{End}_A(M)
+\boxed{\;\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}) \xrightarrow{\ f \mapsto u^{-1}fu\ } \operatorname{End}_A(M)\;}
 $$
 
 is a unital $R$-algebra automorphism of $\operatorname{End}_A(M)$, namely the inner automorphism by $u$; it is an involution exactly when $u^{2}$ is central in $\operatorname{End}_A(M)$, and it need not be an involution in general.

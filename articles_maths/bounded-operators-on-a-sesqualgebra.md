@@ -61,7 +61,7 @@ is an isometric vector-space isomorphism, with inverse $S \mapsto S \circ *$.
 **Proposition (the parity multiplication).** For operators of the two classes the composite is of the class given by
 
 $$
-B(A) \circ B(A) \subseteq B(A), \quad B(A) \circ B^{\varsigma}(A) \subseteq B^{\varsigma}(A), \quad B^{\varsigma}(A) \circ B(A) \subseteq B^{\varsigma}(A), \quad B^{\varsigma}(A) \circ B^{\varsigma}(A) \subseteq B(A),
+\boxed{\;B(A) \circ B(A) \subseteq B(A), \quad B(A) \circ B^{\varsigma}(A) \subseteq B^{\varsigma}(A), \quad B^{\varsigma}(A) \circ B(A) \subseteq B^{\varsigma}(A), \quad B^{\varsigma}(A) \circ B^{\varsigma}(A) \subseteq B(A)\;},
 $$
 
 and in each case $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$.
@@ -77,7 +77,7 @@ and in each case $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$.
 **Theorem (the direct sum is a graded Banach algebra).** Let
 
 $$
-\mathcal{B}(A) = B(A) \oplus B^{\varsigma}(A)
+\boxed{\;\mathcal{B}(A) = B(A) \oplus B^{\varsigma}(A)\;}
 $$
 
 with the componentwise vector structure, the norm $\lVert (T_0,T_1)\rVert = \lVert T_0\rVert + \lVert T_1\rVert$, and the product
@@ -131,7 +131,7 @@ The corollary is the exact point at which the sesquilinear layer needs the compl
 **Proposition (the bounded operators inside the endomorphism algebras).** Let $\operatorname{End}_{\mathbb{K}}(A)$ be the algebra of all $\mathbb{K}$-linear maps and $\operatorname{End}^{\varsigma}_{\mathbb{K}}(A)$ the vector space of all conjugate-linear maps. Then
 
 $$
-B(A) = \{T \in \operatorname{End}_{\mathbb{K}}(A) : T \text{ continuous}\} , \qquad B^{\varsigma}(A) = \{T \in \operatorname{End}^{\varsigma}_{\mathbb{K}}(A) : T \text{ continuous}\} ,
+\boxed{\;B(A) = \{T \in \operatorname{End}_{\mathbb{K}}(A) : T \text{ continuous}\} , \qquad B^{\varsigma}(A) = \{T \in \operatorname{End}^{\varsigma}_{\mathbb{K}}(A) : T \text{ continuous}\}\;} ,
 $$
 
 and the spaces of the algebraic layer are recovered by forgetting the norm, with $\mathcal{B}(A)$ reducing to the graded algebra $\operatorname{End}_{\mathbb{K}}(A) \oplus \operatorname{End}^{\varsigma}_{\mathbb{K}}(A)$.

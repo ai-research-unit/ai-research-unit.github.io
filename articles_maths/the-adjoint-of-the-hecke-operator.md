@@ -41,7 +41,7 @@ For $p\mid N$ the operator is written $U_p$ and for $p\nmid N$ the operator $T_p
 
 **Theorem (the adjoint).** Let $\gcd(n,N)=1$. With respect to the Petersson form and the Fricke involution $w_N$,
 $$
-T_n^*=w_N^{-1}T_nw_N=w_NT_nw_N ,
+\boxed{\;T_n^*=w_N^{-1}T_nw_N=w_NT_nw_N\;} ,
 $$
 and $T_n$ is normal, $T_nT_n^*=T_n^*T_n$. In particular $T_n^*=T_n$ for $\gcd(n,N)=1$ on the whole space when the Fricke involution acts trivially on the space, and always on the subspace of the forms fixed by $w_N$.
 
@@ -55,7 +55,7 @@ and $T_n$ is normal, $T_nT_n^*=T_n^*T_n$. In particular $T_n^*=T_n$ for $\gcd(n,
 
 **Theorem.** For $p\mid N$ the operator $U_p$ is not self-adjoint and not normal in general; its adjoint is
 $$
-U_p^*=w_N^{-1}U_p^{\vee}\,w_N ,
+\boxed{\;U_p^*=w_N^{-1}U_p^{\vee}\,w_N\;} ,
 $$
 where $U_p^{\vee}$ is the Hecke operator of the dual double coset, and the deviation from self-adjointness is measured by the Atkin–Lehner theory. On the newforms of level $N$ the operator $U_p$ has the eigenvalue $a_p$ with $|a_p|\le2p^{(k-1)/2}$ in the analytic normalisation.
 

@@ -38,7 +38,7 @@ An eigenvector determines a line, and the eigenvalue is the factor by which $T$ 
 **Proposition.** Eigenvectors for distinct eigenvalues are linearly independent; more generally, if $\lambda_1,\dots,\lambda_k$ are distinct then
 
 $$
-V_{\lambda_1}+\cdots+V_{\lambda_k}=V_{\lambda_1}\oplus\cdots\oplus V_{\lambda_k},
+\boxed{\;V_{\lambda_1}+\cdots+V_{\lambda_k}=V_{\lambda_1}\oplus\cdots\oplus V_{\lambda_k}\;},
 $$
 
 so the sum of the eigenspaces is direct.
@@ -72,7 +72,7 @@ The definition is legitimate for $T$ because similar matrices have equal determi
 *Proof.* Extend a basis $b_1,\dots,b_g$ of $V_\lambda$ to a basis of $V$. In that basis the matrix of $T$ is block upper triangular,
 
 $$
-\begin{pmatrix} \lambda I_g & * \\ 0 & B \end{pmatrix},
+\boxed{\;\begin{pmatrix} \lambda I_g & * \\ 0 & B \end{pmatrix}\;},
 $$
 
 so $c_T(x)=(x-\lambda)^g c_B(x)$ and $\lambda$ occurs to the power at least $g$.
@@ -106,7 +106,7 @@ The converse fails: the identity has a single eigenvalue and is diagonalisable. 
 For a matrix $A$ the eigenspace for $\lambda$ is $\ker(\lambda I-A)$, so its dimension is computed by rank–nullity:
 
 $$
-\dim_F V_\lambda=n-\operatorname{rk}(\lambda I-A),
+\boxed{\;\dim_F V_\lambda=n-\operatorname{rk}(\lambda I-A)\;},
 $$
 
 and a basis of the eigenspace is a basis of the null space of $\lambda I-A$, obtained by Gaussian elimination. Diagonalisation, when possible, is the change of basis $P$ whose columns are bases of the eigenspaces, giving $P^{-1}AP=\operatorname{diag}(\lambda_1,\dots,\lambda_n)$, with each eigenvalue repeated according to its geometric multiplicity.

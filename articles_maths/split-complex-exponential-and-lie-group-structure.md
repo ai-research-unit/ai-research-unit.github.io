@@ -36,7 +36,7 @@ convergent in the Euclidean topology of $\mathbb{D}\cong\mathbb{R}^2$.
 **Theorem (closed form).** For $Q = Q_+\Pi_+ + Q_-\Pi_-$ and for $Q = q+jq'$,
 
 $$
-\exp(Q) = \exp(Q_+) \Pi_+ + \exp(Q_-) \Pi_-, \qquad \exp(q+jq') = \exp(q)\bigl(\cosh q' + j \sinh q'\bigr) = \exp(q)\cosh q' + \exp(q)\sinh q'\, j .
+\boxed{\; \exp(Q) = \exp(Q_+) \Pi_+ + \exp(Q_-) \Pi_-, \qquad \exp(q+jq') = \exp(q)\bigl(\cosh q' + j \sinh q'\bigr) = \exp(q)\cosh q' + \exp(q)\sinh q'\, j \;}.
 $$
 
 **Proof.** The idempotents satisfy $\Pi_\pm^2 = \Pi_\pm$ and $\Pi_+\Pi_- = 0$, so for $n \geq 0$
@@ -94,7 +94,7 @@ the open cone of positive norm pointing along the real axis.
 **Theorem (the exponential is a diffeomorphism onto the identity component).** The exponential restricts to a diffeomorphism of smooth manifolds
 
 $$
-\exp : \mathbb{D} \longrightarrow (\mathbb{D}^\times)_0, \qquad (q,q') \longmapsto \bigl(\exp(q)\cosh q', \ \exp(q)\sinh q'\bigr),
+\boxed{\; \exp : \mathbb{D} \longrightarrow (\mathbb{D}^\times)_0, \qquad (q,q') \longmapsto \bigl(\exp(q)\cosh q', \ \exp(q)\sinh q'\bigr) \;},
 $$
 
 whose inverse is
@@ -152,7 +152,7 @@ $$
 **Theorem.** The unit-norm group is the abelian Lie group
 
 $$
-\mathbb{D}^{(1)} \;\cong\; \mathbb{Z}/2 \times \mathbb{R} \;\cong\; \{\pm 1\}\times\{\exp(jt)\},
+\boxed{\; \mathbb{D}^{(1)} \;\cong\; \mathbb{Z}/2 \times \mathbb{R} \;\cong\; \{\pm 1\}\times\{\exp(jt)\} \;},
 $$
 
 with two connected components $\mathbb{D}^{(1)}_0 = \{\exp(jt)\}$ and $-\mathbb{D}^{(1)}_0 = \{-\exp(jt)\}$. The hyperbolic subgroup $\mathbb{D}^{(1)}_0 \cong (\mathbb{R}, +)$ is a **non-compact** one-parameter group, and $\pi_0(\mathbb{D}^{(1)}) = \mathbb{Z}/2$, $\pi_1(\mathbb{D}^{(1)}) = 0$.

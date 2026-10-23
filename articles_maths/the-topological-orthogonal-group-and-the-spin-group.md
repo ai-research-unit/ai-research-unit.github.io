@@ -59,7 +59,7 @@ and the **special orthogonal group** is $\mathrm{SO}(V,\mathfrak{Q})=\{T\in\math
 **Definition.** The **Clifford group** is the group of versors $\Gamma(V,\mathfrak{Q})=\{x\in \mathrm{Cl}(V,\mathfrak{Q})^{\times} : \chi_{x}(V)\subseteq V\}$ with $\chi_{x}(y)=x\,y\,\alpha(x)^{-1}$, where $\alpha$ is the parity involution; the **Clifford norm** is $N(x)=x\,x^{\natural}$ for the Clifford conjugation $x^{\natural}=\alpha(x^{r})$, so that $N(u)=-\mathfrak{Q}(u)$ on a vector; the **Pin group** is $\mathrm{Pin}(V,\mathfrak{Q})=\{x\in\Gamma(V,\mathfrak{Q}) : N(x)=1\}$ and the **Spin group** is its even part $\mathrm{Spin}(V,\mathfrak{Q})=\mathrm{Pin}(V,\mathfrak{Q})\cap\mathrm{Cl}^{0}(V,\mathfrak{Q})$, as in *The Two-Sided Operators and the Spin Group* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The **action** of the Clifford group on the vectors is
 
 $$
-\rho(x) : v\mapsto \chi_{x}(v)=x\,v\,\alpha(x)^{-1} .
+\boxed{\;\rho(x) : v\mapsto \chi_{x}(v)=x\,v\,\alpha(x)^{-1}\;} .
 $$
 
 **Lemma (the groups of the cover are locally compact closed subsets).** Let $F$ be a complete valued field and $V$ finite-dimensional. Then the Clifford group is locally closed in the finite-dimensional algebra and the Pin and Spin groups are closed in the group of units; each is a locally compact topological group.

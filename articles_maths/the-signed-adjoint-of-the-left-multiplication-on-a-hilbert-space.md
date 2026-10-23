@@ -19,7 +19,7 @@ Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb
 **Theorem (the adjoint).** For every $U\in B(H)$ the signed left multiplication is bounded on $S_2(H)$ and
 
 $$
-(\ell_U)^*=L_{\alpha(U^*)}\circ\alpha=\ell_{\alpha(U^*)},\qquad (\ell_U)^*(T)=\alpha(U^*)\,\alpha(T),
+\boxed{\;(\ell_U)^*=L_{\alpha(U^*)}\circ\alpha=\ell_{\alpha(U^*)},\qquad (\ell_U)^*(T)=\alpha(U^*)\,\alpha(T)\;},
 $$
 
 so the adjoint of a signed left multiplication is the signed left multiplication by the $\alpha$-adjoint parameter; the adjoint of the signed right multiplication is, by the same computation, $(\varrho_V)^*=\varrho_{\alpha(V^*)}$.
@@ -45,7 +45,7 @@ which is an involutive antiautomorphism of $B(H)$, $\alpha((UV)^*)=\alpha(U^*)\a
 **Theorem (self-adjointness).** The signed left multiplication is self-adjoint,
 
 $$
-(\ell_U)^*=\ell_U,
+\boxed{\;(\ell_U)^*=\ell_U\;},
 $$
 
 if and only if
@@ -61,7 +61,7 @@ In particular $\ell_U$ is self-adjoint when $U$ is self-adjoint and even, and it
 **Theorem (isometry and unitarity).** The signed left multiplication is an isometry of $S_2(H)$ if and only if $U$ is an isometry, and it is unitary if and only if $U$ is unitary; more precisely
 
 $$
-(\ell_U)^*\ell_U=L_{\alpha(U^*U)},\qquad \ell_U(\ell_U)^*=L_{UU^*},
+\boxed{\;(\ell_U)^*\ell_U=L_{\alpha(U^*U)},\qquad \ell_U(\ell_U)^*=L_{UU^*}\;},
 $$
 
 so $\ell_U$ is isometric exactly when $\alpha(U^*U)=I$, which is $U^*U=I$ because $\alpha$ is injective, and it is unitary exactly when in addition $UU^*=I$.

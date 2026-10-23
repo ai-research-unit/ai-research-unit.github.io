@@ -74,7 +74,7 @@ is a Banach algebra, the **Banach quotient algebra** associated with $p_\alpha$.
 **Theorem.** Let $A$ be a locally m-convex algebra. Then the canonical map
 
 $$
-A \longrightarrow \varprojlim_\alpha A_\alpha , \qquad x \longmapsto (x + N_\alpha)_\alpha ,
+\boxed{\;A \longrightarrow \varprojlim_\alpha A_\alpha , \qquad x \longmapsto (x + N_\alpha)_\alpha\;} ,
 $$
 
 is a topological algebra isomorphism onto its image; it is onto, and therefore a topological isomorphism onto the projective limit, if and only if $A$ is complete.
@@ -142,7 +142,7 @@ $$
 **Theorem (Gelfand theory of Fréchet m-algebras).** Let $A$ be a commutative unital Fréchet locally m-convex algebra over $\mathbb{C}$. Then every character is continuous, the Gelfand transform $x \mapsto \mathcal F x$ is a continuous algebra homomorphism of $A$ into $C(\operatorname{Max}(A))$, and
 
 $$
-\sigma_A(x) \supseteq \{\chi(x) : \chi \in \operatorname{Max}(A)\}, \qquad r_A(x) \geq \sup_{\chi \in \operatorname{Max}(A)}\lvert\chi(x)\rvert .
+\boxed{\;\sigma_A(x) \supseteq \{\chi(x) : \chi \in \operatorname{Max}(A)\}, \qquad r_A(x) \geq \sup_{\chi \in \operatorname{Max}(A)}\lvert\chi(x)\rvert\;} .
 $$
 
 If $A$ is a Banach algebra the inclusions are equalities and the supremum is attained.
@@ -184,7 +184,7 @@ for an increasing generating sequence $(p_n)$, as in *Fréchet Spaces*.
 **Proposition.** The following inclusions are strict:
 
 $$
-\{\text{Banach algebras}\} \subsetneq \{\text{Fréchet m-algebras}\} \subsetneq \{\text{Fréchet algebras}\} .
+\boxed{\;\{\text{Banach algebras}\} \subsetneq \{\text{Fréchet m-algebras}\} \subsetneq \{\text{Fréchet algebras}\}\;} .
 $$
 
 **Proof.** A Banach algebra is a Fréchet m-algebra, and $C^\infty[0,1]$ with its usual topology is a Fréchet algebra which is not normable: by the criterion of *Locally Convex Spaces*, a metrisable locally convex space is normable exactly when it has a bounded neighbourhood of $0$, and no neighbourhood of $0$ in $C^\infty[0,1]$ is bounded, since a neighbourhood defined by bounds on finitely many derivatives contains functions whose derivatives of the next order are arbitrarily large. Hence the first inclusion is strict. Arens's algebra below is a Fréchet algebra which is not locally m-convex, so the second inclusion is strict.

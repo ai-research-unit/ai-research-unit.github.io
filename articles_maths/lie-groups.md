@@ -192,7 +192,7 @@ $$
 
 **(g)** **Baker–Campbell–Hausdorff:** for sufficiently small $X, Y$ there is $Z \in \mathrm{G}$ with $\exp(X)\exp(Y) = \exp(Z)$ and
 $$
-Z = X + Y + \frac{1}{2}[X,Y] + \frac{1}{12}[X,[X,Y]] - \frac{1}{12}[Y,[X,Y]] + \cdots,
+\boxed{\;Z = X + Y + \frac{1}{2}[X,Y] + \frac{1}{12}[X,[X,Y]] - \frac{1}{12}[Y,[X,Y]] + \cdots\;},
 $$
 a convergent series of iterated brackets. Thus the group law near $e$ is determined by the bracket, and $\exp(X)\exp(Y) = \exp(X+Y)$ whenever $[X,Y] = 0$.
 
@@ -246,7 +246,7 @@ A **Lie subalgebra** of $\mathrm{G}$ is a subspace $\mathrm{H}$ with $[\mathrm{H
 **Lie correspondence.** Let $G$ have Lie algebra $\mathrm{G}$. Every Lie subalgebra $\mathrm{H} \subseteq \mathrm{G}$ is the Lie algebra of a unique connected immersed Lie subgroup $H \subseteq G$, and conversely the Lie algebra of such an $H$ is a subalgebra; these assignments are inverse, giving a bijection
 
 $$
-\{\text{Lie subalgebras of } \mathrm{G}\} \longleftrightarrow \{\text{connected immersed Lie subgroups of } G\}.
+\boxed{\;\{\text{Lie subalgebras of } \mathrm{G}\} \longleftrightarrow \{\text{connected immersed Lie subgroups of } G\}\;}.
 $$
 
 Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For subgroups, being embedded is equivalent to being closed, so an immersed subgroup is embedded exactly when it is closed.
@@ -302,7 +302,7 @@ $$
 The Jacobi identity is exactly the statement that $\operatorname{ad}$ is a Lie algebra homomorphism:
 
 $$
-\operatorname{ad}_{[X,Y]} = [\operatorname{ad}_X, \operatorname{ad}_Y].
+\boxed{\;\operatorname{ad}_{[X,Y]} = [\operatorname{ad}_X, \operatorname{ad}_Y]\;}.
 $$
 
 For $g \in G$ and $X \in \mathrm{G}$ one has

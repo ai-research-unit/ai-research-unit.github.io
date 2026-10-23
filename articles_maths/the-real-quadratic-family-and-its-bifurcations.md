@@ -20,8 +20,7 @@ Throughout, $c$ is a real parameter, $x$ a real variable, $f_c^n$ the $n$-th ite
 
 **Theorem (the normal form).** Every real quadratic polynomial is affinely conjugate to exactly one map $f_c(x)=x^2+c$, with
 
-$$
-c = ad + \frac{b}{2} - \frac{b^2}{4},
+$$ \boxed{\;c = ad + \frac{b}{2} - \frac{b^2}{4}\;},
 $$
 
 and the conjugating map is $h(x)=ax+b/2$.
@@ -86,8 +85,7 @@ independent of the point of the cycle; it is $1$ at $c=-3/4$ (the birth), $0$ at
 
 **Theorem (the cascade and the Feigenbaum constants).** The parameters $c_n$ decrease to a limit $c_\infty=-1.4011551890\ldots$, the **Feigenbaum point**, and the ratios of successive gaps satisfy
 
-$$
-\delta_n = \frac{c_{n-1}-c_n}{c_n-c_{n+1}} \;\longrightarrow\; \delta = 4.6692016091\ldots,
+$$ \boxed{\;\delta_n = \frac{c_{n-1}-c_n}{c_n-c_{n+1}} \;\longrightarrow\; \delta = 4.6692016091\ldots\;},
 $$
 
 the **Feigenbaum constant**, with the computed values $\delta_2=4.3857$, $\delta_3=4.6009$, $\delta_4=4.6551$, $\delta_5=4.6661$, $\delta_6=4.6685$. The space rescaling along the cascade has the limit
@@ -122,8 +120,7 @@ the second Feigenbaum constant. Both constants are universal: they are the same 
 
 **Theorem (the Chebyshev conjugacy at $c=-2$).** With the change of variable $x=2\cos\theta$,
 
-$$
-f_{-2}(2\cos\theta) = 4\cos^2\theta-2 = 2\cos 2\theta,
+$$ \boxed{\;f_{-2}(2\cos\theta) = 4\cos^2\theta-2 = 2\cos 2\theta\;},
 $$
 
 so $f_{-2}$ on $[-2,2]$ is conjugate to the doubling map $\theta\mapsto2\theta$ on the circle; the conjugacy is two-to-one, and the dynamics of $f_{-2}$ on $[-2,2]$ has topological entropy $\log2$. The point $x=-1$ is fixed with multiplier $-2$, the point $x=2$ is fixed with multiplier $4$, and every point of $[-2,2]$ has bounded orbit.

@@ -16,7 +16,7 @@ The article uses no analysis and no geometry: the coefficients are sheaves and t
 **Theorem (the eigenspace decomposition).** Let $\theta$ be an involution of a graded abelian group $H^*$. Then $H^{\theta}$ and $H^-$ are graded subgroups, and if $2$ is invertible in the coefficient ring there is a direct sum decomposition
 
 $$
-H^*=H^{\theta}\oplus H^-,\qquad \theta(\alpha^{+}+\alpha^{-})=\alpha^{+}-\alpha^{-},\qquad \alpha^{\pm}=\tfrac12(\alpha\pm\theta\alpha).
+\boxed{\;H^*=H^{\theta}\oplus H^-,\qquad \theta(\alpha^{+}+\alpha^{-})=\alpha^{+}-\alpha^{-},\qquad \alpha^{\pm}=\tfrac12(\alpha\pm\theta\alpha)\;}.
 $$
 
 If $H^*$ is a graded ring and $\theta$ a ring involution, $H^{\theta}$ is a graded subring containing the unit, $H^-$ is a module over $H^{\theta}$, and $H^-\cdot H^-\subseteq H^{\theta}$; if $H^*$ is a graded module over a ring with involution and $\theta$ is semilinear, the fixed part is a module over the fixed subring.
@@ -76,7 +76,7 @@ which need not continue exactly: the failure of exactness beyond the displayed t
 **Theorem (the transfer).** Let $G=\mathbb{Z}/2$ act freely and properly discontinuously on $X$ with quotient $q:X\to X/G$, and let $\Bbbk$ be a field of characteristic different from $2$. Then for every $i$,
 
 $$
-H^i(X/G,\Bbbk)\cong H^i(X,\Bbbk)^{G},
+\boxed{\;H^i(X/G,\Bbbk)\cong H^i(X,\Bbbk)^{G}\;},
 $$
 
 the invariants of the cohomology of $X$ under the action of the group; the isomorphism is the pullback $q^*$, and its inverse is the **transfer** $\operatorname{Tr}$, a map $H^i(X,\Bbbk)\to H^i(X/G,\Bbbk)$ with $q^*\operatorname{Tr}=1+\tau=\mathrm{id}+\theta$ and $\operatorname{Tr}q^*=2$.
@@ -86,7 +86,7 @@ the invariants of the cohomology of $X$ under the action of the group; the isomo
 **Corollary (the sheaf form).** With the same hypotheses and $\mathcal{F}$ a $\mathbb{Z}/2$-equivariant sheaf on $X$, the descended sheaf $q_*^{G}\mathcal{F}$ of *Equivariant Sheaves and Descent* satisfies
 
 $$
-H^i(X/G,q_*^{G}\mathcal{F})\cong H^i(X,\mathcal{F})^{G},
+\boxed{\;H^i(X/G,q_*^{G}\mathcal{F})\cong H^i(X,\mathcal{F})^{G}\;},
 $$
 
 so that the cohomology of the quotient with the descended coefficients is the invariant cohomology of the sheaf.

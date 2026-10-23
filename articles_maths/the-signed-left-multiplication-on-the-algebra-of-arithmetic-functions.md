@@ -19,7 +19,7 @@ The **unsigned** left multiplication is $L_c(f)=c*f$.
 
 **Theorem.** For every $a$,
 $$
-T_a=L_a\circ\alpha=\alpha\circ L_{\alpha(a)},\qquad \alpha T_a=L_{\alpha(a)},\qquad T_a\alpha=L_a ,
+\boxed{\;T_a=L_a\circ\alpha=\alpha\circ L_{\alpha(a)},\qquad \alpha T_a=L_{\alpha(a)},\qquad T_a\alpha=L_a\;} ,
 $$
 and the last two identities are the two readings of the operator. The twisted product
 $$
@@ -27,7 +27,7 @@ a\star b:=a*\alpha(b)
 $$
 is associative, $\alpha$ is an isomorphism of algebras $\alpha:(\mathcal{A},\star)\to(\mathcal{A},*)$, and the product of two signed left multiplications is the unsigned left multiplication of the twisted product:
 $$
-T_aT_b=L_{a\star b}=L_{a*\alpha(b)} .
+\boxed{\;T_aT_b=L_{a\star b}=L_{a*\alpha(b)}\;} .
 $$
 
 **Proof.** The first display is the definition together with $\alpha L_{\alpha(a)}=L_a\alpha$, which holds because $\alpha(c*f)=\alpha(c)*\alpha(f)$ and $\mathcal{A}$ is commutative. For the product, $T_aT_b=L_a\alpha L_b\alpha=L_aL_{\alpha(b)}\alpha^2=L_{a*\alpha(b)}$. Associativity of $\star$ is $(a\star b)\star c=a*\alpha(b*\alpha c)=a*\alpha(b)*c$, and the same expression is $a\star(b\star c)$; the isomorphism is $\alpha(a\star b)=\alpha(a)*b=\alpha(a)\star\alpha(b)$.
@@ -67,7 +67,7 @@ One has $T_a^*T_a=\alpha\,\Theta_aL_a\,\alpha$ and $T_aT_a^*=L_a\Theta_aL_{\alph
 
 **Theorem.** The signed left multiplication $T_a$ satisfies the following.
 $$
-T_a\ \text{is self-adjoint} \iff a=\gamma\varepsilon \text{ with } \gamma \text{ real},\qquad T_a\ \text{is unitary} \iff a=\gamma\varepsilon \text{ with } |\gamma|=1,
+\boxed{\;T_a\ \text{is self-adjoint} \iff a=\gamma\varepsilon \text{ with } \gamma \text{ real},\qquad T_a\ \text{is unitary} \iff a=\gamma\varepsilon \text{ with } |\gamma|=1\;},
 $$
 and $T_a$ is an isometry if and only if $\Theta_aL_a=\mathrm{id}$, which holds for $a=\gamma\delta_p$ with $|\gamma|=1$ and more generally whenever the isometry criterion of the signed sandwiches holds.
 

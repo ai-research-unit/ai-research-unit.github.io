@@ -56,7 +56,7 @@ invertible for $\xi\neq0$; and it anticommutes with the chirality, so in even di
 **Theorem (Lichnerowicz).** The square of the operator satisfies
 
 $$
-D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}\cdot\mathrm{id},
+\boxed{\;D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}\cdot\mathrm{id}\;},
 $$
 
 where $\nabla^{*}\nabla=-\operatorname{tr}_g(\nabla^{\mathcal{S}})^2$ is the connection Laplacian on the spinors and $\operatorname{scal}$ is the scalar curvature of $(M,g)$.
@@ -70,7 +70,7 @@ where $\nabla^{*}\nabla=-\operatorname{tr}_g(\nabla^{\mathcal{S}})^2$ is the con
 **Theorem (Atiyah–Singer, spin case).** Let $M$ be a closed spin manifold of even dimension. Then the chiral halves $D^{\pm}$ are Fredholm operators and the index of the positive half is the **$\hat A$-genus**
 
 $$
-\operatorname{ind}D^{+}=\dim\ker D^{+}-\dim\ker D^{-}=\int_{M}\hat A(TM)=\hat A[M],
+\boxed{\;\operatorname{ind}D^{+}=\dim\ker D^{+}-\dim\ker D^{-}=\int_{M}\hat A(TM)=\hat A[M]\;},
 $$
 
 where $\hat A(TM)$ is the $\hat A$-class of the tangent bundle, the genus with the first terms
@@ -86,7 +86,7 @@ in the Pontryagin classes $n_i$ of $TM$. In particular $\hat A[M]$ is an integer
 **Corollary (the twisted operator).** For the operator twisted by a Hermitian vector bundle $E$ with connection, $D_E:\Gamma(\mathcal{S}\otimes E)\to\Gamma(\mathcal{S}\otimes E)$, the index of the positive half is
 
 $$
-\operatorname{ind}D_E^{+}=\int_{M}\hat A(TM)\operatorname{ch}(E),
+\boxed{\;\operatorname{ind}D_E^{+}=\int_{M}\hat A(TM)\operatorname{ch}(E)\;},
 $$
 
 the $\hat A$-genus paired with the Chern character of the twisting bundle; the twisted operator, its Weitzenböck curvature $\mathcal{R}^{E}=\tfrac14\operatorname{scal}+c(F^{W})$ and its index are those of *Clifford Modules and the Twisted Cauchy–Riemann Operator*.

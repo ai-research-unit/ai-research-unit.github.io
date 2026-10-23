@@ -34,7 +34,7 @@ The three geometries share the incidence, order, congruence and continuity axiom
 **Theorem (angle sum).** For a geodesic triangle in each geometry,
 
 $$
-A + B + C = \begin{cases} \pi + \Delta/R^2, & K = +1/R^2, \\ \pi, & K = 0, \\ \pi - \Delta/R^2, & K = -1/R^2, \end{cases}
+\boxed{\;A + B + C = \begin{cases} \pi + \Delta/R^2, & K = +1/R^2, \\ \pi, & K = 0, \\ \pi - \Delta/R^2, & K = -1/R^2, \end{cases}\;}
 $$
 
 where $\Delta$ is the area of the triangle. In the spherical case the **spherical excess** $A + B + C - \pi$ is the area divided by $R^2$; in the hyperbolic case the **defect** $\pi - (A + B + C)$ is the area divided by $R^2$.
@@ -56,7 +56,7 @@ $$
 Then for a geodesic triangle with sides $a, b, c$ and the interior angle $C$ between the sides $a$ and $b$, writing $C_{\mathrm{ext}} = \pi - C$ for the exterior angle at that vertex,
 
 $$
-c_K(c) = c_K(a)c_K(b) - K\,s_K(a)s_K(b)\cos C_{\mathrm{ext}} ,
+\boxed{\;c_K(c) = c_K(a)c_K(b) - K\,s_K(a)s_K(b)\cos C_{\mathrm{ext}}\;} ,
 $$
 
 where $c_K(t) = s_K'(t)$ is the cosine in the positive case, the constant $1$ in the flat case, and the hyperbolic cosine in the negative case. The three classical laws of cosines are the three cases: for $K > 0$ the formula reads $\cos c = \cos a\cos b + \sin a\sin b\cos C$, for $K = 0$ it reads $c^2 = a^2 + b^2 - 2ab\cos C$, and for $K < 0$ it reads $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$.
@@ -130,7 +130,7 @@ with $\omega_{n-1}$ the volume of the unit sphere $S^{n-1}$. The spherical volum
 **Theorem (Gauss–Bonnet for a geodesic polygon).** For a geodesic $n$-gon with angles $\alpha_1, \ldots, \alpha_n$ in the model of curvature $K$ and radius $R = 1/\sqrt{|K|}$,
 
 $$
-\sum_{i=1}^{n}\alpha_i = (n - 2)\pi + K\,\Delta ,
+\boxed{\;\sum_{i=1}^{n}\alpha_i = (n - 2)\pi + K\,\Delta\;} ,
 $$
 
 where $\Delta$ is the area of the polygon, so that the angle sum exceeds the Euclidean value by $K\Delta$.

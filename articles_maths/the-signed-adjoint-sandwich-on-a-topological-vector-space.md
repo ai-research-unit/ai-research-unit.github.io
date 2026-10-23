@@ -20,7 +20,7 @@ which holds by *The Adjoint of the Left Multiplication on a Topological Vector S
 **Theorem (the adjoint computation).** For all $a, b \in E$ the signed sandwich has the trace-adjoint
 
 $$
-(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)} ,
+\boxed{\;(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)}\;} ,
 $$
 
 obtained from $\Theta^{\alpha}_{a,b}$ by applying the grade involution to both parameters and exchanging them; in particular the adjoint of a signed sandwich is again a signed sandwich, and the assignment is an involution of the signed family.
@@ -52,8 +52,8 @@ in agreement with *The Adjoint of the Left Multiplication on a Topological Vecto
 **Theorem (the products with the adjoint).** For all $a, b \in E$ the two products of the signed sandwich with its adjoint are the unsigned inner sandwiches
 
 $$
-(\Theta^{\alpha}_{a,b})^{\dagger}\,\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad
-\Theta^{\alpha}_{a,b}\,(\Theta^{\alpha}_{a,b})^{\dagger} = \Phi_{w,w} ,
+\boxed{\;(\Theta^{\alpha}_{a,b})^{\dagger}\,\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad
+\Theta^{\alpha}_{a,b}\,(\Theta^{\alpha}_{a,b})^{\dagger} = \Phi_{w,w}\;} ,
 $$
 
 with the parameters
@@ -67,7 +67,7 @@ $$
 **Corollary (the unitarity criterion).** The signed sandwich $\Theta^{\alpha}_{a,b}$ is unitary for the trace form,
 
 $$
-(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{a,b})^{\dagger} = \mathrm{id} ,
+\boxed{\;(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{a,b})^{\dagger} = \mathrm{id}\;} ,
 $$
 
 exactly when the parameters $u = \alpha(b)\alpha(a)$ and $w = ab$ are central involutions of $E$; equivalently, when $\Phi_{u,u} = \Phi_{w,w} = \mathrm{id}$, that is when $u, w \in Z(E)$ and $u^{2} = w^{2} = 1$. In particular a signed sandwich with $u$ a central involution and $a, b$ commuting is unitary.

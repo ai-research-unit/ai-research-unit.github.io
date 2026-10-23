@@ -1,4 +1,4 @@
-# __Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Biquaternions__
+# __Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion__
 
 ## Introduction
 
@@ -198,7 +198,7 @@ $$
 The factor $\tilde U$ has determinant one, so in the matrix model it lies in $SL(2,\mathbb{C})$. Since $re^{i\alpha}$ is central, the eigenprojections of $\tilde Q$ and of $\tilde U$ are the same, and the eigenvalues are scaled:
 
 $$
-\lambda_\pm=re^{i\alpha}\Bigl(U_t\pm i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr).
+\boxed{\; \lambda_\pm=re^{i\alpha}\Bigl(U_t\pm i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr) \;}.
 $$
 
 The two eigenvalues of the unit factor are reciprocal. Their product is the reduced product of $\tilde U$,
@@ -241,11 +241,11 @@ The table records the two levels.
 **Proposition (the scalar-part formula).** With $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$,
 
 $$
-\operatorname{Sc}\tilde U
+\boxed{\; \operatorname{Sc}\tilde U
 =\cosh\frac{\psi}{2}\cos\frac{\theta}{2}
 -i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\psi}{2}\sin\frac{\theta}{2},
 \qquad
-\lambda_++\lambda_-=2re^{i\alpha}\operatorname{Sc}\tilde U .
+\lambda_++\lambda_-=2re^{i\alpha}\operatorname{Sc}\tilde U \;}.
 $$
 
 *Proof.* The scalar part of a product of two biquaternions is $\operatorname{Sc}(XY)=X_0Y_0-\vec X\cdot\vec Y$. For
@@ -547,10 +547,10 @@ is independent of the azimuth of $\vec u_{\mathrm r}$ around $\vec u_{\mathrm b}
 **Proposition (the eigenvalues do not determine the word).** For $\psi>0$, $\theta\notin\{0,2\pi\}$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, the family
 
 $$
-\tilde U(\varphi)=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\boxed{\; \tilde U(\varphi)=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}(\varphi)\Bigr),
 \qquad
-\vec u_{\mathrm r}(\varphi)\perp\vec u_{\mathrm b},
+\vec u_{\mathrm r}(\varphi)\perp\vec u_{\mathrm b} \;},
 $$
 
 has constant eigenvalues $\lambda_\pm=r e^{i\alpha}(U_t\pm i(\vec U\cdot\vec U)^{1/2})$, but the eigenprojections and the polar axes vary with $\varphi$.
@@ -910,11 +910,12 @@ Read down a column for one algebra and across a row for one concept. The first t
 ## Further Reading
 
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the eight cases, the reconstruction and logarithm tables, and the null cone.
+- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the Q-adapted basis, with the nilpotents and the spinors.
 - [Eigenbasis of a Biquaternion](eigenbasis-of-a-biquaternion.html), for the spectrum, the eigenprojections, the Peirce decomposition and the degenerate regimes.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four-factor word, the Cartan decomposition, existence and uniqueness, the group law and the boundary.
 - [Modulus–Unit Polar Decomposition of Biquaternions](modulus-unit-polar-decomposition-of-biquaternions.html), for the modulus and the unit factor.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors.
-- [Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Split-Complex Numbers](relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-split-complex-numbers.html), for the real two-dimensional analogue.
-- [Relations between Exponential Polar Decomposition and Eigenvalue Decomposition of Reduced Biquaternions](relations-between-exponential-polar-decomposition-and-eigenvalue-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional analogue.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
+- [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the commutative four-dimensional analogue.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.

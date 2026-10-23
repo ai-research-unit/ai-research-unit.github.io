@@ -18,7 +18,7 @@ $$
 **Proposition (multiplication of matrix units).** For all $i,j,k,l$,
 
 $$
-E_{ij}E_{kl} = \delta_{jk}E_{il},
+\boxed{\;E_{ij}E_{kl} = \delta_{jk}E_{il}\;},
 $$
 
 where $\delta_{jk}$ is $1$ if $j = k$ and $0$ otherwise. For $n = 2$ the four units are the matrices
@@ -126,7 +126,7 @@ The left ideals are therefore in bijection with the subspaces of $k^n$, the two 
 **Theorem (tensor product formula).** For a field $k$ and positive integers $m, n$,
 
 $$
-M_m(k) \otimes_k M_n(k) \cong M_{mn}(k).
+\boxed{\;M_m(k) \otimes_k M_n(k) \cong M_{mn}(k)\;}.
 $$
 
 *Proof.* Define
@@ -226,7 +226,7 @@ $$
 and the assignment $P \mapsto (A \mapsto PAP^{-1})$ induces an isomorphism
 
 $$
-\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k) = \mathrm{GL}_n(k)/k^\times.
+\boxed{\;\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k) = \mathrm{GL}_n(k)/k^\times\;}.
 $$
 
 *Proof (sketch).* The algebra $M_n(k)$ has a unique simple left module $k^n$ up to isomorphism, and $\varphi$ transports the module structure to an isomorphic one; an isomorphism of the transported module with $k^n$ is a matrix $P$, and comparing the actions gives $\varphi(A) = PAP^{-1}$. The kernel of $P \mapsto (A\mapsto PAP^{-1})$ is $k^\times I_n$.

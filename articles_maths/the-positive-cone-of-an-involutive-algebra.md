@@ -48,7 +48,7 @@ $$
 **Proposition (closure properties).** The set $A_+$ is closed under addition and nonnegative scaling, contains $0$ and $1$, is closed under the involution,
 
 $$
-A_+^{*} = A_+ ,
+\boxed{\;A_+^{*} = A_+\;} ,
 $$
 
 and is closed under the **congruences**: for $c\in A$ and $x\in A_+$, $c^{*}xc\in A_+$.
@@ -64,7 +64,7 @@ and is closed under the **congruences**: for $c\in A$ and $x\in A_+$, $c^{*}xc\i
 **Proposition (the cone is closed under the symmetrised product).** The symmetrised product
 
 $$
-\{a,b\} = \tfrac12(ab + ba)
+\boxed{\;\{a,b\} = \tfrac12(ab + ba)\;}
 $$
 
 of two elements of $A_+$ lies in $A_+$ when $A$ is a reduced involutive algebra of the $\ast$-normed kind, so that the cone is a **Jordan cone**; the associative product of two positive elements need not be positive.
@@ -116,7 +116,7 @@ $$
 **Proposition.** A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the **dual cone** of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\varphi$ the **Cauchy–Schwarz inequality**
 
 $$
-\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)
+\boxed{\;\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)\;}
 $$
 
 holds.

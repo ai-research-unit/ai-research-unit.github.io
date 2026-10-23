@@ -38,8 +38,7 @@ The square root is taken in the positive reals, so it is unique: there is no sig
 
 The modulus is multiplicative, because the norm is:
 
-$$
-\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}, \qquad r(Q_1Q_2) = r(Q_1)r(Q_2),
+$$ \boxed{\;\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}, \qquad r(Q_1Q_2) = r(Q_1)r(Q_2)\;},
 $$
 
 and it is homogeneous of degree one for real scalars, $r(\lambda Q) = \lvert\lambda\rvert r(Q)$.
@@ -98,8 +97,7 @@ $$
 
 Hence
 
-$$
-\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1),
+$$ \boxed{\;\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)\;},
 $$
 
 the product of the positive scale line and the circle.
@@ -161,8 +159,7 @@ $$
 
 The polar decomposition becomes the matrix factorisation
 
-$$
-M_Q = r\,M_u, \qquad r = \sqrt{\det M_Q} > 0, \quad M_u \in SO(2).
+$$ \boxed{\;M_Q = r\,M_u, \qquad r = \sqrt{\det M_Q} > 0, \quad M_u \in SO(2)\;}.
 $$
 
 This is the polar decomposition $M_Q = PU$ of an invertible matrix, with orthogonal factor $U = M_u$ and positive definite factor $P = rI$. The positive factor is a scalar because the family $\{qI+q'J\}$ has no other symmetric positive definite member: symmetry forces $q' = 0$, and positive definiteness then forces $q > 0$.

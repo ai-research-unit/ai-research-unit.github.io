@@ -16,7 +16,7 @@ Schematically, the article is the categorical foundation on which the rest of th
 **Theorem (the structure sheaf).** There is a unique sheaf of commutative rings $\mathcal{O}_X$ on $X = \operatorname{Spec} A$ with $\mathcal{O}_X(D(f)) = A_f$ for every $f\in A$, the restriction $A_f\to A_{fg}$ being the localisation, and the sheaf is characterised by these values on the basis. Its stalks are the local rings
 
 $$
-\mathcal{O}_{X,\mathrm{P}} = \varinjlim_{f\notin\mathrm{P}}A_f = A_{\mathrm{P}}, \qquad \mathrm{P}\in X,
+\boxed{\;\mathcal{O}_{X,\mathrm{P}} = \varinjlim_{f\notin\mathrm{P}}A_f = A_{\mathrm{P}}, \qquad \mathrm{P}\in X\;},
 $$
 
 with maximal ideal $\mathrm{P}A_{\mathrm{P}}$ and residue field $\kappa(\mathrm{P}) = A_{\mathrm{P}}/\mathrm{P}A_{\mathrm{P}}$, the fraction field of the domain $A/\mathrm{P}$. Hence $(X,\mathcal{O}_X)$ is a locally ringed space.
@@ -28,7 +28,7 @@ with maximal ideal $\mathrm{P}A_{\mathrm{P}}$ and residue field $\kappa(\mathrm{
 **Theorem (the contravariant equivalence for affine schemes).** The functor $A\mapsto\operatorname{Spec} A$ extends to an equivalence of categories
 
 $$
-\{\text{commutative rings with } 1\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{affine schemes}\},
+\boxed{\;\{\text{commutative rings with } 1\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{affine schemes}\}\;},
 $$
 
 under which a ring homomorphism $\varphi : A\to B$ corresponds to the morphism $\operatorname{Spec}\varphi = {}^{a}\varphi : \operatorname{Spec} B\to\operatorname{Spec} A$ with ${}^{a}\varphi(\mathrm{Q}) = \varphi^{-1}(\mathrm{Q})$ and the map on structure sheaves induced by $A_f\to B_{\varphi(f)}$. For every ring $B$ one has
@@ -69,7 +69,7 @@ so $\operatorname{Spec} A$ is the functor of points $B\mapsto\operatorname{Hom}_
 **Theorem (fibre products).** Let $f : X\to S$ and $g : Y\to S$ be morphisms of schemes.
 
 1. The **fibre product** $X\times_SY$ exists in the category of schemes: a scheme with morphisms $p : X\times_SY\to Y$ and $q : X\times_SY\to X$ making the square commute and universal among such data, with
-   $$\operatorname{Hom}_S(T,X\times_SY)\cong\operatorname{Hom}_S(T,X)\times_{\operatorname{Hom}_S(T,S)}\operatorname{Hom}_S(T,Y)$$
+   $$\boxed{\;\operatorname{Hom}_S(T,X\times_SY)\cong\operatorname{Hom}_S(T,X)\times_{\operatorname{Hom}_S(T,S)}\operatorname{Hom}_S(T,Y)\;}$$
    for every $S$-scheme $T$.
 2. On affine charts it is computed by the tensor product: if $X = \operatorname{Spec} A$, $Y = \operatorname{Spec} B$, $S = \operatorname{Spec} C$, then $X\times_SY = \operatorname{Spec}(A\otimes_CB)$, and the construction glues over the charts.
 3. The **fibre** of $f$ over a point $s\in S$, $X_s = X\times_S\operatorname{Spec}\kappa(s)$, is a scheme over the residue field, and the formation of fibres and of fibre products commutes with base change; the fibre product is the categorical form of the intersection of the two families over $S$.

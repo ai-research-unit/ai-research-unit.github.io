@@ -27,8 +27,8 @@ The complex $(C^\bullet(\mathrm{G};M),d)$ and the cohomology $H^\bullet(\mathrm{
 **Proposition.** The differential is given by the **Cartan formula**
 
 $$
-(df)(x_1,\dots,x_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1})
-+\sum_{i<j}(-1)^{i+j}f([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}),
+\boxed{\;(df)(x_1,\dots,x_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1})
++\sum_{i<j}(-1)^{i+j}f([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1})\;},
 $$
 
 the hats omitting the argument; this is the sign convention fixed in *Lie Algebra Cohomology*.
@@ -61,7 +61,7 @@ the sum over the $(n,m)$-shuffles of the symmetric group. Under the identificati
 **Theorem.** The differential is a graded derivation of degree one for the cup product:
 
 $$
-d(\alpha\smile\beta)=d\alpha\smile\beta+(-1)^{p}\,\alpha\smile d\beta,\qquad \alpha\in C^p(\mathrm{G};K).
+\boxed{\;d(\alpha\smile\beta)=d\alpha\smile\beta+(-1)^{p}\,\alpha\smile d\beta,\qquad \alpha\in C^p(\mathrm{G};K)\;}.
 $$
 
 **Proof.** With trivial coefficients the statement is the product rule for the differential on the exterior algebra of $\mathrm{G}^*$; both sides are alternating and bilinear, so it suffices to check on basis cochains, where the two sums over the pairs of a $(p+q+1)$-tuple split according to whether the pair meets the first $\alpha$-block or the second.
@@ -97,7 +97,7 @@ $$
 and it satisfies the operator identities
 
 $$
-L_x=d\iota_x+\iota_x d,\qquad [L_x,d]=0,\qquad [L_x,\iota_y]=\iota_{[x,y]},\qquad [L_x,L_y]=L_{[x,y]},\qquad [\iota_x,\iota_y]=0 .
+\boxed{\;L_x=d\iota_x+\iota_x d,\qquad [L_x,d]=0,\qquad [L_x,\iota_y]=\iota_{[x,y]},\qquad [L_x,L_y]=L_{[x,y]},\qquad [\iota_x,\iota_y]=0\;} .
 $$
 
 **Proof.** The magic formula is the definition of $L_x$; the remaining identities are the standard consequences of $d^2=0$ and of the derivation property, each checked by expanding the commutators of the operators $d,\iota_x,\iota_y$ acting on a cochain and using the Jacobi identity.

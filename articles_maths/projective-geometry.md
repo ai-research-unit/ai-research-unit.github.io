@@ -33,7 +33,7 @@ where $L$ is a line complementary to $H$, the isomorphism sending a point to its
 
 **Theorem (the dimension formula and the duality).** The projective subspaces of $\mathbb{P}(V)$ form a lattice under the containment, with the meet the intersection and the join the sum, and the dimension formula
 $$
-\dim(\mathbb{P}(W_1) \cap \mathbb{P}(W_2)) = \dim\mathbb{P}(W_1) + \dim\mathbb{P}(W_2) - \dim\mathbb{P}(W_1 \cup W_2)
+\boxed{\;\dim(\mathbb{P}(W_1) \cap \mathbb{P}(W_2)) = \dim\mathbb{P}(W_1) + \dim\mathbb{P}(W_2) - \dim\mathbb{P}(W_1 \cup W_2)\;}
 $$
 attained in the complementarity sense; the assignment $W \mapsto W^\perp$ of the orthogonal complement with respect to a nondegenerate bilinear form on $V$ reverses the containment and exchanges the meet and the join, the **duality principle**: every true statement about the incidence of the projective subspaces of a fixed dimension remains true when the dimensions are replaced by their complements and the containment is reversed.
 
@@ -119,7 +119,7 @@ Q_K = \{[\omega] \in \mathbb{P}(\Lambda^2V) : \omega \wedge \omega = 0\},
 $$
 the set of the decomposable two-vectors up to scale, and in the Plücker coordinates the image is defined by the single relation
 $$
-p_{01}p_{23} - p_{02}p_{13} + p_{03}p_{12} = 0 .
+\boxed{\;p_{01}p_{23} - p_{02}p_{13} + p_{03}p_{12} = 0\;} .
 $$
 The Klein quadric is nondegenerate with respect to the form $(\omega, \omega') \mapsto \omega \wedge \omega'$ on $\Lambda^2V$, the form has the Witt index $3$ (the signature $(3,3)$ over the real field), and the group of the quadric is the projective orthogonal group $PO(6)$ of this split form, which is isomorphic to $PGL(V) = PGL(4)$ by the identification of the linear transformations of $V$ with the orthogonal transformations of $\Lambda^2V$.
 
@@ -129,7 +129,7 @@ The Klein quadric is nondegenerate with respect to the form $(\omega, \omega') \
 
 **Theorem (the Klein correspondence).** The Klein quadric is the projective geometry of the lines of $\mathbb{P}^3$: the points of the quadric are the lines, and the two families of the maximal projective subspaces of the quadric (the **generators**, of dimension two, the planes of the quadric) correspond respectively to the points and to the planes of $\mathbb{P}^3$; through a point of $\mathbb{P}^3$ there passes the plane of the quadric consisting of the lines through the point (a generator of the first family), and inside a plane of $\mathbb{P}^3$ there lies the plane of the quadric consisting of the lines in the plane (a generator of the second family). Two lines of $\mathbb{P}^3$ meet if and only if the corresponding points of the Klein quadric are **polar**,
 $$
-\omega \wedge \omega' = 0 ,
+\boxed{\;\omega \wedge \omega' = 0\;} ,
 $$
 and the incidence geometry of the lines of $\mathbb{P}^3$ is therefore the polarity of the Klein quadric.
 

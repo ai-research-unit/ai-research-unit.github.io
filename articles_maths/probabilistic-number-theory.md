@@ -55,7 +55,7 @@ The lemma is the bridge between the deterministic counting and the probabilistic
 **Theorem (Hardy–Ramanujan).** For almost all $n$, the number of distinct prime factors satisfies
 
 $$
-\omega(n) = \log\log n + O\!\left(\sqrt{\log\log n}\right),
+\boxed{\;\omega(n) = \log\log n + O\!\left(\sqrt{\log\log n}\right)\;},
 $$
 
 and more precisely $|\omega(n) - \log\log n| \leq (1+\varepsilon)\sqrt{2\log\log n\log\log\log n}$ for almost all $n$ and every $\varepsilon > 0$; the function $\log\log n$ is the **normal order** of $\omega(n)$.
@@ -67,7 +67,7 @@ The theorem is the first statement of the regularity of $\omega$: although $\ome
 **Theorem (Erdős–Kac).** For $n$ chosen uniformly at random from $\{1,\dots,N\}$,
 
 $$
-\frac{\omega(n) - \log\log N}{\sqrt{\log\log N}} \Longrightarrow N(0,1) \qquad \text{as } N\to\infty,
+\boxed{\;\frac{\omega(n) - \log\log N}{\sqrt{\log\log N}} \Longrightarrow N(0,1) \qquad \text{as } N\to\infty\;},
 $$
 
 convergence in distribution to the standard Gaussian.
@@ -83,7 +83,7 @@ The theorem is the central limit theorem of number theory, and the shape of the 
 **Theorem (Turán–Kubilius inequality).** There is an absolute constant $C$ such that for every complex additive function $f$ and every $N \geq 2$,
 
 $$
-\sum_{n\leq N}\left|f(n) - \sum_{p\leq N}\frac{f(p)}{p}\right|^2 \leq C\,N\sum_{p\leq N}\frac{|f(p)|^2}{p}.
+\boxed{\;\sum_{n\leq N}\left|f(n) - \sum_{p\leq N}\frac{f(p)}{p}\right|^2 \leq C\,N\sum_{p\leq N}\frac{|f(p)|^2}{p}\;}.
 $$
 
 *Proof (sketch).* Write the averaged function $A_N = \sum_{p\leq N}f(p)/p$ and expand the square as a double sum over $n \leq N$. The diagonal $(p = q)$ contributes $\sum_{p\leq N}|f(p)|^2\sum_{n\leq N}\mathbf{1}_{p\mid n} \leq N\sum_p|f(p)|^2/p$, which is the right-hand side; the off-diagonal is estimated by the Chinese remainder theorem, $\sum_{n\leq N}\mathbf{1}_{p\mid n,q\mid n} = N/(pq) + O(1)$, with the summation grouped according to the size of $pq$, and the resulting error is absorbed in the constant $C$. The inequality is the standard one; the point of the sketch is that the main term is the sum of the variances of the prime contributions.

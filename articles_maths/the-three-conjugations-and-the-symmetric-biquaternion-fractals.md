@@ -72,9 +72,7 @@ according as the parameter is a real central element, a non-real central element
 
 **Proposition (the complex conjugation acts as the mirror on the central slice).** For a central parameter $\tilde Q_3=Ce_t$, the restriction of $\bar{\cdot}$ to the centre is the complex conjugation $C\mapsto\bar C$, and
 
-$$
-\bar{\cdot}\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=J_{\bar C e_t}\cap\mathbb{C}e_t .
-$$
+$$ \boxed{\;\bar{\cdot}\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=J_{\bar C e_t}\cap\mathbb{C}e_t\;}. $$
 
 So the Julia set of the complex quadratic map and that of its conjugate parameter are mirror images in the central slice, and they coincide exactly when $C$ is real.
 

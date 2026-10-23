@@ -25,7 +25,7 @@ the two notions meet at the square-zero elements, since a nonzero root of zero a
 **Proposition (the reduction, quoted).** For every $\tilde Q$,
 
 $$
-\tilde Q\star\tilde Q = \bigl(\overline{\tilde Q}\,\tilde Q\bigr)^{\natural} ,
+\boxed{\;\tilde Q\star\tilde Q = \bigl(\overline{\tilde Q}\,\tilde Q\bigr)^{\natural}\;}
 $$
 
 so $\tilde Q$ is a root of zero if and only if $\overline{\tilde Q}\,\tilde Q = 0$; the identity is proved on the coordinates in *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* §*The Reduction of the Root Equation*, and the equation $\overline{\tilde Q}\tilde Q = 0$ is the square-zero equation of this article.

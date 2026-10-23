@@ -86,7 +86,7 @@ $$
 **Theorem.** A continuous map $f : X \to Y$ with $f(x_0) = y_0$ induces a group homomorphism
 
 $$
-f_* : \pi_1(X,x_0) \longrightarrow \pi_1(Y,y_0), \qquad f_*[\gamma] = [f \circ \gamma],
+\boxed{\;f_* : \pi_1(X,x_0) \longrightarrow \pi_1(Y,y_0), \qquad f_*[\gamma] = [f \circ \gamma]\;},
 $$
 
 and the assignments $X \mapsto \pi_1(X,x_0)$, $f \mapsto f_*$ are functorial: $(g \circ f)_* = g_* \circ f_*$ and $(\mathrm{id}_X)_* = \mathrm{id}$.
@@ -146,7 +146,7 @@ is a disjoint union of open sets $V_\lambda \subseteq E$ each mapped homeomorphi
 **Theorem (lifting criterion).** Let $p : (X^{\mathrm{cov}}, x^{\mathrm{lift}}_0) \to (X, x_0)$ be a covering with $X^{\mathrm{cov}}$ and $X$ path-connected and locally path-connected, and let $f : (Y, y_0) \to (X, x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then a lift $f^{\mathrm{lift}} : (Y,y_0) \to (X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)$ with $p \circ f^{\mathrm{lift}} = f$ exists if and only if
 
 $$
-f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)\bigr).
+\boxed{\;f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)\bigr)\;}.
 $$
 
 *Proof.* Necessity: if $f^{\mathrm{lift}}$ exists then $f_* = p_* f^{\mathrm{lift}}_*$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $f^{\mathrm{lift}}(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $x^{\mathrm{lift}}_0$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(X^{\mathrm{cov}},x^{\mathrm{lift}}_0)$, hence lifts to a loop at $x^{\mathrm{lift}}_0$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $\Omega$ about $f(y)$, the lift over the sheet through $f^{\mathrm{lift}}(y)$ composed with $f$ agrees with $f^{\mathrm{lift}}$ on $V$, and hence $f^{\mathrm{lift}}$ is continuous there.
@@ -236,7 +236,7 @@ the free group on two generators. More generally the wedge of $n$ circles has fu
 **Theorem.** For spaces $X$ and $Y$ with basepoints $x_0$ and $y_0$, the inclusions induce an isomorphism
 
 $$
-\pi_1(X \times Y, (x_0,y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y,y_0).
+\boxed{\;\pi_1(X \times Y, (x_0,y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y,y_0)\;}.
 $$
 
 *Proof.* The projections induce a homomorphism to the product and the two inclusions a homomorphism from it, and the two composites are the identity by the explicit formulas $F(s) = (f_1(s), f_2(s))$.

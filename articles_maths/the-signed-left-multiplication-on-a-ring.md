@@ -72,7 +72,7 @@ Thus $T_a$ is a homomorphism **twisted by $\alpha$** on the right.
 **Proposition.** For all $a, b \in A$,
 
 $$
-T_a \circ T_b = L_{a\,\alpha(b)}, \qquad T_a \circ L_b = T_{a\,\alpha(b)}, \qquad L_b \circ T_a = T_{ba} .
+\boxed{\;T_a \circ T_b = L_{a\,\alpha(b)}, \qquad T_a \circ L_b = T_{a\,\alpha(b)}, \qquad L_b \circ T_a = T_{ba}\;} .
 $$
 
 **Proof.** $T_a(T_b(x)) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)\,x = L_{a\alpha(b)}(x)$. Next, $T_a(L_b(x)) = a\alpha(bx) = a\alpha(b)\alpha(x) = T_{a\alpha(b)}(x)$. Finally, $L_b(T_a(x)) = b\,a\,\alpha(x) = T_{ba}(x)$.
@@ -116,7 +116,7 @@ where $\ell(a) = \{x : ax = 0\}$ is the left annihilator. Hence the image of $T_
 **Proposition.** For $a \in A$, the operator $T_a$ is invertible if and only if $a \in A^\times$, and then
 
 $$
-T_a^{-1} = T_{\alpha(a)^{-1}} = T_{\alpha(a^{-1})}.
+\boxed{\;T_a^{-1} = T_{\alpha(a)^{-1}} = T_{\alpha(a^{-1})}\;}.
 $$
 
 **Proof.** If $T_a$ is bijective then $T_a(1) = a$ has a two-sided inverse by surjectivity and $a$ is not a zero divisor by injectivity, so $a$ is a unit. Conversely, $T_a T_{\alpha(a^{-1})}(x) = a\alpha(\alpha(a^{-1})\alpha(x)) = a\,a^{-1}\alpha^2(x) = x$, and the opposite composite is computed the same way; so $T_a$ is invertible with that inverse. The two displayed forms of the inverse agree because $\alpha(a^{-1}) = \alpha(a)^{-1}$.
@@ -128,7 +128,7 @@ $$
 **Proposition.** For $a \in A$ the fixed set
 
 $$
-\operatorname{Fix}(T_a) = \{x \in A : a\,\alpha(x) = x\}
+\boxed{\;\operatorname{Fix}(T_a) = \{x \in A : a\,\alpha(x) = x\}\;}
 $$
 
 is an additive subgroup of $A$; it is an eigenspace of the grade involution exactly for $a = \pm 1$,

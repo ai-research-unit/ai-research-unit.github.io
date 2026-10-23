@@ -20,7 +20,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ and $E, F, G$ are topol
 **Proposition (continuity is boundedness on a normed space).** Let $X, Y$ be normed spaces and let $T : X \to Y$ be linear. The following are equivalent: $T$ is continuous; $T$ is continuous at $0$; there is $C \geq 0$ with $\lVert Tx\rVert \leq C\lVert x\rVert$ for all $x$; $T$ maps bounded sets to bounded sets; $T$ is uniformly continuous. In this case the least constant is
 
 $$
-\lVert T\rVert = \sup_{x \neq 0}\frac{\lVert Tx\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert Tx\rVert = \sup_{\lVert x\rVert = 1}\lVert Tx\rVert ,
+\boxed{\;\lVert T\rVert = \sup_{x \neq 0}\frac{\lVert Tx\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert Tx\rVert = \sup_{\lVert x\rVert = 1}\lVert Tx\rVert\;} ,
 $$
 
 the **operator norm** of $T$.
@@ -30,7 +30,7 @@ the **operator norm** of $T$.
 **Proposition (the operator norm makes $B(X, Y)$ a normed space).** With the operator norm, $B(X, Y)$ is a normed space, complete when $Y$ is complete; the norm is **submultiplicative**,
 
 $$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert ,
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert\;} ,
 $$
 
 for composable bounded maps, so $B(X) = B(X, X)$ is a normed algebra with unit of norm one; and $\lVert T^{n}\rVert \leq \lVert T\rVert^{n}$ for every $n \geq 1$.
@@ -72,7 +72,7 @@ the largest singular value, the identification of the injective norm of *Topolog
 **Proposition (products and quotients).** Let $T : E \to F \times G$ be linear with components $T_{1}, T_{2}$. Then $T$ is continuous if and only if both components are. Let $M \subseteq E$ be a subspace and let $q : E \to E/M$ be the quotient map; a linear map $S : E/M \to F$ is continuous if and only if $Sq$ is, and the **induced map**
 
 $$
-\overline{T} : E/{\ker T} \longrightarrow F, \qquad \overline{T}(q x) = Tx ,
+\boxed{\;\overline{T} : E/{\ker T} \longrightarrow F, \qquad \overline{T}(q x) = Tx\;} ,
 $$
 
 is a well-defined continuous linear injection when $T$ is continuous.

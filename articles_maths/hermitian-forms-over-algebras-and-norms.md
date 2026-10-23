@@ -13,7 +13,7 @@ The algebraic norm is valued in the base; it becomes the topological norm, a dis
 **Definition.** The **norm map** of the algebra is $N(x) = xx^{*}$, valued in the fixed ring when $x^{*}x = xx^{*}$, and the **trace form** of the involution is
 
 $$
-\langle x, y \rangle = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = \tfrac{1}{2}\bigl(xy^{*} + yx^{*}\bigr) .
+\boxed{\;\langle x, y \rangle = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = \tfrac{1}{2}\bigl(xy^{*} + yx^{*}\bigr)\;} .
 $$
 
 **Proposition.** The polarisation of the norm map is the bilinear map $\langle x,y\rangle = \tfrac{1}{2}(xy^{*}+yx^{*})$, and the **trace form** of the involution is its functional image $\varphi(\langle x,y\rangle)$, which is symmetric and $R^{\varsigma}$-bilinear.
@@ -29,7 +29,7 @@ Let $A = (\alpha,\beta)_{R}$ be the quaternion algebra with basis $1, i, j, k = 
 **Proposition.** The norm $N(x) = x\bar{x}$ is the quadratic form
 
 $$
-N(x) = a^{2} - \alpha b^{2} - \beta c^{2} + \alpha\beta d^{2},
+\boxed{\;N(x) = a^{2} - \alpha b^{2} - \beta c^{2} + \alpha\beta d^{2}\;},
 $$
 
 and it is **multiplicative**: $N(xy) = N(x)N(y)$ for all $x, y$.
@@ -47,7 +47,7 @@ The quaternion algebra is a composition algebra because its norm is multiplicati
 **Proposition.** The reduced norm is multiplicative, $N(xy) = N(x)N(y)$. For an algebra of **degree two** — a quaternion algebra, $\mathsf{M}_2$, or the biquaternion algebra — the reduced norm is a quadratic form and its polarisation is the bilinear form
 
 $$
-B(x,y) = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = T\bigl(x\,\operatorname{adj}(y)\bigr),
+\boxed{\;B(x,y) = \tfrac{1}{2}\bigl(N(x+y) - N(x) - N(y)\bigr) = T\bigl(x\,\operatorname{adj}(y)\bigr)\;},
 $$
 
 the reduced trace against the adjugate. It is **not** the Hermitian form $h(x,y) = T(xy^{*})$. For degree $n \geq 3$ the reduced norm is a form of degree $n$ and its full polarisation is $n$-linear, of which $T(x\operatorname{adj}(y))$ is only the quadratic part.

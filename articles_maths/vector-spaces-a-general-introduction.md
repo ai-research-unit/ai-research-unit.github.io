@@ -145,7 +145,7 @@ These operations are well-defined, and $M/N$ is an $R$-module.
 The **first isomorphism theorem** states that if $\varphi : M \to N$ is an $R$-module homomorphism, then
 
 $$
-M / \ker \varphi \cong \operatorname{im} \varphi.
+\boxed{\;M / \ker \varphi \cong \operatorname{im} \varphi\;}.
 $$
 
 ---
@@ -241,7 +241,7 @@ When $R = F$ is a field, the theory of $F$-modules is exactly the theory of vect
 When $R = \mathbb{Z}$, the theory of $\mathbb{Z}$-modules is exactly the theory of abelian groups. Not every abelian group is free: for example, $\mathbb{Z}/n\mathbb{Z}$ is not free. The classification of finitely generated $\mathbb{Z}$-modules is the **structure theorem for finitely generated abelian groups**: every finitely generated abelian group is isomorphic to
 
 $$
-\mathbb{Z}^r \oplus \mathbb{Z}/n_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/n_k\mathbb{Z}
+\boxed{\;\mathbb{Z}^r \oplus \mathbb{Z}/n_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/n_k\mathbb{Z}\;}
 $$
 
 for some $r \geq 0$ and $n_1, \ldots, n_k \geq 2$.
@@ -251,7 +251,7 @@ for some $r \geq 0$ and $n_1, \ldots, n_k \geq 2$.
 When $R = \mathbb{D}$, the split complex numbers, the theory of $\mathbb{D}$-modules is more subtle because $\mathbb{D}$ has zero divisors. A $\mathbb{D}$-module need not be free, and torsion can occur. But since $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ as a ring, every $\mathbb{D}$-module decomposes as a pair of $\mathbb{R}$-vector spaces:
 
 $$
-M \cong M_1 \times \mathsf{M}_2
+\boxed{\;M \cong M_1 \times \mathsf{M}_2\;}
 $$
 
 where $M_1$ and $\mathsf{M}_2$ are real vector spaces. This reduces the theory of $\mathbb{D}$-modules to the theory of real vector spaces.

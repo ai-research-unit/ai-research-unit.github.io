@@ -44,11 +44,11 @@ $$
 $$
 - If $\tilde{Q}=\tilde S\in\mathbb{V}_{\mathbb{B}}$ is a pure vector with $\langle\tilde S,\tilde S\rangle_{\natural}\neq0$, then
 $$
-\mathrm{spec}\bigl(\Theta_{\tilde{S}}\bigr)=\bigl\{|\langle\tilde S,\tilde S\rangle_{\natural}|,\,|\langle\tilde S,\tilde S\rangle_{\natural}|,\,-|\langle\tilde S,\tilde S\rangle_{\natural}|,\,-|\langle\tilde S,\tilde S\rangle_{\natural}|\bigr\},\qquad\text{inertia }(2,2).
+\boxed{\; \mathrm{spec}\bigl(\Theta_{\tilde{S}}\bigr)=\bigl\{|\langle\tilde S,\tilde S\rangle_{\natural}|,\,|\langle\tilde S,\tilde S\rangle_{\natural}|,\,-|\langle\tilde S,\tilde S\rangle_{\natural}|,\,-|\langle\tilde S,\tilde S\rangle_{\natural}|\bigr\},\qquad\text{inertia }(2,2) \;}.
 $$
 - If $\tilde{Q}=\tilde S\in\mathbb{V}_{\mathbb{B}}$ has $\langle\tilde S,\tilde S\rangle_{\natural}=0$, then $\Theta_{\tilde{S}}$ is nilpotent of order two, $\Theta_{\tilde{S}}^{2}=0$, and
 $$
-\mathrm{spec}\bigl(\Theta_{\tilde{S}}\bigr)=\{0\}\ \text{with multiplicity }4.
+\boxed{\; \mathrm{spec}\bigl(\Theta_{\tilde{S}}\bigr)=\{0\}\ \text{with multiplicity }4 \;}.
 $$
 
 **Proof.** For a central parameter, $\Theta_{\zeta e_t}(\tilde{Q}_2)=\zeta\tilde{Q}_2\bar\zeta=|\zeta|^{2}\tilde{Q}_2$, which is the first line. For a vector parameter, $\tilde S^{2}=-\langle\tilde S,\tilde S\rangle_{\natural}e_t$ and $(\tilde S^{\dagger})^{2}=-\overline{\langle\tilde S,\tilde S\rangle_{\natural}}e_t$, because $\tilde S^{\dagger}=-\bar{\tilde S}$ and $\bar{\tilde S}{}^{2}=-\langle\bar{\tilde S},\bar{\tilde S}\rangle_{\natural}e_t=-\overline{\langle\tilde S,\tilde S\rangle_{\natural}}e_t$; hence
@@ -86,7 +86,7 @@ $$
 is $J$-self-adjoint, and
 
 $$
-\mathrm{spec}(T)=\{2i,\,-2i,\,0,\,0\}.
+\boxed{\; \mathrm{spec}(T)=\{2i,\,-2i,\,0,\,0\} \;}.
 $$
 
 **Proof.** $J$-self-adjointness is $(L_{\tilde{Q}})^{\dagger}+(R_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}+L_{\bar{\tilde{Q}}}$, which for $\tilde{Q}=\vec e_x$ (real coefficients) returns $L_{\vec e_x}+R_{\vec e_x}$; the sum is a "Sylvester" operator, and the rule $\mathrm{spec}(L_{\tilde{Q}}+R_{\tilde{Q}})=\{\lambda_i+\lambda_j\}$ for the eigenvalues $\lambda_i$ of $\mathsf{M}_2(\tilde{Q})$ (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, §*The Spectrum of the Sylvester Operator*) applied to $\mathsf{M}_2(\vec e_x)=i\sigma_1$ with eigenvalues $\pm i$ gives $\{i+i,i-i,-i+i,-i-i\}=\{2i,0,0,-2i\}$.

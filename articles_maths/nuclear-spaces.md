@@ -86,7 +86,7 @@ from the completed projective tensor product to the completed injective tensor p
 **Theorem (characterisation by seminorms).** Let $E$ be a locally convex space. Then $E$ is nuclear if and only if for every continuous seminorm $p$ on $E$ there is a continuous seminorm $q \geq p$ on $E$ such that the canonical map
 
 $$
-\widehat{E}_q \longrightarrow \widehat{E}_p
+\boxed{\;\widehat{E}_q \longrightarrow \widehat{E}_p\;}
 $$
 
 between the completions of the quotients $E/\ker q$ and $E/\ker p$ is nuclear; here $\widehat{E}_p$ carries the norm induced by $p$.
@@ -152,7 +152,7 @@ $$
 **Theorem (Grothendieck's kernel theorem).** Let $E$ and $F$ be nuclear Fréchet spaces, or more generally let $E$ be nuclear and $F$ a complete locally convex space. Then the canonical map
 
 $$
-E \widehat{\otimes}_\pi F \longrightarrow E \widehat{\otimes}_\varepsilon F
+\boxed{\;E \widehat{\otimes}_\pi F \longrightarrow E \widehat{\otimes}_\varepsilon F\;}
 $$
 
 is a topological isomorphism, and the completed tensor product is a nuclear space. Consequently every continuous bilinear form on $E \times F$ corresponds to a continuous linear functional on the completed tensor product, and there is no ambiguity in the notation $E \widehat{\otimes} F$ for nuclear $E$.
@@ -162,7 +162,7 @@ is a topological isomorphism, and the completed tensor product is a nuclear spac
 **Theorem (Schwartz kernel theorem).** Let $\Omega \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ be open. Then every continuous linear map $T : C_c^\infty(\Omega) \to \mathcal{D}'(V)$ is represented by a unique distribution $K_T \in \mathcal{D}'(\Omega \times V)$ with
 
 $$
-\langle T f, g\rangle = \langle K_T, f \otimes g \rangle \qquad (f \in C_c^\infty(\Omega), \ g \in C_c^\infty(V)) ,
+\boxed{\;\langle T f, g\rangle = \langle K_T, f \otimes g \rangle \qquad (f \in C_c^\infty(\Omega), \ g \in C_c^\infty(V))\;} ,
 $$
 
 and the correspondence $T \leftrightarrow K_T$ is a linear bijection.

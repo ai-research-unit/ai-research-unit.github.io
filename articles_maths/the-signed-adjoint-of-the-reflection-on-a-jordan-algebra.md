@@ -29,7 +29,7 @@ The article assumes *Reflections as Signed Two-Sided Operators on a Jordan Algeb
 **Theorem.** The adjoint of the reflection $U_u\circ\alpha$ with respect to the trace form is the reflection at the image of the parameter:
 
 $$
-\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
+\boxed{\;\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha\;} .
 $$
 
 *Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra*, $(U_{a,b}\circ\alpha)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha$; with $a = b = u$ and $U_{u,u} = U_u$ this is the displayed formula.
@@ -37,7 +37,7 @@ $$
 **Theorem (self-adjointness).** A reflection is self-adjoint exactly when its parameter is fixed by the grade involution:
 
 $$
-\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_u\circ\alpha \iff \alpha(u) = u .
+\boxed{\;\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_u\circ\alpha \iff \alpha(u) = u\;} .
 $$
 
 *Proof.* The adjoint is $U_{\alpha(u)}\circ\alpha$; it is equal to $U_u\circ\alpha$ exactly when $U_{\alpha(u)} = U_u$, which for a non-degenerate trace form holds exactly when $\alpha(u) = u$.
@@ -53,7 +53,7 @@ $$
 **Theorem.** For the grade involution $\alpha_r$ defined by a reflection, the signed conjugation by $r$ is the identity,
 
 $$
-r_r(x) = r\,\alpha_r(x)\,r^{-1} = x ,
+\boxed{\;r_r(x) = r\,\alpha_r(x)\,r^{-1} = x\;} ,
 $$
 
 which is self-adjoint and unitary; the reflection at the parameter equal to its own involution degenerates to the identity of the algebra.

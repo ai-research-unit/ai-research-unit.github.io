@@ -23,9 +23,9 @@ $$
 and
 
 $$
-P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\},\qquad
+\boxed{\; P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\},\qquad
 P_{K}^{\circ}=\{\|c\|_E>\|v\|_E\},\qquad
-\partial P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}.
+\partial P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\} \;}.
 $$
 
 **Proof.** The two summands are Krein-orthogonal and $\langle c,c\rangle_{\natural*}=\|c\|_E^{2}>0$ on the positive part, $\langle v,v\rangle_{\natural*}=-\|v\|_E^{2}$ on the negative part; the identity follows, and the three characterisations are immediate.
@@ -43,9 +43,9 @@ The Hermitian subspace carries two forms of signature $(1,3)$: the biquaternion 
 **Theorem.** On the Hermitian subspace the Krein cone is the full null cone of the interval form, and its future nappe is the Hermitian cone of the dagger:
 
 $$
-P_{K}\cap\mathbb{M}_{+}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0\},
+\boxed{\; P_{K}\cap\mathbb{M}_{+}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0\},
 \qquad
-P=\{\tilde{Q}^{*}\tilde{Q}:\tilde{Q}\in\mathbb{B}\}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0,\ \mathrm{Sc}(\tilde{H})\geq0\}.
+P=\{\tilde{Q}^{*}\tilde{Q}:\tilde{Q}\in\mathbb{B}\}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0,\ \mathrm{Sc}(\tilde{H})\geq0\} \;}.
 $$
 
 **Proof.** On $\mathbb{M}_{+}$ the Krein square is $\langle\cdot\rangle$; an element of the Hermitian subspace is of the form $\tilde{H}=q_te_t+\sum_\mu iq'_\mu\vec e_\mu$ with $q_t,q'_\mu$ real, so $\langle\tilde{H},\tilde{H}\rangle_{\natural}=q_t^{2}-\sum_k q'^{2}_k$ and the inequality $N\geq0$ defines the two nappes $q_t\geq|\vec q'|$ and $q_t\leq-|\vec q'|$; the Hermitian cone consists of the positive semidefinite Hermitian elements, which are precisely the ones with the additional sign $\mathrm{Sc}(\tilde{H})=q_t\geq0$, and they form one nappe. This is the Hermitian-cone computation of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Cone, the Interval Form and the Isotropic Cone*, read on the general quaternionic sesquilinear form.
@@ -67,7 +67,7 @@ $$
 **Theorem (the cone is the $J$-image of the Hilbert cone).** $T\in\mathcal{P}_{J}$ if and only if $JT$ is self-adjoint and positive for the general plain sesquilinear form; hence
 
 $$
-\mathcal{P}_{J}=J\cdot\{S:S=S^{*},\ S\geq0\},
+\boxed{\; \mathcal{P}_{J}=J\cdot\{S:S=S^{*},\ S\geq0\} \;},
 $$
 
 the image of the definite positive cone under the fundamental symmetry. In particular $\mathcal{P}_{J}$ is a closed convex cone, stable under sums and under $J$-adjoints; it contains $J=J\cdot e_t$ but not the identity $\mathrm{id}=J\cdot J$, since $J$ is not positive for the general plain sesquilinear form.

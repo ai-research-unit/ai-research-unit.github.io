@@ -69,7 +69,7 @@ terminates and is an algebra automorphism, by the binomial identity $\delta^m(xy
 **The dimension check.** The derivations are moreover the tangent space to the automorphism group at the identity, one curve of automorphisms for each $\delta$ and each direction in $\operatorname{Der}_k(A)$, so for a finite-dimensional algebra over $\mathbb{R}$ or $\mathbb{C}$
 
 $$
-\dim \operatorname{Aut}_k(A) = \dim_k \operatorname{Der}_k(A) .
+\boxed{\;\dim \operatorname{Aut}_k(A) = \dim_k \operatorname{Der}_k(A)\;} .
 $$
 
 This gives a numerical check that is applied to every algebra below: the derivation subspace and the automorphism group must have the same dimension, and a computation that reports otherwise has lost something. The check is genuinely informative, because it relates two quantities computed in completely different ways — a nullspace of a linear system on the one hand, and an enumeration of maps preserving the product on the other.
@@ -133,7 +133,7 @@ The condition is linear in $\delta$, and the derivations form a Lie algebra unde
 For a separable algebra over a field every derivation is inner, so that
 
 $$
-\dim_k \operatorname{Der}_k(A) = n - \dim_k Z(A) .
+\boxed{\;\dim_k \operatorname{Der}_k(A) = n - \dim_k Z(A)\;} .
 $$
 
 This is the case for the matrix algebras, the quaternion algebra and the biquaternion algebra, and it is recorded in *Automorphisms and Derivations of Algebras*. It is a conditional statement, not a general one, and the dual numbers of the next sections are the counterexample. The obstruction is specific: over a perfect field a **commutative** finite-dimensional algebra is separable exactly when it is reduced, that is, when it has no nonzero nilpotent, and $\mathbb{R}[\varepsilon]/\varepsilon^2$ is not reduced. The hypothesis cannot be weakened to the absence of nilpotents, since a matrix algebra has plenty of them and is separable all the same. When the hypothesis fails a derivation may be outer, and then the formula is false because it computes only the inner derivations, so the true derivation space is *larger* than the formula predicts. The formula is therefore used below as a check where its hypothesis holds and as a diagnostic where it does not.
@@ -318,7 +318,7 @@ The quaternions and the biquaternions show the ladder at $n = 4$ over two differ
 **The quaternions over $\mathbb{R}$.** Here $n = 4$ and the ambient space is $M_4(\mathbb{R})$, of dimension $16$. The centre is $\mathbb{R}$, so $\dim \operatorname{Der}_{\mathbb{R}}(\mathbb{H}) = 4 - 1 = 3$, and the derivations are the inner ones $\mathrm{ad}_p$ with $p$ pure imaginary. On the three-dimensional space of pure imaginary quaternions the bracket is twice the cross product, so
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3, \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times ,
+\boxed{\;\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3, \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times\;} ,
 $$
 
 the automorphism group being realised by the inner automorphisms. The two dimensions agree, 3 and 3. The reading of $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$ as a rotation group of $\mathbb{R}^3$, and of the quaternion units as a double cover of it, needs the form and the distance, belongs to Part IV, and is named only.

@@ -80,7 +80,7 @@ functorial in the exact sequence, with connecting maps $\delta$ natural; the seq
 **Theorem (Shapiro's lemma).** For $H \leq G$, an $H$-module $N$ and every $n \geq 0$,
 
 $$
-H^n(G, \operatorname{Coind}_H^G N) \cong H^n(H,N).
+\boxed{\;H^n(G, \operatorname{Coind}_H^G N) \cong H^n(H,N)\;}.
 $$
 
 **Proof sketch.** On the cochain level, a cochain $\alpha : G^n \to \operatorname{Coind}_H^G N$ is a function $G^n \times G \to N$ with an $H$-equivariance in the last variable, equivalently a function $G^{n+1} \to N$ with an equivariance; the standard resolution of $G$ restricts to a resolution of $H$, and the two cochain complexes are isomorphic.
@@ -114,7 +114,7 @@ the derivations form a group $\operatorname{Der}(G,M)$ under addition. A derivat
 **Theorem.** The $1$-cocycles are exactly the derivations, $Z^1(G,M) = \operatorname{Der}(G,M)$, the $1$-coboundaries are exactly the principal derivations, $B^1(G,M) = \operatorname{PDer}(G,M)$, and
 
 $$
-H^1(G,M) \cong \operatorname{Der}(G,M)/\operatorname{PDer}(G,M).
+\boxed{\;H^1(G,M) \cong \operatorname{Der}(G,M)/\operatorname{PDer}(G,M)\;}.
 $$
 
 In particular, if the action of $G$ on $M$ is trivial, then $H^1(G,M) = \operatorname{Hom}(G,M)$.
@@ -184,7 +184,7 @@ and for $n \leq -2$ by $\hat H^n(G,M) = H_{-n-1}(G,M)$, so that the long exact s
 **Theorem (Tate duality).** Let $G$ be finite, let $M$ be a finite $G$-module, let $D = \bigoplus_p \mathbb{Z}[p^\infty]$ be the direct sum of the Prüfer groups of *Infinite Abelian Groups* over all primes, and let $M^{\vee} = \operatorname{Hom}(M, D)$ be the dual. For every $n \in \mathbb{Z}$ the cup product
 
 $$
-\hat H^n(G,M) \times \hat H^{-n-1}(G,M^{\vee}) \longrightarrow D
+\boxed{\;\hat H^n(G,M) \times \hat H^{-n-1}(G,M^{\vee}) \longrightarrow D\;}
 $$
 
 is a perfect pairing, so that cohomology with coefficients in $M$ and cohomology with coefficients in $M^{\vee}$ determine one another. The group $D$ is the abstract group of all roots of unity, one Prüfer group for each prime; its standard concrete model is the quotient of the additive group of the fraction field of $\mathbb{Z}$ by $\mathbb{Z}$, introduced in *Localization and the Fraction Field* in the category *Rings and Fields*, and the identification is deferred to that article.

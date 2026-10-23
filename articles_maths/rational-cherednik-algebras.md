@@ -53,7 +53,7 @@ The normalisation of the coroots is fixed once and for all: for each hyperplane 
 
 **Theorem (PBW; Etingof–Ginzburg).** The multiplication map
 $$
-S(\mathrm{H}) \otimes_{\mathbb{C}} \mathbb{C}W \otimes_{\mathbb{C}} S(\mathrm{H}^*) \longrightarrow H_{t,c}(W)
+\boxed{\;S(\mathrm{H}) \otimes_{\mathbb{C}} \mathbb{C}W \otimes_{\mathbb{C}} S(\mathrm{H}^*) \longrightarrow H_{t,c}(W)\;}
 $$
 is an isomorphism of vector spaces for every $t$ and $c$; the algebra has Gelfand–Kirillov dimension $\dim \mathrm{H}$; and the natural filtration has associated graded algebra $S(\mathrm{H}) \rtimes W$.
 
@@ -65,7 +65,7 @@ is an isomorphism of vector spaces for every $t$ and $c$; the algebra has Gelfan
 
 **Proposition.** The specialisations of the rational Cherednik algebra are
 $$
-H_{0,0}(W) = S(\mathrm{H}) \rtimes W, \qquad H_{t,0}(W) = A(\mathrm{H}) \rtimes W,
+\boxed{\;H_{0,0}(W) = S(\mathrm{H}) \rtimes W, \qquad H_{t,0}(W) = A(\mathrm{H}) \rtimes W\;},
 $$
 with $A(\mathrm{H})$ the Weyl algebra of $\mathrm{H}$; the substitution $y \mapsto \lambda y$, $x \mapsto \lambda^{-1} x$ for $\lambda \in \mathbb{C}^\times$ sends the relations of $(t,c)$ to the relations of $(\lambda t, \lambda c)$; and for $t \neq 0$ the algebra may be normalised by the condition $t = 1$. The family is a flat deformation of $S(\mathrm{H}) \rtimes W$ over the parameter space $\mathbb{C} \oplus (\mathbb{C}[\text{pairs}])^W$, by the PBW theorem.
 
@@ -121,7 +121,7 @@ The theorem is the content of the theory of the finite-dimensional representatio
 
 **Theorem (KZ functor; Ginzburg–Guay–Opdam–Rouquier).** For $t \neq 0$ there is an exact functor, the **KZ functor**,
 $$
-\operatorname{O}(H_{t,c}(W)) \longrightarrow H_q(W)\text{-mod}, \qquad q = \exp(2\pi i t),
+\boxed{\;\operatorname{O}(H_{t,c}(W)) \longrightarrow H_q(W)\text{-mod}, \qquad q = \exp(2\pi i t)\;},
 $$
 from the category $\mathcal{O}$ of the rational Cherednik algebra to the category of finite-dimensional modules over the Hecke algebra $H_q(W)$ of *Hecke Algebras*; the functor is fully faithful, and for parameters outside the resonant hyperplanes the induced map on simple objects is a bijection onto the simple modules over $H_q(W)$ that occur, so that at the generic parameters the KZ functor is an equivalence between $\mathcal{O}$ and the corresponding category of Hecke modules.
 

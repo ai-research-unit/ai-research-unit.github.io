@@ -48,8 +48,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 **Remark (general value).** For a general $W=a+ia'\neq0$ the same equation has exactly two solutions, opposite to each other, written $Z=\pm Z_{0}$ with $Z_{0}^{2}=W$. For $W$ away from the closed negative real axis the root is
 
-$$
-Z_{0}=\sqrt{\tfrac{r+a}{2}}+i\,\frac{a'}{2\sqrt{(r+a)/2}}, \qquad r=|W|=\sqrt{a^{2}+a'^{2}},
+$$ \boxed{\;Z_{0}=\sqrt{\tfrac{r+a}{2}}+i\,\frac{a'}{2\sqrt{(r+a)/2}}, \qquad r=|W|=\sqrt{a^{2}+a'^{2}}\;},
 $$
 
 with real part $\sqrt{(r+a)/2}$ and imaginary part a real multiple of $a'$; on the negative real axis the formula degenerates and the root is the purely imaginary $Z_{0}=i\sqrt{|W|}$. The two roots are real exactly for the real $W>0$ and purely imaginary exactly for the real $W<0$; at every other value of $W$ both parts are non-zero. For $W=0$ the two roots coalesce into the single root $0$, so the criterion for two distinct roots is $W\neq0$. The existence of a root for every $W$ is the algebraic closure of $\mathbb{C}$, owned by *Complex Algebra*.

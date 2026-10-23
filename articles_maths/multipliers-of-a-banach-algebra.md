@@ -32,7 +32,7 @@ the set $M(A)$ is a unital associative algebra with identity $(\mathrm{id},\math
 **Theorem ($M(A)$ is a Banach algebra).** Give $M(A)$ the norm
 
 $$
-\lVert(L,R)\rVert = \max\{\lVert L\rVert,\lVert R\rVert\} ,
+\boxed{\;\lVert(L,R)\rVert = \max\{\lVert L\rVert,\lVert R\rVert\}\;} ,
 $$
 
 where $\lVert L\rVert,\lVert R\rVert$ are the operator norms. Then $M(A)$ is a unital Banach algebra under the product above, the maps $(L,R) \mapsto L$ and $(L,R) \mapsto R$ are contractions, and $\lVert(L,R)\rVert = \lVert L\rVert = \lVert R\rVert$ on the double centralisers of a faithful algebra.
@@ -42,7 +42,7 @@ where $\lVert L\rVert,\lVert R\rVert$ are the operator norms. Then $M(A)$ is a u
 **Proposition (the canonical embedding).** The map
 
 $$
-\iota : A \longrightarrow M(A) , \qquad \iota(a) = (L_a,R_a) ,
+\boxed{\;\iota : A \longrightarrow M(A) , \qquad \iota(a) = (L_a,R_a)\;} ,
 $$
 
 is an isometric algebra homomorphism when $A$ is unital and a bounded algebra homomorphism in general, with image $\iota(A)$ a two-sided ideal of $M(A)$; it is injective on a faithful algebra and, in particular, on a unital one. The identity of $M(A)$ lies in $\iota(A)$ exactly when $A$ is unital, and then $\iota$ is onto.
@@ -62,7 +62,7 @@ is an isometric algebra homomorphism when $A$ is unital and a bounded algebra ho
 **Theorem (the multiplier algebra as the double centraliser algebra).** Let $A$ be a unital Banach algebra and let $\lambda(A)$ and $\rho(A)$ be the two regular representations in $B(A)$. Then the double centraliser algebra of the pair $(\lambda(A),\rho(A))$ is $\lambda(A)' = \rho(A)$ and $\rho(A)' = \lambda(A)$, and $M(A) = \iota(A)$. In the non-unital case, if the algebra is faithful and has a bounded approximate identity, then
 
 $$
-M(A) \cong \{\,T \in B(A) : T\lambda(A) \subseteq \lambda(A),\ \lambda(A)T \subseteq \lambda(A),\ T\rho(A) \subseteq \rho(A),\ \rho(A)T \subseteq \rho(A)\,\} ,
+\boxed{\;M(A) \cong \{\,T \in B(A) : T\lambda(A) \subseteq \lambda(A),\ \lambda(A)T \subseteq \lambda(A),\ T\rho(A) \subseteq \rho(A),\ \rho(A)T \subseteq \rho(A)\,\}\;} ,
 $$
 
 the operators normalising both regular representations, and the isomorphism pairs $T$ with the double centraliser of the two inclusions.

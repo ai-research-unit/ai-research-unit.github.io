@@ -49,7 +49,7 @@ and $\Delta^n f$ is defined by iteration.
 
 **Theorem (Mahler).** Every $f \in C(\mathbb{Z}_p,\mathbb{Q}_p)$ has a unique expansion
 $$
-f(x) = \sum_{n \geq 0} a_n \binom{x}{n}, \qquad a_n = (\Delta^n f)(0) \in \mathbb{Q}_p ,
+\boxed{\;f(x) = \sum_{n \geq 0} a_n \binom{x}{n}, \qquad a_n = (\Delta^n f)(0) \in \mathbb{Q}_p\;} ,
 $$
 the coefficients satisfying $a_n \to 0$; the series converges uniformly on $\mathbb{Z}_p$, and the map $f \mapsto (a_n)$ is an isometry
 $$
@@ -95,7 +95,7 @@ The definition is the affine local form of the analytic functions of *Analytic F
 
 **Theorem (Strassmann).** Let $f = \sum_{n \geq 0} a_n x^n \neq 0$ converge on the closed unit disc and let
 $$
-N = \max \bigl\{ n : \lvert a_n \rvert = \max_{k} \lvert a_k \rvert \bigr\}
+\boxed{\;N = \max \bigl\{ n : \lvert a_n \rvert = \max_{k} \lvert a_k \rvert \bigr\}\;}
 $$
 be the largest index of maximal absolute value. Then $f$ has at most $N$ zeros in the closed unit disc, counted with multiplicity.
 
@@ -125,7 +125,7 @@ so on $p\mathbb{Z}_p$ for $p$ odd and on $4\mathbb{Z}_2$ for $p = 2$;
 
 **Theorem.** The multiplicative group of $\mathbb{Q}_p$ decomposes as
 $$
-\mathbb{Q}_p^\times \cong \langle p \rangle \times \mu_{p-1} \times (1+p\mathbb{Z}_p) \cong \mathbb{Z} \times \mathbb{Z}/(p-1) \times \mathbb{Z}_p \qquad (p \text{ odd}),
+\boxed{\;\mathbb{Q}_p^\times \cong \langle p \rangle \times \mu_{p-1} \times (1+p\mathbb{Z}_p) \cong \mathbb{Z} \times \mathbb{Z}/(p-1) \times \mathbb{Z}_p \qquad (p \text{ odd})\;},
 $$
 $$
 \mathbb{Q}_p^\times \cong \langle 2 \rangle \times \{\pm 1\} \times (1+4\mathbb{Z}_2) \cong \mathbb{Z} \times \mathbb{Z}/2 \times \mathbb{Z}_2 \qquad (p = 2).

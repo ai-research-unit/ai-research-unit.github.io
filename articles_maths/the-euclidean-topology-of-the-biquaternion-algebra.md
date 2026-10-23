@@ -37,7 +37,7 @@ The multiplication is continuous, and the estimate is sharp.
 **Theorem (the normed-algebra inequality).** For all $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$,
 
 $$
-\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt{2}\,\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E,
+\boxed{\; \|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt{2}\,\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E \;},
 $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
@@ -72,10 +72,10 @@ Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\The
 **Corollary (the fixed subspaces).** The centre, the vector subspace, the Hermitian subspace, the anti-Hermitian subspace, the quaternion subspace and the anti-quaternion subspace are each contractible, the homotopy above preserving every linear subspace, so each is a point as far as homotopy is concerned:
 
 $$
-\mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^{2},\qquad
+\boxed{\; \mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^{2},\qquad
 \mathbb{V}_{\mathbb{B}}\cong\mathbb{R}^{6},\qquad
 \mathbb{H}_{\mathbb{B}}\cong i\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4},\qquad
-\mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4}.
+\mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4} \;}.
 $$
 
 **Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *Comparison of the Remarkable Subspaces*.
@@ -89,7 +89,7 @@ The complement of the set of zero divisors is dense in $\mathbb{B}$, because tha
 ## The Euclidean Unit Sphere
 
 $$
-S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^{7}
+\boxed{\; S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^{7} \;}
 $$
 
 is, by the isometry of §*The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$*, the standard unit sphere of $\mathbb{R}^{8}$: closed, compact, connected, and a smooth $7$-manifold. It is nevertheless the **wrong** sphere for the algebra, and the reason is that $\|\cdot\|_E$ is not multiplicative: for $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=0$ while $\|\tilde{Q}\|_E=\sqrt2$, so

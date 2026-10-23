@@ -37,7 +37,7 @@ Throughout, $H$ is a complex Hilbert space with inner product linear in the firs
 **Theorem (the group and its topologies).** $\mathrm{U}(H)$ is a group under composition with identity $I$ and inverse $U\mapsto U^*$, and it carries the norm, strong and weak operator topologies, with
 
 $$
-\text{norm}\ \subsetneq\ \text{strong}\ =\ \text{weak} .
+\boxed{\;\text{norm}\ \subsetneq\ \text{strong}\ =\ \text{weak}\;} .
 $$
 
 It is a topological group in each of these topologies, it is compact and Hausdorff in the strong topology, the strong and weak topologies coincide on it, and it is metrisable there when $H$ is separable.
@@ -57,7 +57,7 @@ It is a topological group in each of these topologies, it is compact and Hausdor
 **Proposition (conjugation by a unitary is an isometric $*$-automorphism).** For $U\in \mathrm{U}(H)$ the map
 
 $$
-\iota_U(T)=UTU^*=UTU^{-1}
+\boxed{\;\iota_U(T)=UTU^*=UTU^{-1}\;}
 $$
 
 is an isometric $*$-automorphism of $B(H)$ with norm and Hilbert–Schmidt norm preserved, whose inverse is $\iota_{U^*}$; the map $U\mapsto\iota_U$ is a group homomorphism $\mathrm{U}(H)\to\operatorname{Aut}^*(B(H))$ with kernel $\mathbb{T}I$, so the group of inner $*$-automorphisms is $\mathrm{U}(H)/\mathbb{T}I$.

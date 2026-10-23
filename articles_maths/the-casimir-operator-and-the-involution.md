@@ -12,7 +12,7 @@ The base is a field $K$ of characteristic zero; $\mathrm{G}$ is finite-dimension
 **Theorem.** Let $\theta$ be an involution of $\mathrm{G}$ preserving the Killing form, $\Theta$ its extension to $\mathrm{U}(\mathrm{G})$, and $\sigma$ the principal anti-automorphism. Then
 
 $$
-\Theta(\Omega)=\Omega,\qquad \sigma(\Omega)=\Omega,\qquad \tau(\Omega)=\Omega .
+\boxed{\;\Theta(\Omega)=\Omega,\qquad \sigma(\Omega)=\Omega,\qquad \tau(\Omega)=\Omega\;} .
 $$
 
 **Proof.** The form-preserving involution $\theta$ carries a pair of dual bases to a pair of dual bases, and $\Omega=\sum x_ix^i$ is built from such a pair; hence $\Theta(\Omega)=\sum\theta(x_i)\theta(x^i)=\Omega$ after reindexing. The principal anti-automorphism sends $\sum x_ix^i$ to $\sum\sigma(x^i)\sigma(x_i)=\sum(-x^i)(-x_i)=\sum x^ix_i=\Omega$ since $\sigma$ reverses the product and $x\mapsto-x$ on the generators. The composite fixes $\Omega$ because both factors do.
@@ -28,9 +28,9 @@ $$
 **Theorem.** Let $(\mathrm{G},\mathrm{K})$ be a symmetric pair with $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ and $\theta$ the involution, and suppose the form is such that the two summands are nondegenerate. Then the Casimir element splits as
 
 $$
-\Omega=\Omega_{\mathrm{K}}+\Omega_{\mathrm{P}},\qquad
+\boxed{\;\Omega=\Omega_{\mathrm{K}}+\Omega_{\mathrm{P}},\qquad
 \Omega_{\mathrm{K}}=\sum_{a}x_ax^a,\qquad
-\Omega_{\mathrm{P}}=\sum_{b}y_by^b,
+\Omega_{\mathrm{P}}=\sum_{b}y_by^b\;},
 $$
 
 the first sum over dual bases of $\mathrm{K}$ and the second over dual bases of $\mathrm{P}$; $\Theta(\Omega_{\mathrm{K}})=\Omega_{\mathrm{K}}$, $\Theta(\Omega_{\mathrm{P}})=\Omega_{\mathrm{P}}$, and $\Omega_{\mathrm{P}}$ lies in the $-1$-eigenspace of the induced action only when the generators are chosen in $\mathrm{P}$ and the form pairs $\mathrm{K}$ with $\mathrm{P}$; with the natural choices the involution fixes both parts.

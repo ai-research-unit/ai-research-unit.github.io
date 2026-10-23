@@ -64,7 +64,7 @@ with $C = \max\{\max_{s\in S}|s|_T, \max_{t\in T}|t|_S\}$, so that the identity 
 **Definition.** A map $f : X \to Y$ between metric spaces is a **quasi-isometric embedding** if there are constants $\lambda \geq 1$ and $C \geq 0$ with
 
 $$
-\tfrac{1}{\lambda}d_X(x,x') - C \;\leq\; d_Y(f(x),f(x')) \;\leq\; \lambda\,d_X(x,x') + C \qquad \text{for all } x,x' \in X .
+\boxed{\;\tfrac{1}{\lambda}d_X(x,x') - C \;\leq\; d_Y(f(x),f(x')) \;\leq\; \lambda\,d_X(x,x') + C \qquad \text{for all } x,x' \in X\;} .
 $$
 
 A **quasi-isometry** is a quasi-isometric embedding with a quasi-isometric inverse: a map $g : Y \to X$ and a constant $C'$ with $d_X(gf(x),x) \leq C'$ and $d_Y(fg(y),y) \leq C'$ for all $x,y$. The relation "there is a quasi-isometry $X \to Y$" is an equivalence relation on metric spaces, and a property preserved by quasi-isometry is a **quasi-isometry invariant**. A map is **coarsely Lipschitz**, or a **quasi-isometric embedding on the large scale**, when the second inequality holds with some $\lambda, C$.

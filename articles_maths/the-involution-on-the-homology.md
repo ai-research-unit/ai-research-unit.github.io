@@ -31,7 +31,7 @@ and similarly for the cohomology, with $H^{*,\pm}$. When $2$ is invertible in $k
 
 **Proposition (the two parts in terms of the transfer).** Let $k$ be a ring in which $2$ is invertible and let $p : M \to M/T$ be the orbit map. Then $H_*(M;k)^{+}\cong H_*(M/T;k)$ via the induced map of the quotient, and the anti-fixed part $H_*^{-}$ is the kernel of the transfer, so that there is a natural splitting
 $$
-H_*(M;k) = H_*^{+}\oplus H_*^{-}, \qquad H_*^{+}\cong H_*(M/T;k).
+\boxed{\;H_*(M;k) = H_*^{+}\oplus H_*^{-}, \qquad H_*^{+}\cong H_*(M/T;k)\;}.
 $$
 
 **Proof.** The statement that the fixed part is the homology of the quotient is the transfer theorem of *The Involution as an Operator on the Homology*; the anti-fixed part is its complementary summand and hence the kernel of the transfer, by the same splitting.
@@ -62,7 +62,7 @@ So an orientation-preserving involution leaves the form invariant and an orienta
 
 **Theorem (the orientation-preserving case: orthogonal splitting).** Let $\deg(T) = +1$ and let $2$ be invertible. Then the fixed and anti-fixed parts are orthogonal for $Q$,
 $$
-Q\bigl(H_m^{+}, H_m^{-}\bigr) = 0,
+\boxed{\;Q\bigl(H_m^{+}, H_m^{-}\bigr) = 0\;},
 $$
 and the form restricts to a nondegenerate form on each part; consequently
 $$
@@ -74,7 +74,7 @@ where $\sigma(M^{\pm})$ is the signature of the form restricted to the $\pm$-par
 
 **Theorem (the orientation-reversing case: isotropic duality and vanishing signature).** Let $\deg(T) = -1$ and let $2$ be invertible. Then each part is isotropic for $Q$,
 $$
-Q\bigl(H_m^{+}, H_m^{+}\bigr) = 0, \qquad Q\bigl(H_m^{-}, H_m^{-}\bigr) = 0,
+\boxed{\;Q\bigl(H_m^{+}, H_m^{+}\bigr) = 0, \qquad Q\bigl(H_m^{-}, H_m^{-}\bigr) = 0\;},
 $$
 and $Q$ places the two parts in perfect duality:
 $$

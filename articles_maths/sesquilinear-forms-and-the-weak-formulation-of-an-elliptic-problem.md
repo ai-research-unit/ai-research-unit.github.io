@@ -53,7 +53,7 @@ with $C$ depending on $\Lambda$, $M$ and $n$; the form is a bounded sesquilinear
 **Theorem (coercivity of the elliptic form).** Let $A$ be symmetric and **uniformly elliptic**, $\lambda|\xi|^2\le A(x)\xi\cdot\xi\le\Lambda|\xi|^2$ with $\lambda>0$, and let $c\ge0$ be bounded. Then the elliptic form is coercive on $H^1_0(\Omega)$:
 
 $$
-\mathfrak{a}(u,u)\ge\lambda\int_\Omega|\nabla u|^2 \ge \frac{\lambda}{1+C_P}\,\|u\|_{H^1}^2 ,
+\boxed{\;\mathfrak{a}(u,u)\ge\lambda\int_\Omega|\nabla u|^2 \ge \frac{\lambda}{1+C_P}\,\|u\|_{H^1}^2\;} ,
 $$
 
 where $C_P$ is the Poincaré constant; that is, $\operatorname{Re}\mathfrak{a}(u,u)\ge c_*\|u\|_{H^1}^2$ with $c_*=\lambda/(1+C_P)>0$, and the form is coercive.
@@ -77,7 +77,7 @@ where $\langle f,v\rangle=\int_\Omega f\bar v\,dx$. The equation is the **weak f
 **Theorem (existence and uniqueness of the weak solution).** Let the elliptic form be bounded and coercive on $H^1_0(\Omega)$ and let $f\in L^2(\Omega)$. Then there is a unique $u\in H^1_0(\Omega)$ with $\mathfrak{a}(u,v)=\langle f,v\rangle$ for every $v$, and
 
 $$
-\|u\|_{H^1} \le \frac1c\,\|f\|_{L^2} .
+\boxed{\;\|u\|_{H^1} \le \frac1c\,\|f\|_{L^2}\;} .
 $$
 
 *Proof.* The map $v\mapsto\langle f,v\rangle$ is a bounded conjugate-linear functional on the Hilbert space $H^1_0(\Omega)$, because $|\langle f,v\rangle|\le\|f\|_{L^2}\|v\|_{L^2}\le\|f\|_{L^2}\|v\|_{H^1}$. The form $\mathfrak{a}$ is bounded and coercive, so the Lax–Milgram theorem of *Sesquilinear Forms and the Lax–Milgram Theorem* represents it by a boundedly invertible operator and gives the unique $u$ solving the equation, with the stated bound on $u$ in the form norm and hence in $H^1$.
@@ -117,7 +117,7 @@ and if $u\in H^2(\Omega)$ then $Lu=f$ on $\Omega$ and $\partial/\partial\nu u = 
 **Theorem (elliptic regularity).** Let the coefficients be smooth and the form uniformly elliptic, and let $f\in L^2(\Omega)$. Then the weak solution lies in $H^2_{\mathrm{loc}}(\Omega)$, and
 
 $$
-\|u\|_{H^2(\Omega)} \le C\bigl(\|f\|_{L^2(\Omega)}+\|u\|_{L^2(\Omega)}\bigr)
+\boxed{\;\|u\|_{H^2(\Omega)} \le C\bigl(\|f\|_{L^2(\Omega)}+\|u\|_{L^2(\Omega)}\bigr)\;}
 $$
 
 when the boundary is smooth and the Dirichlet condition is imposed; in particular the solution operator factors through $H^2\cap H^1_0$ and is compact on $L^2(\Omega)$.

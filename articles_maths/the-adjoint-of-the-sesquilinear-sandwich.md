@@ -27,7 +27,7 @@ The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger
 **Definition.** For $a,b\in A$ the **sesquilinear sandwich** is the operator
 
 $$
-S_{a,b}:A\longrightarrow A,\qquad S_{a,b}(x)=ax^{*}b ;
+\boxed{\;S_{a,b}:A\longrightarrow A,\qquad S_{a,b}(x)=ax^{*}b\;} ;
 $$
 
 it is additive and $\varsigma$-semilinear, $S_{a,b}(\lambda x)=\varsigma(\lambda)S_{a,b}(x)$, by *The Sesquilinear Sandwich Operator*.
@@ -35,7 +35,7 @@ it is additive and $\varsigma$-semilinear, $S_{a,b}(\lambda x)=\varsigma(\lambda
 **Theorem.** For all $a,b\in A$ the adjoint of the sandwich is the sandwich with the parameters interchanged,
 
 $$
-S_{a,b}^{\dagger}=S_{b,a} .
+\boxed{\;S_{a,b}^{\dagger}=S_{b,a}\;} .
 $$
 
 **Proof.** By the twisted rule it suffices to verify $\varsigma\bigl(\varphi(x,S_{b,a}y)\bigr)=\varphi(S_{a,b}x,y)$ for all $x,y$. The left-hand side is $\varsigma\bigl(\tau\bigl(x(by^{*}a)^{*}\bigr)\bigr)$, and $(by^{*}a)^{*}=a^{*}yb^{*}$, so it is $\varsigma\bigl(\tau(xa^{*}yb^{*})\bigr)=\tau\bigl((xa^{*}yb^{*})^{*}\bigr)=\tau(by^{*}ax^{*})$, using $\varsigma\circ\tau=\tau\circ{}^{*}$. By the centrality of $\tau$ this is $\tau(ax^{*}by^{*})$, which is $\varphi(S_{a,b}x,y)$.
@@ -81,7 +81,7 @@ which is the theorem again, read factor by factor.
 **Theorem (the unitary parameters).** Let $a$ and $b$ be unitary elements of $A$. Then the sandwich is a unitary operator, with
 
 $$
-S_{a,b}^{\dagger}=S_{b,a}=S_{a,b}^{-1} .
+\boxed{\;S_{a,b}^{\dagger}=S_{b,a}=S_{a,b}^{-1}\;} .
 $$
 
 **Proof.** The inverse of a sandwich is $S_{a,b}^{-1}=S_{(b^{-1})^{*},\,(a^{-1})^{*}}$, by *The Sesquilinear Sandwich Operator*. For a unitary $b$ one has $(b^{-1})^{*}=(b^{*})^{*}=b$, and likewise $(a^{-1})^{*}=a$, so the inverse is $S_{b,a}$, which is the adjoint by the theorem.

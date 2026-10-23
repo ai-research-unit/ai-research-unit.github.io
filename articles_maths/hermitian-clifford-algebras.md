@@ -39,7 +39,7 @@ The infinite-dimensional case — the Clifford algebra of a Hermitian space of i
 **Proposition.** The complexified Hermitian Clifford algebra with the dagger and the **form of the dagger**
 
 $$
-\langle x, y\rangle_{\dagger} = \operatorname{Sc}(x^{\dagger}y) = \sum_{I} (-1)^{|I|}\Bigl(\prod_{i\in I}e_{i}^{2}\Bigr)\bar{a}_{I}b_{I}
+\boxed{\;\langle x, y\rangle_{\dagger} = \operatorname{Sc}(x^{\dagger}y) = \sum_{I} (-1)^{|I|}\Bigl(\prod_{i\in I}e_{i}^{2}\Bigr)\bar{a}_{I}b_{I}\;}
 $$
 
 is a sesqualgebra with a form in the sense of *Sesqualgebras with a Form*; the form is Hermitian and $\varsigma$-sesquilinear, its Gram matrix in the blade basis is diagonal with entries $\pm1$, and it is non-degenerate because $g$ is. It is definite exactly in the extreme cases: it is positive definite when $g$ is **negative** definite, while the **conjugate-reversion form** $\operatorname{Sc}(x^{r,\sigma}y) = \sum_{I}(\prod_{i\in I}e_{i}^{2})\bar{a}_{I}b_{I}$ is the positive definite one when $g$ is positive definite.
@@ -53,8 +53,8 @@ is a sesqualgebra with a form in the sense of *Sesqualgebras with a Form*; the f
 **Proposition.** The unitary slice $U = \{x : x^{\dagger}x = 1\}$ of the Hermitian Clifford algebra contains the **Pin group** of the real form, and its even part contains the **Spin group**:
 
 $$
-\mathrm{Pin}(g) = \{x \in \mathrm{Cl}(V,g)^{*} : x^{\dagger}x = \pm 1, \ xVx^{-1} \subseteq V\}, \qquad
-\mathrm{Spin}(g) = \mathrm{Pin}(g)\cap \mathrm{Cl}(V,g)^{0} .
+\boxed{\;\mathrm{Pin}(g) = \{x \in \mathrm{Cl}(V,g)^{*} : x^{\dagger}x = \pm 1, \ xVx^{-1} \subseteq V\}, \qquad
+\mathrm{Spin}(g) = \mathrm{Pin}(g)\cap \mathrm{Cl}(V,g)^{0}\;} .
 $$
 
 **Proof.** For a vector $v$ with $g(v,v) = 1$ one has $v^{\dagger} = v$ and $v^{2} = -1$, so $v^{\dagger}v = v^{2} = -1$; the products of such vectors generate the Pin group and satisfy the slice condition up to sign. The even elements are the products of an even number of vectors, and the sandwich $xvx^{-1}$ preserves $V$ by the defining property. The construction is that of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, read with the Hermitian dagger.

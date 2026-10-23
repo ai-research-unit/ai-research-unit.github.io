@@ -13,7 +13,7 @@ The conventions are those of *The Blade Form and the Hermitian Structure with He
 **Definition.** The **Euclidean form** of the algebra is
 
 $$
-(x,y) = \sum_I a_I\,b_I ,
+\boxed{\;(x,y) = \sum_I a_I\,b_I\;} ,
 $$
 
 the form in which the blades of an orthonormal basis are an orthonormal basis. Over a real base with $q$ positive definite it is the blade form of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, and $\langle x,x\rangle = \sum_I a_I^{2} > 0$; over a complex base the same positive structure is the conjugate-reversion form $\sum_I \bar a_I b_I = \mathrm{Sc}(x^{r,\sigma}y)$, $\sigma$-sesquilinear and positive definite.
@@ -25,7 +25,7 @@ the form in which the blades of an orthonormal basis are an orthonormal basis. O
 **Proposition.** With the Euclidean norm $\|x\| = (x,x)^{1/2}$, every $L_x$ and $R_x$ is bounded, and
 
 $$
-\|xy\| \le 2^{n/2}\,\|x\|\,\|y\| .
+\boxed{\;\|xy\| \le 2^{n/2}\,\|x\|\,\|y\|\;} .
 $$
 
 For $x$ a blade the inequality holds with constant $1$: $\|e_Iy\| = \|y\|$, since left multiplication by a blade permutes the blade basis up to signs.

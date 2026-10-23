@@ -12,7 +12,7 @@ Throughout, $(G,\alpha)$ is a group with an involutive automorphism $\alpha$, a 
 **Theorem (the adjoint is a reflection).** For every $a\in G$,
 
 $$
-\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(a)}=\Sigma^{\alpha}_{\alpha(a)^{-1},\,(\alpha(a)^{-1})^{-1}},
+\boxed{\;\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(a)}=\Sigma^{\alpha}_{\alpha(a)^{-1},\,(\alpha(a)^{-1})^{-1}}\;},
 $$
 
 which is the signed conjugation with parameter $\alpha(a)^{-1}$. Hence the adjoint of a reflection is a reflection, and the reflections are closed under the adjoint.
@@ -32,11 +32,11 @@ which is the signed conjugation with parameter $\alpha(a)^{-1}$. Hence the adjoi
 **Theorem (a signed conjugation is self-adjoint if and only if it is a reflection).** For every $a\in G$,
 
 $$
-\Sigma^{\alpha}_{a,a^{-1}}\text{ is self-adjoint}
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}\text{ is self-adjoint}
 \quad\Longleftrightarrow\quad
 a\,\alpha(a)\in Z(G)
 \quad\Longleftrightarrow\quad
-\Sigma^{\alpha}_{a,a^{-1}}\text{ is a reflection}.
+\Sigma^{\alpha}_{a,a^{-1}}\text{ is a reflection}\;}.
 $$
 
 Hence every reflection is self-adjoint, and the signed conjugations that are not reflections are exactly the signed conjugations that are not self-adjoint.

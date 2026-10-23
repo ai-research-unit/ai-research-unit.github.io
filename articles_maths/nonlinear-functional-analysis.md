@@ -72,7 +72,7 @@ The principle is the fixed-point theorem of the metric setting and is proved by 
 **Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $\Omega \subseteq X\times Y$ be open, and let $F:\Omega\to Z$ be of class $C^k$ with $F(x_0,y_0)=0$. If the partial derivative $\partial/\partial y\,F(x_0,y_0) \in B(Y,Z)$ is invertible, then there are neighbourhoods $\Omega$ of $x_0$ and $W$ of $y_0$ and a $C^k$ map $\varphi:\Omega\to W$ with $\varphi(x_0)=y_0$ and
 
 $$
-F(x,y)=0 \text{ in } \Omega\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial/\partial y\,F(x,\varphi(x))\bigr)^{-1}\partial/\partial x\,F(x,\varphi(x)).
+\boxed{\;F(x,y)=0 \text{ in } \Omega\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial/\partial y\,F(x,\varphi(x))\bigr)^{-1}\partial/\partial x\,F(x,\varphi(x))\;}.
 $$
 
 *Proof.* Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial/\partial x\,F&\partial/\partial y\,F\end{pmatrix}$.
@@ -142,7 +142,7 @@ so the subdifferential of the conjugate is the inverse relation of the subdiffer
 **Theorem (Ekeland).** Let $(X,d)$ be a complete metric space and let $f:X\to\mathbb{R}\cup\{+\infty\}$ be proper, lower semicontinuous and bounded below. For every $\epsilon>0$ there is $x_\epsilon \in X$ with
 
 $$
-f(x_\epsilon)\le\inf_Xf+\epsilon, \qquad f(x_\epsilon)\le f(x)+\epsilon\,d(x,x_\epsilon) \quad \text{for all } x \in X .
+\boxed{\;f(x_\epsilon)\le\inf_Xf+\epsilon, \qquad f(x_\epsilon)\le f(x)+\epsilon\,d(x,x_\epsilon) \quad \text{for all } x \in X\;} .
 $$
 
 Equivalently, $x_\epsilon$ is a strict minimiser of the perturbed functional $x\mapsto f(x)+\epsilon\,d(x,x_\epsilon)$.
@@ -226,7 +226,7 @@ If $c$ is finite and $F$ satisfies $(PS)_c$, then $c$ is a critical value of $F$
 **Theorem (mountain pass).** Let $X$ be a Banach space, $F \in C^1(X,\mathbb{R})$ with $F(0)=0$, and suppose there are $r>0$ and $\rho>0$ with
 
 $$
-F(u)\ge\rho \text{ for } \|u\|=r, \qquad \text{and there is } v \text{ with } \|v\|>r \text{ and } F(v)<\rho .
+\boxed{\;F(u)\ge\rho \text{ for } \|u\|=r, \qquad \text{and there is } v \text{ with } \|v\|>r \text{ and } F(v)<\rho\;} .
 $$
 
 Let $\Gamma=\{\gamma \in C([0,1],X):\gamma(0)=0,\ \gamma(1)=v\}$ and

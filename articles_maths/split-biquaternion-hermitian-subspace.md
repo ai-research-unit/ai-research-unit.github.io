@@ -55,7 +55,9 @@ The obstruction is the quaternion part $\vec q_1\times\vec q_2$ of a product, wh
 **Proposition.** For $\tilde{Q}_1 = q_{1t} e_t + j\vec q_1$ and $\tilde{Q}_2 = q_{2t} e_t + j\vec q_2$ in $\mathbb{M}_+$, with $\vec q_1, \vec q_2$ real pure quaternions,
 
 $$
-[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-.
+\boxed{\;
+[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-
+\;}.
 $$
 
 **Proof.** Expanding the product and using $\vec q_1\vec q_2 = -\vec q_1\cdot\vec q_2 + \vec q_1\times\vec q_2$ gives $\tilde{Q}_1\tilde{Q}_2 = q_{1t}q_{2t} - \vec q_1\cdot\vec q_2 + \vec q_1\times\vec q_2 + j(q_{1t}\vec q_2 + q_{2t}\vec q_1)$ and the conjugate expression for $\tilde{Q}_2\tilde{Q}_1$; the difference is $2\vec q_1\times\vec q_2$, a pure real quaternion, which lies in $\mathbb{M}_-$.
@@ -67,7 +69,9 @@ So the Hermitian subspace is **not** a Lie subalgebra; the bracket of two Hermit
 **Proposition.** The symmetrized product $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ closes on $\mathbb{M}_+$,
 
 $$
-\tilde{Q}_1 \bullet \tilde{Q}_2 = \left(q_{1t} q_{2t} - \vec q_1\cdot\vec q_2\right) e_t + j\left(q_{1t} \vec q_2 + q_{2t} \vec q_1\right) \in \mathbb{M}_+,
+\boxed{\;
+\tilde{Q}_1 \bullet \tilde{Q}_2 = \left(q_{1t} q_{2t} - \vec q_1\cdot\vec q_2\right) e_t + j\left(q_{1t} \vec q_2 + q_{2t} \vec q_1\right) \in \mathbb{M}_+
+\;},
 $$
 
 and with it $\mathbb{M}_+$ is a **Jordan algebra** (commutative, with $\tilde{Q}_1 \bullet (\tilde{Q}_1 \bullet \tilde{Q}_1) = (\tilde{Q}_1 \bullet \tilde{Q}_1) \bullet \tilde{Q}_1$).
@@ -103,7 +107,9 @@ $\mathbb{M}_+$ is stable under multiplication by the centre $\mathbb{D}_{\mathbb
 **Theorem.** On the Hermitian subspace the split-biquaternion norm is the **positive definite** real quadratic form
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z,
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z
+\;},
 $$
 
 of signature $(4,0)$.

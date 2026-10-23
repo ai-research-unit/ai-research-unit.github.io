@@ -6,7 +6,7 @@
 The twistor space of a four-dimensional oriented conformal manifold is the projectivised negative spinor bundle,
 
 $$
-Z(M) = \mathbb{P}(\mathcal{S}^-) \longrightarrow M ,
+\boxed{\;Z(M) = \mathbb{P}(\mathcal{S}^-) \longrightarrow M\;} ,
 $$
 
 a bundle of projective lines whose fibre at $x$ is the sphere of complex structures on the tangent space $T_xM$ compatible with the conformal structure and the orientation. It is the complex-geometric object attached to the conformal class: the projection is holomorphic when the conformal structure is anti-self-dual, the fibres are holomorphic rational curves, and the conformal geometry of $M$ is encoded in the complex geometry of $Z(M)$. This article treats the twistor space as an object with structure: a fibration, a real structure, a complex structure and a fibrewise Hermitian form.

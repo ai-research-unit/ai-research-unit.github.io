@@ -87,8 +87,7 @@ The map $R_u$ fixes the origin and preserves distances, so it is an **isometry o
 
 **Theorem.** The map $u \mapsto R_u$ is an injective group homomorphism $\mathrm{U}(1) \to SO(2)$, and it is surjective. Hence
 
-$$
-\mathrm{U}(1) \cong SO(2),
+$$ \boxed{\;\mathrm{U}(1) \cong SO(2)\;},
 $$
 
 and every element of $SO(2)$ is the rotation $R_u$ for exactly one $u \in \mathrm{U}(1)$, that is, one angle $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.
@@ -187,8 +186,7 @@ using $\bar u^{-1} = u$ for $|u| = 1$. As $u$ ranges over $\mathrm{U}(1)$, $u^2$
 
 **Theorem.** For $u, v \in \mathrm{U}(1)$,
 
-$$
-S_u \circ S_v = R_{u\bar v}.
+$$ \boxed{\;S_u \circ S_v = R_{u\bar v}\;}.
 $$
 
 In particular the composition of two reflections is a rotation.
@@ -337,8 +335,7 @@ The isometries that do not fix the origin complete the picture. An **isometry of
 
 **Theorem.** Every isometry of $\mathbb{C}$ has exactly one of the two forms
 
-$$
-T(Q) = uQ + c \quad \text{or} \quad T(Q) = u\bar Q + c, \qquad u \in \mathrm{U}(1), \ c \in \mathbb{C},
+$$ \boxed{\;T(Q) = uQ + c \quad \text{or} \quad T(Q) = u\bar Q + c, \qquad u \in \mathrm{U}(1), \ c \in \mathbb{C}\;},
 $$
 
 and the isometries form the semidirect product

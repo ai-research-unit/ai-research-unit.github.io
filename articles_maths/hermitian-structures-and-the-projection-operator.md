@@ -40,7 +40,7 @@ an inclusion-reversing involution with $W^{\perp\perp} = W$ and $\dim W + \dim W
 **Theorem.** The adjoint $P^{\dagger}$ of a projection is again a projection,
 
 $$
-(P^{\dagger})^2 = P^{\dagger} ,
+\boxed{\;(P^{\dagger})^2 = P^{\dagger}\;} ,
 $$
 
 and its image and kernel are the orthogonal complements
@@ -80,7 +80,7 @@ an orthogonal decomposition; the orthogonal projection is the minimising element
 **Definition.** The orthogonal projections onto the subspaces are ordered by the inclusion of the images,
 
 $$
-P_W \leq P_W' \quad \Longleftrightarrow \quad W \subseteq W' ,
+\boxed{\;P_W \leq P_W' \quad \Longleftrightarrow \quad W \subseteq W'\;} ,
 $$
 
 and the meet and the join of two orthogonal projections are the orthogonal projections onto $W \cap W'$ and $W + W'$ when the two subspaces have the appropriate position.
@@ -94,7 +94,7 @@ and the meet and the join of two orthogonal projections are the orthogonal proje
 **Theorem (the spectral decomposition).** Let $T$ be a self-adjoint operator on a Hermitian space over a field in which the characteristic is not two, and suppose that $T$ is diagonalisable with the distinct eigenvalues $t_1, \dots, t_k$ in the fixed field; then $T$ decomposes as
 
 $$
-T = t_1 P_1 + \cdots + t_k P_k ,
+\boxed{\;T = t_1 P_1 + \cdots + t_k P_k\;} ,
 $$
 
 where $P_i$ is the orthogonal projection onto the eigenspace of $t_i$, the projections are pairwise orthogonal, $P_i P_j = 0$ for $i \neq j$, and they sum to the identity, $P_1 + \cdots + P_k = \mathrm{id}$; conversely every sum of this form with the $t_i$ in the fixed field is self-adjoint.

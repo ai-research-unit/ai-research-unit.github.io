@@ -14,7 +14,7 @@ Throughout, $G$ is a Hausdorff topological group with identity $e$, $\iota$ is t
 **Definition.** The **fixed-point set** of the continuous involution $\sigma$ is
 
 $$
-G^\sigma = \{g \in G : \sigma(g) = g\} .
+\boxed{\;G^\sigma = \{g \in G : \sigma(g) = g\}\;} .
 $$
 
 **Theorem (the elementary properties).** The set $G^\sigma$ contains $e$, it is closed under inversion, it is closed in $G$, and it is inverted elementwise by the associated automorphism: $\alpha(g) = g^{-1}$ for every $g \in G^\sigma$.
@@ -58,7 +58,7 @@ The subgroup that a continuous involution always carries is not the fixed set bu
 **Proposition (the two faces differ in general).** The sets $G^\sigma$ and $H = I(\sigma)$ need not be comparable: for $S_3$ with the involution $\sigma = \iota\,c_{(1\,2)}$ one has $\lvert G^\sigma\rvert = 4$ and $\lvert H\rvert = 2$, so neither contains the other. The elementwise statement that always holds is the factorisation of the symmetric map
 
 $$
-\varphi : G \longrightarrow G^\sigma, \qquad \varphi(g) = g^{-1}\alpha(g) = g^{-1}\sigma(g)^{-1},
+\boxed{\;\varphi : G \longrightarrow G^\sigma, \qquad \varphi(g) = g^{-1}\alpha(g) = g^{-1}\sigma(g)^{-1}\;},
 $$
 
 which lands in the fixed-point set, is constant on the left cosets of $H$, and induces a continuous bijection of $G/H$ onto its image, the set of **twisted squares**; this is the coset theorem of *Involutive Topological Groups*, and the image need not be all of $G^\sigma$, as the same source records.
@@ -84,7 +84,7 @@ between the space of left cosets and the space of right cosets of $H$.
 **Theorem (the orbit space of the fixed subgroup).** The fixed subgroup $H$ acts on $G$ on both sides, and the square of the involution factors through the two-sided quotient: the map
 
 $$
-G \longrightarrow H\backslash G/H, \qquad g \mapsto HgH ,
+\boxed{\;G \longrightarrow H\backslash G/H, \qquad g \mapsto HgH\;} ,
 $$
 
 identifies $g$ and $\sigma(g)$ up to the action of $H$ in the sense that $\sigma(HgH) = H\sigma(g)H$, so $\sigma$ induces an involution of the double coset space $H\backslash G/H$; when $G$ is compact, this double coset space is compact Hausdorff and the induced involution has a closed fixed set.

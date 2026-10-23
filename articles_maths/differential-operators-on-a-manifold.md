@@ -79,7 +79,7 @@ $$
 **Proposition (symbols of a composition and of an adjoint).** Let $P \in D^k(E,F)$ and $Q \in D^l(F,G)$. Then
 
 $$
-\sigma_{k+l}(QP) = \sigma_l(Q)\,\sigma_k(P),
+\boxed{\;\sigma_{k+l}(QP) = \sigma_l(Q)\,\sigma_k(P)\;},
 $$
 
 the product being the composition of the two homomorphisms of the fibres. If $E$ and $F$ carry metrics and $P^*$ is the formal adjoint of $P$ with respect to them, then $P^*$ has order $k$ and
@@ -133,7 +133,7 @@ For $k=1$ the sequence reads $0 \to T^*M \otimes E \to J^1E \to E \to 0$, and th
 **Theorem.** Let $P : \Gamma(E) \to \Gamma(F)$ be an $\mathbb{R}$-linear map. Then $P$ is a differential operator of order at most $k$ if and only if there is a bundle homomorphism $\Phi : J^kE \to F$ such that
 
 $$
-P(s)(x) = \Phi\bigl(j_k s(x)\bigr) \qquad \text{for all } s \in \Gamma(E),\ x \in M .
+\boxed{\;P(s)(x) = \Phi\bigl(j_k s(x)\bigr) \qquad \text{for all } s \in \Gamma(E),\ x \in M\;} .
 $$
 
 The homomorphism $\Phi$ is unique, and the assignment $P \leftrightarrow \Phi$ is an isomorphism of $C^\infty(M)$-modules
@@ -147,7 +147,7 @@ $$
 **Corollary.** The principal symbol of $P$ is the composition of the bundle surjection $S^kT^*M \otimes E \to J^kE$ of the jet exact sequence with $\Phi$:
 
 $$
-\sigma_k(P) : S^kT^*M \otimes E \longrightarrow J^kE \xrightarrow{\ \Phi\ } F .
+\boxed{\;\sigma_k(P) : S^kT^*M \otimes E \longrightarrow J^kE \xrightarrow{\ \Phi\ } F\;} .
 $$
 
 In particular the symbol is the top-order part of the bundle map, it is tensorial, and it vanishes exactly when $P$ has order at most $k-1$.

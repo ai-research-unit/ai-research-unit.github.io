@@ -44,7 +44,7 @@ $$
 and then the **sign rule** holds on homogeneous elements,
 
 $$
-|a\cdot m| = |a| + |m| .
+\boxed{\;|a\cdot m| = |a| + |m|\;} .
 $$
 
 **Proof.** The inclusion $A_{\bar i}M^{\bar j}\subseteq M^{\overline{i+j}}$ says exactly that $L_a$ sends $M^{\bar j}$ into $M^{\overline{i+j}}$, which by the previous proposition is the statement that $L_a$ has parity $|a|$; the sign rule is the degree formula of that proposition.
@@ -66,7 +66,7 @@ on homogeneous $a$ and $m$, extended linearly; equivalently $a\triangleright m =
 **Proposition (it is a projective action with the Koszul cocycle).** For homogeneous $a, b$ and homogeneous $m$,
 
 $$
-a\triangleright(b\triangleright m) = (-1)^{|a||b|}\,(ab)\triangleright m .
+\boxed{\;a\triangleright(b\triangleright m) = (-1)^{|a||b|}\,(ab)\triangleright m\;} .
 $$
 
 Hence the signed action is a **projective action** with cocycle the **Koszul sign** $c(a,b) = (-1)^{|a||b|}$; it is an honest action exactly when the grading is trivial, that is, when $A = A_{\bar 0}$.
@@ -94,7 +94,7 @@ $$
 **Proposition.** The graded action of $A$ on $M$ is a homomorphism of graded rings $A \to \operatorname{End}_k(M)$ with the graded commutator as bracket; for homogeneous $a, b \in A$,
 
 $$
-[L_a, L_b]_{\mathrm g} = L_{ab - (-1)^{|a||b|}ba} .
+\boxed{\;[L_a, L_b]_{\mathrm g} = L_{ab - (-1)^{|a||b|}ba}\;} .
 $$
 
 In particular the action is a **Lie superalgebra representation** exactly when $A$ is graded-commutative, $ab = (-1)^{|a||b|}ba$ for homogeneous $a, b$; and a graded-commutative ring acts on every graded module by a representation of its Lie superalgebra.

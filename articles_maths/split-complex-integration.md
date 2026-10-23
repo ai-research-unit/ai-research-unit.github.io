@@ -106,7 +106,7 @@ The reason the split complex integral is tractable is that $Q \mapsto (Q_+, Q_-)
 **Theorem.** Let $f : \Omega \to \mathbb{D}$ be written in the idempotent basis as $f = f_+ \Pi_+ + f_- \Pi_-$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$. Then
 
 $$
-\int_\gamma f(Q)\,dQ = \Pi_+ \int_{\gamma_+} f_+(Q_+)\,dQ_+ + \Pi_- \int_{\gamma_-} f_-(Q_-)\,dQ_-,
+\boxed{\; \int_\gamma f(Q)\,dQ = \Pi_+ \int_{\gamma_+} f_+(Q_+)\,dQ_+ + \Pi_- \int_{\gamma_-} f_-(Q_-)\,dQ_- \;},
 $$
 
 where $\gamma_\pm(t) = q(\gamma(t)) \pm q'(\gamma(t))$ are the projected paths and each integral on the right is an ordinary real line integral.
@@ -212,7 +212,7 @@ In the complex plane the same computation gives the same conclusion, closedness 
 **Theorem (primitive).** Let $f$ be split complex differentiable on a domain $\Omega$. Then $f\,dQ$ has a primitive on $\Omega$: there is a split complex differentiable $F$ on $\Omega$ with $F' = f$. The integral of $f$ depends only on the endpoints:
 
 $$
-\int_\gamma f(Q)\,dQ = F(\gamma(b)) - F(\gamma(a)).
+\boxed{\;\int_\gamma f(Q)\,dQ = F(\gamma(b)) - F(\gamma(a))\;}.
 $$
 
 **Proof.** On $\Omega$ the components satisfy $f_+ = f_+(Q_+)$ and $f_- = f_-(Q_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $\Omega$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ Q_+ \cdot \Pi_+ + F_- \circ Q_- \cdot \Pi_-$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula.
@@ -224,7 +224,7 @@ Two facts distinguish this from the complex case. First, the primitive exists on
 **Theorem (Cauchy–Goursat).** If $f$ is split complex differentiable on a domain $\Omega$ and $\gamma$ is a closed piecewise $C^1$ path in $\Omega$, then
 
 $$
-\oint_\gamma f(Q)\,dQ = 0.
+\boxed{\; \oint_\gamma f(Q)\,dQ = 0 \;}.
 $$
 
 **Proof.** By the primitive theorem the integral equals $F(\gamma(b)) - F(\gamma(a))$, and for a closed path $\gamma(b) = \gamma(a)$.
@@ -257,7 +257,7 @@ $$
 **Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}$: there is no constant $c \in \mathbb{D}$ such that
 
 $$
-f(Q_0) = c \oint_\gamma \frac{f(\zeta)}{\zeta - Q_0}\,d\zeta
+\boxed{\;f(Q_0) = c \oint_\gamma \frac{f(\zeta)}{\zeta - Q_0}\,d\zeta\;}
 $$
 
 holds for every split complex differentiable $f$, every $Q_0$ in the domain of $f$ and every closed piecewise $C^1$ path $\gamma$ in that domain. The constant of the classical formula, $1/(2\pi i)$, is not an element of $\mathbb{D}$ at all; but no constant whatever serves, because the kernel $(\zeta - Q_0)^{-1}$ is undefined on the null cone through $Q_0$, and every closed curve whose winding number about $Q_0$ is non-zero meets that cone.
@@ -273,7 +273,7 @@ The obstruction has an equivalent analytic form. In $\mathbb{C}$ the locally int
 **Theorem.** Let $D = \partial/\partial q - j\,\partial/\partial q'$ be the split Cauchy–Riemann operator. A fundamental solution of $D$ is
 
 $$
-E(Q) = H(Q_-)\,\delta(Q_+)\,\Pi_+ + H(Q_+)\,\delta(Q_-)\,\Pi_-,
+\boxed{\; E(Q) = H(Q_-)\,\delta(Q_+)\,\Pi_+ + H(Q_+)\,\delta(Q_-)\,\Pi_- \;},
 $$
 
 where $H$ is the Heaviside function, $\delta$ is the one-dimensional delta distribution, and a normalisation is fixed by $D E = \delta_0$ in the Lebesgue measure of the plane. The support of $E$ is the union of the two null rays

@@ -56,7 +56,7 @@ $$
 **Theorem (the failure of commutation is the ring commutator).** For all $a,b \in A$,
 
 $$
-[L_a,L_b] = L_{[a,b]} , \qquad [R_a,R_b] = R_{[b,a]} = -R_{[a,b]} , \qquad [L_a,R_b] = 0 ,
+\boxed{\;[L_a,L_b] = L_{[a,b]} , \qquad [R_a,R_b] = R_{[b,a]} = -R_{[a,b]} , \qquad [L_a,R_b] = 0\;} ,
 $$
 
 where $[L_a,L_b] = L_aL_b - L_bL_a$. Hence the left multiplications commute pairwise exactly when $A$ is commutative, and the same holds for the right multiplications; the cross family always commutes.
@@ -76,7 +76,7 @@ where $[L_a,L_b] = L_aL_b - L_bL_a$. Hence the left multiplications commute pair
 **Theorem (boundedness, norm and closed range).** For every $a$ the operators $L_a$ and $R_a$ are bounded with
 
 $$
-\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_a\rVert \leq \lVert a\rVert ,
+\boxed{\;\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_a\rVert \leq \lVert a\rVert\;} ,
 $$
 
 and on a unital algebra both are equalities, so that $\lambda$ and $\rho$ are isometric unital homomorphisms. Moreover $\lambda(A)$ is a closed subalgebra of $B(A)$ when $\lambda$ is isometric, and likewise $\rho(A)$, and both are complete.
@@ -144,7 +144,7 @@ $$
 **Corollary (the double centraliser theorem).** Let $A$ be a unital Banach algebra and let $\mathcal{M}(A)$ be the multiplication algebra. Then the centraliser of $\mathcal{M}(A)$ in $B(A)$ is the set of central multiplications, and $A$ is recovered from either family as its centraliser:
 
 $$
-\mathcal{M}(A)' = \lambda(Z(A)) = \rho(Z(A)) , \qquad \lambda(A)'' = \lambda(A) , \qquad \rho(A)'' = \rho(A) .
+\boxed{\;\mathcal{M}(A)' = \lambda(Z(A)) = \rho(Z(A)) , \qquad \lambda(A)'' = \lambda(A) , \qquad \rho(A)'' = \rho(A)\;} .
 $$
 
 **Proof.** An operator commuting with $\mathcal{M}(A)$ commutes in particular with $\lambda(A)$ and with $\rho(A)$, so it is a central multiplication by the theorem; conversely a central multiplication commutes with $\mathcal{M}(A)$, since $L_c$ and $R_c$ commute with every $L_aR_b$. The bicommutant identities are the theorem applied twice: $\lambda(A)'' = \rho(A)' = \lambda(A)$.

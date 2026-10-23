@@ -69,7 +69,7 @@ so the adjoint of a composite is the composite of the adjoints in the reverse or
 **Theorem.** The assignment $T \mapsto T^{*}$ is an involution of the $k$-algebra $E$:
 
 $$
-(T+S)^{*}=T^{*}+S^{*}, \qquad (\lambda T)^{*}=\lambda T^{*}, \qquad (TS)^{*}=S^{*}T^{*}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id} .
+\boxed{\;(T+S)^{*}=T^{*}+S^{*}, \qquad (\lambda T)^{*}=\lambda T^{*}, \qquad (TS)^{*}=S^{*}T^{*}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id}\;} .
 $$
 
 It is a $k$-linear anti-automorphism of $E$ of order two, and $(E,*)$ is an involutive algebra in the sense of *Involutive Algebras*.
@@ -105,7 +105,7 @@ $$
 **Theorem.** $E^{+}$ and $E^{-}$ are $k$-linear subspaces of $E$ with
 
 $$
-E=E^{+}\oplus E^{-}, \qquad T=\tfrac12\bigl(T+T^{*}\bigr)+\tfrac12\bigl(T-T^{*}\bigr),
+\boxed{\;E=E^{+}\oplus E^{-}, \qquad T=\tfrac12\bigl(T+T^{*}\bigr)+\tfrac12\bigl(T-T^{*}\bigr)\;},
 $$
 
 and the involution acts as the identity on $E^{+}$ and as minus the identity on $E^{-}$. With the symmetrised product $S\bullet T=\tfrac12(ST+TS)$ the space $E^{+}$ is a Jordan algebra, with the commutator $[S,T]=ST-TS$ the space $E^{-}$ is a Lie algebra, and the two are tied by the inclusions $E^{+}\bullet E^{-}\subseteq E^{-}$ and $[E^{+},E^{-}]\subseteq E^{+}$, so that $(E^{+},E^{-})$ is the Jordan–Lie pair of the involution.
@@ -131,7 +131,7 @@ $$
 **Theorem (the twisted pairing).** The twisted pairing is symmetric and nondegenerate, and the map
 
 $$
-c_{\sigma} : E \to E, \qquad c_{\sigma}(T)=\sigma\,T\,\sigma,
+\boxed{\;c_{\sigma} : E \to E, \qquad c_{\sigma}(T)=\sigma\,T\,\sigma\;},
 $$
 
 is an involutive algebra automorphism of $E$ of order two.

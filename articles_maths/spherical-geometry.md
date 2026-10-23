@@ -36,7 +36,7 @@ The pair $(S^n_R, g_R)$ is a compact Riemannian manifold of dimension $n$; for $
 **Theorem.** The round sphere has constant sectional curvature $K = 1/R^2$; its geodesics are the **great circles**, the intersections $S^n_R \cap P$ with two-dimensional linear subspaces $P$ through the origin, parametrised proportionally to arclength; and its distance is
 
 $$
-d_R(x, y) = R\arccos\!\left(\frac{\langle x, y\rangle}{R^2}\right) = R\,\theta(x, y),
+\boxed{\;d_R(x, y) = R\arccos\!\left(\frac{\langle x, y\rangle}{R^2}\right) = R\,\theta(x, y)\;},
 $$
 
 where $\theta(x, y) \in [0, \pi]$ is the **central angle** between the two position vectors.
@@ -74,7 +74,7 @@ The volume formula uses the Gamma function, which is a closed form of an integra
 **Theorem (angle sum and Girard's formula).** For a spherical triangle on the sphere of radius $R$ with angles $A, B, C$ and area $\Delta$,
 
 $$
-A + B + C = \pi + \frac{\Delta}{R^2}, \qquad \text{so} \qquad \Delta = R^2(A + B + C - \pi).
+\boxed{\;A + B + C = \pi + \frac{\Delta}{R^2}, \qquad \text{so} \qquad \Delta = R^2(A + B + C - \pi)\;}.
 $$
 
 **Proof sketch.** The lune bounded by the two great circles through a vertex of angle $A$ has area $2AR^2$, and the three such lunes, together with their antipodal lunes, have total area $4R^2(A+B+C)$. These six lunes cover the sphere with multiplicity one at every point except on the triangle and on its antipodal triangle, where the multiplicity is three; counting the eight triangles cut out by the three great circles therefore gives $4R^2(A+B+C) = 4\pi R^2 + 4\Delta$, which rearranges to the statement.
@@ -86,7 +86,7 @@ $$
 **Theorem (spherical law of cosines).** For a spherical triangle on the unit sphere with sides $a, b, c$ and opposite angles $A, B, C$,
 
 $$
-\cos c = \cos a\cos b + \sin a\sin b\cos C,
+\boxed{\;\cos c = \cos a\cos b + \sin a\sin b\cos C\;},
 $$
 
 and cyclically in the other five pairings.

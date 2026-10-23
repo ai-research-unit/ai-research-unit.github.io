@@ -21,7 +21,7 @@ the adjoint being taken with respect to the coefficient form $\langle f,g\rangle
 
 **Theorem.** For all $a,b$,
 $$
-S^{\alpha\dagger}_{a,b}=L_{\alpha(a*b)}^*=\alpha\,\Theta_{a*b}=\Theta_{\alpha(a*b)}\,\alpha ,
+\boxed{\;S^{\alpha\dagger}_{a,b}=L_{\alpha(a*b)}^*=\alpha\,\Theta_{a*b}=\Theta_{\alpha(a*b)}\,\alpha\;} ,
 $$
 and explicitly
 $$
@@ -47,11 +47,11 @@ and the two products with the signed sandwich are $S^{\alpha\dagger}S^\alpha=\Th
 
 **Corollary (self-adjointness and unitarity).** The signed sandwich is self-adjoint exactly when $c=a*b$ is a real scalar multiple of the identity,
 $$
-S^\alpha_{a,b}=S^{\alpha\dagger}_{a,b}\iff \Theta_c=L_c\iff c=\gamma\varepsilon,\ \gamma\in\mathbb{R},
+\boxed{\;S^\alpha_{a,b}=S^{\alpha\dagger}_{a,b}\iff \Theta_c=L_c\iff c=\gamma\varepsilon,\ \gamma\in\mathbb{R}\;},
 $$
 and it is unitary exactly when
 $$
-S^\alpha_{a,b}\ \text{unitary}\iff \Theta_{\alpha(c)}L_c=L_{\alpha(c)}\Theta_c=\mathrm{id}\iff c=\gamma\varepsilon,\ |\gamma|=1 .
+\boxed{\;S^\alpha_{a,b}\ \text{unitary}\iff \Theta_{\alpha(c)}L_c=L_{\alpha(c)}\Theta_c=\mathrm{id}\iff c=\gamma\varepsilon,\ |\gamma|=1\;} .
 $$
 Thus the balanced signed adjoint sandwich with $c=\varepsilon$ is the grade involution $\alpha$, self-adjoint and unitary.
 

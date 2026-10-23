@@ -14,7 +14,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $X$ and $Y$ are normed
 **Proposition (the operator norm is an algebra norm).** On $B(X, Y)$ the operator norm is a norm, and composition is submultiplicative,
 
 $$
-\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert
+\boxed{\;\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert\;}
 $$
 
 for $T \in B(X, Y)$ and $S \in B(Y, Z)$. Consequently $B(X)$ is a normed algebra over $\mathbb{K}$ with unit $\mathrm{id}$ of norm one, and $\lVert T^{n}\rVert \leq \lVert T\rVert^{n}$ for all $n \geq 1$.
@@ -34,7 +34,7 @@ for $T \in B(X, Y)$ and $S \in B(Y, Z)$. Consequently $B(X)$ is a normed algebra
 **Theorem (the Neumann series and the invertibles).** Let $X$ be a Banach space and let $T \in B(X)$ with $\lVert T\rVert < 1$. Then $\mathrm{id} - T$ is invertible, with
 
 $$
-(\mathrm{id} - T)^{-1} = \sum_{n \geq 0} T^{n}, \qquad \lVert(\mathrm{id} - T)^{-1}\rVert \leq \frac{1}{1 - \lVert T\rVert} .
+\boxed{\;(\mathrm{id} - T)^{-1} = \sum_{n \geq 0} T^{n}, \qquad \lVert(\mathrm{id} - T)^{-1}\rVert \leq \frac{1}{1 - \lVert T\rVert}\;} .
 $$
 
 Consequently the group $B(X)^{\times}$ of invertible operators is open in $B(X)$, and inversion is continuous.
@@ -54,7 +54,7 @@ Consequently the group $B(X)^{\times}$ of invertible operators is open in $B(X)$
 **Proposition (the operator norm and the dual norm).** For $T \in B(X, Y)$ the transpose satisfies $\lVert T'\rVert = \lVert T\rVert$; the operator norm on $B(X, \mathbb{K}) = X^{*}$ is therefore the dual norm, and the operator norm on $B(X, Y)$ is recovered from the dual as
 
 $$
-\lVert T\rVert = \sup\{\lvert y^{*}(Tx)\rvert : \lVert x\rVert \leq 1, \ \lVert y^{*}\rVert \leq 1\} .
+\boxed{\;\lVert T\rVert = \sup\{\lvert y^{*}(Tx)\rvert : \lVert x\rVert \leq 1, \ \lVert y^{*}\rVert \leq 1\}\;} .
 $$
 
 **Proof.** The equality $\lVert T'\rVert = \lVert T\rVert$ is *The Dual Operator*; the displayed characterisation is the two-sided supremum over the unit balls of $X$ and $Y^{*}$, which equals $\sup_{\lVert x\rVert\leq1}\lVert Tx\rVert$ by the Hahn–Banach norm-attaining functional.

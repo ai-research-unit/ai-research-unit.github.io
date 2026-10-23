@@ -12,7 +12,7 @@ This article computes the adjoint of the left and the right multiplications with
 **Theorem.** With respect to the pairing $\langle x,y\rangle = \tau(xy)$,
 
 $$
-\langle L_a x, y\rangle = \langle x, R_a y\rangle, \qquad \langle R_b x, y\rangle = \langle x, L_b y\rangle ,
+\boxed{\;\langle L_a x, y\rangle = \langle x, R_a y\rangle, \qquad \langle R_b x, y\rangle = \langle x, L_b y\rangle\;} ,
 $$
 
 so $L_a^{*} = R_a$ and $R_b^{*} = L_b$: the adjoint of the left multiplication is the right multiplication by the same element. The adjoint involution of $\operatorname{End}(A)$ switches the two sides of the regular representation.
@@ -34,7 +34,7 @@ $$
 and the adjoint of $L_a$ is expressed on the left by
 
 $$
-L_a^{*} = R_a = \sigma\,L_{\sigma(a)}\,\sigma .
+\boxed{\;L_a^{*} = R_a = \sigma\,L_{\sigma(a)}\,\sigma\;} .
 $$
 
 With respect to the **$\sigma$-twisted pairing** $\{x,y\} = \tau(x\sigma(y))$ the adjoint is instead $L_a^{*_\sigma} = L_{\sigma(a)}$ and $R_b^{*_\sigma} = R_{\sigma(b)}$.

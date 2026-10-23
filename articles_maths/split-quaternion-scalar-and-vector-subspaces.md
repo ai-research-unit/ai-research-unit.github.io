@@ -36,8 +36,8 @@ The scalar and vector subspaces are exactly the eigenspaces of the conjugation.
 $$
 \boxed{\;
 \mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}, \qquad V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** Since $\bar{1} = 1$ and $\vec e_\mu^{\natural} = -\vec e_\mu$, the conjugation acts as $+1$ on $S$ and as $-1$ on $V$; conversely, writing $\tilde q = q_t + \vec v$, the condition $\tilde{q}^{\natural} = \tilde q$ reads $-2\vec v = 0$, i.e. $\vec v = 0$, and the condition $\tilde{q}^{\natural} = -\tilde q$ reads $2q_t = 0$, i.e. $q_t = 0$.
 
@@ -58,8 +58,8 @@ The centre is therefore a field, namely $\mathbb{R}$, and $S$ is the only commut
 $$
 \boxed{\;
 \vec q\vec q_1 = -B(\vec q, \vec q_1) \cdot 1 + \tfrac{1}{2}[\vec q, \vec q_1]
-\;}
-$$,
+\;},
+$$
 
 with scalar part $-B(\vec q,\vec q_1)$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; for instance $\vec e_x \vec e_y = \vec e_z \in V$ but $\vec e_y \vec e_x = -\vec e_z$, while $\vec e_x^2 = -e_t \in S$. So $V$ is closed neither under the product nor under taking squares, and it is not a subalgebra of $\mathbb{H}_{\mathrm{s}}$.
 
@@ -94,8 +94,8 @@ a positive-definite form of rank $1$; it vanishes only at $q_t = 0$, so every no
 $$
 \boxed{\;
 \langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2
-\;}
-$$,
+\;},
+$$
 
 a form of **signature $(2,1)$** in the basis $\vec e_x, \vec e_y, \vec e_z$: one direction of square $+1$ and two of square $-1$. It is the three-dimensional **Minkowski form**, and it is indefinite and non-degenerate. Its null cone in $V$ is
 

@@ -38,9 +38,9 @@ $$
 
 and then multiply by the four-vector of $\tilde{Q}^{*}$,
 
-$$ \boxed{\;\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^0 = \overline{Q^0}\,S^0 + \sum_{k=1}^{3}\overline{Q^k}\,S^k\;}, $$
+$$ \mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^0 = \overline{Q^0}\,S^0 + \sum_{k=1}^{3}\overline{Q^k}\,S^k, $$
 
-$$ \boxed{\;\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^i = -\,S^0\,\overline{Q^i} + \overline{Q^0}\,S^i - (\vec S\times(\vec Q)^{\natural})^i\;}. $$
+$$ \mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)^i = -\,S^0\,\overline{Q^i} + \overline{Q^0}\,S^i - (\vec S\times(\vec Q)^{\natural})^i. $$
 
 **Proof.** The general product formula applied to the pair $(\tilde{Q}, \tilde{Q}_2)$ gives $S^\mu$. Applying it again to the pair $(S, \tilde{Q}^{*})$ gives $H^0 = S^0(\tilde{Q}^{*})^0 - \sum_k S^k(\tilde{Q}^{*})^k$ and $H^i = S^0(\tilde{Q}^{*})^i + (\tilde{Q}^{*})^0S^i + \sum_{jk}\epsilon^{ijk}S^j(\tilde{Q}^{*})^k$; substituting $(\tilde{Q}^{*})^0 = \overline{Q^0}$ and $(\tilde{Q}^{*})^k = -\overline{Q^k}$ and collecting gives the two displays.
 

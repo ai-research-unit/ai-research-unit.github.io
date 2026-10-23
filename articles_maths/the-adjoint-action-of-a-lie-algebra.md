@@ -24,7 +24,7 @@ $$
 **Theorem.** The Jacobi identity is equivalent to the statement that every $\operatorname{ad}_x$ is a derivation of the bracket:
 
 $$
-\operatorname{ad}_x([y,z])=[\operatorname{ad}_x y,z]+[y,\operatorname{ad}_x z]\qquad\text{for all }x,y,z .
+\boxed{\;\operatorname{ad}_x([y,z])=[\operatorname{ad}_x y,z]+[y,\operatorname{ad}_x z]\qquad\text{for all }x,y,z\;} .
 $$
 
 **Proof.** The displayed identity reads $[x,[y,z]]=[[x,y],z]+[y,[x,z]]$, which is the Jacobi identity rearranged.
@@ -32,7 +32,7 @@ $$
 **Theorem.** The Jacobi identity is equivalently the statement that the adjoint map is a homomorphism of Lie algebras:
 
 $$
-\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]\qquad\text{for all }x,y .
+\boxed{\;\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]\qquad\text{for all }x,y\;} .
 $$
 
 **Proof.** Both sides are operators on $\mathrm{G}$; evaluated on $z$, the left is $[[x,y],z]$ and the right is $[x,[y,z]]-[y,[x,z]]$, whose equality is again the Jacobi identity.
@@ -44,7 +44,7 @@ $$
 **Theorem.** The kernel of the adjoint map is the centre:
 
 $$
-\ker\operatorname{ad}=\{x:\operatorname{ad}_x=0\}=\{x:[x,y]=0\text{ for all }y\}=\mathrm{Z}(\mathrm{G}).
+\boxed{\;\ker\operatorname{ad}=\{x:\operatorname{ad}_x=0\}=\{x:[x,y]=0\text{ for all }y\}=\mathrm{Z}(\mathrm{G})\;}.
 $$
 
 **Proof.** $\operatorname{ad}_x=0$ means $[x,y]=0$ for every $y$, which is the definition of the centre.

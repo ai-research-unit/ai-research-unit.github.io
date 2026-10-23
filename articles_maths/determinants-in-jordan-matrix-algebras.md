@@ -139,7 +139,7 @@ The classical Laplace expansion is not available, because the entries of a biqua
 3. if $x\in H_{n+1}(\mathbb{B})$ and $x_{11}\neq 0$, then
 
 $$
-\Delta_{n+1}(x) = x_{11}\cdot\Delta_n\bigl(x_{ij} - x_{11}^{-1}x_{i1}x_{1j}\bigr)_{2\leq i,j\leq n+1}.
+\boxed{\;\Delta_{n+1}(x) = x_{11}\cdot\Delta_n\bigl(x_{ij} - x_{11}^{-1}x_{i1}x_{1j}\bigr)_{2\leq i,j\leq n+1}\;}.
 $$
 
 Moreover:
@@ -235,7 +235,7 @@ and this is invariant under the Jordan \*-automorphisms of $C_6$, because such a
 **Product theorem.** For unitary $\tilde U,e\in C_6$,
 
 $$
-\Delta(\tilde U) = \Delta_e(\tilde U)\cdot\Delta(e).
+\boxed{\;\Delta(\tilde U) = \Delta_e(\tilde U)\cdot\Delta(e)\;}.
 $$
 
 The proof turns on the reduction theorem below and on the corresponding rule for $H_n(\mathbb{B})$. Two corollaries are used later. If $\tilde U$ is self-adjoint in the JB\*-algebra with unit $e$, then $\tilde U = \tilde\Pi_1-\tilde\Pi_2$ with $\tilde\Pi_1,\tilde\Pi_2$ orthogonal projections below $e$ and $\tilde\Pi_1+\tilde\Pi_2 = e$, so its coefficients relative to $e$ are $\pm1$ and
@@ -327,7 +327,7 @@ The first item is the range tripotent: an element $x$ of a finite-rank JB\*-trip
 Finally, for a triple automorphism $T$ of $C_6$ the analogue of the unitary case holds,
 
 $$
-\Delta\bigl(T(x)\bigr) = \Delta(x)\cdot\Delta\bigl(T(1)\bigr), \qquad x\in C_6 .
+\boxed{\;\Delta\bigl(T(x)\bigr) = \Delta(x)\cdot\Delta\bigl(T(1)\bigr), \qquad x\in C_6\;} .
 $$
 
 ## Summary

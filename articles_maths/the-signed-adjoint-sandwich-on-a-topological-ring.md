@@ -20,7 +20,7 @@ and the adjoint $T^\dagger$ is defined by $\{Tx,y\} = \{x,T^\dagger y\}$.
 **Theorem (the explicit form of the adjoint).** With respect to the form of the category,
 
 $$
-\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)} , \qquad \delta = \sigma\alpha ,
+\boxed{\;\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \Sigma^\alpha_{\delta(a),\delta(b)} , \qquad \delta = \sigma\alpha\;} ,
 $$
 
 so the adjoint of a signed sandwich is the signed sandwich of the two $\delta$-images, with the order of the parameters **not** reversed, and the adjoint operation is an involution on the class of signed sandwiches.
@@ -46,7 +46,7 @@ $$
 **Theorem (the exact condition).** The signed sandwich is **unitary** for the form of the category,
 
 $$
-\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a,b}\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \mathrm{id} ,
+\boxed{\;\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a,b}\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \mathrm{id}\;} ,
 $$
 
 exactly when the two products are central and their products with the complements are the unit:
@@ -68,7 +68,7 @@ $$
 **Theorem (the equality of two sandwiches).** For units $a,b,c,d$, two signed sandwiches agree as operators,
 
 $$
-\Sigma^\alpha_{a,b} = \Sigma^\alpha_{c,d} \iff (c, d) = (\lambda a, \lambda^{-1}b) \text{ for some } \lambda\in Z(R)^\times .
+\boxed{\;\Sigma^\alpha_{a,b} = \Sigma^\alpha_{c,d} \iff (c, d) = (\lambda a, \lambda^{-1}b) \text{ for some } \lambda\in Z(R)^\times\;} .
 $$
 
 Hence the parametrisation has kernel the central units embedded as $z\mapsto(z,z^{-1})$, and it is injective on the pairs modulo the action $(a,b)\mapsto(za,z^{-1}b)$ of $Z(R)^\times$; the neutral element of the signed family is $\Sigma^\alpha_{1,1} = \alpha$.

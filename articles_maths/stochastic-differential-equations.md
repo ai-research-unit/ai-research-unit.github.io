@@ -65,7 +65,7 @@ and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$;
 **Theorem (Itô's formula, one-dimensional).** Let $f\in C^{1,2}([0,\infty)\times\mathbb{R})$ and let $X_t = X_0+\int_0^tb_s\,ds+\int_0^t\sigma_s\,dB_s$ with $b,\sigma$ in the appropriate integrability classes. Then almost surely, for all $t$,
 
 $$
-f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f(s,X_s)+b_s\partial/\partial x\,f(s,X_s)+\tfrac12\sigma_s^2\partial/\partial xx\,f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial/\partial x\,f(s,X_s)\,dB_s .
+\boxed{\;f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f(s,X_s)+b_s\partial/\partial x\,f(s,X_s)+\tfrac12\sigma_s^2\partial/\partial xx\,f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial/\partial x\,f(s,X_s)\,dB_s\;} .
 $$
 
 *Proof.* Quoted as standard. The proof is a Taylor expansion along a partition: the first-order terms converge to the drift and the stochastic integral, and the second-order term in $x$ leaves the sum $\sum(\Delta X_i)^2$, which converges to the quadratic variation $\int\sigma_s^2ds$ rather than to zero. The third- and higher-order terms are of higher order by the finite quadratic variation and the continuity of the paths.
@@ -165,7 +165,7 @@ the Ornstein–Uhlenbeck process; if $X_0$ is Gaussian so is $X_t$, with mean $\
 **Theorem (Girsanov).** Let $B$ be a Brownian motion on $(\Omega,\mathcal{F},(\mathcal{F}_t),\mathbb{P})$ and let $\theta$ be an adapted process satisfying Novikov's condition $\mathbb{E}\exp\bigl(\frac12\int_0^T\theta_s^2ds\bigr)<\infty$. Then
 
 $$
-\frac{d\mathbb{Q}}{d\mathbb{P}}\Bigr|_{\mathcal{F}_t} = \exp\left(-\int_0^t\theta_s\,dB_s-\frac12\int_0^t\theta_s^2\,ds\right)
+\boxed{\;\frac{d\mathbb{Q}}{d\mathbb{P}}\Bigr|_{\mathcal{F}_t} = \exp\left(-\int_0^t\theta_s\,dB_s-\frac12\int_0^t\theta_s^2\,ds\right)\;}
 $$
 
 defines a probability measure $\mathbb{Q}\sim\mathbb{P}$, and the process
@@ -201,7 +201,7 @@ $$
 in the classical sense when the coefficients and $f$ are smooth, and more generally in the weak sense. If $X$ has a transition density $p(t,x,y)$ with respect to Lebesgue measure, then $p$ solves the **forward Kolmogorov** or **Fokker–Planck equation**
 
 $$
-\partial/\partial t\,p = L^*p, \qquad L^*p = -\sum_i\partial/\partial x_i(b_ip)+\frac12\sum_{i,j}\partial/\partial x_ix_j\,\bigl((\sigma\sigma^{\mathrm{T}})_{ij}p\bigr),
+\boxed{\;\partial/\partial t\,p = L^*p, \qquad L^*p = -\sum_i\partial/\partial x_i(b_ip)+\frac12\sum_{i,j}\partial/\partial x_ix_j\,\bigl((\sigma\sigma^{\mathrm{T}})_{ij}p\bigr)\;},
 $$
 
 with the initial condition $p(0,\cdot,y)\to\delta_y$.

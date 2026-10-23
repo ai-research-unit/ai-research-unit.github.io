@@ -28,7 +28,7 @@ For a finite-dimensional $D$ this is equivalent to the absence of zero divisors,
 **Theorem (Frobenius, standard).** Every finite-dimensional associative division algebra over $\mathbb{R}$ is isomorphic to one of
 
 $$
-\mathbb{R}, \qquad \mathbb{C}, \qquad \mathbb{H}.
+\boxed{\;\mathbb{R}, \qquad \mathbb{C}, \qquad \mathbb{H}\;}.
 $$
 
 *Proof (outline).* Let $D$ be such an algebra, of dimension $n$ over $\mathbb{R}$, and let $Z$ be its centre.
@@ -124,7 +124,7 @@ The structure theory says that the simple algebras are the matrix algebras over 
 **Theorem (Skolem–Noether, standard).** Let $k$ be a field, let $A$ be a finite-dimensional central simple $k$-algebra, let $B$ be a finite-dimensional simple $k$-subalgebra of $A$, and let $f, g : B \to A$ be two unital $k$-algebra homomorphisms. Then there is a unit $a \in A^\times$ with
 
 $$
-g(b) = a\,f(b)\,a^{-1} \qquad \text{for all } b \in B .
+\boxed{\;g(b) = a\,f(b)\,a^{-1} \qquad \text{for all } b \in B\;} .
 $$
 
 *Proof (sketch).* Write $L = Z(B)$ for the centre of $B$. The tensor product $B \otimes_k A^{\mathrm{opp}}$ is a finite-dimensional simple ring: it is $B \otimes_L (L \otimes_k A^{\mathrm{opp}})$ by the base-change identity $B\otimes_k M \cong B \otimes_L (L \otimes_k M)$, the algebra $L \otimes_k A^{\mathrm{opp}}$ is central simple over $L$ because $A^{\mathrm{opp}}$ is central simple over $k$, and $B$ is central simple over $L$; a tensor product of central simple algebras being central simple, $B \otimes_k A^{\mathrm{opp}}$ is central simple over $L$, hence simple as a ring. Such an algebra has a unique simple module up to isomorphism, because Wedderburn–Artin writes it as $M_n(D)$ for a division algebra $D$ and the unique simple module of $M_n(D)$ is $D^n$. Now $A$ carries two $B \otimes_k A^{\mathrm{opp}}$-module structures,
@@ -144,7 +144,7 @@ whence $g(b)a = af(b)$, that is $g(b) = a f(b)a^{-1}$.
 **Corollary (every automorphism of a central simple algebra is inner).** For a finite-dimensional central simple $k$-algebra $A$ the map $A^\times \to \operatorname{Aut}_k(A)$, $a \mapsto (x \mapsto axa^{-1})$, is surjective with kernel $k^\times$, so
 
 $$
-\operatorname{Aut}_k(A) \cong A^\times/k^\times .
+\boxed{\;\operatorname{Aut}_k(A) \cong A^\times/k^\times\;} .
 $$
 
 For $A = M_n(k)$ this is the projective general linear group $\mathrm{PGL}_n(k) = \mathrm{GL}_n(k)/k^\times$; for $A = M_n(D)$ with $D$ a division algebra it is $\mathrm{PGL}_n(D) = \mathrm{GL}_n(D)/k^\times$, where $\mathrm{GL}_n(D) = M_n(D)^\times$, and in each case the derivations of $A$ are the inner ones, $\delta = \operatorname{ad}_h$, as in *Automorphisms and Derivations of Algebras*.

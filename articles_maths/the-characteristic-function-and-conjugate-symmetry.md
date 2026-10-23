@@ -42,7 +42,7 @@ and if $X$ has $n$ finite moments then $\phi_X$ is $n$ times differentiable and 
 
 **Theorem (conjugate symmetry).** For every real random variable $X$,
 $$
-\phi_X(-t)=\overline{\phi_X(t)}\qquad (t\in\mathbb R),
+\boxed{\;\phi_X(-t)=\overline{\phi_X(t)}\qquad (t\in\mathbb R)\;},
 $$
 that is, the characteristic function is **Hermitian** as a function on the line with the conjugation, and consequently its real part is even and its imaginary part is odd:
 $$
@@ -63,7 +63,7 @@ so the joint characteristic function is Hermitian under the simultaneous reflect
 
 **Theorem (positive definiteness).** The characteristic function is positive definite:
 $$
-\sum_{i,j=1}^k c_i\,\overline{c_j}\,\phi_X(t_i-t_j)\ge0
+\boxed{\;\sum_{i,j=1}^k c_i\,\overline{c_j}\,\phi_X(t_i-t_j)\ge0\;}
 $$
 for all real $t_1,\dots,t_k$ and complex $c_1,\dots,c_k$.
 
@@ -83,7 +83,7 @@ for all real $t_1,\dots,t_k$ and complex $c_1,\dots,c_k$.
 
 **Corollary (the law as a Fourier transform).** The law is recovered from the characteristic function by the inversion formula,
 $$
-\mu_X([a,b])=\lim_{T\to\infty}\frac{1}{2\pi}\int_{-T}^{T}\frac{\exp(-ita)-\exp(-itb)}{it}\,\phi_X(t)\,dt
+\boxed{\;\mu_X([a,b])=\lim_{T\to\infty}\frac{1}{2\pi}\int_{-T}^{T}\frac{\exp(-ita)-\exp(-itb)}{it}\,\phi_X(t)\,dt\;}
 $$
 at the continuity points $a<b$ of the distribution function, and the characteristic function determines the law.
 

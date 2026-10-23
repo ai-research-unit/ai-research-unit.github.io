@@ -28,7 +28,7 @@ $$
 
 **Theorem (the adjoint formula).** Let $\pi$ be stationary for $p$. Then
 $$
-P^{*}g(y)=\frac{1}{\pi(y)}\int_E \pi(dx)\,p(x,dy)\,g(x)=\int_Ep^{*}(y,dx)\,g(x)
+\boxed{\;P^{*}g(y)=\frac{1}{\pi(y)}\int_E \pi(dx)\,p(x,dy)\,g(x)=\int_Ep^{*}(y,dx)\,g(x)\;}
 $$
 $\pi$-almost everywhere, where $p^{*}(y,dx)=\pi(dx)p(x,dy)/\pi(y)$ is the reversed kernel. Equivalently the adjoint $P^*$ is the Markov operator of the reversed chain.
 
@@ -54,11 +54,11 @@ the interchange being guaranteed by the finiteness of the mass and the boundedne
 
 **Theorem.** The adjoint satisfies
 $$
-(PQ)^*=Q^*P^{*},\qquad (P^n)^*=(P^{*})^n,\qquad (\lambda P+\mu Q)^*=\bar\lambda P^{*}+\bar\mu Q^*,
+\boxed{\;(PQ)^*=Q^*P^{*},\qquad (P^n)^*=(P^{*})^n,\qquad (\lambda P+\mu Q)^*=\bar\lambda P^{*}+\bar\mu Q^*\;},
 $$
 and its spectrum is the complex conjugate of that of $P$,
 $$
-\operatorname{spec}(P^{*})=\overline{\operatorname{spec}(P)}=\{\bar\lambda:\lambda\in\operatorname{spec}(P)\}.
+\boxed{\;\operatorname{spec}(P^{*})=\overline{\operatorname{spec}(P)}=\{\bar\lambda:\lambda\in\operatorname{spec}(P)\}\;}.
 $$
 
 *Proof.* The first three identities are the general properties of the adjoint on a Hilbert space; the spectrum identity is the standard fact that the adjoint has the conjugated spectrum, since $P^{*}-\bar\lambda I=(P-\lambda I)^*$ is invertible if and only if $P-\lambda I$ is.

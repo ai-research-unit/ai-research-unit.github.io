@@ -114,7 +114,7 @@ Let $\alpha$ be algebraic over $F$. Its **minimal polynomial** $m_\alpha \in F[x
 
 **Theorem.** Let $m = m_\alpha$ have degree $n$. Then $m$ is unique, irreducible over $F$, and divides every polynomial in $F[x]$ vanishing at $\alpha$; moreover
 $$
-F(\alpha) \cong F[x]/(m), \qquad [F(\alpha):F] = n,
+\boxed{\;F(\alpha) \cong F[x]/(m), \qquad [F(\alpha):F] = n\;},
 $$
 and $\{1, \alpha, \ldots, \alpha^{n-1}\}$ is a basis of $F(\alpha)$ over $F$, so each element is uniquely $c_0 + c_1\alpha + \cdots + c_{n-1}\alpha^{n-1}$ with $c_i \in F$. If $m$ has $n$ distinct roots in a splitting field, they are the **conjugates** of $\alpha$.
 
@@ -126,7 +126,7 @@ Examples over $\mathbb{Q}$: $m_{\sqrt2} = x^2 - 2$; $m_{\sqrt[3]{2}} = x^3 - 2$,
 
 **Theorem (Tower Law).** For fields $F \subseteq E \subseteq K$,
 $$
-[K:F] = [K:E]\,[E:F],
+\boxed{\;[K:F] = [K:E]\,[E:F]\;},
 $$
 with an infinite factor making $[K:F]$ infinite.
 
@@ -236,7 +236,7 @@ The **cyclotomic polynomial** $\Phi_n(x) = \prod_{\gcd(k,n)=1}(x - \zeta_n^k)$ l
 
 **Theorem.** For $n \geq 1$, the field $\mathbb{Q}(\zeta_n)$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, and
 $$
-[\mathbb{Q}(\zeta_n):\mathbb{Q}] = \varphi(n), \qquad \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+\boxed{\;[\mathbb{Q}(\zeta_n):\mathbb{Q}] = \varphi(n), \qquad \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
 $$
 where $a$ corresponds to the automorphism $\zeta_n \mapsto \zeta_n^a$. For $n \geq 3$ the real subfield $\mathbb{Q}(\cos(2\pi/n))$ has degree $\varphi(n)/2$ over $\mathbb{Q}$.
 

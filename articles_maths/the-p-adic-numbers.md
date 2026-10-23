@@ -94,7 +94,7 @@ shows that the partial sums differ from $-1$ by $p^N$, so the series converges t
 **Theorem (Hensel).** Let $f \in \mathbb{Z}_p[X]$ and suppose that $a \in \mathbb{Z}_p$ satisfies
 
 $$
-f(a) \equiv 0 \pmod p, \qquad \frac{df}{dx}(a) \not\equiv 0 \pmod p .
+\boxed{\;f(a) \equiv 0 \pmod p, \qquad \frac{df}{dx}(a) \not\equiv 0 \pmod p\;} .
 $$
 
 Then there is a unique $b \in \mathbb{Z}_p$ with $f(b) = 0$ and $b \equiv a \pmod p$. More generally, if $\lvert f(a) \rvert_p < \lvert \frac{df}{dx}(a) \rvert_p^{\,2}$ then there is a unique $b$ with $f(b) = 0$ and $\lvert b - a \rvert_p < \lvert \frac{df}{dx}(a) \rvert_p$.
@@ -132,13 +132,13 @@ the coefficients $f^{(k)}(a_n)/k!$ lying in $\mathbb{Z}_p$ because the Taylor ex
 **Theorem.** The group $\mathbb{Q}_p^\times$ decomposes as a direct product
 
 $$
-\mathbb{Q}_p^\times \cong p^{\mathbb{Z}} \times \mathbb{Z}_p^\times ,
+\boxed{\;\mathbb{Q}_p^\times \cong p^{\mathbb{Z}} \times \mathbb{Z}_p^\times\;} ,
 $$
 
 and for $p$ odd the unit group decomposes as
 
 $$
-\mathbb{Z}_p^\times \cong \mu_{p-1} \times (1 + p\mathbb{Z}_p) ,
+\boxed{\;\mathbb{Z}_p^\times \cong \mu_{p-1} \times (1 + p\mathbb{Z}_p)\;} ,
 $$
 
 with $\mu_{p-1}$ the group of $(p-1)$-st roots of unity and $1 + p\mathbb{Z}_p$ a pro-$p$ group; for $p = 2$,

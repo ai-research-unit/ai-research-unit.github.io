@@ -58,7 +58,7 @@ with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfra
 **Proposition.** The map
 
 $$
-\theta : \mathrm{U}(n,m) \longrightarrow \mathrm{U}(n,m), \qquad \theta(g) = J\,g\,J^{-1} = J\,g\,J,
+\boxed{\;\theta : \mathrm{U}(n,m) \longrightarrow \mathrm{U}(n,m), \qquad \theta(g) = J\,g\,J^{-1} = J\,g\,J\;},
 $$
 
 is an involutive automorphism of $\mathrm{U}(n,m)$, equal to the inverse-conjugate-transpose, $\theta(g) = (g^{\dagger})^{-1}$; its fixed subgroup is $K = \mathrm{U}(n)\times \mathrm{U}(m)$, and its differential at the identity is $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{n}$.
@@ -80,7 +80,7 @@ with base point $o = eK$, and the **geodesic symmetry** at $o$ is $s_o(gK) = \th
 **Proposition.** The space $X$ is the manifold of $h$-negative subspaces of dimension $m$,
 
 $$
-X \cong \{W \leq V : \dim W = m,\ h|_W < 0\},
+\boxed{\;X \cong \{W \leq V : \dim W = m,\ h|_W < 0\}\;},
 $$
 
 by $gK \mapsto gW_0$ with $W_0 = 0\oplus\mathbb{C}^m$; it is a symmetric space of noncompact type, simply connected, of dimension $2pq$ and rank $\min(n,m)$; the symmetry $s_o$ is an involutive isometry with the isolated fixed point $o$, and the symmetries at the other points are its conjugates, so $X$ is a symmetric space in the sense of *Riemannian Symmetric Spaces and the Involution*.
@@ -116,7 +116,7 @@ the set of $n\times m$ matrices $Z$ whose Hermitian square satisfies $Z^{\dagger
 **Theorem (bounded realisation).** The map
 
 $$
-\Phi : \mathrm{U}(n,m)/K \longrightarrow D, \qquad gK \longmapsto Z = (g \cdot 0),
+\boxed{\;\Phi : \mathrm{U}(n,m)/K \longrightarrow D, \qquad gK \longmapsto Z = (g \cdot 0)\;},
 $$
 
 where $g = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ acts by the fractional linear transformation

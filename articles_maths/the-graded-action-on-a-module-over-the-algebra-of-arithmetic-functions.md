@@ -25,7 +25,7 @@ extended by linearity.
 
 **Theorem.** For homogeneous $a,b$ and every $m$,
 $$
-\rho_a\rho_b(m)=(-1)^{|a||b|}\rho_{a*b}(m).
+\boxed{\;\rho_a\rho_b(m)=(-1)^{|a||b|}\rho_{a*b}(m)\;}.
 $$
 Hence the graded action is a representation of $\mathcal{A}$ if and only if $(-1)^{|a||b|}=1$ for all pairs arising from the module; in general it is a projective representation with cocycle $(-1)^{|a||b|}\in\{\pm1\}$. If $\mathcal{A}$ carried the Koszul sign in its own product, the two signs would cancel and the action would be a representation; the commutative algebra does not, and this is the source of the discrepancy.
 
@@ -51,7 +51,7 @@ It is an involutive unitary operator on the graded module, it satisfies $P\rho_a
 
 **Theorem.** On the regular module with the coefficient form, the adjoint of the graded action is
 $$
-\rho_a^*=\alpha^{|a|}\,\Theta_a ,
+\boxed{\;\rho_a^*=\alpha^{|a|}\,\Theta_a\;} ,
 $$
 that is $\rho_a^*=\Theta_a$ for even $a$ and $\rho_a^*=\alpha\Theta_a$ for odd $a$, where $\Theta_c$ is the transposed multiplication, $(\Theta_cg)(k)=\sum_m\overline{c(m)}g(mk)$.
 
@@ -65,8 +65,8 @@ that is $\rho_a^*=\Theta_a$ for even $a$ and $\rho_a^*=\alpha\Theta_a$ for odd $
 
 **Theorem.** In the commutative algebra $\mathcal{A}$,
 $$
-[a,b]_{gr}=a*b\bigl(1-(-1)^{|a||b|}\bigr)=
-\begin{cases}0 & \text{if at least one of } a,b \text{ is even},\\ 2\,a*b & \text{if both are odd}.\end{cases}
+\boxed{\;[a,b]_{gr}=a*b\bigl(1-(-1)^{|a||b|}\bigr)=
+\begin{cases}0 & \text{if at least one of } a,b \text{ is even},\\ 2\,a*b & \text{if both are odd}.\end{cases}\;}
 $$
 Hence $\mathcal{A}$ is graded-commutative exactly when its odd part consists of zero divisors of the even part, which is not the case; in particular the odd part carries a nonzero bracket and the graded algebra is not super-commutative.
 

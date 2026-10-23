@@ -30,7 +30,7 @@ and $\mathcal{L}(E)$ is the algebra of continuous operators on $E$.
 **Proposition (composition laws).** Assume the multiplication associative. Then for all $a, b \in E$,
 
 $$
-L_{a}L_{b} = L_{ab}, \qquad R_{a}R_{b} = R_{ba}, \qquad L_{a}R_{b} = R_{b}L_{a} .
+\boxed{\;L_{a}L_{b} = L_{ab}, \qquad R_{a}R_{b} = R_{ba}, \qquad L_{a}R_{b} = R_{b}L_{a}\;} .
 $$
 
 Thus $a \mapsto L_{a}$ is a homomorphism and $a \mapsto R_{a}$ an anti-homomorphism of $E$ into $\mathcal{L}(E)$, and the two images commute with one another.
@@ -40,7 +40,7 @@ Thus $a \mapsto L_{a}$ is a homomorphism and $a \mapsto R_{a}$ an anti-homomorph
 **Proposition (identity and faithfulness).** If the multiplication is associative and unital with unit $1$, then $L_{1} = R_{1} = \mathrm{id}$, the algebras $\{L_{a}\}$ and $\{R_{a}\}$ are the images of the regular representations, and the kernels are the annihilators,
 
 $$
-\ker(L_{\bullet}) = \{a : aE = 0\}, \qquad \ker(R_{\bullet}) = \{a : Ea = 0\} .
+\boxed{\;\ker(L_{\bullet}) = \{a : aE = 0\}, \qquad \ker(R_{\bullet}) = \{a : Ea = 0\}\;} .
 $$
 
 If the multiplication is associative with unit and the representation is faithful on one side, then $E$ acts faithfully as operators on itself on that side.
@@ -58,7 +58,7 @@ If the multiplication is associative with unit and the representation is faithfu
 **Proposition (the bimodule of operators).** Let $F$ be a topological vector space and let $E = \mathcal{L}(F)$ be its algebra of continuous operators. Then the left and right multiplications on $E$ are the operators
 
 $$
-L_{A}(T) = AT, \qquad R_{B}(T) = TB \qquad (A, B, T \in E),
+\boxed{\;L_{A}(T) = AT, \qquad R_{B}(T) = TB \qquad (A, B, T \in E)\;},
 $$
 
 they are continuous for the topology of bounded convergence, and the two-sided operator $T \mapsto ATB = L_{A}R_{B}(T)$ is the general product operator. This is the primary instance of the construction, and the two-sided family of this group is formed on it.

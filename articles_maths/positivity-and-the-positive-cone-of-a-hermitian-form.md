@@ -80,7 +80,7 @@ $$
 **Proposition.** The positive set contains $0$, it is stable under the scalars of the fixed ring, and
 
 $$
-P(h) \cap (-P(h)) = N(h) .
+\boxed{\;P(h) \cap (-P(h)) = N(h)\;} .
 $$
 
 Consequently $h$ is positive semi-definite exactly when $P(h) = A$, and the positive set is proper, $P(h) \cap (-P(h)) = \{0\}$, exactly when the form is anisotropic, that is when it has no nonzero isotropic vector; definiteness is the stronger condition that also fixes the sign.
@@ -98,7 +98,7 @@ Consequently $h$ is positive semi-definite exactly when $P(h) = A$, and the posi
 **Theorem.** Let $h$ be positive semi-definite. Then
 
 $$
-N(h) = A^{\perp} ,
+\boxed{\;N(h) = A^{\perp}\;} ,
 $$
 
 the null set is the radical, it is a subspace of $A$, and $h$ is positive definite exactly when its radical vanishes.
@@ -128,7 +128,7 @@ the null set is the radical, it is a subspace of $A$, and $h$ is positive defini
 **Theorem.** Let $\varphi : A \to R$ be $R$-linear and let $h_{\varphi}(x,y) = \varphi(y^{*}x)$ be the corresponding compatible form. Then
 
 $$
-h_{\varphi}(x,x) = \varphi(x^{*}x) = \varphi(\Psi(x,x)) ,
+\boxed{\;h_{\varphi}(x,x) = \varphi(x^{*}x) = \varphi(\Psi(x,x))\;} ,
 $$
 
 with $\Psi$ the $A$-valued form of *Hermitian Forms on a Sesqualgebra*, and consequently $h_{\varphi}$ is positive semi-definite if and only if $\varphi$ is nonnegative on the algebraic cone $C(A)$ of the Hermitian squares, and positive definite if and only if $\varphi$ is strictly positive on the nonzero elements of $C(A)$.

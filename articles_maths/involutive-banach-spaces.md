@@ -18,7 +18,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 **Theorem (topological direct sum).** With $2$ invertible in $\mathbb{K}$ the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and
 
 $$
-X = X^{\theta} \oplus X^{-}
+\boxed{\;X = X^{\theta} \oplus X^{-}\;}
 $$
 
 is a topological direct sum of Banach spaces; the projection onto $X^{\theta}$ along $X^{-}$ is bounded, and the direct sum norm is equivalent to the norm of $X$.
@@ -30,7 +30,7 @@ is a topological direct sum of Banach spaces; the projection onto $X^{\theta}$ a
 **Theorem (extension of a bounded involution).** Let $X$ be a normed space with a continuous involution $\theta$ and let $\widehat{X}$ be its completion. Then $\theta$ extends uniquely to a continuous involution $\widehat{\theta}$ of $\widehat{X}$ with $\widehat{\theta}^{\,2} = \mathrm{id}$, of the same kind as $\theta$, and
 
 $$
-\lVert\widehat{\theta}\rVert = \lVert\theta\rVert ;
+\boxed{\;\lVert\widehat{\theta}\rVert = \lVert\theta\rVert\;} ;
 $$
 
 if $\theta$ is isometric then so is $\widehat{\theta}$.
@@ -66,7 +66,7 @@ and the negated subspace of the completion is the closure of the negated subspac
 **Theorem (the dual is an involutive Banach space).** The dual $X^{*}$ with the dual norm is a Banach space, the transposed involution $\theta'(\varphi) = \varphi\circ\theta$ is a continuous involution of the same kind with
 
 $$
-\lVert\theta'\rVert = \lVert\theta\rVert ,
+\boxed{\;\lVert\theta'\rVert = \lVert\theta\rVert\;} ,
 $$
 
 and the fixed and negated subspaces of $\theta'$ are the annihilators of $X^{-}$ and $X^{\theta}$; hence $(X^{*}, \theta')$ is an involutive Banach space, isometric exactly when $\theta$ is isometric.

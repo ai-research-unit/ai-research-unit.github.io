@@ -81,7 +81,7 @@ for $y$ in a fixed neighbourhood of $\Lambda$; the local manifolds $W^s_\epsilon
 **Theorem (spectral decomposition).** Let $f$ be a diffeomorphism of a compact manifold satisfying Axiom A. Then the non-wandering set decomposes into finitely many disjoint closed invariant basic sets,
 
 $$
-\Omega(f)=\Lambda_1\cup\cdots\cup\Lambda_s, \qquad f(\Lambda_i)=\Lambda_i,
+\boxed{\;\Omega(f)=\Lambda_1\cup\cdots\cup\Lambda_s, \qquad f(\Lambda_i)=\Lambda_i\;},
 $$
 
 each of which is closed, open in $\Omega(f)$ and invariant, with $f|_{\Lambda_i}$ topologically transitive; each $\Lambda_i$ decomposes further into finitely many pieces that are cyclically permuted by $f$, so that $f^{m_i}$ restricted to each piece is topologically mixing for the cycle length $m_i$. The decomposition is unique, and the ergodic invariant measures of $f$ are supported on the basic sets.
@@ -95,7 +95,7 @@ each of which is closed, open in $\Omega(f)$ and invariant, with $f|_{\Lambda_i}
 **Theorem (Sinai–Bowen).** Let $\Lambda$ be a locally maximal hyperbolic set for a diffeomorphism $f$ with $f|_\Lambda$ topologically transitive. Then $\Lambda$ admits a Markov partition, and the corresponding transition matrix $A$ of order $k$ defines a two-sided subshift of finite type $(\Sigma_A,\sigma)$ with the following property: there is a continuous surjective map $\pi:\Sigma_A\to\Lambda$ with $\pi\circ\sigma=f\circ\pi$, the map $\pi$ is injective on a residual set and finite-to-one, and the periodic points of $\Lambda$ biject with the periodic points of $\Sigma_A$ through $\pi$ up to the finite multiplicity. Consequently
 
 $$
-h_{\mathrm{top}}(f|_\Lambda)=\log\rho(A),
+\boxed{\;h_{\mathrm{top}}(f|_\Lambda)=\log\rho(A)\;},
 $$
 
 the logarithm of the spectral radius of the transition matrix, and the topological entropy of the hyperbolic set is computed from its symbolic model.
@@ -143,7 +143,7 @@ and the **Oseledets theorem** gives the existence of the exponents, of the filtr
 **Theorem (Ruelle's inequality and Pesin's formula).** Let $f$ be a $C^1$ diffeomorphism preserving a probability measure $\mu$. Then the measure-theoretic entropy satisfies
 
 $$
-h_\mu(f)\le\int\lambda^+\,d\mu ,
+\boxed{\;h_\mu(f)\le\int\lambda^+\,d\mu\;} ,
 $$
 
 with equality — **Pesin's formula** — when $\mu$ is absolutely continuous with respect to the volume in the unstable directions, that is, when $\mu$ is an SRB measure; for a $C^{1+\alpha}$ diffeomorphism the equality holds for every measure whose conditional measures on the unstable manifolds are absolutely continuous.

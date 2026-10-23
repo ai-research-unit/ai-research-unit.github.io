@@ -25,8 +25,7 @@ $$
 
 and, applying $(q_1+iq'_1)(q_2+iq'_2) = (q_1q_2-q'_1q'_2) + (q_1q'_2+q'_1q_2)i$,
 
-$$
-Q_1 Q_2 = (3+4i)(1-2i) = (3\cdot 1 - 4\cdot(-2)) + (3\cdot(-2) + 4\cdot 1)i = 11 - 2i .
+$$ \boxed{\;Q_1 Q_2 = (3+4i)(1-2i) = (3\cdot 1 - 4\cdot(-2)) + (3\cdot(-2) + 4\cdot 1)i = 11 - 2i \;}.
 $$
 
 The reversed product is
@@ -115,8 +114,7 @@ $$
 Q_{1,+} = \tfrac{1}{2}(Q_1 + \bar{Q}_1) = \tfrac{1}{2}\bigl((3+4i)+(3-4i)\bigr) = 3 \in \mathbb{R}_{\mathbb{C}},
 $$
 
-$$
-Q_{1,-} = \tfrac{1}{2}(Q_1 - \bar{Q}_1) = \tfrac{1}{2}\bigl((3+4i)-(3-4i)\bigr) = 4i \in i\mathbb{R}_{\mathbb{C}},
+$$ \boxed{\;Q_{1,-} = \tfrac{1}{2}(Q_1 - \bar{Q}_1) = \tfrac{1}{2}\bigl((3+4i)-(3-4i)\bigr) = 4i \in i\mathbb{R}_{\mathbb{C}}\;},
 $$
 
 with $Q_{1,+} + Q_{1,-} = 3+4i = Q_1$. For $Q_2$ the same computation gives $Q_{2,+} = 1$ and $Q_{2,-} = -2i$, again summing to $Q_2$. The two subspaces meet only in $0$: the element $Q_{1,+} = 3$ is not a multiple of $i$ unless $3 = 0$.
@@ -147,8 +145,7 @@ the matrix of $Q_1Q_2 = 11-2i$.
 
 **The determinant is the norm.** Each matrix has determinant equal to the norm of its element,
 
-$$
-\det \mathsf{M}_2(Q_1) = 3\cdot 3 - (-4)\cdot 4 = 25 = \langle Q_1\rangle_{*}, \qquad \det \mathsf{M}_2(Q_2) = 1\cdot 1 - 2\cdot(-2) = 5 = \langle Q_2\rangle_{*},
+$$ \boxed{\;\det \mathsf{M}_2(Q_1) = 3\cdot 3 - (-4)\cdot 4 = 25 = \langle Q_1\rangle_{*}, \qquad \det \mathsf{M}_2(Q_2) = 1\cdot 1 - 2\cdot(-2) = 5 = \langle Q_2\rangle_{*}\;},
 $$
 
 so multiplicativity of the determinant is the multiplicativity $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$ on the worked pair.

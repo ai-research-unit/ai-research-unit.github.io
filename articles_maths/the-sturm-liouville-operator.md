@@ -43,7 +43,7 @@ The problem is **regular** when $p$ and $w$ are positive and continuous on the c
 **Proposition (formal self-adjointness).** The Sturm–Liouville operator is formally self-adjoint for the weighted pairing: for functions of class $C^2$ on $[a,b]$,
 
 $$
-\int_a^b(\ell y)\,\bar v\,dx - \int_a^b y\,\overline{\ell v}\,dx = \Bigl[p\,(y\bar v' - y'\bar v)\Bigr]_a^b ,
+\boxed{\;\int_a^b(\ell y)\,\bar v\,dx - \int_a^b y\,\overline{\ell v}\,dx = \Bigl[p\,(y\bar v' - y'\bar v)\Bigr]_a^b\;} ,
 $$
 
 and hence $\langle Ly,v\rangle_w = \langle y,Lv\rangle_w$ whenever the boundary term vanishes.
@@ -72,7 +72,7 @@ with $(\alpha_1,\alpha_2)$ and $(\beta_1,\beta_2)$ not both zero; a **periodic**
 **Theorem (the separated conditions are symmetric).** For a separated boundary condition the operator $L$ with domain $\mathcal{D}(L)$ is symmetric on $L^2((a,b),w\,dx)$:
 
 $$
-\langle Ly,v\rangle_w = \langle y,Lv\rangle_w \qquad \text{for every } y,v\in\mathcal{D}(L) .
+\boxed{\;\langle Ly,v\rangle_w = \langle y,Lv\rangle_w \qquad \text{for every } y,v\in\mathcal{D}(L)\;} .
 $$
 
 If the problem is regular, the closure of $L$ is self-adjoint on the domain obtained by taking the closure in the graph norm.
@@ -106,7 +106,7 @@ and may be characterised by the min-max principle: written in increasing order, 
 **Theorem (the expansion).** Let the problem be regular. Then there are real numbers $\lambda_1<\lambda_2<\cdots$ with $\lambda_n\to\infty$ and eigenfunctions $\varphi_n$ such that $L\varphi_n=\lambda_n\varphi_n$, the $\varphi_n$ are orthonormal in $L^2((a,b),w\,dx)$, and they form a complete orthonormal basis: every $f$ of the space has
 
 $$
-f = \sum_{n\ge1}\langle f,\varphi_n\rangle_w\,\varphi_n , \qquad \|f\|_w^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle_w\bigr|^2 ,
+\boxed{\;f = \sum_{n\ge1}\langle f,\varphi_n\rangle_w\,\varphi_n , \qquad \|f\|_w^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle_w\bigr|^2\;} ,
 $$
 
 the series converging in the weighted $L^2$ norm; and, in the sense of the spectral theorem for a self-adjoint operator with compact resolvent,

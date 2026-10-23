@@ -20,7 +20,7 @@ The positive cone and the symmetrised product are *The Positive Cone of an Invol
 **Definition.** An **ordered involutive algebra** is an involutive algebra $A$ with a positive cone $A_+$ such that
 
 $$
-\text{(i)} \quad A_+^{*} = A_+ , \qquad \text{(ii)} \quad c^{*}A_+c\subseteq A_+ \ \text{ for every } c\in A , \qquad \text{(iii)} \quad 1\in A_+ \ \text{ and } 1 \text{ is an order unit} ,
+\boxed{\;\text{(i)} \quad A_+^{*} = A_+ , \qquad \text{(ii)} \quad c^{*}A_+c\subseteq A_+ \ \text{ for every } c\in A , \qquad \text{(iii)} \quad 1\in A_+ \ \text{ and } 1 \text{ is an order unit}\;} ,
 $$
 
 with the order $a\leq b\iff b - a\in A_+$, the closedness of the cone under the involution, the **congruence property**, and the **order unit**.
@@ -48,13 +48,13 @@ with the order $a\leq b\iff b - a\in A_+$, the closedness of the cone under the 
 **Theorem (the decomposition in the ordered involutive algebra).** Every Hermitian element $h$ of a unital reduced $\ast$-normed ordered involutive algebra has a unique decomposition
 
 $$
-h = h_+ - h_-, \qquad h_+\geq0, \quad h_-\geq0, \quad h_+h_- = 0 ,
+\boxed{\;h = h_+ - h_-, \qquad h_+\geq0, \quad h_-\geq0, \quad h_+h_- = 0\;} ,
 $$
 
 with $h_\pm$ commuting and Hermitian, produced by the functional calculus through the absolute value $\lvert h\rvert = (h^{2})^{1/2}$, $h_\pm = \frac12(\lvert h\rvert\pm h)$; the decomposition satisfies $\lvert h\rvert = h_+ + h_-$, $\lvert h\rvert\geq h$ and $\lvert h\rvert\geq -h$, and the order interval is
 
 $$
-[0,1] = \{h = h^{*} : 0\leq h\leq1\} = \{h = h^{*} : \lVert h\rVert\leq1,\ h\geq0\} .
+\boxed{\;[0,1] = \{h = h^{*} : 0\leq h\leq1\} = \{h = h^{*} : \lVert h\rVert\leq1,\ h\geq0\}\;} .
 $$
 
 *Proof.* The existence, the uniqueness and the commutativity are the theorem of *Hermitian Elements and the Order Unit*; the identities $\lvert h\rvert = h_+ + h_-$ and $\lvert h\rvert\pm h\geq0$ are read off the definitions of the parts; the identification of the interval is the order-unit-norm statement.

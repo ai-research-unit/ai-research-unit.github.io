@@ -40,7 +40,7 @@ the sum being finite because a rational function has only finitely many zeros an
 
 **Theorem (the divisor map is a homomorphism).** For all $f,g\in k(X)^\times$,
 $$
-\operatorname{div}(fg) = \operatorname{div}(f) + \operatorname{div}(g), \qquad \operatorname{div}(f^{-1}) = -\operatorname{div}(f), \qquad \operatorname{div}(1) = 0 .
+\boxed{\;\operatorname{div}(fg) = \operatorname{div}(f) + \operatorname{div}(g), \qquad \operatorname{div}(f^{-1}) = -\operatorname{div}(f), \qquad \operatorname{div}(1) = 0\;} .
 $$
 Consequently the divisor map is a homomorphism of abelian groups whose source is written multiplicatively and whose target is written additively: the operator converts the product of functions into the sum of divisors.
 
@@ -86,7 +86,7 @@ $$
 $$
 and it is the connecting map of the exact sequence of sheaves of the next section. When $\Gamma(X,\mathcal{O}_X^\times) = k^\times$ — in particular when $X$ is complete — this homomorphism is an isomorphism
 $$
-\operatorname{Cl}(X)\ \cong\ \operatorname{Pic}(X).
+\boxed{\;\operatorname{Cl}(X)\ \cong\ \operatorname{Pic}(X)\;}.
 $$
 
 *Proof.* The last theorem shows that the assignment factors through the class group and is multiplicative. For the isomorphism, the sheaf sequence below gives the exact sequence $k(X)^\times\to\Gamma(X,\mathcal{K}^\times/\mathcal{O}_X^\times)\to\operatorname{Pic}(X)\to H^1(X,\mathcal{K}^\times)$; the group $\Gamma(X,\mathcal{K}^\times/\mathcal{O}_X^\times)$ is the group of Cartier divisors, which for a variety regular in codimension one equals $\operatorname{Div}(X)$, and $H^1(X,\mathcal{K}^\times) = 0$ because the constant sheaf $k(X)^\times$ on the irreducible space $X$ is flabby and hence acyclic. The image of $k(X)^\times$ is the principal divisors, so the cokernel is $\operatorname{Cl}(X)$, and this cokernel injects into $\operatorname{Pic}(X)$; injectivity of the last map follows from the vanishing of $H^1(X,\mathcal{K}^\times)$.
@@ -100,7 +100,7 @@ $$
 
 **Theorem (the exact sequence).** There is a short exact sequence of sheaves of abelian groups
 $$
-0\longrightarrow\mathcal{O}_X^\times\longrightarrow\mathcal{K}^\times\xrightarrow{\ \operatorname{div}\ }\mathcal{D}iv\longrightarrow0 ,
+\boxed{\;0\longrightarrow\mathcal{O}_X^\times\longrightarrow\mathcal{K}^\times\xrightarrow{\ \operatorname{div}\ }\mathcal{D}iv\longrightarrow0\;} ,
 $$
 in which the middle arrow is the divisor map on sections, and its long exact sequence of cohomology begins
 $$

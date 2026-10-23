@@ -45,16 +45,16 @@ is an involutive automorphism of the Lie algebra, the **Cartan involution** of t
 **Theorem.** Let $\theta$ be the Cartan involution of the symmetric pair $(G, K)$. The Lie algebra decomposes as the sum of the eigenspaces of $\theta$,
 
 $$
-\mathfrak{g} = \mathfrak{k}\oplus\mathfrak{p}, \qquad
-\theta = +\mathrm{id} \ \text{on}\ \mathfrak{k}, \qquad \theta = -\mathrm{id}\ \text{on}\ \mathfrak{p},
+\boxed{\;\mathfrak{g} = \mathfrak{k}\oplus\mathfrak{p}, \qquad
+\theta = +\mathrm{id} \ \text{on}\ \mathfrak{k}, \qquad \theta = -\mathrm{id}\ \text{on}\ \mathfrak{p}\;},
 $$
 
 where $\mathfrak{k}$ is the Lie algebra of $K$; the decomposition is orthogonal for the Killing form and satisfies
 
 $$
-[\mathfrak{k}, \mathfrak{k}] \subseteq \mathfrak{k}, \qquad
+\boxed{\;[\mathfrak{k}, \mathfrak{k}] \subseteq \mathfrak{k}, \qquad
 [\mathfrak{k}, \mathfrak{p}] \subseteq \mathfrak{p}, \qquad
-[\mathfrak{p}, \mathfrak{p}] \subseteq \mathfrak{k} .
+[\mathfrak{p}, \mathfrak{p}] \subseteq \mathfrak{k}\;} .
 $$
 
 The subspace $\mathfrak{p}$ is identified with the tangent space at the base point by the evaluation at the identity of the infinitesimal action, and the isotropy representation of $K$ on $\mathfrak{p}$ is the adjoint action. The decomposition and the bracket relations are the **Cartan decomposition** of the symmetric pair.
@@ -72,7 +72,7 @@ $$
 and the curvature is
 
 $$
-R(X, Y)Z = -[[X, Y], Z] \qquad (X, Y, Z \in \mathfrak{p}),
+\boxed{\;R(X, Y)Z = -[[X, Y], Z] \qquad (X, Y, Z \in \mathfrak{p})\;},
 $$
 
 with the sectional curvature

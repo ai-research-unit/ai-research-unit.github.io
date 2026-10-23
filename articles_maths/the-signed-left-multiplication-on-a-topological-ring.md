@@ -22,7 +22,7 @@ The **signed right multiplication** is $\varrho_b(x) = \alpha(x)\,b$, the mirror
 **Proposition (decomposition and continuity).** The signed left multiplication factors as
 
 $$
-\ell_a = L_a\circ\alpha = \Sigma^\alpha_{a,1} ,
+\boxed{\;\ell_a = L_a\circ\alpha = \Sigma^\alpha_{a,1}\;} ,
 $$
 
 it is additive and continuous, and it is the signed sandwich with right parameter $1$; symmetrically $\varrho_b = \alpha\circ R_b = \Sigma^\alpha_{1,b}$. The signed left multiplications with a unit parameter are the invertible ones, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, and the signed left multiplications are the elements of the coset $L(R)\circ\alpha$ of the unsigned left multiplications.
@@ -34,7 +34,7 @@ it is additive and continuous, and it is the signed sandwich with right paramete
 **Proposition (composition law).** For all $a, b \in R$,
 
 $$
-\ell_a\circ\ell_b = L_{a\,\alpha(b)} = \ell_{a\alpha(b)} ,
+\boxed{\;\ell_a\circ\ell_b = L_{a\,\alpha(b)} = \ell_{a\alpha(b)}\;} ,
 $$
 
 so the signed left multiplications compose among themselves and the family is closed under composition. The signed right multiplications compose by $\varrho_b\varrho_a = R_{\alpha(b)a}$, and a signed left and a signed right multiplication do not commute in general.
@@ -86,7 +86,7 @@ so the signed family is the coset $L(R)\alpha$ and the unsigned family is the su
 **Theorem (the degenerate case: the inner grade involution).** When the grade involution is inner, $\alpha = c_z$ with $z \in R^\times$, the signed left multiplication is an unsigned two-sided sandwich,
 
 $$
-\ell_a(x) = a z x z^{-1} = \Sigma_{az,\,z^{-1}}(x) ,
+\boxed{\;\ell_a(x) = a z x z^{-1} = \Sigma_{az,\,z^{-1}}(x)\;} ,
 $$
 
 so the signed left multiplications are the unsigned sandwiches with second parameter fixed at $z^{-1}$, and the signed family is contained in the unsigned sandwich family rather than in the unsigned left family. When the ring is commutative, $\ell_a(x) = a\alpha(x) = \alpha(a x) = \alpha L_a(x)$, so the signed and unsigned left multiplications differ by the fixed automorphism $\alpha$ and the signed left multiplication group is abelian.

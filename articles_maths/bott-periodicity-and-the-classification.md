@@ -53,7 +53,7 @@ The recursion reduces the classification to the two definite families $\mathrm{C
 **Theorem (Bott periodicity for Clifford algebras).** There are isomorphisms
 
 $$
-\mathrm{Cl}_{n+8,m}\cong M_{16}\bigl(\mathrm{Cl}_{n,m}\bigr)\cong \mathrm{Cl}_{n,m+8},
+\boxed{\;\mathrm{Cl}_{n+8,m}\cong M_{16}\bigl(\mathrm{Cl}_{n,m}\bigr)\cong \mathrm{Cl}_{n,m+8}\;},
 $$
 
 so that the isomorphism type of $\mathrm{Cl}_{n,m}$ is unchanged by increasing $n$ or $m$ by $8$, up to tensoring with $M_{16}(F)$.
@@ -156,7 +156,7 @@ The even subalgebra is again a Clifford algebra of one dimension less, and the s
 **Theorem.** For $n,m\ge 1$,
 
 $$
-\mathrm{Cl}^0_{n,m}\cong \mathrm{Cl}_{n,m-1}\cong \mathrm{Cl}_{m,n-1}.
+\boxed{\;\mathrm{Cl}^0_{n,m}\cong \mathrm{Cl}_{n,m-1}\cong \mathrm{Cl}_{m,n-1}\;}.
 $$
 
 **Proof.** Suppose $m\ge 1$ and let $e$ be a generator of square $-1$. By the recursion for the even subalgebra proved in the previous article, $\mathrm{Cl}^0_{n,m}\cong\mathrm{Cl}(e^\perp,q)$, and $e^\perp$ has signature $(n,m-1)$. The second isomorphism follows by choosing $n\ge 1$ and a generator of square $+1$: the same computation with a generator $f$ of square $+1$ gives $\mathrm{Cl}^0_{n,m}\cong\mathrm{Cl}(f^\perp,-m)$, and $f^\perp$ has signature $(m,n-1)$ after the sign is absorbed into the form.
@@ -194,7 +194,7 @@ Complexification forgets the signature, and the resulting classification is peri
 **Theorem.** Let $\mathbb{C}\mathrm{l}_n$ be the complex Clifford algebra of an $N$-dimensional non-degenerate complex quadratic form. Then
 
 $$
-\mathbb{C}\mathrm{l}_{n+2}\cong \mathbb{C}\mathrm{l}_n\otimes_{\mathbb{C}} M_2(\mathbb{C}),
+\boxed{\;\mathbb{C}\mathrm{l}_{n+2}\cong \mathbb{C}\mathrm{l}_n\otimes_{\mathbb{C}} M_2(\mathbb{C})\;},
 $$
 
 and

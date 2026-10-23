@@ -32,7 +32,7 @@ satisfying the cocycle $\varphi_{\gamma\delta}=\varphi_{\gamma}\circ\gamma_*(\va
 **Definition.** The **descent datum** of a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ is the family of the semilinear isomorphisms $\varphi_{\gamma}$ together with their cocycle. The **fixed part** is
 
 $$
-\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \varphi_{\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\},
+\boxed{\;\mathcal{M}^{\Gamma}(V)=\mathcal{M}\bigl(p^{-1}V\bigr)^{\Gamma}=\{\,m: \varphi_{\gamma}(m)=m\ \text{for every}\ \gamma\in\Gamma\,\}\;},
 $$
 
 for an open $V\subseteq X$, with $p^{-1}V$ the preimage in $X_K$, on which $\Gamma$ acts; it is a sheaf of $\mathcal{O}_X$-modules, the **descent** of $\mathcal{M}$.
@@ -54,7 +54,7 @@ $$
 are inverse equivalences between the category $\mathrm{Sh}_{\Gamma}(X_K)$ of $\Gamma$-equivariant sheaves of $\mathcal{O}_{X_K}$-modules over $X_K$ and the category $\mathrm{Sh}(X)$ of sheaves of $\mathcal{O}_X$-modules over $X$,
 
 $$
-\mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X).
+\boxed{\;\mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X)\;}.
 $$
 
 *Proof.* The pair is adjoint, as in *Equivariant Sheaves and Descent*; the unit and the counit are checked on the sections. A section of the counit over a $\Gamma$-invariant open set $\Omega\subseteq X_K$ is a $\Gamma$-equivariant map $\mathcal{M}(\Omega)^{\Gamma}\otimes_kK\to\mathcal{M}(\Omega)$, which is the multiplication by the coefficients; it is an isomorphism by the descent lemma: an element of a $\Gamma$-module that is fixed splits as $m=\sum_{\gamma}\gamma(\lambda)m_{\gamma}$ with a normal basis $\{\lambda\}$ of $K/k$. The unit is the analogous computation, and the effectiveness is the faithful flatness of $K$ over $k$, which is the descent theorem of *Descent Theory*.
@@ -68,7 +68,7 @@ $$
 **Theorem (the twisted forms).** Fix a $\Gamma$-equivariant sheaf $\mathcal{M}$ over $X_K$ with automorphism group $\mathcal{A}ut_{\Gamma}(\mathcal{M})$ — the sheaf of $\Gamma$-equivariant automorphisms. The $\Gamma$-equivariant sheaves over $X_K$ that become isomorphic to $\mathcal{M}$ after a base change to a Galois extension are classified by the first nonabelian cohomology
 
 $$
-H^1\bigl(\Gamma,\mathcal{A}ut_{\Gamma}(\mathcal{M})\bigr),
+\boxed{\;H^1\bigl(\Gamma,\mathcal{A}ut_{\Gamma}(\mathcal{M})\bigr)\;},
 $$
 
 the pointed set of classes of $1$-cocycles of $\Gamma$ with values in the automorphisms, two cocycles giving the same form when they differ by a coboundary; the trivial class corresponds to the descended sheaf $\mathcal{M}^{\Gamma}$.

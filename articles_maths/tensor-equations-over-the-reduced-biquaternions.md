@@ -27,7 +27,9 @@ They satisfy $A\ast L_A=0$, $R_A\ast A=0$, $L_A\ast A^\dagger=0$ and $A^\dagger\
 **Theorem (solvability and general solution).** The equation $A\ast X=B$ has a solution if and only if
 
 $$
-R_A\ast B=0.
+\boxed{\;
+R_A\ast B=0
+\;}.
 $$
 
 When this holds, the general solution is
@@ -63,7 +65,9 @@ When $R_A\ast B\neq0$ the equation has no solution, and one minimizes the residu
 **Theorem (least squares).** The least-squares solutions of $A\ast X=B$ are
 
 $$
-X=A^\dagger\ast B+L_A\ast W,
+\boxed{\;
+X=A^\dagger\ast B+L_A\ast W
+\;},
 $$
 
 where $W$ is arbitrary, and the minimum-norm least-squares solution is $X=A^\dagger\ast B$. The least-squares solutions are exactly the solutions of the normal equation
@@ -95,7 +99,9 @@ Let $A,B\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ be square, and suppose
 **Theorem (Hermitian solutions).** The equation has a Hermitian solution if and only if
 
 $$
-R_A\ast B=0,\qquad B\ast A^{\mathsf H}=A\ast B^{\mathsf H}.
+\boxed{\;
+R_A\ast B=0,\qquad B\ast A^{\mathsf H}=A\ast B^{\mathsf H}
+\;}.
 $$
 
 When these conditions hold, the general Hermitian solution is

@@ -51,7 +51,7 @@ $$
 Because $\rho^2 = -e_t$, the kernel takes the closed form
 
 $$
-W_N(n, \ell) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t - \sin\left(2\pi \frac{n\ell}{N}\right) \rho,
+\boxed{\; W_N(n, \ell) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t - \sin\left(2\pi \frac{n\ell}{N}\right) \rho \;},
 $$
 
 where the cosine and sine are the ordinary complex trigonometric functions applied to the real argument $2\pi n\ell/N$. The kernel is therefore a unit biquaternion in the sense that its biquaternion norm is $e_t$:
@@ -149,7 +149,7 @@ $$
 The inner sum is the standard orthogonality relation:
 
 $$
-\sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} W_N(m, \ell) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+\boxed{\; \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} W_N(m, \ell) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases} \;}
 $$
 
 which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
@@ -301,7 +301,7 @@ $$
 Assume the kernel is central on the values, $W_N(n,\ell)a = aW_N(n,\ell)$ for every sample $a$ of $f$ and $g$ and all $n,\ell$; this holds in particular for the complex root $\rho=\pm i$, whose kernel is a complex scalar. Then
 
 $$
-\mathcal{F}[f * g][\ell] = \mathcal{F}[f][\ell] \cdot \mathcal{F}[g][\ell],
+\boxed{\; \mathcal{F}[f * g][\ell] = \mathcal{F}[f][\ell] \cdot \mathcal{F}[g][\ell] \;},
 $$
 
 where the product on the right is the biquaternion product.

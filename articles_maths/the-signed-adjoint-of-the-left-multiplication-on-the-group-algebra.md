@@ -20,7 +20,7 @@ The adjoint is taken with respect to the Haar pairing; the left-handed identitie
 **Theorem (the adjoint).** With respect to the Haar pairing,
 
 $$
-\bigl(\Lambda_a\bigr)^* = \mathrm{A}\,L_{a^*} = L_{\alpha(a^*)}\,\mathrm{A} = \Lambda_{\alpha(a^*)} = \Lambda_{\sigma(a)} ,
+\boxed{\;\bigl(\Lambda_a\bigr)^* = \mathrm{A}\,L_{a^*} = L_{\alpha(a^*)}\,\mathrm{A} = \Lambda_{\alpha(a^*)} = \Lambda_{\sigma(a)}\;} ,
 $$
 
 and in the unimodular case $\bigl(\Lambda^{\mathrm R}_b\bigr)^* = \Lambda^{\mathrm R}_{\alpha(b^*)}$; the adjoint operation is an involution on the family of signed left multiplications, $\bigl((\Lambda_a)^*\bigr)^* = \Lambda_a$.
@@ -52,7 +52,7 @@ and it preserves the coset $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A}$, ca
 **Theorem (self-adjointness and the fixed set of $\sigma$).** The signed left multiplication $\Lambda_a$ is self-adjoint if and only if $a$ lies in the fixed set of the composite anti-automorphism $\sigma = \alpha\circ\,{}^{*}$,
 
 $$
-\Lambda_a^* = \Lambda_a \iff \sigma(a) = a ,
+\boxed{\;\Lambda_a^* = \Lambda_a \iff \sigma(a) = a\;} ,
 $$
 
 a closed real subspace of $\mathcal{A}$; on the point masses this is the fixed subgroup $G^\sigma$ of the continuous involution $\sigma = \alpha\iota$.
@@ -62,7 +62,7 @@ a closed real subspace of $\mathcal{A}$; on the point masses this is the fixed s
 **Theorem (unitarity).** The signed left multiplication is unitary if and only if the parameter is a unitary element,
 
 $$
-\Lambda_a^*\Lambda_a = \Lambda_a\Lambda_a^* = 1 \iff a^*\!*a = a*\!a^* = 1 .
+\boxed{\;\Lambda_a^*\Lambda_a = \Lambda_a\Lambda_a^* = 1 \iff a^*\!*a = a*\!a^* = 1\;} .
 $$
 
 On a non-discrete group algebra there are no unitary elements and no unitary signed left multiplication; on a discrete group every point mass gives a unitary operator $\Lambda_{\delta_g}$.

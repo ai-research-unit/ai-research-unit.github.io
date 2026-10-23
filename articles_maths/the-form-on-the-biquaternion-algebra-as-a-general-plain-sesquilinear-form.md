@@ -54,7 +54,7 @@ Hence ${}^{\natural}$ is $\mathbb{C}$-linear, and $\bar{\cdot}$ and ${}^{*}$ are
 **Theorem (the general plain sesquilinear form is an object of the layer).** The form
 
 $$
-h(\tilde{Q}_1,\tilde{Q}_2) = \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\mu}Q_{1,\mu}\,\varsigma(Q_{2,\mu})
+\boxed{\;h(\tilde{Q}_1,\tilde{Q}_2) = \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\mu}Q_{1,\mu}\,\varsigma(Q_{2,\mu})\;}
 $$
 
 is Hermitian, positive definite and nondegenerate with Gram matrix $\mathrm{I}_{4}$ in the coefficient basis and signature $(8,0)$ over $\mathbb{R}$, its radical is zero, its norm is the Euclidean norm $\lVert\tilde{Q}_1\rVert_{E} = (\sum_{\mu}\lvert Q_{1,\mu}\rvert^{2})^{1/2}$, and it is **compatible with the product**:
@@ -80,7 +80,7 @@ using $(\tilde{Q}_1^{*}\tilde Q_3)^{*} = \tilde Q_3^{*}\tilde{Q}_1$ and the cycl
 **Theorem (the general quaternionic sesquilinear form is Hermitian and not admissible).** The form
 
 $$
-g(\tilde{Q}_1,\tilde{Q}_2) = \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} = \operatorname{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}) = \sum_{\mu}\varepsilon_{\mu}Q_{1,\mu}\,\varsigma(Q_{2,\mu}) = \operatorname{Sc}(\tilde{Q}_1\bar{\tilde{Q}_2})
+\boxed{\;g(\tilde{Q}_1,\tilde{Q}_2) = \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} = \operatorname{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}) = \sum_{\mu}\varepsilon_{\mu}Q_{1,\mu}\,\varsigma(Q_{2,\mu}) = \operatorname{Sc}(\tilde{Q}_1\bar{\tilde{Q}_2})\;}
 $$
 
 is Hermitian and nondegenerate with Gram matrix $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$, of inertia index $(1,3,0)$ over $\mathbb{C}$ and signature $(2,6)$ over $\mathbb{R}$, indefinite with the diagonal $\lvert Q_{2,t}\rvert^{2} - \lvert Q_{2,x}\rvert^{2} - \lvert Q_{2,y}\rvert^{2} - \lvert Q_{2,z}\rvert^{2}$, and it is **not compatible** with the product. The adjoint of the left multiplication is the **right** multiplication,
@@ -116,7 +116,7 @@ of which the second equality is the self-adjointness, and on the eigenspaces $g$
 **Theorem (the unitary slice).** The unitary elements of the layer, $U = \{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_t\} = \{\tilde{U} : \tilde{U}\tilde{U}^{*} = e_t\}$, form a group acting on the right and on the left by isometries of $h$,
 
 $$
-h(\tilde{U}\tilde{Q}_1,\tilde{U}\tilde{Q}_2) = h(\tilde{Q}_1,\tilde{Q}_2) = h(\tilde{Q}_1\tilde{U},\tilde{Q}_2\tilde{U}),
+\boxed{\;h(\tilde{U}\tilde{Q}_1,\tilde{U}\tilde{Q}_2) = h(\tilde{Q}_1,\tilde{Q}_2) = h(\tilde{Q}_1\tilde{U},\tilde{Q}_2\tilde{U})\;},
 $$
 
 and on the slice

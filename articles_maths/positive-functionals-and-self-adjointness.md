@@ -58,7 +58,7 @@ so the order of the algebra is the order of the self-adjoint functionals restric
 **Proposition (the Cauchy–Schwarz inequality and the norm).** For a positive functional $\varphi$ the **Cauchy–Schwarz inequality**
 
 $$
-\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)
+\boxed{\;\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)\;}
 $$
 
 holds, the functional is **continuous** for the order-unit norm, and in the unital case $\lVert\varphi\rVert = \varphi(1)$; the **states** are the positive functionals with $\varphi(1) = 1$, which are self-adjoint and are the normalised points of the cone.
@@ -70,7 +70,7 @@ holds, the functional is **continuous** for the order-unit norm, and in the unit
 **Proposition (the order of the self-adjoint functionals).** The self-adjoint functionals form a real ordered vector space with the cone of the positive functionals as its positive cone; the order is
 
 $$
-\varphi\leq\psi \iff \psi - \varphi \ \text{ is positive} \iff \varphi(a)\leq\psi(a) \ \text{ for every } a\in A_+ ,
+\boxed{\;\varphi\leq\psi \iff \psi - \varphi \ \text{ is positive} \iff \varphi(a)\leq\psi(a) \ \text{ for every } a\in A_+\;} ,
 $$
 
 and the order is **Archimedean** when the algebra has an order unit and the functionals are continuous for the order-unit norm; the order unit of the space of the functionals is the trace $\varphi\mapsto\operatorname{tr}(a)$, when it exists.
@@ -80,7 +80,7 @@ and the order is **Archimedean** when the algebra has an order unit and the func
 **Theorem (the duality theorem for the order).** The order of the self-adjoint elements and the order of the self-adjoint functionals are the two sides of the same duality:
 
 $$
-a\geq0 \iff \varphi(a)\geq0 \ \text{ for every } \varphi\in A^{*}_{+} , \qquad \varphi\geq0 \iff \varphi(a)\geq0 \ \text{ for every } a\in A_+ ,
+\boxed{\;a\geq0 \iff \varphi(a)\geq0 \ \text{ for every } \varphi\in A^{*}_{+} , \qquad \varphi\geq0 \iff \varphi(a)\geq0 \ \text{ for every } a\in A_+\;} ,
 $$
 
 and the **self-adjointness** is what makes the two readings consistent: on a non-self-adjoint functional the duality would fail on the imaginary directions of the algebra.

@@ -47,7 +47,7 @@ The **Jacobi elliptic functions** are $sn(u) = \sin\varphi$, $cn(u) = \cos\varph
 **Theorem.** The Jacobi functions are meromorphic and doubly periodic: $sn$ has periods $4K(k)$ and $2iK'(k)$, where $K'(k) = K(\sqrt{1-k^2})$, and
 
 $$
-sn^2u + cn^2u = 1 , \qquad dn^2u + k^2sn^2u = 1 , \qquad \frac{d}{du}sn\,u = cn\,u\,dn\,u .
+\boxed{\;sn^2u + cn^2u = 1 , \qquad dn^2u + k^2sn^2u = 1 , \qquad \frac{d}{du}sn\,u = cn\,u\,dn\,u\;} .
 $$
 
 **Proof.** The relations follow from the definitions: $sn^2 + cn^2 = \sin^2\varphi + \cos^2\varphi = 1$ and $dn^2 + k^2 sn^2 = 1 - k^2\sin^2\varphi + k^2\sin^2\varphi = 1$, and the derivative is the chain rule applied to the inverse of the integral, $du/d\varphi = 1/\sqrt{1-k^2\sin^2\varphi}$. The double periodicity is the standard extension of $u$ to the complex plane by analytic continuation, with the periods computed from the integral: the continuation of the inverse of an integral of the first kind past the branch points produces the periods $4K$ and $2iK'$, and the standard argument is cited from the literature.
@@ -65,13 +65,13 @@ $$
 **Theorem (the differential equation and the addition theorem).** With $g_2 = 60\sum' \omega^{-4}$ and $g_3 = 140\sum' \omega^{-6}$,
 
 $$
-\wp'(z)^2 = 4\wp(z)^3 - g_2\wp(z) - g_3 ,
+\boxed{\;\wp'(z)^2 = 4\wp(z)^3 - g_2\wp(z) - g_3\;} ,
 $$
 
 and for $u + v \notin \Lambda$,
 
 $$
-\wp(u+v) = -\wp(u) - \wp(v) + \frac{1}{4}\left( \frac{\wp'(u) - \wp'(v)}{\wp(u) - \wp(v)} \right)^2 .
+\boxed{\;\wp(u+v) = -\wp(u) - \wp(v) + \frac{1}{4}\left( \frac{\wp'(u) - \wp'(v)}{\wp(u) - \wp(v)} \right)^2\;} .
 $$
 
 **Proof.** Both identities are the standard ones. The differential equation is obtained by comparing the Laurent expansions at the origin: the function $\wp'^2 - 4\wp^3 + g_2\wp + g_3$ is doubly periodic with poles only at the lattice points, and its expansion at the origin has no terms of nonnegative order, so it is holomorphic and periodic, hence constant, and the constant is zero because the expansion begins with a vanishing term. The addition theorem is proved by the same method: the function of $z$ obtained by subtracting the right-hand side from $\wp(z + v)$ is doubly periodic with at most a simple pole and no others, hence constant, and the constant is evaluated at a point where the terms are known. Both arguments are cited from the literature.

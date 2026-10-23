@@ -38,7 +38,7 @@ $$
 **Theorem (the sandwiche is a homeomorphism).** Each $\Sigma_{a,b}$ is a homeomorphism of $G$, with inverse $\Sigma_{a^{-1},b^{-1}}$, and the assignment $(a,b) \mapsto \Sigma_{a,b}$ is a continuous homomorphism
 
 $$
-\pi : G\times G \longrightarrow \operatorname{Homeo}(G), \qquad \pi(a,b) = L_aR_b ,
+\boxed{\;\pi : G\times G \longrightarrow \operatorname{Homeo}(G), \qquad \pi(a,b) = L_aR_b\;} ,
 $$
 
 onto the subgroup $\mathfrak{S} = \{\Sigma_{a,b}\}$ of $\operatorname{Homeo}(G)$, whose kernel is $\ker\pi = \{(z,z^{-1}) : z \in Z(G)\}$; hence $\mathfrak{S} \cong (G\times G)/Z(G)$ as an abstract group.
@@ -60,7 +60,7 @@ $$
 **Theorem (factorisation and continuity).** $\Sigma^{\alpha}_{a,b} = \Sigma_{a,b} \circ \alpha$, so every signed sandwich is a homeomorphism, with inverse $(\Sigma^{\alpha}_{a,b})^{-1} = \Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}}$ when $a,b$ are inverted by $\alpha$, and the signed sandwiches are the coset
 
 $$
-\mathfrak{S}^{\alpha} = \{\Sigma^{\alpha}_{a,b} : a,b\in G\} = \mathfrak{S}\,\alpha .
+\boxed{\;\mathfrak{S}^{\alpha} = \{\Sigma^{\alpha}_{a,b} : a,b\in G\} = \mathfrak{S}\,\alpha\;} .
 $$
 
 **Proof.** $(\Sigma_{a,b}\circ\alpha)(x) = a\alpha(x)b$ is the definition; a composite of homeomorphisms is a homeomorphism, and the inverse is computed by solving $a\alpha(x)b = y$, which gives $x = \alpha(a^{-1}yb^{-1}) = \alpha(a)^{-1}\alpha(y)\alpha(b)^{-1}$ because $\alpha$ is an automorphism. The coset statement is the abstract one, and it is an identity of maps, so it survives the passage to $\operatorname{Homeo}(G)$.
@@ -106,7 +106,7 @@ so $\rho_a$ is an involution of the set $G$ exactly when $a\alpha(a) \in Z(G)$.
 **Theorem (the reflections are topological involutions).** A reflection $\rho_a$ is a continuous involutive automorphism of $G$; its fixed set
 
 $$
-\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}
+\boxed{\;\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}\;}
 $$
 
 is closed, it is a subgroup of $G$ containing $e$, and it is a coset of the fixed subgroup $G^\alpha$ when it is nonempty. Every element of the inverted subgroup $I(\sigma) = G^\alpha$ carries a reflection automatically.

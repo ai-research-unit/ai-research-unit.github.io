@@ -90,7 +90,7 @@ defined on the chains of the quotient by lifting a chain of the quotient to the 
 
 **Theorem (the invariant part is the homology of the quotient).** Let $T$ act on the finite CW complex $M$ and let $k$ be a ring in which $2$ is invertible. Then the orbit map induces an isomorphism
 $$
-H_*(M/T;k) \;\cong\; H_*(M;k)^{T},
+\boxed{\;H_*(M/T;k) \;\cong\; H_*(M;k)^{T}\;},
 $$
 and the transfer $p_*$ is a section of the map $p_*$ induced by $p$; the composite $p_* p_*$ is multiplication by $2$ and becomes the identity after inverting $2$.
 
@@ -110,7 +110,7 @@ the second expression being the one supplied by the eigenspace decomposition.
 
 **Theorem (Hopf trace formula for an involution).** Let $T$ act simplicially on a finite simplicial complex $K$, and suppose the fixed set $K^T$ is a subcomplex. Then
 $$
-L(T) = \chi(K^T),
+\boxed{\;L(T) = \chi(K^T)\;},
 $$
 the Euler characteristic of the fixed subcomplex.
 
@@ -136,7 +136,7 @@ The operator computes the fixed set through the homology, and the Smith theory i
 
 **Theorem (the Smith inequality).** Let $G = \mathbb{Z}/p$ act as above. Then the mod $p$ cohomology of the fixed set is finitely generated and satisfies
 $$
-\sum_i \dim_{\mathbb{F}_p} H^i(X^{G};\mathbb{F}_p) \;\le\; \sum_i \dim_{\mathbb{F}_p} H^i(X;\mathbb{F}_p).
+\boxed{\;\sum_i \dim_{\mathbb{F}_p} H^i(X^{G};\mathbb{F}_p) \;\le\; \sum_i \dim_{\mathbb{F}_p} H^i(X;\mathbb{F}_p)\;}.
 $$
 If equality holds, then the action has the same cohomological dimension as $X$ and the fixed set is a mod $p$ homology manifold of the same dimension; for a homology sphere this happens exactly when the fixed set has the dimension of $X$ and the action is trivial.
 

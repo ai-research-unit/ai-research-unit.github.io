@@ -32,9 +32,9 @@ where $\sigma$ acts on the functions and the tensors by the pullback $\sigma^{*}
 **Theorem.** The conjugation is an order-two algebra automorphism of the operator layer,
 
 $$
-\mathrm{ad}_\sigma(ST) = \mathrm{ad}_\sigma(S)\,\mathrm{ad}_\sigma(T), \qquad
+\boxed{\;\mathrm{ad}_\sigma(ST) = \mathrm{ad}_\sigma(S)\,\mathrm{ad}_\sigma(T), \qquad
 \mathrm{ad}_\sigma(\mathrm{id}) = \mathrm{id}, \qquad
-\mathrm{ad}_\sigma^2 = \mathrm{id},
+\mathrm{ad}_\sigma^2 = \mathrm{id}\;},
 $$
 
 it is an isometry of the layer for the pairing below, it preserves the order filtration and the associated graded, and it fixes the metric, the Levi-Civita connection, the curvature operator and the Riemannian density. Consequently it acts on the covariant derivative by $\mathrm{ad}_\sigma(\nabla_X) = \nabla_{d\sigma(X)}$ and on the curvature endomorphism by $\mathrm{ad}_\sigma(R(X,Y)) = R(d\sigma X, d\sigma Y)$.
@@ -57,9 +57,9 @@ and, when $2$ is invertible, the layer decomposes as $\mathcal{D}(M,g) = \mathca
 **Theorem.** The decomposition is direct and the multiplication is $\mathbb{Z}/2$-graded:
 
 $$
-\mathcal{D}_+\mathcal{D}_+ \subseteq \mathcal{D}_+, \qquad
+\boxed{\;\mathcal{D}_+\mathcal{D}_+ \subseteq \mathcal{D}_+, \qquad
 \mathcal{D}_+\mathcal{D}_- \subseteq \mathcal{D}_-, \qquad
-\mathcal{D}_-\mathcal{D}_- \subseteq \mathcal{D}_+,
+\mathcal{D}_-\mathcal{D}_- \subseteq \mathcal{D}_+\;},
 $$
 
 the fixed operators form a subalgebra, and the skew operators form a module over it. The metric, the Levi-Civita connection, the curvature, the curvature operator, the Laplacian and the geodesic operator are fixed operators; the operators that change sign under the involution are the skew ones, and the sign is the sign of the transformation of the operator by the reflection $y\mapsto-y$ of the normal coordinates.
@@ -99,7 +99,7 @@ $$
 so that the conjugation commutes with the adjoint:
 
 $$
-\bigl(\mathrm{ad}_\sigma(T)\bigr)^{*} = (\sigma\,T\,\sigma^{-1})^{*} = \sigma\,T^{*}\,\sigma^{-1} = \mathrm{ad}_\sigma(T^{*}).
+\boxed{\;\bigl(\mathrm{ad}_\sigma(T)\bigr)^{*} = (\sigma\,T\,\sigma^{-1})^{*} = \sigma\,T^{*}\,\sigma^{-1} = \mathrm{ad}_\sigma(T^{*})\;}.
 $$
 
 Consequently the involution preserves the self-adjoint operators and the skew-adjoint operators: a fixed self-adjoint operator has a fixed adjoint, and the eigenspaces $\mathcal{D}_{\pm}$ are stable under the adjoint operation when the operator is self-adjoint or skew-adjoint respectively.

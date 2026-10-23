@@ -35,7 +35,7 @@ so the adjoint of an unsigned sandwich is the unsigned sandwich of the adjoints,
 **Theorem (the signed case).** For all $A,B\in B(H)$,
 
 $$
-(S_{A,B})^*=S_{\alpha(A^*),\,\alpha(B^*)},
+\boxed{\;(S_{A,B})^*=S_{\alpha(A^*),\,\alpha(B^*)}\;},
 $$
 
 and since $\alpha$ is a $*$-automorphism, $\alpha(A^*)=\alpha(A)^*$; the adjoint of the signed sandwich is the signed sandwich of the $\alpha$-adjoined parameters, so the signed sandwiches form a family closed under the adjunction.
@@ -73,7 +73,7 @@ and $R_{\alpha(B^*)}\ell_{\alpha(A^*)}(X)=\alpha(A^*)\alpha(X)\alpha(B^*)$, whic
 **Theorem (isometry).** The signed sandwich is an isometry of $S_2(H)$ if and only if
 
 $$
-\alpha(A^*A)=\lambda I,\qquad \alpha(BB^*)=\lambda^{-1}I
+\boxed{\;\alpha(A^*A)=\lambda I,\qquad \alpha(BB^*)=\lambda^{-1}I\;}
 $$
 
 for a nonzero scalar $\lambda$; when $A$ and $B$ are unitary the condition holds with $\lambda=1$, and the adjoint is an isometry with the reciprocal data.
@@ -83,7 +83,7 @@ for a nonzero scalar $\lambda$; when $A$ and $B$ are unitary the condition holds
 **Theorem (the unitarity condition).** The signed sandwich $S_{A,B}$ is unitary on $S_2(H)$ if and only if there are nonzero scalars $\lambda,\mu$ with
 
 $$
-\alpha(A^*A)=\lambda I,\quad \alpha(BB^*)=\lambda^{-1}I,\quad AA^*=\mu I,\quad B^*B=\mu^{-1}I ;
+\boxed{\;\alpha(A^*A)=\lambda I,\quad \alpha(BB^*)=\lambda^{-1}I,\quad AA^*=\mu I,\quad B^*B=\mu^{-1}I\;} ;
 $$
 
 in particular, if $A$ and $B$ are unitary then $\lambda=\mu=1$ and $S_{A,B}$ is unitary, and conversely $S_{A,B}$ unitary with $A$ and $B$ invertible makes the four general products central scalars, so each parameter is unitary up to a central scalar.

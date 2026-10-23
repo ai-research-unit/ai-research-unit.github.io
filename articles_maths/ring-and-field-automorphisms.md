@@ -49,7 +49,7 @@ The set $\operatorname{Inn}(R) = \{\operatorname{conj}_u : u \in R^\times\}$ is 
 **Proposition.** The map $R^\times \to \operatorname{Aut}(R)$, $u \mapsto \operatorname{conj}_u$, is a group homomorphism with kernel $Z(R)^\times$, the group of units of the centre. Hence
 
 $$
-\operatorname{Inn}(R) \cong R^\times / Z(R)^\times, \qquad \operatorname{Inn}(R) \trianglelefteq \operatorname{Aut}(R).
+\boxed{\;\operatorname{Inn}(R) \cong R^\times / Z(R)^\times, \qquad \operatorname{Inn}(R) \trianglelefteq \operatorname{Aut}(R)\;}.
 $$
 
 **Proof.** $\operatorname{conj}_u \operatorname{conj}_v = \operatorname{conj}_{uv}$, and $\operatorname{conj}_u = \mathrm{id}$ exactly when $ur = ru$ for all $r$, that is, $u \in Z(R)$. Normality holds because $\sigma \operatorname{conj}_u \sigma^{-1} = \operatorname{conj}_{\sigma(u)}$ for $\sigma \in \operatorname{Aut}(R)$.
@@ -98,7 +98,7 @@ For a field $K$ and $G \leq \operatorname{Aut}(K)$, $K^G$ is the **fixed field**
 **Theorem (Artin).** Let $K$ be a field and $G$ a finite subgroup of $\operatorname{Aut}(K)$. Then $K/K^G$ is a Galois extension of degree $\lvert G \rvert$ and
 
 $$
-\operatorname{Gal}(K/K^G) = G, \qquad [K : K^G] = \lvert G \rvert.
+\boxed{\;\operatorname{Gal}(K/K^G) = G, \qquad [K : K^G] = \lvert G \rvert\;}.
 $$
 
 **Proof.** Artin's lemma gives $[K:K^G] \leq \lvert G \rvert < \infty$, so $K/K^G$ is finite, and then $\lvert \operatorname{Aut}(K/K^G) \rvert \leq [K:K^G]$, since this is the number of $K^G$-embeddings of $K$ into an algebraic closure. Also every $\sigma \in G$ fixes $K^G$ by definition, so $G \leq \operatorname{Aut}(K/K^G)$ and $\lvert G \rvert \leq \lvert \operatorname{Aut}(K/K^G) \rvert$. Chaining,
@@ -156,7 +156,7 @@ Let $K/F$ be a finite extension and let $E = K^{\operatorname{Gal}(K/F)}$ be the
 **Proposition (involutions and quadratic subextensions).** Let $K/F$ be a finite Galois extension with group of order divisible by $2$, and let $\sigma \in \operatorname{Gal}(K/F)$ have order $2$. Then the fixed field $K^{\langle\sigma\rangle}$ is an intermediate field with
 
 $$
-[K : K^{\langle\sigma\rangle}] = 2, \qquad [K^{\langle\sigma\rangle} : F] = \frac{[K:F]}{2}.
+\boxed{\;[K : K^{\langle\sigma\rangle}] = 2, \qquad [K^{\langle\sigma\rangle} : F] = \frac{[K:F]}{2}\;}.
 $$
 
 When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorname{char} F \neq 2$ then $K = F(\sqrt{a})$ for a nonsquare $a \in F$.

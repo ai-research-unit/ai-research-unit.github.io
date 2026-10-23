@@ -48,7 +48,7 @@ The element $q$ is the **quotient** and $r$ the **remainder** of the division of
 **Theorem (Euclidean algorithm).** Let $R$ be a Euclidean domain with degree function $N$, let $a, b \in R$ with $b \neq 0$, and define recursively
 
 $$
-r_{-1} = a, \quad r_0 = b, \quad r_{k-1} = q_k r_k + r_{k+1} \ \ (k \geq 0),
+\boxed{\;r_{-1} = a, \quad r_0 = b, \quad r_{k-1} = q_k r_k + r_{k+1} \ \ (k \geq 0)\;},
 $$
 
 where $r_{k+1}$ is the remainder of the division of $r_{k-1}$ by $r_k$, and the recursion stops at the first $k$ with $r_{k+1} = 0$. Then the recursion terminates, and the last nonzero remainder $r_k$ is a greatest common divisor of $a$ and $b$.
@@ -58,7 +58,7 @@ where $r_{k+1}$ is the remainder of the division of $r_{k-1}$ by $r_k$, and the 
 **Theorem (extended Euclidean algorithm).** With the notation of the algorithm, there are $x, y \in R$ with
 
 $$
-r_k = a x + b y .
+\boxed{\;r_k = a x + b y\;} .
 $$
 
 The coefficients are computed by running the divisions forwards as in the proof, or equivalently by substituting each division into the one above it, starting from the last nonzero remainder and working upwards.
@@ -106,7 +106,7 @@ with the degree function $N(a + bi) = a^2 + b^2$, which is multiplicative: $N(zw
 **Lemma (division with remainder in $\mathbb{Z}[i]$).** Let $z, w \in \mathbb{Z}[i]$ with $w \neq 0$. Then there exist $q, r \in \mathbb{Z}[i]$ with
 
 $$
-z = q w + r, \qquad N(r) \leq \tfrac{1}{2} N(w) < N(w).
+\boxed{\;z = q w + r, \qquad N(r) \leq \tfrac{1}{2} N(w) < N(w)\;}.
 $$
 
 **Proof.** Write $z/w = \alpha + \beta i$ with $\alpha, \beta \in \mathbb{Q}$, possible because $w \neq 0$ and $z/w = z\bar w / N(w)$. Choose integers $m, n$ with $|\alpha - m| \leq \tfrac12$ and $|\beta - n| \leq \tfrac12$, and set $q = m + ni \in \mathbb{Z}[i]$, $r = z - qw$. Then

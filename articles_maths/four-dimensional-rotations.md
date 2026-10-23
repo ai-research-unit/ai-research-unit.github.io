@@ -26,9 +26,7 @@ The restriction of a rotation to an invariant plane is an orthogonal map of that
 
 **Theorem (normal form; four dimensions).** Let $T\in SO(4)$. Then $T$ is orthogonally similar to the block diagonal matrix
 
-$$
-\mathrm{diag}\bigl(R(\alpha), R(\beta)\bigr), \qquad 0\le\beta\le\alpha\le\pi,
-$$
+$$ \boxed{\; \mathrm{diag}\bigl(R(\alpha), R(\beta)\bigr), \qquad 0\le\beta\le\alpha\le\pi \;} ,$$
 
 and the pair $(\alpha,\beta)$ is determined by $T$: the eigenvalues of $T$ are $\exp(\pm i\alpha)$ and $\exp(\pm i\beta)$, an eigenvalue $1$ counting as the angle $0$ and an eigenvalue $-1$ as the angle $\pi$. Consequently $T$ fixes a plane pointwise if and only if $\beta = 0$.
 
@@ -106,9 +104,7 @@ $$
 
 so that the two angles of the rotation satisfy
 
-$$
-\cos\alpha+\cos\beta = 2\,(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p), \qquad \cos\alpha\cos\beta = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1.
-$$
+$$ \boxed{\; \cos\alpha+\cos\beta = 2\,(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p), \qquad \cos\alpha\cos\beta = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1 \;} .$$
 
 In particular the angles depend only on the real parts of the two factors and not on their axes.
 
@@ -214,9 +210,7 @@ so that in the coordinates $(q_t,q_x,q_y,q_z)$ of $\tilde q = q_te_t+q_x\vec e_x
 
 **Theorem.** Let $T$ be a rotation whose two invariant planes of the normal form are $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$, with the angles $a$ and $b$ respectively. Then in Hopf coordinates $T$ acts as
 
-$$
-(\xi_x,\eta,\xi_y)\longmapsto(\xi_x+a,\ \eta,\ \xi_y+b).
-$$
+$$ \boxed{\; (\xi_x,\eta,\xi_y)\longmapsto(\xi_x+a,\ \eta,\ \xi_y+b) \;} .$$
 
 In particular the tori $\eta = \mathrm{const}$ and the Clifford torus are invariant, and the two angles of the rotation are the two angular velocities of the translation.
 

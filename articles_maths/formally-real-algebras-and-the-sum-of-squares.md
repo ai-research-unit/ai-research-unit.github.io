@@ -17,7 +17,7 @@ The article assumes *Real Forms and the Descent of an Algebra* for the conjugati
 **Theorem (Artin–Schreier).** A field $F$ is formally real if and only if it carries an **ordering**, a total order $\le$ with
 
 $$
-x\le y \Rightarrow x+z\le y+z, \qquad 0\le x, \ 0\le y \Rightarrow 0\le xy, \qquad 0\le x^2 .
+\boxed{\;x\le y \Rightarrow x+z\le y+z, \qquad 0\le x, \ 0\le y \Rightarrow 0\le xy, \qquad 0\le x^2\;} .
 $$
 
 In that case every sum of squares is $\ge 0$, and the ordering is exactly a choice of the signs; the field is **real closed** when it admits one ordering and no proper algebraic extension with the same property, and then every element has a square root or its negative does.
@@ -57,7 +57,7 @@ a subset of $H(A)$ containing $0$ and every square, closed under addition, and c
 **Proposition.** $\Sigma^2 H(A)$ is a **cone**: closed under addition and under multiplication by squares, and containing $1$ when the involution fixes the unit; the algebra is formally real exactly when
 
 $$
-\Sigma^2 H(A) \cap \bigl(-\Sigma^2 H(A)\bigr) = \{0\} .
+\boxed{\;\Sigma^2 H(A) \cap \bigl(-\Sigma^2 H(A)\bigr) = \{0\}\;} .
 $$
 
 *Proof.* Closedness is by the definition of a sum and the multiplicativity of the square; the intersection condition says that a sum of squares and its negative can both be sums of squares only if both are $0$, which is the formal reality read on differences.

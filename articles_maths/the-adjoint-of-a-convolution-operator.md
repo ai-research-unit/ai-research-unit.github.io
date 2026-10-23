@@ -20,7 +20,7 @@ on $L^{n}(G)$, $1\leq p\leq\infty$, and in particular on $L^2(G)$; the **Haar pa
 **Theorem (the adjoint is convolution by the involution).** For every $f\in L^1(G)$ the convolution operator on $L^2(G)$ has adjoint
 
 $$
-\bigl(C_f\bigr)^* = C_{f^*}, \qquad f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1} ,
+\boxed{\;\bigl(C_f\bigr)^* = C_{f^*}, \qquad f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}\;} ,
 $$
 
 with respect to the Haar pairing, for every locally compact $G$; in the unimodular case the right convolution has the mirror adjoint $(R_f)^* = R_{f^*}$.
@@ -36,7 +36,7 @@ with respect to the Haar pairing, for every locally compact $G$; in the unimodul
 **Theorem (the map is an injective `*`-homomorphism).** The assignment $f\mapsto C_f$ is an injective `*`-homomorphism of the Banach `*`-algebra $L^1(G)$ into the `*`-algebra of bounded operators on $L^2(G)$,
 
 $$
-C_{f*g} = C_fC_g, \qquad (C_f)^* = C_{f^*}, \qquad \|C_f\|\leq\|f\|_1 ,
+\boxed{\;C_{f*g} = C_fC_g, \qquad (C_f)^* = C_{f^*}, \qquad \|C_f\|\leq\|f\|_1\;} ,
 $$
 
 whose image is a `*`-subalgebra; the map $f\mapsto C_f$ is the left regular representation $\lambda$, and its injectivity is the faithfulness of $\lambda$.

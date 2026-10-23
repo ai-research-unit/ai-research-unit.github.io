@@ -113,8 +113,8 @@ so its two solutions are
 $$
 \boxed{\;
 x_+ = \frac{Q_t+\sqrt{n}}{2}, \qquad x_- = \frac{Q_t-\sqrt{n}}{2}
-\;}
-$$,
+\;},
+$$
 
 where $\sqrt{n}$ is either square root of the complex number $n$; the choice of square root only exchanges $x_+$ and $x_-$.
 
@@ -189,8 +189,8 @@ The generic case is four roots. The complex square $(\vec Q,\vec Q)$ of the vect
 $$
 \boxed{\;
 \tilde\Xi = \pm\Bigl(\sqrt{x_+}\,e_t+\frac{\vec Q}{2\sqrt{x_+}}\Bigr), \qquad \tilde\Xi = \pm\Bigl(\sqrt{x_-}\,e_t+\frac{\vec Q}{2\sqrt{x_-}}\Bigr)
-\;}
-$$.
+\;}.
+$$
 
 **A complex scalar.** If $\tilde Q$ is a complex scalar, $\tilde Q=Q_te_t$, then the root set is the two elements $\pm\sqrt{Q_t}e_t$ together with the four-real-parameter family of pure $\vec\Xi$ with $(\vec\Xi,\vec\Xi)=-Q_t$.
 

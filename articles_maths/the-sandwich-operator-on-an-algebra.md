@@ -85,7 +85,7 @@ The sandwich is thus the general shape of an operator that is right $A$-linear; 
 **Theorem.** For all $a, b, c, d \in A$,
 
 $$
-T_{a,b} \circ T_{c,d} = T_{a c,\, d b}.
+\boxed{\;T_{a,b} \circ T_{c,d} = T_{a c,\, d b}\;}.
 $$
 
 *Proof.* Apply the right-hand operator first:
@@ -115,7 +115,7 @@ The sandwich space is therefore the image of the **enveloping algebra** $A \otim
 **Theorem.** Let $A$ be finite-dimensional over $k$. The sandwich $T_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
 
 $$
-T_{a,b}^{-1} = T_{a^{-1},\, b^{-1}} .
+\boxed{\;T_{a,b}^{-1} = T_{a^{-1},\, b^{-1}}\;} .
 $$
 
 *Proof.* If $a$ and $b$ are units, the composition rule gives $T_{a,b}T_{a^{-1},b^{-1}} = T_{1,1}$ and $T_{a^{-1},b^{-1}}T_{a,b} = T_{1,1}$. Conversely suppose $T_{a,b} = L(a)R(b)$ invertible; then $L(a)$ is surjective and $R(b)$ is injective. Since $A$ is finite-dimensional, $R(b)$ is bijective, so there is $c$ with $R(b)(c) = cb = 1$, and an element with a one-sided inverse in a finite-dimensional algebra is a unit; hence $b$ is a unit. Then $L(a) = T_{a,b}R(b)^{-1}$ is invertible, so $a$ is a unit as well.
@@ -145,7 +145,7 @@ The two readings of the definition are the following. Bracket the product to the
 **Theorem.** For all $a, b \in A$,
 
 $$
-L(a) R(b) - R(b) L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b) .
+\boxed{\;L(a) R(b) - R(b) L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b)\;} .
 $$
 
 Equivalently, $L(a)$ and $R(b)$ commute for all $a$ and $b$ if and only if the product is associative.

@@ -14,7 +14,7 @@ Throughout, $A$ is a unital $\mathrm{C}^*$-algebra over $\mathbb{C}$ with involu
 **Theorem (the continuous functional calculus).** Let $a$ be self-adjoint. There is a unique unital $*$-homomorphism
 
 $$
-\Phi_a : C(\sigma(a)) \to A , \qquad f \mapsto f(a) ,
+\boxed{\;\Phi_a : C(\sigma(a)) \to A , \qquad f \mapsto f(a)\;} ,
 $$
 
 and it is an isometric $*$-isomorphism onto $C^*(a,1)$; it sends the identity function to $a$, the constant $1$ to the unit, and conjugation to the involution, $\overline{f}(a) = f(a)^*$. For a polynomial $p$, $p(a)$ is the element computed by the algebra, so the calculus extends the polynomial calculus.
@@ -24,7 +24,7 @@ and it is an isometric $*$-isomorphism onto $C^*(a,1)$; it sends the identity fu
 **Theorem (the spectral mapping theorem).** For self-adjoint $a$ and continuous $f : \sigma(a) \to \mathbb{C}$,
 
 $$
-\sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr) .
+\boxed{\;\sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr)\;} .
 $$
 
 **Proof.** Under the identification of $C^*(a,1)$ with $C(\sigma(a))$, the element $f(a)$ is the function $f$, whose spectrum as an element of the algebra $C(\sigma(a))$ is its range $f(\sigma(a))$; the spectrum is an invariant of the algebra $C^*(a,1)$ because invertibility in a unital $\mathrm{C}^*$-subalgebra with the same unit is the same as invertibility in $A$.
@@ -66,7 +66,7 @@ where $\Gamma$ is a finite cycle in the domain of $f$ surrounding $\sigma(a)$; t
 **Theorem (the Borel calculus, named).** For a self-adjoint operator $a \in B(H)$ the calculus extends to the bounded Borel functions on $\sigma(a)$ and the spectral theorem delivers a **projection-valued measure** $E$ on the Borel sets of $\sigma(a)$ with
 
 $$
-a = \int_{\sigma(a)} \lambda\,dE(\lambda) , \qquad f(a) = \int_{\sigma(a)} f\,dE .
+\boxed{\;a = \int_{\sigma(a)} \lambda\,dE(\lambda) , \qquad f(a) = \int_{\sigma(a)} f\,dE\;} .
 $$
 
 The measure $E$, the measurable calculus and the spectral decomposition are *Operator Algebras*; here they are named and deferred.

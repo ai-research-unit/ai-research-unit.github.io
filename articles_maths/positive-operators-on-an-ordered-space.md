@@ -24,7 +24,7 @@ Let $E$ and $F$ be ordered vector spaces and let $L(E,F)$ be the real vector spa
 **Definition.** A linear map $T\in L(E,F)$ is **positive**, written $T\geq0$, when
 
 $$
-x\in E_+ \implies Tx\in F_+ .
+\boxed{\;x\in E_+ \implies Tx\in F_+\;} .
 $$
 
 It is **strictly positive** when it carries every nonzero element of $E_+$ to a nonzero element of $F_+$. The **operator order** on $L(E,F)$ is $S\leq T$ when $T - S\geq0$.
@@ -58,7 +58,7 @@ It is **strictly positive** when it carries every nonzero element of $E_+$ to a 
 **Proposition (a positive operator is bounded, and its norm is attained at the unit).** Let $E$ and $F$ have order units $u$ and $v$, with order-unit norms $\|\cdot\|_u$ and $\|\cdot\|_v$, and suppose $E$ is Archimedean. A positive operator $T\in L(E,F)$ is bounded for the order-unit norms, and
 
 $$
-\|T\| = \|Tu\|_v .
+\boxed{\;\|T\| = \|Tu\|_v\;} .
 $$
 
 *Proof.* If $\|x\|_u\leq1$ then $-\!u\leq x\leq u$, so $-\!Tu\leq Tx\leq Tu$ by positivity, which is $\|Tx\|_v\leq\|Tu\|_v$; conversely $\|u\|_u = 1$ gives the reverse inequality for the operator norm, which is $\sup\{\|Tx\|_v : \|x\|_u\leq1\}$.

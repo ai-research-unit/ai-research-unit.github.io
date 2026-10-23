@@ -85,8 +85,7 @@ The word **polar** names the two factors, not two independent exponentials. The 
 
 **Theorem.** Every $Q\neq0$ has exactly one exponential polar decomposition with the principal angle,
 
-$$
-Q=\exp(\ln r)\exp(i\theta), \qquad r>0,\quad \theta\in(-\pi,\pi],
+$$ \boxed{\;Q=\exp(\ln r)\exp(i\theta), \qquad r>0,\quad \theta\in(-\pi,\pi]\;},
 $$
 
 namely
@@ -119,9 +118,8 @@ The data of the principal decomposition are collected in one table.
 
 Because the exponential is a homomorphism, multiplication adds the exponents. In the coordinates $(q_{\log},q'_{\log})=(\ln r,\theta)$,
 
-$$
-(\ln r_1,\theta_1)*(\ln r_2,\theta_2)
-=\bigl(\ln(r_1r_2),\ \theta_1+\theta_2 \bmod 2\pi\bigr).
+$$ \boxed{\;(\ln r_1,\theta_1)*(\ln r_2,\theta_2)
+=\bigl(\ln(r_1r_2),\ \theta_1+\theta_2 \bmod 2\pi\bigr)\;}.
 $$
 
 The logarithmic scale and the angle do not mix. The group of units is the product of a line and a circle.
@@ -211,8 +209,7 @@ $$
 
 and the first isomorphism theorem gives
 
-$$
-\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}
+$$ \boxed{\;\mathbb{C}^\times\cong\mathbb{C}/2\pi i\mathbb{Z}\;}
 $$
 
 as groups and as real manifolds. The quotient is a cylinder: one line $\ln r$ and one circle $\theta\bmod2\pi$. The exponential coordinates are global on the quotient; the principal strip is a fundamental domain.

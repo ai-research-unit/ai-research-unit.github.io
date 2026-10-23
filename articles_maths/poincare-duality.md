@@ -57,7 +57,7 @@ a copy of $\mathbb{Z}$ canonically attached to $x$ up to sign.
 **Theorem (Poincaré duality).** Let $M$ be a closed connected orientable $n$-manifold with fundamental class $[M] \in H_n(M;\mathbb{Z})$, and let $G$ be any coefficient module. Then the cap product
 
 $$
--\frown [M] : H^k(M;G) \longrightarrow H_{n-k}(M;G)
+\boxed{\;-\frown [M] : H^k(M;G) \longrightarrow H_{n-k}(M;G)\;}
 $$
 
 is an isomorphism for every $k$. With coefficients in a ring $R$, and with $[M] \in H_n(M;R)$ the image of the integral fundamental class, the same statement holds.
@@ -139,8 +139,8 @@ where $\Delta : M \to M \times M$ is the diagonal and $\Delta^*$ the induced map
 **Theorem (Lefschetz duality).** Let $M$ be a compact connected orientable $n$-manifold with boundary $\partial M$, oriented by a relative fundamental class $[M,\partial M]\in H_n(M,\partial M;\mathbb{Z})$. Then cap product with $[M,\partial M]$ gives isomorphisms
 
 $$
--\frown[M,\partial M] : H^k(M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M,\partial M;\mathbb{Z}), \qquad
--\frown[M,\partial M] : H^k(M,\partial M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb{Z}),
+\boxed{\;-\frown[M,\partial M] : H^k(M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M,\partial M;\mathbb{Z}), \qquad
+-\frown[M,\partial M] : H^k(M,\partial M;\mathbb{Z})\xrightarrow{\ \cong\ }H_{n-k}(M;\mathbb{Z})\;},
 $$
 
 and, with coefficients in an arbitrary module $G$, the same statements hold. Moreover, if $M$ is connected, non-compact and orientable, with $H^*_c$ denoting cohomology with compact supports — the colimit of the cohomology of the compact subsets — then
@@ -160,7 +160,7 @@ $$
 **Theorem (the Poincaré dual of a submanifold).** Let $M$ be a closed connected orientable $n$-manifold and let $S\subseteq M$ be a closed connected orientable $k$-submanifold, oriented and with inclusion $i : S\to M$. Then there is a class $\eta_S\in H^{n-k}(M;\mathbb{Z})$, unique, the **Poincaré dual** of $S$, such that
 
 $$
-\eta_S\frown[M] = i_*[S]\in H_k(M;\mathbb{Z}),
+\boxed{\;\eta_S\frown[M] = i_*[S]\in H_k(M;\mathbb{Z})\;},
 $$
 
 and it is characterised by the property that its restriction to a small neighbourhood of $S$ is the image of the generator of $H^{n-k}(M,M\setminus S;\mathbb{Z})\cong\mathbb{Z}$ under the excision isomorphism $H^{n-k}(M,M\setminus S)\cong H^{n-k}(M)$.

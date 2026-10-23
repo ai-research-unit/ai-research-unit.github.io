@@ -76,7 +76,7 @@ $$
 the integral over the oriented interval of the curve of cohomology classes; the **Flux group** $\Gamma\subseteq H^1(M;\mathbb{R})$ is the image of the flux map on $\pi_1(\mathrm{Symp}_0(M,\omega))$. The flux is independent of the isotopy within the homotopy class, it vanishes for the isotopies inside $\mathrm{Ham}(M,\omega)$, and the exact sequence
 
 $$
-1\longrightarrow \mathrm{Ham}(M,\omega)\longrightarrow \mathrm{Symp}_0(M,\omega)\xrightarrow{\ \operatorname{Flux}\ } H^1(M;\mathbb{R})/\Gamma
+\boxed{\;1\longrightarrow \mathrm{Ham}(M,\omega)\longrightarrow \mathrm{Symp}_0(M,\omega)\xrightarrow{\ \operatorname{Flux}\ } H^1(M;\mathbb{R})/\Gamma\;}
 $$
 
 expresses the Hamiltonian group as the kernel of the flux.

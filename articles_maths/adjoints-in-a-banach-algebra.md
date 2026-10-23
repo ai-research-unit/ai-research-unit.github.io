@@ -16,7 +16,7 @@ Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with an involution 
 **Proposition (the calculus of the adjoint).** For all $a,b \in A$,
 
 $$
-(ab)^* = b^*a^* , \qquad (a + b)^* = a^* + b^* , \qquad (\lambda a)^* = \bar\lambda a^* , \qquad a^{**} = a ,
+\boxed{\;(ab)^* = b^*a^* , \qquad (a + b)^* = a^* + b^* , \qquad (\lambda a)^* = \bar\lambda a^* , \qquad a^{**} = a\;} ,
 $$
 
 and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves invertibility and $\sigma(a^*) = \overline{\sigma(a)}$. For every integer $n$, $(a^n)^* = (a^*)^n$, and if $a$ is invertible the identity extends to all integers; the adjoint commutes with the exponential, $(\exp(a))^* = \exp(a^*)$, when the involution is continuous.
@@ -54,7 +54,7 @@ and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves inv
 **Proposition (the adjoint and the Gelfand transform).** In a commutative unital $\mathrm{C}^*$-algebra the adjoint corresponds to complex conjugation of the Gelfand transform,
 
 $$
-\mathcal F(a^*) = \overline{\mathcal F a} ,
+\boxed{\;\mathcal F(a^*) = \overline{\mathcal F a}\;} ,
 $$
 
 so the self-adjoint elements are the elements with real-valued transforms, the positive elements those with non-negative transforms and the unitary elements those with unimodular transforms; the Gelfand transform is a `*`-isomorphism onto $C(\operatorname{Max}(A))$ and carries the adjoint calculus to pointwise conjugation.

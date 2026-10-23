@@ -39,7 +39,7 @@ $$
 and the adjunctions are
 
 $$
-L_R \dashv (T \mapsto R \backslash T), \qquad (S \mapsto S ; R) \dashv (T \mapsto T / R) .
+\boxed{\;L_R \dashv (T \mapsto R \backslash T), \qquad (S \mapsto S ; R) \dashv (T \mapsto T / R)\;} .
 $$
 
 The unit and counit are $S \subseteq R \backslash (R;S)$, $R ; (R \backslash T) \subseteq T$ on the
@@ -66,7 +66,7 @@ operators $F$ on relations by $\varphi(F)(R) = (F(R^{-1}))^{-1}$, that is, conju
 **Theorem.** The involution exchanges the two composition operators and substitutes the converse:
 
 $$
-\varphi(L_R) = R_{R^{-1}}, \qquad \varphi(R_R) = L_{R^{-1}} .
+\boxed{\;\varphi(L_R) = R_{R^{-1}}, \qquad \varphi(R_R) = L_{R^{-1}}\;} .
 $$
 
 **Proof.** For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ;
@@ -87,7 +87,7 @@ residuation: if $L_R$ has the right adjoint $K_R : T \mapsto R \backslash T$, th
 **left** adjoint of $\varphi(L_R) = R_{R^{-1}}$, and explicitly
 
 $$
-\varphi(K_R)(T) = \overline{\overline{T} ; R} = T / R^{-1} .
+\boxed{\;\varphi(K_R)(T) = \overline{\overline{T} ; R} = T / R^{-1}\;} .
 $$
 
 **Proof.** The adjunction-reversal of *Involutions of the Operator Layer* applied to $L_R \dashv K_R$

@@ -67,7 +67,7 @@ $$
 $$
 The flat is not multiplicative, so it is not an involution of the algebra, although its square is the identity; it is antilinear, it exchanges the star's fixed and anti-fixed spaces, and it twists the product by a sign:
 $$
-\breve Q^{\flat}=-\breve Q^{*},\qquad (\breve Q^{\flat})^{\flat}=\breve Q,\qquad (\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}.
+\boxed{\; \breve Q^{\flat}=-\breve Q^{*},\qquad (\breve Q^{\flat})^{\flat}=\breve Q,\qquad (\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat} \;}.
 $$
 
 *Proof.* The star is the composite of two commuting involutions, so it is an involution; it is antilinear as the composite of an antilinear and a linear map; on the basis, $1$ and $ij$ are fixed ($\overline{ij}=-ij$ while $(ij)_{\mathrm{ts}}=-ij$, so $(ij)^{*}=(-ij)_{\mathrm{ts}}=ij$), while $i$ and $j$ are negated. The multiplicativity of the star follows from that of the bar and the tessarine sign. For the flat, $\breve Q^{\flat}=-\breve Q^{*}$ is a scalar multiple of an involution, so its square is the identity, and $\breve Q^{\flat}=\breve Q$ is $\breve Q^{*}=-\breve Q$, which is the anti-fixed condition of the star read with the sign changed; the last display is $(-\breve Q_{1}^{*}\breve Q_{2}^{*})=-(\breve Q_{1}^{*}\breve Q_{2}^{*})$ and $\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}=(+\breve Q_{1}^{*}\breve Q_{2}^{*})$, whose sum with $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{*}\breve Q_{2}^{*}$ is zero.
@@ -111,9 +111,11 @@ $$
 
 so that each non-identity member is the composite of the other two,
 $$
+\boxed{\;
 {}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}={}_{\mathrm{ts}}\circ\bar{\cdot},\qquad
 \bar{\cdot}={}_{\mathrm{ts}}\circ{}^{*}={}^{*}\circ{}_{\mathrm{ts}},\qquad
-{}_{\mathrm{ts}}={}^{*}\circ\bar{\cdot}=\bar{\cdot}\circ{}^{*}.
+{}_{\mathrm{ts}}={}^{*}\circ\bar{\cdot}=\bar{\cdot}\circ{}^{*}
+\;}.
 $$
 
 *Proof.* The maps commute pairwise, since the bar and the tessarine sign act on different data — the coefficients and the second slot — and the star is their composite; each is an involution; and no two of the three non-identity members are equal, as their actions on the basis differ (for instance the bar fixes $j$ while the star negates it). A group of three commuting involutions with the pairwise products the third is $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$.
@@ -143,7 +145,7 @@ The four displays are the four rows of *Reduced Biquaternions as a Vector Space 
 
 **Theorem (the three marks are automorphisms).** Each of the bar, the tessarine sign and the star satisfies
 $$
-\sigma(\breve Q_{1}\breve Q_{2})=\sigma(\breve Q_{1})\sigma(\breve Q_{2}),\qquad \sigma(1)=1,\qquad \sigma(\lambda \breve Q)=\lambda\sigma(\breve Q)\ \text{or}\ \bar\lambda\sigma(\breve Q),
+\boxed{\; \sigma(\breve Q_{1}\breve Q_{2})=\sigma(\breve Q_{1})\sigma(\breve Q_{2}),\qquad \sigma(1)=1,\qquad \sigma(\lambda \breve Q)=\lambda\sigma(\breve Q)\ \text{or}\ \bar\lambda\sigma(\breve Q) \;},
 $$
 so each is a ring automorphism, the tessarine sign over $\mathbb{C}$ and the bar and the star over $\mathbb{C}$ with the conjugation.
 

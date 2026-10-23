@@ -12,7 +12,7 @@ The base is a field $K$ of characteristic not two, $A$ a finite-dimensional grad
 **Theorem.** Let $a$ be a unit with $a\,\alpha(a)=1$. Then the signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint:
 
 $$
-(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{a,a^{-1}} .
+\boxed{\;(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{a,a^{-1}}\;} .
 $$
 
 **Proof.** The adjoint formula of *The Signed Adjoint Sandwich on a Graded Algebra* gives

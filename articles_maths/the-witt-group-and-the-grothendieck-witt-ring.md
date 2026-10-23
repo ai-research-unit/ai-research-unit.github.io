@@ -116,7 +116,7 @@ $$
 **Theorem.** The signed discriminant descends to a well-defined function
 
 $$
-d : W(F) \longrightarrow F^\times/(F^\times)^2,
+\boxed{\;d : W(F) \longrightarrow F^\times/(F^\times)^2\;},
 $$
 
 which is a group homomorphism on the fundamental ideal $I$ and vanishes there exactly on $I^2$, the square of the fundamental ideal. Consequently $d$ induces an isomorphism
@@ -208,7 +208,7 @@ The statement is the dimension-$6$ companion of the corollary above, and its pro
 **Theorem (standard).** There is an injective homomorphism, the **Hasse invariant**,
 
 $$
-\vec e_y : I^2/I^3 \hookrightarrow \operatorname{Br}_2(F),
+\boxed{\;\vec e_y : I^2/I^3 \hookrightarrow \operatorname{Br}_2(F)\;},
 $$
 
 into the two-torsion of the Brauer group of $F$, which is an isomorphism when $F$ is a local or global field and, by Merkurjev's theorem, an isomorphism for every field.
@@ -294,7 +294,7 @@ Since $W(\mathbb{R}) = \mathbb{Z}$, the fundamental ideal is the kernel of reduc
 **Theorem (standard).** Let $\mathbb{F}_q$ be a finite field of odd order. Then
 
 $$
-W(\mathbb{F}_q) \cong \begin{cases} \mathbb{Z}/4\mathbb{Z}, & q \equiv 3 \pmod 4, \\ \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}, & q \equiv 1 \pmod 4. \end{cases}
+\boxed{\;W(\mathbb{F}_q) \cong \begin{cases} \mathbb{Z}/4\mathbb{Z}, & q \equiv 3 \pmod 4, \\ \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}, & q \equiv 1 \pmod 4. \end{cases}\;}
 $$
 
 The generator in the first case is the class of $\langle 1\rangle$, of order four, with $2[\langle 1\rangle] = [\langle 1, 1\rangle]$ the nonzero class of the anisotropic plane; in the second case $-1$ is a square, the form $\langle 1, 1\rangle$ is hyperbolic so $2[\langle 1\rangle] = 0$, and the second generator is the class of the anisotropic plane $\langle 1, a\rangle$ for any nonsquare $a$.

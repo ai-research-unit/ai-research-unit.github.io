@@ -193,8 +193,8 @@ principal congruence $\theta(a, b)$ is the smallest congruence with $a \mathrel{
 of $L$ form a complete lattice in which
 
 $$
-\bigwedge_i \theta_i = \bigcap_i \theta_i, \qquad
-\bigvee_i \theta_i = \text{the smallest congruence containing } \textstyle\bigcup_i \theta_i .
+\boxed{\;\bigwedge_i \theta_i = \bigcap_i \theta_i, \qquad
+\bigvee_i \theta_i = \text{the smallest congruence containing } \textstyle\bigcup_i \theta_i\;} .
 $$
 
 **Proof.** The intersection of equivalence relations is an equivalence relation, and it inherits
@@ -229,7 +229,7 @@ $\wedge$ is the same. The second statement is the definition of the quotient ope
 homomorphism. Then the map
 
 $$
-\bar h : L/{\ker h} \to M, \qquad \bar h([x]) = h(x),
+\boxed{\;\bar h : L/{\ker h} \to M, \qquad \bar h([x]) = h(x)\;},
 $$
 
 is a lattice isomorphism.
@@ -252,7 +252,7 @@ categories.
 distributive: for congruences $\theta_1, \theta_2, \theta_3$,
 
 $$
-\theta_1 \wedge (\theta_2 \vee \theta_3) = (\theta_1 \wedge \theta_2) \vee (\theta_1 \wedge \theta_3).
+\boxed{\;\theta_1 \wedge (\theta_2 \vee \theta_3) = (\theta_1 \wedge \theta_2) \vee (\theta_1 \wedge \theta_3)\;}.
 $$
 
 The theorem is quoted from the literature; its proof is not reproduced, and the finite instances are

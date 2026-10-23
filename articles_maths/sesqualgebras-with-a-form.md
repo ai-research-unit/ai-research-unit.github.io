@@ -27,7 +27,7 @@ for all $a \in R$ and all $x, y \in A$. The form is **Hermitian** when $h(y,x) =
 **Definition.** A **sesqualgebra with a form** is the quadruple $(A, *, h)$ with $A$ unital and associative, $*$ a $\varsigma$-semilinear involution, and $h$ a Hermitian form satisfying the **compatibility**
 
 $$
-h(xy, z) = h(y, x^{*}z) \qquad \text{for all } x, y, z \in A .
+\boxed{\;h(xy, z) = h(y, x^{*}z) \qquad \text{for all } x, y, z \in A\;} .
 $$
 
 Two of the three data are algebraic — the product and the involution — and the third is the degree-2 datum of the category. The compatibility is what forbids an arbitrary pairing, and it is the reason the form is not a decoration but a structure of the algebra.
@@ -37,7 +37,7 @@ Two of the three data are algebraic — the product and the involution — and t
 **Proposition.** The compatibility is equivalent to
 
 $$
-h(x, yz) = h(y^{*}x, z) \qquad \text{for all } x, y, z \in A .
+\boxed{\;h(x, yz) = h(y^{*}x, z) \qquad \text{for all } x, y, z \in A\;} .
 $$
 
 **Proof.** Read the compatibility with the pair $(x,y)$ replaced by $(y^{*}, x)$: it becomes $h(y^{*}x, z) = h(x, y^{**}z) = h(x, yz)$, which is the second identity. The converse is the same substitution read backwards.

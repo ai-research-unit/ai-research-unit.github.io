@@ -44,8 +44,8 @@ The row is the **dual** object: the split-quaternion norm $\langle\cdot\rangle_{
 $$
 \boxed{\;
 \langle\tilde q_1,\tilde q_2\rangle = X^{\mathsf{T}} G Y, \qquad G = \operatorname{diag}(1,1,-1,-1)
-\;}
-$$.
+\;}.
+$$
 
 So the row is the dual vector paired with the column through $G$, and the two are equals only because the pairing is non-degenerate; when $G$ is replaced by the identity the pairing is the Euclidean one and the dual is the plain transpose.
 
@@ -106,8 +106,8 @@ The split-quaternion norm of $\tilde q$ is
 $$
 \boxed{\;
 \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2
-\;}
-$$,
+\;},
+$$
 
 of **signature $(2,2)$**, with polarisation $\langle\tilde q_1,\tilde q_2\rangle = q_{1t} q_{2t} + q_{1x} q_{2x} - q_{1y} q_{2y} - q_{1z} q_{2z}$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $\vec e_x$ directions being positive and the $\vec e_y, \vec e_z$ directions negative. Under the matrix model it is the determinant, $\langle\tilde q\rangle_{\natural} = \det \mathsf{M}_2(\tilde q)$.
 
@@ -129,8 +129,8 @@ Only the scalar restriction is definite; the others are indefinite, and their nu
 $$
 \boxed{\;
 \langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 \neq 0
-\;}
-$$,
+\;},
+$$
 
 and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural} = \dfrac{q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z}{q_t^2+q_x^2-q_y^2-q_z^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.
 

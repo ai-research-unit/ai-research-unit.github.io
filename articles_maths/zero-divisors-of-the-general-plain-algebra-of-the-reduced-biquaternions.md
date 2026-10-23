@@ -29,7 +29,7 @@ $$
 
 **Theorem (the equation).** The null cone is the union of the two complex lines
 $$
-\mathcal{N}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-,
+\boxed{\; \mathcal{N}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_- \;},
 $$
 with $\mathbb{C}^{\times}=\mathbb{C}\setminus\{0\}$.
 
@@ -82,7 +82,7 @@ the null cone is the set where **both** vanish, the union of the two complex lin
 
 **Theorem (the product of two zero divisors).** For $Q_{+},Q_{+}',Q_{-},Q_{-}'\in\mathbb{C}$,
 $$
-(Q_{+}\Pi_+)(Q_{+}'\Pi_+)=(Q_{+}Q_{+}')\Pi_+,\qquad (Q_{-}\Pi_-)(Q_{-}'\Pi_-)=(Q_{-}Q_{-}')\Pi_-,\qquad (Q_{+}\Pi_+)(Q_{-}\Pi_-)=0,
+\boxed{\; (Q_{+}\Pi_+)(Q_{+}'\Pi_+)=(Q_{+}Q_{+}')\Pi_+,\qquad (Q_{-}\Pi_-)(Q_{-}'\Pi_-)=(Q_{-}Q_{-}')\Pi_-,\qquad (Q_{+}\Pi_+)(Q_{-}\Pi_-)=0 \;},
 $$
 so the cone together with $0$ is closed under multiplication, and the product of two elements of different lines vanishes.
 
@@ -116,7 +116,7 @@ and the annihilator of a nonzero element of one line is exactly the other line.
 
 **Theorem (the complement).** The complement of the cone is the group of units,
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\}=\mathbb{B}_{\mathrm{r}}\setminus\bigl(\mathcal{N}\cup\{0\}\bigr)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+\boxed{\; \mathbb{B}_{\mathrm{r}}^{\times}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\}=\mathbb{B}_{\mathrm{r}}\setminus\bigl(\mathcal{N}\cup\{0\}\bigr)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times} \;},
 $$
 and it is **connected**.
 

@@ -12,7 +12,7 @@ It assumes *Matrix Rings with an Involution*, *Involutions of the Endomorphism R
 **Theorem.** Let $\Phi$ be invertible and let the sesquilinear form be $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$ on $R^n$. Then
 
 $$
-\langle Xx,y\rangle = \langle x, X^{*}y\rangle , \qquad X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi ,
+\boxed{\;\langle Xx,y\rangle = \langle x, X^{*}y\rangle , \qquad X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi\;} ,
 $$
 
 so $X\mapsto X^{*}$ is the adjoint involution of $M_n(R)$ determined by $\Phi$ and $\sigma$; for $\Phi = I$ it is $X\mapsto \sigma(X)^{\mathrm t}$, and for $\sigma = \mathrm{id}$ and $\Phi = I$ it is the transpose.
@@ -42,7 +42,7 @@ the middle factor being $\sigma(X)^{\mathrm t}$; and with $\Phi = I$ the same in
 **Proposition (the unitary group).** The matrices with
 
 $$
-X^{*}X = XX^{*} = I, \qquad \text{equivalently } \sigma(X)^{\mathrm t}\Phi X = \Phi ,
+\boxed{\;X^{*}X = XX^{*} = I, \qquad \text{equivalently } \sigma(X)^{\mathrm t}\Phi X = \Phi\;} ,
 $$
 
 form a subgroup $U_n(R,\Phi,\sigma)$ of $\mathrm{GL}_n(R)$ and are exactly the matrices preserving the form, $\langle Xx,Xy\rangle = \langle x,y\rangle$ for all $x,y$. For $\sigma = \mathrm{id}$ and $\Phi$ symmetric this is the orthogonal group, for $\Phi^{\mathrm t} = -\Phi$ the symplectic group, and for $R = \mathbb{C}$, $\sigma$ the conjugation and $\Phi = I$ the unitary group.
@@ -54,7 +54,7 @@ form a subgroup $U_n(R,\Phi,\sigma)$ of $\mathrm{GL}_n(R)$ and are exactly the m
 **Proposition.** With the trace pairing $\beta(X,Y) = \tau(XY)$ of the ring, the adjoint of the left multiplication is the right multiplication, $L_X^{*} = R_X$, and the trace of the adjoint is the $\sigma$-image of the trace,
 
 $$
-\tau(X^{*}) = \sigma(\tau(X)) .
+\boxed{\;\tau(X^{*}) = \sigma(\tau(X))\;} .
 $$
 
 Hence the trace pairing is $\sigma$-semilinear in the appropriate sense and its restriction to the self-adjoint matrices is a symmetric bilinear form.

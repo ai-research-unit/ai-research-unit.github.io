@@ -30,7 +30,7 @@ and the equation $L_a(X) = C$ is the **Hermitian Sylvester equation**.
 **Theorem (adjunction).** The adjoint of the Sylvester operator is the Sylvester operator of the daggered coefficient:
 
 $$
-L_a^{*} = L_{a^{\dagger}} , \qquad \text{that is} \qquad \bigl(a^{\dagger}X + Xa\bigr)^{*} = aX + Xa^{\dagger}.
+\boxed{\;L_a^{*} = L_{a^{\dagger}} , \qquad \text{that is} \qquad \bigl(a^{\dagger}X + Xa\bigr)^{*} = aX + Xa^{\dagger}\;}.
 $$
 
 **Proof.** For the Hermitian–Schmidt form $\langle X,Y\rangle = \mathrm{Sc}(X^{\dagger}Y)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, use $L_b^{*} = L_{b^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$ of *Two-Sided Operators on a Clifford Algebra*: $L_a^{*} = (L_{a^{\dagger}} + R_a)^{*} = L_{(a^{\dagger})^{\dagger}} + R_{a^{\dagger}} = L_a + R_{a^{\dagger}} = L_{a^{\dagger}}$. This was checked on the regular module of $\mathrm{Cl}_{0,3}(\mathbb{R})$ against the Frobenius form: $L_a^{*} = L_{a^{\dagger}}$ for every tested $a$.
@@ -44,7 +44,7 @@ $$
 **Theorem (the Hermitian part is preserved).** Let $L_a$ be invertible. Then the equation has a unique solution $X$ for every $C$, and
 
 $$
-C^{\dagger} = C \ \Longrightarrow \ X^{\dagger} = X .
+\boxed{\;C^{\dagger} = C \ \Longrightarrow \ X^{\dagger} = X\;} .
 $$
 
 So a Hermitian right-hand side has a Hermitian solution, and the solution operator restricts to an isomorphism of the Hermitian part of the algebra onto itself.
@@ -66,7 +66,7 @@ So a Hermitian right-hand side has a Hermitian solution, and the solution operat
 **Theorem (the positive case).** Let $a$ be self-adjoint and suppose the algebra has a positive dagger, as in the definite case of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*. Then
 
 $$
-\langle L_a(X), X\rangle = \mathrm{Sc}\bigl((aX + Xa)^{\dagger}X\bigr) = 2\,\mathrm{Sc}(X^{\dagger}aX)
+\boxed{\;\langle L_a(X), X\rangle = \mathrm{Sc}\bigl((aX + Xa)^{\dagger}X\bigr) = 2\,\mathrm{Sc}(X^{\dagger}aX)\;}
 $$
 
 for $X$ self-adjoint, and $L_a$ is positive definite iff $a$ lies in the interior of the Hermitian cone. The Sylvester equation with a positive coefficient is the linearised form of the exponential of the cone, and its solvability for every Hermitian $C$ is the statement that the cone is open in its linear span.

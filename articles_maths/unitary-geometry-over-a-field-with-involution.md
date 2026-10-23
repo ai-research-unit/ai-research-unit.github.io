@@ -44,7 +44,7 @@ and **Hermitian**, $h(x,y) = \overline{h(y,x)}$; it is **symmetric** when $\sigm
 **Proposition.** In a basis of $V$ a Hermitian form is represented by a matrix $H$ with
 
 $$
-h(x,y) = x^{*}\, H\, y , \qquad H^{*} = H , \qquad (H^{*})_{ij} = \overline{H_{ji}} ,
+\boxed{\;h(x,y) = x^{*}\, H\, y , \qquad H^{*} = H , \qquad (H^{*})_{ij} = \overline{H_{ji}}\;} ,
 $$
 
 where $x$ and $y$ are the coordinate columns and the star is the conjugate transpose; the Hermitian matrices form a $K_0$-subspace of $M_n(K)$, of dimension $n^2$ over $K_0$ when $K/K_0$ is quadratic and of dimension $\frac{n(n+1)}{2}$ when $\sigma = \mathrm{id}$, and the form is **nondegenerate** exactly when $H$ is invertible.
@@ -70,7 +70,7 @@ and the form is nondegenerate when the radical is zero; the **trace form** on $K
 **Definition.** Let $(V,h)$ be a Hermitian space. The **unitary group** is
 
 $$
-\mathrm{U}(V,h) = \{T \in GL(V) : h(Tx, Ty) = h(x,y) \ \text{for all } x, y\} ,
+\boxed{\;\mathrm{U}(V,h) = \{T \in GL(V) : h(Tx, Ty) = h(x,y) \ \text{for all } x, y\}\;} ,
 $$
 
 the group of the isometries of the form; the **general unitary group** is the group of the **similitudes**,
@@ -84,7 +84,7 @@ and the **special unitary group** $SU(V,h) = \mathrm{U}(V,h) \cap SL(V)$ is the 
 **Theorem.** The unitary group is a subgroup of $GL(V)$ defined by the polynomial equations $T^{*}HT = H$ in a basis, and the general unitary group sits in the exact sequence
 
 $$
-1 \longrightarrow \mathrm{U}(V,h) \longrightarrow GU(V,h) \xrightarrow{\ \lambda\ } K_0^\times ,
+\boxed{\;1 \longrightarrow \mathrm{U}(V,h) \longrightarrow GU(V,h) \xrightarrow{\ \lambda\ } K_0^\times\;} ,
 $$
 
 with $\lambda$ the similarity factor, a homomorphism whose kernel is the unitary group and whose image contains the squares of $K_0$ and the norms $N(K^\times)$; the determinant of an element of the unitary group lies in $K_0$ with norm one in the nontrivial case, so the special unitary group $SU(V,h)$ has index the group of the determinants of norm one, and the dimension of the unitary group over $K_0$ is $n^2$ in the quadratic case and $\frac{n(n-1)}{2}$ in the symmetric case.

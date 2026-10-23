@@ -35,13 +35,13 @@ The multiplicativity of the Gauss norm is the technical heart of the theory: it 
 
 **Theorem (Weierstrass division).** Let $f \in T_n$ be distinguished of degree $d$ in $\xi_n$, normalised to $\lVert f \rVert = 1$. Then for every $g \in T_n$ there are unique $q \in T_n$ and $r \in T_{n-1}[\xi_n]$ with $\deg_{\xi_n} r < d$ and
 $$
-g = qf + r.
+\boxed{\;g = qf + r\;}.
 $$
 **Proof sketch.** The division is performed coefficient by coefficient in $\xi_n$, using the invertibility of the leading coefficient of $f$ as a power series in $\xi_1,\dots,\xi_{n-1}$ up to smaller terms: one writes $f = \xi_n^d c + (\text{lower terms})$ with $c$ a unit of $T_{n-1}$, solves successively for the coefficients of $q$ and $r$ in decreasing $\xi_n$-degree, and shows that the successive corrections tend to $0$ in the norm, so that the process converges in the Banach algebra. Uniqueness follows from the shape of $r$.
 
 **Theorem (Weierstrass preparation).** Let $f \in T_n$ be distinguished of degree $d$ in $\xi_n$. Then $f$ factors uniquely as
 $$
-f = u \cdot P, \qquad P = \xi_n^d + c_{d-1}\xi_n^{d-1} + \cdots + c_0,
+\boxed{\;f = u \cdot P, \qquad P = \xi_n^d + c_{d-1}\xi_n^{d-1} + \cdots + c_0\;},
 $$
 with $u$ a unit of $T_n$ and $c_i \in T_{n-1}$ of norm $< 1$; the polynomial $P$ is a **Weierstrass polynomial**.
 
@@ -55,7 +55,7 @@ with $u$ a unit of $T_n$ and $c_i \in T_{n-1}$ of norm $< 1$; the polynomial $P$
 
 **Theorem (maximum modulus principle).** Let $\bar K$ be the completion of an algebraic closure of $K$, with valuation ring $\bar K^\circ$, and let $T_n(\bar K) = \bar K\langle \xi_1,\dots,\xi_n\rangle$ be the corresponding Tate algebra. For $f \in T_n(\bar K)$,
 $$
-\lVert f \rVert = \sup_{x \in (\bar K^\circ)^n} \lvert f(x) \rvert,
+\boxed{\;\lVert f \rVert = \sup_{x \in (\bar K^\circ)^n} \lvert f(x) \rvert\;},
 $$
 and the supremum is attained at some point of the unit polydisc; in particular a series of norm $1$ attains the value $1$ on the polydisc.
 

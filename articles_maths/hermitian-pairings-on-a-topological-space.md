@@ -29,7 +29,7 @@ and it is **Hermitian** when it satisfies the Hermitian symmetry $\beta(v,u) = \
 **Theorem.** Let $X$ be a closed $R$-oriented topological $n$-manifold with fundamental class $[X] \in H_{n}(X;R)$. Then the **intersection pairing**
 
 $$
-\beta(u,v) = \langle u \cup v, [X]\rangle \qquad (u \in H^{p}(X;R),\ v \in H^{n-p}(X;R)),
+\boxed{\;\beta(u,v) = \langle u \cup v, [X]\rangle \qquad (u \in H^{p}(X;R),\ v \in H^{n-p}(X;R))\;},
 $$
 
 is a nondegenerate $R$-sesquilinear pairing, the content of Poincaré duality; it is $\varepsilon$-Hermitian with the graded coefficient $\varepsilon_{p} = (-1)^{p(n-p)}$ on $H^{p}$, and in particular the middle pairing on $H^{n/2}$ is symmetric when $n \equiv 0 \pmod 4$ and alternating when $n \equiv 2 \pmod 4$. For $R = \mathbb{R}$ and $n = 4k$ the middle pairing is a nondegenerate symmetric bilinear form, and its **signature** is the integer
@@ -69,7 +69,7 @@ using that $\sigma^{*}$ is a ring homomorphism and the naturality of the evaluat
 **Theorem.** Let two be invertible in $R$ and let the form scale by the unit $c$. Then the eigenspaces of $\sigma^{*}$ are **orthogonal** when $c = 1$:
 
 $$
-\beta(u,v) = 0 \qquad (u \in H^{*}(X)^{\sigma^{*}},\ v \in H^{*}(X)^{-\sigma^{*}}),
+\boxed{\;\beta(u,v) = 0 \qquad (u \in H^{*}(X)^{\sigma^{*}},\ v \in H^{*}(X)^{-\sigma^{*}})\;},
 $$
 
 and the form splits as the orthogonal sum of its restrictions to the two eigenspaces. When $c = -1$ each eigenspace is **totally isotropic**, $\beta$ vanishes on the fixed part and on the anti-fixed part separately, and the form pairs the two parts dually, so that they have the same rank and the form is a hyperbolic form on their sum.
@@ -83,7 +83,7 @@ and the form splits as the orthogonal sum of its restrictions to the two eigensp
 **Theorem.** Let $R = \mathbb{R}$, let the form $\beta$ be symmetric, nondegenerate and $\sigma$-invariant on a finite-dimensional space $V$, and let $V = V^{+} \oplus V^{-}$ be the eigenspace decomposition. Then the form splits orthogonally and the signature is additive:
 
 $$
-\operatorname{sign}(V,\beta) = \operatorname{sign}(V^{+},\beta^{+}) + \operatorname{sign}(V^{-},\beta^{-}),
+\boxed{\;\operatorname{sign}(V,\beta) = \operatorname{sign}(V^{+},\beta^{+}) + \operatorname{sign}(V^{-},\beta^{-})\;},
 $$
 
 where $\beta^{\pm}$ are the restrictions. The **fixed-part signature** is $\operatorname{sign}(V^{+},\beta^{+})$, and the **equivariant signature** is the difference

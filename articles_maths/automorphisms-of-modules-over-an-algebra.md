@@ -74,7 +74,7 @@ The action of $A$ on itself by left multiplication is the basic example, and its
 **Theorem.** The map
 
 $$
-A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto R_a, \quad R_a(b)=ba,
+\boxed{\;A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto R_a, \quad R_a(b)=ba\;},
 $$
 
 is an isomorphism of $R$-algebras. Consequently
@@ -122,7 +122,7 @@ This corollary is the precise sense in which a finite-dimensional simple module 
 **Theorem (Schur).** Let $S$ and $T$ be simple left $A$-modules and let $f \in \operatorname{Hom}_A(S,T)$. Then either $f=0$ or $f$ is an isomorphism. Hence
 
 $$
-\operatorname{Hom}_A(S,T)=\begin{cases} 0, & S \not\cong T,\\ D, & S \cong T,\end{cases}
+\boxed{\;\operatorname{Hom}_A(S,T)=\begin{cases} 0, & S \not\cong T,\\ D, & S \cong T,\end{cases}\;}
 $$
 
 where $D=\operatorname{End}_A(S)$ is a division ring. Therefore $\operatorname{Aut}_A(S)=D^{\times}$.
@@ -235,7 +235,7 @@ The same argument explains why not every $\mathbb{B}$-module is free and, conseq
 It is worth recording what $\operatorname{Aut}_{\mathbb{B}}(\mathbb{B})\cong GL_2(\mathbb{C})$ is not. It is the group of $\mathbb{B}$-linear automorphisms of the regular module, and these are the right multiplications by units. The group of $\mathbb{C}$-algebra automorphisms of $\mathbb{B}$ is
 
 $$
-\operatorname{Aut}_{\mathbb{C}\text{-alg}}(\mathbb{B})\cong PGL(2,\mathbb{C}),
+\boxed{\;\operatorname{Aut}_{\mathbb{C}\text{-alg}}(\mathbb{B})\cong PGL(2,\mathbb{C})\;},
 $$
 
 by the Skolem–Noether theorem, and over $\mathbb{R}$ it is $PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$; these are computed . The two groups differ: $GL_2(\mathbb{C})$ and $PGL(2,\mathbb{C})$ have different dimensions, and an algebra automorphism need not be a module automorphism of the regular module, nor conversely. The module automorphism group acts on the module and commutes with the algebra; the algebra automorphism group acts on the algebra and preserves its product.

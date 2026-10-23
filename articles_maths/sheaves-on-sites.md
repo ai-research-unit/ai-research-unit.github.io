@@ -76,7 +76,7 @@ the right derived functors of the global sections functor, computed from an inje
 
 **Proposition.** The functor $\Gamma$ is left exact and additive, $H^0(\mathcal{C},J;F)=\Gamma(F)$ is the group of global sections, and a short exact sequence of sheaves $0\to F\to G\to H\to0$ induces a long exact sequence
 $$
-0\to H^0(F)\to H^0(G)\to H^0(H)\to H^1(F)\to H^1(G)\to\cdots
+\boxed{\;0\to H^0(F)\to H^0(G)\to H^0(H)\to H^1(F)\to H^1(G)\to\cdots\;}
 $$
 in the cohomology of the site. A sheaf $F$ with $H^p(\mathcal{C},J;F)=0$ for all $p>0$ is **acyclic** for the topology, and a resolution of $F$ by acyclic sheaves computes the cohomology in place of an injective resolution.
 
@@ -90,7 +90,7 @@ with the alternating sum of the pullbacks as differential, and the **Čech cohom
 
 **Theorem (Čech-to-derived spectral sequence).** For every covering family $\mathcal{U}$ of the terminal object and every sheaf $F$ there is a spectral sequence
 $$
-E_2^{n,m}=\check H^p(\mathcal{U},\underline{H}{}^q(F))\Longrightarrow H^{p+q}(\mathcal{C},J;F),
+\boxed{\;E_2^{n,m}=\check H^p(\mathcal{U},\underline{H}{}^q(F))\Longrightarrow H^{p+q}(\mathcal{C},J;F)\;},
 $$
 where $\underline{H}{}^q(F)$ is the presheaf of the local cohomology groups of $F$. In particular, if the covering is acyclic for $F$ in all degrees, the edge maps give isomorphisms $\check H^p(\mathcal{U},F)\cong H^p(\mathcal{C},J;F)$.
 
@@ -104,7 +104,7 @@ where $\underline{H}{}^q(F)$ is the presheaf of the local cohomology groups of $
 
 **Proposition.** The inverse image $f^*$ is left exact and the direct image $f_*$ is right adjoint to it; $f^*$ preserves the finite limits and the colimits, and the cohomology of a site is contravariant in the site and covariant in the coefficients. For a sheaf $G$ on $(\mathcal{D},K)$ there is a **Leray spectral sequence**
 $$
-E_2^{n,m}=H^p(\mathcal{C},J;\mathbf{R}^qf_*G)\Longrightarrow H^{p+q}(\mathcal{D},K;G),
+\boxed{\;E_2^{n,m}=H^p(\mathcal{C},J;\mathbf{R}^qf_*G)\Longrightarrow H^{p+q}(\mathcal{D},K;G)\;},
 $$
 whose edge maps give the functoriality of the global cohomology in the morphism of sites.
 

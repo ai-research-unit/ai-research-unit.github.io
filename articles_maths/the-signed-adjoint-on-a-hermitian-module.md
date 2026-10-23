@@ -29,7 +29,7 @@ so that $\rho^{\alpha}(x) = \rho(\alpha(x))$; on a homogeneous $x$ it is $\rho^{
 **Theorem (the adjoint of the signed action).** For every $x$,
 
 $$
-\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger}) .
+\boxed{\;\rho^{\alpha}(x)^{*} = \rho^{\alpha}(x^{\dagger})\;} .
 $$
 
 **Proof.** $\rho^{\alpha}(x)^{*} = \rho(\alpha(x))^{*} = \rho(\alpha(x)^{\dagger})$ by the adjoint of the action of *The Adjoint of the One-Sided Action with Hermitian Adjoint*, and $\alpha(x)^{\dagger} = \alpha(x^{\dagger})$ because the dagger is even; assembling gives the display.
@@ -81,7 +81,7 @@ so the signed action agrees with the ordinary action on the even part of the alg
 **Proposition (the involution conjugates the signed action).** On the bimodule case, where the right action $\sigma$ of the algebra is defined, the module involution satisfies
 
 $$
-S_M\,\rho^{\alpha}(x)\,S_M = \sigma^{\alpha}(x^{\dagger}) \quad\text{on } A\cdot\xi ,
+\boxed{\;S_M\,\rho^{\alpha}(x)\,S_M = \sigma^{\alpha}(x^{\dagger}) \quad\text{on } A\cdot\xi\;} ,
 $$
 
 where $\sigma^{\alpha}(y)$ is the signed right action, $s\mapsto s\cdot\alpha(y)$; so the conjugation by the module involution turns the signed left action into the signed right action of the involution.
@@ -101,7 +101,7 @@ so the sign rule and the exchange of sides are compatible; the sign is not distu
 **Proposition (the modular flow on the signed action).** The modular group of the module acts by
 
 $$
-\Delta_M^{it}\,\rho^{\alpha}(x)\,\Delta_M^{-it} = \rho^{\alpha}(\sigma_t(x)) ,
+\boxed{\;\Delta_M^{it}\,\rho^{\alpha}(x)\,\Delta_M^{-it} = \rho^{\alpha}(\sigma_t(x))\;} ,
 $$
 
 with $\sigma_t$ the modular automorphism of the algebra; the flow preserves the parity, $\varepsilon_{\sigma_t(x)} = \varepsilon_x$, so it preserves the sign.

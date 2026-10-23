@@ -33,7 +33,7 @@ The article treats the modules and the continuity of the action, the modulus of 
 **Theorem (the Fock module and the exterior module).** Let $W$ be a Hilbert space and let $V=W\oplus W^{*}$ carry the form that pairs the two summands by $B(w,w'^{*})=\tfrac12\langle w,w'\rangle$ and vanishes on each summand with itself. Then the exterior algebra $\Lambda W$ carries a continuous action of $\mathrm{Cl}(V,\mathfrak{Q})$ by
 
 $$
-\pi(w)(\lambda)=w\wedge\lambda,\qquad \pi(w^{*})(\lambda)=\iota_{w}(\lambda),
+\boxed{\;\pi(w)(\lambda)=w\wedge\lambda,\qquad \pi(w^{*})(\lambda)=\iota_{w}(\lambda)\;},
 $$
 
 the creators and the annihilators are of operator norm one, the modulus is one for the operator norm on the algebra — the norm of the norm closure that defines the CAR algebra — the representation is irreducible, and the module with this action is the **Fock module** of the canonical anticommutation relations of *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*. The completion of the algebraic exterior algebra in the norm of the inner product is a Hilbert space on which the action extends continuously, with the same modulus.

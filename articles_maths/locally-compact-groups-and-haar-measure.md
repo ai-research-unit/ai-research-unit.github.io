@@ -100,7 +100,7 @@ for every Borel set $A$. The function $\Delta : G \to \mathbb{R}_{>0}$ is the **
 **Theorem.** The modular function is a continuous homomorphism, and it is independent of the choice of left Haar measure. The right Haar measures are the measures $\Delta^{-1}\mu$: explicitly
 
 $$
-d\mu_R(g) = \Delta(g)^{-1}\, d\mu_L(g),
+\boxed{\;d\mu_R(g) = \Delta(g)^{-1}\, d\mu_L(g)\;},
 $$
 
 so that $\mu_R(A) = \mu_L(A^{-1})$ up to a constant. Moreover $\Delta$ is trivial on the commutator subgroup, and $G$ is unimodular if and only if $\Delta \equiv 1$, that is, if and only if $\ker\Delta = G$.
@@ -158,7 +158,7 @@ Let $H$ be a closed subgroup of a locally compact group $G$ and let $G/H$ be the
 **Theorem.** Let $H$ be a closed subgroup of a locally compact group $G$. Then $G/H$ carries a nonzero quasi-invariant Radon measure, unique up to equivalence and up to a positive scalar; it carries a nonzero invariant Radon measure if and only if
 
 $$
-\Delta_G\big|_H = \Delta_H ,
+\boxed{\;\Delta_G\big|_H = \Delta_H\;} ,
 $$
 
 that is, the modular function of $G$ restricts to the modular function of $H$. In that case the invariant measure is unique up to a positive scalar.
@@ -174,7 +174,7 @@ defines a nonzero Radon measure $\nu$ on $G/H$; the factor $\rho$ is exactly wha
 **Theorem (Weil's integral formula).** Let $H$ be a closed subgroup of a locally compact group $G$, let $\mu_G$ be a left Haar measure, $\mu_H$ a left Haar measure, and $\nu$ a quasi-invariant measure on $G/H$ with cocycle $\rho$. Then for $f \in C_c(G)$,
 
 $$
-\int_G f(g)\,d\mu_G(g) = \int_{G/H}\int_H f(gh)\,\rho(g,h)\,d\mu_H(h)\,d\nu(gH) ,
+\boxed{\;\int_G f(g)\,d\mu_G(g) = \int_{G/H}\int_H f(gh)\,\rho(g,h)\,d\mu_H(h)\,d\nu(gH)\;} ,
 $$
 
 where the cocycle reduces to a constant when the invariance criterion holds. In particular the double integral of a compactly supported continuous function is well defined in either order.

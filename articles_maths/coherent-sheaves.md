@@ -106,13 +106,13 @@ both of which exist because the categories have enough injectives, as in Part I'
 **Theorem (the local-to-global spectral sequence).** For $\mathcal{O}_X$-modules $\mathcal{F},\mathcal{G}$ with $\mathcal{F}$ of finite type over a locally Noetherian $X$ there is a convergent spectral sequence
 
 $$
-E_2^{n,m} = H^p\bigl(X,\mathcal{E}xt^q_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\bigr)\Longrightarrow\operatorname{Ext}^{p+q}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G}),
+\boxed{\;E_2^{n,m} = H^p\bigl(X,\mathcal{E}xt^q_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\bigr)\Longrightarrow\operatorname{Ext}^{p+q}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\;},
 $$
 
 natural in both variables. In particular there is an exact sequence
 
 $$
-0\to H^1\bigl(X,\mathcal{H}om(\mathcal{F},\mathcal{G})\bigr)\to\operatorname{Ext}^1(\mathcal{F},\mathcal{G})\to H^0\bigl(X,\mathcal{E}xt^1(\mathcal{F},\mathcal{G})\bigr)\to H^2(X,\mathcal{H}om(\mathcal{F},\mathcal{G}))\to\cdots,
+\boxed{\;0\to H^1\bigl(X,\mathcal{H}om(\mathcal{F},\mathcal{G})\bigr)\to\operatorname{Ext}^1(\mathcal{F},\mathcal{G})\to H^0\bigl(X,\mathcal{E}xt^1(\mathcal{F},\mathcal{G})\bigr)\to H^2(X,\mathcal{H}om(\mathcal{F},\mathcal{G}))\to\cdots\;},
 $$
 
 so that the obstruction to extending a homomorphism lies partly in the global sections of the local Ext sheaf and partly in the first cohomology of the sheaf hom. When $\mathcal{F}$ is locally free the $\mathcal{E}xt^q$ vanish for $q>0$ and the spectral sequence collapses to the isomorphism $\operatorname{Ext}^i(\mathcal{F},\mathcal{G})\cong H^i(X,\mathcal{F}^\vee\otimes\mathcal{G})$.
@@ -122,7 +122,7 @@ so that the obstruction to extending a homomorphism lies partly in the global se
 **Corollary (Serre duality as an Ext statement).** Let $X$ be a smooth projective scheme of dimension $n$ over a field and $\omega_X$ its canonical sheaf. Then
 
 $$
-H^i(X,\mathcal{F})^{\vee}\cong\operatorname{Ext}^{n-i}_{\mathcal{O}_X}(\mathcal{F},\omega_X)
+\boxed{\;H^i(X,\mathcal{F})^{\vee}\cong\operatorname{Ext}^{n-i}_{\mathcal{O}_X}(\mathcal{F},\omega_X)\;}
 $$
 
 for coherent $\mathcal{F}$, and the local Ext sheaves vanish for $q>0$ when $\mathcal{F}$ is locally free, so that the duality of *Sheaves in Algebraic Geometry* is the collapse of the local-to-global sequence in the smooth case. The general statement, in which $\omega_X$ is replaced by the dualising complex of a proper morphism, is Grothendieck duality and requires the derived category of Part I's *Derived Categories* and *Derived Functors*; the topological model of the same phenomenon is Verdier duality, recorded in *Derived Functors and Sheaf Cohomology*.

@@ -25,7 +25,7 @@ the sandwiches whose two parameters are units.
 **Theorem.** $\mathcal{T}$ is a group under composition, and the map $(a,b) \mapsto T_{a,b}$ is a surjective homomorphism
 
 $$
-\mathrm{Cl}(V,\mathfrak{Q})^{\times} \times \mathrm{Cl}(V,\mathfrak{Q})^{\times} \longrightarrow \mathcal{T}, \qquad (a,b) \longmapsto T_{a,b},
+\boxed{\;\mathrm{Cl}(V,\mathfrak{Q})^{\times} \times \mathrm{Cl}(V,\mathfrak{Q})^{\times} \longrightarrow \mathcal{T}, \qquad (a,b) \longmapsto T_{a,b}\;},
 $$
 
 whose kernel is the diagonal of the central units,
@@ -59,7 +59,7 @@ which contains the central sandwiches $T_{c,c^{-1}}$ with $c \in F^{\times}$.
 **Theorem (the sandwich action).** The assignment
 
 $$
-\Gamma(V,\mathfrak{Q}) \longrightarrow O(V,\mathfrak{Q}), \qquad x \longmapsto \chi_x\big|_{V},
+\boxed{\;\Gamma(V,\mathfrak{Q}) \longrightarrow O(V,\mathfrak{Q}), \qquad x \longmapsto \chi_x\big|_{V}\;},
 $$
 
 is a surjective homomorphism of groups, with kernel the scalars,
@@ -88,7 +88,7 @@ $$
 **Theorem (the spin group as a group of two-sided operators).** The image of $\mathrm{Spin}(V,\mathfrak{Q})$ in $\mathcal{T}$,
 
 $$
-\mathrm{Spin}(V,\mathfrak{Q}) \cdot 1_{\mathcal{T}} = \{\, T_{x,x^{-1}} : x \in \Gamma^{0}(V,\mathfrak{Q}),\ N(x) = 1 \,\},
+\boxed{\;\mathrm{Spin}(V,\mathfrak{Q}) \cdot 1_{\mathcal{T}} = \{\, T_{x,x^{-1}} : x \in \Gamma^{0}(V,\mathfrak{Q}),\ N(x) = 1 \,\}\;},
 $$
 
 is a subgroup of $\mathcal{T}$, isomorphic to $\mathrm{Spin}(V,\mathfrak{Q})/\{\pm1\}$; the full preimage of this subgroup under the parametrisation is $\mathrm{Spin}(V,\mathfrak{Q})\times Z^{\times}\!$, and the map

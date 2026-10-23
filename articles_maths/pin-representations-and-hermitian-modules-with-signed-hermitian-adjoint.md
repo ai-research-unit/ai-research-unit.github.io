@@ -73,7 +73,7 @@ $$
 **Theorem (faithfulness and the kernel).** Suppose $S$ is irreducible. If $\mathrm{Cl}(V,\mathfrak{Q})$ is simple the pin representation is faithful, and its restriction to $\mathrm{Spin}(V,\mathfrak{Q})$ is the spin representation. If $\mathrm{Cl}(V,\mathfrak{Q})\cong A'\times A'$ is a product of two simple algebras and $S$ is the irreducible module of the first factor, then
 
 $$
-\ker\rho=\mathrm{Pin}(V,\mathfrak{Q})\cap\bigl(\{1\}\times A'\bigr).
+\boxed{\;\ker\rho=\mathrm{Pin}(V,\mathfrak{Q})\cap\bigl(\{1\}\times A'\bigr)\;}.
 $$
 
 *Proof.* The annihilator of an irreducible module is a proper two-sided ideal, hence vanishes over a simple algebra; over a product the module of one factor is annihilated by the other. Restricting a faithful action to a subgroup is faithful. The argument is independent of the Hermitian form.
@@ -97,9 +97,9 @@ $$
 **Proposition (the intertwining identities).** Let $v\in V$ and $x\in\mathrm{Pin}(V,\mathfrak{Q})$. Then
 
 $$
-\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
+\boxed{\;\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
 \qquad
-\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
+\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*}\;},
 $$
 
 with $\varepsilon_x=(-1)^{k}$ the parity sign. For $x\in U$ the first identity reads $\rho(x)\rho(v)\rho(x)^{-1}=\rho(\Theta_x(v))$.
@@ -109,7 +109,7 @@ with $\varepsilon_x=(-1)^{k}$ the parity sign. For $x\in U$ the first identity r
 **Corollary (the reflection in the module).** Let $a\in V$ with $\mathfrak{Q}(a)\neq0$ and let $\rho_a$ be the reflection in $a^{\perp}$. Then for every $v\in V$
 
 $$
-\rho(a)\,\rho(v)\,\rho(a)^{*}=\rho\bigl(-\mathfrak{Q}(a)\,\rho_a(v)\bigr),
+\boxed{\;\rho(a)\,\rho(v)\,\rho(a)^{*}=\rho\bigl(-\mathfrak{Q}(a)\,\rho_a(v)\bigr)\;},
 $$
 
 and on the unitary slice, $\mathfrak{Q}(a)=-1$, this is $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$: the odd element of the pin group realises the reflection in the module exactly when it is a slice-normalised vector.

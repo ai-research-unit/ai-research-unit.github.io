@@ -38,7 +38,7 @@ Let $A$ be a unital ring and let $P=A^n$ be the free left $A$-module of rank $n$
 **Theorem.** The functor
 
 $$
-\Phi = P \otimes_A - : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(M_n(A)),
+\boxed{\;\Phi = P \otimes_A - : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(M_n(A))\;},
 $$
 
 given on objects by $M \mapsto P \otimes_A M = A^n \otimes_A M$, is an equivalence of categories.
@@ -90,7 +90,7 @@ $$
 Then $P$ is an $(A,B)$-bimodule, and
 
 $$
-\operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(B)
+\boxed{\;\operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \longrightarrow \operatorname{Mod}(B)\;}
 $$
 
 is an equivalence of categories, with quasi-inverse $P \otimes_B -$. Conversely, every equivalence $\operatorname{Mod}(A)\to\operatorname{Mod}(B)$ arises in this way from a progenerator.
@@ -187,7 +187,7 @@ $$
 and therefore
 
 $$
-F[G] \sim_M F[H] \iff \prod_{i} D_i(G) \cong \prod_{i} D_i(H),
+\boxed{\;F[G] \sim_M F[H] \iff \prod_{i} D_i(G) \cong \prod_{i} D_i(H)\;},
 $$
 
 that is, if and only if the two groups have the same number of simple modules with the same endomorphism division algebras, up to permutation. Over an algebraically closed field every $D_i$ is $F$, so the criterion reduces to equality of the number of simple modules. Over $F=\mathbb{C}$ the number of simple modules is the number of conjugacy classes of $G$, and the criterion becomes

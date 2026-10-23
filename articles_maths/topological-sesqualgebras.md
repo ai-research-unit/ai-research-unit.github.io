@@ -17,7 +17,7 @@ The article defines the layer and its standing hypotheses, reads the conjugate m
 **Definition.** Let $(R,\varsigma)$ be an involutive topological ring. A **topological sesqualgebra** over $(R,\varsigma)$ is a topological $R$-module $A$ with a product $A \times A \to A$, written $(x,y) \mapsto xy$, additive in each variable, separately continuous, and satisfying
 
 $$
-(\lambda x)y = \lambda(xy), \qquad x(\lambda y) = \varsigma(\lambda)(xy)
+\boxed{\;(\lambda x)y = \lambda(xy), \qquad x(\lambda y) = \varsigma(\lambda)(xy)\;}
 $$
 
 for all $\lambda \in R$ and all $x, y \in A$.

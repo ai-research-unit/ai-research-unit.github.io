@@ -72,7 +72,7 @@ in a unital algebra.
 **Theorem (the composition law).** The signed sandwiches compose by the twisted parameter rule
 
 $$
-\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b} ,
+\boxed{\;\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b}\;} ,
 $$
 
 which for $\alpha = \mathrm{id}$ is the unsigned law $\Theta_{a,b}\Theta_{c,d} = \Theta_{ac,\,db}$.
@@ -88,7 +88,7 @@ which for $\alpha = \mathrm{id}$ is the unsigned law $\Theta_{a,b}\Theta_{c,d} =
 **Proposition (positivity of the signed sandwich).** If the grade involution is **positive** and $a\geq0$, $b\geq0$, then $\Theta^{\alpha}_{a,b}\geq0$. If the grade involution is not positive the signed sandwich of positive parameters need not be positive, and the obstruction is exactly the sign of $\alpha$ on the odd part of the cone; in the graded case with the parity $\varepsilon$, the signed sandwich acts as
 
 $$
-\Theta^{\alpha}_{a,b}(x) = \varepsilon_x\,\Theta_{a,b}(x) \quad (x \ \text{homogeneous}) ,
+\boxed{\;\Theta^{\alpha}_{a,b}(x) = \varepsilon_x\,\Theta_{a,b}(x) \quad (x \ \text{homogeneous})\;} ,
 $$
 
 so on the odd part it is the negative of the unsigned sandwich.
@@ -108,7 +108,7 @@ that is, when the grade involution inverts it; it is **normalised** when in addi
 **Theorem (the signed conjugation is an involution exactly on the reflection elements).** The signed sandwich with $b = a^{-1}$, the **signed conjugation**
 
 $$
-\tau_a : x\mapsto a\,\alpha(x)\,a^{-1} ,
+\boxed{\;\tau_a : x\mapsto a\,\alpha(x)\,a^{-1}\;} ,
 $$
 
 is an involution, $\tau_a^2 = \mathrm{id}$, if and only if $\alpha(a) = a^{-1}$. When $\alpha = \mathrm{id}$ the same operator is the ordinary inner conjugation $\tau_a(x) = axa^{-1}$, an automorphism of the algebra for every invertible $a$, and it is an involution if and only if $a^2$ is central.

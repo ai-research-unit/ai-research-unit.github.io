@@ -5,7 +5,7 @@
 The **distance set** of a set $E \subseteq \mathbb{R}^d$ is the set of the distances realised by its pairs,
 
 $$
-\Delta(E) = \bigl\{|x-y| : x, y \in E\bigr\} ,
+\boxed{\;\Delta(E) = \bigl\{|x-y| : x, y \in E\bigr\}\;} ,
 $$
 
 a subset of $[0,\infty)$ that records the metric pattern of $E$ and nothing else: two sets with the same distance set are isometric in respect of their pairwise distances, though not necessarily congruent. The question of the theory is how large $\Delta(E)$ must be when $E$ is a fractal of a given dimension. The **Falconer distance conjecture** states that a compact set of Hausdorff dimension strictly greater than $d/2$ has a distance set of positive Lebesgue measure; Falconer proved the result for dimension exceeding $(d+1)/2$, and the problem is open in general. In the plane the best known threshold is $5/4$, by the theorem of Guth, Iosevich, Ou and Wang, and the conjecture in the plane is that the threshold is one. The problem is the exact analogue, for the distance function, of the projection theorem of *Projections of a Fractal and the Dimension*: both ask how much of a fractal survives a nonlinear or a linear observation, and both are decided by the same spherical average of the Fourier transform of the measure.
@@ -55,7 +55,7 @@ For $d = 2$ the conjecture is the statement $\dim_H E > 1$, and is open; the bou
 **Remark (the reduction to the projection theorem).** The exact identity behind all the thresholds is the energy identity of *Projections of a Fractal and the Dimension*,
 
 $$
-\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\xi\#}\mu)\,d\sigma(\xi) = c_d\, \mathcal{I}_{d-1}(\mu) ,
+\boxed{\;\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\xi\#}\mu)\,d\sigma(\xi) = c_d\, \mathcal{I}_{d-1}(\mu)\;} ,
 $$
 
 which says that the average over the directions of the energy of the projection of the measure equals the energy of the measure; in the Fourier form the energy is

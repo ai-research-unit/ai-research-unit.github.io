@@ -27,7 +27,7 @@ The inertia is *The Indefinite Case and the Signature*, the classification of th
 **Definition.** A **real structure** on $V$ is a conjugation $c$, that is, a $\varsigma$-semilinear map with $c^{2} = 1$; its fixed space $V_{0} = V^{c}$ is a real form of $V$, and $V = V_{0}\otimes_{\mathbb{R}}\mathbb{C}$. A real structure is **compatible** with $h$ when
 
 $$
-h(cx, cy) = h(y, x) \qquad \text{for all } x, y \in V .
+\boxed{\;h(cx, cy) = h(y, x) \qquad \text{for all } x, y \in V\;} .
 $$
 
 **Proposition.** The real structure $c$ is compatible with $h$ exactly when $h$ descends to a symmetric real form $g_{0}$ on $V_{0}$, that is, exactly when the restriction of $g = \operatorname{Re}h$ to $V_{0}$ is real-valued and its complexification is $h$; then $h$ is the complexification of $g_{0}$.
@@ -59,7 +59,7 @@ $$
 **Proposition.** The maps
 
 $$
-h \longmapsto g = \operatorname{Re}h, \qquad g \longmapsto h = g\otimes_{\mathbb{R}}\mathbb{C}
+\boxed{\;h \longmapsto g = \operatorname{Re}h, \qquad g \longmapsto h = g\otimes_{\mathbb{R}}\mathbb{C}\;}
 $$
 
 are mutually inverse on the forms with a fixed real structure, and they carry the congruence over $\mathbb{R}$ to the congruence over $\mathbb{C}$; the signature is preserved by both, the descent halving the inertia and the complexification doubling it.

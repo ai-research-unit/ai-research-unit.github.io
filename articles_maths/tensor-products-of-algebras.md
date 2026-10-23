@@ -61,7 +61,7 @@ Over a field the inclusion is an equality.
 **Proposition (centre over a field).** Let $k$ be a field and let $A$, $B$ be $k$-algebras. Then
 
 $$
-Z(A \otimes_k B) = Z(A) \otimes_k Z(B).
+\boxed{\;Z(A \otimes_k B) = Z(A) \otimes_k Z(B)\;}.
 $$
 
 *Proof.* The inclusion $\supseteq$ is the proposition above. For the reverse, let $z = \sum_{i=1}^{n} a_i \otimes b_i$ be an expression with $n$ minimal; then $\{a_i\}$ and $\{b_i\}$ are each linearly independent over $k$. Commuting $z$ with $a \otimes 1_B$ gives $\sum_i (a_i a - a a_i) \otimes b_i = 0$, so $a_i a = a a_i$ for every $i$ by linear independence of the $b_i$; hence each $a_i \in Z(A)$. Commuting $z$ with $1_A \otimes b$ then gives $\sum_i a_i \otimes (b_i b - b b_i) = 0$, so $b_i b = b b_i$ for every $i$ by linear independence of the $a_i$; hence each $b_i \in Z(B)$. Therefore $z \in Z(A)\otimes_k Z(B)$.
@@ -88,7 +88,7 @@ where the third equality uses that the images of $f$ and $g$ commute; unitality 
 **Corollary (coproduct of commutative algebras).** If $A$, $B$, $C$ are commutative, the commuting condition is automatic, and the theorem reads
 
 $$
-\operatorname{Hom}_{R\text{-alg}}(A \otimes_R B, C) \;\cong\; \operatorname{Hom}_{R\text{-alg}}(A, C) \times \operatorname{Hom}_{R\text{-alg}}(B, C).
+\boxed{\;\operatorname{Hom}_{R\text{-alg}}(A \otimes_R B, C) \;\cong\; \operatorname{Hom}_{R\text{-alg}}(A, C) \times \operatorname{Hom}_{R\text{-alg}}(B, C)\;}.
 $$
 
 Thus $A \otimes_R B$, with the maps $a \mapsto a \otimes 1_B$ and $b \mapsto 1_A \otimes b$, is the **coproduct** in the category of commutative unital $R$-algebras. It is not the product: the product of $A$ and $B$ in that category is the direct product $A \times B$, with its coordinatewise operations.
@@ -98,7 +98,7 @@ Thus $A \otimes_R B$, with the maps $a \mapsto a \otimes 1_B$ and $b \mapsto 1_A
 **Corollary (the tensor product is a quotient of the free product).** For unital associative $A$ and $B$, let $A \sqcup B$ denote their free product, the coproduct in the category of unital associative $R$-algebras, which is the algebra with no relation imposed between $A$ and $B$. Then
 
 $$
-A \otimes_R B \;\cong\; (A \sqcup B)\big/\bigl(ab - ba : a \in A, \ b \in B\bigr),
+\boxed{\;A \otimes_R B \;\cong\; (A \sqcup B)\big/\bigl(ab - ba : a \in A, \ b \in B\bigr)\;},
 $$
 
 the quotient in which every element of $A$ is forced to commute with every element of $B$.

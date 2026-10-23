@@ -88,7 +88,9 @@ defined for $\rho > 0$ by replacing $c$ by $q_t$, $c'$ by $\rho$, and the comple
 **Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $f^{\mathrm{ax}}_0$. Then
 
 $$
+\boxed{\;
 F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\partial/\partial\rho\,u(q_t,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\partial/\partial\rho\,v(q_t,\rho)}{\rho} - \frac{2v(q_t,\rho)}{\rho^2}\right)
+\;}
 $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
@@ -116,7 +118,9 @@ On the full algebra the roots of $-1$ are, by *Split-Biquaternion Roots of Minus
 A function is **axially symmetric** if $F^{\mathrm{fn}}(q_t + \vec u_{\mathrm d}\rho)$ depends on the direction $\vec u_{\mathrm d}$ only through $\vec u_{\mathrm d}$. Such a function has the axial representation $F^{\mathrm{fn}}(\tilde{Q}) = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ over the basis $\{1,\vec u_{\mathrm d}\}$ of the slice, with **axial coefficients** $A, B$. For such a function the left- and right-regularity conditions coincide and reduce to
 
 $$
-\partial/\partial Q_t\,A = \partial/\partial\rho B + \frac{2B}{\rho} , \qquad \partial/\partial Q_t\,B = -\partial/\partial\rho A ;
+\boxed{\;
+\partial/\partial Q_t\,A = \partial/\partial\rho B + \frac{2B}{\rho} , \qquad \partial/\partial Q_t\,B = -\partial/\partial\rho A
+\;};
 $$
 
 eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmonic, while $\Delta_4B = 2B/\rho^2$. On the full algebra, where regularity is the pair of quaternionic regularities, an axially symmetric function is regular if and only if each idempotent component is, so the axial coefficients carry a pair of systems, one per half.
@@ -132,7 +136,9 @@ Three hypotheses are needed and none can be dropped: $f_0$ must be **holomorphic
 A series with split biquaternion coefficients placed on the right, $f(\tilde{Q}) = \sum_{n\ge0}\tilde{Q}^na_n$, converges absolutely on the set where $\limsup_n\left(\|\tilde{Q}^n\|_E\,\|a_n\|_E\right)^{1/n} < 1$; in particular it converges for $\tilde{Q}$ in the quaternion subspace with $\|\tilde{Q}\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, because on the quaternion subspace the Euclidean norm is multiplicative and $\|\tilde{Q}^n\|_E = \|\tilde{Q}\|_E^n$. Its sum is **slice-regular**, holomorphic on each slice; slice-regular functions form a different class from the Fueter-regular ones. For example $\tilde{Q}\mapsto\tilde{Q}$ is slice-regular, but
 
 $$
-\tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0 .
+\boxed{\;
+\tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0
+\;}.
 $$
 
 The Fueter construction is precisely the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.

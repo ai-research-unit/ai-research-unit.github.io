@@ -22,8 +22,8 @@ Consequently every interesting invariant of the article comes from a *deleted* s
 $$
 \boxed{\;
 \{\langle\tilde q\rangle_{\natural} > 0\} \simeq SO(2), \qquad \{\langle\tilde q\rangle_{\natural} < 0\} \simeq SO(2)
-\;}
-$$.
+\;}.
+$$
 
 Hence $\pi_t(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_x(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}$ on each component, so $\pi_x$ of the group is free abelian of rank two.
 
@@ -36,8 +36,8 @@ Hence $\pi_t(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_x(\mathbb{
 $$
 \boxed{\;
 \mathrm{U} \simeq S^1, \qquad \pi_x(\mathrm{U}) = \mathbb{Z}
-\;}
-$$.
+\;}.
+$$
 
 **Proof.** The set $\mathrm{U}$ is the level set of the regular value $1$ of $\langle\cdot\rangle_{\natural}$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{\langle\tilde q\rangle_{\natural}=1\} \cap \Sigma^3 = \{q_t^2+q_x^2 = 1, q_y=q_z=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $\mathrm{U} \cong S^1 \times \mathbb{R}^2$.
 
@@ -58,8 +58,8 @@ the set of zero divisors together with the origin; the **link** of the cone is $
 $$
 \boxed{\;
 \mathcal{N} \cap \Sigma^3 \;\cong\; S^1 \times S^1 = T^2
-\;}
-$$.
+\;}.
+$$
 
 Hence $\mathcal{N}\setminus\{0\}$ is homotopy equivalent to $T^2$, with $\pi_x(\mathcal{N}\setminus\{0\}) = \mathbb{Z}^2$.
 

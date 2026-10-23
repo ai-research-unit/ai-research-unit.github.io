@@ -82,7 +82,7 @@ The **signed left multiplication** is $T^\alpha_a=S^\alpha_{a,1}$ and the **sign
 
 **Theorem (the collapse).** On the commutative algebra $\mathcal{A}$,
 $$
-S^\alpha_{a,b}=L_{ab}\circ\alpha=\alpha\circ L_{\alpha(ab)},
+\boxed{\;S^\alpha_{a,b}=L_{ab}\circ\alpha=\alpha\circ L_{\alpha(ab)}\;},
 $$
 so the sandwich depends on $a$ and $b$ only through the product $ab$, and it factors through the left multiplication by that product. The grading is reversed,
 $$
@@ -98,7 +98,7 @@ rule of the grading.
 
 **Theorem (the signed adjoint).** With respect to the form of the category, the adjoint of the signed sandwich is
 $$
-\bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)}=\alpha\circ L_{(ab)^*}\qquad\text{with}\quad \delta=\sigma\alpha=\alpha\sigma .
+\boxed{\;\bigl(S^\alpha_{a,b}\bigr)^*=S^\alpha_{\delta(a),\delta(b)}=\alpha\circ L_{(ab)^*}\qquad\text{with}\quad \delta=\sigma\alpha=\alpha\sigma\;} .
 $$
 Equivalently $\bigl(S^\alpha_{a,b}\bigr)^*(y)=\alpha\bigl((ab)^*y\bigr)$.
 
@@ -118,7 +118,7 @@ using $\alpha^*=\alpha$ and $L_c^*=L_{c^*}$ proved above. Since $\alpha L_c=L_{\
 
 **Theorem.** Write $c=ab$. Then
 $$
-S^\alpha_{a,b}\ \text{is self-adjoint}\iff c=\delta(c)\iff \alpha(c)=c^*,
+\boxed{\;S^\alpha_{a,b}\ \text{is self-adjoint}\iff c=\delta(c)\iff \alpha(c)=c^*\;},
 $$
 $$
 S^\alpha_{a,b}\ \text{is an isometry}\iff |c|=1,\qquad S^\alpha_{a,b}\ \text{is unitary}\iff |c|=1,

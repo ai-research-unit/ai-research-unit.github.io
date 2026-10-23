@@ -117,7 +117,9 @@ the union of two circles in $T^2$, each a copy of $S^1$. On the complement the c
 **Proposition.** Let $u\in T^2$ with $u_+\neq-1$ and $u_-\neq-1$, where $u_+,u_-$ are the circular components of $u$. Then $u=u(s_1,s_2)$ for the real numbers
 
 $$
-s_1=i\,\frac{u_+-1}{u_++1},\qquad s_2=i\,\frac{u_--1}{u_-+1}.
+\boxed{\;
+s_1=i\,\frac{u_+-1}{u_++1},\qquad s_2=i\,\frac{u_--1}{u_-+1}
+\;}.
 $$
 
 **Proof.** For a unit complex number $w\neq-1$, the number $s=i(w-1)/(w+1)$ is real, because
@@ -167,7 +169,9 @@ The chart is therefore one-to-one, and its image is the torus with the two circl
 **Theorem.** Every unit $\breve Q$ with
 
 $$
+\boxed{\;
 Q_{+}\notin(-\infty,0]\quad\text{and}\quad Q_{-}\notin(-\infty,0]
+\;}
 $$
 
 has exactly one rational-chart polar decomposition
@@ -211,8 +215,10 @@ The product of two unit factors is a unit factor, and the coordinates of the pro
 **Proposition.** For $(s_1,s_2)$ and $(t_1,t_2)$ in $\mathbb{R}^2$ with $s_1t_1\neq1$ and $s_2t_2\neq1$,
 
 $$
+\boxed{\;
 u(s_1,s_2)\,u(t_1,t_2)=u(s_3,s_4),\qquad
-s_3=\frac{s_1+t_1}{1-s_1t_1},\qquad s_4=\frac{s_2+t_2}{1-s_2t_2}.
+s_3=\frac{s_1+t_1}{1-s_1t_1},\qquad s_4=\frac{s_2+t_2}{1-s_2t_2}
+\;}.
 $$
 
 **Proof.** The circular components of the product are the products of the circular components:

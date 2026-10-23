@@ -20,9 +20,7 @@ Throughout, $\mathbb{C}_\nu=\operatorname{span}\{e_t,\nu\}$ for $\nu \in S^2=\{\
 
 **Theorem (the invariant slice is the complex Julia set).** Let $c \notin \mathbb{R}$ and let $\mathbb{C}_c=\operatorname{span}\{e_t,c\}$ be the plane of the parameter, with the identification $\varphi_c : \mathbb{C}_c \to \mathbb{C}$ sending $c$ to $\kappa(c)=c_0+i|\vec c|$; when $c \in \mathbb{R}$ take $\mathbb{C}_c=\mathbb{R}$ and $\varphi_c(c)=c$. Then $\mathbb{C}_c$ is invariant under $f_c$, and
 
-$$
-J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr),
-$$
+$$ \boxed{\; J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr) \;} ,$$
 
 where $J^{\mathbb{C}}_{\kappa}$ and $K^{\mathbb{C}}_{\kappa}$ are the Julia set and the filled Julia set of $z \mapsto z^2+\kappa$. In particular **the slice of the parameter is an honest complex Julia set**.
 
@@ -44,9 +42,7 @@ and for every axis $\nu$ the slice is the same complex Julia set under the ident
 
 **Corollary (the profile).** For a real parameter $c$, define the **profile** $\sigma_c \subset \mathbb{R}^2$ by $\sigma_c=\{(q_t,|\vec q|) : \tilde q \in J_c\}$, a subset of the closed half-plane. Then $\sigma_c$ determines $J_c$ by
 
-$$
-J_c = \{\tilde q \in \mathbb{H} : (q_t,|\vec q|) \in \sigma_c\},
-$$
+$$ \boxed{\; J_c = \{\tilde q \in \mathbb{H} : (q_t,|\vec q|) \in \sigma_c\} \;} ,$$
 
 and $\sigma_c$ is the image of the complex Julia set $J^{\mathbb{C}}_c \subset \mathbb{C}$ under $z=x+iy \mapsto (x,|y|)$. The set is the union of the spheres of radius $|\vec q|$ centred at $q_te_t$ over the points of the profile; **every picture of $J_c$ for a real parameter is the revolution about the real axis of a picture of the complex Julia set.**
 
@@ -78,9 +74,7 @@ from *The Quaternion Quadratic Map and Its Julia Sets*; the whole family over th
 
 **Theorem (the slices determine the set).** For every parameter $c$,
 
-$$
-J_c = \bigcup_{\nu \in S^2} \bigl(J_c \cap \mathbb{C}_\nu\bigr), \qquad K_c = \bigcup_{\nu \in S^2} \bigl(K_c \cap \mathbb{C}_\nu\bigr).
-$$
+$$ \boxed{\; J_c = \bigcup_{\nu \in S^2} \bigl(J_c \cap \mathbb{C}_\nu\bigr), \qquad K_c = \bigcup_{\nu \in S^2} \bigl(K_c \cap \mathbb{C}_\nu\bigr) \;} .$$
 
 *Proof.* Every quaternion lies in at least one plane $\mathbb{C}_\nu$ by the first proposition of the article, and the union is therefore the whole set; the reverse inclusion is trivial.
 

@@ -48,7 +48,7 @@ This article describes the left, right and two-sided modules over the quaternion
 
 **Theorem.** As rings,
 $$
-\boxed{\;\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}},\qquad \operatorname{End}_{\mathbb{H}^{\mathrm{opp}}}(\mathbb{H})\cong\mathbb{H},\qquad \operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}\;}
+\boxed{\;\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}},\qquad \operatorname{End}_{\mathbb{H}^{\mathrm{opp}}}(\mathbb{H})\cong\mathbb{H},\qquad \operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}\;},
 $$
 the last equality being the statement that the bimodule endomorphisms are the scalars.
 

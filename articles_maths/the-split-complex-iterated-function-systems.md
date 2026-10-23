@@ -63,7 +63,7 @@ $$
 
 **Theorem (the attractor is not a product).** The attractor is contained in the product of the two real attractors,
 $$
-\Lambda \subseteq \varphi^{-1}\bigl(\Lambda_+ \times \Lambda_-\bigr) ,
+\boxed{\; \Lambda \subseteq \varphi^{-1}\bigl(\Lambda_+ \times \Lambda_-\bigr) \;},
 $$
 and the inclusion is strict in general. The product is the attractor of the $m^2$-element system of the **mixed** similarities, which pairs every first-coordinate map with every second-coordinate map,
 $$
@@ -94,7 +94,7 @@ the common value of $s_+$ and $s_-$;
 **(b)** in general
 
 $$
-\max\{\dim_H \Lambda_+,\, \dim_H \Lambda_-\} \leq \dim_H \Lambda \leq \min\{\dim_H \Lambda_+ + \dim_H \Lambda_-,\, 2\} ,
+\boxed{\; \max\{\dim_H \Lambda_+,\, \dim_H \Lambda_-\} \leq \dim_H \Lambda \leq \min\{\dim_H \Lambda_+ + \dim_H \Lambda_-,\, 2\} \;},
 $$
 
 with the lower bound from the projections and the upper bound from the inclusion in the product; the upper bound is attained exactly by the mixed system, whose attractor is the product;
@@ -130,7 +130,7 @@ the larger of the two factor dimensions; the box counting of a sampled orbit at 
 **Theorem (the trace of the null cone on the attractor).** The attractor meets the null cone exactly in the points whose coding has one coordinate equal to $0$,
 
 $$
-\Lambda \cap \mathcal{N} = \varphi^{-1}\Bigl(\Lambda \cap \bigl(\{0\}\times\Lambda_-\bigr)\Bigr) \cup \varphi^{-1}\Bigl(\Lambda \cap \bigl(\Lambda_+\times\{0\}\bigr)\Bigr) ,
+\boxed{\; \Lambda \cap \mathcal{N} = \varphi^{-1}\Bigl(\Lambda \cap \bigl(\{0\}\times\Lambda_-\bigr)\Bigr) \cup \varphi^{-1}\Bigl(\Lambda \cap \bigl(\Lambda_+\times\{0\}\bigr)\Bigr) \;},
 $$
 
 so that $\Lambda$ meets the null cone if and only if $0$ belongs to $\Lambda_+$ or to $\Lambda_-$; and $\Lambda$ is contained in one of the four open quadrants of $\mathbb{D}\setminus\mathcal{N}$ if and only if $\Lambda_+$ lies in one of the two half-lines $\mathbb{R}_{>0}$, $\mathbb{R}_{<0}$ and $\Lambda_-$ likewise.

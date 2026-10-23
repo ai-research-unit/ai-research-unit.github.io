@@ -98,7 +98,7 @@ The induction has three cases in practice: the base case $\alpha = 0$, the succe
 **Theorem (transfinite recursion).** Let $G$ be a class function defined on all sets. There is a unique class function $F$ on $\mathrm{On}$ such that
 
 $$
-F(\alpha) = G(F \restriction \alpha)
+\boxed{\;F(\alpha) = G(F \restriction \alpha)\;}
 $$
 
 for every ordinal $\alpha$, where $F \restriction \alpha$ is the restriction of $F$ to the ordinals below $\alpha$.
@@ -172,7 +172,7 @@ With cardinals identified as initial ordinals, the arithmetic of *Cardinality an
 **Definition.** The **cumulative hierarchy** is defined by transfinite recursion on the ordinals:
 
 $$
-V_0 = \emptyset, \qquad V_{\alpha+1} = \mathcal{P}(V_\alpha), \qquad V_\lambda = \bigcup_{\beta < \lambda} V_\beta \ \text{for limit } \lambda,
+\boxed{\;V_0 = \emptyset, \qquad V_{\alpha+1} = \mathcal{P}(V_\alpha), \qquad V_\lambda = \bigcup_{\beta < \lambda} V_\beta \ \text{for limit } \lambda\;},
 $$
 
 and $V = \bigcup_{\alpha \in \mathrm{On}} V_\alpha$.
@@ -194,7 +194,7 @@ The hierarchy is the picture of the set-theoretic universe that the corpus presu
 **Theorem (reflection, schema).** For every formula $\varphi(x_1,\ldots,x_n)$ and every ordinal $\alpha$ there is an ordinal $\beta > \alpha$ such that, for all $a_1,\ldots,a_n \in V_\beta$,
 
 $$
-\varphi(a_1,\ldots,a_n) \iff \varphi^{V_\beta}(a_1,\ldots,a_n),
+\boxed{\;\varphi(a_1,\ldots,a_n) \iff \varphi^{V_\beta}(a_1,\ldots,a_n)\;},
 $$
 
 where $\varphi^{V_\beta}$ is $\varphi$ with every quantifier relativised to $V_\beta$.

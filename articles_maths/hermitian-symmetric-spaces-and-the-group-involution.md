@@ -24,7 +24,7 @@ The article has four sections: the complex structure and the involution; the cha
 **Theorem (the Hermitian involution).** The symmetric space $G/K$ is Hermitian exactly when there is $z \in Z(K)$, the centre of $K$, with
 
 $$
-\theta = \operatorname{Ad}(z), \qquad \operatorname{Ad}(z)|_{\mathfrak{n}} = -\mathrm{id}, \qquad \operatorname{Ad}(z)|_{\mathfrak{k}} = \mathrm{id},
+\boxed{\;\theta = \operatorname{Ad}(z), \qquad \operatorname{Ad}(z)|_{\mathfrak{n}} = -\mathrm{id}, \qquad \operatorname{Ad}(z)|_{\mathfrak{k}} = \mathrm{id}\;},
 $$
 
 and then the complex structure on $\mathfrak{n}$ is $\mathrm{ad}(Z)$ for $Z = \log$-type generator of the circle $z$, with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{n}$ and $\mathrm{ad}(Z)|_{\mathfrak{k}} = 0$. Equivalently, the involution $\theta$ is **inner** and is the adjoint action of an element of the centre of $K$; a pair with this property is a **Hermitian symmetric pair** and $\theta$ a **Hermitian involution**.

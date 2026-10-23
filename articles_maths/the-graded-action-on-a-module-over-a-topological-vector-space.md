@@ -22,7 +22,7 @@ that is, when the even operators preserve the two parts of $M$ and the odd opera
 **Proposition (the equivalent form).** The action is compatible if and only if for every homogeneous $x \in E_{i}$ and every $m \in M$,
 
 $$
-x\,\beta(m) = (-1)^{i}\,\beta(x\,m),
+\boxed{\;x\,\beta(m) = (-1)^{i}\,\beta(x\,m)\;},
 $$
 
 equivalently $\beta(xm) = (-1)^{i}x\beta(m)$; the two grade involutions therefore satisfy $\beta\rho_{x} = (-1)^{i}\rho_{x}\beta$ on the homogeneous part $E_{i}$.
@@ -42,7 +42,7 @@ equivalently $\beta(xm) = (-1)^{i}x\beta(m)$; the two grade involutions therefor
 **Proposition (the induced involution on the module endomorphisms).** The algebra $\operatorname{End}_{E}(M)$ of continuous module endomorphisms is graded by
 
 $$
-\operatorname{End}_{E}(M)_{i} = \{f : f(M_{j}) \subseteq M_{i+j}\},
+\boxed{\;\operatorname{End}_{E}(M)_{i} = \{f : f(M_{j}) \subseteq M_{i+j}\}\;},
 $$
 
 with grade involution $\gamma(f) = \beta f \beta$, and the same holds for the algebra $\mathcal{L}(M)$ of all continuous endomorphisms of $M$.

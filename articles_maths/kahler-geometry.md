@@ -22,7 +22,7 @@ Since $\Omega$ is a real $(1,1)$-form, the closedness has a sharper form on a co
 **Proposition.** Let $(M,J,g)$ be a Hermitian manifold with fundamental form $\Omega$, of type $(1,1)$. Then
 
 $$
-d\Omega = 0 \iff \partial\Omega = 0 \iff \bar\partial\Omega = 0,
+\boxed{\;d\Omega = 0 \iff \partial\Omega = 0 \iff \bar\partial\Omega = 0\;},
 $$
 
 and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ for a real function $\varphi$.
@@ -136,7 +136,7 @@ $$
 **Theorem (Hodge decomposition for a compact Kähler manifold).** Let $M$ be a compact Kähler manifold of complex dimension $n$. Then the cohomology of $M$ with complex coefficients decomposes by type,
 
 $$
-H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}(M), \qquad H^{n,m}(M) = \overline{H^{m,n}(M)},
+\boxed{\;H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}(M), \qquad H^{n,m}(M) = \overline{H^{m,n}(M)}\;},
 $$
 
 with $H^{n,m}(M) \cong H^{n,m}_{\bar\partial}(M)$, so that $h^{n,m} = h^{m,n}$, and $H^{n,m} = 0$ unless $0 \leq n,m \leq n$. Consequently the Betti numbers satisfy $b_k = \sum_{n+m=k}h^{n,m}$, the odd Betti numbers $b_{2k+1}$ are even, and $b_{2k} \geq 1$ for $0 \leq k \leq n$.
@@ -176,7 +176,7 @@ $$
 **Theorem (hard Lefschetz).** Let $M$ be a compact Kähler manifold of real dimension $2n$. Then for every $k \leq n$ the map
 
 $$
-L^{n-k} : H^k(M;\mathbb{R}) \longrightarrow H^{2n-k}(M;\mathbb{R})
+\boxed{\;L^{n-k} : H^k(M;\mathbb{R}) \longrightarrow H^{2n-k}(M;\mathbb{R})\;}
 $$
 
 is an isomorphism. Consequently the Betti numbers satisfy $b_k = b_{2n-k}$, and the Poincaré duality of $M$ is compatible with the Lefschetz decomposition.

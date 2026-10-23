@@ -52,7 +52,7 @@ p_{\tilde{Q}}(\lambda) = \lambda^2 - 2Q_t\lambda + \langle\tilde{Q}\rangle_{\nat
 $$
 so
 $$
-\sigma(\tilde{Q}) = \{Q_t + iB, \, Q_t - iB\},
+\boxed{\; \sigma(\tilde{Q}) = \{Q_t + iB, \, Q_t - iB\} \;},
 $$
 the two roots coinciding exactly when $B = 0$.
 
@@ -64,7 +64,7 @@ the two roots coinciding exactly when $B = 0$.
 
 **Proof.** With $\tilde{Q} = Q_te_t + \vec Q$ and $\vec Q^2 = -B^2 e_t$,
 $$
-\tilde{Q}^2 = Q_t^2 e_t + 2Q_t\vec Q - B^2 e_t = 2Q_t\tilde{Q} - (Q_t^2 + B^2)e_t = 2Q_t\tilde{Q} - \langle\tilde{Q}\rangle_{\natural}e_t.
+\boxed{\; \tilde{Q}^2 = Q_t^2 e_t + 2Q_t\vec Q - B^2 e_t = 2Q_t\tilde{Q} - (Q_t^2 + B^2)e_t = 2Q_t\tilde{Q} - \langle\tilde{Q}\rangle_{\natural}e_t \;}.
 $$
 
 **Corollary 4.2.** If $\langle\tilde{Q}\rangle_{\natural} \neq 0$, then $\tilde{Q}^{-1} = (2Q_te_t - \tilde{Q})/\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$.
@@ -180,7 +180,7 @@ The Hermitian condition is a subspace condition: writing $\tilde{Q} = \sum_\mu Q
 
 **Theorem 11.2 (biquaternion form).** $\tilde{Q}$ is normal iff there are a unitary $\tilde{U} \in \mathbb{B}$ and $\lambda_1,\lambda_2 \in \mathbb{C}$ with
 $$
-\tilde{U}\tilde{Q}\tilde{U}^{*} = \frac{\lambda_1+\lambda_2}{2}e_t + \frac{i(\lambda_1-\lambda_2)}{2}\vec e_z.
+\boxed{\; \tilde{U}\tilde{Q}\tilde{U}^{*} = \frac{\lambda_1+\lambda_2}{2}e_t + \frac{i(\lambda_1-\lambda_2)}{2}\vec e_z \;}.
 $$
 Equivalently $\tilde{Q} = \lambda_1\tilde\Pi_1 + \lambda_2\tilde\Pi_2$ with Hermitian idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfying $\tilde\Pi_1+\tilde\Pi_2 = e_t$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_i^\dagger = \tilde\Pi_i$, $\tilde\Pi_i^2 = \tilde\Pi_i$; for $\lambda_1 \neq \lambda_2$,
 $$

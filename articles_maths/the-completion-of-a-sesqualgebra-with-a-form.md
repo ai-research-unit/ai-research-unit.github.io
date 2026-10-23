@@ -53,7 +53,7 @@ so $h$ is continuous with constant one for the product topology of the norms, an
 **Theorem (the form extends uniquely).** Let $A$ be a normed sesqualgebra with a form and let $\widehat{A}$ be its completion, with $\iota : A \to \widehat{A}$ the canonical isometric embedding of dense image. Then there is exactly one continuous map $\widehat{h} : \widehat{A} \times \widehat{A} \to R$ with $\widehat{h}(\iota x, \iota y) = h(x,y)$, and it is a Hermitian form, linear in the first slot and $\varsigma$-semilinear in the second, with
 
 $$
-\widehat{h}(x,x) = \lVert x\rVert^{2} \geq 0 , \qquad \lvert\widehat{h}(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert ,
+\boxed{\;\widehat{h}(x,x) = \lVert x\rVert^{2} \geq 0 , \qquad \lvert\widehat{h}(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert\;} ,
 $$
 
 so $\widehat{h}$ is positive definite, and its radical is zero.
@@ -69,7 +69,7 @@ so $\widehat{h}$ is positive definite, and its radical is zero.
 **Theorem (the product extends).** The product of $A$ extends uniquely to a jointly continuous bilinear map $\widehat{A} \times \widehat{A} \to \widehat{A}$, which is
 
 $$
-xy = \lim_n x_n y_n \qquad \text{for } x_n \to x, \ y_n \to y ,
+\boxed{\;xy = \lim_n x_n y_n \qquad \text{for } x_n \to x, \ y_n \to y\;} ,
 $$
 
 associative, submultiplicative, and with the same unit when $A$ has one.
@@ -95,7 +95,7 @@ $$
 **Theorem (the compatibility extends).** The forms and the operations of the completion satisfy
 
 $$
-\widehat{h}(xy, z) = \widehat{h}(y, x^{*}z) \qquad \text{for all } x, y, z \in \widehat{A} ,
+\boxed{\;\widehat{h}(xy, z) = \widehat{h}(y, x^{*}z) \qquad \text{for all } x, y, z \in \widehat{A}\;} ,
 $$
 
 so that $(\widehat{A}, \widehat{h})$ is a Banach sesqualgebra with a form over $(R,\varsigma)$, with the derived operation $x \star y = xy^{*}$ and the same involution.

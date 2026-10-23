@@ -50,7 +50,7 @@ $$
 where $\alpha_1$ is one of the constants of $S$, if and only if $W$ satisfies the **reduced Hamilton–Jacobi equation**
 
 $$
-H\Bigl(q,\frac{\partial W}{\partial q}\Bigr) = \alpha_1 .
+\boxed{\;H\Bigl(q,\frac{\partial W}{\partial q}\Bigr) = \alpha_1\;} .
 $$
 
 The constant $\alpha_1$ is the value of the Hamiltonian, so along a solution it is the energy, and $W$ is **Hamilton's characteristic function**, also called the abbreviated action.
@@ -72,7 +72,7 @@ on the domain considered.
 **Theorem (Jacobi).** Let $S(q,\alpha,t)$ be a complete integral of the Hamilton–Jacobi equation. Then the general solution of Hamilton's equations is obtained as follows. Put
 
 $$
-\beta_i = \frac{\partial S}{\partial\alpha_i}(q,\alpha,t), \qquad i=1,\dots,f ,
+\boxed{\;\beta_i = \frac{\partial S}{\partial\alpha_i}(q,\alpha,t), \qquad i=1,\dots,f\;} ,
 $$
 
 solve these $f$ relations for the $f$ coordinates $q=q(\alpha,\beta,t)$, and set $p_i=\partial S/\partial q^i$ at that point. Then $(q(t),p(t))$ is a solution of Hamilton's equations for every choice of the $2f$ constants $\alpha,\beta$, and every solution arises in this way.
@@ -178,7 +178,7 @@ This is the precise sense in which separation is a match between the potential a
 **Remark (separation implies integrability).** A separable system is completely integrable in the sense of the Liouville–Arnold theorem of the companion article. The $f$ separation constants $\alpha_1,\dots,\alpha_f$ are $f$ independent functions on phase space, the energy among them, and they are in involution: the existence of the separated complete integral $W=\sum_iW_i(q^i,\alpha)$ exhibits the transformation to the variables in which the motion is a translation on a torus. The actions of the companion article are the closed integrals of the separated momenta,
 
 $$
-I_i = \frac{1}{2\pi}\oint p_i\,dq^i = \frac{1}{2\pi}\oint \frac{\partial W_i}{\partial q^i}\,dq^i ,
+\boxed{\;I_i = \frac{1}{2\pi}\oint p_i\,dq^i = \frac{1}{2\pi}\oint \frac{\partial W_i}{\partial q^i}\,dq^i\;} ,
 $$
 
 and each is a function of the separation constants alone, so the Hamilton–Jacobi transformation to the constants is, in the compact case, the transformation to the action-angle coordinates in which $H$ depends on the actions only. The oscillator is the simplest instance: its action is $\alpha_1/\omega$, the energy divided by the frequency.

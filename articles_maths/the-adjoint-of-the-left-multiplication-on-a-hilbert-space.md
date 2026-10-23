@@ -27,7 +27,7 @@ linear in the first argument and conjugate-linear in the second; it is an inner 
 **Theorem (the adjoint of the left multiplication).** For every $U\in B(H)$ the left multiplication $L_U$ is bounded on $S_2(H)$ and
 
 $$
-(L_U)^*=L_{U^*},
+\boxed{\;(L_U)^*=L_{U^*}\;},
 $$
 
 so the adjoint of a left multiplication is the left multiplication by the adjoint; the same computation gives $R_V^*=R_{V^*}$ for the right multiplication, and each one-sided family is closed under the adjunction.
@@ -73,7 +73,7 @@ $$
 **Proposition (the adjoint and the involution).** The involution $U\mapsto U^*$ on the elements and the adjunction on the operators agree under the representation:
 
 $$
-(L_U)^*=L_{U^*},\qquad (R_V)^*=R_{V^*},
+\boxed{\;(L_U)^*=L_{U^*},\qquad (R_V)^*=R_{V^*}\;},
 $$
 
 so the two representations are $*$-representations of $B(H)$ (and of its opposite) on $S_2(H)$, and the compatibility of the involution with the multiplications, $(UV)^*=V^*U^*$, is the compatibility of the adjunction with the composition, $(L_UL_V)^*=(L_V)^*(L_U)^*$.
@@ -89,7 +89,7 @@ so the two representations are $*$-representations of $B(H)$ (and of its opposit
 **Proposition (the signed left multiplication to be adjointed).** With the same form, the signed left multiplication of the graded Hilbert space, $\ell_U=L_U\circ\alpha$, has adjoint
 
 $$
-(\ell_U)^*=\alpha\,L_{U^*}=\ell_{\alpha(U^*)},
+\boxed{\;(\ell_U)^*=\alpha\,L_{U^*}=\ell_{\alpha(U^*)}\;},
 $$
 
 because the grade involution is a $*$-automorphism and is self-adjoint for the Hilbert–Schmidt form, $\alpha^*=\alpha$; so the adjoint of a signed left multiplication is again a signed left multiplication, and the explicit computation is *The Signed Adjoint of the Left Multiplication on a Hilbert Space* below.

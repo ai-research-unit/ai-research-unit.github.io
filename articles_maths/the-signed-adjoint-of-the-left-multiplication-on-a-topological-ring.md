@@ -20,7 +20,7 @@ the **signed right multiplication** is $\varrho_b(x) = \alpha(x)\,b = \alpha R_b
 **Theorem (the explicit form).** With respect to the form of the category,
 
 $$
-\ell_a^\dagger = \ell_{\delta(a)} , \qquad \varrho_b^\dagger = \varrho_{\delta(b)} , \qquad \delta = \sigma\alpha ,
+\boxed{\;\ell_a^\dagger = \ell_{\delta(a)} , \qquad \varrho_b^\dagger = \varrho_{\delta(b)} , \qquad \delta = \sigma\alpha\;} ,
 $$
 
 so the adjoint of a signed left multiplication is the signed left multiplication by the $\delta$-image of the parameter, and the adjoint operation is an involution on each of the two signed one-sided families.
@@ -46,7 +46,7 @@ and $\alpha(\delta(a)) = \sigma(a)$, so $(\ell_a\ell_b)^\dagger = \ell_{\delta(b
 **Theorem (the three conditions).** The signed left multiplication satisfies
 
 $$
-\ell_a^\dagger = \ell_a \iff \delta(a) = a , \qquad \ell_a^\dagger\ell_a = \mathrm{id} \iff \delta(a)\alpha(a)\in K , \qquad \ell_a^2 = \mathrm{id} \iff a\alpha(a)\in K ,
+\boxed{\;\ell_a^\dagger = \ell_a \iff \delta(a) = a , \qquad \ell_a^\dagger\ell_a = \mathrm{id} \iff \delta(a)\alpha(a)\in K , \qquad \ell_a^2 = \mathrm{id} \iff a\alpha(a)\in K\;} ,
 $$
 
 and when the grade involution is not inner, $K = \{1\}$, so unitarity is $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$.
@@ -86,7 +86,7 @@ so the group is closed under the involution $T\mapsto T^\dagger$ given by the fo
 **Theorem (the assembly of the sandwich).** The signed sandwich is the composite of a signed left multiplication, a signed right multiplication and the grade involution,
 
 $$
-\Sigma^\alpha_{a,b} = \ell_a\circ\varrho_{\alpha(b)}\circ\alpha , \qquad \Sigma^\alpha_{a,b}(x) = a\,\alpha(x)\,b ,
+\boxed{\;\Sigma^\alpha_{a,b} = \ell_a\circ\varrho_{\alpha(b)}\circ\alpha , \qquad \Sigma^\alpha_{a,b}(x) = a\,\alpha(x)\,b\;} ,
 $$
 
 and its adjoint is assembled from the one-sided adjoints and the self-adjointness of the grade involution,

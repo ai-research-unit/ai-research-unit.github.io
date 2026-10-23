@@ -141,7 +141,7 @@ fixing $O$; it is a purely inseparable isogeny of degree $q$, and $E(\mathbb{F}_
 **Theorem (Hasse).** Let $E$ be an elliptic curve over $\mathbb{F}_q$ and $a_q = q + 1 - \lvert E(\mathbb{F}_q)\rvert$. Then
 
 $$
-\lvert a_q \rvert \leq 2\sqrt q , \qquad \pi^2 - a_q\pi + q = 0 \quad \text{in } \operatorname{End}(E),
+\boxed{\;\lvert a_q \rvert \leq 2\sqrt q , \qquad \pi^2 - a_q\pi + q = 0 \quad \text{in } \operatorname{End}(E)\;},
 $$
 
 so that $\pi$ satisfies $\pi\hat\pi = q$, with $\hat\pi$ the dual isogeny; the number $a_q$ is the trace $\pi + \hat\pi$ and $q$ is the norm $\pi\hat\pi$, and the displayed inequality is equivalent to the positivity of the degrees $\deg(\pi-m) = m^2-a_qm+q$ for all integers $m$, which is the elementary proof of the bound.
@@ -183,7 +183,7 @@ and the equality of the last two expressions, together with the bound $\lvert a_
 **Theorem (Mordell–Weil).** Let $K$ be a number field and $E$ an elliptic curve over $K$. Then $E(K)$ is a finitely generated abelian group,
 
 $$
-E(K) \cong \mathbb{Z}^r \oplus E(K)_{\mathrm{tors}},
+\boxed{\;E(K) \cong \mathbb{Z}^r \oplus E(K)_{\mathrm{tors}}\;},
 $$
 
 where $r$ is the **rank** of $E$ over $K$ and $E(K)_{\mathrm{tors}}$ the finite torsion subgroup. The proof proceeds in two steps: the **weak Mordell–Weil theorem**, that $E(K)/mE(K)$ is finite for every $m \geq 2$, proved by Kummer theory of *Kummer Theory* applied to the extension $K(E[m])/K$; and the descent argument, which uses the theory of heights. **A height is built from absolute values**, so its theory, and with it the second step of the proof, belongs to Part II, where absolute values and their products over the places are available; the statement is recorded here.
@@ -203,7 +203,7 @@ where $r$ is the **rank** of $E$ over $K$ and $E(K)_{\mathrm{tors}}$ the finite 
 **Theorem (Mazur).** Let $E$ be an elliptic curve over $\mathbb{Q}$. Then $E(\mathbb{Q})_{\mathrm{tors}}$ is isomorphic to one of the fifteen groups
 
 $$
-\mathbb{Z}/n\mathbb{Z}\ (1 \leq n \leq 10,\ n = 12), \qquad (\mathbb{Z}/2\mathbb{Z})\times(\mathbb{Z}/2n\mathbb{Z})\ (1 \leq n \leq 4).
+\boxed{\;\mathbb{Z}/n\mathbb{Z}\ (1 \leq n \leq 10,\ n = 12), \qquad (\mathbb{Z}/2\mathbb{Z})\times(\mathbb{Z}/2n\mathbb{Z})\ (1 \leq n \leq 4)\;}.
 $$
 
 **Theorem (reduction).** Let $K$ be a number field, $\mathrm{P}$ a nonzero prime of $\mathcal{O}_K$ of residue characteristic $p$, and $E$ an elliptic curve over $K$ with a Weierstrass equation integral at $\mathrm{P}$ whose discriminant is not divisible by $\mathrm{P}$, so that the reduced equation is nonsingular and defines an elliptic curve $E^{\mathrm{res}}$ over $\kappa(\mathrm{P})$. Then the reduction map $E(K) \to E^{\mathrm{res}}(\kappa(\mathrm{P}))$ is injective on the torsion subgroup of order coprime to $p$, and

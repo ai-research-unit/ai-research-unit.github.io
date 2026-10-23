@@ -31,7 +31,7 @@ Throughout, $H$ is a complex Hilbert space with inner product linear in the firs
 **Proposition (Cauchy–Schwarz for positive operators).** For $T\ge0$,
 
 $$
-|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle ,
+\boxed{\;|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle\;} ,
 $$
 
 and $T$ is positive and invertible exactly when $T\ge cI$ for some $c>0$; in that case the sesquilinear form $\langle\cdot,\cdot\rangle_T=\langle T\cdot,\cdot\rangle$ is an inner product equivalent to the given one.
@@ -61,7 +61,7 @@ for $0\le T\le I$, the binomial series converging in the norm.
 **Proposition (inversion reverses the order).** For invertible positive $S,T$,
 
 $$
-S\le T\quad\Longleftrightarrow\quad T^{-1}\le S^{-1},
+\boxed{\;S\le T\quad\Longleftrightarrow\quad T^{-1}\le S^{-1}\;},
 $$
 
 the order is antisymmetric, and it is not total: two rank-one projections onto non-orthogonal lines are incomparable.
@@ -73,7 +73,7 @@ the order is antisymmetric, and it is not total: two rank-one projections onto n
 **Theorem (polar decomposition).** Every $T\in B(H)$ factors as
 
 $$
-T=U|T|,\qquad |T|=(T^*T)^{1/2},
+\boxed{\;T=U|T|,\qquad |T|=(T^*T)^{1/2}\;},
 $$
 
 where $|T|$ is positive, $U$ is a partial isometry from the closure of $\operatorname{ran}|T|$ onto the closure of $\operatorname{ran}T$, and $U$ is uniquely determined by the requirements that $\ker U=\ker|T|$ and $U|T|=T$; when $T$ is invertible, $U$ is unitary. The decomposition is the operator form of $z=|z|\exp(i\theta)$.

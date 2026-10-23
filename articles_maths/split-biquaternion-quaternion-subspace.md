@@ -58,7 +58,9 @@ So although the ambient algebra $\mathbb{H}_{\mathbb{D}}$ has many zero divisors
 The centre of $\mathbb{H}_{\mathbb{D}}$ is the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, and its intersection with the quaternion subspace is the real line:
 
 $$
-\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{R}.
+\boxed{\;
+\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{R}
+\;}.
 $$
 
 Every split biquaternion is uniquely $\tilde{Q} = \tilde q + j\tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, so
@@ -82,7 +84,9 @@ which is a two-sphere $S^2$. The identity $\vec e_x \vec e_y = \vec e_z$ and its
 **Proposition.** For $\tilde{Q}_1 = q_t + \vec q$ and $\tilde{Q}_2 = q_{2t} + \vec v$ in the subspace, with $\vec q, \vec v$ pure,
 
 $$
-[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\, \vec q \times \vec v,
+\boxed{\;
+[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\, \vec q \times \vec v
+\;},
 $$
 
 which is a pure quaternion in the subspace. The commutator subalgebra is the three-dimensional space of pure real quaternions,
@@ -100,7 +104,9 @@ Under the commutator the subspace is the Lie algebra $\mathrm{SO}(3)$ — the th
 **Proposition.** On the quaternion subspace the split-biquaternion norm is the ordinary quaternion norm,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = |\tilde{Q}|^2 \geq 0,
+\boxed{\;
+\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = |\tilde{Q}|^2 \geq 0
+\;},
 $$
 
 which is real and **positive definite**, vanishing only at $\tilde{Q} = 0$.

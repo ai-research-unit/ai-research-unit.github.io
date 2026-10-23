@@ -49,7 +49,7 @@ $$
 **Proposition (the pairing is Hermitian and perfect).** The pairing is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second, it is sesqui-symmetric, $\varphi(Y,X)=\varsigma\bigl(\varphi(X,Y)\bigr)$, and it is perfect: for the matrix units,
 
 $$
-\varphi(X,E_{ij}^{*})=X_{ij} ,
+\boxed{\;\varphi(X,E_{ij}^{*})=X_{ij}\;} ,
 $$
 
 so a matrix is recovered from its pairings against the matrix units, and the map $X\mapsto\varphi(X,\,\cdot\,)$ is a bijection.
@@ -69,7 +69,7 @@ which is the standard Hermitian form on the $n^{2}$ complex coordinates $X_{ij}$
 **Theorem (the parities of the two products).** The ordinary product $ST$ is $\mathbb{C}$-bilinear in the two slots; the sesquilinear product $S\star T=ST^{*}$ is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second,
 
 $$
-(\lambda S)\star T=\lambda\,(S\star T),\qquad S\star(\lambda T)=\varsigma(\lambda)\,(S\star T) ,
+\boxed{\;(\lambda S)\star T=\lambda\,(S\star T),\qquad S\star(\lambda T)=\varsigma(\lambda)\,(S\star T)\;} ,
 $$
 
 and it is the derived product of the sesqualgebra $M_{n}(\mathbb{C})$ with its conjugate transpose. The unit $I$ is a right unit for $\star$, $T\star I=T$, and a two-sided unit only for the Hermitian matrices, where $I\star T=T^{*}=T$.
@@ -147,7 +147,7 @@ and the four parameters are exactly the $2^{2}=4$ real parameters of the Hermiti
 **Theorem (the matrix model).** The biquaternion algebra $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is isomorphic to $M_{2}(\mathbb{C})$ as a $\mathbb{C}$-algebra, by the assignment
 
 $$
-i\longmapsto i\,\sigma_{3},\qquad j\longmapsto i\,\sigma_{2},\qquad k\longmapsto i\,\sigma_{1} ,
+\boxed{\;i\longmapsto i\,\sigma_{3},\qquad j\longmapsto i\,\sigma_{2},\qquad k\longmapsto i\,\sigma_{1}\;} ,
 $$
 
 under which the relations $i^{2}=j^{2}=k^{2}=-1$, $ij=k$, $jk=i$, $ki=j$ of the quaternions hold.

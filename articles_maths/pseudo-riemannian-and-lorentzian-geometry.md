@@ -66,7 +66,7 @@ with value $0$ if no causal curve joins the two points. It is not a metric: it i
 **Theorem (fundamental theorem of pseudo-Riemannian geometry).** On a pseudo-Riemannian manifold $(M, g)$ there is exactly one connection $\nabla$ that is metric, $X\,g(Y, Z) = g(\nabla_XY, Z) + g(Y, \nabla_XZ)$, and torsion-free, $\nabla_XY - \nabla_YX = [X, Y]$. It is given by the Koszul formula
 
 $$
-2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y]),
+\boxed{\;2\,g(\nabla_XY, Z) = X\,g(Y, Z) + Y\,g(Z, X) - Z\,g(X, Y) - g(X, [Y, Z]) + g(Y, [Z, X]) + g(Z, [X, Y])\;},
 $$
 
 and in a coordinate frame it has the Christoffel symbols
@@ -88,7 +88,7 @@ $$
 **Theorem (symmetries).** The tensor satisfies
 
 $$
-R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z) = R(Z, W, X, Y)
+\boxed{\;R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z) = R(Z, W, X, Y)\;}
 $$
 
 and the first Bianchi identity $R(X, Y, Z, W) + R(Y, Z, X, W) + R(Z, X, Y, W) = 0$; the second Bianchi identity $(\nabla_XR)(Y, Z) + (\nabla_YR)(Z, X) + (\nabla_ZR)(X, Y) = 0$ holds as an operator identity.
@@ -98,7 +98,7 @@ and the first Bianchi identity $R(X, Y, Z, W) + R(Y, Z, X, W) + R(Z, X, Y, W) = 
 **Definition.** Let $\sigma$ be a two-dimensional subspace of $T_pM$. It is **nondegenerate** if $g|_{\sigma \times \sigma}$ is nondegenerate, and if it is nondegenerate the **sectional curvature** of $\sigma$ is
 
 $$
-K(\sigma) = \frac{R(v, w, w, v)}{g(v, v)g(w, w) - g(v, w)^2}
+\boxed{\;K(\sigma) = \frac{R(v, w, w, v)}{g(v, v)g(w, w) - g(v, w)^2}\;}
 $$
 
 for a basis $v, w$ of $\sigma$; the number is independent of the basis. If $\sigma$ is degenerate — which happens exactly when it is tangent to the null cone — the denominator vanishes for some basis and the sectional curvature is not defined.

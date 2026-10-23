@@ -136,7 +136,7 @@ the next correction being of order $m-2$, so that the principal symbols agree. T
 **Theorem (composition).** Let $\mathfrak{a} \in S^m$ and $\mathfrak{b} \in S^{m'}$. Then $\mathfrak{a}(x,D)\mathfrak{b}(x,D)=c(x,D)$ for a symbol $c \in S^{m+m'}$, unique modulo $S^{-\infty}$, with
 
 $$
-c(x,\xi)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\xi)\,D_x^\alpha \mathfrak{b}(x,\xi),
+\boxed{\;c(x,\xi)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\xi)\,D_x^\alpha \mathfrak{b}(x,\xi)\;},
 $$
 
 the sum over all multi-indices $\alpha$, where $D_x^\alpha=(-i)^{|\alpha|}\partial^\alpha/\partial x^\alpha$ acts on the $x$-variable of $\mathfrak{b}$. In particular the leading term is $c \equiv \mathfrak{a}\mathfrak{b} \bmod S^{m+m'-1}$.
@@ -196,7 +196,7 @@ uniformly in $x$; if the estimate is required only on a subset of $\mathbb{R}^n_
 **Theorem (parametrix).** Let $\mathfrak{a} \in S^m$ be elliptic. Then there is $\mathfrak{b} \in S^{-m}$ with
 
 $$
-\mathfrak{a}(x,D)\mathfrak{b}(x,D)=I-R_1, \qquad \mathfrak{b}(x,D)\mathfrak{a}(x,D)=I-R_2, \qquad R_1,R_2 \in S^{-\infty}(x,D).
+\boxed{\;\mathfrak{a}(x,D)\mathfrak{b}(x,D)=I-R_1, \qquad \mathfrak{b}(x,D)\mathfrak{a}(x,D)=I-R_2, \qquad R_1,R_2 \in S^{-\infty}(x,D)\;}.
 $$
 
 *Proof (sketch).* Set $\mathfrak{b}_0$ equal to $\mathfrak{a}^{-1}$ for large $|\xi|$ and to $0$ for small $|\xi|$, cut off smoothly; then $\mathfrak{b}_0 \in S^{-m}$ and $\mathfrak{a}\mathfrak{b}_0-1=:r_0 \in S^{-1}$. If $\mathfrak{b}_N \in S^{-m}$ has been chosen with $\mathfrak{a}\mathfrak{b}_N=1+r_N$ and $r_N \in S^{-N}$, set $\mathfrak{b}_{N+1}=\mathfrak{b}_N-r_Na^{-1}$ with $\mathfrak{a}^{-1}$ again cut off for large $|\xi|$; then $\mathfrak{b}_{N+1} \in S^{-m}$ and
@@ -242,7 +242,7 @@ for a constant $C$ and an integer $N$ depending only on the dimension.
 **Theorem (Gårding).** Let $\mathfrak{a} \in S^1$ with $\operatorname{Re}\mathfrak{a}(x,\xi)\ge0$ for large $|\xi|$, and suppose $\mathfrak{a}(x,D)$ is properly supported. Then there is $C$ with
 
 $$
-\operatorname{Re}\langle \mathfrak{a}(x,D)u,u\rangle \ge -C\|u\|_{L^2}^2 \qquad \text{for all } u \in \mathcal S .
+\boxed{\;\operatorname{Re}\langle \mathfrak{a}(x,D)u,u\rangle \ge -C\|u\|_{L^2}^2 \qquad \text{for all } u \in \mathcal S\;} .
 $$
 
 More generally, if $\mathfrak{a} \in S^m$ is elliptic with $\operatorname{Re}\mathfrak{a}\ge c(1+|\xi|)^m>0$, then for all $u$,

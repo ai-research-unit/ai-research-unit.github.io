@@ -48,7 +48,7 @@ $$
 and symmetrically. So the images of $\Pi_+$ and $\Pi_-$ are complementary subspaces:
 
 $$
-V = V_+ \oplus V_-, \qquad V_+ = \Pi_+ \cdot V, \quad V_- = \Pi_- \cdot V.
+\boxed{\;V = V_+ \oplus V_-, \qquad V_+ = \Pi_+ \cdot V, \quad V_- = \Pi_- \cdot V\;}.
 $$
 
 This is the **idempotent decomposition** of the representation. It is the fundamental structural fact about representations of $\mathbb{D}$.
@@ -106,7 +106,7 @@ Both are algebra homomorphisms $\mathbb{D} \to \mathbb{R}$, and they are the onl
 **Theorem.** Every finite-dimensional real representation of $\mathbb{D}$ is isomorphic to a direct sum of copies of $\rho_+$ and $\rho_-$:
 
 $$
-V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q},
+\boxed{\;V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}\;},
 $$
 
 with $\rho = \rho_+^{\oplus p} \oplus \rho_-^{\oplus q}$.
@@ -158,7 +158,7 @@ $$
 Since every representation is a direct sum of copies of $\rho_+$ and $\rho_-$, we have
 
 $$
-R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z},
+\boxed{\;R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}\;},
 $$
 
 with generators $[\rho_+]$ and $[\rho_-]$.

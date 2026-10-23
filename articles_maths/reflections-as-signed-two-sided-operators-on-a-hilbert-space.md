@@ -43,7 +43,7 @@ The set of reflectors is $R^\times(H,\alpha)$ and the set of reflections is $\ma
 **Theorem.** For every reflector $U$ the signed conjugation $\rho_U$ is a $*$-automorphism of $B(H)$ with
 
 $$
-\rho_U^2=\mathrm{id},
+\boxed{\;\rho_U^2=\mathrm{id}\;},
 $$
 
 so $\rho_U$ is an involutive automorphism of $B(H)$. Conversely, if the signed conjugation $\rho_U$ is involutive, then $U$ is a reflector.
@@ -53,8 +53,8 @@ so $\rho_U$ is an involutive automorphism of $B(H)$. Conversely, if the signed c
 **Corollary (the eigenvalue decomposition).** Let $U$ be a reflector and $\rho=\rho_U$. Then
 
 $$
-B(H)=B(H)^+_\rho\oplus B(H)^-_\rho,\qquad
-B(H)^\pm_\rho=\{T:\rho(T)=\pm T\},
+\boxed{\;B(H)=B(H)^+_\rho\oplus B(H)^-_\rho,\qquad
+B(H)^\pm_\rho=\{T:\rho(T)=\pm T\}\;},
 $$
 
 the summands are the fixed part and the negated part, they are closed in the operator norm and in the Hilbert–Schmidt norm, and
@@ -77,7 +77,7 @@ $$
 **Theorem.** The assignment $U\mapsto\rho_U$ is a map from the reflectors onto the reflections, and it is constant exactly on the cosets of the centre: for invertible $U,V$,
 
 $$
-\rho_U=\rho_V \qquad\Longleftrightarrow\qquad V^{-1}U=\lambda I\ \text{for a scalar}\ \lambda\neq0 .
+\boxed{\;\rho_U=\rho_V \qquad\Longleftrightarrow\qquad V^{-1}U=\lambda I\ \text{for a scalar}\ \lambda\neq0\;} .
 $$
 
 Hence the reflections are parametrised by the reflectors modulo the scalars,

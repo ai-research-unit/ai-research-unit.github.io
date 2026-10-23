@@ -74,7 +74,7 @@ The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $0
 The roots of $\Xi^{2}=Q$ exist exactly on the forward cone
 
 $$
-\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\}.
+\boxed{\;\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\}\;}.
 $$
 
 On the interior of the cone there are four roots; on the boundary minus the origin there are two; at the origin there is one; outside there are none. A root of a unit is a unit, a root of a nonzero zero divisor is a zero divisor, and the root of $0$ is $0$. The classification is *Square Roots of a General Element in the Split-Complex Algebra*.
@@ -105,7 +105,7 @@ $$
 The two coordinates of a square are squares of real numbers, hence non-negative, and every non-negative pair is attained by choosing $Q_{\pm}=\pm\sqrt{\cdot}$. Therefore
 
 $$
-\operatorname{Im}(\square)=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}.
+\boxed{\;\operatorname{Im}(\square)=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}\;}.
 $$
 
 In the basis $1,j$ the inequalities are $q+q'\ge0$ and $q-q'\ge0$, that is
@@ -129,7 +129,7 @@ The cone is **not** the whole plane and **not** a half-plane: it has nonempty in
 The cone defines a partial order on $\mathbb{D}$ by
 
 $$
-Q\succeq B\iff Q-B\in\mathcal{C}\iff Q_{+}\ge B_{+}\text{ and }Q_{-}\ge B_{-}.
+Q\succeq B\iff Q-B\in\mathcal{C}\iff Q_{+}\ge B_{+}\text{ and }Q_{-}\ge B_{-} .
 $$
 
 **Proposition.** The relation $\preceq$ is a partial order, it is compatible with addition, and it is compatible with multiplication by non-negative real scalars. It is also compatible with multiplication by elements of $\mathcal{C}$: if $Q\succeq Q'$ and $B\succeq0$ then $QB\succeq Q'B$.

@@ -116,7 +116,7 @@ Since $K(A)$ is a complex of free $A$-modules with $K(A)_n$ generated in interna
 **Corollary.** If $A$ is Koszul then its Hilbert series $\mathrm{Hilb}_A(t) = \sum_n\dim_k(A_n)t^n$ and the Hilbert series of $A^!$ satisfy
 
 $$
-\mathrm{Hilb}_A(t)\,\mathrm{Hilb}_{A^!}(-t) = 1 .
+\boxed{\;\mathrm{Hilb}_A(t)\,\mathrm{Hilb}_{A^!}(-t) = 1\;} .
 $$
 
 *Proof.* The Euler characteristic of the Koszul complex, which is a resolution of $k$ when $A$ is Koszul, gives $\sum_n(-1)^n\dim_k(A\otimes_k(A^!_n)^*)\,t^n = \dim_k k = 1$ if the internal degree is tracked; substituting the Hilbert series evaluates the alternating sum.
@@ -152,7 +152,7 @@ with $n = \dim V$, and the exactness of this complex — the statement that the 
 **Theorem (BGG–Koszul duality, standard).** Let $A$ be a Koszul algebra with Koszul dual $A^!$. Then there is an equivalence of triangulated categories
 
 $$
-D^{\mathrm{b}}(\operatorname{grmod}A) \;\simeq\; D^{\mathrm{b}}(\operatorname{grmod}A^!)^{\mathrm{opp}}
+\boxed{\;D^{\mathrm{b}}(\operatorname{grmod}A) \;\simeq\; D^{\mathrm{b}}(\operatorname{grmod}A^!)^{\mathrm{opp}}\;}
 $$
 
 implemented by the functors $\operatorname{RHom}_A(-,k)$ and $\operatorname{RHom}_{A^!}(-,-,k)$; equivalently, the Koszul complex $K(A)$ is a tilting object of the derived category of graded $A$-modules, and its endomorphism algebra is $A^!$. Under the equivalence the free module $A$ corresponds to $k$ (with a degree shift) and the simple module $k$ corresponds to $A^!$.
@@ -172,7 +172,7 @@ implemented by the functors $\operatorname{RHom}_A(-,k)$ and $\operatorname{RHom
 **Theorem (standard).** Let $A$ be a Koszul algebra with Koszul dual $A^!$. Then the Hochschild cohomology of $A$ is computed by a complex built from the Koszul resolution, and there are duality statements relating the Hochschild theories of $A$ and of $A^!$ with a degree shift: for a Koszul algebra the Hochschild cohomology $HH^\bullet(A,A)$ is the $E_2$-page of a spectral sequence converging to the Hochschild cohomology of $A^!$, and in the graded-complete setting the Hochschild homology of $A$ is dual to the Hochschild cohomology of $A^!$ with a shift of degree,
 
 $$
-HH_i(A,A)^* \;\cong\; HH^{i}(A^!,A^!) \qquad \text{(graded-complete case)},
+\boxed{\;HH_i(A,A)^* \;\cong\; HH^{i}(A^!,A^!) \qquad \text{(graded-complete case)}\;},
 $$
 
 so that the Hochschild theories of a Koszul algebra and of its dual determine one another. The duality is the algebraic prototype of the duality between the homology of a space and the cohomology of a ring of functions on it; the topological reading belongs to Part II, and the transfer of the Calabi–Yau condition along Koszul duality is not covered here.

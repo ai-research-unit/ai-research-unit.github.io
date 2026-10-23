@@ -75,8 +75,8 @@ The cotangent bundle carries the **canonical symplectic form** $\omega = \sum_i 
 **Theorem.** The Legendre transform carries the geodesic spray to the Hamiltonian vector field of $H$: writing $X_H$ for the vector field with $\omega(X_H, \cdot) = -dH$, one has $d\flat(G) = X_H$, and the integral curves of $X_H$ are the curves $t \mapsto \flat(\varphi_t(x,\xi))$. Equivalently, the geodesic flow is the Hamiltonian flow of the kinetic energy on the cotangent bundle, and every integral curve satisfies the Hamilton equations
 
 $$
-dx^{k}/dt = \frac{\partial H}{\partial p_k} = \sum_j g^{kj}p_j, \qquad
-\,dp_{k}/dt = -\frac{\partial H}{\partial x^k} = -\tfrac{1}{2}\sum_{ij}\partial/\partial x^k\,g^{ij}\,p_ip_j .
+\boxed{\;dx^{k}/dt = \frac{\partial H}{\partial p_k} = \sum_j g^{kj}p_j, \qquad
+\,dp_{k}/dt = -\frac{\partial H}{\partial x^k} = -\tfrac{1}{2}\sum_{ij}\partial/\partial x^k\,g^{ij}\,p_ip_j\;} .
 $$
 
 **Proof.** The two equations are the equations of the spray read through $\flat$: the first is $dx^{k}/dt = \xi^k$, and the second is obtained from $d\xi^{k}/dt = -\sum_{ij}\Gamma^k_{ij}\xi^i\xi^j$ by differentiating $p_k = \sum_jg_{kj}\xi^j$ and using the identity $\partial/\partial x^l\,g_{kj} = \sum_i(\Gamma^i_{kl}g_{ij}+\Gamma^i_{jl}g_{ki})$, which expresses the metricity of $\nabla$ in a chart. The Hamiltonian field is well defined because $\omega$ is nondegenerate and closed, and it is tangent to the level sets of $H$ because $X_H(H) = \{H,H\} = 0$.
@@ -94,7 +94,7 @@ and on a function on $T^*M$ by the same formula along the Hamiltonian flow. The 
 **Proposition.** The generator of the group is the spray read as a derivation of the algebra of smooth functions,
 
 $$
-\frac{d}{dt}\Big|_{t=0} \Phi_tf = Gf, \qquad \text{equivalently} \qquad \frac{d}{dt} \Phi_tf = \Phi_t(Gf),
+\boxed{\;\frac{d}{dt}\Big|_{t=0} \Phi_tf = Gf, \qquad \text{equivalently} \qquad \frac{d}{dt} \Phi_tf = \Phi_t(Gf)\;},
 $$
 
 and on the cotangent bundle the generator is the Hamiltonian derivation $\{H,\cdot\}$. The flow operator commutes with the energy, $\Phi_tE = E$, and its restriction to the functions on $SM$ is again a one-parameter group.
@@ -125,7 +125,7 @@ so that the Jacobi fields are the kernel of $\mathcal{J}_\gamma$.
 **Theorem.** The Jacobi equation is the linearisation of the geodesic equation: a family $s \mapsto \gamma_s$ of geodesics with $\gamma_0 = \gamma$ has variation field $J(t) = \partial/\partial s\,\gamma_s(t)|_{s=0}$, and $J$ is a Jacobi field; conversely every Jacobi field arises this way. Moreover the Jacobi fields along $\gamma$ are exactly the derivatives of the geodesic flow,
 
 $$
-J(t) = \bigl(\pi \circ d\varphi_t\bigr)(w), \qquad w \in T_{(x,\xi)}TM,\quad (x,\xi) = (\gamma(0),\gamma'(0)),
+\boxed{\;J(t) = \bigl(\pi \circ d\varphi_t\bigr)(w), \qquad w \in T_{(x,\xi)}TM,\quad (x,\xi) = (\gamma(0),\gamma'(0))\;},
 $$
 
 where $\pi : TTM \to TM$ is the bundle projection followed by the identification of the vertical subspaces with the tangent spaces.

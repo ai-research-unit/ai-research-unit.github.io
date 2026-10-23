@@ -65,7 +65,7 @@ an ideal containing the radical $\sqrt I$ and contained in the set of polynomial
 **Theorem (real Nullstellensatz).** Let $R$ be real closed and $I \subseteq R[x_1,\ldots,x_n]$ an ideal. Then
 
 $$
-\mathcal{I}(\mathcal{V}(I)) = \sqrt[\mathbb{R}]{I} .
+\boxed{\;\mathcal{I}(\mathcal{V}(I)) = \sqrt[\mathbb{R}]{I}\;} .
 $$
 
 In particular, $I$ is a real ideal, meaning $I = \mathcal{I}(\mathcal{V}(I))$, if and only if whenever $f_1^2+\cdots+f_k^2 \in I$ all the $f_i$ lie in $I$; and the real Nullstellensatz is the exact analogue over $R$ of the Hilbert Nullstellensatz over an algebraically closed field.
@@ -89,7 +89,7 @@ $$
 **(b)** $f \geq 0$ on $W$ if and only if there are $F, F' \in \operatorname{cone}(f_1,\ldots,f_r)$, $G \in \operatorname{mono}(g_1,\ldots,g_s)$ and $H \in (h_1,\ldots,h_t)$ with
 
 $$
-f G^2 - F - H \in \operatorname{cone}(f_1,\ldots,f_r) \quad\text{or, equivalently,}\quad f G^2 = F + H ;
+\boxed{\;f G^2 - F - H \in \operatorname{cone}(f_1,\ldots,f_r) \quad\text{or, equivalently,}\quad f G^2 = F + H\;} ;
 $$
 
 **(c)** $f > 0$ on $W$ if and only if there are $F, F'$ and $H$ in the same sense with $f F' = 1 + F + H$.
@@ -107,7 +107,7 @@ $$
 **Theorem (Hilbert's seventeenth problem, Artin).** Let $R$ be a real closed field and $f \in R(x_1,\ldots,x_n)$ a rational function which is nonnegative at every point of $R^n$ at which it is defined. Then $f$ is a sum of squares of rational functions of $R(x_1,\ldots,x_n)$:
 
 $$
-f = \sum_{i=1}^{k}\frac{p_i^2}{q_i^2}, \qquad p_i, q_i \in R[x_1,\ldots,x_n] .
+\boxed{\;f = \sum_{i=1}^{k}\frac{p_i^2}{q_i^2}, \qquad p_i, q_i \in R[x_1,\ldots,x_n]\;} .
 $$
 
 Equivalently, writing $f = p/q$ with $p, q \in R[x_1,\ldots,x_n]$, the product $p q$ is a sum of squares of polynomials.

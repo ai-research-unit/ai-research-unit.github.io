@@ -57,7 +57,7 @@ $$
 **Theorem (the reciprocity relation).** Let $G$ be the Green function of the problem $(L,B)$ and $G^{*}$ that of the adjoint problem $(L^{\dagger},B^{*})$. Then
 
 $$
-G(x,y) = \overline{G^{*}(y,x)} ,
+\boxed{\;G(x,y) = \overline{G^{*}(y,x)}\;} ,
 $$
 
 for almost every $(x,y)$; equivalently $G^{*}(x,y)=\overline{G(y,x)}$.
@@ -85,7 +85,7 @@ for almost every pair $(y,w)$, which is the display after renaming the variables
 **Theorem (symmetry in the self-adjoint case).** If the problem is self-adjoint, then $G^{*}=G$ and the Green function is Hermitian,
 
 $$
-G(x,y) = \overline{G(y,x)} .
+\boxed{\;G(x,y) = \overline{G(y,x)}\;} .
 $$
 
 *Proof.* Self-adjointness is $L^{\dagger}=L$ and $B^{*}=B$, so the adjoint problem is the original one and $G^{*}=G$; the reciprocity relation then reads $G(x,y)=\overline{G(y,x)}$.
@@ -93,7 +93,7 @@ $$
 **Corollary (reciprocity of the solutions).** Under the hypotheses of the reciprocity theorem, the solutions $w$ of $Lw=f$ and $v$ of $L^{\dagger}v=g$ satisfy
 
 $$
-\langle w,g\rangle = \langle f,v\rangle ,
+\boxed{\;\langle w,g\rangle = \langle f,v\rangle\;} ,
 $$
 
 the **reciprocity of the solutions**; in the self-adjoint case this is the symmetry of the Green operator, $\langle Gf,g\rangle=\langle f,Gg\rangle$.

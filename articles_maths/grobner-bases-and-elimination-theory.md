@@ -39,7 +39,7 @@ Each is a monomial order. For $n = 2$ and $x \succ y$: $\mathrm{lex}$ orders mon
 **Theorem (division algorithm).** Fix a monomial order on $R$ and let $F = (f_1,\ldots,f_s)$ be an ordered $s$-tuple of nonzero polynomials. Then every $f \in R$ can be written
 
 $$
-f = q_1f_1 + \cdots + q_sf_s + r ,
+\boxed{\;f = q_1f_1 + \cdots + q_sf_s + r\;} ,
 $$
 
 with $q_i, r \in R$ and with $r$ such that no monomial of $r$ is divisible by any of $\operatorname{LM}(f_1),\ldots,\operatorname{LM}(f_s)$. The remainder $r$ is produced by the following finite procedure: while $f \neq 0$, if $\operatorname{LM}(f)$ is divisible by some $\operatorname{LM}(f_i)$ replace $f$ by $f - \frac{\operatorname{LT}(f)}{\operatorname{LT}(f_i)}f_i$, otherwise move $\operatorname{LT}(f)$ into the remainder and delete it from $f$.
@@ -113,7 +113,7 @@ the set of polynomials of $I$ involving none of $x_1,\ldots,x_k$; it is an ideal
 **Theorem (elimination theorem).** Fix the lexicographic order with $x_1 \succ x_2 \succ \cdots \succ x_n$ and let $G$ be a Gröbner basis of $I$ with respect to it. Then for each $k$ the set
 
 $$
-G_k = G \cap K[x_{k+1},\ldots,x_n]
+\boxed{\;G_k = G \cap K[x_{k+1},\ldots,x_n]\;}
 $$
 
 is a Gröbner basis of the $k$-th elimination ideal $I_k$.
@@ -175,7 +175,7 @@ namely $xz-y^2$, $xw-yz$ and $yw-z^2$; setting $w = 1$ recovers the two affine e
 **Theorem (shape lemma).** Let $I$ be a zero-dimensional radical ideal in **general position** with respect to $x_n$ — that is, the finitely many points of its variety have distinct $x_n$-coordinates. Then the reduced lexicographic Gröbner basis has the shape
 
 $$
-G = \{x_1 - g_1(x_n),\ \ldots,\ x_{n-1}-g_{n-1}(x_n),\ g(x_n)\},
+\boxed{\;G = \{x_1 - g_1(x_n),\ \ldots,\ x_{n-1}-g_{n-1}(x_n),\ g(x_n)\}\;},
 $$
 
 with $\deg g$ equal to the number of points; the roots of $g$ are the $x_n$-coordinates of the points and the other coordinates are obtained by evaluating the $g_i$.

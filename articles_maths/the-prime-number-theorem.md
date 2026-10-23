@@ -23,7 +23,7 @@ and $\mathrm{Li}(x) = \int_2^x\frac{dt}{\log t}$ is the logarithmic integral.
 
 **Theorem (the prime number theorem; Hadamard and de la Vallée Poussin).** As $x\to\infty$,
 $$
-\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \theta(x)\sim x, \qquad p_n \sim n\log n .
+\boxed{\;\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \theta(x)\sim x, \qquad p_n \sim n\log n\;} .
 $$
 All four statements are equivalent.
 
@@ -76,7 +76,7 @@ where $h$ extends continuously to the closed half-plane $\Re s \geq 1$.
 
 **Theorem (Wiener–Ikehara).** Let $A:[1,\infty)\to[0,\infty)$ be nondecreasing, with $A(x)=0$ for $x<1$, and let
 $$
-g(s) = \int_1^\infty A(x)\,x^{-s-1}dx = H(s) + \frac{c}{s-1}
+\boxed{\;g(s) = \int_1^\infty A(x)\,x^{-s-1}dx = H(s) + \frac{c}{s-1}\;}
 $$
 for $\Re s>1$, where $c\geq0$ is constant and $H$ extends continuously to the closed half-plane $\Re s\geq1$. Then $A(x) \sim c\,x$ as $x\to\infty$.
 
@@ -116,7 +116,7 @@ $$
 
 **Corollary (error terms).** With the region above,
 $$
-\psi(x) = x + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr), \qquad \pi(x) = \mathrm{Li}(x) + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr)
+\boxed{\;\psi(x) = x + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr), \qquad \pi(x) = \mathrm{Li}(x) + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr)\;}
 $$
 for a constant $c'>0$; the zero-free region and the error term are equivalent in the sense that a wider zero-free region gives a smaller error and conversely.
 

@@ -114,7 +114,7 @@ In dimension four the gauge-theoretic invariants enter, and the constraints they
 **Theorem (Bennequin inequality).** Let $K\subseteq(\mathbb{R}^3,\xi_{\mathrm{std}})$ be a Legendrian knot with Thurston–Bennequin invariant $\mathrm{tb}(K)$ and rotation number $\mathrm{rot}(K)$, and let $g$ be the genus of a Seifert surface for $K$ placed in general position with respect to $\xi$. Then
 
 $$
-\mathrm{tb}(K) + |\mathrm{rot}(K)| \leq 2g - 1 .
+\boxed{\;\mathrm{tb}(K) + |\mathrm{rot}(K)| \leq 2g - 1\;} .
 $$
 
 **Proof sketch.** The inequality is proved by putting the Seifert surface into a standard form with respect to the contact structure and computing the Thurston–Bennequin invariant of the boundary in terms of the Euler characteristic of the surface; the modern proofs derive it from the adjunction inequality for pseudoholomorphic curves in the symplectisation, or from the Heegaard Floer theory of the knot, and the analytic input is the same compactness theory that underlies.

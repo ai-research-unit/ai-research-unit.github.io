@@ -40,7 +40,7 @@ the $i$-th cohomology of the complex of abelian groups obtained by applying glob
 **Theorem (the long exact sequence).** Let $0 \to \mathcal{F} \to \mathcal{G} \to \mathcal{H} \to 0$ be a short exact sequence of sheaves of abelian groups on $X$. There is a long exact sequence of abelian groups
 
 $$
-0 \to H^0(X,\mathcal{F}) \to H^0(X,\mathcal{G}) \to H^0(X,\mathcal{H}) \xrightarrow{\ \delta\ } H^1(X,\mathcal{F}) \to H^1(X,\mathcal{G}) \to H^1(X,\mathcal{H}) \xrightarrow{\ \delta\ } H^2(X,\mathcal{F}) \to \cdots,
+\boxed{\;0 \to H^0(X,\mathcal{F}) \to H^0(X,\mathcal{G}) \to H^0(X,\mathcal{H}) \xrightarrow{\ \delta\ } H^1(X,\mathcal{F}) \to H^1(X,\mathcal{G}) \to H^1(X,\mathcal{H}) \xrightarrow{\ \delta\ } H^2(X,\mathcal{F}) \to \cdots\;},
 $$
 
 natural in the short exact sequence, the **connecting homomorphism** $\delta$ being constructed by the snake lemma from a commutative ladder of injective resolutions.
@@ -84,7 +84,7 @@ the cokernel being taken in sheaves; then $0 \to \mathcal{F} \to \mathcal{G}^0 \
 **Theorem (Grothendieck's vanishing theorem).** If $X$ is a Noetherian topological space of dimension $n$ — for instance a Noetherian scheme with the Zariski topology — then
 
 $$
-H^i(X,\mathcal{F}) = 0 \qquad \text{for all } i > n \text{ and all sheaves } \mathcal{F},
+\boxed{\;H^i(X,\mathcal{F}) = 0 \qquad \text{for all } i > n \text{ and all sheaves } \mathcal{F}\;},
 $$
 
 so the cohomological dimension of $X$ is at most $n$. For sheaves on a paracompact space, a vanishing statement of the same kind holds with the covering dimension of $X$ in the place of $n$.
@@ -114,7 +114,7 @@ The same computation applies to any sheaf concentrated on a finite set of points
 **Theorem (sheaf cohomology of the constant sheaf).** Let $X$ be a paracompact space that is locally contractible — every neighbourhood of every point contains a contractible neighbourhood — for instance a CW complex, a manifold or a simplicial complex. Then for every abelian group $A$ and every $i \geq 0$ there is a natural isomorphism
 
 $$
-H^i(X,\underline{A}) \cong H^i(X;A),
+\boxed{\;H^i(X,\underline{A}) \cong H^i(X;A)\;},
 $$
 
 between the sheaf cohomology of the constant sheaf $\underline{A}$ and the singular cohomology with coefficients in $A$.

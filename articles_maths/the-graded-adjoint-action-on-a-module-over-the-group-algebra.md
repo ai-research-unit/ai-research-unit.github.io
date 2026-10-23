@@ -26,7 +26,7 @@ and for a homogeneous operator $T$ of parity $|T|$ the transpose has the same pa
 **Theorem (the sign rule for the transpose).** For a homogeneous operator $T$ and a homogeneous graded form, the transpose is characterised by
 
 $$
-B(Tv,w) = (-1)^{|T|\,q}\,B(v,T^\#w),
+\boxed{\;B(Tv,w) = (-1)^{|T|\,q}\,B(v,T^\#w)\;},
 $$
 
 with $q = 0$ for an even form and $q = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.
@@ -44,7 +44,7 @@ $$
 **Theorem (it is an action preserving the parity).** The adjoint action is an action of the unit group of $\mathcal{A}$ on $\mathrm{End}(M)$, it is compatible with the grading in the form
 
 $$
-\varepsilon\,(a\cdot T)\,\varepsilon = \alpha(a)\cdot(\varepsilon\,T\,\varepsilon) = (\alpha(a))\cdot T^{\varepsilon}, \qquad T^\varepsilon = \varepsilon T\varepsilon ,
+\boxed{\;\varepsilon\,(a\cdot T)\,\varepsilon = \alpha(a)\cdot(\varepsilon\,T\,\varepsilon) = (\alpha(a))\cdot T^{\varepsilon}, \qquad T^\varepsilon = \varepsilon T\varepsilon\;} ,
 $$
 
 and it preserves the parity, $|a\cdot T| = |T|$.
@@ -60,7 +60,7 @@ and it preserves the parity, $|a\cdot T| = |T|$.
 **Theorem (the adjoint of the action operator).** Suppose $M$ is a Hilbert space and the action is `*`-compatible, $\pi(a^*) = \pi(a)^*$; then for a unitary element $a$ the action operator is unitary, $\pi(a)^{-1} = \pi(a)^*$, and the adjoint of the adjoint action is
 
 $$
-\bigl(a\cdot T\bigr)^* = a\cdot T^* ,
+\boxed{\;\bigl(a\cdot T\bigr)^* = a\cdot T^*\;} ,
 $$
 
 so the adjoint action of a unitary element preserves self-adjointness, positivity and unitarity.

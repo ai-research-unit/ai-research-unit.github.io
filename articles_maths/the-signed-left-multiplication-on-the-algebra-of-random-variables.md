@@ -43,7 +43,7 @@ and the signed left multiplication is that operator in which the grade involutio
 
 **Theorem (the product law).** For all $a,b\in\mathcal{A}$,
 $$
-T^\alpha_a\,T^\alpha_b=L_{a\,\alpha(b)},
+\boxed{\;T^\alpha_a\,T^\alpha_b=L_{a\,\alpha(b)}\;},
 $$
 so the product of two signed left multiplications is an unsigned left multiplication, and it is again a signed left multiplication only in the degenerate case: either $\alpha=\mathrm{id}$, or the multiplier $a\alpha(b)$ vanishes.
 
@@ -75,7 +75,7 @@ $$
 
 **Theorem (the signed adjoint).** With respect to the form of the category,
 $$
-\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha\circ L_{a^*},\qquad \delta=\sigma\alpha=\alpha\sigma .
+\boxed{\;\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha\circ L_{a^*},\qquad \delta=\sigma\alpha=\alpha\sigma\;} .
 $$
 Equivalently $\bigl(T^\alpha_a\bigr)^*(y)=\alpha(a^*y)$.
 
@@ -91,7 +91,7 @@ using $\alpha^*=\alpha$ and $L_a^*=L_{a^*}$. Since $\alpha L_{a^*}=L_{\alpha(a^*
 
 **Theorem.** For $a\in\mathcal{A}$ the signed left multiplication satisfies
 $$
-T^\alpha_a\ \text{is self-adjoint}\iff a=\delta(a)\iff\alpha(a)=a^* ,
+\boxed{\;T^\alpha_a\ \text{is self-adjoint}\iff a=\delta(a)\iff\alpha(a)=a^*\;} ,
 $$
 $$
 T^\alpha_a\ \text{is an isometry}\iff|a|=1,\qquad T^\alpha_a\ \text{is unitary}\iff|a|=1 ,

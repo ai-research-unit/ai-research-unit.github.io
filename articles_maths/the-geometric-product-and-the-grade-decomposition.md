@@ -36,7 +36,7 @@ The grade of an element has been defined through one orthogonal basis. The defin
 **Proposition.** For $x=v_1\wedge\cdots\wedge v_k\in\Lambda^kV$ put
 
 $$
-\mathrm{Alt}(x)=\frac{1}{k!}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)\,v_{\pi(1)}\cdots v_{\pi(k)}\ \in\ \mathrm{Cl}(V,\mathfrak{Q}),
+\boxed{\;\mathrm{Alt}(x)=\frac{1}{k!}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)\,v_{\pi(1)}\cdots v_{\pi(k)}\ \in\ \mathrm{Cl}(V,\mathfrak{Q})\;},
 $$
 
 the antisymmetrised product. Then $\mathrm{Alt}$ is linear, $\mathrm{Alt}(\Lambda^kV)\subseteq\mathrm{Cl}_k(V,\mathfrak{Q})$, and $\mathrm{Alt}:\Lambda(V)\to\mathrm{Cl}(V,\mathfrak{Q})$ is an isomorphism of vector spaces over a field of characteristic $0$ or of characteristic greater than $n$.
@@ -54,7 +54,7 @@ The $k$-vectors of $\mathrm{Cl}(V,\mathfrak{Q})$ are thus the image of the $k$-f
 **Theorem.** Let $u\in\mathrm{Cl}_k(V,\mathfrak{Q})$ and $w\in\mathrm{Cl}_l(V,\mathfrak{Q})$. Then
 
 $$
-uw=\sum_{j}\langle uw\rangle_j, \qquad j=k+l,\ k+l-2,\ \ldots,\ |k-l|,
+\boxed{\;uw=\sum_{j}\langle uw\rangle_j, \qquad j=k+l,\ k+l-2,\ \ldots,\ |k-l|\;},
 $$
 
 so that all the surviving grades have the parity of $k+l$ and lie between $|k-l|$ and $k+l$. In particular the product of two $k$-vectors is even, and the product of an even with an odd multivector is odd.
@@ -137,7 +137,7 @@ The outer product alone carries the exterior structure of the space.
 **Proposition.** The bilinear extension of $u\wedge w=\langle uw\rangle_{k+l}$, taken on homogeneous multivectors and extended by linearity, makes $\bigoplus_k\mathrm{Cl}_k(V,\mathfrak{Q})$ a graded-commutative algebra, with
 
 $$
-u\wedge w=(-1)^{kl}\,w\wedge u \qquad (u\in\mathrm{Cl}_k,\ w\in\mathrm{Cl}_l),
+\boxed{\;u\wedge w=(-1)^{kl}\,w\wedge u \qquad (u\in\mathrm{Cl}_k,\ w\in\mathrm{Cl}_l)\;},
 $$
 
 and the map $\mathrm{Alt}$ of the first section is an isomorphism of graded algebras from $\Lambda(V)$ with its wedge product onto that algebra.

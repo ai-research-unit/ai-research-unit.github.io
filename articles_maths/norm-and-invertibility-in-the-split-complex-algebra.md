@@ -37,7 +37,7 @@ $$
 the general plain bilinear form of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*. The form is symmetric, because the algebra is commutative. In coordinates,
 
 $$
-\boxed{\;\langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j\;},
+\langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j,
 $$
 
 so the algebraic norm takes its value in the whole algebra $\mathbb{D}$ and not in the base field.
@@ -55,7 +55,7 @@ so the algebraic norm takes its value in the whole algebra $\mathbb{D}$ and not 
 **Proposition.** The polar form of the algebraic norm is the symmetrised product,
 
 $$
-\langle Q_2,Q_1\rangle=\tfrac12\bigl(\langle Q_2+Q_1\rangle-\langle Q_2\rangle-\langle Q_1\rangle\bigr)=Q_2Q_1,
+\boxed{\; \langle Q_2,Q_1\rangle=\tfrac12\bigl(\langle Q_2+Q_1\rangle-\langle Q_2\rangle-\langle Q_1\rangle\bigr)=Q_2Q_1 \;},
 $$
 
 and it is $\mathbb{D}$-valued and symmetric.

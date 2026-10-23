@@ -53,8 +53,8 @@ $$
 \boxed{\;
 \tilde Q_1\tilde Q_2+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1,0}\tilde Q_2 , \qquad
 \tilde Q_1\tilde Q_2-\tilde Q_1^{\natural}\tilde Q_2=2\,\vec Q_1\tilde Q_2
-\;}
-$$.
+\;}.
+$$
 
 The same separation applied to the two sesquilinear products gives
 
@@ -83,8 +83,8 @@ $$
 (\tilde Q_1\tilde Q_2^{*})^{\natural}=\bar{\tilde Q}_2\tilde Q_1^{\natural} , \qquad
 (\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1 , \qquad
 (\tilde Q_1^{\natural}\tilde Q_2^{*})^{\natural}=\bar{\tilde Q}_2\tilde Q_1
-\;}
-$$,
+\;},
+$$
 
 $$
 (\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*} , \qquad
@@ -132,8 +132,8 @@ Three identities move a scalar part from one writing to another. The natural sig
 $$
 \boxed{\;
 \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})
-\;}
-$$,
+\;},
+$$
 
 and the same holds with the star, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\mathrm{Sc}(\tilde Q_1\bar{\tilde Q}_2)$, while the scalar part is unchanged when both factors are conjugated by the natural sign,
 

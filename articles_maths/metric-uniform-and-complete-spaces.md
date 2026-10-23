@@ -56,7 +56,7 @@ The point is that the metric, and not merely its topology, controls Cauchy seque
 **Theorem (Banach fixed point theorem).** Let $(X, d)$ be a complete metric space and let $f : X \to X$ be a contraction with constant $L < 1$. Then $f$ has exactly one fixed point $x^*$, and for every $x_0 \in X$ the iterates $x_{n+1} = f(x_n)$ converge to $x^*$ with the estimate
 
 $$
-d(x_n, x^*) \leq \frac{L^n}{1 - L} \, d(x_1, x_0).
+\boxed{\;d(x_n, x^*) \leq \frac{L^n}{1 - L} \, d(x_1, x_0)\;}.
 $$
 
 **Proof.** For $m > n$, the triangle inequality and the geometric bound give $d(x_n, x_m) \leq \frac{L^n}{1-L} d(x_1, x_0)$, so $(x_n)$ is Cauchy; let $x^*$ be its limit, which exists by completeness. Continuity of $f$ gives $f(x^*) = \lim f(x_n) = \lim x_{n+1} = x^*$. If $y$ is another fixed point, then $d(x^*, y) = d(f(x^*), f(y)) \leq L\,d(x^*, y)$, forcing $d(x^*, y) = 0$. The estimate follows by letting $m \to \infty$.
@@ -134,7 +134,7 @@ $$
 The limit exists because $\left(d(x_n, y_n)\right)$ is Cauchy in $\mathbb{R}$: the estimate $|d(x_n,y_n) - d(x_m,y_m)| \leq d(x_n,x_m) + d(y_n,y_m)$ shows it. Let $\hat X = \mathcal{C}/{\sim}$ and put
 
 $$
-\hat d([(x_n)], [(y_n)]) = \lim_{n \to \infty} d(x_n, y_n).
+\boxed{\;\hat d([(x_n)], [(y_n)]) = \lim_{n \to \infty} d(x_n, y_n)\;}.
 $$
 
 **Well-definedness and completeness.** The limit is independent of the representatives, because replacing one Cauchy sequence by an equivalent one changes $d(x_n, y_n)$ by a quantity tending to $0$. The function $\hat d$ is a metric: symmetry and the triangle inequality pass to the limit from $d$, and $\hat d = 0$ exactly for equivalent sequences, which is the definition of the class. Completeness holds because a Cauchy sequence in $\hat X$ can be replaced by a Cauchy sequence in the dense copy $\iota(X)$ and then by a diagonal sequence in $X$ whose class is its limit.
@@ -220,7 +220,7 @@ $$
 **Theorem (interchange of limit and integral; the integral is Part III's, quoted).** Let $f_n : [a, b] \to \mathbb{R}$ be Riemann integrable with $f_n \to f$ uniformly. Then $f$ is Riemann integrable and
 
 $$
-\int_a^b f = \lim_{n \to \infty} \int_a^b f_n.
+\boxed{\;\int_a^b f = \lim_{n \to \infty} \int_a^b f_n\;}.
 $$
 
 **Proof.** Uniform convergence controls the difference of the integrals: $\left|\int f_n - \int f\right| \leq (b - a) \sup |f_n - f| \to 0$. Integrability of $f$ follows from the standard criterion, since $f$ can be approximated uniformly by integrable functions.

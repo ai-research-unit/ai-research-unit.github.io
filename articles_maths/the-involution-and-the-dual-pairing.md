@@ -20,7 +20,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 **Theorem (existence and uniqueness).** Let $\theta$ be a $\varsigma$-semilinear involution of $E$. Then there is a unique $\varsigma$-semilinear involution $\theta^{t}$ of $F$ with
 
 $$
-\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F) ,
+\boxed{\;\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F)\;} ,
 $$
 
 and $(\theta^{t})^{2} = \mathrm{id}$. It is called the **transposed involution**, and it is linear exactly when $\theta$ is linear.
@@ -40,7 +40,7 @@ so the pairing is invariant when $\theta$ is linear and conjugate-invariant in t
 **Proposition (annihilators).** The fixed and negated subspaces of $\theta^{t}$ are the annihilators of the negated and fixed subspaces of $\theta$,
 
 $$
-F^{\theta^{t}} = (E^{-})^{\circ}, \qquad F^{-} = (E^{\theta})^{\circ} ,
+\boxed{\;F^{\theta^{t}} = (E^{-})^{\circ}, \qquad F^{-} = (E^{\theta})^{\circ}\;} ,
 $$
 
 and the bipolar theorem of *Duality Theory* recovers the summands; in particular the transposed involution is injective on $F$ exactly when the summands of $E$ are the whole space.
@@ -66,7 +66,7 @@ and compatibility is the intertwining of the two involutions.
 **Theorem (compatibility is intertwining, linear case).** Let $\theta = T$ be linear and let $B$ be a non-degenerate bilinear form on $E$ with induced isomorphism $\Phi : E \to F$, $B(x,y) = \langle x, \Phi y\rangle$. Then
 
 $$
-B(Tx, Ty) = B(x, y) \ \text{for all } x, y \iff \Phi\,T = T^{t}\,\Phi ,
+\boxed{\;B(Tx, Ty) = B(x, y) \ \text{for all } x, y \iff \Phi\,T = T^{t}\,\Phi\;} ,
 $$
 
 so a bilinear form is $T$-compatible exactly when its induced operator intertwines $T$ with the transposed involution.

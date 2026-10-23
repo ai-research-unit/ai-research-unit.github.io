@@ -49,7 +49,7 @@ for some $\lambda$, the **Lagrange multiplier**; this equation is the **Euler–
 **Theorem (the min–max principle).** Let $\mathfrak{a}$ be a Hermitian form and $\mathfrak{b}$ a positive Hermitian form on a space $\mathcal{D}$, with $\mathfrak{a}$ coercive relative to $\mathfrak{b}$, $\mathfrak{a}(w,w)\ge c\,\mathfrak{b}(w,w)$, and suppose that the operator representing $\mathfrak{a}$ relative to $\mathfrak{b}$ has a compact inverse. Then the eigenvalues $\lambda_1\le\lambda_2\le\cdots$ of the pair are positive, of finite multiplicity and tending to $+\infty$, and for every $k$,
 
 $$
-\lambda_k = \min_{\substack{V\subseteq\mathcal{D}\\ \dim V=k}}\ \max_{\substack{w\in V\\ w\neq0}} R(w) = \max_{\substack{V\subseteq\mathcal{D}\\ \operatorname{codim}V=k-1}}\ \min_{\substack{w\in V\\ w\neq0}} R(w) ,
+\boxed{\;\lambda_k = \min_{\substack{V\subseteq\mathcal{D}\\ \dim V=k}}\ \max_{\substack{w\in V\\ w\neq0}} R(w) = \max_{\substack{V\subseteq\mathcal{D}\\ \operatorname{codim}V=k-1}}\ \min_{\substack{w\in V\\ w\neq0}} R(w)\;} ,
 $$
 
 the minimum and the maximum being attained at the $k$-dimensional span of the first $k$ eigenfunctions and its orthogonal complement, respectively.
@@ -89,7 +89,7 @@ $$
 **Theorem (the Euler–Lagrange equation).** For a smooth Lagrangian $L$, a critical point $w$ of $\mathcal{J}$ satisfies
 
 $$
-\frac{\partial L}{\partial w} - \sum_j \partial/\partial x_j\,\Bigl(\frac{\partial L}{\partial w_j}\Bigr) = 0 ,
+\boxed{\;\frac{\partial L}{\partial w} - \sum_j \partial/\partial x_j\,\Bigl(\frac{\partial L}{\partial w_j}\Bigr) = 0\;} ,
 $$
 
 the **Euler–Lagrange equation**, in the weak sense; conversely a solution of the equation is a critical point.
@@ -99,7 +99,7 @@ the **Euler–Lagrange equation**, in the weak sense; conversely a solution of t
 **Theorem (the quadratic Lagrangian).** Let the Lagrangian be quadratic in $w$ and $\nabla w$ with the Hermitian form $\mathfrak{a}$ as its integral,
 
 $$
-L(x,w,\nabla w) = \sum_{i,j}a_{ij}\,\partial/\partial x_j\,w\,\overline{\partial/\partial x_i\,w} + c\,|w|^2 ,
+\boxed{\;L(x,w,\nabla w) = \sum_{i,j}a_{ij}\,\partial/\partial x_j\,w\,\overline{\partial/\partial x_i\,w} + c\,|w|^2\;} ,
 $$
 
 so that $\mathcal{J}(w)=\mathfrak{a}(w,w)$. Then the Euler–Lagrange equation of the Lagrangian is $\mathfrak{a}(w,v)=0$ for every $v$ — the homogeneous equation, whose only solution is $w=0$ when $\mathfrak{a}$ is coercive — and the **second variation** of $\mathcal{J}$ at any $w$ is

@@ -20,7 +20,7 @@ $$
 **Proposition (the involution is isometric and the norm is algebraic).** In a $\mathrm{C}^*$-algebra,
 
 $$
-\lVert a^*\rVert = \lVert a\rVert , \qquad \lVert a^*a\rVert = \lVert a\rVert^2 , \qquad \lVert a\rVert = r(a^*a)^{1/2} ,
+\boxed{\;\lVert a^*\rVert = \lVert a\rVert , \qquad \lVert a^*a\rVert = \lVert a\rVert^2 , \qquad \lVert a\rVert = r(a^*a)^{1/2}\;} ,
 $$
 
 where $r$ is the spectral radius; hence the norm is determined by the algebraic structure, and a $\mathrm{C}^*$-algebra carries at most one $\mathrm{C}^*$-norm.
@@ -70,7 +70,7 @@ so $\omega$ is bounded with $\lVert\omega\rVert \leq \omega(1)$ on a unital alge
 **Theorem (Gelfand–Naimark–Segal).** Let $A$ be a unital $\mathrm{C}^*$-algebra and let $\omega$ be a state. Then there are a Hilbert space $H_\omega$, a ${}^*$-representation $\pi_\omega : A \to B(H_\omega)$ and a cyclic unit vector $x_\omega \in H_\omega$ with
 
 $$
-\omega(a) = \langle \pi_\omega(a)x_\omega, x_\omega\rangle \qquad \text{for all } a \in A .
+\boxed{\;\omega(a) = \langle \pi_\omega(a)x_\omega, x_\omega\rangle \qquad \text{for all } a \in A\;} .
 $$
 
 The triple $(\pi_\omega, H_\omega, x_\omega)$ is the **GNS triple** of $\omega$, and it is unique up to unitary equivalence.
@@ -96,7 +96,7 @@ $$
 is an isometric ${}^*$-isomorphism of $A$ onto a $\mathrm{C}^*$-subalgebra of $B(H)$ for a Hilbert space $H$; in particular
 
 $$
-\lVert a\rVert = \sup_{\omega \text{ state}} \lVert\pi_\omega(a)\rVert \qquad \text{for all } a \in A .
+\boxed{\;\lVert a\rVert = \sup_{\omega \text{ state}} \lVert\pi_\omega(a)\rVert \qquad \text{for all } a \in A\;} .
 $$
 
 **Proof (sketch).** Each $\pi_\omega$ is a ${}^*$-homomorphism, so the direct sum is a ${}^*$-homomorphism; each $\pi_\omega$ is contractive, so $\lVert\pi(a)\rVert \leq \lVert a\rVert$. For the reverse inequality, let $a \neq 0$. The element $a^*a$ is positive, and on the commutative $\mathrm{C}^*$-subalgebra it generates there is a state $\omega_0$ with $\omega_0(a^*a) = \lVert a^*a\rVert = \lVert a\rVert^2$, by the Gelfand theory of a commutative $\mathrm{C}^*$-algebra; extending $\omega_0$ to a state $\omega$ of $A$ and forming the vector state $\omega_x(b) = \omega(x^*bx)/\omega(x^*x)$ with $x = a$ gives a state whose GNS representation satisfies $\lVert\pi_{\omega_x}(a)\rVert = \lVert a\rVert$, because $\omega_x(a^*a) = \lVert a\rVert^2$ realises the top of the spectrum of $\pi_{\omega_x}(a^*a)$. Hence the supremum attains the norm, $\pi$ is isometric, and an isometric ${}^*$-homomorphism is injective. When $A$ has no unit the construction is applied to the unitisation.

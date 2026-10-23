@@ -33,7 +33,7 @@ V : H_1(\Sigma;\mathbb{Z})\times H_1(\Sigma;\mathbb{Z})\longrightarrow \mathbb{Z
 $$
 is equivariant for the action of $\mathbb{Z}/n$ in the sense that $V(gx,gy) = V(x,y)$, and it extends to a sesquilinear form over the group ring
 $$
-V^{\mathbb{Z}/n} : H_1(\Sigma;\mathbb{Z})\times H_1(\Sigma;\mathbb{Z})\longrightarrow \mathbb{Z}[\mathbb{Z}/n], \qquad V^{\mathbb{Z}/n}(x,y) = \sum_{g\in\mathbb{Z}/n} V(x,gy)\,g ,
+\boxed{\;V^{\mathbb{Z}/n} : H_1(\Sigma;\mathbb{Z})\times H_1(\Sigma;\mathbb{Z})\longrightarrow \mathbb{Z}[\mathbb{Z}/n], \qquad V^{\mathbb{Z}/n}(x,y) = \sum_{g\in\mathbb{Z}/n} V(x,gy)\,g\;} ,
 $$
 whose class in the Witt group of $\mathbb{Z}[\mathbb{Z}/n]$ with the involution $g\mapsto g^{-1}$ is an invariant of the periodic knot datum. The invariant part $\Sigma_0$ gives the ordinary Seifert form of the quotient knot as the "trivial character" component of $V^{\mathbb{Z}/n}$.
 
@@ -65,7 +65,7 @@ the twisted analogue of the Tristram–Levine signature; for $\zeta = -1$ it is 
 
 **Theorem (the equivariant signature is an invariant of the periodic datum).** The numbers $\sigma(K,\zeta)$ depend only on the periodic knot datum $(K,n)$ and the character, are constant on the components of the complement of the unit circle of the $\zeta$-variable, and satisfy the equivariant sum formulas
 $$
-\sum_{\zeta^n = 1}\sigma(K,\zeta) = \sigma(K,\bar{\ }) + \text{(contributions of the axis)},
+\boxed{\;\sum_{\zeta^n = 1}\sigma(K,\zeta) = \sigma(K,\bar{\ }) + \text{(contributions of the axis)}\;},
 $$
 so that the periodicity imposes congruences on the signatures of $K$ and of the quotient $\bar K$; these are the classical "periodic" signature conditions.
 
@@ -79,7 +79,7 @@ so that the periodicity imposes congruences on the signatures of $K$ and of the 
 
 **Theorem (the equivariant genus inequality, statement).** Let $K$ be $n$-periodic with quotient knot $\bar K$. Then
 $$
-g(K)\;\geq\; n\,g(\bar K),
+\boxed{\;g(K)\;\geq\; n\,g(\bar K)\;},
 $$
 where $g$ is the Seifert genus, and more generally the equivariant minimal genus satisfies the corresponding inequality with the axis contribution; the inequality is sharp for the torus knots.
 

@@ -57,7 +57,7 @@ and if $x$ and $z$ are both odd then $xz$ is even, hence $\mathrm{Ad}^{\alpha}_{
 **Corollary (the square of an odd sign is ordinary).** If $x$ is odd then $x^{2}$ is even and
 
 $$
-\bigl(\mathrm{Ad}^{\alpha}_x\bigr)^{2}=\mathrm{Ad}^{\alpha}_{x^{2}}=\mathrm{Ad}_{x^{2}} .
+\boxed{\;\bigl(\mathrm{Ad}^{\alpha}_x\bigr)^{2}=\mathrm{Ad}^{\alpha}_{x^{2}}=\mathrm{Ad}_{x^{2}}\;} .
 $$
 
 So a signed conjugation by an odd element is never an involution of the signed kind: its square has forgotten the sign.
@@ -87,7 +87,7 @@ The same statements hold for $\mathrm{Pin}(V,\mathfrak{Q})$ and for $\mathrm{Spi
 **Corollary (the two minuses cancel, at the level of the group).** The product of two odd elements of $\mathrm{Pin}$ lies in $\mathrm{Spin}$; the product of an odd and an even element is odd. So the odd part is stable under multiplication by $\mathrm{Spin}$ but not closed under multiplication by itself, and
 
 $$
-\mathrm{Pin}(V,\mathfrak{Q})=\mathrm{Spin}(V,\mathfrak{Q})\ \sqcup\ (\text{odd coset}),\qquad \mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2
+\boxed{\;\mathrm{Pin}(V,\mathfrak{Q})=\mathrm{Spin}(V,\mathfrak{Q})\ \sqcup\ (\text{odd coset}),\qquad \mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2\;}
 $$
 
 whenever the odd part is non-empty, which over $\mathbb{R}$ always holds since the norm of a vector $N(u)=-\mathfrak{Q}(u)$ takes the value $\pm1$ after rescaling. The odd part is therefore a coset, and it is the coset that carries the reflections; a second group is not needed to describe them.
@@ -95,7 +95,7 @@ whenever the odd part is non-empty, which over $\mathbb{R}$ always holds since t
 **Corollary (the images of the two components).** Let $x\in\Gamma(V,\mathfrak{Q})$ and let $k$ be the parity of $x$. Writing $x$ as a product of $k$ vectors gives $\mathrm{Ad}^{\alpha}_x$ as a product of $k$ reflections, so
 
 $$
-\det\mathrm{Ad}^{\alpha}_x=(-1)^{k}=\varepsilon_x ,
+\boxed{\;\det\mathrm{Ad}^{\alpha}_x=(-1)^{k}=\varepsilon_x\;} ,
 $$
 
 and the even part of the group maps into $SO(V,\mathfrak{Q})$ while the odd part maps into its complement. The reflection $\rho_u=\mathrm{Ad}^{\alpha}_u$ is the image of an odd element, and it is the composite of two odd images that lands back in $SO$.

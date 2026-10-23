@@ -16,7 +16,7 @@ This article develops the theory of Fréchet spaces from the vocabulary fixed in
 **Definition.** Let $(p_n)_{n \geq 0}$ be an increasing sequence of seminorms generating the topology of a metrisable locally convex space $E$. The **$F$-norm** associated with $(p_n)$ is
 
 $$
-\lvert x \rvert = \sum_{n \geq 0} 2^{-n} \min\bigl(1, p_n(x)\bigr) ,
+\boxed{\;\lvert x \rvert = \sum_{n \geq 0} 2^{-n} \min\bigl(1, p_n(x)\bigr)\;} ,
 $$
 
 and the associated **translation-invariant metric** is $d(x,y) = \lvert x - y \rvert$.

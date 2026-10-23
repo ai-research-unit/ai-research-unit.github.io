@@ -26,7 +26,7 @@ This article develops the condition, its equivalent forms, the holomorphic volum
 **Theorem (Yau, on the Calabi conjecture).** Let $M$ be a compact Kähler manifold with $c_1(M)=0$. Then every Kähler class on $M$ contains exactly one Ricci-flat Kähler metric. The metric is obtained by solving the complex Monge–Ampère equation
 
 $$
-\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \det(g_{i\bar j})
+\boxed{\;\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \det(g_{i\bar j})\;}
 $$
 
 for the potential $\varphi$, where $g$ is any Kähler metric in the given class.
@@ -118,7 +118,7 @@ for $n=3$, so that $h^{2,1}$ counts the complex-structure moduli and $h^{1,1}$ c
 **Theorem (local Torelli for Calabi–Yau manifolds; Griffiths, Voisin).** Let $M$ be a Calabi–Yau manifold. The **period map** that assigns to a complex structure the Hodge filtration of $H^n(M;\mathbb{C})$,
 
 $$
-\mathcal{M} \longrightarrow \mathcal{D}, \qquad M_t \longmapsto \bigl(F^n_t \subset F^{n-1}_t \subset \cdots \subset H^n(M;\mathbb{C})\bigr),
+\boxed{\;\mathcal{M} \longrightarrow \mathcal{D}, \qquad M_t \longmapsto \bigl(F^n_t \subset F^{n-1}_t \subset \cdots \subset H^n(M;\mathbb{C})\bigr)\;},
 $$
 
 is a local isomorphism onto its image in the cases $n=1,2,3$ — the elliptic curves, the $K3$ surfaces and the Calabi–Yau threefolds — where the infinitesimal Torelli theorem holds; for the higher dimensions the infinitesimal and the global statements are the subject of the Torelli problem, which is open in general, and the global question — whether the period point determines the manifold — is answered affirmatively for the elliptic curves and the $K3$ surfaces, while for Calabi–Yau threefolds it is known to fail for some families.
@@ -130,7 +130,7 @@ is a local isomorphism onto its image in the cases $n=1,2,3$ — the elliptic cu
 **Remark (mirror symmetry as a Hodge-theoretic statement).** For a Calabi–Yau threefold $X$ with Hodge numbers $h^{1,1}$ and $h^{2,1}$ there is a mirror partner $\check X$ with
 
 $$
-h^{1,1}(\check X) = h^{2,1}(X), \qquad h^{2,1}(\check X) = h^{1,1}(X), \qquad \chi(\check X) = -\chi(X),
+\boxed{\;h^{1,1}(\check X) = h^{2,1}(X), \qquad h^{2,1}(\check X) = h^{1,1}(X), \qquad \chi(\check X) = -\chi(X)\;},
 $$
 
 and with the complex-structure moduli of $X$ identified with the Kähler moduli of $\check X$. The statement is a statement about the Hodge numbers and the period maps, verified for the constructed families of hypersurfaces and complete intersections by the Greene–Plesser and Batyrev constructions, and it explains the symmetry of the Hodge-number tables of the known families. The quantum or enumerative content — the relation between the periods of $\check X$ and the numbers of rational curves on $X$ — lies outside this corpus.

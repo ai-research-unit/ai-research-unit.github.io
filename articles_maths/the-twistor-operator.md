@@ -26,7 +26,7 @@ $$
 **Proposition.** The maps $c$ and $c^*$ are adjoint for the tensor product of $g$ and the fibre form $h$, $c$ is a surjection, and
 
 $$
-c\,c^* = n\,\operatorname{id}_{\mathcal{S}}, \qquad \ker c = \operatorname{im}c^* .
+\boxed{\;c\,c^* = n\,\operatorname{id}_{\mathcal{S}}, \qquad \ker c = \operatorname{im}c^*\;} .
 $$
 
 Consequently $\pi = \operatorname{id} - \frac1n c^*c$ is the orthogonal projector of $T^*M\otimes\mathcal{S}$ onto $\ker c$, and $\frac1n c^*c$ is the projector onto $\operatorname{im}c^*$; the two subbundles are orthogonal complements and are both parallel only in the flat case.
@@ -54,7 +54,7 @@ where $X\cdot$ is the Clifford multiplication and $D=c\circ\nabla$ is the Cauchy
 **Proposition (the splitting).** The covariant derivative decomposes as
 
 $$
-\nabla\sigma = \tfrac1n\,c^*\,D\sigma + \mathcal{T}\sigma ,
+\boxed{\;\nabla\sigma = \tfrac1n\,c^*\,D\sigma + \mathcal{T}\sigma\;} ,
 $$
 
 the first term lying in $\operatorname{im}c^*$ and the second in $\ker c$; the two terms are the orthogonal components. Equivalently $c\circ\mathcal{T}=0$, and the part of $\nabla$ that is visible to the Clifford contraction is exactly the piece that carries $D$.
@@ -82,7 +82,7 @@ which is injective for $\xi\ne0$ and has image $\ker c_\xi$, of rank $(n-1)\dim\
 **Proposition (conformal covariance).** Let $\hat g=\Omega^2g$, $\Omega>0$, and let $X$ be a vector field, with $\hat X=\Omega^{-1}X$ its $\hat g$-dual counterpart. Then the twistor operator is conformally covariant,
 
 $$
-\mathcal{T}^{\hat g}_{\hat X}\bigl(\Omega^{-1/2}\sigma\bigr) = \Omega^{-1/2}\Bigl(\mathcal{T}^{g}_X\sigma\Bigr),
+\boxed{\;\mathcal{T}^{\hat g}_{\hat X}\bigl(\Omega^{-1/2}\sigma\bigr) = \Omega^{-1/2}\Bigl(\mathcal{T}^{g}_X\sigma\Bigr)\;},
 $$
 
 so that the twistor equation $\mathcal{T}\sigma=0$ is conformally invariant: $\sigma$ is a twistor spinor for $g$ if and only if $\Omega^{-1/2}\sigma$ is a twistor spinor for $\hat g$.

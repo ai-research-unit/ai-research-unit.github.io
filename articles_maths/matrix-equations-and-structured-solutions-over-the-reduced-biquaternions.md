@@ -92,7 +92,9 @@ and on the coefficient stack it is $\mathrm{vec}(C_X)=(I_4\otimes\mathsf E_L)\xi
 **Theorem (the structured system).** Let $A_l\in\mathbb{B}_{\mathrm{r}}^{m\times n_l}$ and $B_l\in\mathbb{B}_{\mathrm{r}}^{s_l\times t}$ for $l=1,\dots,r$, let $E\in\mathbb{B}_{\mathrm{r}}^{m\times t}$, and let each unknown lie in a structure $L_l(n_l,s_l)$ of entry type with encoding matrix $\mathsf E_{L_l}$ and coordinates $\xi_{L_l}$. Then the equation $\sum_lA_lX_lB_l=E$ is equivalent to the algebra-valued linear system
 
 $$
-\mathsf C\,\xi=\mathrm{vec}(E),\qquad \mathsf C=\bigl[(B_1^{\mathsf T}\otimes A_1)\mathsf E_{L_1},\dots,(B_r^{\mathsf T}\otimes A_r)\mathsf E_{L_r}\bigr],\qquad \xi=\bigl(\xi_{L_1},\dots,\xi_{L_r}\bigr)^{\mathsf T},
+\boxed{\;
+\mathsf C\,\xi=\mathrm{vec}(E),\qquad \mathsf C=\bigl[(B_1^{\mathsf T}\otimes A_1)\mathsf E_{L_1},\dots,(B_r^{\mathsf T}\otimes A_r)\mathsf E_{L_r}\bigr],\qquad \xi=\bigl(\xi_{L_1},\dots,\xi_{L_r}\bigr)^{\mathsf T}
+\;},
 $$
 
 of size $mt\times\sum_ld_l$ over $\mathbb{B}_{\mathrm{r}}$, and the coefficient matrix $\mathsf C$ does not depend on the unknown.
@@ -108,13 +110,17 @@ of size $mt\times\sum_ld_l$ over $\mathbb{B}_{\mathrm{r}}$, and the coefficient 
 **Theorem (the structured solution).** The squared norm of the residual of the structured equation is half the sum of the two squared complex norms of the two components,
 
 $$
-K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\lVert\mathsf C^{+}\xi^{+}-\mathrm{vec}(E)^{+}\bigr\rVert_{\mathrm F}^{2}+\bigl\lVert\mathsf C^{-}\xi^{-}-\mathrm{vec}(E)^{-}\bigr\rVert_{\mathrm F}^{2}\Bigr),
+\boxed{\;
+K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\lVert\mathsf C^{+}\xi^{+}-\mathrm{vec}(E)^{+}\bigr\rVert_{\mathrm F}^{2}+\bigl\lVert\mathsf C^{-}\xi^{-}-\mathrm{vec}(E)^{-}\bigr\rVert_{\mathrm F}^{2}\Bigr)
+\;},
 $$
 
 and the least-norm least squares structured solution is
 
 $$
-\xi^{\pm}=\bigl(\mathsf C^{\pm}\bigr)_{\mathrm{MP}}\mathrm{vec}(E)^{\pm},\qquad X_l=\sum_{\lambda=1}^{d_l}\bigl(\xi_{L_l}\bigr)_{\lambda}S_\lambda,
+\boxed{\;
+\xi^{\pm}=\bigl(\mathsf C^{\pm}\bigr)_{\mathrm{MP}}\mathrm{vec}(E)^{\pm},\qquad X_l=\sum_{\lambda=1}^{d_l}\bigl(\xi_{L_l}\bigr)_{\lambda}S_\lambda
+\;},
 $$
 
 the Moore–Penrose inverses being taken in the complex field; the minimum is half the sum of the two independent complex minima, attained separately.

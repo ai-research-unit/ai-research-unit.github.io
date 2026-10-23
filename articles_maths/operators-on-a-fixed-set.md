@@ -67,7 +67,7 @@ The axioms are the order-duals of the closure axioms: extensivity is replaced by
 **Theorem (the duality).** Let $C$ be a closure operator and define
 
 $$
-I(A) = C(A^{c})^{c} .
+\boxed{\;I(A) = C(A^{c})^{c}\;} .
 $$
 
 Then $I$ is an interior operator, and $C$ is recovered from $I$ by the same formula, $C(A) = I(A^{c})^{c}$. Under this correspondence the closed sets of $C$ are the complements of the open sets of $I$, and the interior operator of a topology is obtained from its closure operator.
@@ -85,13 +85,13 @@ The complement is therefore an **anti-isomorphism** of the Boolean algebra that 
 **Definition.** The **boundary** of $A$ is
 
 $$
-\partial A = C(A) \cap C(A^{c}) .
+\boxed{\;\partial A = C(A) \cap C(A^{c})\;} .
 $$
 
 **Proposition.** The boundary satisfies $\partial A = \partial (A^{c})$; it is closed; it contains exactly the points all of whose neighbourhoods meet both $A$ and $A^{c}$; and
 
 $$
-C(A) = A \cup \partial A, \qquad I(A) = A \setminus \partial A, \qquad \partial A = C(A) \setminus I(A) .
+\boxed{\;C(A) = A \cup \partial A, \qquad I(A) = A \setminus \partial A, \qquad \partial A = C(A) \setminus I(A)\;} .
 $$
 
 **Proof.** The symmetry is the commutativity of the intersection. The boundary is the intersection of two closed sets, hence closed. For the third clause, $x \in \partial A$ iff $x \in C(A)$ and $x \in C(A^{c})$, which is the neighbourhood criterion of *Topological Spaces*. For the display, $A \cup \partial A = A \cup (C(A) \cap C(A^{c})) = (A \cup C(A)) \cap (A \cup C(A^{c})) = C(A) \cap X = C(A)$, since $A \cup C(A^{c}) \supseteq A \cup A^{c} = X$; and $A \setminus \partial A = A \cap (C(A)^{c} \cup C(A^{c})^{c}) = (A \cap C(A)^{c}) \cup (A \cap C(A^{c})^{c}) = \emptyset \cup (A \cap I(A)) = I(A)$, using $C(A^{c})^{c} = I(A)$ and $C(A) \supseteq A$. The last identity is the complement of the first two.

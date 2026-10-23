@@ -46,7 +46,7 @@ Throughout, a graph is **simple** unless the contrary is said explicitly: no loo
 **Theorem (handshake lemma).** For every finite graph $\Gamma$,
 
 $$
-\sum_{v \in V(\Gamma)} \deg v = 2\,|E(\Gamma)|.
+\boxed{\;\sum_{v \in V(\Gamma)} \deg v = 2\,|E(\Gamma)|\;}.
 $$
 
 *Proof.* Count the pairs $(v,e)$ with $v$ an end of $e$. Each vertex $v$ contributes exactly $\deg v$ such pairs and each edge contributes exactly two, one for each of its ends, so the two counts are equal; no loop occurs, which is why every edge contributes two and not one.
@@ -84,7 +84,7 @@ $$
 *Proof.* Induct on $n$; the case $n = 1$ is vacuous. Let $v$ be a vertex and let $\Gamma_1, \ldots, \Gamma_k$ be the components of $\Gamma - v$, of orders $n_1, \ldots, n_k$ with $n_1 + \cdots + n_k = n-1$. By induction $|E(\Gamma_i)| \geq n_i - 1$, so $|E(\Gamma-v)| \geq (n-1) - k$. Each $\Gamma_i$ contains a neighbour of $v$: otherwise no edge of $\Gamma$ would join $\Gamma_i$ to $v$ or to any $\Gamma_j$, and $\Gamma$ would be disconnected. Hence $\deg v \geq k$, and
 
 $$
-|E(\Gamma)| \geq (n-1-k) + k = n-1.
+\boxed{\;|E(\Gamma)| \geq (n-1-k) + k = n-1\;}.
 $$
 
 **Corollary.** For every finite graph $\Gamma$, $|E(\Gamma)| \geq n - c(\Gamma)$.
@@ -116,7 +116,7 @@ which exists by connectedness and is attained because the set of admissible leng
 **Definition.** Let $\Gamma$ be a finite connected graph. The **eccentricity** of $v$ is $\operatorname{ecc}(v) = \max_{u \in V(\Gamma)} d(v,u)$; the **diameter** is the greatest distance,
 
 $$
-\operatorname{diam}\Gamma = \max_{u,v \in V(\Gamma)} d(u,v) = \max_{v} \operatorname{ecc}(v),
+\boxed{\;\operatorname{diam}\Gamma = \max_{u,v \in V(\Gamma)} d(u,v) = \max_{v} \operatorname{ecc}(v)\;},
 $$
 
 and the **radius** is the least eccentricity, $\operatorname{rad}\Gamma = \min_v \operatorname{ecc}(v)$. A **centre** of $\Gamma$ is a vertex attaining the radius, and a finite connected graph has one because its finite set of eccentricities has a minimum. For an infinite connected graph the two maxima become suprema, which may be infinite, and no centre need exist: on the integer line of the growth example below every eccentricity is infinite. The **diameter of a disconnected graph** is infinite if one insists on a single value for all pairs, and is defined componentwise otherwise.

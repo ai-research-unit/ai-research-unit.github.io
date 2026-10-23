@@ -29,7 +29,7 @@ Throughout, $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, $X$ and $Y$ are Banach spac
 **Proposition (the resolvent identity and analyticity).** For $\lambda,\mu\in\rho(T)$,
 
 $$
-R(\lambda,T)-R(\mu,T)=-(\lambda-\mu)R(\lambda,T)R(\mu,T),
+\boxed{\;R(\lambda,T)-R(\mu,T)=-(\lambda-\mu)R(\lambda,T)R(\mu,T)\;},
 $$
 
 and the resolvent is an analytic $B(X)$-valued function on $\rho(T)$ with derivative $-R(\lambda,T)^2$.
@@ -39,7 +39,7 @@ and the resolvent is an analytic $B(X)$-valued function on $\rho(T)$ with deriva
 **Theorem (spectral radius formula).** For every $T\in B(X)$ over $\mathbb{C}$,
 
 $$
-r(T)=\lim_{n\to\infty}\|T^n\|^{1/n}=\inf_{n\ge1}\|T^n\|^{1/n}.
+\boxed{\;r(T)=\lim_{n\to\infty}\|T^n\|^{1/n}=\inf_{n\ge1}\|T^n\|^{1/n}\;}.
 $$
 
 *Proof.* The convergence of the series $\sum_n\lambda^{-n-1}T^n$ at $|\lambda|=r(T)$ is obstructed exactly at the radius of convergence of the power series, which is the reciprocal of the growth rate $\limsup\|T^n\|^{1/n}$; the analytic continuation of the resolvent beyond the disc forces this radius to equal $r(T)$, and the standard submultiplicative argument makes the limsup a limit and identifies it with the infimum.
@@ -61,7 +61,7 @@ the integral converging in the norm of $B(X)$.
 **Theorem (spectral mapping).** With the calculus as above, for every $f$ holomorphic on $\Omega$,
 
 $$
-\sigma(f(T))=f(\sigma(T)).
+\boxed{\;\sigma(f(T))=f(\sigma(T))\;}.
 $$
 
 *Proof.* If $\mu\notin f(\sigma(T))$ then $g(z)=(f(z)-\mu)^{-1}$ is holomorphic on $\Omega$ and $g(T)(f(T)-\mu I)=I$ by the homomorphism property, so $\mu\in\rho(f(T))$; conversely if $\mu=f(\lambda_0)$ for some $\lambda_0\in\sigma(T)$, then $f(T)-\mu I=(z-\lambda_0)h(T)$ for a holomorphic $h$ with $h(\lambda_0)\neq0$ after factoring, and the first factor is not invertible, so the product is not invertible.

@@ -10,12 +10,14 @@ The reason is **left alternativity**, the law $\breve Q_{1}(\breve Q_{1}\breve Q
 
 **Definition (left alternativity).** A product $\circ$ on the complex space is **left-alternative** when
 $$
-\breve Q\circ(\breve Q\circ \breve Q_{2})=(\breve Q\circ \breve Q)\circ \breve Q_{2}\qquad\text{for all }\breve Q,\breve Q_{2} .
+\breve Q\circ(\breve Q\circ \breve Q_{2})=(\breve Q\circ \breve Q)\circ \breve Q_{2}\qquad\text{for all }\breve Q,\breve Q_{2}.
 $$
 
 **Theorem (the criterion).** For a product $\circ$ the operator identity
 $$
+\boxed{\;
 L^{\circ}_{\breve Q}\circ L^{\circ}_{\breve Q}=L^{\circ}_{\breve Q\circ \breve Q}\qquad\text{for every }\breve Q
+\;}
 $$
 holds exactly when $\circ$ is left-alternative.
 
@@ -53,12 +55,14 @@ the two middle ones **minimal**, and because the algebra is commutative the left
 
 For the idempotent pair $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$, the **Peirce decomposition** is
 $$
+\boxed{\;
 \mathbb{B}_{\mathrm{r}}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},\qquad
-\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\},\qquad \sigma,\tau\in\{+,-\},
+\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\},\qquad \sigma,\tau\in\{+,-\}
+\;},
 $$
 and here it is **diagonal**: because the idempotents are central and orthogonal,
 $$
-\mathbb{B}_{+-}=\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_-=\mathbb{B}_{\mathrm{r}}\Pi_+\Pi_-=0,\qquad \mathbb{B}_{-+}=0,
+\boxed{\; \mathbb{B}_{+-}=\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_-=\mathbb{B}_{\mathrm{r}}\Pi_+\Pi_-=0,\qquad \mathbb{B}_{-+}=0 \;},
 $$
 so the decomposition reduces to the direct product $\mathbb{B}_{++}\oplus\mathbb{B}_{--}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. This is the sharp contrast with the biquaternion Peirce theory, whose off-diagonal spaces are the one-dimensional matrix-unit spaces $E_{12},E_{21}$ of $M_2(\mathbb{C})$; the reduced biquaternion has no off-diagonal because its idempotents are central.
 

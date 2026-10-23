@@ -12,7 +12,7 @@ The base is a field $K$ of characteristic not two, $V$ has dimension $m$, the fo
 **Theorem.** With the form having discriminant one, the star satisfies
 
 $$
-\star\star=(-1)^{k(m-k)}\,\mathrm{id}\quad\text{on }\Lambda^kV ,
+\boxed{\;\star\star=(-1)^{k(m-k)}\,\mathrm{id}\quad\text{on }\Lambda^kV\;} ,
 $$
 
 so that $\star^2=\mathrm{id}$ when $k(m-k)$ is even and $\star^2=-\mathrm{id}$ when $k(m-k)$ is odd.
@@ -28,7 +28,7 @@ so that $\star^2=\mathrm{id}$ when $k(m-k)$ is even and $\star^2=-\mathrm{id}$ w
 **Theorem.** On a component $\Lambda^kV$ with $\star^2=\mathrm{id}$ the star is a real structure, and the component splits as the direct sum of the two eigenspaces
 
 $$
-\Lambda^kV=\Lambda^k_+V\oplus\Lambda^k_-V,\qquad \Lambda^k_\pm V=\{x:\star x=\pm x\},
+\boxed{\;\Lambda^kV=\Lambda^k_+V\oplus\Lambda^k_-V,\qquad \Lambda^k_\pm V=\{x:\star x=\pm x\}\;},
 $$
 
 the **self-dual** and **anti-self-dual** parts; the projections are $\tfrac12(\mathrm{id}\pm\star)$.

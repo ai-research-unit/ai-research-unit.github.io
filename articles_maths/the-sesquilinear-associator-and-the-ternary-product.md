@@ -35,7 +35,7 @@ $$
 so
 
 $$
-[x, y, \lambda z] = \varsigma(\lambda) A(x,y,z) - \lambda B(x,y,z),
+\boxed{\;[x, y, \lambda z] = \varsigma(\lambda) A(x,y,z) - \lambda B(x,y,z)\;},
 $$
 
 which is neither $\lambda [x,y,z]$ nor $\varsigma(\lambda)[x,y,z]$ unless $[x,y,z] = 0$.
@@ -85,7 +85,7 @@ $$
 **Theorem.** The ternary product satisfies the Jordan triple identity
 
 $$
-\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\} ,
+\boxed{\;\{x, y, \{u, v, w\}\} = \{\{x, y, u\}, v, w\} - \{u, \{y, x, v\}, w\} + \{u, v, \{x, y, w\}\}\;} ,
 $$
 
 the proof being a finite expansion in the products and the involution, using only the associativity of $A$ and $(uv)^{*} = v^{*}u^{*}$. The verification is in *Algebraic J\*-Algebras*, where the identity is the defining axiom of the $J^{*}$-triple.
@@ -97,7 +97,7 @@ the proof being a finite expansion in the products and the involution, using onl
 **Theorem (the binary product is the shadow of the ternary one).** Let $A$ be unital with unit $1$. Then
 
 $$
-\{x, y, 1\} = x \star y, \qquad \{1, y, 1\} = y^{*},
+\boxed{\;\{x, y, 1\} = x \star y, \qquad \{1, y, 1\} = y^{*}\;},
 $$
 
 so the ternary product determines the binary derived operation and the involution; since the original product is $xy = x \star y^{*}$, with $y^{*} = \{1,y,1\}$, the ternary product determines the algebra as well.

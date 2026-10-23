@@ -26,7 +26,7 @@ The twistor operator $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ of *The Twistor 
 **Theorem.** The twistor operator commutes with each of the three involutions:
 
 $$
-\mathcal{T}\Pi=\Pi\mathcal{T} , \qquad \mathcal{T}\omega=\omega\mathcal{T} , \qquad \mathcal{T}\kappa=\kappa\mathcal{T} .
+\boxed{\;\mathcal{T}\Pi=\Pi\mathcal{T} , \qquad \mathcal{T}\omega=\omega\mathcal{T} , \qquad \mathcal{T}\kappa=\kappa\mathcal{T}\;} .
 $$
 
 **Proof.** Write $\mathcal{T}=\pi\circ\nabla$ with $\pi=\mathrm{id}-\frac1nc^*c$ the orthogonal projection onto $\ker c$ and $c^*$ the adjoint of the contraction, of *The Twistor Operator*. Since $\Pi$ anticommutes with every $c(b)$ by (b) of the previous proposition, it commutes with $c^*$, hence with the product $c^*c$ and with $\pi$; and $\Pi$ commutes with $\nabla$ by parallelness, so $\mathcal{T}\Pi=\pi\nabla\Pi=\pi\Pi\nabla=\Pi\pi\nabla=\Pi\mathcal{T}$. The same computation with $\omega$ uses $\omega c(b)=(-1)^mc(b)\omega$ and the antisymmetry of the sign in the two factors of $c^*c$, which cancels; the computation with $\kappa$ uses its anti-linearity and its commutation with $c(b)$ and with $\nabla$, so $\mathcal{T}\kappa=\pi\nabla\kappa=\pi\kappa\nabla=\kappa\pi\nabla=\kappa\mathcal{T}$.
@@ -42,7 +42,7 @@ $$
 **Proposition.** The space $\mathcal{K}=\ker\mathcal{T}$ decomposes into the joint eigenspaces of the commuting involutions $\Pi$ and $\omega$ (the relevant one according to the parity of $n$), and the charge conjugation $\kappa$ pairs the eigenspaces according to the reality type of the spinor module:
 
 $$
-\mathcal{K}=\bigoplus_{\varepsilon=\pm1}\mathcal{K}^{\varepsilon} , \qquad \Pi\,\mathcal{K}^{\varepsilon}=\varepsilon\mathcal{K}^{\varepsilon} , \qquad \kappa : \mathcal{K}^{\varepsilon}\longrightarrow \mathcal{K}^{\varepsilon} ,
+\boxed{\;\mathcal{K}=\bigoplus_{\varepsilon=\pm1}\mathcal{K}^{\varepsilon} , \qquad \Pi\,\mathcal{K}^{\varepsilon}=\varepsilon\mathcal{K}^{\varepsilon} , \qquad \kappa : \mathcal{K}^{\varepsilon}\longrightarrow \mathcal{K}^{\varepsilon}\;} ,
 $$
 
 with $\kappa$ acting anti-linearly on each summand.
@@ -52,7 +52,7 @@ with $\kappa$ acting anti-linearly on each summand.
 **Theorem (quoted).** In even dimension the twistor operator splits as
 
 $$
-\mathcal{T} = \mathcal{T}^+\oplus\mathcal{T}^- : \Gamma(\mathcal{S}^\pm)\longrightarrow\Gamma(T^*M\otimes\mathcal{S}^\pm) ,
+\boxed{\;\mathcal{T} = \mathcal{T}^+\oplus\mathcal{T}^- : \Gamma(\mathcal{S}^\pm)\longrightarrow\Gamma(T^*M\otimes\mathcal{S}^\pm)\;} ,
 $$
 
 each summand is itself a twistor operator, and the twistor spinors of *The Penrose Operator* satisfy $D^2\sigma=\frac{n}{4(n-1)}\operatorname{scal}\sigma$; the two chiral components of a twistor spinor are independent, and on an Einstein manifold the twistor equation is equivalent to the Killing spinor equation with the appropriate constant.

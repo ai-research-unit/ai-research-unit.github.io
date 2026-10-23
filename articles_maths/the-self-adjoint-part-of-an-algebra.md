@@ -23,7 +23,7 @@ the **skew part** is $K(A) = A^- = \{k \in A : k^* = -k\}$, and the **symmetrise
 **Proposition.** $H(A)$ and $K(A)$ are $k$-linear subspaces with
 
 $$
-A = H(A) \oplus K(A), \qquad x = \tfrac12\bigl(x + x^*\bigr) + \tfrac12\bigl(x - x^*\bigr), \qquad 1 \in H(A),
+\boxed{\;A = H(A) \oplus K(A), \qquad x = \tfrac12\bigl(x + x^*\bigr) + \tfrac12\bigl(x - x^*\bigr), \qquad 1 \in H(A)\;},
 $$
 
 and the involution acts as the identity on $H(A)$ and as minus the identity on $K(A)$; the two spaces are the eigenspaces of $\sigma$ for the eigenvalues $1$ and $-1$.
@@ -35,7 +35,7 @@ and the involution acts as the identity on $H(A)$ and as minus the identity on $
 **Proposition.** For $x, y \in H(A)$ the product $xy$ satisfies $(xy)^* = yx$, and for $x, y \in K(A)$ the product satisfies $(xy)^* = yx$ as well; the symmetrised products are self-adjoint and the commutators are skew:
 
 $$
-H(A) \bullet H(A) \subseteq H(A), \qquad K(A) \bullet K(A) \subseteq H(A), \qquad H(A) \bullet K(A) \subseteq K(A),
+\boxed{\;H(A) \bullet H(A) \subseteq H(A), \qquad K(A) \bullet K(A) \subseteq H(A), \qquad H(A) \bullet K(A) \subseteq K(A)\;},
 $$
 
 $$
@@ -97,7 +97,7 @@ $$
 **Proposition.** The self-adjoint and skew parts contain the following elements for every $a \in A$:
 
 $$
-a + a^* \in H(A), \qquad a - a^* \in K(A), \qquad aa^* \in H(A), \qquad a^*a \in H(A), \qquad [a, a^*] \in K(A) .
+\boxed{\;a + a^* \in H(A), \qquad a - a^* \in K(A), \qquad aa^* \in H(A), \qquad a^*a \in H(A), \qquad [a, a^*] \in K(A)\;} .
 $$
 
 *Proof.* Apply the involution: $(a+a^*)^* = a^*+a$, $(a-a^*)^* = a^*-a$, $(aa^*)^* = aa^*$, $(a^*a)^* = a^*a$, and $[a,a^*]^* = [a^*, a] = -[a,a^*]$.

@@ -85,7 +85,7 @@ $$
 pair to the norm:
 
 $$
-Z^2 = 0 , \qquad (Z^{*})^2 = 0 , \qquad Z Z^{*}+Z^{*}Z = \sum_{j=1}^{n}|z_j|^2 = |z|^2 .
+\boxed{\;Z^2 = 0 , \qquad (Z^{*})^2 = 0 , \qquad Z Z^{*}+Z^{*}Z = \sum_{j=1}^{n}|z_j|^2 = |z|^2\;} .
 $$
 
 Moreover $Z$ and $Z^{*}$ are **Hermitian monogenic**,
@@ -121,14 +121,14 @@ be the space of **Hermitian monogenic homogeneous polynomials** of degree $k$.
 unique expansion
 
 $$
-\mathcal{P}_k = \bigoplus_{j=0}^{k}\, Z^j\,\mathcal{M}_{k-j}^{\mathrm{H}} ,
+\boxed{\;\mathcal{P}_k = \bigoplus_{j=0}^{k}\, Z^j\,\mathcal{M}_{k-j}^{\mathrm{H}}\;} ,
 $$
 
 with $Z=\sum_jz_jf_j$ the Hermitian variable of degree $1$; more generally the multiplication by the
 Hermitian variables $Z$ and $Z^{*}$ generates the complement of the Hermitian monogenic part, and
 
 $$
-\dim\mathcal{M}_k^{\mathrm{H}} = \dim\mathcal{S}\cdot\text{(the number of Hermitian monogenic monomials of degree }k\text{)} ,
+\boxed{\;\dim\mathcal{M}_k^{\mathrm{H}} = \dim\mathcal{S}\cdot\text{(the number of Hermitian monogenic monomials of degree }k\text{)}\;} ,
 $$
 
 computed from the bivariate structure of the following section.

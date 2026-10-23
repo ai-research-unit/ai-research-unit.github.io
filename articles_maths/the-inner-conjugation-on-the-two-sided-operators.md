@@ -39,7 +39,7 @@ The sandwich and its composition law are *The Sandwich on a Clifford Algebra*; t
 **Theorem (the exact sequence).** There is a short exact sequence of groups
 
 $$
-1 \longrightarrow Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)^{\times} \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\times} \xrightarrow{\ \mathrm{Ad}\ } \mathrm{Inn}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \longrightarrow 1 ,
+\boxed{\;1 \longrightarrow Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)^{\times} \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\times} \xrightarrow{\ \mathrm{Ad}\ } \mathrm{Inn}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \longrightarrow 1\;} ,
 $$
 
 where the kernel is the group of units of the centre; consequently $\mathrm{Inn}(\mathrm{Cl}) \cong \mathrm{Cl}^{\times}/Z^{\times}$. In even dimension the kernel is $F^{\times}$; in odd dimension it is $F^{\times} \cup F^{\times}\omega$, with $\omega$ the volume element.
@@ -55,7 +55,7 @@ where the kernel is the group of units of the centre; consequently $\mathrm{Inn}
 **Proposition (the relation to the inner conjugation).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x = (-1)^{k}$. Then
 
 $$
-\chi_x = \varepsilon_x\,\mathrm{Ad}_x ,
+\boxed{\;\chi_x = \varepsilon_x\,\mathrm{Ad}_x\;} ,
 $$
 
 so the two actions agree on the even part of the unit group and are negatives on the odd part.
@@ -65,7 +65,7 @@ so the two actions agree on the even part of the unit group and are negatives on
 **Theorem (the orthogonal group).** The assignment $x \mapsto \chi_x\big|_{V}$ is a surjective homomorphism
 
 $$
-\Gamma(V,\mathfrak{Q}) \longrightarrow O(V,\mathfrak{Q})
+\boxed{\;\Gamma(V,\mathfrak{Q}) \longrightarrow O(V,\mathfrak{Q})\;}
 $$
 
 with kernel $F^{\times}$, and its restriction to the even part of the Clifford group is a surjection onto $SO(V,\mathfrak{Q})$. On the norm-one part the kernel is $\{\pm1\}$ and the map is the double cover

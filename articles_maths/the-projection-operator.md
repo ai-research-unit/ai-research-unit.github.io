@@ -30,7 +30,7 @@ equivalently it is the unique linear map with $P|_W = \mathrm{id}_W$ and $\ker P
 **Proposition.** The linear projection $P$ satisfies
 
 $$
-P^2 = P , \qquad \operatorname{im} P = W , \qquad \ker P = U , \qquad V = \ker P \oplus \operatorname{im} P ,
+\boxed{\;P^2 = P , \qquad \operatorname{im} P = W , \qquad \ker P = U , \qquad V = \ker P \oplus \operatorname{im} P\;} ,
 $$
 
 and conversely every linear map $P$ with $P^2 = P$ is the projection onto its image along its kernel; the map is idempotent rather than involutive, it is the identity on its image and zero on its kernel, and it is diagonalisable with eigenvalues $0$ and $1$.
@@ -65,7 +65,7 @@ which sends the point $[v]$ to the point where the join of $[v]$ and the centre 
 **Proposition.** The central projection is well defined, and it is the projectivisation of the linear projection $P$ onto $W$ along $U$ in the sense that
 
 $$
-\pi_U([v]) = [P(v)] ;
+\boxed{\;\pi_U([v]) = [P(v)]\;} ;
 $$
 
 it is defined exactly on the complement of $\mathbb{P}(U)$, it is surjective onto $\mathbb{P}(W)$, and its fibres are the projective subspaces $\mathbb{P}(U + Kv)$ through the centre.
@@ -133,7 +133,7 @@ The **kernel** and the **image** of a projection are the two figures it determin
 **Proposition.** The projective group acts on the set of the projections by the sandwich
 
 $$
-P \longmapsto [A]\,P\,[A]^{-1} ,
+\boxed{\;P \longmapsto [A]\,P\,[A]^{-1}\;} ,
 $$
 
 the action preserves the rank, the orbit of a projection is the set of the projections with the same rank, and the stabiliser of a projection is the subgroup of $PGL(V)$ preserving its kernel and its image.

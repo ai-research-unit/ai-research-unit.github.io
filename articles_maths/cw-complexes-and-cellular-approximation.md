@@ -110,7 +110,7 @@ the sum being finite by closure finiteness. For $n = 0$ the boundary is zero, an
 **Theorem.** $\partial_{n-1} \circ \partial_n = 0$, so $(C_*^{\mathrm{CW}}(X), \partial_*)$ is a chain complex; and its homology is the singular homology,
 
 $$
-H_n^{\mathrm{CW}}(X) = \ker \partial_n / \operatorname{im} \partial_{n+1} \cong H_n(X).
+\boxed{\;H_n^{\mathrm{CW}}(X) = \ker \partial_n / \operatorname{im} \partial_{n+1} \cong H_n(X)\;}.
 $$
 
 *Proof sketch.* The composite vanishes because it computes the degree of a map $S^{n-1} \to S^{n-1}$ factoring through the contractible space $D^{n-1}$ after accounting for the two collapses, and a map factoring through a contractible space has degree $0$ when $n-1 \geq 1$. The identification with singular homology is by comparing both with the homology of the pair $(X^n, X^{n-1})$; the boundary above is by construction the connecting map of that pair, and the comparison uses the five lemma on the diagram of skeleta.
@@ -150,7 +150,7 @@ the alternating sum of the numbers of cells.
 **Theorem.** If $X$ has finite type and finitely many nonzero homology groups of finite rank, then
 
 $$
-\chi(X) = \sum_{n \geq 0} (-1)^n \operatorname{rk} H_n(X),
+\boxed{\;\chi(X) = \sum_{n \geq 0} (-1)^n \operatorname{rk} H_n(X)\;},
 $$
 
 and the number is independent of the CW structure.

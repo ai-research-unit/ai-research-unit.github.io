@@ -78,8 +78,8 @@ Part. The last statement is Mercer's theorem.
 Hermitian and let $T_K$ be its integral operator. Then $T_K$ is self-adjoint and compact, its eigenvalues
 $\lambda_n$ are real and tend to $0$, the eigenvectors $\varphi_n$ may be taken orthonormal,
 $$
-T_K\varphi_n=\lambda_n\varphi_n,\qquad
-T_Kf=\sum_n\lambda_n\langle f,\varphi_n\rangle\varphi_n ,
+\boxed{\;T_K\varphi_n=\lambda_n\varphi_n,\qquad
+T_Kf=\sum_n\lambda_n\langle f,\varphi_n\rangle\varphi_n\;} ,
 $$
 and the eigenvalue list is the only spectral data of the operator,
 $\lVert T_K\rVert=\max_n\lvert\lambda_n\rvert$.
@@ -141,7 +141,7 @@ $T_K^{1/2}$ in general is *Analysis on Linear Spaces*, later in this Part.
 positive definite kernel on $X\times X$. Then the eigenvalues $\lambda_n$ are nonnegative, the eigenfunctions
 $\varphi_n$ may be taken continuous and orthonormal, and
 $$
-K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)} ,
+\boxed{\;K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}\;} ,
 $$
 the series converging absolutely and uniformly on $X\times X$. In particular $K(x,x)\geq0$ for every $x$, and
 the convergence of the diagonal is the convergence of $\sum_n\lambda_n\lvert\varphi_n(x)\rvert^2$.
@@ -181,9 +181,9 @@ eigenfunction expansion of the previous section.
 **Corollary (the trace identities).** If $K$ is continuous positive definite and the eigenvalues are
 summable, then
 $$
-\operatorname{tr}T_K=\sum_n\lambda_n=\int_XK(x,x)\,d\mu(x),
+\boxed{\;\operatorname{tr}T_K=\sum_n\lambda_n=\int_XK(x,x)\,d\mu(x),
 \qquad
-\lVert K\rVert_{L^2}^2=\lVert T_K\rVert_{\mathrm{HS}}^2=\sum_n\lambda_n^2 .
+\lVert K\rVert_{L^2}^2=\lVert T_K\rVert_{\mathrm{HS}}^2=\sum_n\lambda_n^2\;} .
 $$
 
 **Proof.** The first identity is the integral of the diagonal of the Mercer expansion, legitimate by the

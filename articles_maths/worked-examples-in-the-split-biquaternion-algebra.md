@@ -43,7 +43,9 @@ where $(\vec Q_1, \vec Q_2) = \sum_{k=1}^{3} Q_{1k} Q_{2k}$ and $[\vec Q_1, \vec
 As a final check of the product formula, the square of the concrete element is
 
 $$
-\tilde{Q}^2 = (-4 + 4 \vec e_x) + j (4 + 4 \vec e_x).
+\boxed{\;
+\tilde{Q}^2 = (-4 + 4 \vec e_x) + j (4 + 4 \vec e_x)
+\;}.
 $$
 
 This can be verified either from the scalar-vector formula, using $Q_t = 1 + j$, $\vec Q = 2 \vec e_x + (1 - j) \vec e_y$, or from the idempotent components: since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$,
@@ -141,7 +143,9 @@ $$
 They are central and primitive, and they give the idempotent decomposition
 
 $$
-\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2, \qquad \mathbb{H} \tilde\Pi_{1,2} = \{ \tilde{Q} \tilde\Pi_{1,2} : \tilde{Q} \in \mathbb{H}_{\mathbb{D}} \} \cong \mathbb{H},
+\boxed{\;
+\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2, \qquad \mathbb{H} \tilde\Pi_{1,2} = \{ \tilde{Q} \tilde\Pi_{1,2} : \tilde{Q} \in \mathbb{H}_{\mathbb{D}} \} \cong \mathbb{H}
+\;},
 $$
 
 into the two minimal left ideals, each of real dimension $4$. On the concrete element the decomposition reads
@@ -169,7 +173,9 @@ $$
 Since $\tilde\Pi_2 \tilde\Pi_1 = 0$ and $\vec e_x (1 + \vec e_y) = \vec e_x + \vec e_x \vec e_y = \vec e_x + \vec e_z$ is a quaternion,
 
 $$
-\tilde{Q}_1 \tilde{Q}_2 = \vec e_x (1 + \vec e_y) \tilde\Pi_2 \tilde\Pi_1 = 0,
+\boxed{\;
+\tilde{Q}_1 \tilde{Q}_2 = \vec e_x (1 + \vec e_y) \tilde\Pi_2 \tilde\Pi_1 = 0
+\;},
 $$
 
 while neither $\tilde{Q}_1$ nor $\tilde{Q}_2$ is zero. The pair therefore exhibits an explicit zero divisor, and it shows the general shape of the zero divisor set: the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are exactly the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, that is, the union of the two halves $\mathbb{H} \tilde\Pi_2 \cup \mathbb{H} \tilde\Pi_1$. The classification is developed in *Split-Biquaternion Zero Divisors*.

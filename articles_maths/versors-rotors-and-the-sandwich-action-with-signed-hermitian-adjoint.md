@@ -36,7 +36,7 @@ a product of non-isotropic, hence invertible, vectors. Its parity is the parity 
 **Proposition (the dagger of a versor is a versor).** For a vector $b$ one has $b^{\dagger}=-\sigma(b)$, a non-isotropic vector, and for a versor
 
 $$
-(b_1b_2\cdots b_k)^{\dagger}=(-1)^{k}\,\sigma(b_k)\cdots\sigma(b_2)\sigma(b_1),
+\boxed{\;(b_1b_2\cdots b_k)^{\dagger}=(-1)^{k}\,\sigma(b_k)\cdots\sigma(b_2)\sigma(b_1)\;},
 $$
 
 a versor of the same length and parity. Hence the set of versors is stable under the dagger up to the scalar $(-1)^{k}$ and up to $\sigma$, and the Hermitian sandwich $\Theta^{\alpha}_x$ of a versor has versors on both sides.
@@ -46,9 +46,9 @@ a versor of the same length and parity. Hence the set of versors is stable under
 **Proposition (the form of the sandwich on a versor).** Every versor lies in the Clifford group $\Gamma(V,\mathfrak{Q})$, and for a versor $x$
 
 $$
-\Theta^{\alpha}_x=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,(\ )\,\sigma(x)^{-1},
+\boxed{\;\Theta^{\alpha}_x=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,(\ )\,\sigma(x)^{-1},
 \qquad
-\Theta^{\alpha}_x(b)=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,b\,\sigma(x)^{-1},\quad b\in V .
+\Theta^{\alpha}_x(b)=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,b\,\sigma(x)^{-1},\quad b\in V\;} .
 $$
 
 On the unitary slice this is the signed inner conjugation, $\Theta^{\alpha}_x=\varepsilon_x x\,(\ )\,x^{-1}=\mathrm{Ad}^{\alpha}_x$; on the $\sigma$-real part of the slice with $\sigma(N(x))=1$ it is the plain sandwich $x\,(\ )\,x^{-1}$.
@@ -58,7 +58,7 @@ On the unitary slice this is the signed inner conjugation, $\Theta^{\alpha}_x=\v
 **Corollary (the value at the unit and the norm).** For a versor $x$,
 
 $$
-\Theta^{\alpha}_x(1)=\alpha(x)\,x^{\dagger}=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,\sigma(x)^{-1},
+\boxed{\;\Theta^{\alpha}_x(1)=\alpha(x)\,x^{\dagger}=\varepsilon_x\,\sigma\bigl(N(x)\bigr)\,x\,\sigma(x)^{-1}\;},
 $$
 
 which is the identity on $1$ exactly for an even, $\sigma$-real versor of norm with $\sigma(N(x))=1$.

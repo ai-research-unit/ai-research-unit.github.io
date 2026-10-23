@@ -23,7 +23,7 @@ The class of amphichiral knots is small and its members have rigid invariants: t
 
 **Theorem (the mirror reverses the sign of the signature).** For a knot $K$ with mirror $K^{*}$,
 $$
-\sigma(K^{*}) = -\sigma(K), \qquad \text{whence} \qquad \sigma(K) = 0 \ \text{for an amphichiral } K .
+\boxed{\;\sigma(K^{*}) = -\sigma(K), \qquad \text{whence} \qquad \sigma(K) = 0 \ \text{for an amphichiral } K\;} .
 $$
 More generally $\sigma_{\omega}(K^{*}) = -\sigma_{\omega}(K)$ for the Tristramâ€“Levine signatures at a unit $\omega$.
 
@@ -31,7 +31,7 @@ More generally $\sigma_{\omega}(K^{*}) = -\sigma_{\omega}(K)$ for the Tristramâ€
 
 **Proposition (the polynomial invariants under mirroring).** For a knot $K$ and its mirror:
 $$
-\Delta_{K^{*}}(t) \doteq \Delta_K(t^{-1}), \qquad \nabla_{K^{*}}(z) = \nabla_K(-z), \qquad V_{K^{*}}(t) = V_K(t^{-1}), \qquad P_{K^{*}}(a,z) = P_K(a^{-1},z),
+\boxed{\;\Delta_{K^{*}}(t) \doteq \Delta_K(t^{-1}), \qquad \nabla_{K^{*}}(z) = \nabla_K(-z), \qquad V_{K^{*}}(t) = V_K(t^{-1}), \qquad P_{K^{*}}(a,z) = P_K(a^{-1},z)\;},
 $$
 where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ the Jones polynomial and $P$ the HOMFLY polynomial, and $\doteq$ denotes equality up to units. Hence an amphichiral knot satisfies $V_K(t) = V_K(t^{-1})$, $P_K(a,z) = P_K(a^{-1},z)$ and $\nabla_K(z) = \nabla_K(-z)$: the Conway polynomial is even and the Jones and HOMFLY polynomials are symmetric in their variable.
 

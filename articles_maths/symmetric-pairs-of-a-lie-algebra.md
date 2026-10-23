@@ -31,14 +31,14 @@ The base is a field $K$ of characteristic not two; the Lie algebra is $\mathrm{G
 **Definition.** For a symmetric pair $(\mathrm{G},\mathrm{K})$ with decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$, the **curvature** is the $\mathrm{K}$-valued graded bilinear map on $\mathrm{P}$ given by the bracket,
 
 $$
-\mathrm{R}(x,y)=[x,y]\in\mathrm{K}\qquad (x,y\in\mathrm{P}).
+\boxed{\;\mathrm{R}(x,y)=[x,y]\in\mathrm{K}\qquad (x,y\in\mathrm{P})\;}.
 $$
 
 **Theorem.** The curvature satisfies, for $x,y,z\in\mathrm{P}$,
 
 $$
-\mathrm{R}(x,y)=-\mathrm{R}(y,x),\qquad
-\mathrm{R}(x,y)z+\mathrm{R}(y,z)x+\mathrm{R}(z,x)y=0 ,
+\boxed{\;\mathrm{R}(x,y)=-\mathrm{R}(y,x),\qquad
+\mathrm{R}(x,y)z+\mathrm{R}(y,z)x+\mathrm{R}(z,x)y=0\;} ,
 $$
 
 the second identity being the projection to $\mathrm{P}$ of the Jacobi identity of $\mathrm{G}$.

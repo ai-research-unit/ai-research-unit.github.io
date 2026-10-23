@@ -22,7 +22,7 @@ The sum is finite, it is a sum of transforms of $f$ by the weight-$k$ action, an
 
 **Theorem.** For every $n$ the operator $T_n$ preserves $M_k(\Gamma_1(N))$ and $S_k(\Gamma_1(N))$, and if $f=\sum_{m\ge0}a_mq^m$ then
 $$
-T_nf = \sum_{m\ge0}b_mq^m, \qquad b_m=\sum_{d\mid\gcd(m,n)}d^{\,k-1}\,a_{mn/d^2}.
+\boxed{\;T_nf = \sum_{m\ge0}b_mq^m, \qquad b_m=\sum_{d\mid\gcd(m,n)}d^{\,k-1}\,a_{mn/d^2}\;}.
 $$
 The coefficient $b_m$ is a finite sum, and it depends only on $a_{mn/d^2}$ for $d\mid\gcd(m,n)$.
 
@@ -52,7 +52,7 @@ The action of $\langle d\rangle$ is diagonal on the coefficient sequence, and it
 
 **Theorem.** For all $m,n\ge1$,
 $$
-T_mT_n = T_{mn} \quad\text{when } (m,n)=1, \qquad T_1=\mathrm{id},
+\boxed{\;T_mT_n = T_{mn} \quad\text{when } (m,n)=1, \qquad T_1=\mathrm{id}\;},
 $$
 and for every prime $p$ and every $r\ge1$,
 $$
@@ -108,7 +108,7 @@ taken with respect to the Petersson inner product of *The Adjoint of the Hecke O
 
 **Theorem (Atkin–Lehner, multiplicity one).** The new subspace has a basis of normalised eigenforms whose eigenvalue systems are not of lower level, the old and new parts are stable under the Hecke operators for $(n,N)=1$, and on the new part a normalised eigenform is determined by its eigenvalue system; the space decomposes as
 $$
-S_k(\Gamma_1(N)) = S_k^{\mathrm{old}}\oplus S_k^{\mathrm{new}},
+\boxed{\;S_k(\Gamma_1(N)) = S_k^{\mathrm{old}}\oplus S_k^{\mathrm{new}}\;},
 $$
 an orthogonal direct sum once the Petersson product is available.
 

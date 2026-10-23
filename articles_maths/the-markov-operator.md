@@ -36,7 +36,7 @@ so the measure action is the transpose of the function action. It is not the Hil
 
 **Theorem (Chapman–Kolmogorov).** For all $m,n\ge0$,
 $$
-P^{m+n}=P^mP^n,\qquad P^nf(x)=\mathbb E_x[f(X_n)],\qquad \mu P^n(B)=\mathbb P_\mu(X_n\in B).
+\boxed{\;P^{m+n}=P^mP^n,\qquad P^nf(x)=\mathbb E_x[f(X_n)],\qquad \mu P^n(B)=\mathbb P_\mu(X_n\in B)\;}.
 $$
 The powers $\{P^n\}$ are the discrete semigroup of the chain, and the identity is the semigroup law of the transition operator in discrete time.
 
@@ -91,7 +91,7 @@ The $L^2(\pi)$ case is the one used below: with respect to $\langle f,g\rangle_\
 
 **Theorem (mean ergodic theorem for the Markov operator).** Let $\pi$ be invariant and ergodic and let $\Pi$ be the orthogonal projection of $L^2(\pi)$ onto the constants, $\Pi f=\int_E f\,d\pi\,\mathbf 1$. Then for every $f\in L^2(\pi)$,
 $$
-\frac1n\sum_{k=0}^{n-1}P^kf\longrightarrow \Pi f\qquad \text{in } L^2(\pi),
+\boxed{\;\frac1n\sum_{k=0}^{n-1}P^kf\longrightarrow \Pi f\qquad \text{in } L^2(\pi)\;},
 $$
 and the convergence is dominated by $\|f\|_{L^2(\pi)}$.
 
@@ -129,7 +129,7 @@ a positive number by the theorem above.
 
 **Theorem (mixing rate).** The total variation distance to stationarity is bounded by
 $$
-\|\mathbb P_\mu(X_n\in\cdot)-\pi(\cdot)\|_{\mathrm{TV}}\le\frac12\Bigl(\max_x\frac{\mu(x)}{\pi(x)}\Bigr)^{1/2}(1-\gamma)^n,
+\boxed{\;\|\mathbb P_\mu(X_n\in\cdot)-\pi(\cdot)\|_{\mathrm{TV}}\le\frac12\Bigl(\max_x\frac{\mu(x)}{\pi(x)}\Bigr)^{1/2}(1-\gamma)^n\;},
 $$
 so the chain mixes at the geometric rate of the spectral gap.
 

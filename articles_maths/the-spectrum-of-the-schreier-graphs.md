@@ -58,7 +58,7 @@ the block $(0,0)$ collecting the three generators $b,c,d$ that fix the first let
 
 **Theorem.** For the adding machine $a$ of *Self-Similar Groups* with the symmetric generating set $\{a,a^{-1}\}$ the level graph is the cycle $C_{2^n}$, and its adjacency spectrum is
 $$
-\operatorname{spec}A_n=\{2\cos(2\pi k/2^n):k=0,\dots,2^n-1\},
+\boxed{\;\operatorname{spec}A_n=\{2\cos(2\pi k/2^n):k=0,\dots,2^n-1\}\;},
 $$
 so the Markov spectrum is $\{\cos(2\pi k/2^n)\}$ and the limit is $[-2,2]$ for the adjacency and $[-1,1]$ for the Markov operator.
 
@@ -68,7 +68,7 @@ so the Markov spectrum is $\{\cos(2\pi k/2^n)\}$ and the limit is $[-2,2]$ for t
 
 **Theorem (the level spectrum is a cosine set).** For the lamplighter group $\langle p,q\rangle$ of *Self-Similar Groups* with the symmetric generating set $\{p,p^{-1},q,q^{-1}\}$ the Markov operator $M_n=\tfrac14A_n$ of the level graph has the spectrum
 $$
-\operatorname{spec}M_n=\{1\}\cup\Bigl\{\cos\frac{m\pi}{k}:2\le k\le n+1,\ 1\le m\le k-1\Bigr\},
+\boxed{\;\operatorname{spec}M_n=\{1\}\cup\Bigl\{\cos\frac{m\pi}{k}:2\le k\le n+1,\ 1\le m\le k-1\Bigr\}\;},
 $$
 whose closure is the interval $[-1,1]$. The limit spectral measure is **purely atomic**: the atoms are the numbers $\cos\frac mn\pi$ with $\gcd(m,n)=1$, $0\le m\le n$, and the mass of the atom $\lambda_{m,n}=\cos\frac mn\pi$ is
 $$
@@ -82,7 +82,7 @@ the Kesten measure of Grigorchuk and Żuk and of Dicks and Schick.
 
 **Theorem (the level spectra of the Grigorchuk graph).** For $G=\langle a,b,c,d\rangle$ with $S=\{a,b,c,d\}$ the Markov operator $M_n=\tfrac14A_n$ of the level graph has its spectrum inside
 $$
-[-\tfrac12,0]\cup[\tfrac12,1],
+\boxed{\;[-\tfrac12,0]\cup[\tfrac12,1]\;},
 $$
 with the gap $(-\tfrac12,\tfrac12)$ empty of eigenvalues except for the single value $\tfrac12$; the limit spectrum is the closure of the union and contains the two intervals. The level-1 spectrum is $\{\tfrac12,1\}$, and the level-2 spectrum is $\{-\cos\tfrac{2\pi}{5},\tfrac12,\cos\tfrac{\pi}{5},1\}=\{-0.309017,0.5,0.809017,1.000000\}$.
 

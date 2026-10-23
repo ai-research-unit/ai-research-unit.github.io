@@ -37,7 +37,7 @@ $$
 and this single fact governs the whole structure. In the language of the structures, the multiplication by $j$ is a real-linear map $J$ with $J^2=+\mathrm{id}$, where the complex structure of the field extension has $J^2=-\mathrm{id}$; the two structures are the two signs of the same square, and this is the flip that makes the Hermitian side of the split ring indefinite where the complex one is definite. For the complex field the defining polynomial is $x^2+1$, which is irreducible over $\mathbb{R}$, and the field stays a field; for the split-complex algebra the polynomial splits into two distinct linear factors already in $\mathbb{R}[x]$, so by the Chinese remainder theorem
 
 $$
-\mathbb{D} = \mathbb{R}[x]/\big((x-1)(x+1)\big) \;\cong\; \mathbb{R}[x]/(x-1) \times \mathbb{R}[x]/(x+1) \;\cong\; \mathbb{R}\oplus\mathbb{R} .
+\boxed{\;\mathbb{D} = \mathbb{R}[x]/\big((x-1)(x+1)\big) \;\cong\; \mathbb{R}[x]/(x-1) \times \mathbb{R}[x]/(x+1) \;\cong\; \mathbb{R}\oplus\mathbb{R}\;}.
 $$
 
 **Proposition.** The map
@@ -76,7 +76,7 @@ So the algebra has exactly two nontrivial idempotents, orthogonal and complete. 
 **Corollary (the units).** An element is invertible exactly when both idempotent coordinates are nonzero,
 
 $$
-\mathbb{D}^\times = \{Q : Q_+ \neq 0,\; Q_- \neq 0\} \;\cong\; \mathbb{R}^\times \times \mathbb{R}^\times ,
+\boxed{\;\mathbb{D}^\times = \{Q : Q_+ \neq 0,\; Q_- \neq 0\} \;\cong\; \mathbb{R}^\times \times \mathbb{R}^\times\;},
 $$
 
 and the inverse is componentwise, $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$.
@@ -142,7 +142,7 @@ the determinant and the trace of the regular element, the determinant being the 
 **Proposition (degeneracy).** The image $\mathsf{M}_2(\mathbb{D})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:
 
 $$
-\mathsf{M}_2(Q) \;\sim\; \begin{pmatrix} Q_+ & 0 \\ 0 & Q_- \end{pmatrix}, \qquad Q_\pm = q\pm q' .
+\boxed{\;\mathsf{M}_2(Q) \;\sim\; \begin{pmatrix} Q_+ & 0 \\ 0 & Q_- \end{pmatrix}, \qquad Q_\pm = q\pm q'\;}.
 $$
 
 **Proof.** The image is commutative because $\mathbb{D}$ is, and an $\mathbb{R}$-linear map $\mathsf{M}_2(B)$ commuting with every $\mathsf{M}_2(Q)$ commutes in particular with $\mathsf{M}_2(j) = \left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$ and with $\mathsf{M}_2(1) = I$, which forces $B$ to have the same shape, so the commutant is the image. The conjugating basis is the idempotent basis $\{\Pi_+,\Pi_-\}$: in it the matrices are diagonal with entries $Q_\pm$, since $Q\Pi_+ = Q_+\Pi_+$ and $Q\Pi_- = Q_-\Pi_-$.

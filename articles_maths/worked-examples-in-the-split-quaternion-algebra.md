@@ -40,8 +40,8 @@ $$
 \vec e_x \vec e_y = \vec e_z, \quad \vec e_y \vec e_x = -\vec e_z, \qquad
 \vec e_x \vec e_z = -\vec e_y, \quad \vec e_z \vec e_x = \vec e_y, \qquad
 \vec e_y \vec e_z = -\vec e_x, \quad \vec e_z \vec e_y = \vec e_x
-\;}
-$$.
+\;}.
+$$
 
 **Example.** For $\tilde q = 2 + \vec e_x$ and $\tilde p = 1 + \vec e_y + \vec e_z$, the table gives
 
@@ -104,8 +104,8 @@ and $\tilde\pi_2^2 = \tilde\pi_2$ likewise. Moreover
 $$
 \boxed{\;
 \tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0
-\;}
-$$.
+\;}.
+$$
 
 They are not central, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z)$.
 
@@ -161,8 +161,8 @@ $$
 \boxed{\;
 \tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{2 - \vec e_x}{5}, \qquad
 (2 + \vec e_x)\frac{2 - \vec e_x}{5} = \frac{4 - \vec e_x^2}{5} = \frac{5}{5} = 1
-\;}
-$$.
+\;}.
+$$
 
 **Example (a unit of norm one).** For $\tilde p = 1 + \vec e_x + \vec e_y$, the split-quaternion norm is $\langle\tilde p\rangle_{\natural} = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - \vec e_x - \vec e_y$; indeed $\tilde p \tilde p^{\natural} = (1+\vec e_x+\vec e_y)(1-\vec e_x-\vec e_y) = 1$. Since $\langle\tilde p\rangle_{\natural} = 1$, the element is a unit split-quaternion.
 

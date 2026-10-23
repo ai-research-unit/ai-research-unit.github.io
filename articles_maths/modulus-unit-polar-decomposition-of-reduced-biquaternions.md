@@ -5,7 +5,9 @@
 This article treats the **modulus–unit polar decomposition** of a reduced biquaternion: the writing
 
 $$
-\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\in T^2,
+\boxed{\;
+\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\in T^2
+\;},
 $$
 
 with $\breve r$ the **modulus** and $u$ the **unit factor**. The modulus is not a real number: it is an element of the **positive cone**
@@ -208,7 +210,9 @@ The pair $(\breve r,u)$ is unique. This is a statement about the factorisation, 
 **Corollary (the failure set).** The decomposition exists exactly on the units. It fails exactly on the zero divisors
 
 $$
-\{Q_{\blacktriangle}^2=Q_{\blacktriangledown}^2\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\},
+\boxed{\;
+\{Q_{\blacktriangle}^2=Q_{\blacktriangledown}^2\}=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}\cup\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}
+\;},
 $$
 
 the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each of real dimension two. The failure set has real codimension two, as the origin does in $\mathbb{C}$.
@@ -452,7 +456,9 @@ with $M_{\breve r}$ symmetric positive definite and $M_u\in SO(4)$.
 **Theorem.** For every unit $\breve Q$, the matrix $M_{\breve Q}$ has the polar decomposition
 
 $$
-M_{\breve Q}=P U,\qquad P=M_{\breve r}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u,
+\boxed{\;
+M_{\breve Q}=P U,\qquad P=M_{\breve r}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u
+\;},
 $$
 
 with $P$ symmetric positive definite and $U$ orthogonal. The factors are unique.

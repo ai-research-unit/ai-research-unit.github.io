@@ -21,7 +21,7 @@ that is, when $T$ commutes with its Krein adjoint. It is $J$-self-adjoint when $
 **Theorem (the definite model of $J$-normality).** In the coefficient basis, with $T^{*}$ the conjugate transpose and $E=\mathrm{diag}(1,-1,-1,-1)$, the operator $T$ is $J$-normal if and only if
 
 $$
-T^{*}\,E\,T\,E=E\,T\,E\,T^{*},
+\boxed{\; T^{*}\,E\,T\,E=E\,T\,E\,T^{*} \;},
 $$
 
 equivalently if and only if $T^{*}$ commutes with $J TJ$.
@@ -59,7 +59,7 @@ so $T$ is nilpotent, has spectrum $\{0\}$, and is not diagonalisable. Thus a $J$
 **Theorem (the symmetry of the $J$-self-adjoint spectrum).** If $T$ is $J$-self-adjoint then $T$ and $T^{*}$ have the same characteristic polynomial, so the spectrum of $T$, with multiplicities, is invariant under conjugation:
 
 $$
-\lambda\in\mathrm{spec}(T)\iff\bar\lambda\in\mathrm{spec}(T).
+\boxed{\; \lambda\in\mathrm{spec}(T)\iff\bar\lambda\in\mathrm{spec}(T) \;}.
 $$
 
 **Proof.** $T=ES$ with $S$ self-adjoint, so $T^{*}=(ES)^{*}=SE$; the matrices $ES$ and $SE$ have the same characteristic polynomial, because $AB$ and $BA$ do for square matrices. Since $T^{*}$ is the conjugate transpose of $T$, its spectrum is the conjugate of the spectrum of $T$.
@@ -81,9 +81,9 @@ with the same multiplicity; in particular an eigenvalue on the unit circle has i
 **Theorem (the three families are $J$-normal).** For every biquaternion $\tilde{Q}$ the left multiplication $L_{\tilde{Q}}$, the right multiplication $R_{\tilde{Q}}$ and the sandwich $\Theta_{\tilde{Q}}$ are $J$-normal. Precisely,
 
 $$
-(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
+\boxed{\; (L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}},\qquad
 (R_{\tilde{Q}})^{\dagger}=L_{\bar{\tilde{Q}}},\qquad
-(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}},
+(\Theta_{\tilde{Q}})^{\dagger}=\Theta_{{}^{\natural}\tilde{Q}} \;},
 $$
 
 and in each case the two factors of $T^{\dagger}T$ commute.

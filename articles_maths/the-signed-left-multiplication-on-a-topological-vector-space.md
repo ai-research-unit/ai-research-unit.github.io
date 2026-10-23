@@ -18,7 +18,7 @@ $$
 **Proposition (definition and continuity).** For every $a \in E$ the map $\Lambda^{\alpha}_{a}$ is a continuous linear operator on $E$; it is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and
 
 $$
-\Lambda^{\alpha}_{a} = L_{a} \circ \alpha = \alpha \circ L_{\alpha(a)} ,
+\boxed{\;\Lambda^{\alpha}_{a} = L_{a} \circ \alpha = \alpha \circ L_{\alpha(a)}\;} ,
 $$
 
 so the signed left multiplication is the ordinary left multiplication by $\alpha(a)$ conjugated by $\alpha$.
@@ -28,9 +28,9 @@ so the signed left multiplication is the ordinary left multiplication by $\alpha
 **Proposition (composition).** For all $a, b \in E$,
 
 $$
-\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
+\boxed{\;\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
 L_{a}\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}, \qquad
-\Lambda^{\alpha}_{a}L_{b} = R_{\alpha(b)}\Lambda^{\alpha}_{a} .
+\Lambda^{\alpha}_{a}L_{b} = R_{\alpha(b)}\Lambda^{\alpha}_{a}\;} .
 $$
 
 In particular the composite of two signed left multiplications is an ordinary left multiplication, and the set $\{L_{a} : a \in E\} \cup \{\Lambda^{\alpha}_{a} : a \in E\}$ is closed under composition.
@@ -62,7 +62,7 @@ $$
 **Proposition (the fixed set in the invertible case).** If $a$ is invertible then $\mathrm{Fix}(\Lambda^{\alpha}_{a}) = \{x : \alpha(x) = a^{-1}x\}$, the graph of the action of $a^{-1}$ under the involution, and its dimension equals the dimension of the fixed points of the automorphism $a^{-1}\alpha$ of $E$, namely
 
 $$
-\dim \mathrm{Fix}(\Lambda^{\alpha}_{a}) = \dim\ker(\mathrm{id} - a^{-1}\alpha) .
+\boxed{\;\dim \mathrm{Fix}(\Lambda^{\alpha}_{a}) = \dim\ker(\mathrm{id} - a^{-1}\alpha)\;} .
 $$
 
 For $a = 1$ the fixed set of $\Lambda^{\alpha}_{1} = \alpha$ is the fixed part $E^{+}$ of the grading, and $\Lambda^{\alpha}_{1}$ is an involution with $E = E^{+} \oplus E^{-}$.

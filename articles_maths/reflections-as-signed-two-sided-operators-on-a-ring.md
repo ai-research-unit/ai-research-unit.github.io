@@ -32,7 +32,7 @@ $$
 with inverse $r_u^{-1} = r_{\alpha(u)^{-1}}$; and for all units $u, v$,
 
 $$
-r_u \circ r_v = \operatorname{conj}_{u\,\alpha(v)}, \qquad r_u = r_v \iff uv^{-1} \in Z(A).
+\boxed{\;r_u \circ r_v = \operatorname{conj}_{u\,\alpha(v)}, \qquad r_u = r_v \iff uv^{-1} \in Z(A)\;}.
 $$
 
 **Proof.** $r_u = \operatorname{conj}_u\alpha$ is a composite of automorphisms, hence an automorphism. The identity $\operatorname{conj}_u\alpha = \alpha\operatorname{conj}_{\alpha(u)}$ is $\alpha\operatorname{conj}_{\alpha(u)}(x) = \alpha(\alpha(u)x\alpha(u)^{-1}) = u\alpha(x)u^{-1}$. The inverse: $\alpha\operatorname{conj}_{\alpha(u)}$ composed with $\alpha\operatorname{conj}_{\alpha(u)^{-1}}$... equivalently $r_u r_{\alpha(u)^{-1}}(x) = u\alpha(\alpha(u)^{-1}\alpha(x)\alpha(u))u^{-1} = u\alpha(\alpha(u)^{-1})x\alpha(\alpha(u))u^{-1} = u\alpha(u)^{-1}x\alpha(u)u^{-1} = x$. For the product, $r_ur_v = \operatorname{conj}_u\alpha\operatorname{conj}_v\alpha = \operatorname{conj}_u\operatorname{conj}_{\alpha(v)}\alpha^2 = \operatorname{conj}_{u\alpha(v)}$. Finally $r_u=r_v \iff \operatorname{conj}_u = \operatorname{conj}_v$, and that holds exactly when $uv^{-1}\in Z(A)$.
@@ -48,7 +48,7 @@ $$
 **Theorem (the order-two criterion).** Let $u \in A^\times$. The reflection $r_u$ is an involution, $r_u^2 = \mathrm{id}$, if and only if
 
 $$
-u\,\alpha(u) \in Z(A).
+\boxed{\;u\,\alpha(u) \in Z(A)\;}.
 $$
 
 When this holds, $r_u$ is the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two.
@@ -66,7 +66,7 @@ The criterion organises the units into those that act by an involution and those
 **Proposition.** The reflecting elements form a subgroup $A^\times_{\mathrm{refl}}$ of $A^\times$ containing $Z(A)^\times$, and the map $u \mapsto r_u$ induces a bijection
 
 $$
-A^\times_{\mathrm{refl}} / Z(A)^\times \;\longrightarrow\; \{\text{involutive reflections}\},
+\boxed{\;A^\times_{\mathrm{refl}} / Z(A)^\times \;\longrightarrow\; \{\text{involutive reflections}\}\;},
 $$
 
 so the involutive reflections are in bijection with the reflecting units modulo the centre. The larger set of all reflections is in bijection with $A^\times/Z(A)^\times$.

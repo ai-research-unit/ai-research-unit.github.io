@@ -28,7 +28,7 @@ c_u(x\bullet y) = u\,\alpha(x\bullet y)\,u^{-1} = u\,\bigl(\alpha(x)\bullet\alph
 $$
 and, since $z\mapsto uzu^{-1}$ is an algebra automorphism of $A$ and therefore preserves the halved product,
 $$
-u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y) .
+\boxed{\;u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y)\;} .
 $$
 Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$.
 
@@ -55,7 +55,7 @@ and $N(uv) = N(u)N(v)$ whenever $N(v)$ is central.
 **Theorem (the square of a signed conjugation).** For every unit $u$,
 
 $$
-c_u^2 = \operatorname{conj}_{N(u)} , \qquad c_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1} .
+\boxed{\;c_u^2 = \operatorname{conj}_{N(u)} , \qquad c_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1}\;} .
 $$
 
 *Proof.* Compose: $c_u(c_u(x)) = u\,\alpha(u\alpha(x)u^{-1})\,u^{-1} = u\alpha(u)\,\alpha(\alpha(x))\,\alpha(u)^{-1}u^{-1} = N(u)\,x\,N(u)^{-1}$.
@@ -94,7 +94,7 @@ where $U_u$ is the quadratic representation and $\Sigma^{\alpha}_{u,u}$ is the s
 
 **Theorem.** For units $u, v$,
 $$
-c_u = c_v \iff u^{-1}v \in Z(A)^\times .
+\boxed{\;c_u = c_v \iff u^{-1}v \in Z(A)^\times\;} .
 $$
 
 *Proof.* Suppose $c_u = c_v$, so $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$. Applying this with $x = \alpha^{-1}(z)$, which runs through all $z$ as $x$ does, gives $uzu^{-1} = vzv^{-1}$ for all $z$, that is $u^{-1}v$ commutes with every $z$, so $u^{-1}v$ is central. Conversely if $u^{-1}v$ is central then it commutes with $\alpha(x)$, and $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ follows from $v = u(u^{-1}v)$ with $u^{-1}v$ central.

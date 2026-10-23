@@ -16,7 +16,7 @@ The Clifford action and the module form are *Hermitian Modules over a Hermitian 
 **Definition.** Let $S$ be a right/left Clifford module with action $\rho$ and $S'$ one with action $\rho'$. An **intertwiner** (a **Clifford-linear map**) is an $A$-linear map $T : S\to S'$ with
 
 $$
-T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,\mathfrak{Q}).
+\boxed{\;T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,\mathfrak{Q})\;}.
 $$
 
 The intertwiners are the morphisms of the category of Clifford modules; the identity is an intertwiner and a composite of intertwiners is an intertwiner, so the modules and intertwiners form an $A$-linear category.
@@ -24,7 +24,7 @@ The intertwiners are the morphisms of the category of Clifford modules; the iden
 **Proposition (the adjoint of an intertwiner interwines the adjoint actions).** Let the modules carry Hermitian forms with spinor adjoints $J, J'$ of *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*, and let $T : S\to S'$ be an intertwiner with adjoint $T^{*} : S'\to S$ for those forms. Then
 
 $$
-T^{*}\,\rho'(x)^{*} = \rho(x)^{*}\,T^{*} \qquad \text{for all } x,
+\boxed{\;T^{*}\,\rho'(x)^{*} = \rho(x)^{*}\,T^{*} \qquad \text{for all } x\;},
 $$
 
 so $T^{*}$ intertwines the adjoint action of $\rho'$ with the adjoint action of $\rho$.
@@ -60,7 +60,7 @@ so $T^{*}$ intertwines the adjoint action of $\rho'$ with the adjoint action of 
 **Theorem (unitary invariants).** An invariant operator $T$ is **unitary** (that is, $T^{*}T = TT^{*} = \mathrm{id}$) iff the invariant endomorphism it defines is an isometry of the module form. On the regular module $R_b$ is unitary iff $b$ lies in the unitary slice $U$ of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*:
 
 $$
-R_b^{*}R_b = R_{b^{\dagger}b} = \mathrm{id} \iff b^{\dagger}b = 1 \iff b\in U .
+\boxed{\;R_b^{*}R_b = R_{b^{\dagger}b} = \mathrm{id} \iff b^{\dagger}b = 1 \iff b\in U\;} .
 $$
 
 So the group of unitary invariant operators on the regular module is a copy of the unitary slice $U$, and it acts on the module by the right regular representation; the map $b\mapsto R_b$ is a group anti-isomorphism of $U$ onto it.

@@ -17,7 +17,7 @@ The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\va
 **Definition.** Let $A$ and $B$ be sesqualgebras over the same datum $(R,\varsigma)$. Their **direct product** $A \times B$ is the $R$-module of the pairs $(a,b)$ with the componentwise product
 
 $$
-(a,b)(c,d) = (ac, bd)
+\boxed{\;(a,b)(c,d) = (ac, bd)\;}
 $$
 
 and the componentwise involution
@@ -73,7 +73,7 @@ $$
 **Proposition.** The involution of $A \times B$ acts componentwise on the two halves, so that
 
 $$
-H(A \times B) = H(A) \times H(B) , \qquad S(A \times B) = S(A) \times S(B) .
+\boxed{\;H(A \times B) = H(A) \times H(B) , \qquad S(A \times B) = S(A) \times S(B)\;} .
 $$
 
 **Proof.** An element $(a,b)$ is fixed by the involution exactly when $a^{*} = a$ and $b^{*} = b$, that is exactly when $a \in H(A)$ and $b \in H(B)$; the skew-Hermitian case is the same computation with a minus sign.
@@ -121,7 +121,7 @@ and only the direct product is componentwise, which is why only the direct produ
 **Theorem.** Let $A = R \times R$ with the componentwise product and the **exchange involution** $(a,b)^{*} = (b,a)$, over the datum $(R,\mathrm{id})$. Then the idempotent $e = (1,0)$ is central, it is not Hermitian, and
 
 $$
-e^{*} = (0,1) = 1 - e \neq e .
+\boxed{\;e^{*} = (0,1) = 1 - e \neq e\;} .
 $$
 
 **Proof.** The element $e = (1,0)$ is idempotent and central, its complement is $1 - e = (0,1)$, and the exchange involution swaps the two components, so $e^{*} = (0,1) \neq e$. The involution is $(R,\mathrm{id})$-linear and of order two, and it is an anti-automorphism of the componentwise product.

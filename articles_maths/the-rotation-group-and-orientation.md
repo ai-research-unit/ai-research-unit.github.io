@@ -158,7 +158,7 @@ $$
 **Proposition.** The assignment $\theta \mapsto R(\theta)$ is a surjective homomorphism $\mathbb{R} \to \operatorname{SO}(2)$ with kernel $2\pi\mathbb{Z}$. Hence
 
 $$
-\operatorname{SO}(2) \cong \mathbb{R}/2\pi\mathbb{Z} \cong S^1,
+\boxed{\;\operatorname{SO}(2) \cong \mathbb{R}/2\pi\mathbb{Z} \cong S^1\;},
 $$
 
 the unit circle, and $\operatorname{SO}(2)$ is abelian.
@@ -178,7 +178,7 @@ The subgroups of the circle that arise from finite symmetry are cyclic, and this
 **Proposition.** Every finite subgroup of $\operatorname{SO}(2)$ is cyclic. If $H$ is finite and nontrivial, there is an integer $m \geq 1$ with
 
 $$
-H = \langle R(2\pi/m)\rangle \cong \mathbb{Z}/m\mathbb{Z},
+\boxed{\;H = \langle R(2\pi/m)\rangle \cong \mathbb{Z}/m\mathbb{Z}\;},
 $$
 
 and $m$ is the order of $H$.
@@ -204,7 +204,7 @@ Euler's theorem generalises: a rotation of a definite space of any dimension is 
 **Theorem (normal form of a rotation).** Let $V$ be a finite-dimensional real space with a positive definite form $m$ and let $T \in \operatorname{SO}(V, \mathfrak{Q})$. Then there is an orthonormal basis of $V$ in which $T$ is the block diagonal matrix
 
 $$
-T = \operatorname{diag}\bigl(R(\theta_1), \ldots, R(\theta_m), \underbrace{1, \ldots, 1}_{n - 2m}\bigr), \qquad 0 < \theta_1 \leq \cdots \leq \theta_m \leq \pi,
+\boxed{\;T = \operatorname{diag}\bigl(R(\theta_1), \ldots, R(\theta_m), \underbrace{1, \ldots, 1}_{n - 2m}\bigr), \qquad 0 < \theta_1 \leq \cdots \leq \theta_m \leq \pi\;},
 $$
 
 where $2m = n - \dim\ker(T - \mathrm{id})$ is the number of eigenvalues of $T$, counted with multiplicity, that differ from $1$; equivalently $2m$ is the codimension of the fixed subspace. In particular $T$ fixes pointwise a subspace of dimension $n - 2m$, and the multiset $\{\theta_1, \ldots, \theta_m\}$ is determined by $T$: the angles $\theta_j < \pi$ are read off from the non-real eigenvalues $\exp(\pm i\theta_j)$, and $\theta_j = \pi$ corresponds to a pair of eigenvalues $-1$.

@@ -119,7 +119,7 @@ The left cosets partition $G$, and $g H = h H$ if and only if $h^{-1} g \in H$; 
 **Lagrange's theorem.** If $G$ is a finite group and $H \subseteq G$ is a subgroup, then
 
 $$
-|G| = [G : H] \, |H|.
+\boxed{\;|G| = [G : H] \, |H|\;}.
 $$
 
 In particular, $|H|$ divides $|G|$.
@@ -247,7 +247,7 @@ An element has a singleton conjugacy class exactly when it lies in the centre.
 **Class equation.** Let $G$ be finite, and let $x_1, \ldots, x_k$ represent the conjugacy classes of size greater than $1$. Then
 
 $$
-|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)],
+\boxed{\;|G| = |Z(G)| + \sum_{i=1}^{k} [G : C_G(x_i)]\;},
 $$
 
 each index being greater than $1$ and dividing $|G|$.
@@ -347,7 +347,7 @@ with $H$ not required to be normal. Examples: $D_n \cong C_n \rtimes C_2$; $S_n 
 **Structure theorem.** Every finitely generated abelian group $G$ is isomorphic to a finite direct sum
 
 $$
-G \cong \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z},
+\boxed{\;G \cong \mathbb{Z}^r \oplus \mathbb{Z}/d_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/d_k\mathbb{Z}\;},
 $$
 
 where $r \geq 0$ and $d_1 \mid d_2 \mid \cdots \mid d_k$ with each $d_i > 1$. The integer $r$ is the **rank** and the $d_i$ are the **invariant factors**; both are uniquely determined by $G$. The group is finite if and only if $r = 0$.

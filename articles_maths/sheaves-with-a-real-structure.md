@@ -24,7 +24,7 @@ The article uses no analysis and no geometry: the involution is a homeomorphism 
 **Definition.** Let $\sigma$ be an involution of $X$. A **sheaf with a real structure**, or an **involutive sheaf**, is a sheaf $\mathcal{F}$ of complex vector spaces on $X$ together with, for every $g\in\langle\sigma\rangle$, a **conjugate-linear** isomorphism
 
 $$
-\sigma_{\mathcal{F}}^{\tau}:\mathcal{F}\longrightarrow \sigma_*\mathcal{F},\qquad \sigma_{\mathcal{F}}^{e}=\mathrm{id},
+\boxed{\;\sigma_{\mathcal{F}}^{\tau}:\mathcal{F}\longrightarrow \sigma_*\mathcal{F},\qquad \sigma_{\mathcal{F}}^{e}=\mathrm{id}\;},
 $$
 
 satisfying the cocycle $\sigma_{\mathcal{F}}^{\tau}\circ\sigma_*(\sigma_{\mathcal{F}}^{\tau})=\mathrm{id}$; equivalently, a family of conjugate-linear isomorphisms $\mathcal{F}(U)\to\mathcal{F}(\sigma U)$ compatible with the restrictions and with $\sigma_{\mathcal{F}}^2=\mathrm{id}$. A **morphism** of sheaves with a real structure is a complex-linear morphism $\psi:\mathcal{F}\to\mathcal{G}$ commuting with the involutions, $\sigma_{\mathcal{G}}\circ\sigma_*(\psi)=\psi\circ\sigma_{\mathcal{F}}$; the category is written $\mathrm{Sh}^{\mathbb{R}}(X,\sigma)$.
@@ -64,7 +64,7 @@ $$
 is right adjoint to the pullback $p^*$ along the orbit map. For a free and properly discontinuous involution the pullback and the descent are inverse equivalences
 
 $$
-\mathrm{Sh}\bigl(X/\langle\sigma\rangle\bigr)\simeq\mathrm{Sh}^{\mathbb{R}}(X,\sigma),
+\boxed{\;\mathrm{Sh}\bigl(X/\langle\sigma\rangle\bigr)\simeq\mathrm{Sh}^{\mathbb{R}}(X,\sigma)\;},
 $$
 
 realised by the conjugate-linear equivariant structures.
@@ -74,7 +74,7 @@ realised by the conjugate-linear equivariant structures.
 **Corollary (the real form).** Suppose $X$ is the complexification of a space $Y$, so that $X=Y_{\mathbb{C}}=Y\otimes_{\mathbb{R}}\mathbb{C}$ with the conjugation involution, $X^{\sigma}=Y$, and $X/\langle\sigma\rangle=Y$. Then the descent is an equivalence between the sheaves with a real structure on $X$ and the sheaves of real vector spaces on $Y$,
 
 $$
-\mathrm{Sh}^{\mathbb{R}}\bigl(Y_{\mathbb{C}},\sigma\bigr)\simeq\mathrm{Sh}_{\mathbb{R}}(Y),
+\boxed{\;\mathrm{Sh}^{\mathbb{R}}\bigl(Y_{\mathbb{C}},\sigma\bigr)\simeq\mathrm{Sh}_{\mathbb{R}}(Y)\;},
 $$
 
 the functor in one direction being $(-)^{\sigma}$ and in the other the complexification $\mathcal{G}\mapsto\mathcal{G}\otimes_{\mathbb{R}}\underline{\mathbb{C}}$; the real structure is the **real form** of the complex sheaf.

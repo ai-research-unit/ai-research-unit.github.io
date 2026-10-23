@@ -42,7 +42,7 @@ An element $c$ with the first two properties is a **common divisor** of $a$ and 
 **Proposition.** Let $a, b, c \in R$, with $\gcd(a,b)$ and $\gcd(ca, cb)$ existing and $c \neq 0$. Then
 
 $$
-\gcd(ca, cb) \sim c \cdot \gcd(a,b) .
+\boxed{\;\gcd(ca, cb) \sim c \cdot \gcd(a,b)\;} .
 $$
 
 **Proof.** Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is a unit and $e \sim cd$.
@@ -70,7 +70,7 @@ A least common multiple, when it exists, is unique up to associates, by the same
 **Theorem.** Let $a, b \in R$ be nonzero. Then $\gcd(a,b)$ exists if and only if $\operatorname{lcm}(a,b)$ exists, and in that case
 
 $$
-\gcd(a,b) \cdot \operatorname{lcm}(a,b) \sim a b .
+\boxed{\;\gcd(a,b) \cdot \operatorname{lcm}(a,b) \sim a b\;} .
 $$
 
 **Proof.** Suppose $d = \gcd(a,b)$ exists and put $m = ab/d$, which lies in $R$ because $d \mid a$ and $d \mid b$. Then $m = a(b/d) = b(a/d)$, so $a \mid m$ and $b \mid m$. If $a \mid c$ and $b \mid c$, then $ab \mid cb$ and $ab \mid ca$, hence $ab$ divides the gcd of $cb$ and $ca$, which is $c \cdot \gcd(a,b) = cd$ by the proposition above; so $ab \mid cd$ and therefore $m = ab/d \mid c$. Hence $m = \operatorname{lcm}(a,b)$ and the identity holds. The converse is symmetric, reading $d = ab/m$; the details are the same.
@@ -138,7 +138,7 @@ A greatest common divisor is not always a linear combination: it is when the ide
 **Definition.** A greatest common divisor $d = \gcd(a,b)$ is a **Bézout combination** of $a$ and $b$ if there exist $x, y \in R$ with
 
 $$
-d = a x + b y .
+\boxed{\;d = a x + b y\;} .
 $$
 
 **Proposition.** Let $a, b \in R$ be nonzero and let $d = \gcd(a,b)$.

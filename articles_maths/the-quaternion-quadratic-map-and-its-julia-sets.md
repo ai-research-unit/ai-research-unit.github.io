@@ -40,9 +40,7 @@ $$
 
 and its determinant, in the real coordinates $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, is
 
-$$
-\det \mathrm{d}(f_c)_{\tilde q} = 16\,q_t^2\,\langle\tilde q\rangle_{\natural} = 16\,q_t^2\,|\tilde q|^2.
-$$
+$$ \boxed{\; \det \mathrm{d}(f_c)_{\tilde q} = 16\,q_t^2\,\langle\tilde q\rangle_{\natural} = 16\,q_t^2\,|\tilde q|^2 \;} .$$
 
 Hence the differential is invertible exactly for $q_t\neq0$, and it is singular on the hyperplane $\{q_t=0\}$ of the pure vectors, a three-dimensional set; the point $0$ is one of the critical points but not the only one. Here the algebra is identified with $\mathbb{R}^4$ and the differential is taken in the real sense; no complex structure is used.
 
@@ -116,9 +114,7 @@ The **inner automorphisms** of $\mathbb{H}$ are the maps $\operatorname{Ad}_u(\t
 
 **Proposition (equivariance).** For every unit quaternion $u$ and every parameter $c$,
 
-$$
-f_{\operatorname{Ad}_u(c)} \circ \operatorname{Ad}_u = \operatorname{Ad}_u \circ f_c.
-$$
+$$ \boxed{\; f_{\operatorname{Ad}_u(c)} \circ \operatorname{Ad}_u = \operatorname{Ad}_u \circ f_c \;} .$$
 
 Consequently $K_{\operatorname{Ad}_u(c)}=\operatorname{Ad}_u(K_c)$ and $J_{\operatorname{Ad}_u(c)}=\operatorname{Ad}_u(J_c)$.
 
@@ -176,9 +172,7 @@ $$
 
 **Theorem (the hull of a real parameter).** Let $c \in \mathbb{R}$ and let $\nu \in S^2$. Then
 
-$$
-K_c = \operatorname{Ad}_{S^3}\bigl(K_c \cap \mathbb{C}_\nu\bigr), \qquad J_c = \operatorname{Ad}_{S^3}\bigl(J_c \cap \mathbb{C}_\nu\bigr),
-$$
+$$ \boxed{\; K_c = \operatorname{Ad}_{S^3}\bigl(K_c \cap \mathbb{C}_\nu\bigr), \qquad J_c = \operatorname{Ad}_{S^3}\bigl(J_c \cap \mathbb{C}_\nu\bigr) \;} ,$$
 
 and the intersection $K_c \cap \mathbb{C}_\nu$ is the filled Julia set of the complex quadratic map $z \mapsto z^2+c$ under the isomorphism $\mathbb{C}_\nu \cong \mathbb{C}$ that sends $\nu$ to $i$. Thus **for a real parameter the quaternion Julia set is the rotational hull of the ordinary complex Julia set**.
 

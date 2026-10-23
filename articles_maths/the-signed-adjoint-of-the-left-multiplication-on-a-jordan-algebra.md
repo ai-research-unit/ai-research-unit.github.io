@@ -29,7 +29,7 @@ The article assumes *The Signed Left Multiplication on a Jordan Algebra* for the
 **Theorem (the unsigned adjoint).** The unsigned left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the adjoint of the signed left multiplication is the signed left multiplication at the image of the parameter:
 
 $$
-\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} .
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)}\;} .
 $$
 
 *Proof.* The associativity of the trace form says $T(L_ax,y) = T(x,L_ay)$, so $L_a^{\dagger} = L_a$; the grade involution is an isometry, $T(\alpha x,y) = T(x,\alpha y)$, so $\alpha^{\dagger} = \alpha$. Hence $(\ell^{\alpha}_a)^{\dagger} = (L_a\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ L_a^{\dagger} = \alpha\circ L_a$. Since $\alpha$ is an automorphism, $\alpha L_a = L_{\alpha(a)}\alpha$, so $\alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)}$.
@@ -51,7 +51,7 @@ $$
 **Theorem.** The signed left multiplication is unitary with respect to the adjoint exactly when the unsigned left multiplication is an involution:
 
 $$
-\bigl(\ell^{\alpha}_a\bigr)^{\dagger}\ell^{\alpha}_a = \ell^{\alpha}_a\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \mathrm{id} \iff L_a^2 = \mathrm{id} ,
+\boxed{\;\bigl(\ell^{\alpha}_a\bigr)^{\dagger}\ell^{\alpha}_a = \ell^{\alpha}_a\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \mathrm{id} \iff L_a^2 = \mathrm{id}\;} ,
 $$
 
 that is, exactly when $a$ is a **symmetry**.
@@ -63,7 +63,7 @@ that is, exactly when $a$ is a **symmetry**.
 **Theorem.** The signed sandwich is the product of a signed and an unsigned one-sided action, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)} ,
+\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}\;} ,
 $$
 
 which is the signed sandwich $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with *The Signed Adjoint Sandwich on a Jordan Algebra*.

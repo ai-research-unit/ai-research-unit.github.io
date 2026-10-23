@@ -39,8 +39,8 @@ The form is symmetric, $\langle\tilde Q_2,\tilde Q_1\rangle=\langle\tilde Q_1,\t
 $$
 \boxed{\;
 \operatorname{Re}B=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_\mu^{2}-(q'_\mu)^{2}\bigr),\qquad \operatorname{Im}B=2\sum_{\mu\in\{t,x,y,z\}}q_\mu q'_\mu,\qquad Q_\mu=q_\mu+iq'_\mu
-\;}
-$$.
+\;}.
+$$
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -87,8 +87,8 @@ $$
 \langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\text{ non-invertible},
 \qquad
 \langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\text{ invertible}
-\;}
-$$.
+\;}.
+$$
 
 *Proof.* For the first implication, the element $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-1^{2}=0$, and it is a unit of the plain product: $(e_t+\vec e_x)(e_t-\vec e_x)=e_t^{2}-e_t\vec e_x+\vec e_xe_t-\vec e_x^{2}=e_t-\vec e_x+\vec e_x+e_t=2e_t$, so $\tilde Q^{-1}=\tfrac12(e_t-\vec e_x)$ and $\tilde Q$ is invertible while its algebraic norm vanishes. For the second implication, the element $\tilde Q=e_t+i\vec e_x$ has $\langle\tilde Q\rangle=1^{2}-(i)^{2}=1+1=2\neq0$, and it is a zero divisor, $(e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^{2}-(i\vec e_x)^{2}=e_t-e_t=0$, hence non-invertible while its algebraic norm does not vanish.
 

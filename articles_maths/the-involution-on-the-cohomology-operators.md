@@ -23,7 +23,7 @@ $$
 because $\sigma$ is a homeomorphism; it preserves the degree and the cup product,
 
 $$
-\sigma^{*}(H^{n}(X)) \subseteq H^{n}(X), \qquad \sigma^{*}(u \cup v) = \sigma^{*}u \cup \sigma^{*}v, \qquad \sigma^{*}(1) = 1,
+\boxed{\;\sigma^{*}(H^{n}(X)) \subseteq H^{n}(X), \qquad \sigma^{*}(u \cup v) = \sigma^{*}u \cup \sigma^{*}v, \qquad \sigma^{*}(1) = 1\;},
 $$
 
 and it is an involution of the cohomology ring, $(\sigma^{*})^{2} = \mathrm{id}$, since $\sigma^{2} = \mathrm{id}$ and the cohomology is a functor.
@@ -47,7 +47,7 @@ and the **anti-invariant** part is $H^{*}(X)^{-\sigma^{*}} = \{u : \sigma^{*}u =
 **Theorem.** The invariant cohomology is a graded subring of $H^{*}(X)$, and the anti-invariant part is a graded module over it: the cup product of two invariant classes is invariant, the product of an invariant and an anti-invariant class is anti-invariant, and the product of two anti-invariant classes is invariant. If two is invertible in $R$, the cohomology splits as a module,
 
 $$
-H^{*}(X) = H^{*}(X)^{\sigma^{*}} \oplus H^{*}(X)^{-\sigma^{*}},
+\boxed{\;H^{*}(X) = H^{*}(X)^{\sigma^{*}} \oplus H^{*}(X)^{-\sigma^{*}}\;},
 $$
 
 the projections being $(1 \pm \sigma^{*})/2$, and if two is not invertible the two parts need not span.
@@ -87,7 +87,7 @@ $$
 is injective with image the invariant cohomology $H^{*}(X)^{\sigma^{*}}$, so that
 
 $$
-H^{*}(X/\sigma) \;\cong\; H^{*}(X)^{\sigma^{*}} .
+\boxed{\;H^{*}(X/\sigma) \;\cong\; H^{*}(X)^{\sigma^{*}}\;} .
 $$
 
 **Proof sketch.** The **transfer** is the additive map $\tau : H^{*}(X) \to H^{*}(X/\sigma)$ obtained from the two sheets of the covering: on the level of cochains it sums a cochain over the two points of each fibre, using that the deck group acts on the cochain complex and that the two sheets give a direct sum decomposition of the complex of $X$ over the quotient. The composites satisfy $\pi^{*}\tau = 1 + \sigma^{*}$ and $\tau\pi^{*} = 2$; on the fixed part the first identity reads $\pi^{*}\tau u = 2u$, so $2^{-1}\tau$ is a retraction of $\pi^{*}$, and $\pi^{*}$ is injective with image the fixed part, because a class fixed by $\sigma^{*}$ is $2^{-1}\pi^{*}\tau u$ for the class $\tau u$ of the quotient. The construction is the standard one of the covering theory and is stated without the chain-level details.

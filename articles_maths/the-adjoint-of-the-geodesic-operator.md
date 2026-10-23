@@ -64,7 +64,7 @@ for all smooth fields $V$ and $W$ vanishing at the endpoints $a$ and $b$.
 **Theorem.** The covariant derivative along a geodesic is **skew-adjoint** for the $L^2$ pairing with the vanishing boundary conditions,
 
 $$
-\left(\frac{D}{dt}\right)^{*} = -\frac{D}{dt},
+\boxed{\;\left(\frac{D}{dt}\right)^{*} = -\frac{D}{dt}\;},
 $$
 
 because $\langle\frac{DV}{dt},W\rangle + \langle V,\frac{DW}{dt}\rangle = \frac{d}{dt}\langle V,W\rangle$ and the boundary term vanishes; the curvature operator in the direction of the geodesic is **self-adjoint**,
@@ -76,7 +76,7 @@ $$
 because the curvature tensor is symmetric in the pairs $(V, d\gamma/dt)$ and $(W, d\gamma/dt)$; and the geodesic operator is **self-adjoint**,
 
 $$
-L_\gamma^{*} = L_\gamma ,
+\boxed{\;L_\gamma^{*} = L_\gamma\;} ,
 $$
 
 the square of the skew-adjoint derivative being self-adjoint and the sum of two self-adjoint operators being self-adjoint.
@@ -114,7 +114,7 @@ the second variation of the energy of the family of curves with the fields $V$ a
 **Theorem.** The index form is symmetric and is the quadratic form of the geodesic operator: for the fields vanishing at the endpoints,
 
 $$
-I(V, W) = \bigl\langle -\tfrac{D^2V}{dt^2} - \mathcal{R}_{d\gamma/dt}V,\, W\bigr\rangle_{L^2} = -\langle L_\gamma V, W\rangle_{L^2},
+\boxed{\;I(V, W) = \bigl\langle -\tfrac{D^2V}{dt^2} - \mathcal{R}_{d\gamma/dt}V,\, W\bigr\rangle_{L^2} = -\langle L_\gamma V, W\rangle_{L^2}\;},
 $$
 
 so that the self-adjointness of the geodesic operator and the symmetry of the index form are the same statement, and the Jacobi fields are the kernel of the index form.

@@ -62,9 +62,9 @@ $$
 **Corollary (the plain adjoint swaps, the signed adjoint conjugates).** The first two lines above read
 
 $$
-(L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6},
+\boxed{\; (L_{\tilde Q_6}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_6},
 \qquad
-(L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}.
+(L_{\tilde Q_6}R_{\tilde Q_3})^{N}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}} \;}.
 $$
 
 The associate **reverses the two parameters and leaves them alone**; the $N$-adjoint **keeps the parameters in place and replaces each by its image under the sign $\natural$**. So the word *association* names a transpose, and it is the suffix of a family exactly when the form of that family is the plain one; the word *signed inner conjugation* names the adjoint of the $\natural$-form, and no factor is reversed there. The third adjoint conjugates in place with the conjugate linear $\ast$, and the fourth swaps and conjugates.
@@ -104,7 +104,7 @@ The edge rows $L_a=\sum_n a_n\,e_n[\,]e_t$ and $R_b=\sum_m b_m\,e_t[\,]e_m$ give
 **Proposition (the matrix of the associate).** Let $F$ have matrix $M$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Then the matrix of the associate is
 
 $$
-M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E},
+\boxed{\; M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E} \;},
 $$
 
 the sign matrix $\mathrm{E}$ conjugating the plain transpose.
@@ -192,7 +192,7 @@ the **unsigned inner conjugation** and the **signed inner conjugation**; the sec
 **Proposition (the difference is the vector part).** For an invertible $\tilde Q_6$ with scalar part $Q_{6t}$ and vector part $\vec Q_6$,
 
 $$
-\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q)-\mathrm{Ad}_{\tilde Q_6}(\tilde Q)=\bigl(\tilde Q_6^{\natural}-\tilde Q_6\bigr)\tilde Q\tilde Q_6^{-1}=-2\,\vec Q_6\,\tilde Q\tilde Q_6^{-1},
+\boxed{\; \mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q)-\mathrm{Ad}_{\tilde Q_6}(\tilde Q)=\bigl(\tilde Q_6^{\natural}-\tilde Q_6\bigr)\tilde Q\tilde Q_6^{-1}=-2\,\vec Q_6\,\tilde Q\tilde Q_6^{-1} \;},
 $$
 
 moreover $\mathrm{Ad}^{\alpha}_{\tilde Q_6}=\mathrm{Ad}_{\tilde Q_6}$ when $\tilde Q_6$ is central, and $\mathrm{Ad}^{\alpha}_{\tilde Q_6}=-\mathrm{Ad}_{\tilde Q_6}$ when $\tilde Q_6$ lies in the vector subspace $V$. The second case is the insertion of the sign at its sharpest: for $\tilde Q_6\in V$ the whole operator is negated.
@@ -245,11 +245,11 @@ The unsigned operator fixes $e_t$ and $\vec e_x$ and negates the plane $\mathbb{
 **Remark (two places for the sign, and the norm reads it).** The corpus inserts the sign on the left factor in $\mathrm{Ad}^{\alpha}$, and it writes the twisted two-sided operator $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, with the sign on the right factor. The two are exchanged by the inverse and by the norm:
 
 $$
-\Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6},
+\boxed{\; \Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6},
 \qquad
 \mathrm{Ad}^{\alpha}_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,L_{\tilde Q_6^{-1}}R_{\tilde Q_6^{-1}},
 \qquad
-\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural},
+\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural} \;},
 $$
 
 verified on one hundred invertible elements. On the shell $\langle\tilde Q_6\rangle_{\natural}=\pm1$ the first line reads $\Theta_{\tilde Q_6}=\pm\mathrm{Ad}_{\tilde Q_6}$: the same operator is the inner automorphism or its negative according to the sign of the norm, which is the second reading of the word *signed*: the operator $\Theta_{\tilde Q_6}$ is the inner automorphism or its negative according to the sign of the norm, and it is the operator of the family of *Two-Sided Operators on the General Quaternionic Algebra*, whose old title carried that name before the title was changed to name the subcategory's algebra.

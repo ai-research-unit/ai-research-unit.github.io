@@ -13,7 +13,7 @@ The conventions are those of the category. $\Lambda_f$ is the completed $L$-func
 
 **Theorem (the explicit formula).** For a test function $h$ as above,
 $$
-\sum_{\rho}\widehat h(\rho)=\widehat h(1)+\widehat h(0)-\sum_{j}\widehat h(-\mu_j)+\frac{1}{2\pi}\int_{-\infty}^{\infty}\widehat h(r)\,\frac{\gamma_\infty'}{\gamma_\infty}\Bigl(\tfrac12+ir\Bigr)\,dr+\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}\bigl(g(\log n)+g(-\log n)\bigr),
+\boxed{\;\sum_{\rho}\widehat h(\rho)=\widehat h(1)+\widehat h(0)-\sum_{j}\widehat h(-\mu_j)+\frac{1}{2\pi}\int_{-\infty}^{\infty}\widehat h(r)\,\frac{\gamma_\infty'}{\gamma_\infty}\Bigl(\tfrac12+ir\Bigr)\,dr+\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}\bigl(g(\log n)+g(-\log n)\bigr)\;},
 $$
 where the sum is over the nontrivial zeros $\rho$ of $\Lambda_f$ with multiplicity, the archimedean term is the logarithmic derivative of the gamma factor, the function $g$ is the inverse Fourier transform of $\widehat h$, and $\Lambda$ is the von Mangoldt function; the sum over the zeros converges when $h$ is smooth and compactly supported in the appropriate sense.
 
@@ -29,7 +29,7 @@ so that the explicit formula reads $W(h)=\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}(
 
 **Theorem.** The Weil distribution is Hermitian,
 $$
-W(h^*)=\overline{W(h)} ,
+\boxed{\;W(h^*)=\overline{W(h)}\;} ,
 $$
 and it is a tempered distribution on the space of test functions.
 
@@ -43,7 +43,7 @@ and it is a tempered distribution on the space of test functions.
 
 **Theorem (the positivity criterion).** The following are equivalent.
 $$
-\text{the Riemann hypothesis for } L(f,\cdot),\qquad W(h*h^*)\ge0\ \text{ for every test function }h .
+\boxed{\;\text{the Riemann hypothesis for } L(f,\cdot),\qquad W(h*h^*)\ge0\ \text{ for every test function }h\;} .
 $$
 Moreover, $W(h*h^*)\ge0$ for all $h$ is equivalent to the positive definiteness of the Hermitian form $(h_1,h_2)\mapsto W(h_1*h_2^*)$ on the test space.
 

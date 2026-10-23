@@ -34,7 +34,7 @@ $$
 
 **Theorem.** The covariance is Hermitian,
 $$
-R(s,t)=\overline{R(t,s)},
+\boxed{\;R(s,t)=\overline{R(t,s)}\;},
 $$
 it satisfies the Cauchy–Schwarz inequality
 $$
@@ -48,7 +48,7 @@ and $R(t,t)=\varphi(|X_t-m_t|^2)=\operatorname{Var}(X_t)\ge0$, so the diagonal i
 
 **Theorem (positive definiteness).** For every finite set of indices $t_1,\dots,t_k$ and complex scalars $c_1,\dots,c_k$,
 $$
-\sum_{i,j=1}^k c_i\,\overline{c_j}\,R(t_i,t_j)=\varphi\Bigl(\Bigl|\sum_ic_i(X_{t_i}-m_{t_i})\Bigr|^2\Bigr)\ge0 ,
+\boxed{\;\sum_{i,j=1}^k c_i\,\overline{c_j}\,R(t_i,t_j)=\varphi\Bigl(\Bigl|\sum_ic_i(X_{t_i}-m_{t_i})\Bigr|^2\Bigr)\ge0\;} ,
 $$
 so $R$ is a **positive-definite** kernel, and the matrix $(R(t_i,t_j))$ is positive semi-definite Hermitian. The kernel is positive definite in the strict sense: the double sum vanishes exactly when $\sum_ic_i(X_{t_i}-m_{t_i})=0$ in $\mathcal{H}$, because the form of the category is positive definite, which is the faithfulness of the state established in the preceding article.
 
@@ -94,7 +94,7 @@ $$
 
 **Theorem (Bochner).** A continuous function $R:\mathbb R\to\mathbb{C}$ is positive definite if and only if it is the Fourier transform of a unique finite positive measure,
 $$
-R(t)=\int_{\mathbb R}\exp(it\lambda)\,d\mu(\lambda),
+\boxed{\;R(t)=\int_{\mathbb R}\exp(it\lambda)\,d\mu(\lambda)\;},
 $$
 and the measure is the **spectral measure** of the stationary process.
 

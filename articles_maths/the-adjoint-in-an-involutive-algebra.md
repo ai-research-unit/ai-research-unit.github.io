@@ -35,7 +35,7 @@ The twisted pairing is the plain pairing composed with the involution in the sec
 **Theorem.** Let $T \in E$ have adjoint $T^{*}$ for the plain pairing. Then $T$ has an adjoint for the twisted pairing, written $T^{*_\sigma}$, and
 
 $$
-T^{*_\sigma}=\sigma\,T^{*}\,\sigma .
+\boxed{\;T^{*_\sigma}=\sigma\,T^{*}\,\sigma\;} .
 $$
 
 The twisted adjoint is the conjugate of the plain adjoint by the involution of the elements, and the assignment $T\mapsto T^{*_\sigma}$ is an involution of $E$ of order two.
@@ -57,7 +57,7 @@ $$
 **Corollary (the involution of the elements on the operators).** The map $c_{\sigma}(T)=\sigma T\sigma$ is an involutive automorphism of $E$, and the two adjoint operations are exchanged by it,
 
 $$
-c_{\sigma}(T^{*})=T^{*_\sigma}, \qquad c_{\sigma}(T^{*_\sigma})=T^{*} .
+\boxed{\;c_{\sigma}(T^{*})=T^{*_\sigma}, \qquad c_{\sigma}(T^{*_\sigma})=T^{*}\;} .
 $$
 
 *Proof.* The first identity is the theorem read as an equation of maps; the second is the case of the first with $T$ replaced by $T^{*_\sigma}$ and order two used, $c_{\sigma}(T^{*_\sigma})=(T^{*_\sigma})^{*}=T^{*}$.
@@ -83,8 +83,8 @@ The adjoint $T^{*}$ of the preceding sections is the adjoint taken on the other 
 **Theorem.** For $a,b \in A$ the one-sided multiplications have adjoints
 
 $$
-L_a^{*}=R_a, \qquad R_b^{*}=L_b \qquad \text{(plain pairing)}, \qquad
-L_a^{*_\sigma}=L_{\sigma(a)}, \qquad R_b^{*_\sigma}=R_{\sigma(b)} \qquad \text{(twisted pairing)} .
+\boxed{\;L_a^{*}=R_a, \qquad R_b^{*}=L_b \qquad \text{(plain pairing)}, \qquad
+L_a^{*_\sigma}=L_{\sigma(a)}, \qquad R_b^{*_\sigma}=R_{\sigma(b)} \qquad \text{(twisted pairing)}\;} .
 $$
 
 The adjoint operation therefore **exchanges** the two sides for the plain pairing and **preserves** each side for the twisted one; and the twisting map is the one that turns the exchange into a preservation, in the sense $c_{\sigma}(L_a^{*})=c_{\sigma}(R_a)=L_{\sigma(a)}=L_a^{*_\sigma}$.

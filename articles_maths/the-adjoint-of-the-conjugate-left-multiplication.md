@@ -57,7 +57,7 @@ $$
 **Theorem (the adjoint of the conjugate left multiplication).** For every $a\in A$ the operator $L_{a}$ has the adjoint
 
 $$
-L_{a}^{\dagger}=S_{1,a},\qquad L_{a}^{\dagger}(y)=y^{*}a .
+\boxed{\;L_{a}^{\dagger}=S_{1,a},\qquad L_{a}^{\dagger}(y)=y^{*}a\;} .
 $$
 
 The adjoint is $\varsigma$-semilinear, it is a sandwich and not a one-sided multiplication, and it is a left multiplication $L_{a}$ again exactly when $a$ is central.
@@ -103,7 +103,7 @@ $$
 **Theorem (the two squares).** For every $a\in A$,
 
 $$
-L_{a}^{\dagger}L_{a}=R_{a^{*}a}, \qquad L_{a}L_{a}^{\dagger}=T_{aa^{*},1} .
+\boxed{\;L_{a}^{\dagger}L_{a}=R_{a^{*}a}, \qquad L_{a}L_{a}^{\dagger}=T_{aa^{*},1}\;} .
 $$
 
 Both squares are self-adjoint, and both are the identity when $a$ is unitary.
@@ -123,7 +123,7 @@ Both squares are self-adjoint, and both are the identity when $a$ is unitary.
 **Theorem (which left multiplications are self-adjoint).** For $a\in A$ the operator $L_{a}$ is self-adjoint if and only if $a$ is central,
 
 $$
-L_{a}^{\dagger}=L_{a}\quad\Longleftrightarrow\quad a\in Z(A) .
+\boxed{\;L_{a}^{\dagger}=L_{a}\quad\Longleftrightarrow\quad a\in Z(A)\;} .
 $$
 
 **Proof.** By the adjoint theorem $L_{a}^{\dagger}=S_{1,a}$, and $S_{1,a}=L_{a}$ means $y^{*}a=ay^{*}$ for every $y$. As $y$ runs over $A$ the elements $y^{*}$ run over $A$, so the condition is that $a$ commute with every element, that is $a$ central.

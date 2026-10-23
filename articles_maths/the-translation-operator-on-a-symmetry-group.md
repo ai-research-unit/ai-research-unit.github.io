@@ -22,7 +22,7 @@ The article has five sections: the translation operators and their invariance; t
 **Definition.** The **translation operator** by $a \in G$ acts on the functions on $G$ by
 
 $$
-(T_a f)(x) = f(a^{-1}x),
+\boxed{\;(T_a f)(x) = f(a^{-1}x)\;},
 $$
 
 and on the functions on a quotient $G/\Gamma$ by $(T_a f)(x\Gamma) = f(a^{-1}x\Gamma)$; it is the operator of left translation, and $a \mapsto T_a$ is the left regular representation of $G$ on the function space. The **right translation** $S_b f(x) = f(xb)$ is the corresponding operator of the right action.
@@ -38,7 +38,7 @@ and on the functions on a quotient $G/\Gamma$ by $(T_a f)(x\Gamma) = f(a^{-1}x\G
 **Proposition.** The operators commuting with all left translations are exactly the **right convolutions**: the operator $A$ is translation-invariant if and only if there is a distribution or measure $\mu$ with
 
 $$
-A f(x) = \int_G f(xy)\,d\mu(y) = (f * \mu)(x),
+\boxed{\;A f(x) = \int_G f(xy)\,d\mu(y) = (f * \mu)(x)\;},
 $$
 
 so that the algebra of translation-invariant operators is the convolution algebra of measures on $G$, *The Involution on the Measure Algebra* and *Convolution on a Group*. In particular every translation-invariant operator commutes with every right translation and the algebra is commutative exactly when $G$ is abelian.

@@ -20,7 +20,7 @@ and the **defect** of $r$ is $\delta(r)\alpha(r)$; the signed sandwich is $\Sigm
 **Theorem (the explicit form).** For every $r$, the signed left multiplication is adjointable with
 
 $$
-(\ell_r)^\dagger = \ell_{\delta(r)} , \qquad (\ell_r)^\dagger(x) = \delta(r)\,\alpha(x) ,
+\boxed{\;(\ell_r)^\dagger = \ell_{\delta(r)} , \qquad (\ell_r)^\dagger(x) = \delta(r)\,\alpha(x)\;} ,
 $$
 
 and the signed right multiplication satisfies $(\varrho_s)^\dagger = \varrho_{\delta(s)}$; hence the adjoint of a signed one-sided multiplication is the signed one-sided multiplication by the conjugate parameter.
@@ -42,7 +42,7 @@ so the adjoint of the two-sided operator is read from the one-sided and the righ
 **Theorem (self-adjoint, unitary, involutive).** For every $r$,
 
 $$
-\ell_r \text{ self-adjoint} \iff \delta(r) = r \ (\text{modulo the kernel}) , \qquad \ell_r \text{ unitary} \iff \delta(r)\,\alpha(r) = 1 ,
+\boxed{\;\ell_r \text{ self-adjoint} \iff \delta(r) = r \ (\text{modulo the kernel}) , \qquad \ell_r \text{ unitary} \iff \delta(r)\,\alpha(r) = 1\;} ,
 $$
 
 $$
@@ -56,7 +56,7 @@ The self-adjoint signed left multiplications are those with $r$ fixed by $\delta
 **Theorem (assembly of the two-sided operator).** Every signed sandwich is the composite of a signed left multiplication and a signed right multiplication,
 
 $$
-\Sigma^\alpha_{r,s} = \ell_r\,R_s = L_r\,\varrho_s ,
+\boxed{\;\Sigma^\alpha_{r,s} = \ell_r\,R_s = L_r\,\varrho_s\;} ,
 $$
 
 and its adjoint is $\Sigma^\alpha_{\delta(r),\delta(s)} = \ell_{\delta(r)}R_{\delta(s)}$, so the two-sided adjoint is recovered from the one-sided adjoints and the commutation of the left and right multiplications.

@@ -42,7 +42,7 @@ $$
 $$
 and in the idempotent basis $\{\Pi_+,\Pi_-\}$ it is
 $$
-\mathsf L_{\Pi}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}+Q_{\blacktriangledown}&0\\ 0&Q_{\blacktriangle}-Q_{\blacktriangledown}\end{pmatrix}=\operatorname{diag}(Q_{+},Q_{-}).
+\boxed{\; \mathsf L_{\Pi}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}+Q_{\blacktriangledown}&0\\ 0&Q_{\blacktriangle}-Q_{\blacktriangledown}\end{pmatrix}=\operatorname{diag}(Q_{+},Q_{-}) \;}.
 $$
 
 *Proof.* For the first, $L_{\breve Q}(1)=\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ has coordinates $(Q_{\blacktriangle},Q_{\blacktriangledown})$ and $L_{\breve Q}(j)=\breve Q j=Q_{\blacktriangle}j+Q_{\blacktriangledown}j^{2}=Q_{\blacktriangledown}+Q_{\blacktriangle}j$ has coordinates $(Q_{\blacktriangledown},Q_{\blacktriangle})$, so the two columns are $(Q_{\blacktriangle},Q_{\blacktriangledown})$ and $(Q_{\blacktriangledown},Q_{\blacktriangle})$. For the second, $L_{\breve Q}(\Pi_+)=\breve Q\Pi_+=Q_{+}\Pi_+$ and $L_{\breve Q}(\Pi_-)=\breve Q\Pi_-=Q_{-}\Pi_-$, so the operator is diagonal with entries $Q_{+}$ and $Q_{-}$ in the idempotent basis.
@@ -55,7 +55,7 @@ $$
 
 **Theorem.** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
-\operatorname{Tr}L_{\breve Q}=2Q_{\blacktriangle},\qquad \det L_{\breve Q}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}},\qquad \chi_{L_{\breve Q}}(\lambda)=\lambda^{2}-2Q_{\blacktriangle}\lambda+\langle \breve Q\rangle_{\mathrm{ts}}.
+\boxed{\; \operatorname{Tr}L_{\breve Q}=2Q_{\blacktriangle},\qquad \det L_{\breve Q}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}},\qquad \chi_{L_{\breve Q}}(\lambda)=\lambda^{2}-2Q_{\blacktriangle}\lambda+\langle \breve Q\rangle_{\mathrm{ts}} \;}.
 $$
 
 *Proof.* Read the matrix $\operatorname{diag}(Q_{+},Q_{-})$ in the idempotent basis: the trace is $Q_{+}+Q_{-}=2Q_{\blacktriangle}$, the determinant is $Q_{+}Q_{-}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, and the characteristic polynomial is $(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-(Q_{+}+Q_{-})\lambda+Q_{+}Q_{-}$.
@@ -70,7 +70,7 @@ $$
 
 **Theorem (the regular representation).** For all $\breve Q_{1},\breve Q_{2}$,
 $$
-L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2} \breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}},\qquad L_{1}=\mathrm{id},
+\boxed{\; L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2} \breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}},\qquad L_{1}=\mathrm{id} \;},
 $$
 and the map $L:\breve Q\mapsto L_{\breve Q}$ is an injective algebra homomorphism from $(\mathbb{B}_{\mathrm{r}},\cdot)$ into $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$.
 

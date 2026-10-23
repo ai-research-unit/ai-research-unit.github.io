@@ -28,7 +28,7 @@ $$
 
 **Theorem.** The graded adjoint exists and is unique when the graded form is nondegenerate; it is anti-linear in $a$; and the map $a\mapsto\rho_a^\dagger$ is an anti-representation of $\mathcal{A}$,
 $$
-(\rho_a^\dagger)^\dagger=\rho_a,\qquad \rho_a^\dagger\rho_b^\dagger=\rho_{a*b}^\dagger ,
+\boxed{\;(\rho_a^\dagger)^\dagger=\rho_a,\qquad \rho_a^\dagger\rho_b^\dagger=\rho_{a*b}^\dagger\;} ,
 $$
 so the graded adjoint action is the action of the transposed algebra.
 
@@ -38,7 +38,7 @@ so the graded adjoint action is the action of the transposed algebra.
 
 **Theorem (the cancellation of the Koszul sign).** On the regular module with the coefficient form,
 $$
-\rho_a^\dagger=\Theta_a\quad\text{for every }a\in\mathcal{A},
+\boxed{\;\rho_a^\dagger=\Theta_a\quad\text{for every }a\in\mathcal{A}\;},
 $$
 independently of the parity of $a$; that is, the Koszul sign of the definition cancels the grade involution of the graded action exactly, and the graded adjoint action is the plain transposed multiplication.
 
@@ -56,7 +56,7 @@ $$
 $$
 and
 $$
-\rho_a^\dagger=\varepsilon(a)\,\rho_{a^{\ddagger}}
+\boxed{\;\rho_a^\dagger=\varepsilon(a)\,\rho_{a^{\ddagger}}\;}
 $$
 with the super-transpose element $a^{\ddagger}$ holds only on the free graded modules and not on the regular module, where the multiplication by an element is a left multiplication and the adjoint is a transposed multiplication. The structures that the grading and the adjoint put on the module therefore decouple on the regular module.
 

@@ -26,7 +26,7 @@ and for a homogeneous operator $T$ of parity $|T|$ the transpose has the same pa
 **Corollary (the sign rule for the transpose).** For a homogeneous operator $T$ and a homogeneous form, the transpose is characterised by the graded symmetry
 
 $$
-B(Tv,w) = (-1)^{|T|\,m}\,B(v,T^\#w)
+\boxed{\;B(Tv,w) = (-1)^{|T|\,m}\,B(v,T^\#w)\;}
 $$
 
 with $m = 0$ for an even form and $m = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.
@@ -44,7 +44,7 @@ $$
 **Theorem (it is an action preserving the parity).** The adjoint action is a group action on $\operatorname{End}_k(M)$, it preserves the $\mathbb{Z}/2$-grading of the endomorphism module, and the grading involution conjugates the action of $g$ to the action of $\alpha(g)$:
 
 $$
-\varepsilon\,(g\cdot T)\,\varepsilon = \alpha(g)\cdot(\varepsilon\,T\,\varepsilon) , \qquad\text{equivalently}\qquad \varepsilon\,(g\cdot T)\,\varepsilon = (\alpha(g))\cdot T^{\varepsilon} ,
+\boxed{\;\varepsilon\,(g\cdot T)\,\varepsilon = \alpha(g)\cdot(\varepsilon\,T\,\varepsilon) , \qquad\text{equivalently}\qquad \varepsilon\,(g\cdot T)\,\varepsilon = (\alpha(g))\cdot T^{\varepsilon}\;} ,
 $$
 
 where $T^\varepsilon = \varepsilon T\varepsilon$ is the $\varepsilon$-conjugate of $T$.
@@ -66,7 +66,7 @@ so the grading involution intertwines the adjoint action of $g$ with the adjoint
 **Theorem (unitary actions transpose to inverse actions).** Suppose the action is unitary for the graded form, $\pi(g)^\# = \pi(g)^{-1}$ for every $g$. Then the adjoint action commutes with the transpose,
 
 $$
-(g\cdot T)^\# = g\cdot T^\# ,
+\boxed{\;(g\cdot T)^\# = g\cdot T^\#\;} ,
 $$
 
 and the adjoint action preserves the submodule of self-adjoint operators and the submodule of skew-adjoint operators. The parity of the form enters only in the sign rule for the transpose of a homogeneous operator recorded above, $B(Tv,w) = (-1)^{|T|m}B(v,T^\#w)$, and not in the commutation of the transpose with the adjoint action.

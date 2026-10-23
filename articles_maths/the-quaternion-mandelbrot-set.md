@@ -36,9 +36,7 @@ Equivalently, by the critical slice theorem below, it is determined by the compl
 
 **Proposition (the parameter's subalgebra).** Let $c \in \mathbb{H}$ and let $\mathbb{R}[c]=\operatorname{span}\{e_t,c\}$. Then $\mathbb{R}[c]$ is a subalgebra of $\mathbb{H}$; the whole critical orbit lies in $\mathbb{R}[c]$; and the map
 
-$$
-\varphi_c : \mathbb{R}[c] \to \mathbb{C}, \qquad \varphi_c(e_t)=1, \quad \varphi_c(c)=\kappa(c)=c_0+i|\vec c|,
-$$
+$$ \boxed{\; \varphi_c : \mathbb{R}[c] \to \mathbb{C}, \qquad \varphi_c(e_t)=1, \quad \varphi_c(c)=\kappa(c)=c_0+i|\vec c| \;} ,$$
 
 is an isomorphism of real algebras.
 
@@ -50,17 +48,13 @@ is an isomorphism of real algebras.
 
 **Theorem (critical slice).** For every $c \in \mathbb{H}$ the critical orbit of $f_c$ is bounded in $\mathbb{H}$ if and only if the orbit of $0$ under the complex quadratic map $z \mapsto z^2+\kappa(c)$ is bounded. Equivalently, $\varphi_c$ conjugates the restriction of $f_c$ to $\mathbb{R}[c]$ to $z \mapsto z^2+\kappa(c)$, and
 
-$$
-\mathcal{M}_{\mathbb{H}} = \{c \in \mathbb{H} : \kappa(c) \in \mathcal{M}_{\mathbb{C}}\}.
-$$
+$$ \boxed{\; \mathcal{M}_{\mathbb{H}} = \{c \in \mathbb{H} : \kappa(c) \in \mathcal{M}_{\mathbb{C}}\} \;} .$$
 
 *Proof.* The critical orbit lies in $\mathbb{R}[c]$. On that subalgebra the map $f_c$ is the restriction of a polynomial with coefficients in $\mathbb{R}[c]$, so $\varphi_c \circ f_c = (z \mapsto z^2+\kappa(c)) \circ \varphi_c$ on $\mathbb{R}[c]$: on the generators, $\varphi_c(f_c(0))=\varphi_c(c)=\kappa(c)$ and $\varphi_c(f_c(c))=\varphi_c(c^2+c)=\kappa(c)^2+\kappa(c)$. Since $\varphi_c$ is a linear isomorphism between finite-dimensional spaces, it and its inverse are bounded, so a sequence in $\mathbb{R}[c]$ is bounded if and only if its image is bounded. Hence the critical orbit is bounded in $\mathbb{H}$ exactly when the complex orbit of $0$ is bounded, which is the definition of $\kappa(c)\in\mathcal{M}_{\mathbb{C}}$.
 
 **Corollary (the slice theorem).** Let $\nu \in S^2$ and let $\mathbb{C}_\nu=\operatorname{span}\{e_t,\nu\}$ be the complex plane of the axis $\nu$. Under the isomorphism $\mathbb{C}_\nu \to \mathbb{C}$ that sends $\nu$ to $i$,
 
-$$
-\mathcal{M}_{\mathbb{H}} \cap \mathbb{C}_\nu = \mathcal{M}_{\mathbb{C}}.
-$$
+$$ \boxed{\; \mathcal{M}_{\mathbb{H}} \cap \mathbb{C}_\nu = \mathcal{M}_{\mathbb{C}} \;} .$$
 
 In particular every complex plane through the origin cuts the quaternion Mandelbrot set in a congruent copy of the complex Mandelbrot set.
 

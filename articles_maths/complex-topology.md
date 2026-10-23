@@ -29,8 +29,7 @@ is continuous with $H(0,Q) = Q$ and $H(1,Q) = 0$, so the identity is homotopic t
 
 Thus every map into $\mathbb{C}$ is null-homotopic, and the same homotopy contracts each of the two distinguished subspaces, since both are closed under scalar multiplication:
 
-$$
-\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}, \qquad i\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}.
+$$ \boxed{\;\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}, \qquad i\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}\;}.
 $$
 
 The two subspaces carry no topology beyond that of the line; the content on the norm of *Complexoid Subspaces* lies in the quadratic form restricted to them, not in their topology.
@@ -75,8 +74,7 @@ $$
 
 is a continuous retraction, and $\mathbb{C}^\times$ deformation retracts onto $S^1$. Consequently
 
-$$
-\mathbb{C}^\times \simeq S^1, \qquad \pi_1(\mathbb{C}^\times) \cong \mathbb{Z}, \qquad \pi_n(\mathbb{C}^\times) = 0 \ \ (n \ge 2).
+$$ \boxed{\;\mathbb{C}^\times \simeq S^1, \qquad \pi_1(\mathbb{C}^\times) \cong \mathbb{Z}, \qquad \pi_n(\mathbb{C}^\times) = 0 \ \ (n \ge 2)\;}.
 $$
 
 **Proof.** The polar splitting of *Complex Norm and Invertibility* gives a homeomorphism
@@ -123,8 +121,7 @@ is a surjective local homeomorphism that is not injective: $\Phi(r, \theta) = \P
 
 **The one-point compactification.** If a single point $\infty$ is adjoined to $\mathbb{C}$, the resulting compact space is a two-sphere,
 
-$$
-\mathbb{C} \cup \{\infty\} \cong S^2,
+$$ \boxed{\;\mathbb{C} \cup \{\infty\} \cong S^2\;},
 $$
 
 the **Riemann sphere**, and $\mathbb{C}^\times$ becomes the sphere with two points removed, $\mathbb{C}^\times \cong S^2 \setminus \{0,\infty\}$, a cylinder. The point $\infty$ is the topological completion of the unbounded direction of the plane; it is a single point, not the many-pointed boundary that the indefinite form would produce, and the companion article *Complex Analysis* develops the function theory on it. The sphere is the best compact model of $\mathbb{C}$; there is no compact model underlying the group structure of $\mathbb{C}^\times$, which is non-compact and only has the circle as its compact core.

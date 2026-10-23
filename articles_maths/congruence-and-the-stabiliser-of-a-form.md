@@ -25,7 +25,7 @@ The matrix equations are those of *Isometries and Unitary Operators of a Form*; 
 **Proposition (the Gram matrix).** In a basis with the Gram matrix $G$ and the multiplication reading of the operators,
 
 $$
-G_{C} = C^{\dagger}GC, \qquad \det G_{C} = \varsigma(\det C)\det(G)\det C .
+\boxed{\;G_{C} = C^{\dagger}GC, \qquad \det G_{C} = \varsigma(\det C)\det(G)\det C\;} .
 $$
 
 **Proof.** $(G_{C})_{ij} = h_{C}(e_{i},e_{j}) = h(Ce_{i},Ce_{j})$ and the coordinates of $Ce_{i}$ are the $i$-th column of $C$, so $G_{C} = C^{\dagger}GC$; the determinant formula is the multiplicativity of the determinant and the semilinearity of the dagger.
@@ -37,7 +37,7 @@ $$
 **Proposition.** The stabiliser of $h$ is the unitary group of the form:
 
 $$
-\operatorname{Stab}(h) = \{C \text{ invertible} : h(Cx,Cy) = h(x,y) \ \text{for all } x,y\} = \mathrm{U}(A,h) .
+\boxed{\;\operatorname{Stab}(h) = \{C \text{ invertible} : h(Cx,Cy) = h(x,y) \ \text{for all } x,y\} = \mathrm{U}(A,h)\;} .
 $$
 
 **Proof.** The two defining conditions are the same equation; the elements of the left-hand set are the invertible isometries of $h$, which is the unitary group by *Isometries and the Unitary Group of a Form*. In the multiplication reading the condition is $C^{\dagger}GC = G$ of *Isometries and Unitary Operators of a Form*, which is the same equation in coordinates.
@@ -71,7 +71,7 @@ $$
 **Proposition.** Let $T$ be an operator and $C$ invertible; then $C^{-1}TC$ is an operator on $A$ and
 
 $$
-\bigl(C^{-1}TC\bigr)^{*} = C^{-1}T^{*}C
+\boxed{\;\bigl(C^{-1}TC\bigr)^{*} = C^{-1}T^{*}C\;}
 $$
 
 for the adjoint with respect to $h$ on the left and with respect to $h_{C}$ on the right; consequently the congruence transports the self-adjoint, the skew-adjoint and the unitary operators of the form to the corresponding operators of the congruent form.

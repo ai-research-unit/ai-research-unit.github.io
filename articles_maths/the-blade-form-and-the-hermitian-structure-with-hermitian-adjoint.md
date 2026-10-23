@@ -34,7 +34,7 @@ the diagonal form of the blade basis twisted by the signature of the quadratic f
 **Proposition.** The blades are orthogonal for the blade form and
 
 $$
-\langle e_I,e_J\rangle = \Bigl(\prod_{i\in I} e_i^{2}\Bigr)\,\delta_{IJ} .
+\boxed{\;\langle e_I,e_J\rangle = \Bigl(\prod_{i\in I} e_i^{2}\Bigr)\,\delta_{IJ}\;} .
 $$
 
 **Proof.** For a blade of degree $k$, reversion acts by $e_I^{r} = (-1)^{k(k-1)/2}e_I$. Then
@@ -52,7 +52,7 @@ a scalar, so $\langle e_I,e_I\rangle = \prod_{i\in I}e_i^{2}$; and for $I \neq J
 **Proposition.** Let $A = \mathbb{R}$. The blade form is positive definite exactly when the quadratic form is positive definite. Then the blades form an orthonormal basis of $\mathrm{Cl}(V,\mathfrak{Q})$, the grade projections are orthogonal, and
 
 $$
-\langle x,x\rangle = \sum_I a_I^{2} > 0 \quad \text{for } x \neq 0 .
+\boxed{\;\langle x,x\rangle = \sum_I a_I^{2} > 0 \quad \text{for } x \neq 0\;} .
 $$
 
 **Proof.** In an orthonormal basis of a positive definite form every $e_i^{2} = 1$, so $\prod_{i\in I}e_i^{2} = 1$ and the diagonal of the preceding proposition is the identity.
@@ -100,7 +100,7 @@ So the form of the dagger is the blade form with the parity sign inserted; its G
 **Theorem.** Let $L_x$ and $R_x$ denote left and right multiplication by $x$. With respect to the blade form,
 
 $$
-\langle L_xy,z\rangle = \langle y, L_{x^{r}}z\rangle, \qquad \langle R_xy,z\rangle = \langle y, R_{x^{r}}z\rangle,
+\boxed{\;\langle L_xy,z\rangle = \langle y, L_{x^{r}}z\rangle, \qquad \langle R_xy,z\rangle = \langle y, R_{x^{r}}z\rangle\;},
 $$
 
 so the adjoint of left or right multiplication by $x$ is multiplication by $x^{r}$; and with respect to the form of the dagger,

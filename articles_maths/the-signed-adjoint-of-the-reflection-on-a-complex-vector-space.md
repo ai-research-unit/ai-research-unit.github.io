@@ -5,7 +5,7 @@
 
 A reflection of a Hermitian space $V$ is the unitary self-adjoint involution
 $$
-\rho_u(v) = v - 2\,\frac{h(v,u)}{h(u,u)}\,u ,
+\boxed{\;\rho_u(v) = v - 2\,\frac{h(v,u)}{h(u,u)}\,u\;} ,
 $$
 the reflection in the hyperplane orthogonal to the non-isotropic vector $u$; it satisfies $\rho_u^2 = \mathrm{id}$ and $\rho_u^{\dagger} = \rho_u$, so it is a **self-adjoint involution**, and it defines the grade involution $\alpha_r(X) = rXr$ of the endomorphism algebra. The reflection is the simplest signed operator: read as an operator on $E = \operatorname{End}_{\mathbb C}(V)$, its left and right multiplications and its inner signed sandwich are all self-adjoint for the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$,
 $$
@@ -21,7 +21,7 @@ Throughout, $V$ is a finite-dimensional complex vector space with a Hermitian fo
 
 **Proposition (the reflection is self-adjoint and unitary).** For $h(u,u) \neq 0$ the formula $\rho_u(v) = v - 2h(v,u)h(u,u)^{-1}u$ defines a complex-linear map with
 $$
-\rho_u^{2} = \mathrm{id}, \qquad \rho_u^{\dagger} = \rho_u, \qquad h(\rho_uv, \rho_uw) = h(v,w),
+\boxed{\;\rho_u^{2} = \mathrm{id}, \qquad \rho_u^{\dagger} = \rho_u, \qquad h(\rho_uv, \rho_uw) = h(v,w)\;},
 $$
 so the reflection is a unitary self-adjoint involution; it fixes the hyperplane $u^{\perp}$ and acts as $-\mathrm{id}$ on the line $\mathbb{C}u$.
 
@@ -39,7 +39,7 @@ so the reflection is a unitary self-adjoint involution; it fixes the hyperplane 
 
 **Proposition (the signed inner sandwich of the reflection).** With $\alpha_r(X) = rXr$ one has
 $$
-\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}, \qquad \bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{*} = \mathrm{id}, \qquad \Theta^{\alpha_r}_{r,r} = \mathrm{Ad}_r, \qquad \bigl(\Theta^{\alpha_r}_{r,r}\bigr)^{*} = \mathrm{Ad}_r ,
+\boxed{\;\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}, \qquad \bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{*} = \mathrm{id}, \qquad \Theta^{\alpha_r}_{r,r} = \mathrm{Ad}_r, \qquad \bigl(\Theta^{\alpha_r}_{r,r}\bigr)^{*} = \mathrm{Ad}_r\;} ,
 $$
 so every signed operator of the reflection is self-adjoint, and the reflection is the fixed case of the signed adjoint criterion $a = \alpha_r(a^{\dagger})$.
 

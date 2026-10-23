@@ -81,7 +81,7 @@ with $\operatorname{cor} \circ \operatorname{res} = [G:H]$, the multiplication b
 **Theorem (long exact sequence).** Let $0 \to A \to B \to C \to 0$ be an exact sequence of abelian $G$-groups. Then there is a long exact sequence
 
 $$
-0 \to A^G \to B^G \to C^G \xrightarrow{\delta} H^1(G,A) \to H^1(G,B) \to H^1(G,C) \xrightarrow{\delta} H^2(G,A) \to \cdots
+\boxed{\;0 \to A^G \to B^G \to C^G \xrightarrow{\delta} H^1(G,A) \to H^1(G,B) \to H^1(G,C) \xrightarrow{\delta} H^2(G,A) \to \cdots\;}
 $$
 
 which is natural in the coefficient sequence.
@@ -119,7 +119,7 @@ for every $n \geq 0$. In particular, if $A$ is induced from the trivial subgroup
 **Theorem (Hilbert's theorem 90, multiplicative form).** Let $L/K$ be a finite Galois extension with group $G$. Then
 
 $$
-H^1(L/K, L^\times) = 0 .
+\boxed{\;H^1(L/K, L^\times) = 0\;} .
 $$
 
 Equivalently, if $x \in L^\times$ satisfies $\prod_{g \in G} g(x) = \operatorname{N}_{L/K}(x) = 1$, then there is $y \in L^\times$ with $x = y / g_0(y)$ for a generator $g_0$ when $G$ is cyclic; more generally an element of $H^1$ vanishes if and only if it is a principal crossed homomorphism.
@@ -171,7 +171,7 @@ For $L = \mathbb{Q}(i)/\mathbb{Q}$ with $\sigma(i) = -i$, the element $i$ has no
 **Theorem.** Let $\operatorname{char} K \nmid n$ and let $\mu_n = \mu_n(\overline K)$ be the group of $n$-th roots of unity in $\overline K$, with the natural action of $G_K$. Then
 
 $$
-H^1(K, \mu_n) \cong K^\times / (K^\times)^n,
+\boxed{\;H^1(K, \mu_n) \cong K^\times / (K^\times)^n\;},
 $$
 
 the isomorphism being the connecting homomorphism of the exact sequence of coefficient groups.

@@ -39,7 +39,7 @@ $$
 **Proposition (the adjoint is an involution of the operator algebra).** If $\beta$ is non-degenerate then $T^{\dagger}$ exists for every $T$ and is unique; the assignment $T \mapsto T^{\dagger}$ is additive, of order two, and reverses composition,
 
 $$
-(S T)^{\dagger} = T^{\dagger} S^{\dagger}, \qquad (T^{\dagger})^{\dagger} = T, \qquad (\lambda T)^{\dagger} = \sigma(\lambda)\, T^{\dagger} ,
+\boxed{\;(S T)^{\dagger} = T^{\dagger} S^{\dagger}, \qquad (T^{\dagger})^{\dagger} = T, \qquad (\lambda T)^{\dagger} = \sigma(\lambda)\, T^{\dagger}\;} ,
 $$
 
 so it is the adjoint involution of *Involutions of the Endomorphism Ring* carried to the operator algebra, $\sigma$-semilinear when $\sigma$ is not the identity.
@@ -63,7 +63,7 @@ $$
 **Theorem.** With respect to the trace pairing $\beta$, the left and the right regular representations are ${}^{*}$-representations of $A$ on the regular module:
 
 $$
-(L_a)^{\dagger} = L_{a^{*}}, \qquad (R_b)^{\dagger} = R_{b^{*}} .
+\boxed{\;(L_a)^{\dagger} = L_{a^{*}}, \qquad (R_b)^{\dagger} = R_{b^{*}}\;} .
 $$
 
 Equivalently, $L : A \to \operatorname{End}_F(A)$ is a ${}^{*}$-homomorphism from $A$ with its involution to the operator algebra with its adjoint, and so is $R$ read through the opposite ring.
@@ -85,7 +85,7 @@ Equivalently, $L : A \to \operatorname{End}_F(A)$ is a ${}^{*}$-homomorphism fro
 **Proposition.** For the involution $\sigma$ and an element $a \in A$, the left regular operator $L_a$ satisfies
 
 $$
-L_a^{\dagger} = L_{a} \iff a = a^{*}, \qquad L_aL_a^{\dagger} = L_a^{\dagger}L_a \iff aa^{*} = a^{*}a, \qquad L_a^{\dagger}L_a = \mathrm{id} \iff a^{*}a = 1 ,
+\boxed{\;L_a^{\dagger} = L_{a} \iff a = a^{*}, \qquad L_aL_a^{\dagger} = L_a^{\dagger}L_a \iff aa^{*} = a^{*}a, \qquad L_a^{\dagger}L_a = \mathrm{id} \iff a^{*}a = 1\;} ,
 $$
 
 and the same three statements hold for $R_a$. Hence the self-adjoint elements of $A$ become self-adjoint operators, the normal elements become normal operators, and the unitary elements become unitary operators, the last with the one-sided condition made two-sided by invertibility.

@@ -23,7 +23,7 @@ $$
 and on the coordinates
 
 $$
-\boxed{\;\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2\;}.
+\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2 , \qquad \langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2.
 $$
 
 The plain norm is **indefinite**, of both signs, and the quaternion norm is **positive definite**, zero only at the origin. Read on the products, the two squares are $\tilde q\tilde q=\langle\tilde q\rangle e_t+2q_t\vec q$, a general element of $\mathbb{H}$ whose scalar coefficient is the plain norm, and $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$, a central element whose coefficient is the quaternion norm.

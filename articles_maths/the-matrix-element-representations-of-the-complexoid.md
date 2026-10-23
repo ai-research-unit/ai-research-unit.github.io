@@ -19,7 +19,7 @@ $$
 In the basis $1, i$ its matrix, acting on the column of the real coordinates of $Q_2$, is the **Cayley matrix**
 
 $$
-\boxed{\;\mathsf{M}_2(Q_1) = \begin{pmatrix} q_1 & -q'_1 \\ q'_1 & q_1 \end{pmatrix} = q_1I + q'_1J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I\;}.
+\mathsf{M}_2(Q_1) = \begin{pmatrix} q_1 & -q'_1 \\ q'_1 & q_1 \end{pmatrix} = q_1I + q'_1J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I.
 $$
 
 **Proposition.** $\mathsf{M}_2(Q_1)\mathsf{M}_2(Q_2) = \mathsf{M}_2(Q_1Q_2)$ for all $Q_1, Q_2$, and $\mathsf{M}_2$ is faithful.
@@ -85,7 +85,7 @@ The same matrix is the image of the scalar matrix $Q_1 I_2 \in M_2(\mathbb{C})$ 
 **Proposition.** $\mathsf{M}_4(Q_1)\mathsf{M}_4(Q_2) = \mathsf{M}_4(Q_1Q_2)$, the map is faithful, and
 
 $$
-\det \mathsf{M}_4(Q_1) = \bigl(q_1^2 + q'^2_1\bigr)^2 = \langle Q_1\rangle_{*}^2, \qquad \operatorname{tr}\mathsf{M}_4(Q_1) = 4q_1 = 2 \operatorname{tr}\mathsf{M}_2(Q_1) .
+\boxed{\; \det \mathsf{M}_4(Q_1) = \bigl(q_1^2 + q'^2_1\bigr)^2 = \langle Q_1\rangle_{*}^2, \qquad \operatorname{tr}\mathsf{M}_4(Q_1) = 4q_1 = 2 \operatorname{tr}\mathsf{M}_2(Q_1) \;}.
 $$
 
 **Proof.** Multiplication is block by block and $\mathsf{M}_2(Q_1)\mathsf{M}_2(Q_2) = \mathsf{M}_2(Q_1Q_2)$ on each block; the determinant of a block-diagonal matrix is the product of the block determinants, and the trace is their sum.
