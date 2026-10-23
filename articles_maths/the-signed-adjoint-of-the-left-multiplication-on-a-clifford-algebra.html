@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -76,7 +79,6 @@ $$</p>
 \bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)} ,
 $$</p>
 <p>the parameter replaced by its grade-twisted Clifford conjugate; the involution of parameters is therefore $a\mapsto\alpha(\hat a)$, the self-adjoint members are those with $\alpha(\hat a)=a$, and the isometric members satisfy the same condition $\hat aa=1$ as for the ordinary left multiplication — the signed and the ordinary left multiplication are isometric simultaneously. For the <strong>twisted form</strong> the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by the Clifford conjugation alone.</p>
-<p><strong>The boundaries.</strong> The signed left multiplication, its composition law and the disambiguation of the two twists are <em>The Signed Left Multiplication on a Clifford Algebra</em>; the ordinary adjoints $L_a^*=L_{\hat a}$ and the Clifford conjugation $\hat x=\alpha(x^{r})$ (with $x^{r}$ the reversion) are <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>; the twisted form and the identity $(A^{*\alpha})=\alpha A^*\alpha$ are the latter; the signed sandwich, of which $\mathrm{L}^{\alpha}_a$ is the left factor, is <em>The Signed Sandwich on a Clifford Algebra</em> and <em>The Signed Adjoint Sandwich on a Clifford Algebra</em>. The parameter-twisted family $\Lambda^{\alpha}_x(y)=\alpha(x)y$ of <em>The Graded Multiplication Operators</em> is a different operator and is not treated. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
 <h2 id="the-adjoint-and-its-involution">The Adjoint and Its Involution</h2>
 <p><strong>Theorem.</strong> For the standard form the adjoint of the signed left multiplication is the signed left multiplication by the twisted conjugate,</p>
 <p>$$

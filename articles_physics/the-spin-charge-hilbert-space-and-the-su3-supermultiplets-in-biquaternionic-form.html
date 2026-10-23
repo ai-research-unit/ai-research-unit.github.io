@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@
 $$</p>
 <p>and a state vector of this space is a list of the representation labelling the particle in each factor. On this space the internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act by a central extension, and the supermultiplets of the eightfold way are the orbits.</p>
 <p>The article is organised as follows. A first section recalls the abstract Hilbert space and its convergence condition. A second builds the spin multiplets and a third the charge multiplets. A fourth assembles the spin–charge space and reads a state vector. A fifth records the superselection rules, and a sixth the ray representation and the central extension that carries the internal symmetry. A closing section separates what the framework hosts from what it transcribes.</p>
-<p><strong>Conventions.</strong> The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l,\bar l\in\frac12\mathbb{Z}_{\ge0}$ and spin $s=|l-\bar l|$. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$, its Clifford form the corpus's <em>Clifford Algebra Representation</em>. The construction and the particle assignments are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§2.3, 3); the mass formula used to place the charge multiplets is the subject of the companion <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>.</p>
 <ul>
 <li>Companion article <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>, for the mass formula that fixes the spin-space degrees on the spin lines.</li>
 <li>Companion article <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em>, for the $\mathrm{SU}(3)$ representation theory and the mass splitting within a supermultiplet.</li>
@@ -129,7 +131,7 @@ $$</p>
 <h2 id="the-spincharge-space">The Spin–Charge Space</h2>
 <p>The spin and charge multiplets combine. The <strong>spin–charge Hilbert space</strong> is</p>
 <p>$$
-\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty,
+\boxed{\;\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty\;},
 $$</p>
 <p>and a state vector of it is written</p>
 <p>$$
@@ -145,7 +147,7 @@ $$</p>
 <h3 id="the-ray-representation">The Ray Representation</h3>
 <p>Because only rays are physical, the multiplication law of symmetry operators is a <strong>ray (projective) representation</strong>,</p>
 <p>$$
-T_{gh} = \omega(g,h)\,T_g\,T_h, \qquad \omega(g,h)\in \mathrm{U}(1),
+\boxed{\;T_{gh} = \omega(g,h)\,T_g\,T_h, \qquad \omega(g,h)\in \mathrm{U}(1)\;},
 $$</p>
 <p>and when $\omega\ne1$ the ordinary theory of group representations does not apply. The remedy is the <strong>central extension</strong>: the group $G$ is enlarged to $E$ whose ordinary representations reproduce all the ray representations of $G$, and a symmetry group of the physical system is represented by the unitary or antiunitary maps of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ that lift the ray representation. The internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act in this way, and the supermultiplet structure of the eightfold way is the orbit structure of their action.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>

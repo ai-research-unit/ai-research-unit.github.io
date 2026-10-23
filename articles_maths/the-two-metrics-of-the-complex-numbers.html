@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>The complex space carries two distinguished forms (<em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>), and each of them induces a distance-like function on the one underlying plane. The <strong>Euclidean metric</strong> comes from the definite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, and the <strong>split metric</strong> from the realified bilinear form $\langle\cdot,\cdot\rangle$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.</p>
 <p>The word <strong>metric</strong> is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the split one is an indefinite quadratic function and is named a metric by the same convention, and the difference is stated where it occurs.</p>
 <p>The article does not define the two forms, which are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The modulus $\sqrt{\langle Q_1\rangle_{*}}=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are <em>Complex Norm and Invertibility</em>. The topology is <em>Complex Topology</em>; the reflections and the group of maps preserving the definite form are <em>Rotations and Reflections in the Complex Plane</em>, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of <em>The Realification and the Effect of the Change of Scalars</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$ with real $q_1,q'_1,q_2,q'_2$, and conjugation is $\bar Q_1=q_1-iq'_1$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (<em>Complex Algebra</em>, <em>Complexoid Subspaces</em>, <em>Conventions in Mathematics</em>). The four general forms are written with brackets — $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ the two bilinear, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ the two sesquilinear; on $\mathbb{C}$ the two bilinear forms coincide and the two sesquilinear forms coincide, and the two forms read here are the plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ (<em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>). Elements are therefore written $Q_1$ and $Q_2$ and never $B$; the worked second element of the category, $1-2i$, is written $Q_2$ here.</p>
 <h2 id="the-two-forms-and-their-realifications">The Two Forms and Their Realifications</h2>
 <p>The two forms of the complex space are</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -91,10 +94,6 @@ Plain Algebra</em>, <em>Square Roots of One and the Idempotents in the Algebraic
 <em>Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, all below this article
 in this category. The law vocabulary is <em>Definitions for the Study of
 the Algebraic Structures</em> and the law table <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; a generic element is $\tilde q=q_te_t+\vec q$, the centre is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
-The laws are those of <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <h3 id="the-two-properties">The Two Properties</h3>
 <p><strong>Theorem (the isolating pair).</strong> The block is <strong>alternating</strong>,</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@ $$</p>
 <p>and this operator is the subject of the article. It is the biquaternion instance of <em>The Hermitian Sandwich on a Krein Space</em>, and the indefinite counterpart of the dagger sandwich $\Theta_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1\tilde Q_2\tilde Q_1^{*}$ of <em>The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
 <p>The two sandwiches must not be confused, and the algebra makes the difference visible in coordinates. With the definite adjoint the sandwich is always an operator of the algebra's own family $\{\Theta_{\tilde Q_1}\}$ and the operator is quadratic in the parameter; with the indefinite adjoint the sandwich of a $J$-unitary parameter is an <strong>inner automorphism of the operator algebra</strong>, and the parameter families that are $J$-unitary are exactly the ones computed in <em>The Krein Isometry Group and Its J-Contractions</em>. The article determines the sandwich laws, the preservation of the indefinite form, of $J$-self-adjointness and of $J$-positivity, the transport of the kernel and the image, the parameters coming from the algebra, and the contrast with the definite case.</p>
 <p>The forms and the algebra are <em>The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$</em>; the definite form and the dagger sandwich are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> and <em>Two-Sided Operators on the General Plain Sesqualgebra</em>; the indefinite form, its symmetry and its adjoint are <em>The Krein Gram Matrix and the Restrictions of the Form</em>, <em>The Fundamental Symmetry of the Biquaternion Algebra</em> and <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>; the positive cone of the indefinite order is <em>Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</em>; the group of $J$-unitary parameters is <em>The Krein Isometry Group and Its J-Contractions</em>; and the general operator is <em>The Hermitian Sandwich on a Krein Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is read in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, so that $\tilde Q_1 = \sum_\mu Q_{1,\mu} e_\mu$ is a vector of coefficients; the definite form is $(\tilde Q_1,\tilde W) = \sum_\mu\overline{Q_{1,\mu}}W_\mu$ and the general quaternionic sesquilinear form is $\langle\tilde W,\tilde Q_1\rangle_{\natural*} = \sum_\mu\varepsilon_\mu\overline{Q_{1,\mu}}W_\mu$ with $\varepsilon = (1,-1,-1,-1)$. The fundamental symmetry is $J={}^{\natural}$, the operator $\tilde Q_1\mapsto \tilde Q_1^{\natural}$ of matrix $E = \mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and</p>
 <p>$$
 \langle\tilde W,\tilde Q_1\rangle_{\natural*} = (J\tilde Q_1,\tilde W) , \qquad J^{2} = \mathrm{id}, \qquad E^{2} = \mathrm{I}_4 .
 $$</p>

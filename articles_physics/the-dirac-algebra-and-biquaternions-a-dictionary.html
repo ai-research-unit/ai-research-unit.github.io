@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -175,13 +178,13 @@ $$</p>
 $$</p>
 <p><em>The map is multiplicative.</em> Computing all $8\times 8$ products of the real basis $\{e_t,\vec e_x,\vec e_y,\vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ confirms</p>
 <p>$$
-\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)
+\boxed{\;\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)\;}
 $$</p>
 <p>for every basis pair. The check is exhaustive on the basis, hence holds on all of $\mathbb{B}$.</p>
 <p><em>The map is injective, and its image is exactly the even part.</em> The eight matrices $\mathsf{M}_4(e_t),\dots,\mathsf{M}_4(i\vec e_z)$ are linearly independent over $\mathbb{R}$ — the real span of the eight images has dimension $8$ — and each is a product of an even number of generators, hence lies in the even subalgebra $\mathrm{Cl}_{1,3}^+$. The even subalgebra also has real dimension $8$, so the image is all of it and $\mathsf{M}_4$ is a bijection.</p>
 <p>This establishes</p>
 <p>$$
-\mathbb{B} \;\cong\; \mathrm{Cl}_{1,3}^{+}(\mathbb{R}), \qquad \dim_\mathbb{R}\mathbb{B} = 8 = \tfrac{1}{2}\dim_\mathbb{R}\mathrm{Cl}_{1,3} .
+\boxed{\;\mathbb{B} \;\cong\; \mathrm{Cl}_{1,3}^{+}(\mathbb{R}), \qquad \dim_\mathbb{R}\mathbb{B} = 8 = \tfrac{1}{2}\dim_\mathbb{R}\mathrm{Cl}_{1,3}\;}.
 $$</p>
 <p>The isomorphism is not unique: any assignment that preserves the relations differs from this one by an automorphism of $\mathbb{B}$, and the different choices are related by rotations of the spatial frame. The choice above is the corpus's, and it fixes the sign pattern derived below.</p>
 <h2 id="the-dictionary-of-basis-elements">The Dictionary of Basis Elements</h2>
@@ -457,7 +460,7 @@ $$</p>
 $$</p>
 <p>where $i_{\mathrm{Cl}}$ is the scalar imaginary of the <strong>complexified</strong> Clifford algebra, not the biquaternion imaginary. The two are different objects: the biquaternion imaginary $i$ has image $-\omega$ under $\mathsf{M}_4$, so in the dictionary</p>
 <p>$$
-\gamma_5 \;=\; -i_{\mathrm{Cl}}\,\mathsf{M}_4(i) \;=\; \Phi_{\mathbb{C}}\!\left(-i_{\mathrm{Cl}}\, i\right),
+\boxed{\;\gamma_5 \;=\; -i_{\mathrm{Cl}}\,\mathsf{M}_4(i) \;=\; \Phi_{\mathbb{C}}\!\left(-i_{\mathrm{Cl}}\, i\right)\;},
 $$</p>
 <p>where $\Phi_{\mathbb{C}}$ is the $\mathbb{C}$-linear extension of $\mathsf{M}_4$ to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$. In words: <strong>the chirality operator is the product of the two commuting square roots of $-1$</strong>, the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra and the biquaternion imaginary $i$ (whose Clifford image is minus the pseudoscalar). This is the precise sense in which $\gamma_5$ is <em>not</em> an element of $\mathbb{B}$: it needs both square roots, and their product is a new central element of the complexified algebra.</p>
 <p>The defining properties are verified directly:</p>

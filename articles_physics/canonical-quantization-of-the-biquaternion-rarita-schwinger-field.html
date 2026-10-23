@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,9 +73,9 @@
 <p>The Rarita–Schwinger field is the field of spin $\tfrac32$: a vector-spinor $\psi_\mu$, carrying one Lorentz vector index and one Dirac spinor index, subject to the constraint that its $\gamma$-trace vanish. As a classical field equation the Rarita–Schwinger equation belongs to the companion subcategory on the relativistic quantum theory of higher spins; the present article takes that equation as given and addresses the <strong>canonical quantization</strong> of the field in the biquaternion framework: the constraint structure, the mode expansion, the anticommutators, the count of physical polarizations, and the gauge and ghost structure of the massless case.</p>
 <p>The biquaternion framework is well suited to this field, because the two indices of $\psi_\mu$ correspond to the two kinds of object the framework distinguishes. The vector index carries the <strong>material</strong> vector representation, which the article on integer-spin quantization identifies with the adjoint action on the vector part $V\subset\mathbb{M}_-$; the spinor index carries the left-ideal representation that the Dirac article identifies as the spin-$\tfrac12$ carrier. The Rarita–Schwinger field is therefore the tensor product of the two, and its decomposition is the framework's own:</p>
 <p>$$
-\left(\tfrac12\right)\otimes 1 = \left(\tfrac12\right)\oplus\left(\tfrac32\right),
+\boxed{\;\left(\tfrac12\right)\otimes 1 = \left(\tfrac12\right)\oplus\left(\tfrac32\right),
 \qquad
-2\cdot 3 = 2+4 ,
+2\cdot 3 = 2+4\;},
 $$</p>
 <p>so that the tensor product of the spinor with the material vector contains a spin-$\tfrac12$ piece and a spin-$\tfrac32$ piece, and the $\gamma$-trace constraint removes the former. The same pattern appears for the graviton, where the symmetric trace-free square of the vector decomposes as $0\oplus2$; here the antisymmetric structure of the constraint selects the highest spin. The two articles together are the framework's statement of how higher-spin fields are built: tensor a lower-spin carrier with the material vector and project onto the top component.</p>
 <p>The article is organized as follows. The field, its constraint, and the consequence that transversality follows from the constraint and the field equation are stated, and the projector onto the $\gamma$-traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion interpretation of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.</p>
@@ -81,7 +84,6 @@ $$</p>
 <li>Companion article <em>Canonical Quantization of the Biquaternion Maxwell Field</em>, for the massless gauge field whose gauge structure the massless Rarita–Schwinger case generalizes.</li>
 <li>Companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, for the fermionic quantization of half-integer-spin fields.</li>
 </ul>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_i \vec e_j=-\delta_{ij}e_t+\varepsilon_{ijk}\vec e_k$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, on which the adjoint action of the rotation algebra acts as the spin-one representation. The spinor carrier is the left ideal of the Dirac article, with the Clifford algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ defined by $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, so that $(\gamma^0)^2=+I_4$ and $(\gamma^k)^2=-I_4$; the $ict'$ coordinate metric remains $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and $g=-\eta$. The vector-spinor is $\psi_\mu$, with $\mu$ the material vector index and the spinor index suppressed; the $\gamma$-trace is $\gamma^\mu\psi_\mu$. The mass is $m$, natural units are used, and the metric-dependent contractions follow the Clifford convention $g$ while the coordinate contraction of the field with $dx^\mu$ follows the $ict'$ convention $\eta$.</p>
 <h2 id="the-field-its-constraint-and-transversality">The Field, Its Constraint, and Transversality</h2>
 <h3 id="the-equations">The Equations</h3>
 <p>The Rarita–Schwinger field satisfies the field equation</p>
@@ -106,7 +108,7 @@ $$</p>
 $$</p>
 <p>where the constraint has been used in the last two terms. Hence the constraint and the field equation together imply the <strong>transversality</strong> condition</p>
 <p>$$
-p^\mu\psi_\mu = 0 ,
+\boxed{\;p^\mu\psi_\mu = 0\;},
 $$</p>
 <p>which is not independent but follows from the two. Both steps were verified with explicit gamma matrices in the Clifford convention: the Clifford algebra to machine precision, the identity $\gamma^\mu \not p=2p^\mu-\not p\gamma^\mu$ to machine precision at random momenta, and the resulting contraction to zero.</p>
 <h3 id="the-projector-onto-the-traceless-part">The Projector onto the Traceless Part</h3>
@@ -124,7 +126,7 @@ P^{\mu}{}_\alpha P^{\alpha\nu} = P^{\mu\nu} ,
 $$</p>
 <p>so that $\psi_\mu$ is replaced by $P_\mu{}^\nu\psi_\nu$, whose $\gamma$-trace vanishes. This was verified with explicit $4\times4$ gamma matrices in the Clifford convention $g=\mathrm{diag}(+1,-1,-1,-1)$: the idempotency and both transversality conditions held to machine precision. The rank of the $16\times16$ matrix $P^{(\mu i)(\nu j)}$ — the projector acting on the $4\times4$ components of the vector-spinor — is</p>
 <p>$$
-\mathrm{rank}\,P = 12 = 16-4 ,
+\boxed{\;\mathrm{rank}\,P = 12 = 16-4\;},
 $$</p>
 <p>verified by Gaussian elimination over the complex numbers, so that the $\gamma$-trace constraint removes exactly a four-component spinor from the sixteen components of the vector-spinor.</p>
 <h2 id="gauge-structure-massless-and-massive">Gauge Structure: Massless and Massive</h2>

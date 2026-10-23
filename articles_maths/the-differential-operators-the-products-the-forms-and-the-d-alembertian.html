@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -75,13 +78,6 @@ proved here. Every statement restates the convention or an article that owns it,
 <em>The 12 Products of the Biquaternion $\mathbb{C}$ Space</em>; their four scalar parts are <em>The 4 Forms over the Biquaternion
 $\mathbb{C}$ Space</em>; the four norms are <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>; and the gradient, its
 conjugate and the d'Alembertian are developed at length in <em>Biquaternion Analysis</em>, §<em>The Differential Operators</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
-$e_t=1$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$
-with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, its four coefficients complex. The field is element-valued,
-$\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$ with $\vec Q_{\mathrm f}=Q_{\mathrm{f}x}\vec e_x+Q_{\mathrm{f}y}\vec e_y+Q_{\mathrm{f}z}\vec e_z$, and depends on the
-coordinates $Q_t,Q_x,Q_y,Q_z$. The conjugations are those of the algebra, the natural one $\tilde Q^{\natural}$, the coefficientwise one
-$\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$, and the field carries them coefficientwise, the same three marks being written on $\tilde Q_{\mathrm f}$; the scalar part is $\mathrm{Sc}$; and the sign vector is
-$\varepsilon=(1,-1,-1,-1)$. All conventions are those of <em>Conventions in Mathematics</em>.</p>
 <h2 id="conventions-for-derivation">Conventions for Derivation</h2>
 <p>In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is
 written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,7 +88,6 @@
 <li>Companion article <em>Noether's Theorem in Biquaternionic Form</em>, for the conserved $\mathrm{U}(1)$ current $\tilde J\in\mathbb{M}_-$ and the charge.</li>
 <li>Companion article <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>, for the material four-wavevector and the biquaternion norm.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. Natural units $\hbar=c=1$ are used throughout, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$; dimensionful factors are restored where they carry meaning. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex. A time derivative is written $\partial/\partial t'$.</p>
 <h2 id="the-background-and-the-mode-equation">The Background and the Mode Equation</h2>
 <p>A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$ shifts the mass term. Write the background as a central-valued classical field,</p>
 <p>$$
@@ -103,9 +105,9 @@ $$</p>
 $$</p>
 <p>with the mode functions satisfying</p>
 <p>$$
-d^2u_{\vec k}/d{t'}^2+\omega_{\vec k}^2(t')\,u_{\vec k}=0,
+\boxed{\;d^2u_{\vec k}/d{t'}^2+\omega_{\vec k}^2(t')\,u_{\vec k}=0,
 \qquad
-\omega_{\vec k}^2(t')=\vec k^2+\mu^2+g\,\chi(t').
+\omega_{\vec k}^2(t')=\vec k^2+\mu^2+g\,\chi(t')\;}.
 $$</p>
 <p>This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set</p>
 <p>$$
@@ -178,14 +180,14 @@ $$</p>
 <p>with the pair states $|n_{\vec k},n_{-\vec k}\rangle$ containing equal numbers of particles and antiparticles; the equal numbers are the charge-conservation statement of the previous section. The phase of the coefficient in each term is the phase of $\beta_{\vec k}/\alpha_{\vec k}$, fixed to one by a redefinition of the out-modes and immaterial for the moduli below. Two consequences follow, and both were verified numerically.</p>
 <p><strong>The mean pair number is the squeezing strength.</strong> Since $\tanh^2 r=|\beta|^2/|\alpha|^2=|\beta|^2/(1+|\beta|^2)$, the geometric sum gives</p>
 <p>$$
-\langle N_{\mathrm{pairs}}\rangle=|\beta_{\vec k}|^2 ,
+\boxed{\;\langle N_{\mathrm{pairs}}\rangle=|\beta_{\vec k}|^2\;},
 $$</p>
 <p>exactly. <strong>The vacuum persistence amplitude is the inverse of $|\alpha|$.</strong> The overlap of the in- and out-vacua is</p>
 <p>$$
-\big|\langle 0_{\mathrm{out}}|0_{\mathrm{in}}\rangle\big|^2
+\boxed{\;\big|\langle 0_{\mathrm{out}}|0_{\mathrm{in}}\rangle\big|^2
 =\frac{1}{\cosh^2 r_{\vec k}}
 =\frac{1}{|\alpha_{\vec k}|^2}
-=\frac{1}{1+|\beta_{\vec k}|^2},
+=\frac{1}{1+|\beta_{\vec k}|^2}\;},
 $$</p>
 <p>so the probability that no pair is created in the mode is $1/(1+|\beta|^2)$, and the probability that something is created is $|\beta|^2/(1+|\beta|^2)$. For a continuum of modes the total persistence amplitude is the product</p>
 <p>$$
@@ -224,7 +226,7 @@ $$</p>
 $$</p>
 <p>using $A^2-B^2=(A+B)(A-B)=\omega_1/\omega_2$. The mean number of created quanta per mode is therefore</p>
 <p>$$
-|\beta|^2=\frac{(\omega_2-\omega_1)^2}{4\,\omega_1\omega_2},
+\boxed{\;|\beta|^2=\frac{(\omega_2-\omega_1)^2}{4\,\omega_1\omega_2}\;},
 $$</p>
 <p>which is symmetric in $\omega_1\leftrightarrow\omega_2$, vanishes when the frequency does not change, and grows without bound as the ratio $\omega_2/\omega_1$ becomes extreme. Physically, a sudden change of the mass produces particles in proportion to the square of the fractional frequency change.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -165,7 +168,7 @@ S^{*} S = I_2,
 $$</p>
 <p>as one verifies by expanding the two components of the column $(A,D)$ and using the identity above: the diagonal entries give $|t|^2 + |r_2|^2 = 1$ and $|r|^2+|t_2|^2 = 1$, the off-diagonal ones give ${t}^*r_2 + r^*t_2 = 0$. For incidence from the left, $D=0$ and the identity reduces to</p>
 <p>$$
-|r|^2 + |t|^2 = R + T = 1 .
+\boxed{\;|r|^2 + |t|^2 = R + T = 1\;}.
 $$</p>
 <p>Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a <strong>unitary element</strong>, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U_{\mathrm L}$, the unit-norm element with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.</p>
 <h2 id="exactly-solvable-potentials">Exactly Solvable Potentials</h2>
@@ -184,11 +187,11 @@ r = \frac{k_1-k_2}{k_1+k_2}.
 $$</p>
 <p>The transmission and reflection coefficients require the ratio of the currents, and because the wave vectors differ on the two sides the flux factor is the ratio of group velocities:</p>
 <p>$$
-T = \frac{k_2}{k_1}|t|^2 = \frac{4k_1k_2}{(k_1+k_2)^2},
+\boxed{\;T = \frac{k_2}{k_1}|t|^2 = \frac{4k_1k_2}{(k_1+k_2)^2},
 \qquad
 R = |r|^2 = \left(\frac{k_1-k_2}{k_1+k_2}\right)^2,
 \qquad
-R + T = 1 .
+R + T = 1\;}.
 $$</p>
 <p>The coefficients are those of a sudden change of impedance; the vanishing of $T$ when $k_2\to0$ is the statement that the wave cannot enter a classically forbidden region at threshold. For $E<V_0$ there is no transmitted wave vector; $r$ has unit modulus, $R=1$, and the solution on the right is the evanescent wave</p>
 <p>$$
@@ -215,9 +218,9 @@ t = \frac{4ik\kappa\,\exp(-ika)}{(k+i\kappa)^2 \exp(-\kappa a) - (k-i\kappa)^2 \
 $$</p>
 <p>and therefore</p>
 <p>$$
-T = |t|^2 = \left[1 + \frac{V_0^2\,\sinh^2(\kappa a)}{4E\,(V_0-E)}\right]^{-1},
+\boxed{\;T = |t|^2 = \left[1 + \frac{V_0^2\,\sinh^2(\kappa a)}{4E\,(V_0-E)}\right]^{-1},
 \qquad
-R = 1 - T .
+R = 1 - T\;}.
 $$</p>
 <p>For $E>V_0$ the interior wave is oscillatory with $k_2 = \sqrt{2m(E-V_0)}/\hbar$, and the same matching gives</p>
 <p>$$
@@ -242,13 +245,13 @@ $$</p>
 $$</p>
 <p>one finds</p>
 <p>$$
-t = \frac{1}{1+i\beta},
+\boxed{\;t = \frac{1}{1+i\beta},
 \qquad
 r = \frac{-i\beta}{1+i\beta},
 \qquad
 T = \frac{1}{1+\beta^2},
 \qquad
-R = \frac{\beta^2}{1+\beta^2},
+R = \frac{\beta^2}{1+\beta^2}\;},
 $$</p>
 <p>with $R+T=1$ for every $\beta$. For an attractive delta well, $\lambda<0$, there is exactly one bound state, at</p>
 <p>$$
@@ -296,7 +299,7 @@ $$</p>
 <h3 id="the-math193-matrix-is-central-in-the-module">The $S$-matrix is central in the module</h3>
 <p>Because the Hamiltonian of every potential treated here is central, the $S$-matrix is</p>
 <p>$$
-\tilde S = S \otimes I_2,
+\boxed{\;\tilde S = S \otimes I_2\;},
 $$</p>
 <p>a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's unitary group: for every $\tilde U$ with $\tilde U\tilde U^{*} = e_t$ that acts on the module,</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,8 +71,6 @@
         <h1 id="introduction-to-topology-on-the-quaternions"><strong>Introduction to Topology on the Quaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article opens the topological half of the chapter. The quaternion algebra is a real vector space of dimension four, so it carries the Euclidean topology of that space; its multiplicative structure cuts out three objects, the whole space, the unit sphere, and the complement of the origin, and the article names them and maps the articles that study them. It states the topology and does not develop it: the algebra of the block is the article before it, and the metric statements are the concern of the articles below.</p>
-<p><strong>Boundaries.</strong> This is the entry of the topological half. The algebra is <em>Introduction to the Quaternion Algebra</em> and its block, above this article in this category; the topology of the algebra is <em>Quaternion Topology</em>, below this article in this category; the group of units is <em>The Quaternion Unit Group as a Topological Group</em> and the arithmetic of its finite subgroups is <em>Quaternion Orders and Finite Groups of Units</em>, both below this article in this category; the metrics are <em>Quaternion Metrics</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$; an element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_kq_k\vec e_k$. The <strong>quaternion form</strong> is $\langle\tilde q_2,\tilde q_1\rangle_{\natural}=q_{2t}q_{1t}+\vec q_2\cdot\vec q_1$, the <strong>quadratic form</strong> is $\langle\tilde q\rangle_{\natural}=q_t^{2}+|\vec q|^{2}$, and the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_te_t-\vec q$; the bar is the identity. Metric words are used in this half of the chapter only, and the <em>norm</em> here is the function $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$.</p>
 <h2 id="the-space-and-its-norm">The Space and Its Norm</h2>
 <p><strong>Proposition (the space).</strong> The identification $\tilde q\mapsto(q_t,q_x,q_y,q_z)$ is a vector-space isomorphism $\mathbb{H}\cong\mathbb{R}^4$, and $\mathbb{H}$ carries the Euclidean topology of $\mathbb{R}^4$: the product and the addition and the scalar multiplication are continuous, and the topology is induced by the norm $\lvert\tilde q\rvert=\sqrt{q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}}$.</p>
 <p><em>Proof.</em> The coordinates are linear, so the two vector spaces are the same space with a chosen basis; the norm is the square root of the positive definite quadratic form $\langle\cdot\rangle_{\natural}$, and the product is given by polynomial formulas in the coordinates, hence continuous.</p>

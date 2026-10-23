@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,8 +71,6 @@
         <h1 id="topology-in-the-space-of-reduced-biquaternions"><strong>Topology in the Space of Reduced Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The reduced biquaternion algebra is a real four-dimensional vector space, and its <strong>Euclidean topology</strong> is the standard topology of $\mathbb{R}^{4}$ read on the coordinates. This article fixes the norm that produces it, states that the topology it defines is the <strong>only</strong> one compatible with the vector-space structure, records the metric, and records how the topology interacts with the algebra: the four general products are continuous, the three conjugations are isometries, the unit group is open and the zero-divisor set is closed. Of the four algebraic norms only the general tessarine sesquilinear one, $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$, is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ yields a topological norm; the other three are complex-valued or indefinite and give at best a degenerate quantity. The multiplication has zero divisors and is not a division algebra, and the zero-divisor set is exactly the closed set where the unit group ends.</p>
-<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$. The four general products and the forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\mathrm{ts}}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ are <em>The Four Products, Their Forms and Their Algebraic Norms</em>; the Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$. The element glyph is $\breve Q$, with the breve and without a tilde. The word <strong>algebraic norm</strong> names the diagonal of a form and is never the topological norm; only $\langle\cdot\rangle_{\mathrm{ts}*}$ is both.</p>
-<p><strong>Boundaries.</strong> The forms and their definiteness are <em>The Forms of the Algebra of the Reduced Biquaternions</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the unit group is <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>; the four-vector coordinates are <em>The Four-Vector Element Representation of the Reduced Biquaternions</em>. The companions of this article are <em>The Euclidean Topology of the Reduced Biquaternion Algebra</em>, for the metric and the unit sphere, and <em>Topology and Metric for Each of the Operations</em>, for the metric attached to each product. The biquaternion counterpart is <em>Topology in the Space of Biquaternions</em>.</p>
 <h2 id="the-euclidean-norm">The Euclidean Norm</h2>
 <p><strong>The form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is positive definite, and its square root is the Euclidean norm.</strong></p>
 <p><strong>Theorem (the norm).</strong> The map

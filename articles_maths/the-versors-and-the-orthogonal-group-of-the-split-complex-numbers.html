@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>versors</strong> of the split-complex numbers are the units of norm one, the elements of the unit hyperbola $\mathcal{H}=\{u:\langle u\rangle_{*}=1\}$. They form a group, and it is at once the group of $\mathbb{D}$-linear maps preserving the indefinite form — the group $SO(1,1)$ of the plane — and the spin group $\mathrm{Spin}(1,1)$ of the split plane, the square of the algebra's own product being the two-to-one cover of its identity component $SO^+(1,1)$. This article defines the versors, reads the group they form and its two branches, records the identification with the group of form-preserving maps, establishes the two-to-one cover and the half-angle that goes with it, and locates the group among the pin and spin groups of the algebra and at the split rung of the family, against the compact circle of the complex case.</p>
 <p>The article does not define the two forms, which are <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>, nor the norm $\langle\cdot\rangle_{*}$, its polarisation $g$, the invertibility criterion, the group of units or the modulus (<em>Norm and Invertibility in the General Split-Complex Algebra</em>). The unit hyperbola, its branches and their parametrisation, the exponential, the hyperbolic rotations, the classification of the maps preserving the form and the four components of the group are <em>Hyperbolic Rotations</em>, and <em>Split-Complex Exponential and Lie Group Structure</em>; they are cited and not restated. The two metrics of the plane are <em>The Two Metrics of the Split-Complex Numbers</em>. The general versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $Q=q+jq'$ and $C=c+jc'$ with real $q,q',c,c'$, and conjugation is $\bar Q=q-jq'$. The global reading is bar $=$ the involution $j\mapsto-j$ and Hermitian star $=$ bar (<em>Conventions in Mathematics</em>). The form that defines the versors is the indefinite Hermitian form $\langle Q,C\rangle_{*}=Q\bar C$, with diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$; the four letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are reserved for the forms, so elements are written $Q$ and $C$ (<em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>). The group of the title is written $O(1,1)$, its determinant-one half $SO(1,1)$ and its identity component $SO^+(1,1)$: this is the article that carries the algebraic naming of the group, the companion metric article being written with the matrix condition alone. The classification of the form-preserving maps, the four components and the non-compactness are <em>Hyperbolic Rotations</em>, cited and not re-derived.</p>
 <h2 id="the-versors-and-their-group">The Versors and Their Group</h2>
 <p><strong>Definition.</strong> A <strong>versor</strong> of the split-complex numbers is a unit of the quadratic form $\langle\cdot,\cdot\rangle_{*}$ of norm one,</p>
 <p>$$

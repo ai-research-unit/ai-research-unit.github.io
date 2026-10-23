@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -144,8 +147,8 @@ $$</p>
 <h3 id="a-map-the-norm-square">A Map: the Norm Square</h3>
 <p>For every biquaternion the quaternion conjugate multiplies to a central value:</p>
 <p>$$
-\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,\qquad
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}.
+\boxed{\;\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,\qquad
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}\;}.
 $$</p>
 <p>For a material element $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is</p>
 <p>$$
@@ -162,7 +165,7 @@ $$</p>
 <h3 id="a-bijection-the-central-imaginary">A Bijection: the Central Imaginary</h3>
 <p>The central scalar is anti-Hermitian, $i^{*}=-i$. For every $\tilde Q$,</p>
 <p>$$
-(i\tilde Q)^{*}=\tilde Q^{*}i^{*}=-i\tilde Q^{*},
+\boxed{\;(i\tilde Q)^{*}=\tilde Q^{*}i^{*}=-i\tilde Q^{*}\;},
 $$</p>
 <p>so multiplication by $i$ flips the sign of the adjoint and with it the sector: $i\mathbb{M}_+=\mathbb{M}_-$ and $i\mathbb{M}_-=\mathbb{M}_+$. The map is a bijection of the algebra, of order four, and it reverses the norm, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$.</p>
 <p><strong>Interpretation.</strong> The two sectors are the two time directions, and the exchange reads one time against the other. Multiplication by $i$ is the relational clock: the quarter turn is the tick, and each sector is the other's clock.</p>
@@ -185,8 +188,8 @@ $$</p>
 <h3 id="a-pairing-the-off-sector-scalar">A Pairing: the Off-Sector Scalar</h3>
 <p>For $\tilde R=ict'+\vec v\in\mathbb{M}_-$ and $\tilde H=h_te_t+i\vec h\in\mathbb{M}_+$, with real $t'$, $\vec v$, $h_t$ and $\vec h$, the scalar part of the plain product is</p>
 <p>$$
-\operatorname{Sc}(\tilde R\tilde H)
-=i\bigl(ct'\,h_t-(\vec v,\vec h)\bigr).
+\boxed{\;\operatorname{Sc}(\tilde R\tilde H)
+=i\bigl(ct'\,h_t-(\vec v,\vec h)\bigr)\;}.
 $$</p>
 <p>It is purely imaginary, and it is a pairing $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$: it reads one element of each sector and returns a phase.</p>
 <p><strong>Interpretation.</strong> The pairing is the Minkowski pairing of the material four-vector $(ct',\vec v)$ with the informational four-vector $(h_t,\vec h)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(ct'\,h_t+\vec v\cdot\vec h)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -75,7 +78,6 @@ $$</p>
 <p>The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ and the idempotents are the companion article <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>; the roots of the general quadratic $\tilde\Xi^2=\tilde Q$ are <em>Square Roots of a General Element in the Biquaternion Algebra</em>.</p>
 <p><strong>The results.</strong> The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; no nilpotent is an idempotent, the two classes meeting only at $0$; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.</p>
 <p>The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are <em>Zero Divisors of the Biquaternion Algebra</em>; the roots of $+1$ and the idempotents are <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>; the minimal ideals the nilpotents generate are <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>; and the same class read against the four general products is <em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the star is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The general plain bilinear form of two vector parts is</p>
 <p>$$
 (\vec Q_1,\vec Q_2)=\sum_{k=1}^{3}Q_{1k}Q_{2k},
 $$</p>

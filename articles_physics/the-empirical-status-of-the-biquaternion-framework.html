@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -156,6 +159,9 @@
 <p>The framework's distinctive content is not what the reproducing calculations use. They use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; the identification of $\mathbb{M}_-$ with $\mathbb{R}^{3,1}$; and the standard wave operators built from the biquaternionic gradient. All three are shared with the standard formalism. The framework-specific additions — the naming of $\mathbb{M}_-$ as <em>material</em> and $\mathbb{M}_+$ as <em>informational</em>, the claim that the complex structure is local and physically determined, the proposal that the algebra is nature's rather than notation's — enter no formula that produces a number. They are therefore untested by every experiment the series cites, including the ones that agree. A reader who treats the agreement as support for the material/informational interpretation has read the evidence backwards.</p>
 <p>Two examples show how narrowly the agreement should be read.</p>
 <p><strong>The electron.</strong> The framework forces the tree-level $g=2$, which is Dirac's result; the measured anomalous part $a=(g-2)/2\approx1.1597\times10^{-3}$ is outside the classical equation and is not contained. The framework therefore cannot claim the measured moment at the precision the measurement achieves; its agreement is with tree-level Dirac theory, one part in $10^3$ away from the measured value.</p>
+<p>$$
+\boxed{\;a_{\text{framework}}=0,\qquad a_{\text{measured}}\approx1.1597\times10^{-3}\;}
+$$</p>
 <p><strong>Hydrogen.</strong> The exact relativistic spectrum is the standard Dirac–Coulomb result, quoted and reproduced; the corpus states that the bound-state solution is not derived anywhere in the series. The framework supplies the spin algebra and the level bookkeeping, but not the radial dynamics or the coupling constant, and the agreement is with an imported result.</p>
 <p><strong>The Lorentz group.</strong> The experiments that fix the kinematics — aberration of starlight, the Fizeau drag and the Michelson–Morley null result — select the group $SO^+(1,3)$, not a representation of it, and they are recorded with their ownership in <em>The Lorentz Transformation as a Biquaternionic Rotation</em>. The rotor conjugation reproduces them because it is a faithful representation of that group and cannot do otherwise; here the agreement is not even an achievement of transcription, since the experiments never test which faithful representation is used.</p>
 <p>The lesson generalizes. When a reformulation reproduces a number, the question to ask is <strong>which of its structures produced the number</strong>. If the answer is the standard ones — the complex algebra, the Minkowski form, an inserted constant — then the number is not evidence for the framework's addition. This is the criterion applied to every candidate below.</p>

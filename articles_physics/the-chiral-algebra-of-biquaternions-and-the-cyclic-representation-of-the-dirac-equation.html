@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -335,15 +338,15 @@ $$</p>
 <h3 id="the-single-string-representation">The Single-String Representation</h3>
 <p>The result the paper is built to reach is the <strong>cyclic representation</strong>,</p>
 <p>$$
-F^- \odot \bar{D} + D \otimes F^+ = im\,\overset{⤺}{F},
+\boxed{\;F^- \odot \bar{D} + D \otimes F^+ = im\,\overset{⤺}{F}\;},
 \tag{20}
 $$</p>
 <p>the Dirac equation for the biquaternion wave function $F$, written as one expression in which the two chiralities appear as the two signed parts $F^\pm$, the two gradient orderings appear as the two products $\odot$ and $\otimes$, and the mass appears on the right through the cyclic conjugate of $F$. Its component form, as printed, is</p>
 <p>$$
-\partial/\partial\xi f_\alpha - \partial/\partial\beta f_\xi = im\,f_\beta, \qquad
+\boxed{\;\partial/\partial\xi f_\alpha - \partial/\partial\beta f_\xi = im\,f_\beta, \qquad
 \partial/\partial\eta f_\xi - \partial/\partial\alpha f_\alpha = im\,f_\eta, \qquad
 \partial/\partial\eta f_\beta + \partial/\partial\beta f_\eta = im\,f_\alpha, \qquad
-\partial/\partial\xi f_\eta + \partial/\partial\alpha f_\beta = im\,f_\xi.
+\partial/\partial\xi f_\eta + \partial/\partial\alpha f_\beta = im\,f_\xi\;}.
 \tag{21}
 $$</p>
 <p><strong>This system is exactly the Weyl system (15).</strong> Substituting (18) into (21) turns each of the four equations into the corresponding equation of (15), up to an overall sign of the whole equation, which is immaterial: the four coefficient vectors were compared symbolically, including the mass terms, and each of the four row-by-row equalities holds exactly. This is the substantive verification of the article, and it confirms the author's own statement that (20) "is equivalent to the original Dirac equation in Weyl spinors". The reader should also note what (20) is and is not: it is a <strong>compactness</strong> statement of the same kind the corpus makes for Maxwell and Dirac elsewhere, not a claim that one chirality is redundant. The expression contains both chiralities implicitly through the two products and the right-hand side; the two-chirality content is unpacked in the next subsection.</p>
@@ -398,7 +401,7 @@ k_\xi a_\beta - k_\alpha a_\eta = m a_\alpha, \qquad -k_\beta a_\beta + k_\eta a
 $$</p>
 <p>whose first two determine the longitudinal amplitudes $a_\xi, a_\eta$ from the free pair $a_\alpha, a_\beta$; the remaining two are then satisfied identically precisely when</p>
 <p>$$
-\epsilon^2 - \vec k^2 = k_\xi k_\eta - k_\alpha k_\beta = m^2 .
+\boxed{\;\epsilon^2 - \vec k^2 = k_\xi k_\eta - k_\alpha k_\beta = m^2\;}.
 \tag{30}
 $$</p>
 <p>The printed amplitude relations of the source are garbled in the extraction; (29) is their clean form, and it reproduces the one readable relation, $a_\xi = (m a_\beta - k_\eta a_\alpha)/k_\alpha$. The normalisation of the phase relative to (27) — the source's phase carries a factor $\tfrac12$ that the amplitude relations do not — is not settled by the extraction. At rest, $\vec k = 0$ and $k_\xi = k_\eta = m$, and the wave becomes $F = A_0 \exp(imt') + B_0 \exp(-imt')$ with constant coefficients, the author's starting point for the spin states below.</p>

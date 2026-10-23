@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The quaternion space $\mathbb{H}$ is a four-dimensional real vector space and an associative division algebra, and it carries <strong>two</strong> general products: the <strong>general plain bilinear product</strong> $\tilde q_1\tilde q_2$, the multiplication of the algebra, and the <strong>general quaternionic bilinear product</strong> $\tilde q_1^{\natural}\tilde q_2$, the plain product with the first factor read through the quaternion conjugation ${}^{\natural}$. The base of the quaternion algebra is $\mathbb{R}$, so the only conjugation available is the natural conjugation ${}^{\natural}$ of the element; the pairing that uses it in the second slot returns the two general products read with both arguments conjugated, with the same scalar parts and the same laws, so no new family arises. Exactly two general products are read on $\mathbb{H}$, and this article defines them.</p>
 <p>The two products and their two structures are defined here. The identities that link them are <em>Relations Between the Two General Products</em>, below this article in this category, and the table of their laws is <em>Comparison Between the Two General Products</em>, below this article in this category. The symmetrisation and the antisymmetrisation of the two are <em>The 6 Products of the Quaternioid Real Space</em>, and the three companion structures they define are <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>, both below this article in this category. The left and right multiplications of the two are <em>The Two General Products and Operators</em>, the reading on the distinguished subspaces is <em>Remarkable Subspaces and the Two General Products</em>, and the degree-two reading is <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em>, <em>The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space</em> and <em>Remarkable Subspaces and the Two Forms</em>, all below this article in this category.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$, the real quaternion algebra, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_\mu^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and the general element $\tilde q=q_te_t+\vec q$, $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, with real coefficients $q_\mu$. The <strong>dot product</strong> is $\vec q_1\cdot\vec q_2=q_{1x}q_{2x}+q_{1y}q_{2y}+q_{1z}q_{2z}$ and the <strong>cross product</strong> $\vec q_1\times\vec q_2$ is the usual one, $(q_{1y}q_{2z}-q_{1z}q_{2y})\vec e_x+(q_{1z}q_{2x}-q_{1x}q_{2z})\vec e_y+(q_{1x}q_{2y}-q_{1y}q_{2x})\vec e_z$. The <strong>scalar part</strong> is $\mathrm{Sc}(\tilde q)=q_t$ and the <strong>vector part</strong> is $\operatorname{Vect}(\tilde q)=\vec q$. In this article $\tilde q_1$ and $\tilde q_2$ name elements, so that the brackets stay free for the forms.</p>
 <h2 id="the-two-products">The Two Products</h2>
 <p><strong>Definition.</strong> The <strong>general plain bilinear product</strong> and the <strong>general quaternionic bilinear product</strong> of the elements $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ are</p>
 <p>$$

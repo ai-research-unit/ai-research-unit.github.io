@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -200,7 +203,7 @@ $$</p>
 <h2 id="the-quaternion-factor-the-spatial-frame">The Quaternion Factor: The Spatial Frame</h2>
 <p>The quaternion factor is</p>
 <p>$$
-\tilde q=r\,\tilde u_{\mathrm r},\qquad \langle\tilde q\rangle_{\natural}=r^{2}>0 .
+\boxed{\;\tilde q=r\,\tilde u_{\mathrm r},\qquad \langle\tilde q\rangle_{\natural}=r^{2}>0\;}.
 $$</p>
 <p>It is an ordinary quaternion, and its decomposition is the ordinary quaternion polar decomposition: a positive scale times a unit rotor. It is the factor that carries the rotation. In the word it stands on the right, and its conjugation is the spatial rotation of the frame.</p>
 <p>The physical reading is the <strong>frame</strong>. The rotor $\tilde u_{\mathrm r}$ is the rotation that carries the reference axes to the axes of the element, and $r$ is the scale at which the frame is taken. The factor contains no phase and no boost: it is what remains of the element after the central phase and the Hermitian boost have been divided out of the word, and it is computed as $\tilde q=\tilde Q(\tilde U_{\mathrm b}e^{i\alpha})^{-1}$.</p>
@@ -213,7 +216,7 @@ $$</p>
 <h2 id="the-hamilton-factor-the-invariant">The Hamilton Factor: The Invariant</h2>
 <p>The Hamilton factor is</p>
 <p>$$
-\Rho=\sqrt N=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
+\boxed{\;\Rho=\sqrt N=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]\;}.
 $$</p>
 <p>It is the only one of the three that is central, and the only one that is a scalar. It carries the scale and the phase and nothing else. Its modulus is $r$ and its argument is the phase of the norm; the branch fixes the sign.</p>
 <p>The physical reading depends on the object, and the article must say which reading is in force.</p>
@@ -230,14 +233,14 @@ $$</p>
 <h2 id="the-cartan-factor-the-state-amplitude">The Cartan Factor: The State Amplitude</h2>
 <p>The Cartan factor is the Hermitian positive factor</p>
 <p>$$
-\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\,\tilde U_{\mathrm b},\qquad \tilde H=\tilde H^{*},\qquad \tilde H>0 .
+\boxed{\;\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\,\tilde U_{\mathrm b},\qquad \tilde H=\tilde H^{*},\qquad \tilde H>0\;}.
 $$</p>
 <p>It is the amplitude of the state that the element defines. The state itself is the normalized square,</p>
 <p>$$
 \tilde{Ϛ}_Q=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}}=\frac{\tilde H^{2}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
 \qquad \langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12 .
 $$</p>
-<p>The factor $\tilde H$ is unnormalised; the state is $\tilde H^{2}$ up to the trace. The distinction matters: the amplitude carries the scale, the state does not.</p>
+<p>The factor $\tilde H$ is unnormalised; the state is $\tilde H^{2}$ up to the normalisation. The distinction matters: the amplitude carries the scale, the state does not.</p>
 <p>The physical reading is the <strong>state amplitude</strong>. The positive factor is the part of the element that changes norms and not phases. In the informational sector it is the amplitude of the prepared or measured state; in the material sector it is the positive congruence that a boost applies. The same factor has both readings because the congruence is the same operation on the two sectors; the sectors differ in the sign of the cross terms, not in the factor.</p>
 <p>The domain of the Cartan <strong>factorisation</strong> is the complement of the cone, like the word, and it is the widest of the three construction domains. The generalized decomposition extends it to the cone: every element, including a zero divisor, is $\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$ with $\tilde H_{\mathrm{pos}}\ge0$ and $\tilde U_{\mathrm{p}}$ a partial isometry. The witness that separates the Cartan pairing from the word is any element of the cone, for example</p>
 <p>$$
@@ -281,9 +284,9 @@ $$</p>
 <h2 id="the-three-factors-are-not-additive">The Three Factors Are Not Additive</h2>
 <p>The factors are three <strong>products</strong>, not three terms:</p>
 <p>$$
-\tilde Q=\tilde q\,e^{i\tilde\Psi}
+\boxed{\;\tilde Q=\tilde q\,e^{i\tilde\Psi}
 =\Rho\,e^{\tilde U\Theta}
-=\tilde H\,\tilde U .
+=\tilde H\,\tilde U\;}.
 $$</p>
 <p>There is no sense in which $\tilde Q=\tilde q+\Rho+\tilde H$, and no sense in which a physical quantity is the sum of the three. Each identity is the whole element, written three times. The consequences are:</p>
 <ul>

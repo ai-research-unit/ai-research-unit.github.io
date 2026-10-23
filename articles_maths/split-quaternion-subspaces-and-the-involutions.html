@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>Three linear involutions act on the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$: the conjugation ${}^{\natural}$, the principal involution $\alpha$, and the reversal $\rho$. Each cuts the algebra into its $+1$ and $-1$ eigenspaces, and the three decompositions together refine the algebra into the pieces on which the analysis of <em>Split-Quaternion Analysis</em> is carried out. This article studies the involutions, their individual eigenspaces, and their common eigenspaces — the finest decomposition they produce.</p>
 <p>The article gives the three involutions and their general properties of linearity and (anti-)automorphism type; the two composition relations among them; the eigenspaces of each involution taken separately; the common eigenspaces of the commuting pair $(\alpha, \rho)$, which is the finest decomposition; the reason one two-dimensional piece of that decomposition does not split further; and the relation to the operators the analysis places on the pieces. The group that the three involutions generate, and the lattice of their fixed spaces, are the subject of the companion article <em>Split-Quaternion Involution Lattice</em>.</p>
-<p><strong>Conventions.</strong> A split-quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$; the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$. The scalar and vector subspaces are $S = \mathbb{R}\cdot 1$ and $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, and the split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$, as in <em>Split-Quaternion Scalar and Vector Subspaces</em> and <em>Split-Quaternion Split-Complex Subspaces</em>.</p>
 <h2 id="the-three-involutions">The Three Involutions</h2>
 <p><strong>Definition.</strong> The <strong>conjugation</strong> is the map ${}^{\natural}$ with</p>
 <p>$$
@@ -176,7 +178,7 @@ $$</p>
 \mathbb{R}\cdot 1 : (+,+,+), \qquad \operatorname{span}\{\vec e_x,\vec e_y\} : (-,-,+), \qquad \mathbb{R} \vec e_z : (-,+,-),
 $$</p>
 <p>the entries being the signs of $({}^{\natural}, \alpha, \rho)$. The sign pattern $(-,-,-)$ does not occur, and neither does $(+,+,-)$; among the eight patterns, exactly those three with $\text{sign}({}^{\natural}) = \text{sign}(\alpha)\text{sign}(\rho)$ are realised, one per piece. This is the finest decomposition of the algebra produced by the three involutions, and it is the one used in <em>Split-Quaternion Relations Between Subspaces</em> and <em>Split-Quaternion Involution Lattice</em>.</p>
-<h3 id="why-the-plane-math127-does-not-split">Why the Plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ Does Not Split</h3>
+<h3 id="why-the-plane-math117-does-not-split">Why the Plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ Does Not Split</h3>
 <p>The plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ is the largest piece of the common decomposition, of dimension $2$, and none of the three involutions splits it. The reason is that all three act on it by a single scalar: the conjugation acts as $-1$ on the whole of $V \supseteq \operatorname{span}\{\vec e_x,\vec e_y\}$; the principal involution acts as $-1$ because $\alpha(\vec e_x) = -\vec e_x$ and $\alpha(\vec e_y) = -\vec e_y$; and the reversal acts as $+1$ because $\rho(\vec e_x) = \vec e_x$ and $\rho(\vec e_y) = \vec e_y$. An eigenspace of a linear involution carries no further structure that the involution can detect — it acts by one number — so no combination of these involutions can separate $\vec e_x$ from $\vec e_y$. The two directions are distinguished only by structures external to the involution group: the sign of the split-quaternion norm ($\langle \vec e_x\rangle_{\natural} = +1$, $\langle \vec e_y\rangle_{\natural} = -1$), which belongs to the geometry, and the split-complex subalgebra structure, since $1$ and $\vec e_y$ span $\mathbb{D}_2$ while $\vec e_x$ alone generates the definite plane $\mathbb{R}[\vec e_x] \cong \mathbb{C}$. The involution group is blind to that distinction, and the plane is the irreducible piece for it.</p>
 <h2 id="the-reduction-of-the-labelled-spaces">The Reduction of the Labelled Spaces</h2>
 <p>The decomposition classifies each of the distinguished subspaces by the signs of the involutions on it:</p>

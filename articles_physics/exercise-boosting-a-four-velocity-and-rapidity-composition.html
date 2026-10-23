@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -93,9 +96,9 @@ $$
 $$
 Multiplying once more on the right by $\tilde U_{\mathrm b} = a + ibJ$ and collecting the scalar and vector parts gives
 $$
-\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}
+\boxed{\;\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}
 = ic\,\gamma_b\gamma\left(1 - \frac{\vec v_b\cdot\vec v}{c^2}\right)e_t
-+ \gamma\left[\vec v + (\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b - \gamma_b\vec v_b\right].
++ \gamma\left[\vec v + (\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b - \gamma_b\vec v_b\right]\;}
 \tag{1}
 $$
 The identity $\sinh\psi_b = \gamma_b v_b/c$ and the expansion of the parallel component have been used. The result is the biquaternion form of the standard Lorentz transformation of a four-velocity from the lab to the frame moving with velocity $\vec v_b$.</p>
@@ -143,8 +146,8 @@ $$
 The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{M}_+$, and has unit norm, so it is a pure boost along $\vec u_y$: <strong>boosts in a common direction form a one-parameter subgroup</strong>, and their rapidities add.</p>
 <p><strong>(b)</strong> The product rotor has rapidity $\psi_1+\psi_2$, and the velocity it represents is $w = c\tanh(\psi_1+\psi_2)$. Using $\tanh\psi_i = v_{b_i}/c$,
 $$
-w = c\,\frac{\tanh\psi_1 + \tanh\psi_2}{1 + \tanh\psi_1\tanh\psi_2}
-= \frac{v_{b_1}+v_{b_2}}{1 + v_{b_1}v_{b_2}/c^2}.
+\boxed{\;w = c\,\frac{\tanh\psi_1 + \tanh\psi_2}{1 + \tanh\psi_1\tanh\psi_2}
+= \frac{v_{b_1}+v_{b_2}}{1 + v_{b_1}v_{b_2}/c^2}\;}
 \tag{4}
 $$
 For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, which is $\tanh(\operatorname{atanh}0.5 + \operatorname{atanh}0.6)$ to machine precision.</p>
@@ -219,8 +222,8 @@ $$
 $$
 and, since $|\vec q|^2 = \sinh^2\frac{\psi_1}{2}\sinh^2\frac{\psi_2}{2}\sin^2\phi$ and $\sin\frac{\theta_W}{2} = |\vec q|/\cosh\frac{\Psi}{2}$,
 $$
-\tan\frac{\theta_W}{2} = \frac{|\vec q|}{a}
-= \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}.
+\boxed{\;\tan\frac{\theta_W}{2} = \frac{|\vec q|}{a}
+= \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}\;}
 \tag{10}
 $$
 The numerator is non-negative for $0<\phi<\pi$ and the denominator $a$ is positive for every $\phi$, since $a\ge\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} - \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2} = \cosh\frac{\psi_1-\psi_2}{2}>0$. Hence $0\le\theta_W<\pi$. The rotation axis is the normal to the plane of the two boost directions,
@@ -281,7 +284,7 @@ $$
 which is precisely the boost biquaternion of <em>The Lorentz Transformation as a Biquaternionic Rotation</em> with $\vec u_x = \vec u_6$ and rapidity $\psi = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $\exp(\pm\psi)>0$ in the matrix representation, so its two square roots are $\pm\tilde U_{\mathrm b}$; the choice $\mathrm{Sc}>0$ selects $+\tilde U_{\mathrm b}$. Note that the quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$, the boost of rapidity $-\psi$, is <strong>not</strong> a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\psi - i\sinh\psi\vec u_6$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.</p>
 <p><strong>(b)</strong> Since $\tilde U_{\mathrm b}$ is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and $P\,\tilde{V}\,P^\dagger$ for the pure boost reduces to a computation already made in Problem 1 with $\vec v_b = \vec v$ and $\psi_b = \psi_v$; by part (d) there, the rapidities subtract, $\psi_v-\psi_v = 0$, giving
 $$
-\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t .
+\boxed{\;\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t\;}
 $$
 Equivalently, directly: $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\gamma\tilde U_{\mathrm b}^2 + \gamma v\,\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b}$, and since $\tilde U_{\mathrm b}$ commutes with $\vec u_6$, $\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b} = \vec u_6\tilde U_{\mathrm b}^2 = \cosh\psi\,\vec u_6 - i\sinh\psi$. Hence the vector part is $\gamma v\cosh\psi - c\gamma\sinh\psi = c\gamma\sinh\psi - c\gamma\sinh\psi = 0$ and the scalar part is $ic\gamma(\cosh\psi - \tanh\psi\sinh\psi) = ic$. So (14) is the rotor of the transformation <em>lab $\to$ rest</em>.</p>
 <p><strong>(c)</strong> Conjugating the rest four-velocity by $\tilde U_{\mathrm b}$ instead gives
@@ -334,7 +337,7 @@ $$
 using $\cosh^2\chi - \sinh^2\chi = 1$. The worldline is timelike exactly while $|\tau\frac{d\chi}{d\tau}| < 1$ and spacelike beyond, so the value $|\tau\frac{d\chi}{d\tau}| = 1$ is precisely where it crosses the cone. The identity was checked on both sides for several profiles and values of $\tau$, agreeing to round-off.</p>
 <p><strong>(d)</strong> With $\chi = \alpha\tau$, so $\tau\frac{d\chi}{d\tau} = \alpha\tau$,
 $$
-\beta = \frac{\tanh\alpha\tau + \alpha\tau}{1 + \alpha\tau\tanh\alpha\tau}.
+\boxed{\;\beta = \frac{\tanh\alpha\tau + \alpha\tau}{1 + \alpha\tau\tanh\alpha\tau}\;}
 $$
 At $\alpha\tau = 1$ this is exactly $1$. For $\alpha\tau > 1$ it exceeds $1$, reaching its maximum $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$, and then decaying back towards $1$ from above as $\alpha\tau \to \infty$. The recomputed values $\beta(1.4) = 1.0204776$, $\beta(1.5) = 1.0201151$, $\beta(2) = 1.0122854$ reproduce the source's printed table to seven decimals; the table samples at $1.4$, while the exact maximum sits at $\sqrt{2}$.</p>
 <p><strong>What this does and does not show.</strong> It does not contradict Problem 2, and it does not open the light cone of <em>Causality and the Light Cone as an Information Barrier</em>. Problem 2 composes <em>fixed</em> rapidities, that is, inertial frames, and its bound is about that composition; the rotor here is a different rotor at every $\tau$, which is not a coordinate change to another inertial frame. What (c) identifies is that the worldline itself leaves the timelike region at $|\tau\frac{d\chi}{d\tau}| = 1$, so past that point it is not the worldline of a material corpuscle. The construction and the profile are the source's, recorded and not adopted (I. Guzmán de Rojas, <em>Trajectories in space-time M4: Reinstating the Newtonian Time</em>, 2013); the four results above were recomputed from the source's printed formulas for this problem.</p>

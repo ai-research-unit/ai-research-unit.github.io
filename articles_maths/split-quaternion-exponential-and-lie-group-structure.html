@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ carries two group structures and one Lie algebra structure that interlock: the <strong>group of units</strong> $\mathbb{H}_{\mathrm{s}}^\times = GL_2(\mathbb{R})$, the <strong>norm-one group</strong> $U = \{N = 1\} \cong SL_2(\mathbb{R})$, and the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ of traceless elements under the commutator. The link is the exponential map, which we compute in closed form and study for its group law, its kernel and its range. Because the split-quaternion norm is indefinite, the exponential splits into an elliptic part from the directions of square $-1$ and a hyperbolic part from the directions of square $+1$.</p>
 <p>This article owns the exponential and the Lie group structure: the algebra as a Lie algebra, the closed form of the exponential, the group of units, the norm-one group and its identification with $SL_2(\mathbb{R})$, the elliptic and hyperbolic subgroups, and the polar and exponential parametrisation. It relies on <em>Split-Quaternion Rotations and the Lorentz Group</em> for the Lorentz action, on <em>Split-Quaternion Automorphisms and Derivations</em> for the derivations. No physics is invoked.</p>
-<p><strong>Conventions.</strong> A general element is $\tilde q = q_t + \vec v$ with $q_t = \operatorname{Sc}(\tilde q) \in \mathbb{R}$ and $\vec v = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in V$. The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + \langle \vec v\rangle_{\natural}$ with $\langle \vec v\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$, and on a vector $\vec v^2 = -\langle \vec v\rangle_{\natural}$. Under the commutator $V$ is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.</p>
 <h2 id="the-algebra-as-a-lie-algebra">The Algebra as a Lie Algebra</h2>
 <p><strong>Definition.</strong> The <strong>commutator</strong> $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ makes $\mathbb{H}_{\mathrm{s}}$ into a real Lie algebra. Its centre is again the scalar line $S = \mathbb{R}\cdot1$, and the associated Lie algebra modulo the centre is</p>
 <p>$$
@@ -137,7 +139,7 @@ $$</p>
 <p><strong>Proof.</strong> For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar decomposition is the multiplicative form of the decomposition of the group of units into its two components.</p>
 <p><strong>Theorem (exponential parametrisation).</strong> Every unit of the identity component $\{N>0\}$ that lies in the image of the exponential is $\exp(q_t + \vec v)$ with $q_t \in \mathbb{R}$ and $\vec v \in V$; the norm-one elements $\mathrm{U}$ that lie in the image are $\exp(\vec v)$ with $\vec v \in V$, and the elliptic and hyperbolic cases are selected by the sign of $\langle \vec v\rangle_{\natural}$: $\langle \vec v\rangle_{\natural} > 0$ gives the compact part and $\langle \vec v\rangle_{\natural} < 0$ the non-compact part.</p>
 <p><strong>Proof.</strong> Immediate from the closed form and the corollary $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, which shows that $q_t$ is fixed by the split-quaternion norm: for $\mathrm{U}$ one needs $q_t = 0$. The sign of $\langle \vec v\rangle_{\natural}$ decides whether the orthogonal factor is trigonometric or hyperbolic in the closed form.</p>
-<h2 id="the-norm-one-group-and-math184">The Norm-One Group and $SL_2(\mathbb{R})$</h2>
+<h2 id="the-norm-one-group-and-math176">The Norm-One Group and $SL_2(\mathbb{R})$</h2>
 <p><strong>Theorem.</strong> The norm-one group</p>
 <p>$$
 U = \{\, \tilde q : \langle\tilde q\rangle_{\natural} = 1 \,\} = \mathrm{SL}_2(\mathbb{R})

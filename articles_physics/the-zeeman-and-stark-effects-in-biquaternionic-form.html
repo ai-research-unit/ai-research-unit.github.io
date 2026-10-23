@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -106,7 +109,7 @@ E_\pm = \pm\frac{\hbar\omega_L}{2},
 $$</p>
 <p>so the <strong>Zeeman splitting</strong> is</p>
 <p>$$
-\Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B,
+\boxed{\;\Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B\;},
 $$</p>
 <p>linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{M}_+$ has eigenvalues $\pm|\vec h|$, and $|\vec h|$ depends on the magnitude of the vector part alone.</p>
 <p>For an electron, $\gamma = -g_e\mu_B/\hbar$ with $g_e\approx2.0023$; the two levels are separated by $\hbar|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article <em>Angular Momentum and Spin in Biquaternionic Form</em>.</p>
@@ -144,7 +147,7 @@ $$</p>
 $$</p>
 <p>This is a traceless Hermitian element with $\vec h = (-dE,0,0)$, so its eigenvalues are</p>
 <p>$$
-E_\pm = \pm\,dE,
+\boxed{\;E_\pm = \pm\,dE\;},
 $$</p>
 <p>a <strong>linear</strong> Stark splitting. The eigenstates are $\tilde\Pi_{1,2}(\vec u_x)$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\vec u_x$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.</p>
 <p>In the algebra the linear Stark effect is nothing but the spectral decomposition of a traceless Hermitian element with a vector part along the field axis: $\tilde{H}_S = -dE\,i\vec e_x = -dE\,(\tilde\Pi_1(\vec u_x)-\tilde\Pi_2(\vec u_x))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.</p>
@@ -155,7 +158,7 @@ $$</p>
 $$</p>
 <p>The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec h = (-Ed,0,-\tfrac{\hbar\omega_0}{2})$:</p>
 <p>$$
-E_\pm(E) = \pm\sqrt{\left(\frac{\hbar\omega_0}{2}\right)^2 + (Ed)^2}.
+\boxed{\;E_\pm(E) = \pm\sqrt{\left(\frac{\hbar\omega_0}{2}\right)^2 + (Ed)^2}\;}.
 $$</p>
 <p>For small fields, $|Ed|\ll\hbar\omega_0$, expanding the square root gives</p>
 <p>$$

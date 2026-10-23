@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>A Clifford algebra is a $\mathbb{Z}/2$-graded algebra, with the even elements $\mathrm{Cl}^0$ and the odd elements $\mathrm{Cl}^1$, and its modules carry the same grading when the action respects it: a <strong>graded module</strong> is a vector space $S=S^0\oplus S^1$ with a module structure such that $\mathrm{Cl}^i\cdot S^j\subseteq S^{i+j}$. The action is then represented by a map that is <strong>parity-preserving</strong>, $c(\mathrm{Cl}^i)\subseteq\mathrm{End}^i(S)$, so that even elements act by even operators and odd elements by odd ones. This is the sign rule of the category: the same algebra element acts by an operator of a definite parity, the graded commutator replaces the commutator in the relations, and the maps between graded modules must carry the parity factor in the intertwining relation. The article sets out the graded module structure, the compatibility of the action with the grading, and the sign rule that this compatibility imposes.</p>
 <p>The geometric reading is the chirality grading. The module grading of a Clifford module is the decomposition of a spinor bundle into its two chiral halves, the parity of the operator $c(v)$ for a vector is the statement that the Clifford multiplication exchanges the halves, and the parity of the Cauchy–Riemann operator is the analytic consequence: $D$ is an odd operator and therefore exchanges the chiral summands. The sign rule is what makes the parity a rule and not a convention, and the two examples that keep the account concrete are the exterior algebra $\Lambda^\bullet V$ with $c(v)=v\wedge-\iota_v$ and the spinor module with the chirality operator.</p>
-<p><strong>The boundaries.</strong> The parity of the one-sided and two-sided multiplication operators is <em>One-Sided Operators on a Clifford Algebra</em> and <em>The Two-Sided Multiplication Operators</em>; the twisting of those operators by the grading is <em>The Graded Multiplication Operators</em>; the module theory of the regular module is <em>Left Multiplication and the Clifford Module Structure</em>; the abstract algebra of the grading is <em>Clifford Algebras</em> and its companions in Part II. The chirality operator of the spinor bundle and the parity of the Cauchy–Riemann operator are <em>Spin Geometry</em> and <em>The Spinor Operator</em>. The base is a field $F$ of characteristic not $2$, $q$ a quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$, and a $\mathbb{Z}/2$-graded module (a supermodule) over $\mathrm{Cl}(V,\mathfrak{Q})$.</p>
 <h2 id="the-graded-module-structure">The Graded Module Structure</h2>
 <h3 id="definition-and-parity">Definition and Parity</h3>
 <p><strong>Definition.</strong> A <strong>graded module</strong> over $\mathrm{Cl}(V,\mathfrak{Q})$ is a $\mathbb{Z}/2$-graded vector space $S=S^0\oplus S^1$ with a bilinear multiplication $\mathrm{Cl}(V,\mathfrak{Q})\times S\to S$ that is a module action and satisfies $\mathrm{Cl}^i\cdot S^j\subseteq S^{i+j}$. A <strong>graded endomorphism</strong> of $S$ is a linear map preserving the grading, an <strong>odd</strong> endomorphism one exchanging the two summands, and $\mathrm{End}(S)$ is the graded algebra of all endomorphisms with the parity so defined.</p>

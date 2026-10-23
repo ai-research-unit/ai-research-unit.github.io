@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -117,7 +120,7 @@ $$</p>
 <h3 id="the-isomorphism">The Isomorphism</h3>
 <p>The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ (article 5):</p>
 <p>$$
-\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C}).
+\boxed{\;\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})\;}.
 $$</p>
 <p>An explicit isomorphism, consistent with the quaternion multiplication rules of the algebra, is given by</p>
 <p>$$
@@ -182,7 +185,7 @@ $$</p>
 <p>The expectation value of an observable in a state is given by the normalised Hermitian form.</p>
 <p><strong>Statement.</strong> For an idempotent $\tilde\Pi \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde{H} \in \mathbb{M}_+$ (an observable), the quantity</p>
 <p>$$
-\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})
+\boxed{\;\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})\;}
 $$</p>
 <p>is <strong>real</strong> and is the <strong>Born-rule expectation value</strong> of $\tilde{H}$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.</p>
 <p><strong>Proof.</strong> Under the isomorphism, $\tilde\Pi$ maps to the projector $|\psi\rangle\langle\psi|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ maps to $\tfrac12\mathrm{Tr}(|\psi\rangle\langle\psi| H) = \tfrac12\langle\psi|H|\psi\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\psi|H|\psi\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.</p>
@@ -250,7 +253,7 @@ $$</p>
 <h3 id="the-biquaternionic-dirac-equation">The Biquaternionic Dirac Equation</h3>
 <p>The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair</p>
 <p>$$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;},
 $$</p>
 <p>where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to</p>
 <p>$$

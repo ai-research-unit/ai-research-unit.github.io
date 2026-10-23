@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The complex numbers carry two readings of one algebra: over $\mathbb{C}$, where the space has dimension one, and over $\mathbb{R}$, where the same space has dimension two. This article is the passage from the first reading to the second, the <strong>realification</strong>, and the effect of the change of scalars on the products and on the two forms. It is the <strong>prototype</strong> of the general construction of <em>The Realification and the Effect of the Change of Scalars</em>.</p>
 <p>The space itself, its two scalar readings, the complex structure $J$ of multiplication by $i$, the criteria $TJ=JT$ and $SJ=-JS$ for the two kinds of real-linear map and their block shapes are those of <em>The Complex Numbers as a Vector Space over $\mathbb{R}$</em>, above this article in this category, and are recalled here only where the realification of the forms needs them. The two products are <em>The Two Products of the Complexoid Space</em>; the two forms and their algebraic norms are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, above this article in this category, and the realified signatures stated there, $(1,1)$ and $(2,0)$, are derived here from the two rules of the construction.</p>
-<p><strong>Conventions.</strong> <strong>Bar</strong> is complex conjugation and the <strong>Hermitian</strong> mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $Q_1=q_1+iq'_1$ and $Q_2=q_2+iq'_2$, with $q_1$, $q'_1$, $q_2$, $q'_2$ real; the brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are the four forms, of which $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ survive, and $\langle\cdot,\cdot\rangle$ is never an element. The topological norm $|\cdot|=\sqrt{\langle\cdot\rangle_{*}}$ remains the pointer of <em>Complex Norm and Invertibility</em>, below this article in this category.</p>
 <h2 id="the-two-scalar-interpretations-and-the-doubling-of-the-dimension">The Two Scalar Interpretations and the Doubling of the Dimension</h2>
 <p>Read over itself, $\mathbb{C}$ is the one-dimensional complex space with basis $1$; read over $\mathbb{R}$, it is the two-dimensional real space with basis $1$, $i$, and the two coordinates are the real and imaginary parts,</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The three companion structures of <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em> are read through a vocabulary of elements and of identities which the blocks that follow use without restating it. This article fixes that vocabulary once: the <strong>element vocabulary</strong> — the square, the powers, the unit and the units, the inverse, the radical, the zero divisor, the idempotent, the nilpotent and the square root of a central value — is stated for an arbitrary real-bilinear product and then read on the three; the <strong>identity vocabulary</strong> — alternating, flexible, Jordan, Jacobi, power-associative and the degree-three identities — is stated with its mutual implications; and the <strong>criterion for an empty class</strong> is given, the rule by which a class defined by an equation is recognized as empty from the laws of the product alone.</p>
 <p>Nothing here is a theorem about the quaternion space; the article is the common grammar of the blocks that follow, and every statement in it is a definition or an implication among definitions. The products and the three structures are those of <em>The 6 Products of the Quaternioid Real Space</em> and <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>, the two articles preceding this one. The algebra product $\tilde q_1\tilde q_2$, which makes the space a division algebra, belongs to the <em>Quaternions</em> category.</p>
-<p><strong>Conventions.</strong> Throughout, $f$ is a real-bilinear binary rule on the space $\mathbb{H}$, written multiplicatively $f(x,y)=xy$ in the statements about a general product, and $x,y,z$ name elements. When the product of a statement is one of the three, it is named by its abbreviation of <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>. The element $0$ is the zero vector and $e$ names a unit.</p>
 <h2 id="the-element-vocabulary">The Element Vocabulary</h2>
 <p>Let $f$ be a real-bilinear rule on $\mathbb{H}$.</p>
 <p><strong>Square and powers.</strong> The <strong>square</strong> of $x$ is $x^2=f(x,x)$ and the <strong>powers</strong> are $x^1=x$, $x^{k+1}=f(x,x^k)$. The square is the only power used in the blocks; the powers $x^k$ for $k\geq3$ are well defined for every rule, being left-nested products of $k$ copies of $x$.</p>

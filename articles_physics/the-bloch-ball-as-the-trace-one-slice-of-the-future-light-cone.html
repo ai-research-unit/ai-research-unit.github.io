@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -119,7 +122,7 @@ $$</p>
 <p>The decisive structural fact is that, in $\mathbb{M}_+$, the algebra's positive cone and the geometry's future cone are the same set. A Hermitian element $\tilde{H} = h_t e_t + i\vec h$ has eigenvalues $h_t \pm |\vec h|$ (they are the eigenvalues of $h_t I + \vec h\cdot\boldsymbol{\sigma}$), so it is positive semidefinite precisely when the smaller eigenvalue is non-negative. This gives:</p>
 <p><strong>Proposition.</strong> For $\tilde{H} \in \mathbb{M}_+$,</p>
 <p>$$
-\tilde{H} \geq 0 \quad\Longleftrightarrow\quad \langle\tilde{H}\rangle_{\natural} = h_t^2 - |\vec h|^2 \geq 0 \ \ \text{and}\ \ h_t \geq 0 .
+\boxed{\;\tilde{H} \geq 0 \quad\Longleftrightarrow\quad \langle\tilde{H}\rangle_{\natural} = h_t^2 - |\vec h|^2 \geq 0 \ \ \text{and}\ \ h_t \geq 0\;}.
 $$</p>
 <p>The right-hand side is exactly the statement that $\tilde{H}$ lies in the closed future cone of the biquaternion norm. Thus the <strong>positive cone of $\mathbb{M}_+$ coincides with the future light cone</strong>, region for region, boundary included. In particular the positive cone is the future cone of a form of signature $(1,3)$, and the rank-one projections — the extreme rays of the positive cone — are precisely its null generators, $\langle\tilde{H}\rangle_{\natural} = 0$.</p>
 <p>This is why the qubit state space is a canonical object of the algebra rather than a postulated set: one starts with a quadratic form that the algebra supplies, and one reads off a cone; positivity and causality are then two names for the same condition. Note also that the positive cone is exactly the set of squares of Hermitian elements: every $\tilde{H} \geq 0$ has a Hermitian square root $\sqrt{\tilde{H}} \in \mathbb{M}_+$, and conversely $A^2 = AA^{*} \geq 0$ for Hermitian $A$.</p>
@@ -166,7 +169,7 @@ $$</p>
 <p>so the biquaternion norm is exactly the product of the two eigenvalues. Because $h_t = \tfrac{1}{2} > 0$ forces $\lambda_+ = h_t + |\vec h| > 0$, the sign of $\langle\cdot\rangle_{\natural}$ determines the sign of the remaining eigenvalue: $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$ if and only if $\tilde{Ϛ} \geq 0$. Thus, restricted to the trace-one hyperplane, the Proposition of the previous section specializes to a clean statement.</p>
 <p><strong>The state space.</strong> The states of a qubit — the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) — are exactly the elements of that hyperplane that lie in the closed future light cone:</p>
 <p>$$
-\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r), \qquad |\vec r| \leq 1 .
+\boxed{\;\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r), \qquad |\vec r| \leq 1\;}.
 $$</p>
 <p>The intersection with the null cone $\langle\tilde{Ϛ}\rangle_{\natural} = 0$, i.e. the sphere $|\vec r| = 1$, is the boundary of the ball; the intersection with the interior of the cone, $\langle\tilde{Ϛ}\rangle_{\natural} > 0$, i.e. $|\vec r| < 1$, is the interior of the ball.</p>
 <p>The elements of the trace-one hyperplane with $|\vec r| > 1$ have $\langle\tilde{Ϛ}\rangle_{\natural} < 0$; they are Hermitian and of trace one but not positive semidefinite (each has one negative eigenvalue), so they are not states. They lie outside the cone, in the spacelike region. The picture is summarized in the following table.</p>
@@ -221,13 +224,13 @@ $$</p>
 $$</p>
 <p><strong>Zero divisors.</strong> On the boundary $\langle\tilde{Ϛ}\rangle_{\natural} = 0$ with $\tilde{Ϛ} \neq 0$, so $\tilde{Ϛ}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\vec r| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,</p>
 <p>$$
-\text{pure state} \quad\Longleftrightarrow\quad \text{idempotent} \quad\Longleftrightarrow\quad \text{zero divisor} \quad\Longleftrightarrow\quad \langle\tilde{Ϛ}\rangle_{\natural} = 0 .
+\boxed{\;\text{pure state} \quad\Longleftrightarrow\quad \text{idempotent} \quad\Longleftrightarrow\quad \text{zero divisor} \quad\Longleftrightarrow\quad \langle\tilde{Ϛ}\rangle_{\natural} = 0\;}.
 $$</p>
 <p>This is the sense in which "the pure states are the zero divisors at trace one": the ideal boundary of the state space is exactly the set of elements at which the algebra ceases to be invertible. An interior state has $\langle\tilde{Ϛ}\rangle_{\natural} > 0$ and is invertible; a pure state has $\langle\tilde{Ϛ}\rangle_{\natural} = 0$ and is not. Purity is the loss of invertibility at the boundary of the cone.</p>
 <p><strong>Extreme rays.</strong> The positive cone is generated by its extreme rays, and these are the rank-one projections. Equivalently, the pure states are the extreme points of the Bloch ball: every state in the interior of the ball is a nontrivial convex combination of boundary points, while no boundary point is a convex combination of two other states.</p>
 <p>The transition probability between two pure states is the normalised Hermitian form, read through the trace,</p>
 <p>$$
-\mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr) = \cos^2\frac{\theta}{2},
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr) = \cos^2\frac{\theta}{2}\;},
 $$</p>
 <p>where $\theta$ is the angle between $\vec u$ and $\vec v$. It equals $1$ for $\vec u = \vec v$ and $0$ for $\vec u = -\vec v$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the plain form is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.</p>
 <h2 id="mixed-states-the-interior-of-the-ball">Mixed States: The Interior of the Ball</h2>
@@ -333,9 +336,9 @@ $$</p>
 $$</p>
 <p>with $h_t = \tfrac{1}{2}ct'$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and</p>
 <p>$$
-\mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct',
+\boxed{\;\mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct',
 \qquad
-\langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}.
+\langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}\;}.
 $$</p>
 <p>Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice of the future cone, at $ct' = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; there the relations specialize to</p>
 <p>$$

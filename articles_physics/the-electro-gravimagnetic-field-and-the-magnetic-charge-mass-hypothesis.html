@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -83,11 +86,11 @@ $$</p>
 <p>The programme writes the same field as the dual $-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$; the two differ by the central factor $-i$, and no separate symbol is used for the dual.</p>
 <p>The symmetrized Maxwell system for this object is one complex equation and one complex scalar equation,</p>
 <p>$$
-\partial_\tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
+\boxed{\;\partial_\tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
 \qquad
 \rho = -i\,\mathrm{div}\,\tilde F = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
 \qquad
-\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H .
+\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H\;}
 $$</p>
 <p>Here $\rho_E = \epsilon\,\mathrm{div}\,\vec E$ and $\rho_H = -\mu\,\mathrm{div}\,\vec H$ are the electric and magnetic charge densities, and $\vec j_E$, $\vec j_H$ the corresponding currents. This is the corpus's Maxwell content in the source's sign convention: the corpus writes $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$, and the present equation is the same pair with the combined current $\vec J$ and the source's overall sign. The two conventions must not be mixed.</p>
 <p>The energy density and the energy flux are read off $\tilde F$ directly,</p>
@@ -154,9 +157,9 @@ $$</p>
 <h3 id="the-first-law-the-free-field">The first law: the free field</h3>
 <p>In the absence of other fields the force vanishes, and the interaction equation reduces to the inertia equation</p>
 <p>$$
-D^-\tilde J_{\mathrm{eg}} = (\partial_\tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
+\boxed{\;D^-\tilde J_{\mathrm{eg}} = (\partial_\tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
 \qquad
-\tilde J_{\mathrm{eg}} = i\rho + \vec J .
+\tilde J_{\mathrm{eg}} = i\rho + \vec J\;}
 $$
 The subscript marks the programme's own charge–current; it is not the corpus four-current $\tilde J$.</p>
 <p>Its scalar and vector parts are</p>
@@ -184,9 +187,9 @@ $$</p>
 <h3 id="the-second-law-the-interaction-equation">The second law: the interaction equation</h3>
 <p>A field's charge–current is changed by the field of the other charges, in the direction of the power–force biquaternion. The proposed equations are</p>
 <p>$$
-\kappa\,D^-\tilde J_{\mathrm{eg}} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F_2,
+\boxed{\;\kappa\,D^-\tilde J_{\mathrm{eg}} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F_2,
 \qquad
-\kappa\,D^-\tilde J_{\mathrm{eg},2} = i\,\tilde J_{\mathrm{eg},2}\circ\tilde F,
+\kappa\,D^-\tilde J_{\mathrm{eg},2} = i\,\tilde J_{\mathrm{eg},2}\circ\tilde F\;}
 $$</p>
 <p>together with the third-law relation below and the Maxwell equation $D^+\tilde F = -i\tilde J_{\mathrm{eg}}$ for each field. Here $\kappa$ is a single dimensional coupling constant and $\tilde F$ is the field strength of that field. The system is closed and nonlinear, and its right-hand side is the force density of the <em>other</em> field — the model deliberately makes a field act on other charges, never on its own. When one field dominates, $W_2 \gg W$, the pair collapses to a single equation for the weaker field's charge–current with the stronger field's strength as a known input, which is the form in which the programme's applications are stated.</p>
 <p>The scalar part of the second-law equation, together with charge conservation, forces the source's conclusion $M = 0$, i.e.</p>
@@ -271,9 +274,9 @@ $$</p>
 <p>which is the pair of the first section with $\mathrm{grad}\,a$ added to the current and $-\partial_\tau a$ added to the charge, and which reduces to that pair precisely when $a = 0$ and the system is closed. Those two additions are the only two places the complex-gradient structure can put a scalar, so the modification is forced once $a$ is admitted: there is no third term to choose.</p>
 <p><strong>The integrability interpretation.</strong> In the corpus's language the ordinary conservation law is the integrability condition of the sourced Maxwell equation. Applying $\mathrm{Sc}\,\tilde{\nabla}^{\natural}$ to $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ annihilates the left side, because $\tilde{\nabla}^{\natural}\tilde{\nabla}$ is the scalar d'Alembertian and $\tilde{F}$ has no scalar part; what survives is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$. With the scalar part $ia$ retained in $\tilde F_a$, the same calculation gives</p>
 <p>$$
-\sqrt{\mu}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = -\,\Box\,(i a)
+\boxed{\;\sqrt{\mu}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = -\,\Box\,(i a)
 \qquad\Longleftrightarrow\qquad
-\Box\,a \;\propto\; M,
+\Box\,a \;\propto\; M\;}
 $$</p>
 <p>so the scalar field is sourced by the external power — the very quantity whose presence breaks the conservation law — and propagates as a wave. This is the cleanest form of the revision. Where the corpus's definition of the field strength discards the scalar part of $\tilde{\nabla}^{\natural}\vec F$ as gauge, the programme retains it, and the retained scalar is exactly the field whose d'Alembertian absorbs the failure of conservation.</p>
 <p><strong>The word "modified" is not this corpus's modification, and the two must not be conflated.</strong> The programme's repair adds a scalar field to the field strength and turns the Maxwell system into an <strong>open</strong> one: the source is no longer closed, and the added scalar is what absorbs the failure of conservation. The corpus has a modification of its own, in <em>Electromagnetism in Media: The Local Complex Structure at Work</em>, where the local complex structure of a material slice changes the constitutive relations — the medium, not the conservation law, is what is modified there. The two are different modifications, of different objects, for different reasons: one changes whether the source is closed, the other changes how the field and the medium are tied. The corpus's own Maxwell article and the entries of <em>the-field-strength-biquaternion-and-its-invariants</em> are unaffected by the programme's revision, and a reader who carries the programme's open system into them will change what the corpus states. The one thing that does transfer is negative and stated above: the corpus's own definition of the field strength discards the scalar part of $\tilde{\nabla}^{\natural}\vec F$ as gauge, and the programme's revision is exactly the choice to retain it. That contrast is the content; the modification itself is the programme's.</p>
@@ -316,7 +319,7 @@ while the mutual bigradients transform by the same conjugation — the paper's L
 $$</p>
 <p>with $\alpha = \alpha_1 + i\alpha_2$, the two real weights being the source's $a_1, a_2$ in $\alpha = i\,a_1/\epsilon + a_2/\mu$, so that $\alpha_1 = a_2/\mu$ and $\alpha_2 = a_1/\epsilon$. The last equation is the one that carries gravity. Writing the potential part of $\vec H$ as the negative gradient of a Newtonian potential, $\vec H = -\mathrm{grad}\,\phi$, it becomes</p>
 <p>$$
-\Delta\phi = \frac{\rho_H}{\mu},
+\boxed{\;\Delta\phi = \frac{\rho_H}{\mu}\;}
 $$</p>
 <p>so the potential of the gravitational field obeys Poisson's equation and the field $\vec H = -\mathrm{grad}\,\phi$ points towards its source: for a positive mass density the static field is <strong>attractive</strong>. At this point the identification $\rho_H \leftrightarrow \rho_{\text{mass}}$ becomes quantitative, because the strength of the Poisson equation fixes the field constant of the medium. The source states the choice,</p>
 <p>$$
@@ -356,7 +359,7 @@ $$</p>
 $$</p>
 <p>and it has a simplifying property worth recording: <strong>for a purely electric charge and current, $\rho_H = 0$ and $\vec j_H = 0$ in both fields, the vector part vanishes identically and the pair term is the central real scalar</strong></p>
 <p>$$
-\tilde{\Sigma}_{kl} = \rho_k\rho_l - \left(\vec J_k,\vec J_l\right),
+\boxed{\;\tilde{\Sigma}_{kl} = \rho_k\rho_l - \left(\vec J_k,\vec J_l\right)\;}
 $$</p>
 <p>the Minkowski pairing of the two charge–current four-vectors under the signature $(+,-,-,-)$ — the same bilinear pairing that the algebra's pseudonorm is built from. The interaction energy of a pair of sources is thus the pairing of the sources, with the central scalar that the algebra's own bilinear form supplies and no new object. With magnetic charge present the cancellation fails and the pair term carries a vector part; the corpus records the general form above and the central special case, which was verified exactly.</p>
 <p>The two papers' second-law postulates differ by the sign of $\tilde J_{\mathrm{eg}}$, and the two interaction energies differ accordingly in the sign of their cross terms while their per-field pieces agree; the corpus quotes each in its own paper's convention. The <strong>conjugation convention must also be fixed before the two papers' pair terms are compared term by term</strong>: recomputed with the 2007 paper's own conjugation $F^* = \bar f - \bar F$ instead of the coefficient conjugate, the same pair term has a real scalar part and a purely imaginary vector part, so the two are different objects and not sign multiples of one another. The expansion above is the coefficient-convention one, which is the convention in which this article writes the energy display.</p>

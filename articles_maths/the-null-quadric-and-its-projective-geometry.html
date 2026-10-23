@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,8 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity, its automorphism group and its complement are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.</p>
 <p>The article is the companion of <em>The Isotropic Structure of the General Quaternionic Algebra</em>, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in <em>The Topology of the Zero-Divisor Cone</em>; the real forms of the form and their signatures are <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Algebraic Norm on the Remarkable Subspaces</em>; the Lorentzian and conformal reading of the real slices is <em>Biquaternion Lorentzian and Conformal Geometry</em>; the algebra and its fixed-point subspaces are <em>The Biquaternion Algebra as a Vector Space over $\mathbb{C}$ and $\mathbb{R}$</em>; and the classical groups that act are <em>Lie Groups</em>.</p>
-<p><strong>Scope.</strong> The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, the automorphism group of the complex quadric, and the complement of the quadric, which is the Lorentz group. No physics is invoked and no new result about the algebra is claimed.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\sum_\mu Q_{1,\mu} Q_{2,\mu}$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.</p>
 <h2 id="the-segre-embedding">The Segre Embedding</h2>
 <p>Choose on $\mathbb{B}$ the linear coordinates</p>
 <p>$$
@@ -108,14 +109,14 @@ $$</p>
 W^{[v]}=\operatorname{span}\{(\gamma,\delta,0,0),\,(0,0,\gamma,\delta)\},\qquad [v]=[\gamma:\delta].
 $$</p>
 <p>Their projectivisations $\ell_{[u]}=\mathbb{P}(W_{[u]})$ and $m_{[v]}=\mathbb{P}(W^{[v]})$ are the <strong>two rulings</strong>: each family is a $\mathbb{P}^1$ of lines; every quadric point lies on exactly one line of each family; lines of the same family are disjoint, while lines of different families meet in exactly one point, the point $[(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)]$ that the pair $([u],[v])$ determines.</p>
-<h2 id="the-projective-null-quadric-math56">The Projective Null Quadric $Q^2$</h2>
+<h2 id="the-projective-null-quadric-math45">The Projective Null Quadric $Q^2$</h2>
 <p>The projectivised null cone</p>
 <p>$$
 Q^2=\{[\tilde{Q}]\in\mathbb{P}^3:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}
 $$</p>
 <p>is a smooth irreducible quadric surface, isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; it is the classical <strong>Segre quadric</strong>. Non-degeneracy of the form gives smoothness, and over $\mathbb{C}$ all smooth quadric surfaces in $\mathbb{P}^3$ are projectively equivalent.</p>
 <p>Its real points depend on the real form of the general quaternionic bilinear form (<em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Algebraic Norm on the Remarkable Subspaces</em>): empty for the definite form on $\mathbb{H}_{\mathbb{B}}$; the sphere $S^2$ for the Lorentzian form on $\mathbb{M}_+$ (or $\mathbb{M}_-$); the torus $S^1\times S^1$ for the split form of signature $(2,2)$. Only in the split case does the real quadric contain real lines.</p>
-<h2 id="lines-in-math67-the-klein-quadric-and-the-plucker-embedding">Lines in $\mathbb{P}^3$, the Klein Quadric and the Plücker Embedding</h2>
+<h2 id="lines-in-math56-the-klein-quadric-and-the-plucker-embedding">Lines in $\mathbb{P}^3$, the Klein Quadric and the Plücker Embedding</h2>
 <p>A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $\tilde Q_2,\tilde Q_1$ of $U$, the <strong>Plücker coordinates</strong> are the six minors</p>
 <p>$$
 p_{ij}=Q_{2,i}Q_{1,j}-Q_{2,j}Q_{1,i},\qquad 0\le i < j\le3,

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ L_{\tilde Q_3}\tilde Q_2=\tilde Q_3\diamond\tilde Q_2=\vec Q_3\times\overline{\v
 $$</p>
 <p>the map that pairs $\tilde Q_3$ with the second slot of the multiplication. The map is <strong>conjugate-linear</strong> in $\tilde Q_2$, since it is the composition of the coefficient conjugation with a complex-linear map, and this single fact removes the ordinary operator calculus from the block: the left multiplications do not form an associative algebra of operators, the map $\tilde Q_3\mapsto L_{\tilde Q_3}$ is $\mathbb{C}$-linear in the parameter (the first slot is the linear one) while the operator itself is conjugate-linear in its argument, and the adjoint with respect to the form of the block is again conjugate-linear. This article reads the operators one by one. The <strong>left multiplication</strong> is described with its matrix in the real basis, its rank, its kernel and its image. The <strong>adjoint</strong> with respect to the Krein form is then computed, in the class of conjugate-linear maps, and it turns out to be the negative of the operator itself. The <strong>derivations</strong> of the block are computed, and they form the direct sum of the endomorphisms of the centre and of the three-dimensional real skew maps of the vector parts; from them the <strong>structure group</strong> of the block, the group of invertible linear maps preserving the multiplication, is read. The <strong>composition</strong> of two left multiplications is finally computed, and with it the conjugate-linear invariants of the block. The reading runs parallel to the operator articles of the two algebras and of the two sesqualgebras, and it is the operator side of the multiplication.</p>
 <p>The block is <em>Introduction to the Antisymmetric Quaternionic Sesqualgebra</em>; its pairing with the form is <em>The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra</em>; its diagonal and the failure of the Jacobi identity are <em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em>; the general construction of the parts is <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>; and the form is <em>The Krein Gram Matrix and the Restrictions of the Form</em>. This article owns the operators of the block.</p>
-<p><strong>Conventions.</strong> As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$; a generic element $\tilde Q_2=Q_{2t}e_t+\vec Q_2$; the product is $\diamond$ and the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, so that a real-linear map of the space is an eight-by-eight real matrix in it.</p>
 <h2 id="the-left-multiplication">The Left Multiplication</h2>
 <h3 id="the-rule-and-the-class">The Rule and the Class</h3>
 <p><strong>Definition.</strong> The <strong>left multiplication</strong> by $\tilde Q_3$ is $L_{\tilde Q_3}\tilde Q_2=\tilde Q_3\diamond\tilde Q_2=\vec Q_3\times\overline{\vec R}$.</p>

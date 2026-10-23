@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -113,15 +116,15 @@ $$</p>
 <h3 id="the-on-shell-momentum-element">The on-shell momentum element</h3>
 <p>For a free particle the kinematic data are an energy $E$ and a momentum $\vec p$. In the material sector they combine into the momentum biquaternion</p>
 <p>$$
-\tilde P=i\frac{E}{c}\,e_t+\vec p ,
+\boxed{\;\tilde P=i\frac{E}{c}\,e_t+\vec p ,
 \qquad
-\langle\tilde P\rangle_{\natural}=\left(i\frac{E}{c}\right)^2+\vec p^2=-\frac{E^2}{c^2}+p^2 ,
+\langle\tilde P\rangle_{\natural}=\left(i\frac{E}{c}\right)^2+\vec p^2=-\frac{E^2}{c^2}+p^2\;},
 $$</p>
 <p>whose biquaternion norm vanishes precisely on the massless shell. The zero divisor locus in momentum space is therefore the massless shell $E=|p|c$, the boundary between the spacelike and timelike regions. Whether a physical particle sits on it is a question about its dispersion relation, and that is where the non-relativistic and relativistic interpretations separate.</p>
 <h3 id="the-non-relativistic-dispersion-and-the-cone">The non-relativistic dispersion and the cone</h3>
 <p>For the non-relativistic free particle $E=p^2/2m$, so the on-shell momentum element has</p>
 <p>$$
-\langle\tilde P\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}=p^2\left(1-\frac{p^2}{4m^2c^2}\right).
+\boxed{\;\langle\tilde P\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}=p^2\left(1-\frac{p^2}{4m^2c^2}\right)\;}.
 $$</p>
 <p>This was verified numerically in explicit complex arithmetic with $c=m=1$: the values are $N=+0.234375,+0.750000,+0.984375$ at $p=0.5,1.0,1.5$; $N=+0.003995$ at $p=1.999$; $N=0$ at $p=2$; and $N=-0.004005,-11.250000$ at $p=2.001,3.0$. The dispersion curve is <strong>spacelike</strong> for all $p<2mc$, <strong>null</strong> at $p=2mc$, and <strong>timelike</strong> beyond. The non-relativistic free particle never sits on the zero divisor locus except at the single scale</p>
 <p>$$
@@ -170,7 +173,7 @@ $$</p>
 <h3 id="invariance-of-the-locus-under-the-flow">Invariance of the locus under the flow</h3>
 <p>The locus is dynamically inert. A Lorentz rotor $\tilde U_{\mathrm L}$ with unit norm satisfies</p>
 <p>$$
-\langle\tilde U_{\mathrm L}\,\tilde Q\rangle_{\natural}=\langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural},
+\boxed{\;\langle\tilde U_{\mathrm L}\,\tilde Q\rangle_{\natural}=\langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\;},
 $$</p>
 <p>and a central phase $\tilde U=\exp(i\phi)e_t$ satisfies</p>
 <p>$$

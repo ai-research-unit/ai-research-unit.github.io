@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -86,12 +89,6 @@ natural sign and gives nothing new.</p>
 Lie structure is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em> and the form is <em>The Killing Form
 of the Antisymmetric Plain Algebra</em>, both below this article in this category.
 counterpart is <em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em> of the</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the centre is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\mathbb{R}^3$, and $C_{\vec q_1}$ is the cross-product matrix
-$C_{\vec q_1}\vec q_2=\vec q_1\times\vec q_2$. The bracket of two endomorphisms is
-$[A,B]=AB-BA$; a <strong>derivation</strong> of the block is an endomorphism $D$ with
-$D(\tilde q_1\times\tilde q_2)=D\tilde q_1\times\tilde q_2+\tilde q_1\times D\tilde q_2$.</p>
 <h2 id="the-adjoint-operators">The Adjoint Operators</h2>
 <p><strong>Definition.</strong> The <strong>adjoint operator</strong> of $\tilde q_1$ is the left multiplication</p>
 <p>$$

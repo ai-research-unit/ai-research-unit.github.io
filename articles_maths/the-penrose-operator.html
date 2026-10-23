@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>is the equation of the operator; its solutions are the twistor spinors, or conformal Killing spinors, and the operator's defining property is that the equation depends on the conformal class of the metric and not on the metric. The operator is named after the conformally invariant form of the twistor programme, where the same first-order equation controls the analytic objects attached to the twistor space.</p>
 <p>The content of the article is the conformal structure of the equation. The twistor equation is a first-order system that is not elliptic but overdetermined; its solutions on the conformally flat model are the spinor-valued distributions of the conformal group, of dimension $2\dim\Delta_n$; on a closed Einstein manifold they are the sums of Killing spinors; and a twistor spinor pairs with its conjugate to give a conformal Killing field, which is the real-geometry bridge between the spinor data and the conformal group. Each of these statements is a conformal statement, and the reason the operator exists is that the Cauchy–Riemann operator of <em>The Spinor Operator</em> is not conformally covariant: it acquires a zeroth-order term, and the twistor operator is the part of the covariant derivative that does not.</p>
-<p><strong>The boundaries.</strong> The operator, its symbol and the decomposition of the covariant derivative are <em>The Twistor Operator</em>; the Cauchy–Riemann operator and the spin connection are <em>The Spinor Operator</em>; the Clifford multiplication is <em>The Clifford Multiplication Operator</em>; the conformal group, the conformal model of Euclidean space and the conformal invariance of the operators of this part are <em>Conformal Geometry</em> and <em>The Conformal Model of Euclidean Space</em>. The Killing spinor equation and its relation to the Einstein condition are <em>Spin Geometry</em> and <em>Killing Spinors and the Einstein Condition</em>; the twistor space and the Penrose transform as complex geometry are <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>. The base is a Riemannian spin manifold $(M,g)$ of dimension $n\ge3$ with $c(v)^2=-g(v,v)\operatorname{id}$; the two-dimensional case, where the weights degenerate, is indicated.</p>
 <h2 id="the-operator-and-the-equation">The Operator and the Equation</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>Penrose operator</strong> is the first-order differential operator</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.</p>
 <p>The general theory is <em>The Fundamental Symmetry</em>, <em>Krein Spaces</em> and <em>Indefinite Inner Product Spaces</em>; the operators that ${}^{\natural}$ makes available are <em>J-Self-Adjoint and J-Unitary Operators</em>; the form is <em>The Krein Gram Matrix and the Restrictions of the Form</em>; the positive definite form of the bridge is <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>; and the four involutions whose lattice ${}^{\natural}$ belongs to are <em>The Group of Involutions</em> and <em>Comparison of the Remarkable Subspaces</em>.</p>
-<p><strong>Conventions.</strong> As in the companion articles: $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$, $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^{2}$, $\|\tilde{Q}_1\|_E=(\sum_\mu|Q_{1,\mu}|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural*}\tilde{Q}_2)$, with the <strong>sign vector</strong> $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q}_1)_\mu=\varepsilon_\mu Q_{1,\mu}$, the dagger acts on the coefficients by $Q_{1,\mu}^{*}=\varepsilon_\mu\bar Q_{1,\mu}$, and the form is the four terms $\bar Q_tQ_{2t}-\bar Q_xQ_{2x}-\bar Q_yQ_{2y}-\bar Q_zQ_{2z}$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}_1^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q}_1)$ (<em>The Matrix Element Representation and the Biquaternion Dynamics</em>).</p>
 <h2 id="the-natural-conjugation-as-a-fundamental-symmetry">The Natural Conjugation as a Fundamental Symmetry</h2>
 <p><strong>Theorem.</strong> The natural conjugation $J:= {}^{\natural}$ is a fundamental symmetry of the general quaternionic sesquilinear form:</p>
 <p>$$

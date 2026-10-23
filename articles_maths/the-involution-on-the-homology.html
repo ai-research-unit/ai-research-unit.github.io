@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>An involution of a manifold acts on the homology, and this article reads the action as a structure on the homology module itself: the involution makes $H_*(M;k)$ a module over the group ring $k[\mathbb{Z}/2]$, and its decomposition into the <strong>fixed part</strong> and the <strong>anti-fixed part</strong> is the refinement that the intersection form sees. The point of the article is the interaction: the intersection form of <em>Poincaré Duality</em> is compatible with the involution, and the compatibility decides whether the two parts are orthogonal or dual, and what the signature does.</p>
 <p>The two cases are the whole content. An <strong>orientation-preserving</strong> involution leaves the intersection form invariant, the fixed and the anti-fixed parts are orthogonal and nondegenerate for the form separately, and the signature of the manifold is the sum of the signatures of the two parts. An <strong>orientation-reversing</strong> involution negates the form, the two parts are isotropic and are placed in perfect duality by the form, and the signature of the manifold must vanish. This dichotomy is the source of the equivariant signature and of the fixed-point formulae of the later articles.</p>
 <p><strong>The article assumes</strong> the homology and cohomology of a manifold, the cup and cap products, Poincaré duality and the intersection form and its signature, all of <em>Algebraic Topology</em> in this Part, and the elementary operator theory of <em>The Involution as an Operator on the Homology</em>.</p>
-<p><strong>The boundaries of the article.</strong> The operator on the homology — the group ring, the transfer and the Smith theory — is <em>The Involution as an Operator on the Homology</em>, and its results are used here without repetition. The fixed set as a manifold, the equivariant surgery and the classification of involutions are the group <code>- * Theory</code>. The operators built from the involution, with the adjoint as their archetype, and the equivariant signature are the group <code>- * Operator Theory</code>; in particular the $G$-signature theorem is <em>Hermitian Pairings and the Equivariant Signature</em>, and the present article stops at the algebraic consequence $\sigma(M)=0$ for an orientation-reversing involution. No analysis and no smooth structure is used.</p>
 <h2 id="the-involution-on-the-homology-and-the-cohomology">The Involution on the Homology and the Cohomology</h2>
 <p><strong>Definition.</strong> Let $M$ be a finite CW complex and let $T : M \to M$ be an involution. The induced maps are
 $$

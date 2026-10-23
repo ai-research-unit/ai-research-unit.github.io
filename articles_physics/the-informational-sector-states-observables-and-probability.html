@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -93,7 +96,7 @@
 </tr>
 <tr>
 <td>The eigenvalue decomposition, the normality criterion and the non-normal pair</td>
-<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+<td><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a></td>
 </tr>
 <tr>
 <td>The four forms and their restrictions</td>
@@ -140,7 +143,7 @@ $$</p>
 $$</p>
 <p>the two minus signs cancelling. The two idempotents along the axis are</p>
 <p>$$
-\tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr).
+\boxed{\;\tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr)\;}.
 $$</p>
 <p>They are Hermitian, idempotent, normalised by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12\langle e_t\rangle$ (trace one in the $2\times2$ image), orthogonal and complete:</p>
 <p>$$
@@ -159,7 +162,7 @@ $$</p>
 $$</p>
 <p>with the eigenvalues</p>
 <p>$$
-\lambda_\pm=h_t\pm\lvert\vec h\rvert.
+\boxed{\;\lambda_\pm=h_t\pm\lvert\vec h\rvert\;}.
 $$</p>
 <p>The Hermitian form against the unit, the trace and the biquaternion norm read</p>
 <p>$$
@@ -172,7 +175,7 @@ $$</p>
 $$</p>
 <p>with $\vec r$ a real vector. Its spectral decomposition is</p>
 <p>$$
-\tilde{Ϛ}=\frac{1+r}{2}\tilde\Pi_1(\vec u)+\frac{1-r}{2}\tilde\Pi_2(\vec u),\qquad \vec r=r\vec u,
+\boxed{\;\tilde{Ϛ}=\frac{1+r}{2}\tilde\Pi_1(\vec u)+\frac{1-r}{2}\tilde\Pi_2(\vec u),\qquad \vec r=r\vec u\;},
 $$</p>
 <p>so $\tilde{Ϛ}$ is positive exactly when $\lvert\vec r\rvert\leq1$. The boundary $\lvert\vec r\rvert=1$ is the set of pure states, the interior $\lvert\vec r\rvert<1$ the mixed states, and the centre $\vec r=0$ the maximally mixed state $\tfrac12e_t$. The whole set is the <strong>Bloch ball</strong>, of real dimension three.</p>
 <p>The biquaternion norm of the state is</p>
@@ -331,7 +334,7 @@ $$</p>
 <p>Read physically, the two eigenvalues are the two possible readings of the observable and the two idempotents are the two outcomes. The spectral decomposition is the algebraic form of a readout with two outcomes. The spectrum does not by itself give the frequencies of those outcomes; that is the role of the state and of the Born pairing.</p>
 <p><strong>The boundary.</strong> The spectrum is the set of possible readings, not the distribution of readings. The distribution requires a state, and the state is a separate element of the same sector.</p>
 <p><strong>Normal is not automatic.</strong> The readout above is the Hermitian case of the eigenvalue decomposition. For an element with distinct eigenvalues, the eigenprojections are Hermitian exactly when the element is normal, $\tilde H\tilde H^{*}=\tilde H^{*}\tilde H$. Otherwise the pair is still complete and $\tilde\Pi_+\tilde\Pi_-=0$, but the idempotents are not Hermitian, the left and right eigenbases differ, and the coefficients are read with a biorthogonal pairing rather than with the Born form. The probabilities of this article are therefore those of a normal observable, and the positivity statements do not extend to a general element without normality.</p>
-<p>The two pairings are worth separating. The <strong>orthogonal</strong> pairing is the Born form $\langle\tilde\Pi_\sigma,\varrho\rangle_{*}$: it uses the Hermitian eigenprojections of a normal element and the Hermitian state, and it is positive on the sector. The <strong>biorthogonal</strong> pairing uses the right and left eigenbases, $\ell_\sigma^{\dagger}r_\tau=\delta_{\sigma\tau}$, and the projectors $P_\sigma=r_\sigma\ell_\sigma^{\dagger}$, which are not Hermitian in general; the weights are $\ell_\sigma^{\dagger}\varrho r_\sigma$, and they are not positive for every state. The two coincide exactly when the element is normal. The biorthogonal calculus, the Petermann factor and the exceptional-point limit are <em>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</em>.</p>
+<p>The two pairings are worth separating. The <strong>orthogonal</strong> pairing is the Born form $\langle\tilde\Pi_\sigma,\tilde{Ϛ}\rangle_{*}$: it uses the Hermitian eigenprojections of a normal element and the Hermitian state, and it is positive on the sector. The <strong>biorthogonal</strong> pairing uses the right and left eigenbases, $\ell_\sigma^{\dagger}r_\tau=\delta_{\sigma\tau}$, and the projectors $P_\sigma=r_\sigma\ell_\sigma^{\dagger}$, which are not Hermitian in general; the weights are $\ell_\sigma^{\dagger}\tilde{Ϛ} r_\sigma$, and they are not positive for every state. The two coincide exactly when the element is normal. The biorthogonal calculus, the Petermann factor and the exceptional-point limit are <em>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</em>.</p>
 <h3 id="evolution-and-measurement-are-one-sandwich">Evolution and Measurement Are One Sandwich</h3>
 <p>The action of an element $\tilde Q$ on the sector is the sandwich</p>
 <p>$$
@@ -656,7 +659,7 @@ $$</p>
 <li><a href="../articles_maths/introduction-to-the-remarkable-subspaces.html">Introduction to the Remarkable Subspaces</a>, for the definition and the basis of $\mathbb{M}_+$.</li>
 <li><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra-and-the-general-plain-sesqualgebra-in-exponential-form.html">Square Roots of One and the Idempotents</a>, for the idempotents and the roots of $+1$.</li>
 <li><a href="../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html">The Squares and the Positive Cone of the Biquaternion Sesqualgebra</a>, for the positive cone and the spectral decomposition.</li>
-<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the eigenvalue decomposition, the normality criterion and the non-normal pair.</li>
+<li><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the eigenvalue decomposition, the normality criterion and the non-normal pair.</li>
 <li><a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a>, for the biorthogonal pairing and its difference from the Born form.</li>
 <li><a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, for the forms and the absence of the area pairing.</li>
 <li><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a>, for the sandwich.</li>

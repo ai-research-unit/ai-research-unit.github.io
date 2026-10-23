@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>A <strong>hyperkähler manifold</strong> is a Riemannian manifold carrying three complex structures $J_1, J_2, J_3$ with the quaternionic relations, each of them compatible with the metric in the sense of a Kähler structure. It is the quaternionic analogue of a Kähler manifold, and the passage from one to three complex structures is not a small step: the requirement that the three Kähler forms be closed is a system of equations on the curvature, and its solutions are Ricci-flat. A hyperkähler manifold is at once a quaternionic Kähler manifold with vanishing scalar curvature, a Riemannian manifold with holonomy group contained in $Sp(n)$, and a Calabi–Yau manifold of a special kind. It is the setting for the classical four-dimensional objects — the $K3$ surfaces and the four-torus, the Eguchi–Hanson and Taub–NUT metrics — and for the moduli spaces of the Yang–Mills and Higgs equations in higher dimensions, which are hyperkähler by construction and which are the reason the concept was isolated.</p>
 <p>The article is organised around three equivalent descriptions. The first is <strong>complex</strong>: three integrable complex structures with the quaternionic relations, related by a two-sphere of complex structures $\mathbb{I} = aJ_1+bJ_2+cJ_3$ on which the three Kähler forms combine into a two-sphere of Kähler forms. The second is <strong>metric</strong>: the holonomy group is contained in $Sp(n)$, the compact symplectic group, which is one of the entries in Berger's list of irreducible holonomy groups and is the Ricci-flat Kähler case. The third is <strong>algebraic</strong>, through the Bogomolov decomposition of a compact Kähler manifold with $c_1=0$ into tori, Calabi–Yau factors and irreducible hyperkähler factors, and through the hyperkähler quotient, which produces the new examples from old ones.</p>
-<p><strong>The boundaries of the article.</strong> The quaternion algebra is that of Part I'sthe quaternionic structures, the Obata connection and the quaternionic Kähler condition are those of <em>Quaternionic Geometry</em>, which is the immediately preceding article of this half, and the Riemannian metric, the Levi-Civita connection, holonomy and Berger's classification are those of <em>Riemannian Geometry</em>. The complex structure, the Chern connection and the fundamental form are those of <em>Hermitian Geometry and Almost Complex Structures</em>, and the Kähler condition, the Hodge theory and the Ricci form those of <em>Kähler Geometry</em>. The Calabi–Yau condition and the Bogomolov decomposition are developed. The hyperkähler quotient and the twistor construction rely on the theory of moment maps for symplectic group actions, which is that of <em>Symplectic Geometry</em>, and on the analysis of the Monge–Ampère equation, which belongs to Part III, where the measure and the limit are available; the existence theorems are stated here and their proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.</p>
 <h2 id="hyperkahler-structures">Hyperkähler Structures</h2>
 <p><strong>Definition.</strong> A <strong>hyperkähler manifold</strong> is a Riemannian manifold $(M,g)$ together with a hypercomplex structure $(J_1,J_2,J_3)$ such that each $J_i$ is an isometry of $g$ and the fundamental form</p>
 <p>$$

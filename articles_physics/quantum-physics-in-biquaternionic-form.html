@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -117,7 +120,7 @@ $$</p>
 $$</p>
 <p>The sum is scalar:</p>
 <p>$$
-\boxed{\;\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2.\;}
+\boxed{\;\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2\;}.
 $$</p>
 <p>This is the <strong>Lorentzian</strong> bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_1,\tilde{H}_1\rangle_{\natural} = \langle\tilde{H}_1\rangle_{\natural}$. On $\mathbb{M}_+$ it is also the <strong>Krein form</strong> $\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_1^{\natural}\tilde{H}_2^{*})$ of the companion article: for Hermitian elements $\tilde{H}_1^{\natural} = \bar{\tilde{H}}_1$ and $\tilde{H}_2^{*} = \tilde{H}_2$, so the form reads $\mathrm{Sc}(\bar{\tilde{H}}_1\tilde{H}_2) = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ even though the two differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.</p>
 <p>The antisymmetric combination contains the vector part:</p>
@@ -188,7 +191,7 @@ $$</p>
 <p>The pure states form the boundary sphere $|\vec r| = 1$; the maximally mixed state is at the centre.</p>
 <p><strong>A structural observation.</strong> The positivity condition $|\vec r| \leq 1$ is equivalent to the condition $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$ on the biquaternion norm of $\mathbb{B}$:</p>
 <p>$$
-\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t.
+\boxed{\;\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t\;}.
 $$</p>
 <p>So the Bloch ball is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ with the <strong>future light cone</strong> of the biquaternion norm. The pure states form the boundary of the cone, which is also the set of zero divisors of $\mathbb{M}_+$ at the normalisation $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$.</p>
 <p>This is a clean geometric characterization: <strong>states are the positive elements of the future light cone of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$; pure states are the normalised elements on the cone itself.</strong></p>
@@ -255,7 +258,7 @@ $$</p>
 <h3 id="probabilities">Probabilities</h3>
 <p>For a projective measurement of an observable $\tilde{H} = h_t e_t + i\vec h$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_t \pm |\vec h|$, with probabilities</p>
 <p>$$
-p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
+\boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right)\;},
 $$</p>
 <p>where $\vec u_h = \vec h/|\vec h|$. The probabilities depend only on the angle between the measurement direction $\vec u_h$ and the Bloch vector $\vec r$.</p>
 <p>The derivation is direct: $p_+ = \langle\tilde\Pi_1(\vec u_h),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ}^{*})$, and this is $\tfrac{1}{2}(1 + \vec u_h\cdot\vec r)$.</p>
@@ -270,7 +273,7 @@ $$</p>
 $$</p>
 <p>where $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}^{*})$. Hence the post-measurement state is simply</p>
 <p>$$
-\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1(\vec u_h).
+\boxed{\;\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1(\vec u_h)\;}.
 $$</p>
 <p>So the state collapses to the idempotent associated with the outcome. This is the standard collapse, expressed as a composition of algebraic operations.</p>
 <h3 id="normalisation-and-the-trace-reading">Normalisation and the Trace Reading</h3>
@@ -298,7 +301,7 @@ $$</p>
 <p>with $\tilde{H} = h_t e_t + i\vec h \in \mathbb{M}_+$ a Hermitian element (the Hamiltonian).</p>
 <p><strong>The solution.</strong> We have $-i\tilde{H} = -ih_t e_t + \vec h$. The scalar part and the vector part commute, so</p>
 <p>$$
-\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar) = \exp(-ih_t t'/\hbar)\left(\cos(|\vec h|t'/\hbar)\,e_t + \sin(|\vec h|t'/\hbar)\,\vec u_h\right),
+\boxed{\;\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar) = \exp(-ih_t t'/\hbar)\left(\cos(|\vec h|t'/\hbar)\,e_t + \sin(|\vec h|t'/\hbar)\,\vec u_h\right)\;},
 $$</p>
 <p>where $\vec u_h = \vec h/|\vec h|$ (for $\vec h \neq 0$). The exponential of the vector part uses $\vec u_h^2 = -e_t$, which gives the trigonometric form.</p>
 <p>The element $\tilde{U}(t')$ is <strong>unitary</strong>: $\tilde{U}(t')\tilde{U}(t')^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t'/\hbar$, $\tilde{U}(t')$ is Hermitian exactly when $\tilde{U}(t')^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_tt'/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_tt'/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_t = 0$ only the first case survives, at the isolated times $t' = n\pi\hbar/|\vec h|$. For $h_t \neq 0$ and $\vec h \neq 0$, apart from $t'=0$, the first case gives Hermitian times exactly when $h_t/|\vec h|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>

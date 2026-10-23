@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -201,10 +204,10 @@ $$</p>
 $$</p>
 <p>The <strong>Pancharatnam connection</strong> is the imaginary part of the overlap with the derivative. In the horizontal gauge, the gauge in which the amplitude accumulated along the azimuthal circles carries no phase beyond the connection, it is</p>
 <p>$$
-\mathcal A=i\,\langle J|dJ\rangle
+\boxed{\;\mathcal A=i\,\langle J|dJ\rangle
 =i\,\langle J|\partial_\phi J\rangle\,d\phi
 =-\sin^2\tfrac{\theta}{2}\,d\phi
-=-\tfrac12\left(1-\cos\theta\right)d\phi .
+=-\tfrac12\left(1-\cos\theta\right)d\phi\;}.
 $$</p>
 <p>The connection is real, as it must be for a phase; it is the connection whose parallel transport keeps neighbouring states in Pancharatnam's sense of being in phase. The overall phase of $\vec J$ is the gauge freedom, and $\mathcal A$ is gauge-dependent, but its integral around a closed circuit is not.</p>
 <h3 id="the-criterion-and-the-transport">The Criterion and the Transport</h3>
@@ -217,15 +220,15 @@ $$</p>
 <h3 id="the-curvature-and-the-half-solid-angle-rule">The Curvature and the Half-Solid-Angle Rule</h3>
 <p>The curvature of the connection is</p>
 <p>$$
-\mathcal F=d\mathcal A
+\boxed{\;\mathcal F=d\mathcal A
 =-\tfrac12\sin\theta\,d\theta\wedge d\phi
-=-\tfrac12\,d\Omega ,
+=-\tfrac12\,d\Omega\;},
 $$</p>
 <p>where $d\Omega=\sin\theta\,d\theta\wedge d\phi$ is the area form of the unit sphere. The curvature is a constant multiple of the area form, so the holonomy of any closed circuit is $-1/2$ times the enclosed solid angle:</p>
 <p>$$
-\gamma_{\mathrm{Panch}}=\oint\mathcal A
+\boxed{\;\gamma_{\mathrm{Panch}}=\oint\mathcal A
 =\int\!\!\int_{\text{enclosed}}\mathcal F
-=-\frac12\,\Omega_{\text{enclosed}} .
+=-\frac12\,\Omega_{\text{enclosed}}\;}.
 $$</p>
 <p>This is <strong>Pancharatnam's half-solid-angle rule</strong>. The factor $\tfrac12$ is the signature of the double cover: the curvature is half the area form, so the total flux over the whole sphere is $2\pi$ rather than $4\pi$, and the connection is the vector potential of a half-strength point degeneracy at the centre of the Poincaré sphere. The same factor appeared in the companion article on the Berry phase and, in the double cover of the rotor, in the rigid-body article.</p>
 <h3 id="verification-on-the-sphere">Verification on the Sphere</h3>

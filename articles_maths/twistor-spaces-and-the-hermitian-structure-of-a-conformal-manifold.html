@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ Z(M) = \mathbb{P}(\mathcal{S}^-) \longrightarrow M ,
 $$</p>
 <p>a bundle of projective lines whose fibre at $x$ is the sphere of complex structures on the tangent space $T_xM$ compatible with the conformal structure and the orientation. It is the complex-geometric object attached to the conformal class: the projection is holomorphic when the conformal structure is anti-self-dual, the fibres are holomorphic rational curves, and the conformal geometry of $M$ is encoded in the complex geometry of $Z(M)$. This article treats the twistor space as an object with structure: a fibration, a real structure, a complex structure and a fibrewise Hermitian form.</p>
 <p>The Hermitian content is the fibrewise form and the real structure it carries. Each fibre $\pi^{-1}(x)\cong\mathbb{CP}^1$ is a complex projective line with its Fubini–Study form, the antipodal map of the fibre is the restriction of a global anti-holomorphic involution $\sigma$ of $Z(M)$ without fixed points, and $\sigma$ is the real structure of the twistor space; the fixed loci of $\sigma$ are the twistor lines $\pi^{-1}(x)$, whose normal bundle is $\mathcal{O}(1)\oplus\mathcal{O}(1)$. The conformal structure of $M$ is recovered from the family of these curves, and the Hermitian form on $\mathcal{S}^-$ that defines the real structure is the fibre form of the spinor bundle with its conjugation.</p>
-<p><strong>The boundaries.</strong> The spinor bundle, its chirality and the fibre form are <em>Spin Geometry</em>; the twistor operator and the twistor equation are <em>The Twistor Operator</em> and <em>The Penrose Operator</em>; the complex structure, the Hermitian structure and the correspondence are the sibling <code>- * Theory</code> articles. The body is a four-dimensional oriented Riemannian manifold with a spin structure, $c(v)^2=-g(v,v)\operatorname{id}$, and the spinor bundle $\mathcal{S}=\mathcal{S}^+\oplus\mathcal{S}^-$.</p>
 <h2 id="the-twistor-fibration">The Twistor Fibration</h2>
 <p><strong>Definition.</strong> The <strong>twistor space</strong> of $(M,[g])$ is $Z(M)=\mathbb{P}(\mathcal{S}^-)$, the projectivisation of the negative spinor bundle; the <strong>twistor projection</strong> is $\pi : Z(M)\to M$, sending a line in $\mathcal{S}^-_x$ to the point $x$.</p>
 <p><strong>Proposition.</strong> The fibre $\pi^{-1}(x)$ is the set of complex structures on $T_xM$ compatible with $[g]$ and the orientation, a copy of $\mathbb{CP}^1$; the twistor projection is a fibre bundle with structure group $\mathrm{U}(2)$ containing the fibrewise Möbius transformations; and a connection on $\mathcal{S}^-$ (the spin connection of any metric in the conformal class) gives a horizontal distribution on $Z(M)$.</p>

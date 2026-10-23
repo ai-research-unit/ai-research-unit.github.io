@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -180,9 +183,9 @@ $$</p>
 <p>The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}/d\tau = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde U = \cosh(\psi/2) + i\sinh(\psi/2)\vec e_x$ with $\psi = 1.2$: the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.</p>
 <p><strong>The conservation law for a system, stated correctly.</strong> For an isolated system of bodies $a$ the conserved object is the <strong>total</strong> four-momentum, and the correct statement is</p>
 <p>$$
-\tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
+\boxed{\;\tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
 \qquad
-\frac{d\tilde{P}_{\mathrm{tot}}}{dt'} = 0,
+\frac{d\tilde{P}_{\mathrm{tot}}}{dt'} = 0\;},
 $$</p>
 <p>a vanishing <strong>coordinate</strong>-time derivative. The parent defines the four-force by the <strong>proper</strong>-time derivative of a single body, $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$, and since $d\tau_a = dt'/\gamma_a$,</p>
 <p>$$
@@ -214,7 +217,7 @@ $$</p>
 <h2 id="the-energymomentum-of-the-field">The Energy–Momentum of the Field</h2>
 <p>The same translation symmetry applied to the field action gives the <strong>canonical energy–momentum</strong>, the Noether current of spacetime translations. For the complex scalar field it is</p>
 <p>$$
-T^\mu{}_\nu = -(\partial^\mu\phi^*)\,\partial/\partial Q_\nu\,\phi - (\partial^\mu\phi)\,\partial/\partial Q_\nu\,\phi^* - \delta^\mu{}_\nu\,\mathcal{L},
+\boxed{\;T^\mu{}_\nu = -(\partial^\mu\phi^*)\,\partial/\partial Q_\nu\,\phi - (\partial^\mu\phi)\,\partial/\partial Q_\nu\,\phi^* - \delta^\mu{}_\nu\,\mathcal{L}\;}
 $$</p>
 <p>and translation invariance of $\mathcal{L}$ gives $\partial/\partial Q_\mu T^\mu{}_\nu = 0$ on shell. Its time–time component is the energy density,</p>
 <p>$$
@@ -233,7 +236,7 @@ L^{\mu\nu} = x^\mu p^\nu - x^\nu p^\mu,
 $$</p>
 <p>using $dx^\mu/d\tau = p^\mu/m$; the conservation of the six independent components is the conservation of angular momentum and of the boost charges. In the biquaternion algebra the antisymmetric pair is a <strong>bivector</strong>, the same representation the field strength occupies: writing</p>
 <p>$$
-\vec{L} = \tfrac12\sum_{\mu,\nu}L^{\mu\nu}\,\bar{e}_\mu e_\nu,
+\boxed{\;\vec{L} = \tfrac12\sum_{\mu,\nu}L^{\mu\nu}\,\bar{e}_\mu e_\nu\;}
 $$</p>
 <p>the angular momentum of a free particle is a single biquaternion. This is the same construction by which $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.</p>
 <p><strong>What does not carry over as a single biquaternion.</strong> For a field, the Noether current of Lorentz invariance is a rank-three object, $L^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu} + S^{\mu\nu\rho}$, whose conservation $\partial/\partial Q_\mu L^{\mu\nu\rho} = 0$ expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\vec{L}$ above is the finite-dimensional case where the rank-two object <em>is</em> the whole story.</p>

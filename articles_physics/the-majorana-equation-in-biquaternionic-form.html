@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -77,7 +80,6 @@
 <li><strong>Not supplied.</strong> The functional-analytic content of the two-component square root identity in the continuum, the observability of the neutrino's Majorana nature, the Majorana phases and the lepton-number-violating rates, and any selection principle that would make one fermion Majorana rather than Dirac, are outside the algebra.</li>
 </ul>
 <p>The article is organised as follows. The next section states the equation and its three forms and proves the equivalence. A section then treats the charge-conjugation eigenstates and the ELKO companion. A section counts the independent solutions against the Dirac count. A closing section separates what the framework supplies, transcribes, and does not supply.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, $\vec e_x \vec e_y=\vec e_z$, and $i$ the scalar imaginary. The matrix realisation is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The Clifford generators are taken in the <strong>block (chiral) basis</strong> of the series,</p>
 <p>$$
 \gamma^{0}=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^{k}=\begin{pmatrix}0&\sigma^{k}\\ -\sigma^{k}&0\end{pmatrix},\qquad k=1,2,3,
@@ -92,9 +94,9 @@ $$</p>
 <h3 id="the-charge-conjugate-form">The Charge-Conjugate Form</h3>
 <p>The equation is</p>
 <p>$$
-i\gamma^{\mu}\partial_\mu\,\psi \;=\; m\,\psi^{c},
+\boxed{\;i\gamma^{\mu}\partial_\mu\,\psi \;=\; m\,\psi^{c},
 \qquad
-\psi^{c} \;=\; C\,\bar\psi^{T} \;=\; C\gamma^{0T}\psi^{*},
+\psi^{c} \;=\; C\,\bar\psi^{T} \;=\; C\gamma^{0T}\psi^{*}\;},
 $$</p>
 <p>with $\bar\psi=\psi^{\dagger}\gamma^{0}$. The charge-conjugation matrix, in the block basis and the mostly-minus signature, is</p>
 <p>$$
@@ -160,18 +162,18 @@ W_R=i\,\sigma^{\mu}\partial_\mu .
 $$</p>
 <p>Then</p>
 <p>$$
-\sigma^{\mu}\bar\sigma^{\nu}+\sigma^{\nu}\bar\sigma^{\mu}=2\eta^{\mu\nu}I_2
+\boxed{\;\sigma^{\mu}\bar\sigma^{\nu}+\sigma^{\nu}\bar\sigma^{\mu}=2\eta^{\mu\nu}I_2
 \qquad\Longrightarrow\qquad
-W_RW_L \;=\; -\,\sigma^{\mu}\bar\sigma^{\nu}\partial_\mu\partial_\nu \;=\; -\,\eta^{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2 .
+W_RW_L \;=\; -\,\sigma^{\mu}\bar\sigma^{\nu}\partial_\mu\partial_\nu \;=\; -\,\eta^{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2\;}.
 $$</p>
 <p>The anticommutator identity was checked for all sixteen pairs $(\mu,\nu)$, and it is the two-component statement of the Clifford relation: the d'Alembertian is the <strong>product</strong> of the two Weyl operators, not the square of either alone. This is why the first-order two-component operators are called square roots of the Klein–Gordon operator, and it is the two-component counterpart of the matrix identity $(\not\partial)^{2}=-\not\partial^{2}=\Box$ used in <em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em> for the four-component case. The mass term supplies the $-m^{2}$, so that the second-order equation of the self-conjugate field is the massive Klein–Gordon equation $(\Box-m^{2})\psi=0$, exactly as in the four-component case verified below.</p>
 <h2 id="the-charge-conjugation-eigenstates-and-the-elko-companion">The Charge-Conjugation Eigenstates and the ELKO Companion</h2>
 <p>The charge-conjugation operator is an involution on an eight-real-dimensional space, so it has two eigenvalues and the module splits into two real forms. The split is worth computing, because one half is the Majorana sector and the other half is a different and often-missed object.</p>
 <p><strong>The spectrum is $\{+1,-1\}$.</strong> Since $\mathcal{C}^{2}=1$, the eigenvalues of $\mathcal{C}$ satisfy $\lambda^{2}=1$; since $\mathcal{C}$ is conjugate-linear and $K$ is real with $K^{2}=I_4$, both eigenvalues occur and the eigenspaces are the kernels of $K\psi^{*}=\pm\psi$. Solving the two linear systems in the eight real variables $(\mathrm{Re}\,\psi,\mathrm{Im}\,\psi)$ gives</p>
 <p>$$
-\dim_{\mathbb{R}}\{\psi:\psi^{c}=+\psi\}=4,
+\boxed{\;\dim_{\mathbb{R}}\{\psi:\psi^{c}=+\psi\}=4,
 \qquad
-\dim_{\mathbb{R}}\{\psi:\psi^{c}=-\psi\}=4,
+\dim_{\mathbb{R}}\{\psi:\psi^{c}=-\psi\}=4\;},
 $$</p>
 <p>and the two eigenspaces together span $\Delta$. Both were obtained by elimination and both are four-real-dimensional, as the reality of $K$ requires: an involution on a real vector space of even dimension has eigenspaces of equal dimension.</p>
 <p><strong>The $+1$ eigenspace is the Majorana sector.</strong> In blocks the condition $K\psi^{*}=+\psi$ reads $\psi_R=-\epsilon\psi_L^{*}$ and $\psi_L=\epsilon\psi_R^{*}$, which are consistent, so the fixed space is parametrised by $\psi_L$ alone and has real dimension four. This is the Majorana condition of the neutrino article, and on this space the Majorana equation is the Dirac equation, as shown above. The bilinears of this sector — no vector current, a permitted scalar mass, a permitted axial current — are the Grassmann-level statements the neutrino article computes, and they are not re-derived here.</p>
@@ -190,7 +192,7 @@ $$</p>
 $$</p>
 <p>Since $(\not\partial)^{2}=g^{\mu\nu}\partial_\mu\partial_\nu=-\Box$ and $i^{2}=-1$, the left side is $\Box\psi$, so</p>
 <p>$$
-(\Box-m^{2})\psi \;=\;0 .
+\boxed{\;(\Box-m^{2})\psi \;=\;0\;}.
 $$</p>
 <p>Every solution of the Majorana equation, in either eigenspace, obeys the massive Klein–Gordon equation; the ELKO companion is on the mass shell even though it is not a Dirac solution. The two sectors differ in the first-order equation, not in the dispersion, and this is the precise sense in which ELKO "solves Klein–Gordon but not Dirac".</p>
 <p><strong>What the split does and does not say.</strong> The two eigenspaces are the two real forms of the Dirac module under the same involution, and the four-component Majorana spinor is the $+1$ one. What the split does <strong>not</strong> provide is a mass term for the ELKO sector: the sign-flipped equation has the mass with the opposite sign, and no rewriting of the algebra turns the $+1$ Majorana equation into the $-1$ one without changing the sign of $m$. Whether the ELKO sector is realised in nature is an open empirical question, and no claim is made here.</p>

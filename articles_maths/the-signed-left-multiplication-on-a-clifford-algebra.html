@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>the ordinary left multiplication applied to the twisted argument. It agrees with $L_a$ on the even part of the algebra and is $-L_a$ there where the argument is odd; it composes according to $L_{a\alpha(c)}$, so two signed left multiplications multiply to an ordinary one; and it is one half of the signed sandwich of <em>The Signed Sandwich on a Clifford Algebra</em>, the other half being an ordinary right multiplication. The article treats this operator, its fixed elements, and the precise sense in which a one-sided operator is half a motion of the quadratic space.</p>
 <p>A word of disambiguation begins the account, because the corpus writes two different operators with the adjective signed in front of "left multiplication". In this article the twist is on the <strong>argument</strong>, $\mathrm{L}^{\alpha}_a=L_a\alpha$; in <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> and <em>The Graded Multiplication Operators</em> the twist is on the <strong>parameter</strong>, $\Lambda^{\alpha}_x(y)=\alpha(x)y$. The two agree only on the even part, and their purposes differ: the parameter twist belongs to the inner conjugation and the versor theory, the argument twist to the signed product and the reflections. Only the argument twist is treated here.</p>
-<p><strong>The boundaries.</strong> The one-sided calculus, the commutant and the composition of the ordinary families are <em>One-Sided Operators on a Clifford Algebra</em>; the signed product, its composition law and its fixed elements are <em>One-Sided Operators with the Signed Product</em>, and the two-sided version is <em>Two-Sided Operators with the Signed Product</em>; the parameter-twisted family is <em>The Graded Multiplication Operators</em>. The signed sandwich formed from the two factors is <em>The Signed Sandwich on a Clifford Algebra</em>, and the reflections are <em>Reflections as Signed Two-Sided Operators on a Clifford Algebra</em>. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
 <h2 id="the-operator">The Operator</h2>
 <h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
 <p><strong>Definition.</strong> For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed left multiplication</strong> is the $F$-linear operator</p>
@@ -113,7 +115,7 @@ $$</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="a-vector-in-the-negative-definite-three-space">A Vector in the Negative-Definite Three-Space</h3>
 <p>For $V$ of dimension three with $e_j^2=-1$ and $u=e_1$, the operator $\mathrm{L}^{\alpha}_{e_1}$ sends $1\mapsto e_1$, $e_1\mapsto -e_1^2=1$, $e_2\mapsto e_1(-e_2)=-e_1e_2$; the even and odd parts are exchanged, and the image is not contained in $V$. The pairing with $R_{e_1^{-1}}=R_{-e_1}$ returns the reflection $\rho_{e_1}$ of the previous article.</p>
-<h3 id="the-scalar-math103">The Scalar $-1$</h3>
+<h3 id="the-scalar-math98">The Scalar $-1$</h3>
 <p>For $a=-1$ the operator is $\mathrm{L}^{\alpha}_{-1}(y)=-\alpha(y)$, which is the identity on the odd part and minus the identity on the even part: the fixed space is the odd part, an example of the fixed-element proposition, and the operator is an involution.</p>
 <h3 id="an-even-element">An Even Element</h3>
 <p>For $a=x=e_1e_2$, even, $\mathrm{L}^{\alpha}_x=L_x$ because $\alpha$ is the identity on the even part; the signed and the ordinary left multiplications coincide, and the pairing with $R_{x^{-1}}$ is the inner conjugation $\mathrm{Ad}_x$, a rotation of the plane. The signed family differs from the ordinary one only through the odd parameters, which is where the reflections live.</p>

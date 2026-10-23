@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -81,9 +84,6 @@ Algebra Reaches SU(2) but Not SU(3)</em>; the generator is <em>Conventions in th
 Universe</em>, §<em>The Central Map and Its Restrictions</em>; the discrete charge the compact phase
 carries is <em>The Physical Interpretation of the 12 Products</em>; and the placement of the gauge row among the products is <em>The Heat Map
 of the Framework: Which Physics Hangs on Which Product</em>.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the centre is
-$Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\{z e_t\}$, of one complex dimension (two real dimensions); the unitary slice is
-$U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$.</p>
 <h2 id="the-central-phase-and-the-gauge-principle">The Central Phase and the Gauge Principle</h2>
 <p>The central phase is the one-parameter subgroup $\theta\mapsto \exp(i\theta)e_t$ of the centre. Three of its
 properties are the whole of its relevance.</p>
@@ -149,9 +149,9 @@ intrinsic group at $\mathrm{U}(1)$ and forbids a second uniform phase, and it do
 which is bounded by the dimension of the anti-Hermitian sector.</p>
 <p><strong>The parity matching.</strong> The central phase has period $2\pi i$, but its shifts are not independent of the module rotations. The kernel of the exponential on the diagonal part is the <strong>parity-matched lattice</strong></p>
 <p>$$
-L=\pi i m\,e_t+\pi n\,\vec U,
+\boxed{\;L=\pi i m\,e_t+\pi n\,\vec U,
 \qquad
-m\equiv n\pmod 2,
+m\equiv n\pmod 2\;},
 $$</p>
 <p>so a shift by $2\pi i$ in the phase and a shift by $2\pi$ in the rotation are each allowed alone, while a half-shift $\pi i$ must be accompanied by a half-turn $\pi\vec U$. The kernel is therefore not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$, and the two factors of $\mathrm{U}(1)\times SU(2)$ are not independent at the level of the exponent. The parity matching is the algebraic reason the central phase cannot be gauged by itself: a gauge shift of the phase alone is a kernel element, but a half-phase is not, and the obstruction is the same one that caps the group at $\mathrm{U}(2)$. The lattice is computed in <em>Biquaternion Elementary Functions</em> and read in <em>The Exponential, the Logarithm and the Generator</em>.</p>
 <h2 id="the-two-candidate-readings">The Two Candidate Readings</h2>

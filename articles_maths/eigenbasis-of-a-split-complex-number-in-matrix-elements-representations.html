@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eigenbasis of a Split-Complex Number in Matrix Elements Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="eigenbasis-of-a-split-complex-number-in-matrix-elements-representations"><strong>Eigenbasis of a Split-Complex Number in Matrix Elements Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The eigenbasis of a split-complex number $Q=q+jq'$ is the pair
+$$
+\Pi_+=\tfrac12(1+j),\qquad \Pi_-=\tfrac12(1-j),
+$$
+in which multiplication by $Q$ is diagonal with eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$. The eigenvalue decomposition, the eigenprojections and the Peirce decomposition are the subject of <em>Eigenbasis of a Split-Complex Number</em>. This article reads the same objects in the matrix element representations of the algebra.</p>
+<p>The algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, and its <strong>$2\times2$ matrix element representation</strong> is the left regular representation in the basis $1,j$,
+$$
+\mathsf{M}_2:\mathbb{D}\longrightarrow M_2(\mathbb{R}),
+\qquad
+\mathsf{M}_2(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+$$
+the Cayley matrix of <em>Split-Complex Regular Element Representation</em>. In the eigenbasis the same element becomes the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$; the passage between the two is the change of basis $\mathsf{C}$ of §<em>Base Changes</em>. The <strong>$4\times4$ representation</strong> is not a representation of $\mathbb{D}$ itself — the regular representation of a two-dimensional algebra is $2\times2$ — but the real regular representation of its complexification $\mathbb{D}_{\mathbb{C}}\cong\mathbb{C}\times\mathbb{C}$, of real dimension four. It is the matrix form of the complexified eigenbasis and is the exact split-complex analogue of the $4\times4$ regular matrices of the biquaternion case.</p>
+<p>The article is organised around three questions. <strong>Which matrices are the eigenprojections?</strong> They are the two rank-one spectral projectors $\rho_\pm=\mathsf{M}_2(\Pi_\pm)$ of $\mathsf{M}_2(Q)$. <strong>What does a change of basis do?</strong> It conjugates every matrix, leaves the trace, the determinant and the spectrum unchanged, and carries the regular model to the diagonal model; the change is unique up to the two independent scales of the eigenvectors. <strong>What happens in the $4\times4$ representation?</strong> The complexified regular matrix is the realification of the $2\times2$ complex matrix, it is block diagonal in the idempotent coordinates, and the realified $\mathsf{C}$ block-diagonalises it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2\times2$ regular model</td>
+<td>$\mathsf{M}_2(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>Eigenprojections</td>
+<td>$\rho_+=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}$, $\rho_-=\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>Eigenbasis model</td>
+<td>$\mathsf{M}_2^{\Pi}(Q)=\operatorname{diag}(\lambda_+,\lambda_-)$</td>
+</tr>
+<tr>
+<td>Base change</td>
+<td>$\mathsf{C}=\tfrac12\begin{pmatrix}1&1\\1&-1\end{pmatrix}$, $\mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>Change law</td>
+<td>$\mathsf{M}_2^{\Pi}(X)=\mathsf{C}^{-1}\mathsf{M}_2(X)\mathsf{C}$</td>
+</tr>
+<tr>
+<td>Spinor spaces</td>
+<td>$S_+=\mathbb{R}\Pi_+$, $S_-=\mathbb{R}\Pi_-$, the two columns</td>
+</tr>
+<tr>
+<td>$4\times4$ model</td>
+<td>realification of the complexified $2\times2$ model, on the real basis $1,i,j,ij$</td>
+</tr>
+<tr>
+<td>$4\times4$ diagonal</td>
+<td>block diagonal with the real $2\times2$ blocks of $\lambda_+$ and $\lambda_-$; over $\mathbb{C}$, $\operatorname{diag}(\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Conventions.</strong> $Q=q+jq'$, $Q_2=q_2+jq_2'$, $\lambda_\pm=q\pm q'$, and a general element in the eigenbasis is $X=\xi_+\Pi_++\xi_-\Pi_-$ with $\xi_\pm=x_0\pm x_1$. The matrix $\mathsf{M}_2$ is the regular matrix in the basis $1,j$; the matrix $\mathsf{M}_2^{\Pi}$ is the matrix in the eigenbasis $(\Pi_+,\Pi_-)$. The change matrix is $\mathsf{C}$, with columns the coordinates of $\Pi_+,\Pi_-$ in the basis $1,j$. The complexification is $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$, with the central complex unit written $i$ and the real basis $1,i,j,ij$. The two representation articles cited above own the assignments and the invariants; this article owns their reading in the eigenbasis and the changes of basis.</p>
+<p><strong>Boundaries.</strong> The spectrum, the eigenprojections and the eigenvalue decomposition are <em>Eigenbasis of a Split-Complex Number</em>. The regular matrix, its multiplicativity and its determinant are <em>Split-Complex Regular Element Representation</em>; the two-component and the other representations are <em>Split-Complex Two-Component Element Representation</em> and <em>Split-Complex Element Representations</em>. The change of basis of an endomorphism is <em>Matrix Algebras</em>, §<em>Change of Basis</em>; the realification is <em>The Realification and the Effect of the Change of Scalars</em>.</p>
+<h2 id="the-math56-matrix-element-representation">The $2\times2$ Matrix Element Representation</h2>
+<p><strong>The regular matrix has the two coefficients on the diagonal and the same coefficient off the diagonal, and its determinant is the norm.</strong></p>
+<p>In the basis $1,j$ the left multiplication $L_X(Y)=XY$ has the matrix
+$$
+\mathsf{M}_2(X)=
+\begin{pmatrix}x_0&x_1\\x_1&x_0\end{pmatrix},
+\qquad X=x_0+x_1j.
+$$
+The columns are the images of the basis,
+$$
+L_X(1)=X=x_0+x_1j,\qquad L_X(j)=Xj=x_1+x_0j,
+$$
+which gives the two columns $(x_0,x_1)^{\mathsf T}$ and $(x_1,x_0)^{\mathsf T}$. The assignment on the basis is
+$$
+\mathsf{M}_2(1)=\mathrm I_2,\qquad
+\mathsf{M}_2(j)=\begin{pmatrix}0&1\\1&0\end{pmatrix}=\sigma_1.
+$$
+The matrix is symmetric, and the two columns are exchanged by the reflection $j$. The map is an injective homomorphism of $\mathbb{R}$-algebras,
+$$
+\mathsf{M}_2(XY)=\mathsf{M}_2(X)\mathsf{M}_2(Y),
+\qquad
+\mathsf{M}_2(1)=\mathrm I_2,
+$$
+whose image is the two-dimensional commutative subalgebra of matrices of the form $\begin{pmatrix}a&b\\b&a\end{pmatrix}$, not the whole of $M_2(\mathbb{R})$.</p>
+<p><strong>Invariants and inverse.</strong> The trace and the determinant are
+$$
+\operatorname{tr}\mathsf{M}_2(X)=2x_0,\qquad
+\det\mathsf{M}_2(X)=x_0^2-x_1^2=\langle X\rangle_{*}=XX^{\dagger},
+$$
+where $X^{\dagger}=x_0-x_1j$ is the conjugation. When $x_0^2\neq x_1^2$,
+$$
+\mathsf{M}_2(X)^{-1}=\frac{1}{x_0^2-x_1^2}
+\begin{pmatrix}x_0&-x_1\\-x_1&x_0\end{pmatrix}
+=\mathsf{M}_2(X^{-1}),
+\qquad
+X^{-1}=\frac{x_0-x_1j}{x_0^2-x_1^2}.
+$$
+The determinant vanishes exactly on the two null lines $x_0=\pm x_1$, which are the zero divisors; the matrix is singular exactly there. The elements of the image are simultaneously diagonalisable, because they commute and are symmetric.</p>
+<p><strong>The basis matrices.</strong> The table collects the four elements of the standard basis and their matrices.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Matrix $\mathsf{M}_2$</th>
+<th>Square</th>
+<th>Determinant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$\mathrm I_2$</td>
+<td>$\mathrm I_2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>$\mathrm I_2$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\Pi_+$</td>
+<td>$\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}$</td>
+<td>itself</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\Pi_-$</td>
+<td>$\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$</td>
+<td>itself</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two idempotents are the two spectral projectors.</strong> They satisfy
+$$
+\rho_+^2=\rho_+,\qquad
+\rho_-^2=\rho_-,\qquad
+\rho_+\rho_-=0,\qquad
+\rho_++\rho_-=\mathrm I_2,
+$$
+and
+$$
+\mathsf{M}_2(Q)\rho_+=\lambda_+\rho_+,\qquad
+\mathsf{M}_2(Q)\rho_-=\lambda_-\rho_-.
+$$
+Each has rank one when $q'\neq0$; at $q'=0$ the two projectors are still the rank-one matrices above, but they are no longer the spectral projectors of a matrix with distinct eigenvalues, because $\mathsf{M}_2(Q)=q\mathrm I_2$ and every projector is spectral.</p>
+<h2 id="the-eigenbasis-in-the-model">The Eigenbasis in the Model</h2>
+<p><strong>In the eigenbasis the matrix of every element is diagonal, and the diagonal entries are its two idempotent coordinates.</strong></p>
+<p>The assignment
+$$
+\Pi_+\longmapsto\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+\Pi_-\longmapsto\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
+1\longmapsto\mathrm I_2,\qquad
+j\longmapsto\begin{pmatrix}1&0\\0&-1\end{pmatrix}
+$$
+is an isomorphism of $\mathbb{R}$-algebras from $\mathbb{D}$ onto the diagonal subalgebra of $M_2(\mathbb{R})$. For a general element
+$$
+X=x_0+x_1j=\xi_+\Pi_++\xi_-\Pi_-,
+\qquad
+\xi_\pm=x_0\pm x_1,
+$$
+the matrix is
+$$
+\mathsf{M}_2^{\Pi}(X)=
+\begin{pmatrix}\xi_+&0\\0&\xi_-\end{pmatrix}.
+$$
+For $Q$ itself,
+$$
+\mathsf{M}_2^{\Pi}(Q)=
+\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+$$
+The basis elements and the general element are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Coordinates in $(\Pi_+,\Pi_-)$</th>
+<th>Matrix $\mathsf{M}_2^{\Pi}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$(1,1)$</td>
+<td>$\mathrm I_2$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$(1,-1)$</td>
+<td>$\operatorname{diag}(1,-1)$</td>
+</tr>
+<tr>
+<td>$\Pi_+$</td>
+<td>$(1,0)$</td>
+<td>$\operatorname{diag}(1,0)$</td>
+</tr>
+<tr>
+<td>$\Pi_-$</td>
+<td>$(0,1)$</td>
+<td>$\operatorname{diag}(0,1)$</td>
+</tr>
+<tr>
+<td>$X=x_0+x_1j$</td>
+<td>$(x_0+x_1,x_0-x_1)$</td>
+<td>$\operatorname{diag}(x_0+x_1,x_0-x_1)$</td>
+</tr>
+<tr>
+<td>$Q=q+jq'$</td>
+<td>$(\lambda_+,\lambda_-)$</td>
+<td>$\operatorname{diag}(\lambda_+,\lambda_-)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The eigenbasis model is the Peirce-coordinate model.</strong> The two coordinates are the two Peirce coordinates of the element, and the matrix is diagonal because the two Peirce corners of the split-complex algebra vanish. The model is not the regular model: the regular model has the off-diagonal entries $x_1$, while the eigenbasis model has them zero. The two are related by the change of basis of §<em>Base Changes</em>.</p>
+<p><strong>The algebra in matrix form.</strong> For two elements $X=\xi_+\Pi_++\xi_-\Pi_-$ and $Y=\eta_+\Pi_++\eta_-\Pi_-$,
+$$
+XY\longleftrightarrow
+\begin{pmatrix}\xi_+\eta_+&0\\0&\xi_-\eta_-\end{pmatrix},
+\qquad
+X^{-1}\longleftrightarrow
+\operatorname{diag}(\xi_+^{-1},\xi_-^{-1}),
+\qquad
+X^n\longleftrightarrow
+\operatorname{diag}(\xi_+^n,\xi_-^n).
+$$
+The trace and the determinant are
+$$
+\operatorname{tr}=\xi_++\xi_-=2x_0,\qquad
+\det=\xi_+\xi_-=x_0^2-x_1^2=\langle X\rangle_{*}.
+$$
+Conjugation exchanges the two coordinates,
+$$
+X^{\dagger}=\xi_-\Pi_++\xi_+\Pi_-
+\longleftrightarrow
+\operatorname{diag}(\xi_-,\xi_+),
+$$
+which is the matrix form of $j\mapsto-j$. The element is a unit exactly when both diagonal entries are nonzero, and a zero divisor exactly when exactly one of them is zero. There is no nonzero nilpotent: a diagonal matrix over $\mathbb{R}$ with square zero is zero, and the off-diagonal matrix units are not in the image.</p>
+<h2 id="base-changes">Base Changes</h2>
+<p><strong>The regular model and the eigenbasis model are two bases of the same plane, and the passage between them is the conjugation by the matrix of the two idempotents.</strong></p>
+<h3 id="the-change-of-basis-of-a-matrix-model">The Change of Basis of a Matrix Model</h3>
+<p>Let $P\in GL_2(\mathbb{R})$ have as columns the coordinates of a new basis in the old one. The matrix of the same endomorphism in the new basis is
+$$
+M'=P^{-1}MP.
+$$
+The trace and the determinant are unchanged,
+$$
+\operatorname{tr}M'=\operatorname{tr}M,\qquad
+\det M'=\det M,
+$$
+and so are the characteristic polynomial, the spectrum, the rank and the Jordan form. An idempotent is conjugated to an idempotent, a nilpotent to a nilpotent, and the two eigenspaces to the two coordinate axes. The columns of $P$ are the new basis vectors; a column that is an eigenvector of $M$ produces a column of $P^{-1}MP$ with the eigenvalue on the diagonal.</p>
+<h3 id="the-explicit-change">The Explicit Change</h3>
+<p>The change matrix has as columns the coordinates of $\Pi_+,\Pi_-$ in the basis $1,j$:
+$$
+\mathsf{C}=\frac12
+\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+\qquad
+\mathsf{C}^{-1}=
+\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+\qquad
+\det\mathsf{C}=-\frac12.
+$$
+Its columns are eigenvectors of $\mathsf{M}_2(Q)$:
+$$
+\mathsf{M}_2(Q)\begin{pmatrix}1/2\\1/2\end{pmatrix}
+=\lambda_+\begin{pmatrix}1/2\\1/2\end{pmatrix},
+\qquad
+\mathsf{M}_2(Q)\begin{pmatrix}1/2\\-1/2\end{pmatrix}
+=\lambda_-\begin{pmatrix}1/2\\-1/2\end{pmatrix}.
+$$
+Therefore
+$$
+\mathsf{C}^{-1}\mathsf{M}_2(Q)\mathsf{C}
+=\operatorname{diag}(\lambda_+,\lambda_-)
+=\mathsf{M}_2^{\Pi}(Q),
+$$
+and, for every element $X$,
+$$
+\mathsf{M}_2^{\Pi}(X)=\mathsf{C}^{-1}\mathsf{M}_2(X)\mathsf{C}.
+$$
+The first column of $\mathsf{C}$ is the first column of $\rho_+$; the second is the negative of the second column of $\rho_-$. The columns are the nonzero columns of the two spectral projectors, normalised to have entries $\pm\tfrac12$.</p>
+<p><strong>The inverse change.</strong> The inverse matrix has integer entries and determinant $-2$:
+$$
+\mathsf{C}^{-1}=
+\begin{pmatrix}1&1\\1&-1\end{pmatrix}
+=2\mathsf{C}.
+$$
+It sends the diagonal model back to the regular one, and its columns are the coordinates of $1,j$ in the eigenbasis.</p>
+<h3 id="the-freedom-of-the-change">The Freedom of the Change</h3>
+<p>The diagonalising matrix is not unique. If $\mathsf{C}$ diagonalises $\mathsf{M}_2(Q)$, then so does $\mathsf{C}D$ for every invertible diagonal $D=\operatorname{diag}(\alpha,\beta)$:
+$$
+(\mathsf{C}D)^{-1}\mathsf{M}_2(Q)(\mathsf{C}D)
+=D^{-1}\operatorname{diag}(\lambda_+,\lambda_-)D
+=\operatorname{diag}(\lambda_+,\lambda_-).
+$$
+The two scales are the two independent rescalings of the eigenvectors. A common scale leaves the conjugation unchanged; a relative scale multiplies the two columns by $\alpha$ and $\beta$, and the diagonal model is unchanged because diagonal matrices commute with $D$. In the algebra, the general eigenbasis is
+$$
+(\alpha\Pi_+,\beta\Pi_-),
+\qquad
+\alpha,\beta\in\mathbb{R}^{\times},
+$$
+and the normalised pair is $\alpha=\beta=1$. When $q'=0$ the eigenvalues coincide, every nonzero vector is an eigenvector, every basis is an eigenbasis, and the change matrix is an arbitrary invertible matrix.</p>
+<p><strong>What depends on $Q$.</strong> The change matrix $\mathsf{C}$ and the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ depend on $Q$ through $q'$: the two eigenvectors are fixed only when the two eigenvalues are distinct. The regular model $\mathsf{M}_2$ and the assignment on the basis do not depend on $Q$. The eigenbasis model is the same assignment for every $Q$ with $q'\neq0$; the dependence is carried by the eigenvalues, not by the basis. This is the structural difference with the biquaternion case, where the eigenbasis itself depends on the element.</p>
+<h3 id="the-two-normal-forms">The Two Normal Forms</h3>
+<p>The regular model and the eigenbasis model are the two normal forms of the same matrix under conjugation. The first is the <strong>element model</strong>: the matrix entries are the coefficients of the element in the basis $1,j$. The second is the <strong>spectral model</strong>: the matrix entries are the two eigenvalues. The two are related by $\mathsf{C}$, and the relation is the diagonalisation of every element at once, because the algebra is commutative. In the biquaternion case no single change diagonalises every element, and the corresponding matrix $\mathsf{C}_Q$ depends on $Q$.</p>
+<p><strong>The complexified change.</strong> After extension of scalars, the same matrix $\mathsf{C}$ has complex entries (in fact real entries), and it diagonalises the complexified regular matrix. The complexified eigenbasis is the pair of complex lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and the change is the same $\mathsf{C}$ read over $\mathbb{C}$. The determinant is still $-\tfrac12$, and the inverse is still $2\mathsf{C}$.</p>
+<h2 id="spinors-and-the-columns">Spinors and the Columns</h2>
+<p><strong>The two columns of the eigenbasis model are the two spinor spaces, and a spinor is one real coefficient on one of them.</strong></p>
+<p>Since $\mathbb{D}$ is commutative, the left, right and two-sided ideals coincide. The minimal nonzero ideals are
+$$
+S_+=\mathbb{D}\Pi_+=\mathbb{R}\Pi_+,
+\qquad
+S_-=\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,
+$$
+each one-dimensional, and $\mathbb{D}=S_+\oplus S_-$. In the eigenbasis model they are the two columns:
+$$
+S_+\longleftrightarrow\left\{\begin{pmatrix}\alpha&0\\0&0\end{pmatrix}:\alpha\in\mathbb{R}\right\},
+\qquad
+S_-\longleftrightarrow\left\{\begin{pmatrix}0&0\\0&\beta\end{pmatrix}:\beta\in\mathbb{R}\right\}.
+$$
+A spinor of first chirality is $\xi_+=\alpha\Pi_+$ and is represented by the first column $(\alpha,0)^{\mathsf T}$; a spinor of second chirality is $\xi_-=\beta\Pi_-$ and is represented by the second column $(0,\beta)^{\mathsf T}$. The general element is the sum of one spinor of each chirality, and its two coordinates are the two diagonal entries.</p>
+<p>Under multiplication by $Q$ the two columns are scaled independently:
+$$
+Q\xi_+=\lambda_+\xi_+
+\longleftrightarrow
+\begin{pmatrix}\lambda_+&0\\0&0\end{pmatrix}
+\begin{pmatrix}\alpha\\0\end{pmatrix}
+=
+\begin{pmatrix}\lambda_+\alpha\\0\end{pmatrix},
+\qquad
+Q\xi_-=\lambda_-\xi_-
+\longleftrightarrow
+\begin{pmatrix}0&0\\0&\lambda_-\end{pmatrix}
+\begin{pmatrix}0\\\beta\end{pmatrix}
+=
+\begin{pmatrix}0\\\lambda_-\beta\end{pmatrix}.
+$$
+The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on both columns; on the first column only the first entry survives, on the second only the second. This is the precise sense in which the two spinor spaces are the two eigenspaces.</p>
+<p><strong>Right multiplication.</strong> Since the algebra is commutative, right multiplication by $Q$ acts exactly as left multiplication, and the rows are the same two lines. The matrix is symmetric, so the row picture and the column picture coincide. This is the split-complex difference with the biquaternion case, where the rows are the two minimal right ideals and the columns the two minimal left ideals, and the two pictures are different.</p>
+<h2 id="the-math194-matrix-element-representation">The $4\times4$ Matrix Element Representation</h2>
+<p><strong>The $4\times4$ matrix is the real regular representation of the complexification $\mathbb{D}_{\mathbb{C}}$, not of $\mathbb{D}$ itself.</strong></p>
+<p>The algebra $\mathbb{D}$ has real dimension two, so its faithful regular representation is the $2\times2$ model. The complexification
+$$
+\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}
+\cong\mathbb{C}[j]/(j^2-1)
+\cong\mathbb{C}\times\mathbb{C}
+$$
+has complex dimension two, hence real dimension four, and its real regular representation is a $4\times4$ real matrix. On the real basis
+$$
+1,\qquad i,\qquad j,\qquad ij,
+$$
+with $i$ the central complex unit, an element is
+$$
+X=q+jq',\qquad q=a+ib,\quad q'=c+id,
+$$
+and left multiplication has the matrix
+$$
+\mathsf{M}_4(X)=
+\begin{pmatrix}
+a&-b&c&-d\\
+b&a&d&c\\
+c&-d&a&-b\\
+d&c&b&a
+\end{pmatrix}.
+$$
+The matrix is the realification of the complex $2\times2$ matrix
+$$
+\mathsf{M}_2^{\mathbb{C}}(X)=
+\begin{pmatrix}q&q'\\q'&q\end{pmatrix}
+\in M_2(\mathbb{C}),
+$$
+in the real basis $1,i,j,ij$: each complex entry $q=a+ib$ becomes the real block $\begin{pmatrix}a&-b\\b&a\end{pmatrix}$, and the two diagonal blocks are the two copies of $q$ and $q'$. The map is an injective homomorphism of $\mathbb{R}$-algebras, and
+$$
+\operatorname{tr}\mathsf{M}_4(X)=4a,\qquad
+\det\mathsf{M}_4(X)=\lvert q^2-q'^2\rvert^2
+=\lvert\lambda_+\lambda_-\rvert^2.
+$$
+The determinant is the square of the complex modulus of the norm, because the $4\times4$ matrix is the realification of the $2\times2$ complex matrix.</p>
+<p><strong>The idempotent coordinates.</strong> In the complexified eigenbasis, the element is
+$$
+X=\xi_+\Pi_++\xi_-\Pi_-,
+\qquad
+\xi_\pm=q\pm q',
+$$
+and the $2\times2$ complex matrix is $\operatorname{diag}(\xi_+,\xi_-)$. The realification of this diagonal matrix is block diagonal,
+$$
+\mathsf{M}_4(X)\sim
+\begin{pmatrix}
+\operatorname{Re}\xi_+&-\operatorname{Im}\xi_+&0&0\\
+\operatorname{Im}\xi_+&\operatorname{Re}\xi_+&0&0\\
+0&0&\operatorname{Re}\xi_-&-\operatorname{Im}\xi_-\\
+0&0&\operatorname{Im}\xi_-&\operatorname{Re}\xi_-
+\end{pmatrix},
+$$
+in the real basis adapted to the two complex lines. For $X=Q$ the two blocks are the two complex eigenvalues $\lambda_\pm$, each read as a real $2\times2$ rotation-dilation block. The four real eigenvalues are $\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-}$, with the bar the complex conjugation of the complexified scalar, not the split-complex conjugation.</p>
+<p><strong>The change of basis.</strong> The real change matrix is the realification of $\mathsf{C}$ written in the real basis $1,i,j,ij$:
+$$
+\mathsf{C}_4=
+\begin{pmatrix}
+\tfrac12&0&\tfrac12&0\\
+0&\tfrac12&0&\tfrac12\\
+\tfrac12&0&-\tfrac12&0\\
+0&\tfrac12&0&-\tfrac12
+\end{pmatrix},
+$$
+whose columns are the coordinate columns of $\Pi_+,i\Pi_+,\Pi_-,i\Pi_-$. It satisfies
+$$
+\mathsf{C}_4^{-1}\mathsf{M}_4(Q)\mathsf{C}_4
+=
+\begin{pmatrix}
+\operatorname{Re}\lambda_+&-\operatorname{Im}\lambda_+&0&0\\
+\operatorname{Im}\lambda_+&\operatorname{Re}\lambda_+&0&0\\
+0&0&\operatorname{Re}\lambda_-&-\operatorname{Im}\lambda_-\\
+0&0&\operatorname{Im}\lambda_-&\operatorname{Re}\lambda_-
+\end{pmatrix}.
+$$
+Over $\mathbb{C}$ this block matrix is diagonalised by the further change with columns $(1,-i)$ and $(1,i)$ in each block, giving $\operatorname{diag}(\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-})$. The determinant of $\mathsf{C}_4$ is $(\det\mathsf{C})^2=\tfrac14$, the square of the determinant of the complex change, which is the general rule for the realification: $\det\mathsf{C}_4=\lvert\det\mathsf{C}\rvert^2$.</p>
+<p><strong>What the $4\times4$ model adds.</strong> The $4\times4$ model does not add a new representation of $\mathbb{D}$: it is the $2\times2$ complex model read over $\mathbb{R}$, and its eigenbasis is the realified complex eigenbasis. It adds the real geometry of the two complex eigenvalues: each eigenvalue becomes a $2\times2$ block, the two blocks are independent, and the four real eigenvalues are the two complex eigenvalues together with their complex conjugates. This is the split-complex analogue of the $4\times4$ regular matrices of the biquaternion case, where the four eigenvalues are the two $\lambda_\pm$, each repeated twice.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The $2\times2$ model.</strong> The regular matrix is $\mathsf{M}_2(X)=\begin{pmatrix}x_0&x_1\\x_1&x_0\end{pmatrix}$, with determinant the norm and trace twice the scalar part. The eigenprojections are the two rank-one matrices $\rho_\pm=\tfrac12\begin{pmatrix}1&\pm1\\ \pm1&1\end{pmatrix}$, and the eigenbasis model is
+$$
+\mathsf{M}_2^{\Pi}(Q)=\operatorname{diag}(\lambda_+,\lambda_-).
+$$</p>
+<p><strong>The base change.</strong> The two models are related by
+$$
+\mathsf{M}_2^{\Pi}(X)=\mathsf{C}^{-1}\mathsf{M}_2(X)\mathsf{C},
+\qquad
+\mathsf{C}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+\qquad
+\mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
+$$
+The change is unique up to the two independent rescalings of the two eigenvectors. It is the same matrix for every element, because the algebra is commutative and the eigenbasis is fixed by $j$.</p>
+<p><strong>The $4\times4$ model.</strong> The real regular matrix of the complexification is the realification of the complex $2\times2$ matrix; in the idempotent coordinates it is block diagonal with the two complex eigenvalues, and the realified $\mathsf{C}$ block-diagonalises it. The four real eigenvalues are $\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-}$.</p>
+<p><strong>The limits.</strong> For $q'=0$ the two eigenvalues coincide, the eigenbasis is not unique, every basis is an eigenbasis, and the change matrix is an arbitrary invertible matrix. For $q'=\pm q$ one eigenvalue vanishes, the element is a zero divisor, and the corresponding spectral projector has rank one with one zero eigenvalue; the matrices remain diagonalisable. There is no nonzero nilpotent in any regime, so the nilpotent construction of the biquaternion case has no analogue here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>Left regular matrix in the basis $1,j$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2^{\Pi}$</td>
+<td>Matrix in the eigenbasis $(\Pi_+,\Pi_-)$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2^{\mathbb{C}}$</td>
+<td>Complexified $2\times2$ regular matrix</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4$</td>
+<td>Real regular matrix of $\mathbb{D}_{\mathbb{C}}$ in the basis $1,i,j,ij$</td>
+</tr>
+<tr>
+<td>$\mathsf{C}$</td>
+<td>Change matrix from $1,j$ to $\Pi_+,\Pi_-$</td>
+</tr>
+<tr>
+<td>$\mathsf{C}_4$</td>
+<td>Realification of $\mathsf{C}$, the $4\times4$ change</td>
+</tr>
+<tr>
+<td>$\rho_\pm$</td>
+<td>Spectral projectors $\mathsf{M}_2(\Pi_\pm)$</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{R}\Pi_\pm$</td>
+<td>The two spinor spaces, the two columns</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=q\pm q'$</td>
+<td>The two eigenvalues</td>
+</tr>
+<tr>
+<td>$\langle X\rangle_{*}=x_0^2-x_1^2$</td>
+<td>The split-complex norm, the determinant of $\mathsf{M}_2(X)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for idempotents, Peirce decompositions and the matrix units of a Peirce decomposition.</li>
+<li>Fuzhen Zhang, <em>Matrix Theory: Basic Results and Techniques</em>, 2nd edition (Springer, 2011), for the change of basis, the spectral projectors and the realification of a complex matrix.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

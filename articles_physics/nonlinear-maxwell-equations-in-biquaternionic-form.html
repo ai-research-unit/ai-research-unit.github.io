@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -133,7 +136,7 @@ $$</p>
 $$</p>
 <p>and the vanishing of the volume integral for every four-volume gives, point by point,</p>
 <p>$$
-(F^{*}DF) = 0, \qquad \mathrm{Re}\bigl\{F^{*}\,DF\bigr\} = 0,
+\boxed{\;(F^{*}DF) = 0, \qquad \mathrm{Re}\bigl\{F^{*}\,DF\bigr\} = 0\;},
 \tag{3.11, 3.12}
 $$</p>
 <p>which the paper expands into a two-line vector form, its (3.13), and then into the four-equation form of its (3.14). Here $D = (\partial/\partial t', \nabla)$ is the gradient biquaternion and $DF$ is its product on the left with $F$, its (3.8) and (3.9) giving the left and right actions. The paper states in the same place that (3.11), (3.12) and (3.13) are each equivalent to (3.14), which is the component form; the later sections cite the same equation as (3.11), (3.13) and (3.14) interchangeably, and the numbers are reproduced here as the paper prints them rather than regularised.</p>
@@ -225,9 +228,7 @@ $$</p>
 \tag{7.6}
 $$</p>
 <p><strong>The first line is wrong as printed.</strong> From the definitions, $\partial/\partial t'e_t = \partial/\partial t'\nabla\cdot\vec E = \nabla\cdot\partial/\partial t'\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial t'\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial t'\vec E$, since the divergence of a curl vanishes. The two are <strong>equal</strong>, not opposite, so the relation that holds is</p>
-<p>$$
-\frac{\partial e_t}{\partial t'} - \nabla\cdot\vec J_0 = 0,
-$$</p>
+<p>$$\boxed{\;\frac{\partial e_t}{\partial t'} - \nabla\cdot\vec J_0 = 0\;},$$</p>
 <p>and the printed sum is not zero but twice $\partial/\partial t'\nabla\cdot\vec E$, which is $4.9$ at worst over $100$ random samplings of a smooth test field and generically nonzero. The second line is correct as printed, and the two lines are then consistent with each other and with the electric–magnetic symmetry the paper uses everywhere else: the electric pair and the magnetic pair carry the <strong>same</strong> relative sign once the magnetic current is the dual of the electric one. The relation is a consequence of the definitions and of the equality of mixed partial derivatives — a Clairaut identity — which is why the paper could reasonably call it easy to verify and still get one sign wrong.</p>
 <h2 id="associated-fields-and-the-coulomb-wave">Associated Fields and the Coulomb Wave</h2>
 <h3 id="associated-fields">Associated Fields</h3>
@@ -238,7 +239,7 @@ f(t',\vec r) = \exp(i(\omega_1 t' - \vec k_1\cdot\vec r)),
 $$</p>
 <p>then the product</p>
 <p>$$
-F = F_0\,f(t',\vec r)
+\boxed{\;F = F_0\,f(t',\vec r)\;\;}
 \tag{9.2}
 $$</p>
 <p>solves the nonlinear system. The paper calls $F$ the field <strong>associated</strong> with the linear field $F_0$, and notes the more general form $F = F_0\exp(i\Phi(t',\vec r))$ with $\Phi$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,</p>
@@ -251,7 +252,7 @@ $$</p>
 <h3 id="the-central-symmetric-solution-and-the-electromagnetic-charge">The Central-Symmetric Solution and the Electromagnetic Charge</h3>
 <p>The paper's section 12 looks for a centrally symmetric solution of the nonlinear system and finds the <strong>Coulomb field with a running phase</strong>,</p>
 <p>$$
-F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\varphi(t')),
+\boxed{\;F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\varphi(t'))\;},
 \tag{12.10}
 $$</p>
 <p>where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for <strong>any</strong> phase function, not only a linear one: with $\varphi(t') = \cos(\omega t')$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\varphi)$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial t'f\} = s\,\partial/\partial t's = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\varphi_r = 0$ and $s = \alpha/r^3$. The <strong>phase is therefore left completely free</strong> — the equations fix the spatial profile and the static modulus, never $\varphi(t')$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em> supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.</p>

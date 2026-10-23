@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,7 @@
 $$</p>
 <p>The mutual-unbiasedness condition therefore reads, in the algebra,</p>
 <p>$$
-\mathrm{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr) = \frac{1}{d}
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr) = \frac{1}{d}\;}
 \qquad\text{for all } i,j \ \text{whenever } b\neq b_2 .
 $$</p>
 <p>For the native qubit $d=2$ the maximum number of mutually unbiased bases is $d+1=3$, and they have a clean algebraic origin: they are the eigenbases of the three imaginary units $i\vec e_x, i\vec e_y, i\vec e_z$. The three units are Hermitian involutions, pairwise anticommuting, and each defines an orthogonal pair of rank-one idempotents; the normalised Hermitian form between idempotents from different pairs, read as the trace pairing, is exactly $\tfrac12$. The three bases are the three coordinate measurements, and their completeness is the tomographic statement that the outcome probabilities of three measurements determine the state.</p>
@@ -160,7 +163,7 @@ $$</p>
 <h3 id="the-reconstruction-formula">The reconstruction formula</h3>
 <p>Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)}=\langle\tilde{Ϛ},\tilde\Pi_i^{(b)}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})=\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative. Then</p>
 <p>$$
-\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t ,
+\boxed{\;\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t\;},
 $$</p>
 <p>for a state of unit trace (the matrix normalisation; for the qubit this is $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$), so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}$, and the formula above reconstructs it.</p>
 <h3 id="verification-for-the-qubit">Verification for the qubit</h3>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>A massive spin-1 field can acquire its mass in more than one way. The <strong>Proca</strong> term gives the field a second-order kinetic operator and a mass by hand. A <strong>topological</strong> mass term gives the field a first-order, Levi-Civita-weighted term and a mass that comes from the antisymmetric structure of spacetime rather than from a scalar coupling; in $2+1$ dimensions this is the Chern–Simons mass of Deser, Jackiw and Templeton, and in four dimensions the analogous term is the $\varepsilon FF$- or BF-type term. Liu Yu-Fen's thesis is that a single <em>first-order</em> (parent) action carries both descriptions: eliminating one field gives the Dirac Lagrangian of a massive spin-$\frac{1}{2}$ field, and eliminating the other gives the Lagrangian of a topologically massive spin-1 field. The two theories are then <strong>dual</strong> — two descriptions of the same propagating degrees of freedom.</p>
 <p>This article records that equivalence and the machinery it uses. It is the physics companion of <em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em> and of <em>Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</em>: the parent action is written in the s-vector variables, and the two eliminations pass through the self-dual field strength and the cubic (order-three ding) form of those articles.</p>
-<p><strong>Scope and honesty.</strong> The construction is Liu's. What this article does is state the equivalence, its mechanism, and the role of the corpus's verified identities in it; it does <strong>not</strong> claim to have independently recomputed the variational eliminations. Where a statement is the source's and rests on an elimination this pass did not perform, the article says so, both here and in the companion <code>.context</code> file. The algebraic identities that the equivalence <em>uses</em> — the normed condition, the associativity, the bilinear dictionary, the anti-self-duality of $H^{\mu\nu}$, and the Chern–Pontryagin density being a total derivative — are verified in the companion articles.</p>
 <p>The conventions are those of the companion articles: four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon^{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon^{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article.</p>
 <h2 id="the-parent-action">The Parent Action</h2>
 <h3 id="the-idea">The Idea</h3>
@@ -81,11 +83,11 @@ $$</p>
 <h3 id="the-two-eliminations">The Two Eliminations</h3>
 <p>Eliminating the auxiliary field leaves the <strong>Dirac Lagrangian</strong> in the vector representation,</p>
 <p>$$
-\mathcal{L}_D = \tfrac12\Bigl[\bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda - G^*_\nu\, i\check c^{\nu\mu\lambda}\, \tilde\nabla_\mu G_\lambda + m\bigl(G^{*}_\nu G^{*\nu} + G_\nu G^\nu\bigr)\Bigr],
+\boxed{\;\mathcal{L}_D = \tfrac12\Bigl[\bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda - G^*_\nu\, i\check c^{\nu\mu\lambda}\, \tilde\nabla_\mu G_\lambda + m\bigl(G^{*}_\nu G^{*\nu} + G_\nu G^\nu\bigr)\Bigr]\;},
 $$</p>
 <p>whose mass term $m(G^*G^* + GG)$ couples $G$ to $G^*$ — the chirality-off-diagonal mass, and the reason the s-vector is not simply a pair of independent complex vectors. Eliminating $G$ instead leaves a <strong>second-order gauge Lagrangian</strong> for the field $A_\mu$, with a mass term built from the antisymmetric symbol,</p>
 <p>$$
-\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda,
+\boxed{\;\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda\;},
 $$</p>
 <p>the second term being the topological (Chern–Simons-type / BF-type) mass. The two Lagrangians describe the same propagating modes.</p>
 <p><strong>Attribution.</strong> The specific form of $S_{\text{aux}}$, the precise field content of the gauge sector, and the dimension in which the topological mass lives are the source's; the display above shows the structure of the equivalence, and the reader should take the two Lagrangian <em>shapes</em> — a Dirac kinetic-plus-chirality-off-diagonal-mass form, and a Maxwell-plus-topological-mass form — as the content, not the exact coefficients of $S_{\text{aux}}$. The coefficient $m/4$ and the sign of the topological term are recorded from the source.</p>
@@ -106,7 +108,7 @@ $$</p>
 <h3 id="the-mass-as-a-non-integrable-phase">The Mass as a Non-Integrable Phase</h3>
 <p>The third ingredient is the interpretation of the mass. In the vector representation the mass term is</p>
 <p>$$
-m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma^\mu\Psi
+\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma^\mu\Psi\;}
 $$</p>
 <p>for a unit complex vector $K^\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a <strong>phase</strong>, and the phase is <em>non-integrable</em>: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article <em>The Dirac Equation in Biquaternionic Form</em> carrying the same element.</p>
 <h2 id="what-the-equivalence-is-and-is-not">What the Equivalence Is and Is Not</h2>

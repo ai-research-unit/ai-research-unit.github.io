@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@ $$
 the bridge between the topology of the surface and the arithmetic of the symplectic group. It is surjective, and its kernel is the <strong>Torelli group</strong>: the representation loses exactly the mapping classes that move every curve but no homology class. This article treats the action as the operator-layer object of the group: the representation, its image, its kernel and what the finer actions recover.</p>
 <p>The example to hold in mind is the torus, where the representation is an isomorphism $\mathrm{Mod}(T^2)\cong SL_2(\mathbb{Z})$, and the contrast with a surface of genus at least two, where the kernel is large and the action on the homology is far from faithful. The complementary actions — on the fundamental group (faithful, by Dehn–Nielsen–Baer) and on the curve complex (faithful, by Ivanov) — are the two repairs of the information that the homology action forgets.</p>
 <p><strong>The article assumes</strong> the mapping class group, the Dehn twist and its transvection action, and the intersection form and the symplectic group, that is, <em>The Dehn Twist as an Operator</em>, <em>Bilinear Forms</em>, <em>Symplectic Forms and Poisson Brackets</em> and the written <em>Mapping Class Groups</em> of this Part.</p>
-<p><strong>The boundaries of the article.</strong> The mapping class group itself — its definition, its presentations, the Nielsen–Thurston classification, the geometry of the curve complex and the detailed study of the Torelli group — is <em>Mapping Class Groups</em>, and is cited; this article owns the action on the homology, its kernel and its image. Teichmüller space and the moduli of surfaces belong to <em>Teichmüller Theory</em>; the hyperbolic structures to <em>Hyperbolic Geometry</em>; the mapping tori and the three-manifold applications to <em>Low-Dimensional Topology</em>. The congruence subgroup property and the arithmetic of $\operatorname{Sp}(2g,\mathbb{Z})$ are used only as stated, and the analytic proofs of the rigidity theorems are Part III.</p>
 <h2 id="the-action-and-the-symplectic-representation">The Action and the Symplectic Representation</h2>
 <p><strong>Definition.</strong> The <strong>mapping class group</strong> $\mathrm{Mod}(S_g)$ acts on $H_1(S_g;\mathbb{Z})\cong\mathbb{Z}^{2g}$ by the induced maps $\phi\mapsto\phi_*$, and the action preserves the intersection form $i$. The resulting homomorphism
 $$

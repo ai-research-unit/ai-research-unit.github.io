@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,7 +82,7 @@ D = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\par
 $$</p>
 <p>with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of <em>Conventions in the Biquaternion Universe</em>, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the <strong>factorization of the wave operator</strong></p>
 <p>$$
--\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t'),
+\boxed{\;-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')\;},
 \tag{1}
 $$</p>
 <p>where $\Delta = \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2$ is the three-dimensional Laplacian. The two orderings agree because $D$ and $\partial/\partial t'$ commute. The operators $D \pm i\partial/\partial t'$ are the <strong>parabolic Dirac operators</strong> of the source; the name is inherited from the quaternionic-analysis literature that uses these first-order perturbations of $D$, and it refers to the first-order perturbation, not to a parabolic (heat-type) symbol: the factorisation is of the <strong>hyperbolic</strong> wave operator.</p>
@@ -164,7 +167,7 @@ $$</p>
 <h3 id="the-unit-modulus-kernel">The Unit-Modulus Kernel</h3>
 <p>The solution is the <strong>quaternionic exponential function</strong></p>
 <p>$$
-\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi k t') = \cos\bigl(2\pi|k|t'\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|t'\bigr),
+\boxed{\;\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi k t') = \cos\bigl(2\pi|k|t'\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|t'\bigr)\;},
 \tag{9}
 $$</p>
 <p>for $(k,t') \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(\Phi_\pm) = 0$ for $t' < 0$. The closed form is the quaternion interpretation of an exponential of a <strong>pure vector</strong>: since $k$ is a pure imaginary quaternion with $k^2 = -|k|^2$, the series splits into an even and an odd part and gives $\exp(b) = \cos|b| + (b/|b|)\sin|b|$ for any pure vector $b$. The decisive property for everything that follows is that this exponential has <strong>unit quaternion modulus</strong>,</p>
@@ -187,7 +190,7 @@ $$</p>
 <h3 id="the-right-inverse-theorem">The Right-Inverse Theorem</h3>
 <p>The source's Theorem 10 states that $T_{\mathcal{C},\pm}[\mp i\,\cdot\,]$ is a right inverse of $D \pm i\partial/\partial t'$ on $L^2(\mathcal{C},\mathbb{B})$:</p>
 <p>$$
-(D \pm i\partial/\partial t')\, T_{\mathcal{C},\pm}[\mp i\, w] = w.
+\boxed{\;(D \pm i\partial/\partial t')\, T_{\mathcal{C},\pm}[\mp i\, w] = w\;}.
 \tag{11}
 $$</p>
 <p>The proof is the symbol computation. Acting on the multiplier, the space derivative brings down $2\pi i k$ and the time derivative brings down $\mp 2\pi k$, while the Leibniz rule in $t'$ contributes the boundary term $\exp(2\pi i\langle x,k\rangle)\mathcal{F}(w)(k,t')$ whose $k$-integral is $w(x,t')$ by inversion. The result is the operator identity</p>
@@ -229,7 +232,7 @@ $$</p>
 $$</p>
 <p>so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,T_{\mathcal{C},-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial t'$. Subtracting it cancels the scalar part and leaves</p>
 <p>$$
-\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0],
+\boxed{\;\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
 \tag{15}
 $$</p>
 <p>a <strong>purely vectorial</strong> solution of (13), whose real part is the electric field $\vec{E}$ and whose imaginary part is the magnetic field $\vec{B}$. This is the source's Theorem 13, and its structure — solve by the right inverse, then kill the scalar part by adding a kernel element from the harmonic-conjugate construction — is a route complementary to the retarded-convolution solution the corpus records: the same equation, but a constructive family of purely vectorial solutions in place of the single causal convolution.</p>

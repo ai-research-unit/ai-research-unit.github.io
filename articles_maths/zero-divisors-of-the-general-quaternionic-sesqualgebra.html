@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -86,10 +89,6 @@ classification. The finer structure of the GQS set, its square-zero subfamily an
 members, is the point of the article and is owned by <em>Nilpotents of the General Quaternionic
 Sesqualgebra</em>; the position of the set in the remarkable subspaces is <em>Remarkable Subspaces under
 the General Quaternionic Sesqualgebra of Biquaternions</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis
-$e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_x\vec e_y = \vec e_z$, and central scalar imaginary $i$. An element is
-$\tilde Q = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}$ and
-$\vec Q = \sum_{k=1}^{3} Q_k \vec e_k$, and</p>
 <p>$$
 \tilde Q^{\natural} = Q_t - \vec Q , \qquad \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_t} - \overline{\vec Q} , \qquad \overline{\tilde Q} = \tilde Q^{\natural*} = \overline{Q_t} + \overline{\vec Q} ,
 $$</p>

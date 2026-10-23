@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,7 +82,6 @@ $$</p>
 <p>the <strong>signed Hermitian sandwich</strong>, written $\Theta^{\alpha}_x$ below. It is the Hermitian analogue of the signed inner conjugation of <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>: the left factor carries the grade involution, the right factor carries the coefficient involution, and the member inherits from the first the parity sign and from the second the semilinearity and the wider domain. The name <em>signed</em> is the one the corpus uses for the twist by the grade involution; the general twist by an arbitrary automorphism $\theta$ is the graded operator, and it is not used here.</p>
 <p>Two facts decide the theory, and both are the Hermitian translation of facts of the inverse member. The first is that the sign is a scalar on the homogeneous part, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ with $\varepsilon_x=(-1)^{|x|}$, so on the even part of the algebra the signed and the unsigned Hermitian sandwich agree and on the odd part they differ by the global sign. The second is that the composition of two such operators with odd parameters is an <strong>ordinary</strong> Hermitian sandwich, because the product of two odd elements is even; the two signs cancel, exactly as they do for the inverse member, and the composite is again a Hermitian sandwich, not a new kind of operator.</p>
 <p>The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>. The dagger, the involution $\sigma$ of the base and the correction of the semilinearity claims are from <em>Hilbert Algebras</em>. The general two-sided family, its five members and the composition law are <em>Two-Sided Operators on a Clifford Algebra</em>; the four-operator family with its horizontal and vertical defects is <em>Mixed Inner Conjugation and Hermitian Adjoint</em>; the unsigned member is <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>; the unitary slice is <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>. Nothing owned by those entries is re-derived; what is proved here is what the sign changes.</p>
-<p><strong>Conventions.</strong> The base $A$ is a commutative ring with involution $\sigma$, the module $V$ is free of finite rank $n$ with a non-degenerate quadratic form $\mathfrak{Q}$, and $\mathrm{Cl}(V,\mathfrak{Q})$ is its Clifford algebra. The dagger is $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\sigma$-semilinear over $A$ and of order two. The Clifford norm is $N(x)=x x^{\natural}=x^{\natural} x$ where it is a scalar, $\Gamma(V,\mathfrak{Q})$ is the Clifford group, and $U=\{x:x^{\dagger}x=1\}$ is the unitary slice. The grade involution $\alpha$ multiplies a homogeneous element of degree $k$ by $\varepsilon_x=(-1)^{k}$.</p>
 <h2 id="the-operator-and-the-parity-sign">The Operator and the Parity Sign</h2>
 <p><strong>Definition.</strong> The <strong>signed Hermitian sandwich</strong> of an element $x\in\mathrm{Cl}(V,\mathfrak{Q})$ is the map</p>
 <p>$$

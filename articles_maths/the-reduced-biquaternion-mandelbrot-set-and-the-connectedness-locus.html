@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@ $$</p>
 <p>The <strong>connectedness locus</strong> of the family is the set of parameters whose filled Julia set is connected; in the complex quadratic family this locus is the Mandelbrot set. The article identifies the connectedness locus of the reduced biquaternion family, reads the escape-time algorithm and its exactness, describes the role of the zero divisors in the singular parameters and the singular slices, and compares the situation with the non-commutative companion.</p>
 <p>The result is that the connectedness locus is the product of the Mandelbrot set with itself, that the escape-time algorithm is exact and decomposes into the two complex algorithms, and that there is no obstruction to the theory. The reduced biquaternion Mandelbrot set is therefore the square of the complex Mandelbrot set, a set in the two-dimensional complex parameter space; its complex line slices are degenerate, its real slices are intersections of the Mandelbrot set with translates of itself, and the bifurcation locus is the union of the two products of a boundary with the whole. The zero divisors enter through the critical set, which is the zero-divisor cone, and through the parameters whose critical orbit meets it.</p>
 <p>The article owns the connectedness locus, the bifurcation locus, the escape-time algorithm and its exactness, the singular parameters and the singular slices. The fractal and its product structure are <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>; the global decomposition is <em>The Idempotent Decomposition and the Split Fractal</em>; the slices are <em>The Slices of the Reduced Biquaternion Julia Sets</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the topological norm that measures the escape is <em>Topology and Metric for Each of the Operations</em>. The companion is <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>, where the escape criterion meets an obstruction.</p>
-<p><strong>Conventions.</strong> The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}=\{c:K_{c}\text{ connected}\}$; the reduced biquaternion family is parametrised by $C=c_{1}\Pi_++c_{2}\Pi_-$; the topological norm is $K(\breve Q)=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$.</p>
 <h2 id="the-mandelbrot-set-of-the-complex-family">The Mandelbrot Set of the Complex Family</h2>
 <p><strong>Proposition (the complex locus).</strong> For the complex quadratic family the connectedness locus is the Mandelbrot set</p>
 <p>$$

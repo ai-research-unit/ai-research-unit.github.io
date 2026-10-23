@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@ I_2=\vec E\cdot\vec B ,
 $$</p>
 <p>as <em>Instantons and Solitons in Biquaternionic Form</em> recomputed from the component conventions of <em>The Field-Strength Biquaternion and Its Invariants</em>. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the <strong>pseudoscalar</strong> invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.</p>
 <p>Two things follow, and the article states them separately. The algebra <strong>supplies</strong> the theta term's density and its discrete periodicity; it <strong>does not supply</strong> the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.</p>
-<p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em> and of the companion gauge articles. The field-strength biquaternion is $F^{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, its dual is $F^{\mathrm{dual}}_\star=-iF^{\mathrm{dual}}$, and the invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$. The topological charge and theta term are</p>
 <p>$$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
@@ -95,8 +97,8 @@ $$</p>
 <h2 id="the-theta-term-and-its-density">The Theta Term and Its Density</h2>
 <p>The theta term of a non-abelian gauge theory is</p>
 <p>$$
-S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}
-=\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr) ,
+\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}
+=\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
 $$</p>
 <p>so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int F^a{F^{\mathrm{dual}}}^a=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,</p>
 <p>$$
@@ -108,11 +110,11 @@ $$</p>
 <p>the standard non-abelian Chern–Simons current, whose abelian part is the primitive $J_{\mathrm{CS}}^\mu=\epsilon^{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ of <em>Instantons and Solitons in Biquaternionic Form</em> and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.</p>
 <p><strong>The abelian density is the framework's invariant.</strong> In the Maxwell sector the density collapses to the second invariant,</p>
 <p>$$
-F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
+\boxed{\;F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
 \qquad
 F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
 \qquad
-I_2=\vec E\cdot\vec B ,
+I_2=\vec E\cdot\vec B\;},
 $$</p>
 <p>so the theta term of the abelian theory is</p>
 <p>$$
@@ -139,7 +141,7 @@ $$</p>
 <h2 id="strong-cp-and-the-value-of-theta">Strong CP and the Value of Theta</h2>
 <p>The strong CP problem is the following. The theta term of quantum chromodynamics is not forbidden by any symmetry of the Standard Model, so its coefficient is expected to be of order unity; but the theta term violates CP, and CP violation in the strong sector is bounded by the electric dipole moment of the neutron. The physical, renormalisation-invariant parameter is</p>
 <p>$$
-\bar\theta=\theta+\arg\det M_q ,
+\boxed{\;\bar\theta=\theta+\arg\det M_q\;},
 $$</p>
 <p>the sum of the gauge theta angle and the phase of the quark mass matrix (a chiral rotation of the quark fields shifts both, keeping $\bar\theta$ invariant), and the experimental bound on the neutron electric dipole moment requires</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,7 +71,6 @@
         <h1 id="the-krein-isometry-group-and-its-j-contractions"><strong>The Krein Isometry Group and Its J-Contractions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The isometries of the general quaternionic sesquilinear form make up the <strong>Krein isometry group</strong> $U_{J}(\mathbb{B})$ of the biquaternion algebra, and its shape is the surprise of the indefinite theory: it is not compact, it is not the group $\mathrm{U}(2)$ that the two-sided structure of the algebra might suggest, and it contains the Lorentz boosts of the Lorentzian slices among its elements. This article determines the group, computes its dimension, identifies its centre and its maximal compact subgroup, lists the Krein isometries inside the algebra's own operator families, describes the spectrum of a Krein isometry and the one-parameter subgroups of boosts, and ends with the $J$-contractions and their defect operators. The group appears in <em>The Krein Cartan Decomposition of the Operator Algebra</em> as the fixed group of the Krein-adjoint involution and in <em>The Krein Level Sets and the Hyperbolic Structure</em> as the isometry group of the complex hyperbolic ball; the adjoint itself is <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}$ is the biquaternion algebra; $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}=\sum_{\mu}\bar Q_{1,\mu}Q_{2,\mu}$ is the general plain sesquilinear form (Gram matrix $\mathrm{I}_4$), $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{1,\mu}Q_{2,\mu}$ is the general quaternionic sesquilinear form (Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$), $J={}^{\natural}$, and the Krein adjoint is $T^{\dagger}=JT^{*}J$. In the coefficient basis a $\mathbb{C}$-linear operator is a matrix $T$ and the general quaternionic sesquilinear form is $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\tilde{Q}_1^{\mathsf T*}E\tilde{Q}_2$, where $T^{\mathsf T*}$ is the conjugate transpose of the matrix or vector.</p>
 <h2 id="the-group-of-krein-isometries">The Group of Krein Isometries</h2>
 <p><strong>Definition.</strong> An <strong>isometry of the general quaternionic sesquilinear form</strong>, or a <strong>Krein isometry</strong>, or a <strong>$J$-unitary operator</strong>, is a $\mathbb{C}$-linear operator $T$ with $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle T\tilde{Q}_2,T\tilde{Q}_1\rangle_{\natural*}$ for all $\tilde{Q}_1,\tilde{Q}_2$. The <strong>Krein isometry group</strong> is</p>
 <p>$$

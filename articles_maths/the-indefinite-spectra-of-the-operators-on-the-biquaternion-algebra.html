@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The spectral theory of the Hermitian adjoint on the biquaternion algebra gives the spectra of the left and right multiplications and of the sandwich, and reads self-adjointness, positivity and unitarity off the element spectrum (<em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, <em>Biquaternion Spectral Theory</em>). This article does the same for the <strong>Krein adjoint</strong> $T^{\dagger}=J\,T^{*}J$ of <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>. Two facts govern the answer. First, the $J$-self-adjoint operators of the three families are very few: the left and right multiplications by real scalars, and the sandwiches with a parameter in the centre or in the vector subspace. Second, on those families the spectrum comes out <strong>real with signs</strong>: for the sandwich with a vector parameter the spectrum is the pair $\pm|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|$ with multiplicity two each, so the operator has an <strong>inertia</strong> $(2,2)$, while a central parameter gives $(4,0)$; the case $N=0$ degenerates to a single nilpotent value. The general Krein theory allows a non-real spectrum, symmetric about the real axis, and the algebra exhibits it as soon as a mixed sum of a left and a right multiplication is admitted.</p>
 <p>The general theory is <em>Spectral Theory on Krein Spaces</em> and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>; the definite counterpart is <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>; the operator classes are <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>; the element spectra that the operator spectra are read from are <em>Biquaternion Spectral Theory</em>; and the symmetry is <em>The Fundamental Symmetry of the Biquaternion Algebra</em>.</p>
-<p><strong>Conventions.</strong> $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\mathsf{M}_2(\tilde{Q})\otimes I$ and $R_{\tilde Q_1}\leftrightarrow I\otimes\mathsf{M}_2(\tilde Q_1)^{\mathsf T}$.</p>
 <h2 id="the-spectral-rules-of-the-definite-case">The Spectral Rules of the Definite Case</h2>
 <p>The following rules are quoted from the sibling article and are the input to everything below.</p>
 <ul>
@@ -80,7 +82,7 @@ $$
 $$</li>
 </ul>
 <p><strong>Proof.</strong> These are the Kronecker forms $L_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes I$, $R_{\tilde Q_1}=I\otimes\mathsf{M}_2(\tilde Q_1)^{\mathsf T}$ and $\Theta_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes\overline{\mathsf{M}_2(\tilde{Q})}$ of <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, whose spectra are the sums and products of the spectra of the factors.</p>
-<h2 id="the-math24-self-adjoint-left-and-right-multiplications">The $J$-Self-Adjoint Left and Right Multiplications</h2>
+<h2 id="the-math14-self-adjoint-left-and-right-multiplications">The $J$-Self-Adjoint Left and Right Multiplications</h2>
 <p><strong>Theorem.</strong> A left multiplication $L_{\tilde{Q}}$ is $J$-self-adjoint exactly for $\tilde{Q}\in\mathbb{R}e_t$, and then</p>
 <p>$$
 \mathrm{spec}\bigl(L_{te_t}\bigr)=\{t\}\ \text{with multiplicity }4,\qquad t\in\mathbb{R},
@@ -89,7 +91,7 @@ $$</p>
 <p><strong>Proof.</strong> The criterion is that of <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>, §<em>The $J$-Adjoint of the Three Families</em>; a scalar multiple of the identity has the single eigenvalue $t$ with multiplicity $\dim_{\mathbb{C}}\mathbb{B}=4$.</p>
 <p><strong>Remark (why there is no non-real case here).</strong> A real quaternion $\tilde{Q}=t+\sum_kq_k\vec e_k$ has the two eigenvalues $\lambda=t+i|\vec q|$ and $\bar\lambda$ of $\mathsf{M}_2(\tilde{Q})$ (<em>Biquaternion Spectral Theory</em>, §<em>The Biquaternion Spectrum</em>), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\vec q=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde Q_1}$.</p>
 <p><strong>Proof.</strong> The eigenvalues of a real quaternion are those of its $2\times2$ matrix, computed in <em>Biquaternion Spectral Theory</em>; the collapse is the criterion above.</p>
-<h2 id="the-math44-self-adjoint-sandwiches">The $J$-Self-Adjoint Sandwiches</h2>
+<h2 id="the-math34-self-adjoint-sandwiches">The $J$-Self-Adjoint Sandwiches</h2>
 <p><strong>Theorem (the two regimes).</strong> Let $\Theta_{\tilde{Q}}$ be a sandwich with $\tilde{Q}$ in $\mathbb{C}_{\mathbb{B}}\cup\mathbb{V}_{\mathbb{B}}$ — the $J$-self-adjoint sandwiches of <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>.</p>
 <ul>
 <li>If $\tilde{Q}=\zeta e_t$ is central, then $\Theta_{\tilde{Q}}=|\zeta|^{2}\,\mathrm{id}$ and

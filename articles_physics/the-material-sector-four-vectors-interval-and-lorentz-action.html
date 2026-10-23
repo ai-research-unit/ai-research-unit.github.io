@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -108,7 +111,7 @@
 </tr>
 <tr>
 <td>The eigenvalue decomposition, the eigenprojections and the degenerate regimes</td>
-<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+<td><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -135,7 +138,7 @@ $$</p>
 <h3 id="the-norm-the-units-and-the-cone">The Norm, the Units and the Cone</h3>
 <p>The quaternionic norm on the sector is</p>
 <p>$$
-N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2.
+\boxed{\;N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2\;}.
 $$</p>
 <p>It is real and of signature $(3,1)$: three positive spatial directions and one negative temporal one. The inverse formula is</p>
 <p>$$
@@ -164,7 +167,7 @@ $$</p>
 $$</p>
 <p>carries $\mathbb{M}_-$ into itself and preserves the norm, $N(\tilde Q_2)=N(\tilde Q)$. It is a group action, $(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\tilde Q(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}=\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\tilde Q\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,</p>
 <p>$$
-\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\boxed{\;\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;},
 $$</p>
 <p>with the boost factor on the left. A pure boost is the Hermitian positive unit-norm element</p>
 <p>$$
@@ -256,14 +259,14 @@ $$</p>
 <h3 id="the-eigenpair-is-the-doppler-pair">The Eigenpair Is the Doppler Pair</h3>
 <p>The eigenvalue decomposition of the element gives one more reading of the four-momentum. With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are</p>
 <p>$$
-\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right).
+\boxed{\;\lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;}.
 $$</p>
 <p>The two real numbers $\nu_\pm=\lambda_\pm/i=E/c\pm\lvert\vec p\rvert$ are the two light-cone frequencies of the momentum. Their product is the mass squared,</p>
 <p>$$
 \nu_+\nu_-=\frac{E^2}{c^2}-\lvert\vec p\rvert^2=m^2c^2,
 $$</p>
 <p>while the product of the eigenvalues is the biquaternion norm, $\lambda_+\lambda_-=-m^2c^2=N(\tilde P)$. The mass is therefore read from the product, not from either eigenvalue.</p>
-<p>The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of <em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Eigenvalue Decomposition</em>. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.</p>
+<p>The two eigenvalues are not two particles and not two energies. They are the one momentum written in the two idempotent coordinates of <em>Eigenbasis of a Biquaternion</em>, §<em>The Eigenvalue Decomposition</em>. The eigenprojections are idempotents, hence null elements, and they are the two spectral components of the momentum. The pair depends on the frame: a boost changes $\vec p$ and with it the two frequencies, while their product stays $-m^2c^2$.</p>
 <p><strong>The boundary.</strong> The reading needs $B\neq0$, that is, a nonzero spatial momentum. At $\vec p=0$ the two eigenvalues coincide at $iE/c$ and the two-projector writing is not unique. A null momentum has $B=E/c$, so one frequency vanishes; the element stays semisimple and the decomposition survives with a zero eigenvalue. The algebra gives the frequencies, not a particle count and not a numerical mass.</p>
 <h3 id="the-light-cone-is-the-zero-divisor-cone">The Light Cone Is the Zero-Divisor Cone</h3>
 <p>The norm-zero set of the sector is exactly its set of zero divisors. A null four-vector has $N(\tilde Q)=0$, so the inverse formula fails and the element has no inverse; equivalently, there is a non-zero element annihilated by it. The <strong>light cone</strong> of Minkowski space is therefore the <strong>zero-divisor cone</strong> of the biquaternion algebra, a structural identity and not an additional assumption.</p>
@@ -388,7 +391,7 @@ $$</p>
 <ul>
 <li><a href="../articles_maths/introduction-to-the-remarkable-subspaces.html">Introduction to the Remarkable Subspaces</a>, for the definition and the basis of $\mathbb{M}_-$.</li>
 <li><a href="../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html">Norm and Invertibility in the Biquaternion Algebra</a>, for the norm, its signature and the inverse formula.</li>
-<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the spectrum, the eigenprojections and the degenerate regimes.</li>
+<li><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the spectrum, the eigenprojections and the degenerate regimes.</li>
 <li><a href="../articles_maths/zero-divisors-of-the-biquaternion-algebra.html">Zero Divisors of the Biquaternion Algebra</a>, for the cone and the zero divisors.</li>
 <li><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units and the Complement of the Zero-Divisor Cone</a>, for the unit group.</li>
 <li><a href="../articles_maths/the-4-forms-over-the-biquaternion-c-space.html">The 4 Forms over the Biquaternion $\mathbb{C}$ Space</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, for the four forms and their restrictions.</li>

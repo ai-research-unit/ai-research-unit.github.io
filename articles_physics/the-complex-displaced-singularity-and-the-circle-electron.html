@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -97,7 +100,7 @@ $$</p>
 $$</p>
 <p>The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=x^2+y^2+z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the <strong>circle</strong></p>
 <p>$$
-\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2 ,
+\boxed{\;\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2\;}
 $$</p>
 <p>a ring of radius $\varrho$ in the plane $z=0$, centred on the third axis. This is Lanczos's <strong>circle electron</strong>, <em>Kreiselektron</em>. A point singularity of the real potential has been opened into a ring by displacing its position into the informational sector. The radius of the ring is the magnitude of the imaginary part of the displacement, $\varrho=|\zeta|$, and the point electron is recovered in the limit $\varrho\to0$.</p>
 <h2 id="the-branch-disk-and-the-two-sheets">The Branch Disk and the Two Sheets</h2>
@@ -129,7 +132,7 @@ $$</p>
 $$</p>
 <p>where $\rho=\sqrt{x^2+y^2}$ and $\varphi$ is the azimuth, and lets $\varepsilon\to0$. The Hamiltonian function of the ring is then</p>
 <p>$$
-H = \frac{2\pi\varrho}{\varepsilon}\int_0^{2\pi} \frac{\varepsilon+\varrho\,(\cos\varphi+i\sin\varphi)}{\bigl[\varepsilon+2\varrho\,(\cos\varphi+i\sin\varphi)\bigr]^2}\,d\varphi .
+H = \frac{2\pi\varrho}{\varepsilon}\int_0^{2\pi} \frac{\varepsilon+\varrho\,(\cos\varphi+i\sin\varphi)}{\bigl[\varepsilon+2\varrho\,(\cos\varphi+i\sin\varphi)\bigr]^2}\,d\varphi
 $$</p>
 <h3 id="the-vanishing-of-the-integral">The Vanishing of the Integral</h3>
 <p>The integral vanishes, and it vanishes for every $\varepsilon$ in the range $0<\varepsilon<2\varrho$ in which it is taken. The reason is elementary and is worth recording because it is the whole content of the self-energy claim. Setting $u=\exp(i\varphi)$ turns the integral into a contour integral over the unit circle,</p>

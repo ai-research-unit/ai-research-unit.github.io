@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -126,7 +129,7 @@ $$</p>
 <p><strong>Statement.</strong> $A$ has a kernel of real dimension three.</p>
 <p><strong>Proof.</strong> The vanishing of $A(q)$ is the vanishing of the two entries $q_t + iq_1$ and $q_y + iq_3$ together with that of the diagonal entry $q_t + iq_1^*$. The first two give $q_t = -iq_1$ and $q_y = -iq_3$; the third then reads $i(q_x^* - q_x) = 0$, that is, $q_x$ real. The solutions are $q_x = x$ real, $q_t = -ix$, and $q_z$ an arbitrary complex number with $q_y = -iq_3$, which is a real three-dimensional space,</p>
 <p>$$
-\ker A = \mathrm{span}_\mathbb{R}\left\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\right\}.
+\boxed{\;\ker A = \mathrm{span}_\mathbb{R}\left\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\right\}\;}.
 $$</p>
 <p>The last generator spans, over $\mathbb{C}$, the whole complex line through $-\vec e_y - i\vec e_z$, and this is not an accidental coincidence: <strong>the source's own spin-down state lies in that line</strong>. Its state $q_- = (-\vec e_y - i\vec e_z)/\sqrt2$ is a complex multiple of the third generator, and $A(q_-) = 0$ on a hundred random complex multiples. So $A$ does not merely fail to preserve products; it annihilates one of the two states the source uses, and with it every other element of the down-state line. What the source's table exhibits is an assignment that agrees with a representation on four chosen elements, not a representation.</p>
 <h3 id="the-kravchenkoshapiro-matrix-and-the-corpuss-math95">The Kravchenko–Shapiro matrix, and the corpus's $\mathsf{M}_2$</h3>
@@ -184,7 +187,7 @@ $$</p>
 <h3 id="the-states-read-in-the-corpuss-algebra">The states read in the corpus's algebra</h3>
 <p>The source's normalisation is $|q|^2 = \mathrm{Sc}(q\bar q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$, the sum of the squared moduli of the coefficients. It is the Hilbert–Schmidt norm of the image matrix, and it is not the algebra norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, which is complex in general. On the source's two states the two forms disagree completely: the source's norm gives $1$ on each, verified, while</p>
 <p>$$
-\langle q_+\rangle_{\natural} = 0, \qquad \langle q_-\rangle_{\natural} = 0 .
+\boxed{\;\langle q_+\rangle_{\natural} = 0, \qquad \langle q_-\rangle_{\natural} = 0\;}.
 $$</p>
 <p>Both are zero divisors, which is what rank-one matrices are, and the source itself expects this where it says that in the complex quaternions "there are certain objects called zero divisors" and that the inverse is lost. The consequence for the interpretation of the states is sharper than the source draws. Dividing each state by $\sqrt2$ gives an element of the algebra, and the two elements so obtained are of different kinds:</p>
 <div class="table-scroll"><table>
@@ -223,7 +226,7 @@ $$</p>
 <p>with $q_p$ the three units written as a vector and $n$ the axis; for the three axes the source's (14)–(16) read $D(x,\varphi) = e_t\cos\tfrac{\varphi}{2} - \vec e_z\sin\tfrac{\varphi}{2}$, and the same with $\vec e_y$ for $y$ and $\vec e_x$ for $z$. These are unit-norm biquaternions in the corpus's sense: $D^\dagger D = e_t$ was recomputed for each axis and holds exactly, so the objects are rotors and the corpus's rotor theory applies to them unchanged.</p>
 <p>With $\varphi = 0.7$ about the source's $x$-axis, for instance,</p>
 <p>$$
-D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_z, \qquad D^\dagger S_zD = \cos\varphi\,S_z - \sin\varphi\,S_y,
+\boxed{\;D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_z, \qquad D^\dagger S_zD = \cos\varphi\,S_z - \sin\varphi\,S_y\;},
 $$</p>
 <p>the component along the axis being invariant and the two transverse components rotating into one another in the standard sense, and the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17), $D^\dagger(n_i,\varphi)S_jD(n_i,\varphi) = \tfrac{\hbar}{2}\left(q_j\cos\varphi + q_k\sin\varphi\right)$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the reader must take the pairing from the computation, and the invariant component $j = i$ is not covered by the pattern at all.</p>
 <h2 id="the-raising-and-lowering-operators">The Raising and Lowering Operators</h2>

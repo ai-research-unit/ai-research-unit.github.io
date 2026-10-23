@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -240,7 +243,7 @@ $$
 which is the direction of $\vec a\times\vec v=a\,\vec e_y\times v\,\vec e_x=-av\,\vec e_z$. The sign in (16) is therefore not a convention chosen at the end: it is what the parent's own formula produces, once the composition order is the one in (1).</p>
 <p>For $v=0.6c$ and $a$ such that $av/c^2=|a\times v|/c^2=0.6$ per unit time (units $c=1$), $\gamma=1.25$, $\gamma^2/(\gamma+1)=0.694444$, and
 $$
-|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-\vec e_z .
+\boxed{\;|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-\vec e_z\;}.
 $$
 The parent's formula (4) evaluated on the same step gives $\theta_W/dt'=0.41666667$ rad per unit time, to the printed digits.</p>
 <p><strong>(c)</strong> The reverse-order rotor is $\tilde U_{\mathrm{int,rev}}=\tilde U_{\vec v}^{-1}\tilde U_{\vec v+d\vec v}$. To first order in $dt'$ its rotation factor is $\tilde{u}^{-1}$: the same angle $\theta_W$ with the opposite axis. Equation (5) then reads $-\frac{\gamma^{2}}{\gamma+1}\frac{\vec a\times\vec v}{c^{2}}$, and the circular result of Problem 4 reverses its sense, becoming prograde instead of retrograde. The collinear check of (a) is blind to this; the non-collinear computation of (b) is not.</p>
@@ -269,8 +272,8 @@ $$
 which is (17). The precession is <strong>opposite to the orbital angular velocity</strong>: it is retrograde.</p>
 <p><strong>(b)</strong> Over one orbit the lab time is $T=2\pi/\Omega$, so from (17)
 $$
-\Delta\theta=|\vec\omega_T|\,T=(\gamma-1)\,\Omega\,\frac{2\pi}{\Omega}=2\pi(\gamma-1)
-\quad\text{with the sense opposite to }\vec\Omega,
+\boxed{\;\Delta\theta=|\vec\omega_T|\,T=(\gamma-1)\,\Omega\,\frac{2\pi}{\Omega}=2\pi(\gamma-1)
+\quad\text{with the sense opposite to }\vec\Omega\;},
 $$
 i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\approx v^2/2c^2$, so $\omega_T/\Omega\approx-\tfrac12 v^2/c^2$: the precession is half the orbital rate, to leading order, and opposite in sense. Formally the factor $\tfrac12$ is the value of $\gamma^2/(\gamma+1)$ at $\gamma=1$, first displayed in (15).</p>
 <p><strong>(c)</strong> The four-force of the parent article is $\tilde{K}_{\mathrm{f}}=i\gamma\frac{ϙ}{c}(\vec E\cdot\vec v)e_t+\gamma ϙ(\vec E+\vec v\times\vec B)\in\mathbb{M}_-$, and under a magnetic field a spin is torqued at the Larmor rate. The kinematic precession (5) is a separate, purely kinematical contribution, present even with no torque: it is the rotation of the instantaneous rest frame relative to a non-rotating one. In the standard non-relativistic treatment of the spin–orbit coupling, the naive boost of the electron to its instantaneous rest frame gives a rest-frame magnetic field and hence a spin–orbit term twice as large as the observed one; the Thomas precession contributes $-\tfrac12$ of the naive Larmor precession, leaving the observed $\tfrac12$. <em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em> records exactly this: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and "a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value." The present exercise supplies the kinematics behind that factor: (15) is the leading rate, half of $\vec a\times\vec v/c^2$, and (17) is its exact circular-orbit form.</p>

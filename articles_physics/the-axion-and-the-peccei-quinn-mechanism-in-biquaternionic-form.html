@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -99,7 +102,6 @@ is minimised at $a/f_a = -\bar\theta$ modulo $2\pi$, which is the dynamical rela
 <li>Companion article <em>Chiral Fermions in the Biquaternion Framework</em>, for the anomaly context and the axial rotation.</li>
 <li>Companion article <em>The Standard Model under the Biquaternion Framework — A Research Agenda</em>, for the programme the axion belongs to.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and the central scalar is $\tilde\Phi = \varphi e_t$ with complex $\varphi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, whose phase is the axion angle $a/f_a$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box = \partial^2/\partial Q_t^2+\Delta$, and the $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The theta term is $S_\theta = \frac{\theta}{32\pi^2}\int F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}$ with ${F^{\mathrm{dual}}}^{\mu\nu} = \tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ and the physical parameter $\bar\theta = \theta + \arg\det M_q$, following the companion article; the strong-CP bound is $|\bar\theta|\lesssim10^{-10}$. The Peccei–Quinn field is $a$, its decay constant $f_a$, and the anomaly-generated scale is $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi$ with $m_\pi = 135$ MeV, $f_\pi = 92$ MeV and $m_u/m_d = 0.47$. The axion–photon coupling is $g_{a\gamma\gamma} = \frac{\alpha}{2\pi f_a}(E/N - 1.92)$ with $E/N$ the model-dependent anomaly ratio. Natural units $\hbar = c = 1$ are used in the numerical values.</p>
 <h2 id="the-strong-cp-problem-and-the-theta-parameter">The Strong CP Problem and the Theta Parameter</h2>
 <p>The Peccei–Quinn mechanism is a response to strong CP, and this section states the problem in the form the companion theta-parameter article establishes.</p>
 <p><strong>The theta term.</strong> Quantum chromodynamics admits the CP-odd term</p>
@@ -155,17 +157,17 @@ V\!\left(\bar\theta_{\text{eff}}\right) = \Lambda^4\left[1-\cos\!\left(\bar\thet
 $$</p>
 <p>where $\Lambda$ is the QCD scale and the omission denotes higher-derivative terms of the chiral expansion. The potential is periodic in the total angle with period $2\pi$, exactly as the theta dependence is, and its minimum sits at</p>
 <p>$$
-\frac{a}{f_a} + \bar\theta = 0 \pmod{2\pi}
+\boxed{\;\frac{a}{f_a} + \bar\theta = 0 \pmod{2\pi}
 \qquad\Longrightarrow\qquad
-\bar\theta_{\text{eff}} = 0 ,
+\bar\theta_{\text{eff}} = 0\;}
 $$</p>
 <p>which is the dynamical relaxation of strong CP. Expanding about the minimum,</p>
 <p>$$
-V(a) = \frac{\Lambda^4}{2f_a^2}\,a^2 + O(a^4)
+\boxed{\;V(a) = \frac{\Lambda^4}{2f_a^2}\,a^2 + O(a^4)
 \qquad\Longrightarrow\qquad
 m_a^2 = \frac{d^2V}{da^2}(0) = \frac{\Lambda^4}{f_a^2}
 \qquad\Longrightarrow\qquad
-m_a = \frac{\Lambda^2}{f_a} .
+m_a = \frac{\Lambda^2}{f_a}\;}
 $$</p>
 <p>The axion mass is therefore inversely proportional to the breaking scale, and the axion is light when $f_a$ is large — the regime in which the Peccei–Quinn mechanism is phenomenologically viable.</p>
 <p><strong>Matching to the chiral Lagrangian.</strong> The coefficient $\Lambda^2$ is fixed by matching the topological susceptibility of the theta vacuum to the chiral Lagrangian, whose pion sector is the companion article's. The standard result is</p>
@@ -246,11 +248,11 @@ a/f_a \mapsto a/f_a + \alpha ,
 $$</p>
 <p>the axion is the angular mode $a$, and its kinetic term follows from the central kinetic term with $\rho\to f_a$, giving a canonical and shift-symmetric phase. The anomaly-generated potential is</p>
 <p>$$
-V\!\left(\bar\theta + \frac{a}{f_a}\right) = \Lambda^4\left[1-\cos\!\left(\bar\theta+\frac{a}{f_a}\right)\right],
+\boxed{\;V\!\left(\bar\theta + \frac{a}{f_a}\right) = \Lambda^4\left[1-\cos\!\left(\bar\theta+\frac{a}{f_a}\right)\right],
 \qquad
 \frac{dV}{d(a/f_a)} = 0 \text{ at } \bar\theta + \frac{a}{f_a} = 0 ,
 \qquad
-m_a = \frac{\Lambda^2}{f_a} ,
+m_a = \frac{\Lambda^2}{f_a}\;}
 $$</p>
 <p>with $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi = 5.79\times10^{15}$ eV² (i.e. $\Lambda = 76.1$ MeV) and hence $m_a = 5.79\ \mu\mathrm{eV}\times(10^{12}\ \mathrm{GeV}/f_a)$; the curvature, the position of the minimum and the $1/f_a$ scaling were all recomputed. The axion couples to photons as $g_{a\gamma\gamma} = \frac{\alpha}{2\pi f_a}(E/N-1.92)$ and its misalignment abundance is $\Omega_ah^2\sim0.1(f_a/10^{12}\ \mathrm{GeV})^{7/6}$, both standard.</p>
 <p>The framework's contribution is the exact global phase symmetry of the centre, the central scalar that carries it, the periodic axion field and its canonical kinetic term, and the central-singlet character that gives the axion its Standard Model quantum numbers. The framework does not supply the QCD anomaly that generates the potential, the theta parameter whose dynamics the mechanism exploits, the model-dependent anomaly ratio $E/N$, or the value of $f_a$; the theta dependence is the subject of the companion theta-parameter article and is cited rather than re-derived. The distinction between the eaten Goldstone of the abelian Higgs and the surviving axion — the same central phase, opposite fates — is the sharpest statement of the boundary.</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -84,7 +87,6 @@
 <li>Companion article <em>Noether's Theorem in Biquaternionic Form</em>, for the central scalar action and the current.</li>
 <li>Companion article <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>, for the material four-wavevector and the biquaternion norm.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$.</p>
 <h2 id="from-the-operator-formalism-to-the-functional-integral">From the Operator Formalism to the Functional Integral</h2>
 <p>The functional integral is derived from the operator formalism by inserting a complete set of field eigenstates at each time. The field operator $\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ has a continuum of eigenstates,</p>
 <p>$$
@@ -157,10 +159,10 @@ Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]
 $$</p>
 <p>and the time-ordered correlation functions of the quantized field are its functional derivatives,</p>
 <p>$$
-\langle0|T\,\phi^{\mathrm{fop}}(x_1)\cdots\phi^{\mathrm{fop}}(x_n)\,\phi^{\mathrm{fop}\dagger}(y_1)\cdots\phi^{\mathrm{fop}\dagger}(y_m)|0\rangle
+\boxed{\;\langle0|T\,\phi^{\mathrm{fop}}(x_1)\cdots\phi^{\mathrm{fop}}(x_n)\,\phi^{\mathrm{fop}\dagger}(y_1)\cdots\phi^{\mathrm{fop}\dagger}(y_m)|0\rangle
 =\frac{1}{Z[0]}\left(\frac{1}{i}\right)^{n+m}
 \frac{\delta^{\,n+m}Z[\tilde J]}
-{\delta J^*(x_1)\cdots\delta J^*(x_n)\,\delta J(y_1)\cdots\delta J(y_m)}\bigg|_{\tilde J=0}.
+{\delta J^*(x_1)\cdots\delta J^*(x_n)\,\delta J(y_1)\cdots\delta J(y_m)}\bigg|_{\tilde J=0}\;}.
 $$</p>
 <p>This is the equivalence that the next section examines; here the free case is evaluated.</p>
 <p><strong>The free Gaussian.</strong> The free action is quadratic, and the functional integral is the formal limit of the finite-dimensional Gaussian identity. On a lattice of $N$ sites with a real symmetric positive-definite quadratic form $A$,</p>
@@ -175,7 +177,7 @@ Z_N\;\propto\;(\det A)^{-1}\exp\!\left(J^*\!A^{-1}J\right),
 $$</p>
 <p>and the two-point function is again $A^{-1}$; the factor of two in the real-versus-complex counting is exactly the counting that the central-valued field's single complex component supplies. The verification below is performed in the real form, where the closed result is the one quoted. In the continuum the completion of the square gives</p>
 <p>$$
-Z[\tilde J]=Z[0]\exp\!\left(-\int d^4x\,d^4y\;J^*(x)\,\Delta_F(x-y)\,J(y)\right),
+\boxed{\;Z[\tilde J]=Z[0]\exp\!\left(-\int d^4x\,d^4y\;J^*(x)\,\Delta_F(x-y)\,J(y)\right)\;},
 $$</p>
 <p>where $\Delta_F$ is the Feynman propagator of the companion article <em>The Quantized Scalar Field in Biquaternionic Form</em>, the Green's function of $(\Box-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\Delta_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\Delta_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,</p>
 <p>$$
@@ -229,8 +231,8 @@ Z[\tilde Q_5]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]
 $$</p>
 <p>and the <strong>vacuum persistence amplitude</strong> in the background is</p>
 <p>$$
-\big|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle\big|^2
-=\frac{|Z[\tilde Q_5]|^2}{|Z[0]|^2}.
+\boxed{\;\big|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle\big|^2
+=\frac{|Z[\tilde Q_5]|^2}{|Z[0]|^2}\;}.
 $$</p>
 <p>For a homogeneous background with a slow or sudden time dependence, the Gaussian in a time-dependent frequency gives the same two-mode squeezed state and the same coefficients as the mode-matching computation of the companion article, and the probability of pair creation is $1-|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2$. The general connection between the imaginary part of the effective action and the pair-creation rate is standard: $\Im\ln Z$ measures the failure of the vacuum to persist. The Gaussian evaluation above is the free case; the background makes the quadratic form time-dependent and the same functional determinant produces the persistence amplitude. The two formulations therefore agree on the process: canonical quantization through the Bogoliubov coefficients, the path integral through the vacuum functional.</p>
 <p>This is also the point at which the path integral's determinant is visible. The free determinant $[\det(\Box-\mu^2)]^{-1}$ is a central scalar — the inverse power is the complex field's, as in the finite-dimensional identity above; in a background it becomes the central functional determinant whose modulus produces the persistence amplitude. Whether the framework singles out a regularization of that determinant is open, exactly as for the vacuum energy.</p>

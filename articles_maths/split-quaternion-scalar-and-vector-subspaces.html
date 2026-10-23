@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>which is the coarsest decomposition of the algebra and the source of nearly every other structure in the category.</p>
 <p>The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the split-quaternion norm to each subspace and identifies the Minkowski form of signature $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, the relations $\vec e_x^2 = -e_t$, $\vec e_y^2 = +e_t$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$, and a general element $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ with polarisation $\langle\cdot,\cdot\rangle_{\natural}$, and the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Algebra</em>. The split-complex subalgebras are $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ and $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The <strong>scalar subspace</strong> and the <strong>vector subspace</strong> of $\mathbb{H}_{\mathrm{s}}$ are</p>
 <p>$$

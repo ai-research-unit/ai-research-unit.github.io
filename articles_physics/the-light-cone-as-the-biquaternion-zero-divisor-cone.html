@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,7 +82,6 @@ $$</p>
 <li><strong>The cone in the remarkable subspaces.</strong> The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ each contain a cone, and the $\mathbb{M}_-$ cone is the physical light cone.</li>
 <li><strong>The cone as the locus of propagation.</strong> The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. For such a $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \langle\tilde P,\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the central scalar imaginary. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on the real material slice — and the material coordinate is $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.</p>
 <h2 id="the-biquaternion-norm-and-its-vanishing-set">The Biquaternion Norm and Its Vanishing Set</h2>
 <p>The biquaternion norm on $\mathbb{B}$ is</p>
 <p>$$
@@ -94,7 +96,7 @@ $$</p>
 <p>a complex cone of complex dimension three with the origin removed. Since the form is isotropic, the algebra is split by it, and the elements of $\mathcal{Z}$ are exactly the <strong>zero divisors</strong>: a nonzero $\tilde{Q}$ has $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ if and only if there is a nonzero $\tilde Q_2$ with $\tilde{Q}\tilde Q_2 = 0$ (or with $\tilde Q_2\tilde{Q} = 0$).</p>
 <p>On the <strong>real material slice</strong>, writing $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $(t',x,y,z)\in\mathbb{R}^4$, the form becomes</p>
 <p>$$
-\langle\tilde{R}\rangle_{\natural} = (ic\,t')^2 +x^2+y^2+z^2 = -c^2{t'}^2 +x^2+y^2+z^2 ,
+\boxed{\ \langle\tilde{R}\rangle_{\natural} = (ic\,t')^2 +x^2+y^2+z^2 = -c^2{t'}^2 +x^2+y^2+z^2\ } ,
 $$</p>
 <p>and the trichotomy of causal type is the trichotomy of sign:</p>
 <p>$$
@@ -109,7 +111,7 @@ $$</p>
 <p>The two families are separated by the scalar part.</p>
 <p><strong>Pure family.</strong> If $Q_t = 0$ then $\tilde{Q} = \vec Q$ is a pure vector and</p>
 <p>$$
-\tilde{Q}^2 = \vec Q\vec Q = -\vec Q\cdot\vec Q = -\langle\tilde{Q}\rangle_{\natural} = 0 ,
+\boxed{\ \tilde{Q}^2 = \vec Q\vec Q = -\vec Q\cdot\vec Q = -\langle\tilde{Q}\rangle_{\natural} = 0\ } ,
 $$</p>
 <p>where the middle equality uses $\vec Q\vec Q = -\vec Q\cdot\vec Q + \vec Q\times\vec Q$ and $\vec Q\times\vec Q = 0$. A pure zero divisor is therefore <strong>nilpotent</strong>, $\tilde{Q}^2 = 0$, and the pure zero divisors form the nilpotent cone $\vec Q\cdot\vec Q = 0$ inside the complex vector space $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$. The simplest example is $\tilde{Q} = \vec e_x + i\vec e_y$, for which $N = 1^2 + i^2 = 0$ and $\tilde{Q}^2 = 0$.</p>
 <p><strong>Non-pure family.</strong> If $Q_t\neq 0$, write $\tilde{Q} = Q_t(e_t + \vec w)$ with $\vec w = \vec Q/Q_t$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = Q_t^2(1 + \vec w\cdot\vec w)$, so vanishing requires</p>
@@ -218,9 +220,9 @@ $$</p>
 $$</p>
 <p>and it acts on the material sector by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. Since</p>
 <p>$$
-\langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}
+\boxed{\ \langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}
 = \langle\tilde{U}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{U}^{*}\rangle_{\natural}
-= \langle\tilde{Q}\rangle_{\natural} ,
+= \langle\tilde{Q}\rangle_{\natural}\ } ,
 $$</p>
 <p>using the multiplicativity of the biquaternion norm and $\langle\tilde{U}\rangle_{\natural} = 1$, $\langle\tilde{U}^{*}\rangle_{\natural} = 1$, the action carries a null element to a null element and a timelike (or spacelike) element to one of the same type. The rotor also maps $\mathbb{M}_-$ to itself, because $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}\tilde{U}^{*}$ for $\tilde{Q}\in\mathbb{M}_-$. The cone is therefore a Lorentz-invariant set, and the causal classification is frame-independent. Conversely, the cone determines the causal structure, and the group that preserves the cone is the group generated by the rotors together with the discrete transformations that do not preserve the arrows of time and space; the identity component is exactly the connected Lorentz group.</p>
 <p>Two consequences are worth stating because they are the reason the cone is a physical object and not a coordinate artefact. First, the cone has an intrinsic characterization: it is the set where the algebra's biquaternion norm degenerates, and this characterization is invariant under every algebra automorphism, not merely under the rotors. Second, the cone is the boundary of the region in which the free particle of the companion article <em>The Relativistic Particle in Biquaternionic Form</em> can move: its timelike worldline stays strictly inside, and the mass-shell hyperboloid $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ approaches the cone as $m\to 0$. In this precise sense the zero-divisor cone is the boundary of the massive, invertible, subluminal sector of the algebra.</p>

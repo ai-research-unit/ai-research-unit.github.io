@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -136,7 +139,7 @@ $$</p>
 $$</p>
 <p>the central element $\nabla S\,\nabla S^{\natural}=|\nabla S|^2\,e_t$. The Hamilton–Jacobi equation is therefore the statement</p>
 <p>$$
-\frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V ,
+\boxed{\;\frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V\;},
 $$</p>
 <p>an equation in the centre of the algebra: <strong>the kinetic energy is the biquaternion norm of the phase gradient</strong>. This is the same identity that the free-particle article records for the momentum operator, $T_{\mathrm{kin}}=\tilde p\tilde p^{\natural}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.</p>
 <h3 id="rays-trajectories-and-the-eikonal">Rays, trajectories, and the eikonal</h3>
@@ -182,7 +185,7 @@ $$</p>
 <p>which is the WKB amplitude: the wave function is large where the particle moves slowly and small where it moves fast, in inverse proportion to the square root of the classical momentum.</p>
 <p>In three dimensions the transport equation is solved by the <strong>van Vleck determinant</strong>,</p>
 <p>$$
-A(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2},
+\boxed{\;A(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}\;}
 $$</p>
 <p>which measures the focusing of the ray congruence: $A^2$ is the density of trajectories, and the determinant is the Jacobian of the map from initial to final positions. This is the same object that the path-integral article extracts from the Gaussian fluctuation determinant of the semiclassical kernel; the transport equation and the stationary-phase evaluation of the path integral give the same amplitude, as they must, since both are the leading order of the same expansion.</p>
 <h3 id="the-phase-and-the-amplitude-in-the-algebra">The phase and the amplitude in the algebra</h3>
@@ -206,7 +209,7 @@ $$</p>
 <h3 id="bohrsommerfeld-quantisation">Bohr–Sommerfeld quantisation</h3>
 <p>For a bound state in a smooth one-dimensional well with two soft turning points, the phase must return to itself after a round trip. The single-valuedness of $\exp(iS/\hbar)$ around the closed orbit, together with the two Maslov phases, gives the <strong>Bohr–Sommerfeld condition</strong></p>
 <p>$$
-\oint p\,dx = 2\pi\hbar\left(n + \tfrac12\right),
+\boxed{\;\oint p\,dx = 2\pi\hbar\left(n + \tfrac12\right)\;}
 \qquad n = 0,1,2,\dots
 $$</p>
 <p>and for a well bounded by a hard wall on one side and a soft turning point on the other the Maslov count changes and the condition becomes</p>
@@ -220,7 +223,7 @@ $$</p>
 <h3 id="tunnelling">Tunnelling</h3>
 <p>In the classically forbidden region the momentum is imaginary, $p=i\kappa$ with $\kappa=\sqrt{2m(V-E)}$, and the phase becomes a real exponential. Matching the exponential across the barrier gives the WKB transmission</p>
 <p>$$
-T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right),
+\boxed{\;T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right)\;}
 $$</p>
 <p>whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T_{\mathrm{WKB}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.</p>
 <h2 id="the-quantum-potential">The Quantum Potential</h2>

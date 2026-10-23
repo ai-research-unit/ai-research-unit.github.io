@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>positive definite of signature $(4,0)$ (<em>The Isotropic Structure of the General Quaternionic Algebra</em>, above this article in this category). The whole construction is short here because the form is definite and multiplicative: its shell $N = 1$ is a group, and the pin and spin groups of the block are that shell itself.</p>
 <p>The contrast that organises the article is with the plain algebra. There the block carries <strong>two</strong> degree-two structures: the plain form $\mathrm B$, indefinite of signature $(1,3)$, whose shells are not groups and whose pin group therefore lives in a Clifford algebra rather than in $\mathbb{H}$; and the norm $\langle\cdot\rangle_{\natural}$, definite and multiplicative, whose shell is the unit sphere. Over the quaternion real space the quaternionic block takes $\langle\cdot\rangle_{\natural}$ itself for its form, so the definite case is the case of the block; the indefinite form keeps its own theory in the plain block, which is <em>The Pin and Spin Groups of the Quaternion Algebra</em> in the companion reading of the plain algebra of quaternions, cited here and not repeated.</p>
-<p><strong>Conventions.</strong> The quaternionic product is $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$, with ${}^{\natural}$ the conjugation negating $\vec e_x,\vec e_y,\vec e_z$; the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \sum_\mu q_\mu^2$; the vector subspace is $V = \mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$; the shell is $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.</p>
 <h2 id="the-shells-of-the-form">The Shells of the Form</h2>
 <p><strong>Theorem (the shells).</strong> The form $\langle\cdot,\cdot\rangle_{\natural}$ is positive definite and multiplicative, $\langle\tilde q_1 \star \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$; its shells are $N = \lambda$ for $\lambda \geq 0$, the shell $N = 1$ is the unit sphere $\mathbb{H}^1$ of $\mathbb{H} \cong \mathbb{R}^4$, of real dimension three, and the shell $N = -1$ is empty.</p>
 <p><em>Proof.</em> The form is the sum of four squares, so it is non-negative and vanishes only at zero, and its multiplicativity under the product is the theorem of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, above this article in this category; a level set of a definite form is nonempty exactly for $\lambda \geq 0$, and $N = 1$ is the unit sphere of the coordinate space.</p>

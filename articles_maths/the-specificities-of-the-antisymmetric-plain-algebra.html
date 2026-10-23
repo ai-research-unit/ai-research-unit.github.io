@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -95,29 +98,6 @@ every element though $L_{\tilde Q_1}$ is not — and no other structure carries 
 genuine boundary case is the antisymmetric quaternionic product, whose bracket is alternating but
 which fails the Jacobi identity; it is <em>The Jacobi Failure and the Associator Defect of the
 Antisymmetric Quaternionic Algebra</em>, and it is stated here only as the boundary of the criterion.</p>
-<p><strong>Placement.</strong> The article is the closing entry of the <em>Specific Theory</em> section of the block, after
-<em>The Lie Algebra of the Antisymmetric Plain Algebra</em> and after the six Common Theory articles
-<em>Introduction to the Antisymmetric Plain Algebra</em>, <em>Norm and Invertibility in the
-Antisymmetric Plain Algebra</em>, <em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, <em>Square Roots of
-One and the Idempotents of the Antisymmetric Plain Algebra</em>, <em>Square Roots of Zero and the
-Nilpotents of the Antisymmetric Plain Algebra</em> and <em>Square Roots of a General Element in the
-Antisymmetric Plain Algebra</em>, whose results it reads back as consequences of one law. It is
-the twin of <em>The Specificities of the Symmetric Plain Algebra</em>, which states commutativity with the
-Jordan identity as the criterion of the other half of the plain product and proves that the
-symmetric plain product alone satisfies it; the two halves of the plain product are the two unique
-structures of the twelve, the symmetric plain algebra the only Jordan product and the antisymmetric
-plain algebra the only Lie product.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
-$e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The product written $\star$ is
-a generic one, its identity stated at each use. The <strong>left multiplication</strong> of a product $\star$ by
-$\tilde Q_1$ is $L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$, and the <strong>adjoint map</strong> is
-$\mathrm{ad}^{\star}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1$, so that for an
-alternating product $\mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1}$. The twelve structures are
-coded as in <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>: the code has
-three letters, the first $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the general product or its
-symmetrisation or antisymmetrisation, the second $\mathrm P$ or $\mathrm Q$ for the plain or the
-quaternionic row, and the third $\mathrm A$ or $\mathrm S$ for the algebra or sesqualgebra class,
-as in $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <p><strong>Definition (the Leibniz identity).</strong> Let $\star$ be a product on $\mathbb{B}$. The product
 satisfies the <strong>Leibniz identity</strong> when

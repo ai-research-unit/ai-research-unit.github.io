@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@ m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right) = \frac{\mu_0
 $$</p>
 <p>with $s=|l-\bar l|$ the spin. The last form is the whole content: <strong>the mass is proportional to the dimension of the representation.</strong> The representation dimension is the single datum, and the spectrum is the sequence of dimensions along the interlocking chains. Normalising to the electron, the fundamental representation $\tau^{1/2,0}$ of degree $2$, gives $m/m_e = \deg/2$.</p>
 <p>The article records this formula, its derivation from the determinant of the Bhabha operator, the interlocking chains that organise the representations, and the resulting spectrum with its three successes and its one important non-uniqueness. It stands beside the companion <em>The Petiau System and the Quantisation of Mass in Biquaternionic Form</em>, which reaches a mass formula by the opposite route — a mass term that is itself a field — and beside <em>Antilinear Structure and the Two Kinds of Mass</em>, which distinguishes the Dirac and Majorana masses at the level of a single field's pairing; the present formula is a third thing, a spectrum over representations.</p>
-<p><strong>Conventions.</strong> The Lorentz-group conventions are those of the corpus's spinor-module and angular-momentum articles: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l,\bar l\in\frac12\mathbb{Z}_{\ge0}$, spin $s=|l-\bar l|$, and the $ict'$ metric of the corpus, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with an overall sign immaterial to the ratios. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, its Clifford form the corpus's <em>Clifford Algebra Representation</em>. The mass formula and the interlocking scheme are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400), whose route is the finite-dimensional Bhabha–Gel'fand–Yaglom equation.</p>
 <ul>
 <li>Companion article <em>The Petiau System and the Quantisation of Mass in Biquaternionic Form</em>, for the other mass formula — the mass term as a field, the Einstein–Mayer mass biquaternion, and Barut's empirical ratio — and for the corpus's standing that the framework does not derive masses.</li>
 <li>Companion article <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>, for the Dirac/Majorana distinction and the statement that the framework does not fix the mass values.</li>
@@ -95,10 +97,10 @@ D(p) = \det\bigl(\Gamma(p)+mE\bigr) = 0 .
 $$</p>
 <p>Because $D(p)$ is Lorentz-invariant, it depends only on $s^{2}(p)=p_0^{2}-p_1^{2}-p_2^{2}-p_3^{2}$ and factors as</p>
 <p>$$
-D\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_k^{2}\bigr),
+\boxed{\;D\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_k^{2}\bigr)\;},
 $$</p>
 <p>so the masses $m_i$ are the roots: the representation carries a <strong>discrete set of masses</strong>, one for each distinct positive root of the determinant, and the field is a <strong>multi-mass</strong> field. This is the sense in which mass can be "quantised" by the representation, and it is the content the bivector-space article <em>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</em> develops in full.</p>
-<h3 id="the-eigenvalues-of-math28">The Eigenvalues of $\Gamma^{0}$</h3>
+<h3 id="the-eigenvalues-of-math20">The Eigenvalues of $\Gamma^{0}$</h3>
 <p>The roots are read off from the eigenvalues of $\Gamma^{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma^0$ and</p>
 <p>$$
 \det\bigl(p_0\Gamma^{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
@@ -113,8 +115,8 @@ m_2 = \mu_0\,\lambda_3\bar\lambda_3 = -\mu_0\,\lambda_4\bar\lambda_4,\ \dots
 $$</p>
 <p>The formula is a statement about the eigenvalues of $\Gamma^{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\bar l\to\infty$, the eigenvalues degenerate and</p>
 <p>$$
-m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right),
-\qquad s=|l-\bar l| .
+\boxed{\;m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right),
+\qquad s=|l-\bar l|\;}.
 $$</p>
 <p>The identity $(l+\frac12)(\bar l+\frac12) = \frac14(2l+1)(2\bar l+1)$ then gives the dimension form announced above, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$. The mass is thus read from the dimension of the representation, and the constant $\mu_0$ is the single scale.</p>
 <h2 id="the-interlocking-chains">The Interlocking Chains</h2>
@@ -133,7 +135,7 @@ $$</p>
 <h2 id="the-spectrum">The Spectrum</h2>
 <p>Normalising to the electron, the fundamental $\tau^{1/2,0}$ of degree $2$, gives</p>
 <p>$$
-\frac{m}{m_e} = \frac{\deg\tau^{l\bar l}}{2} = \frac{(2l+1)(2\bar l+1)}{2}.
+\boxed{\;\frac{m}{m_e} = \frac{\deg\tau^{l\bar l}}{2} = \frac{(2l+1)(2\bar l+1)}{2}\;}.
 $$</p>
 <p>The programme assigns the following representations, with the ratios below. The measured ratios are computed from the Particle Data Group values, in units of the electron mass $m_e=0.5110$ MeV: $m_p=938.272$ MeV ($m_p/m_e=1836.15$), the $\Sigma$-octet mean $m_\Sigma=(m_{\Sigma^+}+m_{\Sigma^0}+m_{\Sigma^-})/3=1193.15$ MeV ($2334.9$), $m_{\pi^\pm}=139.570$ MeV ($273.13$), and $m_{\pi^0}=134.977$ MeV ($264.14$). The programme itself quotes $m_\Sigma/m_e\approx2280$, which corresponds to a $\Sigma$ mass near $1165$ MeV and is not the PDG octet mean; the table uses the PDG value and the discrepancy is noted.</p>
 <div class="table-scroll"><table>

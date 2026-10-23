@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The left regular representation $\mathsf{M}_4$ of <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> carries the algebra acting on itself, and it makes the natural conjugation ${}^{\natural}$ visible as the <strong>transposition</strong> of the regular matrix, $\mathsf{M}_4(\tilde{Q}_1^{\natural})=\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}$. This article is the companion of <em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, and it reads the group <em>Topology on the Introduction to the General Quaternionic Algebra of Biquaternions</em> on the regular matrices: the quaternionic product becomes the product of the transposed regular matrix with the second factor, and the general quaternionic bilinear form becomes the trace pairing with the transposed second factor, with the factor $2$ that the dimension of the module brings.</p>
 <p>The regular representation has one advantage over the $2\times2$ realization in this group: the characteristic operation ${}^{\natural}$ is a transposition, and the transposition is the operation that the regular matrix already carries. The general quaternionic bilinear form therefore needs no adjugate, and the determinant of the regular matrix is the square of the norm, the two factors being the two copies of the simple module.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$ and $\tilde{Q}_2=\sum_\mu Q_{2,\mu} e_\mu$ with $Q_{1,\mu},Q_{2,\mu}\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$; the quaternionic product $\tilde{Q}_1\star\tilde{Q}_2=\tilde{Q}_1^{\natural}\tilde{Q}_2$ with norm $\langle\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$.</p>
 <h2 id="the-representation">The Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular matrix</strong> is the isomorphism written $\mathsf{M}_4$. It converts a biquaternion into a $4 \times 4$ complex matrix,</p>
 <p>$$

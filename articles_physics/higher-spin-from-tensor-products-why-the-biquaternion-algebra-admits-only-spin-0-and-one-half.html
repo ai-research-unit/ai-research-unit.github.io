@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -100,7 +103,7 @@ $$</p>
 <p>The representation theory of the algebra is exhausted by the following statement.</p>
 <p><strong>Claim.</strong> Every finite-dimensional left module $M$ over $\mathbb{B}$ is isomorphic to a finite direct sum of copies of $S$,</p>
 <p>$$
-M \;\cong\; S^{\oplus k}, \qquad k = \dim_\mathbb{C}\mathrm{Hom}_\mathbb{B}(S,M).
+\boxed{\;M \;\cong\; S^{\oplus k}, \qquad k = \dim_\mathbb{C}\mathrm{Hom}_\mathbb{B}(S,M)\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> The algebra is semisimple — a matrix algebra over a field is — so by the Artin–Wedderburn theorem every finite-dimensional module is a direct sum of simple modules. Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, namely $S$. Hence $M\cong S^{\oplus k}$, and the multiplicity $k$ is the dimension of the space of module maps from $S$ to $M$, by Schur's lemma applied to each summand.</p>
 <p>Two consequences are immediate and both matter. The multiplicity space $\mathrm{Hom}_\mathbb{B}(S,M)$ is a complex vector space, so the decomposition is a Morita equivalence between the modules of $\mathbb{B}$ and complex vector spaces: a module is a complex vector space $V$ dressed as $S\otimes_\mathbb{C}V$, and nothing else. And $S$ is the only irreducible object, so it is the only source of any representation the algebra's modules can carry.</p>
@@ -130,7 +133,7 @@ $$</p>
 <p><strong>The centre.</strong> The centre $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ is the space of scalars, and left multiplication acts on it by the scalars themselves, which is the trivial representation of the Lorentz group on a one-dimensional complex space. The centre is not a left module over $\mathbb{B}$ — the algebra's action does not preserve it — but it is a module over itself and it is a sub-bimodule, and it transforms in the trivial representation. The scalar field of the companion Klein–Gordon article lives here: it is an element of the centre, and its spin is zero because scalars are Lorentz invariant.</p>
 <p><strong>The invariants of products.</strong> The tensor product of the defining module with its conjugate contains a one-dimensional invariant subspace, the trace part, and the antisymmetric square</p>
 <p>$$
-\Lambda^2 S \cong \mathbb{C}, \qquad \dim_\mathbb{C}\Lambda^2 S = 1,
+\boxed{\;\Lambda^2 S \cong \mathbb{C}, \qquad \dim_\mathbb{C}\Lambda^2 S = 1\;},
 $$</p>
 <p>is the trivial representation. Spin zero therefore also appears as the invariant part of a tensor product, and this is the form in which it enters the constraint structure of higher-spin fields.</p>
 <p><strong>The endomorphism space.</strong> By Schur's lemma, $\mathrm{End}_\mathbb{B}(S) = \mathbb{C}$ is one-dimensional and carries the trivial representation of the Lorentz group, so the space of module maps from the defining module to itself is a spin-zero object. This is the module-theoretic restatement of the first two items: the scalar that multiplies a module map is the same scalar that lives in the centre.</p>
@@ -151,7 +154,7 @@ $$</p>
 <h3 id="symmetric-powers-and-the-pure-spin-carriers">Symmetric powers and the pure spin carriers</h3>
 <p>The product $S^{\otimes 2j}$ contains spin $j$ together with lower spins, and the <strong>pure</strong> spin-$j$ carrier is the totally symmetric part. Its weight set is $\{+j,+j-1,\dots,-j\}$, one of each, so</p>
 <p>$$
-\mathrm{Sym}^{2j}(S)\big|_{SU(2)} = j, \qquad \dim_\mathbb{C}\mathrm{Sym}^{2j}(S) = 2j+1,
+\boxed{\;\mathrm{Sym}^{2j}(S)\big|_{SU(2)} = j, \qquad \dim_\mathbb{C}\mathrm{Sym}^{2j}(S) = 2j+1\;},
 $$</p>
 <p>and its complex dimension is $2j+1$, odd: the carrier is not a direct sum of copies of $S$, which is the module-theoretic reason that a pure integer-spin carrier is not a module over $\mathbb{B}$. The antisymmetric parts carry the lower spins: $\Lambda^2 S$ is the trivial representation, of spin zero, as recorded above. In the Lorentz-group language the symmetric powers give the two conjugate three-dimensional families</p>
 <p>$$
@@ -193,8 +196,8 @@ $$</p>
 <p>The generation of higher spin can also be described at the level of the algebra rather than of its module, and the description makes the role of the tensor product explicit.</p>
 <p><strong>Claim.</strong> The $n$-fold tensor power of the biquaternion algebra is a full matrix algebra on the $n$-fold tensor power of the defining module,</p>
 <p>$$
-\mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}), \qquad
-\text{its defining module} \;\cong\; S^{\otimes n}, \qquad \dim_\mathbb{C}\left(S^{\otimes n}\right) = 2^n .
+\boxed{\;\mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}), \qquad
+\text{its defining module} \;\cong\; S^{\otimes n}, \qquad \dim_\mathbb{C}\left(S^{\otimes n}\right) = 2^n\;}.
 $$</p>
 <p><strong>Proof sketch.</strong> The algebra is $M_2(\mathbb{C}) = \mathrm{End}_\mathbb{C}(S)$, and the tensor product of endomorphism algebras is the endomorphism algebra of the tensor product of the modules, $\mathrm{End}(S)\otimes_\mathbb{C}\mathrm{End}(S) \cong \mathrm{End}(S\otimes_\mathbb{C}S)$; iterating gives the statement.</p>
 <p>The claim says that the operator that carries spin $j$ is available in the algebra's $2j$-th tensor power, whose defining module is $S^{\otimes 2j}$ and contains $\mathrm{Sym}^{2j}(S)$ as the pure spin-$j$ carrier. The base algebra itself, which is the first tensor power, contains only the spin-$\tfrac12$ module; the second tensor power contains the four-vector and the two-form; the fourth contains the spin-two carrier. Higher spin is thus not a property of the biquaternion algebra but a property of its tensor powers, and each power is a larger matrix algebra with a correspondingly larger category of modules.</p>

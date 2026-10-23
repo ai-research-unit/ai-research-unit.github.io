@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -86,7 +89,6 @@ $$</p>
 <li><strong>Gap, left visible.</strong> The framework does not derive amplitudes, does not supply a colored gauge theory, and does not by itself distinguish the real material slice $\mathbb{M}_-$ from the complexified algebra $\mathbb{B}$. The general spinor-helicity variables with independent complex $\lambda,\bar\lambda$ describe <em>complexified</em> momenta, which lie in the complexified four-vector representation carried by $\mathbb{B}$ rather than on the real slice $\mathbb{M}_-$; the real slice imposes the reality condition $\bar\lambda \sim \lambda^{*}$ and reduces the little group to $\mathrm{U}(1)$. The massless limit is singular and is treated as such, not by continuity: massive momenta are invertible and have no rank-one factorisation.</li>
 </ul>
 <p>The article is organized as follows. The next section identifies the massless momentum as a zero divisor and shows its image is rank one. The section after that turns rank one into the factorisation and identifies it with spinor helicity. A section derives the brackets as the invariant symplectic pairing and records the one identity that links them to the momenta. The following section treats the little group, the reality condition, and helicity as its weight. A section states the Parke–Taylor formula and checks its little-group weights on concrete cases. The next section shows that the massless limit is singular. A section separates what the algebra supplies from what it only transcribes, and a short section records the gaps. The article closes with open questions.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The conjugations are the quaternion conjugate $\tilde Q^{\natural}$, the complex conjugate $\bar{\tilde Q}$, and the Hermitian conjugate $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The matrix realization is</p>
 <p>$$
 \mathsf{M}_2:\;\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu \;\longmapsto\;
 \begin{pmatrix}
@@ -134,7 +136,7 @@ $$</p>
 <p><em>Proof.</em> If $M = \lambda\bar\lambda^T$ with both factors nonzero, every column of $M$ is a multiple of $\lambda$, so the column space is one-dimensional and $\operatorname{rank} M = 1$. Conversely, if $\operatorname{rank} M = 1$, choose a nonzero column $\lambda$ of $M$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^T$ read off any nonzero row of $M$ divided by the corresponding entry of $\lambda$. Then $M = \lambda\bar\lambda^T$. The scaling is the elementary ambiguity: $(t'\lambda)({t'}^{-1}\bar\lambda)^T = \lambda\bar\lambda^T$.</p>
 <p>Applying the lemma to the null momentum,</p>
 <p>$$
-\mathsf{M}_2(\tilde P) \;=\; \lambda\,\bar\lambda^{T},
+\boxed{\;\mathsf{M}_2(\tilde P) \;=\; \lambda\,\bar\lambda^{T}\;},
 \qquad
 \tilde P \text{ null},\quad \lambda \in S,\ \bar\lambda \in \bar S,
 $$</p>
@@ -165,7 +167,7 @@ $$</p>
 <p><strong>Lorentz invariance.</strong> Since $g^{T}\epsilon\,g = (\det g)\epsilon = \epsilon$ for every $g \in SL(2,\mathbb{C})$, the brackets are invariant under the one-sided Lorentz action $\lambda \mapsto g\lambda$, $\bar\lambda \mapsto g^{*}\bar\lambda$ (the latter being the conjugate defining representation, equivalent to $\mathsf{M}_2(\tilde U^{*})$ up to the invariant-tensor convention recorded in <em>Exercise: Chirality and the Weyl Spinors</em>). The brackets are therefore the Lorentz-invariant contractions of the formalism, as in the standard calculus.</p>
 <p><strong>The bracket–momentum identity.</strong> The polar form of the norm is $\langle\tilde Q_1,\tilde Q_2\rangle = \tfrac12\big(\langle\tilde Q_1+\tilde Q_2\rangle_{\natural}-\langle\tilde Q_1\rangle_{\natural}-\langle\tilde Q_2\rangle_{\natural}\big) = \sum_\mu Q_{1\mu} Q_{2\mu}$. For two null momenta factorised as above, the determinant of the sum of two rank-one matrices is a product of two brackets, and one finds</p>
 <p>$$
-\langle ij\rangle\,[ij] \;=\; \det\!\big(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)\big) \;=\; 2\,\langle\tilde P_i,\tilde P_j\rangle.
+\boxed{\;\langle ij\rangle\,[ij] \;=\; \det\!\big(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)\big) \;=\; 2\,\langle\tilde P_i,\tilde P_j\rangle\;}.
 $$</p>
 <p>The determinant identity was verified symbolically for two independently factorised momenta with independent complex spinors (all eight spinor components free), and the equality with $2\langle\tilde P_i,\tilde P_j\rangle$ was verified on the same general symbols. For real momenta, $\langle\tilde P_i,\tilde P_j\rangle = -\frac{E_iE_j}{c^2} + \vec p_i\cdot\vec p_j$ in the framework's $ict'$ (mostly-plus) convention; in the mostly-minus convention common in amplitude reviews the same identity carries the opposite overall sign. The relative sign of $\langle ij\rangle$ and $[ij]$ is convention-dependent; once both are defined by the same $\varepsilon$, their product is the momentum contraction.</p>
 <p><strong>On signs.</strong> The antisymmetry is the classic source of error in the Parke–Taylor formula. Because $\langle ij\rangle^4$ is even in the interchange $i\leftrightarrow j$, the numerator is insensitive to the ordering, but every bracket that enters linearly — in particular the denominator — changes sign when its two indices are exchanged. A one-line check confirms the effect: replacing a single $\langle 12\rangle$ by $\langle 21\rangle$ in a bracket ratio multiplies the ratio by $-1$.</p>
@@ -201,9 +203,9 @@ $$</p>
 <p>The complete amplitude carries a coupling constant, a color factor (for the partial amplitude, the single-trace structure), and the momentum-conserving delta function; the kinematical content is the bracket ratio, which is what the framework can address. We state the formula as standard and transcribe it.</p>
 <p>The formula is a function of the $\lambda$'s only. Since each particle appears twice in the product of adjacent brackets $\langle 12\rangle\langle 23\rangle\cdots\langle n1\rangle$, the denominator is homogeneous of degree $2$ in each $\lambda_k$, while the numerator $\langle ij\rangle^4$ is homogeneous of degree $4$ in $\lambda_i$ and in $\lambda_j$ and of degree $0$ in the others. Hence the $\lambda$-degree of particle $k$ is</p>
 <p>$$
-d_{\lambda,k} \;=\;
+\boxed{\;d_{\lambda,k} \;=\;
 \begin{cases} +2, & k = i \text{ or } k = j \quad (\text{helicity } -1),\\[2pt] -2, & \text{otherwise} \quad (\text{helicity } +1),\end{cases}
-\qquad\text{that is, } d_{\lambda,k} = -2h_k .
+\qquad\text{that is, } d_{\lambda,k} = -2h_k\;}.
 $$</p>
 <p>This is exactly the little-group weight required of an amplitude whose particle $k$ has helicity $h_k$. The $\bar\lambda$-degree is zero for every particle, so the $\lambda$-degree is the whole weight and the condition $d_{\lambda,k} = -2h_k$ is satisfied.</p>
 <p><strong>Sign check.</strong> The numerator $\langle ij\rangle^4$ is invariant under $i\leftrightarrow j$ because the exponent is even, so the formula does not depend on the order in which the two negative-helicity labels are written. Every bracket entering linearly does depend on the order: replacing one $\langle 12\rangle$ by $\langle 21\rangle$ in a bracket ratio sends the ratio to its negative. This is the concrete sense in which the antisymmetry $\langle ij\rangle = -\langle ji\rangle$ is the classic source of sign errors in the Parke–Taylor formula, and it was checked directly.</p>

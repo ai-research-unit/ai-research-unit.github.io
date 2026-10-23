@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -84,10 +87,10 @@
 <h3 id="noncontextual-value-assignments">Noncontextual value assignments</h3>
 <p>A <strong>noncontextual value assignment</strong> is a function $v$ on the observables satisfying</p>
 <p>$$
-v(e_t) = 1, \qquad
+\boxed{\;v(e_t) = 1, \qquad
 v(\tilde{H}_2+\tilde{H}_1) = v(\tilde{H}_2)+v(\tilde{H}_1), \qquad
 v(\tilde{H}_2\tilde{H}_1) = v(\tilde{H}_2)\,v(\tilde{H}_1)
-\quad\text{whenever }[\tilde{H}_2,\tilde{H}_1]=0,
+\quad\text{whenever }[\tilde{H}_2,\tilde{H}_1]=0\;},
 $$</p>
 <p>and, for observables with spectrum in $\{0,1\}$, taking values in $\{0,1\}$. The first two conditions make $v$ linear on each context; the third makes it multiplicative, hence an algebra homomorphism on each context. Restricted to the idempotents of a context, $v$ is a $\{0,1\}$-valued function with</p>
 <p>$$
@@ -106,7 +109,7 @@ $$</p>
 <h3 id="statement">Statement</h3>
 <p><strong>Kochen–Specker theorem.</strong> Let $\mathcal{H}$ be a Hilbert space of dimension $d\geq3$. There is no function $v$ from the rank-one projectors of $\mathcal{H}$ to $\{0,1\}$ that is noncontextual and consistent on every orthogonal resolution of the identity:</p>
 <p>$$
-v(P)\in\{0,1\}, \qquad \sum_{i}P_i = I \ \Longrightarrow\ \sum_i v(P_i) = 1 .
+\boxed{\;v(P)\in\{0,1\}, \qquad \sum_{i}P_i = I \ \Longrightarrow\ \sum_i v(P_i) = 1\;}.
 $$</p>
 <p>Equivalently, no noncontextual deterministic hidden-variable model reproduces the predictions of quantum physics for a system of dimension at least three. The theorem is state-independent: it concerns the structure of observables, not any particular state.</p>
 <p>The hypothesis $d\geq3$ is necessary. For $d=2$ the constraints are satisfiable, as the previous subsection showed. The original proof of Kochen and Specker used a finite set of vectors in $\mathbb{R}^3$; simpler proofs use the Peres–Mermin configuration in $d=4$, which is the two-qubit case relevant to the framework.</p>
@@ -205,11 +208,11 @@ $$</p>
 $$</p>
 <p>Multiplying the three row equations gives</p>
 <p>$$
-\prod_{\text{all nine entries}} v(\cdot) = (+1)(+1)(+1) = +1 ,
+\boxed{\;\prod_{\text{all nine entries}} v(\cdot) = (+1)(+1)(+1) = +1\;},
 $$</p>
 <p>while multiplying the three column equations gives the same product equal to</p>
 <p>$$
-(+1)(+1)(-1) = -1 .
+\boxed{\;(+1)(+1)(-1) = -1\;}.
 $$</p>
 <p>The two evaluations of one and the same product disagree. Hence no noncontextual $\{\pm1\}$ assignment exists for the two-qubit observables: <strong>the Kochen–Specker obstruction is present in the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$</strong>. The contradiction uses only the multiplicativity of the value assignment on each commuting context and the noncontextuality that lets a single value be used for each entry in both its row and its column.</p>
 <h3 id="relation-to-the-idempotent-contexts">Relation to the idempotent contexts</h3>

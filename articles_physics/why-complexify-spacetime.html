@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,7 +82,7 @@ $$</p>
 <p>The minus sign sits explicitly in the metric, encoded in $\eta_{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$. This is the standard convention. It is clean, it generalizes to curved spacetime, and it fits the tensor formalism.</p>
 <p>But it was not always so. Minkowski himself, and most physicists before the 1960s, wrote the interval differently:</p>
 <p>$$
-ds^2 = (ic_0\,dt')^2 + dx^2 + dy^2 + dz^2.
+\boxed{\;ds^2 = (ic_0\,dt')^2 + dx^2 + dy^2 + dz^2\;}.
 $$</p>
 <p>Here the imaginary unit $i$ multiplies the time coordinate and the vacuum speed of light. The metric is <strong>Euclidean</strong> — all plus signs. The Lorentzian structure is not in the metric; it is in the coordinate. This is the $ict'$ convention.</p>
 <p>Minkowski's original insight was that space and time are not separate entities but a single four-dimensional structure. In his 1908 lecture <em>Space and Time</em>, he wrote:</p>
@@ -100,7 +103,7 @@ $$</p>
 $$</p>
 <p>becomes, with $x^0 = ic_0 t'$,</p>
 <p>$$
-\Box = \frac{\partial^2}{\partial (x^0)^2} + \nabla^2,
+\boxed{\;\Box = \frac{\partial^2}{\partial (x^0)^2} + \nabla^2\;},
 $$</p>
 <p>which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.</p>
 <p><strong>3. The signature is algebraic, not postulated.</strong> The minus sign in the time–time component arises from $i^2 = -1$. It is not an independent input; it is a consequence of the complex structure of the time coordinate. In the metric convention, the minus sign is put in by hand. In the $ict'$ convention, it is derived.</p>

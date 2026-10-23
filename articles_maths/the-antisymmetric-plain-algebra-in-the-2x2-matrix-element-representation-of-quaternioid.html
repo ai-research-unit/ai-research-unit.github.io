@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -89,8 +92,6 @@ $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>; the bracket and
 Antisymmetric Plain Algebra</em> and <em>The Killing Form of the Antisymmetric Plain Algebra</em>, below this
 article in this category. The companion article is <em>The Antisymmetric Plain Algebra in the
 $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the model is</p>
 <p>$$
 \mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-iq_z & -iq_x-q_y\\ -iq_x+q_y & q_t+iq_z\end{pmatrix},
 $$</p>

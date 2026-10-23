@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,8 +82,6 @@ x \star y = xy^{*}
 $$</p>
 <p>is linear in $x$ and $\varsigma$-semilinear in $y$, so $(A,\star)$ is a sesqualgebra. For a unital $A$ it is associative exactly when the involution is trivial, so it is the model of a sesquilinear product that is not associative, and the failure forces a ternary product, $\{x,y,z\} = xy^{*}z$, which is the subject of <em>Algebraic J*-Algebras</em>.</p>
 <p><strong>Terminology.</strong> In this article a <strong>sesqualgebra</strong> is an $R$-module with a product additive in each variable and satisfying the two scalar rules above; it need not be associative, need not have a unit and need not be commutative, and each of these properties is named where it is used, exactly as in <em>Algebras</em>. The base involution is written $\varsigma$, and the product is called $\varsigma$-sesquilinear; $\sigma$ is reserved for an involution of the algebra itself.</p>
-<p><strong>Layout and boundaries.</strong> The article treats the definition and the conjugate module, the collapse at the identity, the standard example with its associativity criterion and its units, the ternary product that the failure forces, and the elementary properties with the examples. It stays inside the algebra and uses no form and no distance: no norm, no length, no topology, no orthogonality, no sesquilinear or Hermitian form. The vocabulary is that of <em>Algebras</em>, <em>Associative Algebras</em> and <em>Unital Algebras</em> for the object, <em>Ideals and Quotients of Algebras</em> for the ideals, <em>Centre, Units, Zero Divisors and Division Algebras</em> for the centre and the units, <em>Tensor Products of Algebras</em> for the tensor product, <em>Involutive Algebras</em> for the involution of an algebra, and <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em> for the ternary structure. Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an $R$-module carrying a product $A \times A \to A$.</p>
-<hr />
 <h2 id="the-definition">The Definition</h2>
 <h3 id="the-two-scalar-rules">The Two Scalar Rules</h3>
 <p><strong>Definition.</strong> Let $R$ be a commutative ring with $1$ and let $\varsigma$ be an involution of $R$, that is an additive map with $\varsigma(1) = 1$, $\varsigma(ab) = \varsigma(b)\varsigma(a)$ and $\varsigma^2 = \mathrm{id}$. A <strong>sesqualgebra</strong> is an $R$-module $A$ with a product $A \times A \to A$, written $(x,y) \mapsto xy$, additive in each variable and satisfying</p>

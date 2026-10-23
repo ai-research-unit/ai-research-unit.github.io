@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -83,7 +86,7 @@ $$
 and the retarded solution of the potential equation $\Box\tilde{A} = -\mu\tilde J$ is
 $$
 \boxed{\;\tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec y|, \;}
+\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec y|\;},
 $$
 whose scalar and vector parts are the standard retarded potentials
 $$
@@ -163,7 +166,7 @@ the last equality because $\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ fo
 $$
 G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\delta(t' - R/c)}{4\pi R},
 \qquad
-\Box\,G_{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}).
+\Box\,G_{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
 $$</p>
 <p>Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the <em>argument</em> $g$: because $(\nabla g)^2 = 1/c^2$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.</p>
 <p><strong>(b) The light-cone delta and its Jacobian.</strong> The same kernel is a distribution concentrated on the light cone. The cone is the zero set of the invariant
@@ -234,7 +237,7 @@ The difference is supported on both cones and is a solution of the source-free w
 $$
 \tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
 = \mu\int \frac{\delta\!\left(t' - t'_2 - R/c\right)}{4\pi R}\,\tilde J(\vec y,t'_2)\,d^3y\,dt'_2
-= \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y ,
+= \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y
 $$
 the $t'_2$ integral having been performed against the delta. Every source contribution is evaluated at its own <em>retarded time</em> $t' - R/c$: the field at $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ is assembled from sources on the past light cone of that event, exactly as the causality condition requires. This is the biquaternionic form of the retarded solution, and it is the object the companion radiation article specializes to a point charge.</p>
 <p><strong>(b) The component potentials.</strong> The four-current is $\tilde J = ic\rho\,e_t + \vec J$, with scalar part $ic\rho$ and vector part $\vec J$. The scalar part of $\tilde{A}$ is $A_0 = i\phi/c$, so
@@ -274,11 +277,11 @@ $$
 $$
 and likewise $\Delta\vec A = -\mu\vec J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde J$, which is the static limit of $\Box\tilde{A} = -\mu\tilde J$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
-\phi = \frac{ϙ}{4\pi\epsilon R},
+\boxed{\;\phi = \frac{ϙ}{4\pi\epsilon R},
 \qquad
 \vec E = -\nabla\phi = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
 \qquad
-\tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2},
+\tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2}\;}
 $$
 which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\nabla(1/R) = -\vec u_R/R^2$,
 $$
@@ -338,10 +341,10 @@ $$
 derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t'-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\Theta(t')\delta({t'}^2 - R^2/c^2)$ by the Jacobian conversion $\delta({t'}^2 - R^2/c^2) = \frac{c}{2R}\delta(t'-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.</p>
 <p>The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(t'+R/c)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
-\phi = \frac{1}{4\pi\epsilon}\int \frac{\rho_{\mathrm{ret}}}{R}\,d^3y,
+\boxed{\;\phi = \frac{1}{4\pi\epsilon}\int \frac{\rho_{\mathrm{ret}}}{R}\,d^3y,
 \qquad
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J_{\mathrm{ret}}}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|,
+\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|\;}
 $$
 with all sources at the retarded time $t' - R/c$; the retarded solution is automatically in the Lorenz gauge when charge is conserved, because $\Box S = -\mu(\partial/\partial t'\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

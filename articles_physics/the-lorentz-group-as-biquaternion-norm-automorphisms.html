@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -84,8 +87,6 @@ $$</p>
 <li><strong>At the rotor level</strong>, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ by the Lorentz rotor $\tilde U_{\mathrm L}$, a unit-norm biquaternion, and the correspondence is two-to-one.</li>
 <li><strong>At the algebra level</strong>, the automorphisms that preserve the <strong>product</strong> and not only the form are the inner ones, and they are the diagonal $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is <em>bilinear</em> in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section <em>The Algebra Automorphisms: the Diagonal, and an Induced Causality</em> treats it as the middle case between the norm and the slice.</li>
 </ul>
-<p><strong>Boundaries.</strong> This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article <em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em>. The structure and the finite-dimensional representations of the group as such are treated in <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>; this article's subject is the characterization of the group by the form.</p>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$.</p>
 <h2 id="the-biquaternion-norm-as-a-quadratic-form">The Biquaternion Norm as a Quadratic Form</h2>
 <p>The biquaternion norm is the quadratic map</p>
 <p>$$
@@ -184,7 +185,7 @@ $$</p>
 $$</p>
 <p>the biquaternion norm is real and indefinite:</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +x^2+y^2+z^2 .
+\boxed{\ \langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +x^2+y^2+z^2\ }\ .
 $$</p>
 <p>The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, in the real coordinates, is therefore the quadratic form with matrix</p>
 <p>$$
@@ -240,7 +241,7 @@ $$</p>
 $$</p>
 <p>says exactly that $T$ preserves the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Hence</p>
 <p>$$
-\mathcal{G} \;\cong\; O(1,3),
+\boxed{\ \mathcal{G} \;\cong\; O(1,3)\ } ,
 $$</p>
 <p>the full Lorentz group including the discrete reflections and the time-reversal and parity components. The connected component of the identity is the <strong>restricted Lorentz group</strong> $SO^+(1,3)$: the transformations that are proper (determinant $+1$) and orthochronous (preserve the time direction). This is the group the algebra supplies at the real level: the automorphisms of the biquaternion norm that respect the material slice.</p>
 <p>The discrete components are automorphisms of the form and are not rotor conjugations; they include spatial reflection and time reversal, which are outer with respect to the rotor group. The rotor group covers only the identity component, which is why a spinor or a rotor is not by itself sensitive to orientation-reversing transformations.</p>
@@ -289,14 +290,14 @@ $$</p>
 <p>The map $\pi$ is <strong>surjective</strong> onto $SO^+(1,3)$; that every proper orthochronous Lorentz transformation of $\mathbb{M}_-$ arises as a rotor conjugation is the standard theorem that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, and it is cited here as standard rather than re-derived. The identification of the previous section is therefore complete at the level of the identity component:</p>
 <p>$$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_t\}
-\;=\;\{\pi(\tilde U_{\mathrm L}): \langle\tilde U_{\mathrm L}\rangle_{\natural}=1\}/\ker\pi .\;}
+\;=\;\{\pi(\tilde U_{\mathrm L}): \langle\tilde U_{\mathrm L}\rangle_{\natural}=1\}/\ker\pi\;}.
 $$</p>
 <p>A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by conjugation with unit-norm elements.</p>
 <h2 id="the-algebra-automorphisms-the-diagonal-and-an-induced-causality">The Algebra Automorphisms: the Diagonal, and an Induced Causality</h2>
 <p>The automorphisms used so far preserve the <strong>form</strong>. The algebra has a smaller automorphism group, the maps that also preserve the <strong>product</strong>, and the difference between the two is the subject of open question 1 below. That difference has a sharp algebraic description, and a neighbouring research programme — Kassandrov's biquaternionic <em>algebrodynamics</em>, in Further Reading — builds on it a derivation of Minkowski geometry and of its causal structure rather than treating it as a curiosity. The group-theoretic content of this section is standard; the construction and its consequences are the source's, and the checks are this article's.</p>
 <p><strong>The algebra automorphisms are the diagonal of the form automorphisms.</strong> By Skolem–Noether (companion article <em>Biquaternion Automorphisms and Derivations</em>) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, $\tilde{Q}\mapsto M\tilde{Q}M^{-1}$, and the group is</p>
 <p>$$
-\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C}),
+\boxed{\ \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C})\ } ,
 $$</p>
 <p>of complex dimension three. In the parametrization $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A=\det B$ — this is the <strong>diagonal</strong> $A=B=M$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,</p>
 <p>$$

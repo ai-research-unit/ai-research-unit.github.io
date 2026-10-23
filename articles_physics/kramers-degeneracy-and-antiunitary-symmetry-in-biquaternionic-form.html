@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@
 <li><strong>The quaternionic structure.</strong> The algebra's imaginary units supply the antiunitary $J$ with $J^2=-e_t$ that makes the state space a vector space over the quaternions; the commutant of $\mathcal T$ was computed and is two-complex-dimensional, which is the quaternionic line. Kramers degeneracy is the statement that the state space's unit is not $\mathbb{C}$ but $\mathbb{H}$.</li>
 </ul>
 <p>The article closes with what breaks the symmetry, and with the framework's standing disclaimer: the algebra names the axis along which the symmetry is lost, and does not choose it.</p>
-<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_t=1$, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, central $i$ with $i^{*}=-i$; the antilinear involutions $\bar{\tilde{Q}}$ (complex conjugation), $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ (Hermitian), $\tilde{Q}^\flat=-\tilde{Q}^{*}$ (anti-Hermitian), and the linear quaternion conjugation $\tilde{Q}^{\natural}$; $\flat(\tilde\Psi)=+\tilde\Psi$ on $\mathbb{M}_-$ and $-\tilde\Psi$ on $\mathbb{M}_+$; $\mathbb{M}_-=i\,\mathbb{M}_+$; $\mathrm{Tr}=2\,\mathrm{Sc}$; the module carries $(i\gamma^\mu\partial_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$; the spin generators are $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ with $[\tilde S_a,\tilde S_b]=i\hbar\epsilon_{abc}\tilde S_c$, and the rotation by angle $\theta$ about the unit direction $n$ in the module is $R(\theta)=\exp(\tfrac{\theta}{2}\,n\cdot e)$ with $R(2\pi)=-e_t$; the dictionary representative is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i\vec e_k)=\sigma_k$.</p>
 <h2 id="antiunitary-maps-and-the-two-spaces">Antiunitary Maps and the Two Spaces</h2>
 <p><strong>Antiunitary.</strong> A map $\mathcal T$ on a complex Hilbert space is antiunitary when it is antilinear and preserves the transition probabilities,</p>
 <p>$$
@@ -132,8 +134,8 @@ $$</p>
 <p><em>(i) The partner is degenerate.</em> If $Hv=Ev$ then $H(\mathcal Tv)=\mathcal T(\mathcal T^{-1}H\mathcal T)v$. Since $[\mathcal T,H]=0$ we have $\mathcal T H=H\mathcal T$, and applying $\mathcal T$ to $Hv=Ev$ gives $H(\mathcal Tv)=E^*(\mathcal Tv)=E(\mathcal Tv)$ because $E$ is real for a Hermitian $H$. So $\mathcal Tv$ is an eigenvector with the same eigenvalue.</p>
 <p><em>(ii) The partner is orthogonal, hence independent.</em> Using antiunitarity with $\mathcal T^2v=-v$,</p>
 <p>$$
-\langle \mathcal Tv,v\rangle=\langle \mathcal Tv,-\mathcal T^2v\rangle=-\langle \mathcal Tv,\mathcal T(\mathcal Tv)\rangle
-=-\overline{\langle v,\mathcal Tv\rangle}=-\langle\mathcal Tv,v\rangle ,
+\boxed{\;\langle \mathcal Tv,v\rangle=\langle \mathcal Tv,-\mathcal T^2v\rangle=-\langle \mathcal Tv,\mathcal T(\mathcal Tv)\rangle
+=-\overline{\langle v,\mathcal Tv\rangle}=-\langle\mathcal Tv,v\rangle\;},
 $$</p>
 <p>where the last step uses the Hermiticity of the inner product. Hence $\langle\mathcal Tv,v\rangle=0$. Since $\mathcal Tv$ is orthogonal to $v$ and non-zero ($\|\mathcal Tv\|=\|v\|$ by antiunitarity), it is an independent eigenvector with the same energy, and the multiplicity is even.</p>
 <p><strong>The three ingredients, and which one is the framework's.</strong> The argument used antiunitarity, $\mathcal T^2=-1$, and $[\mathcal T,H]=0$. The first is the definition of the symmetry class; the third is the assumption of symmetry; the second is the <strong>sign</strong>, and it is the only one that the biquaternion algebra supplies — as $UU^*=U^2=-e_t$ above. The framework therefore does not prove Kramers' theorem, and does not need to: it explains why the sign in the hypothesis is minus.</p>
@@ -152,16 +154,16 @@ $$</p>
 <p><strong>The quaternionic commutant.</strong> The operators on $\mathbb{C}^2$ commuting with $\mathcal T$ (i.e. satisfying $UM^*U^{-1}=M$) form a real four-dimensional space, hence a two-complex-dimensional algebra — the quaternionic line $\mathbb{H}$. The dimension was computed by a rank count of the eight real linear conditions on the eight real parameters of $M$: rank $4$, solution dimension $4$ over $\mathbb{R}$ and $2$ over $\mathbb{C}$.</p>
 <p><strong>The counting of $\mathcal T$-invariant Hamiltonians.</strong> The degeneracy has a parameter count behind it. On $\mathbb{C}^{2N}$ with $\mathcal T^2=-1$, an invariant Hermitian operator can be written in the block form</p>
 <p>$$
-H=\begin{pmatrix}A & B\\ -B^* & A^*\end{pmatrix},
+\boxed{\;H=\begin{pmatrix}A & B\\ -B^* & A^*\end{pmatrix},
 \qquad
 A=A^\dagger ,
 \qquad
-B=-B^{T} ,
+B=-B^{T}\;},
 $$</p>
 <p>which is Hermitian and satisfies $[\mathcal T,H]=0$ identically; the two conditions were verified on a random instance (residual $0$ in both). The real dimension count is then</p>
 <p>$$
-\dim_\mathbb{R}\{A\text{ Hermitian}\}+\dim_\mathbb{R}\{B\text{ complex antisymmetric}\}
-=N^2+N(N-1)=N(2N-1),
+\boxed{\;\dim_\mathbb{R}\{A\text{ Hermitian}\}+\dim_\mathbb{R}\{B\text{ complex antisymmetric}\}
+=N^2+N(N-1)=N(2N-1)\;},
 $$</p>
 <p>against $4N^2$ for a general Hermitian operator of the same size. The dimension was also obtained independently by a rank count of the invariance conditions, for $N=1,2,3$, giving $(1,6,15)=N(2N-1)$ in each case, with the constraint rank $N(2N+1)$. The antisymmetric block $B$ is the pairing structure on the Kramers pairs — the same antisymmetric form that the two-particle state of the spin-$\tfrac12$ Fock space carries — and its antisymmetry is why the pair behaves as a single quaternionic line rather than as two independent states.</p>
 <h2 id="the-quaternionic-structure">The Quaternionic Structure</h2>

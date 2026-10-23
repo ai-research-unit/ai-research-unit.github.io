@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,7 +71,6 @@
         <h1 id="the-krein-cartan-decomposition-of-the-operator-algebra"><strong>The Krein Cartan Decomposition of the Operator Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the <strong>three adjoints</strong> of the operator algebra (the transpose of the general quaternionic bilinear form, the Hermitian adjoint, the Krein adjoint), the <strong>three involutions</strong> they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the <strong>Krein decomposition</strong> $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is <em>not</em> a Cartan involution; and the Cartan involution of $\mathrm{U}(1,3)$ itself, whose symmetric space is the complex hyperbolic space of <em>The Krein Level Sets and the Hyperbolic Structure</em>. The group is <em>The Krein Isometry Group and Its $J$-Contractions</em>; the individual operators are <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$; the general plain sesquilinear form has Gram matrix $\mathrm{I}_4$, the general quaternionic bilinear form $\mathrm{I}_4$ and the general quaternionic sesquilinear form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.</p>
 <h2 id="the-three-adjoints-of-the-operator-algebra">The Three Adjoints of the Operator Algebra</h2>
 <p><strong>Theorem (the three involutions).</strong> On $\mathfrak{g}$ the three pairings of <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> define three adjoints,</p>
 <p>$$
@@ -131,7 +133,7 @@ $$</p>
 <p><strong>Proof.</strong> $\theta_{J}^{2}(T)=\bigl((T^{\dagger})^{-1}\bigr)^{\dagger}{}^{-1}=(T^{\dagger\dagger})^{-1}{}^{-1}=T$, using $(S^{-1})^{\dagger}=(S^{\dagger})^{-1}$; the fixed condition $\theta_{J}(T)=T$ is $T^{\dagger}T=\mathrm{id}$, the definition of $J$-unitarity, and the group is $\mathrm{U}(1,3)$.</p>
 <p><strong>Theorem (the involution is not Cartan).</strong> The fixed group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$ of $\theta_{J}$ is non-compact, so $\theta_{J}$ is not a Cartan involution of $GL(\mathbb{B})$: the fixed group of a Cartan involution is compact by definition.</p>
 <p><strong>Proof.</strong> $\mathrm{U}(1,3)$ contains the boosts, which are unbounded (<em>The Krein Isometry Group and Its $J$-Contractions</em>).</p>
-<h2 id="the-cartan-involution-of-math113">The Cartan Involution of $\mathrm{U}(1,3)$</h2>
+<h2 id="the-cartan-involution-of-math100">The Cartan Involution of $\mathrm{U}(1,3)$</h2>
 <p><strong>Theorem (the Cartan involution).</strong> The restriction of the definite involution</p>
 <p>$$
 \theta_{0}(T)=(T^{*})^{-1}

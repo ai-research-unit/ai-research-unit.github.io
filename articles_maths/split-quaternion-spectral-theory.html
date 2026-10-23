@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is unital and associative but neither commutative nor a division algebra, and both failures shape its spectral theory. Because the algebra is a real form of $M_2(\mathbb{C})$ and has an <strong>indefinite</strong> norm, the spectrum of an element falls into two qualitatively different regimes: a real eigenvalue pair or a complex-conjugate pair, according to the sign of the split-quaternion norm of the vector part. This dichotomy is the feature that distinguishes the subject from the biquaternion spectral theory, where the corresponding vector norm is definite.</p>
 <p>This article defines the spectrum, discusses left and right eigenvalues, states the eigenvalue dichotomy, the Cayley–Hamilton theorem and the trace and determinant functionals, the eigenspaces and their dimensions, the resolvent and the spectral radius, and the relation to the biquaternion spectral theory. It relies on <em>Split-Quaternion Norm and Invertibility</em> for the invertibility criterion and on <em>Split-Quaternion Zero Divisors</em> for the singular elements. "Spectrum" without qualification always means the set of roots of the characteristic polynomial of the element, analysed over $\mathbb{C}$. No physics is invoked.</p>
-<p><strong>Conventions.</strong> A general element is $\tilde q = q_t + \vec v$ with $q_t = \operatorname{Sc}(\tilde q)\in\mathbb{R}$ and $\vec v = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in V$; $\langle\tilde q\rangle_{\natural} = q_t^2+\langle \vec v\rangle_{\natural}$, $\langle \vec v\rangle_{\natural} = q_x^2-q_y^2-q_z^2$. The <strong>trace</strong> and <strong>determinant</strong> functionals are $T(\tilde q) = \tilde q + \tilde{q}^{\natural} = 2q_t$ and $D(\tilde q) = \tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$.</p>
 <h2 id="the-spectrum-of-a-split-quaternion">The Spectrum of a Split Quaternion</h2>
 <p><strong>Definition.</strong> The <strong>spectrum</strong> of $\tilde q\in\mathbb{H}_{\mathrm{s}}$ is</p>
 <p>$$

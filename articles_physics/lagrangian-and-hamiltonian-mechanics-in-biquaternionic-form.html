@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -152,7 +155,7 @@ $$</p>
 <h3 id="the-kinetic-energy-is-the-biquaternion-norm">The Kinetic Energy Is the Biquaternion Norm</h3>
 <p>Let $\tilde q(t')$ be a trajectory and $d\tilde q/dt'$ its velocity. The <strong>kinetic energy</strong> of a particle of mass $m$ is</p>
 <p>$$
-T=\tfrac{1}{2}m\,\langle\,d\tilde q/dt'\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dt'\,(d\tilde q/dt')^{\natural}=\tfrac{1}{2}m\sum_{\mu\in\{t,x,y,z\}}\left(dq_{\mu}/dt'\right)^{2} .
+\boxed{\;T=\tfrac{1}{2}m\,\langle\,d\tilde q/dt'\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dt'\,(d\tilde q/dt')^{\natural}=\tfrac{1}{2}m\sum_{\mu\in\{t,x,y,z\}}\left(dq_{\mu}/dt'\right)^{2}\;}.
 $$</p>
 <p>For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|d\vec q/dt'|^2$, the familiar kinetic energy. The kinetic energy is therefore the <strong>biquaternion norm</strong> of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $d\tilde q/dt'=0$; no sign choice has to be made.</p>
 <p>The free Lagrangian is</p>
@@ -229,7 +232,7 @@ $$</p>
 <h3 id="hamiltons-equations">Hamilton's Equations</h3>
 <p>Differentiating $H(\tilde q,\tilde p)=\sum_\mu p_\mu\,dq_{\mu}/dt'-L(\tilde q,d\tilde q/dt')$ and using the definition of $\tilde p$ gives <strong>Hamilton's equations</strong> in quaternion form,</p>
 <p>$$
-\boxed{\;d\tilde q/dt'=\frac{\partial H}{\partial\tilde p},\qquad \,d\tilde p/dt'=-\frac{\partial H}{\partial\tilde q}.\;}
+\boxed{\;d\tilde q/dt'=\frac{\partial H}{\partial\tilde p},\qquad \,d\tilde p/dt'=-\frac{\partial H}{\partial\tilde q}\;}.
 $$</p>
 <p><strong>Check on the free particle.</strong> $H_0=\langle\tilde p\rangle_{\natural}/2m$ gives $\partial H_0/\partial\tilde p=\tilde p/m=d\tilde q/dt'$ and $\partial H_0/\partial\tilde q=0$, hence $d\tilde p/dt'=0$: constant momentum.</p>
 <p><strong>Check on the oscillator.</strong> With $H$ as above, $d\tilde q/dt'=\tilde p/m$ and $d\tilde p/dt'=-m\omega^2\tilde q$, whose second-order form is $d^2\tilde q/d{t'}^2=-\omega^2\tilde q$. The flow is a rotation of the $(\tilde q,\tilde p)$ plane at frequency $\omega$, and after a quarter period the configuration has become the momentum divided by $m\omega$, and the momentum has become minus $m\omega$ times the configuration. In the biquaternion picture this exchange is the action of the complex structure, as the next section states.</p>
@@ -246,7 +249,7 @@ $$</p>
 <h2 id="phase-space-as-a-single-biquaternion">Phase Space as a Single Biquaternion</h2>
 <p>For a system with three degrees of freedom the position and momentum are pure real quaternions, $\tilde q,\tilde p\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and they combine into the single biquaternion</p>
 <p>$$
-\tilde Q_3=\tilde q+i\tilde p\in\mathbb{B}.
+\boxed{\;\tilde Q_3=\tilde q+i\tilde p\in\mathbb{B}\;}.
 $$</p>
 <p>Its anti-Hermitian and Hermitian parts are</p>
 <p>$$
@@ -296,7 +299,7 @@ $$</p>
 <p>Using $\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$ for real quaternions, the bracket is</p>
 <p>$$
 \boxed{\;\{f,g\}=\mathrm{Sc}\!\left((\nabla_{\tilde q}f)^{\natural}\,\nabla_{\tilde p}g\right)
--\mathrm{Sc}\!\left((\nabla_{\tilde p}f)^{\natural}\,\nabla_{\tilde q}g\right).\;}
+-\mathrm{Sc}\!\left((\nabla_{\tilde p}f)^{\natural}\,\nabla_{\tilde q}g\right)\;}.
 $$</p>
 <p>Only the scalar part of each quaternion product enters. For pure $\tilde q_1,\tilde q_2$ the product $\tilde q_1^{\natural}\tilde q_2$ has a vector part as well, $-\tilde q_1\times\tilde q_2$; in general the vector part is $q_{1,0}\vec q_2-q_{2,0}\vec q_1-\vec q_1\times\vec q_2$, and only the cross-product term is intrinsic to the pairing. The Poisson bracket discards it, and the discarded part is precisely the cross-product structure that reappears as the angular-momentum bracket below. This is the algebraic content of the statement that the classical bracket is the antisymmetric scalar pairing of two gradients.</p>
 <p>Because the bracket is built from scalar parts of quaternion products, it is automatically bilinear and antisymmetric, and in these coordinates it is the canonical bracket in disguise, so it satisfies the Jacobi identity. The derivation property $\{f,gh\}=\{f,g\}h+g\{f,h\}$ holds for the commutative product of central-valued functions, exactly as in the standard theory.</p>

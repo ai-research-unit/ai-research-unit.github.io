@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -76,7 +79,6 @@ $$</p>
 <p>The algebra carries six <strong>remarkable subspaces</strong>, defined in <em>Introduction to the Remarkable Subspaces</em>: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
 <p><strong>The approach.</strong> The article establishes four things, in this order. The four blocks and the exponent of each factor are identified. The blocks are put against the Clifford grades and against the six subspaces, which are their sums two by two. The incidence of the exponents with the subspaces is tabulated, with the polar data each subspace carries. The two products of the series — of two boosts, and of the word of a pure vector — are computed, and the domain and the conjugations of the word close the account.</p>
 <p><strong>The result, in one sentence.</strong> The four exponents of a generic polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of them, and the polar word fails on a subspace exactly on the origin or its nonzero zero divisors.</p>
-<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$, with $Q_\mu\in\mathbb{C}$.</p>
 <p>Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$.</p>
 <p>The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.</p>
 <p>The symbols $r$, $\zeta$, $\alpha$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of <em>Introduction to the Remarkable Subspaces</em>, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of <em>Comparison of the Remarkable Subspaces</em>.</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -121,7 +124,7 @@ $$</p>
 <h3 id="two-constraints-six-degrees-of-freedom">Two constraints, six degrees of freedom</h3>
 <p>The structural heart of the paper is the representation of the field as a <strong>spinor bilinear</strong>. With $\psi$ a Dirac–Hestenes spinor, an element of the even subalgebra $C\ell^+(M)$, the field is written</p>
 <p>$$
-F = \psi\,\gamma_{21}\,\psi^{\mathrm{c}},
+\boxed{\;F = \psi\,\gamma_{21}\,\psi^{\mathrm{c}}\;}
 $$</p>
 <p>where $\psi^{\mathrm{c}}$ is the <strong>reverse</strong> of $\psi$. The counting matters: a general even spinor has <strong>eight</strong> real degrees of freedom, while the field $F$ has <strong>six</strong>, so two constraints must be imposed on $\psi$ for the correspondence to be one-to-one up to a normalisation. The source chooses them as $\partial\cdot j=0$ and $\partial\cdot g=0$, where $j$ and $g$ are the vector and axial-vector currents read off the derivatives of $\psi$. This is the same eight-versus-six counting the corpus records in its Dirac–Hestenes article, which reaches it through the parameters of the rotor decomposition; the constraints are the source's extra data.</p>
 <p>Substituting $F=\psi\gamma_{21}\psi^{\mathrm{c}}$ into the generalised Maxwell equation $\partial F=J$ and using the canonical decomposition $\psi=\rho^{1/2}\exp(\gamma_5\beta/2)R$ — the rotor $R$, the density $\rho$, and the <strong>Takabayasi angle</strong> $\beta$ — turns the field equation into a spinorial equation for $\psi$:</p>
@@ -140,7 +143,7 @@ $$</p>
 $$</p>
 <p>The non-linearity is exactly the factor $\exp(\beta\gamma_5)$: when $\beta$ is <strong>constant</strong> the factor is a constant duality rotation and the equation becomes linear. Concretely, with $\psi=\varphi\,\exp(\gamma_5\beta/2)$ and $\varphi=\sqrt{\rho}\,R$, the phase factor on the right is cancelled by the phase factor of the decomposition — $\exp(\gamma_5\beta/2)\gamma_0=\gamma_0\exp(-\gamma_5\beta/2)$ because $\gamma_5$ anticommutes with $\gamma_0$ — and the free equation reduces to the <strong>linear Dirac–Hestenes equation</strong></p>
 <p>$$
-\partial\varphi\gamma_{21} = m\,\varphi\gamma_0 ,
+\boxed{\;\partial\varphi\gamma_{21} = m\,\varphi\gamma_0\;}
 $$</p>
 <p>with $\Lambda=m$ identified as the mass. The criterion is therefore sharp, and it is the source's key structural statement: <strong>the Maxwell equation for the field is equivalent to the linear Dirac equation for the spinor exactly when the Takabayasi angle is constant</strong>, and the particular values $\beta=0$ and $\beta=\pi$ select the electron and the positron. The plane-wave solutions of the corpus's own Dirac exercise have constant $\beta$ — zero for the positive-energy ones — so they sit on precisely this linearisable class, and the source supplies the general reason why.</p>
 <p>Two consequences the source draws from the same algebra are worth recording. The first is a <strong>superselection rule</strong>: the superposition principle survives only for spinors of the same $\beta$, because $\exp(\beta\gamma_5)$ is not linear across different angles; the source reads this as particles and antiparticles forming separate superselection sectors. The second is the <strong>momentum relation</strong>. Multiplying the non-linear equation by $\psi^{-1}$ gives $p=mv$ for every angle $\beta$, whereas the linear Dirac–Hestenes equation gives $p=\exp(\beta\gamma_5)mv$, which for $p$ and $v$ real forces $\beta=0$ or $\beta=\pi$ and thus the choice between positive and negative energy. In the non-linear interpretation there is no negative-energy problem to interpret: the equation gives $p=mv$ throughout, and the source proposes to reinterpret the energy projector as a <strong>particle projector</strong> instead.</p>
@@ -165,7 +168,7 @@ $$</p>
 $$</p>
 <p>with both an electric current $J_e$ and an <strong>axial (magnetic) current</strong> $-\gamma_5J_m$. For the positive-parity eigenstate $\psi^\uparrow$ the electric current vanishes, $j_e=0$, and the equivalent Maxwell equation reads</p>
 <p>$$
-\partial F^\uparrow = -\gamma_5 J_m ,
+\boxed{\;\partial F^\uparrow = -\gamma_5 J_m\;}
 $$</p>
 <p>that is, a <strong>massless Dirac field is a Maxwell field with a magnetic current and no electric current</strong>. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\gamma_5B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\gamma_5B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source reads as a pair of opposite charges. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of <strong>square root</strong> of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\gamma_\mu F$.</p>
 <h2 id="status-contrasts-and-boundaries">Status, Contrasts, and Boundaries</h2>

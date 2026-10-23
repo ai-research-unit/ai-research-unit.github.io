@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -134,7 +137,7 @@ F_l(\eta,\rho)\ \longrightarrow\ \sin\!\left(\rho-\eta\ln 2\rho-\frac{l\pi}{2}+\
 $$</p>
 <p>in which the phase accumulates a logarithm from the tail and a shift</p>
 <p>$$
-\sigma_l=\arg\Gamma(l+1+i\eta)
+\boxed{\;\sigma_l=\arg\Gamma(l+1+i\eta)\;}
 $$</p>
 <p>from the short-distance part of the potential. The $\eta\ln2\rho$ term is the irreducible long-range effect: because the Coulomb potential falls off only as $1/r$, the phase of the wave function grows logarithmically with distance and never settles into a constant. The phase shift $\sigma_l$ is the <strong>Coulomb phase</strong>, and it is the whole of the scattering phase in the pure Coulomb problem: there is no short-range phase to add, because there is no short-range potential.</p>
 <p>The Coulomb phase was verified in two independent ways. First, it obeys the recurrence</p>
@@ -159,8 +162,8 @@ f_C(\theta)=-\frac{1}{2ik}\sum_{l=0}^{\infty}(2l+1)\left(\exp(2i\sigma_l)-1\righ
 $$</p>
 <p>This series can be summed in closed form. The standard result, obtained from the generating function of the Coulomb phases and the Legendre expansion, is</p>
 <p>$$
-f_C(\theta)=-\frac{\eta}{2k\,\sin^2(\theta/2)}
-\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
+\boxed{\;f_C(\theta)=-\frac{\eta}{2k\,\sin^2(\theta/2)}
+\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right]\;},
 $$</p>
 <p>whose squared modulus is</p>
 <p>$$
@@ -175,8 +178,8 @@ $$</p>
 $$</p>
 <p>and therefore</p>
 <p>$$
-\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k^2\sin^4(\theta/2)}
-=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)},
+\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k^2\sin^4(\theta/2)}
+=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)}\;},
 $$</p>
 <p>which is <strong>Rutherford's formula</strong>. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of classical Rutherford scattering, and the quantum cross section coincides with it for the Coulomb potential.</p>
 <p>The classical route to the same formula is worth recording because it is available here in the elementary form. For a Coulomb potential the orbit is a Kepler hyperbola, and the impact parameter is related to the scattering angle by</p>

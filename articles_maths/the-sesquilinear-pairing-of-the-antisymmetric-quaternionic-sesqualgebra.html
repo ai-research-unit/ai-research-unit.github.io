@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@
 $$</p>
 <p>the form of <em>The Krein Gram Matrix and the Restrictions of the Form</em>, written there $\langle\cdot,\cdot\rangle_{\natural*}$, linear in its first argument and conjugate-linear in its second. This article reads the block against that form: the pairing of a value with a third element, the pairing of a value with itself, the Gram matrix of the sixteen basis pairs with its rank and its radical, the forms $\beta$ invariant under the block, the trace form, and the restriction of the form to the remarkable subspaces with the signs it carries there. The reading is the analogue for the block of the pairings of the two general sesquilinear products and of the block of the plain row, and it is the form side of the multiplication.</p>
 <p>The form is owned by <em>The Krein Gram Matrix and the Restrictions of the Form</em> and its isotropic structure by <em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>; the remarkable subspaces are <em>Introduction to the Remarkable Subspaces</em>; the product the block splits is <em>Introduction to the General Quaternionic Sesqualgebra</em>; the general construction of a sesqualgebra part is <em>The Symmetric and Antisymmetric Parts of a Sesqualgebra Product</em>; and the companion readings of the same form are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> for the four forms on the remarkable subspaces and <em>The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra</em> for the plain-row companion of the block. This article owns the pairing itself.</p>
-<p><strong>Conventions.</strong> As in the two preceding articles of the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x \vec e_y=\vec e_z$, generic elements $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, and the product $\diamond$ for the block. The form $\langle\cdot,\cdot\rangle_{\natural*}$ is linear in the <strong>first</strong> argument and conjugate-linear in the second; the vector subspace $\mathrm{Vect}(\mathbb{B})$ is the complex span of $\vec e_x,\vec e_y,\vec e_z$.</p>
 <h2 id="the-pairing-of-a-value-with-a-third-element">The Pairing of a Value with a Third Element</h2>
 <p><strong>Proposition (the pairing in coordinates).</strong> For all biquaternions,</p>
 <p>$$

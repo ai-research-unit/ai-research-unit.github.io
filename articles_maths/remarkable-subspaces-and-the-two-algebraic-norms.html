@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The two algebraic norms of <em>The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space</em>, the plain norm $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$ and the quaternion norm $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$, are read here on the two <strong>remarkable subspaces</strong> of the quaternion space, the scalar line $\mathbb{R}_{\mathbb{H}}=\{q_te_t\}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})=\{\vec q\}$, the fixed and the anti-fixed space of the quaternion conjugation. On the scalar line the two norms <strong>coincide</strong> and are nonnegative; on the vector subspace they <strong>differ by sign</strong>, the plain norm being nonpositive and the quaternion norm nonnegative. The two subspaces split the whole space for both associated forms, and the <strong>signature table</strong> of the forms the two norms define is $(1,3)$ for the plain norm and $(4,0)$ for the quaternion norm.</p>
 <p>The norms are <em>The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space</em>, the article preceding this one; the subspaces are <em>Introduction to the Remarkable Subspaces of the Quaternions</em>, in the Linear Spaces group above; the forms on the same subspaces are <em>Remarkable Subspaces and the Two Forms</em>, the article preceding this one; and the comparison is <em>Remarkable Subspaces and the Four Algebraic Norms</em>.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q=q_te_t+\vec q$ names an element, the scalar line has basis $e_t$ and the vector subspace has basis $\vec e_x,\vec e_y,\vec e_z$, and the two norms are $\langle\tilde q\rangle$ and $\langle\tilde q\rangle_{\natural}$. The associated forms of the two norms are $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ and $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$, of signatures $(1,3)$ and $(4,0)$.</p>
 <h2 id="the-two-norms-on-the-two-subspaces">The Two Norms on the Two Subspaces</h2>
 <p><strong>Proposition (the restrictions of the two norms).</strong> On a scalar element $\tilde q=q_te_t$,</p>
 <p>$$

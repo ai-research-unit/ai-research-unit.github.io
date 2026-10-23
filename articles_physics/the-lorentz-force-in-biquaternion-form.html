@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -71,7 +74,7 @@
 <p>This article carries out that work. The result is a two-term product formula, bilinear in the field and the four-velocity, that reproduces the component form exactly. In its most compact shape the formula is a single projection:</p>
 <p>$$
 \boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\,\tilde{F}\right),\qquad
-P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).\;}
+P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right)\;}.
 $$</p>
 <p>The projection $P_{\mathbb{M}_-}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{M}_-$ automatically. Written out, the formula is</p>
 <p>$$
@@ -218,8 +221,7 @@ $$</p>
 <p>$$
 \boxed{\;
 \tilde{K}_{\mathrm{f}} = \frac{ϙ}{4}\!\left(\sqrt{\mu} - \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{F}\tilde{V} + \tilde{V}\tilde{F}^{*}\right)
-- \frac{ϙ}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).
-\;}
+- \frac{ϙ}{4}\!\left(\sqrt{\mu} + \frac{1}{c\sqrt{\epsilon}}\right)\!\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$</p>
 <p>This is the general form, valid for the symbols $c, \epsilon, \mu$ taken independently.</p>
 <p><strong>Step 5: use the medium relation.</strong> In the biquaternion framework the speed of light in the medium is not independent of the electromagnetic properties: $c = 1/\sqrt{\epsilon\mu}$. Equivalently,</p>
@@ -230,8 +232,7 @@ $$</p>
 <p>$$
 \boxed{\;
 \tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)
-= -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).
-\;}
+= -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$</p>
 <p>The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may also be written</p>
 <p>$$
@@ -494,7 +495,7 @@ $$</p>
 <p>which is the contraction $K^\mu = ϙF^{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{M}_-$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}$ — that object has the wrong reality structure and lies outside $\mathbb{M}_-$ — but the anti-Hermitian projection of $\tilde{V}\tilde{F}$:</p>
 <p>$$
 \boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
-= -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).\;}
+= -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$</p>
 <p>Equivalently, $\tilde{K}_{\mathrm{f}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}\tilde{F} - \bar{\tilde F}\tilde{V})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}_{\mathrm{f}}$, while $\tilde{F}$ is reserved for the field strength.</p>
 <p>The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}_{\mathrm{f},2} = \tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -136,9 +139,9 @@ $$</p>
 <h2 id="the-spectral-decomposition-of-math75">The Spectral Decomposition of $\tilde{S}_3$</h2>
 <p>The observable $\tilde{S}_3 = \tfrac{\hbar}{2}i \vec e_z$ has the spectral decomposition</p>
 <p>$$
-\tilde{S}_3 = \frac{\hbar}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar}{2}\,\tilde\Pi_2(\vec u_z),
+\boxed{\;\tilde{S}_3 = \frac{\hbar}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar}{2}\,\tilde\Pi_2(\vec u_z),
 \qquad
-\tilde\Pi_{1,2}(\vec u_z) = \tfrac12\left(e_t \pm i \vec e_z\right).
+\tilde\Pi_{1,2}(\vec u_z) = \tfrac12\left(e_t \pm i \vec e_z\right)\;}.
 $$</p>
 <p>The verification is a direct multiplication. Using $\vec e_z^2 = -e_t$,</p>
 <p>$$
@@ -155,11 +158,11 @@ $$</p>
 $$</p>
 <p>with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the normalised Hermitian form, whose trace reading at normalisation is,</p>
 <p>$$
-p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+\boxed{\;p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
 = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
 = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})}
 = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})}
-= \tfrac12\left(1 \pm r_3\right),
+= \tfrac12\left(1 \pm r_3\right)\;},
 $$</p>
 <p>since $\tilde\Pi_{1,2}(\vec u_z)\,\tilde{Ϛ} = \tfrac14(e_t \pm i \vec e_z)(e_t + i\vec r)$ has scalar part $\tfrac14(1 \pm r_3)$ — using $\mathrm{Sc}(\vec e_z\vec r) = -\vec r\cdot\vec u_z = -r_3$ — and $\mathrm{Tr}(\cdot) = 2\,\mathrm{Sc}(\cdot)$. The two intensities sum to one, $p_+ + p_- = 1$, and they are equal for a beam polarised transversely to the field, as they must be by symmetry.</p>
 <h3 id="why-the-resolution-is-not-a-mixture">Why the Resolution Is Not a Mixture</h3>
@@ -185,8 +188,8 @@ $$</p>
 <h3 id="the-reduced-spin-state">The Reduced Spin State</h3>
 <p>If the two beams are separated and only one is retained (or if the position is simply traced out), the spin state is obtained by the partial trace over the spatial degree of freedom. Because the two wavepackets are orthogonal, $\langle\phi_+|\phi_-\rangle = 0$, the cross terms drop and the reduced state is</p>
 <p>$$
-\tilde{Ϛ}_{\mathrm{spin}} = |c_+|^2 \tilde\Pi_1(\vec u_z) + |c_-|^2 \tilde\Pi_2(\vec u_z)
-= \tfrac12\left(e_t + i\,r_3 \vec e_z\right),
+\boxed{\;\tilde{Ϛ}_{\mathrm{spin}} = |c_+|^2 \tilde\Pi_1(\vec u_z) + |c_-|^2 \tilde\Pi_2(\vec u_z)
+= \tfrac12\left(e_t + i\,r_3 \vec e_z\right)\;},
 \qquad r_3 = |c_+|^2 - |c_-|^2 .
 $$</p>
 <p>In biquaternion form the transverse components of the Bloch vector are erased, $\vec r = (0,0,r_3)$. This is the <strong>decoherence</strong> induced by the measurement, and it is exactly the loss of the coherence term identified above. The framework expresses it without a separate postulate: the two idempotents are the two outcomes, the position states that label them are orthogonal, and the cross terms in the partial trace vanish.</p>
@@ -234,7 +237,7 @@ $$</p>
 $$</p>
 <p>whose scalar part is $\tfrac14(1+\cos\theta)$. Hence</p>
 <p>$$
-p_+ = \tfrac12\left(1+\cos\theta\right) = \cos^2\frac{\theta}{2},
+\boxed{\;p_+ = \tfrac12\left(1+\cos\theta\right) = \cos^2\frac{\theta}{2}\;},
 $$</p>
 <p>in agreement with the companion exercise <em>Exercise: Measuring Spin Along an Arbitrary Direction</em>. The result depends on the analyser direction only through $\vec u\cdot \vec e_z = \cos\theta$, which is the geometric content: the probability is a function of the angle between the preparation axis and the analysis axis, and of nothing else.</p>
 <h3 id="three-analysers-and-the-role-of-the-intermediate-measurement">Three Analysers and the Role of the Intermediate Measurement</h3>

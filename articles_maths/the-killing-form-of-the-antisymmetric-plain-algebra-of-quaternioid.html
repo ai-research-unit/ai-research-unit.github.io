@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,12 +88,6 @@ coincides with the natural sign and gives nothing new.</p>
 Algebra</em>; the adjoint operators and the derivations are <em>The Adjoint Operators and the Derivations of
 the Antisymmetric Plain Algebra</em>, both below this article in this category.
 counterparts are <em>The Killing Form of the Antisymmetric Plain Algebra</em> and *Norm and Invertibility in</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; $\vec q_1\cdot\vec q_2$ is the Euclidean dot product, $\vec q_1\times\vec q_2$
-the vector product, and $C_{\vec q_1}$ the cross-product matrix. The <strong>plain form</strong> is
-$\langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2=\mathrm{Sc}(\tilde q_1\tilde q_2)$, the <strong>quaternion
-form</strong> is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=q_{1t}q_{2t}+\vec q_1\cdot\vec q_2$, and the <strong>scalar-part form</strong> is
-$\varphi(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}$.</p>
 <h2 id="the-adjoint-representation-and-the-killing-form">The Adjoint Representation and the Killing Form</h2>
 <p><strong>Definition.</strong> The <strong>Killing form</strong> of the Lie algebra $\mathfrak{g}=(\mathbb{H},\times)$ is</p>
 <p>$$

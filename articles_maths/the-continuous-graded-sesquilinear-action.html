@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p><em>The Graded Sesquilinear Action</em> defines the action of a graded sesqualgebra on a graded module that carries a conjugation: the element $a$ acts on $m$ through $\theta$, by $a\star m=a\cdot\theta(m)$, an operation linear in the algebra and $\varsigma$-semilinear in the module, and the compatibility of the conjugation with the action is an identity on the even part that the odd part obstructs. The present article is the entry of the topological layer, and it adds exactly one ingredient: continuity. The object is a topological sesqualgebra of <em>Topological Sesqualgebras</em> whose grading is a decomposition into closed submodules, the module is a topological graded module with a continuous conjugation, and the derived action is continuous and bounded.</p>
 <p>The new ingredient has three consequences, and they are the content of the article. The grading is topological, so the even part $A^{0}$ is a closed unital sub-sesqualgebra and the odd part $A^{1}$ is a closed bimodule over it, and the grading of a normed object is a topological direct sum. The derived action $a\star m=a\cdot\theta(m)$ is the composite of the action with the conjugation, so it is continuous as soon as both are, and in the normed case it satisfies the estimate $\lVert a\star m\rVert\le C\lVert a\rVert\lVert m\rVert$ with the constant of the action; the conjugation is the datum the sesquilinear kind adds, exactly as in Part I, and the action map of the graded layer is the case $\theta=\mathrm{id}$. And the graded $\varsigma$-compatibility, the identity $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ on the even part together with its failure on the odd part, is a <strong>closed</strong> condition, because both sides are continuous; the even part of the algebra is therefore the largest part that can be an intertwiner for a module with a nontrivial odd action, and it is closed.</p>
-<p><strong>The boundaries.</strong> The graded algebra, the module, the degree rule and the Koszul sign are <em>The Graded Action on a Module over an Algebra</em> and <em>Involutive Graded Algebras</em>; the graded $\varsigma$-compatibility, the conjugation and the factorisation are <em>The Graded Sesquilinear Action</em>, which this article topologises and does not re-derive; the layer and the norm are <em>Topological Sesqualgebras</em> and <em>Banach Sesqualgebras</em>; the conjugate module and the two readings of the product are <em>The Conjugate Dual of a Sesqualgebra</em>; and the bounded operators of the layer are <em>Bounded Operators on a Sesqualgebra</em>. This article stops before the spectral theory of the later entries.</p>
 <p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is its continuous involution, and $A=A^{0}\oplus A^{1}$ is a <strong>graded topological sesqualgebra</strong> over $(\mathbb{K},\varsigma)$: a topological sesqualgebra that is the topological direct sum of two closed submodules, with $A^{i}A^{j}\subseteq A^{i+j}$ and $1\in A^{0}$. In the normed case the norm is submultiplicative, $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$, the involution is isometric, $\lVert x^{*}\rVert=\lVert x\rVert$, and $A$ is the standard example $x\star y=xy^{*}$ in the sense of <em>Banach Sesqualgebras</em>. The module is a <strong>graded topological module</strong> $M=M^{0}\oplus M^{1}$, a topological direct sum of closed submodules with $A^{i}M^{j}\subseteq M^{i+j}$ and a continuous action $A\times M\to M$; a <strong>graded sesquilinear module</strong> carries in addition a <strong>conjugation</strong> $\theta$, a continuous involutive $\varsigma$-semilinear map of degree zero, $\theta^{2}=\mathrm{id}$ and $\theta(M^{j})\subseteq M^{j}$. Homogeneous elements carry the degree $\lvert x\rvert\in\{0,1\}$, and the derived action is</p>
 <p>$$
 \star:A\times M\longrightarrow M,\qquad a\star m=a\cdot\theta(m).
@@ -101,7 +103,7 @@ $$</p>
 <p><strong>Proposition (the closure of the compatible even action).</strong> Suppose a subset $M_{0}\subseteq M$ is invariant under $\theta$ and under every $a\cdot$ with $a\in A^{0}$, and that $\theta$ intertwines the even action on $M_{0}$, $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ for $m\in M_{0}$. Then the same identity holds on the closure $\overline{M_{0}}$.</p>
 <p><strong>Proof.</strong> Both sides are continuous in $m$ and agree on the dense subset $M_{0}$.</p>
 <p><strong>Remark.</strong> The proposition is the topological use of the compatibility: an identity of continuous maps, checked on a dense set, extends to the closure. In the normed case every closed invariant submodule is available as such an $M_{0}$.</p>
-<h2 id="the-graded-math93-compatibility">The Graded $\varsigma$-Compatibility</h2>
+<h2 id="the-graded-math92-compatibility">The Graded $\varsigma$-Compatibility</h2>
 <p><strong>Definition.</strong> A graded sesquilinear module over $A$ is <strong>compatible</strong> when</p>
 <p>$$
 \theta(a\cdot m)=a^{*}\cdot\theta(m)\qquad\text{for all }a\in A^{0},\ m\in M .

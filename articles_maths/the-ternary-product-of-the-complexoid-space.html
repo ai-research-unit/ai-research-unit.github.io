@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>This article develops that three-variable operation on its own: its linearity and conjugate-linearity, its two symmetries, the identity it satisfies, its contractions to the two binary products, and the $J^{*}$-algebra it defines. It is the rank-one, commutative model of the general theory, and it is the article the GPS block of <em>Complexoid Algebraic Structures</em> reads for the triple structure.</p>
 <p>The ternary product is already met twice: as the derived operation of the general plain sesqualgebra, and as the ternary product of the quaternionic product in the quaternion analogue. What this article adds is the isolated treatment: the operation as an object, its identities, and the reason the commutative base is degenerate. The general theory is <em>Jordan Triples with an Involution</em>, <em>Algebraic J*-Algebras</em> and <em>Introduction to the General Plain Sesqualgebra</em>; the sesquilinear product itself is <em>The Sesquilinear Product of the Complexoid Space</em>.</p>
-<p><strong>Conventions.</strong> $A,B,C,D,E$ are elements of $\mathbb{C}$, $A = a+ia'$; $\bar\cdot$ is the conjugation; the sesquilinear product is $A\star B = A\bar B$; the field product is juxtaposition. The ternary product is written with braces and is the value of a $J^{*}$-triple.</p>
 <h2 id="definition-and-linearity">Definition and Linearity</h2>
 <p><strong>Definition.</strong> The <strong>ternary product</strong> of the complex space is the operation</p>
 <p>$$
@@ -126,7 +128,7 @@ C \longmapsto \{A,C,A\} = A^2\bar C ,
 $$</p>
 <p>which is $\mathbb{C}$-<strong>antilinear</strong> and whose square is the scalar map $\lvert A\rvert^4\operatorname{id}$.</p>
 <p><strong>Proof.</strong> $\{A,C,A\} = A\bar CA = A^2\bar C$, conjugate-linear in $C$ because conjugation is. Applying it twice, $C\mapsto A^2\bar C\mapsto A^2\overline{A^2\bar C} = A^2\bar A^2 C = \lvert A\rvert^4 C$.</p>
-<h2 id="the-math51-algebra-structure">The $J^{*}$-Algebra Structure</h2>
+<h2 id="the-math45-algebra-structure">The $J^{*}$-Algebra Structure</h2>
 <p><strong>Definition.</strong> A <strong>$J^{*}$-algebra</strong> (a Jordan triple with an involution) is a complex vector space $V$ with a map $\{\,\cdot\,,\cdot\,,\cdot\,\} : V\times V\times V\to V$ that is $\mathbb{C}$-linear in the first and third slots and conjugate-linear in the second, that is symmetric in the outer slots, and that satisfies the Jordan triple identity.</p>
 <p><strong>Theorem.</strong> With the ternary product above, $\mathbb{C}$ is a $J^{*}$-algebra; it is the <strong>rank-one</strong> example, of complex dimension one.</p>
 <p><strong>Proof.</strong> The three defining properties are the linearity theorem, the outer-symmetry theorem and the Jordan-identity theorem. That the dimension is one and the associated Hermitian form $H(A) = \lvert A\rvert^2$ has rank one is <em>The Hermitian Form and the Positivity of the Complexoid Algebra</em>.</p>

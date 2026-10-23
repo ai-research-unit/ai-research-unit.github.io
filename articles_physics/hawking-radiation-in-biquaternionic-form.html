@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -93,7 +96,6 @@ $$</p>
 <li><strong>Gaps, left visible.</strong> The framework contains no black-hole geometry and generates no dynamics; the Schwarzschild metric is imported as a frame field that nothing selects. The framework does not derive the mode mixing, the exponential factor, or the KMS property; it houses them. Hawking radiation has never been observed, and no claim of observation is made here. The thermodynamics of the horizon — its entropy, its laws, its evaporation — is the subject of a separate planned article and is not developed here.</li>
 </ul>
 <p>The article is organized as follows. The next section fixes the Schwarzschild horizon, computes the proper acceleration and the surface gravity, and separates them. The section after that reduces the near-horizon geometry to Rindler and states the identification with the Unruh effect precisely. A short section records what the biquaternion framework carries and what it imports. Two sections construct the Bogoliubov transformation and derive the Planck spectrum from it. A section computes the temperature, checks it against the Euclidean period and against the mass scaling, and records the observational status. The article closes with the established/interpretation split, open questions, and the summary.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$, with biquaternion norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=-c^2{t'}^2+x^2+y^2+z^2$; the biquaternionic gradient is $\tilde\nabla=e_t\,\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $G$ is Newton's constant, $M$ the black-hole mass, $f=1-r_s/r$, $r_s=2GM/c^2$; $\kappa$ is the surface gravity in the <strong>acceleration normalization</strong>, in which the temperature is $T=\hbar\kappa/(2\pi c k_B)$, and $\kappa_\omega=\kappa/c$ is the same quantity in the <strong>frequency normalization</strong>, in which $T=\hbar\kappa_\omega/(2\pi k_B)$. Bogoliubov coefficients carry mode indices and are written $\alpha_{ji}$ and $\mathcal B_{ji}$; the index-free scalar $\beta=\hbar/(k_BT)$ is the inverse temperature. Natural units $\hbar=c=k_B=1$ are used in the mode analysis and restored in every physical result.</p>
 <h2 id="the-schwarzschild-horizon-and-its-surface-gravity">The Schwarzschild Horizon and Its Surface Gravity</h2>
 <h3 id="the-metric-and-the-horizon">The Metric and the Horizon</h3>
 <p>The exterior Schwarzschild line element, in the coordinates $(t',r,\theta,\varphi)$, is</p>
@@ -139,7 +141,7 @@ $$</p>
 $$</p>
 <p>which has the dimensions of a frequency ($1/\text{time}$). The <strong>acceleration-normalized</strong> surface gravity is</p>
 <p>$$
-\kappa = c\,\kappa_\omega = \frac{c^2 \frac{df}{dr}(r_s)}{2} = \frac{c^2}{2r_s} = \frac{c^4}{4GM},
+\boxed{\;\kappa = c\,\kappa_\omega = \frac{c^2 \frac{df}{dr}(r_s)}{2} = \frac{c^2}{2r_s} = \frac{c^4}{4GM}\;},
 $$</p>
 <p>which is the finite limit of $a(r)\sqrt f$ found above, and has the dimensions of an acceleration. The temperature formula of the Introduction uses this normalization,</p>
 <p>$$
@@ -147,7 +149,7 @@ T = \frac{\hbar\kappa}{2\pi c\,k_B} = \frac{\hbar c^3}{8\pi G M k_B},
 $$</p>
 <p>while in the frequency normalization the same temperature reads $T=\hbar\kappa_\omega/(2\pi k_B)$. The two normalizations are the only place a factor of $c$ can go wrong, and the article states which one is in use whenever $\kappa$ appears.</p>
 <p>$\kappa$ is constant over the horizon — the zeroth law of black-hole mechanics — which is why a single temperature characterizes the whole surface despite the observer-dependent divergence of $a(r)$ along it.</p>
-<h3 id="a-remark-on-the-unruh-value-math104">A Remark on the Unruh Value $\kappa_\omega=a/c$</h3>
+<h3 id="a-remark-on-the-unruh-value-math77">A Remark on the Unruh Value $\kappa_\omega=a/c$</h3>
 <p>The sibling article's Unruh temperature is $T=\hbar a/(2\pi c k_B)$ with $a$ the proper acceleration of the uniformly accelerated observer, and its surface gravity in the acceleration normalization is $\kappa=a$. In the frequency normalization the same Unruh value is $\kappa_\omega=a/c$. This is the sense in which the Unruh surface gravity may be quoted as $a/c$: it is the frequency-normalized value. With that understood, the Unruh statement and the Hawking statement have the <em>same</em> form,</p>
 <p>$$
 T = \frac{\hbar\kappa_\omega}{2\pi k_B}\quad(\text{frequency normalization}),
@@ -284,7 +286,7 @@ $$</p>
 $$</p>
 <p>The two branches of the continuation differ by the factor $\exp(2\pi\omega/\kappa)$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by</p>
 <p>$$
-\frac{|\mathcal B|}{|\alpha|}=\exp(-\pi\omega/\kappa).
+\boxed{\;\frac{|\mathcal B|}{|\alpha|}=\exp(-\pi\omega/\kappa)\;}.
 $$</p>
 <p>This is the exponential that makes the spectrum thermal, and its origin is the branch point where the horizon is. In the mode-mixing language it is a statement about the analyticity of the modes across the horizon; in the two-point-function language it is exactly the sibling article's statement that the two-point function is periodic under a shift of $2\pi/\kappa$ in imaginary time, equivalently the detailed-balance factor $\exp(-2\pi\omega/\kappa)$. The two are the same analytic fact written in the mode basis and in the correlator basis. The branch-point factor was checked directly: with $\kappa=1.3$, $\omega=0.7$, the continuation multiplies the mode by $\exp(\pm\pi\omega/\kappa)=5.428$ in one half-plane and $\exp(-\pi\omega/\kappa)=0.1842$ in the other, and the two differ by $\exp(2\pi\omega/\kappa)$, as stated.</p>
 <p>The identification of $|\mathcal B/\alpha|$ with that branch-point factor, and the mode decomposition that makes it a Bogoliubov coefficient, are the standard Hawking calculation. What the article recomputes is the exponential and the route from it to the Planck distribution; what it does not do is derive the coefficient ratio from the biquaternion algebra, which the algebra does not produce.</p>
@@ -305,11 +307,11 @@ $$</p>
 <p>where the sum is restricted to $n\in\{0,1\}$ by Pauli exclusion, which the single-mode algebra of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> realizes. Tracing out the partner mode (which is inaccessible to the exterior observer) leaves a mixed state on the exterior modes, and its occupation number is the mean of $N_R$ in the squeezed state.</p>
 <p><strong>Bosons.</strong> With $\tanh r_\omega=\exp(-\pi\omega/\kappa)$,</p>
 <p>$$
-\langle N_R\rangle
+\boxed{\;\langle N_R\rangle
 =\frac{\tanh^2 r_\omega}{1-\tanh^2 r_\omega}
 =\frac{\exp(-2\pi\omega/\kappa)}{1-\exp(-2\pi\omega/\kappa)}
 =\frac{1}{\exp(2\pi\omega/\kappa)-1}
-=n_{\mathrm B}(\omega).
+=n_{\mathrm B}(\omega)\;}.
 $$</p>
 <p><strong>Fermions.</strong> With the same squeeze parameter,</p>
 <p>$$
@@ -351,7 +353,7 @@ T_{\mathrm H}=\frac{\hbar\kappa}{2\pi c\,k_B}
 $$</p>
 <p>and for Schwarzschild</p>
 <p>$$
-T_{\mathrm H}=\frac{\hbar c^3}{8\pi G M k_B}.
+\boxed{\;T_{\mathrm H}=\frac{\hbar c^3}{8\pi G M k_B}\;}.
 $$</p>
 <h3 id="independent-check-the-euclidean-period">Independent Check: the Euclidean Period</h3>
 <p>The temperature can be obtained a second time without computing the surface gravity from the proper acceleration, by asking when the Euclidean continuation of the metric is regular at the horizon. Continue $t'\to-it'$, so that $d\tau=dt'$ is real and the line element becomes</p>

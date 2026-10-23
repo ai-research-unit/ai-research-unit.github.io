@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers"><strong>Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article computes the exponential polar decomposition of eight split-complex numbers, one after another. It is the computational companion of <em>Exponential Polar Decomposition of Split-Complex Numbers</em>. The decomposition, its existence and uniqueness, the component sign and the exponential and logarithm are established in that article and in <em>Split-Complex Elementary Functions</em>; no definition or proof is repeated.</p>
+<p>Each case is read from the two coordinates $q$ and $q'$ of $Q=q+jq'$. The modulus, the angle and the component sign are computed from them by the formulas of §<em>The Method</em>, and the word is checked against the reconstruction</p>
+<p>$$
+Q=r\,\epsilon\,e^{\phi j}.
+$$</p>
+<p>The eight cases cover the four open components, the pure discrete unit, the two scalar directions and the boundary.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Case</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Future cone</td>
+<td>$5+3j$</td>
+<td>the generic case, $\epsilon=1$</td>
+</tr>
+<tr>
+<td>Right wedge</td>
+<td>$3+5j$</td>
+<td>the same modulus and angle as $5+3j$, $\epsilon=j$</td>
+</tr>
+<tr>
+<td>Past cone</td>
+<td>$-5-3j$</td>
+<td>the same modulus and angle, $\epsilon=-1$</td>
+</tr>
+<tr>
+<td>Left wedge</td>
+<td>$1-2j$</td>
+<td>a negative angle, $\epsilon=-j$</td>
+</tr>
+<tr>
+<td>Discrete unit</td>
+<td>$j$</td>
+<td>a pure component sign, $\phi=0$</td>
+</tr>
+<tr>
+<td>Positive scalar</td>
+<td>$2$</td>
+<td>a pure scale, $\epsilon=1$</td>
+</tr>
+<tr>
+<td>Negative scalar</td>
+<td>$-2$</td>
+<td>the same exponent as $2$, $\epsilon=-1$</td>
+</tr>
+<tr>
+<td>Null cone</td>
+<td>$1+j$</td>
+<td>$(q+q')(q-q')=0$, but no polar word</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data, its word and its check. The summary collects the results in two tables and reads the patterns across the cases (§<em>Summary</em>).</p>
+<h2 id="the-method">The Method</h2>
+<h3 id="the-coordinates">The Coordinates</h3>
+<p>For $Q=q+jq'$ the two real coordinates are $q$ and $q'$. The modulus and the angle are</p>
+<p>$$
+r=\sqrt{\lvert q^2-q'^2\rvert}
+=\sqrt{\lvert(q+q')(q-q')\rvert},
+\qquad
+\phi=\tfrac12\ln\left\lvert\frac{q+q'}{q-q'}\right\rvert.
+$$</p>
+<p>The component sign is read from the quadrant of the pair $(q,q')$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>$\epsilon$</th>
+<th>Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q>\lvert q'\rvert$</td>
+<td>$1$</td>
+<td>future cone $F$</td>
+</tr>
+<tr>
+<td>$q<-\lvert q'\rvert$</td>
+<td>$-1$</td>
+<td>past cone</td>
+</tr>
+<tr>
+<td>$q'>\lvert q\rvert$</td>
+<td>$j$</td>
+<td>right wedge $R$</td>
+</tr>
+<tr>
+<td>$q'<-\lvert q\rvert$</td>
+<td>$-j$</td>
+<td>left wedge $L$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four conditions are exclusive and cover every unit. In every row the product $\epsilon Q$ lies in $F$.</p>
+<p>The two combinations are recovered from the polar data by</p>
+<p>$$
+r\,e^{\phi}=\lvert q+q'\rvert,
+\qquad
+r\,e^{-\phi}=\lvert q-q'\rvert.
+$$</p>
+<p>These two identities are the check used in every case.</p>
+<h3 id="the-reconstruction">The Reconstruction</h3>
+<p>The polar word is</p>
+<p>$$
+Q=\epsilon\,r\,e^{\phi j}=r\,\epsilon\bigl(\cosh\phi+j\sinh\phi\bigr),
+\qquad
+Q_{\log}=\ln r+j\phi.
+$$</p>
+<p>The exponent of $\epsilon Q$ and the unit factor $\epsilon e^{\phi j}$ are read separately, and the reconstruction is the scale $r$ times the unit factor. The check is the multiplication.</p>
+<h3 id="the-matrix-picture">The Matrix Picture</h3>
+<p>The matrix of multiplication by $Q$ in the basis $(1,j)$ is</p>
+<p>$$
+M_Q=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}.
+$$</p>
+<p>Its trace is $2q$ and its determinant is $q^2-q'^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is a unit. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.</p>
+<h3 id="the-null-cone">The Null Cone</h3>
+<p>For $q^2-q'^2=0$ the element is a nonzero zero divisor, of the form $Q=q(1\pm j)$ with $q\neq0$, and no polar word exists: the modulus vanishes, the angle diverges and the unit factor is undefined. The matrix has rank one, its determinant is zero, and $Q^2=2q\,Q$. Case 8 treats the boundary explicitly.</p>
+<h2 id="the-eight-cases">The Eight Cases</h2>
+<h3 id="case-1-a-generic-element-of-the-future-cone">Case 1: A Generic Element of the Future Cone</h3>
+<p><strong>Coordinates.</strong> For $Q=5+3j$,</p>
+<p>$$
+q=5,
+\qquad
+q'=3,
+\qquad
+q^2-q'^2=25-9=16,
+\qquad
+q+q'=8,
+\qquad
+q-q'=2.
+$$</p>
+<p>Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
+<p><strong>Polar data.</strong> The modulus and the angle are</p>
+<p>$$
+r=\sqrt{16}=4,
+\qquad
+\phi=\tfrac12\ln\frac{8}{2}=\ln2,
+\qquad
+\epsilon=1.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=4\cdot2=8=q+q'$ and $r e^{-\phi}=4\cdot\tfrac12=2=q-q'$.</p>
+<p><strong>The word.</strong> The exponent and the unit factor are</p>
+<p>$$
+Q_{\log}=\ln4+j\ln2,
+\qquad
+\epsilon e^{\phi j}=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34j.
+$$</p>
+<p>Therefore</p>
+<p>$$
+Q=4\left(\tfrac54+\tfrac34j\right)=5+3j.
+$$</p>
+<p><strong>Check.</strong> The exponential of the exponent is</p>
+<p>$$
+\exp(Q_{\log})=4\bigl(\cosh(\ln2)+j\sinh(\ln2)\bigr)=4\left(\tfrac54+\tfrac34j\right)=5+3j,
+$$</p>
+<p>and the error is $0$. The matrix</p>
+<p>$$
+M_Q=\begin{pmatrix}5&3\\3&5\end{pmatrix}
+$$</p>
+<p>has trace $10$ and determinant $16$.</p>
+<h3 id="case-2-a-generic-element-of-the-right-wedge">Case 2: A Generic Element of the Right Wedge</h3>
+<p><strong>Coordinates.</strong> For $Q=3+5j$,</p>
+<p>$$
+q=3,
+\qquad
+q'=5,
+\qquad
+q^2-q'^2=9-25=-16,
+\qquad
+q+q'=8,
+\qquad
+q-q'=-2.
+$$</p>
+<p>Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
+<p><strong>Polar data.</strong> The modulus and the angle are</p>
+<p>$$
+r=\sqrt{\lvert-16\rvert}=4,
+\qquad
+\phi=\tfrac12\ln\left\lvert\frac{8}{-2}\right\rvert=\ln2,
+\qquad
+\epsilon=j.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=8=\lvert q+q'\rvert$ and $r e^{-\phi}=2=\lvert q-q'\rvert$.</p>
+<p><strong>The word.</strong> The exponent is the same string as in case 1,</p>
+<p>$$
+Q_{\log}=\ln4+j\ln2,
+$$</p>
+<p>but the unit factor is different:</p>
+<p>$$
+\epsilon e^{\phi j}=j\left(\tfrac54+\tfrac34j\right)=\tfrac34+\tfrac54j.
+$$</p>
+<p>Therefore</p>
+<p>$$
+Q=4\left(\tfrac34+\tfrac54j\right)=3+5j.
+$$</p>
+<p><strong>Check.</strong> The product $\epsilon Q=jQ=5+3j$ lies in $F$, and</p>
+<p>$$
+\exp(Q_{\log})=5+3j=\epsilon Q.
+$$</p>
+<p>The exponent is a logarithm of $\epsilon Q$, not of $Q$. The error in $Q$ is $0$. The matrix</p>
+<p>$$
+M_Q=\begin{pmatrix}3&5\\5&3\end{pmatrix}
+$$</p>
+<p>has trace $6$ and determinant $-16$.</p>
+<h3 id="case-3-a-generic-element-of-the-past-cone">Case 3: A Generic Element of the Past Cone</h3>
+<p><strong>Coordinates.</strong> For $Q=-5-3j$,</p>
+<p>$$
+q=-5,
+\qquad
+q'=-3,
+\qquad
+q^2-q'^2=25-9=16,
+\qquad
+q+q'=-8,
+\qquad
+q-q'=-2.
+$$</p>
+<p>Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
+<p><strong>Polar data.</strong> The modulus and the angle are again</p>
+<p>$$
+r=4,
+\qquad
+\phi=\ln2,
+\qquad
+\epsilon=-1.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=8=\lvert q+q'\rvert$ and $r e^{-\phi}=2=\lvert q-q'\rvert$.</p>
+<p><strong>The word.</strong> The exponent is again $\ln4+j\ln2$, and the unit factor is</p>
+<p>$$
+\epsilon e^{\phi j}=-\left(\tfrac54+\tfrac34j\right).
+$$</p>
+<p>Therefore</p>
+<p>$$
+Q=4\left(-\tfrac54-\tfrac34j\right)=-5-3j.
+$$</p>
+<p><strong>Check.</strong> The product $\epsilon Q=-Q=5+3j$ lies in $F$, and $\exp(Q_{\log})=5+3j=\epsilon Q$ with error $0$. The matrix</p>
+<p>$$
+M_Q=\begin{pmatrix}-5&-3\\-3&-5\end{pmatrix}
+$$</p>
+<p>has trace $-10$ and determinant $16$.</p>
+<h3 id="case-4-a-generic-element-of-the-left-wedge">Case 4: A Generic Element of the Left Wedge</h3>
+<p><strong>Coordinates.</strong> For $Q=1-2j$,</p>
+<p>$$
+q=1,
+\qquad
+q'=-2,
+\qquad
+q^2-q'^2=1-4=-3,
+\qquad
+q+q'=-1,
+\qquad
+q-q'=3.
+$$</p>
+<p>Since $q'<-\lvert q\rvert$, the component sign is $\epsilon=-j$.</p>
+<p><strong>Polar data.</strong> The modulus is $\sqrt3$ and the angle is negative:</p>
+<p>$$
+r=\sqrt{\lvert-3\rvert}=\sqrt3,
+\qquad
+\phi=\tfrac12\ln\left\lvert\frac{-1}{3}\right\rvert=-\tfrac12\ln3,
+\qquad
+\epsilon=-j.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=\sqrt3\cdot\tfrac{1}{\sqrt3}=1=\lvert q+q'\rvert$ and $r e^{-\phi}=\sqrt3\cdot\sqrt3=3=\lvert q-q'\rvert$.</p>
+<p><strong>The word.</strong> The exponent is</p>
+<p>$$
+Q_{\log}=\ln\sqrt3-\tfrac12\ln3\,j=\tfrac12\ln3-\tfrac12\ln3\,j,
+$$</p>
+<p>and the unit factor is</p>
+<p>$$
+\epsilon e^{\phi j}=-j\left(\frac{2}{\sqrt3}-\frac{1}{\sqrt3}j\right)
+=\frac{1}{\sqrt3}-\frac{2}{\sqrt3}j.
+$$</p>
+<p>Therefore</p>
+<p>$$
+Q=\sqrt3\left(\frac{1}{\sqrt3}-\frac{2}{\sqrt3}j\right)=1-2j.
+$$</p>
+<p><strong>Check.</strong> The product $\epsilon Q=-j(1-2j)=2-j$ lies in $F$, and</p>
+<p>$$
+\exp(Q_{\log})=\sqrt3\left(\frac{2}{\sqrt3}-\frac{1}{\sqrt3}j\right)=2-j=\epsilon Q.
+$$</p>
+<p>The error is $2.2\times10^{-16}$. The matrix</p>
+<p>$$
+M_Q=\begin{pmatrix}1&-2\\-2&1\end{pmatrix}
+$$</p>
+<p>has trace $2$ and determinant $-3$.</p>
+<h3 id="case-5-the-discrete-unit">Case 5: The Discrete Unit</h3>
+<p><strong>Coordinates.</strong> For $Q=j$,</p>
+<p>$$
+q=0,
+\qquad
+q'=1,
+\qquad
+q^2-q'^2=-1,
+\qquad
+q+q'=1,
+\qquad
+q-q'=-1.
+$$</p>
+<p>Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
+<p><strong>Polar data.</strong> The modulus is one and the angle vanishes:</p>
+<p>$$
+r=1,
+\qquad
+\phi=0,
+\qquad
+\epsilon=j.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=1=\lvert q+q'\rvert$ and $r e^{-\phi}=1=\lvert q-q'\rvert$.</p>
+<p><strong>The word.</strong> The exponent is $Q_{\log}=0$, and the unit factor is $\epsilon e^{\phi j}=j$. Therefore</p>
+<p>$$
+Q=1\cdot j=j.
+$$</p>
+<p><strong>Check.</strong> $\exp(0)=1$, so $\exp(Q_{\log})=1=\epsilon Q$, and the error is $0$. The matrix</p>
+<p>$$
+M_Q=\begin{pmatrix}0&1\\1&0\end{pmatrix}
+$$</p>
+<p>has trace $0$ and determinant $-1$. The element is the pure component sign: no scale and no angle.</p>
+<h3 id="case-6-the-positive-scalar">Case 6: The Positive Scalar</h3>
+<p><strong>Coordinates.</strong> For $Q=2$,</p>
+<p>$$
+q=2,
+\qquad
+q'=0,
+\qquad
+q^2-q'^2=4,
+\qquad
+q+q'=2,
+\qquad
+q-q'=2.
+$$</p>
+<p>Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
+<p><strong>Polar data.</strong> The modulus is two and the angle vanishes:</p>
+<p>$$
+r=2,
+\qquad
+\phi=0,
+\qquad
+\epsilon=1.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=2=q+q'$ and $r e^{-\phi}=2=q-q'$.</p>
+<p><strong>The word.</strong> The exponent is</p>
+<p>$$
+Q_{\log}=\ln2,
+$$</p>
+<p>and the unit factor is $1$. Therefore</p>
+<p>$$
+Q=2\cdot1=2.
+$$</p>
+<p><strong>Check.</strong> $\exp(\ln2)=2$, with error $0$. The matrix $M_Q=2I$ has trace $4$ and determinant $4$.</p>
+<h3 id="case-7-the-negative-scalar">Case 7: The Negative Scalar</h3>
+<p><strong>Coordinates.</strong> For $Q=-2$,</p>
+<p>$$
+q=-2,
+\qquad
+q'=0,
+\qquad
+q^2-q'^2=4,
+\qquad
+q+q'=-2,
+\qquad
+q-q'=-2.
+$$</p>
+<p>Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
+<p><strong>Polar data.</strong> The modulus is two and the angle vanishes:</p>
+<p>$$
+r=2,
+\qquad
+\phi=0,
+\qquad
+\epsilon=-1.
+$$</p>
+<p>The two combinations check: $r e^{\phi}=2=\lvert q+q'\rvert$ and $r e^{-\phi}=2=\lvert q-q'\rvert$.</p>
+<p><strong>The word.</strong> The exponent is the same as in case 6,</p>
+<p>$$
+Q_{\log}=\ln2,
+$$</p>
+<p>and the unit factor is $-1$. Therefore</p>
+<p>$$
+Q=2\cdot(-1)=-2.
+$$</p>
+<p><strong>Check.</strong> $\exp(\ln2)=2=\epsilon Q$, with error $0$. The matrix $M_Q=-2I$ has trace $-4$ and determinant $4$. Cases 6 and 7 show that the exponent does not determine the element: the component sign does.</p>
+<h3 id="case-8-the-null-cone">Case 8: The Null Cone</h3>
+<p><strong>Coordinates.</strong> For $Q=1+j$,</p>
+<p>$$
+q=1,
+\qquad
+q'=1,
+\qquad
+q^2-q'^2=1-1=0,
+\qquad
+q+q'=2,
+\qquad
+q-q'=0.
+$$</p>
+<p>The product $Q\bar Q$ vanishes, so there is no modulus, no angle and no component sign: the element is a zero divisor.</p>
+<p><strong>No polar word.</strong> The exponential has image $F$ and is injective, so $Q\notin F$ has no logarithm. The matrix</p>
+<p>$$
+M_Q=\begin{pmatrix}1&1\\1&1\end{pmatrix}
+$$</p>
+<p>has rank one and determinant $0$. Its square is</p>
+<p>$$
+Q^2=2Q.
+$$</p>
+<p><strong>The boundary.</strong> The element is the limit of the future-cone family</p>
+<p>$$
+Q_\delta=(1+\delta)+j,
+\qquad
+\delta>0.
+$$</p>
+<p>Its coordinates give</p>
+<p>$$
+r=\sqrt{\delta(2+\delta)},
+\qquad
+\phi=\tfrac12\ln\frac{2+\delta}{\delta},
+\qquad
+\epsilon=1,
+$$</p>
+<p>and the two combinations are $r e^{\phi}=2+\delta$ and $r e^{-\phi}=\delta$. The table gives the approach.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\delta$</th>
+<th>$r$</th>
+<th>$\phi$</th>
+<th>$r e^{\phi}$</th>
+<th>$r e^{-\phi}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.1$</td>
+<td>$0.4582575695$</td>
+<td>$1.522261219$</td>
+<td>$2.1$</td>
+<td>$0.1$</td>
+</tr>
+<tr>
+<td>$0.01$</td>
+<td>$0.1417744688$</td>
+<td>$2.651652454$</td>
+<td>$2.01$</td>
+<td>$0.01$</td>
+</tr>
+<tr>
+<td>$0.001$</td>
+<td>$0.0447325385$</td>
+<td>$3.800701167$</td>
+<td>$2.001$</td>
+<td>$0.001$</td>
+</tr>
+</tbody>
+</table></div>
+<p>As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger combination tends to $2$; the word tends to the boundary value $1+j$. The polar decomposition exists on the open components and stops exactly at $q^2-q'^2=0$.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$Q$</th>
+<th>$q$</th>
+<th>$q'$</th>
+<th>$q^2-q'^2$</th>
+<th>$\epsilon$</th>
+<th>$r$</th>
+<th>$\phi$</th>
+<th>$Q_{\log}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$5+3j$</td>
+<td>$5$</td>
+<td>$3$</td>
+<td>$16$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$\ln2$</td>
+<td>$\ln4+j\ln2$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$3+5j$</td>
+<td>$3$</td>
+<td>$5$</td>
+<td>$-16$</td>
+<td>$j$</td>
+<td>$4$</td>
+<td>$\ln2$</td>
+<td>$\ln4+j\ln2$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$-5-3j$</td>
+<td>$-5$</td>
+<td>$-3$</td>
+<td>$16$</td>
+<td>$-1$</td>
+<td>$4$</td>
+<td>$\ln2$</td>
+<td>$\ln4+j\ln2$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$1-2j$</td>
+<td>$1$</td>
+<td>$-2$</td>
+<td>$-3$</td>
+<td>$-j$</td>
+<td>$\sqrt3$</td>
+<td>$-\tfrac12\ln3$</td>
+<td>$\tfrac12\ln3-\tfrac12\ln3\,j$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$j$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$j$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$\ln2$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$-2$</td>
+<td>$-2$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>$-1$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$\ln2$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$1+j$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-reconstruction-table">The Reconstruction Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$Q$</th>
+<th>Unit factor $\epsilon e^{\phi j}$</th>
+<th>$r$ times the unit factor</th>
+<th>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$5+3j$</td>
+<td>$\tfrac54+\tfrac34j$</td>
+<td>$5+3j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$3+5j$</td>
+<td>$\tfrac34+\tfrac54j$</td>
+<td>$3+5j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$-5-3j$</td>
+<td>$-\tfrac54-\tfrac34j$</td>
+<td>$-5-3j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$1-2j$</td>
+<td>$\tfrac{1}{\sqrt3}-\tfrac{2}{\sqrt3}j$</td>
+<td>$1-2j$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$j$</td>
+<td>$j$</td>
+<td>$j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$-2$</td>
+<td>$-1$</td>
+<td>$-2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$1+j$</td>
+<td>—</td>
+<td>—</td>
+<td>no word</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-the-cases-show">What the Cases Show</h3>
+<ul>
+<li>Cases 1 to 3 share the modulus $r=4$ and the angle $\phi=\ln2$. The two combinations $(q+q',q-q')$ are $(8,2)$, $(8,-2)$ and $(-8,-2)$, and the exponent is the same string in all three; only $\epsilon$ changes. Case 4 completes the four quadrants, with a different modulus and a negative angle.</li>
+<li>Cases 2 and 3 have $\exp(Q_{\log})=\epsilon Q$, not $Q$. The exponent is the logarithm of the element pushed into the future cone.</li>
+<li>Case 4 has $q>0$ but $q+q'<0$, so the component is the left wedge, not the future cone. The sign of $q$ does not determine the component.</li>
+<li>Cases 6 and 7 have the same exponent $\ln2$ and differ only by $\epsilon$. The discrete factor is not a period: the kernel of the exponential is $\{0\}$.</li>
+<li>Case 5 is the pure discrete factor, with $r=1$ and $\phi=0$.</li>
+<li>Case 8 is the boundary. The matrix has rank one, while the polar word does not exist. The family shows the rate $r\to0$, $\phi\to\infty$ with $r e^{\phi}\to2$.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex algebra, $j^2=+1$</td>
+</tr>
+<tr>
+<td>$Q=q+jq'$</td>
+<td>a split-complex number</td>
+</tr>
+<tr>
+<td>$q,q'$</td>
+<td>the two real coordinates</td>
+</tr>
+<tr>
+<td>$q^2-q'^2=(q+q')(q-q')$</td>
+<td>the product $Q\bar Q$</td>
+</tr>
+<tr>
+<td>$\epsilon\in\{1,-1,j,-j\}$</td>
+<td>the component sign</td>
+</tr>
+<tr>
+<td>$r=\sqrt{\lvert q^2-q'^2\rvert}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>the hyperbolic angle</td>
+</tr>
+<tr>
+<td>$Q_{\log}=\ln r+j\phi$</td>
+<td>the exponent, a logarithm of $\epsilon Q$</td>
+</tr>
+<tr>
+<td>$F,R,L$</td>
+<td>the future cone and the two spacelike wedges</td>
+</tr>
+<tr>
+<td>$M_Q$</td>
+<td>the real symmetric matrix of multiplication by $Q$</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>the parameter of the boundary family of case 8</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="exponential-polar-decomposition-of-split-complex-numbers.html">Exponential Polar Decomposition of Split-Complex Numbers</a>, for the decomposition, existence, uniqueness and the component sign.</li>
+<li><a href="split-complex-elementary-functions.html">Split-Complex Elementary Functions</a>, for the exponential, the logarithm and the future cone.</li>
+<li><a href="modulus-unit-polar-decomposition-of-split-complex-numbers.html">Modulus–Unit Polar Decomposition of Split-Complex Numbers</a>, for the algebraic modulus–unit form.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</a>, for the commutative four-dimensional companion.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Biquaternions</a>, for the noncommutative companion.</li>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the hyperbolic functions and the split-complex exponential.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the exponential map and the four components of the unit group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

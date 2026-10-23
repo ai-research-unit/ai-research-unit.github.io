@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>A quaternionic structure on a manifold is a rank-three bundle $\mathcal{Q}\subseteq\operatorname{End}(TM)$ of complex structures modelled on the imaginary quaternions $\vec e_x,\vec e_y,\vec e_z$, and the sphere of complex structures compatible with it at a point is parametrised by the unit sphere $S^2$ inside $\mathcal{Q}$. The quaternion algebra carries a canonical involution, the <strong>conjugation</strong> $\lambda\mapsto\bar\lambda$, and it acts on the imaginary part by $\vec e_\mu\mapsto-\vec e_\mu$. The involution this induces is the <strong>conjugate structure</strong>: at each point it is the free involution $J\mapsto-J$ of the sphere of compatible complex structures, and on the bundle it is the corresponding bundle involution, whose fixed points form the real and the conjugate structures in the sense made precise below. This article treats the conjugate structure, its compatibility with the quaternionic Kähler condition, and the invariance of the fundamental four-form.</p>
 <p>The conjugate structure is the <em>involution on the elements</em> of the category: the quaternionic structure is read together with the conjugation on the quaternion algebra, and the statements are those that involve the conjugation alone. The operator layer built from the conjugation — the adjoints of the quaternionic operators, the unitary quaternionic groups — belongs to the <code>- * Operator Theory</code> group of the category and is not touched here.</p>
-<p><strong>The boundaries.</strong> The quaternionic structure, the almost quaternionic level, the Obata connection, the quaternionic Kähler condition and the holonomy $Sp(n)\cdot Sp(1)$ are <em>Quaternionic Geometry</em>, the article immediately preceding this one in the same group, and nothing of it is re-derived. The hyperkähler case is <em>Hyperkähler Geometry</em>; the conjugate structure there is the subject of <em>Hyperkähler Manifolds and the Twistor Space</em>. The quaternion algebra, its conjugation and its norm are those of Part I; the Riemannian metric, the Levi-Civita connection and the holonomy group are <em>Riemannian Geometry</em>; the almost complex and Hermitian structures are <em>Hermitian Geometry and Almost Complex Structures</em>, and the Kähler condition <em>Kähler Geometry</em>. The base field is $\mathbb{R}$.</p>
 <h2 id="the-conjugation">The Conjugation</h2>
 <p><strong>Definition.</strong> The <strong>conjugation</strong> of the quaternion algebra is the involution $\lambda\mapsto\bar\lambda$ that fixes the scalars and negates the imaginary part, so that $\overline{\lambda\mu}=\bar\mu\bar\lambda$ and $\lambda\bar\lambda=\lvert\lambda\rvert^2$. On the imaginary unit sphere it acts by $\vec e_\mu\mapsto-\vec e_\mu$, and it is the restriction of the central element $-1$ of the unit quaternions under the map $\lambda\mapsto\lambda\cdot\lambda^{-1}$ on the unit sphere.</p>
 <p><strong>Definition.</strong> Let $V$ be a quaternionic vector space with structure $\rho : \mathbb{H}\to\operatorname{End}(V)$, $J_\mu=\rho(\vec e_\mu)$. The <strong>conjugate quaternionic vector space</strong> $\bar V$ is the real vector space $V$ with the conjugated scalar action</p>

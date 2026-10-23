@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,8 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries two real slices whose geometries differ, and this article reads both. The Lorentzian slice carries a form of signature $(1,3)$, with its null cone and its null lines; the split slice carries a neutral signature and a real quadric ruled by real lines. The two are the real loci of the complex null quadric, and on the celestial sphere of the Lorentzian slice the Lorentz group acts as the conformal group. The conformal model of Euclidean space, in which spheres and planes become vectors and the transformations become versors, is the further picture the algebra supports.</p>
 <p>The article presupposes the biquaternion norm and its real forms (<em>Norm and Invertibility in the General Quaternionic Algebra</em>), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (<em>The Null Quadric and Its Projective Geometry</em>), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Criterion</em>, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.</p>
-<hr />
 <h2 id="the-sign-of-the-form-as-the-organising-data">The Sign of the Form as the Organising Data</h2>
 <p>In the Cayley–Klein picture a geometry is its group of motions, and the geometry the algebra carries is read from the real form of the norm. The norm is complex-valued, so it has no signature by itself; the signature appears on a real form, and the sign of the restricted form is the organising datum:</p>
 <ul>

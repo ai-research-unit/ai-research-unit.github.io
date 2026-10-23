@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>The name is taken from the exterior calculus, where the codifferential $d^*$ is the adjoint of the exterior derivative, and the analogy is exact but limited: the codifferential of a bundle-valued connection is the adjoint of the connection, so it is not in general a square-zero operator, and it is not a differential on a complex of forms. This article treats the codifferential of the spinor bundle, its relation to the adjoint of the spin connection, and its relation to the Cauchy–Riemann operator; the connection Laplacian $\delta\nabla=\nabla^*\nabla$ that appears in the Lichnerowicz formula is its most important application.</p>
 <p>The two adjoint relations that organise the account are the following. First, $\delta$ is to $\nabla$ what the divergence is to the gradient: it is the metric contraction of the covariant derivative, and it satisfies $\langle\nabla\sigma,\alpha\rangle = \langle\sigma,\delta\alpha\rangle$ on a closed manifold. Second, the Cauchy–Riemann operator $D=c\circ\nabla$ is the composition of the connection with the Clifford contraction $c$, and its formal adjoint is $\delta\circ c^*$ together with the derivative of the frame; for the spin connection the result is the same operator, $D^*=D$, and this self-adjointness is the reason the codifferential is the natural adjoint partner of the operator of <em>The Spinor Operator</em>.</p>
-<p><strong>The boundaries.</strong> The spin connection and the Cauchy–Riemann operator are <em>The Spinor Operator</em>; the Clifford multiplication and the contraction $c$ are <em>The Clifford Multiplication Operator</em>; the analytic theory of the adjoint operator — the domains, the boundary conditions and the self-adjoint extensions — belongs to Part III, where the measure and the limit are available, and is cited. The exterior codifferential $d^*$ of a Riemannian manifold and the Hodge Laplacian are <em>The Hodge Laplacian and Harmonic Forms</em>; the general formal adjoint of a differential operator and the Green formula are <em>Formal Adjoints and Green's Formula</em>. The base is a closed Riemannian spin manifold $(M,g)$ with spinor bundle $\mathcal{S}$ and spin connection $\nabla^{\mathcal{S}}$; the fibre form $h$ is positive definite and $c(v)^*=-c(v)$.</p>
 <h2 id="the-adjoint-of-the-spin-connection">The Adjoint of the Spin Connection</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>codifferential</strong> of the spinor bundle is the formal adjoint of the spin connection, the first-order operator</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article collects the <strong>relations</strong> between the two products $Q_1Q_2$ and $Q_1\overline{Q_2}$ and the <strong>comparison</strong> of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is where the operational difference of the two products is stated in full. It closes with the two slots the construction has on $\mathbb{D}$, whose first slot is empty, and with the two pairings and the two adjoints the two products carry.</p>
 <p>The two products and their structures are <em>The Two Products of the Split-Complexoid Space</em>, the article preceding this one; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are <em>The Sesquilinear Product of the Split-Complexoid Space</em>, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>, and the products on the distinguished subspaces are <em>Remarkable Subspaces and the Two Products of the Split-Complexoid Space</em>. The only computations the article adds are the two adjoints of §<em>The Two Pairings and the Two Adjoints</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$. The Hermitian conjugation coincides with the bar. In this article the ring product is written $Q_1\cdot Q_2$ where it must be told from the sesquilinear one.</p>
 <h2 id="the-products-determine-each-other">The Products Determine Each Other</h2>
 <p><strong>Proposition (the two products are related by the bar).</strong> For all $Q_1,Q_2\in\mathbb{D}$,</p>
 <p>$$

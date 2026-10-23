@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -106,7 +109,7 @@ $$</p>
 $$</p>
 <p>Therefore</p>
 <p>$$
-p_+ = \bigl|\cos(\theta/2)\bigr|^2 = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
+\boxed{\;p_+ = \bigl|\cos(\theta/2)\bigr|^2 = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}\;}.
 $$</p>
 <h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
@@ -191,7 +194,7 @@ $$</p>
 $$</p>
 <p>The scalar part is $\tfrac{\hbar}{4}\cos\theta$. Therefore</p>
 <p>$$
-\langle \tilde{H}\rangle_{\tilde\Pi_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta.
+\boxed{\;\langle \tilde{H}\rangle_{\tilde\Pi_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta\;}.
 $$</p>
 <p>Both formulations give the same result.</p>
 <h2 id="summary">Summary</h2>

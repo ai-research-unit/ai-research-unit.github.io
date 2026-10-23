@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,13 +72,13 @@
 <h2 id="introduction">Introduction</h2>
 <p>The twelve products of the biquaternion complex space carry four <strong>forms</strong> and no more, and the four forms carry four <strong>algebraic norms</strong>. The form of a product is its scalar part, a function of two elements; the algebraic norm of a form is that form read at its two equal arguments, a function of one. The chain is short and rigid: twelve operations, four scalar parts, four functions of one element. This article reads the chain physically. The four forms are the <strong>sector sign</strong> $\langle\cdot,\cdot\rangle$, the <strong>Born form</strong> $\langle\cdot,\cdot\rangle_{*}$, the <strong>interval</strong> $\langle\cdot,\cdot\rangle_{\natural}$ and the <strong>Krein form</strong> $\langle\cdot,\cdot\rangle_{\natural*}$. The four algebraic norms are the four sums</p>
 <p>$$
-\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},
+\boxed{\;\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},
 \qquad
 \langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},
 \qquad
 \langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},
 \qquad
-\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2},
+\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}\;},
 $$</p>
 <p>with $\varepsilon=(1,-1,-1,-1)$.</p>
 <p>The article owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the reading is given with its boundary.</p>
@@ -249,7 +252,7 @@ $$</p>
 </table></div>
 <p>Two of the four have a property the others lack, and the two properties are different. The Hermitian algebraic norm $\langle\cdot\rangle_{*}$ is <strong>positive definite</strong>, and its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert_E^{2}=\langle\tilde Q\rangle_{*}$. The quaternionic algebraic norm $\langle\cdot\rangle_{\natural}$ is <strong>multiplicative</strong>,</p>
 <p>$$
-\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
+\boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$</p>
 <p>and it is the reduced norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$. The group of units is $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.</p>
 <p><strong>No function is both definite and multiplicative.</strong> The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors non-zero and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1-1=0$. A multiplicative function that is not constant has $\varphi(0)=0$, so it would give $\varphi(e_t+i\vec e_x)\varphi(e_t-i\vec e_x)=\varphi(0)=0$; one value would vanish on a non-zero element, and a definite function is non-zero off the origin. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra. The four normed division algebras of the Hurwitz theorem are exactly the ones in which the two senses coincide.</p>
@@ -331,13 +334,13 @@ $$</p>
 <h2 id="the-change-of-scalars">The Change of Scalars</h2>
 <p>The four forms are forms over $\mathbb{C}$. Realifying the space is what a computation, a simulation or a matrix model does, and it moves the forms by two rules. A symmetric bilinear form of complex rank $n$ realifies to the <strong>split</strong> signature $(n,n)$; a Hermitian form of inertia $(n,m)$ realifies by <strong>doubling</strong> its inertia, $(2n,2m)$. The four signatures over $\mathbb{R}$ are therefore</p>
 <p>$$
-(4,4)\ \text{for}\ \langle\cdot,\cdot\rangle,
+\boxed{\;(4,4)\ \text{for}\ \langle\cdot,\cdot\rangle,
 \qquad
 (8,0)\ \text{for}\ \langle\cdot,\cdot\rangle_{*},
 \qquad
 (4,4)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural},
 \qquad
-(2,6)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural*}.
+(2,6)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural*}\;}.
 $$</p>
 <p>The change of scalars also collapses the count. On the real part of the space the coefficientwise conjugation is the identity, so $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural}$: a computation restricted to real coefficients sees two forms and hides the other two. It sees ten of the twelve products, the pairs $\mathrm{SPS}=\mathrm{SQA}$ and $\mathrm{APA}=\mathrm{AQS}$ having collapsed, and it does not see the complex witness of the Jacobi failure of $\mathrm{AQS}$. The count of twelve is the count over $\mathbb{C}$, and the difference of count is the algebraic size of the complex structure the grid carries.</p>
 <p><strong>What the change of scalars is not.</strong> The realification of $\mathbb{B}$ is $\mathbb{B}$ read over the reals, not the algebra of pairs of quaternions. The multiplication is the multiplication of the complex algebra with the scalars restricted; the centre stays the complex line $\mathbb{C}e_t$, read over $\mathbb{R}$ and not a split algebra; and every object read from the ring alone — the centre, the ideals, the idempotents, the zero divisors, the nilpotents, the units — is unchanged. The change is a change of the field of a module and of the dimension, not of the ring.</p>

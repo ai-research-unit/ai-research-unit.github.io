@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>The <strong>plain algebraic norm</strong> is the plain form read at its two equal arguments, $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$, and the <strong>quaternion algebraic norm</strong> is the quaternion form read at its two equal arguments, $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$. The first is <strong>indefinite</strong>: it is $+1$ at $e_t$ and $-1$ at $\vec e_x$, so it is of both signs. The second is <strong>positive definite</strong> and vanishes only at the origin. Read on the products, the two are the coefficients of the two squares, $\tilde q\tilde q=\langle\tilde q\rangle e_t+2q_t\vec q$ and $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$. The two norms are read off the two forms, the first from the plain form and the second from the quaternion form.</p>
 <p>This article gives the two norms, the <strong>multiplicativity</strong> of the second and the failure of the first, the <strong>norm of a product against the product of the norms</strong>, the <strong>level sets</strong> read algebraically, and the <strong>invertibility criteria</strong> the two give. It assumes the two forms from <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em> and the two squares from <em>Comparison Between the Two General Products</em>, both preceding this one; the norms read on the two remarkable subspaces are <em>Remarkable Subspaces and the Two Algebraic Norms</em>, below this article in this category; and the theory of the norm and the invertibility of the plain product is owned by <em>Norm and Invertibility in the Quaternion Algebra</em>, in the <em>Quaternions</em> category.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)$ is the dot product of the vector parts, and $\tilde q^{\natural}=q_te_t-\vec q$. The two algebraic norms are the two forms read at their two equal arguments, $\langle\tilde q\rangle=q_t^2-\lvert\vec q\rvert^2$ and $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$, written with the one bracket and the subscript of the pair, the plain and the quaternionic; read on the products they are the coefficients of the two squares, $\tilde q\tilde q=\langle\tilde q\rangle e_t+2q_t\vec q$ and $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$.</p>
 <h2 id="the-two-norms">The Two Norms</h2>
 <p><strong>Definition.</strong> The two algebraic norms are the two forms read at their two equal arguments,</p>
 <p>$$

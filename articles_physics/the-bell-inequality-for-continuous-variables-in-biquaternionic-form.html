@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -156,7 +159,7 @@ $$
 $$
 the factor $\pi$ arising on each mode because each parity is a single-mode operator, one obtains
 $$
-\boxed{\;E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr).\;}
+\boxed{\;E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2r)\,\mathrm{Re}(\alpha\beta)\Bigr)\;}.
 $$
 At $r=0$ this is $\exp(-2|\alpha|^2-2|\beta|^2)=E(\alpha)E(\beta)$: a product of one-mode factors, as it must be for the vacuum, which is a product state, and $E(\alpha,\beta)$ is negligible whenever either displacement is far from the origin. For $r>0$ the cross term $\mathrm{Re}(\alpha\beta)$ correlates the two modes along the EPR ridge.</p>
 <h3 id="the-sign-check-reported-rather-than-assumed">The sign check, reported rather than assumed</h3>
@@ -251,7 +254,7 @@ $$
 $$
 for which $S=3\exp(-d^2)-\exp(-9d^2)$ and hence
 $$
-S_{\max}^{\mathrm{EPR}}=8\cdot 3^{-9/8}=2.3244947809\ldots
+\boxed{\;S_{\max}^{\mathrm{EPR}}=8\cdot 3^{-9/8}=2.3244947809\ldots\;}
 $$
 The optimisation is one-dimensional along that line and is elementary; the numerical search over all four complex displacements agrees with it and does not exceed it. The value is exact for the ideal EPR state with displaced-parity observables, and it is the number that replaces the discrete Tsirelson bound for this state and this observable family. It is <em>not</em> a universal continuous-variable bound, and the article does not offer it as one: it is the boundary of one combination of state and observables.</p>
 <h3 id="the-three-tiers-for-continuous-variables">The three tiers, for continuous variables</h3>
@@ -313,7 +316,7 @@ E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2
 $$
 checked twice: from the Wigner function, and independently in a truncated Fock space from the matrix elements of the displacement operator, with the marginals reproducing the thermal distribution of the reduced state. The classical bound $|S|\le2$ is violated for every $r>0$, with no visibility threshold, and the maximum grows to a limit in the ideal EPR case of
 $$
-S_{\max}=8\cdot 3^{-9/8}=2.3244947809\ldots,
+\boxed{\;S_{\max}=8\cdot 3^{-9/8}=2.3244947809\ldots\;},
 $$
 well below $2\sqrt{2}$. Different observable families give different boundaries; this value is the boundary of one such family, not a universal constant.</p>
 <p><strong>The quadrature sign was the trap within the trap.</strong> The exponent is $\mathrm{Re}(\alpha\beta)$, not $\mathrm{Re}(\alpha\bar\beta)$. The two coincide when the displacements are real and at $r=0$, so the case that first suggests the formula cannot distinguish them; the check that does was made on complex displacements. The first form of the computation was wrong for exactly this reason and is not carried into the article.</p>

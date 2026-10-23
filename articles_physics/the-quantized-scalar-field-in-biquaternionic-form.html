@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -87,7 +90,6 @@
 <li>Companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, for the trace argument that excludes a bosonic mode from $\mathbb{B}$ and for the Fock construction the field acts on.</li>
 <li>Companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, for the connection between spin and the c-number commutator.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$ are used where the algebra is at issue, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$, and dimensionful factors are restored where they carry meaning. Physical components are written $x=(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$; the material four-wavevector is $\tilde P=i\omega\,e_t+\vec p$ in these units.</p>
 <h2 id="the-field-operator-and-its-value-space">The Field Operator and Its Value Space</h2>
 <p>Quantization replaces the classical field by an operator-valued distribution. For a test function $f$ on spacetime, the smeared field is</p>
 <p>$$
@@ -147,10 +149,10 @@ $$</p>
 <h2 id="the-field-algebra-commutators-as-c-numbers">The Field Algebra: Commutators as c-Numbers</h2>
 <p>The defining property of a bosonic field is that its commutator is a c-number. From the mode algebra,</p>
 <p>$$
-\big[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)\big]
+\boxed{\;\big[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)\big]
 =\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}
 \left(\exp(-ip\cdot(x-y))-\exp(+ip\cdot(x-y))\right)
-\equiv i\Delta(x-y),
+\equiv i\Delta(x-y)\;},
 $$</p>
 <p>while</p>
 <p>$$
@@ -163,8 +165,8 @@ $$</p>
 <h2 id="the-two-point-functions-and-the-propagator">The Two-Point Functions and the Propagator</h2>
 <p>The field operator's content is exhausted by its correlation functions. The basic one is the <strong>Wightman function</strong></p>
 <p>$$
-W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}\,\exp(-ip\cdot(x-y)),
+\boxed{\;W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle
+=\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}\,\exp(-ip\cdot(x-y))\;},
 $$</p>
 <p>which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,</p>
 <p>$$
@@ -184,9 +186,9 @@ $$</p>
 <p>with the $i\epsilon$ prescription that selects the positive-frequency part for the forward propagation. Its scalar two-point function is the Green's function of the parent equation; the companion article <em>The Feynman Propagator in Biquaternionic Form</em> constructs the analogous object for the spin-$\tfrac12$ field, and the scalar case is the standard one.</p>
 <p>The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde P=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde P\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $p^2=-\langle\tilde P\rangle_{\natural}$ and</p>
 <p>$$
-p^2-\mu^2=-\left(\langle\tilde P\rangle_{\natural}+\mu^2\right),
+\boxed{\;p^2-\mu^2=-\left(\langle\tilde P\rangle_{\natural}+\mu^2\right),
 \qquad
-\Delta_F(\tilde P)=-\frac{i}{\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon}.
+\Delta_F(\tilde P)=-\frac{i}{\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon}\;}.
 $$</p>
 <p>The denominator is the mass-shell function of the parent article: the pole of the propagator is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$, and the $i\epsilon$ prescription displaces the pole off the real axis. The two-point function is thus the biquaternion norm's inverse, shifted by the mass; the companion article <em>The Scalar Field Path Integral in Biquaternionic Form</em> makes the same statement for the free Gaussian, whose width is the shifted biquaternion norm, and this identification of the pole with the mass-shell level set is the only place where the propagator's biquaternion form is more than a rewriting.</p>
 <h2 id="transformation-of-the-field-operator">Transformation of the Field Operator</h2>

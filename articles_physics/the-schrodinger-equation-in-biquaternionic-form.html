@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -178,19 +181,19 @@ $$</p>
 <h2 id="the-schrodinger-equation-and-its-solution">The Schrödinger Equation and Its Solution</h2>
 <p>With these objects separated, the equation reads</p>
 <p>$$
-i\hbar\,\partial/\partial t'\psi(t') = \tilde{H}\,\psi(t'),
+\boxed{\;i\hbar\,\partial/\partial t'\psi(t') = \tilde{H}\,\psi(t'),
 \qquad
 \tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+,
 \qquad
-\psi(t') \in \mathbb{B}\tilde\Pi,
+\psi(t') \in \mathbb{B}\tilde\Pi\;},
 $$</p>
 <p>where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.</p>
 <p><strong>Solution.</strong> Since $-i\tilde{H} = -ih_te_t + \vec h$ and the scalar and vector parts commute,</p>
 <p>$$
-\tilde{U}(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
+\boxed{\;\tilde{U}(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
 = \exp(-ih_tt'/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
 \qquad
-\theta = \frac{|\vec h|t'}{\hbar},
+\theta = \frac{|\vec h|t'}{\hbar}\;},
 $$</p>
 <p>and $\psi(t') = \tilde{U}(t')\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t') = \tilde{U}\psi(0)$,</p>
 <p>$$
@@ -202,10 +205,10 @@ $$</p>
 <p><strong>Case checked.</strong> For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde{U}(t')$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.</p>
 <p><strong>Consistency with the density matrix.</strong> The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t'\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t'\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives</p>
 <p>$$
-\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
+\boxed{\;\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
 = -\frac{i}{\hbar}[\tilde{H},\tilde{Ϛ}],
 \qquad\text{i.e.}\qquad
-i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}],
+i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]\;},
 $$</p>
 <p>which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,</p>
 <p>$$
@@ -281,7 +284,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Schrödinger equation in biquaternionic form is</p>
 <p>$$
-i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi,
+\boxed{\;i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi\;},
 $$</p>
 <p>with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the <strong>scalar imaginary</strong> — the central root of $-1$ in $\mathbb{B}$, unique up to sign.</p>
 <p>The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.</p>

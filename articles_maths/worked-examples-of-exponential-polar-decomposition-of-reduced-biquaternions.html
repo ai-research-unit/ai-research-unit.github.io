@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions"><strong>Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article computes the exponential polar decomposition of eight reduced biquaternions, one after another. It is the computational companion of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>. The decomposition, its existence and uniqueness in the principal diamond, and the two factors are established there and in <em>Reduced Biquaternion Elementary Functions</em>; the proofs are not repeated.</p>
+<p>Each case is read from the two complex coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$. The modulus, the boost and the two phases are computed from them by the formulas of §<em>The Method</em>, and the word is checked against the reconstruction</p>
+<p>$$
+\breve Q=\rho\bigl(\cosh\phi+j\sinh\phi\bigr)\exp(i\alpha)\exp(ij\beta).
+$$</p>
+<p>The eight cases cover the generic element, the complex scalar, the two pure phases, the boundary of the principal diamond, the hyperbolic line, the central discrete element and the zero divisor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Case</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generic</td>
+<td>$3+4i+j(1-i)$</td>
+<td>a nonzero boost and two nonzero phases</td>
+</tr>
+<tr>
+<td>Complex scalar</td>
+<td>$1+i$</td>
+<td>one phase, no boost</td>
+</tr>
+<tr>
+<td>Central phase</td>
+<td>$i$</td>
+<td>the phase $\alpha=\pi/2$</td>
+</tr>
+<tr>
+<td>Split phase</td>
+<td>$ij$</td>
+<td>the phase $\beta=\pi/2$</td>
+</tr>
+<tr>
+<td>Boundary of the diamond</td>
+<td>$j$</td>
+<td>$\alpha=\pi/2$, $\beta=-\pi/2$, $\lvert\alpha\rvert+\lvert\beta\rvert=\pi$</td>
+</tr>
+<tr>
+<td>Hyperbolic line</td>
+<td>$\exp(j\ln2)$</td>
+<td>the boost $\phi=\ln2$, both phases zero</td>
+</tr>
+<tr>
+<td>Central discrete</td>
+<td>$-1$</td>
+<td>the corner $\alpha=\pi$, $\beta=0$</td>
+</tr>
+<tr>
+<td>Zero divisor</td>
+<td>$1+j$</td>
+<td>$C_+C_-=0$, but no polar word</td>
+</tr>
+</tbody>
+</table></div>
+<p>$$
+C_+=Q_{\blacktriangle}+Q_{\blacktriangledown},
+\qquad
+C_-=Q_{\blacktriangle}-Q_{\blacktriangledown}.
+$$</p>
+<p>Their product $C_+C_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is written in full throughout. The modulus is $\rho>0$, the boost is $\phi\in\mathbb{R}$, and the phases $(\alpha,\beta)$ are taken in the half-open principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$, with the boundary half-open. Errors are Euclidean in the four real coefficients and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
+<p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its components, its polar data, its two factors and its check. The summary collects the results in two tables and reads the patterns across the cases (§<em>Summary</em>).</p>
+<h2 id="the-method">The Method</h2>
+<h3 id="the-two-complex-components">The Two Complex Components</h3>
+<p>For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the two coordinates are the complex numbers $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$. The polar data are read from their sum and difference,</p>
+<p>$$
+C_+=Q_{\blacktriangle}+Q_{\blacktriangledown},
+\qquad
+C_-=Q_{\blacktriangle}-Q_{\blacktriangledown}.
+$$</p>
+<p>The modulus and the boost are</p>
+<p>$$
+\rho=\sqrt{\lvert C_+C_-\rvert}
+=\sqrt{\lvert Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\rvert},
+\qquad
+\phi=\tfrac12\ln\left\lvert\frac{C_+}{C_-}\right\rvert,
+$$</p>
+<p>and the two phases are</p>
+<p>$$
+\alpha=\tfrac12\bigl(\operatorname{Arg}C_++\operatorname{Arg}C_-\bigr),
+\qquad
+\beta=\tfrac12\bigl(\operatorname{Arg}C_+-\operatorname{Arg}C_-\bigr),
+$$</p>
+<p>with $\operatorname{Arg}$ the principal argument in $(-\pi,\pi]$. The last two formulas give the representative in the principal diamond. The two scales are</p>
+<p>$$
+\lvert C_+\rvert=\rho e^{\phi},
+\qquad
+\lvert C_-\rvert=\rho e^{-\phi},
+$$</p>
+<p>and the product and ratio read</p>
+<p>$$
+C_+C_-=\rho^2e^{2i\alpha}
+=\bigl(\rho e^{\phi}\bigr)\bigl(\rho e^{-\phi}\bigr)e^{2i\alpha},
+\qquad
+\frac{C_+}{C_-}=e^{2\phi}e^{2i\beta}.
+$$</p>
+<p>An element is a unit exactly when $C_+C_-\neq0$.</p>
+<h3 id="the-reconstruction">The Reconstruction</h3>
+<p>The polar word separates the element into a real-hyperbolic factor and a torus factor,</p>
+<p>$$
+\breve Q=\breve r\,u,
+\qquad
+\breve r=\rho\bigl(\cosh\phi+j\sinh\phi\bigr),
+\qquad
+u=\exp(i\alpha)\exp(ij\beta).
+$$</p>
+<p>The four real numbers $\rho,\phi,\alpha,\beta$ are the exponent</p>
+<p>$$
+\operatorname{Log}\breve Q=\ln\rho+j\phi+i\alpha+ij\beta
+=\bigl(\ln\rho+i\alpha\bigr)+j\bigl(\phi+i\beta\bigr).
+$$</p>
+<p>The factor $\breve r$ carries the two real scales $\rho e^{\pm\phi}$ in the two complex components, and $u$ carries the two phases $\alpha\pm\beta$.</p>
+<h3 id="the-matrix-picture">The Matrix Picture</h3>
+<p>The matrix of the regular representation,</p>
+<p>$$
+\mathsf M(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
+$$</p>
+<p>has determinant $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=C_+C_-$. The two scales $\lvert C_+\rvert=\rho e^{\phi}$ and $\lvert C_-\rvert=\rho e^{-\phi}$ govern its action, each repeated.</p>
+<h3 id="the-null-cone">The Null Cone</h3>
+<p>A zero divisor is an element with $C_+C_-=0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$. One of the two complex components vanishes, the element has the form $\breve Q=Q_{\blacktriangle}(1\pm j)$ with $Q_{\blacktriangle}\neq0$, and no logarithm exists: the modulus vanishes and the boost diverges. The matrix has rank one and determinant zero. Case 8 treats the boundary explicitly.</p>
+<h2 id="the-eight-cases">The Eight Cases</h2>
+<h3 id="case-1-a-generic-element">Case 1: A Generic Element</h3>
+<p><strong>Components.</strong> For $\breve Q=3+4i+j(1-i)$,</p>
+<p>$$
+Q_{\blacktriangle}=3+4i,
+\qquad
+Q_{\blacktriangledown}=1-i,
+\qquad
+C_+=4+3i,
+\qquad
+C_-=2+5i,
+\qquad
+C_+C_-=-7+26i.
+$$</p>
+<p>Both components are nonzero, with $\lvert C_+\rvert=5$ and $\lvert C_-\rvert=\sqrt{29}$.</p>
+<p><strong>Polar data.</strong> The modulus, the boost and the two phases are</p>
+<p>$$
+\rho=\sqrt{5\sqrt{29}}=5.189009928268833,
+\qquad
+\ln\rho=1.6465429137136687,
+$$</p>
+<p>$$
+\phi=\tfrac12\ln\frac{5}{\sqrt{29}}=-0.03710500127956826,
+$$</p>
+<p>$$
+\alpha=\tfrac12\bigl(\operatorname{Arg}(4+3i)+\operatorname{Arg}(2+5i)\bigr)=0.916895529237908,
+$$</p>
+<p>$$
+\beta=\tfrac12\bigl(\operatorname{Arg}(4+3i)-\operatorname{Arg}(2+5i)\bigr)=-0.27339442044462364.
+$$</p>
+<p>The two phases satisfy $\lvert\alpha\rvert+\lvert\beta\rvert=1.1902899497<\pi$, so the point is interior to the diamond.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is</p>
+<p>$$
+\breve r=\rho(\cosh\phi+j\sinh\phi)
+=\frac{5+\sqrt{29}}{2}+j\,\frac{5-\sqrt{29}}{2}
+=5.1925824036-0.1925824036\,j,
+$$</p>
+<p>and the torus factor is</p>
+<p>$$
+u=e^{0.9168955292\,i}e^{-0.2733944204\,ij}
+=0.5856953382+0.7642383454\,i
++j\bigl(0.2143046618-0.1642383454\,i\bigr).
+$$</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=1.6465429137+0.9168955292\,i
+-0.0371050013\,j-0.2733944204\,ij.
+$$</p>
+<p>The product of the two factors is</p>
+<p>$$
+\breve r\,u=3+4i+j(1-i),
+$$</p>
+<p>with error $1.3\times10^{-15}$, and $\exp(\operatorname{Log}\breve Q)$ reproduces the element with the same error. The matrix has determinant $-7+26i$ and the two scales $5$ and $\sqrt{29}$.</p>
+<h3 id="case-2-a-complex-scalar">Case 2: A Complex Scalar</h3>
+<p><strong>Components.</strong> For $\breve Q=1+i$,</p>
+<p>$$
+Q_{\blacktriangle}=1+i,
+\qquad
+Q_{\blacktriangledown}=0,
+\qquad
+C_+=C_-=1+i,
+\qquad
+C_+C_-=2i.
+$$</p>
+<p>The two components coincide, with $\lvert C_\pm\rvert=\sqrt2$.</p>
+<p><strong>Polar data.</strong> The moduli are equal, so</p>
+<p>$$
+\rho=\sqrt{\lvert 2i\rvert}=\sqrt2,
+\qquad
+\phi=0,
+\qquad
+\alpha=\tfrac12\bigl(2\cdot\tfrac{\pi}{4}\bigr)=\tfrac{\pi}{4},
+\qquad
+\beta=0.
+$$</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve r=\sqrt2$, and the torus factor is</p>
+<p>$$
+u=e^{i\pi/4}=\frac{1+i}{\sqrt2}.
+$$</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=\tfrac12\ln2+\tfrac{\pi}{4}i,
+$$</p>
+<p>and</p>
+<p>$$
+\breve r\,u=\sqrt2\cdot\frac{1+i}{\sqrt2}=1+i,
+$$</p>
+<p>with error $2.2\times10^{-16}$. The matrix has determinant $2i$ and the two scales $\sqrt2$ and $\sqrt2$.</p>
+<h3 id="case-3-the-central-phase">Case 3: The Central Phase</h3>
+<p><strong>Components.</strong> For $\breve Q=i$,</p>
+<p>$$
+Q_{\blacktriangle}=i,
+\qquad
+Q_{\blacktriangledown}=0,
+\qquad
+C_+=C_-=i,
+\qquad
+C_+C_-=-1.
+$$</p>
+<p>The element is central, with $\lvert C_\pm\rvert=1$.</p>
+<p><strong>Polar data.</strong> The modulus is one, the boost vanishes and</p>
+<p>$$
+\alpha=\operatorname{Arg}i=\tfrac{\pi}{2},
+\qquad
+\beta=0.
+$$</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=i$.</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=\tfrac{\pi}{2}i,
+$$</p>
+<p>and $\breve r\,u=i$, with error $6.1\times10^{-17}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.</p>
+<h3 id="case-4-the-split-phase">Case 4: The Split Phase</h3>
+<p><strong>Components.</strong> For $\breve Q=ij$,</p>
+<p>$$
+Q_{\blacktriangle}=0,
+\qquad
+Q_{\blacktriangledown}=i,
+\qquad
+C_+=i,
+\qquad
+C_-=-i,
+\qquad
+C_+C_-=1.
+$$</p>
+<p>The two components are opposite, with $\lvert C_\pm\rvert=1$.</p>
+<p><strong>Polar data.</strong> The two moduli are one, so</p>
+<p>$$
+\rho=1,
+\qquad
+\phi=0,
+\qquad
+\alpha=0,
+\qquad
+\beta=\tfrac{\pi}{2}.
+$$</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=ij$.</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=\tfrac{\pi}{2}ij,
+$$</p>
+<p>and $\breve r\,u=ij$, with error $6.1\times10^{-17}$. The matrix has determinant $1$ and the two scales $1$ and $1$.</p>
+<h3 id="case-5-the-boundary-of-the-diamond">Case 5: The Boundary of the Diamond</h3>
+<p><strong>Components.</strong> For $\breve Q=j$,</p>
+<p>$$
+Q_{\blacktriangle}=0,
+\qquad
+Q_{\blacktriangledown}=1,
+\qquad
+C_+=1,
+\qquad
+C_-=-1,
+\qquad
+C_+C_-=-1.
+$$</p>
+<p>The two components are opposite, with $\lvert C_\pm\rvert=1$.</p>
+<p><strong>Polar data.</strong> The moduli are one and the boost vanishes. The phases are</p>
+<p>$$
+\alpha=\tfrac{\pi}{2},
+\qquad
+\beta=-\tfrac{\pi}{2},
+\qquad
+\lvert\alpha\rvert+\lvert\beta\rvert=\pi.
+$$</p>
+<p>The point lies on the boundary of the principal diamond, where the two phases saturate it.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=j$.</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=\tfrac{\pi}{2}i-\tfrac{\pi}{2}ij,
+$$</p>
+<p>and $\breve r\,u=j$, with error $1.2\times10^{-16}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.</p>
+<h3 id="case-6-the-hyperbolic-line">Case 6: The Hyperbolic Line</h3>
+<p><strong>Components.</strong> For</p>
+<p>$$
+\breve Q=\exp(j\ln2)=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34j,
+$$</p>
+<p>the coordinates are</p>
+<p>$$
+Q_{\blacktriangle}=\tfrac54,
+\qquad
+Q_{\blacktriangledown}=\tfrac34,
+\qquad
+C_+=2,
+\qquad
+C_-=\tfrac12,
+\qquad
+C_+C_-=1.
+$$</p>
+<p><strong>Polar data.</strong> The two components are positive and real, so</p>
+<p>$$
+\rho=\sqrt{2\cdot\tfrac12}=1,
+\qquad
+\phi=\tfrac12\ln4=\ln2,
+\qquad
+\alpha=\beta=0.
+$$</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is</p>
+<p>$$
+\breve r=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j,
+$$</p>
+<p>and the torus factor is $u=1$.</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=j\ln2,
+$$</p>
+<p>and $\breve r\,u=\tfrac54+\tfrac34j$, with error $0$. The matrix has determinant $1$ and the two scales $2$ and $\tfrac12$. The element is a pure boost: the two phases vanish and the two scales are positive.</p>
+<h3 id="case-7-the-central-discrete-element">Case 7: The Central Discrete Element</h3>
+<p><strong>Components.</strong> For $\breve Q=-1$,</p>
+<p>$$
+Q_{\blacktriangle}=-1,
+\qquad
+Q_{\blacktriangledown}=0,
+\qquad
+C_+=C_-=-1,
+\qquad
+C_+C_-=1.
+$$</p>
+<p>The element is central, with $\lvert C_\pm\rvert=1$.</p>
+<p><strong>Polar data.</strong> The modulus is one and the boost vanishes. The phases are</p>
+<p>$$
+\alpha=\pi,
+\qquad
+\beta=0,
+\qquad
+\lvert\alpha\rvert+\lvert\beta\rvert=\pi.
+$$</p>
+<p>The point is the corner $(\pi,0)$ of the diamond.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=-1$.</p>
+<p><strong>The word and the check.</strong> The exponent is</p>
+<p>$$
+\operatorname{Log}\breve Q=\pi i,
+$$</p>
+<p>and $\breve r\,u=-1$, with error $1.2\times10^{-16}$. The matrix has determinant $1$ and the two scales $1$ and $1$. The four logarithms of $-1$ and their kernel differences belong to the polar article and to the relation article; the principal one is the one above.</p>
+<h3 id="case-8-the-zero-divisor">Case 8: The Zero Divisor</h3>
+<p><strong>Components.</strong> For $\breve Q=1+j$,</p>
+<p>$$
+Q_{\blacktriangle}=1,
+\qquad
+Q_{\blacktriangledown}=1,
+\qquad
+C_+=2,
+\qquad
+C_-=0,
+\qquad
+C_+C_-=0.
+$$</p>
+<p>One component vanishes, so the element is a zero divisor and no logarithm exists.</p>
+<p><strong>No polar word.</strong> The modulus vanishes and the boost diverges. The matrix</p>
+<p>$$
+\mathsf M(\breve Q)=\begin{pmatrix}1&1\\1&1\end{pmatrix}
+$$</p>
+<p>has rank one and determinant $0$. Its square is $\breve Q^2=2\breve Q$.</p>
+<p><strong>The boundary.</strong> The element is the limit of the hyperbolic family</p>
+<p>$$
+\breve Q_\delta=(1+\delta)+j,
+\qquad
+\delta>0.
+$$</p>
+<p>Its components give</p>
+<p>$$
+\rho=\sqrt{\delta(2+\delta)},
+\qquad
+\phi=\tfrac12\ln\frac{2+\delta}{\delta},
+\qquad
+\alpha=\beta=0,
+$$</p>
+<p>and the factor is</p>
+<p>$$
+\breve r_\delta=\rho(\cosh\phi+j\sinh\phi)=(1+\delta)+j=\breve Q_\delta.
+$$</p>
+<p>The two scales are $\rho e^{\phi}=2+\delta$ and $\rho e^{-\phi}=\delta$. The table gives the approach.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\delta$</th>
+<th>$\rho$</th>
+<th>$\phi$</th>
+<th>$\rho e^{\phi}$</th>
+<th>$\rho e^{-\phi}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.1$</td>
+<td>$0.4582575695$</td>
+<td>$1.522261219$</td>
+<td>$2.1$</td>
+<td>$0.1$</td>
+</tr>
+<tr>
+<td>$0.01$</td>
+<td>$0.1417744688$</td>
+<td>$2.651652454$</td>
+<td>$2.01$</td>
+<td>$0.01$</td>
+</tr>
+<tr>
+<td>$0.001$</td>
+<td>$0.0447325385$</td>
+<td>$3.800701167$</td>
+<td>$2.001$</td>
+<td>$0.001$</td>
+</tr>
+</tbody>
+</table></div>
+<p>As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger scale tends to $2$; the factor tends to $1+j$. The polar decomposition exists on the unit group and stops exactly at $C_+C_-=0$.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\breve Q$</th>
+<th>$Q_{\blacktriangle}$</th>
+<th>$Q_{\blacktriangledown}$</th>
+<th>$C_+C_-$</th>
+<th>$\rho$</th>
+<th>$\phi$</th>
+<th>$\alpha$</th>
+<th>$\beta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$3+4i+j(1-i)$</td>
+<td>$3+4i$</td>
+<td>$1-i$</td>
+<td>$-7+26i$</td>
+<td>$5.1890099283$</td>
+<td>$-0.0371050013$</td>
+<td>$0.9168955292$</td>
+<td>$-0.2733944204$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$1+i$</td>
+<td>$1+i$</td>
+<td>$0$</td>
+<td>$2i$</td>
+<td>$\sqrt2$</td>
+<td>$0$</td>
+<td>$\pi/4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$\pi/2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$ij$</td>
+<td>$0$</td>
+<td>$i$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\pi/2$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$j$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$\pi/2$</td>
+<td>$-\pi/2$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\exp(j\ln2)$</td>
+<td>$\tfrac54$</td>
+<td>$\tfrac34$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$\ln2$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$\pi$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$1+j$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-reconstruction-table">The Reconstruction Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\breve Q$</th>
+<th>$\breve r$</th>
+<th>$u$</th>
+<th>$\breve r\,u$</th>
+<th>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$3+4i+j(1-i)$</td>
+<td>$5.1925824036-0.1925824036j$</td>
+<td>$0.5856953382+0.7642383454i+j(0.2143046618-0.1642383454i)$</td>
+<td>$3+4i+j(1-i)$</td>
+<td>$1.3\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$1+i$</td>
+<td>$\sqrt2$</td>
+<td>$(1+i)/\sqrt2$</td>
+<td>$1+i$</td>
+<td>$2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$i$</td>
+<td>$1$</td>
+<td>$i$</td>
+<td>$i$</td>
+<td>$6.1\times10^{-17}$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$ij$</td>
+<td>$1$</td>
+<td>$ij$</td>
+<td>$ij$</td>
+<td>$6.1\times10^{-17}$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$j$</td>
+<td>$1$</td>
+<td>$j$</td>
+<td>$j$</td>
+<td>$1.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\exp(j\ln2)$</td>
+<td>$\tfrac54+\tfrac34j$</td>
+<td>$1$</td>
+<td>$\tfrac54+\tfrac34j$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$1.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$1+j$</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>no word</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-the-cases-show">What the Cases Show</h3>
+<ul>
+<li>The two complex components determine the polar data. In every unit the four numbers $\rho,\phi,\alpha,\beta$ are read from $C_+$ and $C_-$ by the formulas of §<em>The Two Complex Components</em>, and $\lvert C_+\rvert$ and $\lvert C_-\rvert$ are the two scales.</li>
+<li>The central rows have $Q_{\blacktriangledown}=0$, hence $C_+=C_-$. The elements $1+i$, $i$ and $-1$ have $\phi=0$ and lie on the torus; the two components coincide and the phases add.</li>
+<li>The elements $i$ and $ij$ are the two pure phases, with $\alpha=\pi/2$ and $\beta=\pi/2$ respectively. Both have $\rho=1$ and $\phi=0$; the difference is the phase, not the modulus.</li>
+<li>The elements $j$ and $-1$ lie on the boundary of the principal diamond. The first has $\alpha=\pi/2$, $\beta=-\pi/2$; the second is the corner $(\pi,0)$. The polar data are still unique there, because the boundary is taken half-open.</li>
+<li>The hyperbolic line $\exp(j\ln2)$ has both phases zero and the boost $\ln2$. Its two scales are $2$ and $\tfrac12$, the two values of $\lvert C_\pm\rvert$.</li>
+<li>The zero divisor $1+j$ has $C_-=0$, but no polar word. The family shows the rate $\rho\to0$, $\phi\to\infty$ with $\rho e^{\phi}\to2$.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>the reduced biquaternion algebra, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$</td>
+<td>a reduced biquaternion</td>
+</tr>
+<tr>
+<td>$Q_{\blacktriangle},Q_{\blacktriangledown}$</td>
+<td>the two complex coordinates</td>
+</tr>
+<tr>
+<td>$C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$</td>
+<td>the two complex components</td>
+</tr>
+<tr>
+<td>$C_+C_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$</td>
+<td>the product of the components</td>
+</tr>
+<tr>
+<td>$\rho=\sqrt{\lvert C_+C_-\rvert}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>the real boost</td>
+</tr>
+<tr>
+<td>$\alpha,\beta$</td>
+<td>the two phases, in the principal diamond</td>
+</tr>
+<tr>
+<td>$\breve r=\rho(\cosh\phi+j\sinh\phi)$</td>
+<td>the real-hyperbolic factor</td>
+</tr>
+<tr>
+<td>$u=\exp(i\alpha)\exp(ij\beta)$</td>
+<td>the torus factor</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}\breve Q=(\ln\rho+i\alpha)+j(\phi+i\beta)$</td>
+<td>the principal logarithm</td>
+</tr>
+<tr>
+<td>$\mathsf M(\breve Q)$</td>
+<td>the block matrix $\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>the parameter of the boundary family of case 8</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="exponential-polar-decomposition-of-reduced-biquaternions.html">Exponential Polar Decomposition of Reduced Biquaternions</a>, for the decomposition, the principal diamond and uniqueness.</li>
+<li><a href="reduced-biquaternion-elementary-functions.html">Reduced Biquaternion Elementary Functions</a>, for the exponential, the logarithm and the kernel.</li>
+<li><a href="modulus-unit-polar-decomposition-of-reduced-biquaternions.html">Modulus–Unit Polar Decomposition of Reduced Biquaternions</a>, for the algebraic modulus–unit form.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html">Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers</a>, for the two-dimensional companion.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Biquaternions</a>, for the noncommutative companion.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the exponential map and the torus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

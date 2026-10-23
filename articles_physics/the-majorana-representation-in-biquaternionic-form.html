@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -96,9 +99,9 @@ $$</p>
 <h3 id="idempotents-and-the-bloch-vector">Idempotents and the Bloch Vector</h3>
 <p>The idempotent of the state is</p>
 <p>$$
-\tilde\Pi_1(\vec u_x) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
+\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
 \qquad
-\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\;2\,\mathrm{Im}\,\zeta,\;1-|\zeta|^2\right),
+\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\;2\,\mathrm{Im}\,\zeta,\;1-|\zeta|^2\right)\;},
 $$</p>
 <p>the standard inverse stereographic projection. The unit vector $\vec u_x$ is the Bloch vector of the state, and the idempotent is $\tfrac12(e_t+i\vec u_x)$. For the north pole $\zeta = 0$ and $\vec u_x = \vec u_z$; for the south pole $\zeta = \infty$ and $\vec u_x = -\vec u_z$; for the equator $|\zeta| = 1$ and $\vec u_x$ lies in the equatorial plane. The inverse map is $\zeta = \exp(i\phi)\tan(\theta/2)$ with $\theta$, $\phi$ the polar angles of $\vec u_x$.</p>
 <p>The relation was checked numerically: for $(\theta,\phi) = (0.7,0.3)$, $(2.1,1.4)$, $(0.5,2.0)$ the vector reconstructed from $\zeta$ equals $(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ to machine precision.</p>
@@ -108,7 +111,7 @@ $$</p>
 <h3 id="the-general-construction">The General Construction</h3>
 <p>For spin $j$ the state $|\psi\rangle = \sum_{m=-j}^{j}c_m|j,m\rangle$ is represented by the degree-$2j$ polynomial</p>
 <p>$$
-P_\psi(z) = \sum_{m=-j}^{j}(-1)^{j-m}\binom{2j}{j+m}^{1/2} c_m\,z^{\,j+m},
+\boxed{\;P_\psi(z) = \sum_{m=-j}^{j}(-1)^{j-m}\binom{2j}{j+m}^{1/2} c_m\,z^{\,j+m}\;},
 $$</p>
 <p>whose $2j$ complex roots are the stereographic coordinates of the $2j$ Majorana stars. A global phase of $|\psi\rangle$ multiplies $P_\psi$ by a constant and does not move the roots; a rotation reparametrises them by a Möbius transformation and rotates the sphere rigidly. The construction is standard, is reviewed in the further reading, and is quoted here because it is the general setting of which the spin-1/2 case is the simplest instance.</p>
 <h3 id="the-spin-12-case-a-single-star">The Spin-1/2 Case: a Single Star</h3>
@@ -237,9 +240,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>Majorana representation</strong> of a spin-$j$ state assigns $2j$ points on the unit sphere — the <strong>stars</strong> — to the state, as the roots of the degree-$2j$ polynomial $P_\psi(z) = \sum_m (-1)^{j-m}\binom{2j}{j+m}^{1/2}c_m z^{j+m}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is</p>
 <p>$$
-\zeta = \frac{\psi_2}{\psi_1} = \tan\frac{\theta}{2}\exp(i\phi),
+\boxed{\;\zeta = \frac{\psi_2}{\psi_1} = \tan\frac{\theta}{2}\exp(i\phi),
 \qquad
-\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\,2\,\mathrm{Im}\,\zeta,\,1-|\zeta|^2\right).
+\vec u_x = \frac{1}{1+|\zeta|^2}\left(2\,\mathrm{Re}\,\zeta,\,2\,\mathrm{Im}\,\zeta,\,1-|\zeta|^2\right)\;}.
 $$</p>
 <p>The star <strong>is</strong> the Bloch vector; the state is $\tilde\Pi_1(\vec u_x) = \tfrac12(e_t+i\vec u_x)$. The map from spinor to star is two-to-one: the overall phase of the spinor, which is the geometric phase, is discarded, and the star is blind to it.</p>
 <p>Under a rotation, the spinor transforms by $SU(2)$ and the star by the Möbius transformation $\zeta\mapsto(a^*\zeta-b^*)/(b\zeta+a)$; the constellation rotates rigidly, and this covariance is the defining property of the representation. In the algebra the rotation is conjugation by a unit real quaternion $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, with the star as the image of the idempotent and the spinor phase as the central part.</p>

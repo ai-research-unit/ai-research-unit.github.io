@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -302,19 +305,10 @@ and it acts on the purely vectorial biquaternionic field
 $$
 \vec N=\vec E-i\sqrt{\frac{\mu}{\epsilon}}\,\vec H,
 \qquad
-M\vec N=-\sqrt{\frac{\mu}{\epsilon}}\,\vec J
--\beta\sqrt{\frac{\mu}{\epsilon}}\,\partial/\partial Q_t\,\rho+\frac{i\rho}{\epsilon}.
+\boxed{\;M\vec N=-\sqrt{\frac{\mu}{\epsilon}}\,\vec J
+-\beta\sqrt{\frac{\mu}{\epsilon}}\,\partial/\partial Q_t\,\rho+\frac{i\rho}{\epsilon}\;}.
 $$
 The equivalence is exact and two-way, not a weak-coupling approximation in $\beta$: the physical fields solve the chiral system if and only if $\vec N$ solves this one (the source's Proposition 1). For $\beta=0$ the operator reduces to $\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD$, which is the reduction of the non-chiral case, and the authors are explicit that the chiral operator is <em>essentially different</em> from it.</p>
-<p><strong>Conventions.</strong> The source's objects and the parent's are related by two conjugations, and recording them makes the agreement between the two reductions exact rather than approximate. First, the source's vectorial field pairs $\vec E$ with $-\sqrt{\mu/\epsilon}\,\vec H$, whereas the parent's field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the two are related by
-$$
-\tilde{F}=i\sqrt{\epsilon}\,\overline{\vec N},
-$$
-the complex conjugate of the source's field, so the magnetic-half sign is the only difference. Second, the source's $D$, with its quaternion units $i_k$, is the spatial part of the parent's gradient: writing $\tilde{\nabla}=\partial/\partial Q_t+\sum_ke_k\,\partial/\partial Q_k$ and its quaternion conjugate $\tilde{\nabla}^{\natural}=\partial/\partial Q_t-\sum_ke_k\,\partial/\partial Q_k$ (the vector part negated, the object whose product with $\tilde{\nabla}$ gives $\Box$), the source's non-chiral operator is
-$$
-M_0=\left.M\right|_{\beta=0}=\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD=i\,\tilde{\nabla}^{\natural},
-$$
-verified to machine zero: $i$ times the <strong>quaternion conjugate</strong> of the parent's gradient. Neither conjugation changes the content of the Maxwell system — the parent's own product $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ is independent of which factor comes first — which is why the two single-equation reductions agree where they overlap. What has no counterpart in the parent, and what no conjugation removes, is the chiral term $\beta\sqrt{\epsilon\mu}\,\partial/\partial Q_t\,D$: the <em>product</em> of the scalar time derivative with the vector part of the gradient, a second-order differential operator and not a multiple of $\tilde{\nabla}^{\natural}$.</p>
 <p><strong>The non-chiral limit in the framework's own symbols.</strong> At $\beta=0$ the operator is $M_0=\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial Q_t$ commutes with $D$,
 $$
 \left(\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial Q_t+iD\right)
@@ -336,7 +330,7 @@ the frequency whose wavelength is $2\pi\beta$. There $M(\omega)$ annihilates eve
 $$
 \left(1-\beta^2\epsilon\mu\,\omega^2\right)k^2-2\tau\beta\epsilon\mu\,\omega^2k-\epsilon\mu\,\omega^2=0 ,
 \qquad\text{i.e.}\qquad
-n_\tau(\omega)=\frac{c\,k_\tau}{\omega}=\frac{1}{1-\tau\beta\omega/c}
+\boxed{\;n_\tau(\omega)=\frac{c\,k_\tau}{\omega}=\frac{1}{1-\tau\beta\omega/c}\;}
 $$
 on the propagating branch. Both were checked to $2.2\times10^{-16}$ against the wave equation evaluated on the corresponding circular polarisation, and at $\beta=0$ the two branches collapse to the single $k=\sqrt{\epsilon\mu}\,\omega$ of the non-chiral medium. The two refractive indices are the optical activity, and they come with no free constant beyond the one $\beta$ that entered the constitutive relations.</p>
 <p><strong>The fundamental solution and the causality principle.</strong> The source constructs the fundamental solution of $M$ using quaternionic analysis. Writing
@@ -452,8 +446,8 @@ f:=\vec{\mathcal E}+i\,\vec{\mathcal H},
 $$</p>
 <p>where $Z=\sqrt{\mu/\epsilon}$ is the intrinsic impedance fixed earlier. Then the two equations are together equivalent to the single equation</p>
 <p>$$
-\left(\frac{1}{c}\,\partial/\partial Q_t+iD\right)f-f\,(i\vec{c})-f^{*}\,(i\vec{Z})
-=-\left(\sqrt{\mu}\,\vec j+\frac{i\rho}{\sqrt{\epsilon}}\right),
+\boxed{\;\left(\frac{1}{c}\,\partial/\partial Q_t+iD\right)f-f\,(i\vec{c})-f^{*}\,(i\vec{Z})
+=-\left(\sqrt{\mu}\,\vec j+\frac{i\rho}{\sqrt{\epsilon}}\right)\;},
 $$</p>
 <p>with $f^{*}$ the coefficientwise complex conjugate of $f$ — the scalar imaginary conjugated, the quaternion units untouched — and the two products again right products. The source writes the impedance $W$ and the two coefficient vectors $\vec{c}$ and $\vec{W}$, the letters $\vec{c},\vec{W}$ standing for $\frac12\mathrm{grad}\ln c$ and $\frac12\mathrm{grad}\ln W$; we keep this article's letter $Z$ for the impedance, and we keep the source's symbol $\vec{c}$ for the first coefficient vector, which is a <em>vector field built from the speed</em> and not the speed $c$. The two coefficient vectors are not independent of the pair above: because</p>
 <p>$$
@@ -474,7 +468,7 @@ $$</p>
 \epsilon = \exp(\,2G(x_1)), \qquad G(x_1) = \int g(x_1)\,dx_1 ,
 $$</p>
 <p>$g$ being the potential: the potential is the logarithmic derivative of the square root of the permittivity, which is the carrier function of the normalisation above. The correspondence is recorded in <em>The Dirac Equation in Biquaternionic Form</em>, section <em>The Static Maxwell Field of an Inhomogeneous Medium as a Dirac Potential</em>. It belongs here because the two ends are this section's carrier function and that article's potential coupling, and the statement is a dictionary between them rather than a new solution; it is a static statement, and it does not extend to the time-dependent inhomogeneous case, where the reduction is the Vekua equation and no such identification is available.</p>
-<h2 id="the-operator-math399-the-reduction-to-the-schrodinger-equation-and-a-fundamental-solution">The Operator $D+M_{\vec{\alpha}}$, the Reduction to the Schrödinger Equation, and a Fundamental Solution</h2>
+<h2 id="the-operator-math384-the-reduction-to-the-schrodinger-equation-and-a-fundamental-solution">The Operator $D+M_{\vec{\alpha}}$, the Reduction to the Schrödinger Equation, and a Fundamental Solution</h2>
 <p>In the static case the reformulation reads</p>
 <p>$$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-\frac{\rho}{\sqrt{\epsilon}},
@@ -500,7 +494,7 @@ $$</p>
 <p>solves $(D+M^{\vec{\alpha}})\vec{F}=0$, that is $D\vec{F}+\vec{F}\vec{\alpha}=0$. Moreover, if $\psi$ is a <em>fundamental</em> solution of the operator $-\Delta+v$, then $\vec{F}$ is a fundamental solution of $D+M^{\vec{\alpha}}$. A first-order quaternionic operator with a gradient coefficient is thus reduced to a scalar Schrödinger equation, and the potential is not free: it is built from the same $\phi$ that produces the coefficient.</p>
 <p><strong>The factorisation, and the Riccati equation.</strong> The corresponding operator identity is a factorisation of the Schrödinger operator. For a scalar function $u$,</p>
 <p>$$
-\left(D+M^{\vec{\alpha}}\right)\left(D-M_{\vec{\alpha}}\right)u=(-\Delta+v)u
+\boxed{\;\left(D+M^{\vec{\alpha}}\right)\left(D-M_{\vec{\alpha}}\right)u=(-\Delta+v)u\;}
 \qquad\text{provided}\qquad
 D\vec{\alpha}+\vec{\alpha}^{2}=-v ,
 $$</p>
@@ -571,9 +565,9 @@ $$</p>
 $$</p>
 <p>is the outgoing fundamental solution of $-\Delta-c^2$, and the construction gives the fundamental solution of $D+M^{\vec{\alpha}}$ in closed form,</p>
 <p>$$
-\vec{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+\boxed{\;\vec{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 =\left(D-\frac{\mathrm{grad}\,\phi}{\phi}\right)\frac{\exp(icr)}{4\pi r}
-=-\left(\vec{\alpha}+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r^{2}}-\frac{ic\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{r}\right)\frac{\exp(icr)}{4\pi r},
+=-\left(\vec{\alpha}+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r^{2}}-\frac{ic\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{r}\right)\frac{\exp(icr)}{4\pi r}\;},
 \qquad
 r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| .
 $$</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -159,7 +162,7 @@ $$</p>
 $$</p>
 <p>the scalar part is $\frac{\hbar}{4}\cos(\omega_L t')$. Applying the Hermitian form, with the trace reading last,</p>
 <p>$$
-\langle\tilde{S}_x\rangle(t') = \frac{\hbar}{2}\cos(\omega_L t').
+\boxed{\;\langle\tilde{S}_x\rangle(t') = \frac{\hbar}{2}\cos(\omega_L t')\;}.
 $$</p>
 <h2 id="limiting-cases">Limiting Cases</h2>
 <p>Both formulations give the same result, and both give the same limits:</p>
@@ -176,7 +179,7 @@ $$</p>
 <p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_t$ is preserved by the exponential form.</p>
 <p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{Ϛ}(t') = \frac{1}{2}(e_t + i\vec r(t'))$ with</p>
 <p>$$
-\vec r(t') = \cos(\omega_L t')\,\vec e_x - \sin(\omega_L t')\,\vec e_y.
+\boxed{\;\vec r(t') = \cos(\omega_L t')\,\vec e_x - \sin(\omega_L t')\,\vec e_y\;}.
 $$</p>
 <p>This is a <strong>unit vector rotating</strong> in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
 <p><strong>5. The expectation value is the normalised Hermitian form, read through the trace last.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>

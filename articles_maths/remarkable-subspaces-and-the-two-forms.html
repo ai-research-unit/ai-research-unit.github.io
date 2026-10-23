@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,7 +71,6 @@
         <h1 id="remarkable-subspaces-and-the-two-forms"><strong>Remarkable Subspaces and the Two Forms</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The two forms of <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em>, the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ and the quaternion form $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$, are read here on the two <strong>remarkable subspaces</strong> of the quaternion space, the scalar line $\mathbb{R}_{\mathbb{H}}=\{q_te_t\}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})=\{\vec q\}$, the fixed and the anti-fixed space of the quaternion conjugation. The two subspaces are orthogonal for both forms, so the restrictions are the two summands of the two forms, and the two forms are definite on each summand with <strong>opposite signs for the plain form</strong> and with the <strong>same sign for the quaternion form</strong>.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q=q_te_t+\vec q$ names an element, the scalar line has the natural basis $e_t$ and the vector subspace the natural basis $\vec e_x,\vec e_y,\vec e_z$, and $(\vec q_1,\vec q_2)$ is the dot product of the vector parts. The plain form is $\langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ and the quaternion form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$.</p>
 <h2 id="the-restriction-matrices">The Restriction Matrices</h2>
 <p><strong>Proposition (the restrictions).</strong> The two subspaces are orthogonal for both forms, and the restrictions have the matrices</p>
 <div class="table-scroll"><table>

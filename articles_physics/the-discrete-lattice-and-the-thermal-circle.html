@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -82,11 +85,6 @@ Framework</em>; the central phase whose compactification the thermal circle real
 Rotation: Phase, Duality and the Wick Rotation as One Generator</em>; the clock structure is <em>Each Sector Is the
 Other's Clock: the Sector Exchange as Relational Time</em>; and the discrete charge is <em>Particle Types, Discrete
 Charge and Three-Particle Couplings</em>.</p>
-<p><strong>Conventions.</strong> $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ is the unitary slice,
-$Sp(1)\cong SU(2)$ its real-quaternion part; the thermal circle is the compact imaginary-time direction of
-circumference $\beta$ in the coordinate $t'$, with $\beta=\hbar/(k_BT)$ the inverse temperature as throughout
-the corpus (its length in the material sector's units is $c\beta$), and the Matsubara frequencies are
-$\omega_n=2\pi n/\beta$.</p>
 <h2 id="one-principle">One Principle</h2>
 <p>The principle is a single sentence and it covers both disciplines.</p>
 <blockquote>
@@ -156,7 +154,7 @@ two compactnesses of different origins, and the article states both rather than 
 <h2 id="the-lattice-of-the-logarithm">The Lattice of the Logarithm</h2>
 <p>A third lattice appears in the algebra, and it is neither of the two above. For a unit $\tilde Q=Q_te_t+\vec Q$ with $B\neq0$, write $\vec U=\vec Q/B$ for the pure unit element of the vector part, $\vec U^2=-e_t$, and $B^2=Q_x^2+Q_y^2+Q_z^2$. The logarithm is defined up to the kernel of the exponential on the diagonal part of the element,</p>
 <p>$$
-L(\tilde Q)=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb Z,\ m\equiv n\pmod 2\right\}.
+\boxed{\;L(\tilde Q)=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb Z,\ m\equiv n\pmod 2\right\}\;}.
 $$</p>
 <p>A central shift by $2\pi i k\,e_t$ and a rotation shift by $2\pi\ell\,\vec U$ are both allowed on their own. The half-shifts $\pi i e_t$ and $\pi\vec U$ occur only together, because the two eigenvalue logarithms must be shifted in step. The matching is the parity condition.</p>
 <p>This is the <strong>gauge of the logarithm</strong>, not a thermal spectrum. It is a lattice of generators, it depends on the element through the axis $\vec U$, and it is the ambiguity of one logarithm rather than a set of elements of the group. The Matsubara lattice is the character group of the compact thermal circle and is infinite and periodic. The lattice $L(\tilde Q)$ is a rank-two lattice inside the diagonal part and has no thermal reading. Identifying the two would turn a gauge ambiguity into a spectrum, and the parity matching is what blocks it.</p>
@@ -228,7 +226,7 @@ named as a gap and not proposed as a formula.</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the parity-matched lattice and its two cosets.</li>
+<li><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the parity-matched lattice and its two cosets.</li>
 <li><a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the kernel of the exponential and the eigenvalue formula.</li>
 <li><a href="the-exponential-the-logarithm-and-the-generator.html">The Exponential, the Logarithm and the Generator</a>, for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.</li>
 <li><a href="../articles_maths/biquaternion-orders-and-finite-groups-of-units.html">Biquaternion Orders and Finite Groups of Units</a>, for the orders, the finite unit groups and the infinite

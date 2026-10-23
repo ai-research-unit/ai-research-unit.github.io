@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>A <strong>free involution</strong> is an involution with no fixed point; its quotient is a manifold of the same dimension, the orbit map is a two-sheeted covering, and the involution is recovered from the covering. This article treats the free involutions of spheres and of manifolds, and the <strong>lens spaces</strong>, which are the quotients of odd-dimensional spheres by free cyclic actions and are the standard family in which the free quotients are fully computable.</p>
 <p>The free case is where the equivariant theory simplifies — the fixed-set part of the surgery obstruction vanishes — and where it nevertheless shows the subtleties of the topological category: the quotient of a free involution on $S^n$ is a manifold homotopy equivalent to $\mathbb{RP}^n$, and for $n\geq5$ there are quotients that are not $\mathbb{RP}^n$, the "fake" projective spaces. The lens spaces exhibit the same phenomenon arithmetically: the homeomorphism classification (Reidemeister) is strictly finer than the homotopy classification (Whitehead), and the classical example is the pair $L(7;1)$ and $L(7;2)$, homotopy equivalent and not homeomorphic.</p>
 <p><strong>The article assumes</strong> the covering space theory and the fundamental group, the classification of surfaces and of manifolds, the homology and the Euler characteristic, and the fixed-set theory of <em>Involutions on Manifolds and Equivariant Surgery</em>. It uses the elementary theory of the groups $\mathbb{Z}/m$ and the Smith normal form of a matrix over $\mathbb{Z}/m$.</p>
-<p><strong>The boundaries of the article.</strong> The general involution of a manifold and its equivariant surgery are <em>Involutions on Manifolds and Equivariant Surgery</em>; the classification of the involutions of a surface is <em>The Classification of Involutions on Surfaces</em>; the periodic maps of a prime order are <em>Periodic Maps and the Smith Theory</em>; the classification of three-manifolds by the geometrisation is <em>Low-Dimensional Topology</em>, and the lens spaces as three-manifolds are <em>Lens Spaces</em>. The smooth structures and the four-dimensional classifications are Part III and <em>Cobordism and Surgery Theory</em>. No analysis is used.</p>
 <h2 id="free-involutions-and-coverings">Free Involutions and Coverings</h2>
 <p><strong>Definition.</strong> An involution $T$ of a space $X$ is <strong>free</strong> if it has no fixed point. The <strong>quotient</strong> $Q = X/T$ is then a space and the orbit map $\pi : X\to Q$ is a two-sheeted covering.</p>
 <p><strong>Proposition (the elementary invariants of a free involution).</strong> Let $T$ be a free involution of a closed $n$-manifold $X$ with quotient $Q$. Then $Q$ is a closed $n$-manifold, the orbit map is a covering, and

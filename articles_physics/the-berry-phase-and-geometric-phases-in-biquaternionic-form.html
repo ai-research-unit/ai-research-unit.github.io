@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -269,9 +272,9 @@ $$</p>
 $$</p>
 <p><strong>Route 1: the line integral.</strong> The loop is at fixed $\theta_0$, so</p>
 <p>$$
-\gamma_+ = \oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu = \int_0^{2\pi}\mathcal{A}_\phi\big|_{\theta_0}\,d\phi
+\boxed{\;\gamma_+ = \oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu = \int_0^{2\pi}\mathcal{A}_\phi\big|_{\theta_0}\,d\phi
 = -\frac{1-\cos\theta_0}{2}\cdot 2\pi
-= -\frac{\Omega}{2} ,
+= -\frac{\Omega}{2}\;}
 $$</p>
 <p>where</p>
 <p>$$
@@ -330,7 +333,7 @@ $$</p>
 $$</p>
 <p>so the <strong>first Chern number</strong> of the spin-up eigenbundle is the integer</p>
 <p>$$
-C_+ = \frac{1}{2\pi}\int_{S^2}\mathcal{F} = -1 .
+\boxed{\;C_+ = \frac{1}{2\pi}\int_{S^2}\mathcal{F} = -1\;}
 $$</p>
 <p>For the spin-down branch, in the gauge adapted to the north pole, the curvature is $+\tfrac12\sin\theta\,d\theta\wedge d\phi$ and $C_- = +1$. The two curvatures are equal and opposite at every point,</p>
 <p>$$

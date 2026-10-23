@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -138,7 +141,7 @@ $$</p>
 $$</p>
 <p>so $\tilde\Pi_+$ and $\tilde\Pi_-$ are orthogonal idempotents summing to the unit. They are primitive, and they give the Peirce decomposition</p>
 <p>$$
-\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-, \qquad \mathbb{B}\tilde\Pi_+ \cong \mathbb{B}\tilde\Pi_- \cong S \quad (\text{as left } \mathbb{B}\text{-modules}).
+\boxed{\;\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-, \qquad \mathbb{B}\tilde\Pi_+ \cong \mathbb{B}\tilde\Pi_- \cong S \quad (\text{as left } \mathbb{B}\text{-modules})\;}.
 $$</p>
 <p>The off-diagonal matrix units are recovered in biquaternion coordinates: with</p>
 <p>$$
@@ -190,7 +193,7 @@ $$</p>
 <p>the two central summands being the two chiralities. The corresponding central idempotents are $\tfrac{1}{2}(1\pm i_{\mathbb{C}}\omega)$, with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the volume element; under the correspondence $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ the volume element is the image of the biquaternion scalar imaginary, so these are the idempotents of the two chiral halves. This is the algebraic form of the statement that the odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities (Section <em>The Even Subalgebra and the Origin of the Action</em>).</p>
 <p>The <strong>Dirac spinor module</strong> is the direct sum of the two halves,</p>
 <p>$$
-\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4,
+\boxed{\;\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4\;},
 $$</p>
 <p>on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2(\tilde U_{\mathrm L}^{*})$. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.</p>
 <h2 id="the-unit-norm-biquaternions-and-the-double-cover">The Unit-Norm Biquaternions and the Double Cover</h2>
@@ -250,8 +253,8 @@ $$</p>
 <h3 id="the-action">The Action</h3>
 <p>The Lorentz group acts on the spinor module by <strong>left multiplication</strong>:</p>
 <p>$$
-\psi \;\longmapsto\; \tilde U_{\mathrm L}\,\psi \;=\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
-\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S.
+\boxed{\;\psi \;\longmapsto\; \tilde U_{\mathrm L}\,\psi \;=\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
+\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S\;}.
 $$</p>
 <p>Equivalently, in the ideal model, $\psi\in\mathbb{B}\tilde\Pi_+$ is sent to $\tilde U_{\mathrm L}\psi\in\mathbb{B}\tilde\Pi_+$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_+)\subseteq\mathbb{B}\tilde\Pi_+$. The action is $\mathbb{C}$-linear, and it is a group action:</p>
 <p>$$

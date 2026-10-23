@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The mapping class group of a surface is the group of the isotopy classes of its orientation-preserving self-homeomorphisms. It records the symmetries of the surface up to the deformations, it acts on the Teichmüller space by biholomorphisms with the moduli space as quotient, it is the orbifold fundamental group of the moduli space of the curves, and it is the receptacle of the monodromy of every family of curves. Its classification theory — the theorem of Nielsen and Thurston that every element is periodic, reducible or pseudo-Anosov — is the algebraic counterpart of the geometry of the surface, and the group is one of the standard examples in geometric group theory: it is finitely presented, its large-scale geometry is governed by its action on the curve complex, and its stable cohomology is the polynomial algebra on the tautological classes by the theorem of Madsen and Weiss.</p>
 <p>The article develops the group in the order in which its structure unfolds: the definition, the Dehn twists and the generation and presentation theorems; the classification of the elements, with the periodic, reducible and pseudo-Anosov cases and the Nielsen realisation; the curve complex and the hyperbolicity and acylindricity of the action; the Torelli group and the arithmetic of the homology action; the finiteness and stability properties, with the cohomological dimension, the Torelli and the stable cohomology; and the applications to the moduli spaces, to the fibred three-manifolds and to the outer automorphisms of the free groups. The Teichmüller theory of the companion article is used throughout: the group is studied through its action on the Teichmüller space.</p>
-<p><strong>The boundaries of the article.</strong> The Teichmüller space, the Teichmüller and Weil–Petersson metrics, the moduli space, the Bers embedding and the compactifications are not developed here; the present article takes the space and its properties as given. The hyperbolic structures, the geodesic laminations, the measured foliations, the convex cores and the Nielsen convex bodies are those of <em>Hyperbolic Geometry</em>. The fibred three-manifolds arising as the mapping tori, the hyperbolic Dehn surgery and the virtual fibring theorem are those; the knots and the braids as topological objects are those; the fixed points of the finite subgroups and the automorphisms of the surfaces are those in the spherical case and of the hyperbolic geometry in the general case. The surface groups, the free groups and the outer automorphism groups are those of <em>Topology on Groups</em> and of the group theory of Part I; the homology and the cohomology of the groups, the algebraic $K$-theory and the group cohomology are those of <em>Algebraic Topology</em> and of the homological algebra of Part I, written by other agents. The measure theory of the measured foliations and the analytic theory of the Thurston boundary belong to Part III, and no physics is invoked.</p>
 <h2 id="definitions-dehn-twists-and-presentations">Definitions, Dehn Twists and Presentations</h2>
 <p><strong>Definition.</strong> Let $S$ be a compact oriented surface. The <strong>mapping class group</strong> $\mathrm{Mod}(S)$ is the group of the isotopy classes of the orientation-preserving homeomorphisms $S\to S$ that fix the boundary pointwise:</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -131,7 +134,7 @@ $$</p>
 <h3 id="the-equation">The equation</h3>
 <p>Hestenes' form of the Dirac equation for an electron in an electromagnetic four-potential $A = A_\mu\gamma^\mu$ is</p>
 <p>$$
-\nabla\psi\, I\sigma_3 - eA\psi = m\psi\gamma_0 ,
+\boxed{\;\nabla\psi\, I\sigma_3 - eA\psi = m\psi\gamma_0\;},
 $$</p>
 <p>with $\nabla = \gamma^\mu\partial_\mu$, a fixed spin plane $I\sigma_3$, and the mass term multiplying on the right by $\gamma_0$. Each term is odd-graded, as it must be, since the vector derivative, the potential and the $\gamma_0$ are all vectors, and $\psi$ is even. The equation is manifestly covariant under Lorentz transformations, which act by $\psi\mapsto R\psi$ with $R$ a rotor ($R\tilde Q_1 = 1$), and it is written in the algebra rather than in a matrix representation.</p>
 <h3 id="reduction-to-the-matrix-equation">Reduction to the matrix equation</h3>
@@ -144,15 +147,15 @@ $$</p>
 <h3 id="the-decomposition-of-the-spinor">The decomposition of the spinor</h3>
 <p>Hestenes decomposes a general Dirac spinor as</p>
 <p>$$
-\psi = R\left(\rho \exp(i\beta)\right)^{1/2},
+\boxed{\;\psi = R\left(\rho \exp(i\beta)\right)^{1/2}\;},
 $$</p>
 <p>where $R$ is a unimodular even multivector — a <strong>rotor</strong>, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar <strong>density</strong>, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The <strong>physical interpretation</strong> is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.</p>
 <h3 id="the-current-and-the-bilinears">The current and the bilinears</h3>
 <p>The Dirac current is the geometric vector</p>
 <p>$$
-J^\mu = \bar\psi\,\gamma^\mu\psi ,
+\boxed{\;J^\mu = \bar\psi\,\gamma^\mu\psi ,
 \qquad
-\bar\psi = \psi^\dagger\gamma_0 ,
+\bar\psi = \psi^\dagger\gamma_0\;},
 $$</p>
 <p>equivalently $J = \psi\gamma_0\psi^{\mathrm{rev}}$, with $\psi^{\mathrm{rev}}$ the reverse of the spinor, in the rotor normalisation. It is a future-pointing timelike vector built from the spinor, and its time component is the probability density. The remaining bilinear covariants — the axial current, the magnetisation and the scalar and pseudoscalar densities — are similarly geometric multivectors of definite grade. The framework's statement that the conserved current is the material-sector object $\tilde J\in\mathbb M_-$ is the algebra-level counterpart: the current is a specific real vector built from the field and a fixed Clifford-odd element.</p>
 <h2 id="symmetries-and-the-zitterbewegung-reading">Symmetries and the Zitterbewegung Reading</h2>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>A reflection of a quadratic space is a motion with a hyperplane of fixed points, and on a Clifford algebra it is realised by a two-sided operator: for a vector $u$ with $\mathfrak{Q}(u)\ne0$ the signed sandwich by $(u,u^{-1})$ is exactly the reflection $\rho_u$ in the hyperplane $u^{\perp}$. This raises the question of a correspondence — which signed two-sided operators act on the quadratic space by an involution, and are they exactly the reflections? — and the answer separates the non-degenerate case, where the correspondence is exact and Cartan–Dieudonné explains it, from the degenerate case, where it fails: isotropic vectors generate no reflection, the transvections of the radical are isometries that no sandwich sees, and the reflection length no longer describes the orthogonal group.</p>
 <p>The article reads the reflections as the involutive members of the signed family. The reflection formula and the geometry of a single reflection are <em>The Signed Sandwich on a Clifford Algebra</em>; here the emphasis is the correspondence and its failure, which is the reason the non-degeneracy hypothesis of the corpus cannot be dropped silently. The correspondence is a bijection between the nonsingular vectors up to scalar and the reflections, and the elements of the orthogonal group acting by an involution with a fixed hyperplane of codimension one are exactly the reflections; the degenerate case breaks the bijection in two ways, by isotropic vectors that are not invertible and by the radical directions that the conjugation cannot move.</p>
-<p><strong>The boundaries.</strong> The reflections, the versor action and Cartan–Dieudonné are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; the signed sandwich, its composition and the reflection formula are <em>The Signed Sandwich on a Clifford Algebra</em> and <em>Two-Sided Operators with the Signed Product</em>. The radical, the reduced form and the structure of a degenerate Clifford algebra are <em>Degenerate Clifford Algebras and the Radical</em>; the transvections of a quadratic space are <em>The Orthogonal Group of a Quadratic Space</em>. The base is a field $F$ of characteristic not $2$, $q$ a quadratic form on a finite-dimensional space $V$ with polar form $B$ and $\mathfrak{Q}(u)=B(u,u)$; the form is non-degenerate unless the contrary is said.</p>
 <h2 id="the-correspondence">The Correspondence</h2>
 <h3 id="reflections-and-involutions">Reflections and Involutions</h3>
 <p><strong>Definition.</strong> A <strong>reflection</strong> of $(V,\mathfrak{Q})$ is the orthogonal transformation $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u$ attached to a vector $u$ with $\mathfrak{Q}(u)\ne0$; it fixes the hyperplane $u^{\perp}$ pointwise and negates $u$.</p>

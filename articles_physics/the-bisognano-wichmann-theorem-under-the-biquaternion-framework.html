@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,14 +88,13 @@ $$</p>
 </ol>
 <p>The framework can verify two things exactly: the <strong>boost generator</strong> is the Hermitian element $G_1=i\vec e_x\in\mathbb{M}_+$ already used in the Rindler computation, and the rapidity carried by the modular flow is $2\pi$ times the modular parameter. It can also verify the conjugation identities $J^2=1$, $J\,i\,J=-i$, $J\Delta J=\Delta^{-1}$. It <strong>cannot</strong> make the geometric boost coincide with the inner modular flow on the material sector: the modular flow is unitary, while the finite-dimensional boost rotor is Hermitian, and its action on $\mathbb{M}_-$ is two-sided rather than an inner automorphism. That gap is stated where it occurs and is not smoothed over.</p>
 <p>The article proceeds as follows. The theorem is stated first, with its two hypotheses. Then its relation to the two parent articles is made explicit. Then the wedge is isolated, and the reason the theorem cannot be generalised is given. Then the boost generator is identified on the wedge. Then the modular flow is shown to be the boost with rapidity $2\pi$. Then the modular conjugation is shown to be the PCT/reflection operator, with the conjugation identities verified. Then the biquaternion boost rotor is compared with the modular generator, and the identification — and its limit — is recorded. It closes with the established/interpretation/gap split, the summary, and the notation.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$, with biquaternion norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=-c^2{t'}^2+x^2+y^2+z^2$. Rindler coordinates on the wedge are $x=\rho\cosh\eta$, $ct'=\rho\sinh\eta$. The boost Killing vector is $\xi=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta$; the boost rotor is the unit-norm biquaternion $\tilde U_{\mathrm b}(\psi)=\exp(\tfrac{\psi}{2}G_1)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec e_x$ with $G_1=i\vec e_x$, and it acts by rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$, is inherited unchanged. The modular data are those of the modular-theory companion: $S=J\Delta^{1/2}$, $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$, $K=-\log\rho$ in finite dimension. Throughout, $c$ is the speed of light, and $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants.</p>
 <h2 id="the-theorem">The Theorem</h2>
 <p><strong>Statement.</strong> Let $\mathcal{O}\mapsto M(\mathcal{O})$ be the net of local algebras of a Wightman quantum field theory on Minkowski space, and let $\Omega$ be the vacuum vector, cyclic and separating for every wedge algebra. Let $W_R$ be the right wedge and $W_L$ its mirror. Then:</p>
 <ol>
 <li>
 <p><strong>The modular operator is the boost.</strong> The modular operator of the pair $(M(W_R),\Omega)$ is
 $$
-\Delta = \exp(-2\pi K_{\mathrm{boost}}),
+\boxed{\;\Delta = \exp(-2\pi K_{\mathrm{boost}})\;},
 $$
 where $K_{\mathrm{boost}}$ is the generator of the one-parameter group of boosts that preserve $W_R$, normalized so that the boost Killing vector is $\xi=c\partial/\partial\eta$. Equivalently, the modular flow is the boost by rapidity $2\pi s$ (the orientation is fixed below; in the rotor convention of this article the modular flow is $\tilde U_{\mathrm b}(-2\pi s)$, which is future-directed on $W_R$):
 $$
@@ -183,7 +185,7 @@ which <strong>vanishes on the boost plane</strong> $q_y=q_z=0$ and acts as a rot
 <p>The second conclusion is that the modular flow is the boost, with the right rapidity. This is the statement that turns the abstract flow of the modular-theory article into the geometric flow of the Unruh computation, and it is checked in two steps: the rapidity, and the orientation.</p>
 <p><strong>The rapidity.</strong> The theorem states $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, so the modular parameter $s$ in $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$ is not the rapidity; it is the rapidity divided by $2\pi$. Equivalently, the modular flow is the boost by rapidity $2\pi s$. The verification is direct. Since the rotor of rapidity $\psi$ shifts Rindler time by $\eta\mapsto\eta-\psi$, the modular flow, which must be future-directed on $W_R$, is represented by the <strong>inverse</strong> rotor,
 $$
-\sigma_s(\tilde{Q})=\tilde U_{\mathrm b}(-2\pi s)\,\tilde{Q}\,\tilde U_{\mathrm b}(-2\pi s),
+\boxed{\;\sigma_s(\tilde{Q})=\tilde U_{\mathrm b}(-2\pi s)\,\tilde{Q}\,\tilde U_{\mathrm b}(-2\pi s)\;},
 $$
 and $\tilde U_{\mathrm b}(-2\pi s)$ shifts the Rindler time by
 $$
@@ -214,7 +216,7 @@ J(\tilde Q_1)=\tilde{Ϛ}^{1/2}\tilde Q_1^{*}\tilde{Ϛ}^{-1/2},
 $$
 and the four identities
 $$
-J^2=\mathrm{id},\qquad J(i\tilde Q_1)=-i\,J(\tilde Q_1),\qquad J(\tilde{Ϛ})=\tilde{Ϛ},\qquad J\Delta J=\Delta^{-1}
+\boxed{\;J^2=\mathrm{id},\qquad J(i\tilde Q_1)=-i\,J(\tilde Q_1),\qquad J(\tilde{Ϛ})=\tilde{Ϛ},\qquad J\Delta J=\Delta^{-1}\;}
 $$
 were recomputed in rational arithmetic for two faithful states whose Bloch vectors were chosen after the formulas, not before them:
 $$

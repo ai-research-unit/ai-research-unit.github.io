@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -80,7 +83,6 @@
 </ul>
 <p>The cone is also the characteristic cone of the algebra's wave operator. The standard finite-speed-of-propagation theorem for hyperbolic operators then makes the barrier analytic as well as geometric: a signal generated in a compact region cannot reach a point outside the region's causal future, however the signal is shaped. These results are collected as eight numbered items in the Summary below.</p>
 <p>The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article <em>The Informational Sector: States, Observables and Probability</em>; the two interpretations share the algebra and nothing else.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_t + \vec Q_1$, $\alpha \in \mathbb{R}$, $\vec Q_1 = a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ real. The biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$, abbreviated $N(\tilde{Q}_1)$ where its sign is the point, and the material coordinate is $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The $ict'$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q}_1 = Q_{1t}e_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients, and on generic configurations rather than on a single null direction.</p>
 <h2 id="events-displacements-and-the-causal-order">Events, Displacements and the Causal Order</h2>
 <h3 id="the-material-coordinate-and-the-interval">The Material Coordinate and the Interval</h3>
 <p>An event is an element of the material sector,</p>
@@ -95,7 +97,7 @@ $$</p>
 $$</p>
 <p>and its biquaternion norm is the invariant interval</p>
 <p>$$
-\langle\tilde{Q}_{qp}\rangle_{\natural} = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\Delta t')^2 + |\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2 = -c^2(\Delta t')^2 + |\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2 .
+\boxed{\;\langle\tilde{Q}_{qp}\rangle_{\natural} = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\Delta t')^2 + |\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2 = -c^2(\Delta t')^2 + |\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2\;}
 $$</p>
 <p>The minus sign in the time–time term is the algebraic consequence of $i^2 = -1$; it is not an independent postulate of the metric. The time orientation of the displacement is carried by the scalar projection,</p>
 <p>$$
@@ -150,9 +152,9 @@ $$</p>
 $$</p>
 <p>as developed in the companion article <em>The Lorentz Transformation as a Biquaternionic Rotation</em>. The biquaternion norm is multiplicative, $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}^*$. Hence</p>
 <p>$$
-\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural} \, \langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}
+\boxed{\;\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural} \, \langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}
 = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}\rangle_{\natural}^*
-= \langle\tilde{R}\rangle_{\natural},
+= \langle\tilde{R}\rangle_{\natural}\;}
 $$</p>
 <p>because $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$ as a coefficient, that is $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ in $\mathbb{C}$. The interval is invariant, and with it the sign of the interval. A rotor cannot map a timelike displacement to a spacelike one, or a null displacement to a non-null one; the three causal classes are invariant under every Lorentz transformation. This is the algebraic form of the statement that the light cone is preserved, and it is the first sense in which the cone is a barrier: the group of allowed changes of frame cannot move a displacement across it.</p>
 <h3 id="the-three-regions-are-orbits">The Three Regions Are Orbits</h3>
@@ -192,10 +194,10 @@ $$</p>
 $$</p>
 <p>as in the companion article <em>Relativistic Mechanics in Biquaternionic Form</em>. For two observers with four-velocities $\tilde{V}_1, \tilde{V}_2$, the contraction</p>
 <p>$$
--\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_1\tilde{V}^{\natural}_2\right)
+\boxed{\;-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_1\tilde{V}^{\natural}_2\right)
 = \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right)
 = \gamma_1\gamma_2\left(1 - \beta_1\beta_2\cos\theta\right)
-\equiv \gamma_{\mathrm{rel}}
+\equiv \gamma_{\mathrm{rel}}\;}
 $$</p>
 <p>is the Lorentz factor of their relative motion, where $\beta_i = |\vec v_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{V}^{\natural}_2 = \gamma_2(ic\,e_t - \vec v_2)$ and $\mathrm{Sc}((ic\,e_t+\vec v_1)\cdot(ic\,e_t-\vec v_2)) = -c^2 + \vec v_1\cdot\vec v_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.</p>
 <h3 id="the-inequality-that-makes-the-barrier">The Inequality That Makes the Barrier</h3>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -154,8 +157,8 @@ $$</p>
 <h2 id="the-halving-map">The Halving Map</h2>
 <p>The halving map is the bridge between the two objects:</p>
 <p>$$
-\tilde\Xi\longmapsto\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi),\qquad
-\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi).
+\boxed{\;\tilde\Xi\longmapsto\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi),\qquad
+\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)\;}.
 $$</p>
 <p>The two computations are two lines: if $\tilde\Xi^2=e_t$ then $\tfrac14(e_t+\tilde\Xi)^2=\tfrac12(e_t+\tilde\Xi)$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=e_t$. The inverse is $\tilde\Xi=2\tilde\Pi-e_t$.</p>
 <p>The pair has four properties, and each is a physical statement in the reading that follows.</p>
@@ -179,7 +182,7 @@ $$</p>
 <h2 id="hermitian-idempotents-as-states">Hermitian Idempotents as States</h2>
 <p>A Hermitian idempotent is an idempotent with $\tilde\Pi^{*}=\tilde\Pi$. The halving map of the Hermitian roots gives the family</p>
 <p>$$
-\tilde\Pi_\pm(i\tilde\xi)=\tfrac12(e_t\pm i\tilde\xi),\qquad \tilde\xi\in S^2,
+\boxed{\;\tilde\Pi_\pm(i\tilde\xi)=\tfrac12(e_t\pm i\tilde\xi),\qquad \tilde\xi\in S^2\;},
 $$</p>
 <p>which is the <strong>Bloch sphere</strong> of the pure states. The trace is one, $\operatorname{Tr}\tilde\Pi=2\operatorname{Sc}\tilde\Pi=1$, and the norm vanishes, so the state is on the boundary of the positive cone. The trivial cases $e_t$ and $0$ are the degenerate states of the trivial observables.</p>
 <p>The same element carries the other state readings. The von Neumann entropy is a monotone function of the deviation $\operatorname{Sc}(\tilde{Ϛ}^2-\tilde{Ϛ})$, which vanishes exactly on the idempotents, and the Fisher information with respect to the Bloch radius diverges on them. The <strong>pure state</strong>, the <strong>zero-entropy state</strong>, the <strong>zero-divisor state</strong> and the <strong>perfectly resolvable state</strong> are four names for one element.</p>
@@ -188,7 +191,7 @@ $$</p>
 </blockquote>
 <p>The spectral resolution makes the identification exact. For $\tilde\Xi=i\tilde\xi$,</p>
 <p>$$
-\tilde\Xi\tilde\Pi_+=\tilde\Pi_+,\qquad \tilde\Xi\tilde\Pi_-=-\tilde\Pi_-,\qquad \tilde\Xi=\tilde\Pi_+-\tilde\Pi_-.
+\boxed{\;\tilde\Xi\tilde\Pi_+=\tilde\Pi_+,\qquad \tilde\Xi\tilde\Pi_-=-\tilde\Pi_-,\qquad \tilde\Xi=\tilde\Pi_+-\tilde\Pi_-\;}.
 $$</p>
 <p>The observable, its two eigenvalues and its two states are one object and its two projections. The physical reading is that a <strong>two-outcome measurement</strong> is a root of $+1$: the root is the observable, the pair is the two outcomes, and the eigenvalues are the two signs.</p>
 <p>The Born pairing completes the sentence. The probability of the outcome $+$ in the state $\tilde\Pi$ is the normalised Hermitian form $\langle\tilde\Pi,\tilde\Pi_+\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=\operatorname{Sc}(\tilde\Pi\tilde\Pi_+^{*})/\operatorname{Sc}(\tilde\Pi)$; in the $2\times2$ image, with $\operatorname{Tr}(\tilde\Pi)=1$, it reads $\operatorname{Tr}(\tilde\Pi\tilde\Pi_+^{*})=\operatorname{Tr}(\tilde\Pi\tilde\Pi_+)=2\operatorname{Sc}(\tilde\Pi\tilde\Pi_+^{*})$, the star being inert and the unstarred trace real and non-negative. The two probabilities sum to one because the pair is complete. The formula is the one of <em>The Informational Sector: States, Observables and Probability</em> and <em>The Born Rule from the Hermitian Form — Derivation and Comparison</em>; this article only locates it in the root–idempotent pair. The probability is not derived here, and no frequency is identified with it.</p>

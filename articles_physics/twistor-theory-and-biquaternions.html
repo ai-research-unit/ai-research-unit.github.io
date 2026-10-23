@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -83,7 +86,7 @@ $$</p>
 <p>and the group preserving it is $\mathrm{U}(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts <strong>linearly</strong> on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.</p>
 <p>The link to spacetime is the <strong>incidence relation</strong>. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{A\bar A}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by</p>
 <p>$$
-\omega^A = i\,x^{A\bar A}\pi_{\bar A}.
+\boxed{\;\omega^A = i\,x^{A\bar A}\pi_{\bar A}\;}.
 $$</p>
 <p>For fixed $x$ this is two linear conditions on four unknowns, so the solution space is two-dimensional: a line. Two points $x, y$ are null-separated exactly when their lines meet, and this happens exactly when $\det(x-y) = 0$, the determinant of the $2\times2$ matrix being the Minkowski interval. Thus</p>
 <p>$$
@@ -95,7 +98,7 @@ $$</p>
 <p>The read-list article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> develops the following objects: the algebra $\mathbb{B}\cong M_2(\mathbb{C})$; its unique simple module $S=\mathbb{C}^2$, the <strong>spinor module</strong>; the left- and right-handed Weyl modules $(\tfrac12,0)$ and $(0,\tfrac12)$; the four-component Dirac module $\Delta = S\oplus\bar{S}$; the one-sided Lorentz action $\psi\mapsto \tilde{U}\psi$; the invariant symplectic form $\varepsilon$; and the two-to-one covering $SL(2,\mathbb{C})\to SO^+(1,3)$ whose kernel $\{\pm e_t\}$ acts as $\pm\mathrm{id}$ on spinors and trivially on four-vectors.</p>
 <p>Every one of these objects is a twistor-theory object, and this is the honest common ground. In particular, the twistor module is</p>
 <p>$$
-T = S\oplus\bar{S} = \left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right) = \Delta,
+\boxed{\;T = S\oplus\bar{S} = \left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right) = \Delta\;},
 $$</p>
 <p>which is <strong>exactly the Dirac spinor module of that article</strong>. A twistor is a Dirac spinor on which the conformal group, not merely the Lorentz group, acts; the extra structure distinguishing a twistor from a Dirac spinor is the Hermitian form $h$ of signature $(2,2)$, which encodes the conformal metric.</p>
 <p>The two programmes therefore start from the same representation-theoretic fact, and both inherit from it the same kinematics of the double cover: the Lorentz group acts projectively on null directions, the spinor is two-valued, and a rotation by $2\pi$ is $-e_t$ on a spinor but $e_t$ on a four-vector. Whatever the differences in aim, the spinor module is not a point of contrast but a point of contact.</p>
@@ -130,7 +133,7 @@ $$</p>
 <p>The first line is the statement that the algebra is a module over itself; the second is the vector representation carried by the material sector $\mathbb{M}_-$; the third is the twistor (Dirac) module. All three are four-complex-dimensional, and they are pairwise non-isomorphic: $S\otimes\bar{S}$ is irreducible of dimension four, while the other two are reducible and their simple summands have different multiplicities or different chiralities. <strong>Dimension alone does not identify twistor space with the algebra, and no $SL(2,\mathbb{C})$-equivariant isomorphism does.</strong></p>
 <p>The concrete form of the third line is worth recording, because it is the precise sense in which the twistor module is the Dirac module written with the conformal action. If $\tilde{U}\in SL(2,\mathbb{C})$ has image $A=\mathsf{M}_2(\tilde{U})$, then on $Z=(\omega,\pi)$ the Lorentz action is</p>
 <p>$$
-\omega \longmapsto A\,\omega, \qquad \pi \longmapsto (A^\dagger)^{-1}\,\pi.
+\boxed{\;\omega \longmapsto A\,\omega, \qquad \pi \longmapsto (A^\dagger)^{-1}\,\pi\;}.
 $$</p>
 <p>The second factor is the conjugate defining representation in disguise: with $\epsilon$ the invariant form of the spinor-module article, $(A^\dagger)^{-1} = \epsilon\,\bar{A}\,\epsilon^{-1}$. Under $SU(2,2)$ this block-diagonal action is completed by the off-diagonal generators — translations and special conformal transformations — that mix $\omega$ and $\pi$ and thereby move the point $x$; the Lorentz group is the part that preserves the metric.</p>
 <p>A related caution concerns the symbol $i$. In the framework, $i$ is the <strong>scalar imaginary</strong> of $\mathbb{B}$, and its appearance in the time coordinate $ict'$ is what makes the signature Lorentzian. In the incidence relation $\omega = ix\pi$, $i$ is the complex unit of twistor space, and its role is to make the line $L_x$ a real line when $x$ is Hermitian. The two complex structures are not the same structure, and the projective coincidence $\mathbb{P}(\mathbb{B})\cong\mathbb{PT}$ does not equate them.</p>
@@ -143,7 +146,7 @@ Z=(\omega^A,\,\pi_{\bar A}),
 $$
 where $\pi_{\bar A}$ is a <strong>co-spinor</strong>. With $\varepsilon_{\bar A\bar B}$ the invariant form, the dual spinor space is $S^{*}$, so that
 $$
-T\cong S\oplus S^{*},
+\boxed{\;T\cong S\oplus S^{*}\;},
 $$
 the same splitting as before, because $S^{*}\cong\bar S$.
 The incidence relation $\omega^A=ix^{A\bar A}\pi_{\bar A}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{A\bar A}=\bar\pi_A\pi_{\bar A}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a <strong>classical phase-space pair</strong>: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.</p>

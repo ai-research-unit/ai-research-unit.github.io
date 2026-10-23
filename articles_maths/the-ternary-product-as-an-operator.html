@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -72,7 +75,6 @@
 \Theta_{x,y}(z)=\{x,y,z\}=xy^{*}z
 $$</p>
 <p>is a linear operator on $A$. The article computes the parities of the pair-dependence, shows that the operator is a familiar one-sided operator in each of the three slots of the ternary product, and identifies the family that the pairs generate. Over a unital sesqualgebra the third-slot operators are the plain left multiplications, so that slot carries no new operator and what the ternary product adds is the reading of the same operation in its other two slots. The companion operator of the Lie layer, the inner derivation $z\mapsto[[x,y],z]$, is treated in the same breath, because it is the other ternary operation of the sesquilinear kind, and the contrast is the point of the article: the family of the Jordan layer consists of one-sided operators, the family of the Lie layer of derivations, and the two families are the operator forms of the two ternary products of the sesquilinear kind, the Jordan triple of <em>The Sesquilinear Associator and the Ternary Product</em> and the Lie triple of <em>Lie Algebras of Sesqualgebras</em>.</p>
-<p><strong>The boundaries.</strong> The ternary product itself, its parities, its Hermitian symmetry and its Jordan triple identity are <em>The Sesquilinear Associator and the Ternary Product</em> and <em>Algebraic J*-Algebras</em>; the Lie triple system of the commutator is <em>Lie Algebras of Sesqualgebras</em>, and its identities are used here and not proved. The one-sided operators $L_a$ and $R_a$ and the plain two-sided operator $T_{p,q}$ are <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>, the sandwich $S_{a,b}$ is <em>The Sesquilinear Sandwich Operator</em>, and the adjoint of the operator of this article is <em>The Adjoint of the Ternary Product</em>, the later entry of the group. This article stays inside Part I: no distance, no limit, no completeness.</p>
 <p>Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of <em>Sesqualgebras</em>; the unit satisfies $1^{*}=1$. The derived operation is $x\star y=xy^{*}$ and its ternary companion is $\{x,y,z\}=(x\star y)\star z^{*}=xy^{*}z$. The one-sided operators are $L_a(x)=a\star x=ax^{*}$ and $R_b(x)=x\star b=xb^{*}$, the plain two-sided operator is $T_{p,q}(x)=pxq$, so that $T_{a,1}$ is the plain left multiplication and $T_{1,b}$ the plain right multiplication, and the sandwich is $S_{a,b}(x)=ax^{*}b$. A derived product written $x\star y$ is read on the pair $A\times A^{\varsigma}$ of <em>The Sesquilinear Product</em>, whose second entry is the conjugate module.</p>
 <h2 id="the-operator-attached-to-a-pair">The Operator Attached to a Pair</h2>
 <h3 id="definition-and-parities">Definition and Parities</h3>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>An involution of a manifold acts on its homology, and therefore acts on the <strong>operators</strong> on the homology: on the linear endomorphisms of $H_*(M;k)$ by conjugation, and on each natural operator of the theory — the intersection form, the Poincaré duality isomorphism, the cup product, the surgery and handle operators, the Dehn twist. This article is the operator-layer synthesis: it determines which operators are equivariant, it computes the induced action on the algebra of operators, and it reads the Lefschetz number as the supertrace of the induced involution.</p>
 <p>The structure is the one of the two earlier articles on the homology with one layer added. The endomorphism algebra decomposes into the invariant operators, which are block diagonal with respect to the fixed and the anti-fixed parts, and the anti-invariant operators, which are off diagonal; the natural operators of topology are equivariant up to the degree sign of <em>The Involution on the Homology</em>, and the supertrace of the induced involution is the Lefschetz number, which the Lefschetz fixed point theorem relates to the fixed set.</p>
 <p><strong>The article assumes</strong> everything of the group: <em>The Involution as an Operator on the Homology</em> (the module $H_*$ over $k[\mathbb{Z}/2]$ and the transfer), <em>The Involution on the Homology</em> (the interaction with the intersection form), <em>The Surgery Operator</em>, <em>The Handle Operator</em>, <em>The Dehn Twist as an Operator</em> and <em>The Mapping Class Group Action</em> (the operators whose equivariance is decided here), and the Steenrod operations of <em>The Steenrod Squares and the Cohomology Operations</em>.</p>
-<p><strong>The boundaries of the article.</strong> The homology of an involution and the intersection form are the two articles of the group's first-homology family; the classification of the Hermitian forms and the surgery obstruction groups are <em>Hermitian Pairings and the Signature</em>, the next article of this group; the equivariant signature is <em>Hermitian Pairings and the Equivariant Signature</em>. The index theory of an equivariant elliptic operator is Part IV (<em>Index Theory and the Atiyah–Singer Theorem</em>). No analysis and no smooth structure is used beyond the statement of the Lefschetz fixed point theorem.</p>
 <h2 id="the-conjugation-action-on-the-operators">The Conjugation Action on the Operators</h2>
 <p><strong>Definition.</strong> Let $T$ be an involution of a finite complex $M$ and let $H = H_*(M;k)$ be its homology over a ring $k$ in which $2$ is invertible. The involution acts on the endomorphism algebra by <strong>conjugation</strong>,
 $$

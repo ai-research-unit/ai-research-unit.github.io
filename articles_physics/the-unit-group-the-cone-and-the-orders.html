@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the <strong>group of units</strong> $\mathbb{B}^{\times}$; their complement is the <strong>zero-divisor cone</strong> $\mathcal{C}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.</p>
 <p>The article reads three objects and their topology: the group, its boundary and the orders. Its thesis is that invertibility is the algebraic form of reversibility, that the cone is the wall at which a multiplication stops being reversible, and that the orders are the discrete skeletons on which the continuous group is replaced by a finite one. It proves nothing; the theorems are in the mathematics articles of the source table.</p>
-<p><strong>Placement and boundaries.</strong> The article is the Topology block of the category. It reads the algebraic topology of the group and of the cone, not the differential geometry of the algebra: the unit group and its determinant sequence are <em>The Biquaternion Unit Group as a Topological Group</em>, the compact retraction and the homotopy groups are <em>The Unitary Group of the Biquaternion Algebra</em>, the link and the contractibility of the cone are <em>The Topology of the Zero-Divisor Cone</em>, and the lattices and their finite unit groups are <em>Biquaternion Orders and Finite Groups of Units</em>. The physical companion is <em>Biquaternion Orders and Finite Groups of Units</em>. The dynamics is not read here.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -105,7 +107,7 @@
 </tr>
 <tr>
 <td>The parity-matched lattice and the kernel of the exponential</td>
-<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, <a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
+<td><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, <a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -121,11 +123,11 @@ $$
 $$
 The algebra is the disjoint union
 $$
-\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{C},
+\boxed{\;\mathbb{B}=\mathbb{B}^{\times}\uplus\mathcal{C},
 \qquad
 \mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\},
 \qquad
-\mathcal{C}=\{\tilde Q:N(\tilde Q)=0\},
+\mathcal{C}=\{\tilde Q:N(\tilde Q)=0\}\;},
 $$
 and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.</p>
 <div class="table-scroll"><table>
@@ -262,9 +264,9 @@ $$
 $$
 where $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ and $S^{3}=Sp(1)$ is the unit quaternion sphere. Consequently
 $$
-\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},
+\boxed{\;\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},
 \qquad
-\mathbb{B}^{\times}_{1}\simeq S^{3},
+\mathbb{B}^{\times}_{1}\simeq S^{3}\;},
 $$
 and the homotopy groups are
 $$
@@ -288,7 +290,7 @@ the proper orthochronous Lorentz group. A norm-one unit is therefore a <strong>s
 <h3 id="the-two-loops">The Two Loops</h3>
 <p><strong>The fundamental group is the winding around the wall.</strong> The complement of a complex cone of codimension two in $\mathbb{C}^{4}$ has fundamental group $\mathbb{Z}$, and the generator is a loop that links the cone. In the matrix picture the generator is a loop along which the determinant winds once. The central phase circle $Ae_t$ with $|A|=1$ has determinant $A^{2}$ and is therefore twice the generator, not the generator itself. Interpreted physically, the one topological charge of the reversible region is the winding around the wall of non-invertibility; the overall phase is a double winding of it.</p>
 <p><strong>The universal cover unwraps the phase.</strong> The universal cover, which is homotopy equivalent to $\mathbb{R}\times S^{3}$, replaces the loop direction by a real line. The phase circle is the image of that line under the universal covering. A clock read on the cover has no intrinsic period, while a clock read on the group is periodic. The third homotopy group, $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, is generated by the unit quaternions and is the winding of the compact factor.</p>
-<p><strong>The kernel of the logarithm is a different lattice.</strong> The periodicity of the group is also the ambiguity of its logarithm. For a unit with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ inside the diagonal part, with $\vec U=\vec Q/B$ the pure unit element (<em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Lattice of Eigenvalue Data</em>), and that lattice is not the fundamental group. The group $\pi_1$ is generated by a loop that links the cone, while the kernel is the fibre of the exponential over the identity. A loop is a map out of $S^1$. A kernel element is a period of the exponential. The two share the compact phase and answer different questions.</p>
+<p><strong>The kernel of the logarithm is a different lattice.</strong> The periodicity of the group is also the ambiguity of its logarithm. For a unit with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ inside the diagonal part, with $\vec U=\vec Q/B$ the pure unit element (<em>Eigenbasis of a Biquaternion</em>, §<em>The Lattice of Eigenvalue Data</em>), and that lattice is not the fundamental group. The group $\pi_1$ is generated by a loop that links the cone, while the kernel is the fibre of the exponential over the identity. A loop is a map out of $S^1$. A kernel element is a period of the exponential. The two share the compact phase and answer different questions.</p>
 <p><strong>The boundary of the interpretation.</strong> The winding is a property of the group, not a quantisation of a physical charge. The algebra does not say that the phase is compact in nature, nor that the winding is observed. It supplies the homotopy class, and a gauge theory or a field configuration would have to supply the rest.</p>
 <h2 id="the-cone-and-its-link">The Cone and Its Link</h2>
 <h3 id="the-contractible-wall">The Contractible Wall</h3>
@@ -300,7 +302,7 @@ $$
 $$
 Its link is
 $$
-L=\mathcal{N}\cap S^{7}_{E},
+\boxed{\;L=\mathcal{N}\cap S^{7}_{E}\;},
 $$
 the intersection with the Euclidean unit sphere. The link is a closed connected real five-manifold, an $S^{1}$-bundle over the projectivised cone $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$, with
 $$
@@ -333,9 +335,9 @@ The Hurwitz order contains the Lipschitz order with index two and is maximal; th
 <h3 id="the-finite-unit-groups">The Finite Unit Groups</h3>
 <p>The unit groups are
 $$
-\mathcal{L}^{\times}\cong Q_8,
+\boxed{\;\mathcal{L}^{\times}\cong Q_8,
 \qquad
-(\mathcal{L}_{\mathrm{H}})^{\times}\cong 2T,
+(\mathcal{L}_{\mathrm{H}})^{\times}\cong 2T\;},
 $$
 the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the unit group. The twenty-four units give twelve distinct rotations $\rho_v(\tilde Q_1)=-v\tilde Q_1v^{-1}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.</p>
 <p><strong>The order is the discrete skeleton.</strong> An order is a lattice subring of the real sector: a discrete set of sites closed under addition and multiplication, the algebraic form of a lattice. Its unit group is the set of lattice operations that are reversible inside the lattice. The quaternion units are the rotations by $\pi$ of the lattice, and the binary groups are their lifts; read against the continuous groups, the orders are what survives when the frame is restricted to integral elements. Interpreted physically, the order is the discrete skeleton of the material sector, and the finite unit group is its discrete symmetry. Read on a lattice, the orders are the arithmetic counterpart of a lattice gauge theory and of a quantum simulation of the framework; the real slice is the Euclidean lattice and its imaginary translate the thermal direction, so the arithmetic of the orders is also the arithmetic of the thermal circle. The algebra supplies the arithmetic, not the gauge field or the temperature.</p>
@@ -432,7 +434,7 @@ Interpreted physically, the real orders have finite unit groups because the real
 <li><a href="../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html">The Biquaternion Unit Group as a Topological Group</a>, for the determinant sequence and the matrix model.</li>
 <li><a href="../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the polar retraction and the homotopy groups.</li>
 <li><a href="../articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the link and the contractibility.</li>
-<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the parity-matched lattice, and <a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a> for the kernel of the exponential.</li>
+<li><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the parity-matched lattice, and <a href="../articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a> for the kernel of the exponential.</li>
 <li><a href="../articles_maths/biquaternion-orders-and-finite-groups-of-units.html">Biquaternion Orders and Finite Groups of Units</a>, for the lattices and the finite unit groups.</li>
 <li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, §<em>The Domain</em>, for the three construction domains and the witnesses in one table.</li>
 <li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.</li>

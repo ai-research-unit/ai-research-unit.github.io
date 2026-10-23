@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries a non-degenerate quadratic form of signature $(2,2)$, the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$. Its zero set, the <strong>null cone</strong>, is the zero-divisor set together with the origin, and its projectivisation is a smooth quadric surface in $\mathbb{P}^3$. This article describes the null cone, the two families of isotropic lines, the rank-one description of its nonzero points, the Segre embedding of the quadric, the doubly ruled description of the quadric, and the relations to the projective geometry of the biquaternions and to the Lorentzian geometry of the vector subspace.</p>
 <p>The article owns the projective and quadric structure of the algebra. It relies on <em>Split-Quaternion Norm and Invertibility</em> for the form and the units, on <em>Split-Quaternion Zero Divisors</em> for the null structure, on <em>Split-Quaternion Topology</em> for the link and the rulings as topological objects, and on <em>Split-Quaternion Geometry</em> for the geometric reading. The split-quaternion norm and its polarisation are developed in <em>Split-Quaternion Norm and Invertibility</em> and are used here only geometrically. No physics is invoked.</p>
-<p><strong>Conventions.</strong> Coordinates are $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $N = q_t^2+q_x^2-q_y^2-q_z^2$ and polarisation $\langle\tilde q,\tilde q_2\rangle = q_t q_{2t} + q_x q_{2x} - q_y q_{2y} - q_z q_{2z}$, whose matrix in the basis $1, \vec e_x, \vec e_y, \vec e_z$ is $G = \operatorname{diag}(1,1,-1,-1)$, so that $\langle\tilde q,\tilde q_2\rangle = X^{\mathsf{T}} G Y$ for the coordinate columns $X, Y$. The vector subspace is $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ with $N|_V = q_x^2-q_y^2-q_z^2$. The projective space of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{P}^3 = \mathbb{P}(\mathbb{H}_{\mathrm{s}})$.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>null cone</strong> is the quadric</p>
 <p>$$
@@ -119,7 +121,7 @@ $$</p>
 <p><strong>Theorem.</strong> The quadric $\mathcal{Q}$ is a doubly ruled surface: through every point pass exactly two isotropic lines, one from each family, and the two rulings are the two factors of the product $\mathbb{P}^1 \times \mathbb{P}^1$.</p>
 <p><strong>Proof.</strong> The Segre embedding is a bijection of $\mathbb{P}^1\times\mathbb{P}^1$ onto $\mathcal{Q}$, and the two families of coordinate lines of the product map to the two families of isotropic lines of $\mathcal{Q}$; each point of the product lies on exactly one line of each family.</p>
 <p>Thus the projective quadric is determined by its two rulings, and the parametrisation of the rulings by $\mathbb{P}^1$ is the split, real analogue of the corresponding description of the biquaternion quadric.</p>
-<h2 id="the-relation-to-the-projective-geometry-of-math92">The Relation to the Projective Geometry of $\mathbb{B}$</h2>
+<h2 id="the-relation-to-the-projective-geometry-of-math81">The Relation to the Projective Geometry of $\mathbb{B}$</h2>
 <p>The biquaternion article <em>The Null Quadric and Its Projective Geometry</em> treats the null quadric of the complex form on $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex signature $(4,0)$ and split over $\mathbb{C}$, whose projective quadric is a smooth quadric in $\mathbb{P}^3_{\mathbb{C}}$. The real split-quaternion quadric is the real form of the same projective object: the algebra $\mathbb{H}_{\mathrm{s}}$ is a real form of $M_2(\mathbb{C}) \cong \mathbb{B}$ under complexification, and the real quadric $\mathcal{Q} = \mathbb{P}(\mathcal{N})$ is the real locus of the complex quadric. The Segre embedding, the two rulings and the ruled-surface description are common to both; what differs is the reality condition — the split-quaternion quadric is a real doubly ruled surface with real lines, whereas the biquaternion quadric over $\mathbb{R}$ has a reality structure from the complex conjugation. No biquaternion-specific object — the central imaginary unit $i$, the Hermitian reality condition, the definite form on the quaternion half — is imported; only the projective shape is shared.</p>
 <h2 id="the-relation-to-the-lorentzian-geometry">The Relation to the Lorentzian Geometry</h2>
 <p>The same form determines two geometries, and the two-dimensional isotropic structure above is the common source.</p>

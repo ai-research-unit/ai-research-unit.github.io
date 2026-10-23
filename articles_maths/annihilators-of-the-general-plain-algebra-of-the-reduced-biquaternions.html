@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@ $$
 the <strong>other</strong> line, of real dimension two. The annihilator of $0$ is the whole algebra. Because the algebra is commutative, the left and the right annihilators coincide, and the annihilator of an element is a two-sided ideal; the two maximal ideals $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are the annihilators of each other.</p>
 <p>The article also reads the <strong>two-sided annihilator of the structure</strong>, the set of elements that annihilate the algebra, and records that it is $\{0\}$ because the algebra is unital. The two results are different: the annihilators of the elements are the two lines, and the annihilator of the algebra is trivial.</p>
 <p><strong>The results.</strong> The left and the right annihilators of an element coincide, since the multiplication is commutative, and they are an ideal. The annihilator of a unit is $\{0\}$; the annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the whole algebra is $\{0\}$. The map $\breve Q\mapsto\operatorname{Ann}(\breve Q)$ takes the units and $0$ to the two trivial ideals and the two lines to each other, so the set of annihilators of the elements is the set of the four ideals of the algebra.</p>
-<p><strong>Boundaries.</strong> The zero divisors, the two lines and the maximal ideals are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>, above this article in this category. The criterion of invertibility is <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>, above this article. The idempotents and the projectors are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>, below this article, and the Peirce decomposition into the ideals the idempotents carry is <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>, below this article in this category. The annihilators as ideals in the biquaternion layer, with the one-sided annihilators of a non-commutative algebra, are <em>Annihilators of the Biquaternion Algebra</em>.</p>
 <h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
 <h3 id="left-and-right-they-coincide">Left and Right, They Coincide</h3>
 <p><strong>The left and the right annihilators of an element are equal, because the multiplication is commutative.</strong></p>

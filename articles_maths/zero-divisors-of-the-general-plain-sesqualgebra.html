@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,29 +88,6 @@ which the pure family is <strong>not</strong> square-zero, and it is the pure fa
 nilpotent family, with the index three instead of two (<em>Nilpotents of the General Plain
 Sesqualgebra</em>). The article states the coincidence, computes the annihilators, and separates the
 part of the classification that survives from the part that does not.</p>
-<p><strong>Placement.</strong> The article is the third entry of the <em>Common Theory</em> section of the block, after
-<em>Norm and Invertibility in the General Plain Sesqualgebra</em> and before the square roots of the
-central values. It uses the product and the class of the introduction, the algebraic norm and the
-invertibility criterion of <em>Norm and Invertibility in the General Plain Sesqualgebra</em>, and the
-common zero-divisor set of the four general products.</p>
-<p><strong>Boundaries.</strong> The product, its class and its placement are <em>Introduction to the General Plain
-Sesqualgebra of Biquaternions</em>; the relative definitions of the zero divisor, the annihilator and
-the regular element are <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; the common set
-of the four general products and the theorem that the four coincide are <strong>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</strong>, and the same set read on the plain product with its two families and their geometry is <em>Zero
-Divisors of the General Plain Algebra</em>, <em>Idempotents of the General Plain Algebra</em> and <em>Nilpotents
-of the General Plain Algebra</em>. The algebraic norm and the invertibility criterion are <em>Norm and
-Invertibility in the General Plain Sesqualgebra</em>; the square-zero set of the block is <em>Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Nothing topological and nothing metric appears.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$
-with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. A general element is
-$\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and
-$Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the
-coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and
-the Hermitian conjugation is
-$\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. Juxtaposition is
-the <strong>plain</strong> product and $\star$ the block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The
-<strong>central square</strong> is $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^{2}+(\vec Q,\vec Q)$ with
-$(\vec Q,\vec Q)=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and its vanishing set, the origin removed, is the
-common zero-divisor cone.</p>
 <p><strong>The results.</strong> A nonzero biquaternion is a zero divisor of the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ exactly when its central square vanishes, $C(\tilde Q_1)=Q_{1t}^{2}+(\vec Q_1,\vec Q_1)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_{1t}=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_{1t}\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ are idempotents of the block.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <p><strong>Theorem (the criterion of the block).</strong> For nonzero $\tilde Q_1$, the following are equivalent:</p>

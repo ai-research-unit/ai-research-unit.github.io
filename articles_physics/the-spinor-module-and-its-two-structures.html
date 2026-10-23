@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,8 +72,8 @@
 <h2 id="introduction">Introduction</h2>
 <p>The spinor space of the biquaternion framework is the minimal left ideal</p>
 <p>$$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},\qquad
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
+\boxed{\;S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},\qquad
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)\;},
 $$</p>
 <p>of complex dimension two. The algebra acts on it by left multiplication, and the action carries the defining representation of the double cover of the Lorentz group. That is one structure. The same carrier also carries a positive definite Hermitian form and a Born pairing, and that is a second structure, belonging to a different product of the same algebra.</p>
 <p>The article's thesis is that the two structures are <strong>not two views of one object</strong>. They belong to two different products: the module structure to the plain bilinear product $\tilde Q_1\tilde Q_2$, whose menu label is <strong>composition</strong>, and the Hilbert structure to the plain sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$, whose menu label is <strong>probability</strong>. The sharpest evidence is that the algebra's own bilinear form is <strong>degenerate on the carrier</strong>: its Gram matrix is $\operatorname{diag}(\tfrac12,0)$. The module has no norm of its own, and the metric is added by the second slot.</p>
@@ -163,8 +166,8 @@ $$</p>
 $$</p>
 <p>which is positive definite on the algebra. Restricted to the carrier, its Gram matrix on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ is</p>
 <p>$$
-G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\tilde\Pi_+,\vec\Upsilon_y\rangle_{*}\\[2pt]\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*} & \langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}\end{pmatrix}
-=\tfrac12 I_2 .
+\boxed{\;G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\tilde\Pi_+,\vec\Upsilon_y\rangle_{*}\\[2pt]\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*} & \langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}\end{pmatrix}
+=\tfrac12 I_2\;}.
 $$</p>
 <p>The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the difference is exactly the phase. In module coordinates the same form is the spinor inner product $h(\psi,\phi)=\psi^{\dagger}\phi$. The <strong>Born pairing</strong> is the trace formula</p>
 <p>$$
@@ -178,7 +181,7 @@ $$</p>
 $$</p>
 <p>is non-degenerate on $\mathbb{B}$, of signature $(4,4)$ on the real space. On the carrier its Gram matrix is</p>
 <p>$$
-B_S=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix},
+\boxed{\;B_S=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix}\;},
 $$</p>
 <p>of rank one, with radical $\mathbb{C}\vec\Upsilon_y$. The nilpotent is orthogonal to both basis spinors and to every element of $S$: it has zero scalar part and squares to zero. <strong>The algebra's own form cannot separate the two basis spinors and cannot produce a norm on the carrier.</strong> Positivity is not a property of the plain product at all; it needs the second slot.</p>
 <h2 id="the-two-structures-side-by-side">The Two Structures Side by Side</h2>

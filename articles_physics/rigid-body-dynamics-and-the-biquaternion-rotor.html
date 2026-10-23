@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -129,8 +132,8 @@ $$</p>
 <h3 id="body-and-space-angular-velocities">Body and Space Angular Velocities</h3>
 <p>Differentiate the rotor and form the two logarithmic derivatives</p>
 <p>$$
-\vec\omega_b=+2\,\tilde u^{\natural}\,d\tilde u/dt',\qquad
-\vec\omega_s=+2\,d\tilde u/dt'\,\tilde u^{\natural}.
+\boxed{\;\vec\omega_b=+2\,\tilde u^{\natural}\,d\tilde u/dt',\qquad
+\vec\omega_s=+2\,d\tilde u/dt'\,\tilde u^{\natural}\;}.
 $$</p>
 <p>Both are <strong>real pure quaternions</strong>. The claim is immediate from the constraint: $\tilde u^{\natural}d\tilde u/dt'$ is real because both factors are real, and its scalar part is</p>
 <p>$$
@@ -169,10 +172,10 @@ I(\vec\omega_b)=\sum_{k=1}^{3}I_k\,\omega_k\,\vec e_k ,
 $$</p>
 <p>and the kinetic energy and angular momentum are</p>
 <p>$$
-T=-\tfrac12\,\mathrm{Sc}\!\left(\vec\omega_b\,\vec L_b\right)
+\boxed{\;T=-\tfrac12\,\mathrm{Sc}\!\left(\vec\omega_b\,\vec L_b\right)
 =\tfrac12\sum_k I_k\omega_k^2 ,
 \qquad
-\vec L_b=I(\vec\omega_b)=\sum_k I_k\omega_k \vec e_k ,
+\vec L_b=I(\vec\omega_b)=\sum_k I_k\omega_k \vec e_k\;},
 $$</p>
 <p>using $\mathrm{Sc}(\vec a\vec b)=-\vec a\cdot\vec b$ for pure real quaternions. The quadratic form $\mathrm{Sc}(\vec\omega_b\vec L_b)$ is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.</p>
 <p><strong>Spherical top.</strong> If the three principal moments are equal, $I_1=I_2=I_3=\lambda$, the inertia operator is $\lambda$ times the identity on the real vector part and</p>
@@ -229,7 +232,7 @@ $$</p>
 $$</p>
 <p>so that the rotor is</p>
 <p>$$
-\tilde u(t')=\exp\!\left(+\tfrac{\phi(t')}{2}\vec e_z\right)\exp\!\left(+\tfrac{\theta}{2}\vec e_y\right)\exp\!\left(+\tfrac{\psi(t')}{2}\vec e_z\right),
+\boxed{\;\tilde u(t')=\exp\!\left(+\tfrac{\phi(t')}{2}\vec e_z\right)\exp\!\left(+\tfrac{\theta}{2}\vec e_y\right)\exp\!\left(+\tfrac{\psi(t')}{2}\vec e_z\right)\;},
 $$</p>
 <p>a product of three rotations, of which two are time-dependent one-parameter subgroups and one is constant. The general free top ($I_1,I_2,I_3$ all distinct) is not a one-parameter subgroup; its solution is Euler's problem, and the body-frame angular velocity is given by Jacobi elliptic functions. The biquaternion form changes nothing about that classical integrability and its elliptic character; it expresses the orientation as a rotor and the equation as a commutator.</p>
 <h2 id="euler-angles-and-the-rotor">Euler Angles and the Rotor</h2>

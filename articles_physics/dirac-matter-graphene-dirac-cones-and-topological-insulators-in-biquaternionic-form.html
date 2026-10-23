@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -77,13 +80,13 @@
 <h3 id="the-low-energy-effective-equation">The low-energy effective equation</h3>
 <p>Expanding the tight-binding bands about a zone corner gives the effective Hamiltonian</p>
 <p>$$
-H = v_F\,\boldsymbol{\sigma}\cdot\vec p,
+\boxed{\;H = v_F\,\boldsymbol{\sigma}\cdot\vec p,
 \qquad
-v_F \approx 10^6\ \mathrm{m/s} \approx \frac{c}{300},
+v_F \approx 10^6\ \mathrm{m/s} \approx \frac{c}{300}\;},
 $$</p>
 <p>acting on the two-component sublattice spinor. This is the massless Dirac equation in two spatial dimensions, with $v_F$ in place of $c$. Its energies are</p>
 <p>$$
-E(\vec p) = \pm v_F|\vec p|,
+\boxed{\;E(\vec p) = \pm v_F|\vec p|\;},
 $$</p>
 <p>linear in momentum and vanishing at $\vec p = 0$: the bands touch at the Dirac point and there is no gap. A finite <strong>mass</strong> term opens one,</p>
 <p>$$
@@ -123,7 +126,7 @@ $$</p>
 <h3 id="the-invariant-and-time-reversal">The invariant and time reversal</h3>
 <p>For the time-reversal-symmetric topological insulators the invariant takes values in $\mathbb Z_2$: a single bit, trivial or not. Time reversal is essential to the classification, and the reason is a sign. On a spin-$\tfrac12$ state the time-reversal operator is antiunitary and squares to</p>
 <p>$$
-\mathcal T^2 = -1 ,
+\boxed{\;\mathcal T^2 = -1\;},
 $$</p>
 <p>which forces every $\mathcal T$-invariant Hamiltonian to have its spectrum even-degenerate — <strong>Kramers degeneracy</strong>. The two partners of a Kramers pair cannot be split by any time-reversal-symmetric perturbation. The biquaternion framework treats this structure in the companion article <em>Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form</em>, which constructs the module-level time-reversal operator as a rotation composed with the conjugation, shows that the relevant rotation element is the one squaring to $-e_t$ (the rotor of the $2\pi$ rotation), obtains $\mathcal T^2=-e_t$ on the spinor module, and identifies the resulting two-complex-dimensional commutant with a <strong>quaternionic</strong> line. The $\mathbb Z_2$ nature of the topological classification and the quaternionic nature of the Kramers structure are two faces of one sign, and the framework supplies the sign as an element of $\mathbb B$. The material still supplies the bands.</p>
 <h3 id="the-helical-edge-and-spinmomentum-locking">The helical edge and spin–momentum locking</h3>

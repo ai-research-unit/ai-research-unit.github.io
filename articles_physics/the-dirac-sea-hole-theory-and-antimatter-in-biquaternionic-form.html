@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -102,13 +105,13 @@
 <h3 id="the-reinterpretation">The reinterpretation</h3>
 <p>The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as</p>
 <p>$$
-\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right],
+\boxed{\;\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right]\;},
 $$</p>
 <p>in which the <strong>annihilation</strong> operator multiplies the positive-frequency spinors and the <strong>creation</strong> operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a^{\mathrm{fop}}|0\rangle = b^{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.</p>
 <h3 id="normal-ordering">Normal ordering</h3>
 <p>With the anticommutator the Hamiltonian becomes, after normal ordering,</p>
 <p>$$
-H^{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_r^{\mathrm{fop}\dagger} a_r^{\mathrm{fop}} + b_r^{\mathrm{fop}\dagger} b_r^{\mathrm{fop}}\right),
+\boxed{\;H^{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_r^{\mathrm{fop}\dagger} a_r^{\mathrm{fop}} + b_r^{\mathrm{fop}\dagger} b_r^{\mathrm{fop}}\right)\;},
 $$</p>
 <p>a positive sum of particle and antiparticle numbers, with the divergent constant removed. The charge is equally normal-ordered, and particles and antiparticles carry opposite charge. This is the modern replacement of the filled sea, and it is the content the framework already has.</p>
 <h2 id="vacuum-polarization-where-the-seas-response-became-measurable">Vacuum Polarization: Where the Sea's Response Became Measurable</h2>
@@ -136,7 +139,7 @@ R_{\mathrm{pos}}\bigl[F_{\mathrm{pos}}\bigr] = Z_c\bigl(R_{\mathrm{el}}[F_{\math
 $$</p>
 <p>$Z_c$ being componentwise complex conjugation. The outcome is an identity of fields: the positron field is the complex conjugate of the electron field,</p>
 <p>$$
-F_{\mathrm{pos}} = \overline{F_{\mathrm{el}}} .
+\boxed{\;F_{\mathrm{pos}} = \overline{F_{\mathrm{el}}}\;}.
 $$</p>
 <p>This is the anti-linear, involutive conjugation that the <em>Antilinear Structure and the Two Kinds of Mass</em> article keeps apart from the algebra's real structure $\flat$, here acting on the biquaternion field rather than on the spinor module. The corpus records it as a corroboration rather than as a new construction: both sides are anti-linear and both square to the identity, and the dictionary identifies them.</p>
 <h3 id="the-framework-consistent-reading">The framework-consistent reading</h3>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -109,7 +112,7 @@ $$</p>
 <p><strong>The conjugations.</strong> On paravectors the quaternion conjugate ${}^{\natural}$ negates the vector part and leaves the scalar part alone, since $\bar{\gamma}_k = \overline{i\vec e_k} = i\bar{e}_k = -i\vec e_k = -\gamma_k$. This is precisely the <strong>Clifford conjugate</strong> of the algebra of physical space, $p \mapsto \bar p = p_t - \vec p$. Because $\mathbb{M}_+$ is the fixed space of the Hermitian conjugation, $\bar p = p^\dagger$ for a paravector; the reversion, whose action on the paravector generators is the identity, coincides with the Hermitian conjugation on $\mathbb{M}_+$ and is the operation the source writes with a dagger.</p>
 <p><strong>The form.</strong> The biquaternion norm of a paravector is real and reads</p>
 <p>$$
-p\,\bar p = \left(p_t + \vec p\right)\left(p_t - \vec p\right) = p_t^2 - \vec p^2 = p_t^2 - p_x^2 - p_y^2 - p_z^2,
+p\,\bar p = \left(p_t + \vec p\right)\left(p_t - \vec p\right) = p_t^2 - \vec p^2 = p_t^2 - p_x^2 - p_y^2 - p_z^2
 $$</p>
 <p>using $\vec p^2 = p_x^2 + p_y^2 + p_z^2$ for a real three-vector. This is the Minkowski form of signature $(1,3)$, the form of the informational sector $\mathbb{M}_+$ in the corpus's notation. The material sector carries the same form with the opposite sign: for $\tilde Q = ip \in \mathbb{M}_-$,</p>
 <p>$$
@@ -155,7 +158,7 @@ p_\perp \;=\; \vec p - \left(\vec p\cdot\vec u_v\right)\vec u_v,
 $$</p>
 <p>for the components coplanar with the boost and orthogonal to it. Then the rotor conjugation gives</p>
 <p>$$
-L\,p\,L^\dagger \;=\; \tilde V_{\mathrm p}\,p_\parallel + p_\perp .
+\boxed{\;L\,p\,L^\dagger \;=\; \tilde V_{\mathrm p}\,p_\parallel + p_\perp\;}
 $$</p>
 <p><strong>Proof.</strong> The two components transform separately. First, $p_\perp$ anticommutes with $\vec u_v$, because two orthogonal paravector-vectors anticommute: $\vec u_vp_\perp = -p_\perp\vec u_v$. Hence</p>
 <p>$$
@@ -245,7 +248,7 @@ $$</p>
 <h2 id="velocity-composition">Velocity Composition</h2>
 <p>The proper velocity is the natural variable of the composition law. If a frame $B$ moves with proper velocity $\tilde V_{\mathrm p,BA}$ relative to $A$ and a frame $C$ moves with proper velocity $\tilde V_{\mathrm p,CB}$ relative to $B$, then the proper velocity of $C$ relative to $A$ is the <strong>product</strong></p>
 <p>$$
-\tilde V_{\mathrm p,CA} \;=\; \tilde V_{\mathrm p,CB}\,\tilde V_{\mathrm p,BA},
+\boxed{\;\tilde V_{\mathrm p,CA} \;=\; \tilde V_{\mathrm p,CB}\,\tilde V_{\mathrm p,BA}\;}
 $$</p>
 <p>an equation that follows from the composition of the rotor conjugations, or directly from the associativity of the algebra of physical space. Writing each factor as $\gamma(e_t+\beta\vec u_v)$ and multiplying, the scalar part gives the composition of the Lorentz factors and the vector part the composition of the velocities. For collinear velocities the vector parts are parallel and the product is the familiar addition law</p>
 <p>$$

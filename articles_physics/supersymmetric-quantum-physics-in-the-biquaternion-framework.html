@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Supersymmetric quantum physics, introduced by Edward Witten in 1981, is the simplest realisation of a supersymmetry: a quantum system with a $\mathbb{Z}_2$ grading and a pair of Hermitian-conjugate supercharges $\mathcal{Q}$, $\mathcal{Q}^\dagger$ whose anticommutator is the Hamiltonian,</p>
 <p>$$
-\{\mathcal{Q},\mathcal{Q}^\dagger\} = H, \qquad \mathcal{Q}^2 = 0, \qquad (\mathcal{Q}^\dagger)^2 = 0 .
+\boxed{\;\{\mathcal{Q},\mathcal{Q}^\dagger\} = H, \qquad \mathcal{Q}^2 = 0, \qquad (\mathcal{Q}^\dagger)^2 = 0\;}.
 $$</p>
 <p>Its central structural fact is that the Hamiltonian factorises: writing $H = \mathrm{diag}(H_+,H_-)$ in the grading, one has $H_+ = A^\dagger A$ and $H_- = A A^\dagger$ for a first-order operator $A$, so the two graded sectors have <strong>partner</strong> spectra that agree except possibly at zero energy. The partner potentials are $V_\pm = W^2 \mp \frac{dW}{dx}$, where $W$ is the superpotential, and the Witten index $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ counts the imbalance of zero-energy states between the two sectors.</p>
 <p>This article argues that the biquaternion framework is the natural home of that structure, for a reason that is visible in the first line. The entire relativistic quantum theory of spin $\tfrac12$ in this corpus rests on a <strong>first-order</strong> operator whose square is a scalar: $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, and the massive equation is the off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. That is a factorisation, and it is a factorisation by an odd operator with respect to a grading — the chirality grading of the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic Dirac operator is therefore a supercharge, the two chiralities are the two graded sectors, and the mass is the off-diagonal entry that the supersymmetry algebra writes as the superpotential. The formal correspondence is exact in the reduced theory, where it can be exhibited in closed form; in the full theory it is the structural principle that the companion articles on the Dirac square, the oscillator, and the path integral all use.</p>
@@ -138,7 +141,7 @@ $$</p>
 $$</p>
 <p>where $\mathcal{Q}$ and $\mathcal{Q}^\dagger$ are the nilpotent pair of the abstract algebra of the previous section, here realised as the two off-diagonal blocks. Applying $\mathcal{D}$ twice and using $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ gives</p>
 <p>$$
-\mathcal{D}^2 = \begin{pmatrix} \tilde{\nabla}^{\natural}\tilde{\nabla} & 0 \\ 0 & \tilde{\nabla}\tilde{\nabla}^{\natural}\end{pmatrix} = \Box\,I ,
+\boxed{\;\mathcal{D}^2 = \begin{pmatrix} \tilde{\nabla}^{\natural}\tilde{\nabla} & 0 \\ 0 & \tilde{\nabla}\tilde{\nabla}^{\natural}\end{pmatrix} = \Box\,I\;},
 $$</p>
 <p>which is the anticommutator $\{\mathcal{Q},\mathcal{Q}^\dagger\} = \Box\,I$; the square of the Hermitian supercharge is the central Hamiltonian, and the mass is the eigenvalue at which the first-order pair is solved. The distinction between the two objects is worth holding on to: the nilpotent $\mathcal{Q}$ is the off-diagonal half, odd under the grading, and $\mathcal{D}$ is the Hermitian Dirac operator it generates. The supersymmetric Hamiltonian of the free theory is $\Box$, and the two partner Hamiltonians coincide, $H_+ = H_- = \Box$: the free biquaternionic Dirac operator is the case of <strong>unbroken supersymmetry with a balanced spectrum</strong>, and the mass is the parameter that pairs the two chiralities.</p>
 <p><strong>The superpotential is the mass.</strong> In the reduced theory of the next section the mass becomes position-dependent, $m \to W(x)$, and then the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial Q_x^2 + W^2 \mp \frac{dW}{dx}$. The superpotential is the (possibly position-dependent) mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two chiral sectors. This is the biquaternion interpretation of the standard claim that the superpotential is the bosonic "potential" of the supersymmetric system: here the potential is a mass.</p>
@@ -185,8 +188,8 @@ H_D = -i\sigma_2\partial/\partial Q_x + \sigma_1 W
 $$</p>
 <p>a first-order biquaternion operator with a superpotential multiplying the second basis unit. Its square is</p>
 <p>$$
-\tilde{Q}^2 = -\partial^2/\partial Q_x^2 + W^2 - i\,\frac{dW}{dx}\,\vec e_z
-= \left(-\partial^2/\partial Q_x^2 + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z),
+\boxed{\;\tilde{Q}^2 = -\partial^2/\partial Q_x^2 + W^2 - i\,\frac{dW}{dx}\,\vec e_z
+= \left(-\partial^2/\partial Q_x^2 + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z)\;},
 $$</p>
 <p>where we used $\vec e_y \vec e_x = -\vec e_z$, $\vec e_x \vec e_y = \vec e_z$ and $\vec e_x^2 = \vec e_y^2 = -e_t$. Two features of this expression are the algebraic content of the section.</p>
 <ul>

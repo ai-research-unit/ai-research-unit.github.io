@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -211,8 +214,8 @@ $$</p>
 <p>The <strong>massless spectrum</strong> is the set of massless one-particle states of the framework. The cone is its common floor, and the reading is a division of labour: the cone fixes some of the data of a massless particle and leaves the rest to the representation theory.</p>
 <p><strong>What the cone fixes.</strong> A massless element has $\langle\tilde Q\rangle_{\natural}=0$; its sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is a positive element whose determinant is $\lvert\langle\tilde Q\rangle_{\natural}\rvert^2$, so it drops from rank two to rank one; and its direction is a point of the projective cone. The shell, the rank and the direction are therefore cone data. For a material null momentum the square is explicit:</p>
 <p>$$
-\tilde P\star\tilde P=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
-\tilde\Pi(-\vec u)=\tfrac12(e_t-i\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
+\boxed{\;\tilde P\star\tilde P=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
+\tilde\Pi(-\vec u)=\tfrac12(e_t-i\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert}\;},
 $$</p>
 <p>a positive multiple of the idempotent along the direction opposite to the momentum. The massless state is therefore a <strong>pure boundary state</strong>, not a null state: the same idempotent appears with an imaginary coefficient in the composition and with a positive coefficient in the probability. One momentum, two faces.</p>
 <p><strong>What the cone does not fix.</strong> The cone does not fix the spin. The massless particles the corpus has built are the photon of helicity $\pm1$, the graviton of helicity $\pm2$, the Rarita–Schwinger field of helicity $\pm\tfrac32$ and the chiral fermion of helicity $\pm\tfrac12$. All four have vanishing norm; the cone sees no difference between them. The rank is one for all four, so <strong>rank is a mass label and not a spin label</strong>: it separates the massless from the massive, and it does not separate the massless from one another.</p>
@@ -238,11 +241,11 @@ $$</p>
 <h2 id="the-generalized-decomposition-on-the-cone">The Generalized Decomposition on the Cone</h2>
 <p>The four-factor word stops at the cone; the two-factor Cartan pairing does not. For every element there is a unique pair</p>
 <p>$$
-\tilde Q=\tilde H\tilde U,
+\boxed{\;\tilde Q=\tilde H\tilde U,
 \qquad
 \tilde H=\sqrt{\tilde Q\tilde Q^{*}}\ \text{Hermitian positive semidefinite},
 \qquad
-\tilde U=\tilde H^{+}\tilde Q,
+\tilde U=\tilde H^{+}\tilde Q\;},
 $$</p>
 <p>with $\tilde U$ a partial isometry satisfying $\tilde U^{*}\tilde U=\tilde\Pi_{\mathrm i}$ and $\tilde U\tilde U^{*}=\tilde\Pi_{\mathrm f}$, the projections onto the initial and final subspaces of $\tilde Q$, and $\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$. Off the cone this is the Cartan pairing. On the cone it degenerates in a definite way: a nonzero null element is a positive scalar times a partial isometry,</p>
 <p>$$
@@ -295,7 +298,7 @@ $$</p>
 $$</p>
 <p>Every $\tilde Q(\psi)$ is a unit, and as $\psi\to\infty$ it converges to</p>
 <p>$$
-\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
+\boxed{\;\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},
 $$</p>
 <p>a nonzero element of the cone. The limit is a complex multiple of a minimal idempotent when $\vec u_{\mathrm r}$ has a component in the plane spanned by $e_t$ and $\vec u_{\mathrm b}$, and it is a nilpotent exactly when $\vec u_{\mathrm r}$ is orthogonal to both. Every nonzero element of the cone is such a limit for some choice of the data.</p>
 <p>The physical reading is a massive family approaching the massless wall. The scale collapses as $\exp(-\psi/2)$ while the rapidity diverges, so the norm goes to zero at the same rate as the boost grows. The direction of the boost and the rotor decide which stratum is reached. A rotor with a component in that plane gives the idempotent stratum that carries the photon, and a rotor orthogonal to both gives the nilpotent stratum, which is not a four-momentum. The stratum is selected by the rotor, not by the rate, and the rate is the same for both.</p>

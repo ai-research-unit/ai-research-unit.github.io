@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -120,9 +123,9 @@ $$</p>
 <h3 id="the-trilinear-form">The Trilinear Form</h3>
 <p>The order-three invariant is the source's <em>Ding-3</em>: the trilinear form</p>
 <p>$$
-\varepsilon : \ M \times S_1 \times S_2 \longrightarrow \mathbb{C},
+\boxed{\;\varepsilon : \ M \times S_1 \times S_2 \longrightarrow \mathbb{C},
 \qquad
-\varepsilon(A, B, N) = 2\, A_\mu\, \varepsilon^{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda .
+\varepsilon(A, B, N) = 2\, A_\mu\, \varepsilon^{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda\;}.
 $$</p>
 <p>Equivalently, and this is the form that shows the two independent pieces, it is</p>
 <p>$$
@@ -150,7 +153,7 @@ J : \ A \mapsto B, \qquad B \mapsto N, \qquad N \mapsto A
 $$</p>
 <p>permutes the three spaces cyclically and leaves the trilinear form $\varepsilon$ invariant:</p>
 <p>$$
-\varepsilon(J(A,B,N)) = \varepsilon(B, N, A) = \varepsilon(A, B, N) .
+\boxed{\;\varepsilon(J(A,B,N)) = \varepsilon(B, N, A) = \varepsilon(A, B, N)\;}.
 $$</p>
 <p>This is the four-dimensional triality. Its order is three, $J^3 = 1$, and it acts on the product of the three spaces, not inside any one of them: $J$ is not an inner automorphism of $\mathbb{B}$, it is an <em>outer</em> permutation of three inequivalent modules. That is exactly the situation of the Cartan triality, where the outer automorphism group of the $D_4$ diagram is $S_3$ and the three-node orbit is the three eight-dimensional representations. What is special to the four-dimensional case is that the three modules are the vector and the two semi-spinors of a <em>Lorentz</em> group, which have equal real dimension, and the invariant form is built from the ordinary Dirac matrices rather than from the octonion product.</p>
 <h3 id="the-quartic-diracs-game">The Quartic "Dirac's Game"</h3>
@@ -165,7 +168,7 @@ q_x^4 = 1, \qquad q_y^4 = 1,
 $$</p>
 <p>and they satisfy the braid relation</p>
 <p>$$
-q_x q_y q_x = q_y q_x q_y ,
+\boxed{\;q_x q_y q_x = q_y q_x q_y\;},
 $$</p>
 <p>so they generate a quotient of the braid group $B_3$ on three strands. The name "Dirac's game" is the source's. The content is that the combination</p>
 <p>$$

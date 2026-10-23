@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -217,7 +220,7 @@ $$</p>
 </table></div>
 <p>A nonzero module is <strong>simple</strong> if it has no submodules other than $0$ and itself. A <strong>composition series</strong> is a finite strictly increasing chain $0 = M_0 \subset M_1 \subset \cdots \subset M_r = M$ with simple successive quotients $M_i/M_{i-1}$; the number $r$ is the <strong>length</strong> of $M$. A ring is <strong>left artinian</strong> if every descending chain of left ideals stabilizes, and <strong>semisimple</strong> if its left regular module is a direct sum of simple modules.</p>
 <p>Over $\mathbb{C}$, every descending chain of left ideals of $\mathbb{B}$ is a descending chain of $\mathbb{C}$-subspaces, so it stabilizes; thus $\mathbb{B}$ is artinian. By Wedderburn–Artin, a unital ring is semisimple if and only if it is artinian with zero Jacobson radical, and every simple artinian ring is semisimple. Hence $\mathbb{B}$ is <strong>semisimple</strong>, and every left ideal is a direct sum of minimal left ideals.</p>
-<p>All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian ring has a unique simple module up to isomorphism. With the idempotents $\tilde\Pi_+, \tilde\Pi_-$ of §<em>Idempotents and Orthogonal Idempotents</em>, the algebra as a left module over itself reads $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$, with $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ both minimal left ideals. Hence $0 \subset \mathbb{B}\tilde\Pi_+ \subset \mathbb{B}$ is a composition series, and the <strong>length of $\mathbb{B}$ as a left module over itself is $2$</strong>, with both factors isomorphic. The right regular module has length $2$ as well. All of this is over $\mathbb{C}$.</p>
+<p>All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian ring has a unique simple module up to isomorphism. With the idempotents $\tilde\Pi_+, \tilde\Pi_-$ of §<em>Idempotents and Orthogonal Idempotents</em>, the algebra as a left module over itself reads $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$, with $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ both minimal left ideals. These minimal left ideals are the two spinor spaces of <em>Eigenbasis of a Biquaternion</em>, §<em>The Spinor Spaces and their Coordinates</em>: each is a complex plane, and a spinor is a pair of complex coordinates. Hence $0 \subset \mathbb{B}\tilde\Pi_+ \subset \mathbb{B}$ is a composition series, and the <strong>length of $\mathbb{B}$ as a left module over itself is $2$</strong>, with both factors isomorphic. The right regular module has length $2$ as well. All of this is over $\mathbb{C}$.</p>
 <h2 id="idempotents-and-orthogonal-idempotents">Idempotents and Orthogonal Idempotents</h2>
 <p><strong>The idempotents of $\mathbb{B}$ are $0$, $e_t$ and the nontrivial idempotents; every nontrivial idempotent is primitive, and each root of $+1$ carries a complete orthogonal pair.</strong></p>
 <p><strong>Definition.</strong> Let $A$ be an associative unital algebra. An element $e \in A$ is an <strong>idempotent</strong> when $e^2 = e$. Two idempotents $e, f$ are <strong>orthogonal</strong> when $ef = fe = 0$; a family is <strong>pairwise orthogonal</strong> when its members are pairwise orthogonal and <strong>complete</strong> when in addition their sum is $1$; a nonzero idempotent is <strong>primitive</strong> when it is not a sum of two nonzero orthogonal idempotents. For a semisimple algebra</p>
@@ -396,6 +399,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<p><strong>The Q-adapted case.</strong> The basis above is attached to the fixed root $i\vec e_z$. For a general element $\tilde Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$, the root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ is not $i\vec e_z$, and the corresponding Peirce basis is the Q-adapted basis of <em>Eigenbasis of a Biquaternion</em>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em>. Its nilpotents are written $\vec\Upsilon_\pm$, with $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$; for the standard pair they are $\vec\Upsilon_+=\vec\Upsilon_y$ and $\vec\Upsilon_-=\vec\Upsilon_x$, the choice $\mu=1$ of the reciprocal rescaling. In that basis left multiplication by $\tilde Q$ is diagonal with $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, whereas in the standard basis above it is generally a full matrix.</p>
 <p><strong>The root on the corners.</strong> The two signs of the pair are the two eigenvalues of multiplication by the root, and each corner collects one eigenvalue on the left and one on the right:</p>
 <p>$$
 x\in\mathbb{B}_{st} \iff \tilde\Xi x = s\,x \ \text{ and } \ x\tilde\Xi = t\,x ,
@@ -576,6 +580,18 @@ $$
 $$</p>
 <p><strong>Proof.</strong> The map is $\mathbb{C}$-linear and bijective, since the four basis elements of $\mathbb{B}$ go to the four basis matrices of $M_2(\mathbb{C})$; it is multiplicative because the four Peirce basis elements multiply as the four matrix units do — the Peirce table of §<em>The Peirce Table</em> is the table $E_{ij}E_{kl} = \delta_{jk}E_{il}$ of <em>Matrix Algebras</em>, §<em>Matrix Units</em> — and both multiplications are bilinear.</p>
 <p>The isomorphism is the corpus's $\mathsf{M}_2$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, written there as an assignment on the basis; what the Peirce decomposition adds is the reading of its four entries as the coordinates of the four corners. Its trace and its determinant are the two invariants of the Peirce decomposition, $\operatorname{tr} = a_{11}+a_{22} = 2Q_t$ and $\det = a_{11}a_{22}-a_{12}a_{21} = \langle\tilde Q\rangle_{\natural}$, so that the scalar part and the norm of the algebra are the two symmetric functions of the corner coordinates (§<em>The Peirce Coordinates</em>). In this model the left ideals are the columns and the right ideals the rows, which is the content of §<em>The Decomposition into Minimal Left and Right Ideals</em> read on the matrix side: $\mathbb{B}\tilde\Pi_+$ is the first column $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ and $\tilde\Pi_+\mathbb{B}$ is the first row $\mathbb{C}E_{11}\oplus\mathbb{C}E_{12}$, the two groupings of the four matrix units that <em>Matrix Algebras</em>, §<em>The Case $n = 2$</em> distinguishes.</p>
+<p><strong>The Q-adapted model.</strong> The model above is the Peirce-coordinate model of the standard pair. For a general element $\tilde Q$ with $Q_x^2+Q_y^2+Q_z^2\neq0$, the Q-adapted model is
+$$
+\mathsf{M}_2^{Q}(P)=\mathsf{C}_Q^{-1}\mathsf{M}_2(P)\mathsf{C}_Q,
+$$
+where $\mathsf{C}_Q$ is the coordinate-change matrix whose columns are the eigenvectors of $\mathsf{M}_2(\tilde Q)$ expressed in the standard Peirce basis. It sends
+$$
+\tilde\Pi_+\mapsto E_{11},\quad
+\vec\Upsilon_-\mapsto E_{12},\quad
+\vec\Upsilon_+\mapsto E_{21},\quad
+\tilde\Pi_-\mapsto E_{22},
+$$
+and $\tilde Q\mapsto\operatorname{diag}(\lambda_+,\lambda_-)$. The standard model is the special case $\vec Q\parallel\vec e_z$, up to the reciprocal rescaling of the two mixed generators. In both models the left ideals are the columns and the right ideals the rows; the Q-adapted model changes the basis, not the grouping. The construction is that of <em>Eigenbasis of a Biquaternion</em>, §<em>The Q-Adapted Peirce Basis, the Nilpotents, and the Eigenbasis</em>.</p>
 <h3 id="systems-of-matrix-units">Systems of Matrix Units</h3>
 <p><strong>Definition.</strong> A <strong>system of $2\times2$ matrix units</strong> in $\mathbb{B}$ is a family $\{E_{11}, E_{12}, E_{21}, E_{22}\}$ of elements of $\mathbb{B}$ with</p>
 <p>$$

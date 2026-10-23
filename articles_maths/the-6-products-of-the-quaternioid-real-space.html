@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>The first two of the six are the two general products, then come their two symmetric halves and then their two antisymmetric halves: $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ is the <strong>Jordan product</strong>, the symmetric half of the plain product; $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t=\tfrac12(\tilde q_1^{\natural}\tilde q_2+\tilde q_2^{\natural}\tilde q_1)$ is the <strong>quaternion form read as a product</strong>, the symmetric half of the quaternionic product; $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$ is the <strong>cross product</strong>, the antisymmetric half of the plain product; and $\tilde q_1\wedge^{\natural}\tilde q_2=\tfrac12(\tilde q_1^{\natural}\tilde q_2-\tilde q_2^{\natural}\tilde q_1)$ is the <strong>quaternionic cross product</strong>, the antisymmetric half of the quaternionic product. The six are the products of the carrier, and the reconstruction $\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2$ recovers the general products from their halves. Three of the six are the products of the structures of this category, the symmetric plain, the antisymmetric plain and the general quaternionic; the algebra product belongs to the <em>Quaternions</em> category, and the two quaternionic halves carry no separate structure here.</p>
 <p>This article defines the six, writes each on the coordinates, states the reconstruction and reads the <strong>behaviour at the two equal arguments</strong> of each. It assumes the two products from <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em> and the annihilation identity of <em>Relations Between the Two General Products</em>, both preceding this one; the structures the six define are <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>, below this article in this category, and the definitions of their vocabulary are <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ is the dot product and $\vec q_1\times\vec q_2$ is the cross product of the vector parts, and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The plain form is $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ and the quaternion form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$, read here as the coefficient of the product $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$.</p>
 <h2 id="the-symmetric-and-the-antisymmetric-part">The Symmetric and the Antisymmetric Part</h2>
 <p><strong>Definition.</strong> For a binary rule $f$ on $\mathbb{H}$, its <strong>symmetric part</strong> and its <strong>antisymmetric part</strong> are</p>
 <p>$$

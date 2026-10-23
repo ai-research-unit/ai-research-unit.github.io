@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>A Clifford algebra is a ring as well as a vector space, and the two ways in which it can act on itself — from the left and from the right — give two families of operators with opposite multiplicativity. For $a$ in the algebra the <strong>left multiplication</strong> is $L_a : x\mapsto ax$ and the <strong>right multiplication</strong> is $R_a : x\mapsto xa$; the left family is an isomorphism of the algebra onto its image, the right family is an anti-isomorphism, and together the two families generate the algebra of all endomorphisms of the underlying vector space. The pair is the algebraic frame of every Clifford module: the spin representation is the left action on a minimal left ideal, the opposite algebra is carried by the right action, and the commutant of the left family is the right family in the cases where the algebra is central simple.</p>
 <p>The article treats the pair as the geometric-algebraic object of the category. The quadratic form enters through the relations $uv+vu=2B(u,v)$ and $u^2=\mathfrak{Q}(u)$, so the two families are the operators that the chosen form defines on the algebra; the grading enters through the multiplicativity of the parity, $|L_a|=|R_a|=|a|$; and the module structure enters through the bimodule $\mathrm{Cl}(V,\mathfrak{Q})$ with the left action on one side and the right action on the other. The one-sided calculus — the kernels, the images, the commutant and the enveloping algebra — is the subject of <em>One-Sided Operators on a Clifford Algebra</em>, and its properties are quoted rather than repeated; what this article adds is the reading of the two families as the bimodule structure of the algebra, together with the double-commutant theorem that identifies the two families as mutual commutants.</p>
-<p><strong>The boundaries.</strong> The algebra, its grading, its centre and its Wedderburn form are <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the module theory of the regular module and the minimal left ideals is <em>Left Multiplication and the Clifford Module Structure</em>; the operator calculus of the two families is <em>One-Sided Operators on a Clifford Algebra</em>; its signed and twisting variants are <em>The Graded Multiplication Operators</em> and <em>The Signed Left Multiplication on a Clifford Algebra</em> of this category. The adjoints of the two families for the form of the category are <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>, written in the next group. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form on a finite-dimensional space $V$ with polar form $B$, and $\mathfrak{Q}(u)=B(u,u)$, $uv+vu=2B(u,v)$.</p>
 <h2 id="the-two-families">The Two Families</h2>
 <h3 id="definition-and-multiplicativity">Definition and Multiplicativity</h3>
 <p><strong>Definition.</strong> For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>left multiplication</strong> and the <strong>right multiplication</strong> are the $F$-linear operators</p>

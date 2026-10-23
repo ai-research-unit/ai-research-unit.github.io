@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -89,7 +92,7 @@ $$</p>
 <h3 id="the-field-strength-as-a-central-commutator">The field strength as a central commutator</h3>
 <p>The components of the mechanical momentum do not commute. With the convention $\vec B=\nabla\times\vec A$, a direct computation gives</p>
 <p>$$
-[\tilde\pi_k,\tilde\pi_l]=i\hbar\,\frac{ϙ}{c}\,\varepsilon_{klm}B_m\,e_t ,
+\boxed{\;[\tilde\pi_k,\tilde\pi_l]=i\hbar\,\frac{ϙ}{c}\,\varepsilon_{klm}B_m\,e_t\;},
 $$</p>
 <p>so that, for $\vec B=B\vec u_z$,</p>
 <p>$$
@@ -125,7 +128,7 @@ $$</p>
 <h3 id="the-spectrum-and-the-wave-functions">The spectrum and the wave functions</h3>
 <p>The shifted oscillator has the spectrum</p>
 <p>$$
-E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m},
+\boxed{\;E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}\;},
 \qquad
 n=0,1,2,\dots,
 $$</p>
@@ -198,7 +201,7 @@ $$</p>
 <h3 id="counting-the-states">Counting the states</h3>
 <p>The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing</p>
 <p>$$
-N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0},
+\boxed{\;N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0}\;},
 \qquad
 \Phi_0=\frac{hc}{|ϙ|},
 $$</p>

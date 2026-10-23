@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,9 +73,9 @@
 <p>The graviton is the quantum of the metric's deviation from flatness: the massless spin-two field of the linearized Einstein theory. As a classical field equation the linearized Einstein equation belongs to the companion subcategory on the relativistic theory of higher spins; the present article takes that equation as given and develops the <strong>canonical quantization</strong> of the field in the biquaternion framework: the gauge symmetry and the constraint structure, the count of physical polarizations, the transverse-traceless mode expansion, the commutators, the Fock space, and the propagator.</p>
 <p>The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the <strong>symmetric trace-free square of the material vector</strong>, and its decomposition is the framework's own:</p>
 <p>$$
-\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
+\boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
 \qquad
-6 = 1+5 ,
+6 = 1+5\;},
 $$</p>
 <p>so that the symmetric square of the material triplet contains a scalar (the trace) and a spin-two piece, and the trace removal leaves the spin-two carrier of dimension five. This is the same construction that produced the spin-one field (the material vector $V$ itself, dimension three) and the spin-$\tfrac32$ field (the material vector tensored with the spinor, with the $\gamma$-trace removed); the graviton is the case in which the material vector is tensored with itself, symmetrized, and made traceless. The three articles together are the framework's uniform account of the spin content of this subcategory.</p>
 <p>The article is organized as follows. The linearized field and its gauge symmetry are stated, and the gauge-invariant content is identified. The degrees of freedom are counted: ten components of a symmetric tensor, four removed by the gauge, four more by the constraints, leaving the two transverse-traceless polarizations; the transverse-traceless projector is constructed, its idempotency, its trace and its action on the gauge and trace modes are verified, and the rank count confirms the dimension two. The canonical quantization is then carried out: the mode expansion, the commutators, the Fock space, and the bosonic statistics. The propagator, the gauge fixing with its vector ghosts, and the coupled theory are recorded, the biquaternion interpretation of the symmetric square is developed, and the article closes with the accounting of what the algebra supplies and what is imported.</p>
@@ -82,7 +85,6 @@ $$</p>
 <li>Companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, for the bosonic statistics of integer-spin fields.</li>
 <li>Companion article <em>The Dirac Equation in Biquaternionic Form</em>, for the Clifford metric $g$ and the spinor carrier used in the spin-$\tfrac32$ comparison.</li>
 </ul>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, carrying the spin-one adjoint action; $\odot$ denotes the symmetric product, and the trace is taken with the algebra's general quaternionic bilinear form $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$. The graviton field is the small perturbation of the metric, $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ with $|h_{\mu\nu}|\ll1$, and the coupling that multiplies its source is $\kappa^2=16\pi G$; the coordinate metric is the $ict'$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the companion Dirac article is $g=\mathrm{diag}(+1,-1,-1,-1)$, its negative; the index algebra of the linearized theory follows $\eta$ throughout. The d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, natural units are used, and $T_{\mu\nu}$ denotes the matter energy–momentum tensor.</p>
 <h2 id="the-linearized-field-and-its-gauge-symmetry">The Linearized Field and Its Gauge Symmetry</h2>
 <h3 id="the-field-and-the-quadratic-action">The Field and the Quadratic Action</h3>
 <p>The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, the action is</p>
@@ -119,7 +121,7 @@ $$</p>
 <h3 id="the-component-count">The Component Count</h3>
 <p>A symmetric tensor $h_{\mu\nu}$ has ten independent components. The gauge transformation $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ removes four, the four components of $\xi_\mu$, leaving six. The field equation is second order and the gauge conditions are the constraints that remove four more on shell — the four components of the de Donder condition, one of which is the Hamiltonian constraint and three of which are the momentum constraints — leaving</p>
 <p>$$
-10-4-4 = 2
+\boxed{\;10-4-4 = 2\;}
 $$</p>
 <p>physical polarizations. These two are the transverse-traceless modes: transverse to the propagation direction and traceless, the two helicities $\pm2$ of the graviton.</p>
 <h3 id="the-transverse-traceless-projector">The Transverse-Traceless Projector</h3>
@@ -129,13 +131,13 @@ P_{ij,kl} = \tfrac12\left(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk}\right)-\
 $$</p>
 <p>and it has the defining properties</p>
 <p>$$
-P^2 = P ,
+\boxed{\;P^2 = P ,
 \qquad
 \mathrm{tr}\,P = 2 ,
 \qquad
 P_{ij,kl}\left(k_k\xi_l+k_l\xi_k\right) = 0 ,
 \qquad
-P_{ij,kl}\,\delta_{kl} = 0 ,
+P_{ij,kl}\,\delta_{kl} = 0\;},
 $$</p>
 <p>idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\xi_j+k_j\xi_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension</p>
 <p>$$

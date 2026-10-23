@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ S\star T=S\,T^{*} ,
 $$</p>
 <p>which is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. The elements selected by the involution are the <strong>Hermitian</strong> matrices $X^{*}=X$, the <strong>skew-Hermitian</strong> ones $X^{*}=-X$, and the <strong>unitary</strong> ones $U^{*}=U^{-1}$, and the trace functional $\tau(X)=\operatorname{tr}(X)$ is central and compatible with the involution, $\operatorname{tr}(X^{*})=\varsigma\bigl(\operatorname{tr}(X)\bigr)$, so that the pairing $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ is the standard Hermitian form. The present article collects this structure, works the case $n=2$ on the Pauli basis, and identifies the resulting two-product structure with that of the biquaternion algebra, of which $M_{2}(\mathbb{C})$ is a matrix model.</p>
 <p>The subject belongs to the applications of the sesqualgebras, in the group <em>Applications</em>, and it is the matrix instance that the whole operator theory of the category is computed on. The definition of the sesqualgebra, its involution, its units and its collapse at the identity are <em>Sesqualgebras</em>; the derived product, its parities and its one-sided reads are <em>The Sesquilinear Product</em>; the pairing, its two slots, its perfection and the trace $\tau$ that defines it are <em>The Sesquilinear Adjoint Operator</em>; the endomorphism algebra of a module with a form, of which this is the case $M=\mathbb{C}^{n}$, is <em>The Sesquilinear Structure of the Endomorphism Algebra</em>; the Hermitian elements and the positive ones are <em>Hermitian and Skew-Hermitian Elements</em> and <em>Hermitian Squares and the Algebraic Positive Cone</em>; and the four general products of the biquaternion algebra, compared with the two here, are <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> and <em>Comparison Between the Four General Products</em>.</p>
-<p><strong>The boundaries.</strong> The Hermitian, skew-Hermitian and unitary <strong>elements</strong> of a general sesqualgebra are <em>Hermitian and Skew-Hermitian Elements</em>, <em>Units and the Unitary Elements</em> and <em>The Unitary Lie Algebra</em>; the matrix <strong>groups</strong> $\mathrm{U}(n)$ and $SU(n)$ read with their structure are the subject of the matrix-group applications and are named and not developed here; the biquaternion algebra itself, its four general products and its subalgebras, is <em>Introduction to the General Plain Sesqualgebra</em>, <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> and <em>Relations Between the Four General Products</em>; and the algebra $M_{n}(\mathbb{C})$ as an algebra with an involution, without the sesquilinear product, is <em>The Endomorphism Algebra of a Module</em> and <em>Involutions of the Endomorphism Algebra</em>. This article stays inside Part I: no distance, no limit, no completeness.</p>
 <p>Throughout, $n\ge 1$, $M_{n}(\mathbb{C})$ is the algebra of the complex square matrices of order $n$ with the ordinary product, the unit $I$, and the centre the scalar matrices $\mathbb{C}I$. The <strong>involution</strong> is the conjugate transpose, $X^{*}=\overline{X}^{T}$, and $\varsigma$ is the complex conjugation. The trace is $\tau(X)=\operatorname{tr}(X)=\sum_{i}X_{ii}$, the standard matrix units are $E_{ij}$, and $M_{n}(\mathbb{C})$ is a sesqualgebra over $\mathbb{C}$ with the base involution $\varsigma$ in the sense of <em>Sesqualgebras</em>.</p>
 <h2 id="the-sesqualgebra-of-the-complex-matrices">The Sesqualgebra of the Complex Matrices</h2>
 <h3 id="the-involution-and-its-laws">The Involution and its Laws</h3>
@@ -128,7 +130,7 @@ $$</p>
 <p><strong>Theorem (the unitary group).</strong> The unitary matrices form a group under the product, and $|\det U|=1$; the unitary matrices of determinant one form a subgroup.</p>
 <p><strong>Proof.</strong> If $U,V$ are unitary then $(UV)^{*}UV=V^{*}U^{*}UV=V^{*}V=I$, so the product is unitary; $I$ is unitary; and $U^{*}=U^{-1}$ is unitary because $(U^{*})^{*}=U$. For the determinant, $\det(U^{*})=\overline{\det U}$ and $\det(U^{*}U)=\det I=1$, so $|\det U|^{2}=1$.</p>
 <p><strong>Remark (comparison with the sesqualgebra).</strong> The group is $\mathrm{U}(n)$, and it is the group $\mathrm{U}(A)$ of the unitary elements of the sesqualgebra $M_{n}(\mathbb{C})$; the skew-Hermitian matrices are its Lie algebra in the sense of <em>The Unitary Lie Algebra</em>, and the Hermitian matrices are the $i$-multiple of the skew-Hermitian ones, which is the matrix form of the relation between the two classes.</p>
-<h2 id="the-case-math133-and-the-biquaternions">The Case $n=2$ and the Biquaternions</h2>
+<h2 id="the-case-math129-and-the-biquaternions">The Case $n=2$ and the Biquaternions</h2>
 <h3 id="the-pauli-basis">The Pauli Basis</h3>
 <p><strong>Definition.</strong> The <strong>Pauli matrices</strong> are</p>
 <p>$$

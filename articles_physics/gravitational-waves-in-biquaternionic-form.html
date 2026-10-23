@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -75,7 +78,6 @@
 <li><strong>The framework's contribution, and its limit.</strong> The algebra supplies the wave operator $\Box$ and the shape of the gauge transformation, both inherited from the parent, and it supplies the residual gauge freedom as the condition $\Box\tilde Q_{\mathrm d} = 0$ on a material four-vector. It supplies <strong>no natural handle on the polarization count</strong>: the step $6 \to 2$ is a dynamical statement about which of the harmonic-gauge components propagate, and the algebra does not generate it. The physical polarization amplitudes are carried by a symmetric traceless rank-two object, and the algebra's natural single-biquaternion packaging of that object collapses to its trace, which vanishes — so the two polarizations are precisely what a single biquaternion cannot hold. The quadrupole moment is the same kind of object, and the same collapse applies to it; the source $T_{\mu\nu}$ belongs to the same class. Consequently the quadrupole formula is transcribed into the framework's notation, not derived from it, and the prefactor $G/5c^5$ is not fixed by the algebra.</li>
 <li><strong>What is not claimed.</strong> Linearized general relativity is not derived from the biquaternion algebra. No action, no field equation, and no representation of diffeomorphism invariance is supplied here; these are the parent's gaps, and nothing in the radiation theory closes them. The framework predicts no deviation from standard gravitational-wave physics.</li>
 </ul>
-<p><strong>Conventions.</strong> The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_j\vec e_k = -\delta_{jk}e_t + \epsilon_{jkm}\vec e_m$; $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. As in the parent, the coordinates in which tensor components are written are the real components $x^\mu = (ct',x,y,z)$, so $\tilde{Q} = X^\mu\varepsilon_\mu$ and $\partial/\partial Q_t = -i\partial/\partial(ct')$; consequently $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$. A plane wave of wave vector $k^\mu = (\omega/c)(1,0,0,1)$ then has phase $\omega(z/c - t')$, and $k^\mu k_\mu = 0$.</p>
 <h2 id="the-trace-reversed-perturbation-and-the-wave-equation">The Trace-Reversed Perturbation and the Wave Equation</h2>
 <p>This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.</p>
 <p>The metric is $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$ with $|h_{\mu\nu}| \ll 1$, and the <strong>trace-reversed</strong> perturbation is</p>
@@ -125,7 +127,7 @@ $$</p>
 $$</p>
 <p>The harmonic condition is therefore preserved by precisely those gauge transformations with</p>
 <p>$$
-\boxed{\;\Box\xi_\nu = 0\,.\;}
+\boxed{\;\Box\xi_\nu = 0\,\;}.
 $$</p>
 <p>Four functions satisfy this, one for each coordinate direction, so the gauge freedom is <strong>not</strong> exhausted by the harmonic condition. It is a residual gauge freedom of the same kind that the Lorenz condition leaves in electromagnetism, where the condition is preserved by $\Box\Gamma = 0$. A count that imposes harmonic gauge and then declares the remaining six components physical has used the gauge freedom twice in the wrong order: the six components include the four that the residual freedom still moves.</p>
 <p>For a plane wave there is an instructive simplification. Writing $\xi_\nu = a_\nu \exp(ik_\lambda x^\lambda)$, the preservation condition is $k^2a_\nu = 0$, and for a lightlike wave vector $k^2 = 0$ it holds for every $a_\nu$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.</p>
@@ -135,7 +137,7 @@ $$</p>
 <p><strong>Six.</strong> The four gauge functions $\xi^\mu$ are used to impose the four harmonic conditions $\partial^\lambda\bar{h}_{\lambda\nu} = 0$. The space of perturbations satisfying them is six-dimensional. This is a gauge fixing, not yet a reduction to physical content.</p>
 <p><strong>Two.</strong> The residual gauge freedom acts inside that six-dimensional space. Restricting the residual transformations with $\Box\xi_\nu = 0$ to the harmonic-gauge plane wave, the map from the four gauge parameters $a_\nu$ to the change it induces in the six harmonic components has rank four, and its image is complementary to the transverse-traceless amplitudes. The companion verifies exactly this: on the six-dimensional space, the transverse-traceless subspace has dimension two, the residual-gauge image has dimension four, their direct sum has dimension six, and their intersection is trivial. The count is therefore</p>
 <p>$$
-10 \;\xrightarrow[\text{4 harmonic conditions}]{}\; 6 \;\xrightarrow[\text{4 residual gauge functions}]{}\; 2 ,
+\boxed{\;10 \;\xrightarrow[\text{4 harmonic conditions}]{}\; 6 \;\xrightarrow[\text{4 residual gauge functions}]{}\; 2\;},
 $$</p>
 <p>with the last quotient exactly the transverse-traceless amplitudes.</p>
 <p>Two independent checks confirm the final number.</p>
@@ -159,7 +161,7 @@ $$</p>
 $$</p>
 <p>with all other components zero, a direct check verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves</p>
 <p>$$
-A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero},
+\boxed{\;A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero}\;},
 $$</p>
 <p>a two-parameter family: the plus amplitude and the cross amplitude, and nothing else. The two are related by a rotation through $45^\circ$ in the transverse plane, and together they span the two-dimensional space of physical polarizations, whose helicity eigenstates are the two circular combinations $A_{xx}\pm iA_{xy}$.</p>
 <p><strong>The curvature is nonzero, so the wave is not pure gauge.</strong> A direct computation of the linearized Riemann tensor of the displayed ansatz, using</p>
@@ -193,7 +195,7 @@ $$</p>
 <p><strong>No monopole, no dipole.</strong> The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dt' = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dt' = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{t'}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.</p>
 <p><strong>The power.</strong> The radiated power, averaged over a period, is</p>
 <p>$$
-\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\Theta_{ij}/d{t'}^3\,d^3\Theta_{ij}/d{t'}^3 \right\rangle, \;}
+\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\Theta_{ij}/d{t'}^3\,d^3\Theta_{ij}/d{t'}^3 \right\rangle\;},
 $$</p>
 <p>with the same traceless quadrupole moment. The power is quadratic in the <strong>third</strong> derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3x$,</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article develops Fueter theory in the split-quaternion setting: the <strong>Fueter operator</strong>, the <strong>Fueter-regular</strong> functions it defines, the <strong>axial and slice</strong> approach, and the power-series description. In the quaternion and biquaternion theories the Fueter operator is a square root of the definite Laplacian on the quaternion subspace, and the Fueter construction converts holomorphic functions of one complex variable into regular functions by applying a power of the Laplacian to their axial extension. In the split signature the second-order operator is not a Laplacian but the <strong>ultrahyperbolic</strong> operator $\Box = \partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of signature $(2,2)$, and the spherical symmetry on which the classical scalar case rests is replaced by hyperbolic symmetry. The slice results survive verbatim; the axial construction does not, and the reason is the indefinite form together with the zero divisors.</p>
 <p>The article owns the Fueter theory of the category. It relies on <em>Split-Quaternion Regular Functions</em> for the Cauchy–Riemann operator and its factorization, on <em>Split-Quaternion Roots of Minus One</em> for the imaginary units, and on the power-series material developed in <em>Split-Quaternion Analysis</em> and <em>Split-Quaternion Elementary Functions</em>. It is compared throughout with the biquaternion counterpart <em>Fueter Theory for Biquaternions</em> and with the quaternion theory. No physics is invoked, and the first-order operator is called the <strong>Cauchy–Riemann operator</strong>, not the Dirac operator.</p>
-<p><strong>Conventions.</strong> Coordinates are $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$; the vector part is $\vec v = q_x \vec e_x+q_y \vec e_y+q_z \vec e_z \in V$ with $\langle \vec v\rangle_{\natural} = q_x^2-q_y^2-q_z^2$. Partial derivatives are $\partial/\partial q_t,\partial/\partial q_x,\partial/\partial q_y,\partial/\partial q_z$.</p>
 <h2 id="the-fueter-operator-in-the-split-signature">The Fueter Operator in the Split Signature</h2>
 <h3 id="definition-and-conjugate">Definition and Conjugate</h3>
 <p><strong>Definition.</strong> The <strong>Fueter operator</strong> (the <strong>Cauchy–Riemann–Fueter operator</strong>) and its <strong>conjugate</strong> are</p>

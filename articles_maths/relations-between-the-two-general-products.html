@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>This article collects the identities that link the two. The two rules are not unrelated: they are read on one and the same pair, the second differing from the first only by the conjugation of the first factor, and every link below is a consequence of that single distinction. The <strong>exchange relation</strong> moves the conjugation from one factor to the other and reads the quaternionic product of one order as the conjugate of the plain product of the other; the plain product is recovered from the quaternionic one and conversely by the separation of the scalar part of the first factor; the <strong>agreement</strong> of the two products is the annihilation of the second factor by the vector part of the first, so that they agree on the real axis and disagree everywhere else; and the scalar parts of the two are symmetric and differ by twice the dot product of the vector parts.</p>
 <p>The article assumes the two products and their coordinate rules from <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, the article preceding this one, and the conjugation from <em>The Group of Involutions of the Quaternioid</em>. It uses the separation identities of that article for the reading of one product through the other. The property table is <em>Comparison Between the Two General Products</em>, below this article in this category; the symmetric and antisymmetric halves are <em>The 6 Products of the Quaternioid Real Space</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)=\sum_{\mu\in\{x,y,z\}}q_{1\mu} q_{2\mu}$ is the dot product of the vector parts and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-exchange-relation">The Exchange Relation</h2>
 <p>The two products are read on the same pair with the conjugation in the first slot for the second product and in no slot for the first, and the conjugation is an anti-automorphism: it reverses the order of a product and conjugates the two factors.</p>
 <p><strong>Proposition (the conjugate of a product).</strong> For all $\tilde q_1,\tilde q_2$,</p>

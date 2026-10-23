@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,8 +71,6 @@
         <h1 id="reduced-biquaternion-analysis"><strong>Reduced Biquaternion Analysis</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Reduced biquaternion analysis is the study of functions of a reduced biquaternion variable through the operations of the algebra, on the Euclidean space of <em>The Euclidean Topology of the Reduced Biquaternion Algebra</em>. The article fixes the metric setting, defines limits and continuity, states the <strong>problem of differentiability</strong> — the difference quotient needs a division by the increment, and the increment may be a zero divisor — and shows how the algebra resolves it: because the algebra is the direct product of two copies of $\mathbb{C}$, a function that is differentiable in the reduced sense decouples into <strong>two complex analyses</strong>, one in each idempotent coordinate. The class of functions so obtained, the pairs of holomorphic functions of the two coordinates, is the reduced analogue of the holomorphic functions, and it is the smallest possible: the algebra is <strong>commutative</strong>, it <strong>has zero divisors</strong>, the Euclidean norm is not multiplicative, and it is <strong>not a division algebra</strong>, so no richer theory of a single complex variable over the whole four-dimensional space is available. The functions themselves are the subject of <em>Reduced Biquaternion Regular Functions</em>.</p>
-<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The Euclidean metric is $d(\breve Q_{1},\breve Q_{2})=\sqrt{\langle\breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}}$. The element glyph is $\breve Q$, with the breve and without a tilde; a general function is written $\Phi$ or $f$.</p>
-<p><strong>Boundaries.</strong> The metric and the topology are <em>Topology in the Space of Reduced Biquaternions</em>, <em>The Euclidean Topology of the Reduced Biquaternion Algebra</em> and <em>Topology and Metric for Each of the Operations</em>; the two coordinate projections are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the differentiable functions are <em>Reduced Biquaternion Regular Functions</em>; the integral theory is <em>Reduced Biquaternion Integration</em>; the operator theory is <em>Fueter Theory for Reduced Biquaternions</em>. The biquaternion counterpart is <em>Biquaternion Analysis</em>.</p>
 <h2 id="the-metric-structure">The Metric Structure</h2>
 <p><strong>The analysis is done in the metric space of the Euclidean norm, on an open set of the space.</strong></p>
 <p><strong>Definition.</strong> An <strong>open set</strong> $\Omega$ is a union of open balls of the Euclidean metric; a <strong>domain</strong> is a non-empty connected open set. A function is studied on a domain $\Omega\subset\mathbb{B}_{\mathrm{r}}$, with the induced metric $d$ and the induced topology.</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The covariant derivative of a spinor, $\nabla : \Gamma(\mathcal{S})\to\Gamma(T^*M\otimes\mathcal{S})$, is a first-order operator that depends on the metric used to define the spin connection; the Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ is a bundle map whose kernel is a subbundle of the full tensor product, and projecting $\nabla$ onto that kernel produces a first-order operator that is <strong>conformally invariant</strong>. This operator is the <strong>twistor operator</strong>. It is the geometric operator that the conformal class of the metric, rather than the metric, defines, and its kernel consists of the <strong>twistor spinors</strong>, the spinor solutions of the twistor equation. On a four-dimensional conformal manifold the twistor operator is the analytic shadow of the twistor correspondence, and it is the first member of the family of conformally invariant first-order operators of the category.</p>
 <p>The construction has three ingredients, each of which is an operator. The <strong>Clifford multiplication</strong> $c$ contracts a covector with a spinor, and it is a surjection with kernel $\ker c$; its adjoint $c^*$ embeds the spinors into the tensor product, and the composition $cc^*$ is the scalar $n$ on an $n$-manifold. The covariant derivative $\nabla$ therefore splits as the sum of a term with values in the image of $c^*$ — the part that carries the Cauchy–Riemann operator — and a term with values in $\ker c$, which is the twistor operator. This splitting is the orthogonal decomposition of $T^*M\otimes\mathcal{S}$ into $\ker c$ and $\operatorname{im}c^*$, and it is the reason the twistor operator is a projection of the familiar derivative rather than a new derivative.</p>
-<p><strong>The boundaries.</strong> The spin structure, the spinor bundle, the spin connection and the Cauchy–Riemann operator are <em>The Spinor Operator</em> and <em>Spin Geometry</em>; the Clifford multiplication as an operator is <em>The Clifford Multiplication Operator</em>; the adjoint of the twistor operator and the conformal equation are <em>The Adjoint of the Twistor Operator</em> and <em>The Penrose Operator</em>, written in parallel in this category. The twistor space, the twistor correspondence and the Penrose transform as complex-geometric objects are <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em> and <em>Hermitian Spin Geometry and the Twistor Correspondence</em>; only the differential-geometric operator is treated here, and the complex geometry is quoted. The conformal group and the conformal model of Euclidean space are <em>The Conformal Model of Euclidean Space</em> and <em>Conformal Geometry</em>. The base is a Riemannian spin manifold $(M,g)$ of dimension $n\ge3$, with $c(v)^2=-g(v,v)\operatorname{id}$ and $c(v)^*=-c(v)$.</p>
 <h2 id="the-decomposition-of-the-covariant-derivative">The Decomposition of the Covariant Derivative</h2>
 <h3 id="the-clifford-contraction-and-its-kernel">The Clifford Contraction and Its Kernel</h3>
 <p><strong>Definition.</strong> The <strong>Clifford contraction</strong> is the bundle map induced by the Clifford multiplication,</p>

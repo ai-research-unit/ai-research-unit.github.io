@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@ $$</p>
 \tilde\Xi=\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n},\qquad t\in\mathbb{R},\ t\neq0,\quad \vec u_{\mathrm b},\vec u_{\mathrm n}\ \text{real unit vectors with}\ \vec u_{\mathrm b}\perp\vec u_{\mathrm n} .
 $$</p>
 <p>So the exponential form is complete in the sesqualgebra and split in the algebra: one closed form in the sesqualgebra, two in the algebra. Beside these products, every root of $+1$ of the algebra is a <strong>single exponential</strong> of an idempotent, $\tilde\Xi=\exp(i\pi\tilde\Pi_-)$ with $\tilde\Pi_-=\tfrac12(e_t-\tilde\Xi)$, which the algebra shares with the sesqualgebra on the Hermitian roots alone.</p>
-<p><strong>Owners and boundary.</strong> This article owns the exponential <em>reading</em> of the two classifications and nothing else. The classifications are the two articles named above; the exponential of an element, its closed form and its kernel are <em>Biquaternion Elementary Functions</em>; the trichotomy of the exponential and the four factors of the polar word are <em>Modulus–Unit Polar Decomposition of Biquaternions</em>; the unitary group is <em>The Unitary Group of the Biquaternion Algebra</em>; the isotropic idempotents and the zero divisors are <em>Zero Divisors of the Biquaternion Algebra</em> and <em>Zero Divisors of the General Plain Sesqualgebra</em>. The article is pure algebra: no distance, no limit and no derivative enters, and no physics is invoked. The exponential is used as the closed form of a one-parameter group, which is its elementary reading, and not as an analytic object.</p>
 <h2 id="conventions">Conventions</h2>
 <p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and central scalar imaginary $i$ with $i^2=-1$. A general element is $\tilde Q=Q_te_t+\vec Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ and the vector part is $\vec Q$.</p>
 <p>The three conjugations are the <strong>natural</strong> one $\tilde Q^{\natural}=Q_te_t-\vec Q$, the <strong>coefficient</strong> one $\bar{\tilde Q}=\sum_\mu\overline{Q_\mu}e_\mu$, and the <strong>Hermitian</strong> one $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}e_t-\overline{\vec Q}$. The <strong>central square</strong> is $C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, defined by $\tilde Q\tilde Q^{\natural}=C(\tilde Q)e_t$, and the <strong>norm</strong> is the same central element, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=C(\tilde Q)e_t$. The <strong>Hermitian value</strong> is $\langle\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}$, the general plain sesquilinear algebraic norm, read as the scalar part $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\langle\tilde Q\rangle_{*}$. An element is <strong>Hermitian</strong> when $\tilde Q^{*}=\tilde Q$, that is when $Q_t$ is real and $\vec Q$ is purely imaginary.</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,12 +73,6 @@
 <p>A tensor over the reduced biquaternion algebra is an array $A$ of elements of $\mathbb{B}_{\mathrm{r}}$ indexed by several modes, and a product of two tensors is a rule that sums one set of indices of the first against one set of the second. The <strong>Einstein product</strong> sums the trailing indices of the first tensor against the leading indices of the second, pair by pair, each pair over the same range. It is the Einstein summation convention read as an operation on arrays.</p>
 <p>The article defines the product, proves that it is associative and unital, and proves that the <strong>matricisation</strong> carries it to the matrix product. It then reads the units and the zero divisors through that matricisation and proves the one-sided inverse theorem: a square tensor with a right inverse has a left inverse, and the two coincide. The theorem does not rest on a commutative product, which the Einstein product is not; after the reduction to the two complex coordinates it is the statement for matrices over a field, where a right inverse is an inverse.</p>
 <p><strong>The results.</strong> The product of a tensor of order $m+n$ and a tensor of order $n+s$ has order $m+s$; it is bilinear over the algebra, associative, and unital in the square case. The matricisation is a bijection onto the matrices and satisfies $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$, so the square tensors of order $2m$ form an associative algebra isomorphic to $M_{N}(\mathbb{B}_{\mathrm{r}})$, $N=n_{1}\cdots n_{m}$, which is unital and, for $N\ge2$, not commutative. A square tensor is a unit exactly when its two complex coordinate matrices are nonsingular, and then its inverse is the pair of the two complex inverses; a nonzero square tensor is a zero divisor exactly when one coordinate matrix is singular, and a tensor whose entries are all units may still be a zero divisor.</p>
-<p><strong>Boundaries.</strong> The tensor, its slices, its coefficient tensors and its Frobenius norm are <em>Reduced Biquaternion Tensors as a Vector Space</em>, above this article. The t-product of the third-order tensors is <em>The t-Product of Reduced Biquaternion Tensors</em>, below this article; it is a different product on a different class. The tensor product $\otimes$ of <em>Tensor Products of Algebras</em> is a product of algebras, not the contraction of arrays, and it is not the product of this article. The zero divisors of the element algebra are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; those of the t-product algebra are <em>Zero Divisors of the Reduced Biquaternion Tensor Algebra</em>, below this article.</p>
-<p><strong>Conventions.</strong> A tensor is a plain capital typed by its exponent, $A\in\mathbb{B}_{\mathrm{r}}^{n_{1}\times\cdots\times n_{m}\times c_{1}\times\cdots\times c_{n}}$ as in the definition of the product, the order carried by the type and never by a script letter; its entries are lower case, $a_{p_{1}\cdots p_{m}l_{1}\cdots l_{n}}$, and the sizes of the modes are $n_{i}$, $c_{j}$ and $d_{k}$. A multi-index $P=(p_{1},\dots,p_{m})$ is written as one capital letter, and $a_{PL}$ abbreviates the entry with the row multi-index $P$ and the column multi-index $L$. The four real coefficient tensors are $A_{0},A_{1},A_{2},A_{3}$, the tensor being $A=A_{0}+A_{1}i+A_{2}j+A_{3}ij$, and the two complex coordinate tensors are
-$$
-A_{(1)}=A_{0}+A_{2}+i(A_{1}+A_{3}),\qquad A_{(2)}=A_{0}-A_{2}+i(A_{1}-A_{3}),
-$$
-these are the components written $X^{+}$ and $X^{-}$ in <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>; they satisfy $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$ with $\Pi_+=\tfrac12(1+j)$ and $\Pi_-=\tfrac12(1-j)$. The <strong>Einstein product is written by juxtaposition</strong>, $AB$, as the matrix product is: the source writes it $\ast$, and the corpus keeps the mark $\ast$ for the t-product, so the two products are not confused. The identity tensor is $\mathrm I$.</p>
 <h2 id="the-product">The Product</h2>
 <p><strong>Definition.</strong> Let $A$ be a tensor of order $m+n$, with modes of sizes $n_{1},\dots,n_{m}$ before the contracted modes of sizes $c_{1},\dots,c_{n}$, and let $B$ be a tensor of order $n+s$, with the same contracted modes first and then modes of sizes $d_{1},\dots,d_{s}$. Their <strong>Einstein product</strong> is the tensor $AB$ of order $m+s$ with entries
 $$

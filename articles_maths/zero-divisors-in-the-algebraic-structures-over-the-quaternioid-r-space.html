@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 \mathrm{SPA} , \qquad \mathrm{APA} , \qquad \mathrm{GQA} ,
 $$</p>
 <p>the <strong>symmetric plain algebra</strong> of the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$, the <strong>antisymmetric plain algebra</strong> of the cross product $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$, and the <strong>general quaternionic algebra</strong> of the product $\tilde q_1^{\natural}\tilde q_2$. A zero divisor names its product, so the generic definition poses three questions, answered once here. The fourth structure of the space, the algebra product, is a division algebra and owns its element theory in the <em>Quaternions</em> category, in <em>Zero Divisors of the Quaternion Algebra</em>; the table below names it once for the contrast and cites it rather than restating it.</p>
-<p><strong>Scope and owners.</strong> The general vocabulary, the zero divisor, the annihilator, the idempotent and the nilpotent stated once for a general product, is <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>. The criteria of the three companion structures stay owned by their articles, cited one by one in §<em>The Three Companion Structures and the Zero-Divisor Set</em>. The products are <em>The 6 Products of the Quaternioid Real Space</em> and the names <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>; the two forms are <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em>. The property table is <em>Comparison Between the Two General Products</em>; the idempotents and the roots of $+1$ are <em>Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>; the roots of $0$, the square-zero sets and the nilpotents are <em>Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>; the root equation at a general value is <em>Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>; and the annihilators of one element are <em>Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>. The space being real and the norm definite, the empty set is finally read against the complex case in §<em>The Empty Set against the Complex Case</em>.</p>
 <h2 id="the-empty-zero-divisor-set">The Empty Zero-Divisor Set</h2>
 <p><strong>Definition.</strong> The <strong>zero-divisor set of the general quaternionic product</strong> is the vanishing set of the norm with the apex removed,</p>
 <p>$$
@@ -95,7 +97,7 @@ $$</p>
 <p><strong>Corollary (the empty set is contained in every set).</strong> The empty set is contained in the zero-divisor set of each of the three companion structures, and it is equal to the set of exactly one of them, the general quaternionic product.</p>
 <p><em>Proof.</em> Every row of the table of §<em>Results</em> contains the empty set; the general quaternionic row equals it, and the two derived rows are nonempty.</p>
 <p>The ring-theoretic picture breaks on the derived structures: the element $\vec e_x$, whose norm is $1$, is a zero divisor of $\mathrm{SPA}$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=0$ for the Jordan product, and it is invertible, $\vec e_x\bullet(-\vec e_x)=\tfrac12(-\vec e_x^{2}-\vec e_x^{2})=e_t$. A zero divisor need not be a non-unit, and here the failure is not the absence of a unit, the element $e_t$ being a two-sided unit of $\mathrm{SPA}$: it is the absence of associativity, which the equivalence of the two notions needs, and which the symmetrised and antisymmetrised products lack.</p>
-<h3 id="math46-the-general-quaternionic-algebra">$\mathrm{GQA}$, the general quaternionic algebra</h3>
+<h3 id="math37-the-general-quaternionic-algebra">$\mathrm{GQA}$, the general quaternionic algebra</h3>
 <p>The product is $\tilde q_1^{\natural}\tilde q_2$, its conjugate is $\tilde q_1^{\natural}$, and the form of the product is</p>
 <p>$$
 \langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2) ,
@@ -165,7 +167,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The two rows are identical, and that is the theorem: the general quaternionic product and the algebra product select one and the same subset of $\mathbb{H}$, the empty one. The algebra row is owned by <em>Zero Divisors of the Quaternion Algebra</em> and is repeated here for the contrast only. <strong>The word is <em>coincide</em>, not <em>independent</em>.</strong> The zero divisor is defined by an equation that names a product, so the notion belongs to the product and the two products are two definitions, not one; what the theorem says is that in the quaternion space the two definitions select the same subset.</p>
-<h3 id="math93-and-math94-the-two-derived-structures">$\mathrm{SPA}$ and $\mathrm{APA}$, the Two Derived Structures</h3>
+<h3 id="math84-and-math85-the-two-derived-structures">$\mathrm{SPA}$ and $\mathrm{APA}$, the Two Derived Structures</h3>
 <p><strong>The symmetric plain algebra.</strong> The product is the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)=(q_{1t}q_{2t}-(\vec q_1,\vec q_2))e_t+q_{1t}\vec q_2+q_{2t}\vec q_1$, the symmetrisation of the algebra product, so its form is the same,</p>
 <p>$$
 \langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2) ,

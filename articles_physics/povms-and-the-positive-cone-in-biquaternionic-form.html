@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,8 +73,8 @@
 <p>The most general measurement that quantum physics admits is not a projective measurement. It is a <strong>positive operator-valued measure</strong>: a family of positive elements summing to the identity, each paired with the state by the Born rule. In the biquaternion framework these elements are elements of the Hermitian subspace $\mathbb{M}_+$, and the condition that a measurement be possible is the condition that they lie in the <strong>positive cone</strong> of the algebra. This article develops the cone, the effects it contains, and the general measurement, in the framework's own terms.</p>
 <p>The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_te_t + i\vec a$ with $a_t\in\mathbb{R}$, $\vec a\in\mathbb{R}^3$, positivity of the operator is</p>
 <p>$$
-\tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_t\geq0
-\quad\Longleftrightarrow\quad a_t\geq|\vec a| ,
+\boxed{\;\tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_t\geq0
+\quad\Longleftrightarrow\quad a_t\geq|\vec a|\;},
 $$</p>
 <p>so the cone of the algebra is the future light cone of the biquaternion norm. An <strong>effect</strong> is an element of the operator interval $0\leq\tilde{E}\leq e_t$, which in coefficients reads $|\vec a|\leq\min(a_t,1-a_t)$; a <strong>POVM</strong> is a resolution of the identity by effects, $\sum_y\tilde{E}_y = e_t$; and the Born weight for the measurement is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $p_y = \mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$; the trace reading is given once, at normalisation. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.</p>
 <p>The cone is self-dual with respect to the Hermitian form (the trace pairing in the $2\times2$ image), which is the algebraic reason the pairing serves both as the Born rule and as the duality that makes the measurement formalism work. The article derives this, characterizes the effects, exhibits the general POVM, and works two examples: the <strong>trine</strong> POVM, which distinguishes three equatorial states better than any projective measurement, and unambiguous discrimination, which two non-orthogonal states admit with a POVM and not with a projective measurement. The general measurement's realization as a projective measurement on a larger system — Naimark's dilation — is stated in the framework's language, and its status as an extension of the algebra is noted.</p>
@@ -119,13 +122,13 @@ a_t \geq |\vec a| \qquad \text{and} \qquad 1-a_t \geq |\vec a|,
 $$</p>
 <p>because $e_t-\tilde{E} = (1-a_t)e_t - i\vec a$ is positive exactly when $1-a_t\geq|\vec a|$. Equivalently,</p>
 <p>$$
-|\vec a| \;\leq\; \min\bigl(a_t,\ 1-a_t\bigr),
+\boxed{\;|\vec a| \;\leq\; \min\bigl(a_t,\ 1-a_t\bigr)\;},
 $$</p>
 <p>which requires $0\leq a_t\leq1$. The set of effects is thus the intersection of the cone $C_+$ with its reflection $e_t - C_+$; it is a compact convex body, the <strong>operator interval</strong> $[0,e_t]$.</p>
 <h3 id="the-extremes-of-the-effect-body">The extremes of the effect body</h3>
 <p>The extreme points of the operator interval are exactly the idempotents,</p>
 <p>$$
-\tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_t],
+\boxed{\;\tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_t]\;},
 $$</p>
 <p>i.e. the elements $a_t = 1$ with $|\vec a|=0$ (the identity) and $a_t = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one Hermitian idempotents). A <strong>projective measurement</strong> uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.</p>
 <h3 id="the-born-rule-for-effects">The Born rule for effects</h3>
@@ -179,7 +182,7 @@ $$</p>
 <h3 id="naimark-dilation">Naimark dilation</h3>
 <p>Every POVM on the defining module $S$ is the compression of a projective measurement on a larger module. There is an ancillary space $\mathbb{C}^d$, an isometry $V:S\to S\otimes\mathbb{C}^d$, and a PVM $\{\tilde{F}_y\}$ on the larger space such that</p>
 <p>$$
-\tilde{E}_y = V^\dagger \tilde{F}_y V .
+\boxed{\;\tilde{E}_y = V^\dagger \tilde{F}_y V\;}.
 $$</p>
 <p>This is <strong>Naimark's dilation theorem</strong>, the measurement analogue of Stinespring's dilation for channels. In the framework's language, the dilation adjoins an ancillary factor and replaces the general effects by orthogonal idempotents; the price is that the ancillary system must be traced out, which is precisely the information loss that a non-projective measurement represents. The dilation is standard; it is cited, not derived, and it belongs to the same circle of ideas as the Kraus representation of channels. It also shows why the framework's general measurement theory does not require abandoning the idempotent picture of a projective measurement: it embeds it in a larger algebra.</p>
 <h2 id="two-worked-examples">Two Worked Examples</h2>

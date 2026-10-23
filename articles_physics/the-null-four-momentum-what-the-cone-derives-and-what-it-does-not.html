@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -106,7 +109,7 @@ $$</p>
 <h3 id="mass-is-the-value-of-the-norm">Mass is the value of the norm</h3>
 <p>The mass-shell relation, read backwards, says</p>
 <p>$$
-m^2c^2 = -\langle\tilde{P}\rangle_{\natural}.
+\boxed{\ m^2c^2 = -\langle\tilde{P}\rangle_{\natural}\ }\ .
 $$</p>
 <p>Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this interpretation <strong>mass is the value of the invariant</strong> — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $\langle\cdot\rangle_{\natural}$ on its four-momentum.</p>
 <h2 id="the-core-derivations">The Core Derivations</h2>
@@ -118,7 +121,7 @@ $$</p>
 <p>For a four-wavevector $\tilde P=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde P\tilde{R}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.</p>
 <p>What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U$ of unit norm acts on the sector, and the norm is multiplicative, so</p>
 <p>$$
-N\!\left(\tilde U\tilde{Q}\tilde U^{*}\right) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \left|\langle\tilde U\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural},
+\boxed{\ N\!\left(\tilde U\tilde{Q}\tilde U^{*}\right) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \left|\langle\tilde U\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural}\ } ,
 $$</p>
 <p>using $\langle\tilde U^{*}\rangle_{\natural}=\overline{\langle\tilde U\rangle_{\natural}}$ and $\langle\tilde U\rangle_{\natural}=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\vec k|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.</p>
 <p>The argument is short but it is doing real work. In the metric formulation the invariance of the light cone under the Lorentz group and the constancy of $c$ are two statements, and their agreement is a consistency to be checked. Here there is one statement: the norm is multiplicative and the rotor has unit norm. The cone article states the invariance; the point made here is the consequence for the speed, and the fact that the speed is a <em>derived</em> frame-independent number rather than a separate kinematical postulate.</p>
@@ -186,7 +189,7 @@ $$</p>
 <h3 id="the-algebra-has-no-mass-scale">The algebra has no mass scale</h3>
 <p>There is a structural reason behind the previous paragraph, and it is stronger than a statement about what the cone happens to say. The norm is homogeneous of degree two,</p>
 <p>$$
-\langle\lambda\tilde{Q}\rangle_{\natural} = \lambda^2\langle\tilde{Q}\rangle_{\natural}
+\boxed{\ \langle\lambda\tilde{Q}\rangle_{\natural} = \lambda^2\langle\tilde{Q}\rangle_{\natural}\ }
 $$</p>
 <p>The null set is therefore invariant under every rescaling: if $\tilde{Q}$ is null then so is $\lambda\tilde{Q}$, for every $\lambda$. The cone is a scale-invariant object, and an algebra whose special locus is scale-invariant contains no preferred scale. To generate a mass scale one must put one in, and the framework does: the mass term is a term in the Lagrangian or the field equation, not in the algebra. The companion articles record the two choices side by side — <em>Canonical Quantization of the Biquaternion Maxwell Field</em> for the massless case and <em>Canonical Quantization of the Biquaternion Proca Field</em> for the massive one — and the difference is precisely the presence of a term the algebra does not contain.</p>
 <p>This is the cleanest statement of the article. The framework's algebra cannot fix the photon's mass, because it cannot fix any mass; the value is empirical and is inserted where a scale must enter, that is, in the dynamics.</p>
@@ -199,7 +202,7 @@ $$</p>
 <h3 id="the-null-momentum-is-an-idempotent-multiple">The null momentum is an idempotent multiple</h3>
 <p>The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_t+\vec p$ with $\vec u=\vec p/|\vec p|$,</p>
 <p>$$
-\tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u),
+\boxed{\ \tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u)\ },
 \qquad
 \tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$</p>
@@ -405,7 +408,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the spectrum, the zero-divisor regime and the idempotent stratum.</li>
+<li><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the spectrum, the zero-divisor regime and the idempotent stratum.</li>
 <li>Hermann Minkowski, "Space and Time" (1908), reprinted in <em>The Principle of Relativity</em> (Dover), for the light cone and the null interval.</li>
 <li>Albert Einstein, "Zur Elektrodynamik bewegter Körper", <em>Annalen der Physik</em> <strong>17</strong> (1905) 891–921, for the independence of the speed of light from the state of motion of the emitter.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for isotropic vectors and zero divisors in $\mathbb{C}\otimes\mathbb{H}$ and $M_2(\mathbb{C})$.</li>

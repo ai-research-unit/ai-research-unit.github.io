@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,7 +88,7 @@ $$</p>
 <p>The twist $\alpha$ of the signed inner conjugation is usually introduced as an abstract map, the grade involution, equal to $+1$ on the even slot and $-1$ on the odd slot. In the ambient algebra it is an ordinary conjugation.</p>
 <p><strong>Theorem (the grade involution is a conjugation).</strong> Let $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$ be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$</p>
 <p>$$
-\Omega\,x\,\Omega^{-1}=(-1)^{\lvert x\rvert}\,x=\alpha(x).
+\boxed{\;\Omega\,x\,\Omega^{-1}=(-1)^{\lvert x\rvert}\,x=\alpha(x)\;}.
 $$</p>
 <p>With the dictionary $i\mapsto-\Omega$, the same statement reads: <strong>the grade involution is the conjugation by the central scalar imaginary</strong>, which is the pseudoscalar read on the algebra.</p>
 <p><strong>Proof.</strong> The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $\gamma^{j}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=\gamma^{\mu_1}\cdots\gamma^{\mu_k}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity. The dictionary is the one recorded by <em>Biquaternion Other Algebraic Element Representations</em>, and it identifies $i$ with $-\Omega$, so conjugation by $i$ agrees with conjugation by $\Omega$ on the ambient algebra; on the even slot both are the identity, which is the statement of <em>Biquaternion Versors and the Orthogonal Group</em> about the central imaginary.</p>
@@ -98,7 +101,7 @@ $$</p>
 <h2 id="two-fermionic-steps-are-bosonic">Two Fermionic Steps Are Bosonic</h2>
 <p><strong>Proposition (the signs cancel on composition).</strong> For units $x,z$ of the ambient algebra,</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz},
+\boxed{\;\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}\;}
 $$</p>
 <p>and if $x$ and $z$ are both odd then $xz$ is even and the composite is the <strong>ordinary</strong> inner conjugation $\mathrm{Ad}_{xz}$. The composite is signed exactly when the two factors have opposite parity.</p>
 <p><strong>Proof.</strong> The composition law is the one of the signed inner conjugation, $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$, and on an even element the twist is the identity, so $\mathrm{Ad}^{\alpha}_{xz}=\mathrm{Ad}_{xz}$ whenever $xz$ is even. The product of two odd elements is even by the grading table.</p>
@@ -197,9 +200,9 @@ $$</p>
 <h3 id="two-reflections-and-one-rotation">Two Reflections and One Rotation</h3>
 <p>The generators $\gamma^1$ and $\gamma^2$ are both odd and both of square $-1$. Their signed conjugations are the reflections $\mathrm{Ad}^{\alpha}_{\gamma^1}=\rho_{\gamma^1}$ and $\mathrm{Ad}^{\alpha}_{\gamma^2}=\rho_{\gamma^2}$, and their composite is</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_{\gamma^1}\circ\mathrm{Ad}^{\alpha}_{\gamma^2}
+\boxed{\;\mathrm{Ad}^{\alpha}_{\gamma^1}\circ\mathrm{Ad}^{\alpha}_{\gamma^2}
 =\mathrm{Ad}^{\alpha}_{\gamma^1\gamma^2}
-=\mathrm{Ad}_{\vec e_z},
+=\mathrm{Ad}_{\vec e_z}\;}
 $$</p>
 <p>the last equality because $\gamma^1\gamma^2=\vec e_z$ is an element of the biquaternion algebra. The composite is an ordinary conjugation by a bosonic element and is a rotation. Two reflections of determinant $-1$ have composed to a rotation of determinant $+1$, and the composite element is a quaternion unit: the parity word of the isometry is the grading of the two factors.</p>
 <h3 id="the-square-of-a-generator">The Square of a Generator</h3>

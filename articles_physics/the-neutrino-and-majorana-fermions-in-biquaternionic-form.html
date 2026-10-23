@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -80,7 +83,6 @@
 </li>
 </ul>
 <p>The article is organized as follows. The next section fixes the three notions and their component counts. A section then constructs charge conjugation as a real structure on $\Delta$, states the basis and signature, and separates basis-independent existence from basis-dependent form. A section treats the Majorana condition, its consistency with the massive equation, and the surviving and vanishing bilinears. A section identifies which conjugation of the biquaternion algebra plays the role of charge conjugation. A section tests the sector split against the reality condition and reports the obstruction. A section states what in the neutrino's description is empirical input rather than a consequence of the framework, and a closing section separates what the framework supplies, transcribes, and does not supply. Open questions follow.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, and $i$ is the scalar imaginary, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The conjugations are the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$ (conjugation of the coefficients) and the Hermitian conjugate ${}^{*}=({}^{\natural})^{\,*}$; the anti-Hermitian conjugate is $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$; its complex conjugate $\bar{S}=(0,\tfrac12)$ is the right-handed Weyl module, on which $\tilde{U}\in SL(2,\mathbb{C})$ acts by $\mathsf{M}_2(\tilde{U}^{*})$. The Dirac module is $\Delta=S\oplus\bar{S}$, and a Dirac spinor is written in blocks as $\Psi=(\psi_L,\psi_R)^{T}$ with $\psi_L\in S$, $\psi_R\in\bar{S}$. The chirality operator is $\gamma_5=\mathrm{diag}(-I_2,I_2)$, $\gamma_5^2=I_4$, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$.</p>
 <p>For the matrix form of the Clifford algebra we use the <strong>block (chiral) basis</strong></p>
 <p>$$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
@@ -165,7 +167,7 @@ $$</p>
 <p>The relation $KK^{*}=I_4$ is the statement that $\mathcal{C}:\psi\mapsto\psi^{c}$ is an <strong>involution</strong>, $\mathcal{C}^2=1$; it is the real structure, and it is conjugate-linear by construction, $\mathcal{C}(\lambda\psi)=\lambda^{*}\mathcal{C}(\psi)$. The matrix $C$ itself has $C^2=-I_4$ and is not the real structure. The distinction matters below: the fixed points of $\mathcal{C}$ are the Majorana spinors, and no fixed points of $C$ are involved.</p>
 <p>The consistency of this real structure with the Dirac operator is a second, independent condition. It is</p>
 <p>$$
-K\,\gamma^{\mu\,*}\,K^{-1} \;=\; -\,\gamma^{\mu},
+\boxed{\;K\,\gamma^{\mu\,*}\,K^{-1} \;=\; -\,\gamma^{\mu}\;},
 $$</p>
 <p>which holds for $\mu=0,1,2,3$ in the block basis. Because $\mathcal{C}$ is conjugate-linear, this is what makes $\mathcal{C}$ commute with the kinetic operator: for a constant matrix $M$, $\mathcal{C}(M\psi)=K M^{*}\psi^{*}$, so $\mathcal{C}(i\gamma^\mu\partial/\partial Q_\mu\,\psi)=i\gamma^\mu\partial/\partial Q_\mu\,(\mathcal{C}\psi)$ if and only if $K(i\gamma^\mu)^{*}K^{-1}=i\gamma^\mu$, which is exactly the displayed condition. In words: <strong>charge conjugation commutes with the massless Dirac operator and anticommutes with the Clifford generators</strong>. This is the property that makes the Majorana constraint consistent with the wave equation, and it is verified independently of any statement about a mass.</p>
 <p><strong>Block form, and the exchange of the chiral halves.</strong> In blocks $K$ is off-diagonal,</p>
@@ -233,7 +235,7 @@ $$</p>
 <p>and it determines $\psi_R$ from $\psi_L$. It is not an extra equation imposed on the field after the fact; it is a restriction of the spinor module to a real form, and the question that has to be answered is whether the restricted fields solve a sensible massive equation.</p>
 <p><strong>The massive equation.</strong> For a single self-conjugate field the mass term cannot be the Dirac term $m\bar{\psi}\psi$ of a Dirac field, because the two chiral halves are conjugate, not independent. The equation that carries a mass is the <strong>Majorana equation</strong></p>
 <p>$$
-i\gamma^\mu\partial/\partial Q_\mu \psi \;=\; m\,\psi^{c}.
+\boxed{\;i\gamma^\mu\partial/\partial Q_\mu \psi \;=\; m\,\psi^{c}\;}.
 $$</p>
 <p>If its solution also satisfies $\psi^{c}=\psi$, then it satisfies the ordinary massive Dirac equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$; conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The content is therefore in the consistency of the constraint with the equation, and that consistency is a computation, not a convention.</p>
 <p><strong>Consistency is verified, not assumed.</strong> Apply the real structure $\mathcal{C}$ to the Majorana equation. Since $\mathcal{C}$ is conjugate-linear and commutes with $i\gamma^\mu\partial/\partial Q_\mu$ (the previous section, verified on all $\mu$), and since $\mathcal{C}^{2}=1$,</p>
@@ -350,9 +352,9 @@ $$</p>
 $$</p>
 <p>and left multiplication by the spatial generators $\vec e_x,\vec e_y,\vec e_z$ does not preserve $\mathbb{M}_-$. The sharpest single instance is</p>
 <p>$$
-\vec e_x\in\mathbb{M}_-,
+\boxed{\;\vec e_x\in\mathbb{M}_-,
 \qquad
-\vec e_x \vec e_x=-e_t\in\mathbb{M}_+ .
+\vec e_x \vec e_x=-e_t\in\mathbb{M}_+\;}.
 $$</p>
 <p>So the spatial part of the Dirac operator does not preserve $\mathbb{M}_-$; more generally, for a generic $\tilde{\Psi}\in\mathbb{M}_-$ the products $\vec e_\mu\tilde{\Psi}$ lie in neither sector. The time term fails for the same reason: $\partial/\partial Q_t$ contributes a factor $-i$, and $i\,\tilde{\Psi}\in\mathbb{M}_+$ whenever $\tilde{\Psi}\in\mathbb{M}_-$. Hence $\nabla\tilde{\Psi}\notin\mathbb{M}_-$ for generic $\tilde{\Psi}\in\mathbb{M}_-$: <strong>the Dirac operator does not preserve the material sector, so the sector cannot be a Majorana real form.</strong> A Majorana reduction requires a subspace that the equation carries into itself, and $\mathbb{M}_-$ is not one.</p>
 <p>The reason is structural rather than accidental. $\mathbb{M}_-$ is a real form of the <em>algebra</em> under the order-reversing map $\flat$, and as a vector space it is the four-dimensional material sector of the companion articles — the space of four-vectors and of the material field, on which the Lorentz group acts by $\tilde{U}\,\tilde{Q}\,\tilde{U}^{*}$. A Majorana spinor is a real form of the <em>spinor module</em>, on which the Lorentz group acts by one-sided multiplication. The two live in different representations and have different dimensions available to them (four real components each, but transforming differently). The sector split therefore does not help: it supplies a real form of the wrong object. If it is used as the reality condition it actively obstructs, because it makes the mass equation fail to close and would identify a spin-$\tfrac12$ field with a four-vector.</p>

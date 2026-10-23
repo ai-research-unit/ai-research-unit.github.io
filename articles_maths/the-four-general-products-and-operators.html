@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -71,7 +74,6 @@
 <p>This article states that division of labour precisely, with the matrices of one element read through all four insertions. It closes the group <em>The Four General Products</em> and carries the passage from a product to an operator.</p>
 <p>The answer to the question of the title is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is <em>forced</em> by the algebra and not merely preferred.</p>
 <p>The four general products, their relations and their comparison are <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, <em>Relations Between the Four General Products</em> and <em>Comparison Between the Four General Products</em>; the four pairings and their Gram matrices are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>; the four adjoints and the reading of the family names are <em>The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples</em>; the conjugations and their group are <em>The Group of Involutions</em>; the signed sandwich and its reflection formula are <em>The Signed Sandwich on a Clifford Algebra</em> and <em>Two-Sided Operators with the Signed Product</em>. The article is pure algebra.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_t}e_t+\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y+\overline{Q_z}\vec e_z$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$. The vector subspace is $V=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\ne0$, and $\mathrm{Sc}$ is the scalar part.</p>
 <h2 id="the-four-general-products-are-one-multiplication-with-two-insertions">The Four General Products Are One Multiplication with Two Insertions</h2>
 <h3 id="the-four-rules">The Four Rules</h3>
 <p><strong>Definition (the four general products).</strong> The four general products are</p>
@@ -123,7 +125,7 @@ $$</p>
 </ol>
 <p>The products do not supply 1, and they supply the <em>repertoire</em> of 2 without choosing from it. That is the sense in which the operator is chosen by the modeller: given the algebra with its product, one chooses $\natural$, or $\bar{\cdot}$, or ${}^{*}$, or none, and therefore the operator.</p>
 <h2 id="one-element-four-operators">One Element, Four Operators</h2>
-<h3 id="the-four-operators-of-math52">The Four Operators of $\vec e_x$</h3>
+<h3 id="the-four-operators-of-math36">The Four Operators of $\vec e_x$</h3>
 <p>Fix the element $\tilde Q_4=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:</p>
 <p>$$
 \begin{aligned}

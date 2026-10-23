@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the <strong>unitary biquaternions</strong> $\tilde{U}$ with $\tilde{U}^{*}\tilde{U}=e_t$. This is the maximal compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.</p>
 <p>This article collects the <em>Hermitian</em> half of the topology of the unit group: the unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The <em>bilinear</em> half — the units as the complement of the null cone, the centre, the distribution of the units among the three classes — is <em>The Biquaternion Unit Group as a Topological Group</em> and <em>Norm and Invertibility in the General Quaternionic Algebra</em>, and the ambient Euclidean topology and the contractibility of the algebra are <em>The Euclidean Topology of the Biquaternion Algebra</em>.</p>
-<p><strong>Conventions.</strong> As in the sibling articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix isomorphism of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, which carries the dagger to the conjugate transpose.</p>
 <h2 id="the-unitary-biquaternions">The Unitary Biquaternions</h2>
 <p><strong>Definition.</strong> The <strong>unitary biquaternions</strong> are</p>
 <p>$$
@@ -112,7 +114,7 @@ $$</p>
 <p><strong>Proof.</strong> The eigenvalues of $\tilde{Q}_{2,t}$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_{2,t}$ is positive definite and $\tilde{U}\tilde{Q}_{2,t}\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{Q}_3$ (<em>Two-Sided Operators on the General Plain Sesqualgebra</em>, §<em>The Operator of an Element</em>), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_{2,0}=\tilde{Q}_2$, $\tilde{Q}_{2,1}=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.</p>
 <p><strong>Corollary (connectedness).</strong> $\mathbb{B}^{\times}$ is connected, and $\mathrm{U}(\mathbb{B})$ is connected.</p>
 <p><strong>Proof.</strong> $\tilde{H}$ joins every unit to a unitary element, and $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$ is a continuous image of the connected group $S^{1}\times S^{3}$.</p>
-<h2 id="the-retraction-of-the-norm-one-group-onto-math118">The Retraction of the Norm-One Group onto $S^{3}$</h2>
+<h2 id="the-retraction-of-the-norm-one-group-onto-math111">The Retraction of the Norm-One Group onto $S^{3}$</h2>
 <p><strong>Theorem.</strong> The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{N=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_z\cong\mathbb{Z}$ and vanishing $\pi_x,\pi_y$.</p>
 <p><strong>Proof.</strong> Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element</p>
 <p>$$

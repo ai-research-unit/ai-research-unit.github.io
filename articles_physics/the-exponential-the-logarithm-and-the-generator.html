@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,8 +73,6 @@
 <p>The exponential of a biquaternion is never zero. Its image is exactly the group of units, and the zero-divisor cone is the boundary that it never reaches. The logarithm is the inverse, and it exists on the units and only there. A logarithm of a unit is a <strong>generator</strong>: the element whose one-parameter exponential is the process.</p>
 <p>The three statements belong together. The image says which processes have a generator. The kernel says how many generators a process has. The cone says where the answer stops. This article reads the three, and closes with the question that the reading answers: <strong>which processes have a generator?</strong></p>
 <p>The article owns no theorem. The closed forms of the exponential and the logarithm, the kernel, the principal branch and the fibre are those of <em>Biquaternion Elementary Functions</em>. The boundary behaviour is that of <em>Exponential Polar Decomposition of Biquaternions</em>. The reversible/irreversible dichotomy is that of <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>. The article states the results, links to the proofs, and records the interpretation and its limits.</p>
-<p><strong>Placement.</strong> The article belongs to the Algebra block of the category, in the Element and Operator Representations group, after <em>The Exponential Word and Its Boundary</em> and before <em>The Krein Form and the Indefinite Structure</em>. It is the category article that reads the exponential and the logarithm; the mathematics stays in the Analysis group of the Mathematical menu.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$, and $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The vector part has the complex norm $B=\sqrt{(\vec Q,\vec Q)}$ and, for $B\neq0$, the axis $\vec U=\vec Q/B$ with $\vec U^2=-e_t$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\tilde Q$ is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -110,9 +111,9 @@
 <h2 id="the-image">The Image</h2>
 <p>The exponential is entire and its values are units,</p>
 <p>$$
-\exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},
+\boxed{\;\exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},
 \qquad
-\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)\neq0.
+\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)\neq0\;}.
 $$</p>
 <p>It is surjective. Every unit has a logarithm, because $\mathbb{B}\cong\mathsf M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm. The image is therefore exactly the group of units, and the zero-divisor cone is exactly the complement of the image.</p>
 <p>The closed form separates the two regimes.</p>
@@ -178,7 +179,7 @@ $$</p>
 </table></div>
 <p>For $B\neq0$ the complete kernel on the diagonal part is the <strong>parity-matched lattice</strong></p>
 <p>$$
-L=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\right\}.
+\boxed{\;L=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb{Z},\ m\equiv n\pmod2\right\}\;}.
 $$</p>
 <p>The scalar and the vector shifts cannot be chosen independently. The rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$ is the sublattice of index two on which both integers are even, and the other coset is $\pi i e_t+\pi\vec U$. The matching is the statement that the two eigenvalue logarithms must be shifted in step.</p>
 <p>The kernel is <strong>not a subgroup</strong>. It is not closed under addition, because the exponential is not a homomorphism. The sum of two kernel elements need not lie in the kernel: $2\pi\vec e_x$ and $2\pi\vec e_y$ both exponentiate to $e_t$, while $2\pi(\vec e_x+\vec e_y)$ does not. The kernel is a union of conjugacy classes, and it meets the cone: $\pi i e_t+\pi\vec e_z$ has norm zero and exponentiate to the identity.</p>
@@ -303,9 +304,9 @@ $$</p>
 </table></div>
 <p>The idempotent stratum is reached by the polar word with the scale collapsing and the boost diverging at the same rate. The nilpotent stratum is reached by the rescaled unipotent line,</p>
 <p>$$
-\tilde Q=\lim_{t\to\infty}\frac{\exp(tN)-e_t}{t},
+\boxed{\;\tilde Q=\lim_{t\to\infty}\frac{\exp(tN)-e_t}{t},
 \qquad
-N^2=0.
+N^2=0\;}.
 $$</p>
 <p>Neither stratum is a value. The cone is the boundary in the strict sense: every point of it is a limit of units, and no point of it is a unit.</p>
 <p>The cone is also the wall of reversibility. A unit is a process that can be run backwards; a zero divisor is not. The exponential sees the difference as the difference between a value and a limit, and the logarithm sees it as the difference between a finite generator and no generator.</p>

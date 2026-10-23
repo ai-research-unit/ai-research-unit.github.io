@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,11 +82,10 @@
 <li><strong>The open part.</strong> What is not standard, and what this article cannot settle, is whether the gauge condition can be selected by the algebra rather than imposed from outside; whether the operator-valued field should be $\mathbb{B}$-valued or valued in a complex-vector module; whether the biquaternion structure gives the physical polarizations a native meaning; and what a biquaternion Fock space would be. The last two are the subjects of the planned companion articles on the photon and on the Fock space.</li>
 </ul>
 <p>The article is organized as follows. The next section fixes the natural variable and explains why it is natural and why that is a problem. The following section develops the gauge freedom and the two equivalent formulations of the classical theory. The next section carries out the constraint analysis. The section after that writes the constraints in the biquaternion notation and isolates what the algebra does and does not determine. The next section performs the Gupta–Bleuler quantization and exhibits the two transverse physical polarizations with positive norm. A section compares the result with the scalar field, a section compares it with the Dirac case, and the article closes with an explicit accounting of what is standard and what is open.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A}=i\phi/c\,e_t+\vec A$ and $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$. For the quantization of a free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $\tilde{F}=i\vec E-\vec H$; dimensionful factors are restored only where they carry meaning. The spacetime metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the signature of the biquaternion norm on $\mathbb{M}_-$; the Clifford metric of the parent Dirac article is $g=-\eta$.</p>
 <h2 id="the-natural-variable-and-why-it-is-not-canonical">The Natural Variable and Why It Is Not Canonical</h2>
 <p>The classical theory of the companion article is one equation for one object:</p>
 <p>$$
-\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J},\qquad \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad \tilde J=ic\rho\,e_t+\vec J.
+\boxed{\;\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J},\qquad \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad \tilde J=ic\rho\,e_t+\vec J\;}.
 $$</p>
 <p>The field strength $\tilde{F}$ is a biquaternion with vanishing scalar part. It is <strong>gauge invariant</strong>, and it is the object that the equation is written for. This is what it means to say that the field strength is the natural variable of the biquaternionic formulation. Two properties make it natural, and both are worth recording before the difficulty is described.</p>
 <p>First, the equation is <strong>first order</strong>: $\tilde{\nabla}$ appears once. This is the same order as the biquaternion Dirac equation, and it is one order lower than the wave equation for the potential.</p>
@@ -155,7 +157,7 @@ $$</p>
 $$</p>
 <p>so that on the constraint surface, where $\pi^0\approx0$,</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)\approx0.
+\boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)\approx0\;}.
 $$</p>
 <p>The two constraints are therefore the scalar parts of $\tilde{\pi}$ and of $\tilde{\nabla}^{\natural}\tilde{\pi}$. This is the same shape as the <strong>integrability condition</strong> of the companion article, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expresses charge conservation; Gauss's law and charge conservation are written with the same operator. That is a genuine feature of the notation: the constraint is not an extra object appended to the algebra but a scalar-part projection that already appears in it.</p>
 <p>The gauge freedom, correspondingly, is the freedom to add $\tilde{\nabla}\Gamma$ to $\tilde{A}$; it lives in the scalar direction of the material sector, and $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ is its field. The physical field strength is the <strong>vector part</strong> of $\tilde{\nabla}^{\natural}\tilde{A}$, invariant under the transformation, and the framework's own account says the scalar part is not physical.</p>
@@ -171,8 +173,8 @@ A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 $$</p>
 <p>with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\eta_{\mu\nu}\epsilon^{(r)\mu}\epsilon^{(s)\nu}=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,</p>
 <p>$$
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
+\boxed{\;\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
+=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)\;},
 $$</p>
 <p>with all other commutators vanishing. The signs are not optional: the timelike mode has $\zeta_0=-1$, so the one-particle state $a^{\mathrm{fop}\dagger}_0|0\rangle$ has <strong>negative norm</strong>, $\langle0|a^{\mathrm{fop}}_0a^{\mathrm{fop}\dagger}_0|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.</p>
 <p>The negative-norm states are removed by a <strong>subsidiary condition</strong>. The Lorenz gauge condition $S=0$ is imposed on the positive-frequency part of the field,</p>
@@ -181,7 +183,7 @@ $$</p>
 $$</p>
 <p>which for a mode with momentum along $\vec e_z$ reduces to</p>
 <p>$$
-\big(a^{\mathrm{fop}}_0(\vec k)-a^{\mathrm{fop}}_3(\vec k)\big)|\psi\rangle=0 .
+\boxed{\;\big(a^{\mathrm{fop}}_0(\vec k)-a^{\mathrm{fop}}_3(\vec k)\big)|\psi\rangle=0\;}.
 $$</p>
 <p>This condition does not set the timelike and longitudinal excitations to zero individually; it leaves the combination $a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3$. That combination is annihilated by the condition,</p>
 <p>$$
@@ -195,8 +197,8 @@ $$</p>
 $$</p>
 <p>so, lying in the physical subspace and being null, it is orthogonal to every state in that subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has <strong>positive-definite norm</strong> and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,</p>
 <p>$$
-\sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\vec k)\,\epsilon_j^{(\lambda)}(\vec k)
-=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j,
+\boxed{\;\sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\vec k)\,\epsilon_j^{(\lambda)}(\vec k)
+=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j\;},
 $$</p>
 <p>which makes the physical field transverse: the polarization sum annihilates every component along $\vec u_k$.</p>
 <p>This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\zeta_0=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the signature $(-,+,+,+)$ of that inner product is the signature of the biquaternion norm on $\mathbb{M}_-$, the $ict'$ spacetime metric the framework already carries, so the indefinite metric is not a new object but the framework's own. Whether that identification has content beyond the coincidence of signatures is open.</p>

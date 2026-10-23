@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -141,7 +144,7 @@ $$</p>
 <p>it returns to its initial position. The spinor returns only up to a phase, which is computed exactly.</p>
 <p>In the matrix representation the spinor is $\psi(0) = (\cos\tfrac{\theta_0}{2},\,\sin\tfrac{\theta_0}{2})^{\!T}$ and the propagator is</p>
 <p>$$
-U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2 ,
+\boxed{\;U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2\;},
 $$</p>
 <p>so the total phase is $\phi_{\mathrm{tot}} = \pi$ and $\psi(T) = -\psi(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:</p>
 <p>$$
@@ -150,7 +153,7 @@ $$</p>
 $$</p>
 <p>Hence the AA phase is</p>
 <p>$$
-\gamma_{AA} = \pi - \pi\cos\theta_0 = \pi(1-\cos\theta_0) = \frac{\Omega}{2},
+\boxed{\;\gamma_{AA} = \pi - \pi\cos\theta_0 = \pi(1-\cos\theta_0) = \frac{\Omega}{2}\;},
 \qquad \Omega = 2\pi(1-\cos\theta_0).
 $$</p>
 <p>The traversal here is clockwise as seen from $+\vec u_z$ (the corpus Larmor sense), so $\Omega_{\mathrm{sgn}} = -\Omega$ and the general formula gives $\gamma_{\mathrm{geo}} = -\tfrac12(-\Omega) = +\tfrac{\Omega}{2}$, in exact agreement. The result was verified numerically for $\theta_0 = 0.3, 0.9, 1.57, 2.4, 3.0$; in every case $\gamma_{AA}\equiv +\Omega/2\pmod{2\pi}$, with the continuous branch passing through $0$ at $\theta_0 = 0$ and at $\theta_0 = \pi$ as it must.</p>
@@ -174,9 +177,9 @@ $$</p>
 <h3 id="the-rotor-and-its-two-faces">The Rotor and Its Two Faces</h3>
 <p>The evolution over a closed loop of the state is, in the algebra, the product of a rotor and a central phase,</p>
 <p>$$
-\tilde{U} = \exp(i\alpha)\,\tilde{u},
+\boxed{\;\tilde{U} = \exp(i\alpha)\,\tilde{u},
 \qquad
-\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x) = \cos\frac{\Phi}{2}\,e_t - \sin\frac{\Phi}{2}\,\vec u_x,
+\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x) = \cos\frac{\Phi}{2}\,e_t - \sin\frac{\Phi}{2}\,\vec u_x\;},
 $$</p>
 <p>for some axis $\vec u_x$, where $\Phi$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde{H}\rangle dt')$. The two faces are:</p>
 <ul>

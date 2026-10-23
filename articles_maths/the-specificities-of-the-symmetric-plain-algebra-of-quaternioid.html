@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ of <em>Introduction to the Symmetric Plain Algebra</em>. This article gathers the properties that characterise it — commutativity, the unit, the Jordan identity and the <strong>definiteness of its generic norm</strong> — and the classes that degenerate in it: the idempotents reduce to $0$ and $e_t$, the nilpotents reduce to $0$, the Peirce decomposition is trivial, and the formal reality of its underlying product fails. It closes with the isolation of the block among the companion products of the chapter.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_t$, and the scalar line and the vector subspace are those of <em>Introduction to the Remarkable Subspaces of the Quaternions</em>. The names of the companion products are those of <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-properties-of-the-block">The Properties of the Block</h2>
 <h3 id="commutativity-the-unit-and-the-jordan-identity">Commutativity, the Unit and the Jordan Identity</h3>
 <p><strong>Theorem.</strong> The product $\bullet$ is <strong>commutative</strong>, <strong>unital</strong> with two-sided unit $e_t$, satisfies the <strong>Jordan identity</strong></p>

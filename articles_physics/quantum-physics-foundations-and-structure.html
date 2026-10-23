@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -148,7 +151,7 @@ $$</p>
 <h2 id="the-born-rule">The Born Rule</h2>
 <p>The <strong>Born rule</strong> gives the probability of an outcome of a measurement. For an observable $A$ with spectral decomposition $A = \sum_a a P_a$ and a state $\rho$, the probability of measuring outcome $a$ is</p>
 <p>$$
-p(a) = \mathrm{Tr}(P_a \rho).
+\boxed{\;p(a) = \mathrm{Tr}(P_a \rho)\;}.
 $$</p>
 <p>The <strong>expectation value</strong> of $A$ in the state $\rho$ is</p>
 <p>$$
@@ -182,7 +185,7 @@ $$</p>
 $$</p>
 <p>The <strong>positivity</strong> of $\rho$ is equivalent to the condition</p>
 <p>$$
-|\vec r| \leq 1.
+\boxed{\;|\vec r| \leq 1\;}.
 $$</p>
 <p>The state is <strong>pure</strong> if and only if $|\vec r| = 1$, and <strong>mixed</strong> otherwise. The <strong>maximally mixed state</strong> has $\vec r = 0$, i.e., $\rho = I/2$.</p>
 <h3 id="the-bloch-sphere">The Bloch Sphere</h3>
@@ -223,7 +226,7 @@ $$</p>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
 <p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t')\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
 <p>$$
-i\hbar\, \frac{\partial}{\partial t'}|\psi(t')\rangle = H\, |\psi(t')\rangle,
+\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\psi(t')\rangle = H\, |\psi(t')\rangle\;},
 $$</p>
 <p>where $H$ is the Hamiltonian. The solution is</p>
 <p>$$

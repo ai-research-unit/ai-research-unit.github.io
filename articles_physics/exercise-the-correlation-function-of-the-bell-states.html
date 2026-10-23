@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -287,7 +290,7 @@ E(\vec u_x, \vec u_y) = \frac{1}{4}\sum_{m\in\{x,y,z\}}\epsilon_m\,(-4\,a_m b_m)
 $$</p>
 <p>So the correlation function is</p>
 <p>$$
-\boxed{\;E(\vec u_x, \vec u_y) = -\epsilon_1\,a_1 b_1 - \epsilon_2\,a_2 b_2 - \epsilon_3\,a_3 b_3.\;}
+\boxed{\;E(\vec u_x, \vec u_y) = -\epsilon_1\,a_1 b_1 - \epsilon_2\,a_2 b_2 - \epsilon_3\,a_3 b_3\;}.
 $$</p>
 <h3 id="step-4-the-result_1">Step 4: The result</h3>
 <p>Applying this formula to the four sign patterns:</p>

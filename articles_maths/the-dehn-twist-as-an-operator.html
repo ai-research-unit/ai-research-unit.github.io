@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>A <strong>Dehn twist</strong> is the simplest nontrivial homeomorphism of a surface: cut the surface along a simple closed curve, rotate one of the two sides by a full turn, and reglue. The result is a homeomorphism supported in a neighbourhood of the curve, fixing the curve pointwise, and infinite in order. Its action on the first homology is the <strong>transvection</strong> determined by the intersection form, and this article reads the twist as an operator: the operator on the homology, its formula, and its place in the mapping class group, where the twists are the generators.</p>
 <p>The twist is the second surface operator of the group, alongside <em>The Mapping Class Group Action</em> with which it pairs: the twists generate the mapping class group, the mapping class group acts on the homology, and the two facts together say that the transvections generate the symplectic group. The <strong>Picard–Lefschetz formula</strong> — that the monodromy around a vanishing cycle is the transvection with that cycle — is the same operator in a one-parameter family, and is named here and developed in the algebraic geometry of this batch.</p>
 <p><strong>The article assumes</strong> the intersection form on the first homology of a surface and the symplectic group, from <em>Bilinear Forms</em> and <em>Symplectic Forms and Poisson Brackets</em>, the fundamental group and the mapping class group from <em>The Fundamental Group and Covering Spaces</em> and the articles of this Part, and the notion of an isotopy class of homeomorphisms.</p>
-<p><strong>The boundaries of the article.</strong> The mapping class group as a whole — its definition, presentations, the Nielsen–Thurston classification, the curve complex and the Torelli group — is <em>Mapping Class Groups</em>, written in this Part, and is cited here; the present article treats the single operator and its immediate consequences. The measured foliations and the Thurston boundary need the measure theory of Part III. The monodromy of a Lefschetz fibration and the vanishing cycles are the algebraic-geometry articles of <em>Algebraic Geometry</em>; the higher-dimensional analogues of the twist, the twists along spheres, need the smooth structures of Part III and are named there. No metric, no hyperbolic structure and no analysis is used.</p>
 <h2 id="the-dehn-twist">The Dehn Twist</h2>
 <p><strong>Definition.</strong> Let $S$ be a closed orientable surface and let $a\subseteq S$ be a simple closed curve. Choose a closed annular neighbourhood $N$ of $a$, with a homeomorphism $N\cong S^1\times[-1,1]$ carrying $a$ to $S^1\times\{0\}$. The <strong>Dehn twist about $a$</strong> is the homeomorphism
 $$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,7 +88,6 @@ The method is the workhorse of entanglement entropy in quantum field theory and 
 </li>
 </ol>
 <p>The article proceeds as follows. Entanglement entropy and the Rényi entropies are defined, with the entropy as their $n\to1$ limit. The replica trick is recalled in its field-theoretic form and restated in finite dimension. The replica structure of the biquaternion tensor power is set out, with the shift operator and the swap. A two-qubit biquaternion state is worked out completely, its reduced state, its Rényi entropies and the $n\to1$ limit being computed and tabulated. The article closes with the established/interpretation/open split.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace, $\mathrm{Tr}(A_1\otimes\cdots\otimes A_n)=\prod_i\mathrm{Tr}(A_i)$. Reduced states and partial traces are those of <em>Strong Subadditivity in the Biquaternion Framework</em>, states and the Bloch ball those of <em>The GNS Construction in the Biquaternion Framework</em>, and the entropy closed form that of <em>Relative Entropy and the Biquaternion Framework</em>.</p>
 <h2 id="entanglement-entropy-and-renyi-entropies">Entanglement Entropy and Rényi Entropies</h2>
 <h3 id="definitions">Definitions</h3>
 <p>Let $\rho_{AB}$ be a state of a bipartite system with Hilbert space $\mathcal H_A\otimes\mathcal H_B$, and let
@@ -118,7 +120,7 @@ $$
 $$
 using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\lambda_i\log\lambda_i$. Hence
 $$
-S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}.
+\boxed{\;S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}\;}.
 $$
 The derivation uses only that $\rho_A$ has a finite spectrum, so it holds verbatim in the biquaternion framework.</p>
 <h2 id="the-replica-trick">The Replica Trick</h2>
@@ -153,7 +155,7 @@ $$
 $$
 and the replica moment is the expectation of the shift,
 $$
-Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big].
+\boxed{\;Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big]\;}.
 $$
 This is the finite-dimensional image of the $n$-sheeted cover: the sheets are the replicas, the branch locus is the $A$ factor, and the cyclic joining of the sheets is the cyclic permutation. The state is the $n$-fold product, so the expectation is a product-state matrix element, which is why the computation is elementary.</p>
 <h3 id="the-swap-operator-and-the-purity">The Swap Operator and the Purity</h3>
@@ -207,12 +209,12 @@ S_A=-\tfrac12\log\frac{1-r_A^2}{4}-r_A\,\mathrm{artanh}(r_A),
 r_A=\big|\cos2\theta\big|.
 $$
 That this equals the binary entropy $h(\cos^2\theta)$ is an identity, and it was checked numerically: at $\theta=0.2$ both give $0.1662545197$; at $\theta=0.4$ both give $0.4255547593$; at $\theta=\pi/4$ both give $\log2=0.6931471806$. The replica route gives the same number through the moments.</p>
-<h3 id="renyi-entropies-and-the-math133-limit">Rényi Entropies and the $n\to1$ Limit</h3>
+<h3 id="renyi-entropies-and-the-math119-limit">Rényi Entropies and the $n\to1$ Limit</h3>
 <p>The replica moments of the reduced state are
 $$
-Z_n=\cos^{2n}\theta+\sin^{2n}\theta,
+\boxed{\;Z_n=\cos^{2n}\theta+\sin^{2n}\theta,
 \qquad
-S_n=\frac{1}{1-n}\log\big(\cos^{2n}\theta+\sin^{2n}\theta\big).
+S_n=\frac{1}{1-n}\log\big(\cos^{2n}\theta+\sin^{2n}\theta\big)\;}.
 $$
 The entropies are tabulated for three angles and four orders.</p>
 <div class="table-scroll"><table>
@@ -258,7 +260,7 @@ The entropies are tabulated for three angles and four orders.</p>
 </tbody>
 </table></div>
 <p>The table displays the three regimes: near the product state ($\theta=0.2$, $r_A=0.921$) the entropies are small and strongly ordered by $n$; at maximal entanglement ($\theta=\pi/4$, $r_A=0$) all Rényi entropies equal $\log2$, as they must for a maximally mixed reduced state; and $\theta=0.4$ interpolates. The $n\to1$ limit was checked directly: $S_{1.001}=0.4253642$ and $S_{0.999}=0.4257455$ at $\theta=0.4$, bracketing the value $S_1=0.4255548$, and the same at $\theta=0.2$. The replica method and the biquaternion closed form therefore agree on the whole one-parameter family.</p>
-<h3 id="the-replica-shift-at-higher-math176">The Replica Shift at Higher $n$</h3>
+<h3 id="the-replica-shift-at-higher-math162">The Replica Shift at Higher $n$</h3>
 <p>For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ holds for every $n$ with the cyclic shift $\mathsf{C}_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $\mathrm{Tr}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.</p>
 <h3 id="a-second-example-the-w-state">A Second Example: the W State</h3>
 <p>A second example has a different spectrum. The three-qubit W state, reduced to two qubits by tracing out the third, has the reduced state of the strong-subadditivity companion article,

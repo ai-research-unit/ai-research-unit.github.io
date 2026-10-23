@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -87,24 +90,24 @@ $$</p>
 <h3 id="the-thirring-model">The Thirring model</h3>
 <p>The Thirring model is defined in $1+1$ dimensions by the Lagrangian density</p>
 <p>$$
-\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
-- \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right),
+\boxed{\;\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
+- \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right)\;},
 $$</p>
 <p>with $\psi = \left(\psi_+, \psi_-\right)$ a two-component spinor, $g$ the coupling, $m$ the mass, and $\gamma^\mu$ the two-dimensional gamma matrices. There is only one independent local quartic interaction in two dimensions: the spinor has four real components and the Pauli principle, together with the Fierz rearrangement identities of the two-dimensional Clifford algebra, makes the quartic terms equivalent. The vector-vector and axial-axial combinations are related by the two-dimensional Hodge duality of the currents, so a single coupling $g$ covers the model.</p>
 <p>The <strong>massless</strong> Thirring model is exactly solvable: the multipoint correlation functions are known in closed form (Johnson; Hagen; Klaiber), and the theory satisfies the Osterwalder–Schrader axioms, so it is a genuine quantum field theory and not merely a Lagrangian. The <strong>massive</strong> model is solvable by the Bethe ansatz, which gives the exact mass spectrum and scattering matrix; multi-particle production cancels on shell. The massive Thirring model is exactly equivalent to the quantum <strong>sine-Gordon</strong> model, with the fundamental fermions of the one corresponding to the solitons of the other — the Coleman–Mandelstam equivalence, which the companion article on bosonisation develops in the framework's notation.</p>
 <h3 id="the-soler-model">The Soler model</h3>
 <p>The Soler model is defined in $3+1$ dimensions by</p>
 <p>$$
-\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
-+ \frac{g}{2}\left(\bar\psi\psi\right)^2,
+\boxed{\;\mathcal{L} = \bar\psi\left(i\not\partial - m\right)\psi
++ \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$</p>
 <p>with $\psi$ a four-component spinor and $\not\partial$ the four-dimensional slash. Its interaction is the square of the <strong>scalar</strong> bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $\left(i\bar\psi\gamma_5\psi\right)^2$, and the two together are the chirally invariant combination of the NJL interaction.</p>
 <p>Recently, exact solutions of the Soler model in closed form have been found, which is why the model is of more than illustrative interest: it is one of the few interacting fermion equations with explicit non-perturbative solutions.</p>
 <h2 id="the-hehldatta-interaction-from-torsion">The Hehl–Datta Interaction from Torsion</h2>
 <p>The geometric route of the earlier section gives the equation</p>
 <p>$$
-i\gamma^\mu\nabla_\mu\psi - m\psi
-+ \frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi = 0,
+\boxed{\;i\gamma^\mu\nabla_\mu\psi - m\psi
++ \frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi = 0\;},
 $$</p>
 <p>where $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. The cubic term becomes significant only at densities of order $m^2/\kappa$, which are far outside laboratory matter; the interaction is a high-density effect.</p>
 <p>If the torsion is allowed to propagate rather than to be eliminated algebraically, the same nonlinear structure survives with the coefficient replaced by a term involving the spinor–torsion coupling $X$ and the torsion mass $M$, of the form $-X^2/M^2$. With the natural sign this self-interaction is <strong>repulsive</strong>, as in the Nambu–Jona-Lasinio model, and its scale is set by the torsion mass. The two routes — a non-propagating torsion fixed by gravity, and a propagating torsion with its own mass — therefore give the same axial-axial channel with different coefficients, which is the reason the channel is regarded as the generic one rather than a special choice.</p>

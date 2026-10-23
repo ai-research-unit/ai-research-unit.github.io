@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@ $$
 $$
 so its vanishing set is the union of the two lines $Q_{+}=0$ and $Q_{-}=0$ and not an irreducible quadric cone. This is the geometric form of the fact that the algebra is a direct product of two fields: a product of two fields has zero divisors, and its zero divisors are the two factors.</p>
 <p><strong>The results.</strong> The zero divisors of the multiplication are the nonzero elements of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are exactly the elements of vanishing reduced norm. The two lines are the two maximal ideals; they meet only at the origin; each is closed under multiplication; and the product of an element of one line with an element of the other is zero, so the whole of one line annihilates the whole of the other. The cone is homogeneous, and each of its two components is of real dimension two; the complement of the cone in $\mathbb{B}_{\mathrm{r}}\setminus\{0\}$ is the group of units.</p>
-<p><strong>Boundaries.</strong> The criterion of invertibility and the reduced norm are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>, above this article in this category; the multiplicativity of the reduced norm is <em>The Four Products, Their Forms and Their Algebraic Norms</em>. The annihilators of the zero divisors, one line annihilating the other, are <em>Annihilators of the Algebra of the Reduced Biquaternions</em>, below this article; the idempotents and the projections are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>; and the structure of the algebra as a direct product of two fields is <em>Introduction to the Algebra of the Reduced Biquaternions</em>. The complex and real quadrics of the four forms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <h3 id="the-definition-and-the-equation">The Definition and the Equation</h3>
 <p><strong>The null cone of the multiplication is the nonzero vanishing set of the reduced norm, and its equation is $Q_{\blacktriangle}^{2}=Q_{\blacktriangledown}^{2}$.</strong></p>

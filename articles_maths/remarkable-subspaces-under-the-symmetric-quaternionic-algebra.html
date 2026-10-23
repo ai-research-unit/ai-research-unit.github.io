@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -84,12 +87,6 @@ the product carries are <em>Remarkable Subspaces under the General Quaternionic 
 recomputed. The isotropic elements are <em>Zero Divisors of the Biquaternion Algebra</em> and <em>The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra</em>; the staying-inside statement for the symmetrised quaternionic
 product is <em>Remarkable Subspaces and the Four General Products</em>.</p>
-<p><strong>Conventions.</strong> A general element is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ with $\vec Q_2=\sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$ and
-$Q_{2,\mu}\in\mathbb{C}$; $A,B$ are complex numbers; $h,g$ are real quaternions, $h=h_te_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ with
-$h_\mu\in\mathbb{R}$; and $\vec p,\vec q,\vec r$ are real vectors of $\mathbb{R}^3$. The remarkable subspaces have the real bases $\{e_t,ie_t\}$ for the centre, $\{\vec e_k,i\vec e_k\}$ for the vector subspace,
-$\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ for $\mathbb{H}_{\mathbb{B}}$, $\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ for
-$i\mathbb{H}_{\mathbb{B}}$, $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ for $\mathbb{M}_+$ and $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ for
-$\mathbb{M}_-$.</p>
 <p><strong>Definition.</strong> A subspace $U$ <strong>stays inside itself</strong> under $\star$, or is <strong>kept inside itself</strong> by $\star$,
 when $\tilde Q_1,\tilde Q_2\in U$ implies $\tilde Q_1\star\tilde Q_2\in U$.</p>
 <h2 id="the-product-on-the-remarkable-subspaces">The Product on the Remarkable Subspaces</h2>

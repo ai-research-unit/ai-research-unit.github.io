@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The two forms of the complex space, the plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, are read here on the two remarkable subspaces of the complex numbers, the real subspace $\mathbb{R}_{\mathbb{C}}$ and the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$. This article gives the restriction rule, the value of the two forms on a general pair of each subspace, their algebraic norms, their signatures and their null sets, and reports the sense in which the real subspace carries the definite form and the imaginary one its negative.</p>
 <p>The restriction here is read on a base of dimension one over $\mathbb{R}$; the forms and their algebraic norms are those of <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, above this article in this category, and the subspaces are those of <em>Complexoid Subspaces</em>. The topological norm $|\cdot|=\sqrt{\langle\cdot\rangle_{*}}$ and the invertibility criterion are <em>Complex Norm and Invertibility</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> <strong>Bar</strong> is complex conjugation and the <strong>Hermitian</strong> mark is the bar, ${}^{*}=\bar{\cdot}$. Elements of the two subspaces are written $Q_1=q_1$ and $Q_2=q_2$ on the real subspace and $Q_1=iq'_1$ and $Q_2=iq'_2$ on the imaginary one; the letters $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ are the two forms and are never elements. The form $\langle\cdot,\cdot\rangle_{\natural}$ coincides with $\langle\cdot,\cdot\rangle$ here, and the form $\langle\cdot,\cdot\rangle_{\natural*}$ with $\langle\cdot,\cdot\rangle_{*}$; <em>Complex Norm and Invertibility</em>, below this article in this category, writes the positive definite norm as $\langle Q\rangle_{*}=Q\bar Q$, the algebraic norm of $\langle\cdot\rangle_{*}$, not as $\langle Q\rangle_{\natural}=Q^2$.</p>
 <h2 id="the-restriction-rule">The Restriction Rule</h2>
 <p>The <strong>restriction</strong> of a form $\varphi$ to a subspace $U$ is the form read on the elements of $U$,</p>
 <p>$$

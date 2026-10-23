@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 \mathbb{C},\quad \mathbb{C}j,\quad \mathbb{R}\{1,j\},\quad \mathbb{R}\{i,ij\},\quad \mathbb{R}\{1,ij\},\quad \mathbb{R}\{i,j\},\quad \mathbb{C}\Pi_+,\quad \mathbb{C}\Pi_-,
 $$</p>
 <p>and the comparison is summarised by three statements. <strong>The subalgebras among the coordinate planes are the three fixed planes</strong> $\mathbb{C}=\mathbb{R}\{1,i\}$, $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{1,ij\}$; the three anti-fixed planes $\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are not closed, because each contains a basis element whose square leaves it. <strong>The ideals are the two idempotent lines alone</strong>, the minimal ideals $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, which are also the two simple modules; no coordinate plane is an ideal, since none is stable under the whole algebra except the whole space. <strong>All eight planes are permuted by the three involutions</strong>, each involution fixing or exchanging them, and this invariance is the reason the space decomposes along them. Among the subalgebras, $\mathbb{C}$, $\mathbb{R}\{1,ij\}$, $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are copies of the complex field — four copies, with the imaginary units $i$, $ij$, $i\Pi_+$ and $i\Pi_-$ respectively — and $\mathbb{R}\{1,j\}$ is a copy of the split-complex numbers.</p>
-<p><strong>Boundaries.</strong> The spaces, their characters and their norms are <em>Introduction to the Remarkable Subspaces</em>; the decompositions are <em>Decompositions Along the Remarkable Subspaces</em>; the involutions are <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>; the idempotents and the ideals are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em> and <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>. The forms restricted to the planes are <em>Remarkable Subspaces and the Four Forms of the Reduced Biquaternions</em> and the norms <em>Remarkable Subspaces and the Four Algebraic Norms of the Reduced Biquaternions</em>, of the later subsections of this category. The biquaternion counterpart is <em>Comparison of the Remarkable Subspaces</em> of the biquaternion category.</p>
 <h2 id="the-table-of-the-spaces">The Table of the Spaces</h2>
 <p><strong>The eight spaces, with their defining equation, their basis, their real dimension and the type of their norm, are the following.</strong></p>
 <div class="table-scroll"><table>

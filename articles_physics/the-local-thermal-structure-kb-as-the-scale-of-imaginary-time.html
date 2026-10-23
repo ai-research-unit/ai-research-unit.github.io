@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -89,7 +92,7 @@ extend analytically to a strip of width $\beta$ in the complex time plane, and t
 <p><strong>The direction is the algebraic one.</strong> The KMS strip is a strip in the <em>complex</em> time plane, and the direction along which the correlation functions are continued is the imaginary one — the direction of $ict'$ in the material sector, spanned by the coefficient $ict'$ that is imaginary by construction (<em>The KMS Condition and the Biquaternion Framework</em>). The shift $t'\mapsto t'+i\beta$ moves the real parameter along that algebraic direction.</p>
 <p><strong>The period is $\beta$, and the length is $c\beta$.</strong> The imaginary-time direction is compact with circumference $\beta$ <em>in the coordinate $t'$</em>, so the thermal circle has circumference $c\beta=\hbar c/(k_BT)$ in the material sector's units. The identity
 $$
-c\beta=\frac{\hbar c}{k_BT}
+\boxed{\;c\beta=\frac{\hbar c}{k_BT}\;}
 $$
 is exact, and it was checked numerically for $T=2.725$, $300$ and $1000\,\mathrm{K}$: the ratio $(\hbar c/k_BT)/(\beta c)$ is $1$ to twelve decimal places. So the two scales multiply, and they are independent: $c$ comes from $\epsilon\mu$ and $\beta$ from $T$.</p>
 <p><strong>The same shape: a fixed direction with one real positive scale.</strong> Here is the parallel in its sharp form. The thermal structure is <em>also</em> a fixed algebraic direction — the algebra's imaginary-time axis — with <em>one real positive scale attached to it locally</em>, namely $\beta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\hbar/(k_BT(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$. It is pointwise: a temperature field is a field of local scales. It is global only in equilibrium, when $T$ is constant, exactly as the local complex structure is global only when $c$ is constant. And it requires a scale: without $k_B$ the statement "the imaginary time is periodic" has no period.</p>
@@ -138,9 +141,9 @@ is exact, and it was checked numerically for $T=2.725$, $300$ and $1000\,\mathrm
 <p>That distinction has a checkable consequence, because the pointwise character of the thermal scale can be exhibited.</p>
 <p><strong>Tolman's law on the framework's metric.</strong> In a static metric the local temperature satisfies $T\sqrt{-g_{tt}}=\text{const}$. With the framework's $g_{tt}=-c^2$ this reads
 $$
-T\,c=\text{const},
+\boxed{\;T\,c=\text{const},
 \qquad\text{so}\qquad
-T\propto\frac{1}{c}\propto n .
+T\propto\frac{1}{c}\propto n\;}.
 $$
 The local temperature is inversely proportional to the local speed of light: where the medium is optically denser, the local temperature is higher. The relation was checked directly: with a reference $T_0=300\,\mathrm{K}$ at $c_1=1$, a point at $c_2=1.5$ carries $T=200\,\mathrm{K}$, and $Tc=300$ at both points. The pointwise character is the same as that of $c$: the temperature varies from point to point precisely as the local complex structure does, and the two variations are tied by the metric.</p>
 <p><strong>Two local temperatures of established physics.</strong> The two temperatures the corpus already treats are local in exactly this sense. The <strong>Unruh temperature</strong> of an accelerated observer,

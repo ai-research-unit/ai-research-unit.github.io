@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -89,7 +92,7 @@ with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian fo
 $$
 \boxed{\;\vec N \mapsto \exp(-i\theta)\,\vec N,
 \qquad \tilde F \mapsto \exp(-i\theta)\,\tilde F,
-\qquad \langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural},\;}
+\qquad \langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural}\;},
 $$
 it preserves $W$ and $\vec S$, rotates $(I_1,2cI_2)$ by $2\theta$, is a symmetry of the source-free equations and, with magnetic sources admitted, of the sourced equations as well. The exercise also records two defects in the parent: the ambiguous use of $\bar{\vec N}$ where $\vec N^*$ is meant, and the missing biquaternion Lorentz transformation law of $\tilde F$, whose obvious candidate fails for a boost.</p>
 <h2 id="problem-1-the-duality-rotation-as-a-phase">Problem 1: The Duality Rotation as a Phase</h2>
@@ -356,8 +359,8 @@ $$
 $$
 so
 $$
-\tilde U^{\natural}\,\tilde F\,\tilde U
-= i\cosh\psi\,E_0\,\vec e_x + \sinh\psi\,E_0\,\vec e_y = \tilde F_{\mathrm D} .
+\boxed{\;\tilde U^{\natural}\,\tilde F\,\tilde U
+= i\cosh\psi\,E_0\,\vec e_x + \sinh\psi\,E_0\,\vec e_y = \tilde F_{\mathrm D}\;}.
 $$
 The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the rotation of part (a) is reproduced by $\tilde U\tilde F\tilde U^{*} = \tilde U\tilde F\tilde U^{-1}$. The two cases require different orderings, so no single one of these adjoint actions, with the parents' rotor conventions, is the Lorentz transformation law of $\tilde F$. The parent gives no law at all, and its claim that the two pieces "transform independently under the Lorentz group" is therefore unverified: the abstract representation-theoretic statement that the self-dual and anti-self-dual pieces carry the two complex conjugate three-dimensional representations is standard, but the biquaternion realization of that statement is not supplied, and the obvious candidate for it is false. Determining the correct biquaternion action — plausibly an adjoint action conjugated by a fixed linear map on the field-strength space — is left open. <strong>This is the gap this exercise reports in its parent.</strong></p>
 <h2 id="further-problems">Further Problems</h2>
@@ -384,9 +387,9 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 <h2 id="summary">Summary</h2>
 <p>The duality rotation of the electromagnetic field is the central phase rotation of the Riemann–Silberstein vector,
 $$
-\vec E \mapsto \vec E\cos\theta + c\,\vec B\sin\theta,
+\boxed{\;\vec E \mapsto \vec E\cos\theta + c\,\vec B\sin\theta,
 \qquad
-\vec B \mapsto \vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta,
+\vec B \mapsto \vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta\;},
 $$
 which is exactly $\vec N\mapsto \exp(-i\theta)\vec N$ and, because $\tilde F = i\sqrt{\epsilon}\vec N$, exactly $\tilde F\mapsto \exp(-i\theta)\tilde F$. The phase is the scalar imaginary $i$; it is central, so the rotation is an internal $\mathrm{U}(1)$ symmetry and not a Lorentz transformation.</p>
 <p>Duality preserves the Hermitian form: the energy density $W$ and the Poynting vector $\vec S$ are unchanged. It rotates the biquaternion norm by the doubled phase, $\langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural}$, so the pair $(I_1,2cI_2)$ rotates by $2\theta$ and $I_1^2 + 4c^2I_2^2$ is invariant. It is a symmetry of the source-free Maxwell equations and of the biquaternionic equation $\tilde\nabla\tilde F = 0$; with electric sources alone it is not a symmetry, because at $\theta = \pi/2$ the rotation turns the electric source into a term of magnetic form. The discrete ancestor of the rotation is the classical substitution symmetry — interchange of $\vec E$ and $\vec H$ together with $\epsilon$ and $\mu$ — which the absence of magnetic charge also breaks; dropping that condition makes the symmetry exact.</p>

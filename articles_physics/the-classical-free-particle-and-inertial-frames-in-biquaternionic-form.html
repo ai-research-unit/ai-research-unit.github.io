@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -102,7 +105,7 @@ $$</p>
 $$</p>
 <p>again an element of the material sector: imaginary scalar part $i\gamma c$, real vector part $\gamma\vec v$. Its biquaternion norm is fixed,</p>
 <p>$$
-\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2 ,
+\boxed{\;\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2\;},
 $$</p>
 <p>which is the biquaternion form of the relativistic normalization $v^\mu v_\mu = -c^2$. The normalization is a <strong>constraint</strong>, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{M}_-$.</p>
 <p>The four-momentum is the mass times the four-velocity,</p>
@@ -111,7 +114,7 @@ $$</p>
 $$</p>
 <p>and it too lies in $\mathbb{M}_-$. Its biquaternion norm is the mass-shell relation,</p>
 <p>$$
-\tilde{P}\tilde{P}^{\natural} = m^2\,\tilde{V}\tilde{V}^{\natural} = -m^2 c^2 .
+\boxed{\;\tilde{P}\tilde{P}^{\natural} = m^2\,\tilde{V}\tilde{V}^{\natural} = -m^2 c^2\;}.
 $$</p>
 <p>The four-vectors of relativistic kinematics, and the constraints they satisfy, are those of the companion article <em>Relativistic Mechanics in Biquaternionic Form</em>; they are recalled here only so that the free particle can be located within them.</p>
 <h3 id="the-straight-line">The Straight Line</h3>
@@ -189,7 +192,7 @@ $$</p>
 $$</p>
 <p>Reading off the components,</p>
 <p>$$
-ic\,t'_2 = ic\,t' + O\!\left(\frac{V^2}{c^2}\right), \qquad (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec V\,t' + O\!\left(\frac{V^2}{c^2}\right) .
+\boxed{\;ic\,t'_2 = ic\,t' + O\!\left(\frac{V^2}{c^2}\right), \qquad (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec V\,t' + O\!\left(\frac{V^2}{c^2}\right)\;}.
 $$</p>
 <p>This is the <strong>Galilean transformation</strong>: the time coordinate is untouched and the position is shifted by $-\vec Vt'$. The exact boost transformation, of which this is the leading term, is the standard one,</p>
 <p>$$
@@ -200,7 +203,7 @@ $$</p>
 <p>The striking feature of the result is not the relation itself but what it is not. The Galilean boost is the limit of a family of rotor conjugations, but the limit is not a rotor conjugation, and this can be checked independently.</p>
 <p>A rotor conjugation preserves the biquaternion norm, $\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$. The Galilean shear does not:</p>
 <p>$$
-\langle\tilde{R}_2\rangle_{\natural} = (ic\,t')^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Vt'|^2 = \langle\tilde{R}\rangle_{\natural} - 2t'\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + {t'}^2\vec V^2 .
+\boxed{\;\langle\tilde{R}_2\rangle_{\natural} = (ic\,t')^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Vt'|^2 = \langle\tilde{R}\rangle_{\natural} - 2t'\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + {t'}^2\vec V^2\;}.
 $$</p>
 <p>The change $2t'\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - {t'}^2\vec V^2$ is nonzero for a generic worldline, so no unit-norm biquaternion implements the map. Equivalently, the shear leaves the scalar direction $ie_t$ of the material sector untouched while changing the vector directions, which is exactly what a rotation in a Minkowski plane does not do. The Galilean boost is a <strong>shear of the material sector along its scalar direction</strong>, and the scalar direction is the one the shear fixes.</p>
 <p>This is the algebraic form of a familiar statement. The Galilean group is the <strong>contraction</strong> $c \to \infty$ of the Poincaré group, not a subgroup of it: as the invariant speed recedes, the boosts flatten into shears, the timelike and spacelike distinctions lose their sharpness, and the light cone opens into the family of simultaneity hyperplanes. In the biquaternion language the contraction is visible as the degeneration of the rotor condition: the boost rotors approach the elementary shears $e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, which have unit norm to first order in $V/c$ but not to second, and which act on $\mathbb{M}_-$ without preserving its biquaternion norm.</p>

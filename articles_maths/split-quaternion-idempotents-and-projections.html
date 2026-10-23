@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -76,8 +79,6 @@
 <li>they drive the Peirce decomposition and the matrix-unit model of the algebra.</li>
 </ol>
 <p>The last two items are developed in the companion articles <em>Split-Quaternion Zero Divisors</em> and <em>Split-Quaternion Ideals and Peirce Decomposition</em>; here they enter only as forward pointers.</p>
-<p><strong>Placement.</strong> The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\tilde{q}^{\natural}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, the relations $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$. A general element is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, its scalar part is $q_t = \operatorname{Sc}(\tilde q)$ and its vector part is $\vec v = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written</p>
 <p>$$
 \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 ;
 $$</p>
@@ -92,7 +93,7 @@ $$</p>
 e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
 $$</p>
 <p>The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is simple, hence semisimple, so the criterion applies to it, and it is the reason the idempotent and the ideal theories of this category are two views of one subject.</p>
-<h2 id="the-standard-idempotents-of-math44">The Standard Idempotents of $\mathbb{H}_{\mathrm{s}}$</h2>
+<h2 id="the-standard-idempotents-of-math30">The Standard Idempotents of $\mathbb{H}_{\mathrm{s}}$</h2>
 <p>Put</p>
 <p>$$
 \tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y).
@@ -133,7 +134,7 @@ $$</p>
 $$</p>
 <p>where the second identity uses $\vec q^2 = -\langle \vec q\rangle_{\natural}$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \vec q = \tfrac{1}{2}(1 + \eta)$.</p>
 <p>The roots of $+1$ in $V$ are the vectors of the <strong>spacelike unit hyperboloid</strong> $N = -1$, a one-sheeted hyperboloid of two real dimensions, as recorded in <em>Split-Quaternion Roots of Minus One</em>, §<em>The Roots of $+1$</em>. The standard idempotents correspond to $\eta = \vec e_y$ and $\eta = -\vec e_y$, both of which satisfy $N = -1$.</p>
-<h2 id="the-bijection-with-the-roots-of-math128">The Bijection With the Roots of $+1$</h2>
+<h2 id="the-bijection-with-the-roots-of-math114">The Bijection With the Roots of $+1$</h2>
 <p><strong>Theorem.</strong> The map</p>
 <p>$$
 \eta \longmapsto \tilde\pi(\eta), \qquad \tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta),

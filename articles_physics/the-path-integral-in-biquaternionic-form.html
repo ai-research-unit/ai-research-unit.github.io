@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -125,7 +128,7 @@ $$</p>
 <h3 id="the-phase-is-central-and-unitary">The phase is central and unitary</h3>
 <p>Because the exponent is a complex scalar, the phase factor is a <strong>central</strong> element of $\mathbb{B}$:</p>
 <p>$$
-\exp(iS/\hbar)=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)\,i e_t\;\in\;\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}.
+\boxed{\;\exp(iS/\hbar)=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)\,i e_t\;\in\;\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}\;}.
 $$</p>
 <p>Its Hermitian conjugate is its inverse, $(\exp(iS/\hbar))^\dagger=\exp(-iS/\hbar)$, so it is <strong>unitary</strong> in the sense of the framework's unitary group $\mathrm{U}(2)$:</p>
 <p>$$
@@ -173,8 +176,8 @@ so it multiplies the two components by opposite phases. It is a <strong>relative
 <p>For a free particle the sum over paths can be computed exactly, and the result makes the biquaternion content of the phase visible.</p>
 <p>The free kernel is</p>
 <p>$$
-K_0(x_f,t'_f;x_i,t'_i)=\Big(\frac{m}{2\pi i\hbar T}\Big)^{1/2}
-\exp\!\Big[\frac{i}{\hbar}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad T=t'_f-t'_i,
+\boxed{\;K_0(x_f,t'_f;x_i,t'_i)=\Big(\frac{m}{2\pi i\hbar T}\Big)^{1/2}
+\exp\!\Big[\frac{i}{\hbar}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad T=t'_f-t'_i\;},
 $$</p>
 <p>which is the stationary-phase result: the phase is the classical action $S_{\mathrm{cl}}=m(x_f-x_i)^2/(2T)$ divided by $\hbar$, and the prefactor is the Gaussian fluctuation determinant. In the biquaternion interpretation, both factors are central:</p>
 <ul>
@@ -204,7 +207,7 @@ S=\int dt'\,L=\int(-i\,d\tau)\Big[-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2-V\Big]
 $$</p>
 <p>where $S_E$ is the Euclidean action. The phase therefore becomes</p>
 <p>$$
-\exp(iS/\hbar)=\exp(i(iS_E)/\hbar)=\exp(-S_E/\hbar),
+\boxed{\;\exp(iS/\hbar)=\exp(i(iS_E)/\hbar)=\exp(-S_E/\hbar)\;},
 $$</p>
 <p>a decaying real exponential.</p>
 <p>In the interpretation of the Wick-rotation article, the substitution is the identification</p>
@@ -220,9 +223,9 @@ S[x_{\mathrm{cl}}+\delta x]=S_{\mathrm{cl}}+\tfrac12\,\delta^2S+O(\delta^3),
 $$</p>
 <p>where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $\exp(iS_{\mathrm{cl}}/\hbar)$ times the Gaussian integral over the fluctuations, giving the <strong>van Vleck determinant</strong> formula</p>
 <p>$$
-K(x_f,t'_f;x_i,t'_i)\;\approx\;\frac{1}{\sqrt{2\pi i\hbar}}\,
+\boxed{\;K(x_f,t'_f;x_i,t'_i)\;\approx\;\frac{1}{\sqrt{2\pi i\hbar}}\,
 \sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
-\exp(iS_{\mathrm{cl}}/\hbar),
+\exp(iS_{\mathrm{cl}}/\hbar)\;},
 $$</p>
 <p>with the Maslov index supplying a phase $\exp(-i\pi\nu/2)$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\hbar$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.</p>
 <p>For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m/T$, so the prefactor is $(m/2\pi i\hbar T)^{1/2}$ and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.</p>

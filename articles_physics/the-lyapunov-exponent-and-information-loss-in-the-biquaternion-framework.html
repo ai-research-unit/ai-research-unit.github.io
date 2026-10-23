@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -170,7 +173,7 @@ L(t') = \mathrm{diag}\!\left(\exp(-\Gamma t'),\,\exp(-\Gamma t'),\,1\right).
 $$</p>
 <p>The singular values are the diagonal entries, so the <strong>Lyapunov spectrum</strong> is</p>
 <p>$$
-\lambda_1 = 0, \qquad \lambda_2 = \lambda_3 = -\Gamma .
+\boxed{\;\lambda_1 = 0, \qquad \lambda_2 = \lambda_3 = -\Gamma\;}.
 $$</p>
 <p>The zero exponent is the pointer axis, along which the state is unchanged; the two negative exponents are the transverse directions, in which distinctions decay at rate $\Gamma$. The sum of the exponents gives the volume contraction,</p>
 <p>$$
@@ -222,7 +225,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Lyapunov exponent of a tangent vector of the informational sector is measured by the sector's biquaternion norm,</p>
 <p>$$
-\lambda(v) = \lim_{t'\to\infty}\frac{1}{2t'}\log\frac{\left|\langle\delta\tilde{Ϛ}(t')\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|},
+\boxed{\;\lambda(v) = \lim_{t'\to\infty}\frac{1}{2t'}\log\frac{\left|\langle\delta\tilde{Ϛ}(t')\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|}\;},
 $$</p>
 <p>the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\rangle_{\natural}$. Since $\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$ for a tangent vector, this is the Euclidean growth rate of the Bloch displacement.</p>
 <p><strong>Reversible rotor flow is Lyapunov-neutral.</strong> Conjugation by a matrix-unitary rotor leaves the biquaternion norm and the trace pairing invariant, so every exponent is exactly zero and no information is lost. This is the biquaternion form of the volume preservation of a Hamiltonian flow, and it agrees with the conservation of the Casimir on the coadjoint orbit.</p>

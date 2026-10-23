@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,8 +71,6 @@
         <h1 id="introduction-to-the-math0-matrix-element-representation-of-reduced-biquaternions"><strong>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>$2\times2$ matrix element representation</strong> writes the reduced biquaternion as the matrix of its own multiplication. The regular representation sends $\breve Q$ to the operator $L_{\breve Q}:\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ on the complex two-dimensional space of the algebra, and that operator is a $2\times2$ matrix with <strong>complex</strong> entries; on the real four-dimensional space the same operator is a $4\times4$ matrix with <strong>real</strong> entries. This article writes the two models, explains why the signs of the entries are forced by $j^{2}=+1$, records the trace, the determinant and the norm, and shows how the change to the idempotent basis diagonalises the matrix. The multiplication is <strong>commutative</strong>, so the matrix is symmetric, and it <strong>has zero divisors</strong>, so the matrix may be singular at a non-zero element. The diagonal model of the algebra itself — the isomorphism onto the diagonal matrices and the structure read there — is <em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em>; this article is about the element as a matrix, not about the structure.</p>
-<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. The four products and the forms $B,N,H,K$ are <em>The Four Products, Their Forms and Their Algebraic Norms</em>, and the multiplication operators in general are <em>Operators on the Reduced Biquaternions</em>. The element glyph is $\breve Q$, with the breve and without a tilde.</p>
-<p><strong>Boundaries.</strong> The regular representation is defined in <em>Introduction to Reduced Biquaternion Element Representations</em>; the four-vector reading of the same element is <em>The Four-Vector Element Representation of the Reduced Biquaternions</em>; the diagonal model of the algebra is <em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em>; the other presentations are <em>Reduced Biquaternion Other Algebraic Element Representations</em>; and the operators of the four products are collected in <em>Operators on the Reduced Biquaternions</em>. The biquaternion counterpart is <em>Introduction to the $2\times2$ Matrix Element Representation $M_{2}(\mathbb{C})$ of Biquaternions</em>, where the image is the whole of $M_{2}(\mathbb{C})$.</p>
 <h2 id="the-regular-representation-as-a-matrix">The Regular Representation as a Matrix</h2>
 <p><strong>The regular representation sends the element to the matrix with the two columns $Q_{\blacktriangle},Q_{\blacktriangledown}$ and $Q_{\blacktriangledown},Q_{\blacktriangle}$.</strong></p>
 <h3 id="the-map-on-the-basis">The Map on the Basis</h3>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -103,7 +106,7 @@ $$</p>
 <h3 id="the-kraus-representation">The Kraus Representation</h3>
 <p>The structure theorem for completely positive maps is the <strong>Kraus representation</strong> (the Choi–Kraus theorem). A map $\Phi$ on $\mathbb{B}$ is completely positive if and only if there exist finitely many <strong>Kraus operators</strong> $\tilde{K}_l \in \mathbb{B}$ with</p>
 <p>$$
-\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^{*} ,
+\boxed{\;\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^{*}\;} ,
 $$</p>
 <p>and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a <strong>quantum channel</strong>; its dual is $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*} \tilde{H}\tilde{K}_l$, and the normalization is exactly $\Phi^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The <strong>Kraus rank</strong> is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(\Phi) = \sum_{jk} \tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(\Phi) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.</p>
 <p>The companion article already introduced this form for generalized measurements. The point here is that it describes <em>every</em> physical process, not only measurement.</p>
@@ -152,7 +155,7 @@ $$</p>
 <p>The map $\Phi_{\tilde{U}}$ is invertible, with inverse $\Phi_{\tilde{U}}^{-1} = \Phi_{\tilde{U}^{*}} = \Phi_{\tilde{U}(-t')}$, again a unitary channel: unitary evolution is <strong>reversible</strong>.</p>
 <p>The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, <strong>if and only if</strong> it is conjugation by a unitary element; equivalently, a channel preserves the purity of every state if and only if it is a unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $\Phi(\tilde{Q}) = \tilde{K}\tilde{Q}\tilde{K}^{*}$ with $\tilde{K}^{*}\tilde{K} = e_t$, so $\tilde{K}$ is unitary; and a unitary conjugation has Kraus rank one. Hence</p>
 <p>$$
-\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad \Phi = \Phi_{\tilde{U}} \text{ for some unitary } \tilde{U} .
+\boxed{\;\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad \Phi = \Phi_{\tilde{U}} \text{ for some unitary } \tilde{U}\;} .
 $$</p>
 <p>The kernel of $\tilde{U} \mapsto \Phi_{\tilde{U}}$ on $\mathbb{M}_+$ is the group of central unitary elements, the unit circle $\mathrm{U}(1) \subset \mathbb{C}_{\mathbb{B}}$; unitaries differing by a global phase define the same channel. The effective group is $PU(2) \cong SO(3)$, acting on the Bloch ball by rotations — the biquaternion form of the unobservability of global phase.</p>
 <h2 id="the-irreversible-case-general-completely-positive-maps">The Irreversible Case: General Completely Positive Maps</h2>
@@ -160,7 +163,7 @@ $$</p>
 <p>A general quantum channel is a sum of conjugations, $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, involving two or more Kraus operators. But a trace-preserving channel with a single Kraus operator is necessarily unitary, since $\tilde{K}^{*}\tilde{K} = e_t$ <em>is</em> unitarity. It follows that <strong>a channel is irreversible precisely when its Kraus rank is at least two</strong>. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.</p>
 <p>The information-theoretic picture is that the Kraus operators describe the interaction of the system with an environment that is not observed. This is made precise by the <strong>Stinespring dilation</strong>: every channel can be written</p>
 <p>$$
-\Phi(\tilde{Ϛ}) = \mathrm{Tr}_E\!\left(\tilde{V}\,\tilde{Ϛ}\,\tilde{V}^{*}\right)
+\boxed{\;\Phi(\tilde{Ϛ}) = \mathrm{Tr}_E\!\left(\tilde{V}\,\tilde{Ϛ}\,\tilde{V}^{*}\right)\;}
 $$</p>
 <p>for an isometry $\tilde{V}$ into the system tensor an environment, with $\mathrm{Tr}_E$ the partial trace of the companion article on entangled subsystems, and the Kraus operators the environment components of $\tilde{V}$. This is the deep structural statement of the dichotomy: <strong>every irreversible process on the system is the reduction of a reversible evolution on a larger system, followed by discarding the environment.</strong> The irreversibility is entirely the discarding.</p>
 <h3 id="contraction-of-the-bloch-ball">Contraction of the Bloch Ball</h3>
@@ -173,19 +176,19 @@ $$</p>
 <h3 id="the-lindblad-form">The Lindblad Form</h3>
 <p>The infinitesimal version of the dichotomy is the <strong>Lindblad equation</strong> (the Gorini–Kossakowski–Sudarshan–Lindblad form), governing a one-parameter semigroup $\Phi_{t'}$ of channels:</p>
 <p>$$
-\frac{d\tilde{Ϛ}}{dt'}
+\boxed{\;\frac{d\tilde{Ϛ}}{dt'}
 = -\frac{i}{\hbar}\,[\tilde{H}, \tilde{Ϛ}]
 + \sum_k \left(\tilde K_k\,\tilde{Ϛ}\,\tilde K_k^{*}
-- \tfrac{1}{2}\left\{\tilde K_k^{*}\tilde K_k, \tilde{Ϛ}\right\}\right),
+- \tfrac{1}{2}\left\{\tilde K_k^{*}\tilde K_k, \tilde{Ϛ}\right\}\right)\;},
 $$</p>
 <p>with $\tilde{H} \in \mathbb{M}_+$ Hermitian, the jump operators $\tilde K_k \in \mathbb{B}$ arbitrary, and $\{A, B\} = AB + BA$. The two terms separate exactly along the reversible/irreversible split. The <strong>Hamiltonian term</strong> is generated by $-i\tilde{H}/\hbar \in \mathbb{M}_-$ and alone would give a reversible group. The <strong>dissipator</strong> involves arbitrary <strong>jump operators</strong> $\tilde K_k \in \mathbb{B}$; each contributes a completely positive term, and the anticommutator keeps the trace equal to one, since $\mathrm{Tr}(\tilde K_k\tilde{Ϛ}\tilde K_k^{*} - \tfrac{1}{2}\{\tilde K_k^{*}\tilde K_k,\tilde{Ϛ}\}) = 0$ by cyclicity. The GKSL theorem states that every semigroup of completely positive, trace-preserving maps with a bounded generator has this form. The reversible part of the generator is an inner derivation by an element of $\mathbb{M}_-$ (equivalently, by a Hamiltonian in $\mathbb{M}_+$); the irreversible part is a sum of completely positive dissipators that are not derivations at all.</p>
 <h2 id="dephasing-in-math201">Dephasing in $\mathbb{M}_+$</h2>
 <h3 id="definition-and-kraus-form">Definition and Kraus Form</h3>
 <p>Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_2(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the <strong>dephasing channel</strong> along $\vec u$ is</p>
 <p>$$
-\Phi^{\mathrm{deph}}_p(\tilde{Ϛ})
+\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ})
 = (1-p)\,\tilde{Ϛ}
-+ p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right).
++ p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right)\;}.
 $$</p>
 <p>It is completely positive and trace preserving with the three Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_t$, $\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u)$, $\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u)$: because the idempotents are Hermitian, $\tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2 = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_t$, and the normalization sums to $(1-p)e_t + p\,e_t = e_t$.</p>
 <h3 id="the-bloch-vector-formula">The Bloch Vector Formula</h3>
@@ -202,7 +205,7 @@ $$</p>
 <p>$$
 \boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
 \qquad
-\vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u.\;}
+\vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
 $$</p>
 <p>The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. In the eigenbasis of $\vec u$, the off-diagonal entries of the density matrix — the <strong>coherences</strong> — are scaled by $1-p$, while the diagonal entries — the <strong>populations</strong> — are unchanged. This is the standard phase-damping channel, expressed entirely in the objects of $\mathbb{M}_+$.</p>
 <h3 id="limiting-cases-measurement-and-irreversibility">Limiting Cases, Measurement, and Irreversibility</h3>

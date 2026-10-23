@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -169,8 +172,8 @@ $$</p>
 <p><strong>The conjugation choice gives the Majorana mass.</strong> The pairing that uses the field's own conjugate, $\tilde{\Psi}$ with $\tilde{\Psi}^{\,\bullet}$, requires the field to <em>equal</em> its conjugate — a <strong>reality condition</strong> that halves the field's independent components. It is antilinear, and it is the mass term of a Majorana fermion.</p>
 <p>The distinction is visible in the component count before any dynamics is imposed, and the count is decisive. The spinor module has real dimension $8$: four complex components. An antilinear involution on it has a fixed space of real dimension $4$ — half. So</p>
 <p>$$
-\text{Dirac field}: 8 \text{ real components}, \qquad
-\text{Majorana field}: 4 \text{ real components},
+\boxed{\;\text{Dirac field}: 8 \text{ real components}, \qquad
+\text{Majorana field}: 4 \text{ real components}\;},
 $$</p>
 <p>and the Majorana field is not a Dirac field with a constraint bolted on; it is a different carrier, of half the size, singled out by an antilinear pairing.</p>
 <p>The framework's Dirac module is $\Delta = S\oplus\bar{S}$, the two chiral halves, of complex dimension $4$ and real dimension $8$. Its charge conjugation is the conjugate-linear map $\mathcal{C}$ satisfying $\mathcal{C}^2 = 1$ that exchanges the two halves; its fixed space is the Majorana spinor space, of real dimension four. The companion on the neutrino and Majorana fermions constructs that map and computes its consequences; the present article is concerned with the algebra-side counterpart, and with keeping the two apart.</p>
@@ -180,7 +183,7 @@ $$</p>
 \mathcal{L}_{\text{Dirac}} = -m_D\,\bar{\psi}\psi = -m_D\big(\psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L\big),
 $$</p>
 <p>$$
-\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\big(\psi_L^{T}\mathcal{C}\psi_L + \text{h.c.}\big).
+\boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\big(\psi_L^{T}\mathcal{C}\psi_L + \text{h.c.}\big)\;}.
 $$</p>
 <p>The first pairs $\psi_L$ with $\psi_R$ and is <strong>linear</strong>; it conserves fermion number and is invariant under the continuous phase $\psi\mapsto \exp(i\alpha)\psi$. The second pairs $\psi_L$ with $\psi_L^{c}$ and is <strong>antilinear</strong>; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.</p>
 <div class="table-scroll"><table>
@@ -232,7 +235,7 @@ $$</p>
 <p>Both are masses; neither is a mistake. The two rows of the table are what the phrase "two kinds of mass" names, and the reason they are both called a mass is that both are non-derivative bilinears — the argument of the previous section.</p>
 <p>In biquaternionic form the Dirac mass is the linear chiral pair of the parent article,</p>
 <p>$$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;},
 $$</p>
 <p>the massless case being $\tilde{\nabla}\tilde{\Psi} = 0$. Applying $\tilde{\nabla}^{\natural}$ to the first and substituting the second, with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives the Klein–Gordon equation for each chirality,</p>
 <p>$$

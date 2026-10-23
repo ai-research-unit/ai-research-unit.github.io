@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The complex numbers are a field, and that field is the subject of <em>The Complex Numbers ($\mathbb{C}$)</em>. The same underlying set, read as an algebra over $\mathbb{R}$, carries structures the field axioms do not name: a real-linear complex structure, a second product beside the multiplication, two pairings with their algebraic norms, a ternary operation, a pair of matrix models, and a subspace lattice. This category gathers those structures, and this article states what they are and how they hang together.</p>
 <p>The guiding distinction is the one the whole synthetic part of the corpus draws: a <em>number system</em> is one object and its <em>algebraic structures</em> are the several algebras the same carrier admits. For $\mathbb{C}$ the carrier is the plane $\mathbb{C}_{\mathbb{R}}$ of real dimension two, and the structures are obtained from the single datum of the field together with its conjugation. There is no third product and no hidden operation: the count below is exhaustive.</p>
-<p><strong>Conventions.</strong> $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$ are elements of $\mathbb{C}$, with $q_1,q'_1,q_2,q'_2\in\mathbb{R}$; $\bar Q_1 = q_1 - iq'_1$ is the conjugate; $i^2 = -1$; $\mathrm{Sc}$, $\mathrm{Re}$ and $\mathrm{Im}$ are read in $\mathbb{C}$. The algebra $\mathbb{C}$ read over $\mathbb{R}$ is written $\mathbb{C}_{\mathbb{R}}$, with real basis $1, i$. The two products are written by juxtaposition: $Q_1Q_2$ for the field product and $Q_1\bar Q_2$ for the sesquilinear one, following <em>Conventions in Mathematics</em>.</p>
 <h2 id="the-complexoid">The Complexoid</h2>
 <p><strong>Definition.</strong> The <strong>complexoid</strong> is the pair $(\mathbb{C}, \bar{\cdot})$ read as an algebra over $\mathbb{R}$: the real vector space $\mathbb{C}_{\mathbb{R}}$ together with the involution $\bar{\cdot}$. Every structure of this category is built from that pair alone.</p>
 <p><strong>Proposition.</strong> The realification doubles no structure and loses none: $\mathbb{C}_{\mathbb{R}}$ has real basis $1, i$ and real dimension $2$, its real-linear multiplication by $i$ is the complex structure $J(Q_1) = iQ_1$ with $J^2 = -\operatorname{id}$ and no real eigenvector, and a real-linear map of the plane is complex-linear exactly when it commutes with $J$ and conjugate-linear exactly when it anticommutes. The complex-linear endomorphisms are multiplication by a complex number and form $\operatorname{End}_{\mathbb{C}}(\mathbb{C})\cong\mathbb{C}$; the conjugate-linear ones form the complementary plane; together they fill $\operatorname{End}_{\mathbb{R}}(\mathbb{C})\cong M_2(\mathbb{R})$.</p>

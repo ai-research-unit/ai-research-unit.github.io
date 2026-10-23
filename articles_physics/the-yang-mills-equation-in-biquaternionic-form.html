@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -75,9 +78,9 @@ $$</p>
 <p>and records, in its discussion of the Yang–Mills action, that the source-free field equation is $D_\mu F^{\mu\nu} = 0$ "in place of the abelian $\partial/\partial Q_\mu F^{\mu\nu} = 0$". It does not develop that equation: the sourced equation, the current that appears on its right-hand side, and the conservation law that current obeys are all left open. This article takes them up.</p>
 <p>The Yang–Mills equation is the non-abelian generalisation of the Maxwell source equation,</p>
 <p>$$
-D_\mu F^{\mu\nu} = J^\nu,
+\boxed{\;D_\mu F^{\mu\nu} = J^\nu,
 \qquad
-\tilde D\tilde F = \tilde\nabla\tilde F + i\kappa\,[\mathcal{A}, \tilde F],
+\tilde D\tilde F = \tilde\nabla\tilde F + i\kappa\,[\mathcal{A}, \tilde F]\;},
 $$</p>
 <p>with the covariant derivative $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ acting on the curvature through the commutator, in the adjoint action of the gauge algebra. The subject of this article is what changes from the abelian case, and the answer is a short list.</p>
 <ul>
@@ -91,7 +94,6 @@ $$</p>
 <li><strong>Interpretation.</strong> Reading $D_\mu F^{\mu\nu}$ as the conserved current of a non-abelian gauge field, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.</li>
 <li><strong>Gaps and defects, left visible.</strong> The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\nabla\!\cdot\!(\sum_\nu F^{\mu\nu}e_\nu)$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. On the material sector, $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b] = 2\varepsilon_{abc}e_c$, and normalized generators $T_a = \tfrac12 e_a$ with $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The gauge group is $SU(2)$, the unit real quaternions, $\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger$. The connection and field strength of the non-abelian sector are $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ with $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$, and $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa = ϙ/\hbar$ the coupling. The covariant derivative is $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$, acting on a matter field by left multiplication. Indices run $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = -i\partial/\partial t'$; in the $ict'$ convention $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index, so the coordinate sum $\sum_\mu$ is the Lorentz-invariant contraction and we may write $F^{\mu\nu}$ and $F_{\mu\nu}$ interchangeably. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged; where the Yang–Mills density is written, the trace is the <strong>matrix trace</strong> on the $\mathrm{SU}(2)$ factor, which is a different operation. No gauge is fixed.</p>
 <h2 id="the-non-abelian-curvature-and-the-adjoint-covariant-derivative">The Non-Abelian Curvature and the Adjoint Covariant Derivative</h2>
 <p>The constructions of this article are those of its two parents, and they are recalled here only far enough to fix the conventions the field equation uses.</p>
 <p>The connection is an $\mathrm{SU}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $\tilde U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,</p>
@@ -128,11 +130,11 @@ $$</p>
 <h2 id="the-yangmills-equation">The Yang–Mills Equation</h2>
 <p>Let the current be the covariant divergence of the curvature,</p>
 <p>$$
-\tilde J := \tilde D\tilde F = \tilde\nabla\tilde F + i\kappa\,[\mathcal{A}, \tilde F], \qquad \tilde J \in \mathrm{SU}(2),
+\boxed{\;\tilde J := \tilde D\tilde F = \tilde\nabla\tilde F + i\kappa\,[\mathcal{A}, \tilde F], \qquad \tilde J \in \mathrm{SU}(2)\;},
 $$</p>
 <p>summed over $\mu$. This is the definition of the source in this article; the equation</p>
 <p>$$
-\boxed{\,D_\mu F^{\mu\nu} = J^\nu\,}
+\,D_\mu F^{\mu\nu} = J^\nu\,
 $$</p>
 <p>is the Yang–Mills equation, and the two terms of its expansion are the whole of its content.</p>
 <ul>
@@ -150,11 +152,9 @@ $$</p>
 \mathcal{J} = \sum_{\nu\in\{t,x,y,z\}} J_\nu e_\nu \;\in\; \mathbb{B}.
 $$</p>
 <p>Then the Yang–Mills equation is the single biquaternion equation</p>
-<p>$$
-\sum_{\nu\in\{t,x,y,z\}} \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J},
+<p>$$\boxed{\;\sum_{\nu\in\{t,x,y,z\}} \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J},
 \qquad\text{equivalently}\qquad
-\sum_{\nu\in\{t,x,y,z\}} \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \sum_{\nu\in\{t,x,y,z\}} J_\nu\, e_\nu ,
-$$</p>
+\sum_{\nu\in\{t,x,y,z\}} \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \sum_{\nu\in\{t,x,y,z\}} J_\nu\, e_\nu\;},$$</p>
 <p>in which the covariant derivative acts on the $\mathrm{SU}(2)$-valued curvature components by the adjoint action $D_\mu F_{\mu\nu} = \partial/\partial Q_\mu F_{\mu\nu} + i\kappa[\mathcal{A}_\mu,F_{\mu\nu}]$, and the sum over $\mu$ is the divergence. The left-hand side is the covariant divergence of the curvature, expanded in the quaternion basis; the right-hand side is the source biquaternion. This is the direct non-abelian analogue of the parent's $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$: the parent's source $\sqrt{\mu}\,\tilde{J}$, with $\tilde J$ the four-current, plays the role of $-\mathcal{J}$ up to the parent's normalisation of $\tilde{F}$ (the parent uses $R_0 = i\rho/\sqrt{\epsilon}$, $\vec R = \sqrt{\mu}\,\vec J$, and writes its equation with the opposite sign). The sign of the source is a convention, fixed here by defining $J^\nu$ through the field equation; what is not a convention is that the derivative on the left is covariant.</p>
 <p><strong>The biquaternion packaging does not collapse.</strong> It is tempting to write the left-hand side as $\sum_\mu D_\mu F^\mu$ with $F^\mu := \sum_\nu F^{\mu\nu}e_\nu$, and to advertise a one-line product. That is not correct, and the failure is instructive. Because the adjoint commutator does not pass through the quaternion basis,</p>
 <p>$$

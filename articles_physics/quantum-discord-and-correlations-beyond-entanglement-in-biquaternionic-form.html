@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -122,9 +125,9 @@ $$</p>
 $$</p>
 <p>because the trace of every $i\vec e_k$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so</p>
 <p>$$
-S(\tilde{Ϛ}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
+\boxed{\;S(\tilde{Ϛ}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
 \qquad
-I(A:B) = 2 - S(\tilde{Ϛ}_{AB}) .
+I(A:B) = 2 - S(\tilde{Ϛ}_{AB})\;} .
 $$</p>
 <p>For Bell-diagonal states the quantum mutual information is thus a function of the three plain-form readings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.</p>
 <h2 id="classical-mutual-information-and-discord">Classical Mutual Information and Discord</h2>
@@ -162,9 +165,9 @@ S\bigl(A\,\big|\,\{j\}\bigr) = h_2\!\left(\frac{1+c_j}{2}\right) = h_2\!\left(\f
 $$</p>
 <p>and minimizing over the three coordinate measurements gives</p>
 <p>$$
-J(A|B) = 1 - \min_{j\in\{1,2,3\}} h_2\!\left(\frac{1+|c_j|}{2}\right),
+\boxed{\;J(A|B) = 1 - \min_{j\in\{1,2,3\}} h_2\!\left(\frac{1+|c_j|}{2}\right),
 \qquad
-D(A|B) = 1 - S(\tilde{Ϛ}_{AB}) + \min_{j} h_2\!\left(\frac{1+|c_j|}{2}\right),
+D(A|B) = 1 - S(\tilde{Ϛ}_{AB}) + \min_{j} h_2\!\left(\frac{1+|c_j|}{2}\right)\;},
 $$</p>
 <p>using $I(A:B) = 2 - S(\tilde{Ϛ}_{AB})$. For this family the minimum of the conditional entropy over all projective measurements is attained on a coordinate axis; that fact is standard, and the values below were in addition checked against a direct numerical minimization over measurement directions on the states reported. Every conditional state above was verified to have the stated eigenvalues, and the closed forms were checked against the explicit $4\times4$ computation.</p>
 <h2 id="worked-examples">Worked Examples</h2>
@@ -232,9 +235,9 @@ h_2(0.7) = 0.8813, \qquad h_2(0.675) = 0.9097, \qquad h_2(0.6) = 0.9710 .
 $$</p>
 <p>The smallest is attained at the largest coefficient, $|c_1| = 0.4$, giving</p>
 <p>$$
-J(A|B) = 1 - 0.8813 = 0.1187,
+\boxed{\;J(A|B) = 1 - 0.8813 = 0.1187,
 \qquad
-D(A|B) = 0.3496 - 0.1187 = 0.2308 \ \text{bits}.
+D(A|B) = 0.3496 - 0.1187 = 0.2308 \ \text{bits}\;}.
 $$</p>
 <p>The state is separable because $0.4+0.35+0.2 = 0.95\leq1$, yet the discord is positive. This is the numerical content of the article, and every figure above was checked against the explicit $4\times4$ state. Note also that for this family the discord is <strong>symmetric</strong>, $D(A|B) = D(B|A)$, because the state is invariant under the exchange of the two factors; the minimization over measurements on both sides therefore gives the same value as the one-sided discord, and no separate two-sided calculation is needed.</p>
 <h2 id="discord-without-entanglement">Discord Without Entanglement</h2>

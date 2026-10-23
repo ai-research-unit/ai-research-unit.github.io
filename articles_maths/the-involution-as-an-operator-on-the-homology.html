@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>An <strong>involution</strong> of a manifold is a self-homeomorphism $T$ with $T^2 = \mathrm{id}$. It induces an endomorphism $T_*$ of the homology, and $T_*$ is the simplest operator that a symmetry of the manifold produces. This article studies the involution through that operator alone: the homology becomes a module over the group ring $k[\mathbb{Z}/2] = k[t]/(t^2-1)$, the operator splits it into the part it fixes and the part it moves, its trace is a fixed-point count, and the fixed part is related to the fixed set by the Smith theory.</p>
 <p>The coefficient ring is kept general, because the two cases differ: over a field of characteristic not two the group ring is semisimple and every module is the direct sum of its fixed and its moving parts, while over $\mathbb{Z}$ the same module carries $2$-torsion and the splitting fails. The sections below treat the operator and its algebra, the transfer and the invariant part, the Lefschetz trace and the fixed-point count, and the Smith theory that bounds the homology of the fixed set.</p>
 <p><strong>The article assumes</strong> the homology and cohomology of a finite CW complex, the Lefschetz number of a self-map, the cup and cap products, and the transfer of a finite covering, all of <em>Algebraic Topology</em>, being written in this Part. It uses nothing beyond the operator: the manifold enters through its homology and through the fixed set of the homeomorphism.</p>
-<p><strong>The boundaries of the article.</strong> The involution as a structure on the manifold itself — its fixed set as a manifold, its equivariant surgery and its bordism — is not treated here; the fixed set appears only through the homology the operator computes. The general periodic map, of order divisible by a prime other than two, is the subject of <em>Periodic Maps and the Smith Theory</em>. The induced involution on the cohomology ring and its interaction with the intersection form belong to <em>The Involution on the Homology</em>. The operators built from the involution, with the adjoint as their archetype, are the subject of <em>The Involution on the Homology Operators</em>; the equivariant signature and the $G$-signature theorem are those of <em>Hermitian Pairings and the Equivariant Signature</em>. Smooth structures and the analytic proofs of the fixed-point formulae are Part III, and no physics is invoked.</p>
 <h2 id="the-induced-operator-and-the-group-ring">The Induced Operator and the Group Ring</h2>
 <p><strong>Definition.</strong> Let $M$ be a finite CW complex and let $T : M \to M$ be an involution, $T^2 = \mathrm{id}$. Its <strong>induced operator</strong> is the endomorphism
 $$

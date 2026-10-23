@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -91,7 +94,6 @@ whose thermal factor is a <strong>central scalar</strong>, so it multiplies ever
 <li><strong>Established (framework).</strong> The equivalence with Matsubara is the standard equivalence, and the framework's interpretation is that the KMS analyticity strip — the compactified material direction — is what makes the equilibrium Keldysh function determined by the spectral function. Away from equilibrium the strip is absent and the Keldysh function is an independent datum.</li>
 </ul>
 <p>The article proceeds as follows. A section fixes the contour and the doubled fields. A section separates the branch doubling from the algebra's doubling. A section gives the Keldysh rotation and the matrix of Green's functions, with the verification. A section treats the equilibrium relations and the fluctuation–dissipation theorem, a section the relation to Matsubara and the thermal states of the companion articles, and a section the non-equilibrium case. A section separates what is established from what is interpretation.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles, in particular <em>The Matsubara Thermal Formalism in Biquaternionic Form</em>, <em>The KMS Condition and the Biquaternion Framework</em>, <em>The Unruh Effect in Biquaternionic Form</em>, and <em>Hawking Radiation in Biquaternionic Form</em>. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the material coordinate; $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$. The branch index is written $a,b\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.</p>
 <h2 id="the-closed-time-path-contour-and-the-doubled-fields">The Closed-Time-Path Contour and the Doubled Fields</h2>
 <p>The formalism begins with a contour and produces a doubling; the doubling is what needs to be placed correctly with respect to the algebra.</p>
 <p><strong>The contour.</strong> The <strong>closed-time path</strong> $\mathcal{C}$ runs along the real time axis from $-\infty$ to $+\infty$ and then back from $+\infty$ to $-\infty$, with a possible excursion into the imaginary direction. Writing the two legs as $\mathcal{C}_+$ and $\mathcal{C}_-$, the field is defined on each leg separately:
@@ -129,7 +131,7 @@ block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation
 <p><strong>The algebra's module is two-dimensional too.</strong> The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, and the isomorphism $\mathsf{M}_2$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.</p>
 <p><strong>The branch factor is external.</strong> The CTP field is a map from the contour pair to the field's own value space; the field's value space is the module (a two-dimensional complex space for a scalar, the spinor module for a spinor). Hence the doubled field space is a <strong>tensor product</strong>,
 $$
-\mathcal{V}_{\mathrm{CTP}} = \mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^2_{\mathrm{br}} ,
+\boxed{\;\mathcal{V}_{\mathrm{CTP}} = \mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^2_{\mathrm{br}}\;},
 $$
 with $\mathbb{C}^2_{\mathrm{br}}$ the branch space. Multiplying dimensions, a biquaternion scalar has $2\times2=4$ complex components per mode, a biquaternion spinor has more; and the branch factor is a bookkeeping index with no relation to the algebra's centre or to its minimal ideals.</p>
 <p><strong>Why the identification would be wrong.</strong> The branch space carries the two contour orientations; the algebra's $M_2(\mathbb{C})$ carries the left and right multiplication, the minimal left ideals, and the chirality structure. A rotation in branch space acts on $\mathbb{C}^2_{\mathrm{br}}$ and commutes with $\mathbb{B}$; a left or right multiplication by an element of $\mathbb{B}$ acts on the module and commutes with the branch index. The two actions commute, and no element of $\mathbb{B}$ is a branch rotation. Conflating them would produce a spurious identification of the Keldysh rotation with an algebra element and of the Keldysh component with a chirality component; the separation is the framework's contribution to this formalism.</p>
@@ -153,7 +155,7 @@ $$
 so $R\in O(2)$. The group $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$ is the group of the branch-space rotations, and its $\mathbb{Z}_2$ subgroup is the exchange of the two branches, i.e. the reversal of the contour's orientation. The same group governs the one-mode Bogoliubov transformations of the companion article on Bogoliubov transformations; the $\mathbb{Z}_2$ there is the particle–hole exchange, and here it is the branch exchange. That the two are the same $O(2)$ is a statement about the two-dimensional real orthogonal group, not an identification of the two physical operations.</p>
 <p><strong>The rotated matrix.</strong> Rotating the CTP matrix $G=\left(\begin{smallmatrix}G^{++}&G^{+-}\\G^{-+}&G^{--}\end{smallmatrix}\right)$ by $R$, $\mathcal G=R\,G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
 $$
-\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}.
+\boxed{\;\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}\;}.
 $$
 The $qq$ entry vanishes identically. With the consistent real set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$ (so that $G^{++}+G^{--}=G^{+-}+G^{-+}=4$), the rotation gives
 $$
@@ -177,8 +179,8 @@ A(\omega)\ \ge 0 .
 $$
 The Keldysh component at inverse temperature $\beta$ is
 $$
-G^K(\omega) = \coth\frac{\beta\omega}{2}\big(G^R(\omega)-G^A(\omega)\big)
-= \big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big),
+\boxed{\;G^K(\omega) = \coth\frac{\beta\omega}{2}\big(G^R(\omega)-G^A(\omega)\big)
+= \big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big)\;},
 $$
 the <strong>fluctuation–dissipation relation</strong>. With the model retarded and advanced functions $G^{R/A}(\omega)=1/(\omega-E\pm i\gamma)$, $E=1.1$, $\gamma=0.3$, $\beta=2$, the two forms of the coefficient — $\coth(\beta\omega/2)$ and $1+2n_{\mathrm B}(\omega)$ — agree identically, and both reproduce $G^K$ at $\omega=0.2,1.1,2.5$; the identity $\coth(\beta\omega/2)=1+2n_{\mathrm B}(\omega)$ was checked at several frequencies to machine precision.</p>
 <p><strong>Centrality and the framework.</strong> The thermal factor $\coth(\beta\omega/2)$ is a central scalar, so the fluctuation–dissipation relation multiplies every component of the module structure identically: the relation is diagonal in the module and in the sector index. Consequently, for a scalar biquaternion field the equilibrium CTP structure factorizes into the two sectors, and each sector carries the same thermal factor; for a spinor field the factor is still central but the difference $G^R-G^A$ is a matrix, and the relation is a matrix proportionality rather than a scalar one.</p>

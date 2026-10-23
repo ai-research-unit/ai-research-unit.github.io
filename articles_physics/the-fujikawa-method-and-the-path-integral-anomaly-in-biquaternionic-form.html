@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,7 +88,6 @@ recomputed here for all permutations. Because $\gamma_5=i\omega$ with $\omega$ t
 <li><strong>Gap, left visible.</strong> The framework does not supply the functional measure: the algebra gives the operator whose determinant is taken, not the space of fields over which the integral runs. The chiral rotation itself is the axial symmetry of the linear chiral pair; the <em>anomaly</em> is the statement that this rotation is not a symmetry of the measure. The framework carries the rotation and the operator; the measure is imported.</li>
 </ul>
 <p>The article is organised as follows. A section sets up the measure and the chiral rotation. A section computes the Jacobian with the heat-kernel regulator. A section extracts the coefficient and identifies the density. A section gives the integrated form and the index. A section states the biquaternion interpretation of the rotation and the sector placement of $\alpha$. A closing section separates what is supplied, transcribed, and missing.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ and $\Box=\partial^2/\partial Q_t^2+\Delta$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2$, $\gamma_5=\mathrm{diag}(-I_2,I_2)$, projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$, and block representation</p>
 <p>$$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
@@ -159,7 +161,7 @@ $$</p>
 <p>and the trace vanishes for any repeated index; the identity was recomputed in the block basis, with residual exactly zero. Because the density must carry four distinct Dirac indices, only the quadratic part of the heat kernel contributes, and the result is proportional to $\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$.</p>
 <p><strong>The result.</strong> Putting the pieces together, the anomaly density is</p>
 <p>$$
-A(x) = \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\boxed{\;A(x) = \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 \qquad
 \mathcal{D}\psi\,\mathcal{D}\bar{\psi}\ \longmapsto\ \exp\!\left(-i\int d^4x\,\alpha(x)\,A(x)\right)\mathcal{D}\psi\,\mathcal{D}\bar{\psi},
 $$</p>
@@ -185,8 +187,8 @@ $$</p>
 $$</p>
 <p>evaluated directly with $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ for sample fields; hence</p>
 <p>$$
-A(x) = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B
-= -\frac{ϙ^2}{2\pi^2}\,I_2 ,
+\boxed{\;A(x) = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B
+= -\frac{ϙ^2}{2\pi^2}\,I_2\;},
 $$</p>
 <p>which is the framework's second invariant $I_2$ of the biquaternion field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, in the normalization of the instanton article. The anomalous divergence is therefore the divergence of the axial current into the framework's own pseudoscalar invariant; the parity-odd density is parity-odd because $I_2$ is a pseudoscalar, and the topological character noted in the companion article is the total-derivative form of the same contraction.</p>
 <p><strong>Why $\gamma_5$ is the volume element.</strong> The identity $\gamma_5=i\omega$ is what makes the whole computation a statement about the algebra rather than about a chosen basis. The chirality operator is the volume element of the Clifford algebra up to the central $i$; the anomaly trace is the trace of the volume element against the heat kernel; and the $\epsilon$ symbol is the coordinate form of the volume element. In the biquaternion language $\omega=\mathsf{M}_2(i)$ is the image of the central scalar imaginary, so the insertion of $\gamma_5$ is an insertion of the algebra's central element — the same element whose phase is the vector symmetry that the mass conserves. The axial and vector currents differ by which element of the centre is inserted, and the anomaly is the statement that the volume-element insertion is not a symmetry of the measure.</p>
@@ -284,8 +286,8 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. The massless Dirac action is invariant under $\psi\mapsto \exp(i\alpha(x)\gamma_5)\psi$; the measure is not; the Jacobian is $\exp(-i\int\alpha A)$, and the regulated trace defines the anomaly density. Regulating with $\mathcal{H}=(\gamma^\mu D_\mu)^2$ and the heat-kernel factor $\exp(-\mathcal{H}/M^2)$, the density is the trace of $\gamma_5$ against the heat kernel; the only surviving gamma-matrix trace is $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, recomputed for all $4!$ permutations with residual exactly zero, and the result is</p>
 <p>$$
-A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B,
+\boxed{\;A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+= -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B\;},
 $$</p>
 <p>so the anomaly density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one.</p>
 <p>The biquaternion content is threefold: the chirality insertion is the volume element, $\gamma_5=i\omega$; the heat-kernel splitting follows from the Clifford relations; and the density is the framework's own pseudoscalar invariant. The rotation is the axial symmetry of the linear chiral pair, and the anomaly is the statement that this rotation does not preserve the measure — while the vector central rotation, being vector-like, does. The integrated anomaly is twice the index of the Dirac operator, which makes the coefficient an integer and therefore exact; the index theorem and the zero-mode count belong to the general gauge apparatus and were cited, not rebuilt. The functional measure itself is not supplied by the algebra: the framework carries the operator and the rotation, and the measure is imported from the path-integral apparatus of the companion articles.</p>

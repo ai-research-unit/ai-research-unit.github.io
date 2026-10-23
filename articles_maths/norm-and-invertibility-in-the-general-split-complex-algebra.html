@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -75,8 +78,6 @@ $$</p>
 <p>the square of every element is scalar, $Q\star Q=Q\bar Q=\langle Q\rangle_{*}1$, so the form is real-valued and its diagonal is the real scalar $\langle Q\rangle_{*}=q^{2}-q'^{2}$. That scalar is the <strong>second algebraic norm</strong> of the space, the algebraic norm of this product and not the algebraic norm of the plain product, which is the $\mathbb{D}$-valued $\langle Q\rangle=Q^{2}$ of <em>Norm and Invertibility in the Split-Complex Algebra</em>. The norm $\langle\cdot\rangle_{*}$ is real, of signature $(1,1)$, indefinite, and multiplicative for the product.</p>
 <p>The inverse is where the two products separate. The definition of an inverse presupposes a product with a <strong>two-sided unit</strong>, and the general plain sesquilinear product has a <strong>right unit</strong> alone. The consequence is stated and not filled: no element of $\mathbb{D}$ is invertible of $\star$, the product has no group of units of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the right unit $1$, and the article computes them: the two have the same unique solution, $Q_1/\langle Q_1\rangle_{*}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the algebraic norm of this product, and it is not the algebraic norm of the plain product; the two products do not share their algebraic norms.</p>
 <p><strong>The results.</strong> The general plain sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ has a central square, $Q\star Q=\langle Q\rangle_{*}1$ with $\langle Q\rangle_{*}=q^{2}-q'^{2}$, and $\langle\cdot\rangle_{*}$ is multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. The product has the right unit $1$ and no left unit, hence no two-sided unit, so <strong>no element is invertible of $\star$</strong> and the product has <strong>no group of units</strong>; what survives is the pair of one-sided equations $Q_1\star Q_2=1$ and $Q_2\star Q_1=1$, soluble exactly when $\langle Q_1\rangle_{*}\neq0$ with the common unique solution $Q_1/\langle Q_1\rangle_{*}$, and insoluble when $\langle Q_1\rangle_{*}=0$. The criterion is therefore the algebraic norm: a nonzero $Q$ is a zero divisor exactly when $\langle Q\rangle_{*}=0$, and the elements of non-vanishing norm form the plain group of units $\mathbb{D}^{\times}=\{\langle Q\rangle_{*}\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.</p>
-<p><strong>Boundaries.</strong> The algebraic norm of the plain product is $\langle Q\rangle=Q^{2}$, a $\mathbb{D}$-valued form, and its theory is <em>Norm and Invertibility in the Split-Complex Algebra</em>; the algebraic norm $\langle\cdot\rangle_{*}$ is the one of this product, and the criterion $\langle Q\rangle_{*}\neq0$ is proved here. The zero divisors are <em>Zero Divisors of the Split-Complex Algebra</em>, where the set $\{\langle Q\rangle_{*}=0\}\setminus\{0\}$ is characterised as a set; the annihilators are <em>Annihilators of the Split-Complex Algebra</em>; the one-sided inverse equations read on the two products side by side are <em>Relations and Comparison Between the Two Products of the Split-Complexoid Space</em>. The product and its element theory are <em>Split-Complex Algebra</em>; the two forms and the two algebraic norms are <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>; and the polar and exponential decompositions that the criterion must agree with are <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> and <em>Exponential Polar Decomposition of Split-Complex Numbers</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)=\mathbb{R}[j]$ with basis $1,j$, $j^{2}=+1$. A general element is $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$ real, the conjugate is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. Juxtaposition is the plain product $Q_1Q_2$, and the product of this article is the general plain sesquilinear product</p>
 <p>$$
 Q_1\star Q_2=Q_1\bar Q_2 .
 $$</p>
@@ -268,9 +269,9 @@ $$</p>
 <h2 id="the-algebraic-norm-on-the-distinguished-subspaces">The Algebraic Norm on the Distinguished Subspaces</h2>
 <p><strong>The algebraic norm is definite on the real and the split imaginary lines and identically zero on the two idempotent lines; accordingly every nonzero element of the first two is a plain unit, while the two idempotent lines carry the zero divisors.</strong></p>
 <p>The distinguished one-dimensional subspaces of $\mathbb{D}$ are the eigenspaces of the conjugation, $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$, and the two idempotent lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.</p>
-<h3 id="the-real-subspace-math286">The Real Subspace $\mathbb{R}_{\mathbb{D}}$</h3>
+<h3 id="the-real-subspace-math270">The Real Subspace $\mathbb{R}_{\mathbb{D}}$</h3>
 <p>On $\mathbb{R}_{\mathbb{D}}$ the norm is $\langle q\rangle_{*}=q^{2}$, positive definite and vanishing only at $q=0$. Every nonzero real number is a timelike unit, with $\langle\cdot\rangle_{*}>0$; the units of $\mathbb{R}_{\mathbb{D}}$ are $\mathbb{R}^{\times}$, the two open rays. There are no zero divisors on $\mathbb{R}_{\mathbb{D}}$.</p>
-<h3 id="the-split-imaginary-subspace-math294">The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{D}}$</h3>
+<h3 id="the-split-imaginary-subspace-math278">The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{D}}$</h3>
 <p>On $j\mathbb{R}_{\mathbb{D}}$ the norm is $\langle jq'\rangle_{*}=-q'^{2}$, negative definite and vanishing only at $q'=0$. Every nonzero element $jq'$ is a spacelike unit, and</p>
 <p>$$
 (jq')^{-1}=\frac{\overline{jq'}}{\langle jq'\rangle_{*}}=\frac{-jq'}{-q'^{2}}=\frac{j}{q'},

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,8 +76,6 @@
 $$</p>
 <p>of the underlying real space $\mathbb{B}\cong\mathbb{R}^8$ (<em>Topology in the Space of Biquaternions</em>). That norm is one of the equivalent norms of that space; any equivalent norm gives the same topology, the same singular set and the same link, and it is the only metric input of the article.</p>
 <p>That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to <em>Norm and Invertibility in the General Quaternionic Algebra</em>, and the zero-divisor set in its own right to <em>Zero Divisors of the Biquaternion Algebra</em>. The space with its unique topology is <em>Topology in the Space of Biquaternions</em>; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are <em>The Euclidean Topology of the Biquaternion Algebra</em>; the complement of the cone, with its group structure and its own topology, is <em>The Biquaternion Unit Group as a Topological Group</em>; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is <em>The Null Quadric and Its Projective Geometry</em>.</p>
-<p><strong>Scope.</strong> The article owns the singular set as a closed algebraic cone, its smooth structure away from its apex, its contractibility, its link with the topological unit sphere, and the homotopy invariants of that link, together with the sphere of real roots of $-1$ that the pure real slice carries. The ambient Euclidean structure and the unit sphere are quoted from <em>The Euclidean Topology of the Biquaternion Algebra</em> rather than re-derived; the two facts about the cone that are read from that sphere are proved here.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central imaginary unit $i$ with $i^{2}=-1$; the natural conjugation ${}^{\natural}$ negates $\vec e_x,\vec e_y,\vec e_z$ and fixes $e_t$ and $i$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and the topological norm is $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$.</p>
 <h2 id="the-singular-set">The Singular Set</h2>
 <p><strong>Definition (the singular set).</strong> An element is <strong>singular</strong> if it is nonzero and not invertible. A <strong>zero divisor</strong> is a nonzero $\tilde Q_1$ for which there is a nonzero $\tilde Q_2$ with $\tilde Q_1\tilde Q_2=0$ or $\tilde Q_2\tilde Q_1=0$. For the biquaternion algebra the two notions coincide (<em>Zero Divisors of the Biquaternion Algebra</em>): a nonzero element is singular exactly when it is a zero divisor. The <strong>singular set</strong> of the algebra is</p>
 <p>$$
@@ -147,7 +148,7 @@ $$</p>
 $$</p>
 <p>Hence $L$ is simply connected but is <strong>not</strong> homeomorphic to $S^5$, whose $\pi_2$ vanishes.</p>
 <p><strong>Corollary (the apex is a genuine singularity).</strong> The cone is not a topological manifold at its apex. If it were, the link of the apex would be a sphere; the link computed above has $\pi_2\cong\mathbb{Z}$, and no sphere has that homotopy group in degree $2$.</p>
-<h2 id="the-pure-slices-and-the-sphere-of-real-roots-of-math131">The Pure Slices and the Sphere of Real Roots of $-1$</h2>
+<h2 id="the-pure-slices-and-the-sphere-of-real-roots-of-math118">The Pure Slices and the Sphere of Real Roots of $-1$</h2>
 <p>A biquaternion is <strong>pure</strong> if its complex scalar part vanishes,</p>
 <p>$$
 P=\{\tilde Q\in\mathbb{B}:Q_t=0\}=\{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z:Q_k\in\mathbb{C}\}\cong\mathbb{C}^3,

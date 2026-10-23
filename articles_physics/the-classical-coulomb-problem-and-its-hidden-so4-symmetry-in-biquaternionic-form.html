@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,7 +77,6 @@ $$</p>
 <p>is the same inverse-square form as the Kepler force, with the coupling $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ replacing $GMm$; for opposite charges the coupling is attractive and the problem is the Kepler problem with a different constant. The orbits are the conic sections derived in the preceding article of this subcategory, and the present article does not repeat them. Its subject is the symmetry that the $1/r$ potential conceals.</p>
 <p>The inverse-square force conserves not only the angular momentum $\vec L = \vec r\times\vec p$ but also the <strong>Runge–Lenz vector</strong> $\vec A = \vec p\times\vec L - m\kappa\vec u_r$. Together these six quantities close under the Poisson bracket into a Lie algebra, and for bound orbits the algebra is $\mathrm{SO}(4)$, the six-dimensional rotation algebra of four-dimensional space. The symmetry is <strong>hidden</strong> in the sense that it is not a symmetry of space; it is a symmetry of the phase space that mixes the conserved orbital vectors. It is the classical origin of the $n^2$ degeneracy of the non-relativistic hydrogen spectrum, and the quantization of the same algebra is how Pauli obtained the Balmer formula before the Schrödinger equation existed.</p>
 <p>The article develops the symmetry in the framework's notation and states plainly what the framework does and does not supply. The generators $\vec L$ and $\vec A$ are real vectors, $\vec L$ is the vector part of the quaternion product $\vec r\vec p$, and the brackets are computed with the Poisson bracket of the companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>. What the framework does <strong>not</strong> supply is the compact algebra $\mathrm{SO}(4)$ itself: the biquaternion algebra is finite-dimensional, and its largest compact subalgebra is the material sector $\mathbb{M}_- \cong \mathrm{U}(2)$, of real dimension four, so a compact six-dimensional algebra does not embed in it. The six-dimensional algebra it does carry is its traceless part, the Lorentz algebra $\mathrm{SL}(2,\mathbb{C}) \cong \mathrm{SO}(3,1)$ of rotations and boosts — the split real form of the very same complexification as $\mathrm{SO}(4)$, and the symmetry type of the unbound case below. The extra generators of the bound-state symmetry live in the phase space of the particle, not in $\mathbb{B}$, and the article is explicit about that boundary. The non-relativistic hydrogen article records the same boundary from the quantum side, as an open question about the algebraic origin of the degeneracy; the present article supplies the classical symmetry algebra, locates it correctly, and fixes how far the algebra's own structure reaches towards it.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The configuration is a real vector in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$; the potential and the energy are central scalars, real multiples of $e_t$. The Poisson bracket is the classical bracket of the companion article on the bracket and the quantum commutator, with $\{x_i,p_j\} = \delta_{ij}$ and $\{x_i,x_j\} = \{p_i,p_j\} = 0$, and the bracket of vector-valued functions is taken componentwise. The angular momentum is $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$, the vector part of the quaternion product $\vec r\vec p$.</p>
 <h2 id="the-classical-coulomb-problem">The Classical Coulomb Problem</h2>
 <h3 id="the-force-and-the-potential">The Force and the Potential</h3>
 <p>Two point charges at separation $r$ interact with the Coulomb force. For a light charge $ϙ_1$ moving in the field of a fixed heavy charge $ϙ_2$ the force is central and inverse-square,</p>
@@ -133,11 +135,11 @@ $$</p>
 <h3 id="the-brackets">The Brackets</h3>
 <p>The Poisson brackets of the six generators close on themselves:</p>
 <p>$$
-\{L_i, L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k .
+\boxed{\;\{L_i, L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k\;}.
 $$</p>
 <p>The first is the angular-momentum algebra; the second says that $\vec A$ transforms as a vector under rotations; the third is the new relation, and its coefficient depends on the energy. All three were verified by numerical differentiation of the phase-space functions at several representative bound phase-space points, with the maximum deviation from the stated right-hand sides of order $10^{-11}$.</p>
 <p>The appearance of $E$ in the third bracket is the reason the algebra has different forms in the bound and unbound cases.</p>
-<h3 id="the-bound-case-math83">The Bound Case: $\mathrm{SO}(4)$</h3>
+<h3 id="the-bound-case-math66">The Bound Case: $\mathrm{SO}(4)$</h3>
 <p>For $E < 0$ define the rescaled vector</p>
 <p>$$
 \vec D = \frac{\vec A}{\sqrt{-2mE}} ,
@@ -148,11 +150,11 @@ $$</p>
 $$</p>
 <p>Using the brackets,</p>
 <p>$$
-\{J_i^+, J_j^+\} = \epsilon_{ijk}J_k^+, \qquad \{J_i^-, J_j^-\} = \epsilon_{ijk}J_k^-, \qquad \{J_i^+, J_j^-\} = 0 ,
+\boxed{\;\{J_i^+, J_j^+\} = \epsilon_{ijk}J_k^+, \qquad \{J_i^-, J_j^-\} = \epsilon_{ijk}J_k^-, \qquad \{J_i^+, J_j^-\} = 0\;},
 $$</p>
 <p>so that $\mathrm{SO}(4) \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2)$ with generators $\vec J^+$ and $\vec J^-$. The numerical check confirms all three relations, and the two Casimirs are equal:</p>
 <p>$$
-\left(\vec J^+\right)^2 = \left(\vec J^-\right)^2 = \frac{1}{4}\left(L^2 + D^2\right) = \frac{1}{4}\left(L^2 + \frac{|\vec A|^2}{-2mE}\right) = \frac{m\kappa^2}{8|E|} ,
+\boxed{\;\left(\vec J^+\right)^2 = \left(\vec J^-\right)^2 = \frac{1}{4}\left(L^2 + D^2\right) = \frac{1}{4}\left(L^2 + \frac{|\vec A|^2}{-2mE}\right) = \frac{m\kappa^2}{8|E|}\;},
 $$</p>
 <p>where the last equality uses $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$. For the representative bound point used in the check, both Casimirs evaluate to $0.27982080$ while $m\kappa^2/(8|E|)$ evaluates to the same value to eight decimal places. The equality of the two Casimirs is what makes the bound-state representations balanced, and it is the algebraic statement that fixes the degeneracy.</p>
 <h3 id="the-unbound-and-threshold-cases">The Unbound and Threshold Cases</h3>
@@ -206,7 +208,7 @@ $$</p>
 <h3 id="balanced-representations">Balanced Representations</h3>
 <p>The group $SO(4)$ generated by $\vec J^+$ and $\vec J^-$ has double cover $SU(2)\times SU(2)$, and its irreducible representations are the tensor products $\mathcal{D}^{j_+}\otimes\mathcal{D}^{j_-}$ of dimensions $(2j_+ + 1)(2j_- + 1)$. A conserved quantity that commutes with the Hamiltonian is a function of the Casimirs, so the energy is a function of $(\vec J^+)^2$ and $(\vec J^-)^2$; and since the two Casimirs are <strong>equal</strong> for the Coulomb problem, the representations that occur have $j_+ = j_- = j$, with dimension</p>
 <p>$$
-\dim = (2j+1)^2 .
+\boxed{\;\dim = (2j+1)^2\;}.
 $$</p>
 <p>The degeneracy of an energy level is therefore a <strong>perfect square</strong>, and the quantum number that labels it is $2j+1$. This is the group-theoretic origin of the $n^2$ degeneracy: the levels of the non-relativistic hydrogen atom carry the balanced representations of the hidden $SO(4)$, and a balanced representation has square dimension.</p>
 <h3 id="the-energycasimir-relation-and-the-quantum-multiplicity">The Energy–Casimir Relation and the Quantum Multiplicity</h3>
@@ -265,7 +267,7 @@ $$</p>
 $$</p>
 <p>Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec J^\pm = \tfrac12(\vec L\pm\vec D)$, the generators satisfy</p>
 <p>$$
-\{J_i^+,J_j^+\} = \epsilon_{ijk}J_k^+, \qquad \{J_i^-,J_j^-\} = \epsilon_{ijk}J_k^-, \qquad \{J_i^+,J_j^-\} = 0 ,
+\{J_i^+,J_j^+\} = \epsilon_{ijk}J_k^+, \qquad \{J_i^-,J_j^-\} = \epsilon_{ijk}J_k^-, \qquad \{J_i^+,J_j^-\} = 0,
 $$</p>
 <p>so that the symmetry algebra is $\mathrm{SO}(4)\cong\mathrm{SU}(2)\oplus\mathrm{SU}(2)$, with equal Casimirs</p>
 <p>$$

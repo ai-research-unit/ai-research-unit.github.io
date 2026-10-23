@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ T^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b ,
 $$</p>
 <p>where $\alpha$ is the grade involution of the algebra; it is the ordinary sandwich of the twisted element, $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha$, and for a vector $u$ with $\mathfrak{Q}(u)\ne0$ it is exactly the reflection $\rho_u$ on $V$. This is the geometric reason the signed family exists: the reflections of the quadratic space are the elementary motions, and the signed sandwich carries them.</p>
 <p>The article treats the signed sandwich from the side of the geometry of the chosen form. The operator itself, its composition law and its coset structure belong to <em>Two-Sided Operators with the Signed Product</em>, and the one-sided factors to <em>One-Sided Operators with the Signed Product</em>; both are Part II's and are quoted. What is added here is the reading on $V$: the reflection formula, the hyperplane fixed by the reflection, the parities of the determinant, the generation of the orthogonal group by the reflections, the versor action and the relation to the two-sided operators of the category. A word of disambiguation is needed at the start, because the corpus uses "signed" in two senses: the <strong>signed inner conjugation</strong> $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$ of <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> twists the <strong>parameter</strong>, while the signed sandwich twists the <strong>argument</strong>; only the second is the subject of this article.</p>
-<p><strong>The boundaries.</strong> The ordinary sandwich, its composition and its indeterminacy are <em>The Sandwich on a Clifford Algebra</em>; the signed two-sided operator, its composition law and its coset structure are <em>Two-Sided Operators with the Signed Product</em>; the signed left and right factors are <em>One-Sided Operators with the Signed Product</em>. The reflections, the Clifford group, the versors and Cartan–Dieudonné are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and the failure of the reflection correspondence for a degenerate form is <em>Reflections as Signed Two-Sided Operators on a Clifford Algebra</em>, written next in this group. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form on a finite-dimensional space $V$ with polar form $B$, and $\mathfrak{Q}(u)=B(u,u)$, $uv+vu=2B(u,v)$, so that $u^2=\mathfrak{Q}(u)$.</p>
 <h2 id="the-operator-and-its-sign">The Operator and Its Sign</h2>
 <h3 id="definition-and-relation-to-the-unsigned-sandwich">Definition and Relation to the Unsigned Sandwich</h3>
 <p><strong>Definition.</strong> For $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed sandwich</strong> is the $F$-linear operator</p>

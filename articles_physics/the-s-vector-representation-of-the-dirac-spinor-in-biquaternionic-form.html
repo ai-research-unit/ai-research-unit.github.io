@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -146,9 +149,10 @@ $$</p>
 $$</p>
 <p>satisfies the identity that Hurwitz's theorem makes possible only in dimensions $1, 2, 4, 8$:</p>
 <p>$$
-(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H),
-\qquad
-(G\cdot G)(H\cdot H) = -(G\mathbin{\check\otimes} H)\cdot(G\mathbin{\check\otimes} H).
+\boxed{\;\begin{aligned}
+(G\cdot G)(H\cdot H) &= (G\otimes H)\cdot(G\otimes H),\\
+(G\cdot G)(H\cdot H) &= -(G\mathbin{\check\otimes} H)\cdot(G\mathbin{\check\otimes} H).
+\end{aligned}\;}
 $$</p>
 <p>The sign on the second line is the sign difference between the timelike and the spacelike neutral vector. Both identities are the statement that the composition preserves the quadratic form up to a fixed sign — the <em>normed condition</em> of the source, and the reason the construction lands on biquaternions rather than on some arbitrary algebra.</p>
 <h3 id="the-algebra">The Algebra</h3>
@@ -158,8 +162,8 @@ $$</p>
 $$</p>
 <p>Its matrix realisation is obtained by writing $(e_\mu)^\nu{}_\lambda = c^{\nu\sigma}{}_\mu\, g_{\sigma\lambda}$. In the coordinate system above, $e_t = I$ and, with $e_\nu = i\,\vec u_{\nu}$ for $\nu = 1,2,3$,</p>
 <p>$$
-\vec u_x\vec u_x = \vec u_y\vec u_y = \vec u_z\vec u_z = \vec u_x\vec u_y\vec u_z = -I,
-\qquad \vec u_x\vec u_y = -\vec u_y\vec u_x = \vec u_z \ \ (\text{cyclic}).
+\boxed{\;\vec u_x\vec u_x = \vec u_y\vec u_y = \vec u_z\vec u_z = \vec u_x\vec u_y\vec u_z = -I,
+\qquad \vec u_x\vec u_y = -\vec u_y\vec u_x = \vec u_z \ \ (\text{cyclic})\;}.
 $$</p>
 <p>These are exactly the relations of the biquaternion algebra: $\vec e_k^2 = +e_t$ in the $e$-basis (since $e_\nu = i\vec u_{\nu}$ and $\vec u_{\nu}^2 = -I$), and $\vec e_x \vec e_y = i \vec e_z$. The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.</p>
 <h2 id="the-semi-spinors-as-real-four-vectors">The Semi-Spinors as Real Four-Vectors</h2>
@@ -230,9 +234,9 @@ i\check c^{\mu\nu\lambda}\,\tilde\nabla_\nu G_\lambda - m\, G^{*\mu} = 0 .
 $$</p>
 <p>Equivalently, with $A_\mu = 0$, it is the pair</p>
 <p>$$
-G^{\mu\nu} = \tfrac{i}{2}\,\varepsilon^{\mu\nu\lambda\rho} G_{\lambda\rho},
+\boxed{\;G^{\mu\nu} = \tfrac{i}{2}\,\varepsilon^{\mu\nu\lambda\rho} G_{\lambda\rho},
 \qquad
-\partial_\mu G^\mu - i m j_\mu G^{*\mu} = 0,
+\partial_\mu G^\mu - i m j_\mu G^{*\mu} = 0\;},
 $$</p>
 <p>where</p>
 <p>$$

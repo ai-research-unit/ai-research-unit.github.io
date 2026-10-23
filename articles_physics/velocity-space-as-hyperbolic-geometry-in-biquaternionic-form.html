@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -125,7 +128,7 @@ $$
 which is the <em>hyperbolic velocity</em> of the classical account: it is what the ordinary velocity becomes when the additive variable is used, and it reduces to $v$ for $v\ll c$.</p>
 <p><strong>Proposition.</strong> In Weierstrass coordinates the induced metric of the velocity hyperboloid is
 $$
-ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\;d\Omega^2 ,
+\boxed{\ ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\;d\Omega^2\ } ,
 $$
 where $d\Omega^2$ is the round metric of the unit sphere on the direction.</p>
 <p><strong>Proof.</strong> With $\vec u$ a unit vector, $\vec u\cdot d\vec u = 0$ and $|d\vec u|^2 = d\Omega^2$. Differentiating, $d(c\sinh(\rho/c)\,\vec u) = \cosh(\rho/c)\,\vec u\,d\rho+c\sinh(\rho/c)\,d\vec u$ and $d(c\cosh(\rho/c)) = \sinh(\rho/c)\,d\rho$, whence
@@ -141,7 +144,7 @@ so a small ball is Euclidean with a positive fourth-order correction; for the sp
 <h3 id="the-metric-in-the-velocity-coordinates">The metric in the velocity coordinates</h3>
 <p>The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t' = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
 $$
-ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2} .
+\boxed{\ ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2}\ }\ .
 $$</p>
 <p>The metric is not the Euclidean metric of the ball and not the Minkowski metric of any spacetime; it is a Riemannian metric on the abstract space of velocities, with the units of a velocity squared. Its distance is a velocity, and its curvature is $-1/c^2$. This is the precise sense in which the set of velocities is not a vector space: a vector space has a flat metric in its linear coordinates, and the metric above is not flat.</p>
 <h2 id="the-distance-between-two-velocities">The Distance Between Two Velocities</h2>
@@ -149,7 +152,7 @@ $$</p>
 <p>The distance in this metric is the <strong>relative rapidity</strong>, and it has three equivalent forms.</p>
 <p><strong>Proposition.</strong> For two velocities $\vec v_1,\vec v_2$ of the ball, the geodesic distance between them is given by
 $$
-\cosh\frac{d}{c} = \frac{c^2-\vec v_1\cdot\vec v_2}{\sqrt{(c^2-\vec v_1^2)(c^2-\vec v_2^2)}} = \gamma_1\gamma_2\Bigl(1-\frac{\vec v_1\cdot\vec v_2}{c^2}\Bigr) ,
+\boxed{\ \cosh\frac{d}{c} = \frac{c^2-\vec v_1\cdot\vec v_2}{\sqrt{(c^2-\vec v_1^2)(c^2-\vec v_2^2)}} = \gamma_1\gamma_2\Bigl(1-\frac{\vec v_1\cdot\vec v_2}{c^2}\Bigr)\ } ,
 $$
 and $d = c\,\mathrm{artanh}(v_{\mathrm{rel}}/c)$, where $v_{\mathrm{rel}}$ is the speed of $\vec v_2$ in the rest frame of $\vec v_1$.</p>
 <p><strong>Proof.</strong> The first equality is the Beltrami–Klein disc formula of the maths article <em>Hyperbolic Geometry</em>; the second is the identity $\gamma = \cosh(\rho/c)$ and $\vec v = c\tanh(\rho/c)\vec u$, which turns the numerator into the hyperbolic cosine rule and the two roots into $\cosh$'s. For the third, the four-velocity of $\vec v_1$ is $\tilde{V}_1 = \gamma_1(ic\,e_t+\vec v_1)$; the speed of $\vec v_2$ in the frame of $\vec v_1$ is $\vec v_{\mathrm{rel}}$, with $\gamma_{\mathrm{rel}} = \gamma_2\gamma_1(1-\vec v_1\cdot\vec v_2/c^2)$, which is the second expression again.</p>
@@ -180,7 +183,7 @@ which is Einstein's addition law, and the statement that the additive variable i
 <h3 id="the-composition-law-and-the-spherical-representation">The composition law and the spherical representation</h3>
 <p>For two boosts along different directions the composition is not a single boost, and the composed <em>frame</em> has a rapidity fixed by the same trigonometry. Let the first boost have rapidity $a$ along $\vec u_x$ and the second rapidity $b$ along $\vec u_y$, with $\theta$ the angle between the two directions. Then the rapidity $\rho$ of the frame reached satisfies
 $$
-\cosh\rho = \cosh a\cosh b+\cos\theta\,\sinh a\,\sinh b ,
+\boxed{\ \cosh\rho = \cosh a\cosh b+\cos\theta\,\sinh a\,\sinh b\ } ,
 $$
 the <strong>spherical</strong> law of cosines-type relation — the plus sign — while the <em>distance</em> between the two frames' velocities has the minus sign above. The two laws are the two faces of one identity: they are exchanged by $\cos\theta\mapsto-\cos\theta$, and equivalently by $c\mapsto ic$ at fixed rapidities, which is exactly the Sommerfeld interchange between the Lobachevsky and the spherical representation of the velocity composition — the velocities are added on the surface of a sphere of imaginary radius, and the imaginary radius is the $R\mapsto iR$ of Taurinus (1826). The framework's own form of the interchange is the Weierstrass one recorded above: the hyperbolic and the circular functions are the same functions at $c$ and at $ic$.</p>
 <p>Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(a+b)$, the collinear case. For $\theta = \pi/2$ it reduces to $\cosh\rho = \cosh a\cosh b$, so two perpendicular boosts of rapidities $a$ and $b$ give a frame whose rapidity is <em>not</em> $\sqrt{a^2+b^2}$ but the value with $\cosh$ in place of the square root; the Euclidean hypotenuse is the small-rapidity approximation, and the difference is of order $a^2b^2$. The two-boost product is also not a pure boost: written in the polar decomposition $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde U_{\mathrm b}\tilde{W}$ it contains the Wigner rotation $\tilde{W}$, which is the subject of the next section.</p>
@@ -190,7 +193,7 @@ the <strong>spherical</strong> law of cosines-type relation — the plus sign �
 <p>A boost is a point of velocity space, and a path of boosts is a path in it; the statement that a closed path of boosts need not be a closed path of frames is the statement that the connection has curvature, and the Wigner rotation is its holonomy. The holonomy has a closed geometric value.</p>
 <p><strong>Proposition.</strong> Let $\tilde U_{\mathrm b,1}$ have rapidity $a$ along $\vec u_x$ and $\tilde U_{\mathrm b,2}$ rapidity $b$ along $\vec u_y$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$. Then, in rapidity units,
 $$
-\alpha = \pi-(A+B+C) ,
+\boxed{\ \alpha = \pi-(A+B+C)\ } ,
 $$
 the angle defect of the geodesic triangle of velocity space whose three side lengths are $a$, $b$ and $\rho$; equivalently, since the curvature is $-1$, $\alpha$ is the <strong>hyperbolic area</strong> of that triangle. In physical units the angle is the area divided by $c^2$, $\alpha = A_{\mathrm{hyp}}/c^2$.</p>
 <p>The triangle is the <strong>rapidity triangle</strong> of the loop: its sides are the three rapidities, and its existence is the triangle inequality of the geometry, $\rho<a+b$. The proposition says that the whole of the rotation produced by a closed path of boosts is measured by the hyperbolic area the three rapidities span, which is the Gauss–Bonnet theorem for the boost connection.</p>

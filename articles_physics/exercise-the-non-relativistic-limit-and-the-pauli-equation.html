@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -77,7 +80,6 @@
 <li>the physical dimensions of every term.</li>
 </ol>
 <p><strong>On the parent article.</strong> The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$, the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary. The subspace $\mathbb M_+$ is the Hermitian subspace (real scalar, imaginary vector) and $\mathbb M_-$ the anti-Hermitian subspace (imaginary scalar, real vector), with $\mathbb B=\mathbb M_+\oplus\mathbb M_-$ and $i\mathbb M_\pm=\mathbb M_\mp$. The isomorphism, written $\mathsf{M}_2$ as in the companion Dirac article, is $e_t\mapsto I_2$, $\vec e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$, so that $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\sigma_k\leftrightarrow i\vec e_k$. The gamma matrices are the parent's Dirac-basis matrices,</p>
 <p>$$
 \gamma^0=\begin{pmatrix} I_2&0\\0&-I_2\end{pmatrix}=\beta,\qquad
 \gamma^k=\begin{pmatrix} 0&\sigma_k\\-\sigma_k&0\end{pmatrix},
@@ -149,7 +151,7 @@ $$</p>
 \boxed{\;i\hbar\,\partial/\partial t'\,\phi=\left[\frac{(p-ϙ\vec A)^2}{2m}+ϙ\phi_0-\frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\phi\;}
 $$</p>
 <p>which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.</p>
-<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math83">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
+<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math69">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
 <p><strong>Statement.</strong> Carry out the minimal substitution, evaluate the electromagnetic terms it generates, and verify the gyromagnetic factor $g=2$ together with the biquaternion form of the spin term.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: the substitution.</em> The parent's convention is $D_\mu=\partial/\partial Q_\mu+iqA_\mu$, which in this mostly-minus metric is equivalent to</p>
@@ -249,7 +251,7 @@ $$</p>
 \Delta E_{\rm D}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\quad(\ell=0),\qquad \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$</p>
 <p>with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Big[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Big]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, both $j=\ell\pm\tfrac12$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. An independent one-dimensional Foldy–Wouthuysen expansion, carried out symbolically to order $m^{-3}$ in a purely scalar potential, reproduces the four coefficients $1,+\tfrac12,+\tfrac18,-\tfrac18$ for $V$, $\vec\pi^2/2m$, $\nabla^2V/(8m^2c^2)$ and $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$ respectively. The Darwin sign is therefore $+\hbar^2\nabla^2V/(8m^2c^2)$, equivalently $-(ϙ\hbar^2/8m^2c^2)\nabla\cdot\vec E$.</p>
-<h2 id="problem-4-hermiticity-and-the-math182-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
+<h2 id="problem-4-hermiticity-and-the-math168-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
 <p><strong>Statement.</strong> Check the Hermiticity of every term and determine which terms lie in $\mathbb M_+$.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: Hermiticity.</em> Each term of the Hamiltonian of Problem 3 is Hermitian:</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -114,7 +117,7 @@ t' \;\longmapsto\; -i\tau, \qquad \tau \in \mathbb{R},
 $$</p>
 <p>in the time coordinate. Under this substitution, the first coefficient of $\tilde{Q}_-$ changes as</p>
 <p>$$
-i c t' \;\longmapsto\; i c\,(-i\tau) = c\tau,
+\boxed{\;i c t' \;\longmapsto\; i c\,(-i\tau) = c\tau\;},
 $$</p>
 <p>while the spatial coefficients $x, y, z$ are unchanged. The rotated point is</p>
 <p>$$
@@ -123,7 +126,7 @@ $$</p>
 <p>with <strong>all four coefficients real</strong>. In the notation of the quaternion subspace these are the four parameters $q_t = c\tau$, $q_x = x$, $q_y = y$, $q_z = z$.</p>
 <p>So the standard Wick rotation is the identification</p>
 <p>$$
-\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict', x, y, z) \;\longmapsto\; (c\tau, x, y, z),
+\boxed{\;\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict', x, y, z) \;\longmapsto\; (c\tau, x, y, z)\;},
 $$</p>
 <p>obtained by relabeling the imaginary coefficient $ict'$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.</p>
 <h2 id="the-trick-as-a-transfer-from-math62-to-math63">The Trick as a Transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$</h2>
@@ -142,7 +145,7 @@ $$</p>
 $$</p>
 <p>becomes the elliptic d'Alembertian on $\mathbb{H}_{\mathbb{B}}$,</p>
 <p>$$
-\Box_{\mathbb{H}} = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta.
+\boxed{\;\Box_{\mathbb{H}} = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta\;}.
 $$</p>
 <p>The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the transferred field. This is the standard trick, expressed in the biquaternion framework as a transfer between two subspaces of $\mathbb{B}$.</p>
 <p>So the Wick rotation is a <strong>trick</strong> in the strict sense: it is a change of variable that is useful for some problems and not for others, and it does not correspond to a physical transformation. Its biquaternion content is that the material sector $\mathbb{M}_-$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are two four-dimensional subspaces of the same algebra, related by relabeling the imaginary first coefficient as a real one.</p>

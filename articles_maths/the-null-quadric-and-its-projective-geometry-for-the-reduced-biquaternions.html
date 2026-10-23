@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@ $$</p>
 <p>the two bilinear ones complex-valued and the two sesquilinear ones real-valued. A form in four real variables has a null set, and the null set of a non-degenerate form has a projective geometry: its projectivisation is a quadric. This article owns that geometry for the reduced biquaternion algebra, for each of the four forms, and the comparison between them.</p>
 <p>The single most important fact is that the reduced algebra is the direct sum $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex lines, so its multiplicative norm factors as $\langle \breve Q\rangle_{\mathrm{ts}}=(Q_{\blacktriangle}-Q_{\blacktriangledown})(Q_{\blacktriangle}+Q_{\blacktriangledown})=Q_{+}Q_{-}$, a product of two linear forms in the complex coordinates; the projective null quadric of the reduced norm is therefore degenerate, a pair of lines, and not a smooth quadric. The companion smooth quadric is the one carried by the indefinite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose real signature is $(2,2)$ and whose projectivisation is a smooth ruled surface in real projective three-space. The definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ has no null points at all, and the plain bilinear form $\langle\cdot,\cdot\rangle$ degenerates exactly as $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$ does.</p>
 <p>The article owns the four null sets, the degenerate quadric of the reduced norm with its two components, the smooth quadric of $\langle\cdot\rangle_{*}$ with its two rulings, the Segre identification with $\mathbb{P}^{1}_{\mathbb{R}}\times\mathbb{P}^{1}_{\mathbb{R}}$, the polarity that the forms induce, and the automorphism group of the smooth quadric. The forms and their Gram matrices are <em>The Four Products, Their Forms and Their Algebraic Norms</em>; the idempotent coordinates and the two ideals are <em>Reduced Biquaternion Space</em> and <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the zero divisors whose set is the null cone of $\langle\cdot\rangle_{\mathrm{ts}}$ are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the metric reading of the forms on the space is <em>Topology and Metric for Each of the Operations</em>; the real subspaces that the null set meets are <em>Introduction to the Remarkable Subspaces</em>. The smooth null quadric of the biquaternion algebra, in complex projective three-space, is <em>The Null Quadric and Its Projective Geometry</em>.</p>
-<p><strong>Conventions.</strong> The algebra is read as the real four-dimensional space with coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ where $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the real projective space of its lines is $\mathbb{P}^{3}_{\mathbb{R}}$. The complex reading, with the algebra as a complex 2-dimensional space on the basis $1,j$, has projective space $\mathbb{P}^{1}_{\mathbb{C}}$. The two readings are different and are kept apart throughout.</p>
 <h2 id="the-four-null-sets">The Four Null Sets</h2>
 <p><strong>Proposition (the sign of the forms).</strong> On the real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ the four norms are</p>
 <p>$$

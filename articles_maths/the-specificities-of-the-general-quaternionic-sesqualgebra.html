@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -81,8 +84,6 @@ $$</p>
 \bigl(\tilde Q\star\tilde Q_2\bigr)^{*} = \tilde Q_2\,\overline{\tilde Q} ,
 $$</p>
 <p>equivalently the factorization $\tilde Q\star\tilde Q_2 = (\overline{\tilde Q_2}\tilde Q)^{\natural}$. The block is the only one of the twelve structures satisfying it, and it is the identity, and not the pair of actions, that is the law: the two actions are a consequence of the identity, while the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The article states the identity as the criterion, proves it, and isolates the block among the twelve. It then collects the consequences, which are the specificities of the block: the parities of the two slots (linear in the first, conjugate-linear in the second), the absence of projectors and of square-zero operators, the square and the Krein form, the idempotents which are units of the plain algebra, and the failure of the Jordan triple identity.</p>
-<p><strong>Placement.</strong> The article is the fifth entry, and the synthesis, of the <em>Specific Theory</em> section of the general quaternionic sesqualgebra, after <em>The Two One-Sided Actions and the Absence of a Unit</em>, <em>The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</em>, <em>The Associator of the General Quaternionic Sesquilinear Product</em> and <em>The Ternary Product and the Failure of the Jordan Triple Identity</em>. Its twins are <em>The Specificities of the Biquaternion Algebra</em>, which states the left-alternativity criterion of the plain product, and <em>The Specificities of the General Quaternionic Algebra</em>, which states the isotope criterion of the natural product; the three criteria are the three ways in which one of the four general products can be singled out.</p>
-<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. Juxtaposition is the <strong>plain</strong> product, $\star$ is the general quaternionic sesquilinear product $\tilde Q\star\tilde Q_2 = \tilde Q^{\natural}\tilde Q_2^{*}$ with $\tilde Q = Q_te_t+\vec Q$ and $\tilde Q_2 = Q_{2t}e_t+\vec Q_2$, the natural conjugation ${}^{\natural}$ lying in the first slot and the star ${}^{*}$ in the second, and the subscript of an operator is the element it is indexed by. The natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural} = Q_t-\vec Q$; the star is ${}^{*}$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$; and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$ is the Hermitian conjugation; all three fix $e_t$. The <strong>central square</strong> is $C(\tilde Q) = \sum_\mu Q_\mu^2$ with $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$; the <strong>sandwich</strong> of the pair $(A,B)$ is the map $\tilde Q_1\mapsto A\tilde Q_1 B$ of the plain product.</p>
 <h2 id="the-law">The Law</h2>
 <p><strong>Theorem (the criterion).</strong> Among the twelve structures on the biquaternion space the general quaternionic sesquilinear product is the unique one satisfying the <strong>star identity</strong></p>
 <p>$$

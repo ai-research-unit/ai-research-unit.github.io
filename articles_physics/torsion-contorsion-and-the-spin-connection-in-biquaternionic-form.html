@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,8 +73,6 @@
 <p>The corpus's gravity series already carries a connection. Route Three of <em>Curved Spacetime and the Biquaternion Framework</em> shows that the Lie algebra of the rotor group is the six-dimensional traceless subspace of $\mathbb{B}$, the span of the rotation generators $\vec e_k$ and the boost generators $i\vec e_k$, so that a spin connection one-form $\vec\Gamma_\mu$ and its curvature are objects the algebra can hold in its own notation. That article then states its boundary exactly: <strong>metric compatibility and the vanishing of torsion are conditions, not consequences; nothing in the algebra selects the Levi-Civita lift.</strong> A second article names the missing piece outright. <em>The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</em> lists, among the open items it inherits, "torsion in the framework's own notation": the antisymmetric part of the connection, and the algebraic elimination that produces the Hehl–Datta term, are not written in the framework's notation. This article supplies that item.</p>
 <p>The article has one job. It gives the geometry of a <strong>connection with torsion</strong> — the torsion tensor, the contorsion, the tetrad postulate, the spin connection with torsion, the spin tensor of a Dirac field, the elimination of a non-propagating torsion, and the Weitzenböck or teleparallel connection — in the corpus's notation and with exact checks. It is a geometry article, not a dynamics article. It builds no action, selects no connection, and claims no field equation; those remain where <em>The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</em> left them. It does not own the Hehl–Datta coefficient, which belongs to the nonlinear-Dirac article, and it does not own the four-fermion self-interaction as a physical model. What it adds is the chain of identities that makes the elimination step possible and states exactly what the corpus's phrase "vanishing torsion is a condition" means.</p>
 <p>One warning belongs in the introduction, because a reader who has seen an external construction may expect the opposite. There is a claim in the literature that the torsion of spacetime <em>is</em> the commutator of the quaternionic units, and that the tetrad and the contorsion are bilinear composites of a biquaternionic spinor, so that geometry emerges from matter. That construction is recorded and tested separately, in <em>Matter Makes Space — An External Construction from Quaternionic Spinors</em>, where the parts that do not reproduce are listed. Nothing in this article depends on it. Here the torsion is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme, and the algebra's role is only that its Lie subspace can carry the connection.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and central scalar imaginary $i$. The metric has signature $(+,-,-,-)$, the tetrad is $\exp(a){}_\mu$, the metric is $g_{\mu\nu} = \eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$ with $\eta = \mathrm{diag}(+1,-1,-1,-1)$, and index-free geometric statements are written in the text rather than displayed when the index order would carry no information. The biquaternion frame of Route Two is the $\mathbb{M}_-$-valued field $\tilde E_\mu$, with the frame form $\langle \tilde E_\mu, \tilde E_\nu\rangle_{\natural}$ equal to $g_{\mu\nu}$ up to the overall sign that separates the metric of the material sector from the level-3 convention of this article (<em>Conventions in the Biquaternion Universe</em>); its components in a fixed basis of $\mathbb{M}_-$ are the tetrad components $\exp(a){}_\mu$ of the standard formalism, and the two notations are used side by side below. The spin connection one-form is $\omega^{ab}{}_\mu$, equivalently the algebra-valued $\vec\Gamma_\mu$ of Route Three. The dictionary between the algebra's six generators and the six Lorentz bivectors is that of <em>The Dirac Algebra and Biquaternions — A Dictionary</em>, where $\mathsf{M}_2(\vec e_k)$ is a spacelike bivector and $\mathsf{M}_2(i\vec e_k)$ a timelike one. The Dirac bilinears carry the Clifford-odd $\gamma^0$ and the axial $\gamma_5$, as <em>Conventions in the Biquaternion Universe</em> and the minimal-coupling articles require.</p>
-<hr />
 <h2 id="the-torsion-tensor">The Torsion Tensor</h2>
 <p>An affine connection $\Gamma^\lambda{}_{\mu\nu}$ need not be symmetric under the exchange of its two last labels. Its antisymmetric part is the <strong>torsion tensor</strong>,</p>
 <p>$$
@@ -96,7 +97,7 @@ $$</p>
 <p>because the Christoffel symbols are symmetric and the antisymmetric part of $\Gamma$ must be the whole of $T$. Twenty-four independent components, the same count as the torsion.</p>
 <p><strong>Torsion is twice the alternating contorsion.</strong> Since the Christoffel part cancels in the difference,</p>
 <p>$$
-T^\lambda{}_{\mu\nu} = 2\,K^\lambda{}_{[\mu\nu]} .
+\boxed{\;T^\lambda{}_{\mu\nu} = 2\,K^\lambda{}_{[\mu\nu]}\;}.
 $$</p>
 <p>For the totally antisymmetric contorsions used in the framework this is simply $T = 2K$, that is $K = \tfrac12 T$. In the same case the inverse relation is the permutation sum</p>
 <p>$$
@@ -105,7 +106,7 @@ $$</p>
 <p>verified here at residual exactly zero; the three terms are cyclic permutations of one another and sum to $\tfrac12 T$ exactly because a totally antisymmetric third-rank tensor is invariant under cyclic permutations. Away from total antisymmetry this permutation sum does not reproduce the contorsion: the map from a contorsion antisymmetric in its last pair to its torsion is invertible on the twenty-four components, but its inverse is not a permutation sum of the torsion alone, as follows by expanding both sides of the printed relation. The corpus meets only the totally antisymmetric case, and the permutation sum is the one it uses. This is the algebraic content behind the statement in the nonlinear-Dirac article that the contorsion–torsion relation follows automatically: it is an identity, not a dynamical relation, and it fixes no component of either tensor.</p>
 <p><strong>Metric compatibility is exactly total antisymmetry.</strong> With the metric constant in the Levi-Civita sense, the covariant derivative of the metric acquires only contorsion terms,</p>
 <p>$$
-\nabla_\mu g_{\nu\rho} = -\left(K_{\nu\mu\rho} + K_{\rho\mu\nu}\right) .
+\boxed{\;\nabla_\mu g_{\nu\rho} = -\left(K_{\nu\mu\rho} + K_{\rho\mu\nu}\right)\;}.
 $$</p>
 <p>This vanishes for every index order if and only if the contorsion is <strong>totally antisymmetric</strong>. The count was verified here: the 24 components of a contorsion antisymmetric in its last pair are cut by the 20 independent conditions $K_{\nu\mu\rho} + K_{\rho\mu\nu} = 0$ to a <strong>four-dimensional</strong> solution space, and four is the number of components of a totally antisymmetric third-rank tensor in four dimensions. So the corpus's sentence "metric compatibility is a condition, not a consequence" can be stated with precision:</p>
 <blockquote>
@@ -151,7 +152,7 @@ $$</p>
 <p>which is exact, at every index triple and for every spinor, with the constant verified to be $+i$. A direct consequence is that the spin density is <em>not</em> a general third-rank tensor: its antisymmetric part is fixed entirely by the axial four-vector, so the 24 components of a general third-rank tensor collapse to four. This is the same counting as in the metric-compatibility condition above, and it is not a coincidence: the physical torsion and the physical spin density live in the same four-dimensional subspace.</p>
 <p><strong>The spin density contracts to the axial current.</strong> Contracting the identity with itself gives</p>
 <p>$$
-\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6\,A_\rho A^\rho ,
+\boxed{\;\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6\,A_\rho A^\rho\;},
 $$</p>
 <p>because $\epsilon_{\lambda\mu\nu\rho}\epsilon^{\lambda\mu\nu\sigma} = -6\,\delta_\rho{}^\sigma$. The numerical check gave the ratio $6.000000$ with spread $3\times 10^{-13}$, that is, six to within the arithmetic.</p>
 <p>The Einstein–Cartan field equations then read, schematically,</p>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -94,9 +97,10 @@ E_1^{*2} - E_2^{*2} = (m_1^2 - m_2^2)c^4
 $$
 and with $E_1^* + E_2^* = Mc^2$ this gives $E_1^* - E_2^* = (m_1^2 - m_2^2)c^2/M$. Combining the sum and the difference,
 $$
+\boxed{\;
 E_1^* = \frac{\left(M^2 + m_1^2 - m_2^2\right)c^2}{2M},
 \qquad
-E_2^* = \frac{\left(M^2 + m_2^2 - m_1^2\right)c^2}{2M}.
+E_2^* = \frac{\left(M^2 + m_2^2 - m_1^2\right)c^2}{2M}\;}.
 $$
 Substituting $E_1^*$ into the mass shell and factoring,
 $$
@@ -105,7 +109,8 @@ p^{*2}c^2 = E_1^{*2} - m_1^2c^4
 $$
 The bracket factors as a difference of squares, first as $\left[(M-m_1)^2 - m_2^2\right]\left[(M+m_1)^2 - m_2^2\right]$ and then as the product of two differences of squares, so that
 $$
-p^* = \frac{c}{2M}\sqrt{\left[M^2 - (m_1+m_2)^2\right]\left[M^2 - (m_1-m_2)^2\right]} .
+\boxed{\;
+p^* = \frac{c}{2M}\sqrt{\left[M^2 - (m_1+m_2)^2\right]\left[M^2 - (m_1-m_2)^2\right]}\;}.
 $$
 The speeds follow from $\vec p_a^* = \gamma_a^* m_a \vec v_a^*$ and $E_a^* = \gamma_a^* m_a c^2$, giving
 $$
@@ -258,7 +263,8 @@ $$
 $$
 that is,
 $$
-\sum_{i<j} M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2 .
+\boxed{\;
+\sum_{i<j} M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2\;}.
 $$
 As a check, for $M = 100$, $(m_1,m_2,m_3) = (20,30,40)$ the right-hand side is $12900$; a direct evaluation of the three pair masses at a sample configuration (for instance the configuration with $\vec p_3^* = 0$, where $M_{12} = 60$) reproduces the same total.</p>
 <h2 id="problem-4-threshold-and-the-opening-angle">Problem 4: Threshold and the Opening Angle</h2>
@@ -390,9 +396,10 @@ M^2 - (m_1-m_2)^2 = \left(2m_1 + \frac{Q}{c^2}\right)\left(2m_2 + \frac{Q}{c^2}\
 $$
 Keeping the leading term in each,
 $$
+\boxed{\;
 p^* \approx \frac{c}{2M}\sqrt{\frac{Q}{c^2}\,2(m_1+m_2)\cdot 4m_1m_2}
 = \sqrt{\frac{2Qm_1m_2}{m_1+m_2}}
-= \sqrt{2\mu Q}.
+= \sqrt{2\mu Q}\;}.
 $$
 Equivalently, since $v_a^* = p^*c^2/E_a^* \approx p^*/m_a$ and the daughters move oppositely, the relative speed is $v_{\rm rel} = v_1^* + v_2^* = p^*(1/m_1 + 1/m_2) = p^*/\mu$, so
 $$

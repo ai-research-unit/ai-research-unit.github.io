@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,7 +82,6 @@ $$
 $$
 The two <strong>bilinear</strong> products split: the general plain bilinear product has no nonzero square-zero element, and the general tessarine bilinear product has the two idempotent lines. The two <strong>sesquilinear</strong> products split the other way: the general plain sesquilinear product has the two lines, and the general tessarine sesquilinear product has none. The two lines are the <strong>same</strong> set for every one of the three products that have a nonzero square-zero element, namely the null cone of the reduced norm.</p>
 <p><strong>The results.</strong> The roots of zero of the multiplication are $\{0\}$, and the multiplication has no nonzero nilpotent; the algebra is <strong>reduced</strong>, its nilradical and its Jacobson radical are $\{0\}$, and it is semisimple. The tessarine bilinear product and the plain sesquilinear product each have the two idempotent lines as their nonzero square-zero set, and each is <strong>nilpotent of index two</strong> on those lines. The tessarine sesquilinear product has no nonzero square-zero element, and its nilpotents are the two lines with <strong>index three</strong>: $\breve Q^{\star2}\neq0$ and $\breve Q^{\star3}=0$ for a nonzero element of a line. The plain bilinear product is the multiplication and has none.</p>
-<p><strong>Boundaries.</strong> The four products and their forms and norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>, above this article in this category; the multiplication and its axioms are <em>Introduction to the Algebra of the Reduced Biquaternions</em>; the zero divisors and the two lines are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>, above this article; and the idempotents are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>, above this article. The nilpotent glyph of the reduced biquaternion layer, the plain capital of <em>Conventions in Mathematics</em>, §<em>The Nilpotent Convention</em>, is not used here because there is no nilpotent to name in the multiplication; the products of the biquaternion layer with their two nilpotent families are <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>.</p>
 <h2 id="the-roots-of-zero-of-the-multiplication">The Roots of Zero of the Multiplication</h2>
 <h3 id="the-equation-and-the-single-root">The Equation and the Single Root</h3>
 <p><strong>The equation $\breve Q^{2}=0$ has exactly one solution, $\breve Q=0$, in the multiplication.</strong></p>

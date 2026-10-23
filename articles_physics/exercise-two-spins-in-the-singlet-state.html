@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -122,14 +125,14 @@ p(+,+) = \frac{1}{4}\left(1 - \vec u_a\cdot\vec u_b\right).
 $$</p>
 <p>In terms of the angle $\theta$ between the two directions,</p>
 <p>$$
-p(+,+) = \frac{1}{4}\left(1 - \cos\theta\right) = \frac{1}{2}\sin^2\!\left(\frac{\theta}{2}\right).
+\boxed{\;p(+,+) = \frac{1}{4}\left(1 - \cos\theta\right) = \frac{1}{2}\sin^2\!\left(\frac{\theta}{2}\right)\;}.
 $$</p>
 <h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
 <p>In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $\tilde\Pi(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. For a <strong>two-qubit system</strong>, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.</p>
 <p>The singlet state corresponds to the idempotent</p>
 <p>$$
-\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\boxed{\;\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
 $$</p>
 <p><em>Idempotency.</em> Using $(x\otimes y)\circ(z\otimes w) = (x\circ z)\otimes(y\circ w)$ and the quaternion multiplication rules,</p>
 <p>$$

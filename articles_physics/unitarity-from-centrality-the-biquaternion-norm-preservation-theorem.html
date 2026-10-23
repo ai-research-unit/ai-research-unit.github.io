@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -83,15 +86,6 @@ $$</p>
 <p>and the intermediate case $\tilde{U}^{*}\tilde{U}=\lambda e_t$ with central $\lambda$ is a homomorphism up to the central scalar $\lambda$.</p>
 <p>The same theme governs the dynamics. The state-vector equation requires a unit $J$ with $J^2=-e_t$ and a Hermitian generator $\tilde{H}$; the flow it generates preserves the Hermitian norm <strong>for every Hermitian $\tilde{H}$</strong> if and only if $J$ commutes with every Hermitian element, i.e. if and only if $J$ is central. The centre contains exactly the two roots $\pm i$, so the norm-preserving unit of the Schrödinger equation is forced to be the scalar imaginary. This is the precise sense of the title: unitarity follows from centrality.</p>
 <p>The article is organised as follows. The two norms are written down and their natures contrasted; the conjugation action and its defect are introduced; the two norm-preservation theorems are proved; the norm-preserving groups are identified as $\mathrm{U}(2)$ for the Hermitian norm and $\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ for the biquaternion norm, the second containing the first, so that the intersection of the two is $\mathrm{U}(2)$ itself while $\mathrm{U}(2)\cap SL(2,\mathbb{C})=SU(2)$; the flow version and the forced centrality of the unit are proved; and the standard and algebraic parts of the result are separated. Worked counterexamples show what fails when the centrality hypothesis is dropped.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central $i$ with $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), and $\flat=-{}^{*}$. The Hermitian and anti-Hermitian subspaces are
-$$
-\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
-\qquad
-\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
-\qquad
-\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
-$$
-The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_te_t+i\vec h$ one has $\langle\tilde{H}\rangle_{\natural}=(h_t^2-|\vec h|^2)e_t$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A root of $-e_t$ is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2=-e_t$. The roots that can serve as the unit of a norm-preserving dynamics are the <strong>anti-Hermitian</strong> ones, $\tilde{\Xi}^{*}=-\tilde{\Xi}$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_t$ need not be anti-Hermitian, as $\tilde{\Xi}=\vec e_x+i\vec e_y-\vec e_z$ shows, and the condition of norm preservation at $\tilde{H}=e_t$ is what forces $\tilde{\Xi}^{*}=-\tilde{\Xi}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and a pure state is $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$.</p>
 <h2 id="the-two-norms">The Two Norms</h2>
 <p>The word "norm" carries two distinct objects in this framework, and the whole article turns on not confusing them.</p>
 <p><strong>The Hermitian norm.</strong> For $\tilde{Q},\tilde{Q}_1\in\mathbb{B}$ define
@@ -152,9 +146,9 @@ $$
 $$
 so that $\Gamma_{\tilde{U}}$ is an algebra homomorphism <strong>up to the central scalar $\lambda$</strong>. The failure of multiplicativity is then a scalar — the same number for every pair $\tilde{Q},\tilde{Q}_1$ — rather than an operator-valued anomaly that distorts each product differently. Centrality of the defect is exactly the condition that the anomaly is scalar; and the scalar is $1$, i.e. the action is multiplicative, exactly when $\tilde{U}$ is unitary:
 $$
-\Gamma_{\tilde{U}}\text{ multiplicative}
+\boxed{\;\Gamma_{\tilde{U}}\text{ multiplicative}
 \iff \tilde{U}^{*}\tilde{U}=e_t
-\iff \tilde{U}\text{ unitary}.
+\iff \tilde{U}\text{ unitary}\;}.
 $$
 This is the first appearance of the centre in the norm-preservation problem, and it is the structural core of the article. Note that $\tilde{U}^{*}\tilde{U}$ is automatically <strong>Hermitian and positive</strong>, $(\tilde{U}^{*}\tilde{U})^{*}=\tilde{U}^{*}\tilde{U}$, so when it is central it is $\lambda e_t$ with $\lambda\in\mathbb{R}$ and $\lambda>0$ for $\tilde{U}\neq0$; the central defect is a positive real scalar multiple of the identity, and unitarity is its normalization to $1$.</p>
 <h2 id="the-norm-preservation-theorem">The Norm-Preservation Theorem</h2>
@@ -162,8 +156,8 @@ This is the first appearance of the centre in the norm-preservation problem, and
 <h3 id="part-1-the-hermitian-norm">Part 1: the Hermitian norm</h3>
 <p><strong>Theorem 1.</strong> Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation $\Gamma_{\tilde{U}}$ preserves the Hermitian norm for all $\tilde{Q}$,
 $$
-\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^{*}\,\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr)
-\qquad\text{for all }\tilde{Q},
+\boxed{\;\mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^{*}\,\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr)
+\qquad\text{for all }\tilde{Q}\;},
 $$
 if and only if $\tilde{U}$ is unitary, $\tilde{U}^{*}\tilde{U}=e_t$.</p>
 <p><strong>Proof.</strong> Write $\tilde Q_4=\tilde{U}^{*}\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}$,
@@ -183,9 +177,9 @@ The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varp
 <h3 id="part-2-the-biquaternion-norm">Part 2: the biquaternion norm</h3>
 <p><strong>Theorem 2.</strong> Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the biquaternion norm by a central scalar,
 $$
-\langle\Gamma_{\tilde{U}}(\tilde{Q})\rangle_{\natural}=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural}
+\boxed{\;\langle\Gamma_{\tilde{U}}(\tilde{Q})\rangle_{\natural}=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural}
 \qquad
-\text{for all }\tilde{Q},
+\text{for all }\tilde{Q}\;},
 $$
 where $|\langle\tilde{U}\rangle_{\natural}|^2=\langle\tilde{U}\rangle_{\natural}\,\langle\tilde{U}\rangle_{\natural}^{*}$ is a non-negative real scalar, the complex conjugate being taken coefficientwise on the central element $\langle\tilde{U}\rangle_{\natural}$. Consequently $\Gamma_{\tilde{U}}$ preserves the biquaternion norm if and only if
 $$

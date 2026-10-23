@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -516,7 +519,7 @@ $$</p>
 <p><strong>In the idempotent basis the Peirce decomposition is the diagonal decomposition of the regular matrix model; the two projectors are the diagonal matrix units, and the scalar coefficients of the Peirce coordinates are the two eigenvalues.</strong></p>
 <p>The regular representation sends $Q$ to the matrix</p>
 <p>$$
-\mathsf{M}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
+\mathsf{M}_2(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$</p>
 <p>which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$, the scalar coefficients of the Peirce coordinates (<em>The Matrix Element Representations of the Split-Complexoid</em>). The Peirce components are the two eigenspaces:</p>
 <p>$$
@@ -528,6 +531,15 @@ P_{+}=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
 P_{-}=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
 $$</p>
 <p>with $P_{+}+P_{-}=I$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the off-diagonal matrix units, are absent: the model is a commutative subalgebra of $M_2(\mathbb{R})$, not the full matrix algebra.</p>
+<p><strong>The eigenbasis and the change of basis.</strong> The idempotent basis $(\Pi_+,\Pi_-)$ is an eigenbasis of $Q$: the columns of the matrix
+$$
+\mathsf{C}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad \mathsf{C}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+$$
+are the coordinate vectors of $\Pi_+=\tfrac12(1,1)$ and $\Pi_-=\tfrac12(1,-1)$ in the basis $(1,j)$, and they are eigenvectors of $\mathsf{M}_2(Q)$ with eigenvalues $Q_+=q+q'$ and $Q_-=q-q'$. The diagonalisation is
+$$
+\mathsf{C}^{-1}\mathsf{M}_2(Q)\mathsf{C}=\operatorname{diag}(Q_+,Q_-).
+$$
+The Peirce coordinates of $Q$ in the idempotent basis are therefore the eigenvalues, and the two spectral projectors $P_\pm$ are the matrices of the two Peirce components. This is the matrix form of the eigenbasis developed in <em>Eigenbasis of a Split-Complex Number</em>, §<em>The Eigenbasis</em>. In the scalar case $q'=0$ the matrix is $\mathsf{M}_2(Q)=q\mathrm I_2$, every nonzero vector is an eigenvector, and every basis is an eigenbasis.</p>
 <h2 id="the-decomposition-into-minimal-ideals">The Decomposition into Minimal Ideals</h2>
 <p><strong>The algebra is the direct sum of its two minimal ideals, and the decomposition is the Peirce decomposition with respect to the standard idempotent.</strong></p>
 <p><strong>Proposition.</strong> The principal ideals</p>
@@ -540,7 +552,7 @@ $$</p>
 $$</p>
 <p>as a direct sum of ideals, the two summands being the two copies of $\mathbb{R}$.</p>
 <p><strong>Proof.</strong> Every $Q$ satisfies $Q=Q(\Pi_{+}+\Pi_{-})=Q\Pi_{+}+Q\Pi_{-}$, so the two ideals span; their intersection is zero because $\Pi_{+}\Pi_{-}=0$: if $Q\Pi_{+}=B\Pi_{-}$ then multiplying by $\Pi_{+}$ gives $Q\Pi_{+}=0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_{+}$ contains some $\lambda\Pi_{+}$ with $\lambda\neq0$, hence contains $\Pi_{+}$ and equals $\mathbb{R}\Pi_{+}$; so each is minimal.</p>
-<p>The two ideals are the two <strong>minimal ideals</strong> in the sense of the lattice of all ideals, and they are the images of the two idempotents. The quotient by one is the other, and the algebra is the product of the two.</p>
+<p>The two ideals are the two <strong>minimal ideals</strong> in the sense of the lattice of all ideals, and they are the images of the two idempotents. The quotient by one is the other, and the algebra is the product of the two. They are the two spinor spaces of <em>Eigenbasis of a Split-Complex Number</em>, §<em>The Spinor Spaces</em>: each is a real line, and a spinor is a single real coefficient on one of them.</p>
 <h2 id="the-lattice-of-ideals">The Lattice of Ideals</h2>
 <p><strong>The four ideals form the four-element Boolean lattice $\mathcal{P}(\{+,-\})$, with meet intersection and join sum.</strong></p>
 <p>The four ideals of $\mathbb{D}$ are $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{D}$, with the inclusions</p>

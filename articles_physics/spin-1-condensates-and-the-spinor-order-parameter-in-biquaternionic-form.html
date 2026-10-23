@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -98,8 +101,8 @@ $$</p>
 <h3 id="the-interaction-energy-and-the-phase-diagram">The interaction energy and the phase diagram</h3>
 <p>For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,</p>
 <p>$$
-\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\Psi\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
-+p\,\langle F_z\rangle+\zeta\,\langle F_z^2\rangle ,
+\boxed{\;\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\Psi\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
++p\,\langle F_z\rangle+\zeta\,\langle F_z^2\rangle\;},
 $$</p>
 <p>with the spin-independent and spin-dependent contact couplings</p>
 <p>$$
@@ -163,8 +166,8 @@ $$</p>
 $$</p>
 <p>where the second equality gives the alignment in terms of the eighth and third Bloch coordinates of the density matrix, a relation verified on random pure states. The quadratic operators have one further independent expectation, the traceless symmetric tensor</p>
 <p>$$
-\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac{2}{3}\delta_{ij} ,
-\qquad \mathrm{Tr}\,\mathcal{Q}=0 ,
+\boxed{\;\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac{2}{3}\delta_{ij},
+\qquad \mathrm{Tr}\,\mathcal{Q}=0\;},
 $$</p>
 <p>which is the <em>nematic</em> (quadrupolar) order parameter. For the polar state aligned with the director $\vec u$ it takes the value $\mathcal{Q}_{ij}=\tfrac{1}{3}\delta_{ij}-\vec u_i\vec u_j$, a form that is invariant under $\vec u\to-\vec u$ — which is why the polar order parameter is a director and not a vector. The explicit computation for the state $\vec\zeta=(0,1,0)^T$ gives $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac{1}{3}\,\mathrm{diag}(1,1,-2)$.</p>
 <p>The two order parameters are therefore the framework's rank-one and rank-two tensor expectations, and the statement that the standard uniform mean-field energy depends on the state only through $\lvert\langle\vec F\rangle\rvert^2$ and $\langle F_z^2\rangle$ is a statement about which invariants the algebra supplies at the two lowest ranks. The linear invariant detects the adjoint (magnetic) order, the quadratic one detects the nematic order, and for spin one there is no independent invariant at rank three.</p>
@@ -172,16 +175,16 @@ $$</p>
 <h3 id="coherent-states-from-identical-idempotents">Coherent states from identical idempotents</h3>
 <p>The spin-one coherent states are the rotations of the stretched state. In the two-factor realisation the stretched state is the product of two identical fundamental states, $|\!\uparrow\uparrow\rangle$, and the framework's version of it is the symmetrised product of two identical fundamental idempotents,</p>
 <p>$$
-\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}
-=\lvert\vec\zeta_{\vec u}\rangle\langle\vec\zeta_{\vec u}\rvert ,
+\boxed{\;\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}
+=\lvert\vec\zeta_{\vec u}\rangle\langle\vec\zeta_{\vec u}\rvert\;},
 $$</p>
 <p>where $\tilde\Pi(\vec u)$ is the fundamental idempotent of the informational sector along $\vec u$ and $\vec\zeta_{\vec u}$ is the spin-one coherent state whose magnetic order points along $\vec u$. The magnetic order parameter of the condensate is thus read off from the axis along which the two fundamental idempotents coincide, and the ferromagnetic phase is the phase in which the two constituent fundamental spins are <em>parallel</em>.</p>
 <p>This gives the algebraic form of the ferromagnetic order: the order parameter is the axis of a single fundamental idempotent, doubled. The spin-one coherent state has $\lvert\langle\vec F\rangle_{*}\rvert=1$ — verified explicitly on rotated coherent states — and the two-parameter family of directions, together with the phase, makes the ferromagnetic order-parameter manifold.</p>
 <h3 id="polar-states-from-antipodal-idempotents">Polar states from antipodal idempotents</h3>
 <p>The polar states have a different and equally transparent realisation: they are the symmetrised products of two <em>antipodal</em> fundamental idempotents,</p>
 <p>$$
-\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}
-=\tfrac{1}{2}\,\lvert\vec\zeta_{\vec u}^{\mathrm{pol}}\rangle\langle\vec\zeta_{\vec u}^{\mathrm{pol}}\rvert ,
+\boxed{\;\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}
+=\tfrac{1}{2}\,\lvert\vec\zeta_{\vec u}^{\mathrm{pol}}\rangle\langle\vec\zeta_{\vec u}^{\mathrm{pol}}\rvert\;},
 $$</p>
 <p>with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is proportional to the polar-state idempotent, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are <em>antiparallel</em>: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.</p>
 <p>The two families exhaust the two extreme values of the magnetic invariant, and they are distinguished by a single algebraic choice — whether the two fundamental idempotents that are symmetrised are the same or orthogonal. The broken-axisymmetric family, which interpolates between them when $\zeta<0$, corresponds to symmetrising two fundamental idempotents that are neither identical nor orthogonal; the angle between the two fundamental spin directions parameterises the departure from the two extremes.</p>

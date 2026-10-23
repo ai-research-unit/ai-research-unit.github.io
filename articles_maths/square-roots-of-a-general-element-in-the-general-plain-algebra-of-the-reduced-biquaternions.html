@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,7 +82,6 @@ $$</p>
 <li><strong>one root</strong> when $\breve Q=0$.</li>
 </ul>
 <p>The four roots are $\pm p\Pi_+\pm q\Pi_-$ with the signs independent, where $p$ and $q$ are fixed square roots of $Q_{+}$ and $Q_{-}$; they are the two opposite pairs $\pm X$ and $\pm X'$, with $X'$ the <strong>conjugate root</strong> $p\Pi_+-q\Pi_-$, and neither pair can be predicted from the other. The three central values of the two companion articles are recovered as the radicands $\breve Q=-1$, $0$ and $+1$.</p>
-<p><strong>Boundaries.</strong> The algebra and its idempotents are <em>Reduced Biquaternion Space</em> and <em>Introduction to the Algebra of the Reduced Biquaternions</em>, above this article in this category; the idempotent coordinates are those of <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>. The roots of one and the roots of zero are the companion articles <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em> and <em>Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions</em>, above this article. The zero-divisor set, which is the union of the two idempotent lines, is <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ whose vanishing draws that set is <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>. The square-root problems of the other three general products are the thematic articles of their blocks, and the four products themselves are <em>The Four Products, Their Forms and Their Algebraic Norms</em>.</p>
 <p>Throughout, an element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$, the idempotent coordinates are
 $$
 Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown},\qquad \breve Q=Q_{+}\Pi_++Q_{-}\Pi_-,\qquad \Pi_{\pm}=\tfrac12(1\pm j),

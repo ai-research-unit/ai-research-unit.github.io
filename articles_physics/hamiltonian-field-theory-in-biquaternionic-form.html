@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -123,7 +126,7 @@ $$</p>
 $$</p>
 <p>so that the canonical brackets are the distributional relations</p>
 <p>$$
-\{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
+\boxed{\ \{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\ },
 \qquad
 \{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\phi(\vec y)\}=\{\pi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=0,
 $$</p>
@@ -131,7 +134,7 @@ $$</p>
 <h3 id="the-continuity-equation-and-the-energy-flux">The Continuity Equation and the Energy Flux</h3>
 <p>The energy density is conserved along the motion by a local conservation law. Differentiating $\mathcal{H}$ in time and using the equation of motion gives</p>
 <p>$$
-\partial/\partial t'\mathcal{H}+\nabla\cdot\vec S=0,
+\boxed{\ \partial/\partial t'\mathcal{H}+\nabla\cdot\vec S=0\ },
 \qquad
 \vec S=-(\left(\partial\phi/\partial t'\right)^{\,*}\nabla\phi+\partial\phi/\partial t'\,\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*});
 $$</p>
@@ -150,7 +153,7 @@ $$</p>
 <h3 id="the-hamiltonian-density-as-a-hermitian-bilinear">The Hamiltonian Density as a Hermitian Bilinear</h3>
 <p>The density is the sum of two Hermitian forms. With $\tilde\nabla\tilde\Phi$ the biquaternionic gradient of the field — its four coefficients are the four partial derivatives, $(\partial/\partial Q_t\,\phi,\partial/\partial Q_x\phi,\partial/\partial Q_y\phi,\partial/\partial Q_z\phi)$ —</p>
 <p>$$
-\boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)\right]+\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right].\;}
+\boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)\right]+\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right]\;}.
 $$</p>
 <p>The second term is the mass form, positive and central. The first is the <strong>kinetic-plus-gradient form</strong>, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]=c^{-2}|\partial\phi/\partial t'|^2+|\nabla\phi|^2$ is where the $ict'$ convention does its quiet work: the time coefficient of the gradient is $\partial/\partial Q_t\,\phi=-ic^{-1}\partial\phi/\partial t'$, so $|\partial/\partial Q_t\,\phi|^2=c^{-2}|\partial\phi/\partial t'|^2$ and the kinetic term is <em>positive</em>, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta$; a reader who computes $|\partial/\partial Q_t\,\phi|^2$ as $-\frac{1}{c^2}|\partial\phi/\partial t'|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde Q_1^{*}\tilde Q_1$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{M}_+$ — and it is <em>this</em> form, not the holomorphic norm $\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.</p>
 <h3 id="the-energymomentum-biquaternion">The Energy–Momentum Biquaternion</h3>

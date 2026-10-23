@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>The two general products of the quaternion space are defined independently in <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, and it is natural to ask which of them deserves the name of multiplication and how the two are told apart. In the strict sense, of an associative multiplication with a two-sided unit over the field of scalars, only the general plain product does: the quaternionic product is $\mathbb{R}$-bilinear but neither associative nor two-sidedly unital.</p>
 <p>This article tabulates the properties that separate the two products — bilinearity, associativity, the unit, commutativity, the square, the values and the radical — and gives the short computation that decides each entry where it is not immediate.</p>
 <p>The article assumes the two products and their coordinate rules from <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, the article preceding this one, and it uses the linking identities of <em>Relations Between the Two General Products</em>, the article preceding this one, for the unit and the square rows. The left and right multiplications and the associator are <em>The Two General Products and Operators</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $e_t=1$ is the unit of the algebra, $\vec q_1$ is the vector part of $\tilde q_1$, and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The two products are written $\tilde q_1\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2$.</p>
 <h2 id="the-property-table">The Property Table</h2>
 <div class="table-scroll"><table>
 <thead>

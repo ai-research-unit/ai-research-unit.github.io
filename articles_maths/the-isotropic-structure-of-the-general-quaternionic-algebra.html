@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@
 $$</p>
 <p>has for its null set the zero-divisor cone of the algebra. This article develops the cone: its two families of maximal totally isotropic planes, the minimal ideals it carries, and its identification with the zero-divisor set of the algebra. The topology of the cone and the realified invariants are not developed here; the pointers are in the last paragraph of this introduction.</p>
 <p>The form itself, its polarisation and its quadratic space are <em>Norm and Invertibility in the General Quaternionic Algebra</em>; the remarkable subspaces and their restriction matrices are <em>Remarkable Subspaces under the General Quaternionic Algebra</em>; the classification of the isotropic elements is <em>Zero Divisors of the Biquaternion Algebra</em>; the projective picture of the cone, the quadric surface, the Klein quadric and the Plücker embedding are <em>The Null Quadric and Its Projective Geometry</em>; and the invertibility criterion that makes the cone the boundary of the group of units is <em>Norm and Invertibility in the General Quaternionic Algebra</em>. The topology of the cone, its dimension, its apex and its link are <em>The Topology of the Zero-Divisor Cone</em>; the index, the defect and the signature of the realified form are <em>The Realification of the Four Forms</em>, and their values on the remarkable subspaces are <em>Remarkable Subspaces under the General Quaternionic Algebra</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde{Q}=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$, and $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$ is the definite norm of the coefficient space.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>null cone</strong> of the general quaternionic bilinear form is</p>
 <p>$$

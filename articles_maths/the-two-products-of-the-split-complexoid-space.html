@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article defines the <strong>two products</strong> carried by the split-complex space — the <strong>general plain bilinear product</strong> $Q_1Q_2$ and the <strong>general plain sesquilinear product</strong> $Q_1\overline{Q_2}$ — reads them on the coordinates, states the two structures they define, and isolates the one point that tells this pair of products from the pair carried by the complex field. The first is the multiplication of the algebra and makes $\mathbb{D}$ a commutative ring; the second is the product with the second argument conjugated and makes $\mathbb{D}$ a <strong>sesqualgebra</strong> over the algebra with involution $(\mathbb{D},\bar{\cdot})$. Two operations and two structures are the whole operational content of the split-complex space.</p>
 <p>The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its sandwich and its commutator are <em>The Sesquilinear Product of the Split-Complexoid Space</em>, below this article in this category. The forms and the norms the two products define are <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>, and the products read on the distinguished subspaces are <em>Remarkable Subspaces and the Two Products of the Split-Complexoid Space</em>. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is <em>Split-Complex Algebra</em> and its companions.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with $Q=q_+\Pi_1+q_-\Pi_2$, $q_+=q+q'$ and $q_-=q-q'$. The Hermitian conjugation coincides with the bar. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ name elements, and the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$ are kept for the forms and norms of <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>.</p>
 <h2 id="the-two-products">The Two Products</h2>
 <p><strong>Definition.</strong> The <strong>general plain bilinear product</strong> and the <strong>general plain sesquilinear product</strong> of the elements $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are</p>
 <p>$$
@@ -87,7 +89,7 @@ Q_1Q_2 - Q_1\overline{Q_2} = 2q'_2(q'_1+q_1j),
 $$</p>
 <p>which vanishes if and only if $q'_2=0$, that is $Q_2\in\mathbb{R}$, or $Q_1=0$.</p>
 <p>So the two products differ by the conjugate-linearity in the second argument, and they agree on every pair whose second factor is real. On the pair $Q_1=Q_2=j$ they disagree as much as possible on the second coordinate, $Q_1Q_2=j^2=1$ against $Q_1\overline{Q_2}=j(-j)=-1$; the sign is the split sign $j^2=+1$, and it is the whole of the difference between the two products beyond the conjugation.</p>
-<h2 id="the-ring-product-math39">The Ring Product $Q_1Q_2$</h2>
+<h2 id="the-ring-product-math24">The Ring Product $Q_1Q_2$</h2>
 <p><strong>Theorem (the commutative ring).</strong> Under the product $Q_1Q_2$ the plane $\mathbb{D}$ is a commutative, associative ring with the two-sided unit $1$, and $\mathbb{D}$ is the algebra $\mathbb{R}[x]/(x^2-1)$.</p>
 <p><strong>Proof.</strong> Commutativity is the symmetry of the coordinate formulas, $q_1q_2+q'_1q'_2=q_2q_1+q'_2q'_1$ and $q_1q'_2+q'_1q_2=q_2q'_1+q'_2q_1$; associativity is the associativity of the polynomial algebra $\mathbb{R}[x]/(x^2-1)$, or equally the identity $Q_1(Q_2Q_3)=(Q_1Q_2)Q_3$ checked on the three coordinates; and $1\cdot Q_1=Q_1\cdot 1=Q_1$. The ring is the algebra, by definition of the multiplication of $\mathbb{D}$.</p>
 <p>The product $Q_1Q_2$ is the bilinear, commutative, associative operation with unit, the multiplication of the split-complex algebra. As a form it is the general plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ of <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>, whose algebraic norm is the first algebraic norm $\langle Q_1\rangle=Q_1^2$.</p>
@@ -139,7 +141,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The failure of the field condition is the subject of <em>Zero Divisors of the Split-Complex Algebra</em>; as a ring, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ is a product of two fields, and its elements are classified in <em>The Classes of Element of the Split-Complex Algebra</em>.</p>
-<h2 id="the-sesquilinear-product-math61">The Sesquilinear Product $Q_1\overline{Q_2}$</h2>
+<h2 id="the-sesquilinear-product-math46">The Sesquilinear Product $Q_1\overline{Q_2}$</h2>
 <p><strong>Theorem (the sesqualgebra).</strong> Over the algebra with involution $(\mathbb{D},\bar{\cdot})$, the product $Q_1\overline{Q_2}$ is conjugate-commutative,</p>
 <p>$$
 Q_1\overline{Q_2} = \overline{Q_2\overline{Q_1}},

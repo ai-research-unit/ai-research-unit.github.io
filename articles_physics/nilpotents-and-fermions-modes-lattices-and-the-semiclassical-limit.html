@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>A nilpotent is a nonzero element of the biquaternion algebra whose square is zero,</p>
 <p>$$
-\vec\Upsilon^2=0,\qquad \vec\Upsilon\neq0 .
+\boxed{\;\vec\Upsilon^2=0,\qquad \vec\Upsilon\neq0\;}.
 $$</p>
 <p>It is the extreme case of a zero divisor: it does not merely fail to be invertible, it annihilates itself. The algebra places this object in a small and rigid locus, the pure elements whose complex vector part is isotropic. The question of this article is what physics that locus carries.</p>
 <p>The answer has three layers. A nilpotent is a <strong>mode</strong>: the one-site fermionic ladder is a pair of nilpotents, and Pauli exclusion is their square-zero product. It is a <strong>lattice point</strong>: the gapless point of a band symbol is a null momentum, and on a periodic lattice the null points are paired by topology. It is a <strong>limit</strong>: the semiclassical phase gradient stays off the cone except at a turning point, where it vanishes, and a contraction of the algebra reaches the cone only at the degenerate end of a family.</p>
@@ -127,11 +130,11 @@ $$</p>
 <h3 id="the-ladder">The Ladder</h3>
 <p>The fermionic interpretation needs a pair, not a single nilpotent. A canonical pair is</p>
 <p>$$
-\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),
+\boxed{\;\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),
 \qquad
 \vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
 \qquad
-\bigl\{\vec\Upsilon_x,\vec\Upsilon_y\bigr\}=e_t .
+\bigl\{\vec\Upsilon_x,\vec\Upsilon_y\bigr\}=e_t\;}.
 $$</p>
 <p>Both are pure nilpotents, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$. Their products are orthogonal idempotents,</p>
 <p>$$
@@ -215,7 +218,7 @@ $$</p>
 $$</p>
 <p>The Hamilton–Jacobi equation fixes its norm to the energy defect,</p>
 <p>$$
-\langle\nabla S\rangle_{\natural}=2m(E-V).
+\boxed{\;\langle\nabla S\rangle_{\natural}=2m(E-V)\;}.
 $$</p>
 <p>In the classically allowed region this is positive, and the gradient is never a nonzero nilpotent. The cone $\langle\nabla S\rangle_{\natural}=0$ is reached only where $\nabla S=0$, at a turning point: the gradient vanishes, and the origin is not a nilpotent either. A material four-momentum is a different object, since it carries the energy as its imaginary scalar part; its mass shell is not the level set of the phase gradient.</p>
 <p><strong>Boundary.</strong> The statement is about the leading order. Caustics, tunneling and backreaction are outside it. The gradient is not the wavefunction, and the WKB approximation is not exact. The algebra says where the leading-order momentum can live; it does not say that the exact solution stays there.</p>

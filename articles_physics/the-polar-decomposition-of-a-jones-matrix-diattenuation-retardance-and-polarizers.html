@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>A Jones matrix is a $2\times2$ complex matrix that carries the transverse electric field of a monochromatic beam through a linear optical element. The corpus reads the same object as a biquaternion: the algebra is isomorphic to $M_2(\mathbb{C})$, the matrix acts on the two-component Jones vector, and composition of elements is composition of optical elements. This article reads the polar decomposition of that element and gives its optical names.</p>
 <p>The decomposition is the <strong>Cartan pairing</strong>. A general Jones matrix is neither Hermitian nor unitary, so the quaternion and Hamilton pairings do not apply to it in general; the Cartan pairing does, and on the invertible elements it is unique. Its two factors are the two independent optical anisotropies: a Hermitian positive <strong>diattenuator</strong>, which transmits two orthogonal polarizations with different amplitudes, and a unitary <strong>retarder</strong>, which delays them by different phases.</p>
 <p>The article states the correspondence, computes the standard optical parameters from the factors, and treats the boundary case. A polarizer is a rank-one Jones matrix. It lies on the zero-divisor cone, where the norm vanishes, the element is not invertible, and the classical Cartan pairing stops. The generalized Cartan pairing continues there with a positive semidefinite factor and a partial isometry, and the polarizer becomes the canonical example of that extension.</p>
-<p><strong>Placement.</strong> The article belongs to the Optics block, beside <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>, whose Jones vectors and Stokes parameters it uses. The mathematics is owned by <em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em> and <em>The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone</em>; this article derives no matrix identity and reads the optical content of the pair.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -94,7 +96,7 @@
 </tr>
 <tr>
 <td>The eigenvalue decomposition, the eigenprojections and the rank-one case</td>
-<td><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a></td>
+<td><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a></td>
 </tr>
 <tr>
 <td>The norm, the invertibility criterion and the zero-divisor cone</td>
@@ -157,18 +159,18 @@ $$</p>
 <h2 id="the-cartan-pair">The Cartan Pair</h2>
 <p>For an invertible Jones matrix the Cartan pair is</p>
 <p>$$
-\tilde J=\tilde H\tilde U,\qquad
+\boxed{\;\tilde J=\tilde H\tilde U,\qquad
 \tilde H=\sqrt{\tilde J\tilde J^{*}},\qquad
-\tilde U=\tilde H^{-1}\tilde J .
+\tilde U=\tilde H^{-1}\tilde J\;}.
 $$</p>
 <p>The factor $\tilde H$ is Hermitian positive and the factor $\tilde U$ is unitary. The pair is unique: the positive square root is unique, and the unitary factor is then fixed. In the matrix image this is the polar decomposition $\mathsf{J}=\mathsf{H}\mathsf{U}$, with $\mathsf{H}$ positive definite and $\mathsf{U}$ unitary.</p>
 <p><strong>The optical order.</strong> With the column-vector convention, $\tilde J=\tilde H\tilde U$ acts as $\tilde U$ first and $\tilde H$ second: a retarder followed by a diattenuator. The optics literature more often writes the reverse order, $\mathsf{J}=\mathsf{J}_{\mathrm R}\mathsf{J}_{\mathrm D}$, a diattenuator followed by a retarder. That is the right polar form, $\mathsf{J}=\mathsf{V}\mathsf{P}$ with $\mathsf{P}=\sqrt{\mathsf{J}^{\dagger}\mathsf{J}}$ and $\mathsf{V}$ unitary; it has the same unitary factor, $\mathsf{V}=\mathsf{U}$, and the positive factor $\mathsf{P}=\mathsf{U}^{\dagger}\mathsf{H}\mathsf{U}$, which is $\mathsf{H}$ in the frame of $\mathsf{U}$. The principal transmissions and the retardance are therefore independent of the order convention; only the axis of the diattenuator is rotated by the retarder. This article uses the corpus's left form and states the order when it matters.</p>
 <p><strong>The parameter count.</strong> A Jones matrix has eight real parameters. The pair has four in $\tilde H$ and four in $\tilde U$, and the decomposition is a bijection on the invertible elements. One of the four in $\tilde U$ is the central phase, which is invisible in the optical response, so the physical element has seven parameters: the transmission scale, the diattenuation and its axis, the retardance and its axis. The count is the optical content of the uniqueness statement.</p>
 <p><strong>On the cone.</strong> When $N(\tilde J)=0$ the element is not invertible and $\tilde H^{-1}$ does not exist. The generalized pair replaces the inverse by the Moore–Penrose inverse, the positive factor by a positive semidefinite one, and the unitary factor by a partial isometry:</p>
 <p>$$
-\tilde J=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm p},\qquad
+\boxed{\;\tilde J=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm p},\qquad
 \tilde H_{\mathrm{pos}}=\sqrt{\tilde J\tilde J^{*}},\qquad
-\tilde U_{\mathrm p}=\tilde H_{\mathrm{pos}}^{+}\tilde J .
+\tilde U_{\mathrm p}=\tilde H_{\mathrm{pos}}^{+}\tilde J\;}.
 $$</p>
 <p>The pair is unique once the projections of $\tilde U_{\mathrm p}$ are fixed to be those of $\tilde J$. On the cone the positive factor becomes a scaled projection and the partial isometry carries one polarization direction to one output direction.</p>
 <div class="table-scroll"><table>
@@ -205,7 +207,7 @@ $$</p>
 $$</p>
 <p>with orthogonal eigenpolarizations $\vec u_H$ and $-\vec u_H$. The eigenvalues $T_1,T_2$ are the <strong>principal amplitude transmissions</strong>; their squares are the principal intensity transmissions. The mean intensity transmission is $\bar T=\tfrac12(T_1^{2}+T_2^{2})$, and the <strong>diattenuation</strong> is</p>
 <p>$$
-D=\frac{T_1^{2}-T_2^{2}}{T_1^{2}+T_2^{2}}\in[0,1].
+\boxed{\;D=\frac{T_1^{2}-T_2^{2}}{T_1^{2}+T_2^{2}}\in[0,1]\;}.
 $$</p>
 <p>A pure retarder has $T_1=T_2$, hence $D=0$; an ideal polarizer has $T_2=0$, hence $D=1$.</p>
 <p>The positive Hermitian factor has a second reading in the algebra. Every positive Hermitian element is a scale times a boost,</p>
@@ -226,7 +228,7 @@ $$</p>
 $$</p>
 <p>and the <strong>retardance</strong> is the phase difference</p>
 <p>$$
-\delta=\phi_1-\phi_2 \pmod{2\pi}.
+\boxed{\;\delta=\phi_1-\phi_2 \pmod{2\pi}\;}.
 $$</p>
 <p>The eigenpolarizations $\vec u_U$ and $-\vec u_U$ are the <strong>retarder axes</strong>; one is fast and one is slow, and the sign convention for $\delta$ fixes which is which. The global phase $\tfrac12(\phi_1+\phi_2)$ is not a retardance. It is the central phase of the element and has no optical consequence.</p>
 <p>The unitary factor splits into that phase and a real rotor,</p>
@@ -383,7 +385,7 @@ $$</p>
 <li><a href="the-matrix-images-mixedness-rapidity-and-the-phase-fibre.html">The Matrix Images: Mixedness, Rapidity and the Phase Fibre</a>, for the singular values of the amplitude and the determinant as a volume.</li>
 <li><a href="../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, for the theorem and its uniqueness.</li>
 <li><a href="../articles_maths/the-general-polar-decomposition-of-a-biquaternion-partial-isometries-and-the-null-cone.html">The General Polar Decomposition of a Biquaternion: Partial Isometries and the Null Cone</a>, for the extension to the cone and the polarizer.</li>
-<li><a href="../articles_maths/eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the spectral decomposition of the factors.</li>
+<li><a href="../articles_maths/eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the spectral decomposition of the factors.</li>
 <li><a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a>, for the partition that the polarizer sits on.</li>
 <li>Max Born and Emil Wolf, <em>Principles of Optics</em> (Cambridge, 7th edn, 1999), for the Jones calculus, the Stokes parameters and the polar decomposition of optical elements.</li>
 </ul>

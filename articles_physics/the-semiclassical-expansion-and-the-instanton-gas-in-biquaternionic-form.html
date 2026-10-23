@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p><em>The ADHM Construction and Biquaternion Instanton Data</em> parametrised the self-dual connections of the Euclidean theory, and <em>The Index Theorem and the Zero-Mode Count in Biquaternionic Form</em> counted the fermion modes they support. This article turns the instanton from a solution of a field equation into a contribution to a physical quantity. It develops the <strong>semiclassical expansion</strong> of the Euclidean path integral around instantons and collects those contributions into the <strong>instanton gas</strong>, the dilute-medium picture in which the theta dependence of the vacuum and the vacuum energy are computed.</p>
 <p>The subject straddles a boundary that this corpus keeps sharp. The path integral itself, its measure, the gauge-fixing and the Faddeev–Popov procedure belong to the quantisation programme, developed in the articles of <em>Biquaternion Quantum Fields</em>, and <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> fixes the Euclidean continuation that the instanton calculus requires. Those results are used here, not re-derived. What belongs to the present article is the <em>use</em> of the instanton configurations: the steepest-descent evaluation around a saddle, the collective-coordinate measure that the ADHM moduli space supplies, the sum over topological sectors that produces the theta vacuum, and the dilute-gas approximation with its range of validity. The companion article <em>The Theta Parameter and Strong CP in Biquaternionic Form</em> takes the theta angle so obtained and develops its consequences.</p>
 <p>Two of the framework's own results enter directly. First, the topological charge and its density were identified in <em>Instantons and Solitons in Biquaternionic Form</em>: the abelian density is the framework's invariant $I_2=\vec E\cdot\vec B$, and the non-abelian density is the matrix trace $\mathrm{Tr}(F\wedge F)$, which the biquaternion norm does not supply. Second, the moduli space of the saddle is the ADHM quotient of <em>The ADHM Construction and Biquaternion Instanton Data</em>, whose dimension fixes the number of collective coordinates and hence the measure. The semiclassical expansion is therefore built on the framework's topology and the framework's moduli; what it adds, and what it must import, is the fluctuation calculus of quantum field theory.</p>
-<p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em> and of the companion gauge articles. The Euclidean slice has coordinates $x_4,x_1,x_2,x_3$ with $x_4=c\tau$, the 't Hooft symbols of <em>Instantons and Solitons in Biquaternionic Form</em> are used for the self-dual solution, and the Euclidean curvature is written without the explicit $i$ in the commutator on Hermitian generators with $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$. The topological charge and action are</p>
 <p>$$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
@@ -112,7 +114,7 @@ Z_1^{\mathrm{cl}} \;\propto\; \int d^4x_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp
 $$</p>
 <p>where the weight $\rho^{-5}$ is the measure factor of the four translations and the scale: it is the Jacobian of the five collective coordinates, and it carries the dimension of the volume element, $d^4x_0\,d\rho\,\rho^{-1}\cdot(\text{scale weight})$. The translations integrate to the four-volume $VT$ of the box, so the nontrivial content is the single integral over the size,</p>
 <p>$$
-Z_1^{\mathrm{cl}} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) .
+\boxed{\;Z_1^{\mathrm{cl}} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2)\;}.
 $$</p>
 <p>The one-loop determinant multiplies this by a power of the coupling and, through renormalisation, by the running of $g$ with the scale. The physical statement is the <strong>dimensional transmutation</strong> of the renormalisation group: the dimensionless coupling $g$ is replaced by the running coupling $g(\rho)$ evaluated at the instanton size, and the 't Hooft one-loop result for the pure gauge theory has the structure</p>
 <p>$$
@@ -128,9 +130,9 @@ Z_Ϙ=\int_{\mathcal A\in\text{sector }Ϙ}\mathcal D\mathcal A\,\exp(-S[\mathcal 
 $$</p>
 <p>A local action cannot mix sectors, since $Ϙ$ is topological, but the vacuum need not be a definite-$Ϙ$ state. The theta vacuum is the superposition</p>
 <p>$$
-|\theta\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
+\boxed{\;|\theta\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
 \qquad
-Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ ,
+Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ\;},
 $$</p>
 <p>the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta\rangle=-i\partial/\partial\theta|\theta\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta\rangle$ superposition is the unique one that is, up to the standard subtleties.</p>
 <p>The theta dependence enters through the combination</p>
@@ -149,7 +151,7 @@ K>0 ,
 $$</p>
 <p>so that the topological susceptibility is</p>
 <p>$$
-\chi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots .
+\boxed{\;\chi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots\;}.
 $$</p>
 <p>Both were checked on a model instanton sum $Z(\theta)=\sum_{Ϙ=-2}^{2}\exp(iϘ\theta)Z_Ϙ$ with symmetric weights: the periodicity residual $|Z(\theta)-Z(\theta+2\pi)|$ was zero to machine precision, and the numerical second derivative of $2K\cos\theta$ at $\theta=0$ returned $2K$ to six digits, confirming the identification of the susceptibility with the instanton density. The periodicity is a property of the integer charge and not of the framework; the susceptibility is the physical content of the semiclassical sum.</p>
 <h2 id="the-dilute-instanton-gas">The Dilute Instanton Gas</h2>

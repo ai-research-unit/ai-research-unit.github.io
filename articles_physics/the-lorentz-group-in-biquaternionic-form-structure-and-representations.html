@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -231,9 +234,9 @@ J_k=\vec e_k,\qquad K_k=i \vec e_k \qquad (k=1,2,3),
 $$
 so that $J_k$ generate rotations and $K_k$ generate boosts. With $\varepsilon_{jkl}$ the Levi-Civita symbol ($\vec e_x\vec e_y=\vec e_z$), the commutation relations, computed by direct expansion in the quaternion basis, are
 $$
-[J_j,J_k]=2\varepsilon_{jkl}J_l,\qquad
+\boxed{\;[J_j,J_k]=2\varepsilon_{jkl}J_l,\qquad
 [J_j,K_k]=2\varepsilon_{jkl}K_l,\qquad
-[K_j,K_k]=-2\varepsilon_{jkl}J_l .
+[K_j,K_k]=-2\varepsilon_{jkl}J_l\;}.
 $$
 The first two say that the rotations form a subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that <strong>the boosts do not close</strong>: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.</p>
 <p><strong>Relation to $\mathrm{SO}(1,3)$ and to $\mathrm{SL}(2,\mathbb{C})$.</strong> The real Lie algebra $\mathrm{G}$ is isomorphic to the Lie algebra $\mathrm{SO}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\mathrm{Ad}$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathrm{SL}(2,\mathbb{C})$. The exponential map $\exp:\mathrm{G}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $M$ maps to $e_t$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_t$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a <strong>product</strong> of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
@@ -264,9 +267,9 @@ $$
 $$
 Thus the complexified algebra is a direct sum of two commuting three-dimensional complex Lie algebras, each isomorphic to the complexification of $\mathrm{SU}(2)$:
 $$
-\mathrm{G}\otimes_{\mathbb{R}}\mathbb{C}
+\boxed{\;\mathrm{G}\otimes_{\mathbb{R}}\mathbb{C}
 \;\cong\;\mathrm{SL}(2,\mathbb{C})\oplus\mathrm{SL}(2,\mathbb{C})
-\;\cong\;\mathrm{SU}(2)_{\mathbb{C}}\oplus\mathrm{SU}(2)_{\mathbb{C}} .
+\;\cong\;\mathrm{SU}(2)_{\mathbb{C}}\oplus\mathrm{SU}(2)_{\mathbb{C}}\;}.
 $$
 The two summands are the <strong>self-dual</strong> and <strong>anti-self-dual</strong> halves of the complexified Lorentz algebra. The rotation generators are the diagonal combination,
 $$
@@ -400,9 +403,9 @@ The spinor representation is the restriction of the Clifford module to the even 
 <p>The map $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ has kernel $\{\pm e_t\}$. This single fact controls the representation theory.</p>
 <p>Because $\mathrm{Ad}$ is two-to-one and surjective, the groups have the same Lie algebra but different global structure:
 $$
-SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
+\boxed{\;SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-\pi_x\bigl(SO^+(1,3)\bigr)\cong\mathbb{Z}/2\mathbb{Z},
+\pi_x\bigl(SO^+(1,3)\bigr)\cong\mathbb{Z}/2\mathbb{Z}\;},
 $$
 while $SL(2,\mathbb{C})$ is simply connected. The Lorentz group is doubly connected, and $SL(2,\mathbb{C})$ is its universal cover.</p>
 <p>On a representation $(m,n)$, the central element $-e_t$ acts by the scalar

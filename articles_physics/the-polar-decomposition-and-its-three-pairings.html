@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,8 +72,8 @@
 <h2 id="introduction">Introduction</h2>
 <p>Every biquaternion off the null cone is the ordered product of four factors: a positive scale, a central phase, a Hermitian boost and a real quaternion rotor,</p>
 <p>$$
-\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+\boxed{\;\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
 $$</p>
 <p>The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.</p>
 <p>The article is the hub of the polar programme. It fixes the word, brackets it in the three ways the corpus uses, compares the bracketings, and records what each factor does to the remarkable subspaces. The detail now lives in three synthesis articles: <em>The Three Polar Factors</em> compares the three first factors, <em>The Cartan Pairing, the Amplitude and the Operator-to-State Map</em> develops the amplitude–phase reading, and <em>The Hamilton Pairing: Mass as Modulus and the Complex Angle</em> develops the invariant and the complex angle. The hub states the grammar once and links.</p>
@@ -257,26 +260,26 @@ $$</p>
 <h3 id="the-quaternion-pairing">The Quaternion Pairing</h3>
 <p>The quaternion pairing writes the element as a <strong>real quaternion modulus</strong> times the exponential of a <strong>real quaternion angle</strong>:</p>
 <p>$$
-\tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
+\boxed{\;\tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
 \tilde q=r\,\tilde u_{\mathrm r}, \qquad
-\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\;}.
 $$</p>
 <p>The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is developed in <em>The Three Polar Factors</em>, §<em>The Quaternion Factor</em>.</p>
 <h3 id="the-hamilton-pairing">The Hamilton Pairing</h3>
 <p>The Hamilton pairing writes the element as a modulus times a complex cosine plus a complex axis times the complex sine:</p>
 <p>$$
-\tilde Q=\Rho\bigl(\cos\Theta+\vec\Xi\sin\Theta\bigr), \qquad
+\boxed{\;\tilde Q=\Rho\bigl(\cos\Theta+\vec\Xi\sin\Theta\bigr), \qquad
 \Rho=\sqrt N, \qquad
 \vec\Xi=\frac{\vec Q}{B}, \qquad
-B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}.
+B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}\;}.
 $$</p>
 <p>The modulus is the only central scalar of the three pairings. The axis and the angle carry the boost and the rotor; on aligned axes the real part of $\Theta$ is half the rotation and the imaginary part is half the word's rapidity $\psi_w$, and in general the two do not separate. The physical reading — the mass for a four-momentum, the amplitude otherwise — is developed in <em>The Hamilton Pairing</em>, §<em>The Central Modulus</em>.</p>
 <h3 id="the-cartan-pairing">The Cartan Pairing</h3>
 <p>The Cartan pairing writes the element as a <strong>Hermitian positive factor</strong> times a <strong>unitary factor</strong>:</p>
 <p>$$
-\tilde Q=\tilde H\tilde U, \qquad
+\boxed{\;\tilde Q=\tilde H\tilde U, \qquad
 \tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
-\tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}.
+\tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}\;}.
 $$</p>
 <p>The first factor is the amplitude, the part that changes norms and not phases; the second is the phase, the part that preserves the inner product. The state reading is developed in <em>The Cartan Pairing, the Amplitude and the Operator-to-State Map</em>.</p>
 <p>The Cartan pairing has the widest construction domain, the quaternion pairing the most direct electromagnetic reading, and the Hamilton pairing the most direct Lorentz-group reading. None is more fundamental than the others, and none adds information to the four-factor word.</p>

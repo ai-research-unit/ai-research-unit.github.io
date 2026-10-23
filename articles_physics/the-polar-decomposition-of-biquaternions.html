@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -123,7 +126,7 @@ $$</p>
 <h2 id="the-polar-word">The Polar Word</h2>
 <p>The word is the ordered product of a positive real and three exponentials of single elements of the algebra,</p>
 <p>$$
-\tilde{Q} = r\,\exp(i\alpha)\,\exp\bigl(-i\psi\vec u_{\mathrm b}\bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) ,
+\boxed{\;\tilde{Q} = r\,\exp(i\alpha)\,\exp\bigl(-i\psi\vec u_{\mathrm b}\bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;},
 $$</p>
 <p>and the four sections that follow read the four factors off the element one at a time. Three objects are shared by them and are fixed here once.</p>
 <p><strong>The four factors in one table.</strong> The physics normalisation is the one in which the boost factor is $B = \exp(-i\psi\vec u_{\mathrm b})$ with $\psi$ the rapidity of the frame.</p>
@@ -283,7 +286,7 @@ $$</p>
 $$</p>
 <p>a <strong>negative</strong> real for a timelike displacement. The principal square root of a negative real is positive imaginary, so the modulus is $\rho = i\,ct'\sqrt{1-\beta^2}$, and its modulus gives the scale</p>
 <p>$$
-r = c t'\sqrt{1-\beta^2} = c\tau ,
+\boxed{\;r = c t'\sqrt{1-\beta^2} = c\tau\;},
 $$</p>
 <p>where $\tau$ is the proper time: the scale is $c$ times the proper time. For a spacelike displacement, whose interval is positive, the modulus is real and the scale is the ordinary length $\sqrt{\langle\tilde Q\rangle_{\natural}}$.</p>
 <p>For the four-velocity and the four-momentum the same computation gives the standard constants. With $v^\mu = \gamma c(1,\vec\beta)$ the interval is $\langle\tilde Q\rangle_{\natural} = -c^2$, so the scale is $c$ itself; with $p^\mu = \gamma m c(1,\vec\beta)$ the interval is $\langle\tilde Q\rangle_{\natural} = -m^2c^2$, so the scale is $mc$. In each case the boost and rotation factors carry the frame, and the phase is fixed (§<em>The Central Phase</em>).</p>
@@ -329,7 +332,7 @@ $$</p>
 <h3 id="the-boost-is-the-four-velocity-in-the-hermitian-normalisation">The Boost Is the Four-Velocity in the Hermitian Normalisation</h3>
 <p>The same factor is the four-velocity in the Hermitian normalisation: with $\tilde{V} = \gamma(ic\,e_t+\vec v)$ the four-velocity of the corpus,</p>
 <p>$$
-B = (\tilde U_{\mathrm b}^{\natural})^2 = -\frac{i}{c}\tilde{V} = \gamma e_t - i\gamma\frac{\vec v}{c} ,
+\boxed{\;B = (\tilde U_{\mathrm b}^{\natural})^2 = -\frac{i}{c}\tilde{V} = \gamma e_t - i\gamma\frac{\vec v}{c}\;},
 $$</p>
 <p>which is the corpus's own relation $\tilde U_{\mathrm b}^2 = -\frac{i}{c}\tilde{V}^{\natural}$ read with the rotor conjugated. The boost factor is therefore an element of the Hermitian subspace $\mathbb{M}_+$ of unit biquaternion norm, the four-velocity up to the factor $-i/c$, and its closed form $\cosh\psi\,e_t - i\sinh\psi\,\vec u_{\mathrm b}$ is the four-velocity of rapidity $\psi$ about $\vec u_{\mathrm b}$.</p>
 <h3 id="numerical-verification">Numerical Verification</h3>

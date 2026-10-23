@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ S\star T=S\,T^{\dagger} ,
 $$</p>
 <p>the endomorphism version of the product $x\star y=xy^{*}$ of a sesqualgebra. The present article develops this structure: the involution and the conjugate-linear slot it carries, the derived product with its parities and its unit laws, the unitary endomorphisms and the inner $*$-automorphisms they induce, the involutions of the adjoint type that the algebra admits, and the three worked cases of the complex matrices, the quaternion matrices, and the biquaternion algebra, where the endomorphism algebra is that of the module over the field, of the module over the division ring, and of the algebra over its base field.</p>
 <p>The subject belongs to the operator theory of the sesqualgebras, in the group <em>Operator Theory</em>. The adjoint operation itself, with its two rules and its parity obstruction, is <em>The Sesquilinear Adjoint Operator</em>; the form, its two slots and its sesqui-symmetry are <em>The Sesquilinear Product</em> and <em>Sesqualgebras</em>; the underlying associative algebra of the endomorphisms, its centre and its examples, is <em>The Endomorphism Algebra of a Module</em>; the unitary elements and the inner $*$-automorphisms of an algebra are <em>Units and the Unitary Elements</em>; the involutions of the adjoint type are <em>The Involutions of a Sesqualgebra</em>; and the operators whose adjoints the family here generalises are <em>The Adjoint of the Sesquilinear Sandwich</em> and <em>The Sesquilinear Sandwich Operator</em>.</p>
-<p><strong>The boundaries.</strong> The form on the module and its perfection are the standing hypothesis of <em>The Sesquilinear Adjoint Operator</em>; the adjoint in the bilinear layer, where the twist sits in the conjugation of the algebra rather than in the second slot of the form, is <em>The Adjoint in an Involutive Algebra</em>; the two-sided and one-sided operators of the sesqualgebra as an algebra over itself are <em>The Sesquilinear Sandwich Operator</em> and <em>The Left and Right Multiplication Operators of a Sesqualgebra</em>; and the unitary and antiunitary operators of an arbitrary sesqualgebra are <em>The Unitary Operators of a Sesqualgebra</em>. This article stays inside Part I: no distance, no limit, no completeness.</p>
 <p>Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $M$ is a finitely generated free $R$-module of rank $n\ge 1$. The <strong>form</strong> is a map $\Phi:M\times M\to R$, additive in each variable, $R$-linear in the first and $\varsigma$-semilinear in the second,</p>
 <p>$$
 \Phi(\lambda u,v)=\lambda\,\Phi(u,v),\qquad \Phi(u,\lambda v)=\varsigma(\lambda)\,\Phi(u,v) ,

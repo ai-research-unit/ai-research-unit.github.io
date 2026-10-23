@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -147,8 +150,8 @@ $$</p>
 $$</p>
 <p>This is the <strong>biquaternion entropy functional</strong>. It is a real number, it is computed from the algebra's own product, logarithm and trace, and it is the classical Shannon entropy of the two-outcome distribution $(\lambda_+,\lambda_-)$ that the state induces in its eigenbasis. Written out in the Bloch radius it is the binary entropy function,</p>
 <p>$$
-\mathcal{S}(\tilde{Ϛ}) = h(|\vec r|), \qquad
-h(x) = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2},
+\boxed{\;\mathcal{S}(\tilde{Ϛ}) = h(|\vec r|), \qquad
+h(x) = -\frac{1+x}{2}\log\frac{1+x}{2} - \frac{1-x}{2}\log\frac{1-x}{2}\;},
 $$</p>
 <p>with the boundary values $h(0) = \log 2$ and $h(1) = 0$.</p>
 <p>The evaluation is stable under the same computation in the full algebra. For the interior state obtained by superposing two orthogonal pure states with equal weight, $\tilde{Ϛ} = \tfrac{1}{2}\left(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y)\right)$, one has $\vec r = \tfrac{1}{2}(\vec e_x + \vec e_y)$, $|\vec r| = 1/\sqrt{2}$, and the two routes agree:</p>
@@ -179,7 +182,7 @@ $$</p>
 $$</p>
 <p>and substituting into $\mathcal{S} = h(|\vec r|)$ gives the central identity of the article:</p>
 <p>$$
-\boxed{\;\mathcal{S}(\tilde{Ϛ}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\right).\;}
+\boxed{\;\mathcal{S}(\tilde{Ϛ}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\right)\;}.
 $$</p>
 <p>The identity says that <strong>the entropy of a state of the informational sector is a function of its biquaternion norm and of nothing else</strong>. The biquaternion norm is the quantitatively meaningful invariant of the algebra; the entropy is a monotone reparametrisation of it. Three consequences are immediate, and they are the reason the identity is worth isolating.</p>
 <p>First, the entropy vanishes exactly where the biquaternion norm vanishes. The condition $\mathcal{S}(\tilde{Ϛ}) = 0$ is $|\vec r| = 1$, which is $\langle\tilde{Ϛ}\rangle_{\natural} = 0$, which is the statement that $\tilde{Ϛ}$ is a zero divisor. <strong>Zero entropy and the zero-divisor cone are the same locus.</strong> The pure states are the informationless states, and the algebraic reason is that they are the non-invertible ones.</p>
@@ -225,7 +228,7 @@ p_\pm = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
 $$</p>
 <p>the classical probabilities of the two pointer outcomes. The coarse-grained entropy is therefore the binary Shannon entropy</p>
 <p>$$
-\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};\Phi_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right).
+\boxed{\;\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};\Phi_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right)\;}.
 $$</p>
 <p>This is the article's second main formula. It is the entropy of the classical record the coarse description keeps, and it is manifestly a function of the retained component of the Bloch vector alone.</p>
 <h2 id="monotonicity-under-coarse-graining">Monotonicity Under Coarse-Graining</h2>
@@ -314,9 +317,9 @@ $$</p>
 <p>A coarse-graining of the informational sector is a conditional expectation $\Phi$ on $\mathbb{M}_+$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.</p>
 <p>The <strong>biquaternion entropy functional</strong> is</p>
 <p>$$
-\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
+\boxed{\;\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
 = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_- = h(|\vec r|),
-\qquad \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec r|\right),
+\qquad \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec r|\right)\;},
 $$</p>
 <p>with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of units, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.</p>
 <p>The functional depends on the state only through its biquaternion norm. With $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$,</p>

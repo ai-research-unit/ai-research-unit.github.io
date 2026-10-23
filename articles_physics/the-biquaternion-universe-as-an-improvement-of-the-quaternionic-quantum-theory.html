@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -172,7 +175,7 @@ The dimensions give $4\times4=16=4^{2}$, so the tensor square is a full matrix a
 <h2 id="the-algebra-of-the-biquaternion-universe">The Algebra of the Biquaternion Universe</h2>
 <p>The biquaternion algebra is the complexification of the quaternions:
 $$
-\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C}).
+\boxed{\;\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})\;}.
 $$
 Its elements are written
 $$
@@ -242,12 +245,12 @@ The states are the positive elements of the cone of $\mathbb{M}_{+}$ normalised 
 <p>This is the one limit that has to be divided into two parts, and the division is exact.</p>
 <p><strong>What is repaired: the scalars.</strong> The scalar field of the biquaternion theory is $\mathbb{C}$, and
 $$
-\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}.
+\boxed{\;\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}\;}.
 $$
 The scalars compose. The scalar-level composition limit, which is the form in which it closed the quaternionic programme, does not arise here at all.</p>
 <p><strong>What remains: the observable algebra.</strong> The algebra is not closed under the tensor product,
 $$
-\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})\neq\mathbb{B},
+\boxed{\;\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})\neq\mathbb{B}\;},
 $$
 the dimensions being $16\neq4$. A pair of two-state systems does not have $\mathbb{B}$ as its algebra, and the corpus records this as a numbered obstruction (<em>What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</em>, entry O13).</p>
 <p><strong>The clarification that matters for the comparison.</strong> This residue is the standard situation in quantum mechanics, and not a defect of the biquaternion choice. In ordinary quantum mechanics

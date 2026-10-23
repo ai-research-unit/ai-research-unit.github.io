@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -91,11 +94,11 @@ a_0 = \frac{p_0}{m}, \qquad a_k = i\,\frac{p_k}{m}, \qquad
 $$</p>
 <p>The printed sum is only consistent with the printed coefficients because the $a_k$ are <strong>imaginary</strong>: with $a_k = i p_k/m$ the three squared terms are negative, and the condition reads $p_0^2 - \vec p^2 = m^2$, which is the source's own Eq. (21). In the corpus's dictionary this is immediate. Writing $\vec a = i\,\vec p/m$ and $\tilde Q = a_0 + \vec a\!\cdot\!\mathbf e$,</p>
 <p>$$
-\mathsf{M}_2(\tilde Q) = a_0 I_2 + \frac{\vec p}{m}\!\cdot\!\boldsymbol\sigma = Q ,
+\boxed{\;\mathsf{M}_2(\tilde Q) = a_0 I_2 + \frac{\vec p}{m}\!\cdot\!\boldsymbol\sigma = Q\;},
 $$</p>
 <p>a <strong>Hermitian</strong> $2\times2$ matrix with real diagonal, and</p>
 <p>$$
-\langle\tilde Q\rangle_{\natural} = a_0^2 + a_1^2 + a_2^2 + a_3^2 = 1
+\boxed{\;\langle\tilde Q\rangle_{\natural} = a_0^2 + a_1^2 + a_2^2 + a_3^2 = 1\;}
 $$</p>
 <p>with the same imaginary squares, i.e. the source's unit-norm condition and the source's mass shell are the two faces of one identity.</p>
 <p>$$
@@ -150,7 +153,7 @@ $$</p>
 <p>with the products $\sigma_\alpha\wedge\sigma_\beta = \sigma_\gamma$, $\sigma_\beta\wedge\sigma_\gamma = \sigma_\alpha$ and $\sigma_\gamma\wedge\sigma_\alpha = -\sigma_\beta$, the wedge being the antisymmetrised product. All three relations hold exactly: the matrices are real and traceless, the products are $\sigma_\alpha\sigma_\beta = \sigma_\gamma$, $\sigma_\beta\sigma_\gamma = \sigma_\alpha$ and $\sigma_\gamma\sigma_\alpha = -\sigma_\beta$, and the antisymmetrisation reproduces the three printed relations with residuals $0$. These are the generators of $\mathfrak{sl}(2,\mathbb{R})$, the <strong>split real form</strong> of the triple the corpus meets as $\mathfrak{su}(2)$ through the Pauli matrices; the compact analogue satisfies $[\sigma_1,\sigma_2] = 2i\sigma_3$ against the source's $[\sigma_\alpha,\sigma_\beta] = 2\sigma_\gamma$, and the difference of the two is one factor of $i$. The middle matrix carries the source's non-compactness and the paper says so: $\sigma_\beta = -i\sigma_2$, hence $\sigma_\beta^2 = -I_2$ while $\sigma_\gamma^2 = +I_2$, both verified.</p>
 <p>The triple is the algebraic content of the source's other signature, and the source shows the mechanism rather than asserting it. Its Eq. (43) repeats the unit-norm condition of Eq. (19) with the sign of the second coefficient reversed,</p>
 <p>$$
-a_0^2 + a_1^2 - a_2^2 + a_3^2 = 1 ,
+\boxed{\;a_0^2 + a_1^2 - a_2^2 + a_3^2 = 1\;},
 $$</p>
 <p>and the paper attributes the change to $\sigma_\beta^2 = (-i\sigma_2)^2 = -1$ in the non-compact substructure. With the same coefficients $a_0 = p_0/m$ and $a_k = ip_k/m$ this is the $(2{+}2)$ mass relation $p_0^2 - p_1^2 + p_2^2 - p_3^2 = m^2$, verified exactly, against the $(1,3)$ relation of Eq. (21). The source itself then says that "the physical role of the coefficients $a$ cannot be easily identified as before" and lists two possibilities; the corpus records both the mechanism and the admission. The paper's wider claim is that the non-compact $\mathrm{SL}(2,\mathbb{R})$ symmetry of what it calls a hidden (bi)quaternionic structure becomes visible in $(2{+}2)$ — two timelike and two spacelike directions — and it lists convergence with work on $(2{+}2)$ physics, two-dimensional black holes and $N=2$ strings. The corpus's interpretation is that this is a genuine second real form of the same algebra and not a relabelling of the first: the split real form has its own unit group and its own polar decomposition, which the corpus treats in the split-quaternion articles, and $(2{+}2)$ is the signature of that form just as $(1,3)$ is the signature of the material sector's norm.</p>
 <h2 id="reality-the-non-hermitian-operator-and-the-corpuss-signature-classification">Reality, the Non-Hermitian Operator, and the Corpus's Signature Classification</h2>

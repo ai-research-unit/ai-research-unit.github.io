@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -100,7 +103,7 @@ $$</p>
 <h3 id="the-spherical-harmonic-form">The Spherical-Harmonic Form</h3>
 <p>Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the <strong>spherical multipole expansion</strong></p>
 <p>$$
-\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_l^{m}(\theta,\phi),
+\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_l^{m}(\theta,\phi)\;},
 $$</p>
 <p>with the <strong>spherical multipole moments</strong></p>
 <p>$$
@@ -212,7 +215,7 @@ $$</p>
 <h3 id="the-quadrupole-potential">The Quadrupole Potential</h3>
 <p>The potential of a quadrupole is the $l = 2$ term of the expansion,</p>
 <p>$$
-\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j ,
+\boxed{\;\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j\;},
 $$</p>
 <p>and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as noted above. The fall-off is $r^{-3}$, one power faster than the dipole and two faster than the monopole.</p>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
@@ -238,7 +241,7 @@ $$</p>
 $$</p>
 <p>the trace term drops against $\mathcal{Q}_{ii} = 0$. With the external field source-free at the location of the distribution, as assumed for the expansion above, the quadrupole interaction is therefore the pure contraction of two $D^{(2)}$ objects,</p>
 <p>$$
-W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,\Phi(0).
+\boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,\Phi(0)\;}.
 $$</p>
 <p><strong>It is a scalar.</strong> Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the <em>value</em> of the quadrupole interaction. Its difficulty is with the <em>moment</em>, and that is the subject of the next section.</p>
 <h2 id="why-the-quadrupole-is-not-an-algebra-element">Why the Quadrupole Is Not an Algebra Element</h2>
@@ -269,8 +272,8 @@ $$</p>
 <h3 id="where-the-quadrupole-does-live">Where the Quadrupole Does Live</h3>
 <p>The quadrupole is a symmetric traceless tensor over the vector part, and the natural algebraic home is the <strong>symmetric traceless square</strong> of $D^{(1)}$,</p>
 <p>$$
-\operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
-\qquad \dim_{\mathbb{C}}\operatorname{Sym}^2_0(D^{(1)}) = 5 ,
+\boxed{\;\operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
+\qquad \dim_{\mathbb{C}}\operatorname{Sym}^2_0(D^{(1)}) = 5\;},
 $$</p>
 <p>which is a subspace of the tensor square $D^{(1)}\otimes D^{(1)}$ — equivalently of $\mathbb{B}\otimes\mathbb{B}$ — and not a subspace of $\mathbb{B}$. In coordinate terms, a quadrupole is the traceless part of a symmetric bilinear form $\mathcal{Q}(\vec u,\vec v)$ on the vector part. This is the precise sense in which the quadrupole is <em>outside</em> the algebra: it is a tensor built from two vectors, not a single element.</p>
 <p>The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial Q_i\partial Q_j\,\Phi$. The quadrupole angular information is carried by the scalar field $\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the <em>product</em> of two gradient operators.</p>

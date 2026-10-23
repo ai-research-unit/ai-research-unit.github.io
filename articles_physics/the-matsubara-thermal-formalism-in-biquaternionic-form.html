@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -99,7 +102,6 @@ In the framework the bosonic/fermionic distinction is the even/odd grading of th
 </ul>
 <p>The findings are recomputed: the bosonic sum rule $(1/\beta)\sum_n(\omega_n^2+E^2)^{-1}=\coth(\beta E/2)/(2E)$ and its fermionic counterpart with $\tanh$, the geometric sums for the Bose and Fermi occupation numbers, and the single-mode free energies.</p>
 <p>The article proceeds as follows. The next section records the standard Wick route and the material-sector alternative, then fixes the compactified material time and the thermal circle. A section gives the Matsubara frequencies and the thermal propagator. A section derives the partition function and the free energy. A section isolates the framework's structural content. A section treats the Matsubara sums and the thermal factors, and a section the finite-temperature Feynman rules. A section separates what is established from what is interpretation.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles, in particular <em>The KMS Condition and the Biquaternion Framework</em>, <em>The Unruh Effect in Biquaternionic Form</em>, and <em>Hawking Radiation in Biquaternionic Form</em>, whose thermal state this article's formalism must reproduce. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$. The material sector is $\mathbb{M}_-$ (anti-Hermitian) and the informational sector is $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The material coordinate is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with biquaternion norm $\langle\tilde{R}\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$, indefinite of signature $(3,1)$ on $\mathbb{M}_-$; the Hermitian form (the general plain sesquilinear form, written $H$ in the companion articles) is $\langle\tilde Q_3,\tilde Q_4\rangle_{*}=\mathrm{Sc}(\tilde Q_3\tilde Q_4^{*})=\sum_\mu Q_{3\mu}\overline{Q_{4\mu}}$, positive definite of signature $(8,0)$ on $\mathbb{B}$ and equal on the material sector to the Euclidean square, $\langle\tilde R,\tilde R\rangle_{*}=c^2{t'}^2+x^2+y^2+z^2$. It is this form that the thermal propagator uses, and it is distinct from the Hamiltonian $H$ of the partition function. The gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The Lorentzian wave biquaternion is $\tilde P=iEe_t+\vec p$ with quaternion conjugate $\tilde P^{\natural}=iEe_t-\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The inverse temperature is $\beta=\hbar/(k_BT)$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. Natural units $\hbar=c=k_B=1$ are used in the computations, with $\beta$ and the temperature restored where a physical statement is made.</p>
 <h2 id="imaginary-time-and-the-thermal-circle">Imaginary Time and the Thermal Circle</h2>
 <p>The Matsubara formalism is usually reached by a Wick rotation, and it is reached here without one. Both routes are recorded, and so is the reason the second is used.</p>
 <p><strong>The standard route: the Wick rotation, quoted.</strong> The usual treatment continues the real time, $\tau=it'$ with $t'=-i\tau$: the material-time coefficient $ict'$ becomes the real $c\tau$, the Minkowski metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$, and the wave biquaternion is read on the real scalar axis,
@@ -111,7 +113,7 @@ $$
 This is the framework's level-2 to level-1 passage and it is standard (<em>Interpretation of the Wick Rotation in the Biquaternion Universe</em>; <em>The Functional Integral in Biquaternionic Form</em> uses the same identification). The norm of the rotated element is positive there, and the standard route takes the positivity from that rotated metric. It is correct, and it is what the literature does.</p>
 <p><strong>The alternative route: the material sector, no rotation.</strong> The same result is obtained without leaving $\mathbb{M}_-$, by complexifying the material time along its own imaginary direction instead of rotating the axes. The material-time coefficient is $ict'$, along the imaginary scalar direction of $\mathbb{M}_-$, and the physical time $t'$ is real while the coefficient carries the $i$. Thermal equilibrium complexifies this coordinate, $t'\mapsto t'+is$ with $0<s<\beta$ the KMS strip of the boundary relation above, and the periodic identification builds the circle out of that imaginary displacement itself. No coordinate leaves $\mathbb{M}_-$, and the thermal frequency is the conjugate variable of the compactified material time, placed along the same imaginary scalar direction,
 $$
-\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{M}_- .
+\boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{M}_-\;}.
 $$
 On this element the interval keeps its sign, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, indefinite; the norm cannot supply the positivity the rotated route got from the metric. The definite form does, $\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_E^2$, as the propagator below records. The two routes therefore agree on the propagator, $D_E=1/(k_E^2+m^2)$, and differ in what they change: the standard route rotates the metric and leaves the form implicit, the material-sector route keeps the metric and names the form. The second is used in this article because it needs no change of sector, and because the form it names is the same Hermitian form for which the Bochner theorem of the companion article is stated. Both routes are successful; the alternative is the one taken.</p>
 <p><strong>The thermal circle.</strong> The complexified material time is compactified,
@@ -148,9 +150,9 @@ $$
 and the corresponding thermal wave biquaternion is the material element $\tilde P_E=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_E^2$.</p>
 <p><strong>The propagator in the material sector.</strong> In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=-p^2+m^2$ at the material wave biquaternion $\tilde P=iEe_t+\vec p\in\mathbb{M}_-$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_E=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
 $$
-\langle\tilde P_E,\tilde P_E\rangle_{*}=\lvert i\omega_n\rvert^2+\lvert\vec p\rvert^2=\omega_n^2+\vec p^2=k_E^2 ,
+\boxed{\;\langle\tilde P_E,\tilde P_E\rangle_{*}=\lvert i\omega_n\rvert^2+\lvert\vec p\rvert^2=\omega_n^2+\vec p^2=k_E^2 ,
 \qquad
-\mathcal{M}_E(\tilde P_E)=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=k_E^2+m^2 ,
+\mathcal{M}_E(\tilde P_E)=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=k_E^2+m^2\;},
 $$
 so that
 $$
@@ -265,11 +267,11 @@ and the passage from the discrete grid to the real axis is the <strong>analytic 
 <h2 id="summary">Summary</h2>
 <p>The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $ict'$. The standard route to it is the Wick rotation $t'\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{M}_-$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $t'\sim t'+i\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
 $$
-\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{M}_- ,
+\boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{M}_- ,
 \qquad
 \langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2 ,
 \qquad
-\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_E^2 ,
+\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_E^2\;},
 $$
 and the Euclidean mass-shell operator is the Hermitian form of that element,
 $$

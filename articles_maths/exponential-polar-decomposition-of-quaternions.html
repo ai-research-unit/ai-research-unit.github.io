@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -398,8 +401,9 @@ $$</p>
 $$</p>
 <p>a union of two-dimensional spheres, one for each positive integer, together with the isolated origin.</p>
 <p><strong>Corollary.</strong> The kernel is not a subgroup of $(\mathbb{H},+)$. The elements $2\pi\vec e_x$ and $2\pi\vec e_y$ lie in the kernel, but their sum $2\pi(\vec e_x+\vec e_y)$ has norm $8\pi^2$, which is not the square of a multiple of $2\pi$, so the sum is not in the kernel.</p>
-<p>The fibre over a non-real element is the discrete line of §<em>The General Logarithm</em>. It is not a translate of the kernel: the kernel is a union of spheres and the fibre is a line. The fibre over a positive real element is the translate $\ln r+\ker\exp$, because $\ker\exp$ contains the origin and the spheres of radius $2\pi k$. The fibre over a negative real element is a union of spheres of radius $(2k+1)\pi$, also not a translate of the kernel. In the complex case the kernel $2\pi i\mathbb{Z}$ is a subgroup and every fibre is a coset; here only the positive real axis gives cosets.</p>
+<p>The fibre over a non-real element is the discrete line of §<em>The General Logarithm</em>. It is not a translate of the kernel: the kernel is a union of spheres and the fibre is a line. The fibre over a positive real element is the translate $\ln r+\ker\exp$, because $\ker\exp$ contains the origin and the spheres of radius $2\pi k$. The fibre over a negative real element is a union of spheres of radius $(2k+1)\pi$, also not a translate of the kernel. In the complex case the kernel $2\pi i\mathbb{Z}$ is a subgroup and every fibre is a coset; here only the positive real axis gives a translate of the kernel.</p>
 <h2 id="worked-examples">Worked Examples</h2>
+<p>A full set of eight cases, with reconstruction and logarithm tables and the boundary family, is in <em>Worked Examples of Exponential Polar Decomposition of Quaternions</em>. The examples here show the generic computation and the table.</p>
 <h3 id="a-generic-quaternion">A Generic Quaternion</h3>
 <p>Take $\tilde q=3e_t+4\vec e_x$. Then</p>
 <p>$$
@@ -808,6 +812,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-quaternions.html">Worked Examples of Exponential Polar Decomposition of Quaternions</a>, for the eight cases, the reconstruction and logarithm tables, the real axis family and the product defect.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the matrix exponential, the matrix logarithm and the polar decomposition.</li>
 <li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the exponential map of $SU(2)$ and the unit quaternions.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd edition 2001), for the quaternion exponential and its relation to the rotation group.</li>

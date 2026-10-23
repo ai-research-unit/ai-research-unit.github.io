@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -80,7 +83,6 @@
 <li><strong>Gap, left visible.</strong> The framework has no chiral gauge group of its own — the central phase is vector-like and the $\mathrm{SU}(2)$ acts vector-like on the algebra's module — so it cannot <em>derive</em> the Standard Model's chiral spectrum from which the cancellation conditions are read. It transcribes the conditions and hosts their solution; it does not select it.</li>
 </ul>
 <p>The article is organised as follows. A section states the anomaly as a quantum failure of a classical symmetry. A section gives the axial anomaly and its biquaternion density. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A closing section separates what is supplied, transcribed, and missing.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material), with basis $ie_t,\vec e_x,\vec e_y,\vec e_z$, and $\mathbb{M}_+$ (Hermitian, informational), with basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The Dirac module is $\Delta=S\oplus\bar{S}$, $S=\mathbb{C}^2$, with $\gamma_5=\mathrm{diag}(-I_2,I_2)$, projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$, and block representation</p>
 <p>$$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
@@ -107,11 +109,11 @@ $$</p>
 <h2 id="the-axial-anomaly">The Axial Anomaly</h2>
 <p><strong>The result.</strong> For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_5^\mu=\bar{\psi}\gamma^\mu\gamma_5\psi$ satisfies</p>
 <p>$$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\gamma_5\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\gamma_5\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;},
 $$</p>
 <p>with the conventions stated above. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$. The coefficient is the standard Adler–Bell–Jackiw one and is quoted from the standard literature. With $F_{ti}=E_i$ and $F_{ij}=-\epsilon_{ijk}B_k$ the density evaluates to $\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=-8\,\vec E\cdot\vec B$, so the anomaly density is, up to the conventional factor, the second field invariant</p>
 <p>$$
-\mathcal{A}(x) \;\propto\; \vec E\cdot\vec B \;=\; I_2 .
+\boxed{\;\mathcal{A}(x) \;\propto\; \vec E\cdot\vec B \;=\; I_2\;}.
 $$</p>
 <p><strong>The biquaternion form of the density.</strong> The framework's field is the biquaternion</p>
 <p>$$
@@ -142,7 +144,7 @@ $$</p>
 <p>The same conclusion holds for every $SU(2)$ representation: each is real or pseudoreal, the cubic invariant does not exist, and the triangle coefficient vanishes. The step that makes this useful is the sign rule: because a left-handed doublet and a right-handed doublet contribute with opposite signs, and because each is separately anomalous only through a coefficient that is already zero, <strong>$SU(2)$ is anomaly-free whatever its fermion content.</strong> This is a property of the group, not of the model.</p>
 <p><strong>The abelian factor and the plain form.</strong> For the central $\mathrm{U}(1)$ the coefficient is the cubic charge sum. The framework's own central phase, however, acts as a <strong>scalar</strong> on the algebra and its module: multiplication by $\exp(i\theta)$ multiplies every component of the module by the same factor, so the left- and right-handed spectra carry the <em>same</em> charge $ϙ$. The left-handed and right-handed contributions to $\sum Y^3$ therefore have equal magnitude and opposite sign,</p>
 <p>$$
-\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0 ,
+\boxed{\;\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0\;},
 $$</p>
 <p>identically, for every module and every charge. This is the algebraic statement that the framework's abelian gauge factor is <strong>vector-like</strong>, and it is the reason that factor cannot be weak hypercharge: hypercharge is chiral, with independent left and right charges, and it is precisely the independent left and right charges that make the cubic sum a condition rather than a tautology. The companion articles on chiral fermions and on the Standard Model agenda make the same point.</p>
 <h2 id="gauge-anomaly-cancellation-on-the-standard-model-spectrum">Gauge Anomaly Cancellation on the Standard Model Spectrum</h2>
@@ -270,7 +272,7 @@ $$</p>
 <p><strong>The consistency problem.</strong> For a non-abelian gauge theory the anomalous divergence is not simply $\langle\tilde\nabla,\tilde J^{a}\rangle_{\natural}\propto A^{abc}\epsilon FF$; the current itself is defined only up to a local polynomial in the gauge field (the Bardeen counterterm), and the requirement is not just that the coefficient vanish but that the anomaly be expressible as the transformation of a local functional — the Wess–Zumino term — so that the gauge variation of the effective action is local and the theory remains consistent. The condition on the matter spectrum is the vanishing of the symmetrised trace $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$ used above; the finer statement is that the anomaly is a <strong>consistent</strong> (Bardeen) anomaly, whose form is fixed by the Wess–Zumino consistency condition rather than by the covariant triangle alone. Both are standard, and the corpus transcribes them; the fermion sector needs only the condition $A^{abc}=0$.</p>
 <p><strong>The obstruction to a covariant current.</strong> One structural point belongs here because it is easy to state wrongly. In four dimensions the anomaly is a total derivative, yet one cannot have a current that is simultaneously <strong>covariant</strong> and <strong>conserved</strong>: the covariant current has a nonzero divergence and the conserved current is not gauge covariant, and the two differ by the Chern–Simons term. The framework's gauge currents, built on the $\mathrm{SU}(2)$ connection of the companion articles, inherit this; there is nothing in the algebra that removes it, and the resolution is the standard Bardeen counterterm, not a biquaternion identity. The condition for consistency is the vanishing of $A^{abc}$, and the framework's own $A^{abc}$ vanishes identically, so the framework never has to face the obstruction for its own gauge fields.</p>
 <p><strong>Anomaly matching.</strong> A further standard consequence is 't Hooft's anomaly matching: the anomaly coefficients of the unbroken global symmetries must be the same in the ultraviolet and in the infrared, because the anomaly is one-loop-exact and cannot be generated or destroyed by the strong dynamics. For quantum chromodynamics this is one of the constraints on the spectrum of massless composite fermions. The framework has no confinement and no composite spectrum, so it cannot use the matching conditions; it records them as a property of the anomaly that survives any dynamics, and therefore as a constraint any future framework completion would have to satisfy.</p>
-<h2 id="the-t-hooft-vertex-and-the-math167-problem">The 't Hooft Vertex and the $\mathrm{U}(1)_A$ Problem</h2>
+<h2 id="the-t-hooft-vertex-and-the-math150-problem">The 't Hooft Vertex and the $\mathrm{U}(1)_A$ Problem</h2>
 <p><strong>The vertex.</strong> The axial anomaly can be written as an effective interaction. For $N_f$ massless flavours, a single instanton of the colour gauge field generates a $2N_f$-fermion vertex — the 't Hooft determinant — which is chirally non-invariant:</p>
 <p>$$
 \mathcal{L}_{\mathrm{'t Hooft}} \;\propto\; \det_{f,f_2}\big(\bar{\psi}_{fL}\psi_{f_2R}\big) + \text{h.c.},

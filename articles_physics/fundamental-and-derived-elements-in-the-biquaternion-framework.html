@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -178,7 +181,7 @@ $$</p>
 $$</p>
 <p>Each is a real vector space of dimension $4$, and since ${}^{*}$ has eigenvalues $\pm1$ only,</p>
 <p>$$
-\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-.
+\boxed{\;\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-\;}.
 $$</p>
 <p><strong>Neither sector is a subalgebra.</strong> This is a derived negative fact, with witnesses: $(e_t+i\vec e_x)(e_t+i\vec e_y)=e_t+i\vec e_x+i\vec e_y-\vec e_z\notin\mathbb{M}_+$, because the vector part contains the real term $-\vec e_z$; and $(ie_t+\vec e_x)^2=-2e_t+2i\vec e_x\notin\mathbb{M}_-$, because the scalar part is real. The sector decomposition is a decomposition of vector spaces, not of algebras, and this too follows from the multiplication table rather than being posited.</p>
 <p><strong>The exchange between the sectors.</strong> Multiplication by the central scalar $i$ exchanges the sectors,</p>
@@ -197,7 +200,7 @@ $$</p>
 $$</p>
 <p>as one checks from $[\vec e_y,\vec e_z]=2\vec e_x$ and its cyclic analogues. Therefore a trace functional, normalized by $\mathrm{Tr}(e_t)=2$ — the degree of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$ — is</p>
 <p>$$
-\mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1).
+\boxed{\;\mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1)\;}.
 $$</p>
 <p>The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $\mathrm{Tr}(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde Q_1,\tilde Q_2$,</p>
 <p>$$
@@ -231,7 +234,7 @@ Z(\mathbb{B})=\{z\in\mathbb{B}\ :\ z\tilde Q_1=\tilde Q_1 z \text{ for all }\til
 $$</p>
 <p>which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $\vec e_x,\vec e_y,\vec e_z$, which forces its vector coefficients to vanish. The elements of the centre that square to $-e_t$ are exactly the solutions of $z_0^2=-1$ for $z=z_0e_t$ among these, namely</p>
 <p>$$
-z=\pm i.
+\boxed{\;z=\pm i\;}.
 $$</p>
 <p>Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the two elements is derived up to presentation.</p>
 <p><strong>The sign is presentational.</strong> The two choices are exchanged by the real structure itself: $\bar{\cdot}(i)=-i$. Since $\bar{\cdot}$ is an automorphism of the base, no structure distinguishes $i$ from $-i$, and the framework may fix the sign by convention. It never needs to.</p>

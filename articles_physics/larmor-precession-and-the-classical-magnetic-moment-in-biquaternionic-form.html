@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -159,7 +162,7 @@ d\vec S/dt' = \vec\mu\times\vec B = \gamma\,\vec S\times\vec B,
 $$</p>
 <p>and multiplying by $\gamma$ gives the equation for the moment itself:</p>
 <p>$$
-\boxed{\;d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B = \vec\mu\times\left(\gamma\vec B\right).\;}
+\boxed{\;d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B = \vec\mu\times\left(\gamma\vec B\right)\;}.
 $$</p>
 <p>This is the <strong>Larmor equation</strong>. Its content is that the moment precesses about the field direction with angular velocity</p>
 <p>$$
@@ -177,7 +180,7 @@ $$</p>
 $$</p>
 <p>the Larmor equation reads</p>
 <p>$$
-\boxed{\;d\vec\mu/dt' = \tfrac{1}{2}\left[\,\vec\mu,\;\vec\omega_G\,\right].\;}
+\boxed{\;d\vec\mu/dt' = \tfrac{1}{2}\left[\,\vec\mu,\;\vec\omega_G\,\right]\;}.
 $$</p>
 <p>The equation of motion is thus an <strong>inner derivation</strong> of the algebra, $d\vec\mu/dt' = -\mathrm{ad}_{\vec\omega_G/2}(\vec\mu) = \mathrm{ad}_{\vec\omega_L/2}(\vec\mu)$. The Larmor generator $\vec\omega_G$ is the negative of the angular velocity $\vec\omega_L = -\gamma\vec B$ of the precession: the first is the element written in the bracket, the second generates the derivation, and the two are listed separately in the notation table. Its antisymmetry is manifest — a commutator changes sign when its arguments are exchanged — and its trace vanishes, $\mathrm{Tr}[\vec\mu,\vec\omega_G] = 0$, which is the algebraic statement that the rotation preserves the biquaternion norm.</p>
 <p>This is the classical bracket form of the dynamics. The Hamiltonian of the moment in the field is $H = -\gamma\,\vec S\cdot\vec B$, and the classical evolution of any observable is $df/dt' = \{f,H\}$; the companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em> shows that the components of angular momentum satisfy $\{S_i,S_j\} = \epsilon_{ijk}S_k$, from which</p>
@@ -212,9 +215,9 @@ $$</p>
 <h3 id="the-precession-as-a-rotor">The Precession as a Rotor</h3>
 <p>The Larmor precession is the rotor conjugation</p>
 <p>$$
-\vec\mu(t') = \tilde u_L(t')\,\vec\mu(0)\,\tilde u_L(t')^{*},
+\boxed{\;\vec\mu(t') = \tilde u_L(t')\,\vec\mu(0)\,\tilde u_L(t')^{*},
 \qquad
-\tilde u_L(t') = \exp\!\left(-\,\frac{\gamma B t'}{2}\,\vec u_{B,k} \vec e_k\right),
+\tilde u_L(t') = \exp\!\left(-\,\frac{\gamma B t'}{2}\,\vec u_{B,k} \vec e_k\right)\;},
 $$</p>
 <p>with $\vec u_B = \vec B/B$ the field direction. Differentiating the rotor gives</p>
 <p>$$
@@ -283,8 +286,8 @@ $$</p>
 <p>so that the energy is $E = \mathrm{Sc}(\vec\mu\vec B) = -\vec\mu\cdot\vec B$ and the torque is $\vec\tau = \mathrm{Vect}(\vec\mu\vec B) = \vec\mu\times\vec B$.</p>
 <p>The torque equation for a moment tied to an angular momentum by $\vec\mu = \gamma\vec S$ is the <strong>Larmor equation</strong></p>
 <p>$$
-d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B,
-\qquad \vec\omega_L = -\,\gamma\,\vec B,
+\boxed{\;d\vec\mu/dt' = \gamma\,\vec\mu\times\vec B,
+\qquad \vec\omega_L = -\,\gamma\,\vec B\;},
 $$</p>
 <p>which in the algebra is the commutator</p>
 <p>$$

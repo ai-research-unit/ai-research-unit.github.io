@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -96,13 +99,6 @@ the matrix readings are its two representation articles, also below this article
 The split that produces the block, with its two projections, is <em>The Symmetric and Antisymmetric
 Parts of an Algebra Product</em>; the symmetric half is <em>Introduction to the Symmetric Plain Algebra of
 Quaternions</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so
-that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. A generic element is
-$\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$;
-$\vec q_1\cdot\vec q_2$ is the Euclidean dot product and $\vec q_1\times\vec q_2$ the vector
-product of the vector parts. The plain product is $\tilde q_1\tilde q_2$, its scalar–vector rule is
-$\tilde q_1\tilde q_2=(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2)+q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$,
-and the symbol $\circ$ is reserved for the composition of maps.</p>
 <h2 id="the-antisymmetric-part-of-the-plain-product">The Antisymmetric Part of the Plain Product</h2>
 <h3 id="the-rule">The Rule</h3>
 <p><strong>Definition.</strong> The <strong>antisymmetric plain product</strong> of two quaternions is</p>

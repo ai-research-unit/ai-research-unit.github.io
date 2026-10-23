@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -157,7 +160,7 @@ N\big|_{\mathrm{div}=0}=\begin{pmatrix} \mathrm{rot} & -i\omega\mu \\[2pt] -\sig
 $$</p>
 <p>which is the physical time-harmonic Maxwell operator $M$ up to the ordering of the two rows, with the solenoidal pairs as its natural domain. The difference between the two is exactly what the source means by a "better" object. The domain of the physical operator is a subspace cut out by the divergence conditions, so that the system can only be posed on pairs satisfying them and the operator cannot be iterated without re-imposing them; the domain of $N$ is all pairs of complex-quaternionic functions, with no side condition at all. And the algebra improves with the domain:</p>
 <p>$$
-N N^{\dagger}=-(\Delta+\lambda)\,I_2,
+\boxed{\;N N^{\dagger}=-(\Delta+\lambda)\,I_2\;},
 \qquad
 N^{\dagger}=\begin{pmatrix} D_3 & i\omega\mu \\[2pt] \sigma & D_3 \end{pmatrix},
 \tag{8}
@@ -207,9 +210,10 @@ $$</p>
 <p>which is $(8)$ seen through the diagonalisation: the two factors multiply to the Helmholtz operator, and each is a square root of it up to the conjugation. The factorisation $(\Delta+\alpha^2)=-(D_3+\alpha)(D_3-\alpha)$ is the three-dimensional case of $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and it is the exact computation that makes the time-harmonic Maxwell system a pair of hyperholomorphic problems.</p>
 <p>This gives the paper's central theorem. Because $(11)$ is invertible, the pairs annihilated by $N$ are in bijection with the pairs annihilated by the diagonal operator, that is, with the pairs $(\Phi,\Psi)$ whose first component is $\alpha$-hyperholomorphic and whose second is $\alpha$-hyperholomorphic for the conjugate operator:</p>
 <p>$$
+\boxed{\;
 \ker N
 \;\cong\;
-\ker(D_3-\alpha)\times\ker(D_3+\alpha) .
+\ker(D_3-\alpha)\times\ker(D_3+\alpha)\;}.
 \tag{14}
 $$</p>
 <p>The correspondence is <strong>one-to-one</strong>, and it is this, not the mere rewriting of the curl equations, that the article records: a time-harmonic electromagnetic field in a homogeneous medium is the same object as a pair of mutually conjugate hyperholomorphic functions, and the map between the two descriptions is the explicit matrix $C$ of $(11)$. Every property of the pair — the Cauchy integral formula, the mean value property, the removable singularities — is then a property of the field, and every operation on the field has an interpretation in the function theory. The value of the quaternionic formulation is exactly this transfer, and it is why the source insists that the general operator is worth more than the physical one.</p>
@@ -291,7 +295,7 @@ $$</p>
 <p><strong>Theorem (right inverse).</strong> For a pair $f$ that is Hölder-continuous and compactly supported in $\Omega$, $N\,\mathcal{T}_N[f]=f$ in $\Omega$.</p>
 <p><strong>Theorem (Cauchy integral formula).</strong> If in addition $N[f]=0$ in $\Omega$, then</p>
 <p>$$
-f=\mathcal{K}_N[f]
+\boxed{\;f=\mathcal{K}_N[f]\;}
 \qquad\text{in }\Omega ,
 \tag{23}
 $$</p>

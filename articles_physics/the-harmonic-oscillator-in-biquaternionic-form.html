@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -130,12 +133,12 @@ $$</p>
 $$</p>
 <p>This is the commutator formula of the parent article, and its content here is the important part: <strong>the scalar part of the commutator of two Hermitian biquaternions vanishes identically</strong>,</p>
 <p>$$
-\mathrm{Sc}\,[\tilde H_1,\tilde H_2]=0 .
+\boxed{\;\mathrm{Sc}\,[\tilde H_1,\tilde H_2]=0\;}.
 $$</p>
 <p>The commutator of two observables is a real pure quaternion; it lies in the real vector part $\mathbb{H}_\mathbb{B}\cap\mathbb{M}_-=\mathrm{span}(\vec e_x,\vec e_y,\vec e_z)$, the space-like part of the material sector. It never reaches the scalar direction $ie_t$ of $\mathbb{M}_-$.</p>
 <p>The canonical relation requires precisely that direction:</p>
 <p>$$
-[\tilde H_1,\tilde H_2]=i\hbar\,e_t,\qquad \mathrm{Sc}(i\hbar e_t)=i\hbar\neq0 .
+\boxed{\;[\tilde H_1,\tilde H_2]=i\hbar\,e_t,\qquad \mathrm{Sc}(i\hbar e_t)=i\hbar\neq0\;}.
 $$</p>
 <p>The two sides lie in complementary summands of $\mathbb{M}_-=\mathrm{span}(ie_t)\oplus\mathrm{span}(\vec e_x,\vec e_y,\vec e_z)$: the right side is purely scalar, the left side purely vector. The relation can hold only if $\hbar=0$. There is no Heisenberg pair in $\mathbb{M}_+$.</p>
 <p>The same conclusion follows without computing the bracket, from the trace alone. The trace of a commutator vanishes, $\mathrm{Tr}([\tilde H_1,\tilde H_2])=0$, while $\mathrm{Tr}(i\hbar e_t)=2i\hbar$. So $\hbar=0$. This is the familiar statement that the Heisenberg algebra has no finite-dimensional representation, in the notation of the framework; it does not depend on $\mathbb{M}_+$ at all.</p>
@@ -152,7 +155,7 @@ $$</p>
 <p>These are the ladder operators and the lower-state idempotent of the parent articles: the truncation is exactly the two-state system, as expected from $\mathbb{B}\cong M_2(\mathbb{C})$.</p>
 <p>The truncation is not faithful to the oscillator, and the failures are diagnostic. The commutator is</p>
 <p>$$
-[\vec\Upsilon_x,\vec\Upsilon_y]=\sigma_3=i\vec e_z\neq e_t,
+\boxed{\;[\vec\Upsilon_x,\vec\Upsilon_y]=\sigma_3=i\vec e_z\neq e_t\;},
 $$</p>
 <p>so the canonical relation fails by the boundary terms of the truncation. The number operator is an idempotent, not an operator with an integer spectrum. And the squeeze generator,</p>
 <p>$$

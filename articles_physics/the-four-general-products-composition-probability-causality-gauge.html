@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -121,11 +124,11 @@
 <h3 id="the-four-settings-of-one-rule">The Four Settings of One Rule</h3>
 <p>The four products are not four independent definitions. Each is the plain product with a conjugation inserted in one or both slots:</p>
 <p>$$
-\tilde Q_1\star_{K_1K_2}\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),
+\boxed{\;\tilde Q_1\star_{K_1K_2}\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),
 \qquad
 K_1\in\{\mathrm{id},{}^{\natural}\},
 \qquad
-K_2\in\{\mathrm{id},{}^{*}\},
+K_2\in\{\mathrm{id},{}^{*}\}\;},
 $$</p>
 <p>where ${}^{\natural}$ is the natural conjugation, fixing the central $i$ and negating the three vector units, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is the Hermitian conjugation. The two insertions commute, each is its own inverse, and the four settings form a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$. The four general products are the four settings of that one rule.</p>
 <div class="table-scroll"><table>
@@ -236,9 +239,9 @@ $$</p>
 <h3 id="the-square-at-one-setting">The Square at One Setting</h3>
 <p><strong>Exactly one setting makes the square scalar for every element.</strong> For every element,</p>
 <p>$$
-\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,
+\boxed{\;\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,
 \qquad
-\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
+\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2\;}.
 $$</p>
 <p>At the other three settings the square is not scalar in general: at $(\mathrm{id},\mathrm{id})$ the element $e_t+\vec e_x$ has the square $2\vec e_x$, at $(\mathrm{id},{}^{*})$ the element $e_t+i\vec e_x$ has the square $2e_t+2i\vec e_x$, and at $({}^{\natural},{}^{*})$ the element $e_t+\vec e_x$ has the square $-2\vec e_x$. This theorem is the algebraic root of the causal reading. The quaternionic bilinear product is the only one of the four whose square is central for every element, and the central value is the interval.</p>
 <p><strong>The other square.</strong> The Hermitian square $\tilde Q\tilde Q^{*}$ has the real scalar part $\sum_\mu\lvert Q_\mu\rvert^{2}$ and is positive semidefinite; the rank of its $2\times2$ matrix representation is two off the zero-divisor cone and at most one on it. This is the algebraic root of the probability reading. The two squares are not two computations of one object: one is central and signed, the other is positive and rank-bearing, and the two jobs are separated by that difference.</p>
@@ -317,9 +320,9 @@ $$</p>
 <p>of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{M}_-$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ is the mass shell.</p>
 <p>The form is <strong>multiplicative</strong>,</p>
 <p>$$
-\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}
+\boxed{\;\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}
 =
-\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
+\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$</p>
 <p>so the causal type of a composite is the product of the causal types. The null set $\{\langle\tilde Q\rangle_{\natural}=0\}$ is closed under multiplication, and so are the units and the zero divisors; on the material sector this null set is the light cone. The product of two material elements is material exactly when they anticommute, so the light cone is not closed under composition within the sector; the closure is a statement about the algebra and not about the sector. For units, the logarithm $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is additive over the composition and is read as a dilation potential; the rapidity is the length of the pure part of the polar angle, not the potential.</p>
 <p>The product is not associative, and the norm does not notice. The composite of three causal operations depends on the bracket, while its interval is the product of the three intervals whatever the bracket. That is the precise sense in which the causal <strong>type</strong> composes even though the causal <strong>operation</strong> does not associate. The reading is not a defect of the algebra; it separates the invariant, which is multiplicative, from the element, which is not.</p>

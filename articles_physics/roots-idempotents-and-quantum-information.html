@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -175,7 +178,7 @@ $$</p>
 <p>For $\tilde U\in S$ one has $\tilde U\tilde\Pi_S=\tilde\Pi_S$, so $\tilde\Pi_S^2=\tilde\Pi_S$; and $\operatorname{Tr}\tilde\Pi_S=2^n/|S|$, because the trace of a nontrivial Pauli tensor vanishes and the trace of the identity is $2^n$. The code space is the image of $\tilde\Pi_S$ on the module $(\mathbb{C}^2)^{\otimes n}$, the common $+1$ eigenspace of $S$. On the algebra side, $\tilde\Pi_S\mathbb{B}^{\otimes n}\tilde\Pi_S$ is the Peirce corner and $\tilde\Pi_S\mathbb{B}^{\otimes n}$ the corresponding left ideal.</p>
 <p>The <strong>Knill–Laflamme condition</strong> for an error set $\{\tilde E_a\}$ is</p>
 <p>$$
-\tilde\Pi_S\tilde E_a^{*}\tilde E_b\tilde\Pi_S=c_{ab}\tilde\Pi_S
+\boxed{\;\tilde\Pi_S\tilde E_a^{*}\tilde E_b\tilde\Pi_S=c_{ab}\tilde\Pi_S\;}
 $$</p>
 <p>for all $a,b$. It says that the errors, compressed to the code, are scalar multiples of the code idempotent, so they can be detected and reversed without distinguishing the encoded states.</p>
 <p>The three-qubit bit-flip code is the smallest example. Its stabilizer group is</p>
@@ -196,7 +199,7 @@ $$</p>
 $$</p>
 <p>Two bases are <strong>mutually unbiased</strong> when every overlap across them is $1/d$; for the qubit $d=2$, so every cross trace is $\tfrac12$. The three bases are the eigenbases of the three Hermitian involutions $i\vec e_x$, $i\vec e_y$ and $i\vec e_z$. The units pairwise anticommute, and the normalised Hermitian form of idempotents from different bases, read as the trace pairing, is</p>
 <p>$$
-\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr)=\tfrac12\qquad(b\ne b_2).
+\boxed{\;\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr)=\tfrac12\qquad(b\ne b_2)\;}.
 $$</p>
 <p><strong>Interpretation.</strong> The three coordinate measurements are the three unbiased bases, and their completeness is the tomographic statement that three outcome probabilities determine the Bloch vector. The outcome probabilities in the basis along $\vec e_k$ are</p>
 <p>$$
@@ -207,9 +210,9 @@ $$</p>
 <h2 id="teleportation-four-idempotents-and-four-unitaries">Teleportation: Four Idempotents and Four Unitaries</h2>
 <p>The four <strong>Bell idempotents</strong> of $\mathbb{B}\otimes\mathbb{B}$ are</p>
 <p>$$
-\tilde\Pi_\epsilon=\tfrac14\bigl(e_t\otimes e_t+\epsilon_1\vec e_x\otimes\vec e_x
+\boxed{\;\tilde\Pi_\epsilon=\tfrac14\bigl(e_t\otimes e_t+\epsilon_1\vec e_x\otimes\vec e_x
 +\epsilon_2\vec e_y\otimes\vec e_y+\epsilon_3\vec e_z\otimes\vec e_z\bigr),
-\qquad \epsilon_1\epsilon_2\epsilon_3=+1 .
+\qquad \epsilon_1\epsilon_2\epsilon_3=+1\;}.
 $$</p>
 <p>Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.</p>
 <p>The protocol uses three qubits. Alice holds the unknown state, the pair is in the state $\tilde\Pi_{\Phi^+}$, she measures the Bell basis on her two qubits, and the four outcomes occur with probability $\tfrac14$. Each outcome leaves Bob's qubit in a unitary image of the unknown state, and the correction is one of the four Pauli gates $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, up to a phase. With the outcome record and the correction, the net map is the identity channel; without the record, Bob's state is $\tfrac12e_t$ and nothing is transferred. Alice's two qubits are left in a Bell state, so each of her qubits is maximally mixed and no copy of the unknown state survives.</p>

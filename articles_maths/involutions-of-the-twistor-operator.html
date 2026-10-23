@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,7 +71,6 @@
         <h1 id="involutions-of-the-twistor-operator"><strong>Involutions of the Twistor Operator</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The twistor operator $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ of <em>The Twistor Operator</em> is built from the covariant derivative and the orthogonal projection $\pi$ onto the kernel of the Clifford contraction; it is a first-order operator $\Gamma(\mathcal{S})\to\Gamma(T^*M\otimes\mathcal{S})$ with the twistor equation $\mathcal{T}\sigma=0$ as its kernel equation. The spinor bundle carries canonical <strong>involutions</strong> — the chirality $\Pi$, the volume element $\omega$ in odd dimension, and the anti-linear charge conjugation $\kappa$ — and each of them either commutes or anticommutes with the Clifford multiplication by a vector. The article computes the effect of that sign on the twistor operator, and the outcome is uniform: <strong>the projection is quadratic in the Clifford multiplication</strong>, so all three involutions commute with $\mathcal{T}$, and the kernel of the twistor operator decomposes into their joint eigenspaces. The commuting of the anti-linear involution is the <strong>conjugate symmetry</strong> of the operator, and it produces the Hermitian pairing on the kernel whose Hermitian character is the <strong>self-adjointness</strong> statement of the article.</p>
-<p><strong>The boundaries.</strong> The operator, its symbol and its conformal covariance are <em>The Twistor Operator</em> and <em>The Penrose Operator</em>; the fibre form, the charge conjugation and the reality structure are <em>Hermitian Clifford Structures</em> and <em>Spin Geometry</em>; the formal adjoint operator, the identity $\nabla^*\nabla=\mathcal{T}^*\mathcal{T}+\frac1nD^2$ and the twistor equation as an equation for $\nabla\sigma$ are <em>The Adjoint of the Twistor Operator</em>, the next entry of the group, and are quoted here. The analytic completions of the eigenspaces and the spectral theory belong to Part III and are named only. The body is a Riemannian spin manifold with the fibre form $h$, $c(b)^*=-c(b)$, and the operator $\mathcal{T}$ of <em>The Twistor Operator</em>.</p>
 <h2 id="the-involutions-of-the-spinor-bundle">The Involutions of the Spinor Bundle</h2>
 <p><strong>Definition.</strong> The <strong>chirality</strong> is the endomorphism $\Pi$ of the spinor bundle which in even dimension $n=2m$ is the Clifford product $\Pi=c(e_1)\cdots c(e_n)$ of a local orthonormal frame, normalised by a scalar so that $\Pi^2=\mathrm{id}$; the <strong>volume involution</strong> in odd dimension $n=2m+1$ is $\omega=c(e_1)\cdots c(e_n)$; the <strong>charge conjugation</strong> $\kappa : \mathcal{S}\to\mathcal{S}$ is the anti-linear map induced by the conjugation of the spin representation with respect to the fibre form $h$ of <em>Hermitian Clifford Structures</em>.</p>
 <p><strong>Proposition.</strong> The three maps satisfy the following, pointwise and globally.</p>

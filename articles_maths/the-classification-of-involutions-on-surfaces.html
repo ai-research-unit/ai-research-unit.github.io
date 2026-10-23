@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>An involution of a closed orientable surface is classified by very little: whether it preserves or reverses the orientation, and then a single integer — the number of fixed points in the preserving case, the number of fixed circles in the reversing case. This article gives the classification, the Riemann–Hurwitz relation that constrains the integer in terms of the genus, the construction of the quotient orbifold, and the Nielsen theory of the fixed points.</p>
 <p>The classification is the surface case of <em>Involutions on Manifolds and Equivariant Surgery</em>, where the fixed set and the equivariant neighbourhood are developed in general, and it is the simplest case in which the equivariant classification is complete: in dimension two the surgery obstruction vanishes and the invariants are the combinatorial data of the quotient. The quotients are the <strong>$2$-orbifolds</strong>, and the Riemann–Hurwitz relation between the genus, the number of branch points and the genus of the quotient is the numerical spine of the classification.</p>
 <p><strong>The article assumes</strong> the mapping class group and the Dehn twist of <em>Mapping Class Groups</em> and <em>The Dehn Twist as an Operator</em>, the structure theory of <em>Involutions on Manifolds and Equivariant Surgery</em>, the Euler characteristic and the classification of surfaces, and the elementary Nielsen fixed-point theory of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>.</p>
-<p><strong>The boundaries of the article.</strong> The general involution of a manifold of dimension at least three, its equivariant surgery and its classification are <em>Involutions on Manifolds and Equivariant Surgery</em>; the free involutions and their quotients are <em>Free Involutions and Lens Spaces</em>; the fixed sets of periodic maps of prime order are <em>Periodic Maps and the Smith Theory</em>. The hyperbolic metrics realising the involutions as isometries are <em>Hyperbolic Geometry</em> and <em>Teichmüller Theory</em>; the higher-dimensional orbifolds and their fundamental groups are modelled on the two-dimensional case treated here. The analytic Teichmüller theory is Part III, and no physics is invoked.</p>
 <h2 id="local-models-on-a-surface">Local Models on a Surface</h2>
 <p><strong>Proposition (fixed sets of involutions of surfaces).</strong> Let $T$ be a locally linear involution of a surface $S$.</p>
 <p><strong>(a)</strong> If $T$ preserves the orientation, then either $T$ is the identity or its fixed points are isolated. At an isolated fixed point there are coordinates $(u,v)$ in which $T(u,v) = (-u,-v)$.</p>

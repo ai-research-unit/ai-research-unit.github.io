@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,8 +81,8 @@ SL(2,\mathbb{C})=\{\tilde U_{\mathrm L}\in\mathbb{B}:\tilde U_{\mathrm L}\tilde 
 $$</p>
 <p>which acts on it by <strong>left multiplication</strong>,</p>
 <p>$$
-\psi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
-\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S .
+\boxed{\;\psi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
+\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S\;}.
 $$</p>
 <p>This is the <strong>spinor representation</strong> of the Lorentz group. Its carrier $S$ is the unique simple module of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, realized inside $\mathbb{B}$ as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; the detailed construction, together with the bilinear pairings on $S$, belongs to the companion article on the spinor module and is used here without repetition. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.</p>
 <p>Three properties of the representation are worth stating at once, because they distinguish it from the representations a physics reader meets first.</p>
@@ -109,7 +112,7 @@ N_k^{+}\mapsto 0, \qquad N_k^{-}\mapsto -i\sigma_k,
 $$</p>
 <p>On the conjugate module the two Casimirs are interchanged, $C_+\mapsto-3I_2$, $C_-\mapsto0$. Since $C_+$ and $C_-$ are invariants, the ordered pair of eigenvalues is an invariant; $(0,-3)$ and $(-3,0)$ differ, so $S$ and $\bar{S}$ are not isomorphic:</p>
 <p>$$
-S=\left(\tfrac12,0\right)\ncong\left(0,\tfrac12\right)=\bar{S}.
+\boxed{\;S=\left(\tfrac12,0\right)\ncong\left(0,\tfrac12\right)=\bar{S}\;}.
 $$</p>
 <p>One of the two $\mathrm{SU}(2)$ halves acts as spin $\tfrac12$ on $S$ and trivially on the conjugate half; on $\bar{S}$ the roles are interchanged. That a Weyl spinor has spin $\tfrac12$ under the rotation group and is annihilated by one of the two chiral Casimirs is exactly this statement.</p>
 <p>A dimension count confirms that the two chiralities exhaust the elementary cases. An irreducible representation labelled $(j,j_2)$ has complex dimension $(2j+1)(2j_2+1)$. Setting this equal to $2$ forces either $j=0,j_2=\tfrac12$ or $j=\tfrac12,j_2=0$. So $(0,\tfrac12)$ and $(\tfrac12,0)$ are the only two-dimensional irreducible representations, and every fundamental representation of the Lorentz group is one of the two chiralities.</p>
@@ -117,8 +120,8 @@ $$</p>
 <h2 id="the-vector-representation-is-the-tensor-product-of-the-two-chiralities">The Vector Representation Is the Tensor Product of the Two Chiralities</h2>
 <p>The two fundamental representations combine into the four-vector representation. With $S$ carrying $(\tfrac12,0)$ and $\bar{S}$ carrying $(0,\tfrac12)$, the outer tensor product is</p>
 <p>$$
-(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12),
-\qquad \dim_{\mathbb{C}}(\tfrac12,\tfrac12)=2\times2=4,
+\boxed{\;(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12),
+\qquad \dim_{\mathbb{C}}(\tfrac12,\tfrac12)=2\times2=4\;},
 $$</p>
 <p>the four-vector representation. The biquaternion algebra carries this representation, not by multiplication but by <strong>conjugation</strong>,</p>
 <p>$$
@@ -236,9 +239,9 @@ $$
 the four-vector representation, as verified in the preceding section.</p>
 <p>Combining these, the irreducible representations carried by the four-dimensional algebra under its natural self-actions are
 $$
-(\tfrac12,0)\quad\text{(left or right multiplication)},
+\boxed{\;(\tfrac12,0)\quad\text{(left or right multiplication)},
 \qquad
-(\tfrac12,\tfrac12)\quad\text{(conjugation)},
+(\tfrac12,\tfrac12)\quad\text{(conjugation)}\;},
 $$
 with the left-handed chirality appearing with multiplicity two. The right-handed chirality $\bar{S}$ requires the conjugate complex structure; it is not a submodule of the left or right regular module.</p>
 <p><strong>What the algebra does not carry.</strong> The algebra cannot carry an irreducible representation of complex dimension greater than $4$ at all, since its carrier would not fit. This already excludes $(1,1)$ (dimension $9$) and $(\tfrac32,\tfrac12)$ (dimension $8$). But dimension is not the only obstruction, and it is not the operative one in the first interesting cases. The representations $(1,0)$, $(0,1)$ (dimension $3$) and $(\tfrac32,0)$, $(0,\tfrac32)$ (dimension $4$) all fit inside a four-dimensional space, and yet none of them is carried by $\mathbb{B}$ under the actions the algebra provides:</p>

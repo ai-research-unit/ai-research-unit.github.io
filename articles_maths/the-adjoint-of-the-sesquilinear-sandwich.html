@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ S_{a,b}^{\dagger}=S_{b,a} .
 $$</p>
 <p>So the adjoint acts on the pair $(a,b)$ by the transposition and not by the involution in each factor. That single identity carries the article: from it come the self-adjoint sandwiches, which for units are the pairs with $b=ap$ for a central unit $p$, and in particular the Hermitian sandwiches $S_{a,a}$; the unitarity condition, under which the sandwiches with unitary parameters are unitary operators, $S_{a,b}^{\dagger}=S_{a,b}^{-1}=S_{b,a}$; and the comparison with the bilinear and the graded cases, where the adjoint keeps the order of the pair and conjugates its entries instead.</p>
 <p>The subject belongs to the operator theory of the sesqualgebras and completes the adjoint theory of the operators: the one-sided case is <em>The Adjoint of the Conjugate Left Multiplication</em>, the ternary case is <em>The Adjoint of the Ternary Product</em>, and the present article is the two-sided case, from which the other two are read off.</p>
-<p><strong>The boundaries.</strong> The sandwich, its composition table, its invertibility and the kernel of its parametrisation are <em>The Sesquilinear Sandwich Operator</em>; the pairing, the parity obstruction, the twisted rule and the model table of the adjoints are <em>The Sesquilinear Adjoint Operator</em>; the one-sided cases are <em>The Adjoint of the Conjugate Left Multiplication</em> and <em>The Adjoint of the Ternary Product</em>; the operators that preserve the product are <em>The Unitary Operators of a Sesqualgebra</em>; and the two-sided family in general, of which the sandwich is the twisted half, is <em>The Two-Sided Operators on a Hermitian Algebra</em>. In the bilinear layer the same computation is the unsigned case of <em>The Adjoint of the Sandwich on a Hermitian Algebra</em>, in the layer of <em>Algebras: A General Introduction</em>, and its graded companion, where a sign enters the involution, is <em>The Signed Adjoint of the Sandwich on a Hermitian Algebra</em>. This article stays inside Part I: no distance, no limit, no completeness.</p>
 <p>Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of <em>Sesqualgebras</em>; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, $\tau(ab)=\tau(ba)$, and compatible with the involution, $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing $\varphi(x,y)=\tau(xy^{*})$ is $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are</p>
 <p>$$
 S_{a,b}(x)=ax^{*}b,\qquad T_{p,q}(x)=pxq,\qquad L_{a}=S_{a,1},\qquad R_{b}=T_{1,\,b^{*}} .

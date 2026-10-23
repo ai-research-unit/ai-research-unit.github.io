@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>A knot is <strong>amphichiral</strong> (or <strong>achiral</strong>) when it is isotopic to its mirror image, and <strong>chiral</strong> otherwise. The mirror image is the image of the knot under a reflection of the three-sphere, an orientation-reversing involution with fixed set a two-sphere; so amphichirality is exactly the existence of an orientation-reversing symmetry of the pair $(S^3,K)$. This article treats the symmetry, the invariants that obstruct it, and the standard examples.</p>
 <p>The class of amphichiral knots is small and its members have rigid invariants: the signature vanishes, the Jones and HOMFLY polynomials are symmetric, and the double branched cover carries an involution. The chirality of the trefoil and of every nontrivial torus knot is the oldest application, and the figure-eight knot is the simplest amphichiral knot. The conditions are necessary and, for the classical polynomials, not sufficient; the finer detection is by the quantum and Floer invariants of <em>Floer Homology</em>, written in this Part.</p>
 <p><strong>The article assumes</strong> the knot theory of <em>Knot Theory</em> (the knot group, the Seifert surface, the Alexander and Jones polynomials, the signature and the Arf invariant), the fundamental group and covering spaces, and the structure of involutions of <em>Involutions on Manifolds and Equivariant Surgery</em>.</p>
-<p><strong>The boundaries of the article.</strong> The general theory of knots — the group, the Seifert surfaces, the genus, the classical and quantum polynomials, the concordance and the slice genus — is <em>Knot Theory</em>, and is cited; this article owns the symmetry, the mirror and the consequences. The periodic knots and the equivariant invariants are <em>Equivariant Knot Theory</em>, the next article; the link invariants of the three-manifold and the Heegaard–Floer and knot-Floer theories are <em>Floer Homology</em> and <em>Low-Dimensional Topology</em>. The hyperbolic volume, which is a strong chirality detector, is <em>Hyperbolic Geometry</em> and Part IV. No smooth topology of four-manifolds is used, and no physics.</p>
 <h2 id="the-mirror-and-the-symmetry">The Mirror and the Symmetry</h2>
 <p><strong>Definition.</strong> Fix a reflection $r$ of $S^3$ — an orientation-reversing involution whose fixed set is a two-sphere — and let $K\subseteq S^3$ be a knot. The <strong>mirror image</strong> is $K^{*} = r(K)$. The knot is <strong>amphichiral</strong> if $K^{*}$ is isotopic to $K$, and <strong>chiral</strong> otherwise. The <strong>reverse</strong> $-K$ is $K$ with the opposite orientation, and $K$ is <strong>invertible</strong> if $-K$ is isotopic to $K$.</p>
 <p><strong>Proposition (the symmetry formulation).</strong> A knot $K$ is amphichiral if and only if there is an orientation-reversing homeomorphism $h : S^3\to S^3$ with $h(K) = K$. It is invertible if and only if there is an orientation-preserving homeomorphism of the pair reversing the orientation of the knot.</p>

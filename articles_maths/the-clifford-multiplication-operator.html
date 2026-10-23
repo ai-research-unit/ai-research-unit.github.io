@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ c(b) : \mathcal{S}\longrightarrow\mathcal{S}, \qquad c(b)^2 = -g(b,b)\operatorna
 $$</p>
 <p>extends the vector $b$ to a skew-adjoint endomorphism of the fibres. This article treats $c$ as an operator: its algebraic relations, its parity for the chirality grading, its kernel and image, its adjoint, and the module structure it defines on the spinor bundle. The operator is the algebraic form of the metric, and the first-order operators of the category — the Cauchy–Riemann, the twistor and the Penrose operators — are all built by composing it with a connection.</p>
 <p>The multiplication is determined by the metric and the choice of a Clifford module; it is not a differential operator but a bundle map, and the properties that matter for the differential operators are collected in three groups. The <strong>algebraic relations</strong> are the Clifford relations $c(b)c(w)+c(w)c(b)=-2g(b,w)\operatorname{id}$ and their consequences: $c$ is injective, even and odd parts of the Clifford bundle act by preserving and exchanging the chirality, and the volume element gives the grading. The <strong>metric properties</strong> are the skew-adjointness $c(b)^*=-c(b)$ for the fibre form $h$ and the isometry statement $h(c(b)\sigma,c(b)\tau)=g(b,b)h(\sigma,\tau)$, which say that multiplication by a unit vector is a unitary operator of the fibre. The <strong>splitting properties</strong> are the facts that $c$ is a surjection with kernel $\ker c=\operatorname{im}c^*$ and that $cc^*=n\operatorname{id}$, which are the algebraic input of <em>The Twistor Operator</em>.</p>
-<p><strong>The boundaries.</strong> The Clifford algebra, its grading, its centre and its classification are Part II's, in <em>Clifford Algebras</em> and its companions; the Clifford modules and their structure as representations are <em>Spin Representations and Clifford Modules with Inner Conjugation</em>, and the spinor bundle is <em>Spin Geometry</em>. The operator calculus on a module — the generated algebra, the commutant, the symbol — is <em>Operators on a Clifford Module</em>, and the two pairings and the adjoints are <em>Adjoints on a Clifford Module</em>; the pointwise adjoint of the multiplication is <em>The Adjoint of the Clifford Multiplication</em>, written in the next group of this category. What this article adds is the reading of the multiplication itself as the metric-dependent operator of the fibre, with its relations, its kernel and its parity in one place. The base is a Riemannian manifold $(M,g)$ of dimension $n$; the indefinite case is only indicated where it changes a statement.</p>
 <h2 id="the-multiplication-operator">The Multiplication Operator</h2>
 <h3 id="definition-and-relations">Definition and Relations</h3>
 <p><strong>Definition.</strong> Let $\mathcal{S}\to M$ be a Clifford module over the Clifford bundle $\mathrm{Cl}(TM)$ of $(M,g)$, with the module action $c : \mathrm{Cl}(TM)\to\operatorname{End}(\mathcal{S})$. The <strong>Clifford multiplication</strong> by a vector $b\in T_xM$ is the linear map</p>

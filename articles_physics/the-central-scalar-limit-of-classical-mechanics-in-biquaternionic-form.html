@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -76,7 +79,6 @@
 <p>The name records the first two conditions; the third is what makes the limit the home of <strong>structureless particles</strong>. A nonzero element of the form $i\vec s \in \mathbb{M}_+$ is an internal vector degree of freedom, and the direction of such an element is a spin-like variable with its own precession. The central-scalar limit excludes it by construction, and that is exactly the spin-zero condition of the present subcategory: a point particle with no intrinsic angular momentum, no intrinsic magnetic moment, and no multipole structure.</p>
 <p>The article is the frame around the two central-force articles that follow. It does three things. It fixes the kinematic setting — how the non-relativistic world is realized in the algebra and where each mechanical quantity sits. It develops the general central-force structure: the algebraic criterion for a force to be central, the identification of angular momentum with the commutator of position and momentum, the conservation law that follows, the reduction to a radial problem, and Binet's equation for the orbit. And it delimits the limit, recording what is excluded and what the informational sector contributes when it is reduced to a central scalar.</p>
 <p>The treatment is classical and non-quantum throughout. The companion articles <em>The Harmonic Oscillator in Biquaternionic Form</em> and <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em> treat the operator versions of two of these systems; the states, the operators and the canonical commutator do not appear here, and the only bracket used is the classical Poisson bracket of the companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real-quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}$, its pure part is the real three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$, and the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$. For a quaternion $\vec a = a_1\vec e_x + a_2\vec e_y + a_3\vec e_z$ the biquaternion norm is $\langle \vec a\rangle_{\natural} = \vec a\vec a^{\natural} = |\vec a|^2e_t$, so that $\langle\cdot\rangle_{\natural}$ restricts to the positive Euclidean square on the real three-space. The trace satisfies $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ for $\tilde H_1,\tilde H_2 \in \mathbb{M}_+$.</p>
 <h2 id="the-non-relativistic-configuration">The Non-Relativistic Configuration</h2>
 <h3 id="where-the-world-is-placed">Where the World Is Placed</h3>
 <p>The full worldline is the material-sector curve $\tilde{R}(t') = ic\,t'\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z$. In the non-relativistic limit the scalar direction $ie_t$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum</p>
@@ -126,7 +128,7 @@ $$</p>
 <h3 id="the-algebraic-criterion-for-a-central-force">The Algebraic Criterion for a Central Force</h3>
 <p>A force is <strong>central</strong> (about the origin) when it is everywhere directed along the position, $\vec F \parallel \vec r$. In the real-quaternion subalgebra this condition has three equivalent forms:</p>
 <p>$$
-\vec F\parallel\vec r \;\Longleftrightarrow\; \vec r\times\vec F = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 \;\Longleftrightarrow\; \vec F\,\vec r = -\vec F\cdot\vec r\,e_t \ \text{is central} .
+\boxed{\;\vec F\parallel\vec r \;\Longleftrightarrow\; \vec r\times\vec F = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 \;\Longleftrightarrow\; \vec F\,\vec r = -\vec F\cdot\vec r\,e_t \ \text{is central}\;}.
 $$</p>
 <p>The middle form uses the identity for two real pure quaternions,</p>
 <p>$$
@@ -140,7 +142,7 @@ $$</p>
 <h3 id="angular-momentum-as-a-commutator">Angular Momentum as a Commutator</h3>
 <p>For a particle of momentum $\vec p$ the angular momentum is $\vec L = \vec r\times\vec p$. By the identity above,</p>
 <p>$$
-\vec L = \vec r\times\vec p = \tfrac12[\vec r, \vec p] .
+\boxed{\;\vec L = \vec r\times\vec p = \tfrac12[\vec r, \vec p]\;}.
 $$</p>
 <p>The three components $L_k$ are the three real coefficients of the commutator of the position and momentum quaternions. The product $\vec r\vec p$ contains both $\vec L$ and the scalar $-\vec r\cdot\vec p$,</p>
 <p>$$
@@ -154,7 +156,7 @@ d\vec L/dt' = \tfrac12\frac{d}{dt'}[\vec r, \vec p] = \tfrac12\left([d\vec r/dt'
 $$</p>
 <p>because $[d\vec r/dt', d\vec r/dt'] = 0$ and $d\vec p/dt' = \vec F$. Hence</p>
 <p>$$
-d\vec L/dt' = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 ,
+\boxed{\;d\vec L/dt' = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0\;},
 $$</p>
 <p>which is precisely the criterion for a central force. <strong>The conservation of angular momentum and the centrality of the force are the same algebraic condition</strong>, and the derivation is a two-line computation in the algebra rather than a vector identity about torque. The torque $\vec\tau = \vec r\times\vec F$ is $\tfrac12[\vec r, \vec F]$, so the result is the standard $d\vec L/dt' = \vec\tau$ written as a commutator.</p>
 <h3 id="planar-motion-and-the-areal-law">Planar Motion and the Areal Law</h3>
@@ -186,7 +188,7 @@ $$</p>
 <h3 id="binets-equation">Binet's Equation</h3>
 <p>The orbit $r(\theta)$ is obtained from the radial equation by the substitution $u = 1/r$. With $h = L/m$ the areal law gives $d\theta/dt' = hu^2$, and differentiating $u$ with respect to $\theta$ rather than to $t'$ converts the radial equation into <strong>Binet's equation</strong> for a general central force:</p>
 <p>$$
-\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2},
+\boxed{\;\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}\;},
 $$</p>
 <p>where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt' = -h\,du/d\theta$ and $d^2r/d{t'}^2 = -h^2u^2\,d^2u/d\theta^2$ (with $u=1/r$), substituting into $md^2r/d{t'}^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.</p>
 <p>For the linear force $F(r) = -m\omega^2r$, Binet's equation becomes $\frac{d^2u}{d\theta^2} + u = \omega^2/(h^2u^3)$, which is nonlinear in $u$; its orbits are nevertheless closed ellipses, centred on the force centre rather than focused on it, and they are more cleanly seen in the phase plane of the second article than through Binet's equation. For the inverse-square force $F(r) = -\kappa/r^2$ the equation becomes linear,</p>

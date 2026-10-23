@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(n,m)$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect interpretation.</p>
 <p>It is recorded with an explicit standing, stated at the outset so that it is not misread as a framework result. The companion <em>The Gauge Group Ceiling</em> shows that the biquaternion algebra's compact structure reaches $\mathrm{SU}(2)$ and stops, and <em>The Gluon: An Octet Outside the Biquaternion Algebra</em> states the boundary. The $\mathrm{SU}(3)$ structure below is therefore <strong>not an algebra of $\mathbb{B}$</strong>. It is the external machinery by which the hadron spectrum is classified, and it appears in the corpus because the spinor-structure programme attaches it to the spinor structure through the spin–charge Hilbert space — the spin factor of that space is the framework's own, the charge factor is this external $\mathrm{SU}(3)$.</p>
 <p>The article is organised as follows. A section gives the representations as traceless bisymmetric tensors and the degree formula. A section fixes the Okubo basis and the three $\mathfrak{su}(2)$ subalgebras. A section states the admissibility condition and lists the allowed degrees. A section reduces the octet into isospin multiplets. A section derives and then checks the Gell-Mann–Okubo mass formula. A closing section states the biquaternion interpretation.</p>
-<p><strong>Conventions.</strong> The Okubo basis and the degree formula are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§4–6) and from Okubo's <em>Lecture Notes in Physics</em> <strong>94</strong>; the mass relations are the standard Gell-Mann–Okubo relations and are checked against the Particle Data Group values. The companion <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em> supplies the space on which these representations act, and <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em> supplies the mass $m_0$ of a supermultiplet.</p>
 <ul>
 <li>Companion article <em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em>, for the space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ on which these representations act.</li>
 <li>Companion article <em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em>, for the mass $m_0$ of the supermultiplet and the representation degrees on the spin lines.</li>
@@ -256,7 +258,7 @@ $$</p>
 <h3 id="the-linear-form">The Linear Form</h3>
 <p>Since the charge splitting is small, the leading hypercharge splitting is</p>
 <p>$$
-m = m_0+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14 Y^2\Bigr),
+\boxed{\;m = m_0+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14 Y^2\Bigr)\;},
 $$</p>
 <p>the <strong>linear</strong> Gell-Mann–Okubo formula, valid when $\delta m^2/m_0^2\ll1$.</p>
 <h3 id="the-baryon-octet">The Baryon Octet</h3>
@@ -304,7 +306,7 @@ $$</p>
 </table></div>
 <p>Eliminating the four parameters $m_0,\alpha,\beta,\gamma$ gives the relations</p>
 <p>$$
-m_\Xi+m_N = \tfrac12\bigl(3m_\Lambda+m_\Sigma\bigr),
+\boxed{\;m_\Xi+m_N = \tfrac12\bigl(3m_\Lambda+m_\Sigma\bigr)\;},
 \qquad
 m_\Xi+m_N = 2m_0+2\alpha+\gamma .
 $$</p>
@@ -316,10 +318,10 @@ m_N+m_\Xi = 2256.9\ \text{MeV},
 \tfrac12(3m_\Lambda+m_\Sigma) = 2270.1\ \text{MeV},
 $$</p>
 <p>a discrepancy of $0.58\%$. The relation is satisfied to better than one percent by the physical masses, which is the standard statement of $\mathrm{SU}(3)$ flavour symmetry's accuracy, and it is a genuine test because the four masses are independent inputs.</p>
-<h2 id="the-supermultiplet-mass-math220">The Supermultiplet Mass $m_0$</h2>
+<h2 id="the-supermultiplet-mass-math219">The Supermultiplet Mass $m_0$</h2>
 <p>The parameter $m_0$ is $\mathrm{SU}(3)$-invariant and therefore <strong>not determined by $\mathrm{SU}(3)$</strong>; it is an external parameter, one value per supermultiplet, and it is the average of the masses of the charge multiplets in the supermultiplet. For the baryon octet,</p>
 <p>$$
-m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr).
+\boxed{\;m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr)\;}.
 $$</p>
 <p>The programme closes the system by identifying $m_0$ with the mass of the spin representation that carries the supermultiplet. That is the companion mass formula's $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, with $l,\bar l$ the representation of the octet's spin line. The two chapters therefore connect: the representation degree fixes the <strong>centre</strong> of the supermultiplet's mass multiplet, and the Gell-Mann–Okubo formula fixes the <strong>splitting</strong> about that centre. The companion article's numbers — $1770\,m_e$, $2278\,m_e$, $264.5\,m_e$ for the nucleon, $\Sigma$ and $\pi$ — are these centres, and the splittings about them are the $\pm\beta\mp\tfrac12\gamma$ and $2\gamma$ of the table above.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>

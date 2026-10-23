@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -71,7 +74,6 @@
 <p>The effect is peculiar among the systems of this subcategory in that it is <strong>geometric</strong>. The precession angle does not depend on the mass of the bob, on the length of the wire, on the local value of $g$, or on the amplitude of the swing, as long as the pendulum is long and the amplitude small. It depends only on the path that the pivot is carried along by the rotating Earth — a circle of latitude — and on nothing else. It is a <strong>holonomy</strong>: the net rotation accumulated by a frame when it is carried around a closed loop, an angle fixed by the geometry of the loop rather than by the details of the transport.</p>
 <p>This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(t')$ acting on it by the adjoint action. The <strong>Coriolis and centrifugal forces are commutators</strong> with the frame's angular velocity, $\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt']$ and $\vec F_{\text{cf}} = -\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\lambda$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.</p>
 <p>The treatment is classical and non-quantum. The geometric phase of a quantum system, the Berry phase, and its biquaternion formulation belong to the companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>; the classical Hannay angle is a separate construction. What is used here is the elementary holonomy of a frame carried around a loop on a sphere, and the pendulum that realizes it. The particle is structureless — the bob carries no intrinsic angular momentum and no magnetic moment — so the effect is one of the spin-zero subcategory, and it is the purely geometric end of it.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. Position vectors, velocities, angular velocities and forces are real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$; the energy is a central scalar. For two real vectors $\vec a,\vec b$,</p>
 <p>$$
 \vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$</p>
@@ -108,7 +110,7 @@ $$</p>
 $$</p>
 <p>since $[\vec a,\vec b] = 2\vec a\times\vec b$, and the centrifugal term is the double commutator,</p>
 <p>$$
--m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right] ,
+\boxed{\;-m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right]\;},
 $$</p>
 <p>since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.</p>
 <h2 id="the-pendulum-in-the-rotating-frame">The Pendulum in the Rotating Frame</h2>
@@ -148,7 +150,7 @@ z(t' + T) = \exp(-i\Omega\sin\lambda\,T)z(t')
 $$</p>
 <p>to machine precision, which is the statement that the ellipse of the motion returns after one fast period but rotated by the angle $-\Omega\sin\lambda\,T$. Over one sidereal day, $T_{\text{day}} = 2\pi/\Omega$, the accumulated precession is</p>
 <p>$$
-\Delta\phi = \Omega\sin\lambda\cdot\frac{2\pi}{\Omega} = 2\pi\sin\lambda ,
+\boxed{\;\Delta\phi = \Omega\sin\lambda\cdot\frac{2\pi}{\Omega} = 2\pi\sin\lambda\;},
 $$</p>
 <p>the Foucault angle.</p>
 <h3 id="the-size-of-the-neglected-centrifugal-term">The Size of the Neglected Centrifugal Term</h3>
@@ -189,7 +191,7 @@ $$</p>
 <h3 id="the-geodesic-turning">The Geodesic Turning</h3>
 <p>For a curve on a surface, the <strong>geodesic curvature</strong> $\kappa_g$ measures how fast the tangent turns relative to a parallel-transported (geodesically straight) frame. For a circle of latitude on the unit sphere it is $\kappa_g = \cot\theta_0$ per unit arc length, and the arc length of one circuit is $2\pi\sin\theta_0$, so the total geodesic turning is</p>
 <p>$$
-\oint\kappa_g\,ds = 2\pi\cos\theta_0 = 2\pi\sin\lambda .
+\boxed{\;\oint\kappa_g\,ds = 2\pi\cos\theta_0 = 2\pi\sin\lambda\;}.
 $$</p>
 <p>This was computed numerically by evaluating $\kappa_g = \vec u\cdot(\frac{d^2\boldsymbol\gamma}{ds^2}\times\frac{d\boldsymbol\gamma}{ds})/|\frac{d\boldsymbol\gamma}{ds}|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\vec u$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.</p>
 <h3 id="gaussbonnet-and-the-solid-angle">Gauss–Bonnet and the Solid Angle</h3>
@@ -227,8 +229,8 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,</p>
 <p>$$
-\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt'], \qquad
-\vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]] .
+\boxed{\;\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt'], \qquad
+\vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]\;}.
 $$</p>
 <p>For a pendulum of frequency $\omega_0$ at latitude $\lambda$, the horizontal motion satisfies</p>
 <p>$$

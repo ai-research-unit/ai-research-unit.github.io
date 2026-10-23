@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,7 +88,6 @@ $$</p>
 <li>the <strong>general tessarine sesquilinear form</strong> is $\tfrac12$ the Hilbert–Schmidt form on the diagonal matrices, $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{Tr}\bigl(\varphi(\breve Q_{1})\varphi(\breve Q_{2})^{\dagger}\bigr)$, positive definite.</li>
 </ul>
 <p>The model is the reduced biquaternion analogue of the matrix realisation $\mathbb{B}\cong M_{2}(\mathbb{C})$ of the biquaternion category, and the difference is the content of the article: the biquaternion algebra is the <strong>whole</strong> of $M_{2}(\mathbb{C})$, the reduced biquaternion algebra is its <strong>diagonal</strong> subalgebra, and the missing off-diagonal entries are the missing matrix units $E_{12},E_{21}$ of the Peirce decomposition.</p>
-<p><strong>Boundaries.</strong> The general plain algebra and its multiplication are <em>Introduction to the Algebra of the Reduced Biquaternions</em>; the norm and the units are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em> and <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>; the ideals and the Peirce decomposition are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the multiplication operators are <em>The Multiplication Operators of the Algebra of the Reduced Biquaternions</em>; and the forms are <em>The Forms of the Algebra of the Reduced Biquaternions</em>. The general $2\times2$ element representation of the category, of which this article reads the algebra, is <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>; the four-vector model is <em>The Four-Vector Element Representation of the Reduced Biquaternions</em>; and the non-commutative matrix realisation is <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>.</p>
 <h2 id="the-representation">The Representation</h2>
 <h3 id="the-map-on-the-basis">The Map on the Basis</h3>
 <p><strong>The map sends the four basis elements to $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{3}$ and $i\sigma_{3}$, and the real basis to a real four-dimensional space of matrices.</strong></p>

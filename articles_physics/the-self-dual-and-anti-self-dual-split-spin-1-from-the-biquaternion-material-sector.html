@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -127,7 +130,7 @@ $$</p>
 $$</p>
 <p>because $\star(\vec E+ic\vec B) = c\vec B - i\vec E = -i(\vec E+ic\vec B)$. Since $\tilde{F} = i\sqrt{\epsilon}\,\vec N$, the same statement holds on the field-strength biquaternion up to the overall constant:</p>
 <p>$$
-\star\tilde{F} = -i\,\tilde{F}.
+\boxed{\;\star\tilde{F} = -i\,\tilde{F}\;}.
 $$</p>
 <h3 id="direct-check">Direct check</h3>
 <p>The identity is worth checking without the Riemann–Silberstein shortcut, because the factors of $\epsilon$ and $\mu$ are the place where a sign can hide. Write $\vec H = \vec B/\mu$. The dual acts on the magnetic field as</p>
@@ -185,9 +188,9 @@ $$</p>
 <h3 id="the-split-of-a-general-two-form">The split of a general two-form</h3>
 <p>For a general complexified two-form, written as the sum of a self-dual and an anti-self-dual piece,</p>
 <p>$$
-\tilde{F}_{\mathbb{C}} = \tilde{F}_{+} + \tilde{F}_{-}, \qquad
+\boxed{\;\tilde{F}_{\mathbb{C}} = \tilde{F}_{+} + \tilde{F}_{-}, \qquad
 \tilde{F}_{+} = \tilde\Pi_{sd}\tilde{F}_{\mathbb{C}} = \tfrac12\left(\tilde{F}_{\mathbb{C}} + i\,\star\tilde{F}_{\mathbb{C}}\right), \qquad
-\tilde{F}_{-} = \tfrac12\left(\tilde{F}_{\mathbb{C}} - i\,\star\tilde{F}_{\mathbb{C}}\right),
+\tilde{F}_{-} = \tfrac12\left(\tilde{F}_{\mathbb{C}} - i\,\star\tilde{F}_{\mathbb{C}}\right)\;},
 $$</p>
 <p>the two pieces are independent and transform separately under the Lorentz group, in $(1,0)$ and in $(0,1)$. This is the decomposition of the antisymmetric tensor into its self-dual and anti-self-dual parts, and in the biquaternion formulation it is the decomposition of a complexified vector of the algebra into the $+i$ and $-i$ eigencomponents of the Hodge dual.</p>
 <p>The split is Lorentz covariant, and the reason is short. The Lorentz action on the field strength is complex-linear on the Riemann–Silberstein vector: writing a boost as a complex $3\times3$ matrix $M$ acting on $\vec N$, the same boost acts on $i\vec N$ as $iM$, so the action commutes with multiplication by $i$ and consequently $\star$ commutes with the boost and maps each half to itself. The two halves are therefore invariant subspaces of the Lorentz action, which is what it means for them to be the two three-dimensional complex representations.</p>
@@ -224,8 +227,8 @@ $$</p>
 <h3 id="helicity">Helicity</h3>
 <p>For a plane wave of definite wavevector $\vec u_k$, Faraday's law gives $\vec B = \vec u_k\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\vec u_k\times\varepsilon^{\mathrm{fop}}_\pm = \mp i\varepsilon^{\mathrm{fop}}_\pm$. Then</p>
 <p>$$
-\vec E + ic\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad
-\vec E - ic\vec B = 2E_-\varepsilon^{\mathrm{fop}}_-,
+\boxed{\;\vec E + ic\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad
+\vec E - ic\vec B = 2E_-\varepsilon^{\mathrm{fop}}_-\;},
 $$</p>
 <p>so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $+1$ amplitude and the anti-self-dual combination $\vec E-ic\vec B$ only the helicity $-1$ amplitude. The two halves of the two-form are therefore the two helicities of the radiation field: on each of two independent transverse directions, an amplitude proportional to $\varepsilon^{\mathrm{fop}}_+$ gives a vanishing anti-self-dual combination and an amplitude proportional to $\varepsilon^{\mathrm{fop}}_-$ the reverse, and no transverse amplitude gives both. The third helicity eigenvalue, zero, belongs to the propagation direction and is not a transverse polarization; for the massless field the longitudinal mode is removed by the gauge freedom, whose structure is the subject of the companion articles on the Maxwell field. The next article in this subcategory takes up the massive case, where the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom.</p>
 <h2 id="where-the-split-lives-and-where-it-does-not">Where the Split Lives, and Where It Does Not</h2>

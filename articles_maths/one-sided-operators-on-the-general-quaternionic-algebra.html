@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -72,7 +75,6 @@
 L_{\tilde Q_6}(\tilde Q_1)=\tilde Q_6\tilde Q_1,\qquad R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2 .
 $$</p>
 <p>Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is <em>Two-Sided Operators on the General Quaternionic Algebra</em>; the general Clifford theory of the one-sided families is <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are <em>One-Sided Operators on the General Plain Sesqualgebra</em>; and the form that supplies the adjoints is <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, so that a general element is $\tilde Q_6=\sum_\mu Q_{6\mu} e_\mu$ with $Q_{6\mu}\in\mathbb{C}$. The natural conjugation is $\tilde Q_6^{\natural}=Q_{6t}e_t-Q_{6x}\vec e_x-Q_{6y}\vec e_y-Q_{6z}\vec e_z$; the norm is $\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}=\sum_\mu Q_{6\mu}^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, with adjoint written ${}^{N}$; the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and its adjoint is written ${}^{*}$. An operator is a $\mathbb{C}$-linear map of $\mathbb{B}$ to itself.</p>
 <h2 id="the-two-multiplications">The Two Multiplications</h2>
 <p><strong>Definition.</strong> For $\tilde Q_6,\tilde Q_2\in\mathbb{B}$ the <strong>left multiplication</strong> by $\tilde Q_6$ and the <strong>right multiplication</strong> by $\tilde Q_2$ are the $\mathbb{C}$-linear maps</p>
 <p>$$

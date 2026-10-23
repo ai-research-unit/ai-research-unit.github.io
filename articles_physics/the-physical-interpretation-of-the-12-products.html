@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -129,9 +132,9 @@
 <h3 id="one-product-two-parts">One Product, Two Parts</h3>
 <p>Let $\circ$ be one of the four general products. Its symmetric and antisymmetric parts are</p>
 <p>$$
-S(x,y)=\tfrac12\bigl(x\circ y+y\circ x\bigr),
+\boxed{\;S(x,y)=\tfrac12\bigl(x\circ y+y\circ x\bigr),
 \qquad
-A(x,y)=\tfrac12\bigl(x\circ y-y\circ x\bigr),
+A(x,y)=\tfrac12\bigl(x\circ y-y\circ x\bigr)\;},
 $$</p>
 <p>so that $x\circ y=S(x,y)+A(x,y)$ for every pair. For the two sesquilinear parents the exchange is not the plain one: the second term is the conjugate of the product in the opposite order,</p>
 <p>$$
@@ -598,9 +601,9 @@ $$</p>
 <p>A root of $+1$ is an <strong>involution</strong>: a parity, a reality condition, a discrete symmetry, or, in the probability band, a unitary transformation of the state space. The plain and natural products produce the involutions of the module; the probability band's involution is the unitary group $\mathrm{U}(2)$; the symmetrisation replaces unitarity by normalisation, the root being a normalised amplitude without its phase; and a bracket produces no involution at all. The compactness of $\mathrm{U}(2)$ is what makes the internal labels discrete.</p>
 <p>An <strong>idempotent</strong> is an element equal to its own square. In the plain product the two equations are one equation read through the halving map,</p>
 <p>$$
-\tilde\Pi=\tfrac12(e_t+\tilde\Xi),
+\boxed{\;\tilde\Pi=\tfrac12(e_t+\tilde\Xi),
 \qquad
-\tilde\Xi=2\tilde\Pi-e_t,
+\tilde\Xi=2\tilde\Pi-e_t\;},
 $$</p>
 <p>which is a bijection between the roots of $+1$ and the idempotents. An idempotent is a projection, and a projection is a determinate state: measuring twice gives the same result as measuring once. The idempotent sets are the state sets of the bands. The plain product carries the largest family, one state per root of one; the Hermitian idempotents are the pure states of the probability band, on the boundary of the positive cone; the gauge family is the only nontrivial family of idempotents that are units. The brackets and the interval band carry no nontrivial state: an infinitesimal transformation has no determinate state, and a state is not an interval.</p>
 <p>A nonzero root of $0$ is a <strong>nilpotent of index two</strong>, written $\tilde\Upsilon$: a square-zero element. It kills itself, so it is an element of its own annihilator, and physically it is an infinitesimal object of which two successive applications give nothing. The lightlike displacement is the pure member. Nilpotency is also Pauli exclusion: the one-mode fermionic ladder is a pair of nilpotents $a,a^{\dagger}$ with $a^{2}=(a^{\dagger})^{2}=0$ and $\{a,a^{\dagger}\}=e_t$, whose product is the vacuum idempotent. The BRST charge and the supercharge are the odd members, and the supercharge is nilpotent only on the massless shell.</p>

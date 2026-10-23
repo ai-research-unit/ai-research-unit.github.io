@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -81,7 +84,6 @@ $$</p>
 <li><strong>As a gauge bundle.</strong> The associated $\mathrm{U}(1)$ bundle has first Chern number one; that integer is the charge carried by the connection, and the local connection of the bundle is the abelian gauge potential of <em>The Gauge Principle in Biquaternionic Form</em>.</li>
 </ul>
 <p>The article proceeds by deriving each of these interpretations and then stating exactly what the algebra supplies and what it does not. The distinction is kept visible throughout: the total space, the base, the fibre, the classifying integer and the local connection are all objects of the framework; the quantisation of the abelian charge in units of $\hbar$ and the assignment of a dynamics to the connection are imported, because the algebra is a complexified classical structure.</p>
-<p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em>. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$, the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $i$ is the central scalar imaginary. The fixed-point subspaces are $\mathbb M_-$ (anti-Hermitian) and $\mathbb M_+$ (Hermitian). The real-quaternion subspace is $\mathbb H_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ and the scalar subspace is $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$, the centre. We write $\tilde Q^{\natural}$ for the quaternion conjugate, so that for a unit real quaternion $\tilde U$ one has $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$. The abelian potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and we write the section of the Hopf map as a unit real quaternion rather than as a column spinor, which is equivalent by <em>The Element and Operator Representations</em>.</p>
 <ul>
 <li>Companion article <em>The Gauge Principle in Biquaternionic Form</em>, for the gauge connection and the covariant derivative.</li>
 <li>Companion article <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em>, for the non-abelian connection.</li>
@@ -129,7 +131,7 @@ $$</p>
 <h2 id="the-hopf-map-and-its-fibres">The Hopf Map and Its Fibres</h2>
 <p>Define</p>
 <p>$$
-\pi(\tilde U) \;=\; \tilde U \vec e_z \bar{\tilde U} , \qquad \tilde U\in S^3 .
+\boxed{\;\pi(\tilde U) \;=\; \tilde U \vec e_z \bar{\tilde U} , \qquad \tilde U\in S^3\;}.
 $$</p>
 <p><strong>The image lies in the base.</strong> For $\tilde U\bar{\tilde U}=e_t$,</p>
 <p>$$
@@ -180,17 +182,17 @@ F = da_N = \tfrac{1}{2}\sin\theta\,d\theta\wedge d\phi = da_S ,
 $$</p>
 <p>and its integral over the base is</p>
 <p>$$
-\int_{S^2} F \;=\; \frac{1}{2}\int_0^{2\pi}\!\!d\phi\int_0^{\pi}\!\sin\theta\,d\theta
+\boxed{\;\int_{S^2} F \;=\; \frac{1}{2}\int_0^{2\pi}\!\!d\phi\int_0^{\pi}\!\sin\theta\,d\theta
 \;=\;\frac{1}{2}\,(2\pi)(2)=2\pi ,
 \qquad
-c_1=\frac{1}{2\pi}\int_{S^2}F=1 .
+c_1=\frac{1}{2\pi}\int_{S^2}F=1\;}.
 $$</p>
 <p>The first Chern number of the Hopf bundle is one. This integer is the charge of the minimal configuration: the curvature of the Hopf connection on the sphere at infinity is its field. The charge is quantised because the fibre is a group of winding numbers, not because of any dynamical input; the factor of $\hbar$ that turns it into a physical charge is imported from quantum physics and appears in the quantisation condition, not in the bundle.</p>
 <p><strong>The embedding in the algebra.</strong> The local form $a$ is a real one-form; to place it in the algebra one multiplies by the central $i$,</p>
 <p>$$
-\mathcal a = i\,a \in \Omega^1(M)\otimes\mathbb C_{\mathbb B},
+\boxed{\;\mathcal a = i\,a \in \Omega^1(M)\otimes\mathbb C_{\mathbb B},
 \qquad
-\mathcal f = d\mathcal a = i F ,
+\mathcal f = d\mathcal a = i F\;},
 $$</p>
 <p>which is exactly the abelian connection of <em>The Gauge Principle in Biquaternionic Form</em>, whose coefficients are central and whose curvature is central and gauge invariant. The Hopf connection is therefore not merely analogous to the framework's abelian connection; it is that connection in the sector where the base is the idempotent sphere. The real one-form $a$ has a single real coefficient and enters the algebra through the central generator $ie_t$, while the fibre direction it is dual to is the stabiliser direction $\vec e_z$; the gauge transformation $a\mapsto a+d\chi$ is the change of local trivialisation of the bundle.</p>
 <h2 id="the-non-abelian-reading-and-the-instanton-boundary">The Non-Abelian Reading and the Instanton Boundary</h2>
@@ -234,7 +236,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The unit sphere of the biquaternion algebra is the total space of the Hopf fibration. Read as real quaternions it is $SU(2)=S^3$; read as the base of the adjoint action it is the idempotent sphere $S^2=\{\tilde\Pi=\tfrac12(e_t+i\vec u)\}\subset\mathbb M_+$; and the fibre is the stabiliser $\mathrm{U}(1)_{\vec e_z}$ generated by $\vec e_z$, a maximal torus of the compact factor and the abelian gauge group of the companion articles. This circle is the diagonal torus $\{\mathrm{diag}(\exp(i\alpha),\exp(-i\alpha))\}$ and is distinct from the unit circle of the centre, the scalar circle $\{\mathrm{diag}(\exp(i\alpha),\exp(i\alpha))\}$; the two meet only in $\{\pm e_t\}$, and it is the central circle that supplies the coefficient $i$ of the abelian connection. The Hopf map</p>
 <p>$$
-\pi(\tilde U)=\tilde U \vec e_z\bar{\tilde U}
+\boxed{\;\pi(\tilde U)=\tilde U \vec e_z\bar{\tilde U}\;}
 $$</p>
 <p>is the adjoint action of $SU(2)$ on the pure-imaginary unit sphere, and its fibres are the cosets of the stabiliser, verified to hold on random unit quaternions. The fibration is the principal $\mathrm{U}(1)$-bundle over $S^2$ with transition function of winding one and first Chern number $c_1=1$; its invariant connection is the framework's abelian connection $\mathcal a=i\,a$ with central curvature $\mathcal f=iF$, and its charge is the unit charge of the minimal configuration.</p>
 <p>The same manifold, read as the structure group $SU(2)$, classifies the instanton sector: a finite-action connection on $\mathbb R^4$ is a connection on a bundle over $S^4$, its boundary map lies in $\pi_3(SU(2))\cong\mathbb Z$, and the minimal self-dual configuration is the BPST instanton with unit winding. The associated bundle of the fundamental representation is the framework's spinor module $\mathbb C^2$, on which the covariant derivative acts. The algebra supplies the total space, the base, the fibre, the connection and the classifying integers; the quantisation in units of $\hbar$ and the dynamical identification of the connection are imported, as the framework is a complexified classical structure.</p>

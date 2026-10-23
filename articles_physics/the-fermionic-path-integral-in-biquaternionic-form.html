@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -77,7 +80,6 @@
 <li><strong>The Euclidean integral and the parity sectors.</strong> Wick rotation and the antiperiodic (Matsubara) boundary conditions, the decomposition of the measure into the two fermion-parity sectors, and the phase of the determinant.</li>
 </ul>
 <p>The boundary with the neighbouring subjects is sharp and is stated where it occurs: the systematic evaluation of the functional determinant, the transformation of the measure under field redefinitions, and the anomalies that follow from it are not treated here.</p>
-<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict'$ axis of $\mathbb{M}_-$. <strong>Grassmann conventions.</strong> To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.</p>
 <h2 id="the-action-in-biquaternion-form">The Action in Biquaternion Form</h2>
 <p>The classical field theory is defined by the parent article's Lagrangian density,</p>
 <p>$$
@@ -118,7 +120,7 @@ S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
 $$</p>
 <p>where $M$ is the matrix of the bilinear (for the field, the operator $i\not\partial-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:</p>
 <p>$$
-\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M .
+\boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
 $$</p>
 <p>The derivation is the terminating expansion: $\exp(-\bar\psi M\psi)=1-\bar\psi M\psi+\tfrac12(\bar\psi M\psi)^2-\cdots$, and only the term with exactly one of every generator survives the integral, whose coefficient is the Leibniz sum that defines $\det M$. The identity was verified for a general complex $2\times2$ matrix in the stated convention: the two sides agree to machine precision, ratio $1+0i$.</p>
 <p><strong>The two-point function.</strong> Differentiating with respect to the sources, or dressing the Gaussian by one pair of fields, gives the inverse kernel:</p>
@@ -128,7 +130,7 @@ $$</p>
 <p>The index order is part of the statement and was checked: for a random complex $2\times2$ $M$, the four amplitudes are the four entries of $M^{-1}$, the field $\psi_a$ contracting with the second index and $\bar\psi_b$ with the first, to nine decimals. The order is the trace of the anticommutator in the integration: with the bilinear written $\bar\psi M\psi$ and the measure written $\prod_ad\bar\psi_ad\psi_a$, the two factors come back in the order in which they stand, not transposed, and the off-diagonal amplitudes are sensitive to it because $M$ need not be symmetric.</p>
 <p><strong>The generating functional.</strong> Completing the square in the Grassmann algebra — a finite algebraic operation, since the shift $\psi\to\psi-M^{-1}\eta$ is a shift by an odd constant — gives</p>
 <p>$$
-Z[\eta,\bar\eta]=\det M\;\exp\!\big[\bar\eta\,M^{-1}\eta\big],
+\boxed{\;Z[\eta,\bar\eta]=\det M\;\exp\!\big[\bar\eta\,M^{-1}\eta\big]\;},
 $$</p>
 <p>with the exponential terminating at second order in the sources. The result is the standard fermionic Gaussian and is recorded as such.</p>
 <h3 id="a-finite-mode-computation">A Finite-Mode Computation</h3>
@@ -163,7 +165,7 @@ $$</p>
 <p>For a field whose quadratic form is antisymmetric, the Gaussian is a square root of a determinant. This is not a special case invented for the fermionic path integral; it is what the algebra's real structure suggests, because $\flat=-{}^{*}$ is a pairing of the field with its own conjugate, of exactly the shape of a Majorana mass.</p>
 <p><strong>The integral of an antisymmetric form.</strong> For $2N$ generators $\psi_1,\dots,\psi_{2N}$ and an antisymmetric matrix $A$,</p>
 <p>$$
-\int d\psi_{2N}\cdots d\psi_1\;\exp(\,-\frac12\psi A\psi)=\mathrm{Pf}(A),
+\boxed{\;\int d\psi_{2N}\cdots d\psi_1\;\exp(\,-\frac12\psi A\psi)=\mathrm{Pf}(A)\;},
 $$</p>
 <p>with $\mathrm{Pf}$ the Pfaffian, and</p>
 <p>$$
@@ -196,11 +198,11 @@ $$</p>
 <h2 id="parity-sectors-the-phase-and-the-sign-problem">Parity Sectors, the Phase and the Sign Problem</h2>
 <p>The measure carries the parity, and the two fermion-parity sectors appear as a <strong>relative sign</strong>, not as two integrands. In the paired measure, an integral of an odd element vanishes, so the integrand of a Gaussian — the even element $\exp(-\bar\psi M\psi)$ — has no odd part to remove; what distinguishes the sectors is the <em>boundary condition</em> in imaginary time. The two basic traces are</p>
 <p>$$
-\mathrm{Tr}\,\exp(-\beta H^{\mathrm{fop}})
+\boxed{\;\mathrm{Tr}\,\exp(-\beta H^{\mathrm{fop}})
 =\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}}) ,
 \qquad
 \mathrm{Tr}\,(-1)^{F^{\mathrm{fop}}}\exp(-\beta H^{\mathrm{fop}})
-=\int_{\text{periodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}}) ,
+=\int_{\text{periodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})\;},
 $$</p>
 <p>so the antiperiodic fields compute the ordinary thermal trace and the periodic fields the parity-weighted (Witten) trace; the two differ by the relative sign of the even and odd sectors. This is the path-integral form of the parity grading that the parent Fock-space article records, and it is also the reason a <strong>Majorana</strong> field's integral is a Pfaffian while a <strong>Dirac</strong> field's is a determinant: the Dirac field carries the two chiralities — and hence both parity sectors — independently, so its measure pairs $\psi$ with an independent $\bar\psi$ and yields a determinant; the Majorana field is its own conjugate, so its measure pairs the field with itself and yields the square root.</p>
 <p><strong>Where the determinant sits.</strong> The fermionic Gaussian produces $\det M$ in the <em>numerator</em> of every amplitude, whereas the bosonic Gaussian produces $1/\det M$; the two therefore enter loop corrections with opposite signs. This is not a bookkeeping accident but a consequence of the measure: the bosonic measure is a positive weight and the integral of a decaying Gaussian is small when the kernel is large, while the Berezin integral of a Gaussian is the determinant itself. It is the origin, at the level of the generating functional, of the opposite vacuum-energy contributions of bosons and fermions, and it was checked in the finite-mode computation above, where the integral returned $\det M$ rather than its inverse.</p>

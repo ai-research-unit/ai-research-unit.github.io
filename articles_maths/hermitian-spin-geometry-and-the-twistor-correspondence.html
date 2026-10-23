@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>Hermitian spin geometry</strong> is the spin geometry of a spinor bundle with a positive definite Hermitian form $h$ and the conjugation it defines; the conjugation is the charge conjugation of the spin representation, and it is the reality structure of the whole twistor construction. The <strong>twistor correspondence</strong> is the equivalence between the conformal geometry of a four-dimensional anti-self-dual manifold $M$ and the complex geometry of its twistor space $Z(M)$: points of $M$ correspond to rational curves in $Z(M)$ of a fixed normal type, and the fields on $M$ that satisfy the massless field equations correspond to cohomology classes on $Z(M)$. This article presents the correspondence and the <strong>Penrose transform</strong> in their structural form, with the Hermitian form as the datum that makes the reality conditions precise.</p>
 <p>The two directions of the correspondence are the following. From the manifold to the twistor space, each point $x$ gives the curve $\pi^{-1}(x)\cong\mathbb{CP}^1$ with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and the conformal structure of $M$ is recovered from the family of curves; this is the content of <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>. From the twistor space to the manifold, a holomorphic object on $Z$ restricts to each curve and produces a field on $M$; the restriction defines the transform, and the Hermitian form is what turns complex-linear data into fields with reality conditions.</p>
-<p><strong>The boundaries.</strong> The twistor space and its real, complex and Hermitian structures are <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>; the twistor operator and the twistor equation are <em>The Twistor Operator</em> and <em>The Penrose Operator</em>; the spinor bundle, the chirality and the charge conjugation are <em>Spin Geometry</em>; the complex analysis of the transform, the cohomology of the sheaves and the massless field equations are the referenced twistor literature. The body is a four-dimensional oriented spin manifold with an anti-self-dual conformal structure.</p>
 <h2 id="hermitian-spin-geometry">Hermitian Spin Geometry</h2>
 <p><strong>Definition.</strong> A <strong>Hermitian spin structure</strong> on a spin manifold is a positive definite Hermitian form $h$ on the spinor bundle $\mathcal{S}$ with respect to which the Clifford multiplication is skew, $c(v)^*=-c(v)$, together with the induced conjugation $\kappa : \mathcal{S}\to\bar{\mathcal{S}}$ of the spin representation. The form $h$ is the fibre form of the earlier articles, and the conjugation is the reality structure.</p>
 <p><strong>Proposition.</strong> The conjugation $\kappa$ is anti-linear, it commutes with the Clifford multiplication up to the complex conjugation of the Clifford coefficients, $\kappa(c(v)\sigma)=\overline{\text{coeff}}\,\kappa(\sigma)$, it is compatible with the chirality in the even-dimensional case, and it descends to a free anti-holomorphic involution $\sigma$ of the twistor space $Z(M)=\mathbb{P}(\mathcal{S}^-)$, the real structure of the previous article.</p>

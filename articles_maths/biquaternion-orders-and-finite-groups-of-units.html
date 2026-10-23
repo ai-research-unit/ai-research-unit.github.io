@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries integral structures, and the groups of units of those structures are the finite groups attached to the algebra. The real slice $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ contains the classical quaternion orders — the Lipschitz order and the Hurwitz order — whose groups of units are the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit sphere of the real slice has for finite subgroups the cyclic groups, the binary dihedral groups and the three binary polyhedral groups of orders $24$, $48$ and $120$, and those groups draw the figures of the theory: the regular $24$-cell with the Hurwitz units as its vertices, and the McKay correspondence. The complex order, the integral biquaternions, behaves differently: its group of units is infinite, generated along a nilpotent direction, so the finite unit groups are the real ones.</p>
 <p>This article is the integral and finite-group entry of the Topology group. The unit criterion is the biquaternion norm, which is <em>Norm and Invertibility in the General Quaternionic Algebra</em>, and the topology of the group of units is <em>The Biquaternion Unit Group as a Topological Group</em>. Those results are cited, not re-derived, and the present article owns the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, the figures those groups determine in the real sector, and the infinite unit group of the complex order. The quotient $Sp(1)/\{\pm e_t\}\cong SO(3)$, the rotor, the twofold cover and the rotation $\rho_v(\tilde Q_1)=-v\tilde Q_1v^{-1}$ are <em>Biquaternion Rotations and Lorentz Transformations</em>, cited.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and units $\vec e_k^2=-e_t$; the real slice is $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, and the material sector is $\mathbb{M}_-$.</p>
 <h2 id="the-quaternion-orders">The Quaternion Orders</h2>
 <p><strong>Definition.</strong> A subset $\Lambda\subseteq\mathbb{H}$ is an <strong>order</strong> if it is a subring and a free abelian group of rank four whose $\mathbb{Q}$-span is $\mathbb{H}$; equivalently, it is a lattice that is also closed under multiplication and contains $e_t$.</p>
 <p><strong>Definition.</strong> The <strong>Lipschitz order</strong> is

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -79,11 +82,6 @@
 <li><strong>Scope limitation, reported rather than smoothed over.</strong> The reduction "operator commutator $=$ algebra element" is exact. The stronger interpretation "the curvature <em>is</em> a single algebra commutator" is not: $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ contains the exterior-derivative term, which is not a commutator of algebra elements. It is a single commutator of the connection components only when the curl $\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu$ vanishes. This is stated where it arises and carried into the open questions.</li>
 <li><strong>Inherited, and not settled here.</strong> The reality class of the connection in the $ict'$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian potential and field strength are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. The gauge algebra of this article is the vector part of the material sector,
-$$
-\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-, \qquad [\vec e_a,\vec e_b] = 2\,\varepsilon_{abc}\,\vec e_c,
-$$
-with normalised generators $T_a = \tfrac12 \vec e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = -i\partial/\partial t'$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.</p>
 <h2 id="the-covariant-derivative-and-the-curvature-it-defines">The Covariant Derivative and the Curvature It Defines</h2>
 <p>Let the connection be a one-form with values in the compact factor of the material sector,
 $$
@@ -171,8 +169,8 @@ because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{Q} + \til
 <h2 id="the-bianchi-identity">The Bianchi Identity</h2>
 <p>The field strength is built from the connection by differentiation, so it cannot be arbitrary: it satisfies a differential identity. With the adjoint covariant derivative defined above, the <strong>Bianchi identity</strong> is</p>
 <p>$$
-D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0
-\qquad \text{for all } (\lambda,\mu,\nu).
+\boxed{\;D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0
+\qquad \text{for all } (\lambda,\mu,\nu)\;}.
 $$</p>
 <p>The cyclic order is part of the statement, so it is worth writing out in full:</p>
 <p>$$
@@ -305,7 +303,7 @@ $$</p>
 <p>Because the curvature is adjoint-valued, its covariant derivative is the two-sided commutator $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$, not the one-sided left multiplication used on a matter field; collapsing the two-sided action to a one-sided one destroys the Bianchi identity. This distinction is separate from, and not to be confused with, the two-sided gravitational connection of the curved-spacetime article.</p>
 <p>The Bianchi identity is</p>
 <p>$$
-D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0 ,
+\boxed{\;D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0\;},
 $$</p>
 <p>with the cyclic order as displayed, equivalently $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$. It is the <strong>operator Jacobi identity</strong> with the curvature identity substituted into it: $[D_\lambda,[D_\mu,D_\nu]]+\text{cyclic}=0$ becomes $i\kappa(D_\lambda F_{\mu\nu}+\text{cyclic})=0$. In the coordinate proof a second, algebraic Jacobi identity $[\mathcal{A}_\lambda,[\mathcal{A}_\mu,\mathcal{A}_\nu]]+\text{cyclic}=0$ kills the nested-commutator terms, via the derivation property of the adjoint action. Both identities are exact and were verified on $\mathrm{SU}(2)$; the abelian case is trivially zero and is not evidence.</p>
 <p>Two things are left visible. First, a <strong>scope limitation</strong>: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu$ vanishes. Second, a <strong>gap</strong>: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $\tilde{\nabla}^{\natural}\tilde{F} = \mathrm{div}(\vec F)e_t+\partial/\partial Q_t\,\vec F-\mathrm{curl}\,\vec F$ and $\tilde{\nabla}\tilde{F} = -\mathrm{div}(\vec F)e_t+\partial/\partial Q_t\,\vec F+\mathrm{curl}\,\vec F$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.</p>

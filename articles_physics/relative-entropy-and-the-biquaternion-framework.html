@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -85,7 +88,6 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 </li>
 </ol>
 <p>The article proceeds as follows. Relative entropy is recalled with the properties that make it basic. The states of $\mathbb{B}$ and their logarithms are fixed. The closed form is derived. Positivity, asymmetry and monotonicity are read off in the Bloch geometry. Araki's relative modular operator is identified, because it is the object the modular companions generalize. The field-theoretic setting, in which relative entropy is the right quantity precisely where entanglement entropy is not, is recalled. The article closes with the established/interpretation/open split.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. A state is $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\ge0$ and $\mathrm{Tr}(\tilde{Ϛ})=1$; the GNS data are those of <em>The GNS Construction in the Biquaternion Framework</em>.</p>
 <h2 id="relative-entropy-the-standard-quantity">Relative Entropy: The Standard Quantity</h2>
 <h3 id="definition">Definition</h3>
 <p>Let $\rho$ and $\sigma$ be density matrices on a finite-dimensional Hilbert space, with $\rho$ a state and $\sigma$ positive of trace one. The <strong>relative entropy</strong> (Umegaki, 1962) is
@@ -117,7 +119,7 @@ with conditional relative entropies defined recursively.</li>
 <h3 id="why-relative-entropy-rather-than-von-neumann-entropy">Why Relative Entropy Rather Than Von Neumann Entropy</h3>
 <p>The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\dim)$ is the special case in which the second argument is the maximally mixed state; it is not monotone and is defined only for states with $\mathrm{supp}\,\rho$ of finite-dimensional type. Relative entropy is the more basic object, and in quantum field theory it is the only one of the two that is well defined for the local algebras: the local algebras are type III factors, which carry no trace and no density matrix, while the relative entropy of two states on a von Neumann algebra is defined by the Araki formula recalled below. This is the reason the informational interpretation of quantum field theory is written in the language of relative entropy, and it is the reason this article opens the subcategory.</p>
 <h2 id="the-states-of-the-biquaternion-algebra">The States of the Biquaternion Algebra</h2>
-<h3 id="density-matrices-in-math50">Density Matrices in $\mathbb{M}_+$</h3>
+<h3 id="density-matrices-in-math32">Density Matrices in $\mathbb{M}_+$</h3>
 <p>By the GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2^{*})$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad

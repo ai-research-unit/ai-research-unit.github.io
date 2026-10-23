@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,7 +71,6 @@
         <h1 id="krein-orthogonality-and-the-fundamental-decomposition"><strong>Krein Orthogonality and the Fundamental Decomposition</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The general quaternionic sesquilinear form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{1\mu}Q_{2\mu}$ is an indefinite general plain sesquilinear form, and its <strong>orthogonality</strong> is not the orthogonality of a definite space: isotropic vectors exist, a subspace and its complement can meet, and a projection can be Krein-orthogonal without being definite-orthogonal. This article develops the three notions that organise the indefinite structure of the algebra — the Krein-orthogonal complement, the classification of subspaces by the inertia of the restricted form, and the <strong>fundamental decomposition</strong> $\mathbb{B}=\mathbb{W}\,{[+]_K}\,\mathbb{W}^{\perp_{K}}$ attached to a maximal positive definite subspace $\mathbb{W}$ — together with the projections that belong to them. The Gram matrix of the form and the signatures of its restrictions are in <em>The Krein Gram Matrix and the Restrictions of the Form</em>; the totally isotropic subspaces are the subject of <em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>; and the global geometry of the maximal definite subspaces is in <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
-<p><strong>Conventions.</strong> $e_t=1$, $\vec e_k^{2}=-e_t$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}=\sum_{\mu}\bar Q_{1\mu}Q_{2\mu}$ the positive definite general plain sesquilinear form, $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{1\mu}Q_{2\mu}$ the general quaternionic sesquilinear form, with the <strong>sign vector</strong> $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that the sum is the four terms $\bar Q_{1t}Q_{2t}-\bar Q_{1x}Q_{2x}-\bar Q_{1y}Q_{2y}-\bar Q_{1z}Q_{2z}$ written compactly with $\sum_\mu$, and $J={}^{\natural}$ the fundamental symmetry, so that $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}$ and $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}}$ is the splitting into the centre and the vector subspace.</p>
 <h2 id="orthogonality-and-complements">Orthogonality and Complements</h2>
 <p><strong>Definition.</strong> Elements $\tilde{Q}_1,\tilde{Q}_2$ are <strong>Krein-orthogonal</strong>, written $\tilde{Q}_1\perp_{K}\tilde{Q}_2$, when $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=0$. A subspace is <strong>Krein-orthogonal</strong> to another, $\mathbb{W}\perp_{K}\mathbb{U}$, when every element of one is Krein-orthogonal to every element of the other. The <strong>Krein-orthogonal complement</strong> of $\mathbb{W}$ is</p>
 <p>$$

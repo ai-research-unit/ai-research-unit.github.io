@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -112,9 +115,9 @@ $$</p>
 <h3 id="statement">Statement</h3>
 <p>The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The single equation is</p>
 <p>$$
-\tilde{\nabla}\tilde{F} = \frac{m^2c^2}{\hbar^2}\,\tilde{A},
+\boxed{\;\tilde{\nabla}\tilde{F} = \frac{m^2c^2}{\hbar^2}\,\tilde{A},
 \qquad
-\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right),
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\;},
 $$</p>
 <p>or, in natural units $\hbar=c=1$,</p>
 <p>$$
@@ -138,9 +141,9 @@ $$</p>
 $$</p>
 <p>Now take the scalar part of both sides. The d'Alembertian $\Box$ is a central scalar differential operator, so it preserves the scalar–vector decomposition and $\mathrm{Sc}(\Box\tilde{F}) = \Box\,\mathrm{Sc}(\tilde{F})$. The field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is a <strong>pure vector</strong>, so $\mathrm{Sc}(\tilde{F}) = 0$, and the left-hand side vanishes identically. Hence</p>
 <p>$$
-0 = \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
+\boxed{\;0 = \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
 \qquad\Longrightarrow\qquad
-S := \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0 ,
+S := \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0\;},
 $$</p>
 <p>which is the <strong>Lorenz condition</strong> of the companion Maxwell article, whose components are $\partial/\partial Q_t\,A_t + \mathrm{div}\,\vec A = 0$. The derivation uses only three facts: the field strength is a pure vector, the d'Alembertian is central and scalar, and the mass parameter is nonzero. In the massless case the same computation gives $0 = 0$ and no constraint, which is exactly why the gauge freedom survives there and is absent here.</p>
 <h2 id="reduction-to-the-kleingordon-equation">Reduction to the Klein–Gordon Equation</h2>
@@ -158,7 +161,7 @@ $$</p>
 $$</p>
 <p>the Klein–Gordon equation for the biquaternion-valued potential. Because $\Box$ is central and scalar, it acts on the four coefficients of $\tilde{A}$ separately, and the equation is the statement that each coefficient of the potential satisfies the scalar Klein–Gordon equation. The reduction is therefore exact and reversible: the Proca equation for $\tilde{A}$ and the pair</p>
 <p>$$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{A} = 0, \qquad \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0
+\boxed{\;\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{A} = 0, \qquad \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = 0\;}
 $$</p>
 <p>are equivalent. This is the biquaternion transcription of the standard statement that the Proca equation is equivalent to the Klein–Gordon equation together with the Lorenz condition.</p>
 <h3 id="the-component-form">The component form</h3>
@@ -185,9 +188,9 @@ $$</p>
 $$</p>
 <p>as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires</p>
 <p>$$
-\frac{\omega^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
+\boxed{\;\frac{\omega^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
 \qquad\text{i.e.}\qquad
-\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2},
+\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2}\;},
 $$</p>
 <p>the physical relativistic dispersion relation.</p>
 <h3 id="the-lorenz-condition-on-a-plane-wave">The Lorenz condition on a plane wave</h3>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -76,7 +79,6 @@ $$</p>
 \nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2} ,
 $$</p>
 <p>with $D$ the self-adjoint Cauchy–Riemann operator, and reads from it the consequences for the twistor equation $\mathcal{T}\sigma=0$: the equivalent form $\nabla_X\sigma=-\frac1nc(X)D\sigma$ of the equation and the scalar identity satisfied by the twistor spinors.</p>
-<p><strong>The boundaries.</strong> The operator, its projection $\pi$ and the contraction $c$ are <em>The Twistor Operator</em>; the Cauchy–Riemann operator, its self-adjointness $D^*=D$ and the Lichnerowicz formula are <em>The Spinor Operator</em>; the adjoint connection and its calculus are <em>The Codifferential on a Spinor Bundle</em>; the Clifford multiplication and its adjoint are <em>The Clifford Multiplication Operator</em> and <em>The Adjoint of the Clifford Multiplication</em>. The involutions, the conjugate symmetry and the Hermitian pairing of the kernel are <em>Involutions of the Twistor Operator</em>, the preceding entry of the group. The spectral theory of $\mathcal{T}^*\mathcal{T}$ is Part III's. The body is a Riemannian spin manifold with the fibre form $h$, $c(v)^*=-c(v)$ and the twistor operator of <em>The Twistor Operator</em>.</p>
 <h2 id="the-formal-adjoint">The Formal Adjoint</h2>
 <p><strong>Definition.</strong> The <strong>formal adjoint</strong> $\mathcal{T}^*$ of the twistor operator is the differential operator $\Gamma(T^*M\otimes\mathcal{S})\to\Gamma(\mathcal{S})$ with</p>
 <p>$$

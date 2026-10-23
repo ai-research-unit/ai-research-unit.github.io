@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -104,9 +107,9 @@ $$</p>
 <p>so it changes the envelope and leaves the module orientation exactly as it was. The squeeze operator does not squeeze the module.</p>
 <p>The standard Bogoliubov transformation follows from the central algebra,</p>
 <p>$$
-S^{*}\,a\,S=a\cosh r-\exp(\,i\theta)\sinh r\,a^\dagger ,
+\boxed{\;S^{*}\,a\,S=a\cosh r-\exp(\,i\theta)\sinh r\,a^\dagger ,
 \qquad
-S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta)\sinh r\,a ,
+S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta)\sinh r\,a\;},
 $$</p>
 <p>and in terms of quadratures it is the general Bogoliubov dilation. Writing $x$ and $p$ in terms of $a$ and $a^\dagger$ and using their transformation,</p>
 <p>$$
@@ -121,11 +124,11 @@ $$</p>
 $$</p>
 <p>up to a phase. The quadrature variances are</p>
 <p>$$
-\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r),
+\boxed{\;\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r),
 \qquad
 \Delta p^2=\frac{\hbar m\omega}{2}\exp(2r),
 \qquad
-\Delta x\,\Delta p=\frac{\hbar}{2},
+\Delta x\,\Delta p=\frac{\hbar}{2}\;},
 $$</p>
 <p>so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\hbar/2$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[x,p]=i\hbar e_t$.</p>
 <p>The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with $m=\hbar=\omega=1$ and the width convention $\alpha=(m\omega/\hbar)\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:</p>
@@ -192,9 +195,9 @@ IJ=K ,
 $$</p>
 <p>the elements $1+J$ and $1+K$ are zero divisors:</p>
 <p>$$
-(1+J)(1-J)=0,
+\boxed{\;(1+J)(1-J)=0,
 \qquad
-(1+K)(1-K)=0 .
+(1+K)(1-K)=0\;}.
 $$</p>
 <p>Both identities were verified in the two-dimensional representation $I=i\sigma_z$, $J=\sigma_x$: the products vanish exactly, while $I^2=-1$ and $J^2=+1$ were confirmed. The split algebra is what one obtains when the biquaternion norm is contracted in one direction, and its zero divisors are the real image of the biquaternion null cone. The real quaternion algebra $\mathbb{H}$ is a division algebra — every nonzero element of $\mathbb{H}$ has $\langle x\rangle_{\natural}>0$ and is invertible — but $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not: the complex coefficients supply the null cone that the last article of this subcategory treats. The contraction exhibits that locus in a real basis, where it becomes the lightlike cone of the split algebra.</p>
 <h2 id="deforming-and-enlarging">Deforming and Enlarging</h2>

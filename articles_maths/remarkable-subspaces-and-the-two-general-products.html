@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The quaternion algebra $\mathbb{H}$ carries two <strong>remarkable subspaces</strong>, the <strong>scalar line</strong> $\mathbb{R}_{\mathbb{H}}$ and the <strong>vector subspace</strong> $\operatorname{Vect}(\mathbb{H})$, the fixed and the anti-fixed space of the quaternion conjugation ${}^{\natural}$. Each of the two general products of <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em> is read on the two subspaces in this article, and the two questions asked of each are the same: <strong>is the subspace closed under the product</strong>, and <strong>what are the products of two vectors</strong>.</p>
 <p>The products themselves, their laws and their coordinate rules are <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>; the two subspaces, their bases and their dimensions are <em>Introduction to the Remarkable Subspaces of the Quaternions</em>, in the Linear Spaces group above. None of that is restated here: what the article adds is the reading of the two products on the two subspaces and the table of the restrictions. The symmetric and antisymmetric halves of the products, which are what makes the vector product the cross product and its twin, are <em>The 6 Products of the Quaternioid Real Space</em>, below this article in this category; the restriction of the two forms to the same subspaces is <em>Remarkable Subspaces and the Two Forms</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, with $\vec q_1,\vec q_2$ the vector parts; the scalar line is $\mathbb{R}_{\mathbb{H}}=\{q_te_t:q_t\in\mathbb{R}\}$, identified with $\mathbb{R}$, and the vector subspace is $\operatorname{Vect}(\mathbb{H})=\{\vec q\}$, of basis $\vec e_x,\vec e_y,\vec e_z$. The plain product is $\tilde q_1\tilde q_2$, the quaternionic product is $\tilde q_1^{\natural}\tilde q_2$, the dot product is $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ and the cross product is $\vec q_1\times\vec q_2$. The quaternion norm is $\langle\tilde q\rangle_{\natural}=|\tilde q|^2=\tilde q^{\natural}\tilde q$.</p>
 <h2 id="the-product-of-two-vector-elements">The Product of Two Vector Elements</h2>
 <p>The product of two vector elements is the sharpest single computation of the article, and it is where the cross product enters the products of the algebra.</p>
 <p><strong>Proposition (the vector products).</strong> For purely vector elements $\tilde q_1=\vec q_1$ and $\tilde q_2=\vec q_2$,</p>

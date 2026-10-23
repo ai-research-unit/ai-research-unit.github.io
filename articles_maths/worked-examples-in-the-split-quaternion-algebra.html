@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article collects explicit computations in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of <em>Split-Quaternion Algebra</em>.</p>
 <p>The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of <em>Split-Quaternion Algebra</em>, <em>Split-Quaternion Idempotents and Projections</em>, <em>Split-Quaternion Zero Divisors</em>, <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
-<p><strong>Conventions.</strong> A split-quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_t, q_x, q_y, q_z \in \mathbb{R}$ and the products $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$. Its conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and its central product is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, formed and evaluated algebraically and read metrically in <em>Split-Quaternion Norm and Invertibility</em>. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ are the standard idempotents.</p>
 <h2 id="the-basis-products">The Basis Products</h2>
 <p>The multiplication table, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$, is</p>
 <div class="table-scroll"><table>

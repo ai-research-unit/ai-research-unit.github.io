@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -91,7 +94,7 @@ $$</p>
 <h2 id="the-invariant-interval">The Invariant Interval</h2>
 <p>The <strong>invariant interval</strong> between two nearby events in spacetime is the <strong>biquaternion norm</strong> of the displacement biquaternion $d\tilde{R} \in \mathbb{M}_-$:</p>
 <p>$$
-ds^2 = d\tilde{R}\,\overline{d\tilde{R}} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{t'}^2 +dx^2+dy^2+dz^2.
+\boxed{\;ds^2 = d\tilde{R}\,\overline{d\tilde{R}} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{t'}^2 +dx^2+dy^2+dz^2\;}
 $$</p>
 <p>Here $\overline{d\tilde{R}} = ic\,dt'\,e_t - d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.</p>
 <p>The displacement $d\tilde R$ is a <strong>material element</strong>, and the interval is its norm; a spacelike distance is read from that norm.</p>
@@ -128,7 +131,7 @@ $$</p>
 <h2 id="the-mass-shell-relation">The Mass-Shell Relation</h2>
 <p>The four-momentum satisfies the <strong>mass-shell relation</strong></p>
 <p>$$
-\tilde{P}\tilde{P}^{\natural} = m^2 \tilde{V}\tilde{V}^{\natural} = -m^2 c^2.
+\boxed{\;\tilde{P}\tilde{P}^{\natural} = m^2 \tilde{V}\tilde{V}^{\natural} = -m^2 c^2\;}
 $$</p>
 <p>Expanding in components,</p>
 <p>$$
@@ -173,7 +176,7 @@ $$</p>
 $$</p>
 <p>where $\rho$ is the charge density and $\vec j$ is the current density. The current biquaternion lies in $\mathbb{M}_-$ (imaginary scalar part, real vector part). The <strong>conservation of charge</strong> is expressed by the biquaternion equation</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0,
+\boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0\;}
 $$</p>
 <p>where $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Landauer's principle is the exchange rate between information and thermodynamics: the erasure of one bit of information requires the dissipation of at least</p>
 <p>$$
-Q_{\min} = k_B T \log 2
+\boxed{\;Q_{\min} = k_B T \log 2\;}
 $$</p>
 <p>of heat into an environment at temperature $T$. It is the bridge between the informational and the material descriptions of a physical process. It is also the reason the two descriptions cannot be kept apart: a memory is a physical system, its logical states are physical states, and the reset of those states has a thermodynamic price.</p>
 <p>This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The <strong>material sector</strong> $\mathbb{M}_-$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The <strong>informational sector</strong> $\mathbb{M}_+$ is the Hermitian subspace; its states are $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, and it carries the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>,</p>
@@ -192,7 +195,7 @@ $$</p>
 <p>which is Landauer's principle. The <strong>exchange rate</strong> is therefore $k_B T$ per nat of erased information, or $k_B T \log 2$ per bit; the heat is the material ledger's entry corresponding to the informational ledger's debit.</p>
 <p>For a general state the same argument gives</p>
 <p>$$
-Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) ,
+\boxed{\;Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ})\;},
 $$</p>
 <p>so the cost is the entropy functional of the erased state, read in units of $k_B T$. The material cost is thus controlled by the biquaternion norm that controls the entropy: a state near the null cone is cheap to erase, and the maximally mixed state is the most expensive, at $k_BT\log2$.</p>
 <h3 id="a-worked-model">A Worked Model</h3>
@@ -253,7 +256,7 @@ $$</p>
 $$</p>
 <p>and the second law forces a compensating environment entropy $\Delta\mathcal{S}_{\rm env}\ge\mathcal{S}(\tilde{Ϛ})$, hence a heat</p>
 <p>$$
-Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) \qquad (\text{a full bit: } k_BT\log 2).
+\boxed{\;Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) \qquad (\text{a full bit: } k_BT\log 2)\;}.
 $$</p>
 <p>The exchange rate between the sectors is $k_BT$ per nat. The two ledgers are related by the central factor $i$, which exchanges the sectors and reverses the sign of the biquaternion norm, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.</p>
 <p>Reversible operations — rotor conjugations — preserve the biquaternion norm, produce no entropy and have a vanishing Lyapunov spectrum; irreversible operations — coarse-grainings, and erasure above all — contract, produce entropy in the combined account, and are paid for in the material sector. This is the material–informational exchange: the reversible part of the informational sector is free, and the irreversible part costs $k_BT$ per nat, at the exchange rate set by the temperature.</p>

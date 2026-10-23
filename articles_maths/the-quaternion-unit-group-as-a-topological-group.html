@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,8 +71,6 @@
         <h1 id="the-quaternion-unit-group-as-a-topological-group"><strong>The Quaternion Unit Group as a Topological Group</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The quaternions form a division algebra, so the units of the quaternion product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.</p>
-<p><strong>Boundaries.</strong> The space and its topology are <em>Introduction to Topology on the Quaternions</em>, above this article in this category; the norm and the inverse formula are <em>Norm and Invertibility in the Quaternion Algebra</em>, above this article in this category; the finite subgroups of the unit sphere are <em>Quaternion Orders and Finite Groups of Units</em>, below this article in this category; the exponential and the Lie structure are <em>Quaternion Exponential and Lie Group Structure</em>, below this article in this category; the rotations are <em>Quaternion Rotations and Reflections</em>, in <code>### Geometry</code>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_kq_k\vec e_k$. The <strong>quaternion form</strong> is $\langle\tilde q\rangle_{\natural}=q_t^{2}+|\vec q|^{2}$ and the <strong>norm</strong> is $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$; the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_te_t-\vec q$, the bar is the identity. The <strong>unit sphere</strong> is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the <strong>group of units</strong> is $\mathbb{H}^\times=\{\tilde q\neq0\}$.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Proposition (the units are the nonzero elements).</strong> The group of units of the quaternion product is</p>
 <p>$$

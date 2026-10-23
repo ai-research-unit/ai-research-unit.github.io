@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -111,13 +114,13 @@ $$</p>
 $$</p>
 <p>and the second term vanishes by the field equation $\nabla F=0$. The variation of the action is then $\delta A=-\int dt'\int dx\,F^*\cdot(\nabla\alpha)F=0$, and the paper reports that an integration by parts, with the requirement that $\delta A$ vanish for arbitrary $\alpha$, gives</p>
 <p>$$
-F^*\cdot(\nabla F) = 0 ,
+F^*\cdot(\nabla F) = 0
 $$</p>
 <p>which the paper calls the conservation of energy for the electromagnetic field. Expanding the left side using the two curl equations gives</p>
 <p>$$
-\partial/\partial t' u + \mathrm{div}\,(\vec E\times\vec B) = 0 ,
+\boxed{\;\partial/\partial t' u + \mathrm{div}\,(\vec E\times\vec B) = 0 ,
 \qquad
-u = \tfrac12\bigl(E_x^2+E_y^2+E_z^2+B_x^2+B_y^2+B_z^2\bigr),
+u = \tfrac12\bigl(E_x^2+E_y^2+E_z^2+B_x^2+B_y^2+B_z^2\bigr)\;}
 $$</p>
 <p>which is the Poynting theorem, with $\vec S=\vec E\times\vec B$ the energy flux.</p>
 <h3 id="the-sources-claim">The source's claim</h3>

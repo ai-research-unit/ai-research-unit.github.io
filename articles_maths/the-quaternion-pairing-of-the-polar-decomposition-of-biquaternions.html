@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -123,7 +126,6 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = Q_te_t+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and its real and imaginary quaternion parts are $\tilde q_r,\tilde q_i\in\mathbb{H}$ under $\tilde{Q} = \tilde q_r+i\tilde q_i$; the quaternion subspace is $\mathbb{H}_{\mathbb{B}}$. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the two operations commuting. The norm is $\langle\tilde Q\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, and the domain of the polar decomposition is $\langle\tilde Q\rangle_{\natural}\neq0$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\exp(i\alpha) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ and the subspaces $\mathbb{M}_\pm$, $\mathrm{Sp}(1)$ are those of <em>Modulus–Unit Polar Decomposition of Biquaternions</em>. The quaternion modulus is $\tilde q$ and the quaternion angle is $\tilde\Psi$, with $\theta_{\mathrm b} = \psi/2$ half the rapidity and $\vec u_{\mathrm b}'$ the boost axis rotated by the rotor.</p>
 <h2 id="the-results-used">The Results Used</h2>
 <p>The article takes the following results as established and does not prove them again.</p>
 <div class="table-scroll"><table>
@@ -152,7 +154,7 @@ $$</p>
 </tr>
 <tr>
 <td>the eigenvalues and the axis</td>
-<td><em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em></td>
+<td><em>Eigenbasis of a Biquaternion</em>, §<em>The Spectrum and the Characteristic Polynomial</em></td>
 <td>the Hamilton row of the comparison</td>
 </tr>
 <tr>
@@ -541,7 +543,7 @@ $$</p>
 \Rho = \sqrt{\langle\tilde Q\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_t}{\Rho}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{\Rho}\in[0,1] ,
 $$</p>
 <p>so both the modulus and the angle are real and $\vec U = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar decomposition of the companion articles <em>Modulus–Unit Polar Decomposition of Quaternions</em> and <em>Exponential Polar Decomposition of Quaternions</em>, in the two forms they give it: the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ with $r = \Rho$ and $\tilde u_{\mathrm r} = \exp(\vec U\Theta)$, and the exponential form $\exp(\ln r)\exp(\mu\tfrac{\theta}{2})$ with $\mu = \vec U$ and $\theta = 2\Theta$, the exponential article's $\theta$ being twice the angle of the unit factor, which is $\Theta$ here. The identification is exact rather than asymptotic. The quaternion pairing is available on the same elements and is degenerate there: $\tilde q_i = 0$, hence $\tan\tilde\Psi = 0$, $\tilde\Psi = 0$ and $\tilde q = \tilde q_r = \tilde{Q}$, the element itself in the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ of the modulus–unit article, with $r = \sqrt{\langle\tilde Q\rangle_{\natural}}$ and $\tilde u_{\mathrm r} = \tilde{Q}/r$; the second factor is trivial. In this limit the two named pairings are two readings of the same two-factor word of the modulus–unit article: the quaternion pairing gives the word itself, with its second factor trivial, and the Hamilton pairing gives the exponential form of its unit factor.</p>
-<p><strong>A complex scalar.</strong> If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar regime of <em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Scalar Regime</em>: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives</p>
+<p><strong>A complex scalar.</strong> If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar regime of <em>Eigenbasis of a Biquaternion</em>, §<em>The Scalar Regime</em>: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives</p>
 <p>$$
 \tilde q_r = (\operatorname{Re}z)e_t, \qquad \tilde q_i = (\operatorname{Im}z)e_t, \qquad \tan\tilde\Psi = \frac{\operatorname{Im}z}{\operatorname{Re}z}\,e_t, \qquad \tilde q = \frac{\operatorname{Re}z}{\cos\tilde\Psi}\,e_t = |z|\,e_t ,
 $$</p>
@@ -743,7 +745,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="eigenvalue-decomposition-of-a-biquaternion.html">Eigenvalue Decomposition of a Biquaternion</a>, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.</li>
+<li><a href="eigenbasis-of-a-biquaternion.html">Eigenbasis of a Biquaternion</a>, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.</li>
 <li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential and the logarithm of which the second factor of the pairing is built, and which carry the branch ambiguity of the construction.</li>
 <li><a href="exponential-polar-decomposition-of-biquaternions.html">Exponential Polar Decomposition of Biquaternions</a>, for the four exponentials and the existence and uniqueness of the word that the pairing regroups.</li>
 <li><a href="modulus-unit-polar-decomposition-of-biquaternions.html">Modulus–Unit Polar Decomposition of Biquaternions</a>, for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and §<em>The Algorithm</em> of that article for the procedure itself, the factors in the coordinates of $\tilde{Q}$ and the exponents with their positions.</li>

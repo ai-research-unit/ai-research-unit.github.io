@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -152,7 +155,7 @@ and is continuous on its closure.</p>
 <li>
 <p>On the boundary of the strip,
 $$
-F_{\tilde Q_1\tilde Q_2}(t' + i\beta) = F_{\tilde Q_2\tilde Q_1}(-t'),
+\boxed{\;F_{\tilde Q_1\tilde Q_2}(t' + i\beta) = F_{\tilde Q_2\tilde Q_1}(-t')\;},
 $$</p>
 </li>
 </ol>
@@ -162,7 +165,7 @@ $$</p>
 <p><strong>First, the imaginary time is intrinsic.</strong> The time coordinate of $\mathbb{M}_-$ is $ict'$, which is imaginary by construction. The shift $t' \to t' + i\beta$ moves the real parameter $t'$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $ict'$ of the material sector; the real part of the complexified time is spanned by the coefficient $ct$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the <strong>sum</strong> of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.</p>
 <p><strong>Second, the complexified time direction has a natural algebraic realization.</strong> The complexification of $\mathbb{M}_-$ as a real subspace of $\mathbb{B}$ is $\mathbb{B}$ itself:</p>
 <p>$$
-\mathbb{M}_- \oplus i\,\mathbb{M}_- = \mathbb{M}_- \oplus \mathbb{M}_+ = \mathbb{B}.
+\boxed{\;\mathbb{M}_- \oplus i\,\mathbb{M}_- = \mathbb{M}_- \oplus \mathbb{M}_+ = \mathbb{B}\;}.
 $$</p>
 <p>The complexified time direction of $\mathbb{M}_-$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $ict'$ of $\mathbb{M}_-$ and the real time coefficient $ct$ of $\mathbb{M}_+$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.</p>
 <p><strong>Third, the modular Hamiltonian lives in $\mathbb{M}_+$.</strong> In the algebraic formulation of the KMS condition, the modular Hamiltonian $K = -\log \Delta$ (where $\Delta$ is the modular operator) generates the modular evolution. In a finite-dimensional setting, $\Delta$ is the density matrix $\rho$, and $K = -\log \rho$. The density matrix is a positive Hermitian element of the algebra, so $K = -\log \rho$ is a <strong>Hermitian element</strong> of the algebra, and therefore lies in the Hermitian subspace $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. The interpretive content is that the modular Hamiltonian, being a Hermitian element, is naturally an object of the informational sector: temperature, modular evolution, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields.</p>

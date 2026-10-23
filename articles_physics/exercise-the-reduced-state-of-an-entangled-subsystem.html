@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -163,7 +166,7 @@ $$</p>
 $$</p>
 <h3 id="step-4-the-result_1">Step 4: The result</h3>
 <p>$$
-\tilde{Ϛ}_1 = \frac{1}{2}e_t.
+\boxed{\;\tilde{Ϛ}_1 = \frac{1}{2}e_t\;}.
 $$</p>
 <p>This is the maximally mixed state of a qubit, expressed in biquaternion form. Its purity and von Neumann entropy are</p>
 <p>$$

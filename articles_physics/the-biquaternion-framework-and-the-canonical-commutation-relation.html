@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -92,15 +95,10 @@ The second is the Weyl form, and it is the version that avoids the domain proble
 <p>There is a finite criterion hiding in the same place, and it must not be confused with the carrier question. The positivity of the transform of a measure — the Bochner question — is decided at <strong>finitely many frequencies</strong> and is therefore a finite statement, whereas the carrier of a <strong>continuous</strong> transform is a function space and is infinite-dimensional. A finite criterion does not require a finite carrier. This is why the framework's positivity structure is untouched by the representation question, and why that question is a question about space rather than about probability.</p>
 <h2 id="the-trace-obstruction-in-the-framework">The Trace Obstruction in the Framework</h2>
 <p>In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word <em>independent</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$, $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
-$$
-\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad \mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
-$$
-so that $\mathbb{M}_+$ is the set of Hermitian elements, $\mathbb{M}_-$ the set of anti-Hermitian ones, and $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$.</p>
 <p><strong>Theorem.</strong> There are no $\tilde H_1,\tilde H_2\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde H_1,\tilde H_2]=\lambda\,i\,e_t$.</p>
 <p><strong>Proof.</strong> Write $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$ with $h_{1t},h_{2t}\in\mathbb{R}$ and $\vec h_1,\vec h_2\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde H_1\tilde H_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$; the cross terms contribute the symmetric $\vec h_1\cdot\vec h_2$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde H_1$ and $\tilde H_2$ exchanged gives the identical scalar part, so
 $$
-\mathrm{Sc}\bigl([\tilde H_1,\tilde H_2]\bigr)=0 .
+\boxed{\;\mathrm{Sc}\bigl([\tilde H_1,\tilde H_2]\bigr)=0\;}.
 $$
 The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.</p>
 <p><strong>The general statement.</strong> The Hermitian hypothesis is unnecessary. For <strong>any</strong> $\tilde Q_1,\tilde{Q}_2\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_1\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_2\tilde Q_1)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the <em>reading</em>: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the <strong>absence of a scalar part</strong>, equivalently the vanishing of the trace.</p>
@@ -135,7 +133,7 @@ the bracket of internal rotations, verified on the matrix model. The algebra the
 <p>A finite carrier does carry a commutation relation with a phase in place of the scalar, and it is important to say what that relation is and is not.</p>
 <p><strong>The pair.</strong> On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=\exp(2\pi i/N)$ and let $Z|k\rangle_{*}=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
 $$
-XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX .
+\boxed{\;XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX\;}.
 $$
 The commutator is an <strong>operator</strong>, not a scalar: this is the Weyl (clock-and-shift) pair, and it is the finite model of the canonical relation in which the scalar $i\hbar$ is replaced by the root-of-unity phase $\omega-1$. At $N=2$ it sits inside the framework: with $\mathsf{M}_2(i\vec e_z)=\sigma_3$ and $\mathsf{M}_2(i\vec e_x)=\sigma_1$ one has $XZ=-ZX$ and $[X,Z]=-2\,\vec e_y$, an element of the vector part with no scalar part.</p>
 <p><strong>What it is not.</strong> The finite pair does not satisfy the canonical relation and does not approach it in norm: the spectrum of the clock lies on the unit circle and stays of modulus one for every $N$, so no strong limit to an unbounded position exists without a rescaling that the algebra does not supply. The passage from the pair to the relation is a deformation, not a limit in the topology of the algebra. The finite pair is therefore not evidence that the framework nearly satisfies the relation; it is a <strong>different relation</strong>, available on a finite carrier, with a phase in place of the scalar.</p>

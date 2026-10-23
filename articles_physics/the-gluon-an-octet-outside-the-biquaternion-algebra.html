@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -188,7 +191,7 @@ $$
 $$
 the compact real form of the complex algebra $\mathrm{GL}(2,\mathbb{C})$, whose Cartan decomposition is $\mathrm{GL}(2,\mathbb{C})=\mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ with both factors of real dimension four. The colour algebra is compact of dimension eight,
 $$
-\dim_\mathbb{R}\mathrm{SU}(3)=8 ,
+\boxed{\;\dim_\mathbb{R}\mathrm{SU}(3)=8\;},
 $$
 and a compact Lie algebra of dimension eight cannot embed in a compact Lie algebra of dimension four. The same count is visible in the group: the compact group the algebra's gauge structure generates is $\mathrm{U}(2)$, of real dimension four, and $SU(3)$ has real dimension eight. The number eight that suggests an embedding is the real dimension of $\mathbb{B}$, not the dimension of its compact part; the compact part is half the algebra, and the half is $\mathrm{U}(2)$.</p>
 <p>It is worth stating why the estimate "eight equals eight, so try to embed" fails even before the modules are examined. A gauge algebra is realized as a subalgebra of $\mathbb{B}$ under the commutator, so an eight-dimensional one would be all of $\mathbb{B}$; but $\mathbb{B}\cong\mathrm{GL}(2,\mathbb{C})$ is not a compact algebra, its maximal compact subalgebra being the four-dimensional $\mathrm{U}(2)$, and a gauge algebra must be compact, because a non-compact gauge direction generates negative-norm states. Every compact subalgebra lies in a maximal compact one, so the compact subalgebras of $\mathbb{B}$ have real dimension at most four, while $\dim_\mathbb{R}\mathrm{SU}(3)=8$. The coincidence of the two numbers eight is the real dimension of $\mathbb{B}$, which is not the size of its compact part. The algebra's gauge group is therefore $\mathrm{U}(2)$, the electroweak factor and not the colour factor.</p>
@@ -202,7 +205,7 @@ $$
 $$
 which was verified in the defining representation. The anticommutator is therefore central, proportional to the trace rather than to a generator, and the traceless symmetric invariant of the compact factor — the analogue of the colour tensor — vanishes,
 $$
-d^{abc}=0 .
+\boxed{\;d^{abc}=0\;}.
 $$
 $SU(3)$, by contrast, has a nonzero totally symmetric invariant, the tensor $d^{abc}$ whose independent components were listed above, and it is part of the group's invariant data. A framework whose invariant tensors are exhausted by the antisymmetric $\varepsilon$ supplies the three-gluon and four-gluon vertices in form — they are built from $f$ alone — but not the full invariant tensor algebra of the colour group. The symmetric tensor would have to be imported along with the group.</p>
 <h3 id="the-octonion-route-and-the-price-of-non-associativity">The Octonion Route and the Price of Non-Associativity</h3>
@@ -234,7 +237,7 @@ an identity verified in the standard realization of $\mathbb{O}$, so a nonvanish
 <h2 id="the-enlarged-carrier-and-the-price-of-embedding">The Enlarged Carrier and the Price of Embedding</h2>
 <p>The octet can always be embedded if the carrier is enlarged. The algebra of $2\times2$ matrices over $\mathbb{B}$ is
 $$
-M_2(\mathbb{B})\cong \mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C}),
+\boxed{\;M_2(\mathbb{B})\cong \mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C})\;},
 $$
 and the unitary group of $\mathbb{C}^4$ contains $\mathrm{U}(3)$ and hence $SU(3)$ as a block-diagonal subgroup,
 $$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -128,7 +131,7 @@ $$</p>
 $$</p>
 <p>with $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $\tilde\Pi_1,\tilde\Pi_2$ the primitive orthogonal idempotents: $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$. Therefore</p>
 <p>$$
-l = \sqrt2\,i\,\tilde\Pi_1, \qquad n = \sqrt2\,i\,\tilde\Pi_2, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y .
+\boxed{\;l = \sqrt2\,i\,\tilde\Pi_1, \qquad n = \sqrt2\,i\,\tilde\Pi_2, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y\;}.
 \tag{4}
 $$</p>
 <p>The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.</p>
@@ -154,7 +157,7 @@ $$</p>
 $$</p>
 <p>and, writing $l_\mu,n_\mu,m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the metric is</p>
 <p>$$
-g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu .
+\boxed{\;g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu\;}.
 \tag{7}
 $$</p>
 <p>Substituting (2), the right-hand side of (7) evaluates to $\mathrm{diag}(-1,+1,+1,+1)$: the four zero divisors reproduce the material-sector metric, with the correct signature, and no other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.</p>
@@ -229,7 +232,7 @@ l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto \exp(i\theta)m, \qqua
 $$</p>
 <p>which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $\iota\mapsto A^{-1/2}\exp(-i\theta/2)\iota$. Substituting (11) into (9), each scalar picks up a monomial:</p>
 <p>$$
-\Psi_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\Psi_k, \qquad k=0,\dots,4 .
+\boxed{\;\Psi_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\Psi_k, \qquad k=0,\dots,4\;}.
 \tag{12}
 $$</p>
 <p>The exponent $2-k$ is the <strong>boost weight</strong> of $\Psi_k$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.</p>

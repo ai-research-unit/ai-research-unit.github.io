@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The twisted two-sided operator $\Theta_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1\tilde Q_5^{\natural}$ is an automorphism of the general quaternionic bilinear form exactly when $\langle\tilde Q_5\rangle_{\natural}=\pm1$, and it is multiplicative in the parameter, $\Theta_{\tilde Q_5}\Theta_{\tilde Q_2}=\Theta_{\tilde Q_5\tilde Q_2}$. The set of parameters with $N=\pm1$ is therefore a group that acts on the algebra by automorphisms through $\Theta$, and the assignment is two-to-one; this article reads the group, its two constituents, the versors and the sandwich they carry on the vector subspace, and the reflections of that subspace.</p>
 <p>The two constituents are the <strong>pin group</strong> $\mathrm{Pin}=\{\tilde Q_5\in\mathbb{B}^\times:\langle\tilde Q_5\rangle_{\natural}=\pm1\}$ and the <strong>spin group</strong> $\mathrm{Spin}=\{\tilde Q_5\in\mathbb{B}^\times:\langle\tilde Q_5\rangle_{\natural}=1\}$, the latter of index two. The twisted operator is <em>Two-Sided Operators on the General Quaternionic Algebra</em>; the one-sided factors are <em>One-Sided Operators on the General Quaternionic Algebra</em>; the form and its orthogonal group are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>; the unit group into which both groups sit is <em>The Biquaternion Unit Group as a Topological Group</em>; the general Clifford theory of the pin and spin groups is <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, of which this is the biquaternion instance; and the vector subspace and the reflection are <em>Introduction to the Remarkable Subspaces</em> and <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q_5=\sum_\mu A_\mu e_\mu$, and is written $\tilde Q_5=A_te_t+\vec A$ with the vector part $\vec A=\sum_{k=1}^{3}A_k\vec e_k$. The natural conjugation is $\tilde Q_5^{\natural}=A_te_t-\vec A$; it is $\mathbb{C}$-linear, an involution, and the sign character of the algebra, since it fixes the centre and negates the vector subspace. The norm is $\langle\tilde Q_5\rangle_{\natural}=\tilde Q_5\tilde Q_5^{\natural}=\sum_\mu A_\mu^2$, central and multiplicative, and the general quaternionic bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, so that $\langle\tilde Q_5\rangle_{\natural}=\langle\tilde Q_5,\tilde Q_5\rangle_{\natural}$. The vector subspace is $V=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, of complex dimension $3$, and the reflection in it is $\rho_{\tilde{Q}_4}(\tilde W)=\tilde W-2\langle\tilde W,\tilde{Q}_4\rangle_{\natural}\langle\tilde{Q}_4\rangle_{\natural}^{-1}\tilde{Q}_4$ for $\tilde{Q}_4\in V$ with $\langle\tilde{Q}_4\rangle_{\natural}\neq0$.</p>
 <h2 id="the-two-groups">The Two Groups</h2>
 <p><strong>Definition.</strong> The <strong>pin group</strong> and the <strong>spin group</strong> of the general quaternionic bilinear form are</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -73,7 +76,6 @@ P_{K}=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq
 $$</p>
 <p>a cone whose boundary is the Krein null set; on the <strong>operators</strong> there is the $J$-positive cone of the general theory, $\{T=T^{\dagger}:\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$, of which the fundamental symmetry $J$ is a member. The first contains the Hermitian cone of the dagger as its future nappe on the Hermitian subspace; the second is the image of the Hilbert positive cone under $J$, a cone of a different kind, which contains $J$ itself and not the identity.</p>
 <p>The general theory is <em>Krein Algebras</em>, <em>J-Self-Adjoint and J-Unitary Operators</em> and <em>Self-Adjoint Elements and the Positive Cone</em>; the symmetry is <em>The Fundamental Symmetry of the Biquaternion Algebra</em>; the form is <em>The Krein Gram Matrix and the Restrictions of the Form</em>; the $J$-operators are <em>J-Self-Adjoint and J-Unitary Operators</em>; and the definite cone, the Cartan involution and the polar decomposition that this article reads indefinitely are <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
-<p><strong>Conventions.</strong> As throughout: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_\mu Q_\mu^{*}Q'_\mu$, $J={}^{\natural}$, and the orthogonal decomposition is the fundamental one, $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$, of <em>The Fundamental Symmetry of the Biquaternion Algebra</em>.</p>
 <h2 id="the-krein-cone-of-the-algebra">The Krein Cone of the Algebra</h2>
 <p><strong>Theorem (the cone in the fundamental decomposition).</strong> Write $\tilde{Q}=c+v$ with $c\in\mathbb{C}_{\mathbb{B}}$, $v\in\mathbb{V}_{\mathbb{B}}$. Then</p>
 <p>$$
@@ -101,7 +103,7 @@ $$</p>
 <p><strong>Corollary (the Hermitian cone is inside the Krein cone).</strong> $P\subseteq P_{K}$, and the Krein cone is the union of $P$, its negative $-P$ and the Krein null set inside $\mathbb{M}_{+}$.</p>
 <p><strong>Proof.</strong> The nappe inclusion from the theorem; the remaining nappe is $-P$ because negating an element of $\mathbb{M}_{+}$ negates the scalar part and leaves the vector part, which is the other nappe.</p>
 <p><strong>Remark.</strong> The symmetric difference is genuine: an element of $\mathbb{M}_{+}$ with $q_t^{2}>\sum_kq'^{2}_k$ but $q_t<0$ lies in the Krein cone and not in the Hermitian cone, while an element of the vector subspace with the same square does not lie in either. The two cones are therefore different objects, and the second is not a nappe criterion for the first.</p>
-<h2 id="the-math55-positive-cone-of-the-operators">The $J$-Positive Cone of the Operators</h2>
+<h2 id="the-math47-positive-cone-of-the-operators">The $J$-Positive Cone of the Operators</h2>
 <p><strong>Definition.</strong> The <strong>$J$-positive cone</strong> is</p>
 <p>$$
 \mathcal{P}_{J}=\{T:\mathbb{B}\to\mathbb{B}\ \mathbb{C}\text{-linear}:T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\ \forall\tilde{Q}\}.
@@ -116,7 +118,7 @@ $$</p>
 <p><strong>Proof.</strong> The first is the positivity of the fundamental symmetry; the spectrum is the theorem of <em>The Fundamental Symmetry of the Biquaternion Algebra</em>.</p>
 <p><strong>Theorem ($J$-projections and the extreme rays).</strong> An idempotent $P$ is $J$-self-adjoint, $P^{\dagger}=P$, if and only if it is the Krein-orthogonal projection onto its range along the Krein-orthogonal complement of that range; equivalently, if and only if $\ker P=(\mathrm{ran}\,P)^{\perp_{K}}$, and the range is then non-degenerate. The definite-orthogonal projections commuting with $J$ — among them the spectral projections $\pi_{1,2}=\tfrac12(\mathrm{id}\pm J)$ of $J$ — are the special case in which the range is definite and definite-orthogonal to its complement; $\pi_x$ is the Krein-orthogonal projection onto the centre and is $J$-positive, while $\pi_y$ is the Krein-orthogonal projection onto the vector subspace and is $J$-negative. The extreme rays of $\mathcal{P}_{J}$ are the rank-one $J$-projections $J\,|\tilde{Q}\rangle\langle\tilde{Q}|$ with $\|\tilde{Q}\|_E=1$.</p>
 <p><strong>Proof.</strong> If $P^{\dagger}=P$ and $P^{2}=P$ then $\langle\tilde{S},P\tilde Q_3\rangle_{\natural*}=\langle P\tilde{S},\tilde Q_3\rangle_{\natural*}$; for $\tilde Q_3\in\ker P$ this gives $\langle\tilde{S}',\tilde Q_3\rangle_{\natural*}=0$ for every $\tilde{S}'$ in the range, so $\ker P\subseteq(\mathrm{ran}\,P)^{\perp_{K}}$, and the two sides have the same dimension $\dim\mathbb{B}-\dim\mathrm{ran}\,P$ because the form is non-degenerate, whence equality. Conversely, for the projection $P$ onto a non-degenerate $\mathbb{W}$ along $\mathbb{W}^{\perp_{K}}$, write $\tilde Q_3=\tilde{W}+\tilde Q_4$ and $\tilde{S}=\tilde{W}'+\tilde Q_4'$ with $\tilde{W},\tilde{W}'\in\mathbb{W}$ and $\tilde Q_4,\tilde Q_4'\in\mathbb{W}^{\perp_{K}}$: then $\langle\tilde{S},P\tilde Q_3\rangle_{\natural*}=\langle\tilde{W}',\tilde{W}\rangle_{\natural*}=\langle P\tilde{S},\tilde Q_3\rangle_{\natural*}$, so $P^{\dagger}=P$. The $J$-commuting definite-orthogonal case is the special one, not the general one: the Krein-orthogonal projection onto the positive line $\mathbb{C}(e_t+\tfrac12 \vec e_x)$ is $J$-self-adjoint, is not self-adjoint for $\langle\cdot,\cdot\rangle_{*}$, and does not commute with $J$. For the sign, $\pi_x=J\cdot\pi_x$ with $\pi_x\geq0$ for $\langle\cdot,\cdot\rangle_{*}$, so $\pi_x\in\mathcal{P}_{J}$; while $\pi_y=J\cdot(-\pi_y)$ with $-\pi_y\leq0$, so $\pi_y\notin\mathcal{P}_{J}$ and $-\pi_y\in\mathcal{P}_{J}$. Since $\mathcal{P}_{J}=J\cdot\{S\geq0\}$ and the extreme rays of $\{S\geq0\}$ are the rank-one positive operators $|\tilde{Q}\rangle\langle\tilde{Q}|$, the extreme rays of $\mathcal{P}_{J}$ are their images, which are the rank-one $J$-projections.</p>
-<h2 id="the-cartan-involution-and-the-math134-unitary-group">The Cartan Involution and the $J$-Unitary Group</h2>
+<h2 id="the-cartan-involution-and-the-math126-unitary-group">The Cartan Involution and the $J$-Unitary Group</h2>
 <p><strong>Theorem (the $J$-adjoint involution).</strong> On the invertible operators the map</p>
 <p>$$
 \theta_{J}(T)=\bigl(T^{\dagger}\bigr)^{-1}

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -74,12 +77,6 @@ $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)
 pairing and develops the two objects the article title names: the <strong>radical</strong>, which is the set of elements
 annihilated by the whole algebra on both sides, and the <strong>isotropic elements</strong>, the elements whose square
 vanishes. It then records the derived objects the collapse produces — the derived law and the ternary law — and identifies the isotropic elements with the zero divisors of the parent plain algebra.</p>
-<p><strong>Placement.</strong> The article is the first entry of the <em>Specific Theory</em> section of the block, the section that carries the block's own structural theory, and it is followed by <em>The Specificities of the Symmetric Quaternionic Algebra</em>. It assumes the operation and its formula from <em>Introduction to the Symmetric Quaternionic Algebra</em>, the centrality from <em>The Symmetrised Quaternionic Product and the Hermitian Subspace</em>, the norm, its polarisation and its isotropic cone from <em>Norm and Invertibility in the General Quaternionic Algebra</em> and <em>Zero Divisors of the Biquaternion Algebra</em>; the idempotents, the nilpotents and the zero-divisor set of the block are the Common Theory slots <em>Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, <em>Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> and <em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, cited here and not restated. The remarkable subspaces are treated in the companion article <em>Remarkable Subspaces under the Symmetric Quaternionic Algebra</em>, and the form reader is <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>.</p>
-<p><strong>Conventions.</strong> The operation is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$,
-equal to $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the coefficient $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ is the
-quaternion form, and $\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ is its diagonal; the quaternionic
-bracket is $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
-$i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of <em>Introduction to the Remarkable Subspaces</em>.</p>
 <h2 id="the-product-as-a-pairing-with-values-in-the-centre">The Product as a Pairing with Values in the Centre</h2>
 <p>Because the operation is $\mathbb{C}$-bilinear, it is the same thing as a family of linear maps, and because
 its value is central it is the same thing as a bilinear form.</p>

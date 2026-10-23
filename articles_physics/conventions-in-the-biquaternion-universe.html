@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -98,7 +101,7 @@ $$</p>
 <p>The split is also a split of <strong>roles</strong>, and the two roles belong to the two <strong>factors</strong> of the tensor product and cannot be exchanged. The central unit $i$ is the scalar imaginary: it is what enters the phase $\exp(iS/\hbar)$, and it multiplies a whole element from inside the centre. The three units $\vec e_x,\vec e_y,\vec e_z$ are the vector directions: they are the relativistic and rotational structure, and they enter through the quaternion factor. A central scalar and a vector direction are different kinds of object — one commutes with everything, the other rotates — so no product of the four general products may read $i$ through the quaternion direction or a unit through the scalar one. The mirror statement, that the two conjugations act on the two factors separately, is the subject of <em>The Four General Products: Composition, Probability, Causality, Gauge</em>.</p>
 <p>As a complex algebra $\mathbb{B}$ is isomorphic to the full matrix algebra,</p>
 <p>$$
-\mathbb{B} \cong M_2(\mathbb{C}),
+\boxed{\;\mathbb{B} \cong M_2(\mathbb{C})\;},
 $$</p>
 <p>and this identification is used constantly. It is fixed by a single isomorphism, written $\mathsf{M}_2$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in §<em>The 2×2 Matrix Representation</em> below, and the development of the representation — the general element, the remarkable subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article <em>The Element and Operator Representations</em>. Its two <strong>minimal left ideals</strong> are the algebra's two chiralities; the spinor module and the mass term a field equation builds on that structure are the subject of <em>The Dirac Equation in Biquaternionic Form</em>.</p>
 <h2 id="the-base-and-its-units">The Base and Its Units</h2>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -203,7 +206,7 @@ $$</p>
 <h3 id="the-hermitian-matrices">The Hermitian Matrices</h3>
 <p>Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\varsigma$ the complex conjugation. The Hermitian elements are the Hermitian matrices, and $J(A)$ is the formally real Jordan algebra of <em>The Hermitian Jordan Algebra</em>, §<em>The Complex Matrices</em>. A Hermitian matrix $h$ has the spectral resolution $h=\sum_{i}\lambda_{i}P_{i}$ with real eigenvalues and orthogonal projections $P_{i}$; the resolution is the classical spectral theorem. The idempotents are Hermitian, pairwise orthogonal and sum to the identity. The Peirce corners $P_{i}AP_{j}$ are the blocks between the eigenspaces; the diagonal corners are the endomorphism algebras of the eigenspaces, and the off-diagonal corners are the maps between them. The trace form is $\tau(xy)$, real on the Hermitian part.</p>
 <h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
-<p>Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star involution. The Hermitian elements form the Jordan algebra $J(\mathbb{B})\cong H_{2}(\mathbb{C})$ of degree two over $\mathbb{R}$, with the two Hermitian idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ as a complete orthogonal family. A Hermitian biquaternion $\tilde Q$ is normal and has the two real eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$, with the two Hermitian eigenprojectors of the real root $\vec\Xi=-i\vec u$; this is the spectral theorem of <em>Biquaternion Spectral Theory</em>, §<em>The Spectral Theorem</em>, and the eigenvalue decomposition of <em>Eigenvalue Decomposition of a Biquaternion</em>, §<em>The Hermitian Case</em>. The pair is the Hermitian pair of the root, and the resolution is the Peirce decomposition relative to it.</p>
+<p>Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star involution. The Hermitian elements form the Jordan algebra $J(\mathbb{B})\cong H_{2}(\mathbb{C})$ of degree two over $\mathbb{R}$, with the two Hermitian idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ as a complete orthogonal family. A Hermitian biquaternion $\tilde Q$ is normal and has the two real eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$, with the two Hermitian eigenprojectors of the real root $\vec\Xi=-i\vec u$; this is the spectral theorem of <em>Biquaternion Spectral Theory</em>, §<em>The Spectral Theorem</em>, and the eigenvalue decomposition of <em>Eigenbasis of a Biquaternion</em>, §<em>The Hermitian Case</em>. The pair is the Hermitian pair of the root, and the resolution is the Peirce decomposition relative to it.</p>
 <h3 id="the-complex-field">The Complex Field</h3>
 <p>Let $A=\mathbb{C}$ with the conjugation, $F_{0}=\mathbb{R}$. The Hermitian elements are the real numbers, $J(A)=\mathbb{R}$ with the ordinary product, and the Hermitian spectral resolution of a real number $\lambda$ is the one-term resolution $\lambda=\lambda\cdot1$. The example is the smallest in which the fixed field is a proper subfield of $F$ and the Hermitian part is a proper real form of $A$.</p>
 <h3 id="the-quaternions">The Quaternions</h3>

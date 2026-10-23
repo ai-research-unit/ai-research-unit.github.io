@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -164,7 +167,7 @@ $$</p>
 <h3 id="the-equivalent-constraint-form">The equivalent constraint form</h3>
 <p>For the free field the antisymmetrized equation is equivalent to the pair of equations</p>
 <p>$$
-(i\not\partial-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0 ,
+\boxed{\;(i\not\partial-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0\;},
 $$</p>
 <p>in the following sense. If each component satisfies the Dirac equation, if the trace constraint holds and if the divergence constraint $\partial^\mu\psi_\mu=0$ holds, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the component Dirac equations and the trace, and in the massive case the divergence as well. The reduction is standard for the free theory, and it is the form adapted to the algebra, because the Dirac equation on a biquaternion component is exactly the biquaternionic Dirac equation of the companion article, and the trace constraint is an algebraic condition on the index contraction. In the rest frame the two descriptions have the same four-dimensional solution space, and the explicit computation below verifies this.</p>
 <p>The biquaternion trace constraint is the vanishing of the contraction of the vector index with the basis units,</p>
@@ -186,8 +189,8 @@ $$</p>
 $$</p>
 <p>so the trace constraint reads, in its two chiral halves,</p>
 <p>$$
-\psi_0 = 0 \quad\text{(upper)}, \qquad
--\boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(lower)} .
+\boxed{\;\psi_0 = 0 \quad\text{(upper)}, \qquad
+-\boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(lower)}\;}.
 $$</p>
 <p>The lower equation gives $\boldsymbol{\sigma}\cdot\vec\chi=0$; the upper gives $\psi_0 = 0$. The trace constraint therefore forces the time component to vanish <strong>and</strong> imposes the single vector condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the three spatial amplitudes. The combined system of the Dirac equation on all four components and the trace constraint has nullity four, the constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ has nullity four, and the two solution spaces coincide.</p>
 <h3 id="the-spin-one-half-content-and-its-removal">The spin-one-half content and its removal</h3>
@@ -202,7 +205,7 @@ $$</p>
 <h2 id="the-spin-three-halves-projector">The Spin-Three-Halves Projector</h2>
 <p>The constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ defines a subspace of the six-dimensional space of spatial amplitudes — three vector directions, two spinor components each — and the projector onto it is elementary. Define, on the vector index,</p>
 <p>$$
-P_{ij} = \delta_{ij} - \tfrac13\,\sigma_i\sigma_j .
+\boxed{\;P_{ij} = \delta_{ij} - \tfrac13\,\sigma_i\sigma_j\;}.
 $$</p>
 <p>Then $P$ is idempotent,</p>
 <p>$$

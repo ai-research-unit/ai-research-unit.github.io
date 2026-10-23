@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -93,7 +96,7 @@ P_L = \tfrac12\left(I_4 - \gamma_5\right), \qquad P_R = \tfrac12\left(I_4 + \gam
 $$</p>
 <p>Explicitly $P_L = \left(\begin{smallmatrix}I_2&0\\0&0\end{smallmatrix}\right)$ and $P_R = \left(\begin{smallmatrix}0&0\\0&I_2\end{smallmatrix}\right)$. The projector algebra is immediate:</p>
 <p>$$
-P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L + P_R = I_4,
+\boxed{\;P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L + P_R = I_4\;},
 $$</p>
 <p>and additionally $\gamma_5 = P_R - P_L$, $\operatorname{Tr}P_L = \operatorname{Tr}P_R = 2$, so each projector has rank two. All identities hold to machine accuracy (residual $<10^{-15}$).</p>
 <p>Their action on a Dirac spinor is the projection onto each half:</p>
@@ -193,12 +196,12 @@ $$</p>
 $$</p>
 <p><strong>Invariance.</strong> Let $g\in SL(2,\mathbb{C})$ and write $g = \left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$ with $ad-bc = 1$. Then</p>
 <p>$$
-g^{T}\epsilon\,g
+\boxed{\;g^{T}\epsilon\,g
 = \begin{pmatrix}a&c\\ b&d\end{pmatrix}
 \begin{pmatrix}0&1\\-1&0\end{pmatrix}
 \begin{pmatrix}a&b\\ c&d\end{pmatrix}
 = \begin{pmatrix}0&ad-bc\\ -(ad-bc)&0\end{pmatrix}
-= (\det g)\,\epsilon = \epsilon .
+= (\det g)\,\epsilon = \epsilon\;}.
 $$</p>
 <p>Therefore $\varepsilon(g\psi,g\phi) = \psi^{T}g^{T}\epsilon g\,\phi = \varepsilon(\psi,\phi)$: the form is invariant. The same computation applies to the right-handed action, because $\det\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \overline{\det\mathsf{M}_2(\tilde U_{\mathrm L})} = 1$ (and indeed $\tilde U_{\mathrm L}^{*}\in SL(2,\mathbb{C})$ because $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}} = 1$). So $\varepsilon$ is an invariant bilinear form on each chiral half separately.</p>
 <p><strong>Nondegeneracy and self-duality.</strong> The matrix $\epsilon$ is invertible, so $\varepsilon$ is nondegenerate; equivalently, $\psi = 0$ if $\varepsilon(\psi,\phi) = 0$ for all $\phi$. The map $\psi\mapsto\varepsilon(\psi,\cdot)$ is an isomorphism $S\to S^{*}$ intertwining the two actions, so</p>
@@ -264,7 +267,7 @@ $$</p>
 $$</p>
 <p>while the spinor action $\psi\mapsto\tilde U_{\mathrm L}\psi$ has trivial kernel: $\mathsf{M}_2(-e_t) = -I_2\neq I_2$. Hence</p>
 <p>$$
-SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
+\boxed{\;SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}\;},
 $$</p>
 <p>and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\vec u_{\mathrm r} = \vec u_z$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde u_{\mathrm r}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.</p>
 <h2 id="problem-7-the-spinor-action-and-rotor-conjugation">Problem 7: The Spinor Action and Rotor Conjugation</h2>
@@ -277,10 +280,10 @@ $$</p>
 <p><strong>Composition.</strong> Successive rotors compose by multiplication in both pictures: $\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\psi) = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\psi$ and $\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}V\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*} = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})V(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}$. The difference is only the doubled factor, and hence the cancelling sign, in the four-vector formula.</p>
 <p><strong>The mixed pairing.</strong> Finally, the pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$, with $\psi\mapsto g\psi$ and $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$, is invariant:</p>
 <p>$$
-b\left(g\psi,\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi\right)
+\boxed{\;b\left(g\psi,\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi\right)
 = \psi^{\dagger}g^{\dagger}\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi
 = \psi^{\dagger}g^{\dagger}\,(g^{\dagger})^{-1}\chi
-= \psi^{\dagger}\chi,
+= \psi^{\dagger}\chi\;},
 $$</p>
 <p>because the right-handed matrix is the inverse conjugate transpose, $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = (g^{\dagger})^{-1}$, equivalently $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$, the identity established in Problem 3 for a unit-norm biquaternion. This is the Dirac scalar bilinear (numerical residual $<10^{-12}$).</p>
 <h2 id="limiting-cases">Limiting Cases</h2>

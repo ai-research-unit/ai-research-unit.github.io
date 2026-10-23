@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>A <strong>Hermitian pairing</strong> is a sesquilinear form over a ring with an involution, symmetric or antisymmetric in the appropriate sense; the <strong>signature</strong> is its basic numerical invariant over the reals, and the classification of such pairings up to the addition of hyperbolic forms is the <strong>Witt group</strong>. This article develops the algebra: the $\varepsilon$-Hermitian forms, the Witt group and the signature, the Grothendieck–Witt ring, and the <strong>Wall groups</strong> that arise as the Witt groups of forms over a group ring. It is the algebraic home of the intersection form of <em>Poincaré Duality</em> and of the equivariant form of <em>The Involution on the Homology</em>, and it is the input of the surgery obstruction and of the equivariant signature.</p>
 <p>The vocabulary is needed because the intersection form of a manifold is only the first of a family: the form twisted by a group action, the form over the group ring of the fundamental group, and the $\varepsilon$-quadratic refinements all live in the same framework, and the signature is the universal numerical invariant of the family over the reals. The Wall groups then organise the vanishing of the higher-dimensional forms, and the periodicity of the groups is the algebra behind the dimension-four periodicity of the signature.</p>
 <p><strong>The article assumes</strong> the linear algebra of bilinear and sesquilinear forms over a field or a ring (<em>Bilinear Forms</em>, <em>Linear Spaces</em>), the intersection form and the signature of <em>Poincaré Duality</em>, the group ring and its involution from <em>The Involution as an Operator on the Homology</em>, and the tensor and exterior algebra.</p>
-<p><strong>The boundaries of the article.</strong> The intersection form of a manifold, its signature and the signature theorem are <em>Poincaré Duality</em> and the differential topology of Part III; the equivariant version is <em>Hermitian Pairings and the Equivariant Signature</em>, the next article; the surgery obstruction and the Wall groups as the obstructions of the surgery are <em>Cobordism and Surgery Theory</em>; the analytic index theory of the signature is Part IV. The higher algebraic K-theory and the Hermitian K-theory are named and belong to <em>Higher Algebraic K-Theory</em>, written in Part II of the algebraic topology material. No analysis is used.</p>
 <h2 id="hermitian-and-math2-hermitian-forms">Hermitian and $\varepsilon$-Hermitian Forms</h2>
 <p><strong>Definition.</strong> Let $A$ be a ring with an involution $a\mapsto\bar a$ (an additive map with $\overline{ab} = \bar b\bar a$ and $\bar{\bar a} = a$). A <strong>sesquilinear form</strong> on a left $A$-module $M$ is a biadditive map $\varphi : M\times M\to A$ with $\varphi(ax,by) = a\varphi(x,y)\bar b$; it is <strong>$\varepsilon$-Hermitian</strong> for a central unit $\varepsilon$ with $\bar\varepsilon\varepsilon = 1$ if
 $$

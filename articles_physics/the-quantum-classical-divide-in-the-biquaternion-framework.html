@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -142,7 +145,7 @@ $$</p>
 <p>The conditional probability is therefore <strong>independent of the filter setting</strong> $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_B$ is pure — which makes $\tilde{Ϛ}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-unitary setup itself, not a consequence of this trace formula.</p>
 <p>The distinction in the framework's notation is therefore:</p>
 <p>$$
-\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde{U}_A \otimes \tilde\Pi_B.
+\boxed{\;\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde{U}_A \otimes \tilde\Pi_B\;}.
 $$</p>
 <p>Two idempotents, or one idempotent and one unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.</p>
 <p>This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_t$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the <em>physical content</em>, in the setting of non-separability, of an algebraic distinction that the framework already contains.</p>

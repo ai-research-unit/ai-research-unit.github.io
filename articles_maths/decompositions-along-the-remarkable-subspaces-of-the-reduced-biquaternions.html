@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -81,7 +84,6 @@ $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
 $$
 is of the other kind: it is the product of the two minimal ideals, it is the unique algebra direct-product decomposition, and its two summands are the two simple modules of <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>. The two kinds differ in what is closed: in a grading only the products of the same parity are constrained, while in a direct product each summand is a subalgebra and the mixed products vanish.</p>
-<p><strong>Boundaries.</strong> The subspaces and their characters are <em>Introduction to the Remarkable Subspaces</em>, above this article in this category; the involutions are <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>; the idempotents are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>; and the ideals and the Peirce decomposition are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>. The subspaces at a glance, with the closure of each under the product, are <em>Comparison of the Remarkable Subspaces</em>, below this article. The biquaternion counterparts are <em>Decompositions Along the Remarkable Subspaces</em> of the biquaternion category and <em>The Specificities of the Biquaternion Algebra</em>, §<em>The $\mathbb{Z}_{2}$-Grading</em>.</p>
 <h2 id="the-block-decomposition-along-the-two-involutions">The Block Decomposition Along the Two Involutions</h2>
 <h3 id="the-two-involutions-and-their-common-eigenspaces">The Two Involutions and Their Common Eigenspaces</h3>
 <p><strong>The bar and the tessarine sign commute and are both of square one, so they diagonalise simultaneously, and the common eigenlines are four.</strong></p>

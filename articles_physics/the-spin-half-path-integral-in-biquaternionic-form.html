@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -145,11 +148,11 @@ i\hbar\langle z|\partial/\partial t'|z\rangle
 $$</p>
 <p>Over a closed loop at fixed $\theta = \theta_0$, traversed once counterclockwise,</p>
 <p>$$
-S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle\,dt'
+\boxed{\;S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle\,dt'
 = -\hbar\cdot 2\pi\sin^2\frac{\theta_0}{2}
 = -\hbar\cdot\frac{\Omega}{2},
 \qquad
-\Omega = 2\pi(1-\cos\theta_0).
+\Omega = 2\pi(1-\cos\theta_0)\;}.
 $$</p>
 <p>The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dt'\rangle dt'$ equals $-\Omega/2$ for every value.</p>
 <p>This is the central structural fact of the spin path integral. The "kinetic" term of the action is not a total derivative and is not expressible in terms of the star $\vec u$ alone; it is the phase of the spinor. The path integral does not merely accommodate the geometric phase — it is built from it.</p>
@@ -176,8 +179,8 @@ $$</p>
 $$</p>
 <p>which is $\hbar$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession</p>
 <p>$$
-d\vec r/dt' = \gamma\,\vec r\times\vec B
-= \omega_L\,\vec r\times\vec u_t,
+\boxed{\;d\vec r/dt' = \gamma\,\vec r\times\vec B
+= \omega_L\,\vec r\times\vec u_t\;},
 $$</p>
 <p>the Larmor/Bloch equation for the classical spin, with $|\vec r| = 1$. The classical spin is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.</p>
 <h3 id="the-classical-limit-as-a-phase-space-problem">The Classical Limit as a Phase-Space Problem</h3>
@@ -245,8 +248,8 @@ S[z] = \int_0^T\left(i\hbar\,\langle z|\partial/\partial t'|z\rangle - \langle z
 $$</p>
 <p>with the invariant measure $\frac{2}{\pi}\frac{d^2z}{(1+|z|^2)^2}$ from the resolution of identity. The kinetic term is the <strong>Wess–Zumino term</strong>, and over a closed loop it equals</p>
 <p>$$
-S_{WZ} = -\hbar\cdot\frac{\Omega}{2},
-\qquad \Omega = 2\pi(1-\cos\theta_0),
+\boxed{\;S_{WZ} = -\hbar\cdot\frac{\Omega}{2},
+\qquad \Omega = 2\pi(1-\cos\theta_0)\;},
 $$</p>
 <p>one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.</p>
 <p>The saddle point of $S$ is the classical Larmor precession $d\vec r/dt' = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\bar\psi\psi=1$, related to the coherent-state form by $\zeta = \psi_2/\psi_1$.</p>

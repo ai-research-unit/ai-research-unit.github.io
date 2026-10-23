@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -127,8 +130,8 @@ S\!\left(\sum_x p_x\tilde{Ϛ}_x\right) \;\geq\; \sum_x p_x\,S(\tilde{Ϛ}_x),
 $$</p>
 <p>which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{Ϛ}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,</p>
 <p>$$
-\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
-= H\bigl(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\bigr),
+\boxed{\;\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
+= H\bigl(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\bigr)\;},
 $$</p>
 <p>a function of the biquaternion norm of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.</p>
 <h3 id="the-entropy-of-the-classical-quantum-state">The entropy of the classical-quantum state</h3>
@@ -151,14 +154,14 @@ $$</p>
 <h3 id="bounds">Bounds</h3>
 <p>Because the register entropy is at most $\log|\mathcal{X}|$ and the quantum entropy at most $\log\dim_{\mathbb{C}}S = \log 2$, the Holevo quantity obeys</p>
 <p>$$
-0 \;\leq\; \chi \;\leq\; \min\bigl\{H(X),\ \log 2\bigr\} .
+\boxed{\;0 \;\leq\; \chi \;\leq\; \min\bigl\{H(X),\ \log 2\bigr\}\;}.
 $$</p>
 <p>The lower bound is attained when the average state equals a pure state, so that the ensemble is trivial; the upper bound $\log2$ is the qubit's one-bit ceiling and is attained by an ensemble of two orthogonal pure states with equal weights, as the examples below show. The bound $\chi\leq H(X)$ is the statement that the source index's own entropy limits the information carried, and it is an instance of $I(X:Q)\leq H(X)$.</p>
 <h2 id="the-holevo-bound">The Holevo Bound</h2>
 <h3 id="statement">Statement</h3>
 <p>For every ensemble $\mathcal{E}$ and every measurement $\{\tilde{E}_y\}$,</p>
 <p>$$
-I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x),
+\boxed{\;I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x)\;},
 $$</p>
 <p>and therefore</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article studies <strong>regular</strong> (equivalently <strong>monogenic</strong>) split-quaternion-valued functions, that is, functions annihilated by the split-quaternion <strong>Cauchy–Riemann operator</strong>. The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries an <strong>indefinite</strong> norm of signature $(2,2)$, and this is decisive: the first-order operator has an indefinite principal symbol, the associated second-order operator is an ultrahyperbolic (wave-type) operator rather than a Laplacian, and the algebra has zero divisors whose null cone is the characteristic set on which the Cauchy kernel is singular.</p>
 <p>The article owns the regularity theory of the category: the operator and its conjugate, the system of regularity equations, the failure of ellipticity, the examples, the harmonicity that survives as a wave equation, and the failure of the complex analogy where the zero divisors intervene. It relies on <em>Split-Quaternion Analysis</em> for the differential operators and the Peirce coordinates, on <em>Split-Quaternion Analysis</em> for the subalgebra operators, and on the biquaternion counterpart <em>Biquaternion Regular Functions</em> for the structural comparison. No physics is invoked; the object called a "Dirac operator" in older literature is here the <strong>Cauchy–Riemann operator</strong>, and that name is used throughout.</p>
-<p><strong>Conventions.</strong> Coordinates are $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$. For a function $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ on an open set $\Omega$ in a four-dimensional subspace, the partial derivatives are written $\partial/\partial q_t, \partial/\partial q_x, \partial/\partial q_y, \partial/\partial q_z$.</p>
 <h2 id="the-cauchyriemann-operator-and-its-conjugate">The Cauchy–Riemann Operator and Its Conjugate</h2>
 <p><strong>Definition.</strong> The <strong>Cauchy–Riemann operator</strong> (the split-quaternion gradient) and its <strong>conjugate</strong> are</p>
 <p>$$

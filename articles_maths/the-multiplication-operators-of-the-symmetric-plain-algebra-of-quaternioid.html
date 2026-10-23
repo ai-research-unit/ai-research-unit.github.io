@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ of <em>Introduction to the Symmetric Plain Algebra</em>.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the plain left and right multiplications are $L_{\tilde p}\tilde q=\tilde p\tilde q$ and $R_{\tilde p}\tilde q=\tilde q\tilde p$, the two-sided operator is $M_{\tilde p,\tilde q}\tilde q_4=\tilde p\tilde q_4\tilde q$, the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$, and the derivations of the plain algebra are those of <em>The Multiplication Operators of the General Plain Algebra</em>.</p>
 <h2 id="the-multiplication-operators">The Multiplication Operators</h2>
 <h3 id="the-definition-and-the-two-sided-coincidence">The Definition and the Two-Sided Coincidence</h3>
 <p><strong>Definition.</strong> The <strong>left multiplication operator</strong> of the block is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$; the <strong>right</strong> one is $R^{\bullet}_{\tilde p}\tilde q=\tilde q\bullet\tilde p$.</p>

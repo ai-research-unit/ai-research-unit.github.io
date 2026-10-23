@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -115,7 +118,7 @@ $$
 $$
 The combination
 $$
-\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi ,
+\boxed{\;\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi\;},
 $$
 which is what the connection becomes in the unitary gauge $\chi=0$, is then gauge invariant,
 $$
@@ -123,7 +126,7 @@ $$
 $$
 a cancellation that was checked explicitly on polynomial test fields, and the Stueckelberg Lagrangian is
 $$
-\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural} .
+\boxed{\;\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}\;}.
 $$
 It is invariant under the abelian gauge transformation for any $\Gamma$, because $\tilde F$ and $\tilde A_{\mathrm u}$ are. The symmetry is the original abelian symmetry, not a new one: the Stueckelberg field transforms with the same parameter as the connection, so the gauge group is unchanged and the mass term is now compatible with it.</p>
 <h3 id="the-field-content">The Field Content</h3>
@@ -148,7 +151,7 @@ The mixing is removed by the gauge transformation that the symmetry permits, and
 <h3 id="the-equation-of-motion-and-the-constraint">The Equation of Motion and the Constraint</h3>
 <p>The equation of motion for the vector is
 $$
-\tilde\nabla\tilde F-\mu^2\tilde A_{\mathrm u}=0 ,
+\boxed{\;\tilde\nabla\tilde F-\mu^2\tilde A_{\mathrm u}=0\;},
 $$
 and the equation for the scalar is
 $$

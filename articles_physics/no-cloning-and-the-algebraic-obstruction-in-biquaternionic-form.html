@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -119,10 +122,10 @@ $$</p>
 $$</p>
 <p>Equating the two evaluations gives $\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the <strong>normalised Hermitian form of the idempotents</strong>, read as the trace pairing — the modulus squared of the inner product —</p>
 <p>$$
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
 = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2}
 \qquad\Longrightarrow\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\in\{0,1\}.
+\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\in\{0,1\}\;}.
 $$</p>
 <p>The pairing is $1$ only for $\psi=\phi$ up to phase, and $0$ only for orthogonal states.</p>
 <h3 id="the-obstruction">The obstruction</h3>
@@ -159,7 +162,7 @@ $$</p>
 <h2 id="approximate-cloning">Approximate Cloning</h2>
 <p>The obstruction is absolute for perfect cloning, so the useful question is how well one can do. For the qubit the optimal universal cloner is known: it takes one copy of an arbitrary state and produces two, each with fidelity</p>
 <p>$$
-F = \langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = \frac{5}{6} = 0.8333\ldots ,
+\boxed{\;F = \langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = \frac{5}{6} = 0.8333\ldots\;} ,
 $$</p>
 <p>uniformly in $|\psi\rangle$, and no cloner does better. This is the <strong>Bužek–Hillery bound</strong>, and the machine that attains it is the Bužek–Hillery cloner.</p>
 <h3 id="the-cloner-in-the-frameworks-notation">The cloner in the framework's notation</h3>

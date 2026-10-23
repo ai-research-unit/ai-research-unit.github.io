@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -117,7 +120,7 @@ $$</p>
 $$</p>
 <p>and in the Cartesian coordinates $z_0=(\upsilon+v)/2$, $z_3=(\upsilon-v)/2$, $z_1=(w+p)/2$, $z_2=i(w-p)/2$ this is</p>
 <p>$$
-\left(\frac{\partial\Sigma}{\partial z_0}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_1}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_2}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_3}\right)^2 = 0 ,
+\boxed{\;\left(\frac{\partial\Sigma}{\partial z_0}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_1}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_2}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_3}\right)^2 = 0\;},
 $$</p>
 <p>the <strong>complex eikonal equation</strong> of complexified Minkowski space. The verification of the coordinate change is one line of the chain rule and is confirmed by recomputation in this pass; the rank-one degeneracy is likewise confirmed on random complex matrices. Nothing in the derivation is special to four dimensions at the level of the determinant; what is special is that in the case $\mathbb{B}$ the nonlinear equation is a familiar one.</p>
 <p><strong>Physical interpretation.</strong> That the primary field equation is the eikonal is the programme's distinguishing feature. In the corpus the eikonal appears as the short-wavelength limit of a linear equation (<em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em>); here it is exact and primary, and the linear wave equation is recovered for the <strong>derivatives</strong> of its solution, not for the solution itself, as the next sections show.</p>
@@ -153,7 +156,7 @@ $$</p>
 <p>under which the spinor is covariantly constant, $d\xi=\Omega\xi$. This connection corresponds in the four-vector representation to an affine connection of Weyl–Cartan type, in which the Weyl non-metricity vector and the pseudotrace of the torsion are both expressed through $\Psi$. Exterior differentiation gives the integrability condition $R\xi\equiv(d\Omega-\Omega\wedge\Omega)\xi=0$, with the curvature two-form $R$.</p>
 <p>The curvature is not zero. For a connection of this special form it is $R=(d\Psi-\Psi dZ\Psi)\wedge dZ$, and requiring $R\xi=0$ for the non-trivial spinor forces the <strong>self-dual part of the curvature to vanish</strong>,</p>
 <p>$$
-\vec E + i\vec H = 0 ,
+\boxed{\;\vec E + i\vec H = 0\;},
 $$</p>
 <p>on the solutions of the GSE — a property the source calls <strong>weak (anti)self-duality</strong>. The Bianchi identity then implies the free equations for the two pieces of the curvature: Maxwell's equations for its trace part, the electromagnetic field, and Yang–Mills equations for its trace-free part. In this sense the linear field equations are not postulated; they are the <strong>integrability conditions of the primary nonlinear system</strong>. Because the field is $\mathbb{C}$-valued but self-dual, it reduces to an ordinary real electromagnetic field by the algebraic relations $\Im\vec H=\Re\vec E$ and $\Im\vec E=-\Re\vec H$, which is a recomputation-verified equivalence, so the number of degrees of freedom is that of the real field.</p>
 <p>Two further features are worth recording because they differ from the standard theory. The GSE is not invariant under the ordinary $\mathrm{U}(1)$ gauge transformations $\xi\mapsto \exp(i\alpha)\xi$, $\Psi\mapsto\Psi-i\nabla\ln\alpha$; it has instead a <strong>weak gauge symmetry</strong> in which the parameter depends on the coordinates only through the twistor components of the transformed spinor. And the trace-free gauge field is not independent of the electromagnetic one and the spinor; it is expressible through them, and its real and imaginary parts separately do not obey free Yang–Mills equations, because those are nonlinear.</p>
@@ -279,7 +282,7 @@ $$</p>
 <h2 id="particle-like-solutions-and-the-self-quantized-charge">Particle-Like Solutions and the Self-Quantized Charge</h2>
 <p>The programme's headline claim is that the singular solutions of the GSE have <strong>quantised electric charge</strong>. The mechanism is explicit and rests on the self-duality of the curvature together with the weak gauge invariance of the GSE: the two conditions restrict the admissible charge of the electromagnetic field associated with any GSE solution to</p>
 <p>$$
-ϙ = \frac{N}{4}, \qquad N\in\mathbb{Z},
+\boxed{\;ϙ = \frac{N}{4}, \qquad N\in\mathbb{Z}\;},
 $$</p>
 <p>in the dimensionless units of the programme. The source states that the quantization has both topological and dynamical reasons, the dynamical one being the over-determined structure of the GSE itself, and it points to the general theorem proved in its own later papers.</p>
 <p>The <strong>fundamental static solution</strong> is the one that makes the claim concrete. It is generated by the function</p>
@@ -346,7 +349,7 @@ $$</p>
 $$</p>
 <p>The last step is the programme's only numerical prediction, and it is a single algebraic identity. If the ring radius is fixed by requiring the magnetic moment to take the Dirac value, $|a|=\hbar/2Mc$ and $\mu=qa=e\hbar/2Mc$, then the quadrupole moment is forced to</p>
 <p>$$
-\vartheta = \frac{e\hbar^2}{2M^2c^2} .
+\boxed{\;\vartheta = \frac{e\hbar^2}{2M^2c^2}\;}.
 $$</p>
 <p>The source states this as a conjecture and explicitly calls it speculative, while noting that the possibility of an experimental test could be discussed; the corpus records it in that status. It is placed here because it is the one place in the programme where a free parameter is used up by a known quantity and what remains is a number rather than a structure.</p>
 <p><strong>A worked multiparticle example.</strong> The source's test case for the dynamics uses the fourth-order generating function</p>
@@ -384,11 +387,12 @@ $$</p>
 $$</p>
 <p>and it splits into a modulus-like part and a phase-like part. The modulus part is the real non-negative invariant $S^2 = \sigma\sigma^{*}$. The claim is that this invariant can be written identically as a Minkowski-like interval,</p>
 <p>$$
+\boxed{\;
 S^2 = \sigma\sigma^{*} \equiv T^2 - \lvert\vec X\rvert^2 ,
 \qquad
 T := \vec z\cdot\vec z^{*},
 \qquad
-\vec X := i\,[\vec z\times\vec z^{*}] ,
+\vec X := i\,[\vec z\times\vec z^{*}]\;},
 $$</p>
 <p>where the brackets are the scalar and vector products of complex three-vectors. The quantities $T$ and $\vec X$ are real, and under the $SO(3,\mathbb{C})$ automorphisms they transform as the time and space coordinates of Minkowski space under Lorentz transformations. The identity is an instance of the Lagrange identity relating the modulus of the complex quadratic form to the dot and cross products; it is recomputation-verified on random complex vectors in this pass, together with the reality of $\vec X$. What it gives is exactly what <em>Why Complexify Spacetime?</em> describes as a motivation and not a derivation: an algebraic origin for the Lorentzian signature, here written as an identity between the complex invariant $\sigma\sigma^{*}$ and a Minkowski interval built from the same vector.</p>
 <p>The programme goes further than the signature. Because $\sigma$ also has a <strong>phase</strong>, the modulus identity leaves a phase invariant of the same Lorenz-transformation group, an internal fibre-like variable over the physical macro-geometry. The source suggests, without claiming to have shown it, that this phase is related to universal quantum properties of matter and to interference. The construction is the same induced-geometry mechanism the corpus cites in <em>Curved Spacetime and the Biquaternion Framework</em> and, in that article's language, it is the most complete statement of the mechanism.</p>

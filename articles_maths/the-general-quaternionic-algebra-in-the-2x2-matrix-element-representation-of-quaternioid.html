@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,7 +71,6 @@
         <h1 id="the-general-quaternionic-algebra-in-the-22-matrix-element-representation-math0"><strong>The General Quaternionic Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_t$ to the identity and $\vec e_x,\vec e_y,\vec e_z$ to the negative imaginary multiples of the Pauli matrices (<em>The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, the companion reading of the plain algebra of quaternions). On that image the <strong>quaternionic product</strong> of the block is the matrix product with the conjugate transpose in the first slot, the <strong>quaternionic form</strong> is half the trace pairing with the conjugate transpose in the second slot, and the invariants of the element are the trace and the determinant of its image.</p>
-<p><strong>Conventions.</strong> The embedding is $\mathsf{M}_2(e_t) = \mathbb{1}$ and $\mathsf{M}_2(\vec e_k) = -i\sigma_k$; the conjugate transpose of a matrix is written ${}^{\dagger}$; the quaternionic product is $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$ and the quaternionic form is $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \sum_\mu q_{1\mu} q_{2\mu}$, of signature $(4,0)$.</p>
 <h2 id="the-embedding">The Embedding</h2>
 <p><strong>Definition.</strong> The <strong>matrix element representation</strong> is the map $\mathsf{M}_2 : \mathbb{H} \to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = \mathbb{1}$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ for $k = 1,2,3$. In coordinates, $\mathsf{M}_2(\tilde q) = \begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$ with $\alpha = q_t - iq_3$ and $\beta = -iq_1 - q_y$.</p>
 <p><strong>Theorem.</strong> $\mathsf{M}_2$ is an injective real-algebra homomorphism, $\mathsf{M}_2(\tilde q_1\tilde q_2) = \mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)$, with image the four-dimensional real subspace of matrices of the displayed shape; the plain product is the matrix product, and the conjugation is the conjugate transpose, $\mathsf{M}_2(\tilde q^{\natural}) = \mathsf{M}_2(\tilde q)^{\dagger}$.</p>

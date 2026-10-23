@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,8 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article treats the split-complex numbers as a <strong>linear space</strong>: the underlying real plane, the split complex structure that multiplication by $j$ puts on it, the separation of the real-linear self-maps into those that commute with that structure and those that anticommute with it, the self-reading of $\mathbb{D}$ as a module over the ring $\mathbb{D}$ rather than over a field of scalars, and the idempotent coordinates in which the plane is a pair of real lines. The map $J$, multiplication by $j$, satisfies $J^2=+\mathrm{id}$: it is a <strong>product structure</strong>, an involution with two real eigenspaces, and not a complex structure, which would satisfy $J^2=-\mathrm{id}$ and have no real eigenvector. This one sign is the whole difference from the complex reading and the source of everything that follows in the category.</p>
 <p>The realification of $\mathbb{D}$ as an algebra over $\mathbb{R}$, with the change of scalars organised and the split statements read against the real ones, is <em>The Realification and the Effect of the Change of Scalars on the Split-Complexoid</em>, below this article in this category. The two products on the space are <em>The Two Products of the Split-Complexoid Space</em>; the distinguished subspaces are <em>Split-Complexoid Subspaces</em>, and their decomposition and comparison is <em>Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid</em>. The submodules of the self-reading are the ideals of the ring, owned by <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>. No form and no norm is developed here: the norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$, its multiplicativity and the invertibility it decides are <em>Norm and Invertibility in the General Split-Complex Algebra</em>, and the two forms are <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>, both below this article in this category.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$ and $j^2=+1$; a general element is $Q=q+jq'$, with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, and the conjugate is $\bar Q=q-jq'$. The idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with idempotent coordinates $q_+=q+q'$ and $q_-=q-q'$, and $Q=q_+\Pi_1+q_-\Pi_2$.</p>
-<h2 id="the-vector-space-over-math23">The Vector Space over $\mathbb{R}$</h2>
+<h2 id="the-vector-space-over-math11">The Vector Space over $\mathbb{R}$</h2>
 <p><strong>Definition.</strong> The <strong>real reading</strong> of $\mathbb{D}$ is the underlying additive group with the scalar domain $\mathbb{R}$: the split-complex numbers form a real vector space of dimension two, on the basis</p>
 <p>$$
 1, \quad j, \qquad j^2 = +1 ,
@@ -196,7 +198,7 @@ $$</p>
 </table></div>
 <p>The commuting shape is symmetric with equal diagonal entries, and it is exactly the image of multiplication by the element $p+ju$, the regular matrix of <em>Split-Complex Regular Element Representation</em>; the two classes are the $\mathbb{D}$-linear and the conjugate-linear maps of the plane.</p>
 <p><strong>Remark.</strong> Composing the conjugation $\kappa(Q)=\bar Q$, whose matrix is $\operatorname{diag}(1,-1)$, with a $\mathbb{D}$-linear map on either side gives a conjugate-linear map, and every conjugate-linear map arises so: $\kappa$ anticommutes with $J$, so $\kappa T$ and $T\kappa$ anticommute with $J$ when $T$ commutes with it. The real-linear self-maps form $\operatorname{End}_\mathbb{R}(\mathbb{D})\cong M_2(\mathbb{R})$, of real dimension four, and the $\mathbb{D}$-linear ones form the two-dimensional subspace $M_2(\mathbb{D})=\{qI+q'J\}$, the image of $\mathbb{D}$.</p>
-<h2 id="the-self-interpretation-over-math150">The Self-Interpretation over $\mathbb{D}$</h2>
+<h2 id="the-self-interpretation-over-math138">The Self-Interpretation over $\mathbb{D}$</h2>
 <p>Read over the ring $\mathbb{D}$ itself, the set is a <strong>free module of rank one</strong> on the single basis element $1$: every element is $Q\cdot 1$ for a unique $Q\in\mathbb{D}$, and the module is $\mathbb{D}$ acting on itself. This is the second reading of the table above, and it is not a vector space, because the scalars form a ring and not a field.</p>
 <p>The difference is concrete. A vector space over a field has every nonzero element invertible as a scalar, so every nonzero vector generates; here the scalars include the zero divisors, so a nonzero element of the module need not generate it. Exactly as in the ring, the element $\Pi_1$ is a nonzero scalar that annihilates $\Pi_2$, and $\Pi_1\cdot\mathbb{D}=\mathbb{R}\Pi_1$ is a proper nonzero submodule. The submodules of the rank-one module are the ideals of the ring,</p>
 <p>$$

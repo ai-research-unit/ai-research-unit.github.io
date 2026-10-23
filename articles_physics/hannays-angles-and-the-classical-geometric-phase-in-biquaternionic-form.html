@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -157,9 +160,9 @@ $$</p>
 $$</p>
 <p>It is the rate at which the geodesic frame turns about the direction relative to the frame that is carried parallel; integrating around the cycle,</p>
 <p>$$
-\Delta\theta_{\mathrm{Hannay}}=-\oint\omega_b^{\parallel}\,dt'
+\boxed{\;\Delta\theta_{\mathrm{Hannay}}=-\oint\omega_b^{\parallel}\,dt'
 =\oint(1-\cos\theta_0)\,d\phi
-=2\pi(1-\cos\theta_0)=\Omega ,
+=2\pi(1-\cos\theta_0)=\Omega\;},
 $$</p>
 <p>the <strong>solid angle</strong> subtended by the cycle of directions. This is Hannay's angle for the classical spin: it equals the solid angle of the loop on the sphere of directions.</p>
 <h3 id="parallel-transport-and-the-holonomy">Parallel Transport and the Holonomy</h3>
@@ -179,7 +182,7 @@ $$</p>
 <h3 id="any-loop-stokes-and-the-constant-curvature">Any Loop: Stokes and the Constant Curvature</h3>
 <p>The connection $\mathcal A=(1-\cos\theta)d\phi$ has curvature</p>
 <p>$$
-\mathcal F=d\mathcal A=\sin\theta\,d\theta\wedge d\phi ,
+\boxed{\;\mathcal F=d\mathcal A=\sin\theta\,d\theta\wedge d\phi\;},
 $$</p>
 <p>the area form of the unit sphere. By Stokes' theorem the holonomy of any loop is the integral of $\mathcal F$ over the enclosed region,</p>
 <p>$$
@@ -227,7 +230,7 @@ $$</p>
 <h3 id="the-double-cover">The Double Cover</h3>
 <p>The factor of $2$ between the vector angle and the spinor phase is the double cover of the rotor group. The spin-$\tfrac12$ state is a spinor in the algebra, and its adiabatic phase around the same cycle is half the classical angle,</p>
 <p>$$
-\gamma_{\text{spinor}}=-\frac{\Omega}{2},
+\boxed{\;\gamma_{\text{spinor}}=-\frac{\Omega}{2}\;},
 $$</p>
 <p>with the sign fixed by the orientation convention; the classical vector angle is $\Omega$. The two are related by the standard correspondence: the spin-$S$ coherent state has Berry phase $-S\Omega$, and Hannay's angle is the derivative with respect to the action,</p>
 <p>$$

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,8 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential map is the bridge between the group and the Lie algebra <em>The 12 Products of the Biquaternion Complex Space</em>. This article reads the Lie-group structure: the exponential and its parametrisation of the group, the cases of the exponential, the group law, the failure of surjectivity, and the real forms and subgroups the group carries.</p>
 <p>The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in <em>Biquaternion Elementary Functions</em>, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$ (<em>Norm and Invertibility in the General Quaternionic Algebra</em>). Throughout, a biquaternion is written $\tilde{Q}=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k \vec e_k$.</p>
-<hr />
 <h2 id="the-unit-quaternions-and-their-complexification">The Unit Quaternions and Their Complexification</h2>
 <p>The <strong>unit quaternions</strong> are the elements of $\mathbb{H}_{\mathbb{B}}$ of norm $1$:</p>
 <p>$$

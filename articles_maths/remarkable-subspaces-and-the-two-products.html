@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -70,7 +73,6 @@
 <p>The complex space carries two products, the <strong>general plain bilinear product</strong> $AC$ and the <strong>general plain sesquilinear product</strong> $A\bar C$, the reading on $\mathbb{C}$ of the four general products (<em>The Two Products of the Complexoid Space</em>). This article reads the two products on the two remarkable subspaces of the complex algebra, the real subspace $\mathbb{R}_{\mathbb{C}}$ and the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, one subspace to a section, and collects the outcome in the table of the two.</p>
 <p>Its result is a collapse, and it is written so that the collapse is visible: the four products become two, the six possible subspaces become two, and — the fact specific to $\mathbb{C}$ — the two products share one and the same closure table, so the closure of the subspaces cannot tell the two products apart.</p>
 <p>The subspaces are those of <em>Complexoid Subspaces</em>; the two involutions and the field are those of <em>Complex Algebra</em>, below this article in this category; the products are those of <em>The Two Products of the Complexoid Space</em>; the forms the products carry are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, and their restriction to the two subspaces is <em>Remarkable Subspaces of the Complexoid and the Two Forms</em>, both below this article in this category. The multiplication $AC$ is owned by <em>Complex Algebra</em>, and the topological norm, the invertibility criterion and the group of units are <em>Complex Norm and Invertibility</em>, both below this article in this category.</p>
-<p><strong>Conventions.</strong> The complex space is read over itself: <strong>bar</strong> is complex conjugation and the <strong>Hermitian</strong> mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, and no bracket is used for an element, since the four forms are written with brackets, of which the plain and the Hermitian survive (<em>Complex Algebra</em>, <em>Complexoid Subspaces</em>).</p>
 <h2 id="the-two-subspaces-and-the-two-products">The Two Subspaces and the Two Products</h2>
 <p>The two subspaces are the fixed subspace and the anti-fixed subspace of the bar,</p>
 <p>$$

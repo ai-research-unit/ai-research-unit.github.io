@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ of <em>Introduction to the Symmetric Plain Algebra</em>. This article reads the block on the $2\times2$ <strong>matrix element representation</strong>, the real-linear embedding $\mathsf{M}_2:\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ that carries the plain product to the matrix product, so that the Jordan product becomes the half-sum of the two orders of the matrices.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, and the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$. The embedding $\mathsf{M}_2$, its multiplicativity and its invariants are <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, whose conventions are held here.</p>
 <h2 id="the-representation">The Representation</h2>
 <h3 id="the-embedding-and-the-half-sum">The Embedding and the Half-Sum</h3>
 <p><strong>Definition.</strong> The <strong>matrix element representation</strong> of the block is the embedding $\mathsf{M}_2:\mathbb{H}\hookrightarrow M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde q)=q_t\mathrm I+q_x\mathsf E_1+q_y\mathsf E_2+q_z\mathsf E_3$, with $\mathsf E_j$ the images of the units, $\mathsf E_j^2=-\mathrm I$.</p>

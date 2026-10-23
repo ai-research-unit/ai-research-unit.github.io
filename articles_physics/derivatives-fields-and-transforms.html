@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -209,7 +212,7 @@ $$</p>
 </table></div>
 <p>The d'Alembertian is the quaternionic bilinear and the Hermitian norm:</p>
 <p>$$
-\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q.
+\boxed{\;\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q\;}.
 $$</p>
 <p>The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta-c^{-2}\partial^2/\partial {t'}^2$ and $-c^{-2}\partial^2/\partial {t'}^2-\Delta$. The corpus keeps one d'Alembertian and one sign.</p>
 <h3 id="the-determinant-of-the-first-order-operator">The Determinant of the First-Order Operator</h3>
@@ -219,7 +222,7 @@ $$</p>
 $$</p>
 <p>The matrix is block diagonal in a basis adapted to the two minimal left ideals; write $A_+(\tilde\nabla)$ for the block on the first. The two blocks have the same determinant, and each carries one factor:</p>
 <p>$$
-\det A_+(\tilde\nabla)=\Box.
+\boxed{\;\det A_+(\tilde\nabla)=\Box\;}.
 $$</p>
 <p>The second-order wave operator is therefore the determinant of a first-order operator. The partial derivatives commute, so the substitution of the derivative for the coefficient is legitimate; the determinant formula and the block decomposition are the mathematics article's, and the computation read on the operator is a matrix computation, not a new theorem.</p>
 <h2 id="the-fourier-transform">The Fourier Transform</h2>
@@ -237,8 +240,8 @@ $$</p>
 <h3 id="the-transform-pair">The Transform Pair</h3>
 <p>For a function $f:\mathbb{R}\to\mathbb{B}$, the <strong>continuous transform</strong> and its inverse are</p>
 <p>$$
-F(\omega)=\int_{-\infty}^{\infty}W(t',\omega)f(t')\,dt',\qquad
-f(t')=\int_{-\infty}^{\infty}W(t',\omega)^{-1}F(\omega)\,d\omega,
+\boxed{\;F(\omega)=\int_{-\infty}^{\infty}W(t',\omega)f(t')\,dt',\qquad
+f(t')=\int_{-\infty}^{\infty}W(t',\omega)^{-1}F(\omega)\,d\omega\;},
 $$</p>
 <p>under the standard convergence hypotheses. The kernel may stand on the left or on the right; the placement is part of the convention. The kernel is invertible for every root. The Plancherel identity holds for square-integrable functions when the root is unitary, $\rho^{*}=-\rho$ — the central imaginary and the unit real roots — and it is that unitarity which the condition encodes,</p>
 <p>$$

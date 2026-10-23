@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -117,9 +120,9 @@
 <h2 id="the-map">The Map</h2>
 <p>For $\tilde Q\in\mathbb{B}$ with $\tilde Q\neq0$ define</p>
 <p>$$
-\tilde{Ϛ}_Q=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_Q=\frac{\tilde Q\tilde Q^{*}}{2\langle\tilde Q,\tilde Q\rangle_{*}},
 \qquad
-\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}>0 .
+\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}>0\;}.
 $$</p>
 <p>The image is Hermitian, positive semidefinite and normalised by $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$, so it is a state. The denominator is the Hermitian bracket and not a trace: the star names the form that is positive definite on the whole algebra, and the trace is its $2\times2$ reading, $\operatorname{Tr}=2\,\mathrm{Sc}$. The factor cancels in every probability, because a probability is a ratio of the same bracket.</p>
 <p>The map is defined for every nonzero element, including the zero divisors. It is not defined at $\tilde Q=0$, where the numerator and the denominator vanish together. There is no limiting state at the origin: along different directions the limit depends on the direction, and the origin has no state.</p>
@@ -137,11 +140,11 @@ $$</p>
 $$</p>
 <p>Then</p>
 <p>$$
-\tilde{Ϛ}_Q=\frac{\tilde H^{2}}{2\langle\tilde H,\tilde H\rangle_{*}},
+\boxed{\;\tilde{Ϛ}_Q=\frac{\tilde H^{2}}{2\langle\tilde H,\tilde H\rangle_{*}},
 \qquad
 \hat H=\frac{\tilde H}{\sqrt{2\langle\tilde H,\tilde H\rangle_{*}}},
 \qquad
-\tilde{Ϛ}_Q=\hat H^{2}.
+\tilde{Ϛ}_Q=\hat H^{2}\;}.
 $$</p>
 <p>The <strong>amplitude</strong> is $\tilde H$; the <strong>normalised amplitude</strong> is $\hat H$; the <strong>state</strong> is the square of the normalised amplitude. The three objects are different. $\tilde H$ carries the scale of the operator; $\hat H$ is normalised in the Hilbert–Schmidt sense, $\langle\hat H,\hat H\rangle_{*}=\tfrac12$, which is $\operatorname{Tr}\hat H^{2}=1$ in the matrix image; $\tilde{Ϛ}_Q$ is the state, with $\langle\tilde{Ϛ}_Q,e_t\rangle_{*}=\tfrac12$.</p>
 <p>The eigenvalues of $\tilde H$ are the singular values $\sigma_1\ge\sigma_2\ge0$ of $\tilde Q$. The eigenvalues of the state are their normalised squares,</p>
@@ -161,9 +164,9 @@ $$</p>
 <h2 id="purity-is-the-spread-of-the-singular-values">Purity Is the Spread of the Singular Values</h2>
 <p>The purity of the state is</p>
 <p>$$
-\operatorname{Tr}\tilde{Ϛ}_Q^{2}
+\boxed{\;\operatorname{Tr}\tilde{Ϛ}_Q^{2}
 =\frac{\sigma_1^{4}+\sigma_2^{4}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}
-=\frac{1}{2}+\frac{(\sigma_1^{2}-\sigma_2^{2})^{2}}{2(\sigma_1^{2}+\sigma_2^{2})^{2}} .
+=\frac{1}{2}+\frac{(\sigma_1^{2}-\sigma_2^{2})^{2}}{2(\sigma_1^{2}+\sigma_2^{2})^{2}}\;}.
 $$</p>
 <p>The second form shows the range at once: $\tfrac12\le\operatorname{Tr}\tilde{Ϛ}_Q^{2}\le1$, with equality at the two ends.</p>
 <div class="table-scroll"><table>

@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -78,7 +81,6 @@ $$
 \mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{\breve Q:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
 <strong>abelian and connected</strong>, of complex dimension two and real dimension four, with fundamental group $\mathbb{Z}\times\mathbb{Z}$. The isomorphism is the idempotent coordinate map $\breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$, under which the product is componentwise. The zero-divisor set is the <strong>punctured union of the two idempotent lines</strong> $\mathcal N=(\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-)\setminus\{0\}$, whose elements are the nonzero zero divisors. Every nonzero element of the algebra is either a unit or a zero divisor; there is no third kind.</p>
-<p><strong>Boundaries.</strong> The norm is <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>, and the zero divisors and the two lines are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the idempotents and the idempotent coordinates are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em> and <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>. The multiplication operators, whose invertibility is the same criterion on the operator level, are <em>The Multiplication Operators of the Algebra of the Reduced Biquaternions</em>; the matrix model, in which the unit group is the group of invertible diagonal matrices, is <em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em>. The biquaternion unit group, which is not abelian, is <em>The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</em>.</p>
 <h2 id="the-partition-of-the-algebra">The Partition of the Algebra</h2>
 <p><strong>The algebra is the disjoint union of its units, its nonzero zero divisors and the single element $0$.</strong></p>
 <p><strong>Definition (the zero-divisor set).</strong> An element $\breve Q$ is a <strong>zero divisor</strong> when there is a nonzero $\breve Q_{2}$ with $\breve Q \breve Q_{2}=0$; the <strong>zero-divisor set</strong> is the set of the zero divisors. It is the punctured <strong>null set</strong> of the norm, $\mathcal N=\{\breve Q\neq0:\langle \breve Q\rangle_{\mathrm{ts}}=0\}$.</p>

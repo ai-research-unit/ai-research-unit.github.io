@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -77,7 +80,6 @@
 <p><em>The module action.</em> Every operation the algebra supplies is a multiplication, and a multiplication acts on the two chiral components of a Dirac module with the same matrix. The consequence is that the framework's apparatus is vector-like by construction, that the chiral gauge structure, the discrete operations and the energy-sign split have no multiplicative representative, and that the vector-like obstruction is a fact about the algebra rather than about any chosen gauge group.</p>
 <p><em>Dynamics and interpretation.</em> The algebra contains no time, no Hamiltonian, no preferred basis, and no value for its own central parameters. The consequences are that the dynamics is external input, that the measurement problem is untouched by the algebra, and that a norm-preserving quantum theory over $\mathbb{B}$ is a complex two-level theory in disguise.</p>
 <p>Each item below is given in the form <strong>statement — proof — consequence — remedy</strong>, and each is verified either by explicit computation or by a standard theorem cited as standard.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ for $k=x,y,z$, $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\neq j$ in $\{x,y,z\}$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ for $k=x,y,z$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. States are $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.</p>
 <h2 id="how-an-obstruction-is-certified">How an Obstruction Is Certified</h2>
 <p>An item enters this catalogue only if it satisfies three conditions, and the conditions are worth stating so that the reader can tell a genuine no-go statement from a limitation of effort.</p>
 <p><strong>1. The statement is purely algebraic.</strong> It says that no element, subspace, or operation of $\mathbb{B}$ has a stated property. Statements about what a human has not yet computed, or about what a particular representation does not exhibit, do not qualify; the obstruction must be a property of the algebra itself.</p>
@@ -173,7 +175,7 @@ a finite direct sum when the configuration group is finite. The infinite dimensi
 <p><strong>Statement.</strong> The tensor product of two copies of the algebra is not the algebra: $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})\neq\mathbb{B}$. There is no tensor factorization of a single copy into two subsystems.</p>
 <p><strong>Proof.</strong> The two complex dimensions differ,
 $$
-\dim_\mathbb{C}\bigl(\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\bigr)=16\neq4=\dim_\mathbb{C}\mathbb{B},
+\boxed{\;\dim_\mathbb{C}\bigl(\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\bigr)=16\neq4=\dim_\mathbb{C}\mathbb{B}\;},
 $$
 and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\cong M_4(\mathbb{C})$.</p>
 <p><strong>Consequence.</strong> The two components of a state module element are not two subsystems; they are the two amplitudes of a single two-level system. A pair of qubits, and therefore entanglement as a resource, is not described by $\mathbb{B}$, and the Bloch ball is not closed under composition.</p>
@@ -192,11 +194,11 @@ $$
 $$
 which is anti-Hermitian; so $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$. More precisely, products and commutators behave as
 $$
-\mathbb{M}_+\mathbb{M}_+\subseteq\mathbb{M}_++\mathbb{M}_-,
+\boxed{\;\mathbb{M}_+\mathbb{M}_+\subseteq\mathbb{M}_++\mathbb{M}_-,
 \qquad
 [\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_-,
 \qquad
-[\mathbb{M}_+,\mathbb{M}_-]\subseteq\mathbb{M}_+ ,
+[\mathbb{M}_+,\mathbb{M}_-]\subseteq\mathbb{M}_+\;},
 $$
 the last two verified numerically on random elements of each sector. The commutator therefore grades the real Lie algebra $\mathbb{B}$ under $[\cdot,\cdot]$, while the product mixes the sectors.</p>
 <p><strong>Consequence.</strong> The material and informational subspaces cannot be treated as independent algebras. An observable's product with another observable is not an observable in general; only (anti-)commutators, or the trace, respect the split.</p>
@@ -205,7 +207,7 @@ the last two verified numerically on random elements of each sector. The commuta
 <p><strong>Statement.</strong> Multiplication by $i$ exchanges the two sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so $\mathbb{M}_+$ is not a complex vector space. The Hermitian sector cannot be a complex Hilbert space in its own right.</p>
 <p><strong>Proof.</strong> For every basis element of $\mathbb{M}_+$, $i(i\vec e_k)=-\vec e_k$ for $k=x,y,z$ and $i e_t=ie_t$, so
 $$
-i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{M}_- .
+\boxed{\;i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{M}_-\;}.
 $$</p>
 <p>Since the two subspaces intersect only at zero, no non-zero Hermitian element is $i$ times a Hermitian element.</p>
 <p><strong>Consequence.</strong> The framework's Hilbert space is the <strong>module</strong> $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, on which $i$ acts as the complex structure and the inner product is the Hermitian form; the observable space $\mathbb{M}_+$ is a real vector space and must be handled as such. Treating $\mathbb{M}_+$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.</p>

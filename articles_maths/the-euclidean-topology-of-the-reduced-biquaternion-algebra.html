@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -68,9 +71,7 @@
         <h1 id="the-euclidean-topology-of-the-reduced-biquaternion-algebra"><strong>The Euclidean Topology of the Reduced Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The Euclidean topology of the reduced biquaternion algebra is the topology of the norm $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}$, and this article develops it: the isometry onto $\mathbb{R}^{4}$, the algebra read as a normed algebra, the contractibility, the unit group as a topological group, the Euclidean unit sphere and the topology of the zero-divisor set. The algebra is <strong>commutative</strong>, and the two facts that shape the topology are that the multiplication <strong>has zero divisors</strong> — so the norm is not submultiplicative with constant one, and the unit group is the complement of the zero-divisor set — and that the algebra is <strong>not a division algebra</strong>. The Euclidean topology is the subject; the algebraic norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is only the tool, and the four algebraic norms are distinguished from it throughout.</p>
-<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$. The Euclidean norm is $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$, from the positive definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ of <em>The Four Products, Their Forms and Their Algebraic Norms</em>. The element glyph is $\breve Q$, with the breve and without a tilde.</p>
-<p><strong>Boundaries.</strong> The topology and the metric are set up in <em>Topology in the Space of Reduced Biquaternions</em>; the metric of each product is <em>Topology and Metric for Each of the Operations</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the unit group and its complement are <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>; and the forms are <em>The Forms of the Algebra of the Reduced Biquaternions</em>. The biquaternion counterpart is <em>The Euclidean Topology of the Biquaternion Algebra</em>.</p>
-<h2 id="the-euclidean-norm-and-the-isometry-onto-math15">The Euclidean Norm and the Isometry onto $\mathbb{R}^{4}$</h2>
+<h2 id="the-euclidean-norm-and-the-isometry-onto-math3">The Euclidean Norm and the Isometry onto $\mathbb{R}^{4}$</h2>
 <p><strong>The norm is the Euclidean norm of the coordinate quadruple, and the coordinate map is an isometry onto $\mathbb{R}^{4}$.</strong></p>
 <p><strong>Theorem (the isometry).</strong> The map
 $$

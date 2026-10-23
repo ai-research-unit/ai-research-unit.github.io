@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -81,7 +84,6 @@
 </li>
 </ol>
 <p>The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$; they satisfy $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$, so that $\mathrm{Tr}(e_t)=2$. The isomorphism with $M_2(\mathbb{C})$ is the one fixed in the companion articles, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. The fermionic and bosonic mode operators are those established by the two quantization articles and are not rederived.</p>
 <h2 id="fock-space-and-its-operator-algebra">Fock Space and Its Operator Algebra</h2>
 <p>The standard construction, fixed once so that the biquaternion question can be posed against it, is the following.</p>
 <p>A one-particle space $\mathcal{H}_1$ is a complex vector space with a Hermitian form, positive definite in the standard case; for a field it is the space of positive-frequency solutions of the one-particle equation. The <strong>Fock space</strong> is the direct sum of the tensor powers of $\mathcal{H}_1$ projected onto the symmetry type selected by the statistics,</p>
@@ -184,9 +186,9 @@ $$</p>
 $$</p>
 <p>and reads them as an unfaithful truncation of a <strong>bosonic</strong> oscillator: the commutator is $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\ne e_t$, which is a failure of the bosonic canonical relation. That interpretation is correct, and nothing here contradicts it. Asked the fermionic question instead, the same operators answer exactly. Direct computation gives</p>
 <p>$$
-\vec\Upsilon_x^2=0,\qquad (\vec\Upsilon_y)^2=0,\qquad
+\boxed{\;\vec\Upsilon_x^2=0,\qquad (\vec\Upsilon_y)^2=0,\qquad
 \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad
-\tilde\Pi_-^2=\tilde\Pi_-,
+\tilde\Pi_-^2=\tilde\Pi_-\;}
 $$</p>
 <p>so the truncated ladder satisfies the <strong>fermionic</strong> canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(i\vec e_x-\vec e_y)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ they have the images</p>
 <p>$$
@@ -202,7 +204,7 @@ $$</p>
 <li><strong>The grading is an element of the algebra.</strong> Fermion parity for one mode is</li>
 </ul>
 <p>$$
-(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z,
+\boxed{\;(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z\;}
 $$</p>
 <p>which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and $(-1)^F\tilde\Pi_-(-1)^F=\tilde\Pi_-$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized <strong>inside</strong> $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
 - <strong>The grading is not unique.</strong> The choice $i\vec e_z$ is the choice of a mode; for any unit pure quaternion $\vec u$ the element $i\vec u$ is Hermitian, squares to $e_t$, and defines a grading whose odd part consists of the ladder operators in the corresponding plane, with $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$. This was checked on $\vec u=(\vec e_x+\vec e_y+\vec e_z)/\sqrt3$, a direction chosen after the claim rather than the $\vec e_z$ direction that suggested it. The family is parametrized by the unit pure quaternions, that is, by a two-sphere, with $\vec u$ and $-\vec u$ giving the same grading.</p>
@@ -212,7 +214,7 @@ $$</p>
 <h2 id="the-bosonic-case">The Bosonic Case</h2>
 <p>A bosonic mode is a pair satisfying $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$; but the trace of a commutator vanishes, so</p>
 <p>$$
-0=\mathrm{Tr}\big([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]\big)=c\,\mathrm{Tr}(e_t)=2c,
+\boxed{\;0=\mathrm{Tr}\big([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]\big)=c\,\mathrm{Tr}(e_t)=2c\;}
 $$</p>
 <p>and hence $c=0$. The trace formula $\mathrm{Tr}(e_t)=2\,\mathrm{Sc}(e_t)=2$ is what makes the right-hand side nonzero, and it is the only central scalar available: the centre of $\mathbb{B}=M_2(\mathbb{C})$ is exactly the complex span of $e_t$, so there is no other candidate for a canonical commutator. The oscillator article reaches the same conclusion through the scalar part of the bracket of two Hermitian elements; the trace argument is the stronger statement, because it rules out any finite-dimensional realization of the Heisenberg pair at all.</p>
 <p>The consequence for the framework is worth stating plainly. The Maxwell quantization's Fock space is the symmetric algebra of a module, and its creation and annihilation operators are <strong>not</strong> elements of $\mathbb{B}$: they are elements of the Weyl algebra of the polarization space, which is infinite-dimensional, or of a specific finite truncation of it. The framework contributes to that construction the module on which it is built and the notation in which the polarization sum is written; it contributes no ladder algebra of its own, because it has none to contribute. The indefinite metric, the subsidiary condition and the physical-subspace quotient are imported, exactly as the Maxwell article records. The bosonic case is therefore not the fermionic case with a sign changed; it is a case in which the finite-dimensional algebra has no native structure at all.</p>

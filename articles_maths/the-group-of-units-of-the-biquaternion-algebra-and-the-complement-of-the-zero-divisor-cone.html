@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -86,25 +89,6 @@ the reason its non-vanishing set is closed under the product and under inversion
 two statements of the article are the pair of these facts: <strong>the units of the plain product are the
 elements of non-vanishing norm $\langle\cdot\rangle_{\natural}$, and their complement is a group for the plain product and for no
 other of the twelve structures.</strong></p>
-<p><strong>Placement and boundaries.</strong> The article closes the <em>Specific Theory</em> of the biquaternion algebra,
-after <em>The Specificities of the Biquaternion Algebra</em>. It states the invertibility criterion of the
-plain product that <em>Norm and Invertibility in the Biquaternion Algebra</em> declines to read from the
-product's own algebraic norm, and it cites <em>Zero Divisors in the Algebraic Structures over the
-Biquaternion $\mathbb{C}$ Space</em> for the one-sided inverse equations read across the four general
-products. The topology of the group — the polar decomposition, the retractions onto the compact
-subgroups, the homotopy groups and the universal cover — is proved in <em>The Biquaternion Unit Group
-as a Topological Group</em> and <em>The Unitary Group of the Biquaternion Algebra</em>; the ambient topology of
-the cone is <em>The Topology of the Zero-Divisor Cone</em>; the distribution of the units over the
-remarkable subspaces is <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The
-Algebraic Norm on the Remarkable Subspaces</em>; the invertibility of the symmetrised product is <em>Norm
-and Invertibility in the Symmetric Plain Algebra</em>; and the classification of the twelve is <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. None of those is reproved here.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$
-with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$; a general element is $\tilde
-Q=\sum_{\mu\in{t,x,y,z}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the
-coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is
-${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The product is the general plain bilinear product $\tilde
-Q_1\tilde Q_2$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $\langle\cdot\rangle_{\natural}$,
-the reduced norm, is</p>
 <p>$$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{\natural}\bigr),
 $$</p>

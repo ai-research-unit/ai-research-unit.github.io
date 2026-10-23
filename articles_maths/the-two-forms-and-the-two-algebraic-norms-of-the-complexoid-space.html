@@ -43,7 +43,10 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\slashed': '\\not{#1}'
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
             },
             throwOnError: false,
             errorColor: '#c00'
@@ -69,7 +72,6 @@
 <h2 id="introduction">Introduction</h2>
 <p>The two products of the complex space carry two <strong>forms</strong>, and their algebraic norms are the two <strong>algebraic norms</strong>. This article defines the two forms, separates them, reads the two norms, and states its one distinctive feature: a single function is both definite and multiplicative.</p>
 <p>The two forms are the scalar parts of the two general products, and the two products and their collapse are <em>The Two Products of the Complexoid Space</em>. The topological norm $\sqrt{\langle\cdot\rangle_{*}}$, its multiplicativity, the invertibility criterion and the group of units are owned by <em>Complex Norm and Invertibility</em>, below this article in this category, and are named here and not developed.</p>
-<p><strong>Conventions.</strong> <strong>Bar</strong> is complex conjugation and the <strong>Hermitian</strong> mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $Q_1$ and $Q_2$, and $\langle\cdot,\cdot\rangle$ is not used for an element: $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are the four forms, of which $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ survive here. The letter $\langle\cdot,\cdot\rangle_{\natural}$ is read with care: <em>Complex Norm and Invertibility</em>, below this article in this category, writes the positive definite norm as $\langle Q\rangle_{*}=Q\bar Q$, which is the algebraic norm of $\langle\cdot\rangle_{*}$. The two readings are told apart by their argument count and by their chapter.</p>
 <h2 id="the-two-forms">The Two Forms</h2>
 <p>The <strong>form</strong> of a product is its scalar part, a function of two elements. On the complex space, read over itself, there is no vector direction, so the scalar part of a product is the product, and the two forms are</p>
 <p>$$
