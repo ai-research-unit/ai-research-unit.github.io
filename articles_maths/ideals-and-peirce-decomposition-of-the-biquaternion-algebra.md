@@ -147,10 +147,12 @@ $$
 so the algebra splits into the four **Peirce spaces**
 
 $$
+\boxed{\;
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},
 \qquad
-\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau,
-$$
+\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau
+\;}
+$$,
 
 with $\tilde\Pi_+=\tilde\Pi$ and $\tilde\Pi_-=\tilde\Pi'$. This is the **Peirce decomposition** of $\mathbb{B}$ with respect to $\tilde\Pi$. It refines the two-term decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}\tilde\Pi'$.
 
@@ -222,11 +224,13 @@ $$
 and by the multiplication table just given each corner is one-dimensional over $\mathbb{C}$:
 
 $$
+\boxed{\;
 \mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+,\qquad
 \mathbb{B}_{+-}=\mathbb{C}\vec\Upsilon_x,\qquad
 \mathbb{B}_{-+}=\mathbb{C}\vec\Upsilon_y,\qquad
-\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-,
-$$
+\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-
+\;}
+$$,
 
 so the Peirce decomposition reads
 
@@ -351,7 +355,9 @@ $$
 The four numbers $a_{ij}$ are the **Peirce coordinates** of $\tilde Q$. They are linear functions of $\tilde Q$; the mean of the two diagonal coordinates is the scalar part, and the determinant of their $2\times2$ array is the biquaternion norm,
 
 $$
+\boxed{\;
 a_{11}a_{22} - a_{12}a_{21} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde Q\rangle_{\natural}
+\;}
 $$
 
 (*Norm and Invertibility in the General Quaternionic Algebra*). The coordinates are nothing but the four entries of the corpus's fixed matrix element representation: the isomorphism $\mathsf{M}_2 : \mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Representation*, is
@@ -483,8 +489,10 @@ A **minimal left ideal** is a nonzero left ideal containing no nonzero proper le
 The two idempotents group the basis into one-sided ideals in a second way. The two **left ideals** $\mathbb{B}\tilde\Pi_+, \mathbb{B}\tilde\Pi_-$ and the two **right ideals** $\tilde\Pi_+\mathbb{B}, \tilde\Pi_-\mathbb{B}$ are one-sided, and
 
 $$
-\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_- = (\mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_y) \oplus (\mathbb{C}\vec\Upsilon_x \oplus \mathbb{C}\tilde\Pi_-),
-$$
+\boxed{\;
+\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_- = (\mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_y) \oplus (\mathbb{C}\vec\Upsilon_x \oplus \mathbb{C}\tilde\Pi_-)
+\;}
+$$,
 
 $$
 \mathbb{B} = \tilde\Pi_+\mathbb{B} \oplus \tilde\Pi_-\mathbb{B} = (\mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_x) \oplus (\mathbb{C}\vec\Upsilon_y \oplus \mathbb{C}\tilde\Pi_-).

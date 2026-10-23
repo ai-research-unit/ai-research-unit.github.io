@@ -125,13 +125,11 @@ $$
 
 The **principal logarithm** is this exponent on the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$:
 
-$$
-\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
+$$ \boxed{\; \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
 +\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}\,
 \frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}},
 \qquad
-\tilde q\notin(-\infty,0],
-$$
+\tilde q\notin(-\infty,0] \;} ,$$
 
 with the second term read as $0$ when $\vec q=0$.
 
@@ -388,10 +386,8 @@ The rotation angle is $2\theta=1.8545904360$.
 
 **The word and the check.** The word is
 
-$$
-\tilde q=\exp\Bigl(\ln5+\arccos\frac35\,\vec e_x\Bigr)
-=3e_t+4\vec e_x,
-$$
+$$ \boxed{\; \tilde q=\exp\Bigl(\ln5+\arccos\frac35\,\vec e_x\Bigr)
+=3e_t+4\vec e_x \;} ,$$
 
 and the logarithm is
 
@@ -496,12 +492,10 @@ The rotation angle is $2\theta=3\pi/2$.
 
 **The word and the check.** The word is the product of two rotors of exponent angle $\pi/2$ about axes at $45^\circ$,
 
-$$
-\tilde q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr)
+$$ \boxed{\; \tilde q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr)
 \exp\Bigl(\frac{\pi}{2}\frac{\vec e_x+\vec e_y}{\sqrt2}\Bigr)
 =\vec e_x\frac{\vec e_x+\vec e_y}{\sqrt2}
-=\frac{-\vec e_t+\vec e_z}{\sqrt2}.
-$$
+=\frac{-\vec e_t+\vec e_z}{\sqrt2} \;} .$$
 
 The formal exponent is the sum
 

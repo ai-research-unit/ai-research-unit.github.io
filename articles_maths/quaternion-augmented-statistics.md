@@ -114,9 +114,7 @@ $$
 
 Then
 
-$$
-q^{a} = A\begin{pmatrix}q_t\\ q_x\\ q_y\\ q_z\end{pmatrix}, \qquad A^{\mathsf H}A = 4I_4, \qquad A^{-1} = \tfrac14 A^{\mathsf H},
-$$
+$$ \boxed{\; q^{a} = A\begin{pmatrix}q_t\\ q_x\\ q_y\\ q_z\end{pmatrix}, \qquad A^{\mathsf H}A = 4I_4, \qquad A^{-1} = \tfrac14 A^{\mathsf H} \;} ,$$
 
 so that $(q_t,q_x,q_y,q_z)^{\mathsf T} = \frac14 A^{\mathsf H}q^{a}$.
 
@@ -172,9 +170,7 @@ For $k = 0$ this is the Hermitian symmetry $R_0(\tilde q,\tilde p) = (R_0(\tilde
 
 **Theorem.** The pseudo-covariance is determined by the four involuted covariances,
 
-$$
-P(\tilde p,\tilde q) = \tfrac12\bigl(R_1+R_2+R_3-R_0\bigr)(\tilde p,\tilde q).
-$$
+$$ \boxed{\; P(\tilde p,\tilde q) = \tfrac12\bigl(R_1+R_2+R_3-R_0\bigr)(\tilde p,\tilde q) \;} .$$
 
 *Proof.* By the recovery of the conjugate, $\frac12(\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q-\tilde q) = \tilde q^{\natural}$; conjugation is additive and real-linear, so the second factor of the right-hand side is $(\tilde q^{\natural})^{\natural} = \tilde q$.
 
@@ -314,9 +310,7 @@ which is linear in the augmented regressor; the linear class is the case $a_x = 
 
 **Theorem.** Let $\tilde p$ and $\tilde q$ be centred and jointly Gaussian. Then the conditional expectation is widely linear,
 
-$$
-\mathbb{E}[\tilde p\,|\,\tilde q] = g^{\mathsf T}\tilde q+h^{\mathsf T}\iota_1\tilde q+u^{\mathsf T}\iota_2\tilde q+v^{\mathsf T}\iota_3\tilde q,
-$$
+$$ \boxed{\; \mathbb{E}[\tilde p\,|\,\tilde q] = g^{\mathsf T}\tilde q+h^{\mathsf T}\iota_1\tilde q+u^{\mathsf T}\iota_2\tilde q+v^{\mathsf T}\iota_3\tilde q \;} ,$$
 
 with constant quaternion coefficient vectors, and it minimises $\mathbb{E}[\langle\tilde p-\hat{\tilde p}\rangle_{\natural}]$ over the widely linear class.
 

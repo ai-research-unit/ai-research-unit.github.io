@@ -63,7 +63,7 @@ $$
 
 **Theorem (the conjugations).** Under $\varphi$:
 $$
-\varphi(\overline{\breve Q})=\varphi(\breve Q)^{\dagger},\qquad \varphi(\breve Q_{\mathrm{ts}})=\sigma_{1}\varphi(\breve Q)\sigma_{1}=\operatorname{diag}(Q_{-},Q_{+}),\qquad \varphi(\breve Q^{*})=\operatorname{diag}(\bar Q_{-},\bar Q_{+}).
+\boxed{\; \varphi(\overline{\breve Q})=\varphi(\breve Q)^{\dagger},\qquad \varphi(\breve Q_{\mathrm{ts}})=\sigma_{1}\varphi(\breve Q)\sigma_{1}=\operatorname{diag}(Q_{-},Q_{+}),\qquad \varphi(\breve Q^{*})=\operatorname{diag}(\bar Q_{-},\bar Q_{+}) \;}.
 $$
 
 *Proof.* The bar conjugates the coefficients, hence each diagonal entry, so it is the conjugate transpose; the tessarine sign sends $Q_{\blacktriangle}+jQ_{\blacktriangledown}$ to $Q_{\blacktriangle}-jQ_{\blacktriangledown}$ and hence $(Q_{+},Q_{-})$ to $(Q_{-},Q_{+})$, which is the conjugation by $\sigma_{1}$ on a diagonal matrix; the star is the composite of the two, $\operatorname{diag}(\bar Q_{-},\bar Q_{+})$.
@@ -76,7 +76,7 @@ $$
 
 **Theorem.** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
-\langle \breve Q\rangle_{\mathrm{ts}}=\det\varphi(\breve Q)=Q_{+}Q_{-},\qquad \operatorname{Tr}\varphi(\breve Q)=Q_{+}+Q_{-}=2Q_{\blacktriangle} .
+\boxed{\; \langle \breve Q\rangle_{\mathrm{ts}}=\det\varphi(\breve Q)=Q_{+}Q_{-},\qquad \operatorname{Tr}\varphi(\breve Q)=Q_{+}+Q_{-}=2Q_{\blacktriangle} \;}.
 $$
 
 *Proof.* The determinant of a diagonal matrix is the product of the entries, $Q_{+}Q_{-}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}$; the trace is the sum, $Q_{+}+Q_{-}=2Q_{\blacktriangle}$.
@@ -115,7 +115,7 @@ where $\mathbb{C}E_{11}$ is the set of the matrices whose only nonzero entry is 
 
 **Corollary (the Peirce decomposition).** The Peirce decomposition of $\mathcal D_{2}(\mathbb{C})$ along $E_{11}$ is
 $$
-\mathcal D_{2}(\mathbb{C})=\mathbb{C}E_{11}\oplus\{0\}\oplus\{0\}\oplus\mathbb{C}E_{22},
+\boxed{\; \mathcal D_{2}(\mathbb{C})=\mathbb{C}E_{11}\oplus\{0\}\oplus\{0\}\oplus\mathbb{C}E_{22} \;},
 $$
 the two mixed spaces vanishing. The matrix picture makes the reason visible: the image of $\varphi$ contains the diagonal matrix units and **no** off-diagonal one, so there are no $E_{12}$ and $E_{21}$ to carry the mixed spaces; the biquaternion model has them, and this is exactly the difference between a full matrix algebra and the diagonal subalgebra.
 

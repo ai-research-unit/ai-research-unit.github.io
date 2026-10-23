@@ -53,7 +53,10 @@ for all $x,y,z$.
 **Degree-three identities.** The identities of **degree three** are the identities in which one factor of a product is itself a product: **associativity**, $f(f(x,y),z)=f(x,f(y,z))$; the **left alternative** identity, $f(f(x,x),y)=f(x,f(x,y))$; the **right alternative** identity, $f(f(y,x),x)=f(y,f(x,x))$; and **flexibility**, which is obtained from associativity by replacing $z$ with $x$ in both sides. A rule is **alternative** when both alternative identities hold, and **associative** when so does associativity.
 
 **Implications.** The following implications among the identities are the ones the blocks use; each is immediate from the definitions and the bilinearity.
-- **Associative $\Rightarrow$ flexible, power-associative, Jordan.** An associative rule inserts and removes parentheses freely, so the two nestings of the cube agree, the flexibility is two writings of the same triple product, and the Jordan identity is the reading of $x^2yx$ on both sides.
+- $$
+  \boxed{\;\text{associative}\ \Rightarrow\ \text{flexible, power-associative, Jordan}\;}
+  $$
+  An associative rule inserts and removes parentheses freely, so the two nestings of the cube agree, the flexibility is two writings of the same triple product, and the Jordan identity is the reading of $x^2yx$ on both sides.
 - **Alternating and bilinear $\Rightarrow$ flexible, power-associative, cube-zero.** A bilinear alternating rule is antisymmetric, $f(y,x)=-f(x,y)$, since $f(x+y,x+y)=0$; flexibility is then $f(f(x,y),x)=-f(x,f(x,y))=f(x,f(y,x))$, the power identity is read on the square $f(x,x)=0$, and the cube $f(x,f(x,x))=f(x,0)=0$.
 - **Symmetric and bilinear $\Rightarrow$ flexible, power-associative.** A symmetric rule interchanges the two slots everywhere, and the flexibility and the power identity each compare two readings of the same arguments, so the interchange makes them equal.
 - **Alternating and Jacobi $\Rightarrow$ Lie.** An alternating bilinear rule satisfying the Jacobi identity is a Lie bracket; that is the definition of the Lie structure.

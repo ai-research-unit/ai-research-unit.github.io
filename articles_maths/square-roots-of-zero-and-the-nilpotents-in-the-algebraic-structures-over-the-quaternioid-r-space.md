@@ -48,6 +48,10 @@ and it is the square-zero set of the structure.
 
 **Theorem (the three root sets of $0$).** Among the three companion structures the root set of $0$ is the origin alone $\{0\}$ for the symmetric plain algebra and the general quaternionic algebra, and it is the whole space $\mathbb{H}$ for the antisymmetric plain algebra. Only two root sets occur, and no companion structure has a root set of $0$ that is neither a point nor the whole space. The algebra product of the same space has the origin alone, as owned by the *Quaternions* category.
 
+$$
+\boxed{\;\mathcal R_0=\{0\}\ \ \text{(SPA, GQA)},\qquad \mathcal R_0=\mathbb{H}\ \ \text{(APA)}\;}
+$$
+
 *Proof.* For the symmetric plain structure the pair $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ forces the origin: the second equation gives $\xi_t=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch $\xi_t^{2}=0$, and the isotropic cone of the plain form, real though it is, does not lie in the root of $0$, since at an isotropic element the vector part $2\xi_t\vec\xi$ does not vanish. For the general quaternionic structure the equation is $\langle\tilde\xi\rangle_{\natural}=0$ with $\langle\cdot\rangle_{\natural}$ a sum of four real squares, so the origin alone vanishes. The antisymmetric plain product is alternating, so $\tilde\xi\wedge\tilde\xi=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a companion structure is the plain square, the norm times $e_t$, or zero, and the first two have the origin as their only real zero.
 
 The three are read one by one below; each names the product, its square and its root set of $0$, and cites the article that owns it.

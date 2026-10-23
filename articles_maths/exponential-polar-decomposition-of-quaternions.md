@@ -45,10 +45,8 @@ $$
 
 when $\vec q\neq0$. Euler's formula, $\exp(\theta\vec n)=\cos\theta+\vec n\sin\theta$, and $r=\exp(\ln r)$ give
 
-$$
-\tilde q=r(\cos\theta+\vec n\sin\theta)=r\exp(\theta\vec n)=\exp(\tilde q_{\log}),
-\qquad \tilde q_{\log}=\ln r+\theta\vec n .
-$$
+$$ \boxed{\; \tilde q=r(\cos\theta+\vec n\sin\theta)=r\exp(\theta\vec n)=\exp(\tilde q_{\log}),
+\qquad \tilde q_{\log}=\ln r+\theta\vec n \;} .$$
 
 The three expressions are the same number. The middle one is the modulus–unit form; the last one is the exponential polar decomposition. The identity $\cos\theta=q_t/r$ follows from the definition of $\theta$, and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.
 
@@ -85,10 +83,8 @@ The subscript is a label, not an operation: $q_{\log}$ is the scalar coordinate 
 
 The factors are read from $\tilde q$ directly:
 
-$$
-\exp(\ln r)=r=\sqrt{\langle\tilde q\rangle_{\natural}}, \qquad
-\exp(\vec v)=\frac{\tilde q}{r}=\frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}}.
-$$
+$$ \boxed{\; \exp(\ln r)=r=\sqrt{\langle\tilde q\rangle_{\natural}}, \qquad
+\exp(\vec v)=\frac{\tilde q}{r}=\frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} \;} .$$
 
 The first is positive real; the second has norm one, $\langle\exp(\vec v)\rangle_{\natural}=1$, and lies on the unit sphere $S^3$. They recover the modulus–unit decomposition. The table records the two factors.
 
@@ -241,12 +237,10 @@ $$
 
 The exponential maps $B$ bijectively onto $\mathbb{H}\setminus(-\infty,0]$, and its inverse is the **principal logarithm**
 
-$$
-\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
+$$ \boxed{\; \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
 +\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}\,
 \frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}},
-\qquad \tilde q\notin(-\infty,0],
-$$
+\qquad \tilde q\notin(-\infty,0] \;} ,$$
 
 with the second term read as $0$ when $\vec q=0$, that is, on the positive real axis. The scalar factor is the **argument** $\operatorname{Arg}\tilde q=\arccos(q_t/r)\in[0,\pi)$, so that
 

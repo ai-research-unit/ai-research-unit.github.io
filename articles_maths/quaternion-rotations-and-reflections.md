@@ -218,9 +218,7 @@ Thus two unit quaternions $\tilde q$ and $-\tilde q$ determine the same rotation
 
 **Theorem.** The homomorphism $\operatorname{Ad} : Sp(1)\to SO(3)$ is surjective, and it induces an isomorphism of groups
 
-$$
-SO(3) \cong Sp(1)/\{\pm1\}.
-$$
+$$ \boxed{\; SO(3) \cong Sp(1)/\{\pm1\} \;} .$$
 
 **Proof.** The differential at the identity is the isomorphism $\operatorname{Im}\mathbb{H}\to\mathrm{SO}(3)$ of the preceding section, so by the inverse function theorem $\operatorname{Ad}$ is a local diffeomorphism near $1$, and therefore its image is an open subset of $SO(3)$. The image is a subgroup, and it is compact as a continuous image of the compact group $Sp(1)$, hence closed in the Hausdorff group $SO(3)$. The group $SO(3)$ is connected, so the only non-empty subset that is both open and closed is the whole of it; therefore $\operatorname{Ad}$ is surjective. The first isomorphism theorem for groups, together with the computation of the kernel, gives $SO(3)\cong Sp(1)/\{\pm1\}$.
 
@@ -244,9 +242,7 @@ The covering is non-trivial: the two elements $1$ and $-1$ of the fibre over the
 
 **Theorem.** Let $u$ be a unit vector and let $\tilde q = \cos\frac{\theta}{2} + u\sin\frac{\theta}{2}$. Then for $\vec q\in\operatorname{Im}\mathbb{H}$,
 
-$$
-\operatorname{Ad}_{\tilde q}(\vec q) = \cos\theta\, \vec q + \sin\theta\, (u\times \vec q) + (1-\cos\theta)\,\langle \vec q, u\rangle\, u.
-$$
+$$ \boxed{\; \operatorname{Ad}_{\tilde q}(\vec q) = \cos\theta\, \vec q + \sin\theta\, (u\times \vec q) + (1-\cos\theta)\,\langle \vec q, u\rangle\, u \;} .$$
 
 In particular $\operatorname{Ad}_{\tilde q}(u) = u$, and on the plane $u^{\perp}\subset\operatorname{Im}\mathbb{H}$ the map $\operatorname{Ad}_{\tilde q}$ is the rotation through the angle $\theta$ that carries $\vec q$ toward $u\times \vec q$.
 
@@ -385,9 +381,7 @@ using $v^2 = -1$. The formula shows that $\rho_v$ is the identity on the hyperpl
 
 **Theorem.** For unit vectors $v_1, v_2$,
 
-$$
-\rho_{v_1}\circ\rho_{v_2} = \operatorname{Ad}_{v_1v_2}.
-$$
+$$ \boxed{\; \rho_{v_1}\circ\rho_{v_2} = \operatorname{Ad}_{v_1v_2} \;} .$$
 
 Consequently the composition of two reflections is a rotation, namely the rotation about the axis $v_1\times v_2$ through twice the angle between the planes $v_1^{\perp}$ and $v_2^{\perp}$.
 
@@ -447,9 +441,7 @@ $$
 
 is a surjective homomorphism with kernel $\{\pm(1,1)\}$. Hence
 
-$$
-SO(4) \cong (Sp(1)\times Sp(1))/\{\pm(1,1)\} \cong \mathrm{Spin}(4).
-$$
+$$ \boxed{\; SO(4) \cong (Sp(1)\times Sp(1))/\{\pm(1,1)\} \cong \mathrm{Spin}(4) \;} .$$
 
 **Proof.** Linearity is clear. Norm preservation: $\langle \tilde q_1\vec q \tilde q_2^{-1}\rangle_{\natural} = \langle \tilde q_1\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle \tilde q_2\rangle_{\natural}^{-1} = \langle \vec q\rangle_{\natural}$. Homomorphism: $\Phi_{(\tilde q_1,\tilde q_2)}\circ\Phi_{(r_1,r_2)} = \Phi_{(\tilde q_1r_1, \tilde q_2r_2)}$. Determinant: $\det\Phi_{(\tilde q_1,\tilde q_2)} = \pm1$ and depends continuously on $(\tilde q_1,\tilde q_2)$, which ranges over the connected set $Sp(1)\times Sp(1)$, so it is constant and equals its value $\det(\mathrm{id}) = 1$ at $(1,1)$. Kernel: if $\Phi_{(\tilde q_1,\tilde q_2)} = \mathrm{id}$ then evaluating at $\vec q = 1$ gives $\tilde q_1\tilde q_2^{-1} = 1$, so $\tilde q_1 = \tilde q_2$, and then $\tilde q_1 \vec q\tilde q_1^{-1} = \vec q$ for all $\vec q$, so $\tilde q_1\in\{\pm1\}$. Surjectivity: the differential of $\mathsf{M}_2$ at the identity is the linear map $(\vec q,\vec p)\mapsto\bigl(\vec r\mapsto \vec q\vec r - \vec r\vec p\bigr)$ from $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$ to $\mathrm{SO}(4)$; it is injective, because $\vec q\vec r = \vec r\vec p$ for all $\vec r$ gives $\vec q = \vec p$ on taking $\vec r = 1$ and then forces $\vec q$ to be central, hence $\vec q = \vec p = 0$; since both spaces have dimension $6$, it is an isomorphism. Hence $\mathsf{M}_2$ is a local diffeomorphism, its image is open, and, being a compact subgroup, it is also closed in the connected group $SO(4)$, so the image is everything.
 

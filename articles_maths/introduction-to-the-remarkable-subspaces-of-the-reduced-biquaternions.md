@@ -67,7 +67,7 @@ $$
 \mathbb{R}\{1,j\}=\mathbb{R}\oplus\mathbb{R}j,\quad \mathbb{R}\{i,ij\}=\mathbb{R}i\oplus\mathbb{R}ij,\quad \mathbb{C}=\mathbb{R}\oplus\mathbb{R}i,
 $$
 $$
-\mathbb{C}j=\mathbb{R}j\oplus\mathbb{R}ij,\quad \mathbb{R}\{1,ij\}=\mathbb{R}\oplus\mathbb{R}ij,\quad \mathbb{R}\{i,j\}=\mathbb{R}i\oplus\mathbb{R}j.
+\boxed{\; \mathbb{C}j=\mathbb{R}j\oplus\mathbb{R}ij,\quad \mathbb{R}\{1,ij\}=\mathbb{R}\oplus\mathbb{R}ij,\quad \mathbb{R}\{i,j\}=\mathbb{R}i\oplus\mathbb{R}j \;}.
 $$
 
 *Proof.* Read the characters from the basis action: $1$ is fixed by all three; $i$ is negated by the bar and the star and fixed by the tessarine sign; $j$ is negated by the tessarine sign and the star and fixed by the bar; $ij$ is negated by the bar and the tessarine sign and fixed by the star. The relation $\varepsilon_{*}=\varepsilon_{\bar{}}\varepsilon_{\mathrm{ts}}$ is ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$, and the identifications of the planes are read from the table.
@@ -98,7 +98,7 @@ and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an
 
 **Theorem (the idempotent lines).** The multiplication by $j$ has the two eigenvalues $+1$ and $-1$ and the two eigenlines
 $$
-\mathbb{C}\Pi_+=\mathbb{R}\{\Pi_+,i\Pi_+\}=\{\breve Q:j\breve Q=\breve Q\},\qquad \mathbb{C}\Pi_-=\{\breve Q:j\breve Q=-\breve Q\},
+\boxed{\; \mathbb{C}\Pi_+=\mathbb{R}\{\Pi_+,i\Pi_+\}=\{\breve Q:j\breve Q=\breve Q\},\qquad \mathbb{C}\Pi_-=\{\breve Q:j\breve Q=-\breve Q\} \;},
 $$
 each of real dimension two, with $\Pi_{\pm}=\tfrac12(1\pm j)$.
 
@@ -135,7 +135,7 @@ and for every pair $\dim(L+M)=\dim L+\dim M-\dim(L\cap M)=4-\dim(L\cap M)$.
 
 **Corollary (the three complementary pairs).** Exactly three pairs of distinct planes sum to the whole real space, namely the three pairs of one involution:
 $$
-\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{r}}.
+\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{r}} \;}.
 $$
 All the other pairs sum to a real three-dimensional space, since their intersection is a line.
 

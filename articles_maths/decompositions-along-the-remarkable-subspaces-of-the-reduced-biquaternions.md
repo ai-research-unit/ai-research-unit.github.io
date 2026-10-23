@@ -26,8 +26,10 @@ is of the other kind: it is the product of the two minimal ideals, it is the uni
 
 **Theorem (simultaneous diagonalisation).** The bar $\bar{\cdot}$ and the tessarine sign ${}_{\mathrm{ts}}$ commute, ${}_{\mathrm{ts}}\bar{\cdot}=\bar{\cdot}{}_{\mathrm{ts}}$, and each has square one; hence the real space decomposes into the four **common eigenspaces**
 $$
+\boxed{\;
 \mathbb{B}_{\mathrm{r}}=\bigoplus_{(\varepsilon_{1},\varepsilon_{2})\in\{\pm1\}^{2}}\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})},\qquad
-\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{\breve Q:\bar{\breve Q}=\varepsilon_{1}\breve Q,\ \breve Q_{\mathrm{ts}}=\varepsilon_{2}\breve Q\},
+\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{\breve Q:\bar{\breve Q}=\varepsilon_{1}\breve Q,\ \breve Q_{\mathrm{ts}}=\varepsilon_{2}\breve Q\}
+\;},
 $$
 each of real dimension one.
 
@@ -59,7 +61,7 @@ for the tessarine sign, the bar and the star respectively.
 
 **Theorem (the halvings).** The three involutions give the three decompositions
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\},
+\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\} \;},
 $$
 of the tessarine sign, the bar and the star, each into a fixed plane and an anti-fixed plane of real dimension two.
 
@@ -85,7 +87,7 @@ so the halving is a $\mathbb{Z}_{2}$-grading; the anti-fixed plane is not closed
 
 **Theorem (the idempotent decomposition).** With $\Pi_{\pm}=\tfrac12(1\pm j)$,
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,\qquad \Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\ \Pi_-^{2}=\Pi_-,
+\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,\qquad \Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\ \Pi_-^{2}=\Pi_- \;},
 $$
 and the two summands are the two minimal ideals, the images of the two Peirce projections of the family $\{\Pi_+,\Pi_-\}$.
 
